@@ -24,6 +24,10 @@ func Init(cfg *config.Configuration) *Client {
 	return client
 }
 
+func (c *Client) CdpBrandGetV30Api() *api.CdpBrandGetV30ApiService {
+	return c.ApiClient.CdpBrandGetV30Api
+}
+
 func (c *Client) CreativeStrategyListV2Api() *api.CreativeStrategyListV2ApiService {
 	return c.ApiClient.CreativeStrategyListV2Api
 }

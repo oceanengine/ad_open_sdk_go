@@ -10,13 +10,13 @@
 ## 安装
 
 ```shell
-go get github.com/oceanengine/ad_open_sdk_go
+go get git@github.com:oceanengine/ad_open_sdk_go.git
 ```
 
 import:
 
 ```golang
-import ad_open_sdk_go "github.com/oceanengine/ad_open_sdk_go"
+import ad_open_sdk_go "github.com/oceanengine/ad_open_sdk_go
 ```
 
 ## 使用
@@ -200,13 +200,13 @@ func main() {
     * PostMultipart 方法使用 RequestForm 方法传入参数, RequestFile 方法传入文件
 * 更多示例可参考 examples/common_api_example.go
 
-
 ### API接口列表
 
 接口域名 https://api.oceanengine.com/
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*CdpBrandGetV30Api* | **OpenApiV30CdpBrandGetGet** | **Get** /open_api/v3.0/cdp/brand/get/ | 
 *CreativeStrategyListV2Api* | **OpenApi2CreativeStrategyListGet** | **Get** /open_api/2/creative/strategy/list/ | 
 *MaterialStatusUpdateV30Api* | **OpenApiV30MaterialStatusUpdatePost** | **Post** /open_api/v3.0/material/status/update/ | 
 *Oauth2AccessTokenApi* | **OpenApiOauth2AccessTokenPost** | **Post** /open_api/oauth2/access_token/ | 
