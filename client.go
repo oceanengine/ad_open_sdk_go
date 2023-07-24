@@ -24,12 +24,16 @@ func Init(cfg *config.Configuration) *Client {
 	return client
 }
 
-func (c *Client) CdpBrandGetV30Api() *api.CdpBrandGetV30ApiService {
-	return c.ApiClient.CdpBrandGetV30Api
-}
-
 func (c *Client) CreativeStrategyListV2Api() *api.CreativeStrategyListV2ApiService {
 	return c.ApiClient.CreativeStrategyListV2Api
+}
+
+func (c *Client) DouplusOrderListV30Api() *api.DouplusOrderListV30ApiService {
+	return c.ApiClient.DouplusOrderListV30Api
+}
+
+func (c *Client) DouplusOrderReportV30Api() *api.DouplusOrderReportV30ApiService {
+	return c.ApiClient.DouplusOrderReportV30Api
 }
 
 func (c *Client) MaterialStatusUpdateV30Api() *api.MaterialStatusUpdateV30ApiService {
@@ -78,6 +82,10 @@ func (c *Client) PromotionAutoGenerateConfigGetV30Api() *api.PromotionAutoGenera
 
 func (c *Client) PromotionBidUpdateV30Api() *api.PromotionBidUpdateV30ApiService {
 	return c.ApiClient.PromotionBidUpdateV30Api
+}
+
+func (c *Client) PromotionBudgetUpdateV30Api() *api.PromotionBudgetUpdateV30ApiService {
+	return c.ApiClient.PromotionBudgetUpdateV30Api
 }
 
 func (c *Client) PromotionCostProtectStatusGetV30Api() *api.PromotionCostProtectStatusGetV30ApiService {

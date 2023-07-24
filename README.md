@@ -202,12 +202,13 @@ func main() {
 
 ### API接口列表
 
-接口域名 https://api.oceanengine.com/
+接口列表 https://open.oceanengine.com/labels/7
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*CdpBrandGetV30Api* | **OpenApiV30CdpBrandGetGet** | **Get** /open_api/v3.0/cdp/brand/get/ | 
 *CreativeStrategyListV2Api* | **OpenApi2CreativeStrategyListGet** | **Get** /open_api/2/creative/strategy/list/ | 
+*DouplusOrderListV30Api* | **OpenApiV30DouplusOrderListGet** | **Get** /open_api/v3.0/douplus/order/list/ | 
+*DouplusOrderReportV30Api* | **OpenApiV30DouplusOrderReportGet** | **Get** /open_api/v3.0/douplus/order/report/ | 
 *MaterialStatusUpdateV30Api* | **OpenApiV30MaterialStatusUpdatePost** | **Post** /open_api/v3.0/material/status/update/ | 
 *Oauth2AccessTokenApi* | **OpenApiOauth2AccessTokenPost** | **Post** /open_api/oauth2/access_token/ | 
 *Oauth2RefreshTokenApi* | **OpenApiOauth2RefreshTokenPost** | **Post** /open_api/oauth2/refresh_token/ | 
@@ -220,6 +221,7 @@ Class | Method | HTTP request | Description
 *PromotionAutoGenerateConfigCreateV30Api* | **OpenApiV30PromotionAutoGenerateConfigCreatePost** | **Post** /open_api/v3.0/promotion/auto_generate_config/create/ | 
 *PromotionAutoGenerateConfigGetV30Api* | **OpenApiV30PromotionAutoGenerateConfigGetGet** | **Get** /open_api/v3.0/promotion/auto_generate_config/get/ | 
 *PromotionBidUpdateV30Api* | **OpenApiV30PromotionBidUpdatePost** | **Post** /open_api/v3.0/promotion/bid/update/ | 
+*PromotionBudgetUpdateV30Api* | **OpenApiV30PromotionBudgetUpdatePost** | **Post** /open_api/v3.0/promotion/budget/update/ | 
 *PromotionCostProtectStatusGetV30Api* | **OpenApiV30PromotionCostProtectStatusGetGet** | **Get** /open_api/v3.0/promotion/cost_protect_status/get/ | 
 *PromotionCreateV30Api* | **OpenApiV30PromotionCreatePost** | **Post** /open_api/v3.0/promotion/create/ | 
 *PromotionDeepbidUpdateV30Api* | **OpenApiV30PromotionDeepbidUpdatePost** | **Post** /open_api/v3.0/promotion/deepbid/update/ | 
