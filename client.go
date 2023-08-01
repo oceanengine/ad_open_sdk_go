@@ -112,6 +112,10 @@ func (c *Client) PromotionRejectReasonGetV30Api() *api.PromotionRejectReasonGetV
 	return c.ApiClient.PromotionRejectReasonGetV30Api
 }
 
+func (c *Client) PromotionScheduleTimeUpdateV30Api() *api.PromotionScheduleTimeUpdateV30ApiService {
+	return c.ApiClient.PromotionScheduleTimeUpdateV30Api
+}
+
 func (c *Client) PromotionStatusUpdateV30Api() *api.PromotionStatusUpdateV30ApiService {
 	return c.ApiClient.PromotionStatusUpdateV30Api
 }
