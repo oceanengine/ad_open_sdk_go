@@ -16,7 +16,7 @@ go get git@github.com:oceanengine/ad_open_sdk_go.git
 import:
 
 ```golang
-import ad_open_sdk_go "code.byted.org/ad/ad_open_sdk_go
+import ad_open_sdk_go "github.com/oceanengine/ad_open_sdk_go
 ```
 
 ## 使用
@@ -62,7 +62,7 @@ import ad_open_sdk_go "code.byted.org/ad/ad_open_sdk_go
 
 使用默认配置:
 ```golang
-import "code.byted.org/ad/ad_open_sdk_go/config"
+import "github.com/oceanengine/ad_open_sdk_go/config"
 
 configuration := config.NewConfiguration()
 ```
@@ -142,9 +142,9 @@ import (
 	"io"
 	"log"
 
-	ad_open_sdk_go "code.byted.org/ad/ad_open_sdk_go"
-	"code.byted.org/ad/ad_open_sdk_go/config"
-	. "code.byted.org/ad/ad_open_sdk_go/models"
+	ad_open_sdk_go "github.com/oceanengine/ad_open_sdk_go"
+	"github.com/oceanengine/ad_open_sdk_go/config"
+	. "github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ApiOpenApiV30ProjectListGetRequestExample 接口参数

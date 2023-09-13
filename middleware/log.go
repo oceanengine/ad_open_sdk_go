@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"code.byted.org/ad/ad_open_sdk_go/api"
-	"code.byted.org/ad/ad_open_sdk_go/config"
+	"github.com/oceanengine/ad_open_sdk_go/api"
+	"github.com/oceanengine/ad_open_sdk_go/config"
 )
 
 func LogMiddleware(next api.Endpoint) api.Endpoint {
