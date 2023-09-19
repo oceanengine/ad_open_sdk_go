@@ -276,6 +276,10 @@ func (c *Client) CustomerCenterFundTransferSeqCommitV2Api() *api.CustomerCenterF
 	return c.ApiClient.CustomerCenterFundTransferSeqCommitV2Api
 }
 
+func (c *Client) CustomerCenterFundTransferSeqCreateV2Api() *api.CustomerCenterFundTransferSeqCreateV2ApiService {
+	return c.ApiClient.CustomerCenterFundTransferSeqCreateV2Api
+}
+
 func (c *Client) DecorationCouponGetV30Api() *api.DecorationCouponGetV30ApiService {
 	return c.ApiClient.DecorationCouponGetV30Api
 }

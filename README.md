@@ -269,6 +269,7 @@ Class | Method | HTTP request | Description
 *CreativeStrategyListV2Api* | **OpenApi2CreativeStrategyListGet** | **Get** /open_api/2/creative/strategy/list/ | 
 *CustomerCenterAdvertiserTransferableListV2Api* | **OpenApi2CustomerCenterAdvertiserTransferableListGet** | **Get** /open_api/2/customer_center/advertiser/transferable/list/ | 
 *CustomerCenterFundTransferSeqCommitV2Api* | **OpenApi2CustomerCenterFundTransferSeqCommitPost** | **Post** /open_api/2/customer_center/fund/transfer_seq/commit/ | 
+*CustomerCenterFundTransferSeqCreateV2Api* | **OpenApi2CustomerCenterFundTransferSeqCreatePost** | **Post** /open_api/2/customer_center/fund/transfer_seq/create/ | 
 *DecorationCouponGetV30Api* | **OpenApiV30DecorationCouponGetGet** | **Get** /open_api/v3.0/decoration/coupon/get/ | 
 *DmpBrandGetV2Api* | **OpenApi2DmpBrandGetGet** | **Get** /open_api/2/dmp/brand/get/ | 
 *DmpCustomAudienceCopyV2Api* | **OpenApi2DmpCustomAudienceCopyPost** | **Post** /open_api/2/dmp/custom_audience/copy/ | 
