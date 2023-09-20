@@ -60,6 +60,10 @@ func (c *Client) AdvertiserFundDailyStatV2Api() *api.AdvertiserFundDailyStatV2Ap
 	return c.ApiClient.AdvertiserFundDailyStatV2Api
 }
 
+func (c *Client) AdvertiserFundGetV2Api() *api.AdvertiserFundGetV2ApiService {
+	return c.ApiClient.AdvertiserFundGetV2Api
+}
+
 func (c *Client) AdvertiserFundTransactionGetV2Api() *api.AdvertiserFundTransactionGetV2ApiService {
 	return c.ApiClient.AdvertiserFundTransactionGetV2Api
 }
@@ -150,6 +154,10 @@ func (c *Client) AsyncTaskDownloadV2Api() *api.AsyncTaskDownloadV2ApiService {
 
 func (c *Client) AsyncTaskGetV2Api() *api.AsyncTaskGetV2ApiService {
 	return c.ApiClient.AsyncTaskGetV2Api
+}
+
+func (c *Client) AudiencePackageCreateV2Api() *api.AudiencePackageCreateV2ApiService {
+	return c.ApiClient.AudiencePackageCreateV2Api
 }
 
 func (c *Client) AudiencePackageDeleteV2Api() *api.AudiencePackageDeleteV2ApiService {
@@ -268,6 +276,10 @@ func (c *Client) CreativeStrategyListV2Api() *api.CreativeStrategyListV2ApiServi
 	return c.ApiClient.CreativeStrategyListV2Api
 }
 
+func (c *Client) CustomerCenterAdvertiserListV2Api() *api.CustomerCenterAdvertiserListV2ApiService {
+	return c.ApiClient.CustomerCenterAdvertiserListV2Api
+}
+
 func (c *Client) CustomerCenterAdvertiserTransferableListV2Api() *api.CustomerCenterAdvertiserTransferableListV2ApiService {
 	return c.ApiClient.CustomerCenterAdvertiserTransferableListV2Api
 }
@@ -310,6 +322,10 @@ func (c *Client) DmpCustomAudienceReadV2Api() *api.DmpCustomAudienceReadV2ApiSer
 
 func (c *Client) DmpCustomAudienceSelectV2Api() *api.DmpCustomAudienceSelectV2ApiService {
 	return c.ApiClient.DmpCustomAudienceSelectV2Api
+}
+
+func (c *Client) DmpDataSourceCreateV2Api() *api.DmpDataSourceCreateV2ApiService {
+	return c.ApiClient.DmpDataSourceCreateV2Api
 }
 
 func (c *Client) DmpDataSourceReadV2Api() *api.DmpDataSourceReadV2ApiService {
@@ -392,6 +408,10 @@ func (c *Client) EnterpriseCommentDetailV10Api() *api.EnterpriseCommentDetailV10
 	return c.ApiClient.EnterpriseCommentDetailV10Api
 }
 
+func (c *Client) EnterpriseCommentListGetV10Api() *api.EnterpriseCommentListGetV10ApiService {
+	return c.ApiClient.EnterpriseCommentListGetV10Api
+}
+
 func (c *Client) EnterpriseCommentReplyListV10Api() *api.EnterpriseCommentReplyListV10ApiService {
 	return c.ApiClient.EnterpriseCommentReplyListV10Api
 }
@@ -400,12 +420,24 @@ func (c *Client) EnterpriseCommentReplyV10Api() *api.EnterpriseCommentReplyV10Ap
 	return c.ApiClient.EnterpriseCommentReplyV10Api
 }
 
+func (c *Client) EnterpriseFlowCategoryGetV10Api() *api.EnterpriseFlowCategoryGetV10ApiService {
+	return c.ApiClient.EnterpriseFlowCategoryGetV10Api
+}
+
 func (c *Client) EnterpriseItemListV10Api() *api.EnterpriseItemListV10ApiService {
 	return c.ApiClient.EnterpriseItemListV10Api
 }
 
 func (c *Client) EnterpriseOperationLogGetV10Api() *api.EnterpriseOperationLogGetV10ApiService {
 	return c.ApiClient.EnterpriseOperationLogGetV10Api
+}
+
+func (c *Client) EnterpriseOverviewDataGetV10Api() *api.EnterpriseOverviewDataGetV10ApiService {
+	return c.ApiClient.EnterpriseOverviewDataGetV10Api
+}
+
+func (c *Client) EnterpriseVideoInfoGetV10Api() *api.EnterpriseVideoInfoGetV10ApiService {
+	return c.ApiClient.EnterpriseVideoInfoGetV10Api
 }
 
 func (c *Client) EventManagerAssetsCreateV2Api() *api.EventManagerAssetsCreateV2ApiService {
@@ -876,12 +908,24 @@ func (c *Client) QianchuanVideoGetV10Api() *api.QianchuanVideoGetV10ApiService {
 	return c.ApiClient.QianchuanVideoGetV10Api
 }
 
+func (c *Client) ReportAdGetV2Api() *api.ReportAdGetV2ApiService {
+	return c.ApiClient.ReportAdGetV2Api
+}
+
+func (c *Client) ReportAdvertiserGetV2Api() *api.ReportAdvertiserGetV2ApiService {
+	return c.ApiClient.ReportAdvertiserGetV2Api
+}
+
 func (c *Client) ReportAgentGetV2V2Api() *api.ReportAgentGetV2V2ApiService {
 	return c.ApiClient.ReportAgentGetV2V2Api
 }
 
 func (c *Client) ReportAudienceAgeV2Api() *api.ReportAudienceAgeV2ApiService {
 	return c.ApiClient.ReportAudienceAgeV2Api
+}
+
+func (c *Client) ReportAudienceAwemeListV2Api() *api.ReportAudienceAwemeListV2ApiService {
+	return c.ApiClient.ReportAudienceAwemeListV2Api
 }
 
 func (c *Client) ReportAudienceCityV2Api() *api.ReportAudienceCityV2ApiService {
@@ -892,8 +936,20 @@ func (c *Client) ReportAudienceGenderV2Api() *api.ReportAudienceGenderV2ApiServi
 	return c.ApiClient.ReportAudienceGenderV2Api
 }
 
+func (c *Client) ReportAudienceInterestActionListV2Api() *api.ReportAudienceInterestActionListV2ApiService {
+	return c.ApiClient.ReportAudienceInterestActionListV2Api
+}
+
 func (c *Client) ReportAudienceProvinceV2Api() *api.ReportAudienceProvinceV2ApiService {
 	return c.ApiClient.ReportAudienceProvinceV2Api
+}
+
+func (c *Client) ReportCampaignGetV2Api() *api.ReportCampaignGetV2ApiService {
+	return c.ApiClient.ReportCampaignGetV2Api
+}
+
+func (c *Client) ReportCreativeGetV2Api() *api.ReportCreativeGetV2ApiService {
+	return c.ApiClient.ReportCreativeGetV2Api
 }
 
 func (c *Client) ReportCustomConfigGetV30Api() *api.ReportCustomConfigGetV30ApiService {
@@ -904,12 +960,24 @@ func (c *Client) ReportCustomGetV30Api() *api.ReportCustomGetV30ApiService {
 	return c.ApiClient.ReportCustomGetV30Api
 }
 
+func (c *Client) ReportLiveRoomAnalysisGetV2Api() *api.ReportLiveRoomAnalysisGetV2ApiService {
+	return c.ApiClient.ReportLiveRoomAnalysisGetV2Api
+}
+
 func (c *Client) ReportLiveRoomAttributeGetV2Api() *api.ReportLiveRoomAttributeGetV2ApiService {
 	return c.ApiClient.ReportLiveRoomAttributeGetV2Api
 }
 
 func (c *Client) ReportLiveRoomAudiencePortraitGetV2Api() *api.ReportLiveRoomAudiencePortraitGetV2ApiService {
 	return c.ApiClient.ReportLiveRoomAudiencePortraitGetV2Api
+}
+
+func (c *Client) ReportLiveRoomFlowCategoryGetV2Api() *api.ReportLiveRoomFlowCategoryGetV2ApiService {
+	return c.ApiClient.ReportLiveRoomFlowCategoryGetV2Api
+}
+
+func (c *Client) ReportLiveRoomProductGetV2Api() *api.ReportLiveRoomProductGetV2ApiService {
+	return c.ApiClient.ReportLiveRoomProductGetV2Api
 }
 
 func (c *Client) ReportRtaExpGetV2Api() *api.ReportRtaExpGetV2ApiService {
@@ -922,6 +990,10 @@ func (c *Client) ReportRtaExpLocalDailyGetV30Api() *api.ReportRtaExpLocalDailyGe
 
 func (c *Client) ReportRtaExpLocalHourlyGetV30Api() *api.ReportRtaExpLocalHourlyGetV30ApiService {
 	return c.ApiClient.ReportRtaExpLocalHourlyGetV30Api
+}
+
+func (c *Client) ReportRubeexGetV2Api() *api.ReportRubeexGetV2ApiService {
+	return c.ApiClient.ReportRubeexGetV2Api
 }
 
 func (c *Client) ReportSitePageV2Api() *api.ReportSitePageV2ApiService {
@@ -1012,6 +1084,10 @@ func (c *Client) ToolsAdRaiseEstimateGetV2Api() *api.ToolsAdRaiseEstimateGetV2Ap
 	return c.ApiClient.ToolsAdRaiseEstimateGetV2Api
 }
 
+func (c *Client) ToolsAdRaiseResultGetV2V2Api() *api.ToolsAdRaiseResultGetV2V2ApiService {
+	return c.ApiClient.ToolsAdRaiseResultGetV2V2Api
+}
+
 func (c *Client) ToolsAdRaiseStatusGetV2Api() *api.ToolsAdRaiseStatusGetV2ApiService {
 	return c.ApiClient.ToolsAdRaiseStatusGetV2Api
 }
@@ -1072,6 +1148,10 @@ func (c *Client) ToolsAppManagementExtendPackageCreateV2V2Api() *api.ToolsAppMan
 	return c.ApiClient.ToolsAppManagementExtendPackageCreateV2V2Api
 }
 
+func (c *Client) ToolsAppManagementExtendPackageListV2Api() *api.ToolsAppManagementExtendPackageListV2ApiService {
+	return c.ApiClient.ToolsAppManagementExtendPackageListV2Api
+}
+
 func (c *Client) ToolsAppManagementExtendPackageListV2V2Api() *api.ToolsAppManagementExtendPackageListV2V2ApiService {
 	return c.ApiClient.ToolsAppManagementExtendPackageListV2V2Api
 }
@@ -1082,6 +1162,10 @@ func (c *Client) ToolsAppManagementExtendPackageUpdateV2Api() *api.ToolsAppManag
 
 func (c *Client) ToolsAppManagementIndustryInfoListV2Api() *api.ToolsAppManagementIndustryInfoListV2ApiService {
 	return c.ApiClient.ToolsAppManagementIndustryInfoListV2Api
+}
+
+func (c *Client) ToolsAppManagementShareAccountListV2Api() *api.ToolsAppManagementShareAccountListV2ApiService {
+	return c.ApiClient.ToolsAppManagementShareAccountListV2Api
 }
 
 func (c *Client) ToolsAppManagementUpdateAuthorizationV2Api() *api.ToolsAppManagementUpdateAuthorizationV2ApiService {
@@ -1244,6 +1328,10 @@ func (c *Client) ToolsIesAccountSearchV2Api() *api.ToolsIesAccountSearchV2ApiSer
 	return c.ApiClient.ToolsIesAccountSearchV2Api
 }
 
+func (c *Client) ToolsIndustryGetV2Api() *api.ToolsIndustryGetV2ApiService {
+	return c.ApiClient.ToolsIndustryGetV2Api
+}
+
 func (c *Client) ToolsInterestActionActionCategoryV2Api() *api.ToolsInterestActionActionCategoryV2ApiService {
 	return c.ApiClient.ToolsInterestActionActionCategoryV2Api
 }
@@ -1358,6 +1446,10 @@ func (c *Client) ToolsPrivativeWordPromotionUpdateV30Api() *api.ToolsPrivativeWo
 
 func (c *Client) ToolsPromotionCardRecommendGetV2Api() *api.ToolsPromotionCardRecommendGetV2ApiService {
 	return c.ApiClient.ToolsPromotionCardRecommendGetV2Api
+}
+
+func (c *Client) ToolsPromotionCardRecommendTitleGetV2Api() *api.ToolsPromotionCardRecommendTitleGetV2ApiService {
+	return c.ApiClient.ToolsPromotionCardRecommendTitleGetV2Api
 }
 
 func (c *Client) ToolsPromotionDiagnosisSuggestionAcceptV30Api() *api.ToolsPromotionDiagnosisSuggestionAcceptV30ApiService {
