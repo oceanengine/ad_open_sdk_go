@@ -23,13 +23,6 @@ import (
 )
 
 type ApiOpenApiV10QianchuanSuggestRoiGoalGetRequestExample struct {
-	AdvertiserId int64 `json:"advertiser_id"`
-	AwemeId      int64 `json:"aweme_id"`
-}
-
-// url: https://api.oceanengine.com/open_api/v1.0/qianchuan/suggest/roi/goal Get
-
-type ApiOpenApiV10QianchuanSuggestRoiGoalGet_0RequestExample struct {
 	AdvertiserId       int64                                        `json:"advertiser_id"`
 	AwemeId            int64                                        `json:"aweme_id,omitempty"`
 	MarketingScene     QianchuanSuggestRoiGoalV10MarketingScene     `json:"marketing_scene,omitempty"`
@@ -53,26 +46,6 @@ func main() {
 	apiClient.SetLogEnable(true)
 
 	var request ApiOpenApiV10QianchuanSuggestRoiGoalGetRequestExample
-	err := json.Unmarshal([]byte(demoreq), &request)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	resp, httpRes, err := apiClient.QianchuanSuggestRoiGoalV10Api().
-		Get(ctx).
-		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).AwemeId(request.AwemeId).
-		Execute()
-	fmt.Println(ToJsonString(resp))
-	resBytes, _ := io.ReadAll(httpRes.Body)
-	fmt.Println(string(resBytes))
-	fmt.Println(err)
-
-	configuration := config.NewConfiguration()
-	apiClient := ad_open_sdk_go.Init(configuration)
-	apiClient.SetLogEnable(true)
-
-	var request ApiOpenApiV10QianchuanSuggestRoiGoalGet_0RequestExample
 	err := json.Unmarshal([]byte(demoreq), &request)
 	if err != nil {
 		log.Fatal(err)

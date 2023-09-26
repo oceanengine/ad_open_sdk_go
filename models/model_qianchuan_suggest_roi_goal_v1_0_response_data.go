@@ -14,4 +14,8 @@ package models
 type QianchuanSuggestRoiGoalV10ResponseData struct {
 	//
 	EcpRoiGoal float64 `json:"ecp_roi_goal"`
+	//
+	RoiLowerBound *float64 `json:"roi_lower_bound,omitempty"`
+	//
+	RoiUpperBound *float64 `json:"roi_upper_bound,omitempty"`
 }

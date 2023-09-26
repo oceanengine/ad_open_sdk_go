@@ -217,9 +217,6 @@ Class | Method | HTTP request | Description
 *AdvertiserAvatarGetV2Api* | **OpenApi2AdvertiserAvatarGetGet** | **Get** /open_api/2/advertiser/avatar/get/ | 
 *AdvertiserAvatarSubmitV2Api* | **OpenApi2AdvertiserAvatarSubmitPost** | **Post** /open_api/2/advertiser/avatar/submit/ | 
 *AdvertiserBudgetGetV2Api* | **OpenApi2AdvertiserBudgetGetGet** | **Get** /open_api/2/advertiser/budget/get/ | 
-*AdvertiserDeliveryPkgConfigV30Api* | **OpenApiV30AdvertiserDeliveryPkgConfigGet** | **Get** /open_api/v3.0/advertiser/delivery_pkg_config/ | 
-*AdvertiserDeliveryPkgGetV30Api* | **OpenApiV30AdvertiserDeliveryPkgGetGet** | **Get** /open_api/v3.0/advertiser/delivery_pkg/get/ | 
-*AdvertiserDeliveryPkgSubmitV30Api* | **OpenApiV30AdvertiserDeliveryPkgSubmitPost** | **Post** /open_api/v3.0/advertiser/delivery_pkg/submit/ | 
 *AdvertiserDeliveryQualificationListV30Api* | **OpenApiV30AdvertiserDeliveryQualificationListGet** | **Get** /open_api/v3.0/advertiser/delivery_qualification/list/ | 
 *AdvertiserDeliveryQualificationSubmitV30Api* | **OpenApiV30AdvertiserDeliveryQualificationSubmitPost** | **Post** /open_api/v3.0/advertiser/delivery_qualification/submit/ | 
 *AdvertiserFundDailyStatV2Api* | **OpenApi2AdvertiserFundDailyStatGet** | **Get** /open_api/2/advertiser/fund/daily_stat/ | 
@@ -403,8 +400,6 @@ Class | Method | HTTP request | Description
 *PromotionScheduleTimeUpdateV30Api* | **OpenApiV30PromotionScheduleTimeUpdatePost** | **Post** /open_api/v3.0/promotion/schedule_time/update/ | 
 *PromotionStatusUpdateV30Api* | **OpenApiV30PromotionStatusUpdatePost** | **Post** /open_api/v3.0/promotion/status/update/ | 
 *PromotionUpdateV30Api* | **OpenApiV30PromotionUpdatePost** | **Post** /open_api/v3.0/promotion/update/ | 
-*QianchuanAccountBudgetGetV10Api* | **OpenApiV10QianchuanAccountBudgetGetGet** | **Get** /open_api/v1.0/qianchuan/account/budget/get/ | 
-*QianchuanAccountBudgetUpdateV10Api* | **OpenApiV10QianchuanAccountBudgetUpdatePost** | **Post** /open_api/v1.0/qianchuan/account/budget/update/ | 
 *QianchuanAdBidUpdateV10Api* | **OpenApiV10QianchuanAdBidUpdatePost** | **Post** /open_api/v1.0/qianchuan/ad/bid/update/ | 
 *QianchuanAdBudgetUpdateV10Api* | **OpenApiV10QianchuanAdBudgetUpdatePost** | **Post** /open_api/v1.0/qianchuan/ad/budget/update/ | 
 *QianchuanAdCreateV10Api* | **OpenApiV10QianchuanAdCreatePost** | **Post** /open_api/v1.0/qianchuan/ad/create/ | 
@@ -445,7 +440,6 @@ Class | Method | HTTP request | Description
 *QianchuanAwemeSuggestRoiGoalV10Api* | **OpenApiV10QianchuanAwemeSuggestRoiGoalGet** | **Get** /open_api/v1.0/qianchuan/aweme/suggest/roi/goal/ | 
 *QianchuanAwemeVideoGetV10Api* | **OpenApiV10QianchuanAwemeVideoGetGet** | **Get** /open_api/v1.0/qianchuan/aweme/video/get/ | 
 *QianchuanBatchCampaignStatusUpdateV10Api* | **OpenApiV10QianchuanBatchCampaignStatusUpdatePost** | **Post** /open_api/v1.0/qianchuan/batch_campaign_status/update/ | 
-*QianchuanBrandAuthorizedGetV10Api* | **OpenApiV10QianchuanBrandAuthorizedGetGet** | **Get** /open_api/v1.0/qianchuan/brand/authorized/get/ | 
 *QianchuanCampaignCreateV10Api* | **OpenApiV10QianchuanCampaignCreatePost** | **Post** /open_api/v1.0/qianchuan/campaign/create/ | 
 *QianchuanCampaignListGetV10Api* | **OpenApiV10QianchuanCampaignListGetGet** | **Get** /open_api/v1.0/qianchuan/campaign_list/get/ | 
 *QianchuanCampaignUpdateV10Api* | **OpenApiV10QianchuanCampaignUpdatePost** | **Post** /open_api/v1.0/qianchuan/campaign/update/ | 
@@ -463,7 +457,6 @@ Class | Method | HTTP request | Description
 *QianchuanFinanceWalletGetV10Api* | **OpenApiV10QianchuanFinanceWalletGetGet** | **Get** /open_api/v1.0/qianchuan/finance/wallet/get/ | 
 *QianchuanImageGetV10Api* | **OpenApiV10QianchuanImageGetGet** | **Get** /open_api/v1.0/qianchuan/image/get/ | 
 *QianchuanKeywordCheckV10Api* | **OpenApiV10QianchuanKeywordCheckPost** | **Post** /open_api/v1.0/qianchuan/keyword/check/ | 
-*QianchuanKeywordPackageGetV10Api* | **OpenApiV10QianchuanKeywordPackageGetGet** | **Get** /open_api/v1.0/qianchuan/keyword_package/get/ | 
 *QianchuanLqAdGetV10Api* | **OpenApiV10QianchuanLqAdGetGet** | **Get** /open_api/v1.0/qianchuan/lq_ad/get/ | 
 *QianchuanOrientationPackageGetV10Api* | **OpenApiV10QianchuanOrientationPackageGetGet** | **Get** /open_api/v1.0/qianchuan/orientation_package/get/ | 
 *QianchuanProductAnalyseCompareCreativeV10Api* | **OpenApiV10QianchuanProductAnalyseCompareCreativeGet** | **Get** /open_api/v1.0/qianchuan/product/analyse/compare_creative/ | 
@@ -481,12 +474,10 @@ Class | Method | HTTP request | Description
 *QianchuanReportVideoUserLoseGetV10Api* | **OpenApiV10QianchuanReportVideoUserLoseGetGet** | **Get** /open_api/v1.0/qianchuan/report/video_user_lose/get/ | 
 *QianchuanRoiGoalUpdateV10Api* | **OpenApiV10QianchuanRoiGoalUpdatePost** | **Post** /open_api/v1.0/qianchuan/roi/goal/update | 
 *QianchuanShopAdvertiserListV10Api* | **OpenApiV10QianchuanShopAdvertiserListGet** | **Get** /open_api/v1.0/qianchuan/shop/advertiser/list/ | 
-*QianchuanShopAuthorizedGetV10Api* | **OpenApiV10QianchuanShopAuthorizedGetGet** | **Get** /open_api/v1.0/qianchuan/shop/authorized/get/ | 
 *QianchuanShopGetV10Api* | **OpenApiV10QianchuanShopGetGet** | **Get** /open_api/v1.0/qianchuan/shop/get/ | 
 *QianchuanSuggestBidV10Api* | **OpenApiV10QianchuanSuggestBidGet** | **Get** /open_api/v1.0/qianchuan/suggest_bid/ | 
 *QianchuanSuggestBudgetV10Api* | **OpenApiV10QianchuanSuggestBudgetGet** | **Get** /open_api/v1.0/qianchuan/suggest/budget/ | 
-*QianchuanSuggestRoiGoalV10Api* | **OpenApiV10QianchuanSuggestRoiGoalGet** | **Get** /open_api/v1.0/qianchuan/suggest/roi/goal | 
-*QianchuanSuggestRoiGoalV10Api* | **OpenApiV10QianchuanSuggestRoiGoalGet_0** | **Get** /open_api/v1.0/qianchuan/suggest/roi/goal/ | 
+*QianchuanSuggestRoiGoalV10Api* | **OpenApiV10QianchuanSuggestRoiGoalGet** | **Get** /open_api/v1.0/qianchuan/suggest/roi/goal/ | 
 *QianchuanTodayLiveRoomDetailGetV10Api* | **OpenApiV10QianchuanTodayLiveRoomDetailGetGet** | **Get** /open_api/v1.0/qianchuan/today_live/room/detail/get/ | 
 *QianchuanTodayLiveRoomFlowPerformanceGetV10Api* | **OpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGet** | **Get** /open_api/v1.0/qianchuan/today_live/room/flow_performance/get/ | 
 *QianchuanTodayLiveRoomGetV10Api* | **OpenApiV10QianchuanTodayLiveRoomGetGet** | **Get** /open_api/v1.0/qianchuan/today_live/room/get/ | 
@@ -496,7 +487,6 @@ Class | Method | HTTP request | Description
 *QianchuanToolsAwemeAuthV10Api* | **OpenApiV10QianchuanToolsAwemeAuthPost** | **Post** /open_api/v1.0/qianchuan/tools/aweme_auth/ | 
 *QianchuanToolsEstimateAudienceV10Api* | **OpenApiV10QianchuanToolsEstimateAudienceGet** | **Get** /open_api/v1.0/qianchuan/tools/estimate_audience/ | 
 *QianchuanToolsGrayV10Api* | **OpenApiV10QianchuanToolsGrayGet** | **Get** /open_api/v1.0/qianchuan/tools/gray/ | 
-*QianchuanToolsShopAuthV10Api* | **OpenApiV10QianchuanToolsShopAuthPost** | **Post** /open_api/v1.0/qianchuan/tools/shop_auth/ | 
 *QianchuanToolsSmartBoostAdBoostReportGetV10Api* | **OpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGet** | **Get** /open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/report/get/ | 
 *QianchuanToolsSmartBoostAdBoostSetV10Api* | **OpenApiV10QianchuanToolsSmartBoostAdBoostSetPost** | **Post** /open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/set/ | 
 *QianchuanToolsSmartBoostAdBoostStatusGetV10Api* | **OpenApiV10QianchuanToolsSmartBoostAdBoostStatusGetGet** | **Get** /open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/status/get/ | 

@@ -72,12 +72,6 @@ type APIClient struct {
 
 	AdvertiserBudgetGetV2Api *AdvertiserBudgetGetV2ApiService
 
-	AdvertiserDeliveryPkgConfigV30Api *AdvertiserDeliveryPkgConfigV30ApiService
-
-	AdvertiserDeliveryPkgGetV30Api *AdvertiserDeliveryPkgGetV30ApiService
-
-	AdvertiserDeliveryPkgSubmitV30Api *AdvertiserDeliveryPkgSubmitV30ApiService
-
 	AdvertiserDeliveryQualificationListV30Api *AdvertiserDeliveryQualificationListV30ApiService
 
 	AdvertiserDeliveryQualificationSubmitV30Api *AdvertiserDeliveryQualificationSubmitV30ApiService
@@ -444,10 +438,6 @@ type APIClient struct {
 
 	PromotionUpdateV30Api *PromotionUpdateV30ApiService
 
-	QianchuanAccountBudgetGetV10Api *QianchuanAccountBudgetGetV10ApiService
-
-	QianchuanAccountBudgetUpdateV10Api *QianchuanAccountBudgetUpdateV10ApiService
-
 	QianchuanAdBidUpdateV10Api *QianchuanAdBidUpdateV10ApiService
 
 	QianchuanAdBudgetUpdateV10Api *QianchuanAdBudgetUpdateV10ApiService
@@ -528,8 +518,6 @@ type APIClient struct {
 
 	QianchuanBatchCampaignStatusUpdateV10Api *QianchuanBatchCampaignStatusUpdateV10ApiService
 
-	QianchuanBrandAuthorizedGetV10Api *QianchuanBrandAuthorizedGetV10ApiService
-
 	QianchuanCampaignCreateV10Api *QianchuanCampaignCreateV10ApiService
 
 	QianchuanCampaignListGetV10Api *QianchuanCampaignListGetV10ApiService
@@ -563,8 +551,6 @@ type APIClient struct {
 	QianchuanImageGetV10Api *QianchuanImageGetV10ApiService
 
 	QianchuanKeywordCheckV10Api *QianchuanKeywordCheckV10ApiService
-
-	QianchuanKeywordPackageGetV10Api *QianchuanKeywordPackageGetV10ApiService
 
 	QianchuanLqAdGetV10Api *QianchuanLqAdGetV10ApiService
 
@@ -600,8 +586,6 @@ type APIClient struct {
 
 	QianchuanShopAdvertiserListV10Api *QianchuanShopAdvertiserListV10ApiService
 
-	QianchuanShopAuthorizedGetV10Api *QianchuanShopAuthorizedGetV10ApiService
-
 	QianchuanShopGetV10Api *QianchuanShopGetV10ApiService
 
 	QianchuanSuggestBidV10Api *QianchuanSuggestBidV10ApiService
@@ -627,8 +611,6 @@ type APIClient struct {
 	QianchuanToolsEstimateAudienceV10Api *QianchuanToolsEstimateAudienceV10ApiService
 
 	QianchuanToolsGrayV10Api *QianchuanToolsGrayV10ApiService
-
-	QianchuanToolsShopAuthV10Api *QianchuanToolsShopAuthV10ApiService
 
 	QianchuanToolsSmartBoostAdBoostReportGetV10Api *QianchuanToolsSmartBoostAdBoostReportGetV10ApiService
 
@@ -1072,9 +1054,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AdvertiserAvatarGetV2Api = (*AdvertiserAvatarGetV2ApiService)(&c.common)
 	c.AdvertiserAvatarSubmitV2Api = (*AdvertiserAvatarSubmitV2ApiService)(&c.common)
 	c.AdvertiserBudgetGetV2Api = (*AdvertiserBudgetGetV2ApiService)(&c.common)
-	c.AdvertiserDeliveryPkgConfigV30Api = (*AdvertiserDeliveryPkgConfigV30ApiService)(&c.common)
-	c.AdvertiserDeliveryPkgGetV30Api = (*AdvertiserDeliveryPkgGetV30ApiService)(&c.common)
-	c.AdvertiserDeliveryPkgSubmitV30Api = (*AdvertiserDeliveryPkgSubmitV30ApiService)(&c.common)
 	c.AdvertiserDeliveryQualificationListV30Api = (*AdvertiserDeliveryQualificationListV30ApiService)(&c.common)
 	c.AdvertiserDeliveryQualificationSubmitV30Api = (*AdvertiserDeliveryQualificationSubmitV30ApiService)(&c.common)
 	c.AdvertiserFundDailyStatV2Api = (*AdvertiserFundDailyStatV2ApiService)(&c.common)
@@ -1258,8 +1237,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.PromotionScheduleTimeUpdateV30Api = (*PromotionScheduleTimeUpdateV30ApiService)(&c.common)
 	c.PromotionStatusUpdateV30Api = (*PromotionStatusUpdateV30ApiService)(&c.common)
 	c.PromotionUpdateV30Api = (*PromotionUpdateV30ApiService)(&c.common)
-	c.QianchuanAccountBudgetGetV10Api = (*QianchuanAccountBudgetGetV10ApiService)(&c.common)
-	c.QianchuanAccountBudgetUpdateV10Api = (*QianchuanAccountBudgetUpdateV10ApiService)(&c.common)
 	c.QianchuanAdBidUpdateV10Api = (*QianchuanAdBidUpdateV10ApiService)(&c.common)
 	c.QianchuanAdBudgetUpdateV10Api = (*QianchuanAdBudgetUpdateV10ApiService)(&c.common)
 	c.QianchuanAdCreateV10Api = (*QianchuanAdCreateV10ApiService)(&c.common)
@@ -1300,7 +1277,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanAwemeSuggestRoiGoalV10Api = (*QianchuanAwemeSuggestRoiGoalV10ApiService)(&c.common)
 	c.QianchuanAwemeVideoGetV10Api = (*QianchuanAwemeVideoGetV10ApiService)(&c.common)
 	c.QianchuanBatchCampaignStatusUpdateV10Api = (*QianchuanBatchCampaignStatusUpdateV10ApiService)(&c.common)
-	c.QianchuanBrandAuthorizedGetV10Api = (*QianchuanBrandAuthorizedGetV10ApiService)(&c.common)
 	c.QianchuanCampaignCreateV10Api = (*QianchuanCampaignCreateV10ApiService)(&c.common)
 	c.QianchuanCampaignListGetV10Api = (*QianchuanCampaignListGetV10ApiService)(&c.common)
 	c.QianchuanCampaignUpdateV10Api = (*QianchuanCampaignUpdateV10ApiService)(&c.common)
@@ -1318,7 +1294,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanFinanceWalletGetV10Api = (*QianchuanFinanceWalletGetV10ApiService)(&c.common)
 	c.QianchuanImageGetV10Api = (*QianchuanImageGetV10ApiService)(&c.common)
 	c.QianchuanKeywordCheckV10Api = (*QianchuanKeywordCheckV10ApiService)(&c.common)
-	c.QianchuanKeywordPackageGetV10Api = (*QianchuanKeywordPackageGetV10ApiService)(&c.common)
 	c.QianchuanLqAdGetV10Api = (*QianchuanLqAdGetV10ApiService)(&c.common)
 	c.QianchuanOrientationPackageGetV10Api = (*QianchuanOrientationPackageGetV10ApiService)(&c.common)
 	c.QianchuanProductAnalyseCompareCreativeV10Api = (*QianchuanProductAnalyseCompareCreativeV10ApiService)(&c.common)
@@ -1336,7 +1311,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanReportVideoUserLoseGetV10Api = (*QianchuanReportVideoUserLoseGetV10ApiService)(&c.common)
 	c.QianchuanRoiGoalUpdateV10Api = (*QianchuanRoiGoalUpdateV10ApiService)(&c.common)
 	c.QianchuanShopAdvertiserListV10Api = (*QianchuanShopAdvertiserListV10ApiService)(&c.common)
-	c.QianchuanShopAuthorizedGetV10Api = (*QianchuanShopAuthorizedGetV10ApiService)(&c.common)
 	c.QianchuanShopGetV10Api = (*QianchuanShopGetV10ApiService)(&c.common)
 	c.QianchuanSuggestBidV10Api = (*QianchuanSuggestBidV10ApiService)(&c.common)
 	c.QianchuanSuggestBudgetV10Api = (*QianchuanSuggestBudgetV10ApiService)(&c.common)
@@ -1350,7 +1324,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanToolsAwemeAuthV10Api = (*QianchuanToolsAwemeAuthV10ApiService)(&c.common)
 	c.QianchuanToolsEstimateAudienceV10Api = (*QianchuanToolsEstimateAudienceV10ApiService)(&c.common)
 	c.QianchuanToolsGrayV10Api = (*QianchuanToolsGrayV10ApiService)(&c.common)
-	c.QianchuanToolsShopAuthV10Api = (*QianchuanToolsShopAuthV10ApiService)(&c.common)
 	c.QianchuanToolsSmartBoostAdBoostReportGetV10Api = (*QianchuanToolsSmartBoostAdBoostReportGetV10ApiService)(&c.common)
 	c.QianchuanToolsSmartBoostAdBoostSetV10Api = (*QianchuanToolsSmartBoostAdBoostSetV10ApiService)(&c.common)
 	c.QianchuanToolsSmartBoostAdBoostStatusGetV10Api = (*QianchuanToolsSmartBoostAdBoostStatusGetV10ApiService)(&c.common)

@@ -68,18 +68,6 @@ func (c *Client) AdvertiserBudgetGetV2Api() *api.AdvertiserBudgetGetV2ApiService
 	return c.ApiClient.AdvertiserBudgetGetV2Api
 }
 
-func (c *Client) AdvertiserDeliveryPkgConfigV30Api() *api.AdvertiserDeliveryPkgConfigV30ApiService {
-	return c.ApiClient.AdvertiserDeliveryPkgConfigV30Api
-}
-
-func (c *Client) AdvertiserDeliveryPkgGetV30Api() *api.AdvertiserDeliveryPkgGetV30ApiService {
-	return c.ApiClient.AdvertiserDeliveryPkgGetV30Api
-}
-
-func (c *Client) AdvertiserDeliveryPkgSubmitV30Api() *api.AdvertiserDeliveryPkgSubmitV30ApiService {
-	return c.ApiClient.AdvertiserDeliveryPkgSubmitV30Api
-}
-
 func (c *Client) AdvertiserDeliveryQualificationListV30Api() *api.AdvertiserDeliveryQualificationListV30ApiService {
 	return c.ApiClient.AdvertiserDeliveryQualificationListV30Api
 }
@@ -812,14 +800,6 @@ func (c *Client) PromotionUpdateV30Api() *api.PromotionUpdateV30ApiService {
 	return c.ApiClient.PromotionUpdateV30Api
 }
 
-func (c *Client) QianchuanAccountBudgetGetV10Api() *api.QianchuanAccountBudgetGetV10ApiService {
-	return c.ApiClient.QianchuanAccountBudgetGetV10Api
-}
-
-func (c *Client) QianchuanAccountBudgetUpdateV10Api() *api.QianchuanAccountBudgetUpdateV10ApiService {
-	return c.ApiClient.QianchuanAccountBudgetUpdateV10Api
-}
-
 func (c *Client) QianchuanAdBidUpdateV10Api() *api.QianchuanAdBidUpdateV10ApiService {
 	return c.ApiClient.QianchuanAdBidUpdateV10Api
 }
@@ -980,10 +960,6 @@ func (c *Client) QianchuanBatchCampaignStatusUpdateV10Api() *api.QianchuanBatchC
 	return c.ApiClient.QianchuanBatchCampaignStatusUpdateV10Api
 }
 
-func (c *Client) QianchuanBrandAuthorizedGetV10Api() *api.QianchuanBrandAuthorizedGetV10ApiService {
-	return c.ApiClient.QianchuanBrandAuthorizedGetV10Api
-}
-
 func (c *Client) QianchuanCampaignCreateV10Api() *api.QianchuanCampaignCreateV10ApiService {
 	return c.ApiClient.QianchuanCampaignCreateV10Api
 }
@@ -1050,10 +1026,6 @@ func (c *Client) QianchuanImageGetV10Api() *api.QianchuanImageGetV10ApiService {
 
 func (c *Client) QianchuanKeywordCheckV10Api() *api.QianchuanKeywordCheckV10ApiService {
 	return c.ApiClient.QianchuanKeywordCheckV10Api
-}
-
-func (c *Client) QianchuanKeywordPackageGetV10Api() *api.QianchuanKeywordPackageGetV10ApiService {
-	return c.ApiClient.QianchuanKeywordPackageGetV10Api
 }
 
 func (c *Client) QianchuanLqAdGetV10Api() *api.QianchuanLqAdGetV10ApiService {
@@ -1124,10 +1096,6 @@ func (c *Client) QianchuanShopAdvertiserListV10Api() *api.QianchuanShopAdvertise
 	return c.ApiClient.QianchuanShopAdvertiserListV10Api
 }
 
-func (c *Client) QianchuanShopAuthorizedGetV10Api() *api.QianchuanShopAuthorizedGetV10ApiService {
-	return c.ApiClient.QianchuanShopAuthorizedGetV10Api
-}
-
 func (c *Client) QianchuanShopGetV10Api() *api.QianchuanShopGetV10ApiService {
 	return c.ApiClient.QianchuanShopGetV10Api
 }
@@ -1178,10 +1146,6 @@ func (c *Client) QianchuanToolsEstimateAudienceV10Api() *api.QianchuanToolsEstim
 
 func (c *Client) QianchuanToolsGrayV10Api() *api.QianchuanToolsGrayV10ApiService {
 	return c.ApiClient.QianchuanToolsGrayV10Api
-}
-
-func (c *Client) QianchuanToolsShopAuthV10Api() *api.QianchuanToolsShopAuthV10ApiService {
-	return c.ApiClient.QianchuanToolsShopAuthV10Api
 }
 
 func (c *Client) QianchuanToolsSmartBoostAdBoostReportGetV10Api() *api.QianchuanToolsSmartBoostAdBoostReportGetV10ApiService {
