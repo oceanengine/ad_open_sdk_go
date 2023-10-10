@@ -174,7 +174,6 @@ api/api_material_status_update_v30.go
 api/api_native_anchor_create_v30.go
 api/api_native_anchor_get_v30.go
 api/api_oauth2_access_token.go
-api/api_oauth2_advertiser_get.go
 api/api_oauth2_app_access_token.go
 api/api_oauth2_refresh_token.go
 api/api_project_budget_update_v30.go
@@ -664,7 +663,6 @@ examples/native_anchor_create_v30_example.go
 examples/native_anchor_get_v30_example.go
 examples/oauth2_access_token_example.go
 examples/oauth2_access_token_example.go
-examples/oauth2_advertiser_get_example.go
 examples/oauth2_app_access_token_example.go
 examples/oauth2_refresh_token_example.go
 examples/oauth2_refresh_token_example.go
@@ -2280,10 +2278,6 @@ models/model_native_anchor_get_v3_0_response_data_page_info.go
 models/model_oauth2_access_token_request.go
 models/model_oauth2_access_token_response.go
 models/model_oauth2_access_token_response_data.go
-models/model_oauth2_advertiser_get_response.go
-models/model_oauth2_advertiser_get_response_data.go
-models/model_oauth2_advertiser_get_response_data_list_inner.go
-models/model_oauth2_advertiser_get_response_data_list_inner_company_list_inner.go
 models/model_oauth2_app_access_token_request.go
 models/model_oauth2_app_access_token_response.go
 models/model_oauth2_app_access_token_response_data.go
@@ -5093,7 +5087,6 @@ test/api_material_status_update_v30_test.go
 test/api_native_anchor_create_v30_test.go
 test/api_native_anchor_get_v30_test.go
 test/api_oauth2_access_token_test.go
-test/api_oauth2_advertiser_get_test.go
 test/api_oauth2_app_access_token_test.go
 test/api_oauth2_refresh_token_test.go
 test/api_project_budget_update_v30_test.go
