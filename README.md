@@ -307,7 +307,6 @@ Class | Method | HTTP request | Description
 *DmpCustomAudienceReadV2Api* | **OpenApi2DmpCustomAudienceReadGet** | **Get** /open_api/2/dmp/custom_audience/read/ | 
 *DmpCustomAudienceSelectV2Api* | **OpenApi2DmpCustomAudienceSelectGet** | **Get** /open_api/2/dmp/custom_audience/select/ | 
 *DmpDataSourceCreateV2Api* | **OpenApi2DmpDataSourceCreatePost** | **Post** /open_api/2/dmp/data_source/create/ | 
-*DmpDataSourceFileUploadV2Api* | **OpenApi2DmpDataSourceFileUploadPost** | **Post** /open_api/2/dmp/data_source/file/upload/ | 
 *DmpDataSourceReadV2Api* | **OpenApi2DmpDataSourceReadGet** | **Get** /open_api/2/dmp/data_source/read/ | 
 *DmpDataSourceUpdateV2Api* | **OpenApi2DmpDataSourceUpdatePost** | **Post** /open_api/2/dmp/data_source/update/ | 
 *DouplusOrderListV30Api* | **OpenApiV30DouplusOrderListGet** | **Get** /open_api/v3.0/douplus/order/list/ | 
@@ -421,8 +420,6 @@ Class | Method | HTTP request | Description
 *QianchuanAdvertiserTypeGetV10Api* | **OpenApiV10QianchuanAdvertiserTypeGetGet** | **Get** /open_api/v1.0/qianchuan/advertiser/type/get/ | 
 *QianchuanAudienceCreateByFileV10Api* | **OpenApiV10QianchuanAudienceCreateByFilePost** | **Post** /open_api/v1.0/qianchuan/audience/create_by_file/ | 
 *QianchuanAudienceDeleteV10Api* | **OpenApiV10QianchuanAudienceDeletePost** | **Post** /open_api/v1.0/qianchuan/audience/delete/ | 
-*QianchuanAudienceFilePartUploadV10Api* | **OpenApiV10QianchuanAudienceFilePartUploadPost** | **Post** /open_api/v1.0/qianchuan/audience_file/part_upload/ | 
-*QianchuanAudienceFileUploadV10Api* | **OpenApiV10QianchuanAudienceFileUploadPost** | **Post** /open_api/v1.0/qianchuan/audience_file/upload/ | 
 *QianchuanAudienceGroupGetV10Api* | **OpenApiV10QianchuanAudienceGroupGetGet** | **Get** /open_api/v1.0/qianchuan/audience_group/get/ | 
 *QianchuanAudienceListGetV10Api* | **OpenApiV10QianchuanAudienceListGetGet** | **Get** /open_api/v1.0/qianchuan/audience_list/get/ | 
 *QianchuanAudiencePushV10Api* | **OpenApiV10QianchuanAudiencePushPost** | **Post** /open_api/v1.0/qianchuan/audience/push/ | 

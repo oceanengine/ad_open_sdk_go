@@ -428,10 +428,6 @@ func (c *Client) DmpDataSourceCreateV2Api() *api.DmpDataSourceCreateV2ApiService
 	return c.ApiClient.DmpDataSourceCreateV2Api
 }
 
-func (c *Client) DmpDataSourceFileUploadV2Api() *api.DmpDataSourceFileUploadV2ApiService {
-	return c.ApiClient.DmpDataSourceFileUploadV2Api
-}
-
 func (c *Client) DmpDataSourceReadV2Api() *api.DmpDataSourceReadV2ApiService {
 	return c.ApiClient.DmpDataSourceReadV2Api
 }
@@ -882,14 +878,6 @@ func (c *Client) QianchuanAudienceCreateByFileV10Api() *api.QianchuanAudienceCre
 
 func (c *Client) QianchuanAudienceDeleteV10Api() *api.QianchuanAudienceDeleteV10ApiService {
 	return c.ApiClient.QianchuanAudienceDeleteV10Api
-}
-
-func (c *Client) QianchuanAudienceFilePartUploadV10Api() *api.QianchuanAudienceFilePartUploadV10ApiService {
-	return c.ApiClient.QianchuanAudienceFilePartUploadV10Api
-}
-
-func (c *Client) QianchuanAudienceFileUploadV10Api() *api.QianchuanAudienceFileUploadV10ApiService {
-	return c.ApiClient.QianchuanAudienceFileUploadV10Api
 }
 
 func (c *Client) QianchuanAudienceGroupGetV10Api() *api.QianchuanAudienceGroupGetV10ApiService {
