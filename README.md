@@ -377,6 +377,7 @@ Class | Method | HTTP request | Description
 *NativeAnchorCreateV30Api* | **OpenApiV30NativeAnchorCreatePost** | **Post** /open_api/v3.0/native_anchor/create/ | 
 *NativeAnchorGetV30Api* | **OpenApiV30NativeAnchorGetGet** | **Get** /open_api/v3.0/native_anchor/get/ | 
 *Oauth2AccessTokenApi* | **OpenApiOauth2AccessTokenPost** | **Post** /open_api/oauth2/access_token/ | 
+*Oauth2AdvertiserGetApi* | **OpenApiOauth2AdvertiserGetGet** | **Get** /open_api/oauth2/advertiser/get/ | 
 *Oauth2AppAccessTokenApi* | **OpenApiOauth2AppAccessTokenPost** | **Post** /open_api/oauth2/app_access_token/ | 
 *Oauth2RefreshTokenApi* | **OpenApiOauth2RefreshTokenPost** | **Post** /open_api/oauth2/refresh_token/ | 
 *ProjectBudgetUpdateV30Api* | **OpenApiV30ProjectBudgetUpdatePost** | **Post** /open_api/v3.0/project/budget/update/ | 
