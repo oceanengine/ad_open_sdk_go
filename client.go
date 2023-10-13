@@ -708,10 +708,6 @@ func (c *Client) Oauth2AccessTokenApi() *api.Oauth2AccessTokenApiService {
 	return c.ApiClient.Oauth2AccessTokenApi
 }
 
-func (c *Client) Oauth2AdvertiserGetApi() *api.Oauth2AdvertiserGetApiService {
-	return c.ApiClient.Oauth2AdvertiserGetApi
-}
-
 func (c *Client) Oauth2AppAccessTokenApi() *api.Oauth2AppAccessTokenApiService {
 	return c.ApiClient.Oauth2AppAccessTokenApi
 }
