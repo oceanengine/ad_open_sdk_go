@@ -601,10 +601,8 @@ Class | Method | HTTP request | Description
 *ToolsGrayGetV30Api* | **OpenApiV30ToolsGrayGetGet** | **Get** /open_api/v3.0/tools/gray/get/ | 
 *ToolsIesAccountSearchV2Api* | **OpenApi2ToolsIesAccountSearchGet** | **Get** /open_api/2/tools/ies_account_search/ | 
 *ToolsIndustryGetV2Api* | **OpenApi2ToolsIndustryGetGet** | **Get** /open_api/2/tools/industry/get/ | 
-*ToolsInterestActionActionCategoryV2Api* | **OpenApi2ToolsInterestActionActionCategoryGet** | **Get** /open_api/2/tools/interest_action/action/category/ | 
 *ToolsInterestActionActionKeywordV2Api* | **OpenApi2ToolsInterestActionActionKeywordGet** | **Get** /open_api/2/tools/interest_action/action/keyword/ | 
 *ToolsInterestActionId2wordV2Api* | **OpenApi2ToolsInterestActionId2wordGet** | **Get** /open_api/2/tools/interest_action/id2word/ | 
-*ToolsInterestActionInterestCategoryV2Api* | **OpenApi2ToolsInterestActionInterestCategoryGet** | **Get** /open_api/2/tools/interest_action/interest/category/ | 
 *ToolsInterestActionInterestKeywordV2Api* | **OpenApi2ToolsInterestActionInterestKeywordGet** | **Get** /open_api/2/tools/interest_action/interest/keyword/ | 
 *ToolsInterestActionKeywordSuggestV2Api* | **OpenApi2ToolsInterestActionKeywordSuggestGet** | **Get** /open_api/2/tools/interest_action/keyword/suggest/ | 
 *ToolsKeyActionGetV2Api* | **OpenApi2ToolsKeyActionGetGet** | **Get** /open_api/2/tools/key_action/get/ | 

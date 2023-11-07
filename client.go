@@ -1604,20 +1604,12 @@ func (c *Client) ToolsIndustryGetV2Api() *api.ToolsIndustryGetV2ApiService {
 	return c.ApiClient.ToolsIndustryGetV2Api
 }
 
-func (c *Client) ToolsInterestActionActionCategoryV2Api() *api.ToolsInterestActionActionCategoryV2ApiService {
-	return c.ApiClient.ToolsInterestActionActionCategoryV2Api
-}
-
 func (c *Client) ToolsInterestActionActionKeywordV2Api() *api.ToolsInterestActionActionKeywordV2ApiService {
 	return c.ApiClient.ToolsInterestActionActionKeywordV2Api
 }
 
 func (c *Client) ToolsInterestActionId2wordV2Api() *api.ToolsInterestActionId2wordV2ApiService {
 	return c.ApiClient.ToolsInterestActionId2wordV2Api
-}
-
-func (c *Client) ToolsInterestActionInterestCategoryV2Api() *api.ToolsInterestActionInterestCategoryV2ApiService {
-	return c.ApiClient.ToolsInterestActionInterestCategoryV2Api
 }
 
 func (c *Client) ToolsInterestActionInterestKeywordV2Api() *api.ToolsInterestActionInterestKeywordV2ApiService {
