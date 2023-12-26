@@ -248,6 +248,7 @@ Class | Method | HTTP request | Description
 *AsyncTaskGetV2Api* | **OpenApi2AsyncTaskGetGet** | **Get** /open_api/2/async_task/get/ | 
 *AudiencePackageCreateV2Api* | **OpenApi2AudiencePackageCreatePost** | **Post** /open_api/2/audience_package/create/ | 
 *AudiencePackageDeleteV2Api* | **OpenApi2AudiencePackageDeletePost** | **Post** /open_api/2/audience_package/delete/ | 
+*AudiencePackageGetV2Api* | **OpenApi2AudiencePackageGetGet** | **Get** /open_api/2/audience_package/get/ | 
 *AudiencePackageUpdateV2Api* | **OpenApi2AudiencePackageUpdatePost** | **Post** /open_api/2/audience_package/update/ | 
 *BusinessPlatformCompanyAccountGetV30Api* | **OpenApiV30BusinessPlatformCompanyAccountGetGet** | **Get** /open_api/v3.0/business_platform/company_account/get/ | 
 *BusinessPlatformCompanyInfoGetV30Api* | **OpenApiV30BusinessPlatformCompanyInfoGetGet** | **Get** /open_api/v3.0/business_platform/company_info/get/ | 
@@ -619,7 +620,11 @@ Class | Method | HTTP request | Description
 *ToolsLogSearchV2Api* | **OpenApi2ToolsLogSearchGet** | **Get** /open_api/2/tools/log_search/ | 
 *ToolsOrangeSiteGetV30Api* | **OpenApiV30ToolsOrangeSiteGetGet** | **Get** /open_api/v3.0/tools/orange_site/get/ | 
 *ToolsPlayableCloudGameListV2Api* | **OpenApi2ToolsPlayableCloudGameListGet** | **Get** /open_api/2/tools/playable/cloud_game/list/ | 
+*ToolsPlayableGrantResultV2Api* | **OpenApi2ToolsPlayableGrantResultGet** | **Get** /open_api/2/tools/playable/grant/result/ | 
+*ToolsPlayableGrantV2Api* | **OpenApi2ToolsPlayableGrantPost** | **Post** /open_api/2/tools/playable/grant/ | 
 *ToolsPlayableListGetV2Api* | **OpenApi2ToolsPlayableListGetGet** | **Get** /open_api/2/tools/playable_list/get/ | 
+*ToolsPlayableSaveV2Api* | **OpenApi2ToolsPlayableSavePost** | **Post** /open_api/2/tools/playable/save/ | 
+*ToolsPlayableValidateV2Api* | **OpenApi2ToolsPlayableValidateGet** | **Get** /open_api/2/tools/playable/validate/ | 
 *ToolsPreAuditGetV2Api* | **OpenApi2ToolsPreAuditGetGet** | **Get** /open_api/2/tools/pre_audit/get/ | 
 *ToolsPreAuditSendV2Api* | **OpenApi2ToolsPreAuditSendPost** | **Post** /open_api/2/tools/pre_audit/send/ | 
 *ToolsPrivativeWordBatchGetV30Api* | **OpenApiV30ToolsPrivativeWordBatchGetPost** | **Post** /open_api/v3.0/tools/privative_word/batch_get/ | 

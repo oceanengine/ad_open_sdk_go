@@ -192,6 +192,10 @@ func (c *Client) AudiencePackageDeleteV2Api() *api.AudiencePackageDeleteV2ApiSer
 	return c.ApiClient.AudiencePackageDeleteV2Api
 }
 
+func (c *Client) AudiencePackageGetV2Api() *api.AudiencePackageGetV2ApiService {
+	return c.ApiClient.AudiencePackageGetV2Api
+}
+
 func (c *Client) AudiencePackageUpdateV2Api() *api.AudiencePackageUpdateV2ApiService {
 	return c.ApiClient.AudiencePackageUpdateV2Api
 }
@@ -1676,8 +1680,24 @@ func (c *Client) ToolsPlayableCloudGameListV2Api() *api.ToolsPlayableCloudGameLi
 	return c.ApiClient.ToolsPlayableCloudGameListV2Api
 }
 
+func (c *Client) ToolsPlayableGrantResultV2Api() *api.ToolsPlayableGrantResultV2ApiService {
+	return c.ApiClient.ToolsPlayableGrantResultV2Api
+}
+
+func (c *Client) ToolsPlayableGrantV2Api() *api.ToolsPlayableGrantV2ApiService {
+	return c.ApiClient.ToolsPlayableGrantV2Api
+}
+
 func (c *Client) ToolsPlayableListGetV2Api() *api.ToolsPlayableListGetV2ApiService {
 	return c.ApiClient.ToolsPlayableListGetV2Api
+}
+
+func (c *Client) ToolsPlayableSaveV2Api() *api.ToolsPlayableSaveV2ApiService {
+	return c.ApiClient.ToolsPlayableSaveV2Api
+}
+
+func (c *Client) ToolsPlayableValidateV2Api() *api.ToolsPlayableValidateV2ApiService {
+	return c.ApiClient.ToolsPlayableValidateV2Api
 }
 
 func (c *Client) ToolsPreAuditGetV2Api() *api.ToolsPreAuditGetV2ApiService {
