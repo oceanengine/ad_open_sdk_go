@@ -255,6 +255,7 @@ Class | Method | HTTP request
 *AgentFundTransferSeqCommitV2Api* | **OpenApi2AgentFundTransferSeqCommitPost** | **Post** /open_api/2/agent/fund/transfer_seq/commit/
 *AgentFundTransferSeqCreateV2Api* | **OpenApi2AgentFundTransferSeqCreatePost** | **Post** /open_api/2/agent/fund/transfer_seq/create/
 *AgentInfoV2Api* | **OpenApi2AgentInfoGet** | **Get** /open_api/2/agent/info/
+*AgentQueryRiskPromotionListV2Api* | **OpenApi2AgentQueryRiskPromotionListGet** | **Get** /open_api/2/agent/query/risk_promotion_list/
 *AgentRefundTransferSeqCommitV2Api* | **OpenApi2AgentRefundTransferSeqCommitPost** | **Post** /open_api/2/agent/refund/transfer_seq/commit/
 *AgentRefundTransferSeqCreateV2Api* | **OpenApi2AgentRefundTransferSeqCreatePost** | **Post** /open_api/2/agent/refund/transfer_seq/create/
 *AnalyticsAttributionV30Api* | **OpenApiV30AnalyticsAttributionPost** | **Post** /open_api/v3.0/analytics/attribution/
@@ -361,6 +362,8 @@ Class | Method | HTTP request
 *DmpDataSourceFileUploadV2Api* | **OpenApi2DmpDataSourceFileUploadPost** | **Post** /open_api/2/dmp/data_source/file/upload/
 *DmpDataSourceReadV2Api* | **OpenApi2DmpDataSourceReadGet** | **Get** /open_api/2/dmp/data_source/read/
 *DmpDataSourceUpdateV2Api* | **OpenApi2DmpDataSourceUpdatePost** | **Post** /open_api/2/dmp/data_source/update/
+*DouplusOrderCloseV30Api* | **OpenApiV30DouplusOrderClosePost** | **Post** /open_api/v3.0/douplus/order/close/
+*DouplusOrderCreateV30Api* | **OpenApiV30DouplusOrderCreatePost** | **Post** /open_api/v3.0/douplus/order/create/
 *DouplusOrderListV30Api* | **OpenApiV30DouplusOrderListGet** | **Get** /open_api/v3.0/douplus/order/list/
 *DouplusOrderReportV30Api* | **OpenApiV30DouplusOrderReportGet** | **Get** /open_api/v3.0/douplus/order/report/
 *DpaAssetV2DetailReadV2Api* | **OpenApi2DpaAssetV2DetailReadPost** | **Post** /open_api/2/dpa/asset_v2/detail/read/
@@ -658,6 +661,7 @@ Class | Method | HTTP request
 *StarComponentQueryIndustryAnchorV2Api* | **OpenApi2StarComponentQueryIndustryAnchorGet** | **Get** /open_api/2/star/component/query_industry_anchor/
 *StarComponentQueryLinkV2Api* | **OpenApi2StarComponentQueryLinkGet** | **Get** /open_api/2/star/component/query_link/
 *StarComponentUpdateLinkV2Api* | **OpenApi2StarComponentUpdateLinkPost** | **Post** /open_api/2/star/component/update_link/
+*StarDataTaskTimelineReportV2Api* | **OpenApi2StarDataTaskTimelineReportGet** | **Get** /open_api/2/star/data/task_timeline_report/
 *StarDemandCreateAssignV2Api* | **OpenApi2StarDemandCreateAssignPost** | **Post** /open_api/2/star/demand/create_assign/
 *StarDemandCreateChallengeV2Api* | **OpenApi2StarDemandCreateChallengePost** | **Post** /open_api/2/star/demand/create_challenge/
 *StarDemandListV2Api* | **OpenApi2StarDemandListGet** | **Get** /open_api/2/star/demand/list/

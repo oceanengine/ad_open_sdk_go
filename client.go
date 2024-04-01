@@ -220,6 +220,10 @@ func (c *Client) AgentInfoV2Api() *api.AgentInfoV2ApiService {
 	return c.ApiClient.AgentInfoV2Api
 }
 
+func (c *Client) AgentQueryRiskPromotionListV2Api() *api.AgentQueryRiskPromotionListV2ApiService {
+	return c.ApiClient.AgentQueryRiskPromotionListV2Api
+}
+
 func (c *Client) AgentRefundTransferSeqCommitV2Api() *api.AgentRefundTransferSeqCommitV2ApiService {
 	return c.ApiClient.AgentRefundTransferSeqCommitV2Api
 }
@@ -642,6 +646,14 @@ func (c *Client) DmpDataSourceReadV2Api() *api.DmpDataSourceReadV2ApiService {
 
 func (c *Client) DmpDataSourceUpdateV2Api() *api.DmpDataSourceUpdateV2ApiService {
 	return c.ApiClient.DmpDataSourceUpdateV2Api
+}
+
+func (c *Client) DouplusOrderCloseV30Api() *api.DouplusOrderCloseV30ApiService {
+	return c.ApiClient.DouplusOrderCloseV30Api
+}
+
+func (c *Client) DouplusOrderCreateV30Api() *api.DouplusOrderCreateV30ApiService {
+	return c.ApiClient.DouplusOrderCreateV30Api
 }
 
 func (c *Client) DouplusOrderListV30Api() *api.DouplusOrderListV30ApiService {
@@ -1830,6 +1842,10 @@ func (c *Client) StarComponentQueryLinkV2Api() *api.StarComponentQueryLinkV2ApiS
 
 func (c *Client) StarComponentUpdateLinkV2Api() *api.StarComponentUpdateLinkV2ApiService {
 	return c.ApiClient.StarComponentUpdateLinkV2Api
+}
+
+func (c *Client) StarDataTaskTimelineReportV2Api() *api.StarDataTaskTimelineReportV2ApiService {
+	return c.ApiClient.StarDataTaskTimelineReportV2Api
 }
 
 func (c *Client) StarDemandCreateAssignV2Api() *api.StarDemandCreateAssignV2ApiService {
