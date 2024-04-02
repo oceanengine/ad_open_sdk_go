@@ -258,6 +258,7 @@ Class | Method | HTTP request
 *AgentQueryRiskPromotionListV2Api* | **OpenApi2AgentQueryRiskPromotionListGet** | **Get** /open_api/2/agent/query/risk_promotion_list/
 *AgentRefundTransferSeqCommitV2Api* | **OpenApi2AgentRefundTransferSeqCommitPost** | **Post** /open_api/2/agent/refund/transfer_seq/commit/
 *AgentRefundTransferSeqCreateV2Api* | **OpenApi2AgentRefundTransferSeqCreatePost** | **Post** /open_api/2/agent/refund/transfer_seq/create/
+*AgentTransferTransactionRecordV2Api* | **OpenApi2AgentTransferTransactionRecordGet** | **Get** /open_api/2/agent/transfer/transaction_record/
 *AnalyticsAttributionV30Api* | **OpenApiV30AnalyticsAttributionPost** | **Post** /open_api/v3.0/analytics/attribution/
 *AssetsCreativeComponentCreateV2Api* | **OpenApi2AssetsCreativeComponentCreatePost** | **Post** /open_api/2/assets/creative_component/create/
 *AssetsCreativeComponentGetV2Api* | **OpenApi2AssetsCreativeComponentGetGet** | **Get** /open_api/2/assets/creative_component/get/

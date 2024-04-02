@@ -232,6 +232,10 @@ func (c *Client) AgentRefundTransferSeqCreateV2Api() *api.AgentRefundTransferSeq
 	return c.ApiClient.AgentRefundTransferSeqCreateV2Api
 }
 
+func (c *Client) AgentTransferTransactionRecordV2Api() *api.AgentTransferTransactionRecordV2ApiService {
+	return c.ApiClient.AgentTransferTransactionRecordV2Api
+}
+
 func (c *Client) AnalyticsAttributionV30Api() *api.AnalyticsAttributionV30ApiService {
 	return c.ApiClient.AnalyticsAttributionV30Api
 }
