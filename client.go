@@ -516,16 +516,8 @@ func (c *Client) CreativeAdMetricsV2Api() *api.CreativeAdMetricsV2ApiService {
 	return c.ApiClient.CreativeAdMetricsV2Api
 }
 
-func (c *Client) CreativeAutoGenerateConfigCreateV2Api() *api.CreativeAutoGenerateConfigCreateV2ApiService {
-	return c.ApiClient.CreativeAutoGenerateConfigCreateV2Api
-}
-
 func (c *Client) CreativeAutoGenerateConfigGetV2Api() *api.CreativeAutoGenerateConfigGetV2ApiService {
 	return c.ApiClient.CreativeAutoGenerateConfigGetV2Api
-}
-
-func (c *Client) CreativeAutoGenerateConfigV2CreateV2Api() *api.CreativeAutoGenerateConfigV2CreateV2ApiService {
-	return c.ApiClient.CreativeAutoGenerateConfigV2CreateV2Api
 }
 
 func (c *Client) CreativeCustomCreativeCreateV2Api() *api.CreativeCustomCreativeCreateV2ApiService {
@@ -904,10 +896,6 @@ func (c *Client) FileQualitySubmitV30Api() *api.FileQualitySubmitV30ApiService {
 	return c.ApiClient.FileQualitySubmitV30Api
 }
 
-func (c *Client) FileRebateMaterialSearchV2Api() *api.FileRebateMaterialSearchV2ApiService {
-	return c.ApiClient.FileRebateMaterialSearchV2Api
-}
-
 func (c *Client) FileVideoAdGetV2Api() *api.FileVideoAdGetV2ApiService {
 	return c.ApiClient.FileVideoAdGetV2Api
 }
@@ -1122,6 +1110,10 @@ func (c *Client) PromotionDeleteV30Api() *api.PromotionDeleteV30ApiService {
 
 func (c *Client) PromotionListV30Api() *api.PromotionListV30ApiService {
 	return c.ApiClient.PromotionListV30Api
+}
+
+func (c *Client) PromotionMaterialDeleteV30Api() *api.PromotionMaterialDeleteV30ApiService {
+	return c.ApiClient.PromotionMaterialDeleteV30Api
 }
 
 func (c *Client) PromotionRejectReasonGetV30Api() *api.PromotionRejectReasonGetV30ApiService {
@@ -1756,6 +1748,14 @@ func (c *Client) ReportSitePageV2Api() *api.ReportSitePageV2ApiService {
 	return c.ApiClient.ReportSitePageV2Api
 }
 
+func (c *Client) ReportStardeliveryTaskDataGetV30Api() *api.ReportStardeliveryTaskDataGetV30ApiService {
+	return c.ApiClient.ReportStardeliveryTaskDataGetV30Api
+}
+
+func (c *Client) ReportStardeliveryTaskVideoDataGetV30Api() *api.ReportStardeliveryTaskVideoDataGetV30ApiService {
+	return c.ApiClient.ReportStardeliveryTaskVideoDataGetV30Api
+}
+
 func (c *Client) ReportVideoFrameGetV2Api() *api.ReportVideoFrameGetV2ApiService {
 	return c.ApiClient.ReportVideoFrameGetV2Api
 }
@@ -1896,6 +1896,10 @@ func (c *Client) StarGetCreateChallengeDataDictV2Api() *api.StarGetCreateChallen
 	return c.ApiClient.StarGetCreateChallengeDataDictV2Api
 }
 
+func (c *Client) StarInfoV2Api() *api.StarInfoV2ApiService {
+	return c.ApiClient.StarInfoV2Api
+}
+
 func (c *Client) StarMcnContractChallengeV2Api() *api.StarMcnContractChallengeV2ApiService {
 	return c.ApiClient.StarMcnContractChallengeV2Api
 }
@@ -2000,12 +2004,80 @@ func (c *Client) StarReportOrderUserDistributionGetV2Api() *api.StarReportOrderU
 	return c.ApiClient.StarReportOrderUserDistributionGetV2Api
 }
 
+func (c *Client) StarStarAdUniteTaskDetailV2Api() *api.StarStarAdUniteTaskDetailV2ApiService {
+	return c.ApiClient.StarStarAdUniteTaskDetailV2Api
+}
+
+func (c *Client) StarStarAdUniteTaskItemListV2Api() *api.StarStarAdUniteTaskItemListV2ApiService {
+	return c.ApiClient.StarStarAdUniteTaskItemListV2Api
+}
+
+func (c *Client) StarStarAdUniteTaskListV2Api() *api.StarStarAdUniteTaskListV2ApiService {
+	return c.ApiClient.StarStarAdUniteTaskListV2Api
+}
+
 func (c *Client) StarUserGetAwemeAuthorIdV2Api() *api.StarUserGetAwemeAuthorIdV2ApiService {
 	return c.ApiClient.StarUserGetAwemeAuthorIdV2Api
 }
 
 func (c *Client) StarUserGetStarIdV2Api() *api.StarUserGetStarIdV2ApiService {
 	return c.ApiClient.StarUserGetStarIdV2Api
+}
+
+func (c *Client) StardeliveryTaskAuthorDetailV30Api() *api.StardeliveryTaskAuthorDetailV30ApiService {
+	return c.ApiClient.StardeliveryTaskAuthorDetailV30Api
+}
+
+func (c *Client) StardeliveryTaskAuthorVideoDetailV30Api() *api.StardeliveryTaskAuthorVideoDetailV30ApiService {
+	return c.ApiClient.StardeliveryTaskAuthorVideoDetailV30Api
+}
+
+func (c *Client) StardeliveryTaskBudgetUpdateV30Api() *api.StardeliveryTaskBudgetUpdateV30ApiService {
+	return c.ApiClient.StardeliveryTaskBudgetUpdateV30Api
+}
+
+func (c *Client) StardeliveryTaskCancelV30Api() *api.StardeliveryTaskCancelV30ApiService {
+	return c.ApiClient.StardeliveryTaskCancelV30Api
+}
+
+func (c *Client) StardeliveryTaskCreateResultGetV30Api() *api.StardeliveryTaskCreateResultGetV30ApiService {
+	return c.ApiClient.StardeliveryTaskCreateResultGetV30Api
+}
+
+func (c *Client) StardeliveryTaskCreateV30Api() *api.StardeliveryTaskCreateV30ApiService {
+	return c.ApiClient.StardeliveryTaskCreateV30Api
+}
+
+func (c *Client) StardeliveryTaskDetailV30Api() *api.StardeliveryTaskDetailV30ApiService {
+	return c.ApiClient.StardeliveryTaskDetailV30Api
+}
+
+func (c *Client) StardeliveryTaskListV30Api() *api.StardeliveryTaskListV30ApiService {
+	return c.ApiClient.StardeliveryTaskListV30Api
+}
+
+func (c *Client) StardeliveryTaskPostEndTimeUpdateV30Api() *api.StardeliveryTaskPostEndTimeUpdateV30ApiService {
+	return c.ApiClient.StardeliveryTaskPostEndTimeUpdateV30Api
+}
+
+func (c *Client) StardeliveryTaskShareV30Api() *api.StardeliveryTaskShareV30ApiService {
+	return c.ApiClient.StardeliveryTaskShareV30Api
+}
+
+func (c *Client) StardeliveryTaskShareableListV30Api() *api.StardeliveryTaskShareableListV30ApiService {
+	return c.ApiClient.StardeliveryTaskShareableListV30Api
+}
+
+func (c *Client) StardeliveryTaskSharingListV30Api() *api.StardeliveryTaskSharingListV30ApiService {
+	return c.ApiClient.StardeliveryTaskSharingListV30Api
+}
+
+func (c *Client) StardeliveryTaskUnshareV30Api() *api.StardeliveryTaskUnshareV30ApiService {
+	return c.ApiClient.StardeliveryTaskUnshareV30Api
+}
+
+func (c *Client) StardeliveryTaskUpdateV30Api() *api.StardeliveryTaskUpdateV30ApiService {
+	return c.ApiClient.StardeliveryTaskUpdateV30Api
 }
 
 func (c *Client) SubscribeAccountsAddV30Api() *api.SubscribeAccountsAddV30ApiService {
@@ -2032,20 +2104,12 @@ func (c *Client) ToolsAbTestCreateV2Api() *api.ToolsAbTestCreateV2ApiService {
 	return c.ApiClient.ToolsAbTestCreateV2Api
 }
 
-func (c *Client) ToolsAbTestDeleteV2Api() *api.ToolsAbTestDeleteV2ApiService {
-	return c.ApiClient.ToolsAbTestDeleteV2Api
-}
-
 func (c *Client) ToolsAbTestInfoGetV2Api() *api.ToolsAbTestInfoGetV2ApiService {
 	return c.ApiClient.ToolsAbTestInfoGetV2Api
 }
 
 func (c *Client) ToolsAbTestListGetV2Api() *api.ToolsAbTestListGetV2ApiService {
 	return c.ApiClient.ToolsAbTestListGetV2Api
-}
-
-func (c *Client) ToolsAbTestStopV2Api() *api.ToolsAbTestStopV2ApiService {
-	return c.ApiClient.ToolsAbTestStopV2Api
 }
 
 func (c *Client) ToolsAbTestUpdateV2Api() *api.ToolsAbTestUpdateV2ApiService {
@@ -2814,6 +2878,18 @@ func (c *Client) ToolsSiteUpdateStatusV2Api() *api.ToolsSiteUpdateStatusV2ApiSer
 
 func (c *Client) ToolsSiteUpdateV2Api() *api.ToolsSiteUpdateV2ApiService {
 	return c.ApiClient.ToolsSiteUpdateV2Api
+}
+
+func (c *Client) ToolsStarTaskMaterialTypeV2Api() *api.ToolsStarTaskMaterialTypeV2ApiService {
+	return c.ApiClient.ToolsStarTaskMaterialTypeV2Api
+}
+
+func (c *Client) ToolsStarTaskSettlementConfigV2Api() *api.ToolsStarTaskSettlementConfigV2ApiService {
+	return c.ApiClient.ToolsStarTaskSettlementConfigV2Api
+}
+
+func (c *Client) ToolsStarTaskTitleTopicGetV2Api() *api.ToolsStarTaskTitleTopicGetV2ApiService {
+	return c.ApiClient.ToolsStarTaskTitleTopicGetV2Api
 }
 
 func (c *Client) ToolsSuggestBudgetGetV30Api() *api.ToolsSuggestBudgetGetV30ApiService {
