@@ -24,6 +24,10 @@ func Init(cfg *config.Configuration) *Client {
 	return client
 }
 
+func (c *Client) AccountFundGetV30Api() *api.AccountFundGetV30ApiService {
+	return c.ApiClient.AccountFundGetV30Api
+}
+
 func (c *Client) AdConvertOptimizedTargetGetV30Api() *api.AdConvertOptimizedTargetGetV30ApiService {
 	return c.ApiClient.AdConvertOptimizedTargetGetV30Api
 }
@@ -564,18 +568,6 @@ func (c *Client) CreativeStrategyListV2Api() *api.CreativeStrategyListV2ApiServi
 	return c.ApiClient.CreativeStrategyListV2Api
 }
 
-func (c *Client) CreativeTemplateDetailGetV2Api() *api.CreativeTemplateDetailGetV2ApiService {
-	return c.ApiClient.CreativeTemplateDetailGetV2Api
-}
-
-func (c *Client) CreativeTemplateListGetV2Api() *api.CreativeTemplateListGetV2ApiService {
-	return c.ApiClient.CreativeTemplateListGetV2Api
-}
-
-func (c *Client) CreativeTemplateTagsGetV2Api() *api.CreativeTemplateTagsGetV2ApiService {
-	return c.ApiClient.CreativeTemplateTagsGetV2Api
-}
-
 func (c *Client) CustomerCenterAdvertiserCopyV2Api() *api.CustomerCenterAdvertiserCopyV2ApiService {
 	return c.ApiClient.CustomerCenterAdvertiserCopyV2Api
 }
@@ -834,6 +826,10 @@ func (c *Client) EventManagerTrackUrlUpdateV2Api() *api.EventManagerTrackUrlUpda
 
 func (c *Client) FileAudioAdV2Api() *api.FileAudioAdV2ApiService {
 	return c.ApiClient.FileAudioAdV2Api
+}
+
+func (c *Client) FileAudioGetV2Api() *api.FileAudioGetV2ApiService {
+	return c.ApiClient.FileAudioGetV2Api
 }
 
 func (c *Client) FileAutoGenerateSourceGetV2Api() *api.FileAutoGenerateSourceGetV2ApiService {
@@ -1770,6 +1766,30 @@ func (c *Client) ServeMarketCidVerifyTokenV10Api() *api.ServeMarketCidVerifyToke
 
 func (c *Client) ServeMarketOrderGetV10Api() *api.ServeMarketOrderGetV10ApiService {
 	return c.ApiClient.ServeMarketOrderGetV10Api
+}
+
+func (c *Client) SharedWalletDailyStatGetV30Api() *api.SharedWalletDailyStatGetV30ApiService {
+	return c.ApiClient.SharedWalletDailyStatGetV30Api
+}
+
+func (c *Client) SharedWalletMainWalletGetV30Api() *api.SharedWalletMainWalletGetV30ApiService {
+	return c.ApiClient.SharedWalletMainWalletGetV30Api
+}
+
+func (c *Client) SharedWalletTransactionDetailGetV30Api() *api.SharedWalletTransactionDetailGetV30ApiService {
+	return c.ApiClient.SharedWalletTransactionDetailGetV30Api
+}
+
+func (c *Client) SharedWalletWalletBalanceGetV30Api() *api.SharedWalletWalletBalanceGetV30ApiService {
+	return c.ApiClient.SharedWalletWalletBalanceGetV30Api
+}
+
+func (c *Client) SharedWalletWalletInfoGetV30Api() *api.SharedWalletWalletInfoGetV30ApiService {
+	return c.ApiClient.SharedWalletWalletInfoGetV30Api
+}
+
+func (c *Client) SharedWalletWalletRelationGetV30Api() *api.SharedWalletWalletRelationGetV30ApiService {
+	return c.ApiClient.SharedWalletWalletRelationGetV30Api
 }
 
 func (c *Client) SpiTaskGetV2Api() *api.SpiTaskGetV2ApiService {

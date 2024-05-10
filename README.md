@@ -206,6 +206,7 @@ func main() {
 
 Class | Method | HTTP request
 ------------ | ------------- | -------------
+*AccountFundGetV30Api* | **OpenApiV30AccountFundGetGet** | **Get** /open_api/v3.0/account/fund/get/
 *AdConvertOptimizedTargetGetV30Api* | **OpenApiV30AdConvertOptimizedTargetGetGet** | **Get** /open_api/v3.0/ad_convert/optimized_target/get/
 *AdCostProtectStatusGetV2Api* | **OpenApi2AdCostProtectStatusGetGet** | **Get** /open_api/2/ad/cost_protect_status/get/
 *AdGetV2Api* | **OpenApi2AdGetGet** | **Get** /open_api/2/ad/get/
@@ -341,9 +342,6 @@ Class | Method | HTTP request
 *CreativeRejectReasonV2Api* | **OpenApi2CreativeRejectReasonGet** | **Get** /open_api/2/creative/reject_reason/
 *CreativeStatusUpdateV2V2Api* | **OpenApi2CreativeStatusUpdateV2Post** | **Post** /open_api/2/creative/status/update_v2/
 *CreativeStrategyListV2Api* | **OpenApi2CreativeStrategyListGet** | **Get** /open_api/2/creative/strategy/list/
-*CreativeTemplateDetailGetV2Api* | **OpenApi2CreativeTemplateDetailGetGet** | **Get** /open_api/2/creative/template/detail/get/
-*CreativeTemplateListGetV2Api* | **OpenApi2CreativeTemplateListGetGet** | **Get** /open_api/2/creative/template/list/get/
-*CreativeTemplateTagsGetV2Api* | **OpenApi2CreativeTemplateTagsGetGet** | **Get** /open_api/2/creative/template/tags/get/
 *CustomerCenterAdvertiserCopyV2Api* | **OpenApi2CustomerCenterAdvertiserCopyPost** | **Post** /open_api/2/customer_center/advertiser/copy/
 *CustomerCenterAdvertiserListV2Api* | **OpenApi2CustomerCenterAdvertiserListGet** | **Get** /open_api/2/customer_center/advertiser/list/
 *CustomerCenterAdvertiserTransferableListV2Api* | **OpenApi2CustomerCenterAdvertiserTransferableListGet** | **Get** /open_api/2/customer_center/advertiser/transferable/list/
@@ -409,6 +407,7 @@ Class | Method | HTTP request
 *EventManagerTrackUrlGetV2Api* | **OpenApi2EventManagerTrackUrlGetGet** | **Get** /open_api/2/event_manager/track_url/get/
 *EventManagerTrackUrlUpdateV2Api* | **OpenApi2EventManagerTrackUrlUpdatePost** | **Post** /open_api/2/event_manager/track_url/update/
 *FileAudioAdV2Api* | **OpenApi2FileAudioAdPost** | **Post** /open_api/2/file/audio/ad/
+*FileAudioGetV2Api* | **OpenApi2FileAudioGetGet** | **Get** /open_api/2/file/audio/get/
 *FileAutoGenerateSourceGetV2Api* | **OpenApi2FileAutoGenerateSourceGetGet** | **Get** /open_api/2/file/auto_generate_source/get/
 *FileImageAdGetV2Api* | **OpenApi2FileImageAdGetGet** | **Get** /open_api/2/file/image/ad/get/
 *FileImageAdV2Api* | **OpenApi2FileImageAdPost** | **Post** /open_api/2/file/image/ad/
@@ -643,6 +642,12 @@ Class | Method | HTTP request
 *ServeMarketActiveFuncGetV10Api* | **OpenApiV10ServeMarketActiveFuncGetGet** | **Get** /open_api/v1.0/serve_market/active_func/get/
 *ServeMarketCidVerifyTokenV10Api* | **OpenApiV10ServeMarketCidVerifyTokenGet** | **Get** /open_api/v1.0/serve_market/cid/verify_token/
 *ServeMarketOrderGetV10Api* | **OpenApiV10ServeMarketOrderGetGet** | **Get** /open_api/v1.0/serve_market/order/get/
+*SharedWalletDailyStatGetV30Api* | **OpenApiV30SharedWalletDailyStatGetGet** | **Get** /open_api/v3.0/shared_wallet/daily_stat/get/
+*SharedWalletMainWalletGetV30Api* | **OpenApiV30SharedWalletMainWalletGetGet** | **Get** /open_api/v3.0/shared_wallet/main_wallet/get/
+*SharedWalletTransactionDetailGetV30Api* | **OpenApiV30SharedWalletTransactionDetailGetGet** | **Get** /open_api/v3.0/shared_wallet/transaction_detail/get/
+*SharedWalletWalletBalanceGetV30Api* | **OpenApiV30SharedWalletWalletBalanceGetGet** | **Get** /open_api/v3.0/shared_wallet/wallet_balance/get/
+*SharedWalletWalletInfoGetV30Api* | **OpenApiV30SharedWalletWalletInfoGetGet** | **Get** /open_api/v3.0/shared_wallet/wallet_info/get/
+*SharedWalletWalletRelationGetV30Api* | **OpenApiV30SharedWalletWalletRelationGetGet** | **Get** /open_api/v3.0/shared_wallet/wallet_relation/get/
 *SpiTaskGetV2Api* | **OpenApi2SpiTaskGetGet** | **Get** /open_api/2/spi_task/get/
 *StarAttachmentUploadV2Api* | **OpenApi2StarAttachmentUploadPost** | **Post** /open_api/2/star/attachment/upload/
 *StarBillGetPendingV2Api* | **OpenApi2StarBillGetPendingGet** | **Get** /open_api/2/star/bill/get_pending/
