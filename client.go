@@ -1768,6 +1768,10 @@ func (c *Client) ServeMarketOrderGetV10Api() *api.ServeMarketOrderGetV10ApiServi
 	return c.ApiClient.ServeMarketOrderGetV10Api
 }
 
+func (c *Client) SharedWalletAccountRelationGetV30Api() *api.SharedWalletAccountRelationGetV30ApiService {
+	return c.ApiClient.SharedWalletAccountRelationGetV30Api
+}
+
 func (c *Client) SharedWalletDailyStatGetV30Api() *api.SharedWalletDailyStatGetV30ApiService {
 	return c.ApiClient.SharedWalletDailyStatGetV30Api
 }

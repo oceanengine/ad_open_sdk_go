@@ -642,6 +642,7 @@ Class | Method | HTTP request
 *ServeMarketActiveFuncGetV10Api* | **OpenApiV10ServeMarketActiveFuncGetGet** | **Get** /open_api/v1.0/serve_market/active_func/get/
 *ServeMarketCidVerifyTokenV10Api* | **OpenApiV10ServeMarketCidVerifyTokenGet** | **Get** /open_api/v1.0/serve_market/cid/verify_token/
 *ServeMarketOrderGetV10Api* | **OpenApiV10ServeMarketOrderGetGet** | **Get** /open_api/v1.0/serve_market/order/get/
+*SharedWalletAccountRelationGetV30Api* | **OpenApiV30SharedWalletAccountRelationGetGet** | **Get** /open_api/v3.0/shared_wallet/account_relation/get/
 *SharedWalletDailyStatGetV30Api* | **OpenApiV30SharedWalletDailyStatGetGet** | **Get** /open_api/v3.0/shared_wallet/daily_stat/get/
 *SharedWalletMainWalletGetV30Api* | **OpenApiV30SharedWalletMainWalletGetGet** | **Get** /open_api/v3.0/shared_wallet/main_wallet/get/
 *SharedWalletTransactionDetailGetV30Api* | **OpenApiV30SharedWalletTransactionDetailGetGet** | **Get** /open_api/v3.0/shared_wallet/transaction_detail/get/
