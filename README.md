@@ -92,6 +92,7 @@ func main() {
     apiClient.Use(xxxMiddleware)    // 增加中间件
     apiClient.SetLogEnable(true)    // 初始化后修改是否启用日志
     apiClient.SetHost("xxx.com")    // 修改域名
+    apiClient.SetTimeout(5 * time.Second)    // 设置超时时长
     apiClient.AddDefaultHeader("X-Debug-Header", "1")    // 为每个请求增加默认 header
     apiClient.ApiClient.Cfg.xxx = xxx         // 修改传入的config
 }

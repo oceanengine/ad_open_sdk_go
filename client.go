@@ -1,6 +1,8 @@
 package ad_open_sdk_go
 
 import (
+	"time"
+
 	"github.com/oceanengine/ad_open_sdk_go/api"
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	"github.com/oceanengine/ad_open_sdk_go/middleware"
@@ -3038,4 +3040,8 @@ func (c *Client) AddDefaultHeader(key string, value string) {
 
 func (c *Client) SetLogEnable(enable bool) {
 	c.ApiClient.Cfg.LogEnable = enable
+}
+
+func (c *Client) SetTimeout(timeout time.Duration) {
+	c.ApiClient.Cfg.HTTPClient.Timeout = timeout
 }
