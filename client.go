@@ -420,6 +420,22 @@ func (c *Client) CgTransferQueryTransferDetailV30Api() *api.CgTransferQueryTrans
 	return c.ApiClient.CgTransferQueryTransferDetailV30Api
 }
 
+func (c *Client) CgTransferWalletTransferCanTransferBalanceV30Api() *api.CgTransferWalletTransferCanTransferBalanceV30ApiService {
+	return c.ApiClient.CgTransferWalletTransferCanTransferBalanceV30Api
+}
+
+func (c *Client) CgTransferWalletTransferCreateV30Api() *api.CgTransferWalletTransferCreateV30ApiService {
+	return c.ApiClient.CgTransferWalletTransferCreateV30Api
+}
+
+func (c *Client) CgTransferWalletTransferDetailV30Api() *api.CgTransferWalletTransferDetailV30ApiService {
+	return c.ApiClient.CgTransferWalletTransferDetailV30Api
+}
+
+func (c *Client) CgTransferWalletTransferListV30Api() *api.CgTransferWalletTransferListV30ApiService {
+	return c.ApiClient.CgTransferWalletTransferListV30Api
+}
+
 func (c *Client) ClueCouponCodeConsumeV2Api() *api.ClueCouponCodeConsumeV2ApiService {
 	return c.ApiClient.ClueCouponCodeConsumeV2Api
 }
@@ -592,6 +608,18 @@ func (c *Client) DecorationCouponGetV30Api() *api.DecorationCouponGetV30ApiServi
 	return c.ApiClient.DecorationCouponGetV30Api
 }
 
+func (c *Client) DiagnosisTaskAgentCreateV2Api() *api.DiagnosisTaskAgentCreateV2ApiService {
+	return c.ApiClient.DiagnosisTaskAgentCreateV2Api
+}
+
+func (c *Client) DiagnosisTaskAgentGetV2Api() *api.DiagnosisTaskAgentGetV2ApiService {
+	return c.ApiClient.DiagnosisTaskAgentGetV2Api
+}
+
+func (c *Client) DiagnosisTaskAgentListV2Api() *api.DiagnosisTaskAgentListV2ApiService {
+	return c.ApiClient.DiagnosisTaskAgentListV2Api
+}
+
 func (c *Client) DmpBrandGetV2Api() *api.DmpBrandGetV2ApiService {
 	return c.ApiClient.DmpBrandGetV2Api
 }
@@ -614,10 +642,6 @@ func (c *Client) DmpCustomAudiencePushV2V2Api() *api.DmpCustomAudiencePushV2V2Ap
 
 func (c *Client) DmpCustomAudienceReadV2Api() *api.DmpCustomAudienceReadV2ApiService {
 	return c.ApiClient.DmpCustomAudienceReadV2Api
-}
-
-func (c *Client) DmpCustomAudienceSelectV2Api() *api.DmpCustomAudienceSelectV2ApiService {
-	return c.ApiClient.DmpCustomAudienceSelectV2Api
 }
 
 func (c *Client) DmpDataSourceCreateV2Api() *api.DmpDataSourceCreateV2ApiService {
@@ -844,6 +868,10 @@ func (c *Client) FileImageAdV2Api() *api.FileImageAdV2ApiService {
 	return c.ApiClient.FileImageAdV2Api
 }
 
+func (c *Client) FileImageAdvertiserV2Api() *api.FileImageAdvertiserV2ApiService {
+	return c.ApiClient.FileImageAdvertiserV2Api
+}
+
 func (c *Client) FileImageDeleteV30Api() *api.FileImageDeleteV30ApiService {
 	return c.ApiClient.FileImageDeleteV30Api
 }
@@ -872,10 +900,6 @@ func (c *Client) FileMaterialListV2Api() *api.FileMaterialListV2ApiService {
 	return c.ApiClient.FileMaterialListV2Api
 }
 
-func (c *Client) FileMediaGetV2Api() *api.FileMediaGetV2ApiService {
-	return c.ApiClient.FileMediaGetV2Api
-}
-
 func (c *Client) FilePreauditGetV30Api() *api.FilePreauditGetV30ApiService {
 	return c.ApiClient.FilePreauditGetV30Api
 }
@@ -892,12 +916,32 @@ func (c *Client) FileQualitySubmitV30Api() *api.FileQualitySubmitV30ApiService {
 	return c.ApiClient.FileQualitySubmitV30Api
 }
 
+func (c *Client) FileRebateMaterialDownloadCreateTaskV2Api() *api.FileRebateMaterialDownloadCreateTaskV2ApiService {
+	return c.ApiClient.FileRebateMaterialDownloadCreateTaskV2Api
+}
+
+func (c *Client) FileRebateMaterialDownloadDownloadFileV2Api() *api.FileRebateMaterialDownloadDownloadFileV2ApiService {
+	return c.ApiClient.FileRebateMaterialDownloadDownloadFileV2Api
+}
+
+func (c *Client) FileRebateMaterialDownloadGetDownloadTaskListV2Api() *api.FileRebateMaterialDownloadGetDownloadTaskListV2ApiService {
+	return c.ApiClient.FileRebateMaterialDownloadGetDownloadTaskListV2Api
+}
+
+func (c *Client) FileUploadTaskCreateV2Api() *api.FileUploadTaskCreateV2ApiService {
+	return c.ApiClient.FileUploadTaskCreateV2Api
+}
+
 func (c *Client) FileVideoAdGetV2Api() *api.FileVideoAdGetV2ApiService {
 	return c.ApiClient.FileVideoAdGetV2Api
 }
 
 func (c *Client) FileVideoAdV2Api() *api.FileVideoAdV2ApiService {
 	return c.ApiClient.FileVideoAdV2Api
+}
+
+func (c *Client) FileVideoAgentGetV2Api() *api.FileVideoAgentGetV2ApiService {
+	return c.ApiClient.FileVideoAgentGetV2Api
 }
 
 func (c *Client) FileVideoAgentV2Api() *api.FileVideoAgentV2ApiService {
@@ -938,6 +982,10 @@ func (c *Client) FileVideoPauseV2Api() *api.FileVideoPauseV2ApiService {
 
 func (c *Client) FileVideoUpdateV2Api() *api.FileVideoUpdateV2ApiService {
 	return c.ApiClient.FileVideoUpdateV2Api
+}
+
+func (c *Client) FileVideoUploadTaskListV2Api() *api.FileVideoUploadTaskListV2ApiService {
+	return c.ApiClient.FileVideoUploadTaskListV2Api
 }
 
 func (c *Client) FundSharedWalletBalanceGetV2Api() *api.FundSharedWalletBalanceGetV2ApiService {
@@ -1360,10 +1408,6 @@ func (c *Client) QianchuanDmpAudiencesGetV10Api() *api.QianchuanDmpAudiencesGetV
 	return c.ApiClient.QianchuanDmpAudiencesGetV10Api
 }
 
-func (c *Client) QianchuanEcpAwemeAdGetV10Api() *api.QianchuanEcpAwemeAdGetV10ApiService {
-	return c.ApiClient.QianchuanEcpAwemeAdGetV10Api
-}
-
 func (c *Client) QianchuanEstimateEffectV10Api() *api.QianchuanEstimateEffectV10ApiService {
 	return c.ApiClient.QianchuanEstimateEffectV10Api
 }
@@ -1590,6 +1634,14 @@ func (c *Client) QueryInvoiceV2Api() *api.QueryInvoiceV2ApiService {
 
 func (c *Client) QueryProjectV2Api() *api.QueryProjectV2ApiService {
 	return c.ApiClient.QueryProjectV2Api
+}
+
+func (c *Client) QueryRebateAccountingInfoV2Api() *api.QueryRebateAccountingInfoV2ApiService {
+	return c.ApiClient.QueryRebateAccountingInfoV2Api
+}
+
+func (c *Client) QueryRebateBalanceV2Api() *api.QueryRebateBalanceV2ApiService {
+	return c.ApiClient.QueryRebateBalanceV2Api
 }
 
 func (c *Client) QueryStatementV2Api() *api.QueryStatementV2ApiService {
@@ -2046,6 +2098,38 @@ func (c *Client) StarUserGetAwemeAuthorIdV2Api() *api.StarUserGetAwemeAuthorIdV2
 
 func (c *Client) StarUserGetStarIdV2Api() *api.StarUserGetStarIdV2ApiService {
 	return c.ApiClient.StarUserGetStarIdV2Api
+}
+
+func (c *Client) StarVasAppendOrderToBoostItemGroupV2Api() *api.StarVasAppendOrderToBoostItemGroupV2ApiService {
+	return c.ApiClient.StarVasAppendOrderToBoostItemGroupV2Api
+}
+
+func (c *Client) StarVasCancelBoostItemGroupV2Api() *api.StarVasCancelBoostItemGroupV2ApiService {
+	return c.ApiClient.StarVasCancelBoostItemGroupV2Api
+}
+
+func (c *Client) StarVasCreateBoostItemGroupV2Api() *api.StarVasCreateBoostItemGroupV2ApiService {
+	return c.ApiClient.StarVasCreateBoostItemGroupV2Api
+}
+
+func (c *Client) StarVasGetBoostGroupListV2Api() *api.StarVasGetBoostGroupListV2ApiService {
+	return c.ApiClient.StarVasGetBoostGroupListV2Api
+}
+
+func (c *Client) StarVasGetBoostItemGroupDetailV2Api() *api.StarVasGetBoostItemGroupDetailV2ApiService {
+	return c.ApiClient.StarVasGetBoostItemGroupDetailV2Api
+}
+
+func (c *Client) StarVasGetCommonAuthorPackageListV2Api() *api.StarVasGetCommonAuthorPackageListV2ApiService {
+	return c.ApiClient.StarVasGetCommonAuthorPackageListV2Api
+}
+
+func (c *Client) StarVasGetExportBoostItemGroupResultV2Api() *api.StarVasGetExportBoostItemGroupResultV2ApiService {
+	return c.ApiClient.StarVasGetExportBoostItemGroupResultV2Api
+}
+
+func (c *Client) StarVasSubmitExportBoostItemGroupDataV2Api() *api.StarVasSubmitExportBoostItemGroupDataV2ApiService {
+	return c.ApiClient.StarVasSubmitExportBoostItemGroupDataV2Api
 }
 
 func (c *Client) StardeliveryTaskAuthorDetailV30Api() *api.StardeliveryTaskAuthorDetailV30ApiService {
@@ -2550,6 +2634,14 @@ func (c *Client) ToolsEstimateAudienceV2Api() *api.ToolsEstimateAudienceV2ApiSer
 
 func (c *Client) ToolsEstimatedPriceGetV2Api() *api.ToolsEstimatedPriceGetV2ApiService {
 	return c.ApiClient.ToolsEstimatedPriceGetV2Api
+}
+
+func (c *Client) ToolsEventAllAssetsDetailV2Api() *api.ToolsEventAllAssetsDetailV2ApiService {
+	return c.ApiClient.ToolsEventAllAssetsDetailV2Api
+}
+
+func (c *Client) ToolsEventAllAssetsListV2Api() *api.ToolsEventAllAssetsListV2ApiService {
+	return c.ApiClient.ToolsEventAllAssetsListV2Api
 }
 
 func (c *Client) ToolsEventAssetsGetV2Api() *api.ToolsEventAssetsGetV2ApiService {
