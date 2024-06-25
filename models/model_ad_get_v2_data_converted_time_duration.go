@@ -20,23 +20,23 @@ type AdGetV2DataConvertedTimeDuration string
 // List of ad_get_v2_data_converted_time_duration
 const (
 	SEVEN_DAY_AdGetV2DataConvertedTimeDuration    AdGetV2DataConvertedTimeDuration = "SEVEN_DAY"
-	SIX_MONTH_AdGetV2DataConvertedTimeDuration    AdGetV2DataConvertedTimeDuration = "SIX_MONTH"
-	NONE_AdGetV2DataConvertedTimeDuration         AdGetV2DataConvertedTimeDuration = "NONE"
-	THREE_MONTH_AdGetV2DataConvertedTimeDuration  AdGetV2DataConvertedTimeDuration = "THREE_MONTH"
-	TWELVE_MONTH_AdGetV2DataConvertedTimeDuration AdGetV2DataConvertedTimeDuration = "TWELVE_MONTH"
-	ONE_MONTH_AdGetV2DataConvertedTimeDuration    AdGetV2DataConvertedTimeDuration = "ONE_MONTH"
 	TODAY_AdGetV2DataConvertedTimeDuration        AdGetV2DataConvertedTimeDuration = "TODAY"
+	THREE_MONTH_AdGetV2DataConvertedTimeDuration  AdGetV2DataConvertedTimeDuration = "THREE_MONTH"
+	ONE_MONTH_AdGetV2DataConvertedTimeDuration    AdGetV2DataConvertedTimeDuration = "ONE_MONTH"
+	NONE_AdGetV2DataConvertedTimeDuration         AdGetV2DataConvertedTimeDuration = "NONE"
+	TWELVE_MONTH_AdGetV2DataConvertedTimeDuration AdGetV2DataConvertedTimeDuration = "TWELVE_MONTH"
+	SIX_MONTH_AdGetV2DataConvertedTimeDuration    AdGetV2DataConvertedTimeDuration = "SIX_MONTH"
 )
 
 // All allowed values of AdGetV2DataConvertedTimeDuration enum
 var AllowedAdGetV2DataConvertedTimeDurationEnumValues = []AdGetV2DataConvertedTimeDuration{
 	"SEVEN_DAY",
-	"SIX_MONTH",
-	"NONE",
-	"THREE_MONTH",
-	"TWELVE_MONTH",
-	"ONE_MONTH",
 	"TODAY",
+	"THREE_MONTH",
+	"ONE_MONTH",
+	"NONE",
+	"TWELVE_MONTH",
+	"SIX_MONTH",
 }
 
 // NewAdGetV2DataConvertedTimeDurationFromValue returns a pointer to a valid AdGetV2DataConvertedTimeDuration

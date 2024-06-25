@@ -19,30 +19,30 @@ type ReportAdvertiserGetV2DataListLandingType string
 
 // List of report_advertiser_get_v2_data_list_landing_type
 const (
-	SHOP_ReportAdvertiserGetV2DataListLandingType      ReportAdvertiserGetV2DataListLandingType = "SHOP"
 	LINK_ReportAdvertiserGetV2DataListLandingType      ReportAdvertiserGetV2DataListLandingType = "LINK"
+	GOODS_ReportAdvertiserGetV2DataListLandingType     ReportAdvertiserGetV2DataListLandingType = "GOODS"
+	AWEME_ReportAdvertiserGetV2DataListLandingType     ReportAdvertiserGetV2DataListLandingType = "AWEME"
+	DPA_ReportAdvertiserGetV2DataListLandingType       ReportAdvertiserGetV2DataListLandingType = "DPA"
+	QUICK_APP_ReportAdvertiserGetV2DataListLandingType ReportAdvertiserGetV2DataListLandingType = "QUICK_APP"
+	SHOP_ReportAdvertiserGetV2DataListLandingType      ReportAdvertiserGetV2DataListLandingType = "SHOP"
 	APP_ReportAdvertiserGetV2DataListLandingType       ReportAdvertiserGetV2DataListLandingType = "APP"
 	STORE_ReportAdvertiserGetV2DataListLandingType     ReportAdvertiserGetV2DataListLandingType = "STORE"
-	QUICK_APP_ReportAdvertiserGetV2DataListLandingType ReportAdvertiserGetV2DataListLandingType = "QUICK_APP"
-	GOODS_ReportAdvertiserGetV2DataListLandingType     ReportAdvertiserGetV2DataListLandingType = "GOODS"
-	DPA_ReportAdvertiserGetV2DataListLandingType       ReportAdvertiserGetV2DataListLandingType = "DPA"
-	LIVE_ReportAdvertiserGetV2DataListLandingType      ReportAdvertiserGetV2DataListLandingType = "LIVE"
-	AWEME_ReportAdvertiserGetV2DataListLandingType     ReportAdvertiserGetV2DataListLandingType = "AWEME"
 	ARTICLE_ReportAdvertiserGetV2DataListLandingType   ReportAdvertiserGetV2DataListLandingType = "ARTICLE"
+	LIVE_ReportAdvertiserGetV2DataListLandingType      ReportAdvertiserGetV2DataListLandingType = "LIVE"
 )
 
 // All allowed values of ReportAdvertiserGetV2DataListLandingType enum
 var AllowedReportAdvertiserGetV2DataListLandingTypeEnumValues = []ReportAdvertiserGetV2DataListLandingType{
-	"SHOP",
 	"LINK",
+	"GOODS",
+	"AWEME",
+	"DPA",
+	"QUICK_APP",
+	"SHOP",
 	"APP",
 	"STORE",
-	"QUICK_APP",
-	"GOODS",
-	"DPA",
-	"LIVE",
-	"AWEME",
 	"ARTICLE",
+	"LIVE",
 }
 
 // NewReportAdvertiserGetV2DataListLandingTypeFromValue returns a pointer to a valid ReportAdvertiserGetV2DataListLandingType

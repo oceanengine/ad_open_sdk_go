@@ -19,100 +19,100 @@ type ToolsEstimateAudienceV2ArticleCategory string
 
 // List of tools_estimate_audience_v2_article_category
 const (
-	HOME_ToolsEstimateAudienceV2ArticleCategory          ToolsEstimateAudienceV2ArticleCategory = "HOME"
 	TIPS_ToolsEstimateAudienceV2ArticleCategory          ToolsEstimateAudienceV2ArticleCategory = "TIPS"
 	DESIGN_ToolsEstimateAudienceV2ArticleCategory        ToolsEstimateAudienceV2ArticleCategory = "DESIGN"
-	MOVIE_ToolsEstimateAudienceV2ArticleCategory         ToolsEstimateAudienceV2ArticleCategory = "MOVIE"
-	GOURMET_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "GOURMET"
-	TRAVEL_ToolsEstimateAudienceV2ArticleCategory        ToolsEstimateAudienceV2ArticleCategory = "TRAVEL"
-	RUMOR_CRACKER_ToolsEstimateAudienceV2ArticleCategory ToolsEstimateAudienceV2ArticleCategory = "RUMOR_CRACKER"
-	LAWS_ToolsEstimateAudienceV2ArticleCategory          ToolsEstimateAudienceV2ArticleCategory = "LAWS"
-	REGIMEN_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "REGIMEN"
-	SCIENCE_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "SCIENCE"
-	PHOTOGRAPHY_ToolsEstimateAudienceV2ArticleCategory   ToolsEstimateAudienceV2ArticleCategory = "PHOTOGRAPHY"
-	GOVERNMENT_ToolsEstimateAudienceV2ArticleCategory    ToolsEstimateAudienceV2ArticleCategory = "GOVERNMENT"
-	WORKPLACE_ToolsEstimateAudienceV2ArticleCategory     ToolsEstimateAudienceV2ArticleCategory = "WORKPLACE"
-	MILITARY_ToolsEstimateAudienceV2ArticleCategory      ToolsEstimateAudienceV2ArticleCategory = "MILITARY"
-	CARS_ToolsEstimateAudienceV2ArticleCategory          ToolsEstimateAudienceV2ArticleCategory = "CARS"
-	BUSINESS_ToolsEstimateAudienceV2ArticleCategory      ToolsEstimateAudienceV2ArticleCategory = "BUSINESS"
-	GAMES_ToolsEstimateAudienceV2ArticleCategory         ToolsEstimateAudienceV2ArticleCategory = "GAMES"
-	EMOTION_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "EMOTION"
-	PARENTING_ToolsEstimateAudienceV2ArticleCategory     ToolsEstimateAudienceV2ArticleCategory = "PARENTING"
-	WEIGHT_LOSING_ToolsEstimateAudienceV2ArticleCategory ToolsEstimateAudienceV2ArticleCategory = "WEIGHT_LOSING"
-	EDUCATION_ToolsEstimateAudienceV2ArticleCategory     ToolsEstimateAudienceV2ArticleCategory = "EDUCATION"
-	SOCIETY_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "SOCIETY"
-	ESSAY_ToolsEstimateAudienceV2ArticleCategory         ToolsEstimateAudienceV2ArticleCategory = "ESSAY"
 	EXPLORE_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "EXPLORE"
-	COMICS_ToolsEstimateAudienceV2ArticleCategory        ToolsEstimateAudienceV2ArticleCategory = "COMICS"
-	LOCAL_ToolsEstimateAudienceV2ArticleCategory         ToolsEstimateAudienceV2ArticleCategory = "LOCAL"
+	ESSAY_ToolsEstimateAudienceV2ArticleCategory         ToolsEstimateAudienceV2ArticleCategory = "ESSAY"
 	DIGITAL_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "DIGITAL"
 	FASHION_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "FASHION"
-	AMUSEMENT_ToolsEstimateAudienceV2ArticleCategory     ToolsEstimateAudienceV2ArticleCategory = "AMUSEMENT"
-	GRADUATES_ToolsEstimateAudienceV2ArticleCategory     ToolsEstimateAudienceV2ArticleCategory = "GRADUATES"
-	COLLECTION_ToolsEstimateAudienceV2ArticleCategory    ToolsEstimateAudienceV2ArticleCategory = "COLLECTION"
+	PHOTOGRAPHY_ToolsEstimateAudienceV2ArticleCategory   ToolsEstimateAudienceV2ArticleCategory = "PHOTOGRAPHY"
 	CULTURE_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "CULTURE"
-	ENTERTAINMENT_ToolsEstimateAudienceV2ArticleCategory ToolsEstimateAudienceV2ArticleCategory = "ENTERTAINMENT"
-	HISTORY_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "HISTORY"
-	INTERNATIONAL_ToolsEstimateAudienceV2ArticleCategory ToolsEstimateAudienceV2ArticleCategory = "INTERNATIONAL"
-	SPORTS_ToolsEstimateAudienceV2ArticleCategory        ToolsEstimateAudienceV2ArticleCategory = "SPORTS"
-	TECHNOLOGY_ToolsEstimateAudienceV2ArticleCategory    ToolsEstimateAudienceV2ArticleCategory = "TECHNOLOGY"
-	ANIMATION_ToolsEstimateAudienceV2ArticleCategory     ToolsEstimateAudienceV2ArticleCategory = "ANIMATION"
-	ESTATE_ToolsEstimateAudienceV2ArticleCategory        ToolsEstimateAudienceV2ArticleCategory = "ESTATE"
-	STORIES_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "STORIES"
-	HEALTH_ToolsEstimateAudienceV2ArticleCategory        ToolsEstimateAudienceV2ArticleCategory = "HEALTH"
-	CONSTELLATION_ToolsEstimateAudienceV2ArticleCategory ToolsEstimateAudienceV2ArticleCategory = "CONSTELLATION"
-	PETS_ToolsEstimateAudienceV2ArticleCategory          ToolsEstimateAudienceV2ArticleCategory = "PETS"
-	FREAK_ToolsEstimateAudienceV2ArticleCategory         ToolsEstimateAudienceV2ArticleCategory = "FREAK"
 	FINANCE_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "FINANCE"
+	WORKPLACE_ToolsEstimateAudienceV2ArticleCategory     ToolsEstimateAudienceV2ArticleCategory = "WORKPLACE"
+	FREAK_ToolsEstimateAudienceV2ArticleCategory         ToolsEstimateAudienceV2ArticleCategory = "FREAK"
+	LOCAL_ToolsEstimateAudienceV2ArticleCategory         ToolsEstimateAudienceV2ArticleCategory = "LOCAL"
+	MILITARY_ToolsEstimateAudienceV2ArticleCategory      ToolsEstimateAudienceV2ArticleCategory = "MILITARY"
+	GOURMET_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "GOURMET"
+	ESTATE_ToolsEstimateAudienceV2ArticleCategory        ToolsEstimateAudienceV2ArticleCategory = "ESTATE"
+	TRAVEL_ToolsEstimateAudienceV2ArticleCategory        ToolsEstimateAudienceV2ArticleCategory = "TRAVEL"
+	MOVIE_ToolsEstimateAudienceV2ArticleCategory         ToolsEstimateAudienceV2ArticleCategory = "MOVIE"
+	LAWS_ToolsEstimateAudienceV2ArticleCategory          ToolsEstimateAudienceV2ArticleCategory = "LAWS"
+	WEIGHT_LOSING_ToolsEstimateAudienceV2ArticleCategory ToolsEstimateAudienceV2ArticleCategory = "WEIGHT_LOSING"
+	ANIMATION_ToolsEstimateAudienceV2ArticleCategory     ToolsEstimateAudienceV2ArticleCategory = "ANIMATION"
+	SOCIETY_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "SOCIETY"
+	CONSTELLATION_ToolsEstimateAudienceV2ArticleCategory ToolsEstimateAudienceV2ArticleCategory = "CONSTELLATION"
+	REGIMEN_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "REGIMEN"
+	EDUCATION_ToolsEstimateAudienceV2ArticleCategory     ToolsEstimateAudienceV2ArticleCategory = "EDUCATION"
+	GRADUATES_ToolsEstimateAudienceV2ArticleCategory     ToolsEstimateAudienceV2ArticleCategory = "GRADUATES"
+	PARENTING_ToolsEstimateAudienceV2ArticleCategory     ToolsEstimateAudienceV2ArticleCategory = "PARENTING"
+	HOME_ToolsEstimateAudienceV2ArticleCategory          ToolsEstimateAudienceV2ArticleCategory = "HOME"
+	GOVERNMENT_ToolsEstimateAudienceV2ArticleCategory    ToolsEstimateAudienceV2ArticleCategory = "GOVERNMENT"
+	GAMES_ToolsEstimateAudienceV2ArticleCategory         ToolsEstimateAudienceV2ArticleCategory = "GAMES"
+	COMICS_ToolsEstimateAudienceV2ArticleCategory        ToolsEstimateAudienceV2ArticleCategory = "COMICS"
+	EMOTION_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "EMOTION"
+	PETS_ToolsEstimateAudienceV2ArticleCategory          ToolsEstimateAudienceV2ArticleCategory = "PETS"
+	TECHNOLOGY_ToolsEstimateAudienceV2ArticleCategory    ToolsEstimateAudienceV2ArticleCategory = "TECHNOLOGY"
+	BUSINESS_ToolsEstimateAudienceV2ArticleCategory      ToolsEstimateAudienceV2ArticleCategory = "BUSINESS"
+	SCIENCE_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "SCIENCE"
+	ENTERTAINMENT_ToolsEstimateAudienceV2ArticleCategory ToolsEstimateAudienceV2ArticleCategory = "ENTERTAINMENT"
+	HEALTH_ToolsEstimateAudienceV2ArticleCategory        ToolsEstimateAudienceV2ArticleCategory = "HEALTH"
+	INTERNATIONAL_ToolsEstimateAudienceV2ArticleCategory ToolsEstimateAudienceV2ArticleCategory = "INTERNATIONAL"
+	HISTORY_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "HISTORY"
+	COLLECTION_ToolsEstimateAudienceV2ArticleCategory    ToolsEstimateAudienceV2ArticleCategory = "COLLECTION"
+	SPORTS_ToolsEstimateAudienceV2ArticleCategory        ToolsEstimateAudienceV2ArticleCategory = "SPORTS"
+	RUMOR_CRACKER_ToolsEstimateAudienceV2ArticleCategory ToolsEstimateAudienceV2ArticleCategory = "RUMOR_CRACKER"
+	AMUSEMENT_ToolsEstimateAudienceV2ArticleCategory     ToolsEstimateAudienceV2ArticleCategory = "AMUSEMENT"
+	STORIES_ToolsEstimateAudienceV2ArticleCategory       ToolsEstimateAudienceV2ArticleCategory = "STORIES"
+	CARS_ToolsEstimateAudienceV2ArticleCategory          ToolsEstimateAudienceV2ArticleCategory = "CARS"
 )
 
 // All allowed values of ToolsEstimateAudienceV2ArticleCategory enum
 var AllowedToolsEstimateAudienceV2ArticleCategoryEnumValues = []ToolsEstimateAudienceV2ArticleCategory{
-	"HOME",
 	"TIPS",
 	"DESIGN",
-	"MOVIE",
-	"GOURMET",
-	"TRAVEL",
-	"RUMOR_CRACKER",
-	"LAWS",
-	"REGIMEN",
-	"SCIENCE",
-	"PHOTOGRAPHY",
-	"GOVERNMENT",
-	"WORKPLACE",
-	"MILITARY",
-	"CARS",
-	"BUSINESS",
-	"GAMES",
-	"EMOTION",
-	"PARENTING",
-	"WEIGHT_LOSING",
-	"EDUCATION",
-	"SOCIETY",
-	"ESSAY",
 	"EXPLORE",
-	"COMICS",
-	"LOCAL",
+	"ESSAY",
 	"DIGITAL",
 	"FASHION",
-	"AMUSEMENT",
-	"GRADUATES",
-	"COLLECTION",
+	"PHOTOGRAPHY",
 	"CULTURE",
-	"ENTERTAINMENT",
-	"HISTORY",
-	"INTERNATIONAL",
-	"SPORTS",
-	"TECHNOLOGY",
-	"ANIMATION",
-	"ESTATE",
-	"STORIES",
-	"HEALTH",
-	"CONSTELLATION",
-	"PETS",
-	"FREAK",
 	"FINANCE",
+	"WORKPLACE",
+	"FREAK",
+	"LOCAL",
+	"MILITARY",
+	"GOURMET",
+	"ESTATE",
+	"TRAVEL",
+	"MOVIE",
+	"LAWS",
+	"WEIGHT_LOSING",
+	"ANIMATION",
+	"SOCIETY",
+	"CONSTELLATION",
+	"REGIMEN",
+	"EDUCATION",
+	"GRADUATES",
+	"PARENTING",
+	"HOME",
+	"GOVERNMENT",
+	"GAMES",
+	"COMICS",
+	"EMOTION",
+	"PETS",
+	"TECHNOLOGY",
+	"BUSINESS",
+	"SCIENCE",
+	"ENTERTAINMENT",
+	"HEALTH",
+	"INTERNATIONAL",
+	"HISTORY",
+	"COLLECTION",
+	"SPORTS",
+	"RUMOR_CRACKER",
+	"AMUSEMENT",
+	"STORIES",
+	"CARS",
 }
 
 // NewToolsEstimateAudienceV2ArticleCategoryFromValue returns a pointer to a valid ToolsEstimateAudienceV2ArticleCategory

@@ -19,15 +19,15 @@ type ReportCreativeGetV2DataListRealRecallMatchType string
 
 // List of report_creative_get_v2_data_list_real_recall_match_type
 const (
-	EXTENSIVE_ReportCreativeGetV2DataListRealRecallMatchType ReportCreativeGetV2DataListRealRecallMatchType = "EXTENSIVE"
 	PHRASE_ReportCreativeGetV2DataListRealRecallMatchType    ReportCreativeGetV2DataListRealRecallMatchType = "PHRASE"
+	EXTENSIVE_ReportCreativeGetV2DataListRealRecallMatchType ReportCreativeGetV2DataListRealRecallMatchType = "EXTENSIVE"
 	PRECISION_ReportCreativeGetV2DataListRealRecallMatchType ReportCreativeGetV2DataListRealRecallMatchType = "PRECISION"
 )
 
 // All allowed values of ReportCreativeGetV2DataListRealRecallMatchType enum
 var AllowedReportCreativeGetV2DataListRealRecallMatchTypeEnumValues = []ReportCreativeGetV2DataListRealRecallMatchType{
-	"EXTENSIVE",
 	"PHRASE",
+	"EXTENSIVE",
 	"PRECISION",
 }
 

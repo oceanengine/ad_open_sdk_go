@@ -19,14 +19,14 @@ type ClueCouponEmployeeCreateV2DataSuccessListUserType string
 
 // List of clue_coupon_employee_create_v2_data_success_list_user_type
 const (
-	DOUYIN_ClueCouponEmployeeCreateV2DataSuccessListUserType  ClueCouponEmployeeCreateV2DataSuccessListUserType = "DOUYIN"
 	TOUTIAO_ClueCouponEmployeeCreateV2DataSuccessListUserType ClueCouponEmployeeCreateV2DataSuccessListUserType = "TOUTIAO"
+	DOUYIN_ClueCouponEmployeeCreateV2DataSuccessListUserType  ClueCouponEmployeeCreateV2DataSuccessListUserType = "DOUYIN"
 )
 
 // All allowed values of ClueCouponEmployeeCreateV2DataSuccessListUserType enum
 var AllowedClueCouponEmployeeCreateV2DataSuccessListUserTypeEnumValues = []ClueCouponEmployeeCreateV2DataSuccessListUserType{
-	"DOUYIN",
 	"TOUTIAO",
+	"DOUYIN",
 }
 
 // NewClueCouponEmployeeCreateV2DataSuccessListUserTypeFromValue returns a pointer to a valid ClueCouponEmployeeCreateV2DataSuccessListUserType

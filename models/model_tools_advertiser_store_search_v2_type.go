@@ -19,18 +19,18 @@ type ToolsAdvertiserStoreSearchV2Type string
 
 // List of tools_advertiser_store_search_v2_type
 const (
-	STORE_THIRT_PARTY_ToolsAdvertiserStoreSearchV2Type ToolsAdvertiserStoreSearchV2Type = "STORE_THIRT_PARTY"
-	STORE_NORMAL_ToolsAdvertiserStoreSearchV2Type      ToolsAdvertiserStoreSearchV2Type = "STORE_NORMAL"
-	STORE_LANDING_ToolsAdvertiserStoreSearchV2Type     ToolsAdvertiserStoreSearchV2Type = "STORE_LANDING"
 	STORE_DOUYIN_ToolsAdvertiserStoreSearchV2Type      ToolsAdvertiserStoreSearchV2Type = "STORE_DOUYIN"
+	STORE_LANDING_ToolsAdvertiserStoreSearchV2Type     ToolsAdvertiserStoreSearchV2Type = "STORE_LANDING"
+	STORE_NORMAL_ToolsAdvertiserStoreSearchV2Type      ToolsAdvertiserStoreSearchV2Type = "STORE_NORMAL"
+	STORE_THIRT_PARTY_ToolsAdvertiserStoreSearchV2Type ToolsAdvertiserStoreSearchV2Type = "STORE_THIRT_PARTY"
 )
 
 // All allowed values of ToolsAdvertiserStoreSearchV2Type enum
 var AllowedToolsAdvertiserStoreSearchV2TypeEnumValues = []ToolsAdvertiserStoreSearchV2Type{
-	"STORE_THIRT_PARTY",
-	"STORE_NORMAL",
-	"STORE_LANDING",
 	"STORE_DOUYIN",
+	"STORE_LANDING",
+	"STORE_NORMAL",
+	"STORE_THIRT_PARTY",
 }
 
 // NewToolsAdvertiserStoreSearchV2TypeFromValue returns a pointer to a valid ToolsAdvertiserStoreSearchV2Type

@@ -19,14 +19,14 @@ type CreativeProceduralCreativeCreateV2AdDataEnableSmartSource string
 
 // List of creative_procedural_creative_create_v2_ad_data_enable_smart_source
 const (
-	OFF_CreativeProceduralCreativeCreateV2AdDataEnableSmartSource CreativeProceduralCreativeCreateV2AdDataEnableSmartSource = "OFF"
 	ON_CreativeProceduralCreativeCreateV2AdDataEnableSmartSource  CreativeProceduralCreativeCreateV2AdDataEnableSmartSource = "ON"
+	OFF_CreativeProceduralCreativeCreateV2AdDataEnableSmartSource CreativeProceduralCreativeCreateV2AdDataEnableSmartSource = "OFF"
 )
 
 // All allowed values of CreativeProceduralCreativeCreateV2AdDataEnableSmartSource enum
 var AllowedCreativeProceduralCreativeCreateV2AdDataEnableSmartSourceEnumValues = []CreativeProceduralCreativeCreateV2AdDataEnableSmartSource{
-	"OFF",
 	"ON",
+	"OFF",
 }
 
 // NewCreativeProceduralCreativeCreateV2AdDataEnableSmartSourceFromValue returns a pointer to a valid CreativeProceduralCreativeCreateV2AdDataEnableSmartSource

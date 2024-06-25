@@ -19,20 +19,20 @@ type ToolsPlayableListGetV2Status string
 
 // List of tools_playable_list_get_v2_status
 const (
+	VALIDATE_SUCCESS_ToolsPlayableListGetV2Status ToolsPlayableListGetV2Status = "VALIDATE_SUCCESS"
+	VALIDATE_FAIL_ToolsPlayableListGetV2Status    ToolsPlayableListGetV2Status = "VALIDATE_FAIL"
 	AUDIT_SUCCESS_ToolsPlayableListGetV2Status    ToolsPlayableListGetV2Status = "AUDIT_SUCCESS"
 	AUDIT_FAIL_ToolsPlayableListGetV2Status       ToolsPlayableListGetV2Status = "AUDIT_FAIL"
 	VALIDATING_ToolsPlayableListGetV2Status       ToolsPlayableListGetV2Status = "VALIDATING"
-	VALIDATE_FAIL_ToolsPlayableListGetV2Status    ToolsPlayableListGetV2Status = "VALIDATE_FAIL"
-	VALIDATE_SUCCESS_ToolsPlayableListGetV2Status ToolsPlayableListGetV2Status = "VALIDATE_SUCCESS"
 )
 
 // All allowed values of ToolsPlayableListGetV2Status enum
 var AllowedToolsPlayableListGetV2StatusEnumValues = []ToolsPlayableListGetV2Status{
+	"VALIDATE_SUCCESS",
+	"VALIDATE_FAIL",
 	"AUDIT_SUCCESS",
 	"AUDIT_FAIL",
 	"VALIDATING",
-	"VALIDATE_FAIL",
-	"VALIDATE_SUCCESS",
 }
 
 // NewToolsPlayableListGetV2StatusFromValue returns a pointer to a valid ToolsPlayableListGetV2Status

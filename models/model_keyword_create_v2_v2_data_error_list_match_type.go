@@ -19,15 +19,15 @@ type KeywordCreateV2V2DataErrorListMatchType string
 
 // List of keyword_create_v2_v2_data_error_list_match_type
 const (
-	EXTENSIVE_KeywordCreateV2V2DataErrorListMatchType KeywordCreateV2V2DataErrorListMatchType = "EXTENSIVE"
 	PHRASE_KeywordCreateV2V2DataErrorListMatchType    KeywordCreateV2V2DataErrorListMatchType = "PHRASE"
+	EXTENSIVE_KeywordCreateV2V2DataErrorListMatchType KeywordCreateV2V2DataErrorListMatchType = "EXTENSIVE"
 	PRECISION_KeywordCreateV2V2DataErrorListMatchType KeywordCreateV2V2DataErrorListMatchType = "PRECISION"
 )
 
 // All allowed values of KeywordCreateV2V2DataErrorListMatchType enum
 var AllowedKeywordCreateV2V2DataErrorListMatchTypeEnumValues = []KeywordCreateV2V2DataErrorListMatchType{
-	"EXTENSIVE",
 	"PHRASE",
+	"EXTENSIVE",
 	"PRECISION",
 }
 

@@ -19,16 +19,16 @@ type ToolsBidSuggestV2AppBehaviorTarget string
 
 // List of tools_bid_suggest_v2_app_behavior_target
 const (
-	NONE_ToolsBidSuggestV2AppBehaviorTarget     ToolsBidSuggestV2AppBehaviorTarget = "NONE"
-	CATEGORY_ToolsBidSuggestV2AppBehaviorTarget ToolsBidSuggestV2AppBehaviorTarget = "CATEGORY"
 	APP_ToolsBidSuggestV2AppBehaviorTarget      ToolsBidSuggestV2AppBehaviorTarget = "APP"
+	CATEGORY_ToolsBidSuggestV2AppBehaviorTarget ToolsBidSuggestV2AppBehaviorTarget = "CATEGORY"
+	NONE_ToolsBidSuggestV2AppBehaviorTarget     ToolsBidSuggestV2AppBehaviorTarget = "NONE"
 )
 
 // All allowed values of ToolsBidSuggestV2AppBehaviorTarget enum
 var AllowedToolsBidSuggestV2AppBehaviorTargetEnumValues = []ToolsBidSuggestV2AppBehaviorTarget{
-	"NONE",
-	"CATEGORY",
 	"APP",
+	"CATEGORY",
+	"NONE",
 }
 
 // NewToolsBidSuggestV2AppBehaviorTargetFromValue returns a pointer to a valid ToolsBidSuggestV2AppBehaviorTarget

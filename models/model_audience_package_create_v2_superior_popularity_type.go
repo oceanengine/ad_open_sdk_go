@@ -19,14 +19,14 @@ type AudiencePackageCreateV2SuperiorPopularityType string
 
 // List of audience_package_create_v2_superior_popularity_type
 const (
-	GAME_AudiencePackageCreateV2SuperiorPopularityType AudiencePackageCreateV2SuperiorPopularityType = "GAME"
 	NONE_AudiencePackageCreateV2SuperiorPopularityType AudiencePackageCreateV2SuperiorPopularityType = "NONE"
+	GAME_AudiencePackageCreateV2SuperiorPopularityType AudiencePackageCreateV2SuperiorPopularityType = "GAME"
 )
 
 // All allowed values of AudiencePackageCreateV2SuperiorPopularityType enum
 var AllowedAudiencePackageCreateV2SuperiorPopularityTypeEnumValues = []AudiencePackageCreateV2SuperiorPopularityType{
-	"GAME",
 	"NONE",
+	"GAME",
 }
 
 // NewAudiencePackageCreateV2SuperiorPopularityTypeFromValue returns a pointer to a valid AudiencePackageCreateV2SuperiorPopularityType

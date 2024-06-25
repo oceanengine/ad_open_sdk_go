@@ -19,14 +19,14 @@ type CreativeCustomCreativeUpdateV2AdDataSupplementsSupplementType string
 
 // List of creative_custom_creative_update_v2_ad_data_supplements_supplement_type
 const (
-	NORMAL_CreativeCustomCreativeUpdateV2AdDataSupplementsSupplementType     CreativeCustomCreativeUpdateV2AdDataSupplementsSupplementType = "NORMAL"
 	CLOUD_GAME_CreativeCustomCreativeUpdateV2AdDataSupplementsSupplementType CreativeCustomCreativeUpdateV2AdDataSupplementsSupplementType = "CLOUD_GAME"
+	NORMAL_CreativeCustomCreativeUpdateV2AdDataSupplementsSupplementType     CreativeCustomCreativeUpdateV2AdDataSupplementsSupplementType = "NORMAL"
 )
 
 // All allowed values of CreativeCustomCreativeUpdateV2AdDataSupplementsSupplementType enum
 var AllowedCreativeCustomCreativeUpdateV2AdDataSupplementsSupplementTypeEnumValues = []CreativeCustomCreativeUpdateV2AdDataSupplementsSupplementType{
-	"NORMAL",
 	"CLOUD_GAME",
+	"NORMAL",
 }
 
 // NewCreativeCustomCreativeUpdateV2AdDataSupplementsSupplementTypeFromValue returns a pointer to a valid CreativeCustomCreativeUpdateV2AdDataSupplementsSupplementType

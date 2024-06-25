@@ -19,14 +19,14 @@ type AudiencePackageCreateV2AdType string
 
 // List of audience_package_create_v2_ad_type
 const (
-	SEARCH_AudiencePackageCreateV2AdType AudiencePackageCreateV2AdType = "SEARCH"
 	ALL_AudiencePackageCreateV2AdType    AudiencePackageCreateV2AdType = "ALL"
+	SEARCH_AudiencePackageCreateV2AdType AudiencePackageCreateV2AdType = "SEARCH"
 )
 
 // All allowed values of AudiencePackageCreateV2AdType enum
 var AllowedAudiencePackageCreateV2AdTypeEnumValues = []AudiencePackageCreateV2AdType{
-	"SEARCH",
 	"ALL",
+	"SEARCH",
 }
 
 // NewAudiencePackageCreateV2AdTypeFromValue returns a pointer to a valid AudiencePackageCreateV2AdType

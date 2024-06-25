@@ -19,14 +19,14 @@ type DpaAssetsListV2DataListStatus string
 
 // List of dpa_assets_list_v2_data_list_status
 const (
-	ENABLE_DpaAssetsListV2DataListStatus  DpaAssetsListV2DataListStatus = "ENABLE"
 	DISABLE_DpaAssetsListV2DataListStatus DpaAssetsListV2DataListStatus = "DISABLE"
+	ENABLE_DpaAssetsListV2DataListStatus  DpaAssetsListV2DataListStatus = "ENABLE"
 )
 
 // All allowed values of DpaAssetsListV2DataListStatus enum
 var AllowedDpaAssetsListV2DataListStatusEnumValues = []DpaAssetsListV2DataListStatus{
-	"ENABLE",
 	"DISABLE",
+	"ENABLE",
 }
 
 // NewDpaAssetsListV2DataListStatusFromValue returns a pointer to a valid DpaAssetsListV2DataListStatus

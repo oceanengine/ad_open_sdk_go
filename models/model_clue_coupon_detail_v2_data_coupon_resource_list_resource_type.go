@@ -19,20 +19,20 @@ type ClueCouponDetailV2DataCouponResourceListResourceType string
 
 // List of clue_coupon_detail_v2_data_coupon_resource_list_resource_type
 const (
-	COMMON_ClueCouponDetailV2DataCouponResourceListResourceType   ClueCouponDetailV2DataCouponResourceListResourceType = "COMMON"
+	PHYSICAL_ClueCouponDetailV2DataCouponResourceListResourceType ClueCouponDetailV2DataCouponResourceListResourceType = "PHYSICAL"
 	DISCOUNT_ClueCouponDetailV2DataCouponResourceListResourceType ClueCouponDetailV2DataCouponResourceListResourceType = "DISCOUNT"
 	GAME_ClueCouponDetailV2DataCouponResourceListResourceType     ClueCouponDetailV2DataCouponResourceListResourceType = "GAME"
+	COMMON_ClueCouponDetailV2DataCouponResourceListResourceType   ClueCouponDetailV2DataCouponResourceListResourceType = "COMMON"
 	FULL_ClueCouponDetailV2DataCouponResourceListResourceType     ClueCouponDetailV2DataCouponResourceListResourceType = "FULL"
-	PHYSICAL_ClueCouponDetailV2DataCouponResourceListResourceType ClueCouponDetailV2DataCouponResourceListResourceType = "PHYSICAL"
 )
 
 // All allowed values of ClueCouponDetailV2DataCouponResourceListResourceType enum
 var AllowedClueCouponDetailV2DataCouponResourceListResourceTypeEnumValues = []ClueCouponDetailV2DataCouponResourceListResourceType{
-	"COMMON",
+	"PHYSICAL",
 	"DISCOUNT",
 	"GAME",
+	"COMMON",
 	"FULL",
-	"PHYSICAL",
 }
 
 // NewClueCouponDetailV2DataCouponResourceListResourceTypeFromValue returns a pointer to a valid ClueCouponDetailV2DataCouponResourceListResourceType

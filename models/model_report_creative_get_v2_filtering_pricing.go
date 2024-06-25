@@ -19,24 +19,24 @@ type ReportCreativeGetV2FilteringPricing string
 
 // List of report_creative_get_v2_filtering_pricing
 const (
-	PRICING_CPA_ReportCreativeGetV2FilteringPricing      ReportCreativeGetV2FilteringPricing = "PRICING_CPA"
+	PRICING_OCPM_ReportCreativeGetV2FilteringPricing     ReportCreativeGetV2FilteringPricing = "PRICING_OCPM"
 	PRICING_CPC_OCPM_ReportCreativeGetV2FilteringPricing ReportCreativeGetV2FilteringPricing = "PRICING_CPC_OCPM"
 	PRICING_CPV_ReportCreativeGetV2FilteringPricing      ReportCreativeGetV2FilteringPricing = "PRICING_CPV"
 	PRICING_CPC_ReportCreativeGetV2FilteringPricing      ReportCreativeGetV2FilteringPricing = "PRICING_CPC"
 	PRICING_OCPC_ReportCreativeGetV2FilteringPricing     ReportCreativeGetV2FilteringPricing = "PRICING_OCPC"
-	PRICING_OCPM_ReportCreativeGetV2FilteringPricing     ReportCreativeGetV2FilteringPricing = "PRICING_OCPM"
 	PRICING_CPM_ReportCreativeGetV2FilteringPricing      ReportCreativeGetV2FilteringPricing = "PRICING_CPM"
+	PRICING_CPA_ReportCreativeGetV2FilteringPricing      ReportCreativeGetV2FilteringPricing = "PRICING_CPA"
 )
 
 // All allowed values of ReportCreativeGetV2FilteringPricing enum
 var AllowedReportCreativeGetV2FilteringPricingEnumValues = []ReportCreativeGetV2FilteringPricing{
-	"PRICING_CPA",
+	"PRICING_OCPM",
 	"PRICING_CPC_OCPM",
 	"PRICING_CPV",
 	"PRICING_CPC",
 	"PRICING_OCPC",
-	"PRICING_OCPM",
 	"PRICING_CPM",
+	"PRICING_CPA",
 }
 
 // NewReportCreativeGetV2FilteringPricingFromValue returns a pointer to a valid ReportCreativeGetV2FilteringPricing

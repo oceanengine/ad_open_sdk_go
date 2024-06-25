@@ -19,18 +19,18 @@ type AudiencePackageUpdateV2LocationType string
 
 // List of audience_package_update_v2_location_type
 const (
-	CURRENT_AudiencePackageUpdateV2LocationType AudiencePackageUpdateV2LocationType = "CURRENT"
-	HOME_AudiencePackageUpdateV2LocationType    AudiencePackageUpdateV2LocationType = "HOME"
-	ALL_AudiencePackageUpdateV2LocationType     AudiencePackageUpdateV2LocationType = "ALL"
 	TRAVEL_AudiencePackageUpdateV2LocationType  AudiencePackageUpdateV2LocationType = "TRAVEL"
+	HOME_AudiencePackageUpdateV2LocationType    AudiencePackageUpdateV2LocationType = "HOME"
+	CURRENT_AudiencePackageUpdateV2LocationType AudiencePackageUpdateV2LocationType = "CURRENT"
+	ALL_AudiencePackageUpdateV2LocationType     AudiencePackageUpdateV2LocationType = "ALL"
 )
 
 // All allowed values of AudiencePackageUpdateV2LocationType enum
 var AllowedAudiencePackageUpdateV2LocationTypeEnumValues = []AudiencePackageUpdateV2LocationType{
-	"CURRENT",
-	"HOME",
-	"ALL",
 	"TRAVEL",
+	"HOME",
+	"CURRENT",
+	"ALL",
 }
 
 // NewAudiencePackageUpdateV2LocationTypeFromValue returns a pointer to a valid AudiencePackageUpdateV2LocationType

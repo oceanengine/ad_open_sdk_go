@@ -20,15 +20,15 @@ type ToolsPlayableListGetV2DataListPlayableOrientation string
 // List of tools_playable_list_get_v2_data_list_playable_orientation
 const (
 	PORTRAIT_ToolsPlayableListGetV2DataListPlayableOrientation  ToolsPlayableListGetV2DataListPlayableOrientation = "PORTRAIT"
-	LANDSCAPE_ToolsPlayableListGetV2DataListPlayableOrientation ToolsPlayableListGetV2DataListPlayableOrientation = "LANDSCAPE"
 	BOTH_ToolsPlayableListGetV2DataListPlayableOrientation      ToolsPlayableListGetV2DataListPlayableOrientation = "BOTH"
+	LANDSCAPE_ToolsPlayableListGetV2DataListPlayableOrientation ToolsPlayableListGetV2DataListPlayableOrientation = "LANDSCAPE"
 )
 
 // All allowed values of ToolsPlayableListGetV2DataListPlayableOrientation enum
 var AllowedToolsPlayableListGetV2DataListPlayableOrientationEnumValues = []ToolsPlayableListGetV2DataListPlayableOrientation{
 	"PORTRAIT",
-	"LANDSCAPE",
 	"BOTH",
+	"LANDSCAPE",
 }
 
 // NewToolsPlayableListGetV2DataListPlayableOrientationFromValue returns a pointer to a valid ToolsPlayableListGetV2DataListPlayableOrientation

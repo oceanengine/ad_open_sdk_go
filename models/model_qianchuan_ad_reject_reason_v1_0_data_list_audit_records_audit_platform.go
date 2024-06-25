@@ -19,16 +19,16 @@ type QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform string
 
 // List of qianchuan_ad_reject_reason_v1.0_data_list_audit_records_audit_platform
 const (
-	CONTENT_QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform = "CONTENT"
 	UNKNOWN_QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform = "UNKNOWN"
 	AD_QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform      QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform = "AD"
+	CONTENT_QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform = "CONTENT"
 )
 
 // All allowed values of QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform enum
 var AllowedQianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatformEnumValues = []QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform{
-	"CONTENT",
 	"UNKNOWN",
 	"AD",
+	"CONTENT",
 }
 
 // NewQianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatformFromValue returns a pointer to a valid QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform

@@ -19,14 +19,14 @@ type CreativeCustomCreativeCreateV2AdDataPriorityTrial string
 
 // List of creative_custom_creative_create_v2_ad_data_priority_trial
 const (
-	OFF_CreativeCustomCreativeCreateV2AdDataPriorityTrial CreativeCustomCreativeCreateV2AdDataPriorityTrial = "OFF"
 	ON_CreativeCustomCreativeCreateV2AdDataPriorityTrial  CreativeCustomCreativeCreateV2AdDataPriorityTrial = "ON"
+	OFF_CreativeCustomCreativeCreateV2AdDataPriorityTrial CreativeCustomCreativeCreateV2AdDataPriorityTrial = "OFF"
 )
 
 // All allowed values of CreativeCustomCreativeCreateV2AdDataPriorityTrial enum
 var AllowedCreativeCustomCreativeCreateV2AdDataPriorityTrialEnumValues = []CreativeCustomCreativeCreateV2AdDataPriorityTrial{
-	"OFF",
 	"ON",
+	"OFF",
 }
 
 // NewCreativeCustomCreativeCreateV2AdDataPriorityTrialFromValue returns a pointer to a valid CreativeCustomCreativeCreateV2AdDataPriorityTrial

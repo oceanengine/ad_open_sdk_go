@@ -19,15 +19,15 @@ type ToolsAppManagementExtendPackageUpdateV2Mode string
 
 // List of tools_app_management_extend_package_update_v2_mode
 const (
-	ALL_ToolsAppManagementExtendPackageUpdateV2Mode       ToolsAppManagementExtendPackageUpdateV2Mode = "All"
 	LIST_ToolsAppManagementExtendPackageUpdateV2Mode      ToolsAppManagementExtendPackageUpdateV2Mode = "List"
+	ALL_ToolsAppManagementExtendPackageUpdateV2Mode       ToolsAppManagementExtendPackageUpdateV2Mode = "All"
 	CUSTOMIZE_ToolsAppManagementExtendPackageUpdateV2Mode ToolsAppManagementExtendPackageUpdateV2Mode = "Customize"
 )
 
 // All allowed values of ToolsAppManagementExtendPackageUpdateV2Mode enum
 var AllowedToolsAppManagementExtendPackageUpdateV2ModeEnumValues = []ToolsAppManagementExtendPackageUpdateV2Mode{
-	"All",
 	"List",
+	"All",
 	"Customize",
 }
 

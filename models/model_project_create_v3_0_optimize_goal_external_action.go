@@ -44,7 +44,6 @@ const (
 	AD_CONVERT_TYPE_CLICK_WEBSITE_ProjectCreateV30OptimizeGoalExternalAction               ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_CLICK_WEBSITE"
 	AD_CONVERT_TYPE_CLUE_CONFIRM_ProjectCreateV30OptimizeGoalExternalAction                ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_CLUE_CONFIRM"
 	AD_CONVERT_TYPE_CLUE_HIGH_INTENTION_ProjectCreateV30OptimizeGoalExternalAction         ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_CLUE_HIGH_INTENTION"
-	AD_CONVERT_TYPE_CLUE_INTERFLOW_ProjectCreateV30OptimizeGoalExternalAction              ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_CLUE_INTERFLOW"
 	AD_CONVERT_TYPE_CLUE_PAY_SUCCEED_ProjectCreateV30OptimizeGoalExternalAction            ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_CLUE_PAY_SUCCEED"
 	AD_CONVERT_TYPE_COMMENT_ACTION_ProjectCreateV30OptimizeGoalExternalAction              ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_COMMENT_ACTION"
 	AD_CONVERT_TYPE_COMMODITY_CLICK_ProjectCreateV30OptimizeGoalExternalAction             ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_COMMODITY_CLICK"
@@ -58,7 +57,6 @@ const (
 	AD_CONVERT_TYPE_DIALBACK_ProjectCreateV30OptimizeGoalExternalAction                    ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_DIALBACK"
 	AD_CONVERT_TYPE_DIALBACK_CONFIRM_ProjectCreateV30OptimizeGoalExternalAction            ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_DIALBACK_CONFIRM"
 	AD_CONVERT_TYPE_DIALBACK_CONNECT_ProjectCreateV30OptimizeGoalExternalAction            ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_DIALBACK_CONNECT"
-	AD_CONVERT_TYPE_DOWNLOAD_FINISH_ProjectCreateV30OptimizeGoalExternalAction             ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_DOWNLOAD_FINISH"
 	AD_CONVERT_TYPE_DOWNLOAD_START_ProjectCreateV30OptimizeGoalExternalAction              ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_DOWNLOAD_START"
 	AD_CONVERT_TYPE_EFFECTIVE_COPY_ProjectCreateV30OptimizeGoalExternalAction              ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_COPY"
 	AD_CONVERT_TYPE_EFFECTIVE_PLAY_ProjectCreateV30OptimizeGoalExternalAction              ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_PLAY"
@@ -87,7 +85,6 @@ const (
 	AD_CONVERT_TYPE_IPU_QUALIFY_ProjectCreateV30OptimizeGoalExternalAction                 ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_IPU_QUALIFY"
 	AD_CONVERT_TYPE_LIKE_ACTION_ProjectCreateV30OptimizeGoalExternalAction                 ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_LIKE_ACTION"
 	AD_CONVERT_TYPE_LINK_ACTION_ProjectCreateV30OptimizeGoalExternalAction                 ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_LINK_ACTION"
-	AD_CONVERT_TYPE_LIVE_APPOINTMENT_ProjectCreateV30OptimizeGoalExternalAction            ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_LIVE_APPOINTMENT"
 	AD_CONVERT_TYPE_LIVE_CLICK_PRODUCT_ACTION_ProjectCreateV30OptimizeGoalExternalAction   ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_LIVE_CLICK_PRODUCT_ACTION"
 	AD_CONVERT_TYPE_LIVE_COMMENT_ACTION_ProjectCreateV30OptimizeGoalExternalAction         ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_LIVE_COMMENT_ACTION"
 	AD_CONVERT_TYPE_LIVE_COMPONENT_CLICK_ProjectCreateV30OptimizeGoalExternalAction        ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_LIVE_COMPONENT_CLICK"
@@ -164,7 +161,6 @@ const (
 	AD_CONVERT_TYPE_SHOPPING_CART_ProjectCreateV30OptimizeGoalExternalAction               ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_SHOPPING_CART"
 	AD_CONVERT_TYPE_SHOW_OFF_NUM_ProjectCreateV30OptimizeGoalExternalAction                ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_SHOW_OFF_NUM"
 	AD_CONVERT_TYPE_STAY_TIME_ProjectCreateV30OptimizeGoalExternalAction                   ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_STAY_TIME"
-	AD_CONVERT_TYPE_SUBMIT_CERTIFICATION_ProjectCreateV30OptimizeGoalExternalAction        ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_SUBMIT_CERTIFICATION"
 	AD_CONVERT_TYPE_SUCCESSORDER_ACTION_ProjectCreateV30OptimizeGoalExternalAction         ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_SUCCESSORDER_ACTION"
 	AD_CONVERT_TYPE_UG_ROI_ProjectCreateV30OptimizeGoalExternalAction                      ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_UG_ROI"
 	AD_CONVERT_TYPE_UPDATE_LEVEL_ProjectCreateV30OptimizeGoalExternalAction                ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_UPDATE_LEVEL"
@@ -207,7 +203,6 @@ var AllowedProjectCreateV30OptimizeGoalExternalActionEnumValues = []ProjectCreat
 	"AD_CONVERT_TYPE_CLICK_WEBSITE",
 	"AD_CONVERT_TYPE_CLUE_CONFIRM",
 	"AD_CONVERT_TYPE_CLUE_HIGH_INTENTION",
-	"AD_CONVERT_TYPE_CLUE_INTERFLOW",
 	"AD_CONVERT_TYPE_CLUE_PAY_SUCCEED",
 	"AD_CONVERT_TYPE_COMMENT_ACTION",
 	"AD_CONVERT_TYPE_COMMODITY_CLICK",
@@ -221,7 +216,6 @@ var AllowedProjectCreateV30OptimizeGoalExternalActionEnumValues = []ProjectCreat
 	"AD_CONVERT_TYPE_DIALBACK",
 	"AD_CONVERT_TYPE_DIALBACK_CONFIRM",
 	"AD_CONVERT_TYPE_DIALBACK_CONNECT",
-	"AD_CONVERT_TYPE_DOWNLOAD_FINISH",
 	"AD_CONVERT_TYPE_DOWNLOAD_START",
 	"AD_CONVERT_TYPE_EFFECTIVE_COPY",
 	"AD_CONVERT_TYPE_EFFECTIVE_PLAY",
@@ -250,7 +244,6 @@ var AllowedProjectCreateV30OptimizeGoalExternalActionEnumValues = []ProjectCreat
 	"AD_CONVERT_TYPE_IPU_QUALIFY",
 	"AD_CONVERT_TYPE_LIKE_ACTION",
 	"AD_CONVERT_TYPE_LINK_ACTION",
-	"AD_CONVERT_TYPE_LIVE_APPOINTMENT",
 	"AD_CONVERT_TYPE_LIVE_CLICK_PRODUCT_ACTION",
 	"AD_CONVERT_TYPE_LIVE_COMMENT_ACTION",
 	"AD_CONVERT_TYPE_LIVE_COMPONENT_CLICK",
@@ -327,7 +320,6 @@ var AllowedProjectCreateV30OptimizeGoalExternalActionEnumValues = []ProjectCreat
 	"AD_CONVERT_TYPE_SHOPPING_CART",
 	"AD_CONVERT_TYPE_SHOW_OFF_NUM",
 	"AD_CONVERT_TYPE_STAY_TIME",
-	"AD_CONVERT_TYPE_SUBMIT_CERTIFICATION",
 	"AD_CONVERT_TYPE_SUCCESSORDER_ACTION",
 	"AD_CONVERT_TYPE_UG_ROI",
 	"AD_CONVERT_TYPE_UPDATE_LEVEL",

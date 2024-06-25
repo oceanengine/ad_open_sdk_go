@@ -19,15 +19,15 @@ type AudiencePackageCreateV2Carrier string
 
 // List of audience_package_create_v2_carrier
 const (
-	TELCOM_AudiencePackageCreateV2Carrier AudiencePackageCreateV2Carrier = "TELCOM"
 	UNICOM_AudiencePackageCreateV2Carrier AudiencePackageCreateV2Carrier = "UNICOM"
+	TELCOM_AudiencePackageCreateV2Carrier AudiencePackageCreateV2Carrier = "TELCOM"
 	MOBILE_AudiencePackageCreateV2Carrier AudiencePackageCreateV2Carrier = "MOBILE"
 )
 
 // All allowed values of AudiencePackageCreateV2Carrier enum
 var AllowedAudiencePackageCreateV2CarrierEnumValues = []AudiencePackageCreateV2Carrier{
-	"TELCOM",
 	"UNICOM",
+	"TELCOM",
 	"MOBILE",
 }
 

@@ -19,34 +19,34 @@ type AdGetV2DataAudienceAwemeFanBehaviors string
 
 // List of ad_get_v2_data_audience_aweme_fan_behaviors
 const (
-	LIVE_EXCEPTIONAL_AdGetV2DataAudienceAwemeFanBehaviors     AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_EXCEPTIONAL"
-	LIVE_GOODS_ORDER_AdGetV2DataAudienceAwemeFanBehaviors     AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_GOODS_ORDER"
-	LIKED_USER_AdGetV2DataAudienceAwemeFanBehaviors           AdGetV2DataAudienceAwemeFanBehaviors = "LIKED_USER"
-	SHARED_USER_AdGetV2DataAudienceAwemeFanBehaviors          AdGetV2DataAudienceAwemeFanBehaviors = "SHARED_USER"
-	LIVE_EFFECTIVE_WATCH_AdGetV2DataAudienceAwemeFanBehaviors AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_EFFECTIVE_WATCH"
-	GOODS_CARTS_CLICK_AdGetV2DataAudienceAwemeFanBehaviors    AdGetV2DataAudienceAwemeFanBehaviors = "GOODS_CARTS_CLICK"
+	GOODS_CARTS_ORDER_AdGetV2DataAudienceAwemeFanBehaviors    AdGetV2DataAudienceAwemeFanBehaviors = "GOODS_CARTS_ORDER"
 	FOLLOWED_USER_AdGetV2DataAudienceAwemeFanBehaviors        AdGetV2DataAudienceAwemeFanBehaviors = "FOLLOWED_USER"
 	COMMENTED_USER_AdGetV2DataAudienceAwemeFanBehaviors       AdGetV2DataAudienceAwemeFanBehaviors = "COMMENTED_USER"
+	SHARED_USER_AdGetV2DataAudienceAwemeFanBehaviors          AdGetV2DataAudienceAwemeFanBehaviors = "SHARED_USER"
+	LIKED_USER_AdGetV2DataAudienceAwemeFanBehaviors           AdGetV2DataAudienceAwemeFanBehaviors = "LIKED_USER"
 	LIVE_GOODS_CLICK_AdGetV2DataAudienceAwemeFanBehaviors     AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_GOODS_CLICK"
-	LIVE_COMMENT_AdGetV2DataAudienceAwemeFanBehaviors         AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_COMMENT"
-	GOODS_CARTS_ORDER_AdGetV2DataAudienceAwemeFanBehaviors    AdGetV2DataAudienceAwemeFanBehaviors = "GOODS_CARTS_ORDER"
+	GOODS_CARTS_CLICK_AdGetV2DataAudienceAwemeFanBehaviors    AdGetV2DataAudienceAwemeFanBehaviors = "GOODS_CARTS_CLICK"
 	LIVE_WATCH_AdGetV2DataAudienceAwemeFanBehaviors           AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_WATCH"
+	LIVE_EXCEPTIONAL_AdGetV2DataAudienceAwemeFanBehaviors     AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_EXCEPTIONAL"
+	LIVE_EFFECTIVE_WATCH_AdGetV2DataAudienceAwemeFanBehaviors AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_EFFECTIVE_WATCH"
+	LIVE_GOODS_ORDER_AdGetV2DataAudienceAwemeFanBehaviors     AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_GOODS_ORDER"
+	LIVE_COMMENT_AdGetV2DataAudienceAwemeFanBehaviors         AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_COMMENT"
 )
 
 // All allowed values of AdGetV2DataAudienceAwemeFanBehaviors enum
 var AllowedAdGetV2DataAudienceAwemeFanBehaviorsEnumValues = []AdGetV2DataAudienceAwemeFanBehaviors{
-	"LIVE_EXCEPTIONAL",
-	"LIVE_GOODS_ORDER",
-	"LIKED_USER",
-	"SHARED_USER",
-	"LIVE_EFFECTIVE_WATCH",
-	"GOODS_CARTS_CLICK",
+	"GOODS_CARTS_ORDER",
 	"FOLLOWED_USER",
 	"COMMENTED_USER",
+	"SHARED_USER",
+	"LIKED_USER",
 	"LIVE_GOODS_CLICK",
-	"LIVE_COMMENT",
-	"GOODS_CARTS_ORDER",
+	"GOODS_CARTS_CLICK",
 	"LIVE_WATCH",
+	"LIVE_EXCEPTIONAL",
+	"LIVE_EFFECTIVE_WATCH",
+	"LIVE_GOODS_ORDER",
+	"LIVE_COMMENT",
 }
 
 // NewAdGetV2DataAudienceAwemeFanBehaviorsFromValue returns a pointer to a valid AdGetV2DataAudienceAwemeFanBehaviors

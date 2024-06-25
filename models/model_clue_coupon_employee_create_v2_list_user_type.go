@@ -19,14 +19,14 @@ type ClueCouponEmployeeCreateV2ListUserType string
 
 // List of clue_coupon_employee_create_v2_list_user_type
 const (
-	DOUYIN_ClueCouponEmployeeCreateV2ListUserType  ClueCouponEmployeeCreateV2ListUserType = "DOUYIN"
 	TOUTIAO_ClueCouponEmployeeCreateV2ListUserType ClueCouponEmployeeCreateV2ListUserType = "TOUTIAO"
+	DOUYIN_ClueCouponEmployeeCreateV2ListUserType  ClueCouponEmployeeCreateV2ListUserType = "DOUYIN"
 )
 
 // All allowed values of ClueCouponEmployeeCreateV2ListUserType enum
 var AllowedClueCouponEmployeeCreateV2ListUserTypeEnumValues = []ClueCouponEmployeeCreateV2ListUserType{
-	"DOUYIN",
 	"TOUTIAO",
+	"DOUYIN",
 }
 
 // NewClueCouponEmployeeCreateV2ListUserTypeFromValue returns a pointer to a valid ClueCouponEmployeeCreateV2ListUserType

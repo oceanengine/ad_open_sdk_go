@@ -19,16 +19,16 @@ type ToolsAppManagementBpShareCancelV2ShareMode string
 
 // List of tools_app_management_bp_share_cancel_v2_share_mode
 const (
-	COMPANY_ToolsAppManagementBpShareCancelV2ShareMode ToolsAppManagementBpShareCancelV2ShareMode = "COMPANY"
 	PART_ToolsAppManagementBpShareCancelV2ShareMode    ToolsAppManagementBpShareCancelV2ShareMode = "PART"
 	ALL_ToolsAppManagementBpShareCancelV2ShareMode     ToolsAppManagementBpShareCancelV2ShareMode = "ALL"
+	COMPANY_ToolsAppManagementBpShareCancelV2ShareMode ToolsAppManagementBpShareCancelV2ShareMode = "COMPANY"
 )
 
 // All allowed values of ToolsAppManagementBpShareCancelV2ShareMode enum
 var AllowedToolsAppManagementBpShareCancelV2ShareModeEnumValues = []ToolsAppManagementBpShareCancelV2ShareMode{
-	"COMPANY",
 	"PART",
 	"ALL",
+	"COMPANY",
 }
 
 // NewToolsAppManagementBpShareCancelV2ShareModeFromValue returns a pointer to a valid ToolsAppManagementBpShareCancelV2ShareMode

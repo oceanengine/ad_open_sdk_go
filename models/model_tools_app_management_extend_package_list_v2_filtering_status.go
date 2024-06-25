@@ -19,24 +19,24 @@ type ToolsAppManagementExtendPackageListV2FilteringStatus string
 
 // List of tools_app_management_extend_package_list_v2_filtering_status
 const (
-	UPDATE_FAILED_ToolsAppManagementExtendPackageListV2FilteringStatus   ToolsAppManagementExtendPackageListV2FilteringStatus = "UPDATE_FAILED"
-	ALL_ToolsAppManagementExtendPackageListV2FilteringStatus             ToolsAppManagementExtendPackageListV2FilteringStatus = "ALL"
-	PUBLISHED_ToolsAppManagementExtendPackageListV2FilteringStatus       ToolsAppManagementExtendPackageListV2FilteringStatus = "PUBLISHED"
-	UPDATING_ToolsAppManagementExtendPackageListV2FilteringStatus        ToolsAppManagementExtendPackageListV2FilteringStatus = "UPDATING"
 	NOT_UPDATE_ToolsAppManagementExtendPackageListV2FilteringStatus      ToolsAppManagementExtendPackageListV2FilteringStatus = "NOT_UPDATE"
+	PUBLISHED_ToolsAppManagementExtendPackageListV2FilteringStatus       ToolsAppManagementExtendPackageListV2FilteringStatus = "PUBLISHED"
+	ALL_ToolsAppManagementExtendPackageListV2FilteringStatus             ToolsAppManagementExtendPackageListV2FilteringStatus = "ALL"
 	CREATION_FAILED_ToolsAppManagementExtendPackageListV2FilteringStatus ToolsAppManagementExtendPackageListV2FilteringStatus = "CREATION_FAILED"
 	CREATING_ToolsAppManagementExtendPackageListV2FilteringStatus        ToolsAppManagementExtendPackageListV2FilteringStatus = "CREATING"
+	UPDATING_ToolsAppManagementExtendPackageListV2FilteringStatus        ToolsAppManagementExtendPackageListV2FilteringStatus = "UPDATING"
+	UPDATE_FAILED_ToolsAppManagementExtendPackageListV2FilteringStatus   ToolsAppManagementExtendPackageListV2FilteringStatus = "UPDATE_FAILED"
 )
 
 // All allowed values of ToolsAppManagementExtendPackageListV2FilteringStatus enum
 var AllowedToolsAppManagementExtendPackageListV2FilteringStatusEnumValues = []ToolsAppManagementExtendPackageListV2FilteringStatus{
-	"UPDATE_FAILED",
-	"ALL",
-	"PUBLISHED",
-	"UPDATING",
 	"NOT_UPDATE",
+	"PUBLISHED",
+	"ALL",
 	"CREATION_FAILED",
 	"CREATING",
+	"UPDATING",
+	"UPDATE_FAILED",
 }
 
 // NewToolsAppManagementExtendPackageListV2FilteringStatusFromValue returns a pointer to a valid ToolsAppManagementExtendPackageListV2FilteringStatus

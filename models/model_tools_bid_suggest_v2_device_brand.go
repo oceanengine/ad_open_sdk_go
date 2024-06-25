@@ -19,66 +19,66 @@ type ToolsBidSuggestV2DeviceBrand string
 
 // List of tools_bid_suggest_v2_device_brand
 const (
-	NOKIA_ToolsBidSuggestV2DeviceBrand       ToolsBidSuggestV2DeviceBrand = "NOKIA"
-	TCL_ToolsBidSuggestV2DeviceBrand         ToolsBidSuggestV2DeviceBrand = "TCL"
-	HTC_ToolsBidSuggestV2DeviceBrand         ToolsBidSuggestV2DeviceBrand = "HTC"
-	VIVO_ToolsBidSuggestV2DeviceBrand        ToolsBidSuggestV2DeviceBrand = "VIVO"
-	HISENSE_ToolsBidSuggestV2DeviceBrand     ToolsBidSuggestV2DeviceBrand = "HISENSE"
-	APPLE_ToolsBidSuggestV2DeviceBrand       ToolsBidSuggestV2DeviceBrand = "APPLE"
-	OPPO_ToolsBidSuggestV2DeviceBrand        ToolsBidSuggestV2DeviceBrand = "OPPO"
-	LENOVO_ToolsBidSuggestV2DeviceBrand      ToolsBidSuggestV2DeviceBrand = "LENOVO"
-	XIAOMI_ToolsBidSuggestV2DeviceBrand      ToolsBidSuggestV2DeviceBrand = "XIAOMI"
-	MOTO_ToolsBidSuggestV2DeviceBrand        ToolsBidSuggestV2DeviceBrand = "MOTO"
-	PEPPER_ToolsBidSuggestV2DeviceBrand      ToolsBidSuggestV2DeviceBrand = "PEPPER"
-	MEIZU_ToolsBidSuggestV2DeviceBrand       ToolsBidSuggestV2DeviceBrand = "MEIZU"
-	ONEPLUS_ToolsBidSuggestV2DeviceBrand     ToolsBidSuggestV2DeviceBrand = "ONEPLUS"
-	HONOR_ToolsBidSuggestV2DeviceBrand       ToolsBidSuggestV2DeviceBrand = "HONOR"
-	GIONEE_ToolsBidSuggestV2DeviceBrand      ToolsBidSuggestV2DeviceBrand = "GIONEE"
-	CHINAMOBILE_ToolsBidSuggestV2DeviceBrand ToolsBidSuggestV2DeviceBrand = "CHINAMOBILE"
 	SAMSUNG_ToolsBidSuggestV2DeviceBrand     ToolsBidSuggestV2DeviceBrand = "SAMSUNG"
+	NUBIA_ToolsBidSuggestV2DeviceBrand       ToolsBidSuggestV2DeviceBrand = "NUBIA"
+	LETV_ToolsBidSuggestV2DeviceBrand        ToolsBidSuggestV2DeviceBrand = "LETV"
+	HONOR_ToolsBidSuggestV2DeviceBrand       ToolsBidSuggestV2DeviceBrand = "HONOR"
+	LG_ToolsBidSuggestV2DeviceBrand          ToolsBidSuggestV2DeviceBrand = "LG"
+	APPLE_ToolsBidSuggestV2DeviceBrand       ToolsBidSuggestV2DeviceBrand = "APPLE"
+	PEPPER_ToolsBidSuggestV2DeviceBrand      ToolsBidSuggestV2DeviceBrand = "PEPPER"
+	CHINAMOBILE_ToolsBidSuggestV2DeviceBrand ToolsBidSuggestV2DeviceBrand = "CHINAMOBILE"
+	MEIZU_ToolsBidSuggestV2DeviceBrand       ToolsBidSuggestV2DeviceBrand = "MEIZU"
+	TCL_ToolsBidSuggestV2DeviceBrand         ToolsBidSuggestV2DeviceBrand = "TCL"
+	ZTE_ToolsBidSuggestV2DeviceBrand         ToolsBidSuggestV2DeviceBrand = "ZTE"
+	NOKIA_ToolsBidSuggestV2DeviceBrand       ToolsBidSuggestV2DeviceBrand = "NOKIA"
+	GOOGLE_ToolsBidSuggestV2DeviceBrand      ToolsBidSuggestV2DeviceBrand = "GOOGLE"
+	GIONEE_ToolsBidSuggestV2DeviceBrand      ToolsBidSuggestV2DeviceBrand = "GIONEE"
+	SONY_ToolsBidSuggestV2DeviceBrand        ToolsBidSuggestV2DeviceBrand = "SONY"
+	HUAWEI_ToolsBidSuggestV2DeviceBrand      ToolsBidSuggestV2DeviceBrand = "HUAWEI"
+	SMARTISAN_ToolsBidSuggestV2DeviceBrand   ToolsBidSuggestV2DeviceBrand = "SMARTISAN"
 	Enum_360_ToolsBidSuggestV2DeviceBrand    ToolsBidSuggestV2DeviceBrand = "360"
 	COOLPAD_ToolsBidSuggestV2DeviceBrand     ToolsBidSuggestV2DeviceBrand = "COOLPAD"
-	GOOGLE_ToolsBidSuggestV2DeviceBrand      ToolsBidSuggestV2DeviceBrand = "GOOGLE"
-	LETV_ToolsBidSuggestV2DeviceBrand        ToolsBidSuggestV2DeviceBrand = "LETV"
-	ZTE_ToolsBidSuggestV2DeviceBrand         ToolsBidSuggestV2DeviceBrand = "ZTE"
+	MOTO_ToolsBidSuggestV2DeviceBrand        ToolsBidSuggestV2DeviceBrand = "MOTO"
+	OPPO_ToolsBidSuggestV2DeviceBrand        ToolsBidSuggestV2DeviceBrand = "OPPO"
+	HISENSE_ToolsBidSuggestV2DeviceBrand     ToolsBidSuggestV2DeviceBrand = "HISENSE"
+	LENOVO_ToolsBidSuggestV2DeviceBrand      ToolsBidSuggestV2DeviceBrand = "LENOVO"
+	XIAOMI_ToolsBidSuggestV2DeviceBrand      ToolsBidSuggestV2DeviceBrand = "XIAOMI"
 	QIKU_ToolsBidSuggestV2DeviceBrand        ToolsBidSuggestV2DeviceBrand = "QIKU"
-	HUAWEI_ToolsBidSuggestV2DeviceBrand      ToolsBidSuggestV2DeviceBrand = "HUAWEI"
-	LG_ToolsBidSuggestV2DeviceBrand          ToolsBidSuggestV2DeviceBrand = "LG"
-	SONY_ToolsBidSuggestV2DeviceBrand        ToolsBidSuggestV2DeviceBrand = "SONY"
-	NUBIA_ToolsBidSuggestV2DeviceBrand       ToolsBidSuggestV2DeviceBrand = "NUBIA"
-	SMARTISAN_ToolsBidSuggestV2DeviceBrand   ToolsBidSuggestV2DeviceBrand = "SMARTISAN"
+	HTC_ToolsBidSuggestV2DeviceBrand         ToolsBidSuggestV2DeviceBrand = "HTC"
+	VIVO_ToolsBidSuggestV2DeviceBrand        ToolsBidSuggestV2DeviceBrand = "VIVO"
+	ONEPLUS_ToolsBidSuggestV2DeviceBrand     ToolsBidSuggestV2DeviceBrand = "ONEPLUS"
 )
 
 // All allowed values of ToolsBidSuggestV2DeviceBrand enum
 var AllowedToolsBidSuggestV2DeviceBrandEnumValues = []ToolsBidSuggestV2DeviceBrand{
-	"NOKIA",
-	"TCL",
-	"HTC",
-	"VIVO",
-	"HISENSE",
-	"APPLE",
-	"OPPO",
-	"LENOVO",
-	"XIAOMI",
-	"MOTO",
-	"PEPPER",
-	"MEIZU",
-	"ONEPLUS",
-	"HONOR",
-	"GIONEE",
-	"CHINAMOBILE",
 	"SAMSUNG",
+	"NUBIA",
+	"LETV",
+	"HONOR",
+	"LG",
+	"APPLE",
+	"PEPPER",
+	"CHINAMOBILE",
+	"MEIZU",
+	"TCL",
+	"ZTE",
+	"NOKIA",
+	"GOOGLE",
+	"GIONEE",
+	"SONY",
+	"HUAWEI",
+	"SMARTISAN",
 	"360",
 	"COOLPAD",
-	"GOOGLE",
-	"LETV",
-	"ZTE",
+	"MOTO",
+	"OPPO",
+	"HISENSE",
+	"LENOVO",
+	"XIAOMI",
 	"QIKU",
-	"HUAWEI",
-	"LG",
-	"SONY",
-	"NUBIA",
-	"SMARTISAN",
+	"HTC",
+	"VIVO",
+	"ONEPLUS",
 }
 
 // NewToolsBidSuggestV2DeviceBrandFromValue returns a pointer to a valid ToolsBidSuggestV2DeviceBrand

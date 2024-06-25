@@ -19,76 +19,136 @@ type StarClueGetV2DataListComponentType string
 
 // List of star_clue_get_v2_data_list_component_type
 const (
-	VARIETY_ANCHOR_StarClueGetV2DataListComponentType           StarClueGetV2DataListComponentType = "VARIETY_ANCHOR"
-	ANCHOR_EDUCATION_StarClueGetV2DataListComponentType         StarClueGetV2DataListComponentType = "ANCHOR_EDUCATION"
-	ENTERPRISE_CAR_StarClueGetV2DataListComponentType           StarClueGetV2DataListComponentType = "ENTERPRISE_CAR"
-	BRAND_ANCHOR_StarClueGetV2DataListComponentType             StarClueGetV2DataListComponentType = "BRAND_ANCHOR"
-	ANCHOR_ESTATE_SERVICE_StarClueGetV2DataListComponentType    StarClueGetV2DataListComponentType = "ANCHOR_ESTATE_SERVICE"
-	ANCHOR_MICRO_APP_POI_StarClueGetV2DataListComponentType     StarClueGetV2DataListComponentType = "ANCHOR_MICRO_APP_POI"
-	ENTERPRISE_DOWNLOAD_APP_StarClueGetV2DataListComponentType  StarClueGetV2DataListComponentType = "ENTERPRISE_DOWNLOAD_APP"
-	GAME_ANCHOR_StarClueGetV2DataListComponentType              StarClueGetV2DataListComponentType = "GAME_ANCHOR"
-	ANCHOR_INSURANCE_StarClueGetV2DataListComponentType         StarClueGetV2DataListComponentType = "ANCHOR_INSURANCE"
-	ENTERPRISE_NOVEL_StarClueGetV2DataListComponentType         StarClueGetV2DataListComponentType = "ENTERPRISE_NOVEL"
-	ENTERPRISE_WEDDING_PHOTO_StarClueGetV2DataListComponentType StarClueGetV2DataListComponentType = "ENTERPRISE_WEDDING_PHOTO"
-	ENTERPRISE_MICRO_APP_StarClueGetV2DataListComponentType     StarClueGetV2DataListComponentType = "ENTERPRISE_MICRO_APP"
-	ANCHOR_E_GAME_StarClueGetV2DataListComponentType            StarClueGetV2DataListComponentType = "ANCHOR_E_GAME"
-	ANCHOR_XIGUA_StarClueGetV2DataListComponentType             StarClueGetV2DataListComponentType = "ANCHOR_XIGUA"
-	CART_StarClueGetV2DataListComponentType                     StarClueGetV2DataListComponentType = "CART"
-	ANCHOR_HOME_StarClueGetV2DataListComponentType              StarClueGetV2DataListComponentType = "ANCHOR_HOME"
-	ENTERPRISE_DOWNLOAD_StarClueGetV2DataListComponentType      StarClueGetV2DataListComponentType = "ENTERPRISE_DOWNLOAD"
-	ANCHOR_MOVIE_StarClueGetV2DataListComponentType             StarClueGetV2DataListComponentType = "ANCHOR_MOVIE"
-	ANCHOR_DOWNLOAD_StarClueGetV2DataListComponentType          StarClueGetV2DataListComponentType = "ANCHOR_DOWNLOAD"
-	ANCHOR_CAR_StarClueGetV2DataListComponentType               StarClueGetV2DataListComponentType = "ANCHOR_CAR"
-	ANCHOR_TOURISM_StarClueGetV2DataListComponentType           StarClueGetV2DataListComponentType = "ANCHOR_TOURISM"
-	ENTERPRISE_SALON_StarClueGetV2DataListComponentType         StarClueGetV2DataListComponentType = "ENTERPRISE_SALON"
-	ENTERPRISE_ECOM_StarClueGetV2DataListComponentType          StarClueGetV2DataListComponentType = "ENTERPRISE_ECOM"
-	ENTERPRISE_COUPON_StarClueGetV2DataListComponentType        StarClueGetV2DataListComponentType = "ENTERPRISE_COUPON"
-	ENTERPRISE_ORDER_SERVICE_StarClueGetV2DataListComponentType StarClueGetV2DataListComponentType = "ENTERPRISE_ORDER_SERVICE"
-	LINK_StarClueGetV2DataListComponentType                     StarClueGetV2DataListComponentType = "LINK"
-	ALL_StarClueGetV2DataListComponentType                      StarClueGetV2DataListComponentType = "ALL"
-	ANCHOR_ECOM_StarClueGetV2DataListComponentType              StarClueGetV2DataListComponentType = "ANCHOR_ECOM"
-	LIVE_ORDER_COMPONENT_StarClueGetV2DataListComponentType     StarClueGetV2DataListComponentType = "LIVE_ORDER_COMPONENT"
-	ANCHOR_INVESTMENT_StarClueGetV2DataListComponentType        StarClueGetV2DataListComponentType = "ANCHOR_INVESTMENT"
-	POI_StarClueGetV2DataListComponentType                      StarClueGetV2DataListComponentType = "POI"
-	ANCHOR_TELECOM_StarClueGetV2DataListComponentType           StarClueGetV2DataListComponentType = "ANCHOR_TELECOM"
-	MICROAPP_ANCHOR_StarClueGetV2DataListComponentType          StarClueGetV2DataListComponentType = "MICROAPP_ANCHOR"
+	ALL_StarClueGetV2DataListComponentType                                  StarClueGetV2DataListComponentType = "ALL"
+	ANCHOR_BRANCH_TRIAL_StarClueGetV2DataListComponentType                  StarClueGetV2DataListComponentType = "ANCHOR_BRANCH_TRIAL"
+	ANCHOR_CAR_StarClueGetV2DataListComponentType                           StarClueGetV2DataListComponentType = "ANCHOR_CAR"
+	ANCHOR_DOUYIN_MOVIE_StarClueGetV2DataListComponentType                  StarClueGetV2DataListComponentType = "ANCHOR_DOUYIN_MOVIE"
+	ANCHOR_DOWNLOAD_StarClueGetV2DataListComponentType                      StarClueGetV2DataListComponentType = "ANCHOR_DOWNLOAD"
+	ANCHOR_ECOM_StarClueGetV2DataListComponentType                          StarClueGetV2DataListComponentType = "ANCHOR_ECOM"
+	ANCHOR_EDUCATION_StarClueGetV2DataListComponentType                     StarClueGetV2DataListComponentType = "ANCHOR_EDUCATION"
+	ANCHOR_ESTATE_SERVICE_StarClueGetV2DataListComponentType                StarClueGetV2DataListComponentType = "ANCHOR_ESTATE_SERVICE"
+	ANCHOR_E_GAME_StarClueGetV2DataListComponentType                        StarClueGetV2DataListComponentType = "ANCHOR_E_GAME"
+	ANCHOR_FILM_StarClueGetV2DataListComponentType                          StarClueGetV2DataListComponentType = "ANCHOR_FILM"
+	ANCHOR_HOME_StarClueGetV2DataListComponentType                          StarClueGetV2DataListComponentType = "ANCHOR_HOME"
+	ANCHOR_INSURANCE_StarClueGetV2DataListComponentType                     StarClueGetV2DataListComponentType = "ANCHOR_INSURANCE"
+	ANCHOR_INVESTMENT_StarClueGetV2DataListComponentType                    StarClueGetV2DataListComponentType = "ANCHOR_INVESTMENT"
+	ANCHOR_MICRO_APP_POI_StarClueGetV2DataListComponentType                 StarClueGetV2DataListComponentType = "ANCHOR_MICRO_APP_POI"
+	ANCHOR_MOVIE_StarClueGetV2DataListComponentType                         StarClueGetV2DataListComponentType = "ANCHOR_MOVIE"
+	ANCHOR_QINGYAN_StarClueGetV2DataListComponentType                       StarClueGetV2DataListComponentType = "ANCHOR_QINGYAN"
+	ANCHOR_TELECOM_StarClueGetV2DataListComponentType                       StarClueGetV2DataListComponentType = "ANCHOR_TELECOM"
+	ANCHOR_TOURISM_StarClueGetV2DataListComponentType                       StarClueGetV2DataListComponentType = "ANCHOR_TOURISM"
+	ANCHOR_XIGUA_StarClueGetV2DataListComponentType                         StarClueGetV2DataListComponentType = "ANCHOR_XIGUA"
+	ANCHOR_XINGTU_StarClueGetV2DataListComponentType                        StarClueGetV2DataListComponentType = "ANCHOR_XINGTU"
+	ASSEMBLE_COMPONENT_StarClueGetV2DataListComponentType                   StarClueGetV2DataListComponentType = "ASSEMBLE_COMPONENT"
+	BRAND_ANCHOR_StarClueGetV2DataListComponentType                         StarClueGetV2DataListComponentType = "BRAND_ANCHOR"
+	CART_StarClueGetV2DataListComponentType                                 StarClueGetV2DataListComponentType = "CART"
+	CLUE_POI_ANCHOR_StarClueGetV2DataListComponentType                      StarClueGetV2DataListComponentType = "CLUE_POI_ANCHOR"
+	COCREATE_COMPONENT_StarClueGetV2DataListComponentType                   StarClueGetV2DataListComponentType = "COCREATE_COMPONENT"
+	DRAW_COMPONENT_StarClueGetV2DataListComponentType                       StarClueGetV2DataListComponentType = "DRAW_COMPONENT"
+	ENTERPRISE_CAR_StarClueGetV2DataListComponentType                       StarClueGetV2DataListComponentType = "ENTERPRISE_CAR"
+	ENTERPRISE_COUPON_StarClueGetV2DataListComponentType                    StarClueGetV2DataListComponentType = "ENTERPRISE_COUPON"
+	ENTERPRISE_DOWNLOAD_StarClueGetV2DataListComponentType                  StarClueGetV2DataListComponentType = "ENTERPRISE_DOWNLOAD"
+	ENTERPRISE_DOWNLOAD_APP_StarClueGetV2DataListComponentType              StarClueGetV2DataListComponentType = "ENTERPRISE_DOWNLOAD_APP"
+	ENTERPRISE_ECOM_StarClueGetV2DataListComponentType                      StarClueGetV2DataListComponentType = "ENTERPRISE_ECOM"
+	ENTERPRISE_MICRO_APP_StarClueGetV2DataListComponentType                 StarClueGetV2DataListComponentType = "ENTERPRISE_MICRO_APP"
+	ENTERPRISE_NOVEL_StarClueGetV2DataListComponentType                     StarClueGetV2DataListComponentType = "ENTERPRISE_NOVEL"
+	ENTERPRISE_ORDER_SERVICE_StarClueGetV2DataListComponentType             StarClueGetV2DataListComponentType = "ENTERPRISE_ORDER_SERVICE"
+	ENTERPRISE_SALON_StarClueGetV2DataListComponentType                     StarClueGetV2DataListComponentType = "ENTERPRISE_SALON"
+	ENTERPRISE_THIRD_PARTY_SHOPPING_CART_StarClueGetV2DataListComponentType StarClueGetV2DataListComponentType = "ENTERPRISE_THIRD_PARTY_SHOPPING_CART"
+	ENTERPRISE_WEDDING_PHOTO_StarClueGetV2DataListComponentType             StarClueGetV2DataListComponentType = "ENTERPRISE_WEDDING_PHOTO"
+	GAME_ANCHOR_StarClueGetV2DataListComponentType                          StarClueGetV2DataListComponentType = "GAME_ANCHOR"
+	GROUP_BUY_ANCHOR_StarClueGetV2DataListComponentType                     StarClueGetV2DataListComponentType = "GROUP_BUY_ANCHOR"
+	GROUP_BUY_COMPONENT_StarClueGetV2DataListComponentType                  StarClueGetV2DataListComponentType = "GROUP_BUY_COMPONENT"
+	HOURLY_REACH_ANCHOR_StarClueGetV2DataListComponentType                  StarClueGetV2DataListComponentType = "HOURLY_REACH_ANCHOR"
+	LINK_StarClueGetV2DataListComponentType                                 StarClueGetV2DataListComponentType = "LINK"
+	LIVE_APP_COMPNENT_StarClueGetV2DataListComponentType                    StarClueGetV2DataListComponentType = "LIVE_APP_COMPNENT"
+	LIVE_ATTRACT_COMPONENT_StarClueGetV2DataListComponentType               StarClueGetV2DataListComponentType = "LIVE_ATTRACT_COMPONENT"
+	LIVE_GAME_COMPONENT_StarClueGetV2DataListComponentType                  StarClueGetV2DataListComponentType = "LIVE_GAME_COMPONENT"
+	LIVE_MICRO_GAME_StarClueGetV2DataListComponentType                      StarClueGetV2DataListComponentType = "LIVE_MICRO_GAME"
+	LIVE_ORDER_COMPONENT_StarClueGetV2DataListComponentType                 StarClueGetV2DataListComponentType = "LIVE_ORDER_COMPONENT"
+	MALL_ACTIVITY_StarClueGetV2DataListComponentType                        StarClueGetV2DataListComponentType = "MALL_ACTIVITY"
+	MICROAPP_ANCHOR_StarClueGetV2DataListComponentType                      StarClueGetV2DataListComponentType = "MICROAPP_ANCHOR"
+	ONLINE_CONSULT_COMPONENT_StarClueGetV2DataListComponentType             StarClueGetV2DataListComponentType = "ONLINE_CONSULT_COMPONENT"
+	PAID_CONTENT_COMPONENT_StarClueGetV2DataListComponentType               StarClueGetV2DataListComponentType = "PAID_CONTENT_COMPONENT"
+	POI_StarClueGetV2DataListComponentType                                  StarClueGetV2DataListComponentType = "POI"
+	RESERVATION_COMPONENT_StarClueGetV2DataListComponentType                StarClueGetV2DataListComponentType = "RESERVATION_COMPONENT"
+	SEARCH_COMPONENT_StarClueGetV2DataListComponentType                     StarClueGetV2DataListComponentType = "SEARCH_COMPONENT"
+	SERIES_MIX_COMPONENT_StarClueGetV2DataListComponentType                 StarClueGetV2DataListComponentType = "SERIES_MIX_COMPONENT"
+	STAR_ANCHOR_CAR_StarClueGetV2DataListComponentType                      StarClueGetV2DataListComponentType = "STAR_ANCHOR_CAR"
+	STAR_ANCHOR_FASHION_StarClueGetV2DataListComponentType                  StarClueGetV2DataListComponentType = "STAR_ANCHOR_FASHION"
+	STAR_ANCHOR_HOME_StarClueGetV2DataListComponentType                     StarClueGetV2DataListComponentType = "STAR_ANCHOR_HOME"
+	STAR_ANCHOR_SHOPPING_StarClueGetV2DataListComponentType                 StarClueGetV2DataListComponentType = "STAR_ANCHOR_SHOPPING"
+	STAR_EVALUATION_COMPONENT_StarClueGetV2DataListComponentType            StarClueGetV2DataListComponentType = "STAR_EVALUATION_COMPONENT"
+	STORE_MARKET_StarClueGetV2DataListComponentType                         StarClueGetV2DataListComponentType = "STORE_MARKET"
+	VARIETY_ANCHOR_StarClueGetV2DataListComponentType                       StarClueGetV2DataListComponentType = "VARIETY_ANCHOR"
+	VIDEO_MICRO_GAME_StarClueGetV2DataListComponentType                     StarClueGetV2DataListComponentType = "VIDEO_MICRO_GAME"
 )
 
 // All allowed values of StarClueGetV2DataListComponentType enum
 var AllowedStarClueGetV2DataListComponentTypeEnumValues = []StarClueGetV2DataListComponentType{
-	"VARIETY_ANCHOR",
-	"ANCHOR_EDUCATION",
-	"ENTERPRISE_CAR",
-	"BRAND_ANCHOR",
-	"ANCHOR_ESTATE_SERVICE",
-	"ANCHOR_MICRO_APP_POI",
-	"ENTERPRISE_DOWNLOAD_APP",
-	"GAME_ANCHOR",
-	"ANCHOR_INSURANCE",
-	"ENTERPRISE_NOVEL",
-	"ENTERPRISE_WEDDING_PHOTO",
-	"ENTERPRISE_MICRO_APP",
-	"ANCHOR_E_GAME",
-	"ANCHOR_XIGUA",
-	"CART",
-	"ANCHOR_HOME",
-	"ENTERPRISE_DOWNLOAD",
-	"ANCHOR_MOVIE",
-	"ANCHOR_DOWNLOAD",
-	"ANCHOR_CAR",
-	"ANCHOR_TOURISM",
-	"ENTERPRISE_SALON",
-	"ENTERPRISE_ECOM",
-	"ENTERPRISE_COUPON",
-	"ENTERPRISE_ORDER_SERVICE",
-	"LINK",
 	"ALL",
+	"ANCHOR_BRANCH_TRIAL",
+	"ANCHOR_CAR",
+	"ANCHOR_DOUYIN_MOVIE",
+	"ANCHOR_DOWNLOAD",
 	"ANCHOR_ECOM",
-	"LIVE_ORDER_COMPONENT",
+	"ANCHOR_EDUCATION",
+	"ANCHOR_ESTATE_SERVICE",
+	"ANCHOR_E_GAME",
+	"ANCHOR_FILM",
+	"ANCHOR_HOME",
+	"ANCHOR_INSURANCE",
 	"ANCHOR_INVESTMENT",
-	"POI",
+	"ANCHOR_MICRO_APP_POI",
+	"ANCHOR_MOVIE",
+	"ANCHOR_QINGYAN",
 	"ANCHOR_TELECOM",
+	"ANCHOR_TOURISM",
+	"ANCHOR_XIGUA",
+	"ANCHOR_XINGTU",
+	"ASSEMBLE_COMPONENT",
+	"BRAND_ANCHOR",
+	"CART",
+	"CLUE_POI_ANCHOR",
+	"COCREATE_COMPONENT",
+	"DRAW_COMPONENT",
+	"ENTERPRISE_CAR",
+	"ENTERPRISE_COUPON",
+	"ENTERPRISE_DOWNLOAD",
+	"ENTERPRISE_DOWNLOAD_APP",
+	"ENTERPRISE_ECOM",
+	"ENTERPRISE_MICRO_APP",
+	"ENTERPRISE_NOVEL",
+	"ENTERPRISE_ORDER_SERVICE",
+	"ENTERPRISE_SALON",
+	"ENTERPRISE_THIRD_PARTY_SHOPPING_CART",
+	"ENTERPRISE_WEDDING_PHOTO",
+	"GAME_ANCHOR",
+	"GROUP_BUY_ANCHOR",
+	"GROUP_BUY_COMPONENT",
+	"HOURLY_REACH_ANCHOR",
+	"LINK",
+	"LIVE_APP_COMPNENT",
+	"LIVE_ATTRACT_COMPONENT",
+	"LIVE_GAME_COMPONENT",
+	"LIVE_MICRO_GAME",
+	"LIVE_ORDER_COMPONENT",
+	"MALL_ACTIVITY",
 	"MICROAPP_ANCHOR",
+	"ONLINE_CONSULT_COMPONENT",
+	"PAID_CONTENT_COMPONENT",
+	"POI",
+	"RESERVATION_COMPONENT",
+	"SEARCH_COMPONENT",
+	"SERIES_MIX_COMPONENT",
+	"STAR_ANCHOR_CAR",
+	"STAR_ANCHOR_FASHION",
+	"STAR_ANCHOR_HOME",
+	"STAR_ANCHOR_SHOPPING",
+	"STAR_EVALUATION_COMPONENT",
+	"STORE_MARKET",
+	"VARIETY_ANCHOR",
+	"VIDEO_MICRO_GAME",
 }
 
 // NewStarClueGetV2DataListComponentTypeFromValue returns a pointer to a valid StarClueGetV2DataListComponentType

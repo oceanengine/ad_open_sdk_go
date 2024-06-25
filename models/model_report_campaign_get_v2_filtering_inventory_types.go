@@ -19,40 +19,40 @@ type ReportCampaignGetV2FilteringInventoryTypes string
 
 // List of report_campaign_get_v2_filtering_inventory_types
 const (
-	INVENTORY_VIDEO_FEED_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_VIDEO_FEED"
-	INVENTORY_STUDY_ReportCampaignGetV2FilteringInventoryTypes        ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_STUDY"
-	INVENTORY_PIPIXIA_ReportCampaignGetV2FilteringInventoryTypes      ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_PIPIXIA"
-	INVENTORY_FURNISH_ReportCampaignGetV2FilteringInventoryTypes      ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_FURNISH"
+	INVENTORY_AWEME_FEED_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_AWEME_FEED"
 	UNION_BOUTIQUE_GAME_ReportCampaignGetV2FilteringInventoryTypes    ReportCampaignGetV2FilteringInventoryTypes = "UNION_BOUTIQUE_GAME"
+	INVENTORY_VIDEO_FEED_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_VIDEO_FEED"
+	INVENTORY_FURNISH_ReportCampaignGetV2FilteringInventoryTypes      ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_FURNISH"
+	INVENTORY_SEARCH_ReportCampaignGetV2FilteringInventoryTypes       ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_SEARCH"
+	INVENTORY_UNION_SLOT_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_UNION_SLOT"
+	INVENTORY_FACE_U_ReportCampaignGetV2FilteringInventoryTypes       ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_FACE_U"
 	INVENTORY_AUTOMOBILE_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_AUTOMOBILE"
 	INVENTORY_BEAUTY_ReportCampaignGetV2FilteringInventoryTypes       ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_BEAUTY"
-	INVENTORY_UNION_SLOT_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_UNION_SLOT"
-	INVENTORY_SEARCH_ReportCampaignGetV2FilteringInventoryTypes       ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_SEARCH"
-	INVENTORY_FEED_ReportCampaignGetV2FilteringInventoryTypes         ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_FEED"
 	INVENTORY_TOMATO_NOVEL_ReportCampaignGetV2FilteringInventoryTypes ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_TOMATO_NOVEL"
-	INVENTORY_FACE_U_ReportCampaignGetV2FilteringInventoryTypes       ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_FACE_U"
-	INVENTORY_AWEME_FEED_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_AWEME_FEED"
-	INVENTORY_HOTSOON_FEED_ReportCampaignGetV2FilteringInventoryTypes ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_HOTSOON_FEED"
 	INVENTORY_UNIVERSAL_ReportCampaignGetV2FilteringInventoryTypes    ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_UNIVERSAL"
+	INVENTORY_PIPIXIA_ReportCampaignGetV2FilteringInventoryTypes      ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_PIPIXIA"
+	INVENTORY_HOTSOON_FEED_ReportCampaignGetV2FilteringInventoryTypes ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_HOTSOON_FEED"
+	INVENTORY_FEED_ReportCampaignGetV2FilteringInventoryTypes         ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_FEED"
+	INVENTORY_STUDY_ReportCampaignGetV2FilteringInventoryTypes        ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_STUDY"
 )
 
 // All allowed values of ReportCampaignGetV2FilteringInventoryTypes enum
 var AllowedReportCampaignGetV2FilteringInventoryTypesEnumValues = []ReportCampaignGetV2FilteringInventoryTypes{
-	"INVENTORY_VIDEO_FEED",
-	"INVENTORY_STUDY",
-	"INVENTORY_PIPIXIA",
-	"INVENTORY_FURNISH",
+	"INVENTORY_AWEME_FEED",
 	"UNION_BOUTIQUE_GAME",
+	"INVENTORY_VIDEO_FEED",
+	"INVENTORY_FURNISH",
+	"INVENTORY_SEARCH",
+	"INVENTORY_UNION_SLOT",
+	"INVENTORY_FACE_U",
 	"INVENTORY_AUTOMOBILE",
 	"INVENTORY_BEAUTY",
-	"INVENTORY_UNION_SLOT",
-	"INVENTORY_SEARCH",
-	"INVENTORY_FEED",
 	"INVENTORY_TOMATO_NOVEL",
-	"INVENTORY_FACE_U",
-	"INVENTORY_AWEME_FEED",
-	"INVENTORY_HOTSOON_FEED",
 	"INVENTORY_UNIVERSAL",
+	"INVENTORY_PIPIXIA",
+	"INVENTORY_HOTSOON_FEED",
+	"INVENTORY_FEED",
+	"INVENTORY_STUDY",
 }
 
 // NewReportCampaignGetV2FilteringInventoryTypesFromValue returns a pointer to a valid ReportCampaignGetV2FilteringInventoryTypes

@@ -19,22 +19,22 @@ type ToolsRubeexGetV2PlatformName string
 
 // List of tools_rubeex_get_v2_platform_name
 const (
-	CLAB_EDITOR_ToolsRubeexGetV2PlatformName       ToolsRubeexGetV2PlatformName = "CLAB_EDITOR"
 	RUBIX_ToolsRubeexGetV2PlatformName             ToolsRubeexGetV2PlatformName = "RUBIX"
-	AD_PLATFORM_ToolsRubeexGetV2PlatformName       ToolsRubeexGetV2PlatformName = "AD_PLATFORM"
 	LIGHT_PLAYABLE_ToolsRubeexGetV2PlatformName    ToolsRubeexGetV2PlatformName = "LIGHT_PLAYABLE"
+	AD_PLATFORM_ToolsRubeexGetV2PlatformName       ToolsRubeexGetV2PlatformName = "AD_PLATFORM"
 	POWERPLAYABLE_ToolsRubeexGetV2PlatformName     ToolsRubeexGetV2PlatformName = "POWERPLAYABLE"
 	PLAYABLE_TEMPLATE_ToolsRubeexGetV2PlatformName ToolsRubeexGetV2PlatformName = "PLAYABLE_TEMPLATE"
+	CLAB_EDITOR_ToolsRubeexGetV2PlatformName       ToolsRubeexGetV2PlatformName = "CLAB_EDITOR"
 )
 
 // All allowed values of ToolsRubeexGetV2PlatformName enum
 var AllowedToolsRubeexGetV2PlatformNameEnumValues = []ToolsRubeexGetV2PlatformName{
-	"CLAB_EDITOR",
 	"RUBIX",
-	"AD_PLATFORM",
 	"LIGHT_PLAYABLE",
+	"AD_PLATFORM",
 	"POWERPLAYABLE",
 	"PLAYABLE_TEMPLATE",
+	"CLAB_EDITOR",
 }
 
 // NewToolsRubeexGetV2PlatformNameFromValue returns a pointer to a valid ToolsRubeexGetV2PlatformName

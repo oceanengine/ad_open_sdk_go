@@ -27,35 +27,37 @@ type StarClueGetV2ApiService service
 type ApiOpenApi2StarClueGetGetRequest struct {
 	ctx        context.Context
 	ApiService *StarClueGetV2ApiService
+	starId     *int64
 	demandId   *int64
 	orderId    *int64
-	page       *int64
-	pageSize   *int64
-	starId     *int64
+	page       *int32
+	pageSize   *int32
 }
 
+func (r *ApiOpenApi2StarClueGetGetRequest) StarId(starId int64) *ApiOpenApi2StarClueGetGetRequest {
+	r.starId = &starId
+	return r
+}
+
+// 任务id
 func (r *ApiOpenApi2StarClueGetGetRequest) DemandId(demandId int64) *ApiOpenApi2StarClueGetGetRequest {
 	r.demandId = &demandId
 	return r
 }
 
+// 订单id
 func (r *ApiOpenApi2StarClueGetGetRequest) OrderId(orderId int64) *ApiOpenApi2StarClueGetGetRequest {
 	r.orderId = &orderId
 	return r
 }
 
-func (r *ApiOpenApi2StarClueGetGetRequest) Page(page int64) *ApiOpenApi2StarClueGetGetRequest {
+func (r *ApiOpenApi2StarClueGetGetRequest) Page(page int32) *ApiOpenApi2StarClueGetGetRequest {
 	r.page = &page
 	return r
 }
 
-func (r *ApiOpenApi2StarClueGetGetRequest) PageSize(pageSize int64) *ApiOpenApi2StarClueGetGetRequest {
+func (r *ApiOpenApi2StarClueGetGetRequest) PageSize(pageSize int32) *ApiOpenApi2StarClueGetGetRequest {
 	r.pageSize = &pageSize
-	return r
-}
-
-func (r *ApiOpenApi2StarClueGetGetRequest) StarId(starId int64) *ApiOpenApi2StarClueGetGetRequest {
-	r.starId = &starId
 	return r
 }
 
@@ -109,7 +111,11 @@ func (a *StarClueGetV2ApiService) getExecute(r *ApiOpenApi2StarClueGetGetRequest
 	formFiles = make(map[string]*FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
+	if r.starId == nil {
+		return localVarReturnValue, nil, ReportError("starId is required and must be specified")
+	}
 
+	parameterAddToHeaderOrQuery(localVarQueryParams, "star_id", r.starId)
 	if r.demandId != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "demand_id", r.demandId)
 	}
@@ -121,9 +127,6 @@ func (a *StarClueGetV2ApiService) getExecute(r *ApiOpenApi2StarClueGetGetRequest
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
-	}
-	if r.starId != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "star_id", r.starId)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

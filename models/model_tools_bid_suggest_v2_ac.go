@@ -19,20 +19,20 @@ type ToolsBidSuggestV2Ac string
 
 // List of tools_bid_suggest_v2_ac
 const (
-	WIFI_ToolsBidSuggestV2Ac     ToolsBidSuggestV2Ac = "WIFI"
-	Enum_5_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "5G"
-	Enum_2_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "2G"
-	Enum_4_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "4G"
 	Enum_3_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "3G"
+	Enum_2_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "2G"
+	Enum_5_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "5G"
+	WIFI_ToolsBidSuggestV2Ac     ToolsBidSuggestV2Ac = "WIFI"
+	Enum_4_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "4G"
 )
 
 // All allowed values of ToolsBidSuggestV2Ac enum
 var AllowedToolsBidSuggestV2AcEnumValues = []ToolsBidSuggestV2Ac{
-	"WIFI",
-	"5G",
-	"2G",
-	"4G",
 	"3G",
+	"2G",
+	"5G",
+	"WIFI",
+	"4G",
 }
 
 // NewToolsBidSuggestV2AcFromValue returns a pointer to a valid ToolsBidSuggestV2Ac

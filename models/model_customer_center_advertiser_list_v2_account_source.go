@@ -19,18 +19,18 @@ type CustomerCenterAdvertiserListV2AccountSource string
 
 // List of customer_center_advertiser_list_v2_account_source
 const (
+	AD_CustomerCenterAdvertiserListV2AccountSource         CustomerCenterAdvertiserListV2AccountSource = "AD"
 	ENTERPRISE_CustomerCenterAdvertiserListV2AccountSource CustomerCenterAdvertiserListV2AccountSource = "ENTERPRISE"
 	LOCAL_CustomerCenterAdvertiserListV2AccountSource      CustomerCenterAdvertiserListV2AccountSource = "LOCAL"
 	QIANCHUAN_CustomerCenterAdvertiserListV2AccountSource  CustomerCenterAdvertiserListV2AccountSource = "QIANCHUAN"
-	AD_CustomerCenterAdvertiserListV2AccountSource         CustomerCenterAdvertiserListV2AccountSource = "AD"
 )
 
 // All allowed values of CustomerCenterAdvertiserListV2AccountSource enum
 var AllowedCustomerCenterAdvertiserListV2AccountSourceEnumValues = []CustomerCenterAdvertiserListV2AccountSource{
+	"AD",
 	"ENTERPRISE",
 	"LOCAL",
 	"QIANCHUAN",
-	"AD",
 }
 
 // NewCustomerCenterAdvertiserListV2AccountSourceFromValue returns a pointer to a valid CustomerCenterAdvertiserListV2AccountSource

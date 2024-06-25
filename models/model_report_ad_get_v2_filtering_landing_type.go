@@ -19,30 +19,30 @@ type ReportAdGetV2FilteringLandingType string
 
 // List of report_ad_get_v2_filtering_landing_type
 const (
-	SHOP_ReportAdGetV2FilteringLandingType      ReportAdGetV2FilteringLandingType = "SHOP"
 	LINK_ReportAdGetV2FilteringLandingType      ReportAdGetV2FilteringLandingType = "LINK"
+	GOODS_ReportAdGetV2FilteringLandingType     ReportAdGetV2FilteringLandingType = "GOODS"
+	AWEME_ReportAdGetV2FilteringLandingType     ReportAdGetV2FilteringLandingType = "AWEME"
+	DPA_ReportAdGetV2FilteringLandingType       ReportAdGetV2FilteringLandingType = "DPA"
+	QUICK_APP_ReportAdGetV2FilteringLandingType ReportAdGetV2FilteringLandingType = "QUICK_APP"
+	SHOP_ReportAdGetV2FilteringLandingType      ReportAdGetV2FilteringLandingType = "SHOP"
 	APP_ReportAdGetV2FilteringLandingType       ReportAdGetV2FilteringLandingType = "APP"
 	STORE_ReportAdGetV2FilteringLandingType     ReportAdGetV2FilteringLandingType = "STORE"
-	QUICK_APP_ReportAdGetV2FilteringLandingType ReportAdGetV2FilteringLandingType = "QUICK_APP"
-	GOODS_ReportAdGetV2FilteringLandingType     ReportAdGetV2FilteringLandingType = "GOODS"
-	DPA_ReportAdGetV2FilteringLandingType       ReportAdGetV2FilteringLandingType = "DPA"
-	LIVE_ReportAdGetV2FilteringLandingType      ReportAdGetV2FilteringLandingType = "LIVE"
-	AWEME_ReportAdGetV2FilteringLandingType     ReportAdGetV2FilteringLandingType = "AWEME"
 	ARTICLE_ReportAdGetV2FilteringLandingType   ReportAdGetV2FilteringLandingType = "ARTICLE"
+	LIVE_ReportAdGetV2FilteringLandingType      ReportAdGetV2FilteringLandingType = "LIVE"
 )
 
 // All allowed values of ReportAdGetV2FilteringLandingType enum
 var AllowedReportAdGetV2FilteringLandingTypeEnumValues = []ReportAdGetV2FilteringLandingType{
-	"SHOP",
 	"LINK",
+	"GOODS",
+	"AWEME",
+	"DPA",
+	"QUICK_APP",
+	"SHOP",
 	"APP",
 	"STORE",
-	"QUICK_APP",
-	"GOODS",
-	"DPA",
-	"LIVE",
-	"AWEME",
 	"ARTICLE",
+	"LIVE",
 }
 
 // NewReportAdGetV2FilteringLandingTypeFromValue returns a pointer to a valid ReportAdGetV2FilteringLandingType

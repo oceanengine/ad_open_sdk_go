@@ -19,18 +19,18 @@ type ToolsBidSuggestV2RetargetingType string
 
 // List of tools_bid_suggest_v2_retargeting_type
 const (
-	RETARGETING_INCLUDE_ToolsBidSuggestV2RetargetingType ToolsBidSuggestV2RetargetingType = "RETARGETING_INCLUDE"
-	RETARGETING_NONE_ToolsBidSuggestV2RetargetingType    ToolsBidSuggestV2RetargetingType = "RETARGETING_NONE"
 	RETARGETING_EXCLUDE_ToolsBidSuggestV2RetargetingType ToolsBidSuggestV2RetargetingType = "RETARGETING_EXCLUDE"
+	RETARGETING_INCLUDE_ToolsBidSuggestV2RetargetingType ToolsBidSuggestV2RetargetingType = "RETARGETING_INCLUDE"
 	NONE_ToolsBidSuggestV2RetargetingType                ToolsBidSuggestV2RetargetingType = "NONE"
+	RETARGETING_NONE_ToolsBidSuggestV2RetargetingType    ToolsBidSuggestV2RetargetingType = "RETARGETING_NONE"
 )
 
 // All allowed values of ToolsBidSuggestV2RetargetingType enum
 var AllowedToolsBidSuggestV2RetargetingTypeEnumValues = []ToolsBidSuggestV2RetargetingType{
-	"RETARGETING_INCLUDE",
-	"RETARGETING_NONE",
 	"RETARGETING_EXCLUDE",
+	"RETARGETING_INCLUDE",
 	"NONE",
+	"RETARGETING_NONE",
 }
 
 // NewToolsBidSuggestV2RetargetingTypeFromValue returns a pointer to a valid ToolsBidSuggestV2RetargetingType

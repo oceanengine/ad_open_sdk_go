@@ -19,36 +19,36 @@ type StarDemandListV2FilteringUniversalSettlementType string
 
 // List of star_demand_list_v2_filtering_universal_settlement_type
 const (
-	EFFECT_StarDemandListV2FilteringUniversalSettlementType       StarDemandListV2FilteringUniversalSettlementType = "EFFECT"
-	RANK_StarDemandListV2FilteringUniversalSettlementType         StarDemandListV2FilteringUniversalSettlementType = "RANK"
-	EXCHANGE_StarDemandListV2FilteringUniversalSettlementType     StarDemandListV2FilteringUniversalSettlementType = "EXCHANGE"
-	STAR_SUPPORT_StarDemandListV2FilteringUniversalSettlementType StarDemandListV2FilteringUniversalSettlementType = "STAR_SUPPORT"
-	FIXED_PRICE_StarDemandListV2FilteringUniversalSettlementType  StarDemandListV2FilteringUniversalSettlementType = "FIXED_PRICE"
-	ALL_StarDemandListV2FilteringUniversalSettlementType          StarDemandListV2FilteringUniversalSettlementType = "ALL"
-	DOU_PLUS_StarDemandListV2FilteringUniversalSettlementType     StarDemandListV2FilteringUniversalSettlementType = "DOU_PLUS"
-	CUSTOMIZE_StarDemandListV2FilteringUniversalSettlementType    StarDemandListV2FilteringUniversalSettlementType = "CUSTOMIZE"
-	FLOW_SHARE_StarDemandListV2FilteringUniversalSettlementType   StarDemandListV2FilteringUniversalSettlementType = "FLOW_SHARE"
 	MONEY_SHARE_StarDemandListV2FilteringUniversalSettlementType  StarDemandListV2FilteringUniversalSettlementType = "MONEY_SHARE"
-	CPM_StarDemandListV2FilteringUniversalSettlementType          StarDemandListV2FilteringUniversalSettlementType = "CPM"
+	FIXED_PRICE_StarDemandListV2FilteringUniversalSettlementType  StarDemandListV2FilteringUniversalSettlementType = "FIXED_PRICE"
+	EXCHANGE_StarDemandListV2FilteringUniversalSettlementType     StarDemandListV2FilteringUniversalSettlementType = "EXCHANGE"
+	ALL_StarDemandListV2FilteringUniversalSettlementType          StarDemandListV2FilteringUniversalSettlementType = "ALL"
 	GIFT_StarDemandListV2FilteringUniversalSettlementType         StarDemandListV2FilteringUniversalSettlementType = "GIFT"
+	CUSTOMIZE_StarDemandListV2FilteringUniversalSettlementType    StarDemandListV2FilteringUniversalSettlementType = "CUSTOMIZE"
+	EFFECT_StarDemandListV2FilteringUniversalSettlementType       StarDemandListV2FilteringUniversalSettlementType = "EFFECT"
+	CPM_StarDemandListV2FilteringUniversalSettlementType          StarDemandListV2FilteringUniversalSettlementType = "CPM"
+	STAR_SUPPORT_StarDemandListV2FilteringUniversalSettlementType StarDemandListV2FilteringUniversalSettlementType = "STAR_SUPPORT"
+	DOU_PLUS_StarDemandListV2FilteringUniversalSettlementType     StarDemandListV2FilteringUniversalSettlementType = "DOU_PLUS"
+	FLOW_SHARE_StarDemandListV2FilteringUniversalSettlementType   StarDemandListV2FilteringUniversalSettlementType = "FLOW_SHARE"
 	CPA_StarDemandListV2FilteringUniversalSettlementType          StarDemandListV2FilteringUniversalSettlementType = "CPA"
+	RANK_StarDemandListV2FilteringUniversalSettlementType         StarDemandListV2FilteringUniversalSettlementType = "RANK"
 )
 
 // All allowed values of StarDemandListV2FilteringUniversalSettlementType enum
 var AllowedStarDemandListV2FilteringUniversalSettlementTypeEnumValues = []StarDemandListV2FilteringUniversalSettlementType{
-	"EFFECT",
-	"RANK",
-	"EXCHANGE",
-	"STAR_SUPPORT",
-	"FIXED_PRICE",
-	"ALL",
-	"DOU_PLUS",
-	"CUSTOMIZE",
-	"FLOW_SHARE",
 	"MONEY_SHARE",
-	"CPM",
+	"FIXED_PRICE",
+	"EXCHANGE",
+	"ALL",
 	"GIFT",
+	"CUSTOMIZE",
+	"EFFECT",
+	"CPM",
+	"STAR_SUPPORT",
+	"DOU_PLUS",
+	"FLOW_SHARE",
 	"CPA",
+	"RANK",
 }
 
 // NewStarDemandListV2FilteringUniversalSettlementTypeFromValue returns a pointer to a valid StarDemandListV2FilteringUniversalSettlementType

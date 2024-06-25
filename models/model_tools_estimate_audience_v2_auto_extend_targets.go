@@ -19,22 +19,22 @@ type ToolsEstimateAudienceV2AutoExtendTargets string
 
 // List of tools_estimate_audience_v2_auto_extend_targets
 const (
-	REGION_ToolsEstimateAudienceV2AutoExtendTargets          ToolsEstimateAudienceV2AutoExtendTargets = "REGION"
-	INTEREST_TAG_ToolsEstimateAudienceV2AutoExtendTargets    ToolsEstimateAudienceV2AutoExtendTargets = "INTEREST_TAG"
-	AD_TAG_ToolsEstimateAudienceV2AutoExtendTargets          ToolsEstimateAudienceV2AutoExtendTargets = "AD_TAG"
 	GENDER_ToolsEstimateAudienceV2AutoExtendTargets          ToolsEstimateAudienceV2AutoExtendTargets = "GENDER"
-	CUSTOM_AUDIENCE_ToolsEstimateAudienceV2AutoExtendTargets ToolsEstimateAudienceV2AutoExtendTargets = "CUSTOM_AUDIENCE"
+	REGION_ToolsEstimateAudienceV2AutoExtendTargets          ToolsEstimateAudienceV2AutoExtendTargets = "REGION"
 	AGE_ToolsEstimateAudienceV2AutoExtendTargets             ToolsEstimateAudienceV2AutoExtendTargets = "AGE"
+	CUSTOM_AUDIENCE_ToolsEstimateAudienceV2AutoExtendTargets ToolsEstimateAudienceV2AutoExtendTargets = "CUSTOM_AUDIENCE"
+	AD_TAG_ToolsEstimateAudienceV2AutoExtendTargets          ToolsEstimateAudienceV2AutoExtendTargets = "AD_TAG"
+	INTEREST_TAG_ToolsEstimateAudienceV2AutoExtendTargets    ToolsEstimateAudienceV2AutoExtendTargets = "INTEREST_TAG"
 )
 
 // All allowed values of ToolsEstimateAudienceV2AutoExtendTargets enum
 var AllowedToolsEstimateAudienceV2AutoExtendTargetsEnumValues = []ToolsEstimateAudienceV2AutoExtendTargets{
-	"REGION",
-	"INTEREST_TAG",
-	"AD_TAG",
 	"GENDER",
-	"CUSTOM_AUDIENCE",
+	"REGION",
 	"AGE",
+	"CUSTOM_AUDIENCE",
+	"AD_TAG",
+	"INTEREST_TAG",
 }
 
 // NewToolsEstimateAudienceV2AutoExtendTargetsFromValue returns a pointer to a valid ToolsEstimateAudienceV2AutoExtendTargets

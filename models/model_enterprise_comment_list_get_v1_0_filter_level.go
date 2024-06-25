@@ -19,16 +19,16 @@ type EnterpriseCommentListGetV10FilterLevel string
 
 // List of enterprise_comment_list_get_v1.0_filter_level
 const (
+	LEVEL_TWO_EnterpriseCommentListGetV10FilterLevel EnterpriseCommentListGetV10FilterLevel = "LEVEL_TWO"
 	LEVEL_ONE_EnterpriseCommentListGetV10FilterLevel EnterpriseCommentListGetV10FilterLevel = "LEVEL_ONE"
 	LEVEL_ALL_EnterpriseCommentListGetV10FilterLevel EnterpriseCommentListGetV10FilterLevel = "LEVEL_ALL"
-	LEVEL_TWO_EnterpriseCommentListGetV10FilterLevel EnterpriseCommentListGetV10FilterLevel = "LEVEL_TWO"
 )
 
 // All allowed values of EnterpriseCommentListGetV10FilterLevel enum
 var AllowedEnterpriseCommentListGetV10FilterLevelEnumValues = []EnterpriseCommentListGetV10FilterLevel{
+	"LEVEL_TWO",
 	"LEVEL_ONE",
 	"LEVEL_ALL",
-	"LEVEL_TWO",
 }
 
 // NewEnterpriseCommentListGetV10FilterLevelFromValue returns a pointer to a valid EnterpriseCommentListGetV10FilterLevel

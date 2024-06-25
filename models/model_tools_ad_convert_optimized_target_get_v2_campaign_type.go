@@ -19,16 +19,16 @@ type ToolsAdConvertOptimizedTargetGetV2CampaignType string
 
 // List of tools_ad_convert_optimized_target_get_v2_campaign_type
 const (
+	FEED_ToolsAdConvertOptimizedTargetGetV2CampaignType    ToolsAdConvertOptimizedTargetGetV2CampaignType = "FEED"
 	SEARCH_ToolsAdConvertOptimizedTargetGetV2CampaignType  ToolsAdConvertOptimizedTargetGetV2CampaignType = "SEARCH"
 	CONTENT_ToolsAdConvertOptimizedTargetGetV2CampaignType ToolsAdConvertOptimizedTargetGetV2CampaignType = "CONTENT"
-	FEED_ToolsAdConvertOptimizedTargetGetV2CampaignType    ToolsAdConvertOptimizedTargetGetV2CampaignType = "FEED"
 )
 
 // All allowed values of ToolsAdConvertOptimizedTargetGetV2CampaignType enum
 var AllowedToolsAdConvertOptimizedTargetGetV2CampaignTypeEnumValues = []ToolsAdConvertOptimizedTargetGetV2CampaignType{
+	"FEED",
 	"SEARCH",
 	"CONTENT",
-	"FEED",
 }
 
 // NewToolsAdConvertOptimizedTargetGetV2CampaignTypeFromValue returns a pointer to a valid ToolsAdConvertOptimizedTargetGetV2CampaignType

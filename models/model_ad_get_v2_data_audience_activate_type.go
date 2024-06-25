@@ -21,16 +21,16 @@ type AdGetV2DataAudienceActivateType string
 const (
 	UNLIMITED_AdGetV2DataAudienceActivateType               AdGetV2DataAudienceActivateType = "UNLIMITED"
 	THREE_MONTH_EAILIER_AdGetV2DataAudienceActivateType     AdGetV2DataAudienceActivateType = "THREE_MONTH_EAILIER"
-	ONE_MONTH_2_THREE_MONTH_AdGetV2DataAudienceActivateType AdGetV2DataAudienceActivateType = "ONE_MONTH_2_THREE_MONTH"
 	WITH_IN_A_MONTH_AdGetV2DataAudienceActivateType         AdGetV2DataAudienceActivateType = "WITH_IN_A_MONTH"
+	ONE_MONTH_2_THREE_MONTH_AdGetV2DataAudienceActivateType AdGetV2DataAudienceActivateType = "ONE_MONTH_2_THREE_MONTH"
 )
 
 // All allowed values of AdGetV2DataAudienceActivateType enum
 var AllowedAdGetV2DataAudienceActivateTypeEnumValues = []AdGetV2DataAudienceActivateType{
 	"UNLIMITED",
 	"THREE_MONTH_EAILIER",
-	"ONE_MONTH_2_THREE_MONTH",
 	"WITH_IN_A_MONTH",
+	"ONE_MONTH_2_THREE_MONTH",
 }
 
 // NewAdGetV2DataAudienceActivateTypeFromValue returns a pointer to a valid AdGetV2DataAudienceActivateType

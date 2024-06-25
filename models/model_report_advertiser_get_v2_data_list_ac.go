@@ -20,9 +20,9 @@ type ReportAdvertiserGetV2DataListAc string
 // List of report_advertiser_get_v2_data_list_ac
 const (
 	Enum_3_G_ReportAdvertiserGetV2DataListAc ReportAdvertiserGetV2DataListAc = "3G"
-	WIFI_ReportAdvertiserGetV2DataListAc     ReportAdvertiserGetV2DataListAc = "WIFI"
-	Enum_5_G_ReportAdvertiserGetV2DataListAc ReportAdvertiserGetV2DataListAc = "5G"
 	Enum_2_G_ReportAdvertiserGetV2DataListAc ReportAdvertiserGetV2DataListAc = "2G"
+	Enum_5_G_ReportAdvertiserGetV2DataListAc ReportAdvertiserGetV2DataListAc = "5G"
+	WIFI_ReportAdvertiserGetV2DataListAc     ReportAdvertiserGetV2DataListAc = "WIFI"
 	Enum_4_G_ReportAdvertiserGetV2DataListAc ReportAdvertiserGetV2DataListAc = "4G"
 	UNKNOWN_ReportAdvertiserGetV2DataListAc  ReportAdvertiserGetV2DataListAc = "unknown"
 )
@@ -30,9 +30,9 @@ const (
 // All allowed values of ReportAdvertiserGetV2DataListAc enum
 var AllowedReportAdvertiserGetV2DataListAcEnumValues = []ReportAdvertiserGetV2DataListAc{
 	"3G",
-	"WIFI",
-	"5G",
 	"2G",
+	"5G",
+	"WIFI",
 	"4G",
 	"unknown",
 }

@@ -19,30 +19,30 @@ type CampaignCreateV2MarketingScene string
 
 // List of campaign_create_v2_marketing_scene
 const (
-	VIDEO_INFO_CampaignCreateV2MarketingScene        CampaignCreateV2MarketingScene = "VIDEO_INFO"
-	ECOMMERCE_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "ECOMMERCE"
-	CAR_CampaignCreateV2MarketingScene               CampaignCreateV2MarketingScene = "CAR"
-	MERCHANTS_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "MERCHANTS"
-	GAME_SUBSCRIBE_CampaignCreateV2MarketingScene    CampaignCreateV2MarketingScene = "GAME_SUBSCRIBE"
-	NOVEL_CampaignCreateV2MarketingScene             CampaignCreateV2MarketingScene = "NOVEL"
-	EDUCATION_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "EDUCATION"
-	SOCIAL_CampaignCreateV2MarketingScene            CampaignCreateV2MarketingScene = "SOCIAL"
 	PROMOTION_PURPOSE_CampaignCreateV2MarketingScene CampaignCreateV2MarketingScene = "PROMOTION_PURPOSE"
+	EDUCATION_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "EDUCATION"
+	GAME_SUBSCRIBE_CampaignCreateV2MarketingScene    CampaignCreateV2MarketingScene = "GAME_SUBSCRIBE"
 	GAME_PROMOTION_CampaignCreateV2MarketingScene    CampaignCreateV2MarketingScene = "GAME_PROMOTION"
+	MERCHANTS_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "MERCHANTS"
+	VIDEO_INFO_CampaignCreateV2MarketingScene        CampaignCreateV2MarketingScene = "VIDEO_INFO"
+	CAR_CampaignCreateV2MarketingScene               CampaignCreateV2MarketingScene = "CAR"
+	NOVEL_CampaignCreateV2MarketingScene             CampaignCreateV2MarketingScene = "NOVEL"
+	SOCIAL_CampaignCreateV2MarketingScene            CampaignCreateV2MarketingScene = "SOCIAL"
+	ECOMMERCE_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "ECOMMERCE"
 )
 
 // All allowed values of CampaignCreateV2MarketingScene enum
 var AllowedCampaignCreateV2MarketingSceneEnumValues = []CampaignCreateV2MarketingScene{
-	"VIDEO_INFO",
-	"ECOMMERCE",
-	"CAR",
-	"MERCHANTS",
-	"GAME_SUBSCRIBE",
-	"NOVEL",
-	"EDUCATION",
-	"SOCIAL",
 	"PROMOTION_PURPOSE",
+	"EDUCATION",
+	"GAME_SUBSCRIBE",
 	"GAME_PROMOTION",
+	"MERCHANTS",
+	"VIDEO_INFO",
+	"CAR",
+	"NOVEL",
+	"SOCIAL",
+	"ECOMMERCE",
 }
 
 // NewCampaignCreateV2MarketingSceneFromValue returns a pointer to a valid CampaignCreateV2MarketingScene

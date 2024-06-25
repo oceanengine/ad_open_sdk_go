@@ -19,24 +19,24 @@ type CustomerCenterFundTransferSeqCreateV2TransferType string
 
 // List of customer_center_fund_transfer_seq_create_v2_transfer_type
 const (
-	PREPAY_UNIVERSAL_CustomerCenterFundTransferSeqCreateV2TransferType CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_UNIVERSAL"
-	GRANT_CustomerCenterFundTransferSeqCreateV2TransferType            CustomerCenterFundTransferSeqCreateV2TransferType = "GRANT"
-	CREDIT_BID_CustomerCenterFundTransferSeqCreateV2TransferType       CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_BID"
-	CREDIT_UNIVERSAL_CustomerCenterFundTransferSeqCreateV2TransferType CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_UNIVERSAL"
 	CREDIT_BRAND_CustomerCenterFundTransferSeqCreateV2TransferType     CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_BRAND"
-	PREPAY_BRAND_CustomerCenterFundTransferSeqCreateV2TransferType     CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_BRAND"
+	PREPAY_UNIVERSAL_CustomerCenterFundTransferSeqCreateV2TransferType CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_UNIVERSAL"
 	PREPAY_BID_CustomerCenterFundTransferSeqCreateV2TransferType       CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_BID"
+	CREDIT_BID_CustomerCenterFundTransferSeqCreateV2TransferType       CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_BID"
+	PREPAY_BRAND_CustomerCenterFundTransferSeqCreateV2TransferType     CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_BRAND"
+	CREDIT_UNIVERSAL_CustomerCenterFundTransferSeqCreateV2TransferType CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_UNIVERSAL"
+	GRANT_CustomerCenterFundTransferSeqCreateV2TransferType            CustomerCenterFundTransferSeqCreateV2TransferType = "GRANT"
 )
 
 // All allowed values of CustomerCenterFundTransferSeqCreateV2TransferType enum
 var AllowedCustomerCenterFundTransferSeqCreateV2TransferTypeEnumValues = []CustomerCenterFundTransferSeqCreateV2TransferType{
-	"PREPAY_UNIVERSAL",
-	"GRANT",
-	"CREDIT_BID",
-	"CREDIT_UNIVERSAL",
 	"CREDIT_BRAND",
-	"PREPAY_BRAND",
+	"PREPAY_UNIVERSAL",
 	"PREPAY_BID",
+	"CREDIT_BID",
+	"PREPAY_BRAND",
+	"CREDIT_UNIVERSAL",
+	"GRANT",
 }
 
 // NewCustomerCenterFundTransferSeqCreateV2TransferTypeFromValue returns a pointer to a valid CustomerCenterFundTransferSeqCreateV2TransferType

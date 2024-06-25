@@ -19,22 +19,22 @@ type AdGetV2DataAudiencePlatform string
 
 // List of ad_get_v2_data_audience_platform
 const (
-	ANDROID_AdGetV2DataAudiencePlatform AdGetV2DataAudiencePlatform = "ANDROID"
-	NONE_AdGetV2DataAudiencePlatform    AdGetV2DataAudiencePlatform = "NONE"
 	PC_AdGetV2DataAudiencePlatform      AdGetV2DataAudiencePlatform = "PC"
-	IOS_AdGetV2DataAudiencePlatform     AdGetV2DataAudiencePlatform = "IOS"
 	IPAD_AdGetV2DataAudiencePlatform    AdGetV2DataAudiencePlatform = "IPAD"
 	WAP_AdGetV2DataAudiencePlatform     AdGetV2DataAudiencePlatform = "WAP"
+	IOS_AdGetV2DataAudiencePlatform     AdGetV2DataAudiencePlatform = "IOS"
+	ANDROID_AdGetV2DataAudiencePlatform AdGetV2DataAudiencePlatform = "ANDROID"
+	NONE_AdGetV2DataAudiencePlatform    AdGetV2DataAudiencePlatform = "NONE"
 )
 
 // All allowed values of AdGetV2DataAudiencePlatform enum
 var AllowedAdGetV2DataAudiencePlatformEnumValues = []AdGetV2DataAudiencePlatform{
-	"ANDROID",
-	"NONE",
 	"PC",
-	"IOS",
 	"IPAD",
 	"WAP",
+	"IOS",
+	"ANDROID",
+	"NONE",
 }
 
 // NewAdGetV2DataAudiencePlatformFromValue returns a pointer to a valid AdGetV2DataAudiencePlatform

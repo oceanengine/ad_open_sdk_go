@@ -19,16 +19,16 @@ type EnterpriseCommentListGetV10FilterReplyStatusByEDouyin string
 
 // List of enterprise_comment_list_get_v1.0_filter_reply_status_by_e_douyin
 const (
-	REPLY_EnterpriseCommentListGetV10FilterReplyStatusByEDouyin    EnterpriseCommentListGetV10FilterReplyStatusByEDouyin = "REPLY"
 	NO_REPLY_EnterpriseCommentListGetV10FilterReplyStatusByEDouyin EnterpriseCommentListGetV10FilterReplyStatusByEDouyin = "NO_REPLY"
 	ALL_EnterpriseCommentListGetV10FilterReplyStatusByEDouyin      EnterpriseCommentListGetV10FilterReplyStatusByEDouyin = "ALL"
+	REPLY_EnterpriseCommentListGetV10FilterReplyStatusByEDouyin    EnterpriseCommentListGetV10FilterReplyStatusByEDouyin = "REPLY"
 )
 
 // All allowed values of EnterpriseCommentListGetV10FilterReplyStatusByEDouyin enum
 var AllowedEnterpriseCommentListGetV10FilterReplyStatusByEDouyinEnumValues = []EnterpriseCommentListGetV10FilterReplyStatusByEDouyin{
-	"REPLY",
 	"NO_REPLY",
 	"ALL",
+	"REPLY",
 }
 
 // NewEnterpriseCommentListGetV10FilterReplyStatusByEDouyinFromValue returns a pointer to a valid EnterpriseCommentListGetV10FilterReplyStatusByEDouyin

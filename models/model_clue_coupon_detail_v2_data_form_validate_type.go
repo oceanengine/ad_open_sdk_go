@@ -19,20 +19,20 @@ type ClueCouponDetailV2DataFormValidateType string
 
 // List of clue_coupon_detail_v2_data_form_validate_type
 const (
-	VALIDITY_PRIORITY_ClueCouponDetailV2DataFormValidateType ClueCouponDetailV2DataFormValidateType = "VALIDITY_PRIORITY"
 	NONE_VERIFICATION_ClueCouponDetailV2DataFormValidateType ClueCouponDetailV2DataFormValidateType = "NONE_VERIFICATION"
-	ALL_VERIFICATION_ClueCouponDetailV2DataFormValidateType  ClueCouponDetailV2DataFormValidateType = "ALL_VERIFICATION"
-	CLUE_PRIORITY_ClueCouponDetailV2DataFormValidateType     ClueCouponDetailV2DataFormValidateType = "CLUE_PRIORITY"
 	AUTO_VERIFICATION_ClueCouponDetailV2DataFormValidateType ClueCouponDetailV2DataFormValidateType = "AUTO_VERIFICATION"
+	CLUE_PRIORITY_ClueCouponDetailV2DataFormValidateType     ClueCouponDetailV2DataFormValidateType = "CLUE_PRIORITY"
+	ALL_VERIFICATION_ClueCouponDetailV2DataFormValidateType  ClueCouponDetailV2DataFormValidateType = "ALL_VERIFICATION"
+	VALIDITY_PRIORITY_ClueCouponDetailV2DataFormValidateType ClueCouponDetailV2DataFormValidateType = "VALIDITY_PRIORITY"
 )
 
 // All allowed values of ClueCouponDetailV2DataFormValidateType enum
 var AllowedClueCouponDetailV2DataFormValidateTypeEnumValues = []ClueCouponDetailV2DataFormValidateType{
-	"VALIDITY_PRIORITY",
 	"NONE_VERIFICATION",
-	"ALL_VERIFICATION",
-	"CLUE_PRIORITY",
 	"AUTO_VERIFICATION",
+	"CLUE_PRIORITY",
+	"ALL_VERIFICATION",
+	"VALIDITY_PRIORITY",
 }
 
 // NewClueCouponDetailV2DataFormValidateTypeFromValue returns a pointer to a valid ClueCouponDetailV2DataFormValidateType

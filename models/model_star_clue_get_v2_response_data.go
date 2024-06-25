@@ -12,7 +12,7 @@ package models
 
 // StarClueGetV2ResponseData
 type StarClueGetV2ResponseData struct {
-	//
-	List     []*StarClueGetV2ResponseDataListInner `json:"list,omitempty"`
+	// 线索数据
+	List     []*StarClueGetV2ResponseDataListInner `json:"list"`
 	PageInfo *StarClueGetV2ResponseDataPageInfo    `json:"page_info,omitempty"`
 }

@@ -19,18 +19,18 @@ type CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType string
 
 // List of creative_custom_creative_update_v2_ad_data_mini_program_info_type
 const (
-	TEMPLATE_APP_CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType = "TEMPLATE_APP"
-	BYTE_APP_CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType     CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType = "BYTE_APP"
-	SHELL_APP_CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType    CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType = "SHELL_APP"
 	BYTE_GAME_CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType    CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType = "BYTE_GAME"
+	TEMPLATE_APP_CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType = "TEMPLATE_APP"
+	SHELL_APP_CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType    CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType = "SHELL_APP"
+	BYTE_APP_CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType     CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType = "BYTE_APP"
 )
 
 // All allowed values of CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType enum
 var AllowedCreativeCustomCreativeUpdateV2AdDataMiniProgramInfoTypeEnumValues = []CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType{
-	"TEMPLATE_APP",
-	"BYTE_APP",
-	"SHELL_APP",
 	"BYTE_GAME",
+	"TEMPLATE_APP",
+	"SHELL_APP",
+	"BYTE_APP",
 }
 
 // NewCreativeCustomCreativeUpdateV2AdDataMiniProgramInfoTypeFromValue returns a pointer to a valid CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType

@@ -19,18 +19,18 @@ type ToolsBidSuggestV2Gender string
 
 // List of tools_bid_suggest_v2_gender
 const (
+	GENDER_FEMALE_ToolsBidSuggestV2Gender    ToolsBidSuggestV2Gender = "GENDER_FEMALE"
 	GENDER_UNLIMITED_ToolsBidSuggestV2Gender ToolsBidSuggestV2Gender = "GENDER_UNLIMITED"
 	NONE_ToolsBidSuggestV2Gender             ToolsBidSuggestV2Gender = "NONE"
 	GENDER_MALE_ToolsBidSuggestV2Gender      ToolsBidSuggestV2Gender = "GENDER_MALE"
-	GENDER_FEMALE_ToolsBidSuggestV2Gender    ToolsBidSuggestV2Gender = "GENDER_FEMALE"
 )
 
 // All allowed values of ToolsBidSuggestV2Gender enum
 var AllowedToolsBidSuggestV2GenderEnumValues = []ToolsBidSuggestV2Gender{
+	"GENDER_FEMALE",
 	"GENDER_UNLIMITED",
 	"NONE",
 	"GENDER_MALE",
-	"GENDER_FEMALE",
 }
 
 // NewToolsBidSuggestV2GenderFromValue returns a pointer to a valid ToolsBidSuggestV2Gender

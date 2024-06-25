@@ -19,24 +19,24 @@ type ClueCouponGetV2DataListCouponStatus string
 
 // List of clue_coupon_get_v2_data_list_coupon_status
 const (
-	DELETED_ClueCouponGetV2DataListCouponStatus     ClueCouponGetV2DataListCouponStatus = "DELETED"
-	AUDIT_FAIL_ClueCouponGetV2DataListCouponStatus  ClueCouponGetV2DataListCouponStatus = "AUDIT_FAIL"
-	UNAUDITED_ClueCouponGetV2DataListCouponStatus   ClueCouponGetV2DataListCouponStatus = "UNAUDITED"
-	PAUSE_ClueCouponGetV2DataListCouponStatus       ClueCouponGetV2DataListCouponStatus = "PAUSE"
 	NORMAL_ClueCouponGetV2DataListCouponStatus      ClueCouponGetV2DataListCouponStatus = "NORMAL"
+	DELETED_ClueCouponGetV2DataListCouponStatus     ClueCouponGetV2DataListCouponStatus = "DELETED"
+	PAUSE_ClueCouponGetV2DataListCouponStatus       ClueCouponGetV2DataListCouponStatus = "PAUSE"
 	AUDIT_DOING_ClueCouponGetV2DataListCouponStatus ClueCouponGetV2DataListCouponStatus = "AUDIT_DOING"
+	AUDIT_FAIL_ClueCouponGetV2DataListCouponStatus  ClueCouponGetV2DataListCouponStatus = "AUDIT_FAIL"
 	OFFLINE_ClueCouponGetV2DataListCouponStatus     ClueCouponGetV2DataListCouponStatus = "OFFLINE"
+	UNAUDITED_ClueCouponGetV2DataListCouponStatus   ClueCouponGetV2DataListCouponStatus = "UNAUDITED"
 )
 
 // All allowed values of ClueCouponGetV2DataListCouponStatus enum
 var AllowedClueCouponGetV2DataListCouponStatusEnumValues = []ClueCouponGetV2DataListCouponStatus{
-	"DELETED",
-	"AUDIT_FAIL",
-	"UNAUDITED",
-	"PAUSE",
 	"NORMAL",
+	"DELETED",
+	"PAUSE",
 	"AUDIT_DOING",
+	"AUDIT_FAIL",
 	"OFFLINE",
+	"UNAUDITED",
 }
 
 // NewClueCouponGetV2DataListCouponStatusFromValue returns a pointer to a valid ClueCouponGetV2DataListCouponStatus

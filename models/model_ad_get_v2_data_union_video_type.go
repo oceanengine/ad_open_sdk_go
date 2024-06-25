@@ -20,15 +20,15 @@ type AdGetV2DataUnionVideoType string
 // List of ad_get_v2_data_union_video_type
 const (
 	REWARDED_VIDEO_AdGetV2DataUnionVideoType AdGetV2DataUnionVideoType = "REWARDED_VIDEO"
-	ORIGINAL_VIDEO_AdGetV2DataUnionVideoType AdGetV2DataUnionVideoType = "ORIGINAL_VIDEO"
 	SPLASH_VIDEO_AdGetV2DataUnionVideoType   AdGetV2DataUnionVideoType = "SPLASH_VIDEO"
+	ORIGINAL_VIDEO_AdGetV2DataUnionVideoType AdGetV2DataUnionVideoType = "ORIGINAL_VIDEO"
 )
 
 // All allowed values of AdGetV2DataUnionVideoType enum
 var AllowedAdGetV2DataUnionVideoTypeEnumValues = []AdGetV2DataUnionVideoType{
 	"REWARDED_VIDEO",
-	"ORIGINAL_VIDEO",
 	"SPLASH_VIDEO",
+	"ORIGINAL_VIDEO",
 }
 
 // NewAdGetV2DataUnionVideoTypeFromValue returns a pointer to a valid AdGetV2DataUnionVideoType

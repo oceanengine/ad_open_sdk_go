@@ -19,16 +19,16 @@ type ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType string
 
 // List of tools_app_management_bp_share_cancel_v2_data_error_list_all_account_account_type
 const (
-	BP_ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType   ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType = "BP"
-	STAR_ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType = "STAR"
 	AD_ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType   ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType = "AD"
+	STAR_ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType = "STAR"
+	BP_ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType   ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType = "BP"
 )
 
 // All allowed values of ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType enum
 var AllowedToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountTypeEnumValues = []ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType{
-	"BP",
-	"STAR",
 	"AD",
+	"STAR",
+	"BP",
 }
 
 // NewToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountTypeFromValue returns a pointer to a valid ToolsAppManagementBpShareCancelV2DataErrorListAllAccountAccountType

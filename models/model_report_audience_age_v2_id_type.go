@@ -19,16 +19,16 @@ type ReportAudienceAgeV2IdType string
 
 // List of report_audience_age_v2_id_type
 const (
-	AUDIENCE_STAT_ID_TYPE_CAMPAIGN_ReportAudienceAgeV2IdType   ReportAudienceAgeV2IdType = "AUDIENCE_STAT_ID_TYPE_CAMPAIGN"
 	AUDIENCE_STAT_ID_TYPE_ADVERTISER_ReportAudienceAgeV2IdType ReportAudienceAgeV2IdType = "AUDIENCE_STAT_ID_TYPE_ADVERTISER"
 	AUDIENCE_STAT_ID_TYPE_AD_ReportAudienceAgeV2IdType         ReportAudienceAgeV2IdType = "AUDIENCE_STAT_ID_TYPE_AD"
+	AUDIENCE_STAT_ID_TYPE_CAMPAIGN_ReportAudienceAgeV2IdType   ReportAudienceAgeV2IdType = "AUDIENCE_STAT_ID_TYPE_CAMPAIGN"
 )
 
 // All allowed values of ReportAudienceAgeV2IdType enum
 var AllowedReportAudienceAgeV2IdTypeEnumValues = []ReportAudienceAgeV2IdType{
-	"AUDIENCE_STAT_ID_TYPE_CAMPAIGN",
 	"AUDIENCE_STAT_ID_TYPE_ADVERTISER",
 	"AUDIENCE_STAT_ID_TYPE_AD",
+	"AUDIENCE_STAT_ID_TYPE_CAMPAIGN",
 }
 
 // NewReportAudienceAgeV2IdTypeFromValue returns a pointer to a valid ReportAudienceAgeV2IdType

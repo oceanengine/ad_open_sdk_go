@@ -19,14 +19,14 @@ type AdGetV2DataAudienceDpaRtaSwitch string
 
 // List of ad_get_v2_data_audience_dpa_rta_switch
 const (
-	OFF_AdGetV2DataAudienceDpaRtaSwitch AdGetV2DataAudienceDpaRtaSwitch = "OFF"
 	ON_AdGetV2DataAudienceDpaRtaSwitch  AdGetV2DataAudienceDpaRtaSwitch = "ON"
+	OFF_AdGetV2DataAudienceDpaRtaSwitch AdGetV2DataAudienceDpaRtaSwitch = "OFF"
 )
 
 // All allowed values of AdGetV2DataAudienceDpaRtaSwitch enum
 var AllowedAdGetV2DataAudienceDpaRtaSwitchEnumValues = []AdGetV2DataAudienceDpaRtaSwitch{
-	"OFF",
 	"ON",
+	"OFF",
 }
 
 // NewAdGetV2DataAudienceDpaRtaSwitchFromValue returns a pointer to a valid AdGetV2DataAudienceDpaRtaSwitch

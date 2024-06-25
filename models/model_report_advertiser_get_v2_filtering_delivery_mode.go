@@ -19,14 +19,14 @@ type ReportAdvertiserGetV2FilteringDeliveryMode string
 
 // List of report_advertiser_get_v2_filtering_delivery_mode
 const (
-	STANDARD_ReportAdvertiserGetV2FilteringDeliveryMode   ReportAdvertiserGetV2FilteringDeliveryMode = "STANDARD"
 	ADLAB_FREE_ReportAdvertiserGetV2FilteringDeliveryMode ReportAdvertiserGetV2FilteringDeliveryMode = "ADLAB_FREE"
+	STANDARD_ReportAdvertiserGetV2FilteringDeliveryMode   ReportAdvertiserGetV2FilteringDeliveryMode = "STANDARD"
 )
 
 // All allowed values of ReportAdvertiserGetV2FilteringDeliveryMode enum
 var AllowedReportAdvertiserGetV2FilteringDeliveryModeEnumValues = []ReportAdvertiserGetV2FilteringDeliveryMode{
-	"STANDARD",
 	"ADLAB_FREE",
+	"STANDARD",
 }
 
 // NewReportAdvertiserGetV2FilteringDeliveryModeFromValue returns a pointer to a valid ReportAdvertiserGetV2FilteringDeliveryMode

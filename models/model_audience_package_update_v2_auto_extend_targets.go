@@ -19,22 +19,22 @@ type AudiencePackageUpdateV2AutoExtendTargets string
 
 // List of audience_package_update_v2_auto_extend_targets
 const (
-	REGION_AudiencePackageUpdateV2AutoExtendTargets          AudiencePackageUpdateV2AutoExtendTargets = "REGION"
-	INTEREST_TAG_AudiencePackageUpdateV2AutoExtendTargets    AudiencePackageUpdateV2AutoExtendTargets = "INTEREST_TAG"
-	AD_TAG_AudiencePackageUpdateV2AutoExtendTargets          AudiencePackageUpdateV2AutoExtendTargets = "AD_TAG"
 	GENDER_AudiencePackageUpdateV2AutoExtendTargets          AudiencePackageUpdateV2AutoExtendTargets = "GENDER"
-	CUSTOM_AUDIENCE_AudiencePackageUpdateV2AutoExtendTargets AudiencePackageUpdateV2AutoExtendTargets = "CUSTOM_AUDIENCE"
+	REGION_AudiencePackageUpdateV2AutoExtendTargets          AudiencePackageUpdateV2AutoExtendTargets = "REGION"
 	AGE_AudiencePackageUpdateV2AutoExtendTargets             AudiencePackageUpdateV2AutoExtendTargets = "AGE"
+	CUSTOM_AUDIENCE_AudiencePackageUpdateV2AutoExtendTargets AudiencePackageUpdateV2AutoExtendTargets = "CUSTOM_AUDIENCE"
+	AD_TAG_AudiencePackageUpdateV2AutoExtendTargets          AudiencePackageUpdateV2AutoExtendTargets = "AD_TAG"
+	INTEREST_TAG_AudiencePackageUpdateV2AutoExtendTargets    AudiencePackageUpdateV2AutoExtendTargets = "INTEREST_TAG"
 )
 
 // All allowed values of AudiencePackageUpdateV2AutoExtendTargets enum
 var AllowedAudiencePackageUpdateV2AutoExtendTargetsEnumValues = []AudiencePackageUpdateV2AutoExtendTargets{
-	"REGION",
-	"INTEREST_TAG",
-	"AD_TAG",
 	"GENDER",
-	"CUSTOM_AUDIENCE",
+	"REGION",
 	"AGE",
+	"CUSTOM_AUDIENCE",
+	"AD_TAG",
+	"INTEREST_TAG",
 }
 
 // NewAudiencePackageUpdateV2AutoExtendTargetsFromValue returns a pointer to a valid AudiencePackageUpdateV2AutoExtendTargets

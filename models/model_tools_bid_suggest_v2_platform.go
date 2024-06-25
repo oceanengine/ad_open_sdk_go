@@ -19,22 +19,22 @@ type ToolsBidSuggestV2Platform string
 
 // List of tools_bid_suggest_v2_platform
 const (
-	ANDROID_ToolsBidSuggestV2Platform ToolsBidSuggestV2Platform = "ANDROID"
-	NONE_ToolsBidSuggestV2Platform    ToolsBidSuggestV2Platform = "NONE"
 	PC_ToolsBidSuggestV2Platform      ToolsBidSuggestV2Platform = "PC"
-	IOS_ToolsBidSuggestV2Platform     ToolsBidSuggestV2Platform = "IOS"
 	IPAD_ToolsBidSuggestV2Platform    ToolsBidSuggestV2Platform = "IPAD"
 	WAP_ToolsBidSuggestV2Platform     ToolsBidSuggestV2Platform = "WAP"
+	IOS_ToolsBidSuggestV2Platform     ToolsBidSuggestV2Platform = "IOS"
+	ANDROID_ToolsBidSuggestV2Platform ToolsBidSuggestV2Platform = "ANDROID"
+	NONE_ToolsBidSuggestV2Platform    ToolsBidSuggestV2Platform = "NONE"
 )
 
 // All allowed values of ToolsBidSuggestV2Platform enum
 var AllowedToolsBidSuggestV2PlatformEnumValues = []ToolsBidSuggestV2Platform{
-	"ANDROID",
-	"NONE",
 	"PC",
-	"IOS",
 	"IPAD",
 	"WAP",
+	"IOS",
+	"ANDROID",
+	"NONE",
 }
 
 // NewToolsBidSuggestV2PlatformFromValue returns a pointer to a valid ToolsBidSuggestV2Platform

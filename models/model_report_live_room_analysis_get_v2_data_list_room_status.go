@@ -19,18 +19,18 @@ type ReportLiveRoomAnalysisGetV2DataListRoomStatus string
 
 // List of report_live_room_analysis_get_v2_data_list_room_status
 const (
-	PAUSE_ReportLiveRoomAnalysisGetV2DataListRoomStatus     ReportLiveRoomAnalysisGetV2DataListRoomStatus = "PAUSE"
-	END_ReportLiveRoomAnalysisGetV2DataListRoomStatus       ReportLiveRoomAnalysisGetV2DataListRoomStatus = "END"
 	LIVING_ReportLiveRoomAnalysisGetV2DataListRoomStatus    ReportLiveRoomAnalysisGetV2DataListRoomStatus = "LIVING"
 	PREPARING_ReportLiveRoomAnalysisGetV2DataListRoomStatus ReportLiveRoomAnalysisGetV2DataListRoomStatus = "PREPARING"
+	PAUSE_ReportLiveRoomAnalysisGetV2DataListRoomStatus     ReportLiveRoomAnalysisGetV2DataListRoomStatus = "PAUSE"
+	END_ReportLiveRoomAnalysisGetV2DataListRoomStatus       ReportLiveRoomAnalysisGetV2DataListRoomStatus = "END"
 )
 
 // All allowed values of ReportLiveRoomAnalysisGetV2DataListRoomStatus enum
 var AllowedReportLiveRoomAnalysisGetV2DataListRoomStatusEnumValues = []ReportLiveRoomAnalysisGetV2DataListRoomStatus{
-	"PAUSE",
-	"END",
 	"LIVING",
 	"PREPARING",
+	"PAUSE",
+	"END",
 }
 
 // NewReportLiveRoomAnalysisGetV2DataListRoomStatusFromValue returns a pointer to a valid ReportLiveRoomAnalysisGetV2DataListRoomStatus

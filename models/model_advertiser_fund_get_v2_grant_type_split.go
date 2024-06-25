@@ -19,14 +19,14 @@ type AdvertiserFundGetV2GrantTypeSplit string
 
 // List of advertiser_fund_get_v2_grant_type_split
 const (
-	OFF_AdvertiserFundGetV2GrantTypeSplit AdvertiserFundGetV2GrantTypeSplit = "OFF"
 	ON_AdvertiserFundGetV2GrantTypeSplit  AdvertiserFundGetV2GrantTypeSplit = "ON"
+	OFF_AdvertiserFundGetV2GrantTypeSplit AdvertiserFundGetV2GrantTypeSplit = "OFF"
 )
 
 // All allowed values of AdvertiserFundGetV2GrantTypeSplit enum
 var AllowedAdvertiserFundGetV2GrantTypeSplitEnumValues = []AdvertiserFundGetV2GrantTypeSplit{
-	"OFF",
 	"ON",
+	"OFF",
 }
 
 // NewAdvertiserFundGetV2GrantTypeSplitFromValue returns a pointer to a valid AdvertiserFundGetV2GrantTypeSplit

@@ -124,8 +124,8 @@ func (a *ToolsEventAssetsGetV2ApiService) getExecute(r *ApiOpenApi2ToolsEventAss
 	if r.advertiserId == nil {
 		return localVarReturnValue, nil, ReportError("advertiserId is required and must be specified")
 	}
-	if *r.advertiserId > 9223372036854775807 {
-		return localVarReturnValue, nil, ReportError("advertiserId must be less than 9223372036854775807")
+	if *r.advertiserId > -9223372036854775616 {
+		return localVarReturnValue, nil, ReportError("advertiserId must be less than -9223372036854775616")
 	}
 	if r.assetType == nil {
 		return localVarReturnValue, nil, ReportError("assetType is required and must be specified")

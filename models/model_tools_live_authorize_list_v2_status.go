@@ -19,17 +19,17 @@ type ToolsLiveAuthorizeListV2Status string
 
 // List of tools_live_authorize_list_v2_status
 const (
-	APPLYING_ToolsLiveAuthorizeListV2Status          ToolsLiveAuthorizeListV2Status = "APPLYING"
 	AUTHORIZE_OVERDUE_ToolsLiveAuthorizeListV2Status ToolsLiveAuthorizeListV2Status = "AUTHORIZE_OVERDUE"
 	AUTHORIZING_ToolsLiveAuthorizeListV2Status       ToolsLiveAuthorizeListV2Status = "AUTHORIZING"
+	APPLYING_ToolsLiveAuthorizeListV2Status          ToolsLiveAuthorizeListV2Status = "APPLYING"
 	APPLY_OVERDUE_ToolsLiveAuthorizeListV2Status     ToolsLiveAuthorizeListV2Status = "APPLY_OVERDUE"
 )
 
 // All allowed values of ToolsLiveAuthorizeListV2Status enum
 var AllowedToolsLiveAuthorizeListV2StatusEnumValues = []ToolsLiveAuthorizeListV2Status{
-	"APPLYING",
 	"AUTHORIZE_OVERDUE",
 	"AUTHORIZING",
+	"APPLYING",
 	"APPLY_OVERDUE",
 }
 

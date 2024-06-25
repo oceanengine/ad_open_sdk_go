@@ -19,15 +19,15 @@ type ToolsBidSuggestV2Carrier string
 
 // List of tools_bid_suggest_v2_carrier
 const (
-	TELCOM_ToolsBidSuggestV2Carrier ToolsBidSuggestV2Carrier = "TELCOM"
 	UNICOM_ToolsBidSuggestV2Carrier ToolsBidSuggestV2Carrier = "UNICOM"
+	TELCOM_ToolsBidSuggestV2Carrier ToolsBidSuggestV2Carrier = "TELCOM"
 	MOBILE_ToolsBidSuggestV2Carrier ToolsBidSuggestV2Carrier = "MOBILE"
 )
 
 // All allowed values of ToolsBidSuggestV2Carrier enum
 var AllowedToolsBidSuggestV2CarrierEnumValues = []ToolsBidSuggestV2Carrier{
-	"TELCOM",
 	"UNICOM",
+	"TELCOM",
 	"MOBILE",
 }
 

@@ -19,23 +19,23 @@ type StarDemandListV2FilteringUniversalOrderStatus string
 
 // List of star_demand_list_v2_filtering_universal_order_status
 const (
-	FINISHED_StarDemandListV2FilteringUniversalOrderStatus      StarDemandListV2FilteringUniversalOrderStatus = "FINISHED"
 	RECEIVEING_StarDemandListV2FilteringUniversalOrderStatus    StarDemandListV2FilteringUniversalOrderStatus = "RECEIVEING"
 	ALL_StarDemandListV2FilteringUniversalOrderStatus           StarDemandListV2FilteringUniversalOrderStatus = "ALL"
-	WAIT_EVALUATE_StarDemandListV2FilteringUniversalOrderStatus StarDemandListV2FilteringUniversalOrderStatus = "WAIT_EVALUATE"
-	ONGOING_StarDemandListV2FilteringUniversalOrderStatus       StarDemandListV2FilteringUniversalOrderStatus = "ONGOING"
+	FINISHED_StarDemandListV2FilteringUniversalOrderStatus      StarDemandListV2FilteringUniversalOrderStatus = "FINISHED"
 	CANCELED_StarDemandListV2FilteringUniversalOrderStatus      StarDemandListV2FilteringUniversalOrderStatus = "CANCELED"
+	ONGOING_StarDemandListV2FilteringUniversalOrderStatus       StarDemandListV2FilteringUniversalOrderStatus = "ONGOING"
+	WAIT_EVALUATE_StarDemandListV2FilteringUniversalOrderStatus StarDemandListV2FilteringUniversalOrderStatus = "WAIT_EVALUATE"
 	WAIT_PAYMENT_StarDemandListV2FilteringUniversalOrderStatus  StarDemandListV2FilteringUniversalOrderStatus = "WAIT_PAYMENT"
 )
 
 // All allowed values of StarDemandListV2FilteringUniversalOrderStatus enum
 var AllowedStarDemandListV2FilteringUniversalOrderStatusEnumValues = []StarDemandListV2FilteringUniversalOrderStatus{
-	"FINISHED",
 	"RECEIVEING",
 	"ALL",
-	"WAIT_EVALUATE",
-	"ONGOING",
+	"FINISHED",
 	"CANCELED",
+	"ONGOING",
+	"WAIT_EVALUATE",
 	"WAIT_PAYMENT",
 }
 

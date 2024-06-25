@@ -19,18 +19,18 @@ type ToolsEstimateAudienceV2RetargetingType string
 
 // List of tools_estimate_audience_v2_retargeting_type
 const (
-	RETARGETING_INCLUDE_ToolsEstimateAudienceV2RetargetingType ToolsEstimateAudienceV2RetargetingType = "RETARGETING_INCLUDE"
-	RETARGETING_NONE_ToolsEstimateAudienceV2RetargetingType    ToolsEstimateAudienceV2RetargetingType = "RETARGETING_NONE"
 	RETARGETING_EXCLUDE_ToolsEstimateAudienceV2RetargetingType ToolsEstimateAudienceV2RetargetingType = "RETARGETING_EXCLUDE"
+	RETARGETING_INCLUDE_ToolsEstimateAudienceV2RetargetingType ToolsEstimateAudienceV2RetargetingType = "RETARGETING_INCLUDE"
 	NONE_ToolsEstimateAudienceV2RetargetingType                ToolsEstimateAudienceV2RetargetingType = "NONE"
+	RETARGETING_NONE_ToolsEstimateAudienceV2RetargetingType    ToolsEstimateAudienceV2RetargetingType = "RETARGETING_NONE"
 )
 
 // All allowed values of ToolsEstimateAudienceV2RetargetingType enum
 var AllowedToolsEstimateAudienceV2RetargetingTypeEnumValues = []ToolsEstimateAudienceV2RetargetingType{
-	"RETARGETING_INCLUDE",
-	"RETARGETING_NONE",
 	"RETARGETING_EXCLUDE",
+	"RETARGETING_INCLUDE",
 	"NONE",
+	"RETARGETING_NONE",
 }
 
 // NewToolsEstimateAudienceV2RetargetingTypeFromValue returns a pointer to a valid ToolsEstimateAudienceV2RetargetingType

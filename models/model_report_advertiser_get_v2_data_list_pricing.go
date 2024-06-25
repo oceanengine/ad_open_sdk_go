@@ -19,24 +19,24 @@ type ReportAdvertiserGetV2DataListPricing string
 
 // List of report_advertiser_get_v2_data_list_pricing
 const (
-	PRICING_CPA_ReportAdvertiserGetV2DataListPricing  ReportAdvertiserGetV2DataListPricing = "PRICING_CPA"
+	PRICING_OCPM_ReportAdvertiserGetV2DataListPricing ReportAdvertiserGetV2DataListPricing = "PRICING_OCPM"
 	PRICING_ECPC_ReportAdvertiserGetV2DataListPricing ReportAdvertiserGetV2DataListPricing = "PRICING_ECPC"
 	PRICING_CPV_ReportAdvertiserGetV2DataListPricing  ReportAdvertiserGetV2DataListPricing = "PRICING_CPV"
 	PRICING_CPC_ReportAdvertiserGetV2DataListPricing  ReportAdvertiserGetV2DataListPricing = "PRICING_CPC"
 	PRICING_OCPC_ReportAdvertiserGetV2DataListPricing ReportAdvertiserGetV2DataListPricing = "PRICING_OCPC"
-	PRICING_OCPM_ReportAdvertiserGetV2DataListPricing ReportAdvertiserGetV2DataListPricing = "PRICING_OCPM"
 	PRICING_CPM_ReportAdvertiserGetV2DataListPricing  ReportAdvertiserGetV2DataListPricing = "PRICING_CPM"
+	PRICING_CPA_ReportAdvertiserGetV2DataListPricing  ReportAdvertiserGetV2DataListPricing = "PRICING_CPA"
 )
 
 // All allowed values of ReportAdvertiserGetV2DataListPricing enum
 var AllowedReportAdvertiserGetV2DataListPricingEnumValues = []ReportAdvertiserGetV2DataListPricing{
-	"PRICING_CPA",
+	"PRICING_OCPM",
 	"PRICING_ECPC",
 	"PRICING_CPV",
 	"PRICING_CPC",
 	"PRICING_OCPC",
-	"PRICING_OCPM",
 	"PRICING_CPM",
+	"PRICING_CPA",
 }
 
 // NewReportAdvertiserGetV2DataListPricingFromValue returns a pointer to a valid ReportAdvertiserGetV2DataListPricing

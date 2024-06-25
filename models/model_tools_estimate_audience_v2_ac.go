@@ -19,20 +19,20 @@ type ToolsEstimateAudienceV2Ac string
 
 // List of tools_estimate_audience_v2_ac
 const (
-	WIFI_ToolsEstimateAudienceV2Ac     ToolsEstimateAudienceV2Ac = "WIFI"
-	Enum_5_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "5G"
-	Enum_2_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "2G"
-	Enum_4_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "4G"
 	Enum_3_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "3G"
+	Enum_2_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "2G"
+	Enum_5_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "5G"
+	WIFI_ToolsEstimateAudienceV2Ac     ToolsEstimateAudienceV2Ac = "WIFI"
+	Enum_4_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "4G"
 )
 
 // All allowed values of ToolsEstimateAudienceV2Ac enum
 var AllowedToolsEstimateAudienceV2AcEnumValues = []ToolsEstimateAudienceV2Ac{
-	"WIFI",
-	"5G",
-	"2G",
-	"4G",
 	"3G",
+	"2G",
+	"5G",
+	"WIFI",
+	"4G",
 }
 
 // NewToolsEstimateAudienceV2AcFromValue returns a pointer to a valid ToolsEstimateAudienceV2Ac

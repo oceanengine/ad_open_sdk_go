@@ -19,14 +19,14 @@ type DpaVideoGetV2DataListVideoInfoStatus string
 
 // List of dpa_video_get_v2_data_list_video_info_status
 const (
-	AVAILABLE_DpaVideoGetV2DataListVideoInfoStatus   DpaVideoGetV2DataListVideoInfoStatus = "AVAILABLE"
 	UNAVAILABLE_DpaVideoGetV2DataListVideoInfoStatus DpaVideoGetV2DataListVideoInfoStatus = "UNAVAILABLE"
+	AVAILABLE_DpaVideoGetV2DataListVideoInfoStatus   DpaVideoGetV2DataListVideoInfoStatus = "AVAILABLE"
 )
 
 // All allowed values of DpaVideoGetV2DataListVideoInfoStatus enum
 var AllowedDpaVideoGetV2DataListVideoInfoStatusEnumValues = []DpaVideoGetV2DataListVideoInfoStatus{
-	"AVAILABLE",
 	"UNAVAILABLE",
+	"AVAILABLE",
 }
 
 // NewDpaVideoGetV2DataListVideoInfoStatusFromValue returns a pointer to a valid DpaVideoGetV2DataListVideoInfoStatus

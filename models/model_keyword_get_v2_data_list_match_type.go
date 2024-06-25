@@ -19,15 +19,15 @@ type KeywordGetV2DataListMatchType string
 
 // List of keyword_get_v2_data_list_match_type
 const (
-	EXTENSIVE_KeywordGetV2DataListMatchType KeywordGetV2DataListMatchType = "EXTENSIVE"
 	PHRASE_KeywordGetV2DataListMatchType    KeywordGetV2DataListMatchType = "PHRASE"
+	EXTENSIVE_KeywordGetV2DataListMatchType KeywordGetV2DataListMatchType = "EXTENSIVE"
 	PRECISION_KeywordGetV2DataListMatchType KeywordGetV2DataListMatchType = "PRECISION"
 )
 
 // All allowed values of KeywordGetV2DataListMatchType enum
 var AllowedKeywordGetV2DataListMatchTypeEnumValues = []KeywordGetV2DataListMatchType{
-	"EXTENSIVE",
 	"PHRASE",
+	"EXTENSIVE",
 	"PRECISION",
 }
 

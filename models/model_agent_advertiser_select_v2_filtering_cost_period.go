@@ -21,18 +21,18 @@ type AgentAdvertiserSelectV2FilteringCostPeriod string
 const (
 	LAST_30_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_30_DAYS"
 	YESTERDAY_AgentAdvertiserSelectV2FilteringCostPeriod    AgentAdvertiserSelectV2FilteringCostPeriod = "YESTERDAY"
-	LAST_7_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod  AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_7_DAYS"
-	LAST_15_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_15_DAYS"
 	TODAY_AgentAdvertiserSelectV2FilteringCostPeriod        AgentAdvertiserSelectV2FilteringCostPeriod = "TODAY"
+	LAST_15_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_15_DAYS"
+	LAST_7_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod  AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_7_DAYS"
 )
 
 // All allowed values of AgentAdvertiserSelectV2FilteringCostPeriod enum
 var AllowedAgentAdvertiserSelectV2FilteringCostPeriodEnumValues = []AgentAdvertiserSelectV2FilteringCostPeriod{
 	"LAST_30_DAYS",
 	"YESTERDAY",
-	"LAST_7_DAYS",
-	"LAST_15_DAYS",
 	"TODAY",
+	"LAST_15_DAYS",
+	"LAST_7_DAYS",
 }
 
 // NewAgentAdvertiserSelectV2FilteringCostPeriodFromValue returns a pointer to a valid AgentAdvertiserSelectV2FilteringCostPeriod

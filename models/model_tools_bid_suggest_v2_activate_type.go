@@ -21,16 +21,16 @@ type ToolsBidSuggestV2ActivateType string
 const (
 	UNLIMITED_ToolsBidSuggestV2ActivateType               ToolsBidSuggestV2ActivateType = "UNLIMITED"
 	THREE_MONTH_EAILIER_ToolsBidSuggestV2ActivateType     ToolsBidSuggestV2ActivateType = "THREE_MONTH_EAILIER"
-	ONE_MONTH_2_THREE_MONTH_ToolsBidSuggestV2ActivateType ToolsBidSuggestV2ActivateType = "ONE_MONTH_2_THREE_MONTH"
 	WITH_IN_A_MONTH_ToolsBidSuggestV2ActivateType         ToolsBidSuggestV2ActivateType = "WITH_IN_A_MONTH"
+	ONE_MONTH_2_THREE_MONTH_ToolsBidSuggestV2ActivateType ToolsBidSuggestV2ActivateType = "ONE_MONTH_2_THREE_MONTH"
 )
 
 // All allowed values of ToolsBidSuggestV2ActivateType enum
 var AllowedToolsBidSuggestV2ActivateTypeEnumValues = []ToolsBidSuggestV2ActivateType{
 	"UNLIMITED",
 	"THREE_MONTH_EAILIER",
-	"ONE_MONTH_2_THREE_MONTH",
 	"WITH_IN_A_MONTH",
+	"ONE_MONTH_2_THREE_MONTH",
 }
 
 // NewToolsBidSuggestV2ActivateTypeFromValue returns a pointer to a valid ToolsBidSuggestV2ActivateType

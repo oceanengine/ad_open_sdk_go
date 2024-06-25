@@ -19,19 +19,19 @@ type KeywordUpdateV2V2DataErrorListBidType string
 
 // List of keyword_update_v2_v2_data_error_list_bid_type
 const (
-	SUGGEST_KeywordUpdateV2V2DataErrorListBidType        KeywordUpdateV2V2DataErrorListBidType = "SUGGEST"
-	WITH_AD_KeywordUpdateV2V2DataErrorListBidType        KeywordUpdateV2V2DataErrorListBidType = "WITH_AD"
 	CUSTOM_KeywordUpdateV2V2DataErrorListBidType         KeywordUpdateV2V2DataErrorListBidType = "CUSTOM"
+	SUGGEST_KeywordUpdateV2V2DataErrorListBidType        KeywordUpdateV2V2DataErrorListBidType = "SUGGEST"
 	BRAND_AD_KeywordUpdateV2V2DataErrorListBidType       KeywordUpdateV2V2DataErrorListBidType = "BRAND_AD"
+	WITH_AD_KeywordUpdateV2V2DataErrorListBidType        KeywordUpdateV2V2DataErrorListBidType = "WITH_AD"
 	FEED_TO_SEARCH_KeywordUpdateV2V2DataErrorListBidType KeywordUpdateV2V2DataErrorListBidType = "FEED_TO_SEARCH"
 )
 
 // All allowed values of KeywordUpdateV2V2DataErrorListBidType enum
 var AllowedKeywordUpdateV2V2DataErrorListBidTypeEnumValues = []KeywordUpdateV2V2DataErrorListBidType{
-	"SUGGEST",
-	"WITH_AD",
 	"CUSTOM",
+	"SUGGEST",
 	"BRAND_AD",
+	"WITH_AD",
 	"FEED_TO_SEARCH",
 }
 

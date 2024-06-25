@@ -19,24 +19,24 @@ type ReportAdGetV2DataListPricing string
 
 // List of report_ad_get_v2_data_list_pricing
 const (
-	PRICING_CPA_ReportAdGetV2DataListPricing  ReportAdGetV2DataListPricing = "PRICING_CPA"
+	PRICING_OCPM_ReportAdGetV2DataListPricing ReportAdGetV2DataListPricing = "PRICING_OCPM"
 	PRICING_ECPC_ReportAdGetV2DataListPricing ReportAdGetV2DataListPricing = "PRICING_ECPC"
 	PRICING_CPV_ReportAdGetV2DataListPricing  ReportAdGetV2DataListPricing = "PRICING_CPV"
 	PRICING_CPC_ReportAdGetV2DataListPricing  ReportAdGetV2DataListPricing = "PRICING_CPC"
 	PRICING_OCPC_ReportAdGetV2DataListPricing ReportAdGetV2DataListPricing = "PRICING_OCPC"
-	PRICING_OCPM_ReportAdGetV2DataListPricing ReportAdGetV2DataListPricing = "PRICING_OCPM"
 	PRICING_CPM_ReportAdGetV2DataListPricing  ReportAdGetV2DataListPricing = "PRICING_CPM"
+	PRICING_CPA_ReportAdGetV2DataListPricing  ReportAdGetV2DataListPricing = "PRICING_CPA"
 )
 
 // All allowed values of ReportAdGetV2DataListPricing enum
 var AllowedReportAdGetV2DataListPricingEnumValues = []ReportAdGetV2DataListPricing{
-	"PRICING_CPA",
+	"PRICING_OCPM",
 	"PRICING_ECPC",
 	"PRICING_CPV",
 	"PRICING_CPC",
 	"PRICING_OCPC",
-	"PRICING_OCPM",
 	"PRICING_CPM",
+	"PRICING_CPA",
 }
 
 // NewReportAdGetV2DataListPricingFromValue returns a pointer to a valid ReportAdGetV2DataListPricing

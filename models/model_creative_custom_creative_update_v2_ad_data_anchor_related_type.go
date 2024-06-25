@@ -19,16 +19,16 @@ type CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType string
 
 // List of creative_custom_creative_update_v2_ad_data_anchor_related_type
 const (
+	AUTO_CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType   CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType = "AUTO"
 	OFF_CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType    CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType = "OFF"
 	SELECT_CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType = "SELECT"
-	AUTO_CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType   CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType = "AUTO"
 )
 
 // All allowed values of CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType enum
 var AllowedCreativeCustomCreativeUpdateV2AdDataAnchorRelatedTypeEnumValues = []CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType{
+	"AUTO",
 	"OFF",
 	"SELECT",
-	"AUTO",
 }
 
 // NewCreativeCustomCreativeUpdateV2AdDataAnchorRelatedTypeFromValue returns a pointer to a valid CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType

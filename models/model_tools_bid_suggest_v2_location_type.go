@@ -19,18 +19,18 @@ type ToolsBidSuggestV2LocationType string
 
 // List of tools_bid_suggest_v2_location_type
 const (
-	CURRENT_ToolsBidSuggestV2LocationType ToolsBidSuggestV2LocationType = "CURRENT"
-	HOME_ToolsBidSuggestV2LocationType    ToolsBidSuggestV2LocationType = "HOME"
-	ALL_ToolsBidSuggestV2LocationType     ToolsBidSuggestV2LocationType = "ALL"
 	TRAVEL_ToolsBidSuggestV2LocationType  ToolsBidSuggestV2LocationType = "TRAVEL"
+	HOME_ToolsBidSuggestV2LocationType    ToolsBidSuggestV2LocationType = "HOME"
+	CURRENT_ToolsBidSuggestV2LocationType ToolsBidSuggestV2LocationType = "CURRENT"
+	ALL_ToolsBidSuggestV2LocationType     ToolsBidSuggestV2LocationType = "ALL"
 )
 
 // All allowed values of ToolsBidSuggestV2LocationType enum
 var AllowedToolsBidSuggestV2LocationTypeEnumValues = []ToolsBidSuggestV2LocationType{
-	"CURRENT",
-	"HOME",
-	"ALL",
 	"TRAVEL",
+	"HOME",
+	"CURRENT",
+	"ALL",
 }
 
 // NewToolsBidSuggestV2LocationTypeFromValue returns a pointer to a valid ToolsBidSuggestV2LocationType

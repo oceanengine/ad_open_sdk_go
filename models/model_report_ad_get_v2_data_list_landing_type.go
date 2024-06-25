@@ -19,30 +19,30 @@ type ReportAdGetV2DataListLandingType string
 
 // List of report_ad_get_v2_data_list_landing_type
 const (
-	SHOP_ReportAdGetV2DataListLandingType      ReportAdGetV2DataListLandingType = "SHOP"
 	LINK_ReportAdGetV2DataListLandingType      ReportAdGetV2DataListLandingType = "LINK"
+	GOODS_ReportAdGetV2DataListLandingType     ReportAdGetV2DataListLandingType = "GOODS"
+	AWEME_ReportAdGetV2DataListLandingType     ReportAdGetV2DataListLandingType = "AWEME"
+	DPA_ReportAdGetV2DataListLandingType       ReportAdGetV2DataListLandingType = "DPA"
+	QUICK_APP_ReportAdGetV2DataListLandingType ReportAdGetV2DataListLandingType = "QUICK_APP"
+	SHOP_ReportAdGetV2DataListLandingType      ReportAdGetV2DataListLandingType = "SHOP"
 	APP_ReportAdGetV2DataListLandingType       ReportAdGetV2DataListLandingType = "APP"
 	STORE_ReportAdGetV2DataListLandingType     ReportAdGetV2DataListLandingType = "STORE"
-	QUICK_APP_ReportAdGetV2DataListLandingType ReportAdGetV2DataListLandingType = "QUICK_APP"
-	GOODS_ReportAdGetV2DataListLandingType     ReportAdGetV2DataListLandingType = "GOODS"
-	DPA_ReportAdGetV2DataListLandingType       ReportAdGetV2DataListLandingType = "DPA"
-	LIVE_ReportAdGetV2DataListLandingType      ReportAdGetV2DataListLandingType = "LIVE"
-	AWEME_ReportAdGetV2DataListLandingType     ReportAdGetV2DataListLandingType = "AWEME"
 	ARTICLE_ReportAdGetV2DataListLandingType   ReportAdGetV2DataListLandingType = "ARTICLE"
+	LIVE_ReportAdGetV2DataListLandingType      ReportAdGetV2DataListLandingType = "LIVE"
 )
 
 // All allowed values of ReportAdGetV2DataListLandingType enum
 var AllowedReportAdGetV2DataListLandingTypeEnumValues = []ReportAdGetV2DataListLandingType{
-	"SHOP",
 	"LINK",
+	"GOODS",
+	"AWEME",
+	"DPA",
+	"QUICK_APP",
+	"SHOP",
 	"APP",
 	"STORE",
-	"QUICK_APP",
-	"GOODS",
-	"DPA",
-	"LIVE",
-	"AWEME",
 	"ARTICLE",
+	"LIVE",
 }
 
 // NewReportAdGetV2DataListLandingTypeFromValue returns a pointer to a valid ReportAdGetV2DataListLandingType

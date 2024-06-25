@@ -19,15 +19,15 @@ type KeywordUpdateV2V2DataSuccessListMatchType string
 
 // List of keyword_update_v2_v2_data_success_list_match_type
 const (
-	EXTENSIVE_KeywordUpdateV2V2DataSuccessListMatchType KeywordUpdateV2V2DataSuccessListMatchType = "EXTENSIVE"
 	PHRASE_KeywordUpdateV2V2DataSuccessListMatchType    KeywordUpdateV2V2DataSuccessListMatchType = "PHRASE"
+	EXTENSIVE_KeywordUpdateV2V2DataSuccessListMatchType KeywordUpdateV2V2DataSuccessListMatchType = "EXTENSIVE"
 	PRECISION_KeywordUpdateV2V2DataSuccessListMatchType KeywordUpdateV2V2DataSuccessListMatchType = "PRECISION"
 )
 
 // All allowed values of KeywordUpdateV2V2DataSuccessListMatchType enum
 var AllowedKeywordUpdateV2V2DataSuccessListMatchTypeEnumValues = []KeywordUpdateV2V2DataSuccessListMatchType{
-	"EXTENSIVE",
 	"PHRASE",
+	"EXTENSIVE",
 	"PRECISION",
 }
 

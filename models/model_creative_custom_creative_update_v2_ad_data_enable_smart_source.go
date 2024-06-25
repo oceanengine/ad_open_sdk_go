@@ -19,14 +19,14 @@ type CreativeCustomCreativeUpdateV2AdDataEnableSmartSource string
 
 // List of creative_custom_creative_update_v2_ad_data_enable_smart_source
 const (
-	OFF_CreativeCustomCreativeUpdateV2AdDataEnableSmartSource CreativeCustomCreativeUpdateV2AdDataEnableSmartSource = "OFF"
 	ON_CreativeCustomCreativeUpdateV2AdDataEnableSmartSource  CreativeCustomCreativeUpdateV2AdDataEnableSmartSource = "ON"
+	OFF_CreativeCustomCreativeUpdateV2AdDataEnableSmartSource CreativeCustomCreativeUpdateV2AdDataEnableSmartSource = "OFF"
 )
 
 // All allowed values of CreativeCustomCreativeUpdateV2AdDataEnableSmartSource enum
 var AllowedCreativeCustomCreativeUpdateV2AdDataEnableSmartSourceEnumValues = []CreativeCustomCreativeUpdateV2AdDataEnableSmartSource{
-	"OFF",
 	"ON",
+	"OFF",
 }
 
 // NewCreativeCustomCreativeUpdateV2AdDataEnableSmartSourceFromValue returns a pointer to a valid CreativeCustomCreativeUpdateV2AdDataEnableSmartSource

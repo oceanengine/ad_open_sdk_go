@@ -19,16 +19,16 @@ type ToolsAppManagementBpShareCancelV2DataErrorListShareMode string
 
 // List of tools_app_management_bp_share_cancel_v2_data_error_list_share_mode
 const (
-	COMPANY_ToolsAppManagementBpShareCancelV2DataErrorListShareMode ToolsAppManagementBpShareCancelV2DataErrorListShareMode = "COMPANY"
 	PART_ToolsAppManagementBpShareCancelV2DataErrorListShareMode    ToolsAppManagementBpShareCancelV2DataErrorListShareMode = "PART"
 	ALL_ToolsAppManagementBpShareCancelV2DataErrorListShareMode     ToolsAppManagementBpShareCancelV2DataErrorListShareMode = "ALL"
+	COMPANY_ToolsAppManagementBpShareCancelV2DataErrorListShareMode ToolsAppManagementBpShareCancelV2DataErrorListShareMode = "COMPANY"
 )
 
 // All allowed values of ToolsAppManagementBpShareCancelV2DataErrorListShareMode enum
 var AllowedToolsAppManagementBpShareCancelV2DataErrorListShareModeEnumValues = []ToolsAppManagementBpShareCancelV2DataErrorListShareMode{
-	"COMPANY",
 	"PART",
 	"ALL",
+	"COMPANY",
 }
 
 // NewToolsAppManagementBpShareCancelV2DataErrorListShareModeFromValue returns a pointer to a valid ToolsAppManagementBpShareCancelV2DataErrorListShareMode

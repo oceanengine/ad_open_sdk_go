@@ -19,18 +19,18 @@ type ClueCouponCreateV2CouponResourceListCodeType string
 
 // List of clue_coupon_create_v2_coupon_resource_list_code_type
 const (
-	COMMON_ClueCouponCreateV2CouponResourceListCodeType   ClueCouponCreateV2CouponResourceListCodeType = "COMMON"
-	API_ClueCouponCreateV2CouponResourceListCodeType      ClueCouponCreateV2CouponResourceListCodeType = "API"
-	PLATFORM_ClueCouponCreateV2CouponResourceListCodeType ClueCouponCreateV2CouponResourceListCodeType = "PLATFORM"
 	MERCHANT_ClueCouponCreateV2CouponResourceListCodeType ClueCouponCreateV2CouponResourceListCodeType = "MERCHANT"
+	COMMON_ClueCouponCreateV2CouponResourceListCodeType   ClueCouponCreateV2CouponResourceListCodeType = "COMMON"
+	PLATFORM_ClueCouponCreateV2CouponResourceListCodeType ClueCouponCreateV2CouponResourceListCodeType = "PLATFORM"
+	API_ClueCouponCreateV2CouponResourceListCodeType      ClueCouponCreateV2CouponResourceListCodeType = "API"
 )
 
 // All allowed values of ClueCouponCreateV2CouponResourceListCodeType enum
 var AllowedClueCouponCreateV2CouponResourceListCodeTypeEnumValues = []ClueCouponCreateV2CouponResourceListCodeType{
-	"COMMON",
-	"API",
-	"PLATFORM",
 	"MERCHANT",
+	"COMMON",
+	"PLATFORM",
+	"API",
 }
 
 // NewClueCouponCreateV2CouponResourceListCodeTypeFromValue returns a pointer to a valid ClueCouponCreateV2CouponResourceListCodeType

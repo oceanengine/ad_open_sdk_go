@@ -19,16 +19,16 @@ type ToolsIndustryGetV2Type string
 
 // List of tools_industry_get_v2_type
 const (
+	ADVERTISER_ToolsIndustryGetV2Type    ToolsIndustryGetV2Type = "ADVERTISER"
 	AGENT_ToolsIndustryGetV2Type         ToolsIndustryGetV2Type = "AGENT"
 	QUALIFICATION_ToolsIndustryGetV2Type ToolsIndustryGetV2Type = "QUALIFICATION"
-	ADVERTISER_ToolsIndustryGetV2Type    ToolsIndustryGetV2Type = "ADVERTISER"
 )
 
 // All allowed values of ToolsIndustryGetV2Type enum
 var AllowedToolsIndustryGetV2TypeEnumValues = []ToolsIndustryGetV2Type{
+	"ADVERTISER",
 	"AGENT",
 	"QUALIFICATION",
-	"ADVERTISER",
 }
 
 // NewToolsIndustryGetV2TypeFromValue returns a pointer to a valid ToolsIndustryGetV2Type

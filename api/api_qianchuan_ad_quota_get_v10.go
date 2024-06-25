@@ -92,8 +92,8 @@ func (a *QianchuanAdQuotaGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanA
 	if *r.advertiserId < 1 {
 		return localVarReturnValue, nil, ReportError("advertiserId must be greater than 1")
 	}
-	if *r.advertiserId > 9223372036854775807 {
-		return localVarReturnValue, nil, ReportError("advertiserId must be less than 9223372036854775807")
+	if *r.advertiserId > -9223372036854775616 {
+		return localVarReturnValue, nil, ReportError("advertiserId must be less than -9223372036854775616")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)

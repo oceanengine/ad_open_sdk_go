@@ -49,4 +49,6 @@ type StarDemandCreateAssignV2RequestDemandInfo struct {
 	ProductInformation string `json:"product_information"`
 	// 产品名称(40字内)
 	ProductName string `json:"product_name"`
+	// 星智投预审，0或不传为不开启，1为开启
+	XingzhitouPreAudit *int32 `json:"xingzhitou_pre_audit,omitempty"`
 }

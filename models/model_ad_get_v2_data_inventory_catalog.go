@@ -19,20 +19,20 @@ type AdGetV2DataInventoryCatalog string
 
 // List of ad_get_v2_data_inventory_catalog
 const (
-	SCENE_AdGetV2DataInventoryCatalog           AdGetV2DataInventoryCatalog = "SCENE"
-	UNIVERSAL_SMART_AdGetV2DataInventoryCatalog AdGetV2DataInventoryCatalog = "UNIVERSAL_SMART"
-	MANUAL_AdGetV2DataInventoryCatalog          AdGetV2DataInventoryCatalog = "MANUAL"
 	SMART_AdGetV2DataInventoryCatalog           AdGetV2DataInventoryCatalog = "SMART"
 	UNIVERSAL_AdGetV2DataInventoryCatalog       AdGetV2DataInventoryCatalog = "UNIVERSAL"
+	UNIVERSAL_SMART_AdGetV2DataInventoryCatalog AdGetV2DataInventoryCatalog = "UNIVERSAL_SMART"
+	SCENE_AdGetV2DataInventoryCatalog           AdGetV2DataInventoryCatalog = "SCENE"
+	MANUAL_AdGetV2DataInventoryCatalog          AdGetV2DataInventoryCatalog = "MANUAL"
 )
 
 // All allowed values of AdGetV2DataInventoryCatalog enum
 var AllowedAdGetV2DataInventoryCatalogEnumValues = []AdGetV2DataInventoryCatalog{
-	"SCENE",
-	"UNIVERSAL_SMART",
-	"MANUAL",
 	"SMART",
 	"UNIVERSAL",
+	"UNIVERSAL_SMART",
+	"SCENE",
+	"MANUAL",
 }
 
 // NewAdGetV2DataInventoryCatalogFromValue returns a pointer to a valid AdGetV2DataInventoryCatalog

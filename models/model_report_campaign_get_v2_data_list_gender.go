@@ -19,18 +19,18 @@ type ReportCampaignGetV2DataListGender string
 
 // List of report_campaign_get_v2_data_list_gender
 const (
+	GENDER_FEMALE_ReportCampaignGetV2DataListGender    ReportCampaignGetV2DataListGender = "GENDER_FEMALE"
 	GENDER_UNLIMITED_ReportCampaignGetV2DataListGender ReportCampaignGetV2DataListGender = "GENDER_UNLIMITED"
 	NONE_ReportCampaignGetV2DataListGender             ReportCampaignGetV2DataListGender = "NONE"
 	GENDER_MALE_ReportCampaignGetV2DataListGender      ReportCampaignGetV2DataListGender = "GENDER_MALE"
-	GENDER_FEMALE_ReportCampaignGetV2DataListGender    ReportCampaignGetV2DataListGender = "GENDER_FEMALE"
 )
 
 // All allowed values of ReportCampaignGetV2DataListGender enum
 var AllowedReportCampaignGetV2DataListGenderEnumValues = []ReportCampaignGetV2DataListGender{
+	"GENDER_FEMALE",
 	"GENDER_UNLIMITED",
 	"NONE",
 	"GENDER_MALE",
-	"GENDER_FEMALE",
 }
 
 // NewReportCampaignGetV2DataListGenderFromValue returns a pointer to a valid ReportCampaignGetV2DataListGender

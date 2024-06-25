@@ -19,14 +19,14 @@ type CampaignGetV2DataListCampaignBudgetOptimization string
 
 // List of campaign_get_v2_data_list_campaign_budget_optimization
 const (
-	OFF_CampaignGetV2DataListCampaignBudgetOptimization CampaignGetV2DataListCampaignBudgetOptimization = "OFF"
 	ON_CampaignGetV2DataListCampaignBudgetOptimization  CampaignGetV2DataListCampaignBudgetOptimization = "ON"
+	OFF_CampaignGetV2DataListCampaignBudgetOptimization CampaignGetV2DataListCampaignBudgetOptimization = "OFF"
 )
 
 // All allowed values of CampaignGetV2DataListCampaignBudgetOptimization enum
 var AllowedCampaignGetV2DataListCampaignBudgetOptimizationEnumValues = []CampaignGetV2DataListCampaignBudgetOptimization{
-	"OFF",
 	"ON",
+	"OFF",
 }
 
 // NewCampaignGetV2DataListCampaignBudgetOptimizationFromValue returns a pointer to a valid CampaignGetV2DataListCampaignBudgetOptimization

@@ -19,18 +19,18 @@ type AudiencePackageUpdateV2District string
 
 // List of audience_package_update_v2_district
 const (
+	BUSINESS_DISTRICT_AudiencePackageUpdateV2District AudiencePackageUpdateV2District = "BUSINESS_DISTRICT"
 	REGION_AudiencePackageUpdateV2District            AudiencePackageUpdateV2District = "REGION"
 	NONE_AudiencePackageUpdateV2District              AudiencePackageUpdateV2District = "NONE"
 	OVERSEA_AudiencePackageUpdateV2District           AudiencePackageUpdateV2District = "OVERSEA"
-	BUSINESS_DISTRICT_AudiencePackageUpdateV2District AudiencePackageUpdateV2District = "BUSINESS_DISTRICT"
 )
 
 // All allowed values of AudiencePackageUpdateV2District enum
 var AllowedAudiencePackageUpdateV2DistrictEnumValues = []AudiencePackageUpdateV2District{
+	"BUSINESS_DISTRICT",
 	"REGION",
 	"NONE",
 	"OVERSEA",
-	"BUSINESS_DISTRICT",
 }
 
 // NewAudiencePackageUpdateV2DistrictFromValue returns a pointer to a valid AudiencePackageUpdateV2District

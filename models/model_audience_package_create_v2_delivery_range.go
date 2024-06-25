@@ -19,15 +19,15 @@ type AudiencePackageCreateV2DeliveryRange string
 
 // List of audience_package_create_v2_delivery_range
 const (
-	DEFAULT_AudiencePackageCreateV2DeliveryRange   AudiencePackageCreateV2DeliveryRange = "DEFAULT"
 	UNIVERSAL_AudiencePackageCreateV2DeliveryRange AudiencePackageCreateV2DeliveryRange = "UNIVERSAL"
+	DEFAULT_AudiencePackageCreateV2DeliveryRange   AudiencePackageCreateV2DeliveryRange = "DEFAULT"
 	UNION_AudiencePackageCreateV2DeliveryRange     AudiencePackageCreateV2DeliveryRange = "UNION"
 )
 
 // All allowed values of AudiencePackageCreateV2DeliveryRange enum
 var AllowedAudiencePackageCreateV2DeliveryRangeEnumValues = []AudiencePackageCreateV2DeliveryRange{
-	"DEFAULT",
 	"UNIVERSAL",
+	"DEFAULT",
 	"UNION",
 }
 

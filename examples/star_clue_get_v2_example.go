@@ -23,11 +23,11 @@ import (
 )
 
 type ApiOpenApi2StarClueGetGetRequestExample struct {
+	StarId   int64 `json:"star_id"`
 	DemandId int64 `json:"demand_id,omitempty"`
 	OrderId  int64 `json:"order_id,omitempty"`
-	Page     int64 `json:"page,omitempty"`
-	PageSize int64 `json:"page_size,omitempty"`
-	StarId   int64 `json:"star_id,omitempty"`
+	Page     int32 `json:"page,omitempty"`
+	PageSize int32 `json:"page_size,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/star/clue/get/ Get
@@ -49,7 +49,7 @@ func main() {
 	resp, httpRes, err := apiClient.StarClueGetV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		DemandId(request.DemandId).OrderId(request.OrderId).Page(request.Page).PageSize(request.PageSize).StarId(request.StarId).
+		StarId(request.StarId).DemandId(request.DemandId).OrderId(request.OrderId).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

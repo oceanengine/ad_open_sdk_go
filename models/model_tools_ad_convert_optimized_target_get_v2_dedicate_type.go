@@ -19,14 +19,14 @@ type ToolsAdConvertOptimizedTargetGetV2DedicateType string
 
 // List of tools_ad_convert_optimized_target_get_v2_dedicate_type
 const (
-	DEDICATED_ToolsAdConvertOptimizedTargetGetV2DedicateType ToolsAdConvertOptimizedTargetGetV2DedicateType = "DEDICATED"
 	UNSET_ToolsAdConvertOptimizedTargetGetV2DedicateType     ToolsAdConvertOptimizedTargetGetV2DedicateType = "UNSET"
+	DEDICATED_ToolsAdConvertOptimizedTargetGetV2DedicateType ToolsAdConvertOptimizedTargetGetV2DedicateType = "DEDICATED"
 )
 
 // All allowed values of ToolsAdConvertOptimizedTargetGetV2DedicateType enum
 var AllowedToolsAdConvertOptimizedTargetGetV2DedicateTypeEnumValues = []ToolsAdConvertOptimizedTargetGetV2DedicateType{
-	"DEDICATED",
 	"UNSET",
+	"DEDICATED",
 }
 
 // NewToolsAdConvertOptimizedTargetGetV2DedicateTypeFromValue returns a pointer to a valid ToolsAdConvertOptimizedTargetGetV2DedicateType

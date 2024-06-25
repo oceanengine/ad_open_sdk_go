@@ -19,14 +19,14 @@ type CampaignCreateV2CampaignBudgetOptimization string
 
 // List of campaign_create_v2_campaign_budget_optimization
 const (
-	OFF_CampaignCreateV2CampaignBudgetOptimization CampaignCreateV2CampaignBudgetOptimization = "OFF"
 	ON_CampaignCreateV2CampaignBudgetOptimization  CampaignCreateV2CampaignBudgetOptimization = "ON"
+	OFF_CampaignCreateV2CampaignBudgetOptimization CampaignCreateV2CampaignBudgetOptimization = "OFF"
 )
 
 // All allowed values of CampaignCreateV2CampaignBudgetOptimization enum
 var AllowedCampaignCreateV2CampaignBudgetOptimizationEnumValues = []CampaignCreateV2CampaignBudgetOptimization{
-	"OFF",
 	"ON",
+	"OFF",
 }
 
 // NewCampaignCreateV2CampaignBudgetOptimizationFromValue returns a pointer to a valid CampaignCreateV2CampaignBudgetOptimization

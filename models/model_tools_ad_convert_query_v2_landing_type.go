@@ -19,30 +19,30 @@ type ToolsAdConvertQueryV2LandingType string
 
 // List of tools_ad_convert_query_v2_landing_type
 const (
-	SHOP_ToolsAdConvertQueryV2LandingType      ToolsAdConvertQueryV2LandingType = "SHOP"
 	LINK_ToolsAdConvertQueryV2LandingType      ToolsAdConvertQueryV2LandingType = "LINK"
+	GOODS_ToolsAdConvertQueryV2LandingType     ToolsAdConvertQueryV2LandingType = "GOODS"
+	AWEME_ToolsAdConvertQueryV2LandingType     ToolsAdConvertQueryV2LandingType = "AWEME"
+	DPA_ToolsAdConvertQueryV2LandingType       ToolsAdConvertQueryV2LandingType = "DPA"
+	QUICK_APP_ToolsAdConvertQueryV2LandingType ToolsAdConvertQueryV2LandingType = "QUICK_APP"
+	SHOP_ToolsAdConvertQueryV2LandingType      ToolsAdConvertQueryV2LandingType = "SHOP"
 	APP_ToolsAdConvertQueryV2LandingType       ToolsAdConvertQueryV2LandingType = "APP"
 	STORE_ToolsAdConvertQueryV2LandingType     ToolsAdConvertQueryV2LandingType = "STORE"
-	QUICK_APP_ToolsAdConvertQueryV2LandingType ToolsAdConvertQueryV2LandingType = "QUICK_APP"
-	GOODS_ToolsAdConvertQueryV2LandingType     ToolsAdConvertQueryV2LandingType = "GOODS"
-	DPA_ToolsAdConvertQueryV2LandingType       ToolsAdConvertQueryV2LandingType = "DPA"
-	LIVE_ToolsAdConvertQueryV2LandingType      ToolsAdConvertQueryV2LandingType = "LIVE"
-	AWEME_ToolsAdConvertQueryV2LandingType     ToolsAdConvertQueryV2LandingType = "AWEME"
 	ARTICLE_ToolsAdConvertQueryV2LandingType   ToolsAdConvertQueryV2LandingType = "ARTICLE"
+	LIVE_ToolsAdConvertQueryV2LandingType      ToolsAdConvertQueryV2LandingType = "LIVE"
 )
 
 // All allowed values of ToolsAdConvertQueryV2LandingType enum
 var AllowedToolsAdConvertQueryV2LandingTypeEnumValues = []ToolsAdConvertQueryV2LandingType{
-	"SHOP",
 	"LINK",
+	"GOODS",
+	"AWEME",
+	"DPA",
+	"QUICK_APP",
+	"SHOP",
 	"APP",
 	"STORE",
-	"QUICK_APP",
-	"GOODS",
-	"DPA",
-	"LIVE",
-	"AWEME",
 	"ARTICLE",
+	"LIVE",
 }
 
 // NewToolsAdConvertQueryV2LandingTypeFromValue returns a pointer to a valid ToolsAdConvertQueryV2LandingType

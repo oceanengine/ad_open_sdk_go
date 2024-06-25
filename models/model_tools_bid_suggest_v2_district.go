@@ -20,21 +20,21 @@ type ToolsBidSuggestV2District string
 // List of tools_bid_suggest_v2_district
 const (
 	CITY_ToolsBidSuggestV2District              ToolsBidSuggestV2District = "CITY"
-	REGION_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "REGION"
 	OVERSEA_ToolsBidSuggestV2District           ToolsBidSuggestV2District = "OVERSEA"
-	NONE_ToolsBidSuggestV2District              ToolsBidSuggestV2District = "NONE"
+	REGION_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "REGION"
 	COUNTY_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "COUNTY"
 	BUSINESS_DISTRICT_ToolsBidSuggestV2District ToolsBidSuggestV2District = "BUSINESS_DISTRICT"
+	NONE_ToolsBidSuggestV2District              ToolsBidSuggestV2District = "NONE"
 )
 
 // All allowed values of ToolsBidSuggestV2District enum
 var AllowedToolsBidSuggestV2DistrictEnumValues = []ToolsBidSuggestV2District{
 	"CITY",
-	"REGION",
 	"OVERSEA",
-	"NONE",
+	"REGION",
 	"COUNTY",
 	"BUSINESS_DISTRICT",
+	"NONE",
 }
 
 // NewToolsBidSuggestV2DistrictFromValue returns a pointer to a valid ToolsBidSuggestV2District

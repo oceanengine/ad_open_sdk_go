@@ -19,34 +19,34 @@ type ToolsBidSuggestV2AwemeFanBehaviors string
 
 // List of tools_bid_suggest_v2_aweme_fan_behaviors
 const (
-	LIVE_EXCEPTIONAL_ToolsBidSuggestV2AwemeFanBehaviors     ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_EXCEPTIONAL"
-	LIVE_GOODS_ORDER_ToolsBidSuggestV2AwemeFanBehaviors     ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_GOODS_ORDER"
-	LIKED_USER_ToolsBidSuggestV2AwemeFanBehaviors           ToolsBidSuggestV2AwemeFanBehaviors = "LIKED_USER"
-	SHARED_USER_ToolsBidSuggestV2AwemeFanBehaviors          ToolsBidSuggestV2AwemeFanBehaviors = "SHARED_USER"
-	LIVE_EFFECTIVE_WATCH_ToolsBidSuggestV2AwemeFanBehaviors ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_EFFECTIVE_WATCH"
-	GOODS_CARTS_CLICK_ToolsBidSuggestV2AwemeFanBehaviors    ToolsBidSuggestV2AwemeFanBehaviors = "GOODS_CARTS_CLICK"
+	GOODS_CARTS_ORDER_ToolsBidSuggestV2AwemeFanBehaviors    ToolsBidSuggestV2AwemeFanBehaviors = "GOODS_CARTS_ORDER"
 	FOLLOWED_USER_ToolsBidSuggestV2AwemeFanBehaviors        ToolsBidSuggestV2AwemeFanBehaviors = "FOLLOWED_USER"
 	COMMENTED_USER_ToolsBidSuggestV2AwemeFanBehaviors       ToolsBidSuggestV2AwemeFanBehaviors = "COMMENTED_USER"
+	SHARED_USER_ToolsBidSuggestV2AwemeFanBehaviors          ToolsBidSuggestV2AwemeFanBehaviors = "SHARED_USER"
+	LIKED_USER_ToolsBidSuggestV2AwemeFanBehaviors           ToolsBidSuggestV2AwemeFanBehaviors = "LIKED_USER"
 	LIVE_GOODS_CLICK_ToolsBidSuggestV2AwemeFanBehaviors     ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_GOODS_CLICK"
-	LIVE_COMMENT_ToolsBidSuggestV2AwemeFanBehaviors         ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_COMMENT"
-	GOODS_CARTS_ORDER_ToolsBidSuggestV2AwemeFanBehaviors    ToolsBidSuggestV2AwemeFanBehaviors = "GOODS_CARTS_ORDER"
+	GOODS_CARTS_CLICK_ToolsBidSuggestV2AwemeFanBehaviors    ToolsBidSuggestV2AwemeFanBehaviors = "GOODS_CARTS_CLICK"
 	LIVE_WATCH_ToolsBidSuggestV2AwemeFanBehaviors           ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_WATCH"
+	LIVE_EXCEPTIONAL_ToolsBidSuggestV2AwemeFanBehaviors     ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_EXCEPTIONAL"
+	LIVE_EFFECTIVE_WATCH_ToolsBidSuggestV2AwemeFanBehaviors ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_EFFECTIVE_WATCH"
+	LIVE_GOODS_ORDER_ToolsBidSuggestV2AwemeFanBehaviors     ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_GOODS_ORDER"
+	LIVE_COMMENT_ToolsBidSuggestV2AwemeFanBehaviors         ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_COMMENT"
 )
 
 // All allowed values of ToolsBidSuggestV2AwemeFanBehaviors enum
 var AllowedToolsBidSuggestV2AwemeFanBehaviorsEnumValues = []ToolsBidSuggestV2AwemeFanBehaviors{
-	"LIVE_EXCEPTIONAL",
-	"LIVE_GOODS_ORDER",
-	"LIKED_USER",
-	"SHARED_USER",
-	"LIVE_EFFECTIVE_WATCH",
-	"GOODS_CARTS_CLICK",
+	"GOODS_CARTS_ORDER",
 	"FOLLOWED_USER",
 	"COMMENTED_USER",
+	"SHARED_USER",
+	"LIKED_USER",
 	"LIVE_GOODS_CLICK",
-	"LIVE_COMMENT",
-	"GOODS_CARTS_ORDER",
+	"GOODS_CARTS_CLICK",
 	"LIVE_WATCH",
+	"LIVE_EXCEPTIONAL",
+	"LIVE_EFFECTIVE_WATCH",
+	"LIVE_GOODS_ORDER",
+	"LIVE_COMMENT",
 }
 
 // NewToolsBidSuggestV2AwemeFanBehaviorsFromValue returns a pointer to a valid ToolsBidSuggestV2AwemeFanBehaviors

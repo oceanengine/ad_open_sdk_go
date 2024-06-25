@@ -44,7 +44,6 @@ const (
 	AD_CONVERT_TYPE_CLICK_WEBSITE_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction               EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_CLICK_WEBSITE"
 	AD_CONVERT_TYPE_CLUE_CONFIRM_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_CLUE_CONFIRM"
 	AD_CONVERT_TYPE_CLUE_HIGH_INTENTION_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction         EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_CLUE_HIGH_INTENTION"
-	AD_CONVERT_TYPE_CLUE_INTERFLOW_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_CLUE_INTERFLOW"
 	AD_CONVERT_TYPE_CLUE_PAY_SUCCEED_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction            EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_CLUE_PAY_SUCCEED"
 	AD_CONVERT_TYPE_COMMENT_ACTION_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_COMMENT_ACTION"
 	AD_CONVERT_TYPE_COMMODITY_CLICK_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction             EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_COMMODITY_CLICK"
@@ -58,7 +57,6 @@ const (
 	AD_CONVERT_TYPE_DIALBACK_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                    EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_DIALBACK"
 	AD_CONVERT_TYPE_DIALBACK_CONFIRM_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction            EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_DIALBACK_CONFIRM"
 	AD_CONVERT_TYPE_DIALBACK_CONNECT_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction            EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_DIALBACK_CONNECT"
-	AD_CONVERT_TYPE_DOWNLOAD_FINISH_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction             EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_DOWNLOAD_FINISH"
 	AD_CONVERT_TYPE_DOWNLOAD_START_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_DOWNLOAD_START"
 	AD_CONVERT_TYPE_EFFECTIVE_COPY_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_COPY"
 	AD_CONVERT_TYPE_EFFECTIVE_PLAY_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_PLAY"
@@ -87,7 +85,6 @@ const (
 	AD_CONVERT_TYPE_IPU_QUALIFY_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                 EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_IPU_QUALIFY"
 	AD_CONVERT_TYPE_LIKE_ACTION_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                 EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_LIKE_ACTION"
 	AD_CONVERT_TYPE_LINK_ACTION_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                 EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_LINK_ACTION"
-	AD_CONVERT_TYPE_LIVE_APPOINTMENT_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction            EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_LIVE_APPOINTMENT"
 	AD_CONVERT_TYPE_LIVE_CLICK_PRODUCT_ACTION_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction   EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_LIVE_CLICK_PRODUCT_ACTION"
 	AD_CONVERT_TYPE_LIVE_COMMENT_ACTION_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction         EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_LIVE_COMMENT_ACTION"
 	AD_CONVERT_TYPE_LIVE_COMPONENT_CLICK_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction        EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_LIVE_COMPONENT_CLICK"
@@ -164,7 +161,6 @@ const (
 	AD_CONVERT_TYPE_SHOPPING_CART_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction               EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_SHOPPING_CART"
 	AD_CONVERT_TYPE_SHOW_OFF_NUM_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_SHOW_OFF_NUM"
 	AD_CONVERT_TYPE_STAY_TIME_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                   EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_STAY_TIME"
-	AD_CONVERT_TYPE_SUBMIT_CERTIFICATION_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction        EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_SUBMIT_CERTIFICATION"
 	AD_CONVERT_TYPE_SUCCESSORDER_ACTION_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction         EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_SUCCESSORDER_ACTION"
 	AD_CONVERT_TYPE_UG_ROI_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                      EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_UG_ROI"
 	AD_CONVERT_TYPE_UPDATE_LEVEL_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_UPDATE_LEVEL"
@@ -207,7 +203,6 @@ var AllowedEventManagerOptimizedGoalGetV2V30DataGoalsExternalActionEnumValues = 
 	"AD_CONVERT_TYPE_CLICK_WEBSITE",
 	"AD_CONVERT_TYPE_CLUE_CONFIRM",
 	"AD_CONVERT_TYPE_CLUE_HIGH_INTENTION",
-	"AD_CONVERT_TYPE_CLUE_INTERFLOW",
 	"AD_CONVERT_TYPE_CLUE_PAY_SUCCEED",
 	"AD_CONVERT_TYPE_COMMENT_ACTION",
 	"AD_CONVERT_TYPE_COMMODITY_CLICK",
@@ -221,7 +216,6 @@ var AllowedEventManagerOptimizedGoalGetV2V30DataGoalsExternalActionEnumValues = 
 	"AD_CONVERT_TYPE_DIALBACK",
 	"AD_CONVERT_TYPE_DIALBACK_CONFIRM",
 	"AD_CONVERT_TYPE_DIALBACK_CONNECT",
-	"AD_CONVERT_TYPE_DOWNLOAD_FINISH",
 	"AD_CONVERT_TYPE_DOWNLOAD_START",
 	"AD_CONVERT_TYPE_EFFECTIVE_COPY",
 	"AD_CONVERT_TYPE_EFFECTIVE_PLAY",
@@ -250,7 +244,6 @@ var AllowedEventManagerOptimizedGoalGetV2V30DataGoalsExternalActionEnumValues = 
 	"AD_CONVERT_TYPE_IPU_QUALIFY",
 	"AD_CONVERT_TYPE_LIKE_ACTION",
 	"AD_CONVERT_TYPE_LINK_ACTION",
-	"AD_CONVERT_TYPE_LIVE_APPOINTMENT",
 	"AD_CONVERT_TYPE_LIVE_CLICK_PRODUCT_ACTION",
 	"AD_CONVERT_TYPE_LIVE_COMMENT_ACTION",
 	"AD_CONVERT_TYPE_LIVE_COMPONENT_CLICK",
@@ -327,7 +320,6 @@ var AllowedEventManagerOptimizedGoalGetV2V30DataGoalsExternalActionEnumValues = 
 	"AD_CONVERT_TYPE_SHOPPING_CART",
 	"AD_CONVERT_TYPE_SHOW_OFF_NUM",
 	"AD_CONVERT_TYPE_STAY_TIME",
-	"AD_CONVERT_TYPE_SUBMIT_CERTIFICATION",
 	"AD_CONVERT_TYPE_SUCCESSORDER_ACTION",
 	"AD_CONVERT_TYPE_UG_ROI",
 	"AD_CONVERT_TYPE_UPDATE_LEVEL",

@@ -19,66 +19,66 @@ type AdGetV2DataAudienceDeviceBrand string
 
 // List of ad_get_v2_data_audience_device_brand
 const (
-	NOKIA_AdGetV2DataAudienceDeviceBrand       AdGetV2DataAudienceDeviceBrand = "NOKIA"
-	TCL_AdGetV2DataAudienceDeviceBrand         AdGetV2DataAudienceDeviceBrand = "TCL"
-	HTC_AdGetV2DataAudienceDeviceBrand         AdGetV2DataAudienceDeviceBrand = "HTC"
-	VIVO_AdGetV2DataAudienceDeviceBrand        AdGetV2DataAudienceDeviceBrand = "VIVO"
-	HISENSE_AdGetV2DataAudienceDeviceBrand     AdGetV2DataAudienceDeviceBrand = "HISENSE"
-	APPLE_AdGetV2DataAudienceDeviceBrand       AdGetV2DataAudienceDeviceBrand = "APPLE"
-	OPPO_AdGetV2DataAudienceDeviceBrand        AdGetV2DataAudienceDeviceBrand = "OPPO"
-	LENOVO_AdGetV2DataAudienceDeviceBrand      AdGetV2DataAudienceDeviceBrand = "LENOVO"
-	XIAOMI_AdGetV2DataAudienceDeviceBrand      AdGetV2DataAudienceDeviceBrand = "XIAOMI"
-	MOTO_AdGetV2DataAudienceDeviceBrand        AdGetV2DataAudienceDeviceBrand = "MOTO"
-	PEPPER_AdGetV2DataAudienceDeviceBrand      AdGetV2DataAudienceDeviceBrand = "PEPPER"
-	MEIZU_AdGetV2DataAudienceDeviceBrand       AdGetV2DataAudienceDeviceBrand = "MEIZU"
-	ONEPLUS_AdGetV2DataAudienceDeviceBrand     AdGetV2DataAudienceDeviceBrand = "ONEPLUS"
-	HONOR_AdGetV2DataAudienceDeviceBrand       AdGetV2DataAudienceDeviceBrand = "HONOR"
-	GIONEE_AdGetV2DataAudienceDeviceBrand      AdGetV2DataAudienceDeviceBrand = "GIONEE"
-	CHINAMOBILE_AdGetV2DataAudienceDeviceBrand AdGetV2DataAudienceDeviceBrand = "CHINAMOBILE"
 	SAMSUNG_AdGetV2DataAudienceDeviceBrand     AdGetV2DataAudienceDeviceBrand = "SAMSUNG"
+	NUBIA_AdGetV2DataAudienceDeviceBrand       AdGetV2DataAudienceDeviceBrand = "NUBIA"
+	LETV_AdGetV2DataAudienceDeviceBrand        AdGetV2DataAudienceDeviceBrand = "LETV"
+	HONOR_AdGetV2DataAudienceDeviceBrand       AdGetV2DataAudienceDeviceBrand = "HONOR"
+	LG_AdGetV2DataAudienceDeviceBrand          AdGetV2DataAudienceDeviceBrand = "LG"
+	APPLE_AdGetV2DataAudienceDeviceBrand       AdGetV2DataAudienceDeviceBrand = "APPLE"
+	PEPPER_AdGetV2DataAudienceDeviceBrand      AdGetV2DataAudienceDeviceBrand = "PEPPER"
+	CHINAMOBILE_AdGetV2DataAudienceDeviceBrand AdGetV2DataAudienceDeviceBrand = "CHINAMOBILE"
+	MEIZU_AdGetV2DataAudienceDeviceBrand       AdGetV2DataAudienceDeviceBrand = "MEIZU"
+	TCL_AdGetV2DataAudienceDeviceBrand         AdGetV2DataAudienceDeviceBrand = "TCL"
+	ZTE_AdGetV2DataAudienceDeviceBrand         AdGetV2DataAudienceDeviceBrand = "ZTE"
+	NOKIA_AdGetV2DataAudienceDeviceBrand       AdGetV2DataAudienceDeviceBrand = "NOKIA"
+	GOOGLE_AdGetV2DataAudienceDeviceBrand      AdGetV2DataAudienceDeviceBrand = "GOOGLE"
+	GIONEE_AdGetV2DataAudienceDeviceBrand      AdGetV2DataAudienceDeviceBrand = "GIONEE"
+	SONY_AdGetV2DataAudienceDeviceBrand        AdGetV2DataAudienceDeviceBrand = "SONY"
+	HUAWEI_AdGetV2DataAudienceDeviceBrand      AdGetV2DataAudienceDeviceBrand = "HUAWEI"
+	SMARTISAN_AdGetV2DataAudienceDeviceBrand   AdGetV2DataAudienceDeviceBrand = "SMARTISAN"
 	Enum_360_AdGetV2DataAudienceDeviceBrand    AdGetV2DataAudienceDeviceBrand = "360"
 	COOLPAD_AdGetV2DataAudienceDeviceBrand     AdGetV2DataAudienceDeviceBrand = "COOLPAD"
-	GOOGLE_AdGetV2DataAudienceDeviceBrand      AdGetV2DataAudienceDeviceBrand = "GOOGLE"
-	LETV_AdGetV2DataAudienceDeviceBrand        AdGetV2DataAudienceDeviceBrand = "LETV"
-	ZTE_AdGetV2DataAudienceDeviceBrand         AdGetV2DataAudienceDeviceBrand = "ZTE"
+	MOTO_AdGetV2DataAudienceDeviceBrand        AdGetV2DataAudienceDeviceBrand = "MOTO"
+	OPPO_AdGetV2DataAudienceDeviceBrand        AdGetV2DataAudienceDeviceBrand = "OPPO"
+	HISENSE_AdGetV2DataAudienceDeviceBrand     AdGetV2DataAudienceDeviceBrand = "HISENSE"
+	LENOVO_AdGetV2DataAudienceDeviceBrand      AdGetV2DataAudienceDeviceBrand = "LENOVO"
+	XIAOMI_AdGetV2DataAudienceDeviceBrand      AdGetV2DataAudienceDeviceBrand = "XIAOMI"
 	QIKU_AdGetV2DataAudienceDeviceBrand        AdGetV2DataAudienceDeviceBrand = "QIKU"
-	HUAWEI_AdGetV2DataAudienceDeviceBrand      AdGetV2DataAudienceDeviceBrand = "HUAWEI"
-	LG_AdGetV2DataAudienceDeviceBrand          AdGetV2DataAudienceDeviceBrand = "LG"
-	SONY_AdGetV2DataAudienceDeviceBrand        AdGetV2DataAudienceDeviceBrand = "SONY"
-	NUBIA_AdGetV2DataAudienceDeviceBrand       AdGetV2DataAudienceDeviceBrand = "NUBIA"
-	SMARTISAN_AdGetV2DataAudienceDeviceBrand   AdGetV2DataAudienceDeviceBrand = "SMARTISAN"
+	HTC_AdGetV2DataAudienceDeviceBrand         AdGetV2DataAudienceDeviceBrand = "HTC"
+	VIVO_AdGetV2DataAudienceDeviceBrand        AdGetV2DataAudienceDeviceBrand = "VIVO"
+	ONEPLUS_AdGetV2DataAudienceDeviceBrand     AdGetV2DataAudienceDeviceBrand = "ONEPLUS"
 )
 
 // All allowed values of AdGetV2DataAudienceDeviceBrand enum
 var AllowedAdGetV2DataAudienceDeviceBrandEnumValues = []AdGetV2DataAudienceDeviceBrand{
-	"NOKIA",
-	"TCL",
-	"HTC",
-	"VIVO",
-	"HISENSE",
-	"APPLE",
-	"OPPO",
-	"LENOVO",
-	"XIAOMI",
-	"MOTO",
-	"PEPPER",
-	"MEIZU",
-	"ONEPLUS",
-	"HONOR",
-	"GIONEE",
-	"CHINAMOBILE",
 	"SAMSUNG",
+	"NUBIA",
+	"LETV",
+	"HONOR",
+	"LG",
+	"APPLE",
+	"PEPPER",
+	"CHINAMOBILE",
+	"MEIZU",
+	"TCL",
+	"ZTE",
+	"NOKIA",
+	"GOOGLE",
+	"GIONEE",
+	"SONY",
+	"HUAWEI",
+	"SMARTISAN",
 	"360",
 	"COOLPAD",
-	"GOOGLE",
-	"LETV",
-	"ZTE",
+	"MOTO",
+	"OPPO",
+	"HISENSE",
+	"LENOVO",
+	"XIAOMI",
 	"QIKU",
-	"HUAWEI",
-	"LG",
-	"SONY",
-	"NUBIA",
-	"SMARTISAN",
+	"HTC",
+	"VIVO",
+	"ONEPLUS",
 }
 
 // NewAdGetV2DataAudienceDeviceBrandFromValue returns a pointer to a valid AdGetV2DataAudienceDeviceBrand

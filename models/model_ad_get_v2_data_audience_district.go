@@ -20,21 +20,21 @@ type AdGetV2DataAudienceDistrict string
 // List of ad_get_v2_data_audience_district
 const (
 	CITY_AdGetV2DataAudienceDistrict              AdGetV2DataAudienceDistrict = "CITY"
-	REGION_AdGetV2DataAudienceDistrict            AdGetV2DataAudienceDistrict = "REGION"
 	OVERSEA_AdGetV2DataAudienceDistrict           AdGetV2DataAudienceDistrict = "OVERSEA"
-	NONE_AdGetV2DataAudienceDistrict              AdGetV2DataAudienceDistrict = "NONE"
+	REGION_AdGetV2DataAudienceDistrict            AdGetV2DataAudienceDistrict = "REGION"
 	COUNTY_AdGetV2DataAudienceDistrict            AdGetV2DataAudienceDistrict = "COUNTY"
 	BUSINESS_DISTRICT_AdGetV2DataAudienceDistrict AdGetV2DataAudienceDistrict = "BUSINESS_DISTRICT"
+	NONE_AdGetV2DataAudienceDistrict              AdGetV2DataAudienceDistrict = "NONE"
 )
 
 // All allowed values of AdGetV2DataAudienceDistrict enum
 var AllowedAdGetV2DataAudienceDistrictEnumValues = []AdGetV2DataAudienceDistrict{
 	"CITY",
-	"REGION",
 	"OVERSEA",
-	"NONE",
+	"REGION",
 	"COUNTY",
 	"BUSINESS_DISTRICT",
+	"NONE",
 }
 
 // NewAdGetV2DataAudienceDistrictFromValue returns a pointer to a valid AdGetV2DataAudienceDistrict

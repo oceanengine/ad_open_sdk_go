@@ -20,15 +20,15 @@ type AdGetV2DataAudienceInterestActionMode string
 // List of ad_get_v2_data_audience_interest_action_mode
 const (
 	UNLIMITED_AdGetV2DataAudienceInterestActionMode AdGetV2DataAudienceInterestActionMode = "UNLIMITED"
-	CUSTOM_AdGetV2DataAudienceInterestActionMode    AdGetV2DataAudienceInterestActionMode = "CUSTOM"
 	RECOMMEND_AdGetV2DataAudienceInterestActionMode AdGetV2DataAudienceInterestActionMode = "RECOMMEND"
+	CUSTOM_AdGetV2DataAudienceInterestActionMode    AdGetV2DataAudienceInterestActionMode = "CUSTOM"
 )
 
 // All allowed values of AdGetV2DataAudienceInterestActionMode enum
 var AllowedAdGetV2DataAudienceInterestActionModeEnumValues = []AdGetV2DataAudienceInterestActionMode{
 	"UNLIMITED",
-	"CUSTOM",
 	"RECOMMEND",
+	"CUSTOM",
 }
 
 // NewAdGetV2DataAudienceInterestActionModeFromValue returns a pointer to a valid AdGetV2DataAudienceInterestActionMode

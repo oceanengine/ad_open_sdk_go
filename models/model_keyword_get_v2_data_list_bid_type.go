@@ -19,19 +19,19 @@ type KeywordGetV2DataListBidType string
 
 // List of keyword_get_v2_data_list_bid_type
 const (
-	SUGGEST_KeywordGetV2DataListBidType        KeywordGetV2DataListBidType = "SUGGEST"
-	WITH_AD_KeywordGetV2DataListBidType        KeywordGetV2DataListBidType = "WITH_AD"
 	CUSTOM_KeywordGetV2DataListBidType         KeywordGetV2DataListBidType = "CUSTOM"
+	SUGGEST_KeywordGetV2DataListBidType        KeywordGetV2DataListBidType = "SUGGEST"
 	BRAND_AD_KeywordGetV2DataListBidType       KeywordGetV2DataListBidType = "BRAND_AD"
+	WITH_AD_KeywordGetV2DataListBidType        KeywordGetV2DataListBidType = "WITH_AD"
 	FEED_TO_SEARCH_KeywordGetV2DataListBidType KeywordGetV2DataListBidType = "FEED_TO_SEARCH"
 )
 
 // All allowed values of KeywordGetV2DataListBidType enum
 var AllowedKeywordGetV2DataListBidTypeEnumValues = []KeywordGetV2DataListBidType{
-	"SUGGEST",
-	"WITH_AD",
 	"CUSTOM",
+	"SUGGEST",
 	"BRAND_AD",
+	"WITH_AD",
 	"FEED_TO_SEARCH",
 }
 

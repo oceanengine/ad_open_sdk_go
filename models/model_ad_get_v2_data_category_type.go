@@ -19,15 +19,15 @@ type AdGetV2DataCategoryType string
 
 // List of ad_get_v2_data_category_type
 const (
-	NONE_AdGetV2DataCategoryType     AdGetV2DataCategoryType = "NONE"
 	CATEGORY_AdGetV2DataCategoryType AdGetV2DataCategoryType = "CATEGORY"
+	NONE_AdGetV2DataCategoryType     AdGetV2DataCategoryType = "NONE"
 	PRODUCT_AdGetV2DataCategoryType  AdGetV2DataCategoryType = "PRODUCT"
 )
 
 // All allowed values of AdGetV2DataCategoryType enum
 var AllowedAdGetV2DataCategoryTypeEnumValues = []AdGetV2DataCategoryType{
-	"NONE",
 	"CATEGORY",
+	"NONE",
 	"PRODUCT",
 }
 

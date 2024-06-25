@@ -20,15 +20,15 @@ type ToolsEstimateAudienceV2InterestActionMode string
 // List of tools_estimate_audience_v2_interest_action_mode
 const (
 	UNLIMITED_ToolsEstimateAudienceV2InterestActionMode ToolsEstimateAudienceV2InterestActionMode = "UNLIMITED"
-	CUSTOM_ToolsEstimateAudienceV2InterestActionMode    ToolsEstimateAudienceV2InterestActionMode = "CUSTOM"
 	RECOMMEND_ToolsEstimateAudienceV2InterestActionMode ToolsEstimateAudienceV2InterestActionMode = "RECOMMEND"
+	CUSTOM_ToolsEstimateAudienceV2InterestActionMode    ToolsEstimateAudienceV2InterestActionMode = "CUSTOM"
 )
 
 // All allowed values of ToolsEstimateAudienceV2InterestActionMode enum
 var AllowedToolsEstimateAudienceV2InterestActionModeEnumValues = []ToolsEstimateAudienceV2InterestActionMode{
 	"UNLIMITED",
-	"CUSTOM",
 	"RECOMMEND",
+	"CUSTOM",
 }
 
 // NewToolsEstimateAudienceV2InterestActionModeFromValue returns a pointer to a valid ToolsEstimateAudienceV2InterestActionMode

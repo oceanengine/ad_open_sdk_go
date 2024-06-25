@@ -20,15 +20,15 @@ type ToolsAdConvertQueryV2DataListExternalActionsSource string
 // List of tools_ad_convert_query_v2_data_list_external_actions_source
 const (
 	SOURCE_CONFIG_ToolsAdConvertQueryV2DataListExternalActionsSource ToolsAdConvertQueryV2DataListExternalActionsSource = "SOURCE_CONFIG"
-	SOURCE_METEOR_ToolsAdConvertQueryV2DataListExternalActionsSource ToolsAdConvertQueryV2DataListExternalActionsSource = "SOURCE_METEOR"
 	SOURCE_TETRIS_ToolsAdConvertQueryV2DataListExternalActionsSource ToolsAdConvertQueryV2DataListExternalActionsSource = "SOURCE_TETRIS"
+	SOURCE_METEOR_ToolsAdConvertQueryV2DataListExternalActionsSource ToolsAdConvertQueryV2DataListExternalActionsSource = "SOURCE_METEOR"
 )
 
 // All allowed values of ToolsAdConvertQueryV2DataListExternalActionsSource enum
 var AllowedToolsAdConvertQueryV2DataListExternalActionsSourceEnumValues = []ToolsAdConvertQueryV2DataListExternalActionsSource{
 	"SOURCE_CONFIG",
-	"SOURCE_METEOR",
 	"SOURCE_TETRIS",
+	"SOURCE_METEOR",
 }
 
 // NewToolsAdConvertQueryV2DataListExternalActionsSourceFromValue returns a pointer to a valid ToolsAdConvertQueryV2DataListExternalActionsSource

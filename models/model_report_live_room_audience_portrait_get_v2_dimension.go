@@ -19,20 +19,20 @@ type ReportLiveRoomAudiencePortraitGetV2Dimension string
 
 // List of report_live_room_audience_portrait_get_v2_dimension
 const (
+	GENDER_ReportLiveRoomAudiencePortraitGetV2Dimension   ReportLiveRoomAudiencePortraitGetV2Dimension = "GENDER"
 	CITY_ReportLiveRoomAudiencePortraitGetV2Dimension     ReportLiveRoomAudiencePortraitGetV2Dimension = "CITY"
 	PLATFORM_ReportLiveRoomAudiencePortraitGetV2Dimension ReportLiveRoomAudiencePortraitGetV2Dimension = "PLATFORM"
-	PROVINCE_ReportLiveRoomAudiencePortraitGetV2Dimension ReportLiveRoomAudiencePortraitGetV2Dimension = "PROVINCE"
-	GENDER_ReportLiveRoomAudiencePortraitGetV2Dimension   ReportLiveRoomAudiencePortraitGetV2Dimension = "GENDER"
 	AGE_ReportLiveRoomAudiencePortraitGetV2Dimension      ReportLiveRoomAudiencePortraitGetV2Dimension = "AGE"
+	PROVINCE_ReportLiveRoomAudiencePortraitGetV2Dimension ReportLiveRoomAudiencePortraitGetV2Dimension = "PROVINCE"
 )
 
 // All allowed values of ReportLiveRoomAudiencePortraitGetV2Dimension enum
 var AllowedReportLiveRoomAudiencePortraitGetV2DimensionEnumValues = []ReportLiveRoomAudiencePortraitGetV2Dimension{
+	"GENDER",
 	"CITY",
 	"PLATFORM",
-	"PROVINCE",
-	"GENDER",
 	"AGE",
+	"PROVINCE",
 }
 
 // NewReportLiveRoomAudiencePortraitGetV2DimensionFromValue returns a pointer to a valid ReportLiveRoomAudiencePortraitGetV2Dimension

@@ -19,20 +19,20 @@ type ToolsBidSuggestV2ActionScene string
 
 // List of tools_bid_suggest_v2_action_scene
 const (
-	SEARCH_ToolsBidSuggestV2ActionScene     ToolsBidSuggestV2ActionScene = "SEARCH"
-	E_COMMERCE_ToolsBidSuggestV2ActionScene ToolsBidSuggestV2ActionScene = "E-COMMERCE"
 	AD_ToolsBidSuggestV2ActionScene         ToolsBidSuggestV2ActionScene = "AD"
-	APP_ToolsBidSuggestV2ActionScene        ToolsBidSuggestV2ActionScene = "APP"
 	NEWS_ToolsBidSuggestV2ActionScene       ToolsBidSuggestV2ActionScene = "NEWS"
+	SEARCH_ToolsBidSuggestV2ActionScene     ToolsBidSuggestV2ActionScene = "SEARCH"
+	APP_ToolsBidSuggestV2ActionScene        ToolsBidSuggestV2ActionScene = "APP"
+	E_COMMERCE_ToolsBidSuggestV2ActionScene ToolsBidSuggestV2ActionScene = "E-COMMERCE"
 )
 
 // All allowed values of ToolsBidSuggestV2ActionScene enum
 var AllowedToolsBidSuggestV2ActionSceneEnumValues = []ToolsBidSuggestV2ActionScene{
-	"SEARCH",
-	"E-COMMERCE",
 	"AD",
-	"APP",
 	"NEWS",
+	"SEARCH",
+	"APP",
+	"E-COMMERCE",
 }
 
 // NewToolsBidSuggestV2ActionSceneFromValue returns a pointer to a valid ToolsBidSuggestV2ActionScene

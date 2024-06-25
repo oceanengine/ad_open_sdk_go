@@ -19,14 +19,14 @@ type CampaignGetV2DataListDedicateType string
 
 // List of campaign_get_v2_data_list_dedicate_type
 const (
-	DEDICATED_CampaignGetV2DataListDedicateType CampaignGetV2DataListDedicateType = "DEDICATED"
 	UNSET_CampaignGetV2DataListDedicateType     CampaignGetV2DataListDedicateType = "UNSET"
+	DEDICATED_CampaignGetV2DataListDedicateType CampaignGetV2DataListDedicateType = "DEDICATED"
 )
 
 // All allowed values of CampaignGetV2DataListDedicateType enum
 var AllowedCampaignGetV2DataListDedicateTypeEnumValues = []CampaignGetV2DataListDedicateType{
-	"DEDICATED",
 	"UNSET",
+	"DEDICATED",
 }
 
 // NewCampaignGetV2DataListDedicateTypeFromValue returns a pointer to a valid CampaignGetV2DataListDedicateType

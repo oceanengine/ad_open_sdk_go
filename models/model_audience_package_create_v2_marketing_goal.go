@@ -19,14 +19,14 @@ type AudiencePackageCreateV2MarketingGoal string
 
 // List of audience_package_create_v2_marketing_goal
 const (
-	LIVE_AudiencePackageCreateV2MarketingGoal            AudiencePackageCreateV2MarketingGoal = "LIVE"
 	VIDEO_AND_IMAGE_AudiencePackageCreateV2MarketingGoal AudiencePackageCreateV2MarketingGoal = "VIDEO_AND_IMAGE"
+	LIVE_AudiencePackageCreateV2MarketingGoal            AudiencePackageCreateV2MarketingGoal = "LIVE"
 )
 
 // All allowed values of AudiencePackageCreateV2MarketingGoal enum
 var AllowedAudiencePackageCreateV2MarketingGoalEnumValues = []AudiencePackageCreateV2MarketingGoal{
-	"LIVE",
 	"VIDEO_AND_IMAGE",
+	"LIVE",
 }
 
 // NewAudiencePackageCreateV2MarketingGoalFromValue returns a pointer to a valid AudiencePackageCreateV2MarketingGoal

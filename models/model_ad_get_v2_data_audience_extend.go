@@ -19,14 +19,14 @@ type AdGetV2DataAudienceExtend string
 
 // List of ad_get_v2_data_audience_extend
 const (
-	OFF_AdGetV2DataAudienceExtend AdGetV2DataAudienceExtend = "OFF"
 	ON_AdGetV2DataAudienceExtend  AdGetV2DataAudienceExtend = "ON"
+	OFF_AdGetV2DataAudienceExtend AdGetV2DataAudienceExtend = "OFF"
 )
 
 // All allowed values of AdGetV2DataAudienceExtend enum
 var AllowedAdGetV2DataAudienceExtendEnumValues = []AdGetV2DataAudienceExtend{
-	"OFF",
 	"ON",
+	"OFF",
 }
 
 // NewAdGetV2DataAudienceExtendFromValue returns a pointer to a valid AdGetV2DataAudienceExtend

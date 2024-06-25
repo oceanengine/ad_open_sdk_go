@@ -19,16 +19,16 @@ type ToolsAppManagementBpShareV2ShareMode string
 
 // List of tools_app_management_bp_share_v2_share_mode
 const (
-	COMPANY_ToolsAppManagementBpShareV2ShareMode ToolsAppManagementBpShareV2ShareMode = "COMPANY"
 	PART_ToolsAppManagementBpShareV2ShareMode    ToolsAppManagementBpShareV2ShareMode = "PART"
 	ALL_ToolsAppManagementBpShareV2ShareMode     ToolsAppManagementBpShareV2ShareMode = "ALL"
+	COMPANY_ToolsAppManagementBpShareV2ShareMode ToolsAppManagementBpShareV2ShareMode = "COMPANY"
 )
 
 // All allowed values of ToolsAppManagementBpShareV2ShareMode enum
 var AllowedToolsAppManagementBpShareV2ShareModeEnumValues = []ToolsAppManagementBpShareV2ShareMode{
-	"COMPANY",
 	"PART",
 	"ALL",
+	"COMPANY",
 }
 
 // NewToolsAppManagementBpShareV2ShareModeFromValue returns a pointer to a valid ToolsAppManagementBpShareV2ShareMode

@@ -19,14 +19,14 @@ type AdGetV2DataDeliveryPhase string
 
 // List of ad_get_v2_data_delivery_phase
 const (
-	FIRST_PHASE_AdGetV2DataDeliveryPhase  AdGetV2DataDeliveryPhase = "FIRST_PHASE"
 	SECOND_PHASE_AdGetV2DataDeliveryPhase AdGetV2DataDeliveryPhase = "SECOND_PHASE"
+	FIRST_PHASE_AdGetV2DataDeliveryPhase  AdGetV2DataDeliveryPhase = "FIRST_PHASE"
 )
 
 // All allowed values of AdGetV2DataDeliveryPhase enum
 var AllowedAdGetV2DataDeliveryPhaseEnumValues = []AdGetV2DataDeliveryPhase{
-	"FIRST_PHASE",
 	"SECOND_PHASE",
+	"FIRST_PHASE",
 }
 
 // NewAdGetV2DataDeliveryPhaseFromValue returns a pointer to a valid AdGetV2DataDeliveryPhase

@@ -19,14 +19,14 @@ type AdGetV2DataIntelligentFlowSwitch string
 
 // List of ad_get_v2_data_intelligent_flow_switch
 const (
-	OFF_AdGetV2DataIntelligentFlowSwitch AdGetV2DataIntelligentFlowSwitch = "OFF"
 	ON_AdGetV2DataIntelligentFlowSwitch  AdGetV2DataIntelligentFlowSwitch = "ON"
+	OFF_AdGetV2DataIntelligentFlowSwitch AdGetV2DataIntelligentFlowSwitch = "OFF"
 )
 
 // All allowed values of AdGetV2DataIntelligentFlowSwitch enum
 var AllowedAdGetV2DataIntelligentFlowSwitchEnumValues = []AdGetV2DataIntelligentFlowSwitch{
-	"OFF",
 	"ON",
+	"OFF",
 }
 
 // NewAdGetV2DataIntelligentFlowSwitchFromValue returns a pointer to a valid AdGetV2DataIntelligentFlowSwitch

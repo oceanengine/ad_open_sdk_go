@@ -19,15 +19,15 @@ type AdGetV2DataDeliveryRange string
 
 // List of ad_get_v2_data_delivery_range
 const (
-	DEFAULT_AdGetV2DataDeliveryRange   AdGetV2DataDeliveryRange = "DEFAULT"
 	UNIVERSAL_AdGetV2DataDeliveryRange AdGetV2DataDeliveryRange = "UNIVERSAL"
+	DEFAULT_AdGetV2DataDeliveryRange   AdGetV2DataDeliveryRange = "DEFAULT"
 	UNION_AdGetV2DataDeliveryRange     AdGetV2DataDeliveryRange = "UNION"
 )
 
 // All allowed values of AdGetV2DataDeliveryRange enum
 var AllowedAdGetV2DataDeliveryRangeEnumValues = []AdGetV2DataDeliveryRange{
-	"DEFAULT",
 	"UNIVERSAL",
+	"DEFAULT",
 	"UNION",
 }
 

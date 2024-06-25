@@ -20,15 +20,15 @@ type AudiencePackageUpdateV2InterestActionMode string
 // List of audience_package_update_v2_interest_action_mode
 const (
 	UNLIMITED_AudiencePackageUpdateV2InterestActionMode AudiencePackageUpdateV2InterestActionMode = "UNLIMITED"
-	CUSTOM_AudiencePackageUpdateV2InterestActionMode    AudiencePackageUpdateV2InterestActionMode = "CUSTOM"
 	RECOMMEND_AudiencePackageUpdateV2InterestActionMode AudiencePackageUpdateV2InterestActionMode = "RECOMMEND"
+	CUSTOM_AudiencePackageUpdateV2InterestActionMode    AudiencePackageUpdateV2InterestActionMode = "CUSTOM"
 )
 
 // All allowed values of AudiencePackageUpdateV2InterestActionMode enum
 var AllowedAudiencePackageUpdateV2InterestActionModeEnumValues = []AudiencePackageUpdateV2InterestActionMode{
 	"UNLIMITED",
-	"CUSTOM",
 	"RECOMMEND",
+	"CUSTOM",
 }
 
 // NewAudiencePackageUpdateV2InterestActionModeFromValue returns a pointer to a valid AudiencePackageUpdateV2InterestActionMode

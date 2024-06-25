@@ -19,24 +19,24 @@ type ToolsBidSuggestV2HideIfConverted string
 
 // List of tools_bid_suggest_v2_hide_if_converted
 const (
-	CUSTOMER_ToolsBidSuggestV2HideIfConverted     ToolsBidSuggestV2HideIfConverted = "CUSTOMER"
-	AD_ToolsBidSuggestV2HideIfConverted           ToolsBidSuggestV2HideIfConverted = "AD"
-	NO_EXCLUDE_ToolsBidSuggestV2HideIfConverted   ToolsBidSuggestV2HideIfConverted = "NO_EXCLUDE"
-	APP_ToolsBidSuggestV2HideIfConverted          ToolsBidSuggestV2HideIfConverted = "APP"
-	CAMPAIGN_ToolsBidSuggestV2HideIfConverted     ToolsBidSuggestV2HideIfConverted = "CAMPAIGN"
 	ADVERTISER_ToolsBidSuggestV2HideIfConverted   ToolsBidSuggestV2HideIfConverted = "ADVERTISER"
+	AD_ToolsBidSuggestV2HideIfConverted           ToolsBidSuggestV2HideIfConverted = "AD"
+	CUSTOMER_ToolsBidSuggestV2HideIfConverted     ToolsBidSuggestV2HideIfConverted = "CUSTOMER"
 	ORGANIZATION_ToolsBidSuggestV2HideIfConverted ToolsBidSuggestV2HideIfConverted = "ORGANIZATION"
+	CAMPAIGN_ToolsBidSuggestV2HideIfConverted     ToolsBidSuggestV2HideIfConverted = "CAMPAIGN"
+	APP_ToolsBidSuggestV2HideIfConverted          ToolsBidSuggestV2HideIfConverted = "APP"
+	NO_EXCLUDE_ToolsBidSuggestV2HideIfConverted   ToolsBidSuggestV2HideIfConverted = "NO_EXCLUDE"
 )
 
 // All allowed values of ToolsBidSuggestV2HideIfConverted enum
 var AllowedToolsBidSuggestV2HideIfConvertedEnumValues = []ToolsBidSuggestV2HideIfConverted{
-	"CUSTOMER",
-	"AD",
-	"NO_EXCLUDE",
-	"APP",
-	"CAMPAIGN",
 	"ADVERTISER",
+	"AD",
+	"CUSTOMER",
 	"ORGANIZATION",
+	"CAMPAIGN",
+	"APP",
+	"NO_EXCLUDE",
 }
 
 // NewToolsBidSuggestV2HideIfConvertedFromValue returns a pointer to a valid ToolsBidSuggestV2HideIfConverted

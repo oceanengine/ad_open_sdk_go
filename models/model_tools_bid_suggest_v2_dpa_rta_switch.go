@@ -19,14 +19,14 @@ type ToolsBidSuggestV2DpaRtaSwitch string
 
 // List of tools_bid_suggest_v2_dpa_rta_switch
 const (
-	OFF_ToolsBidSuggestV2DpaRtaSwitch ToolsBidSuggestV2DpaRtaSwitch = "OFF"
 	ON_ToolsBidSuggestV2DpaRtaSwitch  ToolsBidSuggestV2DpaRtaSwitch = "ON"
+	OFF_ToolsBidSuggestV2DpaRtaSwitch ToolsBidSuggestV2DpaRtaSwitch = "OFF"
 )
 
 // All allowed values of ToolsBidSuggestV2DpaRtaSwitch enum
 var AllowedToolsBidSuggestV2DpaRtaSwitchEnumValues = []ToolsBidSuggestV2DpaRtaSwitch{
-	"OFF",
 	"ON",
+	"OFF",
 }
 
 // NewToolsBidSuggestV2DpaRtaSwitchFromValue returns a pointer to a valid ToolsBidSuggestV2DpaRtaSwitch

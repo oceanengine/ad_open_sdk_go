@@ -20,15 +20,15 @@ type ToolsBidSuggestV2InterestActionMode string
 // List of tools_bid_suggest_v2_interest_action_mode
 const (
 	UNLIMITED_ToolsBidSuggestV2InterestActionMode ToolsBidSuggestV2InterestActionMode = "UNLIMITED"
-	CUSTOM_ToolsBidSuggestV2InterestActionMode    ToolsBidSuggestV2InterestActionMode = "CUSTOM"
 	RECOMMEND_ToolsBidSuggestV2InterestActionMode ToolsBidSuggestV2InterestActionMode = "RECOMMEND"
+	CUSTOM_ToolsBidSuggestV2InterestActionMode    ToolsBidSuggestV2InterestActionMode = "CUSTOM"
 )
 
 // All allowed values of ToolsBidSuggestV2InterestActionMode enum
 var AllowedToolsBidSuggestV2InterestActionModeEnumValues = []ToolsBidSuggestV2InterestActionMode{
 	"UNLIMITED",
-	"CUSTOM",
 	"RECOMMEND",
+	"CUSTOM",
 }
 
 // NewToolsBidSuggestV2InterestActionModeFromValue returns a pointer to a valid ToolsBidSuggestV2InterestActionMode

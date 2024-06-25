@@ -19,17 +19,17 @@ type ToolsAdStatExtraInfoGetV2DataLearningPhase string
 
 // List of tools_ad_stat_extra_info_get_v2_data_learning_phase
 const (
-	LEARNING_ToolsAdStatExtraInfoGetV2DataLearningPhase     ToolsAdStatExtraInfoGetV2DataLearningPhase = "LEARNING"
-	DEFAULT_ToolsAdStatExtraInfoGetV2DataLearningPhase      ToolsAdStatExtraInfoGetV2DataLearningPhase = "DEFAULT"
 	LEARNED_ToolsAdStatExtraInfoGetV2DataLearningPhase      ToolsAdStatExtraInfoGetV2DataLearningPhase = "LEARNED"
+	DEFAULT_ToolsAdStatExtraInfoGetV2DataLearningPhase      ToolsAdStatExtraInfoGetV2DataLearningPhase = "DEFAULT"
+	LEARNING_ToolsAdStatExtraInfoGetV2DataLearningPhase     ToolsAdStatExtraInfoGetV2DataLearningPhase = "LEARNING"
 	LEARN_FAILED_ToolsAdStatExtraInfoGetV2DataLearningPhase ToolsAdStatExtraInfoGetV2DataLearningPhase = "LEARN_FAILED"
 )
 
 // All allowed values of ToolsAdStatExtraInfoGetV2DataLearningPhase enum
 var AllowedToolsAdStatExtraInfoGetV2DataLearningPhaseEnumValues = []ToolsAdStatExtraInfoGetV2DataLearningPhase{
-	"LEARNING",
-	"DEFAULT",
 	"LEARNED",
+	"DEFAULT",
+	"LEARNING",
 	"LEARN_FAILED",
 }
 

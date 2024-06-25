@@ -19,14 +19,14 @@ type AdGetV2DataAutoInheritSwitch string
 
 // List of ad_get_v2_data_auto_inherit_switch
 const (
-	OFF_AdGetV2DataAutoInheritSwitch AdGetV2DataAutoInheritSwitch = "OFF"
 	ON_AdGetV2DataAutoInheritSwitch  AdGetV2DataAutoInheritSwitch = "ON"
+	OFF_AdGetV2DataAutoInheritSwitch AdGetV2DataAutoInheritSwitch = "OFF"
 )
 
 // All allowed values of AdGetV2DataAutoInheritSwitch enum
 var AllowedAdGetV2DataAutoInheritSwitchEnumValues = []AdGetV2DataAutoInheritSwitch{
-	"OFF",
 	"ON",
+	"OFF",
 }
 
 // NewAdGetV2DataAutoInheritSwitchFromValue returns a pointer to a valid AdGetV2DataAutoInheritSwitch

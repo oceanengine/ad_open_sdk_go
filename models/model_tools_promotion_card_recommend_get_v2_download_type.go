@@ -19,16 +19,16 @@ type ToolsPromotionCardRecommendGetV2DownloadType string
 
 // List of tools_promotion_card_recommend_get_v2_download_type
 const (
+	QUICK_APP_URL_ToolsPromotionCardRecommendGetV2DownloadType ToolsPromotionCardRecommendGetV2DownloadType = "QUICK_APP_URL"
 	DOWNLOAD_URL_ToolsPromotionCardRecommendGetV2DownloadType  ToolsPromotionCardRecommendGetV2DownloadType = "DOWNLOAD_URL"
 	EXTERNAL_URL_ToolsPromotionCardRecommendGetV2DownloadType  ToolsPromotionCardRecommendGetV2DownloadType = "EXTERNAL_URL"
-	QUICK_APP_URL_ToolsPromotionCardRecommendGetV2DownloadType ToolsPromotionCardRecommendGetV2DownloadType = "QUICK_APP_URL"
 )
 
 // All allowed values of ToolsPromotionCardRecommendGetV2DownloadType enum
 var AllowedToolsPromotionCardRecommendGetV2DownloadTypeEnumValues = []ToolsPromotionCardRecommendGetV2DownloadType{
+	"QUICK_APP_URL",
 	"DOWNLOAD_URL",
 	"EXTERNAL_URL",
-	"QUICK_APP_URL",
 }
 
 // NewToolsPromotionCardRecommendGetV2DownloadTypeFromValue returns a pointer to a valid ToolsPromotionCardRecommendGetV2DownloadType

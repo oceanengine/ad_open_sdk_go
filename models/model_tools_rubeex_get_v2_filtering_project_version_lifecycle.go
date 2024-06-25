@@ -19,22 +19,22 @@ type ToolsRubeexGetV2FilteringProjectVersionLifecycle string
 
 // List of tools_rubeex_get_v2_filtering_project_version_lifecycle
 const (
+	SYNC_AD_ToolsRubeexGetV2FilteringProjectVersionLifecycle       ToolsRubeexGetV2FilteringProjectVersionLifecycle = "SYNC_AD"
+	EXPORTED_ToolsRubeexGetV2FilteringProjectVersionLifecycle      ToolsRubeexGetV2FilteringProjectVersionLifecycle = "EXPORTED"
 	AUDIT_SUCCESS_ToolsRubeexGetV2FilteringProjectVersionLifecycle ToolsRubeexGetV2FilteringProjectVersionLifecycle = "AUDIT_SUCCESS"
 	AUDIT_FAIL_ToolsRubeexGetV2FilteringProjectVersionLifecycle    ToolsRubeexGetV2FilteringProjectVersionLifecycle = "AUDIT_FAIL"
 	LAUNCHED_ToolsRubeexGetV2FilteringProjectVersionLifecycle      ToolsRubeexGetV2FilteringProjectVersionLifecycle = "LAUNCHED"
 	RELAT_PLAN_ToolsRubeexGetV2FilteringProjectVersionLifecycle    ToolsRubeexGetV2FilteringProjectVersionLifecycle = "RELAT_PLAN"
-	EXPORTED_ToolsRubeexGetV2FilteringProjectVersionLifecycle      ToolsRubeexGetV2FilteringProjectVersionLifecycle = "EXPORTED"
-	SYNC_AD_ToolsRubeexGetV2FilteringProjectVersionLifecycle       ToolsRubeexGetV2FilteringProjectVersionLifecycle = "SYNC_AD"
 )
 
 // All allowed values of ToolsRubeexGetV2FilteringProjectVersionLifecycle enum
 var AllowedToolsRubeexGetV2FilteringProjectVersionLifecycleEnumValues = []ToolsRubeexGetV2FilteringProjectVersionLifecycle{
+	"SYNC_AD",
+	"EXPORTED",
 	"AUDIT_SUCCESS",
 	"AUDIT_FAIL",
 	"LAUNCHED",
 	"RELAT_PLAN",
-	"EXPORTED",
-	"SYNC_AD",
 }
 
 // NewToolsRubeexGetV2FilteringProjectVersionLifecycleFromValue returns a pointer to a valid ToolsRubeexGetV2FilteringProjectVersionLifecycle

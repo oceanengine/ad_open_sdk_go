@@ -19,14 +19,14 @@ type ToolsBidSuggestV2BidMode string
 
 // List of tools_bid_suggest_v2_bid_mode
 const (
-	SUGGEST_ToolsBidSuggestV2BidMode  ToolsBidSuggestV2BidMode = "SUGGEST"
 	AUTO_BID_ToolsBidSuggestV2BidMode ToolsBidSuggestV2BidMode = "AUTO_BID"
+	SUGGEST_ToolsBidSuggestV2BidMode  ToolsBidSuggestV2BidMode = "SUGGEST"
 )
 
 // All allowed values of ToolsBidSuggestV2BidMode enum
 var AllowedToolsBidSuggestV2BidModeEnumValues = []ToolsBidSuggestV2BidMode{
-	"SUGGEST",
 	"AUTO_BID",
+	"SUGGEST",
 }
 
 // NewToolsBidSuggestV2BidModeFromValue returns a pointer to a valid ToolsBidSuggestV2BidMode

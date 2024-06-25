@@ -19,22 +19,22 @@ type ToolsLandingGroupGetV2DataListSitesSiteAuditStatus string
 
 // List of tools_landing_group_get_v2_data_list_sites_site_audit_status
 const (
+	AUDITING_ToolsLandingGroupGetV2DataListSitesSiteAuditStatus ToolsLandingGroupGetV2DataListSitesSiteAuditStatus = "AUDITING"
+	BANNED_ToolsLandingGroupGetV2DataListSitesSiteAuditStatus   ToolsLandingGroupGetV2DataListSitesSiteAuditStatus = "BANNED"
 	UNKNOWN_ToolsLandingGroupGetV2DataListSitesSiteAuditStatus  ToolsLandingGroupGetV2DataListSitesSiteAuditStatus = "UNKNOWN"
 	CREATED_ToolsLandingGroupGetV2DataListSitesSiteAuditStatus  ToolsLandingGroupGetV2DataListSitesSiteAuditStatus = "CREATED"
-	AUDITING_ToolsLandingGroupGetV2DataListSitesSiteAuditStatus ToolsLandingGroupGetV2DataListSitesSiteAuditStatus = "AUDITING"
-	ACCEPTED_ToolsLandingGroupGetV2DataListSitesSiteAuditStatus ToolsLandingGroupGetV2DataListSitesSiteAuditStatus = "ACCEPTED"
-	BANNED_ToolsLandingGroupGetV2DataListSitesSiteAuditStatus   ToolsLandingGroupGetV2DataListSitesSiteAuditStatus = "BANNED"
 	REJECTED_ToolsLandingGroupGetV2DataListSitesSiteAuditStatus ToolsLandingGroupGetV2DataListSitesSiteAuditStatus = "REJECTED"
+	ACCEPTED_ToolsLandingGroupGetV2DataListSitesSiteAuditStatus ToolsLandingGroupGetV2DataListSitesSiteAuditStatus = "ACCEPTED"
 )
 
 // All allowed values of ToolsLandingGroupGetV2DataListSitesSiteAuditStatus enum
 var AllowedToolsLandingGroupGetV2DataListSitesSiteAuditStatusEnumValues = []ToolsLandingGroupGetV2DataListSitesSiteAuditStatus{
+	"AUDITING",
+	"BANNED",
 	"UNKNOWN",
 	"CREATED",
-	"AUDITING",
-	"ACCEPTED",
-	"BANNED",
 	"REJECTED",
+	"ACCEPTED",
 }
 
 // NewToolsLandingGroupGetV2DataListSitesSiteAuditStatusFromValue returns a pointer to a valid ToolsLandingGroupGetV2DataListSitesSiteAuditStatus

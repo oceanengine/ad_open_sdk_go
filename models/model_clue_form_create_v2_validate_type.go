@@ -19,20 +19,20 @@ type ClueFormCreateV2ValidateType string
 
 // List of clue_form_create_v2_validate_type
 const (
-	VALIDITY_PRIORITY_ClueFormCreateV2ValidateType ClueFormCreateV2ValidateType = "VALIDITY_PRIORITY"
 	NONE_VERIFICATION_ClueFormCreateV2ValidateType ClueFormCreateV2ValidateType = "NONE_VERIFICATION"
-	ALL_VERIFICATION_ClueFormCreateV2ValidateType  ClueFormCreateV2ValidateType = "ALL_VERIFICATION"
-	CLUE_PRIORITY_ClueFormCreateV2ValidateType     ClueFormCreateV2ValidateType = "CLUE_PRIORITY"
 	AUTO_VERIFICATION_ClueFormCreateV2ValidateType ClueFormCreateV2ValidateType = "AUTO_VERIFICATION"
+	CLUE_PRIORITY_ClueFormCreateV2ValidateType     ClueFormCreateV2ValidateType = "CLUE_PRIORITY"
+	ALL_VERIFICATION_ClueFormCreateV2ValidateType  ClueFormCreateV2ValidateType = "ALL_VERIFICATION"
+	VALIDITY_PRIORITY_ClueFormCreateV2ValidateType ClueFormCreateV2ValidateType = "VALIDITY_PRIORITY"
 )
 
 // All allowed values of ClueFormCreateV2ValidateType enum
 var AllowedClueFormCreateV2ValidateTypeEnumValues = []ClueFormCreateV2ValidateType{
-	"VALIDITY_PRIORITY",
 	"NONE_VERIFICATION",
-	"ALL_VERIFICATION",
-	"CLUE_PRIORITY",
 	"AUTO_VERIFICATION",
+	"CLUE_PRIORITY",
+	"ALL_VERIFICATION",
+	"VALIDITY_PRIORITY",
 }
 
 // NewClueFormCreateV2ValidateTypeFromValue returns a pointer to a valid ClueFormCreateV2ValidateType

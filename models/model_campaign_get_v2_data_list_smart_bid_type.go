@@ -19,29 +19,29 @@ type CampaignGetV2DataListSmartBidType string
 
 // List of campaign_get_v2_data_list_smart_bid_type
 const (
-	MAXCV_CampaignGetV2DataListSmartBidType             CampaignGetV2DataListSmartBidType = "MAXCV"
-	JIJIN_CampaignGetV2DataListSmartBidType             CampaignGetV2DataListSmartBidType = "JIJIN"
 	CUSTOM_CampaignGetV2DataListSmartBidType            CampaignGetV2DataListSmartBidType = "CUSTOM"
-	AWEME_LITE_PACING_CampaignGetV2DataListSmartBidType CampaignGetV2DataListSmartBidType = "AWEME_LITE_PACING"
-	MAX_CONVERSION_CampaignGetV2DataListSmartBidType    CampaignGetV2DataListSmartBidType = "MAX_CONVERSION"
+	LITE_PACING_CampaignGetV2DataListSmartBidType       CampaignGetV2DataListSmartBidType = "LITE_PACING"
 	SMART_BID_NO_BID_CampaignGetV2DataListSmartBidType  CampaignGetV2DataListSmartBidType = "SMART_BID_NO_BID"
 	BAOSHOU_CampaignGetV2DataListSmartBidType           CampaignGetV2DataListSmartBidType = "BAOSHOU"
+	MAXCV_CampaignGetV2DataListSmartBidType             CampaignGetV2DataListSmartBidType = "MAXCV"
+	JIJIN_CampaignGetV2DataListSmartBidType             CampaignGetV2DataListSmartBidType = "JIJIN"
+	AWEME_LITE_PACING_CampaignGetV2DataListSmartBidType CampaignGetV2DataListSmartBidType = "AWEME_LITE_PACING"
+	MAX_CONVERSION_CampaignGetV2DataListSmartBidType    CampaignGetV2DataListSmartBidType = "MAX_CONVERSION"
 	GD_PROMOTE_CampaignGetV2DataListSmartBidType        CampaignGetV2DataListSmartBidType = "GD_PROMOTE"
-	LITE_PACING_CampaignGetV2DataListSmartBidType       CampaignGetV2DataListSmartBidType = "LITE_PACING"
 	GUARANTEED_SHOW_CampaignGetV2DataListSmartBidType   CampaignGetV2DataListSmartBidType = "GUARANTEED_SHOW"
 )
 
 // All allowed values of CampaignGetV2DataListSmartBidType enum
 var AllowedCampaignGetV2DataListSmartBidTypeEnumValues = []CampaignGetV2DataListSmartBidType{
-	"MAXCV",
-	"JIJIN",
 	"CUSTOM",
-	"AWEME_LITE_PACING",
-	"MAX_CONVERSION",
+	"LITE_PACING",
 	"SMART_BID_NO_BID",
 	"BAOSHOU",
+	"MAXCV",
+	"JIJIN",
+	"AWEME_LITE_PACING",
+	"MAX_CONVERSION",
 	"GD_PROMOTE",
-	"LITE_PACING",
 	"GUARANTEED_SHOW",
 }
 

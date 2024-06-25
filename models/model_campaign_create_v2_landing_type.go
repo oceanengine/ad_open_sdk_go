@@ -19,32 +19,32 @@ type CampaignCreateV2LandingType string
 
 // List of campaign_create_v2_landing_type
 const (
-	SHOP_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "SHOP"
 	LINK_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LINK"
-	APP_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "APP"
-	BRAND_EXTERNAL_CampaignCreateV2LandingType CampaignCreateV2LandingType = "BRAND_EXTERNAL"
-	STORE_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "STORE"
-	QUICK_APP_CampaignCreateV2LandingType      CampaignCreateV2LandingType = "QUICK_APP"
 	GOODS_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "GOODS"
-	DPA_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "DPA"
-	LIVE_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LIVE"
 	AWEME_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "AWEME"
+	DPA_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "DPA"
+	BRAND_EXTERNAL_CampaignCreateV2LandingType CampaignCreateV2LandingType = "BRAND_EXTERNAL"
+	QUICK_APP_CampaignCreateV2LandingType      CampaignCreateV2LandingType = "QUICK_APP"
+	SHOP_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "SHOP"
+	APP_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "APP"
+	STORE_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "STORE"
 	ARTICLE_CampaignCreateV2LandingType        CampaignCreateV2LandingType = "ARTICLE"
+	LIVE_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LIVE"
 )
 
 // All allowed values of CampaignCreateV2LandingType enum
 var AllowedCampaignCreateV2LandingTypeEnumValues = []CampaignCreateV2LandingType{
-	"SHOP",
 	"LINK",
-	"APP",
-	"BRAND_EXTERNAL",
-	"STORE",
-	"QUICK_APP",
 	"GOODS",
-	"DPA",
-	"LIVE",
 	"AWEME",
+	"DPA",
+	"BRAND_EXTERNAL",
+	"QUICK_APP",
+	"SHOP",
+	"APP",
+	"STORE",
 	"ARTICLE",
+	"LIVE",
 }
 
 // NewCampaignCreateV2LandingTypeFromValue returns a pointer to a valid CampaignCreateV2LandingType

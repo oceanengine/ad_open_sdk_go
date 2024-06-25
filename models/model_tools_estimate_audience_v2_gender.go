@@ -19,18 +19,18 @@ type ToolsEstimateAudienceV2Gender string
 
 // List of tools_estimate_audience_v2_gender
 const (
+	GENDER_FEMALE_ToolsEstimateAudienceV2Gender    ToolsEstimateAudienceV2Gender = "GENDER_FEMALE"
 	GENDER_UNLIMITED_ToolsEstimateAudienceV2Gender ToolsEstimateAudienceV2Gender = "GENDER_UNLIMITED"
 	NONE_ToolsEstimateAudienceV2Gender             ToolsEstimateAudienceV2Gender = "NONE"
 	GENDER_MALE_ToolsEstimateAudienceV2Gender      ToolsEstimateAudienceV2Gender = "GENDER_MALE"
-	GENDER_FEMALE_ToolsEstimateAudienceV2Gender    ToolsEstimateAudienceV2Gender = "GENDER_FEMALE"
 )
 
 // All allowed values of ToolsEstimateAudienceV2Gender enum
 var AllowedToolsEstimateAudienceV2GenderEnumValues = []ToolsEstimateAudienceV2Gender{
+	"GENDER_FEMALE",
 	"GENDER_UNLIMITED",
 	"NONE",
 	"GENDER_MALE",
-	"GENDER_FEMALE",
 }
 
 // NewToolsEstimateAudienceV2GenderFromValue returns a pointer to a valid ToolsEstimateAudienceV2Gender

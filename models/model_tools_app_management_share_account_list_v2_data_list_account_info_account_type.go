@@ -19,16 +19,16 @@ type ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType string
 
 // List of tools_app_management_share_account_list_v2_data_list_account_info_account_type
 const (
-	BP_ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType   ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType = "BP"
-	STAR_ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType = "STAR"
 	AD_ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType   ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType = "AD"
+	STAR_ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType = "STAR"
+	BP_ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType   ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType = "BP"
 )
 
 // All allowed values of ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType enum
 var AllowedToolsAppManagementShareAccountListV2DataListAccountInfoAccountTypeEnumValues = []ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType{
-	"BP",
-	"STAR",
 	"AD",
+	"STAR",
+	"BP",
 }
 
 // NewToolsAppManagementShareAccountListV2DataListAccountInfoAccountTypeFromValue returns a pointer to a valid ToolsAppManagementShareAccountListV2DataListAccountInfoAccountType

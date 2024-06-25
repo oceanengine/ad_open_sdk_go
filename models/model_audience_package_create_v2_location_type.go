@@ -19,18 +19,18 @@ type AudiencePackageCreateV2LocationType string
 
 // List of audience_package_create_v2_location_type
 const (
-	CURRENT_AudiencePackageCreateV2LocationType AudiencePackageCreateV2LocationType = "CURRENT"
-	HOME_AudiencePackageCreateV2LocationType    AudiencePackageCreateV2LocationType = "HOME"
-	ALL_AudiencePackageCreateV2LocationType     AudiencePackageCreateV2LocationType = "ALL"
 	TRAVEL_AudiencePackageCreateV2LocationType  AudiencePackageCreateV2LocationType = "TRAVEL"
+	HOME_AudiencePackageCreateV2LocationType    AudiencePackageCreateV2LocationType = "HOME"
+	CURRENT_AudiencePackageCreateV2LocationType AudiencePackageCreateV2LocationType = "CURRENT"
+	ALL_AudiencePackageCreateV2LocationType     AudiencePackageCreateV2LocationType = "ALL"
 )
 
 // All allowed values of AudiencePackageCreateV2LocationType enum
 var AllowedAudiencePackageCreateV2LocationTypeEnumValues = []AudiencePackageCreateV2LocationType{
-	"CURRENT",
-	"HOME",
-	"ALL",
 	"TRAVEL",
+	"HOME",
+	"CURRENT",
+	"ALL",
 }
 
 // NewAudiencePackageCreateV2LocationTypeFromValue returns a pointer to a valid AudiencePackageCreateV2LocationType

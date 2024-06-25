@@ -21,18 +21,18 @@ type ToolsNoBidSuggestBidV2FilteringFlowControlMode string
 const (
 	FLOW_CONTROL_MODE_SMOOTH_ToolsNoBidSuggestBidV2FilteringFlowControlMode     ToolsNoBidSuggestBidV2FilteringFlowControlMode = "FLOW_CONTROL_MODE_SMOOTH"
 	FLOW_CONTROL_MODE_TWO_PHASES_ToolsNoBidSuggestBidV2FilteringFlowControlMode ToolsNoBidSuggestBidV2FilteringFlowControlMode = "FLOW_CONTROL_MODE_TWO_PHASES"
+	FLOW_CONTROL_MODE_HOURLY_ToolsNoBidSuggestBidV2FilteringFlowControlMode     ToolsNoBidSuggestBidV2FilteringFlowControlMode = "FLOW_CONTROL_MODE_HOURLY"
 	FLOW_CONTROL_MODE_FAST_ToolsNoBidSuggestBidV2FilteringFlowControlMode       ToolsNoBidSuggestBidV2FilteringFlowControlMode = "FLOW_CONTROL_MODE_FAST"
 	FLOW_CONTROL_MODE_BALANCE_ToolsNoBidSuggestBidV2FilteringFlowControlMode    ToolsNoBidSuggestBidV2FilteringFlowControlMode = "FLOW_CONTROL_MODE_BALANCE"
-	FLOW_CONTROL_MODE_HOURLY_ToolsNoBidSuggestBidV2FilteringFlowControlMode     ToolsNoBidSuggestBidV2FilteringFlowControlMode = "FLOW_CONTROL_MODE_HOURLY"
 )
 
 // All allowed values of ToolsNoBidSuggestBidV2FilteringFlowControlMode enum
 var AllowedToolsNoBidSuggestBidV2FilteringFlowControlModeEnumValues = []ToolsNoBidSuggestBidV2FilteringFlowControlMode{
 	"FLOW_CONTROL_MODE_SMOOTH",
 	"FLOW_CONTROL_MODE_TWO_PHASES",
+	"FLOW_CONTROL_MODE_HOURLY",
 	"FLOW_CONTROL_MODE_FAST",
 	"FLOW_CONTROL_MODE_BALANCE",
-	"FLOW_CONTROL_MODE_HOURLY",
 }
 
 // NewToolsNoBidSuggestBidV2FilteringFlowControlModeFromValue returns a pointer to a valid ToolsNoBidSuggestBidV2FilteringFlowControlMode
