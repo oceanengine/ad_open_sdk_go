@@ -375,8 +375,10 @@ Class | Method | HTTP request
 *DpaAssetsListV2Api* | **OpenApi2DpaAssetsListGet** | **Get** /open_api/2/dpa/assets/list/
 *DpaCategoryGetV2Api* | **OpenApi2DpaCategoryGetGet** | **Get** /open_api/2/dpa/category/get/
 *DpaCheckIndexEntryProgressV2Api* | **OpenApi2DpaCheckIndexEntryProgressPost** | **Post** /open_api/2/dpa/check_index_entry_progress/
+*DpaClueProductDeleteV2Api* | **OpenApi2DpaClueProductDeletePost** | **Post** /open_api/2/dpa/clue_product/delete/
 *DpaClueProductDetailV2Api* | **OpenApi2DpaClueProductDetailGet** | **Get** /open_api/2/dpa/clue_product/detail/
 *DpaClueProductListV2Api* | **OpenApi2DpaClueProductListGet** | **Get** /open_api/2/dpa/clue_product/list/
+*DpaClueProductSaveV2Api* | **OpenApi2DpaClueProductSavePost** | **Post** /open_api/2/dpa/clue_product/save/
 *DpaDetailGetV2Api* | **OpenApi2DpaDetailGetGet** | **Get** /open_api/2/dpa/detail/get/
 *DpaDictGetV2Api* | **OpenApi2DpaDictGetGet** | **Get** /open_api/2/dpa/dict/get/
 *DpaMetaGetV2Api* | **OpenApi2DpaMetaGetGet** | **Get** /open_api/2/dpa/meta/get/
@@ -471,6 +473,7 @@ Class | Method | HTTP request
 *Oauth2RefreshTokenApi* | **OpenApiOauth2RefreshTokenPost** | **Post** /open_api/oauth2/refresh_token/
 *Oauth2RenewTokenApi* | **OpenApiOauth2RenewTokenPost** | **Post** /open_api/oauth2/renew_token/
 *ProjectBudgetUpdateV30Api* | **OpenApiV30ProjectBudgetUpdatePost** | **Post** /open_api/v3.0/project/budget/update/
+*ProjectCostProtectStatusGetV30Api* | **OpenApiV30ProjectCostProtectStatusGetGet** | **Get** /open_api/v3.0/project/cost_protect_status/get/
 *ProjectCreateV30Api* | **OpenApiV30ProjectCreatePost** | **Post** /open_api/v3.0/project/create/
 *ProjectDeleteV30Api* | **OpenApiV30ProjectDeletePost** | **Post** /open_api/v3.0/project/delete/
 *ProjectListV30Api* | **OpenApiV30ProjectListGet** | **Get** /open_api/v3.0/project/list/
@@ -695,6 +698,7 @@ Class | Method | HTTP request
 *StarGetCreateChallengeDataDictV2Api* | **OpenApi2StarGetCreateChallengeDataDictGet** | **Get** /open_api/2/star/get_create_challenge_data_dict/
 *StarInfoV2Api* | **OpenApi2StarInfoGet** | **Get** /open_api/2/star/info/
 *StarMcnContractChallengeV2Api* | **OpenApi2StarMcnContractChallengePost** | **Post** /open_api/2/star/mcn/contract_challenge/
+*StarMcnGetAuthorListV2Api* | **OpenApi2StarMcnGetAuthorListGet** | **Get** /open_api/2/star/mcn/get_author_list/
 *StarMcnGetContractChallengeAuthorItemListV2V2Api* | **OpenApi2StarMcnGetContractChallengeAuthorItemListV2Get** | **Get** /open_api/2/star/mcn/get_contract_challenge_author_item_list_v2/
 *StarMcnGetContractedChallengeListV2Api* | **OpenApi2StarMcnGetContractedChallengeListGet** | **Get** /open_api/2/star/mcn/get_contracted_challenge_list/
 *StarMcnGetContractedChallengeUrlV2Api* | **OpenApi2StarMcnGetContractedChallengeUrlGet** | **Get** /open_api/2/star/mcn/get_contracted_challenge_url/

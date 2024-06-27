@@ -700,12 +700,20 @@ func (c *Client) DpaCheckIndexEntryProgressV2Api() *api.DpaCheckIndexEntryProgre
 	return c.ApiClient.DpaCheckIndexEntryProgressV2Api
 }
 
+func (c *Client) DpaClueProductDeleteV2Api() *api.DpaClueProductDeleteV2ApiService {
+	return c.ApiClient.DpaClueProductDeleteV2Api
+}
+
 func (c *Client) DpaClueProductDetailV2Api() *api.DpaClueProductDetailV2ApiService {
 	return c.ApiClient.DpaClueProductDetailV2Api
 }
 
 func (c *Client) DpaClueProductListV2Api() *api.DpaClueProductListV2ApiService {
 	return c.ApiClient.DpaClueProductListV2Api
+}
+
+func (c *Client) DpaClueProductSaveV2Api() *api.DpaClueProductSaveV2ApiService {
+	return c.ApiClient.DpaClueProductSaveV2Api
 }
 
 func (c *Client) DpaDetailGetV2Api() *api.DpaDetailGetV2ApiService {
@@ -1082,6 +1090,10 @@ func (c *Client) Oauth2RenewTokenApi() *api.Oauth2RenewTokenApiService {
 
 func (c *Client) ProjectBudgetUpdateV30Api() *api.ProjectBudgetUpdateV30ApiService {
 	return c.ApiClient.ProjectBudgetUpdateV30Api
+}
+
+func (c *Client) ProjectCostProtectStatusGetV30Api() *api.ProjectCostProtectStatusGetV30ApiService {
+	return c.ApiClient.ProjectCostProtectStatusGetV30Api
 }
 
 func (c *Client) ProjectCreateV30Api() *api.ProjectCreateV30ApiService {
@@ -1978,6 +1990,10 @@ func (c *Client) StarInfoV2Api() *api.StarInfoV2ApiService {
 
 func (c *Client) StarMcnContractChallengeV2Api() *api.StarMcnContractChallengeV2ApiService {
 	return c.ApiClient.StarMcnContractChallengeV2Api
+}
+
+func (c *Client) StarMcnGetAuthorListV2Api() *api.StarMcnGetAuthorListV2ApiService {
+	return c.ApiClient.StarMcnGetAuthorListV2Api
 }
 
 func (c *Client) StarMcnGetContractChallengeAuthorItemListV2V2Api() *api.StarMcnGetContractChallengeAuthorItemListV2V2ApiService {
