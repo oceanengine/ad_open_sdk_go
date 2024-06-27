@@ -19,14 +19,14 @@ type AdGetV2DataAudienceDpaRtaRecommendType string
 
 // List of ad_get_v2_data_audience_dpa_rta_recommend_type
 const (
-	ONLY_AdGetV2DataAudienceDpaRtaRecommendType AdGetV2DataAudienceDpaRtaRecommendType = "ONLY"
 	MORE_AdGetV2DataAudienceDpaRtaRecommendType AdGetV2DataAudienceDpaRtaRecommendType = "MORE"
+	ONLY_AdGetV2DataAudienceDpaRtaRecommendType AdGetV2DataAudienceDpaRtaRecommendType = "ONLY"
 )
 
 // All allowed values of AdGetV2DataAudienceDpaRtaRecommendType enum
 var AllowedAdGetV2DataAudienceDpaRtaRecommendTypeEnumValues = []AdGetV2DataAudienceDpaRtaRecommendType{
-	"ONLY",
 	"MORE",
+	"ONLY",
 }
 
 // NewAdGetV2DataAudienceDpaRtaRecommendTypeFromValue returns a pointer to a valid AdGetV2DataAudienceDpaRtaRecommendType

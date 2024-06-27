@@ -19,22 +19,22 @@ type ToolsEstimateAudienceV2District string
 
 // List of tools_estimate_audience_v2_district
 const (
-	OVERSEA_ToolsEstimateAudienceV2District           ToolsEstimateAudienceV2District = "OVERSEA"
-	REGION_ToolsEstimateAudienceV2District            ToolsEstimateAudienceV2District = "REGION"
-	CITY_ToolsEstimateAudienceV2District              ToolsEstimateAudienceV2District = "CITY"
-	NONE_ToolsEstimateAudienceV2District              ToolsEstimateAudienceV2District = "NONE"
 	COUNTY_ToolsEstimateAudienceV2District            ToolsEstimateAudienceV2District = "COUNTY"
+	NONE_ToolsEstimateAudienceV2District              ToolsEstimateAudienceV2District = "NONE"
+	CITY_ToolsEstimateAudienceV2District              ToolsEstimateAudienceV2District = "CITY"
+	REGION_ToolsEstimateAudienceV2District            ToolsEstimateAudienceV2District = "REGION"
 	BUSINESS_DISTRICT_ToolsEstimateAudienceV2District ToolsEstimateAudienceV2District = "BUSINESS_DISTRICT"
+	OVERSEA_ToolsEstimateAudienceV2District           ToolsEstimateAudienceV2District = "OVERSEA"
 )
 
 // All allowed values of ToolsEstimateAudienceV2District enum
 var AllowedToolsEstimateAudienceV2DistrictEnumValues = []ToolsEstimateAudienceV2District{
-	"OVERSEA",
-	"REGION",
-	"CITY",
-	"NONE",
 	"COUNTY",
+	"NONE",
+	"CITY",
+	"REGION",
 	"BUSINESS_DISTRICT",
+	"OVERSEA",
 }
 
 // NewToolsEstimateAudienceV2DistrictFromValue returns a pointer to a valid ToolsEstimateAudienceV2District

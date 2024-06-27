@@ -20,21 +20,21 @@ type ToolsEstimateAudienceV2Platform string
 // List of tools_estimate_audience_v2_platform
 const (
 	PC_ToolsEstimateAudienceV2Platform      ToolsEstimateAudienceV2Platform = "PC"
+	ANDROID_ToolsEstimateAudienceV2Platform ToolsEstimateAudienceV2Platform = "ANDROID"
 	IOS_ToolsEstimateAudienceV2Platform     ToolsEstimateAudienceV2Platform = "IOS"
-	WAP_ToolsEstimateAudienceV2Platform     ToolsEstimateAudienceV2Platform = "WAP"
 	NONE_ToolsEstimateAudienceV2Platform    ToolsEstimateAudienceV2Platform = "NONE"
 	IPAD_ToolsEstimateAudienceV2Platform    ToolsEstimateAudienceV2Platform = "IPAD"
-	ANDROID_ToolsEstimateAudienceV2Platform ToolsEstimateAudienceV2Platform = "ANDROID"
+	WAP_ToolsEstimateAudienceV2Platform     ToolsEstimateAudienceV2Platform = "WAP"
 )
 
 // All allowed values of ToolsEstimateAudienceV2Platform enum
 var AllowedToolsEstimateAudienceV2PlatformEnumValues = []ToolsEstimateAudienceV2Platform{
 	"PC",
+	"ANDROID",
 	"IOS",
-	"WAP",
 	"NONE",
 	"IPAD",
-	"ANDROID",
+	"WAP",
 }
 
 // NewToolsEstimateAudienceV2PlatformFromValue returns a pointer to a valid ToolsEstimateAudienceV2Platform

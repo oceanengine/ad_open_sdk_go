@@ -20,23 +20,23 @@ type AudiencePackageUpdateV2ConvertedTimeDuration string
 // List of audience_package_update_v2_converted_time_duration
 const (
 	SEVEN_DAY_AudiencePackageUpdateV2ConvertedTimeDuration    AudiencePackageUpdateV2ConvertedTimeDuration = "SEVEN_DAY"
-	SIX_MONTH_AudiencePackageUpdateV2ConvertedTimeDuration    AudiencePackageUpdateV2ConvertedTimeDuration = "SIX_MONTH"
-	TWELVE_MONTH_AudiencePackageUpdateV2ConvertedTimeDuration AudiencePackageUpdateV2ConvertedTimeDuration = "TWELVE_MONTH"
-	NONE_AudiencePackageUpdateV2ConvertedTimeDuration         AudiencePackageUpdateV2ConvertedTimeDuration = "NONE"
-	TODAY_AudiencePackageUpdateV2ConvertedTimeDuration        AudiencePackageUpdateV2ConvertedTimeDuration = "TODAY"
 	THREE_MONTH_AudiencePackageUpdateV2ConvertedTimeDuration  AudiencePackageUpdateV2ConvertedTimeDuration = "THREE_MONTH"
 	ONE_MONTH_AudiencePackageUpdateV2ConvertedTimeDuration    AudiencePackageUpdateV2ConvertedTimeDuration = "ONE_MONTH"
+	NONE_AudiencePackageUpdateV2ConvertedTimeDuration         AudiencePackageUpdateV2ConvertedTimeDuration = "NONE"
+	TWELVE_MONTH_AudiencePackageUpdateV2ConvertedTimeDuration AudiencePackageUpdateV2ConvertedTimeDuration = "TWELVE_MONTH"
+	TODAY_AudiencePackageUpdateV2ConvertedTimeDuration        AudiencePackageUpdateV2ConvertedTimeDuration = "TODAY"
+	SIX_MONTH_AudiencePackageUpdateV2ConvertedTimeDuration    AudiencePackageUpdateV2ConvertedTimeDuration = "SIX_MONTH"
 )
 
 // All allowed values of AudiencePackageUpdateV2ConvertedTimeDuration enum
 var AllowedAudiencePackageUpdateV2ConvertedTimeDurationEnumValues = []AudiencePackageUpdateV2ConvertedTimeDuration{
 	"SEVEN_DAY",
-	"SIX_MONTH",
-	"TWELVE_MONTH",
-	"NONE",
-	"TODAY",
 	"THREE_MONTH",
 	"ONE_MONTH",
+	"NONE",
+	"TWELVE_MONTH",
+	"TODAY",
+	"SIX_MONTH",
 }
 
 // NewAudiencePackageUpdateV2ConvertedTimeDurationFromValue returns a pointer to a valid AudiencePackageUpdateV2ConvertedTimeDuration

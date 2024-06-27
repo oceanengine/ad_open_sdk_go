@@ -19,15 +19,15 @@ type AdGetV2DataLaunchTargetType string
 
 // List of ad_get_v2_data_launch_target_type
 const (
-	EXTERNAL_AdGetV2DataLaunchTargetType     AdGetV2DataLaunchTargetType = "EXTERNAL"
 	APP_AdGetV2DataLaunchTargetType          AdGetV2DataLaunchTargetType = "APP"
+	EXTERNAL_AdGetV2DataLaunchTargetType     AdGetV2DataLaunchTargetType = "EXTERNAL"
 	LIVE_CONVERT_AdGetV2DataLaunchTargetType AdGetV2DataLaunchTargetType = "LIVE_CONVERT"
 )
 
 // All allowed values of AdGetV2DataLaunchTargetType enum
 var AllowedAdGetV2DataLaunchTargetTypeEnumValues = []AdGetV2DataLaunchTargetType{
-	"EXTERNAL",
 	"APP",
+	"EXTERNAL",
 	"LIVE_CONVERT",
 }
 

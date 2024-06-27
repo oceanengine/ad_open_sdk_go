@@ -19,14 +19,14 @@ type AudiencePackageUpdateV2DeviceType string
 
 // List of audience_package_update_v2_device_type
 const (
-	MOBILE_AudiencePackageUpdateV2DeviceType AudiencePackageUpdateV2DeviceType = "MOBILE"
 	PAD_AudiencePackageUpdateV2DeviceType    AudiencePackageUpdateV2DeviceType = "PAD"
+	MOBILE_AudiencePackageUpdateV2DeviceType AudiencePackageUpdateV2DeviceType = "MOBILE"
 )
 
 // All allowed values of AudiencePackageUpdateV2DeviceType enum
 var AllowedAudiencePackageUpdateV2DeviceTypeEnumValues = []AudiencePackageUpdateV2DeviceType{
-	"MOBILE",
 	"PAD",
+	"MOBILE",
 }
 
 // NewAudiencePackageUpdateV2DeviceTypeFromValue returns a pointer to a valid AudiencePackageUpdateV2DeviceType

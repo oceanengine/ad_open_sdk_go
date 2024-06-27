@@ -19,18 +19,18 @@ type AdGetV2DataSmartInventory string
 
 // List of ad_get_v2_data_smart_inventory
 const (
-	SMART_AdGetV2DataSmartInventory         AdGetV2DataSmartInventory = "SMART"
-	NORMAL_AdGetV2DataSmartInventory        AdGetV2DataSmartInventory = "NORMAL"
-	UNIVERSAL_ALL_AdGetV2DataSmartInventory AdGetV2DataSmartInventory = "UNIVERSAL_ALL"
 	UNIVERSAL_AdGetV2DataSmartInventory     AdGetV2DataSmartInventory = "UNIVERSAL"
+	SMART_AdGetV2DataSmartInventory         AdGetV2DataSmartInventory = "SMART"
+	UNIVERSAL_ALL_AdGetV2DataSmartInventory AdGetV2DataSmartInventory = "UNIVERSAL_ALL"
+	NORMAL_AdGetV2DataSmartInventory        AdGetV2DataSmartInventory = "NORMAL"
 )
 
 // All allowed values of AdGetV2DataSmartInventory enum
 var AllowedAdGetV2DataSmartInventoryEnumValues = []AdGetV2DataSmartInventory{
-	"SMART",
-	"NORMAL",
-	"UNIVERSAL_ALL",
 	"UNIVERSAL",
+	"SMART",
+	"UNIVERSAL_ALL",
+	"NORMAL",
 }
 
 // NewAdGetV2DataSmartInventoryFromValue returns a pointer to a valid AdGetV2DataSmartInventory

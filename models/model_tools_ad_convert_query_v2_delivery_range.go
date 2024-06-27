@@ -19,15 +19,15 @@ type ToolsAdConvertQueryV2DeliveryRange string
 
 // List of tools_ad_convert_query_v2_delivery_range
 const (
-	UNION_ToolsAdConvertQueryV2DeliveryRange     ToolsAdConvertQueryV2DeliveryRange = "UNION"
 	UNIVERSAL_ToolsAdConvertQueryV2DeliveryRange ToolsAdConvertQueryV2DeliveryRange = "UNIVERSAL"
+	UNION_ToolsAdConvertQueryV2DeliveryRange     ToolsAdConvertQueryV2DeliveryRange = "UNION"
 	DEFAULT_ToolsAdConvertQueryV2DeliveryRange   ToolsAdConvertQueryV2DeliveryRange = "DEFAULT"
 )
 
 // All allowed values of ToolsAdConvertQueryV2DeliveryRange enum
 var AllowedToolsAdConvertQueryV2DeliveryRangeEnumValues = []ToolsAdConvertQueryV2DeliveryRange{
-	"UNION",
 	"UNIVERSAL",
+	"UNION",
 	"DEFAULT",
 }
 

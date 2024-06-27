@@ -19,24 +19,24 @@ type ClueCouponUpdateV2Status string
 
 // List of clue_coupon_update_v2_status
 const (
-	NORMAL_ClueCouponUpdateV2Status      ClueCouponUpdateV2Status = "NORMAL"
-	AUDIT_FAIL_ClueCouponUpdateV2Status  ClueCouponUpdateV2Status = "AUDIT_FAIL"
-	UNAUDITED_ClueCouponUpdateV2Status   ClueCouponUpdateV2Status = "UNAUDITED"
-	DELETED_ClueCouponUpdateV2Status     ClueCouponUpdateV2Status = "DELETED"
 	AUDIT_DOING_ClueCouponUpdateV2Status ClueCouponUpdateV2Status = "AUDIT_DOING"
 	PAUSE_ClueCouponUpdateV2Status       ClueCouponUpdateV2Status = "PAUSE"
+	AUDIT_FAIL_ClueCouponUpdateV2Status  ClueCouponUpdateV2Status = "AUDIT_FAIL"
+	NORMAL_ClueCouponUpdateV2Status      ClueCouponUpdateV2Status = "NORMAL"
+	DELETED_ClueCouponUpdateV2Status     ClueCouponUpdateV2Status = "DELETED"
 	OFFLINE_ClueCouponUpdateV2Status     ClueCouponUpdateV2Status = "OFFLINE"
+	UNAUDITED_ClueCouponUpdateV2Status   ClueCouponUpdateV2Status = "UNAUDITED"
 )
 
 // All allowed values of ClueCouponUpdateV2Status enum
 var AllowedClueCouponUpdateV2StatusEnumValues = []ClueCouponUpdateV2Status{
-	"NORMAL",
-	"AUDIT_FAIL",
-	"UNAUDITED",
-	"DELETED",
 	"AUDIT_DOING",
 	"PAUSE",
+	"AUDIT_FAIL",
+	"NORMAL",
+	"DELETED",
 	"OFFLINE",
+	"UNAUDITED",
 }
 
 // NewClueCouponUpdateV2StatusFromValue returns a pointer to a valid ClueCouponUpdateV2Status

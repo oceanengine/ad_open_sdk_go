@@ -19,14 +19,14 @@ type ReportLiveRoomAnalysisGetV2OrderType string
 
 // List of report_live_room_analysis_get_v2_order_type
 const (
-	DESC_ReportLiveRoomAnalysisGetV2OrderType ReportLiveRoomAnalysisGetV2OrderType = "DESC"
 	ASC_ReportLiveRoomAnalysisGetV2OrderType  ReportLiveRoomAnalysisGetV2OrderType = "ASC"
+	DESC_ReportLiveRoomAnalysisGetV2OrderType ReportLiveRoomAnalysisGetV2OrderType = "DESC"
 )
 
 // All allowed values of ReportLiveRoomAnalysisGetV2OrderType enum
 var AllowedReportLiveRoomAnalysisGetV2OrderTypeEnumValues = []ReportLiveRoomAnalysisGetV2OrderType{
-	"DESC",
 	"ASC",
+	"DESC",
 }
 
 // NewReportLiveRoomAnalysisGetV2OrderTypeFromValue returns a pointer to a valid ReportLiveRoomAnalysisGetV2OrderType

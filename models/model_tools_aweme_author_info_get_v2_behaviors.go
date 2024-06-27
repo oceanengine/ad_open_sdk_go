@@ -19,34 +19,34 @@ type ToolsAwemeAuthorInfoGetV2Behaviors string
 
 // List of tools_aweme_author_info_get_v2_behaviors
 const (
+	SHARED_USER_ToolsAwemeAuthorInfoGetV2Behaviors          ToolsAwemeAuthorInfoGetV2Behaviors = "SHARED_USER"
+	GOODS_CARTS_ORDER_ToolsAwemeAuthorInfoGetV2Behaviors    ToolsAwemeAuthorInfoGetV2Behaviors = "GOODS_CARTS_ORDER"
 	LIVE_EFFECTIVE_WATCH_ToolsAwemeAuthorInfoGetV2Behaviors ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_EFFECTIVE_WATCH"
-	LIVE_GOODS_ORDER_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_GOODS_ORDER"
+	LIVE_GOODS_CLICK_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_GOODS_CLICK"
+	GOODS_CARTS_CLICK_ToolsAwemeAuthorInfoGetV2Behaviors    ToolsAwemeAuthorInfoGetV2Behaviors = "GOODS_CARTS_CLICK"
 	LIVE_WATCH_ToolsAwemeAuthorInfoGetV2Behaviors           ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_WATCH"
 	LIVE_EXCEPTIONAL_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_EXCEPTIONAL"
-	LIVE_COMMENT_ToolsAwemeAuthorInfoGetV2Behaviors         ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_COMMENT"
-	GOODS_CARTS_ORDER_ToolsAwemeAuthorInfoGetV2Behaviors    ToolsAwemeAuthorInfoGetV2Behaviors = "GOODS_CARTS_ORDER"
-	LIKED_USER_ToolsAwemeAuthorInfoGetV2Behaviors           ToolsAwemeAuthorInfoGetV2Behaviors = "LIKED_USER"
 	COMMENTED_USER_ToolsAwemeAuthorInfoGetV2Behaviors       ToolsAwemeAuthorInfoGetV2Behaviors = "COMMENTED_USER"
+	LIKED_USER_ToolsAwemeAuthorInfoGetV2Behaviors           ToolsAwemeAuthorInfoGetV2Behaviors = "LIKED_USER"
+	LIVE_GOODS_ORDER_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_GOODS_ORDER"
+	LIVE_COMMENT_ToolsAwemeAuthorInfoGetV2Behaviors         ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_COMMENT"
 	FOLLOWED_USER_ToolsAwemeAuthorInfoGetV2Behaviors        ToolsAwemeAuthorInfoGetV2Behaviors = "FOLLOWED_USER"
-	SHARED_USER_ToolsAwemeAuthorInfoGetV2Behaviors          ToolsAwemeAuthorInfoGetV2Behaviors = "SHARED_USER"
-	GOODS_CARTS_CLICK_ToolsAwemeAuthorInfoGetV2Behaviors    ToolsAwemeAuthorInfoGetV2Behaviors = "GOODS_CARTS_CLICK"
-	LIVE_GOODS_CLICK_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_GOODS_CLICK"
 )
 
 // All allowed values of ToolsAwemeAuthorInfoGetV2Behaviors enum
 var AllowedToolsAwemeAuthorInfoGetV2BehaviorsEnumValues = []ToolsAwemeAuthorInfoGetV2Behaviors{
+	"SHARED_USER",
+	"GOODS_CARTS_ORDER",
 	"LIVE_EFFECTIVE_WATCH",
-	"LIVE_GOODS_ORDER",
+	"LIVE_GOODS_CLICK",
+	"GOODS_CARTS_CLICK",
 	"LIVE_WATCH",
 	"LIVE_EXCEPTIONAL",
-	"LIVE_COMMENT",
-	"GOODS_CARTS_ORDER",
-	"LIKED_USER",
 	"COMMENTED_USER",
+	"LIKED_USER",
+	"LIVE_GOODS_ORDER",
+	"LIVE_COMMENT",
 	"FOLLOWED_USER",
-	"SHARED_USER",
-	"GOODS_CARTS_CLICK",
-	"LIVE_GOODS_CLICK",
 }
 
 // NewToolsAwemeAuthorInfoGetV2BehaviorsFromValue returns a pointer to a valid ToolsAwemeAuthorInfoGetV2Behaviors

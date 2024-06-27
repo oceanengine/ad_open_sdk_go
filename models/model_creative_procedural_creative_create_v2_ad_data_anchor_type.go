@@ -19,23 +19,23 @@ type CreativeProceduralCreativeCreateV2AdDataAnchorType string
 
 // List of creative_procedural_creative_create_v2_ad_data_anchor_type
 const (
-	PRIVATE_CHAT_CreativeProceduralCreativeCreateV2AdDataAnchorType         CreativeProceduralCreativeCreateV2AdDataAnchorType = "PRIVATE_CHAT"
-	INSURANCE_CreativeProceduralCreativeCreateV2AdDataAnchorType            CreativeProceduralCreativeCreateV2AdDataAnchorType = "INSURANCE"
 	APP_INTERNET_SERVICE_CreativeProceduralCreativeCreateV2AdDataAnchorType CreativeProceduralCreativeCreateV2AdDataAnchorType = "APP_INTERNET_SERVICE"
-	ONLINE_SUBSCRIBE_CreativeProceduralCreativeCreateV2AdDataAnchorType     CreativeProceduralCreativeCreateV2AdDataAnchorType = "ONLINE_SUBSCRIBE"
+	INSURANCE_CreativeProceduralCreativeCreateV2AdDataAnchorType            CreativeProceduralCreativeCreateV2AdDataAnchorType = "INSURANCE"
 	APP_SHOP_CreativeProceduralCreativeCreateV2AdDataAnchorType             CreativeProceduralCreativeCreateV2AdDataAnchorType = "APP_SHOP"
+	PRIVATE_CHAT_CreativeProceduralCreativeCreateV2AdDataAnchorType         CreativeProceduralCreativeCreateV2AdDataAnchorType = "PRIVATE_CHAT"
 	APP_GAME_CreativeProceduralCreativeCreateV2AdDataAnchorType             CreativeProceduralCreativeCreateV2AdDataAnchorType = "APP_GAME"
+	ONLINE_SUBSCRIBE_CreativeProceduralCreativeCreateV2AdDataAnchorType     CreativeProceduralCreativeCreateV2AdDataAnchorType = "ONLINE_SUBSCRIBE"
 	SHOPPING_CART_CreativeProceduralCreativeCreateV2AdDataAnchorType        CreativeProceduralCreativeCreateV2AdDataAnchorType = "SHOPPING_CART"
 )
 
 // All allowed values of CreativeProceduralCreativeCreateV2AdDataAnchorType enum
 var AllowedCreativeProceduralCreativeCreateV2AdDataAnchorTypeEnumValues = []CreativeProceduralCreativeCreateV2AdDataAnchorType{
-	"PRIVATE_CHAT",
-	"INSURANCE",
 	"APP_INTERNET_SERVICE",
-	"ONLINE_SUBSCRIBE",
+	"INSURANCE",
 	"APP_SHOP",
+	"PRIVATE_CHAT",
 	"APP_GAME",
+	"ONLINE_SUBSCRIBE",
 	"SHOPPING_CART",
 }
 

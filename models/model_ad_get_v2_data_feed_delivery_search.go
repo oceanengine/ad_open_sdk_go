@@ -19,14 +19,14 @@ type AdGetV2DataFeedDeliverySearch string
 
 // List of ad_get_v2_data_feed_delivery_search
 const (
-	HAS_OPEN_AdGetV2DataFeedDeliverySearch AdGetV2DataFeedDeliverySearch = "HAS_OPEN"
 	DISABLED_AdGetV2DataFeedDeliverySearch AdGetV2DataFeedDeliverySearch = "DISABLED"
+	HAS_OPEN_AdGetV2DataFeedDeliverySearch AdGetV2DataFeedDeliverySearch = "HAS_OPEN"
 )
 
 // All allowed values of AdGetV2DataFeedDeliverySearch enum
 var AllowedAdGetV2DataFeedDeliverySearchEnumValues = []AdGetV2DataFeedDeliverySearch{
-	"HAS_OPEN",
 	"DISABLED",
+	"HAS_OPEN",
 }
 
 // NewAdGetV2DataFeedDeliverySearchFromValue returns a pointer to a valid AdGetV2DataFeedDeliverySearch

@@ -19,14 +19,14 @@ type ToolsAdRaiseSetV2OptType string
 
 // List of tools_ad_raise_set_v2_opt_type
 const (
-	STOP_RAISE_ToolsAdRaiseSetV2OptType  ToolsAdRaiseSetV2OptType = "STOP_RAISE"
 	CLICK_RAISE_ToolsAdRaiseSetV2OptType ToolsAdRaiseSetV2OptType = "CLICK_RAISE"
+	STOP_RAISE_ToolsAdRaiseSetV2OptType  ToolsAdRaiseSetV2OptType = "STOP_RAISE"
 )
 
 // All allowed values of ToolsAdRaiseSetV2OptType enum
 var AllowedToolsAdRaiseSetV2OptTypeEnumValues = []ToolsAdRaiseSetV2OptType{
-	"STOP_RAISE",
 	"CLICK_RAISE",
+	"STOP_RAISE",
 }
 
 // NewToolsAdRaiseSetV2OptTypeFromValue returns a pointer to a valid ToolsAdRaiseSetV2OptType

@@ -19,61 +19,61 @@ type AdGetV2DataAudienceAndroidOsv string
 
 // List of ad_get_v2_data_audience_android_osv
 const (
-	Enum_5_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "5.0"
-	Enum_3_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "3.0"
-	Enum_2_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "2.0"
-	Enum_3_1_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "3.1"
-	Enum_8_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "8.0"
-	Enum_10_1_AdGetV2DataAudienceAndroidOsv AdGetV2DataAudienceAndroidOsv = "10.1"
 	Enum_2_3_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "2.3"
-	Enum_7_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "7.0"
-	Enum_6_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "6.0"
-	Enum_10_0_AdGetV2DataAudienceAndroidOsv AdGetV2DataAudienceAndroidOsv = "10.0"
+	Enum_10_1_AdGetV2DataAudienceAndroidOsv AdGetV2DataAudienceAndroidOsv = "10.1"
+	Enum_4_3_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "4.3"
+	Enum_8_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "8.0"
 	Enum_9_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "9.0"
+	Enum_4_4_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "4.4"
+	Enum_11_0_AdGetV2DataAudienceAndroidOsv AdGetV2DataAudienceAndroidOsv = "11.0"
 	Enum_2_1_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "2.1"
+	Enum_3_2_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "3.2"
+	Enum_3_1_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "3.1"
 	Enum_7_1_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "7.1"
+	Enum_6_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "6.0"
+	Enum_3_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "3.0"
+	Enum_8_1_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "8.1"
+	Enum_2_2_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "2.2"
+	Enum_10_0_AdGetV2DataAudienceAndroidOsv AdGetV2DataAudienceAndroidOsv = "10.0"
+	Enum_2_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "2.0"
+	Enum_4_2_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "4.2"
+	Enum_5_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "5.0"
 	Enum_5_1_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "5.1"
+	Enum_7_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "7.0"
 	Enum_4_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "4.0"
 	NONE_AdGetV2DataAudienceAndroidOsv      AdGetV2DataAudienceAndroidOsv = "NONE"
 	Enum_0_0_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "0.0"
-	Enum_4_2_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "4.2"
 	Enum_4_5_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "4.5"
-	Enum_3_2_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "3.2"
-	Enum_4_4_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "4.4"
-	Enum_11_0_AdGetV2DataAudienceAndroidOsv AdGetV2DataAudienceAndroidOsv = "11.0"
-	Enum_4_3_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "4.3"
-	Enum_2_2_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "2.2"
-	Enum_8_1_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "8.1"
 	Enum_4_1_AdGetV2DataAudienceAndroidOsv  AdGetV2DataAudienceAndroidOsv = "4.1"
 )
 
 // All allowed values of AdGetV2DataAudienceAndroidOsv enum
 var AllowedAdGetV2DataAudienceAndroidOsvEnumValues = []AdGetV2DataAudienceAndroidOsv{
-	"5.0",
-	"3.0",
-	"2.0",
-	"3.1",
-	"8.0",
-	"10.1",
 	"2.3",
-	"7.0",
-	"6.0",
-	"10.0",
+	"10.1",
+	"4.3",
+	"8.0",
 	"9.0",
+	"4.4",
+	"11.0",
 	"2.1",
+	"3.2",
+	"3.1",
 	"7.1",
+	"6.0",
+	"3.0",
+	"8.1",
+	"2.2",
+	"10.0",
+	"2.0",
+	"4.2",
+	"5.0",
 	"5.1",
+	"7.0",
 	"4.0",
 	"NONE",
 	"0.0",
-	"4.2",
 	"4.5",
-	"3.2",
-	"4.4",
-	"11.0",
-	"4.3",
-	"2.2",
-	"8.1",
 	"4.1",
 }
 

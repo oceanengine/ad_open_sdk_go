@@ -19,14 +19,14 @@ type ReportAdvertiserGetV2DataListCampaignType string
 
 // List of report_advertiser_get_v2_data_list_campaign_type
 const (
-	FEED_ReportAdvertiserGetV2DataListCampaignType   ReportAdvertiserGetV2DataListCampaignType = "FEED"
 	SEARCH_ReportAdvertiserGetV2DataListCampaignType ReportAdvertiserGetV2DataListCampaignType = "SEARCH"
+	FEED_ReportAdvertiserGetV2DataListCampaignType   ReportAdvertiserGetV2DataListCampaignType = "FEED"
 )
 
 // All allowed values of ReportAdvertiserGetV2DataListCampaignType enum
 var AllowedReportAdvertiserGetV2DataListCampaignTypeEnumValues = []ReportAdvertiserGetV2DataListCampaignType{
-	"FEED",
 	"SEARCH",
+	"FEED",
 }
 
 // NewReportAdvertiserGetV2DataListCampaignTypeFromValue returns a pointer to a valid ReportAdvertiserGetV2DataListCampaignType

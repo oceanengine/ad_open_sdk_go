@@ -19,14 +19,14 @@ type EnterpriseFlowCategoryGetV10TimeDimension string
 
 // List of enterprise_flow_category_get_v1.0_time_dimension
 const (
-	SUM_EnterpriseFlowCategoryGetV10TimeDimension   EnterpriseFlowCategoryGetV10TimeDimension = "SUM"
 	DAILY_EnterpriseFlowCategoryGetV10TimeDimension EnterpriseFlowCategoryGetV10TimeDimension = "DAILY"
+	SUM_EnterpriseFlowCategoryGetV10TimeDimension   EnterpriseFlowCategoryGetV10TimeDimension = "SUM"
 )
 
 // All allowed values of EnterpriseFlowCategoryGetV10TimeDimension enum
 var AllowedEnterpriseFlowCategoryGetV10TimeDimensionEnumValues = []EnterpriseFlowCategoryGetV10TimeDimension{
-	"SUM",
 	"DAILY",
+	"SUM",
 }
 
 // NewEnterpriseFlowCategoryGetV10TimeDimensionFromValue returns a pointer to a valid EnterpriseFlowCategoryGetV10TimeDimension

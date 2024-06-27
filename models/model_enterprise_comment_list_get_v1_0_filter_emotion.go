@@ -19,18 +19,18 @@ type EnterpriseCommentListGetV10FilterEmotion string
 
 // List of enterprise_comment_list_get_v1.0_filter_emotion
 const (
-	ANY_EMOTION_EnterpriseCommentListGetV10FilterEmotion EnterpriseCommentListGetV10FilterEmotion = "ANY_EMOTION"
+	NEU_EMOTION_EnterpriseCommentListGetV10FilterEmotion EnterpriseCommentListGetV10FilterEmotion = "NEU_EMOTION"
 	POS_EMOTION_EnterpriseCommentListGetV10FilterEmotion EnterpriseCommentListGetV10FilterEmotion = "POS_EMOTION"
 	NEG_EMOTION_EnterpriseCommentListGetV10FilterEmotion EnterpriseCommentListGetV10FilterEmotion = "NEG_EMOTION"
-	NEU_EMOTION_EnterpriseCommentListGetV10FilterEmotion EnterpriseCommentListGetV10FilterEmotion = "NEU_EMOTION"
+	ANY_EMOTION_EnterpriseCommentListGetV10FilterEmotion EnterpriseCommentListGetV10FilterEmotion = "ANY_EMOTION"
 )
 
 // All allowed values of EnterpriseCommentListGetV10FilterEmotion enum
 var AllowedEnterpriseCommentListGetV10FilterEmotionEnumValues = []EnterpriseCommentListGetV10FilterEmotion{
-	"ANY_EMOTION",
+	"NEU_EMOTION",
 	"POS_EMOTION",
 	"NEG_EMOTION",
-	"NEU_EMOTION",
+	"ANY_EMOTION",
 }
 
 // NewEnterpriseCommentListGetV10FilterEmotionFromValue returns a pointer to a valid EnterpriseCommentListGetV10FilterEmotion

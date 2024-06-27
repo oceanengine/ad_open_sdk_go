@@ -115,15 +115,23 @@ func (a *StarMcnGetContractChallengeAuthorItemListV2V2ApiService) getExecute(r *
 	if r.demandId == nil {
 		return localVarReturnValue, nil, ReportError("demandId is required and must be specified")
 	}
+	if r.page == nil {
+		return localVarReturnValue, nil, ReportError("page is required and must be specified")
+	}
+	if r.pageSize == nil {
+		return localVarReturnValue, nil, ReportError("pageSize is required and must be specified")
+	}
+	if *r.pageSize < 1 {
+		return localVarReturnValue, nil, ReportError("pageSize must be greater than 1")
+	}
+	if *r.pageSize > 30 {
+		return localVarReturnValue, nil, ReportError("pageSize must be less than 30")
+	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "star_id", r.starId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "demand_id", r.demandId)
-	if r.page != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
-	}
-	if r.pageSize != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
-	}
+	parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
+	parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
 	if r.developerId != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "developer_id", r.developerId)
 	}

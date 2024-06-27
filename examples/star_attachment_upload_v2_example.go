@@ -24,7 +24,7 @@ import (
 
 type ApiOpenApi2StarAttachmentUploadPostRequestExample struct {
 	File     *FormFileInfo `json:"file"`
-	FileName *FormFileInfo `json:"file_name"`
+	FileName string        `json:"file_name"`
 	StarId   int64         `json:"star_id"`
 }
 

@@ -19,24 +19,24 @@ type StarDemandListV2FilteringUniversalOrderStatus string
 
 // List of star_demand_list_v2_filtering_universal_order_status
 const (
-	FINISHED_StarDemandListV2FilteringUniversalOrderStatus      StarDemandListV2FilteringUniversalOrderStatus = "FINISHED"
-	CANCELED_StarDemandListV2FilteringUniversalOrderStatus      StarDemandListV2FilteringUniversalOrderStatus = "CANCELED"
-	RECEIVEING_StarDemandListV2FilteringUniversalOrderStatus    StarDemandListV2FilteringUniversalOrderStatus = "RECEIVEING"
-	WAIT_EVALUATE_StarDemandListV2FilteringUniversalOrderStatus StarDemandListV2FilteringUniversalOrderStatus = "WAIT_EVALUATE"
 	WAIT_PAYMENT_StarDemandListV2FilteringUniversalOrderStatus  StarDemandListV2FilteringUniversalOrderStatus = "WAIT_PAYMENT"
-	ONGOING_StarDemandListV2FilteringUniversalOrderStatus       StarDemandListV2FilteringUniversalOrderStatus = "ONGOING"
 	ALL_StarDemandListV2FilteringUniversalOrderStatus           StarDemandListV2FilteringUniversalOrderStatus = "ALL"
+	ONGOING_StarDemandListV2FilteringUniversalOrderStatus       StarDemandListV2FilteringUniversalOrderStatus = "ONGOING"
+	RECEIVEING_StarDemandListV2FilteringUniversalOrderStatus    StarDemandListV2FilteringUniversalOrderStatus = "RECEIVEING"
+	FINISHED_StarDemandListV2FilteringUniversalOrderStatus      StarDemandListV2FilteringUniversalOrderStatus = "FINISHED"
+	WAIT_EVALUATE_StarDemandListV2FilteringUniversalOrderStatus StarDemandListV2FilteringUniversalOrderStatus = "WAIT_EVALUATE"
+	CANCELED_StarDemandListV2FilteringUniversalOrderStatus      StarDemandListV2FilteringUniversalOrderStatus = "CANCELED"
 )
 
 // All allowed values of StarDemandListV2FilteringUniversalOrderStatus enum
 var AllowedStarDemandListV2FilteringUniversalOrderStatusEnumValues = []StarDemandListV2FilteringUniversalOrderStatus{
-	"FINISHED",
-	"CANCELED",
-	"RECEIVEING",
-	"WAIT_EVALUATE",
 	"WAIT_PAYMENT",
-	"ONGOING",
 	"ALL",
+	"ONGOING",
+	"RECEIVEING",
+	"FINISHED",
+	"WAIT_EVALUATE",
+	"CANCELED",
 }
 
 // NewStarDemandListV2FilteringUniversalOrderStatusFromValue returns a pointer to a valid StarDemandListV2FilteringUniversalOrderStatus

@@ -19,24 +19,24 @@ type AdGetV2DataHideIfConverted string
 
 // List of ad_get_v2_data_hide_if_converted
 const (
-	ADVERTISER_AdGetV2DataHideIfConverted   AdGetV2DataHideIfConverted = "ADVERTISER"
-	APP_AdGetV2DataHideIfConverted          AdGetV2DataHideIfConverted = "APP"
-	NO_EXCLUDE_AdGetV2DataHideIfConverted   AdGetV2DataHideIfConverted = "NO_EXCLUDE"
 	ORGANIZATION_AdGetV2DataHideIfConverted AdGetV2DataHideIfConverted = "ORGANIZATION"
-	CAMPAIGN_AdGetV2DataHideIfConverted     AdGetV2DataHideIfConverted = "CAMPAIGN"
 	CUSTOMER_AdGetV2DataHideIfConverted     AdGetV2DataHideIfConverted = "CUSTOMER"
+	APP_AdGetV2DataHideIfConverted          AdGetV2DataHideIfConverted = "APP"
 	AD_AdGetV2DataHideIfConverted           AdGetV2DataHideIfConverted = "AD"
+	CAMPAIGN_AdGetV2DataHideIfConverted     AdGetV2DataHideIfConverted = "CAMPAIGN"
+	ADVERTISER_AdGetV2DataHideIfConverted   AdGetV2DataHideIfConverted = "ADVERTISER"
+	NO_EXCLUDE_AdGetV2DataHideIfConverted   AdGetV2DataHideIfConverted = "NO_EXCLUDE"
 )
 
 // All allowed values of AdGetV2DataHideIfConverted enum
 var AllowedAdGetV2DataHideIfConvertedEnumValues = []AdGetV2DataHideIfConverted{
-	"ADVERTISER",
-	"APP",
-	"NO_EXCLUDE",
 	"ORGANIZATION",
-	"CAMPAIGN",
 	"CUSTOMER",
+	"APP",
 	"AD",
+	"CAMPAIGN",
+	"ADVERTISER",
+	"NO_EXCLUDE",
 }
 
 // NewAdGetV2DataHideIfConvertedFromValue returns a pointer to a valid AdGetV2DataHideIfConverted

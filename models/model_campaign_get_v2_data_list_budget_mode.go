@@ -19,16 +19,16 @@ type CampaignGetV2DataListBudgetMode string
 
 // List of campaign_get_v2_data_list_budget_mode
 const (
-	BUDGET_MODE_DAY_CampaignGetV2DataListBudgetMode      CampaignGetV2DataListBudgetMode = "BUDGET_MODE_DAY"
-	BUDGET_MODE_TOTAL_CampaignGetV2DataListBudgetMode    CampaignGetV2DataListBudgetMode = "BUDGET_MODE_TOTAL"
 	BUDGET_MODE_INFINITE_CampaignGetV2DataListBudgetMode CampaignGetV2DataListBudgetMode = "BUDGET_MODE_INFINITE"
+	BUDGET_MODE_TOTAL_CampaignGetV2DataListBudgetMode    CampaignGetV2DataListBudgetMode = "BUDGET_MODE_TOTAL"
+	BUDGET_MODE_DAY_CampaignGetV2DataListBudgetMode      CampaignGetV2DataListBudgetMode = "BUDGET_MODE_DAY"
 )
 
 // All allowed values of CampaignGetV2DataListBudgetMode enum
 var AllowedCampaignGetV2DataListBudgetModeEnumValues = []CampaignGetV2DataListBudgetMode{
-	"BUDGET_MODE_DAY",
-	"BUDGET_MODE_TOTAL",
 	"BUDGET_MODE_INFINITE",
+	"BUDGET_MODE_TOTAL",
+	"BUDGET_MODE_DAY",
 }
 
 // NewCampaignGetV2DataListBudgetModeFromValue returns a pointer to a valid CampaignGetV2DataListBudgetMode

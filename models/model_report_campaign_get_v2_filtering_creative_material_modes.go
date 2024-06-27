@@ -19,16 +19,16 @@ type ReportCampaignGetV2FilteringCreativeMaterialModes string
 
 // List of report_campaign_get_v2_filtering_creative_material_modes
 const (
+	CTR_ReportCampaignGetV2FilteringCreativeMaterialModes             ReportCampaignGetV2FilteringCreativeMaterialModes = "CTR"
 	INTERVENE_ReportCampaignGetV2FilteringCreativeMaterialModes       ReportCampaignGetV2FilteringCreativeMaterialModes = "INTERVENE"
 	STATIC_ASSEMBLE_ReportCampaignGetV2FilteringCreativeMaterialModes ReportCampaignGetV2FilteringCreativeMaterialModes = "STATIC_ASSEMBLE"
-	CTR_ReportCampaignGetV2FilteringCreativeMaterialModes             ReportCampaignGetV2FilteringCreativeMaterialModes = "CTR"
 )
 
 // All allowed values of ReportCampaignGetV2FilteringCreativeMaterialModes enum
 var AllowedReportCampaignGetV2FilteringCreativeMaterialModesEnumValues = []ReportCampaignGetV2FilteringCreativeMaterialModes{
+	"CTR",
 	"INTERVENE",
 	"STATIC_ASSEMBLE",
-	"CTR",
 }
 
 // NewReportCampaignGetV2FilteringCreativeMaterialModesFromValue returns a pointer to a valid ReportCampaignGetV2FilteringCreativeMaterialModes

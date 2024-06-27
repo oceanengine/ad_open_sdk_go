@@ -19,31 +19,31 @@ type ToolsAdConvertOptimizedTargetGetV2PromotionContent string
 
 // List of tools_ad_convert_optimized_target_get_v2_promotion_content
 const (
-	EXTERNAL_URL_ToolsAdConvertOptimizedTargetGetV2PromotionContent    ToolsAdConvertOptimizedTargetGetV2PromotionContent = "EXTERNAL_URL"
-	NORMAL_ToolsAdConvertOptimizedTargetGetV2PromotionContent          ToolsAdConvertOptimizedTargetGetV2PromotionContent = "NORMAL"
-	THIRD_PARTY_ToolsAdConvertOptimizedTargetGetV2PromotionContent     ToolsAdConvertOptimizedTargetGetV2PromotionContent = "THIRD_PARTY"
 	SHOP_ToolsAdConvertOptimizedTargetGetV2PromotionContent            ToolsAdConvertOptimizedTargetGetV2PromotionContent = "SHOP"
-	DOUYIN_ToolsAdConvertOptimizedTargetGetV2PromotionContent          ToolsAdConvertOptimizedTargetGetV2PromotionContent = "DOUYIN"
-	MICRO_APP_ToolsAdConvertOptimizedTargetGetV2PromotionContent       ToolsAdConvertOptimizedTargetGetV2PromotionContent = "MICRO_APP"
+	NORMAL_ToolsAdConvertOptimizedTargetGetV2PromotionContent          ToolsAdConvertOptimizedTargetGetV2PromotionContent = "NORMAL"
+	EXTERNAL_URL_ToolsAdConvertOptimizedTargetGetV2PromotionContent    ToolsAdConvertOptimizedTargetGetV2PromotionContent = "EXTERNAL_URL"
 	QUICK_APP_URL_ToolsAdConvertOptimizedTargetGetV2PromotionContent   ToolsAdConvertOptimizedTargetGetV2PromotionContent = "QUICK_APP_URL"
-	AWEME_HOME_PAGE_ToolsAdConvertOptimizedTargetGetV2PromotionContent ToolsAdConvertOptimizedTargetGetV2PromotionContent = "AWEME_HOME_PAGE"
+	DOUYIN_ToolsAdConvertOptimizedTargetGetV2PromotionContent          ToolsAdConvertOptimizedTargetGetV2PromotionContent = "DOUYIN"
 	LIVE_ROOM_ToolsAdConvertOptimizedTargetGetV2PromotionContent       ToolsAdConvertOptimizedTargetGetV2PromotionContent = "LIVE_ROOM"
+	AWEME_HOME_PAGE_ToolsAdConvertOptimizedTargetGetV2PromotionContent ToolsAdConvertOptimizedTargetGetV2PromotionContent = "AWEME_HOME_PAGE"
 	GOODS_LINK_ToolsAdConvertOptimizedTargetGetV2PromotionContent      ToolsAdConvertOptimizedTargetGetV2PromotionContent = "GOODS_LINK"
+	MICRO_APP_ToolsAdConvertOptimizedTargetGetV2PromotionContent       ToolsAdConvertOptimizedTargetGetV2PromotionContent = "MICRO_APP"
+	THIRD_PARTY_ToolsAdConvertOptimizedTargetGetV2PromotionContent     ToolsAdConvertOptimizedTargetGetV2PromotionContent = "THIRD_PARTY"
 	DOWNLOAD_URL_ToolsAdConvertOptimizedTargetGetV2PromotionContent    ToolsAdConvertOptimizedTargetGetV2PromotionContent = "DOWNLOAD_URL"
 )
 
 // All allowed values of ToolsAdConvertOptimizedTargetGetV2PromotionContent enum
 var AllowedToolsAdConvertOptimizedTargetGetV2PromotionContentEnumValues = []ToolsAdConvertOptimizedTargetGetV2PromotionContent{
-	"EXTERNAL_URL",
-	"NORMAL",
-	"THIRD_PARTY",
 	"SHOP",
-	"DOUYIN",
-	"MICRO_APP",
+	"NORMAL",
+	"EXTERNAL_URL",
 	"QUICK_APP_URL",
-	"AWEME_HOME_PAGE",
+	"DOUYIN",
 	"LIVE_ROOM",
+	"AWEME_HOME_PAGE",
 	"GOODS_LINK",
+	"MICRO_APP",
+	"THIRD_PARTY",
 	"DOWNLOAD_URL",
 }
 

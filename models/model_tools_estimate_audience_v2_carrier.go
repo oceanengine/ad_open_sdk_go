@@ -19,16 +19,16 @@ type ToolsEstimateAudienceV2Carrier string
 
 // List of tools_estimate_audience_v2_carrier
 const (
-	MOBILE_ToolsEstimateAudienceV2Carrier ToolsEstimateAudienceV2Carrier = "MOBILE"
 	UNICOM_ToolsEstimateAudienceV2Carrier ToolsEstimateAudienceV2Carrier = "UNICOM"
 	TELCOM_ToolsEstimateAudienceV2Carrier ToolsEstimateAudienceV2Carrier = "TELCOM"
+	MOBILE_ToolsEstimateAudienceV2Carrier ToolsEstimateAudienceV2Carrier = "MOBILE"
 )
 
 // All allowed values of ToolsEstimateAudienceV2Carrier enum
 var AllowedToolsEstimateAudienceV2CarrierEnumValues = []ToolsEstimateAudienceV2Carrier{
-	"MOBILE",
 	"UNICOM",
 	"TELCOM",
+	"MOBILE",
 }
 
 // NewToolsEstimateAudienceV2CarrierFromValue returns a pointer to a valid ToolsEstimateAudienceV2Carrier

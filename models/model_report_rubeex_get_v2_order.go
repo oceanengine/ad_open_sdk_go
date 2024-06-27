@@ -19,14 +19,14 @@ type ReportRubeexGetV2Order string
 
 // List of report_rubeex_get_v2_order
 const (
-	DESC_ReportRubeexGetV2Order ReportRubeexGetV2Order = "DESC"
 	ASC_ReportRubeexGetV2Order  ReportRubeexGetV2Order = "ASC"
+	DESC_ReportRubeexGetV2Order ReportRubeexGetV2Order = "DESC"
 )
 
 // All allowed values of ReportRubeexGetV2Order enum
 var AllowedReportRubeexGetV2OrderEnumValues = []ReportRubeexGetV2Order{
-	"DESC",
 	"ASC",
+	"DESC",
 }
 
 // NewReportRubeexGetV2OrderFromValue returns a pointer to a valid ReportRubeexGetV2Order

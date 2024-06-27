@@ -19,16 +19,16 @@ type ReportAgentGetV2V2FilteringActive string
 
 // List of report_agent_get_v2_v2_filtering_active
 const (
-	ALL_ReportAgentGetV2V2FilteringActive    ReportAgentGetV2V2FilteringActive = "ALL"
 	ACTIVE_ReportAgentGetV2V2FilteringActive ReportAgentGetV2V2FilteringActive = "ACTIVE"
 	SILENT_ReportAgentGetV2V2FilteringActive ReportAgentGetV2V2FilteringActive = "SILENT"
+	ALL_ReportAgentGetV2V2FilteringActive    ReportAgentGetV2V2FilteringActive = "ALL"
 )
 
 // All allowed values of ReportAgentGetV2V2FilteringActive enum
 var AllowedReportAgentGetV2V2FilteringActiveEnumValues = []ReportAgentGetV2V2FilteringActive{
-	"ALL",
 	"ACTIVE",
 	"SILENT",
+	"ALL",
 }
 
 // NewReportAgentGetV2V2FilteringActiveFromValue returns a pointer to a valid ReportAgentGetV2V2FilteringActive

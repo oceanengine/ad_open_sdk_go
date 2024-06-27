@@ -19,38 +19,38 @@ type ReportCreativeGetV2FilteringImageModes string
 
 // List of report_creative_get_v2_filtering_image_modes
 const (
-	CREATIVE_IMAGE_MODE_DISPLAY_WINDOW_ReportCreativeGetV2FilteringImageModes     ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_DISPLAY_WINDOW"
-	CREATIVE_IMAGE_MODE_UNION_SPLASH_VIDEO_ReportCreativeGetV2FilteringImageModes ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_UNION_SPLASH_VIDEO"
-	SEARCH_AD_SMALL_IMAGE_ReportCreativeGetV2FilteringImageModes                  ReportCreativeGetV2FilteringImageModes = "SEARCH_AD_SMALL_IMAGE"
-	CREATIVE_IMAGE_MODE_VIDEO_VERTICAL_ReportCreativeGetV2FilteringImageModes     ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_VIDEO_VERTICAL"
-	CREATIVE_IMAGE_MODE_SMALL_ReportCreativeGetV2FilteringImageModes              ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_SMALL"
-	CREATIVE_IMAGE_MODE_VIDEO_ReportCreativeGetV2FilteringImageModes              ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_VIDEO"
-	CREATIVE_IMAGE_MODE_LARGE_ReportCreativeGetV2FilteringImageModes              ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_LARGE"
-	CREATIVE_IMAGE_MODE_AWEME_LIVE_ReportCreativeGetV2FilteringImageModes         ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_AWEME_LIVE"
-	CREATIVE_IMAGE_MODE_DECORATION_COUPON_ReportCreativeGetV2FilteringImageModes  ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_DECORATION_COUPON"
 	CREATIVE_IMAGE_MODE_GROUP_ReportCreativeGetV2FilteringImageModes              ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_GROUP"
+	CREATIVE_IMAGE_MODE_LARGE_ReportCreativeGetV2FilteringImageModes              ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_LARGE"
+	SEARCH_AD_SMALL_IMAGE_ReportCreativeGetV2FilteringImageModes                  ReportCreativeGetV2FilteringImageModes = "SEARCH_AD_SMALL_IMAGE"
+	CREATIVE_IMAGE_MODE_VIDEO_ReportCreativeGetV2FilteringImageModes              ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_VIDEO"
+	TOUTIAO_SEARCH_AD_IMAGE_ReportCreativeGetV2FilteringImageModes                ReportCreativeGetV2FilteringImageModes = "TOUTIAO_SEARCH_AD_IMAGE"
+	CREATIVE_IMAGE_MODE_UNION_SPLASH_VIDEO_ReportCreativeGetV2FilteringImageModes ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_UNION_SPLASH_VIDEO"
+	CREATIVE_IMAGE_MODE_DISPLAY_WINDOW_ReportCreativeGetV2FilteringImageModes     ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_DISPLAY_WINDOW"
+	CREATIVE_IMAGE_MODE_SMALL_ReportCreativeGetV2FilteringImageModes              ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_SMALL"
 	CREATIVE_IMAGE_MODE_UNION_SPLASH_ReportCreativeGetV2FilteringImageModes       ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_UNION_SPLASH"
 	CREATIVE_IMAGE_MODE_GIF_ReportCreativeGetV2FilteringImageModes                ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_GIF"
-	TOUTIAO_SEARCH_AD_IMAGE_ReportCreativeGetV2FilteringImageModes                ReportCreativeGetV2FilteringImageModes = "TOUTIAO_SEARCH_AD_IMAGE"
+	CREATIVE_IMAGE_MODE_VIDEO_VERTICAL_ReportCreativeGetV2FilteringImageModes     ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_VIDEO_VERTICAL"
 	CREATIVE_IMAGE_MODE_LARGE_VERTICAL_ReportCreativeGetV2FilteringImageModes     ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_LARGE_VERTICAL"
+	CREATIVE_IMAGE_MODE_AWEME_LIVE_ReportCreativeGetV2FilteringImageModes         ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_AWEME_LIVE"
+	CREATIVE_IMAGE_MODE_DECORATION_COUPON_ReportCreativeGetV2FilteringImageModes  ReportCreativeGetV2FilteringImageModes = "CREATIVE_IMAGE_MODE_DECORATION_COUPON"
 )
 
 // All allowed values of ReportCreativeGetV2FilteringImageModes enum
 var AllowedReportCreativeGetV2FilteringImageModesEnumValues = []ReportCreativeGetV2FilteringImageModes{
-	"CREATIVE_IMAGE_MODE_DISPLAY_WINDOW",
-	"CREATIVE_IMAGE_MODE_UNION_SPLASH_VIDEO",
-	"SEARCH_AD_SMALL_IMAGE",
-	"CREATIVE_IMAGE_MODE_VIDEO_VERTICAL",
-	"CREATIVE_IMAGE_MODE_SMALL",
-	"CREATIVE_IMAGE_MODE_VIDEO",
-	"CREATIVE_IMAGE_MODE_LARGE",
-	"CREATIVE_IMAGE_MODE_AWEME_LIVE",
-	"CREATIVE_IMAGE_MODE_DECORATION_COUPON",
 	"CREATIVE_IMAGE_MODE_GROUP",
+	"CREATIVE_IMAGE_MODE_LARGE",
+	"SEARCH_AD_SMALL_IMAGE",
+	"CREATIVE_IMAGE_MODE_VIDEO",
+	"TOUTIAO_SEARCH_AD_IMAGE",
+	"CREATIVE_IMAGE_MODE_UNION_SPLASH_VIDEO",
+	"CREATIVE_IMAGE_MODE_DISPLAY_WINDOW",
+	"CREATIVE_IMAGE_MODE_SMALL",
 	"CREATIVE_IMAGE_MODE_UNION_SPLASH",
 	"CREATIVE_IMAGE_MODE_GIF",
-	"TOUTIAO_SEARCH_AD_IMAGE",
+	"CREATIVE_IMAGE_MODE_VIDEO_VERTICAL",
 	"CREATIVE_IMAGE_MODE_LARGE_VERTICAL",
+	"CREATIVE_IMAGE_MODE_AWEME_LIVE",
+	"CREATIVE_IMAGE_MODE_DECORATION_COUPON",
 }
 
 // NewReportCreativeGetV2FilteringImageModesFromValue returns a pointer to a valid ReportCreativeGetV2FilteringImageModes

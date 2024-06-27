@@ -20,15 +20,15 @@ type ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountType strin
 // List of tools_app_management_bp_share_cancel_v2_data_success_list_all_account_account_type
 const (
 	BP_ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountType   ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountType = "BP"
-	AD_ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountType   ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountType = "AD"
 	STAR_ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountType ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountType = "STAR"
+	AD_ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountType   ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountType = "AD"
 )
 
 // All allowed values of ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountType enum
 var AllowedToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountTypeEnumValues = []ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountType{
 	"BP",
-	"AD",
 	"STAR",
+	"AD",
 }
 
 // NewToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountTypeFromValue returns a pointer to a valid ToolsAppManagementBpShareCancelV2DataSuccessListAllAccountAccountType

@@ -19,18 +19,18 @@ type ToolsBidSuggestV2Ac string
 
 // List of tools_bid_suggest_v2_ac
 const (
-	Enum_5_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "5G"
 	WIFI_ToolsBidSuggestV2Ac     ToolsBidSuggestV2Ac = "WIFI"
 	Enum_3_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "3G"
+	Enum_5_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "5G"
 	Enum_2_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "2G"
 	Enum_4_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "4G"
 )
 
 // All allowed values of ToolsBidSuggestV2Ac enum
 var AllowedToolsBidSuggestV2AcEnumValues = []ToolsBidSuggestV2Ac{
-	"5G",
 	"WIFI",
 	"3G",
+	"5G",
 	"2G",
 	"4G",
 }

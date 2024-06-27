@@ -19,30 +19,30 @@ type ToolsAdConvertQueryV2LandingType string
 
 // List of tools_ad_convert_query_v2_landing_type
 const (
-	APP_ToolsAdConvertQueryV2LandingType       ToolsAdConvertQueryV2LandingType = "APP"
+	DPA_ToolsAdConvertQueryV2LandingType       ToolsAdConvertQueryV2LandingType = "DPA"
+	SHOP_ToolsAdConvertQueryV2LandingType      ToolsAdConvertQueryV2LandingType = "SHOP"
+	STORE_ToolsAdConvertQueryV2LandingType     ToolsAdConvertQueryV2LandingType = "STORE"
+	GOODS_ToolsAdConvertQueryV2LandingType     ToolsAdConvertQueryV2LandingType = "GOODS"
+	AWEME_ToolsAdConvertQueryV2LandingType     ToolsAdConvertQueryV2LandingType = "AWEME"
 	QUICK_APP_ToolsAdConvertQueryV2LandingType ToolsAdConvertQueryV2LandingType = "QUICK_APP"
 	LIVE_ToolsAdConvertQueryV2LandingType      ToolsAdConvertQueryV2LandingType = "LIVE"
-	SHOP_ToolsAdConvertQueryV2LandingType      ToolsAdConvertQueryV2LandingType = "SHOP"
-	DPA_ToolsAdConvertQueryV2LandingType       ToolsAdConvertQueryV2LandingType = "DPA"
-	AWEME_ToolsAdConvertQueryV2LandingType     ToolsAdConvertQueryV2LandingType = "AWEME"
-	LINK_ToolsAdConvertQueryV2LandingType      ToolsAdConvertQueryV2LandingType = "LINK"
-	STORE_ToolsAdConvertQueryV2LandingType     ToolsAdConvertQueryV2LandingType = "STORE"
+	APP_ToolsAdConvertQueryV2LandingType       ToolsAdConvertQueryV2LandingType = "APP"
 	ARTICLE_ToolsAdConvertQueryV2LandingType   ToolsAdConvertQueryV2LandingType = "ARTICLE"
-	GOODS_ToolsAdConvertQueryV2LandingType     ToolsAdConvertQueryV2LandingType = "GOODS"
+	LINK_ToolsAdConvertQueryV2LandingType      ToolsAdConvertQueryV2LandingType = "LINK"
 )
 
 // All allowed values of ToolsAdConvertQueryV2LandingType enum
 var AllowedToolsAdConvertQueryV2LandingTypeEnumValues = []ToolsAdConvertQueryV2LandingType{
-	"APP",
+	"DPA",
+	"SHOP",
+	"STORE",
+	"GOODS",
+	"AWEME",
 	"QUICK_APP",
 	"LIVE",
-	"SHOP",
-	"DPA",
-	"AWEME",
-	"LINK",
-	"STORE",
+	"APP",
 	"ARTICLE",
-	"GOODS",
+	"LINK",
 }
 
 // NewToolsAdConvertQueryV2LandingTypeFromValue returns a pointer to a valid ToolsAdConvertQueryV2LandingType

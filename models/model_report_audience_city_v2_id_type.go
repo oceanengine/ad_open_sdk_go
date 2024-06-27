@@ -19,15 +19,15 @@ type ReportAudienceCityV2IdType string
 
 // List of report_audience_city_v2_id_type
 const (
-	AUDIENCE_STAT_ID_TYPE_ADVERTISER_ReportAudienceCityV2IdType ReportAudienceCityV2IdType = "AUDIENCE_STAT_ID_TYPE_ADVERTISER"
 	AUDIENCE_STAT_ID_TYPE_AD_ReportAudienceCityV2IdType         ReportAudienceCityV2IdType = "AUDIENCE_STAT_ID_TYPE_AD"
+	AUDIENCE_STAT_ID_TYPE_ADVERTISER_ReportAudienceCityV2IdType ReportAudienceCityV2IdType = "AUDIENCE_STAT_ID_TYPE_ADVERTISER"
 	AUDIENCE_STAT_ID_TYPE_CAMPAIGN_ReportAudienceCityV2IdType   ReportAudienceCityV2IdType = "AUDIENCE_STAT_ID_TYPE_CAMPAIGN"
 )
 
 // All allowed values of ReportAudienceCityV2IdType enum
 var AllowedReportAudienceCityV2IdTypeEnumValues = []ReportAudienceCityV2IdType{
-	"AUDIENCE_STAT_ID_TYPE_ADVERTISER",
 	"AUDIENCE_STAT_ID_TYPE_AD",
+	"AUDIENCE_STAT_ID_TYPE_ADVERTISER",
 	"AUDIENCE_STAT_ID_TYPE_CAMPAIGN",
 }
 

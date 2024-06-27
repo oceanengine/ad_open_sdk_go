@@ -19,14 +19,14 @@ type EnterpriseOverviewDataGetV10TimeDimension string
 
 // List of enterprise_overview_data_get_v1.0_time_dimension
 const (
-	SUM_EnterpriseOverviewDataGetV10TimeDimension   EnterpriseOverviewDataGetV10TimeDimension = "SUM"
 	DAILY_EnterpriseOverviewDataGetV10TimeDimension EnterpriseOverviewDataGetV10TimeDimension = "DAILY"
+	SUM_EnterpriseOverviewDataGetV10TimeDimension   EnterpriseOverviewDataGetV10TimeDimension = "SUM"
 )
 
 // All allowed values of EnterpriseOverviewDataGetV10TimeDimension enum
 var AllowedEnterpriseOverviewDataGetV10TimeDimensionEnumValues = []EnterpriseOverviewDataGetV10TimeDimension{
-	"SUM",
 	"DAILY",
+	"SUM",
 }
 
 // NewEnterpriseOverviewDataGetV10TimeDimensionFromValue returns a pointer to a valid EnterpriseOverviewDataGetV10TimeDimension

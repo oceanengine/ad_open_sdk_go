@@ -19,14 +19,14 @@ type ToolsBidSuggestV2DpaRtaRecommendType string
 
 // List of tools_bid_suggest_v2_dpa_rta_recommend_type
 const (
-	ONLY_ToolsBidSuggestV2DpaRtaRecommendType ToolsBidSuggestV2DpaRtaRecommendType = "ONLY"
 	MORE_ToolsBidSuggestV2DpaRtaRecommendType ToolsBidSuggestV2DpaRtaRecommendType = "MORE"
+	ONLY_ToolsBidSuggestV2DpaRtaRecommendType ToolsBidSuggestV2DpaRtaRecommendType = "ONLY"
 )
 
 // All allowed values of ToolsBidSuggestV2DpaRtaRecommendType enum
 var AllowedToolsBidSuggestV2DpaRtaRecommendTypeEnumValues = []ToolsBidSuggestV2DpaRtaRecommendType{
-	"ONLY",
 	"MORE",
+	"ONLY",
 }
 
 // NewToolsBidSuggestV2DpaRtaRecommendTypeFromValue returns a pointer to a valid ToolsBidSuggestV2DpaRtaRecommendType

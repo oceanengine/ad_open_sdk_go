@@ -19,21 +19,21 @@ type AdGetV2DataAudienceCareer string
 
 // List of ad_get_v2_data_audience_career
 const (
-	FINANCIAL_AdGetV2DataAudienceCareer       AdGetV2DataAudienceCareer = "FINANCIAL"
 	CIVIL_SERVANTS_AdGetV2DataAudienceCareer  AdGetV2DataAudienceCareer = "CIVIL_SERVANTS"
-	TEACHER_AdGetV2DataAudienceCareer         AdGetV2DataAudienceCareer = "TEACHER"
 	COLLEGE_STUDENT_AdGetV2DataAudienceCareer AdGetV2DataAudienceCareer = "COLLEGE_STUDENT"
 	MEDICAL_STAFF_AdGetV2DataAudienceCareer   AdGetV2DataAudienceCareer = "MEDICAL_STAFF"
+	FINANCIAL_AdGetV2DataAudienceCareer       AdGetV2DataAudienceCareer = "FINANCIAL"
+	TEACHER_AdGetV2DataAudienceCareer         AdGetV2DataAudienceCareer = "TEACHER"
 	IT_AdGetV2DataAudienceCareer              AdGetV2DataAudienceCareer = "IT"
 )
 
 // All allowed values of AdGetV2DataAudienceCareer enum
 var AllowedAdGetV2DataAudienceCareerEnumValues = []AdGetV2DataAudienceCareer{
-	"FINANCIAL",
 	"CIVIL_SERVANTS",
-	"TEACHER",
 	"COLLEGE_STUDENT",
 	"MEDICAL_STAFF",
+	"FINANCIAL",
+	"TEACHER",
 	"IT",
 }
 

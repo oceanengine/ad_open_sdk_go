@@ -19,14 +19,14 @@ type AudiencePackageCreateV2DeviceType string
 
 // List of audience_package_create_v2_device_type
 const (
-	MOBILE_AudiencePackageCreateV2DeviceType AudiencePackageCreateV2DeviceType = "MOBILE"
 	PAD_AudiencePackageCreateV2DeviceType    AudiencePackageCreateV2DeviceType = "PAD"
+	MOBILE_AudiencePackageCreateV2DeviceType AudiencePackageCreateV2DeviceType = "MOBILE"
 )
 
 // All allowed values of AudiencePackageCreateV2DeviceType enum
 var AllowedAudiencePackageCreateV2DeviceTypeEnumValues = []AudiencePackageCreateV2DeviceType{
-	"MOBILE",
 	"PAD",
+	"MOBILE",
 }
 
 // NewAudiencePackageCreateV2DeviceTypeFromValue returns a pointer to a valid AudiencePackageCreateV2DeviceType

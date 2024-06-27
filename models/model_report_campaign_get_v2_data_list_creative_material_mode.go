@@ -19,16 +19,16 @@ type ReportCampaignGetV2DataListCreativeMaterialMode string
 
 // List of report_campaign_get_v2_data_list_creative_material_mode
 const (
+	CTR_ReportCampaignGetV2DataListCreativeMaterialMode             ReportCampaignGetV2DataListCreativeMaterialMode = "CTR"
 	INTERVENE_ReportCampaignGetV2DataListCreativeMaterialMode       ReportCampaignGetV2DataListCreativeMaterialMode = "INTERVENE"
 	STATIC_ASSEMBLE_ReportCampaignGetV2DataListCreativeMaterialMode ReportCampaignGetV2DataListCreativeMaterialMode = "STATIC_ASSEMBLE"
-	CTR_ReportCampaignGetV2DataListCreativeMaterialMode             ReportCampaignGetV2DataListCreativeMaterialMode = "CTR"
 )
 
 // All allowed values of ReportCampaignGetV2DataListCreativeMaterialMode enum
 var AllowedReportCampaignGetV2DataListCreativeMaterialModeEnumValues = []ReportCampaignGetV2DataListCreativeMaterialMode{
+	"CTR",
 	"INTERVENE",
 	"STATIC_ASSEMBLE",
-	"CTR",
 }
 
 // NewReportCampaignGetV2DataListCreativeMaterialModeFromValue returns a pointer to a valid ReportCampaignGetV2DataListCreativeMaterialMode

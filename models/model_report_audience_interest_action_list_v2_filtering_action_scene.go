@@ -19,19 +19,19 @@ type ReportAudienceInterestActionListV2FilteringActionScene string
 
 // List of report_audience_interest_action_list_v2_filtering_action_scene
 const (
-	APP_ReportAudienceInterestActionListV2FilteringActionScene        ReportAudienceInterestActionListV2FilteringActionScene = "APP"
 	NEWS_ReportAudienceInterestActionListV2FilteringActionScene       ReportAudienceInterestActionListV2FilteringActionScene = "NEWS"
-	E_COMMERCE_ReportAudienceInterestActionListV2FilteringActionScene ReportAudienceInterestActionListV2FilteringActionScene = "E-COMMERCE"
+	APP_ReportAudienceInterestActionListV2FilteringActionScene        ReportAudienceInterestActionListV2FilteringActionScene = "APP"
 	AD_ReportAudienceInterestActionListV2FilteringActionScene         ReportAudienceInterestActionListV2FilteringActionScene = "AD"
+	E_COMMERCE_ReportAudienceInterestActionListV2FilteringActionScene ReportAudienceInterestActionListV2FilteringActionScene = "E-COMMERCE"
 	SEARCH_ReportAudienceInterestActionListV2FilteringActionScene     ReportAudienceInterestActionListV2FilteringActionScene = "SEARCH"
 )
 
 // All allowed values of ReportAudienceInterestActionListV2FilteringActionScene enum
 var AllowedReportAudienceInterestActionListV2FilteringActionSceneEnumValues = []ReportAudienceInterestActionListV2FilteringActionScene{
-	"APP",
 	"NEWS",
-	"E-COMMERCE",
+	"APP",
 	"AD",
+	"E-COMMERCE",
 	"SEARCH",
 }
 

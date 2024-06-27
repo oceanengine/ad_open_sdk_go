@@ -19,20 +19,20 @@ type ToolsPlayableCloudGameListV2FilteringStatus string
 
 // List of tools_playable_cloud_game_list_v2_filtering_status
 const (
-	UPLOAD_STATUS_ToolsPlayableCloudGameListV2FilteringStatus ToolsPlayableCloudGameListV2FilteringStatus = "UPLOAD_STATUS"
-	OFF_SHELF_ToolsPlayableCloudGameListV2FilteringStatus     ToolsPlayableCloudGameListV2FilteringStatus = "OFF_SHELF"
 	AUDIT_FAIL_ToolsPlayableCloudGameListV2FilteringStatus    ToolsPlayableCloudGameListV2FilteringStatus = "AUDIT_FAIL"
-	ON_SHELF_ToolsPlayableCloudGameListV2FilteringStatus      ToolsPlayableCloudGameListV2FilteringStatus = "ON_SHELF"
+	OFF_SHELF_ToolsPlayableCloudGameListV2FilteringStatus     ToolsPlayableCloudGameListV2FilteringStatus = "OFF_SHELF"
 	AUDIT_SUCCESS_ToolsPlayableCloudGameListV2FilteringStatus ToolsPlayableCloudGameListV2FilteringStatus = "AUDIT_SUCCESS"
+	ON_SHELF_ToolsPlayableCloudGameListV2FilteringStatus      ToolsPlayableCloudGameListV2FilteringStatus = "ON_SHELF"
+	UPLOAD_STATUS_ToolsPlayableCloudGameListV2FilteringStatus ToolsPlayableCloudGameListV2FilteringStatus = "UPLOAD_STATUS"
 )
 
 // All allowed values of ToolsPlayableCloudGameListV2FilteringStatus enum
 var AllowedToolsPlayableCloudGameListV2FilteringStatusEnumValues = []ToolsPlayableCloudGameListV2FilteringStatus{
-	"UPLOAD_STATUS",
-	"OFF_SHELF",
 	"AUDIT_FAIL",
-	"ON_SHELF",
+	"OFF_SHELF",
 	"AUDIT_SUCCESS",
+	"ON_SHELF",
+	"UPLOAD_STATUS",
 }
 
 // NewToolsPlayableCloudGameListV2FilteringStatusFromValue returns a pointer to a valid ToolsPlayableCloudGameListV2FilteringStatus

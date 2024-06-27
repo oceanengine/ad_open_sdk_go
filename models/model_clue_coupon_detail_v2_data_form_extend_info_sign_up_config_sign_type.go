@@ -19,14 +19,14 @@ type ClueCouponDetailV2DataFormExtendInfoSignUpConfigSignType string
 
 // List of clue_coupon_detail_v2_data_form_extend_info_sign_up_config_sign_type
 const (
-	SIGN_TYPE_SCROLL_BAR_ClueCouponDetailV2DataFormExtendInfoSignUpConfigSignType  ClueCouponDetailV2DataFormExtendInfoSignUpConfigSignType = "SIGN_TYPE_SCROLL_BAR"
 	SIGN_TYPE_SCROLL_WALL_ClueCouponDetailV2DataFormExtendInfoSignUpConfigSignType ClueCouponDetailV2DataFormExtendInfoSignUpConfigSignType = "SIGN_TYPE_SCROLL_WALL"
+	SIGN_TYPE_SCROLL_BAR_ClueCouponDetailV2DataFormExtendInfoSignUpConfigSignType  ClueCouponDetailV2DataFormExtendInfoSignUpConfigSignType = "SIGN_TYPE_SCROLL_BAR"
 )
 
 // All allowed values of ClueCouponDetailV2DataFormExtendInfoSignUpConfigSignType enum
 var AllowedClueCouponDetailV2DataFormExtendInfoSignUpConfigSignTypeEnumValues = []ClueCouponDetailV2DataFormExtendInfoSignUpConfigSignType{
-	"SIGN_TYPE_SCROLL_BAR",
 	"SIGN_TYPE_SCROLL_WALL",
+	"SIGN_TYPE_SCROLL_BAR",
 }
 
 // NewClueCouponDetailV2DataFormExtendInfoSignUpConfigSignTypeFromValue returns a pointer to a valid ClueCouponDetailV2DataFormExtendInfoSignUpConfigSignType

@@ -20,15 +20,15 @@ type ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType string
 // List of tools_app_management_bp_share_cancel_v2_all_account_by_company_account_type
 const (
 	BP_ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType   ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType = "BP"
-	AD_ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType   ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType = "AD"
 	STAR_ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType = "STAR"
+	AD_ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType   ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType = "AD"
 )
 
 // All allowed values of ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType enum
 var AllowedToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountTypeEnumValues = []ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType{
 	"BP",
-	"AD",
 	"STAR",
+	"AD",
 }
 
 // NewToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountTypeFromValue returns a pointer to a valid ToolsAppManagementBpShareCancelV2AllAccountByCompanyAccountType

@@ -19,76 +19,76 @@ type StarDemandListV2DataListComponentType string
 
 // List of star_demand_list_v2_data_list_component_type
 const (
-	ANCHOR_EDUCATION_StarDemandListV2DataListComponentType         StarDemandListV2DataListComponentType = "ANCHOR_EDUCATION"
-	ANCHOR_TOURISM_StarDemandListV2DataListComponentType           StarDemandListV2DataListComponentType = "ANCHOR_TOURISM"
-	ENTERPRISE_COUPON_StarDemandListV2DataListComponentType        StarDemandListV2DataListComponentType = "ENTERPRISE_COUPON"
-	ENTERPRISE_WEDDING_PHOTO_StarDemandListV2DataListComponentType StarDemandListV2DataListComponentType = "ENTERPRISE_WEDDING_PHOTO"
-	POI_StarDemandListV2DataListComponentType                      StarDemandListV2DataListComponentType = "POI"
-	ENTERPRISE_SALON_StarDemandListV2DataListComponentType         StarDemandListV2DataListComponentType = "ENTERPRISE_SALON"
-	ENTERPRISE_DOWNLOAD_APP_StarDemandListV2DataListComponentType  StarDemandListV2DataListComponentType = "ENTERPRISE_DOWNLOAD_APP"
+	ANCHOR_MOVIE_StarDemandListV2DataListComponentType             StarDemandListV2DataListComponentType = "ANCHOR_MOVIE"
 	ENTERPRISE_CAR_StarDemandListV2DataListComponentType           StarDemandListV2DataListComponentType = "ENTERPRISE_CAR"
-	ANCHOR_E_GAME_StarDemandListV2DataListComponentType            StarDemandListV2DataListComponentType = "ANCHOR_E_GAME"
-	ANCHOR_XIGUA_StarDemandListV2DataListComponentType             StarDemandListV2DataListComponentType = "ANCHOR_XIGUA"
-	MICROAPP_ANCHOR_StarDemandListV2DataListComponentType          StarDemandListV2DataListComponentType = "MICROAPP_ANCHOR"
-	ANCHOR_INVESTMENT_StarDemandListV2DataListComponentType        StarDemandListV2DataListComponentType = "ANCHOR_INVESTMENT"
+	ENTERPRISE_ECOM_StarDemandListV2DataListComponentType          StarDemandListV2DataListComponentType = "ENTERPRISE_ECOM"
+	ANCHOR_TOURISM_StarDemandListV2DataListComponentType           StarDemandListV2DataListComponentType = "ANCHOR_TOURISM"
+	ANCHOR_DOWNLOAD_StarDemandListV2DataListComponentType          StarDemandListV2DataListComponentType = "ANCHOR_DOWNLOAD"
+	ENTERPRISE_SALON_StarDemandListV2DataListComponentType         StarDemandListV2DataListComponentType = "ENTERPRISE_SALON"
 	GAME_ANCHOR_StarDemandListV2DataListComponentType              StarDemandListV2DataListComponentType = "GAME_ANCHOR"
-	ANCHOR_HOME_StarDemandListV2DataListComponentType              StarDemandListV2DataListComponentType = "ANCHOR_HOME"
+	ANCHOR_INSURANCE_StarDemandListV2DataListComponentType         StarDemandListV2DataListComponentType = "ANCHOR_INSURANCE"
+	ANCHOR_TELECOM_StarDemandListV2DataListComponentType           StarDemandListV2DataListComponentType = "ANCHOR_TELECOM"
+	LIVE_ORDER_COMPONENT_StarDemandListV2DataListComponentType     StarDemandListV2DataListComponentType = "LIVE_ORDER_COMPONENT"
+	ANCHOR_MICRO_APP_POI_StarDemandListV2DataListComponentType     StarDemandListV2DataListComponentType = "ANCHOR_MICRO_APP_POI"
+	POI_StarDemandListV2DataListComponentType                      StarDemandListV2DataListComponentType = "POI"
+	CART_StarDemandListV2DataListComponentType                     StarDemandListV2DataListComponentType = "CART"
+	ENTERPRISE_NOVEL_StarDemandListV2DataListComponentType         StarDemandListV2DataListComponentType = "ENTERPRISE_NOVEL"
+	MICROAPP_ANCHOR_StarDemandListV2DataListComponentType          StarDemandListV2DataListComponentType = "MICROAPP_ANCHOR"
+	ALL_StarDemandListV2DataListComponentType                      StarDemandListV2DataListComponentType = "ALL"
+	ANCHOR_ESTATE_SERVICE_StarDemandListV2DataListComponentType    StarDemandListV2DataListComponentType = "ANCHOR_ESTATE_SERVICE"
+	ENTERPRISE_MICRO_APP_StarDemandListV2DataListComponentType     StarDemandListV2DataListComponentType = "ENTERPRISE_MICRO_APP"
+	ENTERPRISE_COUPON_StarDemandListV2DataListComponentType        StarDemandListV2DataListComponentType = "ENTERPRISE_COUPON"
+	ENTERPRISE_ORDER_SERVICE_StarDemandListV2DataListComponentType StarDemandListV2DataListComponentType = "ENTERPRISE_ORDER_SERVICE"
+	ANCHOR_INVESTMENT_StarDemandListV2DataListComponentType        StarDemandListV2DataListComponentType = "ANCHOR_INVESTMENT"
+	ANCHOR_E_GAME_StarDemandListV2DataListComponentType            StarDemandListV2DataListComponentType = "ANCHOR_E_GAME"
+	ANCHOR_EDUCATION_StarDemandListV2DataListComponentType         StarDemandListV2DataListComponentType = "ANCHOR_EDUCATION"
+	ANCHOR_XIGUA_StarDemandListV2DataListComponentType             StarDemandListV2DataListComponentType = "ANCHOR_XIGUA"
+	ENTERPRISE_DOWNLOAD_StarDemandListV2DataListComponentType      StarDemandListV2DataListComponentType = "ENTERPRISE_DOWNLOAD"
 	LINK_StarDemandListV2DataListComponentType                     StarDemandListV2DataListComponentType = "LINK"
+	BRAND_ANCHOR_StarDemandListV2DataListComponentType             StarDemandListV2DataListComponentType = "BRAND_ANCHOR"
 	ANCHOR_CAR_StarDemandListV2DataListComponentType               StarDemandListV2DataListComponentType = "ANCHOR_CAR"
 	ANCHOR_ECOM_StarDemandListV2DataListComponentType              StarDemandListV2DataListComponentType = "ANCHOR_ECOM"
-	ANCHOR_MOVIE_StarDemandListV2DataListComponentType             StarDemandListV2DataListComponentType = "ANCHOR_MOVIE"
-	ANCHOR_TELECOM_StarDemandListV2DataListComponentType           StarDemandListV2DataListComponentType = "ANCHOR_TELECOM"
-	ENTERPRISE_DOWNLOAD_StarDemandListV2DataListComponentType      StarDemandListV2DataListComponentType = "ENTERPRISE_DOWNLOAD"
-	BRAND_ANCHOR_StarDemandListV2DataListComponentType             StarDemandListV2DataListComponentType = "BRAND_ANCHOR"
+	ANCHOR_HOME_StarDemandListV2DataListComponentType              StarDemandListV2DataListComponentType = "ANCHOR_HOME"
+	ENTERPRISE_WEDDING_PHOTO_StarDemandListV2DataListComponentType StarDemandListV2DataListComponentType = "ENTERPRISE_WEDDING_PHOTO"
+	ENTERPRISE_DOWNLOAD_APP_StarDemandListV2DataListComponentType  StarDemandListV2DataListComponentType = "ENTERPRISE_DOWNLOAD_APP"
 	VARIETY_ANCHOR_StarDemandListV2DataListComponentType           StarDemandListV2DataListComponentType = "VARIETY_ANCHOR"
-	ENTERPRISE_ORDER_SERVICE_StarDemandListV2DataListComponentType StarDemandListV2DataListComponentType = "ENTERPRISE_ORDER_SERVICE"
-	ANCHOR_ESTATE_SERVICE_StarDemandListV2DataListComponentType    StarDemandListV2DataListComponentType = "ANCHOR_ESTATE_SERVICE"
-	ANCHOR_MICRO_APP_POI_StarDemandListV2DataListComponentType     StarDemandListV2DataListComponentType = "ANCHOR_MICRO_APP_POI"
-	ENTERPRISE_MICRO_APP_StarDemandListV2DataListComponentType     StarDemandListV2DataListComponentType = "ENTERPRISE_MICRO_APP"
-	ANCHOR_INSURANCE_StarDemandListV2DataListComponentType         StarDemandListV2DataListComponentType = "ANCHOR_INSURANCE"
-	ENTERPRISE_NOVEL_StarDemandListV2DataListComponentType         StarDemandListV2DataListComponentType = "ENTERPRISE_NOVEL"
-	CART_StarDemandListV2DataListComponentType                     StarDemandListV2DataListComponentType = "CART"
-	ENTERPRISE_ECOM_StarDemandListV2DataListComponentType          StarDemandListV2DataListComponentType = "ENTERPRISE_ECOM"
-	LIVE_ORDER_COMPONENT_StarDemandListV2DataListComponentType     StarDemandListV2DataListComponentType = "LIVE_ORDER_COMPONENT"
-	ANCHOR_DOWNLOAD_StarDemandListV2DataListComponentType          StarDemandListV2DataListComponentType = "ANCHOR_DOWNLOAD"
-	ALL_StarDemandListV2DataListComponentType                      StarDemandListV2DataListComponentType = "ALL"
 )
 
 // All allowed values of StarDemandListV2DataListComponentType enum
 var AllowedStarDemandListV2DataListComponentTypeEnumValues = []StarDemandListV2DataListComponentType{
-	"ANCHOR_EDUCATION",
-	"ANCHOR_TOURISM",
-	"ENTERPRISE_COUPON",
-	"ENTERPRISE_WEDDING_PHOTO",
-	"POI",
-	"ENTERPRISE_SALON",
-	"ENTERPRISE_DOWNLOAD_APP",
+	"ANCHOR_MOVIE",
 	"ENTERPRISE_CAR",
-	"ANCHOR_E_GAME",
-	"ANCHOR_XIGUA",
-	"MICROAPP_ANCHOR",
-	"ANCHOR_INVESTMENT",
+	"ENTERPRISE_ECOM",
+	"ANCHOR_TOURISM",
+	"ANCHOR_DOWNLOAD",
+	"ENTERPRISE_SALON",
 	"GAME_ANCHOR",
-	"ANCHOR_HOME",
+	"ANCHOR_INSURANCE",
+	"ANCHOR_TELECOM",
+	"LIVE_ORDER_COMPONENT",
+	"ANCHOR_MICRO_APP_POI",
+	"POI",
+	"CART",
+	"ENTERPRISE_NOVEL",
+	"MICROAPP_ANCHOR",
+	"ALL",
+	"ANCHOR_ESTATE_SERVICE",
+	"ENTERPRISE_MICRO_APP",
+	"ENTERPRISE_COUPON",
+	"ENTERPRISE_ORDER_SERVICE",
+	"ANCHOR_INVESTMENT",
+	"ANCHOR_E_GAME",
+	"ANCHOR_EDUCATION",
+	"ANCHOR_XIGUA",
+	"ENTERPRISE_DOWNLOAD",
 	"LINK",
+	"BRAND_ANCHOR",
 	"ANCHOR_CAR",
 	"ANCHOR_ECOM",
-	"ANCHOR_MOVIE",
-	"ANCHOR_TELECOM",
-	"ENTERPRISE_DOWNLOAD",
-	"BRAND_ANCHOR",
+	"ANCHOR_HOME",
+	"ENTERPRISE_WEDDING_PHOTO",
+	"ENTERPRISE_DOWNLOAD_APP",
 	"VARIETY_ANCHOR",
-	"ENTERPRISE_ORDER_SERVICE",
-	"ANCHOR_ESTATE_SERVICE",
-	"ANCHOR_MICRO_APP_POI",
-	"ENTERPRISE_MICRO_APP",
-	"ANCHOR_INSURANCE",
-	"ENTERPRISE_NOVEL",
-	"CART",
-	"ENTERPRISE_ECOM",
-	"LIVE_ORDER_COMPONENT",
-	"ANCHOR_DOWNLOAD",
-	"ALL",
 }
 
 // NewStarDemandListV2DataListComponentTypeFromValue returns a pointer to a valid StarDemandListV2DataListComponentType

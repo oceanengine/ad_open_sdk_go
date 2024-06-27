@@ -19,20 +19,20 @@ type KeywordGetV2DataListBidType string
 
 // List of keyword_get_v2_data_list_bid_type
 const (
-	SUGGEST_KeywordGetV2DataListBidType        KeywordGetV2DataListBidType = "SUGGEST"
-	FEED_TO_SEARCH_KeywordGetV2DataListBidType KeywordGetV2DataListBidType = "FEED_TO_SEARCH"
-	BRAND_AD_KeywordGetV2DataListBidType       KeywordGetV2DataListBidType = "BRAND_AD"
-	WITH_AD_KeywordGetV2DataListBidType        KeywordGetV2DataListBidType = "WITH_AD"
 	CUSTOM_KeywordGetV2DataListBidType         KeywordGetV2DataListBidType = "CUSTOM"
+	FEED_TO_SEARCH_KeywordGetV2DataListBidType KeywordGetV2DataListBidType = "FEED_TO_SEARCH"
+	WITH_AD_KeywordGetV2DataListBidType        KeywordGetV2DataListBidType = "WITH_AD"
+	BRAND_AD_KeywordGetV2DataListBidType       KeywordGetV2DataListBidType = "BRAND_AD"
+	SUGGEST_KeywordGetV2DataListBidType        KeywordGetV2DataListBidType = "SUGGEST"
 )
 
 // All allowed values of KeywordGetV2DataListBidType enum
 var AllowedKeywordGetV2DataListBidTypeEnumValues = []KeywordGetV2DataListBidType{
-	"SUGGEST",
-	"FEED_TO_SEARCH",
-	"BRAND_AD",
-	"WITH_AD",
 	"CUSTOM",
+	"FEED_TO_SEARCH",
+	"WITH_AD",
+	"BRAND_AD",
+	"SUGGEST",
 }
 
 // NewKeywordGetV2DataListBidTypeFromValue returns a pointer to a valid KeywordGetV2DataListBidType

@@ -28,7 +28,7 @@ type ApiOpenApi2StarAttachmentUploadPostRequest struct {
 	ctx        context.Context
 	ApiService *StarAttachmentUploadV2ApiService
 	file       *FormFileInfo
-	fileName   *FormFileInfo
+	fileName   *string
 	starId     *int64
 }
 
@@ -39,8 +39,8 @@ func (r *ApiOpenApi2StarAttachmentUploadPostRequest) File(file *FormFileInfo) *A
 }
 
 // 文件名
-func (r *ApiOpenApi2StarAttachmentUploadPostRequest) FileName(fileName *FormFileInfo) *ApiOpenApi2StarAttachmentUploadPostRequest {
-	r.fileName = fileName
+func (r *ApiOpenApi2StarAttachmentUploadPostRequest) FileName(fileName string) *ApiOpenApi2StarAttachmentUploadPostRequest {
+	r.fileName = &fileName
 	return r
 }
 
@@ -130,9 +130,7 @@ func (a *StarAttachmentUploadV2ApiService) postExecute(r *ApiOpenApi2StarAttachm
 	if r.file != nil {
 		formFiles["file"] = r.file
 	}
-	if r.fileName != nil {
-		formFiles["file_name"] = r.fileName
-	}
+	parameterAddToHeaderOrQuery(localVarFormParams, "file_name", r.fileName)
 	parameterAddToHeaderOrQuery(localVarFormParams, "star_id", r.starId)
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, formFiles)
 	if err != nil {

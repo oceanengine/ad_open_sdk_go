@@ -19,28 +19,28 @@ type AgentInfoV2Fields string
 
 // List of agent_info_v2_fields
 const (
-	CUSTOMER_ID_AgentInfoV2Fields    AgentInfoV2Fields = "customer_id"
-	AGENT_ID_AgentInfoV2Fields       AgentInfoV2Fields = "agent_id"
-	AGENT_NAME_AgentInfoV2Fields     AgentInfoV2Fields = "agent_name"
-	ACCOUNT_STATUS_AgentInfoV2Fields AgentInfoV2Fields = "account_status"
-	COMPANY_ID_AgentInfoV2Fields     AgentInfoV2Fields = "company_id"
-	CUSTOMER_NAME_AgentInfoV2Fields  AgentInfoV2Fields = "customer_name"
-	CREATE_TIME_AgentInfoV2Fields    AgentInfoV2Fields = "create_time"
-	COMPANY_NAME_AgentInfoV2Fields   AgentInfoV2Fields = "company_name"
 	ROLE_AgentInfoV2Fields           AgentInfoV2Fields = "role"
+	CUSTOMER_NAME_AgentInfoV2Fields  AgentInfoV2Fields = "customer_name"
+	AGENT_NAME_AgentInfoV2Fields     AgentInfoV2Fields = "agent_name"
+	AGENT_ID_AgentInfoV2Fields       AgentInfoV2Fields = "agent_id"
+	ACCOUNT_STATUS_AgentInfoV2Fields AgentInfoV2Fields = "account_status"
+	CREATE_TIME_AgentInfoV2Fields    AgentInfoV2Fields = "create_time"
+	COMPANY_ID_AgentInfoV2Fields     AgentInfoV2Fields = "company_id"
+	COMPANY_NAME_AgentInfoV2Fields   AgentInfoV2Fields = "company_name"
+	CUSTOMER_ID_AgentInfoV2Fields    AgentInfoV2Fields = "customer_id"
 )
 
 // All allowed values of AgentInfoV2Fields enum
 var AllowedAgentInfoV2FieldsEnumValues = []AgentInfoV2Fields{
-	"customer_id",
-	"agent_id",
-	"agent_name",
-	"account_status",
-	"company_id",
-	"customer_name",
-	"create_time",
-	"company_name",
 	"role",
+	"customer_name",
+	"agent_name",
+	"agent_id",
+	"account_status",
+	"create_time",
+	"company_id",
+	"company_name",
+	"customer_id",
 }
 
 // NewAgentInfoV2FieldsFromValue returns a pointer to a valid AgentInfoV2Fields

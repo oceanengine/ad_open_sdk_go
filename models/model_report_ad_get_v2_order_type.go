@@ -19,14 +19,14 @@ type ReportAdGetV2OrderType string
 
 // List of report_ad_get_v2_order_type
 const (
-	DESC_ReportAdGetV2OrderType ReportAdGetV2OrderType = "DESC"
 	ASC_ReportAdGetV2OrderType  ReportAdGetV2OrderType = "ASC"
+	DESC_ReportAdGetV2OrderType ReportAdGetV2OrderType = "DESC"
 )
 
 // All allowed values of ReportAdGetV2OrderType enum
 var AllowedReportAdGetV2OrderTypeEnumValues = []ReportAdGetV2OrderType{
-	"DESC",
 	"ASC",
+	"DESC",
 }
 
 // NewReportAdGetV2OrderTypeFromValue returns a pointer to a valid ReportAdGetV2OrderType

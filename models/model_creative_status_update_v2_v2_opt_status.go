@@ -19,15 +19,15 @@ type CreativeStatusUpdateV2V2OptStatus string
 
 // List of creative_status_update_v2_v2_opt_status
 const (
-	DISABLE_CreativeStatusUpdateV2V2OptStatus CreativeStatusUpdateV2V2OptStatus = "disable"
 	ENABLE_CreativeStatusUpdateV2V2OptStatus  CreativeStatusUpdateV2V2OptStatus = "enable"
+	DISABLE_CreativeStatusUpdateV2V2OptStatus CreativeStatusUpdateV2V2OptStatus = "disable"
 	DELETE_CreativeStatusUpdateV2V2OptStatus  CreativeStatusUpdateV2V2OptStatus = "delete"
 )
 
 // All allowed values of CreativeStatusUpdateV2V2OptStatus enum
 var AllowedCreativeStatusUpdateV2V2OptStatusEnumValues = []CreativeStatusUpdateV2V2OptStatus{
-	"disable",
 	"enable",
+	"disable",
 	"delete",
 }
 

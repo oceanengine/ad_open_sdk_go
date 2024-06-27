@@ -19,16 +19,16 @@ type CampaignCreateV2CampaignType string
 
 // List of campaign_create_v2_campaign_type
 const (
-	CONTENT_CampaignCreateV2CampaignType CampaignCreateV2CampaignType = "CONTENT"
-	FEED_CampaignCreateV2CampaignType    CampaignCreateV2CampaignType = "FEED"
 	SEARCH_CampaignCreateV2CampaignType  CampaignCreateV2CampaignType = "SEARCH"
+	FEED_CampaignCreateV2CampaignType    CampaignCreateV2CampaignType = "FEED"
+	CONTENT_CampaignCreateV2CampaignType CampaignCreateV2CampaignType = "CONTENT"
 )
 
 // All allowed values of CampaignCreateV2CampaignType enum
 var AllowedCampaignCreateV2CampaignTypeEnumValues = []CampaignCreateV2CampaignType{
-	"CONTENT",
-	"FEED",
 	"SEARCH",
+	"FEED",
+	"CONTENT",
 }
 
 // NewCampaignCreateV2CampaignTypeFromValue returns a pointer to a valid CampaignCreateV2CampaignType

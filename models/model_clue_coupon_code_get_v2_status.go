@@ -19,20 +19,20 @@ type ClueCouponCodeGetV2Status string
 
 // List of clue_coupon_code_get_v2_status
 const (
-	ABANDONED_ClueCouponCodeGetV2Status ClueCouponCodeGetV2Status = "ABANDONED"
-	VALID_ClueCouponCodeGetV2Status     ClueCouponCodeGetV2Status = "VALID"
-	INVALID_ClueCouponCodeGetV2Status   ClueCouponCodeGetV2Status = "INVALID"
-	EXPIRED_ClueCouponCodeGetV2Status   ClueCouponCodeGetV2Status = "EXPIRED"
 	USED_ClueCouponCodeGetV2Status      ClueCouponCodeGetV2Status = "USED"
+	INVALID_ClueCouponCodeGetV2Status   ClueCouponCodeGetV2Status = "INVALID"
+	ABANDONED_ClueCouponCodeGetV2Status ClueCouponCodeGetV2Status = "ABANDONED"
+	EXPIRED_ClueCouponCodeGetV2Status   ClueCouponCodeGetV2Status = "EXPIRED"
+	VALID_ClueCouponCodeGetV2Status     ClueCouponCodeGetV2Status = "VALID"
 )
 
 // All allowed values of ClueCouponCodeGetV2Status enum
 var AllowedClueCouponCodeGetV2StatusEnumValues = []ClueCouponCodeGetV2Status{
-	"ABANDONED",
-	"VALID",
-	"INVALID",
-	"EXPIRED",
 	"USED",
+	"INVALID",
+	"ABANDONED",
+	"EXPIRED",
+	"VALID",
 }
 
 // NewClueCouponCodeGetV2StatusFromValue returns a pointer to a valid ClueCouponCodeGetV2Status

@@ -19,22 +19,22 @@ type ToolsBidSuggestV2AutoExtendTargets string
 
 // List of tools_bid_suggest_v2_auto_extend_targets
 const (
-	REGION_ToolsBidSuggestV2AutoExtendTargets          ToolsBidSuggestV2AutoExtendTargets = "REGION"
-	CUSTOM_AUDIENCE_ToolsBidSuggestV2AutoExtendTargets ToolsBidSuggestV2AutoExtendTargets = "CUSTOM_AUDIENCE"
-	AGE_ToolsBidSuggestV2AutoExtendTargets             ToolsBidSuggestV2AutoExtendTargets = "AGE"
-	GENDER_ToolsBidSuggestV2AutoExtendTargets          ToolsBidSuggestV2AutoExtendTargets = "GENDER"
 	INTEREST_TAG_ToolsBidSuggestV2AutoExtendTargets    ToolsBidSuggestV2AutoExtendTargets = "INTEREST_TAG"
+	GENDER_ToolsBidSuggestV2AutoExtendTargets          ToolsBidSuggestV2AutoExtendTargets = "GENDER"
 	AD_TAG_ToolsBidSuggestV2AutoExtendTargets          ToolsBidSuggestV2AutoExtendTargets = "AD_TAG"
+	REGION_ToolsBidSuggestV2AutoExtendTargets          ToolsBidSuggestV2AutoExtendTargets = "REGION"
+	AGE_ToolsBidSuggestV2AutoExtendTargets             ToolsBidSuggestV2AutoExtendTargets = "AGE"
+	CUSTOM_AUDIENCE_ToolsBidSuggestV2AutoExtendTargets ToolsBidSuggestV2AutoExtendTargets = "CUSTOM_AUDIENCE"
 )
 
 // All allowed values of ToolsBidSuggestV2AutoExtendTargets enum
 var AllowedToolsBidSuggestV2AutoExtendTargetsEnumValues = []ToolsBidSuggestV2AutoExtendTargets{
-	"REGION",
-	"CUSTOM_AUDIENCE",
-	"AGE",
-	"GENDER",
 	"INTEREST_TAG",
+	"GENDER",
 	"AD_TAG",
+	"REGION",
+	"AGE",
+	"CUSTOM_AUDIENCE",
 }
 
 // NewToolsBidSuggestV2AutoExtendTargetsFromValue returns a pointer to a valid ToolsBidSuggestV2AutoExtendTargets

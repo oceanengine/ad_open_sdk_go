@@ -19,16 +19,16 @@ type AdGetV2DataAudienceCarrier string
 
 // List of ad_get_v2_data_audience_carrier
 const (
-	MOBILE_AdGetV2DataAudienceCarrier AdGetV2DataAudienceCarrier = "MOBILE"
 	UNICOM_AdGetV2DataAudienceCarrier AdGetV2DataAudienceCarrier = "UNICOM"
 	TELCOM_AdGetV2DataAudienceCarrier AdGetV2DataAudienceCarrier = "TELCOM"
+	MOBILE_AdGetV2DataAudienceCarrier AdGetV2DataAudienceCarrier = "MOBILE"
 )
 
 // All allowed values of AdGetV2DataAudienceCarrier enum
 var AllowedAdGetV2DataAudienceCarrierEnumValues = []AdGetV2DataAudienceCarrier{
-	"MOBILE",
 	"UNICOM",
 	"TELCOM",
+	"MOBILE",
 }
 
 // NewAdGetV2DataAudienceCarrierFromValue returns a pointer to a valid AdGetV2DataAudienceCarrier

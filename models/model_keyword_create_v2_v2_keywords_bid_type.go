@@ -19,20 +19,20 @@ type KeywordCreateV2V2KeywordsBidType string
 
 // List of keyword_create_v2_v2_keywords_bid_type
 const (
-	SUGGEST_KeywordCreateV2V2KeywordsBidType        KeywordCreateV2V2KeywordsBidType = "SUGGEST"
-	FEED_TO_SEARCH_KeywordCreateV2V2KeywordsBidType KeywordCreateV2V2KeywordsBidType = "FEED_TO_SEARCH"
-	BRAND_AD_KeywordCreateV2V2KeywordsBidType       KeywordCreateV2V2KeywordsBidType = "BRAND_AD"
-	WITH_AD_KeywordCreateV2V2KeywordsBidType        KeywordCreateV2V2KeywordsBidType = "WITH_AD"
 	CUSTOM_KeywordCreateV2V2KeywordsBidType         KeywordCreateV2V2KeywordsBidType = "CUSTOM"
+	FEED_TO_SEARCH_KeywordCreateV2V2KeywordsBidType KeywordCreateV2V2KeywordsBidType = "FEED_TO_SEARCH"
+	WITH_AD_KeywordCreateV2V2KeywordsBidType        KeywordCreateV2V2KeywordsBidType = "WITH_AD"
+	BRAND_AD_KeywordCreateV2V2KeywordsBidType       KeywordCreateV2V2KeywordsBidType = "BRAND_AD"
+	SUGGEST_KeywordCreateV2V2KeywordsBidType        KeywordCreateV2V2KeywordsBidType = "SUGGEST"
 )
 
 // All allowed values of KeywordCreateV2V2KeywordsBidType enum
 var AllowedKeywordCreateV2V2KeywordsBidTypeEnumValues = []KeywordCreateV2V2KeywordsBidType{
-	"SUGGEST",
-	"FEED_TO_SEARCH",
-	"BRAND_AD",
-	"WITH_AD",
 	"CUSTOM",
+	"FEED_TO_SEARCH",
+	"WITH_AD",
+	"BRAND_AD",
+	"SUGGEST",
 }
 
 // NewKeywordCreateV2V2KeywordsBidTypeFromValue returns a pointer to a valid KeywordCreateV2V2KeywordsBidType

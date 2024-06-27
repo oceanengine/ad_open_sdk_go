@@ -19,14 +19,14 @@ type CampaignCreateV2Operation string
 
 // List of campaign_create_v2_operation
 const (
-	DISABLE_CampaignCreateV2Operation CampaignCreateV2Operation = "disable"
 	ENABLE_CampaignCreateV2Operation  CampaignCreateV2Operation = "enable"
+	DISABLE_CampaignCreateV2Operation CampaignCreateV2Operation = "disable"
 )
 
 // All allowed values of CampaignCreateV2Operation enum
 var AllowedCampaignCreateV2OperationEnumValues = []CampaignCreateV2Operation{
-	"disable",
 	"enable",
+	"disable",
 }
 
 // NewCampaignCreateV2OperationFromValue returns a pointer to a valid CampaignCreateV2Operation

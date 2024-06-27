@@ -21,16 +21,16 @@ type AudiencePackageCreateV2Gender string
 const (
 	GENDER_MALE_AudiencePackageCreateV2Gender      AudiencePackageCreateV2Gender = "GENDER_MALE"
 	GENDER_FEMALE_AudiencePackageCreateV2Gender    AudiencePackageCreateV2Gender = "GENDER_FEMALE"
-	GENDER_UNLIMITED_AudiencePackageCreateV2Gender AudiencePackageCreateV2Gender = "GENDER_UNLIMITED"
 	NONE_AudiencePackageCreateV2Gender             AudiencePackageCreateV2Gender = "NONE"
+	GENDER_UNLIMITED_AudiencePackageCreateV2Gender AudiencePackageCreateV2Gender = "GENDER_UNLIMITED"
 )
 
 // All allowed values of AudiencePackageCreateV2Gender enum
 var AllowedAudiencePackageCreateV2GenderEnumValues = []AudiencePackageCreateV2Gender{
 	"GENDER_MALE",
 	"GENDER_FEMALE",
-	"GENDER_UNLIMITED",
 	"NONE",
+	"GENDER_UNLIMITED",
 }
 
 // NewAudiencePackageCreateV2GenderFromValue returns a pointer to a valid AudiencePackageCreateV2Gender

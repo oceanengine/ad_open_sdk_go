@@ -19,34 +19,34 @@ type AudiencePackageCreateV2AwemeFanBehaviors string
 
 // List of audience_package_create_v2_aweme_fan_behaviors
 const (
+	SHARED_USER_AudiencePackageCreateV2AwemeFanBehaviors          AudiencePackageCreateV2AwemeFanBehaviors = "SHARED_USER"
+	GOODS_CARTS_ORDER_AudiencePackageCreateV2AwemeFanBehaviors    AudiencePackageCreateV2AwemeFanBehaviors = "GOODS_CARTS_ORDER"
 	LIVE_EFFECTIVE_WATCH_AudiencePackageCreateV2AwemeFanBehaviors AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_EFFECTIVE_WATCH"
-	LIVE_GOODS_ORDER_AudiencePackageCreateV2AwemeFanBehaviors     AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_GOODS_ORDER"
+	LIVE_GOODS_CLICK_AudiencePackageCreateV2AwemeFanBehaviors     AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_GOODS_CLICK"
+	GOODS_CARTS_CLICK_AudiencePackageCreateV2AwemeFanBehaviors    AudiencePackageCreateV2AwemeFanBehaviors = "GOODS_CARTS_CLICK"
 	LIVE_WATCH_AudiencePackageCreateV2AwemeFanBehaviors           AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_WATCH"
 	LIVE_EXCEPTIONAL_AudiencePackageCreateV2AwemeFanBehaviors     AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_EXCEPTIONAL"
-	LIVE_COMMENT_AudiencePackageCreateV2AwemeFanBehaviors         AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_COMMENT"
-	GOODS_CARTS_ORDER_AudiencePackageCreateV2AwemeFanBehaviors    AudiencePackageCreateV2AwemeFanBehaviors = "GOODS_CARTS_ORDER"
-	LIKED_USER_AudiencePackageCreateV2AwemeFanBehaviors           AudiencePackageCreateV2AwemeFanBehaviors = "LIKED_USER"
 	COMMENTED_USER_AudiencePackageCreateV2AwemeFanBehaviors       AudiencePackageCreateV2AwemeFanBehaviors = "COMMENTED_USER"
+	LIKED_USER_AudiencePackageCreateV2AwemeFanBehaviors           AudiencePackageCreateV2AwemeFanBehaviors = "LIKED_USER"
+	LIVE_GOODS_ORDER_AudiencePackageCreateV2AwemeFanBehaviors     AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_GOODS_ORDER"
+	LIVE_COMMENT_AudiencePackageCreateV2AwemeFanBehaviors         AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_COMMENT"
 	FOLLOWED_USER_AudiencePackageCreateV2AwemeFanBehaviors        AudiencePackageCreateV2AwemeFanBehaviors = "FOLLOWED_USER"
-	SHARED_USER_AudiencePackageCreateV2AwemeFanBehaviors          AudiencePackageCreateV2AwemeFanBehaviors = "SHARED_USER"
-	GOODS_CARTS_CLICK_AudiencePackageCreateV2AwemeFanBehaviors    AudiencePackageCreateV2AwemeFanBehaviors = "GOODS_CARTS_CLICK"
-	LIVE_GOODS_CLICK_AudiencePackageCreateV2AwemeFanBehaviors     AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_GOODS_CLICK"
 )
 
 // All allowed values of AudiencePackageCreateV2AwemeFanBehaviors enum
 var AllowedAudiencePackageCreateV2AwemeFanBehaviorsEnumValues = []AudiencePackageCreateV2AwemeFanBehaviors{
+	"SHARED_USER",
+	"GOODS_CARTS_ORDER",
 	"LIVE_EFFECTIVE_WATCH",
-	"LIVE_GOODS_ORDER",
+	"LIVE_GOODS_CLICK",
+	"GOODS_CARTS_CLICK",
 	"LIVE_WATCH",
 	"LIVE_EXCEPTIONAL",
-	"LIVE_COMMENT",
-	"GOODS_CARTS_ORDER",
-	"LIKED_USER",
 	"COMMENTED_USER",
+	"LIKED_USER",
+	"LIVE_GOODS_ORDER",
+	"LIVE_COMMENT",
 	"FOLLOWED_USER",
-	"SHARED_USER",
-	"GOODS_CARTS_CLICK",
-	"LIVE_GOODS_CLICK",
 }
 
 // NewAudiencePackageCreateV2AwemeFanBehaviorsFromValue returns a pointer to a valid AudiencePackageCreateV2AwemeFanBehaviors

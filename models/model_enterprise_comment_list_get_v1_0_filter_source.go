@@ -19,20 +19,20 @@ type EnterpriseCommentListGetV10FilterSource string
 
 // List of enterprise_comment_list_get_v1.0_filter_source
 const (
-	FROM_OTHER_EnterpriseCommentListGetV10FilterSource   EnterpriseCommentListGetV10FilterSource = "FROM_OTHER"
+	FROM_BRAND_EnterpriseCommentListGetV10FilterSource   EnterpriseCommentListGetV10FilterSource = "FROM_BRAND"
 	FROM_PERFORM_EnterpriseCommentListGetV10FilterSource EnterpriseCommentListGetV10FilterSource = "FROM_PERFORM"
+	FROM_OTHER_EnterpriseCommentListGetV10FilterSource   EnterpriseCommentListGetV10FilterSource = "FROM_OTHER"
 	FROM_DOUPLUS_EnterpriseCommentListGetV10FilterSource EnterpriseCommentListGetV10FilterSource = "FROM_DOUPLUS"
 	FROM_NATURAL_EnterpriseCommentListGetV10FilterSource EnterpriseCommentListGetV10FilterSource = "FROM_NATURAL"
-	FROM_BRAND_EnterpriseCommentListGetV10FilterSource   EnterpriseCommentListGetV10FilterSource = "FROM_BRAND"
 )
 
 // All allowed values of EnterpriseCommentListGetV10FilterSource enum
 var AllowedEnterpriseCommentListGetV10FilterSourceEnumValues = []EnterpriseCommentListGetV10FilterSource{
-	"FROM_OTHER",
+	"FROM_BRAND",
 	"FROM_PERFORM",
+	"FROM_OTHER",
 	"FROM_DOUPLUS",
 	"FROM_NATURAL",
-	"FROM_BRAND",
 }
 
 // NewEnterpriseCommentListGetV10FilterSourceFromValue returns a pointer to a valid EnterpriseCommentListGetV10FilterSource

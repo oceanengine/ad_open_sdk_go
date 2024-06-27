@@ -19,14 +19,14 @@ type EnterpriseItemListV10FilterItemType string
 
 // List of enterprise_item_list_v1.0_filter_item_type
 const (
-	ITEM_CONTENT_EnterpriseItemListV10FilterItemType EnterpriseItemListV10FilterItemType = "ITEM_CONTENT"
 	ITEM_AD_EnterpriseItemListV10FilterItemType      EnterpriseItemListV10FilterItemType = "ITEM_AD"
+	ITEM_CONTENT_EnterpriseItemListV10FilterItemType EnterpriseItemListV10FilterItemType = "ITEM_CONTENT"
 )
 
 // All allowed values of EnterpriseItemListV10FilterItemType enum
 var AllowedEnterpriseItemListV10FilterItemTypeEnumValues = []EnterpriseItemListV10FilterItemType{
-	"ITEM_CONTENT",
 	"ITEM_AD",
+	"ITEM_CONTENT",
 }
 
 // NewEnterpriseItemListV10FilterItemTypeFromValue returns a pointer to a valid EnterpriseItemListV10FilterItemType

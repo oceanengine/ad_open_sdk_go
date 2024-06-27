@@ -21,16 +21,16 @@ type AdGetV2DataAudienceGender string
 const (
 	GENDER_MALE_AdGetV2DataAudienceGender      AdGetV2DataAudienceGender = "GENDER_MALE"
 	GENDER_FEMALE_AdGetV2DataAudienceGender    AdGetV2DataAudienceGender = "GENDER_FEMALE"
-	GENDER_UNLIMITED_AdGetV2DataAudienceGender AdGetV2DataAudienceGender = "GENDER_UNLIMITED"
 	NONE_AdGetV2DataAudienceGender             AdGetV2DataAudienceGender = "NONE"
+	GENDER_UNLIMITED_AdGetV2DataAudienceGender AdGetV2DataAudienceGender = "GENDER_UNLIMITED"
 )
 
 // All allowed values of AdGetV2DataAudienceGender enum
 var AllowedAdGetV2DataAudienceGenderEnumValues = []AdGetV2DataAudienceGender{
 	"GENDER_MALE",
 	"GENDER_FEMALE",
-	"GENDER_UNLIMITED",
 	"NONE",
+	"GENDER_UNLIMITED",
 }
 
 // NewAdGetV2DataAudienceGenderFromValue returns a pointer to a valid AdGetV2DataAudienceGender

@@ -19,14 +19,14 @@ type ToolsBidSuggestV2SuperiorPopularityType string
 
 // List of tools_bid_suggest_v2_superior_popularity_type
 const (
-	GAME_ToolsBidSuggestV2SuperiorPopularityType ToolsBidSuggestV2SuperiorPopularityType = "GAME"
 	NONE_ToolsBidSuggestV2SuperiorPopularityType ToolsBidSuggestV2SuperiorPopularityType = "NONE"
+	GAME_ToolsBidSuggestV2SuperiorPopularityType ToolsBidSuggestV2SuperiorPopularityType = "GAME"
 )
 
 // All allowed values of ToolsBidSuggestV2SuperiorPopularityType enum
 var AllowedToolsBidSuggestV2SuperiorPopularityTypeEnumValues = []ToolsBidSuggestV2SuperiorPopularityType{
-	"GAME",
 	"NONE",
+	"GAME",
 }
 
 // NewToolsBidSuggestV2SuperiorPopularityTypeFromValue returns a pointer to a valid ToolsBidSuggestV2SuperiorPopularityType

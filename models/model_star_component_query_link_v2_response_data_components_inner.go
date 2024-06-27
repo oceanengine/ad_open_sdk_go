@@ -14,6 +14,8 @@ package models
 type StarComponentQueryLinkV2ResponseDataComponentsInner struct {
 	//
 	AuditBanReason *string `json:"audit_ban_reason,omitempty"`
+	//
+	ComponentId *int64 `json:"component_id,omitempty"`
 	// Android落地页链接 HTTPS URL
 	LinkAndroid *string `json:"link_android,omitempty"`
 	// Android app 下载链接 HTTPS URL，Android下载时需要

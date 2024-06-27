@@ -19,16 +19,16 @@ type ReportAdGetV2FilteringCampaignTypes string
 
 // List of report_ad_get_v2_filtering_campaign_types
 const (
-	CONTENT_ReportAdGetV2FilteringCampaignTypes ReportAdGetV2FilteringCampaignTypes = "CONTENT"
-	FEED_ReportAdGetV2FilteringCampaignTypes    ReportAdGetV2FilteringCampaignTypes = "FEED"
 	SEARCH_ReportAdGetV2FilteringCampaignTypes  ReportAdGetV2FilteringCampaignTypes = "SEARCH"
+	FEED_ReportAdGetV2FilteringCampaignTypes    ReportAdGetV2FilteringCampaignTypes = "FEED"
+	CONTENT_ReportAdGetV2FilteringCampaignTypes ReportAdGetV2FilteringCampaignTypes = "CONTENT"
 )
 
 // All allowed values of ReportAdGetV2FilteringCampaignTypes enum
 var AllowedReportAdGetV2FilteringCampaignTypesEnumValues = []ReportAdGetV2FilteringCampaignTypes{
-	"CONTENT",
-	"FEED",
 	"SEARCH",
+	"FEED",
+	"CONTENT",
 }
 
 // NewReportAdGetV2FilteringCampaignTypesFromValue returns a pointer to a valid ReportAdGetV2FilteringCampaignTypes

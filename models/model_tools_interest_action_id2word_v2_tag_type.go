@@ -19,14 +19,14 @@ type ToolsInterestActionId2wordV2TagType string
 
 // List of tools_interest_action_id2word_v2_tag_type
 const (
-	CATEGORY_ToolsInterestActionId2wordV2TagType ToolsInterestActionId2wordV2TagType = "CATEGORY"
 	KEYWORD_ToolsInterestActionId2wordV2TagType  ToolsInterestActionId2wordV2TagType = "KEYWORD"
+	CATEGORY_ToolsInterestActionId2wordV2TagType ToolsInterestActionId2wordV2TagType = "CATEGORY"
 )
 
 // All allowed values of ToolsInterestActionId2wordV2TagType enum
 var AllowedToolsInterestActionId2wordV2TagTypeEnumValues = []ToolsInterestActionId2wordV2TagType{
-	"CATEGORY",
 	"KEYWORD",
+	"CATEGORY",
 }
 
 // NewToolsInterestActionId2wordV2TagTypeFromValue returns a pointer to a valid ToolsInterestActionId2wordV2TagType

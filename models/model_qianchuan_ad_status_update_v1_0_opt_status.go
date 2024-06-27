@@ -19,18 +19,18 @@ type QianchuanAdStatusUpdateV10OptStatus string
 
 // List of qianchuan_ad_status_update_v1.0_opt_status
 const (
+	DISABLE_QianchuanAdStatusUpdateV10OptStatus QianchuanAdStatusUpdateV10OptStatus = "DISABLE"
+	REVIVE_QianchuanAdStatusUpdateV10OptStatus  QianchuanAdStatusUpdateV10OptStatus = "REVIVE"
 	DELETE_QianchuanAdStatusUpdateV10OptStatus  QianchuanAdStatusUpdateV10OptStatus = "DELETE"
 	ENABLE_QianchuanAdStatusUpdateV10OptStatus  QianchuanAdStatusUpdateV10OptStatus = "ENABLE"
-	REVIVE_QianchuanAdStatusUpdateV10OptStatus  QianchuanAdStatusUpdateV10OptStatus = "REVIVE"
-	DISABLE_QianchuanAdStatusUpdateV10OptStatus QianchuanAdStatusUpdateV10OptStatus = "DISABLE"
 )
 
 // All allowed values of QianchuanAdStatusUpdateV10OptStatus enum
 var AllowedQianchuanAdStatusUpdateV10OptStatusEnumValues = []QianchuanAdStatusUpdateV10OptStatus{
+	"DISABLE",
+	"REVIVE",
 	"DELETE",
 	"ENABLE",
-	"REVIVE",
-	"DISABLE",
 }
 
 // NewQianchuanAdStatusUpdateV10OptStatusFromValue returns a pointer to a valid QianchuanAdStatusUpdateV10OptStatus

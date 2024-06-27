@@ -19,30 +19,30 @@ type ReportCreativeGetV2FilteringLandingType string
 
 // List of report_creative_get_v2_filtering_landing_type
 const (
-	APP_ReportCreativeGetV2FilteringLandingType       ReportCreativeGetV2FilteringLandingType = "APP"
+	DPA_ReportCreativeGetV2FilteringLandingType       ReportCreativeGetV2FilteringLandingType = "DPA"
+	SHOP_ReportCreativeGetV2FilteringLandingType      ReportCreativeGetV2FilteringLandingType = "SHOP"
+	STORE_ReportCreativeGetV2FilteringLandingType     ReportCreativeGetV2FilteringLandingType = "STORE"
+	GOODS_ReportCreativeGetV2FilteringLandingType     ReportCreativeGetV2FilteringLandingType = "GOODS"
+	AWEME_ReportCreativeGetV2FilteringLandingType     ReportCreativeGetV2FilteringLandingType = "AWEME"
 	QUICK_APP_ReportCreativeGetV2FilteringLandingType ReportCreativeGetV2FilteringLandingType = "QUICK_APP"
 	LIVE_ReportCreativeGetV2FilteringLandingType      ReportCreativeGetV2FilteringLandingType = "LIVE"
-	SHOP_ReportCreativeGetV2FilteringLandingType      ReportCreativeGetV2FilteringLandingType = "SHOP"
-	DPA_ReportCreativeGetV2FilteringLandingType       ReportCreativeGetV2FilteringLandingType = "DPA"
-	AWEME_ReportCreativeGetV2FilteringLandingType     ReportCreativeGetV2FilteringLandingType = "AWEME"
-	LINK_ReportCreativeGetV2FilteringLandingType      ReportCreativeGetV2FilteringLandingType = "LINK"
-	STORE_ReportCreativeGetV2FilteringLandingType     ReportCreativeGetV2FilteringLandingType = "STORE"
+	APP_ReportCreativeGetV2FilteringLandingType       ReportCreativeGetV2FilteringLandingType = "APP"
 	ARTICLE_ReportCreativeGetV2FilteringLandingType   ReportCreativeGetV2FilteringLandingType = "ARTICLE"
-	GOODS_ReportCreativeGetV2FilteringLandingType     ReportCreativeGetV2FilteringLandingType = "GOODS"
+	LINK_ReportCreativeGetV2FilteringLandingType      ReportCreativeGetV2FilteringLandingType = "LINK"
 )
 
 // All allowed values of ReportCreativeGetV2FilteringLandingType enum
 var AllowedReportCreativeGetV2FilteringLandingTypeEnumValues = []ReportCreativeGetV2FilteringLandingType{
-	"APP",
+	"DPA",
+	"SHOP",
+	"STORE",
+	"GOODS",
+	"AWEME",
 	"QUICK_APP",
 	"LIVE",
-	"SHOP",
-	"DPA",
-	"AWEME",
-	"LINK",
-	"STORE",
+	"APP",
 	"ARTICLE",
-	"GOODS",
+	"LINK",
 }
 
 // NewReportCreativeGetV2FilteringLandingTypeFromValue returns a pointer to a valid ReportCreativeGetV2FilteringLandingType

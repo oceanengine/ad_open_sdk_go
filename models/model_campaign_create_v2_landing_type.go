@@ -19,32 +19,32 @@ type CampaignCreateV2LandingType string
 
 // List of campaign_create_v2_landing_type
 const (
-	APP_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "APP"
-	QUICK_APP_CampaignCreateV2LandingType      CampaignCreateV2LandingType = "QUICK_APP"
-	LIVE_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LIVE"
-	BRAND_EXTERNAL_CampaignCreateV2LandingType CampaignCreateV2LandingType = "BRAND_EXTERNAL"
-	SHOP_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "SHOP"
 	DPA_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "DPA"
-	AWEME_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "AWEME"
-	LINK_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LINK"
+	SHOP_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "SHOP"
 	STORE_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "STORE"
-	ARTICLE_CampaignCreateV2LandingType        CampaignCreateV2LandingType = "ARTICLE"
 	GOODS_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "GOODS"
+	AWEME_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "AWEME"
+	LIVE_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LIVE"
+	QUICK_APP_CampaignCreateV2LandingType      CampaignCreateV2LandingType = "QUICK_APP"
+	APP_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "APP"
+	ARTICLE_CampaignCreateV2LandingType        CampaignCreateV2LandingType = "ARTICLE"
+	LINK_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LINK"
+	BRAND_EXTERNAL_CampaignCreateV2LandingType CampaignCreateV2LandingType = "BRAND_EXTERNAL"
 )
 
 // All allowed values of CampaignCreateV2LandingType enum
 var AllowedCampaignCreateV2LandingTypeEnumValues = []CampaignCreateV2LandingType{
-	"APP",
-	"QUICK_APP",
-	"LIVE",
-	"BRAND_EXTERNAL",
-	"SHOP",
 	"DPA",
-	"AWEME",
-	"LINK",
+	"SHOP",
 	"STORE",
-	"ARTICLE",
 	"GOODS",
+	"AWEME",
+	"LIVE",
+	"QUICK_APP",
+	"APP",
+	"ARTICLE",
+	"LINK",
+	"BRAND_EXTERNAL",
 }
 
 // NewCampaignCreateV2LandingTypeFromValue returns a pointer to a valid CampaignCreateV2LandingType

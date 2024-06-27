@@ -19,14 +19,14 @@ type ToolsEstimateAudienceV2DeviceType string
 
 // List of tools_estimate_audience_v2_device_type
 const (
-	MOBILE_ToolsEstimateAudienceV2DeviceType ToolsEstimateAudienceV2DeviceType = "MOBILE"
 	PAD_ToolsEstimateAudienceV2DeviceType    ToolsEstimateAudienceV2DeviceType = "PAD"
+	MOBILE_ToolsEstimateAudienceV2DeviceType ToolsEstimateAudienceV2DeviceType = "MOBILE"
 )
 
 // All allowed values of ToolsEstimateAudienceV2DeviceType enum
 var AllowedToolsEstimateAudienceV2DeviceTypeEnumValues = []ToolsEstimateAudienceV2DeviceType{
-	"MOBILE",
 	"PAD",
+	"MOBILE",
 }
 
 // NewToolsEstimateAudienceV2DeviceTypeFromValue returns a pointer to a valid ToolsEstimateAudienceV2DeviceType

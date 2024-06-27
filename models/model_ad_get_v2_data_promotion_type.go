@@ -19,16 +19,16 @@ type AdGetV2DataPromotionType string
 
 // List of ad_get_v2_data_promotion_type
 const (
-	AWEME_HOME_PAGE_AdGetV2DataPromotionType   AdGetV2DataPromotionType = "AWEME_HOME_PAGE"
 	LIVE_AdGetV2DataPromotionType              AdGetV2DataPromotionType = "LIVE"
+	AWEME_HOME_PAGE_AdGetV2DataPromotionType   AdGetV2DataPromotionType = "AWEME_HOME_PAGE"
 	GOODS_AdGetV2DataPromotionType             AdGetV2DataPromotionType = "GOODS"
 	LANDING_PAGE_LINK_AdGetV2DataPromotionType AdGetV2DataPromotionType = "LANDING_PAGE_LINK"
 )
 
 // All allowed values of AdGetV2DataPromotionType enum
 var AllowedAdGetV2DataPromotionTypeEnumValues = []AdGetV2DataPromotionType{
-	"AWEME_HOME_PAGE",
 	"LIVE",
+	"AWEME_HOME_PAGE",
 	"GOODS",
 	"LANDING_PAGE_LINK",
 }

@@ -13,6 +13,6 @@ package models
 // StarMcnGetContractChallengeAuthorItemListV2V2ResponseData
 type StarMcnGetContractChallengeAuthorItemListV2V2ResponseData struct {
 	//
-	Data     []*StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner `json:"data"`
-	PageInfo StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataPageInfo     `json:"page_info"`
+	Data     []*StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner `json:"data,omitempty"`
+	PageInfo *StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataPageInfo    `json:"page_info,omitempty"`
 }

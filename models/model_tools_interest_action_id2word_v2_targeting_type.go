@@ -19,14 +19,14 @@ type ToolsInterestActionId2wordV2TargetingType string
 
 // List of tools_interest_action_id2word_v2_targeting_type
 const (
-	INTEREST_ToolsInterestActionId2wordV2TargetingType ToolsInterestActionId2wordV2TargetingType = "INTEREST"
 	ACTION_ToolsInterestActionId2wordV2TargetingType   ToolsInterestActionId2wordV2TargetingType = "ACTION"
+	INTEREST_ToolsInterestActionId2wordV2TargetingType ToolsInterestActionId2wordV2TargetingType = "INTEREST"
 )
 
 // All allowed values of ToolsInterestActionId2wordV2TargetingType enum
 var AllowedToolsInterestActionId2wordV2TargetingTypeEnumValues = []ToolsInterestActionId2wordV2TargetingType{
-	"INTEREST",
 	"ACTION",
+	"INTEREST",
 }
 
 // NewToolsInterestActionId2wordV2TargetingTypeFromValue returns a pointer to a valid ToolsInterestActionId2wordV2TargetingType

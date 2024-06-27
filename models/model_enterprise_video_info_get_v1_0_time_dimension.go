@@ -19,14 +19,14 @@ type EnterpriseVideoInfoGetV10TimeDimension string
 
 // List of enterprise_video_info_get_v1.0_time_dimension
 const (
-	SUM_EnterpriseVideoInfoGetV10TimeDimension   EnterpriseVideoInfoGetV10TimeDimension = "SUM"
 	DAILY_EnterpriseVideoInfoGetV10TimeDimension EnterpriseVideoInfoGetV10TimeDimension = "DAILY"
+	SUM_EnterpriseVideoInfoGetV10TimeDimension   EnterpriseVideoInfoGetV10TimeDimension = "SUM"
 )
 
 // All allowed values of EnterpriseVideoInfoGetV10TimeDimension enum
 var AllowedEnterpriseVideoInfoGetV10TimeDimensionEnumValues = []EnterpriseVideoInfoGetV10TimeDimension{
-	"SUM",
 	"DAILY",
+	"SUM",
 }
 
 // NewEnterpriseVideoInfoGetV10TimeDimensionFromValue returns a pointer to a valid EnterpriseVideoInfoGetV10TimeDimension

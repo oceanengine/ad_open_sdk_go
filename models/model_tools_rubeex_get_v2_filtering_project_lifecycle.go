@@ -19,20 +19,20 @@ type ToolsRubeexGetV2FilteringProjectLifecycle string
 
 // List of tools_rubeex_get_v2_filtering_project_lifecycle
 const (
-	EDITING_ToolsRubeexGetV2FilteringProjectLifecycle       ToolsRubeexGetV2FilteringProjectLifecycle = "EDITING"
-	RELAT_PLAN_ToolsRubeexGetV2FilteringProjectLifecycle    ToolsRubeexGetV2FilteringProjectLifecycle = "RELAT_PLAN"
 	SYNC_AD_ToolsRubeexGetV2FilteringProjectLifecycle       ToolsRubeexGetV2FilteringProjectLifecycle = "SYNC_AD"
-	LAUNCHED_ToolsRubeexGetV2FilteringProjectLifecycle      ToolsRubeexGetV2FilteringProjectLifecycle = "LAUNCHED"
 	AUDIT_SUCCESS_ToolsRubeexGetV2FilteringProjectLifecycle ToolsRubeexGetV2FilteringProjectLifecycle = "AUDIT_SUCCESS"
+	LAUNCHED_ToolsRubeexGetV2FilteringProjectLifecycle      ToolsRubeexGetV2FilteringProjectLifecycle = "LAUNCHED"
+	RELAT_PLAN_ToolsRubeexGetV2FilteringProjectLifecycle    ToolsRubeexGetV2FilteringProjectLifecycle = "RELAT_PLAN"
+	EDITING_ToolsRubeexGetV2FilteringProjectLifecycle       ToolsRubeexGetV2FilteringProjectLifecycle = "EDITING"
 )
 
 // All allowed values of ToolsRubeexGetV2FilteringProjectLifecycle enum
 var AllowedToolsRubeexGetV2FilteringProjectLifecycleEnumValues = []ToolsRubeexGetV2FilteringProjectLifecycle{
-	"EDITING",
-	"RELAT_PLAN",
 	"SYNC_AD",
-	"LAUNCHED",
 	"AUDIT_SUCCESS",
+	"LAUNCHED",
+	"RELAT_PLAN",
+	"EDITING",
 }
 
 // NewToolsRubeexGetV2FilteringProjectLifecycleFromValue returns a pointer to a valid ToolsRubeexGetV2FilteringProjectLifecycle

@@ -19,14 +19,14 @@ type EnterpriseItemListV10DataItemListItemType string
 
 // List of enterprise_item_list_v1.0_data_item_list_item_type
 const (
-	ITEM_CONTENT_EnterpriseItemListV10DataItemListItemType EnterpriseItemListV10DataItemListItemType = "ITEM_CONTENT"
 	ITEM_AD_EnterpriseItemListV10DataItemListItemType      EnterpriseItemListV10DataItemListItemType = "ITEM_AD"
+	ITEM_CONTENT_EnterpriseItemListV10DataItemListItemType EnterpriseItemListV10DataItemListItemType = "ITEM_CONTENT"
 )
 
 // All allowed values of EnterpriseItemListV10DataItemListItemType enum
 var AllowedEnterpriseItemListV10DataItemListItemTypeEnumValues = []EnterpriseItemListV10DataItemListItemType{
-	"ITEM_CONTENT",
 	"ITEM_AD",
+	"ITEM_CONTENT",
 }
 
 // NewEnterpriseItemListV10DataItemListItemTypeFromValue returns a pointer to a valid EnterpriseItemListV10DataItemListItemType

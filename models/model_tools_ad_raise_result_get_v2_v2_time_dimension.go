@@ -19,14 +19,14 @@ type ToolsAdRaiseResultGetV2V2TimeDimension string
 
 // List of tools_ad_raise_result_get_v2_v2_time_dimension
 const (
-	SUM_ToolsAdRaiseResultGetV2V2TimeDimension    ToolsAdRaiseResultGetV2V2TimeDimension = "SUM"
 	HOURLY_ToolsAdRaiseResultGetV2V2TimeDimension ToolsAdRaiseResultGetV2V2TimeDimension = "HOURLY"
+	SUM_ToolsAdRaiseResultGetV2V2TimeDimension    ToolsAdRaiseResultGetV2V2TimeDimension = "SUM"
 )
 
 // All allowed values of ToolsAdRaiseResultGetV2V2TimeDimension enum
 var AllowedToolsAdRaiseResultGetV2V2TimeDimensionEnumValues = []ToolsAdRaiseResultGetV2V2TimeDimension{
-	"SUM",
 	"HOURLY",
+	"SUM",
 }
 
 // NewToolsAdRaiseResultGetV2V2TimeDimensionFromValue returns a pointer to a valid ToolsAdRaiseResultGetV2V2TimeDimension

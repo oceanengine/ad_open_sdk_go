@@ -19,16 +19,16 @@ type AudiencePackageCreateV2AwemeFanTimeScope string
 
 // List of audience_package_create_v2_aweme_fan_time_scope
 const (
-	SIXTY_DAYS_AudiencePackageCreateV2AwemeFanTimeScope   AudiencePackageCreateV2AwemeFanTimeScope = "SIXTY_DAYS"
 	FIFTEEN_DAYS_AudiencePackageCreateV2AwemeFanTimeScope AudiencePackageCreateV2AwemeFanTimeScope = "FIFTEEN_DAYS"
 	THIRTY_DAYS_AudiencePackageCreateV2AwemeFanTimeScope  AudiencePackageCreateV2AwemeFanTimeScope = "THIRTY_DAYS"
+	SIXTY_DAYS_AudiencePackageCreateV2AwemeFanTimeScope   AudiencePackageCreateV2AwemeFanTimeScope = "SIXTY_DAYS"
 )
 
 // All allowed values of AudiencePackageCreateV2AwemeFanTimeScope enum
 var AllowedAudiencePackageCreateV2AwemeFanTimeScopeEnumValues = []AudiencePackageCreateV2AwemeFanTimeScope{
-	"SIXTY_DAYS",
 	"FIFTEEN_DAYS",
 	"THIRTY_DAYS",
+	"SIXTY_DAYS",
 }
 
 // NewAudiencePackageCreateV2AwemeFanTimeScopeFromValue returns a pointer to a valid AudiencePackageCreateV2AwemeFanTimeScope

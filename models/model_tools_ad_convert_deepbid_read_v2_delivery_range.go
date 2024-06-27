@@ -19,15 +19,15 @@ type ToolsAdConvertDeepbidReadV2DeliveryRange string
 
 // List of tools_ad_convert_deepbid_read_v2_delivery_range
 const (
-	UNION_ToolsAdConvertDeepbidReadV2DeliveryRange     ToolsAdConvertDeepbidReadV2DeliveryRange = "UNION"
 	UNIVERSAL_ToolsAdConvertDeepbidReadV2DeliveryRange ToolsAdConvertDeepbidReadV2DeliveryRange = "UNIVERSAL"
+	UNION_ToolsAdConvertDeepbidReadV2DeliveryRange     ToolsAdConvertDeepbidReadV2DeliveryRange = "UNION"
 	DEFAULT_ToolsAdConvertDeepbidReadV2DeliveryRange   ToolsAdConvertDeepbidReadV2DeliveryRange = "DEFAULT"
 )
 
 // All allowed values of ToolsAdConvertDeepbidReadV2DeliveryRange enum
 var AllowedToolsAdConvertDeepbidReadV2DeliveryRangeEnumValues = []ToolsAdConvertDeepbidReadV2DeliveryRange{
-	"UNION",
 	"UNIVERSAL",
+	"UNION",
 	"DEFAULT",
 }
 

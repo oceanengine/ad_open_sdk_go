@@ -19,20 +19,20 @@ type ReportAudienceAwemeListV2FilteringAudienceLevel string
 
 // List of report_audience_aweme_list_v2_filtering_audience_level
 const (
-	THIRD_LEVEL_ReportAudienceAwemeListV2FilteringAudienceLevel   ReportAudienceAwemeListV2FilteringAudienceLevel = "THIRD_LEVEL"
-	SECOND_LEVEL_ReportAudienceAwemeListV2FilteringAudienceLevel  ReportAudienceAwemeListV2FilteringAudienceLevel = "SECOND_LEVEL"
 	FIRST_LEVEL_ReportAudienceAwemeListV2FilteringAudienceLevel   ReportAudienceAwemeListV2FilteringAudienceLevel = "FIRST_LEVEL"
-	KEYWORD_AWEME_ReportAudienceAwemeListV2FilteringAudienceLevel ReportAudienceAwemeListV2FilteringAudienceLevel = "KEYWORD_AWEME"
+	SECOND_LEVEL_ReportAudienceAwemeListV2FilteringAudienceLevel  ReportAudienceAwemeListV2FilteringAudienceLevel = "SECOND_LEVEL"
 	FOURTH_LEVEL_ReportAudienceAwemeListV2FilteringAudienceLevel  ReportAudienceAwemeListV2FilteringAudienceLevel = "FOURTH_LEVEL"
+	THIRD_LEVEL_ReportAudienceAwemeListV2FilteringAudienceLevel   ReportAudienceAwemeListV2FilteringAudienceLevel = "THIRD_LEVEL"
+	KEYWORD_AWEME_ReportAudienceAwemeListV2FilteringAudienceLevel ReportAudienceAwemeListV2FilteringAudienceLevel = "KEYWORD_AWEME"
 )
 
 // All allowed values of ReportAudienceAwemeListV2FilteringAudienceLevel enum
 var AllowedReportAudienceAwemeListV2FilteringAudienceLevelEnumValues = []ReportAudienceAwemeListV2FilteringAudienceLevel{
-	"THIRD_LEVEL",
-	"SECOND_LEVEL",
 	"FIRST_LEVEL",
-	"KEYWORD_AWEME",
+	"SECOND_LEVEL",
 	"FOURTH_LEVEL",
+	"THIRD_LEVEL",
+	"KEYWORD_AWEME",
 }
 
 // NewReportAudienceAwemeListV2FilteringAudienceLevelFromValue returns a pointer to a valid ReportAudienceAwemeListV2FilteringAudienceLevel

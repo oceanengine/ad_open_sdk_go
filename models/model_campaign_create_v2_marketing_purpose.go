@@ -20,17 +20,17 @@ type CampaignCreateV2MarketingPurpose string
 // List of campaign_create_v2_marketing_purpose
 const (
 	CONVERSION_CampaignCreateV2MarketingPurpose  CampaignCreateV2MarketingPurpose = "CONVERSION"
-	UNLIMITED_CampaignCreateV2MarketingPurpose   CampaignCreateV2MarketingPurpose = "UNLIMITED"
 	ACKNOWLEDGE_CampaignCreateV2MarketingPurpose CampaignCreateV2MarketingPurpose = "ACKNOWLEDGE"
 	INTENTION_CampaignCreateV2MarketingPurpose   CampaignCreateV2MarketingPurpose = "INTENTION"
+	UNLIMITED_CampaignCreateV2MarketingPurpose   CampaignCreateV2MarketingPurpose = "UNLIMITED"
 )
 
 // All allowed values of CampaignCreateV2MarketingPurpose enum
 var AllowedCampaignCreateV2MarketingPurposeEnumValues = []CampaignCreateV2MarketingPurpose{
 	"CONVERSION",
-	"UNLIMITED",
 	"ACKNOWLEDGE",
 	"INTENTION",
+	"UNLIMITED",
 }
 
 // NewCampaignCreateV2MarketingPurposeFromValue returns a pointer to a valid CampaignCreateV2MarketingPurpose

@@ -19,14 +19,14 @@ type AdGetV2DataAudienceSuperiorPopularityType string
 
 // List of ad_get_v2_data_audience_superior_popularity_type
 const (
-	GAME_AdGetV2DataAudienceSuperiorPopularityType AdGetV2DataAudienceSuperiorPopularityType = "GAME"
 	NONE_AdGetV2DataAudienceSuperiorPopularityType AdGetV2DataAudienceSuperiorPopularityType = "NONE"
+	GAME_AdGetV2DataAudienceSuperiorPopularityType AdGetV2DataAudienceSuperiorPopularityType = "GAME"
 )
 
 // All allowed values of AdGetV2DataAudienceSuperiorPopularityType enum
 var AllowedAdGetV2DataAudienceSuperiorPopularityTypeEnumValues = []AdGetV2DataAudienceSuperiorPopularityType{
-	"GAME",
 	"NONE",
+	"GAME",
 }
 
 // NewAdGetV2DataAudienceSuperiorPopularityTypeFromValue returns a pointer to a valid AdGetV2DataAudienceSuperiorPopularityType

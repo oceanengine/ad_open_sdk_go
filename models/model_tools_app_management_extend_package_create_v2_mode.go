@@ -19,16 +19,16 @@ type ToolsAppManagementExtendPackageCreateV2Mode string
 
 // List of tools_app_management_extend_package_create_v2_mode
 const (
-	MANUAL_ToolsAppManagementExtendPackageCreateV2Mode    ToolsAppManagementExtendPackageCreateV2Mode = "Manual"
 	AUTO_ToolsAppManagementExtendPackageCreateV2Mode      ToolsAppManagementExtendPackageCreateV2Mode = "Auto"
 	CUSTOMIZE_ToolsAppManagementExtendPackageCreateV2Mode ToolsAppManagementExtendPackageCreateV2Mode = "Customize"
+	MANUAL_ToolsAppManagementExtendPackageCreateV2Mode    ToolsAppManagementExtendPackageCreateV2Mode = "Manual"
 )
 
 // All allowed values of ToolsAppManagementExtendPackageCreateV2Mode enum
 var AllowedToolsAppManagementExtendPackageCreateV2ModeEnumValues = []ToolsAppManagementExtendPackageCreateV2Mode{
-	"Manual",
 	"Auto",
 	"Customize",
+	"Manual",
 }
 
 // NewToolsAppManagementExtendPackageCreateV2ModeFromValue returns a pointer to a valid ToolsAppManagementExtendPackageCreateV2Mode

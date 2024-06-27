@@ -19,21 +19,21 @@ type ToolsBidSuggestV2Career string
 
 // List of tools_bid_suggest_v2_career
 const (
-	FINANCIAL_ToolsBidSuggestV2Career       ToolsBidSuggestV2Career = "FINANCIAL"
 	CIVIL_SERVANTS_ToolsBidSuggestV2Career  ToolsBidSuggestV2Career = "CIVIL_SERVANTS"
-	TEACHER_ToolsBidSuggestV2Career         ToolsBidSuggestV2Career = "TEACHER"
 	COLLEGE_STUDENT_ToolsBidSuggestV2Career ToolsBidSuggestV2Career = "COLLEGE_STUDENT"
 	MEDICAL_STAFF_ToolsBidSuggestV2Career   ToolsBidSuggestV2Career = "MEDICAL_STAFF"
+	FINANCIAL_ToolsBidSuggestV2Career       ToolsBidSuggestV2Career = "FINANCIAL"
+	TEACHER_ToolsBidSuggestV2Career         ToolsBidSuggestV2Career = "TEACHER"
 	IT_ToolsBidSuggestV2Career              ToolsBidSuggestV2Career = "IT"
 )
 
 // All allowed values of ToolsBidSuggestV2Career enum
 var AllowedToolsBidSuggestV2CareerEnumValues = []ToolsBidSuggestV2Career{
-	"FINANCIAL",
 	"CIVIL_SERVANTS",
-	"TEACHER",
 	"COLLEGE_STUDENT",
 	"MEDICAL_STAFF",
+	"FINANCIAL",
+	"TEACHER",
 	"IT",
 }
 

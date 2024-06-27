@@ -19,16 +19,16 @@ type ToolsNoBidSuggestBidV2BudgetMode string
 
 // List of tools_no_bid_suggest_bid_v2_budget_mode
 const (
-	BUDGET_MODE_DAY_ToolsNoBidSuggestBidV2BudgetMode      ToolsNoBidSuggestBidV2BudgetMode = "BUDGET_MODE_DAY"
-	BUDGET_MODE_TOTAL_ToolsNoBidSuggestBidV2BudgetMode    ToolsNoBidSuggestBidV2BudgetMode = "BUDGET_MODE_TOTAL"
 	BUDGET_MODE_INFINITE_ToolsNoBidSuggestBidV2BudgetMode ToolsNoBidSuggestBidV2BudgetMode = "BUDGET_MODE_INFINITE"
+	BUDGET_MODE_TOTAL_ToolsNoBidSuggestBidV2BudgetMode    ToolsNoBidSuggestBidV2BudgetMode = "BUDGET_MODE_TOTAL"
+	BUDGET_MODE_DAY_ToolsNoBidSuggestBidV2BudgetMode      ToolsNoBidSuggestBidV2BudgetMode = "BUDGET_MODE_DAY"
 )
 
 // All allowed values of ToolsNoBidSuggestBidV2BudgetMode enum
 var AllowedToolsNoBidSuggestBidV2BudgetModeEnumValues = []ToolsNoBidSuggestBidV2BudgetMode{
-	"BUDGET_MODE_DAY",
-	"BUDGET_MODE_TOTAL",
 	"BUDGET_MODE_INFINITE",
+	"BUDGET_MODE_TOTAL",
+	"BUDGET_MODE_DAY",
 }
 
 // NewToolsNoBidSuggestBidV2BudgetModeFromValue returns a pointer to a valid ToolsNoBidSuggestBidV2BudgetMode

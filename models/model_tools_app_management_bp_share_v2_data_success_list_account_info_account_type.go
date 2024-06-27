@@ -20,15 +20,15 @@ type ToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountType string
 // List of tools_app_management_bp_share_v2_data_success_list_account_info_account_type
 const (
 	BP_ToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountType   ToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountType = "BP"
-	AD_ToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountType   ToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountType = "AD"
 	STAR_ToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountType ToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountType = "STAR"
+	AD_ToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountType   ToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountType = "AD"
 )
 
 // All allowed values of ToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountType enum
 var AllowedToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountTypeEnumValues = []ToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountType{
 	"BP",
-	"AD",
 	"STAR",
+	"AD",
 }
 
 // NewToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountTypeFromValue returns a pointer to a valid ToolsAppManagementBpShareV2DataSuccessListAccountInfoAccountType

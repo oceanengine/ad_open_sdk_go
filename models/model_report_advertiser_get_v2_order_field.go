@@ -19,494 +19,494 @@ type ReportAdvertiserGetV2OrderField string
 
 // List of report_advertiser_get_v2_order_field
 const (
-	ADVANCED_CREATIVE_FORM_SUBMIT_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "advanced_creative_form_submit"
-	LUBAN_LIVE_SHARE_CNT_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "luban_live_share_cnt"
-	ATTRIBUTION_RETENTION_2D_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_2d_cost"
-	WECHAT_FIRST_PAY_COST_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "wechat_first_pay_cost"
-	CLICK_SHOPWINDOW_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "click_shopwindow"
-	CLICK_LANDING_PAGE_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "click_landing_page"
-	ATTRIBUTION_DAY_ACTIVE_PAY_COUNT_ReportAdvertiserGetV2OrderField            ReportAdvertiserGetV2OrderField = "attribution_day_active_pay_count"
-	VOTE_ReportAdvertiserGetV2OrderField                                        ReportAdvertiserGetV2OrderField = "vote"
-	MAP_SEARCH_ReportAdvertiserGetV2OrderField                                  ReportAdvertiserGetV2OrderField = "map_search"
-	IES_CHALLENGE_CLICK_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "ies_challenge_click"
-	POI_ADDRESS_CLICK_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "poi_address_click"
-	DEEP_CONVERT_RATE_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "deep_convert_rate"
-	UNION_ROI_3_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "union_roi_3"
-	ATTRIBUTION_WECHAT_FIRST_PAY_30D_COST_ReportAdvertiserGetV2OrderField       ReportAdvertiserGetV2OrderField = "attribution_wechat_first_pay_30d_cost"
-	AVERAGE_VIDEO_PLAY_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "average_video_play"
-	PLAY_OVER_ReportAdvertiserGetV2OrderField                                   ReportAdvertiserGetV2OrderField = "play_over"
-	IN_APP_DETAIL_UV_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "in_app_detail_uv"
-	PLAY_100_FEED_BREAK_RATE_ReportAdvertiserGetV2OrderField                    ReportAdvertiserGetV2OrderField = "play_100_feed_break_rate"
-	CONVERT_SHOW_RATE_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "convert_show_rate"
-	CPA_ReportAdvertiserGetV2OrderField                                         ReportAdvertiserGetV2OrderField = "cpa"
-	ATTRIBUTION_GAME_IN_APP_ROI_4DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_4days"
-	IN_APP_ORDER_ReportAdvertiserGetV2OrderField                                ReportAdvertiserGetV2OrderField = "in_app_order"
-	STAT_PAY_AMOUNT_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "stat_pay_amount"
-	ATTRIBUTION_NEXT_DAY_OPEN_RATE_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "attribution_next_day_open_rate"
-	PLAY_DURATION_3S_RATE_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "play_duration_3s_rate"
-	ATTRIBUTION_GAME_IN_APP_LTV_2DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_2days"
-	PLAY_75_FEED_BREAK_RATE_ReportAdvertiserGetV2OrderField                     ReportAdvertiserGetV2OrderField = "play_75_feed_break_rate"
-	ACTIVE_RATE_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "active_rate"
-	ACTIVE_REGISTER_RATE_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "active_register_rate"
-	ATTRIBUTION_RETENTION_5D_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_retention_5d_cnt"
-	TOTAL_PLAY_ReportAdvertiserGetV2OrderField                                  ReportAdvertiserGetV2OrderField = "total_play"
-	CLICK_ReportAdvertiserGetV2OrderField                                       ReportAdvertiserGetV2OrderField = "click"
-	ATTRIBUTION_GAME_IN_APP_LTV_3DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_3days"
-	VALID_PLAY_COST_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "valid_play_cost"
-	FOLLOW_ReportAdvertiserGetV2OrderField                                      ReportAdvertiserGetV2OrderField = "follow"
-	IN_APP_PAY_ReportAdvertiserGetV2OrderField                                  ReportAdvertiserGetV2OrderField = "in_app_pay"
-	ATTRIBUTION_WECHAT_LOGIN_30D_COST_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_wechat_login_30d_cost"
 	INSTALL_FINISH_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "install_finish"
-	PAY_AMOUNT_ROI_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "pay_amount_roi"
-	ATTRIBUTION_GAME_IN_APP_ROI_3DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_3days"
-	UNION_ROI_7_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "union_roi_7"
-	DOWNLOAD_FINISH_RATE_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "download_finish_rate"
-	ATTRIBUTION_GAME_IN_APP_LTV_8DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_8days"
-	PLAY_DURATION_10S_RATE_ReportAdvertiserGetV2OrderField                      ReportAdvertiserGetV2OrderField = "play_duration_10s_rate"
-	ATTRIBUTION_RETENTION_4D_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_4d_cost"
-	ATTRIBUTION_GAME_IN_APP_LTV_5DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_5days"
-	ATTRIBUTION_DAY_ACITVE_PAY_COUNT_ReportAdvertiserGetV2OrderField            ReportAdvertiserGetV2OrderField = "attribution_day_acitve_pay_count"
-	DOWNLOAD_START_RATE_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "download_start_rate"
-	PLAY_25_FEED_BREAK_RATE_ReportAdvertiserGetV2OrderField                     ReportAdvertiserGetV2OrderField = "play_25_feed_break_rate"
-	ATTRIBUTION_RETENTION_7D_TOTAL_COST_ReportAdvertiserGetV2OrderField         ReportAdvertiserGetV2OrderField = "attribution_retention_7d_total_cost"
-	ACTIVE_PAY_RATE_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "active_pay_rate"
-	LUBAN_LIVE_FOLLOW_CNT_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "luban_live_follow_cnt"
-	ATTRIBUTION_ACTIVE_PAY_7D_COUNT_ReportAdvertiserGetV2OrderField             ReportAdvertiserGetV2OrderField = "attribution_active_pay_7d_count"
-	ATTRIBUTION_MICRO_GAME_3D_LTV_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_micro_game_3d_ltv"
-	ATTRIBUTION_ACTIVE_PAY_7D_RATE_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "attribution_active_pay_7d_rate"
+	VALID_PLAY_COST_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "valid_play_cost"
 	ADVANCED_CREATIVE_COUNSEL_CLICK_ReportAdvertiserGetV2OrderField             ReportAdvertiserGetV2OrderField = "advanced_creative_counsel_click"
-	HOME_VISITED_ReportAdvertiserGetV2OrderField                                ReportAdvertiserGetV2OrderField = "home_visited"
-	NEXT_DAY_OPEN_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "next_day_open"
-	ATTRIBUTION_GAME_IN_APP_LTV_6DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_6days"
-	FIRST_RENTAL_ORDER_COUNT_ReportAdvertiserGetV2OrderField                    ReportAdvertiserGetV2OrderField = "first_rental_order_count"
-	GAME_ADDICTION_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "game_addiction"
-	CONSULT_ReportAdvertiserGetV2OrderField                                     ReportAdvertiserGetV2OrderField = "consult"
-	LIVE_COMPONENT_CLICK_RATE_ReportAdvertiserGetV2OrderField                   ReportAdvertiserGetV2OrderField = "live_component_click_rate"
-	LIVE_FANS_CLUB_JOIN_CNT_ReportAdvertiserGetV2OrderField                     ReportAdvertiserGetV2OrderField = "live_fans_club_join_cnt"
-	AVG_CLICK_COST_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "avg_click_cost"
-	ATTRIBUTION_RETENTION_3D_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_3d_cost"
-	REPORT_ReportAdvertiserGetV2OrderField                                      ReportAdvertiserGetV2OrderField = "report"
-	ATTRIBUTION_RETENTION_6D_RATE_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_6d_rate"
-	PLAY_DURATION_5S_RATE_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "play_duration_5s_rate"
-	COMMENT_ReportAdvertiserGetV2OrderField                                     ReportAdvertiserGetV2OrderField = "comment"
-	ATTRIBUTION_RETENTION_4D_RATE_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_4d_rate"
-	PRE_LOAN_CREDIT_COST_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "pre_loan_credit_cost"
-	LUBAN_ORDER_CNT_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "luban_order_cnt"
-	PLAY_DURATION_10S_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "play_duration_10s"
-	CARD_SHOW_ReportAdvertiserGetV2OrderField                                   ReportAdvertiserGetV2OrderField = "card_show"
-	CONVERT_RATE_ReportAdvertiserGetV2OrderField                                ReportAdvertiserGetV2OrderField = "convert_rate"
-	PHONE_CONNECT_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "phone_connect"
-	LOAN_COMPLETION_COST_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "loan_completion_cost"
-	ATTRIBUTION_RETENTION_6D_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_retention_6d_cnt"
-	ATTRIBUTION_RETENTION_3D_RATE_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_3d_rate"
-	ACTIVE_PAY_COST_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "active_pay_cost"
-	ATTRIBUTION_MICRO_GAME_0D_ROI_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_micro_game_0d_roi"
-	LUBAN_LIVE_SLIDECART_CLICK_CNT_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "luban_live_slidecart_click_cnt"
-	ATTRIBUTION_RETENTION_7D_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_retention_7d_cnt"
-	LUBAN_ORDER_STAT_AMOUNT_ReportAdvertiserGetV2OrderField                     ReportAdvertiserGetV2OrderField = "luban_order_stat_amount"
-	ATTRIBUTION_MICRO_GAME_7D_ROI_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_micro_game_7d_roi"
-	COST_ReportAdvertiserGetV2OrderField                                        ReportAdvertiserGetV2OrderField = "cost"
-	DOWNLOAD_START_COST_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "download_start_cost"
-	DOWNLOAD_ReportAdvertiserGetV2OrderField                                    ReportAdvertiserGetV2OrderField = "download"
-	COUPON_SINGLE_PAGE_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "coupon_single_page"
-	PHONE_ReportAdvertiserGetV2OrderField                                       ReportAdvertiserGetV2OrderField = "phone"
-	WECHAT_LOGIN_COST_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "wechat_login_cost"
-	CPC_ReportAdvertiserGetV2OrderField                                         ReportAdvertiserGetV2OrderField = "cpc"
-	INTERACT_PER_COST_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "interact_per_cost"
-	QQ_ReportAdvertiserGetV2OrderField                                          ReportAdvertiserGetV2OrderField = "qq"
-	ACTIVE_ReportAdvertiserGetV2OrderField                                      ReportAdvertiserGetV2OrderField = "active"
-	ADVANCED_CREATIVE_FORM_CLICK_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "advanced_creative_form_click"
-	ATTRIBUTION_GAME_IN_APP_LTV_7DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_7days"
-	VIEW_ReportAdvertiserGetV2OrderField                                        ReportAdvertiserGetV2OrderField = "view"
-	ATTRIBUTION_RETENTION_5D_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_5d_cost"
-	ATTRIBUTION_ACTIVE_PAY_7D_COST_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "attribution_active_pay_7d_cost"
-	LOTTERY_ReportAdvertiserGetV2OrderField                                     ReportAdvertiserGetV2OrderField = "lottery"
-	GAME_ADDICTION_RATE_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "game_addiction_rate"
-	LUBAN_LIVE_GIFT_AMOUNT_ReportAdvertiserGetV2OrderField                      ReportAdvertiserGetV2OrderField = "luban_live_gift_amount"
-	UNION_ROI_0_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "union_roi_0"
-	AVG_RANK_ReportAdvertiserGetV2OrderField                                    ReportAdvertiserGetV2OrderField = "avg_rank"
-	ATTRIBUTION_CONVERT_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "attribution_convert"
-	GAME_PAY_COUNT_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "game_pay_count"
-	REDIRECT_TO_SHOP_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "redirect_to_shop"
-	ATTRIBUTION_GAME_IN_APP_ROI_1DAY_ReportAdvertiserGetV2OrderField            ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_1day"
-	CLICK_WEBSITE_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "click_website"
-	LUBAN_LIVE_CLICK_PRODUCT_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "luban_live_click_product_cnt"
-	PRE_CONVERT_COUNT_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "pre_convert_count"
-	PRE_CONVERT_COST_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "pre_convert_cost"
-	ATTRIBUTION_ACTIVE_PAY_INTRA_ONE_DAY_RATE_ReportAdvertiserGetV2OrderField   ReportAdvertiserGetV2OrderField = "attribution_active_pay_intra_one_day_rate"
-	CLICK_CALL_DY_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "click_call_dy"
-	PLAY_100_FEED_BREAK_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "play_100_feed_break"
-	PLAY_OVER_RATE_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "play_over_rate"
-	ATTRIBUTION_WECHAT_PAY_30D_AMOUNT_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_wechat_pay_30d_amount"
-	LIVE_COMPONENT_CLICK_COUNT_ReportAdvertiserGetV2OrderField                  ReportAdvertiserGetV2OrderField = "live_component_click_count"
-	INSTALL_FINISH_RATE_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "install_finish_rate"
-	ATTRIBUTION_RETENTION_7D_SUM_CNT_ReportAdvertiserGetV2OrderField            ReportAdvertiserGetV2OrderField = "attribution_retention_7d_sum_cnt"
-	ATTRIBUTION_WECHAT_PAY_30D_ROI_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "attribution_wechat_pay_30d_roi"
-	CLICK_DOWNLOAD_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "click_download"
-	MESSAGE_ReportAdvertiserGetV2OrderField                                     ReportAdvertiserGetV2OrderField = "message"
-	CTR_ReportAdvertiserGetV2OrderField                                         ReportAdvertiserGetV2OrderField = "ctr"
 	DEEP_CONVERT_COST_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "deep_convert_cost"
-	CLICK_INSTALL_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "click_install"
-	LOAN_CREDIT_RATE_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "loan_credit_rate"
-	PLAY_50_FEED_BREAK_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "play_50_feed_break"
-	CONVERT_ReportAdvertiserGetV2OrderField                                     ReportAdvertiserGetV2OrderField = "convert"
-	ATTRIBUTION_ACTIVE_PAY_INTRA_ONE_DAY_COUNT_ReportAdvertiserGetV2OrderField  ReportAdvertiserGetV2OrderField = "attribution_active_pay_intra_one_day_count"
-	ATTRIBUTION_RETENTION_2D_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_retention_2d_cnt"
-	ATTRIBUTION_GAME_IN_APP_ROI_7DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_7days"
-	ADVANCED_CREATIVE_COUPON_ADDITION_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "advanced_creative_coupon_addition"
-	SUBMIT_CERTIFICATION_COUNT_ReportAdvertiserGetV2OrderField                  ReportAdvertiserGetV2OrderField = "submit_certification_count"
-	PLAY_75_FEED_BREAK_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "play_75_feed_break"
-	VALID_PLAY_RATE_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "valid_play_rate"
-	ATTRIBUTION_GAME_IN_APP_ROI_2DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_2days"
-	PLAY_DURATION_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "play_duration"
-	SHARE_ReportAdvertiserGetV2OrderField                                       ReportAdvertiserGetV2OrderField = "share"
-	IES_MUSIC_CLICK_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "ies_music_click"
-	LUBAN_LIVE_PAY_ORDER_STAT_COST_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "luban_live_pay_order_stat_cost"
-	ACTIVE_REGISTER_COST_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "active_register_cost"
-	CUSTOMER_EFFECTIVE_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "customer_effective"
-	LOAN_CREDIT_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "loan_credit"
-	LUBAN_ORDER_ROI_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "luban_order_roi"
-	PRE_LOAN_CREDIT_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "pre_loan_credit"
-	ATTRIBUTION_WECHAT_LOGIN_30D_COUNT_ReportAdvertiserGetV2OrderField          ReportAdvertiserGetV2OrderField = "attribution_wechat_login_30d_count"
-	ATTRIBUTION_GAME_IN_APP_LTV_1DAY_ReportAdvertiserGetV2OrderField            ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_1day"
-	WECHAT_LOGIN_COUNT_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "wechat_login_count"
-	DEEP_CONVERT_ReportAdvertiserGetV2OrderField                                ReportAdvertiserGetV2OrderField = "deep_convert"
-	PHONE_CONFIRM_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "phone_confirm"
+	ATTRIBUTION_GAME_PAY_7D_COST_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_game_pay_7d_cost"
 	LUBAN_LIVE_COMMENT_CNT_ReportAdvertiserGetV2OrderField                      ReportAdvertiserGetV2OrderField = "luban_live_comment_cnt"
-	PLAY_50_FEED_BREAK_RATE_ReportAdvertiserGetV2OrderField                     ReportAdvertiserGetV2OrderField = "play_50_feed_break_rate"
-	ATTRIBUTION_RETENTION_7D_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_7d_cost"
-	ADVANCED_CREATIVE_PHONE_CLICK_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "advanced_creative_phone_click"
-	ATTRIBUTION_RETENTION_4D_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_retention_4d_cnt"
+	ATTRIBUTION_WECHAT_PAY_30D_ROI_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "attribution_wechat_pay_30d_roi"
 	LOAN_COMPLETION_RATE_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "loan_completion_rate"
-	DOWNLOAD_FINISH_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "download_finish"
-	LOCATION_CLICK_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "location_click"
-	NEXT_DAY_OPEN_COST_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "next_day_open_cost"
-	ATTRIBUTION_MICRO_GAME_7D_LTV_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_micro_game_7d_ltv"
-	DOWNLOAD_FINISH_COST_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "download_finish_cost"
-	GAME_ADDICTION_COST_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "game_addiction_cost"
-	DISLIKE_ReportAdvertiserGetV2OrderField                                     ReportAdvertiserGetV2OrderField = "dislike"
-	ATTRIBUTION_ACTIVE_PAY_INTRA_ONE_DAY_COST_ReportAdvertiserGetV2OrderField   ReportAdvertiserGetV2OrderField = "attribution_active_pay_intra_one_day_cost"
-	GAME_PAY_COST_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "game_pay_cost"
-	IN_APP_UV_ReportAdvertiserGetV2OrderField                                   ReportAdvertiserGetV2OrderField = "in_app_uv"
-	PLAY_DURATION_2S_RATE_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "play_duration_2s_rate"
-	AVG_SHOW_COST_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "avg_show_cost"
-	BUTTON_ReportAdvertiserGetV2OrderField                                      ReportAdvertiserGetV2OrderField = "button"
-	PLAY_25_FEED_BREAK_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "play_25_feed_break"
-	PLAY_DURATION_3S_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "play_duration_3s"
-	ATTRIBUTION_RETENTION_7D_RATE_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_7d_rate"
-	WIFI_PLAY_RATE_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "wifi_play_rate"
-	SHOW_ReportAdvertiserGetV2OrderField                                        ReportAdvertiserGetV2OrderField = "show"
-	LIVE_WATCH_ONE_MINUTE_COUNT_ReportAdvertiserGetV2OrderField                 ReportAdvertiserGetV2OrderField = "live_watch_one_minute_count"
-	VALID_PLAY_ReportAdvertiserGetV2OrderField                                  ReportAdvertiserGetV2OrderField = "valid_play"
-	WIFI_PLAY_ReportAdvertiserGetV2OrderField                                   ReportAdvertiserGetV2OrderField = "wifi_play"
+	PRE_LOAN_CREDIT_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "pre_loan_credit"
 	IN_APP_CART_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "in_app_cart"
-	ATTRIBUTION_RETENTION_2D_RATE_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_2d_rate"
-	ATTRIBUTION_MICRO_GAME_3D_ROI_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_micro_game_3d_roi"
-	SHOPPING_ReportAdvertiserGetV2OrderField                                    ReportAdvertiserGetV2OrderField = "shopping"
-	ATTRIBUTION_NEXT_DAY_OPEN_COST_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "attribution_next_day_open_cost"
-	LIVE_COMPONENT_CLICK_COST_ReportAdvertiserGetV2OrderField                   ReportAdvertiserGetV2OrderField = "live_component_click_cost"
-	DOWNLOAD_START_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "download_start"
-	WECHAT_ReportAdvertiserGetV2OrderField                                      ReportAdvertiserGetV2OrderField = "wechat"
-	CPM_ReportAdvertiserGetV2OrderField                                         ReportAdvertiserGetV2OrderField = "cpm"
-	ATTRIBUTION_GAME_PAY_7D_COUNT_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_game_pay_7d_count"
-	ATTRIBUTION_RETENTION_3D_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_retention_3d_cnt"
+	COST_ReportAdvertiserGetV2OrderField                                        ReportAdvertiserGetV2OrderField = "cost"
+	GAME_PAY_COUNT_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "game_pay_count"
+	LUBAN_ORDER_STAT_AMOUNT_ReportAdvertiserGetV2OrderField                     ReportAdvertiserGetV2OrderField = "luban_order_stat_amount"
+	PRE_LOAN_CREDIT_COST_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "pre_loan_credit_cost"
+	PHONE_CONNECT_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "phone_connect"
+	ATTRIBUTION_GAME_IN_APP_LTV_5DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_5days"
+	ADVANCED_CREATIVE_PHONE_CLICK_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "advanced_creative_phone_click"
+	PLAY_75_FEED_BREAK_RATE_ReportAdvertiserGetV2OrderField                     ReportAdvertiserGetV2OrderField = "play_75_feed_break_rate"
+	AVG_SHOW_COST_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "avg_show_cost"
 	CONVERT_COST_ReportAdvertiserGetV2OrderField                                ReportAdvertiserGetV2OrderField = "convert_cost"
+	ATTRIBUTION_GAME_IN_APP_ROI_3DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_3days"
 	ATTRIBUTION_GAME_IN_APP_ROI_6DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_6days"
+	CLICK_LANDING_PAGE_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "click_landing_page"
+	CLICK_WEBSITE_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "click_website"
+	PRE_CONVERT_COUNT_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "pre_convert_count"
+	ATTRIBUTION_GAME_IN_APP_LTV_6DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_6days"
+	ATTRIBUTION_WECHAT_LOGIN_30D_COUNT_ReportAdvertiserGetV2OrderField          ReportAdvertiserGetV2OrderField = "attribution_wechat_login_30d_count"
+	PLAY_DURATION_3S_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "play_duration_3s"
+	SHARE_ReportAdvertiserGetV2OrderField                                       ReportAdvertiserGetV2OrderField = "share"
+	AVG_RANK_ReportAdvertiserGetV2OrderField                                    ReportAdvertiserGetV2OrderField = "avg_rank"
+	PHONE_ReportAdvertiserGetV2OrderField                                       ReportAdvertiserGetV2OrderField = "phone"
+	LUBAN_LIVE_SHARE_CNT_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "luban_live_share_cnt"
+	CARD_SHOW_ReportAdvertiserGetV2OrderField                                   ReportAdvertiserGetV2OrderField = "card_show"
+	AVG_CLICK_COST_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "avg_click_cost"
+	UNION_ROI_3_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "union_roi_3"
+	PHONE_CONFIRM_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "phone_confirm"
+	LIVE_COMPONENT_CLICK_RATE_ReportAdvertiserGetV2OrderField                   ReportAdvertiserGetV2OrderField = "live_component_click_rate"
+	PLAY_100_FEED_BREAK_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "play_100_feed_break"
+	HOME_VISITED_ReportAdvertiserGetV2OrderField                                ReportAdvertiserGetV2OrderField = "home_visited"
+	ACTIVE_REGISTER_RATE_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "active_register_rate"
+	NEXT_DAY_OPEN_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "next_day_open"
+	REPORT_ReportAdvertiserGetV2OrderField                                      ReportAdvertiserGetV2OrderField = "report"
+	BUTTON_ReportAdvertiserGetV2OrderField                                      ReportAdvertiserGetV2OrderField = "button"
+	ATTRIBUTION_WECHAT_FIRST_PAY_30D_COST_ReportAdvertiserGetV2OrderField       ReportAdvertiserGetV2OrderField = "attribution_wechat_first_pay_30d_cost"
+	LIVE_COMPONENT_CLICK_COUNT_ReportAdvertiserGetV2OrderField                  ReportAdvertiserGetV2OrderField = "live_component_click_count"
+	ATTRIBUTION_RETENTION_2D_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_retention_2d_cnt"
+	LIVE_WATCH_ONE_MINUTE_COUNT_ReportAdvertiserGetV2OrderField                 ReportAdvertiserGetV2OrderField = "live_watch_one_minute_count"
+	STAT_UNION_LTV_3_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "stat_union_ltv_3"
+	LUBAN_LIVE_FOLLOW_CNT_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "luban_live_follow_cnt"
+	LUBAN_LIVE_PAY_ORDER_COUNT_ReportAdvertiserGetV2OrderField                  ReportAdvertiserGetV2OrderField = "luban_live_pay_order_count"
+	WECHAT_LOGIN_COST_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "wechat_login_cost"
 	REDIRECT_ReportAdvertiserGetV2OrderField                                    ReportAdvertiserGetV2OrderField = "redirect"
+	ATTRIBUTION_RETENTION_6D_RATE_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_6d_rate"
+	DOWNLOAD_START_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "download_start"
+	GAME_ADDICTION_RATE_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "game_addiction_rate"
+	PAY_AMOUNT_ROI_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "pay_amount_roi"
+	MESSAGE_ReportAdvertiserGetV2OrderField                                     ReportAdvertiserGetV2OrderField = "message"
+	LUBAN_LIVE_GIFT_CNT_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "luban_live_gift_cnt"
+	ATTRIBUTION_RETENTION_2D_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_2d_cost"
+	MESSAGE_ACTION_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "message_action"
+	ATTRIBUTION_RETENTION_7D_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_retention_7d_cnt"
+	ATTRIBUTION_GAME_IN_APP_ROI_5DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_5days"
+	IN_APP_DETAIL_UV_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "in_app_detail_uv"
+	PLAY_50_FEED_BREAK_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "play_50_feed_break"
+	UNION_ROI_0_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "union_roi_0"
+	REDIRECT_TO_SHOP_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "redirect_to_shop"
+	WECHAT_ReportAdvertiserGetV2OrderField                                      ReportAdvertiserGetV2OrderField = "wechat"
+	WECHAT_FIRST_PAY_RATE_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "wechat_first_pay_rate"
+	IES_CHALLENGE_CLICK_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "ies_challenge_click"
+	CLICK_ReportAdvertiserGetV2OrderField                                       ReportAdvertiserGetV2OrderField = "click"
+	WECHAT_LOGIN_COUNT_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "wechat_login_count"
+	PLAY_OVER_RATE_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "play_over_rate"
+	ATTRIBUTION_ACTIVE_PAY_INTRA_ONE_DAY_RATE_ReportAdvertiserGetV2OrderField   ReportAdvertiserGetV2OrderField = "attribution_active_pay_intra_one_day_rate"
+	ATTRIBUTION_RETENTION_5D_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_retention_5d_cnt"
+	ACTIVE_PAY_COST_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "active_pay_cost"
 	PLAY_DURATION_SUM_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "play_duration_sum"
-	PRE_CONVERT_RATE_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "pre_convert_rate"
-	ATTRIBUTION_ACTIVE_PAY_INTRA_ONE_DAY_AMOUNT_ReportAdvertiserGetV2OrderField ReportAdvertiserGetV2OrderField = "attribution_active_pay_intra_one_day_amount"
-	ATTRIBUTION_NEXT_DAY_OPEN_CNT_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_next_day_open_cnt"
+	CONSULT_EFFECTIVE_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "consult_effective"
+	WIFI_PLAY_ReportAdvertiserGetV2OrderField                                   ReportAdvertiserGetV2OrderField = "wifi_play"
+	COMMUTE_FIRST_PAY_COUNT_ReportAdvertiserGetV2OrderField                     ReportAdvertiserGetV2OrderField = "commute_first_pay_count"
+	AVERAGE_PLAY_PROGRESS_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "average_play_progress"
+	CONVERT_ReportAdvertiserGetV2OrderField                                     ReportAdvertiserGetV2OrderField = "convert"
+	ATTRIBUTION_ACTIVE_PAY_7D_COUNT_ReportAdvertiserGetV2OrderField             ReportAdvertiserGetV2OrderField = "attribution_active_pay_7d_count"
+	ATTRIBUTION_ACTIVE_PAY_INTRA_ONE_DAY_COST_ReportAdvertiserGetV2OrderField   ReportAdvertiserGetV2OrderField = "attribution_active_pay_intra_one_day_cost"
+	POI_COLLECT_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "poi_collect"
+	ATTRIBUTION_MICRO_GAME_3D_ROI_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_micro_game_3d_roi"
+	WECHAT_FIRST_PAY_COST_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "wechat_first_pay_cost"
 	ACTIVE_COST_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "active_cost"
 	LOAN_CREDIT_COST_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "loan_credit_cost"
-	WECHAT_PAY_AMOUNT_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "wechat_pay_amount"
-	LUBAN_LIVE_ENTER_CNT_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "luban_live_enter_cnt"
-	COMMUTE_FIRST_PAY_COUNT_ReportAdvertiserGetV2OrderField                     ReportAdvertiserGetV2OrderField = "commute_first_pay_count"
-	LUBAN_LIVE_GIFT_CNT_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "luban_live_gift_cnt"
-	ATTRIBUTION_CONVERT_COST_ReportAdvertiserGetV2OrderField                    ReportAdvertiserGetV2OrderField = "attribution_convert_cost"
-	ATTRIBUTION_DEEP_CONVERT_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_deep_convert_cost"
-	ATTRIBUTION_GAME_IN_APP_LTV_4DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_4days"
-	LUBAN_LIVE_PAY_ORDER_COUNT_ReportAdvertiserGetV2OrderField                  ReportAdvertiserGetV2OrderField = "luban_live_pay_order_count"
-	ATTRIBUTION_GAME_IN_APP_ROI_5DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_5days"
-	AVERAGE_PLAY_TIME_PER_PLAY_ReportAdvertiserGetV2OrderField                  ReportAdvertiserGetV2OrderField = "average_play_time_per_play"
-	PLAY_DURATION_2S_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "play_duration_2s"
-	WECHAT_FIRST_PAY_RATE_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "wechat_first_pay_rate"
-	ATTRIBUTION_WECHAT_FIRST_PAY_30D_COUNT_ReportAdvertiserGetV2OrderField      ReportAdvertiserGetV2OrderField = "attribution_wechat_first_pay_30d_count"
-	FIRST_ORDER_COUNT_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "first_order_count"
-	ACTIVE_PAY_AMOUNT_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "active_pay_amount"
-	LIKE_ReportAdvertiserGetV2OrderField                                        ReportAdvertiserGetV2OrderField = "like"
-	PAY_COUNT_ReportAdvertiserGetV2OrderField                                   ReportAdvertiserGetV2OrderField = "pay_count"
-	FORM_ReportAdvertiserGetV2OrderField                                        ReportAdvertiserGetV2OrderField = "form"
 	COUPON_ReportAdvertiserGetV2OrderField                                      ReportAdvertiserGetV2OrderField = "coupon"
-	NEXT_DAY_OPEN_RATE_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "next_day_open_rate"
-	REGISTER_ReportAdvertiserGetV2OrderField                                    ReportAdvertiserGetV2OrderField = "register"
-	ATTRIBUTION_GAME_IN_APP_ROI_8DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_8days"
-	WECHAT_FIRST_PAY_COUNT_ReportAdvertiserGetV2OrderField                      ReportAdvertiserGetV2OrderField = "wechat_first_pay_count"
-	MESSAGE_ACTION_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "message_action"
 	ATTRIBUTION_RETENTION_5D_RATE_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_5d_rate"
-	ATTRIBUTION_WECHAT_FIRST_PAY_30D_RATE_ReportAdvertiserGetV2OrderField       ReportAdvertiserGetV2OrderField = "attribution_wechat_first_pay_30d_rate"
-	ATTRIBUTION_MICRO_GAME_0D_LTV_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_micro_game_0d_ltv"
-	ATTRIBUTION_ACTIVE_PAY_INTRA_ONE_DAY_ROI_ReportAdvertiserGetV2OrderField    ReportAdvertiserGetV2OrderField = "attribution_active_pay_intra_one_day_roi"
-	ATTRIBUTION_ACTIVE_PAY_7D_PER_COUNT_ReportAdvertiserGetV2OrderField         ReportAdvertiserGetV2OrderField = "attribution_active_pay_7d_per_count"
-	PHONE_EFFECTIVE_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "phone_effective"
-	STAT_UNION_LTV_0_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "stat_union_ltv_0"
-	CONSULT_EFFECTIVE_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "consult_effective"
-	STAT_UNION_LTV_7_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "stat_union_ltv_7"
-	AVERAGE_PLAY_PROGRESS_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "average_play_progress"
-	ATTRIBUTION_RETENTION_6D_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_6d_cost"
-	STAT_UNION_LTV_3_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "stat_union_ltv_3"
-	LOAN_COMPLETION_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "loan_completion"
-	POI_COLLECT_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "poi_collect"
-	INSTALL_FINISH_COST_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "install_finish_cost"
-	ATTRIBUTION_DEEP_CONVERT_ReportAdvertiserGetV2OrderField                    ReportAdvertiserGetV2OrderField = "attribution_deep_convert"
-	ATTRIBUTION_GAME_PAY_7D_COST_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_game_pay_7d_cost"
+	DOWNLOAD_FINISH_RATE_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "download_finish_rate"
+	CONVERT_SHOW_RATE_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "convert_show_rate"
+	ATTRIBUTION_GAME_IN_APP_ROI_7DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_7days"
+	PLAY_100_FEED_BREAK_RATE_ReportAdvertiserGetV2OrderField                    ReportAdvertiserGetV2OrderField = "play_100_feed_break_rate"
+	IN_APP_PAY_ReportAdvertiserGetV2OrderField                                  ReportAdvertiserGetV2OrderField = "in_app_pay"
 	APPROVAL_COUNT_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "approval_count"
+	IES_MUSIC_CLICK_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "ies_music_click"
+	ATTRIBUTION_GAME_IN_APP_LTV_7DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_7days"
+	ACTIVE_RATE_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "active_rate"
+	ATTRIBUTION_RETENTION_4D_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_4d_cost"
+	LUBAN_LIVE_CLICK_PRODUCT_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "luban_live_click_product_cnt"
+	ATTRIBUTION_RETENTION_4D_RATE_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_4d_rate"
+	LIVE_FANS_CLUB_JOIN_CNT_ReportAdvertiserGetV2OrderField                     ReportAdvertiserGetV2OrderField = "live_fans_club_join_cnt"
+	STAT_UNION_LTV_0_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "stat_union_ltv_0"
+	ATTRIBUTION_RETENTION_7D_TOTAL_COST_ReportAdvertiserGetV2OrderField         ReportAdvertiserGetV2OrderField = "attribution_retention_7d_total_cost"
+	ATTRIBUTION_GAME_IN_APP_LTV_4DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_4days"
+	STAT_UNION_LTV_7_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "stat_union_ltv_7"
+	LUBAN_ORDER_CNT_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "luban_order_cnt"
+	ATTRIBUTION_GAME_IN_APP_ROI_4DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_4days"
+	PLAY_25_FEED_BREAK_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "play_25_feed_break"
+	INSTALL_FINISH_RATE_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "install_finish_rate"
+	COMMENT_ReportAdvertiserGetV2OrderField                                     ReportAdvertiserGetV2OrderField = "comment"
+	POI_ADDRESS_CLICK_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "poi_address_click"
+	PLAY_DURATION_5S_RATE_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "play_duration_5s_rate"
+	ATTRIBUTION_GAME_IN_APP_LTV_2DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_2days"
+	ATTRIBUTION_GAME_IN_APP_LTV_1DAY_ReportAdvertiserGetV2OrderField            ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_1day"
+	LUBAN_LIVE_ENTER_CNT_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "luban_live_enter_cnt"
+	FORM_ReportAdvertiserGetV2OrderField                                        ReportAdvertiserGetV2OrderField = "form"
+	CLICK_SHOPWINDOW_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "click_shopwindow"
+	LIKE_ReportAdvertiserGetV2OrderField                                        ReportAdvertiserGetV2OrderField = "like"
+	LOCATION_CLICK_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "location_click"
+	ATTRIBUTION_DEEP_CONVERT_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_deep_convert_cost"
+	ATTRIBUTION_GAME_IN_APP_LTV_8DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_8days"
+	CUSTOMER_EFFECTIVE_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "customer_effective"
+	SUBMIT_CERTIFICATION_COUNT_ReportAdvertiserGetV2OrderField                  ReportAdvertiserGetV2OrderField = "submit_certification_count"
+	SHOPPING_ReportAdvertiserGetV2OrderField                                    ReportAdvertiserGetV2OrderField = "shopping"
+	AVERAGE_VIDEO_PLAY_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "average_video_play"
+	ADVANCED_CREATIVE_COUPON_ADDITION_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "advanced_creative_coupon_addition"
+	AVERAGE_PLAY_TIME_PER_PLAY_ReportAdvertiserGetV2OrderField                  ReportAdvertiserGetV2OrderField = "average_play_time_per_play"
+	DEEP_CONVERT_RATE_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "deep_convert_rate"
+	ADVANCED_CREATIVE_FORM_SUBMIT_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "advanced_creative_form_submit"
+	VALID_PLAY_RATE_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "valid_play_rate"
+	LOAN_COMPLETION_COST_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "loan_completion_cost"
+	ATTRIBUTION_RETENTION_3D_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_retention_3d_cnt"
+	MAP_SEARCH_ReportAdvertiserGetV2OrderField                                  ReportAdvertiserGetV2OrderField = "map_search"
+	ATTRIBUTION_ACTIVE_PAY_INTRA_ONE_DAY_AMOUNT_ReportAdvertiserGetV2OrderField ReportAdvertiserGetV2OrderField = "attribution_active_pay_intra_one_day_amount"
+	ATTRIBUTION_RETENTION_4D_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_retention_4d_cnt"
+	ATTRIBUTION_ACTIVE_PAY_7D_RATE_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "attribution_active_pay_7d_rate"
+	NEXT_DAY_OPEN_RATE_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "next_day_open_rate"
+	LOAN_COMPLETION_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "loan_completion"
+	ATTRIBUTION_MICRO_GAME_0D_ROI_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_micro_game_0d_roi"
+	ATTRIBUTION_DAY_ACITVE_PAY_COUNT_ReportAdvertiserGetV2OrderField            ReportAdvertiserGetV2OrderField = "attribution_day_acitve_pay_count"
+	FIRST_ORDER_COUNT_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "first_order_count"
+	ATTRIBUTION_NEXT_DAY_OPEN_RATE_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "attribution_next_day_open_rate"
+	VALID_PLAY_ReportAdvertiserGetV2OrderField                                  ReportAdvertiserGetV2OrderField = "valid_play"
+	ATTRIBUTION_RETENTION_6D_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_6d_cost"
+	PLAY_DURATION_10S_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "play_duration_10s"
+	LUBAN_LIVE_SLIDECART_CLICK_CNT_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "luban_live_slidecart_click_cnt"
+	LIVE_COMPONENT_CLICK_COST_ReportAdvertiserGetV2OrderField                   ReportAdvertiserGetV2OrderField = "live_component_click_cost"
+	ATTRIBUTION_WECHAT_FIRST_PAY_30D_RATE_ReportAdvertiserGetV2OrderField       ReportAdvertiserGetV2OrderField = "attribution_wechat_first_pay_30d_rate"
+	INTERACT_PER_COST_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "interact_per_cost"
+	PLAY_DURATION_2S_RATE_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "play_duration_2s_rate"
+	PLAY_DURATION_3S_RATE_ReportAdvertiserGetV2OrderField                       ReportAdvertiserGetV2OrderField = "play_duration_3s_rate"
+	PHONE_EFFECTIVE_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "phone_effective"
+	DOWNLOAD_FINISH_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "download_finish"
+	FOLLOW_ReportAdvertiserGetV2OrderField                                      ReportAdvertiserGetV2OrderField = "follow"
+	DOWNLOAD_START_RATE_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "download_start_rate"
+	ACTIVE_PAY_AMOUNT_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "active_pay_amount"
+	PLAY_DURATION_2S_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "play_duration_2s"
+	DOWNLOAD_START_COST_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "download_start_cost"
+	LUBAN_LIVE_PAY_ORDER_STAT_COST_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "luban_live_pay_order_stat_cost"
+	LUBAN_LIVE_GIFT_AMOUNT_ReportAdvertiserGetV2OrderField                      ReportAdvertiserGetV2OrderField = "luban_live_gift_amount"
+	PLAY_OVER_ReportAdvertiserGetV2OrderField                                   ReportAdvertiserGetV2OrderField = "play_over"
+	WIFI_PLAY_RATE_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "wifi_play_rate"
+	WECHAT_PAY_AMOUNT_ReportAdvertiserGetV2OrderField                           ReportAdvertiserGetV2OrderField = "wechat_pay_amount"
+	UNION_ROI_7_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "union_roi_7"
+	ATTRIBUTION_RETENTION_3D_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_3d_cost"
+	CPC_ReportAdvertiserGetV2OrderField                                         ReportAdvertiserGetV2OrderField = "cpc"
+	ATTRIBUTION_RETENTION_2D_RATE_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_2d_rate"
+	PRE_CONVERT_COST_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "pre_convert_cost"
+	ATTRIBUTION_GAME_IN_APP_LTV_3DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_ltv_3days"
+	GAME_ADDICTION_COST_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "game_addiction_cost"
+	ACTIVE_REGISTER_COST_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "active_register_cost"
+	ATTRIBUTION_WECHAT_FIRST_PAY_30D_COUNT_ReportAdvertiserGetV2OrderField      ReportAdvertiserGetV2OrderField = "attribution_wechat_first_pay_30d_count"
+	ATTRIBUTION_NEXT_DAY_OPEN_CNT_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_next_day_open_cnt"
+	ATTRIBUTION_RETENTION_7D_RATE_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_7d_rate"
+	ATTRIBUTION_CONVERT_COST_ReportAdvertiserGetV2OrderField                    ReportAdvertiserGetV2OrderField = "attribution_convert_cost"
+	ATTRIBUTION_NEXT_DAY_OPEN_COST_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "attribution_next_day_open_cost"
+	PRE_CONVERT_RATE_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "pre_convert_rate"
+	ATTRIBUTION_ACTIVE_PAY_INTRA_ONE_DAY_COUNT_ReportAdvertiserGetV2OrderField  ReportAdvertiserGetV2OrderField = "attribution_active_pay_intra_one_day_count"
+	ATTRIBUTION_ACTIVE_PAY_7D_COST_ReportAdvertiserGetV2OrderField              ReportAdvertiserGetV2OrderField = "attribution_active_pay_7d_cost"
+	STAT_PAY_AMOUNT_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "stat_pay_amount"
+	LOAN_CREDIT_ReportAdvertiserGetV2OrderField                                 ReportAdvertiserGetV2OrderField = "loan_credit"
+	ATTRIBUTION_RETENTION_7D_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_7d_cost"
+	IN_APP_ORDER_ReportAdvertiserGetV2OrderField                                ReportAdvertiserGetV2OrderField = "in_app_order"
+	LOTTERY_ReportAdvertiserGetV2OrderField                                     ReportAdvertiserGetV2OrderField = "lottery"
+	COUPON_SINGLE_PAGE_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "coupon_single_page"
+	PLAY_75_FEED_BREAK_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "play_75_feed_break"
+	ATTRIBUTION_RETENTION_3D_RATE_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_3d_rate"
+	ADVANCED_CREATIVE_FORM_CLICK_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "advanced_creative_form_click"
+	ATTRIBUTION_ACTIVE_PAY_7D_PER_COUNT_ReportAdvertiserGetV2OrderField         ReportAdvertiserGetV2OrderField = "attribution_active_pay_7d_per_count"
+	LUBAN_ORDER_ROI_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "luban_order_roi"
+	ATTRIBUTION_MICRO_GAME_3D_LTV_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_micro_game_3d_ltv"
+	CLICK_DOWNLOAD_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "click_download"
+	TOTAL_PLAY_ReportAdvertiserGetV2OrderField                                  ReportAdvertiserGetV2OrderField = "total_play"
+	PLAY_DURATION_10S_RATE_ReportAdvertiserGetV2OrderField                      ReportAdvertiserGetV2OrderField = "play_duration_10s_rate"
+	PAY_COUNT_ReportAdvertiserGetV2OrderField                                   ReportAdvertiserGetV2OrderField = "pay_count"
+	DOWNLOAD_FINISH_COST_ReportAdvertiserGetV2OrderField                        ReportAdvertiserGetV2OrderField = "download_finish_cost"
+	CLICK_INSTALL_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "click_install"
+	ATTRIBUTION_MICRO_GAME_0D_LTV_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_micro_game_0d_ltv"
+	ACTIVE_ReportAdvertiserGetV2OrderField                                      ReportAdvertiserGetV2OrderField = "active"
+	ATTRIBUTION_RETENTION_7D_SUM_CNT_ReportAdvertiserGetV2OrderField            ReportAdvertiserGetV2OrderField = "attribution_retention_7d_sum_cnt"
+	CPM_ReportAdvertiserGetV2OrderField                                         ReportAdvertiserGetV2OrderField = "cpm"
+	ATTRIBUTION_GAME_IN_APP_ROI_1DAY_ReportAdvertiserGetV2OrderField            ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_1day"
+	ATTRIBUTION_CONVERT_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "attribution_convert"
+	SHOW_ReportAdvertiserGetV2OrderField                                        ReportAdvertiserGetV2OrderField = "show"
+	NEXT_DAY_OPEN_COST_ReportAdvertiserGetV2OrderField                          ReportAdvertiserGetV2OrderField = "next_day_open_cost"
+	DOWNLOAD_ReportAdvertiserGetV2OrderField                                    ReportAdvertiserGetV2OrderField = "download"
+	IN_APP_UV_ReportAdvertiserGetV2OrderField                                   ReportAdvertiserGetV2OrderField = "in_app_uv"
+	DEEP_CONVERT_ReportAdvertiserGetV2OrderField                                ReportAdvertiserGetV2OrderField = "deep_convert"
+	ATTRIBUTION_WECHAT_PAY_30D_AMOUNT_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_wechat_pay_30d_amount"
+	CONSULT_ReportAdvertiserGetV2OrderField                                     ReportAdvertiserGetV2OrderField = "consult"
+	VIEW_ReportAdvertiserGetV2OrderField                                        ReportAdvertiserGetV2OrderField = "view"
+	LOAN_CREDIT_RATE_ReportAdvertiserGetV2OrderField                            ReportAdvertiserGetV2OrderField = "loan_credit_rate"
+	CONVERT_RATE_ReportAdvertiserGetV2OrderField                                ReportAdvertiserGetV2OrderField = "convert_rate"
+	QQ_ReportAdvertiserGetV2OrderField                                          ReportAdvertiserGetV2OrderField = "qq"
+	ATTRIBUTION_RETENTION_5D_COST_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_retention_5d_cost"
+	ATTRIBUTION_GAME_PAY_7D_COUNT_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_game_pay_7d_count"
+	DISLIKE_ReportAdvertiserGetV2OrderField                                     ReportAdvertiserGetV2OrderField = "dislike"
+	ATTRIBUTION_ACTIVE_PAY_INTRA_ONE_DAY_ROI_ReportAdvertiserGetV2OrderField    ReportAdvertiserGetV2OrderField = "attribution_active_pay_intra_one_day_roi"
+	ACTIVE_PAY_RATE_ReportAdvertiserGetV2OrderField                             ReportAdvertiserGetV2OrderField = "active_pay_rate"
+	WECHAT_FIRST_PAY_COUNT_ReportAdvertiserGetV2OrderField                      ReportAdvertiserGetV2OrderField = "wechat_first_pay_count"
+	ATTRIBUTION_WECHAT_LOGIN_30D_COST_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_wechat_login_30d_cost"
+	ATTRIBUTION_MICRO_GAME_7D_LTV_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_micro_game_7d_ltv"
+	GAME_PAY_COST_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "game_pay_cost"
+	CPA_ReportAdvertiserGetV2OrderField                                         ReportAdvertiserGetV2OrderField = "cpa"
+	INSTALL_FINISH_COST_ReportAdvertiserGetV2OrderField                         ReportAdvertiserGetV2OrderField = "install_finish_cost"
+	PLAY_50_FEED_BREAK_RATE_ReportAdvertiserGetV2OrderField                     ReportAdvertiserGetV2OrderField = "play_50_feed_break_rate"
+	FIRST_RENTAL_ORDER_COUNT_ReportAdvertiserGetV2OrderField                    ReportAdvertiserGetV2OrderField = "first_rental_order_count"
+	PLAY_25_FEED_BREAK_RATE_ReportAdvertiserGetV2OrderField                     ReportAdvertiserGetV2OrderField = "play_25_feed_break_rate"
+	GAME_ADDICTION_ReportAdvertiserGetV2OrderField                              ReportAdvertiserGetV2OrderField = "game_addiction"
+	ATTRIBUTION_MICRO_GAME_7D_ROI_ReportAdvertiserGetV2OrderField               ReportAdvertiserGetV2OrderField = "attribution_micro_game_7d_roi"
+	ATTRIBUTION_GAME_IN_APP_ROI_2DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_2days"
+	REGISTER_ReportAdvertiserGetV2OrderField                                    ReportAdvertiserGetV2OrderField = "register"
+	ATTRIBUTION_DAY_ACTIVE_PAY_COUNT_ReportAdvertiserGetV2OrderField            ReportAdvertiserGetV2OrderField = "attribution_day_active_pay_count"
+	PLAY_DURATION_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "play_duration"
+	ATTRIBUTION_GAME_IN_APP_ROI_8DAYS_ReportAdvertiserGetV2OrderField           ReportAdvertiserGetV2OrderField = "attribution_game_in_app_roi_8days"
+	ATTRIBUTION_DEEP_CONVERT_ReportAdvertiserGetV2OrderField                    ReportAdvertiserGetV2OrderField = "attribution_deep_convert"
+	VOTE_ReportAdvertiserGetV2OrderField                                        ReportAdvertiserGetV2OrderField = "vote"
+	CLICK_CALL_DY_ReportAdvertiserGetV2OrderField                               ReportAdvertiserGetV2OrderField = "click_call_dy"
+	CTR_ReportAdvertiserGetV2OrderField                                         ReportAdvertiserGetV2OrderField = "ctr"
+	ATTRIBUTION_RETENTION_6D_CNT_ReportAdvertiserGetV2OrderField                ReportAdvertiserGetV2OrderField = "attribution_retention_6d_cnt"
 )
 
 // All allowed values of ReportAdvertiserGetV2OrderField enum
 var AllowedReportAdvertiserGetV2OrderFieldEnumValues = []ReportAdvertiserGetV2OrderField{
-	"advanced_creative_form_submit",
-	"luban_live_share_cnt",
-	"attribution_retention_2d_cost",
-	"wechat_first_pay_cost",
-	"click_shopwindow",
-	"click_landing_page",
-	"attribution_day_active_pay_count",
-	"vote",
-	"map_search",
-	"ies_challenge_click",
-	"poi_address_click",
-	"deep_convert_rate",
-	"union_roi_3",
-	"attribution_wechat_first_pay_30d_cost",
-	"average_video_play",
-	"play_over",
-	"in_app_detail_uv",
-	"play_100_feed_break_rate",
-	"convert_show_rate",
-	"cpa",
-	"attribution_game_in_app_roi_4days",
-	"in_app_order",
-	"stat_pay_amount",
-	"attribution_next_day_open_rate",
-	"play_duration_3s_rate",
-	"attribution_game_in_app_ltv_2days",
-	"play_75_feed_break_rate",
-	"active_rate",
-	"active_register_rate",
-	"attribution_retention_5d_cnt",
-	"total_play",
-	"click",
-	"attribution_game_in_app_ltv_3days",
-	"valid_play_cost",
-	"follow",
-	"in_app_pay",
-	"attribution_wechat_login_30d_cost",
 	"install_finish",
-	"pay_amount_roi",
-	"attribution_game_in_app_roi_3days",
-	"union_roi_7",
-	"download_finish_rate",
-	"attribution_game_in_app_ltv_8days",
-	"play_duration_10s_rate",
-	"attribution_retention_4d_cost",
-	"attribution_game_in_app_ltv_5days",
-	"attribution_day_acitve_pay_count",
-	"download_start_rate",
-	"play_25_feed_break_rate",
-	"attribution_retention_7d_total_cost",
-	"active_pay_rate",
-	"luban_live_follow_cnt",
-	"attribution_active_pay_7d_count",
-	"attribution_micro_game_3d_ltv",
-	"attribution_active_pay_7d_rate",
+	"valid_play_cost",
 	"advanced_creative_counsel_click",
-	"home_visited",
-	"next_day_open",
-	"attribution_game_in_app_ltv_6days",
-	"first_rental_order_count",
-	"game_addiction",
-	"consult",
-	"live_component_click_rate",
-	"live_fans_club_join_cnt",
-	"avg_click_cost",
-	"attribution_retention_3d_cost",
-	"report",
-	"attribution_retention_6d_rate",
-	"play_duration_5s_rate",
-	"comment",
-	"attribution_retention_4d_rate",
-	"pre_loan_credit_cost",
-	"luban_order_cnt",
-	"play_duration_10s",
-	"card_show",
-	"convert_rate",
-	"phone_connect",
-	"loan_completion_cost",
-	"attribution_retention_6d_cnt",
-	"attribution_retention_3d_rate",
-	"active_pay_cost",
-	"attribution_micro_game_0d_roi",
-	"luban_live_slidecart_click_cnt",
-	"attribution_retention_7d_cnt",
-	"luban_order_stat_amount",
-	"attribution_micro_game_7d_roi",
-	"cost",
-	"download_start_cost",
-	"download",
-	"coupon_single_page",
-	"phone",
-	"wechat_login_cost",
-	"cpc",
-	"interact_per_cost",
-	"qq",
-	"active",
-	"advanced_creative_form_click",
-	"attribution_game_in_app_ltv_7days",
-	"view",
-	"attribution_retention_5d_cost",
-	"attribution_active_pay_7d_cost",
-	"lottery",
-	"game_addiction_rate",
-	"luban_live_gift_amount",
-	"union_roi_0",
-	"avg_rank",
-	"attribution_convert",
-	"game_pay_count",
-	"redirect_to_shop",
-	"attribution_game_in_app_roi_1day",
-	"click_website",
-	"luban_live_click_product_cnt",
-	"pre_convert_count",
-	"pre_convert_cost",
-	"attribution_active_pay_intra_one_day_rate",
-	"click_call_dy",
-	"play_100_feed_break",
-	"play_over_rate",
-	"attribution_wechat_pay_30d_amount",
-	"live_component_click_count",
-	"install_finish_rate",
-	"attribution_retention_7d_sum_cnt",
-	"attribution_wechat_pay_30d_roi",
-	"click_download",
-	"message",
-	"ctr",
 	"deep_convert_cost",
-	"click_install",
-	"loan_credit_rate",
-	"play_50_feed_break",
-	"convert",
-	"attribution_active_pay_intra_one_day_count",
-	"attribution_retention_2d_cnt",
-	"attribution_game_in_app_roi_7days",
-	"advanced_creative_coupon_addition",
-	"submit_certification_count",
-	"play_75_feed_break",
-	"valid_play_rate",
-	"attribution_game_in_app_roi_2days",
-	"play_duration",
-	"share",
-	"ies_music_click",
-	"luban_live_pay_order_stat_cost",
-	"active_register_cost",
-	"customer_effective",
-	"loan_credit",
-	"luban_order_roi",
-	"pre_loan_credit",
-	"attribution_wechat_login_30d_count",
-	"attribution_game_in_app_ltv_1day",
-	"wechat_login_count",
-	"deep_convert",
-	"phone_confirm",
+	"attribution_game_pay_7d_cost",
 	"luban_live_comment_cnt",
-	"play_50_feed_break_rate",
-	"attribution_retention_7d_cost",
-	"advanced_creative_phone_click",
-	"attribution_retention_4d_cnt",
+	"attribution_wechat_pay_30d_roi",
 	"loan_completion_rate",
-	"download_finish",
-	"location_click",
-	"next_day_open_cost",
-	"attribution_micro_game_7d_ltv",
-	"download_finish_cost",
-	"game_addiction_cost",
-	"dislike",
-	"attribution_active_pay_intra_one_day_cost",
-	"game_pay_cost",
-	"in_app_uv",
-	"play_duration_2s_rate",
-	"avg_show_cost",
-	"button",
-	"play_25_feed_break",
-	"play_duration_3s",
-	"attribution_retention_7d_rate",
-	"wifi_play_rate",
-	"show",
-	"live_watch_one_minute_count",
-	"valid_play",
-	"wifi_play",
+	"pre_loan_credit",
 	"in_app_cart",
-	"attribution_retention_2d_rate",
-	"attribution_micro_game_3d_roi",
-	"shopping",
-	"attribution_next_day_open_cost",
-	"live_component_click_cost",
-	"download_start",
-	"wechat",
-	"cpm",
-	"attribution_game_pay_7d_count",
-	"attribution_retention_3d_cnt",
+	"cost",
+	"game_pay_count",
+	"luban_order_stat_amount",
+	"pre_loan_credit_cost",
+	"phone_connect",
+	"attribution_game_in_app_ltv_5days",
+	"advanced_creative_phone_click",
+	"play_75_feed_break_rate",
+	"avg_show_cost",
 	"convert_cost",
+	"attribution_game_in_app_roi_3days",
 	"attribution_game_in_app_roi_6days",
+	"click_landing_page",
+	"click_website",
+	"pre_convert_count",
+	"attribution_game_in_app_ltv_6days",
+	"attribution_wechat_login_30d_count",
+	"play_duration_3s",
+	"share",
+	"avg_rank",
+	"phone",
+	"luban_live_share_cnt",
+	"card_show",
+	"avg_click_cost",
+	"union_roi_3",
+	"phone_confirm",
+	"live_component_click_rate",
+	"play_100_feed_break",
+	"home_visited",
+	"active_register_rate",
+	"next_day_open",
+	"report",
+	"button",
+	"attribution_wechat_first_pay_30d_cost",
+	"live_component_click_count",
+	"attribution_retention_2d_cnt",
+	"live_watch_one_minute_count",
+	"stat_union_ltv_3",
+	"luban_live_follow_cnt",
+	"luban_live_pay_order_count",
+	"wechat_login_cost",
 	"redirect",
+	"attribution_retention_6d_rate",
+	"download_start",
+	"game_addiction_rate",
+	"pay_amount_roi",
+	"message",
+	"luban_live_gift_cnt",
+	"attribution_retention_2d_cost",
+	"message_action",
+	"attribution_retention_7d_cnt",
+	"attribution_game_in_app_roi_5days",
+	"in_app_detail_uv",
+	"play_50_feed_break",
+	"union_roi_0",
+	"redirect_to_shop",
+	"wechat",
+	"wechat_first_pay_rate",
+	"ies_challenge_click",
+	"click",
+	"wechat_login_count",
+	"play_over_rate",
+	"attribution_active_pay_intra_one_day_rate",
+	"attribution_retention_5d_cnt",
+	"active_pay_cost",
 	"play_duration_sum",
-	"pre_convert_rate",
-	"attribution_active_pay_intra_one_day_amount",
-	"attribution_next_day_open_cnt",
+	"consult_effective",
+	"wifi_play",
+	"commute_first_pay_count",
+	"average_play_progress",
+	"convert",
+	"attribution_active_pay_7d_count",
+	"attribution_active_pay_intra_one_day_cost",
+	"poi_collect",
+	"attribution_micro_game_3d_roi",
+	"wechat_first_pay_cost",
 	"active_cost",
 	"loan_credit_cost",
-	"wechat_pay_amount",
-	"luban_live_enter_cnt",
-	"commute_first_pay_count",
-	"luban_live_gift_cnt",
-	"attribution_convert_cost",
-	"attribution_deep_convert_cost",
-	"attribution_game_in_app_ltv_4days",
-	"luban_live_pay_order_count",
-	"attribution_game_in_app_roi_5days",
-	"average_play_time_per_play",
-	"play_duration_2s",
-	"wechat_first_pay_rate",
-	"attribution_wechat_first_pay_30d_count",
-	"first_order_count",
-	"active_pay_amount",
-	"like",
-	"pay_count",
-	"form",
 	"coupon",
-	"next_day_open_rate",
-	"register",
-	"attribution_game_in_app_roi_8days",
-	"wechat_first_pay_count",
-	"message_action",
 	"attribution_retention_5d_rate",
-	"attribution_wechat_first_pay_30d_rate",
-	"attribution_micro_game_0d_ltv",
-	"attribution_active_pay_intra_one_day_roi",
-	"attribution_active_pay_7d_per_count",
-	"phone_effective",
-	"stat_union_ltv_0",
-	"consult_effective",
-	"stat_union_ltv_7",
-	"average_play_progress",
-	"attribution_retention_6d_cost",
-	"stat_union_ltv_3",
-	"loan_completion",
-	"poi_collect",
-	"install_finish_cost",
-	"attribution_deep_convert",
-	"attribution_game_pay_7d_cost",
+	"download_finish_rate",
+	"convert_show_rate",
+	"attribution_game_in_app_roi_7days",
+	"play_100_feed_break_rate",
+	"in_app_pay",
 	"approval_count",
+	"ies_music_click",
+	"attribution_game_in_app_ltv_7days",
+	"active_rate",
+	"attribution_retention_4d_cost",
+	"luban_live_click_product_cnt",
+	"attribution_retention_4d_rate",
+	"live_fans_club_join_cnt",
+	"stat_union_ltv_0",
+	"attribution_retention_7d_total_cost",
+	"attribution_game_in_app_ltv_4days",
+	"stat_union_ltv_7",
+	"luban_order_cnt",
+	"attribution_game_in_app_roi_4days",
+	"play_25_feed_break",
+	"install_finish_rate",
+	"comment",
+	"poi_address_click",
+	"play_duration_5s_rate",
+	"attribution_game_in_app_ltv_2days",
+	"attribution_game_in_app_ltv_1day",
+	"luban_live_enter_cnt",
+	"form",
+	"click_shopwindow",
+	"like",
+	"location_click",
+	"attribution_deep_convert_cost",
+	"attribution_game_in_app_ltv_8days",
+	"customer_effective",
+	"submit_certification_count",
+	"shopping",
+	"average_video_play",
+	"advanced_creative_coupon_addition",
+	"average_play_time_per_play",
+	"deep_convert_rate",
+	"advanced_creative_form_submit",
+	"valid_play_rate",
+	"loan_completion_cost",
+	"attribution_retention_3d_cnt",
+	"map_search",
+	"attribution_active_pay_intra_one_day_amount",
+	"attribution_retention_4d_cnt",
+	"attribution_active_pay_7d_rate",
+	"next_day_open_rate",
+	"loan_completion",
+	"attribution_micro_game_0d_roi",
+	"attribution_day_acitve_pay_count",
+	"first_order_count",
+	"attribution_next_day_open_rate",
+	"valid_play",
+	"attribution_retention_6d_cost",
+	"play_duration_10s",
+	"luban_live_slidecart_click_cnt",
+	"live_component_click_cost",
+	"attribution_wechat_first_pay_30d_rate",
+	"interact_per_cost",
+	"play_duration_2s_rate",
+	"play_duration_3s_rate",
+	"phone_effective",
+	"download_finish",
+	"follow",
+	"download_start_rate",
+	"active_pay_amount",
+	"play_duration_2s",
+	"download_start_cost",
+	"luban_live_pay_order_stat_cost",
+	"luban_live_gift_amount",
+	"play_over",
+	"wifi_play_rate",
+	"wechat_pay_amount",
+	"union_roi_7",
+	"attribution_retention_3d_cost",
+	"cpc",
+	"attribution_retention_2d_rate",
+	"pre_convert_cost",
+	"attribution_game_in_app_ltv_3days",
+	"game_addiction_cost",
+	"active_register_cost",
+	"attribution_wechat_first_pay_30d_count",
+	"attribution_next_day_open_cnt",
+	"attribution_retention_7d_rate",
+	"attribution_convert_cost",
+	"attribution_next_day_open_cost",
+	"pre_convert_rate",
+	"attribution_active_pay_intra_one_day_count",
+	"attribution_active_pay_7d_cost",
+	"stat_pay_amount",
+	"loan_credit",
+	"attribution_retention_7d_cost",
+	"in_app_order",
+	"lottery",
+	"coupon_single_page",
+	"play_75_feed_break",
+	"attribution_retention_3d_rate",
+	"advanced_creative_form_click",
+	"attribution_active_pay_7d_per_count",
+	"luban_order_roi",
+	"attribution_micro_game_3d_ltv",
+	"click_download",
+	"total_play",
+	"play_duration_10s_rate",
+	"pay_count",
+	"download_finish_cost",
+	"click_install",
+	"attribution_micro_game_0d_ltv",
+	"active",
+	"attribution_retention_7d_sum_cnt",
+	"cpm",
+	"attribution_game_in_app_roi_1day",
+	"attribution_convert",
+	"show",
+	"next_day_open_cost",
+	"download",
+	"in_app_uv",
+	"deep_convert",
+	"attribution_wechat_pay_30d_amount",
+	"consult",
+	"view",
+	"loan_credit_rate",
+	"convert_rate",
+	"qq",
+	"attribution_retention_5d_cost",
+	"attribution_game_pay_7d_count",
+	"dislike",
+	"attribution_active_pay_intra_one_day_roi",
+	"active_pay_rate",
+	"wechat_first_pay_count",
+	"attribution_wechat_login_30d_cost",
+	"attribution_micro_game_7d_ltv",
+	"game_pay_cost",
+	"cpa",
+	"install_finish_cost",
+	"play_50_feed_break_rate",
+	"first_rental_order_count",
+	"play_25_feed_break_rate",
+	"game_addiction",
+	"attribution_micro_game_7d_roi",
+	"attribution_game_in_app_roi_2days",
+	"register",
+	"attribution_day_active_pay_count",
+	"play_duration",
+	"attribution_game_in_app_roi_8days",
+	"attribution_deep_convert",
+	"vote",
+	"click_call_dy",
+	"ctr",
+	"attribution_retention_6d_cnt",
 }
 
 // NewReportAdvertiserGetV2OrderFieldFromValue returns a pointer to a valid ReportAdvertiserGetV2OrderField

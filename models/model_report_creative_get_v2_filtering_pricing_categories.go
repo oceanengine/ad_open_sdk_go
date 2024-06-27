@@ -20,19 +20,19 @@ type ReportCreativeGetV2FilteringPricingCategories string
 // List of report_creative_get_v2_filtering_pricing_categories
 const (
 	PRICING_CATEGORY_NOC_ReportCreativeGetV2FilteringPricingCategories               ReportCreativeGetV2FilteringPricingCategories = "PRICING_CATEGORY_NOC"
-	PRICING_CATEGORY_BID_ReportCreativeGetV2FilteringPricingCategories               ReportCreativeGetV2FilteringPricingCategories = "PRICING_CATEGORY_BID"
 	PRICING_CATEGORY_FREE_ReportCreativeGetV2FilteringPricingCategories              ReportCreativeGetV2FilteringPricingCategories = "PRICING_CATEGORY_FREE"
-	PRICING_CATEGORY_BRAND_ReportCreativeGetV2FilteringPricingCategories             ReportCreativeGetV2FilteringPricingCategories = "PRICING_CATEGORY_BRAND"
 	PRICING_CATEGORY_BRAND_AND_PRICING_ReportCreativeGetV2FilteringPricingCategories ReportCreativeGetV2FilteringPricingCategories = "PRICING_CATEGORY_BRAND_AND_PRICING"
+	PRICING_CATEGORY_BID_ReportCreativeGetV2FilteringPricingCategories               ReportCreativeGetV2FilteringPricingCategories = "PRICING_CATEGORY_BID"
+	PRICING_CATEGORY_BRAND_ReportCreativeGetV2FilteringPricingCategories             ReportCreativeGetV2FilteringPricingCategories = "PRICING_CATEGORY_BRAND"
 )
 
 // All allowed values of ReportCreativeGetV2FilteringPricingCategories enum
 var AllowedReportCreativeGetV2FilteringPricingCategoriesEnumValues = []ReportCreativeGetV2FilteringPricingCategories{
 	"PRICING_CATEGORY_NOC",
-	"PRICING_CATEGORY_BID",
 	"PRICING_CATEGORY_FREE",
-	"PRICING_CATEGORY_BRAND",
 	"PRICING_CATEGORY_BRAND_AND_PRICING",
+	"PRICING_CATEGORY_BID",
+	"PRICING_CATEGORY_BRAND",
 }
 
 // NewReportCreativeGetV2FilteringPricingCategoriesFromValue returns a pointer to a valid ReportCreativeGetV2FilteringPricingCategories

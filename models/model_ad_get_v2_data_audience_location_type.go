@@ -20,17 +20,17 @@ type AdGetV2DataAudienceLocationType string
 // List of ad_get_v2_data_audience_location_type
 const (
 	HOME_AdGetV2DataAudienceLocationType    AdGetV2DataAudienceLocationType = "HOME"
-	CURRENT_AdGetV2DataAudienceLocationType AdGetV2DataAudienceLocationType = "CURRENT"
 	TRAVEL_AdGetV2DataAudienceLocationType  AdGetV2DataAudienceLocationType = "TRAVEL"
 	ALL_AdGetV2DataAudienceLocationType     AdGetV2DataAudienceLocationType = "ALL"
+	CURRENT_AdGetV2DataAudienceLocationType AdGetV2DataAudienceLocationType = "CURRENT"
 )
 
 // All allowed values of AdGetV2DataAudienceLocationType enum
 var AllowedAdGetV2DataAudienceLocationTypeEnumValues = []AdGetV2DataAudienceLocationType{
 	"HOME",
-	"CURRENT",
 	"TRAVEL",
 	"ALL",
+	"CURRENT",
 }
 
 // NewAdGetV2DataAudienceLocationTypeFromValue returns a pointer to a valid AdGetV2DataAudienceLocationType

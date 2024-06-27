@@ -19,14 +19,14 @@ type AdGetV2DataAudienceDeviceType string
 
 // List of ad_get_v2_data_audience_device_type
 const (
-	MOBILE_AdGetV2DataAudienceDeviceType AdGetV2DataAudienceDeviceType = "MOBILE"
 	PAD_AdGetV2DataAudienceDeviceType    AdGetV2DataAudienceDeviceType = "PAD"
+	MOBILE_AdGetV2DataAudienceDeviceType AdGetV2DataAudienceDeviceType = "MOBILE"
 )
 
 // All allowed values of AdGetV2DataAudienceDeviceType enum
 var AllowedAdGetV2DataAudienceDeviceTypeEnumValues = []AdGetV2DataAudienceDeviceType{
-	"MOBILE",
 	"PAD",
+	"MOBILE",
 }
 
 // NewAdGetV2DataAudienceDeviceTypeFromValue returns a pointer to a valid AdGetV2DataAudienceDeviceType

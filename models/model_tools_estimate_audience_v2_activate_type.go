@@ -20,16 +20,16 @@ type ToolsEstimateAudienceV2ActivateType string
 // List of tools_estimate_audience_v2_activate_type
 const (
 	ONE_MONTH_2_THREE_MONTH_ToolsEstimateAudienceV2ActivateType ToolsEstimateAudienceV2ActivateType = "ONE_MONTH_2_THREE_MONTH"
-	UNLIMITED_ToolsEstimateAudienceV2ActivateType               ToolsEstimateAudienceV2ActivateType = "UNLIMITED"
 	WITH_IN_A_MONTH_ToolsEstimateAudienceV2ActivateType         ToolsEstimateAudienceV2ActivateType = "WITH_IN_A_MONTH"
+	UNLIMITED_ToolsEstimateAudienceV2ActivateType               ToolsEstimateAudienceV2ActivateType = "UNLIMITED"
 	THREE_MONTH_EAILIER_ToolsEstimateAudienceV2ActivateType     ToolsEstimateAudienceV2ActivateType = "THREE_MONTH_EAILIER"
 )
 
 // All allowed values of ToolsEstimateAudienceV2ActivateType enum
 var AllowedToolsEstimateAudienceV2ActivateTypeEnumValues = []ToolsEstimateAudienceV2ActivateType{
 	"ONE_MONTH_2_THREE_MONTH",
-	"UNLIMITED",
 	"WITH_IN_A_MONTH",
+	"UNLIMITED",
 	"THREE_MONTH_EAILIER",
 }
 

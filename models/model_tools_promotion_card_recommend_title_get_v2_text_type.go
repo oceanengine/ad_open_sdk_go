@@ -19,16 +19,16 @@ type ToolsPromotionCardRecommendTitleGetV2TextType string
 
 // List of tools_promotion_card_recommend_title_get_v2_text_type
 const (
-	CARD_TITLE_ToolsPromotionCardRecommendTitleGetV2TextType     ToolsPromotionCardRecommendTitleGetV2TextType = "CARD_TITLE"
-	PROMOTION_ToolsPromotionCardRecommendTitleGetV2TextType      ToolsPromotionCardRecommendTitleGetV2TextType = "PROMOTION"
 	CALL_TO_ACTION_ToolsPromotionCardRecommendTitleGetV2TextType ToolsPromotionCardRecommendTitleGetV2TextType = "CALL_TO_ACTION"
+	PROMOTION_ToolsPromotionCardRecommendTitleGetV2TextType      ToolsPromotionCardRecommendTitleGetV2TextType = "PROMOTION"
+	CARD_TITLE_ToolsPromotionCardRecommendTitleGetV2TextType     ToolsPromotionCardRecommendTitleGetV2TextType = "CARD_TITLE"
 )
 
 // All allowed values of ToolsPromotionCardRecommendTitleGetV2TextType enum
 var AllowedToolsPromotionCardRecommendTitleGetV2TextTypeEnumValues = []ToolsPromotionCardRecommendTitleGetV2TextType{
-	"CARD_TITLE",
-	"PROMOTION",
 	"CALL_TO_ACTION",
+	"PROMOTION",
+	"CARD_TITLE",
 }
 
 // NewToolsPromotionCardRecommendTitleGetV2TextTypeFromValue returns a pointer to a valid ToolsPromotionCardRecommendTitleGetV2TextType

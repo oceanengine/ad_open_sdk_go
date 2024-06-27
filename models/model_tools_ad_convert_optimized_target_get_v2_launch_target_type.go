@@ -19,15 +19,15 @@ type ToolsAdConvertOptimizedTargetGetV2LaunchTargetType string
 
 // List of tools_ad_convert_optimized_target_get_v2_launch_target_type
 const (
-	EXTERNAL_ToolsAdConvertOptimizedTargetGetV2LaunchTargetType     ToolsAdConvertOptimizedTargetGetV2LaunchTargetType = "EXTERNAL"
 	APP_ToolsAdConvertOptimizedTargetGetV2LaunchTargetType          ToolsAdConvertOptimizedTargetGetV2LaunchTargetType = "APP"
+	EXTERNAL_ToolsAdConvertOptimizedTargetGetV2LaunchTargetType     ToolsAdConvertOptimizedTargetGetV2LaunchTargetType = "EXTERNAL"
 	LIVE_CONVERT_ToolsAdConvertOptimizedTargetGetV2LaunchTargetType ToolsAdConvertOptimizedTargetGetV2LaunchTargetType = "LIVE_CONVERT"
 )
 
 // All allowed values of ToolsAdConvertOptimizedTargetGetV2LaunchTargetType enum
 var AllowedToolsAdConvertOptimizedTargetGetV2LaunchTargetTypeEnumValues = []ToolsAdConvertOptimizedTargetGetV2LaunchTargetType{
-	"EXTERNAL",
 	"APP",
+	"EXTERNAL",
 	"LIVE_CONVERT",
 }
 

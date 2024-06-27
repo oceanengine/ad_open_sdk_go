@@ -25,8 +25,8 @@ import (
 type ApiOpenApi2StarMcnGetContractChallengeAuthorItemListV2GetRequestExample struct {
 	StarId      int64 `json:"star_id"`
 	DemandId    int64 `json:"demand_id"`
-	Page        int32 `json:"page,omitempty"`
-	PageSize    int32 `json:"page_size,omitempty"`
+	Page        int32 `json:"page"`
+	PageSize    int32 `json:"page_size"`
 	DeveloperId int64 `json:"developer_id,omitempty"`
 }
 

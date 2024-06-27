@@ -20,19 +20,19 @@ type AudiencePackageUpdateV2Platform string
 // List of audience_package_update_v2_platform
 const (
 	PC_AudiencePackageUpdateV2Platform      AudiencePackageUpdateV2Platform = "PC"
-	IOS_AudiencePackageUpdateV2Platform     AudiencePackageUpdateV2Platform = "IOS"
-	WAP_AudiencePackageUpdateV2Platform     AudiencePackageUpdateV2Platform = "WAP"
-	IPAD_AudiencePackageUpdateV2Platform    AudiencePackageUpdateV2Platform = "IPAD"
 	ANDROID_AudiencePackageUpdateV2Platform AudiencePackageUpdateV2Platform = "ANDROID"
+	IOS_AudiencePackageUpdateV2Platform     AudiencePackageUpdateV2Platform = "IOS"
+	IPAD_AudiencePackageUpdateV2Platform    AudiencePackageUpdateV2Platform = "IPAD"
+	WAP_AudiencePackageUpdateV2Platform     AudiencePackageUpdateV2Platform = "WAP"
 )
 
 // All allowed values of AudiencePackageUpdateV2Platform enum
 var AllowedAudiencePackageUpdateV2PlatformEnumValues = []AudiencePackageUpdateV2Platform{
 	"PC",
-	"IOS",
-	"WAP",
-	"IPAD",
 	"ANDROID",
+	"IOS",
+	"IPAD",
+	"WAP",
 }
 
 // NewAudiencePackageUpdateV2PlatformFromValue returns a pointer to a valid AudiencePackageUpdateV2Platform

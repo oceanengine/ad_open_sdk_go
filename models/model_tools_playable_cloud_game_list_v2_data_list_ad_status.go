@@ -19,16 +19,16 @@ type ToolsPlayableCloudGameListV2DataListAdStatus string
 
 // List of tools_playable_cloud_game_list_v2_data_list_ad_status
 const (
-	DELETE_ToolsPlayableCloudGameListV2DataListAdStatus ToolsPlayableCloudGameListV2DataListAdStatus = "DELETE"
-	INUSE_ToolsPlayableCloudGameListV2DataListAdStatus  ToolsPlayableCloudGameListV2DataListAdStatus = "INUSE"
 	UNUSED_ToolsPlayableCloudGameListV2DataListAdStatus ToolsPlayableCloudGameListV2DataListAdStatus = "UNUSED"
+	INUSE_ToolsPlayableCloudGameListV2DataListAdStatus  ToolsPlayableCloudGameListV2DataListAdStatus = "INUSE"
+	DELETE_ToolsPlayableCloudGameListV2DataListAdStatus ToolsPlayableCloudGameListV2DataListAdStatus = "DELETE"
 )
 
 // All allowed values of ToolsPlayableCloudGameListV2DataListAdStatus enum
 var AllowedToolsPlayableCloudGameListV2DataListAdStatusEnumValues = []ToolsPlayableCloudGameListV2DataListAdStatus{
-	"DELETE",
-	"INUSE",
 	"UNUSED",
+	"INUSE",
+	"DELETE",
 }
 
 // NewToolsPlayableCloudGameListV2DataListAdStatusFromValue returns a pointer to a valid ToolsPlayableCloudGameListV2DataListAdStatus

@@ -19,20 +19,20 @@ type ToolsAppIosListV2FilteringStatus string
 
 // List of tools_app_ios_list_v2_filtering_status
 const (
-	AUDIT_REJECTED_ToolsAppIosListV2FilteringStatus ToolsAppIosListV2FilteringStatus = "AUDIT_REJECTED"
 	AUDIT_DOING_ToolsAppIosListV2FilteringStatus    ToolsAppIosListV2FilteringStatus = "AUDIT_DOING"
+	ALL_ToolsAppIosListV2FilteringStatus            ToolsAppIosListV2FilteringStatus = "ALL"
 	AUDIT_ACCEPTED_ToolsAppIosListV2FilteringStatus ToolsAppIosListV2FilteringStatus = "AUDIT_ACCEPTED"
 	ENABLE_ToolsAppIosListV2FilteringStatus         ToolsAppIosListV2FilteringStatus = "ENABLE"
-	ALL_ToolsAppIosListV2FilteringStatus            ToolsAppIosListV2FilteringStatus = "ALL"
+	AUDIT_REJECTED_ToolsAppIosListV2FilteringStatus ToolsAppIosListV2FilteringStatus = "AUDIT_REJECTED"
 )
 
 // All allowed values of ToolsAppIosListV2FilteringStatus enum
 var AllowedToolsAppIosListV2FilteringStatusEnumValues = []ToolsAppIosListV2FilteringStatus{
-	"AUDIT_REJECTED",
 	"AUDIT_DOING",
+	"ALL",
 	"AUDIT_ACCEPTED",
 	"ENABLE",
-	"ALL",
+	"AUDIT_REJECTED",
 }
 
 // NewToolsAppIosListV2FilteringStatusFromValue returns a pointer to a valid ToolsAppIosListV2FilteringStatus

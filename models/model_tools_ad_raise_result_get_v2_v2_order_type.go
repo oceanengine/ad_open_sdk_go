@@ -19,14 +19,14 @@ type ToolsAdRaiseResultGetV2V2OrderType string
 
 // List of tools_ad_raise_result_get_v2_v2_order_type
 const (
-	DESC_ToolsAdRaiseResultGetV2V2OrderType ToolsAdRaiseResultGetV2V2OrderType = "DESC"
 	ASC_ToolsAdRaiseResultGetV2V2OrderType  ToolsAdRaiseResultGetV2V2OrderType = "ASC"
+	DESC_ToolsAdRaiseResultGetV2V2OrderType ToolsAdRaiseResultGetV2V2OrderType = "DESC"
 )
 
 // All allowed values of ToolsAdRaiseResultGetV2V2OrderType enum
 var AllowedToolsAdRaiseResultGetV2V2OrderTypeEnumValues = []ToolsAdRaiseResultGetV2V2OrderType{
-	"DESC",
 	"ASC",
+	"DESC",
 }
 
 // NewToolsAdRaiseResultGetV2V2OrderTypeFromValue returns a pointer to a valid ToolsAdRaiseResultGetV2V2OrderType

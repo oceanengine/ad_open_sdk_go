@@ -19,18 +19,18 @@ type AudiencePackageUpdateV2Ac string
 
 // List of audience_package_update_v2_ac
 const (
-	WIFI_AudiencePackageUpdateV2Ac     AudiencePackageUpdateV2Ac = "WIFI"
 	Enum_2_G_AudiencePackageUpdateV2Ac AudiencePackageUpdateV2Ac = "2G"
-	Enum_4_G_AudiencePackageUpdateV2Ac AudiencePackageUpdateV2Ac = "4G"
+	WIFI_AudiencePackageUpdateV2Ac     AudiencePackageUpdateV2Ac = "WIFI"
 	Enum_3_G_AudiencePackageUpdateV2Ac AudiencePackageUpdateV2Ac = "3G"
+	Enum_4_G_AudiencePackageUpdateV2Ac AudiencePackageUpdateV2Ac = "4G"
 )
 
 // All allowed values of AudiencePackageUpdateV2Ac enum
 var AllowedAudiencePackageUpdateV2AcEnumValues = []AudiencePackageUpdateV2Ac{
-	"WIFI",
 	"2G",
-	"4G",
+	"WIFI",
 	"3G",
+	"4G",
 }
 
 // NewAudiencePackageUpdateV2AcFromValue returns a pointer to a valid AudiencePackageUpdateV2Ac

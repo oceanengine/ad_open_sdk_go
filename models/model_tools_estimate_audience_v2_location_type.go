@@ -20,17 +20,17 @@ type ToolsEstimateAudienceV2LocationType string
 // List of tools_estimate_audience_v2_location_type
 const (
 	HOME_ToolsEstimateAudienceV2LocationType    ToolsEstimateAudienceV2LocationType = "HOME"
-	CURRENT_ToolsEstimateAudienceV2LocationType ToolsEstimateAudienceV2LocationType = "CURRENT"
 	TRAVEL_ToolsEstimateAudienceV2LocationType  ToolsEstimateAudienceV2LocationType = "TRAVEL"
 	ALL_ToolsEstimateAudienceV2LocationType     ToolsEstimateAudienceV2LocationType = "ALL"
+	CURRENT_ToolsEstimateAudienceV2LocationType ToolsEstimateAudienceV2LocationType = "CURRENT"
 )
 
 // All allowed values of ToolsEstimateAudienceV2LocationType enum
 var AllowedToolsEstimateAudienceV2LocationTypeEnumValues = []ToolsEstimateAudienceV2LocationType{
 	"HOME",
-	"CURRENT",
 	"TRAVEL",
 	"ALL",
+	"CURRENT",
 }
 
 // NewToolsEstimateAudienceV2LocationTypeFromValue returns a pointer to a valid ToolsEstimateAudienceV2LocationType

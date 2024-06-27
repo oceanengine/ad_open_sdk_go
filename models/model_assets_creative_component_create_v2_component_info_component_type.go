@@ -19,32 +19,32 @@ type AssetsCreativeComponentCreateV2ComponentInfoComponentType string
 
 // List of assets_creative_component_create_v2_component_info_component_type
 const (
-	LUCKY_BOX_AssetsCreativeComponentCreateV2ComponentInfoComponentType               AssetsCreativeComponentCreateV2ComponentInfoComponentType = "LUCKY_BOX"
-	COMMERCE_MAGNET_AssetsCreativeComponentCreateV2ComponentInfoComponentType         AssetsCreativeComponentCreateV2ComponentInfoComponentType = "COMMERCE_MAGNET"
-	RESERVATION_BUTTON_AssetsCreativeComponentCreateV2ComponentInfoComponentType      AssetsCreativeComponentCreateV2ComponentInfoComponentType = "RESERVATION_BUTTON"
-	VOTE_MAGNET_AssetsCreativeComponentCreateV2ComponentInfoComponentType             AssetsCreativeComponentCreateV2ComponentInfoComponentType = "VOTE_MAGNET"
 	IMAGE_MAGNET_AssetsCreativeComponentCreateV2ComponentInfoComponentType            AssetsCreativeComponentCreateV2ComponentInfoComponentType = "IMAGE_MAGNET"
+	CHOICE_MAGNET_AssetsCreativeComponentCreateV2ComponentInfoComponentType           AssetsCreativeComponentCreateV2ComponentInfoComponentType = "CHOICE_MAGNET"
+	COMMERCE_MAGNET_AssetsCreativeComponentCreateV2ComponentInfoComponentType         AssetsCreativeComponentCreateV2ComponentInfoComponentType = "COMMERCE_MAGNET"
+	COUPON_MAGNET_AssetsCreativeComponentCreateV2ComponentInfoComponentType           AssetsCreativeComponentCreateV2ComponentInfoComponentType = "COUPON_MAGNET"
 	PROMOTION_CARD_AssetsCreativeComponentCreateV2ComponentInfoComponentType          AssetsCreativeComponentCreateV2ComponentInfoComponentType = "PROMOTION_CARD"
 	GAME_PACK_AssetsCreativeComponentCreateV2ComponentInfoComponentType               AssetsCreativeComponentCreateV2ComponentInfoComponentType = "GAME_PACK"
-	CHOICE_MAGNET_AssetsCreativeComponentCreateV2ComponentInfoComponentType           AssetsCreativeComponentCreateV2ComponentInfoComponentType = "CHOICE_MAGNET"
-	COUPON_MAGNET_AssetsCreativeComponentCreateV2ComponentInfoComponentType           AssetsCreativeComponentCreateV2ComponentInfoComponentType = "COUPON_MAGNET"
 	LIGHT_INTER_ACTIVE_AssetsCreativeComponentCreateV2ComponentInfoComponentType      AssetsCreativeComponentCreateV2ComponentInfoComponentType = "LIGHT_INTER_ACTIVE"
 	UNION_LIGHT_INTERACTIVE_AssetsCreativeComponentCreateV2ComponentInfoComponentType AssetsCreativeComponentCreateV2ComponentInfoComponentType = "UNION_LIGHT_INTERACTIVE"
+	VOTE_MAGNET_AssetsCreativeComponentCreateV2ComponentInfoComponentType             AssetsCreativeComponentCreateV2ComponentInfoComponentType = "VOTE_MAGNET"
+	LUCKY_BOX_AssetsCreativeComponentCreateV2ComponentInfoComponentType               AssetsCreativeComponentCreateV2ComponentInfoComponentType = "LUCKY_BOX"
+	RESERVATION_BUTTON_AssetsCreativeComponentCreateV2ComponentInfoComponentType      AssetsCreativeComponentCreateV2ComponentInfoComponentType = "RESERVATION_BUTTON"
 )
 
 // All allowed values of AssetsCreativeComponentCreateV2ComponentInfoComponentType enum
 var AllowedAssetsCreativeComponentCreateV2ComponentInfoComponentTypeEnumValues = []AssetsCreativeComponentCreateV2ComponentInfoComponentType{
-	"LUCKY_BOX",
-	"COMMERCE_MAGNET",
-	"RESERVATION_BUTTON",
-	"VOTE_MAGNET",
 	"IMAGE_MAGNET",
+	"CHOICE_MAGNET",
+	"COMMERCE_MAGNET",
+	"COUPON_MAGNET",
 	"PROMOTION_CARD",
 	"GAME_PACK",
-	"CHOICE_MAGNET",
-	"COUPON_MAGNET",
 	"LIGHT_INTER_ACTIVE",
 	"UNION_LIGHT_INTERACTIVE",
+	"VOTE_MAGNET",
+	"LUCKY_BOX",
+	"RESERVATION_BUTTON",
 }
 
 // NewAssetsCreativeComponentCreateV2ComponentInfoComponentTypeFromValue returns a pointer to a valid AssetsCreativeComponentCreateV2ComponentInfoComponentType

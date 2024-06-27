@@ -19,23 +19,23 @@ type CreativeCustomCreativeUpdateV2AdDataAnchorType string
 
 // List of creative_custom_creative_update_v2_ad_data_anchor_type
 const (
-	PRIVATE_CHAT_CreativeCustomCreativeUpdateV2AdDataAnchorType         CreativeCustomCreativeUpdateV2AdDataAnchorType = "PRIVATE_CHAT"
-	INSURANCE_CreativeCustomCreativeUpdateV2AdDataAnchorType            CreativeCustomCreativeUpdateV2AdDataAnchorType = "INSURANCE"
 	APP_INTERNET_SERVICE_CreativeCustomCreativeUpdateV2AdDataAnchorType CreativeCustomCreativeUpdateV2AdDataAnchorType = "APP_INTERNET_SERVICE"
-	ONLINE_SUBSCRIBE_CreativeCustomCreativeUpdateV2AdDataAnchorType     CreativeCustomCreativeUpdateV2AdDataAnchorType = "ONLINE_SUBSCRIBE"
+	INSURANCE_CreativeCustomCreativeUpdateV2AdDataAnchorType            CreativeCustomCreativeUpdateV2AdDataAnchorType = "INSURANCE"
 	APP_SHOP_CreativeCustomCreativeUpdateV2AdDataAnchorType             CreativeCustomCreativeUpdateV2AdDataAnchorType = "APP_SHOP"
+	PRIVATE_CHAT_CreativeCustomCreativeUpdateV2AdDataAnchorType         CreativeCustomCreativeUpdateV2AdDataAnchorType = "PRIVATE_CHAT"
 	APP_GAME_CreativeCustomCreativeUpdateV2AdDataAnchorType             CreativeCustomCreativeUpdateV2AdDataAnchorType = "APP_GAME"
+	ONLINE_SUBSCRIBE_CreativeCustomCreativeUpdateV2AdDataAnchorType     CreativeCustomCreativeUpdateV2AdDataAnchorType = "ONLINE_SUBSCRIBE"
 	SHOPPING_CART_CreativeCustomCreativeUpdateV2AdDataAnchorType        CreativeCustomCreativeUpdateV2AdDataAnchorType = "SHOPPING_CART"
 )
 
 // All allowed values of CreativeCustomCreativeUpdateV2AdDataAnchorType enum
 var AllowedCreativeCustomCreativeUpdateV2AdDataAnchorTypeEnumValues = []CreativeCustomCreativeUpdateV2AdDataAnchorType{
-	"PRIVATE_CHAT",
-	"INSURANCE",
 	"APP_INTERNET_SERVICE",
-	"ONLINE_SUBSCRIBE",
+	"INSURANCE",
 	"APP_SHOP",
+	"PRIVATE_CHAT",
 	"APP_GAME",
+	"ONLINE_SUBSCRIBE",
 	"SHOPPING_CART",
 }
 

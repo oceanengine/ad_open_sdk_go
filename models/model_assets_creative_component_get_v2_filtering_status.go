@@ -19,16 +19,16 @@ type AssetsCreativeComponentGetV2FilteringStatus string
 
 // List of assets_creative_component_get_v2_filtering_status
 const (
+	REJECT_AssetsCreativeComponentGetV2FilteringStatus AssetsCreativeComponentGetV2FilteringStatus = "REJECT"
 	PASS_AssetsCreativeComponentGetV2FilteringStatus   AssetsCreativeComponentGetV2FilteringStatus = "PASS"
 	UNDER_AssetsCreativeComponentGetV2FilteringStatus  AssetsCreativeComponentGetV2FilteringStatus = "UNDER"
-	REJECT_AssetsCreativeComponentGetV2FilteringStatus AssetsCreativeComponentGetV2FilteringStatus = "REJECT"
 )
 
 // All allowed values of AssetsCreativeComponentGetV2FilteringStatus enum
 var AllowedAssetsCreativeComponentGetV2FilteringStatusEnumValues = []AssetsCreativeComponentGetV2FilteringStatus{
+	"REJECT",
 	"PASS",
 	"UNDER",
-	"REJECT",
 }
 
 // NewAssetsCreativeComponentGetV2FilteringStatusFromValue returns a pointer to a valid AssetsCreativeComponentGetV2FilteringStatus

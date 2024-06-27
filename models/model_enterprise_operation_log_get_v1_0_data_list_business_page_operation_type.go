@@ -19,18 +19,18 @@ type EnterpriseOperationLogGetV10DataListBusinessPageOperationType string
 
 // List of enterprise_operation_log_get_v1.0_data_list_business_page_operation_type
 const (
-	DOU_EnterpriseOperationLogGetV10DataListBusinessPageOperationType   EnterpriseOperationLogGetV10DataListBusinessPageOperationType = "DOU"
 	LIVE_EnterpriseOperationLogGetV10DataListBusinessPageOperationType  EnterpriseOperationLogGetV10DataListBusinessPageOperationType = "LIVE"
-	AD_EnterpriseOperationLogGetV10DataListBusinessPageOperationType    EnterpriseOperationLogGetV10DataListBusinessPageOperationType = "AD"
 	VIDEO_EnterpriseOperationLogGetV10DataListBusinessPageOperationType EnterpriseOperationLogGetV10DataListBusinessPageOperationType = "VIDEO"
+	AD_EnterpriseOperationLogGetV10DataListBusinessPageOperationType    EnterpriseOperationLogGetV10DataListBusinessPageOperationType = "AD"
+	DOU_EnterpriseOperationLogGetV10DataListBusinessPageOperationType   EnterpriseOperationLogGetV10DataListBusinessPageOperationType = "DOU"
 )
 
 // All allowed values of EnterpriseOperationLogGetV10DataListBusinessPageOperationType enum
 var AllowedEnterpriseOperationLogGetV10DataListBusinessPageOperationTypeEnumValues = []EnterpriseOperationLogGetV10DataListBusinessPageOperationType{
-	"DOU",
 	"LIVE",
-	"AD",
 	"VIDEO",
+	"AD",
+	"DOU",
 }
 
 // NewEnterpriseOperationLogGetV10DataListBusinessPageOperationTypeFromValue returns a pointer to a valid EnterpriseOperationLogGetV10DataListBusinessPageOperationType

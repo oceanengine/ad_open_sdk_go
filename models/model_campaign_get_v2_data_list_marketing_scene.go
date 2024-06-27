@@ -20,29 +20,29 @@ type CampaignGetV2DataListMarketingScene string
 // List of campaign_get_v2_data_list_marketing_scene
 const (
 	GAME_SUBSCRIBE_CampaignGetV2DataListMarketingScene    CampaignGetV2DataListMarketingScene = "GAME_SUBSCRIBE"
+	PROMOTION_PURPOSE_CampaignGetV2DataListMarketingScene CampaignGetV2DataListMarketingScene = "PROMOTION_PURPOSE"
+	ECOMMERCE_CampaignGetV2DataListMarketingScene         CampaignGetV2DataListMarketingScene = "ECOMMERCE"
+	MERCHANTS_CampaignGetV2DataListMarketingScene         CampaignGetV2DataListMarketingScene = "MERCHANTS"
+	CAR_CampaignGetV2DataListMarketingScene               CampaignGetV2DataListMarketingScene = "CAR"
+	VIDEO_INFO_CampaignGetV2DataListMarketingScene        CampaignGetV2DataListMarketingScene = "VIDEO_INFO"
+	GAME_PROMOTION_CampaignGetV2DataListMarketingScene    CampaignGetV2DataListMarketingScene = "GAME_PROMOTION"
 	NOVEL_CampaignGetV2DataListMarketingScene             CampaignGetV2DataListMarketingScene = "NOVEL"
 	SOCIAL_CampaignGetV2DataListMarketingScene            CampaignGetV2DataListMarketingScene = "SOCIAL"
-	VIDEO_INFO_CampaignGetV2DataListMarketingScene        CampaignGetV2DataListMarketingScene = "VIDEO_INFO"
-	PROMOTION_PURPOSE_CampaignGetV2DataListMarketingScene CampaignGetV2DataListMarketingScene = "PROMOTION_PURPOSE"
 	EDUCATION_CampaignGetV2DataListMarketingScene         CampaignGetV2DataListMarketingScene = "EDUCATION"
-	GAME_PROMOTION_CampaignGetV2DataListMarketingScene    CampaignGetV2DataListMarketingScene = "GAME_PROMOTION"
-	CAR_CampaignGetV2DataListMarketingScene               CampaignGetV2DataListMarketingScene = "CAR"
-	MERCHANTS_CampaignGetV2DataListMarketingScene         CampaignGetV2DataListMarketingScene = "MERCHANTS"
-	ECOMMERCE_CampaignGetV2DataListMarketingScene         CampaignGetV2DataListMarketingScene = "ECOMMERCE"
 )
 
 // All allowed values of CampaignGetV2DataListMarketingScene enum
 var AllowedCampaignGetV2DataListMarketingSceneEnumValues = []CampaignGetV2DataListMarketingScene{
 	"GAME_SUBSCRIBE",
+	"PROMOTION_PURPOSE",
+	"ECOMMERCE",
+	"MERCHANTS",
+	"CAR",
+	"VIDEO_INFO",
+	"GAME_PROMOTION",
 	"NOVEL",
 	"SOCIAL",
-	"VIDEO_INFO",
-	"PROMOTION_PURPOSE",
 	"EDUCATION",
-	"GAME_PROMOTION",
-	"CAR",
-	"MERCHANTS",
-	"ECOMMERCE",
 }
 
 // NewCampaignGetV2DataListMarketingSceneFromValue returns a pointer to a valid CampaignGetV2DataListMarketingScene

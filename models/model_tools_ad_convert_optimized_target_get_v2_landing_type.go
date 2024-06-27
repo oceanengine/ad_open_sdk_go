@@ -19,32 +19,32 @@ type ToolsAdConvertOptimizedTargetGetV2LandingType string
 
 // List of tools_ad_convert_optimized_target_get_v2_landing_type
 const (
-	APP_ToolsAdConvertOptimizedTargetGetV2LandingType            ToolsAdConvertOptimizedTargetGetV2LandingType = "APP"
-	QUICK_APP_ToolsAdConvertOptimizedTargetGetV2LandingType      ToolsAdConvertOptimizedTargetGetV2LandingType = "QUICK_APP"
-	LIVE_ToolsAdConvertOptimizedTargetGetV2LandingType           ToolsAdConvertOptimizedTargetGetV2LandingType = "LIVE"
-	BRAND_EXTERNAL_ToolsAdConvertOptimizedTargetGetV2LandingType ToolsAdConvertOptimizedTargetGetV2LandingType = "BRAND_EXTERNAL"
-	SHOP_ToolsAdConvertOptimizedTargetGetV2LandingType           ToolsAdConvertOptimizedTargetGetV2LandingType = "SHOP"
 	DPA_ToolsAdConvertOptimizedTargetGetV2LandingType            ToolsAdConvertOptimizedTargetGetV2LandingType = "DPA"
-	AWEME_ToolsAdConvertOptimizedTargetGetV2LandingType          ToolsAdConvertOptimizedTargetGetV2LandingType = "AWEME"
-	LINK_ToolsAdConvertOptimizedTargetGetV2LandingType           ToolsAdConvertOptimizedTargetGetV2LandingType = "LINK"
+	SHOP_ToolsAdConvertOptimizedTargetGetV2LandingType           ToolsAdConvertOptimizedTargetGetV2LandingType = "SHOP"
 	STORE_ToolsAdConvertOptimizedTargetGetV2LandingType          ToolsAdConvertOptimizedTargetGetV2LandingType = "STORE"
-	ARTICLE_ToolsAdConvertOptimizedTargetGetV2LandingType        ToolsAdConvertOptimizedTargetGetV2LandingType = "ARTICLE"
 	GOODS_ToolsAdConvertOptimizedTargetGetV2LandingType          ToolsAdConvertOptimizedTargetGetV2LandingType = "GOODS"
+	AWEME_ToolsAdConvertOptimizedTargetGetV2LandingType          ToolsAdConvertOptimizedTargetGetV2LandingType = "AWEME"
+	LIVE_ToolsAdConvertOptimizedTargetGetV2LandingType           ToolsAdConvertOptimizedTargetGetV2LandingType = "LIVE"
+	QUICK_APP_ToolsAdConvertOptimizedTargetGetV2LandingType      ToolsAdConvertOptimizedTargetGetV2LandingType = "QUICK_APP"
+	APP_ToolsAdConvertOptimizedTargetGetV2LandingType            ToolsAdConvertOptimizedTargetGetV2LandingType = "APP"
+	ARTICLE_ToolsAdConvertOptimizedTargetGetV2LandingType        ToolsAdConvertOptimizedTargetGetV2LandingType = "ARTICLE"
+	LINK_ToolsAdConvertOptimizedTargetGetV2LandingType           ToolsAdConvertOptimizedTargetGetV2LandingType = "LINK"
+	BRAND_EXTERNAL_ToolsAdConvertOptimizedTargetGetV2LandingType ToolsAdConvertOptimizedTargetGetV2LandingType = "BRAND_EXTERNAL"
 )
 
 // All allowed values of ToolsAdConvertOptimizedTargetGetV2LandingType enum
 var AllowedToolsAdConvertOptimizedTargetGetV2LandingTypeEnumValues = []ToolsAdConvertOptimizedTargetGetV2LandingType{
-	"APP",
-	"QUICK_APP",
-	"LIVE",
-	"BRAND_EXTERNAL",
-	"SHOP",
 	"DPA",
-	"AWEME",
-	"LINK",
+	"SHOP",
 	"STORE",
-	"ARTICLE",
 	"GOODS",
+	"AWEME",
+	"LIVE",
+	"QUICK_APP",
+	"APP",
+	"ARTICLE",
+	"LINK",
+	"BRAND_EXTERNAL",
 }
 
 // NewToolsAdConvertOptimizedTargetGetV2LandingTypeFromValue returns a pointer to a valid ToolsAdConvertOptimizedTargetGetV2LandingType

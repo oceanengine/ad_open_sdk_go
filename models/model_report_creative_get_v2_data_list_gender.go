@@ -21,16 +21,16 @@ type ReportCreativeGetV2DataListGender string
 const (
 	GENDER_MALE_ReportCreativeGetV2DataListGender      ReportCreativeGetV2DataListGender = "GENDER_MALE"
 	GENDER_FEMALE_ReportCreativeGetV2DataListGender    ReportCreativeGetV2DataListGender = "GENDER_FEMALE"
-	GENDER_UNLIMITED_ReportCreativeGetV2DataListGender ReportCreativeGetV2DataListGender = "GENDER_UNLIMITED"
 	NONE_ReportCreativeGetV2DataListGender             ReportCreativeGetV2DataListGender = "NONE"
+	GENDER_UNLIMITED_ReportCreativeGetV2DataListGender ReportCreativeGetV2DataListGender = "GENDER_UNLIMITED"
 )
 
 // All allowed values of ReportCreativeGetV2DataListGender enum
 var AllowedReportCreativeGetV2DataListGenderEnumValues = []ReportCreativeGetV2DataListGender{
 	"GENDER_MALE",
 	"GENDER_FEMALE",
-	"GENDER_UNLIMITED",
 	"NONE",
+	"GENDER_UNLIMITED",
 }
 
 // NewReportCreativeGetV2DataListGenderFromValue returns a pointer to a valid ReportCreativeGetV2DataListGender

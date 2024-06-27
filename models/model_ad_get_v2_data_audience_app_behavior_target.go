@@ -19,16 +19,16 @@ type AdGetV2DataAudienceAppBehaviorTarget string
 
 // List of ad_get_v2_data_audience_app_behavior_target
 const (
+	NONE_AdGetV2DataAudienceAppBehaviorTarget     AdGetV2DataAudienceAppBehaviorTarget = "NONE"
 	APP_AdGetV2DataAudienceAppBehaviorTarget      AdGetV2DataAudienceAppBehaviorTarget = "APP"
 	CATEGORY_AdGetV2DataAudienceAppBehaviorTarget AdGetV2DataAudienceAppBehaviorTarget = "CATEGORY"
-	NONE_AdGetV2DataAudienceAppBehaviorTarget     AdGetV2DataAudienceAppBehaviorTarget = "NONE"
 )
 
 // All allowed values of AdGetV2DataAudienceAppBehaviorTarget enum
 var AllowedAdGetV2DataAudienceAppBehaviorTargetEnumValues = []AdGetV2DataAudienceAppBehaviorTarget{
+	"NONE",
 	"APP",
 	"CATEGORY",
-	"NONE",
 }
 
 // NewAdGetV2DataAudienceAppBehaviorTargetFromValue returns a pointer to a valid AdGetV2DataAudienceAppBehaviorTarget

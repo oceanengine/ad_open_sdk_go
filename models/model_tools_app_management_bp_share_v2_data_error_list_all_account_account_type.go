@@ -20,15 +20,15 @@ type ToolsAppManagementBpShareV2DataErrorListAllAccountAccountType string
 // List of tools_app_management_bp_share_v2_data_error_list_all_account_account_type
 const (
 	BP_ToolsAppManagementBpShareV2DataErrorListAllAccountAccountType   ToolsAppManagementBpShareV2DataErrorListAllAccountAccountType = "BP"
-	AD_ToolsAppManagementBpShareV2DataErrorListAllAccountAccountType   ToolsAppManagementBpShareV2DataErrorListAllAccountAccountType = "AD"
 	STAR_ToolsAppManagementBpShareV2DataErrorListAllAccountAccountType ToolsAppManagementBpShareV2DataErrorListAllAccountAccountType = "STAR"
+	AD_ToolsAppManagementBpShareV2DataErrorListAllAccountAccountType   ToolsAppManagementBpShareV2DataErrorListAllAccountAccountType = "AD"
 )
 
 // All allowed values of ToolsAppManagementBpShareV2DataErrorListAllAccountAccountType enum
 var AllowedToolsAppManagementBpShareV2DataErrorListAllAccountAccountTypeEnumValues = []ToolsAppManagementBpShareV2DataErrorListAllAccountAccountType{
 	"BP",
-	"AD",
 	"STAR",
+	"AD",
 }
 
 // NewToolsAppManagementBpShareV2DataErrorListAllAccountAccountTypeFromValue returns a pointer to a valid ToolsAppManagementBpShareV2DataErrorListAllAccountAccountType

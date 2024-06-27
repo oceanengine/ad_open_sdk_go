@@ -19,61 +19,61 @@ type ToolsBidSuggestV2AndroidOsv string
 
 // List of tools_bid_suggest_v2_android_osv
 const (
-	Enum_5_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "5.0"
-	Enum_3_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "3.0"
-	Enum_2_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "2.0"
-	Enum_3_1_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "3.1"
-	Enum_8_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "8.0"
-	Enum_10_1_ToolsBidSuggestV2AndroidOsv ToolsBidSuggestV2AndroidOsv = "10.1"
 	Enum_2_3_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "2.3"
-	Enum_7_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "7.0"
-	Enum_6_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "6.0"
-	Enum_10_0_ToolsBidSuggestV2AndroidOsv ToolsBidSuggestV2AndroidOsv = "10.0"
+	Enum_10_1_ToolsBidSuggestV2AndroidOsv ToolsBidSuggestV2AndroidOsv = "10.1"
+	Enum_4_3_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "4.3"
+	Enum_8_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "8.0"
 	Enum_9_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "9.0"
+	Enum_4_4_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "4.4"
+	Enum_11_0_ToolsBidSuggestV2AndroidOsv ToolsBidSuggestV2AndroidOsv = "11.0"
 	Enum_2_1_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "2.1"
+	Enum_3_2_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "3.2"
+	Enum_3_1_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "3.1"
 	Enum_7_1_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "7.1"
+	Enum_6_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "6.0"
+	Enum_3_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "3.0"
+	Enum_8_1_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "8.1"
+	Enum_2_2_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "2.2"
+	Enum_10_0_ToolsBidSuggestV2AndroidOsv ToolsBidSuggestV2AndroidOsv = "10.0"
+	Enum_2_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "2.0"
+	Enum_4_2_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "4.2"
+	Enum_5_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "5.0"
 	Enum_5_1_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "5.1"
+	Enum_7_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "7.0"
 	Enum_4_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "4.0"
 	NONE_ToolsBidSuggestV2AndroidOsv      ToolsBidSuggestV2AndroidOsv = "NONE"
 	Enum_0_0_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "0.0"
-	Enum_4_2_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "4.2"
 	Enum_4_5_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "4.5"
-	Enum_3_2_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "3.2"
-	Enum_4_4_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "4.4"
-	Enum_11_0_ToolsBidSuggestV2AndroidOsv ToolsBidSuggestV2AndroidOsv = "11.0"
-	Enum_4_3_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "4.3"
-	Enum_2_2_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "2.2"
-	Enum_8_1_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "8.1"
 	Enum_4_1_ToolsBidSuggestV2AndroidOsv  ToolsBidSuggestV2AndroidOsv = "4.1"
 )
 
 // All allowed values of ToolsBidSuggestV2AndroidOsv enum
 var AllowedToolsBidSuggestV2AndroidOsvEnumValues = []ToolsBidSuggestV2AndroidOsv{
-	"5.0",
-	"3.0",
-	"2.0",
-	"3.1",
-	"8.0",
-	"10.1",
 	"2.3",
-	"7.0",
-	"6.0",
-	"10.0",
+	"10.1",
+	"4.3",
+	"8.0",
 	"9.0",
+	"4.4",
+	"11.0",
 	"2.1",
+	"3.2",
+	"3.1",
 	"7.1",
+	"6.0",
+	"3.0",
+	"8.1",
+	"2.2",
+	"10.0",
+	"2.0",
+	"4.2",
+	"5.0",
 	"5.1",
+	"7.0",
 	"4.0",
 	"NONE",
 	"0.0",
-	"4.2",
 	"4.5",
-	"3.2",
-	"4.4",
-	"11.0",
-	"4.3",
-	"2.2",
-	"8.1",
 	"4.1",
 }
 

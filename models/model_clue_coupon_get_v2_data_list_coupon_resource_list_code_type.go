@@ -20,17 +20,17 @@ type ClueCouponGetV2DataListCouponResourceListCodeType string
 // List of clue_coupon_get_v2_data_list_coupon_resource_list_code_type
 const (
 	COMMON_ClueCouponGetV2DataListCouponResourceListCodeType   ClueCouponGetV2DataListCouponResourceListCodeType = "COMMON"
-	MERCHANT_ClueCouponGetV2DataListCouponResourceListCodeType ClueCouponGetV2DataListCouponResourceListCodeType = "MERCHANT"
-	PLATFORM_ClueCouponGetV2DataListCouponResourceListCodeType ClueCouponGetV2DataListCouponResourceListCodeType = "PLATFORM"
 	API_ClueCouponGetV2DataListCouponResourceListCodeType      ClueCouponGetV2DataListCouponResourceListCodeType = "API"
+	PLATFORM_ClueCouponGetV2DataListCouponResourceListCodeType ClueCouponGetV2DataListCouponResourceListCodeType = "PLATFORM"
+	MERCHANT_ClueCouponGetV2DataListCouponResourceListCodeType ClueCouponGetV2DataListCouponResourceListCodeType = "MERCHANT"
 )
 
 // All allowed values of ClueCouponGetV2DataListCouponResourceListCodeType enum
 var AllowedClueCouponGetV2DataListCouponResourceListCodeTypeEnumValues = []ClueCouponGetV2DataListCouponResourceListCodeType{
 	"COMMON",
-	"MERCHANT",
-	"PLATFORM",
 	"API",
+	"PLATFORM",
+	"MERCHANT",
 }
 
 // NewClueCouponGetV2DataListCouponResourceListCodeTypeFromValue returns a pointer to a valid ClueCouponGetV2DataListCouponResourceListCodeType

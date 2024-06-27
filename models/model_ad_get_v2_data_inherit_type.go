@@ -20,15 +20,15 @@ type AdGetV2DataInheritType string
 // List of ad_get_v2_data_inherit_type
 const (
 	INHERIT_FROM_CUSTOMER_AdGetV2DataInheritType AdGetV2DataInheritType = "INHERIT_FROM_CUSTOMER"
-	INHERIT_BY_SYSTEM_AdGetV2DataInheritType     AdGetV2DataInheritType = "INHERIT_BY_SYSTEM"
 	INHERIT_FROM_ACCOUNT_AdGetV2DataInheritType  AdGetV2DataInheritType = "INHERIT_FROM_ACCOUNT"
+	INHERIT_BY_SYSTEM_AdGetV2DataInheritType     AdGetV2DataInheritType = "INHERIT_BY_SYSTEM"
 )
 
 // All allowed values of AdGetV2DataInheritType enum
 var AllowedAdGetV2DataInheritTypeEnumValues = []AdGetV2DataInheritType{
 	"INHERIT_FROM_CUSTOMER",
-	"INHERIT_BY_SYSTEM",
 	"INHERIT_FROM_ACCOUNT",
+	"INHERIT_BY_SYSTEM",
 }
 
 // NewAdGetV2DataInheritTypeFromValue returns a pointer to a valid AdGetV2DataInheritType

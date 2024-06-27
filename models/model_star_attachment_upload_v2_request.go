@@ -15,7 +15,7 @@ type StarAttachmentUploadV2Request struct {
 	// 上传的文件
 	File *FormFileInfo `json:"file"`
 	// 文件名
-	FileName *FormFileInfo `json:"file_name"`
+	FileName string `json:"file_name"`
 	// 星图客户ID
 	StarId int64 `json:"star_id"`
 }

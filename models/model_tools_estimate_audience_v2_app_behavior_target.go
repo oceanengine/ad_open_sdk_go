@@ -19,16 +19,16 @@ type ToolsEstimateAudienceV2AppBehaviorTarget string
 
 // List of tools_estimate_audience_v2_app_behavior_target
 const (
+	NONE_ToolsEstimateAudienceV2AppBehaviorTarget     ToolsEstimateAudienceV2AppBehaviorTarget = "NONE"
 	APP_ToolsEstimateAudienceV2AppBehaviorTarget      ToolsEstimateAudienceV2AppBehaviorTarget = "APP"
 	CATEGORY_ToolsEstimateAudienceV2AppBehaviorTarget ToolsEstimateAudienceV2AppBehaviorTarget = "CATEGORY"
-	NONE_ToolsEstimateAudienceV2AppBehaviorTarget     ToolsEstimateAudienceV2AppBehaviorTarget = "NONE"
 )
 
 // All allowed values of ToolsEstimateAudienceV2AppBehaviorTarget enum
 var AllowedToolsEstimateAudienceV2AppBehaviorTargetEnumValues = []ToolsEstimateAudienceV2AppBehaviorTarget{
+	"NONE",
 	"APP",
 	"CATEGORY",
-	"NONE",
 }
 
 // NewToolsEstimateAudienceV2AppBehaviorTargetFromValue returns a pointer to a valid ToolsEstimateAudienceV2AppBehaviorTarget

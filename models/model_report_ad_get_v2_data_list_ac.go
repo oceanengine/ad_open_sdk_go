@@ -19,22 +19,22 @@ type ReportAdGetV2DataListAc string
 
 // List of report_ad_get_v2_data_list_ac
 const (
-	Enum_5_G_ReportAdGetV2DataListAc ReportAdGetV2DataListAc = "5G"
 	WIFI_ReportAdGetV2DataListAc     ReportAdGetV2DataListAc = "WIFI"
+	UNKNOWN_ReportAdGetV2DataListAc  ReportAdGetV2DataListAc = "unknown"
 	Enum_3_G_ReportAdGetV2DataListAc ReportAdGetV2DataListAc = "3G"
+	Enum_5_G_ReportAdGetV2DataListAc ReportAdGetV2DataListAc = "5G"
 	Enum_2_G_ReportAdGetV2DataListAc ReportAdGetV2DataListAc = "2G"
 	Enum_4_G_ReportAdGetV2DataListAc ReportAdGetV2DataListAc = "4G"
-	UNKNOWN_ReportAdGetV2DataListAc  ReportAdGetV2DataListAc = "unknown"
 )
 
 // All allowed values of ReportAdGetV2DataListAc enum
 var AllowedReportAdGetV2DataListAcEnumValues = []ReportAdGetV2DataListAc{
-	"5G",
 	"WIFI",
+	"unknown",
 	"3G",
+	"5G",
 	"2G",
 	"4G",
-	"unknown",
 }
 
 // NewReportAdGetV2DataListAcFromValue returns a pointer to a valid ReportAdGetV2DataListAc

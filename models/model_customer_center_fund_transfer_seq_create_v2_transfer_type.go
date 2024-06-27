@@ -19,24 +19,24 @@ type CustomerCenterFundTransferSeqCreateV2TransferType string
 
 // List of customer_center_fund_transfer_seq_create_v2_transfer_type
 const (
-	CREDIT_UNIVERSAL_CustomerCenterFundTransferSeqCreateV2TransferType CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_UNIVERSAL"
 	PREPAY_UNIVERSAL_CustomerCenterFundTransferSeqCreateV2TransferType CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_UNIVERSAL"
 	CREDIT_BID_CustomerCenterFundTransferSeqCreateV2TransferType       CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_BID"
 	CREDIT_BRAND_CustomerCenterFundTransferSeqCreateV2TransferType     CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_BRAND"
 	GRANT_CustomerCenterFundTransferSeqCreateV2TransferType            CustomerCenterFundTransferSeqCreateV2TransferType = "GRANT"
-	PREPAY_BRAND_CustomerCenterFundTransferSeqCreateV2TransferType     CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_BRAND"
+	CREDIT_UNIVERSAL_CustomerCenterFundTransferSeqCreateV2TransferType CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_UNIVERSAL"
 	PREPAY_BID_CustomerCenterFundTransferSeqCreateV2TransferType       CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_BID"
+	PREPAY_BRAND_CustomerCenterFundTransferSeqCreateV2TransferType     CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_BRAND"
 )
 
 // All allowed values of CustomerCenterFundTransferSeqCreateV2TransferType enum
 var AllowedCustomerCenterFundTransferSeqCreateV2TransferTypeEnumValues = []CustomerCenterFundTransferSeqCreateV2TransferType{
-	"CREDIT_UNIVERSAL",
 	"PREPAY_UNIVERSAL",
 	"CREDIT_BID",
 	"CREDIT_BRAND",
 	"GRANT",
-	"PREPAY_BRAND",
+	"CREDIT_UNIVERSAL",
 	"PREPAY_BID",
+	"PREPAY_BRAND",
 }
 
 // NewCustomerCenterFundTransferSeqCreateV2TransferTypeFromValue returns a pointer to a valid CustomerCenterFundTransferSeqCreateV2TransferType

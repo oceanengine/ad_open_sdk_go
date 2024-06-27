@@ -19,20 +19,20 @@ type ClueFormDetailV2DataFormValidateType string
 
 // List of clue_form_detail_v2_data_form_validate_type
 const (
-	AUTO_VERIFICATION_ClueFormDetailV2DataFormValidateType ClueFormDetailV2DataFormValidateType = "AUTO_VERIFICATION"
-	NONE_VERIFICATION_ClueFormDetailV2DataFormValidateType ClueFormDetailV2DataFormValidateType = "NONE_VERIFICATION"
 	VALIDITY_PRIORITY_ClueFormDetailV2DataFormValidateType ClueFormDetailV2DataFormValidateType = "VALIDITY_PRIORITY"
-	CLUE_PRIORITY_ClueFormDetailV2DataFormValidateType     ClueFormDetailV2DataFormValidateType = "CLUE_PRIORITY"
+	NONE_VERIFICATION_ClueFormDetailV2DataFormValidateType ClueFormDetailV2DataFormValidateType = "NONE_VERIFICATION"
+	AUTO_VERIFICATION_ClueFormDetailV2DataFormValidateType ClueFormDetailV2DataFormValidateType = "AUTO_VERIFICATION"
 	ALL_VERIFICATION_ClueFormDetailV2DataFormValidateType  ClueFormDetailV2DataFormValidateType = "ALL_VERIFICATION"
+	CLUE_PRIORITY_ClueFormDetailV2DataFormValidateType     ClueFormDetailV2DataFormValidateType = "CLUE_PRIORITY"
 )
 
 // All allowed values of ClueFormDetailV2DataFormValidateType enum
 var AllowedClueFormDetailV2DataFormValidateTypeEnumValues = []ClueFormDetailV2DataFormValidateType{
-	"AUTO_VERIFICATION",
-	"NONE_VERIFICATION",
 	"VALIDITY_PRIORITY",
-	"CLUE_PRIORITY",
+	"NONE_VERIFICATION",
+	"AUTO_VERIFICATION",
 	"ALL_VERIFICATION",
+	"CLUE_PRIORITY",
 }
 
 // NewClueFormDetailV2DataFormValidateTypeFromValue returns a pointer to a valid ClueFormDetailV2DataFormValidateType

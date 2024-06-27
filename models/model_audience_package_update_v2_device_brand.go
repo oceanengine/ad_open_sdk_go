@@ -20,65 +20,65 @@ type AudiencePackageUpdateV2DeviceBrand string
 // List of audience_package_update_v2_device_brand
 const (
 	NUBIA_AudiencePackageUpdateV2DeviceBrand       AudiencePackageUpdateV2DeviceBrand = "NUBIA"
-	ZTE_AudiencePackageUpdateV2DeviceBrand         AudiencePackageUpdateV2DeviceBrand = "ZTE"
-	QIKU_AudiencePackageUpdateV2DeviceBrand        AudiencePackageUpdateV2DeviceBrand = "QIKU"
-	SMARTISAN_AudiencePackageUpdateV2DeviceBrand   AudiencePackageUpdateV2DeviceBrand = "SMARTISAN"
+	VIVO_AudiencePackageUpdateV2DeviceBrand        AudiencePackageUpdateV2DeviceBrand = "VIVO"
+	MEIZU_AudiencePackageUpdateV2DeviceBrand       AudiencePackageUpdateV2DeviceBrand = "MEIZU"
+	LENOVO_AudiencePackageUpdateV2DeviceBrand      AudiencePackageUpdateV2DeviceBrand = "LENOVO"
+	HTC_AudiencePackageUpdateV2DeviceBrand         AudiencePackageUpdateV2DeviceBrand = "HTC"
+	HONOR_AudiencePackageUpdateV2DeviceBrand       AudiencePackageUpdateV2DeviceBrand = "HONOR"
+	GIONEE_AudiencePackageUpdateV2DeviceBrand      AudiencePackageUpdateV2DeviceBrand = "GIONEE"
+	CHINAMOBILE_AudiencePackageUpdateV2DeviceBrand AudiencePackageUpdateV2DeviceBrand = "CHINAMOBILE"
+	Enum_360_AudiencePackageUpdateV2DeviceBrand    AudiencePackageUpdateV2DeviceBrand = "360"
+	COOLPAD_AudiencePackageUpdateV2DeviceBrand     AudiencePackageUpdateV2DeviceBrand = "COOLPAD"
+	PEPPER_AudiencePackageUpdateV2DeviceBrand      AudiencePackageUpdateV2DeviceBrand = "PEPPER"
 	SAMSUNG_AudiencePackageUpdateV2DeviceBrand     AudiencePackageUpdateV2DeviceBrand = "SAMSUNG"
+	SMARTISAN_AudiencePackageUpdateV2DeviceBrand   AudiencePackageUpdateV2DeviceBrand = "SMARTISAN"
+	HUAWEI_AudiencePackageUpdateV2DeviceBrand      AudiencePackageUpdateV2DeviceBrand = "HUAWEI"
+	HISENSE_AudiencePackageUpdateV2DeviceBrand     AudiencePackageUpdateV2DeviceBrand = "HISENSE"
+	APPLE_AudiencePackageUpdateV2DeviceBrand       AudiencePackageUpdateV2DeviceBrand = "APPLE"
+	OPPO_AudiencePackageUpdateV2DeviceBrand        AudiencePackageUpdateV2DeviceBrand = "OPPO"
 	ONEPLUS_AudiencePackageUpdateV2DeviceBrand     AudiencePackageUpdateV2DeviceBrand = "ONEPLUS"
 	SONY_AudiencePackageUpdateV2DeviceBrand        AudiencePackageUpdateV2DeviceBrand = "SONY"
-	TCL_AudiencePackageUpdateV2DeviceBrand         AudiencePackageUpdateV2DeviceBrand = "TCL"
-	GIONEE_AudiencePackageUpdateV2DeviceBrand      AudiencePackageUpdateV2DeviceBrand = "GIONEE"
-	HISENSE_AudiencePackageUpdateV2DeviceBrand     AudiencePackageUpdateV2DeviceBrand = "HISENSE"
-	LG_AudiencePackageUpdateV2DeviceBrand          AudiencePackageUpdateV2DeviceBrand = "LG"
-	LENOVO_AudiencePackageUpdateV2DeviceBrand      AudiencePackageUpdateV2DeviceBrand = "LENOVO"
+	QIKU_AudiencePackageUpdateV2DeviceBrand        AudiencePackageUpdateV2DeviceBrand = "QIKU"
 	NOKIA_AudiencePackageUpdateV2DeviceBrand       AudiencePackageUpdateV2DeviceBrand = "NOKIA"
-	GOOGLE_AudiencePackageUpdateV2DeviceBrand      AudiencePackageUpdateV2DeviceBrand = "GOOGLE"
-	PEPPER_AudiencePackageUpdateV2DeviceBrand      AudiencePackageUpdateV2DeviceBrand = "PEPPER"
-	APPLE_AudiencePackageUpdateV2DeviceBrand       AudiencePackageUpdateV2DeviceBrand = "APPLE"
-	XIAOMI_AudiencePackageUpdateV2DeviceBrand      AudiencePackageUpdateV2DeviceBrand = "XIAOMI"
-	OPPO_AudiencePackageUpdateV2DeviceBrand        AudiencePackageUpdateV2DeviceBrand = "OPPO"
-	VIVO_AudiencePackageUpdateV2DeviceBrand        AudiencePackageUpdateV2DeviceBrand = "VIVO"
-	Enum_360_AudiencePackageUpdateV2DeviceBrand    AudiencePackageUpdateV2DeviceBrand = "360"
-	MOTO_AudiencePackageUpdateV2DeviceBrand        AudiencePackageUpdateV2DeviceBrand = "MOTO"
-	HTC_AudiencePackageUpdateV2DeviceBrand         AudiencePackageUpdateV2DeviceBrand = "HTC"
-	MEIZU_AudiencePackageUpdateV2DeviceBrand       AudiencePackageUpdateV2DeviceBrand = "MEIZU"
-	COOLPAD_AudiencePackageUpdateV2DeviceBrand     AudiencePackageUpdateV2DeviceBrand = "COOLPAD"
+	ZTE_AudiencePackageUpdateV2DeviceBrand         AudiencePackageUpdateV2DeviceBrand = "ZTE"
 	LETV_AudiencePackageUpdateV2DeviceBrand        AudiencePackageUpdateV2DeviceBrand = "LETV"
-	CHINAMOBILE_AudiencePackageUpdateV2DeviceBrand AudiencePackageUpdateV2DeviceBrand = "CHINAMOBILE"
-	HONOR_AudiencePackageUpdateV2DeviceBrand       AudiencePackageUpdateV2DeviceBrand = "HONOR"
-	HUAWEI_AudiencePackageUpdateV2DeviceBrand      AudiencePackageUpdateV2DeviceBrand = "HUAWEI"
+	GOOGLE_AudiencePackageUpdateV2DeviceBrand      AudiencePackageUpdateV2DeviceBrand = "GOOGLE"
+	TCL_AudiencePackageUpdateV2DeviceBrand         AudiencePackageUpdateV2DeviceBrand = "TCL"
+	MOTO_AudiencePackageUpdateV2DeviceBrand        AudiencePackageUpdateV2DeviceBrand = "MOTO"
+	LG_AudiencePackageUpdateV2DeviceBrand          AudiencePackageUpdateV2DeviceBrand = "LG"
+	XIAOMI_AudiencePackageUpdateV2DeviceBrand      AudiencePackageUpdateV2DeviceBrand = "XIAOMI"
 )
 
 // All allowed values of AudiencePackageUpdateV2DeviceBrand enum
 var AllowedAudiencePackageUpdateV2DeviceBrandEnumValues = []AudiencePackageUpdateV2DeviceBrand{
 	"NUBIA",
-	"ZTE",
-	"QIKU",
-	"SMARTISAN",
+	"VIVO",
+	"MEIZU",
+	"LENOVO",
+	"HTC",
+	"HONOR",
+	"GIONEE",
+	"CHINAMOBILE",
+	"360",
+	"COOLPAD",
+	"PEPPER",
 	"SAMSUNG",
+	"SMARTISAN",
+	"HUAWEI",
+	"HISENSE",
+	"APPLE",
+	"OPPO",
 	"ONEPLUS",
 	"SONY",
-	"TCL",
-	"GIONEE",
-	"HISENSE",
-	"LG",
-	"LENOVO",
+	"QIKU",
 	"NOKIA",
-	"GOOGLE",
-	"PEPPER",
-	"APPLE",
-	"XIAOMI",
-	"OPPO",
-	"VIVO",
-	"360",
-	"MOTO",
-	"HTC",
-	"MEIZU",
-	"COOLPAD",
+	"ZTE",
 	"LETV",
-	"CHINAMOBILE",
-	"HONOR",
-	"HUAWEI",
+	"GOOGLE",
+	"TCL",
+	"MOTO",
+	"LG",
+	"XIAOMI",
 }
 
 // NewAudiencePackageUpdateV2DeviceBrandFromValue returns a pointer to a valid AudiencePackageUpdateV2DeviceBrand

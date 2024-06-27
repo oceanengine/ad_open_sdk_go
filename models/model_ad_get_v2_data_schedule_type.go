@@ -19,14 +19,14 @@ type AdGetV2DataScheduleType string
 
 // List of ad_get_v2_data_schedule_type
 const (
-	SCHEDULE_START_END_AdGetV2DataScheduleType AdGetV2DataScheduleType = "SCHEDULE_START_END"
 	SCHEDULE_FROM_NOW_AdGetV2DataScheduleType  AdGetV2DataScheduleType = "SCHEDULE_FROM_NOW"
+	SCHEDULE_START_END_AdGetV2DataScheduleType AdGetV2DataScheduleType = "SCHEDULE_START_END"
 )
 
 // All allowed values of AdGetV2DataScheduleType enum
 var AllowedAdGetV2DataScheduleTypeEnumValues = []AdGetV2DataScheduleType{
-	"SCHEDULE_START_END",
 	"SCHEDULE_FROM_NOW",
+	"SCHEDULE_START_END",
 }
 
 // NewAdGetV2DataScheduleTypeFromValue returns a pointer to a valid AdGetV2DataScheduleType

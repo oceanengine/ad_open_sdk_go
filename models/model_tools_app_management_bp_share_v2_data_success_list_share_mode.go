@@ -20,15 +20,15 @@ type ToolsAppManagementBpShareV2DataSuccessListShareMode string
 // List of tools_app_management_bp_share_v2_data_success_list_share_mode
 const (
 	PART_ToolsAppManagementBpShareV2DataSuccessListShareMode    ToolsAppManagementBpShareV2DataSuccessListShareMode = "PART"
-	COMPANY_ToolsAppManagementBpShareV2DataSuccessListShareMode ToolsAppManagementBpShareV2DataSuccessListShareMode = "COMPANY"
 	ALL_ToolsAppManagementBpShareV2DataSuccessListShareMode     ToolsAppManagementBpShareV2DataSuccessListShareMode = "ALL"
+	COMPANY_ToolsAppManagementBpShareV2DataSuccessListShareMode ToolsAppManagementBpShareV2DataSuccessListShareMode = "COMPANY"
 )
 
 // All allowed values of ToolsAppManagementBpShareV2DataSuccessListShareMode enum
 var AllowedToolsAppManagementBpShareV2DataSuccessListShareModeEnumValues = []ToolsAppManagementBpShareV2DataSuccessListShareMode{
 	"PART",
-	"COMPANY",
 	"ALL",
+	"COMPANY",
 }
 
 // NewToolsAppManagementBpShareV2DataSuccessListShareModeFromValue returns a pointer to a valid ToolsAppManagementBpShareV2DataSuccessListShareMode

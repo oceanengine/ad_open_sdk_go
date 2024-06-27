@@ -13,6 +13,10 @@ package models
 // StarMcnGetUnparticipatedTaskV2ResponseDataDataInner struct for StarMcnGetUnparticipatedTaskV2ResponseDataDataInner
 type StarMcnGetUnparticipatedTaskV2ResponseDataDataInner struct {
 	//
+	Brand *string `json:"brand,omitempty"`
+	//
+	ChallengeStatus *int64 `json:"challenge_status,omitempty"`
+	//
 	CommissionRate *int64 `json:"commission_rate,omitempty"`
 	//
 	CreateTime string `json:"create_time"`
@@ -31,13 +35,35 @@ type StarMcnGetUnparticipatedTaskV2ResponseDataDataInner struct {
 	//
 	FirstClassCategory *int64 `json:"first_class_category,omitempty"`
 	//
+	HighProfitChallenge *int64 `json:"high_profit_challenge,omitempty"`
+	//
 	ItemComponentType *int64 `json:"item_component_type,omitempty"`
 	//
 	McnProfitRate *int64 `json:"mcn_profit_rate,omitempty"`
 	//
 	PayType *int64 `json:"pay_type,omitempty"`
 	//
+	PlayletCategory *int64 `json:"playlet_category,omitempty"`
+	//
+	PlayletFirstWeek *int64 `json:"playlet_first_week,omitempty"`
+	//
+	PlayletGender []int64 `json:"playlet_gender,omitempty"`
+	//
+	PlayletHot *int64 `json:"playlet_hot,omitempty"`
+	//
+	PlayletSecondWeek *int64 `json:"playlet_second_week,omitempty"`
+	//
+	PlayletTheme []int64 `json:"playlet_theme,omitempty"`
+	//
 	Price *int64 `json:"price,omitempty"`
+	//
+	ProductCategory *int64 `json:"product_category,omitempty"`
+	//
+	ProductName *string `json:"product_name,omitempty"`
+	//
+	ProfitRateChannel *map[string]int64 `json:"profit_rate_channel,omitempty"`
+	//
+	RealCost *int64 `json:"real_cost,omitempty"`
 	//
 	SecondClassCategory *int64 `json:"second_class_category,omitempty"`
 	//

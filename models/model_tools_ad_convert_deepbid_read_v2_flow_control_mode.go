@@ -19,20 +19,20 @@ type ToolsAdConvertDeepbidReadV2FlowControlMode string
 
 // List of tools_ad_convert_deepbid_read_v2_flow_control_mode
 const (
+	FLOW_CONTROL_MODE_SMOOTH_ToolsAdConvertDeepbidReadV2FlowControlMode     ToolsAdConvertDeepbidReadV2FlowControlMode = "FLOW_CONTROL_MODE_SMOOTH"
+	FLOW_CONTROL_MODE_TWO_PHASES_ToolsAdConvertDeepbidReadV2FlowControlMode ToolsAdConvertDeepbidReadV2FlowControlMode = "FLOW_CONTROL_MODE_TWO_PHASES"
 	FLOW_CONTROL_MODE_BALANCE_ToolsAdConvertDeepbidReadV2FlowControlMode    ToolsAdConvertDeepbidReadV2FlowControlMode = "FLOW_CONTROL_MODE_BALANCE"
 	FLOW_CONTROL_MODE_HOURLY_ToolsAdConvertDeepbidReadV2FlowControlMode     ToolsAdConvertDeepbidReadV2FlowControlMode = "FLOW_CONTROL_MODE_HOURLY"
-	FLOW_CONTROL_MODE_TWO_PHASES_ToolsAdConvertDeepbidReadV2FlowControlMode ToolsAdConvertDeepbidReadV2FlowControlMode = "FLOW_CONTROL_MODE_TWO_PHASES"
 	FLOW_CONTROL_MODE_FAST_ToolsAdConvertDeepbidReadV2FlowControlMode       ToolsAdConvertDeepbidReadV2FlowControlMode = "FLOW_CONTROL_MODE_FAST"
-	FLOW_CONTROL_MODE_SMOOTH_ToolsAdConvertDeepbidReadV2FlowControlMode     ToolsAdConvertDeepbidReadV2FlowControlMode = "FLOW_CONTROL_MODE_SMOOTH"
 )
 
 // All allowed values of ToolsAdConvertDeepbidReadV2FlowControlMode enum
 var AllowedToolsAdConvertDeepbidReadV2FlowControlModeEnumValues = []ToolsAdConvertDeepbidReadV2FlowControlMode{
+	"FLOW_CONTROL_MODE_SMOOTH",
+	"FLOW_CONTROL_MODE_TWO_PHASES",
 	"FLOW_CONTROL_MODE_BALANCE",
 	"FLOW_CONTROL_MODE_HOURLY",
-	"FLOW_CONTROL_MODE_TWO_PHASES",
 	"FLOW_CONTROL_MODE_FAST",
-	"FLOW_CONTROL_MODE_SMOOTH",
 }
 
 // NewToolsAdConvertDeepbidReadV2FlowControlModeFromValue returns a pointer to a valid ToolsAdConvertDeepbidReadV2FlowControlMode

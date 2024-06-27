@@ -19,14 +19,14 @@ type EnterpriseCommentListGetV10OrderType string
 
 // List of enterprise_comment_list_get_v1.0_order_type
 const (
-	DESC_EnterpriseCommentListGetV10OrderType EnterpriseCommentListGetV10OrderType = "DESC"
 	ASC_EnterpriseCommentListGetV10OrderType  EnterpriseCommentListGetV10OrderType = "ASC"
+	DESC_EnterpriseCommentListGetV10OrderType EnterpriseCommentListGetV10OrderType = "DESC"
 )
 
 // All allowed values of EnterpriseCommentListGetV10OrderType enum
 var AllowedEnterpriseCommentListGetV10OrderTypeEnumValues = []EnterpriseCommentListGetV10OrderType{
-	"DESC",
 	"ASC",
+	"DESC",
 }
 
 // NewEnterpriseCommentListGetV10OrderTypeFromValue returns a pointer to a valid EnterpriseCommentListGetV10OrderType

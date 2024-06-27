@@ -19,14 +19,14 @@ type CampaignCreateV2DeliveryMode string
 
 // List of campaign_create_v2_delivery_mode
 const (
-	PROCEDURAL_CampaignCreateV2DeliveryMode CampaignCreateV2DeliveryMode = "PROCEDURAL"
 	MANUAL_CampaignCreateV2DeliveryMode     CampaignCreateV2DeliveryMode = "MANUAL"
+	PROCEDURAL_CampaignCreateV2DeliveryMode CampaignCreateV2DeliveryMode = "PROCEDURAL"
 )
 
 // All allowed values of CampaignCreateV2DeliveryMode enum
 var AllowedCampaignCreateV2DeliveryModeEnumValues = []CampaignCreateV2DeliveryMode{
-	"PROCEDURAL",
 	"MANUAL",
+	"PROCEDURAL",
 }
 
 // NewCampaignCreateV2DeliveryModeFromValue returns a pointer to a valid CampaignCreateV2DeliveryMode

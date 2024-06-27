@@ -20,19 +20,19 @@ type AudiencePackageCreateV2Platform string
 // List of audience_package_create_v2_platform
 const (
 	PC_AudiencePackageCreateV2Platform      AudiencePackageCreateV2Platform = "PC"
-	IOS_AudiencePackageCreateV2Platform     AudiencePackageCreateV2Platform = "IOS"
-	WAP_AudiencePackageCreateV2Platform     AudiencePackageCreateV2Platform = "WAP"
-	IPAD_AudiencePackageCreateV2Platform    AudiencePackageCreateV2Platform = "IPAD"
 	ANDROID_AudiencePackageCreateV2Platform AudiencePackageCreateV2Platform = "ANDROID"
+	IOS_AudiencePackageCreateV2Platform     AudiencePackageCreateV2Platform = "IOS"
+	IPAD_AudiencePackageCreateV2Platform    AudiencePackageCreateV2Platform = "IPAD"
+	WAP_AudiencePackageCreateV2Platform     AudiencePackageCreateV2Platform = "WAP"
 )
 
 // All allowed values of AudiencePackageCreateV2Platform enum
 var AllowedAudiencePackageCreateV2PlatformEnumValues = []AudiencePackageCreateV2Platform{
 	"PC",
-	"IOS",
-	"WAP",
-	"IPAD",
 	"ANDROID",
+	"IOS",
+	"IPAD",
+	"WAP",
 }
 
 // NewAudiencePackageCreateV2PlatformFromValue returns a pointer to a valid AudiencePackageCreateV2Platform

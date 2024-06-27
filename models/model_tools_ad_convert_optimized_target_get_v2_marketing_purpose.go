@@ -20,17 +20,17 @@ type ToolsAdConvertOptimizedTargetGetV2MarketingPurpose string
 // List of tools_ad_convert_optimized_target_get_v2_marketing_purpose
 const (
 	CONVERSION_ToolsAdConvertOptimizedTargetGetV2MarketingPurpose  ToolsAdConvertOptimizedTargetGetV2MarketingPurpose = "CONVERSION"
-	UNLIMITED_ToolsAdConvertOptimizedTargetGetV2MarketingPurpose   ToolsAdConvertOptimizedTargetGetV2MarketingPurpose = "UNLIMITED"
 	ACKNOWLEDGE_ToolsAdConvertOptimizedTargetGetV2MarketingPurpose ToolsAdConvertOptimizedTargetGetV2MarketingPurpose = "ACKNOWLEDGE"
 	INTENTION_ToolsAdConvertOptimizedTargetGetV2MarketingPurpose   ToolsAdConvertOptimizedTargetGetV2MarketingPurpose = "INTENTION"
+	UNLIMITED_ToolsAdConvertOptimizedTargetGetV2MarketingPurpose   ToolsAdConvertOptimizedTargetGetV2MarketingPurpose = "UNLIMITED"
 )
 
 // All allowed values of ToolsAdConvertOptimizedTargetGetV2MarketingPurpose enum
 var AllowedToolsAdConvertOptimizedTargetGetV2MarketingPurposeEnumValues = []ToolsAdConvertOptimizedTargetGetV2MarketingPurpose{
 	"CONVERSION",
-	"UNLIMITED",
 	"ACKNOWLEDGE",
 	"INTENTION",
+	"UNLIMITED",
 }
 
 // NewToolsAdConvertOptimizedTargetGetV2MarketingPurposeFromValue returns a pointer to a valid ToolsAdConvertOptimizedTargetGetV2MarketingPurpose

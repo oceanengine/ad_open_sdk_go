@@ -20,29 +20,29 @@ type CampaignCreateV2MarketingScene string
 // List of campaign_create_v2_marketing_scene
 const (
 	GAME_SUBSCRIBE_CampaignCreateV2MarketingScene    CampaignCreateV2MarketingScene = "GAME_SUBSCRIBE"
+	PROMOTION_PURPOSE_CampaignCreateV2MarketingScene CampaignCreateV2MarketingScene = "PROMOTION_PURPOSE"
+	ECOMMERCE_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "ECOMMERCE"
+	MERCHANTS_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "MERCHANTS"
+	CAR_CampaignCreateV2MarketingScene               CampaignCreateV2MarketingScene = "CAR"
+	VIDEO_INFO_CampaignCreateV2MarketingScene        CampaignCreateV2MarketingScene = "VIDEO_INFO"
+	GAME_PROMOTION_CampaignCreateV2MarketingScene    CampaignCreateV2MarketingScene = "GAME_PROMOTION"
 	NOVEL_CampaignCreateV2MarketingScene             CampaignCreateV2MarketingScene = "NOVEL"
 	SOCIAL_CampaignCreateV2MarketingScene            CampaignCreateV2MarketingScene = "SOCIAL"
-	VIDEO_INFO_CampaignCreateV2MarketingScene        CampaignCreateV2MarketingScene = "VIDEO_INFO"
-	PROMOTION_PURPOSE_CampaignCreateV2MarketingScene CampaignCreateV2MarketingScene = "PROMOTION_PURPOSE"
 	EDUCATION_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "EDUCATION"
-	GAME_PROMOTION_CampaignCreateV2MarketingScene    CampaignCreateV2MarketingScene = "GAME_PROMOTION"
-	CAR_CampaignCreateV2MarketingScene               CampaignCreateV2MarketingScene = "CAR"
-	MERCHANTS_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "MERCHANTS"
-	ECOMMERCE_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "ECOMMERCE"
 )
 
 // All allowed values of CampaignCreateV2MarketingScene enum
 var AllowedCampaignCreateV2MarketingSceneEnumValues = []CampaignCreateV2MarketingScene{
 	"GAME_SUBSCRIBE",
+	"PROMOTION_PURPOSE",
+	"ECOMMERCE",
+	"MERCHANTS",
+	"CAR",
+	"VIDEO_INFO",
+	"GAME_PROMOTION",
 	"NOVEL",
 	"SOCIAL",
-	"VIDEO_INFO",
-	"PROMOTION_PURPOSE",
 	"EDUCATION",
-	"GAME_PROMOTION",
-	"CAR",
-	"MERCHANTS",
-	"ECOMMERCE",
 }
 
 // NewCampaignCreateV2MarketingSceneFromValue returns a pointer to a valid CampaignCreateV2MarketingScene

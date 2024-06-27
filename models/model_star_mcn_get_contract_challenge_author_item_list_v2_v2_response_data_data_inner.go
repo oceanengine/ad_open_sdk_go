@@ -29,15 +29,33 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner struct {
 	//
 	DemandName string `json:"demand_name"`
 	//
+	DouyinId *string `json:"douyin_id,omitempty"`
+	//
 	InstallFinishCnt *int64 `json:"install_finish_cnt,omitempty"`
 	//
 	IosConvertCount *int64 `json:"ios_convert_count,omitempty"`
 	//
 	IsOwn bool `json:"is_own"`
 	//
+	ItemClickRate *int64 `json:"item_click_rate,omitempty"`
+	//
+	ItemComment *int64 `json:"item_comment,omitempty"`
+	//
+	ItemFeelGood *int64 `json:"item_feel_good,omitempty"`
+	//
+	ItemForward *int64 `json:"item_forward,omitempty"`
+	//
 	ItemId *int64 `json:"item_id,omitempty"`
 	//
+	ItemInfoDailyList []*StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerItemInfoDailyListInner `json:"item_info_daily_list,omitempty"`
+	//
+	ItemInteractRate *float64 `json:"item_interact_rate,omitempty"`
+	//
+	ItemView *int64 `json:"item_view,omitempty"`
+	//
 	McnAmount *int64 `json:"mcn_amount,omitempty"`
+	//
+	OpenState *int64 `json:"open_state,omitempty"`
 	//
 	Play *int64 `json:"play,omitempty"`
 	//
@@ -47,7 +65,11 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner struct {
 	//
 	SharePrice *int64 `json:"share_price,omitempty"`
 	//
+	SharePriceHour *int64 `json:"share_price_hour,omitempty"`
+	//
 	SharePriceTotal *int64 `json:"share_price_total,omitempty"`
+	//
+	SharePriceTotalHour *int64 `json:"share_price_total_hour,omitempty"`
 	//
 	ShareVv *int64 `json:"share_vv,omitempty"`
 	//

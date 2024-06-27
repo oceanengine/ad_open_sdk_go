@@ -19,14 +19,14 @@ type EnterpriseVideoInfoGetV10OrderType string
 
 // List of enterprise_video_info_get_v1.0_order_type
 const (
-	DESC_EnterpriseVideoInfoGetV10OrderType EnterpriseVideoInfoGetV10OrderType = "DESC"
 	ASC_EnterpriseVideoInfoGetV10OrderType  EnterpriseVideoInfoGetV10OrderType = "ASC"
+	DESC_EnterpriseVideoInfoGetV10OrderType EnterpriseVideoInfoGetV10OrderType = "DESC"
 )
 
 // All allowed values of EnterpriseVideoInfoGetV10OrderType enum
 var AllowedEnterpriseVideoInfoGetV10OrderTypeEnumValues = []EnterpriseVideoInfoGetV10OrderType{
-	"DESC",
 	"ASC",
+	"DESC",
 }
 
 // NewEnterpriseVideoInfoGetV10OrderTypeFromValue returns a pointer to a valid EnterpriseVideoInfoGetV10OrderType

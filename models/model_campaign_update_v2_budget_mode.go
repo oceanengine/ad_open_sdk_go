@@ -19,16 +19,16 @@ type CampaignUpdateV2BudgetMode string
 
 // List of campaign_update_v2_budget_mode
 const (
-	BUDGET_MODE_DAY_CampaignUpdateV2BudgetMode      CampaignUpdateV2BudgetMode = "BUDGET_MODE_DAY"
-	BUDGET_MODE_TOTAL_CampaignUpdateV2BudgetMode    CampaignUpdateV2BudgetMode = "BUDGET_MODE_TOTAL"
 	BUDGET_MODE_INFINITE_CampaignUpdateV2BudgetMode CampaignUpdateV2BudgetMode = "BUDGET_MODE_INFINITE"
+	BUDGET_MODE_TOTAL_CampaignUpdateV2BudgetMode    CampaignUpdateV2BudgetMode = "BUDGET_MODE_TOTAL"
+	BUDGET_MODE_DAY_CampaignUpdateV2BudgetMode      CampaignUpdateV2BudgetMode = "BUDGET_MODE_DAY"
 )
 
 // All allowed values of CampaignUpdateV2BudgetMode enum
 var AllowedCampaignUpdateV2BudgetModeEnumValues = []CampaignUpdateV2BudgetMode{
-	"BUDGET_MODE_DAY",
-	"BUDGET_MODE_TOTAL",
 	"BUDGET_MODE_INFINITE",
+	"BUDGET_MODE_TOTAL",
+	"BUDGET_MODE_DAY",
 }
 
 // NewCampaignUpdateV2BudgetModeFromValue returns a pointer to a valid CampaignUpdateV2BudgetMode

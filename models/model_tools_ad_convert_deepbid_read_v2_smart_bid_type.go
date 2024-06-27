@@ -19,18 +19,18 @@ type ToolsAdConvertDeepbidReadV2SmartBidType string
 
 // List of tools_ad_convert_deepbid_read_v2_smart_bid_type
 const (
+	SMART_BID_CUSTOM_ToolsAdConvertDeepbidReadV2SmartBidType       ToolsAdConvertDeepbidReadV2SmartBidType = "SMART_BID_CUSTOM"
 	SMART_BID_CONSERVATIVE_ToolsAdConvertDeepbidReadV2SmartBidType ToolsAdConvertDeepbidReadV2SmartBidType = "SMART_BID_CONSERVATIVE"
 	SMART_BID_NO_BID_ToolsAdConvertDeepbidReadV2SmartBidType       ToolsAdConvertDeepbidReadV2SmartBidType = "SMART_BID_NO_BID"
 	SMART_BID_RADICAL_ToolsAdConvertDeepbidReadV2SmartBidType      ToolsAdConvertDeepbidReadV2SmartBidType = "SMART_BID_RADICAL"
-	SMART_BID_CUSTOM_ToolsAdConvertDeepbidReadV2SmartBidType       ToolsAdConvertDeepbidReadV2SmartBidType = "SMART_BID_CUSTOM"
 )
 
 // All allowed values of ToolsAdConvertDeepbidReadV2SmartBidType enum
 var AllowedToolsAdConvertDeepbidReadV2SmartBidTypeEnumValues = []ToolsAdConvertDeepbidReadV2SmartBidType{
+	"SMART_BID_CUSTOM",
 	"SMART_BID_CONSERVATIVE",
 	"SMART_BID_NO_BID",
 	"SMART_BID_RADICAL",
-	"SMART_BID_CUSTOM",
 }
 
 // NewToolsAdConvertDeepbidReadV2SmartBidTypeFromValue returns a pointer to a valid ToolsAdConvertDeepbidReadV2SmartBidType

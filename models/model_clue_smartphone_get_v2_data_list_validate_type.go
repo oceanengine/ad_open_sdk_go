@@ -19,20 +19,20 @@ type ClueSmartphoneGetV2DataListValidateType string
 
 // List of clue_smartphone_get_v2_data_list_validate_type
 const (
-	AUTO_VERIFICATION_ClueSmartphoneGetV2DataListValidateType ClueSmartphoneGetV2DataListValidateType = "AUTO_VERIFICATION"
-	NONE_VERIFICATION_ClueSmartphoneGetV2DataListValidateType ClueSmartphoneGetV2DataListValidateType = "NONE_VERIFICATION"
 	VALIDITY_PRIORITY_ClueSmartphoneGetV2DataListValidateType ClueSmartphoneGetV2DataListValidateType = "VALIDITY_PRIORITY"
-	CLUE_PRIORITY_ClueSmartphoneGetV2DataListValidateType     ClueSmartphoneGetV2DataListValidateType = "CLUE_PRIORITY"
+	NONE_VERIFICATION_ClueSmartphoneGetV2DataListValidateType ClueSmartphoneGetV2DataListValidateType = "NONE_VERIFICATION"
+	AUTO_VERIFICATION_ClueSmartphoneGetV2DataListValidateType ClueSmartphoneGetV2DataListValidateType = "AUTO_VERIFICATION"
 	ALL_VERIFICATION_ClueSmartphoneGetV2DataListValidateType  ClueSmartphoneGetV2DataListValidateType = "ALL_VERIFICATION"
+	CLUE_PRIORITY_ClueSmartphoneGetV2DataListValidateType     ClueSmartphoneGetV2DataListValidateType = "CLUE_PRIORITY"
 )
 
 // All allowed values of ClueSmartphoneGetV2DataListValidateType enum
 var AllowedClueSmartphoneGetV2DataListValidateTypeEnumValues = []ClueSmartphoneGetV2DataListValidateType{
-	"AUTO_VERIFICATION",
-	"NONE_VERIFICATION",
 	"VALIDITY_PRIORITY",
-	"CLUE_PRIORITY",
+	"NONE_VERIFICATION",
+	"AUTO_VERIFICATION",
 	"ALL_VERIFICATION",
+	"CLUE_PRIORITY",
 }
 
 // NewClueSmartphoneGetV2DataListValidateTypeFromValue returns a pointer to a valid ClueSmartphoneGetV2DataListValidateType

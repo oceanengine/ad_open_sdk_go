@@ -19,18 +19,18 @@ type ToolsEstimateAudienceV2Ac string
 
 // List of tools_estimate_audience_v2_ac
 const (
-	Enum_5_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "5G"
 	WIFI_ToolsEstimateAudienceV2Ac     ToolsEstimateAudienceV2Ac = "WIFI"
 	Enum_3_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "3G"
+	Enum_5_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "5G"
 	Enum_2_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "2G"
 	Enum_4_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "4G"
 )
 
 // All allowed values of ToolsEstimateAudienceV2Ac enum
 var AllowedToolsEstimateAudienceV2AcEnumValues = []ToolsEstimateAudienceV2Ac{
-	"5G",
 	"WIFI",
 	"3G",
+	"5G",
 	"2G",
 	"4G",
 }

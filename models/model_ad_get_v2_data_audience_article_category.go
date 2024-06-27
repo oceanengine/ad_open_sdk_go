@@ -19,100 +19,100 @@ type AdGetV2DataAudienceArticleCategory string
 
 // List of ad_get_v2_data_audience_article_category
 const (
-	DESIGN_AdGetV2DataAudienceArticleCategory        AdGetV2DataAudienceArticleCategory = "DESIGN"
-	HISTORY_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "HISTORY"
-	GRADUATES_AdGetV2DataAudienceArticleCategory     AdGetV2DataAudienceArticleCategory = "GRADUATES"
-	RUMOR_CRACKER_AdGetV2DataAudienceArticleCategory AdGetV2DataAudienceArticleCategory = "RUMOR_CRACKER"
-	TRAVEL_AdGetV2DataAudienceArticleCategory        AdGetV2DataAudienceArticleCategory = "TRAVEL"
-	TIPS_AdGetV2DataAudienceArticleCategory          AdGetV2DataAudienceArticleCategory = "TIPS"
-	GOVERNMENT_AdGetV2DataAudienceArticleCategory    AdGetV2DataAudienceArticleCategory = "GOVERNMENT"
-	HEALTH_AdGetV2DataAudienceArticleCategory        AdGetV2DataAudienceArticleCategory = "HEALTH"
-	SOCIETY_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "SOCIETY"
-	LOCAL_AdGetV2DataAudienceArticleCategory         AdGetV2DataAudienceArticleCategory = "LOCAL"
-	BUSINESS_AdGetV2DataAudienceArticleCategory      AdGetV2DataAudienceArticleCategory = "BUSINESS"
-	ANIMATION_AdGetV2DataAudienceArticleCategory     AdGetV2DataAudienceArticleCategory = "ANIMATION"
-	INTERNATIONAL_AdGetV2DataAudienceArticleCategory AdGetV2DataAudienceArticleCategory = "INTERNATIONAL"
-	CARS_AdGetV2DataAudienceArticleCategory          AdGetV2DataAudienceArticleCategory = "CARS"
-	SCIENCE_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "SCIENCE"
-	CULTURE_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "CULTURE"
-	SPORTS_AdGetV2DataAudienceArticleCategory        AdGetV2DataAudienceArticleCategory = "SPORTS"
-	GOURMET_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "GOURMET"
-	HOME_AdGetV2DataAudienceArticleCategory          AdGetV2DataAudienceArticleCategory = "HOME"
-	FASHION_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "FASHION"
-	FINANCE_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "FINANCE"
-	WEIGHT_LOSING_AdGetV2DataAudienceArticleCategory AdGetV2DataAudienceArticleCategory = "WEIGHT_LOSING"
-	PHOTOGRAPHY_AdGetV2DataAudienceArticleCategory   AdGetV2DataAudienceArticleCategory = "PHOTOGRAPHY"
-	COLLECTION_AdGetV2DataAudienceArticleCategory    AdGetV2DataAudienceArticleCategory = "COLLECTION"
-	GAMES_AdGetV2DataAudienceArticleCategory         AdGetV2DataAudienceArticleCategory = "GAMES"
+	ENTERTAINMENT_AdGetV2DataAudienceArticleCategory AdGetV2DataAudienceArticleCategory = "ENTERTAINMENT"
 	WORKPLACE_AdGetV2DataAudienceArticleCategory     AdGetV2DataAudienceArticleCategory = "WORKPLACE"
-	AMUSEMENT_AdGetV2DataAudienceArticleCategory     AdGetV2DataAudienceArticleCategory = "AMUSEMENT"
-	REGIMEN_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "REGIMEN"
-	ESSAY_AdGetV2DataAudienceArticleCategory         AdGetV2DataAudienceArticleCategory = "ESSAY"
+	TECHNOLOGY_AdGetV2DataAudienceArticleCategory    AdGetV2DataAudienceArticleCategory = "TECHNOLOGY"
+	EMOTION_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "EMOTION"
+	TRAVEL_AdGetV2DataAudienceArticleCategory        AdGetV2DataAudienceArticleCategory = "TRAVEL"
+	COLLECTION_AdGetV2DataAudienceArticleCategory    AdGetV2DataAudienceArticleCategory = "COLLECTION"
+	HOME_AdGetV2DataAudienceArticleCategory          AdGetV2DataAudienceArticleCategory = "HOME"
+	HISTORY_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "HISTORY"
+	CONSTELLATION_AdGetV2DataAudienceArticleCategory AdGetV2DataAudienceArticleCategory = "CONSTELLATION"
 	PETS_AdGetV2DataAudienceArticleCategory          AdGetV2DataAudienceArticleCategory = "PETS"
-	COMICS_AdGetV2DataAudienceArticleCategory        AdGetV2DataAudienceArticleCategory = "COMICS"
+	SOCIETY_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "SOCIETY"
+	WEIGHT_LOSING_AdGetV2DataAudienceArticleCategory AdGetV2DataAudienceArticleCategory = "WEIGHT_LOSING"
+	ESTATE_AdGetV2DataAudienceArticleCategory        AdGetV2DataAudienceArticleCategory = "ESTATE"
 	FREAK_AdGetV2DataAudienceArticleCategory         AdGetV2DataAudienceArticleCategory = "FREAK"
+	GOVERNMENT_AdGetV2DataAudienceArticleCategory    AdGetV2DataAudienceArticleCategory = "GOVERNMENT"
+	PARENTING_AdGetV2DataAudienceArticleCategory     AdGetV2DataAudienceArticleCategory = "PARENTING"
 	LAWS_AdGetV2DataAudienceArticleCategory          AdGetV2DataAudienceArticleCategory = "LAWS"
 	STORIES_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "STORIES"
-	PARENTING_AdGetV2DataAudienceArticleCategory     AdGetV2DataAudienceArticleCategory = "PARENTING"
-	TECHNOLOGY_AdGetV2DataAudienceArticleCategory    AdGetV2DataAudienceArticleCategory = "TECHNOLOGY"
-	ESTATE_AdGetV2DataAudienceArticleCategory        AdGetV2DataAudienceArticleCategory = "ESTATE"
-	EMOTION_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "EMOTION"
-	DIGITAL_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "DIGITAL"
-	CONSTELLATION_AdGetV2DataAudienceArticleCategory AdGetV2DataAudienceArticleCategory = "CONSTELLATION"
-	EXPLORE_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "EXPLORE"
+	COMICS_AdGetV2DataAudienceArticleCategory        AdGetV2DataAudienceArticleCategory = "COMICS"
+	ANIMATION_AdGetV2DataAudienceArticleCategory     AdGetV2DataAudienceArticleCategory = "ANIMATION"
 	MILITARY_AdGetV2DataAudienceArticleCategory      AdGetV2DataAudienceArticleCategory = "MILITARY"
-	ENTERTAINMENT_AdGetV2DataAudienceArticleCategory AdGetV2DataAudienceArticleCategory = "ENTERTAINMENT"
-	EDUCATION_AdGetV2DataAudienceArticleCategory     AdGetV2DataAudienceArticleCategory = "EDUCATION"
+	ESSAY_AdGetV2DataAudienceArticleCategory         AdGetV2DataAudienceArticleCategory = "ESSAY"
+	TIPS_AdGetV2DataAudienceArticleCategory          AdGetV2DataAudienceArticleCategory = "TIPS"
+	EXPLORE_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "EXPLORE"
+	PHOTOGRAPHY_AdGetV2DataAudienceArticleCategory   AdGetV2DataAudienceArticleCategory = "PHOTOGRAPHY"
+	CARS_AdGetV2DataAudienceArticleCategory          AdGetV2DataAudienceArticleCategory = "CARS"
+	REGIMEN_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "REGIMEN"
+	GOURMET_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "GOURMET"
+	GAMES_AdGetV2DataAudienceArticleCategory         AdGetV2DataAudienceArticleCategory = "GAMES"
 	MOVIE_AdGetV2DataAudienceArticleCategory         AdGetV2DataAudienceArticleCategory = "MOVIE"
+	CULTURE_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "CULTURE"
+	SCIENCE_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "SCIENCE"
+	EDUCATION_AdGetV2DataAudienceArticleCategory     AdGetV2DataAudienceArticleCategory = "EDUCATION"
+	HEALTH_AdGetV2DataAudienceArticleCategory        AdGetV2DataAudienceArticleCategory = "HEALTH"
+	AMUSEMENT_AdGetV2DataAudienceArticleCategory     AdGetV2DataAudienceArticleCategory = "AMUSEMENT"
+	RUMOR_CRACKER_AdGetV2DataAudienceArticleCategory AdGetV2DataAudienceArticleCategory = "RUMOR_CRACKER"
+	GRADUATES_AdGetV2DataAudienceArticleCategory     AdGetV2DataAudienceArticleCategory = "GRADUATES"
+	BUSINESS_AdGetV2DataAudienceArticleCategory      AdGetV2DataAudienceArticleCategory = "BUSINESS"
+	INTERNATIONAL_AdGetV2DataAudienceArticleCategory AdGetV2DataAudienceArticleCategory = "INTERNATIONAL"
+	FASHION_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "FASHION"
+	DIGITAL_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "DIGITAL"
+	LOCAL_AdGetV2DataAudienceArticleCategory         AdGetV2DataAudienceArticleCategory = "LOCAL"
+	FINANCE_AdGetV2DataAudienceArticleCategory       AdGetV2DataAudienceArticleCategory = "FINANCE"
+	SPORTS_AdGetV2DataAudienceArticleCategory        AdGetV2DataAudienceArticleCategory = "SPORTS"
+	DESIGN_AdGetV2DataAudienceArticleCategory        AdGetV2DataAudienceArticleCategory = "DESIGN"
 )
 
 // All allowed values of AdGetV2DataAudienceArticleCategory enum
 var AllowedAdGetV2DataAudienceArticleCategoryEnumValues = []AdGetV2DataAudienceArticleCategory{
-	"DESIGN",
-	"HISTORY",
-	"GRADUATES",
-	"RUMOR_CRACKER",
-	"TRAVEL",
-	"TIPS",
-	"GOVERNMENT",
-	"HEALTH",
-	"SOCIETY",
-	"LOCAL",
-	"BUSINESS",
-	"ANIMATION",
-	"INTERNATIONAL",
-	"CARS",
-	"SCIENCE",
-	"CULTURE",
-	"SPORTS",
-	"GOURMET",
-	"HOME",
-	"FASHION",
-	"FINANCE",
-	"WEIGHT_LOSING",
-	"PHOTOGRAPHY",
-	"COLLECTION",
-	"GAMES",
+	"ENTERTAINMENT",
 	"WORKPLACE",
-	"AMUSEMENT",
-	"REGIMEN",
-	"ESSAY",
+	"TECHNOLOGY",
+	"EMOTION",
+	"TRAVEL",
+	"COLLECTION",
+	"HOME",
+	"HISTORY",
+	"CONSTELLATION",
 	"PETS",
-	"COMICS",
+	"SOCIETY",
+	"WEIGHT_LOSING",
+	"ESTATE",
 	"FREAK",
+	"GOVERNMENT",
+	"PARENTING",
 	"LAWS",
 	"STORIES",
-	"PARENTING",
-	"TECHNOLOGY",
-	"ESTATE",
-	"EMOTION",
-	"DIGITAL",
-	"CONSTELLATION",
-	"EXPLORE",
+	"COMICS",
+	"ANIMATION",
 	"MILITARY",
-	"ENTERTAINMENT",
-	"EDUCATION",
+	"ESSAY",
+	"TIPS",
+	"EXPLORE",
+	"PHOTOGRAPHY",
+	"CARS",
+	"REGIMEN",
+	"GOURMET",
+	"GAMES",
 	"MOVIE",
+	"CULTURE",
+	"SCIENCE",
+	"EDUCATION",
+	"HEALTH",
+	"AMUSEMENT",
+	"RUMOR_CRACKER",
+	"GRADUATES",
+	"BUSINESS",
+	"INTERNATIONAL",
+	"FASHION",
+	"DIGITAL",
+	"LOCAL",
+	"FINANCE",
+	"SPORTS",
+	"DESIGN",
 }
 
 // NewAdGetV2DataAudienceArticleCategoryFromValue returns a pointer to a valid AdGetV2DataAudienceArticleCategory

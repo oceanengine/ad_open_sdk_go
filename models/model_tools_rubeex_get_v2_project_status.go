@@ -19,16 +19,16 @@ type ToolsRubeexGetV2ProjectStatus string
 
 // List of tools_rubeex_get_v2_project_status
 const (
+	INITAL_ToolsRubeexGetV2ProjectStatus  ToolsRubeexGetV2ProjectStatus = "INITAL"
 	DELETED_ToolsRubeexGetV2ProjectStatus ToolsRubeexGetV2ProjectStatus = "DELETED"
 	ENABLED_ToolsRubeexGetV2ProjectStatus ToolsRubeexGetV2ProjectStatus = "ENABLED"
-	INITAL_ToolsRubeexGetV2ProjectStatus  ToolsRubeexGetV2ProjectStatus = "INITAL"
 )
 
 // All allowed values of ToolsRubeexGetV2ProjectStatus enum
 var AllowedToolsRubeexGetV2ProjectStatusEnumValues = []ToolsRubeexGetV2ProjectStatus{
+	"INITAL",
 	"DELETED",
 	"ENABLED",
-	"INITAL",
 }
 
 // NewToolsRubeexGetV2ProjectStatusFromValue returns a pointer to a valid ToolsRubeexGetV2ProjectStatus

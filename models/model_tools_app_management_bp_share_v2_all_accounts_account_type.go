@@ -20,15 +20,15 @@ type ToolsAppManagementBpShareV2AllAccountsAccountType string
 // List of tools_app_management_bp_share_v2_all_accounts_account_type
 const (
 	BP_ToolsAppManagementBpShareV2AllAccountsAccountType   ToolsAppManagementBpShareV2AllAccountsAccountType = "BP"
-	AD_ToolsAppManagementBpShareV2AllAccountsAccountType   ToolsAppManagementBpShareV2AllAccountsAccountType = "AD"
 	STAR_ToolsAppManagementBpShareV2AllAccountsAccountType ToolsAppManagementBpShareV2AllAccountsAccountType = "STAR"
+	AD_ToolsAppManagementBpShareV2AllAccountsAccountType   ToolsAppManagementBpShareV2AllAccountsAccountType = "AD"
 )
 
 // All allowed values of ToolsAppManagementBpShareV2AllAccountsAccountType enum
 var AllowedToolsAppManagementBpShareV2AllAccountsAccountTypeEnumValues = []ToolsAppManagementBpShareV2AllAccountsAccountType{
 	"BP",
-	"AD",
 	"STAR",
+	"AD",
 }
 
 // NewToolsAppManagementBpShareV2AllAccountsAccountTypeFromValue returns a pointer to a valid ToolsAppManagementBpShareV2AllAccountsAccountType

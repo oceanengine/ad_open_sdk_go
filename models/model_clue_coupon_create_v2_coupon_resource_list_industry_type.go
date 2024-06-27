@@ -19,22 +19,22 @@ type ClueCouponCreateV2CouponResourceListIndustryType string
 
 // List of clue_coupon_create_v2_coupon_resource_list_industry_type
 const (
-	FINANCIAL_ClueCouponCreateV2CouponResourceListIndustryType     ClueCouponCreateV2CouponResourceListIndustryType = "FINANCIAL"
-	GAME_ClueCouponCreateV2CouponResourceListIndustryType          ClueCouponCreateV2CouponResourceListIndustryType = "GAME"
+	ENTERTAINMENT_ClueCouponCreateV2CouponResourceListIndustryType ClueCouponCreateV2CouponResourceListIndustryType = "ENTERTAINMENT"
+	FOOD_ClueCouponCreateV2CouponResourceListIndustryType          ClueCouponCreateV2CouponResourceListIndustryType = "FOOD"
 	OTHER_ClueCouponCreateV2CouponResourceListIndustryType         ClueCouponCreateV2CouponResourceListIndustryType = "OTHER"
 	TICKET_ClueCouponCreateV2CouponResourceListIndustryType        ClueCouponCreateV2CouponResourceListIndustryType = "TICKET"
-	FOOD_ClueCouponCreateV2CouponResourceListIndustryType          ClueCouponCreateV2CouponResourceListIndustryType = "FOOD"
-	ENTERTAINMENT_ClueCouponCreateV2CouponResourceListIndustryType ClueCouponCreateV2CouponResourceListIndustryType = "ENTERTAINMENT"
+	GAME_ClueCouponCreateV2CouponResourceListIndustryType          ClueCouponCreateV2CouponResourceListIndustryType = "GAME"
+	FINANCIAL_ClueCouponCreateV2CouponResourceListIndustryType     ClueCouponCreateV2CouponResourceListIndustryType = "FINANCIAL"
 )
 
 // All allowed values of ClueCouponCreateV2CouponResourceListIndustryType enum
 var AllowedClueCouponCreateV2CouponResourceListIndustryTypeEnumValues = []ClueCouponCreateV2CouponResourceListIndustryType{
-	"FINANCIAL",
-	"GAME",
+	"ENTERTAINMENT",
+	"FOOD",
 	"OTHER",
 	"TICKET",
-	"FOOD",
-	"ENTERTAINMENT",
+	"GAME",
+	"FINANCIAL",
 }
 
 // NewClueCouponCreateV2CouponResourceListIndustryTypeFromValue returns a pointer to a valid ClueCouponCreateV2CouponResourceListIndustryType
