@@ -207,7 +207,6 @@ func main() {
 Class | Method | HTTP request
 ------------ | ------------- | -------------
 *AccountFundGetV30Api* | **OpenApiV30AccountFundGetGet** | **Get** /open_api/v3.0/account/fund/get/
-*AdConvertOptimizedTargetGetV30Api* | **OpenApiV30AdConvertOptimizedTargetGetGet** | **Get** /open_api/v3.0/ad_convert/optimized_target/get/
 *AdCostProtectStatusGetV2Api* | **OpenApi2AdCostProtectStatusGetGet** | **Get** /open_api/2/ad/cost_protect_status/get/
 *AdGetV2Api* | **OpenApi2AdGetGet** | **Get** /open_api/2/ad/get/
 *AdRejectReasonV2Api* | **OpenApi2AdRejectReasonGet** | **Get** /open_api/2/ad/reject_reason/

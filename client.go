@@ -28,10 +28,6 @@ func (c *Client) AccountFundGetV30Api() *api.AccountFundGetV30ApiService {
 	return c.ApiClient.AccountFundGetV30Api
 }
 
-func (c *Client) AdConvertOptimizedTargetGetV30Api() *api.AdConvertOptimizedTargetGetV30ApiService {
-	return c.ApiClient.AdConvertOptimizedTargetGetV30Api
-}
-
 func (c *Client) AdCostProtectStatusGetV2Api() *api.AdCostProtectStatusGetV2ApiService {
 	return c.ApiClient.AdCostProtectStatusGetV2Api
 }
