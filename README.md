@@ -215,13 +215,6 @@ Class | Method | HTTP request
 *AdUpdateBidV2Api* | **OpenApi2AdUpdateBidPost** | **Post** /open_api/2/ad/update/bid/
 *AdUpdateBudgetV2Api* | **OpenApi2AdUpdateBudgetPost** | **Post** /open_api/2/ad/update/budget/
 *AdUpdateStatusV2Api* | **OpenApi2AdUpdateStatusPost** | **Post** /open_api/2/ad/update/status/
-*AdlabGroupCreateV30Api* | **OpenApiV30AdlabGroupCreatePost** | **Post** /open_api/v3.0/adlab/group/create/
-*AdlabGroupDetailV30Api* | **OpenApiV30AdlabGroupDetailGet** | **Get** /open_api/v3.0/adlab/group/detail/
-*AdlabGroupListV30Api* | **OpenApiV30AdlabGroupListGet** | **Get** /open_api/v3.0/adlab/group/list/
-*AdlabGroupUpdateBudgetV30Api* | **OpenApiV30AdlabGroupUpdateBudgetPost** | **Post** /open_api/v3.0/adlab/group/update_budget/
-*AdlabGroupUpdateStatusV30Api* | **OpenApiV30AdlabGroupUpdateStatusPost** | **Post** /open_api/v3.0/adlab/group/update_status/
-*AdlabGroupUpdateV30Api* | **OpenApiV30AdlabGroupUpdatePost** | **Post** /open_api/v3.0/adlab/group/update/
-*AdlabGroupsDeleteV30Api* | **OpenApiV30AdlabGroupsDeletePost** | **Post** /open_api/v3.0/adlab/groups/delete/
 *AdvConvertOleConvertV2Api* | **OpenApi2AdvConvertOleConvertPost** | **Post** /open_api/2/adv_convert/ole/convert/
 *AdvertiserAttachmentUploadV30Api* | **OpenApiV30AdvertiserAttachmentUploadPost** | **Post** /open_api/v3.0/advertiser/attachment/upload/
 *AdvertiserAvatarGetV2Api* | **OpenApi2AdvertiserAvatarGetGet** | **Get** /open_api/2/advertiser/avatar/get/
@@ -322,7 +315,6 @@ Class | Method | HTTP request
 *ClueFormDetailV2Api* | **OpenApi2ClueFormDetailGet** | **Get** /open_api/2/clue/form/detail/
 *ClueFormListV2Api* | **OpenApi2ClueFormListGet** | **Get** /open_api/2/clue/form/list/
 *ClueFormUpdateV2Api* | **OpenApi2ClueFormUpdatePost** | **Post** /open_api/2/clue/form/update/
-*CluePackageUploadV2Api* | **OpenApi2CluePackageUploadPost** | **Post** /open_api/2/clue/package/upload/
 *ClueSmartphoneCreateV2Api* | **OpenApi2ClueSmartphoneCreatePost** | **Post** /open_api/2/clue/smartphone/create/
 *ClueSmartphoneDeleteV2Api* | **OpenApi2ClueSmartphoneDeletePost** | **Post** /open_api/2/clue/smartphone/delete/
 *ClueSmartphoneGetV2Api* | **OpenApi2ClueSmartphoneGetGet** | **Get** /open_api/2/clue/smartphone/get/
@@ -335,7 +327,6 @@ Class | Method | HTTP request
 *CreativeAdMetricsV2Api* | **OpenApi2CreativeAdMetricsGet** | **Get** /open_api/2/creative/ad/metrics/
 *CreativeAutoGenerateConfigGetV2Api* | **OpenApi2CreativeAutoGenerateConfigGetGet** | **Get** /open_api/2/creative/auto_generate_config/get/
 *CreativeCustomCreativeCreateV2Api* | **OpenApi2CreativeCustomCreativeCreatePost** | **Post** /open_api/2/creative/custom_creative/create/
-*CreativeCustomCreativeDeleteV2Api* | **OpenApi2CreativeCustomCreativeDeletePost** | **Post** /open_api/2/creative/custom_creative/delete/
 *CreativeCustomCreativeUpdateV2Api* | **OpenApi2CreativeCustomCreativeUpdatePost** | **Post** /open_api/2/creative/custom_creative/update/
 *CreativeDetailGetV30Api* | **OpenApiV30CreativeDetailGetGet** | **Get** /open_api/v3.0/creative/detail/get/
 *CreativeGetV2Api* | **OpenApi2CreativeGetGet** | **Get** /open_api/2/creative/get/
@@ -343,7 +334,6 @@ Class | Method | HTTP request
 *CreativeProceduralCreativeCreateV2Api* | **OpenApi2CreativeProceduralCreativeCreatePost** | **Post** /open_api/2/creative/procedural_creative/create/
 *CreativeProceduralCreativeUpdateV2Api* | **OpenApi2CreativeProceduralCreativeUpdatePost** | **Post** /open_api/2/creative/procedural_creative/update/
 *CreativeRejectReasonV2Api* | **OpenApi2CreativeRejectReasonGet** | **Get** /open_api/2/creative/reject_reason/
-*CreativeStatusUpdateV2V2Api* | **OpenApi2CreativeStatusUpdateV2Post** | **Post** /open_api/2/creative/status/update_v2/
 *CreativeStrategyListV2Api* | **OpenApi2CreativeStrategyListGet** | **Get** /open_api/2/creative/strategy/list/
 *CustomerCenterAdvertiserCopyV2Api* | **OpenApi2CustomerCenterAdvertiserCopyPost** | **Post** /open_api/2/customer_center/advertiser/copy/
 *CustomerCenterAdvertiserListV2Api* | **OpenApi2CustomerCenterAdvertiserListGet** | **Get** /open_api/2/customer_center/advertiser/list/
@@ -405,7 +395,6 @@ Class | Method | HTTP request
 *EventManagerDeepBidTypeGetV30Api* | **OpenApiV30EventManagerDeepBidTypeGetGet** | **Get** /open_api/v3.0/event_manager/deep_bid_type/get/
 *EventManagerEventConfigsGetV2Api* | **OpenApi2EventManagerEventConfigsGetGet** | **Get** /open_api/2/event_manager/event_configs/get/
 *EventManagerEventsCreateV2Api* | **OpenApi2EventManagerEventsCreatePost** | **Post** /open_api/2/event_manager/events/create/
-*EventManagerOfflineDataCreateV2Api* | **OpenApi2EventManagerOfflineDataCreatePost** | **Post** /open_api/2/event_manager/offline_data/create/
 *EventManagerOptimizedGoalGetV2V30Api* | **OpenApiV30EventManagerOptimizedGoalGetV2Get** | **Get** /open_api/v3.0/event_manager/optimized_goal/get_v2/
 *EventManagerShareCancelV30Api* | **OpenApiV30EventManagerShareCancelPost** | **Post** /open_api/v3.0/event_manager/share/cancel/
 *EventManagerShareGetV30Api* | **OpenApiV30EventManagerShareGetGet** | **Get** /open_api/v3.0/event_manager/share/get/
@@ -422,7 +411,6 @@ Class | Method | HTTP request
 *FileImageDeleteV30Api* | **OpenApiV30FileImageDeletePost** | **Post** /open_api/v3.0/file/image/delete/
 *FileImageGetV2Api* | **OpenApi2FileImageGetGet** | **Get** /open_api/2/file/image/get/
 *FileMaterialAttributesListV2Api* | **OpenApi2FileMaterialAttributesListGet** | **Get** /open_api/2/file/material_attributes/list/
-*FileMaterialAuditResultGetV2Api* | **OpenApi2FileMaterialAuditResultGetGet** | **Get** /open_api/2/file/material/audit_result/get/
 *FileMaterialBindV2Api* | **OpenApi2FileMaterialBindPost** | **Post** /open_api/2/file/material/bind/
 *FileMaterialDetailV2Api* | **OpenApi2FileMaterialDetailGet** | **Get** /open_api/2/file/material/detail/
 *FileMaterialListV2Api* | **OpenApi2FileMaterialListGet** | **Get** /open_api/2/file/material/list/
@@ -759,23 +747,14 @@ Class | Method | HTTP request
 *ToolsAbTestInfoGetV2Api* | **OpenApi2ToolsAbTestInfoGetGet** | **Get** /open_api/2/tools/ab_test_info/get/
 *ToolsAbTestListGetV2Api* | **OpenApi2ToolsAbTestListGetGet** | **Get** /open_api/2/tools/ab_test_list/get/
 *ToolsAbTestUpdateV2Api* | **OpenApi2ToolsAbTestUpdatePost** | **Post** /open_api/2/tools/ab_test/update/
-*ToolsAdConvertDeepbidReadV2Api* | **OpenApi2ToolsAdConvertDeepbidReadGet** | **Get** /open_api/2/tools/ad_convert/deepbid/read/
-*ToolsAdConvertOptimizedTargetGetV2Api* | **OpenApi2ToolsAdConvertOptimizedTargetGetGet** | **Get** /open_api/2/tools/ad_convert/optimized_target/get/
-*ToolsAdConvertQueryV2Api* | **OpenApi2ToolsAdConvertQueryGet** | **Get** /open_api/2/tools/ad_convert/query/
-*ToolsAdConvertTrackUrlUpdateV2Api* | **OpenApi2ToolsAdConvertTrackUrlUpdatePost** | **Post** /open_api/2/tools/ad_convert/track_url/update/
 *ToolsAdPreviewQrcodeGetV30Api* | **OpenApiV30ToolsAdPreviewQrcodeGetGet** | **Get** /open_api/v3.0/tools/ad_preview/qrcode_get/
-*ToolsAdRaiseEstimateGetV2Api* | **OpenApi2ToolsAdRaiseEstimateGetGet** | **Get** /open_api/2/tools/ad_raise_estimate/get/
-*ToolsAdRaiseResultGetV2V2Api* | **OpenApi2ToolsAdRaiseResultGetV2Get** | **Get** /open_api/2/tools/ad_raise_result/get_v2/
-*ToolsAdRaiseSetV2Api* | **OpenApi2ToolsAdRaiseSetPost** | **Post** /open_api/2/tools/ad_raise/set/
 *ToolsAdRaiseStatusGetV2Api* | **OpenApi2ToolsAdRaiseStatusGetGet** | **Get** /open_api/2/tools/ad_raise_status/get/
 *ToolsAdRaiseVersionGetV2Api* | **OpenApi2ToolsAdRaiseVersionGetGet** | **Get** /open_api/2/tools/ad_raise_version/get/
-*ToolsAdStatExtraInfoGetV2Api* | **OpenApi2ToolsAdStatExtraInfoGetGet** | **Get** /open_api/2/tools/ad_stat_extra_info/get/
 *ToolsAdminInfoV2Api* | **OpenApi2ToolsAdminInfoGet** | **Get** /open_api/2/tools/admin/info/
 *ToolsAdvertiserStoreSearchV2Api* | **OpenApi2ToolsAdvertiserStoreSearchGet** | **Get** /open_api/2/tools/advertiser_store/search/
 *ToolsAipThirdSiteCreateV2Api* | **OpenApi2ToolsAipThirdSiteCreatePost** | **Post** /open_api/2/tools/aip_third_site/create/
 *ToolsAipThirdSiteGetV2Api* | **OpenApi2ToolsAipThirdSiteGetGet** | **Get** /open_api/2/tools/aip_third_site/get/
 *ToolsAipThirdSiteUpdateV2Api* | **OpenApi2ToolsAipThirdSiteUpdatePost** | **Post** /open_api/2/tools/aip_third_site/update/
-*ToolsAppAuthGetV2Api* | **OpenApi2ToolsAppAuthGetGet** | **Get** /open_api/2/tools/app/auth/get/
 *ToolsAppIosListV2Api* | **OpenApi2ToolsAppIosListGet** | **Get** /open_api/2/tools/app/ios/list/
 *ToolsAppManagementAndroidAppListV2Api* | **OpenApi2ToolsAppManagementAndroidAppListGet** | **Get** /open_api/2/tools/app_management/android_app/list/
 *ToolsAppManagementAndroidBasicPackageGetV2Api* | **OpenApi2ToolsAppManagementAndroidBasicPackageGetGet** | **Get** /open_api/2/tools/app_management/android_basic_package/get/
@@ -974,7 +953,6 @@ Class | Method | HTTP request
 *ToolsUnionFlowPackageUpdateV2Api* | **OpenApi2ToolsUnionFlowPackageUpdatePost** | **Post** /open_api/2/tools/union/flow_package/update/
 *ToolsVideoCheckAvailableAnchorV2Api* | **OpenApi2ToolsVideoCheckAvailableAnchorGet** | **Get** /open_api/2/tools/video/check_available_anchor/
 *ToolsVideoCoverSuggestV2Api* | **OpenApi2ToolsVideoCoverSuggestGet** | **Get** /open_api/2/tools/video_cover/suggest/
-*ToolsVideoPredictV2Api* | **OpenApi2ToolsVideoPredictGet** | **Get** /open_api/2/tools/video/predict/
 *ToolsWechatAppletCreateV30Api* | **OpenApiV30ToolsWechatAppletCreatePost** | **Post** /open_api/v3.0/tools/wechat_applet/create/
 *ToolsWechatAppletListV30Api* | **OpenApiV30ToolsWechatAppletListGet** | **Get** /open_api/v3.0/tools/wechat_applet/list/
 *ToolsWechatAppletUpdateV30Api* | **OpenApiV30ToolsWechatAppletUpdatePost** | **Post** /open_api/v3.0/tools/wechat_applet/update/

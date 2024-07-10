@@ -60,34 +60,6 @@ func (c *Client) AdUpdateStatusV2Api() *api.AdUpdateStatusV2ApiService {
 	return c.ApiClient.AdUpdateStatusV2Api
 }
 
-func (c *Client) AdlabGroupCreateV30Api() *api.AdlabGroupCreateV30ApiService {
-	return c.ApiClient.AdlabGroupCreateV30Api
-}
-
-func (c *Client) AdlabGroupDetailV30Api() *api.AdlabGroupDetailV30ApiService {
-	return c.ApiClient.AdlabGroupDetailV30Api
-}
-
-func (c *Client) AdlabGroupListV30Api() *api.AdlabGroupListV30ApiService {
-	return c.ApiClient.AdlabGroupListV30Api
-}
-
-func (c *Client) AdlabGroupUpdateBudgetV30Api() *api.AdlabGroupUpdateBudgetV30ApiService {
-	return c.ApiClient.AdlabGroupUpdateBudgetV30Api
-}
-
-func (c *Client) AdlabGroupUpdateStatusV30Api() *api.AdlabGroupUpdateStatusV30ApiService {
-	return c.ApiClient.AdlabGroupUpdateStatusV30Api
-}
-
-func (c *Client) AdlabGroupUpdateV30Api() *api.AdlabGroupUpdateV30ApiService {
-	return c.ApiClient.AdlabGroupUpdateV30Api
-}
-
-func (c *Client) AdlabGroupsDeleteV30Api() *api.AdlabGroupsDeleteV30ApiService {
-	return c.ApiClient.AdlabGroupsDeleteV30Api
-}
-
 func (c *Client) AdvConvertOleConvertV2Api() *api.AdvConvertOleConvertV2ApiService {
 	return c.ApiClient.AdvConvertOleConvertV2Api
 }
@@ -488,10 +460,6 @@ func (c *Client) ClueFormUpdateV2Api() *api.ClueFormUpdateV2ApiService {
 	return c.ApiClient.ClueFormUpdateV2Api
 }
 
-func (c *Client) CluePackageUploadV2Api() *api.CluePackageUploadV2ApiService {
-	return c.ApiClient.CluePackageUploadV2Api
-}
-
 func (c *Client) ClueSmartphoneCreateV2Api() *api.ClueSmartphoneCreateV2ApiService {
 	return c.ApiClient.ClueSmartphoneCreateV2Api
 }
@@ -540,10 +508,6 @@ func (c *Client) CreativeCustomCreativeCreateV2Api() *api.CreativeCustomCreative
 	return c.ApiClient.CreativeCustomCreativeCreateV2Api
 }
 
-func (c *Client) CreativeCustomCreativeDeleteV2Api() *api.CreativeCustomCreativeDeleteV2ApiService {
-	return c.ApiClient.CreativeCustomCreativeDeleteV2Api
-}
-
 func (c *Client) CreativeCustomCreativeUpdateV2Api() *api.CreativeCustomCreativeUpdateV2ApiService {
 	return c.ApiClient.CreativeCustomCreativeUpdateV2Api
 }
@@ -570,10 +534,6 @@ func (c *Client) CreativeProceduralCreativeUpdateV2Api() *api.CreativeProcedural
 
 func (c *Client) CreativeRejectReasonV2Api() *api.CreativeRejectReasonV2ApiService {
 	return c.ApiClient.CreativeRejectReasonV2Api
-}
-
-func (c *Client) CreativeStatusUpdateV2V2Api() *api.CreativeStatusUpdateV2V2ApiService {
-	return c.ApiClient.CreativeStatusUpdateV2V2Api
 }
 
 func (c *Client) CreativeStrategyListV2Api() *api.CreativeStrategyListV2ApiService {
@@ -820,10 +780,6 @@ func (c *Client) EventManagerEventsCreateV2Api() *api.EventManagerEventsCreateV2
 	return c.ApiClient.EventManagerEventsCreateV2Api
 }
 
-func (c *Client) EventManagerOfflineDataCreateV2Api() *api.EventManagerOfflineDataCreateV2ApiService {
-	return c.ApiClient.EventManagerOfflineDataCreateV2Api
-}
-
 func (c *Client) EventManagerOptimizedGoalGetV2V30Api() *api.EventManagerOptimizedGoalGetV2V30ApiService {
 	return c.ApiClient.EventManagerOptimizedGoalGetV2V30Api
 }
@@ -886,10 +842,6 @@ func (c *Client) FileImageGetV2Api() *api.FileImageGetV2ApiService {
 
 func (c *Client) FileMaterialAttributesListV2Api() *api.FileMaterialAttributesListV2ApiService {
 	return c.ApiClient.FileMaterialAttributesListV2Api
-}
-
-func (c *Client) FileMaterialAuditResultGetV2Api() *api.FileMaterialAuditResultGetV2ApiService {
-	return c.ApiClient.FileMaterialAuditResultGetV2Api
 }
 
 func (c *Client) FileMaterialBindV2Api() *api.FileMaterialBindV2ApiService {
@@ -2236,36 +2188,8 @@ func (c *Client) ToolsAbTestUpdateV2Api() *api.ToolsAbTestUpdateV2ApiService {
 	return c.ApiClient.ToolsAbTestUpdateV2Api
 }
 
-func (c *Client) ToolsAdConvertDeepbidReadV2Api() *api.ToolsAdConvertDeepbidReadV2ApiService {
-	return c.ApiClient.ToolsAdConvertDeepbidReadV2Api
-}
-
-func (c *Client) ToolsAdConvertOptimizedTargetGetV2Api() *api.ToolsAdConvertOptimizedTargetGetV2ApiService {
-	return c.ApiClient.ToolsAdConvertOptimizedTargetGetV2Api
-}
-
-func (c *Client) ToolsAdConvertQueryV2Api() *api.ToolsAdConvertQueryV2ApiService {
-	return c.ApiClient.ToolsAdConvertQueryV2Api
-}
-
-func (c *Client) ToolsAdConvertTrackUrlUpdateV2Api() *api.ToolsAdConvertTrackUrlUpdateV2ApiService {
-	return c.ApiClient.ToolsAdConvertTrackUrlUpdateV2Api
-}
-
 func (c *Client) ToolsAdPreviewQrcodeGetV30Api() *api.ToolsAdPreviewQrcodeGetV30ApiService {
 	return c.ApiClient.ToolsAdPreviewQrcodeGetV30Api
-}
-
-func (c *Client) ToolsAdRaiseEstimateGetV2Api() *api.ToolsAdRaiseEstimateGetV2ApiService {
-	return c.ApiClient.ToolsAdRaiseEstimateGetV2Api
-}
-
-func (c *Client) ToolsAdRaiseResultGetV2V2Api() *api.ToolsAdRaiseResultGetV2V2ApiService {
-	return c.ApiClient.ToolsAdRaiseResultGetV2V2Api
-}
-
-func (c *Client) ToolsAdRaiseSetV2Api() *api.ToolsAdRaiseSetV2ApiService {
-	return c.ApiClient.ToolsAdRaiseSetV2Api
 }
 
 func (c *Client) ToolsAdRaiseStatusGetV2Api() *api.ToolsAdRaiseStatusGetV2ApiService {
@@ -2274,10 +2198,6 @@ func (c *Client) ToolsAdRaiseStatusGetV2Api() *api.ToolsAdRaiseStatusGetV2ApiSer
 
 func (c *Client) ToolsAdRaiseVersionGetV2Api() *api.ToolsAdRaiseVersionGetV2ApiService {
 	return c.ApiClient.ToolsAdRaiseVersionGetV2Api
-}
-
-func (c *Client) ToolsAdStatExtraInfoGetV2Api() *api.ToolsAdStatExtraInfoGetV2ApiService {
-	return c.ApiClient.ToolsAdStatExtraInfoGetV2Api
 }
 
 func (c *Client) ToolsAdminInfoV2Api() *api.ToolsAdminInfoV2ApiService {
@@ -2298,10 +2218,6 @@ func (c *Client) ToolsAipThirdSiteGetV2Api() *api.ToolsAipThirdSiteGetV2ApiServi
 
 func (c *Client) ToolsAipThirdSiteUpdateV2Api() *api.ToolsAipThirdSiteUpdateV2ApiService {
 	return c.ApiClient.ToolsAipThirdSiteUpdateV2Api
-}
-
-func (c *Client) ToolsAppAuthGetV2Api() *api.ToolsAppAuthGetV2ApiService {
-	return c.ApiClient.ToolsAppAuthGetV2Api
 }
 
 func (c *Client) ToolsAppIosListV2Api() *api.ToolsAppIosListV2ApiService {
@@ -3094,10 +3010,6 @@ func (c *Client) ToolsVideoCheckAvailableAnchorV2Api() *api.ToolsVideoCheckAvail
 
 func (c *Client) ToolsVideoCoverSuggestV2Api() *api.ToolsVideoCoverSuggestV2ApiService {
 	return c.ApiClient.ToolsVideoCoverSuggestV2Api
-}
-
-func (c *Client) ToolsVideoPredictV2Api() *api.ToolsVideoPredictV2ApiService {
-	return c.ApiClient.ToolsVideoPredictV2Api
 }
 
 func (c *Client) ToolsWechatAppletCreateV30Api() *api.ToolsWechatAppletCreateV30ApiService {
