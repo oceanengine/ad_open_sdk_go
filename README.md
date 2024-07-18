@@ -324,13 +324,10 @@ Class | Method | HTTP request
 *ClueWechatInstanceListV2Api* | **OpenApi2ClueWechatInstanceListGet** | **Get** /open_api/2/clue/wechat_instance/list/
 *ClueWechatInstanceUpdateV2Api* | **OpenApi2ClueWechatInstanceUpdatePost** | **Post** /open_api/2/clue/wechat_instance/update/
 *ClueWechatPoolListV2Api* | **OpenApi2ClueWechatPoolListGet** | **Get** /open_api/2/clue/wechat_pool/list/
-*CreativeAdMetricsV2Api* | **OpenApi2CreativeAdMetricsGet** | **Get** /open_api/2/creative/ad/metrics/
-*CreativeAutoGenerateConfigGetV2Api* | **OpenApi2CreativeAutoGenerateConfigGetGet** | **Get** /open_api/2/creative/auto_generate_config/get/
 *CreativeCustomCreativeCreateV2Api* | **OpenApi2CreativeCustomCreativeCreatePost** | **Post** /open_api/2/creative/custom_creative/create/
 *CreativeCustomCreativeUpdateV2Api* | **OpenApi2CreativeCustomCreativeUpdatePost** | **Post** /open_api/2/creative/custom_creative/update/
 *CreativeDetailGetV30Api* | **OpenApiV30CreativeDetailGetGet** | **Get** /open_api/v3.0/creative/detail/get/
 *CreativeGetV2Api* | **OpenApi2CreativeGetGet** | **Get** /open_api/2/creative/get/
-*CreativeMaterialMetricsV2Api* | **OpenApi2CreativeMaterialMetricsGet** | **Get** /open_api/2/creative/material/metrics/
 *CreativeProceduralCreativeCreateV2Api* | **OpenApi2CreativeProceduralCreativeCreatePost** | **Post** /open_api/2/creative/procedural_creative/create/
 *CreativeProceduralCreativeUpdateV2Api* | **OpenApi2CreativeProceduralCreativeUpdatePost** | **Post** /open_api/2/creative/procedural_creative/update/
 *CreativeRejectReasonV2Api* | **OpenApi2CreativeRejectReasonGet** | **Get** /open_api/2/creative/reject_reason/
@@ -446,6 +443,9 @@ Class | Method | HTTP request
 *KeywordListV30Api* | **OpenApiV30KeywordListGet** | **Get** /open_api/v3.0/keyword/list/
 *KeywordUpdateV2V2Api* | **OpenApi2KeywordUpdateV2Post** | **Post** /open_api/2/keyword/update_v2/
 *KeywordUpdateV30Api* | **OpenApiV30KeywordUpdatePost** | **Post** /open_api/v3.0/keyword/update/
+*LocalReportMaterialGetV30Api* | **OpenApiV30LocalReportMaterialGetGet** | **Get** /open_api/v3.0/local/report/material/get/
+*LocalReportProjectGetV30Api* | **OpenApiV30LocalReportProjectGetGet** | **Get** /open_api/v3.0/local/report/project/get/
+*LocalReportPromotionGetV30Api* | **OpenApiV30LocalReportPromotionGetGet** | **Get** /open_api/v3.0/local/report/promotion/get/
 *MajordomoAdvertiserSelectV2Api* | **OpenApi2MajordomoAdvertiserSelectGet** | **Get** /open_api/2/majordomo/advertiser/select/
 *MaterialStatusUpdateV30Api* | **OpenApiV30MaterialStatusUpdatePost** | **Post** /open_api/v3.0/material/status/update/
 *NativeAnchorCreateV30Api* | **OpenApiV30NativeAnchorCreatePost** | **Post** /open_api/v3.0/native_anchor/create/
@@ -497,6 +497,8 @@ Class | Method | HTTP request
 *QianchuanAdKeywordsGetV10Api* | **OpenApiV10QianchuanAdKeywordsGetGet** | **Get** /open_api/v1.0/qianchuan/ad/keywords/get/
 *QianchuanAdKeywordsUpdateV10Api* | **OpenApiV10QianchuanAdKeywordsUpdatePost** | **Post** /open_api/v1.0/qianchuan/ad/keywords/update/
 *QianchuanAdLearingStatusGetV10Api* | **OpenApiV10QianchuanAdLearingStatusGetGet** | **Get** /open_api/v1.0/qianchuan/ad/learing_status/get/
+*QianchuanAdMaterialDeleteV10Api* | **OpenApiV10QianchuanAdMaterialDeletePost** | **Post** /open_api/v1.0/qianchuan/ad/material/delete/
+*QianchuanAdMaterialGetV10Api* | **OpenApiV10QianchuanAdMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/ad/material/get/
 *QianchuanAdPivativewordsGetV10Api* | **OpenApiV10QianchuanAdPivativewordsGetGet** | **Get** /open_api/v1.0/qianchuan/ad/pivativewords/get/
 *QianchuanAdPivativewordsUpdateV10Api* | **OpenApiV10QianchuanAdPivativewordsUpdatePost** | **Post** /open_api/v1.0/qianchuan/ad/pivativewords/update/
 *QianchuanAdQuotaGetV10Api* | **OpenApiV10QianchuanAdQuotaGetGet** | **Get** /open_api/v1.0/qianchuan/ad/quota/get/
@@ -516,6 +518,7 @@ Class | Method | HTTP request
 *QianchuanAudienceGroupGetV10Api* | **OpenApiV10QianchuanAudienceGroupGetGet** | **Get** /open_api/v1.0/qianchuan/audience_group/get/
 *QianchuanAudienceListGetV10Api* | **OpenApiV10QianchuanAudienceListGetGet** | **Get** /open_api/v1.0/qianchuan/audience_list/get/
 *QianchuanAudiencePushV10Api* | **OpenApiV10QianchuanAudiencePushPost** | **Post** /open_api/v1.0/qianchuan/audience/push/
+*QianchuanAwemeAuthListGetV10Api* | **OpenApiV10QianchuanAwemeAuthListGetGet** | **Get** /open_api/v1.0/qianchuan/aweme_auth_list/get/
 *QianchuanAwemeAuthorizedGetV10Api* | **OpenApiV10QianchuanAwemeAuthorizedGetGet** | **Get** /open_api/v1.0/qianchuan/aweme/authorized/get/
 *QianchuanAwemeEstimateProfitV10Api* | **OpenApiV10QianchuanAwemeEstimateProfitGet** | **Get** /open_api/v1.0/qianchuan/aweme/estimate_profit/
 *QianchuanAwemeInterestActionInterestKeywordV10Api* | **OpenApiV10QianchuanAwemeInterestActionInterestKeywordGet** | **Get** /open_api/v1.0/qianchuan/aweme/interest_action/interest/keyword/
@@ -560,6 +563,7 @@ Class | Method | HTTP request
 *QianchuanProductAnalyseListV10Api* | **OpenApiV10QianchuanProductAnalyseListGet** | **Get** /open_api/v1.0/qianchuan/product/analyse/list/
 *QianchuanProductAvailableGetV10Api* | **OpenApiV10QianchuanProductAvailableGetGet** | **Get** /open_api/v1.0/qianchuan/product/available/get/
 *QianchuanReportAdGetV10Api* | **OpenApiV10QianchuanReportAdGetGet** | **Get** /open_api/v1.0/qianchuan/report/ad/get/
+*QianchuanReportAdMaterialGetV10Api* | **OpenApiV10QianchuanReportAdMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/report/ad/material/get/
 *QianchuanReportAdvertiserGetV10Api* | **OpenApiV10QianchuanReportAdvertiserGetGet** | **Get** /open_api/v1.0/qianchuan/report/advertiser/get/
 *QianchuanReportCreativeGetV10Api* | **OpenApiV10QianchuanReportCreativeGetGet** | **Get** /open_api/v1.0/qianchuan/report/creative/get/
 *QianchuanReportCustomConfigGetV10Api* | **OpenApiV10QianchuanReportCustomConfigGetGet** | **Get** /open_api/v1.0/qianchuan/report/custom/config/get/
@@ -594,7 +598,13 @@ Class | Method | HTTP request
 *QianchuanToolsSmartBoostAdBoostStatusGetV10Api* | **OpenApiV10QianchuanToolsSmartBoostAdBoostStatusGetGet** | **Get** /open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/status/get/
 *QianchuanToolsSmartBoostAdBoostVersionGetV10Api* | **OpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGet** | **Get** /open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/version/get/
 *QianchuanTrackUrlCheckV10Api* | **OpenApiV10QianchuanTrackUrlCheckGet** | **Get** /open_api/v1.0/qianchuan/track_url/check/
+*QianchuanUniAwemeAdCreateV10Api* | **OpenApiV10QianchuanUniAwemeAdCreatePost** | **Post** /open_api/v1.0/qianchuan/uni_aweme/ad/create/
+*QianchuanUniAwemeAdUpdateV10Api* | **OpenApiV10QianchuanUniAwemeAdUpdatePost** | **Post** /open_api/v1.0/qianchuan/uni_aweme/ad/update/
 *QianchuanUniAwemeAuthorizedGetV10Api* | **OpenApiV10QianchuanUniAwemeAuthorizedGetGet** | **Get** /open_api/v1.0/qianchuan/uni_aweme/authorized/get/
+*QianchuanUniPromotionAdDetailV10Api* | **OpenApiV10QianchuanUniPromotionAdDetailGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/ad/detail/
+*QianchuanUniPromotionAdMaterialDeleteV10Api* | **OpenApiV10QianchuanUniPromotionAdMaterialDeletePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/material/delete/
+*QianchuanUniPromotionAdMaterialGetV10Api* | **OpenApiV10QianchuanUniPromotionAdMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/ad/material/get/
+*QianchuanUniPromotionAdStatusUpdateV10Api* | **OpenApiV10QianchuanUniPromotionAdStatusUpdatePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/status/update/
 *QianchuanUniPromotionListV10Api* | **OpenApiV10QianchuanUniPromotionListGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/list/
 *QianchuanVideoGetV10Api* | **OpenApiV10QianchuanVideoGetGet** | **Get** /open_api/v1.0/qianchuan/video/get/
 *QueryInvoiceV2Api* | **OpenApi2QueryInvoiceGet** | **Get** /open_api/2/query/invoice/
@@ -676,7 +686,9 @@ Class | Method | HTTP request
 *StarDemandCreateChallengeV2Api* | **OpenApi2StarDemandCreateChallengePost** | **Post** /open_api/2/star/demand/create_challenge/
 *StarDemandListV2Api* | **OpenApi2StarDemandListGet** | **Get** /open_api/2/star/demand/list/
 *StarDemandOmCreateChallengeV2Api* | **OpenApi2StarDemandOmCreateChallengePost** | **Post** /open_api/2/star/demand/om_create_challenge/
+*StarDemandOmExpandChallengeProviderV2Api* | **OpenApi2StarDemandOmExpandChallengeProviderPost** | **Post** /open_api/2/star/demand/om_expand_challenge_provider/
 *StarDemandOmExpandChallengeV2Api* | **OpenApi2StarDemandOmExpandChallengePost** | **Post** /open_api/2/star/demand/om_expand_challenge/
+*StarDemandOmGetChallengeDispatchedProviderListV2Api* | **OpenApi2StarDemandOmGetChallengeDispatchedProviderListGet** | **Get** /open_api/2/star/demand/om_get_challenge_dispatched_provider_list/
 *StarDemandOmGetChallengeItemsDataV2Api* | **OpenApi2StarDemandOmGetChallengeItemsDataGet** | **Get** /open_api/2/star/demand/om_get_challenge_items_data/
 *StarDemandOmGetChallengeV2Api* | **OpenApi2StarDemandOmGetChallengeGet** | **Get** /open_api/2/star/demand/om_get_challenge/
 *StarDemandOmGetDemandListV2Api* | **OpenApi2StarDemandOmGetDemandListGet** | **Get** /open_api/2/star/demand/om_get_demand_list/
