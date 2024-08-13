@@ -333,6 +333,7 @@ Class | Method | HTTP request
 *ClueWechatInstanceListV2Api* | **OpenApi2ClueWechatInstanceListGet** | **Get** /open_api/2/clue/wechat_instance/list/
 *ClueWechatInstanceUpdateV2Api* | **OpenApi2ClueWechatInstanceUpdatePost** | **Post** /open_api/2/clue/wechat_instance/update/
 *ClueWechatPoolListV2Api* | **OpenApi2ClueWechatPoolListGet** | **Get** /open_api/2/clue/wechat_pool/list/
+*CreateStatementInvoiceV2Api* | **OpenApi2CreateStatementInvoicePost** | **Post** /open_api/2/create/statement_invoice/
 *CreateStatementV2Api* | **OpenApi2CreateStatementPost** | **Post** /open_api/2/create/statement/
 *CreativeCustomCreativeCreateV2Api* | **OpenApi2CreativeCustomCreativeCreatePost** | **Post** /open_api/2/creative/custom_creative/create/
 *CreativeCustomCreativeUpdateV2Api* | **OpenApi2CreativeCustomCreativeUpdatePost** | **Post** /open_api/2/creative/custom_creative/update/
@@ -624,12 +625,14 @@ Class | Method | HTTP request
 *QianchuanUniPromotionListV10Api* | **OpenApiV10QianchuanUniPromotionListGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/list/
 *QianchuanVideoGetV10Api* | **OpenApiV10QianchuanVideoGetGet** | **Get** /open_api/v1.0/qianchuan/video/get/
 *QueryBookingBusinessEntityIdGetV2Api* | **OpenApi2QueryBookingBusinessEntityIdGetGet** | **Get** /open_api/2/query/booking/business_entity_id/get/
+*QueryInvoiceElectronicUrlV2Api* | **OpenApi2QueryInvoiceElectronicUrlGet** | **Get** /open_api/2/query/invoice_electronic_url/
 *QueryInvoiceV2Api* | **OpenApi2QueryInvoiceGet** | **Get** /open_api/2/query/invoice/
 *QueryProjectV2Api* | **OpenApi2QueryProjectGet** | **Get** /open_api/2/query/project/
 *QueryProjectV30Api* | **OpenApiV30QueryProjectGet** | **Get** /open_api/v3.0/query/project/
 *QueryRebateAccountingInfoV2Api* | **OpenApi2QueryRebateAccountingInfoGet** | **Get** /open_api/2/query/rebate_accounting_info/
 *QueryRebateBalanceV2Api* | **OpenApi2QueryRebateBalanceGet** | **Get** /open_api/2/query/rebate_balance/
 *QueryStatementV2Api* | **OpenApi2QueryStatementGet** | **Get** /open_api/2/query/statement/
+*RecommendVideoListV30Api* | **OpenApiV30RecommendVideoListPost** | **Post** /open_api/v3.0/recommend/video/list/
 *ReportAdGetV2Api* | **OpenApi2ReportAdGetGet** | **Get** /open_api/2/report/ad/get/
 *ReportAdvertiserGetV2Api* | **OpenApi2ReportAdvertiserGetGet** | **Get** /open_api/2/report/advertiser/get/
 *ReportAgentGetV2V2Api* | **OpenApi2ReportAgentGetV2Get** | **Get** /open_api/2/report/agent/get_v2/
@@ -670,6 +673,7 @@ Class | Method | HTTP request
 *ReportStardeliveryTaskDataGetV30Api* | **OpenApiV30ReportStardeliveryTaskDataGetGet** | **Get** /open_api/v3.0/report/stardelivery/task_data/get/
 *ReportStardeliveryTaskVideoDataGetV30Api* | **OpenApiV30ReportStardeliveryTaskVideoDataGetGet** | **Get** /open_api/v3.0/report/stardelivery/task_video_data/get/
 *ReportVideoFrameGetV2Api* | **OpenApi2ReportVideoFrameGetGet** | **Get** /open_api/2/report/video/frame/get/
+*SecurityScoreViolationEventGetV30Api* | **OpenApiV30SecurityScoreViolationEventGetGet** | **Get** /open_api/v3.0/security/score_violation_event/get/
 *ServeMarketActiveFuncGetV10Api* | **OpenApiV10ServeMarketActiveFuncGetGet** | **Get** /open_api/v1.0/serve_market/active_func/get/
 *ServeMarketCidVerifyTokenV10Api* | **OpenApiV10ServeMarketCidVerifyTokenGet** | **Get** /open_api/v1.0/serve_market/cid/verify_token/
 *ServeMarketOrderGetV10Api* | **OpenApiV10ServeMarketOrderGetGet** | **Get** /open_api/v1.0/serve_market/order/get/

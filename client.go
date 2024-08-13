@@ -532,6 +532,10 @@ func (c *Client) ClueWechatPoolListV2Api() *api.ClueWechatPoolListV2ApiService {
 	return c.ApiClient.ClueWechatPoolListV2Api
 }
 
+func (c *Client) CreateStatementInvoiceV2Api() *api.CreateStatementInvoiceV2ApiService {
+	return c.ApiClient.CreateStatementInvoiceV2Api
+}
+
 func (c *Client) CreateStatementV2Api() *api.CreateStatementV2ApiService {
 	return c.ApiClient.CreateStatementV2Api
 }
@@ -1696,6 +1700,10 @@ func (c *Client) QueryBookingBusinessEntityIdGetV2Api() *api.QueryBookingBusines
 	return c.ApiClient.QueryBookingBusinessEntityIdGetV2Api
 }
 
+func (c *Client) QueryInvoiceElectronicUrlV2Api() *api.QueryInvoiceElectronicUrlV2ApiService {
+	return c.ApiClient.QueryInvoiceElectronicUrlV2Api
+}
+
 func (c *Client) QueryInvoiceV2Api() *api.QueryInvoiceV2ApiService {
 	return c.ApiClient.QueryInvoiceV2Api
 }
@@ -1718,6 +1726,10 @@ func (c *Client) QueryRebateBalanceV2Api() *api.QueryRebateBalanceV2ApiService {
 
 func (c *Client) QueryStatementV2Api() *api.QueryStatementV2ApiService {
 	return c.ApiClient.QueryStatementV2Api
+}
+
+func (c *Client) RecommendVideoListV30Api() *api.RecommendVideoListV30ApiService {
+	return c.ApiClient.RecommendVideoListV30Api
 }
 
 func (c *Client) ReportAdGetV2Api() *api.ReportAdGetV2ApiService {
@@ -1878,6 +1890,10 @@ func (c *Client) ReportStardeliveryTaskVideoDataGetV30Api() *api.ReportStardeliv
 
 func (c *Client) ReportVideoFrameGetV2Api() *api.ReportVideoFrameGetV2ApiService {
 	return c.ApiClient.ReportVideoFrameGetV2Api
+}
+
+func (c *Client) SecurityScoreViolationEventGetV30Api() *api.SecurityScoreViolationEventGetV30ApiService {
+	return c.ApiClient.SecurityScoreViolationEventGetV30Api
 }
 
 func (c *Client) ServeMarketActiveFuncGetV10Api() *api.ServeMarketActiveFuncGetV10ApiService {
