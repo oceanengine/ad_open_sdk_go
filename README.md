@@ -673,6 +673,8 @@ Class | Method | HTTP request
 *ReportStardeliveryTaskDataGetV30Api* | **OpenApiV30ReportStardeliveryTaskDataGetGet** | **Get** /open_api/v3.0/report/stardelivery/task_data/get/
 *ReportStardeliveryTaskVideoDataGetV30Api* | **OpenApiV30ReportStardeliveryTaskVideoDataGetGet** | **Get** /open_api/v3.0/report/stardelivery/task_video_data/get/
 *ReportVideoFrameGetV2Api* | **OpenApi2ReportVideoFrameGetGet** | **Get** /open_api/2/report/video/frame/get/
+*SecurityScoreDisposalInfoGetV30Api* | **OpenApiV30SecurityScoreDisposalInfoGetGet** | **Get** /open_api/v3.0/security/score_disposal_info/get/
+*SecurityScoreTotalGetV30Api* | **OpenApiV30SecurityScoreTotalGetGet** | **Get** /open_api/v3.0/security/score_total/get/
 *SecurityScoreViolationEventGetV30Api* | **OpenApiV30SecurityScoreViolationEventGetGet** | **Get** /open_api/v3.0/security/score_violation_event/get/
 *ServeMarketActiveFuncGetV10Api* | **OpenApiV10ServeMarketActiveFuncGetGet** | **Get** /open_api/v1.0/serve_market/active_func/get/
 *ServeMarketCidVerifyTokenV10Api* | **OpenApiV10ServeMarketCidVerifyTokenGet** | **Get** /open_api/v1.0/serve_market/cid/verify_token/
@@ -765,6 +767,7 @@ Class | Method | HTTP request
 *StarVasGetExportBoostItemGroupResultV2Api* | **OpenApi2StarVasGetExportBoostItemGroupResultGet** | **Get** /open_api/2/star/vas/get_export_boost_item_group_result/
 *StarVasSubmitExportBoostItemGroupDataV2Api* | **OpenApi2StarVasSubmitExportBoostItemGroupDataPost** | **Post** /open_api/2/star/vas/submit_export_boost_item_group_data/
 *StardeliveryTaskAuthorDetailV30Api* | **OpenApiV30StardeliveryTaskAuthorDetailGet** | **Get** /open_api/v3.0/stardelivery/task_author/detail/
+*StardeliveryTaskAuthorVideoAuditV30Api* | **OpenApiV30StardeliveryTaskAuthorVideoAuditPost** | **Post** /open_api/v3.0/stardelivery/task_author_video/audit/
 *StardeliveryTaskAuthorVideoDetailV30Api* | **OpenApiV30StardeliveryTaskAuthorVideoDetailGet** | **Get** /open_api/v3.0/stardelivery/task_author_video/detail/
 *StardeliveryTaskBudgetUpdateV30Api* | **OpenApiV30StardeliveryTaskBudgetUpdatePost** | **Post** /open_api/v3.0/stardelivery/task/budget/update/
 *StardeliveryTaskCancelV30Api* | **OpenApiV30StardeliveryTaskCancelPost** | **Post** /open_api/v3.0/stardelivery/task/cancel/
@@ -886,6 +889,7 @@ Class | Method | HTTP request
 *ToolsEventAllAssetsListV2Api* | **OpenApi2ToolsEventAllAssetsListGet** | **Get** /open_api/2/tools/event/all_assets/list/
 *ToolsEventAssetsGetV2Api* | **OpenApi2ToolsEventAssetsGetGet** | **Get** /open_api/2/tools/event/assets/get/
 *ToolsEventConvertOptimizedGoalGetV30Api* | **OpenApiV30ToolsEventConvertOptimizedGoalGetGet** | **Get** /open_api/v3.0/tools/event_convert/optimized_goal/get/
+*ToolsForbiddenLinkGreyGetV30Api* | **OpenApiV30ToolsForbiddenLinkGreyGetGet** | **Get** /open_api/v3.0/tools/forbidden_link/grey/get/
 *ToolsGrayGetV30Api* | **OpenApiV30ToolsGrayGetGet** | **Get** /open_api/v3.0/tools/gray/get/
 *ToolsIesAccountSearchV2Api* | **OpenApi2ToolsIesAccountSearchGet** | **Get** /open_api/2/tools/ies_account_search/
 *ToolsIndustryGetV2Api* | **OpenApi2ToolsIndustryGetGet** | **Get** /open_api/2/tools/industry/get/

@@ -1,3 +1,6 @@
+/*
+API version: 1.1.16
+*/
 package ad_open_sdk_go
 
 import (
@@ -1892,6 +1895,14 @@ func (c *Client) ReportVideoFrameGetV2Api() *api.ReportVideoFrameGetV2ApiService
 	return c.ApiClient.ReportVideoFrameGetV2Api
 }
 
+func (c *Client) SecurityScoreDisposalInfoGetV30Api() *api.SecurityScoreDisposalInfoGetV30ApiService {
+	return c.ApiClient.SecurityScoreDisposalInfoGetV30Api
+}
+
+func (c *Client) SecurityScoreTotalGetV30Api() *api.SecurityScoreTotalGetV30ApiService {
+	return c.ApiClient.SecurityScoreTotalGetV30Api
+}
+
 func (c *Client) SecurityScoreViolationEventGetV30Api() *api.SecurityScoreViolationEventGetV30ApiService {
 	return c.ApiClient.SecurityScoreViolationEventGetV30Api
 }
@@ -2258,6 +2269,10 @@ func (c *Client) StarVasSubmitExportBoostItemGroupDataV2Api() *api.StarVasSubmit
 
 func (c *Client) StardeliveryTaskAuthorDetailV30Api() *api.StardeliveryTaskAuthorDetailV30ApiService {
 	return c.ApiClient.StardeliveryTaskAuthorDetailV30Api
+}
+
+func (c *Client) StardeliveryTaskAuthorVideoAuditV30Api() *api.StardeliveryTaskAuthorVideoAuditV30ApiService {
+	return c.ApiClient.StardeliveryTaskAuthorVideoAuditV30Api
 }
 
 func (c *Client) StardeliveryTaskAuthorVideoDetailV30Api() *api.StardeliveryTaskAuthorVideoDetailV30ApiService {
@@ -2742,6 +2757,10 @@ func (c *Client) ToolsEventAssetsGetV2Api() *api.ToolsEventAssetsGetV2ApiService
 
 func (c *Client) ToolsEventConvertOptimizedGoalGetV30Api() *api.ToolsEventConvertOptimizedGoalGetV30ApiService {
 	return c.ApiClient.ToolsEventConvertOptimizedGoalGetV30Api
+}
+
+func (c *Client) ToolsForbiddenLinkGreyGetV30Api() *api.ToolsForbiddenLinkGreyGetV30ApiService {
+	return c.ApiClient.ToolsForbiddenLinkGreyGetV30Api
 }
 
 func (c *Client) ToolsGrayGetV30Api() *api.ToolsGrayGetV30ApiService {
