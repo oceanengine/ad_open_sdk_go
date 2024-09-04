@@ -1,5 +1,5 @@
 /*
-API version: 1.1.17
+API version: 1.1.18
 */
 package ad_open_sdk_go
 
@@ -337,6 +337,10 @@ func (c *Client) BrandQueryYuntu5aBrandCategoryV30Api() *api.BrandQueryYuntu5aBr
 
 func (c *Client) BrandRegionGetV30Api() *api.BrandRegionGetV30ApiService {
 	return c.ApiClient.BrandRegionGetV30Api
+}
+
+func (c *Client) BrandToolCreativePreviewV30Api() *api.BrandToolCreativePreviewV30ApiService {
+	return c.ApiClient.BrandToolCreativePreviewV30Api
 }
 
 func (c *Client) BrandUploadImageV30Api() *api.BrandUploadImageV30ApiService {
@@ -1559,6 +1563,14 @@ func (c *Client) QianchuanReportSearchWordGetV10Api() *api.QianchuanReportSearch
 	return c.ApiClient.QianchuanReportSearchWordGetV10Api
 }
 
+func (c *Client) QianchuanReportTodayLiveRoomConfigGetV10Api() *api.QianchuanReportTodayLiveRoomConfigGetV10ApiService {
+	return c.ApiClient.QianchuanReportTodayLiveRoomConfigGetV10Api
+}
+
+func (c *Client) QianchuanReportTodayLiveRoomDataGetV10Api() *api.QianchuanReportTodayLiveRoomDataGetV10ApiService {
+	return c.ApiClient.QianchuanReportTodayLiveRoomDataGetV10Api
+}
+
 func (c *Client) QianchuanReportUniPromotionDimensionDataAuthorGetV10Api() *api.QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService {
 	return c.ApiClient.QianchuanReportUniPromotionDimensionDataAuthorGetV10Api
 }
@@ -2191,6 +2203,10 @@ func (c *Client) StarOrderUpdateV2Api() *api.StarOrderUpdateV2ApiService {
 	return c.ApiClient.StarOrderUpdateV2Api
 }
 
+func (c *Client) StarProjectListV2Api() *api.StarProjectListV2ApiService {
+	return c.ApiClient.StarProjectListV2Api
+}
+
 func (c *Client) StarReportCustomDataTopicDailyReportV2Api() *api.StarReportCustomDataTopicDailyReportV2ApiService {
 	return c.ApiClient.StarReportCustomDataTopicDailyReportV2Api
 }
@@ -2225,6 +2241,14 @@ func (c *Client) StarStarAdUniteTaskItemListV2Api() *api.StarStarAdUniteTaskItem
 
 func (c *Client) StarStarAdUniteTaskListV2Api() *api.StarStarAdUniteTaskListV2ApiService {
 	return c.ApiClient.StarStarAdUniteTaskListV2Api
+}
+
+func (c *Client) StarTaskBindProjectV2Api() *api.StarTaskBindProjectV2ApiService {
+	return c.ApiClient.StarTaskBindProjectV2Api
+}
+
+func (c *Client) StarTaskListByProjectV2Api() *api.StarTaskListByProjectV2ApiService {
+	return c.ApiClient.StarTaskListByProjectV2Api
 }
 
 func (c *Client) StarUserGetAwemeAuthorIdV2Api() *api.StarUserGetAwemeAuthorIdV2ApiService {
@@ -2629,6 +2653,10 @@ func (c *Client) ToolsClueLiteContactGetV2Api() *api.ToolsClueLiteContactGetV2Ap
 
 func (c *Client) ToolsClueLiteContactRecordV2Api() *api.ToolsClueLiteContactRecordV2ApiService {
 	return c.ApiClient.ToolsClueLiteContactRecordV2Api
+}
+
+func (c *Client) ToolsCluePrivateMessageCallbackV2Api() *api.ToolsCluePrivateMessageCallbackV2ApiService {
+	return c.ApiClient.ToolsCluePrivateMessageCallbackV2Api
 }
 
 func (c *Client) ToolsClueRefundDetailGetV2Api() *api.ToolsClueRefundDetailGetV2ApiService {

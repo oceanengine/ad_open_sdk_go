@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.17
+// APIClient manages communication with the Oceanengine Open Api API v1.1.18
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -206,6 +206,8 @@ type APIClient struct {
 	BrandQueryYuntu5aBrandCategoryV30Api *BrandQueryYuntu5aBrandCategoryV30ApiService
 
 	BrandRegionGetV30Api *BrandRegionGetV30ApiService
+
+	BrandToolCreativePreviewV30Api *BrandToolCreativePreviewV30ApiService
 
 	BrandUploadImageV30Api *BrandUploadImageV30ApiService
 
@@ -817,6 +819,10 @@ type APIClient struct {
 
 	QianchuanReportSearchWordGetV10Api *QianchuanReportSearchWordGetV10ApiService
 
+	QianchuanReportTodayLiveRoomConfigGetV10Api *QianchuanReportTodayLiveRoomConfigGetV10ApiService
+
+	QianchuanReportTodayLiveRoomDataGetV10Api *QianchuanReportTodayLiveRoomDataGetV10ApiService
+
 	QianchuanReportUniPromotionDimensionDataAuthorGetV10Api *QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService
 
 	QianchuanReportUniPromotionDimensionDataRoomGetV10Api *QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService
@@ -1133,6 +1139,8 @@ type APIClient struct {
 
 	StarOrderUpdateV2Api *StarOrderUpdateV2ApiService
 
+	StarProjectListV2Api *StarProjectListV2ApiService
+
 	StarReportCustomDataTopicDailyReportV2Api *StarReportCustomDataTopicDailyReportV2ApiService
 
 	StarReportCustomDataTopicReportV2Api *StarReportCustomDataTopicReportV2ApiService
@@ -1150,6 +1158,10 @@ type APIClient struct {
 	StarStarAdUniteTaskItemListV2Api *StarStarAdUniteTaskItemListV2ApiService
 
 	StarStarAdUniteTaskListV2Api *StarStarAdUniteTaskListV2ApiService
+
+	StarTaskBindProjectV2Api *StarTaskBindProjectV2ApiService
+
+	StarTaskListByProjectV2Api *StarTaskListByProjectV2ApiService
 
 	StarUserGetAwemeAuthorIdV2Api *StarUserGetAwemeAuthorIdV2ApiService
 
@@ -1352,6 +1364,8 @@ type APIClient struct {
 	ToolsClueLiteContactGetV2Api *ToolsClueLiteContactGetV2ApiService
 
 	ToolsClueLiteContactRecordV2Api *ToolsClueLiteContactRecordV2ApiService
+
+	ToolsCluePrivateMessageCallbackV2Api *ToolsCluePrivateMessageCallbackV2ApiService
 
 	ToolsClueRefundDetailGetV2Api *ToolsClueRefundDetailGetV2ApiService
 
@@ -1746,6 +1760,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.BrandQueryStockV30Api = (*BrandQueryStockV30ApiService)(&c.common)
 	c.BrandQueryYuntu5aBrandCategoryV30Api = (*BrandQueryYuntu5aBrandCategoryV30ApiService)(&c.common)
 	c.BrandRegionGetV30Api = (*BrandRegionGetV30ApiService)(&c.common)
+	c.BrandToolCreativePreviewV30Api = (*BrandToolCreativePreviewV30ApiService)(&c.common)
 	c.BrandUploadImageV30Api = (*BrandUploadImageV30ApiService)(&c.common)
 	c.BudgetGroupCreateV30Api = (*BudgetGroupCreateV30ApiService)(&c.common)
 	c.BudgetGroupDeleteV30Api = (*BudgetGroupDeleteV30ApiService)(&c.common)
@@ -2051,6 +2066,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanReportLongTransferOrderGetV10Api = (*QianchuanReportLongTransferOrderGetV10ApiService)(&c.common)
 	c.QianchuanReportMaterialGetV10Api = (*QianchuanReportMaterialGetV10ApiService)(&c.common)
 	c.QianchuanReportSearchWordGetV10Api = (*QianchuanReportSearchWordGetV10ApiService)(&c.common)
+	c.QianchuanReportTodayLiveRoomConfigGetV10Api = (*QianchuanReportTodayLiveRoomConfigGetV10ApiService)(&c.common)
+	c.QianchuanReportTodayLiveRoomDataGetV10Api = (*QianchuanReportTodayLiveRoomDataGetV10ApiService)(&c.common)
 	c.QianchuanReportUniPromotionDimensionDataAuthorGetV10Api = (*QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService)(&c.common)
 	c.QianchuanReportUniPromotionDimensionDataRoomGetV10Api = (*QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService)(&c.common)
 	c.QianchuanReportUniPromotionGetV10Api = (*QianchuanReportUniPromotionGetV10ApiService)(&c.common)
@@ -2209,6 +2226,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarOrderRejectResourceV2Api = (*StarOrderRejectResourceV2ApiService)(&c.common)
 	c.StarOrderReplyAuthorCancelV2Api = (*StarOrderReplyAuthorCancelV2ApiService)(&c.common)
 	c.StarOrderUpdateV2Api = (*StarOrderUpdateV2ApiService)(&c.common)
+	c.StarProjectListV2Api = (*StarProjectListV2ApiService)(&c.common)
 	c.StarReportCustomDataTopicDailyReportV2Api = (*StarReportCustomDataTopicDailyReportV2ApiService)(&c.common)
 	c.StarReportCustomDataTopicReportV2Api = (*StarReportCustomDataTopicReportV2ApiService)(&c.common)
 	c.StarReportDataTopicConfigV2Api = (*StarReportDataTopicConfigV2ApiService)(&c.common)
@@ -2218,6 +2236,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarStarAdUniteTaskDetailV2Api = (*StarStarAdUniteTaskDetailV2ApiService)(&c.common)
 	c.StarStarAdUniteTaskItemListV2Api = (*StarStarAdUniteTaskItemListV2ApiService)(&c.common)
 	c.StarStarAdUniteTaskListV2Api = (*StarStarAdUniteTaskListV2ApiService)(&c.common)
+	c.StarTaskBindProjectV2Api = (*StarTaskBindProjectV2ApiService)(&c.common)
+	c.StarTaskListByProjectV2Api = (*StarTaskListByProjectV2ApiService)(&c.common)
 	c.StarUserGetAwemeAuthorIdV2Api = (*StarUserGetAwemeAuthorIdV2ApiService)(&c.common)
 	c.StarUserGetStarIdV2Api = (*StarUserGetStarIdV2ApiService)(&c.common)
 	c.StarVasAppendOrderToBoostItemGroupV2Api = (*StarVasAppendOrderToBoostItemGroupV2ApiService)(&c.common)
@@ -2319,6 +2339,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsClueLifeGetV2Api = (*ToolsClueLifeGetV2ApiService)(&c.common)
 	c.ToolsClueLiteContactGetV2Api = (*ToolsClueLiteContactGetV2ApiService)(&c.common)
 	c.ToolsClueLiteContactRecordV2Api = (*ToolsClueLiteContactRecordV2ApiService)(&c.common)
+	c.ToolsCluePrivateMessageCallbackV2Api = (*ToolsCluePrivateMessageCallbackV2ApiService)(&c.common)
 	c.ToolsClueRefundDetailGetV2Api = (*ToolsClueRefundDetailGetV2ApiService)(&c.common)
 	c.ToolsClueRefundInfoQueryV2Api = (*ToolsClueRefundInfoQueryV2ApiService)(&c.common)
 	c.ToolsClueRefundReportGetV2Api = (*ToolsClueRefundReportGetV2ApiService)(&c.common)

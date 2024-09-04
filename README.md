@@ -284,6 +284,7 @@ Class | Method | HTTP request
 *BrandQueryStockV30Api* | **OpenApiV30BrandQueryStockGet** | **Get** /open_api/v3.0/brand/query_stock/
 *BrandQueryYuntu5aBrandCategoryV30Api* | **OpenApiV30BrandQueryYuntu5aBrandCategoryGet** | **Get** /open_api/v3.0/brand/query_yuntu_5a_brand_category/
 *BrandRegionGetV30Api* | **OpenApiV30BrandRegionGetGet** | **Get** /open_api/v3.0/brand/region/get/
+*BrandToolCreativePreviewV30Api* | **OpenApiV30BrandToolCreativePreviewGet** | **Get** /open_api/v3.0/brand/tool/creative_preview/
 *BrandUploadImageV30Api* | **OpenApiV30BrandUploadImagePost** | **Post** /open_api/v3.0/brand/upload_image/
 *BudgetGroupCreateV30Api* | **OpenApiV30BudgetGroupCreatePost** | **Post** /open_api/v3.0/budget_group/create/
 *BudgetGroupDeleteV30Api* | **OpenApiV30BudgetGroupDeletePost** | **Post** /open_api/v3.0/budget_group/delete/
@@ -589,6 +590,8 @@ Class | Method | HTTP request
 *QianchuanReportLongTransferOrderGetV10Api* | **OpenApiV10QianchuanReportLongTransferOrderGetGet** | **Get** /open_api/v1.0/qianchuan/report/long_transfer/order/get/
 *QianchuanReportMaterialGetV10Api* | **OpenApiV10QianchuanReportMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/report/material/get/
 *QianchuanReportSearchWordGetV10Api* | **OpenApiV10QianchuanReportSearchWordGetGet** | **Get** /open_api/v1.0/qianchuan/report/search_word/get/
+*QianchuanReportTodayLiveRoomConfigGetV10Api* | **OpenApiV10QianchuanReportTodayLiveRoomConfigGetGet** | **Get** /open_api/v1.0/qianchuan/report/today_live/room/config/get/
+*QianchuanReportTodayLiveRoomDataGetV10Api* | **OpenApiV10QianchuanReportTodayLiveRoomDataGetGet** | **Get** /open_api/v1.0/qianchuan/report/today_live/room/data/get/
 *QianchuanReportUniPromotionDimensionDataAuthorGetV10Api* | **OpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGet** | **Get** /open_api/v1.0/qianchuan/report/uni_promotion/dimension_data/author/get/
 *QianchuanReportUniPromotionDimensionDataRoomGetV10Api* | **OpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGet** | **Get** /open_api/v1.0/qianchuan/report/uni_promotion/dimension_data/room/get/
 *QianchuanReportUniPromotionGetV10Api* | **OpenApiV10QianchuanReportUniPromotionGetGet** | **Get** /open_api/v1.0/qianchuan/report/uni_promotion/get/
@@ -747,6 +750,7 @@ Class | Method | HTTP request
 *StarOrderRejectResourceV2Api* | **OpenApi2StarOrderRejectResourcePost** | **Post** /open_api/2/star/order/reject_resource/
 *StarOrderReplyAuthorCancelV2Api* | **OpenApi2StarOrderReplyAuthorCancelPost** | **Post** /open_api/2/star/order/reply_author_cancel/
 *StarOrderUpdateV2Api* | **OpenApi2StarOrderUpdatePost** | **Post** /open_api/2/star/order/update/
+*StarProjectListV2Api* | **OpenApi2StarProjectListGet** | **Get** /open_api/2/star/project/list/
 *StarReportCustomDataTopicDailyReportV2Api* | **OpenApi2StarReportCustomDataTopicDailyReportGet** | **Get** /open_api/2/star/report/custom_data_topic_daily_report/
 *StarReportCustomDataTopicReportV2Api* | **OpenApi2StarReportCustomDataTopicReportGet** | **Get** /open_api/2/star/report/custom_data_topic_report/
 *StarReportDataTopicConfigV2Api* | **OpenApi2StarReportDataTopicConfigGet** | **Get** /open_api/2/star/report/data_topic_config/
@@ -756,6 +760,8 @@ Class | Method | HTTP request
 *StarStarAdUniteTaskDetailV2Api* | **OpenApi2StarStarAdUniteTaskDetailGet** | **Get** /open_api/2/star/star_ad_unite_task/detail/
 *StarStarAdUniteTaskItemListV2Api* | **OpenApi2StarStarAdUniteTaskItemListGet** | **Get** /open_api/2/star/star_ad_unite_task_item/list/
 *StarStarAdUniteTaskListV2Api* | **OpenApi2StarStarAdUniteTaskListGet** | **Get** /open_api/2/star/star_ad_unite_task/list/
+*StarTaskBindProjectV2Api* | **OpenApi2StarTaskBindProjectPost** | **Post** /open_api/2/star/task/bind_project/
+*StarTaskListByProjectV2Api* | **OpenApi2StarTaskListByProjectGet** | **Get** /open_api/2/star/task/list_by_project/
 *StarUserGetAwemeAuthorIdV2Api* | **OpenApi2StarUserGetAwemeAuthorIdGet** | **Get** /open_api/2/star/user/get_aweme_author_id/
 *StarUserGetStarIdV2Api* | **OpenApi2StarUserGetStarIdGet** | **Get** /open_api/2/star/user/get_star_id/
 *StarVasAppendOrderToBoostItemGroupV2Api* | **OpenApi2StarVasAppendOrderToBoostItemGroupPost** | **Post** /open_api/2/star/vas/append_order_to_boost_item_group/
@@ -857,6 +863,7 @@ Class | Method | HTTP request
 *ToolsClueLifeGetV2Api* | **OpenApi2ToolsClueLifeGetPost** | **Post** /open_api/2/tools/clue/life/get/
 *ToolsClueLiteContactGetV2Api* | **OpenApi2ToolsClueLiteContactGetPost** | **Post** /open_api/2/tools/clue/lite/contact/get/
 *ToolsClueLiteContactRecordV2Api* | **OpenApi2ToolsClueLiteContactRecordPost** | **Post** /open_api/2/tools/clue/lite/contact/record/
+*ToolsCluePrivateMessageCallbackV2Api* | **OpenApi2ToolsCluePrivateMessageCallbackPost** | **Post** /open_api/2/tools/clue/private_message/callback/
 *ToolsClueRefundDetailGetV2Api* | **OpenApi2ToolsClueRefundDetailGetGet** | **Get** /open_api/2/tools/clue/refund_detail/get/
 *ToolsClueRefundInfoQueryV2Api* | **OpenApi2ToolsClueRefundInfoQueryPost** | **Post** /open_api/2/tools/clue/refund/info/query/
 *ToolsClueRefundReportGetV2Api* | **OpenApi2ToolsClueRefundReportGetGet** | **Get** /open_api/2/tools/clue/refund_report/get/
