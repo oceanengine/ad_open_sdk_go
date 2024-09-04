@@ -12,7 +12,7 @@ package models
 
 // StarDemandListV2ResponseData
 type StarDemandListV2ResponseData struct {
-	//
+	// 任务列表
 	List     []*StarDemandListV2ResponseDataListInner `json:"list,omitempty"`
 	PageInfo *StarDemandListV2ResponseDataPageInfo    `json:"page_info,omitempty"`
 }

@@ -26,6 +26,14 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	IosAppPackageName *string `json:"ios_app_package_name,omitempty"`
 	// 任务内推广的iOS应用链接
 	IosDownloadUrl *string `json:"ios_download_url,omitempty"`
+	// 任务所选锚点关联的小程序/小游戏appid
+	MicroAppId *string `json:"micro_app_id,omitempty"`
+	// 字节小程序链接，创建任务时填写的链接，未设置时不会返回
+	MicroAppLink *string `json:"micro_app_link,omitempty"`
+	// 任务所选锚点关联的小程序/小游戏名称
+	MicroAppName *string `json:"micro_app_name,omitempty"`
+	// 微信小程序/小游戏路径参数
+	MicroAppPath *string `json:"micro_app_path,omitempty"`
 	// 产品介绍，1-1000个字符，介绍中出现数据、专利/奖项、影视片段、明星/网红、活动等信息
 	ProductIntroduction *string `json:"product_introduction,omitempty"`
 	// 产品名称，1-40个字符，任务推广的产品名称

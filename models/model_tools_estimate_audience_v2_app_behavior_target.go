@@ -15,8 +15,8 @@ type ToolsEstimateAudienceV2AppBehaviorTarget string
 
 // List of tools_estimate_audience_v2_app_behavior_target
 const (
-	NONE_ToolsEstimateAudienceV2AppBehaviorTarget     ToolsEstimateAudienceV2AppBehaviorTarget = "NONE"
 	APP_ToolsEstimateAudienceV2AppBehaviorTarget      ToolsEstimateAudienceV2AppBehaviorTarget = "APP"
+	NONE_ToolsEstimateAudienceV2AppBehaviorTarget     ToolsEstimateAudienceV2AppBehaviorTarget = "NONE"
 	CATEGORY_ToolsEstimateAudienceV2AppBehaviorTarget ToolsEstimateAudienceV2AppBehaviorTarget = "CATEGORY"
 )
 

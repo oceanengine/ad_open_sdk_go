@@ -20,6 +20,7 @@ const (
 	APP_SHOP_NativeAnchorGetV30DataListAnchorType             NativeAnchorGetV30DataListAnchorType = "APP_SHOP"
 	INSURANCE_NativeAnchorGetV30DataListAnchorType            NativeAnchorGetV30DataListAnchorType = "INSURANCE"
 	MICRO_APP_NativeAnchorGetV30DataListAnchorType            NativeAnchorGetV30DataListAnchorType = "MICRO_APP"
+	MICRO_GAME_NativeAnchorGetV30DataListAnchorType           NativeAnchorGetV30DataListAnchorType = "MICRO_GAME"
 	ONLINE_SUBSCRIBE_NativeAnchorGetV30DataListAnchorType     NativeAnchorGetV30DataListAnchorType = "ONLINE_SUBSCRIBE"
 	PRIVATE_CHAT_NativeAnchorGetV30DataListAnchorType         NativeAnchorGetV30DataListAnchorType = "PRIVATE_CHAT"
 	SHOPPING_CART_NativeAnchorGetV30DataListAnchorType        NativeAnchorGetV30DataListAnchorType = "SHOPPING_CART"

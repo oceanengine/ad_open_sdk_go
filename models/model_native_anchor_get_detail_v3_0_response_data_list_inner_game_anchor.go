@@ -46,6 +46,12 @@ type NativeAnchorGetDetailV30ResponseDataListInnerGameAnchor struct {
 	//
 	IosDownloadUrl *string `json:"ios_download_url,omitempty"`
 	//
+	MicroAppName *string `json:"micro_app_name,omitempty"`
+	//
+	MicroAppPath *string `json:"micro_app_path,omitempty"`
+	//
+	MicroAppUserName *string `json:"micro_app_user_name,omitempty"`
+	//
 	OtherDescription *string `json:"other_description,omitempty"`
 	//
 	PathParam *string `json:"path_param,omitempty"`

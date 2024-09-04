@@ -116,6 +116,9 @@ func (a *StarMcnGetContractChallengeAuthorItemListV2V2ApiService) getExecute(r *
 	if r.page == nil {
 		return localVarReturnValue, nil, ReportError("page is required and must be specified")
 	}
+	if *r.page < 1 {
+		return localVarReturnValue, nil, ReportError("page must be greater than 1")
+	}
 	if r.pageSize == nil {
 		return localVarReturnValue, nil, ReportError("pageSize is required and must be specified")
 	}

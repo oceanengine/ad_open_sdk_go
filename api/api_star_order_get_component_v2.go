@@ -23,11 +23,10 @@ import (
 type StarOrderGetComponentV2ApiService service
 
 type ApiOpenApi2StarOrderGetComponentGetRequest struct {
-	ctx         context.Context
-	ApiService  *StarOrderGetComponentV2ApiService
-	starId      *int64
-	orderIds    *[]int64
-	developerId *string
+	ctx        context.Context
+	ApiService *StarOrderGetComponentV2ApiService
+	starId     *int64
+	orderIds   *[]int64
 }
 
 // 星图客户ID
@@ -39,11 +38,6 @@ func (r *ApiOpenApi2StarOrderGetComponentGetRequest) StarId(starId int64) *ApiOp
 // 任务ID
 func (r *ApiOpenApi2StarOrderGetComponentGetRequest) OrderIds(orderIds []int64) *ApiOpenApi2StarOrderGetComponentGetRequest {
 	r.orderIds = &orderIds
-	return r
-}
-
-func (r *ApiOpenApi2StarOrderGetComponentGetRequest) DeveloperId(developerId string) *ApiOpenApi2StarOrderGetComponentGetRequest {
-	r.developerId = &developerId
 	return r
 }
 
@@ -106,9 +100,6 @@ func (a *StarOrderGetComponentV2ApiService) getExecute(r *ApiOpenApi2StarOrderGe
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "star_id", r.starId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "order_ids", r.orderIds)
-	if r.developerId != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "developer_id", r.developerId)
-	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

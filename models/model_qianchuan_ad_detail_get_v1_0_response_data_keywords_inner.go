@@ -13,6 +13,8 @@ package models
 // QianchuanAdDetailGetV10ResponseDataKeywordsInner struct for QianchuanAdDetailGetV10ResponseDataKeywordsInner
 type QianchuanAdDetailGetV10ResponseDataKeywordsInner struct {
 	//
+	GrabFirstScreenSwitch *bool `json:"grab_first_screen_switch,omitempty"`
+	//
 	Id        *int64                                        `json:"id,omitempty"`
 	MatchType *QianchuanAdDetailGetV10DataKeywordsMatchType `json:"match_type,omitempty"`
 	Status    *QianchuanAdDetailGetV10DataKeywordsStatus    `json:"status,omitempty"`

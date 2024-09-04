@@ -12,7 +12,9 @@ package models
 
 // QianchuanAdUpdateV10RequestKeywordsInner struct for QianchuanAdUpdateV10RequestKeywordsInner
 type QianchuanAdUpdateV10RequestKeywordsInner struct {
-	MatchType QianchuanAdUpdateV10KeywordsMatchType `json:"match_type"`
+	// 是否设置抢首屏
+	GrabFirstScreenSwitch *bool                                 `json:"grab_first_screen_switch,omitempty"`
+	MatchType             QianchuanAdUpdateV10KeywordsMatchType `json:"match_type"`
 	//
 	Word string `json:"word"`
 	//

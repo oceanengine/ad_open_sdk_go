@@ -13,6 +13,60 @@ package models
 // ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct for ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner
 type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	//
-	StarTaskId      *int64                                                        `json:"star_task_id,omitempty"`
-	StarVideoStatus *ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus `json:"star_video_status,omitempty"`
+	Active *int64 `json:"active,omitempty"`
+	//
+	ActivePay *int64 `json:"active_pay,omitempty"`
+	//
+	ActiveRegister *int64 `json:"active_register,omitempty"`
+	//
+	GamePayCount *int64 `json:"game_pay_count,omitempty"`
+	//
+	IesAvatarUrl *string `json:"ies_avatar_url,omitempty"`
+	//
+	IesNickname *string `json:"ies_nickname,omitempty"`
+	//
+	InstallFinishCnt *int64 `json:"install_finish_cnt,omitempty"`
+	//
+	MaterialId *int64 `json:"material_id,omitempty"`
+	//
+	NonAdStatCost *float64 `json:"non_ad_stat_cost,omitempty"`
+	//
+	StarActiveCount *int64 `json:"star_active_count,omitempty"`
+	//
+	StarActivePayCount *int64 `json:"star_active_pay_count,omitempty"`
+	//
+	StarActiveRegisterCount *int64 `json:"star_active_register_count,omitempty"`
+	//
+	StarConvertCnt *int64 `json:"star_convert_cnt,omitempty"`
+	//
+	StarDeepPurchaseCount *int64 `json:"star_deep_purchase_count,omitempty"`
+	//
+	StarInstallFinishCount *int64 `json:"star_install_finish_count,omitempty"`
+	//
+	StarMaterialFirstName *string `json:"star_material_first_name,omitempty"`
+	//
+	StarMaterialFirstType *int32 `json:"star_material_first_type,omitempty"`
+	//
+	StarMaterialSecondName *string `json:"star_material_second_name,omitempty"`
+	//
+	StarMaterialSecondType *int32 `json:"star_material_second_type,omitempty"`
+	//
+	StarMaterialStatCost *float64 `json:"star_material_stat_cost,omitempty"`
+	//
+	StarSaleMaterialStatCost *float64 `json:"star_sale_material_stat_cost,omitempty"`
+	//
+	StarStatCost *float64 `json:"star_stat_cost,omitempty"`
+	//
+	StarTaskId *int64 `json:"star_task_id,omitempty"`
+	//
+	StarVideoRelatePromotionCount *int64                                                        `json:"star_video_relate_promotion_count,omitempty"`
+	StarVideoStatus               *ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus `json:"star_video_status,omitempty"`
+	//
+	StatCost *float64 `json:"stat_cost,omitempty"`
+	//
+	VideoCoverUrl *string `json:"video_cover_url,omitempty"`
+	//
+	VideoPlayLink *string `json:"video_play_link,omitempty"`
+	//
+	VideoTitle *string `json:"video_title,omitempty"`
 }

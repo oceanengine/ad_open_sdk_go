@@ -43,8 +43,12 @@ type StarDemandCreateChallengeV2RequestDemandInfo struct {
 	ProductIndustry []string `json:"product_industry"`
 	// 产品介绍 500字以内
 	ProductInformation string `json:"product_information"`
+	// 商品链接
+	ProductLink *string `json:"product_link,omitempty"`
 	// 产品名称 40字内
 	ProductName string `json:"product_name"`
+	// 项目ID
+	ProjectId *int64 `json:"project_id,omitempty"`
 	// 营销目标 为以下之一 品牌传播 应用下载 电商卖货 影视宣传 门店推广 线索收集 破圈种草
 	PromotionTarget *string `json:"promotion_target,omitempty"`
 }

@@ -15,9 +15,13 @@ type PromotionUpdateV30RequestPromotionMaterialsMiniProgramInfo struct {
 	//
 	AppId *string `json:"app_id,omitempty"`
 	//
+	Auto []*PromotionUpdateV30RequestPromotionMaterialsMiniProgramInfoAutoInner `json:"auto,omitempty"`
+	//
 	Params *string `json:"params,omitempty"`
 	//
 	StartPath *string `json:"start_path,omitempty"`
 	//
 	Url *string `json:"url,omitempty"`
+	//
+	Urls []string `json:"urls,omitempty"`
 }

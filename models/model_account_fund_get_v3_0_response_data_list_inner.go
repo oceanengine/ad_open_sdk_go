@@ -17,6 +17,30 @@ type AccountFundGetV30ResponseDataListInner struct {
 	//
 	Balance *int64 `json:"balance,omitempty"`
 	//
+	BiddingCash *int64 `json:"bidding_cash,omitempty"`
+	//
+	BiddingCreditBalance *int64 `json:"bidding_credit_balance,omitempty"`
+	//
+	BiddingCreditValidBalance *int64 `json:"bidding_credit_valid_balance,omitempty"`
+	//
+	BiddingPrepayBalance *int64 `json:"bidding_prepay_balance,omitempty"`
+	//
+	BiddingPrepayValidBalance *int64 `json:"bidding_prepay_valid_balance,omitempty"`
+	//
+	BiddingValidGrant *int64 `json:"bidding_valid_grant,omitempty"`
+	//
+	BrandCash *int64 `json:"brand_cash,omitempty"`
+	//
+	BrandCreditBalance *int64 `json:"brand_credit_balance,omitempty"`
+	//
+	BrandCreditValidBalance *int64 `json:"brand_credit_valid_balance,omitempty"`
+	//
+	BrandPrepayBalance *int64 `json:"brand_prepay_balance,omitempty"`
+	//
+	BrandPrepayValidBalance *int64 `json:"brand_prepay_valid_balance,omitempty"`
+	//
+	BrandValidGrant *int64 `json:"brand_valid_grant,omitempty"`
+	//
 	Cash *int64 `json:"cash,omitempty"`
 	//
 	CommonGrant *int64 `json:"common_grant,omitempty"`
@@ -25,13 +49,41 @@ type AccountFundGetV30ResponseDataListInner struct {
 	//
 	CompensationValidGrant *int64 `json:"compensation_valid_grant,omitempty"`
 	//
+	CreditBalance *int64 `json:"credit_balance,omitempty"`
+	//
+	CreditTransferBalance *int64 `json:"credit_transfer_balance,omitempty"`
+	//
+	CreditValidBalance *int64 `json:"credit_valid_balance,omitempty"`
+	//
 	DefaultGrant *int64 `json:"default_grant,omitempty"`
 	//
+	GeneralCash *int64 `json:"general_cash,omitempty"`
+	//
+	GeneralCreditBalance *int64 `json:"general_credit_balance,omitempty"`
+	//
+	GeneralCreditValidBalance *int64 `json:"general_credit_valid_balance,omitempty"`
+	//
+	GeneralPrepayBalance *int64 `json:"general_prepay_balance,omitempty"`
+	//
+	GeneralPrepayValidBalance *int64 `json:"general_prepay_valid_balance,omitempty"`
+	//
+	GeneralValidGrant *int64 `json:"general_valid_grant,omitempty"`
+	//
 	Grant *int64 `json:"grant,omitempty"`
+	//
+	PrepayBalance *int64 `json:"prepay_balance,omitempty"`
+	//
+	PrepayTransferBalance *int64 `json:"prepay_transfer_balance,omitempty"`
+	//
+	PrepayValidBalance *int64 `json:"prepay_valid_balance,omitempty"`
 	//
 	ReturnGoodsAbs *int64 `json:"return_goods_abs,omitempty"`
 	//
 	SearchGrant *int64 `json:"search_grant,omitempty"`
+	//
+	TransferBalance *int64 `json:"transfer_balance,omitempty"`
+	//
+	TransferCash *int64 `json:"transfer_cash,omitempty"`
 	//
 	UnionGrant *int64 `json:"union_grant,omitempty"`
 	//

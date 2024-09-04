@@ -23,9 +23,8 @@ import (
 )
 
 type ApiOpenApi2StarOrderGetComponentGetRequestExample struct {
-	StarId      int64   `json:"star_id"`
-	OrderIds    []int64 `json:"order_ids"`
-	DeveloperId string  `json:"developer_id,omitempty"`
+	StarId   int64   `json:"star_id"`
+	OrderIds []int64 `json:"order_ids"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/star/order/get_component/ Get
@@ -47,7 +46,7 @@ func main() {
 	resp, httpRes, err := apiClient.StarOrderGetComponentV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		StarId(request.StarId).OrderIds(request.OrderIds).DeveloperId(request.DeveloperId).
+		StarId(request.StarId).OrderIds(request.OrderIds).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

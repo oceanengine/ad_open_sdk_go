@@ -16,9 +16,9 @@ type AdGetV2DataAudienceActionActionScene string
 // List of ad_get_v2_data_audience_action_action_scene
 const (
 	E_COMMERCE_AdGetV2DataAudienceActionActionScene AdGetV2DataAudienceActionActionScene = "E-COMMERCE"
+	APP_AdGetV2DataAudienceActionActionScene        AdGetV2DataAudienceActionActionScene = "APP"
 	AD_AdGetV2DataAudienceActionActionScene         AdGetV2DataAudienceActionActionScene = "AD"
 	NEWS_AdGetV2DataAudienceActionActionScene       AdGetV2DataAudienceActionActionScene = "NEWS"
-	APP_AdGetV2DataAudienceActionActionScene        AdGetV2DataAudienceActionActionScene = "APP"
 	SEARCH_AdGetV2DataAudienceActionActionScene     AdGetV2DataAudienceActionActionScene = "SEARCH"
 )
 

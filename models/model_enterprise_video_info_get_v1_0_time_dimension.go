@@ -15,8 +15,8 @@ type EnterpriseVideoInfoGetV10TimeDimension string
 
 // List of enterprise_video_info_get_v1.0_time_dimension
 const (
-	SUM_EnterpriseVideoInfoGetV10TimeDimension   EnterpriseVideoInfoGetV10TimeDimension = "SUM"
 	DAILY_EnterpriseVideoInfoGetV10TimeDimension EnterpriseVideoInfoGetV10TimeDimension = "DAILY"
+	SUM_EnterpriseVideoInfoGetV10TimeDimension   EnterpriseVideoInfoGetV10TimeDimension = "SUM"
 )
 
 // Ptr returns reference to enterprise_video_info_get_v1.0_time_dimension value

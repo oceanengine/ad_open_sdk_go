@@ -13,11 +13,12 @@ package models
 // StarDemandListV2ResponseDataListInner struct for StarDemandListV2ResponseDataListInner
 type StarDemandListV2ResponseDataListInner struct {
 	ComponentType *StarDemandListV2DataListComponentType `json:"component_type,omitempty"`
-	//
+	// 创建时间
 	CreateTime *string `json:"create_time,omitempty"`
-	//
+	// 任务id
 	DemandId *int64 `json:"demand_id,omitempty"`
-	//
+	// 任务名称
 	DemandName              *string                                          `json:"demand_name,omitempty"`
+	TaskCategory            *StarDemandListV2DataListTaskCategory            `json:"task_category,omitempty"`
 	UniversalSettlementType *StarDemandListV2DataListUniversalSettlementType `json:"universal_settlement_type,omitempty"`
 }

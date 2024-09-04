@@ -15,13 +15,13 @@ type CreativeProceduralCreativeUpdateV2AdDataAnchorType string
 
 // List of creative_procedural_creative_update_v2_ad_data_anchor_type
 const (
-	ONLINE_SUBSCRIBE_CreativeProceduralCreativeUpdateV2AdDataAnchorType     CreativeProceduralCreativeUpdateV2AdDataAnchorType = "ONLINE_SUBSCRIBE"
 	APP_INTERNET_SERVICE_CreativeProceduralCreativeUpdateV2AdDataAnchorType CreativeProceduralCreativeUpdateV2AdDataAnchorType = "APP_INTERNET_SERVICE"
-	APP_SHOP_CreativeProceduralCreativeUpdateV2AdDataAnchorType             CreativeProceduralCreativeUpdateV2AdDataAnchorType = "APP_SHOP"
-	INSURANCE_CreativeProceduralCreativeUpdateV2AdDataAnchorType            CreativeProceduralCreativeUpdateV2AdDataAnchorType = "INSURANCE"
-	PRIVATE_CHAT_CreativeProceduralCreativeUpdateV2AdDataAnchorType         CreativeProceduralCreativeUpdateV2AdDataAnchorType = "PRIVATE_CHAT"
 	APP_GAME_CreativeProceduralCreativeUpdateV2AdDataAnchorType             CreativeProceduralCreativeUpdateV2AdDataAnchorType = "APP_GAME"
+	ONLINE_SUBSCRIBE_CreativeProceduralCreativeUpdateV2AdDataAnchorType     CreativeProceduralCreativeUpdateV2AdDataAnchorType = "ONLINE_SUBSCRIBE"
+	PRIVATE_CHAT_CreativeProceduralCreativeUpdateV2AdDataAnchorType         CreativeProceduralCreativeUpdateV2AdDataAnchorType = "PRIVATE_CHAT"
+	APP_SHOP_CreativeProceduralCreativeUpdateV2AdDataAnchorType             CreativeProceduralCreativeUpdateV2AdDataAnchorType = "APP_SHOP"
 	SHOPPING_CART_CreativeProceduralCreativeUpdateV2AdDataAnchorType        CreativeProceduralCreativeUpdateV2AdDataAnchorType = "SHOPPING_CART"
+	INSURANCE_CreativeProceduralCreativeUpdateV2AdDataAnchorType            CreativeProceduralCreativeUpdateV2AdDataAnchorType = "INSURANCE"
 )
 
 // Ptr returns reference to creative_procedural_creative_update_v2_ad_data_anchor_type value

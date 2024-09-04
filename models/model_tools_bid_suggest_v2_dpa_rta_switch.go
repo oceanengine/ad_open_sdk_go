@@ -15,8 +15,8 @@ type ToolsBidSuggestV2DpaRtaSwitch string
 
 // List of tools_bid_suggest_v2_dpa_rta_switch
 const (
-	ON_ToolsBidSuggestV2DpaRtaSwitch  ToolsBidSuggestV2DpaRtaSwitch = "ON"
 	OFF_ToolsBidSuggestV2DpaRtaSwitch ToolsBidSuggestV2DpaRtaSwitch = "OFF"
+	ON_ToolsBidSuggestV2DpaRtaSwitch  ToolsBidSuggestV2DpaRtaSwitch = "ON"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_dpa_rta_switch value

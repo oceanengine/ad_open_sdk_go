@@ -13,6 +13,8 @@ package models
 // ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorAndroidLink
 type ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorAndroidLink struct {
 	//
+	AssetId *string `json:"asset_id,omitempty"`
+	//
 	Description *string `json:"description,omitempty"`
 	//
 	LinkType *string `json:"link_type,omitempty"`

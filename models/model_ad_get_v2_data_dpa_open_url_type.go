@@ -15,8 +15,8 @@ type AdGetV2DataDpaOpenUrlType string
 
 // List of ad_get_v2_data_dpa_open_url_type
 const (
-	NONE_AdGetV2DataDpaOpenUrlType   AdGetV2DataDpaOpenUrlType = "NONE"
 	CUSTOM_AdGetV2DataDpaOpenUrlType AdGetV2DataDpaOpenUrlType = "CUSTOM"
+	NONE_AdGetV2DataDpaOpenUrlType   AdGetV2DataDpaOpenUrlType = "NONE"
 	DPA_AdGetV2DataDpaOpenUrlType    AdGetV2DataDpaOpenUrlType = "DPA"
 )
 

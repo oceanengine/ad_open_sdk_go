@@ -18,4 +18,6 @@ type StarBrandListV2ResponseDataBrandsInner struct {
 	BrandName string `json:"brand_name"`
 	//
 	YuntuBrandId *int64 `json:"yuntu_brand_id,omitempty"`
+	//
+	YuntuIndustry []*StarBrandListV2ResponseDataBrandsInnerYuntuIndustryInner `json:"yuntu_industry,omitempty"`
 }

@@ -16,10 +16,10 @@ type AudiencePackageCreateV2Platform string
 // List of audience_package_create_v2_platform
 const (
 	WAP_AudiencePackageCreateV2Platform     AudiencePackageCreateV2Platform = "WAP"
-	IOS_AudiencePackageCreateV2Platform     AudiencePackageCreateV2Platform = "IOS"
-	IPAD_AudiencePackageCreateV2Platform    AudiencePackageCreateV2Platform = "IPAD"
 	PC_AudiencePackageCreateV2Platform      AudiencePackageCreateV2Platform = "PC"
 	ANDROID_AudiencePackageCreateV2Platform AudiencePackageCreateV2Platform = "ANDROID"
+	IOS_AudiencePackageCreateV2Platform     AudiencePackageCreateV2Platform = "IOS"
+	IPAD_AudiencePackageCreateV2Platform    AudiencePackageCreateV2Platform = "IPAD"
 )
 
 // Ptr returns reference to audience_package_create_v2_platform value

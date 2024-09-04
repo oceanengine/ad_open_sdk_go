@@ -32,4 +32,6 @@ type StarOrderGetVideoV2ResponseDataOrderVideoListInnerVideoListInner struct {
 	ResourceUrl *string `json:"resource_url,omitempty"`
 	// 资源状态（同ScriptInfo中同名字段）
 	Status *int64 `json:"status,omitempty"`
+	// 视频标题
+	Title *string `json:"title,omitempty"`
 }

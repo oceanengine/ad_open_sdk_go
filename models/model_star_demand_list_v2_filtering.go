@@ -15,6 +15,8 @@ type StarDemandListV2Filtering struct {
 	ComponentType *StarDemandListV2FilteringComponentType `json:"component_type,omitempty"`
 	//
 	Name                    *string                                           `json:"name,omitempty"`
+	QueryTimeRange          *StarDemandListV2FilteringQueryTimeRange          `json:"query_time_range,omitempty"`
+	TaskCategory            *StarDemandListV2FilteringTaskCategory            `json:"task_category,omitempty"`
 	UniversalOrderStatus    *StarDemandListV2FilteringUniversalOrderStatus    `json:"universal_order_status,omitempty"`
 	UniversalSettlementType *StarDemandListV2FilteringUniversalSettlementType `json:"universal_settlement_type,omitempty"`
 }

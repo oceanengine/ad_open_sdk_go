@@ -15,13 +15,13 @@ type StarDemandListV2FilteringUniversalOrderStatus string
 
 // List of star_demand_list_v2_filtering_universal_order_status
 const (
-	CANCELED_StarDemandListV2FilteringUniversalOrderStatus      StarDemandListV2FilteringUniversalOrderStatus = "CANCELED"
-	ONGOING_StarDemandListV2FilteringUniversalOrderStatus       StarDemandListV2FilteringUniversalOrderStatus = "ONGOING"
-	WAIT_PAYMENT_StarDemandListV2FilteringUniversalOrderStatus  StarDemandListV2FilteringUniversalOrderStatus = "WAIT_PAYMENT"
 	ALL_StarDemandListV2FilteringUniversalOrderStatus           StarDemandListV2FilteringUniversalOrderStatus = "ALL"
-	WAIT_EVALUATE_StarDemandListV2FilteringUniversalOrderStatus StarDemandListV2FilteringUniversalOrderStatus = "WAIT_EVALUATE"
+	CANCELED_StarDemandListV2FilteringUniversalOrderStatus      StarDemandListV2FilteringUniversalOrderStatus = "CANCELED"
 	FINISHED_StarDemandListV2FilteringUniversalOrderStatus      StarDemandListV2FilteringUniversalOrderStatus = "FINISHED"
+	ONGOING_StarDemandListV2FilteringUniversalOrderStatus       StarDemandListV2FilteringUniversalOrderStatus = "ONGOING"
 	RECEIVEING_StarDemandListV2FilteringUniversalOrderStatus    StarDemandListV2FilteringUniversalOrderStatus = "RECEIVEING"
+	WAIT_EVALUATE_StarDemandListV2FilteringUniversalOrderStatus StarDemandListV2FilteringUniversalOrderStatus = "WAIT_EVALUATE"
+	WAIT_PAYMENT_StarDemandListV2FilteringUniversalOrderStatus  StarDemandListV2FilteringUniversalOrderStatus = "WAIT_PAYMENT"
 )
 
 // Ptr returns reference to star_demand_list_v2_filtering_universal_order_status value

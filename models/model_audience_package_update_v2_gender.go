@@ -15,8 +15,8 @@ type AudiencePackageUpdateV2Gender string
 
 // List of audience_package_update_v2_gender
 const (
-	NONE_AudiencePackageUpdateV2Gender             AudiencePackageUpdateV2Gender = "NONE"
 	GENDER_FEMALE_AudiencePackageUpdateV2Gender    AudiencePackageUpdateV2Gender = "GENDER_FEMALE"
+	NONE_AudiencePackageUpdateV2Gender             AudiencePackageUpdateV2Gender = "NONE"
 	GENDER_MALE_AudiencePackageUpdateV2Gender      AudiencePackageUpdateV2Gender = "GENDER_MALE"
 	GENDER_UNLIMITED_AudiencePackageUpdateV2Gender AudiencePackageUpdateV2Gender = "GENDER_UNLIMITED"
 )

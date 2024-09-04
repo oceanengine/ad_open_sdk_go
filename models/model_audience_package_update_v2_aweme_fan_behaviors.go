@@ -15,17 +15,17 @@ type AudiencePackageUpdateV2AwemeFanBehaviors string
 
 // List of audience_package_update_v2_aweme_fan_behaviors
 const (
-	GOODS_CARTS_CLICK_AudiencePackageUpdateV2AwemeFanBehaviors    AudiencePackageUpdateV2AwemeFanBehaviors = "GOODS_CARTS_CLICK"
+	LIVE_COMMENT_AudiencePackageUpdateV2AwemeFanBehaviors         AudiencePackageUpdateV2AwemeFanBehaviors = "LIVE_COMMENT"
 	FOLLOWED_USER_AudiencePackageUpdateV2AwemeFanBehaviors        AudiencePackageUpdateV2AwemeFanBehaviors = "FOLLOWED_USER"
+	LIVE_EXCEPTIONAL_AudiencePackageUpdateV2AwemeFanBehaviors     AudiencePackageUpdateV2AwemeFanBehaviors = "LIVE_EXCEPTIONAL"
+	GOODS_CARTS_ORDER_AudiencePackageUpdateV2AwemeFanBehaviors    AudiencePackageUpdateV2AwemeFanBehaviors = "GOODS_CARTS_ORDER"
+	COMMENTED_USER_AudiencePackageUpdateV2AwemeFanBehaviors       AudiencePackageUpdateV2AwemeFanBehaviors = "COMMENTED_USER"
+	LIVE_GOODS_CLICK_AudiencePackageUpdateV2AwemeFanBehaviors     AudiencePackageUpdateV2AwemeFanBehaviors = "LIVE_GOODS_CLICK"
+	LIVE_EFFECTIVE_WATCH_AudiencePackageUpdateV2AwemeFanBehaviors AudiencePackageUpdateV2AwemeFanBehaviors = "LIVE_EFFECTIVE_WATCH"
 	LIVE_WATCH_AudiencePackageUpdateV2AwemeFanBehaviors           AudiencePackageUpdateV2AwemeFanBehaviors = "LIVE_WATCH"
 	LIVE_GOODS_ORDER_AudiencePackageUpdateV2AwemeFanBehaviors     AudiencePackageUpdateV2AwemeFanBehaviors = "LIVE_GOODS_ORDER"
-	COMMENTED_USER_AudiencePackageUpdateV2AwemeFanBehaviors       AudiencePackageUpdateV2AwemeFanBehaviors = "COMMENTED_USER"
-	LIVE_EFFECTIVE_WATCH_AudiencePackageUpdateV2AwemeFanBehaviors AudiencePackageUpdateV2AwemeFanBehaviors = "LIVE_EFFECTIVE_WATCH"
-	LIVE_COMMENT_AudiencePackageUpdateV2AwemeFanBehaviors         AudiencePackageUpdateV2AwemeFanBehaviors = "LIVE_COMMENT"
-	GOODS_CARTS_ORDER_AudiencePackageUpdateV2AwemeFanBehaviors    AudiencePackageUpdateV2AwemeFanBehaviors = "GOODS_CARTS_ORDER"
 	LIKED_USER_AudiencePackageUpdateV2AwemeFanBehaviors           AudiencePackageUpdateV2AwemeFanBehaviors = "LIKED_USER"
-	LIVE_GOODS_CLICK_AudiencePackageUpdateV2AwemeFanBehaviors     AudiencePackageUpdateV2AwemeFanBehaviors = "LIVE_GOODS_CLICK"
-	LIVE_EXCEPTIONAL_AudiencePackageUpdateV2AwemeFanBehaviors     AudiencePackageUpdateV2AwemeFanBehaviors = "LIVE_EXCEPTIONAL"
+	GOODS_CARTS_CLICK_AudiencePackageUpdateV2AwemeFanBehaviors    AudiencePackageUpdateV2AwemeFanBehaviors = "GOODS_CARTS_CLICK"
 	SHARED_USER_AudiencePackageUpdateV2AwemeFanBehaviors          AudiencePackageUpdateV2AwemeFanBehaviors = "SHARED_USER"
 )
 

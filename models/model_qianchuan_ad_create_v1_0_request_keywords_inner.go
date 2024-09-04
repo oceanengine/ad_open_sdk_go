@@ -12,7 +12,9 @@ package models
 
 // QianchuanAdCreateV10RequestKeywordsInner struct for QianchuanAdCreateV10RequestKeywordsInner
 type QianchuanAdCreateV10RequestKeywordsInner struct {
-	MatchType QianchuanAdCreateV10KeywordsMatchType `json:"match_type"`
+	// 是否设置抢首屏
+	GrabFirstScreenSwitch *bool                                 `json:"grab_first_screen_switch,omitempty"`
+	MatchType             QianchuanAdCreateV10KeywordsMatchType `json:"match_type"`
 	//
 	Word string `json:"word"`
 	//

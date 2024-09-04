@@ -12,6 +12,8 @@ package models
 
 // StarDemandCreateChallengeV2RequestDemandInfoComponentInfo 组件信息
 type StarDemandCreateChallengeV2RequestDemandInfoComponentInfo struct {
+	// 购物车组件信息，最多7个
+	EcomCart []*StarDemandCreateChallengeV2RequestDemandInfoComponentInfoEcomCartInner `json:"ecom_cart,omitempty"`
 	// 行业组件ID 行业组件不可与Link（常规）组件同时使用，目前仅支持游戏/电商/网服类型 考核指标为组件点击数、激活总数、安装完成数量和APP唤起时必填
 	IndustryComponentId *int64 `json:"industry_component_id,omitempty"`
 	// Link组件ID（落地页组件） 目前只支持1个，仅支持落地页类型

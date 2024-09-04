@@ -18,6 +18,8 @@ const (
 	APP_GAME_StardeliveryTaskCreateV30StarTaskAnchorType             StardeliveryTaskCreateV30StarTaskAnchorType = "APP_GAME"
 	APP_INTERNET_SERVICE_StardeliveryTaskCreateV30StarTaskAnchorType StardeliveryTaskCreateV30StarTaskAnchorType = "APP_INTERNET_SERVICE"
 	APP_SHOP_StardeliveryTaskCreateV30StarTaskAnchorType             StardeliveryTaskCreateV30StarTaskAnchorType = "APP_SHOP"
+	MICRO_APP_StardeliveryTaskCreateV30StarTaskAnchorType            StardeliveryTaskCreateV30StarTaskAnchorType = "MICRO_APP"
+	MICRO_GAME_StardeliveryTaskCreateV30StarTaskAnchorType           StardeliveryTaskCreateV30StarTaskAnchorType = "MICRO_GAME"
 )
 
 // Ptr returns reference to stardelivery_task_create_v3.0_star_task_anchor_type value

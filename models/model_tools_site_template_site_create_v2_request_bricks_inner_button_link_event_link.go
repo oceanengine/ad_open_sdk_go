@@ -12,6 +12,8 @@ package models
 
 // ToolsSiteTemplateSiteCreateV2RequestBricksInnerButtonLinkEventLink 链接信息
 type ToolsSiteTemplateSiteCreateV2RequestBricksInnerButtonLinkEventLink struct {
+	// 快应用资产id
+	AssetId  *string                                                        `json:"asset_id,omitempty"`
 	LinkType ToolsSiteTemplateSiteCreateV2BricksButtonLinkEventLinkLinkType `json:"link_type"`
 	// 快应用地址，当`link_type`为QUICK_APP是，必填
 	QuickApp *string `json:"quick_app,omitempty"`

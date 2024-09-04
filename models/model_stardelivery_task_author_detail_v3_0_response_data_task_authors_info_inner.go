@@ -14,6 +14,8 @@ package models
 type StardeliveryTaskAuthorDetailV30ResponseDataTaskAuthorsInfoInner struct {
 	// 抖音号id
 	AwemeId *string `json:"aweme_id,omitempty"`
+	// 抖音号昵称
+	AwemeName *string `json:"aweme_name,omitempty"`
 	//
 	ValidItemCount *int64 `json:"valid_item_count,omitempty"`
 }

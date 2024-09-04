@@ -17,9 +17,9 @@ type ToolsBidSuggestV2Age string
 const (
 	AGE_BETWEEN_24_30_ToolsBidSuggestV2Age ToolsBidSuggestV2Age = "AGE_BETWEEN_24_30"
 	AGE_BELOW_18_ToolsBidSuggestV2Age      ToolsBidSuggestV2Age = "AGE_BELOW_18"
-	AGE_BETWEEN_41_49_ToolsBidSuggestV2Age ToolsBidSuggestV2Age = "AGE_BETWEEN_41_49"
-	AGE_ABOVE_50_ToolsBidSuggestV2Age      ToolsBidSuggestV2Age = "AGE_ABOVE_50"
 	AGE_BETWEEN_31_40_ToolsBidSuggestV2Age ToolsBidSuggestV2Age = "AGE_BETWEEN_31_40"
+	AGE_ABOVE_50_ToolsBidSuggestV2Age      ToolsBidSuggestV2Age = "AGE_ABOVE_50"
+	AGE_BETWEEN_41_49_ToolsBidSuggestV2Age ToolsBidSuggestV2Age = "AGE_BETWEEN_41_49"
 	AGE_BETWEEN_18_23_ToolsBidSuggestV2Age ToolsBidSuggestV2Age = "AGE_BETWEEN_18_23"
 )
 

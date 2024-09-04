@@ -23,10 +23,10 @@ import (
 )
 
 type ApiOpenApi2StarDemandListGetRequestExample struct {
+	StarId    int64                     `json:"star_id"`
 	Filtering StarDemandListV2Filtering `json:"filtering,omitempty"`
 	Page      int64                     `json:"page,omitempty"`
 	PageSize  int64                     `json:"page_size,omitempty"`
-	StarId    int64                     `json:"star_id,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/star/demand/list/ Get
@@ -48,7 +48,7 @@ func main() {
 	resp, httpRes, err := apiClient.StarDemandListV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).StarId(request.StarId).
+		StarId(request.StarId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

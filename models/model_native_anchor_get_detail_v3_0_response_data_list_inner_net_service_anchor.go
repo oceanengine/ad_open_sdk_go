@@ -37,8 +37,14 @@ type NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchor struct {
 	//
 	IosAnchorTitle *string `json:"ios_anchor_title,omitempty"`
 	//
-	IosDownloadUrl *string                                                         `json:"ios_download_url,omitempty"`
-	NetServiceType *NativeAnchorGetDetailV30DataListNetServiceAnchorNetServiceType `json:"net_service_type,omitempty"`
+	IosDownloadUrl *string `json:"ios_download_url,omitempty"`
+	//
+	MicroAppName *string `json:"micro_app_name,omitempty"`
+	//
+	MicroAppPath *string `json:"micro_app_path,omitempty"`
+	//
+	MicroAppUserName *string                                                         `json:"micro_app_user_name,omitempty"`
+	NetServiceType   *NativeAnchorGetDetailV30DataListNetServiceAnchorNetServiceType `json:"net_service_type,omitempty"`
 	//
 	NovelChapter *string `json:"novel_chapter,omitempty"`
 	//

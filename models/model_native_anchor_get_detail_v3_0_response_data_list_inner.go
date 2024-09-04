@@ -22,11 +22,14 @@ type NativeAnchorGetDetailV30ResponseDataListInner struct {
 	CreateTime                *string                                                                 `json:"create_time,omitempty"`
 	GameAnchor                *NativeAnchorGetDetailV30ResponseDataListInnerGameAnchor                `json:"game_anchor,omitempty"`
 	InsuranceEnterpriseAnchor *NativeAnchorGetDetailV30ResponseDataListInnerInsuranceEnterpriseAnchor `json:"insurance_enterprise_anchor,omitempty"`
+	MicroAppAnchor            *NativeAnchorGetDetailV30ResponseDataListInnerMicroAppAnchor            `json:"micro_app_anchor,omitempty"`
+	MicroGameAnchor           *NativeAnchorGetDetailV30ResponseDataListInnerMicroGameAnchor           `json:"micro_game_anchor,omitempty"`
 	//
 	ModifyTime         *string                                                          `json:"modify_time,omitempty"`
 	NetServiceAnchor   *NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchor   `json:"net_service_anchor,omitempty"`
 	PrivateChatAnchor  *NativeAnchorGetDetailV30ResponseDataListInnerPrivateChatAnchor  `json:"private_chat_anchor,omitempty"`
 	ShoppingCartAnchor *NativeAnchorGetDetailV30ResponseDataListInnerShoppingCartAnchor `json:"shopping_cart_anchor,omitempty"`
+	Source             *NativeAnchorGetDetailV30DataListSource                          `json:"source,omitempty"`
 	//
 	ToolTitle *string `json:"tool_title,omitempty"`
 }

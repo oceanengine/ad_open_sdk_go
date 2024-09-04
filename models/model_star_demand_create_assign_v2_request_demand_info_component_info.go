@@ -14,6 +14,8 @@ package models
 type StarDemandCreateAssignV2RequestDemandInfoComponentInfo struct {
 	// 共创组件引流抖音号
 	CocreateDouyinId *string `json:"cocreate_douyin_id,omitempty"`
+	// 购物车组件信息，最多不超过7个
+	EcomCart []*StarDemandCreateAssignV2RequestDemandInfoComponentInfoEcomCartInner `json:"ecom_cart,omitempty"`
 	// 行业组件ID
 	IndustryComponentId *int64 `json:"industry_component_id,omitempty"`
 	// Link组件ID（落地页组件） 目前只支持1个

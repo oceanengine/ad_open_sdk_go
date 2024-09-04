@@ -47,8 +47,16 @@ type StarDemandCreateAssignV2RequestDemandInfo struct {
 	ProductIndustry []string `json:"product_industry"`
 	// 产品介绍(500字内)
 	ProductInformation string `json:"product_information"`
+	// 商品链接
+	ProductLink *string `json:"product_link,omitempty"`
 	// 产品名称(40字内)
 	ProductName string `json:"product_name"`
+	// 项目ID
+	ProjectId *int64 `json:"project_id,omitempty"`
 	// 星智投预审，0或不传为不开启，1为开启
 	XingzhitouPreAudit *int32 `json:"xingzhitou_pre_audit,omitempty"`
+	// 云图行业ID，目前仅支持填一个
+	YuntuIndustryIds []int64 `json:"yuntu_industry_ids,omitempty"`
+	// 品牌列表接口中返回的云图品牌ID
+	YuntuMainBrand *int64 `json:"yuntu_main_brand,omitempty"`
 }

@@ -15,9 +15,13 @@ type PromotionCreateV30RequestPromotionMaterialsMiniProgramInfo struct {
 	//
 	AppId *string `json:"app_id,omitempty"`
 	//
+	Auto []*PromotionCreateV30RequestPromotionMaterialsMiniProgramInfoAutoInner `json:"auto,omitempty"`
+	//
 	Params *string `json:"params,omitempty"`
 	//
 	StartPath *string `json:"start_path,omitempty"`
 	//
 	Url *string `json:"url,omitempty"`
+	// 字节小程序调起链接（多个），支持传入1条以上url，传输会检查url正确性
+	Urls []string `json:"urls,omitempty"`
 }

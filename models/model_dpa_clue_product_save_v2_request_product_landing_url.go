@@ -10,8 +10,8 @@ Oceanengine Open Api
 
 package models
 
-// DpaClueProductSaveV2RequestProductLandingInfo 落地页信息
-type DpaClueProductSaveV2RequestProductLandingInfo struct {
+// DpaClueProductSaveV2RequestProductLandingUrl 落地页信息
+type DpaClueProductSaveV2RequestProductLandingUrl struct {
 	// 落地页
 	TargetUrl *string `json:"target_url,omitempty"`
 	// 安卓落地页

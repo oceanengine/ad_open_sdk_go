@@ -20,6 +20,8 @@ type StardeliveryTaskCreateV30Request struct {
 	AuthorTaskName string `json:"author_task_name"`
 	// 请传入一级行业分类ID，请先调用「获取行业列表」接口获取行业ID 当前支持： - 游戏（一级行业id = 1913） - 零售（一级行业id = 1914） - 文体娱乐（一级行业id = 1921） - 传媒资讯（一级行业id = 1922） - 工具类软件（一级行业id = 1928） - 社交通讯（一级行业id= 1935）
 	FirstIndustryId int32 `json:"first_industry_id"`
+	// 字节小程序链接，当锚点类型为字节小程序时传入有效 - 传参要求：   - 链接中包含的小程序appid必须与锚点内的字节小程序appid一致，否则会报错   - 建议通过「获取字节小程序/小游戏详情内容」接口查询锚点所选字节小程序下可用的链接（对应接口应答参数中的link字段）
+	MicroAppLink *string `json:"micro_app_link,omitempty"`
 	// 请传入二级行业分类ID，请先调用「获取行业列表」接口获取行业ID 必须传入以下一级行业类目中的二级行业类目ID - 游戏（一级行业id = 1913） - 零售（一级行业id = 1914） - 文体娱乐（一级行业id = 1921） - 传媒资讯（一级行业id = 1922） - 工具类软件（一级行业id = 1928） - 社交通讯（一级行业id= 1935）
 	SecondIndustryId int32 `json:"second_industry_id"`
 	// 素材出价，只允许整数，每条视频最低需要付给达人的底价价格，该出价影响达人接单的积极性 不同素材类型组合下的出价要求不同，最小可出价金额请调用「获取星广任务金额配置条件」接口查询，最高10000元

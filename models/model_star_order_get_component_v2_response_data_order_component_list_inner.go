@@ -15,6 +15,8 @@ type StarOrderGetComponentV2ResponseDataOrderComponentListInner struct {
 	//
 	CocreateDouyinId *string `json:"cocreate_douyin_id,omitempty"`
 	//
+	EcomInfo []*StarOrderGetComponentV2ResponseDataOrderComponentListInnerEcomInfoInner `json:"ecom_info,omitempty"`
+	//
 	IndustryComponentId *int64 `json:"industry_component_id,omitempty"`
 	// 常规组件信息
 	LinkComponentList []*StarOrderGetComponentV2ResponseDataOrderComponentListInnerLinkComponentListInner `json:"link_component_list,omitempty"`

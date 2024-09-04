@@ -12,6 +12,8 @@ package models
 
 // ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerButtonDownloadEventAndroidLink android链接信息
 type ToolsSiteTemplateGetV2ResponseDataListInnerBricksInnerButtonDownloadEventAndroidLink struct {
+	// 快应用资产id
+	AssetId *string `json:"asset_id,omitempty"`
 	// 应用描述，为了展示效果，推荐12个中文字符长度
 	Description *string                                                                    `json:"description,omitempty"`
 	LinkType    ToolsSiteTemplateGetV2DataListBricksButtonDownloadEventAndroidLinkLinkType `json:"link_type"`

@@ -32,8 +32,8 @@ type DpaClueProductSaveV2RequestProduct struct {
 	// 商品组图
 	ImagesUrl []*DpaClueProductSaveV2RequestProductImagesUrlInner `json:"images_url,omitempty"`
 	//
-	Label       []string                                       `json:"label,omitempty"`
-	LandingInfo *DpaClueProductSaveV2RequestProductLandingInfo `json:"landing_info,omitempty"`
+	Label      []string                                      `json:"label,omitempty"`
+	LandingUrl *DpaClueProductSaveV2RequestProductLandingUrl `json:"landing_url,omitempty"`
 	// 评分
 	Mark *float64 `json:"mark,omitempty"`
 	// 商品名称

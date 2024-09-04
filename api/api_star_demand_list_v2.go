@@ -25,12 +25,18 @@ type StarDemandListV2ApiService service
 type ApiOpenApi2StarDemandListGetRequest struct {
 	ctx        context.Context
 	ApiService *StarDemandListV2ApiService
+	starId     *int64
 	filtering  *StarDemandListV2Filtering
 	page       *int64
 	pageSize   *int64
-	starId     *int64
 }
 
+func (r *ApiOpenApi2StarDemandListGetRequest) StarId(starId int64) *ApiOpenApi2StarDemandListGetRequest {
+	r.starId = &starId
+	return r
+}
+
+// 过滤器
 func (r *ApiOpenApi2StarDemandListGetRequest) Filtering(filtering StarDemandListV2Filtering) *ApiOpenApi2StarDemandListGetRequest {
 	r.filtering = &filtering
 	return r
@@ -43,11 +49,6 @@ func (r *ApiOpenApi2StarDemandListGetRequest) Page(page int64) *ApiOpenApi2StarD
 
 func (r *ApiOpenApi2StarDemandListGetRequest) PageSize(pageSize int64) *ApiOpenApi2StarDemandListGetRequest {
 	r.pageSize = &pageSize
-	return r
-}
-
-func (r *ApiOpenApi2StarDemandListGetRequest) StarId(starId int64) *ApiOpenApi2StarDemandListGetRequest {
-	r.starId = &starId
 	return r
 }
 
@@ -101,7 +102,11 @@ func (a *StarDemandListV2ApiService) getExecute(r *ApiOpenApi2StarDemandListGetR
 	formFiles = make(map[string]*FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
+	if r.starId == nil {
+		return localVarReturnValue, nil, ReportError("starId is required and must be specified")
+	}
 
+	parameterAddToHeaderOrQuery(localVarQueryParams, "star_id", r.starId)
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
@@ -110,9 +115,6 @@ func (a *StarDemandListV2ApiService) getExecute(r *ApiOpenApi2StarDemandListGetR
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
-	}
-	if r.starId != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "star_id", r.starId)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
