@@ -487,7 +487,6 @@ api/api_shared_wallet_wallet_balance_get_v30.go
 api/api_shared_wallet_wallet_info_get_v30.go
 api/api_shared_wallet_wallet_relation_get_v30.go
 api/api_spi_task_get_v2.go
-api/api_star_attachment_upload_v2.go
 api/api_star_bill_get_pending_v2.go
 api/api_star_bill_pay_v2.go
 api/api_star_brand_category_list_v2.go
@@ -695,7 +694,6 @@ api/api_tools_event_assets_get_v2.go
 api/api_tools_event_convert_optimized_goal_get_v30.go
 api/api_tools_forbidden_link_grey_get_v30.go
 api/api_tools_gray_get_v30.go
-api/api_tools_ies_account_search_v2.go
 api/api_tools_industry_get_v2.go
 api/api_tools_interest_action_action_keyword_v2.go
 api/api_tools_interest_action_id2word_v2.go
@@ -1300,7 +1298,6 @@ examples/shared_wallet_wallet_balance_get_v30_example.go
 examples/shared_wallet_wallet_info_get_v30_example.go
 examples/shared_wallet_wallet_relation_get_v30_example.go
 examples/spi_task_get_v2_example.go
-examples/star_attachment_upload_v2_example.go
 examples/star_bill_get_pending_v2_example.go
 examples/star_bill_pay_v2_example.go
 examples/star_brand_category_list_v2_example.go
@@ -1508,7 +1505,6 @@ examples/tools_event_assets_get_v2_example.go
 examples/tools_event_convert_optimized_goal_get_v30_example.go
 examples/tools_forbidden_link_grey_get_v30_example.go
 examples/tools_gray_get_v30_example.go
-examples/tools_ies_account_search_v2_example.go
 examples/tools_industry_get_v2_example.go
 examples/tools_interest_action_action_keyword_v2_example.go
 examples/tools_interest_action_id2word_v2_example.go
@@ -6146,9 +6142,6 @@ models/model_spi_task_get_v2_response_data_cursor_info.go
 models/model_spi_task_get_v2_response_data_list_inner.go
 models/model_spi_task_get_v2_response_data_page_info.go
 models/model_spi_task_get_v2_status.go
-models/model_star_attachment_upload_v2_request.go
-models/model_star_attachment_upload_v2_response.go
-models/model_star_attachment_upload_v2_response_data.go
 models/model_star_bill_get_pending_v2_response.go
 models/model_star_bill_get_pending_v2_response_data.go
 models/model_star_bill_get_pending_v2_response_data_order_bill_list_inner.go
@@ -7388,7 +7381,6 @@ models/model_tools_forbidden_link_grey_get_v3_0_response_data.go
 models/model_tools_gray_get_v3_0_response.go
 models/model_tools_gray_get_v3_0_response_data.go
 models/model_tools_gray_get_v3_0_response_data_list_inner.go
-models/model_tools_ies_account_search_v2_response.go
 models/model_tools_industry_get_v2_level.go
 models/model_tools_industry_get_v2_response.go
 models/model_tools_industry_get_v2_response_data.go
@@ -8600,7 +8592,6 @@ test/api_shared_wallet_wallet_balance_get_v30_test.go
 test/api_shared_wallet_wallet_info_get_v30_test.go
 test/api_shared_wallet_wallet_relation_get_v30_test.go
 test/api_spi_task_get_v2_test.go
-test/api_star_attachment_upload_v2_test.go
 test/api_star_bill_get_pending_v2_test.go
 test/api_star_bill_pay_v2_test.go
 test/api_star_brand_category_list_v2_test.go
@@ -8808,7 +8799,6 @@ test/api_tools_event_assets_get_v2_test.go
 test/api_tools_event_convert_optimized_goal_get_v30_test.go
 test/api_tools_forbidden_link_grey_get_v30_test.go
 test/api_tools_gray_get_v30_test.go
-test/api_tools_ies_account_search_v2_test.go
 test/api_tools_industry_get_v2_test.go
 test/api_tools_interest_action_action_keyword_v2_test.go
 test/api_tools_interest_action_id2word_v2_test.go

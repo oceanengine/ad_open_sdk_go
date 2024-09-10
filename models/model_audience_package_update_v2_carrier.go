@@ -15,8 +15,8 @@ type AudiencePackageUpdateV2Carrier string
 
 // List of audience_package_update_v2_carrier
 const (
-	UNICOM_AudiencePackageUpdateV2Carrier AudiencePackageUpdateV2Carrier = "UNICOM"
 	MOBILE_AudiencePackageUpdateV2Carrier AudiencePackageUpdateV2Carrier = "MOBILE"
+	UNICOM_AudiencePackageUpdateV2Carrier AudiencePackageUpdateV2Carrier = "UNICOM"
 	TELCOM_AudiencePackageUpdateV2Carrier AudiencePackageUpdateV2Carrier = "TELCOM"
 )
 

@@ -15,7 +15,7 @@ type RecommendVideoListV30Request struct {
 	//
 	AdvertiserId int64 `json:"advertiser_id"`
 	// 抖音号id
-	AwemeId []string `json:"aweme_id"`
+	AwemeId []string `json:"aweme_id,omitempty"`
 	//
 	ProjectId int64 `json:"project_id"`
 }

@@ -15,10 +15,10 @@ type QianchuanCreativeStatusUpdateV10OptStatus string
 
 // List of qianchuan_creative_status_update_v1.0_opt_status
 const (
-	REVIVE_QianchuanCreativeStatusUpdateV10OptStatus  QianchuanCreativeStatusUpdateV10OptStatus = "REVIVE"
-	DELETE_QianchuanCreativeStatusUpdateV10OptStatus  QianchuanCreativeStatusUpdateV10OptStatus = "DELETE"
 	DISABLE_QianchuanCreativeStatusUpdateV10OptStatus QianchuanCreativeStatusUpdateV10OptStatus = "DISABLE"
+	REVIVE_QianchuanCreativeStatusUpdateV10OptStatus  QianchuanCreativeStatusUpdateV10OptStatus = "REVIVE"
 	ENABLE_QianchuanCreativeStatusUpdateV10OptStatus  QianchuanCreativeStatusUpdateV10OptStatus = "ENABLE"
+	DELETE_QianchuanCreativeStatusUpdateV10OptStatus  QianchuanCreativeStatusUpdateV10OptStatus = "DELETE"
 )
 
 // Ptr returns reference to qianchuan_creative_status_update_v1.0_opt_status value

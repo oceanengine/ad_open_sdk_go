@@ -690,7 +690,6 @@ Class | Method | HTTP request
 *SharedWalletWalletInfoGetV30Api* | **OpenApiV30SharedWalletWalletInfoGetGet** | **Get** /open_api/v3.0/shared_wallet/wallet_info/get/
 *SharedWalletWalletRelationGetV30Api* | **OpenApiV30SharedWalletWalletRelationGetGet** | **Get** /open_api/v3.0/shared_wallet/wallet_relation/get/
 *SpiTaskGetV2Api* | **OpenApi2SpiTaskGetGet** | **Get** /open_api/2/spi_task/get/
-*StarAttachmentUploadV2Api* | **OpenApi2StarAttachmentUploadPost** | **Post** /open_api/2/star/attachment/upload/
 *StarBillGetPendingV2Api* | **OpenApi2StarBillGetPendingGet** | **Get** /open_api/2/star/bill/get_pending/
 *StarBillPayV2Api* | **OpenApi2StarBillPayPost** | **Post** /open_api/2/star/bill/pay/
 *StarBrandCategoryListV2Api* | **OpenApi2StarBrandCategoryListGet** | **Get** /open_api/2/star/brand_category/list/
@@ -898,7 +897,6 @@ Class | Method | HTTP request
 *ToolsEventConvertOptimizedGoalGetV30Api* | **OpenApiV30ToolsEventConvertOptimizedGoalGetGet** | **Get** /open_api/v3.0/tools/event_convert/optimized_goal/get/
 *ToolsForbiddenLinkGreyGetV30Api* | **OpenApiV30ToolsForbiddenLinkGreyGetGet** | **Get** /open_api/v3.0/tools/forbidden_link/grey/get/
 *ToolsGrayGetV30Api* | **OpenApiV30ToolsGrayGetGet** | **Get** /open_api/v3.0/tools/gray/get/
-*ToolsIesAccountSearchV2Api* | **OpenApi2ToolsIesAccountSearchGet** | **Get** /open_api/2/tools/ies_account_search/
 *ToolsIndustryGetV2Api* | **OpenApi2ToolsIndustryGetGet** | **Get** /open_api/2/tools/industry/get/
 *ToolsInterestActionActionKeywordV2Api* | **OpenApi2ToolsInterestActionActionKeywordGet** | **Get** /open_api/2/tools/interest_action/action/keyword/
 *ToolsInterestActionId2wordV2Api* | **OpenApi2ToolsInterestActionId2wordGet** | **Get** /open_api/2/tools/interest_action/id2word/

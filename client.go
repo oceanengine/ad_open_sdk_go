@@ -1,5 +1,5 @@
 /*
-API version: 1.1.18
+API version: 1.1.19
 */
 package ad_open_sdk_go
 
@@ -1963,10 +1963,6 @@ func (c *Client) SpiTaskGetV2Api() *api.SpiTaskGetV2ApiService {
 	return c.ApiClient.SpiTaskGetV2Api
 }
 
-func (c *Client) StarAttachmentUploadV2Api() *api.StarAttachmentUploadV2ApiService {
-	return c.ApiClient.StarAttachmentUploadV2Api
-}
-
 func (c *Client) StarBillGetPendingV2Api() *api.StarBillGetPendingV2ApiService {
 	return c.ApiClient.StarBillGetPendingV2Api
 }
@@ -2793,10 +2789,6 @@ func (c *Client) ToolsForbiddenLinkGreyGetV30Api() *api.ToolsForbiddenLinkGreyGe
 
 func (c *Client) ToolsGrayGetV30Api() *api.ToolsGrayGetV30ApiService {
 	return c.ApiClient.ToolsGrayGetV30Api
-}
-
-func (c *Client) ToolsIesAccountSearchV2Api() *api.ToolsIesAccountSearchV2ApiService {
-	return c.ApiClient.ToolsIesAccountSearchV2Api
 }
 
 func (c *Client) ToolsIndustryGetV2Api() *api.ToolsIndustryGetV2ApiService {

@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.18
+// APIClient manages communication with the Oceanengine Open Api API v1.1.19
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -1019,8 +1019,6 @@ type APIClient struct {
 
 	SpiTaskGetV2Api *SpiTaskGetV2ApiService
 
-	StarAttachmentUploadV2Api *StarAttachmentUploadV2ApiService
-
 	StarBillGetPendingV2Api *StarBillGetPendingV2ApiService
 
 	StarBillPayV2Api *StarBillPayV2ApiService
@@ -1434,8 +1432,6 @@ type APIClient struct {
 	ToolsForbiddenLinkGreyGetV30Api *ToolsForbiddenLinkGreyGetV30ApiService
 
 	ToolsGrayGetV30Api *ToolsGrayGetV30ApiService
-
-	ToolsIesAccountSearchV2Api *ToolsIesAccountSearchV2ApiService
 
 	ToolsIndustryGetV2Api *ToolsIndustryGetV2ApiService
 
@@ -2166,7 +2162,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.SharedWalletWalletInfoGetV30Api = (*SharedWalletWalletInfoGetV30ApiService)(&c.common)
 	c.SharedWalletWalletRelationGetV30Api = (*SharedWalletWalletRelationGetV30ApiService)(&c.common)
 	c.SpiTaskGetV2Api = (*SpiTaskGetV2ApiService)(&c.common)
-	c.StarAttachmentUploadV2Api = (*StarAttachmentUploadV2ApiService)(&c.common)
 	c.StarBillGetPendingV2Api = (*StarBillGetPendingV2ApiService)(&c.common)
 	c.StarBillPayV2Api = (*StarBillPayV2ApiService)(&c.common)
 	c.StarBrandCategoryListV2Api = (*StarBrandCategoryListV2ApiService)(&c.common)
@@ -2374,7 +2369,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsEventConvertOptimizedGoalGetV30Api = (*ToolsEventConvertOptimizedGoalGetV30ApiService)(&c.common)
 	c.ToolsForbiddenLinkGreyGetV30Api = (*ToolsForbiddenLinkGreyGetV30ApiService)(&c.common)
 	c.ToolsGrayGetV30Api = (*ToolsGrayGetV30ApiService)(&c.common)
-	c.ToolsIesAccountSearchV2Api = (*ToolsIesAccountSearchV2ApiService)(&c.common)
 	c.ToolsIndustryGetV2Api = (*ToolsIndustryGetV2ApiService)(&c.common)
 	c.ToolsInterestActionActionKeywordV2Api = (*ToolsInterestActionActionKeywordV2ApiService)(&c.common)
 	c.ToolsInterestActionId2wordV2Api = (*ToolsInterestActionId2wordV2ApiService)(&c.common)

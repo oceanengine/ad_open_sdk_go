@@ -26,6 +26,10 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	AuthorNickname *string `json:"author_nickname,omitempty"`
 	// 内容创作者角色，包括\"商家\",\"职人\",\"达人\",\"星图达人\"
 	AuthorRole *string `json:"author_role,omitempty"`
+	// 线索所属城市name
+	AutoCityName *string `json:"auto_city_name,omitempty"`
+	// 线索所属省份name
+	AutoProvinceName *string `json:"auto_province_name,omitempty"`
 	// 图文id
 	CarouselId *int64 `json:"carousel_id,omitempty"`
 	// 用户填写城市
