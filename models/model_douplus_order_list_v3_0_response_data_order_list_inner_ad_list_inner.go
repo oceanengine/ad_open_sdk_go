@@ -26,5 +26,7 @@ type DouplusOrderListV30ResponseDataOrderListInnerAdListInner struct {
 	//
 	ExternalAction *int64 `json:"external_action,omitempty"`
 	//
+	ExternalActionText *string `json:"external_action_text,omitempty"`
+	//
 	IsFans *bool `json:"is_fans,omitempty"`
 }

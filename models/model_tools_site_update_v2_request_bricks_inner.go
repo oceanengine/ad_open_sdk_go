@@ -50,6 +50,8 @@ type ToolsSiteUpdateV2RequestBricksInner struct {
 	FontStyle []string                                     `json:"font_style,omitempty"`
 	FormData  *ToolsSiteUpdateV2RequestBricksInnerFormData `json:"form_data,omitempty"`
 	//
+	GamePath *string `json:"game_path,omitempty"`
+	//
 	GroupContent []*ToolsSiteUpdateV2RequestBricksInnerGroupContentInner `json:"group_content,omitempty"`
 	//
 	GroupType *string `json:"group_type,omitempty"`
@@ -61,6 +63,8 @@ type ToolsSiteUpdateV2RequestBricksInner struct {
 	Icon *string `json:"icon,omitempty"`
 	//
 	ImageUrl *string `json:"image_url,omitempty"`
+	//
+	InstanceId *int64 `json:"instance_id,omitempty"`
 	//
 	IsCover *int64 `json:"is_cover,omitempty"`
 	//
@@ -89,6 +93,7 @@ type ToolsSiteUpdateV2RequestBricksInner struct {
 	//
 	RewardsButtonTextFontSize *int64                                          `json:"rewards_button_text_font_size,omitempty"`
 	RuleText                  *ToolsSiteUpdateV2RequestBricksInnerRuleText    `json:"rule_text,omitempty"`
+	Setting                   *ToolsSiteUpdateV2RequestBricksInnerSetting     `json:"setting,omitempty"`
 	SuccessLink               *ToolsSiteUpdateV2RequestBricksInnerSuccessLink `json:"success_link,omitempty"`
 	//
 	SuccessTip *string `json:"success_tip,omitempty"`

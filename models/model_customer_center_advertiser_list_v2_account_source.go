@@ -15,10 +15,10 @@ type CustomerCenterAdvertiserListV2AccountSource string
 
 // List of customer_center_advertiser_list_v2_account_source
 const (
-	ENTERPRISE_CustomerCenterAdvertiserListV2AccountSource CustomerCenterAdvertiserListV2AccountSource = "ENTERPRISE"
 	LOCAL_CustomerCenterAdvertiserListV2AccountSource      CustomerCenterAdvertiserListV2AccountSource = "LOCAL"
-	QIANCHUAN_CustomerCenterAdvertiserListV2AccountSource  CustomerCenterAdvertiserListV2AccountSource = "QIANCHUAN"
 	AD_CustomerCenterAdvertiserListV2AccountSource         CustomerCenterAdvertiserListV2AccountSource = "AD"
+	ENTERPRISE_CustomerCenterAdvertiserListV2AccountSource CustomerCenterAdvertiserListV2AccountSource = "ENTERPRISE"
+	QIANCHUAN_CustomerCenterAdvertiserListV2AccountSource  CustomerCenterAdvertiserListV2AccountSource = "QIANCHUAN"
 )
 
 // Ptr returns reference to customer_center_advertiser_list_v2_account_source value

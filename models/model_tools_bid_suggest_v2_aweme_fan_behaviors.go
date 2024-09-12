@@ -15,18 +15,18 @@ type ToolsBidSuggestV2AwemeFanBehaviors string
 
 // List of tools_bid_suggest_v2_aweme_fan_behaviors
 const (
-	SHARED_USER_ToolsBidSuggestV2AwemeFanBehaviors          ToolsBidSuggestV2AwemeFanBehaviors = "SHARED_USER"
-	LIVE_EFFECTIVE_WATCH_ToolsBidSuggestV2AwemeFanBehaviors ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_EFFECTIVE_WATCH"
-	LIKED_USER_ToolsBidSuggestV2AwemeFanBehaviors           ToolsBidSuggestV2AwemeFanBehaviors = "LIKED_USER"
-	COMMENTED_USER_ToolsBidSuggestV2AwemeFanBehaviors       ToolsBidSuggestV2AwemeFanBehaviors = "COMMENTED_USER"
-	LIVE_WATCH_ToolsBidSuggestV2AwemeFanBehaviors           ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_WATCH"
+	GOODS_CARTS_CLICK_ToolsBidSuggestV2AwemeFanBehaviors    ToolsBidSuggestV2AwemeFanBehaviors = "GOODS_CARTS_CLICK"
 	FOLLOWED_USER_ToolsBidSuggestV2AwemeFanBehaviors        ToolsBidSuggestV2AwemeFanBehaviors = "FOLLOWED_USER"
-	LIVE_EXCEPTIONAL_ToolsBidSuggestV2AwemeFanBehaviors     ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_EXCEPTIONAL"
-	LIVE_GOODS_ORDER_ToolsBidSuggestV2AwemeFanBehaviors     ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_GOODS_ORDER"
+	COMMENTED_USER_ToolsBidSuggestV2AwemeFanBehaviors       ToolsBidSuggestV2AwemeFanBehaviors = "COMMENTED_USER"
+	LIVE_EFFECTIVE_WATCH_ToolsBidSuggestV2AwemeFanBehaviors ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_EFFECTIVE_WATCH"
 	LIVE_COMMENT_ToolsBidSuggestV2AwemeFanBehaviors         ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_COMMENT"
 	GOODS_CARTS_ORDER_ToolsBidSuggestV2AwemeFanBehaviors    ToolsBidSuggestV2AwemeFanBehaviors = "GOODS_CARTS_ORDER"
-	GOODS_CARTS_CLICK_ToolsBidSuggestV2AwemeFanBehaviors    ToolsBidSuggestV2AwemeFanBehaviors = "GOODS_CARTS_CLICK"
+	SHARED_USER_ToolsBidSuggestV2AwemeFanBehaviors          ToolsBidSuggestV2AwemeFanBehaviors = "SHARED_USER"
+	LIVE_GOODS_ORDER_ToolsBidSuggestV2AwemeFanBehaviors     ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_GOODS_ORDER"
 	LIVE_GOODS_CLICK_ToolsBidSuggestV2AwemeFanBehaviors     ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_GOODS_CLICK"
+	LIKED_USER_ToolsBidSuggestV2AwemeFanBehaviors           ToolsBidSuggestV2AwemeFanBehaviors = "LIKED_USER"
+	LIVE_EXCEPTIONAL_ToolsBidSuggestV2AwemeFanBehaviors     ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_EXCEPTIONAL"
+	LIVE_WATCH_ToolsBidSuggestV2AwemeFanBehaviors           ToolsBidSuggestV2AwemeFanBehaviors = "LIVE_WATCH"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_aweme_fan_behaviors value

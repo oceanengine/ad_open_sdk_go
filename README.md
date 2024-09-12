@@ -363,9 +363,12 @@ Class | Method | HTTP request
 *DmpDataSourceFileUploadV2Api* | **OpenApi2DmpDataSourceFileUploadPost** | **Post** /open_api/2/dmp/data_source/file/upload/
 *DmpDataSourceReadV2Api* | **OpenApi2DmpDataSourceReadGet** | **Get** /open_api/2/dmp/data_source/read/
 *DmpDataSourceUpdateV2Api* | **OpenApi2DmpDataSourceUpdatePost** | **Post** /open_api/2/dmp/data_source/update/
+*DouplusOptionalItemsListV30Api* | **OpenApiV30DouplusOptionalItemsListGet** | **Get** /open_api/v3.0/douplus/optional_items/list/
+*DouplusOptionalTargetsListV30Api* | **OpenApiV30DouplusOptionalTargetsListGet** | **Get** /open_api/v3.0/douplus/optional_targets/list/
 *DouplusOrderCloseV30Api* | **OpenApiV30DouplusOrderClosePost** | **Post** /open_api/v3.0/douplus/order/close/
 *DouplusOrderCreateV30Api* | **OpenApiV30DouplusOrderCreatePost** | **Post** /open_api/v3.0/douplus/order/create/
 *DouplusOrderListV30Api* | **OpenApiV30DouplusOrderListGet** | **Get** /open_api/v3.0/douplus/order/list/
+*DouplusOrderRenewV30Api* | **OpenApiV30DouplusOrderRenewPost** | **Post** /open_api/v3.0/douplus/order/renew/
 *DouplusOrderReportV30Api* | **OpenApiV30DouplusOrderReportGet** | **Get** /open_api/v3.0/douplus/order/report/
 *DownloadStatementV2Api* | **OpenApi2DownloadStatementGet** | **Get** /open_api/2/download/statement/
 *DpaAssetV2DetailReadV2Api* | **OpenApi2DpaAssetV2DetailReadPost** | **Post** /open_api/2/dpa/asset_v2/detail/read/

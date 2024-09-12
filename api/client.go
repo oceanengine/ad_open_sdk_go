@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.19
+// APIClient manages communication with the Oceanengine Open Api API v1.1.20
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -365,11 +365,17 @@ type APIClient struct {
 
 	DmpDataSourceUpdateV2Api *DmpDataSourceUpdateV2ApiService
 
+	DouplusOptionalItemsListV30Api *DouplusOptionalItemsListV30ApiService
+
+	DouplusOptionalTargetsListV30Api *DouplusOptionalTargetsListV30ApiService
+
 	DouplusOrderCloseV30Api *DouplusOrderCloseV30ApiService
 
 	DouplusOrderCreateV30Api *DouplusOrderCreateV30ApiService
 
 	DouplusOrderListV30Api *DouplusOrderListV30ApiService
+
+	DouplusOrderRenewV30Api *DouplusOrderRenewV30ApiService
 
 	DouplusOrderReportV30Api *DouplusOrderReportV30ApiService
 
@@ -1835,9 +1841,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.DmpDataSourceFileUploadV2Api = (*DmpDataSourceFileUploadV2ApiService)(&c.common)
 	c.DmpDataSourceReadV2Api = (*DmpDataSourceReadV2ApiService)(&c.common)
 	c.DmpDataSourceUpdateV2Api = (*DmpDataSourceUpdateV2ApiService)(&c.common)
+	c.DouplusOptionalItemsListV30Api = (*DouplusOptionalItemsListV30ApiService)(&c.common)
+	c.DouplusOptionalTargetsListV30Api = (*DouplusOptionalTargetsListV30ApiService)(&c.common)
 	c.DouplusOrderCloseV30Api = (*DouplusOrderCloseV30ApiService)(&c.common)
 	c.DouplusOrderCreateV30Api = (*DouplusOrderCreateV30ApiService)(&c.common)
 	c.DouplusOrderListV30Api = (*DouplusOrderListV30ApiService)(&c.common)
+	c.DouplusOrderRenewV30Api = (*DouplusOrderRenewV30ApiService)(&c.common)
 	c.DouplusOrderReportV30Api = (*DouplusOrderReportV30ApiService)(&c.common)
 	c.DownloadStatementV2Api = (*DownloadStatementV2ApiService)(&c.common)
 	c.DpaAssetV2DetailReadV2Api = (*DpaAssetV2DetailReadV2ApiService)(&c.common)

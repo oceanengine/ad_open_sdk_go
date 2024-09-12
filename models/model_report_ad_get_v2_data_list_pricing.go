@@ -15,13 +15,13 @@ type ReportAdGetV2DataListPricing string
 
 // List of report_ad_get_v2_data_list_pricing
 const (
-	PRICING_OCPC_ReportAdGetV2DataListPricing ReportAdGetV2DataListPricing = "PRICING_OCPC"
 	PRICING_CPM_ReportAdGetV2DataListPricing  ReportAdGetV2DataListPricing = "PRICING_CPM"
-	PRICING_CPC_ReportAdGetV2DataListPricing  ReportAdGetV2DataListPricing = "PRICING_CPC"
 	PRICING_CPA_ReportAdGetV2DataListPricing  ReportAdGetV2DataListPricing = "PRICING_CPA"
-	PRICING_ECPC_ReportAdGetV2DataListPricing ReportAdGetV2DataListPricing = "PRICING_ECPC"
-	PRICING_OCPM_ReportAdGetV2DataListPricing ReportAdGetV2DataListPricing = "PRICING_OCPM"
 	PRICING_CPV_ReportAdGetV2DataListPricing  ReportAdGetV2DataListPricing = "PRICING_CPV"
+	PRICING_ECPC_ReportAdGetV2DataListPricing ReportAdGetV2DataListPricing = "PRICING_ECPC"
+	PRICING_CPC_ReportAdGetV2DataListPricing  ReportAdGetV2DataListPricing = "PRICING_CPC"
+	PRICING_OCPC_ReportAdGetV2DataListPricing ReportAdGetV2DataListPricing = "PRICING_OCPC"
+	PRICING_OCPM_ReportAdGetV2DataListPricing ReportAdGetV2DataListPricing = "PRICING_OCPM"
 )
 
 // Ptr returns reference to report_ad_get_v2_data_list_pricing value

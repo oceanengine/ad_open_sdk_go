@@ -16,4 +16,6 @@ type StarChallengeGetCustomTaskDataV2ResponseDataItemListInnerAuthorInfo struct 
 	AuthorId *int64 `json:"author_id,omitempty"`
 	// 达人名称
 	AuthorName *string `json:"author_name,omitempty"`
+	// 抖音号
+	DouyinId *string `json:"douyin_id,omitempty"`
 }

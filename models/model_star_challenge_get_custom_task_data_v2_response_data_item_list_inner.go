@@ -15,6 +15,8 @@ type StarChallengeGetCustomTaskDataV2ResponseDataItemListInner struct {
 	// 含作弊的Android下载数/Android激活数
 	AndroidConvertCount *int32                                                               `json:"android_convert_count,omitempty"`
 	AuthorInfo          *StarChallengeGetCustomTaskDataV2ResponseDataItemListInnerAuthorInfo `json:"author_info,omitempty"`
+	// channel_id
+	ChannelId *string `json:"channel_id,omitempty"`
 	// 评论量
 	Comment *int64 `json:"comment,omitempty"`
 	// 组件点击量
@@ -25,6 +27,8 @@ type StarChallengeGetCustomTaskDataV2ResponseDataItemListInner struct {
 	ContractMcnName *string `json:"contract_mcn_name,omitempty"`
 	// 促活转化数（线索量/安装量等）
 	ConvertCount *int64 `json:"convert_count,omitempty"`
+	// 视频封面图
+	CoverUrl *string `json:"cover_url,omitempty"`
 	// 发布时间
 	CreateTime *int64 `json:"create_time,omitempty"`
 	// 去除作弊后的ios下载数/ios激活数
@@ -55,6 +59,8 @@ type StarChallengeGetCustomTaskDataV2ResponseDataItemListInner struct {
 	Uncorrelated *int32 `json:"uncorrelated,omitempty"`
 	// 链接
 	Url *string `json:"url,omitempty"`
+	// 视频时长
+	VideoDurationMs *int64 `json:"video_duration_ms,omitempty"`
 	// 有效评论量
 	WhiteComment *int32 `json:"white_comment,omitempty"`
 	// 有效点赞量

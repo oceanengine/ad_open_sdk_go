@@ -18,8 +18,10 @@ type DouplusOrderListV30ResponseDataOrderListInnerOrder struct {
 	//
 	OrderCreateTime *string `json:"order_create_time,omitempty"`
 	//
-	OrderId   *int64                                          `json:"order_id,omitempty"`
-	SceneType *DouplusOrderListV30DataOrderListOrderSceneType `json:"scene_type,omitempty"`
+	OrderId *int64 `json:"order_id,omitempty"`
+	// 续费次数
+	RenewCount *int64                                          `json:"renew_count,omitempty"`
+	SceneType  *DouplusOrderListV30DataOrderListOrderSceneType `json:"scene_type,omitempty"`
 	//
 	TaskId     *int64                                           `json:"task_id,omitempty"`
 	TaskStatus *DouplusOrderListV30DataOrderListOrderTaskStatus `json:"task_status,omitempty"`

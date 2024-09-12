@@ -1,5 +1,5 @@
 /*
-API version: 1.1.19
+API version: 1.1.20
 */
 package ad_open_sdk_go
 
@@ -655,6 +655,14 @@ func (c *Client) DmpDataSourceUpdateV2Api() *api.DmpDataSourceUpdateV2ApiService
 	return c.ApiClient.DmpDataSourceUpdateV2Api
 }
 
+func (c *Client) DouplusOptionalItemsListV30Api() *api.DouplusOptionalItemsListV30ApiService {
+	return c.ApiClient.DouplusOptionalItemsListV30Api
+}
+
+func (c *Client) DouplusOptionalTargetsListV30Api() *api.DouplusOptionalTargetsListV30ApiService {
+	return c.ApiClient.DouplusOptionalTargetsListV30Api
+}
+
 func (c *Client) DouplusOrderCloseV30Api() *api.DouplusOrderCloseV30ApiService {
 	return c.ApiClient.DouplusOrderCloseV30Api
 }
@@ -665,6 +673,10 @@ func (c *Client) DouplusOrderCreateV30Api() *api.DouplusOrderCreateV30ApiService
 
 func (c *Client) DouplusOrderListV30Api() *api.DouplusOrderListV30ApiService {
 	return c.ApiClient.DouplusOrderListV30Api
+}
+
+func (c *Client) DouplusOrderRenewV30Api() *api.DouplusOrderRenewV30ApiService {
+	return c.ApiClient.DouplusOrderRenewV30Api
 }
 
 func (c *Client) DouplusOrderReportV30Api() *api.DouplusOrderReportV30ApiService {

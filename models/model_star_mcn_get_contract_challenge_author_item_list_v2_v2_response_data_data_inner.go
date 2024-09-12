@@ -88,4 +88,6 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner struct {
 	ShareVv *int64 `json:"share_vv,omitempty"`
 	//
 	Uncorrelated *int64 `json:"uncorrelated,omitempty"`
+	//
+	VideoParticipateProviderChannel *string `json:"video_participate_provider_channel,omitempty"`
 }

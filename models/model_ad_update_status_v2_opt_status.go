@@ -15,8 +15,8 @@ type AdUpdateStatusV2OptStatus string
 
 // List of ad_update_status_v2_opt_status
 const (
-	DELETE_AdUpdateStatusV2OptStatus  AdUpdateStatusV2OptStatus = "delete"
 	DISABLE_AdUpdateStatusV2OptStatus AdUpdateStatusV2OptStatus = "disable"
+	DELETE_AdUpdateStatusV2OptStatus  AdUpdateStatusV2OptStatus = "delete"
 	ENABLE_AdUpdateStatusV2OptStatus  AdUpdateStatusV2OptStatus = "enable"
 )
 

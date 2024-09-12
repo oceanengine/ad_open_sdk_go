@@ -28,6 +28,7 @@ type ApiOpenApi2ToolsSiteGetGetRequestExample struct {
 	Page          int64                   `json:"page,omitempty"`
 	PageSize      int64                   `json:"page_size,omitempty"`
 	Status        ToolsSiteGetV2Status    `json:"status,omitempty"`
+	ShareType     ToolsSiteGetV2ShareType `json:"share_type,omitempty"`
 	Filtering     ToolsSiteGetV2Filtering `json:"filtering,omitempty"`
 }
 
@@ -50,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsSiteGetV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).XOrangeCaller(request.XOrangeCaller).Page(request.Page).PageSize(request.PageSize).Status(request.Status).Filtering(request.Filtering).
+		AdvertiserId(request.AdvertiserId).XOrangeCaller(request.XOrangeCaller).Page(request.Page).PageSize(request.PageSize).Status(request.Status).ShareType(request.ShareType).Filtering(request.Filtering).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

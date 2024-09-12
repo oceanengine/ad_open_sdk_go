@@ -15,6 +15,8 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerItemInfoD
 	//
 	AuthorAmount *int64 `json:"author_amount,omitempty"`
 	//
+	IaaIncomeDaily *string `json:"iaa_income_daily,omitempty"`
+	//
 	PDate *string `json:"p_date,omitempty"`
 	//
 	ServiceProviderAmount *int64 `json:"service_provider_amount,omitempty"`

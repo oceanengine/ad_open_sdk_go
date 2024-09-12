@@ -15,9 +15,12 @@ type ToolsClueCallbackV2Request struct {
 	//
 	AdvertiserIds []int64 `json:"advertiser_ids"`
 	//
+	ClickId *string `json:"click_id,omitempty"`
+	//
 	ClueConvertState int64 `json:"clue_convert_state"`
 	//
-	ClueId string `json:"clue_id"`
+	ClueId    *string                              `json:"clue_id,omitempty"`
+	EventData *ToolsClueCallbackV2RequestEventData `json:"event_data,omitempty"`
 	//
 	Source int64 `json:"source"`
 }

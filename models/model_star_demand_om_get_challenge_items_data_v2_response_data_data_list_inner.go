@@ -40,6 +40,8 @@ type StarDemandOmGetChallengeItemsDataV2ResponseDataDataListInner struct {
 	PlayVv *int64 `json:"play_vv,omitempty"`
 	//
 	PromoteCnt *int64 `json:"promote_cnt,omitempty"`
+	// 撮合服务商ID
+	ProviderId *int64 `json:"provider_id,omitempty"`
 	// 发布时间 秒级时间戳，1658073600 则表示 2022-07-18 00:00:00
 	ReleaseTime *int64 `json:"release_time,omitempty"`
 	//
