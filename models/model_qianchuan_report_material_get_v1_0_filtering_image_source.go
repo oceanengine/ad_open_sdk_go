@@ -19,6 +19,7 @@ const (
 	CREATIVE_CENTER_QianchuanReportMaterialGetV10FilteringImageSource QianchuanReportMaterialGetV10FilteringImageSource = "CREATIVE_CENTER"
 	E_COMMERCE_QianchuanReportMaterialGetV10FilteringImageSource      QianchuanReportMaterialGetV10FilteringImageSource = "E_COMMERCE"
 	JI_CHUANG_QianchuanReportMaterialGetV10FilteringImageSource       QianchuanReportMaterialGetV10FilteringImageSource = "JI_CHUANG"
+	QUNFENG_QianchuanReportMaterialGetV10FilteringImageSource         QianchuanReportMaterialGetV10FilteringImageSource = "QUNFENG"
 	SQUARE_QianchuanReportMaterialGetV10FilteringImageSource          QianchuanReportMaterialGetV10FilteringImageSource = "SQUARE"
 )
 

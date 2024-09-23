@@ -17,6 +17,7 @@ type ReportCustomAsyncTaskGetV30DataListDataTopic string
 const (
 	BASIC_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic         ReportCustomAsyncTaskGetV30DataListDataTopic = "BASIC_DATA"
 	BIDWORD_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic       ReportCustomAsyncTaskGetV30DataListDataTopic = "BIDWORD_DATA"
+	DPA_VIDEO_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic     ReportCustomAsyncTaskGetV30DataListDataTopic = "DPA_VIDEO_DATA"
 	MATERIAL_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic      ReportCustomAsyncTaskGetV30DataListDataTopic = "MATERIAL_DATA"
 	ONE_KEY_BOOST_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic ReportCustomAsyncTaskGetV30DataListDataTopic = "ONE_KEY_BOOST_DATA"
 	PRODUCT_DATA_ReportCustomAsyncTaskGetV30DataListDataTopic       ReportCustomAsyncTaskGetV30DataListDataTopic = "PRODUCT_DATA"

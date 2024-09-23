@@ -24,6 +24,7 @@ const (
 	DEEP_BID_TYPE_RETENTION_DAYS_ProjectListV30DataListDeliverySettingDeepBidType ProjectListV30DataListDeliverySettingDeepBidType = "DEEP_BID_TYPE_RETENTION_DAYS"
 	FIRST_AND_SEVEN_PAY_ROI_ProjectListV30DataListDeliverySettingDeepBidType      ProjectListV30DataListDeliverySettingDeepBidType = "FIRST_AND_SEVEN_PAY_ROI"
 	FORM_BID_ProjectListV30DataListDeliverySettingDeepBidType                     ProjectListV30DataListDeliverySettingDeepBidType = "FORM_BID"
+	LOAN_ROI_ProjectListV30DataListDeliverySettingDeepBidType                     ProjectListV30DataListDeliverySettingDeepBidType = "LOAN_ROI"
 	MIN_SECOND_STAGE_ProjectListV30DataListDeliverySettingDeepBidType             ProjectListV30DataListDeliverySettingDeepBidType = "MIN_SECOND_STAGE"
 	PACING_SECOND_STAGE_ProjectListV30DataListDeliverySettingDeepBidType          ProjectListV30DataListDeliverySettingDeepBidType = "PACING_SECOND_STAGE"
 	PER_AND_SEVEN_PAY_ROI_ProjectListV30DataListDeliverySettingDeepBidType        ProjectListV30DataListDeliverySettingDeepBidType = "PER_AND_SEVEN_PAY_ROI"

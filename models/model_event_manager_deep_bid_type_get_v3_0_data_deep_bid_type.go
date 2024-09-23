@@ -24,6 +24,7 @@ const (
 	DEEP_BID_TYPE_RETENTION_DAYS_EventManagerDeepBidTypeGetV30DataDeepBidType EventManagerDeepBidTypeGetV30DataDeepBidType = "DEEP_BID_TYPE_RETENTION_DAYS"
 	FIRST_AND_SEVEN_PAY_ROI_EventManagerDeepBidTypeGetV30DataDeepBidType      EventManagerDeepBidTypeGetV30DataDeepBidType = "FIRST_AND_SEVEN_PAY_ROI"
 	FORM_BID_EventManagerDeepBidTypeGetV30DataDeepBidType                     EventManagerDeepBidTypeGetV30DataDeepBidType = "FORM_BID"
+	LOAN_ROI_EventManagerDeepBidTypeGetV30DataDeepBidType                     EventManagerDeepBidTypeGetV30DataDeepBidType = "LOAN_ROI"
 	MIN_SECOND_STAGE_EventManagerDeepBidTypeGetV30DataDeepBidType             EventManagerDeepBidTypeGetV30DataDeepBidType = "MIN_SECOND_STAGE"
 	PACING_SECOND_STAGE_EventManagerDeepBidTypeGetV30DataDeepBidType          EventManagerDeepBidTypeGetV30DataDeepBidType = "PACING_SECOND_STAGE"
 	PER_AND_SEVEN_PAY_ROI_EventManagerDeepBidTypeGetV30DataDeepBidType        EventManagerDeepBidTypeGetV30DataDeepBidType = "PER_AND_SEVEN_PAY_ROI"

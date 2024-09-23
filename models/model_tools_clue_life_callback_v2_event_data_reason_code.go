@@ -29,6 +29,8 @@ const (
 	HOME_CONNECTED_WITH_INTERESTED_PARTY_ToolsClueLifeCallbackV2EventDataReasonCode ToolsClueLifeCallbackV2EventDataReasonCode = "HOME_CONNECTED_WITH_INTERESTED_PARTY"
 	HOME_CONTRACT_SIGNED_ToolsClueLifeCallbackV2EventDataReasonCode                 ToolsClueLifeCallbackV2EventDataReasonCode = "HOME_CONTRACT_SIGNED"
 	HOME_MEASUREMENT_COMPLETED_ToolsClueLifeCallbackV2EventDataReasonCode           ToolsClueLifeCallbackV2EventDataReasonCode = "HOME_MEASUREMENT_COMPLETED"
+	HOME_MISMATCH_DIFFERENT_LOCATIONS_ToolsClueLifeCallbackV2EventDataReasonCode    ToolsClueLifeCallbackV2EventDataReasonCode = "HOME_MISMATCH_DIFFERENT_LOCATIONS"
+	HOME_MISMATCH_LOW_BUDGET_ToolsClueLifeCallbackV2EventDataReasonCode             ToolsClueLifeCallbackV2EventDataReasonCode = "HOME_MISMATCH_LOW_BUDGET"
 	HOME_NO_SHOW_FOR_MEASUREMENT_VISIT_ToolsClueLifeCallbackV2EventDataReasonCode   ToolsClueLifeCallbackV2EventDataReasonCode = "HOME_NO_SHOW_FOR_MEASUREMENT_VISIT"
 	HOME_ORDER_DISPATCHED_ToolsClueLifeCallbackV2EventDataReasonCode                ToolsClueLifeCallbackV2EventDataReasonCode = "HOME_ORDER_DISPATCHED"
 	HOME_RENOVATION_TYPE_NOT_ACCEPTABLE_ToolsClueLifeCallbackV2EventDataReasonCode  ToolsClueLifeCallbackV2EventDataReasonCode = "HOME_RENOVATION_TYPE_NOT_ACCEPTABLE"

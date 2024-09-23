@@ -16,4 +16,6 @@ type StarVasCreateBoostItemGroupV2ResponseData struct {
 	FailReason *string `json:"fail_reason,omitempty"`
 	// 是否下单成功
 	Success bool `json:"success"`
+	// 助推组ID
+	TaskId *int64 `json:"task_id,omitempty"`
 }

@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.20
+// APIClient manages communication with the Oceanengine Open Api API v1.1.21
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -339,6 +339,12 @@ type APIClient struct {
 
 	DecorationCouponGetV30Api *DecorationCouponGetV30ApiService
 
+	DiagnosisTaskAdvCreateV2Api *DiagnosisTaskAdvCreateV2ApiService
+
+	DiagnosisTaskAdvGetV2Api *DiagnosisTaskAdvGetV2ApiService
+
+	DiagnosisTaskAdvListV2Api *DiagnosisTaskAdvListV2ApiService
+
 	DiagnosisTaskAgentCreateV2Api *DiagnosisTaskAgentCreateV2ApiService
 
 	DiagnosisTaskAgentGetV2Api *DiagnosisTaskAgentGetV2ApiService
@@ -558,6 +564,48 @@ type APIClient struct {
 	KeywordUpdateV2V2Api *KeywordUpdateV2V2ApiService
 
 	KeywordUpdateV30Api *KeywordUpdateV30ApiService
+
+	LocalAwemeAuthorizedGetV30Api *LocalAwemeAuthorizedGetV30ApiService
+
+	LocalCustomAudienceGetV30Api *LocalCustomAudienceGetV30ApiService
+
+	LocalFileUploadTaskCreateV30Api *LocalFileUploadTaskCreateV30ApiService
+
+	LocalFileVideoAwemeGetV30Api *LocalFileVideoAwemeGetV30ApiService
+
+	LocalFileVideoGetV30Api *LocalFileVideoGetV30ApiService
+
+	LocalFileVideoUploadTaskListV30Api *LocalFileVideoUploadTaskListV30ApiService
+
+	LocalFileVideoUploadV30Api *LocalFileVideoUploadV30ApiService
+
+	LocalMultiPoiIdPoiIdsGetV30Api *LocalMultiPoiIdPoiIdsGetV30ApiService
+
+	LocalPoiGetV30Api *LocalPoiGetV30ApiService
+
+	LocalProductGetByPoiidsV30Api *LocalProductGetByPoiidsV30ApiService
+
+	LocalProductGetV30Api *LocalProductGetV30ApiService
+
+	LocalProjectCreateV30Api *LocalProjectCreateV30ApiService
+
+	LocalProjectDetailV30Api *LocalProjectDetailV30ApiService
+
+	LocalProjectListV30Api *LocalProjectListV30ApiService
+
+	LocalProjectStatusUpdateV30Api *LocalProjectStatusUpdateV30ApiService
+
+	LocalProjectUpdateV30Api *LocalProjectUpdateV30ApiService
+
+	LocalPromotionCreateV30Api *LocalPromotionCreateV30ApiService
+
+	LocalPromotionDetailV30Api *LocalPromotionDetailV30ApiService
+
+	LocalPromotionListV30Api *LocalPromotionListV30ApiService
+
+	LocalPromotionStatusUpdateV30Api *LocalPromotionStatusUpdateV30ApiService
+
+	LocalPromotionUpdateV30Api *LocalPromotionUpdateV30ApiService
 
 	LocalReportMaterialGetV30Api *LocalReportMaterialGetV30ApiService
 
@@ -1828,6 +1876,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.CustomerCenterFundTransferSeqCommitV2Api = (*CustomerCenterFundTransferSeqCommitV2ApiService)(&c.common)
 	c.CustomerCenterFundTransferSeqCreateV2Api = (*CustomerCenterFundTransferSeqCreateV2ApiService)(&c.common)
 	c.DecorationCouponGetV30Api = (*DecorationCouponGetV30ApiService)(&c.common)
+	c.DiagnosisTaskAdvCreateV2Api = (*DiagnosisTaskAdvCreateV2ApiService)(&c.common)
+	c.DiagnosisTaskAdvGetV2Api = (*DiagnosisTaskAdvGetV2ApiService)(&c.common)
+	c.DiagnosisTaskAdvListV2Api = (*DiagnosisTaskAdvListV2ApiService)(&c.common)
 	c.DiagnosisTaskAgentCreateV2Api = (*DiagnosisTaskAgentCreateV2ApiService)(&c.common)
 	c.DiagnosisTaskAgentGetV2Api = (*DiagnosisTaskAgentGetV2ApiService)(&c.common)
 	c.DiagnosisTaskAgentListV2Api = (*DiagnosisTaskAgentListV2ApiService)(&c.common)
@@ -1938,6 +1989,27 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.KeywordListV30Api = (*KeywordListV30ApiService)(&c.common)
 	c.KeywordUpdateV2V2Api = (*KeywordUpdateV2V2ApiService)(&c.common)
 	c.KeywordUpdateV30Api = (*KeywordUpdateV30ApiService)(&c.common)
+	c.LocalAwemeAuthorizedGetV30Api = (*LocalAwemeAuthorizedGetV30ApiService)(&c.common)
+	c.LocalCustomAudienceGetV30Api = (*LocalCustomAudienceGetV30ApiService)(&c.common)
+	c.LocalFileUploadTaskCreateV30Api = (*LocalFileUploadTaskCreateV30ApiService)(&c.common)
+	c.LocalFileVideoAwemeGetV30Api = (*LocalFileVideoAwemeGetV30ApiService)(&c.common)
+	c.LocalFileVideoGetV30Api = (*LocalFileVideoGetV30ApiService)(&c.common)
+	c.LocalFileVideoUploadTaskListV30Api = (*LocalFileVideoUploadTaskListV30ApiService)(&c.common)
+	c.LocalFileVideoUploadV30Api = (*LocalFileVideoUploadV30ApiService)(&c.common)
+	c.LocalMultiPoiIdPoiIdsGetV30Api = (*LocalMultiPoiIdPoiIdsGetV30ApiService)(&c.common)
+	c.LocalPoiGetV30Api = (*LocalPoiGetV30ApiService)(&c.common)
+	c.LocalProductGetByPoiidsV30Api = (*LocalProductGetByPoiidsV30ApiService)(&c.common)
+	c.LocalProductGetV30Api = (*LocalProductGetV30ApiService)(&c.common)
+	c.LocalProjectCreateV30Api = (*LocalProjectCreateV30ApiService)(&c.common)
+	c.LocalProjectDetailV30Api = (*LocalProjectDetailV30ApiService)(&c.common)
+	c.LocalProjectListV30Api = (*LocalProjectListV30ApiService)(&c.common)
+	c.LocalProjectStatusUpdateV30Api = (*LocalProjectStatusUpdateV30ApiService)(&c.common)
+	c.LocalProjectUpdateV30Api = (*LocalProjectUpdateV30ApiService)(&c.common)
+	c.LocalPromotionCreateV30Api = (*LocalPromotionCreateV30ApiService)(&c.common)
+	c.LocalPromotionDetailV30Api = (*LocalPromotionDetailV30ApiService)(&c.common)
+	c.LocalPromotionListV30Api = (*LocalPromotionListV30ApiService)(&c.common)
+	c.LocalPromotionStatusUpdateV30Api = (*LocalPromotionStatusUpdateV30ApiService)(&c.common)
+	c.LocalPromotionUpdateV30Api = (*LocalPromotionUpdateV30ApiService)(&c.common)
 	c.LocalReportMaterialGetV30Api = (*LocalReportMaterialGetV30ApiService)(&c.common)
 	c.LocalReportProjectGetV30Api = (*LocalReportProjectGetV30ApiService)(&c.common)
 	c.LocalReportPromotionGetV30Api = (*LocalReportPromotionGetV30ApiService)(&c.common)

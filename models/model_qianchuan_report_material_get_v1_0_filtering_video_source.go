@@ -23,6 +23,7 @@ const (
 	E_COMMERCE_QianchuanReportMaterialGetV10FilteringVideoSource      QianchuanReportMaterialGetV10FilteringVideoSource = "E_COMMERCE"
 	JI_CHUANG_QianchuanReportMaterialGetV10FilteringVideoSource       QianchuanReportMaterialGetV10FilteringVideoSource = "JI_CHUANG"
 	LIVE_HIGHLIGHT_QianchuanReportMaterialGetV10FilteringVideoSource  QianchuanReportMaterialGetV10FilteringVideoSource = "LIVE_HIGHLIGHT"
+	QUNFENG_QianchuanReportMaterialGetV10FilteringVideoSource         QianchuanReportMaterialGetV10FilteringVideoSource = "QUNFENG"
 	STAR_QianchuanReportMaterialGetV10FilteringVideoSource            QianchuanReportMaterialGetV10FilteringVideoSource = "STAR"
 	TADA_QianchuanReportMaterialGetV10FilteringVideoSource            QianchuanReportMaterialGetV10FilteringVideoSource = "TADA"
 	VIDEO_CAPTURE_QianchuanReportMaterialGetV10FilteringVideoSource   QianchuanReportMaterialGetV10FilteringVideoSource = "VIDEO_CAPTURE"

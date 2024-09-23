@@ -23,6 +23,7 @@ const (
 	E_COMMERCE_QianchuanVideoGetV10DataListSource      QianchuanVideoGetV10DataListSource = "E_COMMERCE"
 	JI_CHUANG_QianchuanVideoGetV10DataListSource       QianchuanVideoGetV10DataListSource = "JI_CHUANG"
 	LIVE_HIGHLIGHT_QianchuanVideoGetV10DataListSource  QianchuanVideoGetV10DataListSource = "LIVE_HIGHLIGHT"
+	QUNFENG_QianchuanVideoGetV10DataListSource         QianchuanVideoGetV10DataListSource = "QUNFENG"
 	STAR_QianchuanVideoGetV10DataListSource            QianchuanVideoGetV10DataListSource = "STAR"
 	TADA_QianchuanVideoGetV10DataListSource            QianchuanVideoGetV10DataListSource = "TADA"
 	VIDEO_CAPTURE_QianchuanVideoGetV10DataListSource   QianchuanVideoGetV10DataListSource = "VIDEO_CAPTURE"

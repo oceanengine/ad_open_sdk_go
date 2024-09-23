@@ -1,5 +1,5 @@
 /*
-API version: 1.1.20
+API version: 1.1.21
 */
 package ad_open_sdk_go
 
@@ -603,6 +603,18 @@ func (c *Client) DecorationCouponGetV30Api() *api.DecorationCouponGetV30ApiServi
 	return c.ApiClient.DecorationCouponGetV30Api
 }
 
+func (c *Client) DiagnosisTaskAdvCreateV2Api() *api.DiagnosisTaskAdvCreateV2ApiService {
+	return c.ApiClient.DiagnosisTaskAdvCreateV2Api
+}
+
+func (c *Client) DiagnosisTaskAdvGetV2Api() *api.DiagnosisTaskAdvGetV2ApiService {
+	return c.ApiClient.DiagnosisTaskAdvGetV2Api
+}
+
+func (c *Client) DiagnosisTaskAdvListV2Api() *api.DiagnosisTaskAdvListV2ApiService {
+	return c.ApiClient.DiagnosisTaskAdvListV2Api
+}
+
 func (c *Client) DiagnosisTaskAgentCreateV2Api() *api.DiagnosisTaskAgentCreateV2ApiService {
 	return c.ApiClient.DiagnosisTaskAgentCreateV2Api
 }
@@ -1041,6 +1053,90 @@ func (c *Client) KeywordUpdateV2V2Api() *api.KeywordUpdateV2V2ApiService {
 
 func (c *Client) KeywordUpdateV30Api() *api.KeywordUpdateV30ApiService {
 	return c.ApiClient.KeywordUpdateV30Api
+}
+
+func (c *Client) LocalAwemeAuthorizedGetV30Api() *api.LocalAwemeAuthorizedGetV30ApiService {
+	return c.ApiClient.LocalAwemeAuthorizedGetV30Api
+}
+
+func (c *Client) LocalCustomAudienceGetV30Api() *api.LocalCustomAudienceGetV30ApiService {
+	return c.ApiClient.LocalCustomAudienceGetV30Api
+}
+
+func (c *Client) LocalFileUploadTaskCreateV30Api() *api.LocalFileUploadTaskCreateV30ApiService {
+	return c.ApiClient.LocalFileUploadTaskCreateV30Api
+}
+
+func (c *Client) LocalFileVideoAwemeGetV30Api() *api.LocalFileVideoAwemeGetV30ApiService {
+	return c.ApiClient.LocalFileVideoAwemeGetV30Api
+}
+
+func (c *Client) LocalFileVideoGetV30Api() *api.LocalFileVideoGetV30ApiService {
+	return c.ApiClient.LocalFileVideoGetV30Api
+}
+
+func (c *Client) LocalFileVideoUploadTaskListV30Api() *api.LocalFileVideoUploadTaskListV30ApiService {
+	return c.ApiClient.LocalFileVideoUploadTaskListV30Api
+}
+
+func (c *Client) LocalFileVideoUploadV30Api() *api.LocalFileVideoUploadV30ApiService {
+	return c.ApiClient.LocalFileVideoUploadV30Api
+}
+
+func (c *Client) LocalMultiPoiIdPoiIdsGetV30Api() *api.LocalMultiPoiIdPoiIdsGetV30ApiService {
+	return c.ApiClient.LocalMultiPoiIdPoiIdsGetV30Api
+}
+
+func (c *Client) LocalPoiGetV30Api() *api.LocalPoiGetV30ApiService {
+	return c.ApiClient.LocalPoiGetV30Api
+}
+
+func (c *Client) LocalProductGetByPoiidsV30Api() *api.LocalProductGetByPoiidsV30ApiService {
+	return c.ApiClient.LocalProductGetByPoiidsV30Api
+}
+
+func (c *Client) LocalProductGetV30Api() *api.LocalProductGetV30ApiService {
+	return c.ApiClient.LocalProductGetV30Api
+}
+
+func (c *Client) LocalProjectCreateV30Api() *api.LocalProjectCreateV30ApiService {
+	return c.ApiClient.LocalProjectCreateV30Api
+}
+
+func (c *Client) LocalProjectDetailV30Api() *api.LocalProjectDetailV30ApiService {
+	return c.ApiClient.LocalProjectDetailV30Api
+}
+
+func (c *Client) LocalProjectListV30Api() *api.LocalProjectListV30ApiService {
+	return c.ApiClient.LocalProjectListV30Api
+}
+
+func (c *Client) LocalProjectStatusUpdateV30Api() *api.LocalProjectStatusUpdateV30ApiService {
+	return c.ApiClient.LocalProjectStatusUpdateV30Api
+}
+
+func (c *Client) LocalProjectUpdateV30Api() *api.LocalProjectUpdateV30ApiService {
+	return c.ApiClient.LocalProjectUpdateV30Api
+}
+
+func (c *Client) LocalPromotionCreateV30Api() *api.LocalPromotionCreateV30ApiService {
+	return c.ApiClient.LocalPromotionCreateV30Api
+}
+
+func (c *Client) LocalPromotionDetailV30Api() *api.LocalPromotionDetailV30ApiService {
+	return c.ApiClient.LocalPromotionDetailV30Api
+}
+
+func (c *Client) LocalPromotionListV30Api() *api.LocalPromotionListV30ApiService {
+	return c.ApiClient.LocalPromotionListV30Api
+}
+
+func (c *Client) LocalPromotionStatusUpdateV30Api() *api.LocalPromotionStatusUpdateV30ApiService {
+	return c.ApiClient.LocalPromotionStatusUpdateV30Api
+}
+
+func (c *Client) LocalPromotionUpdateV30Api() *api.LocalPromotionUpdateV30ApiService {
+	return c.ApiClient.LocalPromotionUpdateV30Api
 }
 
 func (c *Client) LocalReportMaterialGetV30Api() *api.LocalReportMaterialGetV30ApiService {

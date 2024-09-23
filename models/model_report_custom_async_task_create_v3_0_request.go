@@ -27,6 +27,10 @@ type ReportCustomAsyncTaskCreateV30Request struct {
 	Metrics []string `json:"metrics"`
 	//
 	OrderBy []*ReportCustomAsyncTaskCreateV30RequestOrderByInner `json:"order_by"`
+	// 页码。默认为1
+	Page *int32 `json:"page,omitempty"`
+	// 页面大小。默认和最大都为100万
+	PageSize *int32 `json:"page_size,omitempty"`
 	//
 	StartTime string `json:"start_time"`
 	//

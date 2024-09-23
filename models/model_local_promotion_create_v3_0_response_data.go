@@ -10,10 +10,8 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueCallbackV2ResponseData
-type ToolsClueCallbackV2ResponseData struct {
+// LocalPromotionCreateV30ResponseData
+type LocalPromotionCreateV30ResponseData struct {
 	//
-	Message *string `json:"message,omitempty"`
-	//
-	Status *int64 `json:"status,omitempty"`
+	PromotionId *int64 `json:"promotion_id,omitempty"`
 }

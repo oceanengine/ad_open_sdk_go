@@ -16,5 +16,9 @@ type AgentAdvertiserSelectV2Filtering struct {
 	AdvertiserIds []int64                                     `json:"advertiser_ids,omitempty"`
 	CostPeriod    *AgentAdvertiserSelectV2FilteringCostPeriod `json:"cost_period,omitempty"`
 	//
+	CreateEndTime **string `json:"create_end_time,omitempty"`
+	//
+	CreateStartTime **string `json:"create_start_time,omitempty"`
+	//
 	StatCostFenGt *int64 `json:"stat_cost_fen_gt,omitempty"`
 }

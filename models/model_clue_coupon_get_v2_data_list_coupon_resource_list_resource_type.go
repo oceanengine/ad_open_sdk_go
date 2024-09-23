@@ -15,11 +15,11 @@ type ClueCouponGetV2DataListCouponResourceListResourceType string
 
 // List of clue_coupon_get_v2_data_list_coupon_resource_list_resource_type
 const (
-	FULL_ClueCouponGetV2DataListCouponResourceListResourceType     ClueCouponGetV2DataListCouponResourceListResourceType = "FULL"
-	PHYSICAL_ClueCouponGetV2DataListCouponResourceListResourceType ClueCouponGetV2DataListCouponResourceListResourceType = "PHYSICAL"
+	GAME_ClueCouponGetV2DataListCouponResourceListResourceType     ClueCouponGetV2DataListCouponResourceListResourceType = "GAME"
 	DISCOUNT_ClueCouponGetV2DataListCouponResourceListResourceType ClueCouponGetV2DataListCouponResourceListResourceType = "DISCOUNT"
 	COMMON_ClueCouponGetV2DataListCouponResourceListResourceType   ClueCouponGetV2DataListCouponResourceListResourceType = "COMMON"
-	GAME_ClueCouponGetV2DataListCouponResourceListResourceType     ClueCouponGetV2DataListCouponResourceListResourceType = "GAME"
+	FULL_ClueCouponGetV2DataListCouponResourceListResourceType     ClueCouponGetV2DataListCouponResourceListResourceType = "FULL"
+	PHYSICAL_ClueCouponGetV2DataListCouponResourceListResourceType ClueCouponGetV2DataListCouponResourceListResourceType = "PHYSICAL"
 )
 
 // Ptr returns reference to clue_coupon_get_v2_data_list_coupon_resource_list_resource_type value

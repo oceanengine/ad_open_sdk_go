@@ -15,6 +15,7 @@ type ProjectListV30DataListDeliverySettingScheduleType string
 
 // List of project_list_v3.0_data_list_delivery_setting_schedule_type
 const (
+	SCHEDULE_7_DAYS_ProjectListV30DataListDeliverySettingScheduleType    ProjectListV30DataListDeliverySettingScheduleType = "SCHEDULE_7_DAYS"
 	SCHEDULE_FROM_NOW_ProjectListV30DataListDeliverySettingScheduleType  ProjectListV30DataListDeliverySettingScheduleType = "SCHEDULE_FROM_NOW"
 	SCHEDULE_START_END_ProjectListV30DataListDeliverySettingScheduleType ProjectListV30DataListDeliverySettingScheduleType = "SCHEDULE_START_END"
 )

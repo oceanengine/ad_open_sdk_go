@@ -13,8 +13,9 @@ package models
 // ToolsClueCallbackV2Response struct for ToolsClueCallbackV2Response
 type ToolsClueCallbackV2Response struct {
 	//
-	Code *int64                           `json:"code,omitempty"`
-	Data *ToolsClueCallbackV2ResponseData `json:"data,omitempty"`
+	Code *int64 `json:"code,omitempty"`
+	//
+	Data map[string]interface{} `json:"data,omitempty"`
 	//
 	Message *string `json:"message,omitempty"`
 	//

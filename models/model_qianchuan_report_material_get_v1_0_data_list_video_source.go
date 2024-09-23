@@ -22,6 +22,7 @@ const (
 	E_COMMERCE_QianchuanReportMaterialGetV10DataListVideoSource      QianchuanReportMaterialGetV10DataListVideoSource = "E_COMMERCE"
 	JI_CHUANG_QianchuanReportMaterialGetV10DataListVideoSource       QianchuanReportMaterialGetV10DataListVideoSource = "JI_CHUANG"
 	LIVE_HIGHLIGHT_QianchuanReportMaterialGetV10DataListVideoSource  QianchuanReportMaterialGetV10DataListVideoSource = "LIVE_HIGHLIGHT"
+	QUNFENG_QianchuanReportMaterialGetV10DataListVideoSource         QianchuanReportMaterialGetV10DataListVideoSource = "QUNFENG"
 	STAR_QianchuanReportMaterialGetV10DataListVideoSource            QianchuanReportMaterialGetV10DataListVideoSource = "STAR"
 	TADA_QianchuanReportMaterialGetV10DataListVideoSource            QianchuanReportMaterialGetV10DataListVideoSource = "TADA"
 	VIDEO_CAPTURE_QianchuanReportMaterialGetV10DataListVideoSource   QianchuanReportMaterialGetV10DataListVideoSource = "VIDEO_CAPTURE"

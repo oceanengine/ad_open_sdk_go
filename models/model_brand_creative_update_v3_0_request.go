@@ -13,8 +13,9 @@ package models
 // BrandCreativeUpdateV30Request struct for BrandCreativeUpdateV30Request
 type BrandCreativeUpdateV30Request struct {
 	// 计划ID
-	AdId             int64                                          `json:"ad_id"`
-	AdvancedCreative *BrandCreativeUpdateV30RequestAdvancedCreative `json:"advanced_creative,omitempty"`
+	AdId                 int64                                              `json:"ad_id"`
+	AdvancedCreative     *BrandCreativeUpdateV30RequestAdvancedCreative     `json:"advanced_creative,omitempty"`
+	AdvancedCreativeInfo *BrandCreativeUpdateV30RequestAdvancedCreativeInfo `json:"advanced_creative_info,omitempty"`
 	// 广告组ID
 	AdvertiserId int64 `json:"advertiser_id"`
 	// 抖音号ID

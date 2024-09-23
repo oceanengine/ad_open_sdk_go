@@ -12,7 +12,8 @@ package models
 
 // BrandCreativeCreateV30RequestCreativeListInner struct for BrandCreativeCreateV30RequestCreativeListInner
 type BrandCreativeCreateV30RequestCreativeListInner struct {
-	AdvancedCreative *BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreative `json:"advanced_creative,omitempty"`
+	AdvancedCreative     *BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreative     `json:"advanced_creative,omitempty"`
+	AdvancedCreativeInfo *BrandCreativeCreateV30RequestCreativeListInnerAdvancedCreativeInfo `json:"advanced_creative_info,omitempty"`
 	// 抖音号ID
 	AwemeId *string `json:"aweme_id,omitempty"`
 	// 是否AI生成
