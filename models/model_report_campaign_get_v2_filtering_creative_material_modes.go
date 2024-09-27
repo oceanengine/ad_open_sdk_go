@@ -15,9 +15,9 @@ type ReportCampaignGetV2FilteringCreativeMaterialModes string
 
 // List of report_campaign_get_v2_filtering_creative_material_modes
 const (
-	STATIC_ASSEMBLE_ReportCampaignGetV2FilteringCreativeMaterialModes ReportCampaignGetV2FilteringCreativeMaterialModes = "STATIC_ASSEMBLE"
-	INTERVENE_ReportCampaignGetV2FilteringCreativeMaterialModes       ReportCampaignGetV2FilteringCreativeMaterialModes = "INTERVENE"
 	CTR_ReportCampaignGetV2FilteringCreativeMaterialModes             ReportCampaignGetV2FilteringCreativeMaterialModes = "CTR"
+	INTERVENE_ReportCampaignGetV2FilteringCreativeMaterialModes       ReportCampaignGetV2FilteringCreativeMaterialModes = "INTERVENE"
+	STATIC_ASSEMBLE_ReportCampaignGetV2FilteringCreativeMaterialModes ReportCampaignGetV2FilteringCreativeMaterialModes = "STATIC_ASSEMBLE"
 )
 
 // Ptr returns reference to report_campaign_get_v2_filtering_creative_material_modes value

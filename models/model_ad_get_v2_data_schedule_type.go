@@ -15,8 +15,8 @@ type AdGetV2DataScheduleType string
 
 // List of ad_get_v2_data_schedule_type
 const (
-	SCHEDULE_START_END_AdGetV2DataScheduleType AdGetV2DataScheduleType = "SCHEDULE_START_END"
 	SCHEDULE_FROM_NOW_AdGetV2DataScheduleType  AdGetV2DataScheduleType = "SCHEDULE_FROM_NOW"
+	SCHEDULE_START_END_AdGetV2DataScheduleType AdGetV2DataScheduleType = "SCHEDULE_START_END"
 )
 
 // Ptr returns reference to ad_get_v2_data_schedule_type value

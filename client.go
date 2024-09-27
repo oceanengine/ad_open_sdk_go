@@ -1,5 +1,5 @@
 /*
-API version: 1.1.21
+API version: 1.1.22
 */
 package ad_open_sdk_go
 
@@ -167,12 +167,24 @@ func (c *Client) AgentAdvCostReportListQueryV2Api() *api.AgentAdvCostReportListQ
 	return c.ApiClient.AgentAdvCostReportListQueryV2Api
 }
 
+func (c *Client) AgentAdvertiserAssignV2Api() *api.AgentAdvertiserAssignV2ApiService {
+	return c.ApiClient.AgentAdvertiserAssignV2Api
+}
+
 func (c *Client) AgentAdvertiserCopyV2Api() *api.AgentAdvertiserCopyV2ApiService {
 	return c.ApiClient.AgentAdvertiserCopyV2Api
 }
 
+func (c *Client) AgentAdvertiserInfoQueryV2Api() *api.AgentAdvertiserInfoQueryV2ApiService {
+	return c.ApiClient.AgentAdvertiserInfoQueryV2Api
+}
+
 func (c *Client) AgentAdvertiserSelectV2Api() *api.AgentAdvertiserSelectV2ApiService {
 	return c.ApiClient.AgentAdvertiserSelectV2Api
+}
+
+func (c *Client) AgentAdvertiserUnassignV2Api() *api.AgentAdvertiserUnassignV2ApiService {
+	return c.ApiClient.AgentAdvertiserUnassignV2Api
 }
 
 func (c *Client) AgentAdvertiserUpdateV2Api() *api.AgentAdvertiserUpdateV2ApiService {
@@ -889,6 +901,10 @@ func (c *Client) FileAudioGetV2Api() *api.FileAudioGetV2ApiService {
 
 func (c *Client) FileAutoGenerateSourceGetV2Api() *api.FileAutoGenerateSourceGetV2ApiService {
 	return c.ApiClient.FileAutoGenerateSourceGetV2Api
+}
+
+func (c *Client) FileCarouselAwemeGetV30Api() *api.FileCarouselAwemeGetV30ApiService {
+	return c.ApiClient.FileCarouselAwemeGetV30Api
 }
 
 func (c *Client) FileImageAdGetV2Api() *api.FileImageAdGetV2ApiService {
@@ -1825,6 +1841,10 @@ func (c *Client) QueryBookingBusinessEntityIdGetV2Api() *api.QueryBookingBusines
 
 func (c *Client) QueryInvoiceElectronicUrlV2Api() *api.QueryInvoiceElectronicUrlV2ApiService {
 	return c.ApiClient.QueryInvoiceElectronicUrlV2Api
+}
+
+func (c *Client) QueryInvoiceTaxV2Api() *api.QueryInvoiceTaxV2ApiService {
+	return c.ApiClient.QueryInvoiceTaxV2Api
 }
 
 func (c *Client) QueryInvoiceV2Api() *api.QueryInvoiceV2ApiService {
@@ -3349,6 +3369,30 @@ func (c *Client) UploadStatementV2Api() *api.UploadStatementV2ApiService {
 
 func (c *Client) UserInfoV2Api() *api.UserInfoV2ApiService {
 	return c.ApiClient.UserInfoV2Api
+}
+
+func (c *Client) YuntuAudienceInfoCreateV30Api() *api.YuntuAudienceInfoCreateV30ApiService {
+	return c.ApiClient.YuntuAudienceInfoCreateV30Api
+}
+
+func (c *Client) YuntuAudienceInfoDeleteV30Api() *api.YuntuAudienceInfoDeleteV30ApiService {
+	return c.ApiClient.YuntuAudienceInfoDeleteV30Api
+}
+
+func (c *Client) YuntuAudienceInfoGetV30Api() *api.YuntuAudienceInfoGetV30ApiService {
+	return c.ApiClient.YuntuAudienceInfoGetV30Api
+}
+
+func (c *Client) YuntuAudienceLabelCreateV30Api() *api.YuntuAudienceLabelCreateV30ApiService {
+	return c.ApiClient.YuntuAudienceLabelCreateV30Api
+}
+
+func (c *Client) YuntuAudienceLabelDeleteV30Api() *api.YuntuAudienceLabelDeleteV30ApiService {
+	return c.ApiClient.YuntuAudienceLabelDeleteV30Api
+}
+
+func (c *Client) YuntuBrandInfoGetV30Api() *api.YuntuBrandInfoGetV30ApiService {
+	return c.ApiClient.YuntuBrandInfoGetV30Api
 }
 
 func (c *Client) CommonApi() *api.CommonApiService {

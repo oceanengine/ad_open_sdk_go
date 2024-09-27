@@ -19,6 +19,8 @@ type PromotionListV30ResponseDataListInnerPromotionMaterialsCarouselMaterialList
 	//
 	IsBlueFlowRecommendMaterial *bool `json:"is_blue_flow_recommend_material,omitempty"`
 	//
+	ItemId *int64 `json:"item_id,omitempty"`
+	//
 	MaterialId        *int64                                                                           `json:"material_id,omitempty"`
 	MaterialStatus    *PromotionListV30DataListPromotionMaterialsCarouselMaterialListMaterialStatus    `json:"material_status,omitempty"`
 	VideoHpVisibility *PromotionListV30DataListPromotionMaterialsCarouselMaterialListVideoHpVisibility `json:"video_hp_visibility,omitempty"`

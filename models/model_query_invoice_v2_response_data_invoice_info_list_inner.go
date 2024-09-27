@@ -19,6 +19,14 @@ type QueryInvoiceV2ResponseDataInvoiceInfoListInner struct {
 	//
 	ApplyAmount *float64 `json:"apply_amount,omitempty"`
 	//
+	ContractName *string `json:"contract_name,omitempty"`
+	//
+	ContractSerial *string `json:"contract_serial,omitempty"`
+	//
+	ContractSubjectName *string `json:"contract_subject_name,omitempty"`
+	//
+	CustomerName *string `json:"customer_name,omitempty"`
+	//
 	InvoiceAmount *float64 `json:"invoice_amount,omitempty"`
 	//
 	InvoiceCodes []string `json:"invoice_codes,omitempty"`
@@ -33,7 +41,13 @@ type QueryInvoiceV2ResponseDataInvoiceInfoListInner struct {
 	//
 	InvoiceStatusName *string `json:"invoice_status_name,omitempty"`
 	//
+	InvoiceType *int64 `json:"invoice_type,omitempty"`
+	//
+	InvoiceTypeName *string `json:"invoice_type_name,omitempty"`
+	//
 	IssueTime *string `json:"issue_time,omitempty"`
+	//
+	PlatformName *string `json:"platform_name,omitempty"`
 	//
 	RevertAmount *float64 `json:"revert_amount,omitempty"`
 	//

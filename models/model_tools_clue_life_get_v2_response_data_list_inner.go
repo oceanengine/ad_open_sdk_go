@@ -104,4 +104,6 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	ToolId *string `json:"tool_id,omitempty"`
 	// 视频id
 	VideoId *int64 `json:"video_id,omitempty"`
+	// 客户留资微信号
+	Weixin *string `json:"weixin,omitempty"`
 }

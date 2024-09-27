@@ -15,8 +15,8 @@ type ReportLiveRoomAudiencePortraitGetV2OrderType string
 
 // List of report_live_room_audience_portrait_get_v2_order_type
 const (
-	ASC_ReportLiveRoomAudiencePortraitGetV2OrderType  ReportLiveRoomAudiencePortraitGetV2OrderType = "ASC"
 	DESC_ReportLiveRoomAudiencePortraitGetV2OrderType ReportLiveRoomAudiencePortraitGetV2OrderType = "DESC"
+	ASC_ReportLiveRoomAudiencePortraitGetV2OrderType  ReportLiveRoomAudiencePortraitGetV2OrderType = "ASC"
 )
 
 // Ptr returns reference to report_live_room_audience_portrait_get_v2_order_type value

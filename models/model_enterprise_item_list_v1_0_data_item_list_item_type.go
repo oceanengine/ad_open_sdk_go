@@ -15,8 +15,8 @@ type EnterpriseItemListV10DataItemListItemType string
 
 // List of enterprise_item_list_v1.0_data_item_list_item_type
 const (
-	ITEM_AD_EnterpriseItemListV10DataItemListItemType      EnterpriseItemListV10DataItemListItemType = "ITEM_AD"
 	ITEM_CONTENT_EnterpriseItemListV10DataItemListItemType EnterpriseItemListV10DataItemListItemType = "ITEM_CONTENT"
+	ITEM_AD_EnterpriseItemListV10DataItemListItemType      EnterpriseItemListV10DataItemListItemType = "ITEM_AD"
 )
 
 // Ptr returns reference to enterprise_item_list_v1.0_data_item_list_item_type value

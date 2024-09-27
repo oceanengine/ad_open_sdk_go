@@ -15,21 +15,20 @@ type LocalProjectUpdateV30AudienceAge string
 
 // List of local_project_update_v3.0_audience_age
 const (
-	ABOVE_50_LocalProjectUpdateV30AudienceAge      LocalProjectUpdateV30AudienceAge = "ABOVE_50"
-	ABOVE_60_LocalProjectUpdateV30AudienceAge      LocalProjectUpdateV30AudienceAge = "ABOVE_60"
-	FROM_0_TO_17_LocalProjectUpdateV30AudienceAge  LocalProjectUpdateV30AudienceAge = "FROM_0_TO_17"
-	FROM_18_TO_19_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "FROM_18_TO_19"
-	FROM_18_TO_23_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "FROM_18_TO_23"
-	FROM_20_TO_23_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "FROM_20_TO_23"
-	FROM_24_TO_30_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "FROM_24_TO_30"
-	FROM_31_TO_35_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "FROM_31_TO_35"
-	FROM_31_TO_40_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "FROM_31_TO_40"
-	FROM_36_TO_40_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "FROM_36_TO_40"
-	FROM_41_TO_45_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "FROM_41_TO_45"
-	FROM_41_TO_50_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "FROM_41_TO_50"
-	FROM_46_TO_50_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "FROM_46_TO_50"
-	FROM_51_TO_55_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "FROM_51_TO_55"
-	FROM_56_TO_59_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "FROM_56_TO_59"
+	AGE_ABOVE_50_LocalProjectUpdateV30AudienceAge      LocalProjectUpdateV30AudienceAge = "AGE_ABOVE_50"
+	AGE_ABOVE_60_LocalProjectUpdateV30AudienceAge      LocalProjectUpdateV30AudienceAge = "AGE_ABOVE_60"
+	AGE_BETWEEN_18_19_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "AGE_BETWEEN_18_19"
+	AGE_BETWEEN_18_23_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "AGE_BETWEEN_18_23"
+	AGE_BETWEEN_20_23_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "AGE_BETWEEN_20_23"
+	AGE_BETWEEN_24_30_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "AGE_BETWEEN_24_30"
+	AGE_BETWEEN_31_35_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "AGE_BETWEEN_31_35"
+	AGE_BETWEEN_31_40_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "AGE_BETWEEN_31_40"
+	AGE_BETWEEN_36_40_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "AGE_BETWEEN_36_40"
+	AGE_BETWEEN_41_45_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "AGE_BETWEEN_41_45"
+	AGE_BETWEEN_41_50_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "AGE_BETWEEN_41_50"
+	AGE_BETWEEN_46_50_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "AGE_BETWEEN_46_50"
+	AGE_BETWEEN_51_55_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "AGE_BETWEEN_51_55"
+	AGE_BETWEEN_56_59_LocalProjectUpdateV30AudienceAge LocalProjectUpdateV30AudienceAge = "AGE_BETWEEN_56_59"
 )
 
 // Ptr returns reference to local_project_update_v3.0_audience_age value

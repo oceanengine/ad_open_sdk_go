@@ -15,9 +15,9 @@ type QianchuanAdStatusUpdateV10OptStatus string
 
 // List of qianchuan_ad_status_update_v1.0_opt_status
 const (
-	DISABLE_QianchuanAdStatusUpdateV10OptStatus QianchuanAdStatusUpdateV10OptStatus = "DISABLE"
-	DELETE_QianchuanAdStatusUpdateV10OptStatus  QianchuanAdStatusUpdateV10OptStatus = "DELETE"
 	REVIVE_QianchuanAdStatusUpdateV10OptStatus  QianchuanAdStatusUpdateV10OptStatus = "REVIVE"
+	DELETE_QianchuanAdStatusUpdateV10OptStatus  QianchuanAdStatusUpdateV10OptStatus = "DELETE"
+	DISABLE_QianchuanAdStatusUpdateV10OptStatus QianchuanAdStatusUpdateV10OptStatus = "DISABLE"
 	ENABLE_QianchuanAdStatusUpdateV10OptStatus  QianchuanAdStatusUpdateV10OptStatus = "ENABLE"
 )
 

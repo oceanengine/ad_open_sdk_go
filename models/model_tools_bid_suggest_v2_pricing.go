@@ -17,11 +17,11 @@ type ToolsBidSuggestV2Pricing string
 const (
 	PRICING_CPA_ToolsBidSuggestV2Pricing      ToolsBidSuggestV2Pricing = "PRICING_CPA"
 	PRICING_OCPC_ToolsBidSuggestV2Pricing     ToolsBidSuggestV2Pricing = "PRICING_OCPC"
-	PRICING_OCPM_ToolsBidSuggestV2Pricing     ToolsBidSuggestV2Pricing = "PRICING_OCPM"
-	PRICING_CPV_ToolsBidSuggestV2Pricing      ToolsBidSuggestV2Pricing = "PRICING_CPV"
-	PRICING_CPC_ToolsBidSuggestV2Pricing      ToolsBidSuggestV2Pricing = "PRICING_CPC"
 	PRICING_CPC_OCPM_ToolsBidSuggestV2Pricing ToolsBidSuggestV2Pricing = "PRICING_CPC_OCPM"
+	PRICING_OCPM_ToolsBidSuggestV2Pricing     ToolsBidSuggestV2Pricing = "PRICING_OCPM"
+	PRICING_CPC_ToolsBidSuggestV2Pricing      ToolsBidSuggestV2Pricing = "PRICING_CPC"
 	PRICING_CPM_ToolsBidSuggestV2Pricing      ToolsBidSuggestV2Pricing = "PRICING_CPM"
+	PRICING_CPV_ToolsBidSuggestV2Pricing      ToolsBidSuggestV2Pricing = "PRICING_CPV"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_pricing value

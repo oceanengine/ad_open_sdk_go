@@ -241,8 +241,11 @@ Class | Method | HTTP request
 *AdvertiserTransferableFundGetV2Api* | **OpenApi2AdvertiserTransferableFundGetGet** | **Get** /open_api/2/advertiser/transferable_fund/get/
 *AdvertiserUpdateBudgetV2Api* | **OpenApi2AdvertiserUpdateBudgetPost** | **Post** /open_api/2/advertiser/update/budget/
 *AgentAdvCostReportListQueryV2Api* | **OpenApi2AgentAdvCostReportListQueryPost** | **Post** /open_api/2/agent/adv/cost_report/list/query/
+*AgentAdvertiserAssignV2Api* | **OpenApi2AgentAdvertiserAssignPost** | **Post** /open_api/2/agent/advertiser/assign/
 *AgentAdvertiserCopyV2Api* | **OpenApi2AgentAdvertiserCopyPost** | **Post** /open_api/2/agent/advertiser/copy/
+*AgentAdvertiserInfoQueryV2Api* | **OpenApi2AgentAdvertiserInfoQueryGet** | **Get** /open_api/2/agent/advertiser_info/query/
 *AgentAdvertiserSelectV2Api* | **OpenApi2AgentAdvertiserSelectGet** | **Get** /open_api/2/agent/advertiser/select/
+*AgentAdvertiserUnassignV2Api* | **OpenApi2AgentAdvertiserUnassignPost** | **Post** /open_api/2/agent/advertiser/unassign/
 *AgentAdvertiserUpdateV2Api* | **OpenApi2AgentAdvertiserUpdatePost** | **Post** /open_api/2/agent/advertiser/update/
 *AgentChildAgentSelectV2Api* | **OpenApi2AgentChildAgentSelectGet** | **Get** /open_api/2/agent/child_agent/select/
 *AgentFundTransferSeqCommitV2Api* | **OpenApi2AgentFundTransferSeqCommitPost** | **Post** /open_api/2/agent/fund/transfer_seq/commit/
@@ -422,6 +425,7 @@ Class | Method | HTTP request
 *FileAudioAdV2Api* | **OpenApi2FileAudioAdPost** | **Post** /open_api/2/file/audio/ad/
 *FileAudioGetV2Api* | **OpenApi2FileAudioGetGet** | **Get** /open_api/2/file/audio/get/
 *FileAutoGenerateSourceGetV2Api* | **OpenApi2FileAutoGenerateSourceGetGet** | **Get** /open_api/2/file/auto_generate_source/get/
+*FileCarouselAwemeGetV30Api* | **OpenApiV30FileCarouselAwemeGetGet** | **Get** /open_api/v3.0/file/carousel/aweme/get/
 *FileImageAdGetV2Api* | **OpenApi2FileImageAdGetGet** | **Get** /open_api/2/file/image/ad/get/
 *FileImageAdV2Api* | **OpenApi2FileImageAdPost** | **Post** /open_api/2/file/image/ad/
 *FileImageAdvertiserV2Api* | **OpenApi2FileImageAdvertiserPost** | **Post** /open_api/2/file/image/advertiser/
@@ -656,6 +660,7 @@ Class | Method | HTTP request
 *QianchuanVideoGetV10Api* | **OpenApiV10QianchuanVideoGetGet** | **Get** /open_api/v1.0/qianchuan/video/get/
 *QueryBookingBusinessEntityIdGetV2Api* | **OpenApi2QueryBookingBusinessEntityIdGetGet** | **Get** /open_api/2/query/booking/business_entity_id/get/
 *QueryInvoiceElectronicUrlV2Api* | **OpenApi2QueryInvoiceElectronicUrlGet** | **Get** /open_api/2/query/invoice_electronic_url/
+*QueryInvoiceTaxV2Api* | **OpenApi2QueryInvoiceTaxGet** | **Get** /open_api/2/query/invoice_tax/
 *QueryInvoiceV2Api* | **OpenApi2QueryInvoiceGet** | **Get** /open_api/2/query/invoice/
 *QueryProjectV2Api* | **OpenApi2QueryProjectGet** | **Get** /open_api/2/query/project/
 *QueryProjectV30Api* | **OpenApiV30QueryProjectGet** | **Get** /open_api/v3.0/query/project/
@@ -1037,6 +1042,12 @@ Class | Method | HTTP request
 *ToolsWechatGameListV30Api* | **OpenApiV30ToolsWechatGameListGet** | **Get** /open_api/v3.0/tools/wechat_game/list/
 *UploadStatementV2Api* | **OpenApi2UploadStatementPost** | **Post** /open_api/2/upload/statement/
 *UserInfoV2Api* | **OpenApi2UserInfoGet** | **Get** /open_api/2/user/info/
+*YuntuAudienceInfoCreateV30Api* | **OpenApiV30YuntuAudienceInfoCreatePost** | **Post** /open_api/v3.0/yuntu/audience_info/create/
+*YuntuAudienceInfoDeleteV30Api* | **OpenApiV30YuntuAudienceInfoDeletePost** | **Post** /open_api/v3.0/yuntu/audience_info/delete/
+*YuntuAudienceInfoGetV30Api* | **OpenApiV30YuntuAudienceInfoGetGet** | **Get** /open_api/v3.0/yuntu/audience_info/get/
+*YuntuAudienceLabelCreateV30Api* | **OpenApiV30YuntuAudienceLabelCreatePost** | **Post** /open_api/v3.0/yuntu/audience_label/create/
+*YuntuAudienceLabelDeleteV30Api* | **OpenApiV30YuntuAudienceLabelDeletePost** | **Post** /open_api/v3.0/yuntu/audience_label/delete/
+*YuntuBrandInfoGetV30Api* | **OpenApiV30YuntuBrandInfoGetGet** | **Get** /open_api/v3.0/yuntu/brand_info/get/
 
 
 ## 问题建议与反馈

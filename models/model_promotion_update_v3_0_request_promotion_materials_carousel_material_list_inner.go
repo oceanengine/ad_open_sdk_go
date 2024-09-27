@@ -13,6 +13,8 @@ package models
 // PromotionUpdateV30RequestPromotionMaterialsCarouselMaterialListInner struct for PromotionUpdateV30RequestPromotionMaterialsCarouselMaterialListInner
 type PromotionUpdateV30RequestPromotionMaterialsCarouselMaterialListInner struct {
 	//
-	CarouselId        *string                                                                    `json:"carousel_id,omitempty"`
+	CarouselId *string `json:"carousel_id,omitempty"`
+	//
+	ItemId            *int64                                                                     `json:"item_id,omitempty"`
 	VideoHpVisibility *PromotionUpdateV30PromotionMaterialsCarouselMaterialListVideoHpVisibility `json:"video_hp_visibility,omitempty"`
 }

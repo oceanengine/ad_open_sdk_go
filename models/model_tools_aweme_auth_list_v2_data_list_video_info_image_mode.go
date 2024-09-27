@@ -15,6 +15,7 @@ type ToolsAwemeAuthListV2DataListVideoInfoImageMode string
 
 // List of tools_aweme_auth_list_v2_data_list_video_info_image_mode
 const (
+	AWEME_PHOTO_ToolsAwemeAuthListV2DataListVideoInfoImageMode                             ToolsAwemeAuthListV2DataListVideoInfoImageMode = "AWEME_PHOTO"
 	CREATIVE_IMAGE_MODE_AWEME_LIVE_ToolsAwemeAuthListV2DataListVideoInfoImageMode          ToolsAwemeAuthListV2DataListVideoInfoImageMode = "CREATIVE_IMAGE_MODE_AWEME_LIVE"
 	CREATIVE_IMAGE_MODE_DISPLAY_WINDOW_ToolsAwemeAuthListV2DataListVideoInfoImageMode      ToolsAwemeAuthListV2DataListVideoInfoImageMode = "CREATIVE_IMAGE_MODE_DISPLAY_WINDOW"
 	CREATIVE_IMAGE_MODE_GIF_ToolsAwemeAuthListV2DataListVideoInfoImageMode                 ToolsAwemeAuthListV2DataListVideoInfoImageMode = "CREATIVE_IMAGE_MODE_GIF"

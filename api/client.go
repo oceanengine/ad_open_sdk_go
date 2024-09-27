@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.21
+// APIClient manages communication with the Oceanengine Open Api API v1.1.22
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -121,9 +121,15 @@ type APIClient struct {
 
 	AgentAdvCostReportListQueryV2Api *AgentAdvCostReportListQueryV2ApiService
 
+	AgentAdvertiserAssignV2Api *AgentAdvertiserAssignV2ApiService
+
 	AgentAdvertiserCopyV2Api *AgentAdvertiserCopyV2ApiService
 
+	AgentAdvertiserInfoQueryV2Api *AgentAdvertiserInfoQueryV2ApiService
+
 	AgentAdvertiserSelectV2Api *AgentAdvertiserSelectV2ApiService
+
+	AgentAdvertiserUnassignV2Api *AgentAdvertiserUnassignV2ApiService
 
 	AgentAdvertiserUpdateV2Api *AgentAdvertiserUpdateV2ApiService
 
@@ -482,6 +488,8 @@ type APIClient struct {
 	FileAudioGetV2Api *FileAudioGetV2ApiService
 
 	FileAutoGenerateSourceGetV2Api *FileAutoGenerateSourceGetV2ApiService
+
+	FileCarouselAwemeGetV30Api *FileCarouselAwemeGetV30ApiService
 
 	FileImageAdGetV2Api *FileImageAdGetV2ApiService
 
@@ -950,6 +958,8 @@ type APIClient struct {
 	QueryBookingBusinessEntityIdGetV2Api *QueryBookingBusinessEntityIdGetV2ApiService
 
 	QueryInvoiceElectronicUrlV2Api *QueryInvoiceElectronicUrlV2ApiService
+
+	QueryInvoiceTaxV2Api *QueryInvoiceTaxV2ApiService
 
 	QueryInvoiceV2Api *QueryInvoiceV2ApiService
 
@@ -1713,6 +1723,18 @@ type APIClient struct {
 
 	UserInfoV2Api *UserInfoV2ApiService
 
+	YuntuAudienceInfoCreateV30Api *YuntuAudienceInfoCreateV30ApiService
+
+	YuntuAudienceInfoDeleteV30Api *YuntuAudienceInfoDeleteV30ApiService
+
+	YuntuAudienceInfoGetV30Api *YuntuAudienceInfoGetV30ApiService
+
+	YuntuAudienceLabelCreateV30Api *YuntuAudienceLabelCreateV30ApiService
+
+	YuntuAudienceLabelDeleteV30Api *YuntuAudienceLabelDeleteV30ApiService
+
+	YuntuBrandInfoGetV30Api *YuntuBrandInfoGetV30ApiService
+
 	CommonApi *CommonApiService
 }
 
@@ -1767,8 +1789,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AdvertiserTransferableFundGetV2Api = (*AdvertiserTransferableFundGetV2ApiService)(&c.common)
 	c.AdvertiserUpdateBudgetV2Api = (*AdvertiserUpdateBudgetV2ApiService)(&c.common)
 	c.AgentAdvCostReportListQueryV2Api = (*AgentAdvCostReportListQueryV2ApiService)(&c.common)
+	c.AgentAdvertiserAssignV2Api = (*AgentAdvertiserAssignV2ApiService)(&c.common)
 	c.AgentAdvertiserCopyV2Api = (*AgentAdvertiserCopyV2ApiService)(&c.common)
+	c.AgentAdvertiserInfoQueryV2Api = (*AgentAdvertiserInfoQueryV2ApiService)(&c.common)
 	c.AgentAdvertiserSelectV2Api = (*AgentAdvertiserSelectV2ApiService)(&c.common)
+	c.AgentAdvertiserUnassignV2Api = (*AgentAdvertiserUnassignV2ApiService)(&c.common)
 	c.AgentAdvertiserUpdateV2Api = (*AgentAdvertiserUpdateV2ApiService)(&c.common)
 	c.AgentChildAgentSelectV2Api = (*AgentChildAgentSelectV2ApiService)(&c.common)
 	c.AgentFundTransferSeqCommitV2Api = (*AgentFundTransferSeqCommitV2ApiService)(&c.common)
@@ -1948,6 +1973,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.FileAudioAdV2Api = (*FileAudioAdV2ApiService)(&c.common)
 	c.FileAudioGetV2Api = (*FileAudioGetV2ApiService)(&c.common)
 	c.FileAutoGenerateSourceGetV2Api = (*FileAutoGenerateSourceGetV2ApiService)(&c.common)
+	c.FileCarouselAwemeGetV30Api = (*FileCarouselAwemeGetV30ApiService)(&c.common)
 	c.FileImageAdGetV2Api = (*FileImageAdGetV2ApiService)(&c.common)
 	c.FileImageAdV2Api = (*FileImageAdV2ApiService)(&c.common)
 	c.FileImageAdvertiserV2Api = (*FileImageAdvertiserV2ApiService)(&c.common)
@@ -2182,6 +2208,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanVideoGetV10Api = (*QianchuanVideoGetV10ApiService)(&c.common)
 	c.QueryBookingBusinessEntityIdGetV2Api = (*QueryBookingBusinessEntityIdGetV2ApiService)(&c.common)
 	c.QueryInvoiceElectronicUrlV2Api = (*QueryInvoiceElectronicUrlV2ApiService)(&c.common)
+	c.QueryInvoiceTaxV2Api = (*QueryInvoiceTaxV2ApiService)(&c.common)
 	c.QueryInvoiceV2Api = (*QueryInvoiceV2ApiService)(&c.common)
 	c.QueryProjectV2Api = (*QueryProjectV2ApiService)(&c.common)
 	c.QueryProjectV30Api = (*QueryProjectV30ApiService)(&c.common)
@@ -2563,6 +2590,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsWechatGameListV30Api = (*ToolsWechatGameListV30ApiService)(&c.common)
 	c.UploadStatementV2Api = (*UploadStatementV2ApiService)(&c.common)
 	c.UserInfoV2Api = (*UserInfoV2ApiService)(&c.common)
+	c.YuntuAudienceInfoCreateV30Api = (*YuntuAudienceInfoCreateV30ApiService)(&c.common)
+	c.YuntuAudienceInfoDeleteV30Api = (*YuntuAudienceInfoDeleteV30ApiService)(&c.common)
+	c.YuntuAudienceInfoGetV30Api = (*YuntuAudienceInfoGetV30ApiService)(&c.common)
+	c.YuntuAudienceLabelCreateV30Api = (*YuntuAudienceLabelCreateV30ApiService)(&c.common)
+	c.YuntuAudienceLabelDeleteV30Api = (*YuntuAudienceLabelDeleteV30ApiService)(&c.common)
+	c.YuntuBrandInfoGetV30Api = (*YuntuBrandInfoGetV30ApiService)(&c.common)
 	c.CommonApi = (*CommonApiService)(&c.common)
 
 	return c

@@ -15,8 +15,8 @@ type EnterpriseCommentListGetV10OrderType string
 
 // List of enterprise_comment_list_get_v1.0_order_type
 const (
-	ASC_EnterpriseCommentListGetV10OrderType  EnterpriseCommentListGetV10OrderType = "ASC"
 	DESC_EnterpriseCommentListGetV10OrderType EnterpriseCommentListGetV10OrderType = "DESC"
+	ASC_EnterpriseCommentListGetV10OrderType  EnterpriseCommentListGetV10OrderType = "ASC"
 )
 
 // Ptr returns reference to enterprise_comment_list_get_v1.0_order_type value

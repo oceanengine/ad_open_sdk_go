@@ -43,9 +43,9 @@ type PromotionCreateV30RequestPromotionMaterials struct {
 	OpenUrlParams *string                                          `json:"open_url_params,omitempty"`
 	OpenUrlType   *PromotionCreateV30PromotionMaterialsOpenUrlType `json:"open_url_type,omitempty"`
 	// 优选直达链接
-	OpenUrls         []string                                              `json:"open_urls,omitempty"`
-	OriginVideoTitle *PromotionCreateV30PromotionMaterialsOriginVideoTitle `json:"origin_video_title,omitempty"`
-	ParamsType       *PromotionCreateV30PromotionMaterialsParamsType       `json:"params_type,omitempty"`
+	OpenUrls           []string                                                `json:"open_urls,omitempty"`
+	OriginalVideoTitle *PromotionCreateV30PromotionMaterialsOriginalVideoTitle `json:"original_video_title,omitempty"`
+	ParamsType         *PromotionCreateV30PromotionMaterialsParamsType         `json:"params_type,omitempty"`
 	//
 	PlayableUrlMaterialList []string                                                `json:"playable_url_material_list,omitempty"`
 	ProductInfo             *PromotionCreateV30RequestPromotionMaterialsProductInfo `json:"product_info,omitempty"`

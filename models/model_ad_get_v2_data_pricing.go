@@ -17,11 +17,11 @@ type AdGetV2DataPricing string
 const (
 	PRICING_CPA_AdGetV2DataPricing      AdGetV2DataPricing = "PRICING_CPA"
 	PRICING_OCPC_AdGetV2DataPricing     AdGetV2DataPricing = "PRICING_OCPC"
-	PRICING_OCPM_AdGetV2DataPricing     AdGetV2DataPricing = "PRICING_OCPM"
-	PRICING_CPV_AdGetV2DataPricing      AdGetV2DataPricing = "PRICING_CPV"
-	PRICING_CPC_AdGetV2DataPricing      AdGetV2DataPricing = "PRICING_CPC"
 	PRICING_CPC_OCPM_AdGetV2DataPricing AdGetV2DataPricing = "PRICING_CPC_OCPM"
+	PRICING_OCPM_AdGetV2DataPricing     AdGetV2DataPricing = "PRICING_OCPM"
+	PRICING_CPC_AdGetV2DataPricing      AdGetV2DataPricing = "PRICING_CPC"
 	PRICING_CPM_AdGetV2DataPricing      AdGetV2DataPricing = "PRICING_CPM"
+	PRICING_CPV_AdGetV2DataPricing      AdGetV2DataPricing = "PRICING_CPV"
 )
 
 // Ptr returns reference to ad_get_v2_data_pricing value
