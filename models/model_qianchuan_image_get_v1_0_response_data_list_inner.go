@@ -13,6 +13,8 @@ package models
 // QianchuanImageGetV10ResponseDataListInner struct for QianchuanImageGetV10ResponseDataListInner
 type QianchuanImageGetV10ResponseDataListInner struct {
 	//
+	AnalysisType []string `json:"analysis_type,omitempty"`
+	//
 	CreateTime *string `json:"create_time,omitempty"`
 	//
 	Filename *string `json:"filename,omitempty"`

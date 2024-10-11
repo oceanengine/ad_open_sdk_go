@@ -15,19 +15,19 @@ type AssetsCreativeComponentGetV2FilteringComponentTypes string
 
 // List of assets_creative_component_get_v2_filtering_component_types
 const (
-	LUCKY_BOX_AssetsCreativeComponentGetV2FilteringComponentTypes               AssetsCreativeComponentGetV2FilteringComponentTypes = "LUCKY_BOX"
-	HALF_INTERACTIVE_AssetsCreativeComponentGetV2FilteringComponentTypes        AssetsCreativeComponentGetV2FilteringComponentTypes = "HALF_INTERACTIVE"
-	LIGHT_INTER_ACTIVE_AssetsCreativeComponentGetV2FilteringComponentTypes      AssetsCreativeComponentGetV2FilteringComponentTypes = "LIGHT_INTER_ACTIVE"
+	COMMERCE_MAGNET_AssetsCreativeComponentGetV2FilteringComponentTypes         AssetsCreativeComponentGetV2FilteringComponentTypes = "COMMERCE_MAGNET"
 	CHOICE_MAGNET_AssetsCreativeComponentGetV2FilteringComponentTypes           AssetsCreativeComponentGetV2FilteringComponentTypes = "CHOICE_MAGNET"
+	ECOMMERCE_CARD_AssetsCreativeComponentGetV2FilteringComponentTypes          AssetsCreativeComponentGetV2FilteringComponentTypes = "ECOMMERCE_CARD"
+	RESERVATION_BUTTON_AssetsCreativeComponentGetV2FilteringComponentTypes      AssetsCreativeComponentGetV2FilteringComponentTypes = "RESERVATION_BUTTON"
+	GAME_PACK_AssetsCreativeComponentGetV2FilteringComponentTypes               AssetsCreativeComponentGetV2FilteringComponentTypes = "GAME_PACK"
 	VOTE_MAGNET_AssetsCreativeComponentGetV2FilteringComponentTypes             AssetsCreativeComponentGetV2FilteringComponentTypes = "VOTE_MAGNET"
-	UNION_LIGHT_INTERACTIVE_AssetsCreativeComponentGetV2FilteringComponentTypes AssetsCreativeComponentGetV2FilteringComponentTypes = "UNION_LIGHT_INTERACTIVE"
+	PROMOTION_CARD_AssetsCreativeComponentGetV2FilteringComponentTypes          AssetsCreativeComponentGetV2FilteringComponentTypes = "PROMOTION_CARD"
+	LIGHT_INTER_ACTIVE_AssetsCreativeComponentGetV2FilteringComponentTypes      AssetsCreativeComponentGetV2FilteringComponentTypes = "LIGHT_INTER_ACTIVE"
 	IMAGE_MAGNET_AssetsCreativeComponentGetV2FilteringComponentTypes            AssetsCreativeComponentGetV2FilteringComponentTypes = "IMAGE_MAGNET"
 	COUPON_MAGNET_AssetsCreativeComponentGetV2FilteringComponentTypes           AssetsCreativeComponentGetV2FilteringComponentTypes = "COUPON_MAGNET"
-	GAME_PACK_AssetsCreativeComponentGetV2FilteringComponentTypes               AssetsCreativeComponentGetV2FilteringComponentTypes = "GAME_PACK"
-	ECOMMERCE_CARD_AssetsCreativeComponentGetV2FilteringComponentTypes          AssetsCreativeComponentGetV2FilteringComponentTypes = "ECOMMERCE_CARD"
-	PROMOTION_CARD_AssetsCreativeComponentGetV2FilteringComponentTypes          AssetsCreativeComponentGetV2FilteringComponentTypes = "PROMOTION_CARD"
-	COMMERCE_MAGNET_AssetsCreativeComponentGetV2FilteringComponentTypes         AssetsCreativeComponentGetV2FilteringComponentTypes = "COMMERCE_MAGNET"
-	RESERVATION_BUTTON_AssetsCreativeComponentGetV2FilteringComponentTypes      AssetsCreativeComponentGetV2FilteringComponentTypes = "RESERVATION_BUTTON"
+	LUCKY_BOX_AssetsCreativeComponentGetV2FilteringComponentTypes               AssetsCreativeComponentGetV2FilteringComponentTypes = "LUCKY_BOX"
+	UNION_LIGHT_INTERACTIVE_AssetsCreativeComponentGetV2FilteringComponentTypes AssetsCreativeComponentGetV2FilteringComponentTypes = "UNION_LIGHT_INTERACTIVE"
+	HALF_INTERACTIVE_AssetsCreativeComponentGetV2FilteringComponentTypes        AssetsCreativeComponentGetV2FilteringComponentTypes = "HALF_INTERACTIVE"
 )
 
 // Ptr returns reference to assets_creative_component_get_v2_filtering_component_types value

@@ -1,5 +1,5 @@
 /*
-API version: 1.1.22
+API version: 1.1.23
 */
 package ad_open_sdk_go
 
@@ -221,6 +221,46 @@ func (c *Client) AgentRefundTransferSeqCreateV2Api() *api.AgentRefundTransferSeq
 
 func (c *Client) AgentTransferTransactionRecordV2Api() *api.AgentTransferTransactionRecordV2ApiService {
 	return c.ApiClient.AgentTransferTransactionRecordV2Api
+}
+
+func (c *Client) AicElementDeleteV30Api() *api.AicElementDeleteV30ApiService {
+	return c.ApiClient.AicElementDeleteV30Api
+}
+
+func (c *Client) AicElementGetV30Api() *api.AicElementGetV30ApiService {
+	return c.ApiClient.AicElementGetV30Api
+}
+
+func (c *Client) AicElementUpdateV30Api() *api.AicElementUpdateV30ApiService {
+	return c.ApiClient.AicElementUpdateV30Api
+}
+
+func (c *Client) AicElementUploadV30Api() *api.AicElementUploadV30ApiService {
+	return c.ApiClient.AicElementUploadV30Api
+}
+
+func (c *Client) AicImageMixcutCreateV30Api() *api.AicImageMixcutCreateV30ApiService {
+	return c.ApiClient.AicImageMixcutCreateV30Api
+}
+
+func (c *Client) AicMaterialGetV30Api() *api.AicMaterialGetV30ApiService {
+	return c.ApiClient.AicMaterialGetV30Api
+}
+
+func (c *Client) AicMaterialPushV30Api() *api.AicMaterialPushV30ApiService {
+	return c.ApiClient.AicMaterialPushV30Api
+}
+
+func (c *Client) AicMixcutTaskResultGetV30Api() *api.AicMixcutTaskResultGetV30ApiService {
+	return c.ApiClient.AicMixcutTaskResultGetV30Api
+}
+
+func (c *Client) AicMixcutTaskSaveV30Api() *api.AicMixcutTaskSaveV30ApiService {
+	return c.ApiClient.AicMixcutTaskSaveV30Api
+}
+
+func (c *Client) AicVideoMixcutCreateV30Api() *api.AicVideoMixcutCreateV30ApiService {
+	return c.ApiClient.AicVideoMixcutCreateV30Api
 }
 
 func (c *Client) AnalyticsAttributionV30Api() *api.AnalyticsAttributionV30ApiService {
@@ -1609,6 +1649,10 @@ func (c *Client) QianchuanKeywordPackageGetV10Api() *api.QianchuanKeywordPackage
 
 func (c *Client) QianchuanLqAdGetV10Api() *api.QianchuanLqAdGetV10ApiService {
 	return c.ApiClient.QianchuanLqAdGetV10Api
+}
+
+func (c *Client) QianchuanMaterialGetV10Api() *api.QianchuanMaterialGetV10ApiService {
+	return c.ApiClient.QianchuanMaterialGetV10Api
 }
 
 func (c *Client) QianchuanOrientationPackageGetV10Api() *api.QianchuanOrientationPackageGetV10ApiService {

@@ -15,10 +15,10 @@ type ToolsAppIosListV2DataListStatus string
 
 // List of tools_app_ios_list_v2_data_list_status
 const (
+	ALL_ToolsAppIosListV2DataListStatus            ToolsAppIosListV2DataListStatus = "ALL"
+	AUDIT_ACCEPTED_ToolsAppIosListV2DataListStatus ToolsAppIosListV2DataListStatus = "AUDIT_ACCEPTED"
 	AUDIT_DOING_ToolsAppIosListV2DataListStatus    ToolsAppIosListV2DataListStatus = "AUDIT_DOING"
 	AUDIT_REJECTED_ToolsAppIosListV2DataListStatus ToolsAppIosListV2DataListStatus = "AUDIT_REJECTED"
-	AUDIT_ACCEPTED_ToolsAppIosListV2DataListStatus ToolsAppIosListV2DataListStatus = "AUDIT_ACCEPTED"
-	ALL_ToolsAppIosListV2DataListStatus            ToolsAppIosListV2DataListStatus = "ALL"
 	ENABLE_ToolsAppIosListV2DataListStatus         ToolsAppIosListV2DataListStatus = "ENABLE"
 )
 

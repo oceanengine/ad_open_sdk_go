@@ -23,5 +23,7 @@ type CarouselListV2Filtering struct {
 	//
 	ImageIds []string `json:"image_ids,omitempty"`
 	//
+	Source []*CarouselListV2FilteringSource `json:"source,omitempty"`
+	//
 	StartTime *string `json:"start_time,omitempty"`
 }

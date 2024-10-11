@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.22
+// APIClient manages communication with the Oceanengine Open Api API v1.1.23
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -148,6 +148,26 @@ type APIClient struct {
 	AgentRefundTransferSeqCreateV2Api *AgentRefundTransferSeqCreateV2ApiService
 
 	AgentTransferTransactionRecordV2Api *AgentTransferTransactionRecordV2ApiService
+
+	AicElementDeleteV30Api *AicElementDeleteV30ApiService
+
+	AicElementGetV30Api *AicElementGetV30ApiService
+
+	AicElementUpdateV30Api *AicElementUpdateV30ApiService
+
+	AicElementUploadV30Api *AicElementUploadV30ApiService
+
+	AicImageMixcutCreateV30Api *AicImageMixcutCreateV30ApiService
+
+	AicMaterialGetV30Api *AicMaterialGetV30ApiService
+
+	AicMaterialPushV30Api *AicMaterialPushV30ApiService
+
+	AicMixcutTaskResultGetV30Api *AicMixcutTaskResultGetV30ApiService
+
+	AicMixcutTaskSaveV30Api *AicMixcutTaskSaveV30ApiService
+
+	AicVideoMixcutCreateV30Api *AicVideoMixcutCreateV30ApiService
 
 	AnalyticsAttributionV30Api *AnalyticsAttributionV30ApiService
 
@@ -842,6 +862,8 @@ type APIClient struct {
 	QianchuanKeywordPackageGetV10Api *QianchuanKeywordPackageGetV10ApiService
 
 	QianchuanLqAdGetV10Api *QianchuanLqAdGetV10ApiService
+
+	QianchuanMaterialGetV10Api *QianchuanMaterialGetV10ApiService
 
 	QianchuanOrientationPackageGetV10Api *QianchuanOrientationPackageGetV10ApiService
 
@@ -1803,6 +1825,16 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AgentRefundTransferSeqCommitV2Api = (*AgentRefundTransferSeqCommitV2ApiService)(&c.common)
 	c.AgentRefundTransferSeqCreateV2Api = (*AgentRefundTransferSeqCreateV2ApiService)(&c.common)
 	c.AgentTransferTransactionRecordV2Api = (*AgentTransferTransactionRecordV2ApiService)(&c.common)
+	c.AicElementDeleteV30Api = (*AicElementDeleteV30ApiService)(&c.common)
+	c.AicElementGetV30Api = (*AicElementGetV30ApiService)(&c.common)
+	c.AicElementUpdateV30Api = (*AicElementUpdateV30ApiService)(&c.common)
+	c.AicElementUploadV30Api = (*AicElementUploadV30ApiService)(&c.common)
+	c.AicImageMixcutCreateV30Api = (*AicImageMixcutCreateV30ApiService)(&c.common)
+	c.AicMaterialGetV30Api = (*AicMaterialGetV30ApiService)(&c.common)
+	c.AicMaterialPushV30Api = (*AicMaterialPushV30ApiService)(&c.common)
+	c.AicMixcutTaskResultGetV30Api = (*AicMixcutTaskResultGetV30ApiService)(&c.common)
+	c.AicMixcutTaskSaveV30Api = (*AicMixcutTaskSaveV30ApiService)(&c.common)
+	c.AicVideoMixcutCreateV30Api = (*AicVideoMixcutCreateV30ApiService)(&c.common)
 	c.AnalyticsAttributionV30Api = (*AnalyticsAttributionV30ApiService)(&c.common)
 	c.AssetsCreativeComponentCreateV2Api = (*AssetsCreativeComponentCreateV2ApiService)(&c.common)
 	c.AssetsCreativeComponentGetV2Api = (*AssetsCreativeComponentGetV2ApiService)(&c.common)
@@ -2150,6 +2182,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanKeywordCheckV10Api = (*QianchuanKeywordCheckV10ApiService)(&c.common)
 	c.QianchuanKeywordPackageGetV10Api = (*QianchuanKeywordPackageGetV10ApiService)(&c.common)
 	c.QianchuanLqAdGetV10Api = (*QianchuanLqAdGetV10ApiService)(&c.common)
+	c.QianchuanMaterialGetV10Api = (*QianchuanMaterialGetV10ApiService)(&c.common)
 	c.QianchuanOrientationPackageGetV10Api = (*QianchuanOrientationPackageGetV10ApiService)(&c.common)
 	c.QianchuanProductAnalyseCompareCreativeV10Api = (*QianchuanProductAnalyseCompareCreativeV10ApiService)(&c.common)
 	c.QianchuanProductAnalyseCompareStatsDataV10Api = (*QianchuanProductAnalyseCompareStatsDataV10ApiService)(&c.common)

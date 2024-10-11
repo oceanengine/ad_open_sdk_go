@@ -255,6 +255,16 @@ Class | Method | HTTP request
 *AgentRefundTransferSeqCommitV2Api* | **OpenApi2AgentRefundTransferSeqCommitPost** | **Post** /open_api/2/agent/refund/transfer_seq/commit/
 *AgentRefundTransferSeqCreateV2Api* | **OpenApi2AgentRefundTransferSeqCreatePost** | **Post** /open_api/2/agent/refund/transfer_seq/create/
 *AgentTransferTransactionRecordV2Api* | **OpenApi2AgentTransferTransactionRecordGet** | **Get** /open_api/2/agent/transfer/transaction_record/
+*AicElementDeleteV30Api* | **OpenApiV30AicElementDeletePost** | **Post** /open_api/v3.0/aic/element/delete/
+*AicElementGetV30Api* | **OpenApiV30AicElementGetGet** | **Get** /open_api/v3.0/aic/element/get/
+*AicElementUpdateV30Api* | **OpenApiV30AicElementUpdatePost** | **Post** /open_api/v3.0/aic/element/update/
+*AicElementUploadV30Api* | **OpenApiV30AicElementUploadPost** | **Post** /open_api/v3.0/aic/element/upload/
+*AicImageMixcutCreateV30Api* | **OpenApiV30AicImageMixcutCreatePost** | **Post** /open_api/v3.0/aic/image_mixcut/create/
+*AicMaterialGetV30Api* | **OpenApiV30AicMaterialGetGet** | **Get** /open_api/v3.0/aic/material/get/
+*AicMaterialPushV30Api* | **OpenApiV30AicMaterialPushPost** | **Post** /open_api/v3.0/aic/material/push/
+*AicMixcutTaskResultGetV30Api* | **OpenApiV30AicMixcutTaskResultGetGet** | **Get** /open_api/v3.0/aic/mixcut_task/result/get/
+*AicMixcutTaskSaveV30Api* | **OpenApiV30AicMixcutTaskSavePost** | **Post** /open_api/v3.0/aic/mixcut_task/save/
+*AicVideoMixcutCreateV30Api* | **OpenApiV30AicVideoMixcutCreatePost** | **Post** /open_api/v3.0/aic/video_mixcut/create/
 *AnalyticsAttributionV30Api* | **OpenApiV30AnalyticsAttributionPost** | **Post** /open_api/v3.0/analytics/attribution/
 *AssetsCreativeComponentCreateV2Api* | **OpenApi2AssetsCreativeComponentCreatePost** | **Post** /open_api/2/assets/creative_component/create/
 *AssetsCreativeComponentGetV2Api* | **OpenApi2AssetsCreativeComponentGetGet** | **Get** /open_api/2/assets/creative_component/get/
@@ -602,6 +612,7 @@ Class | Method | HTTP request
 *QianchuanKeywordCheckV10Api* | **OpenApiV10QianchuanKeywordCheckPost** | **Post** /open_api/v1.0/qianchuan/keyword/check/
 *QianchuanKeywordPackageGetV10Api* | **OpenApiV10QianchuanKeywordPackageGetGet** | **Get** /open_api/v1.0/qianchuan/keyword_package/get/
 *QianchuanLqAdGetV10Api* | **OpenApiV10QianchuanLqAdGetGet** | **Get** /open_api/v1.0/qianchuan/lq_ad/get/
+*QianchuanMaterialGetV10Api* | **OpenApiV10QianchuanMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/material/get/
 *QianchuanOrientationPackageGetV10Api* | **OpenApiV10QianchuanOrientationPackageGetGet** | **Get** /open_api/v1.0/qianchuan/orientation_package/get/
 *QianchuanProductAnalyseCompareCreativeV10Api* | **OpenApiV10QianchuanProductAnalyseCompareCreativeGet** | **Get** /open_api/v1.0/qianchuan/product/analyse/compare_creative/
 *QianchuanProductAnalyseCompareStatsDataV10Api* | **OpenApiV10QianchuanProductAnalyseCompareStatsDataGet** | **Get** /open_api/v1.0/qianchuan/product/analyse/compare_stats_data/

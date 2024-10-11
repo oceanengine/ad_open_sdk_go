@@ -21,6 +21,7 @@ type CarouselListV2ResponseDataCarouselsInner struct {
 	Id *int64 `json:"id,omitempty"`
 	//
 	Images []*CarouselListV2ResponseDataCarouselsInnerImagesInner `json:"images,omitempty"`
+	Source *CarouselListV2DataCarouselsSource                     `json:"source,omitempty"`
 	//
 	UpdateTime *string `json:"update_time,omitempty"`
 }
