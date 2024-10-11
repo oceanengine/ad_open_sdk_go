@@ -12,9 +12,10 @@ package models
 
 // ToolsSiteCreateV2RequestBricksInnerSetting
 type ToolsSiteCreateV2RequestBricksInnerSetting struct {
-	Avatar     *ToolsSiteCreateV2RequestBricksInnerSettingAvatar     `json:"avatar,omitempty"`
-	Background *ToolsSiteCreateV2RequestBricksInnerSettingBackground `json:"background,omitempty"`
-	Button     *ToolsSiteCreateV2RequestBricksInnerSettingButton     `json:"button,omitempty"`
+	Avatar     *ToolsSiteCreateV2RequestBricksInnerSettingAvatar          `json:"avatar,omitempty"`
+	Background *ToolsSiteCreateV2RequestBricksInnerSettingBackground      `json:"background,omitempty"`
+	Image      *ToolsSiteCreateV2RequestBricksInnerSettingBackgroundImage `json:"image,omitempty"`
+	Button     *ToolsSiteCreateV2RequestBricksInnerSettingButton          `json:"button,omitempty"`
 	//
 	IntroduceType *string `json:"introduce_type,omitempty"`
 	//
