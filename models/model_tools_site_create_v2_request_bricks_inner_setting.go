@@ -15,6 +15,7 @@ type ToolsSiteCreateV2RequestBricksInnerSetting struct {
 	Avatar     *ToolsSiteCreateV2RequestBricksInnerSettingAvatar     `json:"avatar,omitempty"`
 	Background *ToolsSiteCreateV2RequestBricksInnerSettingBackground `json:"background,omitempty"`
 	Button     *ToolsSiteCreateV2RequestBricksInnerSettingButton     `json:"button,omitempty"`
+	Image      *ToolsSiteCreateV2RequestBricksInnerSettingImage      `json:"image,omitempty"`
 	//
 	IntroduceType *string `json:"introduce_type,omitempty"`
 	//

@@ -16,7 +16,6 @@ type LocalProjectUpdateV30AudienceHideIfConverted string
 // List of local_project_update_v3.0_audience_hide_if_converted
 const (
 	ADVERTISER_LocalProjectUpdateV30AudienceHideIfConverted   LocalProjectUpdateV30AudienceHideIfConverted = "ADVERTISER"
-	APP_LocalProjectUpdateV30AudienceHideIfConverted          LocalProjectUpdateV30AudienceHideIfConverted = "APP"
 	CUSTOMER_LocalProjectUpdateV30AudienceHideIfConverted     LocalProjectUpdateV30AudienceHideIfConverted = "CUSTOMER"
 	NO_EXCLUDE_LocalProjectUpdateV30AudienceHideIfConverted   LocalProjectUpdateV30AudienceHideIfConverted = "NO_EXCLUDE"
 	ORGANIZATION_LocalProjectUpdateV30AudienceHideIfConverted LocalProjectUpdateV30AudienceHideIfConverted = "ORGANIZATION"

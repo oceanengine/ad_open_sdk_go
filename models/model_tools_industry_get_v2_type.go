@@ -16,8 +16,8 @@ type ToolsIndustryGetV2Type string
 // List of tools_industry_get_v2_type
 const (
 	ADVERTISER_ToolsIndustryGetV2Type    ToolsIndustryGetV2Type = "ADVERTISER"
-	QUALIFICATION_ToolsIndustryGetV2Type ToolsIndustryGetV2Type = "QUALIFICATION"
 	AGENT_ToolsIndustryGetV2Type         ToolsIndustryGetV2Type = "AGENT"
+	QUALIFICATION_ToolsIndustryGetV2Type ToolsIndustryGetV2Type = "QUALIFICATION"
 )
 
 // Ptr returns reference to tools_industry_get_v2_type value

@@ -15,9 +15,9 @@ type AdGetV2DataOptStatus string
 
 // List of ad_get_v2_data_opt_status
 const (
-	AD_STATUS_ENABLE_AdGetV2DataOptStatus           AdGetV2DataOptStatus = "AD_STATUS_ENABLE"
 	AD_STATUS_DISABLE_AdGetV2DataOptStatus          AdGetV2DataOptStatus = "AD_STATUS_DISABLE"
 	AD_STATUS_DISABLE_BY_QUOTA_AdGetV2DataOptStatus AdGetV2DataOptStatus = "AD_STATUS_DISABLE_BY_QUOTA"
+	AD_STATUS_ENABLE_AdGetV2DataOptStatus           AdGetV2DataOptStatus = "AD_STATUS_ENABLE"
 	AD_STATUS_FROZEN_AdGetV2DataOptStatus           AdGetV2DataOptStatus = "AD_STATUS_FROZEN"
 )
 

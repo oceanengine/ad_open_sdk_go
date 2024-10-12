@@ -17,6 +17,7 @@ type LocalProjectCreateV30AudienceHideIfConverted string
 const (
 	ADVERTISER_LocalProjectCreateV30AudienceHideIfConverted   LocalProjectCreateV30AudienceHideIfConverted = "ADVERTISER"
 	CUSTOMER_LocalProjectCreateV30AudienceHideIfConverted     LocalProjectCreateV30AudienceHideIfConverted = "CUSTOMER"
+	NO_EXCLUDE_LocalProjectCreateV30AudienceHideIfConverted   LocalProjectCreateV30AudienceHideIfConverted = "NO_EXCLUDE"
 	ORGANIZATION_LocalProjectCreateV30AudienceHideIfConverted LocalProjectCreateV30AudienceHideIfConverted = "ORGANIZATION"
 	PROJECT_LocalProjectCreateV30AudienceHideIfConverted      LocalProjectCreateV30AudienceHideIfConverted = "PROJECT"
 	PROMOTION_LocalProjectCreateV30AudienceHideIfConverted    LocalProjectCreateV30AudienceHideIfConverted = "PROMOTION"
