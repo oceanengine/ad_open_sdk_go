@@ -15,12 +15,12 @@ type AudiencePackageUpdateV2HideIfConverted string
 
 // List of audience_package_update_v2_hide_if_converted
 const (
-	ADVERTISER_AudiencePackageUpdateV2HideIfConverted   AudiencePackageUpdateV2HideIfConverted = "ADVERTISER"
-	ORGANIZATION_AudiencePackageUpdateV2HideIfConverted AudiencePackageUpdateV2HideIfConverted = "ORGANIZATION"
 	NO_EXCLUDE_AudiencePackageUpdateV2HideIfConverted   AudiencePackageUpdateV2HideIfConverted = "NO_EXCLUDE"
-	CUSTOMER_AudiencePackageUpdateV2HideIfConverted     AudiencePackageUpdateV2HideIfConverted = "CUSTOMER"
-	AD_AudiencePackageUpdateV2HideIfConverted           AudiencePackageUpdateV2HideIfConverted = "AD"
+	ADVERTISER_AudiencePackageUpdateV2HideIfConverted   AudiencePackageUpdateV2HideIfConverted = "ADVERTISER"
 	APP_AudiencePackageUpdateV2HideIfConverted          AudiencePackageUpdateV2HideIfConverted = "APP"
+	CUSTOMER_AudiencePackageUpdateV2HideIfConverted     AudiencePackageUpdateV2HideIfConverted = "CUSTOMER"
+	ORGANIZATION_AudiencePackageUpdateV2HideIfConverted AudiencePackageUpdateV2HideIfConverted = "ORGANIZATION"
+	AD_AudiencePackageUpdateV2HideIfConverted           AudiencePackageUpdateV2HideIfConverted = "AD"
 	CAMPAIGN_AudiencePackageUpdateV2HideIfConverted     AudiencePackageUpdateV2HideIfConverted = "CAMPAIGN"
 )
 

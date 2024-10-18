@@ -22,11 +22,11 @@ import (
 	. "github.com/oceanengine/ad_open_sdk_go/models"
 )
 
-type ApiOpenApiV30StardeliveryTaskUpdatePostRequestExample struct {
-	StardeliveryTaskUpdateV30Request StardeliveryTaskUpdateV30Request `json:"StardeliveryTaskUpdateV30Request,omitempty"`
+type ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequestExample struct {
+	FileRebateRebateDownloadCreateTaskV2Request FileRebateRebateDownloadCreateTaskV2Request `json:"FileRebateRebateDownloadCreateTaskV2Request,omitempty"`
 }
 
-// url: https://api.oceanengine.com/open_api/v3.0/stardelivery/task/update/ Post
+// url: https://api.oceanengine.com/open_api/2/file/rebate/rebate_download/create_task/ Post
 func main() {
 	const demoreq = ``
 	const accessToken = "ACCESS_TOKEN"
@@ -36,16 +36,16 @@ func main() {
 	apiClient := ad_open_sdk_go.Init(configuration)
 	apiClient.SetLogEnable(true)
 
-	var request ApiOpenApiV30StardeliveryTaskUpdatePostRequestExample
+	var request ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequestExample
 	err := json.Unmarshal([]byte(demoreq), &request)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	resp, httpRes, err := apiClient.StardeliveryTaskUpdateV30Api().
+	resp, httpRes, err := apiClient.FileRebateRebateDownloadCreateTaskV2Api().
 		Post(ctx).
 		AccessToken(accessToken).
-		StardeliveryTaskUpdateV30Request(request.StardeliveryTaskUpdateV30Request).
+		FileRebateRebateDownloadCreateTaskV2Request(request.FileRebateRebateDownloadCreateTaskV2Request).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

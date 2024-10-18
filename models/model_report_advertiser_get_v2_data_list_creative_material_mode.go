@@ -15,9 +15,9 @@ type ReportAdvertiserGetV2DataListCreativeMaterialMode string
 
 // List of report_advertiser_get_v2_data_list_creative_material_mode
 const (
-	INTERVENE_ReportAdvertiserGetV2DataListCreativeMaterialMode       ReportAdvertiserGetV2DataListCreativeMaterialMode = "INTERVENE"
-	STATIC_ASSEMBLE_ReportAdvertiserGetV2DataListCreativeMaterialMode ReportAdvertiserGetV2DataListCreativeMaterialMode = "STATIC_ASSEMBLE"
 	CTR_ReportAdvertiserGetV2DataListCreativeMaterialMode             ReportAdvertiserGetV2DataListCreativeMaterialMode = "CTR"
+	STATIC_ASSEMBLE_ReportAdvertiserGetV2DataListCreativeMaterialMode ReportAdvertiserGetV2DataListCreativeMaterialMode = "STATIC_ASSEMBLE"
+	INTERVENE_ReportAdvertiserGetV2DataListCreativeMaterialMode       ReportAdvertiserGetV2DataListCreativeMaterialMode = "INTERVENE"
 )
 
 // Ptr returns reference to report_advertiser_get_v2_data_list_creative_material_mode value

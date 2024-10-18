@@ -57,6 +57,7 @@ const (
 	AD_CONVERT_TYPE_DIALBACK_CONNECT_ProjectListV30DataListOptimizeGoalExternalAction            ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_DIALBACK_CONNECT"
 	AD_CONVERT_TYPE_DOWNLOAD_FINISH_ProjectListV30DataListOptimizeGoalExternalAction             ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_DOWNLOAD_FINISH"
 	AD_CONVERT_TYPE_DOWNLOAD_START_ProjectListV30DataListOptimizeGoalExternalAction              ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_DOWNLOAD_START"
+	AD_CONVERT_TYPE_EFFECTIVE_ACTIVE_ProjectListV30DataListOptimizeGoalExternalAction            ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_ACTIVE"
 	AD_CONVERT_TYPE_EFFECTIVE_COPY_ProjectListV30DataListOptimizeGoalExternalAction              ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_COPY"
 	AD_CONVERT_TYPE_EFFECTIVE_PLAY_ProjectListV30DataListOptimizeGoalExternalAction              ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_PLAY"
 	AD_CONVERT_TYPE_ENTER_HOMEPAGE_ProjectListV30DataListOptimizeGoalExternalAction              ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_ENTER_HOMEPAGE"

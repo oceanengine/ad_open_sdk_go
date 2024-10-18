@@ -25,6 +25,7 @@ const (
 	CREATIVE_URL_PromotionRejectReasonGetV30DataListMaterialRejectType           PromotionRejectReasonGetV30DataListMaterialRejectType = "CREATIVE_URL"
 	CREATIVE_VIDEO_PromotionRejectReasonGetV30DataListMaterialRejectType         PromotionRejectReasonGetV30DataListMaterialRejectType = "CREATIVE_VIDEO"
 	OPEN_URL_PromotionRejectReasonGetV30DataListMaterialRejectType               PromotionRejectReasonGetV30DataListMaterialRejectType = "OPEN_URL"
+	PRODUCT_PromotionRejectReasonGetV30DataListMaterialRejectType                PromotionRejectReasonGetV30DataListMaterialRejectType = "PRODUCT"
 	PRODUCT_DESCRIBE_PromotionRejectReasonGetV30DataListMaterialRejectType       PromotionRejectReasonGetV30DataListMaterialRejectType = "PRODUCT_DESCRIBE"
 	PRODUCT_IMAGE_PromotionRejectReasonGetV30DataListMaterialRejectType          PromotionRejectReasonGetV30DataListMaterialRejectType = "PRODUCT_IMAGE"
 	PRODUCT_SELLING_POINTS_PromotionRejectReasonGetV30DataListMaterialRejectType PromotionRejectReasonGetV30DataListMaterialRejectType = "PRODUCT_SELLING_POINTS"

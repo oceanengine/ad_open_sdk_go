@@ -10,11 +10,11 @@ Oceanengine Open Api
 
 package models
 
-// StardeliveryTaskCreateV30Response struct for StardeliveryTaskCreateV30Response
-type StardeliveryTaskCreateV30Response struct {
+// AdvertiserVerifyInfoGetV30Response struct for AdvertiserVerifyInfoGetV30Response
+type AdvertiserVerifyInfoGetV30Response struct {
 	//
-	Code *int64                                 `json:"code,omitempty"`
-	Data *StardeliveryTaskCreateV30ResponseData `json:"data,omitempty"`
+	Code *int64                                  `json:"code,omitempty"`
+	Data *AdvertiserVerifyInfoGetV30ResponseData `json:"data,omitempty"`
 	//
 	Message *string `json:"message,omitempty"`
 	//

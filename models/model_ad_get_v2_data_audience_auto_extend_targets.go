@@ -15,12 +15,12 @@ type AdGetV2DataAudienceAutoExtendTargets string
 
 // List of ad_get_v2_data_audience_auto_extend_targets
 const (
+	CUSTOM_AUDIENCE_AdGetV2DataAudienceAutoExtendTargets AdGetV2DataAudienceAutoExtendTargets = "CUSTOM_AUDIENCE"
+	GENDER_AdGetV2DataAudienceAutoExtendTargets          AdGetV2DataAudienceAutoExtendTargets = "GENDER"
+	REGION_AdGetV2DataAudienceAutoExtendTargets          AdGetV2DataAudienceAutoExtendTargets = "REGION"
+	INTEREST_TAG_AdGetV2DataAudienceAutoExtendTargets    AdGetV2DataAudienceAutoExtendTargets = "INTEREST_TAG"
 	AD_TAG_AdGetV2DataAudienceAutoExtendTargets          AdGetV2DataAudienceAutoExtendTargets = "AD_TAG"
 	AGE_AdGetV2DataAudienceAutoExtendTargets             AdGetV2DataAudienceAutoExtendTargets = "AGE"
-	GENDER_AdGetV2DataAudienceAutoExtendTargets          AdGetV2DataAudienceAutoExtendTargets = "GENDER"
-	INTEREST_TAG_AdGetV2DataAudienceAutoExtendTargets    AdGetV2DataAudienceAutoExtendTargets = "INTEREST_TAG"
-	REGION_AdGetV2DataAudienceAutoExtendTargets          AdGetV2DataAudienceAutoExtendTargets = "REGION"
-	CUSTOM_AUDIENCE_AdGetV2DataAudienceAutoExtendTargets AdGetV2DataAudienceAutoExtendTargets = "CUSTOM_AUDIENCE"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_auto_extend_targets value

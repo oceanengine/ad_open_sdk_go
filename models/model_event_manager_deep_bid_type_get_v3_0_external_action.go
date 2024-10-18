@@ -56,6 +56,7 @@ const (
 	AD_CONVERT_TYPE_DIALBACK_CONNECT_EventManagerDeepBidTypeGetV30ExternalAction            EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_DIALBACK_CONNECT"
 	AD_CONVERT_TYPE_DOWNLOAD_FINISH_EventManagerDeepBidTypeGetV30ExternalAction             EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_DOWNLOAD_FINISH"
 	AD_CONVERT_TYPE_DOWNLOAD_START_EventManagerDeepBidTypeGetV30ExternalAction              EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_DOWNLOAD_START"
+	AD_CONVERT_TYPE_EFFECTIVE_ACTIVE_EventManagerDeepBidTypeGetV30ExternalAction            EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_ACTIVE"
 	AD_CONVERT_TYPE_EFFECTIVE_COPY_EventManagerDeepBidTypeGetV30ExternalAction              EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_COPY"
 	AD_CONVERT_TYPE_EFFECTIVE_PLAY_EventManagerDeepBidTypeGetV30ExternalAction              EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_PLAY"
 	AD_CONVERT_TYPE_ENTER_HOMEPAGE_EventManagerDeepBidTypeGetV30ExternalAction              EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_ENTER_HOMEPAGE"

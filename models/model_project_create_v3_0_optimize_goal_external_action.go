@@ -54,6 +54,7 @@ const (
 	AD_CONVERT_TYPE_DIALBACK_CONFIRM_ProjectCreateV30OptimizeGoalExternalAction            ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_DIALBACK_CONFIRM"
 	AD_CONVERT_TYPE_DIALBACK_CONNECT_ProjectCreateV30OptimizeGoalExternalAction            ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_DIALBACK_CONNECT"
 	AD_CONVERT_TYPE_DOWNLOAD_START_ProjectCreateV30OptimizeGoalExternalAction              ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_DOWNLOAD_START"
+	AD_CONVERT_TYPE_EFFECTIVE_ACTIVE_ProjectCreateV30OptimizeGoalExternalAction            ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_ACTIVE"
 	AD_CONVERT_TYPE_EFFECTIVE_COPY_ProjectCreateV30OptimizeGoalExternalAction              ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_COPY"
 	AD_CONVERT_TYPE_EFFECTIVE_PLAY_ProjectCreateV30OptimizeGoalExternalAction              ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_PLAY"
 	AD_CONVERT_TYPE_ENTER_HOMEPAGE_ProjectCreateV30OptimizeGoalExternalAction              ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_ENTER_HOMEPAGE"

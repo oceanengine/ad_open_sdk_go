@@ -54,6 +54,7 @@ const (
 	AD_CONVERT_TYPE_DIALBACK_CONFIRM_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction            EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_DIALBACK_CONFIRM"
 	AD_CONVERT_TYPE_DIALBACK_CONNECT_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction            EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_DIALBACK_CONNECT"
 	AD_CONVERT_TYPE_DOWNLOAD_START_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_DOWNLOAD_START"
+	AD_CONVERT_TYPE_EFFECTIVE_ACTIVE_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction            EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_ACTIVE"
 	AD_CONVERT_TYPE_EFFECTIVE_COPY_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_COPY"
 	AD_CONVERT_TYPE_EFFECTIVE_PLAY_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_EFFECTIVE_PLAY"
 	AD_CONVERT_TYPE_ENTER_HOMEPAGE_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_ENTER_HOMEPAGE"

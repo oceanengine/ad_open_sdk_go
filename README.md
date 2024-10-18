@@ -240,6 +240,7 @@ Class | Method | HTTP request
 *AdvertiserQualificationSubmitV30Api* | **OpenApiV30AdvertiserQualificationSubmitPost** | **Post** /open_api/v3.0/advertiser/qualification/submit/
 *AdvertiserTransferableFundGetV2Api* | **OpenApi2AdvertiserTransferableFundGetGet** | **Get** /open_api/2/advertiser/transferable_fund/get/
 *AdvertiserUpdateBudgetV2Api* | **OpenApi2AdvertiserUpdateBudgetPost** | **Post** /open_api/2/advertiser/update/budget/
+*AdvertiserVerifyInfoGetV30Api* | **OpenApiV30AdvertiserVerifyInfoGetGet** | **Get** /open_api/v3.0/advertiser/verify_info/get/
 *AgentAdvCostReportListQueryV2Api* | **OpenApi2AgentAdvCostReportListQueryPost** | **Post** /open_api/2/agent/adv/cost_report/list/query/
 *AgentAdvertiserAssignV2Api* | **OpenApi2AgentAdvertiserAssignPost** | **Post** /open_api/2/agent/advertiser/assign/
 *AgentAdvertiserCopyV2Api* | **OpenApi2AgentAdvertiserCopyPost** | **Post** /open_api/2/agent/advertiser/copy/
@@ -386,6 +387,7 @@ Class | Method | HTTP request
 *DouplusOrderListV30Api* | **OpenApiV30DouplusOrderListGet** | **Get** /open_api/v3.0/douplus/order/list/
 *DouplusOrderRenewV30Api* | **OpenApiV30DouplusOrderRenewPost** | **Post** /open_api/v3.0/douplus/order/renew/
 *DouplusOrderReportV30Api* | **OpenApiV30DouplusOrderReportGet** | **Get** /open_api/v3.0/douplus/order/report/
+*DownloadStatementEsignFileV2Api* | **OpenApi2DownloadStatementEsignFileGet** | **Get** /open_api/2/download/statement/esign_file/
 *DownloadStatementV2Api* | **OpenApi2DownloadStatementGet** | **Get** /open_api/2/download/statement/
 *DpaAssetV2DetailReadV2Api* | **OpenApi2DpaAssetV2DetailReadPost** | **Post** /open_api/2/dpa/asset_v2/detail/read/
 *DpaAssetV2ListV2Api* | **OpenApi2DpaAssetV2ListPost** | **Post** /open_api/2/dpa/asset_v2/list/
@@ -452,6 +454,7 @@ Class | Method | HTTP request
 *FileRebateMaterialDownloadCreateTaskV2Api* | **OpenApi2FileRebateMaterialDownloadCreateTaskPost** | **Post** /open_api/2/file/rebate/material_download/create_task/
 *FileRebateMaterialDownloadDownloadFileV2Api* | **OpenApi2FileRebateMaterialDownloadDownloadFileGet** | **Get** /open_api/2/file/rebate/material_download/download_file/
 *FileRebateMaterialDownloadGetDownloadTaskListV2Api* | **OpenApi2FileRebateMaterialDownloadGetDownloadTaskListGet** | **Get** /open_api/2/file/rebate/material_download/get_download_task_list/
+*FileRebateRebateDownloadCreateTaskV2Api* | **OpenApi2FileRebateRebateDownloadCreateTaskPost** | **Post** /open_api/2/file/rebate/rebate_download/create_task/
 *FileUploadTaskCreateV2Api* | **OpenApi2FileUploadTaskCreatePost** | **Post** /open_api/2/file/upload_task/create/
 *FileVideoAdGetV2Api* | **OpenApi2FileVideoAdGetGet** | **Get** /open_api/2/file/video/ad/get/
 *FileVideoAdV2Api* | **OpenApi2FileVideoAdPost** | **Post** /open_api/2/file/video/ad/
@@ -777,6 +780,9 @@ Class | Method | HTTP request
 *StarMcnGetContractedChallengeListV2Api* | **OpenApi2StarMcnGetContractedChallengeListGet** | **Get** /open_api/2/star/mcn/get_contracted_challenge_list/
 *StarMcnGetContractedChallengeUrlV2Api* | **OpenApi2StarMcnGetContractedChallengeUrlGet** | **Get** /open_api/2/star/mcn/get_contracted_challenge_url/
 *StarMcnGetUnparticipatedTaskV2Api* | **OpenApi2StarMcnGetUnparticipatedTaskGet** | **Get** /open_api/2/star/mcn/get_unparticipated_task/
+*StarMcnProviderGetParticipatedTaskV2Api* | **OpenApi2StarMcnProviderGetParticipatedTaskGet** | **Get** /open_api/2/star/mcn/provider_get_participated_task/
+*StarMcnProviderGetTaskDetailV2Api* | **OpenApi2StarMcnProviderGetTaskDetailGet** | **Get** /open_api/2/star/mcn/provider_get_task_detail/
+*StarMcnProviderGetUnparticipatedTaskV2Api* | **OpenApi2StarMcnProviderGetUnparticipatedTaskGet** | **Get** /open_api/2/star/mcn/provider_get_unparticipated_task/
 *StarOrderApproveResourceV2Api* | **OpenApi2StarOrderApproveResourcePost** | **Post** /open_api/2/star/order/approve_resource/
 *StarOrderDemanderCancelV2Api* | **OpenApi2StarOrderDemanderCancelPost** | **Post** /open_api/2/star/order/demander_cancel/
 *StarOrderDetailV2Api* | **OpenApi2StarOrderDetailGet** | **Get** /open_api/2/star/order/detail/
@@ -819,8 +825,6 @@ Class | Method | HTTP request
 *StardeliveryTaskAuthorVideoDetailV30Api* | **OpenApiV30StardeliveryTaskAuthorVideoDetailGet** | **Get** /open_api/v3.0/stardelivery/task_author_video/detail/
 *StardeliveryTaskBudgetUpdateV30Api* | **OpenApiV30StardeliveryTaskBudgetUpdatePost** | **Post** /open_api/v3.0/stardelivery/task/budget/update/
 *StardeliveryTaskCancelV30Api* | **OpenApiV30StardeliveryTaskCancelPost** | **Post** /open_api/v3.0/stardelivery/task/cancel/
-*StardeliveryTaskCreateResultGetV30Api* | **OpenApiV30StardeliveryTaskCreateResultGetGet** | **Get** /open_api/v3.0/stardelivery/task/create_result/get/
-*StardeliveryTaskCreateV30Api* | **OpenApiV30StardeliveryTaskCreatePost** | **Post** /open_api/v3.0/stardelivery/task/create/
 *StardeliveryTaskDetailV30Api* | **OpenApiV30StardeliveryTaskDetailGet** | **Get** /open_api/v3.0/stardelivery/task/detail/
 *StardeliveryTaskListV30Api* | **OpenApiV30StardeliveryTaskListGet** | **Get** /open_api/v3.0/stardelivery/task/list/
 *StardeliveryTaskPostEndTimeUpdateV30Api* | **OpenApiV30StardeliveryTaskPostEndTimeUpdatePost** | **Post** /open_api/v3.0/stardelivery/task/post_end_time/update/
@@ -828,7 +832,6 @@ Class | Method | HTTP request
 *StardeliveryTaskShareableListV30Api* | **OpenApiV30StardeliveryTaskShareableListGet** | **Get** /open_api/v3.0/stardelivery/task/shareable/list/
 *StardeliveryTaskSharingListV30Api* | **OpenApiV30StardeliveryTaskSharingListGet** | **Get** /open_api/v3.0/stardelivery/task/sharing/list/
 *StardeliveryTaskUnshareV30Api* | **OpenApiV30StardeliveryTaskUnsharePost** | **Post** /open_api/v3.0/stardelivery/task/unshare/
-*StardeliveryTaskUpdateV30Api* | **OpenApiV30StardeliveryTaskUpdatePost** | **Post** /open_api/v3.0/stardelivery/task/update/
 *SubscribeAccountsAddV30Api* | **OpenApiV30SubscribeAccountsAddPost** | **Post** /open_api/v3.0/subscribe/accounts/add/
 *SubscribeAccountsListV30Api* | **OpenApiV30SubscribeAccountsListGet** | **Get** /open_api/v3.0/subscribe/accounts/list/
 *SubscribeAccountsRemoveV30Api* | **OpenApiV30SubscribeAccountsRemovePost** | **Post** /open_api/v3.0/subscribe/accounts/remove/

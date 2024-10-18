@@ -15,12 +15,12 @@ type ToolsBidSuggestV2AutoExtendTargets string
 
 // List of tools_bid_suggest_v2_auto_extend_targets
 const (
+	CUSTOM_AUDIENCE_ToolsBidSuggestV2AutoExtendTargets ToolsBidSuggestV2AutoExtendTargets = "CUSTOM_AUDIENCE"
+	GENDER_ToolsBidSuggestV2AutoExtendTargets          ToolsBidSuggestV2AutoExtendTargets = "GENDER"
+	REGION_ToolsBidSuggestV2AutoExtendTargets          ToolsBidSuggestV2AutoExtendTargets = "REGION"
+	INTEREST_TAG_ToolsBidSuggestV2AutoExtendTargets    ToolsBidSuggestV2AutoExtendTargets = "INTEREST_TAG"
 	AD_TAG_ToolsBidSuggestV2AutoExtendTargets          ToolsBidSuggestV2AutoExtendTargets = "AD_TAG"
 	AGE_ToolsBidSuggestV2AutoExtendTargets             ToolsBidSuggestV2AutoExtendTargets = "AGE"
-	GENDER_ToolsBidSuggestV2AutoExtendTargets          ToolsBidSuggestV2AutoExtendTargets = "GENDER"
-	INTEREST_TAG_ToolsBidSuggestV2AutoExtendTargets    ToolsBidSuggestV2AutoExtendTargets = "INTEREST_TAG"
-	REGION_ToolsBidSuggestV2AutoExtendTargets          ToolsBidSuggestV2AutoExtendTargets = "REGION"
-	CUSTOM_AUDIENCE_ToolsBidSuggestV2AutoExtendTargets ToolsBidSuggestV2AutoExtendTargets = "CUSTOM_AUDIENCE"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_auto_extend_targets value

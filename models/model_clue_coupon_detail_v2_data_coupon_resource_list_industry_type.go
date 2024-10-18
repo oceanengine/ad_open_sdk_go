@@ -15,11 +15,11 @@ type ClueCouponDetailV2DataCouponResourceListIndustryType string
 
 // List of clue_coupon_detail_v2_data_coupon_resource_list_industry_type
 const (
-	FINANCIAL_ClueCouponDetailV2DataCouponResourceListIndustryType     ClueCouponDetailV2DataCouponResourceListIndustryType = "FINANCIAL"
-	OTHER_ClueCouponDetailV2DataCouponResourceListIndustryType         ClueCouponDetailV2DataCouponResourceListIndustryType = "OTHER"
-	ENTERTAINMENT_ClueCouponDetailV2DataCouponResourceListIndustryType ClueCouponDetailV2DataCouponResourceListIndustryType = "ENTERTAINMENT"
 	GAME_ClueCouponDetailV2DataCouponResourceListIndustryType          ClueCouponDetailV2DataCouponResourceListIndustryType = "GAME"
 	TICKET_ClueCouponDetailV2DataCouponResourceListIndustryType        ClueCouponDetailV2DataCouponResourceListIndustryType = "TICKET"
+	FINANCIAL_ClueCouponDetailV2DataCouponResourceListIndustryType     ClueCouponDetailV2DataCouponResourceListIndustryType = "FINANCIAL"
+	ENTERTAINMENT_ClueCouponDetailV2DataCouponResourceListIndustryType ClueCouponDetailV2DataCouponResourceListIndustryType = "ENTERTAINMENT"
+	OTHER_ClueCouponDetailV2DataCouponResourceListIndustryType         ClueCouponDetailV2DataCouponResourceListIndustryType = "OTHER"
 	FOOD_ClueCouponDetailV2DataCouponResourceListIndustryType          ClueCouponDetailV2DataCouponResourceListIndustryType = "FOOD"
 )
 

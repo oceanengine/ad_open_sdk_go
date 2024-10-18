@@ -1,5 +1,5 @@
 /*
-API version: 1.1.24
+API version: 1.1.25
 */
 package ad_open_sdk_go
 
@@ -161,6 +161,10 @@ func (c *Client) AdvertiserTransferableFundGetV2Api() *api.AdvertiserTransferabl
 
 func (c *Client) AdvertiserUpdateBudgetV2Api() *api.AdvertiserUpdateBudgetV2ApiService {
 	return c.ApiClient.AdvertiserUpdateBudgetV2Api
+}
+
+func (c *Client) AdvertiserVerifyInfoGetV30Api() *api.AdvertiserVerifyInfoGetV30ApiService {
+	return c.ApiClient.AdvertiserVerifyInfoGetV30Api
 }
 
 func (c *Client) AgentAdvCostReportListQueryV2Api() *api.AgentAdvCostReportListQueryV2ApiService {
@@ -747,6 +751,10 @@ func (c *Client) DouplusOrderReportV30Api() *api.DouplusOrderReportV30ApiService
 	return c.ApiClient.DouplusOrderReportV30Api
 }
 
+func (c *Client) DownloadStatementEsignFileV2Api() *api.DownloadStatementEsignFileV2ApiService {
+	return c.ApiClient.DownloadStatementEsignFileV2Api
+}
+
 func (c *Client) DownloadStatementV2Api() *api.DownloadStatementV2ApiService {
 	return c.ApiClient.DownloadStatementV2Api
 }
@@ -1009,6 +1017,10 @@ func (c *Client) FileRebateMaterialDownloadDownloadFileV2Api() *api.FileRebateMa
 
 func (c *Client) FileRebateMaterialDownloadGetDownloadTaskListV2Api() *api.FileRebateMaterialDownloadGetDownloadTaskListV2ApiService {
 	return c.ApiClient.FileRebateMaterialDownloadGetDownloadTaskListV2Api
+}
+
+func (c *Client) FileRebateRebateDownloadCreateTaskV2Api() *api.FileRebateRebateDownloadCreateTaskV2ApiService {
+	return c.ApiClient.FileRebateRebateDownloadCreateTaskV2Api
 }
 
 func (c *Client) FileUploadTaskCreateV2Api() *api.FileUploadTaskCreateV2ApiService {
@@ -2311,6 +2323,18 @@ func (c *Client) StarMcnGetUnparticipatedTaskV2Api() *api.StarMcnGetUnparticipat
 	return c.ApiClient.StarMcnGetUnparticipatedTaskV2Api
 }
 
+func (c *Client) StarMcnProviderGetParticipatedTaskV2Api() *api.StarMcnProviderGetParticipatedTaskV2ApiService {
+	return c.ApiClient.StarMcnProviderGetParticipatedTaskV2Api
+}
+
+func (c *Client) StarMcnProviderGetTaskDetailV2Api() *api.StarMcnProviderGetTaskDetailV2ApiService {
+	return c.ApiClient.StarMcnProviderGetTaskDetailV2Api
+}
+
+func (c *Client) StarMcnProviderGetUnparticipatedTaskV2Api() *api.StarMcnProviderGetUnparticipatedTaskV2ApiService {
+	return c.ApiClient.StarMcnProviderGetUnparticipatedTaskV2Api
+}
+
 func (c *Client) StarOrderApproveResourceV2Api() *api.StarOrderApproveResourceV2ApiService {
 	return c.ApiClient.StarOrderApproveResourceV2Api
 }
@@ -2479,14 +2503,6 @@ func (c *Client) StardeliveryTaskCancelV30Api() *api.StardeliveryTaskCancelV30Ap
 	return c.ApiClient.StardeliveryTaskCancelV30Api
 }
 
-func (c *Client) StardeliveryTaskCreateResultGetV30Api() *api.StardeliveryTaskCreateResultGetV30ApiService {
-	return c.ApiClient.StardeliveryTaskCreateResultGetV30Api
-}
-
-func (c *Client) StardeliveryTaskCreateV30Api() *api.StardeliveryTaskCreateV30ApiService {
-	return c.ApiClient.StardeliveryTaskCreateV30Api
-}
-
 func (c *Client) StardeliveryTaskDetailV30Api() *api.StardeliveryTaskDetailV30ApiService {
 	return c.ApiClient.StardeliveryTaskDetailV30Api
 }
@@ -2513,10 +2529,6 @@ func (c *Client) StardeliveryTaskSharingListV30Api() *api.StardeliveryTaskSharin
 
 func (c *Client) StardeliveryTaskUnshareV30Api() *api.StardeliveryTaskUnshareV30ApiService {
 	return c.ApiClient.StardeliveryTaskUnshareV30Api
-}
-
-func (c *Client) StardeliveryTaskUpdateV30Api() *api.StardeliveryTaskUpdateV30ApiService {
-	return c.ApiClient.StardeliveryTaskUpdateV30Api
 }
 
 func (c *Client) SubscribeAccountsAddV30Api() *api.SubscribeAccountsAddV30ApiService {

@@ -18,6 +18,8 @@ type LocalFileVideoGetV30ResponseDataVideoListInner struct {
 	Duration  *float64                                    `json:"duration,omitempty"`
 	ImageMode *LocalFileVideoGetV30DataVideoListImageMode `json:"image_mode,omitempty"`
 	//
+	MaterialId *int64 `json:"material_id,omitempty"`
+	//
 	MaterialProperties []*LocalFileVideoGetV30DataVideoListMaterialProperties `json:"material_properties,omitempty"`
 	//
 	PosterUrl *string                                  `json:"poster_url,omitempty"`

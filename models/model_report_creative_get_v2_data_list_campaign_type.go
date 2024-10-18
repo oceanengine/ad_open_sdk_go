@@ -15,8 +15,8 @@ type ReportCreativeGetV2DataListCampaignType string
 
 // List of report_creative_get_v2_data_list_campaign_type
 const (
-	SEARCH_ReportCreativeGetV2DataListCampaignType ReportCreativeGetV2DataListCampaignType = "SEARCH"
 	FEED_ReportCreativeGetV2DataListCampaignType   ReportCreativeGetV2DataListCampaignType = "FEED"
+	SEARCH_ReportCreativeGetV2DataListCampaignType ReportCreativeGetV2DataListCampaignType = "SEARCH"
 )
 
 // Ptr returns reference to report_creative_get_v2_data_list_campaign_type value

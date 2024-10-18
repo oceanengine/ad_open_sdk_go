@@ -15,9 +15,10 @@ type AccountFundGetV30AccountType string
 
 // List of account_fund_get_v3.0_account_type
 const (
-	AD_AccountFundGetV30AccountType    AccountFundGetV30AccountType = "AD"
-	STAR_AccountFundGetV30AccountType  AccountFundGetV30AccountType = "STAR"
-	LOCAL_AccountFundGetV30AccountType AccountFundGetV30AccountType = "LOCAL"
+	AD_AccountFundGetV30AccountType        AccountFundGetV30AccountType = "AD"
+	STAR_AccountFundGetV30AccountType      AccountFundGetV30AccountType = "STAR"
+	LOCAL_AccountFundGetV30AccountType     AccountFundGetV30AccountType = "LOCAL"
+	QIANCHUAN_AccountFundGetV30AccountType AccountFundGetV30AccountType = "QIANCHUAN"
 )
 
 // Ptr returns reference to account_fund_get_v3.0_account_type value

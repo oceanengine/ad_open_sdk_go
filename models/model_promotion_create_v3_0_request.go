@@ -30,7 +30,9 @@ type PromotionCreateV30Request struct {
 	CpaBid                     *float64                                      `json:"cpa_bid,omitempty"`
 	CreativeAutoGenerateSwitch *PromotionCreateV30CreativeAutoGenerateSwitch `json:"creative_auto_generate_switch,omitempty"`
 	//
-	DeepCpabid       *float64                            `json:"deep_cpabid,omitempty"`
+	DeepCpabid *float64 `json:"deep_cpabid,omitempty"`
+	//
+	FirstRoiGoal     *float64                            `json:"first_roi_goal,omitempty"`
 	IsCommentDisable *PromotionCreateV30IsCommentDisable `json:"is_comment_disable,omitempty"`
 	//
 	Keywords      []*PromotionCreateV30RequestKeywordsInner `json:"keywords,omitempty"`

@@ -15,13 +15,29 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerItemInfoD
 	//
 	AuthorAmount *int64 `json:"author_amount,omitempty"`
 	//
+	AuthorAmountIaa *int64 `json:"author_amount_iaa,omitempty"`
+	//
+	AuthorAmountIap *int64 `json:"author_amount_iap,omitempty"`
+	//
 	IaaIncomeDaily *string `json:"iaa_income_daily,omitempty"`
 	//
 	PDate *string `json:"p_date,omitempty"`
 	//
 	ServiceProviderAmount *int64 `json:"service_provider_amount,omitempty"`
 	//
+	ServiceProviderAmountIaa *int64 `json:"service_provider_amount_iaa,omitempty"`
+	//
+	ServiceProviderAmountIap *int64 `json:"service_provider_amount_iap,omitempty"`
+	//
 	SharePrice *int64 `json:"share_price,omitempty"`
 	//
+	SharePriceIaa *int64 `json:"share_price_iaa,omitempty"`
+	//
+	SharePriceIap *int64 `json:"share_price_iap,omitempty"`
+	//
 	SharePriceTotal *int64 `json:"share_price_total,omitempty"`
+	//
+	SharePriceTotalIaa *int64 `json:"share_price_total_iaa,omitempty"`
+	//
+	SharePriceTotalIap *int64 `json:"share_price_total_iap,omitempty"`
 }

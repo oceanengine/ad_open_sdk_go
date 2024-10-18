@@ -22,11 +22,12 @@ import (
 	. "github.com/oceanengine/ad_open_sdk_go/models"
 )
 
-type ApiOpenApiV30StardeliveryTaskCreatePostRequestExample struct {
-	StardeliveryTaskCreateV30Request StardeliveryTaskCreateV30Request `json:"StardeliveryTaskCreateV30Request,omitempty"`
+type ApiOpenApi2StarMcnProviderGetTaskDetailGetRequestExample struct {
+	StarId int64 `json:"star_id"`
+	TaskId int64 `json:"task_id"`
 }
 
-// url: https://api.oceanengine.com/open_api/v3.0/stardelivery/task/create/ Post
+// url: https://api.oceanengine.com/open_api/2/star/mcn/provider_get_task_detail/ Get
 func main() {
 	const demoreq = ``
 	const accessToken = "ACCESS_TOKEN"
@@ -36,16 +37,16 @@ func main() {
 	apiClient := ad_open_sdk_go.Init(configuration)
 	apiClient.SetLogEnable(true)
 
-	var request ApiOpenApiV30StardeliveryTaskCreatePostRequestExample
+	var request ApiOpenApi2StarMcnProviderGetTaskDetailGetRequestExample
 	err := json.Unmarshal([]byte(demoreq), &request)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	resp, httpRes, err := apiClient.StardeliveryTaskCreateV30Api().
-		Post(ctx).
+	resp, httpRes, err := apiClient.StarMcnProviderGetTaskDetailV2Api().
+		Get(ctx).
 		AccessToken(accessToken).
-		StardeliveryTaskCreateV30Request(request.StardeliveryTaskCreateV30Request).
+		StarId(request.StarId).TaskId(request.TaskId).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

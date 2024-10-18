@@ -26,6 +26,12 @@ type QueryStatementV2ResponseDataProjectRefStatementListInner struct {
 	StampStatus *int64 `json:"stamp_status,omitempty"`
 	// 结算单盖章状态名称
 	StampStatusName *string `json:"stamp_status_name,omitempty"`
+	//
+	StatementId *int64 `json:"statement_id,omitempty"`
 	// 结算单编号
 	StatementSerial *string `json:"statement_serial,omitempty"`
+	//
+	Status *int64 `json:"status,omitempty"`
+	//
+	StatusName *string `json:"status_name,omitempty"`
 }

@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.24
+// APIClient manages communication with the Oceanengine Open Api API v1.1.25
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -118,6 +118,8 @@ type APIClient struct {
 	AdvertiserTransferableFundGetV2Api *AdvertiserTransferableFundGetV2ApiService
 
 	AdvertiserUpdateBudgetV2Api *AdvertiserUpdateBudgetV2ApiService
+
+	AdvertiserVerifyInfoGetV30Api *AdvertiserVerifyInfoGetV30ApiService
 
 	AgentAdvCostReportListQueryV2Api *AgentAdvCostReportListQueryV2ApiService
 
@@ -411,6 +413,8 @@ type APIClient struct {
 
 	DouplusOrderReportV30Api *DouplusOrderReportV30ApiService
 
+	DownloadStatementEsignFileV2Api *DownloadStatementEsignFileV2ApiService
+
 	DownloadStatementV2Api *DownloadStatementV2ApiService
 
 	DpaAssetV2DetailReadV2Api *DpaAssetV2DetailReadV2ApiService
@@ -542,6 +546,8 @@ type APIClient struct {
 	FileRebateMaterialDownloadDownloadFileV2Api *FileRebateMaterialDownloadDownloadFileV2ApiService
 
 	FileRebateMaterialDownloadGetDownloadTaskListV2Api *FileRebateMaterialDownloadGetDownloadTaskListV2ApiService
+
+	FileRebateRebateDownloadCreateTaskV2Api *FileRebateRebateDownloadCreateTaskV2ApiService
 
 	FileUploadTaskCreateV2Api *FileUploadTaskCreateV2ApiService
 
@@ -1193,6 +1199,12 @@ type APIClient struct {
 
 	StarMcnGetUnparticipatedTaskV2Api *StarMcnGetUnparticipatedTaskV2ApiService
 
+	StarMcnProviderGetParticipatedTaskV2Api *StarMcnProviderGetParticipatedTaskV2ApiService
+
+	StarMcnProviderGetTaskDetailV2Api *StarMcnProviderGetTaskDetailV2ApiService
+
+	StarMcnProviderGetUnparticipatedTaskV2Api *StarMcnProviderGetUnparticipatedTaskV2ApiService
+
 	StarOrderApproveResourceV2Api *StarOrderApproveResourceV2ApiService
 
 	StarOrderDemanderCancelV2Api *StarOrderDemanderCancelV2ApiService
@@ -1277,10 +1289,6 @@ type APIClient struct {
 
 	StardeliveryTaskCancelV30Api *StardeliveryTaskCancelV30ApiService
 
-	StardeliveryTaskCreateResultGetV30Api *StardeliveryTaskCreateResultGetV30ApiService
-
-	StardeliveryTaskCreateV30Api *StardeliveryTaskCreateV30ApiService
-
 	StardeliveryTaskDetailV30Api *StardeliveryTaskDetailV30ApiService
 
 	StardeliveryTaskListV30Api *StardeliveryTaskListV30ApiService
@@ -1294,8 +1302,6 @@ type APIClient struct {
 	StardeliveryTaskSharingListV30Api *StardeliveryTaskSharingListV30ApiService
 
 	StardeliveryTaskUnshareV30Api *StardeliveryTaskUnshareV30ApiService
-
-	StardeliveryTaskUpdateV30Api *StardeliveryTaskUpdateV30ApiService
 
 	SubscribeAccountsAddV30Api *SubscribeAccountsAddV30ApiService
 
@@ -1810,6 +1816,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AdvertiserQualificationSubmitV30Api = (*AdvertiserQualificationSubmitV30ApiService)(&c.common)
 	c.AdvertiserTransferableFundGetV2Api = (*AdvertiserTransferableFundGetV2ApiService)(&c.common)
 	c.AdvertiserUpdateBudgetV2Api = (*AdvertiserUpdateBudgetV2ApiService)(&c.common)
+	c.AdvertiserVerifyInfoGetV30Api = (*AdvertiserVerifyInfoGetV30ApiService)(&c.common)
 	c.AgentAdvCostReportListQueryV2Api = (*AgentAdvCostReportListQueryV2ApiService)(&c.common)
 	c.AgentAdvertiserAssignV2Api = (*AgentAdvertiserAssignV2ApiService)(&c.common)
 	c.AgentAdvertiserCopyV2Api = (*AgentAdvertiserCopyV2ApiService)(&c.common)
@@ -1956,6 +1963,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.DouplusOrderListV30Api = (*DouplusOrderListV30ApiService)(&c.common)
 	c.DouplusOrderRenewV30Api = (*DouplusOrderRenewV30ApiService)(&c.common)
 	c.DouplusOrderReportV30Api = (*DouplusOrderReportV30ApiService)(&c.common)
+	c.DownloadStatementEsignFileV2Api = (*DownloadStatementEsignFileV2ApiService)(&c.common)
 	c.DownloadStatementV2Api = (*DownloadStatementV2ApiService)(&c.common)
 	c.DpaAssetV2DetailReadV2Api = (*DpaAssetV2DetailReadV2ApiService)(&c.common)
 	c.DpaAssetV2ListV2Api = (*DpaAssetV2ListV2ApiService)(&c.common)
@@ -2022,6 +2030,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.FileRebateMaterialDownloadCreateTaskV2Api = (*FileRebateMaterialDownloadCreateTaskV2ApiService)(&c.common)
 	c.FileRebateMaterialDownloadDownloadFileV2Api = (*FileRebateMaterialDownloadDownloadFileV2ApiService)(&c.common)
 	c.FileRebateMaterialDownloadGetDownloadTaskListV2Api = (*FileRebateMaterialDownloadGetDownloadTaskListV2ApiService)(&c.common)
+	c.FileRebateRebateDownloadCreateTaskV2Api = (*FileRebateRebateDownloadCreateTaskV2ApiService)(&c.common)
 	c.FileUploadTaskCreateV2Api = (*FileUploadTaskCreateV2ApiService)(&c.common)
 	c.FileVideoAdGetV2Api = (*FileVideoAdGetV2ApiService)(&c.common)
 	c.FileVideoAdV2Api = (*FileVideoAdV2ApiService)(&c.common)
@@ -2347,6 +2356,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarMcnGetContractedChallengeListV2Api = (*StarMcnGetContractedChallengeListV2ApiService)(&c.common)
 	c.StarMcnGetContractedChallengeUrlV2Api = (*StarMcnGetContractedChallengeUrlV2ApiService)(&c.common)
 	c.StarMcnGetUnparticipatedTaskV2Api = (*StarMcnGetUnparticipatedTaskV2ApiService)(&c.common)
+	c.StarMcnProviderGetParticipatedTaskV2Api = (*StarMcnProviderGetParticipatedTaskV2ApiService)(&c.common)
+	c.StarMcnProviderGetTaskDetailV2Api = (*StarMcnProviderGetTaskDetailV2ApiService)(&c.common)
+	c.StarMcnProviderGetUnparticipatedTaskV2Api = (*StarMcnProviderGetUnparticipatedTaskV2ApiService)(&c.common)
 	c.StarOrderApproveResourceV2Api = (*StarOrderApproveResourceV2ApiService)(&c.common)
 	c.StarOrderDemanderCancelV2Api = (*StarOrderDemanderCancelV2ApiService)(&c.common)
 	c.StarOrderDetailV2Api = (*StarOrderDetailV2ApiService)(&c.common)
@@ -2389,8 +2401,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StardeliveryTaskAuthorVideoDetailV30Api = (*StardeliveryTaskAuthorVideoDetailV30ApiService)(&c.common)
 	c.StardeliveryTaskBudgetUpdateV30Api = (*StardeliveryTaskBudgetUpdateV30ApiService)(&c.common)
 	c.StardeliveryTaskCancelV30Api = (*StardeliveryTaskCancelV30ApiService)(&c.common)
-	c.StardeliveryTaskCreateResultGetV30Api = (*StardeliveryTaskCreateResultGetV30ApiService)(&c.common)
-	c.StardeliveryTaskCreateV30Api = (*StardeliveryTaskCreateV30ApiService)(&c.common)
 	c.StardeliveryTaskDetailV30Api = (*StardeliveryTaskDetailV30ApiService)(&c.common)
 	c.StardeliveryTaskListV30Api = (*StardeliveryTaskListV30ApiService)(&c.common)
 	c.StardeliveryTaskPostEndTimeUpdateV30Api = (*StardeliveryTaskPostEndTimeUpdateV30ApiService)(&c.common)
@@ -2398,7 +2408,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StardeliveryTaskShareableListV30Api = (*StardeliveryTaskShareableListV30ApiService)(&c.common)
 	c.StardeliveryTaskSharingListV30Api = (*StardeliveryTaskSharingListV30ApiService)(&c.common)
 	c.StardeliveryTaskUnshareV30Api = (*StardeliveryTaskUnshareV30ApiService)(&c.common)
-	c.StardeliveryTaskUpdateV30Api = (*StardeliveryTaskUpdateV30ApiService)(&c.common)
 	c.SubscribeAccountsAddV30Api = (*SubscribeAccountsAddV30ApiService)(&c.common)
 	c.SubscribeAccountsListV30Api = (*SubscribeAccountsListV30ApiService)(&c.common)
 	c.SubscribeAccountsRemoveV30Api = (*SubscribeAccountsRemoveV30ApiService)(&c.common)

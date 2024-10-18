@@ -13,6 +13,10 @@ package models
 // PromotionListV30ResponseDataListInnerPromotionMaterialsProductInfo
 type PromotionListV30ResponseDataListInnerPromotionMaterialsProductInfo struct {
 	//
+	EchoImageIds []string `json:"echo_image_ids,omitempty"`
+	//
+	EchoTitles []string `json:"echo_titles,omitempty"`
+	//
 	ImageIds []string `json:"image_ids,omitempty"`
 	//
 	ProductImageFields []string                                                               `json:"product_image_fields,omitempty"`
