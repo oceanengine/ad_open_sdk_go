@@ -15,8 +15,8 @@ type AdGetV2DataAudienceExtend string
 
 // List of ad_get_v2_data_audience_extend
 const (
-	ON_AdGetV2DataAudienceExtend  AdGetV2DataAudienceExtend = "ON"
 	OFF_AdGetV2DataAudienceExtend AdGetV2DataAudienceExtend = "OFF"
+	ON_AdGetV2DataAudienceExtend  AdGetV2DataAudienceExtend = "ON"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_extend value

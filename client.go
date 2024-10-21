@@ -1,5 +1,5 @@
 /*
-API version: 1.1.25
+API version: 1.1.26
 */
 package ad_open_sdk_go
 
@@ -2145,6 +2145,10 @@ func (c *Client) SharedWalletWalletRelationGetV30Api() *api.SharedWalletWalletRe
 
 func (c *Client) SpiTaskGetV2Api() *api.SpiTaskGetV2ApiService {
 	return c.ApiClient.SpiTaskGetV2Api
+}
+
+func (c *Client) StarAttachmentUploadV2Api() *api.StarAttachmentUploadV2ApiService {
+	return c.ApiClient.StarAttachmentUploadV2Api
 }
 
 func (c *Client) StarBillGetPendingV2Api() *api.StarBillGetPendingV2ApiService {

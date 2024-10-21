@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.25
+// APIClient manages communication with the Oceanengine Open Api API v1.1.26
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -1110,6 +1110,8 @@ type APIClient struct {
 	SharedWalletWalletRelationGetV30Api *SharedWalletWalletRelationGetV30ApiService
 
 	SpiTaskGetV2Api *SpiTaskGetV2ApiService
+
+	StarAttachmentUploadV2Api *StarAttachmentUploadV2ApiService
 
 	StarBillGetPendingV2Api *StarBillGetPendingV2ApiService
 
@@ -2312,6 +2314,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.SharedWalletWalletInfoGetV30Api = (*SharedWalletWalletInfoGetV30ApiService)(&c.common)
 	c.SharedWalletWalletRelationGetV30Api = (*SharedWalletWalletRelationGetV30ApiService)(&c.common)
 	c.SpiTaskGetV2Api = (*SpiTaskGetV2ApiService)(&c.common)
+	c.StarAttachmentUploadV2Api = (*StarAttachmentUploadV2ApiService)(&c.common)
 	c.StarBillGetPendingV2Api = (*StarBillGetPendingV2ApiService)(&c.common)
 	c.StarBillPayV2Api = (*StarBillPayV2ApiService)(&c.common)
 	c.StarBrandCategoryListV2Api = (*StarBrandCategoryListV2ApiService)(&c.common)

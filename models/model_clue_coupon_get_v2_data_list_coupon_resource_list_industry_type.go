@@ -15,12 +15,12 @@ type ClueCouponGetV2DataListCouponResourceListIndustryType string
 
 // List of clue_coupon_get_v2_data_list_coupon_resource_list_industry_type
 const (
-	GAME_ClueCouponGetV2DataListCouponResourceListIndustryType          ClueCouponGetV2DataListCouponResourceListIndustryType = "GAME"
-	TICKET_ClueCouponGetV2DataListCouponResourceListIndustryType        ClueCouponGetV2DataListCouponResourceListIndustryType = "TICKET"
-	FINANCIAL_ClueCouponGetV2DataListCouponResourceListIndustryType     ClueCouponGetV2DataListCouponResourceListIndustryType = "FINANCIAL"
-	ENTERTAINMENT_ClueCouponGetV2DataListCouponResourceListIndustryType ClueCouponGetV2DataListCouponResourceListIndustryType = "ENTERTAINMENT"
-	OTHER_ClueCouponGetV2DataListCouponResourceListIndustryType         ClueCouponGetV2DataListCouponResourceListIndustryType = "OTHER"
 	FOOD_ClueCouponGetV2DataListCouponResourceListIndustryType          ClueCouponGetV2DataListCouponResourceListIndustryType = "FOOD"
+	TICKET_ClueCouponGetV2DataListCouponResourceListIndustryType        ClueCouponGetV2DataListCouponResourceListIndustryType = "TICKET"
+	GAME_ClueCouponGetV2DataListCouponResourceListIndustryType          ClueCouponGetV2DataListCouponResourceListIndustryType = "GAME"
+	ENTERTAINMENT_ClueCouponGetV2DataListCouponResourceListIndustryType ClueCouponGetV2DataListCouponResourceListIndustryType = "ENTERTAINMENT"
+	FINANCIAL_ClueCouponGetV2DataListCouponResourceListIndustryType     ClueCouponGetV2DataListCouponResourceListIndustryType = "FINANCIAL"
+	OTHER_ClueCouponGetV2DataListCouponResourceListIndustryType         ClueCouponGetV2DataListCouponResourceListIndustryType = "OTHER"
 )
 
 // Ptr returns reference to clue_coupon_get_v2_data_list_coupon_resource_list_industry_type value

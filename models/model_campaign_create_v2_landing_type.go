@@ -15,17 +15,17 @@ type CampaignCreateV2LandingType string
 
 // List of campaign_create_v2_landing_type
 const (
-	LINK_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LINK"
-	SHOP_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "SHOP"
-	BRAND_EXTERNAL_CampaignCreateV2LandingType CampaignCreateV2LandingType = "BRAND_EXTERNAL"
-	AWEME_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "AWEME"
-	APP_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "APP"
 	GOODS_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "GOODS"
-	LIVE_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LIVE"
-	STORE_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "STORE"
 	DPA_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "DPA"
 	ARTICLE_CampaignCreateV2LandingType        CampaignCreateV2LandingType = "ARTICLE"
 	QUICK_APP_CampaignCreateV2LandingType      CampaignCreateV2LandingType = "QUICK_APP"
+	SHOP_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "SHOP"
+	APP_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "APP"
+	AWEME_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "AWEME"
+	LINK_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LINK"
+	LIVE_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LIVE"
+	BRAND_EXTERNAL_CampaignCreateV2LandingType CampaignCreateV2LandingType = "BRAND_EXTERNAL"
+	STORE_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "STORE"
 )
 
 // Ptr returns reference to campaign_create_v2_landing_type value

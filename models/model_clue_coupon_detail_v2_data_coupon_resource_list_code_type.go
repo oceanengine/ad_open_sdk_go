@@ -17,8 +17,8 @@ type ClueCouponDetailV2DataCouponResourceListCodeType string
 const (
 	MERCHANT_ClueCouponDetailV2DataCouponResourceListCodeType ClueCouponDetailV2DataCouponResourceListCodeType = "MERCHANT"
 	COMMON_ClueCouponDetailV2DataCouponResourceListCodeType   ClueCouponDetailV2DataCouponResourceListCodeType = "COMMON"
-	API_ClueCouponDetailV2DataCouponResourceListCodeType      ClueCouponDetailV2DataCouponResourceListCodeType = "API"
 	PLATFORM_ClueCouponDetailV2DataCouponResourceListCodeType ClueCouponDetailV2DataCouponResourceListCodeType = "PLATFORM"
+	API_ClueCouponDetailV2DataCouponResourceListCodeType      ClueCouponDetailV2DataCouponResourceListCodeType = "API"
 )
 
 // Ptr returns reference to clue_coupon_detail_v2_data_coupon_resource_list_code_type value

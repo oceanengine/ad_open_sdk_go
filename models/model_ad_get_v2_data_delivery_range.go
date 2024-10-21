@@ -15,8 +15,8 @@ type AdGetV2DataDeliveryRange string
 
 // List of ad_get_v2_data_delivery_range
 const (
-	UNIVERSAL_AdGetV2DataDeliveryRange AdGetV2DataDeliveryRange = "UNIVERSAL"
 	DEFAULT_AdGetV2DataDeliveryRange   AdGetV2DataDeliveryRange = "DEFAULT"
+	UNIVERSAL_AdGetV2DataDeliveryRange AdGetV2DataDeliveryRange = "UNIVERSAL"
 	UNION_AdGetV2DataDeliveryRange     AdGetV2DataDeliveryRange = "UNION"
 )
 

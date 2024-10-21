@@ -736,6 +736,7 @@ Class | Method | HTTP request
 *SharedWalletWalletInfoGetV30Api* | **OpenApiV30SharedWalletWalletInfoGetGet** | **Get** /open_api/v3.0/shared_wallet/wallet_info/get/
 *SharedWalletWalletRelationGetV30Api* | **OpenApiV30SharedWalletWalletRelationGetGet** | **Get** /open_api/v3.0/shared_wallet/wallet_relation/get/
 *SpiTaskGetV2Api* | **OpenApi2SpiTaskGetGet** | **Get** /open_api/2/spi_task/get/
+*StarAttachmentUploadV2Api* | **OpenApi2StarAttachmentUploadPost** | **Post** /open_api/2/star/attachment/upload/
 *StarBillGetPendingV2Api* | **OpenApi2StarBillGetPendingGet** | **Get** /open_api/2/star/bill/get_pending/
 *StarBillPayV2Api* | **OpenApi2StarBillPayPost** | **Post** /open_api/2/star/bill/pay/
 *StarBrandCategoryListV2Api* | **OpenApi2StarBrandCategoryListGet** | **Get** /open_api/2/star/brand_category/list/
