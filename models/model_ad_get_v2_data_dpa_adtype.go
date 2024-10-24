@@ -15,8 +15,8 @@ type AdGetV2DataDpaAdtype string
 
 // List of ad_get_v2_data_dpa_adtype
 const (
-	DPA_APP_AdGetV2DataDpaAdtype  AdGetV2DataDpaAdtype = "DPA_APP"
 	DPA_LINK_AdGetV2DataDpaAdtype AdGetV2DataDpaAdtype = "DPA_LINK"
+	DPA_APP_AdGetV2DataDpaAdtype  AdGetV2DataDpaAdtype = "DPA_APP"
 )
 
 // Ptr returns reference to ad_get_v2_data_dpa_adtype value

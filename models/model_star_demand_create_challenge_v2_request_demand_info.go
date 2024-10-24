@@ -35,6 +35,8 @@ type StarDemandCreateChallengeV2RequestDemandInfo struct {
 	ExpirationTime *int64 `json:"expiration_time,omitempty"`
 	//
 	ExpirationTimeEnd *int64 `json:"expiration_time_end,omitempty"`
+	// ip活动ID
+	IpActId *int64 `json:"ip_act_id,omitempty"`
 	// 视频曝光监测链接 https开头的URL
 	ItemShowMonitorUrl *string `json:"item_show_monitor_url,omitempty"`
 	// 所属类目 类目文本，特定品牌下需要

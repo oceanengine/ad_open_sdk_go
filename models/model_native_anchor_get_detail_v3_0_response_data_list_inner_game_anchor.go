@@ -48,8 +48,6 @@ type NativeAnchorGetDetailV30ResponseDataListInnerGameAnchor struct {
 	//
 	MicroAppName *string `json:"micro_app_name,omitempty"`
 	//
-	MicroAppPath *string `json:"micro_app_path,omitempty"`
-	//
 	MicroAppUserName *string `json:"micro_app_user_name,omitempty"`
 	//
 	OtherDescription *string `json:"other_description,omitempty"`

@@ -15,8 +15,8 @@ type EnterpriseFlowCategoryGetV10OrderType string
 
 // List of enterprise_flow_category_get_v1.0_order_type
 const (
-	ASC_EnterpriseFlowCategoryGetV10OrderType  EnterpriseFlowCategoryGetV10OrderType = "ASC"
 	DESC_EnterpriseFlowCategoryGetV10OrderType EnterpriseFlowCategoryGetV10OrderType = "DESC"
+	ASC_EnterpriseFlowCategoryGetV10OrderType  EnterpriseFlowCategoryGetV10OrderType = "ASC"
 )
 
 // Ptr returns reference to enterprise_flow_category_get_v1.0_order_type value

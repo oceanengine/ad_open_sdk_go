@@ -15,9 +15,9 @@ type ToolsEstimateAudienceV2InterestActionMode string
 
 // List of tools_estimate_audience_v2_interest_action_mode
 const (
-	RECOMMEND_ToolsEstimateAudienceV2InterestActionMode ToolsEstimateAudienceV2InterestActionMode = "RECOMMEND"
 	UNLIMITED_ToolsEstimateAudienceV2InterestActionMode ToolsEstimateAudienceV2InterestActionMode = "UNLIMITED"
 	CUSTOM_ToolsEstimateAudienceV2InterestActionMode    ToolsEstimateAudienceV2InterestActionMode = "CUSTOM"
+	RECOMMEND_ToolsEstimateAudienceV2InterestActionMode ToolsEstimateAudienceV2InterestActionMode = "RECOMMEND"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_interest_action_mode value

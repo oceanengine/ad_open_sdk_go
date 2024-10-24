@@ -17,6 +17,8 @@ type AgentTransferTransactionRecordV2FilteringPlatform string
 const (
 	AD_AgentTransferTransactionRecordV2FilteringPlatform                    AgentTransferTransactionRecordV2FilteringPlatform = "AD"
 	EFFECT_AgentTransferTransactionRecordV2FilteringPlatform                AgentTransferTransactionRecordV2FilteringPlatform = "EFFECT"
+	LOCAL_AgentTransferTransactionRecordV2FilteringPlatform                 AgentTransferTransactionRecordV2FilteringPlatform = "LOCAL"
+	QIANCHUAN_AgentTransferTransactionRecordV2FilteringPlatform             AgentTransferTransactionRecordV2FilteringPlatform = "QIANCHUAN"
 	STAR_AgentTransferTransactionRecordV2FilteringPlatform                  AgentTransferTransactionRecordV2FilteringPlatform = "STAR"
 	TRUSTEESHIP_MARKETING_AgentTransferTransactionRecordV2FilteringPlatform AgentTransferTransactionRecordV2FilteringPlatform = "TRUSTEESHIP_MARKETING"
 	ZTT_AgentTransferTransactionRecordV2FilteringPlatform                   AgentTransferTransactionRecordV2FilteringPlatform = "ZTT"

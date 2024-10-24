@@ -39,6 +39,8 @@ type StarDemandCreateAssignV2RequestDemandInfo struct {
 	ExpirationTimeEnd int64 `json:"expiration_time_end"`
 	// 是否跳过脚本环节 (0)或不传：不跳过，(1)：跳过
 	IgnoreScript *int64 `json:"ignore_script,omitempty"`
+	// ip活动ID
+	IpActId *int64 `json:"ip_act_id,omitempty"`
 	// 视频曝光监测链接 https开头的URL
 	ItemShowMonitorUrl *string `json:"item_show_monitor_url,omitempty"`
 	// 所属类目

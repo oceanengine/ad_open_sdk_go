@@ -1,5 +1,5 @@
 /*
-API version: 1.1.26
+API version: 1.1.27
 */
 package ad_open_sdk_go
 

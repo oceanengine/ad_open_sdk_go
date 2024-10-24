@@ -19,8 +19,12 @@ type DiagnosisTaskAgentListV2ResponseDataTaskListInner struct {
 	IsFirstPublishMaterial   *DiagnosisTaskAgentListV2DataTaskListIsFirstPublishMaterial   `json:"is_first_publish_material,omitempty"`
 	IsInefficientMaterial    *DiagnosisTaskAgentListV2DataTaskListIsInefficientMaterial    `json:"is_inefficient_material,omitempty"`
 	//
-	MaterialId *int64                                     `json:"material_id,omitempty"`
-	Status     DiagnosisTaskAgentListV2DataTaskListStatus `json:"status"`
+	MaterialId *int64 `json:"material_id,omitempty"`
+	//
+	NotAdHighQualityReason []string `json:"not_ad_high_quality_reason,omitempty"`
+	//
+	NotEcpHighQualityReason []string                                   `json:"not_ecp_high_quality_reason,omitempty"`
+	Status                  DiagnosisTaskAgentListV2DataTaskListStatus `json:"status"`
 	//
 	TaskId int64 `json:"task_id"`
 	//

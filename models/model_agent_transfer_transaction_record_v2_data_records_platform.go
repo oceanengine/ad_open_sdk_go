@@ -17,6 +17,8 @@ type AgentTransferTransactionRecordV2DataRecordsPlatform string
 const (
 	AD_AgentTransferTransactionRecordV2DataRecordsPlatform                    AgentTransferTransactionRecordV2DataRecordsPlatform = "AD"
 	EFFECT_AgentTransferTransactionRecordV2DataRecordsPlatform                AgentTransferTransactionRecordV2DataRecordsPlatform = "EFFECT"
+	LOCAL_AgentTransferTransactionRecordV2DataRecordsPlatform                 AgentTransferTransactionRecordV2DataRecordsPlatform = "LOCAL"
+	QIANCHUAN_AgentTransferTransactionRecordV2DataRecordsPlatform             AgentTransferTransactionRecordV2DataRecordsPlatform = "QIANCHUAN"
 	STAR_AgentTransferTransactionRecordV2DataRecordsPlatform                  AgentTransferTransactionRecordV2DataRecordsPlatform = "STAR"
 	TRUSTEESHIP_MARKETING_AgentTransferTransactionRecordV2DataRecordsPlatform AgentTransferTransactionRecordV2DataRecordsPlatform = "TRUSTEESHIP_MARKETING"
 	ZTT_AgentTransferTransactionRecordV2DataRecordsPlatform                   AgentTransferTransactionRecordV2DataRecordsPlatform = "ZTT"

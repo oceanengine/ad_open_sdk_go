@@ -15,11 +15,11 @@ type ClueSmartphoneGetV2DataListValidateType string
 
 // List of clue_smartphone_get_v2_data_list_validate_type
 const (
-	VALIDITY_PRIORITY_ClueSmartphoneGetV2DataListValidateType ClueSmartphoneGetV2DataListValidateType = "VALIDITY_PRIORITY"
 	ALL_VERIFICATION_ClueSmartphoneGetV2DataListValidateType  ClueSmartphoneGetV2DataListValidateType = "ALL_VERIFICATION"
+	VALIDITY_PRIORITY_ClueSmartphoneGetV2DataListValidateType ClueSmartphoneGetV2DataListValidateType = "VALIDITY_PRIORITY"
 	AUTO_VERIFICATION_ClueSmartphoneGetV2DataListValidateType ClueSmartphoneGetV2DataListValidateType = "AUTO_VERIFICATION"
-	NONE_VERIFICATION_ClueSmartphoneGetV2DataListValidateType ClueSmartphoneGetV2DataListValidateType = "NONE_VERIFICATION"
 	CLUE_PRIORITY_ClueSmartphoneGetV2DataListValidateType     ClueSmartphoneGetV2DataListValidateType = "CLUE_PRIORITY"
+	NONE_VERIFICATION_ClueSmartphoneGetV2DataListValidateType ClueSmartphoneGetV2DataListValidateType = "NONE_VERIFICATION"
 )
 
 // Ptr returns reference to clue_smartphone_get_v2_data_list_validate_type value

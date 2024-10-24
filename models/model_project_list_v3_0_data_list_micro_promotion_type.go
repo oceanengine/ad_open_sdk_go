@@ -15,6 +15,7 @@ type ProjectListV30DataListMicroPromotionType string
 
 // List of project_list_v3.0_data_list_micro_promotion_type
 const (
+	AWEME_ProjectListV30DataListMicroPromotionType       ProjectListV30DataListMicroPromotionType = "AWEME"
 	BYTE_APP_ProjectListV30DataListMicroPromotionType    ProjectListV30DataListMicroPromotionType = "BYTE_APP"
 	BYTE_GAME_ProjectListV30DataListMicroPromotionType   ProjectListV30DataListMicroPromotionType = "BYTE_GAME"
 	WECHAT_APP_ProjectListV30DataListMicroPromotionType  ProjectListV30DataListMicroPromotionType = "WECHAT_APP"

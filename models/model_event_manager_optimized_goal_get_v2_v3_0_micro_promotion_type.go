@@ -15,6 +15,7 @@ type EventManagerOptimizedGoalGetV2V30MicroPromotionType string
 
 // List of event_manager_optimized_goal_get_v2_v3.0_micro_promotion_type
 const (
+	AWEME_EventManagerOptimizedGoalGetV2V30MicroPromotionType       EventManagerOptimizedGoalGetV2V30MicroPromotionType = "AWEME"
 	BYTE_APP_EventManagerOptimizedGoalGetV2V30MicroPromotionType    EventManagerOptimizedGoalGetV2V30MicroPromotionType = "BYTE_APP"
 	BYTE_GAME_EventManagerOptimizedGoalGetV2V30MicroPromotionType   EventManagerOptimizedGoalGetV2V30MicroPromotionType = "BYTE_GAME"
 	WECHAT_APP_EventManagerOptimizedGoalGetV2V30MicroPromotionType  EventManagerOptimizedGoalGetV2V30MicroPromotionType = "WECHAT_APP"

@@ -12,10 +12,14 @@ package models
 
 // FileVideoAwemeGetV2ResponseDataListInner struct for FileVideoAwemeGetV2ResponseDataListInner
 type FileVideoAwemeGetV2ResponseDataListInner struct {
+	//
+	AlbumId *int64 `json:"album_id,omitempty"`
 	// 视频播放链接
 	AwemePlayUrl *string `json:"aweme_play_url,omitempty"`
 	// 视频时长，单位为秒
-	Duration  *float64                              `json:"duration,omitempty"`
+	Duration *float64 `json:"duration,omitempty"`
+	//
+	IfAlbum   *string                               `json:"if_album,omitempty"`
 	ImageMode *FileVideoAwemeGetV2DataListImageMode `json:"image_mode,omitempty"`
 	// 抖音视频ID
 	ItemId *int64 `json:"item_id,omitempty"`

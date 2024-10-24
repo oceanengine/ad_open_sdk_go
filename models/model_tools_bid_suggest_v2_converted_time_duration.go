@@ -15,13 +15,13 @@ type ToolsBidSuggestV2ConvertedTimeDuration string
 
 // List of tools_bid_suggest_v2_converted_time_duration
 const (
-	THREE_MONTH_ToolsBidSuggestV2ConvertedTimeDuration  ToolsBidSuggestV2ConvertedTimeDuration = "THREE_MONTH"
-	SEVEN_DAY_ToolsBidSuggestV2ConvertedTimeDuration    ToolsBidSuggestV2ConvertedTimeDuration = "SEVEN_DAY"
-	TWELVE_MONTH_ToolsBidSuggestV2ConvertedTimeDuration ToolsBidSuggestV2ConvertedTimeDuration = "TWELVE_MONTH"
-	TODAY_ToolsBidSuggestV2ConvertedTimeDuration        ToolsBidSuggestV2ConvertedTimeDuration = "TODAY"
-	SIX_MONTH_ToolsBidSuggestV2ConvertedTimeDuration    ToolsBidSuggestV2ConvertedTimeDuration = "SIX_MONTH"
 	NONE_ToolsBidSuggestV2ConvertedTimeDuration         ToolsBidSuggestV2ConvertedTimeDuration = "NONE"
+	SIX_MONTH_ToolsBidSuggestV2ConvertedTimeDuration    ToolsBidSuggestV2ConvertedTimeDuration = "SIX_MONTH"
+	SEVEN_DAY_ToolsBidSuggestV2ConvertedTimeDuration    ToolsBidSuggestV2ConvertedTimeDuration = "SEVEN_DAY"
+	THREE_MONTH_ToolsBidSuggestV2ConvertedTimeDuration  ToolsBidSuggestV2ConvertedTimeDuration = "THREE_MONTH"
+	TODAY_ToolsBidSuggestV2ConvertedTimeDuration        ToolsBidSuggestV2ConvertedTimeDuration = "TODAY"
 	ONE_MONTH_ToolsBidSuggestV2ConvertedTimeDuration    ToolsBidSuggestV2ConvertedTimeDuration = "ONE_MONTH"
+	TWELVE_MONTH_ToolsBidSuggestV2ConvertedTimeDuration ToolsBidSuggestV2ConvertedTimeDuration = "TWELVE_MONTH"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_converted_time_duration value
