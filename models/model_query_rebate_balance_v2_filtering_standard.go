@@ -15,8 +15,9 @@ type QueryRebateBalanceV2FilteringStandard string
 
 // List of query_rebate_balance_v2_filtering_standard
 const (
-	YES_QueryRebateBalanceV2FilteringStandard QueryRebateBalanceV2FilteringStandard = "YES"
-	NO_QueryRebateBalanceV2FilteringStandard  QueryRebateBalanceV2FilteringStandard = "NO"
+	YES_QueryRebateBalanceV2FilteringStandard            QueryRebateBalanceV2FilteringStandard = "YES"
+	NO_QueryRebateBalanceV2FilteringStandard             QueryRebateBalanceV2FilteringStandard = "NO"
+	YES_OF_INSPIRE_QueryRebateBalanceV2FilteringStandard QueryRebateBalanceV2FilteringStandard = "YES_OF_INSPIRE"
 )
 
 // Ptr returns reference to query_rebate_balance_v2_filtering_standard value

@@ -10,17 +10,49 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementAndroidBasicPackageGetV2ResponseDataNextVersion 待发布版本信息
+// ToolsAppManagementAndroidBasicPackageGetV2ResponseDataNextVersion
 type ToolsAppManagementAndroidBasicPackageGetV2ResponseDataNextVersion struct {
-	// 应用名
+	//
 	AppName *string `json:"app_name,omitempty"`
-	// 审核id，审核通过时id显示为0
+	//
+	ArtStyle *string `json:"art_style,omitempty"`
+	//
 	AuditId *int64 `json:"audit_id,omitempty"`
-	// 审核失败信息，审核通过显示空
-	AuditMessage *string                                                          `json:"audit_message,omitempty"`
+	//
+	AuditMessage *string `json:"audit_message,omitempty"`
+	//
+	DiscountRate *int64 `json:"discount_rate,omitempty"`
+	//
+	FeatureTags []string `json:"feature_tags,omitempty"`
+	//
+	GameBoxName *string `json:"game_box_name,omitempty"`
+	//
+	GameIpTag *string `json:"game_ip_tag,omitempty"`
+	//
+	GameIpType []*ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionGameIpType `json:"game_ip_type,omitempty"`
+	//
+	HasDiscount *bool `json:"has_discount,omitempty"`
+	//
+	HasOnlineEarning    *bool                                                                         `json:"has_online_earning,omitempty"`
+	MaxPaymentTierRange *ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionMaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`
+	MaxRechargeTier     *ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionMaxRechargeTier     `json:"max_recharge_tier,omitempty"`
+	MembershipType      *ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionMembershipType      `json:"membership_type,omitempty"`
+	MidPaymentTierRange *ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionMidPaymentTierRange `json:"mid_payment_tier_range,omitempty"`
+	MinPaymentTierRange *ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionMinPaymentTierRange `json:"min_payment_tier_range,omitempty"`
+	MinRechargeTier     *ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionMinRechargeTier     `json:"min_recharge_tier,omitempty"`
+	//
+	NetworkEnvironment      []string                                                                          `json:"network_environment,omitempty"`
+	RecommendedRechargeTier *ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionRecommendedRechargeTier `json:"recommended_recharge_tier,omitempty"`
+	RevenueModel            *ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionRevenueModel            `json:"revenue_model,omitempty"`
+	//
+	ScheduleCards []*ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionScheduleCards `json:"schedule_cards,omitempty"`
+	//
+	Spokesperson *string                                                          `json:"spokesperson,omitempty"`
 	Status       *ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionStatus `json:"status,omitempty"`
-	// 版本编码
+	//
 	VersionCode *string `json:"version_code,omitempty"`
-	// 版本名
+	//
+	VersionId *string `json:"version_id,omitempty"`
+	//
 	VersionName *string `json:"version_name,omitempty"`
 }

@@ -21,4 +21,6 @@ type QianchuanToolsAwemeAuthV10Request struct {
 	Code string `json:"code"`
 	//
 	EndTime string `json:"end_time"`
+	// 用户备注
+	Notes *string `json:"notes,omitempty"`
 }

@@ -30,19 +30,16 @@ type ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest struct {
 	packageId   *string
 }
 
-// 账户id，指可以接的账号体系如广告主id、巨量纵横组织id等
 func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest) AccountId(accountId int64) *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest {
 	r.accountId = &accountId
 	return r
 }
 
-// 账户类型
 func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest) AccountType(accountType ToolsAppManagementAndroidBasicPackageGetV2AccountType) *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-// 修改的安卓母包id
 func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest) PackageId(packageId string) *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest {
 	r.packageId = &packageId
 	return r
@@ -100,9 +97,6 @@ func (a *ToolsAppManagementAndroidBasicPackageGetV2ApiService) getExecute(r *Api
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {
 		return localVarReturnValue, nil, ReportError("accountId is required and must be specified")
-	}
-	if *r.accountId < 1 {
-		return localVarReturnValue, nil, ReportError("accountId must be greater than 1")
 	}
 	if r.accountType == nil {
 		return localVarReturnValue, nil, ReportError("accountType is required and must be specified")

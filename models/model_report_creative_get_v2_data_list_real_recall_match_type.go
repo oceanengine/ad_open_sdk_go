@@ -16,8 +16,8 @@ type ReportCreativeGetV2DataListRealRecallMatchType string
 // List of report_creative_get_v2_data_list_real_recall_match_type
 const (
 	PRECISION_ReportCreativeGetV2DataListRealRecallMatchType ReportCreativeGetV2DataListRealRecallMatchType = "PRECISION"
-	PHRASE_ReportCreativeGetV2DataListRealRecallMatchType    ReportCreativeGetV2DataListRealRecallMatchType = "PHRASE"
 	EXTENSIVE_ReportCreativeGetV2DataListRealRecallMatchType ReportCreativeGetV2DataListRealRecallMatchType = "EXTENSIVE"
+	PHRASE_ReportCreativeGetV2DataListRealRecallMatchType    ReportCreativeGetV2DataListRealRecallMatchType = "PHRASE"
 )
 
 // Ptr returns reference to report_creative_get_v2_data_list_real_recall_match_type value

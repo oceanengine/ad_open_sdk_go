@@ -97,8 +97,8 @@ func (a *ToolsCountryInfoV2ApiService) getExecute(r *ApiOpenApi2ToolsCountryInfo
 	if *r.advertiserId < 1 {
 		return localVarReturnValue, nil, ReportError("advertiserId must be greater than 1")
 	}
-	if *r.advertiserId > 9223372036854775807 {
-		return localVarReturnValue, nil, ReportError("advertiserId must be less than 9223372036854775807")
+	if *r.advertiserId > -9223372036854775616 {
+		return localVarReturnValue, nil, ReportError("advertiserId must be less than -9223372036854775616")
 	}
 	if r.language == nil {
 		return localVarReturnValue, nil, ReportError("language is required and must be specified")

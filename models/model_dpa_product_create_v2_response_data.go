@@ -14,4 +14,6 @@ package models
 type DpaProductCreateV2ResponseData struct {
 	//
 	ProductId *int64 `json:"product_id,omitempty"`
+	//
+	Warning *string `json:"warning,omitempty"`
 }

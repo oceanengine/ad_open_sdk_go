@@ -29,6 +29,7 @@ const (
 	PROJECT_OFFLINE_BUDGET_LocalPromotionListV30FilteringPromotionStatusSecond   LocalPromotionListV30FilteringPromotionStatusSecond = "PROJECT_OFFLINE_BUDGET"
 	PROMOTION_OFFLINE_BUDGET_LocalPromotionListV30FilteringPromotionStatusSecond LocalPromotionListV30FilteringPromotionStatusSecond = "PROMOTION_OFFLINE_BUDGET"
 	REAUDIT_LocalPromotionListV30FilteringPromotionStatusSecond                  LocalPromotionListV30FilteringPromotionStatusSecond = "REAUDIT"
+	ROI2_DISABLE_LocalPromotionListV30FilteringPromotionStatusSecond             LocalPromotionListV30FilteringPromotionStatusSecond = "ROI2_DISABLE"
 	TIME_NO_REACH_LocalPromotionListV30FilteringPromotionStatusSecond            LocalPromotionListV30FilteringPromotionStatusSecond = "TIME_NO_REACH"
 )
 

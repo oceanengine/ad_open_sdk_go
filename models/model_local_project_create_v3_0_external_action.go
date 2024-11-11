@@ -22,6 +22,7 @@ const (
 	LIVE_OTO_GROUP_BUYING_LocalProjectCreateV30ExternalAction LocalProjectCreateV30ExternalAction = "LIVE_OTO_GROUP_BUYING"
 	LIVE_STAY_TIME_LocalProjectCreateV30ExternalAction        LocalProjectCreateV30ExternalAction = "LIVE_STAY_TIME"
 	NATIVE_ACTION_LocalProjectCreateV30ExternalAction         LocalProjectCreateV30ExternalAction = "NATIVE_ACTION"
+	POI_RECOMMEND_LocalProjectCreateV30ExternalAction         LocalProjectCreateV30ExternalAction = "POI_RECOMMEND"
 	SHOW_LocalProjectCreateV30ExternalAction                  LocalProjectCreateV30ExternalAction = "SHOW"
 )
 

@@ -15,18 +15,34 @@ type ToolsWechatGameListV30ResponseDataListInner struct {
 	//
 	AccountId   *int64                                     `json:"account_id,omitempty"`
 	AccountType *ToolsWechatGameListV30DataListAccountType `json:"account_type,omitempty"`
+	AgeLimit    *ToolsWechatGameListV30DataListAgeLimit    `json:"age_limit,omitempty"`
 	//
 	AgeRemindUrl *string `json:"age_remind_url,omitempty"`
 	//
-	AntiAddictionUrl    *string                                            `json:"anti_addiction_url,omitempty"`
+	AntiAddictionUrl *string `json:"anti_addiction_url,omitempty"`
+	//
+	ArtStyle            *string                                            `json:"art_style,omitempty"`
 	AuditStatus         *ToolsWechatGameListV30DataListAuditStatus         `json:"audit_status,omitempty"`
 	AuthorizationStatus *ToolsWechatGameListV30DataListAuthorizationStatus `json:"authorization_status,omitempty"`
 	//
 	CreateTime *string `json:"create_time,omitempty"`
 	//
-	InstanceId *int64 `json:"instance_id,omitempty"`
+	DiscountRate *int64 `json:"discount_rate,omitempty"`
+	//
+	FeatureTags []string `json:"feature_tags,omitempty"`
+	//
+	HasDiscount *bool `json:"has_discount,omitempty"`
+	//
+	HasOnlineEarning *bool `json:"has_online_earning,omitempty"`
+	//
+	InstanceId          *int64                                             `json:"instance_id,omitempty"`
+	MaxPaymentTierRange *ToolsWechatGameListV30DataListMaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`
+	MidPaymentTierRange *ToolsWechatGameListV30DataListMidPaymentTierRange `json:"mid_payment_tier_range,omitempty"`
+	MinPaymentTierRange *ToolsWechatGameListV30DataListMinPaymentTierRange `json:"min_payment_tier_range,omitempty"`
 	//
 	Name *string `json:"name,omitempty"`
+	//
+	NetworkEnvironment []string `json:"network_environment,omitempty"`
 	//
 	Path *string `json:"path,omitempty"`
 	//
@@ -34,9 +50,16 @@ type ToolsWechatGameListV30ResponseDataListInner struct {
 	//
 	Reason *string `json:"reason,omitempty"`
 	//
-	ReasonUnauthorize *string `json:"reason_unauthorize,omitempty"`
+	ReasonUnauthorize *string                                     `json:"reason_unauthorize,omitempty"`
+	RevenueModel      *ToolsWechatGameListV30DataListRevenueModel `json:"revenue_model,omitempty"`
+	//
+	ScheduleCards []*ToolsWechatGameListV30DataListScheduleCards `json:"schedule_cards,omitempty"`
 	//
 	ScreenRecordUrl *string `json:"screen_record_url,omitempty"`
+	//
+	TagInfo *string `json:"tag_info,omitempty"`
+	//
+	ThemeTag *string `json:"theme_tag,omitempty"`
 	//
 	UserName *string `json:"user_name,omitempty"`
 }

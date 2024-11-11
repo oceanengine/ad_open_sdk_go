@@ -90,6 +90,8 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	SourceCraftsmanNickname *string `json:"source_craftsman_nickname,omitempty"`
 	// 接待抖音号
 	StaffAwemeId *string `json:"staff_aweme_id,omitempty"`
+	// 接待客服名称
+	StaffCommerceNickname *string `json:"staff_commerce_nickname,omitempty"`
 	// 接待抖音昵称
 	StaffNickname *string `json:"staff_nickname,omitempty"`
 	// 线索被打上的系统标签，是一个标签项的数组

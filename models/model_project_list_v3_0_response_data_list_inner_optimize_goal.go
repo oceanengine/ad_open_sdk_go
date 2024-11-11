@@ -19,5 +19,7 @@ type ProjectListV30ResponseDataListInnerOptimizeGoal struct {
 	DeepExternalAction *ProjectListV30DataListOptimizeGoalDeepExternalAction `json:"deep_external_action,omitempty"`
 	ExternalAction     *ProjectListV30DataListOptimizeGoalExternalAction     `json:"external_action,omitempty"`
 	//
+	GameAddictionId *string `json:"game_addiction_id,omitempty"`
+	//
 	PaidSwitch *int64 `json:"paid_switch,omitempty"`
 }

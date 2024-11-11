@@ -17,11 +17,13 @@ type AicVideoMixcutCreateV30Request struct {
 	AccountType AicVideoMixcutCreateV30AccountType         `json:"account_type"`
 	AudioOption *AicVideoMixcutCreateV30RequestAudioOption `json:"audio_option,omitempty"`
 	// 生成成片的数量，最大值5
-	Count         *int64                                       `json:"count,omitempty"`
-	GenElement    *AicVideoMixcutCreateV30RequestGenElement    `json:"gen_element,omitempty"`
-	ProductInfo   *AicVideoMixcutCreateV30RequestProductInfo   `json:"product_info,omitempty"`
-	RenderOption  *AicVideoMixcutCreateV30RequestRenderOption  `json:"render_option,omitempty"`
-	SubtitleStyle *AicVideoMixcutCreateV30RequestSubtitleStyle `json:"subtitle_style,omitempty"`
+	Count      *int64                                    `json:"count,omitempty"`
+	GenElement *AicVideoMixcutCreateV30RequestGenElement `json:"gen_element,omitempty"`
+	// 是否由自动保存所有生成结果 - true：在视频生成完成后，系统将自动保存所有结果至即创素材库；所属组织/代理下，均可见视频结果 - false：不会自动保存，后续需调用「保存任务生成的素材」保存生成结果
+	IsAutoSaveAllResult *bool                                        `json:"is_auto_save_all_result,omitempty"`
+	ProductInfo         *AicVideoMixcutCreateV30RequestProductInfo   `json:"product_info,omitempty"`
+	RenderOption        *AicVideoMixcutCreateV30RequestRenderOption  `json:"render_option,omitempty"`
+	SubtitleStyle       *AicVideoMixcutCreateV30RequestSubtitleStyle `json:"subtitle_style,omitempty"`
 	// 可自定义任务名称，生成的成片均以此名称命名，最多50字，多个视频命名规则为任务名称_1-n。不传入，默认使用product_name+时间戳命名 示例:洗衣凝珠_20240809_152301
 	TaskName *string `json:"task_name,omitempty"`
 	// 视频元素id，用于视频生成，最多20个

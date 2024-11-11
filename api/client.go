@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.27
+// APIClient manages communication with the Oceanengine Open Api API v1.1.28
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -581,6 +581,8 @@ type APIClient struct {
 
 	FundSharedWalletBalanceGetV2Api *FundSharedWalletBalanceGetV2ApiService
 
+	GameAddictionIdGetV30Api *GameAddictionIdGetV30ApiService
+
 	KeywordCreateV2V2Api *KeywordCreateV2V2ApiService
 
 	KeywordCreateV30Api *KeywordCreateV30ApiService
@@ -881,8 +883,6 @@ type APIClient struct {
 
 	QianchuanProductAvailableGetV10Api *QianchuanProductAvailableGetV10ApiService
 
-	QianchuanQianchuanReportLtodayLiveRoomDataGetV10Api *QianchuanQianchuanReportLtodayLiveRoomDataGetV10ApiService
-
 	QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api *QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiService
 
 	QianchuanReportAdGetV10Api *QianchuanReportAdGetV10ApiService
@@ -980,6 +980,8 @@ type APIClient struct {
 	QianchuanUniPromotionAdStatusUpdateV10Api *QianchuanUniPromotionAdStatusUpdateV10ApiService
 
 	QianchuanUniPromotionListV10Api *QianchuanUniPromotionListV10ApiService
+
+	QianchuanVideoByAwemeGetV10Api *QianchuanVideoByAwemeGetV10ApiService
 
 	QianchuanVideoGetV10Api *QianchuanVideoGetV10ApiService
 
@@ -2049,6 +2051,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.FileVideoUpdateV2Api = (*FileVideoUpdateV2ApiService)(&c.common)
 	c.FileVideoUploadTaskListV2Api = (*FileVideoUploadTaskListV2ApiService)(&c.common)
 	c.FundSharedWalletBalanceGetV2Api = (*FundSharedWalletBalanceGetV2ApiService)(&c.common)
+	c.GameAddictionIdGetV30Api = (*GameAddictionIdGetV30ApiService)(&c.common)
 	c.KeywordCreateV2V2Api = (*KeywordCreateV2V2ApiService)(&c.common)
 	c.KeywordCreateV30Api = (*KeywordCreateV30ApiService)(&c.common)
 	c.KeywordDeleteV2V2Api = (*KeywordDeleteV2V2ApiService)(&c.common)
@@ -2199,7 +2202,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanProductAnalyseCompareStatsDataV10Api = (*QianchuanProductAnalyseCompareStatsDataV10ApiService)(&c.common)
 	c.QianchuanProductAnalyseListV10Api = (*QianchuanProductAnalyseListV10ApiService)(&c.common)
 	c.QianchuanProductAvailableGetV10Api = (*QianchuanProductAvailableGetV10ApiService)(&c.common)
-	c.QianchuanQianchuanReportLtodayLiveRoomDataGetV10Api = (*QianchuanQianchuanReportLtodayLiveRoomDataGetV10ApiService)(&c.common)
 	c.QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api = (*QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiService)(&c.common)
 	c.QianchuanReportAdGetV10Api = (*QianchuanReportAdGetV10ApiService)(&c.common)
 	c.QianchuanReportAdMaterialGetV10Api = (*QianchuanReportAdMaterialGetV10ApiService)(&c.common)
@@ -2249,6 +2251,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanUniPromotionAdMaterialGetV10Api = (*QianchuanUniPromotionAdMaterialGetV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdStatusUpdateV10Api = (*QianchuanUniPromotionAdStatusUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionListV10Api = (*QianchuanUniPromotionListV10ApiService)(&c.common)
+	c.QianchuanVideoByAwemeGetV10Api = (*QianchuanVideoByAwemeGetV10ApiService)(&c.common)
 	c.QianchuanVideoGetV10Api = (*QianchuanVideoGetV10ApiService)(&c.common)
 	c.QueryBookingBusinessEntityIdGetV2Api = (*QueryBookingBusinessEntityIdGetV2ApiService)(&c.common)
 	c.QueryInvoiceElectronicUrlV2Api = (*QueryInvoiceElectronicUrlV2ApiService)(&c.common)

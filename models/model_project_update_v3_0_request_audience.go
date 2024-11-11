@@ -53,7 +53,9 @@ type ProjectUpdateV30RequestAudience struct {
 	ExcludeFlowPackage        []int64                                            `json:"exclude_flow_package,omitempty"`
 	FilterAwemeAbnormalActive *ProjectUpdateV30AudienceFilterAwemeAbnormalActive `json:"filter_aweme_abnormal_active,omitempty"`
 	FilterAwemeFansCount      *ProjectUpdateV30AudienceFilterAwemeFansCount      `json:"filter_aweme_fans_count,omitempty"`
-	FilterOwnAwemeFans        *ProjectUpdateV30AudienceFilterOwnAwemeFans        `json:"filter_own_aweme_fans,omitempty"`
+	//
+	FilterEvent        []*ProjectUpdateV30AudienceFilterEvent      `json:"filter_event,omitempty"`
+	FilterOwnAwemeFans *ProjectUpdateV30AudienceFilterOwnAwemeFans `json:"filter_own_aweme_fans,omitempty"`
 	//
 	FlowPackage []int64                         `json:"flow_package,omitempty"`
 	Gender      *ProjectUpdateV30AudienceGender `json:"gender,omitempty"`

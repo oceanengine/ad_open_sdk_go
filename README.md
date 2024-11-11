@@ -471,6 +471,7 @@ Class | Method | HTTP request
 *FileVideoUpdateV2Api* | **OpenApi2FileVideoUpdatePost** | **Post** /open_api/2/file/video/update/
 *FileVideoUploadTaskListV2Api* | **OpenApi2FileVideoUploadTaskListGet** | **Get** /open_api/2/file/video/upload_task/list/
 *FundSharedWalletBalanceGetV2Api* | **OpenApi2FundSharedWalletBalanceGetGet** | **Get** /open_api/2/fund/shared_wallet_balance/get/
+*GameAddictionIdGetV30Api* | **OpenApiV30GameAddictionIdGetGet** | **Get** /open_api/v3.0/game_addiction_id/get/
 *KeywordCreateV2V2Api* | **OpenApi2KeywordCreateV2Post** | **Post** /open_api/2/keyword/create_v2/
 *KeywordCreateV30Api* | **OpenApiV30KeywordCreatePost** | **Post** /open_api/v3.0/keyword/create/
 *KeywordDeleteV2V2Api* | **OpenApi2KeywordDeleteV2Post** | **Post** /open_api/2/keyword/delete_v2/
@@ -621,7 +622,6 @@ Class | Method | HTTP request
 *QianchuanProductAnalyseCompareStatsDataV10Api* | **OpenApiV10QianchuanProductAnalyseCompareStatsDataGet** | **Get** /open_api/v1.0/qianchuan/product/analyse/compare_stats_data/
 *QianchuanProductAnalyseListV10Api* | **OpenApiV10QianchuanProductAnalyseListGet** | **Get** /open_api/v1.0/qianchuan/product/analyse/list/
 *QianchuanProductAvailableGetV10Api* | **OpenApiV10QianchuanProductAvailableGetGet** | **Get** /open_api/v1.0/qianchuan/product/available/get/
-*QianchuanQianchuanReportLtodayLiveRoomDataGetV10Api* | **OpenApiV10QianchuanQianchuanReportLtodayLiveRoomDataGetGet** | **Get** /open_api/v1.0/qianchuan/qianchuan/report/ltoday_live/room/data/get/
 *QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api* | **OpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGet** | **Get** /open_api/v1.0/qianchuan/qianchuan/report/today_live/room/config/get/
 *QianchuanReportAdGetV10Api* | **OpenApiV10QianchuanReportAdGetGet** | **Get** /open_api/v1.0/qianchuan/report/ad/get/
 *QianchuanReportAdMaterialGetV10Api* | **OpenApiV10QianchuanReportAdMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/report/ad/material/get/
@@ -671,6 +671,7 @@ Class | Method | HTTP request
 *QianchuanUniPromotionAdMaterialGetV10Api* | **OpenApiV10QianchuanUniPromotionAdMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/ad/material/get/
 *QianchuanUniPromotionAdStatusUpdateV10Api* | **OpenApiV10QianchuanUniPromotionAdStatusUpdatePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/status/update/
 *QianchuanUniPromotionListV10Api* | **OpenApiV10QianchuanUniPromotionListGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/list/
+*QianchuanVideoByAwemeGetV10Api* | **OpenApiV10QianchuanVideoByAwemeGetGet** | **Get** /open_api/v1.0/qianchuan/video/by_aweme/get/
 *QianchuanVideoGetV10Api* | **OpenApiV10QianchuanVideoGetGet** | **Get** /open_api/v1.0/qianchuan/video/get/
 *QueryBookingBusinessEntityIdGetV2Api* | **OpenApi2QueryBookingBusinessEntityIdGetGet** | **Get** /open_api/2/query/booking/business_entity_id/get/
 *QueryInvoiceElectronicUrlV2Api* | **OpenApi2QueryInvoiceElectronicUrlGet** | **Get** /open_api/2/query/invoice_electronic_url/

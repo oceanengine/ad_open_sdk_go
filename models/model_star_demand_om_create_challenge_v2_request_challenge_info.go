@@ -29,7 +29,7 @@ type StarDemandOmCreateChallengeV2RequestChallengeInfo struct {
 	MicroAppId string `json:"micro_app_id"`
 	// 任务标签 list<string> 长度固定为2  [${形式标签}, ${内容标签}]
 	OmTaskTag                []string                                                                   `json:"om_task_tag"`
-	ParticipateAuthorRange   StarDemandOmCreateChallengeV2RequestChallengeInfoParticipateAuthorRange    `json:"participate_author_range"`
+	ParticipateAuthorRange   *StarDemandOmCreateChallengeV2RequestChallengeInfoParticipateAuthorRange   `json:"participate_author_range,omitempty"`
 	ParticipateProviderRange *StarDemandOmCreateChallengeV2RequestChallengeInfoParticipateProviderRange `json:"participate_provider_range,omitempty"`
 	ProviderScope            *StarDemandOmCreateChallengeV2ChallengeInfoProviderScope                   `json:"provider_scope,omitempty"`
 	// 示例视频id list<i64> 最多5个

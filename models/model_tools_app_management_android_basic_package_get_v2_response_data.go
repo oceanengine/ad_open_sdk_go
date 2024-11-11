@@ -12,6 +12,8 @@ package models
 
 // ToolsAppManagementAndroidBasicPackageGetV2ResponseData
 type ToolsAppManagementAndroidBasicPackageGetV2ResponseData struct {
+	//
+	CategoryId     *int64                                                                `json:"category_id,omitempty"`
 	CurrentVersion *ToolsAppManagementAndroidBasicPackageGetV2ResponseDataCurrentVersion `json:"current_version,omitempty"`
 	NextVersion    *ToolsAppManagementAndroidBasicPackageGetV2ResponseDataNextVersion    `json:"next_version,omitempty"`
 }

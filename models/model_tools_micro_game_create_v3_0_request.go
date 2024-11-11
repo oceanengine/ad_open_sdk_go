@@ -13,10 +13,35 @@ package models
 // ToolsMicroGameCreateV30Request struct for ToolsMicroGameCreateV30Request
 type ToolsMicroGameCreateV30Request struct {
 	//
-	AdvertiserId int64 `json:"advertiser_id"`
+	AdvertiserId int64                            `json:"advertiser_id"`
+	AgeLimit     *ToolsMicroGameCreateV30AgeLimit `json:"age_limit,omitempty"`
 	//
-	AppId    string                                 `json:"app_id"`
-	GameLink ToolsMicroGameCreateV30RequestGameLink `json:"game_link"`
+	AppId string `json:"app_id"`
+	// 画风分类名称
+	ArtStyle *string `json:"art_style,omitempty"`
+	// 折扣比例
+	DiscountRate *int64 `json:"discount_rate,omitempty"`
+	// 特殊标签名称
+	FeatureTags []string                               `json:"feature_tags,omitempty"`
+	GameLink    ToolsMicroGameCreateV30RequestGameLink `json:"game_link"`
+	// 是否有折扣
+	HasDiscount *bool `json:"has_discount,omitempty"`
+	// 是否包含网赚内容
+	HasOnlineEarning *bool `json:"has_online_earning,omitempty"`
 	//
-	Remark string `json:"remark"`
+	Introduction        *string                                     `json:"introduction,omitempty"`
+	MaxPaymentTierRange *ToolsMicroGameCreateV30MaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`
+	MidPaymentTierRange *ToolsMicroGameCreateV30MidPaymentTierRange `json:"mid_payment_tier_range,omitempty"`
+	MinPaymentTierRange *ToolsMicroGameCreateV30MinPaymentTierRange `json:"min_payment_tier_range,omitempty"`
+	// 网络环境名称
+	NetworkEnvironment []string `json:"network_environment,omitempty"`
+	//
+	Remark       string                               `json:"remark"`
+	RevenueModel *ToolsMicroGameCreateV30RevenueModel `json:"revenue_model,omitempty"`
+	// 周卡/月卡/季卡种类
+	ScheduleCards []*ToolsMicroGameCreateV30ScheduleCards `json:"schedule_cards,omitempty"`
+	// 细分类型
+	TagInfo *string `json:"tag_info,omitempty"`
+	// 题材标签名称
+	ThemeTag *string `json:"theme_tag,omitempty"`
 }

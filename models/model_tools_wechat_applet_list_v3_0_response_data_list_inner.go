@@ -18,7 +18,13 @@ type ToolsWechatAppletListV30ResponseDataListInner struct {
 	//
 	CreateTime *string `json:"create_time,omitempty"`
 	//
+	DiscountRate *int64 `json:"discount_rate,omitempty"`
+	//
 	GuideText *string `json:"guide_text,omitempty"`
+	//
+	HasDiscount *bool `json:"has_discount,omitempty"`
+	//
+	HasOnlineEarning *bool `json:"has_online_earning,omitempty"`
 	//
 	HeaderImageUrl *string `json:"header_image_url,omitempty"`
 	//
@@ -32,17 +38,30 @@ type ToolsWechatAppletListV30ResponseDataListInner struct {
 	//
 	Introduction *string `json:"introduction,omitempty"`
 	//
-	Labels []string `json:"labels,omitempty"`
+	Labels              []string                                             `json:"labels,omitempty"`
+	MaxPaymentTierRange *ToolsWechatAppletListV30DataListMaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`
+	MaxRechargeTier     *ToolsWechatAppletListV30DataListMaxRechargeTier     `json:"max_recharge_tier,omitempty"`
+	MembershipType      *ToolsWechatAppletListV30DataListMembershipType      `json:"membership_type,omitempty"`
+	MidPaymentTierRange *ToolsWechatAppletListV30DataListMidPaymentTierRange `json:"mid_payment_tier_range,omitempty"`
+	MinPaymentTierRange *ToolsWechatAppletListV30DataListMinPaymentTierRange `json:"min_payment_tier_range,omitempty"`
+	MinRechargeTier     *ToolsWechatAppletListV30DataListMinRechargeTier     `json:"min_recharge_tier,omitempty"`
 	//
 	ModifyTime *string `json:"modify_time,omitempty"`
 	//
 	Name *string `json:"name,omitempty"`
 	//
-	Path *string `json:"path,omitempty"`
+	Path        *string                                      `json:"path,omitempty"`
+	PaymentForm *ToolsWechatAppletListV30DataListPaymentForm `json:"payment_form,omitempty"`
 	//
-	Reason *string `json:"reason,omitempty"`
+	PropName *string `json:"prop_name,omitempty"`
 	//
-	RemarkMessage *string `json:"remark_message,omitempty"`
+	Reason                  *string                                                  `json:"reason,omitempty"`
+	RecommendedRechargeTier *ToolsWechatAppletListV30DataListRecommendedRechargeTier `json:"recommended_recharge_tier,omitempty"`
+	//
+	RemarkMessage *string                                       `json:"remark_message,omitempty"`
+	RevenueModel  *ToolsWechatAppletListV30DataListRevenueModel `json:"revenue_model,omitempty"`
+	//
+	TagInfo *string `json:"tag_info,omitempty"`
 	//
 	UserName *string `json:"user_name,omitempty"`
 }

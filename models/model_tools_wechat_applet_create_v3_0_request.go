@@ -15,7 +15,13 @@ type ToolsWechatAppletCreateV30Request struct {
 	//
 	AdvertiserId int64 `json:"advertiser_id"`
 	//
+	DiscountRate *int64 `json:"discount_rate,omitempty"`
+	//
 	GuideText *string `json:"guide_text,omitempty"`
+	//
+	HasDiscount *bool `json:"has_discount,omitempty"`
+	//
+	HasOnlineEarning *bool `json:"has_online_earning,omitempty"`
 	//
 	HeaderImageUrl *string `json:"header_image_url,omitempty"`
 	//
@@ -27,13 +33,26 @@ type ToolsWechatAppletCreateV30Request struct {
 	//
 	Introduction *string `json:"introduction,omitempty"`
 	//
-	Labels []string `json:"labels,omitempty"`
+	Labels              []string                                       `json:"labels,omitempty"`
+	MaxPaymentTierRange *ToolsWechatAppletCreateV30MaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`
+	MaxRechargeTier     *ToolsWechatAppletCreateV30MaxRechargeTier     `json:"max_recharge_tier,omitempty"`
+	MembershipType      *ToolsWechatAppletCreateV30MembershipType      `json:"membership_type,omitempty"`
+	MidPaymentTierRange *ToolsWechatAppletCreateV30MidPaymentTierRange `json:"mid_payment_tier_range,omitempty"`
+	MinPaymentTierRange *ToolsWechatAppletCreateV30MinPaymentTierRange `json:"min_payment_tier_range,omitempty"`
+	MinRechargeTier     *ToolsWechatAppletCreateV30MinRechargeTier     `json:"min_recharge_tier,omitempty"`
 	//
 	Name string `json:"name"`
 	//
-	Path *string `json:"path,omitempty"`
+	Path        *string                                `json:"path,omitempty"`
+	PaymentForm *ToolsWechatAppletCreateV30PaymentForm `json:"payment_form,omitempty"`
 	//
-	RemarkMessage *string `json:"remark_message,omitempty"`
+	PropName                *string                                            `json:"prop_name,omitempty"`
+	RecommendedRechargeTier *ToolsWechatAppletCreateV30RecommendedRechargeTier `json:"recommended_recharge_tier,omitempty"`
+	//
+	RemarkMessage *string                                 `json:"remark_message,omitempty"`
+	RevenueModel  *ToolsWechatAppletCreateV30RevenueModel `json:"revenue_model,omitempty"`
+	//
+	TagInfo *string `json:"tag_info,omitempty"`
 	//
 	UserName string `json:"user_name"`
 }

@@ -13,20 +13,45 @@ package models
 // ToolsMicroGameListV30ResponseDataListInner struct for ToolsMicroGameListV30ResponseDataListInner
 type ToolsMicroGameListV30ResponseDataListInner struct {
 	//
-	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
+	AdvertiserId *int64                                 `json:"advertiser_id,omitempty"`
+	AgeLimit     *ToolsMicroGameListV30DataListAgeLimit `json:"age_limit,omitempty"`
 	//
-	AppId       *string                                   `json:"app_id,omitempty"`
+	AppId *string `json:"app_id,omitempty"`
+	//
+	ArtStyle    *string                                   `json:"art_style,omitempty"`
 	AuditStatus *ToolsMicroGameListV30DataListAuditStatus `json:"audit_status,omitempty"`
 	//
 	CreateTime *string `json:"create_time,omitempty"`
 	//
+	DiscountRate *int64 `json:"discount_rate,omitempty"`
+	//
+	FeatureTags []string `json:"feature_tags,omitempty"`
+	//
+	HasDiscount *bool `json:"has_discount,omitempty"`
+	//
+	HasOnlineEarning *bool `json:"has_online_earning,omitempty"`
+	//
 	InstanceId *int64 `json:"instance_id,omitempty"`
+	//
+	Introduction        *string                                           `json:"introduction,omitempty"`
+	MaxPaymentTierRange *ToolsMicroGameListV30DataListMaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`
+	MidPaymentTierRange *ToolsMicroGameListV30DataListMidPaymentTierRange `json:"mid_payment_tier_range,omitempty"`
+	MinPaymentTierRange *ToolsMicroGameListV30DataListMinPaymentTierRange `json:"min_payment_tier_range,omitempty"`
 	//
 	ModifyTime *string `json:"modify_time,omitempty"`
 	//
 	Name *string `json:"name,omitempty"`
 	//
+	NetworkEnvironment []string `json:"network_environment,omitempty"`
+	//
 	Reason *string `json:"reason,omitempty"`
 	//
-	Remark *string `json:"remark,omitempty"`
+	Remark       *string                                    `json:"remark,omitempty"`
+	RevenueModel *ToolsMicroGameListV30DataListRevenueModel `json:"revenue_model,omitempty"`
+	//
+	ScheduleCards []*ToolsMicroGameListV30DataListScheduleCards `json:"schedule_cards,omitempty"`
+	//
+	TagInfo *string `json:"tag_info,omitempty"`
+	//
+	ThemeTag *string `json:"theme_tag,omitempty"`
 }

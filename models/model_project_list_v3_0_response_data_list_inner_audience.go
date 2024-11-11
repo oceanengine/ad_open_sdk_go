@@ -59,7 +59,9 @@ type ProjectListV30ResponseDataListInnerAudience struct {
 	ExcludeFlowPackage        []int64                                                  `json:"exclude_flow_package,omitempty"`
 	FilterAwemeAbnormalActive *ProjectListV30DataListAudienceFilterAwemeAbnormalActive `json:"filter_aweme_abnormal_active,omitempty"`
 	FilterAwemeFansCount      *ProjectListV30DataListAudienceFilterAwemeFansCount      `json:"filter_aweme_fans_count,omitempty"`
-	FilterOwnAwemeFans        *ProjectListV30DataListAudienceFilterOwnAwemeFans        `json:"filter_own_aweme_fans,omitempty"`
+	//
+	FilterEvent        []*ProjectListV30DataListAudienceFilterEvent      `json:"filter_event,omitempty"`
+	FilterOwnAwemeFans *ProjectListV30DataListAudienceFilterOwnAwemeFans `json:"filter_own_aweme_fans,omitempty"`
 	//
 	FlowPackage []int64                               `json:"flow_package,omitempty"`
 	Gender      *ProjectListV30DataListAudienceGender `json:"gender,omitempty"`

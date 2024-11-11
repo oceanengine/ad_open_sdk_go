@@ -16,10 +16,10 @@ type ClueFormDetailV2DataFormValidateType string
 // List of clue_form_detail_v2_data_form_validate_type
 const (
 	ALL_VERIFICATION_ClueFormDetailV2DataFormValidateType  ClueFormDetailV2DataFormValidateType = "ALL_VERIFICATION"
-	VALIDITY_PRIORITY_ClueFormDetailV2DataFormValidateType ClueFormDetailV2DataFormValidateType = "VALIDITY_PRIORITY"
 	AUTO_VERIFICATION_ClueFormDetailV2DataFormValidateType ClueFormDetailV2DataFormValidateType = "AUTO_VERIFICATION"
 	CLUE_PRIORITY_ClueFormDetailV2DataFormValidateType     ClueFormDetailV2DataFormValidateType = "CLUE_PRIORITY"
 	NONE_VERIFICATION_ClueFormDetailV2DataFormValidateType ClueFormDetailV2DataFormValidateType = "NONE_VERIFICATION"
+	VALIDITY_PRIORITY_ClueFormDetailV2DataFormValidateType ClueFormDetailV2DataFormValidateType = "VALIDITY_PRIORITY"
 )
 
 // Ptr returns reference to clue_form_detail_v2_data_form_validate_type value

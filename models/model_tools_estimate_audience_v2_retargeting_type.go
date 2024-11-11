@@ -17,8 +17,8 @@ type ToolsEstimateAudienceV2RetargetingType string
 const (
 	RETARGETING_EXCLUDE_ToolsEstimateAudienceV2RetargetingType ToolsEstimateAudienceV2RetargetingType = "RETARGETING_EXCLUDE"
 	RETARGETING_INCLUDE_ToolsEstimateAudienceV2RetargetingType ToolsEstimateAudienceV2RetargetingType = "RETARGETING_INCLUDE"
-	RETARGETING_NONE_ToolsEstimateAudienceV2RetargetingType    ToolsEstimateAudienceV2RetargetingType = "RETARGETING_NONE"
 	NONE_ToolsEstimateAudienceV2RetargetingType                ToolsEstimateAudienceV2RetargetingType = "NONE"
+	RETARGETING_NONE_ToolsEstimateAudienceV2RetargetingType    ToolsEstimateAudienceV2RetargetingType = "RETARGETING_NONE"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_retargeting_type value

@@ -18,6 +18,7 @@ const (
 	ADVERTISER_ProjectUpdateV30AudienceHideIfConverted   ProjectUpdateV30AudienceHideIfConverted = "ADVERTISER"
 	APP_ProjectUpdateV30AudienceHideIfConverted          ProjectUpdateV30AudienceHideIfConverted = "APP"
 	CUSTOMER_ProjectUpdateV30AudienceHideIfConverted     ProjectUpdateV30AudienceHideIfConverted = "CUSTOMER"
+	GLOBAL_APP_ProjectUpdateV30AudienceHideIfConverted   ProjectUpdateV30AudienceHideIfConverted = "GLOBAL_APP"
 	NO_EXCLUDE_ProjectUpdateV30AudienceHideIfConverted   ProjectUpdateV30AudienceHideIfConverted = "NO_EXCLUDE"
 	ORGANIZATION_ProjectUpdateV30AudienceHideIfConverted ProjectUpdateV30AudienceHideIfConverted = "ORGANIZATION"
 	PROJECT_ProjectUpdateV30AudienceHideIfConverted      ProjectUpdateV30AudienceHideIfConverted = "PROJECT"

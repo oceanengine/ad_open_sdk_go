@@ -17,9 +17,9 @@ type KeywordCreateV2V2KeywordsBidType string
 const (
 	WITH_AD_KeywordCreateV2V2KeywordsBidType        KeywordCreateV2V2KeywordsBidType = "WITH_AD"
 	CUSTOM_KeywordCreateV2V2KeywordsBidType         KeywordCreateV2V2KeywordsBidType = "CUSTOM"
-	FEED_TO_SEARCH_KeywordCreateV2V2KeywordsBidType KeywordCreateV2V2KeywordsBidType = "FEED_TO_SEARCH"
-	SUGGEST_KeywordCreateV2V2KeywordsBidType        KeywordCreateV2V2KeywordsBidType = "SUGGEST"
 	BRAND_AD_KeywordCreateV2V2KeywordsBidType       KeywordCreateV2V2KeywordsBidType = "BRAND_AD"
+	SUGGEST_KeywordCreateV2V2KeywordsBidType        KeywordCreateV2V2KeywordsBidType = "SUGGEST"
+	FEED_TO_SEARCH_KeywordCreateV2V2KeywordsBidType KeywordCreateV2V2KeywordsBidType = "FEED_TO_SEARCH"
 )
 
 // Ptr returns reference to keyword_create_v2_v2_keywords_bid_type value

@@ -1,5 +1,5 @@
 /*
-API version: 1.1.27
+API version: 1.1.28
 */
 package ad_open_sdk_go
 
@@ -1087,6 +1087,10 @@ func (c *Client) FundSharedWalletBalanceGetV2Api() *api.FundSharedWalletBalanceG
 	return c.ApiClient.FundSharedWalletBalanceGetV2Api
 }
 
+func (c *Client) GameAddictionIdGetV30Api() *api.GameAddictionIdGetV30ApiService {
+	return c.ApiClient.GameAddictionIdGetV30Api
+}
+
 func (c *Client) KeywordCreateV2V2Api() *api.KeywordCreateV2V2ApiService {
 	return c.ApiClient.KeywordCreateV2V2Api
 }
@@ -1687,10 +1691,6 @@ func (c *Client) QianchuanProductAvailableGetV10Api() *api.QianchuanProductAvail
 	return c.ApiClient.QianchuanProductAvailableGetV10Api
 }
 
-func (c *Client) QianchuanQianchuanReportLtodayLiveRoomDataGetV10Api() *api.QianchuanQianchuanReportLtodayLiveRoomDataGetV10ApiService {
-	return c.ApiClient.QianchuanQianchuanReportLtodayLiveRoomDataGetV10Api
-}
-
 func (c *Client) QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api() *api.QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiService {
 	return c.ApiClient.QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api
 }
@@ -1885,6 +1885,10 @@ func (c *Client) QianchuanUniPromotionAdStatusUpdateV10Api() *api.QianchuanUniPr
 
 func (c *Client) QianchuanUniPromotionListV10Api() *api.QianchuanUniPromotionListV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionListV10Api
+}
+
+func (c *Client) QianchuanVideoByAwemeGetV10Api() *api.QianchuanVideoByAwemeGetV10ApiService {
+	return c.ApiClient.QianchuanVideoByAwemeGetV10Api
 }
 
 func (c *Client) QianchuanVideoGetV10Api() *api.QianchuanVideoGetV10ApiService {

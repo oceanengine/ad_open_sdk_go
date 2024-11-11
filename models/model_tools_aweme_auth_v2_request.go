@@ -23,6 +23,8 @@ type ToolsAwemeAuthV2Request struct {
 	EndTime string `json:"end_time"`
 	// 抖音短视频链接
 	ItemUrl *string `json:"item_url,omitempty"`
+	// 备注
+	Note *string `json:"note,omitempty"`
 	// 授权开始时间
 	StartTime string `json:"start_time"`
 }

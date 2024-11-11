@@ -15,9 +15,9 @@ type AudiencePackageCreateV2AwemeFanTimeScope string
 
 // List of audience_package_create_v2_aweme_fan_time_scope
 const (
+	FIFTEEN_DAYS_AudiencePackageCreateV2AwemeFanTimeScope AudiencePackageCreateV2AwemeFanTimeScope = "FIFTEEN_DAYS"
 	THIRTY_DAYS_AudiencePackageCreateV2AwemeFanTimeScope  AudiencePackageCreateV2AwemeFanTimeScope = "THIRTY_DAYS"
 	SIXTY_DAYS_AudiencePackageCreateV2AwemeFanTimeScope   AudiencePackageCreateV2AwemeFanTimeScope = "SIXTY_DAYS"
-	FIFTEEN_DAYS_AudiencePackageCreateV2AwemeFanTimeScope AudiencePackageCreateV2AwemeFanTimeScope = "FIFTEEN_DAYS"
 )
 
 // Ptr returns reference to audience_package_create_v2_aweme_fan_time_scope value

@@ -20,13 +20,32 @@ type ToolsMicroAppListV30ResponseDataListInner struct {
 	//
 	CreateTime *string `json:"create_time,omitempty"`
 	//
-	InstanceId *int64 `json:"instance_id,omitempty"`
+	DiscountRate *int64 `json:"discount_rate,omitempty"`
+	//
+	HasDiscount *bool `json:"has_discount,omitempty"`
+	//
+	HasOnlineEarning *bool `json:"has_online_earning,omitempty"`
+	//
+	InstanceId          *int64                                           `json:"instance_id,omitempty"`
+	MaxPaymentTierRange *ToolsMicroAppListV30DataListMaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`
+	MaxRechargeTier     *ToolsMicroAppListV30DataListMaxRechargeTier     `json:"max_recharge_tier,omitempty"`
+	MembershipType      *ToolsMicroAppListV30DataListMembershipType      `json:"membership_type,omitempty"`
+	MidPaymentTierRange *ToolsMicroAppListV30DataListMidPaymentTierRange `json:"mid_payment_tier_range,omitempty"`
+	MinPaymentTierRange *ToolsMicroAppListV30DataListMinPaymentTierRange `json:"min_payment_tier_range,omitempty"`
+	MinRechargeTier     *ToolsMicroAppListV30DataListMinRechargeTier     `json:"min_recharge_tier,omitempty"`
 	//
 	ModifyTime *string `json:"modify_time,omitempty"`
 	//
-	Name *string `json:"name,omitempty"`
+	Name        *string                                  `json:"name,omitempty"`
+	PaymentForm *ToolsMicroAppListV30DataListPaymentForm `json:"payment_form,omitempty"`
 	//
-	Reason *string `json:"reason,omitempty"`
+	PropName *string `json:"prop_name,omitempty"`
 	//
-	Remark *string `json:"remark,omitempty"`
+	Reason                  *string                                              `json:"reason,omitempty"`
+	RecommendedRechargeTier *ToolsMicroAppListV30DataListRecommendedRechargeTier `json:"recommended_recharge_tier,omitempty"`
+	//
+	Remark       *string                                   `json:"remark,omitempty"`
+	RevenueModel *ToolsMicroAppListV30DataListRevenueModel `json:"revenue_model,omitempty"`
+	//
+	TagInfo *string `json:"tag_info,omitempty"`
 }
