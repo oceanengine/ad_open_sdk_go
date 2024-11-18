@@ -15,10 +15,10 @@ type ClueCouponCreateV2CouponResourceListCodeType string
 
 // List of clue_coupon_create_v2_coupon_resource_list_code_type
 const (
-	MERCHANT_ClueCouponCreateV2CouponResourceListCodeType ClueCouponCreateV2CouponResourceListCodeType = "MERCHANT"
 	API_ClueCouponCreateV2CouponResourceListCodeType      ClueCouponCreateV2CouponResourceListCodeType = "API"
-	COMMON_ClueCouponCreateV2CouponResourceListCodeType   ClueCouponCreateV2CouponResourceListCodeType = "COMMON"
 	PLATFORM_ClueCouponCreateV2CouponResourceListCodeType ClueCouponCreateV2CouponResourceListCodeType = "PLATFORM"
+	COMMON_ClueCouponCreateV2CouponResourceListCodeType   ClueCouponCreateV2CouponResourceListCodeType = "COMMON"
+	MERCHANT_ClueCouponCreateV2CouponResourceListCodeType ClueCouponCreateV2CouponResourceListCodeType = "MERCHANT"
 )
 
 // Ptr returns reference to clue_coupon_create_v2_coupon_resource_list_code_type value

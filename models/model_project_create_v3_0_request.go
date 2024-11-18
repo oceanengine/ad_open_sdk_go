@@ -53,7 +53,8 @@ type ProjectCreateV30Request struct {
 	MicroAppInstanceId *int64                              `json:"micro_app_instance_id,omitempty"`
 	MicroPromotionType *ProjectCreateV30MicroPromotionType `json:"micro_promotion_type,omitempty"`
 	//
-	Name string `json:"name"`
+	Name          string                                `json:"name"`
+	NativeSetting *ProjectCreateV30RequestNativeSetting `json:"native_setting,omitempty"`
 	//
 	OpenUrl *string `json:"open_url,omitempty"`
 	//

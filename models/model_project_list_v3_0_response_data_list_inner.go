@@ -26,7 +26,9 @@ type ProjectListV30ResponseDataListInner struct {
 	BlueFlowPackage *ProjectListV30ResponseDataListInnerBlueFlowPackage `json:"blue_flow_package,omitempty"`
 	//
 	BudgetGroupId   *int64                                              `json:"budget_group_id,omitempty"`
+	DeliveryMedium  *ProjectListV30DataListDeliveryMedium               `json:"delivery_medium,omitempty"`
 	DeliveryMode    *ProjectListV30DataListDeliveryMode                 `json:"delivery_mode,omitempty"`
+	DeliveryProduct *ProjectListV30DataListDeliveryProduct              `json:"delivery_product,omitempty"`
 	DeliveryRange   *ProjectListV30ResponseDataListInnerDeliveryRange   `json:"delivery_range,omitempty"`
 	DeliverySetting *ProjectListV30ResponseDataListInnerDeliverySetting `json:"delivery_setting,omitempty"`
 	DeliveryType    *ProjectListV30DataListDeliveryType                 `json:"delivery_type,omitempty"`
@@ -49,11 +51,13 @@ type ProjectListV30ResponseDataListInner struct {
 	LaunchType          *ProjectListV30DataListLaunchType                   `json:"launch_type,omitempty"`
 	MarketingGoal       *ProjectListV30DataListMarketingGoal                `json:"marketing_goal,omitempty"`
 	// 对应「创建字节小程序」接口获取的instance_id
-	MicroAppInstanceId *int64                                    `json:"micro_app_instance_id,omitempty"`
-	MicroPromotionType *ProjectListV30DataListMicroPromotionType `json:"micro_promotion_type,omitempty"`
-	MultiAssetType     *ProjectListV30DataListMultiAssetType     `json:"multi_asset_type,omitempty"`
+	MicroAppInstanceId  *int64                                     `json:"micro_app_instance_id,omitempty"`
+	MicroPromotionType  *ProjectListV30DataListMicroPromotionType  `json:"micro_promotion_type,omitempty"`
+	MultiAssetType      *ProjectListV30DataListMultiAssetType      `json:"multi_asset_type,omitempty"`
+	MultiDeliveryMedium *ProjectListV30DataListMultiDeliveryMedium `json:"multi_delivery_medium,omitempty"`
 	//
-	Name *string `json:"name,omitempty"`
+	Name          *string                                           `json:"name,omitempty"`
+	NativeSetting *ProjectListV30ResponseDataListInnerNativeSetting `json:"native_setting,omitempty"`
 	//
 	OpenUrl *string `json:"open_url,omitempty"`
 	//

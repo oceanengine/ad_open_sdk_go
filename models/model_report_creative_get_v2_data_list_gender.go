@@ -17,8 +17,8 @@ type ReportCreativeGetV2DataListGender string
 const (
 	NONE_ReportCreativeGetV2DataListGender             ReportCreativeGetV2DataListGender = "NONE"
 	GENDER_MALE_ReportCreativeGetV2DataListGender      ReportCreativeGetV2DataListGender = "GENDER_MALE"
-	GENDER_FEMALE_ReportCreativeGetV2DataListGender    ReportCreativeGetV2DataListGender = "GENDER_FEMALE"
 	GENDER_UNLIMITED_ReportCreativeGetV2DataListGender ReportCreativeGetV2DataListGender = "GENDER_UNLIMITED"
+	GENDER_FEMALE_ReportCreativeGetV2DataListGender    ReportCreativeGetV2DataListGender = "GENDER_FEMALE"
 )
 
 // Ptr returns reference to report_creative_get_v2_data_list_gender value

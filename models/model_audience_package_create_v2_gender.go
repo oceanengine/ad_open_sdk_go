@@ -17,8 +17,8 @@ type AudiencePackageCreateV2Gender string
 const (
 	NONE_AudiencePackageCreateV2Gender             AudiencePackageCreateV2Gender = "NONE"
 	GENDER_MALE_AudiencePackageCreateV2Gender      AudiencePackageCreateV2Gender = "GENDER_MALE"
-	GENDER_FEMALE_AudiencePackageCreateV2Gender    AudiencePackageCreateV2Gender = "GENDER_FEMALE"
 	GENDER_UNLIMITED_AudiencePackageCreateV2Gender AudiencePackageCreateV2Gender = "GENDER_UNLIMITED"
+	GENDER_FEMALE_AudiencePackageCreateV2Gender    AudiencePackageCreateV2Gender = "GENDER_FEMALE"
 )
 
 // Ptr returns reference to audience_package_create_v2_gender value

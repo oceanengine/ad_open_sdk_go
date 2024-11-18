@@ -15,21 +15,21 @@ type ReportCampaignGetV2FilteringInventoryTypes string
 
 // List of report_campaign_get_v2_filtering_inventory_types
 const (
+	INVENTORY_STUDY_ReportCampaignGetV2FilteringInventoryTypes        ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_STUDY"
 	INVENTORY_HOTSOON_FEED_ReportCampaignGetV2FilteringInventoryTypes ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_HOTSOON_FEED"
 	INVENTORY_PIPIXIA_ReportCampaignGetV2FilteringInventoryTypes      ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_PIPIXIA"
-	INVENTORY_TOMATO_NOVEL_ReportCampaignGetV2FilteringInventoryTypes ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_TOMATO_NOVEL"
-	UNION_BOUTIQUE_GAME_ReportCampaignGetV2FilteringInventoryTypes    ReportCampaignGetV2FilteringInventoryTypes = "UNION_BOUTIQUE_GAME"
-	INVENTORY_FURNISH_ReportCampaignGetV2FilteringInventoryTypes      ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_FURNISH"
-	INVENTORY_AUTOMOBILE_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_AUTOMOBILE"
-	INVENTORY_UNION_SLOT_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_UNION_SLOT"
-	INVENTORY_VIDEO_FEED_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_VIDEO_FEED"
-	INVENTORY_FACE_U_ReportCampaignGetV2FilteringInventoryTypes       ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_FACE_U"
 	INVENTORY_BEAUTY_ReportCampaignGetV2FilteringInventoryTypes       ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_BEAUTY"
-	INVENTORY_AWEME_FEED_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_AWEME_FEED"
-	INVENTORY_SEARCH_ReportCampaignGetV2FilteringInventoryTypes       ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_SEARCH"
+	INVENTORY_TOMATO_NOVEL_ReportCampaignGetV2FilteringInventoryTypes ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_TOMATO_NOVEL"
 	INVENTORY_FEED_ReportCampaignGetV2FilteringInventoryTypes         ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_FEED"
-	INVENTORY_STUDY_ReportCampaignGetV2FilteringInventoryTypes        ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_STUDY"
+	INVENTORY_FURNISH_ReportCampaignGetV2FilteringInventoryTypes      ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_FURNISH"
+	UNION_BOUTIQUE_GAME_ReportCampaignGetV2FilteringInventoryTypes    ReportCampaignGetV2FilteringInventoryTypes = "UNION_BOUTIQUE_GAME"
+	INVENTORY_SEARCH_ReportCampaignGetV2FilteringInventoryTypes       ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_SEARCH"
 	INVENTORY_UNIVERSAL_ReportCampaignGetV2FilteringInventoryTypes    ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_UNIVERSAL"
+	INVENTORY_AUTOMOBILE_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_AUTOMOBILE"
+	INVENTORY_VIDEO_FEED_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_VIDEO_FEED"
+	INVENTORY_AWEME_FEED_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_AWEME_FEED"
+	INVENTORY_FACE_U_ReportCampaignGetV2FilteringInventoryTypes       ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_FACE_U"
+	INVENTORY_UNION_SLOT_ReportCampaignGetV2FilteringInventoryTypes   ReportCampaignGetV2FilteringInventoryTypes = "INVENTORY_UNION_SLOT"
 )
 
 // Ptr returns reference to report_campaign_get_v2_filtering_inventory_types value

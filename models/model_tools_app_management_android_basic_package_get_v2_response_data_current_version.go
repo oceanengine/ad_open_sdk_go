@@ -49,6 +49,8 @@ type ToolsAppManagementAndroidBasicPackageGetV2ResponseDataCurrentVersion struct
 	//
 	Spokesperson *string                                                             `json:"spokesperson,omitempty"`
 	Status       *ToolsAppManagementAndroidBasicPackageGetV2DataCurrentVersionStatus `json:"status,omitempty"`
+	//
+	ThemeTag *string `json:"theme_tag,omitempty"`
 	// 版本 code
 	VersionCode *string `json:"version_code,omitempty"`
 	// 审核 id

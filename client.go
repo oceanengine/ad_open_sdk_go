@@ -1,5 +1,5 @@
 /*
-API version: 1.1.28
+API version: 1.1.29
 */
 package ad_open_sdk_go
 
@@ -305,6 +305,10 @@ func (c *Client) AudiencePackageDeleteV2Api() *api.AudiencePackageDeleteV2ApiSer
 
 func (c *Client) AudiencePackageGetV2Api() *api.AudiencePackageGetV2ApiService {
 	return c.ApiClient.AudiencePackageGetV2Api
+}
+
+func (c *Client) AudiencePackageGetV30Api() *api.AudiencePackageGetV30ApiService {
+	return c.ApiClient.AudiencePackageGetV30Api
 }
 
 func (c *Client) AudiencePackageUpdateV2Api() *api.AudiencePackageUpdateV2ApiService {

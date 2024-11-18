@@ -41,6 +41,12 @@ type StarChallengeGetCustomTaskDataV2ResponseDataItemListInner struct {
 	ItemId *int64 `json:"item_id,omitempty"`
 	// 点赞量
 	LikeCnt *int64 `json:"like_cnt,omitempty"`
+	// acu
+	LiveAcu *int64 `json:"live_acu,omitempty"`
+	// 直播时长
+	LiveDuration *int64 `json:"live_duration,omitempty"`
+	// pcu
+	LivePcu *int64 `json:"live_pcu,omitempty"`
 	// 播放量
 	Play *int64 `json:"play,omitempty"`
 	// 预约成功次数（仅安卓）
@@ -61,6 +67,12 @@ type StarChallengeGetCustomTaskDataV2ResponseDataItemListInner struct {
 	Url *string `json:"url,omitempty"`
 	// 视频时长
 	VideoDurationMs *int64 `json:"video_duration_ms,omitempty"`
+	// pv
+	WatchCnt *int64 `json:"watch_cnt,omitempty"`
+	// 直播人均时长
+	WatchDurationAvg *float64 `json:"watch_duration_avg,omitempty"`
+	// uv
+	WatchUv *int64 `json:"watch_uv,omitempty"`
 	// 有效评论量
 	WhiteComment *int32 `json:"white_comment,omitempty"`
 	// 有效点赞量

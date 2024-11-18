@@ -19,6 +19,7 @@ const (
 	AD_CONVERT_TYPE_LIVE_CLICK_PRODUCT_ACTION_QianchuanAdGetV10DataListDeliverySettingExternalAction    QianchuanAdGetV10DataListDeliverySettingExternalAction = "AD_CONVERT_TYPE_LIVE_CLICK_PRODUCT_ACTION"
 	AD_CONVERT_TYPE_LIVE_COMMENT_ACTION_QianchuanAdGetV10DataListDeliverySettingExternalAction          QianchuanAdGetV10DataListDeliverySettingExternalAction = "AD_CONVERT_TYPE_LIVE_COMMENT_ACTION"
 	AD_CONVERT_TYPE_LIVE_ENTER_ACTION_QianchuanAdGetV10DataListDeliverySettingExternalAction            QianchuanAdGetV10DataListDeliverySettingExternalAction = "AD_CONVERT_TYPE_LIVE_ENTER_ACTION"
+	AD_CONVERT_TYPE_LIVE_HEAT_QianchuanAdGetV10DataListDeliverySettingExternalAction                    QianchuanAdGetV10DataListDeliverySettingExternalAction = "AD_CONVERT_TYPE_LIVE_HEAT"
 	AD_CONVERT_TYPE_LIVE_PAY_ROI_QianchuanAdGetV10DataListDeliverySettingExternalAction                 QianchuanAdGetV10DataListDeliverySettingExternalAction = "AD_CONVERT_TYPE_LIVE_PAY_ROI"
 	AD_CONVERT_TYPE_LIVE_SUCCESSORDER_ACTION_QianchuanAdGetV10DataListDeliverySettingExternalAction     QianchuanAdGetV10DataListDeliverySettingExternalAction = "AD_CONVERT_TYPE_LIVE_SUCCESSORDER_ACTION"
 	AD_CONVERT_TYPE_LIVE_SUCCESSORDER_PAY_QianchuanAdGetV10DataListDeliverySettingExternalAction        QianchuanAdGetV10DataListDeliverySettingExternalAction = "AD_CONVERT_TYPE_LIVE_SUCCESSORDER_PAY"

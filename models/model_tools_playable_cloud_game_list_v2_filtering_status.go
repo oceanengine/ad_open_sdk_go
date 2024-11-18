@@ -15,11 +15,11 @@ type ToolsPlayableCloudGameListV2FilteringStatus string
 
 // List of tools_playable_cloud_game_list_v2_filtering_status
 const (
-	AUDIT_FAIL_ToolsPlayableCloudGameListV2FilteringStatus    ToolsPlayableCloudGameListV2FilteringStatus = "AUDIT_FAIL"
+	ON_SHELF_ToolsPlayableCloudGameListV2FilteringStatus      ToolsPlayableCloudGameListV2FilteringStatus = "ON_SHELF"
 	AUDIT_SUCCESS_ToolsPlayableCloudGameListV2FilteringStatus ToolsPlayableCloudGameListV2FilteringStatus = "AUDIT_SUCCESS"
+	AUDIT_FAIL_ToolsPlayableCloudGameListV2FilteringStatus    ToolsPlayableCloudGameListV2FilteringStatus = "AUDIT_FAIL"
 	UPLOAD_STATUS_ToolsPlayableCloudGameListV2FilteringStatus ToolsPlayableCloudGameListV2FilteringStatus = "UPLOAD_STATUS"
 	OFF_SHELF_ToolsPlayableCloudGameListV2FilteringStatus     ToolsPlayableCloudGameListV2FilteringStatus = "OFF_SHELF"
-	ON_SHELF_ToolsPlayableCloudGameListV2FilteringStatus      ToolsPlayableCloudGameListV2FilteringStatus = "ON_SHELF"
 )
 
 // Ptr returns reference to tools_playable_cloud_game_list_v2_filtering_status value

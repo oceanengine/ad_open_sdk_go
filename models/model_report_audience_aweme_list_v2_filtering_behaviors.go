@@ -15,18 +15,18 @@ type ReportAudienceAwemeListV2FilteringBehaviors string
 
 // List of report_audience_aweme_list_v2_filtering_behaviors
 const (
-	COMMENTED_USER_ReportAudienceAwemeListV2FilteringBehaviors       ReportAudienceAwemeListV2FilteringBehaviors = "COMMENTED_USER"
-	LIVE_GOODS_ORDER_ReportAudienceAwemeListV2FilteringBehaviors     ReportAudienceAwemeListV2FilteringBehaviors = "LIVE_GOODS_ORDER"
-	GOODS_CARTS_CLICK_ReportAudienceAwemeListV2FilteringBehaviors    ReportAudienceAwemeListV2FilteringBehaviors = "GOODS_CARTS_CLICK"
 	LIVE_EFFECTIVE_WATCH_ReportAudienceAwemeListV2FilteringBehaviors ReportAudienceAwemeListV2FilteringBehaviors = "LIVE_EFFECTIVE_WATCH"
-	LIVE_GOODS_CLICK_ReportAudienceAwemeListV2FilteringBehaviors     ReportAudienceAwemeListV2FilteringBehaviors = "LIVE_GOODS_CLICK"
-	LIVE_EXCEPTIONAL_ReportAudienceAwemeListV2FilteringBehaviors     ReportAudienceAwemeListV2FilteringBehaviors = "LIVE_EXCEPTIONAL"
+	FOLLOWED_USER_ReportAudienceAwemeListV2FilteringBehaviors        ReportAudienceAwemeListV2FilteringBehaviors = "FOLLOWED_USER"
+	LIVE_COMMENT_ReportAudienceAwemeListV2FilteringBehaviors         ReportAudienceAwemeListV2FilteringBehaviors = "LIVE_COMMENT"
 	GOODS_CARTS_ORDER_ReportAudienceAwemeListV2FilteringBehaviors    ReportAudienceAwemeListV2FilteringBehaviors = "GOODS_CARTS_ORDER"
+	COMMENTED_USER_ReportAudienceAwemeListV2FilteringBehaviors       ReportAudienceAwemeListV2FilteringBehaviors = "COMMENTED_USER"
+	SHARED_USER_ReportAudienceAwemeListV2FilteringBehaviors          ReportAudienceAwemeListV2FilteringBehaviors = "SHARED_USER"
+	GOODS_CARTS_CLICK_ReportAudienceAwemeListV2FilteringBehaviors    ReportAudienceAwemeListV2FilteringBehaviors = "GOODS_CARTS_CLICK"
+	LIVE_GOODS_ORDER_ReportAudienceAwemeListV2FilteringBehaviors     ReportAudienceAwemeListV2FilteringBehaviors = "LIVE_GOODS_ORDER"
+	LIVE_GOODS_CLICK_ReportAudienceAwemeListV2FilteringBehaviors     ReportAudienceAwemeListV2FilteringBehaviors = "LIVE_GOODS_CLICK"
 	LIVE_WATCH_ReportAudienceAwemeListV2FilteringBehaviors           ReportAudienceAwemeListV2FilteringBehaviors = "LIVE_WATCH"
 	LIKED_USER_ReportAudienceAwemeListV2FilteringBehaviors           ReportAudienceAwemeListV2FilteringBehaviors = "LIKED_USER"
-	LIVE_COMMENT_ReportAudienceAwemeListV2FilteringBehaviors         ReportAudienceAwemeListV2FilteringBehaviors = "LIVE_COMMENT"
-	SHARED_USER_ReportAudienceAwemeListV2FilteringBehaviors          ReportAudienceAwemeListV2FilteringBehaviors = "SHARED_USER"
-	FOLLOWED_USER_ReportAudienceAwemeListV2FilteringBehaviors        ReportAudienceAwemeListV2FilteringBehaviors = "FOLLOWED_USER"
+	LIVE_EXCEPTIONAL_ReportAudienceAwemeListV2FilteringBehaviors     ReportAudienceAwemeListV2FilteringBehaviors = "LIVE_EXCEPTIONAL"
 )
 
 // Ptr returns reference to report_audience_aweme_list_v2_filtering_behaviors value

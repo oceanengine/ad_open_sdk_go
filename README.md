@@ -276,6 +276,7 @@ Class | Method | HTTP request
 *AudiencePackageCreateV2Api* | **OpenApi2AudiencePackageCreatePost** | **Post** /open_api/2/audience_package/create/
 *AudiencePackageDeleteV2Api* | **OpenApi2AudiencePackageDeletePost** | **Post** /open_api/2/audience_package/delete/
 *AudiencePackageGetV2Api* | **OpenApi2AudiencePackageGetGet** | **Get** /open_api/2/audience_package/get/
+*AudiencePackageGetV30Api* | **OpenApiV30AudiencePackageGetGet** | **Get** /open_api/v3.0/audience_package/get/
 *AudiencePackageUpdateV2Api* | **OpenApi2AudiencePackageUpdatePost** | **Post** /open_api/2/audience_package/update/
 *BrandActionCategoryV30Api* | **OpenApiV30BrandActionCategoryGet** | **Get** /open_api/v3.0/brand/action_category/
 *BrandAdCancelDeleteV30Api* | **OpenApiV30BrandAdCancelDeletePost** | **Post** /open_api/v3.0/brand/ad/cancel_delete/

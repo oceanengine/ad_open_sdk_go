@@ -15,10 +15,10 @@ type CreativeCustomCreativeCreateV2AdDataMiniProgramInfoType string
 
 // List of creative_custom_creative_create_v2_ad_data_mini_program_info_type
 const (
+	BYTE_GAME_CreativeCustomCreativeCreateV2AdDataMiniProgramInfoType    CreativeCustomCreativeCreateV2AdDataMiniProgramInfoType = "BYTE_GAME"
 	BYTE_APP_CreativeCustomCreativeCreateV2AdDataMiniProgramInfoType     CreativeCustomCreativeCreateV2AdDataMiniProgramInfoType = "BYTE_APP"
 	TEMPLATE_APP_CreativeCustomCreativeCreateV2AdDataMiniProgramInfoType CreativeCustomCreativeCreateV2AdDataMiniProgramInfoType = "TEMPLATE_APP"
 	SHELL_APP_CreativeCustomCreativeCreateV2AdDataMiniProgramInfoType    CreativeCustomCreativeCreateV2AdDataMiniProgramInfoType = "SHELL_APP"
-	BYTE_GAME_CreativeCustomCreativeCreateV2AdDataMiniProgramInfoType    CreativeCustomCreativeCreateV2AdDataMiniProgramInfoType = "BYTE_GAME"
 )
 
 // Ptr returns reference to creative_custom_creative_create_v2_ad_data_mini_program_info_type value

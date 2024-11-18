@@ -15,9 +15,9 @@ type ToolsBidSuggestV2Carrier string
 
 // List of tools_bid_suggest_v2_carrier
 const (
+	UNICOM_ToolsBidSuggestV2Carrier ToolsBidSuggestV2Carrier = "UNICOM"
 	TELCOM_ToolsBidSuggestV2Carrier ToolsBidSuggestV2Carrier = "TELCOM"
 	MOBILE_ToolsBidSuggestV2Carrier ToolsBidSuggestV2Carrier = "MOBILE"
-	UNICOM_ToolsBidSuggestV2Carrier ToolsBidSuggestV2Carrier = "UNICOM"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_carrier value

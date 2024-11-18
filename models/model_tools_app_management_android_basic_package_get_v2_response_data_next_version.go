@@ -50,6 +50,8 @@ type ToolsAppManagementAndroidBasicPackageGetV2ResponseDataNextVersion struct {
 	Spokesperson *string                                                          `json:"spokesperson,omitempty"`
 	Status       *ToolsAppManagementAndroidBasicPackageGetV2DataNextVersionStatus `json:"status,omitempty"`
 	//
+	ThemeTag *string `json:"theme_tag,omitempty"`
+	//
 	VersionCode *string `json:"version_code,omitempty"`
 	//
 	VersionId *string `json:"version_id,omitempty"`

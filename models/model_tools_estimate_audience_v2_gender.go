@@ -17,8 +17,8 @@ type ToolsEstimateAudienceV2Gender string
 const (
 	NONE_ToolsEstimateAudienceV2Gender             ToolsEstimateAudienceV2Gender = "NONE"
 	GENDER_MALE_ToolsEstimateAudienceV2Gender      ToolsEstimateAudienceV2Gender = "GENDER_MALE"
-	GENDER_FEMALE_ToolsEstimateAudienceV2Gender    ToolsEstimateAudienceV2Gender = "GENDER_FEMALE"
 	GENDER_UNLIMITED_ToolsEstimateAudienceV2Gender ToolsEstimateAudienceV2Gender = "GENDER_UNLIMITED"
+	GENDER_FEMALE_ToolsEstimateAudienceV2Gender    ToolsEstimateAudienceV2Gender = "GENDER_FEMALE"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_gender value

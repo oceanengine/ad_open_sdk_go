@@ -20,6 +20,4 @@ type ProjectCreateV30RequestOptimizeGoal struct {
 	ExternalAction     *ProjectCreateV30OptimizeGoalExternalAction     `json:"external_action,omitempty"`
 	// 关键行为
 	GameAddictionId *string `json:"game_addiction_id,omitempty"`
-	// paid启用开关
-	PaidSwitch *int64 `json:"paid_switch,omitempty"`
 }

@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.28
+// APIClient manages communication with the Oceanengine Open Api API v1.1.29
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -190,6 +190,8 @@ type APIClient struct {
 	AudiencePackageDeleteV2Api *AudiencePackageDeleteV2ApiService
 
 	AudiencePackageGetV2Api *AudiencePackageGetV2ApiService
+
+	AudiencePackageGetV30Api *AudiencePackageGetV30ApiService
 
 	AudiencePackageUpdateV2Api *AudiencePackageUpdateV2ApiService
 
@@ -1856,6 +1858,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AudiencePackageCreateV2Api = (*AudiencePackageCreateV2ApiService)(&c.common)
 	c.AudiencePackageDeleteV2Api = (*AudiencePackageDeleteV2ApiService)(&c.common)
 	c.AudiencePackageGetV2Api = (*AudiencePackageGetV2ApiService)(&c.common)
+	c.AudiencePackageGetV30Api = (*AudiencePackageGetV30ApiService)(&c.common)
 	c.AudiencePackageUpdateV2Api = (*AudiencePackageUpdateV2ApiService)(&c.common)
 	c.BrandActionCategoryV30Api = (*BrandActionCategoryV30ApiService)(&c.common)
 	c.BrandAdCancelDeleteV30Api = (*BrandAdCancelDeleteV30ApiService)(&c.common)
