@@ -16,8 +16,6 @@ type AudiencePackageGetV30DataAudiencePackagesDistrict string
 // List of audience_package_get_v3.0_data_audience_packages_district
 const (
 	BUSINESS_DISTRICT_AudiencePackageGetV30DataAudiencePackagesDistrict AudiencePackageGetV30DataAudiencePackagesDistrict = "BUSINESS_DISTRICT"
-	CITY_AudiencePackageGetV30DataAudiencePackagesDistrict              AudiencePackageGetV30DataAudiencePackagesDistrict = "CITY"
-	COUNTY_AudiencePackageGetV30DataAudiencePackagesDistrict            AudiencePackageGetV30DataAudiencePackagesDistrict = "COUNTY"
 	NONE_AudiencePackageGetV30DataAudiencePackagesDistrict              AudiencePackageGetV30DataAudiencePackagesDistrict = "NONE"
 	OVERSEA_AudiencePackageGetV30DataAudiencePackagesDistrict           AudiencePackageGetV30DataAudiencePackagesDistrict = "OVERSEA"
 	REGION_AudiencePackageGetV30DataAudiencePackagesDistrict            AudiencePackageGetV30DataAudiencePackagesDistrict = "REGION"

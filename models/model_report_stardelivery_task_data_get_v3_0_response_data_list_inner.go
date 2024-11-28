@@ -41,7 +41,11 @@ type ReportStardeliveryTaskDataGetV30ResponseDataListInner struct {
 	//
 	StarSaleMaterialStatCost *float64 `json:"star_sale_material_stat_cost,omitempty"`
 	//
-	StarStatCost       *float64                                                    `json:"star_stat_cost,omitempty"`
+	StarStatCost *float64 `json:"star_stat_cost,omitempty"`
+	//
+	StarTaskAlbumId *int64 `json:"star_task_album_id,omitempty"`
+	//
+	StarTaskAlbumName  *string                                                     `json:"star_task_album_name,omitempty"`
 	StarTaskAnchorType *ReportStardeliveryTaskDataGetV30DataListStarTaskAnchorType `json:"star_task_anchor_type,omitempty"`
 	//
 	StarTaskBudget *float64 `json:"star_task_budget,omitempty"`

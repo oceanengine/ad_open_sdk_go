@@ -14,6 +14,8 @@ package models
 type StardeliveryTaskAuthorVideoDetailV30Filtering struct {
 	// 达人抖音号id列表
 	AwemeIds []string `json:"aweme_ids,omitempty"`
+	//
+	ExcludeAwemeIds []string `json:"exclude_aweme_ids,omitempty"`
 	// 视频素材id列表
 	MaterialIds             []int64                                                               `json:"material_ids,omitempty"`
 	StarVideoDeliveryStatus *StardeliveryTaskAuthorVideoDetailV30FilteringStarVideoDeliveryStatus `json:"star_video_delivery_status,omitempty"`

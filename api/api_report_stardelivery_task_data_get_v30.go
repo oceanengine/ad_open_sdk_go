@@ -23,16 +23,17 @@ import (
 type ReportStardeliveryTaskDataGetV30ApiService service
 
 type ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest struct {
-	ctx          context.Context
-	ApiService   *ReportStardeliveryTaskDataGetV30ApiService
-	advertiserId *int64
-	startDate    *string
-	endDate      *string
-	filtering    *ReportStardeliveryTaskDataGetV30Filtering
-	orderField   *string
-	orderType    *ReportStardeliveryTaskDataGetV30OrderType
-	page         *int32
-	pageSize     *int32
+	ctx             context.Context
+	ApiService      *ReportStardeliveryTaskDataGetV30ApiService
+	advertiserId    *int64
+	startDate       *string
+	endDate         *string
+	starTaskVersion *string
+	filtering       *ReportStardeliveryTaskDataGetV30Filtering
+	orderField      *string
+	orderType       *ReportStardeliveryTaskDataGetV30OrderType
+	page            *int32
+	pageSize        *int32
 }
 
 func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest {
@@ -49,6 +50,12 @@ func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) StartDate(startDa
 // 查询结束日期
 func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) EndDate(endDate string) *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest {
 	r.endDate = &endDate
+	return r
+}
+
+// 任务版本，枚举值： FROM_STAR_TO_BP FROM_AD 默认为FROM_AD
+func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) StarTaskVersion(starTaskVersion string) *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest {
+	r.starTaskVersion = &starTaskVersion
 	return r
 }
 
@@ -144,6 +151,9 @@ func (a *ReportStardeliveryTaskDataGetV30ApiService) getExecute(r *ApiOpenApiV30
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "start_date", r.startDate)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "end_date", r.endDate)
+	if r.starTaskVersion != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "star_task_version", r.starTaskVersion)
+	}
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}

@@ -81,11 +81,13 @@ type ProjectListV30ResponseDataListInner struct {
 	QuickAppId     *int64                                             `json:"quick_app_id,omitempty"`
 	RelatedProduct *ProjectListV30ResponseDataListInnerRelatedProduct `json:"related_product,omitempty"`
 	//
-	SearchBidRatio *float64 `json:"search_bid_ratio,omitempty"`
+	SearchBidRatio                 *float64                                              `json:"search_bid_ratio,omitempty"`
+	StarAutoMaterialAdditionSwitch *ProjectListV30DataListStarAutoMaterialAdditionSwitch `json:"star_auto_material_addition_switch,omitempty"`
 	//
-	StarTaskId  *int64                             `json:"star_task_id,omitempty"`
-	Status      *ProjectListV30DataListStatus      `json:"status,omitempty"`
-	StatusFirst *ProjectListV30DataListStatusFirst `json:"status_first,omitempty"`
+	StarTaskId      *int64                                 `json:"star_task_id,omitempty"`
+	StarTaskVersion *ProjectListV30DataListStarTaskVersion `json:"star_task_version,omitempty"`
+	Status          *ProjectListV30DataListStatus          `json:"status,omitempty"`
+	StatusFirst     *ProjectListV30DataListStatusFirst     `json:"status_first,omitempty"`
 	//
 	StatusSecond []*ProjectListV30DataListStatusSecond `json:"status_second,omitempty"`
 	//

@@ -22,4 +22,6 @@ type QianchuanAdRegionUpdateV10Request struct {
 	ElectricFenceRegion  *QianchuanAdRegionUpdateV10ElectricFenceRegion  `json:"electric_fence_region,omitempty"`
 	ExcludeLimitedRegion *QianchuanAdRegionUpdateV10ExcludeLimitedRegion `json:"exclude_limited_region,omitempty"`
 	LocationType         *QianchuanAdRegionUpdateV10LocationType         `json:"location_type,omitempty"`
+	//
+	RegionVersion *string `json:"region_version,omitempty"`
 }

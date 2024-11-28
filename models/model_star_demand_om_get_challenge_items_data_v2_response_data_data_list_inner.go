@@ -30,6 +30,8 @@ type StarDemandOmGetChallengeItemsDataV2ResponseDataDataListInner struct {
 	IosActivateCnt *int64 `json:"ios_activate_cnt,omitempty"`
 	// 视频ID/图文ID
 	ItemId *int64 `json:"item_id,omitempty"`
+	// 分天统计数据
+	ItemInfoDailyList []*StarDemandOmGetChallengeItemsDataV2ResponseDataDataListInnerItemInfoDailyListInner `json:"item_info_daily_list,omitempty"`
 	//
 	LikeCnt *int64 `json:"like_cnt,omitempty"`
 	//
@@ -58,6 +60,8 @@ type StarDemandOmGetChallengeItemsDataV2ResponseDataDataListInner struct {
 	ShareCnt *int64 `json:"share_cnt,omitempty"`
 	// 视频标题
 	Title *string `json:"title,omitempty"`
+	// 抖音id
+	Uid *int64 `json:"uid,omitempty"`
 	//
 	ValidLikeCnt *int64 `json:"valid_like_cnt,omitempty"`
 	//

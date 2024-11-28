@@ -22,6 +22,8 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	AuthorTaskName *string `json:"author_task_name,omitempty"`
 	// 一级行业分类ID
 	FirstIndustryId *int64 `json:"first_industry_id,omitempty"`
+	// 一级行业分类Name
+	FirstIndustryName *string `json:"first_industry_name,omitempty"`
 	// 任务内推广的iOS应用包名
 	IosAppPackageName *string `json:"ios_app_package_name,omitempty"`
 	// 任务内推广的iOS应用链接
@@ -40,14 +42,21 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	ProductName *string `json:"product_name,omitempty"`
 	// 二级行业分类ID
 	SecondIndustryId *int64 `json:"second_industry_id,omitempty"`
+	// 二级行业分类Name
+	SecondIndustryName *string `json:"second_industry_name,omitempty"`
+	// 来源星图账户名称
+	StarAccountName *string `json:"star_account_name,omitempty"`
 	// 广告消耗分成比例
 	StarAdCostDivideRatio *float64 `json:"star_ad_cost_divide_ratio,omitempty"`
+	// 来源星图账户id
+	StarId *int64 `json:"star_id,omitempty"`
 	// 素材出价（元），每条视频最低需要付给达人的底价价格
 	StarMaterialBid *float64 `json:"star_material_bid,omitempty"`
 	// 素材一级类目id
 	StarMaterialFirstType *int32 `json:"star_material_first_type,omitempty"`
 	// 素材二级类目id
-	StarMaterialSecondType *int32 `json:"star_material_second_type,omitempty"`
+	StarMaterialSecondType    *int32                                                          `json:"star_material_second_type,omitempty"`
+	StarTaskAlbumMicroAppInfo *StardeliveryTaskDetailV30ResponseDataStarTaskAlbumMicroAppInfo `json:"star_task_album_micro_app_info,omitempty"`
 	// 原生锚点ID
 	StarTaskAnchorId   *int64                                                  `json:"star_task_anchor_id,omitempty"`
 	StarTaskAnchorType *StardeliveryTaskDetailV30DataStarTaskAnchorType        `json:"star_task_anchor_type,omitempty"`
@@ -73,8 +82,12 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	StarTaskStartTime *string                                         `json:"star_task_start_time,omitempty"`
 	StarTaskStatus    *StardeliveryTaskDetailV30DataStarTaskStatus    `json:"star_task_status,omitempty"`
 	StarTaskSubStatus *StardeliveryTaskDetailV30DataStarTaskSubStatus `json:"star_task_sub_status,omitempty"`
+	// 任务标签
+	StarTaskTags *string `json:"star_task_tags,omitempty"`
 	// 任务图标uri
-	TaskAvatarId    *string                                               `json:"task_avatar_id,omitempty"`
+	TaskAvatarId *string `json:"task_avatar_id,omitempty"`
+	// 任务图标url
+	TaskAvatarUrl   *string                                               `json:"task_avatar_url,omitempty"`
 	TaskContactInfo *StardeliveryTaskDetailV30ResponseDataTaskContactInfo `json:"task_contact_info,omitempty"`
 	// 任务头图uri
 	TaskHeadImageId *string `json:"task_head_image_id,omitempty"`

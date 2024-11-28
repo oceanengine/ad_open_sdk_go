@@ -15,19 +15,10 @@ type AudiencePackageGetV30DataAudiencePackagesLocationType string
 
 // List of audience_package_get_v3.0_data_audience_packages_location_type
 const (
-	APP_AudiencePackageGetV30DataAudiencePackagesLocationType         AudiencePackageGetV30DataAudiencePackagesLocationType = "APP"
-	APP_ANDROID_AudiencePackageGetV30DataAudiencePackagesLocationType AudiencePackageGetV30DataAudiencePackagesLocationType = "APP_ANDROID"
-	APP_IOS_AudiencePackageGetV30DataAudiencePackagesLocationType     AudiencePackageGetV30DataAudiencePackagesLocationType = "APP_IOS"
-	ARTICLE_AudiencePackageGetV30DataAudiencePackagesLocationType     AudiencePackageGetV30DataAudiencePackagesLocationType = "ARTICLE"
-	AWEME_AudiencePackageGetV30DataAudiencePackagesLocationType       AudiencePackageGetV30DataAudiencePackagesLocationType = "AWEME"
-	DPA_AudiencePackageGetV30DataAudiencePackagesLocationType         AudiencePackageGetV30DataAudiencePackagesLocationType = "DPA"
-	EXTERNAL_AudiencePackageGetV30DataAudiencePackagesLocationType    AudiencePackageGetV30DataAudiencePackagesLocationType = "EXTERNAL"
-	GOODS_AudiencePackageGetV30DataAudiencePackagesLocationType       AudiencePackageGetV30DataAudiencePackagesLocationType = "GOODS"
-	LIVE_AudiencePackageGetV30DataAudiencePackagesLocationType        AudiencePackageGetV30DataAudiencePackagesLocationType = "LIVE"
-	MICRO_GAME_AudiencePackageGetV30DataAudiencePackagesLocationType  AudiencePackageGetV30DataAudiencePackagesLocationType = "MICRO_GAME"
-	QUICK_APP_AudiencePackageGetV30DataAudiencePackagesLocationType   AudiencePackageGetV30DataAudiencePackagesLocationType = "QUICK_APP"
-	SHOP_AudiencePackageGetV30DataAudiencePackagesLocationType        AudiencePackageGetV30DataAudiencePackagesLocationType = "SHOP"
-	STORE_AudiencePackageGetV30DataAudiencePackagesLocationType       AudiencePackageGetV30DataAudiencePackagesLocationType = "STORE"
+	ALL_AudiencePackageGetV30DataAudiencePackagesLocationType     AudiencePackageGetV30DataAudiencePackagesLocationType = "ALL"
+	CURRENT_AudiencePackageGetV30DataAudiencePackagesLocationType AudiencePackageGetV30DataAudiencePackagesLocationType = "CURRENT"
+	HOME_AudiencePackageGetV30DataAudiencePackagesLocationType    AudiencePackageGetV30DataAudiencePackagesLocationType = "HOME"
+	TRAVEL_AudiencePackageGetV30DataAudiencePackagesLocationType  AudiencePackageGetV30DataAudiencePackagesLocationType = "TRAVEL"
 )
 
 // Ptr returns reference to audience_package_get_v3.0_data_audience_packages_location_type value

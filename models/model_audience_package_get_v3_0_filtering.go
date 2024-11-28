@@ -13,7 +13,6 @@ package models
 // AudiencePackageGetV30Filtering
 type AudiencePackageGetV30Filtering struct {
 	AdType        *AudiencePackageGetV30FilteringAdType        `json:"ad_type,omitempty"`
-	AppType       *AudiencePackageGetV30FilteringAppType       `json:"app_type,omitempty"`
 	DeliveryRange *AudiencePackageGetV30FilteringDeliveryRange `json:"delivery_range,omitempty"`
 	LandingType   *AudiencePackageGetV30FilteringLandingType   `json:"landing_type,omitempty"`
 	MarketingGoal *AudiencePackageGetV30FilteringMarketingGoal `json:"marketing_goal,omitempty"`

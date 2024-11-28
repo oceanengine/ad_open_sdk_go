@@ -16,8 +16,8 @@ type CampaignCreateV2CampaignType string
 // List of campaign_create_v2_campaign_type
 const (
 	CONTENT_CampaignCreateV2CampaignType CampaignCreateV2CampaignType = "CONTENT"
-	SEARCH_CampaignCreateV2CampaignType  CampaignCreateV2CampaignType = "SEARCH"
 	FEED_CampaignCreateV2CampaignType    CampaignCreateV2CampaignType = "FEED"
+	SEARCH_CampaignCreateV2CampaignType  CampaignCreateV2CampaignType = "SEARCH"
 )
 
 // Ptr returns reference to campaign_create_v2_campaign_type value

@@ -80,6 +80,7 @@ const (
 	AD_CONVERT_TYPE_INSTALL_FINISH_ProjectListV30DataListOptimizeGoalExternalAction              ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_INSTALL_FINISH"
 	AD_CONVERT_TYPE_INTELLIGENT_SERVICE_OPEN_ProjectListV30DataListOptimizeGoalExternalAction    ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_INTELLIGENT_SERVICE_OPEN"
 	AD_CONVERT_TYPE_INTENTION_CLUE_ProjectListV30DataListOptimizeGoalExternalAction              ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_INTENTION_CLUE"
+	AD_CONVERT_TYPE_INTENTION_FORM_ProjectListV30DataListOptimizeGoalExternalAction              ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_INTENTION_FORM"
 	AD_CONVERT_TYPE_INTERACTION_ProjectListV30DataListOptimizeGoalExternalAction                 ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_INTERACTION"
 	AD_CONVERT_TYPE_INVALID_CLUE_ProjectListV30DataListOptimizeGoalExternalAction                ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_INVALID_CLUE"
 	AD_CONVERT_TYPE_IPU_QUALIFY_ProjectListV30DataListOptimizeGoalExternalAction                 ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_IPU_QUALIFY"

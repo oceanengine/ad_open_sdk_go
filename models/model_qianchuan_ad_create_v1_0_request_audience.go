@@ -55,6 +55,8 @@ type QianchuanAdCreateV10RequestAudience struct {
 	//
 	Platform []*QianchuanAdCreateV10AudiencePlatform `json:"platform,omitempty"`
 	//
+	RegionVersion *string `json:"region_version,omitempty"`
+	//
 	RetargetingTagsExclude []int64 `json:"retargeting_tags_exclude,omitempty"`
 	//
 	RetargetingTagsInclude []int64                                          `json:"retargeting_tags_include,omitempty"`

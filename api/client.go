@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.29
+// APIClient manages communication with the Oceanengine Open Api API v1.1.30
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -121,6 +121,10 @@ type APIClient struct {
 
 	AdvertiserVerifyInfoGetV30Api *AdvertiserVerifyInfoGetV30ApiService
 
+	AgentAdvBiddingListQueryV2Api *AgentAdvBiddingListQueryV2ApiService
+
+	AgentAdvBrandListQueryV2Api *AgentAdvBrandListQueryV2ApiService
+
 	AgentAdvCostReportListQueryV2Api *AgentAdvCostReportListQueryV2ApiService
 
 	AgentAdvertiserAssignV2Api *AgentAdvertiserAssignV2ApiService
@@ -185,11 +189,11 @@ type APIClient struct {
 
 	AsyncTaskGetV2Api *AsyncTaskGetV2ApiService
 
+	AudiencePackageBindinfoGetV30Api *AudiencePackageBindinfoGetV30ApiService
+
 	AudiencePackageCreateV2Api *AudiencePackageCreateV2ApiService
 
 	AudiencePackageDeleteV2Api *AudiencePackageDeleteV2ApiService
-
-	AudiencePackageGetV2Api *AudiencePackageGetV2ApiService
 
 	AudiencePackageGetV30Api *AudiencePackageGetV30ApiService
 
@@ -219,6 +223,8 @@ type APIClient struct {
 
 	BrandCampaignGetV30Api *BrandCampaignGetV30ApiService
 
+	BrandCampaignListV30Api *BrandCampaignListV30ApiService
+
 	BrandCampaignOperateV30Api *BrandCampaignOperateV30ApiService
 
 	BrandCreativeCreateV30Api *BrandCreativeCreateV30ApiService
@@ -230,6 +236,10 @@ type APIClient struct {
 	BrandCreativeUpdateV30Api *BrandCreativeUpdateV30ApiService
 
 	BrandFileVideoUploadV30Api *BrandFileVideoUploadV30ApiService
+
+	BrandMaterialListV30Api *BrandMaterialListV30ApiService
+
+	BrandOrderListV30Api *BrandOrderListV30ApiService
 
 	BrandQueryStockV30Api *BrandQueryStockV30ApiService
 
@@ -275,6 +285,10 @@ type APIClient struct {
 
 	CdpBrandGetV30Api *CdpBrandGetV30ApiService
 
+	CgTransferCanTransferBalanceGetV30Api *CgTransferCanTransferBalanceGetV30ApiService
+
+	CgTransferCanTransferTargetListV30Api *CgTransferCanTransferTargetListV30ApiService
+
 	CgTransferCreateTransferV30Api *CgTransferCreateTransferV30ApiService
 
 	CgTransferQueryCanTransferBalanceV30Api *CgTransferQueryCanTransferBalanceV30ApiService
@@ -282,6 +296,12 @@ type APIClient struct {
 	CgTransferQueryTransferBalanceV30Api *CgTransferQueryTransferBalanceV30ApiService
 
 	CgTransferQueryTransferDetailV30Api *CgTransferQueryTransferDetailV30ApiService
+
+	CgTransferTransferBalanceGetV30Api *CgTransferTransferBalanceGetV30ApiService
+
+	CgTransferTransferCreateV30Api *CgTransferTransferCreateV30ApiService
+
+	CgTransferTransferDetailGetV30Api *CgTransferTransferDetailGetV30ApiService
 
 	CgTransferWalletTransferCanTransferBalanceV30Api *CgTransferWalletTransferCanTransferBalanceV30ApiService
 
@@ -757,6 +777,8 @@ type APIClient struct {
 
 	QianchuanAdMaterialGetV10Api *QianchuanAdMaterialGetV10ApiService
 
+	QianchuanAdMaterialSuggestionV10Api *QianchuanAdMaterialSuggestionV10ApiService
+
 	QianchuanAdPivativewordsGetV10Api *QianchuanAdPivativewordsGetV10ApiService
 
 	QianchuanAdPivativewordsUpdateV10Api *QianchuanAdPivativewordsUpdateV10ApiService
@@ -872,6 +894,8 @@ type APIClient struct {
 	QianchuanKeywordPackageGetV10Api *QianchuanKeywordPackageGetV10ApiService
 
 	QianchuanLqAdGetV10Api *QianchuanLqAdGetV10ApiService
+
+	QianchuanMaterialAdGetV10Api *QianchuanMaterialAdGetV10ApiService
 
 	QianchuanMaterialGetV10Api *QianchuanMaterialGetV10ApiService
 
@@ -1029,9 +1053,13 @@ type APIClient struct {
 
 	ReportBrandAdvertiserGetV30Api *ReportBrandAdvertiserGetV30ApiService
 
+	ReportBrandAgentDataV30Api *ReportBrandAgentDataV30ApiService
+
 	ReportBrandCampaignGetV30Api *ReportBrandCampaignGetV30ApiService
 
 	ReportBrandCreativeGetV30Api *ReportBrandCreativeGetV30ApiService
+
+	ReportBrandDataV30Api *ReportBrandDataV30ApiService
 
 	ReportCampaignGetV2Api *ReportCampaignGetV2ApiService
 
@@ -1823,6 +1851,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AdvertiserTransferableFundGetV2Api = (*AdvertiserTransferableFundGetV2ApiService)(&c.common)
 	c.AdvertiserUpdateBudgetV2Api = (*AdvertiserUpdateBudgetV2ApiService)(&c.common)
 	c.AdvertiserVerifyInfoGetV30Api = (*AdvertiserVerifyInfoGetV30ApiService)(&c.common)
+	c.AgentAdvBiddingListQueryV2Api = (*AgentAdvBiddingListQueryV2ApiService)(&c.common)
+	c.AgentAdvBrandListQueryV2Api = (*AgentAdvBrandListQueryV2ApiService)(&c.common)
 	c.AgentAdvCostReportListQueryV2Api = (*AgentAdvCostReportListQueryV2ApiService)(&c.common)
 	c.AgentAdvertiserAssignV2Api = (*AgentAdvertiserAssignV2ApiService)(&c.common)
 	c.AgentAdvertiserCopyV2Api = (*AgentAdvertiserCopyV2ApiService)(&c.common)
@@ -1855,9 +1885,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AsyncTaskCreateV2Api = (*AsyncTaskCreateV2ApiService)(&c.common)
 	c.AsyncTaskDownloadV2Api = (*AsyncTaskDownloadV2ApiService)(&c.common)
 	c.AsyncTaskGetV2Api = (*AsyncTaskGetV2ApiService)(&c.common)
+	c.AudiencePackageBindinfoGetV30Api = (*AudiencePackageBindinfoGetV30ApiService)(&c.common)
 	c.AudiencePackageCreateV2Api = (*AudiencePackageCreateV2ApiService)(&c.common)
 	c.AudiencePackageDeleteV2Api = (*AudiencePackageDeleteV2ApiService)(&c.common)
-	c.AudiencePackageGetV2Api = (*AudiencePackageGetV2ApiService)(&c.common)
 	c.AudiencePackageGetV30Api = (*AudiencePackageGetV30ApiService)(&c.common)
 	c.AudiencePackageUpdateV2Api = (*AudiencePackageUpdateV2ApiService)(&c.common)
 	c.BrandActionCategoryV30Api = (*BrandActionCategoryV30ApiService)(&c.common)
@@ -1872,12 +1902,15 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.BrandCampaignDeleteV30Api = (*BrandCampaignDeleteV30ApiService)(&c.common)
 	c.BrandCampaignEditV30Api = (*BrandCampaignEditV30ApiService)(&c.common)
 	c.BrandCampaignGetV30Api = (*BrandCampaignGetV30ApiService)(&c.common)
+	c.BrandCampaignListV30Api = (*BrandCampaignListV30ApiService)(&c.common)
 	c.BrandCampaignOperateV30Api = (*BrandCampaignOperateV30ApiService)(&c.common)
 	c.BrandCreativeCreateV30Api = (*BrandCreativeCreateV30ApiService)(&c.common)
 	c.BrandCreativeDeleteV30Api = (*BrandCreativeDeleteV30ApiService)(&c.common)
 	c.BrandCreativeGetV30Api = (*BrandCreativeGetV30ApiService)(&c.common)
 	c.BrandCreativeUpdateV30Api = (*BrandCreativeUpdateV30ApiService)(&c.common)
 	c.BrandFileVideoUploadV30Api = (*BrandFileVideoUploadV30ApiService)(&c.common)
+	c.BrandMaterialListV30Api = (*BrandMaterialListV30ApiService)(&c.common)
+	c.BrandOrderListV30Api = (*BrandOrderListV30ApiService)(&c.common)
 	c.BrandQueryStockV30Api = (*BrandQueryStockV30ApiService)(&c.common)
 	c.BrandQueryYuntu5aBrandCategoryV30Api = (*BrandQueryYuntu5aBrandCategoryV30ApiService)(&c.common)
 	c.BrandRegionGetV30Api = (*BrandRegionGetV30ApiService)(&c.common)
@@ -1900,10 +1933,15 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.CarouselListV2Api = (*CarouselListV2ApiService)(&c.common)
 	c.CarouselUpdateV2Api = (*CarouselUpdateV2ApiService)(&c.common)
 	c.CdpBrandGetV30Api = (*CdpBrandGetV30ApiService)(&c.common)
+	c.CgTransferCanTransferBalanceGetV30Api = (*CgTransferCanTransferBalanceGetV30ApiService)(&c.common)
+	c.CgTransferCanTransferTargetListV30Api = (*CgTransferCanTransferTargetListV30ApiService)(&c.common)
 	c.CgTransferCreateTransferV30Api = (*CgTransferCreateTransferV30ApiService)(&c.common)
 	c.CgTransferQueryCanTransferBalanceV30Api = (*CgTransferQueryCanTransferBalanceV30ApiService)(&c.common)
 	c.CgTransferQueryTransferBalanceV30Api = (*CgTransferQueryTransferBalanceV30ApiService)(&c.common)
 	c.CgTransferQueryTransferDetailV30Api = (*CgTransferQueryTransferDetailV30ApiService)(&c.common)
+	c.CgTransferTransferBalanceGetV30Api = (*CgTransferTransferBalanceGetV30ApiService)(&c.common)
+	c.CgTransferTransferCreateV30Api = (*CgTransferTransferCreateV30ApiService)(&c.common)
+	c.CgTransferTransferDetailGetV30Api = (*CgTransferTransferDetailGetV30ApiService)(&c.common)
 	c.CgTransferWalletTransferCanTransferBalanceV30Api = (*CgTransferWalletTransferCanTransferBalanceV30ApiService)(&c.common)
 	c.CgTransferWalletTransferCreateV30Api = (*CgTransferWalletTransferCreateV30ApiService)(&c.common)
 	c.CgTransferWalletTransferDetailV30Api = (*CgTransferWalletTransferDetailV30ApiService)(&c.common)
@@ -2141,6 +2179,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanAdLearingStatusGetV10Api = (*QianchuanAdLearingStatusGetV10ApiService)(&c.common)
 	c.QianchuanAdMaterialDeleteV10Api = (*QianchuanAdMaterialDeleteV10ApiService)(&c.common)
 	c.QianchuanAdMaterialGetV10Api = (*QianchuanAdMaterialGetV10ApiService)(&c.common)
+	c.QianchuanAdMaterialSuggestionV10Api = (*QianchuanAdMaterialSuggestionV10ApiService)(&c.common)
 	c.QianchuanAdPivativewordsGetV10Api = (*QianchuanAdPivativewordsGetV10ApiService)(&c.common)
 	c.QianchuanAdPivativewordsUpdateV10Api = (*QianchuanAdPivativewordsUpdateV10ApiService)(&c.common)
 	c.QianchuanAdQuotaGetV10Api = (*QianchuanAdQuotaGetV10ApiService)(&c.common)
@@ -2199,6 +2238,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanKeywordCheckV10Api = (*QianchuanKeywordCheckV10ApiService)(&c.common)
 	c.QianchuanKeywordPackageGetV10Api = (*QianchuanKeywordPackageGetV10ApiService)(&c.common)
 	c.QianchuanLqAdGetV10Api = (*QianchuanLqAdGetV10ApiService)(&c.common)
+	c.QianchuanMaterialAdGetV10Api = (*QianchuanMaterialAdGetV10ApiService)(&c.common)
 	c.QianchuanMaterialGetV10Api = (*QianchuanMaterialGetV10ApiService)(&c.common)
 	c.QianchuanOrientationPackageGetV10Api = (*QianchuanOrientationPackageGetV10ApiService)(&c.common)
 	c.QianchuanProductAnalyseCompareCreativeV10Api = (*QianchuanProductAnalyseCompareCreativeV10ApiService)(&c.common)
@@ -2277,8 +2317,10 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ReportAudienceProvinceV2Api = (*ReportAudienceProvinceV2ApiService)(&c.common)
 	c.ReportBrandAdGetV30Api = (*ReportBrandAdGetV30ApiService)(&c.common)
 	c.ReportBrandAdvertiserGetV30Api = (*ReportBrandAdvertiserGetV30ApiService)(&c.common)
+	c.ReportBrandAgentDataV30Api = (*ReportBrandAgentDataV30ApiService)(&c.common)
 	c.ReportBrandCampaignGetV30Api = (*ReportBrandCampaignGetV30ApiService)(&c.common)
 	c.ReportBrandCreativeGetV30Api = (*ReportBrandCreativeGetV30ApiService)(&c.common)
+	c.ReportBrandDataV30Api = (*ReportBrandDataV30ApiService)(&c.common)
 	c.ReportCampaignGetV2Api = (*ReportCampaignGetV2ApiService)(&c.common)
 	c.ReportCreativeGetV2Api = (*ReportCreativeGetV2ApiService)(&c.common)
 	c.ReportCustomAsyncTaskCreateV30Api = (*ReportCustomAsyncTaskCreateV30ApiService)(&c.common)

@@ -25,5 +25,6 @@ type QianchuanAwemeOrderCreateV10RequestAudience struct {
 	ExcludeLimitedRegion *QianchuanAwemeOrderCreateV10AudienceExcludeLimitedRegion `json:"exclude_limited_region,omitempty"`
 	Gender               *QianchuanAwemeOrderCreateV10AudienceGender               `json:"gender,omitempty"`
 	//
-	InterestCategories []int64 `json:"interest_categories,omitempty"`
+	InterestCategories []int64                                            `json:"interest_categories,omitempty"`
+	RegionVersion      *QianchuanAwemeOrderCreateV10AudienceRegionVersion `json:"region_version,omitempty"`
 }

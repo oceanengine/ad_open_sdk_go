@@ -23,17 +23,24 @@ import (
 type StardeliveryTaskListV30ApiService service
 
 type ApiOpenApiV30StardeliveryTaskListGetRequest struct {
-	ctx          context.Context
-	ApiService   *StardeliveryTaskListV30ApiService
-	advertiserId *int64
-	filtering    *StardeliveryTaskListV30Filtering
-	page         *int32
-	pageSize     *int32
+	ctx             context.Context
+	ApiService      *StardeliveryTaskListV30ApiService
+	advertiserId    *int64
+	starTaskVersion *string
+	filtering       *StardeliveryTaskListV30Filtering
+	page            *int32
+	pageSize        *int32
 }
 
 // 广告账户id
 func (r *ApiOpenApiV30StardeliveryTaskListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30StardeliveryTaskListGetRequest {
 	r.advertiserId = &advertiserId
+	return r
+}
+
+// 任务版本，枚举值： FROM_STAR_TO_BP FROM_AD
+func (r *ApiOpenApiV30StardeliveryTaskListGetRequest) StarTaskVersion(starTaskVersion string) *ApiOpenApiV30StardeliveryTaskListGetRequest {
+	r.starTaskVersion = &starTaskVersion
 	return r
 }
 
@@ -108,6 +115,9 @@ func (a *StardeliveryTaskListV30ApiService) getExecute(r *ApiOpenApiV30Stardeliv
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
+	if r.starTaskVersion != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "star_task_version", r.starTaskVersion)
+	}
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}

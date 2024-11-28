@@ -36,6 +36,8 @@ type ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest struct {
 	productCategory     *int32
 	appId               *string
 	appName             *string
+	demandId            *int64
+	gameType            *int64
 }
 
 func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) StarId(starId int64) *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
@@ -94,6 +96,16 @@ func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) AppId(appId 
 // 小程序名称
 func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) AppName(appName string) *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
 	r.appName = &appName
+	return r
+}
+
+func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) DemandId(demandId int64) *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
+	r.demandId = &demandId
+	return r
+}
+
+func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) GameType(gameType int64) *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
+	r.gameType = &gameType
 	return r
 }
 
@@ -189,6 +201,12 @@ func (a *StarMcnProviderGetUnparticipatedTaskV2ApiService) getExecute(r *ApiOpen
 	}
 	if r.appName != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "app_name", r.appName)
+	}
+	if r.demandId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "demand_id", r.demandId)
+	}
+	if r.gameType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "game_type", r.gameType)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

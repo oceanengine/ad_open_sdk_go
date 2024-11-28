@@ -12,17 +12,17 @@ package models
 
 // StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerItemInfoDailyListInner struct for StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerItemInfoDailyListInner
 type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerItemInfoDailyListInner struct {
-	//
+	// 达人已发放收益
 	AuthorAmount *int64 `json:"author_amount,omitempty"`
 	//
 	AuthorAmountIaa *int64 `json:"author_amount_iaa,omitempty"`
 	//
 	AuthorAmountIap *int64 `json:"author_amount_iap,omitempty"`
-	//
+	// item_id 产生的分天广告收益，单位为厘（元*1000）
 	IaaIncomeDaily *string `json:"iaa_income_daily,omitempty"`
 	//
 	PDate *string `json:"p_date,omitempty"`
-	//
+	// 撮合中介已发放佣金(和mcn_amount类似)，单位为厘（元*1000）
 	ServiceProviderAmount *int64 `json:"service_provider_amount,omitempty"`
 	//
 	ServiceProviderAmountIaa *int64 `json:"service_provider_amount_iaa,omitempty"`

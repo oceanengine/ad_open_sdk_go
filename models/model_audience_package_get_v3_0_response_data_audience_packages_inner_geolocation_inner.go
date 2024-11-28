@@ -13,21 +13,11 @@ package models
 // AudiencePackageGetV30ResponseDataAudiencePackagesInnerGeolocationInner struct for AudiencePackageGetV30ResponseDataAudiencePackagesInnerGeolocationInner
 type AudiencePackageGetV30ResponseDataAudiencePackagesInnerGeolocationInner struct {
 	//
-	City *string `json:"city,omitempty"`
-	//
-	District *string `json:"district,omitempty"`
-	//
 	Lat *float64 `json:"lat,omitempty"`
 	//
 	Long *float64 `json:"long,omitempty"`
 	//
 	Name *string `json:"name,omitempty"`
 	//
-	Province *string `json:"province,omitempty"`
-	//
 	Radius *float64 `json:"radius,omitempty"`
-	//
-	Street *string `json:"street,omitempty"`
-	//
-	StreetNumber *string `json:"street_number,omitempty"`
 }

@@ -77,6 +77,7 @@ const (
 	AD_CONVERT_TYPE_INSTALL_FINISH_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_INSTALL_FINISH"
 	AD_CONVERT_TYPE_INTELLIGENT_SERVICE_OPEN_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction    EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_INTELLIGENT_SERVICE_OPEN"
 	AD_CONVERT_TYPE_INTENTION_CLUE_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_INTENTION_CLUE"
+	AD_CONVERT_TYPE_INTENTION_FORM_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_INTENTION_FORM"
 	AD_CONVERT_TYPE_INTERACTION_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                 EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_INTERACTION"
 	AD_CONVERT_TYPE_INVALID_CLUE_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_INVALID_CLUE"
 	AD_CONVERT_TYPE_IPU_QUALIFY_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                 EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_IPU_QUALIFY"

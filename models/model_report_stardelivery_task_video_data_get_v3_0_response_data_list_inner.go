@@ -25,6 +25,10 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	//
 	IesNickname *string `json:"ies_nickname,omitempty"`
 	//
+	InAppPaymentAmountRange []float64 `json:"in_app_payment_amount_range,omitempty"`
+	//
+	InAppStatCostRange []float64 `json:"in_app_stat_cost_range,omitempty"`
+	//
 	InstallFinishCnt *int64 `json:"install_finish_cnt,omitempty"`
 	//
 	MaterialId *int64 `json:"material_id,omitempty"`
@@ -52,6 +56,8 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	StarMaterialSecondType *int32 `json:"star_material_second_type,omitempty"`
 	//
 	StarMaterialStatCost *float64 `json:"star_material_stat_cost,omitempty"`
+	//
+	StarMaterialTotalViews *int64 `json:"star_material_total_views,omitempty"`
 	//
 	StarSaleMaterialStatCost *float64 `json:"star_sale_material_stat_cost,omitempty"`
 	//

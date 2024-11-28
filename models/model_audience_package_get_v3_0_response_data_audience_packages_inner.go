@@ -13,29 +13,31 @@ package models
 // AudiencePackageGetV30ResponseDataAudiencePackagesInner struct for AudiencePackageGetV30ResponseDataAudiencePackagesInner
 type AudiencePackageGetV30ResponseDataAudiencePackagesInner struct {
 	//
-	Ac       []*AudiencePackageGetV30DataAudiencePackagesAc                  `json:"ac,omitempty"`
-	Action   *AudiencePackageGetV30ResponseDataAudiencePackagesInnerAction   `json:"action,omitempty"`
-	ActionV2 *AudiencePackageGetV30ResponseDataAudiencePackagesInnerActionV2 `json:"action_v2,omitempty"`
-	//
-	AdTagV2 []int64                                          `json:"ad_tag_v2,omitempty"`
-	AdType  *AudiencePackageGetV30DataAudiencePackagesAdType `json:"ad_type,omitempty"`
+	Ac []*AudiencePackageGetV30DataAudiencePackagesAc `json:"ac,omitempty"`
+	// 行为分类
+	ActionCategories []int64 `json:"action_categories,omitempty"`
+	// 行为天数
+	ActionDays *int64 `json:"action_days,omitempty"`
+	// 行为关键词
+	ActionWords []int64                                          `json:"action_words,omitempty"`
+	AdType      *AudiencePackageGetV30DataAudiencePackagesAdType `json:"ad_type,omitempty"`
 	//
 	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
 	//
 	Age        []*AudiencePackageGetV30DataAudiencePackagesAge      `json:"age,omitempty"`
 	AndroidOsv *AudiencePackageGetV30DataAudiencePackagesAndroidOsv `json:"android_osv,omitempty"`
-	AppType    *AudiencePackageGetV30DataAudiencePackagesAppType    `json:"app_type,omitempty"`
 	//
 	AudiencePackageId *int64 `json:"audience_package_id,omitempty"`
 	//
-	AutoExtendTargets []*AudiencePackageGetV30DataAudiencePackagesAutoExtendTargets   `json:"auto_extend_targets,omitempty"`
-	AwemeFan          *AudiencePackageGetV30ResponseDataAudiencePackagesInnerAwemeFan `json:"aweme_fan,omitempty"`
+	AutoExtendTargets []*AudiencePackageGetV30DataAudiencePackagesAutoExtendTargets `json:"auto_extend_targets,omitempty"`
 	//
-	AwemeFanTarget []int64 `json:"aweme_fan_target,omitempty"`
+	AwemeFanAccounts []string `json:"aweme_fan_accounts,omitempty"`
 	//
-	AwemeFansNumbers []int64 `json:"aweme_fans_numbers,omitempty"`
+	AwemeFanBehaviors []*AudiencePackageGetV30DataAudiencePackagesAwemeFanBehaviors `json:"aweme_fan_behaviors,omitempty"`
 	//
-	AwemeFansNumbersTags []int64 `json:"aweme_fans_numbers_tags,omitempty"`
+	AwemeFanCategories []string `json:"aweme_fan_categories,omitempty"`
+	//
+	AwemeFanTimeScope *int64 `json:"aweme_fan_time_scope,omitempty"`
 	//
 	Carrier               []*AudiencePackageGetV30DataAudiencePackagesCarrier             `json:"carrier,omitempty"`
 	CarrierRegionOptimize *AudiencePackageGetV30DataAudiencePackagesCarrierRegionOptimize `json:"carrier_region_optimize,omitempty"`
@@ -55,15 +57,15 @@ type AudiencePackageGetV30ResponseDataAudiencePackagesInner struct {
 	FilterAwemeAbnormalActive *AudiencePackageGetV30DataAudiencePackagesFilterAwemeAbnormalActive `json:"filter_aweme_abnormal_active,omitempty"`
 	FilterAwemeFansCount      *AudiencePackageGetV30DataAudiencePackagesFilterAwemeFansCount      `json:"filter_aweme_fans_count,omitempty"`
 	//
-	FilterEvent            []*AudiencePackageGetV30DataAudiencePackagesFilterEvent          `json:"filter_event,omitempty"`
-	FilterOwnAwemeFansVTwo *AudiencePackageGetV30DataAudiencePackagesFilterOwnAwemeFansVTwo `json:"filter_own_aweme_fans_v_two,omitempty"`
+	FilterEvent []*AudiencePackageGetV30DataAudiencePackagesFilterEvent `json:"filter_event,omitempty"`
 	//
 	FlowPackage []int64                                          `json:"flow_package,omitempty"`
 	Gender      *AudiencePackageGetV30DataAudiencePackagesGender `json:"gender,omitempty"`
 	//
-	Geolocation     []*AudiencePackageGetV30ResponseDataAudiencePackagesInnerGeolocationInner `json:"geolocation,omitempty"`
-	HideIfConverted *AudiencePackageGetV30DataAudiencePackagesHideIfConverted                 `json:"hide_if_converted,omitempty"`
-	HideIfExists    *AudiencePackageGetV30DataAudiencePackagesHideIfExists                    `json:"hide_if_exists,omitempty"`
+	Geolocation        []*AudiencePackageGetV30ResponseDataAudiencePackagesInnerGeolocationInner `json:"geolocation,omitempty"`
+	HideIfConverted    *AudiencePackageGetV30DataAudiencePackagesHideIfConverted                 `json:"hide_if_converted,omitempty"`
+	HideIfExists       *AudiencePackageGetV30DataAudiencePackagesHideIfExists                    `json:"hide_if_exists,omitempty"`
+	InterestActionMode *AudiencePackageGetV30DataAudiencePackagesInterestActionMode              `json:"interest_action_mode,omitempty"`
 	//
 	InterestCategories []int64 `json:"interest_categories,omitempty"`
 	//
@@ -76,12 +78,6 @@ type AudiencePackageGetV30ResponseDataAudiencePackagesInner struct {
 	MarketingGoal *AudiencePackageGetV30DataAudiencePackagesMarketingGoal `json:"marketing_goal,omitempty"`
 	//
 	Name *string `json:"name,omitempty"`
-	//
-	NewAppCategory *string `json:"new_app_category,omitempty"`
-	//
-	OwnAwemeNumber *int64 `json:"own_aweme_number,omitempty"`
-	//
-	OwnAwemeNumberTags []int64 `json:"own_aweme_number_tags,omitempty"`
 	//
 	Platform []*AudiencePackageGetV30DataAudiencePackagesPlatform `json:"platform,omitempty"`
 	//

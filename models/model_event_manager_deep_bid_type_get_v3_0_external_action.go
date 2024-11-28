@@ -78,6 +78,7 @@ const (
 	AD_CONVERT_TYPE_INSTALL_FINISH_EventManagerDeepBidTypeGetV30ExternalAction              EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_INSTALL_FINISH"
 	AD_CONVERT_TYPE_INTELLIGENT_SERVICE_OPEN_EventManagerDeepBidTypeGetV30ExternalAction    EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_INTELLIGENT_SERVICE_OPEN"
 	AD_CONVERT_TYPE_INTENTION_CLUE_EventManagerDeepBidTypeGetV30ExternalAction              EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_INTENTION_CLUE"
+	AD_CONVERT_TYPE_INTENTION_FORM_EventManagerDeepBidTypeGetV30ExternalAction              EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_INTENTION_FORM"
 	AD_CONVERT_TYPE_INTERACTION_EventManagerDeepBidTypeGetV30ExternalAction                 EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_INTERACTION"
 	AD_CONVERT_TYPE_INVALID_CLUE_EventManagerDeepBidTypeGetV30ExternalAction                EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_INVALID_CLUE"
 	AD_CONVERT_TYPE_IPU_QUALIFY_EventManagerDeepBidTypeGetV30ExternalAction                 EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_IPU_QUALIFY"

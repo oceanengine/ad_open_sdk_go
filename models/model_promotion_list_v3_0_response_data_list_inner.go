@@ -60,11 +60,13 @@ type PromotionListV30ResponseDataListInner struct {
 	//
 	ShopMultiRoiGoals []*PromotionListV30ResponseDataListInnerShopMultiRoiGoalsInner `json:"shop_multi_roi_goals,omitempty"`
 	//
-	Source *string `json:"source,omitempty"`
+	Source                         *string                                                 `json:"source,omitempty"`
+	StarAutoMaterialAdditionSwitch *PromotionListV30DataListStarAutoMaterialAdditionSwitch `json:"star_auto_material_addition_switch,omitempty"`
 	//
-	StarTaskId  *int64                               `json:"star_task_id,omitempty"`
-	Status      *PromotionListV30DataListStatus      `json:"status,omitempty"`
-	StatusFirst *PromotionListV30DataListStatusFirst `json:"status_first,omitempty"`
+	StarTaskId      *int64                                   `json:"star_task_id,omitempty"`
+	StarTaskVersion *PromotionListV30DataListStarTaskVersion `json:"star_task_version,omitempty"`
+	Status          *PromotionListV30DataListStatus          `json:"status,omitempty"`
+	StatusFirst     *PromotionListV30DataListStatusFirst     `json:"status_first,omitempty"`
 	//
 	StatusSecond []*PromotionListV30DataListStatusSecond `json:"status_second,omitempty"`
 	//

@@ -69,7 +69,8 @@ type ProjectCreateV30Request struct {
 	QuickAppId     *int64                                 `json:"quick_app_id,omitempty"`
 	RelatedProduct *ProjectCreateV30RequestRelatedProduct `json:"related_product,omitempty"`
 	// 出价系数
-	SearchBidRatio *float64 `json:"search_bid_ratio,omitempty"`
+	SearchBidRatio                 *float64                                        `json:"search_bid_ratio,omitempty"`
+	StarAutoMaterialAdditionSwitch *ProjectCreateV30StarAutoMaterialAdditionSwitch `json:"star_auto_material_addition_switch,omitempty"`
 	// 星广联投二期任务id
 	StarTaskId *int64 `json:"star_task_id,omitempty"`
 	//

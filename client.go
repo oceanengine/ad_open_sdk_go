@@ -1,5 +1,5 @@
 /*
-API version: 1.1.29
+API version: 1.1.30
 */
 package ad_open_sdk_go
 
@@ -167,6 +167,14 @@ func (c *Client) AdvertiserVerifyInfoGetV30Api() *api.AdvertiserVerifyInfoGetV30
 	return c.ApiClient.AdvertiserVerifyInfoGetV30Api
 }
 
+func (c *Client) AgentAdvBiddingListQueryV2Api() *api.AgentAdvBiddingListQueryV2ApiService {
+	return c.ApiClient.AgentAdvBiddingListQueryV2Api
+}
+
+func (c *Client) AgentAdvBrandListQueryV2Api() *api.AgentAdvBrandListQueryV2ApiService {
+	return c.ApiClient.AgentAdvBrandListQueryV2Api
+}
+
 func (c *Client) AgentAdvCostReportListQueryV2Api() *api.AgentAdvCostReportListQueryV2ApiService {
 	return c.ApiClient.AgentAdvCostReportListQueryV2Api
 }
@@ -295,16 +303,16 @@ func (c *Client) AsyncTaskGetV2Api() *api.AsyncTaskGetV2ApiService {
 	return c.ApiClient.AsyncTaskGetV2Api
 }
 
+func (c *Client) AudiencePackageBindinfoGetV30Api() *api.AudiencePackageBindinfoGetV30ApiService {
+	return c.ApiClient.AudiencePackageBindinfoGetV30Api
+}
+
 func (c *Client) AudiencePackageCreateV2Api() *api.AudiencePackageCreateV2ApiService {
 	return c.ApiClient.AudiencePackageCreateV2Api
 }
 
 func (c *Client) AudiencePackageDeleteV2Api() *api.AudiencePackageDeleteV2ApiService {
 	return c.ApiClient.AudiencePackageDeleteV2Api
-}
-
-func (c *Client) AudiencePackageGetV2Api() *api.AudiencePackageGetV2ApiService {
-	return c.ApiClient.AudiencePackageGetV2Api
 }
 
 func (c *Client) AudiencePackageGetV30Api() *api.AudiencePackageGetV30ApiService {
@@ -363,6 +371,10 @@ func (c *Client) BrandCampaignGetV30Api() *api.BrandCampaignGetV30ApiService {
 	return c.ApiClient.BrandCampaignGetV30Api
 }
 
+func (c *Client) BrandCampaignListV30Api() *api.BrandCampaignListV30ApiService {
+	return c.ApiClient.BrandCampaignListV30Api
+}
+
 func (c *Client) BrandCampaignOperateV30Api() *api.BrandCampaignOperateV30ApiService {
 	return c.ApiClient.BrandCampaignOperateV30Api
 }
@@ -385,6 +397,14 @@ func (c *Client) BrandCreativeUpdateV30Api() *api.BrandCreativeUpdateV30ApiServi
 
 func (c *Client) BrandFileVideoUploadV30Api() *api.BrandFileVideoUploadV30ApiService {
 	return c.ApiClient.BrandFileVideoUploadV30Api
+}
+
+func (c *Client) BrandMaterialListV30Api() *api.BrandMaterialListV30ApiService {
+	return c.ApiClient.BrandMaterialListV30Api
+}
+
+func (c *Client) BrandOrderListV30Api() *api.BrandOrderListV30ApiService {
+	return c.ApiClient.BrandOrderListV30Api
 }
 
 func (c *Client) BrandQueryStockV30Api() *api.BrandQueryStockV30ApiService {
@@ -475,6 +495,14 @@ func (c *Client) CdpBrandGetV30Api() *api.CdpBrandGetV30ApiService {
 	return c.ApiClient.CdpBrandGetV30Api
 }
 
+func (c *Client) CgTransferCanTransferBalanceGetV30Api() *api.CgTransferCanTransferBalanceGetV30ApiService {
+	return c.ApiClient.CgTransferCanTransferBalanceGetV30Api
+}
+
+func (c *Client) CgTransferCanTransferTargetListV30Api() *api.CgTransferCanTransferTargetListV30ApiService {
+	return c.ApiClient.CgTransferCanTransferTargetListV30Api
+}
+
 func (c *Client) CgTransferCreateTransferV30Api() *api.CgTransferCreateTransferV30ApiService {
 	return c.ApiClient.CgTransferCreateTransferV30Api
 }
@@ -489,6 +517,18 @@ func (c *Client) CgTransferQueryTransferBalanceV30Api() *api.CgTransferQueryTran
 
 func (c *Client) CgTransferQueryTransferDetailV30Api() *api.CgTransferQueryTransferDetailV30ApiService {
 	return c.ApiClient.CgTransferQueryTransferDetailV30Api
+}
+
+func (c *Client) CgTransferTransferBalanceGetV30Api() *api.CgTransferTransferBalanceGetV30ApiService {
+	return c.ApiClient.CgTransferTransferBalanceGetV30Api
+}
+
+func (c *Client) CgTransferTransferCreateV30Api() *api.CgTransferTransferCreateV30ApiService {
+	return c.ApiClient.CgTransferTransferCreateV30Api
+}
+
+func (c *Client) CgTransferTransferDetailGetV30Api() *api.CgTransferTransferDetailGetV30ApiService {
+	return c.ApiClient.CgTransferTransferDetailGetV30Api
 }
 
 func (c *Client) CgTransferWalletTransferCanTransferBalanceV30Api() *api.CgTransferWalletTransferCanTransferBalanceV30ApiService {
@@ -1439,6 +1479,10 @@ func (c *Client) QianchuanAdMaterialGetV10Api() *api.QianchuanAdMaterialGetV10Ap
 	return c.ApiClient.QianchuanAdMaterialGetV10Api
 }
 
+func (c *Client) QianchuanAdMaterialSuggestionV10Api() *api.QianchuanAdMaterialSuggestionV10ApiService {
+	return c.ApiClient.QianchuanAdMaterialSuggestionV10Api
+}
+
 func (c *Client) QianchuanAdPivativewordsGetV10Api() *api.QianchuanAdPivativewordsGetV10ApiService {
 	return c.ApiClient.QianchuanAdPivativewordsGetV10Api
 }
@@ -1669,6 +1713,10 @@ func (c *Client) QianchuanKeywordPackageGetV10Api() *api.QianchuanKeywordPackage
 
 func (c *Client) QianchuanLqAdGetV10Api() *api.QianchuanLqAdGetV10ApiService {
 	return c.ApiClient.QianchuanLqAdGetV10Api
+}
+
+func (c *Client) QianchuanMaterialAdGetV10Api() *api.QianchuanMaterialAdGetV10ApiService {
+	return c.ApiClient.QianchuanMaterialAdGetV10Api
 }
 
 func (c *Client) QianchuanMaterialGetV10Api() *api.QianchuanMaterialGetV10ApiService {
@@ -1983,12 +2031,20 @@ func (c *Client) ReportBrandAdvertiserGetV30Api() *api.ReportBrandAdvertiserGetV
 	return c.ApiClient.ReportBrandAdvertiserGetV30Api
 }
 
+func (c *Client) ReportBrandAgentDataV30Api() *api.ReportBrandAgentDataV30ApiService {
+	return c.ApiClient.ReportBrandAgentDataV30Api
+}
+
 func (c *Client) ReportBrandCampaignGetV30Api() *api.ReportBrandCampaignGetV30ApiService {
 	return c.ApiClient.ReportBrandCampaignGetV30Api
 }
 
 func (c *Client) ReportBrandCreativeGetV30Api() *api.ReportBrandCreativeGetV30ApiService {
 	return c.ApiClient.ReportBrandCreativeGetV30Api
+}
+
+func (c *Client) ReportBrandDataV30Api() *api.ReportBrandDataV30ApiService {
+	return c.ApiClient.ReportBrandDataV30Api
 }
 
 func (c *Client) ReportCampaignGetV2Api() *api.ReportCampaignGetV2ApiService {

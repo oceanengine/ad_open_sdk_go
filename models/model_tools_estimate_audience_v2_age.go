@@ -17,10 +17,10 @@ type ToolsEstimateAudienceV2Age string
 const (
 	AGE_BETWEEN_31_40_ToolsEstimateAudienceV2Age ToolsEstimateAudienceV2Age = "AGE_BETWEEN_31_40"
 	AGE_BETWEEN_41_49_ToolsEstimateAudienceV2Age ToolsEstimateAudienceV2Age = "AGE_BETWEEN_41_49"
-	AGE_BETWEEN_18_23_ToolsEstimateAudienceV2Age ToolsEstimateAudienceV2Age = "AGE_BETWEEN_18_23"
-	AGE_BELOW_18_ToolsEstimateAudienceV2Age      ToolsEstimateAudienceV2Age = "AGE_BELOW_18"
 	AGE_ABOVE_50_ToolsEstimateAudienceV2Age      ToolsEstimateAudienceV2Age = "AGE_ABOVE_50"
+	AGE_BETWEEN_18_23_ToolsEstimateAudienceV2Age ToolsEstimateAudienceV2Age = "AGE_BETWEEN_18_23"
 	AGE_BETWEEN_24_30_ToolsEstimateAudienceV2Age ToolsEstimateAudienceV2Age = "AGE_BETWEEN_24_30"
+	AGE_BELOW_18_ToolsEstimateAudienceV2Age      ToolsEstimateAudienceV2Age = "AGE_BELOW_18"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_age value

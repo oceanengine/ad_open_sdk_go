@@ -13,7 +13,11 @@ package models
 // StardeliveryTaskListV30ResponseDataListInner struct for StardeliveryTaskListV30ResponseDataListInner
 type StardeliveryTaskListV30ResponseDataListInner struct {
 	//
+	StarAccountName *string `json:"star_account_name,omitempty"`
+	//
 	StarAdCostDivideRatio *float64 `json:"star_ad_cost_divide_ratio,omitempty"`
+	//
+	StarId *int64 `json:"star_id,omitempty"`
 	//
 	StarMaterialBid *float64 `json:"star_material_bid,omitempty"`
 	//
@@ -27,8 +31,12 @@ type StardeliveryTaskListV30ResponseDataListInner struct {
 	//
 	StarPendingConfirmCount *int64 `json:"star_pending_confirm_count,omitempty"`
 	//
-	StarSaleCostEndTime *string                                            `json:"star_sale_cost_end_time,omitempty"`
-	StarTaskAnchorType  *StardeliveryTaskListV30DataListStarTaskAnchorType `json:"star_task_anchor_type,omitempty"`
+	StarSaleCostEndTime *string `json:"star_sale_cost_end_time,omitempty"`
+	//
+	StarTaskAlbumId *int64 `json:"star_task_album_id,omitempty"`
+	//
+	StarTaskAlbumName  *string                                            `json:"star_task_album_name,omitempty"`
+	StarTaskAnchorType *StardeliveryTaskListV30DataListStarTaskAnchorType `json:"star_task_anchor_type,omitempty"`
 	//
 	StarTaskBid *float64 `json:"star_task_bid,omitempty"`
 	//

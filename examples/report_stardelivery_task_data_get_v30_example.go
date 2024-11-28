@@ -23,14 +23,15 @@ import (
 )
 
 type ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequestExample struct {
-	AdvertiserId int64                                     `json:"advertiser_id"`
-	StartDate    string                                    `json:"start_date"`
-	EndDate      string                                    `json:"end_date"`
-	Filtering    ReportStardeliveryTaskDataGetV30Filtering `json:"filtering,omitempty"`
-	OrderField   string                                    `json:"order_field,omitempty"`
-	OrderType    ReportStardeliveryTaskDataGetV30OrderType `json:"order_type,omitempty"`
-	Page         int32                                     `json:"page,omitempty"`
-	PageSize     int32                                     `json:"page_size,omitempty"`
+	AdvertiserId    int64                                     `json:"advertiser_id"`
+	StartDate       string                                    `json:"start_date"`
+	EndDate         string                                    `json:"end_date"`
+	StarTaskVersion string                                    `json:"star_task_version,omitempty"`
+	Filtering       ReportStardeliveryTaskDataGetV30Filtering `json:"filtering,omitempty"`
+	OrderField      string                                    `json:"order_field,omitempty"`
+	OrderType       ReportStardeliveryTaskDataGetV30OrderType `json:"order_type,omitempty"`
+	Page            int32                                     `json:"page,omitempty"`
+	PageSize        int32                                     `json:"page_size,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/report/stardelivery/task_data/get/ Get
@@ -52,7 +53,7 @@ func main() {
 	resp, httpRes, err := apiClient.ReportStardeliveryTaskDataGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).StartDate(request.StartDate).EndDate(request.EndDate).Filtering(request.Filtering).OrderField(request.OrderField).OrderType(request.OrderType).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).StartDate(request.StartDate).EndDate(request.EndDate).StarTaskVersion(request.StarTaskVersion).Filtering(request.Filtering).OrderField(request.OrderField).OrderType(request.OrderType).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)
