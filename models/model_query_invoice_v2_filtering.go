@@ -12,10 +12,27 @@ package models
 
 // QueryInvoiceV2Filtering
 type QueryInvoiceV2Filtering struct {
+	// 合同编号
+	ContractSerial    *string                                   `json:"contract_serial,omitempty"`
+	DifferenceInvoice *QueryInvoiceV2FilteringDifferenceInvoice `json:"difference_invoice,omitempty"`
+	// 实际开票时间范围结束时间，格式：%Y-%m-%d
+	InvoiceEndDate *string `json:"invoice_end_date,omitempty"`
+	// 开票单编号
+	InvoiceSerialList []string `json:"invoice_serial_list,omitempty"`
+	// 实际开票时间范围开始时间，格式：%Y-%m-%d
+	InvoiceStartDate *string `json:"invoice_start_date,omitempty"`
 	//
-	InvoiceStatuses []int64 `json:"invoice_statuses,omitempty"`
+	InvoiceStatuses []int64                             `json:"invoice_statuses,omitempty"`
+	InvoiceType     *QueryInvoiceV2FilteringInvoiceType `json:"invoice_type,omitempty"`
+	Platform        *QueryInvoiceV2FilteringPlatform    `json:"platform,omitempty"`
 	//
 	ProjectSerials []string `json:"project_serials,omitempty"`
+	// 红冲状态
+	RevertStatusList []*QueryInvoiceV2FilteringRevertStatusList `json:"revert_status_list,omitempty"`
 	//
 	StatementSerials []string `json:"statement_serials,omitempty"`
+	// 提交审批时间范围结束时间，格式：%Y-%m-%d %H:%M:%S
+	SubmitEndTime *string `json:"submit_end_time,omitempty"`
+	// 提交审批时间范围开始时间，格式：%Y-%m-%d %H:%M:%S
+	SubmitStartTime *string `json:"submit_start_time,omitempty"`
 }

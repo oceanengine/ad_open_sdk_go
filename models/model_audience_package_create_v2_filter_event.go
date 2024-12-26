@@ -15,9 +15,9 @@ type AudiencePackageCreateV2FilterEvent string
 
 // List of audience_package_create_v2_filter_event
 const (
-	AD_CONVERT_EXTERNAL_ACTION_AudiencePackageCreateV2FilterEvent      AudiencePackageCreateV2FilterEvent = "AD_CONVERT_EXTERNAL_ACTION"
-	AD_CONVERT_TYPE_ACTIVE_AudiencePackageCreateV2FilterEvent          AudiencePackageCreateV2FilterEvent = "AD_CONVERT_TYPE_ACTIVE"
 	AD_CONVERT_TYPE_ACTIVE_REGISTER_AudiencePackageCreateV2FilterEvent AudiencePackageCreateV2FilterEvent = "AD_CONVERT_TYPE_ACTIVE_REGISTER"
+	AD_CONVERT_TYPE_ACTIVE_AudiencePackageCreateV2FilterEvent          AudiencePackageCreateV2FilterEvent = "AD_CONVERT_TYPE_ACTIVE"
+	AD_CONVERT_EXTERNAL_ACTION_AudiencePackageCreateV2FilterEvent      AudiencePackageCreateV2FilterEvent = "AD_CONVERT_EXTERNAL_ACTION"
 	AD_CONVERT_TYPE_PAY_AudiencePackageCreateV2FilterEvent             AudiencePackageCreateV2FilterEvent = "AD_CONVERT_TYPE_PAY"
 )
 

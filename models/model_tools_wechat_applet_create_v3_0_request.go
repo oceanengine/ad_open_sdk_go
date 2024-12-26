@@ -52,7 +52,7 @@ type ToolsWechatAppletCreateV30Request struct {
 	RemarkMessage *string                                 `json:"remark_message,omitempty"`
 	RevenueModel  *ToolsWechatAppletCreateV30RevenueModel `json:"revenue_model,omitempty"`
 	//
-	TagInfo *string `json:"tag_info,omitempty"`
+	TagInfo string `json:"tag_info"`
 	//
 	UserName string `json:"user_name"`
 }

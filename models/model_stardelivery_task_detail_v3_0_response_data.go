@@ -15,11 +15,13 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	// 任务内推广的Android应用包名
 	AndroidAppPackageName *string `json:"android_app_package_name,omitempty"`
 	// 任务内推广的Android应用链接
-	AndroidDownloadUrl *string `json:"android_download_url,omitempty"`
+	AndroidDownloadUrl *string                                                `json:"android_download_url,omitempty"`
+	AudienceSettings   *StardeliveryTaskDetailV30ResponseDataAudienceSettings `json:"audience_settings,omitempty"`
 	//
 	AuthorSubmitFrequency *int32 `json:"author_submit_frequency,omitempty"`
 	// 达人侧任务名称，1-50个字符，达人浏览任务时会看到此名称
-	AuthorTaskName *string `json:"author_task_name,omitempty"`
+	AuthorTaskName *string                                 `json:"author_task_name,omitempty"`
+	BriefType      *StardeliveryTaskDetailV30DataBriefType `json:"brief_type,omitempty"`
 	// 一级行业分类ID
 	FirstIndustryId *int64 `json:"first_industry_id,omitempty"`
 	// 一级行业分类Name
@@ -35,7 +37,8 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	// 任务所选锚点关联的小程序/小游戏名称
 	MicroAppName *string `json:"micro_app_name,omitempty"`
 	// 微信小程序/小游戏路径参数
-	MicroAppPath *string `json:"micro_app_path,omitempty"`
+	MicroAppPath                  *string                                                             `json:"micro_app_path,omitempty"`
+	ProductAdditionalIntroduction *StardeliveryTaskDetailV30ResponseDataProductAdditionalIntroduction `json:"product_additional_introduction,omitempty"`
 	// 产品介绍，1-1000个字符，介绍中出现数据、专利/奖项、影视片段、明星/网红、活动等信息
 	ProductIntroduction *string `json:"product_introduction,omitempty"`
 	// 产品名称，1-40个字符，任务推广的产品名称

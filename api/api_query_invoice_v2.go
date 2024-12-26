@@ -42,11 +42,13 @@ func (r *ApiOpenApi2QueryInvoiceGetRequest) Filtering(filtering QueryInvoiceV2Fi
 	return r
 }
 
+// 每页数量 最多100
 func (r *ApiOpenApi2QueryInvoiceGetRequest) PageSize(pageSize int32) *ApiOpenApi2QueryInvoiceGetRequest {
 	r.pageSize = &pageSize
 	return r
 }
 
+// 页码
 func (r *ApiOpenApi2QueryInvoiceGetRequest) Page(page int64) *ApiOpenApi2QueryInvoiceGetRequest {
 	r.page = &page
 	return r

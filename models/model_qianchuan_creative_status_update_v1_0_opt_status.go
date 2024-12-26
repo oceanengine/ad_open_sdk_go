@@ -15,9 +15,9 @@ type QianchuanCreativeStatusUpdateV10OptStatus string
 
 // List of qianchuan_creative_status_update_v1.0_opt_status
 const (
-	DISABLE_QianchuanCreativeStatusUpdateV10OptStatus QianchuanCreativeStatusUpdateV10OptStatus = "DISABLE"
-	ENABLE_QianchuanCreativeStatusUpdateV10OptStatus  QianchuanCreativeStatusUpdateV10OptStatus = "ENABLE"
 	DELETE_QianchuanCreativeStatusUpdateV10OptStatus  QianchuanCreativeStatusUpdateV10OptStatus = "DELETE"
+	ENABLE_QianchuanCreativeStatusUpdateV10OptStatus  QianchuanCreativeStatusUpdateV10OptStatus = "ENABLE"
+	DISABLE_QianchuanCreativeStatusUpdateV10OptStatus QianchuanCreativeStatusUpdateV10OptStatus = "DISABLE"
 	REVIVE_QianchuanCreativeStatusUpdateV10OptStatus  QianchuanCreativeStatusUpdateV10OptStatus = "REVIVE"
 )
 

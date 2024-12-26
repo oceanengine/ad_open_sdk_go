@@ -42,11 +42,13 @@ func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) RoomId(roomId int
 	return r
 }
 
+// 行为事件 第二个单选
 func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) ActionEvent(actionEvent QianchuanTodayLiveRoomUserGetV10ActionEvent) *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest {
 	r.actionEvent = &actionEvent
 	return r
 }
 
+// 用户分布类型，传入一个数组
 func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) Dimension(dimension []*QianchuanTodayLiveRoomUserGetV10Dimension) *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest {
 	r.dimension = &dimension
 	return r

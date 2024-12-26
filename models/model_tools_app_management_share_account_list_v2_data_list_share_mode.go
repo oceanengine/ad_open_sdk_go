@@ -15,9 +15,9 @@ type ToolsAppManagementShareAccountListV2DataListShareMode string
 
 // List of tools_app_management_share_account_list_v2_data_list_share_mode
 const (
-	PART_ToolsAppManagementShareAccountListV2DataListShareMode    ToolsAppManagementShareAccountListV2DataListShareMode = "PART"
-	ALL_ToolsAppManagementShareAccountListV2DataListShareMode     ToolsAppManagementShareAccountListV2DataListShareMode = "ALL"
 	COMPANY_ToolsAppManagementShareAccountListV2DataListShareMode ToolsAppManagementShareAccountListV2DataListShareMode = "COMPANY"
+	ALL_ToolsAppManagementShareAccountListV2DataListShareMode     ToolsAppManagementShareAccountListV2DataListShareMode = "ALL"
+	PART_ToolsAppManagementShareAccountListV2DataListShareMode    ToolsAppManagementShareAccountListV2DataListShareMode = "PART"
 )
 
 // Ptr returns reference to tools_app_management_share_account_list_v2_data_list_share_mode value

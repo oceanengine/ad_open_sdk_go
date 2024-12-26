@@ -82,7 +82,7 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner struct {
 	// 撮合中介已发放佣金(和mcn_amount类似)，单位为厘（元*1000）
 	ServiceProviderAmount *int64 `json:"service_provider_amount,omitempty"`
 	// 结算时间
-	SettleTime *string `json:"settle_time,omitempty"`
+	SettleTime *int64 `json:"settle_time,omitempty"`
 	// MCN和达人可获得部分的预估流水，单位为厘（元*1000）
 	SharePrice *int64 `json:"share_price,omitempty"`
 	//

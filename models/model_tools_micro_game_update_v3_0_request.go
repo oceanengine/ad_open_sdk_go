@@ -13,14 +13,14 @@ package models
 // ToolsMicroGameUpdateV30Request struct for ToolsMicroGameUpdateV30Request
 type ToolsMicroGameUpdateV30Request struct {
 	//
-	AdvertiserId int64                            `json:"advertiser_id"`
-	AgeLimit     *ToolsMicroGameUpdateV30AgeLimit `json:"age_limit,omitempty"`
+	AdvertiserId int64                           `json:"advertiser_id"`
+	AgeLimit     ToolsMicroGameUpdateV30AgeLimit `json:"age_limit"`
 	//
-	ArtStyle *string `json:"art_style,omitempty"`
+	ArtStyle string `json:"art_style"`
 	//
 	DiscountRate *int64 `json:"discount_rate,omitempty"`
 	//
-	FeatureTags []string `json:"feature_tags,omitempty"`
+	FeatureTags []string `json:"feature_tags"`
 	//
 	GameLink []*ToolsMicroGameUpdateV30RequestGameLinkInner `json:"game_link"`
 	//
@@ -30,19 +30,19 @@ type ToolsMicroGameUpdateV30Request struct {
 	//
 	InstanceId int64 `json:"instance_id"`
 	//
-	Introduction        *string                                     `json:"introduction,omitempty"`
+	Introduction        string                                      `json:"introduction"`
 	MaxPaymentTierRange *ToolsMicroGameUpdateV30MaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`
 	MidPaymentTierRange *ToolsMicroGameUpdateV30MidPaymentTierRange `json:"mid_payment_tier_range,omitempty"`
 	MinPaymentTierRange *ToolsMicroGameUpdateV30MinPaymentTierRange `json:"min_payment_tier_range,omitempty"`
 	//
-	NetworkEnvironment []string `json:"network_environment,omitempty"`
+	NetworkEnvironment []string `json:"network_environment"`
 	//
-	Remark       *string                              `json:"remark,omitempty"`
-	RevenueModel *ToolsMicroGameUpdateV30RevenueModel `json:"revenue_model,omitempty"`
+	Remark       *string                             `json:"remark,omitempty"`
+	RevenueModel ToolsMicroGameUpdateV30RevenueModel `json:"revenue_model"`
 	//
 	ScheduleCards []*ToolsMicroGameUpdateV30ScheduleCards `json:"schedule_cards,omitempty"`
 	//
-	TagInfo *string `json:"tag_info,omitempty"`
+	TagInfo string `json:"tag_info"`
 	//
-	ThemeTag *string `json:"theme_tag,omitempty"`
+	ThemeTag string `json:"theme_tag"`
 }

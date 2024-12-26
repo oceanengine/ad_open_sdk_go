@@ -15,21 +15,21 @@ type ReportCreativeGetV2DataListInventory string
 
 // List of report_creative_get_v2_data_list_inventory
 const (
-	UNION_BOUTIQUE_GAME_ReportCreativeGetV2DataListInventory    ReportCreativeGetV2DataListInventory = "UNION_BOUTIQUE_GAME"
-	INVENTORY_VIDEO_FEED_ReportCreativeGetV2DataListInventory   ReportCreativeGetV2DataListInventory = "INVENTORY_VIDEO_FEED"
 	INVENTORY_STUDY_ReportCreativeGetV2DataListInventory        ReportCreativeGetV2DataListInventory = "INVENTORY_STUDY"
-	INVENTORY_UNIVERSAL_ReportCreativeGetV2DataListInventory    ReportCreativeGetV2DataListInventory = "INVENTORY_UNIVERSAL"
-	INVENTORY_PIPIXIA_ReportCreativeGetV2DataListInventory      ReportCreativeGetV2DataListInventory = "INVENTORY_PIPIXIA"
-	INVENTORY_FACE_U_ReportCreativeGetV2DataListInventory       ReportCreativeGetV2DataListInventory = "INVENTORY_FACE_U"
-	INVENTORY_FURNISH_ReportCreativeGetV2DataListInventory      ReportCreativeGetV2DataListInventory = "INVENTORY_FURNISH"
-	INVENTORY_TOMATO_NOVEL_ReportCreativeGetV2DataListInventory ReportCreativeGetV2DataListInventory = "INVENTORY_TOMATO_NOVEL"
-	INVENTORY_BEAUTY_ReportCreativeGetV2DataListInventory       ReportCreativeGetV2DataListInventory = "INVENTORY_BEAUTY"
-	INVENTORY_AUTOMOBILE_ReportCreativeGetV2DataListInventory   ReportCreativeGetV2DataListInventory = "INVENTORY_AUTOMOBILE"
 	INVENTORY_HOTSOON_FEED_ReportCreativeGetV2DataListInventory ReportCreativeGetV2DataListInventory = "INVENTORY_HOTSOON_FEED"
-	INVENTORY_FEED_ReportCreativeGetV2DataListInventory         ReportCreativeGetV2DataListInventory = "INVENTORY_FEED"
-	INVENTORY_UNION_SLOT_ReportCreativeGetV2DataListInventory   ReportCreativeGetV2DataListInventory = "INVENTORY_UNION_SLOT"
 	INVENTORY_AWEME_FEED_ReportCreativeGetV2DataListInventory   ReportCreativeGetV2DataListInventory = "INVENTORY_AWEME_FEED"
+	INVENTORY_VIDEO_FEED_ReportCreativeGetV2DataListInventory   ReportCreativeGetV2DataListInventory = "INVENTORY_VIDEO_FEED"
+	INVENTORY_UNIVERSAL_ReportCreativeGetV2DataListInventory    ReportCreativeGetV2DataListInventory = "INVENTORY_UNIVERSAL"
+	INVENTORY_FACE_U_ReportCreativeGetV2DataListInventory       ReportCreativeGetV2DataListInventory = "INVENTORY_FACE_U"
+	INVENTORY_TOMATO_NOVEL_ReportCreativeGetV2DataListInventory ReportCreativeGetV2DataListInventory = "INVENTORY_TOMATO_NOVEL"
 	INVENTORY_SEARCH_ReportCreativeGetV2DataListInventory       ReportCreativeGetV2DataListInventory = "INVENTORY_SEARCH"
+	INVENTORY_PIPIXIA_ReportCreativeGetV2DataListInventory      ReportCreativeGetV2DataListInventory = "INVENTORY_PIPIXIA"
+	INVENTORY_FEED_ReportCreativeGetV2DataListInventory         ReportCreativeGetV2DataListInventory = "INVENTORY_FEED"
+	UNION_BOUTIQUE_GAME_ReportCreativeGetV2DataListInventory    ReportCreativeGetV2DataListInventory = "UNION_BOUTIQUE_GAME"
+	INVENTORY_AUTOMOBILE_ReportCreativeGetV2DataListInventory   ReportCreativeGetV2DataListInventory = "INVENTORY_AUTOMOBILE"
+	INVENTORY_UNION_SLOT_ReportCreativeGetV2DataListInventory   ReportCreativeGetV2DataListInventory = "INVENTORY_UNION_SLOT"
+	INVENTORY_BEAUTY_ReportCreativeGetV2DataListInventory       ReportCreativeGetV2DataListInventory = "INVENTORY_BEAUTY"
+	INVENTORY_FURNISH_ReportCreativeGetV2DataListInventory      ReportCreativeGetV2DataListInventory = "INVENTORY_FURNISH"
 )
 
 // Ptr returns reference to report_creative_get_v2_data_list_inventory value

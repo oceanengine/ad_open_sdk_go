@@ -50,7 +50,7 @@ func (r *ApiOpenApi2StarDemandOmGetChallengeItemsDataGetRequest) Page(page int32
 	return r
 }
 
-// limit  小于100
+// limit  小于30
 func (r *ApiOpenApi2StarDemandOmGetChallengeItemsDataGetRequest) Limit(limit int32) *ApiOpenApi2StarDemandOmGetChallengeItemsDataGetRequest {
 	r.limit = &limit
 	return r
@@ -126,8 +126,8 @@ func (a *StarDemandOmGetChallengeItemsDataV2ApiService) getExecute(r *ApiOpenApi
 	if *r.limit < 0 {
 		return localVarReturnValue, nil, ReportError("limit must be greater than 0")
 	}
-	if *r.limit > 100 {
-		return localVarReturnValue, nil, ReportError("limit must be less than 100")
+	if *r.limit > 30 {
+		return localVarReturnValue, nil, ReportError("limit must be less than 30")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "star_id", r.starId)

@@ -18,8 +18,12 @@ type StardeliveryTaskDetailV30ResponseDataStarTaskMaterialsRequirements struct {
 	OnCameraRequirement *string `json:"on_camera_requirement,omitempty"`
 	//
 	OtherRequirements []string `json:"other_requirements,omitempty"`
+	//
+	RedLine *string `json:"red_line,omitempty"`
 	// 示例视频id，最多可添加3个
 	SampleMaterialIds []string `json:"sample_material_ids,omitempty"`
+	//
+	SampleMaterialInfo *string `json:"sample_material_info,omitempty"`
 	// 示例视频url，最多可添加3个，需要输入抖音视频链接并确保该视频为在线状态 （如 https://www.douyin.com/video/xxx）
 	SampleVideoUrls []string `json:"sample_video_urls,omitempty"`
 	// 要@ 的抖音号，抖音用户个人主页抖音昵称下方可找到
@@ -29,6 +33,8 @@ type StardeliveryTaskDetailV30ResponseDataStarTaskMaterialsRequirements struct {
 	//
 	TitleSpecifiesTopicIds []int64                                                                  `json:"title_specifies_topic_ids,omitempty"`
 	VideoReviewer          *StardeliveryTaskDetailV30DataStarTaskMaterialsRequirementsVideoReviewer `json:"video_reviewer,omitempty"`
+	//
+	VideoStandards *string `json:"video_standards,omitempty"`
 	// 口播要求，1-80个字符，例如口播介绍指定文字、品牌、slogan、商品卖点，是否添加口播字幕等
 	VoRequirement *string `json:"vo_requirement,omitempty"`
 }

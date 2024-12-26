@@ -13,8 +13,9 @@ package models
 // QianchuanUniPromotionAdDetailV10ResponseDataProgrammaticCreativeMediaListVideoMaterialInner struct for QianchuanUniPromotionAdDetailV10ResponseDataProgrammaticCreativeMediaListVideoMaterialInner
 type QianchuanUniPromotionAdDetailV10ResponseDataProgrammaticCreativeMediaListVideoMaterialInner struct {
 	//
-	AwemeItemId *int64                                                                                   `json:"aweme_item_id,omitempty"`
-	ImageMode   *QianchuanUniPromotionAdDetailV10DataProgrammaticCreativeMediaListVideoMaterialImageMode `json:"image_mode,omitempty"`
+	AwemeItemId *int64                                                                                     `json:"aweme_item_id,omitempty"`
+	ImageMode   *QianchuanUniPromotionAdDetailV10DataProgrammaticCreativeMediaListVideoMaterialImageMode   `json:"image_mode,omitempty"`
+	StarTraffic *QianchuanUniPromotionAdDetailV10DataProgrammaticCreativeMediaListVideoMaterialStarTraffic `json:"star_traffic,omitempty"`
 	//
 	VideoCoverId *string `json:"video_cover_id,omitempty"`
 	//

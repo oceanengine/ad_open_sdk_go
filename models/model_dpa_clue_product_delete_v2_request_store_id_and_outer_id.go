@@ -13,7 +13,7 @@ package models
 // DpaClueProductDeleteV2RequestStoreIdAndOuterId 通过店铺ID和商品外部ID删除
 type DpaClueProductDeleteV2RequestStoreIdAndOuterId struct {
 	// 商品外部ID
-	OuterId string `json:"outer_id"`
+	OuterId *string `json:"outer_id,omitempty"`
 	// 店铺ID
-	StoreId string `json:"store_id"`
+	StoreId *string `json:"store_id,omitempty"`
 }

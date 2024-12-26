@@ -15,8 +15,8 @@ type EnterpriseCommentListGetV10FilterLevel string
 
 // List of enterprise_comment_list_get_v1.0_filter_level
 const (
-	LEVEL_ALL_EnterpriseCommentListGetV10FilterLevel EnterpriseCommentListGetV10FilterLevel = "LEVEL_ALL"
 	LEVEL_ONE_EnterpriseCommentListGetV10FilterLevel EnterpriseCommentListGetV10FilterLevel = "LEVEL_ONE"
+	LEVEL_ALL_EnterpriseCommentListGetV10FilterLevel EnterpriseCommentListGetV10FilterLevel = "LEVEL_ALL"
 	LEVEL_TWO_EnterpriseCommentListGetV10FilterLevel EnterpriseCommentListGetV10FilterLevel = "LEVEL_TWO"
 )
 

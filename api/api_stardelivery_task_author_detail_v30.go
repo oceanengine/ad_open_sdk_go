@@ -29,6 +29,7 @@ type ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest struct {
 	starTaskId   *int64
 	page         *int64
 	pageSize     *int64
+	filtering    *StardeliveryTaskAuthorDetailV30Filtering
 }
 
 func (r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest {
@@ -48,6 +49,12 @@ func (r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) Page(page int64) *
 
 func (r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) PageSize(pageSize int64) *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+// 过滤器
+func (r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) Filtering(filtering StardeliveryTaskAuthorDetailV30Filtering) *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest {
+	r.filtering = &filtering
 	return r
 }
 
@@ -116,6 +123,9 @@ func (a *StardeliveryTaskAuthorDetailV30ApiService) getExecute(r *ApiOpenApiV30S
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
 	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "star_task_id", r.starTaskId)
+	if r.filtering != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

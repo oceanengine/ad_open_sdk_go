@@ -27,6 +27,10 @@ type StarDemandOmGetChallengeItemsDataV2ResponseDataDataListInner struct {
 	// 预估付费流水金额 预估付费流水、数据更新秒级时间戳，示例：{\"value\": 1, \"time\":1703606399}，其中value为视频播放量，time为数据更新秒级时间戳
 	EstSales *string `json:"est_sales,omitempty"`
 	//
+	IaaCostHour *int64 `json:"iaa_cost_hour,omitempty"`
+	//
+	IapCostHour *int64 `json:"iap_cost_hour,omitempty"`
+	//
 	IosActivateCnt *int64 `json:"ios_activate_cnt,omitempty"`
 	// 视频ID/图文ID
 	ItemId *int64 `json:"item_id,omitempty"`

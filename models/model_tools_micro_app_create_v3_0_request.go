@@ -37,5 +37,5 @@ type ToolsMicroAppCreateV30Request struct {
 	Remark       string                              `json:"remark"`
 	RevenueModel *ToolsMicroAppCreateV30RevenueModel `json:"revenue_model,omitempty"`
 	//
-	TagInfo *string `json:"tag_info,omitempty"`
+	TagInfo string `json:"tag_info"`
 }

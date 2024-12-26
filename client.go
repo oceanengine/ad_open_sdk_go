@@ -1,5 +1,5 @@
 /*
-API version: 1.1.30
+API version: 1.1.31
 */
 package ad_open_sdk_go
 
@@ -639,6 +639,10 @@ func (c *Client) ClueWechatPoolListV2Api() *api.ClueWechatPoolListV2ApiService {
 	return c.ApiClient.ClueWechatPoolListV2Api
 }
 
+func (c *Client) CreateProjectInvoiceV2Api() *api.CreateProjectInvoiceV2ApiService {
+	return c.ApiClient.CreateProjectInvoiceV2Api
+}
+
 func (c *Client) CreateStatementInvoiceV2Api() *api.CreateStatementInvoiceV2ApiService {
 	return c.ApiClient.CreateStatementInvoiceV2Api
 }
@@ -1051,6 +1055,18 @@ func (c *Client) FileQualitySubmitV30Api() *api.FileQualitySubmitV30ApiService {
 	return c.ApiClient.FileQualitySubmitV30Api
 }
 
+func (c *Client) FileRebateCommonDownloadCreateTaskV2Api() *api.FileRebateCommonDownloadCreateTaskV2ApiService {
+	return c.ApiClient.FileRebateCommonDownloadCreateTaskV2Api
+}
+
+func (c *Client) FileRebateCommonDownloadDownloadFileV2Api() *api.FileRebateCommonDownloadDownloadFileV2ApiService {
+	return c.ApiClient.FileRebateCommonDownloadDownloadFileV2Api
+}
+
+func (c *Client) FileRebateCommonDownloadGetDownloadTaskListV2Api() *api.FileRebateCommonDownloadGetDownloadTaskListV2ApiService {
+	return c.ApiClient.FileRebateCommonDownloadGetDownloadTaskListV2Api
+}
+
 func (c *Client) FileRebateMaterialDownloadCreateTaskV2Api() *api.FileRebateMaterialDownloadCreateTaskV2ApiService {
 	return c.ApiClient.FileRebateMaterialDownloadCreateTaskV2Api
 }
@@ -1179,6 +1195,46 @@ func (c *Client) LocalCustomAudienceGetV30Api() *api.LocalCustomAudienceGetV30Ap
 	return c.ApiClient.LocalCustomAudienceGetV30Api
 }
 
+func (c *Client) LocalCxtAudienceUpdateV30Api() *api.LocalCxtAudienceUpdateV30ApiService {
+	return c.ApiClient.LocalCxtAudienceUpdateV30Api
+}
+
+func (c *Client) LocalCxtBudgetUpdateV30Api() *api.LocalCxtBudgetUpdateV30ApiService {
+	return c.ApiClient.LocalCxtBudgetUpdateV30Api
+}
+
+func (c *Client) LocalCxtCreateV30Api() *api.LocalCxtCreateV30ApiService {
+	return c.ApiClient.LocalCxtCreateV30Api
+}
+
+func (c *Client) LocalCxtDetailV30Api() *api.LocalCxtDetailV30ApiService {
+	return c.ApiClient.LocalCxtDetailV30Api
+}
+
+func (c *Client) LocalCxtExternalActionUpdateV30Api() *api.LocalCxtExternalActionUpdateV30ApiService {
+	return c.ApiClient.LocalCxtExternalActionUpdateV30Api
+}
+
+func (c *Client) LocalCxtPoiUpdateV30Api() *api.LocalCxtPoiUpdateV30ApiService {
+	return c.ApiClient.LocalCxtPoiUpdateV30Api
+}
+
+func (c *Client) LocalCxtReportAudienceGetV30Api() *api.LocalCxtReportAudienceGetV30ApiService {
+	return c.ApiClient.LocalCxtReportAudienceGetV30Api
+}
+
+func (c *Client) LocalCxtReportBasicGetV30Api() *api.LocalCxtReportBasicGetV30ApiService {
+	return c.ApiClient.LocalCxtReportBasicGetV30Api
+}
+
+func (c *Client) LocalCxtReportConvertGetV30Api() *api.LocalCxtReportConvertGetV30ApiService {
+	return c.ApiClient.LocalCxtReportConvertGetV30Api
+}
+
+func (c *Client) LocalCxtStatusUpdateV30Api() *api.LocalCxtStatusUpdateV30ApiService {
+	return c.ApiClient.LocalCxtStatusUpdateV30Api
+}
+
 func (c *Client) LocalFileUploadTaskCreateV30Api() *api.LocalFileUploadTaskCreateV30ApiService {
 	return c.ApiClient.LocalFileUploadTaskCreateV30Api
 }
@@ -1197,6 +1253,14 @@ func (c *Client) LocalFileVideoUploadTaskListV30Api() *api.LocalFileVideoUploadT
 
 func (c *Client) LocalFileVideoUploadV30Api() *api.LocalFileVideoUploadV30ApiService {
 	return c.ApiClient.LocalFileVideoUploadV30Api
+}
+
+func (c *Client) LocalLifeAdvertiserCreateV30Api() *api.LocalLifeAdvertiserCreateV30ApiService {
+	return c.ApiClient.LocalLifeAdvertiserCreateV30Api
+}
+
+func (c *Client) LocalLifeAdvertiserListV30Api() *api.LocalLifeAdvertiserListV30ApiService {
+	return c.ApiClient.LocalLifeAdvertiserListV30Api
 }
 
 func (c *Client) LocalMultiPoiIdPoiIdsGetV30Api() *api.LocalMultiPoiIdPoiIdsGetV30ApiService {
@@ -1395,12 +1459,24 @@ func (c *Client) PromotionDeleteV30Api() *api.PromotionDeleteV30ApiService {
 	return c.ApiClient.PromotionDeleteV30Api
 }
 
+func (c *Client) PromotionEasyKeepDeliverySwitchUpdateV30Api() *api.PromotionEasyKeepDeliverySwitchUpdateV30ApiService {
+	return c.ApiClient.PromotionEasyKeepDeliverySwitchUpdateV30Api
+}
+
+func (c *Client) PromotionEasyUpdateV30Api() *api.PromotionEasyUpdateV30ApiService {
+	return c.ApiClient.PromotionEasyUpdateV30Api
+}
+
 func (c *Client) PromotionListV30Api() *api.PromotionListV30ApiService {
 	return c.ApiClient.PromotionListV30Api
 }
 
 func (c *Client) PromotionMaterialDeleteV30Api() *api.PromotionMaterialDeleteV30ApiService {
 	return c.ApiClient.PromotionMaterialDeleteV30Api
+}
+
+func (c *Client) PromotionNewcustomerCreateV30Api() *api.PromotionNewcustomerCreateV30ApiService {
+	return c.ApiClient.PromotionNewcustomerCreateV30Api
 }
 
 func (c *Client) PromotionRejectReasonGetV30Api() *api.PromotionRejectReasonGetV30ApiService {
@@ -1747,6 +1823,10 @@ func (c *Client) QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api() *api.Qia
 	return c.ApiClient.QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api
 }
 
+func (c *Client) QianchuanQianchuanVideoStarGetV10Api() *api.QianchuanQianchuanVideoStarGetV10ApiService {
+	return c.ApiClient.QianchuanQianchuanVideoStarGetV10Api
+}
+
 func (c *Client) QianchuanReportAdGetV10Api() *api.QianchuanReportAdGetV10ApiService {
 	return c.ApiClient.QianchuanReportAdGetV10Api
 }
@@ -1951,8 +2031,24 @@ func (c *Client) QueryBookingBusinessEntityIdGetV2Api() *api.QueryBookingBusines
 	return c.ApiClient.QueryBookingBusinessEntityIdGetV2Api
 }
 
+func (c *Client) QueryInvoiceDetailSelfV2Api() *api.QueryInvoiceDetailSelfV2ApiService {
+	return c.ApiClient.QueryInvoiceDetailSelfV2Api
+}
+
+func (c *Client) QueryInvoiceDetailV2Api() *api.QueryInvoiceDetailV2ApiService {
+	return c.ApiClient.QueryInvoiceDetailV2Api
+}
+
+func (c *Client) QueryInvoiceElectronicUrlSelfV2Api() *api.QueryInvoiceElectronicUrlSelfV2ApiService {
+	return c.ApiClient.QueryInvoiceElectronicUrlSelfV2Api
+}
+
 func (c *Client) QueryInvoiceElectronicUrlV2Api() *api.QueryInvoiceElectronicUrlV2ApiService {
 	return c.ApiClient.QueryInvoiceElectronicUrlV2Api
+}
+
+func (c *Client) QueryInvoiceSelfV2Api() *api.QueryInvoiceSelfV2ApiService {
+	return c.ApiClient.QueryInvoiceSelfV2Api
 }
 
 func (c *Client) QueryInvoiceTaxV2Api() *api.QueryInvoiceTaxV2ApiService {
@@ -2283,8 +2379,16 @@ func (c *Client) StarChallengePushItemsToAdV2Api() *api.StarChallengePushItemsTo
 	return c.ApiClient.StarChallengePushItemsToAdV2Api
 }
 
+func (c *Client) StarChallengeSyncItemToAdV2Api() *api.StarChallengeSyncItemToAdV2ApiService {
+	return c.ApiClient.StarChallengeSyncItemToAdV2Api
+}
+
 func (c *Client) StarClueGetV2Api() *api.StarClueGetV2ApiService {
 	return c.ApiClient.StarClueGetV2Api
+}
+
+func (c *Client) StarComponentCreateCommonComponentV2Api() *api.StarComponentCreateCommonComponentV2ApiService {
+	return c.ApiClient.StarComponentCreateCommonComponentV2Api
 }
 
 func (c *Client) StarComponentCreateLinkV2Api() *api.StarComponentCreateLinkV2ApiService {
@@ -2297,6 +2401,10 @@ func (c *Client) StarComponentQueryIndustryAnchorV2Api() *api.StarComponentQuery
 
 func (c *Client) StarComponentQueryLinkV2Api() *api.StarComponentQueryLinkV2ApiService {
 	return c.ApiClient.StarComponentQueryLinkV2Api
+}
+
+func (c *Client) StarComponentUpdateCommonComponentV2Api() *api.StarComponentUpdateCommonComponentV2ApiService {
+	return c.ApiClient.StarComponentUpdateCommonComponentV2Api
 }
 
 func (c *Client) StarComponentUpdateLinkV2Api() *api.StarComponentUpdateLinkV2ApiService {
@@ -2359,6 +2467,14 @@ func (c *Client) StarDemandSearchWordModifyV2Api() *api.StarDemandSearchWordModi
 	return c.ApiClient.StarDemandSearchWordModifyV2Api
 }
 
+func (c *Client) StarDemanderDemanderGetAuthorBindInfoV2Api() *api.StarDemanderDemanderGetAuthorBindInfoV2ApiService {
+	return c.ApiClient.StarDemanderDemanderGetAuthorBindInfoV2Api
+}
+
+func (c *Client) StarDemanderDemanderGetBindShareCodeV2Api() *api.StarDemanderDemanderGetBindShareCodeV2ApiService {
+	return c.ApiClient.StarDemanderDemanderGetBindShareCodeV2Api
+}
+
 func (c *Client) StarGetCreateChallengeDataDictV2Api() *api.StarGetCreateChallengeDataDictV2ApiService {
 	return c.ApiClient.StarGetCreateChallengeDataDictV2Api
 }
@@ -2397,6 +2513,10 @@ func (c *Client) StarMcnProviderGetParticipatedTaskV2Api() *api.StarMcnProviderG
 
 func (c *Client) StarMcnProviderGetTaskDetailV2Api() *api.StarMcnProviderGetTaskDetailV2ApiService {
 	return c.ApiClient.StarMcnProviderGetTaskDetailV2Api
+}
+
+func (c *Client) StarMcnProviderGetTaskShareCodeV2Api() *api.StarMcnProviderGetTaskShareCodeV2ApiService {
+	return c.ApiClient.StarMcnProviderGetTaskShareCodeV2Api
 }
 
 func (c *Client) StarMcnProviderGetUnparticipatedTaskV2Api() *api.StarMcnProviderGetUnparticipatedTaskV2ApiService {

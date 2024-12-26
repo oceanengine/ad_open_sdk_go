@@ -35,9 +35,10 @@ type AudiencePackageGetV30ResponseDataAudiencePackagesInner struct {
 	//
 	AwemeFanBehaviors []*AudiencePackageGetV30DataAudiencePackagesAwemeFanBehaviors `json:"aweme_fan_behaviors,omitempty"`
 	//
-	AwemeFanCategories []string `json:"aweme_fan_categories,omitempty"`
+	AwemeFanCategories []string                                                    `json:"aweme_fan_categories,omitempty"`
+	AwemeFanTimeScope  *AudiencePackageGetV30DataAudiencePackagesAwemeFanTimeScope `json:"aweme_fan_time_scope,omitempty"`
 	//
-	AwemeFanTimeScope *int64 `json:"aweme_fan_time_scope,omitempty"`
+	AwemeFansNumbers []int64 `json:"aweme_fans_numbers,omitempty"`
 	//
 	Carrier               []*AudiencePackageGetV30DataAudiencePackagesCarrier             `json:"carrier,omitempty"`
 	CarrierRegionOptimize *AudiencePackageGetV30DataAudiencePackagesCarrierRegionOptimize `json:"carrier_region_optimize,omitempty"`
@@ -58,6 +59,8 @@ type AudiencePackageGetV30ResponseDataAudiencePackagesInner struct {
 	FilterAwemeFansCount      *AudiencePackageGetV30DataAudiencePackagesFilterAwemeFansCount      `json:"filter_aweme_fans_count,omitempty"`
 	//
 	FilterEvent []*AudiencePackageGetV30DataAudiencePackagesFilterEvent `json:"filter_event,omitempty"`
+	//
+	FilterOwnAwemeFans *int64 `json:"filter_own_aweme_fans,omitempty"`
 	//
 	FlowPackage []int64                                          `json:"flow_package,omitempty"`
 	Gender      *AudiencePackageGetV30DataAudiencePackagesGender `json:"gender,omitempty"`

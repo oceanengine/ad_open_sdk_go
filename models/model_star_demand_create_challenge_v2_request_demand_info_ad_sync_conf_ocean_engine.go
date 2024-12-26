@@ -10,8 +10,20 @@ Oceanengine Open Api
 
 package models
 
-// StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfOceanEngine 产出物推送巨量引擎配置信息
+// StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfOceanEngine 巨量引擎AD
 type StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfOceanEngine struct {
+	// 是否推送原素材 1-推送 2-不推送
+	AdSync *int64 `json:"ad_sync,omitempty"`
+	// 是否投放原生视频0否1 是
+	AdSyncOrigin *int64 `json:"ad_sync_origin,omitempty"`
+	// 广告主id
+	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
+	// 是否自动投放 0-否 1-是
+	AutoSync *int64 `json:"auto_sync,omitempty"`
+	// 推广产品链接
+	ProductLink *string `json:"product_link,omitempty"`
+	// 推广产品图片链接
+	ProductPics []string `json:"product_pics,omitempty"`
 	// 期望投放时长（单位：天） 大于0的整数，默认30天
 	SyncDuration *int64 `json:"sync_duration,omitempty"`
 }

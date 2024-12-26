@@ -17,8 +17,12 @@ type SubscribeAccountsListV30ResponseDataAdvertisersInner struct {
 	//
 	CoreUserId int64 `json:"core_user_id"`
 	//
+	CreatedTime *string `json:"created_time,omitempty"`
+	//
 	Event *string `json:"event,omitempty"`
 	//
 	Reason *string                                        `json:"reason,omitempty"`
 	Status *SubscribeAccountsListV30DataAdvertisersStatus `json:"status,omitempty"`
+	//
+	UpdatedTime *string `json:"updated_time,omitempty"`
 }

@@ -14,7 +14,7 @@ package models
 type DpaClueProductDeleteV2Request struct {
 	// 广告主ID
 	AdvertiserId int64 `json:"advertiser_id"`
-	// 类目ID
-	CategoryId        int64                                           `json:"category_id"`
+	// 通过巨量商品ID删除
+	ProductIds        []int64                                         `json:"product_ids,omitempty"`
 	StoreIdAndOuterId *DpaClueProductDeleteV2RequestStoreIdAndOuterId `json:"store_id_and_outer_id,omitempty"`
 }

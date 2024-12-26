@@ -22,14 +22,16 @@ type StarOrderGetInfoV2ResponseDataOrderListInner struct {
 	// 组件点击检测链接
 	ComponentClickMonitorUrl *string `json:"component_click_monitor_url,omitempty"`
 	// 任务创建时间
-	CreateTime *int64 `json:"create_time,omitempty"`
+	CreateTime *int64                                                  `json:"create_time,omitempty"`
+	DemandInfo *StarOrderGetInfoV2ResponseDataOrderListInnerDemandInfo `json:"demand_info,omitempty"`
 	// 任务完结时间（如订单顺利完结即为验收时间）
 	FinishTime *int64 `json:"finish_time,omitempty"`
 	// 视频曝光检测链接
 	ItemShowMonitorUrl *string `json:"item_show_monitor_url,omitempty"`
 	// 任务ID
-	OrderId     *int64                                                   `json:"order_id,omitempty"`
-	PaymentInfo *StarOrderGetInfoV2ResponseDataOrderListInnerPaymentInfo `json:"payment_info,omitempty"`
+	OrderId       *int64                                                     `json:"order_id,omitempty"`
+	OrderItemInfo *StarOrderGetInfoV2ResponseDataOrderListInnerOrderItemInfo `json:"order_item_info,omitempty"`
+	PaymentInfo   *StarOrderGetInfoV2ResponseDataOrderListInnerPaymentInfo   `json:"payment_info,omitempty"`
 	// 视频发布时间
 	ReleaseTime *int64 `json:"release_time,omitempty"`
 	// 任务状态 待接收 = -1 达人已接单 = 1 已关闭 = 2 已完成 = 3 已取消 = 4 待付尾款 = 10 脚本已上传 = 41 脚本已拒绝 = 42 脚本已确认 = 43 脚本已跳过 = 44 视频已上传 = 51 视频已拒绝 = 52 视频已确认 = 53 视频已发布 = 54

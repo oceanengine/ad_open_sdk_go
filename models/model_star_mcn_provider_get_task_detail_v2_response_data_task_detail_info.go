@@ -67,8 +67,9 @@ type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo struct {
 	//
 	ProfitRateChannel *map[string]int64 `json:"profit_rate_channel,omitempty"`
 	//
-	SecondClassCategory *int64                                                                `json:"second_class_category,omitempty"`
-	SmallAppInfo        *StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoSmallAppInfo `json:"small_app_info,omitempty"`
+	SecondClassCategory         *int64                                                                               `json:"second_class_category,omitempty"`
+	SmallAppInfo                *StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoSmallAppInfo                `json:"small_app_info,omitempty"`
+	StarMicroGameUniteExtraInfo *StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoStarMicroGameUniteExtraInfo `json:"star_micro_game_unite_extra_info,omitempty"`
 	// 任务头图
 	TaskHeadImage *string `json:"task_head_image,omitempty"`
 	//

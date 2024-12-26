@@ -15,9 +15,9 @@ type KeywordUpdateV2V2DataErrorListMatchType string
 
 // List of keyword_update_v2_v2_data_error_list_match_type
 const (
-	PHRASE_KeywordUpdateV2V2DataErrorListMatchType    KeywordUpdateV2V2DataErrorListMatchType = "PHRASE"
-	PRECISION_KeywordUpdateV2V2DataErrorListMatchType KeywordUpdateV2V2DataErrorListMatchType = "PRECISION"
 	EXTENSIVE_KeywordUpdateV2V2DataErrorListMatchType KeywordUpdateV2V2DataErrorListMatchType = "EXTENSIVE"
+	PRECISION_KeywordUpdateV2V2DataErrorListMatchType KeywordUpdateV2V2DataErrorListMatchType = "PRECISION"
+	PHRASE_KeywordUpdateV2V2DataErrorListMatchType    KeywordUpdateV2V2DataErrorListMatchType = "PHRASE"
 )
 
 // Ptr returns reference to keyword_update_v2_v2_data_error_list_match_type value

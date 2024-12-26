@@ -12,6 +12,5 @@ package models
 
 // DpaClueProductDeleteV2ResponseData
 type DpaClueProductDeleteV2ResponseData struct {
-	//
-	Result *int64 `json:"result,omitempty"`
+	Data *DpaClueProductDeleteV2ResponseDataData `json:"data,omitempty"`
 }

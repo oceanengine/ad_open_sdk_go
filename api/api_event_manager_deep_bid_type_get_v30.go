@@ -33,6 +33,7 @@ type ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest struct {
 	deliveryMode       *EventManagerDeepBidTypeGetV30DeliveryMode
 	landingType        *EventManagerDeepBidTypeGetV30LandingType
 	adType             *EventManagerDeepBidTypeGetV30AdType
+	marketingGoal      *EventManagerDeepBidTypeGetV30MarketingGoal
 }
 
 // 广告主id
@@ -77,6 +78,11 @@ func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) LandingType(landingT
 
 func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) AdType(adType EventManagerDeepBidTypeGetV30AdType) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
 	r.adType = &adType
+	return r
+}
+
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) MarketingGoal(marketingGoal EventManagerDeepBidTypeGetV30MarketingGoal) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+	r.marketingGoal = &marketingGoal
 	return r
 }
 
@@ -159,6 +165,9 @@ func (a *EventManagerDeepBidTypeGetV30ApiService) getExecute(r *ApiOpenApiV30Eve
 	}
 	if r.adType != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "ad_type", r.adType)
+	}
+	if r.marketingGoal != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "marketing_goal", r.marketingGoal)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

@@ -18,6 +18,7 @@ const (
 	AGENT_ARRANGEMENT_AdvertiserDeliveryQualificationListV30DataListQualificationType                           AdvertiserDeliveryQualificationListV30DataListQualificationType = "AGENT_ARRANGEMENT"
 	AUTHORIZATION_CONTRACT_AdvertiserDeliveryQualificationListV30DataListQualificationType                      AdvertiserDeliveryQualificationListV30DataListQualificationType = "AUTHORIZATION_CONTRACT"
 	DISTRIBUTION_AUTHORIZATION_AdvertiserDeliveryQualificationListV30DataListQualificationType                  AdvertiserDeliveryQualificationListV30DataListQualificationType = "DISTRIBUTION_AUTHORIZATION"
+	FOOD_BUSINESS_LICENSE_AdvertiserDeliveryQualificationListV30DataListQualificationType                       AdvertiserDeliveryQualificationListV30DataListQualificationType = "FOOD_BUSINESS_LICENSE"
 	ICP_RECORD_AUTHORIZATION_AdvertiserDeliveryQualificationListV30DataListQualificationType                    AdvertiserDeliveryQualificationListV30DataListQualificationType = "ICP_RECORD_AUTHORIZATION"
 	OTHER_CERTIFICATION_AdvertiserDeliveryQualificationListV30DataListQualificationType                         AdvertiserDeliveryQualificationListV30DataListQualificationType = "OTHER_CERTIFICATION"
 	PATENT_CERTIFICATE_AdvertiserDeliveryQualificationListV30DataListQualificationType                          AdvertiserDeliveryQualificationListV30DataListQualificationType = "PATENT_CERTIFICATE"

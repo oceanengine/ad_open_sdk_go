@@ -15,8 +15,9 @@ type CgTransferCanTransferTargetListV30Platform string
 
 // List of cg_transfer_can_transfer_target_list_v3.0_platform
 const (
-	AD_CgTransferCanTransferTargetListV30Platform       CgTransferCanTransferTargetListV30Platform = "AD"
-	BENDITUI_CgTransferCanTransferTargetListV30Platform CgTransferCanTransferTargetListV30Platform = "BENDITUI"
+	AD_CgTransferCanTransferTargetListV30Platform        CgTransferCanTransferTargetListV30Platform = "AD"
+	BENDITUI_CgTransferCanTransferTargetListV30Platform  CgTransferCanTransferTargetListV30Platform = "BENDITUI"
+	QIANCHUAN_CgTransferCanTransferTargetListV30Platform CgTransferCanTransferTargetListV30Platform = "QIANCHUAN"
 )
 
 // Ptr returns reference to cg_transfer_can_transfer_target_list_v3.0_platform value

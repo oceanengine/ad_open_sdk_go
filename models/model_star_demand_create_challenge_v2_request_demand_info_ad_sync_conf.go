@@ -12,5 +12,7 @@ package models
 
 // StarDemandCreateChallengeV2RequestDemandInfoAdSyncConf 广告推送配置
 type StarDemandCreateChallengeV2RequestDemandInfoAdSyncConf struct {
-	OceanEngine *StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfOceanEngine `json:"ocean_engine,omitempty"`
+	DouPlus        *StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfDouPlus        `json:"dou_plus,omitempty"`
+	LocalPromotion *StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfLocalPromotion `json:"local_promotion,omitempty"`
+	OceanEngine    *StarDemandCreateChallengeV2RequestDemandInfoAdSyncConfOceanEngine    `json:"ocean_engine,omitempty"`
 }

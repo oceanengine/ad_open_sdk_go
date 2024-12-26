@@ -43,9 +43,7 @@ type ToolsAppManagementAndroidBasicPackageUpdateV2Request struct {
 	//
 	HasDiscount *bool `json:"has_discount,omitempty"`
 	//
-	HasOnlineEarning *bool `json:"has_online_earning,omitempty"`
-	// 分类id
-	IndustryId          string                                                            `json:"industry_id"`
+	HasOnlineEarning    *bool                                                             `json:"has_online_earning,omitempty"`
 	MaxPaymentTierRange *ToolsAppManagementAndroidBasicPackageUpdateV2MaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`
 	MaxRechargeTier     *ToolsAppManagementAndroidBasicPackageUpdateV2MaxRechargeTier     `json:"max_recharge_tier,omitempty"`
 	MembershipType      *ToolsAppManagementAndroidBasicPackageUpdateV2MembershipType      `json:"membership_type,omitempty"`
@@ -69,8 +67,6 @@ type ToolsAppManagementAndroidBasicPackageUpdateV2Request struct {
 	Spokesperson *string `json:"spokesperson,omitempty"`
 	// 应用题材标签id
 	ThemeTagId *string `json:"theme_tag_id,omitempty"`
-	//
-	ThemeTagTwoId *string `json:"theme_tag_two_id,omitempty"`
 	// 版本更新说明
 	UpdateDescription string `json:"update_description"`
 }

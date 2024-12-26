@@ -20,6 +20,8 @@ type StarDemandCreateChallengeV2RequestChallengeInfoSettlementInfo struct {
 	AutoAddBudgetTimes *int64 `json:"auto_add_budget_times,omitempty"`
 	// 预算自动追加节点 当消耗到x%时，允许平台自动追加预算 非负整数。为0则不启用自动追加预算，最大100
 	AutoAddBudgetTriggerRatio *int64 `json:"auto_add_budget_trigger_ratio,omitempty"`
+	// cps分佣比例
+	CommissionRate *int32 `json:"commission_rate,omitempty"`
 	// 考核指标 5=视频有效播放量 4=激活总数 10=安装完成数量 31=组件点击数 32=APP唤起 201=客户自定义
 	EvaluateType int64 `json:"evaluate_type"`
 	// iOS转化ID 有效的转化ID

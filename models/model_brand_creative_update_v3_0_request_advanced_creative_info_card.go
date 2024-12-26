@@ -15,6 +15,8 @@ type BrandCreativeUpdateV30RequestAdvancedCreativeInfoCard struct {
 	// 组件弹出时间
 	AdvancedDuration *int64                                                          `json:"advanced_duration,omitempty"`
 	ImageInfo        *BrandCreativeUpdateV30RequestAdvancedCreativeInfoCardImageInfo `json:"image_info,omitempty"`
+	// 引流直播抖音号
+	LiveAwemeId *string `json:"live_aweme_id,omitempty"`
 	// 搜索词数组
 	SearchWords []string `json:"search_words,omitempty"`
 }

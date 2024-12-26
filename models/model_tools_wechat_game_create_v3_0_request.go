@@ -15,20 +15,20 @@ type ToolsWechatGameCreateV30Request struct {
 	//
 	AccountId   int64                               `json:"account_id"`
 	AccountType ToolsWechatGameCreateV30AccountType `json:"account_type"`
-	AgeLimit    *ToolsWechatGameCreateV30AgeLimit   `json:"age_limit,omitempty"`
+	AgeLimit    ToolsWechatGameCreateV30AgeLimit    `json:"age_limit"`
 	//
 	AgeRemindUrl string                                    `json:"age_remind_url"`
 	AnchorList   ToolsWechatGameCreateV30RequestAnchorList `json:"anchor_list"`
 	//
 	AntiAddictionUrl string `json:"anti_addiction_url"`
 	//
-	ArtStyle *string `json:"art_style,omitempty"`
+	ArtStyle string `json:"art_style"`
 	//
 	CompanyId *int64 `json:"company_id,omitempty"`
 	//
 	DiscountRate *int64 `json:"discount_rate,omitempty"`
 	//
-	FeatureTags []string `json:"feature_tags,omitempty"`
+	FeatureTags []string `json:"feature_tags"`
 	//
 	HasDiscount *bool `json:"has_discount,omitempty"`
 	//
@@ -39,20 +39,20 @@ type ToolsWechatGameCreateV30Request struct {
 	//
 	Name string `json:"name"`
 	//
-	NetworkEnvironment []string `json:"network_environment,omitempty"`
+	NetworkEnvironment []string `json:"network_environment"`
 	//
 	Path string `json:"path"`
 	//
-	RealNameUrl  string                                `json:"real_name_url"`
-	RevenueModel *ToolsWechatGameCreateV30RevenueModel `json:"revenue_model,omitempty"`
+	RealNameUrl  string                               `json:"real_name_url"`
+	RevenueModel ToolsWechatGameCreateV30RevenueModel `json:"revenue_model"`
 	//
 	ScheduleCards []*ToolsWechatGameCreateV30ScheduleCards `json:"schedule_cards,omitempty"`
 	//
 	ScreenRecordUrl string `json:"screen_record_url"`
 	//
-	TagInfo *string `json:"tag_info,omitempty"`
+	TagInfo string `json:"tag_info"`
 	//
-	ThemeTag *string `json:"theme_tag,omitempty"`
+	ThemeTag string `json:"theme_tag"`
 	//
 	UserName string `json:"user_name"`
 }

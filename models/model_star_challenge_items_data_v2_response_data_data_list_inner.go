@@ -14,6 +14,8 @@ package models
 type StarChallengeItemsDataV2ResponseDataDataListInner struct {
 	// Android激活数
 	AndroidActivateCnt *int64 `json:"android_activate_cnt,omitempty"`
+	// 已发放收益（单位：分）
+	AuthorAmount *int64 `json:"author_amount,omitempty"`
 	// 作者昵称
 	AuthorNickname *string `json:"author_nickname,omitempty"`
 	// 评论量
@@ -28,8 +30,16 @@ type StarChallengeItemsDataV2ResponseDataDataListInner struct {
 	LikeCnt *int64 `json:"like_cnt,omitempty"`
 	// 作品链接
 	Link *string `json:"link,omitempty"`
+	// 素材id
+	Mid *int64 `json:"mid,omitempty"`
+	// 预估付费流水（单位：分）
+	PayAmountEstimated *int64 `json:"pay_amount_estimated,omitempty"`
 	// 播放量
 	PlayVv *int64 `json:"play_vv,omitempty"`
+	// 短剧id
+	PlayletId *int64 `json:"playlet_id,omitempty"`
+	// 短剧名称
+	PlayletName *string `json:"playlet_name,omitempty"`
 	// 促活转化数
 	PromoteCnt *int64 `json:"promote_cnt,omitempty"`
 	// 发布时间

@@ -21,6 +21,8 @@ type StarChallengeInfoV2ResponseDataTaskInfoListInnerChallengeInfoSettlementInfo
 	//
 	AutoAddBudgetTriggerRatio *int64 `json:"auto_add_budget_trigger_ratio,omitempty"`
 	//
+	CommissionRate *int64 `json:"commission_rate,omitempty"`
+	//
 	EvaluateType int64 `json:"evaluate_type"`
 	//
 	IosConvertId *int64 `json:"ios_convert_id,omitempty"`

@@ -23,10 +23,11 @@ import (
 )
 
 type ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequestExample struct {
-	AdvertiserId int64 `json:"advertiser_id"`
-	StarTaskId   int64 `json:"star_task_id"`
-	Page         int64 `json:"page,omitempty"`
-	PageSize     int64 `json:"page_size,omitempty"`
+	AdvertiserId int64                                    `json:"advertiser_id"`
+	StarTaskId   int64                                    `json:"star_task_id"`
+	Page         int64                                    `json:"page,omitempty"`
+	PageSize     int64                                    `json:"page_size,omitempty"`
+	Filtering    StardeliveryTaskAuthorDetailV30Filtering `json:"filtering,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/stardelivery/task_author/detail/ Get
@@ -48,7 +49,7 @@ func main() {
 	resp, httpRes, err := apiClient.StardeliveryTaskAuthorDetailV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).StarTaskId(request.StarTaskId).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).StarTaskId(request.StarTaskId).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

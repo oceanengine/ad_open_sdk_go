@@ -14,8 +14,9 @@ package models
 type QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoVideoMaterial struct {
 	CoverImage *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoVideoMaterialCoverImage `json:"cover_image,omitempty"`
 	//
-	MaterialId *int64                                                                                   `json:"material_id,omitempty"`
-	Source     *QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialSource `json:"source,omitempty"`
+	MaterialId  *int64                                                                                        `json:"material_id,omitempty"`
+	Source      *QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialSource      `json:"source,omitempty"`
+	StarTraffic *QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialStarTraffic `json:"star_traffic,omitempty"`
 	//
 	Title *string `json:"title,omitempty"`
 	//

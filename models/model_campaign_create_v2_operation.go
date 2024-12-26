@@ -15,8 +15,8 @@ type CampaignCreateV2Operation string
 
 // List of campaign_create_v2_operation
 const (
-	ENABLE_CampaignCreateV2Operation  CampaignCreateV2Operation = "enable"
 	DISABLE_CampaignCreateV2Operation CampaignCreateV2Operation = "disable"
+	ENABLE_CampaignCreateV2Operation  CampaignCreateV2Operation = "enable"
 )
 
 // Ptr returns reference to campaign_create_v2_operation value

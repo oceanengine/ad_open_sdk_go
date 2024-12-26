@@ -15,8 +15,9 @@ type CgTransferCanTransferBalanceGetV30Platform string
 
 // List of cg_transfer_can_transfer_balance_get_v3.0_platform
 const (
-	AD_CgTransferCanTransferBalanceGetV30Platform       CgTransferCanTransferBalanceGetV30Platform = "AD"
-	BENDITUI_CgTransferCanTransferBalanceGetV30Platform CgTransferCanTransferBalanceGetV30Platform = "BENDITUI"
+	AD_CgTransferCanTransferBalanceGetV30Platform        CgTransferCanTransferBalanceGetV30Platform = "AD"
+	BENDITUI_CgTransferCanTransferBalanceGetV30Platform  CgTransferCanTransferBalanceGetV30Platform = "BENDITUI"
+	QIANCHUAN_CgTransferCanTransferBalanceGetV30Platform CgTransferCanTransferBalanceGetV30Platform = "QIANCHUAN"
 )
 
 // Ptr returns reference to cg_transfer_can_transfer_balance_get_v3.0_platform value

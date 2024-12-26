@@ -18,6 +18,8 @@ type BrandCreativeUpdateV30Request struct {
 	AdvancedCreativeInfo *BrandCreativeUpdateV30RequestAdvancedCreativeInfo `json:"advanced_creative_info,omitempty"`
 	// 广告组ID
 	AdvertiserId int64 `json:"advertiser_id"`
+	// 三方购物车锚点ID
+	AnchorId *string `json:"anchor_id,omitempty"`
 	// 抖音号ID
 	AwemeId *string `json:"aweme_id,omitempty"`
 	// 创意ID

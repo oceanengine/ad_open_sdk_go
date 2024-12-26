@@ -26,4 +26,6 @@ type QianchuanAwemeOrderDetailGetV10ResponseDataAudience struct {
 	Gender               *QianchuanAwemeOrderDetailGetV10DataAudienceGender               `json:"gender,omitempty"`
 	// 兴趣类目词
 	InterestCategories []int64 `json:"interest_categories,omitempty"`
+	// 定向版本
+	RegionVersion *string `json:"region_version,omitempty"`
 }

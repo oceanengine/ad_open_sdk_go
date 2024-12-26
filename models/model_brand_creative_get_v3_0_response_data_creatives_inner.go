@@ -15,7 +15,11 @@ type BrandCreativeGetV30ResponseDataCreativesInner struct {
 	// 计划ID
 	AdId *string `json:"ad_id,omitempty"`
 	// 广告主ID
-	AdvertiserId *string                                                    `json:"advertiser_id,omitempty"`
+	AdvertiserId *string `json:"advertiser_id,omitempty"`
+	// 三方购物车锚点ID
+	AnchorId *string `json:"anchor_id,omitempty"`
+	// 三方购物车锚点名称
+	AnchorName   *string                                                    `json:"anchor_name,omitempty"`
 	CategoryInfo *BrandCreativeGetV30ResponseDataCreativesInnerCategoryInfo `json:"category_info,omitempty"`
 	// 创建时间
 	CreateTime     *string                                                `json:"create_time,omitempty"`

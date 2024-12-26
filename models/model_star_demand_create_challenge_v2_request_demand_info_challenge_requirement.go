@@ -12,8 +12,20 @@ package models
 
 // StarDemandCreateChallengeV2RequestDemandInfoChallengeRequirement 产出物制作要求
 type StarDemandCreateChallengeV2RequestDemandInfoChallengeRequirement struct {
+	// 福利相关（直播必选一个）
+	BoonList []int64 `json:"boon_list,omitempty"`
+	// 口播要求
+	BroadcastDemand *string `json:"broadcast_demand,omitempty"`
+	// 口播次数
+	BroadcastNum *int64 `json:"broadcast_num,omitempty"`
+	// 补充要求
+	ExtraDemand *string `json:"extra_demand,omitempty"`
+	// 直播画面
+	LiveSceenType *int64 `json:"live_sceen_type,omitempty"`
 	// 口播要求 60字内
 	OralDemand *string `json:"oral_demand,omitempty"`
+	// 其他福利
+	OtherBoon *string `json:"other_boon,omitempty"`
 	// 其他要求 60字内
 	OtherDemand []string `json:"other_demand,omitempty"`
 	// 镜头要求 60字内
