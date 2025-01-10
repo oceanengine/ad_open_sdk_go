@@ -16,9 +16,9 @@ type ToolsEstimateAudienceV2Gender string
 // List of tools_estimate_audience_v2_gender
 const (
 	NONE_ToolsEstimateAudienceV2Gender             ToolsEstimateAudienceV2Gender = "NONE"
+	GENDER_MALE_ToolsEstimateAudienceV2Gender      ToolsEstimateAudienceV2Gender = "GENDER_MALE"
 	GENDER_FEMALE_ToolsEstimateAudienceV2Gender    ToolsEstimateAudienceV2Gender = "GENDER_FEMALE"
 	GENDER_UNLIMITED_ToolsEstimateAudienceV2Gender ToolsEstimateAudienceV2Gender = "GENDER_UNLIMITED"
-	GENDER_MALE_ToolsEstimateAudienceV2Gender      ToolsEstimateAudienceV2Gender = "GENDER_MALE"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_gender value

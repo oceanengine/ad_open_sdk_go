@@ -15,6 +15,8 @@ type StardeliveryTaskAuthorVideoDetailV30ResponseDataValidAuthorSubmittedVideosI
 	//
 	AwemeId *string `json:"aweme_id,omitempty"`
 	//
+	AwemeName *string `json:"aweme_name,omitempty"`
+	//
 	Duration  *int64                                                                       `json:"duration,omitempty"`
 	ImageMode *StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosImageMode `json:"image_mode,omitempty"`
 	//

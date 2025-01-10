@@ -17,6 +17,8 @@ type SecurityScoreDisposalInfoGetV30ResponseDataDisposalInfoListInner struct {
 	DisposalAction SecurityScoreDisposalInfoGetV30DataDisposalInfoListDisposalAction `json:"disposal_action"`
 	// 处置结束时间
 	DisposalEndTime *string `json:"disposal_end_time,omitempty"`
+	// 处罚单id
+	DisposalInfoId *int64 `json:"disposal_info_id,omitempty"`
 	// 落罚分值
 	DisposalScore int64 `json:"disposal_score"`
 	// 处置开始时间

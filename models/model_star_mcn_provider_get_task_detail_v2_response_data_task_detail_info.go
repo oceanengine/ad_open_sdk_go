@@ -19,6 +19,8 @@ type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo struct {
 	//
 	ChallengeStatus *int64 `json:"challenge_status,omitempty"`
 	//
+	CloudLink *string `json:"cloud_link,omitempty"`
+	//
 	CommissionRate *int64 `json:"commission_rate,omitempty"`
 	//
 	CommissionRateIaap *string `json:"commission_rate_iaap,omitempty"`

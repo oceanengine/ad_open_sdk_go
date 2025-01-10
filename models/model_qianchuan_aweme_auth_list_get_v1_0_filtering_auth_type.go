@@ -18,7 +18,9 @@ const (
 	ALL_QianchuanAwemeAuthListGetV10FilteringAuthType              QianchuanAwemeAuthListGetV10FilteringAuthType = "ALL"
 	AWEME_COOPERATOR_QianchuanAwemeAuthListGetV10FilteringAuthType QianchuanAwemeAuthListGetV10FilteringAuthType = "AWEME_COOPERATOR"
 	OFFICIAL_QianchuanAwemeAuthListGetV10FilteringAuthType         QianchuanAwemeAuthListGetV10FilteringAuthType = "OFFICIAL"
+	ROOM_QianchuanAwemeAuthListGetV10FilteringAuthType             QianchuanAwemeAuthListGetV10FilteringAuthType = "ROOM"
 	SELF_QianchuanAwemeAuthListGetV10FilteringAuthType             QianchuanAwemeAuthListGetV10FilteringAuthType = "SELF"
+	VIDEO_QianchuanAwemeAuthListGetV10FilteringAuthType            QianchuanAwemeAuthListGetV10FilteringAuthType = "VIDEO"
 )
 
 // Ptr returns reference to qianchuan_aweme_auth_list_get_v1.0_filtering_auth_type value

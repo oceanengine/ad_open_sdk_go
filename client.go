@@ -1,5 +1,5 @@
 /*
-API version: 1.1.31
+API version: 1.1.33
 */
 package ad_open_sdk_go
 
@@ -355,6 +355,10 @@ func (c *Client) BrandAwemeListV30Api() *api.BrandAwemeListV30ApiService {
 	return c.ApiClient.BrandAwemeListV30Api
 }
 
+func (c *Client) BrandCampaignAddV30Api() *api.BrandCampaignAddV30ApiService {
+	return c.ApiClient.BrandCampaignAddV30Api
+}
+
 func (c *Client) BrandCampaignCreateV30Api() *api.BrandCampaignCreateV30ApiService {
 	return c.ApiClient.BrandCampaignCreateV30Api
 }
@@ -399,8 +403,16 @@ func (c *Client) BrandFileVideoUploadV30Api() *api.BrandFileVideoUploadV30ApiSer
 	return c.ApiClient.BrandFileVideoUploadV30Api
 }
 
+func (c *Client) BrandMaterialCreateV30Api() *api.BrandMaterialCreateV30ApiService {
+	return c.ApiClient.BrandMaterialCreateV30Api
+}
+
 func (c *Client) BrandMaterialListV30Api() *api.BrandMaterialListV30ApiService {
 	return c.ApiClient.BrandMaterialListV30Api
+}
+
+func (c *Client) BrandOrderCreateV30Api() *api.BrandOrderCreateV30ApiService {
+	return c.ApiClient.BrandOrderCreateV30Api
 }
 
 func (c *Client) BrandOrderListV30Api() *api.BrandOrderListV30ApiService {
@@ -421,6 +433,14 @@ func (c *Client) BrandRegionGetV30Api() *api.BrandRegionGetV30ApiService {
 
 func (c *Client) BrandToolCreativePreviewV30Api() *api.BrandToolCreativePreviewV30ApiService {
 	return c.ApiClient.BrandToolCreativePreviewV30Api
+}
+
+func (c *Client) BrandToolMaterialPreviewV30Api() *api.BrandToolMaterialPreviewV30ApiService {
+	return c.ApiClient.BrandToolMaterialPreviewV30Api
+}
+
+func (c *Client) BrandToolQueryPublishPriceV30Api() *api.BrandToolQueryPublishPriceV30ApiService {
+	return c.ApiClient.BrandToolQueryPublishPriceV30Api
 }
 
 func (c *Client) BrandUploadImageV30Api() *api.BrandUploadImageV30ApiService {
@@ -1191,6 +1211,18 @@ func (c *Client) LocalAwemeAuthorizedGetV30Api() *api.LocalAwemeAuthorizedGetV30
 	return c.ApiClient.LocalAwemeAuthorizedGetV30Api
 }
 
+func (c *Client) LocalChargeListV30Api() *api.LocalChargeListV30ApiService {
+	return c.ApiClient.LocalChargeListV30Api
+}
+
+func (c *Client) LocalChargeResultV30Api() *api.LocalChargeResultV30ApiService {
+	return c.ApiClient.LocalChargeResultV30Api
+}
+
+func (c *Client) LocalChargeSubmitV30Api() *api.LocalChargeSubmitV30ApiService {
+	return c.ApiClient.LocalChargeSubmitV30Api
+}
+
 func (c *Client) LocalCustomAudienceGetV30Api() *api.LocalCustomAudienceGetV30ApiService {
 	return c.ApiClient.LocalCustomAudienceGetV30Api
 }
@@ -1319,6 +1351,10 @@ func (c *Client) LocalPromotionUpdateV30Api() *api.LocalPromotionUpdateV30ApiSer
 	return c.ApiClient.LocalPromotionUpdateV30Api
 }
 
+func (c *Client) LocalReportAccountGetV30Api() *api.LocalReportAccountGetV30ApiService {
+	return c.ApiClient.LocalReportAccountGetV30Api
+}
+
 func (c *Client) LocalReportMaterialGetV30Api() *api.LocalReportMaterialGetV30ApiService {
 	return c.ApiClient.LocalReportMaterialGetV30Api
 }
@@ -1403,6 +1439,10 @@ func (c *Client) ProjectListV30Api() *api.ProjectListV30ApiService {
 	return c.ApiClient.ProjectListV30Api
 }
 
+func (c *Client) ProjectNameUpdateV30Api() *api.ProjectNameUpdateV30ApiService {
+	return c.ApiClient.ProjectNameUpdateV30Api
+}
+
 func (c *Client) ProjectRoigoalUpdateV30Api() *api.ProjectRoigoalUpdateV30ApiService {
 	return c.ApiClient.ProjectRoigoalUpdateV30Api
 }
@@ -1473,6 +1513,10 @@ func (c *Client) PromotionListV30Api() *api.PromotionListV30ApiService {
 
 func (c *Client) PromotionMaterialDeleteV30Api() *api.PromotionMaterialDeleteV30ApiService {
 	return c.ApiClient.PromotionMaterialDeleteV30Api
+}
+
+func (c *Client) PromotionNameUpdateV30Api() *api.PromotionNameUpdateV30ApiService {
+	return c.ApiClient.PromotionNameUpdateV30Api
 }
 
 func (c *Client) PromotionNewcustomerCreateV30Api() *api.PromotionNewcustomerCreateV30ApiService {
@@ -2473,6 +2517,10 @@ func (c *Client) StarDemanderDemanderGetAuthorBindInfoV2Api() *api.StarDemanderD
 
 func (c *Client) StarDemanderDemanderGetBindShareCodeV2Api() *api.StarDemanderDemanderGetBindShareCodeV2ApiService {
 	return c.ApiClient.StarDemanderDemanderGetBindShareCodeV2Api
+}
+
+func (c *Client) StarFeCommonServiceTalentDayJudgeCheckedInV2Api() *api.StarFeCommonServiceTalentDayJudgeCheckedInV2ApiService {
+	return c.ApiClient.StarFeCommonServiceTalentDayJudgeCheckedInV2Api
 }
 
 func (c *Client) StarGetCreateChallengeDataDictV2Api() *api.StarGetCreateChallengeDataDictV2ApiService {

@@ -19,6 +19,7 @@ const (
 	DOU_SHOP_LIVE_SELF_QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType = "DOU_SHOP_LIVE_SELF"
 	EXPIRED_QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType            QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType = "EXPIRED"
 	OFFICIAL_QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType           QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType = "OFFICIAL"
+	ROOM_QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType               QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType = "ROOM"
 	SELF_QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType               QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType = "SELF"
 	TALENT_USER_OWNER_QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType  QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType = "TALENT_USER_OWNER"
 	UNAUTHORIZED_QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType       QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType = "UNAUTHORIZED"

@@ -34,7 +34,9 @@ type PromotionListV30ResponseDataListInner struct {
 	//
 	DeepCpabid       *float64                                  `json:"deep_cpabid,omitempty"`
 	HasCarryMaterial *PromotionListV30DataListHasCarryMaterial `json:"has_carry_material,omitempty"`
-	IsCommentDisable *PromotionListV30DataListIsCommentDisable `json:"is_comment_disable,omitempty"`
+	//
+	IfNewcustomerdelivery *bool                                     `json:"if_newcustomerdelivery,omitempty"`
+	IsCommentDisable      *PromotionListV30DataListIsCommentDisable `json:"is_comment_disable,omitempty"`
 	// 搜索广告关键词
 	Keywords          []*PromotionListV30ResponseDataListInnerKeywordsInner   `json:"keywords,omitempty"`
 	LearningPhase     *PromotionListV30DataListLearningPhase                  `json:"learning_phase,omitempty"`
@@ -53,6 +55,8 @@ type PromotionListV30ResponseDataListInner struct {
 	PromotionModifyTime *string `json:"promotion_modify_time,omitempty"`
 	//
 	PromotionName *string `json:"promotion_name,omitempty"`
+	//
+	PromotionRelatedProduct []*PromotionListV30ResponseDataListInnerPromotionRelatedProductInner `json:"promotion_related_product,omitempty"`
 	//
 	RoiGoal *float64 `json:"roi_goal,omitempty"`
 	//

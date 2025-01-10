@@ -44,8 +44,10 @@ type PromotionUpdateV30RequestPromotionMaterials struct {
 	//
 	OpenUrls []string `json:"open_urls,omitempty"`
 	//
-	PlayableUrlMaterialList []string                                                `json:"playable_url_material_list,omitempty"`
-	ProductInfo             *PromotionUpdateV30RequestPromotionMaterialsProductInfo `json:"product_info,omitempty"`
+	PlayableUrlMaterialList []string `json:"playable_url_material_list,omitempty"`
+	//
+	PlayletSeriesUrlList []string                                                `json:"playlet_series_url_list,omitempty"`
+	ProductInfo          *PromotionUpdateV30RequestPromotionMaterialsProductInfo `json:"product_info,omitempty"`
 	//
 	TextAbstractList []*PromotionUpdateV30RequestPromotionMaterialsTextAbstractListInner `json:"text_abstract_list,omitempty"`
 	//

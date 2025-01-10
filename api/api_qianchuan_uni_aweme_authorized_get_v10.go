@@ -28,6 +28,7 @@ type ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest struct {
 	advertiserId *int64
 	page         *int64
 	pageSize     *int64
+	filtering    *QianchuanUniAwemeAuthorizedGetV10Filtering
 }
 
 func (r *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest {
@@ -42,6 +43,12 @@ func (r *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest) Page(page int64)
 
 func (r *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest) PageSize(pageSize int64) *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+// 过滤器
+func (r *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest) Filtering(filtering QianchuanUniAwemeAuthorizedGetV10Filtering) *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest {
+	r.filtering = &filtering
 	return r
 }
 
@@ -105,6 +112,9 @@ func (a *QianchuanUniAwemeAuthorizedGetV10ApiService) getExecute(r *ApiOpenApiV1
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.filtering != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

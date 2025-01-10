@@ -19,11 +19,17 @@ type StarMcnProviderGetUnparticipatedTaskV2ResponseDataDataInner struct {
 	//
 	CreateTime string `json:"create_time"`
 	//
+	DemandIcon *string `json:"demand_icon,omitempty"`
+	//
 	DemandId int64 `json:"demand_id"`
 	//
 	DemandName string `json:"demand_name"`
 	//
 	EvaluateType *int32 `json:"evaluate_type,omitempty"`
+	//
+	ExpirationTime *string `json:"expiration_time,omitempty"`
+	//
+	ExpirationTimeEnd *string `json:"expiration_time_end,omitempty"`
 	//
 	FirstClassCategory *int64 `json:"first_class_category,omitempty"`
 	//

@@ -37,14 +37,6 @@ type QianchuanReportAdvertiserGetV10ResponseDataListInner struct {
 	//
 	AdAllOrderSettleRoi7d *float64 `json:"ad_all_order_settle_roi_7d,omitempty"`
 	//
-	AdLiveOrderSettleCost14d *float64 `json:"ad_live_order_settle_cost_14d,omitempty"`
-	//
-	AdLiveOrderSettleCost7d *float64 `json:"ad_live_order_settle_cost_7d,omitempty"`
-	//
-	AdLiveOrderSettleRoi14d *float64 `json:"ad_live_order_settle_roi_14d,omitempty"`
-	//
-	AdLiveOrderSettleRoi7d *float64 `json:"ad_live_order_settle_roi_7d,omitempty"`
-	//
 	AdOrderGmvRefundRate14d *float64 `json:"ad_order_gmv_refund_rate_14d,omitempty"`
 	//
 	AdOrderGmvRefundRate7d *float64 `json:"ad_order_gmv_refund_rate_7d,omitempty"`
@@ -126,24 +118,6 @@ type QianchuanReportAdvertiserGetV10ResponseDataListInner struct {
 	IndirectOrderPrepayGmv7days *float64 `json:"indirect_order_prepay_gmv_7days,omitempty"`
 	//
 	IndirectOrderUnfinishedEstimateGmv7days *int64 `json:"indirect_order_unfinished_estimate_gmv_7days,omitempty"`
-	//
-	LiveOrderRefundAmount7d *float64 `json:"live_order_refund_amount_7d,omitempty"`
-	//
-	LiveOrderRefundCount14d *int64 `json:"live_order_refund_count_14d,omitempty"`
-	//
-	LiveOrderRefundCount7d *int64 `json:"live_order_refund_count_7d,omitempty"`
-	//
-	LiveOrderSettleAmount14d *float64 `json:"live_order_settle_amount_14d,omitempty"`
-	//
-	LiveOrderSettleAmount7d *float64 `json:"live_order_settle_amount_7d,omitempty"`
-	//
-	LiveOrderSettleCount14d *int64 `json:"live_order_settle_count_14d,omitempty"`
-	//
-	LiveOrderSettleCount7d *int64 `json:"live_order_settle_count_7d,omitempty"`
-	//
-	LiveOrderSettleCountRate14d *float64 `json:"live_order_settle_count_rate_14d,omitempty"`
-	//
-	LiveOrderSettleCountRate7d *float64 `json:"live_order_settle_count_rate_7d,omitempty"`
 	//
 	LivePayOrderCostPerOrder *float64 `json:"live_pay_order_cost_per_order,omitempty"`
 	//

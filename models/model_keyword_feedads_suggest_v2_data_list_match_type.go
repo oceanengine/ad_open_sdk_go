@@ -15,8 +15,8 @@ type KeywordFeedadsSuggestV2DataListMatchType string
 
 // List of keyword_feedads_suggest_v2_data_list_match_type
 const (
-	EXTENSIVE_KeywordFeedadsSuggestV2DataListMatchType KeywordFeedadsSuggestV2DataListMatchType = "EXTENSIVE"
 	PRECISION_KeywordFeedadsSuggestV2DataListMatchType KeywordFeedadsSuggestV2DataListMatchType = "PRECISION"
+	EXTENSIVE_KeywordFeedadsSuggestV2DataListMatchType KeywordFeedadsSuggestV2DataListMatchType = "EXTENSIVE"
 	PHRASE_KeywordFeedadsSuggestV2DataListMatchType    KeywordFeedadsSuggestV2DataListMatchType = "PHRASE"
 )
 

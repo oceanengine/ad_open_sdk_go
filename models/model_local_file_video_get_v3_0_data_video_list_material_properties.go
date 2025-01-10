@@ -18,6 +18,7 @@ const (
 	COPY_LocalFileVideoGetV30DataVideoListMaterialProperties          LocalFileVideoGetV30DataVideoListMaterialProperties = "COPY"
 	FIRST_PUBLISH_LocalFileVideoGetV30DataVideoListMaterialProperties LocalFileVideoGetV30DataVideoListMaterialProperties = "FIRST_PUBLISH"
 	HIGH_QUALITY_LocalFileVideoGetV30DataVideoListMaterialProperties  LocalFileVideoGetV30DataVideoListMaterialProperties = "HIGH_QUALITY"
+	LOW_EFFICIENY_LocalFileVideoGetV30DataVideoListMaterialProperties LocalFileVideoGetV30DataVideoListMaterialProperties = "LOW_EFFICIENY"
 	LOW_QUALITY_LocalFileVideoGetV30DataVideoListMaterialProperties   LocalFileVideoGetV30DataVideoListMaterialProperties = "LOW_QUALITY"
 	SIMILAR_LocalFileVideoGetV30DataVideoListMaterialProperties       LocalFileVideoGetV30DataVideoListMaterialProperties = "SIMILAR"
 )

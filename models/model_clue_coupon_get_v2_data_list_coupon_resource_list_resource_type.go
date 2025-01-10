@@ -17,8 +17,8 @@ type ClueCouponGetV2DataListCouponResourceListResourceType string
 const (
 	COMMON_ClueCouponGetV2DataListCouponResourceListResourceType   ClueCouponGetV2DataListCouponResourceListResourceType = "COMMON"
 	FULL_ClueCouponGetV2DataListCouponResourceListResourceType     ClueCouponGetV2DataListCouponResourceListResourceType = "FULL"
-	GAME_ClueCouponGetV2DataListCouponResourceListResourceType     ClueCouponGetV2DataListCouponResourceListResourceType = "GAME"
 	PHYSICAL_ClueCouponGetV2DataListCouponResourceListResourceType ClueCouponGetV2DataListCouponResourceListResourceType = "PHYSICAL"
+	GAME_ClueCouponGetV2DataListCouponResourceListResourceType     ClueCouponGetV2DataListCouponResourceListResourceType = "GAME"
 	DISCOUNT_ClueCouponGetV2DataListCouponResourceListResourceType ClueCouponGetV2DataListCouponResourceListResourceType = "DISCOUNT"
 )
 

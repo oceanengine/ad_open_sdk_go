@@ -42,7 +42,9 @@ type ProjectListV30ResponseDataListInner struct {
 	//
 	DpaProductTarget []*ProjectListV30ResponseDataListInnerDpaProductTargetInner `json:"dpa_product_target,omitempty"`
 	//
-	FeedDeliverySearch     *string                                                    `json:"feed_delivery_search,omitempty"`
+	FeedDeliverySearch *string `json:"feed_delivery_search,omitempty"`
+	//
+	IfNewcustomerdelivery  *bool                                                      `json:"if_newcustomerdelivery,omitempty"`
 	InternalAdvertiserInfo *ProjectListV30ResponseDataListInnerInternalAdvertiserInfo `json:"internal_advertiser_info,omitempty"`
 	// 关键词
 	Keywords            []*ProjectListV30ResponseDataListInnerKeywordsInner `json:"keywords,omitempty"`

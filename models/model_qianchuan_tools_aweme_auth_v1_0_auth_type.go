@@ -17,6 +17,7 @@ type QianchuanToolsAwemeAuthV10AuthType string
 const (
 	SELF_QianchuanToolsAwemeAuthV10AuthType             QianchuanToolsAwemeAuthV10AuthType = "SELF"
 	AWEME_COOPERATOR_QianchuanToolsAwemeAuthV10AuthType QianchuanToolsAwemeAuthV10AuthType = "AWEME_COOPERATOR"
+	ROOM_QianchuanToolsAwemeAuthV10AuthType             QianchuanToolsAwemeAuthV10AuthType = "ROOM"
 )
 
 // Ptr returns reference to qianchuan_tools_aweme_auth_v1.0_auth_type value

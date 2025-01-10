@@ -288,6 +288,7 @@ Class | Method | HTTP request
 *BrandAdUpdateBaseInfoV30Api* | **OpenApiV30BrandAdUpdateBaseInfoPost** | **Post** /open_api/v3.0/brand/ad/update_base_info/
 *BrandAdUpdateDeliveryInfoV30Api* | **OpenApiV30BrandAdUpdateDeliveryInfoPost** | **Post** /open_api/v3.0/brand/ad/update_delivery_info/
 *BrandAwemeListV30Api* | **OpenApiV30BrandAwemeListGet** | **Get** /open_api/v3.0/brand/aweme_list/
+*BrandCampaignAddV30Api* | **OpenApiV30BrandCampaignAddPost** | **Post** /open_api/v3.0/brand/campaign/add/
 *BrandCampaignCreateV30Api* | **OpenApiV30BrandCampaignCreatePost** | **Post** /open_api/v3.0/brand/campaign/create/
 *BrandCampaignDeleteV30Api* | **OpenApiV30BrandCampaignDeletePost** | **Post** /open_api/v3.0/brand/campaign/delete/
 *BrandCampaignEditV30Api* | **OpenApiV30BrandCampaignEditPost** | **Post** /open_api/v3.0/brand/campaign/edit/
@@ -299,12 +300,16 @@ Class | Method | HTTP request
 *BrandCreativeGetV30Api* | **OpenApiV30BrandCreativeGetGet** | **Get** /open_api/v3.0/brand/creative/get/
 *BrandCreativeUpdateV30Api* | **OpenApiV30BrandCreativeUpdatePost** | **Post** /open_api/v3.0/brand/creative/update/
 *BrandFileVideoUploadV30Api* | **OpenApiV30BrandFileVideoUploadPost** | **Post** /open_api/v3.0/brand/file/video/upload/
+*BrandMaterialCreateV30Api* | **OpenApiV30BrandMaterialCreatePost** | **Post** /open_api/v3.0/brand/material/create/
 *BrandMaterialListV30Api* | **OpenApiV30BrandMaterialListGet** | **Get** /open_api/v3.0/brand/material/list/
+*BrandOrderCreateV30Api* | **OpenApiV30BrandOrderCreatePost** | **Post** /open_api/v3.0/brand/order/create/
 *BrandOrderListV30Api* | **OpenApiV30BrandOrderListGet** | **Get** /open_api/v3.0/brand/order/list/
 *BrandQueryStockV30Api* | **OpenApiV30BrandQueryStockGet** | **Get** /open_api/v3.0/brand/query_stock/
 *BrandQueryYuntu5aBrandCategoryV30Api* | **OpenApiV30BrandQueryYuntu5aBrandCategoryGet** | **Get** /open_api/v3.0/brand/query_yuntu_5a_brand_category/
 *BrandRegionGetV30Api* | **OpenApiV30BrandRegionGetGet** | **Get** /open_api/v3.0/brand/region/get/
 *BrandToolCreativePreviewV30Api* | **OpenApiV30BrandToolCreativePreviewGet** | **Get** /open_api/v3.0/brand/tool/creative_preview/
+*BrandToolMaterialPreviewV30Api* | **OpenApiV30BrandToolMaterialPreviewGet** | **Get** /open_api/v3.0/brand/tool/material_preview/
+*BrandToolQueryPublishPriceV30Api* | **OpenApiV30BrandToolQueryPublishPriceGet** | **Get** /open_api/v3.0/brand/tool/query_publish_price/
 *BrandUploadImageV30Api* | **OpenApiV30BrandUploadImagePost** | **Post** /open_api/v3.0/brand/upload_image/
 *BudgetGroupCreateV30Api* | **OpenApiV30BudgetGroupCreatePost** | **Post** /open_api/v3.0/budget_group/create/
 *BudgetGroupDeleteV30Api* | **OpenApiV30BudgetGroupDeletePost** | **Post** /open_api/v3.0/budget_group/delete/
@@ -497,6 +502,9 @@ Class | Method | HTTP request
 *KeywordUpdateV2V2Api* | **OpenApi2KeywordUpdateV2Post** | **Post** /open_api/2/keyword/update_v2/
 *KeywordUpdateV30Api* | **OpenApiV30KeywordUpdatePost** | **Post** /open_api/v3.0/keyword/update/
 *LocalAwemeAuthorizedGetV30Api* | **OpenApiV30LocalAwemeAuthorizedGetGet** | **Get** /open_api/v3.0/local/aweme/authorized/get/
+*LocalChargeListV30Api* | **OpenApiV30LocalChargeListGet** | **Get** /open_api/v3.0/local/charge/list/
+*LocalChargeResultV30Api* | **OpenApiV30LocalChargeResultGet** | **Get** /open_api/v3.0/local/charge/result/
+*LocalChargeSubmitV30Api* | **OpenApiV30LocalChargeSubmitPost** | **Post** /open_api/v3.0/local/charge/submit/
 *LocalCustomAudienceGetV30Api* | **OpenApiV30LocalCustomAudienceGetGet** | **Get** /open_api/v3.0/local/custom_audience/get/
 *LocalCxtAudienceUpdateV30Api* | **OpenApiV30LocalCxtAudienceUpdatePost** | **Post** /open_api/v3.0/local/cxt/audience/update/
 *LocalCxtBudgetUpdateV30Api* | **OpenApiV30LocalCxtBudgetUpdatePost** | **Post** /open_api/v3.0/local/cxt/budget/update/
@@ -529,6 +537,7 @@ Class | Method | HTTP request
 *LocalPromotionListV30Api* | **OpenApiV30LocalPromotionListGet** | **Get** /open_api/v3.0/local/promotion/list/
 *LocalPromotionStatusUpdateV30Api* | **OpenApiV30LocalPromotionStatusUpdatePost** | **Post** /open_api/v3.0/local/promotion/status/update/
 *LocalPromotionUpdateV30Api* | **OpenApiV30LocalPromotionUpdatePost** | **Post** /open_api/v3.0/local/promotion/update/
+*LocalReportAccountGetV30Api* | **OpenApiV30LocalReportAccountGetGet** | **Get** /open_api/v3.0/local/report/account/get/
 *LocalReportMaterialGetV30Api* | **OpenApiV30LocalReportMaterialGetGet** | **Get** /open_api/v3.0/local/report/material/get/
 *LocalReportProjectGetV30Api* | **OpenApiV30LocalReportProjectGetGet** | **Get** /open_api/v3.0/local/report/project/get/
 *LocalReportPromotionGetV30Api* | **OpenApiV30LocalReportPromotionGetGet** | **Get** /open_api/v3.0/local/report/promotion/get/
@@ -550,6 +559,7 @@ Class | Method | HTTP request
 *ProjectCreateV30Api* | **OpenApiV30ProjectCreatePost** | **Post** /open_api/v3.0/project/create/
 *ProjectDeleteV30Api* | **OpenApiV30ProjectDeletePost** | **Post** /open_api/v3.0/project/delete/
 *ProjectListV30Api* | **OpenApiV30ProjectListGet** | **Get** /open_api/v3.0/project/list/
+*ProjectNameUpdateV30Api* | **OpenApiV30ProjectNameUpdatePost** | **Post** /open_api/v3.0/project_name/update/
 *ProjectRoigoalUpdateV30Api* | **OpenApiV30ProjectRoigoalUpdatePost** | **Post** /open_api/v3.0/project/roigoal/update/
 *ProjectScheduleTimeUpdateV30Api* | **OpenApiV30ProjectScheduleTimeUpdatePost** | **Post** /open_api/v3.0/project/schedule_time/update/
 *ProjectStatusUpdateV30Api* | **OpenApiV30ProjectStatusUpdatePost** | **Post** /open_api/v3.0/project/status/update/
@@ -568,6 +578,7 @@ Class | Method | HTTP request
 *PromotionEasyUpdateV30Api* | **OpenApiV30PromotionEasyUpdatePost** | **Post** /open_api/v3.0/promotion_easy/update/
 *PromotionListV30Api* | **OpenApiV30PromotionListGet** | **Get** /open_api/v3.0/promotion/list/
 *PromotionMaterialDeleteV30Api* | **OpenApiV30PromotionMaterialDeletePost** | **Post** /open_api/v3.0/promotion/material/delete/
+*PromotionNameUpdateV30Api* | **OpenApiV30PromotionNameUpdatePost** | **Post** /open_api/v3.0/promotion_name/update/
 *PromotionNewcustomerCreateV30Api* | **OpenApiV30PromotionNewcustomerCreatePost** | **Post** /open_api/v3.0/promotion_newcustomer/create/
 *PromotionRejectReasonGetV30Api* | **OpenApiV30PromotionRejectReasonGetGet** | **Get** /open_api/v3.0/promotion/reject_reason/get/
 *PromotionScheduleTimeUpdateV30Api* | **OpenApiV30PromotionScheduleTimeUpdatePost** | **Post** /open_api/v3.0/promotion/schedule_time/update/
@@ -818,6 +829,7 @@ Class | Method | HTTP request
 *StarDemandSearchWordModifyV2Api* | **OpenApi2StarDemandSearchWordModifyPost** | **Post** /open_api/2/star/demand/search_word/modify/
 *StarDemanderDemanderGetAuthorBindInfoV2Api* | **OpenApi2StarDemanderDemanderGetAuthorBindInfoGet** | **Get** /open_api/2/star/demander/demander_get_author_bind_info/
 *StarDemanderDemanderGetBindShareCodeV2Api* | **OpenApi2StarDemanderDemanderGetBindShareCodeGet** | **Get** /open_api/2/star/demander/demander_get_bind_share_code/
+*StarFeCommonServiceTalentDayJudgeCheckedInV2Api* | **OpenApi2StarFeCommonServiceTalentDayJudgeCheckedInGet** | **Get** /open_api/2/star/fe_common_service/talent_day/judge_checked_in/
 *StarGetCreateChallengeDataDictV2Api* | **OpenApi2StarGetCreateChallengeDataDictGet** | **Get** /open_api/2/star/get_create_challenge_data_dict/
 *StarInfoV2Api* | **OpenApi2StarInfoGet** | **Get** /open_api/2/star/info/
 *StarMcnContractChallengeV2Api* | **OpenApi2StarMcnContractChallengePost** | **Post** /open_api/2/star/mcn/contract_challenge/

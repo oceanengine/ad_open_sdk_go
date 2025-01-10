@@ -23,9 +23,10 @@ import (
 )
 
 type ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequestExample struct {
-	AdvertiserId int64 `json:"advertiser_id"`
-	Page         int64 `json:"page,omitempty"`
-	PageSize     int64 `json:"page_size,omitempty"`
+	AdvertiserId int64                                      `json:"advertiser_id"`
+	Page         int64                                      `json:"page,omitempty"`
+	PageSize     int64                                      `json:"page_size,omitempty"`
+	Filtering    QianchuanUniAwemeAuthorizedGetV10Filtering `json:"filtering,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/qianchuan/uni_aweme/authorized/get/ Get
@@ -47,7 +48,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanUniAwemeAuthorizedGetV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

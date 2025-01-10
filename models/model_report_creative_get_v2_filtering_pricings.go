@@ -15,13 +15,13 @@ type ReportCreativeGetV2FilteringPricings string
 
 // List of report_creative_get_v2_filtering_pricings
 const (
+	PRICING_OCPC_ReportCreativeGetV2FilteringPricings ReportCreativeGetV2FilteringPricings = "PRICING_OCPC"
+	PRICING_CPM_ReportCreativeGetV2FilteringPricings  ReportCreativeGetV2FilteringPricings = "PRICING_CPM"
+	PRICING_CPA_ReportCreativeGetV2FilteringPricings  ReportCreativeGetV2FilteringPricings = "PRICING_CPA"
 	PRICING_OCPM_ReportCreativeGetV2FilteringPricings ReportCreativeGetV2FilteringPricings = "PRICING_OCPM"
 	PRICING_ECPC_ReportCreativeGetV2FilteringPricings ReportCreativeGetV2FilteringPricings = "PRICING_ECPC"
-	PRICING_CPM_ReportCreativeGetV2FilteringPricings  ReportCreativeGetV2FilteringPricings = "PRICING_CPM"
 	PRICING_CPC_ReportCreativeGetV2FilteringPricings  ReportCreativeGetV2FilteringPricings = "PRICING_CPC"
 	PRICING_CPV_ReportCreativeGetV2FilteringPricings  ReportCreativeGetV2FilteringPricings = "PRICING_CPV"
-	PRICING_CPA_ReportCreativeGetV2FilteringPricings  ReportCreativeGetV2FilteringPricings = "PRICING_CPA"
-	PRICING_OCPC_ReportCreativeGetV2FilteringPricings ReportCreativeGetV2FilteringPricings = "PRICING_OCPC"
 )
 
 // Ptr returns reference to report_creative_get_v2_filtering_pricings value

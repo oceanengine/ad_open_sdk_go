@@ -38,8 +38,10 @@ type PromotionUpdateV30Request struct {
 	Name          string                                  `json:"name"`
 	NativeSetting *PromotionUpdateV30RequestNativeSetting `json:"native_setting,omitempty"`
 	//
-	PromotionId        int64                                       `json:"promotion_id"`
-	PromotionMaterials PromotionUpdateV30RequestPromotionMaterials `json:"promotion_materials"`
+	PromotionId        int64                                        `json:"promotion_id"`
+	PromotionMaterials *PromotionUpdateV30RequestPromotionMaterials `json:"promotion_materials,omitempty"`
+	//
+	PromotionRelatedProduct []*PromotionUpdateV30RequestPromotionRelatedProductInner `json:"promotion_related_product,omitempty"`
 	//
 	RoiGoal *float64 `json:"roi_goal,omitempty"`
 	//

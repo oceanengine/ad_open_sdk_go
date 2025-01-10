@@ -34,7 +34,8 @@ type ProjectUpdateV30Request struct {
 	//
 	OpenUrlParams *string `json:"open_url_params,omitempty"`
 	//
-	ProjectId int64 `json:"project_id"`
+	ProjectId      int64                                  `json:"project_id"`
+	RelatedProduct *ProjectUpdateV30RequestRelatedProduct `json:"related_product,omitempty"`
 	//
 	SearchBidRatio  *float64                                `json:"search_bid_ratio,omitempty"`
 	TrackUrlSetting *ProjectUpdateV30RequestTrackUrlSetting `json:"track_url_setting,omitempty"`

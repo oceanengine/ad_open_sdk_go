@@ -13,8 +13,12 @@ package models
 // ToolsClueFormDetailV2ResponseDataElementsInner struct for ToolsClueFormDetailV2ResponseDataElementsInner
 type ToolsClueFormDetailV2ResponseDataElementsInner struct {
 	AllowEmpty *ToolsClueFormDetailV2DataElementsAllowEmpty `json:"allow_empty,omitempty"`
-	IsUnique   *ToolsClueFormDetailV2DataElementsIsUnique   `json:"is_unique,omitempty"`
+	//
+	ElementId *int64                                     `json:"element_id,omitempty"`
+	IsUnique  *ToolsClueFormDetailV2DataElementsIsUnique `json:"is_unique,omitempty"`
 	//
 	Label *string                                `json:"label,omitempty"`
 	Type  *ToolsClueFormDetailV2DataElementsType `json:"type,omitempty"`
+	//
+	Value *string `json:"value,omitempty"`
 }

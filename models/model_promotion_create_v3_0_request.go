@@ -42,8 +42,10 @@ type PromotionCreateV30Request struct {
 	NativeSetting *PromotionCreateV30RequestNativeSetting `json:"native_setting,omitempty"`
 	Operation     *PromotionCreateV30Operation            `json:"operation,omitempty"`
 	//
-	ProjectId          int64                                       `json:"project_id"`
-	PromotionMaterials PromotionCreateV30RequestPromotionMaterials `json:"promotion_materials"`
+	ProjectId          int64                                        `json:"project_id"`
+	PromotionMaterials *PromotionCreateV30RequestPromotionMaterials `json:"promotion_materials,omitempty"`
+	//
+	PromotionRelatedProduct []*PromotionCreateV30RequestPromotionRelatedProductInner `json:"promotion_related_product,omitempty"`
 	//
 	RoiGoal *float64 `json:"roi_goal,omitempty"`
 	//

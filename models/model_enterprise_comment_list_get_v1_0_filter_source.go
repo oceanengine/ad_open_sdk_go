@@ -15,11 +15,11 @@ type EnterpriseCommentListGetV10FilterSource string
 
 // List of enterprise_comment_list_get_v1.0_filter_source
 const (
+	FROM_PERFORM_EnterpriseCommentListGetV10FilterSource EnterpriseCommentListGetV10FilterSource = "FROM_PERFORM"
 	FROM_NATURAL_EnterpriseCommentListGetV10FilterSource EnterpriseCommentListGetV10FilterSource = "FROM_NATURAL"
+	FROM_OTHER_EnterpriseCommentListGetV10FilterSource   EnterpriseCommentListGetV10FilterSource = "FROM_OTHER"
 	FROM_DOUPLUS_EnterpriseCommentListGetV10FilterSource EnterpriseCommentListGetV10FilterSource = "FROM_DOUPLUS"
 	FROM_BRAND_EnterpriseCommentListGetV10FilterSource   EnterpriseCommentListGetV10FilterSource = "FROM_BRAND"
-	FROM_PERFORM_EnterpriseCommentListGetV10FilterSource EnterpriseCommentListGetV10FilterSource = "FROM_PERFORM"
-	FROM_OTHER_EnterpriseCommentListGetV10FilterSource   EnterpriseCommentListGetV10FilterSource = "FROM_OTHER"
 )
 
 // Ptr returns reference to enterprise_comment_list_get_v1.0_filter_source value
