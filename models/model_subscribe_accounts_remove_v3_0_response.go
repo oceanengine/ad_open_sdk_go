@@ -13,9 +13,8 @@ package models
 // SubscribeAccountsRemoveV30Response struct for SubscribeAccountsRemoveV30Response
 type SubscribeAccountsRemoveV30Response struct {
 	//
-	Code *int64 `json:"code,omitempty"`
-	//
-	Data map[string]interface{} `json:"data,omitempty"`
+	Code *int64                                  `json:"code,omitempty"`
+	Data *SubscribeAccountsRemoveV30ResponseData `json:"data,omitempty"`
 	//
 	Message *string `json:"message,omitempty"`
 	//

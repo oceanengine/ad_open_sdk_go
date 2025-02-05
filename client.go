@@ -1,5 +1,5 @@
 /*
-API version: 1.1.33
+API version: 1.1.35
 */
 package ad_open_sdk_go
 
@@ -177,6 +177,10 @@ func (c *Client) AgentAdvBrandListQueryV2Api() *api.AgentAdvBrandListQueryV2ApiS
 
 func (c *Client) AgentAdvCostReportListQueryV2Api() *api.AgentAdvCostReportListQueryV2ApiService {
 	return c.ApiClient.AgentAdvCostReportListQueryV2Api
+}
+
+func (c *Client) AgentAdvPerenniallyPunishHistoryQueryV2Api() *api.AgentAdvPerenniallyPunishHistoryQueryV2ApiService {
+	return c.ApiClient.AgentAdvPerenniallyPunishHistoryQueryV2Api
 }
 
 func (c *Client) AgentAdvertiserAssignV2Api() *api.AgentAdvertiserAssignV2ApiService {
@@ -565,6 +569,22 @@ func (c *Client) CgTransferWalletTransferDetailV30Api() *api.CgTransferWalletTra
 
 func (c *Client) CgTransferWalletTransferListV30Api() *api.CgTransferWalletTransferListV30ApiService {
 	return c.ApiClient.CgTransferWalletTransferListV30Api
+}
+
+func (c *Client) ClueCaCreateV2Api() *api.ClueCaCreateV2ApiService {
+	return c.ApiClient.ClueCaCreateV2Api
+}
+
+func (c *Client) ClueCaInterfaceCreateV2Api() *api.ClueCaInterfaceCreateV2ApiService {
+	return c.ApiClient.ClueCaInterfaceCreateV2Api
+}
+
+func (c *Client) ClueCaInterfaceUpdateV2Api() *api.ClueCaInterfaceUpdateV2ApiService {
+	return c.ApiClient.ClueCaInterfaceUpdateV2Api
+}
+
+func (c *Client) ClueCaUpdateV2Api() *api.ClueCaUpdateV2ApiService {
+	return c.ApiClient.ClueCaUpdateV2Api
 }
 
 func (c *Client) ClueCouponCodeConsumeV2Api() *api.ClueCouponCodeConsumeV2ApiService {
@@ -1771,18 +1791,6 @@ func (c *Client) QianchuanCarouselGetV10Api() *api.QianchuanCarouselGetV10ApiSer
 	return c.ApiClient.QianchuanCarouselGetV10Api
 }
 
-func (c *Client) QianchuanCreativeGetV10Api() *api.QianchuanCreativeGetV10ApiService {
-	return c.ApiClient.QianchuanCreativeGetV10Api
-}
-
-func (c *Client) QianchuanCreativeRejectReasonV10Api() *api.QianchuanCreativeRejectReasonV10ApiService {
-	return c.ApiClient.QianchuanCreativeRejectReasonV10Api
-}
-
-func (c *Client) QianchuanCreativeStatusUpdateV10Api() *api.QianchuanCreativeStatusUpdateV10ApiService {
-	return c.ApiClient.QianchuanCreativeStatusUpdateV10Api
-}
-
 func (c *Client) QianchuanDmpAudiencesGetV10Api() *api.QianchuanDmpAudiencesGetV10ApiService {
 	return c.ApiClient.QianchuanDmpAudiencesGetV10Api
 }
@@ -1881,10 +1889,6 @@ func (c *Client) QianchuanReportAdMaterialGetV10Api() *api.QianchuanReportAdMate
 
 func (c *Client) QianchuanReportAdvertiserGetV10Api() *api.QianchuanReportAdvertiserGetV10ApiService {
 	return c.ApiClient.QianchuanReportAdvertiserGetV10Api
-}
-
-func (c *Client) QianchuanReportCreativeGetV10Api() *api.QianchuanReportCreativeGetV10ApiService {
-	return c.ApiClient.QianchuanReportCreativeGetV10Api
 }
 
 func (c *Client) QianchuanReportCustomConfigGetV10Api() *api.QianchuanReportCustomConfigGetV10ApiService {
@@ -2233,10 +2237,6 @@ func (c *Client) ReportLiveRoomAudiencePortraitGetV2Api() *api.ReportLiveRoomAud
 
 func (c *Client) ReportLiveRoomFlowCategoryGetV2Api() *api.ReportLiveRoomFlowCategoryGetV2ApiService {
 	return c.ApiClient.ReportLiveRoomFlowCategoryGetV2Api
-}
-
-func (c *Client) ReportLiveRoomProductGetV2Api() *api.ReportLiveRoomProductGetV2ApiService {
-	return c.ApiClient.ReportLiveRoomProductGetV2Api
 }
 
 func (c *Client) ReportProductAsyncTaskDownloadV30Api() *api.ReportProductAsyncTaskDownloadV30ApiService {

@@ -13,7 +13,16 @@ package models
 // LocalReportMaterialGetV30Filtering
 type LocalReportMaterialGetV30Filtering struct {
 	CampaignType *LocalReportMaterialGetV30FilteringCampaignType `json:"campaign_type,omitempty"`
+	//
+	CdpProjectIds []int64 `json:"cdp_project_ids,omitempty"`
+	//
+	DeliveryMode []*LocalReportMaterialGetV30FilteringDeliveryMode `json:"delivery_mode,omitempty"`
+	//
+	ExternalAction     []*LocalReportMaterialGetV30FilteringExternalAction   `json:"external_action,omitempty"`
+	LocalDeliveryScene *LocalReportMaterialGetV30FilteringLocalDeliveryScene `json:"local_delivery_scene,omitempty"`
 	// 素材ID，查询素材id。 注意：material_id是个维度条件，如果不传，查询的是本地推广告账户ID全部聚合后数据；如果仅传入字符串material_ids，查询的是维度明细是素材维度数据；如果传入数值，查询的是具体素材id数据
 	MaterialIds  []int64                                         `json:"material_ids,omitempty"`
 	MaterialType *LocalReportMaterialGetV30FilteringMaterialType `json:"material_type,omitempty"`
+	//
+	PromotionIds []int64 `json:"promotion_ids,omitempty"`
 }

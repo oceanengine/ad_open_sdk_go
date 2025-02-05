@@ -48,6 +48,8 @@ type LocalReportMaterialGetV30ResponseDataMaterialListInner struct {
 	ConversionRate *float64 `json:"conversion_rate,omitempty"`
 	// 转化数
 	ConvertCnt *int64 `json:"convert_cnt,omitempty"`
+	//
+	CostPerVideoOtoPayOrder7d *float64 `json:"cost_per_video_oto_pay_order_7d,omitempty"`
 	// 点击均价(元)
 	CpcPlatform *float64 `json:"cpc_platform,omitempty"`
 	// 平均千次展示费用(元)
@@ -60,6 +62,8 @@ type LocalReportMaterialGetV30ResponseDataMaterialListInner struct {
 	DyComment *int64 `json:"dy_comment,omitempty"`
 	// 粉丝量
 	DyFollow *int64 `json:"dy_follow,omitempty"`
+	//
+	DyHomeVisited *int64 `json:"dy_home_visited,omitempty"`
 	// 视频点赞次数
 	DyLike *int64 `json:"dy_like,omitempty"`
 	// 视频点赞率
@@ -74,6 +78,14 @@ type LocalReportMaterialGetV30ResponseDataMaterialListInner struct {
 	IntentionMessageClueCnt *int64 `json:"intention_message_clue_cnt,omitempty"`
 	// 意向话单数
 	IntentionPhoneCnt *int64 `json:"intention_phone_cnt,omitempty"`
+	//
+	LiveGrouponProductClickCount *int64 `json:"live_groupon_product_click_count,omitempty"`
+	//
+	LiveOtoPayOrderCount *int64 `json:"live_oto_pay_order_count,omitempty"`
+	//
+	LiveOtoPayOrderRoi *float64 `json:"live_oto_pay_order_roi,omitempty"`
+	//
+	LiveOtoPayOrderStatAmount *float64 `json:"live_oto_pay_order_stat_amount,omitempty"`
 	// 直播间超1分钟停留次数
 	LiveWatchOneMinuteCount *int64 `json:"live_watch_one_minute_count,omitempty"`
 	// 直播间评论次数
@@ -89,6 +101,12 @@ type LocalReportMaterialGetV30ResponseDataMaterialListInner struct {
 	MaterialType *LocalReportMaterialGetV30DataMaterialListMaterialType `json:"material_type,omitempty"`
 	// 私信咨询数
 	MessageActionCnt *int64 `json:"message_action_cnt,omitempty"`
+	//
+	OtoPayOrderAmount *float64 `json:"oto_pay_order_amount,omitempty"`
+	//
+	OtoPayOrderCount *int64 `json:"oto_pay_order_count,omitempty"`
+	//
+	OtoPayOrderRoi *float64 `json:"oto_pay_order_roi,omitempty"`
 	// 电话拨打数
 	PhoneConfirmCnt *int64 `json:"phone_confirm_cnt,omitempty"`
 	// 电话接通数
@@ -119,4 +137,16 @@ type LocalReportMaterialGetV30ResponseDataMaterialListInner struct {
 	StatTimeHour *string `json:"stat_time_hour,omitempty"`
 	// 视频播放次数
 	TotalPlay *int64 `json:"total_play,omitempty"`
+	//
+	VideoOtoPayOrderCount *int64 `json:"video_oto_pay_order_count,omitempty"`
+	//
+	VideoOtoPayOrderCount7d *int64 `json:"video_oto_pay_order_count_7d,omitempty"`
+	//
+	VideoOtoPayOrderRoi *float64 `json:"video_oto_pay_order_roi,omitempty"`
+	//
+	VideoOtoPayOrderRoi7d *float64 `json:"video_oto_pay_order_roi_7d,omitempty"`
+	//
+	VideoOtoPayOrderStatAmount *float64 `json:"video_oto_pay_order_stat_amount,omitempty"`
+	//
+	VideoOtoPayOrderStatAmount7d *float64 `json:"video_oto_pay_order_stat_amount_7d,omitempty"`
 }

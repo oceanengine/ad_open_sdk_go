@@ -15,9 +15,9 @@ type ToolsEstimateAudienceV2LocationType string
 
 // List of tools_estimate_audience_v2_location_type
 const (
+	TRAVEL_ToolsEstimateAudienceV2LocationType  ToolsEstimateAudienceV2LocationType = "TRAVEL"
 	HOME_ToolsEstimateAudienceV2LocationType    ToolsEstimateAudienceV2LocationType = "HOME"
 	ALL_ToolsEstimateAudienceV2LocationType     ToolsEstimateAudienceV2LocationType = "ALL"
-	TRAVEL_ToolsEstimateAudienceV2LocationType  ToolsEstimateAudienceV2LocationType = "TRAVEL"
 	CURRENT_ToolsEstimateAudienceV2LocationType ToolsEstimateAudienceV2LocationType = "CURRENT"
 )
 

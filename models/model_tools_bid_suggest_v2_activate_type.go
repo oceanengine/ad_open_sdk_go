@@ -17,8 +17,8 @@ type ToolsBidSuggestV2ActivateType string
 const (
 	THREE_MONTH_EAILIER_ToolsBidSuggestV2ActivateType     ToolsBidSuggestV2ActivateType = "THREE_MONTH_EAILIER"
 	UNLIMITED_ToolsBidSuggestV2ActivateType               ToolsBidSuggestV2ActivateType = "UNLIMITED"
-	WITH_IN_A_MONTH_ToolsBidSuggestV2ActivateType         ToolsBidSuggestV2ActivateType = "WITH_IN_A_MONTH"
 	ONE_MONTH_2_THREE_MONTH_ToolsBidSuggestV2ActivateType ToolsBidSuggestV2ActivateType = "ONE_MONTH_2_THREE_MONTH"
+	WITH_IN_A_MONTH_ToolsBidSuggestV2ActivateType         ToolsBidSuggestV2ActivateType = "WITH_IN_A_MONTH"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_activate_type value

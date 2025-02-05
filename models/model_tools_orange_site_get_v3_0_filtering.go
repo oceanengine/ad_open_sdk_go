@@ -15,6 +15,5 @@ type ToolsOrangeSiteGetV30Filtering struct {
 	//
 	MicroAppInstanceId *int64 `json:"micro_app_instance_id,omitempty"`
 	//
-	Search     *string                                   `json:"search,omitempty"`
-	SearchMode *ToolsOrangeSiteGetV30FilteringSearchMode `json:"search_mode,omitempty"`
+	Search *string `json:"search,omitempty"`
 }

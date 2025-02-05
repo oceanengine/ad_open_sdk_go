@@ -13,9 +13,8 @@ package models
 // SubscribeAccountsAddV30Response struct for SubscribeAccountsAddV30Response
 type SubscribeAccountsAddV30Response struct {
 	//
-	Code *int64 `json:"code,omitempty"`
-	//
-	Data map[string]interface{} `json:"data,omitempty"`
+	Code *int64                               `json:"code,omitempty"`
+	Data *SubscribeAccountsAddV30ResponseData `json:"data,omitempty"`
 	//
 	Message *string `json:"message,omitempty"`
 	//

@@ -10,14 +10,12 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderListV30ResponseDataOrdersInnerMagazinePriceInfo 刊例信息
+// BrandOrderListV30ResponseDataOrdersInnerMagazinePriceInfo 价格信息
 type BrandOrderListV30ResponseDataOrdersInnerMagazinePriceInfo struct {
-	//
+	// 政策折扣
 	Discount *string `json:"discount,omitempty"`
 	// 刊例单价
 	PublishPrice *string `json:"publish_price,omitempty"`
 	// 政策单价
 	SellPrice *string `json:"sell_price,omitempty"`
-	// 政策总价
-	TotalSellPrice *string `json:"total_sell_price,omitempty"`
 }

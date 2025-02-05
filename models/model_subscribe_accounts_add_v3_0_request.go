@@ -19,7 +19,5 @@ type SubscribeAccountsAddV30Request struct {
 	//
 	CoreUserId int64 `json:"core_user_id"`
 	//
-	Events []string `json:"events,omitempty"`
-	//
 	SubscribeTaskId int64 `json:"subscribe_task_id"`
 }

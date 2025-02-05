@@ -244,6 +244,7 @@ Class | Method | HTTP request
 *AgentAdvBiddingListQueryV2Api* | **OpenApi2AgentAdvBiddingListQueryGet** | **Get** /open_api/2/agent/adv/bidding/list/query/
 *AgentAdvBrandListQueryV2Api* | **OpenApi2AgentAdvBrandListQueryGet** | **Get** /open_api/2/agent/adv/brand/list/query/
 *AgentAdvCostReportListQueryV2Api* | **OpenApi2AgentAdvCostReportListQueryPost** | **Post** /open_api/2/agent/adv/cost_report/list/query/
+*AgentAdvPerenniallyPunishHistoryQueryV2Api* | **OpenApi2AgentAdvPerenniallyPunishHistoryQueryGet** | **Get** /open_api/2/agent/adv/perennially/punish_history/query/
 *AgentAdvertiserAssignV2Api* | **OpenApi2AgentAdvertiserAssignPost** | **Post** /open_api/2/agent/advertiser/assign/
 *AgentAdvertiserCopyV2Api* | **OpenApi2AgentAdvertiserCopyPost** | **Post** /open_api/2/agent/advertiser/copy/
 *AgentAdvertiserInfoQueryV2Api* | **OpenApi2AgentAdvertiserInfoQueryGet** | **Get** /open_api/2/agent/advertiser_info/query/
@@ -341,6 +342,10 @@ Class | Method | HTTP request
 *CgTransferWalletTransferCreateV30Api* | **OpenApiV30CgTransferWalletTransferCreatePost** | **Post** /open_api/v3.0/cg_transfer/wallet/transfer/create/
 *CgTransferWalletTransferDetailV30Api* | **OpenApiV30CgTransferWalletTransferDetailGet** | **Get** /open_api/v3.0/cg_transfer/wallet/transfer/detail/
 *CgTransferWalletTransferListV30Api* | **OpenApiV30CgTransferWalletTransferListGet** | **Get** /open_api/v3.0/cg_transfer/wallet/transfer/list/
+*ClueCaCreateV2Api* | **OpenApi2ClueCaCreatePost** | **Post** /open_api/2/clue/ca/create/
+*ClueCaInterfaceCreateV2Api* | **OpenApi2ClueCaInterfaceCreatePost** | **Post** /open_api/2/clue/ca/interface/create/
+*ClueCaInterfaceUpdateV2Api* | **OpenApi2ClueCaInterfaceUpdatePost** | **Post** /open_api/2/clue/ca/interface/update/
+*ClueCaUpdateV2Api* | **OpenApi2ClueCaUpdatePost** | **Post** /open_api/2/clue/ca/update/
 *ClueCouponCodeConsumeV2Api* | **OpenApi2ClueCouponCodeConsumePost** | **Post** /open_api/2/clue/coupon/code/consume/
 *ClueCouponCodeGetV2Api* | **OpenApi2ClueCouponCodeGetGet** | **Get** /open_api/2/clue/coupon/code/get/
 *ClueCouponCreateV2Api* | **OpenApi2ClueCouponCreatePost** | **Post** /open_api/2/clue/coupon/create/
@@ -642,9 +647,6 @@ Class | Method | HTTP request
 *QianchuanCampaignUpdateV10Api* | **OpenApiV10QianchuanCampaignUpdatePost** | **Post** /open_api/v1.0/qianchuan/campaign/update/
 *QianchuanCarouselAwemeGetV10Api* | **OpenApiV10QianchuanCarouselAwemeGetGet** | **Get** /open_api/v1.0/qianchuan/carousel/aweme/get/
 *QianchuanCarouselGetV10Api* | **OpenApiV10QianchuanCarouselGetGet** | **Get** /open_api/v1.0/qianchuan/carousel/get/
-*QianchuanCreativeGetV10Api* | **OpenApiV10QianchuanCreativeGetGet** | **Get** /open_api/v1.0/qianchuan/creative/get/
-*QianchuanCreativeRejectReasonV10Api* | **OpenApiV10QianchuanCreativeRejectReasonGet** | **Get** /open_api/v1.0/qianchuan/creative/reject_reason/
-*QianchuanCreativeStatusUpdateV10Api* | **OpenApiV10QianchuanCreativeStatusUpdatePost** | **Post** /open_api/v1.0/qianchuan/creative/status/update/
 *QianchuanDmpAudiencesGetV10Api* | **OpenApiV10QianchuanDmpAudiencesGetGet** | **Get** /open_api/v1.0/qianchuan/dmp/audiences/get/
 *QianchuanEstimateEffectV10Api* | **OpenApiV10QianchuanEstimateEffectGet** | **Get** /open_api/v1.0/qianchuan/estimate/effect/
 *QianchuanFileImageDeleteV10Api* | **OpenApiV10QianchuanFileImageDeletePost** | **Post** /open_api/v1.0/qianchuan/file/image/delete/
@@ -670,7 +672,6 @@ Class | Method | HTTP request
 *QianchuanReportAdGetV10Api* | **OpenApiV10QianchuanReportAdGetGet** | **Get** /open_api/v1.0/qianchuan/report/ad/get/
 *QianchuanReportAdMaterialGetV10Api* | **OpenApiV10QianchuanReportAdMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/report/ad/material/get/
 *QianchuanReportAdvertiserGetV10Api* | **OpenApiV10QianchuanReportAdvertiserGetGet** | **Get** /open_api/v1.0/qianchuan/report/advertiser/get/
-*QianchuanReportCreativeGetV10Api* | **OpenApiV10QianchuanReportCreativeGetGet** | **Get** /open_api/v1.0/qianchuan/report/creative/get/
 *QianchuanReportCustomConfigGetV10Api* | **OpenApiV10QianchuanReportCustomConfigGetGet** | **Get** /open_api/v1.0/qianchuan/report/custom/config/get/
 *QianchuanReportCustomGetV10Api* | **OpenApiV10QianchuanReportCustomGetGet** | **Get** /open_api/v1.0/qianchuan/report/custom/get/
 *QianchuanReportLiveGetV10Api* | **OpenApiV10QianchuanReportLiveGetGet** | **Get** /open_api/v1.0/qianchuan/report/live/get/
@@ -758,7 +759,6 @@ Class | Method | HTTP request
 *ReportLiveRoomAttributeGetV2Api* | **OpenApi2ReportLiveRoomAttributeGetGet** | **Get** /open_api/2/report/live_room/attribute/get/
 *ReportLiveRoomAudiencePortraitGetV2Api* | **OpenApi2ReportLiveRoomAudiencePortraitGetGet** | **Get** /open_api/2/report/live_room/audience/portrait/get/
 *ReportLiveRoomFlowCategoryGetV2Api* | **OpenApi2ReportLiveRoomFlowCategoryGetGet** | **Get** /open_api/2/report/live_room/flow_category/get/
-*ReportLiveRoomProductGetV2Api* | **OpenApi2ReportLiveRoomProductGetGet** | **Get** /open_api/2/report/live_room/product/get/
 *ReportProductAsyncTaskDownloadV30Api* | **OpenApiV30ReportProductAsyncTaskDownloadGet** | **Get** /open_api/v3.0/report/product/async_task/download/
 *ReportProductAsyncTaskGetV30Api* | **OpenApiV30ReportProductAsyncTaskGetPost** | **Post** /open_api/v3.0/report/product/async_task/get/
 *ReportProductDailyAsyncTaskCreateV30Api* | **OpenApiV30ReportProductDailyAsyncTaskCreatePost** | **Post** /open_api/v3.0/report/product_daily/async_task/create/

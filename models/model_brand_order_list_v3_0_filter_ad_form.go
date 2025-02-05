@@ -24,6 +24,7 @@ const (
 	FEEDSLIVE_BrandOrderListV30FilterAdForm                 BrandOrderListV30FilterAdForm = "FEEDSLIVE"
 	FEEDSLIVE_AD_BrandOrderListV30FilterAdForm              BrandOrderListV30FilterAdForm = "FEEDSLIVE_AD"
 	FEEDSLIVE_SERVICE_BrandOrderListV30FilterAdForm         BrandOrderListV30FilterAdForm = "FEEDSLIVE_SERVICE"
+	LITE_FEED_BrandOrderListV30FilterAdForm                 BrandOrderListV30FilterAdForm = "LITE_FEED"
 	SEARCH_BrandOrderListV30FilterAdForm                    BrandOrderListV30FilterAdForm = "SEARCH"
 	SPLASH_BrandOrderListV30FilterAdForm                    BrandOrderListV30FilterAdForm = "SPLASH"
 	VIDEOLIVE_AD_BrandOrderListV30FilterAdForm              BrandOrderListV30FilterAdForm = "VIDEOLIVE_AD"

@@ -15,18 +15,18 @@ type ToolsAwemeAuthorInfoGetV2Behaviors string
 
 // List of tools_aweme_author_info_get_v2_behaviors
 const (
-	LIVE_COMMENT_ToolsAwemeAuthorInfoGetV2Behaviors         ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_COMMENT"
 	GOODS_CARTS_ORDER_ToolsAwemeAuthorInfoGetV2Behaviors    ToolsAwemeAuthorInfoGetV2Behaviors = "GOODS_CARTS_ORDER"
-	LIVE_WATCH_ToolsAwemeAuthorInfoGetV2Behaviors           ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_WATCH"
-	LIVE_EFFECTIVE_WATCH_ToolsAwemeAuthorInfoGetV2Behaviors ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_EFFECTIVE_WATCH"
+	LIVE_COMMENT_ToolsAwemeAuthorInfoGetV2Behaviors         ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_COMMENT"
 	LIVE_EXCEPTIONAL_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_EXCEPTIONAL"
-	COMMENTED_USER_ToolsAwemeAuthorInfoGetV2Behaviors       ToolsAwemeAuthorInfoGetV2Behaviors = "COMMENTED_USER"
+	LIVE_GOODS_ORDER_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_GOODS_ORDER"
+	LIVE_WATCH_ToolsAwemeAuthorInfoGetV2Behaviors           ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_WATCH"
 	GOODS_CARTS_CLICK_ToolsAwemeAuthorInfoGetV2Behaviors    ToolsAwemeAuthorInfoGetV2Behaviors = "GOODS_CARTS_CLICK"
+	COMMENTED_USER_ToolsAwemeAuthorInfoGetV2Behaviors       ToolsAwemeAuthorInfoGetV2Behaviors = "COMMENTED_USER"
+	LIVE_EFFECTIVE_WATCH_ToolsAwemeAuthorInfoGetV2Behaviors ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_EFFECTIVE_WATCH"
+	FOLLOWED_USER_ToolsAwemeAuthorInfoGetV2Behaviors        ToolsAwemeAuthorInfoGetV2Behaviors = "FOLLOWED_USER"
+	SHARED_USER_ToolsAwemeAuthorInfoGetV2Behaviors          ToolsAwemeAuthorInfoGetV2Behaviors = "SHARED_USER"
 	LIKED_USER_ToolsAwemeAuthorInfoGetV2Behaviors           ToolsAwemeAuthorInfoGetV2Behaviors = "LIKED_USER"
 	LIVE_GOODS_CLICK_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_GOODS_CLICK"
-	SHARED_USER_ToolsAwemeAuthorInfoGetV2Behaviors          ToolsAwemeAuthorInfoGetV2Behaviors = "SHARED_USER"
-	FOLLOWED_USER_ToolsAwemeAuthorInfoGetV2Behaviors        ToolsAwemeAuthorInfoGetV2Behaviors = "FOLLOWED_USER"
-	LIVE_GOODS_ORDER_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_GOODS_ORDER"
 )
 
 // Ptr returns reference to tools_aweme_author_info_get_v2_behaviors value

@@ -15,9 +15,10 @@ type BrandOrderListV30FilterAppOrigin string
 
 // List of brand_order_list_v3.0_filter_app_origin
 const (
-	AWEME_BrandOrderListV30FilterAppOrigin   BrandOrderListV30FilterAppOrigin = "AWEME"
-	TOUTIAO_BrandOrderListV30FilterAppOrigin BrandOrderListV30FilterAppOrigin = "TOUTIAO"
-	XIGUA_BrandOrderListV30FilterAppOrigin   BrandOrderListV30FilterAppOrigin = "XIGUA"
+	AWEME_BrandOrderListV30FilterAppOrigin          BrandOrderListV30FilterAppOrigin = "AWEME"
+	AWEME_AND_LITE_BrandOrderListV30FilterAppOrigin BrandOrderListV30FilterAppOrigin = "AWEME_AND_LITE"
+	TOUTIAO_BrandOrderListV30FilterAppOrigin        BrandOrderListV30FilterAppOrigin = "TOUTIAO"
+	XIGUA_BrandOrderListV30FilterAppOrigin          BrandOrderListV30FilterAppOrigin = "XIGUA"
 )
 
 // Ptr returns reference to brand_order_list_v3.0_filter_app_origin value

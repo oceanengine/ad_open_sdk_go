@@ -33,6 +33,7 @@ const (
 	ROI_COEFFICIENT_ProjectListV30DataListDeliverySettingDeepBidType              ProjectListV30DataListDeliverySettingDeepBidType = "ROI_COEFFICIENT"
 	ROI_DIRECT_MAIL_ProjectListV30DataListDeliverySettingDeepBidType              ProjectListV30DataListDeliverySettingDeepBidType = "ROI_DIRECT_MAIL"
 	ROI_PACING_ProjectListV30DataListDeliverySettingDeepBidType                   ProjectListV30DataListDeliverySettingDeepBidType = "ROI_PACING"
+	RTA_DOUBLE_BID_ProjectListV30DataListDeliverySettingDeepBidType               ProjectListV30DataListDeliverySettingDeepBidType = "RTA_DOUBLE_BID"
 	SMARTBID_ProjectListV30DataListDeliverySettingDeepBidType                     ProjectListV30DataListDeliverySettingDeepBidType = "SMARTBID"
 	SOCIAL_ROI_ProjectListV30DataListDeliverySettingDeepBidType                   ProjectListV30DataListDeliverySettingDeepBidType = "SOCIAL_ROI"
 )

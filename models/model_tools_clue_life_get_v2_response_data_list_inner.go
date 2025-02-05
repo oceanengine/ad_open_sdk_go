@@ -72,6 +72,8 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	Name *string `json:"name,omitempty"`
 	// 订单ID
 	OrderId *int64 `json:"order_id,omitempty"`
+	// 订单状态，包括交易成功、交易关闭、部分支付、支付成功、履约中
+	OrderStatus *string `json:"order_status,omitempty"`
 	// 广告ID
 	PromotionId *int64 `json:"promotion_id,omitempty"`
 	// 广告名称

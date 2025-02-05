@@ -20,6 +20,7 @@ const (
 	APP_AudiencePackageGetV30DataAudiencePackagesHideIfConverted          AudiencePackageGetV30DataAudiencePackagesHideIfConverted = "APP"
 	CAMPAIGN_AudiencePackageGetV30DataAudiencePackagesHideIfConverted     AudiencePackageGetV30DataAudiencePackagesHideIfConverted = "CAMPAIGN"
 	CUSTOMER_AudiencePackageGetV30DataAudiencePackagesHideIfConverted     AudiencePackageGetV30DataAudiencePackagesHideIfConverted = "CUSTOMER"
+	GLOBAL_APP_AudiencePackageGetV30DataAudiencePackagesHideIfConverted   AudiencePackageGetV30DataAudiencePackagesHideIfConverted = "GLOBAL_APP"
 	NO_EXCLUDE_AudiencePackageGetV30DataAudiencePackagesHideIfConverted   AudiencePackageGetV30DataAudiencePackagesHideIfConverted = "NO_EXCLUDE"
 	ORGANIZATION_AudiencePackageGetV30DataAudiencePackagesHideIfConverted AudiencePackageGetV30DataAudiencePackagesHideIfConverted = "ORGANIZATION"
 )

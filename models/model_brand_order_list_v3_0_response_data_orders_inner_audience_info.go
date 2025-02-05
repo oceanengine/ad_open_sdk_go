@@ -10,23 +10,17 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderListV30ResponseDataOrdersInnerAudienceInfo 定向
+// BrandOrderListV30ResponseDataOrdersInnerAudienceInfo 定向人群
 type BrandOrderListV30ResponseDataOrdersInnerAudienceInfo struct {
 	Ac *BrandOrderListV30DataOrdersAudienceInfoAc `json:"ac,omitempty"`
-	// 兴趣行为
-	ActionCategory []int64 `json:"action_category,omitempty"`
+	// 兴趣
+	ActionCategories []int64 `json:"action_categories,omitempty"`
 	// 年龄
-	Age []*[]int64 `json:"age,omitempty"`
-	// 城市
-	City []int64 `json:"city,omitempty"`
-	// 人群包ID
-	DisplayRetargetingAgs []int64                                                 `json:"display_retargeting_ags,omitempty"`
-	DistrictType          *BrandOrderListV30DataOrdersAudienceInfoDistrictType    `json:"district_type,omitempty"`
-	ExcludeDistrict       *BrandOrderListV30DataOrdersAudienceInfoExcludeDistrict `json:"exclude_district,omitempty"`
-	Gender                *BrandOrderListV30DataOrdersAudienceInfoGender          `json:"gender,omitempty"`
-	LocationType          *BrandOrderListV30DataOrdersAudienceInfoLocationType    `json:"location_type,omitempty"`
-	Platform              *BrandOrderListV30DataOrdersAudienceInfoPlatform        `json:"platform,omitempty"`
-	// 省份
-	Province        []int64                                                 `json:"province,omitempty"`
-	RetargetingType *BrandOrderListV30DataOrdersAudienceInfoRetargetingType `json:"retargeting_type,omitempty"`
+	Ages []*BrandOrderListV30DataOrdersAudienceInfoAges `json:"ages,omitempty"`
+	// 优选人群拓展
+	AutoExtendTargets []string                                                             `json:"auto_extend_targets,omitempty"`
+	DistrictInfo      *BrandOrderListV30ResponseDataOrdersInnerAudienceInfoDistrictInfo    `json:"district_info,omitempty"`
+	Gender            *BrandOrderListV30DataOrdersAudienceInfoGender                       `json:"gender,omitempty"`
+	Platform          *BrandOrderListV30DataOrdersAudienceInfoPlatform                     `json:"platform,omitempty"`
+	RetargetingInfo   *BrandOrderListV30ResponseDataOrdersInnerAudienceInfoRetargetingInfo `json:"retargeting_info,omitempty"`
 }

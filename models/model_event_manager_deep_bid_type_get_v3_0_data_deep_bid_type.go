@@ -33,6 +33,7 @@ const (
 	ROI_COEFFICIENT_EventManagerDeepBidTypeGetV30DataDeepBidType              EventManagerDeepBidTypeGetV30DataDeepBidType = "ROI_COEFFICIENT"
 	ROI_DIRECT_MAIL_EventManagerDeepBidTypeGetV30DataDeepBidType              EventManagerDeepBidTypeGetV30DataDeepBidType = "ROI_DIRECT_MAIL"
 	ROI_PACING_EventManagerDeepBidTypeGetV30DataDeepBidType                   EventManagerDeepBidTypeGetV30DataDeepBidType = "ROI_PACING"
+	RTA_DOUBLE_BID_EventManagerDeepBidTypeGetV30DataDeepBidType               EventManagerDeepBidTypeGetV30DataDeepBidType = "RTA_DOUBLE_BID"
 	SMARTBID_EventManagerDeepBidTypeGetV30DataDeepBidType                     EventManagerDeepBidTypeGetV30DataDeepBidType = "SMARTBID"
 	SOCIAL_ROI_EventManagerDeepBidTypeGetV30DataDeepBidType                   EventManagerDeepBidTypeGetV30DataDeepBidType = "SOCIAL_ROI"
 )

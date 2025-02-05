@@ -16,8 +16,18 @@ type LocalReportProjectGetV30FilteringExternalAction string
 // List of local_report_project_get_v3.0_filtering_external_action
 const (
 	CLUE_ACQUISITION_LocalReportProjectGetV30FilteringExternalAction           LocalReportProjectGetV30FilteringExternalAction = "CLUE_ACQUISITION"
+	FOLLOW_ACTION_LocalReportProjectGetV30FilteringExternalAction              LocalReportProjectGetV30FilteringExternalAction = "FOLLOW_ACTION"
 	INTENTION_CLUE_ACQUISITION_LocalReportProjectGetV30FilteringExternalAction LocalReportProjectGetV30FilteringExternalAction = "INTENTION_CLUE_ACQUISITION"
+	LIVE_ENGAGEMENT_LocalReportProjectGetV30FilteringExternalAction            LocalReportProjectGetV30FilteringExternalAction = "LIVE_ENGAGEMENT"
+	LIVE_ENTER_ACTION_LocalReportProjectGetV30FilteringExternalAction          LocalReportProjectGetV30FilteringExternalAction = "LIVE_ENTER_ACTION"
+	LIVE_OTO_CLICK_LocalReportProjectGetV30FilteringExternalAction             LocalReportProjectGetV30FilteringExternalAction = "LIVE_OTO_CLICK"
+	LIVE_OTO_GROUP_BUYING_LocalReportProjectGetV30FilteringExternalAction      LocalReportProjectGetV30FilteringExternalAction = "LIVE_OTO_GROUP_BUYING"
+	LIVE_STAY_TIME_LocalReportProjectGetV30FilteringExternalAction             LocalReportProjectGetV30FilteringExternalAction = "LIVE_STAY_TIME"
+	NATIVE_ACTION_LocalReportProjectGetV30FilteringExternalAction              LocalReportProjectGetV30FilteringExternalAction = "NATIVE_ACTION"
+	OTO_PAY_LocalReportProjectGetV30FilteringExternalAction                    LocalReportProjectGetV30FilteringExternalAction = "OTO_PAY"
+	POI_RECOMMEND_LocalReportProjectGetV30FilteringExternalAction              LocalReportProjectGetV30FilteringExternalAction = "POI_RECOMMEND"
 	PRIVATE_MESSAGE_LocalReportProjectGetV30FilteringExternalAction            LocalReportProjectGetV30FilteringExternalAction = "PRIVATE_MESSAGE"
+	SHOW_LocalReportProjectGetV30FilteringExternalAction                       LocalReportProjectGetV30FilteringExternalAction = "SHOW"
 )
 
 // Ptr returns reference to local_report_project_get_v3.0_filtering_external_action value

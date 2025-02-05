@@ -15,8 +15,8 @@ type DpaVideoGetV2DataListVideoInfoStatus string
 
 // List of dpa_video_get_v2_data_list_video_info_status
 const (
-	UNAVAILABLE_DpaVideoGetV2DataListVideoInfoStatus DpaVideoGetV2DataListVideoInfoStatus = "UNAVAILABLE"
 	AVAILABLE_DpaVideoGetV2DataListVideoInfoStatus   DpaVideoGetV2DataListVideoInfoStatus = "AVAILABLE"
+	UNAVAILABLE_DpaVideoGetV2DataListVideoInfoStatus DpaVideoGetV2DataListVideoInfoStatus = "UNAVAILABLE"
 )
 
 // Ptr returns reference to dpa_video_get_v2_data_list_video_info_status value

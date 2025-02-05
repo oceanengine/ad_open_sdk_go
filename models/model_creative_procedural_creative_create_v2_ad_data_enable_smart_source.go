@@ -15,8 +15,8 @@ type CreativeProceduralCreativeCreateV2AdDataEnableSmartSource string
 
 // List of creative_procedural_creative_create_v2_ad_data_enable_smart_source
 const (
-	OFF_CreativeProceduralCreativeCreateV2AdDataEnableSmartSource CreativeProceduralCreativeCreateV2AdDataEnableSmartSource = "OFF"
 	ON_CreativeProceduralCreativeCreateV2AdDataEnableSmartSource  CreativeProceduralCreativeCreateV2AdDataEnableSmartSource = "ON"
+	OFF_CreativeProceduralCreativeCreateV2AdDataEnableSmartSource CreativeProceduralCreativeCreateV2AdDataEnableSmartSource = "OFF"
 )
 
 // Ptr returns reference to creative_procedural_creative_create_v2_ad_data_enable_smart_source value

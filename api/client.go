@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.33
+// APIClient manages communication with the Oceanengine Open Api API v1.1.35
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -126,6 +126,8 @@ type APIClient struct {
 	AgentAdvBrandListQueryV2Api *AgentAdvBrandListQueryV2ApiService
 
 	AgentAdvCostReportListQueryV2Api *AgentAdvCostReportListQueryV2ApiService
+
+	AgentAdvPerenniallyPunishHistoryQueryV2Api *AgentAdvPerenniallyPunishHistoryQueryV2ApiService
 
 	AgentAdvertiserAssignV2Api *AgentAdvertiserAssignV2ApiService
 
@@ -320,6 +322,14 @@ type APIClient struct {
 	CgTransferWalletTransferDetailV30Api *CgTransferWalletTransferDetailV30ApiService
 
 	CgTransferWalletTransferListV30Api *CgTransferWalletTransferListV30ApiService
+
+	ClueCaCreateV2Api *ClueCaCreateV2ApiService
+
+	ClueCaInterfaceCreateV2Api *ClueCaInterfaceCreateV2ApiService
+
+	ClueCaInterfaceUpdateV2Api *ClueCaInterfaceUpdateV2ApiService
+
+	ClueCaUpdateV2Api *ClueCaUpdateV2ApiService
 
 	ClueCouponCodeConsumeV2Api *ClueCouponCodeConsumeV2ApiService
 
@@ -923,12 +933,6 @@ type APIClient struct {
 
 	QianchuanCarouselGetV10Api *QianchuanCarouselGetV10ApiService
 
-	QianchuanCreativeGetV10Api *QianchuanCreativeGetV10ApiService
-
-	QianchuanCreativeRejectReasonV10Api *QianchuanCreativeRejectReasonV10ApiService
-
-	QianchuanCreativeStatusUpdateV10Api *QianchuanCreativeStatusUpdateV10ApiService
-
 	QianchuanDmpAudiencesGetV10Api *QianchuanDmpAudiencesGetV10ApiService
 
 	QianchuanEstimateEffectV10Api *QianchuanEstimateEffectV10ApiService
@@ -978,8 +982,6 @@ type APIClient struct {
 	QianchuanReportAdMaterialGetV10Api *QianchuanReportAdMaterialGetV10ApiService
 
 	QianchuanReportAdvertiserGetV10Api *QianchuanReportAdvertiserGetV10ApiService
-
-	QianchuanReportCreativeGetV10Api *QianchuanReportCreativeGetV10ApiService
 
 	QianchuanReportCustomConfigGetV10Api *QianchuanReportCustomConfigGetV10ApiService
 
@@ -1154,8 +1156,6 @@ type APIClient struct {
 	ReportLiveRoomAudiencePortraitGetV2Api *ReportLiveRoomAudiencePortraitGetV2ApiService
 
 	ReportLiveRoomFlowCategoryGetV2Api *ReportLiveRoomFlowCategoryGetV2ApiService
-
-	ReportLiveRoomProductGetV2Api *ReportLiveRoomProductGetV2ApiService
 
 	ReportProductAsyncTaskDownloadV30Api *ReportProductAsyncTaskDownloadV30ApiService
 
@@ -1938,6 +1938,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AgentAdvBiddingListQueryV2Api = (*AgentAdvBiddingListQueryV2ApiService)(&c.common)
 	c.AgentAdvBrandListQueryV2Api = (*AgentAdvBrandListQueryV2ApiService)(&c.common)
 	c.AgentAdvCostReportListQueryV2Api = (*AgentAdvCostReportListQueryV2ApiService)(&c.common)
+	c.AgentAdvPerenniallyPunishHistoryQueryV2Api = (*AgentAdvPerenniallyPunishHistoryQueryV2ApiService)(&c.common)
 	c.AgentAdvertiserAssignV2Api = (*AgentAdvertiserAssignV2ApiService)(&c.common)
 	c.AgentAdvertiserCopyV2Api = (*AgentAdvertiserCopyV2ApiService)(&c.common)
 	c.AgentAdvertiserInfoQueryV2Api = (*AgentAdvertiserInfoQueryV2ApiService)(&c.common)
@@ -2035,6 +2036,10 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.CgTransferWalletTransferCreateV30Api = (*CgTransferWalletTransferCreateV30ApiService)(&c.common)
 	c.CgTransferWalletTransferDetailV30Api = (*CgTransferWalletTransferDetailV30ApiService)(&c.common)
 	c.CgTransferWalletTransferListV30Api = (*CgTransferWalletTransferListV30ApiService)(&c.common)
+	c.ClueCaCreateV2Api = (*ClueCaCreateV2ApiService)(&c.common)
+	c.ClueCaInterfaceCreateV2Api = (*ClueCaInterfaceCreateV2ApiService)(&c.common)
+	c.ClueCaInterfaceUpdateV2Api = (*ClueCaInterfaceUpdateV2ApiService)(&c.common)
+	c.ClueCaUpdateV2Api = (*ClueCaUpdateV2ApiService)(&c.common)
 	c.ClueCouponCodeConsumeV2Api = (*ClueCouponCodeConsumeV2ApiService)(&c.common)
 	c.ClueCouponCodeGetV2Api = (*ClueCouponCodeGetV2ApiService)(&c.common)
 	c.ClueCouponCreateV2Api = (*ClueCouponCreateV2ApiService)(&c.common)
@@ -2336,9 +2341,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanCampaignUpdateV10Api = (*QianchuanCampaignUpdateV10ApiService)(&c.common)
 	c.QianchuanCarouselAwemeGetV10Api = (*QianchuanCarouselAwemeGetV10ApiService)(&c.common)
 	c.QianchuanCarouselGetV10Api = (*QianchuanCarouselGetV10ApiService)(&c.common)
-	c.QianchuanCreativeGetV10Api = (*QianchuanCreativeGetV10ApiService)(&c.common)
-	c.QianchuanCreativeRejectReasonV10Api = (*QianchuanCreativeRejectReasonV10ApiService)(&c.common)
-	c.QianchuanCreativeStatusUpdateV10Api = (*QianchuanCreativeStatusUpdateV10ApiService)(&c.common)
 	c.QianchuanDmpAudiencesGetV10Api = (*QianchuanDmpAudiencesGetV10ApiService)(&c.common)
 	c.QianchuanEstimateEffectV10Api = (*QianchuanEstimateEffectV10ApiService)(&c.common)
 	c.QianchuanFileImageDeleteV10Api = (*QianchuanFileImageDeleteV10ApiService)(&c.common)
@@ -2364,7 +2366,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanReportAdGetV10Api = (*QianchuanReportAdGetV10ApiService)(&c.common)
 	c.QianchuanReportAdMaterialGetV10Api = (*QianchuanReportAdMaterialGetV10ApiService)(&c.common)
 	c.QianchuanReportAdvertiserGetV10Api = (*QianchuanReportAdvertiserGetV10ApiService)(&c.common)
-	c.QianchuanReportCreativeGetV10Api = (*QianchuanReportCreativeGetV10ApiService)(&c.common)
 	c.QianchuanReportCustomConfigGetV10Api = (*QianchuanReportCustomConfigGetV10ApiService)(&c.common)
 	c.QianchuanReportCustomGetV10Api = (*QianchuanReportCustomGetV10ApiService)(&c.common)
 	c.QianchuanReportLiveGetV10Api = (*QianchuanReportLiveGetV10ApiService)(&c.common)
@@ -2452,7 +2453,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ReportLiveRoomAttributeGetV2Api = (*ReportLiveRoomAttributeGetV2ApiService)(&c.common)
 	c.ReportLiveRoomAudiencePortraitGetV2Api = (*ReportLiveRoomAudiencePortraitGetV2ApiService)(&c.common)
 	c.ReportLiveRoomFlowCategoryGetV2Api = (*ReportLiveRoomFlowCategoryGetV2ApiService)(&c.common)
-	c.ReportLiveRoomProductGetV2Api = (*ReportLiveRoomProductGetV2ApiService)(&c.common)
 	c.ReportProductAsyncTaskDownloadV30Api = (*ReportProductAsyncTaskDownloadV30ApiService)(&c.common)
 	c.ReportProductAsyncTaskGetV30Api = (*ReportProductAsyncTaskGetV30ApiService)(&c.common)
 	c.ReportProductDailyAsyncTaskCreateV30Api = (*ReportProductDailyAsyncTaskCreateV30ApiService)(&c.common)

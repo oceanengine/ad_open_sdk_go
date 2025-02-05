@@ -13,6 +13,8 @@ package models
 // LocalReportPromotionGetV30Filtering
 type LocalReportPromotionGetV30Filtering struct {
 	CampaignType *LocalReportPromotionGetV30FilteringCampaignType `json:"campaign_type,omitempty"`
+	//
+	DeliveryMode []*LocalReportPromotionGetV30FilteringDeliveryMode `json:"delivery_mode,omitempty"`
 	// 优化目标
 	ExternalAction     []*LocalReportPromotionGetV30FilteringExternalAction   `json:"external_action,omitempty"`
 	LocalDeliveryScene *LocalReportPromotionGetV30FilteringLocalDeliveryScene `json:"local_delivery_scene,omitempty"`

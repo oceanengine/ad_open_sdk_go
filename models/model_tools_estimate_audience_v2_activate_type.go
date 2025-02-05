@@ -17,8 +17,8 @@ type ToolsEstimateAudienceV2ActivateType string
 const (
 	THREE_MONTH_EAILIER_ToolsEstimateAudienceV2ActivateType     ToolsEstimateAudienceV2ActivateType = "THREE_MONTH_EAILIER"
 	UNLIMITED_ToolsEstimateAudienceV2ActivateType               ToolsEstimateAudienceV2ActivateType = "UNLIMITED"
-	WITH_IN_A_MONTH_ToolsEstimateAudienceV2ActivateType         ToolsEstimateAudienceV2ActivateType = "WITH_IN_A_MONTH"
 	ONE_MONTH_2_THREE_MONTH_ToolsEstimateAudienceV2ActivateType ToolsEstimateAudienceV2ActivateType = "ONE_MONTH_2_THREE_MONTH"
+	WITH_IN_A_MONTH_ToolsEstimateAudienceV2ActivateType         ToolsEstimateAudienceV2ActivateType = "WITH_IN_A_MONTH"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_activate_type value

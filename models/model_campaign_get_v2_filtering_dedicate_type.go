@@ -15,8 +15,8 @@ type CampaignGetV2FilteringDedicateType string
 
 // List of campaign_get_v2_filtering_dedicate_type
 const (
-	UNSET_CampaignGetV2FilteringDedicateType     CampaignGetV2FilteringDedicateType = "UNSET"
 	DEDICATED_CampaignGetV2FilteringDedicateType CampaignGetV2FilteringDedicateType = "DEDICATED"
+	UNSET_CampaignGetV2FilteringDedicateType     CampaignGetV2FilteringDedicateType = "UNSET"
 )
 
 // Ptr returns reference to campaign_get_v2_filtering_dedicate_type value

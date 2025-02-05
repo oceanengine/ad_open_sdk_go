@@ -12,38 +12,36 @@ package models
 
 // BrandOrderListV30ResponseDataOrdersInner struct for BrandOrderListV30ResponseDataOrdersInner
 type BrandOrderListV30ResponseDataOrdersInner struct {
-	AdForm *BrandOrderListV30DataOrdersAdForm `json:"ad_form,omitempty"`
-	// 计划信息
-	AdInfos []*BrandOrderListV30ResponseDataOrdersInnerAdInfosInner `json:"ad_infos,omitempty"`
+	AdForm               *BrandOrderListV30DataOrdersAdForm               `json:"ad_form,omitempty"`
+	AdInfos              *BrandOrderListV30ResponseDataOrdersInnerAdInfos `json:"ad_infos,omitempty"`
+	AdvancedCreativeType *BrandOrderListV30DataOrdersAdvancedCreativeType `json:"advanced_creative_type,omitempty"`
 	// 广告主ID
-	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
-	// 端
-	AppOrigin    []*BrandOrderListV30DataOrdersAppOrigin               `json:"app_origin,omitempty"`
-	AudienceInfo *BrandOrderListV30ResponseDataOrdersInnerAudienceInfo `json:"audience_info,omitempty"`
-	AuditStatus  *BrandOrderListV30DataOrdersAuditStatus               `json:"audit_status,omitempty"`
-	BudgetInfo   *BrandOrderListV30ResponseDataOrdersInnerBudgetInfo   `json:"budget_info,omitempty"`
-	// 广告组ID
-	CampaignId *int64                               `json:"campaign_id,omitempty"`
-	Classify   *BrandOrderListV30DataOrdersClassify `json:"classify,omitempty"`
-	// 预订单创建时间
-	CreateTime            *string                                                        `json:"create_time,omitempty"`
-	FrequencyInfo         *BrandOrderListV30ResponseDataOrdersInnerFrequencyInfo         `json:"frequency_info,omitempty"`
-	GdSendType            *BrandOrderListV30DataOrdersGdSendType                         `json:"gd_send_type,omitempty"`
-	MagazinePriceInfo     *BrandOrderListV30ResponseDataOrdersInnerMagazinePriceInfo     `json:"magazine_price_info,omitempty"`
-	MerchantIntentionInfo *BrandOrderListV30ResponseDataOrdersInnerMerchantIntentionInfo `json:"merchant_intention_info,omitempty"`
-	// 预订单名称
-	Name *string `json:"name,omitempty"`
-	// 预订单ID
+	AdvertiserId        *int64                                                       `json:"advertiser_id,omitempty"`
+	AppOrigin           *BrandOrderListV30DataOrdersAppOrigin                        `json:"app_origin,omitempty"`
+	AudienceInfo        *BrandOrderListV30ResponseDataOrdersInnerAudienceInfo        `json:"audience_info,omitempty"`
+	AuditStatus         *BrandOrderListV30DataOrdersAuditStatus                      `json:"audit_status,omitempty"`
+	BookingQuantityInfo *BrandOrderListV30ResponseDataOrdersInnerBookingQuantityInfo `json:"booking_quantity_info,omitempty"`
+	// 总预算
+	Budget *string `json:"budget,omitempty"`
+	// 组ID
+	CampaignId *int64 `json:"campaign_id,omitempty"`
+	// 组名称
+	CampaignName *string                              `json:"campaign_name,omitempty"`
+	Classify     *BrandOrderListV30DataOrdersClassify `json:"classify,omitempty"`
+	// 创建时间
+	CreateTime        *string                                                    `json:"create_time,omitempty"`
+	FrequencyInfo     *BrandOrderListV30ResponseDataOrdersInnerFrequencyInfo     `json:"frequency_info,omitempty"`
+	GdSendType        *BrandOrderListV30DataOrdersGdSendType                     `json:"gd_send_type,omitempty"`
+	MagazinePriceInfo *BrandOrderListV30ResponseDataOrdersInnerMagazinePriceInfo `json:"magazine_price_info,omitempty"`
+	MerchantIntention *BrandOrderListV30ResponseDataOrdersInnerMerchantIntention `json:"merchant_intention,omitempty"`
+	// 预定单ID
 	OrderId *int64 `json:"order_id,omitempty"`
-	// 出价方式 3：CPT  6：GD
-	PricingType *int64 `json:"pricing_type,omitempty"`
-	// 产品类型
-	ProType *int64 `json:"pro_type,omitempty"`
-	// 政策
-	Promptions []*BrandOrderListV30ResponseDataOrdersInnerPromptionsInner `json:"promptions,omitempty"`
+	// 预定单名称
+	OrderName   *string                                         `json:"order_name,omitempty"`
+	Policy      *BrandOrderListV30ResponseDataOrdersInnerPolicy `json:"policy,omitempty"`
+	PricingType *BrandOrderListV30DataOrdersPricingType         `json:"pricing_type,omitempty"`
+	ProType     *BrandOrderListV30DataOrdersProType             `json:"pro_type,omitempty"`
 	// 备注
-	Remark               *string                                               `json:"remark,omitempty"`
-	ScheduleInfo         *BrandOrderListV30ResponseDataOrdersInnerScheduleInfo `json:"schedule_info,omitempty"`
-	Status               *BrandOrderListV30DataOrdersStatus                    `json:"status,omitempty"`
-	StockIncreasePackage *BrandOrderListV30DataOrdersStockIncreasePackage      `json:"stock_increase_package,omitempty"`
+	Remark *string                            `json:"remark,omitempty"`
+	Status *BrandOrderListV30DataOrdersStatus `json:"status,omitempty"`
 }

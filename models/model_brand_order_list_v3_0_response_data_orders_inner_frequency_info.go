@@ -12,8 +12,8 @@ package models
 
 // BrandOrderListV30ResponseDataOrdersInnerFrequencyInfo 频控信息
 type BrandOrderListV30ResponseDataOrdersInnerFrequencyInfo struct {
-	// 周期频控
+	// 频控次数
 	Frequency *int64 `json:"frequency,omitempty"`
-	// 是否启用频控 0启用 1启用
+	// 是否启用
 	FrequencyStatus *int64 `json:"frequency_status,omitempty"`
 }
