@@ -74,6 +74,7 @@ const (
 	AD_CONVERT_TYPE_FORTUNE_SMALL_DEAL_ProjectCreateV30OptimizeGoalDeepExternalAction          ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_FORTUNE_SMALL_DEAL"
 	AD_CONVERT_TYPE_GAME_ADDICTION_ProjectCreateV30OptimizeGoalDeepExternalAction              ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_GAME_ADDICTION"
 	AD_CONVERT_TYPE_HIGH_VALUE_CLUE_ProjectCreateV30OptimizeGoalDeepExternalAction             ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_HIGH_VALUE_CLUE"
+	AD_CONVERT_TYPE_IAAP_ROI_ProjectCreateV30OptimizeGoalDeepExternalAction                    ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_IAAP_ROI"
 	AD_CONVERT_TYPE_IDCARD_INFORMATION_ProjectCreateV30OptimizeGoalDeepExternalAction          ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_IDCARD_INFORMATION"
 	AD_CONVERT_TYPE_INAPP_NEXT_DAY_OPEN_ProjectCreateV30OptimizeGoalDeepExternalAction         ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_INAPP_NEXT_DAY_OPEN"
 	AD_CONVERT_TYPE_INSTALL_FINISH_ProjectCreateV30OptimizeGoalDeepExternalAction              ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_INSTALL_FINISH"

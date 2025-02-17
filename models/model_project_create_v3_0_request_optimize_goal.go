@@ -18,6 +18,6 @@ type ProjectCreateV30RequestOptimizeGoal struct {
 	ConvertId          *int64                                          `json:"convert_id,omitempty"`
 	DeepExternalAction *ProjectCreateV30OptimizeGoalDeepExternalAction `json:"deep_external_action,omitempty"`
 	ExternalAction     *ProjectCreateV30OptimizeGoalExternalAction     `json:"external_action,omitempty"`
-	// paid启用开关
-	PaidSwitch *int64 `json:"paid_switch,omitempty"`
+	// 关键行为
+	GameAddictionId *string `json:"game_addiction_id,omitempty"`
 }
