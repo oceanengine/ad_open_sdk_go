@@ -15,9 +15,8 @@ type ProjectCreateV30RelatedProductProductSetting string
 
 // List of project_create_v3.0_related_product_product_setting
 const (
-	MULTI_PRODUCTS_ProjectCreateV30RelatedProductProductSetting ProjectCreateV30RelatedProductProductSetting = "MULTI_PRODUCTS"
-	NO_MAP_ProjectCreateV30RelatedProductProductSetting         ProjectCreateV30RelatedProductProductSetting = "NO_MAP"
-	SINGLE_ProjectCreateV30RelatedProductProductSetting         ProjectCreateV30RelatedProductProductSetting = "SINGLE"
+	NO_MAP_ProjectCreateV30RelatedProductProductSetting ProjectCreateV30RelatedProductProductSetting = "NO_MAP"
+	SINGLE_ProjectCreateV30RelatedProductProductSetting ProjectCreateV30RelatedProductProductSetting = "SINGLE"
 )
 
 // Ptr returns reference to project_create_v3.0_related_product_product_setting value

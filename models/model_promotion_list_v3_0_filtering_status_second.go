@@ -31,7 +31,6 @@ const (
 	PROJECT_OFFLINE_BUDGET_PromotionListV30FilteringStatusSecond      PromotionListV30FilteringStatusSecond = "PROJECT_OFFLINE_BUDGET"
 	PROMOTION_OFFLINE_BUDGET_PromotionListV30FilteringStatusSecond    PromotionListV30FilteringStatusSecond = "PROMOTION_OFFLINE_BUDGET"
 	REAUDIT_PromotionListV30FilteringStatusSecond                     PromotionListV30FilteringStatusSecond = "REAUDIT"
-	STAR_TASK_NOT_STARTED_PromotionListV30FilteringStatusSecond       PromotionListV30FilteringStatusSecond = "STAR_TASK_NOT_STARTED"
 	TIME_NO_REACH_PromotionListV30FilteringStatusSecond               PromotionListV30FilteringStatusSecond = "TIME_NO_REACH"
 )
 

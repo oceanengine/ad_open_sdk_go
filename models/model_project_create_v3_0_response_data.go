@@ -14,6 +14,4 @@ package models
 type ProjectCreateV30ResponseData struct {
 	//
 	ProjectId *int64 `json:"project_id,omitempty"`
-	// 星广联投三期协议
-	SupplementaryAgreementInfo *string `json:"supplementary_agreement_info,omitempty"`
 }

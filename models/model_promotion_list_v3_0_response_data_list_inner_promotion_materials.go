@@ -47,10 +47,8 @@ type PromotionListV30ResponseDataListInnerPromotionMaterials struct {
 	OriginalVideoTitle *PromotionListV30DataListPromotionMaterialsOriginalVideoTitle `json:"original_video_title,omitempty"`
 	ParamsType         *PromotionListV30DataListPromotionMaterialsParamsType         `json:"params_type,omitempty"`
 	//
-	PlayableUrlMaterialList []string `json:"playable_url_material_list,omitempty"`
-	//
-	PlayletSeriesUrlList []string                                                            `json:"playlet_series_url_list,omitempty"`
-	ProductInfo          *PromotionListV30ResponseDataListInnerPromotionMaterialsProductInfo `json:"product_info,omitempty"`
+	PlayableUrlMaterialList []string                                                            `json:"playable_url_material_list,omitempty"`
+	ProductInfo             *PromotionListV30ResponseDataListInnerPromotionMaterialsProductInfo `json:"product_info,omitempty"`
 	//
 	TextAbstractList []*PromotionListV30ResponseDataListInnerPromotionMaterialsTextAbstractListInner `json:"text_abstract_list,omitempty"`
 	//

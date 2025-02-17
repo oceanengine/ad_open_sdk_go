@@ -15,13 +15,9 @@ type PromotionListV30ResponseDataListInnerPromotionMaterialsMiniProgramInfo stru
 	//
 	AppId *string `json:"app_id,omitempty"`
 	//
-	Auto []*PromotionListV30ResponseDataListInnerPromotionMaterialsMiniProgramInfoAutoInner `json:"auto,omitempty"`
-	//
 	Params *string `json:"params,omitempty"`
 	//
 	StartPath *string `json:"start_path,omitempty"`
 	//
 	Url *string `json:"url,omitempty"`
-	//
-	Urls []string `json:"urls,omitempty"`
 }

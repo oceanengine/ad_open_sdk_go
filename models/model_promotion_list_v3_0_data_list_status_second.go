@@ -34,7 +34,6 @@ const (
 	PROJECT_OFFLINE_BUDGET_PromotionListV30DataListStatusSecond      PromotionListV30DataListStatusSecond = "PROJECT_OFFLINE_BUDGET"
 	PROMOTION_OFFLINE_BUDGET_PromotionListV30DataListStatusSecond    PromotionListV30DataListStatusSecond = "PROMOTION_OFFLINE_BUDGET"
 	REAUDIT_PromotionListV30DataListStatusSecond                     PromotionListV30DataListStatusSecond = "REAUDIT"
-	STAR_TASK_NOT_STARTED_PromotionListV30DataListStatusSecond       PromotionListV30DataListStatusSecond = "STAR_TASK_NOT_STARTED"
 	TIME_NO_REACH_PromotionListV30DataListStatusSecond               PromotionListV30DataListStatusSecond = "TIME_NO_REACH"
 )
 

@@ -13,8 +13,9 @@ package models
 // ProjectCreateV30RequestDeliverySetting
 type ProjectCreateV30RequestDeliverySetting struct {
 	// cpc/cpm项目出价
-	Bid     *float64                               `json:"bid,omitempty"`
-	BidType ProjectCreateV30DeliverySettingBidType `json:"bid_type"`
+	Bid      *float64                                 `json:"bid,omitempty"`
+	BidSpeed *ProjectCreateV30DeliverySettingBidSpeed `json:"bid_speed,omitempty"`
+	BidType  ProjectCreateV30DeliverySettingBidType   `json:"bid_type"`
 	//
 	Budget               *float64                                             `json:"budget,omitempty"`
 	BudgetMode           ProjectCreateV30DeliverySettingBudgetMode            `json:"budget_mode"`

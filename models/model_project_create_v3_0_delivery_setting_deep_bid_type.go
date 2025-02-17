@@ -24,18 +24,15 @@ const (
 	DEEP_BID_TYPE_RETENTION_DAYS_ProjectCreateV30DeliverySettingDeepBidType ProjectCreateV30DeliverySettingDeepBidType = "DEEP_BID_TYPE_RETENTION_DAYS"
 	FIRST_AND_SEVEN_PAY_ROI_ProjectCreateV30DeliverySettingDeepBidType      ProjectCreateV30DeliverySettingDeepBidType = "FIRST_AND_SEVEN_PAY_ROI"
 	FORM_BID_ProjectCreateV30DeliverySettingDeepBidType                     ProjectCreateV30DeliverySettingDeepBidType = "FORM_BID"
-	IAAP_ROI_24_H_AND_7_D_ProjectCreateV30DeliverySettingDeepBidType        ProjectCreateV30DeliverySettingDeepBidType = "IAAP_ROI_24H_AND_7D"
-	LOAN_ROI_ProjectCreateV30DeliverySettingDeepBidType                     ProjectCreateV30DeliverySettingDeepBidType = "LOAN_ROI"
 	MIN_SECOND_STAGE_ProjectCreateV30DeliverySettingDeepBidType             ProjectCreateV30DeliverySettingDeepBidType = "MIN_SECOND_STAGE"
 	PACING_SECOND_STAGE_ProjectCreateV30DeliverySettingDeepBidType          ProjectCreateV30DeliverySettingDeepBidType = "PACING_SECOND_STAGE"
-	PER_AND_SEVEN_PAY_ROI_ProjectCreateV30DeliverySettingDeepBidType        ProjectCreateV30DeliverySettingDeepBidType = "PER_AND_SEVEN_PAY_ROI"
-	PHONE_CONNECT_BID_ProjectCreateV30DeliverySettingDeepBidType            ProjectCreateV30DeliverySettingDeepBidType = "PHONE_CONNECT_BID"
 	ROI_COEFFICIENT_ProjectCreateV30DeliverySettingDeepBidType              ProjectCreateV30DeliverySettingDeepBidType = "ROI_COEFFICIENT"
-	ROI_DIRECT_MAIL_ProjectCreateV30DeliverySettingDeepBidType              ProjectCreateV30DeliverySettingDeepBidType = "ROI_DIRECT_MAIL"
+	PER_AND_SEVEN_PAY_ROI_ProjectCreateV30DeliverySettingDeepBidType        ProjectCreateV30DeliverySettingDeepBidType = "PER_AND_SEVEN_PAY_ROI"
 	ROI_PACING_ProjectCreateV30DeliverySettingDeepBidType                   ProjectCreateV30DeliverySettingDeepBidType = "ROI_PACING"
-	RTA_DOUBLE_BID_ProjectCreateV30DeliverySettingDeepBidType               ProjectCreateV30DeliverySettingDeepBidType = "RTA_DOUBLE_BID"
 	SMARTBID_ProjectCreateV30DeliverySettingDeepBidType                     ProjectCreateV30DeliverySettingDeepBidType = "SMARTBID"
 	SOCIAL_ROI_ProjectCreateV30DeliverySettingDeepBidType                   ProjectCreateV30DeliverySettingDeepBidType = "SOCIAL_ROI"
+	PHONE_CONNECT_BID_ProjectCreateV30DeliverySettingDeepBidType            ProjectCreateV30DeliverySettingDeepBidType = "PHONE_CONNECT_BID"
+	ROI_DIRECT_MAIL_ProjectCreateV30DeliverySettingDeepBidType              ProjectCreateV30DeliverySettingDeepBidType = "ROI_DIRECT_MAIL"
 )
 
 // Ptr returns reference to project_create_v3.0_delivery_setting_deep_bid_type value

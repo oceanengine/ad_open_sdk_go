@@ -15,7 +15,6 @@ type ProjectCreateV30DeliverySettingScheduleType string
 
 // List of project_create_v3.0_delivery_setting_schedule_type
 const (
-	SCHEDULE_7_DAYS_ProjectCreateV30DeliverySettingScheduleType    ProjectCreateV30DeliverySettingScheduleType = "SCHEDULE_7_DAYS"
 	SCHEDULE_FROM_NOW_ProjectCreateV30DeliverySettingScheduleType  ProjectCreateV30DeliverySettingScheduleType = "SCHEDULE_FROM_NOW"
 	SCHEDULE_START_END_ProjectCreateV30DeliverySettingScheduleType ProjectCreateV30DeliverySettingScheduleType = "SCHEDULE_START_END"
 )

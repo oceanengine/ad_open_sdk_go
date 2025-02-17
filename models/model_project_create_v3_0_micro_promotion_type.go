@@ -15,7 +15,6 @@ type ProjectCreateV30MicroPromotionType string
 
 // List of project_create_v3.0_micro_promotion_type
 const (
-	AWEME_ProjectCreateV30MicroPromotionType       ProjectCreateV30MicroPromotionType = "AWEME"
 	BYTE_APP_ProjectCreateV30MicroPromotionType    ProjectCreateV30MicroPromotionType = "BYTE_APP"
 	BYTE_GAME_ProjectCreateV30MicroPromotionType   ProjectCreateV30MicroPromotionType = "BYTE_GAME"
 	WECHAT_APP_ProjectCreateV30MicroPromotionType  ProjectCreateV30MicroPromotionType = "WECHAT_APP"
