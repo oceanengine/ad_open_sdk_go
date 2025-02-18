@@ -15,8 +15,8 @@ type ReportLiveRoomAttributeGetV2DataListRoomStatus string
 
 // List of report_live_room_attribute_get_v2_data_list_room_status
 const (
-	PREPARING_ReportLiveRoomAttributeGetV2DataListRoomStatus ReportLiveRoomAttributeGetV2DataListRoomStatus = "PREPARING"
 	PAUSE_ReportLiveRoomAttributeGetV2DataListRoomStatus     ReportLiveRoomAttributeGetV2DataListRoomStatus = "PAUSE"
+	PREPARING_ReportLiveRoomAttributeGetV2DataListRoomStatus ReportLiveRoomAttributeGetV2DataListRoomStatus = "PREPARING"
 	LIVING_ReportLiveRoomAttributeGetV2DataListRoomStatus    ReportLiveRoomAttributeGetV2DataListRoomStatus = "LIVING"
 	END_ReportLiveRoomAttributeGetV2DataListRoomStatus       ReportLiveRoomAttributeGetV2DataListRoomStatus = "END"
 )

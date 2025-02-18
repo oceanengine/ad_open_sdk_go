@@ -12,9 +12,11 @@ package models
 
 // ToolsAwemeAuthListV2ResponseDataListInner struct for ToolsAwemeAuthListV2ResponseDataListInner
 type ToolsAwemeAuthListV2ResponseDataListInner struct {
-	AuthStatus        *ToolsAwemeAuthListV2DataListAuthStatus                     `json:"auth_status,omitempty"`
-	AuthThresholdInfo *ToolsAwemeAuthListV2ResponseDataListInnerAuthThresholdInfo `json:"auth_threshold_info,omitempty"`
-	AuthType          *ToolsAwemeAuthListV2DataListAuthType                       `json:"auth_type,omitempty"`
+	//
+	AuthAutoExpireDate *string                                                     `json:"auth_auto_expire_date,omitempty"`
+	AuthStatus         *ToolsAwemeAuthListV2DataListAuthStatus                     `json:"auth_status,omitempty"`
+	AuthThresholdInfo  *ToolsAwemeAuthListV2ResponseDataListInnerAuthThresholdInfo `json:"auth_threshold_info,omitempty"`
+	AuthType           *ToolsAwemeAuthListV2DataListAuthType                       `json:"auth_type,omitempty"`
 	// 抖音号作者发起解除授权时上传的凭证信息（选填项，抖音号作者可能不填，此时该参数返回为null）
 	AwemeCancelImageList []string `json:"aweme_cancel_image_list,omitempty"`
 	// 抖音号作者发起解除授权时填写的联系方式（选填项，抖音号作者可能不填，此时该参数返回为null）
@@ -39,4 +41,6 @@ type ToolsAwemeAuthListV2ResponseDataListInner struct {
 	VideoInfo *ToolsAwemeAuthListV2ResponseDataListInnerVideoInfo `json:"video_info,omitempty"`
 	// 抖音授权关系警告信息，您可根据该信息及时处理，可能返回 - 不达门槛：表示发起授权的抖音号未达到要求，详细未达门槛信息可通过auth_threshold_info获取 - 即将解除：表示抖音号作者已发起解除授权申请，您需要及时联系作者或同意解除
 	WarningContent []string `json:"warning_content,omitempty"`
+	// 抖音授权关系警告类型
+	WarningTypes []*ToolsAwemeAuthListV2DataListWarningTypes `json:"warning_types,omitempty"`
 }

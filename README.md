@@ -614,7 +614,6 @@ Class | Method | HTTP request
 *QianchuanAdRejectReasonV10Api* | **OpenApiV10QianchuanAdRejectReasonGet** | **Get** /open_api/v1.0/qianchuan/ad/reject_reason/
 *QianchuanAdScheduleDateUpdateV10Api* | **OpenApiV10QianchuanAdScheduleDateUpdatePost** | **Post** /open_api/v1.0/qianchuan/ad/schedule_date/update/
 *QianchuanAdScheduleFixedRangeUpdateV10Api* | **OpenApiV10QianchuanAdScheduleFixedRangeUpdatePost** | **Post** /open_api/v1.0/qianchuan/ad/schedule_fixed_range/update/
-*QianchuanAdScheduleTimeUpdateV10Api* | **OpenApiV10QianchuanAdScheduleTimeUpdatePost** | **Post** /open_api/v1.0/qianchuan/ad/schedule_time/update/
 *QianchuanAdStatusUpdateV10Api* | **OpenApiV10QianchuanAdStatusUpdatePost** | **Post** /open_api/v1.0/qianchuan/ad/status/update/
 *QianchuanAdUpdateV10Api* | **OpenApiV10QianchuanAdUpdatePost** | **Post** /open_api/v1.0/qianchuan/ad/update/
 *QianchuanAdvertiserTypeGetV10Api* | **OpenApiV10QianchuanAdvertiserTypeGetGet** | **Get** /open_api/v1.0/qianchuan/advertiser/type/get/

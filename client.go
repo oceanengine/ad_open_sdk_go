@@ -1,5 +1,5 @@
 /*
-API version: 1.1.38
+API version: 1.1.39
 */
 package ad_open_sdk_go
 
@@ -1657,10 +1657,6 @@ func (c *Client) QianchuanAdScheduleDateUpdateV10Api() *api.QianchuanAdScheduleD
 
 func (c *Client) QianchuanAdScheduleFixedRangeUpdateV10Api() *api.QianchuanAdScheduleFixedRangeUpdateV10ApiService {
 	return c.ApiClient.QianchuanAdScheduleFixedRangeUpdateV10Api
-}
-
-func (c *Client) QianchuanAdScheduleTimeUpdateV10Api() *api.QianchuanAdScheduleTimeUpdateV10ApiService {
-	return c.ApiClient.QianchuanAdScheduleTimeUpdateV10Api
 }
 
 func (c *Client) QianchuanAdStatusUpdateV10Api() *api.QianchuanAdStatusUpdateV10ApiService {

@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.38
+// APIClient manages communication with the Oceanengine Open Api API v1.1.39
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -866,8 +866,6 @@ type APIClient struct {
 	QianchuanAdScheduleDateUpdateV10Api *QianchuanAdScheduleDateUpdateV10ApiService
 
 	QianchuanAdScheduleFixedRangeUpdateV10Api *QianchuanAdScheduleFixedRangeUpdateV10ApiService
-
-	QianchuanAdScheduleTimeUpdateV10Api *QianchuanAdScheduleTimeUpdateV10ApiService
 
 	QianchuanAdStatusUpdateV10Api *QianchuanAdStatusUpdateV10ApiService
 
@@ -2314,7 +2312,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanAdRejectReasonV10Api = (*QianchuanAdRejectReasonV10ApiService)(&c.common)
 	c.QianchuanAdScheduleDateUpdateV10Api = (*QianchuanAdScheduleDateUpdateV10ApiService)(&c.common)
 	c.QianchuanAdScheduleFixedRangeUpdateV10Api = (*QianchuanAdScheduleFixedRangeUpdateV10ApiService)(&c.common)
-	c.QianchuanAdScheduleTimeUpdateV10Api = (*QianchuanAdScheduleTimeUpdateV10ApiService)(&c.common)
 	c.QianchuanAdStatusUpdateV10Api = (*QianchuanAdStatusUpdateV10ApiService)(&c.common)
 	c.QianchuanAdUpdateV10Api = (*QianchuanAdUpdateV10ApiService)(&c.common)
 	c.QianchuanAdvertiserTypeGetV10Api = (*QianchuanAdvertiserTypeGetV10ApiService)(&c.common)

@@ -17,6 +17,7 @@ type ToolsAwemeAuthListV2DataListSubStatus string
 const (
 	AWEME_REVOKE_REQUEST_ToolsAwemeAuthListV2DataListSubStatus     ToolsAwemeAuthListV2DataListSubStatus = "AWEME_REVOKE_REQUEST"
 	CONFIRM_REVOKE_REQUEST_ToolsAwemeAuthListV2DataListSubStatus   ToolsAwemeAuthListV2DataListSubStatus = "CONFIRM_REVOKE_REQUEST"
+	ENTERPRISE_AUTH_RELEASE_ToolsAwemeAuthListV2DataListSubStatus  ToolsAwemeAuthListV2DataListSubStatus = "ENTERPRISE_AUTH_RELEASE"
 	INVALID_CANCEL_ToolsAwemeAuthListV2DataListSubStatus           ToolsAwemeAuthListV2DataListSubStatus = "INVALID_CANCEL"
 	INVALID_EXPIRED_ToolsAwemeAuthListV2DataListSubStatus          ToolsAwemeAuthListV2DataListSubStatus = "INVALID_EXPIRED"
 	INVALID_FAILED_BY_AWEME_ToolsAwemeAuthListV2DataListSubStatus  ToolsAwemeAuthListV2DataListSubStatus = "INVALID_FAILED_BY_AWEME"
@@ -27,6 +28,7 @@ const (
 	RENEW_FAIL_ToolsAwemeAuthListV2DataListSubStatus               ToolsAwemeAuthListV2DataListSubStatus = "RENEW_FAIL"
 	RENEW_FAILED_BY_AWEME_ToolsAwemeAuthListV2DataListSubStatus    ToolsAwemeAuthListV2DataListSubStatus = "RENEW_FAILED_BY_AWEME"
 	RENEW_SUCCESS_ToolsAwemeAuthListV2DataListSubStatus            ToolsAwemeAuthListV2DataListSubStatus = "RENEW_SUCCESS"
+	UNQUALIFIED_AUTO_RELEASE_ToolsAwemeAuthListV2DataListSubStatus ToolsAwemeAuthListV2DataListSubStatus = "UNQUALIFIED_AUTO_RELEASE"
 )
 
 // Ptr returns reference to tools_aweme_auth_list_v2_data_list_sub_status value

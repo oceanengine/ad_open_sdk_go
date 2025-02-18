@@ -20,4 +20,6 @@ type ToolsAwemeAuthListV2Filtering struct {
 	AwemeIds []string `json:"aweme_ids,omitempty"`
 	// 抖音短视频ID
 	ItemIds []int64 `json:"item_ids,omitempty"`
+	// 筛选警告类型
+	WarningTypes []*ToolsAwemeAuthListV2FilteringWarningTypes `json:"warning_types,omitempty"`
 }
