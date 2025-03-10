@@ -16,8 +16,8 @@ type ToolsRegionGetV2RegionLevel string
 // List of tools_region_get_v2_region_level
 const (
 	REGION_LEVEL_BUSINESS_DISTRICT_ToolsRegionGetV2RegionLevel ToolsRegionGetV2RegionLevel = "REGION_LEVEL_BUSINESS_DISTRICT"
-	REGION_LEVEL_DISTRICT_ToolsRegionGetV2RegionLevel          ToolsRegionGetV2RegionLevel = "REGION_LEVEL_DISTRICT"
 	REGION_LEVEL_CITY_ToolsRegionGetV2RegionLevel              ToolsRegionGetV2RegionLevel = "REGION_LEVEL_CITY"
+	REGION_LEVEL_DISTRICT_ToolsRegionGetV2RegionLevel          ToolsRegionGetV2RegionLevel = "REGION_LEVEL_DISTRICT"
 	REGION_LEVEL_PROVINCE_ToolsRegionGetV2RegionLevel          ToolsRegionGetV2RegionLevel = "REGION_LEVEL_PROVINCE"
 )
 

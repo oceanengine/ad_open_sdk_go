@@ -15,11 +15,11 @@ type AdGetV2DataAudiencePlatform string
 
 // List of ad_get_v2_data_audience_platform
 const (
-	IOS_AdGetV2DataAudiencePlatform     AdGetV2DataAudiencePlatform = "IOS"
+	WAP_AdGetV2DataAudiencePlatform     AdGetV2DataAudiencePlatform = "WAP"
 	IPAD_AdGetV2DataAudiencePlatform    AdGetV2DataAudiencePlatform = "IPAD"
 	NONE_AdGetV2DataAudiencePlatform    AdGetV2DataAudiencePlatform = "NONE"
+	IOS_AdGetV2DataAudiencePlatform     AdGetV2DataAudiencePlatform = "IOS"
 	PC_AdGetV2DataAudiencePlatform      AdGetV2DataAudiencePlatform = "PC"
-	WAP_AdGetV2DataAudiencePlatform     AdGetV2DataAudiencePlatform = "WAP"
 	ANDROID_AdGetV2DataAudiencePlatform AdGetV2DataAudiencePlatform = "ANDROID"
 )
 

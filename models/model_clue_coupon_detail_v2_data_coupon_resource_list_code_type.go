@@ -15,9 +15,9 @@ type ClueCouponDetailV2DataCouponResourceListCodeType string
 
 // List of clue_coupon_detail_v2_data_coupon_resource_list_code_type
 const (
-	API_ClueCouponDetailV2DataCouponResourceListCodeType      ClueCouponDetailV2DataCouponResourceListCodeType = "API"
 	PLATFORM_ClueCouponDetailV2DataCouponResourceListCodeType ClueCouponDetailV2DataCouponResourceListCodeType = "PLATFORM"
 	MERCHANT_ClueCouponDetailV2DataCouponResourceListCodeType ClueCouponDetailV2DataCouponResourceListCodeType = "MERCHANT"
+	API_ClueCouponDetailV2DataCouponResourceListCodeType      ClueCouponDetailV2DataCouponResourceListCodeType = "API"
 	COMMON_ClueCouponDetailV2DataCouponResourceListCodeType   ClueCouponDetailV2DataCouponResourceListCodeType = "COMMON"
 )
 

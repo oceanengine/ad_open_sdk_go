@@ -15,10 +15,10 @@ type AudiencePackageUpdateV2Platform string
 
 // List of audience_package_update_v2_platform
 const (
-	IOS_AudiencePackageUpdateV2Platform     AudiencePackageUpdateV2Platform = "IOS"
-	IPAD_AudiencePackageUpdateV2Platform    AudiencePackageUpdateV2Platform = "IPAD"
-	PC_AudiencePackageUpdateV2Platform      AudiencePackageUpdateV2Platform = "PC"
 	WAP_AudiencePackageUpdateV2Platform     AudiencePackageUpdateV2Platform = "WAP"
+	IPAD_AudiencePackageUpdateV2Platform    AudiencePackageUpdateV2Platform = "IPAD"
+	IOS_AudiencePackageUpdateV2Platform     AudiencePackageUpdateV2Platform = "IOS"
+	PC_AudiencePackageUpdateV2Platform      AudiencePackageUpdateV2Platform = "PC"
 	ANDROID_AudiencePackageUpdateV2Platform AudiencePackageUpdateV2Platform = "ANDROID"
 )
 

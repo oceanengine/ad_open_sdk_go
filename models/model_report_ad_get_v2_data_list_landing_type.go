@@ -15,16 +15,16 @@ type ReportAdGetV2DataListLandingType string
 
 // List of report_ad_get_v2_data_list_landing_type
 const (
+	APP_ReportAdGetV2DataListLandingType       ReportAdGetV2DataListLandingType = "APP"
 	SHOP_ReportAdGetV2DataListLandingType      ReportAdGetV2DataListLandingType = "SHOP"
 	DPA_ReportAdGetV2DataListLandingType       ReportAdGetV2DataListLandingType = "DPA"
 	AWEME_ReportAdGetV2DataListLandingType     ReportAdGetV2DataListLandingType = "AWEME"
-	LIVE_ReportAdGetV2DataListLandingType      ReportAdGetV2DataListLandingType = "LIVE"
 	ARTICLE_ReportAdGetV2DataListLandingType   ReportAdGetV2DataListLandingType = "ARTICLE"
-	APP_ReportAdGetV2DataListLandingType       ReportAdGetV2DataListLandingType = "APP"
-	STORE_ReportAdGetV2DataListLandingType     ReportAdGetV2DataListLandingType = "STORE"
 	LINK_ReportAdGetV2DataListLandingType      ReportAdGetV2DataListLandingType = "LINK"
-	QUICK_APP_ReportAdGetV2DataListLandingType ReportAdGetV2DataListLandingType = "QUICK_APP"
+	LIVE_ReportAdGetV2DataListLandingType      ReportAdGetV2DataListLandingType = "LIVE"
 	GOODS_ReportAdGetV2DataListLandingType     ReportAdGetV2DataListLandingType = "GOODS"
+	STORE_ReportAdGetV2DataListLandingType     ReportAdGetV2DataListLandingType = "STORE"
+	QUICK_APP_ReportAdGetV2DataListLandingType ReportAdGetV2DataListLandingType = "QUICK_APP"
 )
 
 // Ptr returns reference to report_ad_get_v2_data_list_landing_type value

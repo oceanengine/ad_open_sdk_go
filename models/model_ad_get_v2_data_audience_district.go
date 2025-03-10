@@ -15,12 +15,12 @@ type AdGetV2DataAudienceDistrict string
 
 // List of ad_get_v2_data_audience_district
 const (
+	NONE_AdGetV2DataAudienceDistrict              AdGetV2DataAudienceDistrict = "NONE"
+	OVERSEA_AdGetV2DataAudienceDistrict           AdGetV2DataAudienceDistrict = "OVERSEA"
+	BUSINESS_DISTRICT_AdGetV2DataAudienceDistrict AdGetV2DataAudienceDistrict = "BUSINESS_DISTRICT"
+	CITY_AdGetV2DataAudienceDistrict              AdGetV2DataAudienceDistrict = "CITY"
 	REGION_AdGetV2DataAudienceDistrict            AdGetV2DataAudienceDistrict = "REGION"
 	COUNTY_AdGetV2DataAudienceDistrict            AdGetV2DataAudienceDistrict = "COUNTY"
-	OVERSEA_AdGetV2DataAudienceDistrict           AdGetV2DataAudienceDistrict = "OVERSEA"
-	NONE_AdGetV2DataAudienceDistrict              AdGetV2DataAudienceDistrict = "NONE"
-	CITY_AdGetV2DataAudienceDistrict              AdGetV2DataAudienceDistrict = "CITY"
-	BUSINESS_DISTRICT_AdGetV2DataAudienceDistrict AdGetV2DataAudienceDistrict = "BUSINESS_DISTRICT"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_district value

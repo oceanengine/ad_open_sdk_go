@@ -15,9 +15,9 @@ type CreativeCustomCreativeCreateV2AdDataAnchorRelatedType string
 
 // List of creative_custom_creative_create_v2_ad_data_anchor_related_type
 const (
-	AUTO_CreativeCustomCreativeCreateV2AdDataAnchorRelatedType   CreativeCustomCreativeCreateV2AdDataAnchorRelatedType = "AUTO"
-	SELECT_CreativeCustomCreativeCreateV2AdDataAnchorRelatedType CreativeCustomCreativeCreateV2AdDataAnchorRelatedType = "SELECT"
 	OFF_CreativeCustomCreativeCreateV2AdDataAnchorRelatedType    CreativeCustomCreativeCreateV2AdDataAnchorRelatedType = "OFF"
+	SELECT_CreativeCustomCreativeCreateV2AdDataAnchorRelatedType CreativeCustomCreativeCreateV2AdDataAnchorRelatedType = "SELECT"
+	AUTO_CreativeCustomCreativeCreateV2AdDataAnchorRelatedType   CreativeCustomCreativeCreateV2AdDataAnchorRelatedType = "AUTO"
 )
 
 // Ptr returns reference to creative_custom_creative_create_v2_ad_data_anchor_related_type value

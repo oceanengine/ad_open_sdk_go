@@ -15,13 +15,13 @@ type ReportAdGetV2FilteringPricing string
 
 // List of report_ad_get_v2_filtering_pricing
 const (
-	PRICING_OCPM_ReportAdGetV2FilteringPricing ReportAdGetV2FilteringPricing = "PRICING_OCPM"
-	PRICING_ECPC_ReportAdGetV2FilteringPricing ReportAdGetV2FilteringPricing = "PRICING_ECPC"
-	PRICING_CPC_ReportAdGetV2FilteringPricing  ReportAdGetV2FilteringPricing = "PRICING_CPC"
-	PRICING_CPA_ReportAdGetV2FilteringPricing  ReportAdGetV2FilteringPricing = "PRICING_CPA"
-	PRICING_OCPC_ReportAdGetV2FilteringPricing ReportAdGetV2FilteringPricing = "PRICING_OCPC"
 	PRICING_CPM_ReportAdGetV2FilteringPricing  ReportAdGetV2FilteringPricing = "PRICING_CPM"
+	PRICING_CPA_ReportAdGetV2FilteringPricing  ReportAdGetV2FilteringPricing = "PRICING_CPA"
+	PRICING_CPC_ReportAdGetV2FilteringPricing  ReportAdGetV2FilteringPricing = "PRICING_CPC"
+	PRICING_ECPC_ReportAdGetV2FilteringPricing ReportAdGetV2FilteringPricing = "PRICING_ECPC"
+	PRICING_OCPM_ReportAdGetV2FilteringPricing ReportAdGetV2FilteringPricing = "PRICING_OCPM"
 	PRICING_CPV_ReportAdGetV2FilteringPricing  ReportAdGetV2FilteringPricing = "PRICING_CPV"
+	PRICING_OCPC_ReportAdGetV2FilteringPricing ReportAdGetV2FilteringPricing = "PRICING_OCPC"
 )
 
 // Ptr returns reference to report_ad_get_v2_filtering_pricing value
