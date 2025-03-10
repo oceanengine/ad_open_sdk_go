@@ -22,7 +22,9 @@ type LocalFileVideoGetV30ResponseDataVideoListInner struct {
 	//
 	MaterialProperties []*LocalFileVideoGetV30DataVideoListMaterialProperties `json:"material_properties,omitempty"`
 	//
-	PosterUrl *string                                  `json:"poster_url,omitempty"`
+	PosterUrl *string `json:"poster_url,omitempty"`
+	//
+	Signature *string                                  `json:"signature,omitempty"`
 	Source    *LocalFileVideoGetV30DataVideoListSource `json:"source,omitempty"`
 	//
 	VideoId *string `json:"video_id,omitempty"`

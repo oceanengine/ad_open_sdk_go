@@ -14,6 +14,8 @@ package models
 type QianchuanUniPromotionListV10ResponseDataAdListInner struct {
 	AdInfo *QianchuanUniPromotionListV10ResponseDataAdListInnerAdInfo `json:"ad_info,omitempty"`
 	//
+	ProductInfo []*QianchuanUniPromotionListV10ResponseDataAdListInnerProductInfoInner `json:"product_info,omitempty"`
+	//
 	RoomInfo  []*QianchuanUniPromotionListV10ResponseDataAdListInnerRoomInfoInner `json:"room_info,omitempty"`
 	StatsInfo *QianchuanUniPromotionListV10ResponseDataAdListInnerStatsInfo       `json:"stats_info,omitempty"`
 }

@@ -1,5 +1,5 @@
 /*
-API version: 1.1.39
+API version: test58
 */
 package ad_open_sdk_go
 
@@ -209,6 +209,14 @@ func (c *Client) AgentAdvertiserUpdateV2Api() *api.AgentAdvertiserUpdateV2ApiSer
 
 func (c *Client) AgentChildAgentSelectV2Api() *api.AgentChildAgentSelectV2ApiService {
 	return c.ApiClient.AgentChildAgentSelectV2Api
+}
+
+func (c *Client) AgentCompanyBiddingListQueryV2Api() *api.AgentCompanyBiddingListQueryV2ApiService {
+	return c.ApiClient.AgentCompanyBiddingListQueryV2Api
+}
+
+func (c *Client) AgentCompanyBrandListQueryV2Api() *api.AgentCompanyBrandListQueryV2ApiService {
+	return c.ApiClient.AgentCompanyBrandListQueryV2Api
 }
 
 func (c *Client) AgentFundTransferSeqCommitV2Api() *api.AgentFundTransferSeqCommitV2ApiService {
@@ -2055,6 +2063,18 @@ func (c *Client) QianchuanUniAwemeAuthorizedGetV10Api() *api.QianchuanUniAwemeAu
 	return c.ApiClient.QianchuanUniAwemeAuthorizedGetV10Api
 }
 
+func (c *Client) QianchuanUniPromotionAdControlTaskCreateV10Api() *api.QianchuanUniPromotionAdControlTaskCreateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskCreateV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdControlTaskListV10Api() *api.QianchuanUniPromotionAdControlTaskListV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskListV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdControlTaskStatusUpdateV10Api() *api.QianchuanUniPromotionAdControlTaskStatusUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskStatusUpdateV10Api
+}
+
 func (c *Client) QianchuanUniPromotionAdDetailV10Api() *api.QianchuanUniPromotionAdDetailV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdDetailV10Api
 }
@@ -2071,8 +2091,20 @@ func (c *Client) QianchuanUniPromotionAdStatusUpdateV10Api() *api.QianchuanUniPr
 	return c.ApiClient.QianchuanUniPromotionAdStatusUpdateV10Api
 }
 
+func (c *Client) QianchuanUniPromotionBlockMaterialGetV10Api() *api.QianchuanUniPromotionBlockMaterialGetV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionBlockMaterialGetV10Api
+}
+
 func (c *Client) QianchuanUniPromotionListV10Api() *api.QianchuanUniPromotionListV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionListV10Api
+}
+
+func (c *Client) QianchuanUniPromotionProductAwemeGetV10Api() *api.QianchuanUniPromotionProductAwemeGetV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionProductAwemeGetV10Api
+}
+
+func (c *Client) QianchuanUniPromotionProductGetV10Api() *api.QianchuanUniPromotionProductGetV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionProductGetV10Api
 }
 
 func (c *Client) QianchuanVideoByAwemeGetV10Api() *api.QianchuanVideoByAwemeGetV10ApiService {
@@ -2303,6 +2335,14 @@ func (c *Client) ReportVideoFrameGetV2Api() *api.ReportVideoFrameGetV2ApiService
 	return c.ApiClient.ReportVideoFrameGetV2Api
 }
 
+func (c *Client) SecurityAuditResultsV30Api() *api.SecurityAuditResultsV30ApiService {
+	return c.ApiClient.SecurityAuditResultsV30Api
+}
+
+func (c *Client) SecurityOpenMaterialAuditV30Api() *api.SecurityOpenMaterialAuditV30ApiService {
+	return c.ApiClient.SecurityOpenMaterialAuditV30Api
+}
+
 func (c *Client) SecurityScoreDisposalInfoGetV30Api() *api.SecurityScoreDisposalInfoGetV30ApiService {
 	return c.ApiClient.SecurityScoreDisposalInfoGetV30Api
 }
@@ -2527,6 +2567,10 @@ func (c *Client) StarDemanderDemanderGetBindShareCodeV2Api() *api.StarDemanderDe
 	return c.ApiClient.StarDemanderDemanderGetBindShareCodeV2Api
 }
 
+func (c *Client) StarFeCommonServiceTalentDayGetCheckInCodeV2Api() *api.StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService {
+	return c.ApiClient.StarFeCommonServiceTalentDayGetCheckInCodeV2Api
+}
+
 func (c *Client) StarFeCommonServiceTalentDayJudgeCheckedInV2Api() *api.StarFeCommonServiceTalentDayJudgeCheckedInV2ApiService {
 	return c.ApiClient.StarFeCommonServiceTalentDayJudgeCheckedInV2Api
 }
@@ -2569,6 +2613,10 @@ func (c *Client) StarMcnProviderGetParticipatedTaskV2Api() *api.StarMcnProviderG
 
 func (c *Client) StarMcnProviderGetTaskDetailV2Api() *api.StarMcnProviderGetTaskDetailV2ApiService {
 	return c.ApiClient.StarMcnProviderGetTaskDetailV2Api
+}
+
+func (c *Client) StarMcnProviderGetTaskItemListV2Api() *api.StarMcnProviderGetTaskItemListV2ApiService {
+	return c.ApiClient.StarMcnProviderGetTaskItemListV2Api
 }
 
 func (c *Client) StarMcnProviderGetTaskShareCodeV2Api() *api.StarMcnProviderGetTaskShareCodeV2ApiService {

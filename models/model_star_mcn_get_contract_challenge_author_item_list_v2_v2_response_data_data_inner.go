@@ -34,6 +34,12 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner struct {
 	DemandName string `json:"demand_name"`
 	//
 	DouyinId *string `json:"douyin_id,omitempty"`
+	// 预估广告消耗分成金额，单位厘
+	EstAdShareAmount *int64 `json:"est_ad_share_amount,omitempty"`
+	// 预估用户付费分佣金额，单位厘
+	EstCpsAmount *int64 `json:"est_cps_amount,omitempty"`
+	//
+	EstRewardAmount *int64 `json:"est_reward_amount,omitempty"`
 	// 累计广告收益
 	IaaCommercialIncomeHour *int64 `json:"iaa_commercial_income_hour,omitempty"`
 	// item的iaa收益
@@ -83,6 +89,14 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner struct {
 	ServiceProviderAmount *int64 `json:"service_provider_amount,omitempty"`
 	// 结算时间
 	SettleTime *int64 `json:"settle_time,omitempty"`
+	// 已结算广告消耗分成金额，单位厘
+	SettledAdShareAmount *int64 `json:"settled_ad_share_amount,omitempty"`
+	// 已结算用户付费分佣金额，单位厘
+	SettledCpsAmount *int64 `json:"settled_cps_amount,omitempty"`
+	// mcn抽佣已结算投广消耗金额，单位厘
+	SettledMcnAdShareAmount *int64 `json:"settled_mcn_ad_share_amount,omitempty"`
+	// mcn抽佣已结算付费分佣金额，单位厘
+	SettledMcnCpsAmount *int64 `json:"settled_mcn_cps_amount,omitempty"`
 	// MCN和达人可获得部分的预估流水，单位为厘（元*1000）
 	SharePrice *int64 `json:"share_price,omitempty"`
 	//

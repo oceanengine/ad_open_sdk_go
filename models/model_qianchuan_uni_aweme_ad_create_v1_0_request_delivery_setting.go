@@ -19,8 +19,9 @@ type QianchuanUniAwemeAdCreateV10RequestDeliverySetting struct {
 	LiveScheduleType *QianchuanUniAwemeAdCreateV10DeliverySettingLiveScheduleType `json:"live_schedule_type,omitempty"`
 	QcpxMode         *QianchuanUniAwemeAdCreateV10DeliverySettingQcpxMode         `json:"qcpx_mode,omitempty"`
 	//
-	Roi2Goal     float64                                                 `json:"roi2_goal"`
+	Roi2Goal     *float64                                                `json:"roi2_goal,omitempty"`
 	SmartBidType QianchuanUniAwemeAdCreateV10DeliverySettingSmartBidType `json:"smart_bid_type"`
 	//
-	StartTime *string `json:"start_time,omitempty"`
+	StartTime         *string                                                       `json:"start_time,omitempty"`
+	VideoScheduleType *QianchuanUniAwemeAdCreateV10DeliverySettingVideoScheduleType `json:"video_schedule_type,omitempty"`
 }

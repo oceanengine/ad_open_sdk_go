@@ -17,6 +17,7 @@ type QianchuanUniPromotionAdStatusUpdateV10OptStatus string
 const (
 	DISABLE_QianchuanUniPromotionAdStatusUpdateV10OptStatus QianchuanUniPromotionAdStatusUpdateV10OptStatus = "DISABLE"
 	ENABLE_QianchuanUniPromotionAdStatusUpdateV10OptStatus  QianchuanUniPromotionAdStatusUpdateV10OptStatus = "ENABLE"
+	DELETE_QianchuanUniPromotionAdStatusUpdateV10OptStatus  QianchuanUniPromotionAdStatusUpdateV10OptStatus = "DELETE"
 )
 
 // Ptr returns reference to qianchuan_uni_promotion_ad_status_update_v1.0_opt_status value

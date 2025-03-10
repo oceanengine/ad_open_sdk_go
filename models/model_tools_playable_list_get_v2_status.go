@@ -15,11 +15,11 @@ type ToolsPlayableListGetV2Status string
 
 // List of tools_playable_list_get_v2_status
 const (
+	AUDIT_SUCCESS_ToolsPlayableListGetV2Status    ToolsPlayableListGetV2Status = "AUDIT_SUCCESS"
+	AUDIT_FAIL_ToolsPlayableListGetV2Status       ToolsPlayableListGetV2Status = "AUDIT_FAIL"
 	VALIDATE_FAIL_ToolsPlayableListGetV2Status    ToolsPlayableListGetV2Status = "VALIDATE_FAIL"
 	VALIDATE_SUCCESS_ToolsPlayableListGetV2Status ToolsPlayableListGetV2Status = "VALIDATE_SUCCESS"
-	AUDIT_SUCCESS_ToolsPlayableListGetV2Status    ToolsPlayableListGetV2Status = "AUDIT_SUCCESS"
 	VALIDATING_ToolsPlayableListGetV2Status       ToolsPlayableListGetV2Status = "VALIDATING"
-	AUDIT_FAIL_ToolsPlayableListGetV2Status       ToolsPlayableListGetV2Status = "AUDIT_FAIL"
 )
 
 // Ptr returns reference to tools_playable_list_get_v2_status value

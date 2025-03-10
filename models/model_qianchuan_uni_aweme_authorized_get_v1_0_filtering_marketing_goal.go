@@ -15,7 +15,6 @@ type QianchuanUniAwemeAuthorizedGetV10FilteringMarketingGoal string
 
 // List of qianchuan_uni_aweme_authorized_get_v1.0_filtering_marketing_goal
 const (
-	ALL_QianchuanUniAwemeAuthorizedGetV10FilteringMarketingGoal              QianchuanUniAwemeAuthorizedGetV10FilteringMarketingGoal = "ALL"
 	LIVE_PROM_GOODS_QianchuanUniAwemeAuthorizedGetV10FilteringMarketingGoal  QianchuanUniAwemeAuthorizedGetV10FilteringMarketingGoal = "LIVE_PROM_GOODS"
 	VIDEO_PROM_GOODS_QianchuanUniAwemeAuthorizedGetV10FilteringMarketingGoal QianchuanUniAwemeAuthorizedGetV10FilteringMarketingGoal = "VIDEO_PROM_GOODS"
 )

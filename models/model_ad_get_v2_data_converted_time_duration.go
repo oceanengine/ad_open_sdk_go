@@ -15,13 +15,13 @@ type AdGetV2DataConvertedTimeDuration string
 
 // List of ad_get_v2_data_converted_time_duration
 const (
-	TWELVE_MONTH_AdGetV2DataConvertedTimeDuration AdGetV2DataConvertedTimeDuration = "TWELVE_MONTH"
-	SIX_MONTH_AdGetV2DataConvertedTimeDuration    AdGetV2DataConvertedTimeDuration = "SIX_MONTH"
 	THREE_MONTH_AdGetV2DataConvertedTimeDuration  AdGetV2DataConvertedTimeDuration = "THREE_MONTH"
-	NONE_AdGetV2DataConvertedTimeDuration         AdGetV2DataConvertedTimeDuration = "NONE"
-	ONE_MONTH_AdGetV2DataConvertedTimeDuration    AdGetV2DataConvertedTimeDuration = "ONE_MONTH"
-	TODAY_AdGetV2DataConvertedTimeDuration        AdGetV2DataConvertedTimeDuration = "TODAY"
 	SEVEN_DAY_AdGetV2DataConvertedTimeDuration    AdGetV2DataConvertedTimeDuration = "SEVEN_DAY"
+	NONE_AdGetV2DataConvertedTimeDuration         AdGetV2DataConvertedTimeDuration = "NONE"
+	TWELVE_MONTH_AdGetV2DataConvertedTimeDuration AdGetV2DataConvertedTimeDuration = "TWELVE_MONTH"
+	ONE_MONTH_AdGetV2DataConvertedTimeDuration    AdGetV2DataConvertedTimeDuration = "ONE_MONTH"
+	SIX_MONTH_AdGetV2DataConvertedTimeDuration    AdGetV2DataConvertedTimeDuration = "SIX_MONTH"
+	TODAY_AdGetV2DataConvertedTimeDuration        AdGetV2DataConvertedTimeDuration = "TODAY"
 )
 
 // Ptr returns reference to ad_get_v2_data_converted_time_duration value

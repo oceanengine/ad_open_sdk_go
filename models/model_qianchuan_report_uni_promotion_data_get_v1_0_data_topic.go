@@ -15,8 +15,9 @@ type QianchuanReportUniPromotionDataGetV10DataTopic string
 
 // List of qianchuan_report_uni_promotion_data_get_v1.0_data_topic
 const (
-	SITE_PROMOTION_PRODUCT_AD_QianchuanReportUniPromotionDataGetV10DataTopic      QianchuanReportUniPromotionDataGetV10DataTopic = "SITE_PROMOTION_PRODUCT_AD"
-	SITE_PROMOTION_PRODUCT_PRODUCT_QianchuanReportUniPromotionDataGetV10DataTopic QianchuanReportUniPromotionDataGetV10DataTopic = "SITE_PROMOTION_PRODUCT_PRODUCT"
+	SITE_PROMOTION_PRODUCT_AD_QianchuanReportUniPromotionDataGetV10DataTopic               QianchuanReportUniPromotionDataGetV10DataTopic = "SITE_PROMOTION_PRODUCT_AD"
+	SITE_PROMOTION_PRODUCT_POST_ASSIST_TASK_QianchuanReportUniPromotionDataGetV10DataTopic QianchuanReportUniPromotionDataGetV10DataTopic = "SITE_PROMOTION_PRODUCT_POST_ASSIST_TASK"
+	SITE_PROMOTION_PRODUCT_PRODUCT_QianchuanReportUniPromotionDataGetV10DataTopic          QianchuanReportUniPromotionDataGetV10DataTopic = "SITE_PROMOTION_PRODUCT_PRODUCT"
 )
 
 // Ptr returns reference to qianchuan_report_uni_promotion_data_get_v1.0_data_topic value

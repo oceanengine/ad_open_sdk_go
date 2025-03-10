@@ -53,6 +53,10 @@ type AgentAdvertiserInfoQueryV2ResponseDataAccountDetailListInner struct {
 	OptimizerId *int64 `json:"optimizer_id,omitempty"`
 	// 竞价权限负责人姓名
 	OptimizerName *string `json:"optimizer_name,omitempty"`
+	// 销售ID
+	SaleId *int64 `json:"sale_id,omitempty"`
+	// 销售名称
+	SaleName *string `json:"sale_name,omitempty"`
 	// 二级行业名称
 	SecondIndustryName *string                                                          `json:"second_industry_name,omitempty"`
 	SelfOperationTag   *AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag `json:"self_operation_tag,omitempty"`

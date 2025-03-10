@@ -18,6 +18,8 @@ type QianchuanUniPromotionListV10ResponseDataAdListInnerAdInfo struct {
 	//
 	CreateTime *string `json:"create_time,omitempty"`
 	//
+	DailyDeliveryTime *float64 `json:"daily_delivery_time,omitempty"`
+	//
 	DeliverySeconds *int64 `json:"delivery_seconds,omitempty"`
 	//
 	EndTime *string `json:"end_time,omitempty"`
@@ -25,8 +27,10 @@ type QianchuanUniPromotionListV10ResponseDataAdListInnerAdInfo struct {
 	Id            *int64                                                     `json:"id,omitempty"`
 	MarketingGoal *QianchuanUniPromotionListV10DataAdListAdInfoMarketingGoal `json:"marketing_goal,omitempty"`
 	//
-	ModifyTime *string                                                `json:"modify_time,omitempty"`
-	OptStatus  *QianchuanUniPromotionListV10DataAdListAdInfoOptStatus `json:"opt_status,omitempty"`
+	ModifyTime *string `json:"modify_time,omitempty"`
+	//
+	Name      *string                                                `json:"name,omitempty"`
+	OptStatus *QianchuanUniPromotionListV10DataAdListAdInfoOptStatus `json:"opt_status,omitempty"`
 	//
 	Roi2Goal     *float64                                                  `json:"roi2_goal,omitempty"`
 	SmartBidType *QianchuanUniPromotionListV10DataAdListAdInfoSmartBidType `json:"smart_bid_type,omitempty"`

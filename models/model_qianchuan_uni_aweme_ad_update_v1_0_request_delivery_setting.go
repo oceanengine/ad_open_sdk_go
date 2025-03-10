@@ -20,4 +20,7 @@ type QianchuanUniAwemeAdUpdateV10RequestDeliverySetting struct {
 	QcpxMode         *QianchuanUniAwemeAdUpdateV10DeliverySettingQcpxMode         `json:"qcpx_mode,omitempty"`
 	//
 	Roi2Goal *float64 `json:"roi2_goal,omitempty"`
+	//
+	StartTime         *string                                                       `json:"start_time,omitempty"`
+	VideoScheduleType *QianchuanUniAwemeAdUpdateV10DeliverySettingVideoScheduleType `json:"video_schedule_type,omitempty"`
 }

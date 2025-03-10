@@ -18,6 +18,8 @@ type FileRebateCommonDownloadCreateTaskV2Request struct {
 	Month *string `json:"month,omitempty"`
 	// 季度
 	Quarter int64 `json:"quarter"`
+	// 等待最新数据参数，默认等待
+	WaitLatest *bool `json:"wait_latest,omitempty"`
 	// 年
 	Year int64 `json:"year"`
 }

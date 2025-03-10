@@ -15,8 +15,12 @@ type QianchuanUniAwemeAdUpdateV10Request struct {
 	//
 	AdId int64 `json:"ad_id"`
 	//
-	AdvertiserId                  int64                                                             `json:"advertiser_id"`
-	CreativeSetting               *QianchuanUniAwemeAdUpdateV10RequestCreativeSetting               `json:"creative_setting,omitempty"`
-	DeliverySetting               *QianchuanUniAwemeAdUpdateV10RequestDeliverySetting               `json:"delivery_setting,omitempty"`
+	AdvertiserId    int64                                               `json:"advertiser_id"`
+	CreativeSetting *QianchuanUniAwemeAdUpdateV10RequestCreativeSetting `json:"creative_setting,omitempty"`
+	DeliverySetting *QianchuanUniAwemeAdUpdateV10RequestDeliverySetting `json:"delivery_setting,omitempty"`
+	//
+	MultiProductCreativeList []*QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInner `json:"multi_product_creative_list,omitempty"`
+	//
+	ProductChannelInfo            []*QianchuanUniAwemeAdUpdateV10RequestProductChannelInfoInner     `json:"product_channel_info,omitempty"`
 	ProgrammaticCreativeMediaList *QianchuanUniAwemeAdUpdateV10RequestProgrammaticCreativeMediaList `json:"programmatic_creative_media_list,omitempty"`
 }

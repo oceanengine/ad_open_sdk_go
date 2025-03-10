@@ -12,7 +12,7 @@ package models
 
 // StarMcnProviderGetTaskDetailV2ResponseData
 type StarMcnProviderGetTaskDetailV2ResponseData struct {
-	//
+	// 单达人投稿/直播次数
 	MaxPublishCount *int64                                                   `json:"max_publish_count,omitempty"`
 	TaskDetailInfo  StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo `json:"task_detail_info"`
 }

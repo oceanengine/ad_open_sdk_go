@@ -105,6 +105,12 @@ type QianchuanReportAdvertiserGetV10ResponseDataListInner struct {
 	//
 	DyFollow *float64 `json:"dy_follow,omitempty"`
 	//
+	EcpConvertCnt *float64 `json:"ecp_convert_cnt,omitempty"`
+	//
+	EcpConvertRate *float64 `json:"ecp_convert_rate,omitempty"`
+	//
+	EcpCpaPlatform *float64 `json:"ecp_cpa_platform,omitempty"`
+	//
 	IndirectOrderCreateCount7days *float64 `json:"indirect_order_create_count_7days,omitempty"`
 	//
 	IndirectOrderCreateGmv7days *float64 `json:"indirect_order_create_gmv_7days,omitempty"`

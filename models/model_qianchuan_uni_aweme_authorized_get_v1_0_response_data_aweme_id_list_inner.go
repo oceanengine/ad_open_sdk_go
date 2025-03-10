@@ -15,6 +15,8 @@ type QianchuanUniAwemeAuthorizedGetV10ResponseDataAwemeIdListInner struct {
 	//
 	AnchorForbidden *bool `json:"anchor_forbidden,omitempty"`
 	//
+	AuthType []*QianchuanUniAwemeAuthorizedGetV10DataAwemeIdListAuthType `json:"auth_type,omitempty"`
+	//
 	AwemeAvatar *string `json:"aweme_avatar,omitempty"`
 	//
 	AwemeId *int64 `json:"aweme_id,omitempty"`
@@ -34,4 +36,8 @@ type QianchuanUniAwemeAuthorizedGetV10ResponseDataAwemeIdListInner struct {
 	HasRoi2GroupCreated *bool `json:"has_roi2_group_created,omitempty"`
 	//
 	HasShopPermission *bool `json:"has_shop_permission,omitempty"`
+	//
+	IsAllowMall *bool `json:"is_allow_mall,omitempty"`
+	// 是否抖音c号
+	IsAwemeC *bool `json:"is_aweme_c,omitempty"`
 }

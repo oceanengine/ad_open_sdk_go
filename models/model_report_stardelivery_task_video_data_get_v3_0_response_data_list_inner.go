@@ -27,7 +27,11 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	//
 	InAppPaymentAmountRange []float64 `json:"in_app_payment_amount_range,omitempty"`
 	//
+	InAppPaymentAmountRangeT1 []float64 `json:"in_app_payment_amount_range_t1,omitempty"`
+	//
 	InAppStatCostRange []float64 `json:"in_app_stat_cost_range,omitempty"`
+	//
+	InAppStatCostRangeT1 []float64 `json:"in_app_stat_cost_range_t1,omitempty"`
 	//
 	InstallFinishCnt *int64 `json:"install_finish_cnt,omitempty"`
 	//
@@ -43,6 +47,8 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	//
 	StarConvertCnt *int64 `json:"star_convert_cnt,omitempty"`
 	//
+	StarCpm []int64 `json:"star_cpm,omitempty"`
+	//
 	StarDeepPurchaseCount *int64 `json:"star_deep_purchase_count,omitempty"`
 	//
 	StarInstallFinishCount *int64 `json:"star_install_finish_count,omitempty"`
@@ -50,6 +56,8 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	StarMaterialFirstName *string `json:"star_material_first_name,omitempty"`
 	//
 	StarMaterialFirstType *int32 `json:"star_material_first_type,omitempty"`
+	//
+	StarMaterialNaturalViewsT1 *int64 `json:"star_material_natural_views_t1,omitempty"`
 	//
 	StarMaterialSecondName *string `json:"star_material_second_name,omitempty"`
 	//

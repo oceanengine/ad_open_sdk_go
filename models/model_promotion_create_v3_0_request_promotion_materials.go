@@ -47,8 +47,6 @@ type PromotionCreateV30RequestPromotionMaterials struct {
 	OriginalVideoTitle *PromotionCreateV30PromotionMaterialsOriginalVideoTitle `json:"original_video_title,omitempty"`
 	ParamsType         *PromotionCreateV30PromotionMaterialsParamsType         `json:"params_type,omitempty"`
 	//
-	PlayableUrlMaterialList []string `json:"playable_url_material_list,omitempty"`
-	//
 	PlayletSeriesUrlList []string                                                `json:"playlet_series_url_list,omitempty"`
 	ProductInfo          *PromotionCreateV30RequestPromotionMaterialsProductInfo `json:"product_info,omitempty"`
 	//

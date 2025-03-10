@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoStarMicroGameUniteExtraInfo
+// StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoStarMicroGameUniteExtraInfo 星图x小游戏任务相关的任务信息
 type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoStarMicroGameUniteExtraInfo struct {
 	// dou+流量是否参与结算
 	IsDouPlusSettlement *bool `json:"is_dou_plus_settlement,omitempty"`

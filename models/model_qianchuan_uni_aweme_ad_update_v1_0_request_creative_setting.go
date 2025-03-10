@@ -12,6 +12,7 @@ package models
 
 // QianchuanUniAwemeAdUpdateV10RequestCreativeSetting
 type QianchuanUniAwemeAdUpdateV10RequestCreativeSetting struct {
+	CreativeType *QianchuanUniAwemeAdUpdateV10CreativeSettingCreativeType `json:"creative_type,omitempty"`
 	//
 	HideInAweme *bool `json:"hide_in_aweme,omitempty"`
 	//

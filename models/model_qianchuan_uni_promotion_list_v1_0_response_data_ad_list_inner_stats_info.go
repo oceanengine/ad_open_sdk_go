@@ -19,11 +19,15 @@ type QianchuanUniPromotionListV10ResponseDataAdListInnerStatsInfo struct {
 	//
 	TotalPayOrderCountForRoi2 *float64 `json:"total_pay_order_count_for_roi2,omitempty"`
 	//
-	TotalPayOrderGmvForRoi2 *int64 `json:"total_pay_order_gmv_for_roi2,omitempty"`
+	TotalPayOrderCouponAmountForRoi2 *float64 `json:"total_pay_order_coupon_amount_for_roi2,omitempty"`
+	//
+	TotalPayOrderGmvForRoi2 *float64 `json:"total_pay_order_gmv_for_roi2,omitempty"`
 	//
 	TotalPrepayAndPayOrderRoi2 *float64 `json:"total_prepay_and_pay_order_roi2,omitempty"`
 	//
 	TotalPrepayOrderCountForRoi2 *int64 `json:"total_prepay_order_count_for_roi2,omitempty"`
 	//
 	TotalPrepayOrderGmvForRoi2 *float64 `json:"total_prepay_order_gmv_for_roi2,omitempty"`
+	//
+	TotalUnfinishedEstimateOrderGmvForRoi2 *float64 `json:"total_unfinished_estimate_order_gmv_for_roi2,omitempty"`
 }

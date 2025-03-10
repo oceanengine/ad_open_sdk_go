@@ -12,5 +12,13 @@ package models
 
 // QianchuanUniPromotionListV10Filtering
 type QianchuanUniPromotionListV10Filtering struct {
-	SmartBidType *QianchuanUniPromotionListV10FilteringSmartBidType `json:"smart_bid_type,omitempty"`
+	// 计划创建结束日期，时间格式 YYYY-MM-DD
+	CreateEndDate *string `json:"create_end_date,omitempty"`
+	// 计划创建开始日期，时间格式 YYYY-MM-DD
+	CreateStartDate *string                                          `json:"create_start_date,omitempty"`
+	HavingCost      *QianchuanUniPromotionListV10FilteringHavingCost `json:"having_cost,omitempty"`
+	// 搜索关键词，支持根据计划名称/ID搜索
+	SearchKeyword *string                                            `json:"search_keyword,omitempty"`
+	SmartBidType  *QianchuanUniPromotionListV10FilteringSmartBidType `json:"smart_bid_type,omitempty"`
+	Status        *QianchuanUniPromotionListV10FilteringStatus       `json:"status,omitempty"`
 }

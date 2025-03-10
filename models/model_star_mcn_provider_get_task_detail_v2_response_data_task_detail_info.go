@@ -18,7 +18,7 @@ type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo struct {
 	Brand *string `json:"brand,omitempty"`
 	//
 	ChallengeStatus *int64 `json:"challenge_status,omitempty"`
-	//
+	// 网盘链接
 	CloudLink *string `json:"cloud_link,omitempty"`
 	//
 	CommissionRate *int64 `json:"commission_rate,omitempty"`
@@ -34,6 +34,8 @@ type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo struct {
 	DemandId int64 `json:"demand_id"`
 	//
 	DemandName string `json:"demand_name"`
+	// 用户名称
+	DemanderName *string `json:"demander_name,omitempty"`
 	//
 	EvaluateType *int64 `json:"evaluate_type,omitempty"`
 	//
@@ -41,11 +43,14 @@ type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo struct {
 	//
 	ExpirationTimeEnd *string `json:"expiration_time_end,omitempty"`
 	//
-	FirstClassCategory *int64 `json:"first_class_category,omitempty"`
+	FirstClassCategory *int64                                                                    `json:"first_class_category,omitempty"`
+	GameIndustryInfo   *StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoGameIndustryInfo `json:"game_industry_info,omitempty"`
 	//
 	HighProfitChallenge *bool `json:"high_profit_challenge,omitempty"`
 	//
 	McnProfitRate *int64 `json:"mcn_profit_rate,omitempty"`
+	// 需求要求
+	Other *string `json:"other,omitempty"`
 	//
 	PayType *int64 `json:"pay_type,omitempty"`
 	//
@@ -62,6 +67,8 @@ type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo struct {
 	PlayletTheme []int64 `json:"playlet_theme,omitempty"`
 	//
 	ProductCategory *int64 `json:"product_category,omitempty"`
+	// 产品介绍
+	ProductInformation *string `json:"product_information,omitempty"`
 	//
 	ProductName *string `json:"product_name,omitempty"`
 	//
@@ -73,7 +80,10 @@ type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo struct {
 	SmallAppInfo                *StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoSmallAppInfo                `json:"small_app_info,omitempty"`
 	StarMicroGameUniteExtraInfo *StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoStarMicroGameUniteExtraInfo `json:"star_micro_game_unite_extra_info,omitempty"`
 	// 任务头图
-	TaskHeadImage *string `json:"task_head_image,omitempty"`
+	TaskHeadImage       *string                                                                      `json:"task_head_image,omitempty"`
+	TaskRequirementInfo *StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoTaskRequirementInfo `json:"task_requirement_info,omitempty"`
+	//
+	TaskSupportAd *bool `json:"task_support_ad,omitempty"`
 	//
 	VideoType int64 `json:"video_type"`
 }

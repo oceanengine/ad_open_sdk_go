@@ -252,6 +252,8 @@ Class | Method | HTTP request
 *AgentAdvertiserUnassignV2Api* | **OpenApi2AgentAdvertiserUnassignPost** | **Post** /open_api/2/agent/advertiser/unassign/
 *AgentAdvertiserUpdateV2Api* | **OpenApi2AgentAdvertiserUpdatePost** | **Post** /open_api/2/agent/advertiser/update/
 *AgentChildAgentSelectV2Api* | **OpenApi2AgentChildAgentSelectGet** | **Get** /open_api/2/agent/child_agent/select/
+*AgentCompanyBiddingListQueryV2Api* | **OpenApi2AgentCompanyBiddingListQueryGet** | **Get** /open_api/2/agent/company/bidding/list/query/
+*AgentCompanyBrandListQueryV2Api* | **OpenApi2AgentCompanyBrandListQueryGet** | **Get** /open_api/2/agent/company/brand/list/query/
 *AgentFundTransferSeqCommitV2Api* | **OpenApi2AgentFundTransferSeqCommitPost** | **Post** /open_api/2/agent/fund/transfer_seq/commit/
 *AgentFundTransferSeqCreateV2Api* | **OpenApi2AgentFundTransferSeqCreatePost** | **Post** /open_api/2/agent/fund/transfer_seq/create/
 *AgentInfoV2Api* | **OpenApi2AgentInfoGet** | **Get** /open_api/2/agent/info/
@@ -713,11 +715,17 @@ Class | Method | HTTP request
 *QianchuanUniAwemeAdCreateV10Api* | **OpenApiV10QianchuanUniAwemeAdCreatePost** | **Post** /open_api/v1.0/qianchuan/uni_aweme/ad/create/
 *QianchuanUniAwemeAdUpdateV10Api* | **OpenApiV10QianchuanUniAwemeAdUpdatePost** | **Post** /open_api/v1.0/qianchuan/uni_aweme/ad/update/
 *QianchuanUniAwemeAuthorizedGetV10Api* | **OpenApiV10QianchuanUniAwemeAuthorizedGetGet** | **Get** /open_api/v1.0/qianchuan/uni_aweme/authorized/get/
+*QianchuanUniPromotionAdControlTaskCreateV10Api* | **OpenApiV10QianchuanUniPromotionAdControlTaskCreatePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/control_task/create/
+*QianchuanUniPromotionAdControlTaskListV10Api* | **OpenApiV10QianchuanUniPromotionAdControlTaskListGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/ad/control_task/list/
+*QianchuanUniPromotionAdControlTaskStatusUpdateV10Api* | **OpenApiV10QianchuanUniPromotionAdControlTaskStatusUpdatePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/control_task/status/update/
 *QianchuanUniPromotionAdDetailV10Api* | **OpenApiV10QianchuanUniPromotionAdDetailGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/ad/detail/
 *QianchuanUniPromotionAdMaterialDeleteV10Api* | **OpenApiV10QianchuanUniPromotionAdMaterialDeletePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/material/delete/
 *QianchuanUniPromotionAdMaterialGetV10Api* | **OpenApiV10QianchuanUniPromotionAdMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/ad/material/get/
 *QianchuanUniPromotionAdStatusUpdateV10Api* | **OpenApiV10QianchuanUniPromotionAdStatusUpdatePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/status/update/
+*QianchuanUniPromotionBlockMaterialGetV10Api* | **OpenApiV10QianchuanUniPromotionBlockMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/block_material/get/
 *QianchuanUniPromotionListV10Api* | **OpenApiV10QianchuanUniPromotionListGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/list/
+*QianchuanUniPromotionProductAwemeGetV10Api* | **OpenApiV10QianchuanUniPromotionProductAwemeGetGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/product/aweme/get/
+*QianchuanUniPromotionProductGetV10Api* | **OpenApiV10QianchuanUniPromotionProductGetGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/product/get/
 *QianchuanVideoByAwemeGetV10Api* | **OpenApiV10QianchuanVideoByAwemeGetGet** | **Get** /open_api/v1.0/qianchuan/video/by_aweme/get/
 *QianchuanVideoGetV10Api* | **OpenApiV10QianchuanVideoGetGet** | **Get** /open_api/v1.0/qianchuan/video/get/
 *QueryBookingBusinessEntityIdGetV2Api* | **OpenApi2QueryBookingBusinessEntityIdGetGet** | **Get** /open_api/2/query/booking/business_entity_id/get/
@@ -775,6 +783,8 @@ Class | Method | HTTP request
 *ReportStardeliveryTaskDataGetV30Api* | **OpenApiV30ReportStardeliveryTaskDataGetGet** | **Get** /open_api/v3.0/report/stardelivery/task_data/get/
 *ReportStardeliveryTaskVideoDataGetV30Api* | **OpenApiV30ReportStardeliveryTaskVideoDataGetGet** | **Get** /open_api/v3.0/report/stardelivery/task_video_data/get/
 *ReportVideoFrameGetV2Api* | **OpenApi2ReportVideoFrameGetGet** | **Get** /open_api/2/report/video/frame/get/
+*SecurityAuditResultsV30Api* | **OpenApiV30SecurityAuditResultsGet** | **Get** /open_api/v3.0/security/audit_results/
+*SecurityOpenMaterialAuditV30Api* | **OpenApiV30SecurityOpenMaterialAuditPost** | **Post** /open_api/v3.0/security/open_material_audit/
 *SecurityScoreDisposalInfoGetV30Api* | **OpenApiV30SecurityScoreDisposalInfoGetGet** | **Get** /open_api/v3.0/security/score_disposal_info/get/
 *SecurityScoreTotalGetV30Api* | **OpenApiV30SecurityScoreTotalGetGet** | **Get** /open_api/v3.0/security/score_total/get/
 *SecurityScoreViolationEventGetV30Api* | **OpenApiV30SecurityScoreViolationEventGetGet** | **Get** /open_api/v3.0/security/score_violation_event/get/
@@ -831,6 +841,7 @@ Class | Method | HTTP request
 *StarDemandSearchWordModifyV2Api* | **OpenApi2StarDemandSearchWordModifyPost** | **Post** /open_api/2/star/demand/search_word/modify/
 *StarDemanderDemanderGetAuthorBindInfoV2Api* | **OpenApi2StarDemanderDemanderGetAuthorBindInfoGet** | **Get** /open_api/2/star/demander/demander_get_author_bind_info/
 *StarDemanderDemanderGetBindShareCodeV2Api* | **OpenApi2StarDemanderDemanderGetBindShareCodeGet** | **Get** /open_api/2/star/demander/demander_get_bind_share_code/
+*StarFeCommonServiceTalentDayGetCheckInCodeV2Api* | **OpenApi2StarFeCommonServiceTalentDayGetCheckInCodeGet** | **Get** /open_api/2/star/fe_common_service/talent_day/get_check_in_code/
 *StarFeCommonServiceTalentDayJudgeCheckedInV2Api* | **OpenApi2StarFeCommonServiceTalentDayJudgeCheckedInGet** | **Get** /open_api/2/star/fe_common_service/talent_day/judge_checked_in/
 *StarGetCreateChallengeDataDictV2Api* | **OpenApi2StarGetCreateChallengeDataDictGet** | **Get** /open_api/2/star/get_create_challenge_data_dict/
 *StarInfoV2Api* | **OpenApi2StarInfoGet** | **Get** /open_api/2/star/info/
@@ -842,6 +853,7 @@ Class | Method | HTTP request
 *StarMcnGetUnparticipatedTaskV2Api* | **OpenApi2StarMcnGetUnparticipatedTaskGet** | **Get** /open_api/2/star/mcn/get_unparticipated_task/
 *StarMcnProviderGetParticipatedTaskV2Api* | **OpenApi2StarMcnProviderGetParticipatedTaskGet** | **Get** /open_api/2/star/mcn/provider_get_participated_task/
 *StarMcnProviderGetTaskDetailV2Api* | **OpenApi2StarMcnProviderGetTaskDetailGet** | **Get** /open_api/2/star/mcn/provider_get_task_detail/
+*StarMcnProviderGetTaskItemListV2Api* | **OpenApi2StarMcnProviderGetTaskItemListGet** | **Get** /open_api/2/star/mcn/provider_get_task_item_list/
 *StarMcnProviderGetTaskShareCodeV2Api* | **OpenApi2StarMcnProviderGetTaskShareCodeGet** | **Get** /open_api/2/star/mcn/provider_get_task_share_code/
 *StarMcnProviderGetUnparticipatedTaskV2Api* | **OpenApi2StarMcnProviderGetUnparticipatedTaskGet** | **Get** /open_api/2/star/mcn/provider_get_unparticipated_task/
 *StarOrderApproveResourceV2Api* | **OpenApi2StarOrderApproveResourcePost** | **Post** /open_api/2/star/order/approve_resource/

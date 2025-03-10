@@ -15,18 +15,18 @@ type AdGetV2DataAudienceAwemeFanBehaviors string
 
 // List of ad_get_v2_data_audience_aweme_fan_behaviors
 const (
-	COMMENTED_USER_AdGetV2DataAudienceAwemeFanBehaviors       AdGetV2DataAudienceAwemeFanBehaviors = "COMMENTED_USER"
-	FOLLOWED_USER_AdGetV2DataAudienceAwemeFanBehaviors        AdGetV2DataAudienceAwemeFanBehaviors = "FOLLOWED_USER"
-	SHARED_USER_AdGetV2DataAudienceAwemeFanBehaviors          AdGetV2DataAudienceAwemeFanBehaviors = "SHARED_USER"
-	LIVE_GOODS_ORDER_AdGetV2DataAudienceAwemeFanBehaviors     AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_GOODS_ORDER"
-	LIKED_USER_AdGetV2DataAudienceAwemeFanBehaviors           AdGetV2DataAudienceAwemeFanBehaviors = "LIKED_USER"
-	LIVE_GOODS_CLICK_AdGetV2DataAudienceAwemeFanBehaviors     AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_GOODS_CLICK"
-	GOODS_CARTS_ORDER_AdGetV2DataAudienceAwemeFanBehaviors    AdGetV2DataAudienceAwemeFanBehaviors = "GOODS_CARTS_ORDER"
-	LIVE_WATCH_AdGetV2DataAudienceAwemeFanBehaviors           AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_WATCH"
 	LIVE_EXCEPTIONAL_AdGetV2DataAudienceAwemeFanBehaviors     AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_EXCEPTIONAL"
+	LIVE_GOODS_ORDER_AdGetV2DataAudienceAwemeFanBehaviors     AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_GOODS_ORDER"
+	GOODS_CARTS_CLICK_AdGetV2DataAudienceAwemeFanBehaviors    AdGetV2DataAudienceAwemeFanBehaviors = "GOODS_CARTS_CLICK"
+	FOLLOWED_USER_AdGetV2DataAudienceAwemeFanBehaviors        AdGetV2DataAudienceAwemeFanBehaviors = "FOLLOWED_USER"
 	LIVE_EFFECTIVE_WATCH_AdGetV2DataAudienceAwemeFanBehaviors AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_EFFECTIVE_WATCH"
 	LIVE_COMMENT_AdGetV2DataAudienceAwemeFanBehaviors         AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_COMMENT"
-	GOODS_CARTS_CLICK_AdGetV2DataAudienceAwemeFanBehaviors    AdGetV2DataAudienceAwemeFanBehaviors = "GOODS_CARTS_CLICK"
+	COMMENTED_USER_AdGetV2DataAudienceAwemeFanBehaviors       AdGetV2DataAudienceAwemeFanBehaviors = "COMMENTED_USER"
+	LIVE_WATCH_AdGetV2DataAudienceAwemeFanBehaviors           AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_WATCH"
+	GOODS_CARTS_ORDER_AdGetV2DataAudienceAwemeFanBehaviors    AdGetV2DataAudienceAwemeFanBehaviors = "GOODS_CARTS_ORDER"
+	SHARED_USER_AdGetV2DataAudienceAwemeFanBehaviors          AdGetV2DataAudienceAwemeFanBehaviors = "SHARED_USER"
+	LIKED_USER_AdGetV2DataAudienceAwemeFanBehaviors           AdGetV2DataAudienceAwemeFanBehaviors = "LIKED_USER"
+	LIVE_GOODS_CLICK_AdGetV2DataAudienceAwemeFanBehaviors     AdGetV2DataAudienceAwemeFanBehaviors = "LIVE_GOODS_CLICK"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_aweme_fan_behaviors value

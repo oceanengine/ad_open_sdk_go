@@ -20,6 +20,8 @@ type QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMateri
 	//
 	Title *string `json:"title,omitempty"`
 	//
+	Url *string `json:"url,omitempty"`
+	//
 	VideoDuration *int64 `json:"video_duration,omitempty"`
 	//
 	VideoId *string `json:"video_id,omitempty"`

@@ -13,8 +13,10 @@ package models
 // QianchuanUniPromotionAdDetailV10ResponseDataDeliverySetting
 type QianchuanUniPromotionAdDetailV10ResponseDataDeliverySetting struct {
 	//
-	Budget             *float64                                                               `json:"budget,omitempty"`
-	BudgetMode         *QianchuanUniPromotionAdDetailV10DataDeliverySettingBudgetMode         `json:"budget_mode,omitempty"`
+	Budget     *float64                                                       `json:"budget,omitempty"`
+	BudgetMode *QianchuanUniPromotionAdDetailV10DataDeliverySettingBudgetMode `json:"budget_mode,omitempty"`
+	//
+	DailyDeliveryTime  *float64                                                               `json:"daily_delivery_time,omitempty"`
 	DeepBidType        *QianchuanUniPromotionAdDetailV10DataDeliverySettingDeepBidType        `json:"deep_bid_type,omitempty"`
 	DeepExternalAction *QianchuanUniPromotionAdDetailV10DataDeliverySettingDeepExternalAction `json:"deep_external_action,omitempty"`
 	//
@@ -27,5 +29,6 @@ type QianchuanUniPromotionAdDetailV10ResponseDataDeliverySetting struct {
 	Roi2Goal     *float64                                                         `json:"roi2_goal,omitempty"`
 	SmartBidType *QianchuanUniPromotionAdDetailV10DataDeliverySettingSmartBidType `json:"smart_bid_type,omitempty"`
 	//
-	StartTime *string `json:"start_time,omitempty"`
+	StartTime         *string                                                               `json:"start_time,omitempty"`
+	VideoScheduleType *QianchuanUniPromotionAdDetailV10DataDeliverySettingVideoScheduleType `json:"video_schedule_type,omitempty"`
 }

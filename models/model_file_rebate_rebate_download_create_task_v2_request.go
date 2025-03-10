@@ -15,8 +15,9 @@ type FileRebateRebateDownloadCreateTaskV2Request struct {
 	// 代理商账户id
 	AgentId int64 `json:"agent_id"`
 	// 月/季度，可以传多个，以逗号分隔，如传入   1,2,3
-	MonthQuarter string                                        `json:"month_quarter"`
-	QueryType    FileRebateRebateDownloadCreateTaskV2QueryType `json:"query_type"`
+	MonthQuarter string `json:"month_quarter"`
+	// 查询类型,目前包括 month_punish_details:下载违规明细月度 quarter_punish_details:下载违规明细季度  month_rebate_details:下载核算明细月度 quarter_rebate_details:下载核算明细季度 month_performance_details:下载业绩明细月度 quarter_performance_details:下载业绩明细季度
+	QueryType string `json:"query_type"`
 	// 年
 	Year int32 `json:"year"`
 }

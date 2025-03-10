@@ -15,9 +15,15 @@ type QianchuanUniAwemeAdCreateV10Request struct {
 	//
 	AdvertiserId int64 `json:"advertiser_id"`
 	// 抖音号id
-	AwemeId                       int64                                                             `json:"aweme_id"`
-	CreativeSetting               *QianchuanUniAwemeAdCreateV10RequestCreativeSetting               `json:"creative_setting,omitempty"`
-	DeliverySetting               QianchuanUniAwemeAdCreateV10RequestDeliverySetting                `json:"delivery_setting"`
-	MarketingGoal                 QianchuanUniAwemeAdCreateV10MarketingGoal                         `json:"marketing_goal"`
+	AwemeId         int64                                               `json:"aweme_id"`
+	CreativeSetting *QianchuanUniAwemeAdCreateV10RequestCreativeSetting `json:"creative_setting,omitempty"`
+	DeliverySetting QianchuanUniAwemeAdCreateV10RequestDeliverySetting  `json:"delivery_setting"`
+	MarketingGoal   QianchuanUniAwemeAdCreateV10MarketingGoal           `json:"marketing_goal"`
+	// 商品创意素材信息
+	MultiProductCreativeList []*QianchuanUniAwemeAdCreateV10RequestMultiProductCreativeListInner `json:"multi_product_creative_list,omitempty"`
+	//
+	ProductChannelInfo []*QianchuanUniAwemeAdCreateV10RequestProductChannelInfoInner `json:"product_channel_info,omitempty"`
+	//
+	ProductIds                    []int64                                                           `json:"product_ids,omitempty"`
 	ProgrammaticCreativeMediaList *QianchuanUniAwemeAdCreateV10RequestProgrammaticCreativeMediaList `json:"programmatic_creative_media_list,omitempty"`
 }

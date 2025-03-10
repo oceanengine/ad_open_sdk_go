@@ -15,16 +15,16 @@ type CampaignCreateV2LandingType string
 
 // List of campaign_create_v2_landing_type
 const (
-	APP_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "APP"
-	DPA_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "DPA"
-	BRAND_EXTERNAL_CampaignCreateV2LandingType CampaignCreateV2LandingType = "BRAND_EXTERNAL"
-	LIVE_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LIVE"
-	AWEME_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "AWEME"
 	SHOP_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "SHOP"
+	DPA_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "DPA"
+	AWEME_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "AWEME"
+	LIVE_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LIVE"
 	ARTICLE_CampaignCreateV2LandingType        CampaignCreateV2LandingType = "ARTICLE"
+	BRAND_EXTERNAL_CampaignCreateV2LandingType CampaignCreateV2LandingType = "BRAND_EXTERNAL"
+	APP_CampaignCreateV2LandingType            CampaignCreateV2LandingType = "APP"
+	STORE_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "STORE"
 	LINK_CampaignCreateV2LandingType           CampaignCreateV2LandingType = "LINK"
 	QUICK_APP_CampaignCreateV2LandingType      CampaignCreateV2LandingType = "QUICK_APP"
-	STORE_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "STORE"
 	GOODS_CampaignCreateV2LandingType          CampaignCreateV2LandingType = "GOODS"
 )
 

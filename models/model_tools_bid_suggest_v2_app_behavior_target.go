@@ -16,8 +16,8 @@ type ToolsBidSuggestV2AppBehaviorTarget string
 // List of tools_bid_suggest_v2_app_behavior_target
 const (
 	APP_ToolsBidSuggestV2AppBehaviorTarget      ToolsBidSuggestV2AppBehaviorTarget = "APP"
-	NONE_ToolsBidSuggestV2AppBehaviorTarget     ToolsBidSuggestV2AppBehaviorTarget = "NONE"
 	CATEGORY_ToolsBidSuggestV2AppBehaviorTarget ToolsBidSuggestV2AppBehaviorTarget = "CATEGORY"
+	NONE_ToolsBidSuggestV2AppBehaviorTarget     ToolsBidSuggestV2AppBehaviorTarget = "NONE"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_app_behavior_target value

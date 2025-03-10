@@ -14,6 +14,8 @@ package models
 type LocalFileVideoAwemeGetV30ResponseDataVideoListInner struct {
 	// 抖音号id
 	AwemeId *string `json:"aweme_id,omitempty"`
+	// 抖音号name
+	AwemeName *string `json:"aweme_name,omitempty"`
 	// 视频播放地址
 	AwemeVideoUrl *string `json:"aweme_video_url,omitempty"`
 	// 是否可投放

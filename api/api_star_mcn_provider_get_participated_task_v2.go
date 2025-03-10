@@ -29,6 +29,7 @@ type ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest struct {
 	page                    *int32
 	pageSize                *int32
 	providerOrderTaskStatus *int32
+	providerTaskCategory    *int32
 }
 
 func (r *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest) StarId(starId int64) *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest {
@@ -48,6 +49,11 @@ func (r *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest) PageSize(pageS
 
 func (r *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest) ProviderOrderTaskStatus(providerOrderTaskStatus int32) *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest {
 	r.providerOrderTaskStatus = &providerOrderTaskStatus
+	return r
+}
+
+func (r *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest) ProviderTaskCategory(providerTaskCategory int32) *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest {
+	r.providerTaskCategory = &providerTaskCategory
 	return r
 }
 
@@ -122,6 +128,9 @@ func (a *StarMcnProviderGetParticipatedTaskV2ApiService) getExecute(r *ApiOpenAp
 	parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
 	if r.providerOrderTaskStatus != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "provider_order_task_status", r.providerOrderTaskStatus)
+	}
+	if r.providerTaskCategory != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "provider_task_category", r.providerTaskCategory)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

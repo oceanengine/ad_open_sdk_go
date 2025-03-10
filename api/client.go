@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.39
+// APIClient manages communication with the Oceanengine Open Api API vtest58
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -142,6 +142,10 @@ type APIClient struct {
 	AgentAdvertiserUpdateV2Api *AgentAdvertiserUpdateV2ApiService
 
 	AgentChildAgentSelectV2Api *AgentChildAgentSelectV2ApiService
+
+	AgentCompanyBiddingListQueryV2Api *AgentCompanyBiddingListQueryV2ApiService
+
+	AgentCompanyBrandListQueryV2Api *AgentCompanyBrandListQueryV2ApiService
 
 	AgentFundTransferSeqCommitV2Api *AgentFundTransferSeqCommitV2ApiService
 
@@ -1065,6 +1069,12 @@ type APIClient struct {
 
 	QianchuanUniAwemeAuthorizedGetV10Api *QianchuanUniAwemeAuthorizedGetV10ApiService
 
+	QianchuanUniPromotionAdControlTaskCreateV10Api *QianchuanUniPromotionAdControlTaskCreateV10ApiService
+
+	QianchuanUniPromotionAdControlTaskListV10Api *QianchuanUniPromotionAdControlTaskListV10ApiService
+
+	QianchuanUniPromotionAdControlTaskStatusUpdateV10Api *QianchuanUniPromotionAdControlTaskStatusUpdateV10ApiService
+
 	QianchuanUniPromotionAdDetailV10Api *QianchuanUniPromotionAdDetailV10ApiService
 
 	QianchuanUniPromotionAdMaterialDeleteV10Api *QianchuanUniPromotionAdMaterialDeleteV10ApiService
@@ -1073,7 +1083,13 @@ type APIClient struct {
 
 	QianchuanUniPromotionAdStatusUpdateV10Api *QianchuanUniPromotionAdStatusUpdateV10ApiService
 
+	QianchuanUniPromotionBlockMaterialGetV10Api *QianchuanUniPromotionBlockMaterialGetV10ApiService
+
 	QianchuanUniPromotionListV10Api *QianchuanUniPromotionListV10ApiService
+
+	QianchuanUniPromotionProductAwemeGetV10Api *QianchuanUniPromotionProductAwemeGetV10ApiService
+
+	QianchuanUniPromotionProductGetV10Api *QianchuanUniPromotionProductGetV10ApiService
 
 	QianchuanVideoByAwemeGetV10Api *QianchuanVideoByAwemeGetV10ApiService
 
@@ -1189,6 +1205,10 @@ type APIClient struct {
 
 	ReportVideoFrameGetV2Api *ReportVideoFrameGetV2ApiService
 
+	SecurityAuditResultsV30Api *SecurityAuditResultsV30ApiService
+
+	SecurityOpenMaterialAuditV30Api *SecurityOpenMaterialAuditV30ApiService
+
 	SecurityScoreDisposalInfoGetV30Api *SecurityScoreDisposalInfoGetV30ApiService
 
 	SecurityScoreTotalGetV30Api *SecurityScoreTotalGetV30ApiService
@@ -1301,6 +1321,8 @@ type APIClient struct {
 
 	StarDemanderDemanderGetBindShareCodeV2Api *StarDemanderDemanderGetBindShareCodeV2ApiService
 
+	StarFeCommonServiceTalentDayGetCheckInCodeV2Api *StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService
+
 	StarFeCommonServiceTalentDayJudgeCheckedInV2Api *StarFeCommonServiceTalentDayJudgeCheckedInV2ApiService
 
 	StarGetCreateChallengeDataDictV2Api *StarGetCreateChallengeDataDictV2ApiService
@@ -1322,6 +1344,8 @@ type APIClient struct {
 	StarMcnProviderGetParticipatedTaskV2Api *StarMcnProviderGetParticipatedTaskV2ApiService
 
 	StarMcnProviderGetTaskDetailV2Api *StarMcnProviderGetTaskDetailV2ApiService
+
+	StarMcnProviderGetTaskItemListV2Api *StarMcnProviderGetTaskItemListV2ApiService
 
 	StarMcnProviderGetTaskShareCodeV2Api *StarMcnProviderGetTaskShareCodeV2ApiService
 
@@ -1950,6 +1974,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AgentAdvertiserUnassignV2Api = (*AgentAdvertiserUnassignV2ApiService)(&c.common)
 	c.AgentAdvertiserUpdateV2Api = (*AgentAdvertiserUpdateV2ApiService)(&c.common)
 	c.AgentChildAgentSelectV2Api = (*AgentChildAgentSelectV2ApiService)(&c.common)
+	c.AgentCompanyBiddingListQueryV2Api = (*AgentCompanyBiddingListQueryV2ApiService)(&c.common)
+	c.AgentCompanyBrandListQueryV2Api = (*AgentCompanyBrandListQueryV2ApiService)(&c.common)
 	c.AgentFundTransferSeqCommitV2Api = (*AgentFundTransferSeqCommitV2ApiService)(&c.common)
 	c.AgentFundTransferSeqCreateV2Api = (*AgentFundTransferSeqCreateV2ApiService)(&c.common)
 	c.AgentInfoV2Api = (*AgentInfoV2ApiService)(&c.common)
@@ -2411,11 +2437,17 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanUniAwemeAdCreateV10Api = (*QianchuanUniAwemeAdCreateV10ApiService)(&c.common)
 	c.QianchuanUniAwemeAdUpdateV10Api = (*QianchuanUniAwemeAdUpdateV10ApiService)(&c.common)
 	c.QianchuanUniAwemeAuthorizedGetV10Api = (*QianchuanUniAwemeAuthorizedGetV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdControlTaskCreateV10Api = (*QianchuanUniPromotionAdControlTaskCreateV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdControlTaskListV10Api = (*QianchuanUniPromotionAdControlTaskListV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdControlTaskStatusUpdateV10Api = (*QianchuanUniPromotionAdControlTaskStatusUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdDetailV10Api = (*QianchuanUniPromotionAdDetailV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdMaterialDeleteV10Api = (*QianchuanUniPromotionAdMaterialDeleteV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdMaterialGetV10Api = (*QianchuanUniPromotionAdMaterialGetV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdStatusUpdateV10Api = (*QianchuanUniPromotionAdStatusUpdateV10ApiService)(&c.common)
+	c.QianchuanUniPromotionBlockMaterialGetV10Api = (*QianchuanUniPromotionBlockMaterialGetV10ApiService)(&c.common)
 	c.QianchuanUniPromotionListV10Api = (*QianchuanUniPromotionListV10ApiService)(&c.common)
+	c.QianchuanUniPromotionProductAwemeGetV10Api = (*QianchuanUniPromotionProductAwemeGetV10ApiService)(&c.common)
+	c.QianchuanUniPromotionProductGetV10Api = (*QianchuanUniPromotionProductGetV10ApiService)(&c.common)
 	c.QianchuanVideoByAwemeGetV10Api = (*QianchuanVideoByAwemeGetV10ApiService)(&c.common)
 	c.QianchuanVideoGetV10Api = (*QianchuanVideoGetV10ApiService)(&c.common)
 	c.QueryBookingBusinessEntityIdGetV2Api = (*QueryBookingBusinessEntityIdGetV2ApiService)(&c.common)
@@ -2473,6 +2505,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ReportStardeliveryTaskDataGetV30Api = (*ReportStardeliveryTaskDataGetV30ApiService)(&c.common)
 	c.ReportStardeliveryTaskVideoDataGetV30Api = (*ReportStardeliveryTaskVideoDataGetV30ApiService)(&c.common)
 	c.ReportVideoFrameGetV2Api = (*ReportVideoFrameGetV2ApiService)(&c.common)
+	c.SecurityAuditResultsV30Api = (*SecurityAuditResultsV30ApiService)(&c.common)
+	c.SecurityOpenMaterialAuditV30Api = (*SecurityOpenMaterialAuditV30ApiService)(&c.common)
 	c.SecurityScoreDisposalInfoGetV30Api = (*SecurityScoreDisposalInfoGetV30ApiService)(&c.common)
 	c.SecurityScoreTotalGetV30Api = (*SecurityScoreTotalGetV30ApiService)(&c.common)
 	c.SecurityScoreViolationEventGetV30Api = (*SecurityScoreViolationEventGetV30ApiService)(&c.common)
@@ -2529,6 +2563,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarDemandSearchWordModifyV2Api = (*StarDemandSearchWordModifyV2ApiService)(&c.common)
 	c.StarDemanderDemanderGetAuthorBindInfoV2Api = (*StarDemanderDemanderGetAuthorBindInfoV2ApiService)(&c.common)
 	c.StarDemanderDemanderGetBindShareCodeV2Api = (*StarDemanderDemanderGetBindShareCodeV2ApiService)(&c.common)
+	c.StarFeCommonServiceTalentDayGetCheckInCodeV2Api = (*StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService)(&c.common)
 	c.StarFeCommonServiceTalentDayJudgeCheckedInV2Api = (*StarFeCommonServiceTalentDayJudgeCheckedInV2ApiService)(&c.common)
 	c.StarGetCreateChallengeDataDictV2Api = (*StarGetCreateChallengeDataDictV2ApiService)(&c.common)
 	c.StarInfoV2Api = (*StarInfoV2ApiService)(&c.common)
@@ -2540,6 +2575,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarMcnGetUnparticipatedTaskV2Api = (*StarMcnGetUnparticipatedTaskV2ApiService)(&c.common)
 	c.StarMcnProviderGetParticipatedTaskV2Api = (*StarMcnProviderGetParticipatedTaskV2ApiService)(&c.common)
 	c.StarMcnProviderGetTaskDetailV2Api = (*StarMcnProviderGetTaskDetailV2ApiService)(&c.common)
+	c.StarMcnProviderGetTaskItemListV2Api = (*StarMcnProviderGetTaskItemListV2ApiService)(&c.common)
 	c.StarMcnProviderGetTaskShareCodeV2Api = (*StarMcnProviderGetTaskShareCodeV2ApiService)(&c.common)
 	c.StarMcnProviderGetUnparticipatedTaskV2Api = (*StarMcnProviderGetUnparticipatedTaskV2ApiService)(&c.common)
 	c.StarOrderApproveResourceV2Api = (*StarOrderApproveResourceV2ApiService)(&c.common)

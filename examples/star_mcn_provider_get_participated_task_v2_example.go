@@ -27,6 +27,7 @@ type ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequestExample struct {
 	Page                    int32 `json:"page"`
 	PageSize                int32 `json:"page_size"`
 	ProviderOrderTaskStatus int32 `json:"provider_order_task_status,omitempty"`
+	ProviderTaskCategory    int32 `json:"provider_task_category,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/star/mcn/provider_get_participated_task/ Get
@@ -48,7 +49,7 @@ func main() {
 	resp, httpRes, err := apiClient.StarMcnProviderGetParticipatedTaskV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		StarId(request.StarId).Page(request.Page).PageSize(request.PageSize).ProviderOrderTaskStatus(request.ProviderOrderTaskStatus).
+		StarId(request.StarId).Page(request.Page).PageSize(request.PageSize).ProviderOrderTaskStatus(request.ProviderOrderTaskStatus).ProviderTaskCategory(request.ProviderTaskCategory).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

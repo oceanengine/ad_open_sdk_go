@@ -20,5 +20,9 @@ type AgentAdvertiserSelectV2Filtering struct {
 	//
 	CreateStartTime **string `json:"create_start_time,omitempty"`
 	//
+	NongrantValidBalanceGt *int64 `json:"nongrant_valid_balance_gt,omitempty"`
+	//
 	StatCostFenGt *int64 `json:"stat_cost_fen_gt,omitempty"`
+	//
+	TotalBalanceGt *int64 `json:"total_balance_gt,omitempty"`
 }

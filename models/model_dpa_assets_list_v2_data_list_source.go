@@ -15,8 +15,8 @@ type DpaAssetsListV2DataListSource string
 
 // List of dpa_assets_list_v2_data_list_source
 const (
-	AUTO_DpaAssetsListV2DataListSource   DpaAssetsListV2DataListSource = "AUTO"
 	MANUAL_DpaAssetsListV2DataListSource DpaAssetsListV2DataListSource = "MANUAL"
+	AUTO_DpaAssetsListV2DataListSource   DpaAssetsListV2DataListSource = "AUTO"
 )
 
 // Ptr returns reference to dpa_assets_list_v2_data_list_source value

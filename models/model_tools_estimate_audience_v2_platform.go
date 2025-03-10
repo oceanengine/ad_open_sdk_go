@@ -15,12 +15,12 @@ type ToolsEstimateAudienceV2Platform string
 
 // List of tools_estimate_audience_v2_platform
 const (
-	NONE_ToolsEstimateAudienceV2Platform    ToolsEstimateAudienceV2Platform = "NONE"
-	ANDROID_ToolsEstimateAudienceV2Platform ToolsEstimateAudienceV2Platform = "ANDROID"
-	PC_ToolsEstimateAudienceV2Platform      ToolsEstimateAudienceV2Platform = "PC"
-	IPAD_ToolsEstimateAudienceV2Platform    ToolsEstimateAudienceV2Platform = "IPAD"
-	WAP_ToolsEstimateAudienceV2Platform     ToolsEstimateAudienceV2Platform = "WAP"
 	IOS_ToolsEstimateAudienceV2Platform     ToolsEstimateAudienceV2Platform = "IOS"
+	IPAD_ToolsEstimateAudienceV2Platform    ToolsEstimateAudienceV2Platform = "IPAD"
+	NONE_ToolsEstimateAudienceV2Platform    ToolsEstimateAudienceV2Platform = "NONE"
+	PC_ToolsEstimateAudienceV2Platform      ToolsEstimateAudienceV2Platform = "PC"
+	WAP_ToolsEstimateAudienceV2Platform     ToolsEstimateAudienceV2Platform = "WAP"
+	ANDROID_ToolsEstimateAudienceV2Platform ToolsEstimateAudienceV2Platform = "ANDROID"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_platform value
