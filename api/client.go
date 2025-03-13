@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v&#39;rollback to prod&#39;
+// APIClient manages communication with the Oceanengine Open Api API v1.1.41
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -3013,6 +3013,10 @@ func (c *APIClient) call(ctx context.Context, request *http.Request, response in
 			error: httpResp.Status,
 		}
 		return httpResp, newErr
+	}
+	if res, ok := response.(*[]byte); ok {
+		*res = append(*res, body...)
+		return httpResp, nil
 	}
 	err = c.decode(&response, body, httpResp.Header.Get("Content-Type"))
 	if err != nil {

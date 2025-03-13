@@ -16,11 +16,11 @@ type ReportAdvertiserGetV2DataListAc string
 // List of report_advertiser_get_v2_data_list_ac
 const (
 	Enum_4_G_ReportAdvertiserGetV2DataListAc ReportAdvertiserGetV2DataListAc = "4G"
-	UNKNOWN_ReportAdvertiserGetV2DataListAc  ReportAdvertiserGetV2DataListAc = "unknown"
 	WIFI_ReportAdvertiserGetV2DataListAc     ReportAdvertiserGetV2DataListAc = "WIFI"
+	UNKNOWN_ReportAdvertiserGetV2DataListAc  ReportAdvertiserGetV2DataListAc = "unknown"
 	Enum_3_G_ReportAdvertiserGetV2DataListAc ReportAdvertiserGetV2DataListAc = "3G"
-	Enum_2_G_ReportAdvertiserGetV2DataListAc ReportAdvertiserGetV2DataListAc = "2G"
 	Enum_5_G_ReportAdvertiserGetV2DataListAc ReportAdvertiserGetV2DataListAc = "5G"
+	Enum_2_G_ReportAdvertiserGetV2DataListAc ReportAdvertiserGetV2DataListAc = "2G"
 )
 
 // Ptr returns reference to report_advertiser_get_v2_data_list_ac value

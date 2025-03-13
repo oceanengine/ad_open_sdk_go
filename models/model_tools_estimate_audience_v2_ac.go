@@ -18,8 +18,8 @@ const (
 	Enum_4_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "4G"
 	WIFI_ToolsEstimateAudienceV2Ac     ToolsEstimateAudienceV2Ac = "WIFI"
 	Enum_3_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "3G"
-	Enum_2_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "2G"
 	Enum_5_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "5G"
+	Enum_2_G_ToolsEstimateAudienceV2Ac ToolsEstimateAudienceV2Ac = "2G"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_ac value

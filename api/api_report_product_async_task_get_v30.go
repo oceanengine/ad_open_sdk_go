@@ -33,7 +33,7 @@ func (r *ApiOpenApiV30ReportProductAsyncTaskGetPostRequest) ReportProductAsyncTa
 	return r
 }
 
-func (r *ApiOpenApiV30ReportProductAsyncTaskGetPostRequest) Execute() (*ReportProductAsyncTaskGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportProductAsyncTaskGetPostRequest) Execute() ([]byte, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -65,12 +65,12 @@ func (a *ReportProductAsyncTaskGetV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return ReportProductAsyncTaskGetV30Response
-func (a *ReportProductAsyncTaskGetV30ApiService) postExecute(r *ApiOpenApiV30ReportProductAsyncTaskGetPostRequest) (*ReportProductAsyncTaskGetV30Response, *http.Response, error) {
+func (a *ReportProductAsyncTaskGetV30ApiService) postExecute(r *ApiOpenApiV30ReportProductAsyncTaskGetPostRequest) ([]byte, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
 		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportProductAsyncTaskGetV30Response
+		localVarReturnValue []byte
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)

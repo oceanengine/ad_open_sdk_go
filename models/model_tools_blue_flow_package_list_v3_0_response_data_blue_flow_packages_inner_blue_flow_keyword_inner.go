@@ -17,7 +17,8 @@ type ToolsBlueFlowPackageListV30ResponseDataBlueFlowPackagesInnerBlueFlowKeyword
 	//
 	BlueFlowKeywordName *string `json:"blue_flow_keyword_name,omitempty"`
 	//
-	BlueFlowKeywordTopQueryWordList []string `json:"blue_flow_keyword_top_query_word_list,omitempty"`
+	BlueFlowKeywordTopQueryWordList []string                                                                             `json:"blue_flow_keyword_top_query_word_list,omitempty"`
+	BlueFlowRecommendType           *ToolsBlueFlowPackageListV30DataBlueFlowPackagesBlueFlowKeywordBlueFlowRecommendType `json:"blue_flow_recommend_type,omitempty"`
 	//
 	SupportBlueFlowRecommendMaterial *bool `json:"support_blue_flow_recommend_material,omitempty"`
 }

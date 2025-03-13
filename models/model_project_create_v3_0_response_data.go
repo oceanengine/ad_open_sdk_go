@@ -13,6 +13,8 @@ package models
 // ProjectCreateV30ResponseData
 type ProjectCreateV30ResponseData struct {
 	//
+	ErrorKeywordsList []*ProjectCreateV30ResponseDataErrorKeywordsListInner `json:"error_keywords_list,omitempty"`
+	//
 	ProjectId *int64 `json:"project_id,omitempty"`
 	// 星广联投三期协议
 	SupplementaryAgreementInfo *string `json:"supplementary_agreement_info,omitempty"`

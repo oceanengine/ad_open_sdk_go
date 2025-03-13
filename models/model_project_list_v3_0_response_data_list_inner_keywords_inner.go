@@ -12,6 +12,8 @@ package models
 
 // ProjectListV30ResponseDataListInnerKeywordsInner struct for ProjectListV30ResponseDataListInnerKeywordsInner
 type ProjectListV30ResponseDataListInnerKeywordsInner struct {
+	//
+	Bid       *float64                                 `json:"bid,omitempty"`
 	BidType   *ProjectListV30DataListKeywordsBidType   `json:"bid_type,omitempty"`
 	MatchType *ProjectListV30DataListKeywordsMatchType `json:"match_type,omitempty"`
 	// 关键名称

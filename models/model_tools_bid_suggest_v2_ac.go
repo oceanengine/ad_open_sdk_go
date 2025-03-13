@@ -18,8 +18,8 @@ const (
 	Enum_4_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "4G"
 	WIFI_ToolsBidSuggestV2Ac     ToolsBidSuggestV2Ac = "WIFI"
 	Enum_3_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "3G"
-	Enum_2_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "2G"
 	Enum_5_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "5G"
+	Enum_2_G_ToolsBidSuggestV2Ac ToolsBidSuggestV2Ac = "2G"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_ac value

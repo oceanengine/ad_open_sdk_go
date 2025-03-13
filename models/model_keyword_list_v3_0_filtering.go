@@ -13,5 +13,7 @@ package models
 // KeywordListV30Filtering
 type KeywordListV30Filtering struct {
 	//
-	PromotionId int64 `json:"promotion_id"`
+	ProjectId *int64 `json:"project_id,omitempty"`
+	//
+	PromotionId *int64 `json:"promotion_id,omitempty"`
 }

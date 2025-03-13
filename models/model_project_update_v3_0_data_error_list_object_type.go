@@ -16,6 +16,7 @@ type ProjectUpdateV30DataErrorListObjectType string
 // List of project_update_v3.0_data_error_list_object_type
 const (
 	BUDGET_ProjectUpdateV30DataErrorListObjectType             ProjectUpdateV30DataErrorListObjectType = "BUDGET"
+	KEYWORDS_ProjectUpdateV30DataErrorListObjectType           ProjectUpdateV30DataErrorListObjectType = "KEYWORDS"
 	PROJECT_SETTING_ProjectUpdateV30DataErrorListObjectType    ProjectUpdateV30DataErrorListObjectType = "PROJECT_SETTING"
 	PROMOTION_BUDGET_ProjectUpdateV30DataErrorListObjectType   ProjectUpdateV30DataErrorListObjectType = "PROMOTION_BUDGET"
 	PROMOTION_MATERIAL_ProjectUpdateV30DataErrorListObjectType ProjectUpdateV30DataErrorListObjectType = "PROMOTION_MATERIAL"

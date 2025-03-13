@@ -17,6 +17,8 @@ type ProjectUpdateV30Request struct {
 	AigcDynamicCreativeSwitch *ProjectUpdateV30AigcDynamicCreativeSwitch `json:"aigc_dynamic_creative_switch,omitempty"`
 	Audience                  *ProjectUpdateV30RequestAudience           `json:"audience,omitempty"`
 	AudienceExtend            *ProjectUpdateV30AudienceExtend            `json:"audience_extend,omitempty"`
+	AutoExtendTraffic         *ProjectUpdateV30AutoExtendTraffic         `json:"auto_extend_traffic,omitempty"`
+	BlueFlowPackage           *ProjectUpdateV30RequestBlueFlowPackage    `json:"blue_flow_package,omitempty"`
 	DeliverySetting           *ProjectUpdateV30RequestDeliverySetting    `json:"delivery_setting,omitempty"`
 	DownloadMode              *ProjectUpdateV30DownloadMode              `json:"download_mode,omitempty"`
 	//

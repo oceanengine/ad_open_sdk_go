@@ -51,7 +51,7 @@ func (r *ApiOpenApi2AsyncTaskDownloadGetRequest) RangeTo(rangeTo int64) *ApiOpen
 	return r
 }
 
-func (r *ApiOpenApi2AsyncTaskDownloadGetRequest) Execute() (*AsyncTaskDownloadV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AsyncTaskDownloadGetRequest) Execute() ([]byte, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -83,12 +83,12 @@ func (a *AsyncTaskDownloadV2ApiService) Get(ctx context.Context) *ApiOpenApi2Asy
 // Execute executes the request
 //
 //	@return AsyncTaskDownloadV2Response
-func (a *AsyncTaskDownloadV2ApiService) getExecute(r *ApiOpenApi2AsyncTaskDownloadGetRequest) (*AsyncTaskDownloadV2Response, *http.Response, error) {
+func (a *AsyncTaskDownloadV2ApiService) getExecute(r *ApiOpenApi2AsyncTaskDownloadGetRequest) ([]byte, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
 		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AsyncTaskDownloadV2Response
+		localVarReturnValue []byte
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)

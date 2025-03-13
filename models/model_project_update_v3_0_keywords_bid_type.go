@@ -15,7 +15,9 @@ type ProjectUpdateV30KeywordsBidType string
 
 // List of project_update_v3.0_keywords_bid_type
 const (
+	CUSTOM_ProjectUpdateV30KeywordsBidType         ProjectUpdateV30KeywordsBidType = "CUSTOM"
 	FEED_TO_SEARCH_ProjectUpdateV30KeywordsBidType ProjectUpdateV30KeywordsBidType = "FEED_TO_SEARCH"
+	WITH_PROMOTION_ProjectUpdateV30KeywordsBidType ProjectUpdateV30KeywordsBidType = "WITH_PROMOTION"
 )
 
 // Ptr returns reference to project_update_v3.0_keywords_bid_type value

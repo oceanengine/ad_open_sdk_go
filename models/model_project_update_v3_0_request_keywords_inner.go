@@ -12,8 +12,10 @@ package models
 
 // ProjectUpdateV30RequestKeywordsInner struct for ProjectUpdateV30RequestKeywordsInner
 type ProjectUpdateV30RequestKeywordsInner struct {
-	BidType   *ProjectUpdateV30KeywordsBidType   `json:"bid_type,omitempty"`
-	MatchType *ProjectUpdateV30KeywordsMatchType `json:"match_type,omitempty"`
 	//
-	Word *string `json:"word,omitempty"`
+	Bid       *float64                          `json:"bid,omitempty"`
+	BidType   *ProjectUpdateV30KeywordsBidType  `json:"bid_type,omitempty"`
+	MatchType ProjectUpdateV30KeywordsMatchType `json:"match_type"`
+	//
+	Word string `json:"word"`
 }

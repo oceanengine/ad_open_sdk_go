@@ -15,8 +15,8 @@ type ToolsAppManagementShareAccountListV2SearchType string
 
 // List of tools_app_management_share_account_list_v2_search_type
 const (
-	ORGANIZATION_SHARE_ToolsAppManagementShareAccountListV2SearchType ToolsAppManagementShareAccountListV2SearchType = "ORGANIZATION_SHARE"
 	OTHER_ToolsAppManagementShareAccountListV2SearchType              ToolsAppManagementShareAccountListV2SearchType = "OTHER"
+	ORGANIZATION_SHARE_ToolsAppManagementShareAccountListV2SearchType ToolsAppManagementShareAccountListV2SearchType = "ORGANIZATION_SHARE"
 )
 
 // Ptr returns reference to tools_app_management_share_account_list_v2_search_type value

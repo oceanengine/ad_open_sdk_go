@@ -17,5 +17,7 @@ type KeywordUpdateV30Request struct {
 	//
 	Keywords []*KeywordUpdateV30RequestKeywordsInner `json:"keywords"`
 	//
-	PromotionId int64 `json:"promotion_id"`
+	ProjectId *int64 `json:"project_id,omitempty"`
+	//
+	PromotionId *int64 `json:"promotion_id,omitempty"`
 }

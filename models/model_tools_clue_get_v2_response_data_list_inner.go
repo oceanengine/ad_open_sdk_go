@@ -57,6 +57,8 @@ type ToolsClueGetV2ResponseDataListInner struct {
 	//
 	Email *string `json:"email,omitempty"`
 	//
+	ExtInfo *string `json:"ext_info,omitempty"`
+	//
 	ExternalUrl *string `json:"external_url,omitempty"`
 	//
 	ExtraInfo map[string]interface{} `json:"extra_info,omitempty"`

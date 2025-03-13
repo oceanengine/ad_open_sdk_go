@@ -15,11 +15,11 @@ type ReportLiveRoomAudiencePortraitGetV2Dimension string
 
 // List of report_live_room_audience_portrait_get_v2_dimension
 const (
-	PROVINCE_ReportLiveRoomAudiencePortraitGetV2Dimension ReportLiveRoomAudiencePortraitGetV2Dimension = "PROVINCE"
-	PLATFORM_ReportLiveRoomAudiencePortraitGetV2Dimension ReportLiveRoomAudiencePortraitGetV2Dimension = "PLATFORM"
-	AGE_ReportLiveRoomAudiencePortraitGetV2Dimension      ReportLiveRoomAudiencePortraitGetV2Dimension = "AGE"
-	GENDER_ReportLiveRoomAudiencePortraitGetV2Dimension   ReportLiveRoomAudiencePortraitGetV2Dimension = "GENDER"
 	CITY_ReportLiveRoomAudiencePortraitGetV2Dimension     ReportLiveRoomAudiencePortraitGetV2Dimension = "CITY"
+	GENDER_ReportLiveRoomAudiencePortraitGetV2Dimension   ReportLiveRoomAudiencePortraitGetV2Dimension = "GENDER"
+	AGE_ReportLiveRoomAudiencePortraitGetV2Dimension      ReportLiveRoomAudiencePortraitGetV2Dimension = "AGE"
+	PLATFORM_ReportLiveRoomAudiencePortraitGetV2Dimension ReportLiveRoomAudiencePortraitGetV2Dimension = "PLATFORM"
+	PROVINCE_ReportLiveRoomAudiencePortraitGetV2Dimension ReportLiveRoomAudiencePortraitGetV2Dimension = "PROVINCE"
 )
 
 // Ptr returns reference to report_live_room_audience_portrait_get_v2_dimension value

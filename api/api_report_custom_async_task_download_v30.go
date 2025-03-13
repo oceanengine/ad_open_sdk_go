@@ -39,7 +39,7 @@ func (r *ApiOpenApiV30ReportCustomAsyncTaskDownloadGetRequest) TaskId(taskId int
 	return r
 }
 
-func (r *ApiOpenApiV30ReportCustomAsyncTaskDownloadGetRequest) Execute() (*ReportCustomAsyncTaskDownloadV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportCustomAsyncTaskDownloadGetRequest) Execute() ([]byte, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -71,12 +71,12 @@ func (a *ReportCustomAsyncTaskDownloadV30ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return ReportCustomAsyncTaskDownloadV30Response
-func (a *ReportCustomAsyncTaskDownloadV30ApiService) getExecute(r *ApiOpenApiV30ReportCustomAsyncTaskDownloadGetRequest) (*ReportCustomAsyncTaskDownloadV30Response, *http.Response, error) {
+func (a *ReportCustomAsyncTaskDownloadV30ApiService) getExecute(r *ApiOpenApiV30ReportCustomAsyncTaskDownloadGetRequest) ([]byte, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
 		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportCustomAsyncTaskDownloadV30Response
+		localVarReturnValue []byte
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)

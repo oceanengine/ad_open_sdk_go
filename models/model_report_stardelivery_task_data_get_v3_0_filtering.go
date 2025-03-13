@@ -13,6 +13,8 @@ package models
 // ReportStardeliveryTaskDataGetV30Filtering
 type ReportStardeliveryTaskDataGetV30Filtering struct {
 	//
+	MetricValueFilter []*ReportStardeliveryTaskDataGetV30FilteringMetricValueFilterInner `json:"metric_value_filter,omitempty"`
+	//
 	StarTaskIds    []int64                                                  `json:"star_task_ids,omitempty"`
 	StarTaskStatus *ReportStardeliveryTaskDataGetV30FilteringStarTaskStatus `json:"star_task_status,omitempty"`
 }

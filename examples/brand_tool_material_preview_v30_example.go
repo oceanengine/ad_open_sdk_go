@@ -23,8 +23,8 @@ import (
 )
 
 type ApiOpenApiV30BrandToolMaterialPreviewGetRequestExample struct {
-	AdvertiserId int64 `json:"advertiser_id,omitempty"`
-	MaterialId   int64 `json:"material_id,omitempty"`
+	AdvertiserId int64 `json:"advertiser_id"`
+	MaterialId   int64 `json:"material_id"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/brand/tool/material_preview/ Get

@@ -22,8 +22,9 @@ type ProjectListV30ResponseDataListInner struct {
 	AssetType        *ProjectListV30DataListAssetType             `json:"asset_type,omitempty"`
 	Audience         *ProjectListV30ResponseDataListInnerAudience `json:"audience,omitempty"`
 	//
-	AudienceExtend  *string                                             `json:"audience_extend,omitempty"`
-	BlueFlowPackage *ProjectListV30ResponseDataListInnerBlueFlowPackage `json:"blue_flow_package,omitempty"`
+	AudienceExtend    *string                                             `json:"audience_extend,omitempty"`
+	AutoExtendTraffic *ProjectListV30DataListAutoExtendTraffic            `json:"auto_extend_traffic,omitempty"`
+	BlueFlowPackage   *ProjectListV30ResponseDataListInnerBlueFlowPackage `json:"blue_flow_package,omitempty"`
 	//
 	BudgetGroupId   *int64                                              `json:"budget_group_id,omitempty"`
 	DeliveryMedium  *ProjectListV30DataListDeliveryMedium               `json:"delivery_medium,omitempty"`

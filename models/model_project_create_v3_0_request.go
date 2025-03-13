@@ -19,12 +19,13 @@ type ProjectCreateV30Request struct {
 	AdvertisingVolume         *int64                                     `json:"advertising_volume,omitempty"`
 	AigcDynamicCreativeSwitch *ProjectCreateV30AigcDynamicCreativeSwitch `json:"aigc_dynamic_creative_switch,omitempty"`
 	//
-	AppName          *string                                 `json:"app_name,omitempty"`
-	AppPromotionType *ProjectCreateV30AppPromotionType       `json:"app_promotion_type,omitempty"`
-	AssetType        *ProjectCreateV30AssetType              `json:"asset_type,omitempty"`
-	Audience         *ProjectCreateV30RequestAudience        `json:"audience,omitempty"`
-	AudienceExtend   *ProjectCreateV30AudienceExtend         `json:"audience_extend,omitempty"`
-	BlueFlowPackage  *ProjectCreateV30RequestBlueFlowPackage `json:"blue_flow_package,omitempty"`
+	AppName           *string                                 `json:"app_name,omitempty"`
+	AppPromotionType  *ProjectCreateV30AppPromotionType       `json:"app_promotion_type,omitempty"`
+	AssetType         *ProjectCreateV30AssetType              `json:"asset_type,omitempty"`
+	Audience          *ProjectCreateV30RequestAudience        `json:"audience,omitempty"`
+	AudienceExtend    *ProjectCreateV30AudienceExtend         `json:"audience_extend,omitempty"`
+	AutoExtendTraffic *ProjectCreateV30AutoExtendTraffic      `json:"auto_extend_traffic,omitempty"`
+	BlueFlowPackage   *ProjectCreateV30RequestBlueFlowPackage `json:"blue_flow_package,omitempty"`
 	//
 	BudgetGroupId   *int64                                 `json:"budget_group_id,omitempty"`
 	Classify        *ProjectCreateV30Classify              `json:"classify,omitempty"`

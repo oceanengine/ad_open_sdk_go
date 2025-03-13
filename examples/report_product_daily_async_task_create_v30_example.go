@@ -47,7 +47,7 @@ func main() {
 		AccessToken(accessToken).
 		ReportProductDailyAsyncTaskCreateV30Request(request.ReportProductDailyAsyncTaskCreateV30Request).
 		Execute()
-	fmt.Println(ToJsonString(resp))
+	fmt.Println(string(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)
 	fmt.Println(string(resBytes))
 	fmt.Println(err)

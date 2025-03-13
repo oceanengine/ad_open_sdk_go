@@ -15,7 +15,9 @@ type ProjectListV30DataListKeywordsBidType string
 
 // List of project_list_v3.0_data_list_keywords_bid_type
 const (
+	CUSTOM_ProjectListV30DataListKeywordsBidType         ProjectListV30DataListKeywordsBidType = "CUSTOM"
 	FEED_TO_SEARCH_ProjectListV30DataListKeywordsBidType ProjectListV30DataListKeywordsBidType = "FEED_TO_SEARCH"
+	WITH_PROMOTION_ProjectListV30DataListKeywordsBidType ProjectListV30DataListKeywordsBidType = "WITH_PROMOTION"
 )
 
 // Ptr returns reference to project_list_v3.0_data_list_keywords_bid_type value

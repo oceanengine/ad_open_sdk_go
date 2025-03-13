@@ -41,7 +41,7 @@ func (r *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest) TaskId(tas
 	return r
 }
 
-func (r *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest) Execute() (*FileRebateMaterialDownloadDownloadFileV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest) Execute() ([]byte, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +73,12 @@ func (a *FileRebateMaterialDownloadDownloadFileV2ApiService) Get(ctx context.Con
 // Execute executes the request
 //
 //	@return FileRebateMaterialDownloadDownloadFileV2Response
-func (a *FileRebateMaterialDownloadDownloadFileV2ApiService) getExecute(r *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest) (*FileRebateMaterialDownloadDownloadFileV2Response, *http.Response, error) {
+func (a *FileRebateMaterialDownloadDownloadFileV2ApiService) getExecute(r *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest) ([]byte, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
 		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileRebateMaterialDownloadDownloadFileV2Response
+		localVarReturnValue []byte
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)

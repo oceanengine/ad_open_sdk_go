@@ -15,21 +15,21 @@ type ReportCampaignGetV2DataListInventory string
 
 // List of report_campaign_get_v2_data_list_inventory
 const (
-	INVENTORY_PIPIXIA_ReportCampaignGetV2DataListInventory      ReportCampaignGetV2DataListInventory = "INVENTORY_PIPIXIA"
-	INVENTORY_FURNISH_ReportCampaignGetV2DataListInventory      ReportCampaignGetV2DataListInventory = "INVENTORY_FURNISH"
-	INVENTORY_FEED_ReportCampaignGetV2DataListInventory         ReportCampaignGetV2DataListInventory = "INVENTORY_FEED"
-	INVENTORY_UNION_SLOT_ReportCampaignGetV2DataListInventory   ReportCampaignGetV2DataListInventory = "INVENTORY_UNION_SLOT"
-	INVENTORY_FACE_U_ReportCampaignGetV2DataListInventory       ReportCampaignGetV2DataListInventory = "INVENTORY_FACE_U"
-	INVENTORY_AUTOMOBILE_ReportCampaignGetV2DataListInventory   ReportCampaignGetV2DataListInventory = "INVENTORY_AUTOMOBILE"
-	UNION_BOUTIQUE_GAME_ReportCampaignGetV2DataListInventory    ReportCampaignGetV2DataListInventory = "UNION_BOUTIQUE_GAME"
-	INVENTORY_VIDEO_FEED_ReportCampaignGetV2DataListInventory   ReportCampaignGetV2DataListInventory = "INVENTORY_VIDEO_FEED"
-	INVENTORY_BEAUTY_ReportCampaignGetV2DataListInventory       ReportCampaignGetV2DataListInventory = "INVENTORY_BEAUTY"
-	INVENTORY_STUDY_ReportCampaignGetV2DataListInventory        ReportCampaignGetV2DataListInventory = "INVENTORY_STUDY"
-	INVENTORY_SEARCH_ReportCampaignGetV2DataListInventory       ReportCampaignGetV2DataListInventory = "INVENTORY_SEARCH"
 	INVENTORY_TOMATO_NOVEL_ReportCampaignGetV2DataListInventory ReportCampaignGetV2DataListInventory = "INVENTORY_TOMATO_NOVEL"
+	INVENTORY_VIDEO_FEED_ReportCampaignGetV2DataListInventory   ReportCampaignGetV2DataListInventory = "INVENTORY_VIDEO_FEED"
+	INVENTORY_FURNISH_ReportCampaignGetV2DataListInventory      ReportCampaignGetV2DataListInventory = "INVENTORY_FURNISH"
+	INVENTORY_FACE_U_ReportCampaignGetV2DataListInventory       ReportCampaignGetV2DataListInventory = "INVENTORY_FACE_U"
+	INVENTORY_FEED_ReportCampaignGetV2DataListInventory         ReportCampaignGetV2DataListInventory = "INVENTORY_FEED"
 	INVENTORY_UNIVERSAL_ReportCampaignGetV2DataListInventory    ReportCampaignGetV2DataListInventory = "INVENTORY_UNIVERSAL"
-	INVENTORY_HOTSOON_FEED_ReportCampaignGetV2DataListInventory ReportCampaignGetV2DataListInventory = "INVENTORY_HOTSOON_FEED"
+	INVENTORY_AUTOMOBILE_ReportCampaignGetV2DataListInventory   ReportCampaignGetV2DataListInventory = "INVENTORY_AUTOMOBILE"
+	INVENTORY_SEARCH_ReportCampaignGetV2DataListInventory       ReportCampaignGetV2DataListInventory = "INVENTORY_SEARCH"
 	INVENTORY_AWEME_FEED_ReportCampaignGetV2DataListInventory   ReportCampaignGetV2DataListInventory = "INVENTORY_AWEME_FEED"
+	UNION_BOUTIQUE_GAME_ReportCampaignGetV2DataListInventory    ReportCampaignGetV2DataListInventory = "UNION_BOUTIQUE_GAME"
+	INVENTORY_BEAUTY_ReportCampaignGetV2DataListInventory       ReportCampaignGetV2DataListInventory = "INVENTORY_BEAUTY"
+	INVENTORY_UNION_SLOT_ReportCampaignGetV2DataListInventory   ReportCampaignGetV2DataListInventory = "INVENTORY_UNION_SLOT"
+	INVENTORY_STUDY_ReportCampaignGetV2DataListInventory        ReportCampaignGetV2DataListInventory = "INVENTORY_STUDY"
+	INVENTORY_HOTSOON_FEED_ReportCampaignGetV2DataListInventory ReportCampaignGetV2DataListInventory = "INVENTORY_HOTSOON_FEED"
+	INVENTORY_PIPIXIA_ReportCampaignGetV2DataListInventory      ReportCampaignGetV2DataListInventory = "INVENTORY_PIPIXIA"
 )
 
 // Ptr returns reference to report_campaign_get_v2_data_list_inventory value

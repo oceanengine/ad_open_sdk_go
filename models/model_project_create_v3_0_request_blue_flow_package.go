@@ -13,6 +13,8 @@ package models
 // ProjectCreateV30RequestBlueFlowPackage
 type ProjectCreateV30RequestBlueFlowPackage struct {
 	//
+	BlueFlowKeywordName []string `json:"blue_flow_keyword_name,omitempty"`
+	//
 	BlueFlowPackageId      *int64                                                 `json:"blue_flow_package_id,omitempty"`
 	BlueFlowPackageSetting *ProjectCreateV30BlueFlowPackageBlueFlowPackageSetting `json:"blue_flow_package_setting,omitempty"`
 }

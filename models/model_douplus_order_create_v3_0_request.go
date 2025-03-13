@@ -26,5 +26,7 @@ type DouplusOrderCreateV30Request struct {
 	LiveroomHeatMode []*DouplusOrderCreateV30LiveroomHeatMode `json:"liveroom_heat_mode,omitempty"`
 	//
 	ObjectInfos []*DouplusOrderCreateV30RequestObjectInfosInner `json:"object_infos"`
-	Targeting   *DouplusOrderCreateV30RequestTargeting          `json:"targeting,omitempty"`
+	// RtaID
+	RtaId     *int64                                 `json:"rta_id,omitempty"`
+	Targeting *DouplusOrderCreateV30RequestTargeting `json:"targeting,omitempty"`
 }

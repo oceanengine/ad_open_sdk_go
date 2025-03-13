@@ -48,7 +48,7 @@ func main() {
 		AccessToken(accessToken).
 		AgentId(request.AgentId).TaskId(request.TaskId).
 		Execute()
-	fmt.Println(ToJsonString(resp))
+	fmt.Println(string(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)
 	fmt.Println(string(resBytes))
 	fmt.Println(err)
