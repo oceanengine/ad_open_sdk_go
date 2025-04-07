@@ -32,4 +32,7 @@ type StarComponentCreateLinkV2RequestLinkComponentInfo struct {
 	LinkTitle *string `json:"link_title,omitempty"`
 	// 组件类型 仅限以下 (1)：落地页
 	LinkType *int64 `json:"link_type,omitempty"`
+	// 落地页链接 直播落地页需要
+	LinkUrl  *string                                                    `json:"link_url,omitempty"`
+	LiveCard *StarComponentCreateLinkV2RequestLinkComponentInfoLiveCard `json:"live_card,omitempty"`
 }

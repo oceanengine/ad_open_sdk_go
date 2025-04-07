@@ -16,6 +16,8 @@ type QianchuanUniAwemeAuthorizedGetV10ResponseDataPageInfo struct {
 	Page int64 `json:"page"`
 	//
 	PageSize int64 `json:"page_size"`
+	// 总数
+	TotalNumber *int64 `json:"total_number,omitempty"`
 	//
 	TotalPage *int64 `json:"total_page,omitempty"`
 	//

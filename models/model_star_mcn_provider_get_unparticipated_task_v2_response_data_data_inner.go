@@ -17,6 +17,8 @@ type StarMcnProviderGetUnparticipatedTaskV2ResponseDataDataInner struct {
 	//
 	CommissionRateIaap *string `json:"commission_rate_iaap,omitempty"`
 	//
+	ComponentType *int64 `json:"component_type,omitempty"`
+	//
 	CreateTime string `json:"create_time"`
 	//
 	DemandIcon *string `json:"demand_icon,omitempty"`

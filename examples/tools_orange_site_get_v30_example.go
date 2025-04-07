@@ -23,12 +23,13 @@ import (
 )
 
 type ApiOpenApiV30ToolsOrangeSiteGetGetRequestExample struct {
-	AdvertiserId int64                             `json:"advertiser_id"`
-	Page         int32                             `json:"page"`
-	PageSize     int32                             `json:"page_size"`
-	OptimizeGoal ToolsOrangeSiteGetV30OptimizeGoal `json:"optimize_goal"`
-	Status       ToolsOrangeSiteGetV30Status       `json:"status,omitempty"`
-	Filtering    ToolsOrangeSiteGetV30Filtering    `json:"filtering,omitempty"`
+	AdvertiserId   int64                               `json:"advertiser_id"`
+	Page           int32                               `json:"page"`
+	PageSize       int32                               `json:"page_size"`
+	OptimizeGoal   ToolsOrangeSiteGetV30OptimizeGoal   `json:"optimize_goal"`
+	Status         ToolsOrangeSiteGetV30Status         `json:"status,omitempty"`
+	Filtering      ToolsOrangeSiteGetV30Filtering      `json:"filtering,omitempty"`
+	MultiAssetType ToolsOrangeSiteGetV30MultiAssetType `json:"multi_asset_type,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/orange_site/get/ Get
@@ -50,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsOrangeSiteGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Page(request.Page).PageSize(request.PageSize).OptimizeGoal(request.OptimizeGoal).Status(request.Status).Filtering(request.Filtering).
+		AdvertiserId(request.AdvertiserId).Page(request.Page).PageSize(request.PageSize).OptimizeGoal(request.OptimizeGoal).Status(request.Status).Filtering(request.Filtering).MultiAssetType(request.MultiAssetType).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

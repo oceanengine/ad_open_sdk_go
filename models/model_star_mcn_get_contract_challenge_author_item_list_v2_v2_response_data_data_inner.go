@@ -85,6 +85,8 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner struct {
 	Play *int64 `json:"play,omitempty"`
 	// 发布时间
 	PublishTime *int64 `json:"publish_time,omitempty"`
+	// 审核拒绝原因
+	RejectReasons []string `json:"reject_reasons,omitempty"`
 	// 撮合中介已发放佣金(和mcn_amount类似)，单位为厘（元*1000）
 	ServiceProviderAmount *int64 `json:"service_provider_amount,omitempty"`
 	// 结算时间

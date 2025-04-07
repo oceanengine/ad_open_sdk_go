@@ -15,6 +15,7 @@ type EventManagerOptimizedGoalGetV2V30MultiAssetType string
 
 // List of event_manager_optimized_goal_get_v2_v3.0_multi_asset_type
 const (
+	ORANGE_EventManagerOptimizedGoalGetV2V30MultiAssetType           EventManagerOptimizedGoalGetV2V30MultiAssetType = "ORANGE"
 	ORANGE_AND_AWEME_EventManagerOptimizedGoalGetV2V30MultiAssetType EventManagerOptimizedGoalGetV2V30MultiAssetType = "ORANGE_AND_AWEME"
 )
 

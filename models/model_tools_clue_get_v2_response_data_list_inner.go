@@ -106,5 +106,7 @@ type ToolsClueGetV2ResponseDataListInner struct {
 	//
 	Telephone *string `json:"telephone,omitempty"`
 	//
+	TelephoneAddress *string `json:"telephone_address,omitempty"`
+	//
 	Weixin *string `json:"weixin,omitempty"`
 }

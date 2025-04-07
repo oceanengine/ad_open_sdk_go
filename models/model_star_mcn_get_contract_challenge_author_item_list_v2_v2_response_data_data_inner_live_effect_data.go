@@ -15,7 +15,7 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerLiveEffec
 	// 涨粉人数(只看点击关注的人数，不关心取关)
 	FollowUv *int64 `json:"follow_uv,omitempty"`
 	// 分享率(0.XXXX)
-	ShareRate *int64 `json:"share_rate,omitempty"`
+	ShareRate *float64 `json:"share_rate,omitempty"`
 	// 直播观看次数
 	WatchCnt *int64 `json:"watch_cnt,omitempty"`
 	// #直播平均观看时长-s (总观看时长/观看人数)

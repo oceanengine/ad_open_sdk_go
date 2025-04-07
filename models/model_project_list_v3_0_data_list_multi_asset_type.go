@@ -15,6 +15,7 @@ type ProjectListV30DataListMultiAssetType string
 
 // List of project_list_v3.0_data_list_multi_asset_type
 const (
+	ORANGE_ProjectListV30DataListMultiAssetType           ProjectListV30DataListMultiAssetType = "ORANGE"
 	ORANGE_AND_AWEME_ProjectListV30DataListMultiAssetType ProjectListV30DataListMultiAssetType = "ORANGE_AND_AWEME"
 )
 

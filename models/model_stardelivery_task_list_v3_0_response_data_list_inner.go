@@ -17,9 +17,13 @@ type StardeliveryTaskListV30ResponseDataListInner struct {
 	//
 	StarAdCostDivideRatio *float64 `json:"star_ad_cost_divide_ratio,omitempty"`
 	//
+	StarAuthorPending *int32 `json:"star_author_pending,omitempty"`
+	//
 	StarId *int64 `json:"star_id,omitempty"`
 	//
 	StarMaterialBid *float64 `json:"star_material_bid,omitempty"`
+	//
+	StarMaterialBidRange []float64 `json:"star_material_bid_range,omitempty"`
 	//
 	StarMaterialFirstName *string `json:"star_material_first_name,omitempty"`
 	//
@@ -47,7 +51,8 @@ type StardeliveryTaskListV30ResponseDataListInner struct {
 	StarTaskCreateTime     *string                                                `json:"star_task_create_time,omitempty"`
 	StarTaskExternalAction *StardeliveryTaskListV30DataListStarTaskExternalAction `json:"star_task_external_action,omitempty"`
 	//
-	StarTaskId *int64 `json:"star_task_id,omitempty"`
+	StarTaskId                     *int64                                                         `json:"star_task_id,omitempty"`
+	StarTaskMaterialPurchaseMethod *StardeliveryTaskListV30DataListStarTaskMaterialPurchaseMethod `json:"star_task_material_purchase_method,omitempty"`
 	//
 	StarTaskModifyTime *string `json:"star_task_modify_time,omitempty"`
 	//

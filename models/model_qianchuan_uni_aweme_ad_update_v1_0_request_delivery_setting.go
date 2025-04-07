@@ -15,9 +15,19 @@ type QianchuanUniAwemeAdUpdateV10RequestDeliverySetting struct {
 	//
 	Budget *float64 `json:"budget,omitempty"`
 	//
-	EndTime          *string                                                      `json:"end_time,omitempty"`
+	DailyDeliveryTime *float64 `json:"daily_delivery_time,omitempty"`
+	//
+	EndTime *string `json:"end_time,omitempty"`
+	//
+	EstimateConvert *int64 `json:"estimate_convert,omitempty"`
+	//
+	EstimateRoiGoal  *float64                                                     `json:"estimate_roi_goal,omitempty"`
 	LiveScheduleType *QianchuanUniAwemeAdUpdateV10DeliverySettingLiveScheduleType `json:"live_schedule_type,omitempty"`
-	QcpxMode         *QianchuanUniAwemeAdUpdateV10DeliverySettingQcpxMode         `json:"qcpx_mode,omitempty"`
+	//
+	MinEstimateConvert *int64 `json:"min_estimate_convert,omitempty"`
+	//
+	MinEstimateRoiGoal *float64                                             `json:"min_estimate_roi_goal,omitempty"`
+	QcpxMode           *QianchuanUniAwemeAdUpdateV10DeliverySettingQcpxMode `json:"qcpx_mode,omitempty"`
 	//
 	Roi2Goal *float64 `json:"roi2_goal,omitempty"`
 	//

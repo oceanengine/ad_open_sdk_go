@@ -38,6 +38,7 @@ type ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest struct {
 	appName             *string
 	demandId            *int64
 	gameType            *int64
+	componentType       *int64
 }
 
 func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) StarId(starId int64) *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
@@ -106,6 +107,11 @@ func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) DemandId(dem
 
 func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) GameType(gameType int64) *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
 	r.gameType = &gameType
+	return r
+}
+
+func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) ComponentType(componentType int64) *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
+	r.componentType = &componentType
 	return r
 }
 
@@ -207,6 +213,9 @@ func (a *StarMcnProviderGetUnparticipatedTaskV2ApiService) getExecute(r *ApiOpen
 	}
 	if r.gameType != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "game_type", r.gameType)
+	}
+	if r.componentType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "component_type", r.componentType)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

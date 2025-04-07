@@ -15,7 +15,8 @@ type QianchuanUniAwemeAdCreateV10DeliverySettingSmartBidType string
 
 // List of qianchuan_uni_aweme_ad_create_v1.0_delivery_setting_smart_bid_type
 const (
-	SMART_BID_CUSTOM_QianchuanUniAwemeAdCreateV10DeliverySettingSmartBidType QianchuanUniAwemeAdCreateV10DeliverySettingSmartBidType = "SMART_BID_CUSTOM"
+	SMART_BID_CONSERVATIVE_QianchuanUniAwemeAdCreateV10DeliverySettingSmartBidType QianchuanUniAwemeAdCreateV10DeliverySettingSmartBidType = "SMART_BID_CONSERVATIVE"
+	SMART_BID_CUSTOM_QianchuanUniAwemeAdCreateV10DeliverySettingSmartBidType       QianchuanUniAwemeAdCreateV10DeliverySettingSmartBidType = "SMART_BID_CUSTOM"
 )
 
 // Ptr returns reference to qianchuan_uni_aweme_ad_create_v1.0_delivery_setting_smart_bid_type value

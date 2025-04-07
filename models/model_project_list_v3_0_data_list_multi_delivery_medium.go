@@ -15,6 +15,7 @@ type ProjectListV30DataListMultiDeliveryMedium string
 
 // List of project_list_v3.0_data_list_multi_delivery_medium
 const (
+	ORANGE_ProjectListV30DataListMultiDeliveryMedium           ProjectListV30DataListMultiDeliveryMedium = "ORANGE"
 	ORANGE_AND_AWEME_ProjectListV30DataListMultiDeliveryMedium ProjectListV30DataListMultiDeliveryMedium = "ORANGE_AND_AWEME"
 )
 

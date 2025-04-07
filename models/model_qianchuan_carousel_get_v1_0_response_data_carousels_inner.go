@@ -23,5 +23,6 @@ type QianchuanCarouselGetV10ResponseDataCarouselsInner struct {
 	//
 	Images []*QianchuanCarouselGetV10ResponseDataCarouselsInnerImagesInner `json:"images,omitempty"`
 	//
-	MaterialId *int64 `json:"material_id,omitempty"`
+	MaterialId *int64                                      `json:"material_id,omitempty"`
+	Source     *QianchuanCarouselGetV10DataCarouselsSource `json:"source,omitempty"`
 }

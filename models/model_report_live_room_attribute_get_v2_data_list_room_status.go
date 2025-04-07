@@ -15,10 +15,10 @@ type ReportLiveRoomAttributeGetV2DataListRoomStatus string
 
 // List of report_live_room_attribute_get_v2_data_list_room_status
 const (
-	PREPARING_ReportLiveRoomAttributeGetV2DataListRoomStatus ReportLiveRoomAttributeGetV2DataListRoomStatus = "PREPARING"
+	END_ReportLiveRoomAttributeGetV2DataListRoomStatus       ReportLiveRoomAttributeGetV2DataListRoomStatus = "END"
 	LIVING_ReportLiveRoomAttributeGetV2DataListRoomStatus    ReportLiveRoomAttributeGetV2DataListRoomStatus = "LIVING"
 	PAUSE_ReportLiveRoomAttributeGetV2DataListRoomStatus     ReportLiveRoomAttributeGetV2DataListRoomStatus = "PAUSE"
-	END_ReportLiveRoomAttributeGetV2DataListRoomStatus       ReportLiveRoomAttributeGetV2DataListRoomStatus = "END"
+	PREPARING_ReportLiveRoomAttributeGetV2DataListRoomStatus ReportLiveRoomAttributeGetV2DataListRoomStatus = "PREPARING"
 )
 
 // Ptr returns reference to report_live_room_attribute_get_v2_data_list_room_status value

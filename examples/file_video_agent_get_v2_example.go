@@ -24,9 +24,9 @@ import (
 
 type ApiOpenApi2FileVideoAgentGetGetRequestExample struct {
 	AgentId   int64                        `json:"agent_id"`
-	Page      int64                        `json:"page"`
-	PageSize  int64                        `json:"page_size"`
 	Filtering FileVideoAgentGetV2Filtering `json:"filtering,omitempty"`
+	Page      int64                        `json:"page,omitempty"`
+	PageSize  int64                        `json:"page_size,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/file/video/agent/get/ Get
@@ -48,7 +48,7 @@ func main() {
 	resp, httpRes, err := apiClient.FileVideoAgentGetV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AgentId(request.AgentId).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).
+		AgentId(request.AgentId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

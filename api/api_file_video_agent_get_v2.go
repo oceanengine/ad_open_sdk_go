@@ -26,14 +26,20 @@ type ApiOpenApi2FileVideoAgentGetGetRequest struct {
 	ctx        context.Context
 	ApiService *FileVideoAgentGetV2ApiService
 	agentId    *int64
+	filtering  *FileVideoAgentGetV2Filtering
 	page       *int64
 	pageSize   *int64
-	filtering  *FileVideoAgentGetV2Filtering
 }
 
 // 代理商ID
 func (r *ApiOpenApi2FileVideoAgentGetGetRequest) AgentId(agentId int64) *ApiOpenApi2FileVideoAgentGetGetRequest {
 	r.agentId = &agentId
+	return r
+}
+
+// 视频过滤条件
+func (r *ApiOpenApi2FileVideoAgentGetGetRequest) Filtering(filtering FileVideoAgentGetV2Filtering) *ApiOpenApi2FileVideoAgentGetGetRequest {
+	r.filtering = &filtering
 	return r
 }
 
@@ -46,12 +52,6 @@ func (r *ApiOpenApi2FileVideoAgentGetGetRequest) Page(page int64) *ApiOpenApi2Fi
 // 页面大小，默认值20
 func (r *ApiOpenApi2FileVideoAgentGetGetRequest) PageSize(pageSize int64) *ApiOpenApi2FileVideoAgentGetGetRequest {
 	r.pageSize = &pageSize
-	return r
-}
-
-// 视频过滤条件
-func (r *ApiOpenApi2FileVideoAgentGetGetRequest) Filtering(filtering FileVideoAgentGetV2Filtering) *ApiOpenApi2FileVideoAgentGetGetRequest {
-	r.filtering = &filtering
 	return r
 }
 
@@ -108,19 +108,17 @@ func (a *FileVideoAgentGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoAgentG
 	if r.agentId == nil {
 		return localVarReturnValue, nil, ReportError("agentId is required and must be specified")
 	}
-	if r.page == nil {
-		return localVarReturnValue, nil, ReportError("page is required and must be specified")
-	}
-	if r.pageSize == nil {
-		return localVarReturnValue, nil, ReportError("pageSize is required and must be specified")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "agent_id", r.agentId)
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
-	parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	if r.page != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
+	}
+	if r.pageSize != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

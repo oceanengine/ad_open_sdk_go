@@ -15,6 +15,7 @@ type ProjectCreateV30MultiAssetType string
 
 // List of project_create_v3.0_multi_asset_type
 const (
+	ORANGE_ProjectCreateV30MultiAssetType           ProjectCreateV30MultiAssetType = "ORANGE"
 	ORANGE_AND_AWEME_ProjectCreateV30MultiAssetType ProjectCreateV30MultiAssetType = "ORANGE_AND_AWEME"
 )
 

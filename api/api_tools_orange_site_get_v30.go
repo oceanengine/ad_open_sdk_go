@@ -23,14 +23,15 @@ import (
 type ToolsOrangeSiteGetV30ApiService service
 
 type ApiOpenApiV30ToolsOrangeSiteGetGetRequest struct {
-	ctx          context.Context
-	ApiService   *ToolsOrangeSiteGetV30ApiService
-	advertiserId *int64
-	page         *int32
-	pageSize     *int32
-	optimizeGoal *ToolsOrangeSiteGetV30OptimizeGoal
-	status       *ToolsOrangeSiteGetV30Status
-	filtering    *ToolsOrangeSiteGetV30Filtering
+	ctx            context.Context
+	ApiService     *ToolsOrangeSiteGetV30ApiService
+	advertiserId   *int64
+	page           *int32
+	pageSize       *int32
+	optimizeGoal   *ToolsOrangeSiteGetV30OptimizeGoal
+	status         *ToolsOrangeSiteGetV30Status
+	filtering      *ToolsOrangeSiteGetV30Filtering
+	multiAssetType *ToolsOrangeSiteGetV30MultiAssetType
 }
 
 func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsOrangeSiteGetGetRequest {
@@ -60,6 +61,11 @@ func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) Status(status ToolsOrangeSit
 
 func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) Filtering(filtering ToolsOrangeSiteGetV30Filtering) *ApiOpenApiV30ToolsOrangeSiteGetGetRequest {
 	r.filtering = &filtering
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) MultiAssetType(multiAssetType ToolsOrangeSiteGetV30MultiAssetType) *ApiOpenApiV30ToolsOrangeSiteGetGetRequest {
+	r.multiAssetType = &multiAssetType
 	return r
 }
 
@@ -145,6 +151,9 @@ func (a *ToolsOrangeSiteGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsOrange
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "optimize_goal", r.optimizeGoal)
+	if r.multiAssetType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "multi_asset_type", r.multiAssetType)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

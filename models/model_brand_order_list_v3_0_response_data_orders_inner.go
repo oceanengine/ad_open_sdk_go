@@ -30,7 +30,9 @@ type BrandOrderListV30ResponseDataOrdersInner struct {
 	CampaignName *string                              `json:"campaign_name,omitempty"`
 	Classify     *BrandOrderListV30DataOrdersClassify `json:"classify,omitempty"`
 	// 创建时间
-	CreateTime        *string                                                    `json:"create_time,omitempty"`
+	CreateTime *string `json:"create_time,omitempty"`
+	// 预定单创建人
+	Creator           *string                                                    `json:"creator,omitempty"`
 	FrequencyInfo     *BrandOrderListV30ResponseDataOrdersInnerFrequencyInfo     `json:"frequency_info,omitempty"`
 	GdSendType        *BrandOrderListV30DataOrdersGdSendType                     `json:"gd_send_type,omitempty"`
 	MagazinePriceInfo *BrandOrderListV30ResponseDataOrdersInnerMagazinePriceInfo `json:"magazine_price_info,omitempty"`
@@ -43,6 +45,7 @@ type BrandOrderListV30ResponseDataOrdersInner struct {
 	PricingType *BrandOrderListV30DataOrdersPricingType         `json:"pricing_type,omitempty"`
 	ProType     *BrandOrderListV30DataOrdersProType             `json:"pro_type,omitempty"`
 	// 备注
-	Remark *string                            `json:"remark,omitempty"`
-	Status *BrandOrderListV30DataOrdersStatus `json:"status,omitempty"`
+	Remark       *string                                               `json:"remark,omitempty"`
+	ScheduleInfo *BrandOrderListV30ResponseDataOrdersInnerScheduleInfo `json:"schedule_info,omitempty"`
+	Status       *BrandOrderListV30DataOrdersStatus                    `json:"status,omitempty"`
 }

@@ -29,9 +29,7 @@ type ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest struct {
 	startDate     *string
 	endDate       *string
 	marketingGoal *QianchuanReportUniPromotionGetV10MarketingGoal
-	labAdType     *QianchuanReportUniPromotionGetV10LabAdType
 	fields        *[]string
-	filtering     *QianchuanReportUniPromotionGetV10Filtering
 }
 
 func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
@@ -56,19 +54,8 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) MarketingGoal(ma
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) LabAdType(labAdType QianchuanReportUniPromotionGetV10LabAdType) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
-	r.labAdType = &labAdType
-	return r
-}
-
 func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) Fields(fields []string) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
 	r.fields = &fields
-	return r
-}
-
-// 过滤条件
-func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) Filtering(filtering QianchuanReportUniPromotionGetV10Filtering) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
-	r.filtering = &filtering
 	return r
 }
 
@@ -134,9 +121,6 @@ func (a *QianchuanReportUniPromotionGetV10ApiService) getExecute(r *ApiOpenApiV1
 	if r.marketingGoal == nil {
 		return localVarReturnValue, nil, ReportError("marketingGoal is required and must be specified")
 	}
-	if r.labAdType == nil {
-		return localVarReturnValue, nil, ReportError("labAdType is required and must be specified")
-	}
 	if r.fields == nil {
 		return localVarReturnValue, nil, ReportError("fields is required and must be specified")
 	}
@@ -145,11 +129,7 @@ func (a *QianchuanReportUniPromotionGetV10ApiService) getExecute(r *ApiOpenApiV1
 	parameterAddToHeaderOrQuery(localVarQueryParams, "start_date", r.startDate)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "end_date", r.endDate)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "marketing_goal", r.marketingGoal)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "lab_ad_type", r.labAdType)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "fields", r.fields)
-	if r.filtering != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
-	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

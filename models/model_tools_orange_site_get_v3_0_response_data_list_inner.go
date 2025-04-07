@@ -12,7 +12,9 @@ package models
 
 // ToolsOrangeSiteGetV30ResponseDataListInner struct for ToolsOrangeSiteGetV30ResponseDataListInner
 type ToolsOrangeSiteGetV30ResponseDataListInner struct {
-	FunctionType *ToolsOrangeSiteGetV30DataListFunctionType `json:"function_type,omitempty"`
+	//
+	ConsultSiteType []*ToolsOrangeSiteGetV30DataListConsultSiteType `json:"consult_site_type,omitempty"`
+	FunctionType    *ToolsOrangeSiteGetV30DataListFunctionType      `json:"function_type,omitempty"`
 	//
 	Name *string `json:"name,omitempty"`
 	//

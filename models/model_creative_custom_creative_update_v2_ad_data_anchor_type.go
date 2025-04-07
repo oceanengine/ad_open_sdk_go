@@ -15,13 +15,13 @@ type CreativeCustomCreativeUpdateV2AdDataAnchorType string
 
 // List of creative_custom_creative_update_v2_ad_data_anchor_type
 const (
-	SHOPPING_CART_CreativeCustomCreativeUpdateV2AdDataAnchorType        CreativeCustomCreativeUpdateV2AdDataAnchorType = "SHOPPING_CART"
-	PRIVATE_CHAT_CreativeCustomCreativeUpdateV2AdDataAnchorType         CreativeCustomCreativeUpdateV2AdDataAnchorType = "PRIVATE_CHAT"
-	INSURANCE_CreativeCustomCreativeUpdateV2AdDataAnchorType            CreativeCustomCreativeUpdateV2AdDataAnchorType = "INSURANCE"
 	ONLINE_SUBSCRIBE_CreativeCustomCreativeUpdateV2AdDataAnchorType     CreativeCustomCreativeUpdateV2AdDataAnchorType = "ONLINE_SUBSCRIBE"
-	APP_SHOP_CreativeCustomCreativeUpdateV2AdDataAnchorType             CreativeCustomCreativeUpdateV2AdDataAnchorType = "APP_SHOP"
+	INSURANCE_CreativeCustomCreativeUpdateV2AdDataAnchorType            CreativeCustomCreativeUpdateV2AdDataAnchorType = "INSURANCE"
 	APP_GAME_CreativeCustomCreativeUpdateV2AdDataAnchorType             CreativeCustomCreativeUpdateV2AdDataAnchorType = "APP_GAME"
 	APP_INTERNET_SERVICE_CreativeCustomCreativeUpdateV2AdDataAnchorType CreativeCustomCreativeUpdateV2AdDataAnchorType = "APP_INTERNET_SERVICE"
+	APP_SHOP_CreativeCustomCreativeUpdateV2AdDataAnchorType             CreativeCustomCreativeUpdateV2AdDataAnchorType = "APP_SHOP"
+	SHOPPING_CART_CreativeCustomCreativeUpdateV2AdDataAnchorType        CreativeCustomCreativeUpdateV2AdDataAnchorType = "SHOPPING_CART"
+	PRIVATE_CHAT_CreativeCustomCreativeUpdateV2AdDataAnchorType         CreativeCustomCreativeUpdateV2AdDataAnchorType = "PRIVATE_CHAT"
 )
 
 // Ptr returns reference to creative_custom_creative_update_v2_ad_data_anchor_type value

@@ -13,5 +13,6 @@ package models
 // ReportStardeliveryTaskVideoDataGetV30Filtering
 type ReportStardeliveryTaskVideoDataGetV30Filtering struct {
 	//
-	MaterialIds []int64 `json:"material_ids,omitempty"`
+	MaterialIds                []int64                                                                   `json:"material_ids,omitempty"`
+	StarMaterialPurchaseMethod *ReportStardeliveryTaskVideoDataGetV30FilteringStarMaterialPurchaseMethod `json:"star_material_purchase_method,omitempty"`
 }

@@ -1,5 +1,5 @@
 /*
-API version: 1.1.41
+API version: 1.1.42
 */
 package ad_open_sdk_go
 
@@ -29,6 +29,10 @@ func Init(cfg *config.Configuration) *Client {
 
 func (c *Client) AccountFundGetV30Api() *api.AccountFundGetV30ApiService {
 	return c.ApiClient.AccountFundGetV30Api
+}
+
+func (c *Client) AccountUpdateV30Api() *api.AccountUpdateV30ApiService {
+	return c.ApiClient.AccountUpdateV30Api
 }
 
 func (c *Client) AdCostProtectStatusGetV2Api() *api.AdCostProtectStatusGetV2ApiService {
@@ -363,6 +367,10 @@ func (c *Client) BrandAdUpdateDeliveryInfoV30Api() *api.BrandAdUpdateDeliveryInf
 	return c.ApiClient.BrandAdUpdateDeliveryInfoV30Api
 }
 
+func (c *Client) BrandAnchorListV30Api() *api.BrandAnchorListV30ApiService {
+	return c.ApiClient.BrandAnchorListV30Api
+}
+
 func (c *Client) BrandAwemeListV30Api() *api.BrandAwemeListV30ApiService {
 	return c.ApiClient.BrandAwemeListV30Api
 }
@@ -391,8 +399,32 @@ func (c *Client) BrandCampaignListV30Api() *api.BrandCampaignListV30ApiService {
 	return c.ApiClient.BrandCampaignListV30Api
 }
 
+func (c *Client) BrandCampaignModifyV30Api() *api.BrandCampaignModifyV30ApiService {
+	return c.ApiClient.BrandCampaignModifyV30Api
+}
+
 func (c *Client) BrandCampaignOperateV30Api() *api.BrandCampaignOperateV30ApiService {
 	return c.ApiClient.BrandCampaignOperateV30Api
+}
+
+func (c *Client) BrandCampaignRemoveV30Api() *api.BrandCampaignRemoveV30ApiService {
+	return c.ApiClient.BrandCampaignRemoveV30Api
+}
+
+func (c *Client) BrandCampaignRevokeModifyV30Api() *api.BrandCampaignRevokeModifyV30ApiService {
+	return c.ApiClient.BrandCampaignRevokeModifyV30Api
+}
+
+func (c *Client) BrandCampaignSubmitV30Api() *api.BrandCampaignSubmitV30ApiService {
+	return c.ApiClient.BrandCampaignSubmitV30Api
+}
+
+func (c *Client) BrandCampaignUpdateV30Api() *api.BrandCampaignUpdateV30ApiService {
+	return c.ApiClient.BrandCampaignUpdateV30Api
+}
+
+func (c *Client) BrandContractGetV30Api() *api.BrandContractGetV30ApiService {
+	return c.ApiClient.BrandContractGetV30Api
 }
 
 func (c *Client) BrandCreativeCreateV30Api() *api.BrandCreativeCreateV30ApiService {
@@ -411,6 +443,10 @@ func (c *Client) BrandCreativeUpdateV30Api() *api.BrandCreativeUpdateV30ApiServi
 	return c.ApiClient.BrandCreativeUpdateV30Api
 }
 
+func (c *Client) BrandCustomAudienceListV30Api() *api.BrandCustomAudienceListV30ApiService {
+	return c.ApiClient.BrandCustomAudienceListV30Api
+}
+
 func (c *Client) BrandFileVideoUploadV30Api() *api.BrandFileVideoUploadV30ApiService {
 	return c.ApiClient.BrandFileVideoUploadV30Api
 }
@@ -423,12 +459,36 @@ func (c *Client) BrandMaterialListV30Api() *api.BrandMaterialListV30ApiService {
 	return c.ApiClient.BrandMaterialListV30Api
 }
 
+func (c *Client) BrandMaterialUpdateV30Api() *api.BrandMaterialUpdateV30ApiService {
+	return c.ApiClient.BrandMaterialUpdateV30Api
+}
+
+func (c *Client) BrandOperationLogQueryV30Api() *api.BrandOperationLogQueryV30ApiService {
+	return c.ApiClient.BrandOperationLogQueryV30Api
+}
+
+func (c *Client) BrandOrderCancelDeleteV30Api() *api.BrandOrderCancelDeleteV30ApiService {
+	return c.ApiClient.BrandOrderCancelDeleteV30Api
+}
+
 func (c *Client) BrandOrderCreateV30Api() *api.BrandOrderCreateV30ApiService {
 	return c.ApiClient.BrandOrderCreateV30Api
 }
 
+func (c *Client) BrandOrderDeleteV30Api() *api.BrandOrderDeleteV30ApiService {
+	return c.ApiClient.BrandOrderDeleteV30Api
+}
+
 func (c *Client) BrandOrderListV30Api() *api.BrandOrderListV30ApiService {
 	return c.ApiClient.BrandOrderListV30Api
+}
+
+func (c *Client) BrandOrderUpdateV30Api() *api.BrandOrderUpdateV30ApiService {
+	return c.ApiClient.BrandOrderUpdateV30Api
+}
+
+func (c *Client) BrandPolicyListV30Api() *api.BrandPolicyListV30ApiService {
+	return c.ApiClient.BrandPolicyListV30Api
 }
 
 func (c *Client) BrandQueryStockV30Api() *api.BrandQueryStockV30ApiService {
@@ -845,6 +905,14 @@ func (c *Client) DouplusOrderRenewV30Api() *api.DouplusOrderRenewV30ApiService {
 
 func (c *Client) DouplusOrderReportV30Api() *api.DouplusOrderReportV30ApiService {
 	return c.ApiClient.DouplusOrderReportV30Api
+}
+
+func (c *Client) DouplusRtaGetInfoV30Api() *api.DouplusRtaGetInfoV30ApiService {
+	return c.ApiClient.DouplusRtaGetInfoV30Api
+}
+
+func (c *Client) DouplusRtaSetScopeV30Api() *api.DouplusRtaSetScopeV30ApiService {
+	return c.ApiClient.DouplusRtaSetScopeV30Api
 }
 
 func (c *Client) DownloadStatementEsignFileV2Api() *api.DownloadStatementEsignFileV2ApiService {
@@ -2063,6 +2131,10 @@ func (c *Client) QianchuanUniAwemeAuthorizedGetV10Api() *api.QianchuanUniAwemeAu
 	return c.ApiClient.QianchuanUniAwemeAuthorizedGetV10Api
 }
 
+func (c *Client) QianchuanUniAwemeSuggestBudgetV10Api() *api.QianchuanUniAwemeSuggestBudgetV10ApiService {
+	return c.ApiClient.QianchuanUniAwemeSuggestBudgetV10Api
+}
+
 func (c *Client) QianchuanUniPromotionAdControlTaskCreateV10Api() *api.QianchuanUniPromotionAdControlTaskCreateV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdControlTaskCreateV10Api
 }
@@ -2169,6 +2241,22 @@ func (c *Client) QueryStatementV2Api() *api.QueryStatementV2ApiService {
 
 func (c *Client) RecommendVideoListV30Api() *api.RecommendVideoListV30ApiService {
 	return c.ApiClient.RecommendVideoListV30Api
+}
+
+func (c *Client) RejectMaterialAiRepairAcceptTaskCreateV30Api() *api.RejectMaterialAiRepairAcceptTaskCreateV30ApiService {
+	return c.ApiClient.RejectMaterialAiRepairAcceptTaskCreateV30Api
+}
+
+func (c *Client) RejectMaterialAiRepairAcceptTaskListV30Api() *api.RejectMaterialAiRepairAcceptTaskListV30ApiService {
+	return c.ApiClient.RejectMaterialAiRepairAcceptTaskListV30Api
+}
+
+func (c *Client) RejectMaterialAiRepairCrossAccountGetV30Api() *api.RejectMaterialAiRepairCrossAccountGetV30ApiService {
+	return c.ApiClient.RejectMaterialAiRepairCrossAccountGetV30Api
+}
+
+func (c *Client) RejectMaterialAiRepairGetV30Api() *api.RejectMaterialAiRepairGetV30ApiService {
+	return c.ApiClient.RejectMaterialAiRepairGetV30Api
 }
 
 func (c *Client) ReportAdGetV2Api() *api.ReportAdGetV2ApiService {
@@ -2403,6 +2491,14 @@ func (c *Client) StarAttachmentUploadV2Api() *api.StarAttachmentUploadV2ApiServi
 	return c.ApiClient.StarAttachmentUploadV2Api
 }
 
+func (c *Client) StarAttributeUserEventFeedbackV2Api() *api.StarAttributeUserEventFeedbackV2ApiService {
+	return c.ApiClient.StarAttributeUserEventFeedbackV2Api
+}
+
+func (c *Client) StarAttributeUserInfoFeedbackV2Api() *api.StarAttributeUserInfoFeedbackV2ApiService {
+	return c.ApiClient.StarAttributeUserInfoFeedbackV2Api
+}
+
 func (c *Client) StarBillGetPendingV2Api() *api.StarBillGetPendingV2ApiService {
 	return c.ApiClient.StarBillGetPendingV2Api
 }
@@ -2513,6 +2609,10 @@ func (c *Client) StarDemandCreateAssignV2Api() *api.StarDemandCreateAssignV2ApiS
 
 func (c *Client) StarDemandCreateChallengeV2Api() *api.StarDemandCreateChallengeV2ApiService {
 	return c.ApiClient.StarDemandCreateChallengeV2Api
+}
+
+func (c *Client) StarDemandGetResellCodeV2Api() *api.StarDemandGetResellCodeV2ApiService {
+	return c.ApiClient.StarDemandGetResellCodeV2Api
 }
 
 func (c *Client) StarDemandListV2Api() *api.StarDemandListV2ApiService {
@@ -2627,6 +2727,10 @@ func (c *Client) StarMcnProviderGetUnparticipatedTaskV2Api() *api.StarMcnProvide
 	return c.ApiClient.StarMcnProviderGetUnparticipatedTaskV2Api
 }
 
+func (c *Client) StarMcnProviderUploadSearchItemV2Api() *api.StarMcnProviderUploadSearchItemV2ApiService {
+	return c.ApiClient.StarMcnProviderUploadSearchItemV2Api
+}
+
 func (c *Client) StarOrderApproveResourceV2Api() *api.StarOrderApproveResourceV2ApiService {
 	return c.ApiClient.StarOrderApproveResourceV2Api
 }
@@ -2653,6 +2757,10 @@ func (c *Client) StarOrderGetComponentV2Api() *api.StarOrderGetComponentV2ApiSer
 
 func (c *Client) StarOrderGetInfoV2Api() *api.StarOrderGetInfoV2ApiService {
 	return c.ApiClient.StarOrderGetInfoV2Api
+}
+
+func (c *Client) StarOrderGetLiveV2Api() *api.StarOrderGetLiveV2ApiService {
+	return c.ApiClient.StarOrderGetLiveV2Api
 }
 
 func (c *Client) StarOrderGetScriptV2Api() *api.StarOrderGetScriptV2ApiService {
@@ -2955,6 +3063,10 @@ func (c *Client) ToolsAppManagementExtendPackageUpdateV2V2Api() *api.ToolsAppMan
 	return c.ApiClient.ToolsAppManagementExtendPackageUpdateV2V2Api
 }
 
+func (c *Client) ToolsAppManagementHarmonyAppListV2Api() *api.ToolsAppManagementHarmonyAppListV2ApiService {
+	return c.ApiClient.ToolsAppManagementHarmonyAppListV2Api
+}
+
 func (c *Client) ToolsAppManagementIndustryInfoListV2Api() *api.ToolsAppManagementIndustryInfoListV2ApiService {
 	return c.ApiClient.ToolsAppManagementIndustryInfoListV2Api
 }
@@ -3089,6 +3201,10 @@ func (c *Client) ToolsClueContactLogListV2Api() *api.ToolsClueContactLogListV2Ap
 
 func (c *Client) ToolsClueContactLogOverviewQueryV2Api() *api.ToolsClueContactLogOverviewQueryV2ApiService {
 	return c.ApiClient.ToolsClueContactLogOverviewQueryV2Api
+}
+
+func (c *Client) ToolsClueContactLogRecordUrlGetV2Api() *api.ToolsClueContactLogRecordUrlGetV2ApiService {
+	return c.ApiClient.ToolsClueContactLogRecordUrlGetV2Api
 }
 
 func (c *Client) ToolsClueExtInfoCallbackV2Api() *api.ToolsClueExtInfoCallbackV2ApiService {
@@ -3349,6 +3465,14 @@ func (c *Client) ToolsMicroAppListV30Api() *api.ToolsMicroAppListV30ApiService {
 
 func (c *Client) ToolsMicroAppUpdateV30Api() *api.ToolsMicroAppUpdateV30ApiService {
 	return c.ApiClient.ToolsMicroAppUpdateV30Api
+}
+
+func (c *Client) ToolsMicroGameConvertWindowGetV30Api() *api.ToolsMicroGameConvertWindowGetV30ApiService {
+	return c.ApiClient.ToolsMicroGameConvertWindowGetV30Api
+}
+
+func (c *Client) ToolsMicroGameConvertWindowUpdateV30Api() *api.ToolsMicroGameConvertWindowUpdateV30ApiService {
+	return c.ApiClient.ToolsMicroGameConvertWindowUpdateV30Api
 }
 
 func (c *Client) ToolsMicroGameCreateV30Api() *api.ToolsMicroGameCreateV30ApiService {
@@ -3737,6 +3861,10 @@ func (c *Client) YuntuAudienceLabelCreateV30Api() *api.YuntuAudienceLabelCreateV
 
 func (c *Client) YuntuAudienceLabelDeleteV30Api() *api.YuntuAudienceLabelDeleteV30ApiService {
 	return c.ApiClient.YuntuAudienceLabelDeleteV30Api
+}
+
+func (c *Client) YuntuAudienceLabelGetV30Api() *api.YuntuAudienceLabelGetV30ApiService {
+	return c.ApiClient.YuntuAudienceLabelGetV30Api
 }
 
 func (c *Client) YuntuBrandInfoGetV30Api() *api.YuntuBrandInfoGetV30ApiService {

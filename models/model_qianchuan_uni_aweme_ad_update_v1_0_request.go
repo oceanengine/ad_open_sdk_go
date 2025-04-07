@@ -21,6 +21,8 @@ type QianchuanUniAwemeAdUpdateV10Request struct {
 	//
 	MultiProductCreativeList []*QianchuanUniAwemeAdUpdateV10RequestMultiProductCreativeListInner `json:"multi_product_creative_list,omitempty"`
 	//
+	Name *string `json:"name,omitempty"`
+	//
 	ProductChannelInfo            []*QianchuanUniAwemeAdUpdateV10RequestProductChannelInfoInner     `json:"product_channel_info,omitempty"`
 	ProgrammaticCreativeMediaList *QianchuanUniAwemeAdUpdateV10RequestProgrammaticCreativeMediaList `json:"programmatic_creative_media_list,omitempty"`
 }

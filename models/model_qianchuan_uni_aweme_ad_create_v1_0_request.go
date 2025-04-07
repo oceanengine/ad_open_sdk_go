@@ -22,6 +22,8 @@ type QianchuanUniAwemeAdCreateV10Request struct {
 	// 商品创意素材信息
 	MultiProductCreativeList []*QianchuanUniAwemeAdCreateV10RequestMultiProductCreativeListInner `json:"multi_product_creative_list,omitempty"`
 	//
+	Name *string `json:"name,omitempty"`
+	//
 	ProductChannelInfo []*QianchuanUniAwemeAdCreateV10RequestProductChannelInfoInner `json:"product_channel_info,omitempty"`
 	//
 	ProductIds                    []int64                                                           `json:"product_ids,omitempty"`

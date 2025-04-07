@@ -14,8 +14,6 @@ package models
 type QianchuanCarouselGetV10Filtering struct {
 	// 根据图片上传时间进行过滤的截止时间，与start_time搭配使用，格式：\"yyyy-mm-dd\"
 	EndTime *string `json:"end_time,omitempty"`
-	// 素材类型 CAROUSEL 图文
-	ImageMode []*QianchuanCarouselGetV10FilteringImageMode `json:"image_mode,omitempty"`
 	// 素材id列表，可以根据material_ids（素材报表使用的id，一个素材唯一对应一个素材id）进行过滤 数量限制：<=100
 	MaterialIds []int64 `json:"material_ids,omitempty"`
 	// 支持根据图文名称/ID搜索

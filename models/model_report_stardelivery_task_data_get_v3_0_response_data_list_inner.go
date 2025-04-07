@@ -57,6 +57,8 @@ type ReportStardeliveryTaskDataGetV30ResponseDataListInner struct {
 	//
 	StarTaskId *int64 `json:"star_task_id,omitempty"`
 	//
+	StarTaskLockAmount *float64 `json:"star_task_lock_amount,omitempty"`
+	//
 	StarTaskName *string `json:"star_task_name,omitempty"`
 	//
 	StarTaskPostItemCount *int64 `json:"star_task_post_item_count,omitempty"`
@@ -66,6 +68,8 @@ type ReportStardeliveryTaskDataGetV30ResponseDataListInner struct {
 	//
 	StarTaskStartTime *string                                                 `json:"star_task_start_time,omitempty"`
 	StarTaskStatus    *ReportStardeliveryTaskDataGetV30DataListStarTaskStatus `json:"star_task_status,omitempty"`
+	//
+	StarTaskUnfrozenAmount *float64 `json:"star_task_unfrozen_amount,omitempty"`
 	//
 	StatCost *float64 `json:"stat_cost,omitempty"`
 }

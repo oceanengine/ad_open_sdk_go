@@ -14,6 +14,8 @@ package models
 type StarDemandCreateAssignV2RequestDemandInfoDemandRequirement struct {
 	// 详细要求 500字内
 	DetailDemand string `json:"detail_demand"`
+	// 直播要求 500字内
+	LivestreamDemand *string `json:"livestream_demand,omitempty"`
 	// 指定音乐 20字内
 	Music *string `json:"music,omitempty"`
 	// 其他要求 500字内

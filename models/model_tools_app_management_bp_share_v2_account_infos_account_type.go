@@ -16,8 +16,8 @@ type ToolsAppManagementBpShareV2AccountInfosAccountType string
 // List of tools_app_management_bp_share_v2_account_infos_account_type
 const (
 	STAR_ToolsAppManagementBpShareV2AccountInfosAccountType ToolsAppManagementBpShareV2AccountInfosAccountType = "STAR"
-	BP_ToolsAppManagementBpShareV2AccountInfosAccountType   ToolsAppManagementBpShareV2AccountInfosAccountType = "BP"
 	AD_ToolsAppManagementBpShareV2AccountInfosAccountType   ToolsAppManagementBpShareV2AccountInfosAccountType = "AD"
+	BP_ToolsAppManagementBpShareV2AccountInfosAccountType   ToolsAppManagementBpShareV2AccountInfosAccountType = "BP"
 )
 
 // Ptr returns reference to tools_app_management_bp_share_v2_account_infos_account_type value

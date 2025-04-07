@@ -12,6 +12,10 @@ package models
 
 // ServeMarketOrderGetV10Filtering
 type ServeMarketOrderGetV10Filtering struct {
+	// 订单创建时间最大值，秒级时间戳
+	CreateTimeMax *int64 `json:"create_time_max,omitempty"`
+	// 订单创建时间最小值，秒级时间戳
+	CreateTimeMin *int64 `json:"create_time_min,omitempty"`
 	//
 	OrderId []int64 `json:"order_id,omitempty"`
 	//

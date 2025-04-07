@@ -57,7 +57,8 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	//
 	StarMaterialFirstType *int32 `json:"star_material_first_type,omitempty"`
 	//
-	StarMaterialNaturalViewsT1 *int64 `json:"star_material_natural_views_t1,omitempty"`
+	StarMaterialNaturalViewsT1 *int64                                                                   `json:"star_material_natural_views_t1,omitempty"`
+	StarMaterialPurchaseMethod *ReportStardeliveryTaskVideoDataGetV30DataListStarMaterialPurchaseMethod `json:"star_material_purchase_method,omitempty"`
 	//
 	StarMaterialSecondName *string `json:"star_material_second_name,omitempty"`
 	//

@@ -15,8 +15,8 @@ type ReportCreativeGetV2FilteringCampaignTypes string
 
 // List of report_creative_get_v2_filtering_campaign_types
 const (
-	CONTENT_ReportCreativeGetV2FilteringCampaignTypes ReportCreativeGetV2FilteringCampaignTypes = "CONTENT"
 	FEED_ReportCreativeGetV2FilteringCampaignTypes    ReportCreativeGetV2FilteringCampaignTypes = "FEED"
+	CONTENT_ReportCreativeGetV2FilteringCampaignTypes ReportCreativeGetV2FilteringCampaignTypes = "CONTENT"
 	SEARCH_ReportCreativeGetV2FilteringCampaignTypes  ReportCreativeGetV2FilteringCampaignTypes = "SEARCH"
 )
 

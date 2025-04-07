@@ -13,5 +13,7 @@ package models
 // BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentIesCoreUser
 type BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentIesCoreUser struct {
 	//
+	AliasAwemeId *string `json:"alias_aweme_id,omitempty"`
+	//
 	Id *string `json:"id,omitempty"`
 }

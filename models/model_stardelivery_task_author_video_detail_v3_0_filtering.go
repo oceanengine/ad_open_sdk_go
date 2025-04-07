@@ -17,8 +17,9 @@ type StardeliveryTaskAuthorVideoDetailV30Filtering struct {
 	//
 	ExcludeAwemeIds []string `json:"exclude_aweme_ids,omitempty"`
 	// 视频素材id列表
-	MaterialIds             []int64                                                               `json:"material_ids,omitempty"`
-	StarVideoDeliveryStatus *StardeliveryTaskAuthorVideoDetailV30FilteringStarVideoDeliveryStatus `json:"star_video_delivery_status,omitempty"`
+	MaterialIds                []int64                                                                  `json:"material_ids,omitempty"`
+	StarMaterialPurchaseMethod *StardeliveryTaskAuthorVideoDetailV30FilteringStarMaterialPurchaseMethod `json:"star_material_purchase_method,omitempty"`
+	StarVideoDeliveryStatus    *StardeliveryTaskAuthorVideoDetailV30FilteringStarVideoDeliveryStatus    `json:"star_video_delivery_status,omitempty"`
 	// 视频发布时间筛选，结束时间
 	VideoPublishEndTime *string `json:"video_publish_end_time,omitempty"`
 	// 视频发布时间筛选，开始时间

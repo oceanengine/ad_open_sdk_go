@@ -22,8 +22,9 @@ type StardeliveryTaskAuthorVideoDetailV30ResponseDataValidAuthorSubmittedVideosI
 	//
 	ItemId *int64 `json:"item_id,omitempty"`
 	//
-	MaterialId         *int64                                                                                             `json:"material_id,omitempty"`
-	MaterialProperties *StardeliveryTaskAuthorVideoDetailV30ResponseDataValidAuthorSubmittedVideosInnerMaterialProperties `json:"material_properties,omitempty"`
+	MaterialId                 *int64                                                                                             `json:"material_id,omitempty"`
+	MaterialProperties         *StardeliveryTaskAuthorVideoDetailV30ResponseDataValidAuthorSubmittedVideosInnerMaterialProperties `json:"material_properties,omitempty"`
+	StarMaterialPurchaseMethod *StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarMaterialPurchaseMethod      `json:"star_material_purchase_method,omitempty"`
 	// 视频被客户审核拒绝的理由
 	StarVideoBanReasonDetail *string `json:"star_video_ban_reason_detail,omitempty"`
 	// 视频被服务商审核通过的时间

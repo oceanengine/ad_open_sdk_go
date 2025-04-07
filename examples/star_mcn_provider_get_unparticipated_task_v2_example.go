@@ -36,6 +36,7 @@ type ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequestExample struct {
 	AppName             string `json:"app_name,omitempty"`
 	DemandId            int64  `json:"demand_id,omitempty"`
 	GameType            int64  `json:"game_type,omitempty"`
+	ComponentType       int64  `json:"component_type,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/star/mcn/provider_get_unparticipated_task/ Get
@@ -57,7 +58,7 @@ func main() {
 	resp, httpRes, err := apiClient.StarMcnProviderGetUnparticipatedTaskV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		StarId(request.StarId).Page(request.Page).PageSize(request.PageSize).PayType(request.PayType).MinCreateTimeStamp(request.MinCreateTimeStamp).MaxCreateTimeStamp(request.MaxCreateTimeStamp).FirstClassCategory(request.FirstClassCategory).SecondClassCategory(request.SecondClassCategory).ProductCategory(request.ProductCategory).AppId(request.AppId).AppName(request.AppName).DemandId(request.DemandId).GameType(request.GameType).
+		StarId(request.StarId).Page(request.Page).PageSize(request.PageSize).PayType(request.PayType).MinCreateTimeStamp(request.MinCreateTimeStamp).MaxCreateTimeStamp(request.MaxCreateTimeStamp).FirstClassCategory(request.FirstClassCategory).SecondClassCategory(request.SecondClassCategory).ProductCategory(request.ProductCategory).AppId(request.AppId).AppName(request.AppName).DemandId(request.DemandId).GameType(request.GameType).ComponentType(request.ComponentType).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

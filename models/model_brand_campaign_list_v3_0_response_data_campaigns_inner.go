@@ -14,6 +14,8 @@ package models
 type BrandCampaignListV30ResponseDataCampaignsInner struct {
 	// 广告主ID
 	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
+	// 广告主名称
+	AdvertiserName *string `json:"advertiser_name,omitempty"`
 	// 广告组ID
 	CampaignId *int64 `json:"campaign_id,omitempty"`
 	// 广告组名称
@@ -27,6 +29,8 @@ type BrandCampaignListV30ResponseDataCampaignsInner struct {
 	EndTime *string `json:"end_time,omitempty"`
 	// 合同ID
 	MainContractId *string `json:"main_contract_id,omitempty"`
+	// 广告组修改时间
+	ModifyTime *string `json:"modify_time,omitempty"`
 	// 投放开始时间 \"2020-03-01\"
 	StartTime *string `json:"start_time,omitempty"`
 	// 总金额 单位元

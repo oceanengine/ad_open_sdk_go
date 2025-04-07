@@ -43,6 +43,8 @@ type StarDemandCreateAssignV2RequestDemandInfo struct {
 	IpActId *int64 `json:"ip_act_id,omitempty"`
 	// 视频曝光监测链接 https开头的URL
 	ItemShowMonitorUrl *string `json:"item_show_monitor_url,omitempty"`
+	// 直播截止时间
+	LivestreamDeadline *int64 `json:"livestream_deadline,omitempty"`
 	// 所属类目
 	ProductCategory []string `json:"product_category,omitempty"`
 	// 产品所属行业 [一级行业, 二级行业]

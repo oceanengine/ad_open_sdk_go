@@ -20,6 +20,10 @@ type ClueCaInterfaceCreateV2Request struct {
 	CallBackUrl string `json:"call_back_url"`
 	// 自定义参数
 	CustomParams string `json:"custom_params"`
+	// 去重时间
+	DeduplicationExp *int64 `json:"deduplication_exp,omitempty"`
+	// 去重key
+	DeduplicationKey *string `json:"deduplication_key,omitempty"`
 	// 获客助手接口版组件名称
 	Name string `json:"name"`
 }

@@ -55,6 +55,8 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	StarId *int64 `json:"star_id,omitempty"`
 	// 素材出价（元），每条视频最低需要付给达人的底价价格
 	StarMaterialBid *float64 `json:"star_material_bid,omitempty"`
+	// 基础素材费单价区间，报价区间为建议值，系统优先邀约符合报价区间的达人
+	StarMaterialBidRange []float64 `json:"star_material_bid_range,omitempty"`
 	// 素材一级类目id
 	StarMaterialFirstType *int32 `json:"star_material_first_type,omitempty"`
 	// 素材二级类目id
@@ -74,8 +76,9 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	StarTaskCreateTime     *string                                              `json:"star_task_create_time,omitempty"`
 	StarTaskExternalAction *StardeliveryTaskDetailV30DataStarTaskExternalAction `json:"star_task_external_action,omitempty"`
 	// 星广联投任务ID
-	StarTaskId                    *int64                                                              `json:"star_task_id,omitempty"`
-	StarTaskMaterialsRequirements *StardeliveryTaskDetailV30ResponseDataStarTaskMaterialsRequirements `json:"star_task_materials_requirements,omitempty"`
+	StarTaskId                     *int64                                                              `json:"star_task_id,omitempty"`
+	StarTaskMaterialPurchaseMethod *StardeliveryTaskDetailV30DataStarTaskMaterialPurchaseMethod        `json:"star_task_material_purchase_method,omitempty"`
+	StarTaskMaterialsRequirements  *StardeliveryTaskDetailV30ResponseDataStarTaskMaterialsRequirements `json:"star_task_materials_requirements,omitempty"`
 	// 星广联投任务名称
 	StarTaskName *string `json:"star_task_name,omitempty"`
 	// 任务结束时间为投稿截止时间,格式YYYY-MM-DD
