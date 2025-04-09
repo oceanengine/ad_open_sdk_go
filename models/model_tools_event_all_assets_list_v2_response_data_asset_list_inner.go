@@ -12,6 +12,8 @@ package models
 
 // ToolsEventAllAssetsListV2ResponseDataAssetListInner struct for ToolsEventAllAssetsListV2ResponseDataAssetListInner
 type ToolsEventAllAssetsListV2ResponseDataAssetListInner struct {
+	// 应用类资产融合归因升级文案
+	AppForceInfo *string `json:"app_force_info,omitempty"`
 	// 资产id
 	AssetId *int64 `json:"asset_id,omitempty"`
 	// 资产名称

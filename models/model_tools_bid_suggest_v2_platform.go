@@ -15,12 +15,12 @@ type ToolsBidSuggestV2Platform string
 
 // List of tools_bid_suggest_v2_platform
 const (
-	IOS_ToolsBidSuggestV2Platform     ToolsBidSuggestV2Platform = "IOS"
 	PC_ToolsBidSuggestV2Platform      ToolsBidSuggestV2Platform = "PC"
-	ANDROID_ToolsBidSuggestV2Platform ToolsBidSuggestV2Platform = "ANDROID"
-	WAP_ToolsBidSuggestV2Platform     ToolsBidSuggestV2Platform = "WAP"
+	IOS_ToolsBidSuggestV2Platform     ToolsBidSuggestV2Platform = "IOS"
 	IPAD_ToolsBidSuggestV2Platform    ToolsBidSuggestV2Platform = "IPAD"
 	NONE_ToolsBidSuggestV2Platform    ToolsBidSuggestV2Platform = "NONE"
+	WAP_ToolsBidSuggestV2Platform     ToolsBidSuggestV2Platform = "WAP"
+	ANDROID_ToolsBidSuggestV2Platform ToolsBidSuggestV2Platform = "ANDROID"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_platform value

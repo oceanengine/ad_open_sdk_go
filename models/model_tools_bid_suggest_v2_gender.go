@@ -15,9 +15,9 @@ type ToolsBidSuggestV2Gender string
 
 // List of tools_bid_suggest_v2_gender
 const (
+	NONE_ToolsBidSuggestV2Gender             ToolsBidSuggestV2Gender = "NONE"
 	GENDER_UNLIMITED_ToolsBidSuggestV2Gender ToolsBidSuggestV2Gender = "GENDER_UNLIMITED"
 	GENDER_FEMALE_ToolsBidSuggestV2Gender    ToolsBidSuggestV2Gender = "GENDER_FEMALE"
-	NONE_ToolsBidSuggestV2Gender             ToolsBidSuggestV2Gender = "NONE"
 	GENDER_MALE_ToolsBidSuggestV2Gender      ToolsBidSuggestV2Gender = "GENDER_MALE"
 )
 

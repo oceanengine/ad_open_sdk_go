@@ -15,11 +15,11 @@ type ClueFormListV2DataListValidateType string
 
 // List of clue_form_list_v2_data_list_validate_type
 const (
-	VALIDITY_PRIORITY_ClueFormListV2DataListValidateType ClueFormListV2DataListValidateType = "VALIDITY_PRIORITY"
 	NONE_VERIFICATION_ClueFormListV2DataListValidateType ClueFormListV2DataListValidateType = "NONE_VERIFICATION"
+	VALIDITY_PRIORITY_ClueFormListV2DataListValidateType ClueFormListV2DataListValidateType = "VALIDITY_PRIORITY"
+	AUTO_VERIFICATION_ClueFormListV2DataListValidateType ClueFormListV2DataListValidateType = "AUTO_VERIFICATION"
 	CLUE_PRIORITY_ClueFormListV2DataListValidateType     ClueFormListV2DataListValidateType = "CLUE_PRIORITY"
 	ALL_VERIFICATION_ClueFormListV2DataListValidateType  ClueFormListV2DataListValidateType = "ALL_VERIFICATION"
-	AUTO_VERIFICATION_ClueFormListV2DataListValidateType ClueFormListV2DataListValidateType = "AUTO_VERIFICATION"
 )
 
 // Ptr returns reference to clue_form_list_v2_data_list_validate_type value

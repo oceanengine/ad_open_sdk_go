@@ -17,8 +17,8 @@ type ClueCouponCodeGetV2DataListStatus string
 const (
 	INVALID_ClueCouponCodeGetV2DataListStatus   ClueCouponCodeGetV2DataListStatus = "INVALID"
 	ABANDONED_ClueCouponCodeGetV2DataListStatus ClueCouponCodeGetV2DataListStatus = "ABANDONED"
-	USED_ClueCouponCodeGetV2DataListStatus      ClueCouponCodeGetV2DataListStatus = "USED"
 	VALID_ClueCouponCodeGetV2DataListStatus     ClueCouponCodeGetV2DataListStatus = "VALID"
+	USED_ClueCouponCodeGetV2DataListStatus      ClueCouponCodeGetV2DataListStatus = "USED"
 	EXPIRED_ClueCouponCodeGetV2DataListStatus   ClueCouponCodeGetV2DataListStatus = "EXPIRED"
 )
 

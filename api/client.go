@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.42
+// APIClient manages communication with the Oceanengine Open Api API v1.1.43
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -542,6 +542,16 @@ type APIClient struct {
 	DpaTemplateGetV2Api *DpaTemplateGetV2ApiService
 
 	DpaVideoGetV2Api *DpaVideoGetV2ApiService
+
+	EbpAdvertiserListV2Api *EbpAdvertiserListV2ApiService
+
+	EbpAdvertiserTaskCreateV2Api *EbpAdvertiserTaskCreateV2ApiService
+
+	EbpAdvertiserTaskDownloadV2Api *EbpAdvertiserTaskDownloadV2ApiService
+
+	EbpAdvertiserTaskListV2Api *EbpAdvertiserTaskListV2ApiService
+
+	EbpLevelGetV2Api *EbpLevelGetV2ApiService
 
 	EnterpriseBindListGetV10Api *EnterpriseBindListGetV10ApiService
 
@@ -1370,6 +1380,8 @@ type APIClient struct {
 	StarDemanderDemanderGetAuthorBindInfoV2Api *StarDemanderDemanderGetAuthorBindInfoV2ApiService
 
 	StarDemanderDemanderGetBindShareCodeV2Api *StarDemanderDemanderGetBindShareCodeV2ApiService
+
+	StarDemanderUploadCpsTaskSalesV2Api *StarDemanderUploadCpsTaskSalesV2ApiService
 
 	StarFeCommonServiceTalentDayGetCheckInCodeV2Api *StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService
 
@@ -2238,6 +2250,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.DpaProductUpdateV2Api = (*DpaProductUpdateV2ApiService)(&c.common)
 	c.DpaTemplateGetV2Api = (*DpaTemplateGetV2ApiService)(&c.common)
 	c.DpaVideoGetV2Api = (*DpaVideoGetV2ApiService)(&c.common)
+	c.EbpAdvertiserListV2Api = (*EbpAdvertiserListV2ApiService)(&c.common)
+	c.EbpAdvertiserTaskCreateV2Api = (*EbpAdvertiserTaskCreateV2ApiService)(&c.common)
+	c.EbpAdvertiserTaskDownloadV2Api = (*EbpAdvertiserTaskDownloadV2ApiService)(&c.common)
+	c.EbpAdvertiserTaskListV2Api = (*EbpAdvertiserTaskListV2ApiService)(&c.common)
+	c.EbpLevelGetV2Api = (*EbpLevelGetV2ApiService)(&c.common)
 	c.EnterpriseBindListGetV10Api = (*EnterpriseBindListGetV10ApiService)(&c.common)
 	c.EnterpriseCommentDetailV10Api = (*EnterpriseCommentDetailV10ApiService)(&c.common)
 	c.EnterpriseCommentListGetV10Api = (*EnterpriseCommentListGetV10ApiService)(&c.common)
@@ -2652,6 +2669,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarDemandSearchWordModifyV2Api = (*StarDemandSearchWordModifyV2ApiService)(&c.common)
 	c.StarDemanderDemanderGetAuthorBindInfoV2Api = (*StarDemanderDemanderGetAuthorBindInfoV2ApiService)(&c.common)
 	c.StarDemanderDemanderGetBindShareCodeV2Api = (*StarDemanderDemanderGetBindShareCodeV2ApiService)(&c.common)
+	c.StarDemanderUploadCpsTaskSalesV2Api = (*StarDemanderUploadCpsTaskSalesV2ApiService)(&c.common)
 	c.StarFeCommonServiceTalentDayGetCheckInCodeV2Api = (*StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService)(&c.common)
 	c.StarFeCommonServiceTalentDayJudgeCheckedInV2Api = (*StarFeCommonServiceTalentDayJudgeCheckedInV2ApiService)(&c.common)
 	c.StarGetCreateChallengeDataDictV2Api = (*StarGetCreateChallengeDataDictV2ApiService)(&c.common)

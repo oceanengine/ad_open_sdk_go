@@ -15,11 +15,11 @@ type ClueCouponDetailV2DataFormValidateType string
 
 // List of clue_coupon_detail_v2_data_form_validate_type
 const (
-	VALIDITY_PRIORITY_ClueCouponDetailV2DataFormValidateType ClueCouponDetailV2DataFormValidateType = "VALIDITY_PRIORITY"
 	NONE_VERIFICATION_ClueCouponDetailV2DataFormValidateType ClueCouponDetailV2DataFormValidateType = "NONE_VERIFICATION"
+	VALIDITY_PRIORITY_ClueCouponDetailV2DataFormValidateType ClueCouponDetailV2DataFormValidateType = "VALIDITY_PRIORITY"
+	AUTO_VERIFICATION_ClueCouponDetailV2DataFormValidateType ClueCouponDetailV2DataFormValidateType = "AUTO_VERIFICATION"
 	CLUE_PRIORITY_ClueCouponDetailV2DataFormValidateType     ClueCouponDetailV2DataFormValidateType = "CLUE_PRIORITY"
 	ALL_VERIFICATION_ClueCouponDetailV2DataFormValidateType  ClueCouponDetailV2DataFormValidateType = "ALL_VERIFICATION"
-	AUTO_VERIFICATION_ClueCouponDetailV2DataFormValidateType ClueCouponDetailV2DataFormValidateType = "AUTO_VERIFICATION"
 )
 
 // Ptr returns reference to clue_coupon_detail_v2_data_form_validate_type value

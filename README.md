@@ -452,6 +452,11 @@ Class | Method | HTTP request
 *DpaProductUpdateV2Api* | **OpenApi2DpaProductUpdatePost** | **Post** /open_api/2/dpa/product/update/
 *DpaTemplateGetV2Api* | **OpenApi2DpaTemplateGetGet** | **Get** /open_api/2/dpa/template/get/
 *DpaVideoGetV2Api* | **OpenApi2DpaVideoGetGet** | **Get** /open_api/2/dpa/video/get/
+*EbpAdvertiserListV2Api* | **OpenApi2EbpAdvertiserListGet** | **Get** /open_api/2/ebp/advertiser/list/
+*EbpAdvertiserTaskCreateV2Api* | **OpenApi2EbpAdvertiserTaskCreatePost** | **Post** /open_api/2/ebp/advertiser/task/create/
+*EbpAdvertiserTaskDownloadV2Api* | **OpenApi2EbpAdvertiserTaskDownloadGet** | **Get** /open_api/2/ebp/advertiser/task/download/
+*EbpAdvertiserTaskListV2Api* | **OpenApi2EbpAdvertiserTaskListGet** | **Get** /open_api/2/ebp/advertiser/task/list/
+*EbpLevelGetV2Api* | **OpenApi2EbpLevelGetGet** | **Get** /open_api/2/ebp/level/get/
 *EnterpriseBindListGetV10Api* | **OpenApiV10EnterpriseBindListGetGet** | **Get** /open_api/v1.0/enterprise/bind/list/get/
 *EnterpriseCommentDetailV10Api* | **OpenApiV10EnterpriseCommentDetailGet** | **Get** /open_api/v1.0/enterprise/comment/detail/
 *EnterpriseCommentListGetV10Api* | **OpenApiV10EnterpriseCommentListGetGet** | **Get** /open_api/v1.0/enterprise/comment/list/get/
@@ -866,6 +871,7 @@ Class | Method | HTTP request
 *StarDemandSearchWordModifyV2Api* | **OpenApi2StarDemandSearchWordModifyPost** | **Post** /open_api/2/star/demand/search_word/modify/
 *StarDemanderDemanderGetAuthorBindInfoV2Api* | **OpenApi2StarDemanderDemanderGetAuthorBindInfoGet** | **Get** /open_api/2/star/demander/demander_get_author_bind_info/
 *StarDemanderDemanderGetBindShareCodeV2Api* | **OpenApi2StarDemanderDemanderGetBindShareCodeGet** | **Get** /open_api/2/star/demander/demander_get_bind_share_code/
+*StarDemanderUploadCpsTaskSalesV2Api* | **OpenApi2StarDemanderUploadCpsTaskSalesPost** | **Post** /open_api/2/star/demander_upload_cps_task_sales/
 *StarFeCommonServiceTalentDayGetCheckInCodeV2Api* | **OpenApi2StarFeCommonServiceTalentDayGetCheckInCodeGet** | **Get** /open_api/2/star/fe_common_service/talent_day/get_check_in_code/
 *StarFeCommonServiceTalentDayJudgeCheckedInV2Api* | **OpenApi2StarFeCommonServiceTalentDayJudgeCheckedInGet** | **Get** /open_api/2/star/fe_common_service/talent_day/judge_checked_in/
 *StarGetCreateChallengeDataDictV2Api* | **OpenApi2StarGetCreateChallengeDataDictGet** | **Get** /open_api/2/star/get_create_challenge_data_dict/

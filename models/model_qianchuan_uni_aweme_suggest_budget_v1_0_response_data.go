@@ -24,6 +24,8 @@ type QianchuanUniAwemeSuggestBudgetV10ResponseData struct {
 	EstimateTransCostList []*QianchuanUniAwemeSuggestBudgetV10ResponseDataEstimateTransCostListInner `json:"estimate_trans_cost_list,omitempty"`
 	// 用于roi2 nobid，建议预算是否更新
 	IsUpdate *bool `json:"is_update,omitempty"`
+	//
+	LastUpdateTime *string `json:"last_update_time,omitempty"`
 	// 多档建议预算
 	SuggestedBudgetList []int64 `json:"suggested_budget_list,omitempty"`
 }

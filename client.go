@@ -1,5 +1,5 @@
 /*
-API version: 1.1.42
+API version: 1.1.43
 */
 package ad_open_sdk_go
 
@@ -1009,6 +1009,26 @@ func (c *Client) DpaTemplateGetV2Api() *api.DpaTemplateGetV2ApiService {
 
 func (c *Client) DpaVideoGetV2Api() *api.DpaVideoGetV2ApiService {
 	return c.ApiClient.DpaVideoGetV2Api
+}
+
+func (c *Client) EbpAdvertiserListV2Api() *api.EbpAdvertiserListV2ApiService {
+	return c.ApiClient.EbpAdvertiserListV2Api
+}
+
+func (c *Client) EbpAdvertiserTaskCreateV2Api() *api.EbpAdvertiserTaskCreateV2ApiService {
+	return c.ApiClient.EbpAdvertiserTaskCreateV2Api
+}
+
+func (c *Client) EbpAdvertiserTaskDownloadV2Api() *api.EbpAdvertiserTaskDownloadV2ApiService {
+	return c.ApiClient.EbpAdvertiserTaskDownloadV2Api
+}
+
+func (c *Client) EbpAdvertiserTaskListV2Api() *api.EbpAdvertiserTaskListV2ApiService {
+	return c.ApiClient.EbpAdvertiserTaskListV2Api
+}
+
+func (c *Client) EbpLevelGetV2Api() *api.EbpLevelGetV2ApiService {
+	return c.ApiClient.EbpLevelGetV2Api
 }
 
 func (c *Client) EnterpriseBindListGetV10Api() *api.EnterpriseBindListGetV10ApiService {
@@ -2665,6 +2685,10 @@ func (c *Client) StarDemanderDemanderGetAuthorBindInfoV2Api() *api.StarDemanderD
 
 func (c *Client) StarDemanderDemanderGetBindShareCodeV2Api() *api.StarDemanderDemanderGetBindShareCodeV2ApiService {
 	return c.ApiClient.StarDemanderDemanderGetBindShareCodeV2Api
+}
+
+func (c *Client) StarDemanderUploadCpsTaskSalesV2Api() *api.StarDemanderUploadCpsTaskSalesV2ApiService {
+	return c.ApiClient.StarDemanderUploadCpsTaskSalesV2Api
 }
 
 func (c *Client) StarFeCommonServiceTalentDayGetCheckInCodeV2Api() *api.StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService {

@@ -15,19 +15,19 @@ type AssetsCreativeComponentUpdateV2ComponentInfoComponentType string
 
 // List of assets_creative_component_update_v2_component_info_component_type
 const (
-	GAME_PACK_AssetsCreativeComponentUpdateV2ComponentInfoComponentType               AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "GAME_PACK"
-	COMMERCE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType         AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "COMMERCE_MAGNET"
-	IMAGE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType            AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "IMAGE_MAGNET"
-	VOTE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType             AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "VOTE_MAGNET"
-	PROMOTION_CARD_AssetsCreativeComponentUpdateV2ComponentInfoComponentType          AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "PROMOTION_CARD"
-	LIGHT_INTER_ACTIVE_AssetsCreativeComponentUpdateV2ComponentInfoComponentType      AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "LIGHT_INTER_ACTIVE"
-	RESERVATION_BUTTON_AssetsCreativeComponentUpdateV2ComponentInfoComponentType      AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "RESERVATION_BUTTON"
-	UNION_LIGHT_INTERACTIVE_AssetsCreativeComponentUpdateV2ComponentInfoComponentType AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "UNION_LIGHT_INTERACTIVE"
-	COUPON_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType           AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "COUPON_MAGNET"
-	ECOMMERCE_CARD_AssetsCreativeComponentUpdateV2ComponentInfoComponentType          AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "ECOMMERCE_CARD"
-	CHOICE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType           AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "CHOICE_MAGNET"
 	LUCKY_BOX_AssetsCreativeComponentUpdateV2ComponentInfoComponentType               AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "LUCKY_BOX"
 	HALF_INTERACTIVE_AssetsCreativeComponentUpdateV2ComponentInfoComponentType        AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "HALF_INTERACTIVE"
+	COMMERCE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType         AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "COMMERCE_MAGNET"
+	PROMOTION_CARD_AssetsCreativeComponentUpdateV2ComponentInfoComponentType          AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "PROMOTION_CARD"
+	GAME_PACK_AssetsCreativeComponentUpdateV2ComponentInfoComponentType               AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "GAME_PACK"
+	CHOICE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType           AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "CHOICE_MAGNET"
+	VOTE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType             AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "VOTE_MAGNET"
+	LIGHT_INTER_ACTIVE_AssetsCreativeComponentUpdateV2ComponentInfoComponentType      AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "LIGHT_INTER_ACTIVE"
+	COUPON_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType           AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "COUPON_MAGNET"
+	ECOMMERCE_CARD_AssetsCreativeComponentUpdateV2ComponentInfoComponentType          AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "ECOMMERCE_CARD"
+	IMAGE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType            AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "IMAGE_MAGNET"
+	UNION_LIGHT_INTERACTIVE_AssetsCreativeComponentUpdateV2ComponentInfoComponentType AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "UNION_LIGHT_INTERACTIVE"
+	RESERVATION_BUTTON_AssetsCreativeComponentUpdateV2ComponentInfoComponentType      AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "RESERVATION_BUTTON"
 )
 
 // Ptr returns reference to assets_creative_component_update_v2_component_info_component_type value

@@ -15,20 +15,20 @@ type AdGetV2DataDeepBidType string
 
 // List of ad_get_v2_data_deep_bid_type
 const (
-	AUTO_MIN_SECOND_STAGE_AdGetV2DataDeepBidType        AdGetV2DataDeepBidType = "AUTO_MIN_SECOND_STAGE"
-	SMARTBID_AdGetV2DataDeepBidType                     AdGetV2DataDeepBidType = "SMARTBID"
 	ROI_DIRECT_MAIL_AdGetV2DataDeepBidType              AdGetV2DataDeepBidType = "ROI_DIRECT_MAIL"
-	ALI_FL_AdGetV2DataDeepBidType                       AdGetV2DataDeepBidType = "ALI_FL"
-	DEEP_BID_TYPE_RETENTION_DAYS_AdGetV2DataDeepBidType AdGetV2DataDeepBidType = "DEEP_BID_TYPE_RETENTION_DAYS"
-	ROI_COEFFICIENT_AdGetV2DataDeepBidType              AdGetV2DataDeepBidType = "ROI_COEFFICIENT"
+	DEEP_BID_PACING_AdGetV2DataDeepBidType              AdGetV2DataDeepBidType = "DEEP_BID_PACING"
 	SOCIAL_ROI_AdGetV2DataDeepBidType                   AdGetV2DataDeepBidType = "SOCIAL_ROI"
-	PACING_SECOND_STAGE_AdGetV2DataDeepBidType          AdGetV2DataDeepBidType = "PACING_SECOND_STAGE"
+	MIN_SECOND_STAGE_AdGetV2DataDeepBidType             AdGetV2DataDeepBidType = "MIN_SECOND_STAGE"
+	ROI_COEFFICIENT_AdGetV2DataDeepBidType              AdGetV2DataDeepBidType = "ROI_COEFFICIENT"
+	DEEP_BID_DEFAULT_AdGetV2DataDeepBidType             AdGetV2DataDeepBidType = "DEEP_BID_DEFAULT"
+	DEEP_BID_TYPE_RETENTION_DAYS_AdGetV2DataDeepBidType AdGetV2DataDeepBidType = "DEEP_BID_TYPE_RETENTION_DAYS"
+	SMARTBID_AdGetV2DataDeepBidType                     AdGetV2DataDeepBidType = "SMARTBID"
 	BID_PER_ACTION_AdGetV2DataDeepBidType               AdGetV2DataDeepBidType = "BID_PER_ACTION"
+	AUTO_MIN_SECOND_STAGE_AdGetV2DataDeepBidType        AdGetV2DataDeepBidType = "AUTO_MIN_SECOND_STAGE"
 	DEEP_BID_MIN_AdGetV2DataDeepBidType                 AdGetV2DataDeepBidType = "DEEP_BID_MIN"
 	ROI_PACING_AdGetV2DataDeepBidType                   AdGetV2DataDeepBidType = "ROI_PACING"
-	DEEP_BID_PACING_AdGetV2DataDeepBidType              AdGetV2DataDeepBidType = "DEEP_BID_PACING"
-	MIN_SECOND_STAGE_AdGetV2DataDeepBidType             AdGetV2DataDeepBidType = "MIN_SECOND_STAGE"
-	DEEP_BID_DEFAULT_AdGetV2DataDeepBidType             AdGetV2DataDeepBidType = "DEEP_BID_DEFAULT"
+	PACING_SECOND_STAGE_AdGetV2DataDeepBidType          AdGetV2DataDeepBidType = "PACING_SECOND_STAGE"
+	ALI_FL_AdGetV2DataDeepBidType                       AdGetV2DataDeepBidType = "ALI_FL"
 )
 
 // Ptr returns reference to ad_get_v2_data_deep_bid_type value

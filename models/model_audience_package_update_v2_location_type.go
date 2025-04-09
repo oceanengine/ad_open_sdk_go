@@ -15,9 +15,9 @@ type AudiencePackageUpdateV2LocationType string
 
 // List of audience_package_update_v2_location_type
 const (
-	TRAVEL_AudiencePackageUpdateV2LocationType  AudiencePackageUpdateV2LocationType = "TRAVEL"
 	CURRENT_AudiencePackageUpdateV2LocationType AudiencePackageUpdateV2LocationType = "CURRENT"
 	HOME_AudiencePackageUpdateV2LocationType    AudiencePackageUpdateV2LocationType = "HOME"
+	TRAVEL_AudiencePackageUpdateV2LocationType  AudiencePackageUpdateV2LocationType = "TRAVEL"
 	ALL_AudiencePackageUpdateV2LocationType     AudiencePackageUpdateV2LocationType = "ALL"
 )
 

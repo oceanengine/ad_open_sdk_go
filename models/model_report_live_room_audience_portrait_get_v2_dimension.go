@@ -15,10 +15,10 @@ type ReportLiveRoomAudiencePortraitGetV2Dimension string
 
 // List of report_live_room_audience_portrait_get_v2_dimension
 const (
-	AGE_ReportLiveRoomAudiencePortraitGetV2Dimension      ReportLiveRoomAudiencePortraitGetV2Dimension = "AGE"
 	CITY_ReportLiveRoomAudiencePortraitGetV2Dimension     ReportLiveRoomAudiencePortraitGetV2Dimension = "CITY"
-	GENDER_ReportLiveRoomAudiencePortraitGetV2Dimension   ReportLiveRoomAudiencePortraitGetV2Dimension = "GENDER"
+	AGE_ReportLiveRoomAudiencePortraitGetV2Dimension      ReportLiveRoomAudiencePortraitGetV2Dimension = "AGE"
 	PLATFORM_ReportLiveRoomAudiencePortraitGetV2Dimension ReportLiveRoomAudiencePortraitGetV2Dimension = "PLATFORM"
+	GENDER_ReportLiveRoomAudiencePortraitGetV2Dimension   ReportLiveRoomAudiencePortraitGetV2Dimension = "GENDER"
 	PROVINCE_ReportLiveRoomAudiencePortraitGetV2Dimension ReportLiveRoomAudiencePortraitGetV2Dimension = "PROVINCE"
 )
 

@@ -16,8 +16,8 @@ type ToolsPlayableCloudGameListV2DataListAdStatus string
 // List of tools_playable_cloud_game_list_v2_data_list_ad_status
 const (
 	INUSE_ToolsPlayableCloudGameListV2DataListAdStatus  ToolsPlayableCloudGameListV2DataListAdStatus = "INUSE"
-	UNUSED_ToolsPlayableCloudGameListV2DataListAdStatus ToolsPlayableCloudGameListV2DataListAdStatus = "UNUSED"
 	DELETE_ToolsPlayableCloudGameListV2DataListAdStatus ToolsPlayableCloudGameListV2DataListAdStatus = "DELETE"
+	UNUSED_ToolsPlayableCloudGameListV2DataListAdStatus ToolsPlayableCloudGameListV2DataListAdStatus = "UNUSED"
 )
 
 // Ptr returns reference to tools_playable_cloud_game_list_v2_data_list_ad_status value

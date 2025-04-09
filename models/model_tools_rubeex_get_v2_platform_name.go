@@ -16,11 +16,11 @@ type ToolsRubeexGetV2PlatformName string
 // List of tools_rubeex_get_v2_platform_name
 const (
 	AD_PLATFORM_ToolsRubeexGetV2PlatformName       ToolsRubeexGetV2PlatformName = "AD_PLATFORM"
-	LIGHT_PLAYABLE_ToolsRubeexGetV2PlatformName    ToolsRubeexGetV2PlatformName = "LIGHT_PLAYABLE"
-	PLAYABLE_TEMPLATE_ToolsRubeexGetV2PlatformName ToolsRubeexGetV2PlatformName = "PLAYABLE_TEMPLATE"
 	CLAB_EDITOR_ToolsRubeexGetV2PlatformName       ToolsRubeexGetV2PlatformName = "CLAB_EDITOR"
 	RUBIX_ToolsRubeexGetV2PlatformName             ToolsRubeexGetV2PlatformName = "RUBIX"
+	LIGHT_PLAYABLE_ToolsRubeexGetV2PlatformName    ToolsRubeexGetV2PlatformName = "LIGHT_PLAYABLE"
 	POWERPLAYABLE_ToolsRubeexGetV2PlatformName     ToolsRubeexGetV2PlatformName = "POWERPLAYABLE"
+	PLAYABLE_TEMPLATE_ToolsRubeexGetV2PlatformName ToolsRubeexGetV2PlatformName = "PLAYABLE_TEMPLATE"
 )
 
 // Ptr returns reference to tools_rubeex_get_v2_platform_name value

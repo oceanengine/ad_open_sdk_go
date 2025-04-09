@@ -15,8 +15,8 @@ type CampaignCreateV2CampaignType string
 
 // List of campaign_create_v2_campaign_type
 const (
-	FEED_CampaignCreateV2CampaignType    CampaignCreateV2CampaignType = "FEED"
 	CONTENT_CampaignCreateV2CampaignType CampaignCreateV2CampaignType = "CONTENT"
+	FEED_CampaignCreateV2CampaignType    CampaignCreateV2CampaignType = "FEED"
 	SEARCH_CampaignCreateV2CampaignType  CampaignCreateV2CampaignType = "SEARCH"
 )
 
