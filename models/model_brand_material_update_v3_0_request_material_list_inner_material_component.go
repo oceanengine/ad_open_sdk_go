@@ -12,14 +12,17 @@ package models
 
 // BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponent
 type BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponent struct {
-	AwemeAnchor      *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentAwemeAnchor      `json:"aweme_anchor,omitempty"`
-	AwemeVideo       *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentAwemeVideo       `json:"aweme_video,omitempty"`
-	BusinessUrl      *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentBusinessUrl      `json:"business_url,omitempty"`
-	CommonExternal   *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentCommonExternal   `json:"common_external,omitempty"`
-	DeliveryTimeList *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentDeliveryTimeList `json:"delivery_time_list,omitempty"`
-	ExploreOneTime   *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentExploreOneTime   `json:"explore_one_time,omitempty"`
-	ExternalTitle    *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentExternalTitle    `json:"external_title,omitempty"`
-	IesCoreUser      *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentIesCoreUser      `json:"ies_core_user,omitempty"`
-	ImageCard        *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentImageCard        `json:"image_card,omitempty"`
-	Search           *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentSearch           `json:"search,omitempty"`
+	AwemeAnchor       *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentAwemeAnchor       `json:"aweme_anchor,omitempty"`
+	AwemeShopHomePage *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentAwemeShopHomePage `json:"aweme_shop_home_page,omitempty"`
+	AwemeVideo        *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentAwemeVideo        `json:"aweme_video,omitempty"`
+	BusinessUrl       *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentBusinessUrl       `json:"business_url,omitempty"`
+	CommonExternal    *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentCommonExternal    `json:"common_external,omitempty"`
+	DeliveryTimeList  *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentDeliveryTimeList  `json:"delivery_time_list,omitempty"`
+	ExploreOneTime    *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentExploreOneTime    `json:"explore_one_time,omitempty"`
+	ExternalTitle     *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentExternalTitle     `json:"external_title,omitempty"`
+	IesCoreUser       *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentIesCoreUser       `json:"ies_core_user,omitempty"`
+	ImageCard         *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentImageCard         `json:"image_card,omitempty"`
+	MallActivityPage  *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentMallActivityPage  `json:"mall_activity_page,omitempty"`
+	ProductDetailPage *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentProductDetailPage `json:"product_detail_page,omitempty"`
+	Search            *BrandMaterialUpdateV30RequestMaterialListInnerMaterialComponentSearch            `json:"search,omitempty"`
 }

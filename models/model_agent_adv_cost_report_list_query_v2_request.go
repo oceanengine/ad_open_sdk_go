@@ -13,7 +13,8 @@ package models
 // AgentAdvCostReportListQueryV2Request struct for AgentAdvCostReportListQueryV2Request
 type AgentAdvCostReportListQueryV2Request struct {
 	// 代理商ID
-	AgentId int64 `json:"agent_id"`
+	AgentId     int64                                     `json:"agent_id"`
+	CostAggType *AgentAdvCostReportListQueryV2CostAggType `json:"cost_agg_type,omitempty"`
 	// 结束时间。格式：YYYY-MM-DD。闭区间,可选日期范围是今天以前；开始时间与结束时间的跨度不能超过365天。
 	EndDate   string                                         `json:"end_date"`
 	Filtering *AgentAdvCostReportListQueryV2RequestFiltering `json:"filtering,omitempty"`

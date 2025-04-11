@@ -15,10 +15,10 @@ type ToolsBidSuggestV2Platform string
 
 // List of tools_bid_suggest_v2_platform
 const (
+	NONE_ToolsBidSuggestV2Platform    ToolsBidSuggestV2Platform = "NONE"
+	IPAD_ToolsBidSuggestV2Platform    ToolsBidSuggestV2Platform = "IPAD"
 	PC_ToolsBidSuggestV2Platform      ToolsBidSuggestV2Platform = "PC"
 	IOS_ToolsBidSuggestV2Platform     ToolsBidSuggestV2Platform = "IOS"
-	IPAD_ToolsBidSuggestV2Platform    ToolsBidSuggestV2Platform = "IPAD"
-	NONE_ToolsBidSuggestV2Platform    ToolsBidSuggestV2Platform = "NONE"
 	WAP_ToolsBidSuggestV2Platform     ToolsBidSuggestV2Platform = "WAP"
 	ANDROID_ToolsBidSuggestV2Platform ToolsBidSuggestV2Platform = "ANDROID"
 )

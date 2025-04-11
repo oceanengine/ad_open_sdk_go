@@ -13,9 +13,8 @@ package models
 // BrandMaterialUpdateV30Response struct for BrandMaterialUpdateV30Response
 type BrandMaterialUpdateV30Response struct {
 	//
-	Code *int64 `json:"code,omitempty"`
-	//
-	Data map[string]interface{} `json:"data,omitempty"`
+	Code *int64                              `json:"code,omitempty"`
+	Data *BrandMaterialUpdateV30ResponseData `json:"data,omitempty"`
 	//
 	Message *string `json:"message,omitempty"`
 	//

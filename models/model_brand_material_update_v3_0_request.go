@@ -19,6 +19,8 @@ type BrandMaterialUpdateV30Request struct {
 	//
 	MaterialList []*BrandMaterialUpdateV30RequestMaterialListInner `json:"material_list"`
 	//
-	OrderId      int64                                      `json:"order_id"`
-	TrackUrlInfo *BrandMaterialUpdateV30RequestTrackUrlInfo `json:"track_url_info,omitempty"`
+	OrderId int64 `json:"order_id"`
+	// 监测链接周期配置组
+	TrackUrlGroupInfos []*BrandMaterialUpdateV30RequestTrackUrlGroupInfosInner `json:"track_url_group_infos,omitempty"`
+	TrackUrlInfo       *BrandMaterialUpdateV30RequestTrackUrlInfo              `json:"track_url_info,omitempty"`
 }

@@ -14,6 +14,7 @@ import (
 	"context"
 	"net/http"
 	"net/url"
+	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -26,6 +27,7 @@ type ApiOpenApi2ToolsDiagnosisAdGetV2GetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsDiagnosisAdGetV2V2ApiService
 	advertiserId *int64
+	version      string
 	adIds        *[]int64
 }
 
@@ -59,12 +61,14 @@ func (r *ApiOpenApi2ToolsDiagnosisAdGetV2GetRequest) WithLog(enable bool) *ApiOp
 OpenApi2ToolsDiagnosisAdGetV2Get Method for OpenApi2ToolsDiagnosisAdGetV2Get
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+	@param version request version
 	@return ApiOpenApi2ToolsDiagnosisAdGetV2GetRequest
 */
-func (a *ToolsDiagnosisAdGetV2V2ApiService) Get(ctx context.Context) *ApiOpenApi2ToolsDiagnosisAdGetV2GetRequest {
+func (a *ToolsDiagnosisAdGetV2V2ApiService) Get(ctx context.Context, version string) *ApiOpenApi2ToolsDiagnosisAdGetV2GetRequest {
 	return &ApiOpenApi2ToolsDiagnosisAdGetV2GetRequest{
 		ApiService: a,
 		ctx:        ctx,
+		version:    version,
 	}
 }
 
@@ -84,6 +88,7 @@ func (a *ToolsDiagnosisAdGetV2V2ApiService) getExecute(r *ApiOpenApi2ToolsDiagno
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/tools/diagnosis/ad/get_v2/"
+	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

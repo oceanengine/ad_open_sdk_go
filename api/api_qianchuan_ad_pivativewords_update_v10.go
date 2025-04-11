@@ -14,6 +14,7 @@ import (
 	"context"
 	"net/http"
 	"net/url"
+	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -25,6 +26,7 @@ type QianchuanAdPivativewordsUpdateV10ApiService service
 type ApiOpenApiV10QianchuanAdPivativewordsUpdatePostRequest struct {
 	ctx                                      context.Context
 	ApiService                               *QianchuanAdPivativewordsUpdateV10ApiService
+	version                                  string
 	qianchuanAdPivativewordsUpdateV10Request *QianchuanAdPivativewordsUpdateV10Request
 }
 
@@ -53,12 +55,14 @@ func (r *ApiOpenApiV10QianchuanAdPivativewordsUpdatePostRequest) WithLog(enable 
 OpenApiV10QianchuanAdPivativewordsUpdatePost Method for OpenApiV10QianchuanAdPivativewordsUpdatePost
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+	@param version request version
 	@return ApiOpenApiV10QianchuanAdPivativewordsUpdatePostRequest
 */
-func (a *QianchuanAdPivativewordsUpdateV10ApiService) Post(ctx context.Context) *ApiOpenApiV10QianchuanAdPivativewordsUpdatePostRequest {
+func (a *QianchuanAdPivativewordsUpdateV10ApiService) Post(ctx context.Context, version string) *ApiOpenApiV10QianchuanAdPivativewordsUpdatePostRequest {
 	return &ApiOpenApiV10QianchuanAdPivativewordsUpdatePostRequest{
 		ApiService: a,
 		ctx:        ctx,
+		version:    version,
 	}
 }
 
@@ -78,6 +82,7 @@ func (a *QianchuanAdPivativewordsUpdateV10ApiService) postExecute(r *ApiOpenApiV
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/ad/pivativewords/update/"
+	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

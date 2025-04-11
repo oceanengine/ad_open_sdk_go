@@ -17,6 +17,7 @@ type BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponent struct {
 	AdvancedCardSubTitle  *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAdvancedCardSubTitle  `json:"advanced_card_sub_title,omitempty"`
 	AppDownload           *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAppDownload           `json:"app_download,omitempty"`
 	AvatarIcon            *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAvatarIcon            `json:"avatar_icon,omitempty"`
+	AwemeShopHomePage     *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeShopHomePage     `json:"aweme_shop_home_page,omitempty"`
 	AwemeVideo            *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideo            `json:"aweme_video,omitempty"`
 	BusinessUrl           *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentBusinessUrl           `json:"business_url,omitempty"`
 	CommonExternal        *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentCommonExternal        `json:"common_external,omitempty"`
@@ -29,7 +30,9 @@ type BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponent struct {
 	IesCoreUser           *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentIesCoreUser           `json:"ies_core_user,omitempty"`
 	ImageCard             *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentImageCard             `json:"image_card,omitempty"`
 	LbsExternal           *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentLbsExternal           `json:"lbs_external,omitempty"`
+	MallActivityPage      *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentMallActivityPage      `json:"mall_activity_page,omitempty"`
 	MusicText             *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentMusicText             `json:"music_text,omitempty"`
+	ProductDetailPage     *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentProductDetailPage     `json:"product_detail_page,omitempty"`
 	Search                *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentSearch                `json:"search,omitempty"`
 	SemicCircleButton     *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentSemicCircleButton     `json:"semic_circle_button,omitempty"`
 	SideSlide             *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentSideSlide             `json:"side_slide,omitempty"`

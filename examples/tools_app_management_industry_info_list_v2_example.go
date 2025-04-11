@@ -25,6 +25,7 @@ import (
 type ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequestExample struct {
 	AccountId   int64                                           `json:"account_id"`
 	AccountType ToolsAppManagementIndustryInfoListV2AccountType `json:"account_type"`
+	Version     string                                          `json:"version"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/app_management/industry_info/list/ Get
@@ -44,9 +45,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.ToolsAppManagementIndustryInfoListV2Api().
-		Get(ctx).
+		Get(ctx, version).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).AccountType(request.AccountType).
+		AccountId(request.AccountId).AccountType(request.AccountType).Version(request.Version).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

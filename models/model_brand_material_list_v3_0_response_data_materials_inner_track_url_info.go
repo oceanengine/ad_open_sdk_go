@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialListV30ResponseDataMaterialsInnerTrackUrlInfo
+// BrandMaterialListV30ResponseDataMaterialsInnerTrackUrlInfo 监测链接配置
 type BrandMaterialListV30ResponseDataMaterialsInnerTrackUrlInfo struct {
 	// 点击监测链接
 	ActionTrackUrl []string `json:"action_track_url,omitempty"`
@@ -19,7 +19,7 @@ type BrandMaterialListV30ResponseDataMaterialsInnerTrackUrlInfo struct {
 	// 评论监测链接
 	CommentTrackUrl []string `json:"comment_track_url,omitempty"`
 	// 第三方上下文内容监测链接
-	ContentTrackUrl []string `json:"content_track_url,omitempty"`
+	ContextTrackUrl []string `json:"context_track_url,omitempty"`
 	// 视频有效播放监测链接
 	EffectiveFrame []string `json:"effective_frame,omitempty"`
 	// 视频开始播放监测链接

@@ -23,9 +23,10 @@ import (
 )
 
 type ApiOpenApi2DpaTemplateGetGetRequestExample struct {
-	AdvertiserId int64 `json:"advertiser_id"`
-	Page         int32 `json:"page,omitempty"`
-	PageSize     int32 `json:"page_size,omitempty"`
+	AdvertiserId int64  `json:"advertiser_id"`
+	Version      string `json:"version"`
+	Page         int32  `json:"page,omitempty"`
+	PageSize     int32  `json:"page_size,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/dpa/template/get/ Get
@@ -45,9 +46,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.DpaTemplateGetV2Api().
-		Get(ctx).
+		Get(ctx, version).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).Version(request.Version).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

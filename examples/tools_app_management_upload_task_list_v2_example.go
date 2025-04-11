@@ -26,6 +26,7 @@ type ApiOpenApi2ToolsAppManagementUploadTaskListGetRequestExample struct {
 	AccountId   int64                                         `json:"account_id"`
 	AccountType ToolsAppManagementUploadTaskListV2AccountType `json:"account_type"`
 	Filtering   ToolsAppManagementUploadTaskListV2Filtering   `json:"filtering"`
+	Version     string                                        `json:"version"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/app_management/upload_task/list/ Get
@@ -45,9 +46,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.ToolsAppManagementUploadTaskListV2Api().
-		Get(ctx).
+		Get(ctx, version).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).AccountType(request.AccountType).Filtering(request.Filtering).
+		AccountId(request.AccountId).AccountType(request.AccountType).Filtering(request.Filtering).Version(request.Version).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

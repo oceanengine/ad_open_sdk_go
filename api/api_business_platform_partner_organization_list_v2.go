@@ -14,6 +14,7 @@ import (
 	"context"
 	"net/http"
 	"net/url"
+	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -26,6 +27,7 @@ type ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest struct {
 	ctx            context.Context
 	ApiService     *BusinessPlatformPartnerOrganizationListV2ApiService
 	organizationId *int64
+	version        string
 	page           *int32
 	pageSize       *int32
 	filtering      *BusinessPlatformPartnerOrganizationListV2Filtering
@@ -75,12 +77,14 @@ func (r *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest) WithLog(e
 OpenApi2BusinessPlatformPartnerOrganizationListGet Method for OpenApi2BusinessPlatformPartnerOrganizationListGet
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+	@param version request version
 	@return ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest
 */
-func (a *BusinessPlatformPartnerOrganizationListV2ApiService) Get(ctx context.Context) *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest {
+func (a *BusinessPlatformPartnerOrganizationListV2ApiService) Get(ctx context.Context, version string) *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest {
 	return &ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest{
 		ApiService: a,
 		ctx:        ctx,
+		version:    version,
 	}
 }
 
@@ -100,6 +104,7 @@ func (a *BusinessPlatformPartnerOrganizationListV2ApiService) getExecute(r *ApiO
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/business_platform/partner_organization/list/"
+	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

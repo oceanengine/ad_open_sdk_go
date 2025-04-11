@@ -17,6 +17,7 @@ type DouplusRtaGetInfoV30DataRtaListTargetType string
 const (
 	ADV_DouplusRtaGetInfoV30DataRtaListTargetType   DouplusRtaGetInfoV30DataRtaListTargetType = "ADV"
 	ORDER_DouplusRtaGetInfoV30DataRtaListTargetType DouplusRtaGetInfoV30DataRtaListTargetType = "ORDER"
+	NONE_DouplusRtaGetInfoV30DataRtaListTargetType  DouplusRtaGetInfoV30DataRtaListTargetType = "NONE"
 )
 
 // Ptr returns reference to douplus_rta_get_info_v3.0_data_rta_list_target_type value

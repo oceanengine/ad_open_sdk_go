@@ -25,6 +25,7 @@ import (
 type ApiOpenApiV10QianchuanAdPivativewordsGetGetRequestExample struct {
 	AdvertiserId int64                                   `json:"advertiser_id"`
 	Filtering    QianchuanAdPivativewordsGetV10Filtering `json:"filtering"`
+	Version      string                                  `json:"version"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/qianchuan/ad/pivativewords/get/ Get
@@ -44,9 +45,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.QianchuanAdPivativewordsGetV10Api().
-		Get(ctx).
+		Get(ctx, version).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).
+		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).Version(request.Version).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

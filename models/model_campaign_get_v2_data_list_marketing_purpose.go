@@ -15,9 +15,9 @@ type CampaignGetV2DataListMarketingPurpose string
 
 // List of campaign_get_v2_data_list_marketing_purpose
 const (
-	UNLIMITED_CampaignGetV2DataListMarketingPurpose   CampaignGetV2DataListMarketingPurpose = "UNLIMITED"
 	CONVERSION_CampaignGetV2DataListMarketingPurpose  CampaignGetV2DataListMarketingPurpose = "CONVERSION"
 	ACKNOWLEDGE_CampaignGetV2DataListMarketingPurpose CampaignGetV2DataListMarketingPurpose = "ACKNOWLEDGE"
+	UNLIMITED_CampaignGetV2DataListMarketingPurpose   CampaignGetV2DataListMarketingPurpose = "UNLIMITED"
 	INTENTION_CampaignGetV2DataListMarketingPurpose   CampaignGetV2DataListMarketingPurpose = "INTENTION"
 )
 

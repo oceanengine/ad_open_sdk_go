@@ -33,6 +33,8 @@ type BrandMaterialListV30ResponseDataMaterialsInner struct {
 	// 预订单ID
 	OrderId *int64 `json:"order_id,omitempty"`
 	// 投放开始时间
-	StartTime    *string                                                     `json:"start_time,omitempty"`
-	TrackUrlInfo *BrandMaterialListV30ResponseDataMaterialsInnerTrackUrlInfo `json:"track_url_info,omitempty"`
+	StartTime *string `json:"start_time,omitempty"`
+	// 监测链接周期配置组
+	TrackUrlGroupInfos []*BrandMaterialListV30ResponseDataMaterialsInnerTrackUrlGroupInfosInner `json:"track_url_group_infos,omitempty"`
+	TrackUrlInfo       *BrandMaterialListV30ResponseDataMaterialsInnerTrackUrlInfo              `json:"track_url_info,omitempty"`
 }

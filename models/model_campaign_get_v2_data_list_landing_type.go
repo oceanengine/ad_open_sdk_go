@@ -15,17 +15,17 @@ type CampaignGetV2DataListLandingType string
 
 // List of campaign_get_v2_data_list_landing_type
 const (
-	BRAND_EXTERNAL_CampaignGetV2DataListLandingType CampaignGetV2DataListLandingType = "BRAND_EXTERNAL"
-	SHOP_CampaignGetV2DataListLandingType           CampaignGetV2DataListLandingType = "SHOP"
-	LIVE_CampaignGetV2DataListLandingType           CampaignGetV2DataListLandingType = "LIVE"
-	QUICK_APP_CampaignGetV2DataListLandingType      CampaignGetV2DataListLandingType = "QUICK_APP"
 	DPA_CampaignGetV2DataListLandingType            CampaignGetV2DataListLandingType = "DPA"
 	APP_CampaignGetV2DataListLandingType            CampaignGetV2DataListLandingType = "APP"
+	LINK_CampaignGetV2DataListLandingType           CampaignGetV2DataListLandingType = "LINK"
+	SHOP_CampaignGetV2DataListLandingType           CampaignGetV2DataListLandingType = "SHOP"
+	BRAND_EXTERNAL_CampaignGetV2DataListLandingType CampaignGetV2DataListLandingType = "BRAND_EXTERNAL"
 	ARTICLE_CampaignGetV2DataListLandingType        CampaignGetV2DataListLandingType = "ARTICLE"
 	AWEME_CampaignGetV2DataListLandingType          CampaignGetV2DataListLandingType = "AWEME"
-	LINK_CampaignGetV2DataListLandingType           CampaignGetV2DataListLandingType = "LINK"
-	STORE_CampaignGetV2DataListLandingType          CampaignGetV2DataListLandingType = "STORE"
 	GOODS_CampaignGetV2DataListLandingType          CampaignGetV2DataListLandingType = "GOODS"
+	LIVE_CampaignGetV2DataListLandingType           CampaignGetV2DataListLandingType = "LIVE"
+	STORE_CampaignGetV2DataListLandingType          CampaignGetV2DataListLandingType = "STORE"
+	QUICK_APP_CampaignGetV2DataListLandingType      CampaignGetV2DataListLandingType = "QUICK_APP"
 )
 
 // Ptr returns reference to campaign_get_v2_data_list_landing_type value

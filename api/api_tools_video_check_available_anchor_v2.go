@@ -14,6 +14,7 @@ import (
 	"context"
 	"net/http"
 	"net/url"
+	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -29,6 +30,7 @@ type ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest struct {
 	itemIds        *[]int64
 	landingType    *ToolsVideoCheckAvailableAnchorV2LandingType
 	externalAction *ToolsVideoCheckAvailableAnchorV2ExternalAction
+	version        string
 }
 
 // 广告主ID
@@ -75,12 +77,14 @@ func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) WithLog(enable boo
 OpenApi2ToolsVideoCheckAvailableAnchorGet Method for OpenApi2ToolsVideoCheckAvailableAnchorGet
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+	@param version request version
 	@return ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest
 */
-func (a *ToolsVideoCheckAvailableAnchorV2ApiService) Get(ctx context.Context) *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
+func (a *ToolsVideoCheckAvailableAnchorV2ApiService) Get(ctx context.Context, version string) *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
 	return &ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest{
 		ApiService: a,
 		ctx:        ctx,
+		version:    version,
 	}
 }
 
@@ -100,6 +104,7 @@ func (a *ToolsVideoCheckAvailableAnchorV2ApiService) getExecute(r *ApiOpenApi2To
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/tools/video/check_available_anchor/"
+	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

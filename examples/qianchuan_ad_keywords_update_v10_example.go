@@ -23,6 +23,7 @@ import (
 )
 
 type ApiOpenApiV10QianchuanAdKeywordsUpdatePostRequestExample struct {
+	Version                             string                              `json:"version"`
 	QianchuanAdKeywordsUpdateV10Request QianchuanAdKeywordsUpdateV10Request `json:"QianchuanAdKeywordsUpdateV10Request,omitempty"`
 }
 
@@ -43,9 +44,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.QianchuanAdKeywordsUpdateV10Api().
-		Post(ctx).
+		Post(ctx, version).
 		AccessToken(accessToken).
-		QianchuanAdKeywordsUpdateV10Request(request.QianchuanAdKeywordsUpdateV10Request).
+		Version(request.Version).QianchuanAdKeywordsUpdateV10Request(request.QianchuanAdKeywordsUpdateV10Request).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -23,6 +23,7 @@ import (
 )
 
 type ApiOpenApi2EventManagerAssetsCreatePostRequestExample struct {
+	Version                           string                            `json:"version"`
 	EventManagerAssetsCreateV2Request EventManagerAssetsCreateV2Request `json:"EventManagerAssetsCreateV2Request,omitempty"`
 }
 
@@ -43,9 +44,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.EventManagerAssetsCreateV2Api().
-		Post(ctx).
+		Post(ctx, version).
 		AccessToken(accessToken).
-		EventManagerAssetsCreateV2Request(request.EventManagerAssetsCreateV2Request).
+		Version(request.Version).EventManagerAssetsCreateV2Request(request.EventManagerAssetsCreateV2Request).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

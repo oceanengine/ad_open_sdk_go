@@ -15,8 +15,10 @@ type AgentAdvCostReportListQueryV2RequestFiltering struct {
 	// 广告主 id
 	AdvertiserIds []int64 `json:"advertiser_ids,omitempty"`
 	// 代理商客户id
-	AgentCustomerId *int64                                         `json:"agent_customer_id,omitempty"`
-	AppName         *AgentAdvCostReportListQueryV2FilteringAppName `json:"app_name,omitempty"`
+	AgentCustomerId *int64 `json:"agent_customer_id,omitempty"`
+	// 代理商客户id列表，支持多选查询
+	AgentCustomerIds []int64                                        `json:"agent_customer_ids,omitempty"`
+	AppName          *AgentAdvCostReportListQueryV2FilteringAppName `json:"app_name,omitempty"`
 	// 广告主所属公司名称，若选填该字段，限制最小长度为1，最大长度为223。支持模糊查询。
 	CompanyName   *string                                              `json:"company_name,omitempty"`
 	CostSource    *AgentAdvCostReportListQueryV2FilteringCostSource    `json:"cost_source,omitempty"`
@@ -33,6 +35,8 @@ type AgentAdvCostReportListQueryV2RequestFiltering struct {
 	SecondAdAgentId *int64 `json:"second_ad_agent_id,omitempty"`
 	// 二级行业名称。可从【获取行业列表】接口获取。
 	SecondIndustry *string `json:"second_industry,omitempty"`
+	// 二级行业列表，支持多个行业查询。可从【获取行业列表】接口获取。
+	SecondIndustryList []string `json:"second_industry_list,omitempty"`
 	//
 	SpuLabelName []*AgentAdvCostReportListQueryV2FilteringSpuLabelName `json:"spu_label_name,omitempty"`
 }

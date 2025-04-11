@@ -23,6 +23,7 @@ import (
 )
 
 type ApiOpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequestExample struct {
+	Version                                               string                                                `json:"version"`
 	ToolsAppManagementAndroidBasicPackagePublishV2Request ToolsAppManagementAndroidBasicPackagePublishV2Request `json:"ToolsAppManagementAndroidBasicPackagePublishV2Request,omitempty"`
 }
 
@@ -43,9 +44,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.ToolsAppManagementAndroidBasicPackagePublishV2Api().
-		Post(ctx).
+		Post(ctx, version).
 		AccessToken(accessToken).
-		ToolsAppManagementAndroidBasicPackagePublishV2Request(request.ToolsAppManagementAndroidBasicPackagePublishV2Request).
+		Version(request.Version).ToolsAppManagementAndroidBasicPackagePublishV2Request(request.ToolsAppManagementAndroidBasicPackagePublishV2Request).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)
