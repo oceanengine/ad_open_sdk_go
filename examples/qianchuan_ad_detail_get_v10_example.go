@@ -23,10 +23,9 @@ import (
 )
 
 type ApiOpenApiV10QianchuanAdDetailGetGetRequestExample struct {
-	AdvertiserId       int64  `json:"advertiser_id"`
-	AdId               int64  `json:"ad_id"`
-	RequestMaterialUrl bool   `json:"request_material_url,omitempty"`
-	Version            string `json:"version,omitempty"`
+	AdvertiserId       int64 `json:"advertiser_id"`
+	AdId               int64 `json:"ad_id"`
+	RequestMaterialUrl bool  `json:"request_material_url,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/qianchuan/ad/detail/get/ Get
@@ -48,7 +47,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanAdDetailGetV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).AdId(request.AdId).RequestMaterialUrl(request.RequestMaterialUrl).Version(request.Version).
+		AdvertiserId(request.AdvertiserId).AdId(request.AdId).RequestMaterialUrl(request.RequestMaterialUrl).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

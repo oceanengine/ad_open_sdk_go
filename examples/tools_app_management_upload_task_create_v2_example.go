@@ -23,7 +23,6 @@ import (
 )
 
 type ApiOpenApi2ToolsAppManagementUploadTaskCreatePostRequestExample struct {
-	Version                                     string                                      `json:"version"`
 	ToolsAppManagementUploadTaskCreateV2Request ToolsAppManagementUploadTaskCreateV2Request `json:"ToolsAppManagementUploadTaskCreateV2Request,omitempty"`
 }
 
@@ -44,9 +43,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.ToolsAppManagementUploadTaskCreateV2Api().
-		Post(ctx, version).
+		Post(ctx).
 		AccessToken(accessToken).
-		Version(request.Version).ToolsAppManagementUploadTaskCreateV2Request(request.ToolsAppManagementUploadTaskCreateV2Request).
+		ToolsAppManagementUploadTaskCreateV2Request(request.ToolsAppManagementUploadTaskCreateV2Request).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

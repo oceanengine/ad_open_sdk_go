@@ -14,7 +14,6 @@ import (
 	"context"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -28,7 +27,6 @@ type ApiOpenApiV10QianchuanAdPivativewordsGetGetRequest struct {
 	ApiService   *QianchuanAdPivativewordsGetV10ApiService
 	advertiserId *int64
 	filtering    *QianchuanAdPivativewordsGetV10Filtering
-	version      string
 }
 
 // 广告主ID
@@ -62,14 +60,12 @@ func (r *ApiOpenApiV10QianchuanAdPivativewordsGetGetRequest) WithLog(enable bool
 OpenApiV10QianchuanAdPivativewordsGetGet Method for OpenApiV10QianchuanAdPivativewordsGetGet
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param version request version
 	@return ApiOpenApiV10QianchuanAdPivativewordsGetGetRequest
 */
-func (a *QianchuanAdPivativewordsGetV10ApiService) Get(ctx context.Context, version string) *ApiOpenApiV10QianchuanAdPivativewordsGetGetRequest {
+func (a *QianchuanAdPivativewordsGetV10ApiService) Get(ctx context.Context) *ApiOpenApiV10QianchuanAdPivativewordsGetGetRequest {
 	return &ApiOpenApiV10QianchuanAdPivativewordsGetGetRequest{
 		ApiService: a,
 		ctx:        ctx,
-		version:    version,
 	}
 }
 
@@ -89,7 +85,6 @@ func (a *QianchuanAdPivativewordsGetV10ApiService) getExecute(r *ApiOpenApiV10Qi
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/ad/pivativewords/get/"
-	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

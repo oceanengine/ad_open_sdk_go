@@ -15,9 +15,9 @@ type ClueFormDetailV2DataFormFormType string
 
 // List of clue_form_detail_v2_data_form_form_type
 const (
-	ADVANCED_CREATIVE_FORM_ClueFormDetailV2DataFormFormType ClueFormDetailV2DataFormFormType = "ADVANCED_CREATIVE_FORM"
 	NATIVE_FORM_ClueFormDetailV2DataFormFormType            ClueFormDetailV2DataFormFormType = "NATIVE_FORM"
 	NORMAL_FORM_ClueFormDetailV2DataFormFormType            ClueFormDetailV2DataFormFormType = "NORMAL_FORM"
+	ADVANCED_CREATIVE_FORM_ClueFormDetailV2DataFormFormType ClueFormDetailV2DataFormFormType = "ADVANCED_CREATIVE_FORM"
 )
 
 // Ptr returns reference to clue_form_detail_v2_data_form_form_type value

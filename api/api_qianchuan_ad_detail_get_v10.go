@@ -28,7 +28,6 @@ type ApiOpenApiV10QianchuanAdDetailGetGetRequest struct {
 	advertiserId       *int64
 	adId               *int64
 	requestMaterialUrl *bool
-	version            *string
 }
 
 func (r *ApiOpenApiV10QianchuanAdDetailGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanAdDetailGetGetRequest {
@@ -43,11 +42,6 @@ func (r *ApiOpenApiV10QianchuanAdDetailGetGetRequest) AdId(adId int64) *ApiOpenA
 
 func (r *ApiOpenApiV10QianchuanAdDetailGetGetRequest) RequestMaterialUrl(requestMaterialUrl bool) *ApiOpenApiV10QianchuanAdDetailGetGetRequest {
 	r.requestMaterialUrl = &requestMaterialUrl
-	return r
-}
-
-func (r *ApiOpenApiV10QianchuanAdDetailGetGetRequest) Version(version string) *ApiOpenApiV10QianchuanAdDetailGetGetRequest {
-	r.version = &version
 	return r
 }
 
@@ -118,9 +112,6 @@ func (a *QianchuanAdDetailGetV10ApiService) getExecute(r *ApiOpenApiV10Qianchuan
 	parameterAddToHeaderOrQuery(localVarQueryParams, "ad_id", r.adId)
 	if r.requestMaterialUrl != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "request_material_url", r.requestMaterialUrl)
-	}
-	if r.version != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "version", r.version)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

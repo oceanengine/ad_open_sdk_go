@@ -14,7 +14,6 @@ import (
 	"context"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -29,7 +28,6 @@ type ApiOpenApi2ToolsDiagnosisSuggestionGetGetRequest struct {
 	adIds        *[]int64
 	scenes       *[]*ToolsDiagnosisSuggestionGetV2Scenes
 	advertiserId *int64
-	version      string
 }
 
 func (r *ApiOpenApi2ToolsDiagnosisSuggestionGetGetRequest) AdIds(adIds []int64) *ApiOpenApi2ToolsDiagnosisSuggestionGetGetRequest {
@@ -67,14 +65,12 @@ func (r *ApiOpenApi2ToolsDiagnosisSuggestionGetGetRequest) WithLog(enable bool) 
 OpenApi2ToolsDiagnosisSuggestionGetGet Method for OpenApi2ToolsDiagnosisSuggestionGetGet
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param version request version
 	@return ApiOpenApi2ToolsDiagnosisSuggestionGetGetRequest
 */
-func (a *ToolsDiagnosisSuggestionGetV2ApiService) Get(ctx context.Context, version string) *ApiOpenApi2ToolsDiagnosisSuggestionGetGetRequest {
+func (a *ToolsDiagnosisSuggestionGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2ToolsDiagnosisSuggestionGetGetRequest {
 	return &ApiOpenApi2ToolsDiagnosisSuggestionGetGetRequest{
 		ApiService: a,
 		ctx:        ctx,
-		version:    version,
 	}
 }
 
@@ -94,7 +90,6 @@ func (a *ToolsDiagnosisSuggestionGetV2ApiService) getExecute(r *ApiOpenApi2Tools
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/tools/diagnosis/suggestion/get/"
-	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

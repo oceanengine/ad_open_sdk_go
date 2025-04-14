@@ -14,7 +14,6 @@ import (
 	"context"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -27,7 +26,6 @@ type ApiOpenApiV10EnterpriseInfoGetRequest struct {
 	ctx        context.Context
 	ApiService *EnterpriseInfoV10ApiService
 	eDouyinIds *[]string
-	version    string
 }
 
 func (r *ApiOpenApiV10EnterpriseInfoGetRequest) EDouyinIds(eDouyinIds []string) *ApiOpenApiV10EnterpriseInfoGetRequest {
@@ -55,14 +53,12 @@ func (r *ApiOpenApiV10EnterpriseInfoGetRequest) WithLog(enable bool) *ApiOpenApi
 OpenApiV10EnterpriseInfoGet Method for OpenApiV10EnterpriseInfoGet
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param version request version
 	@return ApiOpenApiV10EnterpriseInfoGetRequest
 */
-func (a *EnterpriseInfoV10ApiService) Get(ctx context.Context, version string) *ApiOpenApiV10EnterpriseInfoGetRequest {
+func (a *EnterpriseInfoV10ApiService) Get(ctx context.Context) *ApiOpenApiV10EnterpriseInfoGetRequest {
 	return &ApiOpenApiV10EnterpriseInfoGetRequest{
 		ApiService: a,
 		ctx:        ctx,
-		version:    version,
 	}
 }
 
@@ -82,7 +78,6 @@ func (a *EnterpriseInfoV10ApiService) getExecute(r *ApiOpenApiV10EnterpriseInfoG
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/v1.0/enterprise/info/"
-	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

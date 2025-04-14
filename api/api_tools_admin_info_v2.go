@@ -29,7 +29,6 @@ type ApiOpenApi2ToolsAdminInfoGetRequest struct {
 	codes        *[]string
 	language     *ToolsAdminInfoV2Language
 	subDistrict  *ToolsAdminInfoV2SubDistrict
-	version      *ToolsAdminInfoV2Version
 }
 
 // 广告主id
@@ -53,12 +52,6 @@ func (r *ApiOpenApi2ToolsAdminInfoGetRequest) Language(language ToolsAdminInfoV2
 // 行政区域层级。&lt;br&gt;&#x60;NONE&#x60; 当前层级&lt;br&gt;&#x60;ONE_LEVEL&#x60;下一级区域&lt;br&gt;&#x60;TWO_LEVEL&#x60;下二级区域&lt;br&gt;&#x60;THREE_LEVEL&#x60;下三级区域&lt;br&gt;&#x60;FOUR_LEVEL&#x60;下四级区域
 func (r *ApiOpenApi2ToolsAdminInfoGetRequest) SubDistrict(subDistrict ToolsAdminInfoV2SubDistrict) *ApiOpenApi2ToolsAdminInfoGetRequest {
 	r.subDistrict = &subDistrict
-	return r
-}
-
-// 行政区划版本
-func (r *ApiOpenApi2ToolsAdminInfoGetRequest) Version(version ToolsAdminInfoV2Version) *ApiOpenApi2ToolsAdminInfoGetRequest {
-	r.version = &version
 	return r
 }
 
@@ -132,9 +125,6 @@ func (a *ToolsAdminInfoV2ApiService) getExecute(r *ApiOpenApi2ToolsAdminInfoGetR
 	parameterAddToHeaderOrQuery(localVarQueryParams, "codes", r.codes)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "language", r.language)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "sub_district", r.subDistrict)
-	if r.version != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "version", r.version)
-	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

@@ -24,7 +24,6 @@ import (
 
 type ApiOpenApi2ClueSmartphoneRecordGetRequestExample struct {
 	AdvertiserId int64   `json:"advertiser_id"`
-	Version      string  `json:"version"`
 	InstanceIds  []int64 `json:"instance_ids,omitempty"`
 	ClueIds      []int64 `json:"clue_ids,omitempty"`
 	SiteIds      []int64 `json:"site_ids,omitempty"`
@@ -52,9 +51,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.ClueSmartphoneRecordV2Api().
-		Get(ctx, version).
+		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Version(request.Version).InstanceIds(request.InstanceIds).ClueIds(request.ClueIds).SiteIds(request.SiteIds).AdIds(request.AdIds).StartTime(request.StartTime).EndTime(request.EndTime).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).InstanceIds(request.InstanceIds).ClueIds(request.ClueIds).SiteIds(request.SiteIds).AdIds(request.AdIds).StartTime(request.StartTime).EndTime(request.EndTime).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

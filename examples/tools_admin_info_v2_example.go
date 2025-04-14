@@ -27,7 +27,6 @@ type ApiOpenApi2ToolsAdminInfoGetRequestExample struct {
 	Codes        []string                    `json:"codes"`
 	Language     ToolsAdminInfoV2Language    `json:"language"`
 	SubDistrict  ToolsAdminInfoV2SubDistrict `json:"sub_district"`
-	Version      ToolsAdminInfoV2Version     `json:"version,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/admin/info/ Get
@@ -49,7 +48,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsAdminInfoV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Codes(request.Codes).Language(request.Language).SubDistrict(request.SubDistrict).Version(request.Version).
+		AdvertiserId(request.AdvertiserId).Codes(request.Codes).Language(request.Language).SubDistrict(request.SubDistrict).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)
