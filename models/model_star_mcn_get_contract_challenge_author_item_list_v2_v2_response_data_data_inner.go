@@ -28,6 +28,8 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner struct {
 	ClueCnt *int64 `json:"clue_cnt,omitempty"`
 	// 作品封面url（有效期1小时）
 	CoverUrl *string `json:"cover_url,omitempty"`
+	// 创建时间
+	CreateTime *int32 `json:"create_time,omitempty"`
 	//
 	DemandId int64 `json:"demand_id"`
 	//

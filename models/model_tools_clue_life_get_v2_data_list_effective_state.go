@@ -22,6 +22,7 @@ const (
 	Enum_6_ToolsClueLifeGetV2DataListEffectiveState   ToolsClueLifeGetV2DataListEffectiveState = 6
 	Enum_7_ToolsClueLifeGetV2DataListEffectiveState   ToolsClueLifeGetV2DataListEffectiveState = 7
 	Enum_204_ToolsClueLifeGetV2DataListEffectiveState ToolsClueLifeGetV2DataListEffectiveState = 204
+	Enum_901_ToolsClueLifeGetV2DataListEffectiveState ToolsClueLifeGetV2DataListEffectiveState = 901
 )
 
 // Ptr returns reference to tools_clue_life_get_v2_data_list_effective_state value

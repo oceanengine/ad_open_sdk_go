@@ -21,6 +21,11 @@ const (
 	DOUYIN_CONTENT_PLANT_GRASS_AD_SEARCHD_IMAGE_BrandMaterialCreateV30MaterialListCreativeTemplate  BrandMaterialCreateV30MaterialListCreativeTemplate = "DouyinContentPlantGrassAdSearchdImage"
 	DOUYIN_CONTENT_PLANT_GRASS_NORMAL_BrandMaterialCreateV30MaterialListCreativeTemplate            BrandMaterialCreateV30MaterialListCreativeTemplate = "DouyinContentPlantGrassNormal"
 	DOUYIN_CONTENT_PLANT_GRASS_SEARCH_BrandMaterialCreateV30MaterialListCreativeTemplate            BrandMaterialCreateV30MaterialListCreativeTemplate = "DouyinContentPlantGrassSearch"
+	DOUYIN_CONTENT_PLANT_GRASS_TEST_OFFLINE_BrandMaterialCreateV30MaterialListCreativeTemplate      BrandMaterialCreateV30MaterialListCreativeTemplate = "DouyinContentPlantGrassTestOffline"
+	DOUYIN_FEED_EXTERNAL_CARD_BrandMaterialCreateV30MaterialListCreativeTemplate                    BrandMaterialCreateV30MaterialListCreativeTemplate = "DouyinFeedExternalCard"
+	DOUYIN_FEED_EXTERNAL_NORMAL_BrandMaterialCreateV30MaterialListCreativeTemplate                  BrandMaterialCreateV30MaterialListCreativeTemplate = "DouyinFeedExternalNormal"
+	DOUYIN_FEED_NATIVE_CARD_BrandMaterialCreateV30MaterialListCreativeTemplate                      BrandMaterialCreateV30MaterialListCreativeTemplate = "DouyinFeedNativeCard"
+	DOUYIN_FEED_NATIVE_NORMAL_BrandMaterialCreateV30MaterialListCreativeTemplate                    BrandMaterialCreateV30MaterialListCreativeTemplate = "DouyinFeedNativeNormal"
 )
 
 // Ptr returns reference to brand_material_create_v3.0_material_list_creative_template value

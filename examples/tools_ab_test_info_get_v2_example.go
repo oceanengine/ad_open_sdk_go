@@ -23,8 +23,9 @@ import (
 )
 
 type ApiOpenApi2ToolsAbTestInfoGetGetRequestExample struct {
-	AdvertiserId int64 `json:"advertiser_id"`
-	TestId       int64 `json:"test_id"`
+	AdvertiserId int64  `json:"advertiser_id"`
+	TestId       int64  `json:"test_id"`
+	Version      string `json:"version"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/ab_test_info/get/ Get
@@ -44,9 +45,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.ToolsAbTestInfoGetV2Api().
-		Get(ctx).
+		Get(ctx, version).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).TestId(request.TestId).
+		AdvertiserId(request.AdvertiserId).TestId(request.TestId).Version(request.Version).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

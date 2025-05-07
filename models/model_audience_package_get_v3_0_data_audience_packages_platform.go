@@ -16,6 +16,7 @@ type AudiencePackageGetV30DataAudiencePackagesPlatform string
 // List of audience_package_get_v3.0_data_audience_packages_platform
 const (
 	ANDROID_AudiencePackageGetV30DataAudiencePackagesPlatform AudiencePackageGetV30DataAudiencePackagesPlatform = "ANDROID"
+	HARMONY_AudiencePackageGetV30DataAudiencePackagesPlatform AudiencePackageGetV30DataAudiencePackagesPlatform = "HARMONY"
 	IOS_AudiencePackageGetV30DataAudiencePackagesPlatform     AudiencePackageGetV30DataAudiencePackagesPlatform = "IOS"
 	IPAD_AudiencePackageGetV30DataAudiencePackagesPlatform    AudiencePackageGetV30DataAudiencePackagesPlatform = "IPAD"
 	NONE_AudiencePackageGetV30DataAudiencePackagesPlatform    AudiencePackageGetV30DataAudiencePackagesPlatform = "NONE"

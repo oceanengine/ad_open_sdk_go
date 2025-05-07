@@ -33,7 +33,11 @@ type StarMcnProviderGetUnparticipatedTaskV2ResponseDataDataInner struct {
 	//
 	ExpirationTimeEnd *string `json:"expiration_time_end,omitempty"`
 	//
+	FirstCategoryId *int64 `json:"first_category_id,omitempty"`
+	//
 	FirstClassCategory *int64 `json:"first_class_category,omitempty"`
+	//
+	ParticipateCope *int64 `json:"participate_cope,omitempty"`
 	//
 	PayType *int64 `json:"pay_type,omitempty"`
 	// 任务单价 CPM CPA
@@ -43,4 +47,6 @@ type StarMcnProviderGetUnparticipatedTaskV2ResponseDataDataInner struct {
 	//
 	SecondClassCategory *int64                                                                   `json:"second_class_category,omitempty"`
 	SmallAppInfo        *StarMcnProviderGetUnparticipatedTaskV2ResponseDataDataInnerSmallAppInfo `json:"small_app_info,omitempty"`
+	//
+	TaskSupportAd *bool `json:"task_support_ad,omitempty"`
 }

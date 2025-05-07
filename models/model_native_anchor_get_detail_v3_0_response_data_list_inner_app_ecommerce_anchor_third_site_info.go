@@ -17,5 +17,7 @@ type NativeAnchorGetDetailV30ResponseDataListInnerAppEcommerceAnchorThirdSiteInf
 	//
 	ExternalUrl *string `json:"external_url,omitempty"`
 	//
+	HarmonyDownloadUrl *string `json:"harmony_download_url,omitempty"`
+	//
 	IosDownloadUrl *string `json:"ios_download_url,omitempty"`
 }

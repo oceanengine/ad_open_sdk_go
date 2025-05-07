@@ -15,13 +15,14 @@ type ToolsClueLifeGetV2DataListEffectiveStateName string
 
 // List of tools_clue_life_get_v2_data_list_effective_state_name
 const (
-	NOT_MARKED_ToolsClueLifeGetV2DataListEffectiveStateName    ToolsClueLifeGetV2DataListEffectiveStateName = "NOT_MARKED"
-	NEED_CALLBACK_ToolsClueLifeGetV2DataListEffectiveStateName ToolsClueLifeGetV2DataListEffectiveStateName = "NEED_CALLBACK"
-	CONVERTED_ToolsClueLifeGetV2DataListEffectiveStateName     ToolsClueLifeGetV2DataListEffectiveStateName = "CONVERTED"
-	INVALID_ToolsClueLifeGetV2DataListEffectiveStateName       ToolsClueLifeGetV2DataListEffectiveStateName = "INVALID"
-	ADD_WEIXIN_ToolsClueLifeGetV2DataListEffectiveStateName    ToolsClueLifeGetV2DataListEffectiveStateName = "ADD_WEIXIN"
-	WAIT_CONNECT_ToolsClueLifeGetV2DataListEffectiveStateName  ToolsClueLifeGetV2DataListEffectiveStateName = "WAIT_CONNECT"
-	ARRIVE_STORE_ToolsClueLifeGetV2DataListEffectiveStateName  ToolsClueLifeGetV2DataListEffectiveStateName = "ARRIVE_STORE"
+	NOT_MARKED_ToolsClueLifeGetV2DataListEffectiveStateName      ToolsClueLifeGetV2DataListEffectiveStateName = "NOT_MARKED"
+	NEED_CALLBACK_ToolsClueLifeGetV2DataListEffectiveStateName   ToolsClueLifeGetV2DataListEffectiveStateName = "NEED_CALLBACK"
+	CONVERTED_ToolsClueLifeGetV2DataListEffectiveStateName       ToolsClueLifeGetV2DataListEffectiveStateName = "CONVERTED"
+	INVALID_ToolsClueLifeGetV2DataListEffectiveStateName         ToolsClueLifeGetV2DataListEffectiveStateName = "INVALID"
+	ADD_WEIXIN_ToolsClueLifeGetV2DataListEffectiveStateName      ToolsClueLifeGetV2DataListEffectiveStateName = "ADD_WEIXIN"
+	WAIT_CONNECT_ToolsClueLifeGetV2DataListEffectiveStateName    ToolsClueLifeGetV2DataListEffectiveStateName = "WAIT_CONNECT"
+	ARRIVE_STORE_ToolsClueLifeGetV2DataListEffectiveStateName    ToolsClueLifeGetV2DataListEffectiveStateName = "ARRIVE_STORE"
+	PREPAID_DEPOSIT_ToolsClueLifeGetV2DataListEffectiveStateName ToolsClueLifeGetV2DataListEffectiveStateName = "PREPAID_DEPOSIT"
 )
 
 // Ptr returns reference to tools_clue_life_get_v2_data_list_effective_state_name value

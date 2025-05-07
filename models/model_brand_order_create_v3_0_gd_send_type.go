@@ -15,12 +15,15 @@ type BrandOrderCreateV30GdSendType string
 
 // List of brand_order_create_v3.0_gd_send_type
 const (
-	CTR_BrandOrderCreateV30GdSendType         BrandOrderCreateV30GdSendType = "CTR"
-	FANS_INCR_BrandOrderCreateV30GdSendType   BrandOrderCreateV30GdSendType = "FANS_INCR"
-	FORM_BrandOrderCreateV30GdSendType        BrandOrderCreateV30GdSendType = "FORM"
-	HOISTING_BrandOrderCreateV30GdSendType    BrandOrderCreateV30GdSendType = "HOISTING"
-	INTERACTIVE_BrandOrderCreateV30GdSendType BrandOrderCreateV30GdSendType = "INTERACTIVE"
-	PLANT_GRASS_BrandOrderCreateV30GdSendType BrandOrderCreateV30GdSendType = "PLANT_GRASS"
+	CPV_EFFECTIVE_BrandOrderCreateV30GdSendType BrandOrderCreateV30GdSendType = "CPV_EFFECTIVE"
+	CTR_BrandOrderCreateV30GdSendType           BrandOrderCreateV30GdSendType = "CTR"
+	FANS_INCR_BrandOrderCreateV30GdSendType     BrandOrderCreateV30GdSendType = "FANS_INCR"
+	FORM_BrandOrderCreateV30GdSendType          BrandOrderCreateV30GdSendType = "FORM"
+	HOISTING_BrandOrderCreateV30GdSendType      BrandOrderCreateV30GdSendType = "HOISTING"
+	INTERACTIVE_BrandOrderCreateV30GdSendType   BrandOrderCreateV30GdSendType = "INTERACTIVE"
+	PLANT_GRASS_BrandOrderCreateV30GdSendType   BrandOrderCreateV30GdSendType = "PLANT_GRASS"
+	REACH_BrandOrderCreateV30GdSendType         BrandOrderCreateV30GdSendType = "REACH"
+	SEQUENCE_BrandOrderCreateV30GdSendType      BrandOrderCreateV30GdSendType = "SEQUENCE"
 )
 
 // Ptr returns reference to brand_order_create_v3.0_gd_send_type value

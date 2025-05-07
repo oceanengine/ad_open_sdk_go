@@ -18,5 +18,7 @@ type SecurityOpenMaterialAuditV30Request struct {
 	// 素材内容，视频-vid
 	Data    string                              `json:"data"`
 	MsgType SecurityOpenMaterialAuditV30MsgType `json:"msg_type"`
-	Type    SecurityOpenMaterialAuditV30Type    `json:"type"`
+	// 需要取消送审的对象ID（由送审接口返回的object_id），送审时不填
+	ObjectId *int64                           `json:"object_id,omitempty"`
+	Type     SecurityOpenMaterialAuditV30Type `json:"type"`
 }

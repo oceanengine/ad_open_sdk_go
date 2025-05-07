@@ -26,6 +26,7 @@ type ApiOpenApi2ToolsDiagnosisSuggestionGetGetRequestExample struct {
 	AdIds        []int64                                `json:"ad_ids"`
 	Scenes       []*ToolsDiagnosisSuggestionGetV2Scenes `json:"scenes"`
 	AdvertiserId int64                                  `json:"advertiser_id"`
+	Version      string                                 `json:"version"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/diagnosis/suggestion/get/ Get
@@ -45,9 +46,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.ToolsDiagnosisSuggestionGetV2Api().
-		Get(ctx).
+		Get(ctx, version).
 		AccessToken(accessToken).
-		AdIds(request.AdIds).Scenes(request.Scenes).AdvertiserId(request.AdvertiserId).
+		AdIds(request.AdIds).Scenes(request.Scenes).AdvertiserId(request.AdvertiserId).Version(request.Version).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

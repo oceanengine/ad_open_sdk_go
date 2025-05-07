@@ -14,6 +14,7 @@ import (
 	"context"
 	"net/http"
 	"net/url"
+	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -25,6 +26,7 @@ type ToolsAppManagementAndroidBasicPackagePublishV2ApiService service
 type ApiOpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest struct {
 	ctx                                                   context.Context
 	ApiService                                            *ToolsAppManagementAndroidBasicPackagePublishV2ApiService
+	version                                               string
 	toolsAppManagementAndroidBasicPackagePublishV2Request *ToolsAppManagementAndroidBasicPackagePublishV2Request
 }
 
@@ -53,12 +55,14 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest) Wit
 OpenApi2ToolsAppManagementAndroidBasicPackagePublishPost Method for OpenApi2ToolsAppManagementAndroidBasicPackagePublishPost
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+	@param version request version
 	@return ApiOpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest
 */
-func (a *ToolsAppManagementAndroidBasicPackagePublishV2ApiService) Post(ctx context.Context) *ApiOpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest {
+func (a *ToolsAppManagementAndroidBasicPackagePublishV2ApiService) Post(ctx context.Context, version string) *ApiOpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest {
 	return &ApiOpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest{
 		ApiService: a,
 		ctx:        ctx,
+		version:    version,
 	}
 }
 
@@ -78,6 +82,7 @@ func (a *ToolsAppManagementAndroidBasicPackagePublishV2ApiService) postExecute(r
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/android_basic_package/publish/"
+	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

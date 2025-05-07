@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentAwemeShopHomePage 抖音小店主页
+// BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentAwemeShopHomePage 抖音小店主页组件
 type BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentAwemeShopHomePage struct {
 	// 抖音小店账号ID
 	AwemeShopId *string `json:"aweme_shop_id,omitempty"`

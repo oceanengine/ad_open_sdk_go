@@ -24,6 +24,7 @@ import (
 
 type ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequestExample struct {
 	OrganizationId int64                                              `json:"organization_id"`
+	Version        string                                             `json:"version"`
 	Page           int32                                              `json:"page,omitempty"`
 	PageSize       int32                                              `json:"page_size,omitempty"`
 	Filtering      BusinessPlatformPartnerOrganizationListV2Filtering `json:"filtering,omitempty"`
@@ -46,9 +47,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.BusinessPlatformPartnerOrganizationListV2Api().
-		Get(ctx).
+		Get(ctx, version).
 		AccessToken(accessToken).
-		OrganizationId(request.OrganizationId).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).
+		OrganizationId(request.OrganizationId).Version(request.Version).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

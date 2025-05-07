@@ -29,6 +29,10 @@ type NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchor struct {
 	//
 	GuideText *string `json:"guide_text,omitempty"`
 	//
+	HarmonyAnchorTitle *string `json:"harmony_anchor_title,omitempty"`
+	//
+	HarmonyDownloadUrl *string `json:"harmony_download_url,omitempty"`
+	//
 	HeadImageList []*NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchorHeadImageListInner `json:"head_image_list,omitempty"`
 	//
 	IconImages []*NativeAnchorGetDetailV30ResponseDataListInnerNetServiceAnchorIconImagesInner `json:"icon_images,omitempty"`

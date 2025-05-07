@@ -61,6 +61,7 @@ type ProjectCreateV30RequestAudience struct {
 	Gender      *ProjectCreateV30AudienceGender `json:"gender,omitempty"`
 	//
 	Geolocation        []*ProjectCreateV30RequestAudienceGeolocationInner `json:"geolocation,omitempty"`
+	HarmonyOsv         *ProjectCreateV30AudienceHarmonyOsv                `json:"harmony_osv,omitempty"`
 	HideIfConverted    *ProjectCreateV30AudienceHideIfConverted           `json:"hide_if_converted,omitempty"`
 	HideIfExists       *ProjectCreateV30AudienceHideIfExists              `json:"hide_if_exists,omitempty"`
 	InterestActionMode *ProjectCreateV30AudienceInterestActionMode        `json:"interest_action_mode,omitempty"`

@@ -17,7 +17,8 @@ type BrandOrderUpdateV30Request struct {
 	AudienceInfo        *BrandOrderUpdateV30RequestAudienceInfo        `json:"audience_info,omitempty"`
 	BookingQuantityInfo *BrandOrderUpdateV30RequestBookingQuantityInfo `json:"booking_quantity_info,omitempty"`
 	// 总预算
-	Budget *int64 `json:"budget,omitempty"`
+	Budget        *int64                                   `json:"budget,omitempty"`
+	FrequencyInfo *BrandOrderUpdateV30RequestFrequencyInfo `json:"frequency_info,omitempty"`
 	// 招商订单编号，传空字符串表示不启用招商意向单
 	IntentionNo *string `json:"intention_no,omitempty"`
 	// 预定单ID

@@ -15,7 +15,10 @@ type BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentCommonExtern
 	//
 	ExternalUrl *string `json:"external_url,omitempty"`
 	//
-	ExternalUrlIsDownload *int64 `json:"external_url_is_download,omitempty"`
+	ExternalUrlIsDownload *int64                                                                                     `json:"external_url_is_download,omitempty"`
+	MicroAppInfo          *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentCommonExternalMicroAppInfo `json:"micro_app_info,omitempty"`
+	MicroAppOpenUrlType   *BrandMaterialCreateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType      `json:"micro_app_open_url_type,omitempty"`
 	//
-	OpenUrl *string `json:"open_url,omitempty"`
+	OpenUrl            *string                                                                                          `json:"open_url,omitempty"`
+	WechatMicroAppInfo *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentCommonExternalWechatMicroAppInfo `json:"wechat_micro_app_info,omitempty"`
 }

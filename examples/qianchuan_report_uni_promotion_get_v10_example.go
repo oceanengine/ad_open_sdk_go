@@ -26,8 +26,9 @@ type ApiOpenApiV10QianchuanReportUniPromotionGetGetRequestExample struct {
 	AdvertiserId  int64                                          `json:"advertiser_id"`
 	StartDate     string                                         `json:"start_date"`
 	EndDate       string                                         `json:"end_date"`
-	MarketingGoal QianchuanReportUniPromotionGetV10MarketingGoal `json:"marketing_goal"`
 	Fields        []string                                       `json:"fields"`
+	MarketingGoal QianchuanReportUniPromotionGetV10MarketingGoal `json:"marketing_goal,omitempty"`
+	OrderPlatform QianchuanReportUniPromotionGetV10OrderPlatform `json:"order_platform,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/qianchuan/report/uni_promotion/get/ Get
@@ -49,7 +50,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanReportUniPromotionGetV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).StartDate(request.StartDate).EndDate(request.EndDate).MarketingGoal(request.MarketingGoal).Fields(request.Fields).
+		AdvertiserId(request.AdvertiserId).StartDate(request.StartDate).EndDate(request.EndDate).Fields(request.Fields).MarketingGoal(request.MarketingGoal).OrderPlatform(request.OrderPlatform).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

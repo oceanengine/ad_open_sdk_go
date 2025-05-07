@@ -12,13 +12,15 @@ package models
 
 // BrandMaterialCreateV30Request struct for BrandMaterialCreateV30Request
 type BrandMaterialCreateV30Request struct {
-	//
+	// 广告主ID
 	AdvertiserId        *int64                                     `json:"advertiser_id,omitempty"`
 	CategoryInfo        BrandMaterialCreateV30RequestCategoryInfo  `json:"category_info"`
+	ContentType         *BrandMaterialCreateV30ContentType         `json:"content_type,omitempty"`
 	CreativeDisplayMode *BrandMaterialCreateV30CreativeDisplayMode `json:"creative_display_mode,omitempty"`
-	//
+	Lbs                 *BrandMaterialCreateV30RequestLbs          `json:"lbs,omitempty"`
+	// 创意详细信息
 	MaterialList []*BrandMaterialCreateV30RequestMaterialListInner `json:"material_list"`
-	//
+	// 预定单ID
 	OrderId      int64                                      `json:"order_id"`
 	TrackUrlInfo *BrandMaterialCreateV30RequestTrackUrlInfo `json:"track_url_info,omitempty"`
 }

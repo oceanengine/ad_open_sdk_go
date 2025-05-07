@@ -13,5 +13,5 @@ package models
 // BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentDeliveryTimeList
 type BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentDeliveryTimeList struct {
 	// eg: [\"2006-01-02\"] 可以跨天填写
-	DayList []string `json:"day_list"`
+	DayList []string `json:"day_list,omitempty"`
 }

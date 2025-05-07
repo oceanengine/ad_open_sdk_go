@@ -23,7 +23,8 @@ import (
 )
 
 type ApiOpenApi2DmpBrandGetGetRequestExample struct {
-	AdvertiserId int64 `json:"advertiser_id,omitempty"`
+	Version      string `json:"version"`
+	AdvertiserId int64  `json:"advertiser_id,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/dmp/brand/get/ Get
@@ -43,9 +44,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.DmpBrandGetV2Api().
-		Get(ctx).
+		Get(ctx, version).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).
+		Version(request.Version).AdvertiserId(request.AdvertiserId).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -24,6 +24,7 @@ import (
 
 type ApiOpenApiV10QianchuanShopGetGetRequestExample struct {
 	ShopIds []int64 `json:"shop_ids"`
+	Version string  `json:"version"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/qianchuan/shop/get/ Get
@@ -43,9 +44,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.QianchuanShopGetV10Api().
-		Get(ctx).
+		Get(ctx, version).
 		AccessToken(accessToken).
-		ShopIds(request.ShopIds).
+		ShopIds(request.ShopIds).Version(request.Version).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

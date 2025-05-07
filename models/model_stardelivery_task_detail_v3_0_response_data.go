@@ -15,7 +15,9 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	// 任务内推广的Android应用包名
 	AndroidAppPackageName *string `json:"android_app_package_name,omitempty"`
 	// 任务内推广的Android应用链接
-	AndroidDownloadUrl *string                                                `json:"android_download_url,omitempty"`
+	AndroidDownloadUrl *string `json:"android_download_url,omitempty"`
+	// 任务内Android落地页，橙子落地页，仅1个
+	AndroidExternalUrl *string                                                `json:"android_external_url,omitempty"`
 	AudienceSettings   *StardeliveryTaskDetailV30ResponseDataAudienceSettings `json:"audience_settings,omitempty"`
 	//
 	AuthorSubmitFrequency *int32 `json:"author_submit_frequency,omitempty"`
@@ -30,6 +32,8 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	IosAppPackageName *string `json:"ios_app_package_name,omitempty"`
 	// 任务内推广的iOS应用链接
 	IosDownloadUrl *string `json:"ios_download_url,omitempty"`
+	// 任务内iOS落地页，橙子落地页，仅1个
+	IosExternalUrl *string `json:"ios_external_url,omitempty"`
 	// 任务所选锚点关联的小程序/小游戏appid
 	MicroAppId *string `json:"micro_app_id,omitempty"`
 	// 字节小程序链接，创建任务时填写的链接，未设置时不会返回
@@ -76,7 +80,9 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	StarTaskCreateTime     *string                                              `json:"star_task_create_time,omitempty"`
 	StarTaskExternalAction *StardeliveryTaskDetailV30DataStarTaskExternalAction `json:"star_task_external_action,omitempty"`
 	// 星广联投任务ID
-	StarTaskId                     *int64                                                              `json:"star_task_id,omitempty"`
+	StarTaskId *int64 `json:"star_task_id,omitempty"`
+	// 任务内介绍文案
+	StarTaskIntroductionText       *string                                                             `json:"star_task_introduction_text,omitempty"`
 	StarTaskMaterialPurchaseMethod *StardeliveryTaskDetailV30DataStarTaskMaterialPurchaseMethod        `json:"star_task_material_purchase_method,omitempty"`
 	StarTaskMaterialsRequirements  *StardeliveryTaskDetailV30ResponseDataStarTaskMaterialsRequirements `json:"star_task_materials_requirements,omitempty"`
 	// 星广联投任务名称

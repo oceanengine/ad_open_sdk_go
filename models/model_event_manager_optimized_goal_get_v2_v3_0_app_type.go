@@ -17,6 +17,7 @@ type EventManagerOptimizedGoalGetV2V30AppType string
 const (
 	ANDROID_EventManagerOptimizedGoalGetV2V30AppType EventManagerOptimizedGoalGetV2V30AppType = "ANDROID"
 	DEFAULT_EventManagerOptimizedGoalGetV2V30AppType EventManagerOptimizedGoalGetV2V30AppType = "DEFAULT"
+	HARMONY_EventManagerOptimizedGoalGetV2V30AppType EventManagerOptimizedGoalGetV2V30AppType = "HARMONY"
 	IOS_EventManagerOptimizedGoalGetV2V30AppType     EventManagerOptimizedGoalGetV2V30AppType = "IOS"
 )
 

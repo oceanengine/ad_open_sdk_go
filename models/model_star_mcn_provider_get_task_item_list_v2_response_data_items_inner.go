@@ -12,6 +12,7 @@ package models
 
 // StarMcnProviderGetTaskItemListV2ResponseDataItemsInner struct for StarMcnProviderGetTaskItemListV2ResponseDataItemsInner
 type StarMcnProviderGetTaskItemListV2ResponseDataItemsInner struct {
+	ExtraItemInfo       *StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerExtraItemInfo       `json:"extra_item_info,omitempty"`
 	ItemInfo            StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfo             `json:"item_info"`
 	StarAdUniteItemInfo *StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerStarAdUniteItemInfo `json:"star_ad_unite_item_info,omitempty"`
 }

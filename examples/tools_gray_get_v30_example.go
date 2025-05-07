@@ -23,8 +23,9 @@ import (
 )
 
 type ApiOpenApiV30ToolsGrayGetGetRequestExample struct {
-	AdvertiserId int64    `json:"advertiser_id"`
-	GrayKeys     []string `json:"gray_keys"`
+	AdvertiserId int64                  `json:"advertiser_id"`
+	GrayKeys     []string               `json:"gray_keys"`
+	Version      ToolsGrayGetV30Version `json:"version,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/gray/get/ Get
@@ -46,7 +47,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsGrayGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).GrayKeys(request.GrayKeys).
+		AdvertiserId(request.AdvertiserId).GrayKeys(request.GrayKeys).Version(request.Version).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

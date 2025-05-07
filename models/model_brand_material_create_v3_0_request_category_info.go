@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialCreateV30RequestCategoryInfo
+// BrandMaterialCreateV30RequestCategoryInfo 创意分类和标签
 type BrandMaterialCreateV30RequestCategoryInfo struct {
 	// 广告标签，选填
 	AdKeywords []string `json:"ad_keywords,omitempty"`

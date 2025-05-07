@@ -12,5 +12,6 @@ package models
 
 // QianchuanReportUniPromotionDimensionDataAuthorGetV10Filtering
 type QianchuanReportUniPromotionDimensionDataAuthorGetV10Filtering struct {
-	SmartBidType *QianchuanReportUniPromotionDimensionDataAuthorGetV10FilteringSmartBidType `json:"smart_bid_type,omitempty"`
+	OrderPlatform *QianchuanReportUniPromotionDimensionDataAuthorGetV10FilteringOrderPlatform `json:"order_platform,omitempty"`
+	SmartBidType  *QianchuanReportUniPromotionDimensionDataAuthorGetV10FilteringSmartBidType  `json:"smart_bid_type,omitempty"`
 }

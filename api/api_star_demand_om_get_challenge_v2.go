@@ -27,7 +27,6 @@ type ApiOpenApi2StarDemandOmGetChallengeGetRequest struct {
 	ApiService      *StarDemandOmGetChallengeV2ApiService
 	starId          *int64
 	challengeTaskId *int64
-	developerId     *int64
 }
 
 // 客户星图ID
@@ -39,11 +38,6 @@ func (r *ApiOpenApi2StarDemandOmGetChallengeGetRequest) StarId(starId int64) *Ap
 // 任务ID
 func (r *ApiOpenApi2StarDemandOmGetChallengeGetRequest) ChallengeTaskId(challengeTaskId int64) *ApiOpenApi2StarDemandOmGetChallengeGetRequest {
 	r.challengeTaskId = &challengeTaskId
-	return r
-}
-
-func (r *ApiOpenApi2StarDemandOmGetChallengeGetRequest) DeveloperId(developerId int64) *ApiOpenApi2StarDemandOmGetChallengeGetRequest {
-	r.developerId = &developerId
 	return r
 }
 
@@ -106,9 +100,6 @@ func (a *StarDemandOmGetChallengeV2ApiService) getExecute(r *ApiOpenApi2StarDema
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "star_id", r.starId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "challenge_task_id", r.challengeTaskId)
-	if r.developerId != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "developer_id", r.developerId)
-	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

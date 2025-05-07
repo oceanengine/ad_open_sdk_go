@@ -16,6 +16,7 @@ type ProjectListV30FilteringPlatform string
 // List of project_list_v3.0_filtering_platform
 const (
 	ANDROID_ProjectListV30FilteringPlatform ProjectListV30FilteringPlatform = "ANDROID"
+	HARMONY_ProjectListV30FilteringPlatform ProjectListV30FilteringPlatform = "HARMONY"
 	IOS_ProjectListV30FilteringPlatform     ProjectListV30FilteringPlatform = "IOS"
 )
 

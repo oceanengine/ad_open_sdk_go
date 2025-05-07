@@ -42,5 +42,6 @@ type ProjectUpdateV30Request struct {
 	SearchBidRatio  *float64                                `json:"search_bid_ratio,omitempty"`
 	TrackUrlSetting *ProjectUpdateV30RequestTrackUrlSetting `json:"track_url_setting,omitempty"`
 	//
-	UlinkUrl *string `json:"ulink_url,omitempty"`
+	UlinkUrl     *string                       `json:"ulink_url,omitempty"`
+	UlinkUrlType *ProjectUpdateV30UlinkUrlType `json:"ulink_url_type,omitempty"`
 }

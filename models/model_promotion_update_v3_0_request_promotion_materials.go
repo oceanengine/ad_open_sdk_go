@@ -53,7 +53,8 @@ type PromotionUpdateV30RequestPromotionMaterials struct {
 	//
 	TitleMaterialList []*PromotionUpdateV30RequestPromotionMaterialsTitleMaterialListInner `json:"title_material_list,omitempty"`
 	//
-	Ulink *string `json:"ulink,omitempty"`
+	Ulink     *string                                        `json:"ulink,omitempty"`
+	UlinkType *PromotionUpdateV30PromotionMaterialsUlinkType `json:"ulink_type,omitempty"`
 	//
 	VideoMaterialList []*PromotionUpdateV30RequestPromotionMaterialsVideoMaterialListInner `json:"video_material_list,omitempty"`
 	//

@@ -15,11 +15,11 @@ type ReportAdvertiserGetV2DataListPricing string
 
 // List of report_advertiser_get_v2_data_list_pricing
 const (
-	PRICING_CPM_ReportAdvertiserGetV2DataListPricing  ReportAdvertiserGetV2DataListPricing = "PRICING_CPM"
 	PRICING_ECPC_ReportAdvertiserGetV2DataListPricing ReportAdvertiserGetV2DataListPricing = "PRICING_ECPC"
-	PRICING_CPC_ReportAdvertiserGetV2DataListPricing  ReportAdvertiserGetV2DataListPricing = "PRICING_CPC"
-	PRICING_CPA_ReportAdvertiserGetV2DataListPricing  ReportAdvertiserGetV2DataListPricing = "PRICING_CPA"
 	PRICING_OCPC_ReportAdvertiserGetV2DataListPricing ReportAdvertiserGetV2DataListPricing = "PRICING_OCPC"
+	PRICING_CPM_ReportAdvertiserGetV2DataListPricing  ReportAdvertiserGetV2DataListPricing = "PRICING_CPM"
+	PRICING_CPA_ReportAdvertiserGetV2DataListPricing  ReportAdvertiserGetV2DataListPricing = "PRICING_CPA"
+	PRICING_CPC_ReportAdvertiserGetV2DataListPricing  ReportAdvertiserGetV2DataListPricing = "PRICING_CPC"
 	PRICING_CPV_ReportAdvertiserGetV2DataListPricing  ReportAdvertiserGetV2DataListPricing = "PRICING_CPV"
 	PRICING_OCPM_ReportAdvertiserGetV2DataListPricing ReportAdvertiserGetV2DataListPricing = "PRICING_OCPM"
 )

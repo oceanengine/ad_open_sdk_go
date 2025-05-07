@@ -30,6 +30,8 @@ type NativeAnchorGetDetailV30ResponseDataListInnerAppEcommerceAnchor struct {
 	// 1-橙子建站 2-第三方落地页
 	ExternalType *int64 `json:"external_type,omitempty"`
 	//
+	HarmonyAnchorTitle *string `json:"harmony_anchor_title,omitempty"`
+	//
 	IosAnchorTitle          *string                                                                                 `json:"ios_anchor_title,omitempty"`
 	OfficialActiBannerImage *NativeAnchorGetDetailV30ResponseDataListInnerAppEcommerceAnchorOfficialActiBannerImage `json:"official_acti_banner_image,omitempty"`
 	//

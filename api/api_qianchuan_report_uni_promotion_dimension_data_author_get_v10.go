@@ -23,19 +23,20 @@ import (
 type QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService service
 
 type ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest struct {
-	ctx          context.Context
-	ApiService   *QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService
-	advertiserId *int64
-	awemeId      *int64
-	metrics      *[]*QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics
-	startTime    *string
-	endTime      *string
-	dimension    *QianchuanReportUniPromotionDimensionDataAuthorGetV10Dimension
-	orderType    *QianchuanReportUniPromotionDimensionDataAuthorGetV10OrderType
-	orderField   *string
-	page         *int32
-	pageSize     *int32
-	filtering    *QianchuanReportUniPromotionDimensionDataAuthorGetV10Filtering
+	ctx           context.Context
+	ApiService    *QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService
+	advertiserId  *int64
+	awemeId       *int64
+	marketingGoal *QianchuanReportUniPromotionDimensionDataAuthorGetV10MarketingGoal
+	metrics       *[]*QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics
+	startTime     *string
+	endTime       *string
+	dimension     *QianchuanReportUniPromotionDimensionDataAuthorGetV10Dimension
+	orderType     *QianchuanReportUniPromotionDimensionDataAuthorGetV10OrderType
+	orderField    *string
+	filtering     *QianchuanReportUniPromotionDimensionDataAuthorGetV10Filtering
+	page          *int32
+	pageSize      *int32
 }
 
 func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
@@ -46,6 +47,11 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetReques
 // 抖音号id
 func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) AwemeId(awemeId int64) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
 	r.awemeId = &awemeId
+	return r
+}
+
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) MarketingGoal(marketingGoal QianchuanReportUniPromotionDimensionDataAuthorGetV10MarketingGoal) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
+	r.marketingGoal = &marketingGoal
 	return r
 }
 
@@ -80,6 +86,12 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetReques
 	return r
 }
 
+// 过滤器
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) Filtering(filtering QianchuanReportUniPromotionDimensionDataAuthorGetV10Filtering) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
+	r.filtering = &filtering
+	return r
+}
+
 // 页码
 func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) Page(page int32) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
 	r.page = &page
@@ -89,12 +101,6 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetReques
 // 页面大小
 func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) PageSize(pageSize int32) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
 	r.pageSize = &pageSize
-	return r
-}
-
-// 过滤器
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) Filtering(filtering QianchuanReportUniPromotionDimensionDataAuthorGetV10Filtering) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
-	r.filtering = &filtering
 	return r
 }
 
@@ -156,6 +162,9 @@ func (a *QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService) getExec
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
+	if r.marketingGoal != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "marketing_goal", r.marketingGoal)
+	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "aweme_id", r.awemeId)
 	if r.metrics != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "metrics", r.metrics)
@@ -175,14 +184,14 @@ func (a *QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService) getExec
 	if r.orderField != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "order_field", r.orderField)
 	}
+	if r.filtering != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	}
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
-	}
-	if r.filtering != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

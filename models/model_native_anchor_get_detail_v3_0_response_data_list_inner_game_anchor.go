@@ -36,6 +36,8 @@ type NativeAnchorGetDetailV30ResponseDataListInnerGameAnchor struct {
 	//
 	GuideText *string `json:"guide_text,omitempty"`
 	//
+	HarmonyDownloadUrl *string `json:"harmony_download_url,omitempty"`
+	//
 	HeadImageList []*NativeAnchorGetDetailV30ResponseDataListInnerGameAnchorHeadImageListInner `json:"head_image_list,omitempty"`
 	//
 	IconImages []*NativeAnchorGetDetailV30ResponseDataListInnerGameAnchorIconImagesInner `json:"icon_images,omitempty"`

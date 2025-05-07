@@ -29,6 +29,8 @@ type QianchuanUniAwemeAuthorizedGetV10ResponseDataAwemeIdListInner struct {
 	//
 	CanControlUniprom *bool `json:"can_control_uniprom,omitempty"`
 	//
+	HasAuthorized *bool `json:"has_authorized,omitempty"`
+	//
 	HasLivePermission *bool `json:"has_live_permission,omitempty"`
 	//
 	HasRoi2DeliveryLimit *bool `json:"has_roi2_delivery_limit,omitempty"`

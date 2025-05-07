@@ -14,6 +14,7 @@ import (
 	"context"
 	"net/http"
 	"net/url"
+	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -25,6 +26,7 @@ type EventManagerAssetsCreateV2ApiService service
 type ApiOpenApi2EventManagerAssetsCreatePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *EventManagerAssetsCreateV2ApiService
+	version                           string
 	eventManagerAssetsCreateV2Request *EventManagerAssetsCreateV2Request
 }
 
@@ -53,12 +55,14 @@ func (r *ApiOpenApi2EventManagerAssetsCreatePostRequest) WithLog(enable bool) *A
 OpenApi2EventManagerAssetsCreatePost Method for OpenApi2EventManagerAssetsCreatePost
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+	@param version request version
 	@return ApiOpenApi2EventManagerAssetsCreatePostRequest
 */
-func (a *EventManagerAssetsCreateV2ApiService) Post(ctx context.Context) *ApiOpenApi2EventManagerAssetsCreatePostRequest {
+func (a *EventManagerAssetsCreateV2ApiService) Post(ctx context.Context, version string) *ApiOpenApi2EventManagerAssetsCreatePostRequest {
 	return &ApiOpenApi2EventManagerAssetsCreatePostRequest{
 		ApiService: a,
 		ctx:        ctx,
+		version:    version,
 	}
 }
 
@@ -78,6 +82,7 @@ func (a *EventManagerAssetsCreateV2ApiService) postExecute(r *ApiOpenApi2EventMa
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/event_manager/assets/create/"
+	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

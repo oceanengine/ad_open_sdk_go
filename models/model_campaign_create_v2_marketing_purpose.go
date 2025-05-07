@@ -15,10 +15,10 @@ type CampaignCreateV2MarketingPurpose string
 
 // List of campaign_create_v2_marketing_purpose
 const (
-	INTENTION_CampaignCreateV2MarketingPurpose   CampaignCreateV2MarketingPurpose = "INTENTION"
-	UNLIMITED_CampaignCreateV2MarketingPurpose   CampaignCreateV2MarketingPurpose = "UNLIMITED"
 	CONVERSION_CampaignCreateV2MarketingPurpose  CampaignCreateV2MarketingPurpose = "CONVERSION"
 	ACKNOWLEDGE_CampaignCreateV2MarketingPurpose CampaignCreateV2MarketingPurpose = "ACKNOWLEDGE"
+	UNLIMITED_CampaignCreateV2MarketingPurpose   CampaignCreateV2MarketingPurpose = "UNLIMITED"
+	INTENTION_CampaignCreateV2MarketingPurpose   CampaignCreateV2MarketingPurpose = "INTENTION"
 )
 
 // Ptr returns reference to campaign_create_v2_marketing_purpose value

@@ -12,6 +12,7 @@ package models
 
 // BrandMaterialCreateV30RequestMaterialListInnerMaterialComponent
 type BrandMaterialCreateV30RequestMaterialListInnerMaterialComponent struct {
+	AvatarIcon        *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentAvatarIcon        `json:"avatar_icon,omitempty"`
 	AwemeAnchor       *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentAwemeAnchor       `json:"aweme_anchor,omitempty"`
 	AwemeShopHomePage *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentAwemeShopHomePage `json:"aweme_shop_home_page,omitempty"`
 	AwemeVideo        *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentAwemeVideo        `json:"aweme_video,omitempty"`
@@ -20,9 +21,14 @@ type BrandMaterialCreateV30RequestMaterialListInnerMaterialComponent struct {
 	DeliveryTimeList  *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentDeliveryTimeList  `json:"delivery_time_list,omitempty"`
 	ExploreOneTime    *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTime    `json:"explore_one_time,omitempty"`
 	ExternalTitle     *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExternalTitle     `json:"external_title,omitempty"`
+	FeedButtonText    *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentFeedButtonText    `json:"feed_button_text,omitempty"`
 	IesCoreUser       *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentIesCoreUser       `json:"ies_core_user,omitempty"`
 	ImageCard         *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentImageCard         `json:"image_card,omitempty"`
+	LbsExternal       *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentLbsExternal       `json:"lbs_external,omitempty"`
 	MallActivityPage  *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentMallActivityPage  `json:"mall_activity_page,omitempty"`
+	MusicText         *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentMusicText         `json:"music_text,omitempty"`
 	ProductDetailPage *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentProductDetailPage `json:"product_detail_page,omitempty"`
 	Search            *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentSearch            `json:"search,omitempty"`
+	VideoComment      *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentVideoComment      `json:"video_comment,omitempty"`
+	VideoDownload     *BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentVideoDownload     `json:"video_download,omitempty"`
 }

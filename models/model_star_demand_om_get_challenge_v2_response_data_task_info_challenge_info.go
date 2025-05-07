@@ -33,6 +33,8 @@ type StarDemandOmGetChallengeV2ResponseDataTaskInfoChallengeInfo struct {
 	DemandDesc *string `json:"demand_desc,omitempty"`
 	// 任务截止时间
 	EndTime int64 `json:"end_time"`
+	// 短剧可剪辑集数设置
+	EpisodeLimit *map[string]int64 `json:"episode_limit,omitempty"`
 	//
 	MaxUploadItemCnt int64 `json:"max_upload_item_cnt"`
 	// 小程序ID

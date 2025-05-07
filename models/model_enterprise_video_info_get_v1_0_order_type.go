@@ -15,8 +15,8 @@ type EnterpriseVideoInfoGetV10OrderType string
 
 // List of enterprise_video_info_get_v1.0_order_type
 const (
-	ASC_EnterpriseVideoInfoGetV10OrderType  EnterpriseVideoInfoGetV10OrderType = "ASC"
 	DESC_EnterpriseVideoInfoGetV10OrderType EnterpriseVideoInfoGetV10OrderType = "DESC"
+	ASC_EnterpriseVideoInfoGetV10OrderType  EnterpriseVideoInfoGetV10OrderType = "ASC"
 )
 
 // Ptr returns reference to enterprise_video_info_get_v1.0_order_type value

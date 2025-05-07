@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialCreateV30RequestTrackUrlInfo
+// BrandMaterialCreateV30RequestTrackUrlInfo 广告监测链接
 type BrandMaterialCreateV30RequestTrackUrlInfo struct {
 	// 点击监测链接
 	ActionTrackUrl []string `json:"action_track_url,omitempty"`

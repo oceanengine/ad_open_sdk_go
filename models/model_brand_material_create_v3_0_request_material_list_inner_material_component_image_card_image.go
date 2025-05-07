@@ -13,5 +13,5 @@ package models
 // BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentImageCardImage
 type BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentImageCardImage struct {
 	// 图片uri 通过上传图片接口获得
-	WebUri string `json:"web_uri"`
+	WebUri *string `json:"web_uri,omitempty"`
 }

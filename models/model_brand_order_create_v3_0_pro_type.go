@@ -15,6 +15,7 @@ type BrandOrderCreateV30ProType string
 
 // List of brand_order_create_v3.0_pro_type
 const (
+	FEED_BrandOrderCreateV30ProType        BrandOrderCreateV30ProType = "FEED"
 	PLANT_GRASS_BrandOrderCreateV30ProType BrandOrderCreateV30ProType = "PLANT_GRASS"
 )
 

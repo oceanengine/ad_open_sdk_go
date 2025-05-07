@@ -23,20 +23,23 @@ import (
 )
 
 type ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequestExample struct {
-	StarId              int64  `json:"star_id"`
-	Page                int32  `json:"page"`
-	PageSize            int32  `json:"page_size"`
-	PayType             int64  `json:"pay_type,omitempty"`
-	MinCreateTimeStamp  int64  `json:"min_create_time_stamp,omitempty"`
-	MaxCreateTimeStamp  int64  `json:"max_create_time_stamp,omitempty"`
-	FirstClassCategory  int32  `json:"first_class_category,omitempty"`
-	SecondClassCategory int32  `json:"second_class_category,omitempty"`
-	ProductCategory     int32  `json:"product_category,omitempty"`
-	AppId               string `json:"app_id,omitempty"`
-	AppName             string `json:"app_name,omitempty"`
-	DemandId            int64  `json:"demand_id,omitempty"`
-	GameType            int64  `json:"game_type,omitempty"`
-	ComponentType       int64  `json:"component_type,omitempty"`
+	StarId              int64   `json:"star_id"`
+	Page                int32   `json:"page"`
+	PageSize            int32   `json:"page_size"`
+	PayType             int64   `json:"pay_type,omitempty"`
+	MinCreateTimeStamp  int64   `json:"min_create_time_stamp,omitempty"`
+	MaxCreateTimeStamp  int64   `json:"max_create_time_stamp,omitempty"`
+	FirstClassCategory  int32   `json:"first_class_category,omitempty"`
+	SecondClassCategory int32   `json:"second_class_category,omitempty"`
+	ProductCategory     int32   `json:"product_category,omitempty"`
+	AppId               string  `json:"app_id,omitempty"`
+	AppName             string  `json:"app_name,omitempty"`
+	DemandId            int64   `json:"demand_id,omitempty"`
+	GameType            int64   `json:"game_type,omitempty"`
+	ComponentType       int64   `json:"component_type,omitempty"`
+	SearchTags          []int64 `json:"search_tags,omitempty"`
+	FirstCategoryId     int64   `json:"first_category_id,omitempty"`
+	SecondCategoryId    int64   `json:"second_category_id,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/star/mcn/provider_get_unparticipated_task/ Get
@@ -58,7 +61,7 @@ func main() {
 	resp, httpRes, err := apiClient.StarMcnProviderGetUnparticipatedTaskV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		StarId(request.StarId).Page(request.Page).PageSize(request.PageSize).PayType(request.PayType).MinCreateTimeStamp(request.MinCreateTimeStamp).MaxCreateTimeStamp(request.MaxCreateTimeStamp).FirstClassCategory(request.FirstClassCategory).SecondClassCategory(request.SecondClassCategory).ProductCategory(request.ProductCategory).AppId(request.AppId).AppName(request.AppName).DemandId(request.DemandId).GameType(request.GameType).ComponentType(request.ComponentType).
+		StarId(request.StarId).Page(request.Page).PageSize(request.PageSize).PayType(request.PayType).MinCreateTimeStamp(request.MinCreateTimeStamp).MaxCreateTimeStamp(request.MaxCreateTimeStamp).FirstClassCategory(request.FirstClassCategory).SecondClassCategory(request.SecondClassCategory).ProductCategory(request.ProductCategory).AppId(request.AppId).AppName(request.AppName).DemandId(request.DemandId).GameType(request.GameType).ComponentType(request.ComponentType).SearchTags(request.SearchTags).FirstCategoryId(request.FirstCategoryId).SecondCategoryId(request.SecondCategoryId).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -328,6 +328,7 @@ Class | Method | HTTP request
 *BrandToolCreativePreviewV30Api* | **OpenApiV30BrandToolCreativePreviewGet** | **Get** /open_api/v3.0/brand/tool/creative_preview/
 *BrandToolMaterialPreviewV30Api* | **OpenApiV30BrandToolMaterialPreviewGet** | **Get** /open_api/v3.0/brand/tool/material_preview/
 *BrandToolQueryPublishPriceV30Api* | **OpenApiV30BrandToolQueryPublishPriceGet** | **Get** /open_api/v3.0/brand/tool/query_publish_price/
+*BrandToolQueryStockBalanceV30Api* | **OpenApiV30BrandToolQueryStockBalanceGet** | **Get** /open_api/v3.0/brand/tool/query_stock_balance/
 *BrandUploadImageV30Api* | **OpenApiV30BrandUploadImagePost** | **Post** /open_api/v3.0/brand/upload_image/
 *BudgetGroupCreateV30Api* | **OpenApiV30BudgetGroupCreatePost** | **Post** /open_api/v3.0/budget_group/create/
 *BudgetGroupDeleteV30Api* | **OpenApiV30BudgetGroupDeletePost** | **Post** /open_api/v3.0/budget_group/delete/
@@ -568,6 +569,7 @@ Class | Method | HTTP request
 *LocalPromotionStatusUpdateV30Api* | **OpenApiV30LocalPromotionStatusUpdatePost** | **Post** /open_api/v3.0/local/promotion/status/update/
 *LocalPromotionUpdateV30Api* | **OpenApiV30LocalPromotionUpdatePost** | **Post** /open_api/v3.0/local/promotion/update/
 *LocalReportAccountGetV30Api* | **OpenApiV30LocalReportAccountGetGet** | **Get** /open_api/v3.0/local/report/account/get/
+*LocalReportAudienceGetV30Api* | **OpenApiV30LocalReportAudienceGetGet** | **Get** /open_api/v3.0/local/report/audience/get/
 *LocalReportMaterialGetV30Api* | **OpenApiV30LocalReportMaterialGetGet** | **Get** /open_api/v3.0/local/report/material/get/
 *LocalReportProjectGetV30Api* | **OpenApiV30LocalReportProjectGetGet** | **Get** /open_api/v3.0/local/report/project/get/
 *LocalReportPromotionGetV30Api* | **OpenApiV30LocalReportPromotionGetGet** | **Get** /open_api/v3.0/local/report/promotion/get/
@@ -610,6 +612,7 @@ Class | Method | HTTP request
 *PromotionMaterialDeleteV30Api* | **OpenApiV30PromotionMaterialDeletePost** | **Post** /open_api/v3.0/promotion/material/delete/
 *PromotionNameUpdateV30Api* | **OpenApiV30PromotionNameUpdatePost** | **Post** /open_api/v3.0/promotion_name/update/
 *PromotionNewcustomerCreateV30Api* | **OpenApiV30PromotionNewcustomerCreatePost** | **Post** /open_api/v3.0/promotion_newcustomer/create/
+*PromotionNewcustomerTypeGetV30Api* | **OpenApiV30PromotionNewcustomerTypeGetGet** | **Get** /open_api/v3.0/promotion_newcustomer_type/get/
 *PromotionRejectReasonGetV30Api* | **OpenApiV30PromotionRejectReasonGetGet** | **Get** /open_api/v3.0/promotion/reject_reason/get/
 *PromotionScheduleTimeUpdateV30Api* | **OpenApiV30PromotionScheduleTimeUpdatePost** | **Post** /open_api/v3.0/promotion/schedule_time/update/
 *PromotionShopInfoUpdateV30Api* | **OpenApiV30PromotionShopInfoUpdatePost** | **Post** /open_api/v3.0/promotion/shop_info/update/
@@ -784,6 +787,7 @@ Class | Method | HTTP request
 *ReportBrandCampaignGetV30Api* | **OpenApiV30ReportBrandCampaignGetGet** | **Get** /open_api/v3.0/report/brand/campaign/get/
 *ReportBrandCreativeGetV30Api* | **OpenApiV30ReportBrandCreativeGetGet** | **Get** /open_api/v3.0/report/brand/creative/get/
 *ReportBrandDataV30Api* | **OpenApiV30ReportBrandDataGet** | **Get** /open_api/v3.0/report/brand/data/
+*ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Api* | **OpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGet** | **Get** /open_api/v3.0/report/business_platform/stardelivery/task_video_data/get/
 *ReportCampaignGetV2Api* | **OpenApi2ReportCampaignGetGet** | **Get** /open_api/2/report/campaign/get/
 *ReportCreativeGetV2Api* | **OpenApi2ReportCreativeGetGet** | **Get** /open_api/2/report/creative/get/
 *ReportCustomAsyncTaskCreateV30Api* | **OpenApiV30ReportCustomAsyncTaskCreatePost** | **Post** /open_api/v3.0/report/custom/async_task/create/
@@ -883,6 +887,7 @@ Class | Method | HTTP request
 *StarMcnGetContractedChallengeUrlV2Api* | **OpenApi2StarMcnGetContractedChallengeUrlGet** | **Get** /open_api/2/star/mcn/get_contracted_challenge_url/
 *StarMcnGetUnparticipatedTaskV2Api* | **OpenApi2StarMcnGetUnparticipatedTaskGet** | **Get** /open_api/2/star/mcn/get_unparticipated_task/
 *StarMcnProviderGetParticipatedTaskV2Api* | **OpenApi2StarMcnProviderGetParticipatedTaskGet** | **Get** /open_api/2/star/mcn/provider_get_participated_task/
+*StarMcnProviderGetTagOnTaskV2Api* | **OpenApi2StarMcnProviderGetTagOnTaskGet** | **Get** /open_api/2/star/mcn/provider_get_tag_on_task/
 *StarMcnProviderGetTaskDetailV2Api* | **OpenApi2StarMcnProviderGetTaskDetailGet** | **Get** /open_api/2/star/mcn/provider_get_task_detail/
 *StarMcnProviderGetTaskItemListV2Api* | **OpenApi2StarMcnProviderGetTaskItemListGet** | **Get** /open_api/2/star/mcn/provider_get_task_item_list/
 *StarMcnProviderGetTaskShareCodeV2Api* | **OpenApi2StarMcnProviderGetTaskShareCodeGet** | **Get** /open_api/2/star/mcn/provider_get_task_share_code/

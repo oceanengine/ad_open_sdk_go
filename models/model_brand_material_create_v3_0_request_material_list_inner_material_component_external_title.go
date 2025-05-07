@@ -13,5 +13,5 @@ package models
 // BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExternalTitle
 type BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExternalTitle struct {
 	// 落地页标题
-	Source string `json:"source"`
+	Source *string `json:"source,omitempty"`
 }

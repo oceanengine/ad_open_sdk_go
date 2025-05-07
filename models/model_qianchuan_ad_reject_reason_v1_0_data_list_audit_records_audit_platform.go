@@ -15,8 +15,8 @@ type QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform string
 
 // List of qianchuan_ad_reject_reason_v1.0_data_list_audit_records_audit_platform
 const (
-	AD_QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform      QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform = "AD"
 	CONTENT_QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform = "CONTENT"
+	AD_QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform      QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform = "AD"
 	UNKNOWN_QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform QianchuanAdRejectReasonV10DataListAuditRecordsAuditPlatform = "UNKNOWN"
 )
 

@@ -12,5 +12,7 @@ package models
 
 // StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoData 数据相关
 type StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoData struct {
-	RealTimeEffectData *StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoDataRealTimeEffectData `json:"real_time_effect_data,omitempty"`
+	RealTimeAdConvertData      *StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoDataRealTimeAdConvertData      `json:"real_time_ad_convert_data,omitempty"`
+	RealTimeEffectData         *StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoDataRealTimeEffectData         `json:"real_time_effect_data,omitempty"`
+	RealTimeNaturalConvertData *StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoDataRealTimeNaturalConvertData `json:"real_time_natural_convert_data,omitempty"`
 }

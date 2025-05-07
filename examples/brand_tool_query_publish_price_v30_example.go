@@ -23,17 +23,18 @@ import (
 )
 
 type ApiOpenApiV30BrandToolQueryPublishPriceGetRequestExample struct {
-	AdvertiserId int64                                     `json:"advertiser_id"`
-	Classify     BrandToolQueryPublishPriceV30Classify     `json:"classify"`
-	ProType      BrandToolQueryPublishPriceV30ProType      `json:"pro_type"`
-	AdForm       BrandToolQueryPublishPriceV30AdForm       `json:"ad_form"`
-	AppOrigin    BrandToolQueryPublishPriceV30AppOrigin    `json:"app_origin"`
-	PricingType  BrandToolQueryPublishPriceV30PricingType  `json:"pricing_type"`
-	GdSendType   BrandToolQueryPublishPriceV30GdSendType   `json:"gd_send_type"`
-	PolicyNo     string                                    `json:"policy_no"`
-	DeliveryInfo BrandToolQueryPublishPriceV30DeliveryInfo `json:"delivery_info"`
-	IntentionNo  string                                    `json:"intention_no,omitempty"`
-	AudienceInfo BrandToolQueryPublishPriceV30AudienceInfo `json:"audience_info,omitempty"`
+	AdvertiserId  int64                                      `json:"advertiser_id"`
+	Classify      BrandToolQueryPublishPriceV30Classify      `json:"classify"`
+	ProType       BrandToolQueryPublishPriceV30ProType       `json:"pro_type"`
+	AdForm        BrandToolQueryPublishPriceV30AdForm        `json:"ad_form"`
+	AppOrigin     BrandToolQueryPublishPriceV30AppOrigin     `json:"app_origin"`
+	PricingType   BrandToolQueryPublishPriceV30PricingType   `json:"pricing_type"`
+	GdSendType    BrandToolQueryPublishPriceV30GdSendType    `json:"gd_send_type"`
+	PolicyNo      string                                     `json:"policy_no"`
+	DeliveryInfo  BrandToolQueryPublishPriceV30DeliveryInfo  `json:"delivery_info"`
+	IntentionNo   string                                     `json:"intention_no,omitempty"`
+	AudienceInfo  BrandToolQueryPublishPriceV30AudienceInfo  `json:"audience_info,omitempty"`
+	FrequencyInfo BrandToolQueryPublishPriceV30FrequencyInfo `json:"frequency_info,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/brand/tool/query_publish_price/ Get
@@ -55,7 +56,7 @@ func main() {
 	resp, httpRes, err := apiClient.BrandToolQueryPublishPriceV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Classify(request.Classify).ProType(request.ProType).AdForm(request.AdForm).AppOrigin(request.AppOrigin).PricingType(request.PricingType).GdSendType(request.GdSendType).PolicyNo(request.PolicyNo).DeliveryInfo(request.DeliveryInfo).IntentionNo(request.IntentionNo).AudienceInfo(request.AudienceInfo).
+		AdvertiserId(request.AdvertiserId).Classify(request.Classify).ProType(request.ProType).AdForm(request.AdForm).AppOrigin(request.AppOrigin).PricingType(request.PricingType).GdSendType(request.GdSendType).PolicyNo(request.PolicyNo).DeliveryInfo(request.DeliveryInfo).IntentionNo(request.IntentionNo).AudienceInfo(request.AudienceInfo).FrequencyInfo(request.FrequencyInfo).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

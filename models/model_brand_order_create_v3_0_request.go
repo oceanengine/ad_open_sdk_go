@@ -21,9 +21,10 @@ type BrandOrderCreateV30Request struct {
 	// 总预算
 	Budget int64 `json:"budget"`
 	// 广告组ID
-	CampaignId int64                         `json:"campaign_id"`
-	Classify   BrandOrderCreateV30Classify   `json:"classify"`
-	GdSendType BrandOrderCreateV30GdSendType `json:"gd_send_type"`
+	CampaignId    int64                                    `json:"campaign_id"`
+	Classify      BrandOrderCreateV30Classify              `json:"classify"`
+	FrequencyInfo *BrandOrderCreateV30RequestFrequencyInfo `json:"frequency_info,omitempty"`
+	GdSendType    BrandOrderCreateV30GdSendType            `json:"gd_send_type"`
 	// 招商订单编号
 	IntentionNo *string `json:"intention_no,omitempty"`
 	// 预订单名称

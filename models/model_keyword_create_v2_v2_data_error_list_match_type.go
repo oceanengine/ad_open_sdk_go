@@ -15,9 +15,9 @@ type KeywordCreateV2V2DataErrorListMatchType string
 
 // List of keyword_create_v2_v2_data_error_list_match_type
 const (
-	EXTENSIVE_KeywordCreateV2V2DataErrorListMatchType KeywordCreateV2V2DataErrorListMatchType = "EXTENSIVE"
 	PRECISION_KeywordCreateV2V2DataErrorListMatchType KeywordCreateV2V2DataErrorListMatchType = "PRECISION"
 	PHRASE_KeywordCreateV2V2DataErrorListMatchType    KeywordCreateV2V2DataErrorListMatchType = "PHRASE"
+	EXTENSIVE_KeywordCreateV2V2DataErrorListMatchType KeywordCreateV2V2DataErrorListMatchType = "EXTENSIVE"
 )
 
 // Ptr returns reference to keyword_create_v2_v2_data_error_list_match_type value

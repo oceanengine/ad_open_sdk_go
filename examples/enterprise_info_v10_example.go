@@ -24,6 +24,7 @@ import (
 
 type ApiOpenApiV10EnterpriseInfoGetRequestExample struct {
 	EDouyinIds []string `json:"e_douyin_ids"`
+	Version    string   `json:"version"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/enterprise/info/ Get
@@ -43,9 +44,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.EnterpriseInfoV10Api().
-		Get(ctx).
+		Get(ctx, version).
 		AccessToken(accessToken).
-		EDouyinIds(request.EDouyinIds).
+		EDouyinIds(request.EDouyinIds).Version(request.Version).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

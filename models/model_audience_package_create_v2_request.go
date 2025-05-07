@@ -65,6 +65,7 @@ type AudiencePackageCreateV2Request struct {
 	Gender      *AudiencePackageCreateV2Gender `json:"gender,omitempty"`
 	//
 	Geolocation        []*AudiencePackageCreateV2RequestGeolocationInner `json:"geolocation,omitempty"`
+	HarmonyOsv         *AudiencePackageCreateV2HarmonyOsv                `json:"harmony_osv,omitempty"`
 	HideIfConverted    *AudiencePackageCreateV2HideIfConverted           `json:"hide_if_converted,omitempty"`
 	HideIfExists       *AudiencePackageCreateV2HideIfExists              `json:"hide_if_exists,omitempty"`
 	InterestActionMode *AudiencePackageCreateV2InterestActionMode        `json:"interest_action_mode,omitempty"`

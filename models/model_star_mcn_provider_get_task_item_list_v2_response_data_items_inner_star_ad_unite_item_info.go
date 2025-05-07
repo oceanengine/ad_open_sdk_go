@@ -22,8 +22,12 @@ type StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerStarAdUniteItemInfo s
 	EstRealTimeNaturalCost *int64 `json:"est_real_time_natural_cost,omitempty"`
 	// 预估实时总消耗
 	EstRealTimeTotalCost *int64 `json:"est_real_time_total_cost,omitempty"`
+	// 是否高潜达人视频
+	HighPotentialAuthor *bool `json:"high_potential_author,omitempty"`
 	// 投放状态
 	ItemStatus *int64 `json:"item_status,omitempty"`
+	// 素材id
+	MaterialId *int64 `json:"material_id,omitempty"`
 	// 服务商已结算收益
 	ProviderSettledReward *int64 `json:"provider_settled_reward,omitempty"`
 }

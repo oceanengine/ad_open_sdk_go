@@ -14,8 +14,14 @@ package models
 type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo struct {
 	// 小程序cps 分账周期
 	AccountDivideDay *int64 `json:"account_divide_day,omitempty"`
+	// 达人定向类型
+	AuthorScope *int32 `json:"author_scope,omitempty"`
 	//
 	Brand *string `json:"brand,omitempty"`
+	// 任务预算
+	Budget *int64 `json:"budget,omitempty"`
+	// 任务玩法
+	ChallengePlayType *int64 `json:"challenge_play_type,omitempty"`
 	//
 	ChallengeStatus *int64 `json:"challenge_status,omitempty"`
 	// 网盘链接
@@ -26,6 +32,10 @@ type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo struct {
 	CommissionRateIaap *string `json:"commission_rate_iaap,omitempty"`
 	//
 	ComponentType *int64 `json:"component_type,omitempty"`
+	// cpa转化单价
+	ConvertUnitAmount *int64 `json:"convert_unit_amount,omitempty"`
+	// cpm单价
+	CpmVvPrice *int64 `json:"cpm_vv_price,omitempty"`
 	//
 	CreateTime string `json:"create_time"`
 	// 任务介绍
@@ -77,10 +87,16 @@ type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo struct {
 	ProductReleaseTime *string `json:"product_release_time,omitempty"`
 	//
 	ProfitRateChannel *map[string]int64 `json:"profit_rate_channel,omitempty"`
+	// 服务商任务类型
+	ProviderTaskType *int32 `json:"provider_task_type,omitempty"`
 	//
 	SecondClassCategory         *int64                                                                               `json:"second_class_category,omitempty"`
 	SmallAppInfo                *StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoSmallAppInfo                `json:"small_app_info,omitempty"`
 	StarMicroGameUniteExtraInfo *StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoStarMicroGameUniteExtraInfo `json:"star_micro_game_unite_extra_info,omitempty"`
+	// 任务类型
+	TaskCategory *int64 `json:"task_category,omitempty"`
+	// 任务类型
+	TaskClassification *int64 `json:"task_classification,omitempty"`
 	// 任务头图
 	TaskHeadImage       *string                                                                      `json:"task_head_image,omitempty"`
 	TaskRequirementInfo *StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoTaskRequirementInfo `json:"task_requirement_info,omitempty"`

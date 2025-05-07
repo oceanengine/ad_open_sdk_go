@@ -25,6 +25,8 @@ type StarDemandOmCreateChallengeV2RequestChallengeInfo struct {
 	CommissionType StarDemandOmCreateChallengeV2ChallengeInfoCommissionType `json:"commission_type"`
 	// 任务介绍 文本，最长500字
 	DemandDesc *string `json:"demand_desc,omitempty"`
+	// 短剧可剪辑集数限制
+	EpisodeLimit *map[string]int64 `json:"episode_limit,omitempty"`
 	// 小程序ID
 	MicroAppId string `json:"micro_app_id"`
 	// 任务标签 list<string> 长度固定为2  [${形式标签}, ${内容标签}]

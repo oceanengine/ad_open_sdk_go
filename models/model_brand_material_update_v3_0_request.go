@@ -12,13 +12,15 @@ package models
 
 // BrandMaterialUpdateV30Request struct for BrandMaterialUpdateV30Request
 type BrandMaterialUpdateV30Request struct {
-	//
+	// 广告主ID
 	AdvertiserId        int64                                      `json:"advertiser_id"`
 	CategoryInfo        BrandMaterialUpdateV30RequestCategoryInfo  `json:"category_info"`
+	ContentType         *BrandMaterialUpdateV30ContentType         `json:"content_type,omitempty"`
 	CreativeDisplayMode *BrandMaterialUpdateV30CreativeDisplayMode `json:"creative_display_mode,omitempty"`
+	Lbs                 *BrandMaterialUpdateV30RequestLbs          `json:"lbs,omitempty"`
 	//
 	MaterialList []*BrandMaterialUpdateV30RequestMaterialListInner `json:"material_list"`
-	//
+	// 预定单ID
 	OrderId int64 `json:"order_id"`
 	// 监测链接周期配置组
 	TrackUrlGroupInfos []*BrandMaterialUpdateV30RequestTrackUrlGroupInfosInner `json:"track_url_group_infos,omitempty"`

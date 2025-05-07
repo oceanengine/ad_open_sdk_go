@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.48
+// APIClient manages communication with the Oceanengine Open Api API v1.1.49
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -294,6 +294,8 @@ type APIClient struct {
 	BrandToolMaterialPreviewV30Api *BrandToolMaterialPreviewV30ApiService
 
 	BrandToolQueryPublishPriceV30Api *BrandToolQueryPublishPriceV30ApiService
+
+	BrandToolQueryStockBalanceV30Api *BrandToolQueryStockBalanceV30ApiService
 
 	BrandUploadImageV30Api *BrandUploadImageV30ApiService
 
@@ -775,6 +777,8 @@ type APIClient struct {
 
 	LocalReportAccountGetV30Api *LocalReportAccountGetV30ApiService
 
+	LocalReportAudienceGetV30Api *LocalReportAudienceGetV30ApiService
+
 	LocalReportMaterialGetV30Api *LocalReportMaterialGetV30ApiService
 
 	LocalReportProjectGetV30Api *LocalReportProjectGetV30ApiService
@@ -858,6 +862,8 @@ type APIClient struct {
 	PromotionNameUpdateV30Api *PromotionNameUpdateV30ApiService
 
 	PromotionNewcustomerCreateV30Api *PromotionNewcustomerCreateV30ApiService
+
+	PromotionNewcustomerTypeGetV30Api *PromotionNewcustomerTypeGetV30ApiService
 
 	PromotionRejectReasonGetV30Api *PromotionRejectReasonGetV30ApiService
 
@@ -1207,6 +1213,8 @@ type APIClient struct {
 
 	ReportBrandDataV30Api *ReportBrandDataV30ApiService
 
+	ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Api *ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ApiService
+
 	ReportCampaignGetV2Api *ReportCampaignGetV2ApiService
 
 	ReportCreativeGetV2Api *ReportCreativeGetV2ApiService
@@ -1404,6 +1412,8 @@ type APIClient struct {
 	StarMcnGetUnparticipatedTaskV2Api *StarMcnGetUnparticipatedTaskV2ApiService
 
 	StarMcnProviderGetParticipatedTaskV2Api *StarMcnProviderGetParticipatedTaskV2ApiService
+
+	StarMcnProviderGetTagOnTaskV2Api *StarMcnProviderGetTagOnTaskV2ApiService
 
 	StarMcnProviderGetTaskDetailV2Api *StarMcnProviderGetTaskDetailV2ApiService
 
@@ -2126,6 +2136,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.BrandToolCreativePreviewV30Api = (*BrandToolCreativePreviewV30ApiService)(&c.common)
 	c.BrandToolMaterialPreviewV30Api = (*BrandToolMaterialPreviewV30ApiService)(&c.common)
 	c.BrandToolQueryPublishPriceV30Api = (*BrandToolQueryPublishPriceV30ApiService)(&c.common)
+	c.BrandToolQueryStockBalanceV30Api = (*BrandToolQueryStockBalanceV30ApiService)(&c.common)
 	c.BrandUploadImageV30Api = (*BrandUploadImageV30ApiService)(&c.common)
 	c.BudgetGroupCreateV30Api = (*BudgetGroupCreateV30ApiService)(&c.common)
 	c.BudgetGroupDeleteV30Api = (*BudgetGroupDeleteV30ApiService)(&c.common)
@@ -2366,6 +2377,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.LocalPromotionStatusUpdateV30Api = (*LocalPromotionStatusUpdateV30ApiService)(&c.common)
 	c.LocalPromotionUpdateV30Api = (*LocalPromotionUpdateV30ApiService)(&c.common)
 	c.LocalReportAccountGetV30Api = (*LocalReportAccountGetV30ApiService)(&c.common)
+	c.LocalReportAudienceGetV30Api = (*LocalReportAudienceGetV30ApiService)(&c.common)
 	c.LocalReportMaterialGetV30Api = (*LocalReportMaterialGetV30ApiService)(&c.common)
 	c.LocalReportProjectGetV30Api = (*LocalReportProjectGetV30ApiService)(&c.common)
 	c.LocalReportPromotionGetV30Api = (*LocalReportPromotionGetV30ApiService)(&c.common)
@@ -2408,6 +2420,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.PromotionMaterialDeleteV30Api = (*PromotionMaterialDeleteV30ApiService)(&c.common)
 	c.PromotionNameUpdateV30Api = (*PromotionNameUpdateV30ApiService)(&c.common)
 	c.PromotionNewcustomerCreateV30Api = (*PromotionNewcustomerCreateV30ApiService)(&c.common)
+	c.PromotionNewcustomerTypeGetV30Api = (*PromotionNewcustomerTypeGetV30ApiService)(&c.common)
 	c.PromotionRejectReasonGetV30Api = (*PromotionRejectReasonGetV30ApiService)(&c.common)
 	c.PromotionScheduleTimeUpdateV30Api = (*PromotionScheduleTimeUpdateV30ApiService)(&c.common)
 	c.PromotionShopInfoUpdateV30Api = (*PromotionShopInfoUpdateV30ApiService)(&c.common)
@@ -2582,6 +2595,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ReportBrandCampaignGetV30Api = (*ReportBrandCampaignGetV30ApiService)(&c.common)
 	c.ReportBrandCreativeGetV30Api = (*ReportBrandCreativeGetV30ApiService)(&c.common)
 	c.ReportBrandDataV30Api = (*ReportBrandDataV30ApiService)(&c.common)
+	c.ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Api = (*ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ApiService)(&c.common)
 	c.ReportCampaignGetV2Api = (*ReportCampaignGetV2ApiService)(&c.common)
 	c.ReportCreativeGetV2Api = (*ReportCreativeGetV2ApiService)(&c.common)
 	c.ReportCustomAsyncTaskCreateV30Api = (*ReportCustomAsyncTaskCreateV30ApiService)(&c.common)
@@ -2681,6 +2695,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarMcnGetContractedChallengeUrlV2Api = (*StarMcnGetContractedChallengeUrlV2ApiService)(&c.common)
 	c.StarMcnGetUnparticipatedTaskV2Api = (*StarMcnGetUnparticipatedTaskV2ApiService)(&c.common)
 	c.StarMcnProviderGetParticipatedTaskV2Api = (*StarMcnProviderGetParticipatedTaskV2ApiService)(&c.common)
+	c.StarMcnProviderGetTagOnTaskV2Api = (*StarMcnProviderGetTagOnTaskV2ApiService)(&c.common)
 	c.StarMcnProviderGetTaskDetailV2Api = (*StarMcnProviderGetTaskDetailV2ApiService)(&c.common)
 	c.StarMcnProviderGetTaskItemListV2Api = (*StarMcnProviderGetTaskItemListV2ApiService)(&c.common)
 	c.StarMcnProviderGetTaskShareCodeV2Api = (*StarMcnProviderGetTaskShareCodeV2ApiService)(&c.common)

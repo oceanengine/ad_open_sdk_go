@@ -15,6 +15,7 @@ type BrandToolQueryPublishPriceV30ProType string
 
 // List of brand_tool_query_publish_price_v3.0_pro_type
 const (
+	FEED_BrandToolQueryPublishPriceV30ProType        BrandToolQueryPublishPriceV30ProType = "FEED"
 	PLANT_GRASS_BrandToolQueryPublishPriceV30ProType BrandToolQueryPublishPriceV30ProType = "PLANT_GRASS"
 )
 

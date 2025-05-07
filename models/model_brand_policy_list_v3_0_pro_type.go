@@ -15,6 +15,7 @@ type BrandPolicyListV30ProType string
 
 // List of brand_policy_list_v3.0_pro_type
 const (
+	FEED_BrandPolicyListV30ProType        BrandPolicyListV30ProType = "FEED"
 	PLANT_GRASS_BrandPolicyListV30ProType BrandPolicyListV30ProType = "PLANT_GRASS"
 )
 

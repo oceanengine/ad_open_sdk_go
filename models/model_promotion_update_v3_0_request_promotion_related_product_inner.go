@@ -28,6 +28,7 @@ type PromotionUpdateV30RequestPromotionRelatedProductInner struct {
 	OpenUrl *string `json:"open_url,omitempty"`
 	//
 	TitleMaterialList []*PromotionUpdateV30RequestPromotionRelatedProductInnerTitleMaterialListInner `json:"title_material_list,omitempty"`
+	UlinkType         *PromotionUpdateV30PromotionRelatedProductUlinkType                            `json:"ulink_type,omitempty"`
 	//
 	UlinkUrl *string `json:"ulink_url,omitempty"`
 	//

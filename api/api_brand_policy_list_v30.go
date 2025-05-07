@@ -23,18 +23,19 @@ import (
 type BrandPolicyListV30ApiService service
 
 type ApiOpenApiV30BrandPolicyListGetRequest struct {
-	ctx          context.Context
-	ApiService   *BrandPolicyListV30ApiService
-	advertiserId *int64
-	classify     *BrandPolicyListV30Classify
-	proType      *BrandPolicyListV30ProType
-	adForm       *BrandPolicyListV30AdForm
-	appOrigin    *BrandPolicyListV30AppOrigin
-	pricingType  *BrandPolicyListV30PricingType
-	gdSendType   *BrandPolicyListV30GdSendType
-	deliveryInfo *BrandPolicyListV30DeliveryInfo
-	intentionNo  *string
-	audienceInfo *BrandPolicyListV30AudienceInfo
+	ctx           context.Context
+	ApiService    *BrandPolicyListV30ApiService
+	advertiserId  *int64
+	classify      *BrandPolicyListV30Classify
+	proType       *BrandPolicyListV30ProType
+	adForm        *BrandPolicyListV30AdForm
+	appOrigin     *BrandPolicyListV30AppOrigin
+	pricingType   *BrandPolicyListV30PricingType
+	gdSendType    *BrandPolicyListV30GdSendType
+	deliveryInfo  *BrandPolicyListV30DeliveryInfo
+	intentionNo   *string
+	audienceInfo  *BrandPolicyListV30AudienceInfo
+	frequencyInfo *BrandPolicyListV30FrequencyInfo
 }
 
 // 广告主ID
@@ -94,6 +95,12 @@ func (r *ApiOpenApiV30BrandPolicyListGetRequest) IntentionNo(intentionNo string)
 // 定向
 func (r *ApiOpenApiV30BrandPolicyListGetRequest) AudienceInfo(audienceInfo BrandPolicyListV30AudienceInfo) *ApiOpenApiV30BrandPolicyListGetRequest {
 	r.audienceInfo = &audienceInfo
+	return r
+}
+
+// 频控
+func (r *ApiOpenApiV30BrandPolicyListGetRequest) FrequencyInfo(frequencyInfo BrandPolicyListV30FrequencyInfo) *ApiOpenApiV30BrandPolicyListGetRequest {
+	r.frequencyInfo = &frequencyInfo
 	return r
 }
 
@@ -184,6 +191,9 @@ func (a *BrandPolicyListV30ApiService) getExecute(r *ApiOpenApiV30BrandPolicyLis
 	parameterAddToHeaderOrQuery(localVarQueryParams, "gd_send_type", r.gdSendType)
 	if r.audienceInfo != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "audience_info", r.audienceInfo)
+	}
+	if r.frequencyInfo != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "frequency_info", r.frequencyInfo)
 	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "delivery_info", r.deliveryInfo)
 	// to determine the Content-Type header

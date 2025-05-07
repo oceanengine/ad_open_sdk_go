@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentAwemeAnchor 抖音锚点
+// BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentAwemeAnchor 抖音锚点组件
 type BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentAwemeAnchor struct {
 	// 锚点id
 	AnchorId   *string                                                                   `json:"anchor_id,omitempty"`

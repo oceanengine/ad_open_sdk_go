@@ -15,12 +15,15 @@ type BrandToolQueryPublishPriceV30GdSendType string
 
 // List of brand_tool_query_publish_price_v3.0_gd_send_type
 const (
-	CTR_BrandToolQueryPublishPriceV30GdSendType         BrandToolQueryPublishPriceV30GdSendType = "CTR"
-	FANS_INCR_BrandToolQueryPublishPriceV30GdSendType   BrandToolQueryPublishPriceV30GdSendType = "FANS_INCR"
-	FORM_BrandToolQueryPublishPriceV30GdSendType        BrandToolQueryPublishPriceV30GdSendType = "FORM"
-	HOISTING_BrandToolQueryPublishPriceV30GdSendType    BrandToolQueryPublishPriceV30GdSendType = "HOISTING"
-	INTERACTIVE_BrandToolQueryPublishPriceV30GdSendType BrandToolQueryPublishPriceV30GdSendType = "INTERACTIVE"
-	PLANT_GRASS_BrandToolQueryPublishPriceV30GdSendType BrandToolQueryPublishPriceV30GdSendType = "PLANT_GRASS"
+	CPV_EFFECTIVE_BrandToolQueryPublishPriceV30GdSendType BrandToolQueryPublishPriceV30GdSendType = "CPV_EFFECTIVE"
+	CTR_BrandToolQueryPublishPriceV30GdSendType           BrandToolQueryPublishPriceV30GdSendType = "CTR"
+	FANS_INCR_BrandToolQueryPublishPriceV30GdSendType     BrandToolQueryPublishPriceV30GdSendType = "FANS_INCR"
+	FORM_BrandToolQueryPublishPriceV30GdSendType          BrandToolQueryPublishPriceV30GdSendType = "FORM"
+	HOISTING_BrandToolQueryPublishPriceV30GdSendType      BrandToolQueryPublishPriceV30GdSendType = "HOISTING"
+	INTERACTIVE_BrandToolQueryPublishPriceV30GdSendType   BrandToolQueryPublishPriceV30GdSendType = "INTERACTIVE"
+	PLANT_GRASS_BrandToolQueryPublishPriceV30GdSendType   BrandToolQueryPublishPriceV30GdSendType = "PLANT_GRASS"
+	REACH_BrandToolQueryPublishPriceV30GdSendType         BrandToolQueryPublishPriceV30GdSendType = "REACH"
+	SEQUENCE_BrandToolQueryPublishPriceV30GdSendType      BrandToolQueryPublishPriceV30GdSendType = "SEQUENCE"
 )
 
 // Ptr returns reference to brand_tool_query_publish_price_v3.0_gd_send_type value

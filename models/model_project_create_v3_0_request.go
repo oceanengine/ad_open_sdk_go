@@ -80,5 +80,6 @@ type ProjectCreateV30Request struct {
 	TrackUrlSetting *ProjectCreateV30RequestTrackUrlSetting `json:"track_url_setting,omitempty"`
 	//
 	UlinkUrl           *string                             `json:"ulink_url,omitempty"`
+	UlinkUrlType       *ProjectCreateV30UlinkUrlType       `json:"ulink_url_type,omitempty"`
 	ValueOptimizedType *ProjectCreateV30ValueOptimizedType `json:"value_optimized_type,omitempty"`
 }

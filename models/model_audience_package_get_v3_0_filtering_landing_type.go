@@ -17,6 +17,7 @@ type AudiencePackageGetV30FilteringLandingType string
 const (
 	APP_AudiencePackageGetV30FilteringLandingType         AudiencePackageGetV30FilteringLandingType = "APP"
 	APP_ANDROID_AudiencePackageGetV30FilteringLandingType AudiencePackageGetV30FilteringLandingType = "APP_ANDROID"
+	APP_HARMONY_AudiencePackageGetV30FilteringLandingType AudiencePackageGetV30FilteringLandingType = "APP_HARMONY"
 	APP_IOS_AudiencePackageGetV30FilteringLandingType     AudiencePackageGetV30FilteringLandingType = "APP_IOS"
 	ARTICLE_AudiencePackageGetV30FilteringLandingType     AudiencePackageGetV30FilteringLandingType = "ARTICLE"
 	AWEME_AudiencePackageGetV30FilteringLandingType       AudiencePackageGetV30FilteringLandingType = "AWEME"

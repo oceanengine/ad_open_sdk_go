@@ -14,6 +14,7 @@ import (
 	"context"
 	"net/http"
 	"net/url"
+	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -25,6 +26,7 @@ type ToolsAppManagementUploadTaskCreateV2ApiService service
 type ApiOpenApi2ToolsAppManagementUploadTaskCreatePostRequest struct {
 	ctx                                         context.Context
 	ApiService                                  *ToolsAppManagementUploadTaskCreateV2ApiService
+	version                                     string
 	toolsAppManagementUploadTaskCreateV2Request *ToolsAppManagementUploadTaskCreateV2Request
 }
 
@@ -53,12 +55,14 @@ func (r *ApiOpenApi2ToolsAppManagementUploadTaskCreatePostRequest) WithLog(enabl
 OpenApi2ToolsAppManagementUploadTaskCreatePost Method for OpenApi2ToolsAppManagementUploadTaskCreatePost
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
+	@param version request version
 	@return ApiOpenApi2ToolsAppManagementUploadTaskCreatePostRequest
 */
-func (a *ToolsAppManagementUploadTaskCreateV2ApiService) Post(ctx context.Context) *ApiOpenApi2ToolsAppManagementUploadTaskCreatePostRequest {
+func (a *ToolsAppManagementUploadTaskCreateV2ApiService) Post(ctx context.Context, version string) *ApiOpenApi2ToolsAppManagementUploadTaskCreatePostRequest {
 	return &ApiOpenApi2ToolsAppManagementUploadTaskCreatePostRequest{
 		ApiService: a,
 		ctx:        ctx,
+		version:    version,
 	}
 }
 
@@ -78,6 +82,7 @@ func (a *ToolsAppManagementUploadTaskCreateV2ApiService) postExecute(r *ApiOpenA
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/upload_task/create/"
+	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

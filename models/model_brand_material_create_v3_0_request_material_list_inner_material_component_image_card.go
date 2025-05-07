@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentImageCard 图片磁贴(含搜索)
+// BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentImageCard 图片磁贴(含搜索)组件
 type BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentImageCard struct {
 	// 弹出时间 单位秒
 	AdvancedDuration *int64                                                                         `json:"advanced_duration,omitempty"`

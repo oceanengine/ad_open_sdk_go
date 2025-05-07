@@ -15,6 +15,7 @@ type QianchuanReportUniPromotionGetV10MarketingGoal string
 
 // List of qianchuan_report_uni_promotion_get_v1.0_marketing_goal
 const (
+	ALL_QianchuanReportUniPromotionGetV10MarketingGoal              QianchuanReportUniPromotionGetV10MarketingGoal = "ALL"
 	LIVE_PROM_GOODS_QianchuanReportUniPromotionGetV10MarketingGoal  QianchuanReportUniPromotionGetV10MarketingGoal = "LIVE_PROM_GOODS"
 	VIDEO_PROM_GOODS_QianchuanReportUniPromotionGetV10MarketingGoal QianchuanReportUniPromotionGetV10MarketingGoal = "VIDEO_PROM_GOODS"
 )

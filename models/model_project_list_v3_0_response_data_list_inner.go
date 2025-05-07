@@ -43,6 +43,8 @@ type ProjectListV30ResponseDataListInner struct {
 	//
 	DpaProductTarget []*ProjectListV30ResponseDataListInnerDpaProductTargetInner `json:"dpa_product_target,omitempty"`
 	//
+	DurationCount *int64 `json:"duration_count,omitempty"`
+	//
 	FeedDeliverySearch *string `json:"feed_delivery_search,omitempty"`
 	//
 	IfNewcustomerdelivery  *bool                                                      `json:"if_newcustomerdelivery,omitempty"`
@@ -96,6 +98,7 @@ type ProjectListV30ResponseDataListInner struct {
 	//
 	SubscribeUrl    *string                                             `json:"subscribe_url,omitempty"`
 	TrackUrlSetting *ProjectListV30ResponseDataListInnerTrackUrlSetting `json:"track_url_setting,omitempty"`
+	UlinkType       *ProjectListV30DataListUlinkType                    `json:"ulink_type,omitempty"`
 	//
 	UlinkUrl           *string                                   `json:"ulink_url,omitempty"`
 	ValueOptimizedType *ProjectListV30DataListValueOptimizedType `json:"value_optimized_type,omitempty"`

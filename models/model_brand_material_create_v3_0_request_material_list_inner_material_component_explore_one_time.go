@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTime 探索一下
+// BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTime 探索一下组件
 type BrandMaterialCreateV30RequestMaterialListInnerMaterialComponentExploreOneTime struct {
 	// 组件弹出时间（单位：秒）
 	AdvancedDuration *int64                                                                                        `json:"advanced_duration,omitempty"`

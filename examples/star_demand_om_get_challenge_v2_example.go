@@ -25,7 +25,6 @@ import (
 type ApiOpenApi2StarDemandOmGetChallengeGetRequestExample struct {
 	StarId          int64 `json:"star_id"`
 	ChallengeTaskId int64 `json:"challenge_task_id"`
-	DeveloperId     int64 `json:"developer_id,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/star/demand/om_get_challenge/ Get
@@ -47,7 +46,7 @@ func main() {
 	resp, httpRes, err := apiClient.StarDemandOmGetChallengeV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		StarId(request.StarId).ChallengeTaskId(request.ChallengeTaskId).DeveloperId(request.DeveloperId).
+		StarId(request.StarId).ChallengeTaskId(request.ChallengeTaskId).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

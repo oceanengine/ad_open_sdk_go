@@ -39,6 +39,9 @@ type ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest struct {
 	demandId            *int64
 	gameType            *int64
 	componentType       *int64
+	searchTags          *[]int64
+	firstCategoryId     *int64
+	secondCategoryId    *int64
 }
 
 func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) StarId(starId int64) *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
@@ -112,6 +115,21 @@ func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) GameType(gam
 
 func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) ComponentType(componentType int64) *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
 	r.componentType = &componentType
+	return r
+}
+
+func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) SearchTags(searchTags []int64) *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
+	r.searchTags = &searchTags
+	return r
+}
+
+func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) FirstCategoryId(firstCategoryId int64) *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
+	r.firstCategoryId = &firstCategoryId
+	return r
+}
+
+func (r *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest) SecondCategoryId(secondCategoryId int64) *ApiOpenApi2StarMcnProviderGetUnparticipatedTaskGetRequest {
+	r.secondCategoryId = &secondCategoryId
 	return r
 }
 
@@ -216,6 +234,15 @@ func (a *StarMcnProviderGetUnparticipatedTaskV2ApiService) getExecute(r *ApiOpen
 	}
 	if r.componentType != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "component_type", r.componentType)
+	}
+	if r.searchTags != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "search_tags", r.searchTags)
+	}
+	if r.firstCategoryId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "first_category_id", r.firstCategoryId)
+	}
+	if r.secondCategoryId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "second_category_id", r.secondCategoryId)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

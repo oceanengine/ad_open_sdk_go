@@ -23,12 +23,13 @@ import (
 type StarMcnProviderGetTaskItemListV2ApiService service
 
 type ApiOpenApi2StarMcnProviderGetTaskItemListGetRequest struct {
-	ctx        context.Context
-	ApiService *StarMcnProviderGetTaskItemListV2ApiService
-	starId     *int64
-	taskId     *int64
-	page       *int32
-	limit      *int32
+	ctx                context.Context
+	ApiService         *StarMcnProviderGetTaskItemListV2ApiService
+	starId             *int64
+	taskId             *int64
+	page               *int32
+	limit              *int32
+	providerConfirming *bool
 }
 
 func (r *ApiOpenApi2StarMcnProviderGetTaskItemListGetRequest) StarId(starId int64) *ApiOpenApi2StarMcnProviderGetTaskItemListGetRequest {
@@ -48,6 +49,12 @@ func (r *ApiOpenApi2StarMcnProviderGetTaskItemListGetRequest) Page(page int32) *
 
 func (r *ApiOpenApi2StarMcnProviderGetTaskItemListGetRequest) Limit(limit int32) *ApiOpenApi2StarMcnProviderGetTaskItemListGetRequest {
 	r.limit = &limit
+	return r
+}
+
+// 筛选待客户确认视频
+func (r *ApiOpenApi2StarMcnProviderGetTaskItemListGetRequest) ProviderConfirming(providerConfirming bool) *ApiOpenApi2StarMcnProviderGetTaskItemListGetRequest {
+	r.providerConfirming = &providerConfirming
 	return r
 }
 
@@ -127,6 +134,9 @@ func (a *StarMcnProviderGetTaskItemListV2ApiService) getExecute(r *ApiOpenApi2St
 	parameterAddToHeaderOrQuery(localVarQueryParams, "task_id", r.taskId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "limit", r.limit)
+	if r.providerConfirming != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "provider_confirming", r.providerConfirming)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

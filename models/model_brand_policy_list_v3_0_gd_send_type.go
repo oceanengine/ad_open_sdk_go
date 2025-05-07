@@ -15,12 +15,15 @@ type BrandPolicyListV30GdSendType string
 
 // List of brand_policy_list_v3.0_gd_send_type
 const (
-	CTR_BrandPolicyListV30GdSendType         BrandPolicyListV30GdSendType = "CTR"
-	FANS_INCR_BrandPolicyListV30GdSendType   BrandPolicyListV30GdSendType = "FANS_INCR"
-	FORM_BrandPolicyListV30GdSendType        BrandPolicyListV30GdSendType = "FORM"
-	HOISTING_BrandPolicyListV30GdSendType    BrandPolicyListV30GdSendType = "HOISTING"
-	INTERACTIVE_BrandPolicyListV30GdSendType BrandPolicyListV30GdSendType = "INTERACTIVE"
-	PLANT_GRASS_BrandPolicyListV30GdSendType BrandPolicyListV30GdSendType = "PLANT_GRASS"
+	CPV_EFFECTIVE_BrandPolicyListV30GdSendType BrandPolicyListV30GdSendType = "CPV_EFFECTIVE"
+	CTR_BrandPolicyListV30GdSendType           BrandPolicyListV30GdSendType = "CTR"
+	FANS_INCR_BrandPolicyListV30GdSendType     BrandPolicyListV30GdSendType = "FANS_INCR"
+	FORM_BrandPolicyListV30GdSendType          BrandPolicyListV30GdSendType = "FORM"
+	HOISTING_BrandPolicyListV30GdSendType      BrandPolicyListV30GdSendType = "HOISTING"
+	INTERACTIVE_BrandPolicyListV30GdSendType   BrandPolicyListV30GdSendType = "INTERACTIVE"
+	PLANT_GRASS_BrandPolicyListV30GdSendType   BrandPolicyListV30GdSendType = "PLANT_GRASS"
+	REACH_BrandPolicyListV30GdSendType         BrandPolicyListV30GdSendType = "REACH"
+	SEQUENCE_BrandPolicyListV30GdSendType      BrandPolicyListV30GdSendType = "SEQUENCE"
 )
 
 // Ptr returns reference to brand_policy_list_v3.0_gd_send_type value

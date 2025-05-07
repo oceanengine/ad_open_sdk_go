@@ -66,6 +66,7 @@ type AudiencePackageGetV30ResponseDataAudiencePackagesInner struct {
 	Gender      *AudiencePackageGetV30DataAudiencePackagesGender `json:"gender,omitempty"`
 	//
 	Geolocation        []*AudiencePackageGetV30ResponseDataAudiencePackagesInnerGeolocationInner `json:"geolocation,omitempty"`
+	HarmonyOsv         *AudiencePackageGetV30DataAudiencePackagesHarmonyOsv                      `json:"harmony_osv,omitempty"`
 	HideIfConverted    *AudiencePackageGetV30DataAudiencePackagesHideIfConverted                 `json:"hide_if_converted,omitempty"`
 	HideIfExists       *AudiencePackageGetV30DataAudiencePackagesHideIfExists                    `json:"hide_if_exists,omitempty"`
 	InterestActionMode *AudiencePackageGetV30DataAudiencePackagesInterestActionMode              `json:"interest_action_mode,omitempty"`

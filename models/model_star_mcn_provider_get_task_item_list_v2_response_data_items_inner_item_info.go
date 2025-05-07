@@ -13,13 +13,23 @@ package models
 // StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfo
 type StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfo struct {
 	// 抖音侧状态(在线状态)
-	AwemeItemStatus *int64                                                                  `json:"aweme_item_status,omitempty"`
-	CoreUser        *StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoCoreUser `json:"core_user,omitempty"`
+	AwemeItemStatus *int64 `json:"aweme_item_status,omitempty"`
+	// 通用标签id，i64前端丢精度
+	CommonTagIds *map[string][]string                                                    `json:"common_tag_ids,omitempty"`
+	CoreUser     *StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoCoreUser `json:"core_user,omitempty"`
 	// 3: string head_image_uri,
 	CreateTime *int64                                                              `json:"create_time,omitempty"`
 	Data       *StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfoData `json:"data,omitempty"`
+	// 直播投稿的直播状态，直播的时长
+	Duration *int64 `json:"duration,omitempty"`
 	//
 	ItemId *int64 `json:"item_id,omitempty"`
+	// 广告素材ID
+	LegoMid *int64 `json:"lego_mid,omitempty"`
+	// 发布时间
+	ReleaseTime *int64 `json:"release_time,omitempty"`
 	//
 	Title *string `json:"title,omitempty"`
+	//
+	Url *string `json:"url,omitempty"`
 }

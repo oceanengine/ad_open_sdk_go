@@ -23,19 +23,20 @@ import (
 type BrandToolQueryPublishPriceV30ApiService service
 
 type ApiOpenApiV30BrandToolQueryPublishPriceGetRequest struct {
-	ctx          context.Context
-	ApiService   *BrandToolQueryPublishPriceV30ApiService
-	advertiserId *int64
-	classify     *BrandToolQueryPublishPriceV30Classify
-	proType      *BrandToolQueryPublishPriceV30ProType
-	adForm       *BrandToolQueryPublishPriceV30AdForm
-	appOrigin    *BrandToolQueryPublishPriceV30AppOrigin
-	pricingType  *BrandToolQueryPublishPriceV30PricingType
-	gdSendType   *BrandToolQueryPublishPriceV30GdSendType
-	policyNo     *string
-	deliveryInfo *BrandToolQueryPublishPriceV30DeliveryInfo
-	intentionNo  *string
-	audienceInfo *BrandToolQueryPublishPriceV30AudienceInfo
+	ctx           context.Context
+	ApiService    *BrandToolQueryPublishPriceV30ApiService
+	advertiserId  *int64
+	classify      *BrandToolQueryPublishPriceV30Classify
+	proType       *BrandToolQueryPublishPriceV30ProType
+	adForm        *BrandToolQueryPublishPriceV30AdForm
+	appOrigin     *BrandToolQueryPublishPriceV30AppOrigin
+	pricingType   *BrandToolQueryPublishPriceV30PricingType
+	gdSendType    *BrandToolQueryPublishPriceV30GdSendType
+	policyNo      *string
+	deliveryInfo  *BrandToolQueryPublishPriceV30DeliveryInfo
+	intentionNo   *string
+	audienceInfo  *BrandToolQueryPublishPriceV30AudienceInfo
+	frequencyInfo *BrandToolQueryPublishPriceV30FrequencyInfo
 }
 
 // 广告主ID
@@ -101,6 +102,12 @@ func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) IntentionNo(intentio
 // 定向
 func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) AudienceInfo(audienceInfo BrandToolQueryPublishPriceV30AudienceInfo) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
 	r.audienceInfo = &audienceInfo
+	return r
+}
+
+// 频控
+func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) FrequencyInfo(frequencyInfo BrandToolQueryPublishPriceV30FrequencyInfo) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
+	r.frequencyInfo = &frequencyInfo
 	return r
 }
 
@@ -194,6 +201,9 @@ func (a *BrandToolQueryPublishPriceV30ApiService) getExecute(r *ApiOpenApiV30Bra
 	parameterAddToHeaderOrQuery(localVarQueryParams, "gd_send_type", r.gdSendType)
 	if r.audienceInfo != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "audience_info", r.audienceInfo)
+	}
+	if r.frequencyInfo != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "frequency_info", r.frequencyInfo)
 	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "policy_no", r.policyNo)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "delivery_info", r.deliveryInfo)

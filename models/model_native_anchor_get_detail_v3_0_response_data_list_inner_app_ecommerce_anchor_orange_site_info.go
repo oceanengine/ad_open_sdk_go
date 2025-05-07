@@ -15,5 +15,7 @@ type NativeAnchorGetDetailV30ResponseDataListInnerAppEcommerceAnchorOrangeSiteIn
 	//
 	AndroidExternalUrl *string `json:"android_external_url,omitempty"`
 	//
+	HarmonyExternalUrl *string `json:"harmony_external_url,omitempty"`
+	//
 	IosExternalUrl *string `json:"ios_external_url,omitempty"`
 }

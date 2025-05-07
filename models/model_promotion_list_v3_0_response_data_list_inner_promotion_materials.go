@@ -56,7 +56,8 @@ type PromotionListV30ResponseDataListInnerPromotionMaterials struct {
 	//
 	TitleMaterialList []*PromotionListV30ResponseDataListInnerPromotionMaterialsTitleMaterialListInner `json:"title_material_list,omitempty"`
 	//
-	Ulink *string `json:"ulink,omitempty"`
+	Ulink     *string                                              `json:"ulink,omitempty"`
+	UlinkType *PromotionListV30DataListPromotionMaterialsUlinkType `json:"ulink_type,omitempty"`
 	//
 	UlinkUrl *string `json:"ulink_url,omitempty"`
 	//

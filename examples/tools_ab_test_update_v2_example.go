@@ -23,6 +23,7 @@ import (
 )
 
 type ApiOpenApi2ToolsAbTestUpdatePostRequestExample struct {
+	Version                    string                     `json:"version"`
 	ToolsAbTestUpdateV2Request ToolsAbTestUpdateV2Request `json:"ToolsAbTestUpdateV2Request,omitempty"`
 }
 
@@ -43,9 +44,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.ToolsAbTestUpdateV2Api().
-		Post(ctx).
+		Post(ctx, version).
 		AccessToken(accessToken).
-		ToolsAbTestUpdateV2Request(request.ToolsAbTestUpdateV2Request).
+		Version(request.Version).ToolsAbTestUpdateV2Request(request.ToolsAbTestUpdateV2Request).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -1,5 +1,5 @@
 /*
-API version: 1.1.48
+API version: 1.1.49
 */
 package ad_open_sdk_go
 
@@ -513,6 +513,10 @@ func (c *Client) BrandToolMaterialPreviewV30Api() *api.BrandToolMaterialPreviewV
 
 func (c *Client) BrandToolQueryPublishPriceV30Api() *api.BrandToolQueryPublishPriceV30ApiService {
 	return c.ApiClient.BrandToolQueryPublishPriceV30Api
+}
+
+func (c *Client) BrandToolQueryStockBalanceV30Api() *api.BrandToolQueryStockBalanceV30ApiService {
+	return c.ApiClient.BrandToolQueryStockBalanceV30Api
 }
 
 func (c *Client) BrandUploadImageV30Api() *api.BrandUploadImageV30ApiService {
@@ -1475,6 +1479,10 @@ func (c *Client) LocalReportAccountGetV30Api() *api.LocalReportAccountGetV30ApiS
 	return c.ApiClient.LocalReportAccountGetV30Api
 }
 
+func (c *Client) LocalReportAudienceGetV30Api() *api.LocalReportAudienceGetV30ApiService {
+	return c.ApiClient.LocalReportAudienceGetV30Api
+}
+
 func (c *Client) LocalReportMaterialGetV30Api() *api.LocalReportMaterialGetV30ApiService {
 	return c.ApiClient.LocalReportMaterialGetV30Api
 }
@@ -1641,6 +1649,10 @@ func (c *Client) PromotionNameUpdateV30Api() *api.PromotionNameUpdateV30ApiServi
 
 func (c *Client) PromotionNewcustomerCreateV30Api() *api.PromotionNewcustomerCreateV30ApiService {
 	return c.ApiClient.PromotionNewcustomerCreateV30Api
+}
+
+func (c *Client) PromotionNewcustomerTypeGetV30Api() *api.PromotionNewcustomerTypeGetV30ApiService {
+	return c.ApiClient.PromotionNewcustomerTypeGetV30Api
 }
 
 func (c *Client) PromotionRejectReasonGetV30Api() *api.PromotionRejectReasonGetV30ApiService {
@@ -2339,6 +2351,10 @@ func (c *Client) ReportBrandDataV30Api() *api.ReportBrandDataV30ApiService {
 	return c.ApiClient.ReportBrandDataV30Api
 }
 
+func (c *Client) ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Api() *api.ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ApiService {
+	return c.ApiClient.ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Api
+}
+
 func (c *Client) ReportCampaignGetV2Api() *api.ReportCampaignGetV2ApiService {
 	return c.ApiClient.ReportCampaignGetV2Api
 }
@@ -2733,6 +2749,10 @@ func (c *Client) StarMcnGetUnparticipatedTaskV2Api() *api.StarMcnGetUnparticipat
 
 func (c *Client) StarMcnProviderGetParticipatedTaskV2Api() *api.StarMcnProviderGetParticipatedTaskV2ApiService {
 	return c.ApiClient.StarMcnProviderGetParticipatedTaskV2Api
+}
+
+func (c *Client) StarMcnProviderGetTagOnTaskV2Api() *api.StarMcnProviderGetTagOnTaskV2ApiService {
+	return c.ApiClient.StarMcnProviderGetTagOnTaskV2Api
 }
 
 func (c *Client) StarMcnProviderGetTaskDetailV2Api() *api.StarMcnProviderGetTaskDetailV2ApiService {

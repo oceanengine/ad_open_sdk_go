@@ -14,6 +14,8 @@ package models
 type ClueCaCreateV2Request struct {
 	// 广告主id
 	AdvertiserId int64 `json:"advertiser_id"`
+	// 线索通后台企微id
+	CorpId *string `json:"corp_id,omitempty"`
 	// 获客助手组件名称
 	Name string `json:"name"`
 	// 客服user_id列表

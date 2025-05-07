@@ -28,8 +28,9 @@ type ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest struct {
 	advertiserId  *int64
 	startDate     *string
 	endDate       *string
-	marketingGoal *QianchuanReportUniPromotionGetV10MarketingGoal
 	fields        *[]string
+	marketingGoal *QianchuanReportUniPromotionGetV10MarketingGoal
+	orderPlatform *QianchuanReportUniPromotionGetV10OrderPlatform
 }
 
 func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
@@ -49,13 +50,18 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) EndDate(endDate 
 	return r
 }
 
+func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) Fields(fields []string) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
+	r.fields = &fields
+	return r
+}
+
 func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) MarketingGoal(marketingGoal QianchuanReportUniPromotionGetV10MarketingGoal) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) Fields(fields []string) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
-	r.fields = &fields
+func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) OrderPlatform(orderPlatform QianchuanReportUniPromotionGetV10OrderPlatform) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
+	r.orderPlatform = &orderPlatform
 	return r
 }
 
@@ -118,9 +124,6 @@ func (a *QianchuanReportUniPromotionGetV10ApiService) getExecute(r *ApiOpenApiV1
 	if r.endDate == nil {
 		return localVarReturnValue, nil, ReportError("endDate is required and must be specified")
 	}
-	if r.marketingGoal == nil {
-		return localVarReturnValue, nil, ReportError("marketingGoal is required and must be specified")
-	}
 	if r.fields == nil {
 		return localVarReturnValue, nil, ReportError("fields is required and must be specified")
 	}
@@ -128,7 +131,12 @@ func (a *QianchuanReportUniPromotionGetV10ApiService) getExecute(r *ApiOpenApiV1
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "start_date", r.startDate)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "end_date", r.endDate)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "marketing_goal", r.marketingGoal)
+	if r.marketingGoal != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "marketing_goal", r.marketingGoal)
+	}
+	if r.orderPlatform != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "order_platform", r.orderPlatform)
+	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "fields", r.fields)
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

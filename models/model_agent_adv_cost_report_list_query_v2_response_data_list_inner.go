@@ -37,6 +37,10 @@ type AgentAdvCostReportListQueryV2ResponseDataListInner struct {
 	CashbackType     *AgentAdvCostReportListQueryV2DataListCashbackType `json:"cashback_type,omitempty"`
 	// 资源包类型名称
 	CashbackTypeName *string `json:"cashback_type_name,omitempty"`
+	// 广告主公司id
+	CompanyId *int64 `json:"company_id,omitempty"`
+	// 广告主公司名称
+	CompanyName *string `json:"company_name,omitempty"`
 	// 总消耗(单位：千分之一分)
 	Cost       *int64                                           `json:"cost,omitempty"`
 	CostSource *AgentAdvCostReportListQueryV2DataListCostSource `json:"cost_source,omitempty"`

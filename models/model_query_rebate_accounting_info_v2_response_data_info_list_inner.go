@@ -26,6 +26,8 @@ type QueryRebateAccountingInfoV2ResponseDataInfoListInner struct {
 	CreateTime *string `json:"create_time,omitempty"`
 	// 当前审批节点名称 （待代理商审批/待平台复核终审/审批完成）
 	CurrentApprovalStatusName *string `json:"current_approval_status_name,omitempty"`
+	// 激励名称
+	InspireName *string `json:"inspire_name,omitempty"`
 	// 是否已创建返点 1:是 2:否
 	IsCreateRebate *int32 `json:"is_create_rebate,omitempty"`
 	// 是否已创建返点name (\"是\"、\"否\")
@@ -48,6 +50,12 @@ type QueryRebateAccountingInfoV2ResponseDataInfoListInner struct {
 	RebateBalanceId *int64 `json:"rebate_balance_id,omitempty"`
 	// 返点流水编号（与平台披露编号一致，建议使用）
 	RebateBalanceSerial *string `json:"rebate_balance_serial,omitempty"`
+	// 是否复算
+	Recheck *int32 `json:"recheck,omitempty"`
+	// 是否复算name
+	RecheckName *string `json:"recheck_name,omitempty"`
+	// 复算关联返点核算流水
+	RecheckRelatedNo *string `json:"recheck_related_no,omitempty"`
 	// 审批状态code
 	Status *int32 `json:"status,omitempty"`
 	// 审批状态name

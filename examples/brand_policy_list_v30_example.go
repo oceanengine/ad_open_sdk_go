@@ -23,16 +23,17 @@ import (
 )
 
 type ApiOpenApiV30BrandPolicyListGetRequestExample struct {
-	AdvertiserId int64                          `json:"advertiser_id"`
-	Classify     BrandPolicyListV30Classify     `json:"classify"`
-	ProType      BrandPolicyListV30ProType      `json:"pro_type"`
-	AdForm       BrandPolicyListV30AdForm       `json:"ad_form"`
-	AppOrigin    BrandPolicyListV30AppOrigin    `json:"app_origin"`
-	PricingType  BrandPolicyListV30PricingType  `json:"pricing_type"`
-	GdSendType   BrandPolicyListV30GdSendType   `json:"gd_send_type"`
-	DeliveryInfo BrandPolicyListV30DeliveryInfo `json:"delivery_info"`
-	IntentionNo  string                         `json:"intention_no,omitempty"`
-	AudienceInfo BrandPolicyListV30AudienceInfo `json:"audience_info,omitempty"`
+	AdvertiserId  int64                           `json:"advertiser_id"`
+	Classify      BrandPolicyListV30Classify      `json:"classify"`
+	ProType       BrandPolicyListV30ProType       `json:"pro_type"`
+	AdForm        BrandPolicyListV30AdForm        `json:"ad_form"`
+	AppOrigin     BrandPolicyListV30AppOrigin     `json:"app_origin"`
+	PricingType   BrandPolicyListV30PricingType   `json:"pricing_type"`
+	GdSendType    BrandPolicyListV30GdSendType    `json:"gd_send_type"`
+	DeliveryInfo  BrandPolicyListV30DeliveryInfo  `json:"delivery_info"`
+	IntentionNo   string                          `json:"intention_no,omitempty"`
+	AudienceInfo  BrandPolicyListV30AudienceInfo  `json:"audience_info,omitempty"`
+	FrequencyInfo BrandPolicyListV30FrequencyInfo `json:"frequency_info,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/brand/policy/list/ Get
@@ -54,7 +55,7 @@ func main() {
 	resp, httpRes, err := apiClient.BrandPolicyListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Classify(request.Classify).ProType(request.ProType).AdForm(request.AdForm).AppOrigin(request.AppOrigin).PricingType(request.PricingType).GdSendType(request.GdSendType).DeliveryInfo(request.DeliveryInfo).IntentionNo(request.IntentionNo).AudienceInfo(request.AudienceInfo).
+		AdvertiserId(request.AdvertiserId).Classify(request.Classify).ProType(request.ProType).AdForm(request.AdForm).AppOrigin(request.AppOrigin).PricingType(request.PricingType).GdSendType(request.GdSendType).DeliveryInfo(request.DeliveryInfo).IntentionNo(request.IntentionNo).AudienceInfo(request.AudienceInfo).FrequencyInfo(request.FrequencyInfo).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

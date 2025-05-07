@@ -23,10 +23,11 @@ import (
 )
 
 type ApiOpenApi2StarMcnProviderGetTaskItemListGetRequestExample struct {
-	StarId int64 `json:"star_id"`
-	TaskId int64 `json:"task_id"`
-	Page   int32 `json:"page"`
-	Limit  int32 `json:"limit"`
+	StarId             int64 `json:"star_id"`
+	TaskId             int64 `json:"task_id"`
+	Page               int32 `json:"page"`
+	Limit              int32 `json:"limit"`
+	ProviderConfirming bool  `json:"provider_confirming,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/star/mcn/provider_get_task_item_list/ Get
@@ -48,7 +49,7 @@ func main() {
 	resp, httpRes, err := apiClient.StarMcnProviderGetTaskItemListV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		StarId(request.StarId).TaskId(request.TaskId).Page(request.Page).Limit(request.Limit).
+		StarId(request.StarId).TaskId(request.TaskId).Page(request.Page).Limit(request.Limit).ProviderConfirming(request.ProviderConfirming).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)
