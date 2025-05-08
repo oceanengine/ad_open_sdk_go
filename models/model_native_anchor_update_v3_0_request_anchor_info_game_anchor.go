@@ -35,6 +35,8 @@ type NativeAnchorUpdateV30RequestAnchorInfoGameAnchor struct {
 	GameType        *NativeAnchorUpdateV30AnchorInfoGameAnchorGameType                      `json:"game_type,omitempty"`
 	// 引导文案，长度1～15
 	GuideText *string `json:"guide_text,omitempty"`
+	//
+	HarmonyDownloadUrl *string `json:"harmony_download_url,omitempty"`
 	// 锚点头部图片list，推荐尺寸为2：1的横图
 	HeadImageList []*NativeAnchorUpdateV30RequestAnchorInfoGameAnchorHeadImageListInner `json:"head_image_list,omitempty"`
 	// 小游戏图片list，当前锚点类型且game_type为MICRO_GAME必填，比例为1：1，最多一个

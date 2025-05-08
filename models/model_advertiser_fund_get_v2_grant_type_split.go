@@ -15,8 +15,8 @@ type AdvertiserFundGetV2GrantTypeSplit string
 
 // List of advertiser_fund_get_v2_grant_type_split
 const (
-	OFF_AdvertiserFundGetV2GrantTypeSplit AdvertiserFundGetV2GrantTypeSplit = "OFF"
 	ON_AdvertiserFundGetV2GrantTypeSplit  AdvertiserFundGetV2GrantTypeSplit = "ON"
+	OFF_AdvertiserFundGetV2GrantTypeSplit AdvertiserFundGetV2GrantTypeSplit = "OFF"
 )
 
 // Ptr returns reference to advertiser_fund_get_v2_grant_type_split value

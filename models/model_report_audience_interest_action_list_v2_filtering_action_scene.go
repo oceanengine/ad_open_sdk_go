@@ -16,10 +16,10 @@ type ReportAudienceInterestActionListV2FilteringActionScene string
 // List of report_audience_interest_action_list_v2_filtering_action_scene
 const (
 	AD_ReportAudienceInterestActionListV2FilteringActionScene         ReportAudienceInterestActionListV2FilteringActionScene = "AD"
+	APP_ReportAudienceInterestActionListV2FilteringActionScene        ReportAudienceInterestActionListV2FilteringActionScene = "APP"
 	NEWS_ReportAudienceInterestActionListV2FilteringActionScene       ReportAudienceInterestActionListV2FilteringActionScene = "NEWS"
 	SEARCH_ReportAudienceInterestActionListV2FilteringActionScene     ReportAudienceInterestActionListV2FilteringActionScene = "SEARCH"
 	E_COMMERCE_ReportAudienceInterestActionListV2FilteringActionScene ReportAudienceInterestActionListV2FilteringActionScene = "E-COMMERCE"
-	APP_ReportAudienceInterestActionListV2FilteringActionScene        ReportAudienceInterestActionListV2FilteringActionScene = "APP"
 )
 
 // Ptr returns reference to report_audience_interest_action_list_v2_filtering_action_scene value

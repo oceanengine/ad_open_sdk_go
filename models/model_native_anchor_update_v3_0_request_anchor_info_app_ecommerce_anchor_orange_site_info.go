@@ -14,6 +14,8 @@ package models
 type NativeAnchorUpdateV30RequestAnchorInfoAppEcommerceAnchorOrangeSiteInfo struct {
 	// 安卓端落地页链接，内部需要包含应用下载链接
 	AndroidExternalUrl *string `json:"android_external_url,omitempty"`
+	//
+	HarmonyExternalUrl *string `json:"harmony_external_url,omitempty"`
 	// iOS端落地页链接，内部需要包含应用下载链接
 	IosExternalUrl *string `json:"ios_external_url,omitempty"`
 }

@@ -28,6 +28,10 @@ type NativeAnchorUpdateV30RequestAnchorInfoNetServiceAnchor struct {
 	AppTags []string `json:"app_tags,omitempty"`
 	// 引导文案，长度：1～15
 	GuideText *string `json:"guide_text,omitempty"`
+	//
+	HarmonyAnchorTitle *string `json:"harmony_anchor_title,omitempty"`
+	//
+	HarmonyDownloadUrl *string `json:"harmony_download_url,omitempty"`
 	// 锚点头部图片list，推荐尺寸为2：1的横图
 	HeadImageList []*NativeAnchorUpdateV30RequestAnchorInfoNetServiceAnchorHeadImageListInner `json:"head_image_list,omitempty"`
 	// 小程序图片list，当前锚点类型且net_service_type为'MICRO_APP' 必填，比例为1：1，最多一个

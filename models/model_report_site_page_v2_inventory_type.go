@@ -15,9 +15,9 @@ type ReportSitePageV2InventoryType string
 
 // List of report_site_page_v2_inventory_type
 const (
-	TOUTIAO_ReportSitePageV2InventoryType    ReportSitePageV2InventoryType = "TOUTIAO"
-	UNION_SLOT_ReportSitePageV2InventoryType ReportSitePageV2InventoryType = "UNION_SLOT"
 	WATERMELON_ReportSitePageV2InventoryType ReportSitePageV2InventoryType = "WATERMELON"
+	UNION_SLOT_ReportSitePageV2InventoryType ReportSitePageV2InventoryType = "UNION_SLOT"
+	TOUTIAO_ReportSitePageV2InventoryType    ReportSitePageV2InventoryType = "TOUTIAO"
 	HOTSOON_ReportSitePageV2InventoryType    ReportSitePageV2InventoryType = "HOTSOON"
 	AWEME_ReportSitePageV2InventoryType      ReportSitePageV2InventoryType = "AWEME"
 )

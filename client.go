@@ -1,5 +1,5 @@
 /*
-API version: 1.1.49
+API version: 1.1.50
 */
 package ad_open_sdk_go
 
@@ -2527,6 +2527,10 @@ func (c *Client) StarAttachmentUploadV2Api() *api.StarAttachmentUploadV2ApiServi
 	return c.ApiClient.StarAttachmentUploadV2Api
 }
 
+func (c *Client) StarAttributeJdOverflowConvertV2Api() *api.StarAttributeJdOverflowConvertV2ApiService {
+	return c.ApiClient.StarAttributeJdOverflowConvertV2Api
+}
+
 func (c *Client) StarAttributeUserEventFeedbackV2Api() *api.StarAttributeUserEventFeedbackV2ApiService {
 	return c.ApiClient.StarAttributeUserEventFeedbackV2Api
 }
@@ -2645,6 +2649,10 @@ func (c *Client) StarDemandCreateAssignV2Api() *api.StarDemandCreateAssignV2ApiS
 
 func (c *Client) StarDemandCreateChallengeV2Api() *api.StarDemandCreateChallengeV2ApiService {
 	return c.ApiClient.StarDemandCreateChallengeV2Api
+}
+
+func (c *Client) StarDemandGetEpisodeLimitV2Api() *api.StarDemandGetEpisodeLimitV2ApiService {
+	return c.ApiClient.StarDemandGetEpisodeLimitV2Api
 }
 
 func (c *Client) StarDemandGetResellCodeV2Api() *api.StarDemandGetResellCodeV2ApiService {

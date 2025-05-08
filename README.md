@@ -831,6 +831,7 @@ Class | Method | HTTP request
 *SharedWalletWalletRelationGetV30Api* | **OpenApiV30SharedWalletWalletRelationGetGet** | **Get** /open_api/v3.0/shared_wallet/wallet_relation/get/
 *SpiTaskGetV2Api* | **OpenApi2SpiTaskGetGet** | **Get** /open_api/2/spi_task/get/
 *StarAttachmentUploadV2Api* | **OpenApi2StarAttachmentUploadPost** | **Post** /open_api/2/star/attachment/upload/
+*StarAttributeJdOverflowConvertV2Api* | **OpenApi2StarAttributeJdOverflowConvertPost** | **Post** /open_api/2/star/attribute/jd_overflow_convert/
 *StarAttributeUserEventFeedbackV2Api* | **OpenApi2StarAttributeUserEventFeedbackPost** | **Post** /open_api/2/star/attribute/user_event_feedback/
 *StarAttributeUserInfoFeedbackV2Api* | **OpenApi2StarAttributeUserInfoFeedbackPost** | **Post** /open_api/2/star/attribute/user_info_feedback/
 *StarBillGetPendingV2Api* | **OpenApi2StarBillGetPendingGet** | **Get** /open_api/2/star/bill/get_pending/
@@ -861,6 +862,7 @@ Class | Method | HTTP request
 *StarDataTaskTimelineReportV2Api* | **OpenApi2StarDataTaskTimelineReportGet** | **Get** /open_api/2/star/data/task_timeline_report/
 *StarDemandCreateAssignV2Api* | **OpenApi2StarDemandCreateAssignPost** | **Post** /open_api/2/star/demand/create_assign/
 *StarDemandCreateChallengeV2Api* | **OpenApi2StarDemandCreateChallengePost** | **Post** /open_api/2/star/demand/create_challenge/
+*StarDemandGetEpisodeLimitV2Api* | **OpenApi2StarDemandGetEpisodeLimitGet** | **Get** /open_api/2/star/demand/get_episode_limit/
 *StarDemandGetResellCodeV2Api* | **OpenApi2StarDemandGetResellCodeGet** | **Get** /open_api/2/star/demand/get_resell_code/
 *StarDemandListV2Api* | **OpenApi2StarDemandListGet** | **Get** /open_api/2/star/demand/list/
 *StarDemandOmCreateChallengeV2Api* | **OpenApi2StarDemandOmCreateChallengePost** | **Post** /open_api/2/star/demand/om_create_challenge/

@@ -30,6 +30,7 @@ const (
 	TRANSFER_SharedWalletTransactionDetailGetV30DataResultsBizType               SharedWalletTransactionDetailGetV30DataResultsBizType = "TRANSFER"
 	TRANSFER_IN_SharedWalletTransactionDetailGetV30DataResultsBizType            SharedWalletTransactionDetailGetV30DataResultsBizType = "TRANSFER_IN"
 	TRANSFER_OUT_SharedWalletTransactionDetailGetV30DataResultsBizType           SharedWalletTransactionDetailGetV30DataResultsBizType = "TRANSFER_OUT"
+	RISK_CONTROL_FREEZE_SharedWalletTransactionDetailGetV30DataResultsBizType    SharedWalletTransactionDetailGetV30DataResultsBizType = "RISK_CONTROL_FREEZE"
 )
 
 // Ptr returns reference to shared_wallet_transaction_detail_get_v3.0_data_results_biz_type value

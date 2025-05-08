@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.49
+// APIClient manages communication with the Oceanengine Open Api API v1.1.50
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -1301,6 +1301,8 @@ type APIClient struct {
 
 	StarAttachmentUploadV2Api *StarAttachmentUploadV2ApiService
 
+	StarAttributeJdOverflowConvertV2Api *StarAttributeJdOverflowConvertV2ApiService
+
 	StarAttributeUserEventFeedbackV2Api *StarAttributeUserEventFeedbackV2ApiService
 
 	StarAttributeUserInfoFeedbackV2Api *StarAttributeUserInfoFeedbackV2ApiService
@@ -1360,6 +1362,8 @@ type APIClient struct {
 	StarDemandCreateAssignV2Api *StarDemandCreateAssignV2ApiService
 
 	StarDemandCreateChallengeV2Api *StarDemandCreateChallengeV2ApiService
+
+	StarDemandGetEpisodeLimitV2Api *StarDemandGetEpisodeLimitV2ApiService
 
 	StarDemandGetResellCodeV2Api *StarDemandGetResellCodeV2ApiService
 
@@ -2639,6 +2643,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.SharedWalletWalletRelationGetV30Api = (*SharedWalletWalletRelationGetV30ApiService)(&c.common)
 	c.SpiTaskGetV2Api = (*SpiTaskGetV2ApiService)(&c.common)
 	c.StarAttachmentUploadV2Api = (*StarAttachmentUploadV2ApiService)(&c.common)
+	c.StarAttributeJdOverflowConvertV2Api = (*StarAttributeJdOverflowConvertV2ApiService)(&c.common)
 	c.StarAttributeUserEventFeedbackV2Api = (*StarAttributeUserEventFeedbackV2ApiService)(&c.common)
 	c.StarAttributeUserInfoFeedbackV2Api = (*StarAttributeUserInfoFeedbackV2ApiService)(&c.common)
 	c.StarBillGetPendingV2Api = (*StarBillGetPendingV2ApiService)(&c.common)
@@ -2669,6 +2674,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarDataTaskTimelineReportV2Api = (*StarDataTaskTimelineReportV2ApiService)(&c.common)
 	c.StarDemandCreateAssignV2Api = (*StarDemandCreateAssignV2ApiService)(&c.common)
 	c.StarDemandCreateChallengeV2Api = (*StarDemandCreateChallengeV2ApiService)(&c.common)
+	c.StarDemandGetEpisodeLimitV2Api = (*StarDemandGetEpisodeLimitV2ApiService)(&c.common)
 	c.StarDemandGetResellCodeV2Api = (*StarDemandGetResellCodeV2ApiService)(&c.common)
 	c.StarDemandListV2Api = (*StarDemandListV2ApiService)(&c.common)
 	c.StarDemandOmCreateChallengeV2Api = (*StarDemandOmCreateChallengeV2ApiService)(&c.common)

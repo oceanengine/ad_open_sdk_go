@@ -15,11 +15,11 @@ type ToolsBidSuggestV2Career string
 
 // List of tools_bid_suggest_v2_career
 const (
-	IT_ToolsBidSuggestV2Career              ToolsBidSuggestV2Career = "IT"
 	COLLEGE_STUDENT_ToolsBidSuggestV2Career ToolsBidSuggestV2Career = "COLLEGE_STUDENT"
-	FINANCIAL_ToolsBidSuggestV2Career       ToolsBidSuggestV2Career = "FINANCIAL"
 	MEDICAL_STAFF_ToolsBidSuggestV2Career   ToolsBidSuggestV2Career = "MEDICAL_STAFF"
+	FINANCIAL_ToolsBidSuggestV2Career       ToolsBidSuggestV2Career = "FINANCIAL"
 	CIVIL_SERVANTS_ToolsBidSuggestV2Career  ToolsBidSuggestV2Career = "CIVIL_SERVANTS"
+	IT_ToolsBidSuggestV2Career              ToolsBidSuggestV2Career = "IT"
 	TEACHER_ToolsBidSuggestV2Career         ToolsBidSuggestV2Career = "TEACHER"
 )
 

@@ -29,6 +29,8 @@ type NativeAnchorUpdateV30RequestAnchorInfoAppEcommerceAnchor struct {
 	DownloadGuideText *string `json:"download_guide_text,omitempty"`
 	// 跳转链接类型枚举，1：橙子建站，橙子建站落地页设置字段必填；2：第三方落地页，第三方落地页设置字段必填
 	ExternalType *int64 `json:"external_type,omitempty"`
+	//
+	HarmonyAnchorTitle *string `json:"harmony_anchor_title,omitempty"`
 	// ios 锚点入口标题字段，长度：1～12
 	IosAnchorTitle          *string                                                                          `json:"ios_anchor_title,omitempty"`
 	OfficialActiBannerImage *NativeAnchorUpdateV30RequestAnchorInfoAppEcommerceAnchorOfficialActiBannerImage `json:"official_acti_banner_image,omitempty"`

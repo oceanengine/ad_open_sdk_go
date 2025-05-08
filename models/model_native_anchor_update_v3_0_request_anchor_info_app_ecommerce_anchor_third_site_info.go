@@ -16,6 +16,8 @@ type NativeAnchorUpdateV30RequestAnchorInfoAppEcommerceAnchorThirdSiteInfo struc
 	AndroidExternalUrl *string `json:"android_external_url,omitempty"`
 	// 第三方落地页
 	ExternalUrl *string `json:"external_url,omitempty"`
+	//
+	HarmonyExternalUrl *string `json:"harmony_external_url,omitempty"`
 	// iOS端落地页链接，内部需要包含应用下载链接
 	IosExternalUrl *string `json:"ios_external_url,omitempty"`
 }

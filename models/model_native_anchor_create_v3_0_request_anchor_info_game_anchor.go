@@ -35,6 +35,8 @@ type NativeAnchorCreateV30RequestAnchorInfoGameAnchor struct {
 	GameType        *NativeAnchorCreateV30AnchorInfoGameAnchorGameType                      `json:"game_type,omitempty"`
 	// 引导文案，长度1～15
 	GuideText *string `json:"guide_text,omitempty"`
+	// 鸿蒙下载链接
+	HarmonyDownloadUrl *string `json:"harmony_download_url,omitempty"`
 	// 锚点头部图片list，推荐尺寸为2：1的横图
 	HeadImageList []*NativeAnchorCreateV30RequestAnchorInfoGameAnchorHeadImageListInner `json:"head_image_list,omitempty"`
 	// 游戏icon图片，比例1:1，大小不超过1M，图片个数为1。
