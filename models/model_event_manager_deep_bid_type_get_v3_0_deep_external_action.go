@@ -108,6 +108,7 @@ const (
 	AD_CONVERT_TYPE_LOAN_CREDIT_EventManagerDeepBidTypeGetV30DeepExternalAction                 EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_LOAN_CREDIT"
 	AD_CONVERT_TYPE_LOCATION_ACTION_EventManagerDeepBidTypeGetV30DeepExternalAction             EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_LOCATION_ACTION"
 	AD_CONVERT_TYPE_LOTTERY_EventManagerDeepBidTypeGetV30DeepExternalAction                     EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_LOTTERY"
+	AD_CONVERT_TYPE_LTV_ROI_SEVEN_EventManagerDeepBidTypeGetV30DeepExternalAction               EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_LTV_ROI_SEVEN"
 	AD_CONVERT_TYPE_LT_ROI_EventManagerDeepBidTypeGetV30DeepExternalAction                      EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_LT_ROI"
 	AD_CONVERT_TYPE_MAP_SEARCH_EventManagerDeepBidTypeGetV30DeepExternalAction                  EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_MAP_SEARCH"
 	AD_CONVERT_TYPE_MESSAGE_EventManagerDeepBidTypeGetV30DeepExternalAction                     EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_MESSAGE"

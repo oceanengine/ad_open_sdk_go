@@ -15,9 +15,9 @@ type ReportCreativeGetV2FilteringCreativeMaterialModes string
 
 // List of report_creative_get_v2_filtering_creative_material_modes
 const (
-	INTERVENE_ReportCreativeGetV2FilteringCreativeMaterialModes       ReportCreativeGetV2FilteringCreativeMaterialModes = "INTERVENE"
-	CTR_ReportCreativeGetV2FilteringCreativeMaterialModes             ReportCreativeGetV2FilteringCreativeMaterialModes = "CTR"
 	STATIC_ASSEMBLE_ReportCreativeGetV2FilteringCreativeMaterialModes ReportCreativeGetV2FilteringCreativeMaterialModes = "STATIC_ASSEMBLE"
+	CTR_ReportCreativeGetV2FilteringCreativeMaterialModes             ReportCreativeGetV2FilteringCreativeMaterialModes = "CTR"
+	INTERVENE_ReportCreativeGetV2FilteringCreativeMaterialModes       ReportCreativeGetV2FilteringCreativeMaterialModes = "INTERVENE"
 )
 
 // Ptr returns reference to report_creative_get_v2_filtering_creative_material_modes value

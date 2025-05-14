@@ -108,6 +108,7 @@ const (
 	AD_CONVERT_TYPE_LOAN_CREDIT_ProjectListV30DataListOptimizeGoalDeepExternalAction                 ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LOAN_CREDIT"
 	AD_CONVERT_TYPE_LOCATION_ACTION_ProjectListV30DataListOptimizeGoalDeepExternalAction             ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LOCATION_ACTION"
 	AD_CONVERT_TYPE_LOTTERY_ProjectListV30DataListOptimizeGoalDeepExternalAction                     ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LOTTERY"
+	AD_CONVERT_TYPE_LTV_ROI_SEVEN_ProjectListV30DataListOptimizeGoalDeepExternalAction               ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LTV_ROI_SEVEN"
 	AD_CONVERT_TYPE_LT_ROI_ProjectListV30DataListOptimizeGoalDeepExternalAction                      ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LT_ROI"
 	AD_CONVERT_TYPE_MAP_SEARCH_ProjectListV30DataListOptimizeGoalDeepExternalAction                  ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MAP_SEARCH"
 	AD_CONVERT_TYPE_MESSAGE_ProjectListV30DataListOptimizeGoalDeepExternalAction                     ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE"

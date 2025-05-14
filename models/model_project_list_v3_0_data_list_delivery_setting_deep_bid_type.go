@@ -25,6 +25,7 @@ const (
 	FIRST_AND_SEVEN_PAY_ROI_ProjectListV30DataListDeliverySettingDeepBidType      ProjectListV30DataListDeliverySettingDeepBidType = "FIRST_AND_SEVEN_PAY_ROI"
 	FORM_BID_ProjectListV30DataListDeliverySettingDeepBidType                     ProjectListV30DataListDeliverySettingDeepBidType = "FORM_BID"
 	IAAP_ROI_24_H_AND_7_D_ProjectListV30DataListDeliverySettingDeepBidType        ProjectListV30DataListDeliverySettingDeepBidType = "IAAP_ROI_24H_AND_7D"
+	IAAP_SEVEN_ROI_COEFFICIENT_ProjectListV30DataListDeliverySettingDeepBidType   ProjectListV30DataListDeliverySettingDeepBidType = "IAAP_SEVEN_ROI_COEFFICIENT"
 	LOAN_ROI_ProjectListV30DataListDeliverySettingDeepBidType                     ProjectListV30DataListDeliverySettingDeepBidType = "LOAN_ROI"
 	MIN_SECOND_STAGE_ProjectListV30DataListDeliverySettingDeepBidType             ProjectListV30DataListDeliverySettingDeepBidType = "MIN_SECOND_STAGE"
 	PACING_SECOND_STAGE_ProjectListV30DataListDeliverySettingDeepBidType          ProjectListV30DataListDeliverySettingDeepBidType = "PACING_SECOND_STAGE"
@@ -34,6 +35,7 @@ const (
 	ROI_DIRECT_MAIL_ProjectListV30DataListDeliverySettingDeepBidType              ProjectListV30DataListDeliverySettingDeepBidType = "ROI_DIRECT_MAIL"
 	ROI_PACING_ProjectListV30DataListDeliverySettingDeepBidType                   ProjectListV30DataListDeliverySettingDeepBidType = "ROI_PACING"
 	RTA_DOUBLE_BID_ProjectListV30DataListDeliverySettingDeepBidType               ProjectListV30DataListDeliverySettingDeepBidType = "RTA_DOUBLE_BID"
+	SEVEN_ROI_COEFFICIENT_ProjectListV30DataListDeliverySettingDeepBidType        ProjectListV30DataListDeliverySettingDeepBidType = "SEVEN_ROI_COEFFICIENT"
 	SMARTBID_ProjectListV30DataListDeliverySettingDeepBidType                     ProjectListV30DataListDeliverySettingDeepBidType = "SMARTBID"
 	SOCIAL_ROI_ProjectListV30DataListDeliverySettingDeepBidType                   ProjectListV30DataListDeliverySettingDeepBidType = "SOCIAL_ROI"
 )

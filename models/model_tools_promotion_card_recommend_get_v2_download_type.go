@@ -15,8 +15,8 @@ type ToolsPromotionCardRecommendGetV2DownloadType string
 
 // List of tools_promotion_card_recommend_get_v2_download_type
 const (
-	DOWNLOAD_URL_ToolsPromotionCardRecommendGetV2DownloadType  ToolsPromotionCardRecommendGetV2DownloadType = "DOWNLOAD_URL"
 	EXTERNAL_URL_ToolsPromotionCardRecommendGetV2DownloadType  ToolsPromotionCardRecommendGetV2DownloadType = "EXTERNAL_URL"
+	DOWNLOAD_URL_ToolsPromotionCardRecommendGetV2DownloadType  ToolsPromotionCardRecommendGetV2DownloadType = "DOWNLOAD_URL"
 	QUICK_APP_URL_ToolsPromotionCardRecommendGetV2DownloadType ToolsPromotionCardRecommendGetV2DownloadType = "QUICK_APP_URL"
 )
 

@@ -25,6 +25,7 @@ const (
 	FIRST_AND_SEVEN_PAY_ROI_EventManagerDeepBidTypeGetV30DataDeepBidType      EventManagerDeepBidTypeGetV30DataDeepBidType = "FIRST_AND_SEVEN_PAY_ROI"
 	FORM_BID_EventManagerDeepBidTypeGetV30DataDeepBidType                     EventManagerDeepBidTypeGetV30DataDeepBidType = "FORM_BID"
 	IAAP_ROI_24_H_AND_7_D_EventManagerDeepBidTypeGetV30DataDeepBidType        EventManagerDeepBidTypeGetV30DataDeepBidType = "IAAP_ROI_24H_AND_7D"
+	IAAP_SEVEN_ROI_COEFFICIENT_EventManagerDeepBidTypeGetV30DataDeepBidType   EventManagerDeepBidTypeGetV30DataDeepBidType = "IAAP_SEVEN_ROI_COEFFICIENT"
 	LOAN_ROI_EventManagerDeepBidTypeGetV30DataDeepBidType                     EventManagerDeepBidTypeGetV30DataDeepBidType = "LOAN_ROI"
 	MIN_SECOND_STAGE_EventManagerDeepBidTypeGetV30DataDeepBidType             EventManagerDeepBidTypeGetV30DataDeepBidType = "MIN_SECOND_STAGE"
 	PACING_SECOND_STAGE_EventManagerDeepBidTypeGetV30DataDeepBidType          EventManagerDeepBidTypeGetV30DataDeepBidType = "PACING_SECOND_STAGE"
@@ -34,6 +35,7 @@ const (
 	ROI_DIRECT_MAIL_EventManagerDeepBidTypeGetV30DataDeepBidType              EventManagerDeepBidTypeGetV30DataDeepBidType = "ROI_DIRECT_MAIL"
 	ROI_PACING_EventManagerDeepBidTypeGetV30DataDeepBidType                   EventManagerDeepBidTypeGetV30DataDeepBidType = "ROI_PACING"
 	RTA_DOUBLE_BID_EventManagerDeepBidTypeGetV30DataDeepBidType               EventManagerDeepBidTypeGetV30DataDeepBidType = "RTA_DOUBLE_BID"
+	SEVEN_ROI_COEFFICIENT_EventManagerDeepBidTypeGetV30DataDeepBidType        EventManagerDeepBidTypeGetV30DataDeepBidType = "SEVEN_ROI_COEFFICIENT"
 	SMARTBID_EventManagerDeepBidTypeGetV30DataDeepBidType                     EventManagerDeepBidTypeGetV30DataDeepBidType = "SMARTBID"
 	SOCIAL_ROI_EventManagerDeepBidTypeGetV30DataDeepBidType                   EventManagerDeepBidTypeGetV30DataDeepBidType = "SOCIAL_ROI"
 )

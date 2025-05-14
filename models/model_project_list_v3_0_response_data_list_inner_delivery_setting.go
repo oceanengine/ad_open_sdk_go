@@ -40,6 +40,8 @@ type ProjectListV30ResponseDataListInnerDeliverySetting struct {
 	ScheduleType           *ProjectListV30DataListDeliverySettingScheduleType           `json:"schedule_type,omitempty"`
 	SearchContinueDelivery *ProjectListV30DataListDeliverySettingSearchContinueDelivery `json:"search_continue_delivery,omitempty"`
 	//
+	SevenRoiGoal *float64 `json:"seven_roi_goal,omitempty"`
+	//
 	ShopMultiRoiGoals []*ProjectListV30ResponseDataListInnerDeliverySettingShopMultiRoiGoalsInner `json:"shop_multi_roi_goals,omitempty"`
 	//
 	StartTime *string `json:"start_time,omitempty"`

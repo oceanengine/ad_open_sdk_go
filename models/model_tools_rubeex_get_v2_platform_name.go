@@ -15,10 +15,10 @@ type ToolsRubeexGetV2PlatformName string
 
 // List of tools_rubeex_get_v2_platform_name
 const (
-	RUBIX_ToolsRubeexGetV2PlatformName             ToolsRubeexGetV2PlatformName = "RUBIX"
-	CLAB_EDITOR_ToolsRubeexGetV2PlatformName       ToolsRubeexGetV2PlatformName = "CLAB_EDITOR"
 	POWERPLAYABLE_ToolsRubeexGetV2PlatformName     ToolsRubeexGetV2PlatformName = "POWERPLAYABLE"
+	CLAB_EDITOR_ToolsRubeexGetV2PlatformName       ToolsRubeexGetV2PlatformName = "CLAB_EDITOR"
 	PLAYABLE_TEMPLATE_ToolsRubeexGetV2PlatformName ToolsRubeexGetV2PlatformName = "PLAYABLE_TEMPLATE"
+	RUBIX_ToolsRubeexGetV2PlatformName             ToolsRubeexGetV2PlatformName = "RUBIX"
 	AD_PLATFORM_ToolsRubeexGetV2PlatformName       ToolsRubeexGetV2PlatformName = "AD_PLATFORM"
 	LIGHT_PLAYABLE_ToolsRubeexGetV2PlatformName    ToolsRubeexGetV2PlatformName = "LIGHT_PLAYABLE"
 )

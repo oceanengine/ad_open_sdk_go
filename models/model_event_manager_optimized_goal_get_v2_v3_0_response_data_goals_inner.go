@@ -20,6 +20,8 @@ type EventManagerOptimizedGoalGetV2V30ResponseDataGoalsInner struct {
 	//
 	HistoryBack bool `json:"history_back"`
 	//
+	NeedAppForce *bool `json:"need_app_force,omitempty"`
+	//
 	OptimizationName string `json:"optimization_name"`
 	//
 	TwentyFourHourBack bool                                                 `json:"twenty_four_hour_back"`

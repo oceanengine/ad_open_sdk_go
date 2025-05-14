@@ -107,6 +107,7 @@ const (
 	AD_CONVERT_TYPE_LOAN_CREDIT_ProjectCreateV30OptimizeGoalDeepExternalAction                 ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LOAN_CREDIT"
 	AD_CONVERT_TYPE_LOCATION_ACTION_ProjectCreateV30OptimizeGoalDeepExternalAction             ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LOCATION_ACTION"
 	AD_CONVERT_TYPE_LOTTERY_ProjectCreateV30OptimizeGoalDeepExternalAction                     ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LOTTERY"
+	AD_CONVERT_TYPE_LTV_ROI_SEVEN_ProjectCreateV30OptimizeGoalDeepExternalAction               ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LTV_ROI_SEVEN"
 	AD_CONVERT_TYPE_LT_ROI_ProjectCreateV30OptimizeGoalDeepExternalAction                      ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_LT_ROI"
 	AD_CONVERT_TYPE_MAP_SEARCH_ProjectCreateV30OptimizeGoalDeepExternalAction                  ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MAP_SEARCH"
 	AD_CONVERT_TYPE_MESSAGE_ProjectCreateV30OptimizeGoalDeepExternalAction                     ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE"

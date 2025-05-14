@@ -108,6 +108,7 @@ const (
 	AD_CONVERT_TYPE_LOAN_CREDIT_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction                 EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_LOAN_CREDIT"
 	AD_CONVERT_TYPE_LOCATION_ACTION_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction             EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_LOCATION_ACTION"
 	AD_CONVERT_TYPE_LOTTERY_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction                     EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_LOTTERY"
+	AD_CONVERT_TYPE_LTV_ROI_SEVEN_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction               EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_LTV_ROI_SEVEN"
 	AD_CONVERT_TYPE_LT_ROI_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction                      EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_LT_ROI"
 	AD_CONVERT_TYPE_MAP_SEARCH_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction                  EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_MAP_SEARCH"
 	AD_CONVERT_TYPE_MESSAGE_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction                     EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE"

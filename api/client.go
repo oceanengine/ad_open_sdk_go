@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.50
+// APIClient manages communication with the Oceanengine Open Api API v1.1.51
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -122,6 +122,8 @@ type APIClient struct {
 	AdvertiserUpdateBudgetV2Api *AdvertiserUpdateBudgetV2ApiService
 
 	AdvertiserVerifyInfoGetV30Api *AdvertiserVerifyInfoGetV30ApiService
+
+	AgentAdvAdvertiserUpdateSaleV2Api *AgentAdvAdvertiserUpdateSaleV2ApiService
 
 	AgentAdvBiddingListQueryV2Api *AgentAdvBiddingListQueryV2ApiService
 
@@ -359,6 +361,10 @@ type APIClient struct {
 
 	CgTransferWalletTransferListV30Api *CgTransferWalletTransferListV30ApiService
 
+	ChargeListV30Api *ChargeListV30ApiService
+
+	ChargeResultV30Api *ChargeResultV30ApiService
+
 	ClueCaCreateV2Api *ClueCaCreateV2ApiService
 
 	ClueCaInterfaceCreateV2Api *ClueCaInterfaceCreateV2ApiService
@@ -445,6 +451,8 @@ type APIClient struct {
 
 	CustomerCenterFundTransferSeqCreateV2Api *CustomerCenterFundTransferSeqCreateV2ApiService
 
+	DcdChargeSubmitV30Api *DcdChargeSubmitV30ApiService
+
 	DecorationCouponGetV30Api *DecorationCouponGetV30ApiService
 
 	DiagnosisTaskAdvCreateV2Api *DiagnosisTaskAdvCreateV2ApiService
@@ -500,6 +508,10 @@ type APIClient struct {
 	DownloadStatementEsignFileV2Api *DownloadStatementEsignFileV2ApiService
 
 	DownloadStatementV2Api *DownloadStatementV2ApiService
+
+	DpaAlbumCreateV30Api *DpaAlbumCreateV30ApiService
+
+	DpaAlbumStatusGetV30Api *DpaAlbumStatusGetV30ApiService
 
 	DpaAssetV2DetailReadV2Api *DpaAssetV2DetailReadV2ApiService
 
@@ -1297,6 +1309,10 @@ type APIClient struct {
 
 	SharedWalletWalletRelationGetV30Api *SharedWalletWalletRelationGetV30ApiService
 
+	ShopBonusCreateV30Api *ShopBonusCreateV30ApiService
+
+	ShopBonusSuccessGetV30Api *ShopBonusSuccessGetV30ApiService
+
 	SpiTaskGetV2Api *SpiTaskGetV2ApiService
 
 	StarAttachmentUploadV2Api *StarAttachmentUploadV2ApiService
@@ -1755,6 +1771,14 @@ type APIClient struct {
 
 	ToolsGrayGetV30Api *ToolsGrayGetV30ApiService
 
+	ToolsHotMaterialDeriveAdoptV30Api *ToolsHotMaterialDeriveAdoptV30ApiService
+
+	ToolsHotMaterialDeriveGetV30Api *ToolsHotMaterialDeriveGetV30ApiService
+
+	ToolsHotMaterialDeriveListV30Api *ToolsHotMaterialDeriveListV30ApiService
+
+	ToolsHotMaterialDeriveSubmitV30Api *ToolsHotMaterialDeriveSubmitV30ApiService
+
 	ToolsIndustryGetV2Api *ToolsIndustryGetV2ApiService
 
 	ToolsInterestActionActionKeywordV2Api *ToolsInterestActionActionKeywordV2ApiService
@@ -2054,6 +2078,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AdvertiserTransferableFundGetV2Api = (*AdvertiserTransferableFundGetV2ApiService)(&c.common)
 	c.AdvertiserUpdateBudgetV2Api = (*AdvertiserUpdateBudgetV2ApiService)(&c.common)
 	c.AdvertiserVerifyInfoGetV30Api = (*AdvertiserVerifyInfoGetV30ApiService)(&c.common)
+	c.AgentAdvAdvertiserUpdateSaleV2Api = (*AgentAdvAdvertiserUpdateSaleV2ApiService)(&c.common)
 	c.AgentAdvBiddingListQueryV2Api = (*AgentAdvBiddingListQueryV2ApiService)(&c.common)
 	c.AgentAdvBrandListQueryV2Api = (*AgentAdvBrandListQueryV2ApiService)(&c.common)
 	c.AgentAdvCostReportListQueryV2Api = (*AgentAdvCostReportListQueryV2ApiService)(&c.common)
@@ -2172,6 +2197,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.CgTransferWalletTransferCreateV30Api = (*CgTransferWalletTransferCreateV30ApiService)(&c.common)
 	c.CgTransferWalletTransferDetailV30Api = (*CgTransferWalletTransferDetailV30ApiService)(&c.common)
 	c.CgTransferWalletTransferListV30Api = (*CgTransferWalletTransferListV30ApiService)(&c.common)
+	c.ChargeListV30Api = (*ChargeListV30ApiService)(&c.common)
+	c.ChargeResultV30Api = (*ChargeResultV30ApiService)(&c.common)
 	c.ClueCaCreateV2Api = (*ClueCaCreateV2ApiService)(&c.common)
 	c.ClueCaInterfaceCreateV2Api = (*ClueCaInterfaceCreateV2ApiService)(&c.common)
 	c.ClueCaInterfaceUpdateV2Api = (*ClueCaInterfaceUpdateV2ApiService)(&c.common)
@@ -2215,6 +2242,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.CustomerCenterAdvertiserTransferableListV2Api = (*CustomerCenterAdvertiserTransferableListV2ApiService)(&c.common)
 	c.CustomerCenterFundTransferSeqCommitV2Api = (*CustomerCenterFundTransferSeqCommitV2ApiService)(&c.common)
 	c.CustomerCenterFundTransferSeqCreateV2Api = (*CustomerCenterFundTransferSeqCreateV2ApiService)(&c.common)
+	c.DcdChargeSubmitV30Api = (*DcdChargeSubmitV30ApiService)(&c.common)
 	c.DecorationCouponGetV30Api = (*DecorationCouponGetV30ApiService)(&c.common)
 	c.DiagnosisTaskAdvCreateV2Api = (*DiagnosisTaskAdvCreateV2ApiService)(&c.common)
 	c.DiagnosisTaskAdvGetV2Api = (*DiagnosisTaskAdvGetV2ApiService)(&c.common)
@@ -2243,6 +2271,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.DouplusRtaSetScopeV30Api = (*DouplusRtaSetScopeV30ApiService)(&c.common)
 	c.DownloadStatementEsignFileV2Api = (*DownloadStatementEsignFileV2ApiService)(&c.common)
 	c.DownloadStatementV2Api = (*DownloadStatementV2ApiService)(&c.common)
+	c.DpaAlbumCreateV30Api = (*DpaAlbumCreateV30ApiService)(&c.common)
+	c.DpaAlbumStatusGetV30Api = (*DpaAlbumStatusGetV30ApiService)(&c.common)
 	c.DpaAssetV2DetailReadV2Api = (*DpaAssetV2DetailReadV2ApiService)(&c.common)
 	c.DpaAssetV2ListV2Api = (*DpaAssetV2ListV2ApiService)(&c.common)
 	c.DpaAssetsDetailReadV2Api = (*DpaAssetsDetailReadV2ApiService)(&c.common)
@@ -2641,6 +2671,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.SharedWalletWalletBalanceGetV30Api = (*SharedWalletWalletBalanceGetV30ApiService)(&c.common)
 	c.SharedWalletWalletInfoGetV30Api = (*SharedWalletWalletInfoGetV30ApiService)(&c.common)
 	c.SharedWalletWalletRelationGetV30Api = (*SharedWalletWalletRelationGetV30ApiService)(&c.common)
+	c.ShopBonusCreateV30Api = (*ShopBonusCreateV30ApiService)(&c.common)
+	c.ShopBonusSuccessGetV30Api = (*ShopBonusSuccessGetV30ApiService)(&c.common)
 	c.SpiTaskGetV2Api = (*SpiTaskGetV2ApiService)(&c.common)
 	c.StarAttachmentUploadV2Api = (*StarAttachmentUploadV2ApiService)(&c.common)
 	c.StarAttributeJdOverflowConvertV2Api = (*StarAttributeJdOverflowConvertV2ApiService)(&c.common)
@@ -2870,6 +2902,10 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsEventConvertOptimizedGoalGetV30Api = (*ToolsEventConvertOptimizedGoalGetV30ApiService)(&c.common)
 	c.ToolsForbiddenLinkGreyGetV30Api = (*ToolsForbiddenLinkGreyGetV30ApiService)(&c.common)
 	c.ToolsGrayGetV30Api = (*ToolsGrayGetV30ApiService)(&c.common)
+	c.ToolsHotMaterialDeriveAdoptV30Api = (*ToolsHotMaterialDeriveAdoptV30ApiService)(&c.common)
+	c.ToolsHotMaterialDeriveGetV30Api = (*ToolsHotMaterialDeriveGetV30ApiService)(&c.common)
+	c.ToolsHotMaterialDeriveListV30Api = (*ToolsHotMaterialDeriveListV30ApiService)(&c.common)
+	c.ToolsHotMaterialDeriveSubmitV30Api = (*ToolsHotMaterialDeriveSubmitV30ApiService)(&c.common)
 	c.ToolsIndustryGetV2Api = (*ToolsIndustryGetV2ApiService)(&c.common)
 	c.ToolsInterestActionActionKeywordV2Api = (*ToolsInterestActionActionKeywordV2ApiService)(&c.common)
 	c.ToolsInterestActionId2wordV2Api = (*ToolsInterestActionId2wordV2ApiService)(&c.common)

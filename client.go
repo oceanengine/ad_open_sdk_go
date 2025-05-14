@@ -1,5 +1,5 @@
 /*
-API version: 1.1.50
+API version: 1.1.51
 */
 package ad_open_sdk_go
 
@@ -169,6 +169,10 @@ func (c *Client) AdvertiserUpdateBudgetV2Api() *api.AdvertiserUpdateBudgetV2ApiS
 
 func (c *Client) AdvertiserVerifyInfoGetV30Api() *api.AdvertiserVerifyInfoGetV30ApiService {
 	return c.ApiClient.AdvertiserVerifyInfoGetV30Api
+}
+
+func (c *Client) AgentAdvAdvertiserUpdateSaleV2Api() *api.AgentAdvAdvertiserUpdateSaleV2ApiService {
+	return c.ApiClient.AgentAdvAdvertiserUpdateSaleV2Api
 }
 
 func (c *Client) AgentAdvBiddingListQueryV2Api() *api.AgentAdvBiddingListQueryV2ApiService {
@@ -643,6 +647,14 @@ func (c *Client) CgTransferWalletTransferListV30Api() *api.CgTransferWalletTrans
 	return c.ApiClient.CgTransferWalletTransferListV30Api
 }
 
+func (c *Client) ChargeListV30Api() *api.ChargeListV30ApiService {
+	return c.ApiClient.ChargeListV30Api
+}
+
+func (c *Client) ChargeResultV30Api() *api.ChargeResultV30ApiService {
+	return c.ApiClient.ChargeResultV30Api
+}
+
 func (c *Client) ClueCaCreateV2Api() *api.ClueCaCreateV2ApiService {
 	return c.ApiClient.ClueCaCreateV2Api
 }
@@ -815,6 +827,10 @@ func (c *Client) CustomerCenterFundTransferSeqCreateV2Api() *api.CustomerCenterF
 	return c.ApiClient.CustomerCenterFundTransferSeqCreateV2Api
 }
 
+func (c *Client) DcdChargeSubmitV30Api() *api.DcdChargeSubmitV30ApiService {
+	return c.ApiClient.DcdChargeSubmitV30Api
+}
+
 func (c *Client) DecorationCouponGetV30Api() *api.DecorationCouponGetV30ApiService {
 	return c.ApiClient.DecorationCouponGetV30Api
 }
@@ -925,6 +941,14 @@ func (c *Client) DownloadStatementEsignFileV2Api() *api.DownloadStatementEsignFi
 
 func (c *Client) DownloadStatementV2Api() *api.DownloadStatementV2ApiService {
 	return c.ApiClient.DownloadStatementV2Api
+}
+
+func (c *Client) DpaAlbumCreateV30Api() *api.DpaAlbumCreateV30ApiService {
+	return c.ApiClient.DpaAlbumCreateV30Api
+}
+
+func (c *Client) DpaAlbumStatusGetV30Api() *api.DpaAlbumStatusGetV30ApiService {
+	return c.ApiClient.DpaAlbumStatusGetV30Api
 }
 
 func (c *Client) DpaAssetV2DetailReadV2Api() *api.DpaAssetV2DetailReadV2ApiService {
@@ -2519,6 +2543,14 @@ func (c *Client) SharedWalletWalletRelationGetV30Api() *api.SharedWalletWalletRe
 	return c.ApiClient.SharedWalletWalletRelationGetV30Api
 }
 
+func (c *Client) ShopBonusCreateV30Api() *api.ShopBonusCreateV30ApiService {
+	return c.ApiClient.ShopBonusCreateV30Api
+}
+
+func (c *Client) ShopBonusSuccessGetV30Api() *api.ShopBonusSuccessGetV30ApiService {
+	return c.ApiClient.ShopBonusSuccessGetV30Api
+}
+
 func (c *Client) SpiTaskGetV2Api() *api.SpiTaskGetV2ApiService {
 	return c.ApiClient.SpiTaskGetV2Api
 }
@@ -3433,6 +3465,22 @@ func (c *Client) ToolsForbiddenLinkGreyGetV30Api() *api.ToolsForbiddenLinkGreyGe
 
 func (c *Client) ToolsGrayGetV30Api() *api.ToolsGrayGetV30ApiService {
 	return c.ApiClient.ToolsGrayGetV30Api
+}
+
+func (c *Client) ToolsHotMaterialDeriveAdoptV30Api() *api.ToolsHotMaterialDeriveAdoptV30ApiService {
+	return c.ApiClient.ToolsHotMaterialDeriveAdoptV30Api
+}
+
+func (c *Client) ToolsHotMaterialDeriveGetV30Api() *api.ToolsHotMaterialDeriveGetV30ApiService {
+	return c.ApiClient.ToolsHotMaterialDeriveGetV30Api
+}
+
+func (c *Client) ToolsHotMaterialDeriveListV30Api() *api.ToolsHotMaterialDeriveListV30ApiService {
+	return c.ApiClient.ToolsHotMaterialDeriveListV30Api
+}
+
+func (c *Client) ToolsHotMaterialDeriveSubmitV30Api() *api.ToolsHotMaterialDeriveSubmitV30ApiService {
+	return c.ApiClient.ToolsHotMaterialDeriveSubmitV30Api
 }
 
 func (c *Client) ToolsIndustryGetV2Api() *api.ToolsIndustryGetV2ApiService {

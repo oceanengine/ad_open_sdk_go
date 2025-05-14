@@ -38,6 +38,8 @@ type ProjectCreateV30RequestDeliverySetting struct {
 	ScheduleType           *ProjectCreateV30DeliverySettingScheduleType           `json:"schedule_type,omitempty"`
 	SearchContinueDelivery *ProjectCreateV30DeliverySettingSearchContinueDelivery `json:"search_continue_delivery,omitempty"`
 	//
+	SevenRoiGoal *float64 `json:"seven_roi_goal,omitempty"`
+	//
 	ShopMultiRoiGoals []*ProjectCreateV30RequestDeliverySettingShopMultiRoiGoalsInner `json:"shop_multi_roi_goals,omitempty"`
 	//
 	StartTime *string `json:"start_time,omitempty"`

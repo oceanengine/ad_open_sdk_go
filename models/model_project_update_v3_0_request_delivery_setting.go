@@ -33,5 +33,7 @@ type ProjectUpdateV30RequestDeliverySetting struct {
 	ScheduleType           *ProjectUpdateV30DeliverySettingScheduleType           `json:"schedule_type,omitempty"`
 	SearchContinueDelivery *ProjectUpdateV30DeliverySettingSearchContinueDelivery `json:"search_continue_delivery,omitempty"`
 	//
+	SevenRoiGoal *float64 `json:"seven_roi_goal,omitempty"`
+	//
 	ShopMultiRoiGoals []*ProjectUpdateV30RequestDeliverySettingShopMultiRoiGoalsInner `json:"shop_multi_roi_goals,omitempty"`
 }

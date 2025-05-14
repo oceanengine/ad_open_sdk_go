@@ -32,6 +32,7 @@ type ApiOpenApiV30EventManagerDeepBidTypeGetGetRequestExample struct {
 	LandingType        EventManagerDeepBidTypeGetV30LandingType        `json:"landing_type,omitempty"`
 	AdType             EventManagerDeepBidTypeGetV30AdType             `json:"ad_type,omitempty"`
 	MarketingGoal      EventManagerDeepBidTypeGetV30MarketingGoal      `json:"marketing_goal,omitempty"`
+	MicroPromotionType EventManagerDeepBidTypeGetV30MicroPromotionType `json:"micro_promotion_type,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/event_manager/deep_bid_type/get/ Get
@@ -53,7 +54,7 @@ func main() {
 	resp, httpRes, err := apiClient.EventManagerDeepBidTypeGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).ExternalAction(request.ExternalAction).AssetId(request.AssetId).DeepExternalAction(request.DeepExternalAction).ConvertId(request.ConvertId).DeliveryMode(request.DeliveryMode).LandingType(request.LandingType).AdType(request.AdType).MarketingGoal(request.MarketingGoal).
+		AdvertiserId(request.AdvertiserId).ExternalAction(request.ExternalAction).AssetId(request.AssetId).DeepExternalAction(request.DeepExternalAction).ConvertId(request.ConvertId).DeliveryMode(request.DeliveryMode).LandingType(request.LandingType).AdType(request.AdType).MarketingGoal(request.MarketingGoal).MicroPromotionType(request.MicroPromotionType).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

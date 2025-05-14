@@ -15,9 +15,9 @@ type CreativeProceduralCreativeCreateV2AdDataAnchorRelatedType string
 
 // List of creative_procedural_creative_create_v2_ad_data_anchor_related_type
 const (
-	AUTO_CreativeProceduralCreativeCreateV2AdDataAnchorRelatedType   CreativeProceduralCreativeCreateV2AdDataAnchorRelatedType = "AUTO"
 	OFF_CreativeProceduralCreativeCreateV2AdDataAnchorRelatedType    CreativeProceduralCreativeCreateV2AdDataAnchorRelatedType = "OFF"
 	SELECT_CreativeProceduralCreativeCreateV2AdDataAnchorRelatedType CreativeProceduralCreativeCreateV2AdDataAnchorRelatedType = "SELECT"
+	AUTO_CreativeProceduralCreativeCreateV2AdDataAnchorRelatedType   CreativeProceduralCreativeCreateV2AdDataAnchorRelatedType = "AUTO"
 )
 
 // Ptr returns reference to creative_procedural_creative_create_v2_ad_data_anchor_related_type value

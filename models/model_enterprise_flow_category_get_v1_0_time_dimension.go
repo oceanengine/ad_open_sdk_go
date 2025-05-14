@@ -15,8 +15,8 @@ type EnterpriseFlowCategoryGetV10TimeDimension string
 
 // List of enterprise_flow_category_get_v1.0_time_dimension
 const (
-	DAILY_EnterpriseFlowCategoryGetV10TimeDimension EnterpriseFlowCategoryGetV10TimeDimension = "DAILY"
 	SUM_EnterpriseFlowCategoryGetV10TimeDimension   EnterpriseFlowCategoryGetV10TimeDimension = "SUM"
+	DAILY_EnterpriseFlowCategoryGetV10TimeDimension EnterpriseFlowCategoryGetV10TimeDimension = "DAILY"
 )
 
 // Ptr returns reference to enterprise_flow_category_get_v1.0_time_dimension value

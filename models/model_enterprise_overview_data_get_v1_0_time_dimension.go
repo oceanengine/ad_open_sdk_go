@@ -15,8 +15,8 @@ type EnterpriseOverviewDataGetV10TimeDimension string
 
 // List of enterprise_overview_data_get_v1.0_time_dimension
 const (
-	DAILY_EnterpriseOverviewDataGetV10TimeDimension EnterpriseOverviewDataGetV10TimeDimension = "DAILY"
 	SUM_EnterpriseOverviewDataGetV10TimeDimension   EnterpriseOverviewDataGetV10TimeDimension = "SUM"
+	DAILY_EnterpriseOverviewDataGetV10TimeDimension EnterpriseOverviewDataGetV10TimeDimension = "DAILY"
 )
 
 // Ptr returns reference to enterprise_overview_data_get_v1.0_time_dimension value

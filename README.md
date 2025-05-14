@@ -242,6 +242,7 @@ Class | Method | HTTP request
 *AdvertiserTransferableFundGetV2Api* | **OpenApi2AdvertiserTransferableFundGetGet** | **Get** /open_api/2/advertiser/transferable_fund/get/
 *AdvertiserUpdateBudgetV2Api* | **OpenApi2AdvertiserUpdateBudgetPost** | **Post** /open_api/2/advertiser/update/budget/
 *AdvertiserVerifyInfoGetV30Api* | **OpenApiV30AdvertiserVerifyInfoGetGet** | **Get** /open_api/v3.0/advertiser/verify_info/get/
+*AgentAdvAdvertiserUpdateSaleV2Api* | **OpenApi2AgentAdvAdvertiserUpdateSalePost** | **Post** /open_api/2/agent/adv/advertiser/update_sale/
 *AgentAdvBiddingListQueryV2Api* | **OpenApi2AgentAdvBiddingListQueryGet** | **Get** /open_api/2/agent/adv/bidding/list/query/
 *AgentAdvBrandListQueryV2Api* | **OpenApi2AgentAdvBrandListQueryGet** | **Get** /open_api/2/agent/adv/brand/list/query/
 *AgentAdvCostReportListQueryV2Api* | **OpenApi2AgentAdvCostReportListQueryPost** | **Post** /open_api/2/agent/adv/cost_report/list/query/
@@ -360,6 +361,8 @@ Class | Method | HTTP request
 *CgTransferWalletTransferCreateV30Api* | **OpenApiV30CgTransferWalletTransferCreatePost** | **Post** /open_api/v3.0/cg_transfer/wallet/transfer/create/
 *CgTransferWalletTransferDetailV30Api* | **OpenApiV30CgTransferWalletTransferDetailGet** | **Get** /open_api/v3.0/cg_transfer/wallet/transfer/detail/
 *CgTransferWalletTransferListV30Api* | **OpenApiV30CgTransferWalletTransferListGet** | **Get** /open_api/v3.0/cg_transfer/wallet/transfer/list/
+*ChargeListV30Api* | **OpenApiV30ChargeListGet** | **Get** /open_api/v3.0/charge/list/
+*ChargeResultV30Api* | **OpenApiV30ChargeResultGet** | **Get** /open_api/v3.0/charge/result/
 *ClueCaCreateV2Api* | **OpenApi2ClueCaCreatePost** | **Post** /open_api/2/clue/ca/create/
 *ClueCaInterfaceCreateV2Api* | **OpenApi2ClueCaInterfaceCreatePost** | **Post** /open_api/2/clue/ca/interface/create/
 *ClueCaInterfaceUpdateV2Api* | **OpenApi2ClueCaInterfaceUpdatePost** | **Post** /open_api/2/clue/ca/interface/update/
@@ -403,6 +406,7 @@ Class | Method | HTTP request
 *CustomerCenterAdvertiserTransferableListV2Api* | **OpenApi2CustomerCenterAdvertiserTransferableListGet** | **Get** /open_api/2/customer_center/advertiser/transferable/list/
 *CustomerCenterFundTransferSeqCommitV2Api* | **OpenApi2CustomerCenterFundTransferSeqCommitPost** | **Post** /open_api/2/customer_center/fund/transfer_seq/commit/
 *CustomerCenterFundTransferSeqCreateV2Api* | **OpenApi2CustomerCenterFundTransferSeqCreatePost** | **Post** /open_api/2/customer_center/fund/transfer_seq/create/
+*DcdChargeSubmitV30Api* | **OpenApiV30DcdChargeSubmitPost** | **Post** /open_api/v3.0/dcd/charge/submit/
 *DecorationCouponGetV30Api* | **OpenApiV30DecorationCouponGetGet** | **Get** /open_api/v3.0/decoration/coupon/get/
 *DiagnosisTaskAdvCreateV2Api* | **OpenApi2DiagnosisTaskAdvCreatePost** | **Post** /open_api/2/diagnosis_task/adv/create/
 *DiagnosisTaskAdvGetV2Api* | **OpenApi2DiagnosisTaskAdvGetGet** | **Get** /open_api/2/diagnosis_task/adv/get/
@@ -431,6 +435,8 @@ Class | Method | HTTP request
 *DouplusRtaSetScopeV30Api* | **OpenApiV30DouplusRtaSetScopePost** | **Post** /open_api/v3.0/douplus/rta/set_scope/
 *DownloadStatementEsignFileV2Api* | **OpenApi2DownloadStatementEsignFileGet** | **Get** /open_api/2/download/statement/esign_file/
 *DownloadStatementV2Api* | **OpenApi2DownloadStatementGet** | **Get** /open_api/2/download/statement/
+*DpaAlbumCreateV30Api* | **OpenApiV30DpaAlbumCreatePost** | **Post** /open_api/v3.0/dpa/album/create/
+*DpaAlbumStatusGetV30Api* | **OpenApiV30DpaAlbumStatusGetGet** | **Get** /open_api/v3.0/dpa/album_status/get/
 *DpaAssetV2DetailReadV2Api* | **OpenApi2DpaAssetV2DetailReadPost** | **Post** /open_api/2/dpa/asset_v2/detail/read/
 *DpaAssetV2ListV2Api* | **OpenApi2DpaAssetV2ListPost** | **Post** /open_api/2/dpa/asset_v2/list/
 *DpaAssetsDetailReadV2Api* | **OpenApi2DpaAssetsDetailReadGet** | **Get** /open_api/2/dpa/assets/detail/read/
@@ -829,6 +835,8 @@ Class | Method | HTTP request
 *SharedWalletWalletBalanceGetV30Api* | **OpenApiV30SharedWalletWalletBalanceGetGet** | **Get** /open_api/v3.0/shared_wallet/wallet_balance/get/
 *SharedWalletWalletInfoGetV30Api* | **OpenApiV30SharedWalletWalletInfoGetGet** | **Get** /open_api/v3.0/shared_wallet/wallet_info/get/
 *SharedWalletWalletRelationGetV30Api* | **OpenApiV30SharedWalletWalletRelationGetGet** | **Get** /open_api/v3.0/shared_wallet/wallet_relation/get/
+*ShopBonusCreateV30Api* | **OpenApiV30ShopBonusCreatePost** | **Post** /open_api/v3.0/shop_bonus/create/
+*ShopBonusSuccessGetV30Api* | **OpenApiV30ShopBonusSuccessGetGet** | **Get** /open_api/v3.0/shop_bonus_success/get/
 *SpiTaskGetV2Api* | **OpenApi2SpiTaskGetGet** | **Get** /open_api/2/spi_task/get/
 *StarAttachmentUploadV2Api* | **OpenApi2StarAttachmentUploadPost** | **Post** /open_api/2/star/attachment/upload/
 *StarAttributeJdOverflowConvertV2Api* | **OpenApi2StarAttributeJdOverflowConvertPost** | **Post** /open_api/2/star/attribute/jd_overflow_convert/
@@ -1058,6 +1066,10 @@ Class | Method | HTTP request
 *ToolsEventConvertOptimizedGoalGetV30Api* | **OpenApiV30ToolsEventConvertOptimizedGoalGetGet** | **Get** /open_api/v3.0/tools/event_convert/optimized_goal/get/
 *ToolsForbiddenLinkGreyGetV30Api* | **OpenApiV30ToolsForbiddenLinkGreyGetGet** | **Get** /open_api/v3.0/tools/forbidden_link/grey/get/
 *ToolsGrayGetV30Api* | **OpenApiV30ToolsGrayGetGet** | **Get** /open_api/v3.0/tools/gray/get/
+*ToolsHotMaterialDeriveAdoptV30Api* | **OpenApiV30ToolsHotMaterialDeriveAdoptPost** | **Post** /open_api/v3.0/tools/hot_material_derive/adopt/
+*ToolsHotMaterialDeriveGetV30Api* | **OpenApiV30ToolsHotMaterialDeriveGetGet** | **Get** /open_api/v3.0/tools/hot_material_derive/get/
+*ToolsHotMaterialDeriveListV30Api* | **OpenApiV30ToolsHotMaterialDeriveListGet** | **Get** /open_api/v3.0/tools/hot_material_derive/list/
+*ToolsHotMaterialDeriveSubmitV30Api* | **OpenApiV30ToolsHotMaterialDeriveSubmitPost** | **Post** /open_api/v3.0/tools/hot_material_derive/submit/
 *ToolsIndustryGetV2Api* | **OpenApi2ToolsIndustryGetGet** | **Get** /open_api/2/tools/industry/get/
 *ToolsInterestActionActionKeywordV2Api* | **OpenApi2ToolsInterestActionActionKeywordGet** | **Get** /open_api/2/tools/interest_action/action/keyword/
 *ToolsInterestActionId2wordV2Api* | **OpenApi2ToolsInterestActionId2wordGet** | **Get** /open_api/2/tools/interest_action/id2word/
