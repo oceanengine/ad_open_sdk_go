@@ -19,6 +19,7 @@ const (
 	PROJECT_STATUS_BUDGET_GROUP_OFFLINE_BUDGET_ProjectListV30FilteringStatusSecond ProjectListV30FilteringStatusSecond = "PROJECT_STATUS_BUDGET_GROUP_OFFLINE_BUDGET"
 	PROJECT_STATUS_NOT_START_ProjectListV30FilteringStatusSecond                   ProjectListV30FilteringStatusSecond = "PROJECT_STATUS_NOT_START"
 	PROJECT_STATUS_NO_SCHEDULE_ProjectListV30FilteringStatusSecond                 ProjectListV30FilteringStatusSecond = "PROJECT_STATUS_NO_SCHEDULE"
+	PROJECT_STATUS_REACH_DAILY_DELIVERY_ProjectListV30FilteringStatusSecond        ProjectListV30FilteringStatusSecond = "PROJECT_STATUS_REACH_DAILY_DELIVERY"
 	PROJECT_STATUS_STOP_ProjectListV30FilteringStatusSecond                        ProjectListV30FilteringStatusSecond = "PROJECT_STATUS_STOP"
 )
 

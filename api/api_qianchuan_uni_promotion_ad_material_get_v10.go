@@ -28,6 +28,9 @@ type ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequest struct {
 	advertiserId *int64
 	adId         *int64
 	filtering    *QianchuanUniPromotionAdMaterialGetV10Filtering
+	fields       *[]string
+	orderType    *QianchuanUniPromotionAdMaterialGetV10OrderType
+	orderField   *string
 	page         *int32
 	pageSize     *QianchuanUniPromotionAdMaterialGetV10PageSize
 }
@@ -44,6 +47,24 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequest) AdId(adId in
 
 func (r *ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequest) Filtering(filtering QianchuanUniPromotionAdMaterialGetV10Filtering) *ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequest {
 	r.filtering = &filtering
+	return r
+}
+
+// 需要查询的消耗指标，见返回参数，默认stat_cost_for_roi2
+func (r *ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequest) Fields(fields []string) *ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequest {
+	r.fields = &fields
+	return r
+}
+
+// 排序方式，允许值： ASC 升序、DESC 降序（默认）
+func (r *ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequest) OrderType(orderType QianchuanUniPromotionAdMaterialGetV10OrderType) *ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequest {
+	r.orderType = &orderType
+	return r
+}
+
+// 排序字段，默认「整体展示次数」倒序，同时支持根据消耗指标排序 注意：排序字段必须在fields中
+func (r *ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequest) OrderField(orderField string) *ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequest {
+	r.orderField = &orderField
 	return r
 }
 
@@ -122,6 +143,15 @@ func (a *QianchuanUniPromotionAdMaterialGetV10ApiService) getExecute(r *ApiOpenA
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "ad_id", r.adId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	if r.fields != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "fields", r.fields)
+	}
+	if r.orderType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "order_type", r.orderType)
+	}
+	if r.orderField != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "order_field", r.orderField)
+	}
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	}

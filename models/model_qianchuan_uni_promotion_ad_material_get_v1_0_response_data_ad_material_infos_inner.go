@@ -20,4 +20,5 @@ type QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInner struc
 	MaterialStatus     *QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialStatus            `json:"material_status,omitempty"`
 	//
 	ProductInfo []*QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerProductInfoInner `json:"product_info,omitempty"`
+	StatsInfo   *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerStatsInfo          `json:"stats_info,omitempty"`
 }

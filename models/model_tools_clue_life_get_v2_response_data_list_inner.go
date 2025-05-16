@@ -37,8 +37,10 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	// 线索ID
 	ClueId *string `json:"clue_id,omitempty"`
 	// 所属人姓名
-	ClueOwnerName *string                             `json:"clue_owner_name,omitempty"`
-	ClueType      *ToolsClueLifeGetV2DataListClueType `json:"clue_type,omitempty"`
+	ClueOwnerName *string `json:"clue_owner_name,omitempty"`
+	// 线索返回状态：正常 or 账户状态异常
+	ClueReturnStatus *string                             `json:"clue_return_status,omitempty"`
+	ClueType         *ToolsClueLifeGetV2DataListClueType `json:"clue_type,omitempty"`
 	// 内容ID
 	ContentId *string `json:"content_id,omitempty"`
 	// 用户填写区县

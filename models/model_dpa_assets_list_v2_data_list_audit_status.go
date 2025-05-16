@@ -15,9 +15,9 @@ type DpaAssetsListV2DataListAuditStatus string
 
 // List of dpa_assets_list_v2_data_list_audit_status
 const (
-	ASSETS_AUDIT_SUCCESS_DpaAssetsListV2DataListAuditStatus   DpaAssetsListV2DataListAuditStatus = "ASSETS_AUDIT_SUCCESS"
-	ASSETS_AUDIT_DENY_DpaAssetsListV2DataListAuditStatus      DpaAssetsListV2DataListAuditStatus = "ASSETS_AUDIT_DENY"
 	ASSETS_TO_SUBMIT_AUDIT_DpaAssetsListV2DataListAuditStatus DpaAssetsListV2DataListAuditStatus = "ASSETS_TO_SUBMIT_AUDIT"
+	ASSETS_AUDIT_DENY_DpaAssetsListV2DataListAuditStatus      DpaAssetsListV2DataListAuditStatus = "ASSETS_AUDIT_DENY"
+	ASSETS_AUDIT_SUCCESS_DpaAssetsListV2DataListAuditStatus   DpaAssetsListV2DataListAuditStatus = "ASSETS_AUDIT_SUCCESS"
 	ASSETS_PENDING_AUDIT_DpaAssetsListV2DataListAuditStatus   DpaAssetsListV2DataListAuditStatus = "ASSETS_PENDING_AUDIT"
 )
 

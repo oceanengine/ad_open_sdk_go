@@ -27,6 +27,8 @@ type ProjectUpdateV30RequestDeliverySetting struct {
 	//
 	FirstRoiGoal *float64 `json:"first_roi_goal,omitempty"`
 	//
+	LiveDuration *float64 `json:"live_duration,omitempty"`
+	//
 	RoiGoal *float64 `json:"roi_goal,omitempty"`
 	//
 	ScheduleTime           *string                                                `json:"schedule_time,omitempty"`

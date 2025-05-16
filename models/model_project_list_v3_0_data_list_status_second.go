@@ -15,10 +15,11 @@ type ProjectListV30DataListStatusSecond string
 
 // List of project_list_v3.0_data_list_status_second
 const (
-	PROJECT_STATUS_BUDGET_EXCEED_ProjectListV30DataListStatusSecond ProjectListV30DataListStatusSecond = "PROJECT_STATUS_BUDGET_EXCEED"
-	PROJECT_STATUS_NOT_START_ProjectListV30DataListStatusSecond     ProjectListV30DataListStatusSecond = "PROJECT_STATUS_NOT_START"
-	PROJECT_STATUS_NO_SCHEDULE_ProjectListV30DataListStatusSecond   ProjectListV30DataListStatusSecond = "PROJECT_STATUS_NO_SCHEDULE"
-	PROJECT_STATUS_STOP_ProjectListV30DataListStatusSecond          ProjectListV30DataListStatusSecond = "PROJECT_STATUS_STOP"
+	PROJECT_STATUS_BUDGET_EXCEED_ProjectListV30DataListStatusSecond        ProjectListV30DataListStatusSecond = "PROJECT_STATUS_BUDGET_EXCEED"
+	PROJECT_STATUS_NOT_START_ProjectListV30DataListStatusSecond            ProjectListV30DataListStatusSecond = "PROJECT_STATUS_NOT_START"
+	PROJECT_STATUS_NO_SCHEDULE_ProjectListV30DataListStatusSecond          ProjectListV30DataListStatusSecond = "PROJECT_STATUS_NO_SCHEDULE"
+	PROJECT_STATUS_REACH_DAILY_DELIVERY_ProjectListV30DataListStatusSecond ProjectListV30DataListStatusSecond = "PROJECT_STATUS_REACH_DAILY_DELIVERY"
+	PROJECT_STATUS_STOP_ProjectListV30DataListStatusSecond                 ProjectListV30DataListStatusSecond = "PROJECT_STATUS_STOP"
 )
 
 // Ptr returns reference to project_list_v3.0_data_list_status_second value

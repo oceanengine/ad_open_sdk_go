@@ -28,7 +28,9 @@ type ProjectCreateV30RequestDeliverySetting struct {
 	EndTime           *string                                           `json:"end_time,omitempty"`
 	FilterNightSwitch *ProjectCreateV30DeliverySettingFilterNightSwitch `json:"filter_night_switch,omitempty"`
 	//
-	FirstRoiGoal  *float64                                      `json:"first_roi_goal,omitempty"`
+	FirstRoiGoal *float64 `json:"first_roi_goal,omitempty"`
+	//
+	LiveDuration  *float64                                      `json:"live_duration,omitempty"`
 	Pricing       *ProjectCreateV30DeliverySettingPricing       `json:"pricing,omitempty"`
 	ProjectCustom *ProjectCreateV30DeliverySettingProjectCustom `json:"project_custom,omitempty"`
 	//

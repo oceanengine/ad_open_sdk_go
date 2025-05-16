@@ -16,9 +16,9 @@ type KeywordUpdateV2V2DataSuccessListBidType string
 // List of keyword_update_v2_v2_data_success_list_bid_type
 const (
 	BRAND_AD_KeywordUpdateV2V2DataSuccessListBidType       KeywordUpdateV2V2DataSuccessListBidType = "BRAND_AD"
+	WITH_AD_KeywordUpdateV2V2DataSuccessListBidType        KeywordUpdateV2V2DataSuccessListBidType = "WITH_AD"
 	FEED_TO_SEARCH_KeywordUpdateV2V2DataSuccessListBidType KeywordUpdateV2V2DataSuccessListBidType = "FEED_TO_SEARCH"
 	SUGGEST_KeywordUpdateV2V2DataSuccessListBidType        KeywordUpdateV2V2DataSuccessListBidType = "SUGGEST"
-	WITH_AD_KeywordUpdateV2V2DataSuccessListBidType        KeywordUpdateV2V2DataSuccessListBidType = "WITH_AD"
 	CUSTOM_KeywordUpdateV2V2DataSuccessListBidType         KeywordUpdateV2V2DataSuccessListBidType = "CUSTOM"
 )
 

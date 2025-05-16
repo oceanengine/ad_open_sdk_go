@@ -15,10 +15,10 @@ type ToolsBidSuggestV2LocationType string
 
 // List of tools_bid_suggest_v2_location_type
 const (
+	HOME_ToolsBidSuggestV2LocationType    ToolsBidSuggestV2LocationType = "HOME"
 	TRAVEL_ToolsBidSuggestV2LocationType  ToolsBidSuggestV2LocationType = "TRAVEL"
 	CURRENT_ToolsBidSuggestV2LocationType ToolsBidSuggestV2LocationType = "CURRENT"
 	ALL_ToolsBidSuggestV2LocationType     ToolsBidSuggestV2LocationType = "ALL"
-	HOME_ToolsBidSuggestV2LocationType    ToolsBidSuggestV2LocationType = "HOME"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_location_type value

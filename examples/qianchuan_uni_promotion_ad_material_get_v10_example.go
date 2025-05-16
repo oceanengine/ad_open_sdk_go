@@ -26,6 +26,9 @@ type ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequestExample struct {
 	AdvertiserId int64                                          `json:"advertiser_id"`
 	AdId         int64                                          `json:"ad_id"`
 	Filtering    QianchuanUniPromotionAdMaterialGetV10Filtering `json:"filtering"`
+	Fields       []string                                       `json:"fields,omitempty"`
+	OrderType    QianchuanUniPromotionAdMaterialGetV10OrderType `json:"order_type,omitempty"`
+	OrderField   string                                         `json:"order_field,omitempty"`
 	Page         int32                                          `json:"page,omitempty"`
 	PageSize     QianchuanUniPromotionAdMaterialGetV10PageSize  `json:"page_size,omitempty"`
 }
@@ -49,7 +52,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanUniPromotionAdMaterialGetV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).AdId(request.AdId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).AdId(request.AdId).Filtering(request.Filtering).Fields(request.Fields).OrderType(request.OrderType).OrderField(request.OrderField).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

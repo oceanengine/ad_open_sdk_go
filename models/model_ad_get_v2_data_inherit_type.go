@@ -15,9 +15,9 @@ type AdGetV2DataInheritType string
 
 // List of ad_get_v2_data_inherit_type
 const (
+	INHERIT_FROM_ACCOUNT_AdGetV2DataInheritType  AdGetV2DataInheritType = "INHERIT_FROM_ACCOUNT"
 	INHERIT_BY_SYSTEM_AdGetV2DataInheritType     AdGetV2DataInheritType = "INHERIT_BY_SYSTEM"
 	INHERIT_FROM_CUSTOMER_AdGetV2DataInheritType AdGetV2DataInheritType = "INHERIT_FROM_CUSTOMER"
-	INHERIT_FROM_ACCOUNT_AdGetV2DataInheritType  AdGetV2DataInheritType = "INHERIT_FROM_ACCOUNT"
 )
 
 // Ptr returns reference to ad_get_v2_data_inherit_type value

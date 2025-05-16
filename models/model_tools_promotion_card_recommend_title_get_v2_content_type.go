@@ -15,15 +15,15 @@ type ToolsPromotionCardRecommendTitleGetV2ContentType string
 
 // List of tools_promotion_card_recommend_title_get_v2_content_type
 const (
-	CARD_ToolsPromotionCardRecommendTitleGetV2ContentType           ToolsPromotionCardRecommendTitleGetV2ContentType = "CARD"
-	PHONE_ToolsPromotionCardRecommendTitleGetV2ContentType          ToolsPromotionCardRecommendTitleGetV2ContentType = "PHONE"
-	TABLE_ToolsPromotionCardRecommendTitleGetV2ContentType          ToolsPromotionCardRecommendTitleGetV2ContentType = "TABLE"
-	GAME_PACKAGE_ToolsPromotionCardRecommendTitleGetV2ContentType   ToolsPromotionCardRecommendTitleGetV2ContentType = "GAME_PACKAGE"
 	UNKNOWN_ToolsPromotionCardRecommendTitleGetV2ContentType        ToolsPromotionCardRecommendTitleGetV2ContentType = "UNKNOWN"
+	CARD_ToolsPromotionCardRecommendTitleGetV2ContentType           ToolsPromotionCardRecommendTitleGetV2ContentType = "CARD"
+	GAME_PACKAGE_ToolsPromotionCardRecommendTitleGetV2ContentType   ToolsPromotionCardRecommendTitleGetV2ContentType = "GAME_PACKAGE"
 	GAME_FORM_ToolsPromotionCardRecommendTitleGetV2ContentType      ToolsPromotionCardRecommendTitleGetV2ContentType = "GAME_FORM"
 	CONSULT_ToolsPromotionCardRecommendTitleGetV2ContentType        ToolsPromotionCardRecommendTitleGetV2ContentType = "CONSULT"
-	LANDING_ToolsPromotionCardRecommendTitleGetV2ContentType        ToolsPromotionCardRecommendTitleGetV2ContentType = "LANDING"
+	PHONE_ToolsPromotionCardRecommendTitleGetV2ContentType          ToolsPromotionCardRecommendTitleGetV2ContentType = "PHONE"
 	DOWNLOAD_ToolsPromotionCardRecommendTitleGetV2ContentType       ToolsPromotionCardRecommendTitleGetV2ContentType = "DOWNLOAD"
+	TABLE_ToolsPromotionCardRecommendTitleGetV2ContentType          ToolsPromotionCardRecommendTitleGetV2ContentType = "TABLE"
+	LANDING_ToolsPromotionCardRecommendTitleGetV2ContentType        ToolsPromotionCardRecommendTitleGetV2ContentType = "LANDING"
 	GAME_SUBSCRIBE_ToolsPromotionCardRecommendTitleGetV2ContentType ToolsPromotionCardRecommendTitleGetV2ContentType = "GAME_SUBSCRIBE"
 )
 

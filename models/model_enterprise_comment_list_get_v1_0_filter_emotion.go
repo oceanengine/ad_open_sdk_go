@@ -17,8 +17,8 @@ type EnterpriseCommentListGetV10FilterEmotion string
 const (
 	NEU_EMOTION_EnterpriseCommentListGetV10FilterEmotion EnterpriseCommentListGetV10FilterEmotion = "NEU_EMOTION"
 	POS_EMOTION_EnterpriseCommentListGetV10FilterEmotion EnterpriseCommentListGetV10FilterEmotion = "POS_EMOTION"
-	ANY_EMOTION_EnterpriseCommentListGetV10FilterEmotion EnterpriseCommentListGetV10FilterEmotion = "ANY_EMOTION"
 	NEG_EMOTION_EnterpriseCommentListGetV10FilterEmotion EnterpriseCommentListGetV10FilterEmotion = "NEG_EMOTION"
+	ANY_EMOTION_EnterpriseCommentListGetV10FilterEmotion EnterpriseCommentListGetV10FilterEmotion = "ANY_EMOTION"
 )
 
 // Ptr returns reference to enterprise_comment_list_get_v1.0_filter_emotion value

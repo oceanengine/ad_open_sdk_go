@@ -13,6 +13,8 @@ package models
 // ProjectListV30ResponseDataListInnerDeliverySetting
 type ProjectListV30ResponseDataListInnerDeliverySetting struct {
 	//
+	AlreadyDeliveryDuration *float64 `json:"already_delivery_duration,omitempty"`
+	//
 	Bid      *float64                                       `json:"bid,omitempty"`
 	BidSpeed *ProjectListV30DataListDeliverySettingBidSpeed `json:"bid_speed,omitempty"`
 	//
@@ -31,7 +33,9 @@ type ProjectListV30ResponseDataListInnerDeliverySetting struct {
 	//
 	FilterNightSwitch *string `json:"filter_night_switch,omitempty"`
 	//
-	FirstRoiGoal  *float64                                            `json:"first_roi_goal,omitempty"`
+	FirstRoiGoal *float64 `json:"first_roi_goal,omitempty"`
+	//
+	LiveDuration  *float64                                            `json:"live_duration,omitempty"`
 	ProjectCustom *ProjectListV30DataListDeliverySettingProjectCustom `json:"project_custom,omitempty"`
 	//
 	RoiGoal *float64 `json:"roi_goal,omitempty"`

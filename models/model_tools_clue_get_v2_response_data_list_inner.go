@@ -35,6 +35,8 @@ type ToolsClueGetV2ResponseDataListInner struct {
 	//
 	ClueOwnerName *string `json:"clue_owner_name,omitempty"`
 	//
+	ClueReturnStatus *string `json:"clue_return_status,omitempty"`
+	//
 	ClueSource *int64 `json:"clue_source,omitempty"`
 	//
 	ClueState *int64 `json:"clue_state,omitempty"`
