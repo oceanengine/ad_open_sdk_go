@@ -24,6 +24,7 @@ import (
 
 type ApiOpenApiV30DpaAlbumStatusGetGetRequestExample struct {
 	AlbumId string `json:"album_id"`
+	AppId   int64  `json:"app_id"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/dpa/album_status/get/ Get
@@ -45,7 +46,7 @@ func main() {
 	resp, httpRes, err := apiClient.DpaAlbumStatusGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AlbumId(request.AlbumId).
+		AlbumId(request.AlbumId).AppId(request.AppId).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

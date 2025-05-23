@@ -14,6 +14,8 @@ package models
 type DpaAlbumCreateV30Request struct {
 	// 短剧标题，请注意命名符合 https://www.volcengine.com/docs/4/1200126 规则
 	AlbumTitle string `json:"album_title"`
+	//
+	AppId int64 `json:"app_id"`
 	// 总集数
 	SeqNum int64 `json:"seq_num"`
 	//

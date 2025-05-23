@@ -97,8 +97,12 @@ type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo struct {
 	TaskCategory *int64 `json:"task_category,omitempty"`
 	// 任务类型
 	TaskClassification *int64 `json:"task_classification,omitempty"`
+	//
+	TaskDetailUrl *string `json:"task_detail_url,omitempty"`
 	// 任务头图
-	TaskHeadImage       *string                                                                      `json:"task_head_image,omitempty"`
+	TaskHeadImage *string `json:"task_head_image,omitempty"`
+	//
+	TaskParticipateUrl  *string                                                                      `json:"task_participate_url,omitempty"`
 	TaskRequirementInfo *StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoTaskRequirementInfo `json:"task_requirement_info,omitempty"`
 	//
 	TaskSupportAd *bool `json:"task_support_ad,omitempty"`

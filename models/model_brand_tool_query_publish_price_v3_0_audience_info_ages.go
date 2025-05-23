@@ -20,6 +20,7 @@ const (
 	BETWEEN24_30_BrandToolQueryPublishPriceV30AudienceInfoAges BrandToolQueryPublishPriceV30AudienceInfoAges = "BETWEEN24_30"
 	BETWEEN31_40_BrandToolQueryPublishPriceV30AudienceInfoAges BrandToolQueryPublishPriceV30AudienceInfoAges = "BETWEEN31_40"
 	BETWEEN41_49_BrandToolQueryPublishPriceV30AudienceInfoAges BrandToolQueryPublishPriceV30AudienceInfoAges = "BETWEEN41_49"
+	UNLIMITED_BrandToolQueryPublishPriceV30AudienceInfoAges    BrandToolQueryPublishPriceV30AudienceInfoAges = "UNLIMITED"
 )
 
 // Ptr returns reference to brand_tool_query_publish_price_v3.0_audience_info_ages value

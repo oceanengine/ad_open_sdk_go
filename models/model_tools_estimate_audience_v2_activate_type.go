@@ -15,9 +15,9 @@ type ToolsEstimateAudienceV2ActivateType string
 
 // List of tools_estimate_audience_v2_activate_type
 const (
-	WITH_IN_A_MONTH_ToolsEstimateAudienceV2ActivateType         ToolsEstimateAudienceV2ActivateType = "WITH_IN_A_MONTH"
 	UNLIMITED_ToolsEstimateAudienceV2ActivateType               ToolsEstimateAudienceV2ActivateType = "UNLIMITED"
 	ONE_MONTH_2_THREE_MONTH_ToolsEstimateAudienceV2ActivateType ToolsEstimateAudienceV2ActivateType = "ONE_MONTH_2_THREE_MONTH"
+	WITH_IN_A_MONTH_ToolsEstimateAudienceV2ActivateType         ToolsEstimateAudienceV2ActivateType = "WITH_IN_A_MONTH"
 	THREE_MONTH_EAILIER_ToolsEstimateAudienceV2ActivateType     ToolsEstimateAudienceV2ActivateType = "THREE_MONTH_EAILIER"
 )
 

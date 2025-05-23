@@ -26,10 +26,10 @@ type ApiOpenApi2StarDemandOmGetDemandListGetRequestExample struct {
 	StarId                  int64                                              `json:"star_id"`
 	PageNo                  int32                                              `json:"page_no"`
 	PageSize                int32                                              `json:"page_size"`
+	CreateStartTime         int64                                              `json:"create_start_time"`
+	CreateEndTime           int64                                              `json:"create_end_time"`
 	UniversalSettlementType StarDemandOmGetDemandListV2UniversalSettlementType `json:"universal_settlement_type,omitempty"`
 	MicroAppId              string                                             `json:"micro_app_id,omitempty"`
-	CreateStartTime         int64                                              `json:"create_start_time,omitempty"`
-	CreateEndTime           int64                                              `json:"create_end_time,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/star/demand/om_get_demand_list/ Get
@@ -51,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.StarDemandOmGetDemandListV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		StarId(request.StarId).PageNo(request.PageNo).PageSize(request.PageSize).UniversalSettlementType(request.UniversalSettlementType).MicroAppId(request.MicroAppId).CreateStartTime(request.CreateStartTime).CreateEndTime(request.CreateEndTime).
+		StarId(request.StarId).PageNo(request.PageNo).PageSize(request.PageSize).CreateStartTime(request.CreateStartTime).CreateEndTime(request.CreateEndTime).UniversalSettlementType(request.UniversalSettlementType).MicroAppId(request.MicroAppId).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -15,4 +15,8 @@ type ToolsHotMaterialDeriveListV30ResponseDataDataInnerDeriveMaterialsInnerStrat
 	// 应用的时间
 	ApplyTimes []*ToolsHotMaterialDeriveListV30ResponseDataDataInnerDeriveMaterialsInnerStrategyDetailApplyTimesInner `json:"apply_times,omitempty"`
 	Strategy   *ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy                            `json:"strategy,omitempty"`
+	//
+	StrategyDescription *string `json:"strategy_description,omitempty"`
+	//
+	StrategyName *string `json:"strategy_name,omitempty"`
 }

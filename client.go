@@ -1,5 +1,5 @@
 /*
-API version: 1.1.52
+API version: 1.1.53
 */
 package ad_open_sdk_go
 
@@ -215,6 +215,10 @@ func (c *Client) AgentAdvertiserUpdateV2Api() *api.AgentAdvertiserUpdateV2ApiSer
 	return c.ApiClient.AgentAdvertiserUpdateV2Api
 }
 
+func (c *Client) AgentChargeVerifyV2Api() *api.AgentChargeVerifyV2ApiService {
+	return c.ApiClient.AgentChargeVerifyV2Api
+}
+
 func (c *Client) AgentChildAgentSelectV2Api() *api.AgentChildAgentSelectV2ApiService {
 	return c.ApiClient.AgentChildAgentSelectV2Api
 }
@@ -225,6 +229,10 @@ func (c *Client) AgentCompanyBiddingListQueryV2Api() *api.AgentCompanyBiddingLis
 
 func (c *Client) AgentCompanyBrandListQueryV2Api() *api.AgentCompanyBrandListQueryV2ApiService {
 	return c.ApiClient.AgentCompanyBrandListQueryV2Api
+}
+
+func (c *Client) AgentCreditChargeSubmitV2Api() *api.AgentCreditChargeSubmitV2ApiService {
+	return c.ApiClient.AgentCreditChargeSubmitV2Api
 }
 
 func (c *Client) AgentFundTransferSeqCommitV2Api() *api.AgentFundTransferSeqCommitV2ApiService {
@@ -2151,6 +2159,10 @@ func (c *Client) QianchuanToolsGrayV10Api() *api.QianchuanToolsGrayV10ApiService
 	return c.ApiClient.QianchuanToolsGrayV10Api
 }
 
+func (c *Client) QianchuanToolsLogSearchV10Api() *api.QianchuanToolsLogSearchV10ApiService {
+	return c.ApiClient.QianchuanToolsLogSearchV10Api
+}
+
 func (c *Client) QianchuanToolsShopAuthV10Api() *api.QianchuanToolsShopAuthV10ApiService {
 	return c.ApiClient.QianchuanToolsShopAuthV10Api
 }
@@ -2207,12 +2219,24 @@ func (c *Client) QianchuanUniPromotionAdDetailV10Api() *api.QianchuanUniPromotio
 	return c.ApiClient.QianchuanUniPromotionAdDetailV10Api
 }
 
+func (c *Client) QianchuanUniPromotionAdMaterialAddV10Api() *api.QianchuanUniPromotionAdMaterialAddV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdMaterialAddV10Api
+}
+
 func (c *Client) QianchuanUniPromotionAdMaterialDeleteV10Api() *api.QianchuanUniPromotionAdMaterialDeleteV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdMaterialDeleteV10Api
 }
 
 func (c *Client) QianchuanUniPromotionAdMaterialGetV10Api() *api.QianchuanUniPromotionAdMaterialGetV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdMaterialGetV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdProductDeleteV10Api() *api.QianchuanUniPromotionAdProductDeleteV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdProductDeleteV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdProductGetV10Api() *api.QianchuanUniPromotionAdProductGetV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdProductGetV10Api
 }
 
 func (c *Client) QianchuanUniPromotionAdStatusUpdateV10Api() *api.QianchuanUniPromotionAdStatusUpdateV10ApiService {
@@ -2795,6 +2819,10 @@ func (c *Client) StarMcnProviderGetTagOnTaskV2Api() *api.StarMcnProviderGetTagOn
 	return c.ApiClient.StarMcnProviderGetTagOnTaskV2Api
 }
 
+func (c *Client) StarMcnProviderGetTaskAuthorListV2Api() *api.StarMcnProviderGetTaskAuthorListV2ApiService {
+	return c.ApiClient.StarMcnProviderGetTaskAuthorListV2Api
+}
+
 func (c *Client) StarMcnProviderGetTaskDetailV2Api() *api.StarMcnProviderGetTaskDetailV2ApiService {
 	return c.ApiClient.StarMcnProviderGetTaskDetailV2Api
 }
@@ -2809,6 +2837,10 @@ func (c *Client) StarMcnProviderGetTaskShareCodeV2Api() *api.StarMcnProviderGetT
 
 func (c *Client) StarMcnProviderGetUnparticipatedTaskV2Api() *api.StarMcnProviderGetUnparticipatedTaskV2ApiService {
 	return c.ApiClient.StarMcnProviderGetUnparticipatedTaskV2Api
+}
+
+func (c *Client) StarMcnProviderHandleJoinedAuthorV2Api() *api.StarMcnProviderHandleJoinedAuthorV2ApiService {
+	return c.ApiClient.StarMcnProviderHandleJoinedAuthorV2Api
 }
 
 func (c *Client) StarMcnProviderUploadSearchItemV2Api() *api.StarMcnProviderUploadSearchItemV2ApiService {

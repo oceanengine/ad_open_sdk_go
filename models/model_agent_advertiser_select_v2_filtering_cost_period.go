@@ -15,9 +15,9 @@ type AgentAdvertiserSelectV2FilteringCostPeriod string
 
 // List of agent_advertiser_select_v2_filtering_cost_period
 const (
-	TODAY_AgentAdvertiserSelectV2FilteringCostPeriod        AgentAdvertiserSelectV2FilteringCostPeriod = "TODAY"
 	LAST_15_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_15_DAYS"
 	YESTERDAY_AgentAdvertiserSelectV2FilteringCostPeriod    AgentAdvertiserSelectV2FilteringCostPeriod = "YESTERDAY"
+	TODAY_AgentAdvertiserSelectV2FilteringCostPeriod        AgentAdvertiserSelectV2FilteringCostPeriod = "TODAY"
 	LAST_30_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_30_DAYS"
 	LAST_7_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod  AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_7_DAYS"
 )

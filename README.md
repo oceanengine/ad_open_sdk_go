@@ -253,9 +253,11 @@ Class | Method | HTTP request
 *AgentAdvertiserSelectV2Api* | **OpenApi2AgentAdvertiserSelectGet** | **Get** /open_api/2/agent/advertiser/select/
 *AgentAdvertiserUnassignV2Api* | **OpenApi2AgentAdvertiserUnassignPost** | **Post** /open_api/2/agent/advertiser/unassign/
 *AgentAdvertiserUpdateV2Api* | **OpenApi2AgentAdvertiserUpdatePost** | **Post** /open_api/2/agent/advertiser/update/
+*AgentChargeVerifyV2Api* | **OpenApi2AgentChargeVerifyGet** | **Get** /open_api/2/agent/charge/verify/
 *AgentChildAgentSelectV2Api* | **OpenApi2AgentChildAgentSelectGet** | **Get** /open_api/2/agent/child_agent/select/
 *AgentCompanyBiddingListQueryV2Api* | **OpenApi2AgentCompanyBiddingListQueryGet** | **Get** /open_api/2/agent/company/bidding/list/query/
 *AgentCompanyBrandListQueryV2Api* | **OpenApi2AgentCompanyBrandListQueryGet** | **Get** /open_api/2/agent/company/brand/list/query/
+*AgentCreditChargeSubmitV2Api* | **OpenApi2AgentCreditChargeSubmitPost** | **Post** /open_api/2/agent/credit_charge/submit/
 *AgentFundTransferSeqCommitV2Api* | **OpenApi2AgentFundTransferSeqCommitPost** | **Post** /open_api/2/agent/fund/transfer_seq/commit/
 *AgentFundTransferSeqCreateV2Api* | **OpenApi2AgentFundTransferSeqCreatePost** | **Post** /open_api/2/agent/fund/transfer_seq/create/
 *AgentInfoV2Api* | **OpenApi2AgentInfoGet** | **Get** /open_api/2/agent/info/
@@ -737,6 +739,7 @@ Class | Method | HTTP request
 *QianchuanToolsAwemeAuthV10Api* | **OpenApiV10QianchuanToolsAwemeAuthPost** | **Post** /open_api/v1.0/qianchuan/tools/aweme_auth/
 *QianchuanToolsEstimateAudienceV10Api* | **OpenApiV10QianchuanToolsEstimateAudienceGet** | **Get** /open_api/v1.0/qianchuan/tools/estimate_audience/
 *QianchuanToolsGrayV10Api* | **OpenApiV10QianchuanToolsGrayGet** | **Get** /open_api/v1.0/qianchuan/tools/gray/
+*QianchuanToolsLogSearchV10Api* | **OpenApiV10QianchuanToolsLogSearchGet** | **Get** /open_api/v1.0/qianchuan/tools/log_search/
 *QianchuanToolsShopAuthV10Api* | **OpenApiV10QianchuanToolsShopAuthPost** | **Post** /open_api/v1.0/qianchuan/tools/shop_auth/
 *QianchuanToolsSmartBoostAdBoostReportGetV10Api* | **OpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGet** | **Get** /open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/report/get/
 *QianchuanToolsSmartBoostAdBoostSetV10Api* | **OpenApiV10QianchuanToolsSmartBoostAdBoostSetPost** | **Post** /open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/set/
@@ -751,8 +754,11 @@ Class | Method | HTTP request
 *QianchuanUniPromotionAdControlTaskListV10Api* | **OpenApiV10QianchuanUniPromotionAdControlTaskListGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/ad/control_task/list/
 *QianchuanUniPromotionAdControlTaskStatusUpdateV10Api* | **OpenApiV10QianchuanUniPromotionAdControlTaskStatusUpdatePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/control_task/status/update/
 *QianchuanUniPromotionAdDetailV10Api* | **OpenApiV10QianchuanUniPromotionAdDetailGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/ad/detail/
+*QianchuanUniPromotionAdMaterialAddV10Api* | **OpenApiV10QianchuanUniPromotionAdMaterialAddPost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/material/add/
 *QianchuanUniPromotionAdMaterialDeleteV10Api* | **OpenApiV10QianchuanUniPromotionAdMaterialDeletePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/material/delete/
 *QianchuanUniPromotionAdMaterialGetV10Api* | **OpenApiV10QianchuanUniPromotionAdMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/ad/material/get/
+*QianchuanUniPromotionAdProductDeleteV10Api* | **OpenApiV10QianchuanUniPromotionAdProductDeletePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/product/delete/
+*QianchuanUniPromotionAdProductGetV10Api* | **OpenApiV10QianchuanUniPromotionAdProductGetGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/ad/product/get/
 *QianchuanUniPromotionAdStatusUpdateV10Api* | **OpenApiV10QianchuanUniPromotionAdStatusUpdatePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/status/update/
 *QianchuanUniPromotionBlockMaterialGetV10Api* | **OpenApiV10QianchuanUniPromotionBlockMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/block_material/get/
 *QianchuanUniPromotionListV10Api* | **OpenApiV10QianchuanUniPromotionListGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/list/
@@ -898,10 +904,12 @@ Class | Method | HTTP request
 *StarMcnGetUnparticipatedTaskV2Api* | **OpenApi2StarMcnGetUnparticipatedTaskGet** | **Get** /open_api/2/star/mcn/get_unparticipated_task/
 *StarMcnProviderGetParticipatedTaskV2Api* | **OpenApi2StarMcnProviderGetParticipatedTaskGet** | **Get** /open_api/2/star/mcn/provider_get_participated_task/
 *StarMcnProviderGetTagOnTaskV2Api* | **OpenApi2StarMcnProviderGetTagOnTaskGet** | **Get** /open_api/2/star/mcn/provider_get_tag_on_task/
+*StarMcnProviderGetTaskAuthorListV2Api* | **OpenApi2StarMcnProviderGetTaskAuthorListGet** | **Get** /open_api/2/star/mcn/provider_get_task_author_list/
 *StarMcnProviderGetTaskDetailV2Api* | **OpenApi2StarMcnProviderGetTaskDetailGet** | **Get** /open_api/2/star/mcn/provider_get_task_detail/
 *StarMcnProviderGetTaskItemListV2Api* | **OpenApi2StarMcnProviderGetTaskItemListGet** | **Get** /open_api/2/star/mcn/provider_get_task_item_list/
 *StarMcnProviderGetTaskShareCodeV2Api* | **OpenApi2StarMcnProviderGetTaskShareCodeGet** | **Get** /open_api/2/star/mcn/provider_get_task_share_code/
 *StarMcnProviderGetUnparticipatedTaskV2Api* | **OpenApi2StarMcnProviderGetUnparticipatedTaskGet** | **Get** /open_api/2/star/mcn/provider_get_unparticipated_task/
+*StarMcnProviderHandleJoinedAuthorV2Api* | **OpenApi2StarMcnProviderHandleJoinedAuthorPost** | **Post** /open_api/2/star/mcn/provider_handle_joined_author/
 *StarMcnProviderUploadSearchItemV2Api* | **OpenApi2StarMcnProviderUploadSearchItemPost** | **Post** /open_api/2/star/mcn/provider_upload_search_item/
 *StarOrderApproveResourceV2Api* | **OpenApi2StarOrderApproveResourcePost** | **Post** /open_api/2/star/order/approve_resource/
 *StarOrderDemanderCancelV2Api* | **OpenApi2StarOrderDemanderCancelPost** | **Post** /open_api/2/star/order/demander_cancel/

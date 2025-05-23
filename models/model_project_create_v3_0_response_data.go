@@ -12,6 +12,8 @@ package models
 
 // ProjectCreateV30ResponseData
 type ProjectCreateV30ResponseData struct {
+	// 剩余自动投放项目余额
+	AutoProjectCount *int64 `json:"auto_project_count,omitempty"`
 	//
 	ErrorKeywordsList []*ProjectCreateV30ResponseDataErrorKeywordsListInner `json:"error_keywords_list,omitempty"`
 	//

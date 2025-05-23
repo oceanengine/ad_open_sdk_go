@@ -32,7 +32,7 @@ type ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequestExample struct
 	Fields        []*QianchuanUniPromotionAdControlTaskListV10Fields     `json:"fields,omitempty"`
 	Filtering     QianchuanUniPromotionAdControlTaskListV10Filtering     `json:"filtering,omitempty"`
 	OrderType     QianchuanUniPromotionAdControlTaskListV10OrderType     `json:"order_type,omitempty"`
-	OrderField    QianchuanUniPromotionAdControlTaskListV10OrderField    `json:"order_field,omitempty"`
+	OrderField    string                                                 `json:"order_field,omitempty"`
 	Page          int64                                                  `json:"page,omitempty"`
 	PageSize      int64                                                  `json:"page_size,omitempty"`
 }

@@ -18,5 +18,5 @@ type ToolsHotMaterialDeriveAdoptV30ResponseDataResultsInner struct {
 	//
 	StatusMessage string `json:"status_message"`
 	//
-	Vid string `json:"vid"`
+	VideoId string `json:"video_id"`
 }

@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.52
+// APIClient manages communication with the Oceanengine Open Api API v1.1.53
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -145,11 +145,15 @@ type APIClient struct {
 
 	AgentAdvertiserUpdateV2Api *AgentAdvertiserUpdateV2ApiService
 
+	AgentChargeVerifyV2Api *AgentChargeVerifyV2ApiService
+
 	AgentChildAgentSelectV2Api *AgentChildAgentSelectV2ApiService
 
 	AgentCompanyBiddingListQueryV2Api *AgentCompanyBiddingListQueryV2ApiService
 
 	AgentCompanyBrandListQueryV2Api *AgentCompanyBrandListQueryV2ApiService
+
+	AgentCreditChargeSubmitV2Api *AgentCreditChargeSubmitV2ApiService
 
 	AgentFundTransferSeqCommitV2Api *AgentFundTransferSeqCommitV2ApiService
 
@@ -1113,6 +1117,8 @@ type APIClient struct {
 
 	QianchuanToolsGrayV10Api *QianchuanToolsGrayV10ApiService
 
+	QianchuanToolsLogSearchV10Api *QianchuanToolsLogSearchV10ApiService
+
 	QianchuanToolsShopAuthV10Api *QianchuanToolsShopAuthV10ApiService
 
 	QianchuanToolsSmartBoostAdBoostReportGetV10Api *QianchuanToolsSmartBoostAdBoostReportGetV10ApiService
@@ -1141,9 +1147,15 @@ type APIClient struct {
 
 	QianchuanUniPromotionAdDetailV10Api *QianchuanUniPromotionAdDetailV10ApiService
 
+	QianchuanUniPromotionAdMaterialAddV10Api *QianchuanUniPromotionAdMaterialAddV10ApiService
+
 	QianchuanUniPromotionAdMaterialDeleteV10Api *QianchuanUniPromotionAdMaterialDeleteV10ApiService
 
 	QianchuanUniPromotionAdMaterialGetV10Api *QianchuanUniPromotionAdMaterialGetV10ApiService
+
+	QianchuanUniPromotionAdProductDeleteV10Api *QianchuanUniPromotionAdProductDeleteV10ApiService
+
+	QianchuanUniPromotionAdProductGetV10Api *QianchuanUniPromotionAdProductGetV10ApiService
 
 	QianchuanUniPromotionAdStatusUpdateV10Api *QianchuanUniPromotionAdStatusUpdateV10ApiService
 
@@ -1435,6 +1447,8 @@ type APIClient struct {
 
 	StarMcnProviderGetTagOnTaskV2Api *StarMcnProviderGetTagOnTaskV2ApiService
 
+	StarMcnProviderGetTaskAuthorListV2Api *StarMcnProviderGetTaskAuthorListV2ApiService
+
 	StarMcnProviderGetTaskDetailV2Api *StarMcnProviderGetTaskDetailV2ApiService
 
 	StarMcnProviderGetTaskItemListV2Api *StarMcnProviderGetTaskItemListV2ApiService
@@ -1442,6 +1456,8 @@ type APIClient struct {
 	StarMcnProviderGetTaskShareCodeV2Api *StarMcnProviderGetTaskShareCodeV2ApiService
 
 	StarMcnProviderGetUnparticipatedTaskV2Api *StarMcnProviderGetUnparticipatedTaskV2ApiService
+
+	StarMcnProviderHandleJoinedAuthorV2Api *StarMcnProviderHandleJoinedAuthorV2ApiService
 
 	StarMcnProviderUploadSearchItemV2Api *StarMcnProviderUploadSearchItemV2ApiService
 
@@ -2089,9 +2105,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AgentAdvertiserSelectV2Api = (*AgentAdvertiserSelectV2ApiService)(&c.common)
 	c.AgentAdvertiserUnassignV2Api = (*AgentAdvertiserUnassignV2ApiService)(&c.common)
 	c.AgentAdvertiserUpdateV2Api = (*AgentAdvertiserUpdateV2ApiService)(&c.common)
+	c.AgentChargeVerifyV2Api = (*AgentChargeVerifyV2ApiService)(&c.common)
 	c.AgentChildAgentSelectV2Api = (*AgentChildAgentSelectV2ApiService)(&c.common)
 	c.AgentCompanyBiddingListQueryV2Api = (*AgentCompanyBiddingListQueryV2ApiService)(&c.common)
 	c.AgentCompanyBrandListQueryV2Api = (*AgentCompanyBrandListQueryV2ApiService)(&c.common)
+	c.AgentCreditChargeSubmitV2Api = (*AgentCreditChargeSubmitV2ApiService)(&c.common)
 	c.AgentFundTransferSeqCommitV2Api = (*AgentFundTransferSeqCommitV2ApiService)(&c.common)
 	c.AgentFundTransferSeqCreateV2Api = (*AgentFundTransferSeqCreateV2ApiService)(&c.common)
 	c.AgentInfoV2Api = (*AgentInfoV2ApiService)(&c.common)
@@ -2573,6 +2591,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanToolsAwemeAuthV10Api = (*QianchuanToolsAwemeAuthV10ApiService)(&c.common)
 	c.QianchuanToolsEstimateAudienceV10Api = (*QianchuanToolsEstimateAudienceV10ApiService)(&c.common)
 	c.QianchuanToolsGrayV10Api = (*QianchuanToolsGrayV10ApiService)(&c.common)
+	c.QianchuanToolsLogSearchV10Api = (*QianchuanToolsLogSearchV10ApiService)(&c.common)
 	c.QianchuanToolsShopAuthV10Api = (*QianchuanToolsShopAuthV10ApiService)(&c.common)
 	c.QianchuanToolsSmartBoostAdBoostReportGetV10Api = (*QianchuanToolsSmartBoostAdBoostReportGetV10ApiService)(&c.common)
 	c.QianchuanToolsSmartBoostAdBoostSetV10Api = (*QianchuanToolsSmartBoostAdBoostSetV10ApiService)(&c.common)
@@ -2587,8 +2606,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanUniPromotionAdControlTaskListV10Api = (*QianchuanUniPromotionAdControlTaskListV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdControlTaskStatusUpdateV10Api = (*QianchuanUniPromotionAdControlTaskStatusUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdDetailV10Api = (*QianchuanUniPromotionAdDetailV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdMaterialAddV10Api = (*QianchuanUniPromotionAdMaterialAddV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdMaterialDeleteV10Api = (*QianchuanUniPromotionAdMaterialDeleteV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdMaterialGetV10Api = (*QianchuanUniPromotionAdMaterialGetV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdProductDeleteV10Api = (*QianchuanUniPromotionAdProductDeleteV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdProductGetV10Api = (*QianchuanUniPromotionAdProductGetV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdStatusUpdateV10Api = (*QianchuanUniPromotionAdStatusUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionBlockMaterialGetV10Api = (*QianchuanUniPromotionBlockMaterialGetV10ApiService)(&c.common)
 	c.QianchuanUniPromotionListV10Api = (*QianchuanUniPromotionListV10ApiService)(&c.common)
@@ -2734,10 +2756,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarMcnGetUnparticipatedTaskV2Api = (*StarMcnGetUnparticipatedTaskV2ApiService)(&c.common)
 	c.StarMcnProviderGetParticipatedTaskV2Api = (*StarMcnProviderGetParticipatedTaskV2ApiService)(&c.common)
 	c.StarMcnProviderGetTagOnTaskV2Api = (*StarMcnProviderGetTagOnTaskV2ApiService)(&c.common)
+	c.StarMcnProviderGetTaskAuthorListV2Api = (*StarMcnProviderGetTaskAuthorListV2ApiService)(&c.common)
 	c.StarMcnProviderGetTaskDetailV2Api = (*StarMcnProviderGetTaskDetailV2ApiService)(&c.common)
 	c.StarMcnProviderGetTaskItemListV2Api = (*StarMcnProviderGetTaskItemListV2ApiService)(&c.common)
 	c.StarMcnProviderGetTaskShareCodeV2Api = (*StarMcnProviderGetTaskShareCodeV2ApiService)(&c.common)
 	c.StarMcnProviderGetUnparticipatedTaskV2Api = (*StarMcnProviderGetUnparticipatedTaskV2ApiService)(&c.common)
+	c.StarMcnProviderHandleJoinedAuthorV2Api = (*StarMcnProviderHandleJoinedAuthorV2ApiService)(&c.common)
 	c.StarMcnProviderUploadSearchItemV2Api = (*StarMcnProviderUploadSearchItemV2ApiService)(&c.common)
 	c.StarOrderApproveResourceV2Api = (*StarOrderApproveResourceV2ApiService)(&c.common)
 	c.StarOrderDemanderCancelV2Api = (*StarOrderDemanderCancelV2ApiService)(&c.common)

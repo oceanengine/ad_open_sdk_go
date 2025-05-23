@@ -16,8 +16,8 @@ type AdGetV2DataSmartInventory string
 // List of ad_get_v2_data_smart_inventory
 const (
 	UNIVERSAL_ALL_AdGetV2DataSmartInventory AdGetV2DataSmartInventory = "UNIVERSAL_ALL"
-	UNIVERSAL_AdGetV2DataSmartInventory     AdGetV2DataSmartInventory = "UNIVERSAL"
 	SMART_AdGetV2DataSmartInventory         AdGetV2DataSmartInventory = "SMART"
+	UNIVERSAL_AdGetV2DataSmartInventory     AdGetV2DataSmartInventory = "UNIVERSAL"
 	NORMAL_AdGetV2DataSmartInventory        AdGetV2DataSmartInventory = "NORMAL"
 )
 

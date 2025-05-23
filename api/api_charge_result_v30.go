@@ -29,7 +29,7 @@ type ApiOpenApiV30ChargeResultGetRequest struct {
 	chargeOrderId *int64
 }
 
-// 广告主账号
+// 广告主或代理商账户ID
 func (r *ApiOpenApiV30ChargeResultGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ChargeResultGetRequest {
 	r.advertiserId = &advertiserId
 	return r

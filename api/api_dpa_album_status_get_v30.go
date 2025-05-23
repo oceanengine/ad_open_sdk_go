@@ -26,11 +26,17 @@ type ApiOpenApiV30DpaAlbumStatusGetGetRequest struct {
 	ctx        context.Context
 	ApiService *DpaAlbumStatusGetV30ApiService
 	albumId    *string
+	appId      *int64
 }
 
 // 短剧id
 func (r *ApiOpenApiV30DpaAlbumStatusGetGetRequest) AlbumId(albumId string) *ApiOpenApiV30DpaAlbumStatusGetGetRequest {
 	r.albumId = &albumId
+	return r
+}
+
+func (r *ApiOpenApiV30DpaAlbumStatusGetGetRequest) AppId(appId int64) *ApiOpenApiV30DpaAlbumStatusGetGetRequest {
+	r.appId = &appId
 	return r
 }
 
@@ -87,8 +93,12 @@ func (a *DpaAlbumStatusGetV30ApiService) getExecute(r *ApiOpenApiV30DpaAlbumStat
 	if r.albumId == nil {
 		return localVarReturnValue, nil, ReportError("albumId is required and must be specified")
 	}
+	if r.appId == nil {
+		return localVarReturnValue, nil, ReportError("appId is required and must be specified")
+	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "album_id", r.albumId)
+	parameterAddToHeaderOrQuery(localVarQueryParams, "app_id", r.appId)
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

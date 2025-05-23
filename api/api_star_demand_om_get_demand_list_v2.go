@@ -28,10 +28,10 @@ type ApiOpenApi2StarDemandOmGetDemandListGetRequest struct {
 	starId                  *int64
 	pageNo                  *int32
 	pageSize                *int32
-	universalSettlementType *StarDemandOmGetDemandListV2UniversalSettlementType
-	microAppId              *string
 	createStartTime         *int64
 	createEndTime           *int64
+	universalSettlementType *StarDemandOmGetDemandListV2UniversalSettlementType
+	microAppId              *string
 }
 
 // 客户星图ID
@@ -52,18 +52,6 @@ func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) PageSize(pageSize int32
 	return r
 }
 
-// 结算方式 枚举，付费分佣、广告分成
-func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) UniversalSettlementType(universalSettlementType StarDemandOmGetDemandListV2UniversalSettlementType) *ApiOpenApi2StarDemandOmGetDemandListGetRequest {
-	r.universalSettlementType = &universalSettlementType
-	return r
-}
-
-// 小程序ID
-func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) MicroAppId(microAppId string) *ApiOpenApi2StarDemandOmGetDemandListGetRequest {
-	r.microAppId = &microAppId
-	return r
-}
-
 // 任务开始时间
 func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) CreateStartTime(createStartTime int64) *ApiOpenApi2StarDemandOmGetDemandListGetRequest {
 	r.createStartTime = &createStartTime
@@ -73,6 +61,18 @@ func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) CreateStartTime(createS
 // 任务结束时间
 func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) CreateEndTime(createEndTime int64) *ApiOpenApi2StarDemandOmGetDemandListGetRequest {
 	r.createEndTime = &createEndTime
+	return r
+}
+
+// 结算方式 枚举，付费分佣、广告分成
+func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) UniversalSettlementType(universalSettlementType StarDemandOmGetDemandListV2UniversalSettlementType) *ApiOpenApi2StarDemandOmGetDemandListGetRequest {
+	r.universalSettlementType = &universalSettlementType
+	return r
+}
+
+// 小程序ID
+func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) MicroAppId(microAppId string) *ApiOpenApi2StarDemandOmGetDemandListGetRequest {
+	r.microAppId = &microAppId
 	return r
 }
 
@@ -135,6 +135,12 @@ func (a *StarDemandOmGetDemandListV2ApiService) getExecute(r *ApiOpenApi2StarDem
 	if r.pageSize == nil {
 		return localVarReturnValue, nil, ReportError("pageSize is required and must be specified")
 	}
+	if r.createStartTime == nil {
+		return localVarReturnValue, nil, ReportError("createStartTime is required and must be specified")
+	}
+	if r.createEndTime == nil {
+		return localVarReturnValue, nil, ReportError("createEndTime is required and must be specified")
+	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "star_id", r.starId)
 	if r.universalSettlementType != nil {
@@ -145,12 +151,8 @@ func (a *StarDemandOmGetDemandListV2ApiService) getExecute(r *ApiOpenApi2StarDem
 	if r.microAppId != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "micro_app_id", r.microAppId)
 	}
-	if r.createStartTime != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "create_start_time", r.createStartTime)
-	}
-	if r.createEndTime != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "create_end_time", r.createEndTime)
-	}
+	parameterAddToHeaderOrQuery(localVarQueryParams, "create_start_time", r.createStartTime)
+	parameterAddToHeaderOrQuery(localVarQueryParams, "create_end_time", r.createEndTime)
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

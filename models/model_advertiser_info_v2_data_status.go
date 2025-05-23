@@ -15,18 +15,18 @@ type AdvertiserInfoV2DataStatus string
 
 // List of advertiser_info_v2_data_status
 const (
-	STATUS_WAIT_FOR_BPM_AUDIT_AdvertiserInfoV2DataStatus     AdvertiserInfoV2DataStatus = "STATUS_WAIT_FOR_BPM_AUDIT"
-	STATUS_WAIT_FOR_PUBLIC_AUTH_AdvertiserInfoV2DataStatus   AdvertiserInfoV2DataStatus = "STATUS_WAIT_FOR_PUBLIC_AUTH"
-	STATUS_SELF_SERVICE_UNAUDITED_AdvertiserInfoV2DataStatus AdvertiserInfoV2DataStatus = "STATUS_SELF_SERVICE_UNAUDITED"
-	STATUS_CONFIRM_MODIFY_FAIL_AdvertiserInfoV2DataStatus    AdvertiserInfoV2DataStatus = "STATUS_CONFIRM_MODIFY_FAIL"
-	STATUS_PENDING_VERIFIED_AdvertiserInfoV2DataStatus       AdvertiserInfoV2DataStatus = "STATUS_PENDING_VERIFIED"
-	STATUS_PENDING_CONFIRM_AdvertiserInfoV2DataStatus        AdvertiserInfoV2DataStatus = "STATUS_PENDING_CONFIRM"
 	STATUS_CONFIRM_FAIL_AdvertiserInfoV2DataStatus           AdvertiserInfoV2DataStatus = "STATUS_CONFIRM_FAIL"
-	STATUS_ENABLE_AdvertiserInfoV2DataStatus                 AdvertiserInfoV2DataStatus = "STATUS_ENABLE"
 	STATUS_LIMIT_AdvertiserInfoV2DataStatus                  AdvertiserInfoV2DataStatus = "STATUS_LIMIT"
+	STATUS_WAIT_FOR_PUBLIC_AUTH_AdvertiserInfoV2DataStatus   AdvertiserInfoV2DataStatus = "STATUS_WAIT_FOR_PUBLIC_AUTH"
 	STATUS_PENDING_CONFIRM_MODIFY_AdvertiserInfoV2DataStatus AdvertiserInfoV2DataStatus = "STATUS_PENDING_CONFIRM_MODIFY"
+	STATUS_ENABLE_AdvertiserInfoV2DataStatus                 AdvertiserInfoV2DataStatus = "STATUS_ENABLE"
+	STATUS_PENDING_CONFIRM_AdvertiserInfoV2DataStatus        AdvertiserInfoV2DataStatus = "STATUS_PENDING_CONFIRM"
 	STATUS_CONFIRM_FAIL_END_AdvertiserInfoV2DataStatus       AdvertiserInfoV2DataStatus = "STATUS_CONFIRM_FAIL_END"
+	STATUS_CONFIRM_MODIFY_FAIL_AdvertiserInfoV2DataStatus    AdvertiserInfoV2DataStatus = "STATUS_CONFIRM_MODIFY_FAIL"
+	STATUS_SELF_SERVICE_UNAUDITED_AdvertiserInfoV2DataStatus AdvertiserInfoV2DataStatus = "STATUS_SELF_SERVICE_UNAUDITED"
 	STATUS_DISABLE_AdvertiserInfoV2DataStatus                AdvertiserInfoV2DataStatus = "STATUS_DISABLE"
+	STATUS_PENDING_VERIFIED_AdvertiserInfoV2DataStatus       AdvertiserInfoV2DataStatus = "STATUS_PENDING_VERIFIED"
+	STATUS_WAIT_FOR_BPM_AUDIT_AdvertiserInfoV2DataStatus     AdvertiserInfoV2DataStatus = "STATUS_WAIT_FOR_BPM_AUDIT"
 )
 
 // Ptr returns reference to advertiser_info_v2_data_status value

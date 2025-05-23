@@ -15,11 +15,11 @@ type ClueCouponCodeGetV2Status string
 
 // List of clue_coupon_code_get_v2_status
 const (
-	EXPIRED_ClueCouponCodeGetV2Status   ClueCouponCodeGetV2Status = "EXPIRED"
-	ABANDONED_ClueCouponCodeGetV2Status ClueCouponCodeGetV2Status = "ABANDONED"
 	USED_ClueCouponCodeGetV2Status      ClueCouponCodeGetV2Status = "USED"
+	EXPIRED_ClueCouponCodeGetV2Status   ClueCouponCodeGetV2Status = "EXPIRED"
 	VALID_ClueCouponCodeGetV2Status     ClueCouponCodeGetV2Status = "VALID"
 	INVALID_ClueCouponCodeGetV2Status   ClueCouponCodeGetV2Status = "INVALID"
+	ABANDONED_ClueCouponCodeGetV2Status ClueCouponCodeGetV2Status = "ABANDONED"
 )
 
 // Ptr returns reference to clue_coupon_code_get_v2_status value

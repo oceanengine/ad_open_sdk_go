@@ -23,7 +23,7 @@ type ToolsHotMaterialDeriveAdoptV30ResponseDataResultsInnerMaterialInfo struct {
 	//
 	MaterialId int64 `json:"material_id"`
 	//
-	Vid string `json:"vid"`
+	VideoId string `json:"video_id"`
 	//
 	VideoUrl string `json:"video_url"`
 }

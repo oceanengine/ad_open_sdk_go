@@ -16,8 +16,8 @@ type ToolsEstimateAudienceV2RetargetingType string
 // List of tools_estimate_audience_v2_retargeting_type
 const (
 	NONE_ToolsEstimateAudienceV2RetargetingType                ToolsEstimateAudienceV2RetargetingType = "NONE"
-	RETARGETING_EXCLUDE_ToolsEstimateAudienceV2RetargetingType ToolsEstimateAudienceV2RetargetingType = "RETARGETING_EXCLUDE"
 	RETARGETING_NONE_ToolsEstimateAudienceV2RetargetingType    ToolsEstimateAudienceV2RetargetingType = "RETARGETING_NONE"
+	RETARGETING_EXCLUDE_ToolsEstimateAudienceV2RetargetingType ToolsEstimateAudienceV2RetargetingType = "RETARGETING_EXCLUDE"
 	RETARGETING_INCLUDE_ToolsEstimateAudienceV2RetargetingType ToolsEstimateAudienceV2RetargetingType = "RETARGETING_INCLUDE"
 )
 
