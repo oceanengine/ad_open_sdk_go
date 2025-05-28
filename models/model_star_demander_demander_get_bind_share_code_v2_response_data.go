@@ -13,5 +13,7 @@ package models
 // StarDemanderDemanderGetBindShareCodeV2ResponseData
 type StarDemanderDemanderGetBindShareCodeV2ResponseData struct {
 	//
+	QrCodeUrl *string `json:"qr_code_url,omitempty"`
+	//
 	ShareCode string `json:"share_code"`
 }

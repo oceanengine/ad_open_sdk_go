@@ -34,5 +34,5 @@ type PromotionListV30ResponseDataListInnerPromotionRelatedProductInner struct {
 	//
 	UniqueProductId *int64 `json:"unique_product_id,omitempty"`
 	//
-	VideoMateralList []*PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerVideoMateralListInner `json:"video_materal_list,omitempty"`
+	VideoMaterialList []*PromotionListV30ResponseDataListInnerPromotionRelatedProductInnerVideoMaterialListInner `json:"video_material_list,omitempty"`
 }

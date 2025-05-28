@@ -18,6 +18,8 @@ const (
 	APPLETS_ToolsBpAssetManagementShareCancelV30AssetType       ToolsBpAssetManagementShareCancelV30AssetType = "APPLETS"
 	BYTED_APPLETS_ToolsBpAssetManagementShareCancelV30AssetType ToolsBpAssetManagementShareCancelV30AssetType = "BYTED_APPLETS"
 	BYTED_GAME_ToolsBpAssetManagementShareCancelV30AssetType    ToolsBpAssetManagementShareCancelV30AssetType = "BYTED_GAME"
+	DPA_ToolsBpAssetManagementShareCancelV30AssetType           ToolsBpAssetManagementShareCancelV30AssetType = "DPA"
+	PRODUCT_ToolsBpAssetManagementShareCancelV30AssetType       ToolsBpAssetManagementShareCancelV30AssetType = "PRODUCT"
 	WECHAT_GAME_ToolsBpAssetManagementShareCancelV30AssetType   ToolsBpAssetManagementShareCancelV30AssetType = "WECHAT_GAME"
 )
 

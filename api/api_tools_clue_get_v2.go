@@ -30,6 +30,7 @@ type ApiOpenApi2ToolsClueGetGetRequest struct {
 	endTime       *string
 	page          *int32
 	pageSize      *int32
+	clueIds       *[]int64
 }
 
 func (r *ApiOpenApi2ToolsClueGetGetRequest) AdvertiserIds(advertiserIds []int64) *ApiOpenApi2ToolsClueGetGetRequest {
@@ -54,6 +55,11 @@ func (r *ApiOpenApi2ToolsClueGetGetRequest) Page(page int32) *ApiOpenApi2ToolsCl
 
 func (r *ApiOpenApi2ToolsClueGetGetRequest) PageSize(pageSize int32) *ApiOpenApi2ToolsClueGetGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+func (r *ApiOpenApi2ToolsClueGetGetRequest) ClueIds(clueIds []int64) *ApiOpenApi2ToolsClueGetGetRequest {
+	r.clueIds = &clueIds
 	return r
 }
 
@@ -122,6 +128,9 @@ func (a *ToolsClueGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueGetGetReque
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.clueIds != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "clue_ids", r.clueIds)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

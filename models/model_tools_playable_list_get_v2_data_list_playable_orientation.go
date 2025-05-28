@@ -15,8 +15,8 @@ type ToolsPlayableListGetV2DataListPlayableOrientation string
 
 // List of tools_playable_list_get_v2_data_list_playable_orientation
 const (
-	PORTRAIT_ToolsPlayableListGetV2DataListPlayableOrientation  ToolsPlayableListGetV2DataListPlayableOrientation = "PORTRAIT"
 	BOTH_ToolsPlayableListGetV2DataListPlayableOrientation      ToolsPlayableListGetV2DataListPlayableOrientation = "BOTH"
+	PORTRAIT_ToolsPlayableListGetV2DataListPlayableOrientation  ToolsPlayableListGetV2DataListPlayableOrientation = "PORTRAIT"
 	LANDSCAPE_ToolsPlayableListGetV2DataListPlayableOrientation ToolsPlayableListGetV2DataListPlayableOrientation = "LANDSCAPE"
 )
 

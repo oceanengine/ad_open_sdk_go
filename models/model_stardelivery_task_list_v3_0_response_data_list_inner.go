@@ -48,6 +48,9 @@ type StardeliveryTaskListV30ResponseDataListInner struct {
 	//
 	StarTaskCanDeliveryItemCount *int64 `json:"star_task_can_delivery_item_count,omitempty"`
 	//
+	StarTaskCategoryName *string                                              `json:"star_task_category_name,omitempty"`
+	StarTaskCategoryType *StardeliveryTaskListV30DataListStarTaskCategoryType `json:"star_task_category_type,omitempty"`
+	//
 	StarTaskCreateTime     *string                                                `json:"star_task_create_time,omitempty"`
 	StarTaskExternalAction *StardeliveryTaskListV30DataListStarTaskExternalAction `json:"star_task_external_action,omitempty"`
 	//

@@ -12,6 +12,7 @@ package models
 
 // DpaDetailGetV2Filtering
 type DpaDetailGetV2Filtering struct {
+	AuditStatus *DpaDetailGetV2FilteringAuditStatus `json:"audit_status,omitempty"`
 	//
 	DpaCategories []int64                             `json:"dpa_categories,omitempty"`
 	IsRecommend   *DpaDetailGetV2FilteringIsRecommend `json:"is_recommend,omitempty"`

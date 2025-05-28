@@ -15,10 +15,10 @@ type KeywordUpdateV2V2DataErrorListBidType string
 
 // List of keyword_update_v2_v2_data_error_list_bid_type
 const (
-	FEED_TO_SEARCH_KeywordUpdateV2V2DataErrorListBidType KeywordUpdateV2V2DataErrorListBidType = "FEED_TO_SEARCH"
 	WITH_AD_KeywordUpdateV2V2DataErrorListBidType        KeywordUpdateV2V2DataErrorListBidType = "WITH_AD"
-	CUSTOM_KeywordUpdateV2V2DataErrorListBidType         KeywordUpdateV2V2DataErrorListBidType = "CUSTOM"
 	BRAND_AD_KeywordUpdateV2V2DataErrorListBidType       KeywordUpdateV2V2DataErrorListBidType = "BRAND_AD"
+	FEED_TO_SEARCH_KeywordUpdateV2V2DataErrorListBidType KeywordUpdateV2V2DataErrorListBidType = "FEED_TO_SEARCH"
+	CUSTOM_KeywordUpdateV2V2DataErrorListBidType         KeywordUpdateV2V2DataErrorListBidType = "CUSTOM"
 	SUGGEST_KeywordUpdateV2V2DataErrorListBidType        KeywordUpdateV2V2DataErrorListBidType = "SUGGEST"
 )
 

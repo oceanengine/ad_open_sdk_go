@@ -15,16 +15,16 @@ type CampaignGetV2DataListMarketingScene string
 
 // List of campaign_get_v2_data_list_marketing_scene
 const (
-	CAR_CampaignGetV2DataListMarketingScene               CampaignGetV2DataListMarketingScene = "CAR"
-	SOCIAL_CampaignGetV2DataListMarketingScene            CampaignGetV2DataListMarketingScene = "SOCIAL"
-	ECOMMERCE_CampaignGetV2DataListMarketingScene         CampaignGetV2DataListMarketingScene = "ECOMMERCE"
-	NOVEL_CampaignGetV2DataListMarketingScene             CampaignGetV2DataListMarketingScene = "NOVEL"
-	GAME_SUBSCRIBE_CampaignGetV2DataListMarketingScene    CampaignGetV2DataListMarketingScene = "GAME_SUBSCRIBE"
-	VIDEO_INFO_CampaignGetV2DataListMarketingScene        CampaignGetV2DataListMarketingScene = "VIDEO_INFO"
-	PROMOTION_PURPOSE_CampaignGetV2DataListMarketingScene CampaignGetV2DataListMarketingScene = "PROMOTION_PURPOSE"
 	GAME_PROMOTION_CampaignGetV2DataListMarketingScene    CampaignGetV2DataListMarketingScene = "GAME_PROMOTION"
 	MERCHANTS_CampaignGetV2DataListMarketingScene         CampaignGetV2DataListMarketingScene = "MERCHANTS"
 	EDUCATION_CampaignGetV2DataListMarketingScene         CampaignGetV2DataListMarketingScene = "EDUCATION"
+	SOCIAL_CampaignGetV2DataListMarketingScene            CampaignGetV2DataListMarketingScene = "SOCIAL"
+	VIDEO_INFO_CampaignGetV2DataListMarketingScene        CampaignGetV2DataListMarketingScene = "VIDEO_INFO"
+	PROMOTION_PURPOSE_CampaignGetV2DataListMarketingScene CampaignGetV2DataListMarketingScene = "PROMOTION_PURPOSE"
+	ECOMMERCE_CampaignGetV2DataListMarketingScene         CampaignGetV2DataListMarketingScene = "ECOMMERCE"
+	CAR_CampaignGetV2DataListMarketingScene               CampaignGetV2DataListMarketingScene = "CAR"
+	GAME_SUBSCRIBE_CampaignGetV2DataListMarketingScene    CampaignGetV2DataListMarketingScene = "GAME_SUBSCRIBE"
+	NOVEL_CampaignGetV2DataListMarketingScene             CampaignGetV2DataListMarketingScene = "NOVEL"
 )
 
 // Ptr returns reference to campaign_get_v2_data_list_marketing_scene value

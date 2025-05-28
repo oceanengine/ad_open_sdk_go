@@ -28,6 +28,7 @@ type ApiOpenApi2ToolsClueGetGetRequestExample struct {
 	EndTime       string  `json:"end_time,omitempty"`
 	Page          int32   `json:"page,omitempty"`
 	PageSize      int32   `json:"page_size,omitempty"`
+	ClueIds       []int64 `json:"clue_ids,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/clue/get/ Get
@@ -49,7 +50,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsClueGetV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserIds(request.AdvertiserIds).StartTime(request.StartTime).EndTime(request.EndTime).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserIds(request.AdvertiserIds).StartTime(request.StartTime).EndTime(request.EndTime).Page(request.Page).PageSize(request.PageSize).ClueIds(request.ClueIds).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

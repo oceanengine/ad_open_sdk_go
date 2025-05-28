@@ -12,6 +12,9 @@ package models
 
 // StardeliveryTaskListV30Filtering
 type StardeliveryTaskListV30Filtering struct {
+	// 星广品类名称
+	StarTaskCategoryName *string                                               `json:"star_task_category_name,omitempty"`
+	StarTaskCategoryType *StardeliveryTaskListV30FilteringStarTaskCategoryType `json:"star_task_category_type,omitempty"`
 	// 任务id过滤，精确搜索，最长50
 	StarTaskIds []int64 `json:"star_task_ids,omitempty"`
 	// 任务名称过滤，长度1-50个字符（两个英文字符占1个字，该字段采取模糊查询的方式）

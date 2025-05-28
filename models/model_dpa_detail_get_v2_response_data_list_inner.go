@@ -15,6 +15,8 @@ type DpaDetailGetV2ResponseDataListInner struct {
 	//
 	Age []int64 `json:"age,omitempty"`
 	//
+	AuditStatus *int32 `json:"audit_status,omitempty"`
+	//
 	Bought    *int64                                        `json:"bought,omitempty"`
 	BrandInfo *DpaDetailGetV2ResponseDataListInnerBrandInfo `json:"brand_info,omitempty"`
 	//

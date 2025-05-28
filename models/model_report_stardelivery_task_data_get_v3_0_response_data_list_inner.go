@@ -52,8 +52,11 @@ type ReportStardeliveryTaskDataGetV30ResponseDataListInner struct {
 	//
 	StarTaskBudgetCostRate *float64 `json:"star_task_budget_cost_rate,omitempty"`
 	//
-	StarTaskCanDeliveryItemCount *int64                                                          `json:"star_task_can_delivery_item_count,omitempty"`
-	StarTaskExternalAction       *ReportStardeliveryTaskDataGetV30DataListStarTaskExternalAction `json:"star_task_external_action,omitempty"`
+	StarTaskCanDeliveryItemCount *int64 `json:"star_task_can_delivery_item_count,omitempty"`
+	//
+	StarTaskCategoryName   *string                                                         `json:"star_task_category_name,omitempty"`
+	StarTaskCategoryType   *ReportStardeliveryTaskDataGetV30DataListStarTaskCategoryType   `json:"star_task_category_type,omitempty"`
+	StarTaskExternalAction *ReportStardeliveryTaskDataGetV30DataListStarTaskExternalAction `json:"star_task_external_action,omitempty"`
 	//
 	StarTaskId *int64 `json:"star_task_id,omitempty"`
 	//

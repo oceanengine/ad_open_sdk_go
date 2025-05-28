@@ -15,8 +15,8 @@ type ToolsBidSuggestV2Carrier string
 
 // List of tools_bid_suggest_v2_carrier
 const (
-	MOBILE_ToolsBidSuggestV2Carrier ToolsBidSuggestV2Carrier = "MOBILE"
 	UNICOM_ToolsBidSuggestV2Carrier ToolsBidSuggestV2Carrier = "UNICOM"
+	MOBILE_ToolsBidSuggestV2Carrier ToolsBidSuggestV2Carrier = "MOBILE"
 	TELCOM_ToolsBidSuggestV2Carrier ToolsBidSuggestV2Carrier = "TELCOM"
 )
 

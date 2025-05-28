@@ -22,5 +22,9 @@ type ToolsHotMaterialDeriveListV30ResponseDataDataInner struct {
 	OriginMaterialId int64                                       `json:"origin_material_id"`
 	Status           ToolsHotMaterialDeriveListV30DataDataStatus `json:"status"`
 	//
+	StatusCode *int64 `json:"status_code,omitempty"`
+	//
+	StatusMessage *string `json:"status_message,omitempty"`
+	//
 	TaskId int64 `json:"task_id"`
 }

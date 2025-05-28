@@ -15,6 +15,9 @@ type ReportStardeliveryTaskDataGetV30Filtering struct {
 	//
 	MetricValueFilter []*ReportStardeliveryTaskDataGetV30FilteringMetricValueFilterInner `json:"metric_value_filter,omitempty"`
 	//
+	StarTaskCategoryName *string                                                        `json:"star_task_category_name,omitempty"`
+	StarTaskCategoryType *ReportStardeliveryTaskDataGetV30FilteringStarTaskCategoryType `json:"star_task_category_type,omitempty"`
+	//
 	StarTaskIds    []int64                                                  `json:"star_task_ids,omitempty"`
 	StarTaskStatus *ReportStardeliveryTaskDataGetV30FilteringStarTaskStatus `json:"star_task_status,omitempty"`
 }

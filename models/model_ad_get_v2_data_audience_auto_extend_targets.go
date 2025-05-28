@@ -15,10 +15,10 @@ type AdGetV2DataAudienceAutoExtendTargets string
 
 // List of ad_get_v2_data_audience_auto_extend_targets
 const (
-	GENDER_AdGetV2DataAudienceAutoExtendTargets          AdGetV2DataAudienceAutoExtendTargets = "GENDER"
 	CUSTOM_AUDIENCE_AdGetV2DataAudienceAutoExtendTargets AdGetV2DataAudienceAutoExtendTargets = "CUSTOM_AUDIENCE"
-	AGE_AdGetV2DataAudienceAutoExtendTargets             AdGetV2DataAudienceAutoExtendTargets = "AGE"
 	AD_TAG_AdGetV2DataAudienceAutoExtendTargets          AdGetV2DataAudienceAutoExtendTargets = "AD_TAG"
+	GENDER_AdGetV2DataAudienceAutoExtendTargets          AdGetV2DataAudienceAutoExtendTargets = "GENDER"
+	AGE_AdGetV2DataAudienceAutoExtendTargets             AdGetV2DataAudienceAutoExtendTargets = "AGE"
 	REGION_AdGetV2DataAudienceAutoExtendTargets          AdGetV2DataAudienceAutoExtendTargets = "REGION"
 	INTEREST_TAG_AdGetV2DataAudienceAutoExtendTargets    AdGetV2DataAudienceAutoExtendTargets = "INTEREST_TAG"
 )

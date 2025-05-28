@@ -15,8 +15,8 @@ type ToolsAppManagementBpShareV2ShareMode string
 
 // List of tools_app_management_bp_share_v2_share_mode
 const (
-	ALL_ToolsAppManagementBpShareV2ShareMode     ToolsAppManagementBpShareV2ShareMode = "ALL"
 	PART_ToolsAppManagementBpShareV2ShareMode    ToolsAppManagementBpShareV2ShareMode = "PART"
+	ALL_ToolsAppManagementBpShareV2ShareMode     ToolsAppManagementBpShareV2ShareMode = "ALL"
 	COMPANY_ToolsAppManagementBpShareV2ShareMode ToolsAppManagementBpShareV2ShareMode = "COMPANY"
 )
 

@@ -19,7 +19,8 @@ type QianchuanFileVideoAwemeGetV10ResponseDataVideoListInner struct {
 	//
 	Duration *int64 `json:"duration,omitempty"`
 	//
-	Height *int32 `json:"height,omitempty"`
+	Height    *int32                                               `json:"height,omitempty"`
+	ImageMode *QianchuanFileVideoAwemeGetV10DataVideoListImageMode `json:"image_mode,omitempty"`
 	//
 	IsAiCreate  *bool                                                  `json:"is_ai_create,omitempty"`
 	IsRecommend *QianchuanFileVideoAwemeGetV10DataVideoListIsRecommend `json:"is_recommend,omitempty"`
