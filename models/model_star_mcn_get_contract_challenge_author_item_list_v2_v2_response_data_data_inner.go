@@ -85,6 +85,8 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInner struct {
 	OverallAuditStatus *int64 `json:"overall_audit_status,omitempty"`
 	// 短视频播放量，或直播看播人次
 	Play *int64 `json:"play,omitempty"`
+	// 服务商预估收益
+	ProviderSharePrice *int64 `json:"provider_share_price,omitempty"`
 	// 发布时间
 	PublishTime *int64 `json:"publish_time,omitempty"`
 	// 审核拒绝原因

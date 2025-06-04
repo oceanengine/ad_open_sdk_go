@@ -16,6 +16,7 @@ type SecurityScoreViolationEventGetV30BusinessLine string
 // List of security_score_violation_event_get_v3.0_business_line
 const (
 	AD_SecurityScoreViolationEventGetV30BusinessLine        SecurityScoreViolationEventGetV30BusinessLine = "AD"
+	LOCALAD_SecurityScoreViolationEventGetV30BusinessLine   SecurityScoreViolationEventGetV30BusinessLine = "LOCALAD"
 	QIANCHUAN_SecurityScoreViolationEventGetV30BusinessLine SecurityScoreViolationEventGetV30BusinessLine = "QIANCHUAN"
 )
 

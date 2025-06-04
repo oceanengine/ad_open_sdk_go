@@ -16,9 +16,9 @@ type KeywordGetV2DataListBidType string
 // List of keyword_get_v2_data_list_bid_type
 const (
 	WITH_AD_KeywordGetV2DataListBidType        KeywordGetV2DataListBidType = "WITH_AD"
-	BRAND_AD_KeywordGetV2DataListBidType       KeywordGetV2DataListBidType = "BRAND_AD"
 	FEED_TO_SEARCH_KeywordGetV2DataListBidType KeywordGetV2DataListBidType = "FEED_TO_SEARCH"
 	CUSTOM_KeywordGetV2DataListBidType         KeywordGetV2DataListBidType = "CUSTOM"
+	BRAND_AD_KeywordGetV2DataListBidType       KeywordGetV2DataListBidType = "BRAND_AD"
 	SUGGEST_KeywordGetV2DataListBidType        KeywordGetV2DataListBidType = "SUGGEST"
 )
 

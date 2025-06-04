@@ -25,9 +25,9 @@ import (
 type ApiOpenApiV30SecurityScoreViolationEventGetGetRequestExample struct {
 	AdvertiserId int64                                         `json:"advertiser_id"`
 	BusinessLine SecurityScoreViolationEventGetV30BusinessLine `json:"business_line"`
+	Filtering    SecurityScoreViolationEventGetV30Filtering    `json:"filtering,omitempty"`
 	Page         int64                                         `json:"page,omitempty"`
 	PageSize     int64                                         `json:"page_size,omitempty"`
-	Filtering    SecurityScoreViolationEventGetV30Filtering    `json:"filtering,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/security/score_violation_event/get/ Get
@@ -49,7 +49,7 @@ func main() {
 	resp, httpRes, err := apiClient.SecurityScoreViolationEventGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).BusinessLine(request.BusinessLine).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).
+		AdvertiserId(request.AdvertiserId).BusinessLine(request.BusinessLine).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

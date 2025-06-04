@@ -70,7 +70,7 @@ type ToolsSiteUpdateV2RequestBricksInner struct {
 	//
 	LetterSpacing *int64 `json:"letter_spacing,omitempty"`
 	//
-	LineHeight *int64                                   `json:"line_height,omitempty"`
+	LineHeight *float64                                 `json:"line_height,omitempty"`
 	Link       *ToolsSiteUpdateV2RequestBricksInnerLink `json:"link,omitempty"`
 	//
 	Linkable    *int64                                          `json:"linkable,omitempty"`

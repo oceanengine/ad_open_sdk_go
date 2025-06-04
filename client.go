@@ -1,5 +1,5 @@
 /*
-API version: 1.1.54
+API version: 1.1.55
 */
 package ad_open_sdk_go
 
@@ -1579,6 +1579,14 @@ func (c *Client) Oauth2RenewTokenApi() *api.Oauth2RenewTokenApiService {
 	return c.ApiClient.Oauth2RenewTokenApi
 }
 
+func (c *Client) OpenMaterialAuditProGetV30Api() *api.OpenMaterialAuditProGetV30ApiService {
+	return c.ApiClient.OpenMaterialAuditProGetV30Api
+}
+
+func (c *Client) OpenMaterialAuditProSubmitV30Api() *api.OpenMaterialAuditProSubmitV30ApiService {
+	return c.ApiClient.OpenMaterialAuditProSubmitV30Api
+}
+
 func (c *Client) ProjectBudgetUpdateV30Api() *api.ProjectBudgetUpdateV30ApiService {
 	return c.ApiClient.ProjectBudgetUpdateV30Api
 }
@@ -2241,6 +2249,10 @@ func (c *Client) QianchuanUniPromotionAdProductGetV10Api() *api.QianchuanUniProm
 
 func (c *Client) QianchuanUniPromotionAdStatusUpdateV10Api() *api.QianchuanUniPromotionAdStatusUpdateV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdStatusUpdateV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdSuggestionV10Api() *api.QianchuanUniPromotionAdSuggestionV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdSuggestionV10Api
 }
 
 func (c *Client) QianchuanUniPromotionBlockMaterialGetV10Api() *api.QianchuanUniPromotionBlockMaterialGetV10ApiService {

@@ -24,10 +24,14 @@ type QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMetrics s
 	StatCostForRoi2Assist *float64 `json:"stat_cost_for_roi2_assist,omitempty"`
 	// 调控成交订单成本，单位元
 	TotalCostPerPayOrderForRoi2Assist *float64 `json:"total_cost_per_pay_order_for_roi2_assist,omitempty"`
+	// 调控电商平台补贴金额，单位元
+	TotalEcomPlatformSubsidyAmountForRoi2Assist *float64 `json:"total_ecom_platform_subsidy_amount_for_roi2_assist,omitempty"`
 	// 调控成交订单数
 	TotalPayOrderCountForRoi2Assist *int64 `json:"total_pay_order_count_for_roi2_assist,omitempty"`
-	// 调控成交金额，单位元
+	// 调控用户实际支付金额，单位元
 	TotalPayOrderGmvForRoi2Assist *float64 `json:"total_pay_order_gmv_for_roi2_assist,omitempty"`
+	// 调控整体成交金额金额，单位元
+	TotalPayOrderGmvIncludeCouponForRoi2Assist *float64 `json:"total_pay_order_gmv_include_coupon_for_roi2_assist,omitempty"`
 	// 调控支付ROI
 	TotalPrepayAndPayOrderRoi2Assist *float64 `json:"total_prepay_and_pay_order_roi2_assist,omitempty"`
 	// 调控未完结预售订单预估金额，单位元

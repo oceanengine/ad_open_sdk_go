@@ -15,8 +15,8 @@ type ToolsEstimateAudienceV2Gender string
 
 // List of tools_estimate_audience_v2_gender
 const (
-	GENDER_MALE_ToolsEstimateAudienceV2Gender      ToolsEstimateAudienceV2Gender = "GENDER_MALE"
 	GENDER_FEMALE_ToolsEstimateAudienceV2Gender    ToolsEstimateAudienceV2Gender = "GENDER_FEMALE"
+	GENDER_MALE_ToolsEstimateAudienceV2Gender      ToolsEstimateAudienceV2Gender = "GENDER_MALE"
 	GENDER_UNLIMITED_ToolsEstimateAudienceV2Gender ToolsEstimateAudienceV2Gender = "GENDER_UNLIMITED"
 	NONE_ToolsEstimateAudienceV2Gender             ToolsEstimateAudienceV2Gender = "NONE"
 )

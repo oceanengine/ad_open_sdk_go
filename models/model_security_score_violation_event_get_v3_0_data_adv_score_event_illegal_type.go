@@ -15,7 +15,9 @@ type SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType string
 
 // List of security_score_violation_event_get_v3.0_data_adv_score_event_illegal_type
 const (
+	CRITICAL_SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType      SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType = "CRITICAL"
 	GENERAL_SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType       SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType = "GENERAL"
+	MINOR_SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType         SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType = "MINOR"
 	ONECLASS_SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType      SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType = "ONECLASS"
 	SERIOUS_SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType       SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType = "SERIOUS"
 	TWOTHREECLASS_SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType SecurityScoreViolationEventGetV30DataAdvScoreEventIllegalType = "TWOTHREECLASS"

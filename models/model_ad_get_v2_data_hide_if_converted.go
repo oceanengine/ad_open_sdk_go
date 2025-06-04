@@ -16,12 +16,12 @@ type AdGetV2DataHideIfConverted string
 // List of ad_get_v2_data_hide_if_converted
 const (
 	ADVERTISER_AdGetV2DataHideIfConverted   AdGetV2DataHideIfConverted = "ADVERTISER"
-	APP_AdGetV2DataHideIfConverted          AdGetV2DataHideIfConverted = "APP"
+	ORGANIZATION_AdGetV2DataHideIfConverted AdGetV2DataHideIfConverted = "ORGANIZATION"
 	NO_EXCLUDE_AdGetV2DataHideIfConverted   AdGetV2DataHideIfConverted = "NO_EXCLUDE"
 	CAMPAIGN_AdGetV2DataHideIfConverted     AdGetV2DataHideIfConverted = "CAMPAIGN"
-	CUSTOMER_AdGetV2DataHideIfConverted     AdGetV2DataHideIfConverted = "CUSTOMER"
-	ORGANIZATION_AdGetV2DataHideIfConverted AdGetV2DataHideIfConverted = "ORGANIZATION"
+	APP_AdGetV2DataHideIfConverted          AdGetV2DataHideIfConverted = "APP"
 	GLOBAL_APP_AdGetV2DataHideIfConverted   AdGetV2DataHideIfConverted = "GLOBAL_APP"
+	CUSTOMER_AdGetV2DataHideIfConverted     AdGetV2DataHideIfConverted = "CUSTOMER"
 	AD_AdGetV2DataHideIfConverted           AdGetV2DataHideIfConverted = "AD"
 )
 

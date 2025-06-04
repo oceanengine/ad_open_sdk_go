@@ -15,8 +15,8 @@ type AdGetV2DataCategoryType string
 
 // List of ad_get_v2_data_category_type
 const (
-	PRODUCT_AdGetV2DataCategoryType  AdGetV2DataCategoryType = "PRODUCT"
 	CATEGORY_AdGetV2DataCategoryType AdGetV2DataCategoryType = "CATEGORY"
+	PRODUCT_AdGetV2DataCategoryType  AdGetV2DataCategoryType = "PRODUCT"
 	NONE_AdGetV2DataCategoryType     AdGetV2DataCategoryType = "NONE"
 )
 

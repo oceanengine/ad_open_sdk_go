@@ -15,8 +15,8 @@ type ClueFormCreateV2ElementsIsUnique string
 
 // List of clue_form_create_v2_elements_is_unique
 const (
-	Enum_1_ClueFormCreateV2ElementsIsUnique ClueFormCreateV2ElementsIsUnique = "1"
 	Enum_0_ClueFormCreateV2ElementsIsUnique ClueFormCreateV2ElementsIsUnique = "0"
+	Enum_1_ClueFormCreateV2ElementsIsUnique ClueFormCreateV2ElementsIsUnique = "1"
 )
 
 // Ptr returns reference to clue_form_create_v2_elements_is_unique value

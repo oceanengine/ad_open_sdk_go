@@ -20,6 +20,8 @@ type QianchuanUniPromotionAdControlTaskCreateV10Request struct {
 	Budget *float64 `json:"budget,omitempty"`
 	// 调控时长，0.5h～24.0h，步进0.5h，注意：调控类型为SMART_BOOST时必填
 	Duration *float64 `json:"duration,omitempty"`
+	// 素材列表，需要追投的素材ids 注意：最多支持20个素材
+	MaterialIds []int64 `json:"material_ids,omitempty"`
 	// 任务名称，1-50个字
 	Name  string                                           `json:"name"`
 	Scene QianchuanUniPromotionAdControlTaskCreateV10Scene `json:"scene"`

@@ -15,8 +15,8 @@ type AudiencePackageCreateV2Gender string
 
 // List of audience_package_create_v2_gender
 const (
-	GENDER_MALE_AudiencePackageCreateV2Gender      AudiencePackageCreateV2Gender = "GENDER_MALE"
 	GENDER_FEMALE_AudiencePackageCreateV2Gender    AudiencePackageCreateV2Gender = "GENDER_FEMALE"
+	GENDER_MALE_AudiencePackageCreateV2Gender      AudiencePackageCreateV2Gender = "GENDER_MALE"
 	GENDER_UNLIMITED_AudiencePackageCreateV2Gender AudiencePackageCreateV2Gender = "GENDER_UNLIMITED"
 	NONE_AudiencePackageCreateV2Gender             AudiencePackageCreateV2Gender = "NONE"
 )

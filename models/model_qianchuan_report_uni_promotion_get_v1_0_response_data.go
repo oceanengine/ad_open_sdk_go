@@ -17,11 +17,15 @@ type QianchuanReportUniPromotionGetV10ResponseData struct {
 	//
 	TotalCostPerPayOrderForRoi2 *float64 `json:"total_cost_per_pay_order_for_roi2,omitempty"`
 	//
+	TotalEcomPlatformSubsidyAmountForRoi2 *float64 `json:"total_ecom_platform_subsidy_amount_for_roi2,omitempty"`
+	//
 	TotalPayOrderCountForRoi2 *float64 `json:"total_pay_order_count_for_roi2,omitempty"`
 	//
 	TotalPayOrderCouponAmountForRoi2 *float64 `json:"total_pay_order_coupon_amount_for_roi2,omitempty"`
 	//
 	TotalPayOrderGmvForRoi2 *float64 `json:"total_pay_order_gmv_for_roi2,omitempty"`
+	//
+	TotalPayOrderGmvIncludeCouponForRoi2 *float64 `json:"total_pay_order_gmv_include_coupon_for_roi2,omitempty"`
 	//
 	TotalPrepayAndPayOrderRoi2 *float64 `json:"total_prepay_and_pay_order_roi2,omitempty"`
 	//

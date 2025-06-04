@@ -15,7 +15,8 @@ type QianchuanUniPromotionAdControlTaskListV10Scene string
 
 // List of qianchuan_uni_promotion_ad_control_task_list_v1.0_scene
 const (
-	SMART_BOOST_QianchuanUniPromotionAdControlTaskListV10Scene QianchuanUniPromotionAdControlTaskListV10Scene = "SMART_BOOST"
+	MATERIAL_ADD_BUDGET_QianchuanUniPromotionAdControlTaskListV10Scene QianchuanUniPromotionAdControlTaskListV10Scene = "MATERIAL_ADD_BUDGET"
+	SMART_BOOST_QianchuanUniPromotionAdControlTaskListV10Scene         QianchuanUniPromotionAdControlTaskListV10Scene = "SMART_BOOST"
 )
 
 // Ptr returns reference to qianchuan_uni_promotion_ad_control_task_list_v1.0_scene value

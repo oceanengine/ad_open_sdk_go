@@ -15,11 +15,11 @@ type AdGetV2DataAudienceAc string
 
 // List of ad_get_v2_data_audience_ac
 const (
-	WIFI_AdGetV2DataAudienceAc     AdGetV2DataAudienceAc = "WIFI"
 	Enum_5_G_AdGetV2DataAudienceAc AdGetV2DataAudienceAc = "5G"
-	Enum_3_G_AdGetV2DataAudienceAc AdGetV2DataAudienceAc = "3G"
 	Enum_4_G_AdGetV2DataAudienceAc AdGetV2DataAudienceAc = "4G"
 	Enum_2_G_AdGetV2DataAudienceAc AdGetV2DataAudienceAc = "2G"
+	Enum_3_G_AdGetV2DataAudienceAc AdGetV2DataAudienceAc = "3G"
+	WIFI_AdGetV2DataAudienceAc     AdGetV2DataAudienceAc = "WIFI"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_ac value

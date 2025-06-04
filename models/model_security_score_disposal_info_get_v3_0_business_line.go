@@ -16,6 +16,7 @@ type SecurityScoreDisposalInfoGetV30BusinessLine string
 // List of security_score_disposal_info_get_v3.0_business_line
 const (
 	AD_SecurityScoreDisposalInfoGetV30BusinessLine        SecurityScoreDisposalInfoGetV30BusinessLine = "AD"
+	LOCALAD_SecurityScoreDisposalInfoGetV30BusinessLine   SecurityScoreDisposalInfoGetV30BusinessLine = "LOCALAD"
 	QIANCHUAN_SecurityScoreDisposalInfoGetV30BusinessLine SecurityScoreDisposalInfoGetV30BusinessLine = "QIANCHUAN"
 )
 

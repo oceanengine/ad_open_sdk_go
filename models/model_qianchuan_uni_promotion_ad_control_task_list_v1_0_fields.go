@@ -21,8 +21,10 @@ const (
 	SHOW_CNT_FOR_ROI2_ASSIST_QianchuanUniPromotionAdControlTaskListV10Fields                            QianchuanUniPromotionAdControlTaskListV10Fields = "show_cnt_for_roi2_assist"
 	STAT_COST_FOR_ROI2_ASSIST_QianchuanUniPromotionAdControlTaskListV10Fields                           QianchuanUniPromotionAdControlTaskListV10Fields = "stat_cost_for_roi2_assist"
 	TOTAL_COST_PER_PAY_ORDER_FOR_ROI2_ASSIST_QianchuanUniPromotionAdControlTaskListV10Fields            QianchuanUniPromotionAdControlTaskListV10Fields = "total_cost_per_pay_order_for_roi2_assist"
+	TOTAL_ECOM_PLATFORM_SUBSIDY_AMOUNT_FOR_ROI2_ASSIST_QianchuanUniPromotionAdControlTaskListV10Fields  QianchuanUniPromotionAdControlTaskListV10Fields = "total_ecom_platform_subsidy_amount_for_roi2_assist"
 	TOTAL_PAY_ORDER_COUNT_FOR_ROI2_ASSIST_QianchuanUniPromotionAdControlTaskListV10Fields               QianchuanUniPromotionAdControlTaskListV10Fields = "total_pay_order_count_for_roi2_assist"
 	TOTAL_PAY_ORDER_GMV_FOR_ROI2_ASSIST_QianchuanUniPromotionAdControlTaskListV10Fields                 QianchuanUniPromotionAdControlTaskListV10Fields = "total_pay_order_gmv_for_roi2_assist"
+	TOTAL_PAY_ORDER_GMV_INCLUDE_COUPON_FOR_ROI2_ASSIST_QianchuanUniPromotionAdControlTaskListV10Fields  QianchuanUniPromotionAdControlTaskListV10Fields = "total_pay_order_gmv_include_coupon_for_roi2_assist"
 	TOTAL_PREPAY_AND_PAY_ORDER_ROI2_ASSIST_QianchuanUniPromotionAdControlTaskListV10Fields              QianchuanUniPromotionAdControlTaskListV10Fields = "total_prepay_and_pay_order_roi2_assist"
 	TOTAL_UNFINISHED_ESTIMATE_ORDER_GMV_FOR_ROI2_ASSIST_QianchuanUniPromotionAdControlTaskListV10Fields QianchuanUniPromotionAdControlTaskListV10Fields = "total_unfinished_estimate_order_gmv_for_roi2_assist"
 )

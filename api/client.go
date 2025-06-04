@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.54
+// APIClient manages communication with the Oceanengine Open Api API v1.1.55
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -827,6 +827,10 @@ type APIClient struct {
 
 	Oauth2RenewTokenApi *Oauth2RenewTokenApiService
 
+	OpenMaterialAuditProGetV30Api *OpenMaterialAuditProGetV30ApiService
+
+	OpenMaterialAuditProSubmitV30Api *OpenMaterialAuditProSubmitV30ApiService
+
 	ProjectBudgetUpdateV30Api *ProjectBudgetUpdateV30ApiService
 
 	ProjectCostProtectStatusGetV30Api *ProjectCostProtectStatusGetV30ApiService
@@ -1158,6 +1162,8 @@ type APIClient struct {
 	QianchuanUniPromotionAdProductGetV10Api *QianchuanUniPromotionAdProductGetV10ApiService
 
 	QianchuanUniPromotionAdStatusUpdateV10Api *QianchuanUniPromotionAdStatusUpdateV10ApiService
+
+	QianchuanUniPromotionAdSuggestionV10Api *QianchuanUniPromotionAdSuggestionV10ApiService
 
 	QianchuanUniPromotionBlockMaterialGetV10Api *QianchuanUniPromotionBlockMaterialGetV10ApiService
 
@@ -2446,6 +2452,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.Oauth2AppAccessTokenApi = (*Oauth2AppAccessTokenApiService)(&c.common)
 	c.Oauth2RefreshTokenApi = (*Oauth2RefreshTokenApiService)(&c.common)
 	c.Oauth2RenewTokenApi = (*Oauth2RenewTokenApiService)(&c.common)
+	c.OpenMaterialAuditProGetV30Api = (*OpenMaterialAuditProGetV30ApiService)(&c.common)
+	c.OpenMaterialAuditProSubmitV30Api = (*OpenMaterialAuditProSubmitV30ApiService)(&c.common)
 	c.ProjectBudgetUpdateV30Api = (*ProjectBudgetUpdateV30ApiService)(&c.common)
 	c.ProjectCostProtectStatusGetV30Api = (*ProjectCostProtectStatusGetV30ApiService)(&c.common)
 	c.ProjectCreateV30Api = (*ProjectCreateV30ApiService)(&c.common)
@@ -2612,6 +2620,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanUniPromotionAdProductDeleteV10Api = (*QianchuanUniPromotionAdProductDeleteV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdProductGetV10Api = (*QianchuanUniPromotionAdProductGetV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdStatusUpdateV10Api = (*QianchuanUniPromotionAdStatusUpdateV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdSuggestionV10Api = (*QianchuanUniPromotionAdSuggestionV10ApiService)(&c.common)
 	c.QianchuanUniPromotionBlockMaterialGetV10Api = (*QianchuanUniPromotionBlockMaterialGetV10ApiService)(&c.common)
 	c.QianchuanUniPromotionListV10Api = (*QianchuanUniPromotionListV10ApiService)(&c.common)
 	c.QianchuanUniPromotionProductAwemeGetV10Api = (*QianchuanUniPromotionProductAwemeGetV10ApiService)(&c.common)

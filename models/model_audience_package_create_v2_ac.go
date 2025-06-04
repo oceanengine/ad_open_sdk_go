@@ -15,11 +15,11 @@ type AudiencePackageCreateV2Ac string
 
 // List of audience_package_create_v2_ac
 const (
-	WIFI_AudiencePackageCreateV2Ac     AudiencePackageCreateV2Ac = "WIFI"
 	Enum_5_G_AudiencePackageCreateV2Ac AudiencePackageCreateV2Ac = "5G"
-	Enum_3_G_AudiencePackageCreateV2Ac AudiencePackageCreateV2Ac = "3G"
 	Enum_4_G_AudiencePackageCreateV2Ac AudiencePackageCreateV2Ac = "4G"
 	Enum_2_G_AudiencePackageCreateV2Ac AudiencePackageCreateV2Ac = "2G"
+	Enum_3_G_AudiencePackageCreateV2Ac AudiencePackageCreateV2Ac = "3G"
+	WIFI_AudiencePackageCreateV2Ac     AudiencePackageCreateV2Ac = "WIFI"
 )
 
 // Ptr returns reference to audience_package_create_v2_ac value

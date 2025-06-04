@@ -15,16 +15,16 @@ type ReportCampaignGetV2FilteringLandingTypes string
 
 // List of report_campaign_get_v2_filtering_landing_types
 const (
-	APP_ReportCampaignGetV2FilteringLandingTypes       ReportCampaignGetV2FilteringLandingTypes = "APP"
+	ARTICLE_ReportCampaignGetV2FilteringLandingTypes   ReportCampaignGetV2FilteringLandingTypes = "ARTICLE"
+	DPA_ReportCampaignGetV2FilteringLandingTypes       ReportCampaignGetV2FilteringLandingTypes = "DPA"
 	AWEME_ReportCampaignGetV2FilteringLandingTypes     ReportCampaignGetV2FilteringLandingTypes = "AWEME"
-	LIVE_ReportCampaignGetV2FilteringLandingTypes      ReportCampaignGetV2FilteringLandingTypes = "LIVE"
+	SHOP_ReportCampaignGetV2FilteringLandingTypes      ReportCampaignGetV2FilteringLandingTypes = "SHOP"
 	STORE_ReportCampaignGetV2FilteringLandingTypes     ReportCampaignGetV2FilteringLandingTypes = "STORE"
 	GOODS_ReportCampaignGetV2FilteringLandingTypes     ReportCampaignGetV2FilteringLandingTypes = "GOODS"
+	APP_ReportCampaignGetV2FilteringLandingTypes       ReportCampaignGetV2FilteringLandingTypes = "APP"
+	LIVE_ReportCampaignGetV2FilteringLandingTypes      ReportCampaignGetV2FilteringLandingTypes = "LIVE"
 	QUICK_APP_ReportCampaignGetV2FilteringLandingTypes ReportCampaignGetV2FilteringLandingTypes = "QUICK_APP"
-	DPA_ReportCampaignGetV2FilteringLandingTypes       ReportCampaignGetV2FilteringLandingTypes = "DPA"
 	LINK_ReportCampaignGetV2FilteringLandingTypes      ReportCampaignGetV2FilteringLandingTypes = "LINK"
-	ARTICLE_ReportCampaignGetV2FilteringLandingTypes   ReportCampaignGetV2FilteringLandingTypes = "ARTICLE"
-	SHOP_ReportCampaignGetV2FilteringLandingTypes      ReportCampaignGetV2FilteringLandingTypes = "SHOP"
 )
 
 // Ptr returns reference to report_campaign_get_v2_filtering_landing_types value

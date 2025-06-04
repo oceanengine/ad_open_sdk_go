@@ -594,6 +594,8 @@ Class | Method | HTTP request
 *Oauth2AppAccessTokenApi* | **OpenApiOauth2AppAccessTokenPost** | **Post** /open_api/oauth2/app_access_token/
 *Oauth2RefreshTokenApi* | **OpenApiOauth2RefreshTokenPost** | **Post** /open_api/oauth2/refresh_token/
 *Oauth2RenewTokenApi* | **OpenApiOauth2RenewTokenPost** | **Post** /open_api/oauth2/renew_token/
+*OpenMaterialAuditProGetV30Api* | **OpenApiV30OpenMaterialAuditProGetGet** | **Get** /open_api/v3.0/open_material_audit/pro/get/
+*OpenMaterialAuditProSubmitV30Api* | **OpenApiV30OpenMaterialAuditProSubmitPost** | **Post** /open_api/v3.0/open_material_audit/pro/submit/
 *ProjectBudgetUpdateV30Api* | **OpenApiV30ProjectBudgetUpdatePost** | **Post** /open_api/v3.0/project/budget/update/
 *ProjectCostProtectStatusGetV30Api* | **OpenApiV30ProjectCostProtectStatusGetGet** | **Get** /open_api/v3.0/project/cost_protect_status/get/
 *ProjectCreateV30Api* | **OpenApiV30ProjectCreatePost** | **Post** /open_api/v3.0/project/create/
@@ -760,6 +762,7 @@ Class | Method | HTTP request
 *QianchuanUniPromotionAdProductDeleteV10Api* | **OpenApiV10QianchuanUniPromotionAdProductDeletePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/product/delete/
 *QianchuanUniPromotionAdProductGetV10Api* | **OpenApiV10QianchuanUniPromotionAdProductGetGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/ad/product/get/
 *QianchuanUniPromotionAdStatusUpdateV10Api* | **OpenApiV10QianchuanUniPromotionAdStatusUpdatePost** | **Post** /open_api/v1.0/qianchuan/uni_promotion/ad/status/update/
+*QianchuanUniPromotionAdSuggestionV10Api* | **OpenApiV10QianchuanUniPromotionAdSuggestionGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/ad/suggestion/
 *QianchuanUniPromotionBlockMaterialGetV10Api* | **OpenApiV10QianchuanUniPromotionBlockMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/block_material/get/
 *QianchuanUniPromotionListV10Api* | **OpenApiV10QianchuanUniPromotionListGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/list/
 *QianchuanUniPromotionProductAwemeGetV10Api* | **OpenApiV10QianchuanUniPromotionProductAwemeGetGet** | **Get** /open_api/v1.0/qianchuan/uni_promotion/product/aweme/get/

@@ -27,9 +27,9 @@ type ApiOpenApiV30SecurityScoreViolationEventGetGetRequest struct {
 	ApiService   *SecurityScoreViolationEventGetV30ApiService
 	advertiserId *int64
 	businessLine *SecurityScoreViolationEventGetV30BusinessLine
+	filtering    *SecurityScoreViolationEventGetV30Filtering
 	page         *int64
 	pageSize     *int64
-	filtering    *SecurityScoreViolationEventGetV30Filtering
 }
 
 // 广告主id
@@ -44,6 +44,12 @@ func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) BusinessLine(bus
 	return r
 }
 
+// 过滤器
+func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) Filtering(filtering SecurityScoreViolationEventGetV30Filtering) *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest {
+	r.filtering = &filtering
+	return r
+}
+
 // 第几页
 func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) Page(page int64) *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest {
 	r.page = &page
@@ -53,12 +59,6 @@ func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) Page(page int64)
 // 每页的数目
 func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) PageSize(pageSize int64) *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest {
 	r.pageSize = &pageSize
-	return r
-}
-
-// 过滤器
-func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) Filtering(filtering SecurityScoreViolationEventGetV30Filtering) *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest {
-	r.filtering = &filtering
 	return r
 }
 
@@ -121,14 +121,14 @@ func (a *SecurityScoreViolationEventGetV30ApiService) getExecute(r *ApiOpenApiV3
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "business_line", r.businessLine)
+	if r.filtering != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	}
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
-	}
-	if r.filtering != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

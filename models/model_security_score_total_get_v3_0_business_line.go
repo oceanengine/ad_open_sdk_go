@@ -16,6 +16,7 @@ type SecurityScoreTotalGetV30BusinessLine string
 // List of security_score_total_get_v3.0_business_line
 const (
 	AD_SecurityScoreTotalGetV30BusinessLine        SecurityScoreTotalGetV30BusinessLine = "AD"
+	LOCALAD_SecurityScoreTotalGetV30BusinessLine   SecurityScoreTotalGetV30BusinessLine = "LOCALAD"
 	QIANCHUAN_SecurityScoreTotalGetV30BusinessLine SecurityScoreTotalGetV30BusinessLine = "QIANCHUAN"
 )
 

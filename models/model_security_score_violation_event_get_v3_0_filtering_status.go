@@ -18,6 +18,7 @@ const (
 	APPEAL_SecurityScoreViolationEventGetV30FilteringStatus     SecurityScoreViolationEventGetV30FilteringStatus = "APPEAL"
 	FAILAPPEAL_SecurityScoreViolationEventGetV30FilteringStatus SecurityScoreViolationEventGetV30FilteringStatus = "FAILAPPEAL"
 	ONAPPEAL_SecurityScoreViolationEventGetV30FilteringStatus   SecurityScoreViolationEventGetV30FilteringStatus = "ONAPPEAL"
+	TIMEOUT_SecurityScoreViolationEventGetV30FilteringStatus    SecurityScoreViolationEventGetV30FilteringStatus = "TIMEOUT"
 	VALID_SecurityScoreViolationEventGetV30FilteringStatus      SecurityScoreViolationEventGetV30FilteringStatus = "VALID"
 )
 

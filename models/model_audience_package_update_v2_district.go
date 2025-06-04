@@ -16,9 +16,9 @@ type AudiencePackageUpdateV2District string
 // List of audience_package_update_v2_district
 const (
 	OVERSEA_AudiencePackageUpdateV2District           AudiencePackageUpdateV2District = "OVERSEA"
+	REGION_AudiencePackageUpdateV2District            AudiencePackageUpdateV2District = "REGION"
 	BUSINESS_DISTRICT_AudiencePackageUpdateV2District AudiencePackageUpdateV2District = "BUSINESS_DISTRICT"
 	NONE_AudiencePackageUpdateV2District              AudiencePackageUpdateV2District = "NONE"
-	REGION_AudiencePackageUpdateV2District            AudiencePackageUpdateV2District = "REGION"
 )
 
 // Ptr returns reference to audience_package_update_v2_district value

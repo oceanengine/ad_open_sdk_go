@@ -19,8 +19,10 @@ type QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInner struct {
 	// 调控时长，0.5h～24.0h，步进0.5h
 	Duration *float64 `json:"duration,omitempty"`
 	// 任务id
-	Id      *int64                                                                     `json:"id,omitempty"`
-	Metrics *QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMetrics `json:"metrics,omitempty"`
+	Id *int64 `json:"id,omitempty"`
+	//
+	MaterialList []*QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMaterialListInner `json:"material_list,omitempty"`
+	Metrics      *QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMetrics             `json:"metrics,omitempty"`
 	// 任务名称
 	Name       *string                                                          `json:"name,omitempty"`
 	TaskStatus *QianchuanUniPromotionAdControlTaskListV10DataTaskListTaskStatus `json:"task_status,omitempty"`

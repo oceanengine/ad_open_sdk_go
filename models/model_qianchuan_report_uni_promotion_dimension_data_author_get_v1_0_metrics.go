@@ -17,9 +17,11 @@ type QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics string
 const (
 	STAT_COST_QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics                                    QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics = "stat_cost"
 	TOTAL_COST_PER_PAY_ORDER_FOR_ROI2_QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics            QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics = "total_cost_per_pay_order_for_roi2"
+	TOTAL_ECOM_PLATFORM_SUBSIDY_AMOUNT_FOR_ROI2_QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics  QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics = "total_ecom_platform_subsidy_amount_for_roi2"
 	TOTAL_PAY_ORDER_COUNT_FOR_ROI2_QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics               QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics = "total_pay_order_count_for_roi2"
 	TOTAL_PAY_ORDER_COUPON_AMOUNT_FOR_ROI2_QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics       QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics = "total_pay_order_coupon_amount_for_roi2"
 	TOTAL_PAY_ORDER_GMV_FOR_ROI2_QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics                 QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics = "total_pay_order_gmv_for_roi2"
+	TOTAL_PAY_ORDER_GMV_INCLUDE_COUPON_FOR_ROI2_QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics  QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics = "total_pay_order_gmv_include_coupon_for_roi2"
 	TOTAL_PREPAY_AND_PAY_ORDER_ROI2_QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics              QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics = "total_prepay_and_pay_order_roi2"
 	TOTAL_PREPAY_ORDER_COUNT_FOR_ROI2_QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics            QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics = "total_prepay_order_count_for_roi2"
 	TOTAL_PREPAY_ORDER_GMV_FOR_ROI2_QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics              QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics = "total_prepay_order_gmv_for_roi2"
