@@ -12,13 +12,13 @@ package models
 
 // QianchuanUniPromotionAdSuggestionV10ResponseDataListInnerImageMaterial 图片素材
 type QianchuanUniPromotionAdSuggestionV10ResponseDataListInnerImageMaterial struct {
-	//
+	// 图片高度
 	Height *int64 `json:"height,omitempty"`
 	// 图片ID
 	ImageId   *string                                                             `json:"image_id,omitempty"`
 	ImageMode *QianchuanUniPromotionAdSuggestionV10DataListImageMaterialImageMode `json:"image_mode,omitempty"`
 	// 图片链接
 	ImageUrl *string `json:"image_url,omitempty"`
-	//
+	// 图片宽度
 	Width *int64 `json:"width,omitempty"`
 }

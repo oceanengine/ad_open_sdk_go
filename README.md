@@ -261,6 +261,7 @@ Class | Method | HTTP request
 *AgentFundTransferSeqCommitV2Api* | **OpenApi2AgentFundTransferSeqCommitPost** | **Post** /open_api/2/agent/fund/transfer_seq/commit/
 *AgentFundTransferSeqCreateV2Api* | **OpenApi2AgentFundTransferSeqCreatePost** | **Post** /open_api/2/agent/fund/transfer_seq/create/
 *AgentInfoV2Api* | **OpenApi2AgentInfoGet** | **Get** /open_api/2/agent/info/
+*AgentPrepayChargeGenerateRemittanceCodeV2Api* | **OpenApi2AgentPrepayChargeGenerateRemittanceCodePost** | **Post** /open_api/2/agent/prepay_charge/generate_remittance_code/
 *AgentQueryRiskPromotionListV2Api* | **OpenApi2AgentQueryRiskPromotionListGet** | **Get** /open_api/2/agent/query/risk_promotion_list/
 *AgentRefundTransferSeqCommitV2Api* | **OpenApi2AgentRefundTransferSeqCommitPost** | **Post** /open_api/2/agent/refund/transfer_seq/commit/
 *AgentRefundTransferSeqCreateV2Api* | **OpenApi2AgentRefundTransferSeqCreatePost** | **Post** /open_api/2/agent/refund/transfer_seq/create/
@@ -787,6 +788,7 @@ Class | Method | HTTP request
 *RejectMaterialAiRepairAcceptTaskListV30Api* | **OpenApiV30RejectMaterialAiRepairAcceptTaskListGet** | **Get** /open_api/v3.0/reject_material/ai_repair_accept_task/list/
 *RejectMaterialAiRepairCrossAccountGetV30Api* | **OpenApiV30RejectMaterialAiRepairCrossAccountGetGet** | **Get** /open_api/v3.0/reject_material/ai_repair/cross_account/get/
 *RejectMaterialAiRepairGetV30Api* | **OpenApiV30RejectMaterialAiRepairGetGet** | **Get** /open_api/v3.0/reject_material/ai_repair/get/
+*RemittanceCodeListV30Api* | **OpenApiV30RemittanceCodeListGet** | **Get** /open_api/v3.0/remittance_code/list/
 *ReportAdGetV2Api* | **OpenApi2ReportAdGetGet** | **Get** /open_api/2/report/ad/get/
 *ReportAdvertiserGetV2Api* | **OpenApi2ReportAdvertiserGetGet** | **Get** /open_api/2/report/advertiser/get/
 *ReportAgentGetV2V2Api* | **OpenApi2ReportAgentGetV2Get** | **Get** /open_api/2/report/agent/get_v2/
@@ -848,6 +850,7 @@ Class | Method | HTTP request
 *ShopBonusSuccessGetV30Api* | **OpenApiV30ShopBonusSuccessGetGet** | **Get** /open_api/v3.0/shop_bonus_success/get/
 *SpiTaskGetV2Api* | **OpenApi2SpiTaskGetGet** | **Get** /open_api/2/spi_task/get/
 *StarAttachmentUploadV2Api* | **OpenApi2StarAttachmentUploadPost** | **Post** /open_api/2/star/attachment/upload/
+*StarAttributeItemEventFeedbackV2Api* | **OpenApi2StarAttributeItemEventFeedbackPost** | **Post** /open_api/2/star/attribute/item_event_feedback/
 *StarAttributeJdOverflowConvertV2Api* | **OpenApi2StarAttributeJdOverflowConvertPost** | **Post** /open_api/2/star/attribute/jd_overflow_convert/
 *StarAttributeUserEventFeedbackV2Api* | **OpenApi2StarAttributeUserEventFeedbackPost** | **Post** /open_api/2/star/attribute/user_event_feedback/
 *StarAttributeUserInfoFeedbackV2Api* | **OpenApi2StarAttributeUserInfoFeedbackPost** | **Post** /open_api/2/star/attribute/user_info_feedback/

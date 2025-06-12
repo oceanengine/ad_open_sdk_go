@@ -65,6 +65,7 @@ type PromotionListV30ResponseDataListInner struct {
 	ShopMultiRoiGoals []*PromotionListV30ResponseDataListInnerShopMultiRoiGoalsInner `json:"shop_multi_roi_goals,omitempty"`
 	//
 	Source                         *string                                                 `json:"source,omitempty"`
+	StarAutoDeliverySwitch         *PromotionListV30DataListStarAutoDeliverySwitch         `json:"star_auto_delivery_switch,omitempty"`
 	StarAutoMaterialAdditionSwitch *PromotionListV30DataListStarAutoMaterialAdditionSwitch `json:"star_auto_material_addition_switch,omitempty"`
 	//
 	StarTaskId      *int64                                   `json:"star_task_id,omitempty"`

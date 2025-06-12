@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.55
+// APIClient manages communication with the Oceanengine Open Api API v1.1.56
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -160,6 +160,8 @@ type APIClient struct {
 	AgentFundTransferSeqCreateV2Api *AgentFundTransferSeqCreateV2ApiService
 
 	AgentInfoV2Api *AgentInfoV2ApiService
+
+	AgentPrepayChargeGenerateRemittanceCodeV2Api *AgentPrepayChargeGenerateRemittanceCodeV2ApiService
 
 	AgentQueryRiskPromotionListV2Api *AgentQueryRiskPromotionListV2ApiService
 
@@ -1213,6 +1215,8 @@ type APIClient struct {
 
 	RejectMaterialAiRepairGetV30Api *RejectMaterialAiRepairGetV30ApiService
 
+	RemittanceCodeListV30Api *RemittanceCodeListV30ApiService
+
 	ReportAdGetV2Api *ReportAdGetV2ApiService
 
 	ReportAdvertiserGetV2Api *ReportAdvertiserGetV2ApiService
@@ -1334,6 +1338,8 @@ type APIClient struct {
 	SpiTaskGetV2Api *SpiTaskGetV2ApiService
 
 	StarAttachmentUploadV2Api *StarAttachmentUploadV2ApiService
+
+	StarAttributeItemEventFeedbackV2Api *StarAttributeItemEventFeedbackV2ApiService
 
 	StarAttributeJdOverflowConvertV2Api *StarAttributeJdOverflowConvertV2ApiService
 
@@ -2119,6 +2125,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AgentFundTransferSeqCommitV2Api = (*AgentFundTransferSeqCommitV2ApiService)(&c.common)
 	c.AgentFundTransferSeqCreateV2Api = (*AgentFundTransferSeqCreateV2ApiService)(&c.common)
 	c.AgentInfoV2Api = (*AgentInfoV2ApiService)(&c.common)
+	c.AgentPrepayChargeGenerateRemittanceCodeV2Api = (*AgentPrepayChargeGenerateRemittanceCodeV2ApiService)(&c.common)
 	c.AgentQueryRiskPromotionListV2Api = (*AgentQueryRiskPromotionListV2ApiService)(&c.common)
 	c.AgentRefundTransferSeqCommitV2Api = (*AgentRefundTransferSeqCommitV2ApiService)(&c.common)
 	c.AgentRefundTransferSeqCreateV2Api = (*AgentRefundTransferSeqCreateV2ApiService)(&c.common)
@@ -2645,6 +2652,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.RejectMaterialAiRepairAcceptTaskListV30Api = (*RejectMaterialAiRepairAcceptTaskListV30ApiService)(&c.common)
 	c.RejectMaterialAiRepairCrossAccountGetV30Api = (*RejectMaterialAiRepairCrossAccountGetV30ApiService)(&c.common)
 	c.RejectMaterialAiRepairGetV30Api = (*RejectMaterialAiRepairGetV30ApiService)(&c.common)
+	c.RemittanceCodeListV30Api = (*RemittanceCodeListV30ApiService)(&c.common)
 	c.ReportAdGetV2Api = (*ReportAdGetV2ApiService)(&c.common)
 	c.ReportAdvertiserGetV2Api = (*ReportAdvertiserGetV2ApiService)(&c.common)
 	c.ReportAgentGetV2V2Api = (*ReportAgentGetV2V2ApiService)(&c.common)
@@ -2706,6 +2714,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ShopBonusSuccessGetV30Api = (*ShopBonusSuccessGetV30ApiService)(&c.common)
 	c.SpiTaskGetV2Api = (*SpiTaskGetV2ApiService)(&c.common)
 	c.StarAttachmentUploadV2Api = (*StarAttachmentUploadV2ApiService)(&c.common)
+	c.StarAttributeItemEventFeedbackV2Api = (*StarAttributeItemEventFeedbackV2ApiService)(&c.common)
 	c.StarAttributeJdOverflowConvertV2Api = (*StarAttributeJdOverflowConvertV2ApiService)(&c.common)
 	c.StarAttributeUserEventFeedbackV2Api = (*StarAttributeUserEventFeedbackV2ApiService)(&c.common)
 	c.StarAttributeUserInfoFeedbackV2Api = (*StarAttributeUserInfoFeedbackV2ApiService)(&c.common)

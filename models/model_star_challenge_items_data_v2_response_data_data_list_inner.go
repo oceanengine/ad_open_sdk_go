@@ -22,6 +22,14 @@ type StarChallengeItemsDataV2ResponseDataDataListInner struct {
 	CommentCnt *int64 `json:"comment_cnt,omitempty"`
 	// 组件点击数
 	ComponentClickCnt *int64 `json:"component_click_cnt,omitempty"`
+	// 预估广告流水（单位：分）
+	IaaAmountEstimated *int64 `json:"iaa_amount_estimated,omitempty"`
+	// 已发放广告分成（单位：分）
+	IaaAuthorAmount *int64 `json:"iaa_author_amount,omitempty"`
+	// 预估广告分成金额（单位：分）
+	IaaBill *int64 `json:"iaa_bill,omitempty"`
+	// 预估付费分佣金额（单位：分）
+	IapBill *int64 `json:"iap_bill,omitempty"`
 	// iOS激活数
 	IosActivateCnt *int64 `json:"ios_activate_cnt,omitempty"`
 	// 作品ID
@@ -32,6 +40,8 @@ type StarChallengeItemsDataV2ResponseDataDataListInner struct {
 	Link *string `json:"link,omitempty"`
 	// 素材id
 	Mid *int64 `json:"mid,omitempty"`
+	// 原生短剧的album_id不全，因此针对原生短剧，playlet是seriesId，原生短剧的album_id如有需要，可用该字段
+	NativePlayletAlbumId *string `json:"native_playlet_album_id,omitempty"`
 	// 预估付费流水（单位：分）
 	PayAmountEstimated *int64 `json:"pay_amount_estimated,omitempty"`
 	// 播放量

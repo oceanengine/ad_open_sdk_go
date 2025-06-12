@@ -15,12 +15,10 @@ type ProjectCreateV30DeliverySettingBidType string
 
 // List of project_create_v3.0_delivery_setting_bid_type
 const (
-	CONSERVATIVE_ProjectCreateV30DeliverySettingBidType    ProjectCreateV30DeliverySettingBidType = "CONSERVATIVE"
-	CUSTOM_ProjectCreateV30DeliverySettingBidType          ProjectCreateV30DeliverySettingBidType = "CUSTOM"
-	EXPLORE_UPGRADE_ProjectCreateV30DeliverySettingBidType ProjectCreateV30DeliverySettingBidType = "EXPLORE_UPGRADE"
-	NO_BID_ProjectCreateV30DeliverySettingBidType          ProjectCreateV30DeliverySettingBidType = "NO_BID"
-	OPTIMAL_COST_ProjectCreateV30DeliverySettingBidType    ProjectCreateV30DeliverySettingBidType = "OPTIMAL_COST"
-	UPPER_CONTROL_ProjectCreateV30DeliverySettingBidType   ProjectCreateV30DeliverySettingBidType = "UPPER_CONTROL"
+	CUSTOM_ProjectCreateV30DeliverySettingBidType        ProjectCreateV30DeliverySettingBidType = "CUSTOM"
+	NO_BID_ProjectCreateV30DeliverySettingBidType        ProjectCreateV30DeliverySettingBidType = "NO_BID"
+	OPTIMAL_COST_ProjectCreateV30DeliverySettingBidType  ProjectCreateV30DeliverySettingBidType = "OPTIMAL_COST"
+	UPPER_CONTROL_ProjectCreateV30DeliverySettingBidType ProjectCreateV30DeliverySettingBidType = "UPPER_CONTROL"
 )
 
 // Ptr returns reference to project_create_v3.0_delivery_setting_bid_type value

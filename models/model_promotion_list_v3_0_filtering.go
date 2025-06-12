@@ -28,9 +28,10 @@ type PromotionListV30Filtering struct {
 	//
 	PromotionModifyTime *string `json:"promotion_modify_time,omitempty"`
 	//
-	RejectReasonType []*PromotionListV30FilteringRejectReasonType `json:"reject_reason_type,omitempty"`
-	StarDeliveryType *PromotionListV30FilteringStarDeliveryType   `json:"star_delivery_type,omitempty"`
-	Status           *PromotionListV30FilteringStatus             `json:"status,omitempty"`
-	StatusFirst      *PromotionListV30FilteringStatusFirst        `json:"status_first,omitempty"`
-	StatusSecond     *PromotionListV30FilteringStatusSecond       `json:"status_second,omitempty"`
+	RejectReasonType       []*PromotionListV30FilteringRejectReasonType     `json:"reject_reason_type,omitempty"`
+	StarAutoDeliverySwitch *PromotionListV30FilteringStarAutoDeliverySwitch `json:"star_auto_delivery_switch,omitempty"`
+	StarDeliveryType       *PromotionListV30FilteringStarDeliveryType       `json:"star_delivery_type,omitempty"`
+	Status                 *PromotionListV30FilteringStatus                 `json:"status,omitempty"`
+	StatusFirst            *PromotionListV30FilteringStatusFirst            `json:"status_first,omitempty"`
+	StatusSecond           *PromotionListV30FilteringStatusSecond           `json:"status_second,omitempty"`
 }

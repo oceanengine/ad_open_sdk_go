@@ -15,6 +15,8 @@ type StarAttributeUserInfoFeedbackV2Request struct {
 	//
 	Caid *string `json:"caid,omitempty"`
 	//
+	GameName *string `json:"game_name,omitempty"`
+	//
 	GroupTag *int64 `json:"group_tag,omitempty"`
 	//
 	Oaid *string `json:"oaid,omitempty"`

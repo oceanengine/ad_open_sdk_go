@@ -24,6 +24,8 @@ type StarDemandCreateChallengeV2RequestChallengeInfoSettlementInfo struct {
 	CommissionRate *int32 `json:"commission_rate,omitempty"`
 	// 考核指标 5=视频有效播放量 4=激活总数 10=安装完成数量 31=组件点击数 32=APP唤起 201=客户自定义
 	EvaluateType int64 `json:"evaluate_type"`
+	// iaa分佣比例
+	IaaCommissionRate *int32 `json:"iaa_commission_rate,omitempty"`
 	// iOS转化ID 有效的转化ID
 	IosConvertId *int64 `json:"ios_convert_id,omitempty"`
 	// 自动追加预算总金额（单位元） auto_add_budget_trigger_ratio 为正时需提供，最低10000

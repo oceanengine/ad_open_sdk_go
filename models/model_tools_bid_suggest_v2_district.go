@@ -15,12 +15,12 @@ type ToolsBidSuggestV2District string
 
 // List of tools_bid_suggest_v2_district
 const (
-	COUNTY_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "COUNTY"
-	OVERSEA_ToolsBidSuggestV2District           ToolsBidSuggestV2District = "OVERSEA"
 	CITY_ToolsBidSuggestV2District              ToolsBidSuggestV2District = "CITY"
-	BUSINESS_DISTRICT_ToolsBidSuggestV2District ToolsBidSuggestV2District = "BUSINESS_DISTRICT"
+	COUNTY_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "COUNTY"
 	REGION_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "REGION"
+	OVERSEA_ToolsBidSuggestV2District           ToolsBidSuggestV2District = "OVERSEA"
 	NONE_ToolsBidSuggestV2District              ToolsBidSuggestV2District = "NONE"
+	BUSINESS_DISTRICT_ToolsBidSuggestV2District ToolsBidSuggestV2District = "BUSINESS_DISTRICT"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_district value

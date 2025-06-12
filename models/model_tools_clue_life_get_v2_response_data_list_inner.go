@@ -13,6 +13,7 @@ package models
 // ToolsClueLifeGetV2ResponseDataListInner struct for ToolsClueLifeGetV2ResponseDataListInner
 type ToolsClueLifeGetV2ResponseDataListInner struct {
 	ActionType *ToolsClueLifeGetV2DataListActionType `json:"action_type,omitempty"`
+	AdType     *ToolsClueLifeGetV2DataListAdType     `json:"ad_type,omitempty"`
 	// 详细地址
 	Address *string `json:"address,omitempty"`
 	// 广告主名
@@ -42,7 +43,8 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	ClueReturnStatus *string                             `json:"clue_return_status,omitempty"`
 	ClueType         *ToolsClueLifeGetV2DataListClueType `json:"clue_type,omitempty"`
 	// 内容ID
-	ContentId *string `json:"content_id,omitempty"`
+	ContentId     *string                                  `json:"content_id,omitempty"`
+	ConvertStatus *ToolsClueLifeGetV2DataListConvertStatus `json:"convert_status,omitempty"`
 	// 用户填写区县
 	CountyName *string `json:"county_name,omitempty"`
 	// 线索创建时间，如：2020-04-29 00:00:00
@@ -76,6 +78,11 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	OrderId *int64 `json:"order_id,omitempty"`
 	// 订单状态，包括交易成功、交易关闭、部分支付、支付成功、履约中
 	OrderStatus *string `json:"order_status,omitempty"`
+	// 商品id
+	ProductId *string `json:"product_id,omitempty"`
+	// 商品名称
+	ProductName *string                                `json:"product_name,omitempty"`
+	ProductType *ToolsClueLifeGetV2DataListProductType `json:"product_type,omitempty"`
 	// 广告ID
 	PromotionId *int64 `json:"promotion_id,omitempty"`
 	// 广告名称

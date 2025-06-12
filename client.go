@@ -1,5 +1,5 @@
 /*
-API version: 1.1.55
+API version: 1.1.56
 */
 package ad_open_sdk_go
 
@@ -245,6 +245,10 @@ func (c *Client) AgentFundTransferSeqCreateV2Api() *api.AgentFundTransferSeqCrea
 
 func (c *Client) AgentInfoV2Api() *api.AgentInfoV2ApiService {
 	return c.ApiClient.AgentInfoV2Api
+}
+
+func (c *Client) AgentPrepayChargeGenerateRemittanceCodeV2Api() *api.AgentPrepayChargeGenerateRemittanceCodeV2ApiService {
+	return c.ApiClient.AgentPrepayChargeGenerateRemittanceCodeV2Api
 }
 
 func (c *Client) AgentQueryRiskPromotionListV2Api() *api.AgentQueryRiskPromotionListV2ApiService {
@@ -2351,6 +2355,10 @@ func (c *Client) RejectMaterialAiRepairGetV30Api() *api.RejectMaterialAiRepairGe
 	return c.ApiClient.RejectMaterialAiRepairGetV30Api
 }
 
+func (c *Client) RemittanceCodeListV30Api() *api.RemittanceCodeListV30ApiService {
+	return c.ApiClient.RemittanceCodeListV30Api
+}
+
 func (c *Client) ReportAdGetV2Api() *api.ReportAdGetV2ApiService {
 	return c.ApiClient.ReportAdGetV2Api
 }
@@ -2593,6 +2601,10 @@ func (c *Client) SpiTaskGetV2Api() *api.SpiTaskGetV2ApiService {
 
 func (c *Client) StarAttachmentUploadV2Api() *api.StarAttachmentUploadV2ApiService {
 	return c.ApiClient.StarAttachmentUploadV2Api
+}
+
+func (c *Client) StarAttributeItemEventFeedbackV2Api() *api.StarAttributeItemEventFeedbackV2ApiService {
+	return c.ApiClient.StarAttributeItemEventFeedbackV2Api
 }
 
 func (c *Client) StarAttributeJdOverflowConvertV2Api() *api.StarAttributeJdOverflowConvertV2ApiService {

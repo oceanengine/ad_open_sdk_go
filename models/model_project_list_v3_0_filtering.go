@@ -31,9 +31,10 @@ type ProjectListV30Filtering struct {
 	//
 	ProjectCreateTime *string `json:"project_create_time,omitempty"`
 	//
-	ProjectModifyTime *string                                  `json:"project_modify_time,omitempty"`
-	StarDeliveryType  *ProjectListV30FilteringStarDeliveryType `json:"star_delivery_type,omitempty"`
-	Status            *ProjectListV30FilteringStatus           `json:"status,omitempty"`
-	StatusFirst       *ProjectListV30FilteringStatusFirst      `json:"status_first,omitempty"`
-	StatusSecond      *ProjectListV30FilteringStatusSecond     `json:"status_second,omitempty"`
+	ProjectModifyTime      *string                                        `json:"project_modify_time,omitempty"`
+	StarAutoDeliverySwitch *ProjectListV30FilteringStarAutoDeliverySwitch `json:"star_auto_delivery_switch,omitempty"`
+	StarDeliveryType       *ProjectListV30FilteringStarDeliveryType       `json:"star_delivery_type,omitempty"`
+	Status                 *ProjectListV30FilteringStatus                 `json:"status,omitempty"`
+	StatusFirst            *ProjectListV30FilteringStatusFirst            `json:"status_first,omitempty"`
+	StatusSecond           *ProjectListV30FilteringStatusSecond           `json:"status_second,omitempty"`
 }

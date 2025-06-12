@@ -66,7 +66,8 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	//
 	StarMaterialStatCost *float64 `json:"star_material_stat_cost,omitempty"`
 	//
-	StarMaterialTotalViews *int64 `json:"star_material_total_views,omitempty"`
+	StarMaterialTotalViews *int64                                                         `json:"star_material_total_views,omitempty"`
+	StarMaterialType       *ReportStardeliveryTaskVideoDataGetV30DataListStarMaterialType `json:"star_material_type,omitempty"`
 	//
 	StarSaleMaterialStatCost *float64 `json:"star_sale_material_stat_cost,omitempty"`
 	//

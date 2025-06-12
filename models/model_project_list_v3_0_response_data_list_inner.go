@@ -87,6 +87,7 @@ type ProjectListV30ResponseDataListInner struct {
 	RelatedProduct *ProjectListV30ResponseDataListInnerRelatedProduct `json:"related_product,omitempty"`
 	//
 	SearchBidRatio                 *float64                                              `json:"search_bid_ratio,omitempty"`
+	StarAutoDeliverySwitch         *ProjectListV30DataListStarAutoDeliverySwitch         `json:"star_auto_delivery_switch,omitempty"`
 	StarAutoMaterialAdditionSwitch *ProjectListV30DataListStarAutoMaterialAdditionSwitch `json:"star_auto_material_addition_switch,omitempty"`
 	//
 	StarTaskId      *int64                                 `json:"star_task_id,omitempty"`

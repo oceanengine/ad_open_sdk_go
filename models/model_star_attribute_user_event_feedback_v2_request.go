@@ -17,6 +17,8 @@ type StarAttributeUserEventFeedbackV2Request struct {
 	//
 	EventType int64 `json:"event_type"`
 	//
+	GameName *string `json:"game_name,omitempty"`
+	//
 	Oaid *string `json:"oaid,omitempty"`
 	//
 	StarId int64 `json:"star_id"`

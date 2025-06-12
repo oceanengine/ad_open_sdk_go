@@ -18,6 +18,7 @@ const (
 	POI_ToolsClueLifeGetV2DataListLeadsPage            ToolsClueLifeGetV2DataListLeadsPage = "POI"
 	PRODUCT_DETAIL_ToolsClueLifeGetV2DataListLeadsPage ToolsClueLifeGetV2DataListLeadsPage = "PRODUCT_DETAIL"
 	OTHER_ToolsClueLifeGetV2DataListLeadsPage          ToolsClueLifeGetV2DataListLeadsPage = "OTHER"
+	SITE_ToolsClueLifeGetV2DataListLeadsPage           ToolsClueLifeGetV2DataListLeadsPage = "SITE"
 )
 
 // Ptr returns reference to tools_clue_life_get_v2_data_list_leads_page value

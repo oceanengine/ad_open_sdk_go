@@ -18,7 +18,8 @@ type QianchuanUniPromotionListV10Filtering struct {
 	CreateStartDate *string                                          `json:"create_start_date,omitempty"`
 	HavingCost      *QianchuanUniPromotionListV10FilteringHavingCost `json:"having_cost,omitempty"`
 	// 搜索关键词，支持根据计划名称/ID搜索
-	SearchKeyword *string                                            `json:"search_keyword,omitempty"`
-	SmartBidType  *QianchuanUniPromotionListV10FilteringSmartBidType `json:"smart_bid_type,omitempty"`
-	Status        *QianchuanUniPromotionListV10FilteringStatus       `json:"status,omitempty"`
+	SearchKeyword     *string                                                 `json:"search_keyword,omitempty"`
+	SearchKeywordType *QianchuanUniPromotionListV10FilteringSearchKeywordType `json:"search_keyword_type,omitempty"`
+	SmartBidType      *QianchuanUniPromotionListV10FilteringSmartBidType      `json:"smart_bid_type,omitempty"`
+	Status            *QianchuanUniPromotionListV10FilteringStatus            `json:"status,omitempty"`
 }

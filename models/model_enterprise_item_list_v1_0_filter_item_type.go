@@ -15,8 +15,8 @@ type EnterpriseItemListV10FilterItemType string
 
 // List of enterprise_item_list_v1.0_filter_item_type
 const (
-	ITEM_CONTENT_EnterpriseItemListV10FilterItemType EnterpriseItemListV10FilterItemType = "ITEM_CONTENT"
 	ITEM_AD_EnterpriseItemListV10FilterItemType      EnterpriseItemListV10FilterItemType = "ITEM_AD"
+	ITEM_CONTENT_EnterpriseItemListV10FilterItemType EnterpriseItemListV10FilterItemType = "ITEM_CONTENT"
 )
 
 // Ptr returns reference to enterprise_item_list_v1.0_filter_item_type value

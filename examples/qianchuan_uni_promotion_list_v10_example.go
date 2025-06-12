@@ -28,11 +28,11 @@ type ApiOpenApiV10QianchuanUniPromotionListGetRequestExample struct {
 	EndTime       string                                    `json:"end_time"`
 	MarketingGoal QianchuanUniPromotionListV10MarketingGoal `json:"marketing_goal"`
 	Fields        []*QianchuanUniPromotionListV10Fields     `json:"fields"`
+	Filtering     QianchuanUniPromotionListV10Filtering     `json:"filtering,omitempty"`
 	OrderType     QianchuanUniPromotionListV10OrderType     `json:"order_type,omitempty"`
 	OrderField    QianchuanUniPromotionListV10OrderField    `json:"order_field,omitempty"`
 	Page          int32                                     `json:"page,omitempty"`
 	PageSize      QianchuanUniPromotionListV10PageSize      `json:"page_size,omitempty"`
-	Filtering     QianchuanUniPromotionListV10Filtering     `json:"filtering,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/qianchuan/uni_promotion/list/ Get
@@ -54,7 +54,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanUniPromotionListV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).StartTime(request.StartTime).EndTime(request.EndTime).MarketingGoal(request.MarketingGoal).Fields(request.Fields).OrderType(request.OrderType).OrderField(request.OrderField).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).
+		AdvertiserId(request.AdvertiserId).StartTime(request.StartTime).EndTime(request.EndTime).MarketingGoal(request.MarketingGoal).Fields(request.Fields).Filtering(request.Filtering).OrderType(request.OrderType).OrderField(request.OrderField).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

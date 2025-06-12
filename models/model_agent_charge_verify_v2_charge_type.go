@@ -16,6 +16,7 @@ type AgentChargeVerifyV2ChargeType string
 // List of agent_charge_verify_v2_charge_type
 const (
 	CREDIT_AgentChargeVerifyV2ChargeType AgentChargeVerifyV2ChargeType = "CREDIT"
+	PREPAY_AgentChargeVerifyV2ChargeType AgentChargeVerifyV2ChargeType = "PREPAY"
 )
 
 // Ptr returns reference to agent_charge_verify_v2_charge_type value

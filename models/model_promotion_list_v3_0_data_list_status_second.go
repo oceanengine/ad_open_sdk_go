@@ -18,6 +18,7 @@ const (
 	APP_NOT_ALLOWED_PromotionListV30DataListStatusSecond              PromotionListV30DataListStatusSecond = "APP_NOT_ALLOWED"
 	AUDIT_PromotionListV30DataListStatusSecond                        PromotionListV30DataListStatusSecond = "AUDIT"
 	AUDIT_DENY_PromotionListV30DataListStatusSecond                   PromotionListV30DataListStatusSecond = "AUDIT_DENY"
+	AVATAR_DISABLED_PromotionListV30DataListStatusSecond              PromotionListV30DataListStatusSecond = "AVATAR_DISABLED"
 	AWEME_ACCOUNT_DISABLED_PromotionListV30DataListStatusSecond       PromotionListV30DataListStatusSecond = "AWEME_ACCOUNT_DISABLED"
 	AWEME_ACCOUNT_OPTIMIZABLE_PromotionListV30DataListStatusSecond    PromotionListV30DataListStatusSecond = "AWEME_ACCOUNT_OPTIMIZABLE"
 	AWEME_ANCHOR_DISABLED_PromotionListV30DataListStatusSecond        PromotionListV30DataListStatusSecond = "AWEME_ANCHOR_DISABLED"

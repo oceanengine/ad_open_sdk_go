@@ -17,6 +17,7 @@ type PromotionListV30FilteringStatusSecond string
 const (
 	AUDIT_PromotionListV30FilteringStatusSecond                        PromotionListV30FilteringStatusSecond = "AUDIT"
 	AUDIT_DENY_PromotionListV30FilteringStatusSecond                   PromotionListV30FilteringStatusSecond = "AUDIT_DENY"
+	AVATAR_DISABLED_PromotionListV30FilteringStatusSecond              PromotionListV30FilteringStatusSecond = "AVATAR_DISABLED"
 	AWEME_ACCOUNT_DISABLED_PromotionListV30FilteringStatusSecond       PromotionListV30FilteringStatusSecond = "AWEME_ACCOUNT_DISABLED"
 	AWEME_ANCHOR_DISABLED_PromotionListV30FilteringStatusSecond        PromotionListV30FilteringStatusSecond = "AWEME_ANCHOR_DISABLED"
 	BALANCE_OFFLINE_BUDGET_PromotionListV30FilteringStatusSecond       PromotionListV30FilteringStatusSecond = "BALANCE_OFFLINE_BUDGET"
