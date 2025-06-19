@@ -27,7 +27,6 @@ type ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequestExample struct {
 	ItemIds        []int64                                        `json:"item_ids"`
 	LandingType    ToolsVideoCheckAvailableAnchorV2LandingType    `json:"landing_type"`
 	ExternalAction ToolsVideoCheckAvailableAnchorV2ExternalAction `json:"external_action"`
-	Version        string                                         `json:"version"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/video/check_available_anchor/ Get
@@ -47,9 +46,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.ToolsVideoCheckAvailableAnchorV2Api().
-		Get(ctx, version).
+		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).ItemIds(request.ItemIds).LandingType(request.LandingType).ExternalAction(request.ExternalAction).Version(request.Version).
+		AdvertiserId(request.AdvertiserId).ItemIds(request.ItemIds).LandingType(request.LandingType).ExternalAction(request.ExternalAction).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

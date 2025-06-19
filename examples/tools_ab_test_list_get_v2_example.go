@@ -24,7 +24,6 @@ import (
 
 type ApiOpenApi2ToolsAbTestListGetGetRequestExample struct {
 	AdvertiserId int64                      `json:"advertiser_id"`
-	Version      string                     `json:"version"`
 	Filter       ToolsAbTestListGetV2Filter `json:"filter,omitempty"`
 	Page         int32                      `json:"page,omitempty"`
 	PageSize     int32                      `json:"page_size,omitempty"`
@@ -47,9 +46,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.ToolsAbTestListGetV2Api().
-		Get(ctx, version).
+		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Version(request.Version).Filter(request.Filter).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).Filter(request.Filter).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

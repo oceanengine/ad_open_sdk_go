@@ -1,5 +1,5 @@
 /*
-API version: 1.1.56
+API version: 1.1.58
 */
 package ad_open_sdk_go
 
@@ -3537,6 +3537,10 @@ func (c *Client) ToolsHotMaterialDeriveListV30Api() *api.ToolsHotMaterialDeriveL
 
 func (c *Client) ToolsHotMaterialDeriveSubmitV30Api() *api.ToolsHotMaterialDeriveSubmitV30ApiService {
 	return c.ApiClient.ToolsHotMaterialDeriveSubmitV30Api
+}
+
+func (c *Client) ToolsInactiveAdvertiserListV30Api() *api.ToolsInactiveAdvertiserListV30ApiService {
+	return c.ApiClient.ToolsInactiveAdvertiserListV30Api
 }
 
 func (c *Client) ToolsIndustryGetV2Api() *api.ToolsIndustryGetV2ApiService {

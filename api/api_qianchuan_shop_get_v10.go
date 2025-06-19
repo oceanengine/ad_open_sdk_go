@@ -14,7 +14,6 @@ import (
 	"context"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -27,7 +26,6 @@ type ApiOpenApiV10QianchuanShopGetGetRequest struct {
 	ctx        context.Context
 	ApiService *QianchuanShopGetV10ApiService
 	shopIds    *[]int64
-	version    string
 }
 
 func (r *ApiOpenApiV10QianchuanShopGetGetRequest) ShopIds(shopIds []int64) *ApiOpenApiV10QianchuanShopGetGetRequest {
@@ -55,14 +53,12 @@ func (r *ApiOpenApiV10QianchuanShopGetGetRequest) WithLog(enable bool) *ApiOpenA
 OpenApiV10QianchuanShopGetGet Method for OpenApiV10QianchuanShopGetGet
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param version request version
 	@return ApiOpenApiV10QianchuanShopGetGetRequest
 */
-func (a *QianchuanShopGetV10ApiService) Get(ctx context.Context, version string) *ApiOpenApiV10QianchuanShopGetGetRequest {
+func (a *QianchuanShopGetV10ApiService) Get(ctx context.Context) *ApiOpenApiV10QianchuanShopGetGetRequest {
 	return &ApiOpenApiV10QianchuanShopGetGetRequest{
 		ApiService: a,
 		ctx:        ctx,
-		version:    version,
 	}
 }
 
@@ -82,7 +78,6 @@ func (a *QianchuanShopGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanShop
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/shop/get/"
-	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

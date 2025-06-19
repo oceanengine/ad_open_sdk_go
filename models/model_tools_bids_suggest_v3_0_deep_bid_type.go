@@ -25,6 +25,7 @@ const (
 	FORM_BID_ToolsBidsSuggestV30DeepBidType                     ToolsBidsSuggestV30DeepBidType = "FORM_BID"
 	MIN_SECOND_STAGE_ToolsBidsSuggestV30DeepBidType             ToolsBidsSuggestV30DeepBidType = "MIN_SECOND_STAGE"
 	PACING_SECOND_STAGE_ToolsBidsSuggestV30DeepBidType          ToolsBidsSuggestV30DeepBidType = "PACING_SECOND_STAGE"
+	PER_AND_SEVEN_PAY_ROI_ToolsBidsSuggestV30DeepBidType        ToolsBidsSuggestV30DeepBidType = "PER_AND_SEVEN_PAY_ROI"
 	PHONE_CONNECT_BID_ToolsBidsSuggestV30DeepBidType            ToolsBidsSuggestV30DeepBidType = "PHONE_CONNECT_BID"
 	ROI_COEFFICIENT_ToolsBidsSuggestV30DeepBidType              ToolsBidsSuggestV30DeepBidType = "ROI_COEFFICIENT"
 	ROI_DIRECT_MAIL_ToolsBidsSuggestV30DeepBidType              ToolsBidsSuggestV30DeepBidType = "ROI_DIRECT_MAIL"

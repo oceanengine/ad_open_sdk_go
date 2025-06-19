@@ -1084,6 +1084,7 @@ Class | Method | HTTP request
 *ToolsHotMaterialDeriveGetV30Api* | **OpenApiV30ToolsHotMaterialDeriveGetGet** | **Get** /open_api/v3.0/tools/hot_material_derive/get/
 *ToolsHotMaterialDeriveListV30Api* | **OpenApiV30ToolsHotMaterialDeriveListGet** | **Get** /open_api/v3.0/tools/hot_material_derive/list/
 *ToolsHotMaterialDeriveSubmitV30Api* | **OpenApiV30ToolsHotMaterialDeriveSubmitPost** | **Post** /open_api/v3.0/tools/hot_material_derive/submit/
+*ToolsInactiveAdvertiserListV30Api* | **OpenApiV30ToolsInactiveAdvertiserListGet** | **Get** /open_api/v3.0/tools/inactive_advertiser/list/
 *ToolsIndustryGetV2Api* | **OpenApi2ToolsIndustryGetGet** | **Get** /open_api/2/tools/industry/get/
 *ToolsInterestActionActionKeywordV2Api* | **OpenApi2ToolsInterestActionActionKeywordGet** | **Get** /open_api/2/tools/interest_action/action/keyword/
 *ToolsInterestActionId2wordV2Api* | **OpenApi2ToolsInterestActionId2wordGet** | **Get** /open_api/2/tools/interest_action/id2word/

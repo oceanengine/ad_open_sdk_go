@@ -12,6 +12,9 @@ package models
 
 // ToolsMicroAppListV30ResponseDataListInner struct for ToolsMicroAppListV30ResponseDataListInner
 type ToolsMicroAppListV30ResponseDataListInner struct {
+	// 客户id
+	AccountId   *int64                                   `json:"account_id,omitempty"`
+	AccountType *ToolsMicroAppListV30DataListAccountType `json:"account_type,omitempty"`
 	//
 	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
 	//
@@ -26,7 +29,9 @@ type ToolsMicroAppListV30ResponseDataListInner struct {
 	//
 	HasOnlineEarning *bool `json:"has_online_earning,omitempty"`
 	//
-	InstanceId          *int64                                           `json:"instance_id,omitempty"`
+	InstanceId *int64 `json:"instance_id,omitempty"`
+	//
+	IsEbpAsset          *bool                                            `json:"is_ebp_asset,omitempty"`
 	MaxPaymentTierRange *ToolsMicroAppListV30DataListMaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`
 	MaxRechargeTier     *ToolsMicroAppListV30DataListMaxRechargeTier     `json:"max_recharge_tier,omitempty"`
 	MembershipType      *ToolsMicroAppListV30DataListMembershipType      `json:"membership_type,omitempty"`

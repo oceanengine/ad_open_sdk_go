@@ -24,7 +24,7 @@ func (c contextKey) String() string {
 	return "ck " + string(c)
 }
 
-const Version = "1.1.56"
+const Version = "1.1.58"
 
 var (
 	// ContextAccessToken takes a string access token as authentication for the request.

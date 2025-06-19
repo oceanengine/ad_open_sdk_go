@@ -23,11 +23,10 @@ import (
 )
 
 type ApiOpenApi2ToolsAdRaiseVersionGetGetRequestExample struct {
-	AdId         int64  `json:"ad_id"`
-	AdvertiserId int64  `json:"advertiser_id"`
-	Version      string `json:"version"`
-	PageSize     int64  `json:"page_size,omitempty"`
-	Page         int64  `json:"page,omitempty"`
+	AdId         int64 `json:"ad_id"`
+	AdvertiserId int64 `json:"advertiser_id"`
+	PageSize     int64 `json:"page_size,omitempty"`
+	Page         int64 `json:"page,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/ad_raise_version/get/ Get
@@ -47,9 +46,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.ToolsAdRaiseVersionGetV2Api().
-		Get(ctx, version).
+		Get(ctx).
 		AccessToken(accessToken).
-		AdId(request.AdId).AdvertiserId(request.AdvertiserId).Version(request.Version).PageSize(request.PageSize).Page(request.Page).
+		AdId(request.AdId).AdvertiserId(request.AdvertiserId).PageSize(request.PageSize).Page(request.Page).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.56
+// APIClient manages communication with the Oceanengine Open Api API v1.1.58
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -1807,6 +1807,8 @@ type APIClient struct {
 
 	ToolsHotMaterialDeriveSubmitV30Api *ToolsHotMaterialDeriveSubmitV30ApiService
 
+	ToolsInactiveAdvertiserListV30Api *ToolsInactiveAdvertiserListV30ApiService
+
 	ToolsIndustryGetV2Api *ToolsIndustryGetV2ApiService
 
 	ToolsInterestActionActionKeywordV2Api *ToolsInterestActionActionKeywordV2ApiService
@@ -2948,6 +2950,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsHotMaterialDeriveGetV30Api = (*ToolsHotMaterialDeriveGetV30ApiService)(&c.common)
 	c.ToolsHotMaterialDeriveListV30Api = (*ToolsHotMaterialDeriveListV30ApiService)(&c.common)
 	c.ToolsHotMaterialDeriveSubmitV30Api = (*ToolsHotMaterialDeriveSubmitV30ApiService)(&c.common)
+	c.ToolsInactiveAdvertiserListV30Api = (*ToolsInactiveAdvertiserListV30ApiService)(&c.common)
 	c.ToolsIndustryGetV2Api = (*ToolsIndustryGetV2ApiService)(&c.common)
 	c.ToolsInterestActionActionKeywordV2Api = (*ToolsInterestActionActionKeywordV2ApiService)(&c.common)
 	c.ToolsInterestActionId2wordV2Api = (*ToolsInterestActionId2wordV2ApiService)(&c.common)

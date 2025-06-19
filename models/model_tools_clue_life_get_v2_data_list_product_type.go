@@ -15,12 +15,13 @@ type ToolsClueLifeGetV2DataListProductType string
 
 // List of tools_clue_life_get_v2_data_list_product_type
 const (
-	GROUPON_ToolsClueLifeGetV2DataListProductType        ToolsClueLifeGetV2DataListProductType = "GROUPON"
-	VOUCHER_ToolsClueLifeGetV2DataListProductType        ToolsClueLifeGetV2DataListProductType = "VOUCHER"
-	TIMES_CARD_ToolsClueLifeGetV2DataListProductType     ToolsClueLifeGetV2DataListProductType = "TIMES_CARD"
-	APPOINTMENT_ToolsClueLifeGetV2DataListProductType    ToolsClueLifeGetV2DataListProductType = "APPOINTMENT"
-	CLUE_COLLECTOR_ToolsClueLifeGetV2DataListProductType ToolsClueLifeGetV2DataListProductType = "CLUE_COLLECTOR"
-	OTHER_ToolsClueLifeGetV2DataListProductType          ToolsClueLifeGetV2DataListProductType = "OTHER"
+	GROUPON_ToolsClueLifeGetV2DataListProductType                        ToolsClueLifeGetV2DataListProductType = "GROUPON"
+	VOUCHER_ToolsClueLifeGetV2DataListProductType                        ToolsClueLifeGetV2DataListProductType = "VOUCHER"
+	TIMES_CARD_ToolsClueLifeGetV2DataListProductType                     ToolsClueLifeGetV2DataListProductType = "TIMES_CARD"
+	APPOINTMENT_ToolsClueLifeGetV2DataListProductType                    ToolsClueLifeGetV2DataListProductType = "APPOINTMENT"
+	CLUE_COLLECTOR_ToolsClueLifeGetV2DataListProductType                 ToolsClueLifeGetV2DataListProductType = "CLUE_COLLECTOR"
+	CLUE_COLLECTOR_JOIN_INVESTMENT_ToolsClueLifeGetV2DataListProductType ToolsClueLifeGetV2DataListProductType = "CLUE_COLLECTOR_JOIN_INVESTMENT"
+	OTHER_ToolsClueLifeGetV2DataListProductType                          ToolsClueLifeGetV2DataListProductType = "OTHER"
 )
 
 // Ptr returns reference to tools_clue_life_get_v2_data_list_product_type value

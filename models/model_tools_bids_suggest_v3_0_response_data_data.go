@@ -18,4 +18,8 @@ type ToolsBidsSuggestV30ResponseDataData struct {
 	BidHigh50 *float64 `json:"bid_high_50,omitempty"`
 	//
 	BidHigh90 *float64 `json:"bid_high_90,omitempty"`
+	// 建议出价（0表示无建议出价）
+	SuggestBid *float64 `json:"suggest_bid,omitempty"`
+	// 建议ROI系数（0表示无建议出价）
+	SuggestRoiGoal *float64 `json:"suggest_roi_goal,omitempty"`
 }

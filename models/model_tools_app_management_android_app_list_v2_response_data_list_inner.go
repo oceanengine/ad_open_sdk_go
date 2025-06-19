@@ -12,6 +12,9 @@ package models
 
 // ToolsAppManagementAndroidAppListV2ResponseDataListInner struct for ToolsAppManagementAndroidAppListV2ResponseDataListInner
 type ToolsAppManagementAndroidAppListV2ResponseDataListInner struct {
+	// 客户id
+	AccountId   *int64                                                 `json:"account_id,omitempty"`
+	AccountType *ToolsAppManagementAndroidAppListV2DataListAccountType `json:"account_type,omitempty"`
 	//
 	AppCloudId *int64 `json:"app_cloud_id,omitempty"`
 	//
@@ -21,7 +24,12 @@ type ToolsAppManagementAndroidAppListV2ResponseDataListInner struct {
 	//
 	DownloadUrl *string `json:"download_url,omitempty"`
 	//
+	HistoryAccountId   *int64                                                        `json:"history_account_id,omitempty"`
+	HistoryAccountType *ToolsAppManagementAndroidAppListV2DataListHistoryAccountType `json:"history_account_type,omitempty"`
+	//
 	IconUrl *string `json:"icon_url,omitempty"`
+	//
+	IsEbpAsset *bool `json:"is_ebp_asset,omitempty"`
 	//
 	PackageId *string `json:"package_id,omitempty"`
 	//

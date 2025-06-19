@@ -14,7 +14,6 @@ import (
 	"context"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -26,7 +25,6 @@ type DmpBrandGetV2ApiService service
 type ApiOpenApi2DmpBrandGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *DmpBrandGetV2ApiService
-	version      string
 	advertiserId *int64
 }
 
@@ -56,14 +54,12 @@ func (r *ApiOpenApi2DmpBrandGetGetRequest) WithLog(enable bool) *ApiOpenApi2DmpB
 OpenApi2DmpBrandGetGet Method for OpenApi2DmpBrandGetGet
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param version request version
 	@return ApiOpenApi2DmpBrandGetGetRequest
 */
-func (a *DmpBrandGetV2ApiService) Get(ctx context.Context, version string) *ApiOpenApi2DmpBrandGetGetRequest {
+func (a *DmpBrandGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2DmpBrandGetGetRequest {
 	return &ApiOpenApi2DmpBrandGetGetRequest{
 		ApiService: a,
 		ctx:        ctx,
-		version:    version,
 	}
 }
 
@@ -83,7 +79,6 @@ func (a *DmpBrandGetV2ApiService) getExecute(r *ApiOpenApi2DmpBrandGetGetRequest
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/dmp/brand/get/"
-	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

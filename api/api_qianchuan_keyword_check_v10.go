@@ -14,7 +14,6 @@ import (
 	"context"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -26,7 +25,6 @@ type QianchuanKeywordCheckV10ApiService service
 type ApiOpenApiV10QianchuanKeywordCheckPostRequest struct {
 	ctx                             context.Context
 	ApiService                      *QianchuanKeywordCheckV10ApiService
-	version                         string
 	qianchuanKeywordCheckV10Request *QianchuanKeywordCheckV10Request
 }
 
@@ -55,14 +53,12 @@ func (r *ApiOpenApiV10QianchuanKeywordCheckPostRequest) WithLog(enable bool) *Ap
 OpenApiV10QianchuanKeywordCheckPost Method for OpenApiV10QianchuanKeywordCheckPost
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param version request version
 	@return ApiOpenApiV10QianchuanKeywordCheckPostRequest
 */
-func (a *QianchuanKeywordCheckV10ApiService) Post(ctx context.Context, version string) *ApiOpenApiV10QianchuanKeywordCheckPostRequest {
+func (a *QianchuanKeywordCheckV10ApiService) Post(ctx context.Context) *ApiOpenApiV10QianchuanKeywordCheckPostRequest {
 	return &ApiOpenApiV10QianchuanKeywordCheckPostRequest{
 		ApiService: a,
 		ctx:        ctx,
-		version:    version,
 	}
 }
 
@@ -82,7 +78,6 @@ func (a *QianchuanKeywordCheckV10ApiService) postExecute(r *ApiOpenApiV10Qianchu
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/keyword/check/"
-	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

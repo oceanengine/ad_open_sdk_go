@@ -16,8 +16,8 @@ type EnterpriseCommentListGetV10DataCommentListLevel string
 // List of enterprise_comment_list_get_v1.0_data_comment_list_level
 const (
 	LEVEL_TWO_EnterpriseCommentListGetV10DataCommentListLevel EnterpriseCommentListGetV10DataCommentListLevel = "LEVEL_TWO"
-	LEVEL_ALL_EnterpriseCommentListGetV10DataCommentListLevel EnterpriseCommentListGetV10DataCommentListLevel = "LEVEL_ALL"
 	LEVEL_ONE_EnterpriseCommentListGetV10DataCommentListLevel EnterpriseCommentListGetV10DataCommentListLevel = "LEVEL_ONE"
+	LEVEL_ALL_EnterpriseCommentListGetV10DataCommentListLevel EnterpriseCommentListGetV10DataCommentListLevel = "LEVEL_ALL"
 )
 
 // Ptr returns reference to enterprise_comment_list_get_v1.0_data_comment_list_level value

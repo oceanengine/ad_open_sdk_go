@@ -23,7 +23,6 @@ import (
 )
 
 type ApiOpenApiV10QianchuanKeywordCheckPostRequestExample struct {
-	Version                         string                          `json:"version"`
 	QianchuanKeywordCheckV10Request QianchuanKeywordCheckV10Request `json:"QianchuanKeywordCheckV10Request,omitempty"`
 }
 
@@ -44,9 +43,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.QianchuanKeywordCheckV10Api().
-		Post(ctx, version).
+		Post(ctx).
 		AccessToken(accessToken).
-		Version(request.Version).QianchuanKeywordCheckV10Request(request.QianchuanKeywordCheckV10Request).
+		QianchuanKeywordCheckV10Request(request.QianchuanKeywordCheckV10Request).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

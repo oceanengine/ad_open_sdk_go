@@ -12,6 +12,9 @@ package models
 
 // ToolsMicroGameListV30ResponseDataListInner struct for ToolsMicroGameListV30ResponseDataListInner
 type ToolsMicroGameListV30ResponseDataListInner struct {
+	// 客户id
+	AccountId   *int64                                    `json:"account_id,omitempty"`
+	AccountType *ToolsMicroGameListV30DataListAccountType `json:"account_type,omitempty"`
 	//
 	AdvertiserId *int64                                 `json:"advertiser_id,omitempty"`
 	AgeLimit     *ToolsMicroGameListV30DataListAgeLimit `json:"age_limit,omitempty"`
@@ -33,7 +36,9 @@ type ToolsMicroGameListV30ResponseDataListInner struct {
 	//
 	InstanceId *int64 `json:"instance_id,omitempty"`
 	//
-	Introduction        *string                                           `json:"introduction,omitempty"`
+	Introduction *string `json:"introduction,omitempty"`
+	//
+	IsEbpAsset          *bool                                             `json:"is_ebp_asset,omitempty"`
 	MaxPaymentTierRange *ToolsMicroGameListV30DataListMaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`
 	MidPaymentTierRange *ToolsMicroGameListV30DataListMidPaymentTierRange `json:"mid_payment_tier_range,omitempty"`
 	MinPaymentTierRange *ToolsMicroGameListV30DataListMinPaymentTierRange `json:"min_payment_tier_range,omitempty"`

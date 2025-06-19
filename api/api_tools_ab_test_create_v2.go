@@ -14,7 +14,6 @@ import (
 	"context"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -26,7 +25,6 @@ type ToolsAbTestCreateV2ApiService service
 type ApiOpenApi2ToolsAbTestCreatePostRequest struct {
 	ctx                        context.Context
 	ApiService                 *ToolsAbTestCreateV2ApiService
-	version                    string
 	toolsAbTestCreateV2Request *ToolsAbTestCreateV2Request
 }
 
@@ -55,14 +53,12 @@ func (r *ApiOpenApi2ToolsAbTestCreatePostRequest) WithLog(enable bool) *ApiOpenA
 OpenApi2ToolsAbTestCreatePost Method for OpenApi2ToolsAbTestCreatePost
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param version request version
 	@return ApiOpenApi2ToolsAbTestCreatePostRequest
 */
-func (a *ToolsAbTestCreateV2ApiService) Post(ctx context.Context, version string) *ApiOpenApi2ToolsAbTestCreatePostRequest {
+func (a *ToolsAbTestCreateV2ApiService) Post(ctx context.Context) *ApiOpenApi2ToolsAbTestCreatePostRequest {
 	return &ApiOpenApi2ToolsAbTestCreatePostRequest{
 		ApiService: a,
 		ctx:        ctx,
-		version:    version,
 	}
 }
 
@@ -82,7 +78,6 @@ func (a *ToolsAbTestCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsAbTestCre
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/tools/ab_test/create/"
-	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

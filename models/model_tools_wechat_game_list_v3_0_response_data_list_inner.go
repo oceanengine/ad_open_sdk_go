@@ -35,7 +35,12 @@ type ToolsWechatGameListV30ResponseDataListInner struct {
 	//
 	HasOnlineEarning *bool `json:"has_online_earning,omitempty"`
 	//
-	InstanceId          *int64                                             `json:"instance_id,omitempty"`
+	HistoryAccountId   *int64                                            `json:"history_account_id,omitempty"`
+	HistoryAccountType *ToolsWechatGameListV30DataListHistoryAccountType `json:"history_account_type,omitempty"`
+	//
+	InstanceId *int64 `json:"instance_id,omitempty"`
+	//
+	IsEbpAsset          *bool                                              `json:"is_ebp_asset,omitempty"`
 	MaxPaymentTierRange *ToolsWechatGameListV30DataListMaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`
 	MidPaymentTierRange *ToolsWechatGameListV30DataListMidPaymentTierRange `json:"mid_payment_tier_range,omitempty"`
 	MinPaymentTierRange *ToolsWechatGameListV30DataListMinPaymentTierRange `json:"min_payment_tier_range,omitempty"`

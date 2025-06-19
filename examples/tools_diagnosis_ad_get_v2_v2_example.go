@@ -24,7 +24,6 @@ import (
 
 type ApiOpenApi2ToolsDiagnosisAdGetV2GetRequestExample struct {
 	AdvertiserId int64   `json:"advertiser_id"`
-	Version      string  `json:"version"`
 	AdIds        []int64 `json:"ad_ids,omitempty"`
 }
 
@@ -45,9 +44,9 @@ func main() {
 	}
 
 	resp, httpRes, err := apiClient.ToolsDiagnosisAdGetV2V2Api().
-		Get(ctx, version).
+		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Version(request.Version).AdIds(request.AdIds).
+		AdvertiserId(request.AdvertiserId).AdIds(request.AdIds).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

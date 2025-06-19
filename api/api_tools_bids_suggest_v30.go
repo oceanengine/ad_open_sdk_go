@@ -31,6 +31,12 @@ type ApiOpenApiV30ToolsBidsSuggestGetRequest struct {
 	projectId          *int64
 	deepExternalAction *ToolsBidsSuggestV30DeepExternalAction
 	deepBidType        *ToolsBidsSuggestV30DeepBidType
+	platform           *[]*ToolsBidsSuggestV30Platform
+	marketingGoal      *ToolsBidsSuggestV30MarketingGoal
+	campaignType       *ToolsBidsSuggestV30CampaignType
+	packageName        *string
+	userName           *string
+	appId              *string
 }
 
 func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
@@ -60,6 +66,42 @@ func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) DeepExternalAction(deepExterna
 
 func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) DeepBidType(deepBidType ToolsBidsSuggestV30DeepBidType) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
 	r.deepBidType = &deepBidType
+	return r
+}
+
+// 定向目标平台
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) Platform(platform []*ToolsBidsSuggestV30Platform) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+	r.platform = &platform
+	return r
+}
+
+// 营销目标
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) MarketingGoal(marketingGoal ToolsBidsSuggestV30MarketingGoal) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+	r.marketingGoal = &marketingGoal
+	return r
+}
+
+// 项目类型
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) CampaignType(campaignType ToolsBidsSuggestV30CampaignType) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+	r.campaignType = &campaignType
+	return r
+}
+
+// 应用包名
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) PackageName(packageName string) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+	r.packageName = &packageName
+	return r
+}
+
+// 微信小程序/小游戏原始ID
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) UserName(userName string) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+	r.userName = &userName
+	return r
+}
+
+// 字节小程序/小游戏的app id
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) AppId(appId string) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+	r.appId = &appId
 	return r
 }
 
@@ -134,6 +176,24 @@ func (a *ToolsBidsSuggestV30ApiService) getExecute(r *ApiOpenApiV30ToolsBidsSugg
 	}
 	if r.deepBidType != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "deep_bid_type", r.deepBidType)
+	}
+	if r.platform != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "platform", r.platform)
+	}
+	if r.marketingGoal != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "marketing_goal", r.marketingGoal)
+	}
+	if r.campaignType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "campaign_type", r.campaignType)
+	}
+	if r.packageName != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "package_name", r.packageName)
+	}
+	if r.userName != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "user_name", r.userName)
+	}
+	if r.appId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "app_id", r.appId)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

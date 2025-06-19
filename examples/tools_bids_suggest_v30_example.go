@@ -29,6 +29,12 @@ type ApiOpenApiV30ToolsBidsSuggestGetRequestExample struct {
 	ProjectId          int64                                 `json:"project_id,omitempty"`
 	DeepExternalAction ToolsBidsSuggestV30DeepExternalAction `json:"deep_external_action,omitempty"`
 	DeepBidType        ToolsBidsSuggestV30DeepBidType        `json:"deep_bid_type,omitempty"`
+	Platform           []*ToolsBidsSuggestV30Platform        `json:"platform,omitempty"`
+	MarketingGoal      ToolsBidsSuggestV30MarketingGoal      `json:"marketing_goal,omitempty"`
+	CampaignType       ToolsBidsSuggestV30CampaignType       `json:"campaign_type,omitempty"`
+	PackageName        string                                `json:"package_name,omitempty"`
+	UserName           string                                `json:"user_name,omitempty"`
+	AppId              string                                `json:"app_id,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/bids/suggest/ Get
@@ -50,7 +56,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsBidsSuggestV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Pricing(request.Pricing).ExternalAction(request.ExternalAction).ProjectId(request.ProjectId).DeepExternalAction(request.DeepExternalAction).DeepBidType(request.DeepBidType).
+		AdvertiserId(request.AdvertiserId).Pricing(request.Pricing).ExternalAction(request.ExternalAction).ProjectId(request.ProjectId).DeepExternalAction(request.DeepExternalAction).DeepBidType(request.DeepBidType).Platform(request.Platform).MarketingGoal(request.MarketingGoal).CampaignType(request.CampaignType).PackageName(request.PackageName).UserName(request.UserName).AppId(request.AppId).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

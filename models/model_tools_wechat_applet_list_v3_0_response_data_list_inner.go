@@ -12,6 +12,9 @@ package models
 
 // ToolsWechatAppletListV30ResponseDataListInner struct for ToolsWechatAppletListV30ResponseDataListInner
 type ToolsWechatAppletListV30ResponseDataListInner struct {
+	// 客户id
+	AccountId   *int64                                       `json:"account_id,omitempty"`
+	AccountType *ToolsWechatAppletListV30DataListAccountType `json:"account_type,omitempty"`
 	//
 	AdvertiserId *int64                                       `json:"advertiser_id,omitempty"`
 	AuditStatus  *ToolsWechatAppletListV30DataListAuditStatus `json:"audit_status,omitempty"`
@@ -37,6 +40,8 @@ type ToolsWechatAppletListV30ResponseDataListInner struct {
 	InstanceId *int64 `json:"instance_id,omitempty"`
 	//
 	Introduction *string `json:"introduction,omitempty"`
+	//
+	IsEbpAsset *bool `json:"is_ebp_asset,omitempty"`
 	//
 	Labels              []string                                             `json:"labels,omitempty"`
 	MaxPaymentTierRange *ToolsWechatAppletListV30DataListMaxPaymentTierRange `json:"max_payment_tier_range,omitempty"`

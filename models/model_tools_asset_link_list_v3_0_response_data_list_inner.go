@@ -12,6 +12,9 @@ package models
 
 // ToolsAssetLinkListV30ResponseDataListInner struct for ToolsAssetLinkListV30ResponseDataListInner
 type ToolsAssetLinkListV30ResponseDataListInner struct {
+	// 客户id
+	AccountId   *int64                                    `json:"account_id,omitempty"`
+	AccountType *ToolsAssetLinkListV30DataListAccountType `json:"account_type,omitempty"`
 	//
 	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
 	//
@@ -20,6 +23,8 @@ type ToolsAssetLinkListV30ResponseDataListInner struct {
 	CreateTime *string `json:"create_time,omitempty"`
 	//
 	InstanceId *int64 `json:"instance_id,omitempty"`
+	//
+	IsEbpAsset *bool `json:"is_ebp_asset,omitempty"`
 	//
 	Link *string `json:"link,omitempty"`
 	//

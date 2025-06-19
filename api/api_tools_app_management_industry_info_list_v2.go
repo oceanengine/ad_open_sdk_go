@@ -14,7 +14,6 @@ import (
 	"context"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -28,7 +27,6 @@ type ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest struct {
 	ApiService  *ToolsAppManagementIndustryInfoListV2ApiService
 	accountId   *int64
 	accountType *ToolsAppManagementIndustryInfoListV2AccountType
-	version     string
 }
 
 // 账户id指可以接的账号体系如广告主id、巨量纵横组织id等
@@ -63,14 +61,12 @@ func (r *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest) WithLog(enable
 OpenApi2ToolsAppManagementIndustryInfoListGet Method for OpenApi2ToolsAppManagementIndustryInfoListGet
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param version request version
 	@return ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest
 */
-func (a *ToolsAppManagementIndustryInfoListV2ApiService) Get(ctx context.Context, version string) *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest {
+func (a *ToolsAppManagementIndustryInfoListV2ApiService) Get(ctx context.Context) *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest {
 	return &ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest{
 		ApiService: a,
 		ctx:        ctx,
-		version:    version,
 	}
 }
 
@@ -90,7 +86,6 @@ func (a *ToolsAppManagementIndustryInfoListV2ApiService) getExecute(r *ApiOpenAp
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/industry_info/list/"
-	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

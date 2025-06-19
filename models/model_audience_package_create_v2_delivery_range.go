@@ -16,8 +16,8 @@ type AudiencePackageCreateV2DeliveryRange string
 // List of audience_package_create_v2_delivery_range
 const (
 	UNION_AudiencePackageCreateV2DeliveryRange     AudiencePackageCreateV2DeliveryRange = "UNION"
-	DEFAULT_AudiencePackageCreateV2DeliveryRange   AudiencePackageCreateV2DeliveryRange = "DEFAULT"
 	UNIVERSAL_AudiencePackageCreateV2DeliveryRange AudiencePackageCreateV2DeliveryRange = "UNIVERSAL"
+	DEFAULT_AudiencePackageCreateV2DeliveryRange   AudiencePackageCreateV2DeliveryRange = "DEFAULT"
 )
 
 // Ptr returns reference to audience_package_create_v2_delivery_range value

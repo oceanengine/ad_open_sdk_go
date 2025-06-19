@@ -14,7 +14,6 @@ import (
 	"context"
 	"net/http"
 	"net/url"
-	"strings"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	. "github.com/oceanengine/ad_open_sdk_go/models"
@@ -28,7 +27,6 @@ type ApiOpenApi2ToolsAdRaiseVersionGetGetRequest struct {
 	ApiService   *ToolsAdRaiseVersionGetV2ApiService
 	adId         *int64
 	advertiserId *int64
-	version      string
 	pageSize     *int64
 	page         *int64
 }
@@ -73,14 +71,12 @@ func (r *ApiOpenApi2ToolsAdRaiseVersionGetGetRequest) WithLog(enable bool) *ApiO
 OpenApi2ToolsAdRaiseVersionGetGet Method for OpenApi2ToolsAdRaiseVersionGetGet
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@param version request version
 	@return ApiOpenApi2ToolsAdRaiseVersionGetGetRequest
 */
-func (a *ToolsAdRaiseVersionGetV2ApiService) Get(ctx context.Context, version string) *ApiOpenApi2ToolsAdRaiseVersionGetGetRequest {
+func (a *ToolsAdRaiseVersionGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2ToolsAdRaiseVersionGetGetRequest {
 	return &ApiOpenApi2ToolsAdRaiseVersionGetGetRequest{
 		ApiService: a,
 		ctx:        ctx,
-		version:    version,
 	}
 }
 
@@ -100,7 +96,6 @@ func (a *ToolsAdRaiseVersionGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAdRai
 	localBasePath := a.client.Cfg.GetBasePath()
 
 	localVarPath := localBasePath + "/open_api/2/tools/ad_raise_version/get/"
-	localVarPath = strings.Replace(localVarPath, "{"+"version"+"}", url.PathEscape(parameterValueToString(r.version, "version")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)

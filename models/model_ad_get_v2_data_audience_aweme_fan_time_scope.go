@@ -15,9 +15,9 @@ type AdGetV2DataAudienceAwemeFanTimeScope string
 
 // List of ad_get_v2_data_audience_aweme_fan_time_scope
 const (
-	THIRTY_DAYS_AdGetV2DataAudienceAwemeFanTimeScope  AdGetV2DataAudienceAwemeFanTimeScope = "THIRTY_DAYS"
-	SIXTY_DAYS_AdGetV2DataAudienceAwemeFanTimeScope   AdGetV2DataAudienceAwemeFanTimeScope = "SIXTY_DAYS"
 	FIFTEEN_DAYS_AdGetV2DataAudienceAwemeFanTimeScope AdGetV2DataAudienceAwemeFanTimeScope = "FIFTEEN_DAYS"
+	SIXTY_DAYS_AdGetV2DataAudienceAwemeFanTimeScope   AdGetV2DataAudienceAwemeFanTimeScope = "SIXTY_DAYS"
+	THIRTY_DAYS_AdGetV2DataAudienceAwemeFanTimeScope  AdGetV2DataAudienceAwemeFanTimeScope = "THIRTY_DAYS"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_aweme_fan_time_scope value
