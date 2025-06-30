@@ -49,8 +49,6 @@ type PromotionCreateV30Request struct {
 	//
 	RoiGoal *float64 `json:"roi_goal,omitempty"`
 	//
-	ShopMultiRoiGoals []*PromotionCreateV30RequestShopMultiRoiGoalsInner `json:"shop_multi_roi_goals,omitempty"`
-	//
 	Source *string `json:"source,omitempty"`
 	//
 	UnionBidRatio *float64 `json:"union_bid_ratio,omitempty"`

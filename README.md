@@ -677,9 +677,18 @@ Class | Method | HTTP request
 *QianchuanAwemeReportOrderGetV10Api* | **OpenApiV10QianchuanAwemeReportOrderGetGet** | **Get** /open_api/v1.0/qianchuan/aweme/report/order/get/
 *QianchuanAwemeSuggestBidV10Api* | **OpenApiV10QianchuanAwemeSuggestBidGet** | **Get** /open_api/v1.0/qianchuan/aweme/suggest_bid/
 *QianchuanAwemeSuggestRoiGoalV10Api* | **OpenApiV10QianchuanAwemeSuggestRoiGoalGet** | **Get** /open_api/v1.0/qianchuan/aweme/suggest/roi/goal/
+*QianchuanAwemeUniPromotionEstimateEffectV10Api* | **OpenApiV10QianchuanAwemeUniPromotionEstimateEffectGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/estimate/effect/
+*QianchuanAwemeUniPromotionOrderCreateV10Api* | **OpenApiV10QianchuanAwemeUniPromotionOrderCreatePost** | **Post** /open_api/v1.0/qianchuan/aweme/uni_promotion/order/create/
+*QianchuanAwemeUniPromotionOrderDetailV10Api* | **OpenApiV10QianchuanAwemeUniPromotionOrderDetailGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/order/detail/
+*QianchuanAwemeUniPromotionOrderGetV10Api* | **OpenApiV10QianchuanAwemeUniPromotionOrderGetGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/order/get/
+*QianchuanAwemeUniPromotionReportV10Api* | **OpenApiV10QianchuanAwemeUniPromotionReportGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/report/
+*QianchuanAwemeUniPromotionSuggestRoiV10Api* | **OpenApiV10QianchuanAwemeUniPromotionSuggestRoiGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/suggest/roi/
+*QianchuanAwemeUniPromotionSuggestV10Api* | **OpenApiV10QianchuanAwemeUniPromotionSuggestGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/suggest/
 *QianchuanAwemeVideoGetV10Api* | **OpenApiV10QianchuanAwemeVideoGetGet** | **Get** /open_api/v1.0/qianchuan/aweme/video/get/
 *QianchuanBatchCampaignStatusUpdateV10Api* | **OpenApiV10QianchuanBatchCampaignStatusUpdatePost** | **Post** /open_api/v1.0/qianchuan/batch_campaign_status/update/
 *QianchuanBrandAuthorizedGetV10Api* | **OpenApiV10QianchuanBrandAuthorizedGetGet** | **Get** /open_api/v1.0/qianchuan/brand/authorized/get/
+*QianchuanBrandReportAdGetV10Api* | **OpenApiV10QianchuanBrandReportAdGetGet** | **Get** /open_api/v1.0/qianchuan/brand/report/ad/get/
+*QianchuanBrandReportAdvertiserGetV10Api* | **OpenApiV10QianchuanBrandReportAdvertiserGetGet** | **Get** /open_api/v1.0/qianchuan/brand/report/advertiser/get/
 *QianchuanCampaignCreateV10Api* | **OpenApiV10QianchuanCampaignCreatePost** | **Post** /open_api/v1.0/qianchuan/campaign/create/
 *QianchuanCampaignListGetV10Api* | **OpenApiV10QianchuanCampaignListGetGet** | **Get** /open_api/v1.0/qianchuan/campaign_list/get/
 *QianchuanCampaignUpdateV10Api* | **OpenApiV10QianchuanCampaignUpdatePost** | **Post** /open_api/v1.0/qianchuan/campaign/update/
@@ -897,6 +906,7 @@ Class | Method | HTTP request
 *StarDemandSearchWordModifyV2Api* | **OpenApi2StarDemandSearchWordModifyPost** | **Post** /open_api/2/star/demand/search_word/modify/
 *StarDemanderDemanderGetAuthorBindInfoV2Api* | **OpenApi2StarDemanderDemanderGetAuthorBindInfoGet** | **Get** /open_api/2/star/demander/demander_get_author_bind_info/
 *StarDemanderDemanderGetBindShareCodeV2Api* | **OpenApi2StarDemanderDemanderGetBindShareCodeGet** | **Get** /open_api/2/star/demander/demander_get_bind_share_code/
+*StarDemanderGetRegisteredIpActsV2Api* | **OpenApi2StarDemanderGetRegisteredIpActsGet** | **Get** /open_api/2/star/demander/get_registered_ip_acts/
 *StarDemanderUploadCpsTaskSalesV2Api* | **OpenApi2StarDemanderUploadCpsTaskSalesPost** | **Post** /open_api/2/star/demander_upload_cps_task_sales/
 *StarFeCommonServiceTalentDayGetCheckInCodeV2Api* | **OpenApi2StarFeCommonServiceTalentDayGetCheckInCodeGet** | **Get** /open_api/2/star/fe_common_service/talent_day/get_check_in_code/
 *StarFeCommonServiceTalentDayJudgeCheckedInV2Api* | **OpenApi2StarFeCommonServiceTalentDayJudgeCheckedInGet** | **Get** /open_api/2/star/fe_common_service/talent_day/judge_checked_in/
@@ -1054,7 +1064,9 @@ Class | Method | HTTP request
 *ToolsClueRobotTaskCancelV2Api* | **OpenApi2ToolsClueRobotTaskCancelPost** | **Post** /open_api/2/tools/clue/robot/task/cancel/
 *ToolsClueRobotTaskCreateV2Api* | **OpenApi2ToolsClueRobotTaskCreatePost** | **Post** /open_api/2/tools/clue/robot/task/create/
 *ToolsClueSmartPhoneGetV2Api* | **OpenApi2ToolsClueSmartPhoneGetGet** | **Get** /open_api/2/tools/clue/smart_phone/get/
+*ToolsClueWebrtcCreateV2V30Api* | **OpenApiV30ToolsClueWebrtcCreateV2Post** | **Post** /open_api/v3.0/tools/clue/webrtc/create/v2/
 *ToolsClueWebrtcTokenGetV2Api* | **OpenApi2ToolsClueWebrtcTokenGetPost** | **Post** /open_api/2/tools/clue/webrtc/token/get/
+*ToolsClueWebrtcTokenGetV2V30Api* | **OpenApiV30ToolsClueWebrtcTokenGetV2Post** | **Post** /open_api/v3.0/tools/clue/webrtc/token/get/v2/
 *ToolsCommentGetV30Api* | **OpenApiV30ToolsCommentGetGet** | **Get** /open_api/v3.0/tools/comment/get/
 *ToolsCommentHideV30Api* | **OpenApiV30ToolsCommentHidePost** | **Post** /open_api/v3.0/tools/comment/hide/
 *ToolsCommentMetricsGetV30Api* | **OpenApiV30ToolsCommentMetricsGetGet** | **Get** /open_api/v3.0/tools/comment_metrics/get/

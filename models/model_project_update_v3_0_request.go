@@ -22,8 +22,6 @@ type ProjectUpdateV30Request struct {
 	DeliverySetting           *ProjectUpdateV30RequestDeliverySetting    `json:"delivery_setting,omitempty"`
 	DownloadMode              *ProjectUpdateV30DownloadMode              `json:"download_mode,omitempty"`
 	//
-	DpaCategories []int64 `json:"dpa_categories,omitempty"`
-	//
 	DpaProductTarget []*ProjectUpdateV30RequestDpaProductTargetInner `json:"dpa_product_target,omitempty"`
 	//
 	Keywords []*ProjectUpdateV30RequestKeywordsInner `json:"keywords,omitempty"`

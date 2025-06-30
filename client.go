@@ -1,5 +1,5 @@
 /*
-API version: 1.1.58
+API version: 1.1.59
 */
 package ad_open_sdk_go
 
@@ -1911,6 +1911,34 @@ func (c *Client) QianchuanAwemeSuggestRoiGoalV10Api() *api.QianchuanAwemeSuggest
 	return c.ApiClient.QianchuanAwemeSuggestRoiGoalV10Api
 }
 
+func (c *Client) QianchuanAwemeUniPromotionEstimateEffectV10Api() *api.QianchuanAwemeUniPromotionEstimateEffectV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionEstimateEffectV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionOrderCreateV10Api() *api.QianchuanAwemeUniPromotionOrderCreateV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionOrderCreateV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionOrderDetailV10Api() *api.QianchuanAwemeUniPromotionOrderDetailV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionOrderDetailV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionOrderGetV10Api() *api.QianchuanAwemeUniPromotionOrderGetV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionOrderGetV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionReportV10Api() *api.QianchuanAwemeUniPromotionReportV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionReportV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionSuggestRoiV10Api() *api.QianchuanAwemeUniPromotionSuggestRoiV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionSuggestRoiV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionSuggestV10Api() *api.QianchuanAwemeUniPromotionSuggestV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionSuggestV10Api
+}
+
 func (c *Client) QianchuanAwemeVideoGetV10Api() *api.QianchuanAwemeVideoGetV10ApiService {
 	return c.ApiClient.QianchuanAwemeVideoGetV10Api
 }
@@ -1921,6 +1949,14 @@ func (c *Client) QianchuanBatchCampaignStatusUpdateV10Api() *api.QianchuanBatchC
 
 func (c *Client) QianchuanBrandAuthorizedGetV10Api() *api.QianchuanBrandAuthorizedGetV10ApiService {
 	return c.ApiClient.QianchuanBrandAuthorizedGetV10Api
+}
+
+func (c *Client) QianchuanBrandReportAdGetV10Api() *api.QianchuanBrandReportAdGetV10ApiService {
+	return c.ApiClient.QianchuanBrandReportAdGetV10Api
+}
+
+func (c *Client) QianchuanBrandReportAdvertiserGetV10Api() *api.QianchuanBrandReportAdvertiserGetV10ApiService {
+	return c.ApiClient.QianchuanBrandReportAdvertiserGetV10Api
 }
 
 func (c *Client) QianchuanCampaignCreateV10Api() *api.QianchuanCampaignCreateV10ApiService {
@@ -2791,6 +2827,10 @@ func (c *Client) StarDemanderDemanderGetBindShareCodeV2Api() *api.StarDemanderDe
 	return c.ApiClient.StarDemanderDemanderGetBindShareCodeV2Api
 }
 
+func (c *Client) StarDemanderGetRegisteredIpActsV2Api() *api.StarDemanderGetRegisteredIpActsV2ApiService {
+	return c.ApiClient.StarDemanderGetRegisteredIpActsV2Api
+}
+
 func (c *Client) StarDemanderUploadCpsTaskSalesV2Api() *api.StarDemanderUploadCpsTaskSalesV2ApiService {
 	return c.ApiClient.StarDemanderUploadCpsTaskSalesV2Api
 }
@@ -3419,8 +3459,16 @@ func (c *Client) ToolsClueSmartPhoneGetV2Api() *api.ToolsClueSmartPhoneGetV2ApiS
 	return c.ApiClient.ToolsClueSmartPhoneGetV2Api
 }
 
+func (c *Client) ToolsClueWebrtcCreateV2V30Api() *api.ToolsClueWebrtcCreateV2V30ApiService {
+	return c.ApiClient.ToolsClueWebrtcCreateV2V30Api
+}
+
 func (c *Client) ToolsClueWebrtcTokenGetV2Api() *api.ToolsClueWebrtcTokenGetV2ApiService {
 	return c.ApiClient.ToolsClueWebrtcTokenGetV2Api
+}
+
+func (c *Client) ToolsClueWebrtcTokenGetV2V30Api() *api.ToolsClueWebrtcTokenGetV2V30ApiService {
+	return c.ApiClient.ToolsClueWebrtcTokenGetV2V30Api
 }
 
 func (c *Client) ToolsCommentGetV30Api() *api.ToolsCommentGetV30ApiService {

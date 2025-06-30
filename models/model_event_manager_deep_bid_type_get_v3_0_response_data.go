@@ -14,4 +14,6 @@ package models
 type EventManagerDeepBidTypeGetV30ResponseData struct {
 	//
 	DeepBidType []*EventManagerDeepBidTypeGetV30DataDeepBidType `json:"deep_bid_type,omitempty"`
+	//
+	DeepBidTypeDetail []*EventManagerDeepBidTypeGetV30ResponseDataDeepBidTypeDetailInner `json:"deep_bid_type_detail,omitempty"`
 }

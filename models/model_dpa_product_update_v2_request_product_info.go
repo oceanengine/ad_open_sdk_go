@@ -55,9 +55,10 @@ type DpaProductUpdateV2RequestProductInfo struct {
 	Province       []string                                            `json:"province,omitempty"`
 	ShopKeeperInfo *DpaProductUpdateV2RequestProductInfoShopKeeperInfo `json:"shop_keeper_info,omitempty"`
 	//
-	SpuId  *string                             `json:"spu_id,omitempty"`
-	Status DpaProductUpdateV2ProductInfoStatus `json:"status"`
-	Stock  DpaProductUpdateV2ProductInfoStock  `json:"stock"`
+	SpuId     *string                                 `json:"spu_id,omitempty"`
+	SpuSource *DpaProductUpdateV2ProductInfoSpuSource `json:"spu_source,omitempty"`
+	Status    DpaProductUpdateV2ProductInfoStatus     `json:"status"`
+	Stock     DpaProductUpdateV2ProductInfoStock      `json:"stock"`
 	//
 	SubCategory *string `json:"sub_category,omitempty"`
 	//

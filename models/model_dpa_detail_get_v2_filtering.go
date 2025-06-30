@@ -19,6 +19,8 @@ type DpaDetailGetV2Filtering struct {
 	//
 	ProductId *int64 `json:"product_id,omitempty"`
 	//
-	ProductName *string                        `json:"product_name,omitempty"`
-	Status      *DpaDetailGetV2FilteringStatus `json:"status,omitempty"`
+	ProductName *string `json:"product_name,omitempty"`
+	//
+	SpuId  *string                        `json:"spu_id,omitempty"`
+	Status *DpaDetailGetV2FilteringStatus `json:"status,omitempty"`
 }

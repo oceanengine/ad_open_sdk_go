@@ -77,8 +77,10 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	// 任务预算（元），只能是10000-1000000元之间的整数
 	StarTaskBudget *float64 `json:"star_task_budget,omitempty"`
 	// 任务创建时间，格式YYYY-MM-DD
-	StarTaskCreateTime     *string                                              `json:"star_task_create_time,omitempty"`
-	StarTaskExternalAction *StardeliveryTaskDetailV30DataStarTaskExternalAction `json:"star_task_external_action,omitempty"`
+	StarTaskCreateTime *string `json:"star_task_create_time,omitempty"`
+	// 服务商延长后的实际投稿截止时间
+	StarTaskDelayedPostEndTime *string                                              `json:"star_task_delayed_post_end_time,omitempty"`
+	StarTaskExternalAction     *StardeliveryTaskDetailV30DataStarTaskExternalAction `json:"star_task_external_action,omitempty"`
 	// 星广联投任务ID
 	StarTaskId *int64 `json:"star_task_id,omitempty"`
 	// 任务内介绍文案

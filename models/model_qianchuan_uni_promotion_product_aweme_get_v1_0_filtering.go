@@ -12,6 +12,8 @@ package models
 
 // QianchuanUniPromotionProductAwemeGetV10Filtering
 type QianchuanUniPromotionProductAwemeGetV10Filtering struct {
+	// 是否只查看未投放商品
+	CreateRoi2LimitProduct *bool `json:"create_roi2_limit_product,omitempty"`
 	//
 	ProductIds []int64 `json:"product_ids,omitempty"`
 	// 支持根据商品名称模糊搜索

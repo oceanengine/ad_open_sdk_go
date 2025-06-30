@@ -15,8 +15,8 @@ type ReportLiveRoomAnalysisGetV2OrderType string
 
 // List of report_live_room_analysis_get_v2_order_type
 const (
-	ASC_ReportLiveRoomAnalysisGetV2OrderType  ReportLiveRoomAnalysisGetV2OrderType = "ASC"
 	DESC_ReportLiveRoomAnalysisGetV2OrderType ReportLiveRoomAnalysisGetV2OrderType = "DESC"
+	ASC_ReportLiveRoomAnalysisGetV2OrderType  ReportLiveRoomAnalysisGetV2OrderType = "ASC"
 )
 
 // Ptr returns reference to report_live_room_analysis_get_v2_order_type value

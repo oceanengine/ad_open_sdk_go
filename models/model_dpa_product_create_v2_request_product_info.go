@@ -55,7 +55,8 @@ type DpaProductCreateV2RequestProductInfo struct {
 	Province       []string                                            `json:"province,omitempty"`
 	ShopKeeperInfo *DpaProductCreateV2RequestProductInfoShopKeeperInfo `json:"shop_keeper_info,omitempty"`
 	//
-	SpuId *string `json:"spu_id,omitempty"`
+	SpuId     *string                                 `json:"spu_id,omitempty"`
+	SpuSource *DpaProductCreateV2ProductInfoSpuSource `json:"spu_source,omitempty"`
 	//
 	SubCategory *string `json:"sub_category,omitempty"`
 	//

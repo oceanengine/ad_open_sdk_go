@@ -16,8 +16,8 @@ type ToolsAppManagementExtendPackageUpdateV2Mode string
 // List of tools_app_management_extend_package_update_v2_mode
 const (
 	LIST_ToolsAppManagementExtendPackageUpdateV2Mode      ToolsAppManagementExtendPackageUpdateV2Mode = "List"
-	ALL_ToolsAppManagementExtendPackageUpdateV2Mode       ToolsAppManagementExtendPackageUpdateV2Mode = "All"
 	CUSTOMIZE_ToolsAppManagementExtendPackageUpdateV2Mode ToolsAppManagementExtendPackageUpdateV2Mode = "Customize"
+	ALL_ToolsAppManagementExtendPackageUpdateV2Mode       ToolsAppManagementExtendPackageUpdateV2Mode = "All"
 )
 
 // Ptr returns reference to tools_app_management_extend_package_update_v2_mode value

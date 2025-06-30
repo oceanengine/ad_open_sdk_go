@@ -31,6 +31,10 @@ type ProjectListV30Filtering struct {
 	//
 	ProjectCreateTime *string `json:"project_create_time,omitempty"`
 	//
+	ProjectModifyEndTime *string `json:"project_modify_end_time,omitempty"`
+	//
+	ProjectModifyStartTime *string `json:"project_modify_start_time,omitempty"`
+	//
 	ProjectModifyTime      *string                                        `json:"project_modify_time,omitempty"`
 	StarAutoDeliverySwitch *ProjectListV30FilteringStarAutoDeliverySwitch `json:"star_auto_delivery_switch,omitempty"`
 	StarDeliveryType       *ProjectListV30FilteringStarDeliveryType       `json:"star_delivery_type,omitempty"`

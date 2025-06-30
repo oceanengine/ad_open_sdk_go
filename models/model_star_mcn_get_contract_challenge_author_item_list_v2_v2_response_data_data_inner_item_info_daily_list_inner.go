@@ -20,6 +20,10 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerItemInfoD
 	AuthorAmountIap *int64 `json:"author_amount_iap,omitempty"`
 	// 达人预估广告消耗收益
 	AuthorCostAdReward *int64 `json:"author_cost_ad_reward,omitempty"`
+	// 达人预估cpa收益
+	AuthorEstAmountCpa *int64 `json:"author_est_amount_cpa,omitempty"`
+	// 达人预估cps收益
+	AuthorEstAmountCps *int64 `json:"author_est_amount_cps,omitempty"`
 	// 达人 预估 除广告消耗收益之外的收益
 	AuthorEstAmountNonAd *int64 `json:"author_est_amount_non_ad,omitempty"`
 	// 达人已结算广告消耗收益
@@ -34,6 +38,10 @@ type StarMcnGetContractChallengeAuthorItemListV2V2ResponseDataDataInnerItemInfoD
 	ProviderCostAdReward *int64 `json:"provider_cost_ad_reward,omitempty"`
 	// 服务商预估收益
 	ProviderEstAmount *int64 `json:"provider_est_amount,omitempty"`
+	// 服务商预估cpa收益
+	ProviderEstAmountCpa *int64 `json:"provider_est_amount_cpa,omitempty"`
+	// 服务商预估cps收益
+	ProviderEstAmountCps *int64 `json:"provider_est_amount_cps,omitempty"`
 	// 服务商预估收益iaa
 	ProviderEstAmountIaa *int64 `json:"provider_est_amount_iaa,omitempty"`
 	// 服务商预估收益iap

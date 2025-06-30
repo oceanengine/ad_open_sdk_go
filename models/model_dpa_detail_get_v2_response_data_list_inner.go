@@ -61,7 +61,8 @@ type DpaDetailGetV2ResponseDataListInner struct {
 	Province       []string                                           `json:"province,omitempty"`
 	ShopKeeperInfo *DpaDetailGetV2ResponseDataListInnerShopKeeperInfo `json:"shop_keeper_info,omitempty"`
 	//
-	SpuId *string `json:"spu_id,omitempty"`
+	SpuId     *string                          `json:"spu_id,omitempty"`
+	SpuSource *DpaDetailGetV2DataListSpuSource `json:"spu_source,omitempty"`
 	//
 	Status *int32 `json:"status,omitempty"`
 	//

@@ -23,7 +23,6 @@ type PromotionUpdateV30RequestPromotionMaterials struct {
 	CarouselMaterialList []*PromotionUpdateV30RequestPromotionMaterialsCarouselMaterialListInner `json:"carousel_material_list,omitempty"`
 	//
 	ComponentMaterialList []*PromotionUpdateV30RequestPromotionMaterialsComponentMaterialListInner `json:"component_material_list,omitempty"`
-	DecorationMaterial    *PromotionUpdateV30RequestPromotionMaterialsDecorationMaterial           `json:"decoration_material,omitempty"`
 	DynamicCreativeSwitch *PromotionUpdateV30PromotionMaterialsDynamicCreativeSwitch               `json:"dynamic_creative_switch,omitempty"`
 	//
 	ExternalUrlField *string `json:"external_url_field,omitempty"`
@@ -42,7 +41,8 @@ type PromotionUpdateV30RequestPromotionMaterials struct {
 	//
 	OpenUrlParams *string `json:"open_url_params,omitempty"`
 	//
-	OpenUrls []string `json:"open_urls,omitempty"`
+	OpenUrls           []string                                                `json:"open_urls,omitempty"`
+	OriginalVideoTitle *PromotionUpdateV30PromotionMaterialsOriginalVideoTitle `json:"original_video_title,omitempty"`
 	//
 	PlayableUrlMaterialList []string `json:"playable_url_material_list,omitempty"`
 	//

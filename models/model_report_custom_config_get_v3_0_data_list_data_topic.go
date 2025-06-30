@@ -19,6 +19,7 @@ const (
 	BIDWORD_DATA_ReportCustomConfigGetV30DataListDataTopic         ReportCustomConfigGetV30DataListDataTopic = "BIDWORD_DATA"
 	CREATIVE_DATA_ReportCustomConfigGetV30DataListDataTopic        ReportCustomConfigGetV30DataListDataTopic = "CREATIVE_DATA"
 	DMP_DATA_ReportCustomConfigGetV30DataListDataTopic             ReportCustomConfigGetV30DataListDataTopic = "DMP_DATA"
+	DPA_VIDEO_DATA_ReportCustomConfigGetV30DataListDataTopic       ReportCustomConfigGetV30DataListDataTopic = "DPA_VIDEO_DATA"
 	MATERIAL_DATA_ReportCustomConfigGetV30DataListDataTopic        ReportCustomConfigGetV30DataListDataTopic = "MATERIAL_DATA"
 	ONE_KEY_BOOST_DATA_ReportCustomConfigGetV30DataListDataTopic   ReportCustomConfigGetV30DataListDataTopic = "ONE_KEY_BOOST_DATA"
 	PRODUCT_DATA_ReportCustomConfigGetV30DataListDataTopic         ReportCustomConfigGetV30DataListDataTopic = "PRODUCT_DATA"

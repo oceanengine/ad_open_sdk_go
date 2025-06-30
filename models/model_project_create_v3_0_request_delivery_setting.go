@@ -42,7 +42,5 @@ type ProjectCreateV30RequestDeliverySetting struct {
 	//
 	SevenRoiGoal *float64 `json:"seven_roi_goal,omitempty"`
 	//
-	ShopMultiRoiGoals []*ProjectCreateV30RequestDeliverySettingShopMultiRoiGoalsInner `json:"shop_multi_roi_goals,omitempty"`
-	//
 	StartTime *string `json:"start_time,omitempty"`
 }

@@ -29,6 +29,7 @@ type ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest struct {
 	awemeId      *int64
 	filtering    *QianchuanUniPromotionProductAwemeGetV10Filtering
 	cursor       *int64
+	platform     *QianchuanUniPromotionProductAwemeGetV10Platform
 }
 
 func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest {
@@ -51,6 +52,12 @@ func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Filtering(
 // 页码游标值
 func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Cursor(cursor int64) *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest {
 	r.cursor = &cursor
+	return r
+}
+
+// 0-Unknown 1-PC 2-随心推 不传默认PC
+func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Platform(platform QianchuanUniPromotionProductAwemeGetV10Platform) *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest {
+	r.platform = &platform
 	return r
 }
 
@@ -122,6 +129,9 @@ func (a *QianchuanUniPromotionProductAwemeGetV10ApiService) getExecute(r *ApiOpe
 	parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	if r.cursor != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "cursor", r.cursor)
+	}
+	if r.platform != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "platform", r.platform)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

@@ -48,6 +48,8 @@ type ReportStardeliveryTaskDataGetV30ResponseDataListInner struct {
 	StarTaskAlbumName  *string                                                     `json:"star_task_album_name,omitempty"`
 	StarTaskAnchorType *ReportStardeliveryTaskDataGetV30DataListStarTaskAnchorType `json:"star_task_anchor_type,omitempty"`
 	//
+	StarTaskApproachingBudgetLimitIsvCount *int64 `json:"star_task_approaching_budget_limit_isv_count,omitempty"`
+	//
 	StarTaskBudget *float64 `json:"star_task_budget,omitempty"`
 	//
 	StarTaskBudgetCostRate *float64 `json:"star_task_budget_cost_rate,omitempty"`

@@ -16,6 +16,7 @@ type StardeliveryTaskListV30DataListStarTaskSubStatus string
 // List of stardelivery_task_list_v3.0_data_list_star_task_sub_status
 const (
 	AWAITING_ISV_ACCEPT_StardeliveryTaskListV30DataListStarTaskSubStatus    StardeliveryTaskListV30DataListStarTaskSubStatus = "AWAITING_ISV_ACCEPT"
+	AWAITING_ISV_SELECTED_StardeliveryTaskListV30DataListStarTaskSubStatus  StardeliveryTaskListV30DataListStarTaskSubStatus = "AWAITING_ISV_SELECTED"
 	CALCULATING_COSTS_StardeliveryTaskListV30DataListStarTaskSubStatus      StardeliveryTaskListV30DataListStarTaskSubStatus = "CALCULATING_COSTS"
 	NO_ISV_ACCEPT_StardeliveryTaskListV30DataListStarTaskSubStatus          StardeliveryTaskListV30DataListStarTaskSubStatus = "NO_ISV_ACCEPT"
 	REJECTED_StardeliveryTaskListV30DataListStarTaskSubStatus               StardeliveryTaskListV30DataListStarTaskSubStatus = "REJECTED"

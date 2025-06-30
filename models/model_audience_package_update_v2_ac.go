@@ -15,11 +15,11 @@ type AudiencePackageUpdateV2Ac string
 
 // List of audience_package_update_v2_ac
 const (
-	Enum_3_G_AudiencePackageUpdateV2Ac AudiencePackageUpdateV2Ac = "3G"
-	Enum_2_G_AudiencePackageUpdateV2Ac AudiencePackageUpdateV2Ac = "2G"
-	WIFI_AudiencePackageUpdateV2Ac     AudiencePackageUpdateV2Ac = "WIFI"
-	Enum_4_G_AudiencePackageUpdateV2Ac AudiencePackageUpdateV2Ac = "4G"
 	Enum_5_G_AudiencePackageUpdateV2Ac AudiencePackageUpdateV2Ac = "5G"
+	WIFI_AudiencePackageUpdateV2Ac     AudiencePackageUpdateV2Ac = "WIFI"
+	Enum_2_G_AudiencePackageUpdateV2Ac AudiencePackageUpdateV2Ac = "2G"
+	Enum_4_G_AudiencePackageUpdateV2Ac AudiencePackageUpdateV2Ac = "4G"
+	Enum_3_G_AudiencePackageUpdateV2Ac AudiencePackageUpdateV2Ac = "3G"
 )
 
 // Ptr returns reference to audience_package_update_v2_ac value

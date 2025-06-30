@@ -13,7 +13,8 @@ package models
 // ToolsAdPreviewQrcodeGetV30ResponseDataData
 type ToolsAdPreviewQrcodeGetV30ResponseDataData struct {
 	//
-	AdvertiserId int64 `json:"advertiser_id"`
+	AdvertiserId int64                                       `json:"advertiser_id"`
+	Generate     *ToolsAdPreviewQrcodeGetV30DataDataGenerate `json:"generate,omitempty"`
 	//
 	IdType string `json:"id_type"`
 	//

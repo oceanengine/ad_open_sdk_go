@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.58
+// APIClient manages communication with the Oceanengine Open Api API v1.1.59
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -993,11 +993,29 @@ type APIClient struct {
 
 	QianchuanAwemeSuggestRoiGoalV10Api *QianchuanAwemeSuggestRoiGoalV10ApiService
 
+	QianchuanAwemeUniPromotionEstimateEffectV10Api *QianchuanAwemeUniPromotionEstimateEffectV10ApiService
+
+	QianchuanAwemeUniPromotionOrderCreateV10Api *QianchuanAwemeUniPromotionOrderCreateV10ApiService
+
+	QianchuanAwemeUniPromotionOrderDetailV10Api *QianchuanAwemeUniPromotionOrderDetailV10ApiService
+
+	QianchuanAwemeUniPromotionOrderGetV10Api *QianchuanAwemeUniPromotionOrderGetV10ApiService
+
+	QianchuanAwemeUniPromotionReportV10Api *QianchuanAwemeUniPromotionReportV10ApiService
+
+	QianchuanAwemeUniPromotionSuggestRoiV10Api *QianchuanAwemeUniPromotionSuggestRoiV10ApiService
+
+	QianchuanAwemeUniPromotionSuggestV10Api *QianchuanAwemeUniPromotionSuggestV10ApiService
+
 	QianchuanAwemeVideoGetV10Api *QianchuanAwemeVideoGetV10ApiService
 
 	QianchuanBatchCampaignStatusUpdateV10Api *QianchuanBatchCampaignStatusUpdateV10ApiService
 
 	QianchuanBrandAuthorizedGetV10Api *QianchuanBrandAuthorizedGetV10ApiService
+
+	QianchuanBrandReportAdGetV10Api *QianchuanBrandReportAdGetV10ApiService
+
+	QianchuanBrandReportAdvertiserGetV10Api *QianchuanBrandReportAdvertiserGetV10ApiService
 
 	QianchuanCampaignCreateV10Api *QianchuanCampaignCreateV10ApiService
 
@@ -1433,6 +1451,8 @@ type APIClient struct {
 
 	StarDemanderDemanderGetBindShareCodeV2Api *StarDemanderDemanderGetBindShareCodeV2ApiService
 
+	StarDemanderGetRegisteredIpActsV2Api *StarDemanderGetRegisteredIpActsV2ApiService
+
 	StarDemanderUploadCpsTaskSalesV2Api *StarDemanderUploadCpsTaskSalesV2ApiService
 
 	StarFeCommonServiceTalentDayGetCheckInCodeV2Api *StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService
@@ -1747,7 +1767,11 @@ type APIClient struct {
 
 	ToolsClueSmartPhoneGetV2Api *ToolsClueSmartPhoneGetV2ApiService
 
+	ToolsClueWebrtcCreateV2V30Api *ToolsClueWebrtcCreateV2V30ApiService
+
 	ToolsClueWebrtcTokenGetV2Api *ToolsClueWebrtcTokenGetV2ApiService
+
+	ToolsClueWebrtcTokenGetV2V30Api *ToolsClueWebrtcTokenGetV2V30ApiService
 
 	ToolsCommentGetV30Api *ToolsCommentGetV30ApiService
 
@@ -2543,9 +2567,18 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanAwemeReportOrderGetV10Api = (*QianchuanAwemeReportOrderGetV10ApiService)(&c.common)
 	c.QianchuanAwemeSuggestBidV10Api = (*QianchuanAwemeSuggestBidV10ApiService)(&c.common)
 	c.QianchuanAwemeSuggestRoiGoalV10Api = (*QianchuanAwemeSuggestRoiGoalV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionEstimateEffectV10Api = (*QianchuanAwemeUniPromotionEstimateEffectV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionOrderCreateV10Api = (*QianchuanAwemeUniPromotionOrderCreateV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionOrderDetailV10Api = (*QianchuanAwemeUniPromotionOrderDetailV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionOrderGetV10Api = (*QianchuanAwemeUniPromotionOrderGetV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionReportV10Api = (*QianchuanAwemeUniPromotionReportV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionSuggestRoiV10Api = (*QianchuanAwemeUniPromotionSuggestRoiV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionSuggestV10Api = (*QianchuanAwemeUniPromotionSuggestV10ApiService)(&c.common)
 	c.QianchuanAwemeVideoGetV10Api = (*QianchuanAwemeVideoGetV10ApiService)(&c.common)
 	c.QianchuanBatchCampaignStatusUpdateV10Api = (*QianchuanBatchCampaignStatusUpdateV10ApiService)(&c.common)
 	c.QianchuanBrandAuthorizedGetV10Api = (*QianchuanBrandAuthorizedGetV10ApiService)(&c.common)
+	c.QianchuanBrandReportAdGetV10Api = (*QianchuanBrandReportAdGetV10ApiService)(&c.common)
+	c.QianchuanBrandReportAdvertiserGetV10Api = (*QianchuanBrandReportAdvertiserGetV10ApiService)(&c.common)
 	c.QianchuanCampaignCreateV10Api = (*QianchuanCampaignCreateV10ApiService)(&c.common)
 	c.QianchuanCampaignListGetV10Api = (*QianchuanCampaignListGetV10ApiService)(&c.common)
 	c.QianchuanCampaignUpdateV10Api = (*QianchuanCampaignUpdateV10ApiService)(&c.common)
@@ -2763,6 +2796,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarDemandSearchWordModifyV2Api = (*StarDemandSearchWordModifyV2ApiService)(&c.common)
 	c.StarDemanderDemanderGetAuthorBindInfoV2Api = (*StarDemanderDemanderGetAuthorBindInfoV2ApiService)(&c.common)
 	c.StarDemanderDemanderGetBindShareCodeV2Api = (*StarDemanderDemanderGetBindShareCodeV2ApiService)(&c.common)
+	c.StarDemanderGetRegisteredIpActsV2Api = (*StarDemanderGetRegisteredIpActsV2ApiService)(&c.common)
 	c.StarDemanderUploadCpsTaskSalesV2Api = (*StarDemanderUploadCpsTaskSalesV2ApiService)(&c.common)
 	c.StarFeCommonServiceTalentDayGetCheckInCodeV2Api = (*StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService)(&c.common)
 	c.StarFeCommonServiceTalentDayJudgeCheckedInV2Api = (*StarFeCommonServiceTalentDayJudgeCheckedInV2ApiService)(&c.common)
@@ -2920,7 +2954,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsClueRobotTaskCancelV2Api = (*ToolsClueRobotTaskCancelV2ApiService)(&c.common)
 	c.ToolsClueRobotTaskCreateV2Api = (*ToolsClueRobotTaskCreateV2ApiService)(&c.common)
 	c.ToolsClueSmartPhoneGetV2Api = (*ToolsClueSmartPhoneGetV2ApiService)(&c.common)
+	c.ToolsClueWebrtcCreateV2V30Api = (*ToolsClueWebrtcCreateV2V30ApiService)(&c.common)
 	c.ToolsClueWebrtcTokenGetV2Api = (*ToolsClueWebrtcTokenGetV2ApiService)(&c.common)
+	c.ToolsClueWebrtcTokenGetV2V30Api = (*ToolsClueWebrtcTokenGetV2V30ApiService)(&c.common)
 	c.ToolsCommentGetV30Api = (*ToolsCommentGetV30ApiService)(&c.common)
 	c.ToolsCommentHideV30Api = (*ToolsCommentHideV30ApiService)(&c.common)
 	c.ToolsCommentMetricsGetV30Api = (*ToolsCommentMetricsGetV30ApiService)(&c.common)

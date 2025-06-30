@@ -27,6 +27,7 @@ type ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequestExample struct {
 	AwemeId      int64                                            `json:"aweme_id"`
 	Filtering    QianchuanUniPromotionProductAwemeGetV10Filtering `json:"filtering"`
 	Cursor       int64                                            `json:"cursor,omitempty"`
+	Platform     QianchuanUniPromotionProductAwemeGetV10Platform  `json:"platform,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/qianchuan/uni_promotion/product/aweme/get/ Get
@@ -48,7 +49,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanUniPromotionProductAwemeGetV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).AwemeId(request.AwemeId).Filtering(request.Filtering).Cursor(request.Cursor).
+		AdvertiserId(request.AdvertiserId).AwemeId(request.AwemeId).Filtering(request.Filtering).Cursor(request.Cursor).Platform(request.Platform).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

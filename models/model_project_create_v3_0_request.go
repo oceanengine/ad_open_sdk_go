@@ -38,8 +38,6 @@ type ProjectCreateV30Request struct {
 	//
 	DownloadUrl *string                    `json:"download_url,omitempty"`
 	DpaAdtype   *ProjectCreateV30DpaAdtype `json:"dpa_adtype,omitempty"`
-	// 商品投放范围，分类列表，由【DPA商品广告-获取DPA分类】 得到
-	DpaCategories []int64 `json:"dpa_categories,omitempty"`
 	// 自定义筛选条件（商品投放条件）。用于圈定商品投放范围，结合商品库字段搭配判断条件，圈定商品投放范围。获取商品库元信息-商品广告-商业开放平台
 	DpaProductTarget []*ProjectCreateV30RequestDpaProductTargetInner `json:"dpa_product_target,omitempty"`
 	//

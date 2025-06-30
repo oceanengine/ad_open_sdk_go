@@ -13,8 +13,6 @@ package models
 // ProjectCreateV30RequestRelatedProductProductsInner struct for ProjectCreateV30RequestRelatedProductProductsInner
 type ProjectCreateV30RequestRelatedProductProductsInner struct {
 	//
-	AssetId *int64 `json:"asset_id,omitempty"`
-	//
 	ProductId *string `json:"product_id,omitempty"`
 	//
 	ProductPlatformId *int64 `json:"product_platform_id,omitempty"`

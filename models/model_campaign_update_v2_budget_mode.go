@@ -15,9 +15,9 @@ type CampaignUpdateV2BudgetMode string
 
 // List of campaign_update_v2_budget_mode
 const (
-	BUDGET_MODE_DAY_CampaignUpdateV2BudgetMode      CampaignUpdateV2BudgetMode = "BUDGET_MODE_DAY"
 	BUDGET_MODE_TOTAL_CampaignUpdateV2BudgetMode    CampaignUpdateV2BudgetMode = "BUDGET_MODE_TOTAL"
 	BUDGET_MODE_INFINITE_CampaignUpdateV2BudgetMode CampaignUpdateV2BudgetMode = "BUDGET_MODE_INFINITE"
+	BUDGET_MODE_DAY_CampaignUpdateV2BudgetMode      CampaignUpdateV2BudgetMode = "BUDGET_MODE_DAY"
 )
 
 // Ptr returns reference to campaign_update_v2_budget_mode value

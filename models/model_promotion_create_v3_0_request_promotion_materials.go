@@ -23,7 +23,6 @@ type PromotionCreateV30RequestPromotionMaterials struct {
 	CarouselMaterialList []*PromotionCreateV30RequestPromotionMaterialsCarouselMaterialListInner `json:"carousel_material_list,omitempty"`
 	//
 	ComponentMaterialList []*PromotionCreateV30RequestPromotionMaterialsComponentMaterialListInner `json:"component_material_list,omitempty"`
-	DecorationMaterial    *PromotionCreateV30RequestPromotionMaterialsDecorationMaterial           `json:"decoration_material,omitempty"`
 	DynamicCreativeSwitch *PromotionCreateV30PromotionMaterialsDynamicCreativeSwitch               `json:"dynamic_creative_switch,omitempty"`
 	// 落地页链接字段选择，当params_type为DPA时必填
 	ExternalUrlField *string `json:"external_url_field,omitempty"`

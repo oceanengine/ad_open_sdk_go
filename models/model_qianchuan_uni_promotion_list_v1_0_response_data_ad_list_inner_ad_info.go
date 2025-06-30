@@ -13,8 +13,9 @@ package models
 // QianchuanUniPromotionListV10ResponseDataAdListInnerAdInfo
 type QianchuanUniPromotionListV10ResponseDataAdListInnerAdInfo struct {
 	//
-	Budget     *float64                                                `json:"budget,omitempty"`
-	BudgetMode *QianchuanUniPromotionListV10DataAdListAdInfoBudgetMode `json:"budget_mode,omitempty"`
+	Budget         *float64                                                                 `json:"budget,omitempty"`
+	BudgetMode     *QianchuanUniPromotionListV10DataAdListAdInfoBudgetMode                  `json:"budget_mode,omitempty"`
+	CompensateInfo *QianchuanUniPromotionListV10ResponseDataAdListInnerAdInfoCompensateInfo `json:"compensate_info,omitempty"`
 	//
 	CreateTime *string `json:"create_time,omitempty"`
 	//

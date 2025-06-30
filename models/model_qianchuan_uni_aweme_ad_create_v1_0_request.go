@@ -15,7 +15,7 @@ type QianchuanUniAwemeAdCreateV10Request struct {
 	//
 	AdvertiserId int64 `json:"advertiser_id"`
 	// 抖音号id
-	AwemeId         int64                                               `json:"aweme_id"`
+	AwemeId         *int64                                              `json:"aweme_id,omitempty"`
 	CreativeSetting *QianchuanUniAwemeAdCreateV10RequestCreativeSetting `json:"creative_setting,omitempty"`
 	DeliverySetting QianchuanUniAwemeAdCreateV10RequestDeliverySetting  `json:"delivery_setting"`
 	MarketingGoal   QianchuanUniAwemeAdCreateV10MarketingGoal           `json:"marketing_goal"`
