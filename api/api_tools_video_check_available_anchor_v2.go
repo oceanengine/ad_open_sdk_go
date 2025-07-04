@@ -25,14 +25,14 @@ type ToolsVideoCheckAvailableAnchorV2ApiService service
 type ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest struct {
 	ctx            context.Context
 	ApiService     *ToolsVideoCheckAvailableAnchorV2ApiService
-	advertiserId   *string
+	advertiserId   *int64
 	itemIds        *[]int64
 	landingType    *ToolsVideoCheckAvailableAnchorV2LandingType
 	externalAction *ToolsVideoCheckAvailableAnchorV2ExternalAction
 }
 
 // 广告主ID
-func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) AdvertiserId(advertiserId string) *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
+func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
 	r.advertiserId = &advertiserId
 	return r
 }
@@ -107,6 +107,9 @@ func (a *ToolsVideoCheckAvailableAnchorV2ApiService) getExecute(r *ApiOpenApi2To
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {
 		return localVarReturnValue, nil, ReportError("advertiserId is required and must be specified")
+	}
+	if *r.advertiserId < 1 {
+		return localVarReturnValue, nil, ReportError("advertiserId must be greater than 1")
 	}
 	if r.itemIds == nil {
 		return localVarReturnValue, nil, ReportError("itemIds is required and must be specified")

@@ -1,5 +1,5 @@
 /*
-API version: 1.1.59
+API version: 1.1.60
 */
 package ad_open_sdk_go
 
@@ -189,6 +189,10 @@ func (c *Client) AgentAdvCostReportListQueryV2Api() *api.AgentAdvCostReportListQ
 
 func (c *Client) AgentAdvPerenniallyPunishHistoryQueryV2Api() *api.AgentAdvPerenniallyPunishHistoryQueryV2ApiService {
 	return c.ApiClient.AgentAdvPerenniallyPunishHistoryQueryV2Api
+}
+
+func (c *Client) AgentAdvRechargeRechargeRecordV2Api() *api.AgentAdvRechargeRechargeRecordV2ApiService {
+	return c.ApiClient.AgentAdvRechargeRechargeRecordV2Api
 }
 
 func (c *Client) AgentAdvertiserAssignV2Api() *api.AgentAdvertiserAssignV2ApiService {
@@ -1915,6 +1919,10 @@ func (c *Client) QianchuanAwemeUniPromotionEstimateEffectV10Api() *api.Qianchuan
 	return c.ApiClient.QianchuanAwemeUniPromotionEstimateEffectV10Api
 }
 
+func (c *Client) QianchuanAwemeUniPromotionOrderBudgetAddV10Api() *api.QianchuanAwemeUniPromotionOrderBudgetAddV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionOrderBudgetAddV10Api
+}
+
 func (c *Client) QianchuanAwemeUniPromotionOrderCreateV10Api() *api.QianchuanAwemeUniPromotionOrderCreateV10ApiService {
 	return c.ApiClient.QianchuanAwemeUniPromotionOrderCreateV10Api
 }
@@ -1925,6 +1933,10 @@ func (c *Client) QianchuanAwemeUniPromotionOrderDetailV10Api() *api.QianchuanAwe
 
 func (c *Client) QianchuanAwemeUniPromotionOrderGetV10Api() *api.QianchuanAwemeUniPromotionOrderGetV10ApiService {
 	return c.ApiClient.QianchuanAwemeUniPromotionOrderGetV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api() *api.QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api
 }
 
 func (c *Client) QianchuanAwemeUniPromotionReportV10Api() *api.QianchuanAwemeUniPromotionReportV10ApiService {
@@ -3401,6 +3413,10 @@ func (c *Client) ToolsClueFormGetV2Api() *api.ToolsClueFormGetV2ApiService {
 
 func (c *Client) ToolsClueGetV2Api() *api.ToolsClueGetV2ApiService {
 	return c.ApiClient.ToolsClueGetV2Api
+}
+
+func (c *Client) ToolsClueInfoGetV2Api() *api.ToolsClueInfoGetV2ApiService {
+	return c.ApiClient.ToolsClueInfoGetV2Api
 }
 
 func (c *Client) ToolsClueInfoUpdateV2Api() *api.ToolsClueInfoUpdateV2ApiService {

@@ -16,11 +16,11 @@ type ToolsRubeexGetV2FilteringProjectVersionLifecycle string
 // List of tools_rubeex_get_v2_filtering_project_version_lifecycle
 const (
 	EXPORTED_ToolsRubeexGetV2FilteringProjectVersionLifecycle      ToolsRubeexGetV2FilteringProjectVersionLifecycle = "EXPORTED"
-	AUDIT_SUCCESS_ToolsRubeexGetV2FilteringProjectVersionLifecycle ToolsRubeexGetV2FilteringProjectVersionLifecycle = "AUDIT_SUCCESS"
-	SYNC_AD_ToolsRubeexGetV2FilteringProjectVersionLifecycle       ToolsRubeexGetV2FilteringProjectVersionLifecycle = "SYNC_AD"
-	LAUNCHED_ToolsRubeexGetV2FilteringProjectVersionLifecycle      ToolsRubeexGetV2FilteringProjectVersionLifecycle = "LAUNCHED"
 	RELAT_PLAN_ToolsRubeexGetV2FilteringProjectVersionLifecycle    ToolsRubeexGetV2FilteringProjectVersionLifecycle = "RELAT_PLAN"
 	AUDIT_FAIL_ToolsRubeexGetV2FilteringProjectVersionLifecycle    ToolsRubeexGetV2FilteringProjectVersionLifecycle = "AUDIT_FAIL"
+	SYNC_AD_ToolsRubeexGetV2FilteringProjectVersionLifecycle       ToolsRubeexGetV2FilteringProjectVersionLifecycle = "SYNC_AD"
+	LAUNCHED_ToolsRubeexGetV2FilteringProjectVersionLifecycle      ToolsRubeexGetV2FilteringProjectVersionLifecycle = "LAUNCHED"
+	AUDIT_SUCCESS_ToolsRubeexGetV2FilteringProjectVersionLifecycle ToolsRubeexGetV2FilteringProjectVersionLifecycle = "AUDIT_SUCCESS"
 )
 
 // Ptr returns reference to tools_rubeex_get_v2_filtering_project_version_lifecycle value

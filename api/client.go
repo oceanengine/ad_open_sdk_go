@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.59
+// APIClient manages communication with the Oceanengine Open Api API v1.1.60
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -132,6 +132,8 @@ type APIClient struct {
 	AgentAdvCostReportListQueryV2Api *AgentAdvCostReportListQueryV2ApiService
 
 	AgentAdvPerenniallyPunishHistoryQueryV2Api *AgentAdvPerenniallyPunishHistoryQueryV2ApiService
+
+	AgentAdvRechargeRechargeRecordV2Api *AgentAdvRechargeRechargeRecordV2ApiService
 
 	AgentAdvertiserAssignV2Api *AgentAdvertiserAssignV2ApiService
 
@@ -995,11 +997,15 @@ type APIClient struct {
 
 	QianchuanAwemeUniPromotionEstimateEffectV10Api *QianchuanAwemeUniPromotionEstimateEffectV10ApiService
 
+	QianchuanAwemeUniPromotionOrderBudgetAddV10Api *QianchuanAwemeUniPromotionOrderBudgetAddV10ApiService
+
 	QianchuanAwemeUniPromotionOrderCreateV10Api *QianchuanAwemeUniPromotionOrderCreateV10ApiService
 
 	QianchuanAwemeUniPromotionOrderDetailV10Api *QianchuanAwemeUniPromotionOrderDetailV10ApiService
 
 	QianchuanAwemeUniPromotionOrderGetV10Api *QianchuanAwemeUniPromotionOrderGetV10ApiService
+
+	QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api *QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService
 
 	QianchuanAwemeUniPromotionReportV10Api *QianchuanAwemeUniPromotionReportV10ApiService
 
@@ -1739,6 +1745,8 @@ type APIClient struct {
 
 	ToolsClueGetV2Api *ToolsClueGetV2ApiService
 
+	ToolsClueInfoGetV2Api *ToolsClueInfoGetV2ApiService
+
 	ToolsClueInfoUpdateV2Api *ToolsClueInfoUpdateV2ApiService
 
 	ToolsClueLifeCallbackV2Api *ToolsClueLifeCallbackV2ApiService
@@ -2137,6 +2145,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AgentAdvBrandListQueryV2Api = (*AgentAdvBrandListQueryV2ApiService)(&c.common)
 	c.AgentAdvCostReportListQueryV2Api = (*AgentAdvCostReportListQueryV2ApiService)(&c.common)
 	c.AgentAdvPerenniallyPunishHistoryQueryV2Api = (*AgentAdvPerenniallyPunishHistoryQueryV2ApiService)(&c.common)
+	c.AgentAdvRechargeRechargeRecordV2Api = (*AgentAdvRechargeRechargeRecordV2ApiService)(&c.common)
 	c.AgentAdvertiserAssignV2Api = (*AgentAdvertiserAssignV2ApiService)(&c.common)
 	c.AgentAdvertiserCopyV2Api = (*AgentAdvertiserCopyV2ApiService)(&c.common)
 	c.AgentAdvertiserInfoQueryV2Api = (*AgentAdvertiserInfoQueryV2ApiService)(&c.common)
@@ -2568,9 +2577,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanAwemeSuggestBidV10Api = (*QianchuanAwemeSuggestBidV10ApiService)(&c.common)
 	c.QianchuanAwemeSuggestRoiGoalV10Api = (*QianchuanAwemeSuggestRoiGoalV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionEstimateEffectV10Api = (*QianchuanAwemeUniPromotionEstimateEffectV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionOrderBudgetAddV10Api = (*QianchuanAwemeUniPromotionOrderBudgetAddV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionOrderCreateV10Api = (*QianchuanAwemeUniPromotionOrderCreateV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionOrderDetailV10Api = (*QianchuanAwemeUniPromotionOrderDetailV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionOrderGetV10Api = (*QianchuanAwemeUniPromotionOrderGetV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api = (*QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionReportV10Api = (*QianchuanAwemeUniPromotionReportV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionSuggestRoiV10Api = (*QianchuanAwemeUniPromotionSuggestRoiV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionSuggestV10Api = (*QianchuanAwemeUniPromotionSuggestV10ApiService)(&c.common)
@@ -2940,6 +2951,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsClueFormDetailV2Api = (*ToolsClueFormDetailV2ApiService)(&c.common)
 	c.ToolsClueFormGetV2Api = (*ToolsClueFormGetV2ApiService)(&c.common)
 	c.ToolsClueGetV2Api = (*ToolsClueGetV2ApiService)(&c.common)
+	c.ToolsClueInfoGetV2Api = (*ToolsClueInfoGetV2ApiService)(&c.common)
 	c.ToolsClueInfoUpdateV2Api = (*ToolsClueInfoUpdateV2ApiService)(&c.common)
 	c.ToolsClueLifeCallbackV2Api = (*ToolsClueLifeCallbackV2ApiService)(&c.common)
 	c.ToolsClueLifeGetV2Api = (*ToolsClueLifeGetV2ApiService)(&c.common)

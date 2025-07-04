@@ -15,10 +15,10 @@ type ToolsAppManagementUploadTaskListV2DataListStatus string
 
 // List of tools_app_management_upload_task_list_v2_data_list_status
 const (
-	FAILED_ToolsAppManagementUploadTaskListV2DataListStatus  ToolsAppManagementUploadTaskListV2DataListStatus = "FAILED"
+	WAITING_ToolsAppManagementUploadTaskListV2DataListStatus ToolsAppManagementUploadTaskListV2DataListStatus = "WAITING"
 	RUNNING_ToolsAppManagementUploadTaskListV2DataListStatus ToolsAppManagementUploadTaskListV2DataListStatus = "RUNNING"
 	SUCCESS_ToolsAppManagementUploadTaskListV2DataListStatus ToolsAppManagementUploadTaskListV2DataListStatus = "SUCCESS"
-	WAITING_ToolsAppManagementUploadTaskListV2DataListStatus ToolsAppManagementUploadTaskListV2DataListStatus = "WAITING"
+	FAILED_ToolsAppManagementUploadTaskListV2DataListStatus  ToolsAppManagementUploadTaskListV2DataListStatus = "FAILED"
 )
 
 // Ptr returns reference to tools_app_management_upload_task_list_v2_data_list_status value

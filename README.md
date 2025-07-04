@@ -247,6 +247,7 @@ Class | Method | HTTP request
 *AgentAdvBrandListQueryV2Api* | **OpenApi2AgentAdvBrandListQueryGet** | **Get** /open_api/2/agent/adv/brand/list/query/
 *AgentAdvCostReportListQueryV2Api* | **OpenApi2AgentAdvCostReportListQueryPost** | **Post** /open_api/2/agent/adv/cost_report/list/query/
 *AgentAdvPerenniallyPunishHistoryQueryV2Api* | **OpenApi2AgentAdvPerenniallyPunishHistoryQueryGet** | **Get** /open_api/2/agent/adv/perennially/punish_history/query/
+*AgentAdvRechargeRechargeRecordV2Api* | **OpenApi2AgentAdvRechargeRechargeRecordGet** | **Get** /open_api/2/agent/adv/recharge/recharge_record/
 *AgentAdvertiserAssignV2Api* | **OpenApi2AgentAdvertiserAssignPost** | **Post** /open_api/2/agent/advertiser/assign/
 *AgentAdvertiserCopyV2Api* | **OpenApi2AgentAdvertiserCopyPost** | **Post** /open_api/2/agent/advertiser/copy/
 *AgentAdvertiserInfoQueryV2Api* | **OpenApi2AgentAdvertiserInfoQueryGet** | **Get** /open_api/2/agent/advertiser_info/query/
@@ -678,9 +679,11 @@ Class | Method | HTTP request
 *QianchuanAwemeSuggestBidV10Api* | **OpenApiV10QianchuanAwemeSuggestBidGet** | **Get** /open_api/v1.0/qianchuan/aweme/suggest_bid/
 *QianchuanAwemeSuggestRoiGoalV10Api* | **OpenApiV10QianchuanAwemeSuggestRoiGoalGet** | **Get** /open_api/v1.0/qianchuan/aweme/suggest/roi/goal/
 *QianchuanAwemeUniPromotionEstimateEffectV10Api* | **OpenApiV10QianchuanAwemeUniPromotionEstimateEffectGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/estimate/effect/
+*QianchuanAwemeUniPromotionOrderBudgetAddV10Api* | **OpenApiV10QianchuanAwemeUniPromotionOrderBudgetAddPost** | **Post** /open_api/v1.0/qianchuan/aweme/uni_promotion/order/budget/add/
 *QianchuanAwemeUniPromotionOrderCreateV10Api* | **OpenApiV10QianchuanAwemeUniPromotionOrderCreatePost** | **Post** /open_api/v1.0/qianchuan/aweme/uni_promotion/order/create/
 *QianchuanAwemeUniPromotionOrderDetailV10Api* | **OpenApiV10QianchuanAwemeUniPromotionOrderDetailGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/order/detail/
 *QianchuanAwemeUniPromotionOrderGetV10Api* | **OpenApiV10QianchuanAwemeUniPromotionOrderGetGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/order/get/
+*QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api* | **OpenApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/order/suggest/delivery_time/get/
 *QianchuanAwemeUniPromotionReportV10Api* | **OpenApiV10QianchuanAwemeUniPromotionReportGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/report/
 *QianchuanAwemeUniPromotionSuggestRoiV10Api* | **OpenApiV10QianchuanAwemeUniPromotionSuggestRoiGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/suggest/roi/
 *QianchuanAwemeUniPromotionSuggestV10Api* | **OpenApiV10QianchuanAwemeUniPromotionSuggestGet** | **Get** /open_api/v1.0/qianchuan/aweme/uni_promotion/suggest/
@@ -1050,6 +1053,7 @@ Class | Method | HTTP request
 *ToolsClueFormDetailV2Api* | **OpenApi2ToolsClueFormDetailGet** | **Get** /open_api/2/tools/clue/form/detail/
 *ToolsClueFormGetV2Api* | **OpenApi2ToolsClueFormGetGet** | **Get** /open_api/2/tools/clue/form/get/
 *ToolsClueGetV2Api* | **OpenApi2ToolsClueGetGet** | **Get** /open_api/2/tools/clue/get/
+*ToolsClueInfoGetV2Api* | **OpenApi2ToolsClueInfoGetGet** | **Get** /open_api/2/tools/clue_info/get/
 *ToolsClueInfoUpdateV2Api* | **OpenApi2ToolsClueInfoUpdatePost** | **Post** /open_api/2/tools/clue/info/update/
 *ToolsClueLifeCallbackV2Api* | **OpenApi2ToolsClueLifeCallbackPost** | **Post** /open_api/2/tools/clue/life/callback/
 *ToolsClueLifeGetV2Api* | **OpenApi2ToolsClueLifeGetPost** | **Post** /open_api/2/tools/clue/life/get/

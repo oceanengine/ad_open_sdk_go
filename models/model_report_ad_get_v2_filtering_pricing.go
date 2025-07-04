@@ -16,11 +16,11 @@ type ReportAdGetV2FilteringPricing string
 // List of report_ad_get_v2_filtering_pricing
 const (
 	PRICING_CPA_ReportAdGetV2FilteringPricing  ReportAdGetV2FilteringPricing = "PRICING_CPA"
+	PRICING_ECPC_ReportAdGetV2FilteringPricing ReportAdGetV2FilteringPricing = "PRICING_ECPC"
+	PRICING_OCPM_ReportAdGetV2FilteringPricing ReportAdGetV2FilteringPricing = "PRICING_OCPM"
+	PRICING_OCPC_ReportAdGetV2FilteringPricing ReportAdGetV2FilteringPricing = "PRICING_OCPC"
 	PRICING_CPM_ReportAdGetV2FilteringPricing  ReportAdGetV2FilteringPricing = "PRICING_CPM"
 	PRICING_CPC_ReportAdGetV2FilteringPricing  ReportAdGetV2FilteringPricing = "PRICING_CPC"
-	PRICING_OCPC_ReportAdGetV2FilteringPricing ReportAdGetV2FilteringPricing = "PRICING_OCPC"
-	PRICING_OCPM_ReportAdGetV2FilteringPricing ReportAdGetV2FilteringPricing = "PRICING_OCPM"
-	PRICING_ECPC_ReportAdGetV2FilteringPricing ReportAdGetV2FilteringPricing = "PRICING_ECPC"
 	PRICING_CPV_ReportAdGetV2FilteringPricing  ReportAdGetV2FilteringPricing = "PRICING_CPV"
 )
 

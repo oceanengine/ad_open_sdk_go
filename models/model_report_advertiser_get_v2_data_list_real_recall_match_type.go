@@ -15,8 +15,8 @@ type ReportAdvertiserGetV2DataListRealRecallMatchType string
 
 // List of report_advertiser_get_v2_data_list_real_recall_match_type
 const (
-	PHRASE_ReportAdvertiserGetV2DataListRealRecallMatchType    ReportAdvertiserGetV2DataListRealRecallMatchType = "PHRASE"
 	PRECISION_ReportAdvertiserGetV2DataListRealRecallMatchType ReportAdvertiserGetV2DataListRealRecallMatchType = "PRECISION"
+	PHRASE_ReportAdvertiserGetV2DataListRealRecallMatchType    ReportAdvertiserGetV2DataListRealRecallMatchType = "PHRASE"
 	EXTENSIVE_ReportAdvertiserGetV2DataListRealRecallMatchType ReportAdvertiserGetV2DataListRealRecallMatchType = "EXTENSIVE"
 )
 

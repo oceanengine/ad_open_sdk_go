@@ -17,8 +17,8 @@ type AudiencePackageUpdateV2FilterEvent string
 const (
 	AD_CONVERT_TYPE_ACTIVE_REGISTER_AudiencePackageUpdateV2FilterEvent AudiencePackageUpdateV2FilterEvent = "AD_CONVERT_TYPE_ACTIVE_REGISTER"
 	AD_CONVERT_EXTERNAL_ACTION_AudiencePackageUpdateV2FilterEvent      AudiencePackageUpdateV2FilterEvent = "AD_CONVERT_EXTERNAL_ACTION"
-	AD_CONVERT_TYPE_PAY_AudiencePackageUpdateV2FilterEvent             AudiencePackageUpdateV2FilterEvent = "AD_CONVERT_TYPE_PAY"
 	AD_CONVERT_TYPE_ACTIVE_AudiencePackageUpdateV2FilterEvent          AudiencePackageUpdateV2FilterEvent = "AD_CONVERT_TYPE_ACTIVE"
+	AD_CONVERT_TYPE_PAY_AudiencePackageUpdateV2FilterEvent             AudiencePackageUpdateV2FilterEvent = "AD_CONVERT_TYPE_PAY"
 )
 
 // Ptr returns reference to audience_package_update_v2_filter_event value

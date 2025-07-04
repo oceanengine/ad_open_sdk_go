@@ -16,17 +16,17 @@ type AdGetV2DataInventoryType string
 // List of ad_get_v2_data_inventory_type
 const (
 	INVENTORY_SEARCH_AdGetV2DataInventoryType            AdGetV2DataInventoryType = "INVENTORY_SEARCH"
-	INVENTORY_HOTSOON_FEED_AdGetV2DataInventoryType      AdGetV2DataInventoryType = "INVENTORY_HOTSOON_FEED"
-	INVENTORY_AWEME_SEARCH_AdGetV2DataInventoryType      AdGetV2DataInventoryType = "INVENTORY_AWEME_SEARCH"
-	INVENTORY_AWEME_FEED_AdGetV2DataInventoryType        AdGetV2DataInventoryType = "INVENTORY_AWEME_FEED"
-	INVENTORY_UNION_SPLASH_SLOT_AdGetV2DataInventoryType AdGetV2DataInventoryType = "INVENTORY_UNION_SPLASH_SLOT"
-	INVENTORY_VIDEO_FEED_AdGetV2DataInventoryType        AdGetV2DataInventoryType = "INVENTORY_VIDEO_FEED"
-	INVENTORY_TEXT_LINK_AdGetV2DataInventoryType         AdGetV2DataInventoryType = "INVENTORY_TEXT_LINK"
-	UNION_BOUTIQUE_GAME_AdGetV2DataInventoryType         AdGetV2DataInventoryType = "UNION_BOUTIQUE_GAME"
-	INVENTORY_ESSAY_FEED_AdGetV2DataInventoryType        AdGetV2DataInventoryType = "INVENTORY_ESSAY_FEED"
-	INVENTORY_UNION_SLOT_AdGetV2DataInventoryType        AdGetV2DataInventoryType = "INVENTORY_UNION_SLOT"
 	INVENTORY_FEED_AdGetV2DataInventoryType              AdGetV2DataInventoryType = "INVENTORY_FEED"
+	INVENTORY_ESSAY_FEED_AdGetV2DataInventoryType        AdGetV2DataInventoryType = "INVENTORY_ESSAY_FEED"
 	INVENTORY_TOMATO_NOVEL_AdGetV2DataInventoryType      AdGetV2DataInventoryType = "INVENTORY_TOMATO_NOVEL"
+	UNION_BOUTIQUE_GAME_AdGetV2DataInventoryType         AdGetV2DataInventoryType = "UNION_BOUTIQUE_GAME"
+	INVENTORY_TEXT_LINK_AdGetV2DataInventoryType         AdGetV2DataInventoryType = "INVENTORY_TEXT_LINK"
+	INVENTORY_HOTSOON_FEED_AdGetV2DataInventoryType      AdGetV2DataInventoryType = "INVENTORY_HOTSOON_FEED"
+	INVENTORY_AWEME_FEED_AdGetV2DataInventoryType        AdGetV2DataInventoryType = "INVENTORY_AWEME_FEED"
+	INVENTORY_VIDEO_FEED_AdGetV2DataInventoryType        AdGetV2DataInventoryType = "INVENTORY_VIDEO_FEED"
+	INVENTORY_UNION_SLOT_AdGetV2DataInventoryType        AdGetV2DataInventoryType = "INVENTORY_UNION_SLOT"
+	INVENTORY_AWEME_SEARCH_AdGetV2DataInventoryType      AdGetV2DataInventoryType = "INVENTORY_AWEME_SEARCH"
+	INVENTORY_UNION_SPLASH_SLOT_AdGetV2DataInventoryType AdGetV2DataInventoryType = "INVENTORY_UNION_SPLASH_SLOT"
 )
 
 // Ptr returns reference to ad_get_v2_data_inventory_type value

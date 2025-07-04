@@ -15,9 +15,9 @@ type EnterpriseCommentReplyListV10DataReplyListReplyStatus string
 
 // List of enterprise_comment_reply_list_v1.0_data_reply_list_reply_status
 const (
-	REPLY_AUDIT_SUCCESS_EnterpriseCommentReplyListV10DataReplyListReplyStatus EnterpriseCommentReplyListV10DataReplyListReplyStatus = "REPLY_AUDIT_SUCCESS"
 	NO_REPLY_EnterpriseCommentReplyListV10DataReplyListReplyStatus            EnterpriseCommentReplyListV10DataReplyListReplyStatus = "NO_REPLY"
 	REPLY_AUDIT_FAIL_EnterpriseCommentReplyListV10DataReplyListReplyStatus    EnterpriseCommentReplyListV10DataReplyListReplyStatus = "REPLY_AUDIT_FAIL"
+	REPLY_AUDIT_SUCCESS_EnterpriseCommentReplyListV10DataReplyListReplyStatus EnterpriseCommentReplyListV10DataReplyListReplyStatus = "REPLY_AUDIT_SUCCESS"
 	REPLY_TO_AUDIT_EnterpriseCommentReplyListV10DataReplyListReplyStatus      EnterpriseCommentReplyListV10DataReplyListReplyStatus = "REPLY_TO_AUDIT"
 )
 

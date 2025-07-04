@@ -15,8 +15,8 @@ type KeywordUpdateV2V2KeywordsMatchType string
 
 // List of keyword_update_v2_v2_keywords_match_type
 const (
-	PHRASE_KeywordUpdateV2V2KeywordsMatchType    KeywordUpdateV2V2KeywordsMatchType = "PHRASE"
 	PRECISION_KeywordUpdateV2V2KeywordsMatchType KeywordUpdateV2V2KeywordsMatchType = "PRECISION"
+	PHRASE_KeywordUpdateV2V2KeywordsMatchType    KeywordUpdateV2V2KeywordsMatchType = "PHRASE"
 	EXTENSIVE_KeywordUpdateV2V2KeywordsMatchType KeywordUpdateV2V2KeywordsMatchType = "EXTENSIVE"
 )
 

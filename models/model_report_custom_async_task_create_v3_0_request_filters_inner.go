@@ -15,7 +15,7 @@ type ReportCustomAsyncTaskCreateV30RequestFiltersInner struct {
 	//
 	Field string `json:"field"`
 	//
-	Operator int64 `json:"operator"`
+	Operator *int64 `json:"operator,omitempty"`
 	//
 	Type int64 `json:"type"`
 	//

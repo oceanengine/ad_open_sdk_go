@@ -23,7 +23,7 @@ import (
 )
 
 type ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequestExample struct {
-	AdvertiserId   string                                         `json:"advertiser_id"`
+	AdvertiserId   int64                                          `json:"advertiser_id"`
 	ItemIds        []int64                                        `json:"item_ids"`
 	LandingType    ToolsVideoCheckAvailableAnchorV2LandingType    `json:"landing_type"`
 	ExternalAction ToolsVideoCheckAvailableAnchorV2ExternalAction `json:"external_action"`

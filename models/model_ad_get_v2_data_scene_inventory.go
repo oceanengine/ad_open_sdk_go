@@ -15,9 +15,9 @@ type AdGetV2DataSceneInventory string
 
 // List of ad_get_v2_data_scene_inventory
 const (
+	FEED_SCENE_AdGetV2DataSceneInventory  AdGetV2DataSceneInventory = "FEED_SCENE"
 	TAIL_SCENE_AdGetV2DataSceneInventory  AdGetV2DataSceneInventory = "TAIL_SCENE"
 	NOT_SELECT_AdGetV2DataSceneInventory  AdGetV2DataSceneInventory = "NOT_SELECT"
-	FEED_SCENE_AdGetV2DataSceneInventory  AdGetV2DataSceneInventory = "FEED_SCENE"
 	VIDEO_SCENE_AdGetV2DataSceneInventory AdGetV2DataSceneInventory = "VIDEO_SCENE"
 )
 

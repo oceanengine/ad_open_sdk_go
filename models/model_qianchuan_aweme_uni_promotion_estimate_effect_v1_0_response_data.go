@@ -12,10 +12,14 @@ package models
 
 // QianchuanAwemeUniPromotionEstimateEffectV10ResponseData
 type QianchuanAwemeUniPromotionEstimateEffectV10ResponseData struct {
+	// 预估最大订单量
+	MaxTotalPayOrderCountForRoi2 *int64 `json:"max_total_pay_order_count_for_roi2,omitempty"`
 	// 预估最大整体成交金额
 	MaxTotalPayOrderGmv *int64 `json:"max_total_pay_order_gmv,omitempty"`
 	// 预估最大整体支付roi
 	MaxTotalPrepayAndPayOrderRoi *float64 `json:"max_total_prepay_and_pay_order_roi,omitempty"`
+	// 预估最小订单量
+	MinTotalPayOrderCountForRoi2 *int64 `json:"min_total_pay_order_count_for_roi2,omitempty"`
 	// 预估最小整体成交金额
 	MinTotalPayOrderGmv *int64 `json:"min_total_pay_order_gmv,omitempty"`
 	// 预估最小整体支付roi

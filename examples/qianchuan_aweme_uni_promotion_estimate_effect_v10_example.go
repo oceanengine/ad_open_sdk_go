@@ -23,11 +23,13 @@ import (
 )
 
 type ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequestExample struct {
-	AdvertiserId int64   `json:"advertiser_id"`
-	AwemeId      int64   `json:"aweme_id"`
-	ProductId    int64   `json:"product_id"`
-	DeliveryTime float64 `json:"delivery_time"`
-	Amount       int64   `json:"amount"`
+	AdvertiserId    int64   `json:"advertiser_id"`
+	AwemeId         int64   `json:"aweme_id"`
+	ProductId       int64   `json:"product_id"`
+	DeliveryTime    float64 `json:"delivery_time"`
+	Amount          int64   `json:"amount"`
+	AddAmount       int64   `json:"add_amount,omitempty"`
+	AddDeliveryTime float64 `json:"add_delivery_time,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/qianchuan/aweme/uni_promotion/estimate/effect/ Get
@@ -49,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanAwemeUniPromotionEstimateEffectV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).AwemeId(request.AwemeId).ProductId(request.ProductId).DeliveryTime(request.DeliveryTime).Amount(request.Amount).
+		AdvertiserId(request.AdvertiserId).AwemeId(request.AwemeId).ProductId(request.ProductId).DeliveryTime(request.DeliveryTime).Amount(request.Amount).AddAmount(request.AddAmount).AddDeliveryTime(request.AddDeliveryTime).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

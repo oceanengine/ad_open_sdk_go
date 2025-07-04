@@ -13,9 +13,10 @@ package models
 // QianchuanAwemeUniPromotionOrderDetailV10ResponseData
 type QianchuanAwemeUniPromotionOrderDetailV10ResponseData struct {
 	//
-	AdId        *int64                                                           `json:"ad_id,omitempty"`
-	AuditRecord *QianchuanAwemeUniPromotionOrderDetailV10ResponseDataAuditRecord `json:"audit_record,omitempty"`
-	AwemeInfo   *QianchuanAwemeUniPromotionOrderDetailV10ResponseDataAwemeInfo   `json:"aweme_info,omitempty"`
+	AdId          *int64                                                             `json:"ad_id,omitempty"`
+	AddAmountInfo *QianchuanAwemeUniPromotionOrderDetailV10ResponseDataAddAmountInfo `json:"add_amount_info,omitempty"`
+	AuditRecord   *QianchuanAwemeUniPromotionOrderDetailV10ResponseDataAuditRecord   `json:"audit_record,omitempty"`
+	AwemeInfo     *QianchuanAwemeUniPromotionOrderDetailV10ResponseDataAwemeInfo     `json:"aweme_info,omitempty"`
 	// 订单优惠券信息
 	CouponInfos     []*QianchuanAwemeUniPromotionOrderDetailV10ResponseDataCouponInfosInner `json:"coupon_infos,omitempty"`
 	DeliverySetting *QianchuanAwemeUniPromotionOrderDetailV10ResponseDataDeliverySetting    `json:"delivery_setting,omitempty"`

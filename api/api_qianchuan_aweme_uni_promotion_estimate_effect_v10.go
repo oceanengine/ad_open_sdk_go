@@ -23,13 +23,15 @@ import (
 type QianchuanAwemeUniPromotionEstimateEffectV10ApiService service
 
 type ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest struct {
-	ctx          context.Context
-	ApiService   *QianchuanAwemeUniPromotionEstimateEffectV10ApiService
-	advertiserId *int64
-	awemeId      *int64
-	productId    *int64
-	deliveryTime *float64
-	amount       *int64
+	ctx             context.Context
+	ApiService      *QianchuanAwemeUniPromotionEstimateEffectV10ApiService
+	advertiserId    *int64
+	awemeId         *int64
+	productId       *int64
+	deliveryTime    *float64
+	amount          *int64
+	addAmount       *int64
+	addDeliveryTime *float64
 }
 
 func (r *ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest {
@@ -58,6 +60,18 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest) Delive
 // 投放金额，单位元
 func (r *ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest) Amount(amount int64) *ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest {
 	r.amount = &amount
+	return r
+}
+
+// 追加的预算，单位元
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest) AddAmount(addAmount int64) *ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest {
+	r.addAmount = &addAmount
+	return r
+}
+
+// 延长的投放时间，单位小时，允许值： 0、24、48、72、96、120、144、168
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest) AddDeliveryTime(addDeliveryTime float64) *ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest {
+	r.addDeliveryTime = &addDeliveryTime
 	return r
 }
 
@@ -150,6 +164,12 @@ func (a *QianchuanAwemeUniPromotionEstimateEffectV10ApiService) getExecute(r *Ap
 	parameterAddToHeaderOrQuery(localVarQueryParams, "product_id", r.productId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "delivery_time", r.deliveryTime)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "amount", r.amount)
+	if r.addAmount != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "add_amount", r.addAmount)
+	}
+	if r.addDeliveryTime != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "add_delivery_time", r.addDeliveryTime)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

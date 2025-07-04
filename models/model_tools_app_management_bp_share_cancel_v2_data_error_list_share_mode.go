@@ -16,8 +16,8 @@ type ToolsAppManagementBpShareCancelV2DataErrorListShareMode string
 // List of tools_app_management_bp_share_cancel_v2_data_error_list_share_mode
 const (
 	PART_ToolsAppManagementBpShareCancelV2DataErrorListShareMode    ToolsAppManagementBpShareCancelV2DataErrorListShareMode = "PART"
-	COMPANY_ToolsAppManagementBpShareCancelV2DataErrorListShareMode ToolsAppManagementBpShareCancelV2DataErrorListShareMode = "COMPANY"
 	ALL_ToolsAppManagementBpShareCancelV2DataErrorListShareMode     ToolsAppManagementBpShareCancelV2DataErrorListShareMode = "ALL"
+	COMPANY_ToolsAppManagementBpShareCancelV2DataErrorListShareMode ToolsAppManagementBpShareCancelV2DataErrorListShareMode = "COMPANY"
 )
 
 // Ptr returns reference to tools_app_management_bp_share_cancel_v2_data_error_list_share_mode value

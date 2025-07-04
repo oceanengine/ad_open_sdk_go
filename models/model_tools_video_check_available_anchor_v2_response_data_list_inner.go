@@ -13,7 +13,7 @@ package models
 // ToolsVideoCheckAvailableAnchorV2ResponseDataListInner struct for ToolsVideoCheckAvailableAnchorV2ResponseDataListInner
 type ToolsVideoCheckAvailableAnchorV2ResponseDataListInner struct {
 	// 抖音视频ID
-	ItemId int64 `json:"item_id"`
+	ItemId *int64 `json:"item_id,omitempty"`
 	// 是否支持双库存
-	Valid bool `json:"valid"`
+	Valid *bool `json:"valid,omitempty"`
 }

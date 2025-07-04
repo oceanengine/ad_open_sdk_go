@@ -101,9 +101,6 @@ func (a *ToolsAppManagementUploadTaskListV2ApiService) getExecute(r *ApiOpenApi2
 	if r.accountId == nil {
 		return localVarReturnValue, nil, ReportError("accountId is required and must be specified")
 	}
-	if *r.accountId < 1 {
-		return localVarReturnValue, nil, ReportError("accountId must be greater than 1")
-	}
 	if r.accountType == nil {
 		return localVarReturnValue, nil, ReportError("accountType is required and must be specified")
 	}
