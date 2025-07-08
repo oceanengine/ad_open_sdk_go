@@ -1,5 +1,5 @@
 /*
-API version: 1.1.60
+API version: 1.1.61
 */
 package ad_open_sdk_go
 
@@ -2103,6 +2103,10 @@ func (c *Client) QianchuanReportLiveGetV10Api() *api.QianchuanReportLiveGetV10Ap
 	return c.ApiClient.QianchuanReportLiveGetV10Api
 }
 
+func (c *Client) QianchuanReportLiveV2GetV10Api() *api.QianchuanReportLiveV2GetV10ApiService {
+	return c.ApiClient.QianchuanReportLiveV2GetV10Api
+}
+
 func (c *Client) QianchuanReportLongTransferOrderConfigGetV10Api() *api.QianchuanReportLongTransferOrderConfigGetV10ApiService {
 	return c.ApiClient.QianchuanReportLongTransferOrderConfigGetV10Api
 }
@@ -2201,6 +2205,10 @@ func (c *Client) QianchuanTodayLiveRoomProductListGetV10Api() *api.QianchuanToda
 
 func (c *Client) QianchuanTodayLiveRoomUserGetV10Api() *api.QianchuanTodayLiveRoomUserGetV10ApiService {
 	return c.ApiClient.QianchuanTodayLiveRoomUserGetV10Api
+}
+
+func (c *Client) QianchuanTodayLiveV2RoomUserGetV10Api() *api.QianchuanTodayLiveV2RoomUserGetV10ApiService {
+	return c.ApiClient.QianchuanTodayLiveV2RoomUserGetV10Api
 }
 
 func (c *Client) QianchuanToolsAllowCouponV10Api() *api.QianchuanToolsAllowCouponV10ApiService {

@@ -15,11 +15,11 @@ type KeywordCreateV2V2DataSuccessListBidType string
 
 // List of keyword_create_v2_v2_data_success_list_bid_type
 const (
-	CUSTOM_KeywordCreateV2V2DataSuccessListBidType         KeywordCreateV2V2DataSuccessListBidType = "CUSTOM"
-	BRAND_AD_KeywordCreateV2V2DataSuccessListBidType       KeywordCreateV2V2DataSuccessListBidType = "BRAND_AD"
-	FEED_TO_SEARCH_KeywordCreateV2V2DataSuccessListBidType KeywordCreateV2V2DataSuccessListBidType = "FEED_TO_SEARCH"
 	SUGGEST_KeywordCreateV2V2DataSuccessListBidType        KeywordCreateV2V2DataSuccessListBidType = "SUGGEST"
+	FEED_TO_SEARCH_KeywordCreateV2V2DataSuccessListBidType KeywordCreateV2V2DataSuccessListBidType = "FEED_TO_SEARCH"
+	CUSTOM_KeywordCreateV2V2DataSuccessListBidType         KeywordCreateV2V2DataSuccessListBidType = "CUSTOM"
 	WITH_AD_KeywordCreateV2V2DataSuccessListBidType        KeywordCreateV2V2DataSuccessListBidType = "WITH_AD"
+	BRAND_AD_KeywordCreateV2V2DataSuccessListBidType       KeywordCreateV2V2DataSuccessListBidType = "BRAND_AD"
 )
 
 // Ptr returns reference to keyword_create_v2_v2_data_success_list_bid_type value

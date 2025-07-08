@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.60
+// APIClient manages communication with the Oceanengine Open Api API v1.1.61
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -1089,6 +1089,8 @@ type APIClient struct {
 
 	QianchuanReportLiveGetV10Api *QianchuanReportLiveGetV10ApiService
 
+	QianchuanReportLiveV2GetV10Api *QianchuanReportLiveV2GetV10ApiService
+
 	QianchuanReportLongTransferOrderConfigGetV10Api *QianchuanReportLongTransferOrderConfigGetV10ApiService
 
 	QianchuanReportLongTransferOrderDataGetV10Api *QianchuanReportLongTransferOrderDataGetV10ApiService
@@ -1138,6 +1140,8 @@ type APIClient struct {
 	QianchuanTodayLiveRoomProductListGetV10Api *QianchuanTodayLiveRoomProductListGetV10ApiService
 
 	QianchuanTodayLiveRoomUserGetV10Api *QianchuanTodayLiveRoomUserGetV10ApiService
+
+	QianchuanTodayLiveV2RoomUserGetV10Api *QianchuanTodayLiveV2RoomUserGetV10ApiService
 
 	QianchuanToolsAllowCouponV10Api *QianchuanToolsAllowCouponV10ApiService
 
@@ -2623,6 +2627,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanReportCustomConfigGetV10Api = (*QianchuanReportCustomConfigGetV10ApiService)(&c.common)
 	c.QianchuanReportCustomGetV10Api = (*QianchuanReportCustomGetV10ApiService)(&c.common)
 	c.QianchuanReportLiveGetV10Api = (*QianchuanReportLiveGetV10ApiService)(&c.common)
+	c.QianchuanReportLiveV2GetV10Api = (*QianchuanReportLiveV2GetV10ApiService)(&c.common)
 	c.QianchuanReportLongTransferOrderConfigGetV10Api = (*QianchuanReportLongTransferOrderConfigGetV10ApiService)(&c.common)
 	c.QianchuanReportLongTransferOrderDataGetV10Api = (*QianchuanReportLongTransferOrderDataGetV10ApiService)(&c.common)
 	c.QianchuanReportLongTransferOrderGetV10Api = (*QianchuanReportLongTransferOrderGetV10ApiService)(&c.common)
@@ -2648,6 +2653,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanTodayLiveRoomGetV10Api = (*QianchuanTodayLiveRoomGetV10ApiService)(&c.common)
 	c.QianchuanTodayLiveRoomProductListGetV10Api = (*QianchuanTodayLiveRoomProductListGetV10ApiService)(&c.common)
 	c.QianchuanTodayLiveRoomUserGetV10Api = (*QianchuanTodayLiveRoomUserGetV10ApiService)(&c.common)
+	c.QianchuanTodayLiveV2RoomUserGetV10Api = (*QianchuanTodayLiveV2RoomUserGetV10ApiService)(&c.common)
 	c.QianchuanToolsAllowCouponV10Api = (*QianchuanToolsAllowCouponV10ApiService)(&c.common)
 	c.QianchuanToolsAwemeAuthV10Api = (*QianchuanToolsAwemeAuthV10ApiService)(&c.common)
 	c.QianchuanToolsEstimateAudienceV10Api = (*QianchuanToolsEstimateAudienceV10ApiService)(&c.common)

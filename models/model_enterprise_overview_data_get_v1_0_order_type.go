@@ -15,8 +15,8 @@ type EnterpriseOverviewDataGetV10OrderType string
 
 // List of enterprise_overview_data_get_v1.0_order_type
 const (
-	ASC_EnterpriseOverviewDataGetV10OrderType  EnterpriseOverviewDataGetV10OrderType = "ASC"
 	DESC_EnterpriseOverviewDataGetV10OrderType EnterpriseOverviewDataGetV10OrderType = "DESC"
+	ASC_EnterpriseOverviewDataGetV10OrderType  EnterpriseOverviewDataGetV10OrderType = "ASC"
 )
 
 // Ptr returns reference to enterprise_overview_data_get_v1.0_order_type value

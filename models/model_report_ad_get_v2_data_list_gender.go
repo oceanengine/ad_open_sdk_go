@@ -16,9 +16,9 @@ type ReportAdGetV2DataListGender string
 // List of report_ad_get_v2_data_list_gender
 const (
 	NONE_ReportAdGetV2DataListGender             ReportAdGetV2DataListGender = "NONE"
+	GENDER_UNLIMITED_ReportAdGetV2DataListGender ReportAdGetV2DataListGender = "GENDER_UNLIMITED"
 	GENDER_MALE_ReportAdGetV2DataListGender      ReportAdGetV2DataListGender = "GENDER_MALE"
 	GENDER_FEMALE_ReportAdGetV2DataListGender    ReportAdGetV2DataListGender = "GENDER_FEMALE"
-	GENDER_UNLIMITED_ReportAdGetV2DataListGender ReportAdGetV2DataListGender = "GENDER_UNLIMITED"
 )
 
 // Ptr returns reference to report_ad_get_v2_data_list_gender value

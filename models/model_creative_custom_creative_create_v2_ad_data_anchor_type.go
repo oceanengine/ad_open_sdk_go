@@ -15,12 +15,12 @@ type CreativeCustomCreativeCreateV2AdDataAnchorType string
 
 // List of creative_custom_creative_create_v2_ad_data_anchor_type
 const (
+	APP_GAME_CreativeCustomCreativeCreateV2AdDataAnchorType             CreativeCustomCreativeCreateV2AdDataAnchorType = "APP_GAME"
+	APP_SHOP_CreativeCustomCreativeCreateV2AdDataAnchorType             CreativeCustomCreativeCreateV2AdDataAnchorType = "APP_SHOP"
+	SHOPPING_CART_CreativeCustomCreativeCreateV2AdDataAnchorType        CreativeCustomCreativeCreateV2AdDataAnchorType = "SHOPPING_CART"
 	PRIVATE_CHAT_CreativeCustomCreativeCreateV2AdDataAnchorType         CreativeCustomCreativeCreateV2AdDataAnchorType = "PRIVATE_CHAT"
 	APP_INTERNET_SERVICE_CreativeCustomCreativeCreateV2AdDataAnchorType CreativeCustomCreativeCreateV2AdDataAnchorType = "APP_INTERNET_SERVICE"
 	INSURANCE_CreativeCustomCreativeCreateV2AdDataAnchorType            CreativeCustomCreativeCreateV2AdDataAnchorType = "INSURANCE"
-	APP_SHOP_CreativeCustomCreativeCreateV2AdDataAnchorType             CreativeCustomCreativeCreateV2AdDataAnchorType = "APP_SHOP"
-	APP_GAME_CreativeCustomCreativeCreateV2AdDataAnchorType             CreativeCustomCreativeCreateV2AdDataAnchorType = "APP_GAME"
-	SHOPPING_CART_CreativeCustomCreativeCreateV2AdDataAnchorType        CreativeCustomCreativeCreateV2AdDataAnchorType = "SHOPPING_CART"
 	ONLINE_SUBSCRIBE_CreativeCustomCreativeCreateV2AdDataAnchorType     CreativeCustomCreativeCreateV2AdDataAnchorType = "ONLINE_SUBSCRIBE"
 )
 

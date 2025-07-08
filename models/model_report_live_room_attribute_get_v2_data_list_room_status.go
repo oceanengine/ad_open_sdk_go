@@ -17,8 +17,8 @@ type ReportLiveRoomAttributeGetV2DataListRoomStatus string
 const (
 	END_ReportLiveRoomAttributeGetV2DataListRoomStatus       ReportLiveRoomAttributeGetV2DataListRoomStatus = "END"
 	LIVING_ReportLiveRoomAttributeGetV2DataListRoomStatus    ReportLiveRoomAttributeGetV2DataListRoomStatus = "LIVING"
-	PREPARING_ReportLiveRoomAttributeGetV2DataListRoomStatus ReportLiveRoomAttributeGetV2DataListRoomStatus = "PREPARING"
 	PAUSE_ReportLiveRoomAttributeGetV2DataListRoomStatus     ReportLiveRoomAttributeGetV2DataListRoomStatus = "PAUSE"
+	PREPARING_ReportLiveRoomAttributeGetV2DataListRoomStatus ReportLiveRoomAttributeGetV2DataListRoomStatus = "PREPARING"
 )
 
 // Ptr returns reference to report_live_room_attribute_get_v2_data_list_room_status value

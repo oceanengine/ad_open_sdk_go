@@ -725,6 +725,7 @@ Class | Method | HTTP request
 *QianchuanReportCustomConfigGetV10Api* | **OpenApiV10QianchuanReportCustomConfigGetGet** | **Get** /open_api/v1.0/qianchuan/report/custom/config/get/
 *QianchuanReportCustomGetV10Api* | **OpenApiV10QianchuanReportCustomGetGet** | **Get** /open_api/v1.0/qianchuan/report/custom/get/
 *QianchuanReportLiveGetV10Api* | **OpenApiV10QianchuanReportLiveGetGet** | **Get** /open_api/v1.0/qianchuan/report/live/get/
+*QianchuanReportLiveV2GetV10Api* | **OpenApiV10QianchuanReportLiveV2GetGet** | **Get** /open_api/v1.0/qianchuan/report/live_v2/get/
 *QianchuanReportLongTransferOrderConfigGetV10Api* | **OpenApiV10QianchuanReportLongTransferOrderConfigGetGet** | **Get** /open_api/v1.0/qianchuan/report/long_transfer/order/config/get/
 *QianchuanReportLongTransferOrderDataGetV10Api* | **OpenApiV10QianchuanReportLongTransferOrderDataGetGet** | **Get** /open_api/v1.0/qianchuan/report/long_transfer/order/data/get/
 *QianchuanReportLongTransferOrderGetV10Api* | **OpenApiV10QianchuanReportLongTransferOrderGetGet** | **Get** /open_api/v1.0/qianchuan/report/long_transfer/order/get/
@@ -750,6 +751,7 @@ Class | Method | HTTP request
 *QianchuanTodayLiveRoomGetV10Api* | **OpenApiV10QianchuanTodayLiveRoomGetGet** | **Get** /open_api/v1.0/qianchuan/today_live/room/get/
 *QianchuanTodayLiveRoomProductListGetV10Api* | **OpenApiV10QianchuanTodayLiveRoomProductListGetGet** | **Get** /open_api/v1.0/qianchuan/today_live/room/product_list/get/
 *QianchuanTodayLiveRoomUserGetV10Api* | **OpenApiV10QianchuanTodayLiveRoomUserGetGet** | **Get** /open_api/v1.0/qianchuan/today_live/room/user/get/
+*QianchuanTodayLiveV2RoomUserGetV10Api* | **OpenApiV10QianchuanTodayLiveV2RoomUserGetGet** | **Get** /open_api/v1.0/qianchuan/today_live_v2/room/user/get/
 *QianchuanToolsAllowCouponV10Api* | **OpenApiV10QianchuanToolsAllowCouponGet** | **Get** /open_api/v1.0/qianchuan/tools/allow_coupon/
 *QianchuanToolsAwemeAuthV10Api* | **OpenApiV10QianchuanToolsAwemeAuthPost** | **Post** /open_api/v1.0/qianchuan/tools/aweme_auth/
 *QianchuanToolsEstimateAudienceV10Api* | **OpenApiV10QianchuanToolsEstimateAudienceGet** | **Get** /open_api/v1.0/qianchuan/tools/estimate_audience/

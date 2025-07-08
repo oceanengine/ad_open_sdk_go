@@ -32,7 +32,9 @@ type PromotionListV30ResponseDataListInner struct {
 	CpaBid                     *float64                                            `json:"cpa_bid,omitempty"`
 	CreativeAutoGenerateSwitch *PromotionListV30DataListCreativeAutoGenerateSwitch `json:"creative_auto_generate_switch,omitempty"`
 	//
-	DeepCpabid       *float64                                  `json:"deep_cpabid,omitempty"`
+	DeepCpabid *float64 `json:"deep_cpabid,omitempty"`
+	//
+	FirstRoiGoal     *float64                                  `json:"first_roi_goal,omitempty"`
 	HasCarryMaterial *PromotionListV30DataListHasCarryMaterial `json:"has_carry_material,omitempty"`
 	//
 	IfNewcustomerdelivery *bool                                     `json:"if_newcustomerdelivery,omitempty"`
