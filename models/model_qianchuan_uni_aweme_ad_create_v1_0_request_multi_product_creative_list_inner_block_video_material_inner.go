@@ -12,6 +12,8 @@ package models
 
 // QianchuanUniAwemeAdCreateV10RequestMultiProductCreativeListInnerBlockVideoMaterialInner struct for QianchuanUniAwemeAdCreateV10RequestMultiProductCreativeListInnerBlockVideoMaterialInner
 type QianchuanUniAwemeAdCreateV10RequestMultiProductCreativeListInnerBlockVideoMaterialInner struct {
+	// 抖音图文id
+	AwemeCarouselId *int64 `json:"aweme_carousel_id,omitempty"`
 	//
 	AwemeItemId *int64 `json:"aweme_item_id,omitempty"`
 }

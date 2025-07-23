@@ -14,8 +14,10 @@ package models
 type QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInner struct {
 	//
 	BlockMaterial []*QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInnerBlockMaterialInner `json:"block_material,omitempty"`
-	CreativeCard  *QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInnerCreativeCard         `json:"creative_card,omitempty"`
-	CreativeType  *QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListCreativeType                      `json:"creative_type,omitempty"`
+	//
+	CarouselMaterial []*QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInnerCarouselMaterialInner `json:"carousel_material,omitempty"`
+	CreativeCard     *QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInnerCreativeCard            `json:"creative_card,omitempty"`
+	CreativeType     *QianchuanUniPromotionAdDetailV10DataMultiProductCreativeListCreativeType                         `json:"creative_type,omitempty"`
 	//
 	HideInAweme *bool `json:"hide_in_aweme,omitempty"`
 	//

@@ -33,33 +33,37 @@ type ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest struct {
 	orderPlatform *QianchuanReportUniPromotionGetV10OrderPlatform
 }
 
+// 千川业务账户ID，对应账户类型为&#x60;QIANCHUAN&#x60;
 func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
 	r.advertiserId = &advertiserId
 	return r
 }
 
-// 开始时间，格式 2021-04-05
+// 查询统计数据开始时间，格式：&#x60;yyyy-mm-dd&#x60;，如：2021-04-05
 func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) StartDate(startDate string) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
 	r.startDate = &startDate
 	return r
 }
 
-// 结束时间，格式 2021-04-05
+// 查询统计数据结束时间，格式：&#x60;yyyy-mm-dd&#x60;，如：2021-04-05
 func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) EndDate(endDate string) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
 	r.endDate = &endDate
 	return r
 }
 
+// 查询指标，详见应答中data描述的返回指标
 func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) Fields(fields []string) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
 	r.fields = &fields
 	return r
 }
 
+// 按照营销目标过滤，允许值：  - &#x60;ALL&#x60; 全部（默认值） - &#x60;VIDEO_PROM_GOODS&#x60; 商品全域  - &#x60;LIVE_PROM_GOODS&#x60; 直播全域
 func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) MarketingGoal(marketingGoal QianchuanReportUniPromotionGetV10MarketingGoal) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
+// 下单平台，允许值：  - &#x60;ALL&#x60; 全部  - &#x60;QIANCHUAN&#x60; 千川PC（默认值）  - &#x60;ECP_AWEME&#x60; 小店随心推，仅marketing_goal&#x3D;&#x60;ALL&#x60;时，支持传入
 func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) OrderPlatform(orderPlatform QianchuanReportUniPromotionGetV10OrderPlatform) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
 	r.orderPlatform = &orderPlatform
 	return r

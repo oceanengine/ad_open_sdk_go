@@ -15,6 +15,7 @@ type QianchuanReportUniPromotionConfigGetV10DataTopics string
 
 // List of qianchuan_report_uni_promotion_config_get_v1.0_data_topics
 const (
+	ROI2_IMAGE_AGG_MATERIAL_ANALYSIS_QianchuanReportUniPromotionConfigGetV10DataTopics        QianchuanReportUniPromotionConfigGetV10DataTopics = "ROI2_IMAGE_AGG_MATERIAL_ANALYSIS"
 	SITE_PROMOTION_POST_DATA_LIVE_QianchuanReportUniPromotionConfigGetV10DataTopics           QianchuanReportUniPromotionConfigGetV10DataTopics = "SITE_PROMOTION_POST_DATA_LIVE"
 	SITE_PROMOTION_POST_DATA_OTHER_QianchuanReportUniPromotionConfigGetV10DataTopics          QianchuanReportUniPromotionConfigGetV10DataTopics = "SITE_PROMOTION_POST_DATA_OTHER"
 	SITE_PROMOTION_POST_DATA_TITLE_QianchuanReportUniPromotionConfigGetV10DataTopics          QianchuanReportUniPromotionConfigGetV10DataTopics = "SITE_PROMOTION_POST_DATA_TITLE"

@@ -23,11 +23,13 @@ import (
 )
 
 type ApiOpenApiV10QianchuanCarouselAwemeGetGetRequestExample struct {
-	AdvertiserId int64                                 `json:"advertiser_id"`
-	AwemeId      int64                                 `json:"aweme_id"`
-	Filtering    QianchuanCarouselAwemeGetV10Filtering `json:"filtering,omitempty"`
-	Cursor       int64                                 `json:"cursor,omitempty"`
-	Count        int64                                 `json:"count,omitempty"`
+	AdvertiserId int64                                  `json:"advertiser_id"`
+	AwemeId      int64                                  `json:"aweme_id"`
+	Filtering    QianchuanCarouselAwemeGetV10Filtering  `json:"filtering,omitempty"`
+	Cursor       int64                                  `json:"cursor,omitempty"`
+	Count        int64                                  `json:"count,omitempty"`
+	OrderField   QianchuanCarouselAwemeGetV10OrderField `json:"order_field,omitempty"`
+	OrderType    QianchuanCarouselAwemeGetV10OrderType  `json:"order_type,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/qianchuan/carousel/aweme/get/ Get
@@ -49,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanCarouselAwemeGetV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).AwemeId(request.AwemeId).Filtering(request.Filtering).Cursor(request.Cursor).Count(request.Count).
+		AdvertiserId(request.AdvertiserId).AwemeId(request.AwemeId).Filtering(request.Filtering).Cursor(request.Cursor).Count(request.Count).OrderField(request.OrderField).OrderType(request.OrderType).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

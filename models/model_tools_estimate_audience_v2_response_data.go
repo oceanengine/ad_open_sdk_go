@@ -15,5 +15,6 @@ type ToolsEstimateAudienceV2ResponseData struct {
 	Aweme          *ToolsEstimateAudienceV2ResponseDataAweme          `json:"aweme,omitempty"`
 	TomatoNovelApp *ToolsEstimateAudienceV2ResponseDataTomatoNovelApp `json:"tomato_novel_app,omitempty"`
 	Toutiao        *ToolsEstimateAudienceV2ResponseDataToutiao        `json:"toutiao,omitempty"`
+	Union          *ToolsEstimateAudienceV2ResponseDataUnion          `json:"union,omitempty"`
 	VideoApp       *ToolsEstimateAudienceV2ResponseDataVideoApp       `json:"video_app,omitempty"`
 }

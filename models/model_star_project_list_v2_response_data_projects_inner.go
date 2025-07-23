@@ -16,14 +16,38 @@ type StarProjectListV2ResponseDataProjectsInner struct {
 	CreateTime int64 `json:"create_time"`
 	//
 	EndTime *int64 `json:"end_time,omitempty"`
+	// 一级行业名称
+	FirstClassCategoryName *string `json:"first_class_category_name,omitempty"`
+	// 推广内容
+	FirstPromotionTarget *int64 `json:"first_promotion_target,omitempty"`
 	//
 	Id int64 `json:"id"`
+	// 京东父任务code
+	JdProjectCode *string `json:"jd_project_code,omitempty"`
+	// 京东父任务id
+	JdProjectId *string `json:"jd_project_id,omitempty"`
+	// 营销目标
+	MarketingTarget *int64 `json:"marketing_target,omitempty"`
 	//
 	Name string `json:"name"`
+	// 核心指标目标值
+	PromotionIndicatorTargetCnt *int64 `json:"promotion_indicator_target_cnt,omitempty"`
+	// 核心指标
+	PromotionIndicatorType *int64 `json:"promotion_indicator_type,omitempty"`
 	//
 	RestBudget *int64 `json:"rest_budget,omitempty"`
+	// 二级行业名称
+	SecondClassCategoryName *string `json:"second_class_category_name,omitempty"`
+	// 星图品牌名称
+	StarBrandName *string `json:"star_brand_name,omitempty"`
+	// 星图细分品牌名称
+	StarSubBrandName *string `json:"star_sub_brand_name,omitempty"`
 	//
 	StartTime *int64 `json:"start_time,omitempty"`
+	// 淘宝父任务code
+	TaobaoProjectCode *string `json:"taobao_project_code,omitempty"`
+	// 淘宝父任务id
+	TaobaoProjectId *string `json:"taobao_project_id,omitempty"`
 	//
 	TotalBudget *int64 `json:"total_budget,omitempty"`
 }

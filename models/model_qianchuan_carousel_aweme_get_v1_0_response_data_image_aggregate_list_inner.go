@@ -12,6 +12,7 @@ package models
 
 // QianchuanCarouselAwemeGetV10ResponseDataImageAggregateListInner struct for QianchuanCarouselAwemeGetV10ResponseDataImageAggregateListInner
 type QianchuanCarouselAwemeGetV10ResponseDataImageAggregateListInner struct {
+	AuditSuggestions *QianchuanCarouselAwemeGetV10ResponseDataImageAggregateListInnerAuditSuggestions `json:"audit_suggestions,omitempty"`
 	// 图文itemid
 	AwemeCarouselId *string `json:"aweme_carousel_id,omitempty"`
 	// 图文描述

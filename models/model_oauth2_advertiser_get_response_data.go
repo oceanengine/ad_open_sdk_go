@@ -12,6 +12,6 @@ package models
 
 // Oauth2AdvertiserGetResponseData
 type Oauth2AdvertiserGetResponseData struct {
-	//
+	// 账户信息
 	List []*Oauth2AdvertiserGetResponseDataListInner `json:"list,omitempty"`
 }

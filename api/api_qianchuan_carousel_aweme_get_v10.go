@@ -30,6 +30,8 @@ type ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest struct {
 	filtering    *QianchuanCarouselAwemeGetV10Filtering
 	cursor       *int64
 	count        *int64
+	orderField   *QianchuanCarouselAwemeGetV10OrderField
+	orderType    *QianchuanCarouselAwemeGetV10OrderType
 }
 
 func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
@@ -55,6 +57,18 @@ func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) Cursor(cursor int64) 
 
 func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) Count(count int64) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
 	r.count = &count
+	return r
+}
+
+// 排序字段
+func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) OrderField(orderField QianchuanCarouselAwemeGetV10OrderField) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
+	r.orderField = &orderField
+	return r
+}
+
+// 排序方式
+func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) OrderType(orderType QianchuanCarouselAwemeGetV10OrderType) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
+	r.orderType = &orderType
 	return r
 }
 
@@ -125,6 +139,12 @@ func (a *QianchuanCarouselAwemeGetV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	}
 	if r.count != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "count", r.count)
+	}
+	if r.orderField != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "order_field", r.orderField)
+	}
+	if r.orderType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "order_type", r.orderType)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

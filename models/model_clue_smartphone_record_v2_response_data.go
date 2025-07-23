@@ -13,6 +13,6 @@ package models
 // ClueSmartphoneRecordV2ResponseData
 type ClueSmartphoneRecordV2ResponseData struct {
 	//
-	List     []*ClueSmartphoneRecordV2ResponseDataListInner `json:"list[],omitempty"`
+	List     []*ClueSmartphoneRecordV2ResponseDataListInner `json:"list,omitempty"`
 	PageInfo *ClueSmartphoneRecordV2ResponseDataPageInfo    `json:"page_info,omitempty"`
 }

@@ -37,53 +37,61 @@ type ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest struct {
 	pageSize        *int32
 }
 
+// 千川业务账户ID，对应账户类型为&#x60;QIANCHUAN&#x60;
 func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.advertiserId = &advertiserId
 	return r
 }
 
-// 开始时间，格式 2021-04-05
+// 查询统计数据开始时间，格式：&#x60;yyyy-mm-dd&#x60;，如：2021-04-05
 func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) StartDate(startDate string) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.startDate = &startDate
 	return r
 }
 
-// 结束时间，格式 2021-04-05
+// 查询统计数据结束时间，格式：&#x60;yyyy-mm-dd&#x60;，如：2021-04-05
 func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) EndDate(endDate string) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.endDate = &endDate
 	return r
 }
 
+// 查询指标，详见应答中list描述的返回指标
 func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) Fields(fields []string) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.fields = &fields
 	return r
 }
 
+// 过滤器
 func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) Filtering(filtering QianchuanReportAdvertiserGetV10Filtering) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
+// 返回数据时间聚合维度分组 ，允许值: - &#x60;TIME_GRANULARITY_DAILY&#x60;  天维度 - &#x60;TIME_GRANULARITY_HOURLY&#x60; 小时维度
 func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) TimeGranularity(timeGranularity QianchuanReportAdvertiserGetV10TimeGranularity) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.timeGranularity = &timeGranularity
 	return r
 }
 
+// 排序字段，详见应答中list描述的返回指标 默认排序字段：stat_cost
 func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) OrderField(orderField string) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
 
+// 排序方式，允许值： - &#x60;ASC&#x60; 升序（默认） - &#x60;DESC&#x60; 降序
 func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) OrderType(orderType QianchuanReportAdvertiserGetV10OrderType) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
 
+// 页码，默认值&#x60;1&#x60;
 func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) Page(page int32) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.page = &page
 	return r
 }
 
+// 页面大小，默认为&#x60;10&#x60;，数值范围[1-500]
 func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) PageSize(pageSize int32) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.pageSize = &pageSize
 	return r

@@ -24,8 +24,12 @@ type StarChallengeGetCustomTaskListV2ResponseDataTaskListInner struct {
 	DemanderId *int64 `json:"demander_id,omitempty"`
 	// 投稿结束时间
 	EndTime *int64 `json:"end_time,omitempty"`
+	// 3-自定义
+	EvaluateType *int32 `json:"evaluate_type,omitempty"`
 	// 任务头图
 	HeadImageUrl *string `json:"head_image_url,omitempty"`
+	// 2-自定义结算
+	PayType *int32 `json:"pay_type,omitempty"`
 	// 投稿开始时间
 	StartTime *int64 `json:"start_time,omitempty"`
 	// 任务类型

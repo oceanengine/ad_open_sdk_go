@@ -28,6 +28,7 @@ type ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest struct {
 	advertiserId  *int64
 	awemeId       *int64
 	marketingGoal *QianchuanUniPromotionBlockMaterialGetV10MarketingGoal
+	mediaType     *QianchuanUniPromotionBlockMaterialGetV10MediaType
 	productId     *[]int64
 	filtering     *QianchuanUniPromotionBlockMaterialGetV10Filtering
 	orderField    *QianchuanUniPromotionBlockMaterialGetV10OrderField
@@ -47,6 +48,11 @@ func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) AwemeId(a
 
 func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) MarketingGoal(marketingGoal QianchuanUniPromotionBlockMaterialGetV10MarketingGoal) *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest {
 	r.marketingGoal = &marketingGoal
+	return r
+}
+
+func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) MediaType(mediaType QianchuanUniPromotionBlockMaterialGetV10MediaType) *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest {
+	r.mediaType = &mediaType
 	return r
 }
 
@@ -135,6 +141,9 @@ func (a *QianchuanUniPromotionBlockMaterialGetV10ApiService) getExecute(r *ApiOp
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "aweme_id", r.awemeId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "marketing_goal", r.marketingGoal)
+	if r.mediaType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "media_type", r.mediaType)
+	}
 	if r.productId != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "product_id", r.productId)
 	}

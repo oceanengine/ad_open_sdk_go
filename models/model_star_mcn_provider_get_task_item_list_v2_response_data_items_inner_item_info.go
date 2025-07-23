@@ -32,4 +32,6 @@ type StarMcnProviderGetTaskItemListV2ResponseDataItemsInnerItemInfo struct {
 	Title *string `json:"title,omitempty"`
 	//
 	Url *string `json:"url,omitempty"`
+	// 视频上传渠道
+	VideoParticipateProviderChannel *string `json:"video_participate_provider_channel,omitempty"`
 }

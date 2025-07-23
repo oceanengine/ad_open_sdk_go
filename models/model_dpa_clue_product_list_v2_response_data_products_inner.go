@@ -13,8 +13,12 @@ package models
 // DpaClueProductListV2ResponseDataProductsInner struct for DpaClueProductListV2ResponseDataProductsInner
 type DpaClueProductListV2ResponseDataProductsInner struct {
 	// 定向年龄
-	Age         []int64                                      `json:"age,omitempty"`
-	AuditStatus *DpaClueProductListV2DataProductsAuditStatus `json:"audit_status,omitempty"`
+	Age []int64 `json:"age,omitempty"`
+	//
+	AuditHitField *string `json:"audit_hit_field,omitempty"`
+	//
+	AuditReasonText *string                                      `json:"audit_reason_text,omitempty"`
+	AuditStatus     *DpaClueProductListV2DataProductsAuditStatus `json:"audit_status,omitempty"`
 	// 购买量
 	Bought    *int64                                                  `json:"bought,omitempty"`
 	BrandInfo *DpaClueProductListV2ResponseDataProductsInnerBrandInfo `json:"brand_info,omitempty"`

@@ -13,7 +13,10 @@ package models
 // StarDemandCreateAssignV2RequestDemandInfoComponentInfo 组件信息
 type StarDemandCreateAssignV2RequestDemandInfoComponentInfo struct {
 	// 共创组件引流抖音号
-	CocreateDouyinId *string `json:"cocreate_douyin_id,omitempty"`
+	CocreateDouyinId     *string                                                                     `json:"cocreate_douyin_id,omitempty"`
+	CommentComponentInfo *StarDemandCreateAssignV2RequestDemandInfoComponentInfoCommentComponentInfo `json:"comment_component_info,omitempty"`
+	//
+	CommonComponentIds []int64 `json:"common_component_ids,omitempty"`
 	// 购物车组件信息，最多不超过7个
 	EcomCart []*StarDemandCreateAssignV2RequestDemandInfoComponentInfoEcomCartInner `json:"ecom_cart,omitempty"`
 	// 行业组件ID

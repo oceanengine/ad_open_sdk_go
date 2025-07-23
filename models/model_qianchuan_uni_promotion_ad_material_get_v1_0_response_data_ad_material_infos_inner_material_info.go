@@ -12,9 +12,10 @@ package models
 
 // QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfo
 type QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfo struct {
-	ImageMaterial *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoImageMaterial `json:"image_material,omitempty"`
-	MaterialType  *QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoMaterialType               `json:"material_type,omitempty"`
-	RoomMaterial  *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoRoomMaterial  `json:"room_material,omitempty"`
-	TitleMaterial *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoTitleMaterial `json:"title_material,omitempty"`
-	VideoMaterial *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoVideoMaterial `json:"video_material,omitempty"`
+	CarouselMaterial *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoCarouselMaterial `json:"carousel_material,omitempty"`
+	ImageMaterial    *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoImageMaterial    `json:"image_material,omitempty"`
+	MaterialType     *QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoMaterialType                  `json:"material_type,omitempty"`
+	RoomMaterial     *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoRoomMaterial     `json:"room_material,omitempty"`
+	TitleMaterial    *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoTitleMaterial    `json:"title_material,omitempty"`
+	VideoMaterial    *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoVideoMaterial    `json:"video_material,omitempty"`
 }

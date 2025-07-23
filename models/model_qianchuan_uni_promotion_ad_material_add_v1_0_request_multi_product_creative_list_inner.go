@@ -13,6 +13,8 @@ package models
 // QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInner struct for QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInner
 type QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInner struct {
 	//
+	CarouselMaterial []*QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerCarouselMaterialInner `json:"carousel_material,omitempty"`
+	//
 	ImageMaterial []*QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerImageMaterialInner `json:"image_material,omitempty"`
 	//
 	ProductId *int64 `json:"product_id,omitempty"`

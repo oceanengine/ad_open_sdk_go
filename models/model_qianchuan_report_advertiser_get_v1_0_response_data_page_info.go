@@ -10,14 +10,14 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanReportAdvertiserGetV10ResponseDataPageInfo
+// QianchuanReportAdvertiserGetV10ResponseDataPageInfo 分页信息
 type QianchuanReportAdvertiserGetV10ResponseDataPageInfo struct {
-	//
+	// 页码
 	Page *int64 `json:"page,omitempty"`
-	//
+	// 页面大小
 	PageSize *int64 `json:"page_size,omitempty"`
-	//
+	// 总计数量
 	TotalNumber *int64 `json:"total_number,omitempty"`
-	//
+	// 总计页数
 	TotalPage *int64 `json:"total_page,omitempty"`
 }

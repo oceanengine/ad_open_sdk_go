@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.61
+// APIClient manages communication with the Oceanengine Open Api API v1.1.62
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -98,6 +98,8 @@ type APIClient struct {
 	AdvertiserDeliveryQualificationSubmitV30Api *AdvertiserDeliveryQualificationSubmitV30ApiService
 
 	AdvertiserFundDailyStatV2Api *AdvertiserFundDailyStatV2ApiService
+
+	AdvertiserFundDetailGrantV2Api *AdvertiserFundDetailGrantV2ApiService
 
 	AdvertiserFundGetV2Api *AdvertiserFundGetV2ApiService
 
@@ -449,6 +451,10 @@ type APIClient struct {
 
 	CreativeStrategyListV2Api *CreativeStrategyListV2ApiService
 
+	CustomerCenterAccountListV30Api *CustomerCenterAccountListV30ApiService
+
+	CustomerCenterAccountOfflineListV30Api *CustomerCenterAccountOfflineListV30ApiService
+
 	CustomerCenterAdvertiserCopyV2Api *CustomerCenterAdvertiserCopyV2ApiService
 
 	CustomerCenterAdvertiserListV2Api *CustomerCenterAdvertiserListV2ApiService
@@ -601,6 +607,18 @@ type APIClient struct {
 
 	EventManagerAssetsCreateV2Api *EventManagerAssetsCreateV2ApiService
 
+	EventManagerAuthAddPublicKeyV2Api *EventManagerAuthAddPublicKeyV2ApiService
+
+	EventManagerAuthDisableV2Api *EventManagerAuthDisableV2ApiService
+
+	EventManagerAuthEnableV2Api *EventManagerAuthEnableV2ApiService
+
+	EventManagerAuthGetAllPublicKeysV2Api *EventManagerAuthGetAllPublicKeysV2ApiService
+
+	EventManagerAuthGetAuthStatusV2Api *EventManagerAuthGetAuthStatusV2ApiService
+
+	EventManagerAuthGetPublicKeyV2Api *EventManagerAuthGetPublicKeyV2ApiService
+
 	EventManagerAvailableEventsGetV2Api *EventManagerAvailableEventsGetV2ApiService
 
 	EventManagerDeepBidTypeGetV30Api *EventManagerDeepBidTypeGetV30ApiService
@@ -648,6 +666,10 @@ type APIClient struct {
 	FileMaterialDetailV2Api *FileMaterialDetailV2ApiService
 
 	FileMaterialListV2Api *FileMaterialListV2ApiService
+
+	FilePlayableCreateV30Api *FilePlayableCreateV30ApiService
+
+	FilePlayableListV30Api *FilePlayableListV30ApiService
 
 	FilePreauditGetV30Api *FilePreauditGetV30ApiService
 
@@ -1425,6 +1447,8 @@ type APIClient struct {
 
 	StarComponentUpdateLinkV2Api *StarComponentUpdateLinkV2ApiService
 
+	StarCreateProjectV2Api *StarCreateProjectV2ApiService
+
 	StarDataTaskTimelineReportV2Api *StarDataTaskTimelineReportV2ApiService
 
 	StarDemandCreateAssignV2Api *StarDemandCreateAssignV2ApiService
@@ -1460,6 +1484,8 @@ type APIClient struct {
 	StarDemanderDemanderGetAuthorBindInfoV2Api *StarDemanderDemanderGetAuthorBindInfoV2ApiService
 
 	StarDemanderDemanderGetBindShareCodeV2Api *StarDemanderDemanderGetBindShareCodeV2ApiService
+
+	StarDemanderGetCarBrandListV2Api *StarDemanderGetCarBrandListV2ApiService
 
 	StarDemanderGetRegisteredIpActsV2Api *StarDemanderGetRegisteredIpActsV2ApiService
 
@@ -1558,6 +1584,8 @@ type APIClient struct {
 	StarTaskBindProjectV2Api *StarTaskBindProjectV2ApiService
 
 	StarTaskListByProjectV2Api *StarTaskListByProjectV2ApiService
+
+	StarUpdateProjectV2Api *StarUpdateProjectV2ApiService
 
 	StarUserGetAwemeAuthorIdV2Api *StarUserGetAwemeAuthorIdV2ApiService
 
@@ -2132,6 +2160,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AdvertiserDeliveryQualificationListV30Api = (*AdvertiserDeliveryQualificationListV30ApiService)(&c.common)
 	c.AdvertiserDeliveryQualificationSubmitV30Api = (*AdvertiserDeliveryQualificationSubmitV30ApiService)(&c.common)
 	c.AdvertiserFundDailyStatV2Api = (*AdvertiserFundDailyStatV2ApiService)(&c.common)
+	c.AdvertiserFundDetailGrantV2Api = (*AdvertiserFundDetailGrantV2ApiService)(&c.common)
 	c.AdvertiserFundGetV2Api = (*AdvertiserFundGetV2ApiService)(&c.common)
 	c.AdvertiserFundGrantTransactionGetV2Api = (*AdvertiserFundGrantTransactionGetV2ApiService)(&c.common)
 	c.AdvertiserFundTransactionGetV2Api = (*AdvertiserFundTransactionGetV2ApiService)(&c.common)
@@ -2307,6 +2336,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.CreativeProceduralCreativeUpdateV2Api = (*CreativeProceduralCreativeUpdateV2ApiService)(&c.common)
 	c.CreativeRejectReasonV2Api = (*CreativeRejectReasonV2ApiService)(&c.common)
 	c.CreativeStrategyListV2Api = (*CreativeStrategyListV2ApiService)(&c.common)
+	c.CustomerCenterAccountListV30Api = (*CustomerCenterAccountListV30ApiService)(&c.common)
+	c.CustomerCenterAccountOfflineListV30Api = (*CustomerCenterAccountOfflineListV30ApiService)(&c.common)
 	c.CustomerCenterAdvertiserCopyV2Api = (*CustomerCenterAdvertiserCopyV2ApiService)(&c.common)
 	c.CustomerCenterAdvertiserListV2Api = (*CustomerCenterAdvertiserListV2ApiService)(&c.common)
 	c.CustomerCenterAdvertiserTransferableListV2Api = (*CustomerCenterAdvertiserTransferableListV2ApiService)(&c.common)
@@ -2383,6 +2414,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.EnterpriseVideoInfoGetV10Api = (*EnterpriseVideoInfoGetV10ApiService)(&c.common)
 	c.EventManagerAbnormalAssetsGetV30Api = (*EventManagerAbnormalAssetsGetV30ApiService)(&c.common)
 	c.EventManagerAssetsCreateV2Api = (*EventManagerAssetsCreateV2ApiService)(&c.common)
+	c.EventManagerAuthAddPublicKeyV2Api = (*EventManagerAuthAddPublicKeyV2ApiService)(&c.common)
+	c.EventManagerAuthDisableV2Api = (*EventManagerAuthDisableV2ApiService)(&c.common)
+	c.EventManagerAuthEnableV2Api = (*EventManagerAuthEnableV2ApiService)(&c.common)
+	c.EventManagerAuthGetAllPublicKeysV2Api = (*EventManagerAuthGetAllPublicKeysV2ApiService)(&c.common)
+	c.EventManagerAuthGetAuthStatusV2Api = (*EventManagerAuthGetAuthStatusV2ApiService)(&c.common)
+	c.EventManagerAuthGetPublicKeyV2Api = (*EventManagerAuthGetPublicKeyV2ApiService)(&c.common)
 	c.EventManagerAvailableEventsGetV2Api = (*EventManagerAvailableEventsGetV2ApiService)(&c.common)
 	c.EventManagerDeepBidTypeGetV30Api = (*EventManagerDeepBidTypeGetV30ApiService)(&c.common)
 	c.EventManagerEventConfigsGetV2Api = (*EventManagerEventConfigsGetV2ApiService)(&c.common)
@@ -2407,6 +2444,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.FileMaterialBindV2Api = (*FileMaterialBindV2ApiService)(&c.common)
 	c.FileMaterialDetailV2Api = (*FileMaterialDetailV2ApiService)(&c.common)
 	c.FileMaterialListV2Api = (*FileMaterialListV2ApiService)(&c.common)
+	c.FilePlayableCreateV30Api = (*FilePlayableCreateV30ApiService)(&c.common)
+	c.FilePlayableListV30Api = (*FilePlayableListV30ApiService)(&c.common)
 	c.FilePreauditGetV30Api = (*FilePreauditGetV30ApiService)(&c.common)
 	c.FilePreauditSubmitV30Api = (*FilePreauditSubmitV30ApiService)(&c.common)
 	c.FileQualityGetV30Api = (*FileQualityGetV30ApiService)(&c.common)
@@ -2795,6 +2834,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarComponentQueryLinkV2Api = (*StarComponentQueryLinkV2ApiService)(&c.common)
 	c.StarComponentUpdateCommonComponentV2Api = (*StarComponentUpdateCommonComponentV2ApiService)(&c.common)
 	c.StarComponentUpdateLinkV2Api = (*StarComponentUpdateLinkV2ApiService)(&c.common)
+	c.StarCreateProjectV2Api = (*StarCreateProjectV2ApiService)(&c.common)
 	c.StarDataTaskTimelineReportV2Api = (*StarDataTaskTimelineReportV2ApiService)(&c.common)
 	c.StarDemandCreateAssignV2Api = (*StarDemandCreateAssignV2ApiService)(&c.common)
 	c.StarDemandCreateChallengeV2Api = (*StarDemandCreateChallengeV2ApiService)(&c.common)
@@ -2813,6 +2853,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarDemandSearchWordModifyV2Api = (*StarDemandSearchWordModifyV2ApiService)(&c.common)
 	c.StarDemanderDemanderGetAuthorBindInfoV2Api = (*StarDemanderDemanderGetAuthorBindInfoV2ApiService)(&c.common)
 	c.StarDemanderDemanderGetBindShareCodeV2Api = (*StarDemanderDemanderGetBindShareCodeV2ApiService)(&c.common)
+	c.StarDemanderGetCarBrandListV2Api = (*StarDemanderGetCarBrandListV2ApiService)(&c.common)
 	c.StarDemanderGetRegisteredIpActsV2Api = (*StarDemanderGetRegisteredIpActsV2ApiService)(&c.common)
 	c.StarDemanderUploadCpsTaskSalesV2Api = (*StarDemanderUploadCpsTaskSalesV2ApiService)(&c.common)
 	c.StarFeCommonServiceTalentDayGetCheckInCodeV2Api = (*StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService)(&c.common)
@@ -2862,6 +2903,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarStarAdUniteTaskListV2Api = (*StarStarAdUniteTaskListV2ApiService)(&c.common)
 	c.StarTaskBindProjectV2Api = (*StarTaskBindProjectV2ApiService)(&c.common)
 	c.StarTaskListByProjectV2Api = (*StarTaskListByProjectV2ApiService)(&c.common)
+	c.StarUpdateProjectV2Api = (*StarUpdateProjectV2ApiService)(&c.common)
 	c.StarUserGetAwemeAuthorIdV2Api = (*StarUserGetAwemeAuthorIdV2ApiService)(&c.common)
 	c.StarUserGetStarIdV2Api = (*StarUserGetStarIdV2ApiService)(&c.common)
 	c.StarVasAppendOrderToBoostItemGroupV2Api = (*StarVasAppendOrderToBoostItemGroupV2ApiService)(&c.common)

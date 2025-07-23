@@ -12,6 +12,7 @@ package models
 
 // StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInner struct for StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInner
 type StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInner struct {
-	AuthorBaseInfo  StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInnerAuthorBaseInfo  `json:"author_base_info"`
-	AuthorOrderInfo StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInnerAuthorOrderInfo `json:"author_order_info"`
+	AuthorBaseInfo      StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInnerAuthorBaseInfo       `json:"author_base_info"`
+	AuthorInvitaionInfo *StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInnerAuthorInvitaionInfo `json:"author_invitaion_info,omitempty"`
+	AuthorOrderInfo     StarMcnProviderGetTaskAuthorListV2ResponseDataAuthorListInnerAuthorOrderInfo      `json:"author_order_info"`
 }

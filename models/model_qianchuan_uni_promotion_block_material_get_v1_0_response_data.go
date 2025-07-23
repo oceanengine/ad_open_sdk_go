@@ -12,7 +12,9 @@ package models
 
 // QianchuanUniPromotionBlockMaterialGetV10ResponseData
 type QianchuanUniPromotionBlockMaterialGetV10ResponseData struct {
-	PageInfo *QianchuanUniPromotionBlockMaterialGetV10ResponseDataPageInfo `json:"page_info,omitempty"`
+	//
+	CarouselList []*QianchuanUniPromotionBlockMaterialGetV10ResponseDataCarouselListInner `json:"carousel_list,omitempty"`
+	PageInfo     *QianchuanUniPromotionBlockMaterialGetV10ResponseDataPageInfo            `json:"page_info,omitempty"`
 	//
 	VideoList []*QianchuanUniPromotionBlockMaterialGetV10ResponseDataVideoListInner `json:"video_list,omitempty"`
 }

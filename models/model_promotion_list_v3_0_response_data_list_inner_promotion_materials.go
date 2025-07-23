@@ -32,9 +32,11 @@ type PromotionListV30ResponseDataListInnerPromotionMaterials struct {
 	//
 	ExternalUrlParams *string `json:"external_url_params,omitempty"`
 	//
-	ImageMaterialList     []*PromotionListV30ResponseDataListInnerPromotionMaterialsImageMaterialListInner `json:"image_material_list,omitempty"`
-	IntelligentGeneration *PromotionListV30DataListPromotionMaterialsIntelligentGeneration                 `json:"intelligent_generation,omitempty"`
-	MiniProgramInfo       *PromotionListV30ResponseDataListInnerPromotionMaterialsMiniProgramInfo          `json:"mini_program_info,omitempty"`
+	ImageMaterialList []*PromotionListV30ResponseDataListInnerPromotionMaterialsImageMaterialListInner `json:"image_material_list,omitempty"`
+	//
+	InstantPlayMaterialList []*PromotionListV30ResponseDataListInnerPromotionMaterialsInstantPlayMaterialListInner `json:"instant_play_material_list,omitempty"`
+	IntelligentGeneration   *PromotionListV30DataListPromotionMaterialsIntelligentGeneration                       `json:"intelligent_generation,omitempty"`
+	MiniProgramInfo         *PromotionListV30ResponseDataListInnerPromotionMaterialsMiniProgramInfo                `json:"mini_program_info,omitempty"`
 	//
 	OpenUrl *string `json:"open_url,omitempty"`
 	//
@@ -55,6 +57,8 @@ type PromotionListV30ResponseDataListInnerPromotionMaterials struct {
 	TextAbstractList []*PromotionListV30ResponseDataListInnerPromotionMaterialsTextAbstractListInner `json:"text_abstract_list,omitempty"`
 	//
 	TitleMaterialList []*PromotionListV30ResponseDataListInnerPromotionMaterialsTitleMaterialListInner `json:"title_material_list,omitempty"`
+	//
+	TrialPlayMaterialList []*PromotionListV30ResponseDataListInnerPromotionMaterialsTrialPlayMaterialListInner `json:"trial_play_material_list,omitempty"`
 	//
 	Ulink     *string                                              `json:"ulink,omitempty"`
 	UlinkType *PromotionListV30DataListPromotionMaterialsUlinkType `json:"ulink_type,omitempty"`

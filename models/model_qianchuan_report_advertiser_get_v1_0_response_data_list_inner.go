@@ -12,200 +12,200 @@ package models
 
 // QianchuanReportAdvertiserGetV10ResponseDataListInner struct for QianchuanReportAdvertiserGetV10ResponseDataListInner
 type QianchuanReportAdvertiserGetV10ResponseDataListInner struct {
-	//
+	// 直接订单结算率（14天）
 	AdAllOrderCountSettleRate14d *float64 `json:"ad_all_order_count_settle_rate_14d,omitempty"`
-	//
+	// 直接订单结算率（7天）
 	AdAllOrderCountSettleRate7d *float64 `json:"ad_all_order_count_settle_rate_7d,omitempty"`
-	//
+	// 直接成交金额结算率（14天）
 	AdAllOrderGmvSettleRate14d *float64 `json:"ad_all_order_gmv_settle_rate_14d,omitempty"`
-	//
+	// 直接成交金额结算率（7天）
 	AdAllOrderGmvSettleRate7d *float64 `json:"ad_all_order_gmv_settle_rate_7d,omitempty"`
-	//
+	// 直接结算金额（14天）
 	AdAllOrderSettleAmount14d *float64 `json:"ad_all_order_settle_amount_14d,omitempty"`
-	//
+	// 直接结算金额（7天）
 	AdAllOrderSettleAmount7d *float64 `json:"ad_all_order_settle_amount_7d,omitempty"`
-	//
+	// 直接结算成本（14天）
 	AdAllOrderSettleCost14d *float64 `json:"ad_all_order_settle_cost_14d,omitempty"`
-	//
+	// 直接结算成本（7天）
 	AdAllOrderSettleCost7d *float64 `json:"ad_all_order_settle_cost_7d,omitempty"`
-	//
+	// 直接结算订单数（14天）
 	AdAllOrderSettleCount14d *float64 `json:"ad_all_order_settle_count_14d,omitempty"`
-	//
+	// 直接结算订单数（7天）
 	AdAllOrderSettleCount7d *float64 `json:"ad_all_order_settle_count_7d,omitempty"`
-	//
+	// 直接结算ROI（14天）
 	AdAllOrderSettleRoi14d *float64 `json:"ad_all_order_settle_roi_14d,omitempty"`
-	//
+	// 直接结算ROI（7天）
 	AdAllOrderSettleRoi7d *float64 `json:"ad_all_order_settle_roi_7d,omitempty"`
-	//
+	// 直接退款率（14天）
 	AdOrderGmvRefundRate14d *float64 `json:"ad_order_gmv_refund_rate_14d,omitempty"`
-	//
+	// 直接退款率（7天）
 	AdOrderGmvRefundRate7d *float64 `json:"ad_order_gmv_refund_rate_7d,omitempty"`
-	//
+	// 直接订单数退货率（14天）
 	AdOrderRefundRate14d *float64 `json:"ad_order_refund_rate_14d,omitempty"`
-	//
+	// 直接订单数退货率（7天）
 	AdOrderRefundRate7d *float64 `json:"ad_order_refund_rate_7d,omitempty"`
-	//
+	// 千川业务账户ID，对应账户类型为`QIANCHUAN`
 	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
-	//
+	// 7日总下单ROI
 	AllOrderCreateRoi7days *float64 `json:"all_order_create_roi_7days,omitempty"`
-	//
+	// 7日总成交订单
 	AllOrderPayCount7days *float64 `json:"all_order_pay_count_7days,omitempty"`
-	//
+	// 7日总成交金额
 	AllOrderPayGmv7days *float64 `json:"all_order_pay_gmv_7days,omitempty"`
-	//
+	// 7日总支付ROI
 	AllOrderPayRoi7days *float64 `json:"all_order_pay_roi_7days,omitempty"`
-	//
+	// 直接退款金额（14天）
 	AllOrderRefundAmount14d *float64 `json:"all_order_refund_amount_14d,omitempty"`
-	//
+	// 直接退款金额（7天）
 	AllOrderRefundAmount7d *float64 `json:"all_order_refund_amount_7d,omitempty"`
-	//
+	// 直接退款订单数（14天）
 	AllOrderRefundCount14d *float64 `json:"all_order_refund_count_14d,omitempty"`
-	//
+	// 直接退款订单数（7天）
 	AllOrderRefundCount7d *float64 `json:"all_order_refund_count_7d,omitempty"`
-	//
+	// 转化数（计费时间）
 	AttributionConvertCnt *float64 `json:"attribution_convert_cnt,omitempty"`
-	//
+	// 转化成本（计费时间）
 	AttributionConvertCost *float64 `json:"attribution_convert_cost,omitempty"`
-	//
+	// 转化率（计费时间）
 	AttributionConvertRate *float64 `json:"attribution_convert_rate,omitempty"`
-	//
+	// 深度转化次数（计费时间）
 	AttributionDeepConvertCnt *float64 `json:"attribution_deep_convert_cnt,omitempty"`
-	//
+	// 深度转化成本（计费时间）
 	AttributionDeepConvertCost *float64 `json:"attribution_deep_convert_cost,omitempty"`
-	//
+	// 深度转化率（计费时间）
 	AttributionDeepConvertRate *float64 `json:"attribution_deep_convert_rate,omitempty"`
-	//
+	// 点击次数
 	ClickCnt *float64 `json:"click_cnt,omitempty"`
-	//
+	// 转化次数
 	ConvertCnt *float64 `json:"convert_cnt,omitempty"`
-	//
+	// 转化成本
 	ConvertCost *float64 `json:"convert_cost,omitempty"`
-	//
+	// 转化率
 	ConvertRate *float64 `json:"convert_rate,omitempty"`
-	//
+	// 平均点击单价
 	CpcPlatform *float64 `json:"cpc_platform,omitempty"`
-	//
+	// 平均千次展示费用
 	CpmPlatform *float64 `json:"cpm_platform,omitempty"`
-	//
+	// 直接下单金额
 	CreateOrderAmount *float64 `json:"create_order_amount,omitempty"`
-	//
+	// 直接下单订单数
 	CreateOrderCount *float64 `json:"create_order_count,omitempty"`
-	//
+	// 下单智能优惠券金额
 	CreateOrderCouponAmount *float64 `json:"create_order_coupon_amount,omitempty"`
-	//
+	// 直接下单roi
 	CreateOrderRoi *float64 `json:"create_order_roi,omitempty"`
-	//
+	// 点击率
 	Ctr *float64 `json:"ctr,omitempty"`
-	//
+	// 深度转化次数
 	DeepConvertCnt *float64 `json:"deep_convert_cnt,omitempty"`
-	//
+	// 深度转化成本
 	DeepConvertCost *float64 `json:"deep_convert_cost,omitempty"`
-	//
+	// 深度转化率
 	DeepConvertRate *float64 `json:"deep_convert_rate,omitempty"`
-	//
+	// 新增粉丝数
 	DyFollow *float64 `json:"dy_follow,omitempty"`
-	//
+	// 转化数
 	EcpConvertCnt *float64 `json:"ecp_convert_cnt,omitempty"`
-	//
+	// 转化率
 	EcpConvertRate *float64 `json:"ecp_convert_rate,omitempty"`
-	//
+	// 转化成本
 	EcpCpaPlatform *float64 `json:"ecp_cpa_platform,omitempty"`
-	//
+	// 间接下单订单数
 	IndirectOrderCreateCount7days *float64 `json:"indirect_order_create_count_7days,omitempty"`
-	//
+	// 间接下单金额
 	IndirectOrderCreateGmv7days *float64 `json:"indirect_order_create_gmv_7days,omitempty"`
-	//
+	// 间接成交订单数
 	IndirectOrderPayCount7days *float64 `json:"indirect_order_pay_count_7days,omitempty"`
-	//
+	// 间接成交金额
 	IndirectOrderPayGmv7days *float64 `json:"indirect_order_pay_gmv_7days,omitempty"`
-	//
+	// 间接预售订单数
 	IndirectOrderPrepayCount7days *float64 `json:"indirect_order_prepay_count_7days,omitempty"`
-	//
+	// 间接预售金额
 	IndirectOrderPrepayGmv7days *float64 `json:"indirect_order_prepay_gmv_7days,omitempty"`
-	//
+	// 未完结间接预售订单预估金额
 	IndirectOrderUnfinishedEstimateGmv7days *int64 `json:"indirect_order_unfinished_estimate_gmv_7days,omitempty"`
-	//
+	// 成交客单价
 	LivePayOrderCostPerOrder *float64 `json:"live_pay_order_cost_per_order,omitempty"`
-	//
+	// 直播间商品点击次数
 	LubanLiveClickProductCnt *float64 `json:"luban_live_click_product_cnt,omitempty"`
-	//
+	// 直播间观看人次
 	LubanLiveEnterCnt *float64 `json:"luban_live_enter_cnt,omitempty"`
-	//
+	// 直接成交金额
 	PayOrderAmount *float64 `json:"pay_order_amount,omitempty"`
-	//
+	// 直接成交客单价
 	PayOrderCostPerOrder *float64 `json:"pay_order_cost_per_order,omitempty"`
-	//
+	// 直接成交订单数
 	PayOrderCount *float64 `json:"pay_order_count,omitempty"`
-	//
+	// 成交智能优惠券金额
 	PayOrderCouponAmount *float64 `json:"pay_order_coupon_amount,omitempty"`
-	//
+	// 25%进度播放数
 	Play25FeedBreak *float64 `json:"play_25_feed_break,omitempty"`
-	//
+	// 50%进度播放数
 	Play50FeedBreak *float64 `json:"play_50_feed_break,omitempty"`
-	//
+	// 75%进度播放数
 	Play75FeedBreak *float64 `json:"play_75_feed_break,omitempty"`
-	//
+	// 3s播放数
 	PlayDuration3s *float64 `json:"play_duration_3s,omitempty"`
-	//
+	// 播放完成数
 	PlayOver *float64 `json:"play_over,omitempty"`
-	//
+	// 完播率
 	PlayOverRate *float64 `json:"play_over_rate,omitempty"`
-	//
+	// 直接支付roi
 	PrepayAndPayOrderRoi *float64 `json:"prepay_and_pay_order_roi,omitempty"`
-	//
+	// 直接预售金额
 	PrepayOrderAmount *float64 `json:"prepay_order_amount,omitempty"`
-	//
+	// 直接预售订单数
 	PrepayOrderCount *float64 `json:"prepay_order_count,omitempty"`
-	//
+	// 抖音号首单新客数
 	QianchuanAuthorFirstOrderCnt *float64 `json:"qianchuan_author_first_order_cnt,omitempty"`
-	//
+	// 抖音号首单新客转化成本
 	QianchuanAuthorFirstOrderConvertCost *float64 `json:"qianchuan_author_first_order_convert_cost,omitempty"`
-	//
+	// 抖音号首单新客直接成交金额
 	QianchuanAuthorFirstOrderDirectPayGmv *float64 `json:"qianchuan_author_first_order_direct_pay_gmv,omitempty"`
-	//
+	// 抖音号首单新客直接支付roi
 	QianchuanAuthorFirstOrderDirectPayOrderRoi *float64 `json:"qianchuan_author_first_order_direct_pay_order_roi,omitempty"`
-	//
+	// 抖音号首单新客30天累计成交金额
 	QianchuanAuthorFirstOrderLtv30 *float64 `json:"qianchuan_author_first_order_ltv30,omitempty"`
-	//
+	// 抖音号首单新客订单占比
 	QianchuanAuthorFirstOrderRate *float64 `json:"qianchuan_author_first_order_rate,omitempty"`
-	//
+	// 抖音号首单新客30天累计支付roi
 	QianchuanAuthorFirstOrderRoi30 *float64 `json:"qianchuan_author_first_order_roi30,omitempty"`
-	//
+	// 品牌首单新客数
 	QianchuanBrandFirstOrderCnt *float64 `json:"qianchuan_brand_first_order_cnt,omitempty"`
-	//
+	// 品牌首单新客转化成本
 	QianchuanBrandFirstOrderConvertCost *float64 `json:"qianchuan_brand_first_order_convert_cost,omitempty"`
-	//
+	// 品牌首单新客直接成交金额
 	QianchuanBrandFirstOrderDirectPayGmv *float64 `json:"qianchuan_brand_first_order_direct_pay_gmv,omitempty"`
-	//
+	// 品牌首单新客直接支付roi
 	QianchuanBrandFirstOrderDirectPayOrderRoi *float64 `json:"qianchuan_brand_first_order_direct_pay_order_roi,omitempty"`
-	//
+	// 品牌首单新客30天累计成交金额
 	QianchuanBrandFirstOrderLtv30 *float64 `json:"qianchuan_brand_first_order_ltv30,omitempty"`
-	//
+	// 品牌首单新客订单占比
 	QianchuanBrandFirstOrderRate *float64 `json:"qianchuan_brand_first_order_rate,omitempty"`
-	//
+	// 品牌首单新客30天累计支付roi
 	QianchuanBrandFirstOrderRoi30 *float64 `json:"qianchuan_brand_first_order_roi30,omitempty"`
-	//
+	// 店铺首单新客人数
 	QianchuanFirstOrderCnt *float64 `json:"qianchuan_first_order_cnt,omitempty"`
-	//
+	// 店铺首单新客转化成本
 	QianchuanFirstOrderConvertCost *float64 `json:"qianchuan_first_order_convert_cost,omitempty"`
-	//
+	// 店铺首单新客直接成交金额
 	QianchuanFirstOrderDirectPayGmv *float64 `json:"qianchuan_first_order_direct_pay_gmv,omitempty"`
-	//
+	// 店铺首单新客直接支付ROI
 	QianchuanFirstOrderDirectPayOrderRoi *float64 `json:"qianchuan_first_order_direct_pay_order_roi,omitempty"`
-	//
+	// 店铺首单新客30天累计成交金额
 	QianchuanFirstOrderLtv30 *float64 `json:"qianchuan_first_order_ltv30,omitempty"`
-	//
+	// 店铺首单新客订单占比
 	QianchuanFirstOrderRate *float64 `json:"qianchuan_first_order_rate,omitempty"`
-	//
+	// 店铺首单新客30天累计支付ROI
 	QianchuanFirstOrderRoi30 *float64 `json:"qianchuan_first_order_roi30,omitempty"`
-	//
+	// 展示次数
 	ShowCnt *float64 `json:"show_cnt,omitempty"`
-	//
+	// 消耗
 	StatCost *float64 `json:"stat_cost,omitempty"`
-	//
+	// 数据起始时间，当请求传入time_granularity时返回 格式为：yyyy-MM-dd HH:mm:ss
 	StatDatetime *string `json:"stat_datetime,omitempty"`
-	//
+	// 播放数
 	TotalPlay *float64 `json:"total_play,omitempty"`
-	//
+	// 未完结直接预售订单预估金额
 	UnfinishedEstimateOrderGmv *int64 `json:"unfinished_estimate_order_gmv,omitempty"`
 }

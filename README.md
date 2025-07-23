@@ -230,6 +230,7 @@ Class | Method | HTTP request
 *AdvertiserDeliveryQualificationListV30Api* | **OpenApiV30AdvertiserDeliveryQualificationListGet** | **Get** /open_api/v3.0/advertiser/delivery_qualification/list/
 *AdvertiserDeliveryQualificationSubmitV30Api* | **OpenApiV30AdvertiserDeliveryQualificationSubmitPost** | **Post** /open_api/v3.0/advertiser/delivery_qualification/submit/
 *AdvertiserFundDailyStatV2Api* | **OpenApi2AdvertiserFundDailyStatGet** | **Get** /open_api/2/advertiser/fund/daily_stat/
+*AdvertiserFundDetailGrantV2Api* | **OpenApi2AdvertiserFundDetailGrantGet** | **Get** /open_api/2/advertiser/fund/detail_grant/
 *AdvertiserFundGetV2Api* | **OpenApi2AdvertiserFundGetGet** | **Get** /open_api/2/advertiser/fund/get/
 *AdvertiserFundGrantTransactionGetV2Api* | **OpenApi2AdvertiserFundGrantTransactionGetGet** | **Get** /open_api/2/advertiser/fund/grant_transaction/get/
 *AdvertiserFundTransactionGetV2Api* | **OpenApi2AdvertiserFundTransactionGetGet** | **Get** /open_api/2/advertiser/fund/transaction/get/
@@ -405,6 +406,8 @@ Class | Method | HTTP request
 *CreativeProceduralCreativeUpdateV2Api* | **OpenApi2CreativeProceduralCreativeUpdatePost** | **Post** /open_api/2/creative/procedural_creative/update/
 *CreativeRejectReasonV2Api* | **OpenApi2CreativeRejectReasonGet** | **Get** /open_api/2/creative/reject_reason/
 *CreativeStrategyListV2Api* | **OpenApi2CreativeStrategyListGet** | **Get** /open_api/2/creative/strategy/list/
+*CustomerCenterAccountListV30Api* | **OpenApiV30CustomerCenterAccountListGet** | **Get** /open_api/v3.0/customer_center/account/list/
+*CustomerCenterAccountOfflineListV30Api* | **OpenApiV30CustomerCenterAccountOfflineListGet** | **Get** /open_api/v3.0/customer_center/account/offline_list/
 *CustomerCenterAdvertiserCopyV2Api* | **OpenApi2CustomerCenterAdvertiserCopyPost** | **Post** /open_api/2/customer_center/advertiser/copy/
 *CustomerCenterAdvertiserListV2Api* | **OpenApi2CustomerCenterAdvertiserListGet** | **Get** /open_api/2/customer_center/advertiser/list/
 *CustomerCenterAdvertiserTransferableListV2Api* | **OpenApi2CustomerCenterAdvertiserTransferableListGet** | **Get** /open_api/2/customer_center/advertiser/transferable/list/
@@ -481,6 +484,12 @@ Class | Method | HTTP request
 *EnterpriseVideoInfoGetV10Api* | **OpenApiV10EnterpriseVideoInfoGetGet** | **Get** /open_api/v1.0/enterprise/video/info/get/
 *EventManagerAbnormalAssetsGetV30Api* | **OpenApiV30EventManagerAbnormalAssetsGetGet** | **Get** /open_api/v3.0/event_manager/abnormal_assets/get/
 *EventManagerAssetsCreateV2Api* | **OpenApi2EventManagerAssetsCreatePost** | **Post** /open_api/2/event_manager/assets/create/
+*EventManagerAuthAddPublicKeyV2Api* | **OpenApi2EventManagerAuthAddPublicKeyPost** | **Post** /open_api/2/event_manager/auth/add_public_key/
+*EventManagerAuthDisableV2Api* | **OpenApi2EventManagerAuthDisablePost** | **Post** /open_api/2/event_manager/auth/disable/
+*EventManagerAuthEnableV2Api* | **OpenApi2EventManagerAuthEnablePost** | **Post** /open_api/2/event_manager/auth/enable/
+*EventManagerAuthGetAllPublicKeysV2Api* | **OpenApi2EventManagerAuthGetAllPublicKeysGet** | **Get** /open_api/2/event_manager/auth/get_all_public_keys/
+*EventManagerAuthGetAuthStatusV2Api* | **OpenApi2EventManagerAuthGetAuthStatusGet** | **Get** /open_api/2/event_manager/auth/get_auth_status/
+*EventManagerAuthGetPublicKeyV2Api* | **OpenApi2EventManagerAuthGetPublicKeyGet** | **Get** /open_api/2/event_manager/auth/get_public_key/
 *EventManagerAvailableEventsGetV2Api* | **OpenApi2EventManagerAvailableEventsGetGet** | **Get** /open_api/2/event_manager/available_events/get/
 *EventManagerDeepBidTypeGetV30Api* | **OpenApiV30EventManagerDeepBidTypeGetGet** | **Get** /open_api/v3.0/event_manager/deep_bid_type/get/
 *EventManagerEventConfigsGetV2Api* | **OpenApi2EventManagerEventConfigsGetGet** | **Get** /open_api/2/event_manager/event_configs/get/
@@ -505,6 +514,8 @@ Class | Method | HTTP request
 *FileMaterialBindV2Api* | **OpenApi2FileMaterialBindPost** | **Post** /open_api/2/file/material/bind/
 *FileMaterialDetailV2Api* | **OpenApi2FileMaterialDetailGet** | **Get** /open_api/2/file/material/detail/
 *FileMaterialListV2Api* | **OpenApi2FileMaterialListGet** | **Get** /open_api/2/file/material/list/
+*FilePlayableCreateV30Api* | **OpenApiV30FilePlayableCreatePost** | **Post** /open_api/v3.0/file/playable/create/
+*FilePlayableListV30Api* | **OpenApiV30FilePlayableListGet** | **Get** /open_api/v3.0/file/playable/list/
 *FilePreauditGetV30Api* | **OpenApiV30FilePreauditGetGet** | **Get** /open_api/v3.0/file/preaudit/get/
 *FilePreauditSubmitV30Api* | **OpenApiV30FilePreauditSubmitPost** | **Post** /open_api/v3.0/file/preaudit/submit/
 *FileQualityGetV30Api* | **OpenApiV30FileQualityGetGet** | **Get** /open_api/v3.0/file/quality/get/
@@ -893,6 +904,7 @@ Class | Method | HTTP request
 *StarComponentQueryLinkV2Api* | **OpenApi2StarComponentQueryLinkGet** | **Get** /open_api/2/star/component/query_link/
 *StarComponentUpdateCommonComponentV2Api* | **OpenApi2StarComponentUpdateCommonComponentPost** | **Post** /open_api/2/star/component/update_common_component/
 *StarComponentUpdateLinkV2Api* | **OpenApi2StarComponentUpdateLinkPost** | **Post** /open_api/2/star/component/update_link/
+*StarCreateProjectV2Api* | **OpenApi2StarCreateProjectPost** | **Post** /open_api/2/star/create/project/
 *StarDataTaskTimelineReportV2Api* | **OpenApi2StarDataTaskTimelineReportGet** | **Get** /open_api/2/star/data/task_timeline_report/
 *StarDemandCreateAssignV2Api* | **OpenApi2StarDemandCreateAssignPost** | **Post** /open_api/2/star/demand/create_assign/
 *StarDemandCreateChallengeV2Api* | **OpenApi2StarDemandCreateChallengePost** | **Post** /open_api/2/star/demand/create_challenge/
@@ -911,6 +923,7 @@ Class | Method | HTTP request
 *StarDemandSearchWordModifyV2Api* | **OpenApi2StarDemandSearchWordModifyPost** | **Post** /open_api/2/star/demand/search_word/modify/
 *StarDemanderDemanderGetAuthorBindInfoV2Api* | **OpenApi2StarDemanderDemanderGetAuthorBindInfoGet** | **Get** /open_api/2/star/demander/demander_get_author_bind_info/
 *StarDemanderDemanderGetBindShareCodeV2Api* | **OpenApi2StarDemanderDemanderGetBindShareCodeGet** | **Get** /open_api/2/star/demander/demander_get_bind_share_code/
+*StarDemanderGetCarBrandListV2Api* | **OpenApi2StarDemanderGetCarBrandListGet** | **Get** /open_api/2/star/demander/get_car_brand_list/
 *StarDemanderGetRegisteredIpActsV2Api* | **OpenApi2StarDemanderGetRegisteredIpActsGet** | **Get** /open_api/2/star/demander/get_registered_ip_acts/
 *StarDemanderUploadCpsTaskSalesV2Api* | **OpenApi2StarDemanderUploadCpsTaskSalesPost** | **Post** /open_api/2/star/demander_upload_cps_task_sales/
 *StarFeCommonServiceTalentDayGetCheckInCodeV2Api* | **OpenApi2StarFeCommonServiceTalentDayGetCheckInCodeGet** | **Get** /open_api/2/star/fe_common_service/talent_day/get_check_in_code/
@@ -960,6 +973,7 @@ Class | Method | HTTP request
 *StarStarAdUniteTaskListV2Api* | **OpenApi2StarStarAdUniteTaskListGet** | **Get** /open_api/2/star/star_ad_unite_task/list/
 *StarTaskBindProjectV2Api* | **OpenApi2StarTaskBindProjectPost** | **Post** /open_api/2/star/task/bind_project/
 *StarTaskListByProjectV2Api* | **OpenApi2StarTaskListByProjectGet** | **Get** /open_api/2/star/task/list_by_project/
+*StarUpdateProjectV2Api* | **OpenApi2StarUpdateProjectPost** | **Post** /open_api/2/star/update/project/
 *StarUserGetAwemeAuthorIdV2Api* | **OpenApi2StarUserGetAwemeAuthorIdGet** | **Get** /open_api/2/star/user/get_aweme_author_id/
 *StarUserGetStarIdV2Api* | **OpenApi2StarUserGetStarIdGet** | **Get** /open_api/2/star/user/get_star_id/
 *StarVasAppendOrderToBoostItemGroupV2Api* | **OpenApi2StarVasAppendOrderToBoostItemGroupPost** | **Post** /open_api/2/star/vas/append_order_to_boost_item_group/

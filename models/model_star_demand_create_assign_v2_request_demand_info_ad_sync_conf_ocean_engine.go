@@ -18,6 +18,8 @@ type StarDemandCreateAssignV2RequestDemandInfoAdSyncConfOceanEngine struct {
 	AdSyncOrigin *int64 `json:"ad_sync_origin,omitempty"`
 	// 广告主ID
 	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
+	// 多广告主id
+	AdvertiserIds []int64 `json:"advertiser_ids,omitempty"`
 	// 是否自动投放 0或不填 = 否；1 = 是
 	AutoSync *int64 `json:"auto_sync,omitempty"`
 	// 推广产品链接

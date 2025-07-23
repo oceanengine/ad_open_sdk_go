@@ -15,21 +15,21 @@ type ReportAdvertiserGetV2DataListInventory string
 
 // List of report_advertiser_get_v2_data_list_inventory
 const (
-	INVENTORY_VIDEO_FEED_ReportAdvertiserGetV2DataListInventory   ReportAdvertiserGetV2DataListInventory = "INVENTORY_VIDEO_FEED"
-	UNION_BOUTIQUE_GAME_ReportAdvertiserGetV2DataListInventory    ReportAdvertiserGetV2DataListInventory = "UNION_BOUTIQUE_GAME"
-	INVENTORY_PIPIXIA_ReportAdvertiserGetV2DataListInventory      ReportAdvertiserGetV2DataListInventory = "INVENTORY_PIPIXIA"
 	INVENTORY_UNION_SLOT_ReportAdvertiserGetV2DataListInventory   ReportAdvertiserGetV2DataListInventory = "INVENTORY_UNION_SLOT"
-	INVENTORY_SEARCH_ReportAdvertiserGetV2DataListInventory       ReportAdvertiserGetV2DataListInventory = "INVENTORY_SEARCH"
-	INVENTORY_AWEME_FEED_ReportAdvertiserGetV2DataListInventory   ReportAdvertiserGetV2DataListInventory = "INVENTORY_AWEME_FEED"
 	INVENTORY_FACE_U_ReportAdvertiserGetV2DataListInventory       ReportAdvertiserGetV2DataListInventory = "INVENTORY_FACE_U"
-	INVENTORY_HOTSOON_FEED_ReportAdvertiserGetV2DataListInventory ReportAdvertiserGetV2DataListInventory = "INVENTORY_HOTSOON_FEED"
-	INVENTORY_AUTOMOBILE_ReportAdvertiserGetV2DataListInventory   ReportAdvertiserGetV2DataListInventory = "INVENTORY_AUTOMOBILE"
+	INVENTORY_AWEME_FEED_ReportAdvertiserGetV2DataListInventory   ReportAdvertiserGetV2DataListInventory = "INVENTORY_AWEME_FEED"
+	INVENTORY_PIPIXIA_ReportAdvertiserGetV2DataListInventory      ReportAdvertiserGetV2DataListInventory = "INVENTORY_PIPIXIA"
+	INVENTORY_TOMATO_NOVEL_ReportAdvertiserGetV2DataListInventory ReportAdvertiserGetV2DataListInventory = "INVENTORY_TOMATO_NOVEL"
+	INVENTORY_UNIVERSAL_ReportAdvertiserGetV2DataListInventory    ReportAdvertiserGetV2DataListInventory = "INVENTORY_UNIVERSAL"
+	UNION_BOUTIQUE_GAME_ReportAdvertiserGetV2DataListInventory    ReportAdvertiserGetV2DataListInventory = "UNION_BOUTIQUE_GAME"
 	INVENTORY_BEAUTY_ReportAdvertiserGetV2DataListInventory       ReportAdvertiserGetV2DataListInventory = "INVENTORY_BEAUTY"
+	INVENTORY_VIDEO_FEED_ReportAdvertiserGetV2DataListInventory   ReportAdvertiserGetV2DataListInventory = "INVENTORY_VIDEO_FEED"
+	INVENTORY_SEARCH_ReportAdvertiserGetV2DataListInventory       ReportAdvertiserGetV2DataListInventory = "INVENTORY_SEARCH"
+	INVENTORY_HOTSOON_FEED_ReportAdvertiserGetV2DataListInventory ReportAdvertiserGetV2DataListInventory = "INVENTORY_HOTSOON_FEED"
+	INVENTORY_FEED_ReportAdvertiserGetV2DataListInventory         ReportAdvertiserGetV2DataListInventory = "INVENTORY_FEED"
+	INVENTORY_AUTOMOBILE_ReportAdvertiserGetV2DataListInventory   ReportAdvertiserGetV2DataListInventory = "INVENTORY_AUTOMOBILE"
 	INVENTORY_STUDY_ReportAdvertiserGetV2DataListInventory        ReportAdvertiserGetV2DataListInventory = "INVENTORY_STUDY"
 	INVENTORY_FURNISH_ReportAdvertiserGetV2DataListInventory      ReportAdvertiserGetV2DataListInventory = "INVENTORY_FURNISH"
-	INVENTORY_FEED_ReportAdvertiserGetV2DataListInventory         ReportAdvertiserGetV2DataListInventory = "INVENTORY_FEED"
-	INVENTORY_UNIVERSAL_ReportAdvertiserGetV2DataListInventory    ReportAdvertiserGetV2DataListInventory = "INVENTORY_UNIVERSAL"
-	INVENTORY_TOMATO_NOVEL_ReportAdvertiserGetV2DataListInventory ReportAdvertiserGetV2DataListInventory = "INVENTORY_TOMATO_NOVEL"
 )
 
 // Ptr returns reference to report_advertiser_get_v2_data_list_inventory value

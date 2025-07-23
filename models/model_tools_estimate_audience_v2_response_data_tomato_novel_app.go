@@ -14,4 +14,6 @@ package models
 type ToolsEstimateAudienceV2ResponseDataTomatoNovelApp struct {
 	//
 	Num *int64 `json:"num,omitempty"`
+	//
+	Show *int64 `json:"show,omitempty"`
 }

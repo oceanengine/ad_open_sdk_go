@@ -21,6 +21,10 @@ type StarDemandCreateAssignV2RequestDemandInfo struct {
 	Attachments []string `json:"attachments,omitempty"`
 	// 品牌名称(50字内)
 	BrandName string `json:"brand_name"`
+	//
+	CarBrandList []*StarDemandCreateAssignV2RequestDemandInfoCarBrandListInner `json:"car_brand_list,omitempty"`
+	// 营销场景
+	CarMarketingSceneType *int64 `json:"car_marketing_scene_type,omitempty"`
 	// 组件点击监测链接 https开头的URL
 	ComponentClickMonitorUrl *string                                                 `json:"component_click_monitor_url,omitempty"`
 	ComponentInfo            *StarDemandCreateAssignV2RequestDemandInfoComponentInfo `json:"component_info,omitempty"`

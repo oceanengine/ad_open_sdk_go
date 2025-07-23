@@ -31,9 +31,11 @@ type PromotionCreateV30RequestPromotionMaterials struct {
 	// 落地页检测参数
 	ExternalUrlParams *string `json:"external_url_params,omitempty"`
 	//
-	ImageMaterialList     []*PromotionCreateV30RequestPromotionMaterialsImageMaterialListInner `json:"image_material_list,omitempty"`
-	IntelligentGeneration *PromotionCreateV30PromotionMaterialsIntelligentGeneration           `json:"intelligent_generation,omitempty"`
-	MiniProgramInfo       *PromotionCreateV30RequestPromotionMaterialsMiniProgramInfo          `json:"mini_program_info,omitempty"`
+	ImageMaterialList []*PromotionCreateV30RequestPromotionMaterialsImageMaterialListInner `json:"image_material_list,omitempty"`
+	//
+	InstantPlayMaterialList []*PromotionCreateV30RequestPromotionMaterialsInstantPlayMaterialListInner `json:"instant_play_material_list,omitempty"`
+	IntelligentGeneration   *PromotionCreateV30PromotionMaterialsIntelligentGeneration                 `json:"intelligent_generation,omitempty"`
+	MiniProgramInfo         *PromotionCreateV30RequestPromotionMaterialsMiniProgramInfo                `json:"mini_program_info,omitempty"`
 	//
 	OpenUrl *string `json:"open_url,omitempty"`
 	// 直达链接字段选择，当dpa_open_url_type为DPA必填
@@ -52,6 +54,8 @@ type PromotionCreateV30RequestPromotionMaterials struct {
 	TextAbstractList []*PromotionCreateV30RequestPromotionMaterialsTextAbstractListInner `json:"text_abstract_list,omitempty"`
 	//
 	TitleMaterialList []*PromotionCreateV30RequestPromotionMaterialsTitleMaterialListInner `json:"title_material_list,omitempty"`
+	//
+	TrialPlayMaterialList []*PromotionCreateV30RequestPromotionMaterialsTrialPlayMaterialListInner `json:"trial_play_material_list,omitempty"`
 	//
 	Ulink     *string                                        `json:"ulink,omitempty"`
 	UlinkType *PromotionCreateV30PromotionMaterialsUlinkType `json:"ulink_type,omitempty"`

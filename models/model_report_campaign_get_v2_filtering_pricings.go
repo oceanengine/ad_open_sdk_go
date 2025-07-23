@@ -15,13 +15,13 @@ type ReportCampaignGetV2FilteringPricings string
 
 // List of report_campaign_get_v2_filtering_pricings
 const (
-	PRICING_OCPC_ReportCampaignGetV2FilteringPricings ReportCampaignGetV2FilteringPricings = "PRICING_OCPC"
-	PRICING_CPA_ReportCampaignGetV2FilteringPricings  ReportCampaignGetV2FilteringPricings = "PRICING_CPA"
 	PRICING_CPM_ReportCampaignGetV2FilteringPricings  ReportCampaignGetV2FilteringPricings = "PRICING_CPM"
 	PRICING_ECPC_ReportCampaignGetV2FilteringPricings ReportCampaignGetV2FilteringPricings = "PRICING_ECPC"
+	PRICING_CPA_ReportCampaignGetV2FilteringPricings  ReportCampaignGetV2FilteringPricings = "PRICING_CPA"
 	PRICING_CPC_ReportCampaignGetV2FilteringPricings  ReportCampaignGetV2FilteringPricings = "PRICING_CPC"
-	PRICING_CPV_ReportCampaignGetV2FilteringPricings  ReportCampaignGetV2FilteringPricings = "PRICING_CPV"
 	PRICING_OCPM_ReportCampaignGetV2FilteringPricings ReportCampaignGetV2FilteringPricings = "PRICING_OCPM"
+	PRICING_CPV_ReportCampaignGetV2FilteringPricings  ReportCampaignGetV2FilteringPricings = "PRICING_CPV"
+	PRICING_OCPC_ReportCampaignGetV2FilteringPricings ReportCampaignGetV2FilteringPricings = "PRICING_OCPC"
 )
 
 // Ptr returns reference to report_campaign_get_v2_filtering_pricings value

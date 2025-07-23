@@ -102,13 +102,13 @@ func (a *DpaTemplateGetV2ApiService) getExecute(r *ApiOpenApi2DpaTemplateGetGetR
 		return localVarReturnValue, nil, ReportError("advertiserId must be greater than 1")
 	}
 
+	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
 	}
-	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

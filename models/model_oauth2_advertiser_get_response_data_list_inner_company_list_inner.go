@@ -12,8 +12,8 @@ package models
 
 // Oauth2AdvertiserGetResponseDataListInnerCompanyListInner struct for Oauth2AdvertiserGetResponseDataListInnerCompanyListInner
 type Oauth2AdvertiserGetResponseDataListInnerCompanyListInner struct {
-	//
+	// 客户公司ID
 	CustomerCompanyId *int64 `json:"customer_company_id,omitempty"`
-	//
+	// 客户公司名称
 	CustomerCompanyName *string `json:"customer_company_name,omitempty"`
 }

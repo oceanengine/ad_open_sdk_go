@@ -12,18 +12,23 @@ package models
 
 // Oauth2AdvertiserGetResponseDataListInner struct for Oauth2AdvertiserGetResponseDataListInner
 type Oauth2AdvertiserGetResponseDataListInner struct {
-	//
+	// 账户ID
+	AccountId *int64 `json:"account_id,omitempty"`
+	// 账户名称
+	AccountName *string `json:"account_name,omitempty"`
+	// 账户角色（废弃）
 	AccountRole *string `json:"account_role,omitempty"`
-	//
-	AccountStringId *string `json:"account_string_id,omitempty"`
-	//
+	// 账户ID，仅当account_role=PLATFORM_ROLE_AWEME抖音号时有效，即为aweme_sec_uid，可用于Dou+接口调用
+	AccountStringId *string                                 `json:"account_string_id,omitempty"`
+	AccountType     *Oauth2AdvertiserGetDataListAccountType `json:"account_type,omitempty"`
+	// 账户ID（废弃）
 	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
-	//
+	// 账户名称（废弃）
 	AdvertiserName *string `json:"advertiser_name,omitempty"`
-	//
+	// 广告主角色（废弃）
 	AdvertiserRole *int64 `json:"advertiser_role,omitempty"`
-	//
+	// 代理商账户下授权公司范围，仅当授权页面授权代理商账户时有效 • company_list为空则代表当前代理商账户下所有adv均可访问 • company_list不为空则代表仅能访问列表内部分客户下业务账户
 	CompanyList []*Oauth2AdvertiserGetResponseDataListInnerCompanyListInner `json:"company_list,omitempty"`
-	//
+	// 授权有效性 注意：false则表示账号与账户已无管理关系，无权限继续操作使用，需在对应账户所属业务平台重新调整管理关系
 	IsValid *bool `json:"is_valid,omitempty"`
 }

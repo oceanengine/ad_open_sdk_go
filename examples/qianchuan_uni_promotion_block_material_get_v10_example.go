@@ -26,6 +26,7 @@ type ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequestExample struct 
 	AdvertiserId  int64                                                 `json:"advertiser_id"`
 	AwemeId       int64                                                 `json:"aweme_id"`
 	MarketingGoal QianchuanUniPromotionBlockMaterialGetV10MarketingGoal `json:"marketing_goal"`
+	MediaType     QianchuanUniPromotionBlockMaterialGetV10MediaType     `json:"media_type,omitempty"`
 	ProductId     []int64                                               `json:"product_id,omitempty"`
 	Filtering     QianchuanUniPromotionBlockMaterialGetV10Filtering     `json:"filtering,omitempty"`
 	OrderField    QianchuanUniPromotionBlockMaterialGetV10OrderField    `json:"order_field,omitempty"`
@@ -51,7 +52,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanUniPromotionBlockMaterialGetV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).AwemeId(request.AwemeId).MarketingGoal(request.MarketingGoal).ProductId(request.ProductId).Filtering(request.Filtering).OrderField(request.OrderField).Cursor(request.Cursor).
+		AdvertiserId(request.AdvertiserId).AwemeId(request.AwemeId).MarketingGoal(request.MarketingGoal).MediaType(request.MediaType).ProductId(request.ProductId).Filtering(request.Filtering).OrderField(request.OrderField).Cursor(request.Cursor).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

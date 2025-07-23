@@ -12,7 +12,7 @@ package models
 
 // QianchuanReportAdvertiserGetV10Filtering
 type QianchuanReportAdvertiserGetV10Filtering struct {
-	//
+	// 按抖音id过滤
 	AwemeIds       []int64                                                 `json:"aweme_ids,omitempty"`
 	CampaignScene  *QianchuanReportAdvertiserGetV10FilteringCampaignScene  `json:"campaign_scene,omitempty"`
 	MarketingGoal  QianchuanReportAdvertiserGetV10FilteringMarketingGoal   `json:"marketing_goal"`

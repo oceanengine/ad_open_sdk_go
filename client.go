@@ -1,5 +1,5 @@
 /*
-API version: 1.1.61
+API version: 1.1.62
 */
 package ad_open_sdk_go
 
@@ -121,6 +121,10 @@ func (c *Client) AdvertiserDeliveryQualificationSubmitV30Api() *api.AdvertiserDe
 
 func (c *Client) AdvertiserFundDailyStatV2Api() *api.AdvertiserFundDailyStatV2ApiService {
 	return c.ApiClient.AdvertiserFundDailyStatV2Api
+}
+
+func (c *Client) AdvertiserFundDetailGrantV2Api() *api.AdvertiserFundDetailGrantV2ApiService {
+	return c.ApiClient.AdvertiserFundDetailGrantV2Api
 }
 
 func (c *Client) AdvertiserFundGetV2Api() *api.AdvertiserFundGetV2ApiService {
@@ -823,6 +827,14 @@ func (c *Client) CreativeStrategyListV2Api() *api.CreativeStrategyListV2ApiServi
 	return c.ApiClient.CreativeStrategyListV2Api
 }
 
+func (c *Client) CustomerCenterAccountListV30Api() *api.CustomerCenterAccountListV30ApiService {
+	return c.ApiClient.CustomerCenterAccountListV30Api
+}
+
+func (c *Client) CustomerCenterAccountOfflineListV30Api() *api.CustomerCenterAccountOfflineListV30ApiService {
+	return c.ApiClient.CustomerCenterAccountOfflineListV30Api
+}
+
 func (c *Client) CustomerCenterAdvertiserCopyV2Api() *api.CustomerCenterAdvertiserCopyV2ApiService {
 	return c.ApiClient.CustomerCenterAdvertiserCopyV2Api
 }
@@ -1127,6 +1139,30 @@ func (c *Client) EventManagerAssetsCreateV2Api() *api.EventManagerAssetsCreateV2
 	return c.ApiClient.EventManagerAssetsCreateV2Api
 }
 
+func (c *Client) EventManagerAuthAddPublicKeyV2Api() *api.EventManagerAuthAddPublicKeyV2ApiService {
+	return c.ApiClient.EventManagerAuthAddPublicKeyV2Api
+}
+
+func (c *Client) EventManagerAuthDisableV2Api() *api.EventManagerAuthDisableV2ApiService {
+	return c.ApiClient.EventManagerAuthDisableV2Api
+}
+
+func (c *Client) EventManagerAuthEnableV2Api() *api.EventManagerAuthEnableV2ApiService {
+	return c.ApiClient.EventManagerAuthEnableV2Api
+}
+
+func (c *Client) EventManagerAuthGetAllPublicKeysV2Api() *api.EventManagerAuthGetAllPublicKeysV2ApiService {
+	return c.ApiClient.EventManagerAuthGetAllPublicKeysV2Api
+}
+
+func (c *Client) EventManagerAuthGetAuthStatusV2Api() *api.EventManagerAuthGetAuthStatusV2ApiService {
+	return c.ApiClient.EventManagerAuthGetAuthStatusV2Api
+}
+
+func (c *Client) EventManagerAuthGetPublicKeyV2Api() *api.EventManagerAuthGetPublicKeyV2ApiService {
+	return c.ApiClient.EventManagerAuthGetPublicKeyV2Api
+}
+
 func (c *Client) EventManagerAvailableEventsGetV2Api() *api.EventManagerAvailableEventsGetV2ApiService {
 	return c.ApiClient.EventManagerAvailableEventsGetV2Api
 }
@@ -1221,6 +1257,14 @@ func (c *Client) FileMaterialDetailV2Api() *api.FileMaterialDetailV2ApiService {
 
 func (c *Client) FileMaterialListV2Api() *api.FileMaterialListV2ApiService {
 	return c.ApiClient.FileMaterialListV2Api
+}
+
+func (c *Client) FilePlayableCreateV30Api() *api.FilePlayableCreateV30ApiService {
+	return c.ApiClient.FilePlayableCreateV30Api
+}
+
+func (c *Client) FilePlayableListV30Api() *api.FilePlayableListV30ApiService {
+	return c.ApiClient.FilePlayableListV30Api
 }
 
 func (c *Client) FilePreauditGetV30Api() *api.FilePreauditGetV30ApiService {
@@ -2775,6 +2819,10 @@ func (c *Client) StarComponentUpdateLinkV2Api() *api.StarComponentUpdateLinkV2Ap
 	return c.ApiClient.StarComponentUpdateLinkV2Api
 }
 
+func (c *Client) StarCreateProjectV2Api() *api.StarCreateProjectV2ApiService {
+	return c.ApiClient.StarCreateProjectV2Api
+}
+
 func (c *Client) StarDataTaskTimelineReportV2Api() *api.StarDataTaskTimelineReportV2ApiService {
 	return c.ApiClient.StarDataTaskTimelineReportV2Api
 }
@@ -2845,6 +2893,10 @@ func (c *Client) StarDemanderDemanderGetAuthorBindInfoV2Api() *api.StarDemanderD
 
 func (c *Client) StarDemanderDemanderGetBindShareCodeV2Api() *api.StarDemanderDemanderGetBindShareCodeV2ApiService {
 	return c.ApiClient.StarDemanderDemanderGetBindShareCodeV2Api
+}
+
+func (c *Client) StarDemanderGetCarBrandListV2Api() *api.StarDemanderGetCarBrandListV2ApiService {
+	return c.ApiClient.StarDemanderGetCarBrandListV2Api
 }
 
 func (c *Client) StarDemanderGetRegisteredIpActsV2Api() *api.StarDemanderGetRegisteredIpActsV2ApiService {
@@ -3041,6 +3093,10 @@ func (c *Client) StarTaskBindProjectV2Api() *api.StarTaskBindProjectV2ApiService
 
 func (c *Client) StarTaskListByProjectV2Api() *api.StarTaskListByProjectV2ApiService {
 	return c.ApiClient.StarTaskListByProjectV2Api
+}
+
+func (c *Client) StarUpdateProjectV2Api() *api.StarUpdateProjectV2ApiService {
+	return c.ApiClient.StarUpdateProjectV2Api
 }
 
 func (c *Client) StarUserGetAwemeAuthorIdV2Api() *api.StarUserGetAwemeAuthorIdV2ApiService {
