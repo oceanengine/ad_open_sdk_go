@@ -15,8 +15,8 @@ type ToolsPlayableCloudGameListV2FilteringOrientation string
 
 // List of tools_playable_cloud_game_list_v2_filtering_orientation
 const (
-	VERTICAL_ToolsPlayableCloudGameListV2FilteringOrientation   ToolsPlayableCloudGameListV2FilteringOrientation = "VERTICAL"
 	HORIZONTAL_ToolsPlayableCloudGameListV2FilteringOrientation ToolsPlayableCloudGameListV2FilteringOrientation = "HORIZONTAL"
+	VERTICAL_ToolsPlayableCloudGameListV2FilteringOrientation   ToolsPlayableCloudGameListV2FilteringOrientation = "VERTICAL"
 )
 
 // Ptr returns reference to tools_playable_cloud_game_list_v2_filtering_orientation value

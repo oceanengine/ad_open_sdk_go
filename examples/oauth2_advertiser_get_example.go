@@ -23,8 +23,7 @@ import (
 )
 
 type ApiOpenApiOauth2AdvertiserGetGetRequestExample struct {
-	AccessToken  string `json:"access-token,omitempty"`
-	AccessToken2 string `json:"access_token,omitempty"`
+	AccessToken string `json:"access_token,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/oauth2/advertiser/get/ Get
@@ -45,7 +44,7 @@ func main() {
 
 	resp, httpRes, err := apiClient.Oauth2AdvertiserGetApi().
 		Get(ctx).
-		AccessToken(request.AccessToken).AccessToken2(request.AccessToken2).
+		AccessToken(request.AccessToken).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

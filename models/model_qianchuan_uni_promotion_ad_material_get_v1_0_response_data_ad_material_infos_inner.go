@@ -14,6 +14,8 @@ package models
 type QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInner struct {
 	AuditStatus *QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosAuditStatus `json:"audit_status,omitempty"`
 	//
+	DeliveryNotReason []string `json:"delivery_not_reason,omitempty"`
+	//
 	IsDelete           *bool                                                                              `json:"is_delete,omitempty"`
 	MaterialInfo       *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfo `json:"material_info,omitempty"`
 	MaterialSelectType *QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialSelectType        `json:"material_select_type,omitempty"`

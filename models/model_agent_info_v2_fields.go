@@ -15,15 +15,15 @@ type AgentInfoV2Fields string
 
 // List of agent_info_v2_fields
 const (
-	AGENT_ID_AgentInfoV2Fields       AgentInfoV2Fields = "agent_id"
-	COMPANY_NAME_AgentInfoV2Fields   AgentInfoV2Fields = "company_name"
-	ACCOUNT_STATUS_AgentInfoV2Fields AgentInfoV2Fields = "account_status"
-	CUSTOMER_NAME_AgentInfoV2Fields  AgentInfoV2Fields = "customer_name"
-	CREATE_TIME_AgentInfoV2Fields    AgentInfoV2Fields = "create_time"
-	COMPANY_ID_AgentInfoV2Fields     AgentInfoV2Fields = "company_id"
-	CUSTOMER_ID_AgentInfoV2Fields    AgentInfoV2Fields = "customer_id"
-	ROLE_AgentInfoV2Fields           AgentInfoV2Fields = "role"
 	AGENT_NAME_AgentInfoV2Fields     AgentInfoV2Fields = "agent_name"
+	COMPANY_ID_AgentInfoV2Fields     AgentInfoV2Fields = "company_id"
+	CREATE_TIME_AgentInfoV2Fields    AgentInfoV2Fields = "create_time"
+	CUSTOMER_NAME_AgentInfoV2Fields  AgentInfoV2Fields = "customer_name"
+	CUSTOMER_ID_AgentInfoV2Fields    AgentInfoV2Fields = "customer_id"
+	ACCOUNT_STATUS_AgentInfoV2Fields AgentInfoV2Fields = "account_status"
+	ROLE_AgentInfoV2Fields           AgentInfoV2Fields = "role"
+	COMPANY_NAME_AgentInfoV2Fields   AgentInfoV2Fields = "company_name"
+	AGENT_ID_AgentInfoV2Fields       AgentInfoV2Fields = "agent_id"
 )
 
 // Ptr returns reference to agent_info_v2_fields value

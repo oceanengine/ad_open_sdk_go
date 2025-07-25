@@ -485,7 +485,6 @@ Class | Method | HTTP request
 *EventManagerAbnormalAssetsGetV30Api* | **OpenApiV30EventManagerAbnormalAssetsGetGet** | **Get** /open_api/v3.0/event_manager/abnormal_assets/get/
 *EventManagerAssetsCreateV2Api* | **OpenApi2EventManagerAssetsCreatePost** | **Post** /open_api/2/event_manager/assets/create/
 *EventManagerAuthAddPublicKeyV2Api* | **OpenApi2EventManagerAuthAddPublicKeyPost** | **Post** /open_api/2/event_manager/auth/add_public_key/
-*EventManagerAuthDisableV2Api* | **OpenApi2EventManagerAuthDisablePost** | **Post** /open_api/2/event_manager/auth/disable/
 *EventManagerAuthEnableV2Api* | **OpenApi2EventManagerAuthEnablePost** | **Post** /open_api/2/event_manager/auth/enable/
 *EventManagerAuthGetAllPublicKeysV2Api* | **OpenApi2EventManagerAuthGetAllPublicKeysGet** | **Get** /open_api/2/event_manager/auth/get_all_public_keys/
 *EventManagerAuthGetAuthStatusV2Api* | **OpenApi2EventManagerAuthGetAuthStatusGet** | **Get** /open_api/2/event_manager/auth/get_auth_status/

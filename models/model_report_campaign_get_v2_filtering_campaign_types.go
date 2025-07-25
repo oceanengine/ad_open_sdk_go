@@ -15,8 +15,8 @@ type ReportCampaignGetV2FilteringCampaignTypes string
 
 // List of report_campaign_get_v2_filtering_campaign_types
 const (
-	SEARCH_ReportCampaignGetV2FilteringCampaignTypes  ReportCampaignGetV2FilteringCampaignTypes = "SEARCH"
 	FEED_ReportCampaignGetV2FilteringCampaignTypes    ReportCampaignGetV2FilteringCampaignTypes = "FEED"
+	SEARCH_ReportCampaignGetV2FilteringCampaignTypes  ReportCampaignGetV2FilteringCampaignTypes = "SEARCH"
 	CONTENT_ReportCampaignGetV2FilteringCampaignTypes ReportCampaignGetV2FilteringCampaignTypes = "CONTENT"
 )
 

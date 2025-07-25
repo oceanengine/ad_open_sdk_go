@@ -31,7 +31,7 @@ type ApiOpenApiV30CustomerCenterAccountListGetRequest struct {
 	pageSize   *int64
 }
 
-// 工作台账户ID，账户类型为&#x60;CUSTOMER_ADMIN&#x60;或&#x60;CUSTOMER_OPERATOR&#x60;对应账户ID
+// 工作台账户ID，账户类型为&#x60;CUSTOMER_ADMIN&#x60;或&#x60;CUSTOMER_OPERATOR&#x60;对应账户ID 可通过获取已授权账户列表查询获取
 func (r *ApiOpenApiV30CustomerCenterAccountListGetRequest) AccountId(accountId int64) *ApiOpenApiV30CustomerCenterAccountListGetRequest {
 	r.accountId = &accountId
 	return r

@@ -18,6 +18,8 @@ type ToolsAwemeAuthListV2Filtering struct {
 	AuthType []*ToolsAwemeAuthListV2FilteringAuthType `json:"auth_type,omitempty"`
 	// 抖音号
 	AwemeIds []string `json:"aweme_ids,omitempty"`
+	// 商品库id
+	DpaId *int64 `json:"dpa_id,omitempty"`
 	// 抖音短视频ID
 	ItemIds []int64 `json:"item_ids,omitempty"`
 	// 筛选警告类型

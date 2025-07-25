@@ -12,7 +12,7 @@ package models
 
 // CustomerCenterAccountListV30ResponseDataAccountsInner struct for CustomerCenterAccountListV30ResponseDataAccountsInner
 type CustomerCenterAccountListV30ResponseDataAccountsInner struct {
-	// 账户ID
+	// 账户ID，对应账户类型参考account_type
 	AccountId *int64 `json:"account_id,omitempty"`
 	// 账户名称
 	AccountName string `json:"account_name"`

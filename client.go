@@ -1,5 +1,5 @@
 /*
-API version: 1.1.62
+API version: 1.1.63
 */
 package ad_open_sdk_go
 
@@ -1141,10 +1141,6 @@ func (c *Client) EventManagerAssetsCreateV2Api() *api.EventManagerAssetsCreateV2
 
 func (c *Client) EventManagerAuthAddPublicKeyV2Api() *api.EventManagerAuthAddPublicKeyV2ApiService {
 	return c.ApiClient.EventManagerAuthAddPublicKeyV2Api
-}
-
-func (c *Client) EventManagerAuthDisableV2Api() *api.EventManagerAuthDisableV2ApiService {
-	return c.ApiClient.EventManagerAuthDisableV2Api
 }
 
 func (c *Client) EventManagerAuthEnableV2Api() *api.EventManagerAuthEnableV2ApiService {

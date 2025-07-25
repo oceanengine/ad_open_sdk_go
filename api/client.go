@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.62
+// APIClient manages communication with the Oceanengine Open Api API v1.1.63
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -608,8 +608,6 @@ type APIClient struct {
 	EventManagerAssetsCreateV2Api *EventManagerAssetsCreateV2ApiService
 
 	EventManagerAuthAddPublicKeyV2Api *EventManagerAuthAddPublicKeyV2ApiService
-
-	EventManagerAuthDisableV2Api *EventManagerAuthDisableV2ApiService
 
 	EventManagerAuthEnableV2Api *EventManagerAuthEnableV2ApiService
 
@@ -2415,7 +2413,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.EventManagerAbnormalAssetsGetV30Api = (*EventManagerAbnormalAssetsGetV30ApiService)(&c.common)
 	c.EventManagerAssetsCreateV2Api = (*EventManagerAssetsCreateV2ApiService)(&c.common)
 	c.EventManagerAuthAddPublicKeyV2Api = (*EventManagerAuthAddPublicKeyV2ApiService)(&c.common)
-	c.EventManagerAuthDisableV2Api = (*EventManagerAuthDisableV2ApiService)(&c.common)
 	c.EventManagerAuthEnableV2Api = (*EventManagerAuthEnableV2ApiService)(&c.common)
 	c.EventManagerAuthGetAllPublicKeysV2Api = (*EventManagerAuthGetAllPublicKeysV2ApiService)(&c.common)
 	c.EventManagerAuthGetAuthStatusV2Api = (*EventManagerAuthGetAuthStatusV2ApiService)(&c.common)

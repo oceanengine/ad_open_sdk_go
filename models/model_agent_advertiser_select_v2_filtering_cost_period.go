@@ -16,10 +16,10 @@ type AgentAdvertiserSelectV2FilteringCostPeriod string
 // List of agent_advertiser_select_v2_filtering_cost_period
 const (
 	YESTERDAY_AgentAdvertiserSelectV2FilteringCostPeriod    AgentAdvertiserSelectV2FilteringCostPeriod = "YESTERDAY"
-	LAST_15_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_15_DAYS"
-	LAST_7_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod  AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_7_DAYS"
 	LAST_30_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_30_DAYS"
+	LAST_7_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod  AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_7_DAYS"
 	TODAY_AgentAdvertiserSelectV2FilteringCostPeriod        AgentAdvertiserSelectV2FilteringCostPeriod = "TODAY"
+	LAST_15_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_15_DAYS"
 )
 
 // Ptr returns reference to agent_advertiser_select_v2_filtering_cost_period value

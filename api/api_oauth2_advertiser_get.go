@@ -23,21 +23,14 @@ import (
 type Oauth2AdvertiserGetApiService service
 
 type ApiOpenApiOauth2AdvertiserGetGetRequest struct {
-	ctx          context.Context
-	ApiService   *Oauth2AdvertiserGetApiService
-	accessToken  *string
-	accessToken2 *string
+	ctx         context.Context
+	ApiService  *Oauth2AdvertiserGetApiService
+	accessToken *string
 }
 
 // 根据授权auth_code获取生成的AccessToken 授权页面使用相同账号授权对应同一个AccessToken，如使用多个不同的账号授权，则需要区分维护多个不同的AccessToken
 func (r *ApiOpenApiOauth2AdvertiserGetGetRequest) AccessToken(accessToken string) *ApiOpenApiOauth2AdvertiserGetGetRequest {
 	r.accessToken = &accessToken
-	return r
-}
-
-// 根据授权auth_code获取生成的AccessToken 授权页面使用相同账号授权对应同一个AccessToken，如使用多个不同的账号授权，则需要区分维护多个不同的AccessToken
-func (r *ApiOpenApiOauth2AdvertiserGetGetRequest) AccessToken2(accessToken2 string) *ApiOpenApiOauth2AdvertiserGetGetRequest {
-	r.accessToken2 = &accessToken2
 	return r
 }
 
@@ -87,8 +80,8 @@ func (a *Oauth2AdvertiserGetApiService) getExecute(r *ApiOpenApiOauth2Advertiser
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
-	if r.accessToken2 != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "access_token", r.accessToken2)
+	if r.accessToken != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "access_token", r.accessToken)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
@@ -99,9 +92,6 @@ func (a *Oauth2AdvertiserGetApiService) getExecute(r *ApiOpenApiOauth2Advertiser
 		localVarHeaderParams["Content-Type"] = localVarHTTPContentType
 	}
 
-	if r.accessToken != nil {
-		parameterAddToHeaderOrQuery(localVarHeaderParams, "access-token", r.accessToken)
-	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, formFiles)
 	if err != nil {
 		return localVarReturnValue, nil, err

@@ -15,13 +15,13 @@ type AudiencePackageUpdateV2ConvertedTimeDuration string
 
 // List of audience_package_update_v2_converted_time_duration
 const (
-	TODAY_AudiencePackageUpdateV2ConvertedTimeDuration        AudiencePackageUpdateV2ConvertedTimeDuration = "TODAY"
-	NONE_AudiencePackageUpdateV2ConvertedTimeDuration         AudiencePackageUpdateV2ConvertedTimeDuration = "NONE"
 	SEVEN_DAY_AudiencePackageUpdateV2ConvertedTimeDuration    AudiencePackageUpdateV2ConvertedTimeDuration = "SEVEN_DAY"
-	THREE_MONTH_AudiencePackageUpdateV2ConvertedTimeDuration  AudiencePackageUpdateV2ConvertedTimeDuration = "THREE_MONTH"
 	ONE_MONTH_AudiencePackageUpdateV2ConvertedTimeDuration    AudiencePackageUpdateV2ConvertedTimeDuration = "ONE_MONTH"
-	SIX_MONTH_AudiencePackageUpdateV2ConvertedTimeDuration    AudiencePackageUpdateV2ConvertedTimeDuration = "SIX_MONTH"
+	THREE_MONTH_AudiencePackageUpdateV2ConvertedTimeDuration  AudiencePackageUpdateV2ConvertedTimeDuration = "THREE_MONTH"
+	NONE_AudiencePackageUpdateV2ConvertedTimeDuration         AudiencePackageUpdateV2ConvertedTimeDuration = "NONE"
 	TWELVE_MONTH_AudiencePackageUpdateV2ConvertedTimeDuration AudiencePackageUpdateV2ConvertedTimeDuration = "TWELVE_MONTH"
+	SIX_MONTH_AudiencePackageUpdateV2ConvertedTimeDuration    AudiencePackageUpdateV2ConvertedTimeDuration = "SIX_MONTH"
+	TODAY_AudiencePackageUpdateV2ConvertedTimeDuration        AudiencePackageUpdateV2ConvertedTimeDuration = "TODAY"
 )
 
 // Ptr returns reference to audience_package_update_v2_converted_time_duration value

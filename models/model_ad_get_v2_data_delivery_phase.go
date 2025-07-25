@@ -15,8 +15,8 @@ type AdGetV2DataDeliveryPhase string
 
 // List of ad_get_v2_data_delivery_phase
 const (
-	FIRST_PHASE_AdGetV2DataDeliveryPhase  AdGetV2DataDeliveryPhase = "FIRST_PHASE"
 	SECOND_PHASE_AdGetV2DataDeliveryPhase AdGetV2DataDeliveryPhase = "SECOND_PHASE"
+	FIRST_PHASE_AdGetV2DataDeliveryPhase  AdGetV2DataDeliveryPhase = "FIRST_PHASE"
 )
 
 // Ptr returns reference to ad_get_v2_data_delivery_phase value
