@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ShopBonusCreatePostRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV30ShopBonusCreatePost Method for OpenApiV30ShopBonusCreatePost
 
+阿里健康根据SPI消息获知哪些商品可配置券后，对巨量回传具体配置优惠券的相关信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ShopBonusCreatePostRequest
 */

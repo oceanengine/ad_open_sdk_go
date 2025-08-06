@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvertiserAssignV2Type
+// AgentAdvertiserAssignV2Type 分配类型：1:竞价, 2:品牌
 type AgentAdvertiserAssignV2Type string
 
 // List of agent_advertiser_assign_v2_type

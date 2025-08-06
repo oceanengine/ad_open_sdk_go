@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30DeliveryGoal
+// LocalProjectCreateV30DeliveryGoal 投放内容，允许值： `POI` 门店 `PRODUCT` 商品 填写说明： 仅marketing_goal=`VIDEO_AND_IMAGE`时，该字段生效且必填；当marketing_goal=`LIVE`时，该字段无效 当marketing_goal=`VIDEO_AND_IMAGE`且 local_delivery_scene=`POI_RECOMMEND` 门店引流时，仅支持POI
 type LocalProjectCreateV30DeliveryGoal string
 
 // List of local_project_create_v3.0_delivery_goal

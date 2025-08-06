@@ -71,6 +71,8 @@ func (r *ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest) WithLog(enable b
 /*
 OpenApiV10QianchuanUniAwemeAuthorizedGetGet Method for OpenApiV10QianchuanUniAwemeAuthorizedGetGet
 
+获取可投全域推广抖音号列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniAwemeAuthorizedGetGetRequest
 */

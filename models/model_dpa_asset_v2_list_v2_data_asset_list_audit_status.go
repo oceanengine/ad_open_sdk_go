@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DpaAssetV2ListV2DataAssetListAuditStatus
+// DpaAssetV2ListV2DataAssetListAuditStatus 投放条件状态
 type DpaAssetV2ListV2DataAssetListAuditStatus string
 
 // List of dpa_asset_v2_list_v2_data_asset_list_audit_status

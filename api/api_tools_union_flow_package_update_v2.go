@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsUnionFlowPackageUpdatePostRequest) WithLog(enable bool)
 /*
 OpenApi2ToolsUnionFlowPackageUpdatePost Method for OpenApi2ToolsUnionFlowPackageUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsUnionFlowPackageUpdatePostRequest
 */

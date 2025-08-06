@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsKeywordsBidRatioDeletePostRequest) WithLog(enable boo
 /*
 OpenApiV30ToolsKeywordsBidRatioDeletePost Method for OpenApiV30ToolsKeywordsBidRatioDeletePost
 
+账户优词工具-删除优词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsKeywordsBidRatioDeletePostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderListV30DataOrdersAudienceInfoRetargetingInfoRetargetingType
+// BrandOrderListV30DataOrdersAudienceInfoRetargetingInfoRetargetingType 人群包类型
 type BrandOrderListV30DataOrdersAudienceInfoRetargetingInfoRetargetingType string
 
 // List of brand_order_list_v3.0_data_orders_audience_info_retargeting_info_retargeting_type

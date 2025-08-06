@@ -64,6 +64,8 @@ func (r *ApiOpenApi2AgentChildAgentSelectGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2AgentChildAgentSelectGet Method for OpenApi2AgentChildAgentSelectGet
 
+获取代理商下的二级代理商ID列表。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentChildAgentSelectGetRequest
 */

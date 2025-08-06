@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DpaAssetV2DetailReadPostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2DpaAssetV2DetailReadPost Method for OpenApi2DpaAssetV2DetailReadPost
 
+该接口主要查询汽车行业投放条件信息，根据商品id查询投放条件详情
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaAssetV2DetailReadPostRequest
 */

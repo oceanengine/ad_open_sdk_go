@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30AudienceDistrict
+// LocalProjectCreateV30AudienceDistrict 地域类型
 type LocalProjectCreateV30AudienceDistrict string
 
 // List of local_project_create_v3.0_audience_district

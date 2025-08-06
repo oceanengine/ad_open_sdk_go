@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicElementGetV30FilteringUseAs
+// AicElementGetV30FilteringUseAs 元素标签，用于标记元素
 type AicElementGetV30FilteringUseAs string
 
 // List of aic_element_get_v3.0_filtering_use_as

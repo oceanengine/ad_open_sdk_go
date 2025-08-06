@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreativeGetV2FilteringLandingType
+// CreativeGetV2FilteringLandingType 按照广告组推广目的过滤，[【附录-推广目的类型】](https://ad.oceanengine.com/openapi/doc/index.html?id=1696710760171535#custom-anchor-推广目的类型)
 type CreativeGetV2FilteringLandingType string
 
 // List of creative_get_v2_filtering_landing_type

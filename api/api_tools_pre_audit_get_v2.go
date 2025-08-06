@@ -74,6 +74,10 @@ func (r *ApiOpenApi2ToolsPreAuditGetGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2ToolsPreAuditGetGet Method for OpenApi2ToolsPreAuditGetGet
 
+通过此接口，用户可以获取到前置预审审核的结果。
+
+> 需要注意的是前置预审的结果和最终的素材的审核结果可能存在出入，前置预审结果仅供参考。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPreAuditGetGetRequest
 */

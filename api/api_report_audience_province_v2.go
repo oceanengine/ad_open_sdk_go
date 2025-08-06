@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ReportAudienceProvinceGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ReportAudienceProvinceGet Method for OpenApi2ReportAudienceProvinceGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportAudienceProvinceGetRequest
 */

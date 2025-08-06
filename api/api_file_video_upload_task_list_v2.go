@@ -67,6 +67,8 @@ func (r *ApiOpenApi2FileVideoUploadTaskListGetRequest) WithLog(enable bool) *Api
 /*
 OpenApi2FileVideoUploadTaskListGet Method for OpenApi2FileVideoUploadTaskListGet
 
+获取异步上传视频文件结果
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileVideoUploadTaskListGetRequest
 */

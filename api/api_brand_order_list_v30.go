@@ -72,6 +72,8 @@ func (r *ApiOpenApiV30BrandOrderListGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30BrandOrderListGet Method for OpenApiV30BrandOrderListGet
 
+查询品牌2.0预订单信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandOrderListGetRequest
 */

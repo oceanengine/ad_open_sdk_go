@@ -82,6 +82,8 @@ func (r *ApiOpenApi2FileImageAdvertiserPostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2FileImageAdvertiserPost Method for OpenApi2FileImageAdvertiserPost
 
+资质图片上传
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileImageAdvertiserPostRequest
 */

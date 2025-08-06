@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsPromotionRaiseStatusCurrentIdsGetV30DataDataStatus
+// ToolsPromotionRaiseStatusCurrentIdsGetV30DataDataStatus 当前一键起量状态
 type ToolsPromotionRaiseStatusCurrentIdsGetV30DataDataStatus string
 
 // List of tools_promotion_raise_status_current_ids_get_v3.0_data_data_status

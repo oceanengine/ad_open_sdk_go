@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsEventAllAssetsListV2DataAssetListShareType
+// ToolsEventAllAssetsListV2DataAssetListShareType 资产来源 MY_CREATIONS 我创建的 SHARING 共享中 SHATE_EXPIRED 共享失效
 type ToolsEventAllAssetsListV2DataAssetListShareType string
 
 // List of tools_event_all_assets_list_v2_data_asset_list_share_type

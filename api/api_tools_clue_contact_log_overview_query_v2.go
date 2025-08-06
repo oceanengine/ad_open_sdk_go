@@ -67,6 +67,8 @@ func (r *ApiOpenApi2ToolsClueContactLogOverviewQueryGetRequest) WithLog(enable b
 /*
 OpenApi2ToolsClueContactLogOverviewQueryGet Method for OpenApi2ToolsClueContactLogOverviewQueryGet
 
+查询话单概览报表数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueContactLogOverviewQueryGetRequest
 */

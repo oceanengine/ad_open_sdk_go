@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeAuthListGetV10FilteringAuthRange
+// QianchuanAwemeAuthListGetV10FilteringAuthRange 授权范围筛选
 type QianchuanAwemeAuthListGetV10FilteringAuthRange string
 
 // List of qianchuan_aweme_auth_list_get_v1.0_filtering_auth_range

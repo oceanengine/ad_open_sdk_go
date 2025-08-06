@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandCampaignGetV30DataCampaignsContractType
+// BrandCampaignGetV30DataCampaignsContractType 合同类型
 type BrandCampaignGetV30DataCampaignsContractType int64
 
 // List of brand_campaign_get_v3.0_data_campaigns_contract_type

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// NativeAnchorUpdateV30AnchorInfoAnchorType
+// NativeAnchorUpdateV30AnchorInfoAnchorType 更新的锚点类型
 type NativeAnchorUpdateV30AnchorInfoAnchorType string
 
 // List of native_anchor_update_v3.0_anchor_info_anchor_type

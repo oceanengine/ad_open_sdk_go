@@ -67,6 +67,8 @@ func (r *ApiOpenApi2StarBillGetPendingGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2StarBillGetPendingGet Method for OpenApi2StarBillGetPendingGet
 
+获取待支付金额
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarBillGetPendingGetRequest
 */

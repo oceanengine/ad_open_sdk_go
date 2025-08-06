@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BusinessPlatformPartnerOrganizationListV2DataListStatus
+// BusinessPlatformPartnerOrganizationListV2DataListStatus 合作状态<br>枚举值：`BOUND`（已绑定）、`BINDING`（绑定中）、`INVALID`（失效）、`DELETED`（删除）
 type BusinessPlatformPartnerOrganizationListV2DataListStatus string
 
 // List of business_platform_partner_organization_list_v2_data_list_status

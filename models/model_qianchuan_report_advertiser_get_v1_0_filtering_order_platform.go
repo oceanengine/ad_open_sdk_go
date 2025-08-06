@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanReportAdvertiserGetV10FilteringOrderPlatform
+// QianchuanReportAdvertiserGetV10FilteringOrderPlatform 下单平台，允许值： - `ALL` 全部 - `QIANCHUAN` 千川PC（默认值） - `ECP_AWEME` 小店随心推
 type QianchuanReportAdvertiserGetV10FilteringOrderPlatform string
 
 // List of qianchuan_report_advertiser_get_v1.0_filtering_order_platform

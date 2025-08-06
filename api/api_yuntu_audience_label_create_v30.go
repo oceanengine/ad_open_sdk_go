@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30YuntuAudienceLabelCreatePostRequest) WithLog(enable bool) 
 /*
 OpenApiV30YuntuAudienceLabelCreatePost Method for OpenApiV30YuntuAudienceLabelCreatePost
 
+创建数据工厂人群标签，支持内容人群标签、商品人群标签、搜索人群标签。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30YuntuAudienceLabelCreatePostRequest
 */

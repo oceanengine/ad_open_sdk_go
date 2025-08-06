@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarDemandOmExpandChallengeV2OmParticipateAuthorRangeOperationType
+// StarDemandOmExpandChallengeV2OmParticipateAuthorRangeOperationType 操作类型  枚举，1-添加达人，2-取消达人合作
 type StarDemandOmExpandChallengeV2OmParticipateAuthorRangeOperationType int64
 
 // List of star_demand_om_expand_challenge_v2_om_participate_author_range_operation_type

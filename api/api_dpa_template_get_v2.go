@@ -64,6 +64,8 @@ func (r *ApiOpenApi2DpaTemplateGetGetRequest) WithLog(enable bool) *ApiOpenApi2D
 /*
 OpenApi2DpaTemplateGetGet Method for OpenApi2DpaTemplateGetGet
 
+# API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaTemplateGetGetRequest
 */

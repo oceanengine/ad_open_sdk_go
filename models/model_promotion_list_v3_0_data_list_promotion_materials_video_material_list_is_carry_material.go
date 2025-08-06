@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionListV30DataListPromotionMaterialsVideoMaterialListIsCarryMaterial
+// PromotionListV30DataListPromotionMaterialsVideoMaterialListIsCarryMaterial 是否存在搬运打压风险 TRUE：存在打压风险 FALSE：不存在打压风险
 type PromotionListV30DataListPromotionMaterialsVideoMaterialListIsCarryMaterial string
 
 // List of promotion_list_v3.0_data_list_promotion_materials_video_material_list_is_carry_material

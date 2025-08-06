@@ -88,6 +88,8 @@ func (r *ApiOpenApi2ReportAudienceInterestActionListGetRequest) WithLog(enable b
 /*
 OpenApi2ReportAudienceInterestActionListGet Method for OpenApi2ReportAudienceInterestActionListGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportAudienceInterestActionListGetRequest
 */

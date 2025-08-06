@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsPromotionRaiseStopPostRequest) WithLog(enable bool) *
 /*
 OpenApiV30ToolsPromotionRaiseStopPost Method for OpenApiV30ToolsPromotionRaiseStopPost
 
+关停正在起量的方案
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsPromotionRaiseStopPostRequest
 */

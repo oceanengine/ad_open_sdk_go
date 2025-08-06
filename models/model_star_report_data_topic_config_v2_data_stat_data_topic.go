@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarReportDataTopicConfigV2DataStatDataTopic
+// StarReportDataTopicConfigV2DataStatDataTopic DataTopic，同请求中的数据主题枚举值。不存在的数据主题将缺省。
 type StarReportDataTopicConfigV2DataStatDataTopic string
 
 // List of star_report_data_topic_config_v2_data_stat_data_topic

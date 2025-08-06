@@ -79,6 +79,8 @@ func (r *ApiOpenApiV30StardeliveryTaskListGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30StardeliveryTaskListGet Method for OpenApiV30StardeliveryTaskListGet
 
+获取星广联投任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30StardeliveryTaskListGetRequest
 */

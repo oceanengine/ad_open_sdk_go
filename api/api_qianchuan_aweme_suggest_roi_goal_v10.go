@@ -58,6 +58,8 @@ func (r *ApiOpenApiV10QianchuanAwemeSuggestRoiGoalGetRequest) WithLog(enable boo
 /*
 OpenApiV10QianchuanAwemeSuggestRoiGoalGet Method for OpenApiV10QianchuanAwemeSuggestRoiGoalGet
 
+小店-ROI建议出价
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeSuggestRoiGoalGetRequest
 */

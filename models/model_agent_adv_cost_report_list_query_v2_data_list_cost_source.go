@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2DataListCostSource
+// AgentAdvCostReportListQueryV2DataListCostSource 消耗来源(1: 本地广告1: 本地广告,2: DSP,3:月结消耗,4: 非标消耗,5: 项目调差,31: 懂车帝AI（智投通）,102: 懂车帝效果联盟,12: F项目幸福豆订单,159: 懂车聚光达人服务费159: 懂车聚光达人服务费)
 type AgentAdvCostReportListQueryV2DataListCostSource int64
 
 // List of agent_adv_cost_report_list_query_v2_data_list_cost_source

@@ -58,6 +58,8 @@ func (r *ApiOpenApi2AdRejectReasonGetRequest) WithLog(enable bool) *ApiOpenApi2A
 /*
 OpenApi2AdRejectReasonGet Method for OpenApi2AdRejectReasonGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdRejectReasonGetRequest
 */

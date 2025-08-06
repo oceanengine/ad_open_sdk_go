@@ -123,6 +123,8 @@ func (r *ApiOpenApiV30BrandPolicyListGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30BrandPolicyListGet Method for OpenApiV30BrandPolicyListGet
 
+查询政策
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandPolicyListGetRequest
 */

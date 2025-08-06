@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ServeMarketCidVerifyTokenV10DataDevStatus
+// ServeMarketCidVerifyTokenV10DataDevStatus 开放平台开发者状态
 type ServeMarketCidVerifyTokenV10DataDevStatus int64
 
 // List of serve_market_cid_verify_token_v1.0_data_dev_status

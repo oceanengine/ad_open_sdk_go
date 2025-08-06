@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeOrderDetailGetV10DataVideoInfoItemType
+// QianchuanAwemeOrderDetailGetV10DataVideoInfoItemType 0：普通视频 1：图文视频
 type QianchuanAwemeOrderDetailGetV10DataVideoInfoItemType int64
 
 // List of qianchuan_aweme_order_detail_get_v1.0_data_video_info_item_type

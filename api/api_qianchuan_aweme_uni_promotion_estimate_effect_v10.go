@@ -94,6 +94,8 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest) WithLo
 /*
 OpenApiV10QianchuanAwemeUniPromotionEstimateEffectGet Method for OpenApiV10QianchuanAwemeUniPromotionEstimateEffectGet
 
+获取随心推全域投放效果预估
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeUniPromotionEstimateEffectGetRequest
 */

@@ -103,4 +103,12 @@ type ProjectListV30ResponseDataListInner struct {
 	//
 	UlinkUrl           *string                                   `json:"ulink_url,omitempty"`
 	ValueOptimizedType *ProjectListV30DataListValueOptimizedType `json:"value_optimized_type,omitempty"`
+	// 云图品牌ID
+	Yuntu5aBrandId *int64 `json:"yuntu_5a_brand_id,omitempty"`
+	// 云图品牌版行业ID
+	Yuntu5aBrandMainIndustryId *int64 `json:"yuntu_5a_brand_main_industry_id,omitempty"`
+	// 云图品牌名称
+	Yuntu5aBrandName *string `json:"yuntu_5a_brand_name,omitempty"`
+	// 云图品牌版行业名称
+	Yuntu5aIndustryName *string `json:"yuntu_5a_industry_name,omitempty"`
 }

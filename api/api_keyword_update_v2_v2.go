@@ -52,6 +52,8 @@ func (r *ApiOpenApi2KeywordUpdateV2PostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2KeywordUpdateV2Post Method for OpenApi2KeywordUpdateV2Post
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2KeywordUpdateV2PostRequest
 */

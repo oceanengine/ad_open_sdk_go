@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarDemandOmExpandChallengeProviderPostRequest) WithLog(enab
 /*
 OpenApi2StarDemandOmExpandChallengeProviderPost Method for OpenApi2StarDemandOmExpandChallengeProviderPost
 
+修改服务商参与范围
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemandOmExpandChallengeProviderPostRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30DouplusOrderClosePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30DouplusOrderClosePost Method for OpenApiV30DouplusOrderClosePost
 
+可批量终止DOU+订单(API白名单，联系巨量引擎销售开通）
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30DouplusOrderClosePostRequest
 */

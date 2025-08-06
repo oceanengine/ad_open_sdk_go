@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarOrderReplyAuthorCancelPostRequest) WithLog(enable bool) 
 /*
 OpenApi2StarOrderReplyAuthorCancelPost Method for OpenApi2StarOrderReplyAuthorCancelPost
 
+达人取消任务应答
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarOrderReplyAuthorCancelPostRequest
 */

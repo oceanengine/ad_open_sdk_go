@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30PromotionCostProtectStatusGetGetRequest) WithLog(enable bo
 /*
 OpenApiV30PromotionCostProtectStatusGetGet Method for OpenApiV30PromotionCostProtectStatusGetGet
 
+巨量2.0成本保障标查询接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionCostProtectStatusGetGetRequest
 */

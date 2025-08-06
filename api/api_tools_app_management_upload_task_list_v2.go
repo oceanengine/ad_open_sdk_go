@@ -67,6 +67,8 @@ func (r *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest) WithLog(enable b
 /*
 OpenApi2ToolsAppManagementUploadTaskListGet Method for OpenApi2ToolsAppManagementUploadTaskListGet
 
+查询异步上传解析任务的状态信息「支持所有账户体系」
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest
 */

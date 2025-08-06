@@ -74,6 +74,8 @@ func (r *ApiOpenApiV30CgTransferQueryTransferDetailGetRequest) WithLog(enable bo
 /*
 OpenApiV30CgTransferQueryTransferDetailGet Method for OpenApiV30CgTransferQueryTransferDetailGet
 
+转账单信息，包括状态、双方账户、转账金额
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30CgTransferQueryTransferDetailGetRequest
 */

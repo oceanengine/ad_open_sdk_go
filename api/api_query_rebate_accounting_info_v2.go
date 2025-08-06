@@ -74,6 +74,8 @@ func (r *ApiOpenApi2QueryRebateAccountingInfoGetRequest) WithLog(enable bool) *A
 /*
 OpenApi2QueryRebateAccountingInfoGet Method for OpenApi2QueryRebateAccountingInfoGet
 
+结算-查询返点核算信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2QueryRebateAccountingInfoGetRequest
 */

@@ -74,6 +74,10 @@ func (r *ApiOpenApi2ToolsSiteTemplateGetGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ToolsSiteTemplateGetGet Method for OpenApi2ToolsSiteTemplateGetGet
 
+通过此接口，用户可以获取通过【基于站点创建模板】接口创建的落地页模板。
+
+> 落地页的每个发布版本都可以创建落地页模板，一个落地页站点可以创建多个落地页模板。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSiteTemplateGetGetRequest
 */

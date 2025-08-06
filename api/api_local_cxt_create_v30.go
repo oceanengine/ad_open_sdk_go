@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30LocalCxtCreatePostRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30LocalCxtCreatePost Method for OpenApiV30LocalCxtCreatePost
 
+创建持续投计划接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalCxtCreatePostRequest
 */

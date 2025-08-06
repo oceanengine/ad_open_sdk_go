@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanShopGetGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV10QianchuanShopGetGet Method for OpenApiV10QianchuanShopGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanShopGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementUploadTaskCreateV2FileType
+// ToolsAppManagementUploadTaskCreateV2FileType 文件类型
 type ToolsAppManagementUploadTaskCreateV2FileType string
 
 // List of tools_app_management_upload_task_create_v2_file_type

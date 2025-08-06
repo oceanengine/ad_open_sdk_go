@@ -109,6 +109,8 @@ func (r *ApiOpenApiV30ReportCustomCreativeGetGetRequest) WithLog(enable bool) *A
 /*
 OpenApiV30ReportCustomCreativeGetGet Method for OpenApiV30ReportCustomCreativeGetGet
 
+白名单开放使用，查询2.0创意数据，2.0强切临时过渡使用
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportCustomCreativeGetGetRequest
 */

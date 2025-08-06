@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ServeMarketCidVerifyTokenV10DataFacilitatorSubStatus
+// ServeMarketCidVerifyTokenV10DataFacilitatorSubStatus 群峰服务商状态：60为保证金缴纳为业务正常状态
 type ServeMarketCidVerifyTokenV10DataFacilitatorSubStatus int64
 
 // List of serve_market_cid_verify_token_v1.0_data_facilitator_sub_status

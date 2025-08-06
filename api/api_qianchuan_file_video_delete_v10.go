@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanFileVideoDeletePostRequest) WithLog(enable bool) 
 /*
 OpenApiV10QianchuanFileVideoDeletePost Method for OpenApiV10QianchuanFileVideoDeletePost
 
+批量删除视频素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanFileVideoDeletePostRequest
 */

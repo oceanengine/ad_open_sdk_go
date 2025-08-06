@@ -82,6 +82,8 @@ func (r *ApiOpenApi2AdvertiserFundDailyStatGetRequest) WithLog(enable bool) *Api
 /*
 OpenApi2AdvertiserFundDailyStatGet Method for OpenApi2AdvertiserFundDailyStatGet
 
+查询账户日流水
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdvertiserFundDailyStatGetRequest
 */

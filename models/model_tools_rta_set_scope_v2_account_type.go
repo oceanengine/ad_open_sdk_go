@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsRtaSetScopeV2AccountType
+// ToolsRtaSetScopeV2AccountType 账户类型，默认值为AD，允许值： AD 表示入参advertiser_id为巨量广告账户ID STAR 表示入参advertiser_id为星图账户ID
 type ToolsRtaSetScopeV2AccountType string
 
 // List of tools_rta_set_scope_v2_account_type

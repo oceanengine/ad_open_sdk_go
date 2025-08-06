@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskCreatePostRequest) WithL
 /*
 OpenApiV10QianchuanUniPromotionAdControlTaskCreatePost Method for OpenApiV10QianchuanUniPromotionAdControlTaskCreatePost
 
+创建调控任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionAdControlTaskCreatePostRequest
 */

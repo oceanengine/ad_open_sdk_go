@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementAndroidBasicPackageUpdateV2FilesFileTag
+// ToolsAppManagementAndroidBasicPackageUpdateV2FilesFileTag 文件标示
 type ToolsAppManagementAndroidBasicPackageUpdateV2FilesFileTag string
 
 // List of tools_app_management_android_basic_package_update_v2_files_file_tag

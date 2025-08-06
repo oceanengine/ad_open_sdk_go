@@ -108,6 +108,8 @@ func (r *ApiOpenApiV10QianchuanReportLongTransferOrderDataGetGetRequest) WithLog
 /*
 OpenApiV10QianchuanReportLongTransferOrderDataGetGet Method for OpenApiV10QianchuanReportLongTransferOrderDataGetGet
 
+获取长周期订单
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanReportLongTransferOrderDataGetGetRequest
 */

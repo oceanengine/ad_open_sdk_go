@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarCreateProjectPostRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2StarCreateProjectPost Method for OpenApi2StarCreateProjectPost
 
+创建星图项目
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarCreateProjectPostRequest
 */

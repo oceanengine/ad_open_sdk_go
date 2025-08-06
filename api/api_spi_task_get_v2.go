@@ -106,6 +106,8 @@ func (r *ApiOpenApi2SpiTaskGetGetRequest) WithLog(enable bool) *ApiOpenApi2SpiTa
 /*
 OpenApi2SpiTaskGetGet Method for OpenApi2SpiTaskGetGet
 
+获取推送数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2SpiTaskGetGetRequest
 */

@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30SubscribeAccountsAddPostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30SubscribeAccountsAddPost Method for OpenApiV30SubscribeAccountsAddPost
 
+增加对 Adv 的订阅
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SubscribeAccountsAddPostRequest
 */

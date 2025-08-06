@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsAdStockInfosAppOrigin
+// BrandAdGetV30DataAdsAdStockInfosAppOrigin 端类型
 type BrandAdGetV30DataAdsAdStockInfosAppOrigin int64
 
 // List of brand_ad_get_v3.0_data_ads_ad_stock_infos_app_origin

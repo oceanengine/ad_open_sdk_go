@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionProductAwemeGetV10FilteringTab
+// QianchuanUniPromotionProductAwemeGetV10FilteringTab 商品分类tab
 type QianchuanUniPromotionProductAwemeGetV10FilteringTab string
 
 // List of qianchuan_uni_promotion_product_aweme_get_v1.0_filtering_tab

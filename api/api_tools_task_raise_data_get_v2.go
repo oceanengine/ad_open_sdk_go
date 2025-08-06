@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsTaskRaiseDataGetGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2ToolsTaskRaiseDataGetGet Method for OpenApi2ToolsTaskRaiseDataGetGet
 
+查询优选起量任务数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsTaskRaiseDataGetGetRequest
 */

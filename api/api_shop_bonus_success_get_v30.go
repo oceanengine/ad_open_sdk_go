@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30ShopBonusSuccessGetGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30ShopBonusSuccessGetGet Method for OpenApiV30ShopBonusSuccessGetGet
 
+供阿里健康可查询优惠券配置内容
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ShopBonusSuccessGetGetRequest
 */

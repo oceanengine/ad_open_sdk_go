@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandCreativeCreateV30CreativeDisplayMode
+// BrandCreativeCreateV30CreativeDisplayMode 创意展现方式
 type BrandCreativeCreateV30CreativeDisplayMode string
 
 // List of brand_creative_create_v3.0_creative_display_mode

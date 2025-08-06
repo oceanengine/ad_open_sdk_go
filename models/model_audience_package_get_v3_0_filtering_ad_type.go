@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AudiencePackageGetV30FilteringAdType
+// AudiencePackageGetV30FilteringAdType 广告组类别, 1-信息流 2-搜索 默认信息流
 type AudiencePackageGetV30FilteringAdType string
 
 // List of audience_package_get_v3.0_filtering_ad_type

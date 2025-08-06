@@ -52,6 +52,8 @@ func (r *ApiOpenApi2CarouselCreatePostRequest) WithLog(enable bool) *ApiOpenApi2
 /*
 OpenApi2CarouselCreatePost Method for OpenApi2CarouselCreatePost
 
+塑造图集，出参图集mid。不同图片顺序对应不同的图集mid。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CarouselCreatePostRequest
 */

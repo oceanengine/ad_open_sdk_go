@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionAdControlTaskListV10DataTaskListTaskStatus
+// QianchuanUniPromotionAdControlTaskListV10DataTaskListTaskStatus 调控状态
 type QianchuanUniPromotionAdControlTaskListV10DataTaskListTaskStatus string
 
 // List of qianchuan_uni_promotion_ad_control_task_list_v1.0_data_task_list_task_status

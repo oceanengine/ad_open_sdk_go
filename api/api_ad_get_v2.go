@@ -76,6 +76,8 @@ func (r *ApiOpenApi2AdGetGetRequest) WithLog(enable bool) *ApiOpenApi2AdGetGetRe
 /*
 OpenApi2AdGetGet Method for OpenApi2AdGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdGetGetRequest
 */

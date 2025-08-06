@@ -67,6 +67,8 @@ func (r *ApiOpenApi2ToolsSiteTemplatePicUrlGetGetRequest) WithLog(enable bool) *
 /*
 OpenApi2ToolsSiteTemplatePicUrlGetGet Method for OpenApi2ToolsSiteTemplatePicUrlGetGet
 
+通过 site_id / template_id 获取站点/模板下的图片加签URL
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSiteTemplatePicUrlGetGetRequest
 */

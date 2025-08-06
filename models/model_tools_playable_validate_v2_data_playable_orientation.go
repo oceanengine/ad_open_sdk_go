@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsPlayableValidateV2DataPlayableOrientation
+// ToolsPlayableValidateV2DataPlayableOrientation 试玩素材方向
 type ToolsPlayableValidateV2DataPlayableOrientation string
 
 // List of tools_playable_validate_v2_data_playable_orientation

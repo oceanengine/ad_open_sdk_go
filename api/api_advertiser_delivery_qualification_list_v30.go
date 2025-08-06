@@ -76,6 +76,8 @@ func (r *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest) WithLog(ena
 /*
 OpenApiV30AdvertiserDeliveryQualificationListGet Method for OpenApiV30AdvertiserDeliveryQualificationListGet
 
+用于查询账户投放资质
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest
 */

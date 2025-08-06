@@ -88,6 +88,8 @@ func (r *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest) With
 /*
 OpenApiV30CgTransferWalletTransferCanTransferBalanceGet Method for OpenApiV30CgTransferWalletTransferCanTransferBalanceGet
 
+支持查询减款方与加款方之间最大可转金额、减款方非品牌最大可转出金额、加款方非品牌最小转入金额
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest
 */

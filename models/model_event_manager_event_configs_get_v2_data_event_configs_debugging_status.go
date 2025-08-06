@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// EventManagerEventConfigsGetV2DataEventConfigsDebuggingStatus
+// EventManagerEventConfigsGetV2DataEventConfigsDebuggingStatus 激活免联调状态，枚举值：`Active` 已激活、`Inactive` 未激活
 type EventManagerEventConfigsGetV2DataEventConfigsDebuggingStatus string
 
 // List of event_manager_event_configs_get_v2_data_event_configs_debugging_status

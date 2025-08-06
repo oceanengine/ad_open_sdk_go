@@ -52,6 +52,8 @@ func (r *ApiOpenApi2KeywordDeleteV2PostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2KeywordDeleteV2Post Method for OpenApi2KeywordDeleteV2Post
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2KeywordDeleteV2PostRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApiOauth2AccessTokenPostRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiOauth2AccessTokenPost Method for OpenApiOauth2AccessTokenPost
 
+Access-Token是调用授权关系接口的调用凭证，用于服务端对API请求鉴权。所有接口均通过请求参数中传递的 Access_Token来进行身份认证和鉴权。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiOauth2AccessTokenPostRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AgentAdvertiserAssignPostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2AgentAdvertiserAssignPost Method for OpenApi2AgentAdvertiserAssignPost
 
+广告主账户分配负责人、分配协作者
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentAdvertiserAssignPostRequest
 */

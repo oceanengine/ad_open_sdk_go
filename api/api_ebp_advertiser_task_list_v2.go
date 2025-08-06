@@ -58,6 +58,8 @@ func (r *ApiOpenApi2EbpAdvertiserTaskListGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2EbpAdvertiserTaskListGet Method for OpenApi2EbpAdvertiserTaskListGet
 
+查询异步任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EbpAdvertiserTaskListGetRequest
 */

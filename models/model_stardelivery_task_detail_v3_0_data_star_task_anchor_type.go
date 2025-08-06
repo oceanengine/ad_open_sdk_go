@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StardeliveryTaskDetailV30DataStarTaskAnchorType
+// StardeliveryTaskDetailV30DataStarTaskAnchorType 原生锚点类型
 type StardeliveryTaskDetailV30DataStarTaskAnchorType string
 
 // List of stardelivery_task_detail_v3.0_data_star_task_anchor_type

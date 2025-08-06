@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest) WithLog(enable bool) 
 /*
 OpenApi2ToolsUnionFlowPackageReportGet Method for OpenApi2ToolsUnionFlowPackageReportGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsUnionFlowPackageReportGetRequest
 */

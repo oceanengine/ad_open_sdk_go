@@ -100,6 +100,8 @@ func (r *ApiOpenApi2ReportRtaGetGetRequest) WithLog(enable bool) *ApiOpenApi2Rep
 /*
 OpenApi2ReportRtaGetGet Method for OpenApi2ReportRtaGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportRtaGetGetRequest
 */

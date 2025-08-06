@@ -52,6 +52,8 @@ func (r *ApiOpenApi2CreativeCustomCreativeUpdatePostRequest) WithLog(enable bool
 /*
 OpenApi2CreativeCustomCreativeUpdatePost Method for OpenApi2CreativeCustomCreativeUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CreativeCustomCreativeUpdatePostRequest
 */

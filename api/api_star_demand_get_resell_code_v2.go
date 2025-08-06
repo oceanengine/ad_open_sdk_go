@@ -58,6 +58,8 @@ func (r *ApiOpenApi2StarDemandGetResellCodeGetRequest) WithLog(enable bool) *Api
 /*
 OpenApi2StarDemandGetResellCodeGet Method for OpenApi2StarDemandGetResellCodeGet
 
+客户获取自定义投稿任务分销口令码
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemandGetResellCodeGetRequest
 */

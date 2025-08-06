@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarChallengeCancelPostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2StarChallengeCancelPost Method for OpenApi2StarChallengeCancelPost
 
+投稿任务取消
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarChallengeCancelPostRequest
 */

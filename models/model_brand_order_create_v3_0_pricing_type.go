@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderCreateV30PricingType
+// BrandOrderCreateV30PricingType 计费类型
 type BrandOrderCreateV30PricingType string
 
 // List of brand_order_create_v3.0_pricing_type

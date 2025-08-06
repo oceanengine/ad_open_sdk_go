@@ -87,6 +87,8 @@ func (r *ApiOpenApi2AgentCompanyBiddingListQueryGetRequest) WithLog(enable bool)
 /*
 OpenApi2AgentCompanyBiddingListQueryGet Method for OpenApi2AgentCompanyBiddingListQueryGet
 
+代理商竞价投放数据-公司维度
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentCompanyBiddingListQueryGetRequest
 */

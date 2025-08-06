@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandPolicyListV30AudienceInfoDistrictInfoLocationType
+// BrandPolicyListV30AudienceInfoDistrictInfoLocationType 所有、旅游，默认所有
 type BrandPolicyListV30AudienceInfoDistrictInfoLocationType string
 
 // List of brand_policy_list_v3.0_audience_info_district_info_location_type

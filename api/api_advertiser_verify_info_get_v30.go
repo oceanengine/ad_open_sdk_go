@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AdvertiserVerifyInfoGetGetRequest) WithLog(enable bool) *A
 /*
 OpenApiV30AdvertiserVerifyInfoGetGet Method for OpenApiV30AdvertiserVerifyInfoGetGet
 
+根据账户ID、平台，批量查询对公验证信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AdvertiserVerifyInfoGetGetRequest
 */

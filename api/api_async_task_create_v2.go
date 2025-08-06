@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AsyncTaskCreatePostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2AsyncTaskCreatePost Method for OpenApi2AsyncTaskCreatePost
 
+异步数据报表-创建异步任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AsyncTaskCreatePostRequest
 */

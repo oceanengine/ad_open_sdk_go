@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderListV30FilterClassify
+// BrandOrderListV30FilterClassify 广告类别
 type BrandOrderListV30FilterClassify string
 
 // List of brand_order_list_v3.0_filter_classify

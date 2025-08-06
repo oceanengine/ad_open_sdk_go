@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListFollowStateName
+// ToolsClueLifeGetV2DataListFollowStateName 线索通话状态
 type ToolsClueLifeGetV2DataListFollowStateName string
 
 // List of tools_clue_life_get_v2_data_list_follow_state_name

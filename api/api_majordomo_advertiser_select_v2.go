@@ -53,6 +53,8 @@ func (r *ApiOpenApi2MajordomoAdvertiserSelectGetRequest) WithLog(enable bool) *A
 /*
 OpenApi2MajordomoAdvertiserSelectGet Method for OpenApi2MajordomoAdvertiserSelectGet
 
+获取纵横组织下的广告主ID列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2MajordomoAdvertiserSelectGetRequest
 */

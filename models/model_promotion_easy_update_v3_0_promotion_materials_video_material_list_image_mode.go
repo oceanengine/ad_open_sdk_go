@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionEasyUpdateV30PromotionMaterialsVideoMaterialListImageMode
+// PromotionEasyUpdateV30PromotionMaterialsVideoMaterialListImageMode 素材类型
 type PromotionEasyUpdateV30PromotionMaterialsVideoMaterialListImageMode string
 
 // List of promotion_easy_update_v3.0_promotion_materials_video_material_list_image_mode

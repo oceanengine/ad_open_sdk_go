@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsSiteTemplateSiteCreateV2BricksType
+// ToolsSiteTemplateSiteCreateV2BricksType 组件类型
 type ToolsSiteTemplateSiteCreateV2BricksType string
 
 // List of tools_site_template_site_create_v2_bricks_type

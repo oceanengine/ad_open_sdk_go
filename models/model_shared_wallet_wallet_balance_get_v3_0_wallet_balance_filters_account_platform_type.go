@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SharedWalletWalletBalanceGetV30WalletBalanceFiltersAccountPlatformType
+// SharedWalletWalletBalanceGetV30WalletBalanceFiltersAccountPlatformType 业务线：AD/千川/本地推;不填默认不过滤
 type SharedWalletWalletBalanceGetV30WalletBalanceFiltersAccountPlatformType string
 
 // List of shared_wallet_wallet_balance_get_v3.0_wallet_balance_filters_account_platform_type

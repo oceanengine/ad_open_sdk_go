@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileVideoAwemeGetV2DataListImageMode
+// FileVideoAwemeGetV2DataListImageMode 素材类型
 type FileVideoAwemeGetV2DataListImageMode string
 
 // List of file_video_aweme_get_v2_data_list_image_mode

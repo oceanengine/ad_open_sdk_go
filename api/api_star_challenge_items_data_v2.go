@@ -74,6 +74,8 @@ func (r *ApiOpenApi2StarChallengeItemsDataGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2StarChallengeItemsDataGet Method for OpenApi2StarChallengeItemsDataGet
 
+投稿投后数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarChallengeItemsDataGetRequest
 */

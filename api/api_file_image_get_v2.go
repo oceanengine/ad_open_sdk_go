@@ -74,6 +74,8 @@ func (r *ApiOpenApi2FileImageGetGetRequest) WithLog(enable bool) *ApiOpenApi2Fil
 /*
 OpenApi2FileImageGetGet Method for OpenApi2FileImageGetGet
 
+通过此接口，用户可以获取经过一定条件过滤后的广告主下创意素材库的图片及图片信息。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileImageGetGetRequest
 */

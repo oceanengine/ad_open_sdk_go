@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdCreateV30DateQuantityStockIncreasePackageType
+// BrandAdCreateV30DateQuantityStockIncreasePackageType 库存加量包
 type BrandAdCreateV30DateQuantityStockIncreasePackageType string
 
 // List of brand_ad_create_v3.0_date_quantity_stock_increase_package_type

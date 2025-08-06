@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsAdStockInfosSuperiorCreativeType
+// BrandAdGetV30DataAdsAdStockInfosSuperiorCreativeType 高级创意
 type BrandAdGetV30DataAdsAdStockInfosSuperiorCreativeType int64
 
 // List of brand_ad_get_v3.0_data_ads_ad_stock_infos_superior_creative_type

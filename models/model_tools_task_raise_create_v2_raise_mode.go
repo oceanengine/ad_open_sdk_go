@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsTaskRaiseCreateV2RaiseMode
+// ToolsTaskRaiseCreateV2RaiseMode 起量模式
 type ToolsTaskRaiseCreateV2RaiseMode string
 
 // List of tools_task_raise_create_v2_raise_mode

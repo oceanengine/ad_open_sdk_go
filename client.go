@@ -1,5 +1,5 @@
 /*
-API version: 1.1.63
+API version: 1.1.64
 */
 package ad_open_sdk_go
 
@@ -1091,44 +1091,8 @@ func (c *Client) EnterpriseBindListGetV10Api() *api.EnterpriseBindListGetV10ApiS
 	return c.ApiClient.EnterpriseBindListGetV10Api
 }
 
-func (c *Client) EnterpriseCommentDetailV10Api() *api.EnterpriseCommentDetailV10ApiService {
-	return c.ApiClient.EnterpriseCommentDetailV10Api
-}
-
-func (c *Client) EnterpriseCommentListGetV10Api() *api.EnterpriseCommentListGetV10ApiService {
-	return c.ApiClient.EnterpriseCommentListGetV10Api
-}
-
-func (c *Client) EnterpriseCommentReplyListV10Api() *api.EnterpriseCommentReplyListV10ApiService {
-	return c.ApiClient.EnterpriseCommentReplyListV10Api
-}
-
-func (c *Client) EnterpriseCommentReplyV10Api() *api.EnterpriseCommentReplyV10ApiService {
-	return c.ApiClient.EnterpriseCommentReplyV10Api
-}
-
-func (c *Client) EnterpriseFlowCategoryGetV10Api() *api.EnterpriseFlowCategoryGetV10ApiService {
-	return c.ApiClient.EnterpriseFlowCategoryGetV10Api
-}
-
 func (c *Client) EnterpriseInfoV10Api() *api.EnterpriseInfoV10ApiService {
 	return c.ApiClient.EnterpriseInfoV10Api
-}
-
-func (c *Client) EnterpriseItemListV10Api() *api.EnterpriseItemListV10ApiService {
-	return c.ApiClient.EnterpriseItemListV10Api
-}
-
-func (c *Client) EnterpriseOperationLogGetV10Api() *api.EnterpriseOperationLogGetV10ApiService {
-	return c.ApiClient.EnterpriseOperationLogGetV10Api
-}
-
-func (c *Client) EnterpriseOverviewDataGetV10Api() *api.EnterpriseOverviewDataGetV10ApiService {
-	return c.ApiClient.EnterpriseOverviewDataGetV10Api
-}
-
-func (c *Client) EnterpriseVideoInfoGetV10Api() *api.EnterpriseVideoInfoGetV10ApiService {
-	return c.ApiClient.EnterpriseVideoInfoGetV10Api
 }
 
 func (c *Client) EventManagerAbnormalAssetsGetV30Api() *api.EventManagerAbnormalAssetsGetV30ApiService {
@@ -1143,16 +1107,16 @@ func (c *Client) EventManagerAuthAddPublicKeyV2Api() *api.EventManagerAuthAddPub
 	return c.ApiClient.EventManagerAuthAddPublicKeyV2Api
 }
 
+func (c *Client) EventManagerAuthDelPublicKeyV2Api() *api.EventManagerAuthDelPublicKeyV2ApiService {
+	return c.ApiClient.EventManagerAuthDelPublicKeyV2Api
+}
+
 func (c *Client) EventManagerAuthEnableV2Api() *api.EventManagerAuthEnableV2ApiService {
 	return c.ApiClient.EventManagerAuthEnableV2Api
 }
 
 func (c *Client) EventManagerAuthGetAllPublicKeysV2Api() *api.EventManagerAuthGetAllPublicKeysV2ApiService {
 	return c.ApiClient.EventManagerAuthGetAllPublicKeysV2Api
-}
-
-func (c *Client) EventManagerAuthGetAuthStatusV2Api() *api.EventManagerAuthGetAuthStatusV2ApiService {
-	return c.ApiClient.EventManagerAuthGetAuthStatusV2Api
 }
 
 func (c *Client) EventManagerAuthGetPublicKeyV2Api() *api.EventManagerAuthGetPublicKeyV2ApiService {
@@ -2143,10 +2107,6 @@ func (c *Client) QianchuanReportLiveGetV10Api() *api.QianchuanReportLiveGetV10Ap
 	return c.ApiClient.QianchuanReportLiveGetV10Api
 }
 
-func (c *Client) QianchuanReportLiveV2GetV10Api() *api.QianchuanReportLiveV2GetV10ApiService {
-	return c.ApiClient.QianchuanReportLiveV2GetV10Api
-}
-
 func (c *Client) QianchuanReportLongTransferOrderConfigGetV10Api() *api.QianchuanReportLongTransferOrderConfigGetV10ApiService {
 	return c.ApiClient.QianchuanReportLongTransferOrderConfigGetV10Api
 }
@@ -2165,6 +2125,10 @@ func (c *Client) QianchuanReportMaterialGetV10Api() *api.QianchuanReportMaterial
 
 func (c *Client) QianchuanReportSearchWordGetV10Api() *api.QianchuanReportSearchWordGetV10ApiService {
 	return c.ApiClient.QianchuanReportSearchWordGetV10Api
+}
+
+func (c *Client) QianchuanReportTodayLiveGetV10Api() *api.QianchuanReportTodayLiveGetV10ApiService {
+	return c.ApiClient.QianchuanReportTodayLiveGetV10Api
 }
 
 func (c *Client) QianchuanReportTodayLiveRoomConfigGetV10Api() *api.QianchuanReportTodayLiveRoomConfigGetV10ApiService {

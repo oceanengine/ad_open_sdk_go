@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandToolQueryStockBalanceV30FrequencyInfoFrequencyStatus
+// BrandToolQueryStockBalanceV30FrequencyInfoFrequencyStatus 是否启用
 type BrandToolQueryStockBalanceV30FrequencyInfoFrequencyStatus string
 
 // List of brand_tool_query_stock_balance_v3.0_frequency_info_frequency_status

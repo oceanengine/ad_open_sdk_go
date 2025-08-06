@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsSiteGetV2DataListSiteType
+// ToolsSiteGetV2DataListSiteType 建站类型
 type ToolsSiteGetV2DataListSiteType string
 
 // List of tools_site_get_v2_data_list_siteType

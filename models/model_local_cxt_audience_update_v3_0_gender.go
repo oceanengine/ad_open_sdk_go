@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalCxtAudienceUpdateV30Gender
+// LocalCxtAudienceUpdateV30Gender 性别
 type LocalCxtAudienceUpdateV30Gender string
 
 // List of local_cxt_audience_update_v3.0_gender

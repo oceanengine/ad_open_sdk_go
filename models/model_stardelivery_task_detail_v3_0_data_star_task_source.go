@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StardeliveryTaskDetailV30DataStarTaskSource
+// StardeliveryTaskDetailV30DataStarTaskSource 任务创建来源
 type StardeliveryTaskDetailV30DataStarTaskSource string
 
 // List of stardelivery_task_detail_v3.0_data_star_task_source

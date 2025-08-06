@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30LocalLifeAdvertiserCreatePostRequest) WithLog(enable bool)
 /*
 OpenApiV30LocalLifeAdvertiserCreatePost Method for OpenApiV30LocalLifeAdvertiserCreatePost
 
+本地开户接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalLifeAdvertiserCreatePostRequest
 */

@@ -74,6 +74,8 @@ func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) WithLog(enable boo
 /*
 OpenApi2ToolsVideoCheckAvailableAnchorGet Method for OpenApi2ToolsVideoCheckAvailableAnchorGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest
 */

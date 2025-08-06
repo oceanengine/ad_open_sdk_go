@@ -60,6 +60,10 @@ func (r *ApiOpenApi2ToolsSiteTemplatePreviewGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2ToolsSiteTemplatePreviewGet Method for OpenApi2ToolsSiteTemplatePreviewGet
 
+通过此接口，用户可以预览通过【基于站点创建模板】接口创建的落地页模板。
+
+> 需要注意的是，落地页模板的预览链接有效时间为20分钟。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSiteTemplatePreviewGetRequest
 */

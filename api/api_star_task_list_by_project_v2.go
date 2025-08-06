@@ -70,6 +70,8 @@ func (r *ApiOpenApi2StarTaskListByProjectGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2StarTaskListByProjectGet Method for OpenApi2StarTaskListByProjectGet
 
+获取星图项目下任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarTaskListByProjectGetRequest
 */

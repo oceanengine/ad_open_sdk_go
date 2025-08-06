@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsWechatAppletUpdatePostRequest) WithLog(enable bool) *
 /*
 OpenApiV30ToolsWechatAppletUpdatePost Method for OpenApiV30ToolsWechatAppletUpdatePost
 
+OPENapi 场景更新小程序信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsWechatAppletUpdatePostRequest
 */

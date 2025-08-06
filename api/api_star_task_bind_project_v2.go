@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarTaskBindProjectPostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2StarTaskBindProjectPost Method for OpenApi2StarTaskBindProjectPost
 
+绑定任务至项目
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarTaskBindProjectPostRequest
 */

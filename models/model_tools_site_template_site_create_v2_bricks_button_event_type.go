@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsSiteTemplateSiteCreateV2BricksButtonEventType
+// ToolsSiteTemplateSiteCreateV2BricksButtonEventType 事件行为类型
 type ToolsSiteTemplateSiteCreateV2BricksButtonEventType string
 
 // List of tools_site_template_site_create_v2_bricks_button_event_type

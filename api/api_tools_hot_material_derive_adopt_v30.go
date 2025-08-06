@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsHotMaterialDeriveAdoptPostRequest) WithLog(enable boo
 /*
 OpenApiV30ToolsHotMaterialDeriveAdoptPost Method for OpenApiV30ToolsHotMaterialDeriveAdoptPost
 
+爆款裂变采纳
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsHotMaterialDeriveAdoptPostRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10EnterpriseBindListGetGetRequest) WithLog(enable bool) *Api
 /*
 OpenApiV10EnterpriseBindListGetGet Method for OpenApiV10EnterpriseBindListGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10EnterpriseBindListGetGetRequest
 */

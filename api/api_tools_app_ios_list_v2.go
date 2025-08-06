@@ -70,6 +70,8 @@ func (r *ApiOpenApi2ToolsAppIosListGetRequest) WithLog(enable bool) *ApiOpenApi2
 /*
 OpenApi2ToolsAppIosListGet Method for OpenApi2ToolsAppIosListGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppIosListGetRequest
 */

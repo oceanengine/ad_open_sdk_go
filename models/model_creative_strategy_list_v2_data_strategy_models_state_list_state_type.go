@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreativeStrategyListV2DataStrategyModelsStateListStateType
+// CreativeStrategyListV2DataStrategyModelsStateListStateType 配置项类型
 type CreativeStrategyListV2DataStrategyModelsStateListStateType string
 
 // List of creative_strategy_list_v2_data_strategy_models_state_list_state_type

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandMaterialCreatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30BrandMaterialCreatePost Method for OpenApiV30BrandMaterialCreatePost
 
+品牌预定单创建创意
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandMaterialCreatePostRequest
 */

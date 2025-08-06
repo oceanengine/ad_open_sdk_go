@@ -60,6 +60,8 @@ func (r *ApiOpenApi2StarVasGetExportBoostItemGroupResultGetRequest) WithLog(enab
 /*
 OpenApi2StarVasGetExportBoostItemGroupResultGet Method for OpenApi2StarVasGetExportBoostItemGroupResultGet
 
+查询导出投中加热组数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarVasGetExportBoostItemGroupResultGetRequest
 */

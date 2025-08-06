@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DpaClueProductDetailV2DataProductsAuditStatus
+// DpaClueProductDetailV2DataProductsAuditStatus 审核状态
 type DpaClueProductDetailV2DataProductsAuditStatus string
 
 // List of dpa_clue_product_detail_v2_data_products_audit_status

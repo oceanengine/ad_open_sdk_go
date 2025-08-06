@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarVasCancelBoostItemGroupPostRequest) WithLog(enable bool)
 /*
 OpenApi2StarVasCancelBoostItemGroupPost Method for OpenApi2StarVasCancelBoostItemGroupPost
 
+取消投中加热组
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarVasCancelBoostItemGroupPostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicElementGetV30FilteringElementType
+// AicElementGetV30FilteringElementType 元素类型( 视频、图片、字体、音色、音乐、文件夹)
 type AicElementGetV30FilteringElementType string
 
 // List of aic_element_get_v3.0_filtering_element_type

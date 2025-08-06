@@ -97,6 +97,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) WithLog(e
 /*
 OpenApiV10QianchuanUniPromotionBlockMaterialGetGet Method for OpenApiV10QianchuanUniPromotionBlockMaterialGetGet
 
+获取全域可排除抖音视频列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest
 */

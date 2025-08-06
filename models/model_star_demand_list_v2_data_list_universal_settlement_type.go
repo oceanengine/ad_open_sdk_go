@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarDemandListV2DataListUniversalSettlementType
+// StarDemandListV2DataListUniversalSettlementType 结算方式
 type StarDemandListV2DataListUniversalSettlementType string
 
 // List of star_demand_list_v2_data_list_universal_settlement_type

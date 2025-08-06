@@ -82,6 +82,8 @@ func (r *ApiOpenApiV30DouplusOrderReportGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30DouplusOrderReportGet Method for OpenApiV30DouplusOrderReportGet
 
+获取DOU+订单指标数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30DouplusOrderReportGetRequest
 */

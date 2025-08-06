@@ -52,6 +52,9 @@ func (r *ApiOpenApiV30AdvertiserDeliveryPkgSubmitPostRequest) WithLog(enable boo
 /*
 OpenApiV30AdvertiserDeliveryPkgSubmitPost Method for OpenApiV30AdvertiserDeliveryPkgSubmitPost
 
+用于提交以推广产品形式整组提交的投放资质，该接口可以同时用于新增和编辑。
+针对审核不通过的推广产品资质支持编辑提交
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AdvertiserDeliveryPkgSubmitPostRequest
 */

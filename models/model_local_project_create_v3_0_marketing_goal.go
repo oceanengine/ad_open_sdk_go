@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30MarketingGoal
+// LocalProjectCreateV30MarketingGoal 营销场景，允许值： - `LIVE` 直播 - `VIDEO_IMAGE` 短视频/图文
 type LocalProjectCreateV30MarketingGoal string
 
 // List of local_project_create_v3.0_marketing_goal

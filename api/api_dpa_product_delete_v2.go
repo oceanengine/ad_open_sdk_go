@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DpaProductDeletePostRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2DpaProductDeletePost Method for OpenApi2DpaProductDeletePost
 
+此接口用于删除商品库中的特定商品
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaProductDeletePostRequest
 */

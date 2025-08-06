@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30FileImageDeletePostRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV30FileImageDeletePost Method for OpenApiV30FileImageDeletePost
 
+通过此接口，用户可以批量删除广告主下创意素材库的图片。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30FileImageDeletePostRequest
 */

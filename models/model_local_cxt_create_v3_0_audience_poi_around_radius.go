@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalCxtCreateV30AudiencePoiAroundRadius
+// LocalCxtCreateV30AudiencePoiAroundRadius 当district=POI_AROUND门店附近时，必填
 type LocalCxtCreateV30AudiencePoiAroundRadius string
 
 // List of local_cxt_create_v3.0_audience_poi_around_radius

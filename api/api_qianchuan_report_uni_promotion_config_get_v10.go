@@ -58,6 +58,8 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionConfigGetGetRequest) WithLog(en
 /*
 OpenApiV10QianchuanReportUniPromotionConfigGetGet Method for OpenApiV10QianchuanReportUniPromotionConfigGetGet
 
+获取全域数据-可用维度和指标
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanReportUniPromotionConfigGetGetRequest
 */

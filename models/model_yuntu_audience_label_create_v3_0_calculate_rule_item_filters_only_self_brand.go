@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// YuntuAudienceLabelCreateV30CalculateRuleItemFiltersOnlySelfBrand
+// YuntuAudienceLabelCreateV30CalculateRuleItemFiltersOnlySelfBrand 内容是否为本品牌。商品人群标签下必传，其他人群标签下勿传。0:全网，1:本品牌
 type YuntuAudienceLabelCreateV30CalculateRuleItemFiltersOnlySelfBrand int64
 
 // List of yuntu_audience_label_create_v3.0_calculate_rule_item_filters_only_self_brand

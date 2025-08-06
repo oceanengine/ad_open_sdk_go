@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalCxtCreateV30AudienceGender
+// LocalCxtCreateV30AudienceGender 性别
 type LocalCxtCreateV30AudienceGender string
 
 // List of local_cxt_create_v3.0_audience_gender

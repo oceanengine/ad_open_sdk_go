@@ -90,5 +90,6 @@ type AudiencePackageGetV30ResponseDataAudiencePackagesInner struct {
 	RetargetingTagsExclude []int64 `json:"retargeting_tags_exclude,omitempty"`
 	//
 	RetargetingTagsInclude []int64                                                          `json:"retargeting_tags_include,omitempty"`
+	SmartExtend            *AudiencePackageGetV30DataAudiencePackagesSmartExtend            `json:"smart_extend,omitempty"`
 	SuperiorPopularityType *AudiencePackageGetV30DataAudiencePackagesSuperiorPopularityType `json:"superior_popularity_type,omitempty"`
 }

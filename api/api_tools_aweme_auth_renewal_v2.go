@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsAwemeAuthRenewalPostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ToolsAwemeAuthRenewalPost Method for OpenApi2ToolsAwemeAuthRenewalPost
 
+抖音授权关系续期
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAwemeAuthRenewalPostRequest
 */

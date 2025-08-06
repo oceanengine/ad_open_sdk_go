@@ -70,6 +70,8 @@ func (r *ApiOpenApiV10ServeMarketOrderGetGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV10ServeMarketOrderGetGet Method for OpenApiV10ServeMarketOrderGetGet
 
+查询群峰服务市场订单的接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10ServeMarketOrderGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QueryRebateAccountingInfoV2FilteringIsCreateRebate
+// QueryRebateAccountingInfoV2FilteringIsCreateRebate 是否已创建返点 (1:是 2:否)
 type QueryRebateAccountingInfoV2FilteringIsCreateRebate string
 
 // List of query_rebate_accounting_info_v2_filtering_is_create_rebate

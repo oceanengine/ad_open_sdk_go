@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreativeGetV2FilteringPricing
+// CreativeGetV2FilteringPricing 按照广告计划出价方式过滤，[【附录-计划出价类型】](https://ad.oceanengine.com/openapi/doc/index.html?id=1696710760171535#custom-anchor-计划出价类型)
 type CreativeGetV2FilteringPricing string
 
 // List of creative_get_v2_filtering_pricing

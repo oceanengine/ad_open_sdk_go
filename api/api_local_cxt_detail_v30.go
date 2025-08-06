@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30LocalCxtDetailGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30LocalCxtDetailGet Method for OpenApiV30LocalCxtDetailGet
 
+获取持续投计划详情
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalCxtDetailGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionNewcustomerCreateV30AudienceGender
+// PromotionNewcustomerCreateV30AudienceGender 性别
 type PromotionNewcustomerCreateV30AudienceGender string
 
 // List of promotion_newcustomer_create_v3.0_audience_gender

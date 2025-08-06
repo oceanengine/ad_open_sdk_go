@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AdvertiserDeliveryQualificationDeletePostRequest) WithLog(
 /*
 OpenApiV30AdvertiserDeliveryQualificationDeletePost Method for OpenApiV30AdvertiserDeliveryQualificationDeletePost
 
+支持删除审核拒绝的投放资质（单资质）
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AdvertiserDeliveryQualificationDeletePostRequest
 */

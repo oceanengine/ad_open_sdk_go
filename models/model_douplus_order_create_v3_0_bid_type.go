@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DouplusOrderCreateV30BidType
+// DouplusOrderCreateV30BidType 出价类型，可选值: AUTO_BID: 自动出价（默认值） MANUAL_BID: 手动出价 注：若不填则默认为自动出价
 type DouplusOrderCreateV30BidType string
 
 // List of douplus_order_create_v3.0_bid_type

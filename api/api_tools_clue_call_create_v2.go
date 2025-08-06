@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueCallCreatePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ToolsClueCallCreatePost Method for OpenApi2ToolsClueCallCreatePost
 
+通过入参“呼叫类型”，可以实现双呼、axb、网络等不同的呼叫方式。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueCallCreatePostRequest
 */

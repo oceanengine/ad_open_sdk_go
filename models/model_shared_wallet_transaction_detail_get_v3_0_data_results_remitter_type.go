@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SharedWalletTransactionDetailGetV30DataResultsRemitterType
+// SharedWalletTransactionDetailGetV30DataResultsRemitterType 付款账户类型
 type SharedWalletTransactionDetailGetV30DataResultsRemitterType string
 
 // List of shared_wallet_transaction_detail_get_v3.0_data_results_remitter_type

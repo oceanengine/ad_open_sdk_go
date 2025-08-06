@@ -123,6 +123,8 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetReques
 /*
 OpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGet Method for OpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGet
 
+获取全域推广分维度数据(抖音号)
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest
 */

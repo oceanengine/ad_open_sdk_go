@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionAdControlTaskListV10FilteringHavingCost
+// QianchuanUniPromotionAdControlTaskListV10FilteringHavingCost 消耗情况 全部 ALL 有消耗 YES 无消耗 NO 默认查询全部
 type QianchuanUniPromotionAdControlTaskListV10FilteringHavingCost string
 
 // List of qianchuan_uni_promotion_ad_control_task_list_v1.0_filtering_having_cost

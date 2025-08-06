@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30LocalProjectCreatePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30LocalProjectCreatePost Method for OpenApiV30LocalProjectCreatePost
 
+创建项目
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalProjectCreatePostRequest
 */

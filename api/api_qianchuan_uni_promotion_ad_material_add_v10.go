@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdMaterialAddPostRequest) WithLog(ena
 /*
 OpenApiV10QianchuanUniPromotionAdMaterialAddPost Method for OpenApiV10QianchuanUniPromotionAdMaterialAddPost
 
+添加全域推广计划下素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionAdMaterialAddPostRequest
 */

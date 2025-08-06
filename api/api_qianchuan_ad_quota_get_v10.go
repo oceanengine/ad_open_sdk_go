@@ -53,6 +53,8 @@ func (r *ApiOpenApiV10QianchuanAdQuotaGetGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV10QianchuanAdQuotaGetGet Method for OpenApiV10QianchuanAdQuotaGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdQuotaGetGetRequest
 */

@@ -15,6 +15,7 @@ type ProjectListV30DataListOptimizeGoalExternalAction string
 
 // List of project_list_v3.0_data_list_optimize_goal_external_action
 const (
+	AD_CONVERT_ADD_TO_CART_ProjectListV30DataListOptimizeGoalExternalAction                      ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_ADD_TO_CART"
 	AD_CONVERT_PAGE_VIEW_ProjectListV30DataListOptimizeGoalExternalAction                        ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_PAGE_VIEW"
 	AD_CONVERT_PHONE_CONNECT_ProjectListV30DataListOptimizeGoalExternalAction                    ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_PHONE_CONNECT"
 	AD_CONVERT_TYPE_ACTIVE_ProjectListV30DataListOptimizeGoalExternalAction                      ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_ACTIVE"
@@ -135,6 +136,7 @@ const (
 	AD_CONVERT_TYPE_PHONE_CONFIRM_ProjectListV30DataListOptimizeGoalExternalAction               ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_PHONE_CONFIRM"
 	AD_CONVERT_TYPE_PHONE_CONNECT_ProjectListV30DataListOptimizeGoalExternalAction               ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_PHONE_CONNECT"
 	AD_CONVERT_TYPE_PHONE_EFFECTIVE_ProjectListV30DataListOptimizeGoalExternalAction             ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_PHONE_EFFECTIVE"
+	AD_CONVERT_TYPE_PLANTING_GRASS_ProjectListV30DataListOptimizeGoalExternalAction              ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_PLANTING_GRASS"
 	AD_CONVERT_TYPE_POI_ADDRESS_CLICK_ProjectListV30DataListOptimizeGoalExternalAction           ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_POI_ADDRESS_CLICK"
 	AD_CONVERT_TYPE_POI_COLLECT_ProjectListV30DataListOptimizeGoalExternalAction                 ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_POI_COLLECT"
 	AD_CONVERT_TYPE_POI_MULTIPLE_ProjectListV30DataListOptimizeGoalExternalAction                ProjectListV30DataListOptimizeGoalExternalAction = "AD_CONVERT_TYPE_POI_MULTIPLE"

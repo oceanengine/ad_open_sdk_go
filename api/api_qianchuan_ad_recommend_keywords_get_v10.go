@@ -95,6 +95,8 @@ func (r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) WithLog(enable 
 /*
 OpenApiV10QianchuanAdRecommendKeywordsGetGet Method for OpenApiV10QianchuanAdRecommendKeywordsGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest
 */

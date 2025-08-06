@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderListV30FilterGdSendType
+// BrandOrderListV30FilterGdSendType 优化目标
 type BrandOrderListV30FilterGdSendType string
 
 // List of brand_order_list_v3.0_filter_gd_send_type

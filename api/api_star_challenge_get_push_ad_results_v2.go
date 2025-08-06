@@ -67,6 +67,8 @@ func (r *ApiOpenApi2StarChallengeGetPushAdResultsGetRequest) WithLog(enable bool
 /*
 OpenApi2StarChallengeGetPushAdResultsGet Method for OpenApi2StarChallengeGetPushAdResultsGet
 
+查询投稿任务广告推送结果
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarChallengeGetPushAdResultsGetRequest
 */

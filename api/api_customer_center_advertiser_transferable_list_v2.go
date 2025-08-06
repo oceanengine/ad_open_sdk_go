@@ -70,6 +70,10 @@ func (r *ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest) WithLog(
 /*
 OpenApi2CustomerCenterAdvertiserTransferableListGet Method for OpenApi2CustomerCenterAdvertiserTransferableListGet
 
+本接口用于查询管家或者广告主的可转账列表
+注意：暂不支持代理商角色账号获取
+报错：账户角色不能为一代或者二代代理商
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest
 */

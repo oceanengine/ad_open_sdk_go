@@ -74,6 +74,8 @@ func (r *ApiOpenApiV30StardeliveryTaskSharingListGetRequest) WithLog(enable bool
 /*
 OpenApiV30StardeliveryTaskSharingListGet Method for OpenApiV30StardeliveryTaskSharingListGet
 
+查询星广联投任务共享详情
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30StardeliveryTaskSharingListGetRequest
 */

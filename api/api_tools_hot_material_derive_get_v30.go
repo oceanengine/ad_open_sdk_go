@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30ToolsHotMaterialDeriveGetGetRequest) WithLog(enable bool) 
 /*
 OpenApiV30ToolsHotMaterialDeriveGetGet Method for OpenApiV30ToolsHotMaterialDeriveGetGet
 
+爆款裂变任务查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsHotMaterialDeriveGetGetRequest
 */

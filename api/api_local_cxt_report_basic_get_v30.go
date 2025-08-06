@@ -73,6 +73,8 @@ func (r *ApiOpenApiV30LocalCxtReportBasicGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV30LocalCxtReportBasicGetGet Method for OpenApiV30LocalCxtReportBasicGetGet
 
+获取持续投投放数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalCxtReportBasicGetGetRequest
 */

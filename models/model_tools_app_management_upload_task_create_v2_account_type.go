@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementUploadTaskCreateV2AccountType
+// ToolsAppManagementUploadTaskCreateV2AccountType 账户类型
 type ToolsAppManagementUploadTaskCreateV2AccountType string
 
 // List of tools_app_management_upload_task_create_v2_account_type

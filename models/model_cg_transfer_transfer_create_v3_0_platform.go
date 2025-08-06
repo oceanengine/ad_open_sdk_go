@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CgTransferTransferCreateV30Platform
+// CgTransferTransferCreateV30Platform 转账业务线
 type CgTransferTransferCreateV30Platform string
 
 // List of cg_transfer_transfer_create_v3.0_platform

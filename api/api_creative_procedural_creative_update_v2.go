@@ -52,6 +52,8 @@ func (r *ApiOpenApi2CreativeProceduralCreativeUpdatePostRequest) WithLog(enable 
 /*
 OpenApi2CreativeProceduralCreativeUpdatePost Method for OpenApi2CreativeProceduralCreativeUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CreativeProceduralCreativeUpdatePostRequest
 */

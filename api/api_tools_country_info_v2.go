@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ToolsCountryInfoGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2ToolsCountryInfoGet Method for OpenApi2ToolsCountryInfoGet
 
+查询国家/区域信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsCountryInfoGetRequest
 */

@@ -73,6 +73,8 @@ func (r *ApiOpenApiV10QianchuanAdKeywordsGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV10QianchuanAdKeywordsGetGet Method for OpenApiV10QianchuanAdKeywordsGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdKeywordsGetGetRequest
 */

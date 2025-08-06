@@ -94,6 +94,8 @@ func (r *ApiOpenApi2CreativeGetGetRequest) WithLog(enable bool) *ApiOpenApi2Crea
 /*
 OpenApi2CreativeGetGet Method for OpenApi2CreativeGetGet
 
+获取创意列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CreativeGetGetRequest
 */

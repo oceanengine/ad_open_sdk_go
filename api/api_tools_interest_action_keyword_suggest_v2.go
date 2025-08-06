@@ -76,6 +76,8 @@ func (r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) WithLog(enable 
 /*
 OpenApi2ToolsInterestActionKeywordSuggestGet Method for OpenApi2ToolsInterestActionKeywordSuggestGet
 
+获取行为兴趣推荐关键词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest
 */

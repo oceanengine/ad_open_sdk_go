@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StardeliveryTaskListV30FilteringStarTaskSource
+// StardeliveryTaskListV30FilteringStarTaskSource 创建来源过滤，允许值： MY_CREATIONS 我创建的 SHARING 共享中 SHATE_EXPIRED 共享失效
 type StardeliveryTaskListV30FilteringStarTaskSource string
 
 // List of stardelivery_task_list_v3.0_filtering_star_task_source

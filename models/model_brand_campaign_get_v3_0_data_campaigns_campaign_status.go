@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandCampaignGetV30DataCampaignsCampaignStatus
+// BrandCampaignGetV30DataCampaignsCampaignStatus 广告组状态
 type BrandCampaignGetV30DataCampaignsCampaignStatus int64
 
 // List of brand_campaign_get_v3.0_data_campaigns_campaign_status

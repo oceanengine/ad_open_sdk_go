@@ -82,6 +82,8 @@ func (r *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest) WithLog(enable b
 /*
 OpenApiV30ToolsBpAssetManagementShareGetGet Method for OpenApiV30ToolsBpAssetManagementShareGetGet
 
+获取资产共享范围
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest
 */

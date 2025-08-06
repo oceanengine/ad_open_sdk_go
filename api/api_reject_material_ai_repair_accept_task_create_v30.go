@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest) WithLog
 /*
 OpenApiV30RejectMaterialAiRepairAcceptTaskCreatePost Method for OpenApiV30RejectMaterialAiRepairAcceptTaskCreatePost
 
+采纳拒审素材修复建议
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest
 */

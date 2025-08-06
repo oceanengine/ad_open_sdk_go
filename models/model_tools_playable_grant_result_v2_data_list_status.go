@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsPlayableGrantResultV2DataListStatus
+// ToolsPlayableGrantResultV2DataListStatus 任务推送结果 枚举值：RUNNING（推送中）,SUCCESS（推送成功）,FAILED（推送失败）
 type ToolsPlayableGrantResultV2DataListStatus string
 
 // List of tools_playable_grant_result_v2_data_list_status

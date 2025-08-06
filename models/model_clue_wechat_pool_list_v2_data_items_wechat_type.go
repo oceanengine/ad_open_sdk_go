@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ClueWechatPoolListV2DataItemsWechatType
+// ClueWechatPoolListV2DataItemsWechatType 类型，0 个人号、1公众号、3企业微信号
 type ClueWechatPoolListV2DataItemsWechatType string
 
 // List of clue_wechat_pool_list_v2_data_items_wechat_type

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2CreativeProceduralCreativeCreatePostRequest) WithLog(enable 
 /*
 OpenApi2CreativeProceduralCreativeCreatePost Method for OpenApi2CreativeProceduralCreativeCreatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CreativeProceduralCreativeCreatePostRequest
 */

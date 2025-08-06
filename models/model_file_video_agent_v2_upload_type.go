@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileVideoAgentV2UploadType
+// FileVideoAgentV2UploadType 视频上传方式(1文件上传，2网址上传)
 type FileVideoAgentV2UploadType string
 
 // List of file_video_agent_v2_upload_type

@@ -70,6 +70,8 @@ func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30ToolsMicroAppListGet Method for OpenApiV30ToolsMicroAppListGet
 
+mapi场景获取字节小程序列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsMicroAppListGetRequest
 */

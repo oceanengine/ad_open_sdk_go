@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DcdChargeSubmitV30Platform
+// DcdChargeSubmitV30Platform 业务线
 type DcdChargeSubmitV30Platform string
 
 // List of dcd_charge_submit_v3.0_platform

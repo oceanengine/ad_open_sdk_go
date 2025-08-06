@@ -64,6 +64,8 @@ func (r *ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest) WithLog(enable bool
 /*
 OpenApi2ToolsAwemeSimilarAuthorSearchGet Method for OpenApi2ToolsAwemeSimilarAuthorSearchGet
 
+查询抖音类似帐号
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest
 */

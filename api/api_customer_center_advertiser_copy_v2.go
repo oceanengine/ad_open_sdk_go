@@ -52,6 +52,8 @@ func (r *ApiOpenApi2CustomerCenterAdvertiserCopyPostRequest) WithLog(enable bool
 /*
 OpenApi2CustomerCenterAdvertiserCopyPost Method for OpenApi2CustomerCenterAdvertiserCopyPost
 
+复制广告主账号
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CustomerCenterAdvertiserCopyPostRequest
 */

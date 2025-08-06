@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileRebateMaterialDownloadCreateTaskV2FilteringRebateCalcSettlementStatsType
+// FileRebateMaterialDownloadCreateTaskV2FilteringRebateCalcSettlementStatsType 结算行业统计类型
 type FileRebateMaterialDownloadCreateTaskV2FilteringRebateCalcSettlementStatsType string
 
 // List of file_rebate_material_download_create_task_v2_filtering_rebate_calc_settlement_stats_type

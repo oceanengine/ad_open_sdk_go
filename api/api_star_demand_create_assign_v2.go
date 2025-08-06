@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarDemandCreateAssignPostRequest) WithLog(enable bool) *Api
 /*
 OpenApi2StarDemandCreateAssignPost Method for OpenApi2StarDemandCreateAssignPost
 
+指派需求创建
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemandCreateAssignPostRequest
 */

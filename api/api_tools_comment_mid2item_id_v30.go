@@ -82,6 +82,8 @@ func (r *ApiOpenApiV30ToolsCommentMid2itemIdGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV30ToolsCommentMid2itemIdGet Method for OpenApiV30ToolsCommentMid2itemIdGet
 
+获取评论视频列表@pm2
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsCommentMid2itemIdGetRequest
 */

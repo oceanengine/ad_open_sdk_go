@@ -52,6 +52,8 @@ func (r *ApiOpenApi2EventManagerTrackUrlCreatePostRequest) WithLog(enable bool) 
 /*
 OpenApi2EventManagerTrackUrlCreatePost Method for OpenApi2EventManagerTrackUrlCreatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EventManagerTrackUrlCreatePostRequest
 */

@@ -74,6 +74,8 @@ func (r *ApiOpenApi2StarStarAdUniteTaskDetailGetRequest) WithLog(enable bool) *A
 /*
 OpenApi2StarStarAdUniteTaskDetailGet Method for OpenApi2StarStarAdUniteTaskDetailGet
 
+获取星广联投(星图版)任务维度数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarStarAdUniteTaskDetailGetRequest
 */

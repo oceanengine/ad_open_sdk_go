@@ -74,6 +74,8 @@ func (r *ApiOpenApiV30YuntuAudienceInfoGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30YuntuAudienceInfoGetGet Method for OpenApiV30YuntuAudienceInfoGetGet
 
+查询自定义人群包
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30YuntuAudienceInfoGetGetRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ReportProductHourlyAsyncTaskCreatePostRequest) WithLog(ena
 /*
 OpenApiV30ReportProductHourlyAsyncTaskCreatePost Method for OpenApiV30ReportProductHourlyAsyncTaskCreatePost
 
+创建异步报表任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportProductHourlyAsyncTaskCreatePostRequest
 */

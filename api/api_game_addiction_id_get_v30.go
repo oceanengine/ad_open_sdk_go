@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30GameAddictionIdGetGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30GameAddictionIdGetGet Method for OpenApiV30GameAddictionIdGetGet
 
+查询应用关键行为
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30GameAddictionIdGetGetRequest
 */

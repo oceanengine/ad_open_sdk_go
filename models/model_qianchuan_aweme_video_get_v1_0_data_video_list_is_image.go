@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeVideoGetV10DataVideoListIsImage
+// QianchuanAwemeVideoGetV10DataVideoListIsImage 是否图文 0：普通视频 1：图文视频
 type QianchuanAwemeVideoGetV10DataVideoListIsImage int64
 
 // List of qianchuan_aweme_video_get_v1.0_data_video_list_is_image

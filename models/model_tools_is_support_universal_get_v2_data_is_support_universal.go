@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsIsSupportUniversalGetV2DataIsSupportUniversal
+// ToolsIsSupportUniversalGetV2DataIsSupportUniversal 是否支持通投<br>允许值：`CANNOT_UNIVERSAL`:不能通投、`SUPPORT_UNIVERSAL`:可以通投、`FORCE_UNIVERSAL`:强制通投
 type ToolsIsSupportUniversalGetV2DataIsSupportUniversal string
 
 // List of tools_is_support_universal_get_v2_data_is_support_universal

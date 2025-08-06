@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ProjectUpdatePostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30ProjectUpdatePost Method for OpenApiV30ProjectUpdatePost
 
+投放2.0更新项目
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ProjectUpdatePostRequest
 */

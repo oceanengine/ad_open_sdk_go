@@ -74,6 +74,8 @@ func (r *ApiOpenApi2QueryProjectGetRequest) WithLog(enable bool) *ApiOpenApi2Que
 /*
 OpenApi2QueryProjectGet Method for OpenApi2QueryProjectGet
 
+结算-查询项目信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2QueryProjectGetRequest
 */

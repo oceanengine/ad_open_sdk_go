@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarStarAdUniteTaskDetailV2DataAuditStatus
+// StarStarAdUniteTaskDetailV2DataAuditStatus 任务审核状态
 type StarStarAdUniteTaskDetailV2DataAuditStatus string
 
 // List of star_star_ad_unite_task_detail_v2_data_audit_status

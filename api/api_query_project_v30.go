@@ -74,6 +74,8 @@ func (r *ApiOpenApiV30QueryProjectGetRequest) WithLog(enable bool) *ApiOpenApiV3
 /*
 OpenApiV30QueryProjectGet Method for OpenApiV30QueryProjectGet
 
+由新项目系统提供项目查询接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30QueryProjectGetRequest
 */

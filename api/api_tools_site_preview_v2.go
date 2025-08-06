@@ -66,6 +66,9 @@ func (r *ApiOpenApi2ToolsSitePreviewGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2ToolsSitePreviewGet Method for OpenApi2ToolsSitePreviewGet
 
+通过此接口，用户可以获取已创建站点的预览地址
+预览地址有效期：20分钟
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSitePreviewGetRequest
 */

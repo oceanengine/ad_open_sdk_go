@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAipThirdSiteGetV2DataValidateStatus
+// ToolsAipThirdSiteGetV2DataValidateStatus 站点标准化校验状态
 type ToolsAipThirdSiteGetV2DataValidateStatus string
 
 // List of tools_aip_third_site_get_v2_data_validate_status

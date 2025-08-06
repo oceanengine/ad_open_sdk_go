@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30DouplusRtaSetScopePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30DouplusRtaSetScopePost Method for OpenApiV30DouplusRtaSetScopePost
 
+设置RTA生效范围，（注：订单维度绑定的RTA_id，不支持换绑。账户维度支持换绑，但建议账户没有在投计划时再换绑）
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30DouplusRtaSetScopePostRequest
 */

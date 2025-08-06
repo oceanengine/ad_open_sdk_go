@@ -73,6 +73,8 @@ func (r *ApiOpenApiV30LocalLifeAdvertiserListGetRequest) WithLog(enable bool) *A
 /*
 OpenApiV30LocalLifeAdvertiserListGet Method for OpenApiV30LocalLifeAdvertiserListGet
 
+通过来客账户查关联本地账户接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalLifeAdvertiserListGetRequest
 */

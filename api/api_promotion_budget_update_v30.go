@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30PromotionBudgetUpdatePostRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV30PromotionBudgetUpdatePost Method for OpenApiV30PromotionBudgetUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionBudgetUpdatePostRequest
 */

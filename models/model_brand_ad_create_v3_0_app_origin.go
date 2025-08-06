@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdCreateV30AppOrigin
+// BrandAdCreateV30AppOrigin 投放位置（媒体端）
 type BrandAdCreateV30AppOrigin string
 
 // List of brand_ad_create_v3.0_app_origin

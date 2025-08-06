@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsDiagnosisAdGetV2GetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2ToolsDiagnosisAdGetV2Get Method for OpenApi2ToolsDiagnosisAdGetV2Get
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsDiagnosisAdGetV2GetRequest
 */

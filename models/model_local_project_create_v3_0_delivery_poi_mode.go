@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30DeliveryPoiMode
+// LocalProjectCreateV30DeliveryPoiMode 是否投放全部门店，允许值： `ALL` 投放全部门店 `PART` 投放指定门店，需同时传入promotion_poi_ids 填写说明： 当 marketing_goal=`VIDEO_AND_IMAGE`且delivery_goal=`POI`时，有效且必传
 type LocalProjectCreateV30DeliveryPoiMode string
 
 // List of local_project_create_v3.0_delivery_poi_mode

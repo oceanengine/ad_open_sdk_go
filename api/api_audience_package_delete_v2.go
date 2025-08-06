@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AudiencePackageDeletePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2AudiencePackageDeletePost Method for OpenApi2AudiencePackageDeletePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AudiencePackageDeletePostRequest
 */

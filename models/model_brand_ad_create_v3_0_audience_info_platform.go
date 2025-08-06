@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdCreateV30AudienceInfoPlatform
+// BrandAdCreateV30AudienceInfoPlatform 平台定向
 type BrandAdCreateV30AudienceInfoPlatform string
 
 // List of brand_ad_create_v3.0_audience_info_platform

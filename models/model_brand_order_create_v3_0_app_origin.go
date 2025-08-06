@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderCreateV30AppOrigin
+// BrandOrderCreateV30AppOrigin 投放位置
 type BrandOrderCreateV30AppOrigin string
 
 // List of brand_order_create_v3.0_app_origin

@@ -74,6 +74,8 @@ func (r *ApiOpenApiV30CustomerCenterAccountListGetRequest) WithLog(enable bool) 
 /*
 OpenApiV30CustomerCenterAccountListGet Method for OpenApiV30CustomerCenterAccountListGet
 
+用于获取前10000条工作台账户下的管理的账户列表。（仅支持类型为CUSTOMER_ADMIN或CUSTOMER_OPERATOR的账户）。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30CustomerCenterAccountListGetRequest
 */

@@ -21,6 +21,7 @@ const (
 	HOT_PRE_VIDEO_ToolsHotMaterialDeriveSubmitV30Strategies                    ToolsHotMaterialDeriveSubmitV30Strategies = "HOT_PRE_VIDEO"
 	MIX_CUT_ToolsHotMaterialDeriveSubmitV30Strategies                          ToolsHotMaterialDeriveSubmitV30Strategies = "MIX_CUT"
 	PRE_VIDEO_CLIP_REPLACE_ToolsHotMaterialDeriveSubmitV30Strategies           ToolsHotMaterialDeriveSubmitV30Strategies = "PRE_VIDEO_CLIP_REPLACE"
+	RAW_MATERIAL_REPLACE_ToolsHotMaterialDeriveSubmitV30Strategies             ToolsHotMaterialDeriveSubmitV30Strategies = "RAW_MATERIAL_REPLACE"
 	ROBOT_REPLACE_ToolsHotMaterialDeriveSubmitV30Strategies                    ToolsHotMaterialDeriveSubmitV30Strategies = "ROBOT_REPLACE"
 )
 

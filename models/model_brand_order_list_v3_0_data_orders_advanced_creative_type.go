@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderListV30DataOrdersAdvancedCreativeType
+// BrandOrderListV30DataOrdersAdvancedCreativeType 附加样式类型
 type BrandOrderListV30DataOrdersAdvancedCreativeType string
 
 // List of brand_order_list_v3.0_data_orders_advanced_creative_type

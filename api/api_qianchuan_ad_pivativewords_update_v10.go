@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAdPivativewordsUpdatePostRequest) WithLog(enable 
 /*
 OpenApiV10QianchuanAdPivativewordsUpdatePost Method for OpenApiV10QianchuanAdPivativewordsUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdPivativewordsUpdatePostRequest
 */

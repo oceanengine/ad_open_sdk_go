@@ -88,6 +88,8 @@ func (r *ApiOpenApi2AgentAdvertiserSelectGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2AgentAdvertiserSelectGet Method for OpenApi2AgentAdvertiserSelectGet
 
+获取代理商下的广告主账号列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentAdvertiserSelectGetRequest
 */

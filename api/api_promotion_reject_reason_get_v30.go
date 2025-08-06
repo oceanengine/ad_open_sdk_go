@@ -67,6 +67,8 @@ func (r *ApiOpenApiV30PromotionRejectReasonGetGetRequest) WithLog(enable bool) *
 /*
 OpenApiV30PromotionRejectReasonGetGet Method for OpenApiV30PromotionRejectReasonGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionRejectReasonGetGetRequest
 */

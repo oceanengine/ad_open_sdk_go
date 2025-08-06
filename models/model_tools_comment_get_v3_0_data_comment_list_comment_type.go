@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsCommentGetV30DataCommentListCommentType
+// ToolsCommentGetV30DataCommentListCommentType 评论内容类型
 type ToolsCommentGetV30DataCommentListCommentType string
 
 // List of tools_comment_get_v3.0_data_comment_list_comment_type

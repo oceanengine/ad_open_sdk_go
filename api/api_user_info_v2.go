@@ -46,6 +46,8 @@ func (r *ApiOpenApi2UserInfoGetRequest) WithLog(enable bool) *ApiOpenApi2UserInf
 /*
 OpenApi2UserInfoGet Method for OpenApi2UserInfoGet
 
+获取授权user信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2UserInfoGetRequest
 */

@@ -82,6 +82,8 @@ func (r *ApiOpenApi2AdvertiserFundGrantTransactionGetGetRequest) WithLog(enable 
 /*
 OpenApi2AdvertiserFundGrantTransactionGetGet Method for OpenApi2AdvertiserFundGrantTransactionGetGet
 
+根据广告账户id，时间，流水类型查询赠款流水
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdvertiserFundGrantTransactionGetGetRequest
 */

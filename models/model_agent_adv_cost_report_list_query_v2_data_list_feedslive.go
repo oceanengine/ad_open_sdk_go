@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2DataListFeedslive
+// AgentAdvCostReportListQueryV2DataListFeedslive 是否FeedsLive(1: 是, 0: 否, 999: 无法判断)
 type AgentAdvCostReportListQueryV2DataListFeedslive int64
 
 // List of agent_adv_cost_report_list_query_v2_data_list_feedslive

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsPrivativeWordProjectUpdatePostRequest) WithLog(enable
 /*
 OpenApiV30ToolsPrivativeWordProjectUpdatePost Method for OpenApiV30ToolsPrivativeWordProjectUpdatePost
 
+2.0项目批量更新否定词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsPrivativeWordProjectUpdatePostRequest
 */

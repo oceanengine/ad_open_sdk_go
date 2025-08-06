@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreativeDetailGetV30DataAdDataPriorityTrial
+// CreativeDetailGetV30DataAdDataPriorityTrial 是否优先调起试玩
 type CreativeDetailGetV30DataAdDataPriorityTrial string
 
 // List of creative_detail_get_v3.0_data_ad_data_priority_trial

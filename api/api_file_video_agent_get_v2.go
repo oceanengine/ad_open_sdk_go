@@ -74,6 +74,8 @@ func (r *ApiOpenApi2FileVideoAgentGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2FileVideoAgentGetGet Method for OpenApi2FileVideoAgentGetGet
 
+代理商获取视频素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileVideoAgentGetGetRequest
 */

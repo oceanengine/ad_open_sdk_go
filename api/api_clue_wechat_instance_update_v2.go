@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ClueWechatInstanceUpdatePostRequest) WithLog(enable bool) *A
 /*
 OpenApi2ClueWechatInstanceUpdatePost Method for OpenApi2ClueWechatInstanceUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueWechatInstanceUpdatePostRequest
 */

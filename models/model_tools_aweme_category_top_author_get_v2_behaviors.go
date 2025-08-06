@@ -15,18 +15,18 @@ type ToolsAwemeCategoryTopAuthorGetV2Behaviors string
 
 // List of tools_aweme_category_top_author_get_v2_behaviors
 const (
-	LIVE_EFFECTIVE_WATCH_ToolsAwemeCategoryTopAuthorGetV2Behaviors ToolsAwemeCategoryTopAuthorGetV2Behaviors = "LIVE_EFFECTIVE_WATCH"
-	LIKED_USER_ToolsAwemeCategoryTopAuthorGetV2Behaviors           ToolsAwemeCategoryTopAuthorGetV2Behaviors = "LIKED_USER"
-	LIVE_COMMENT_ToolsAwemeCategoryTopAuthorGetV2Behaviors         ToolsAwemeCategoryTopAuthorGetV2Behaviors = "LIVE_COMMENT"
-	GOODS_CARTS_ORDER_ToolsAwemeCategoryTopAuthorGetV2Behaviors    ToolsAwemeCategoryTopAuthorGetV2Behaviors = "GOODS_CARTS_ORDER"
-	LIVE_GOODS_ORDER_ToolsAwemeCategoryTopAuthorGetV2Behaviors     ToolsAwemeCategoryTopAuthorGetV2Behaviors = "LIVE_GOODS_ORDER"
-	SHARED_USER_ToolsAwemeCategoryTopAuthorGetV2Behaviors          ToolsAwemeCategoryTopAuthorGetV2Behaviors = "SHARED_USER"
-	LIVE_WATCH_ToolsAwemeCategoryTopAuthorGetV2Behaviors           ToolsAwemeCategoryTopAuthorGetV2Behaviors = "LIVE_WATCH"
-	GOODS_CARTS_CLICK_ToolsAwemeCategoryTopAuthorGetV2Behaviors    ToolsAwemeCategoryTopAuthorGetV2Behaviors = "GOODS_CARTS_CLICK"
 	LIVE_GOODS_CLICK_ToolsAwemeCategoryTopAuthorGetV2Behaviors     ToolsAwemeCategoryTopAuthorGetV2Behaviors = "LIVE_GOODS_CLICK"
-	FOLLOWED_USER_ToolsAwemeCategoryTopAuthorGetV2Behaviors        ToolsAwemeCategoryTopAuthorGetV2Behaviors = "FOLLOWED_USER"
-	COMMENTED_USER_ToolsAwemeCategoryTopAuthorGetV2Behaviors       ToolsAwemeCategoryTopAuthorGetV2Behaviors = "COMMENTED_USER"
+	LIKED_USER_ToolsAwemeCategoryTopAuthorGetV2Behaviors           ToolsAwemeCategoryTopAuthorGetV2Behaviors = "LIKED_USER"
 	LIVE_EXCEPTIONAL_ToolsAwemeCategoryTopAuthorGetV2Behaviors     ToolsAwemeCategoryTopAuthorGetV2Behaviors = "LIVE_EXCEPTIONAL"
+	COMMENTED_USER_ToolsAwemeCategoryTopAuthorGetV2Behaviors       ToolsAwemeCategoryTopAuthorGetV2Behaviors = "COMMENTED_USER"
+	FOLLOWED_USER_ToolsAwemeCategoryTopAuthorGetV2Behaviors        ToolsAwemeCategoryTopAuthorGetV2Behaviors = "FOLLOWED_USER"
+	GOODS_CARTS_CLICK_ToolsAwemeCategoryTopAuthorGetV2Behaviors    ToolsAwemeCategoryTopAuthorGetV2Behaviors = "GOODS_CARTS_CLICK"
+	GOODS_CARTS_ORDER_ToolsAwemeCategoryTopAuthorGetV2Behaviors    ToolsAwemeCategoryTopAuthorGetV2Behaviors = "GOODS_CARTS_ORDER"
+	LIVE_EFFECTIVE_WATCH_ToolsAwemeCategoryTopAuthorGetV2Behaviors ToolsAwemeCategoryTopAuthorGetV2Behaviors = "LIVE_EFFECTIVE_WATCH"
+	LIVE_COMMENT_ToolsAwemeCategoryTopAuthorGetV2Behaviors         ToolsAwemeCategoryTopAuthorGetV2Behaviors = "LIVE_COMMENT"
+	SHARED_USER_ToolsAwemeCategoryTopAuthorGetV2Behaviors          ToolsAwemeCategoryTopAuthorGetV2Behaviors = "SHARED_USER"
+	LIVE_GOODS_ORDER_ToolsAwemeCategoryTopAuthorGetV2Behaviors     ToolsAwemeCategoryTopAuthorGetV2Behaviors = "LIVE_GOODS_ORDER"
+	LIVE_WATCH_ToolsAwemeCategoryTopAuthorGetV2Behaviors           ToolsAwemeCategoryTopAuthorGetV2Behaviors = "LIVE_WATCH"
 )
 
 // Ptr returns reference to tools_aweme_category_top_author_get_v2_behaviors value

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2FileRebateMaterialDownloadCreateTaskPostRequest) WithLog(ena
 /*
 OpenApi2FileRebateMaterialDownloadCreateTaskPost Method for OpenApi2FileRebateMaterialDownloadCreateTaskPost
 
+根据筛选条件创建明点化素材相关指标的下载任务,返回用户query_id,用于后续的文件下载
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileRebateMaterialDownloadCreateTaskPostRequest
 */

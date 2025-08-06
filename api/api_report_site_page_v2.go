@@ -70,6 +70,8 @@ func (r *ApiOpenApi2ReportSitePageGetRequest) WithLog(enable bool) *ApiOpenApi2R
 /*
 OpenApi2ReportSitePageGet Method for OpenApi2ReportSitePageGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportSitePageGetRequest
 */

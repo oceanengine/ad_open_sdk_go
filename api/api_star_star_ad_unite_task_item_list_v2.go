@@ -88,6 +88,8 @@ func (r *ApiOpenApi2StarStarAdUniteTaskItemListGetRequest) WithLog(enable bool) 
 /*
 OpenApi2StarStarAdUniteTaskItemListGet Method for OpenApi2StarStarAdUniteTaskItemListGet
 
+获取星广联投(星图版)视频维度数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarStarAdUniteTaskItemListGetRequest
 */

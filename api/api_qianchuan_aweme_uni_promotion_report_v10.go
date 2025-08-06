@@ -78,6 +78,8 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest) WithLog(enable
 /*
 OpenApiV10QianchuanAwemeUniPromotionReportGet Method for OpenApiV10QianchuanAwemeUniPromotionReportGet
 
+获取随心推全域订单数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest
 */

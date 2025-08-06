@@ -85,6 +85,8 @@ func (r *ApiOpenApiV30LocalFileVideoGetGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30LocalFileVideoGetGet Method for OpenApiV30LocalFileVideoGetGet
 
+获取素材库视频素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalFileVideoGetGetRequest
 */

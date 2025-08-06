@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvertiserUnassignV2Role
+// AgentAdvertiserUnassignV2Role 分配角色：1:负责人, 2:协作者
 type AgentAdvertiserUnassignV2Role string
 
 // List of agent_advertiser_unassign_v2_role

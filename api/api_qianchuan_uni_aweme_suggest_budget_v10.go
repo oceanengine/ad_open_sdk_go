@@ -76,6 +76,8 @@ func (r *ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest) WithLog(enable b
 /*
 OpenApiV10QianchuanUniAwemeSuggestBudgetGet Method for OpenApiV10QianchuanUniAwemeSuggestBudgetGet
 
+获取全域建议预算
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest
 */

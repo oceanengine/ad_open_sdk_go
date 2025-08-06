@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StardeliveryTaskDetailV30DataStarTaskStatus
+// StardeliveryTaskDetailV30DataStarTaskStatus 任务一级状态
 type StardeliveryTaskDetailV30DataStarTaskStatus string
 
 // List of stardelivery_task_detail_v3.0_data_star_task_status

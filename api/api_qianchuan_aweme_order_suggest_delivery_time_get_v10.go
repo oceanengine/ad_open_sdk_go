@@ -67,6 +67,8 @@ func (r *ApiOpenApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGetRequest) WithL
 /*
 OpenApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGet Method for OpenApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGet
 
+获取建议投放时长
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGetRequest
 */

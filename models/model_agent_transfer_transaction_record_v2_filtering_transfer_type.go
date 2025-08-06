@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentTransferTransactionRecordV2FilteringTransferType
+// AgentTransferTransactionRecordV2FilteringTransferType 转账类型
 type AgentTransferTransactionRecordV2FilteringTransferType string
 
 // List of agent_transfer_transaction_record_v2_filtering_transfer_type

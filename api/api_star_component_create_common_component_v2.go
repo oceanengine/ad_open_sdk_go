@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarComponentCreateCommonComponentPostRequest) WithLog(enabl
 /*
 OpenApi2StarComponentCreateCommonComponentPost Method for OpenApi2StarComponentCreateCommonComponentPost
 
+作为星图通用组件创建api提供出去
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarComponentCreateCommonComponentPostRequest
 */

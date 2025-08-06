@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ClueCouponEmployeeCreatePostRequest) WithLog(enable bool) *A
 /*
 OpenApi2ClueCouponEmployeeCreatePost Method for OpenApi2ClueCouponEmployeeCreatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueCouponEmployeeCreatePostRequest
 */

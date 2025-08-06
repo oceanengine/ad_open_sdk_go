@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30PromotionScheduleTimeUpdatePostRequest) WithLog(enable boo
 /*
 OpenApiV30PromotionScheduleTimeUpdatePost Method for OpenApiV30PromotionScheduleTimeUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionScheduleTimeUpdatePostRequest
 */

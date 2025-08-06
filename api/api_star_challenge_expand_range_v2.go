@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarChallengeExpandRangePostRequest) WithLog(enable bool) *A
 /*
 OpenApi2StarChallengeExpandRangePost Method for OpenApi2StarChallengeExpandRangePost
 
+增加达人范围
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarChallengeExpandRangePostRequest
 */

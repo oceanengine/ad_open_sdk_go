@@ -92,6 +92,8 @@ func (r *ApiOpenApiV30AicElementUploadPostRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30AicElementUploadPost Method for OpenApiV30AicElementUploadPost
 
+通过此接口可以上传原料到即创原料库
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AicElementUploadPostRequest
 */

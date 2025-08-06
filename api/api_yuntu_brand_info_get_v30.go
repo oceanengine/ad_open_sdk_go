@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30YuntuBrandInfoGetGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30YuntuBrandInfoGetGet Method for OpenApiV30YuntuBrandInfoGetGet
 
+获取服务品牌的虚拟 adv 信息、行业信息、用户名称。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30YuntuBrandInfoGetGetRequest
 */

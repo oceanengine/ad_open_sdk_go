@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsAwemeAuthPostRequest) WithLog(enable bool) *ApiOpenApi2
 /*
 OpenApi2ToolsAwemeAuthPost Method for OpenApi2ToolsAwemeAuthPost
 
+发起广告主和抖音号/抖音短视频的的授权绑定
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAwemeAuthPostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AdvertiserQualificationSubmitV30SubjectCompanyType
+// AdvertiserQualificationSubmitV30SubjectCompanyType 公司类型
 type AdvertiserQualificationSubmitV30SubjectCompanyType string
 
 // List of advertiser_qualification_submit_v3.0_subject_company_type

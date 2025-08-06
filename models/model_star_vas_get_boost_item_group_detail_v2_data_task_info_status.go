@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarVasGetBoostItemGroupDetailV2DataTaskInfoStatus
+// StarVasGetBoostItemGroupDetailV2DataTaskInfoStatus 助推组状态
 type StarVasGetBoostItemGroupDetailV2DataTaskInfoStatus string
 
 // List of star_vas_get_boost_item_group_detail_v2_data_task_info_status

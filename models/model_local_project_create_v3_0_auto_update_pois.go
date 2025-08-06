@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30AutoUpdatePois
+// LocalProjectCreateV30AutoUpdatePois 自动更新门店设置，允许值： `OFF` 不启用 `ON` 启用（默认值） 填写说明： 仅当delivery_goal=`POI`门店 且 delivery_poi_mode=`ALL` 投放全部门店时，该字段有效，不传默认启用
 type LocalProjectCreateV30AutoUpdatePois string
 
 // List of local_project_create_v3.0_auto_update_pois

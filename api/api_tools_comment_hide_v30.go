@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsCommentHidePostRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30ToolsCommentHidePost Method for OpenApiV30ToolsCommentHidePost
 
+@PM2
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsCommentHidePostRequest
 */

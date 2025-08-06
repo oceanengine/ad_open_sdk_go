@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30PromotionMaterialDeletePostRequest) WithLog(enable bool) *
 /*
 OpenApiV30PromotionMaterialDeletePost Method for OpenApiV30PromotionMaterialDeletePost
 
+删除一个promotion下的多个素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionMaterialDeletePostRequest
 */

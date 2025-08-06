@@ -106,6 +106,8 @@ func (r *ApiOpenApi2ReportLiveRoomAudiencePortraitGetGetRequest) WithLog(enable 
 /*
 OpenApi2ReportLiveRoomAudiencePortraitGetGet Method for OpenApi2ReportLiveRoomAudiencePortraitGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportLiveRoomAudiencePortraitGetGetRequest
 */

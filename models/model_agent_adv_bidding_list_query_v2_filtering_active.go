@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvBiddingListQueryV2FilteringActive
+// AgentAdvBiddingListQueryV2FilteringActive 用户活跃状态。可选枚举值: ACTIVE表示活跃用户,ALL表示所有用户。不填写该字段则默认值为ALL。
 type AgentAdvBiddingListQueryV2FilteringActive string
 
 // List of agent_adv_bidding_list_query_v2_filtering_active

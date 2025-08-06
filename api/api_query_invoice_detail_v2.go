@@ -64,6 +64,8 @@ func (r *ApiOpenApi2QueryInvoiceDetailGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2QueryInvoiceDetailGet Method for OpenApi2QueryInvoiceDetailGet
 
+通过开票单ID/编号查询开票详情数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2QueryInvoiceDetailGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandToolQueryPublishPriceV30FrequencyInfoFrequencyStatus
+// BrandToolQueryPublishPriceV30FrequencyInfoFrequencyStatus 频控状态
 type BrandToolQueryPublishPriceV30FrequencyInfoFrequencyStatus string
 
 // List of brand_tool_query_publish_price_v3.0_frequency_info_frequency_status

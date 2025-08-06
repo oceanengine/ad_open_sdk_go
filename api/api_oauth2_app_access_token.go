@@ -47,6 +47,8 @@ func (r *ApiOpenApiOauth2AppAccessTokenPostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiOauth2AppAccessTokenPost Method for OpenApiOauth2AppAccessTokenPost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiOauth2AppAccessTokenPostRequest
 */

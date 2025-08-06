@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeOrderDetailGetV10DataDeliverySettingBidMode
+// QianchuanAwemeOrderDetailGetV10DataDeliverySettingBidMode 出价模式
 type QianchuanAwemeOrderDetailGetV10DataDeliverySettingBidMode string
 
 // List of qianchuan_aweme_order_detail_get_v1.0_data_delivery_setting_bid_mode

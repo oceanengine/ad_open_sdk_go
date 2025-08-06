@@ -88,6 +88,8 @@ func (r *ApiOpenApi2AgentAdvRechargeRechargeRecordGetRequest) WithLog(enable boo
 /*
 OpenApi2AgentAdvRechargeRechargeRecordGet Method for OpenApi2AgentAdvRechargeRechargeRecordGet
 
+代理商充值记录查询，相关功能与代理商平台的「商务-充值记录-账户充值记录」模块对齐。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentAdvRechargeRechargeRecordGetRequest
 */

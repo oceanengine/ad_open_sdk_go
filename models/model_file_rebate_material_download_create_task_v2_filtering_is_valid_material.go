@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileRebateMaterialDownloadCreateTaskV2FilteringIsValidMaterial
+// FileRebateMaterialDownloadCreateTaskV2FilteringIsValidMaterial 【政策粒度】是否有效素材
 type FileRebateMaterialDownloadCreateTaskV2FilteringIsValidMaterial string
 
 // List of file_rebate_material_download_create_task_v2_filtering_is_valid_material

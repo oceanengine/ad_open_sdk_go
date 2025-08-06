@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsSiteHandselPostRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2ToolsSiteHandselPost Method for OpenApi2ToolsSiteHandselPost
 
+通过此接口，用户可以实现站点的转赠功能，将某一广告主的站点共享给其他特定的广告主，转赠成功后，广告主们拥有站点的共同使用权。 不限制主体，同广告主不能进行转赠操作
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSiteHandselPostRequest
 */

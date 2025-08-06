@@ -82,6 +82,8 @@ func (r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) WithLog(enable b
 /*
 OpenApiV10QianchuanToolsEstimateAudienceGet Method for OpenApiV10QianchuanToolsEstimateAudienceGet
 
+定向受众预估
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest
 */

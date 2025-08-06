@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ToolsPlayableValidateGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2ToolsPlayableValidateGet Method for OpenApi2ToolsPlayableValidateGet
 
+试玩素材上传校验结果。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPlayableValidateGetRequest
 */

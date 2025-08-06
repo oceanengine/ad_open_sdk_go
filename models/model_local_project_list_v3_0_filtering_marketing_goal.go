@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30FilteringMarketingGoal
+// LocalProjectListV30FilteringMarketingGoal 营销场景筛选，默认不限
 type LocalProjectListV30FilteringMarketingGoal string
 
 // List of local_project_list_v3.0_filtering_marketing_goal

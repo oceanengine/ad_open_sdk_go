@@ -95,6 +95,8 @@ func (r *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest) WithLog(enable 
 /*
 OpenApiV30CgTransferCanTransferTargetListGet Method for OpenApiV30CgTransferCanTransferTargetListGet
 
+查询当前账户(锚定账户)可以互相转账的账户列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30CgTransferCanTransferTargetListGetRequest
 */

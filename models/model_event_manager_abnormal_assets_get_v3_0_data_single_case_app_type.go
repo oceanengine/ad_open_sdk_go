@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// EventManagerAbnormalAssetsGetV30DataSingleCaseAppType
+// EventManagerAbnormalAssetsGetV30DataSingleCaseAppType 1表示安卓，2表示IOS
 type EventManagerAbnormalAssetsGetV30DataSingleCaseAppType string
 
 // List of event_manager_abnormal_assets_get_v3.0_data_single_case_app_type

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdCreateV30AudienceInfoDistrictInfoLocationType
+// BrandAdCreateV30AudienceInfoDistrictInfoLocationType 城市人群类型
 type BrandAdCreateV30AudienceInfoDistrictInfoLocationType string
 
 // List of brand_ad_create_v3.0_audience_info_district_info_location_type

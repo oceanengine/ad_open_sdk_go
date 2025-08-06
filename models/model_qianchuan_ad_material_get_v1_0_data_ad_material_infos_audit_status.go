@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAdMaterialGetV10DataAdMaterialInfosAuditStatus
+// QianchuanAdMaterialGetV10DataAdMaterialInfosAuditStatus 审核状态
 type QianchuanAdMaterialGetV10DataAdMaterialInfosAuditStatus string
 
 // List of qianchuan_ad_material_get_v1.0_data_ad_material_infos_audit_status

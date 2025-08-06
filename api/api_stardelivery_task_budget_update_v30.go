@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30StardeliveryTaskBudgetUpdatePostRequest) WithLog(enable bo
 /*
 OpenApiV30StardeliveryTaskBudgetUpdatePost Method for OpenApiV30StardeliveryTaskBudgetUpdatePost
 
+更新星广联投任务预算
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30StardeliveryTaskBudgetUpdatePostRequest
 */

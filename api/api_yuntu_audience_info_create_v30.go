@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30YuntuAudienceInfoCreatePostRequest) WithLog(enable bool) *
 /*
 OpenApiV30YuntuAudienceInfoCreatePost Method for OpenApiV30YuntuAudienceInfoCreatePost
 
+创建自定义人群包
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30YuntuAudienceInfoCreatePostRequest
 */

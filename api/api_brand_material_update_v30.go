@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandMaterialUpdatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30BrandMaterialUpdatePost Method for OpenApiV30BrandMaterialUpdatePost
 
+编辑创意，全量更新接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandMaterialUpdatePostRequest
 */

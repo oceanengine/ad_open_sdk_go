@@ -70,6 +70,8 @@ func (r *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest) WithLog(enable
 /*
 OpenApi2StarReportOrderUserDistributionGetGet Method for OpenApi2StarReportOrderUserDistributionGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarReportOrderUserDistributionGetGetRequest
 */

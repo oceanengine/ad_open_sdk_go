@@ -72,6 +72,8 @@ func (r *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest) WithLog(enable bool
 /*
 OpenApiV30AdvertiserAttachmentUploadPost Method for OpenApiV30AdvertiserAttachmentUploadPost
 
+附件上传接口，在通过【投放资质提交】接口提交资质前，需要将资质附件从本接口上传至认证中心，获取附件id，将附件id作为入参传入投放资质提交接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AdvertiserAttachmentUploadPostRequest
 */

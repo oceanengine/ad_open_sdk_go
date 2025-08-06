@@ -100,6 +100,8 @@ func (r *ApiOpenApi2ReportLiveRoomAnalysisGetGetRequest) WithLog(enable bool) *A
 /*
 OpenApi2ReportLiveRoomAnalysisGetGet Method for OpenApi2ReportLiveRoomAnalysisGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportLiveRoomAnalysisGetGetRequest
 */

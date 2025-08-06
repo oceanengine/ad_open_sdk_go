@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QueryRebateBalanceV2FilteringUseType
+// QueryRebateBalanceV2FilteringUseType 使用类型 （1：提现，2：抵扣，3：充值, 4:负数冲抵, 6:无需支付）
 type QueryRebateBalanceV2FilteringUseType string
 
 // List of query_rebate_balance_v2_filtering_use_type

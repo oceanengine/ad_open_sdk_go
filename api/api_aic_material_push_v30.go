@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AicMaterialPushPostRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV30AicMaterialPushPost Method for OpenApiV30AicMaterialPushPost
 
+推送素材到广告主账号下，素材限制:任务生成的视频或者保存到即创视频库的素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AicMaterialPushPostRequest
 */

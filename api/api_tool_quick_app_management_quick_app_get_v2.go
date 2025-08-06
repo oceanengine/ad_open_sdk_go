@@ -95,6 +95,8 @@ func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) WithLog(enable 
 /*
 OpenApi2ToolQuickAppManagementQuickAppGetGet Method for OpenApi2ToolQuickAppManagementQuickAppGetGet
 
+查询当前广告主的快应用
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest
 */

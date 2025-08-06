@@ -74,6 +74,8 @@ func (r *ApiOpenApi2ToolsEventAllAssetsListGetRequest) WithLog(enable bool) *Api
 /*
 OpenApi2ToolsEventAllAssetsListGet Method for OpenApi2ToolsEventAllAssetsListGet
 
+包含我创建的资产+被共享的资产，返回结果与AD事件资产列表&详情信息对齐
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsEventAllAssetsListGetRequest
 */

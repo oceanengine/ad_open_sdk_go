@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarDemandOrderListV2DataListUniversalOrderStatus
+// StarDemandOrderListV2DataListUniversalOrderStatus 订单状态 枚举值详见【附录-枚举值-星图任务订单状态】
 type StarDemandOrderListV2DataListUniversalOrderStatus string
 
 // List of star_demand_order_list_v2_data_list_universal_order_status

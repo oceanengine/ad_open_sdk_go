@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DpaClueProductDeletePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2DpaClueProductDeletePost Method for OpenApi2DpaClueProductDeletePost
 
+线索商品删除
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaClueProductDeletePostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvRechargeRechargeRecordV2FilteringPlatform
+// AgentAdvRechargeRechargeRecordV2FilteringPlatform 业务平台
 type AgentAdvRechargeRechargeRecordV2FilteringPlatform string
 
 // List of agent_adv_recharge_recharge_record_v2_filtering_platform

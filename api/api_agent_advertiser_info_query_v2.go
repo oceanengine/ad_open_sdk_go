@@ -53,6 +53,8 @@ func (r *ApiOpenApi2AgentAdvertiserInfoQueryGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2AgentAdvertiserInfoQueryGet Method for OpenApi2AgentAdvertiserInfoQueryGet
 
+广告主账户信息查询，包括：基础信息、自运营报备标签、账户绑定时间、账户联系人、账户负责人和协作者等
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentAdvertiserInfoQueryGetRequest
 */

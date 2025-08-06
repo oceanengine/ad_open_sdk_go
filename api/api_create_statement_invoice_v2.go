@@ -52,6 +52,8 @@ func (r *ApiOpenApi2CreateStatementInvoicePostRequest) WithLog(enable bool) *Api
 /*
 OpenApi2CreateStatementInvoicePost Method for OpenApi2CreateStatementInvoicePost
 
+创建结算单开票接口，支持差额开票
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CreateStatementInvoicePostRequest
 */

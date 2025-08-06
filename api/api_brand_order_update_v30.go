@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandOrderUpdatePostRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30BrandOrderUpdatePost Method for OpenApiV30BrandOrderUpdatePost
 
+编辑预定单
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandOrderUpdatePostRequest
 */

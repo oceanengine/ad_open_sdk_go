@@ -59,6 +59,8 @@ func (r *ApiOpenApiV30OpenMaterialAuditProGetGetRequest) WithLog(enable bool) *A
 /*
 OpenApiV30OpenMaterialAuditProGetGet Method for OpenApiV30OpenMaterialAuditProGetGet
 
+广告素材预审结果查询（连山云视频点播版）
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30OpenMaterialAuditProGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandPolicyListV30AudienceInfoGender
+// BrandPolicyListV30AudienceInfoGender 性别
 type BrandPolicyListV30AudienceInfoGender string
 
 // List of brand_policy_list_v3.0_audience_info_gender

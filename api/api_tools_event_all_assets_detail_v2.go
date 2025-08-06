@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ToolsEventAllAssetsDetailGetRequest) WithLog(enable bool) *A
 /*
 OpenApi2ToolsEventAllAssetsDetailGet Method for OpenApi2ToolsEventAllAssetsDetailGet
 
+仅支持查询我创建的+共享中状态、未删除的资产详情，共享失败不支持查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsEventAllAssetsDetailGetRequest
 */

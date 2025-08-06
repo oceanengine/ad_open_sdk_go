@@ -60,6 +60,10 @@ func (r *ApiOpenApi2ToolsAipThirdSiteGetGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ToolsAipThirdSiteGetGet Method for OpenApi2ToolsAipThirdSiteGetGet
 
+通过此接口，开发者可以获取广告主下标准第三方落地页站点详情。
+
+> 需要注意的是预审的结果和最终的素材的审核结果可能存在出入，预审结果仅供参考。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAipThirdSiteGetGetRequest
 */

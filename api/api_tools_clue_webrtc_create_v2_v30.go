@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsClueWebrtcCreateV2PostRequest) WithLog(enable bool) *
 /*
 OpenApiV30ToolsClueWebrtcCreateV2Post Method for OpenApiV30ToolsClueWebrtcCreateV2Post
 
+飞鱼为开发者提供网络电话的呼叫能力，该接口功能是为前端电话工具条呼叫时，提供需要用到信息。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsClueWebrtcCreateV2PostRequest
 */

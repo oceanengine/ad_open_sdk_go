@@ -60,6 +60,8 @@ func (r *ApiOpenApi2StarOrderGetVideoGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2StarOrderGetVideoGet Method for OpenApi2StarOrderGetVideoGet
 
+查询任务视频
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarOrderGetVideoGetRequest
 */

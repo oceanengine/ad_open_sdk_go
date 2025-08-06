@@ -80,6 +80,8 @@ func (r *ApiOpenApiV30FilePlayableListGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV30FilePlayableListGet Method for OpenApiV30FilePlayableListGet
 
+直玩、试玩列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30FilePlayableListGetRequest
 */

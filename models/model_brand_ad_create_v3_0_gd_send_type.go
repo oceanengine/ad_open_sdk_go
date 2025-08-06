@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdCreateV30GdSendType
+// BrandAdCreateV30GdSendType 优化目标
 type BrandAdCreateV30GdSendType string
 
 // List of brand_ad_create_v3.0_gd_send_type

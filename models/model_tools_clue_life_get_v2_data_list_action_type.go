@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListActionType
+// ToolsClueLifeGetV2DataListActionType 互动场景
 type ToolsClueLifeGetV2DataListActionType string
 
 // List of tools_clue_life_get_v2_data_list_action_type

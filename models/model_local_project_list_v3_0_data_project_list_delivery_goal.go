@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30DataProjectListDeliveryGoal
+// LocalProjectListV30DataProjectListDeliveryGoal 投放内容
 type LocalProjectListV30DataProjectListDeliveryGoal string
 
 // List of local_project_list_v3.0_data_project_list_delivery_goal

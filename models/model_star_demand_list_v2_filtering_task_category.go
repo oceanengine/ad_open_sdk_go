@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarDemandListV2FilteringTaskCategory
+// StarDemandListV2FilteringTaskCategory 所创建的星图任务类型, 缺省默认查询抖音抖音传播任务_指派_视频。详情请查阅枚举。
 type StarDemandListV2FilteringTaskCategory string
 
 // List of star_demand_list_v2_filtering_task_category

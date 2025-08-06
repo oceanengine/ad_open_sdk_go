@@ -94,6 +94,8 @@ func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) WithLog(enable boo
 /*
 OpenApiV30SecurityScoreDisposalInfoGetGet Method for OpenApiV30SecurityScoreDisposalInfoGetGet
 
+查看积分处置详情
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest
 */

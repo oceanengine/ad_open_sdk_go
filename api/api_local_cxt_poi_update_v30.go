@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30LocalCxtPoiUpdatePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30LocalCxtPoiUpdatePost Method for OpenApiV30LocalCxtPoiUpdatePost
 
+更换持续投门店
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalCxtPoiUpdatePostRequest
 */

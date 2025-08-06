@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30StardeliveryTaskAuthorVideoAuditPostRequest) WithLog(enabl
 /*
 OpenApiV30StardeliveryTaskAuthorVideoAuditPost Method for OpenApiV30StardeliveryTaskAuthorVideoAuditPost
 
+审核星广联投视频
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30StardeliveryTaskAuthorVideoAuditPostRequest
 */

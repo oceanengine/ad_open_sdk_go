@@ -58,6 +58,8 @@ func (r *ApiOpenApi2FileMaterialDetailGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2FileMaterialDetailGet Method for OpenApi2FileMaterialDetailGet
 
+素材信息查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileMaterialDetailGetRequest
 */

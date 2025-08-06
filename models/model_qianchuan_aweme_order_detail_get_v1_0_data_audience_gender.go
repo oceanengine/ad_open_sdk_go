@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeOrderDetailGetV10DataAudienceGender
+// QianchuanAwemeOrderDetailGetV10DataAudienceGender 性别定向
 type QianchuanAwemeOrderDetailGetV10DataAudienceGender string
 
 // List of qianchuan_aweme_order_detail_get_v1.0_data_audience_gender

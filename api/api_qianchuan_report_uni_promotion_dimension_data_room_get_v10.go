@@ -116,6 +116,8 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest)
 /*
 OpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGet Method for OpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGet
 
+/qianchuan/report/uni_promotion/dimension_data/room/get/
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest
 */

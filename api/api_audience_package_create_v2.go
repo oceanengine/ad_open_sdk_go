@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AudiencePackageCreatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2AudiencePackageCreatePost Method for OpenApi2AudiencePackageCreatePost
 
+定向包创建
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AudiencePackageCreatePostRequest
 */

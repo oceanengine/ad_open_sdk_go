@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsMicroAppUpdatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30ToolsMicroAppUpdatePost Method for OpenApiV30ToolsMicroAppUpdatePost
 
+更新字节小程序
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsMicroAppUpdatePostRequest
 */

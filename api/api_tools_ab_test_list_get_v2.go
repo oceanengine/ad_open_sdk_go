@@ -74,6 +74,8 @@ func (r *ApiOpenApi2ToolsAbTestListGetGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2ToolsAbTestListGetGet Method for OpenApi2ToolsAbTestListGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAbTestListGetGetRequest
 */

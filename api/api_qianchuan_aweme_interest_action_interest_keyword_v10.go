@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAwemeInterestActionInterestKeywordGetRequest) Wit
 /*
 OpenApiV10QianchuanAwemeInterestActionInterestKeywordGet Method for OpenApiV10QianchuanAwemeInterestActionInterestKeywordGet
 
+获取随心推兴趣标签
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeInterestActionInterestKeywordGetRequest
 */

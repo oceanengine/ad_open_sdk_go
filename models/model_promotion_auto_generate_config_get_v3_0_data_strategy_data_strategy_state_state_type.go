@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionAutoGenerateConfigGetV30DataStrategyDataStrategyStateStateType
+// PromotionAutoGenerateConfigGetV30DataStrategyDataStrategyStateStateType 配置项类型
 type PromotionAutoGenerateConfigGetV30DataStrategyDataStrategyStateStateType string
 
 // List of promotion_auto_generate_config_get_v3.0_data_strategy_data_strategy_state_state_type

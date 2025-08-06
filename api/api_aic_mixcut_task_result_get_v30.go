@@ -67,6 +67,8 @@ func (r *ApiOpenApiV30AicMixcutTaskResultGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV30AicMixcutTaskResultGetGet Method for OpenApiV30AicMixcutTaskResultGetGet
 
+通过task_id查询任务生成结果
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AicMixcutTaskResultGetGetRequest
 */

@@ -58,6 +58,8 @@ func (r *ApiOpenApiV10QianchuanFileVideoEfficiencyGetGetRequest) WithLog(enable 
 /*
 OpenApiV10QianchuanFileVideoEfficiencyGetGet Method for OpenApiV10QianchuanFileVideoEfficiencyGetGet
 
+支持查询素材是否是低效素材，传入素材ID列表，返回低效素材列表。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanFileVideoEfficiencyGetGetRequest
 */

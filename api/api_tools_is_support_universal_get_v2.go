@@ -81,6 +81,8 @@ func (r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) WithLog(enable bool) *
 /*
 OpenApi2ToolsIsSupportUniversalGetGet Method for OpenApi2ToolsIsSupportUniversalGetGet
 
+本接口旨在帮助开发者判断相关创建条件（推广目的类型、预定义转化目标、深度转化目标、深度优化方式等）是否支持通投智选。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsIsSupportUniversalGetGetRequest
 */

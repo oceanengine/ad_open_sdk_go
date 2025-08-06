@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ToolsClueInfoGetGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2ToolsClueInfoGetGet Method for OpenApi2ToolsClueInfoGetGet
 
+根据线索id获取对应线索的信息，包括返款标签等
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueInfoGetGetRequest
 */

@@ -100,6 +100,8 @@ func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV10QianchuanSuggestBidGet Method for OpenApiV10QianchuanSuggestBidGet
 
+获取非ROI目标建议出价
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanSuggestBidGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BudgetGroupListV30DataBudgetGroupsDeliveryType
+// BudgetGroupListV30DataBudgetGroupsDeliveryType 投放类型
 type BudgetGroupListV30DataBudgetGroupsDeliveryType string
 
 // List of budget_group_list_v3.0_data_budget_groups_delivery_type

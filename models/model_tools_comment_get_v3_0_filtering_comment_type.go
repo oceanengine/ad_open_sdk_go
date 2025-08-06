@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsCommentGetV30FilteringCommentType
+// ToolsCommentGetV30FilteringCommentType 评论内容类型，允许值：“IMAGE_COMMENT”，“TEXT_COMMENT”，“IMAGE_TEXT_COMMENT”
 type ToolsCommentGetV30FilteringCommentType string
 
 // List of tools_comment_get_v3.0_filtering_comment_type

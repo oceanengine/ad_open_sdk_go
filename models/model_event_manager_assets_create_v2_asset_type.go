@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// EventManagerAssetsCreateV2AssetType
+// EventManagerAssetsCreateV2AssetType 资产类型，目前支持THIRD_EXTERNAL、QUICK_APP、APP
 type EventManagerAssetsCreateV2AssetType string
 
 // List of event_manager_assets_create_v2_asset_type

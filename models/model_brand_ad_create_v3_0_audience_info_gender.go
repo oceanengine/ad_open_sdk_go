@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdCreateV30AudienceInfoGender
+// BrandAdCreateV30AudienceInfoGender 性别定向
 type BrandAdCreateV30AudienceInfoGender string
 
 // List of brand_ad_create_v3.0_audience_info_gender

@@ -64,6 +64,8 @@ func (r *ApiOpenApi2StarBrandCategoryListGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2StarBrandCategoryListGet Method for OpenApi2StarBrandCategoryListGet
 
+获取星图品牌云图类目列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarBrandCategoryListGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ClueWechatInstanceListV2DataItemsSubType
+// ClueWechatInstanceListV2DataItemsSubType 号码包类型，0：普通号码包，1：单一微信号码包，2：企业微信，4：企业微信活码
 type ClueWechatInstanceListV2DataItemsSubType string
 
 // List of clue_wechat_instance_list_v2_data_items_sub_type

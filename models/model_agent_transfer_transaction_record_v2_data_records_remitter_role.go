@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentTransferTransactionRecordV2DataRecordsRemitterRole
+// AgentTransferTransactionRecordV2DataRecordsRemitterRole 转出方账户类型
 type AgentTransferTransactionRecordV2DataRecordsRemitterRole string
 
 // List of agent_transfer_transaction_record_v2_data_records_remitter_role

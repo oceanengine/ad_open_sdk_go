@@ -95,6 +95,8 @@ func (r *ApiOpenApiV30AicElementGetGetRequest) WithLog(enable bool) *ApiOpenApiV
 /*
 OpenApiV30AicElementGetGet Method for OpenApiV30AicElementGetGet
 
+通过此接口获取，输入账户ID、文件路径、元素类型等，查看原料
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AicElementGetGetRequest
 */

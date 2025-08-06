@@ -72,6 +72,8 @@ func (r *ApiOpenApiV30BudgetGroupListGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30BudgetGroupListGet Method for OpenApiV30BudgetGroupListGet
 
+筛选预算组列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BudgetGroupListGetRequest
 */

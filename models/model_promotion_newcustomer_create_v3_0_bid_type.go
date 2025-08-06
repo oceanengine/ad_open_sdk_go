@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionNewcustomerCreateV30BidType
+// PromotionNewcustomerCreateV30BidType 竞价策略
 type PromotionNewcustomerCreateV30BidType string
 
 // List of promotion_newcustomer_create_v3.0_bid_type

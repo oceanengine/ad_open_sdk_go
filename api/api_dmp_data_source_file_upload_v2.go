@@ -64,6 +64,8 @@ func (r *ApiOpenApi2DmpDataSourceFileUploadPostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2DmpDataSourceFileUploadPost Method for OpenApi2DmpDataSourceFileUploadPost
 
+数据源文件上传
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DmpDataSourceFileUploadPostRequest
 */

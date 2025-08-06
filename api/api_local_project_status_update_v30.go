@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30LocalProjectStatusUpdatePostRequest) WithLog(enable bool) 
 /*
 OpenApiV30LocalProjectStatusUpdatePost Method for OpenApiV30LocalProjectStatusUpdatePost
 
+项目批量启停
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalProjectStatusUpdatePostRequest
 */

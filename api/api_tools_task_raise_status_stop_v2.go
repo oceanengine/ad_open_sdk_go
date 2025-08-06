@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsTaskRaiseStatusStopPostRequest) WithLog(enable bool) *A
 /*
 OpenApi2ToolsTaskRaiseStatusStopPost Method for OpenApi2ToolsTaskRaiseStatusStopPost
 
+关闭优选起量任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsTaskRaiseStatusStopPostRequest
 */

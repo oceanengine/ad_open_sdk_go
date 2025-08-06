@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsSiteUpdateStatusPostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ToolsSiteUpdateStatusPost Method for OpenApi2ToolsSiteUpdateStatusPost
 
+通过此接口，用户可以更改橙子建站站点状态
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSiteUpdateStatusPostRequest
 */

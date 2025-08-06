@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AdvertiserPublicInfoGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2AdvertiserPublicInfoGet Method for OpenApi2AdvertiserPublicInfoGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdvertiserPublicInfoGetRequest
 */

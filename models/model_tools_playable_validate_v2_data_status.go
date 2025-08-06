@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsPlayableValidateV2DataStatus
+// ToolsPlayableValidateV2DataStatus 试玩素材状态
 type ToolsPlayableValidateV2DataStatus string
 
 // List of tools_playable_validate_v2_data_status

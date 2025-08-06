@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectCreateV30AudienceExtend
+// ProjectCreateV30AudienceExtend 定向拓展
 type ProjectCreateV30AudienceExtend string
 
 // List of project_create_v3.0_audience_extend

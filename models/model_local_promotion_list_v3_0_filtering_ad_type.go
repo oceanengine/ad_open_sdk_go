@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionListV30FilteringAdType
+// LocalPromotionListV30FilteringAdType 广告类型筛选，默认不限
 type LocalPromotionListV30FilteringAdType string
 
 // List of local_promotion_list_v3.0_filtering_ad_type

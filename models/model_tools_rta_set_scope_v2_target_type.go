@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsRtaSetScopeV2TargetType
+// ToolsRtaSetScopeV2TargetType 生效维度
 type ToolsRtaSetScopeV2TargetType string
 
 // List of tools_rta_set_scope_v2_target_type

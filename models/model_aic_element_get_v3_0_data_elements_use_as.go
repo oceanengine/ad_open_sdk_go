@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicElementGetV30DataElementsUseAs
+// AicElementGetV30DataElementsUseAs 元素标签
 type AicElementGetV30DataElementsUseAs string
 
 // List of aic_element_get_v3.0_data_elements_use_as

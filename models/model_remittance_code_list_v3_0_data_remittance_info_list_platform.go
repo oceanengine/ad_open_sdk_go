@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// RemittanceCodeListV30DataRemittanceInfoListPlatform
+// RemittanceCodeListV30DataRemittanceInfoListPlatform 业务线
 type RemittanceCodeListV30DataRemittanceInfoListPlatform string
 
 // List of remittance_code_list_v3.0_data_remittance_info_list_platform

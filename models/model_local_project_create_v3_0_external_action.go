@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30ExternalAction
+// LocalProjectCreateV30ExternalAction 优化目标 本地交易场景下的可用优化目标说明：     营销场景(短视频图文)|推广目的(团购成交)|通投广告|投放内容(门店):团购购买(OTO_PAY#229)     营销场景(短视频图文)|推广目的(团购成交)|通投广告|投放内容(商品):团购购买(OTO_PAY#229)     营销场景(短视频图文)|推广目的(团购成交)|搜索广告|投放内容(门店):团购购买(OTO_PAY#229)     营销场景(短视频图文)|推广目的(团购成交)|搜索广告|投放内容(商品):团购购买(OTO_PAY#229)     营销场景(短视频图文)|推广目的(门店引流)|通投广告|投放内容(门店):门店引流(POI_RECOMMEND#524)     营销场景(短视频图文)|推广目的(门店引流)|搜索广告|投放内容(门店):门店引流(POI_RECOMMEND#524)     营销场景(短视频图文)|推广目的(内容加热)|通投广告|投放内容(门店):用户互动(NATIVE_ACTION#44),粉丝增长(FOLLOW_ACTION#46),展示量(SHOW#-1)     营销场景(短视频图文)|推广目的(内容加热)|通投广告|投放内容(商品):用户互动(NATIVE_ACTION#44),粉丝增长(FOLLOW_ACTION#46),展示量(SHOW#-1)     营销场景(直播)|推广目的(团购成交)|通投广告:直播间团购购买(LIVE_OTO_GROUP_BUYING:329),直播间团购点击(LIVE_OTO_CLICK#336)     营销场景(直播)|推广目的(团购成交)|搜索广告:直播间团购购买(LIVE_OTO_GROUP_BUYING:329)     营销场景(直播)|推广目的(内容加热)|通投广告:直播加热(LIVE_ENGAGEMENT#514),粉丝增长(FOLLOW_ACTION#46),展示量(SHOW#-1)     营销场景(直播)|推广目的(内容加热)|搜索广告:直播间观看(LIVE_ENTER_ACTION#171),直播间停留(LIVE_STAY_TIME#186)
 type LocalProjectCreateV30ExternalAction string
 
 // List of local_project_create_v3.0_external_action

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30YuntuAudienceInfoDeletePostRequest) WithLog(enable bool) *
 /*
 OpenApiV30YuntuAudienceInfoDeletePost Method for OpenApiV30YuntuAudienceInfoDeletePost
 
+删除自定义人群包
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30YuntuAudienceInfoDeletePostRequest
 */

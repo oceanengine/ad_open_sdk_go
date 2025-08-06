@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// RemittanceCodeListV30DataRemittanceInfoListRemittanceCodeStatus
+// RemittanceCodeListV30DataRemittanceInfoListRemittanceCodeStatus 汇款码状态
 type RemittanceCodeListV30DataRemittanceInfoListRemittanceCodeStatus string
 
 // List of remittance_code_list_v3.0_data_remittance_info_list_remittance_code_status

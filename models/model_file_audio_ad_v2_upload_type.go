@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileAudioAdV2UploadType
+// FileAudioAdV2UploadType 图片上传方式 默认值：UPLOAD_BY_FILE 允许值：UPLOAD_BY_FILE、UPLOAD_BY_URL
 type FileAudioAdV2UploadType string
 
 // List of file_audio_ad_v2_upload_type

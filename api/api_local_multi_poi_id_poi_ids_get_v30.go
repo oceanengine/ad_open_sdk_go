@@ -65,6 +65,8 @@ func (r *ApiOpenApiV30LocalMultiPoiIdPoiIdsGetGetRequest) WithLog(enable bool) *
 /*
 OpenApiV30LocalMultiPoiIdPoiIdsGetGet Method for OpenApiV30LocalMultiPoiIdPoiIdsGetGet
 
+根据多门店ID拉取门店ID
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalMultiPoiIdPoiIdsGetGetRequest
 */

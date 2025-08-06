@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsMicroGameCreateV30AgeLimit
+// ToolsMicroGameCreateV30AgeLimit 年龄限制
 type ToolsMicroGameCreateV30AgeLimit string
 
 // List of tools_micro_game_create_v3.0_age_limit

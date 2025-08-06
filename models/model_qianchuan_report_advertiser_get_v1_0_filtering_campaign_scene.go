@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanReportAdvertiserGetV10FilteringCampaignScene
+// QianchuanReportAdvertiserGetV10FilteringCampaignScene 营销场景，默认查全部，允许值： - `DAILY_SALE` 日常销售 - `NEW_CUSTOMER_TRANSFORMATION` 新客转化 - `LIVE_HEAT` 直播间加热 - `PLANT_GRASS` 人群种草 - `PRODUCT_HEAT` 商品加热 - `NEW_PRODUCT_BOOST` 新品起量 注意：当order_platform = `ECP_AWEME` 下单平台为小店随心推时，不支持传入
 type QianchuanReportAdvertiserGetV10FilteringCampaignScene string
 
 // List of qianchuan_report_advertiser_get_v1.0_filtering_campaign_scene

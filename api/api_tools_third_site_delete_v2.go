@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsThirdSiteDeletePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2ToolsThirdSiteDeletePost Method for OpenApi2ToolsThirdSiteDeletePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsThirdSiteDeletePostRequest
 */

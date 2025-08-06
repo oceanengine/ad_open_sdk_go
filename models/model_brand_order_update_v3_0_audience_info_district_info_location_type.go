@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderUpdateV30AudienceInfoDistrictInfoLocationType
+// BrandOrderUpdateV30AudienceInfoDistrictInfoLocationType 地域类型
 type BrandOrderUpdateV30AudienceInfoDistrictInfoLocationType string
 
 // List of brand_order_update_v3.0_audience_info_district_info_location_type

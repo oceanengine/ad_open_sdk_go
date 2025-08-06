@@ -58,6 +58,8 @@ func (r *ApiOpenApi2CreativeRejectReasonGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2CreativeRejectReasonGet Method for OpenApi2CreativeRejectReasonGet
 
+获取创意审核建议
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CreativeRejectReasonGetRequest
 */

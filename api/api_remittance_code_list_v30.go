@@ -74,6 +74,8 @@ func (r *ApiOpenApiV30RemittanceCodeListGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30RemittanceCodeListGet Method for OpenApiV30RemittanceCodeListGet
 
+根据账号ID或者汇款码查询汇款码信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30RemittanceCodeListGetRequest
 */

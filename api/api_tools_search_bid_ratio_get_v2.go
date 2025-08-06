@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ToolsSearchBidRatioGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ToolsSearchBidRatioGetGet Method for OpenApi2ToolsSearchBidRatioGetGet
 
+获取快投推荐出价系数
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSearchBidRatioGetGetRequest
 */

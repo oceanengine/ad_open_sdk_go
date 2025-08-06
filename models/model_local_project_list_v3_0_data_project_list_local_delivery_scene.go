@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30DataProjectListLocalDeliveryScene
+// LocalProjectListV30DataProjectListLocalDeliveryScene 推广目的
 type LocalProjectListV30DataProjectListLocalDeliveryScene string
 
 // List of local_project_list_v3.0_data_project_list_local_delivery_scene

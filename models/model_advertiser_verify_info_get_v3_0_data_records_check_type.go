@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AdvertiserVerifyInfoGetV30DataRecordsCheckType
+// AdvertiserVerifyInfoGetV30DataRecordsCheckType 主体验证类型
 type AdvertiserVerifyInfoGetV30DataRecordsCheckType string
 
 // List of advertiser_verify_info_get_v3.0_data_records_check_type

@@ -110,6 +110,8 @@ func (r *ApiOpenApiV10QianchuanMaterialGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV10QianchuanMaterialGetGet Method for OpenApiV10QianchuanMaterialGetGet
 
+获取账户下素材列表和数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanMaterialGetGetRequest
 */

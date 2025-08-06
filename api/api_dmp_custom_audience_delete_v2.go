@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DmpCustomAudienceDeletePostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2DmpCustomAudienceDeletePost Method for OpenApi2DmpCustomAudienceDeletePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DmpCustomAudienceDeletePostRequest
 */

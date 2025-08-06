@@ -12,7 +12,7 @@ package models
 
 // QianchuanAwemeAuthorizedGetV10ResponseData
 type QianchuanAwemeAuthorizedGetV10ResponseData struct {
-	//
+	// 抖音号列表
 	AwemeIdList []*QianchuanAwemeAuthorizedGetV10ResponseDataAwemeIdListInner `json:"aweme_id_list,omitempty"`
 	PageInfo    *QianchuanAwemeAuthorizedGetV10ResponseDataPageInfo           `json:"page_info,omitempty"`
 }

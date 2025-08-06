@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30FilePreauditSubmitPostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30FilePreauditSubmitPost Method for OpenApiV30FilePreauditSubmitPost
 
+素材预审提交
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30FilePreauditSubmitPostRequest
 */

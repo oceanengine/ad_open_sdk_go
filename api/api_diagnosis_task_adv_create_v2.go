@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DiagnosisTaskAdvCreatePostRequest) WithLog(enable bool) *Api
 /*
 OpenApi2DiagnosisTaskAdvCreatePost Method for OpenApi2DiagnosisTaskAdvCreatePost
 
+通过此接口，用户可以通过传入视频id和投放设置(setting)创建对应的前测任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DiagnosisTaskAdvCreatePostRequest
 */

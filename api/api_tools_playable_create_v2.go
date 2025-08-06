@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsPlayableCreatePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ToolsPlayableCreatePost Method for OpenApi2ToolsPlayableCreatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPlayableCreatePostRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AgentFundTransferSeqCreatePostRequest) WithLog(enable bool) 
 /*
 OpenApi2AgentFundTransferSeqCreatePost Method for OpenApi2AgentFundTransferSeqCreatePost
 
+转账接口分为两步, 包含创建转账接口 和 提交转账接口，本接口为第一步
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentFundTransferSeqCreatePostRequest
 */

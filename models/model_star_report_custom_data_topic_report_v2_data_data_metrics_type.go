@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarReportCustomDataTopicReportV2DataDataMetricsType
+// StarReportCustomDataTopicReportV2DataDataMetricsType 指标数据类型： STRING、 INT64、 FLOAT64、 JSON格式字符串为K-V键值对，如画像部分数据: {\"长沙\": 0.24}
 type StarReportCustomDataTopicReportV2DataDataMetricsType string
 
 // List of star_report_custom_data_topic_report_v2_data_data_metrics_type

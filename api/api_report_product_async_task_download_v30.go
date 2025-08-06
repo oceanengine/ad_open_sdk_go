@@ -70,6 +70,8 @@ func (r *ApiOpenApiV30ReportProductAsyncTaskDownloadGetRequest) WithLog(enable b
 /*
 OpenApiV30ReportProductAsyncTaskDownloadGet Method for OpenApiV30ReportProductAsyncTaskDownloadGet
 
+DPA商品报表-任务触发
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportProductAsyncTaskDownloadGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanFinanceWalletGetV10DataShareExpiringDetailListCategory
+// QianchuanFinanceWalletGetV10DataShareExpiringDetailListCategory 类别
 type QianchuanFinanceWalletGetV10DataShareExpiringDetailListCategory string
 
 // List of qianchuan_finance_wallet_get_v1.0_data_share_expiring_detail_list_category

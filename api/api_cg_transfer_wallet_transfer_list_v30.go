@@ -109,6 +109,8 @@ func (r *ApiOpenApiV30CgTransferWalletTransferListGetRequest) WithLog(enable boo
 /*
 OpenApiV30CgTransferWalletTransferListGet Method for OpenApiV30CgTransferWalletTransferListGet
 
+通过筛选条件捞取转账记录
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30CgTransferWalletTransferListGetRequest
 */

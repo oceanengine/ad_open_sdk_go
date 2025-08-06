@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionAdProductGetV10DataProductListProductInfoAuditStatus
+// QianchuanUniPromotionAdProductGetV10DataProductListProductInfoAuditStatus 审核状态，可选值 - PASS审核通过 - REJECT审核拒绝 - IN_PROGRESS审核中
 type QianchuanUniPromotionAdProductGetV10DataProductListProductInfoAuditStatus string
 
 // List of qianchuan_uni_promotion_ad_product_get_v1.0_data_product_list_product_info_audit_status

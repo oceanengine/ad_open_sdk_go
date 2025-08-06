@@ -58,6 +58,11 @@ func (r *ApiOpenApiV10QianchuanTrackUrlCheckGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV10QianchuanTrackUrlCheckGet Method for OpenApiV10QianchuanTrackUrlCheckGet
 
+开发文档：https://bytedance.feishu.cn/wiki/wikcnHM6yUStX7cq9noC9fSWqz7
+千川RD：@郭丰瑞 @杨旭
+MAPI RD：@郭卜滔
+PM：@朱颖波
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanTrackUrlCheckGetRequest
 */

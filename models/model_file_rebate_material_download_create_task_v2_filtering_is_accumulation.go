@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileRebateMaterialDownloadCreateTaskV2FilteringIsAccumulation
+// FileRebateMaterialDownloadCreateTaskV2FilteringIsAccumulation 是否累量
 type FileRebateMaterialDownloadCreateTaskV2FilteringIsAccumulation string
 
 // List of file_rebate_material_download_create_task_v2_filtering_is_accumulation

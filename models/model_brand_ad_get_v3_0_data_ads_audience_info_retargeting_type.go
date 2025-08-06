@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsAudienceInfoRetargetingType
+// BrandAdGetV30DataAdsAudienceInfoRetargetingType 人群包类型
 type BrandAdGetV30DataAdsAudienceInfoRetargetingType int64
 
 // List of brand_ad_get_v3.0_data_ads_audience_info_retargeting_type

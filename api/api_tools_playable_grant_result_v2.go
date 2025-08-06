@@ -87,6 +87,8 @@ func (r *ApiOpenApi2ToolsPlayableGrantResultGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2ToolsPlayableGrantResultGet Method for OpenApi2ToolsPlayableGrantResultGet
 
+试玩素材支持在同主体下进行推送，本接口用于获取试玩素材推送的结果。可根据【推送试玩素材】接口生成的task_id进行过滤检索试玩素材推送的状态。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPlayableGrantResultGetRequest
 */

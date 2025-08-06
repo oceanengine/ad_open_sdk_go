@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAwemeListV30DataAwemeUserInfoListAppName
+// BrandAwemeListV30DataAwemeUserInfoListAppName 所属APP
 type BrandAwemeListV30DataAwemeUserInfoListAppName string
 
 // List of brand_aweme_list_v3.0_data_aweme_user_info_list_app_name

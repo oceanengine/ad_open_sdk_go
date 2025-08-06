@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAbTestListGetV2DataTestListTestVersion
+// ToolsAbTestListGetV2DataTestListTestVersion 实验版本，`\"V1\"`：V1版本，`\"V2\"`：V2版本。
 type ToolsAbTestListGetV2DataTestListTestVersion string
 
 // List of tools_ab_test_list_get_v2_data_test_list_test_version

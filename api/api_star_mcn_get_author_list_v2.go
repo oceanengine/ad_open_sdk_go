@@ -76,6 +76,8 @@ func (r *ApiOpenApi2StarMcnGetAuthorListGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2StarMcnGetAuthorListGet Method for OpenApi2StarMcnGetAuthorListGet
 
+机构承包-获取达人绑定关系
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnGetAuthorListGetRequest
 */

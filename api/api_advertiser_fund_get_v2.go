@@ -58,6 +58,8 @@ func (r *ApiOpenApi2AdvertiserFundGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2AdvertiserFundGetGet Method for OpenApi2AdvertiserFundGetGet
 
+查询账号余额
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdvertiserFundGetGetRequest
 */

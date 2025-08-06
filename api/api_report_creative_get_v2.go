@@ -112,6 +112,8 @@ func (r *ApiOpenApi2ReportCreativeGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2ReportCreativeGetGet Method for OpenApi2ReportCreativeGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportCreativeGetGetRequest
 */

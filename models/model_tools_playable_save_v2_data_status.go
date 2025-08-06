@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsPlayableSaveV2DataStatus
+// ToolsPlayableSaveV2DataStatus 试玩素材状态
 type ToolsPlayableSaveV2DataStatus string
 
 // List of tools_playable_save_v2_data_status

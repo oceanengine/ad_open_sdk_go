@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialUpdateV30LbsLbsType
+// BrandMaterialUpdateV30LbsLbsType LBS动态地址类型
 type BrandMaterialUpdateV30LbsLbsType string
 
 // List of brand_material_update_v3.0_lbs_lbs_type

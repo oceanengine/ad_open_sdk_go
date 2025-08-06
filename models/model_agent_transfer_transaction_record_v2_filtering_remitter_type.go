@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentTransferTransactionRecordV2FilteringRemitterType
+// AgentTransferTransactionRecordV2FilteringRemitterType 转出方账户类型
 type AgentTransferTransactionRecordV2FilteringRemitterType string
 
 // List of agent_transfer_transaction_record_v2_filtering_remitter_type

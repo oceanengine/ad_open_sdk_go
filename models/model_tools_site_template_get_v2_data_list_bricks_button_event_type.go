@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsSiteTemplateGetV2DataListBricksButtonEventType
+// ToolsSiteTemplateGetV2DataListBricksButtonEventType 事件行为类型，当`button`不为空时，有值
 type ToolsSiteTemplateGetV2DataListBricksButtonEventType string
 
 // List of tools_site_template_get_v2_data_list_bricks_button_event_type

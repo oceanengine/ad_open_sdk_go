@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListFlowType
+// ToolsClueLifeGetV2DataListFlowType 流量类型
 type ToolsClueLifeGetV2DataListFlowType string
 
 // List of tools_clue_life_get_v2_data_list_flow_type

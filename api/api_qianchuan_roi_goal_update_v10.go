@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanRoiGoalUpdatePostRequest) WithLog(enable bool) *A
 /*
 OpenApiV10QianchuanRoiGoalUpdatePost Method for OpenApiV10QianchuanRoiGoalUpdatePost
 
+更新roi_goal
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanRoiGoalUpdatePostRequest
 */

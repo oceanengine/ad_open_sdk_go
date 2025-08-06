@@ -94,6 +94,8 @@ func (r *ApiOpenApi2FileVideoAwemeGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2FileVideoAwemeGetGet Method for OpenApi2FileVideoAwemeGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileVideoAwemeGetGetRequest
 */

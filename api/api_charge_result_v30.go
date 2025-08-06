@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30ChargeResultGetRequest) WithLog(enable bool) *ApiOpenApiV3
 /*
 OpenApiV30ChargeResultGet Method for OpenApiV30ChargeResultGet
 
+根据充值单查询充值结果接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ChargeResultGetRequest
 */

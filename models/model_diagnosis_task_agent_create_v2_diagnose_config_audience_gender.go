@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DiagnosisTaskAgentCreateV2DiagnoseConfigAudienceGender
+// DiagnosisTaskAgentCreateV2DiagnoseConfigAudienceGender 受众年龄
 type DiagnosisTaskAgentCreateV2DiagnoseConfigAudienceGender string
 
 // List of diagnosis_task_agent_create_v2_diagnose_config_audience_gender

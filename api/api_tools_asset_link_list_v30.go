@@ -70,6 +70,8 @@ func (r *ApiOpenApiV30ToolsAssetLinkListGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30ToolsAssetLinkListGet Method for OpenApiV30ToolsAssetLinkListGet
 
+mapi场景获取字节小程序小游戏链接
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsAssetLinkListGetRequest
 */

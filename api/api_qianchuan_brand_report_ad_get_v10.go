@@ -108,6 +108,8 @@ func (r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) WithLog(enable bool) 
 /*
 OpenApiV10QianchuanBrandReportAdGetGet Method for OpenApiV10QianchuanBrandReportAdGetGet
 
+获取新版品牌广告计划数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanBrandReportAdGetGetRequest
 */

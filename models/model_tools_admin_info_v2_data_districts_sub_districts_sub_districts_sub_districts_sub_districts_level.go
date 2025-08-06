@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAdminInfoV2DataDistrictsSubDistrictsSubDistrictsSubDistrictsSubDistrictsLevel
+// ToolsAdminInfoV2DataDistrictsSubDistrictsSubDistrictsSubDistrictsSubDistrictsLevel 行政区域层级
 type ToolsAdminInfoV2DataDistrictsSubDistrictsSubDistrictsSubDistrictsSubDistrictsLevel string
 
 // List of tools_admin_info_v2_data_districts_sub_districts_sub_districts_sub_districts_sub_districts_level

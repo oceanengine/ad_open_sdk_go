@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DpaClueProductSavePostRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApi2DpaClueProductSavePost Method for OpenApi2DpaClueProductSavePost
 
+线索版商品新增&编辑
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaClueProductSavePostRequest
 */

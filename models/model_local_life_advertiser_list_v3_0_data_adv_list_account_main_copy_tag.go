@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalLifeAdvertiserListV30DataAdvListAccountMainCopyTag
+// LocalLifeAdvertiserListV30DataAdvListAccountMainCopyTag 复制&首开标
 type LocalLifeAdvertiserListV30DataAdvListAccountMainCopyTag string
 
 // List of local_life_advertiser_list_v3.0_data_adv_list_account_main_copy_tag

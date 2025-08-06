@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DouplusOrderCreateV30TargetingGender
+// DouplusOrderCreateV30TargetingGender 性别，允许值： GENDER_FEMALE: 女性 GENDER_MALE: 男性 注意：仅想吸引的观众类型为”CUSTOM”时，有效
 type DouplusOrderCreateV30TargetingGender string
 
 // List of douplus_order_create_v3.0_targeting_gender

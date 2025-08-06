@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsCommentGetV30DataCommentListCommentPermission
+// ToolsCommentGetV30DataCommentListCommentPermission 评论权限，WRITE：可写；READ：只读
 type ToolsCommentGetV30DataCommentListCommentPermission string
 
 // List of tools_comment_get_v3.0_data_comment_list_comment_permission

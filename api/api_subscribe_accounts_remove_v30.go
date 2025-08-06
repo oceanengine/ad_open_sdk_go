@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30SubscribeAccountsRemovePostRequest) WithLog(enable bool) *
 /*
 OpenApiV30SubscribeAccountsRemovePost Method for OpenApiV30SubscribeAccountsRemovePost
 
+取消对 Adv 的订阅
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SubscribeAccountsRemovePostRequest
 */

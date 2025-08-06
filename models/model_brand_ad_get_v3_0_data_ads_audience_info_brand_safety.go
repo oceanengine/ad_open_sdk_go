@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsAudienceInfoBrandSafety
+// BrandAdGetV30DataAdsAudienceInfoBrandSafety 环境定向
 type BrandAdGetV30DataAdsAudienceInfoBrandSafety int64
 
 // List of brand_ad_get_v3.0_data_ads_audience_info_brand_safety

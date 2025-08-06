@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsPromotionRaiseSetPostRequest) WithLog(enable bool) *A
 /*
 OpenApiV30ToolsPromotionRaiseSetPost Method for OpenApiV30ToolsPromotionRaiseSetPost
 
+开启/更新一键起量(传空代表删除)
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsPromotionRaiseSetPostRequest
 */

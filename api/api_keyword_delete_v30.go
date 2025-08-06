@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30KeywordDeletePostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30KeywordDeletePost Method for OpenApiV30KeywordDeletePost
 
+搜索广告关键词删除
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30KeywordDeletePostRequest
 */

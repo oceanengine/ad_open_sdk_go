@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30LocalPromotionDetailGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30LocalPromotionDetailGet Method for OpenApiV30LocalPromotionDetailGet
 
+拉取广告详情数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalPromotionDetailGetRequest
 */

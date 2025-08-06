@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ReportAudienceAgeGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2ReportAudienceAgeGet Method for OpenApi2ReportAudienceAgeGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportAudienceAgeGetRequest
 */

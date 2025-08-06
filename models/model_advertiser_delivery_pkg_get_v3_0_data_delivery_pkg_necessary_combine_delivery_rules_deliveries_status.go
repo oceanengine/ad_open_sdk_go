@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AdvertiserDeliveryPkgGetV30DataDeliveryPkgNecessaryCombineDeliveryRulesDeliveriesStatus
+// AdvertiserDeliveryPkgGetV30DataDeliveryPkgNecessaryCombineDeliveryRulesDeliveriesStatus 资质审核状态
 type AdvertiserDeliveryPkgGetV30DataDeliveryPkgNecessaryCombineDeliveryRulesDeliveriesStatus string
 
 // List of advertiser_delivery_pkg_get_v3.0_data_delivery_pkg_necessary_combine_delivery_rules_deliveries_status

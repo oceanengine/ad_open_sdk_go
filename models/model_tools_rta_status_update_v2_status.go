@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsRtaStatusUpdateV2Status
+// ToolsRtaStatusUpdateV2Status 目标状态 允许值:启用 ENABLE ，停用 DISABLE
 type ToolsRtaStatusUpdateV2Status string
 
 // List of tools_rta_status_update_v2_status

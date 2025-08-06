@@ -101,6 +101,8 @@ func (r *ApiOpenApiV30ReportBrandAgentDataGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30ReportBrandAgentDataGet Method for OpenApiV30ReportBrandAgentDataGet
 
+查询品牌代投数据的2.0接口，范围包含半自助和媒介创建的计划
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportBrandAgentDataGetRequest
 */

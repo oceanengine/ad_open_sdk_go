@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarVasCreateBoostItemGroupV2CustomAudienceTagGender
+// StarVasCreateBoostItemGroupV2CustomAudienceTagGender 性别，默认不限
 type StarVasCreateBoostItemGroupV2CustomAudienceTagGender string
 
 // List of star_vas_create_boost_item_group_v2_custom_audience_tag_gender

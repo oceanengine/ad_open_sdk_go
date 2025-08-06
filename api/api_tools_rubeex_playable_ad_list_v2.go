@@ -74,6 +74,8 @@ func (r *ApiOpenApi2ToolsRubeexPlayableAdListGetRequest) WithLog(enable bool) *A
 /*
 OpenApi2ToolsRubeexPlayableAdListGet Method for OpenApi2ToolsRubeexPlayableAdListGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsRubeexPlayableAdListGetRequest
 */

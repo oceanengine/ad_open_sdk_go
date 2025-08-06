@@ -58,6 +58,8 @@ func (r *ApiOpenApi2StarDemandGetEpisodeLimitGetRequest) WithLog(enable bool) *A
 /*
 OpenApi2StarDemandGetEpisodeLimitGet Method for OpenApi2StarDemandGetEpisodeLimitGet
 
+获取短剧可剪辑集数配置
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemandGetEpisodeLimitGetRequest
 */

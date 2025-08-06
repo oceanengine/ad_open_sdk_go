@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AdvConvertOleConvertPostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2AdvConvertOleConvertPost Method for OpenApi2AdvConvertOleConvertPost
 
+引流下单转化信息获取
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdvConvertOleConvertPostRequest
 */

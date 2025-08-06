@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionAdSuggestionV10DataListImageMaterialImageMode
+// QianchuanUniPromotionAdSuggestionV10DataListImageMaterialImageMode 素材类型
 type QianchuanUniPromotionAdSuggestionV10DataListImageMaterialImageMode string
 
 // List of qianchuan_uni_promotion_ad_suggestion_v1.0_data_list_image_material_image_mode

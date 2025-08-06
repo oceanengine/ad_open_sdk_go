@@ -116,6 +116,8 @@ func (r *ApiOpenApiV30BrandQueryStockGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30BrandQueryStockGet Method for OpenApiV30BrandQueryStockGet
 
+AD品牌查询库存余量
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandQueryStockGetRequest
 */

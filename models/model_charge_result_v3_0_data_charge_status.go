@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ChargeResultV30DataChargeStatus
+// ChargeResultV30DataChargeStatus 充值提交状态
 type ChargeResultV30DataChargeStatus string
 
 // List of charge_result_v3.0_data_charge_status

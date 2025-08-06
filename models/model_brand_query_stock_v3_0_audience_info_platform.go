@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandQueryStockV30AudienceInfoPlatform
+// BrandQueryStockV30AudienceInfoPlatform 平台定向
 type BrandQueryStockV30AudienceInfoPlatform string
 
 // List of brand_query_stock_v3.0_audience_info_platform

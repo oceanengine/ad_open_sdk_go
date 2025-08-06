@@ -15,9 +15,9 @@ type AdGetV2DataAudienceGender string
 
 // List of ad_get_v2_data_audience_gender
 const (
-	NONE_AdGetV2DataAudienceGender             AdGetV2DataAudienceGender = "NONE"
 	GENDER_UNLIMITED_AdGetV2DataAudienceGender AdGetV2DataAudienceGender = "GENDER_UNLIMITED"
 	GENDER_MALE_AdGetV2DataAudienceGender      AdGetV2DataAudienceGender = "GENDER_MALE"
+	NONE_AdGetV2DataAudienceGender             AdGetV2DataAudienceGender = "NONE"
 	GENDER_FEMALE_AdGetV2DataAudienceGender    AdGetV2DataAudienceGender = "GENDER_FEMALE"
 )
 

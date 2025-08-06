@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalLifeAdvertiserListV30FilteringLocalAccountRole
+// LocalLifeAdvertiserListV30FilteringLocalAccountRole 账户类型筛选，默认查全部
 type LocalLifeAdvertiserListV30FilteringLocalAccountRole string
 
 // List of local_life_advertiser_list_v3.0_filtering_local_account_role

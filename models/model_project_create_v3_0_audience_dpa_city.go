@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectCreateV30AudienceDpaCity
+// ProjectCreateV30AudienceDpaCity 地域匹配-商品所在城市 开启时，仅将商品投放给位于该商品设置的可投城市的用户 默认值：OFF 允许值：OFF，ON（OFF表示不启用，ON表示启用）
 type ProjectCreateV30AudienceDpaCity string
 
 // List of project_create_v3.0_audience_dpa_city

@@ -60,6 +60,8 @@ func (r *ApiOpenApi2FileVideoAdGetGetRequest) WithLog(enable bool) *ApiOpenApi2F
 /*
 OpenApi2FileVideoAdGetGet Method for OpenApi2FileVideoAdGetGet
 
+通过此接口，用户可以查询同主体下的广告主视频信息。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileVideoAdGetGetRequest
 */

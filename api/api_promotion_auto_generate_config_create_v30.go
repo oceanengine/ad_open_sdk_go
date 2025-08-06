@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30PromotionAutoGenerateConfigCreatePostRequest) WithLog(enab
 /*
 OpenApiV30PromotionAutoGenerateConfigCreatePost Method for OpenApiV30PromotionAutoGenerateConfigCreatePost
 
+用来保存广告主自定义的策略及物料，用于创意智能生成。创建时promotion_id选填，更新时promotion_id必填，多次更新返回的configid不变
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionAutoGenerateConfigCreatePostRequest
 */

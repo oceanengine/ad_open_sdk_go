@@ -52,6 +52,8 @@ func (r *ApiOpenApi2FileVideoUpdatePostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2FileVideoUpdatePost Method for OpenApi2FileVideoUpdatePost
 
+通过此接口，用户可以批量更新素材视频的名称。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileVideoUpdatePostRequest
 */

@@ -76,6 +76,8 @@ func (r *ApiOpenApi2ToolsInterestActionId2wordGetRequest) WithLog(enable bool) *
 /*
 OpenApi2ToolsInterestActionId2wordGet Method for OpenApi2ToolsInterestActionId2wordGet
 
+兴趣行为类目关键词id转词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsInterestActionId2wordGetRequest
 */

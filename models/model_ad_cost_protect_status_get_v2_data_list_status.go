@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AdCostProtectStatusGetV2DataListStatus
+// AdCostProtectStatusGetV2DataListStatus 计划成本保障状态
 type AdCostProtectStatusGetV2DataListStatus string
 
 // List of ad_cost_protect_status_get_v2_data_list_status

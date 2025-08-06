@@ -73,6 +73,8 @@ func (r *ApiOpenApi2ToolsAwemeAuthListGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2ToolsAwemeAuthListGet Method for OpenApi2ToolsAwemeAuthListGet
 
+获取抖音授权关系列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAwemeAuthListGetRequest
 */

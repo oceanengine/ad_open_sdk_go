@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarChallengeChooseTaskItemWithRewardPostRequest) WithLog(en
 /*
 OpenApi2StarChallengeChooseTaskItemWithRewardPost Method for OpenApi2StarChallengeChooseTaskItemWithRewardPost
 
+为客户提供API进行选稿发奖
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarChallengeChooseTaskItemWithRewardPostRequest
 */

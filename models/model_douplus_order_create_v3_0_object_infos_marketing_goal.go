@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DouplusOrderCreateV30ObjectInfosMarketingGoal
+// DouplusOrderCreateV30ObjectInfosMarketingGoal 营销目标(素材类型)
 type DouplusOrderCreateV30ObjectInfosMarketingGoal string
 
 // List of douplus_order_create_v3.0_object_infos_marketing_goal

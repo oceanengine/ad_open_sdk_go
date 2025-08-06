@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AdvertiserBudgetGetGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApi2AdvertiserBudgetGetGet Method for OpenApi2AdvertiserBudgetGetGet
 
+此接口可以更新广告主账号设置的预算类型与预算
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdvertiserBudgetGetGetRequest
 */

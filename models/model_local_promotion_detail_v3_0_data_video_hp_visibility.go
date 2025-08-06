@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionDetailV30DataVideoHpVisibility
+// LocalPromotionDetailV30DataVideoHpVisibility 抖音主页可见性
 type LocalPromotionDetailV30DataVideoHpVisibility string
 
 // List of local_promotion_detail_v3.0_data_video_hp_visibility

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalChargeSubmitV30PayInfoPaymentChannel
+// LocalChargeSubmitV30PayInfoPaymentChannel 收银台类型
 type LocalChargeSubmitV30PayInfoPaymentChannel string
 
 // List of local_charge_submit_v3.0_pay_info_payment_channel

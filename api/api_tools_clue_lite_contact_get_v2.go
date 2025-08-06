@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueLiteContactGetPostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2ToolsClueLiteContactGetPost Method for OpenApi2ToolsClueLiteContactGetPost
 
+轻量化api-进行话单获取接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueLiteContactGetPostRequest
 */

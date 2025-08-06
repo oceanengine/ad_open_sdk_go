@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentQueryRiskPromotionListV2DataDataMaterialListType
+// AgentQueryRiskPromotionListV2DataDataMaterialListType 素材类型
 type AgentQueryRiskPromotionListV2DataDataMaterialListType string
 
 // List of agent_query_risk_promotion_list_v2_data_data_material_list_type

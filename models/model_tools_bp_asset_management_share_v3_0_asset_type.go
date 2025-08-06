@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsBpAssetManagementShareV30AssetType
+// ToolsBpAssetManagementShareV30AssetType 资产类型
 type ToolsBpAssetManagementShareV30AssetType string
 
 // List of tools_bp_asset_management_share_v3.0_asset_type

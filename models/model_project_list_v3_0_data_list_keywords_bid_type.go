@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectListV30DataListKeywordsBidType
+// ProjectListV30DataListKeywordsBidType 出价类型
 type ProjectListV30DataListKeywordsBidType string
 
 // List of project_list_v3.0_data_list_keywords_bid_type

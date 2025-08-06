@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionCreateV30PromotionMaterialsVideoMaterialListVideoTemplateType
+// PromotionCreateV30PromotionMaterialsVideoMaterialListVideoTemplateType 商品库视频生成类型，创建DPA创意时可传入，传入后该素材下image_info与video_info不生效 可选值： DPA_VIDEO_TEMPLATE_SMART，优选商品库视频（自动根据商品库商品图片生成） DPA_VIDEO_TEMPLATE_CUSTOM，自定义商品库视频
 type PromotionCreateV30PromotionMaterialsVideoMaterialListVideoTemplateType string
 
 // List of promotion_create_v3.0_promotion_materials_video_material_list_video_template_type

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanReportAdvertiserGetV10FilteringStatus
+// QianchuanReportAdvertiserGetV10FilteringStatus 按计划状态过滤，不传入即默认返回全部（包含已删除），允许值： - `ALL_INCLUDE_DELETED` 所有,包含已删除 - `AUDIT` 新建审核中 - `DELETED` 已删除 - `DELIVERY_OK` 投放中 - `DISABLE` 已暂停 - `EXTERNAL_URL_DISABLE` 落地页暂不可用 - `FROZEN` 已终止 - `LIVE_ROOM_OFF` 关联直播间未开播 - `NO_SCHEDULE` 不在投放时段 - `OFFLINE_AUDIT` 审核不通过 - `OFFLINE_BALANCE` 账户余额不足 - `OFFLINE_BUDGET` 广告超出预算 - `REAUDIT` 修改审核中 - `TIME_DONE` 已完成 - `TIME_NO_REACH` 未达到投放时间 注意：当order_platform = `ECP_AWEME` 下单平台为小店随心推时，不支持传入
 type QianchuanReportAdvertiserGetV10FilteringStatus string
 
 // List of qianchuan_report_advertiser_get_v1.0_filtering_status

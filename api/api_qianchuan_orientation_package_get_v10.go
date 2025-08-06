@@ -70,6 +70,8 @@ func (r *ApiOpenApiV10QianchuanOrientationPackageGetGetRequest) WithLog(enable b
 /*
 OpenApiV10QianchuanOrientationPackageGetGet Method for OpenApiV10QianchuanOrientationPackageGetGet
 
+技术文档：https://bytedance.feishu.cn/wiki/wikcnBy344NTluLkMQ9anjV5nff 开发：杨旭 PM：朱颖波
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanOrientationPackageGetGetRequest
 */

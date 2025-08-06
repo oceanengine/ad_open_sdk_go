@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ProjectDeletePostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30ProjectDeletePost Method for OpenApiV30ProjectDeletePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ProjectDeletePostRequest
 */

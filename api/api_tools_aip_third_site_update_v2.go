@@ -52,6 +52,9 @@ func (r *ApiOpenApi2ToolsAipThirdSiteUpdatePostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2ToolsAipThirdSiteUpdatePost Method for OpenApi2ToolsAipThirdSiteUpdatePost
 
+开发者可以在修改完第三方落地页的内容后，调用此接口更新站点再次发起落地页标准化校验。
+>  注意：因校验落地页是否为标准第三方落地页是异步进行的，所以更新时若落地页不符合标准落地页规范，也可更新成功。开发者可通过【获取标准第三方落地页站点】接口返回的校验状态validate_status确认是否成功创建标准第三方落地页。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAipThirdSiteUpdatePostRequest
 */

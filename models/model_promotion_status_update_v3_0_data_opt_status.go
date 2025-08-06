@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionStatusUpdateV30DataOptStatus
+// PromotionStatusUpdateV30DataOptStatus 操作
 type PromotionStatusUpdateV30DataOptStatus string
 
 // List of promotion_status_update_v3.0_data_opt_status

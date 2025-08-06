@@ -67,6 +67,8 @@ func (r *ApiOpenApiV30BrandCampaignListGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30BrandCampaignListGet Method for OpenApiV30BrandCampaignListGet
 
+查询AD品牌2.0广告组信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandCampaignListGetRequest
 */

@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30PromotionAidGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30PromotionAidGetGet Method for OpenApiV30PromotionAidGetGet
 
+获取2.0广告下真实的计划和创意信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionAidGetGetRequest
 */

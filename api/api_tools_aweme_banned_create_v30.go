@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsAwemeBannedCreatePostRequest) WithLog(enable bool) *A
 /*
 OpenApiV30ToolsAwemeBannedCreatePost Method for OpenApiV30ToolsAwemeBannedCreatePost
 
+PM2
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsAwemeBannedCreatePostRequest
 */

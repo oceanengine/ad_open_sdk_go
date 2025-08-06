@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueWebrtcTokenGetPostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2ToolsClueWebrtcTokenGetPost Method for OpenApi2ToolsClueWebrtcTokenGetPost
 
+飞鱼为开发者提供网络电话的呼叫能力，该接口功能是为客服生成网络电话坐席token，前端电话工具条登陆坐席时需要用到该token。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueWebrtcTokenGetPostRequest
 */

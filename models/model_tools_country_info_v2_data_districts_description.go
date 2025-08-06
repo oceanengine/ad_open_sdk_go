@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsCountryInfoV2DataDistrictsDescription
+// ToolsCountryInfoV2DataDistrictsDescription  行政区域类型<br>`COUNTRY`表示国家<br>`STATE`表示国家<br>`REGION`表示区域
 type ToolsCountryInfoV2DataDistrictsDescription string
 
 // List of tools_country_info_v2_data_districts_description

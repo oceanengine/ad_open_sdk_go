@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialCreateV30MaterialListMaterialComponentAwemeAnchorAnchorType
+// BrandMaterialCreateV30MaterialListMaterialComponentAwemeAnchorAnchorType 锚点类型
 type BrandMaterialCreateV30MaterialListMaterialComponentAwemeAnchorAnchorType string
 
 // List of brand_material_create_v3.0_material_list_material_component_aweme_anchor_anchor_type

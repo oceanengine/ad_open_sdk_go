@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsBpAssetManagementShareV30DataErrorListAllAccountsByBp
+// ToolsBpAssetManagementShareV30DataErrorListAllAccountsByBp 组织内业务线
 type ToolsBpAssetManagementShareV30DataErrorListAllAccountsByBp string
 
 // List of tools_bp_asset_management_share_v3.0_data_error_list_all_accounts_by_bp

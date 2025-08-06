@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandToolQueryPublishPriceV30AudienceInfoDistrictInfoDistrictType
+// BrandToolQueryPublishPriceV30AudienceInfoDistrictInfoDistrictType 地域定向类型
 type BrandToolQueryPublishPriceV30AudienceInfoDistrictInfoDistrictType string
 
 // List of brand_tool_query_publish_price_v3.0_audience_info_district_info_district_type

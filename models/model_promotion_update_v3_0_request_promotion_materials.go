@@ -45,6 +45,8 @@ type PromotionUpdateV30RequestPromotionMaterials struct {
 	//
 	OpenUrls           []string                                                `json:"open_urls,omitempty"`
 	OriginalVideoTitle *PromotionUpdateV30PromotionMaterialsOriginalVideoTitle `json:"original_video_title,omitempty"`
+	// 种草搜索词素材
+	PlantGrassSearchWordMaterialList []*PromotionUpdateV30RequestPromotionMaterialsPlantGrassSearchWordMaterialListInner `json:"plant_grass_search_word_material_list,omitempty"`
 	//
 	PlayableUrlMaterialList []string `json:"playable_url_material_list,omitempty"`
 	//

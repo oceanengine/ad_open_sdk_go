@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsCluePrivateMessageCallbackPostRequest) WithLog(enable b
 /*
 OpenApi2ToolsCluePrivateMessageCallbackPost Method for OpenApi2ToolsCluePrivateMessageCallbackPost
 
+允许服务商、代理商、crm等回传私信线索转化数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsCluePrivateMessageCallbackPostRequest
 */

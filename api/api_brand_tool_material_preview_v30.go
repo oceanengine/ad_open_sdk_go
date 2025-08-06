@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30BrandToolMaterialPreviewGetRequest) WithLog(enable bool) *
 /*
 OpenApiV30BrandToolMaterialPreviewGet Method for OpenApiV30BrandToolMaterialPreviewGet
 
+获取预览二维码
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandToolMaterialPreviewGetRequest
 */

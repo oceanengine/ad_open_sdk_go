@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ServeMarketCidVerifyTokenV10DataCidCapacityStatus
+// ServeMarketCidVerifyTokenV10DataCidCapacityStatus 群峰服务商引流电商能力开通状态：3为开通状态，其他为未开通成功
 type ServeMarketCidVerifyTokenV10DataCidCapacityStatus int64
 
 // List of serve_market_cid_verify_token_v1.0_data_cid_capacity_status

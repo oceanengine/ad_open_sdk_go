@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ClueCouponEmployeeDeletePostRequest) WithLog(enable bool) *A
 /*
 OpenApi2ClueCouponEmployeeDeletePost Method for OpenApi2ClueCouponEmployeeDeletePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueCouponEmployeeDeletePostRequest
 */

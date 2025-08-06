@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanReportAdvertiserGetV10FilteringMarketingScene
+// QianchuanReportAdvertiserGetV10FilteringMarketingScene 广告类型，允许值： - `ALL` 全部 - `FEED` 通投广告 - `SEARCH` 搜索广告 SHOPPING_MALL：商城广告 注意：当order_platform = `ECP_AWEME` 下单平台为小店随心推时，不支持传入
 type QianchuanReportAdvertiserGetV10FilteringMarketingScene string
 
 // List of qianchuan_report_advertiser_get_v1.0_filtering_marketing_scene

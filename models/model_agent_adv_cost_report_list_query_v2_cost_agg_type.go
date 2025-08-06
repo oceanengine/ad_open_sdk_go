@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2CostAggType
+// AgentAdvCostReportListQueryV2CostAggType 汇总参数，目前只有一个值：DAY_AGG，代表按照日期时间段聚合，汇总后返回；如果不传，代表按照每天进行查询返回。
 type AgentAdvCostReportListQueryV2CostAggType string
 
 // List of agent_adv_cost_report_list_query_v2_cost_agg_type

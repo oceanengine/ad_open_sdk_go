@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandCampaignOperateV30Operate
+// BrandCampaignOperateV30Operate 广告组操作
 type BrandCampaignOperateV30Operate string
 
 // List of brand_campaign_operate_v3.0_operate

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreativeDetailGetV30DataCreativeVideoMaterialsDpaVideoTemplateType
+// CreativeDetailGetV30DataCreativeVideoMaterialsDpaVideoTemplateType 商品库视频生成类型
 type CreativeDetailGetV30DataCreativeVideoMaterialsDpaVideoTemplateType string
 
 // List of creative_detail_get_v3.0_data_creative_video_materials_dpa_video_template_type

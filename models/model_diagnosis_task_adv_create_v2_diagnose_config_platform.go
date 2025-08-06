@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DiagnosisTaskAdvCreateV2DiagnoseConfigPlatform
+// DiagnosisTaskAdvCreateV2DiagnoseConfigPlatform 投放平台
 type DiagnosisTaskAdvCreateV2DiagnoseConfigPlatform string
 
 // List of diagnosis_task_adv_create_v2_diagnose_config_platform

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListAdType
+// ToolsClueLifeGetV2DataListAdType 广告类型
 type ToolsClueLifeGetV2DataListAdType int64
 
 // List of tools_clue_life_get_v2_data_list_ad_type

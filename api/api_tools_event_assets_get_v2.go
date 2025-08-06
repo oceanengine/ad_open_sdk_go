@@ -88,6 +88,8 @@ func (r *ApiOpenApi2ToolsEventAssetsGetGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApi2ToolsEventAssetsGetGet Method for OpenApi2ToolsEventAssetsGetGet
 
+>查询广告主拥有的资产信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsEventAssetsGetGetRequest
 */

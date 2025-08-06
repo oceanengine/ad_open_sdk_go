@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ClueWechatInstanceUpdateV2Action
+// ClueWechatInstanceUpdateV2Action 操作
 type ClueWechatInstanceUpdateV2Action string
 
 // List of clue_wechat_instance_update_v2_action

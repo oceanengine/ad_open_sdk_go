@@ -76,6 +76,8 @@ func (r *ApiOpenApi2StarMcnProviderGetTaskAuthorListGetRequest) WithLog(enable b
 /*
 OpenApi2StarMcnProviderGetTaskAuthorListGet Method for OpenApi2StarMcnProviderGetTaskAuthorListGet
 
+星广服务商获取任务下的达人列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnProviderGetTaskAuthorListGetRequest
 */

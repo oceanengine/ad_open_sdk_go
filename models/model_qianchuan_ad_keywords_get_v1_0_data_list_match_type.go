@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAdKeywordsGetV10DataListMatchType
+// QianchuanAdKeywordsGetV10DataListMatchType 关键词匹配类型
 type QianchuanAdKeywordsGetV10DataListMatchType string
 
 // List of qianchuan_ad_keywords_get_v1.0_data_list_match_type

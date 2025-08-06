@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30AdType
+// LocalProjectCreateV30AdType 广告类型，允许值： - `GENERAL` 通投广告 - `SEARCHING` 搜索广告 -- 当marketing_goal=`VIDEO_IMAGE` 短视频/图文 && local_delivery_scene=`CONTENT_HEAT` 内容加热 时，不支持传入`SEARCHING`
 type LocalProjectCreateV30AdType string
 
 // List of local_project_create_v3.0_ad_type

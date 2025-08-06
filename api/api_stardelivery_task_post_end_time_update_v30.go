@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30StardeliveryTaskPostEndTimeUpdatePostRequest) WithLog(enab
 /*
 OpenApiV30StardeliveryTaskPostEndTimeUpdatePost Method for OpenApiV30StardeliveryTaskPostEndTimeUpdatePost
 
+更新星广联投任务截止时间
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30StardeliveryTaskPostEndTimeUpdatePostRequest
 */

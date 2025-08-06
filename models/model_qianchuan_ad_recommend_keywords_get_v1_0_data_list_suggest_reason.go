@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAdRecommendKeywordsGetV10DataListSuggestReason
+// QianchuanAdRecommendKeywordsGetV10DataListSuggestReason 推荐理由
 type QianchuanAdRecommendKeywordsGetV10DataListSuggestReason string
 
 // List of qianchuan_ad_recommend_keywords_get_v1.0_data_list_suggest_reason

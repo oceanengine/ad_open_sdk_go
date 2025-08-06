@@ -66,6 +66,8 @@ func (r *ApiOpenApiV30DouplusOptionalTargetsListGetRequest) WithLog(enable bool)
 /*
 OpenApiV30DouplusOptionalTargetsListGet Method for OpenApiV30DouplusOptionalTargetsListGet
 
+查询视频可投转化目标
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30DouplusOptionalTargetsListGetRequest
 */

@@ -76,6 +76,8 @@ func (r *ApiOpenApi2CampaignGetGetRequest) WithLog(enable bool) *ApiOpenApi2Camp
 /*
 OpenApi2CampaignGetGet Method for OpenApi2CampaignGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CampaignGetGetRequest
 */

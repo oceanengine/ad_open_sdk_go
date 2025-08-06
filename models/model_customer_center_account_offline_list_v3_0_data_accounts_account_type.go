@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CustomerCenterAccountOfflineListV30DataAccountsAccountType
+// CustomerCenterAccountOfflineListV30DataAccountsAccountType 账户类型，枚举值： - `QIANCHUAN` 巨量千川
 type CustomerCenterAccountOfflineListV30DataAccountsAccountType string
 
 // List of customer_center_account_offline_list_v3.0_data_accounts_account_type

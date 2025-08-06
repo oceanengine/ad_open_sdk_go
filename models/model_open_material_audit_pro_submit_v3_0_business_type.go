@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// OpenMaterialAuditProSubmitV30BusinessType
+// OpenMaterialAuditProSubmitV30BusinessType 业务类型，取值AD（巨量）|QIANCHUAN（千川）|LOCALLIFE（本地生活）
 type OpenMaterialAuditProSubmitV30BusinessType string
 
 // List of open_material_audit_pro_submit_v3.0_business_type

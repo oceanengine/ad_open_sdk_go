@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectUpdateV30AudienceDistrict
+// LocalProjectUpdateV30AudienceDistrict 地域类型
 type LocalProjectUpdateV30AudienceDistrict string
 
 // List of local_project_update_v3.0_audience_district

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30RecommendVideoListPostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30RecommendVideoListPost Method for OpenApiV30RecommendVideoListPost
 
+获取推荐素材视频
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30RecommendVideoListPostRequest
 */

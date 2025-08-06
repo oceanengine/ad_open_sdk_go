@@ -74,6 +74,8 @@ func (r *ApiOpenApi2StarReportDataTopicConfigGetRequest) WithLog(enable bool) *A
 /*
 OpenApi2StarReportDataTopicConfigGet Method for OpenApi2StarReportDataTopicConfigGet
 
+用于获取投后达人交付作品全量相关数据主题字段详情获取
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarReportDataTopicConfigGetRequest
 */

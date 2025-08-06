@@ -88,6 +88,8 @@ func (r *ApiOpenApi2ReportAudienceAwemeListGetRequest) WithLog(enable bool) *Api
 /*
 OpenApi2ReportAudienceAwemeListGet Method for OpenApi2ReportAudienceAwemeListGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportAudienceAwemeListGetRequest
 */

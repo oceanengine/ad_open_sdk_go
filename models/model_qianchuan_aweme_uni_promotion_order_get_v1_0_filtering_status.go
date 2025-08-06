@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeUniPromotionOrderGetV10FilteringStatus
+// QianchuanAwemeUniPromotionOrderGetV10FilteringStatus 订单状态过滤
 type QianchuanAwemeUniPromotionOrderGetV10FilteringStatus string
 
 // List of qianchuan_aweme_uni_promotion_order_get_v1.0_filtering_status

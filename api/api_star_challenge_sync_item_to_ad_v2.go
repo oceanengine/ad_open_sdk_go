@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarChallengeSyncItemToAdPostRequest) WithLog(enable bool) *
 /*
 OpenApi2StarChallengeSyncItemToAdPost Method for OpenApi2StarChallengeSyncItemToAdPost
 
+星图视频推送广告通用API
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarChallengeSyncItemToAdPostRequest
 */

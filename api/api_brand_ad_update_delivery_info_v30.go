@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandAdUpdateDeliveryInfoPostRequest) WithLog(enable bool)
 /*
 OpenApiV30BrandAdUpdateDeliveryInfoPost Method for OpenApiV30BrandAdUpdateDeliveryInfoPost
 
+编辑投放信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandAdUpdateDeliveryInfoPostRequest
 */

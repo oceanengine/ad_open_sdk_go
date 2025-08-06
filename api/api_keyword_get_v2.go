@@ -58,6 +58,8 @@ func (r *ApiOpenApi2KeywordGetGetRequest) WithLog(enable bool) *ApiOpenApi2Keywo
 /*
 OpenApi2KeywordGetGet Method for OpenApi2KeywordGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2KeywordGetGetRequest
 */

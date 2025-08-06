@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30DataProjectListProjectBudgetMode
+// LocalProjectListV30DataProjectListProjectBudgetMode 项目预算类型
 type LocalProjectListV30DataProjectListProjectBudgetMode string
 
 // List of local_project_list_v3.0_data_project_list_project_budget_mode

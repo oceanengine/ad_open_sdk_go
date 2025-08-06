@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AicVideoMixcutCreatePostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30AicVideoMixcutCreatePost Method for OpenApiV30AicVideoMixcutCreatePost
 
+输入视频原料、设定配置项（如制定字体、音乐），输出含ai脚本的视频成片
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AicVideoMixcutCreatePostRequest
 */

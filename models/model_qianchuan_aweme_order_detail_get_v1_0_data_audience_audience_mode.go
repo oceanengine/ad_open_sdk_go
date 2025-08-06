@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeOrderDetailGetV10DataAudienceAudienceMode
+// QianchuanAwemeOrderDetailGetV10DataAudienceAudienceMode 想吸引的观众类型
 type QianchuanAwemeOrderDetailGetV10DataAudienceAudienceMode string
 
 // List of qianchuan_aweme_order_detail_get_v1.0_data_audience_audience_mode

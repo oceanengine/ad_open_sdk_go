@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentQueryRiskPromotionListV2DataDataPromotionStatus
+// AgentQueryRiskPromotionListV2DataDataPromotionStatus 广告状态，同入参promotion_status枚举
 type AgentQueryRiskPromotionListV2DataDataPromotionStatus string
 
 // List of agent_query_risk_promotion_list_v2_data_data_promotion_status

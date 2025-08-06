@@ -64,6 +64,8 @@ func (r *ApiOpenApi2ToolsClueSmartPhoneGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ToolsClueSmartPhoneGetGet Method for OpenApi2ToolsClueSmartPhoneGetGet
 
+查询已有智能电话
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueSmartPhoneGetGetRequest
 */

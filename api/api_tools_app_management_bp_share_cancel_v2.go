@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsAppManagementBpShareCancelPostRequest) WithLog(enable b
 /*
 OpenApi2ToolsAppManagementBpShareCancelPost Method for OpenApi2ToolsAppManagementBpShareCancelPost
 
+取消应用共享 通过请求参数organization_id 巨量纵横组织id、package_id应用包id和share_mode 共享类型 取消应用共享。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementBpShareCancelPostRequest
 */

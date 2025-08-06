@@ -89,6 +89,8 @@ func (r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) WithLog(enable bool) 
 /*
 OpenApiV10QianchuanToolsAllowCouponGet Method for OpenApiV10QianchuanToolsAllowCouponGet
 
+https://bytedance.feishu.cn/wiki/F5LcwvkR5iC17MkfmWCc82BenCd
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanToolsAllowCouponGetRequest
 */

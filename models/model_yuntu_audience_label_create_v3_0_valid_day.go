@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// YuntuAudienceLabelCreateV30ValidDay
+// YuntuAudienceLabelCreateV30ValidDay 标签有效期。
 type YuntuAudienceLabelCreateV30ValidDay int64
 
 // List of yuntu_audience_label_create_v3.0_valid_day

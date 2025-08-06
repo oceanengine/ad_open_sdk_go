@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAdPivativewordsUpdateV10DataStatus
+// QianchuanAdPivativewordsUpdateV10DataStatus 修改状态
 type QianchuanAdPivativewordsUpdateV10DataStatus string
 
 // List of qianchuan_ad_pivativewords_update_v1.0_data_status

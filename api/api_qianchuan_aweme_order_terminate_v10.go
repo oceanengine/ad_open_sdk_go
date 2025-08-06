@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAwemeOrderTerminatePostRequest) WithLog(enable bo
 /*
 OpenApiV10QianchuanAwemeOrderTerminatePost Method for OpenApiV10QianchuanAwemeOrderTerminatePost
 
+该接口用于终止小店随心推订单
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeOrderTerminatePostRequest
 */

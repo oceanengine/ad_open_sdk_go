@@ -101,6 +101,8 @@ func (r *ApiOpenApi2FileVideoAgentPostRequest) WithLog(enable bool) *ApiOpenApi2
 /*
 OpenApi2FileVideoAgentPost Method for OpenApi2FileVideoAgentPost
 
+代理商可以通过此接口，上传视频素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileVideoAgentPostRequest
 */

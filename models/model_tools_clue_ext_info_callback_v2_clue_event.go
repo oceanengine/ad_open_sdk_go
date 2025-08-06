@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueExtInfoCallbackV2ClueEvent
+// ToolsClueExtInfoCallbackV2ClueEvent 线索事件
 type ToolsClueExtInfoCallbackV2ClueEvent int64
 
 // List of tools_clue_ext_info_callback_v2_clue_event

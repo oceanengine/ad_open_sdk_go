@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsPlayableSavePostRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2ToolsPlayableSavePost Method for OpenApi2ToolsPlayableSavePost
 
+上传并校验审核通过后，调用本接口保存试玩素材。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPlayableSavePostRequest
 */

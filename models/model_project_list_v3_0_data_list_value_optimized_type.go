@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectListV30DataListValueOptimizedType
+// ProjectListV30DataListValueOptimizedType 差异价值类型
 type ProjectListV30DataListValueOptimizedType string
 
 // List of project_list_v3.0_data_list_value_optimized_type

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AdvertiserDeliveryPkgConfigV30DataIndustryConfigUnnecessariesRulesType
+// AdvertiserDeliveryPkgConfigV30DataIndustryConfigUnnecessariesRulesType 规则的资质组成类型：1 组合资质 2 多选一资质
 type AdvertiserDeliveryPkgConfigV30DataIndustryConfigUnnecessariesRulesType string
 
 // List of advertiser_delivery_pkg_config_v3.0_data_industry_config_unnecessaries_rules_type

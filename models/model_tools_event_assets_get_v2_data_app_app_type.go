@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsEventAssetsGetV2DataAppAppType
+// ToolsEventAssetsGetV2DataAppAppType 应用类型
 type ToolsEventAssetsGetV2DataAppAppType string
 
 // List of tools_event_assets_get_v2_data_app_app_type

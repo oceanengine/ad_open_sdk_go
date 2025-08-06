@@ -116,6 +116,8 @@ func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) WithLog(enable boo
 /*
 OpenApiV10QianchuanReportAdvertiserGetGet Method for OpenApiV10QianchuanReportAdvertiserGetGet
 
+用于查询千川账户下标准推广投放账户维度聚合数据。仅支持传入账户类型为`QIANCHUAN`的账户；可通过get_tool_response_field_desc工具查询该工具支持的指标维度等信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest
 */

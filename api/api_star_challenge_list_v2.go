@@ -65,6 +65,8 @@ func (r *ApiOpenApi2StarChallengeListGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2StarChallengeListGet Method for OpenApi2StarChallengeListGet
 
+获取投稿任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarChallengeListGetRequest
 */

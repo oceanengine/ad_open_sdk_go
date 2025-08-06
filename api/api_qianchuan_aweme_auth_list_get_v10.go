@@ -71,6 +71,8 @@ func (r *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest) WithLog(enable bool) 
 /*
 OpenApiV10QianchuanAwemeAuthListGetGet Method for OpenApiV10QianchuanAwemeAuthListGetGet
 
+获取千川账户下已授权抖音号
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest
 */

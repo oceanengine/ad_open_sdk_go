@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsEventAllAssetsListV2DataAssetListAssetType
+// ToolsEventAllAssetsListV2DataAssetListAssetType 资产类型，允许值:`THIRD_EXTERNAL`:三方落地页,`TETRIS_EXTERNAL`:橙子落地页,`APP`:应用,`QUICK_APP`:快应用,`MINI_PROGRAME`:小程序
 type ToolsEventAllAssetsListV2DataAssetListAssetType string
 
 // List of tools_event_all_assets_list_v2_data_asset_list_asset_type

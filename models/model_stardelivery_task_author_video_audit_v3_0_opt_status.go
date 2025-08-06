@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StardeliveryTaskAuthorVideoAuditV30OptStatus
+// StardeliveryTaskAuthorVideoAuditV30OptStatus 审核操作状态，操作后不支持修改，需要达人重新投稿审核操作状态，操作后不支持修改，需要达人重新投稿 通过 PASS 拒绝 REJECT
 type StardeliveryTaskAuthorVideoAuditV30OptStatus string
 
 // List of stardelivery_task_author_video_audit_v3.0_opt_status

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DmpCustomAudiencePublishPostRequest) WithLog(enable bool) *A
 /*
 OpenApi2DmpCustomAudiencePublishPost Method for OpenApi2DmpCustomAudiencePublishPost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DmpCustomAudiencePublishPostRequest
 */

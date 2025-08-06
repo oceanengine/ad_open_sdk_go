@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30AudienceRegionLocationType
+// LocalProjectCreateV30AudienceRegionLocationType 区域内人群居住定向设置
 type LocalProjectCreateV30AudienceRegionLocationType string
 
 // List of local_project_create_v3.0_audience_region_location_type

@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ToolsClueRefundReportGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2ToolsClueRefundReportGetGet Method for OpenApi2ToolsClueRefundReportGetGet
 
+汇总统计按月的无效线索返款和呼叫话费返款。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueRefundReportGetGetRequest
 */

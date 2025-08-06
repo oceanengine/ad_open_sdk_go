@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30FilteringProjectStatusSecond
+// LocalProjectListV30FilteringProjectStatusSecond 项目二级状态筛选
 type LocalProjectListV30FilteringProjectStatusSecond string
 
 // List of local_project_list_v3.0_filtering_project_status_second

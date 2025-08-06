@@ -64,6 +64,8 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGetRe
 /*
 OpenApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGet Method for OpenApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGet
 
+获取随心推全域续费建议延长时长
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGetRequest
 */

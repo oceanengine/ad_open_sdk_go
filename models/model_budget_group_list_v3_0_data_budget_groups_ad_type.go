@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BudgetGroupListV30DataBudgetGroupsAdType
+// BudgetGroupListV30DataBudgetGroupsAdType 广告类型
 type BudgetGroupListV30DataBudgetGroupsAdType string
 
 // List of budget_group_list_v3.0_data_budget_groups_ad_type

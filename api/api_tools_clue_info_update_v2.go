@@ -52,6 +52,13 @@ func (r *ApiOpenApi2ToolsClueInfoUpdatePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ToolsClueInfoUpdatePost Method for OpenApi2ToolsClueInfoUpdatePost
 
+通过线索id更新线索基础信息，更新后的信息会在飞鱼平台展示。
+
+目前只针对白名单用户开放，有下面两个限制：
+
+1. 有 develop_id 的白名单
+2. 支持更新的线索key有限制
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueInfoUpdatePostRequest
 */

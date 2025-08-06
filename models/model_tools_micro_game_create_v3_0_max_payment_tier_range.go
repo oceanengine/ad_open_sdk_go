@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsMicroGameCreateV30MaxPaymentTierRange
+// ToolsMicroGameCreateV30MaxPaymentTierRange 最高付费档位区间（元）
 type ToolsMicroGameCreateV30MaxPaymentTierRange string
 
 // List of tools_micro_game_create_v3.0_max_payment_tier_range

@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ToolsVideoCoverSuggestGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ToolsVideoCoverSuggestGet Method for OpenApi2ToolsVideoCoverSuggestGet
 
+通过此接口，用户可以获取针对素材视频推荐的智能封面。智能封面是通过提取视频关键帧筛选出推荐封面，帮助发现视频内优质封面素材。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsVideoCoverSuggestGetRequest
 */

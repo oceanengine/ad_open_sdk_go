@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest) WithLog(enabl
 /*
 OpenApi2ToolsAppManagementBookingRecordsGetGet Method for OpenApi2ToolsAppManagementBookingRecordsGetGet
 
+查询应用预约记录接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest
 */

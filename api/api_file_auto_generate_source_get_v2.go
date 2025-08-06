@@ -58,6 +58,8 @@ func (r *ApiOpenApi2FileAutoGenerateSourceGetGetRequest) WithLog(enable bool) *A
 /*
 OpenApi2FileAutoGenerateSourceGetGet Method for OpenApi2FileAutoGenerateSourceGetGet
 
+获取派生素材的原始素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileAutoGenerateSourceGetGetRequest
 */

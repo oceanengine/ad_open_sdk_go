@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest) With
 /*
 OpenApi2ToolsAppManagementAndroidBasicPackageUpdatePost Method for OpenApi2ToolsAppManagementAndroidBasicPackageUpdatePost
 
+创建安卓应用母包「支持所有账户体系】
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest
 */

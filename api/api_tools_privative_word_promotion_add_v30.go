@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsPrivativeWordPromotionAddPostRequest) WithLog(enable 
 /*
 OpenApiV30ToolsPrivativeWordPromotionAddPost Method for OpenApiV30ToolsPrivativeWordPromotionAddPost
 
+批量新增广告否定词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsPrivativeWordPromotionAddPostRequest
 */

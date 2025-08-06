@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsAdStockInfosAdForm
+// BrandAdGetV30DataAdsAdStockInfosAdForm 产品类型
 type BrandAdGetV30DataAdsAdStockInfosAdForm int64
 
 // List of brand_ad_get_v3.0_data_ads_ad_stock_infos_ad_form

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderListV30DataOrdersAdForm
+// BrandOrderListV30DataOrdersAdForm 投放产品
 type BrandOrderListV30DataOrdersAdForm string
 
 // List of brand_order_list_v3.0_data_orders_ad_form

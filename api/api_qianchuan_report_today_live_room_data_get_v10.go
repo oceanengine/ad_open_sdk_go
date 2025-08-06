@@ -108,6 +108,8 @@ func (r *ApiOpenApiV10QianchuanReportTodayLiveRoomDataGetGetRequest) WithLog(ena
 /*
 OpenApiV10QianchuanReportTodayLiveRoomDataGetGet Method for OpenApiV10QianchuanReportTodayLiveRoomDataGetGet
 
+获取直播大屏数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanReportTodayLiveRoomDataGetGetRequest
 */

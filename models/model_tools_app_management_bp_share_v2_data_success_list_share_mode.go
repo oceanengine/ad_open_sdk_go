@@ -16,8 +16,8 @@ type ToolsAppManagementBpShareV2DataSuccessListShareMode string
 // List of tools_app_management_bp_share_v2_data_success_list_share_mode
 const (
 	ALL_ToolsAppManagementBpShareV2DataSuccessListShareMode     ToolsAppManagementBpShareV2DataSuccessListShareMode = "ALL"
-	COMPANY_ToolsAppManagementBpShareV2DataSuccessListShareMode ToolsAppManagementBpShareV2DataSuccessListShareMode = "COMPANY"
 	PART_ToolsAppManagementBpShareV2DataSuccessListShareMode    ToolsAppManagementBpShareV2DataSuccessListShareMode = "PART"
+	COMPANY_ToolsAppManagementBpShareV2DataSuccessListShareMode ToolsAppManagementBpShareV2DataSuccessListShareMode = "COMPANY"
 )
 
 // Ptr returns reference to tools_app_management_bp_share_v2_data_success_list_share_mode value

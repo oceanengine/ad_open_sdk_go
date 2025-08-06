@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SharedWalletTransactionDetailGetV30DataResultsBizType
+// SharedWalletTransactionDetailGetV30DataResultsBizType 流水类型(充值、退款等)
 type SharedWalletTransactionDetailGetV30DataResultsBizType string
 
 // List of shared_wallet_transaction_detail_get_v3.0_data_results_biz_type

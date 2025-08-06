@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAwemeOrderBudgetAddPostRequest) WithLog(enable bo
 /*
 OpenApiV10QianchuanAwemeOrderBudgetAddPost Method for OpenApiV10QianchuanAwemeOrderBudgetAddPost
 
+可以使用该接口进行投放中订单的续费和续期操作
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeOrderBudgetAddPostRequest
 */

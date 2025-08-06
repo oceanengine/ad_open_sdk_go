@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialCreateV30ContentType
+// BrandMaterialCreateV30ContentType 投放内容
 type BrandMaterialCreateV30ContentType string
 
 // List of brand_material_create_v3.0_content_type

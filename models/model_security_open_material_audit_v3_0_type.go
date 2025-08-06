@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SecurityOpenMaterialAuditV30Type
+// SecurityOpenMaterialAuditV30Type 目前只开放 VIDEO 类型
 type SecurityOpenMaterialAuditV30Type string
 
 // List of security_open_material_audit_v3.0_type

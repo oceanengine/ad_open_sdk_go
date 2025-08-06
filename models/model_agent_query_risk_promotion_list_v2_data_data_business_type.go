@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentQueryRiskPromotionListV2DataDataBusinessType
+// AgentQueryRiskPromotionListV2DataDataBusinessType 业务线，同入参business_type枚举
 type AgentQueryRiskPromotionListV2DataDataBusinessType string
 
 // List of agent_query_risk_promotion_list_v2_data_data_business_type

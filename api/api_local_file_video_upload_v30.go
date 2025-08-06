@@ -72,6 +72,8 @@ func (r *ApiOpenApiV30LocalFileVideoUploadPostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30LocalFileVideoUploadPost Method for OpenApiV30LocalFileVideoUploadPost
 
+上传视频
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalFileVideoUploadPostRequest
 */

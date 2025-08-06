@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAdKeywordsGetV10DataListStatus
+// QianchuanAdKeywordsGetV10DataListStatus 关键词状态
 type QianchuanAdKeywordsGetV10DataListStatus string
 
 // List of qianchuan_ad_keywords_get_v1.0_data_list_status

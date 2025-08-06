@@ -59,6 +59,8 @@ func (r *ApiOpenApiV30LocalProjectDetailGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30LocalProjectDetailGet Method for OpenApiV30LocalProjectDetailGet
 
+项目详情接口，返回项目各种设置详情信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalProjectDetailGetRequest
 */

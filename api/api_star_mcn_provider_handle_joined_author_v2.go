@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarMcnProviderHandleJoinedAuthorPostRequest) WithLog(enable
 /*
 OpenApi2StarMcnProviderHandleJoinedAuthorPost Method for OpenApi2StarMcnProviderHandleJoinedAuthorPost
 
+星广服务商审核达人
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnProviderHandleJoinedAuthorPostRequest
 */

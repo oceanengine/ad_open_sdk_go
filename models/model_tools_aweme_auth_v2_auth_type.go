@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAwemeAuthV2AuthType
+// ToolsAwemeAuthV2AuthType 授权等级
 type ToolsAwemeAuthV2AuthType string
 
 // List of tools_aweme_auth_v2_auth_type

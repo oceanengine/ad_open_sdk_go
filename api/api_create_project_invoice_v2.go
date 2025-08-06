@@ -52,6 +52,8 @@ func (r *ApiOpenApi2CreateProjectInvoicePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2CreateProjectInvoicePost Method for OpenApi2CreateProjectInvoicePost
 
+创建项目开票接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CreateProjectInvoicePostRequest
 */

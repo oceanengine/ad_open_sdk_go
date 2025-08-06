@@ -87,6 +87,8 @@ func (r *ApiOpenApi2StarDemanderDemanderGetAuthorBindInfoGetRequest) WithLog(ena
 /*
 OpenApi2StarDemanderDemanderGetAuthorBindInfoGet Method for OpenApi2StarDemanderDemanderGetAuthorBindInfoGet
 
+查询客户阵地达人绑定的星图账号信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemanderDemanderGetAuthorBindInfoGetRequest
 */

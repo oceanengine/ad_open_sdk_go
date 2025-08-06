@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectCreateV30AudienceDpaRtaSwitch
+// ProjectCreateV30AudienceDpaRtaSwitch RTA重定向开关， 默认值：OFF 允许值：OFF，ON（OFF表示不启用，ON表示启用） 启用后，需通过【设置账户下RTA策略生效范围-工具-商业开放平台】绑定rta策略
 type ProjectCreateV30AudienceDpaRtaSwitch string
 
 // List of project_create_v3.0_audience_dpa_rta_switch

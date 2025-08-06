@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAbTestInfoGetV2DataStatus
+// ToolsAbTestInfoGetV2DataStatus 实验状态，`\"CREATED\"`：排期中，`\"PROCESSING\"`：进行中，`\"FINISH\"`：结束，`\"FAILED\"`：不满足实验条件。
 type ToolsAbTestInfoGetV2DataStatus string
 
 // List of tools_ab_test_info_get_v2_data_status

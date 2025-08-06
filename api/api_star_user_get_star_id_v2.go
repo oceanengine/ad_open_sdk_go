@@ -60,6 +60,8 @@ func (r *ApiOpenApi2StarUserGetStarIdGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2StarUserGetStarIdGet Method for OpenApi2StarUserGetStarIdGet
 
+用于抖音uid回查星图uid
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarUserGetStarIdGetRequest
 */

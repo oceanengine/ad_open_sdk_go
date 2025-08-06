@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// NativeAnchorGetDetailV30DataListInsuranceEnterpriseAnchorConversionBtn
+// NativeAnchorGetDetailV30DataListInsuranceEnterpriseAnchorConversionBtn 转化按钮，仅支持1个枚举
 type NativeAnchorGetDetailV30DataListInsuranceEnterpriseAnchorConversionBtn string
 
 // List of native_anchor_get_detail_v3.0_data_list_insurance_enterprise_anchor_conversion_btn

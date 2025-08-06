@@ -111,6 +111,8 @@ func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) WithLog(enable bool)
 /*
 OpenApiV30EventManagerDeepBidTypeGetGet Method for OpenApiV30EventManagerDeepBidTypeGetGet
 
+投放2.0获取可用深度优化方式
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest
 */

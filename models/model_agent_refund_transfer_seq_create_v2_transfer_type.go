@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentRefundTransferSeqCreateV2TransferType
+// AgentRefundTransferSeqCreateV2TransferType 转账类型
 type AgentRefundTransferSeqCreateV2TransferType string
 
 // List of agent_refund_transfer_seq_create_v2_transfer_type

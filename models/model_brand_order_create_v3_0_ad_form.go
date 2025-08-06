@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderCreateV30AdForm
+// BrandOrderCreateV30AdForm 投放产品
 type BrandOrderCreateV30AdForm string
 
 // List of brand_order_create_v3.0_ad_form

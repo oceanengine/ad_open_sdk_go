@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectListV30DataListMultiAssetType
+// ProjectListV30DataListMultiAssetType 多链路优选
 type ProjectListV30DataListMultiAssetType string
 
 // List of project_list_v3.0_data_list_multi_asset_type

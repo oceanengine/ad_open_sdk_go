@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30LocalCxtBudgetUpdatePostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30LocalCxtBudgetUpdatePost Method for OpenApiV30LocalCxtBudgetUpdatePost
 
+修改持续投每日预算
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalCxtBudgetUpdatePostRequest
 */

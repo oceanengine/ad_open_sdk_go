@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState
+// ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState 线索的后效转化状态
 type ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState string
 
 // List of tools_clue_private_message_callback_v2_clue_convert_info_clue_convert_state

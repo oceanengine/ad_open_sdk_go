@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy
+// ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy 策略
 type ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy string
 
 // List of tools_hot_material_derive_get_v3.0_data_task_details_derive_materials_strategy_detail_strategy
@@ -21,6 +21,7 @@ const (
 	HOT_PRE_VIDEO_ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy                    ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy = "HOT_PRE_VIDEO"
 	MIX_CUT_ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy                          ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy = "MIX_CUT"
 	PRE_VIDEO_CLIP_REPLACE_ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy           ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy = "PRE_VIDEO_CLIP_REPLACE"
+	RAW_MATERIAL_REPLACE_ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy             ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy = "RAW_MATERIAL_REPLACE"
 	ROBOT_REPLACE_ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy                    ToolsHotMaterialDeriveGetV30DataTaskDetailsDeriveMaterialsStrategyDetailStrategy = "ROBOT_REPLACE"
 )
 

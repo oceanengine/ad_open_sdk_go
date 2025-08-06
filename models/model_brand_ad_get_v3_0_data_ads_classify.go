@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsClassify
+// BrandAdGetV30DataAdsClassify 广告计划分类
 type BrandAdGetV30DataAdsClassify int64
 
 // List of brand_ad_get_v3.0_data_ads_classify

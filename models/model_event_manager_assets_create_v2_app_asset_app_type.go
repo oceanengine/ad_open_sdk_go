@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// EventManagerAssetsCreateV2AppAssetAppType
+// EventManagerAssetsCreateV2AppAssetAppType 应用类型，允许值：IOS、Android
 type EventManagerAssetsCreateV2AppAssetAppType string
 
 // List of event_manager_assets_create_v2_app_asset_app_type

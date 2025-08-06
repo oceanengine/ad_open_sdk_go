@@ -88,6 +88,8 @@ func (r *ApiOpenApi2DiagnosisTaskAdvListGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2DiagnosisTaskAdvListGet Method for OpenApi2DiagnosisTaskAdvListGet
 
+Adv获取前测任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DiagnosisTaskAdvListGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanLqAdGetV10FilteringMarketingScene
+// QianchuanLqAdGetV10FilteringMarketingScene * ALL:全部  * FEED:通投广告  默认值 * SEARC: 搜索广告
 type QianchuanLqAdGetV10FilteringMarketingScene string
 
 // List of qianchuan_lq_ad_get_v1.0_filtering_marketing_scene

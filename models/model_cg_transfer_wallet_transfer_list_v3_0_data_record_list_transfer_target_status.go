@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CgTransferWalletTransferListV30DataRecordListTransferTargetStatus
+// CgTransferWalletTransferListV30DataRecordListTransferTargetStatus 加款方-减款方间转账状态
 type CgTransferWalletTransferListV30DataRecordListTransferTargetStatus string
 
 // List of cg_transfer_wallet_transfer_list_v3.0_data_record_list_transfer_target_status

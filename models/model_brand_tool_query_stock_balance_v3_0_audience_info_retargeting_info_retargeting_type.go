@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandToolQueryStockBalanceV30AudienceInfoRetargetingInfoRetargetingType
+// BrandToolQueryStockBalanceV30AudienceInfoRetargetingInfoRetargetingType 人群包类型，定向排除
 type BrandToolQueryStockBalanceV30AudienceInfoRetargetingInfoRetargetingType string
 
 // List of brand_tool_query_stock_balance_v3.0_audience_info_retargeting_info_retargeting_type

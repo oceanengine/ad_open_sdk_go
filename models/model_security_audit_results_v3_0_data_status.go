@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SecurityAuditResultsV30DataStatus
+// SecurityAuditResultsV30DataStatus 审核状态
 type SecurityAuditResultsV30DataStatus string
 
 // List of security_audit_results_v3.0_data_status

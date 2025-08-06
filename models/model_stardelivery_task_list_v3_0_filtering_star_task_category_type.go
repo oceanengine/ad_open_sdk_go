@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StardeliveryTaskListV30FilteringStarTaskCategoryType
+// StardeliveryTaskListV30FilteringStarTaskCategoryType 星广行业，枚举值： COMPASS 短剧 GAME 游戏
 type StardeliveryTaskListV30FilteringStarTaskCategoryType string
 
 // List of stardelivery_task_list_v3.0_filtering_star_task_category_type

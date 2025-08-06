@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarDemandListV2DataListComponentType
+// StarDemandListV2DataListComponentType 组件类型
 type StarDemandListV2DataListComponentType string
 
 // List of star_demand_list_v2_data_list_component_type

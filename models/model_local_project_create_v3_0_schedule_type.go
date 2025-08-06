@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30ScheduleType
+// LocalProjectCreateV30ScheduleType 投放日期类型设置
 type LocalProjectCreateV30ScheduleType string
 
 // List of local_project_create_v3.0_schedule_type

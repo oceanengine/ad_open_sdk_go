@@ -64,6 +64,8 @@ func (r *ApiOpenApiV10QianchuanToolsGrayGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV10QianchuanToolsGrayGet Method for OpenApiV10QianchuanToolsGrayGet
 
+- 需求文档：https://bytedance.feishu.cn/wiki/wikcnzdnNkJC4qmlmA3SuU4v05d - 开发：邓博 - PM：包宏权
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanToolsGrayGetRequest
 */

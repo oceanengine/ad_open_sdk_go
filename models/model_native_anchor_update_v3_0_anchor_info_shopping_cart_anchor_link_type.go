@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// NativeAnchorUpdateV30AnchorInfoShoppingCartAnchorLinkType
+// NativeAnchorUpdateV30AnchorInfoShoppingCartAnchorLinkType 跳转类型，枚举值一跳：ONE_JUMP、二跳：TWO_JUMP
 type NativeAnchorUpdateV30AnchorInfoShoppingCartAnchorLinkType string
 
 // List of native_anchor_update_v3.0_anchor_info_shopping_cart_anchor_link_type

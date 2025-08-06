@@ -64,6 +64,8 @@ func (r *ApiOpenApi2StarMcnProviderGetTaskShareCodeGetRequest) WithLog(enable bo
 /*
 OpenApi2StarMcnProviderGetTaskShareCodeGet Method for OpenApi2StarMcnProviderGetTaskShareCodeGet
 
+服务商获取任务分享口令码，用于分发任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnProviderGetTaskShareCodeGetRequest
 */

@@ -109,6 +109,8 @@ func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2DiagnosisTaskAgentListGet Method for OpenApi2DiagnosisTaskAgentListGet
 
+代理商获取前测任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DiagnosisTaskAgentListGetRequest
 */

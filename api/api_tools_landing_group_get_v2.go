@@ -70,6 +70,8 @@ func (r *ApiOpenApi2ToolsLandingGroupGetGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ToolsLandingGroupGetGet Method for OpenApi2ToolsLandingGroupGetGet
 
+通过此接口，用户可以获取落地页组以及站点的基本信息。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsLandingGroupGetGetRequest
 */

@@ -60,6 +60,8 @@ func (r *ApiOpenApi2StarOrderGetCancelAmountGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2StarOrderGetCancelAmountGet Method for OpenApi2StarOrderGetCancelAmountGet
 
+获取任务取消赔付金额
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarOrderGetCancelAmountGetRequest
 */

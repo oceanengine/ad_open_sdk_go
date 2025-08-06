@@ -14,9 +14,11 @@ package models
 type ToolsHotMaterialDeriveSubmitV30Request struct {
 	//
 	AdvertiserId int64 `json:"advertiser_id"`
-	// 优先黑名单
+	//
+	ElementIds []int64 `json:"element_ids,omitempty"`
+	//
 	ExcludeStrategies []*ToolsHotMaterialDeriveSubmitV30ExcludeStrategies `json:"exclude_strategies,omitempty"`
-	// 拦截 1. 消耗过滤  2.低质、低效素材
+	//
 	MaterialIds []int64 `json:"material_ids"`
 	//
 	Strategies []*ToolsHotMaterialDeriveSubmitV30Strategies `json:"strategies,omitempty"`

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandCustomAudienceListV30DataAudiencePackageListCategory
+// BrandCustomAudienceListV30DataAudiencePackageListCategory 人群包类型
 type BrandCustomAudienceListV30DataAudiencePackageListCategory string
 
 // List of brand_custom_audience_list_v3.0_data_audience_package_list_category

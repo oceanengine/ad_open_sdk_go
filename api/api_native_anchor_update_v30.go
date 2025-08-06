@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30NativeAnchorUpdatePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30NativeAnchorUpdatePost Method for OpenApiV30NativeAnchorUpdatePost
 
+更新原生锚点
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30NativeAnchorUpdatePostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementAndroidBasicPackageUpdateV2PaymentType
+// ToolsAppManagementAndroidBasicPackageUpdateV2PaymentType 付费类型
 type ToolsAppManagementAndroidBasicPackageUpdateV2PaymentType string
 
 // List of tools_app_management_android_basic_package_update_v2_payment_type

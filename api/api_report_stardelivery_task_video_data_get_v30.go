@@ -106,6 +106,8 @@ func (r *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest) WithLog(enab
 /*
 OpenApiV30ReportStardeliveryTaskVideoDataGetGet Method for OpenApiV30ReportStardeliveryTaskVideoDataGetGet
 
+会返回所有产生了投后数据的视频数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest
 */

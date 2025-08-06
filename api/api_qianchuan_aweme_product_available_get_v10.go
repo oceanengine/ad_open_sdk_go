@@ -64,6 +64,8 @@ func (r *ApiOpenApiV10QianchuanAwemeProductAvailableGetGetRequest) WithLog(enabl
 /*
 OpenApiV10QianchuanAwemeProductAvailableGetGet Method for OpenApiV10QianchuanAwemeProductAvailableGetGet
 
+获取达人角色的商品列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeProductAvailableGetGetRequest
 */

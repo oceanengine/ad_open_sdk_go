@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsTaskRaiseGetV2DataReportsRaiseMode
+// ToolsTaskRaiseGetV2DataReportsRaiseMode 起量模式
 type ToolsTaskRaiseGetV2DataReportsRaiseMode string
 
 // List of tools_task_raise_get_v2_data_reports_raise_mode

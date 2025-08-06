@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandOrderCancelDeletePostRequest) WithLog(enable bool) *A
 /*
 OpenApiV30BrandOrderCancelDeletePost Method for OpenApiV30BrandOrderCancelDeletePost
 
+AD品牌2.0取消删除预订单
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandOrderCancelDeletePostRequest
 */

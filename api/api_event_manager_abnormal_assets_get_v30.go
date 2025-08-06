@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest) WithLog(enable bo
 /*
 OpenApiV30EventManagerAbnormalAssetsGetGet Method for OpenApiV30EventManagerAbnormalAssetsGetGet
 
+此接口用于查询事件管理异常的应用类资产信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FilePreauditSubmitV30MaterialChannel
+// FilePreauditSubmitV30MaterialChannel 素材业务线
 type FilePreauditSubmitV30MaterialChannel string
 
 // List of file_preaudit_submit_v3.0_material_channel

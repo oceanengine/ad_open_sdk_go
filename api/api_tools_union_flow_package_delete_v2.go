@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsUnionFlowPackageDeletePostRequest) WithLog(enable bool)
 /*
 OpenApi2ToolsUnionFlowPackageDeletePost Method for OpenApi2ToolsUnionFlowPackageDeletePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsUnionFlowPackageDeletePostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsSiteTemplateSiteCreateV2BricksButtonLinkEventLinkLinkType
+// ToolsSiteTemplateSiteCreateV2BricksButtonLinkEventLinkLinkType 链接类型，当图片跳转链接信息不为空时，必填
 type ToolsSiteTemplateSiteCreateV2BricksButtonLinkEventLinkLinkType string
 
 // List of tools_site_template_site_create_v2_bricks_button_link_event_link_link_type

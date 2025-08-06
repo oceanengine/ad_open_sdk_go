@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementAndroidBasicPackageGetV2DataCurrentVersionStatus
+// ToolsAppManagementAndroidBasicPackageGetV2DataCurrentVersionStatus 版本状态
 type ToolsAppManagementAndroidBasicPackageGetV2DataCurrentVersionStatus string
 
 // List of tools_app_management_android_basic_package_get_v2_data_current_version_status

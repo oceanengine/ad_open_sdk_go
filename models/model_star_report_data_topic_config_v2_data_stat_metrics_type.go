@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarReportDataTopicConfigV2DataStatMetricsType
+// StarReportDataTopicConfigV2DataStatMetricsType 指标数据类型： STRING、 INT64、 FLOAT64、 JSON
 type StarReportDataTopicConfigV2DataStatMetricsType string
 
 // List of star_report_data_topic_config_v2_data_stat_metrics_type

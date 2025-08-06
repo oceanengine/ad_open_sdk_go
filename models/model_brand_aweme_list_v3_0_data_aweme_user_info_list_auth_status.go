@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAwemeListV30DataAwemeUserInfoListAuthStatus
+// BrandAwemeListV30DataAwemeUserInfoListAuthStatus 状态
 type BrandAwemeListV30DataAwemeUserInfoListAuthStatus string
 
 // List of brand_aweme_list_v3.0_data_aweme_user_info_list_auth_status

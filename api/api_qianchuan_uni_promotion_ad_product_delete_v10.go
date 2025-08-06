@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdProductDeletePostRequest) WithLog(e
 /*
 OpenApiV10QianchuanUniPromotionAdProductDeletePost Method for OpenApiV10QianchuanUniPromotionAdProductDeletePost
 
+删除全域计划下商品
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionAdProductDeletePostRequest
 */

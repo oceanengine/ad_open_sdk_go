@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeAuthorizedGetV10DataAwemeIdListAwemeStatus
+// QianchuanAwemeAuthorizedGetV10DataAwemeIdListAwemeStatus 抖音号带货状态，枚举值： - `NORMAL` 可以正常投放 -`ANCHOR_FORBID` 带货口碑分过低，暂时无法创建计划 -`ANCHOR_REACH_UPPER_LIMIT_TODAY` 带货分过低或暂无带货分，可以创建计划，但无法产生消耗，带货分恢复正常后可正常消耗
 type QianchuanAwemeAuthorizedGetV10DataAwemeIdListAwemeStatus string
 
 // List of qianchuan_aweme_authorized_get_v1.0_data_aweme_id_list_aweme_status

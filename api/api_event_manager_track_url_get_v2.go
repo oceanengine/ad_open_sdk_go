@@ -95,6 +95,8 @@ func (r *ApiOpenApi2EventManagerTrackUrlGetGetRequest) WithLog(enable bool) *Api
 /*
 OpenApi2EventManagerTrackUrlGetGet Method for OpenApi2EventManagerTrackUrlGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EventManagerTrackUrlGetGetRequest
 */

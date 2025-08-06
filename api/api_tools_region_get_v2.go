@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsRegionGetGetRequest) WithLog(enable bool) *ApiOpenApi2T
 /*
 OpenApi2ToolsRegionGetGet Method for OpenApi2ToolsRegionGetGet
 
+获取地域列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsRegionGetGetRequest
 */

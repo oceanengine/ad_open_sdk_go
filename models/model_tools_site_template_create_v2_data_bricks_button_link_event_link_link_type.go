@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsSiteTemplateCreateV2DataBricksButtonLinkEventLinkLinkType
+// ToolsSiteTemplateCreateV2DataBricksButtonLinkEventLinkLinkType 链接类型，当`link`不为空时，有值
 type ToolsSiteTemplateCreateV2DataBricksButtonLinkEventLinkLinkType string
 
 // List of tools_site_template_create_v2_data_bricks_button_link_event_link_link_type

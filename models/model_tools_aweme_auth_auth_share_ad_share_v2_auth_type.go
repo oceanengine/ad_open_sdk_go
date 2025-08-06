@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAwemeAuthAuthShareAdShareV2AuthType
+// ToolsAwemeAuthAuthShareAdShareV2AuthType 授权类型，允许值： AWEME_ACCOUNT 抖音号授权 LIVE_ACCOUNT 直播授权 VIDEO_ITEM  单视频授权
 type ToolsAwemeAuthAuthShareAdShareV2AuthType string
 
 // List of tools_aweme_auth_auth_share_ad_share_v2_auth_type

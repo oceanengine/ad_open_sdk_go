@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsHotMaterialDeriveSubmitPostRequest) WithLog(enable bo
 /*
 OpenApiV30ToolsHotMaterialDeriveSubmitPost Method for OpenApiV30ToolsHotMaterialDeriveSubmitPost
 
+提交爆款裂变任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsHotMaterialDeriveSubmitPostRequest
 */

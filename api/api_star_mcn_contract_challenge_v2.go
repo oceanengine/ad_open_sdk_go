@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarMcnContractChallengePostRequest) WithLog(enable bool) *A
 /*
 OpenApi2StarMcnContractChallengePost Method for OpenApi2StarMcnContractChallengePost
 
+机构承包-传入任务分佣比例及接收任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnContractChallengePostRequest
 */

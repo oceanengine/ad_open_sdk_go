@@ -81,6 +81,8 @@ func (r *ApiOpenApiV30LocalPoiGetGetRequest) WithLog(enable bool) *ApiOpenApiV30
 /*
 OpenApiV30LocalPoiGetGet Method for OpenApiV30LocalPoiGetGet
 
+获取门店列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalPoiGetGetRequest
 */

@@ -12,6 +12,8 @@ package models
 
 // ToolsHotMaterialDeriveGetV30ResponseDataTaskDetailsInnerDeriveMaterialsInner struct for ToolsHotMaterialDeriveGetV30ResponseDataTaskDetailsInnerDeriveMaterialsInner
 type ToolsHotMaterialDeriveGetV30ResponseDataTaskDetailsInnerDeriveMaterialsInner struct {
+	//
+	PreVideoUrl    *string                                                                                    `json:"pre_video_url,omitempty"`
 	StrategyDetail ToolsHotMaterialDeriveGetV30ResponseDataTaskDetailsInnerDeriveMaterialsInnerStrategyDetail `json:"strategy_detail"`
 	//
 	Title string `json:"title"`

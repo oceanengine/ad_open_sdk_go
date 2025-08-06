@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderCreatePostRequest) WithLog(
 /*
 OpenApiV10QianchuanAwemeUniPromotionOrderCreatePost Method for OpenApiV10QianchuanAwemeUniPromotionOrderCreatePost
 
+	创建随心推全域订单
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeUniPromotionOrderCreatePostRequest
 */

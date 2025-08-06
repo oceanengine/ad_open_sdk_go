@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ToolsClueRefundViewGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ToolsClueRefundViewGetGet Method for OpenApi2ToolsClueRefundViewGetGet
 
+飞鱼提供前端SDK帮助开发者接入返款视图，开发者可通过该接口获取对应线索id的返款视图相关内容，并将全量数据传入飞鱼提供的SDK做渲染
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueRefundViewGetGetRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2EventManagerAssetsCreatePostRequest) WithLog(enable bool) *A
 /*
 OpenApi2EventManagerAssetsCreatePost Method for OpenApi2EventManagerAssetsCreatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EventManagerAssetsCreatePostRequest
 */

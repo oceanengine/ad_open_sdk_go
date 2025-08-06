@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsAudienceInfoDistrictType
+// BrandAdGetV30DataAdsAudienceInfoDistrictType 地域类型
 type BrandAdGetV30DataAdsAudienceInfoDistrictType int64
 
 // List of brand_ad_get_v3.0_data_ads_audience_info_district_type

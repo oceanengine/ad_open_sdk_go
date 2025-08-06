@@ -73,6 +73,8 @@ func (r *ApiOpenApi2StarReportCustomDataTopicReportGetRequest) WithLog(enable bo
 /*
 OpenApi2StarReportCustomDataTopicReportGet Method for OpenApi2StarReportCustomDataTopicReportGet
 
+用于获取累计数据主题对应指标的数据的获取
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarReportCustomDataTopicReportGetRequest
 */

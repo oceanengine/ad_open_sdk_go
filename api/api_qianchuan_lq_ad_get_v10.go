@@ -60,6 +60,8 @@ func (r *ApiOpenApiV10QianchuanLqAdGetGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV10QianchuanLqAdGetGet Method for OpenApiV10QianchuanLqAdGetGet
 
+用于获取千川广告账户下的低质计划信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanLqAdGetGetRequest
 */

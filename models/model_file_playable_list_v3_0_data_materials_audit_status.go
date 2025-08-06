@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FilePlayableListV30DataMaterialsAuditStatus
+// FilePlayableListV30DataMaterialsAuditStatus 审核状态
 type FilePlayableListV30DataMaterialsAuditStatus string
 
 // List of file_playable_list_v3.0_data_materials_audit_status

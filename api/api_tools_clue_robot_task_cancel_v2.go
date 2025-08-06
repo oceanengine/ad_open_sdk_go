@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueRobotTaskCancelPostRequest) WithLog(enable bool) *A
 /*
 OpenApi2ToolsClueRobotTaskCancelPost Method for OpenApi2ToolsClueRobotTaskCancelPost
 
+取消机器人任务。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueRobotTaskCancelPostRequest
 */

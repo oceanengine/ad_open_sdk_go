@@ -70,6 +70,10 @@ func (r *ApiOpenApiV10QianchuanVideoGetGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV10QianchuanVideoGetGet Method for OpenApiV10QianchuanVideoGetGet
 
+- 需求文档：https://bytedance.feishu.cn/wiki/wikcnpPjYhvlMg6cV7xZPypDgHg
+- 开发：郭丰瑞
+- PM：朱颖波
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanVideoGetGetRequest
 */

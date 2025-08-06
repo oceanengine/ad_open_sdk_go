@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsBpAssetManagementShareV30AccountInfosAccountType
+// ToolsBpAssetManagementShareV30AccountInfosAccountType 账户类型
 type ToolsBpAssetManagementShareV30AccountInfosAccountType string
 
 // List of tools_bp_asset_management_share_v3.0_account_infos_account_type

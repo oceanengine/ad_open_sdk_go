@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DiagnosisTaskAgentCreateV2DiagnoseConfigPricingType
+// DiagnosisTaskAgentCreateV2DiagnoseConfigPricingType 计费方式（仅AD支持）
 type DiagnosisTaskAgentCreateV2DiagnoseConfigPricingType string
 
 // List of diagnosis_task_agent_create_v2_diagnose_config_pricing_type

@@ -64,6 +64,8 @@ func (r *ApiOpenApiV30AccountFundGetGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30AccountFundGetGet Method for OpenApiV30AccountFundGetGet
 
+查询账号余额
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AccountFundGetGetRequest
 */

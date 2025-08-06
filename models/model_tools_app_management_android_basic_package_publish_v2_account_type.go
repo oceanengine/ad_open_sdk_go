@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementAndroidBasicPackagePublishV2AccountType
+// ToolsAppManagementAndroidBasicPackagePublishV2AccountType 账号类型
 type ToolsAppManagementAndroidBasicPackagePublishV2AccountType string
 
 // List of tools_app_management_android_basic_package_publish_v2_account_type

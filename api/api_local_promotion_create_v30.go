@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30LocalPromotionCreatePostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30LocalPromotionCreatePost Method for OpenApiV30LocalPromotionCreatePost
 
+创建广告
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalPromotionCreatePostRequest
 */

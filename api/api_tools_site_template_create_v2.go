@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsSiteTemplateCreatePostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2ToolsSiteTemplateCreatePost Method for OpenApi2ToolsSiteTemplateCreatePost
 
+获取橙子建站站点列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSiteTemplateCreatePostRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueExtInfoCallbackPostRequest) WithLog(enable bool) *A
 /*
 OpenApi2ToolsClueExtInfoCallbackPost Method for OpenApi2ToolsClueExtInfoCallbackPost
 
+线索回传后，可享受免费外呼，无效线索返款，提升广告投放精准度。同一条线索可以重复标注，且多次回传的信息都会记录
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueExtInfoCallbackPostRequest
 */

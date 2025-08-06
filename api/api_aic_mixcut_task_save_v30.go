@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AicMixcutTaskSavePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30AicMixcutTaskSavePost Method for OpenApiV30AicMixcutTaskSavePost
 
+保存任务生成的视频到即创的视频库（即组织或者是代理账号下面的视频库）。可以使用同组织账号登录即创，进到即创素材库，进行成片审核。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AicMixcutTaskSavePostRequest
 */

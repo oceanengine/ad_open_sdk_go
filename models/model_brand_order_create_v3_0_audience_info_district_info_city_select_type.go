@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderCreateV30AudienceInfoDistrictInfoCitySelectType
+// BrandOrderCreateV30AudienceInfoDistrictInfoCitySelectType 城市选择
 type BrandOrderCreateV30AudienceInfoDistrictInfoCitySelectType string
 
 // List of brand_order_create_v3.0_audience_info_district_info_city_select_type

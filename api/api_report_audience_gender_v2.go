@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ReportAudienceGenderGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ReportAudienceGenderGet Method for OpenApi2ReportAudienceGenderGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportAudienceGenderGetRequest
 */

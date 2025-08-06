@@ -100,6 +100,8 @@ func (r *ApiOpenApi2ClueSmartphoneRecordGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ClueSmartphoneRecordGet Method for OpenApi2ClueSmartphoneRecordGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueSmartphoneRecordGetRequest
 */

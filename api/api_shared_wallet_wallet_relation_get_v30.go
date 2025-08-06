@@ -81,6 +81,8 @@ func (r *ApiOpenApiV30SharedWalletWalletRelationGetGetRequest) WithLog(enable bo
 /*
 OpenApiV30SharedWalletWalletRelationGetGet Method for OpenApiV30SharedWalletWalletRelationGetGet
 
+查询子钱包下绑定的adv列表, 支持分页
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SharedWalletWalletRelationGetGetRequest
 */

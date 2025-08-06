@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsRtaGetInfoV2DataInterfaceInfoDeliveryRange
+// ToolsRtaGetInfoV2DataInterfaceInfoDeliveryRange 适用流量范围
 type ToolsRtaGetInfoV2DataInterfaceInfoDeliveryRange string
 
 // List of tools_rta_get_info_v2_data_interface_info_delivery_range

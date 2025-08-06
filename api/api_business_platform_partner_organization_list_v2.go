@@ -74,6 +74,8 @@ func (r *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest) WithLog(e
 /*
 OpenApi2BusinessPlatformPartnerOrganizationListGet Method for OpenApi2BusinessPlatformPartnerOrganizationListGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2EbpLevelGetGetRequest) WithLog(enable bool) *ApiOpenApi2EbpL
 /*
 OpenApi2EbpLevelGetGet Method for OpenApi2EbpLevelGetGet
 
+拉取EBP/团队层级关系
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EbpLevelGetGetRequest
 */

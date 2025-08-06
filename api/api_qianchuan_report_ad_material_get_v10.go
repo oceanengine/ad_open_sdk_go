@@ -99,6 +99,8 @@ func (r *ApiOpenApiV10QianchuanReportAdMaterialGetGetRequest) WithLog(enable boo
 /*
 OpenApiV10QianchuanReportAdMaterialGetGet Method for OpenApiV10QianchuanReportAdMaterialGetGet
 
+获取计划下素材的指标信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanReportAdMaterialGetGetRequest
 */

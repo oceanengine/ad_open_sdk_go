@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2DataListSpuLabelName
+// AgentAdvCostReportListQueryV2DataListSpuLabelName 品牌广告类型
 type AgentAdvCostReportListQueryV2DataListSpuLabelName string
 
 // List of agent_adv_cost_report_list_query_v2_data_list_spu_label_name

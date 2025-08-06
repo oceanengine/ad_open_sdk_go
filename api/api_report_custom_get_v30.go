@@ -116,6 +116,8 @@ func (r *ApiOpenApiV30ReportCustomGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30ReportCustomGetGet Method for OpenApiV30ReportCustomGetGet
 
+自定义报表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportCustomGetGetRequest
 */

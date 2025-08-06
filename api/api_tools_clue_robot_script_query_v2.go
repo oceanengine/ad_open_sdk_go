@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueRobotScriptQueryPostRequest) WithLog(enable bool) *
 /*
 OpenApi2ToolsClueRobotScriptQueryPost Method for OpenApi2ToolsClueRobotScriptQueryPost
 
+查询机器人剧本列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueRobotScriptQueryPostRequest
 */

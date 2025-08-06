@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsTaskRaiseCreateV2BudgetMode
+// ToolsTaskRaiseCreateV2BudgetMode 预算设置，允许值：NO_LIMIT不限，LIMIT指定预算
 type ToolsTaskRaiseCreateV2BudgetMode string
 
 // List of tools_task_raise_create_v2_budget_mode

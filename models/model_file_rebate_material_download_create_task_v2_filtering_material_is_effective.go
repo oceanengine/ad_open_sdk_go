@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileRebateMaterialDownloadCreateTaskV2FilteringMaterialIsEffective
+// FileRebateMaterialDownloadCreateTaskV2FilteringMaterialIsEffective 数据更新日期前一日是否在投
 type FileRebateMaterialDownloadCreateTaskV2FilteringMaterialIsEffective string
 
 // List of file_rebate_material_download_create_task_v2_filtering_material_is_effective

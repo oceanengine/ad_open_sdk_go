@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30PromotionNewcustomerTypeGetGetRequest) WithLog(enable bool
 /*
 OpenApiV30PromotionNewcustomerTypeGetGet Method for OpenApiV30PromotionNewcustomerTypeGetGet
 
+根据advid 判断该广告主是否在简单投能力开放范围内
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionNewcustomerTypeGetGetRequest
 */

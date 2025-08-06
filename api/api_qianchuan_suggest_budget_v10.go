@@ -88,6 +88,8 @@ func (r *ApiOpenApiV10QianchuanSuggestBudgetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV10QianchuanSuggestBudgetGet Method for OpenApiV10QianchuanSuggestBudgetGet
 
+推直播间-日常销售-通投-托管-放量投放场景获取建议预算
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanSuggestBudgetGetRequest
 */

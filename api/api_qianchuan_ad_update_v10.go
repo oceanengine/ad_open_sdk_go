@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAdUpdatePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV10QianchuanAdUpdatePost Method for OpenApiV10QianchuanAdUpdatePost
 
+1
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdUpdatePostRequest
 */

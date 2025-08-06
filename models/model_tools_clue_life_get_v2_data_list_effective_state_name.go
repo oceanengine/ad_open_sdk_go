@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListEffectiveStateName
+// ToolsClueLifeGetV2DataListEffectiveStateName 线索阶段名称
 type ToolsClueLifeGetV2DataListEffectiveStateName string
 
 // List of tools_clue_life_get_v2_data_list_effective_state_name

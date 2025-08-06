@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalCxtExternalActionUpdateV30ExternalAction
+// LocalCxtExternalActionUpdateV30ExternalAction 切换后的优化目标
 type LocalCxtExternalActionUpdateV30ExternalAction string
 
 // List of local_cxt_external_action_update_v3.0_external_action

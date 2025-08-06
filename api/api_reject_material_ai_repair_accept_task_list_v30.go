@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30RejectMaterialAiRepairAcceptTaskListGetRequest) WithLog(en
 /*
 OpenApiV30RejectMaterialAiRepairAcceptTaskListGet Method for OpenApiV30RejectMaterialAiRepairAcceptTaskListGet
 
+获取采纳素材修复建议任务结果
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30RejectMaterialAiRepairAcceptTaskListGetRequest
 */

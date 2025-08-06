@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectDetailV30DataAudiencePoiAroundPoiAroundRadius
+// LocalProjectDetailV30DataAudiencePoiAroundPoiAroundRadius 门店附近半径，枚举，仅有几种选项
 type LocalProjectDetailV30DataAudiencePoiAroundPoiAroundRadius string
 
 // List of local_project_detail_v3.0_data_audience_poi_around_poi_around_radius

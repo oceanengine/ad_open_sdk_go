@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DpaProductStatusBatchUpdateV2OptStatus
+// DpaProductStatusBatchUpdateV2OptStatus 操作
 type DpaProductStatusBatchUpdateV2OptStatus string
 
 // List of dpa_product_status_batch_update_v2_opt_status

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionListV30DataListPromotionMaterialsDecorationMaterialImageMode
+// PromotionListV30DataListPromotionMaterialsDecorationMaterialImageMode 素材类型
 type PromotionListV30DataListPromotionMaterialsDecorationMaterialImageMode string
 
 // List of promotion_list_v3.0_data_list_promotion_materials_decoration_material_image_mode

@@ -76,6 +76,8 @@ func (r *ApiOpenApi2CustomerCenterAdvertiserListGetRequest) WithLog(enable bool)
 /*
 OpenApi2CustomerCenterAdvertiserListGet Method for OpenApi2CustomerCenterAdvertiserListGet
 
+获取当前纵横组织下的资产账户列表（广告主，企业号），如果纵横组织下还有子级组织账号，会把cc_account_id下所有可操作的资产账户全量返回
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CustomerCenterAdvertiserListGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanToolsSmartBoostAdBoostStatusGetV10DataRaiseDetailsStatus
+// QianchuanToolsSmartBoostAdBoostStatusGetV10DataRaiseDetailsStatus 起量任务状态。
 type QianchuanToolsSmartBoostAdBoostStatusGetV10DataRaiseDetailsStatus string
 
 // List of qianchuan_tools_smart_boost_ad_boost_status_get_v1.0_data_raise_details_status

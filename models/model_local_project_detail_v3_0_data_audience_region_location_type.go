@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectDetailV30DataAudienceRegionLocationType
+// LocalProjectDetailV30DataAudienceRegionLocationType 地域类型
 type LocalProjectDetailV30DataAudienceRegionLocationType string
 
 // List of local_project_detail_v3.0_data_audience_region_location_type

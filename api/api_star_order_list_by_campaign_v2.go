@@ -74,6 +74,8 @@ func (r *ApiOpenApi2StarOrderListByCampaignGetRequest) WithLog(enable bool) *Api
 /*
 OpenApi2StarOrderListByCampaignGet Method for OpenApi2StarOrderListByCampaignGet
 
+根据需求获取任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarOrderListByCampaignGetRequest
 */

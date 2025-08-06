@@ -23,7 +23,9 @@ type ToolsHotMaterialDeriveAdoptV30ResponseDataResultsInnerMaterialInfo struct {
 	//
 	MaterialId int64 `json:"material_id"`
 	//
+	PreVideoUrl string `json:"pre_video_url"`
+	//
 	VideoId string `json:"video_id"`
 	//
-	VideoUrl string `json:"video_url"`
+	VideoUrl *string `json:"video_url,omitempty"`
 }

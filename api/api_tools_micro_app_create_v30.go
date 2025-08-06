@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsMicroAppCreatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30ToolsMicroAppCreatePost Method for OpenApiV30ToolsMicroAppCreatePost
 
+创建字节小程序
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsMicroAppCreatePostRequest
 */

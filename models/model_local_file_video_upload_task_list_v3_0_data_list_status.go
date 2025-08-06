@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalFileVideoUploadTaskListV30DataListStatus
+// LocalFileVideoUploadTaskListV30DataListStatus 任务处理状态
 type LocalFileVideoUploadTaskListV30DataListStatus string
 
 // List of local_file_video_upload_task_list_v3.0_data_list_status

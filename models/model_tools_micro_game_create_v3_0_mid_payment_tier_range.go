@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsMicroGameCreateV30MidPaymentTierRange
+// ToolsMicroGameCreateV30MidPaymentTierRange  中间付费档位区间（元）
 type ToolsMicroGameCreateV30MidPaymentTierRange string
 
 // List of tools_micro_game_create_v3.0_mid_payment_tier_range

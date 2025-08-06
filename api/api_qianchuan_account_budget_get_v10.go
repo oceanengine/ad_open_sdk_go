@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAccountBudgetGetGetRequest) WithLog(enable bool) 
 /*
 OpenApiV10QianchuanAccountBudgetGetGet Method for OpenApiV10QianchuanAccountBudgetGetGet
 
+获取账户日预算
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAccountBudgetGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30DataProjectListPoiInfoAllPoiMode
+// LocalProjectListV30DataProjectListPoiInfoAllPoiMode 推广门店类型,单门店多门店都返回
 type LocalProjectListV30DataProjectListPoiInfoAllPoiMode string
 
 // List of local_project_list_v3.0_data_project_list_poi_info_all_poi_mode

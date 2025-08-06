@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionAutoGenerateConfigGetV30DataStrategyDataType
+// PromotionAutoGenerateConfigGetV30DataStrategyDataType 策略类型
 type PromotionAutoGenerateConfigGetV30DataStrategyDataType string
 
 // List of promotion_auto_generate_config_get_v3.0_data_strategy_data_type

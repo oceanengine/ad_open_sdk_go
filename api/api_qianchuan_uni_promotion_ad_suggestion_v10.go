@@ -81,6 +81,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest) WithLog(enabl
 /*
 OpenApiV10QianchuanUniPromotionAdSuggestionGet Method for OpenApiV10QianchuanUniPromotionAdSuggestionGet
 
+通过此接口获取广告全域计划纬度的审核意见
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsEventAssetsGetV2DataAppRole
+// ToolsEventAssetsGetV2DataAppRole 资产来源。枚举值：`MINE`自己创建的、`SHARED` 共享资产
 type ToolsEventAssetsGetV2DataAppRole string
 
 // List of tools_event_assets_get_v2_data_app_role

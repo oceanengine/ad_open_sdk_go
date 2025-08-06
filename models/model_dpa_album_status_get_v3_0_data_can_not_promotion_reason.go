@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DpaAlbumStatusGetV30DataCanNotPromotionReason
+// DpaAlbumStatusGetV30DataCanNotPromotionReason 不可投原因
 type DpaAlbumStatusGetV30DataCanNotPromotionReason string
 
 // List of dpa_album_status_get_v3.0_data_can_not_promotion_reason

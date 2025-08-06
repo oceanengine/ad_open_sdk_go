@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30FileQualityGetGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30FileQualityGetGet Method for OpenApiV30FileQualityGetGet
 
+素材属性结果查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30FileQualityGetGetRequest
 */

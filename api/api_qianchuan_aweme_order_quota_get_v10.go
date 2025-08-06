@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAwemeOrderQuotaGetGetRequest) WithLog(enable bool
 /*
 OpenApiV10QianchuanAwemeOrderQuotaGetGet Method for OpenApiV10QianchuanAwemeOrderQuotaGetGet
 
+查询小店随心推使用中订单配额信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeOrderQuotaGetGetRequest
 */

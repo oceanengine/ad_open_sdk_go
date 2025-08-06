@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BudgetGroupCreateV30CampaignType
+// BudgetGroupCreateV30CampaignType 广告类型
 type BudgetGroupCreateV30CampaignType string
 
 // List of budget_group_create_v3.0_campaign_type

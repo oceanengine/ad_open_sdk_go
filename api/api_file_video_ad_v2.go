@@ -107,6 +107,8 @@ func (r *ApiOpenApi2FileVideoAdPostRequest) WithLog(enable bool) *ApiOpenApi2Fil
 /*
 OpenApi2FileVideoAdPost Method for OpenApi2FileVideoAdPost
 
+通过此接口，用户可以上传和广告相关的素材视频。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileVideoAdPostRequest
 */

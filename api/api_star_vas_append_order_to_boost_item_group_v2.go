@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarVasAppendOrderToBoostItemGroupPostRequest) WithLog(enabl
 /*
 OpenApi2StarVasAppendOrderToBoostItemGroupPost Method for OpenApi2StarVasAppendOrderToBoostItemGroupPost
 
+投中加热组追加金额或指派单
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarVasAppendOrderToBoostItemGroupPostRequest
 */

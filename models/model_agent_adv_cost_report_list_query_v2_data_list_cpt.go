@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2DataListCpt
+// AgentAdvCostReportListQueryV2DataListCpt 是否CPT(1：是, 0：否)
 type AgentAdvCostReportListQueryV2DataListCpt int64
 
 // List of agent_adv_cost_report_list_query_v2_data_list_cpt

@@ -59,6 +59,8 @@ func (r *ApiOpenApi2QueryInvoiceElectronicUrlSelfGetRequest) WithLog(enable bool
 /*
 OpenApi2QueryInvoiceElectronicUrlSelfGet Method for OpenApi2QueryInvoiceElectronicUrlSelfGet
 
+自助开票-获取数电发票链接接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2QueryInvoiceElectronicUrlSelfGetRequest
 */

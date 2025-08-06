@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarVasCreateBoostItemGroupV2BoostAction
+// StarVasCreateBoostItemGroupV2BoostAction 加热目标。 当boost_action为NATIVE_ACTION时，不支持boost_type为CUSTOM_TAG；当boost_action为LINK_ACTION时，支持所有boost_type
 type StarVasCreateBoostItemGroupV2BoostAction string
 
 // List of star_vas_create_boost_item_group_v2_boost_action

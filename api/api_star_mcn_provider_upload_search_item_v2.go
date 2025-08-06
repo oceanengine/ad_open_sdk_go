@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarMcnProviderUploadSearchItemPostRequest) WithLog(enable b
 /*
 OpenApi2StarMcnProviderUploadSearchItemPost Method for OpenApi2StarMcnProviderUploadSearchItemPost
 
+回传水下视频用于口令归因
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnProviderUploadSearchItemPostRequest
 */

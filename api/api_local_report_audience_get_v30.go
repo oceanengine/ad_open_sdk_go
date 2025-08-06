@@ -117,6 +117,8 @@ func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV30LocalReportAudienceGetGet Method for OpenApiV30LocalReportAudienceGetGet
 
+本地推受众分析报表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalReportAudienceGetGetRequest
 */

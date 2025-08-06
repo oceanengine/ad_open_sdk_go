@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueExtInfoCallbackV2ExtKey
+// ToolsClueExtInfoCallbackV2ExtKey 扩展信息key
 type ToolsClueExtInfoCallbackV2ExtKey string
 
 // List of tools_clue_ext_info_callback_v2_ext_key

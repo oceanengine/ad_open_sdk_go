@@ -53,6 +53,8 @@ func (r *ApiOpenApiV30BrandRegionGetGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30BrandRegionGetGet Method for OpenApiV30BrandRegionGetGet
 
+获取地域信息列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandRegionGetGetRequest
 */

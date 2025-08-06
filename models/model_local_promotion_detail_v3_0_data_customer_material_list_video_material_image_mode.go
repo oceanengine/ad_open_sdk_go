@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionDetailV30DataCustomerMaterialListVideoMaterialImageMode
+// LocalPromotionDetailV30DataCustomerMaterialListVideoMaterialImageMode 素材类型
 type LocalPromotionDetailV30DataCustomerMaterialListVideoMaterialImageMode string
 
 // List of local_promotion_detail_v3.0_data_customer_material_list_video_material_image_mode

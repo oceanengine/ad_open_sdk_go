@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QueryRebateBalanceV2FilteringStandard
+// QueryRebateBalanceV2FilteringStandard 是否标准 （1：是，2：否）
 type QueryRebateBalanceV2FilteringStandard string
 
 // List of query_rebate_balance_v2_filtering_standard

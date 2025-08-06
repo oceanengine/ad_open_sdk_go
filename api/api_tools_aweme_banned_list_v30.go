@@ -102,6 +102,8 @@ func (r *ApiOpenApiV30ToolsAwemeBannedListGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30ToolsAwemeBannedListGet Method for OpenApiV30ToolsAwemeBannedListGet
 
+PM2
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsAwemeBannedListGetRequest
 */

@@ -66,6 +66,8 @@ func (r *ApiOpenApiV10QianchuanAdMaterialSuggestionGetRequest) WithLog(enable bo
 /*
 OpenApiV10QianchuanAdMaterialSuggestionGet Method for OpenApiV10QianchuanAdMaterialSuggestionGet
 
+获取计划下素材审核建议
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdMaterialSuggestionGetRequest
 */

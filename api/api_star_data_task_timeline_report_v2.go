@@ -74,6 +74,8 @@ func (r *ApiOpenApi2StarDataTaskTimelineReportGetRequest) WithLog(enable bool) *
 /*
 OpenApi2StarDataTaskTimelineReportGet Method for OpenApi2StarDataTaskTimelineReportGet
 
+获取星图项目/视频转化信息for外部电商
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDataTaskTimelineReportGetRequest
 */

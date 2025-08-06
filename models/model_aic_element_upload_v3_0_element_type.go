@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicElementUploadV30ElementType
+// AicElementUploadV30ElementType 元素类型，创建文件夹无需上传文件二进制和元素标签
 type AicElementUploadV30ElementType string
 
 // List of aic_element_upload_v3.0_element_type

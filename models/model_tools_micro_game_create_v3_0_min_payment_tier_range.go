@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsMicroGameCreateV30MinPaymentTierRange
+// ToolsMicroGameCreateV30MinPaymentTierRange 最低付费档位区间（元）
 type ToolsMicroGameCreateV30MinPaymentTierRange string
 
 // List of tools_micro_game_create_v3.0_min_payment_tier_range

@@ -59,6 +59,8 @@ func (r *ApiOpenApiV10QianchuanAdCompensateStatusGetGetRequest) WithLog(enable b
 /*
 OpenApiV10QianchuanAdCompensateStatusGetGet Method for OpenApiV10QianchuanAdCompensateStatusGetGet
 
+获取计划成本保障状态，依赖pmc
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdCompensateStatusGetGetRequest
 */

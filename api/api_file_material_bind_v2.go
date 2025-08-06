@@ -52,6 +52,8 @@ func (r *ApiOpenApi2FileMaterialBindPostRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2FileMaterialBindPost Method for OpenApi2FileMaterialBindPost
 
+素材推送
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileMaterialBindPostRequest
 */

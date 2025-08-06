@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanCampaignCreatePostRequest) WithLog(enable bool) *
 /*
 OpenApiV10QianchuanCampaignCreatePost Method for OpenApiV10QianchuanCampaignCreatePost
 
+创建千川广告账户下的广告组
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanCampaignCreatePostRequest
 */

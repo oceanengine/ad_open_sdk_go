@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30BidType
+// LocalProjectCreateV30BidType 出价方式
 type LocalProjectCreateV30BidType string
 
 // List of local_project_create_v3.0_bid_type

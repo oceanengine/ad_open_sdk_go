@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30DouplusOrderRenewPostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30DouplusOrderRenewPost Method for OpenApiV30DouplusOrderRenewPost
 
+用以给正在投放中的DOU+订单追加预算与投放时长
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30DouplusOrderRenewPostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementExtendPackageCreateV2V2Mode
+// ToolsAppManagementExtendPackageCreateV2V2Mode 分包模式<br>枚举值：`Auto“:自动生成渠道号;`Manual`:自定义渠道号信息
 type ToolsAppManagementExtendPackageCreateV2V2Mode string
 
 // List of tools_app_management_extend_package_create_v2_v2_mode

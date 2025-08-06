@@ -87,6 +87,8 @@ func (r *ApiOpenApi2AgentCompanyBrandListQueryGetRequest) WithLog(enable bool) *
 /*
 OpenApi2AgentCompanyBrandListQueryGet Method for OpenApi2AgentCompanyBrandListQueryGet
 
+代理商品牌投放数据-公司维度
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentCompanyBrandListQueryGetRequest
 */

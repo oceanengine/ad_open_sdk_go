@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30SuggWordsPostRequest) WithLog(enable bool) *ApiOpenApiV30S
 /*
 OpenApiV30SuggWordsPost Method for OpenApiV30SuggWordsPost
 
+快投2.0获取推荐关键词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SuggWordsPostRequest
 */

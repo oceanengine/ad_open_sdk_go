@@ -71,6 +71,8 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest) WithLog(enabl
 /*
 OpenApiV10QianchuanAwemeUniPromotionSuggestGet Method for OpenApiV10QianchuanAwemeUniPromotionSuggestGet
 
+获取随心推全域投放建议
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest
 */

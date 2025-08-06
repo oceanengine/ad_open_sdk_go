@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionListV30FilteringPromotionStatusSecond
+// LocalPromotionListV30FilteringPromotionStatusSecond 广告二级状态过滤，仅当一级状态=未投放时传入有效
 type LocalPromotionListV30FilteringPromotionStatusSecond string
 
 // List of local_promotion_list_v3.0_filtering_promotion_status_second

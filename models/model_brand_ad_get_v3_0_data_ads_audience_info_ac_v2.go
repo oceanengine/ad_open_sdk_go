@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsAudienceInfoAcV2
+// BrandAdGetV30DataAdsAudienceInfoAcV2 网络
 type BrandAdGetV30DataAdsAudienceInfoAcV2 int64
 
 // List of brand_ad_get_v3.0_data_ads_audience_info_ac_v2

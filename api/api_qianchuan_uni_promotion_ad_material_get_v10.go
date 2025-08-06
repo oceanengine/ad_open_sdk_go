@@ -99,6 +99,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequest) WithLog(enab
 /*
 OpenApiV10QianchuanUniPromotionAdMaterialGetGet Method for OpenApiV10QianchuanUniPromotionAdMaterialGetGet
 
+获取全域推广计划下创意
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionAdMaterialGetGetRequest
 */

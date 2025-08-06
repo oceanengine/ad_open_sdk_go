@@ -60,6 +60,10 @@ func (r *ApiOpenApi2FileVideoEfficiencyGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2FileVideoEfficiencyGetGet Method for OpenApi2FileVideoEfficiencyGetGet
 
+支持查询素材是否是低效素材，传入素材ID列表，返回低效素材列表。
+当前仅支持查询视频类型的素材。
+低效素材：根据素材与相似素材投放数据，系统预估该素材后续难以起量，建议暂停或更换素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileVideoEfficiencyGetGetRequest
 */

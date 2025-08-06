@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// NativeAnchorUpdateV30AnchorInfoPrivateChatButton
+// NativeAnchorUpdateV30AnchorInfoPrivateChatButton 按钮文案，可选私信商家、立即咨询、咨询顾问、咨询设计师、问问老师
 type NativeAnchorUpdateV30AnchorInfoPrivateChatButton string
 
 // List of native_anchor_update_v3.0_anchor_info_private_chat_button

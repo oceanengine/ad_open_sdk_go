@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsPrivativeWordPromotionUpdatePostRequest) WithLog(enab
 /*
 OpenApiV30ToolsPrivativeWordPromotionUpdatePost Method for OpenApiV30ToolsPrivativeWordPromotionUpdatePost
 
+批量更新广告否定词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsPrivativeWordPromotionUpdatePostRequest
 */

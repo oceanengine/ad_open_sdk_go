@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListGender
+// ToolsClueLifeGetV2DataListGender 性别
 type ToolsClueLifeGetV2DataListGender string
 
 // List of tools_clue_life_get_v2_data_list_gender

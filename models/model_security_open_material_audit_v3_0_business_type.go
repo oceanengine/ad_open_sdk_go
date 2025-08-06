@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SecurityOpenMaterialAuditV30BusinessType
+// SecurityOpenMaterialAuditV30BusinessType 业务线 AD: 巨量AD QIAN_CHUAN: 千川业务线 LOCAL_LIFE: 本地生活业务线
 type SecurityOpenMaterialAuditV30BusinessType string
 
 // List of security_open_material_audit_v3.0_business_type

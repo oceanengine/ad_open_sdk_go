@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectUpdateV30AudienceGender
+// LocalProjectUpdateV30AudienceGender 性别
 type LocalProjectUpdateV30AudienceGender string
 
 // List of local_project_update_v3.0_audience_gender

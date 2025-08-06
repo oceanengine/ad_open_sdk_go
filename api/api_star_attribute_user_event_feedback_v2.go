@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarAttributeUserEventFeedbackPostRequest) WithLog(enable bo
 /*
 OpenApi2StarAttributeUserEventFeedbackPost Method for OpenApi2StarAttributeUserEventFeedbackPost
 
+用户事件回传接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarAttributeUserEventFeedbackPostRequest
 */

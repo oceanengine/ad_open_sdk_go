@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AgentAdvertiserUpdatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2AgentAdvertiserUpdatePost Method for OpenApi2AgentAdvertiserUpdatePost
 
+修改广告主信息，可更改内容包括账户名称、联系人、手机号码、固定电话、备注，除此之外其他内容不允许修改。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentAdvertiserUpdatePostRequest
 */

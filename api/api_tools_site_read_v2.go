@@ -66,6 +66,8 @@ func (r *ApiOpenApi2ToolsSiteReadGetRequest) WithLog(enable bool) *ApiOpenApi2To
 /*
 OpenApi2ToolsSiteReadGet Method for OpenApi2ToolsSiteReadGet
 
+通过此接口，用户可以获取站点的详细信息，包括新建或更新时传递的全量数据。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSiteReadGetRequest
 */

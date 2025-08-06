@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandAdUpdateBaseInfoPostRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV30BrandAdUpdateBaseInfoPost Method for OpenApiV30BrandAdUpdateBaseInfoPost
 
+编辑基础信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandAdUpdateBaseInfoPostRequest
 */

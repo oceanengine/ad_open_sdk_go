@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarDemandSearchWordModifyPostRequest) WithLog(enable bool) 
 /*
 OpenApi2StarDemandSearchWordModifyPost Method for OpenApi2StarDemandSearchWordModifyPost
 
+修改任务搜索词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemandSearchWordModifyPostRequest
 */

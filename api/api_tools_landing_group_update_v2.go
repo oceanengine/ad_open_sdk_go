@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsLandingGroupUpdatePostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2ToolsLandingGroupUpdatePost Method for OpenApi2ToolsLandingGroupUpdatePost
 
+通过此接口，用户可以更新落地页组的基本信息。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsLandingGroupUpdatePostRequest
 */

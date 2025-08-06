@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AdvertiserQualificationSelectV2GetRequest) WithLog(enable bo
 /*
 OpenApi2AdvertiserQualificationSelectV2Get Method for OpenApi2AdvertiserQualificationSelectV2Get
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdvertiserQualificationSelectV2GetRequest
 */

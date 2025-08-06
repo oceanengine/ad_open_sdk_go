@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AgentAdvAdvertiserUpdateSalePostRequest) WithLog(enable bool
 /*
 OpenApi2AgentAdvAdvertiserUpdateSalePost Method for OpenApi2AgentAdvAdvertiserUpdateSalePost
 
+修改广告主所属销售信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentAdvAdvertiserUpdateSalePostRequest
 */

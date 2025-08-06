@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30StardeliveryTaskSharePostRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV30StardeliveryTaskSharePost Method for OpenApiV30StardeliveryTaskSharePost
 
+广告主adv发起星图任务的共享，共享给其他adv
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30StardeliveryTaskSharePostRequest
 */

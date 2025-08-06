@@ -71,6 +71,8 @@ func (r *ApiOpenApi2StarChallengeGetCustomTaskListGetRequest) WithLog(enable boo
 /*
 OpenApi2StarChallengeGetCustomTaskListGet Method for OpenApi2StarChallengeGetCustomTaskListGet
 
+提供客户进行自定义结算任务列表查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarChallengeGetCustomTaskListGetRequest
 */

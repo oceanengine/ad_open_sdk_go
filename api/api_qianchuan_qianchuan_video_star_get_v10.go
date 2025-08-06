@@ -80,6 +80,9 @@ func (r *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest) WithLog(enable b
 /*
 OpenApiV10QianchuanQianchuanVideoStarGetGet Method for OpenApiV10QianchuanQianchuanVideoStarGetGet
 
+获取星图达人视频
+https://bytedance.larkoffice.com/wiki/DMjkwqmcOi4SlHkj9EVckgOGnxf
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest
 */

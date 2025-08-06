@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeOrderDetailGetV10DataAudienceExcludeLimitedRegion
+// QianchuanAwemeOrderDetailGetV10DataAudienceExcludeLimitedRegion 排除限运地区
 type QianchuanAwemeOrderDetailGetV10DataAudienceExcludeLimitedRegion int64
 
 // List of qianchuan_aweme_order_detail_get_v1.0_data_audience_exclude_limited_region

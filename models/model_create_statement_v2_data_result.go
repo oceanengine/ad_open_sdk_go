@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreateStatementV2DataResult
+// CreateStatementV2DataResult 创建结果
 type CreateStatementV2DataResult string
 
 // List of create_statement_v2_data_result

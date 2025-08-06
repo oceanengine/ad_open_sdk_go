@@ -59,6 +59,8 @@ func (r *ApiOpenApiV30RejectMaterialAiRepairCrossAccountGetGetRequest) WithLog(e
 /*
 OpenApiV30RejectMaterialAiRepairCrossAccountGetGet Method for OpenApiV30RejectMaterialAiRepairCrossAccountGetGet
 
+根据mid查询同主体账户下修复建议列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30RejectMaterialAiRepairCrossAccountGetGetRequest
 */

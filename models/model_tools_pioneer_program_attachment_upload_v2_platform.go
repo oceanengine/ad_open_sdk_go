@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsPioneerProgramAttachmentUploadV2Platform
+// ToolsPioneerProgramAttachmentUploadV2Platform 数据来自的平台
 type ToolsPioneerProgramAttachmentUploadV2Platform string
 
 // List of tools_pioneer_program_attachment_upload_v2_platform

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SecurityScoreViolationEventGetV30FilteringStatus
+// SecurityScoreViolationEventGetV30FilteringStatus 生效状态
 type SecurityScoreViolationEventGetV30FilteringStatus string
 
 // List of security_score_violation_event_get_v3.0_filtering_status

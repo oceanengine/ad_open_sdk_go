@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30PromotionAutoGenerateConfigGetGetRequest) WithLog(enable b
 /*
 OpenApiV30PromotionAutoGenerateConfigGetGet Method for OpenApiV30PromotionAutoGenerateConfigGetGet
 
+根据配置ID，查询配置详情
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionAutoGenerateConfigGetGetRequest
 */

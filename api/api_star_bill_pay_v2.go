@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarBillPayPostRequest) WithLog(enable bool) *ApiOpenApi2Sta
 /*
 OpenApi2StarBillPayPost Method for OpenApi2StarBillPayPost
 
+任务付款
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarBillPayPostRequest
 */

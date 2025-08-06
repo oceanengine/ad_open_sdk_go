@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsEstimatedPriceGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ToolsEstimatedPriceGetGet Method for OpenApi2ToolsEstimatedPriceGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsEstimatedPriceGetGetRequest
 */

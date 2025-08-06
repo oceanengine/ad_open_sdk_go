@@ -95,6 +95,8 @@ func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) WithLog(enable bool) 
 /*
 OpenApi2AgentQueryRiskPromotionListGet Method for OpenApi2AgentQueryRiskPromotionListGet
 
+查询违规广告列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentQueryRiskPromotionListGetRequest
 */

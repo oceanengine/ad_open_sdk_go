@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CgTransferQueryTransferDetailV30DataTransferTargetRecordListTransferStatus
+// CgTransferQueryTransferDetailV30DataTransferTargetRecordListTransferStatus 账户间转账状态
 type CgTransferQueryTransferDetailV30DataTransferTargetRecordListTransferStatus string
 
 // List of cg_transfer_query_transfer_detail_v3.0_data_transfer_target_record_list_transfer_status

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DouplusOrderCreateV30ExternalAction
+// DouplusOrderCreateV30ExternalAction 投放目的： 当素材类型为短视频(VIDEO_PROM_GOODS)时，允许值为： 1. LIKE_COMMENT_AMOUNT 点赞评论量 2. FOLLOWER_COUNT 粉丝量 3. VIDEO_PLAYBACK_VOLUME 视频播放量 4. DY_PRIVATE_MESSAGES 抖音私信 5. HIGH_INTERACTION_QUALITY 互动质量高 6. HIGH_INTERACTION_FREQUENCY 互动数量多 7. ONLY_FOR_ACTIVATION 激活 8. COMMENT_LINK_CLICK 评论链接点击 当素材类型为直播(LIVE_PROM_GOODS)时，允许值： 1. LIVE_ROOM_POPULARITY 直播间人气 2. LIVE_ROOM_FOLLOWER_INCREASE 直播间涨粉 3. VIEWER_DONATION 观众打赏 4. VIEWER_INTERACTION 观众互动
 type DouplusOrderCreateV30ExternalAction string
 
 // List of douplus_order_create_v3.0_external_action

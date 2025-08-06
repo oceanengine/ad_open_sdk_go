@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsDiagnosisSuggestionGetV2DataSuggestionListSceneListScene
+// ToolsDiagnosisSuggestionGetV2DataSuggestionListSceneListScene 建议类型
 type ToolsDiagnosisSuggestionGetV2DataSuggestionListSceneListScene string
 
 // List of tools_diagnosis_suggestion_get_v2_data_suggestion_list_scene_list_scene

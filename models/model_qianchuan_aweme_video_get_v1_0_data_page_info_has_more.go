@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeVideoGetV10DataPageInfoHasMore
+// QianchuanAwemeVideoGetV10DataPageInfoHasMore 是否有下一页
 type QianchuanAwemeVideoGetV10DataPageInfoHasMore int64
 
 // List of qianchuan_aweme_video_get_v1.0_data_page_info_has_more

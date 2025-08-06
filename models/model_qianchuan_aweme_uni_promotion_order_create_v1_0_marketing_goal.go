@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeUniPromotionOrderCreateV10MarketingGoal
+// QianchuanAwemeUniPromotionOrderCreateV10MarketingGoal 营销目标
 type QianchuanAwemeUniPromotionOrderCreateV10MarketingGoal string
 
 // List of qianchuan_aweme_uni_promotion_order_create_v1.0_marketing_goal

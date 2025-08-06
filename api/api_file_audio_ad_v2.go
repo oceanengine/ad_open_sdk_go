@@ -78,6 +78,8 @@ func (r *ApiOpenApi2FileAudioAdPostRequest) WithLog(enable bool) *ApiOpenApi2Fil
 /*
 OpenApi2FileAudioAdPost Method for OpenApi2FileAudioAdPost
 
+通过此接口，用户可以上传和广告相关的音频图片，例如图文中的音频。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileAudioAdPostRequest
 */

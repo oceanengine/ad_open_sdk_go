@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ReportLiveRoomAttributeGetGetRequest) WithLog(enable bool) *
 /*
 OpenApi2ReportLiveRoomAttributeGetGet Method for OpenApi2ReportLiveRoomAttributeGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportLiveRoomAttributeGetGetRequest
 */

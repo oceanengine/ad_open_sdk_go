@@ -80,6 +80,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) WithLog(en
 /*
 OpenApiV10QianchuanUniPromotionProductAwemeGetGet Method for OpenApiV10QianchuanUniPromotionProductAwemeGetGet
 
+全域达人获取可投商品列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest
 */

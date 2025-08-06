@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DpaProductAvailablesGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2DpaProductAvailablesGet Method for OpenApi2DpaProductAvailablesGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaProductAvailablesGetRequest
 */

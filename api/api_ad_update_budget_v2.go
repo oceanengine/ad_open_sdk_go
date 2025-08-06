@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AdUpdateBudgetPostRequest) WithLog(enable bool) *ApiOpenApi2
 /*
 OpenApi2AdUpdateBudgetPost Method for OpenApi2AdUpdateBudgetPost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdUpdateBudgetPostRequest
 */

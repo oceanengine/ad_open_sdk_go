@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementUploadTaskListV2DataListStatus
+// ToolsAppManagementUploadTaskListV2DataListStatus 任务状态
 type ToolsAppManagementUploadTaskListV2DataListStatus string
 
 // List of tools_app_management_upload_task_list_v2_data_list_status

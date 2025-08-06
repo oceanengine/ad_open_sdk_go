@@ -60,6 +60,8 @@ func (r *ApiOpenApi2FileRebateCommonDownloadDownloadFileGetRequest) WithLog(enab
 /*
 OpenApi2FileRebateCommonDownloadDownloadFileGet Method for OpenApi2FileRebateCommonDownloadDownloadFileGet
 
+通过指定的task_id,获取对应的数据明细文件
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileRebateCommonDownloadDownloadFileGetRequest
 */

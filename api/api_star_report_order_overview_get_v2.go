@@ -58,6 +58,8 @@ func (r *ApiOpenApi2StarReportOrderOverviewGetGetRequest) WithLog(enable bool) *
 /*
 OpenApi2StarReportOrderOverviewGetGet Method for OpenApi2StarReportOrderOverviewGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarReportOrderOverviewGetGetRequest
 */

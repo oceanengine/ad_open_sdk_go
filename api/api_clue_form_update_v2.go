@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ClueFormUpdatePostRequest) WithLog(enable bool) *ApiOpenApi2
 /*
 OpenApi2ClueFormUpdatePost Method for OpenApi2ClueFormUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueFormUpdatePostRequest
 */

@@ -52,6 +52,9 @@ func (r *ApiOpenApiV10QianchuanToolsAwemeAuthPostRequest) WithLog(enable bool) *
 /*
 OpenApiV10QianchuanToolsAwemeAuthPost Method for OpenApiV10QianchuanToolsAwemeAuthPost
 
+广告主授权抖音号，仅供曾经在pc进行过抖音号授权的广告主使用
+https://bytedance.feishu.cn/wiki/BZdCwMstNirkpYkfPV0cgHSLn7g
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanToolsAwemeAuthPostRequest
 */

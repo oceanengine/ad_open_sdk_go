@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarAttributeJdOverflowConvertPostRequest) WithLog(enable bo
 /*
 OpenApi2StarAttributeJdOverflowConvertPost Method for OpenApi2StarAttributeJdOverflowConvertPost
 
+外溢度量-京东回传转化数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarAttributeJdOverflowConvertPostRequest
 */

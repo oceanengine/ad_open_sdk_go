@@ -67,6 +67,8 @@ func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2StarVasGetBoostGroupListGet Method for OpenApi2StarVasGetBoostGroupListGet
 
+拉取加热组列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarVasGetBoostGroupListGetRequest
 */

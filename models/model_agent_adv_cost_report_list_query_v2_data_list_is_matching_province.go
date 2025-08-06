@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2DataListIsMatchingProvince
+// AgentAdvCostReportListQueryV2DataListIsMatchingProvince 是否本地投放(0： 未知,1： 是,2： 否)
 type AgentAdvCostReportListQueryV2DataListIsMatchingProvince int64
 
 // List of agent_adv_cost_report_list_query_v2_data_list_is_matching_province

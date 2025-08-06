@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreateStatementV2TemplateType
+// CreateStatementV2TemplateType 结算单模版类型 0-非标准  1-标准
 type CreateStatementV2TemplateType string
 
 // List of create_statement_v2_template_type

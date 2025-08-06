@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarOrderRejectResourcePostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2StarOrderRejectResourcePost Method for OpenApi2StarOrderRejectResourcePost
 
+任务资源驳回
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarOrderRejectResourcePostRequest
 */

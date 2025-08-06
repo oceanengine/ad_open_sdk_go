@@ -60,6 +60,8 @@ func (r *ApiOpenApi2AgentChargeVerifyGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2AgentChargeVerifyGet Method for OpenApi2AgentChargeVerifyGet
 
+校验能否充值接口，校验不通过接口会报错并返回原因；校验通过接口返回可用于充值的合同
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentChargeVerifyGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListAllocationStatus
+// ToolsClueLifeGetV2DataListAllocationStatus 分配状态
 type ToolsClueLifeGetV2DataListAllocationStatus string
 
 // List of tools_clue_life_get_v2_data_list_allocation_status

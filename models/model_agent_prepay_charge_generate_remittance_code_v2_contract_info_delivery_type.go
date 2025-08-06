@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentPrepayChargeGenerateRemittanceCodeV2ContractInfoDeliveryType
+// AgentPrepayChargeGenerateRemittanceCodeV2ContractInfoDeliveryType 资金池投放方式
 type AgentPrepayChargeGenerateRemittanceCodeV2ContractInfoDeliveryType string
 
 // List of agent_prepay_charge_generate_remittance_code_v2_contract_info_delivery_type

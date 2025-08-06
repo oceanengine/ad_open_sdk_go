@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanReportAdvertiserGetV10FilteringSmartBidType
+// QianchuanReportAdvertiserGetV10FilteringSmartBidType 投放场景（投放方式），允许值： - `SMART_BID_CUSTOM` 控成本投放 - `SMART_BID_CONSERVATIVE` 放量投放 注意：当order_platform = `ECP_AWEME` 下单平台为小店随心推时，不支持传入
 type QianchuanReportAdvertiserGetV10FilteringSmartBidType string
 
 // List of qianchuan_report_advertiser_get_v1.0_filtering_smart_bid_type

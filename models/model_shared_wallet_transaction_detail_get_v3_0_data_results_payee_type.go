@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SharedWalletTransactionDetailGetV30DataResultsPayeeType
+// SharedWalletTransactionDetailGetV30DataResultsPayeeType 收款账户类型
 type SharedWalletTransactionDetailGetV30DataResultsPayeeType string
 
 // List of shared_wallet_transaction_detail_get_v3.0_data_results_payee_type

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAdKeywordsUpdateV10KeywordsMatchType
+// QianchuanAdKeywordsUpdateV10KeywordsMatchType 关键词匹配类型
 type QianchuanAdKeywordsUpdateV10KeywordsMatchType string
 
 // List of qianchuan_ad_keywords_update_v1.0_keywords_match_type

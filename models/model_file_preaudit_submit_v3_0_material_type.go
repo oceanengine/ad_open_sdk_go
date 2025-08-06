@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FilePreauditSubmitV30MaterialType
+// FilePreauditSubmitV30MaterialType 素材类型
 type FilePreauditSubmitV30MaterialType string
 
 // List of file_preaudit_submit_v3.0_material_type

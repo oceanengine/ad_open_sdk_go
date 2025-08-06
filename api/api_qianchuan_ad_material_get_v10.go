@@ -91,6 +91,8 @@ func (r *ApiOpenApiV10QianchuanAdMaterialGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV10QianchuanAdMaterialGetGet Method for OpenApiV10QianchuanAdMaterialGetGet
 
+获取计划下的素材信息，包括素材的元信息，审核状态，关联创意ID，派生信息，是否删除等。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdMaterialGetGetRequest
 */

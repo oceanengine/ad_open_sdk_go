@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QueryRebateAccountingInfoV2FilteringMonthQuarter
+// QueryRebateAccountingInfoV2FilteringMonthQuarter 结算季度／月 （1:1月，2:2月，3:3月，4:4月，5:5月，6:6月，7:7月，8:8月，9:9月，10:10月，11:11月，12:12月，13:Q1，14:Q2，15:Q3，16:Q4，17:上半年，18:下半年，19:全年）
 type QueryRebateAccountingInfoV2FilteringMonthQuarter string
 
 // List of query_rebate_accounting_info_v2_filtering_month_quarter

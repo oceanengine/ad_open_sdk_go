@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectDetailV30DataAudienceHideIfConverted
+// LocalProjectDetailV30DataAudienceHideIfConverted 过滤已转化用户
 type LocalProjectDetailV30DataAudienceHideIfConverted string
 
 // List of local_project_detail_v3.0_data_audience_hide_if_converted

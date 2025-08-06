@@ -93,6 +93,10 @@ func (r *ApiOpenApi2ToolsSiteGetGetRequest) WithLog(enable bool) *ApiOpenApi2Too
 /*
 OpenApi2ToolsSiteGetGet Method for OpenApi2ToolsSiteGetGet
 
+通过此接口，用户可以获取广告主建站列表。
+
+列表栏包括建站ID、建站名称、建站状态、建站类型、建站类别、站点缩略图等信息。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSiteGetGetRequest
 */

@@ -74,6 +74,8 @@ func (r *ApiOpenApiV30ToolsCommentReplyGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30ToolsCommentReplyGetGet Method for OpenApiV30ToolsCommentReplyGetGet
 
+@PM2
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsCommentReplyGetGetRequest
 */

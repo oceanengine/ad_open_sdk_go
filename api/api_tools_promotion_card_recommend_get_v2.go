@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) WithLog(enable boo
 /*
 OpenApi2ToolsPromotionCardRecommendGetGet Method for OpenApi2ToolsPromotionCardRecommendGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest
 */

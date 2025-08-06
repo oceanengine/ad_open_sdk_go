@@ -76,6 +76,8 @@ func (r *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest) WithLog(enable
 /*
 OpenApi2StarMcnProviderGetParticipatedTaskGet Method for OpenApi2StarMcnProviderGetParticipatedTaskGet
 
+撮合中介-获取已参与任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentTransferTransactionRecordV2DataRecordsPlatform
+// AgentTransferTransactionRecordV2DataRecordsPlatform 业务平台
 type AgentTransferTransactionRecordV2DataRecordsPlatform string
 
 // List of agent_transfer_transaction_record_v2_data_records_platform

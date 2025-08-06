@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandQueryStockV30AudienceInfoGender
+// BrandQueryStockV30AudienceInfoGender 性别定向
 type BrandQueryStockV30AudienceInfoGender string
 
 // List of brand_query_stock_v3.0_audience_info_gender

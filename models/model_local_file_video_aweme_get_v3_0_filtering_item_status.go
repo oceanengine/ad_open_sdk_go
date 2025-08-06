@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalFileVideoAwemeGetV30FilteringItemStatus
+// LocalFileVideoAwemeGetV30FilteringItemStatus 素材状态筛选，默认可用
 type LocalFileVideoAwemeGetV30FilteringItemStatus string
 
 // List of local_file_video_aweme_get_v3.0_filtering_item_status

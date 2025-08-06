@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SharedWalletWalletInfoGetV30DataWalletInfoCommonWalletInfoSharedWalletStatus
+// SharedWalletWalletInfoGetV30DataWalletInfoCommonWalletInfoSharedWalletStatus 钱包状态
 type SharedWalletWalletInfoGetV30DataWalletInfoCommonWalletInfoSharedWalletStatus string
 
 // List of shared_wallet_wallet_info_get_v3.0_data_wallet_info_common_wallet_info_shared_wallet_status

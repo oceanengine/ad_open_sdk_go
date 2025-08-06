@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanToolsShopAuthPostRequest) WithLog(enable bool) *A
 /*
 OpenApiV10QianchuanToolsShopAuthPost Method for OpenApiV10QianchuanToolsShopAuthPost
 
+支持广告通过MAPI进行店铺授权
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanToolsShopAuthPostRequest
 */

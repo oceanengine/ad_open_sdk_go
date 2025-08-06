@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAwemeListV30DataAwemeUserInfoListAuthType
+// BrandAwemeListV30DataAwemeUserInfoListAuthType 授权类型
 type BrandAwemeListV30DataAwemeUserInfoListAuthType string
 
 // List of brand_aweme_list_v3.0_data_aweme_user_info_list_auth_type

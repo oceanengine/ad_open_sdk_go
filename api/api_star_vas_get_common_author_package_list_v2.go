@@ -53,6 +53,8 @@ func (r *ApiOpenApi2StarVasGetCommonAuthorPackageListGetRequest) WithLog(enable 
 /*
 OpenApi2StarVasGetCommonAuthorPackageListGet Method for OpenApi2StarVasGetCommonAuthorPackageListGet
 
+获取八大人群包
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarVasGetCommonAuthorPackageListGetRequest
 */

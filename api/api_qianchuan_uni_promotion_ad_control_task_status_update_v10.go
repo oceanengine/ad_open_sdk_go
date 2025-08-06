@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskStatusUpdatePostRequest)
 /*
 OpenApiV10QianchuanUniPromotionAdControlTaskStatusUpdatePost Method for OpenApiV10QianchuanUniPromotionAdControlTaskStatusUpdatePost
 
+修改任务调控状态
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionAdControlTaskStatusUpdatePostRequest
 */

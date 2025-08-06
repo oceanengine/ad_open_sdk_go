@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicMixcutTaskSaveV30AccountType
+// AicMixcutTaskSaveV30AccountType 账户体系枚举
 type AicMixcutTaskSaveV30AccountType string
 
 // List of aic_mixcut_task_save_v3.0_account_type

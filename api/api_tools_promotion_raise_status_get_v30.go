@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30ToolsPromotionRaiseStatusGetGetRequest) WithLog(enable boo
 /*
 OpenApiV30ToolsPromotionRaiseStatusGetGet Method for OpenApiV30ToolsPromotionRaiseStatusGetGet
 
+获取一键起量方案列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsPromotionRaiseStatusGetGetRequest
 */

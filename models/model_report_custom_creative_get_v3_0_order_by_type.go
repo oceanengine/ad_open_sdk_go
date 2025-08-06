@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ReportCustomCreativeGetV30OrderByType
+// ReportCustomCreativeGetV30OrderByType 排序类型
 type ReportCustomCreativeGetV30OrderByType string
 
 // List of report_custom_creative_get_v3.0_order_by_type

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarVasGetExportBoostItemGroupResultV2DataExportStatus
+// StarVasGetExportBoostItemGroupResultV2DataExportStatus 导出状态
 type StarVasGetExportBoostItemGroupResultV2DataExportStatus string
 
 // List of star_vas_get_export_boost_item_group_result_v2_data_export_status

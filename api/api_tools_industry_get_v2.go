@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsIndustryGetGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2ToolsIndustryGetGet Method for OpenApi2ToolsIndustryGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsIndustryGetGetRequest
 */

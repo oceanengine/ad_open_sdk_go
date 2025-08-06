@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// OpenMaterialAuditProSubmitV30InputType
+// OpenMaterialAuditProSubmitV30InputType 取值VID|FILEID，VID含义为火山点播视频片源ID，FILEID为火山点播某个Vid下的转码产物ID
 type OpenMaterialAuditProSubmitV30InputType string
 
 // List of open_material_audit_pro_submit_v3.0_input_type

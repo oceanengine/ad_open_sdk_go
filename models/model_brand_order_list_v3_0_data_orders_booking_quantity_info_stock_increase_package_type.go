@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderListV30DataOrdersBookingQuantityInfoStockIncreasePackageType
+// BrandOrderListV30DataOrdersBookingQuantityInfoStockIncreasePackageType 库存加量包
 type BrandOrderListV30DataOrdersBookingQuantityInfoStockIncreasePackageType string
 
 // List of brand_order_list_v3.0_data_orders_booking_quantity_info_stock_increase_package_type

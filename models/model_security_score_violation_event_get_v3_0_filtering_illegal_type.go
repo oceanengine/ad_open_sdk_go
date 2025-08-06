@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SecurityScoreViolationEventGetV30FilteringIllegalType
+// SecurityScoreViolationEventGetV30FilteringIllegalType 违规类型
 type SecurityScoreViolationEventGetV30FilteringIllegalType string
 
 // List of security_score_violation_event_get_v3.0_filtering_illegal_type

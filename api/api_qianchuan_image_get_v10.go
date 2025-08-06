@@ -70,6 +70,8 @@ func (r *ApiOpenApiV10QianchuanImageGetGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV10QianchuanImageGetGet Method for OpenApiV10QianchuanImageGetGet
 
+1
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanImageGetGetRequest
 */

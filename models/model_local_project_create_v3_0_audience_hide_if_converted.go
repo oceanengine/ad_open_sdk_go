@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30AudienceHideIfConverted
+// LocalProjectCreateV30AudienceHideIfConverted 过滤已转化的维度
 type LocalProjectCreateV30AudienceHideIfConverted string
 
 // List of local_project_create_v3.0_audience_hide_if_converted

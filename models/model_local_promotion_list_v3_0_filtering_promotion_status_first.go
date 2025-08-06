@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionListV30FilteringPromotionStatusFirst
+// LocalPromotionListV30FilteringPromotionStatusFirst 广告一级状态过滤，默认不限（不包含已删除）
 type LocalPromotionListV30FilteringPromotionStatusFirst string
 
 // List of local_promotion_list_v3.0_filtering_promotion_status_first

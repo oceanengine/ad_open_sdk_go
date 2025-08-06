@@ -128,6 +128,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) WithLog(
 /*
 OpenApiV10QianchuanUniPromotionAdControlTaskListGet Method for OpenApiV10QianchuanUniPromotionAdControlTaskListGet
 
+获取调控任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest
 */

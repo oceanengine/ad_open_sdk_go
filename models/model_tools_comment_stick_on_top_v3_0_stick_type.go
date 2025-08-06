@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsCommentStickOnTopV30StickType
+// ToolsCommentStickOnTopV30StickType 操作类型，允许值： STICK_ON_TOP 置顶 CANCEL_STICK 取消置顶
 type ToolsCommentStickOnTopV30StickType string
 
 // List of tools_comment_stick_on_top_v3.0_stick_type

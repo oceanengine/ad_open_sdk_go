@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListFollowLifeAccountType
+// ToolsClueLifeGetV2DataListFollowLifeAccountType 跟进账户类型
 type ToolsClueLifeGetV2DataListFollowLifeAccountType string
 
 // List of tools_clue_life_get_v2_data_list_follow_life_account_type

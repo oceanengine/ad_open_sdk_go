@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandPolicyListV30FrequencyInfoFrequencyStatus
+// BrandPolicyListV30FrequencyInfoFrequencyStatus 是否启用
 type BrandPolicyListV30FrequencyInfoFrequencyStatus string
 
 // List of brand_policy_list_v3.0_frequency_info_frequency_status

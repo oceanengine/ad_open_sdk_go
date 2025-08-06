@@ -64,6 +64,8 @@ func (r *ApiOpenApi2ToolsAwemeInfoSearchGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ToolsAwemeInfoSearchGet Method for OpenApi2ToolsAwemeInfoSearchGet
 
+查询抖音帐号和类目信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAwemeInfoSearchGetRequest
 */

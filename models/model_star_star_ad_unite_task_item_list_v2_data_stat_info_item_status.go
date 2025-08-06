@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarStarAdUniteTaskItemListV2DataStatInfoItemStatus
+// StarStarAdUniteTaskItemListV2DataStatInfoItemStatus 视频状态
 type StarStarAdUniteTaskItemListV2DataStatInfoItemStatus string
 
 // List of star_star_ad_unite_task_item_list_v2_data_stat_info_item_status

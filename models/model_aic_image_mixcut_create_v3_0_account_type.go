@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicImageMixcutCreateV30AccountType
+// AicImageMixcutCreateV30AccountType 账户体系枚举
 type AicImageMixcutCreateV30AccountType string
 
 // List of aic_image_mixcut_create_v3.0_account_type

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandCampaignDeletePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30BrandCampaignDeletePost Method for OpenApiV30BrandCampaignDeletePost
 
+AD品牌广告组删除
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandCampaignDeletePostRequest
 */

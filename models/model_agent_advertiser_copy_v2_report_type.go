@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvertiserCopyV2ReportType
+// AgentAdvertiserCopyV2ReportType 自运营报备类型
 type AgentAdvertiserCopyV2ReportType string
 
 // List of agent_advertiser_copy_v2_report_type

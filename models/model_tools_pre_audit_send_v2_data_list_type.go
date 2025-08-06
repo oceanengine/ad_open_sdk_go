@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsPreAuditSendV2DataListType
+// ToolsPreAuditSendV2DataListType 前置预审物料类型
 type ToolsPreAuditSendV2DataListType string
 
 // List of tools_pre_audit_send_v2_data_list_type

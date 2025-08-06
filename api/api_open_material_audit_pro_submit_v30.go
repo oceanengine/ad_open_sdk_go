@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30OpenMaterialAuditProSubmitPostRequest) WithLog(enable bool
 /*
 OpenApiV30OpenMaterialAuditProSubmitPost Method for OpenApiV30OpenMaterialAuditProSubmitPost
 
+广告素材预审提交接口（连山云视频点播版）
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30OpenMaterialAuditProSubmitPostRequest
 */

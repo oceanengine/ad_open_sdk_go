@@ -66,6 +66,8 @@ func (r *ApiOpenApi2ToolsQuotaGetGetRequest) WithLog(enable bool) *ApiOpenApi2To
 /*
 OpenApi2ToolsQuotaGetGet Method for OpenApi2ToolsQuotaGetGet
 
+>该接口用于查询广告账户的在投计划配额和使用进度。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsQuotaGetGetRequest
 */

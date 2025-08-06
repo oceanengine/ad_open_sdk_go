@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// EventManagerEventConfigsGetV2DataEventConfigsPropertiesVariableType
+// EventManagerEventConfigsGetV2DataEventConfigsPropertiesVariableType 附加属性值类型
 type EventManagerEventConfigsGetV2DataEventConfigsPropertiesVariableType string
 
 // List of event_manager_event_configs_get_v2_data_event_configs_properties_variable_type

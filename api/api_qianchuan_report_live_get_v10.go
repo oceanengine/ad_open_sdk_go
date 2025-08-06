@@ -82,6 +82,8 @@ func (r *ApiOpenApiV10QianchuanReportLiveGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV10QianchuanReportLiveGetGet Method for OpenApiV10QianchuanReportLiveGetGet
 
+获取今日直播数据。分析抖音号及直播间在竞价推广中的整体数据表现
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanReportLiveGetGetRequest
 */

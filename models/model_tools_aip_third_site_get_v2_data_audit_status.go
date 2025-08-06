@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAipThirdSiteGetV2DataAuditStatus
+// ToolsAipThirdSiteGetV2DataAuditStatus 站点审核状态
 type ToolsAipThirdSiteGetV2DataAuditStatus string
 
 // List of tools_aip_third_site_get_v2_data_audit_status

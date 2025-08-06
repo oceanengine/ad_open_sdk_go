@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30KeywordListGetRequest) WithLog(enable bool) *ApiOpenApiV30
 /*
 OpenApiV30KeywordListGet Method for OpenApiV30KeywordListGet
 
+搜索广告关键词查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30KeywordListGetRequest
 */

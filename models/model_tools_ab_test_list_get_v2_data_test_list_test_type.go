@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAbTestListGetV2DataTestListTestType
+// ToolsAbTestListGetV2DataTestListTestType 实验类型，`\"CAMPAIGN\"`：广告组，`\"AD\"`：广告计划。
 type ToolsAbTestListGetV2DataTestListTestType string
 
 // List of tools_ab_test_list_get_v2_data_test_list_test_type

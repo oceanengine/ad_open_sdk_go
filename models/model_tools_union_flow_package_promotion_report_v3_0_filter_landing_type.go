@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsUnionFlowPackagePromotionReportV30FilterLandingType
+// ToolsUnionFlowPackagePromotionReportV30FilterLandingType 推广目的，允许值：APP 应用推广、LINK 销售线索推广、MICRO_GAME 小程序、SHOP 电商店铺推广、QUICK_APP快应用、DPA商品目录
 type ToolsUnionFlowPackagePromotionReportV30FilterLandingType string
 
 // List of tools_union_flow_package_promotion_report_v3.0_filter_landing_type

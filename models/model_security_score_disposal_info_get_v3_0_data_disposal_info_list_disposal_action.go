@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SecurityScoreDisposalInfoGetV30DataDisposalInfoListDisposalAction
+// SecurityScoreDisposalInfoGetV30DataDisposalInfoListDisposalAction 处置行为
 type SecurityScoreDisposalInfoGetV30DataDisposalInfoListDisposalAction string
 
 // List of security_score_disposal_info_get_v3.0_data_disposal_info_list_disposal_action

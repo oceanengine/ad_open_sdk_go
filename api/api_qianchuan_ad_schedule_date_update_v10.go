@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAdScheduleDateUpdatePostRequest) WithLog(enable b
 /*
 OpenApiV10QianchuanAdScheduleDateUpdatePost Method for OpenApiV10QianchuanAdScheduleDateUpdatePost
 
+批量更新计划投放日期
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdScheduleDateUpdatePostRequest
 */

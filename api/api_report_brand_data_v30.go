@@ -101,6 +101,8 @@ func (r *ApiOpenApiV30ReportBrandDataGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30ReportBrandDataGet Method for OpenApiV30ReportBrandDataGet
 
+查询品牌自助2.0数据报表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportBrandDataGetRequest
 */

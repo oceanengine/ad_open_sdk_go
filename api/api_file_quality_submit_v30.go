@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30FileQualitySubmitPostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30FileQualitySubmitPost Method for OpenApiV30FileQualitySubmitPost
 
+素材属性提交分析
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30FileQualitySubmitPostRequest
 */

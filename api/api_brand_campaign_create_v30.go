@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandCampaignCreatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30BrandCampaignCreatePost Method for OpenApiV30BrandCampaignCreatePost
 
+AD品牌广告组创建
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandCampaignCreatePostRequest
 */

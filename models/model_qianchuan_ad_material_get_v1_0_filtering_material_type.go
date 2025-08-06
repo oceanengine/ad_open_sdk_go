@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAdMaterialGetV10FilteringMaterialType
+// QianchuanAdMaterialGetV10FilteringMaterialType 素材类型
 type QianchuanAdMaterialGetV10FilteringMaterialType string
 
 // List of qianchuan_ad_material_get_v1.0_filtering_material_type

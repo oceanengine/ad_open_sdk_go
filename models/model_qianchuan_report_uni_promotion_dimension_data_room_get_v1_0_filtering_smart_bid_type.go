@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanReportUniPromotionDimensionDataRoomGetV10FilteringSmartBidType
+// QianchuanReportUniPromotionDimensionDataRoomGetV10FilteringSmartBidType 投放方式
 type QianchuanReportUniPromotionDimensionDataRoomGetV10FilteringSmartBidType string
 
 // List of qianchuan_report_uni_promotion_dimension_data_room_get_v1.0_filtering_smart_bid_type

@@ -59,6 +59,8 @@ func (r *ApiOpenApiV30LocalFileVideoUploadTaskListGetRequest) WithLog(enable boo
 /*
 OpenApiV30LocalFileVideoUploadTaskListGet Method for OpenApiV30LocalFileVideoUploadTaskListGet
 
+查询异步上传本地推视频结果
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalFileVideoUploadTaskListGetRequest
 */

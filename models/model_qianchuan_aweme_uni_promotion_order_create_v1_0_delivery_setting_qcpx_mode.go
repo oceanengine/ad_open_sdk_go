@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeUniPromotionOrderCreateV10DeliverySettingQcpxMode
+// QianchuanAwemeUniPromotionOrderCreateV10DeliverySettingQcpxMode 是否开启智能优惠券
 type QianchuanAwemeUniPromotionOrderCreateV10DeliverySettingQcpxMode string
 
 // List of qianchuan_aweme_uni_promotion_order_create_v1.0_delivery_setting_qcpx_mode

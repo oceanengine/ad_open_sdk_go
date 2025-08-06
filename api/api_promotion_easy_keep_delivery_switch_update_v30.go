@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest) WithLog(
 /*
 OpenApiV30PromotionEasyKeepDeliverySwitchUpdatePost Method for OpenApiV30PromotionEasyKeepDeliverySwitchUpdatePost
 
+更新项目为续投或者停止续投
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest
 */

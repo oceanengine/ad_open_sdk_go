@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsDownloadPackageParsePostRequest) WithLog(enable bool) *
 /*
 OpenApi2ToolsDownloadPackageParsePost Method for OpenApi2ToolsDownloadPackageParsePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsDownloadPackageParsePostRequest
 */

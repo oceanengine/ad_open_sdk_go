@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AdvertiserUpdateBudgetV2BudgetMode
+// AdvertiserUpdateBudgetV2BudgetMode 预算模式
 type AdvertiserUpdateBudgetV2BudgetMode string
 
 // List of advertiser_update_budget_v2_budget_mode

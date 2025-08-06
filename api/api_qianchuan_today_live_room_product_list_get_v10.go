@@ -82,6 +82,8 @@ func (r *ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest) WithLog(en
 /*
 OpenApiV10QianchuanTodayLiveRoomProductListGetGet Method for OpenApiV10QianchuanTodayLiveRoomProductListGetGet
 
+获取直播间商品列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest
 */

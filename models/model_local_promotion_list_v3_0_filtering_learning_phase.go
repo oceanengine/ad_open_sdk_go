@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionListV30FilteringLearningPhase
+// LocalPromotionListV30FilteringLearningPhase 学习期状态筛选，默认不限
 type LocalPromotionListV30FilteringLearningPhase string
 
 // List of local_promotion_list_v3.0_filtering_learning_phase

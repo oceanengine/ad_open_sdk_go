@@ -113,6 +113,8 @@ func (r *ApiOpenApiV30LocalReportAccountGetGetRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30LocalReportAccountGetGet Method for OpenApiV30LocalReportAccountGetGet
 
+查询账户维度数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalReportAccountGetGetRequest
 */

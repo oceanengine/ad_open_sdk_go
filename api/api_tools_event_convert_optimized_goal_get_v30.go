@@ -100,6 +100,8 @@ func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) WithLog(enabl
 /*
 OpenApiV30ToolsEventConvertOptimizedGoalGetGet Method for OpenApiV30ToolsEventConvertOptimizedGoalGetGet
 
+支持建站和小程序资产获取优化目标
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectCreateV30AutoExtendTraffic
+// ProjectCreateV30AutoExtendTraffic 智能拓流开关
 type ProjectCreateV30AutoExtendTraffic string
 
 // List of project_create_v3.0_auto_extend_traffic

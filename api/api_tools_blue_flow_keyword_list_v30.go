@@ -65,6 +65,8 @@ func (r *ApiOpenApiV30ToolsBlueFlowKeywordListGetRequest) WithLog(enable bool) *
 /*
 OpenApiV30ToolsBlueFlowKeywordListGet Method for OpenApiV30ToolsBlueFlowKeywordListGet
 
+创建蓝海广告时，获取同项目下可用的蓝海关键词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsBlueFlowKeywordListGetRequest
 */

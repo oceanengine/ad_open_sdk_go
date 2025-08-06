@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionCreateV30LiveMaterialType
+// LocalPromotionCreateV30LiveMaterialType 直播素材类型设置 注意：仅在营销场景为直播时生效
 type LocalPromotionCreateV30LiveMaterialType string
 
 // List of local_promotion_create_v3.0_live_material_type

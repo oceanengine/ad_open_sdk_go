@@ -58,6 +58,10 @@ func (r *ApiOpenApi2ToolsSiteCopyPostRequest) WithLog(enable bool) *ApiOpenApi2T
 /*
 OpenApi2ToolsSiteCopyPost Method for OpenApi2ToolsSiteCopyPost
 
+通过此接口，用户可以实现站点的复制功能，成功后生成一个新站点id，站点内容和原站点一致。 注意
+
+用户在传入请求参数site_ids站点id列表时，需确保id的正确性，存在错误将导致复制全部失败！
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSiteCopyPostRequest
 */

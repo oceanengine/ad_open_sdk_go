@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalReportMaterialGetV30FilteringMaterialType
+// LocalReportMaterialGetV30FilteringMaterialType 素材类型
 type LocalReportMaterialGetV30FilteringMaterialType string
 
 // List of local_report_material_get_v3.0_filtering_material_type

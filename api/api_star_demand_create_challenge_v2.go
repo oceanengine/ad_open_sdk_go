@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarDemandCreateChallengePostRequest) WithLog(enable bool) *
 /*
 OpenApi2StarDemandCreateChallengePost Method for OpenApi2StarDemandCreateChallengePost
 
+投稿任务创建
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemandCreateChallengePostRequest
 */

@@ -64,6 +64,9 @@ func (r *ApiOpenApiV10QianchuanShopAuthorizedGetGetRequest) WithLog(enable bool)
 /*
 OpenApiV10QianchuanShopAuthorizedGetGet Method for OpenApiV10QianchuanShopAuthorizedGetGet
 
+在店铺新客场景下，支持广告主选择具体绑定的店铺进行新客投放
+投放到近365天未在该店铺下发生过成交订单的人群
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanShopAuthorizedGetGetRequest
 */

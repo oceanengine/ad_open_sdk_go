@@ -53,6 +53,8 @@ func (r *ApiOpenApiV10QianchuanAccountBalanceGetGetRequest) WithLog(enable bool)
 /*
 OpenApiV10QianchuanAccountBalanceGetGet Method for OpenApiV10QianchuanAccountBalanceGetGet
 
+获取账户余额，返回通用，竞价，品牌余额
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAccountBalanceGetGetRequest
 */

@@ -73,6 +73,8 @@ func (r *ApiOpenApiV30LocalProjectListGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV30LocalProjectListGet Method for OpenApiV30LocalProjectListGet
 
+拉取项目列表接口，支持各种筛选
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalProjectListGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeReportOrderGetV10FilteringExternalAction
+// QianchuanAwemeReportOrderGetV10FilteringExternalAction 优化目标，如果不填，默认查的是当前营销目标下的所有优化目标 当营销目标为直播带货时，允许值为： AD_CONVERT_TYPE_LIVE_CLICK_PRODUCT_ACTION: 直播间商品点击 AD_CONVERT_TYPE_LIVE_COMMENT_ACTION: 直播间评论 AD_CONVERT_TYPE_LIVE_ENTER_ACTION: 进入直播间 AD_CONVERT_TYPE_LIVE_ROI: 直播间支付ROI AD_CONVERT_TYPE_LIVE_SUCCESSORDER_ACTION: 直播间下单 AD_CONVERT_TYPE_LIVE_SUCCESSORDER_PAY: 直播间成交 AD_CONVERT_TYPE_NEW_FOLLOW_ACTION: 直播间粉丝提升  当营销目标为短视频带货时，允许值： AD_CONVERT_TYPE_QC_FOLLOW_ACTION: 粉丝提升 AD_CONVERT_TYPE_QC_MUST_BUY: 点赞评论 AD_CONVERT_TYPE_SHOPPING: 商品购买 商品支付ROIAD_CONVERT_TYPE_VIDEO_ROI
 type QianchuanAwemeReportOrderGetV10FilteringExternalAction string
 
 // List of qianchuan_aweme_report_order_get_v1.0_filtering_external_action

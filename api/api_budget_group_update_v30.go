@@ -52,6 +52,13 @@ func (r *ApiOpenApiV30BudgetGroupUpdatePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30BudgetGroupUpdatePost Method for OpenApiV30BudgetGroupUpdatePost
 
+更新预算组名称和日预算
+
+注意：
+1. 名称不能跟未删除的预算组重名
+2. 预算不得低于关联的项目、广告出价，不得低于已有消耗
+2. 一天最多更新 20 次
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BudgetGroupUpdatePostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentCreditChargeSubmitV2ContractInfoDeliveryType
+// AgentCreditChargeSubmitV2ContractInfoDeliveryType 充值的资金池
 type AgentCreditChargeSubmitV2ContractInfoDeliveryType string
 
 // List of agent_credit_charge_submit_v2_contract_info_delivery_type

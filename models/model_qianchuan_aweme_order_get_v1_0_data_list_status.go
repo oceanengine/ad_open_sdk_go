@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeOrderGetV10DataListStatus
+// QianchuanAwemeOrderGetV10DataListStatus 订单状态
 type QianchuanAwemeOrderGetV10DataListStatus string
 
 // List of qianchuan_aweme_order_get_v1.0_data_list_status

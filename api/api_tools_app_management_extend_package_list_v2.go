@@ -76,6 +76,8 @@ func (r *ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest) WithLog(enabl
 /*
 OpenApi2ToolsAppManagementExtendPackageListGet Method for OpenApi2ToolsAppManagementExtendPackageListGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest
 */

@@ -70,6 +70,8 @@ func (r *ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest) WithLog(enable bool) *
 /*
 OpenApi2ToolsAdvertiserStoreSearchGet Method for OpenApi2ToolsAdvertiserStoreSearchGet
 
+搜索门店接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest
 */

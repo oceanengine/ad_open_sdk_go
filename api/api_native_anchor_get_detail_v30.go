@@ -64,6 +64,8 @@ func (r *ApiOpenApiV30NativeAnchorGetDetailGetRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30NativeAnchorGetDetailGet Method for OpenApiV30NativeAnchorGetDetailGet
 
+根据锚点唯一id，获取到锚点详情
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30NativeAnchorGetDetailGetRequest
 */

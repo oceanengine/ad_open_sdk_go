@@ -64,6 +64,8 @@ func (r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) WithLog(enable bool
 /*
 OpenApiV30ToolsInactiveAdvertiserListGet Method for OpenApiV30ToolsInactiveAdvertiserListGet
 
+查询近期请求记录中不活跃的账户列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest
 */

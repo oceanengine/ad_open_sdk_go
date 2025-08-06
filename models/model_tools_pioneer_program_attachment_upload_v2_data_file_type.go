@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsPioneerProgramAttachmentUploadV2DataFileType
+// ToolsPioneerProgramAttachmentUploadV2DataFileType 数据文件类型
 type ToolsPioneerProgramAttachmentUploadV2DataFileType string
 
 // List of tools_pioneer_program_attachment_upload_v2_data_file_type

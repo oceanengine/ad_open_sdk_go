@@ -70,6 +70,8 @@ func (r *ApiOpenApiV10QianchuanCampaignListGetGetRequest) WithLog(enable bool) *
 /*
 OpenApiV10QianchuanCampaignListGetGet Method for OpenApiV10QianchuanCampaignListGetGet
 
+本接口用于获取账户下的广告组列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanCampaignListGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectCreateV30StarAutoMaterialAdditionSwitch
+// ProjectCreateV30StarAutoMaterialAdditionSwitch 星广联投三期-自动素材优选
 type ProjectCreateV30StarAutoMaterialAdditionSwitch string
 
 // List of project_create_v3.0_star_auto_material_addition_switch

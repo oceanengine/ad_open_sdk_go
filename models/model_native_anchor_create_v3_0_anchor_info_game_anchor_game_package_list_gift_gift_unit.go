@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// NativeAnchorCreateV30AnchorInfoGameAnchorGamePackageListGiftGiftUnit
+// NativeAnchorCreateV30AnchorInfoGameAnchorGamePackageListGiftGiftUnit 礼品单位
 type NativeAnchorCreateV30AnchorInfoGameAnchorGamePackageListGiftGiftUnit string
 
 // List of native_anchor_create_v3.0_anchor_info_game_anchor_game_package_list_gift_gift_unit

@@ -76,6 +76,8 @@ func (r *ApiOpenApiV10QianchuanAdGetGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV10QianchuanAdGetGet Method for OpenApiV10QianchuanAdGetGet
 
+用于获取千川广告账户下创建的计划列表（不含创意部分） 默认可以拉取全部计划详情，可以通过过滤拉取部分计划
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdGetGetRequest
 */

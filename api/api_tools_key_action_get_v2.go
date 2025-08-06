@@ -76,6 +76,8 @@ func (r *ApiOpenApi2ToolsKeyActionGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2ToolsKeyActionGetGet Method for OpenApi2ToolsKeyActionGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsKeyActionGetGetRequest
 */

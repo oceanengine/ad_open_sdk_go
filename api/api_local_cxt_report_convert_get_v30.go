@@ -72,6 +72,8 @@ func (r *ApiOpenApiV30LocalCxtReportConvertGetGetRequest) WithLog(enable bool) *
 /*
 OpenApiV30LocalCxtReportConvertGetGet Method for OpenApiV30LocalCxtReportConvertGetGet
 
+获取持续投转化效果数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalCxtReportConvertGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30AudienceConvertedTimeDuration
+// LocalProjectCreateV30AudienceConvertedTimeDuration 过滤时间 注意：当hide_if_converted设置为CUSTOMER或ORGANIZATION，该字段必填，其余场景该字段不支持设置。
 type LocalProjectCreateV30AudienceConvertedTimeDuration string
 
 // List of local_project_create_v3.0_audience_converted_time_duration

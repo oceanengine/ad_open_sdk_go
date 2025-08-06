@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreativeDetailGetV30DataAdDataAnchorRelatedType
+// CreativeDetailGetV30DataAdDataAnchorRelatedType 原生锚点启用类型
 type CreativeDetailGetV30DataAdDataAnchorRelatedType string
 
 // List of creative_detail_get_v3.0_data_ad_data_anchor_related_type

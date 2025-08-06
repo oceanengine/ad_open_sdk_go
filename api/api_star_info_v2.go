@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarInfoGetRequest) WithLog(enable bool) *ApiOpenApi2StarInf
 /*
 OpenApi2StarInfoGet Method for OpenApi2StarInfoGet
 
+代理商获取星图客户全量信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarInfoGetRequest
 */

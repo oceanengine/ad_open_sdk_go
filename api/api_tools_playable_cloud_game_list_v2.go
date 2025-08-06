@@ -70,6 +70,8 @@ func (r *ApiOpenApi2ToolsPlayableCloudGameListGetRequest) WithLog(enable bool) *
 /*
 OpenApi2ToolsPlayableCloudGameListGet Method for OpenApi2ToolsPlayableCloudGameListGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPlayableCloudGameListGetRequest
 */

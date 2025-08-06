@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AdvertiserQualificationGetGetRequest) WithLog(enable bool)
 /*
 OpenApiV30AdvertiserQualificationGetGet Method for OpenApiV30AdvertiserQualificationGetGet
 
+获取广告主资质信息为全量接口，会返回广告主所有资质，注意如果广告主没有任何资质，这个接口的data将会是空。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AdvertiserQualificationGetGetRequest
 */

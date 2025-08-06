@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2DataListSystemOrigin
+// AgentAdvCostReportListQueryV2DataListSystemOrigin 是否放心购(0: 否 1: 是)
 type AgentAdvCostReportListQueryV2DataListSystemOrigin int64
 
 // List of agent_adv_cost_report_list_query_v2_data_list_system_origin

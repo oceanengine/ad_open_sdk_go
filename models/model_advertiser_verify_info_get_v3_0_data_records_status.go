@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AdvertiserVerifyInfoGetV30DataRecordsStatus
+// AdvertiserVerifyInfoGetV30DataRecordsStatus 对公验证状态
 type AdvertiserVerifyInfoGetV30DataRecordsStatus string
 
 // List of advertiser_verify_info_get_v3.0_data_records_status

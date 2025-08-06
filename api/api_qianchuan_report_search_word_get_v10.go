@@ -114,6 +114,9 @@ func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) WithLog(enable boo
 /*
 OpenApiV10QianchuanReportSearchWordGetGet Method for OpenApiV10QianchuanReportSearchWordGetGet
 
+获取搜索词/关键词数据明细
+https://bytedance.feishu.cn/wiki/wikcnIR2vVK0hZVlVLAWJ9dGpFb
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanReportSearchWordGetGetRequest
 */

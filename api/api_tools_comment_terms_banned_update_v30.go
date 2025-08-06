@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsCommentTermsBannedUpdatePostRequest) WithLog(enable b
 /*
 OpenApiV30ToolsCommentTermsBannedUpdatePost Method for OpenApiV30ToolsCommentTermsBannedUpdatePost
 
+PM2
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsCommentTermsBannedUpdatePostRequest
 */

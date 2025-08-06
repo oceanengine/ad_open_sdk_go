@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderUpdateV30AudienceInfoAc
+// BrandOrderUpdateV30AudienceInfoAc 网络
 type BrandOrderUpdateV30AudienceInfoAc string
 
 // List of brand_order_update_v3.0_audience_info_ac

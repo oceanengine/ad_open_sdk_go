@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest) WithLog(ena
 /*
 OpenApi2ToolsLandingGroupSiteOptStatusUpdatePost Method for OpenApi2ToolsLandingGroupSiteOptStatusUpdatePost
 
+通过此接口，用户可以修改落地页组站点的启用状态。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest
 */

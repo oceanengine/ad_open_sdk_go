@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest) WithLog(enable b
 /*
 OpenApi2ToolsTaskRaiseOptimizationIdsGetGet Method for OpenApi2ToolsTaskRaiseOptimizationIdsGetGet
 
+查询优选起量状态
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest) Wit
 /*
 OpenApi2ToolsAppManagementAndroidBasicPackagePublishPost Method for OpenApi2ToolsAppManagementAndroidBasicPackagePublishPost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest
 */

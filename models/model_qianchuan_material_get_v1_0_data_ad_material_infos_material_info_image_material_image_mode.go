@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanMaterialGetV10DataAdMaterialInfosMaterialInfoImageMaterialImageMode
+// QianchuanMaterialGetV10DataAdMaterialInfosMaterialInfoImageMaterialImageMode 图片创意样式，需要一个枚举
 type QianchuanMaterialGetV10DataAdMaterialInfosMaterialInfoImageMaterialImageMode string
 
 // List of qianchuan_material_get_v1.0_data_ad_material_infos_material_info_image_material_image_mode

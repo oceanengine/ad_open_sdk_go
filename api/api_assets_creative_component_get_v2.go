@@ -70,6 +70,8 @@ func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) WithLog(enable bool) *
 /*
 OpenApi2AssetsCreativeComponentGetGet Method for OpenApi2AssetsCreativeComponentGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AssetsCreativeComponentGetGetRequest
 */

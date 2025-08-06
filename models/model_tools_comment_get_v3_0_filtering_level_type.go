@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsCommentGetV30FilteringLevelType
+// ToolsCommentGetV30FilteringLevelType 查询的评论等级，允许值： LEVEL_ONE 一级评论， LEVEL_TWO 二级评论 LEVEL_ALL 所有评论（默认值）
 type ToolsCommentGetV30FilteringLevelType string
 
 // List of tools_comment_get_v3.0_filtering_level_type

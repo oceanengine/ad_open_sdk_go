@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueCallbackPostRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2ToolsClueCallbackPost Method for OpenApi2ToolsClueCallbackPost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueCallbackPostRequest
 */

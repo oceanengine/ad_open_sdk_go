@@ -59,6 +59,8 @@ func (r *ApiOpenApi2QueryInvoiceTaxGetRequest) WithLog(enable bool) *ApiOpenApi2
 /*
 OpenApi2QueryInvoiceTaxGet Method for OpenApi2QueryInvoiceTaxGet
 
+通过开票编号查询开票单税控信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2QueryInvoiceTaxGetRequest
 */

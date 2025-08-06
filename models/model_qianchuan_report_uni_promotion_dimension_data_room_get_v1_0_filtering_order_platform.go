@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanReportUniPromotionDimensionDataRoomGetV10FilteringOrderPlatform
+// QianchuanReportUniPromotionDimensionDataRoomGetV10FilteringOrderPlatform 下单平台
 type QianchuanReportUniPromotionDimensionDataRoomGetV10FilteringOrderPlatform string
 
 // List of qianchuan_report_uni_promotion_dimension_data_room_get_v1.0_filtering_order_platform

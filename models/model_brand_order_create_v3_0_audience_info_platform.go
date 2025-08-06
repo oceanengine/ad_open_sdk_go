@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderCreateV30AudienceInfoPlatform
+// BrandOrderCreateV30AudienceInfoPlatform 平台
 type BrandOrderCreateV30AudienceInfoPlatform string
 
 // List of brand_order_create_v3.0_audience_info_platform

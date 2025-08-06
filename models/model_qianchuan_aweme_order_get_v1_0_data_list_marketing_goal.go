@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeOrderGetV10DataListMarketingGoal
+// QianchuanAwemeOrderGetV10DataListMarketingGoal 营销目标
 type QianchuanAwemeOrderGetV10DataListMarketingGoal string
 
 // List of qianchuan_aweme_order_get_v1.0_data_list_marketing_goal

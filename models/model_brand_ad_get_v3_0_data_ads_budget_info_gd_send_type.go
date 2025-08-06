@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsBudgetInfoGdSendType
+// BrandAdGetV30DataAdsBudgetInfoGdSendType 优化目标
 type BrandAdGetV30DataAdsBudgetInfoGdSendType int64
 
 // List of brand_ad_get_v3.0_data_ads_budget_info_gd_send_type

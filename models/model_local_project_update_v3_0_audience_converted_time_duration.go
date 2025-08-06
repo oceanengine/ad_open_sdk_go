@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectUpdateV30AudienceConvertedTimeDuration
+// LocalProjectUpdateV30AudienceConvertedTimeDuration 过滤已转化投放时间
 type LocalProjectUpdateV30AudienceConvertedTimeDuration string
 
 // List of local_project_update_v3.0_audience_converted_time_duration

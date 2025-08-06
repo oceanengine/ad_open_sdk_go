@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementExtendPackageUpdateV2V2AccountType
+// ToolsAppManagementExtendPackageUpdateV2V2AccountType 账户类型，允许值：AD 广告主账户，BP巨量引擎工作台-升级版/旧版，STAR 星图
 type ToolsAppManagementExtendPackageUpdateV2V2AccountType string
 
 // List of tools_app_management_extend_package_update_v2_v2_account_type

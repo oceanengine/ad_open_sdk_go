@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30ReportCustomAsyncTaskDownloadGetRequest) WithLog(enable bo
 /*
 OpenApiV30ReportCustomAsyncTaskDownloadGet Method for OpenApiV30ReportCustomAsyncTaskDownloadGet
 
+自定义报表-获取下载结果
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportCustomAsyncTaskDownloadGetRequest
 */

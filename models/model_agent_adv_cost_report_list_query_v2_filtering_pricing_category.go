@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2FilteringPricingCategory
+// AgentAdvCostReportListQueryV2FilteringPricingCategory 广告类型
 type AgentAdvCostReportListQueryV2FilteringPricingCategory int64
 
 // List of agent_adv_cost_report_list_query_v2_filtering_pricing_category

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanReportAdvertiserGetV10FilteringMarketingGoal
+// QianchuanReportAdvertiserGetV10FilteringMarketingGoal 营销目标，允许值： - `ALL` 全部 - `VIDEO_PROM_GOODS` 推商品 - `LIVE_PROM_GOODS` 推直播间
 type QianchuanReportAdvertiserGetV10FilteringMarketingGoal string
 
 // List of qianchuan_report_advertiser_get_v1.0_filtering_marketing_goal

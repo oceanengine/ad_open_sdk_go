@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ToolsClueGetGetRequest) WithLog(enable bool) *ApiOpenApi2Too
 /*
 OpenApi2ToolsClueGetGet Method for OpenApi2ToolsClueGetGet
 
+该接口用于获取广告主的飞鱼线索列表。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueGetGetRequest
 */

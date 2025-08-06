@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsMicroGameConvertWindowGetV30DataConvertWindow
+// ToolsMicroGameConvertWindowGetV30DataConvertWindow 时间窗口
 type ToolsMicroGameConvertWindowGetV30DataConvertWindow string
 
 // List of tools_micro_game_convert_window_get_v3.0_data_convert_window

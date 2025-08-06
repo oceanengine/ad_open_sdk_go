@@ -91,6 +91,8 @@ func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) WithLog(enable bool) 
 /*
 OpenApiV10QianchuanCarouselAwemeGetGet Method for OpenApiV10QianchuanCarouselAwemeGetGet
 
+通过商品id获取抖音号下已有的图文素材，当前仅短视频带货支持，必须传商品id
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest
 */

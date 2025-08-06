@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30CgTransferCreateTransferPostRequest) WithLog(enable bool) 
 /*
 OpenApiV30CgTransferCreateTransferPost Method for OpenApiV30CgTransferCreateTransferPost
 
+发起转账，支持1:N转账、不停投转账、虚客互转
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30CgTransferCreateTransferPostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DpaAssetV2DetailReadV2DataAssetListAssetType
+// DpaAssetV2DetailReadV2DataAssetListAssetType 投放条件类型
 type DpaAssetV2DetailReadV2DataAssetListAssetType string
 
 // List of dpa_asset_v2_detail_read_v2_data_asset_list_asset_type

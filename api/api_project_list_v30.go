@@ -76,6 +76,8 @@ func (r *ApiOpenApiV30ProjectListGetRequest) WithLog(enable bool) *ApiOpenApiV30
 /*
 OpenApiV30ProjectListGet Method for OpenApiV30ProjectListGet
 
+创编2.0获取项目列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ProjectListGetRequest
 */

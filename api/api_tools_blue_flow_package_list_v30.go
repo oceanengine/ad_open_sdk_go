@@ -59,6 +59,8 @@ func (r *ApiOpenApiV30ToolsBlueFlowPackageListGetRequest) WithLog(enable bool) *
 /*
 OpenApiV30ToolsBlueFlowPackageListGet Method for OpenApiV30ToolsBlueFlowPackageListGet
 
+按照广告主ID，获取蓝海流量包列表，支持按照包名称或ID进行筛选
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsBlueFlowPackageListGetRequest
 */

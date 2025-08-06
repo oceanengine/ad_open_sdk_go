@@ -81,6 +81,8 @@ func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) WithLog(enable b
 /*
 OpenApiV30SecurityScoreViolationEventGetGet Method for OpenApiV30SecurityScoreViolationEventGetGet
 
+违规积分明细查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SecurityScoreViolationEventGetGetRequest
 */

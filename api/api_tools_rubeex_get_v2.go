@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ToolsRubeexGetGetRequest) WithLog(enable bool) *ApiOpenApi2T
 /*
 OpenApi2ToolsRubeexGetGet Method for OpenApi2ToolsRubeexGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsRubeexGetGetRequest
 */

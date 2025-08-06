@@ -116,6 +116,8 @@ func (r *ApiOpenApiV30BrandMaterialListGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30BrandMaterialListGet Method for OpenApiV30BrandMaterialListGet
 
+查询品牌自助2.0素材列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandMaterialListGetRequest
 */

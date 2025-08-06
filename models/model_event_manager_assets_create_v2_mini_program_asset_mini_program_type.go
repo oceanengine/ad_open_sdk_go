@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// EventManagerAssetsCreateV2MiniProgramAssetMiniProgramType
+// EventManagerAssetsCreateV2MiniProgramAssetMiniProgramType 小程序类型，目前支持：BYTE_APP，BYTE_GAME
 type EventManagerAssetsCreateV2MiniProgramAssetMiniProgramType string
 
 // List of event_manager_assets_create_v2_mini_program_asset_mini_program_type

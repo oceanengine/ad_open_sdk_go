@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsMicroGameCreateV30RevenueModel
+// ToolsMicroGameCreateV30RevenueModel 变现模式
 type ToolsMicroGameCreateV30RevenueModel string
 
 // List of tools_micro_game_create_v3.0_revenue_model

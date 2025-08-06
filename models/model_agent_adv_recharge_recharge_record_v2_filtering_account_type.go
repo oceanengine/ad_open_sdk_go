@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvRechargeRechargeRecordV2FilteringAccountType
+// AgentAdvRechargeRechargeRecordV2FilteringAccountType 账户类型
 type AgentAdvRechargeRechargeRecordV2FilteringAccountType string
 
 // List of agent_adv_recharge_recharge_record_v2_filtering_account_type

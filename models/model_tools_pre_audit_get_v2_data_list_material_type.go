@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsPreAuditGetV2DataListMaterialType
+// ToolsPreAuditGetV2DataListMaterialType 物料类型
 type ToolsPreAuditGetV2DataListMaterialType string
 
 // List of tools_pre_audit_get_v2_data_list_material_type

@@ -88,6 +88,9 @@ func (r *ApiOpenApiV10QianchuanProductAnalyseListGetRequest) WithLog(enable bool
 /*
 OpenApiV10QianchuanProductAnalyseListGet Method for OpenApiV10QianchuanProductAnalyseListGet
 
+获取商品竞争分析列表
+prd:https://bytedance.feishu.cn/wiki/TC0DwmRPniehkDkAtkUc78FInag
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanProductAnalyseListGetRequest
 */

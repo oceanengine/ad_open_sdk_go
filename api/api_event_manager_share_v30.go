@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30EventManagerSharePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30EventManagerSharePost Method for OpenApiV30EventManagerSharePost
 
+事件管理资产共享
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30EventManagerSharePostRequest
 */

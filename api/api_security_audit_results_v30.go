@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30SecurityAuditResultsGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30SecurityAuditResultsGet Method for OpenApiV30SecurityAuditResultsGet
 
+拉取送审对象ID的审核结果
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SecurityAuditResultsGetRequest
 */

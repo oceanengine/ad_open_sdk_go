@@ -95,6 +95,8 @@ func (r *ApiOpenApiV30SharedWalletDailyStatGetGetRequest) WithLog(enable bool) *
 /*
 OpenApiV30SharedWalletDailyStatGetGet Method for OpenApiV30SharedWalletDailyStatGetGet
 
+资金共享-查询共享钱包日流水信息，一般每天8点会出来前一天的数据，如果当天存在数据延迟可往后再尝试。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SharedWalletDailyStatGetGetRequest
 */

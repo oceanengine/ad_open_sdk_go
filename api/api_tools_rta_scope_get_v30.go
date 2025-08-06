@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30ToolsRtaScopeGetGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV30ToolsRtaScopeGetGet Method for OpenApiV30ToolsRtaScopeGetGet
 
+获取RTA策略下的项目(广告组)列表，一个rta策略要么绑定campaign要么绑定project，不可能同时绑定
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsRtaScopeGetGetRequest
 */

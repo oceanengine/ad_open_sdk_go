@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsRtaSetScopePostRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2ToolsRtaSetScopePost Method for OpenApi2ToolsRtaSetScopePost
 
+设置广告账户下某个RTA策略的生效范围，设置一个新的RTA策略时，默认为停用状态，需要继续调用修改RTA策略状态
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsRtaSetScopePostRequest
 */

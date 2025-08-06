@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DpaAssetV2ListV2FilteringStatus
+// DpaAssetV2ListV2FilteringStatus 投放条件状态， 0代表暂停， 1代表启用
 type DpaAssetV2ListV2FilteringStatus string
 
 // List of dpa_asset_v2_list_v2_filtering_status

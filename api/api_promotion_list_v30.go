@@ -97,6 +97,8 @@ func (r *ApiOpenApiV30PromotionListGetRequest) WithLog(enable bool) *ApiOpenApiV
 /*
 OpenApiV30PromotionListGet Method for OpenApiV30PromotionListGet
 
+创编2.0广告列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionListGetRequest
 */

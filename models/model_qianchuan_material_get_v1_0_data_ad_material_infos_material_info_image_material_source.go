@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanMaterialGetV10DataAdMaterialInfosMaterialInfoImageMaterialSource
+// QianchuanMaterialGetV10DataAdMaterialInfosMaterialInfoImageMaterialSource 来源信息
 type QianchuanMaterialGetV10DataAdMaterialInfosMaterialInfoImageMaterialSource string
 
 // List of qianchuan_material_get_v1.0_data_ad_material_infos_material_info_image_material_source

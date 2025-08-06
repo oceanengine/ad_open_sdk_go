@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AicElementUpdatePostRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30AicElementUpdatePost Method for OpenApiV30AicElementUpdatePost
 
+根据原料库的元素id，更新名称或者路径
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AicElementUpdatePostRequest
 */

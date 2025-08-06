@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsSiteFormsListGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2ToolsSiteFormsListGet Method for OpenApi2ToolsSiteFormsListGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSiteFormsListGetRequest
 */

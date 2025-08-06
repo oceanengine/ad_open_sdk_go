@@ -60,6 +60,8 @@ func (r *ApiOpenApi2FileImageAdGetGetRequest) WithLog(enable bool) *ApiOpenApi2F
 /*
 OpenApi2FileImageAdGetGet Method for OpenApi2FileImageAdGetGet
 
+通过此接口，用户可以查询获取同主体下的广告主图片素材信息。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileImageAdGetGetRequest
 */

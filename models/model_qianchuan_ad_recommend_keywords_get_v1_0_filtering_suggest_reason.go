@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAdRecommendKeywordsGetV10FilteringSuggestReason
+// QianchuanAdRecommendKeywordsGetV10FilteringSuggestReason 推荐理由类型： 黑马词DARKHORSE、 蓝海词POTENTIAL、 高点击词CLICK、 同行买词PREFERENCE、 低成本词LOW_COST
 type QianchuanAdRecommendKeywordsGetV10FilteringSuggestReason string
 
 // List of qianchuan_ad_recommend_keywords_get_v1.0_filtering_suggest_reason

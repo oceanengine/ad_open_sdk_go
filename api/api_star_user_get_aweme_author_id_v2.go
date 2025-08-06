@@ -58,6 +58,8 @@ func (r *ApiOpenApi2StarUserGetAwemeAuthorIdGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2StarUserGetAwemeAuthorIdGet Method for OpenApi2StarUserGetAwemeAuthorIdGet
 
+根据star_id反查抖音aweme_author_id
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarUserGetAwemeAuthorIdGetRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AgentRefundTransferSeqCommitPostRequest) WithLog(enable bool
 /*
 OpenApi2AgentRefundTransferSeqCommitPost Method for OpenApi2AgentRefundTransferSeqCommitPost
 
+退款接口分为两步, 包含创建退款接口 和 提交退款接口，本接口为第二步
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentRefundTransferSeqCommitPostRequest
 */

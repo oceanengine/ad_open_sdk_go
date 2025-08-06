@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreateProjectInvoiceV2InvoiceType
+// CreateProjectInvoiceV2InvoiceType 开票类型
 type CreateProjectInvoiceV2InvoiceType string
 
 // List of create_project_invoice_v2_invoice_type

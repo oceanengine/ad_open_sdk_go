@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionRejectReasonGetV30DataListPromotionRejectContent
+// PromotionRejectReasonGetV30DataListPromotionRejectContent 审核项
 type PromotionRejectReasonGetV30DataListPromotionRejectContent string
 
 // List of promotion_reject_reason_get_v3.0_data_list_promotion_reject_content

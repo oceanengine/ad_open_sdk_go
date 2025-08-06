@@ -67,6 +67,8 @@ func (r *ApiOpenApi2ToolsRtaGetInfoGetRequest) WithLog(enable bool) *ApiOpenApi2
 /*
 OpenApi2ToolsRtaGetInfoGet Method for OpenApi2ToolsRtaGetInfoGet
 
+获取账户/组RTA策略设置
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsRtaGetInfoGetRequest
 */

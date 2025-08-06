@@ -95,6 +95,8 @@ func (r *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest) WithLog(enable bool) 
 /*
 OpenApiV10QianchuanTodayLiveRoomGetGet Method for OpenApiV10QianchuanTodayLiveRoomGetGet
 
+获取直播列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest
 */

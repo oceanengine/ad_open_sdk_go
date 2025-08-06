@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ProjectBudgetUpdatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30ProjectBudgetUpdatePost Method for OpenApiV30ProjectBudgetUpdatePost
 
+创编2.0批量更新项目预算
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ProjectBudgetUpdatePostRequest
 */

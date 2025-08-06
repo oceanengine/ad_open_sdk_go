@@ -52,6 +52,8 @@ func (r *ApiOpenApi2EventManagerAuthEnablePostRequest) WithLog(enable bool) *Api
 /*
 OpenApi2EventManagerAuthEnablePost Method for OpenApi2EventManagerAuthEnablePost
 
+# API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EventManagerAuthEnablePostRequest
 */

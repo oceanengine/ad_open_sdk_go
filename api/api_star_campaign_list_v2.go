@@ -74,6 +74,8 @@ func (r *ApiOpenApi2StarCampaignListGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2StarCampaignListGet Method for OpenApi2StarCampaignListGet
 
+获取需求列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarCampaignListGetRequest
 */

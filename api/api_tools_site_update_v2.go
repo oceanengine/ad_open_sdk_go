@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsSiteUpdatePostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2ToolsSiteUpdatePost Method for OpenApi2ToolsSiteUpdatePost
 
+通过此接口，用户可以修改站点的基本信息。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSiteUpdatePostRequest
 */

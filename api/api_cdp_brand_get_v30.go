@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30CdpBrandGetGetRequest) WithLog(enable bool) *ApiOpenApiV30
 /*
 OpenApiV30CdpBrandGetGet Method for OpenApiV30CdpBrandGetGet
 
+查询云图品牌信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30CdpBrandGetGetRequest
 */

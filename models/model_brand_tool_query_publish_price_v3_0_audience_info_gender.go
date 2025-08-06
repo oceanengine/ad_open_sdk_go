@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandToolQueryPublishPriceV30AudienceInfoGender
+// BrandToolQueryPublishPriceV30AudienceInfoGender 性别
 type BrandToolQueryPublishPriceV30AudienceInfoGender string
 
 // List of brand_tool_query_publish_price_v3.0_audience_info_gender

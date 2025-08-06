@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsAppManagementBpSharePostRequest) WithLog(enable bool) *
 /*
 OpenApi2ToolsAppManagementBpSharePost Method for OpenApi2ToolsAppManagementBpSharePost
 
+设置应用共享【增量共享】 通过请求参数organization_id 巨量纵横组织id、package_id应用包id和share_mode 共享类型 新增应用共享
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementBpSharePostRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AdvertiserAvatarGetGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApi2AdvertiserAvatarGetGet Method for OpenApi2AdvertiserAvatarGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdvertiserAvatarGetGetRequest
 */

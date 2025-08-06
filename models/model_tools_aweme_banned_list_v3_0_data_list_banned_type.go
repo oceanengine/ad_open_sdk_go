@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAwemeBannedListV30DataListBannedType
+// ToolsAwemeBannedListV30DataListBannedType 屏蔽类型， CUSTOM_TYPE：自定义规则，根据昵称关键词屏蔽；AWEME_TYPE：根据抖音id屏蔽。
 type ToolsAwemeBannedListV30DataListBannedType string
 
 // List of tools_aweme_banned_list_v3.0_data_list_banned_type

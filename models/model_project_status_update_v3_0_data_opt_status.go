@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectStatusUpdateV30DataOptStatus
+// ProjectStatusUpdateV30DataOptStatus 目标操作， 允许值：ENABLE 启用项目、DISABLE暂停项目。 对于删除的广告项目不可进行任何操作，否则会报错。
 type ProjectStatusUpdateV30DataOptStatus string
 
 // List of project_status_update_v3.0_data_opt_status

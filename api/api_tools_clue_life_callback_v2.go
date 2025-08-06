@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueLifeCallbackPostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ToolsClueLifeCallbackPost Method for OpenApi2ToolsClueLifeCallbackPost
 
+回传本地推深转事件
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueLifeCallbackPostRequest
 */

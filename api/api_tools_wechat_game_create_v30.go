@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsWechatGameCreatePostRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV30ToolsWechatGameCreatePost Method for OpenApiV30ToolsWechatGameCreatePost
 
+mapi场景创建微信小游戏
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsWechatGameCreatePostRequest
 */

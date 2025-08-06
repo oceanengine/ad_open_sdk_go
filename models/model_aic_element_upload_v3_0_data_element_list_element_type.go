@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicElementUploadV30DataElementListElementType
+// AicElementUploadV30DataElementListElementType 元素类型
 type AicElementUploadV30DataElementListElementType string
 
 // List of aic_element_upload_v3.0_data_element_list_element_type

@@ -157,6 +157,8 @@ func (r *ApiOpenApi2QueryInvoiceSelfGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2QueryInvoiceSelfGet Method for OpenApi2QueryInvoiceSelfGet
 
+获取开票列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2QueryInvoiceSelfGetRequest
 */

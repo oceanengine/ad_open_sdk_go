@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsBpAssetManagementSharePostRequest) WithLog(enable boo
 /*
 OpenApiV30ToolsBpAssetManagementSharePost Method for OpenApiV30ToolsBpAssetManagementSharePost
 
+通用接口，目前支持小游戏、小程序资产
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsBpAssetManagementSharePostRequest
 */

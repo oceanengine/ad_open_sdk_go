@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CgTransferWalletTransferCreateV30AccountType
+// CgTransferWalletTransferCreateV30AccountType 鉴权账户类型
 type CgTransferWalletTransferCreateV30AccountType string
 
 // List of cg_transfer_wallet_transfer_create_v3.0_account_type

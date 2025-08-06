@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest) WithLog(
 /*
 OpenApiV30AdvertiserDeliveryQualificationSubmitPost Method for OpenApiV30AdvertiserDeliveryQualificationSubmitPost
 
+本接口用于广告主提交投放资质
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest
 */

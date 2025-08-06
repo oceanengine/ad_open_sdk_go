@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAudienceCreateByFilePostRequest) WithLog(enable b
 /*
 OpenApiV10QianchuanAudienceCreateByFilePost Method for OpenApiV10QianchuanAudienceCreateByFilePost
 
+https://bytedance.feishu.cn/wiki/wikcnBy344NTluLkMQ9anjV5nff
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAudienceCreateByFilePostRequest
 */

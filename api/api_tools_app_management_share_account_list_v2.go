@@ -76,6 +76,8 @@ func (r *ApiOpenApi2ToolsAppManagementShareAccountListGetRequest) WithLog(enable
 /*
 OpenApi2ToolsAppManagementShareAccountListGet Method for OpenApi2ToolsAppManagementShareAccountListGet
 
+查询应用共享范围 可通过请求参数organization_id 巨量纵横组织id和package_id应用包id，查询巨量纵横组织下某个应用的共享范围，具体返回信息见返回参数
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementShareAccountListGetRequest
 */

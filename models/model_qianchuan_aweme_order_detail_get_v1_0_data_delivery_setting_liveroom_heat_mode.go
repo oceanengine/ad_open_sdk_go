@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeOrderDetailGetV10DataDeliverySettingLiveroomHeatMode
+// QianchuanAwemeOrderDetailGetV10DataDeliverySettingLiveroomHeatMode 直播间的加热方式
 type QianchuanAwemeOrderDetailGetV10DataDeliverySettingLiveroomHeatMode string
 
 // List of qianchuan_aweme_order_detail_get_v1.0_data_delivery_setting_liveroom_heat_mode

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandCreativeGetV30DataCreativesCreativeInteractiveModuleCreativeInteractiveMode
+// BrandCreativeGetV30DataCreativesCreativeInteractiveModuleCreativeInteractiveMode 交互方式
 type BrandCreativeGetV30DataCreativesCreativeInteractiveModuleCreativeInteractiveMode int64
 
 // List of brand_creative_get_v3.0_data_creatives_creative_interactive_module_creative_interactive_mode

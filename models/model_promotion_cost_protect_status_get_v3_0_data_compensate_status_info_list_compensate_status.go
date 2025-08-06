@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionCostProtectStatusGetV30DataCompensateStatusInfoListCompensateStatus
+// PromotionCostProtectStatusGetV30DataCompensateStatusInfoListCompensateStatus 成本保障状态
 type PromotionCostProtectStatusGetV30DataCompensateStatusInfoListCompensateStatus string
 
 // List of promotion_cost_protect_status_get_v3.0_data_compensate_status_info_list_compensate_status

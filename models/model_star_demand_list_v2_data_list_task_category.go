@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarDemandListV2DataListTaskCategory
+// StarDemandListV2DataListTaskCategory 星图任务类型，详情见枚举包。
 type StarDemandListV2DataListTaskCategory string
 
 // List of star_demand_list_v2_data_list_task_category

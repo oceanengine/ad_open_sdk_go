@@ -80,6 +80,8 @@ func (r *ApiOpenApiV30SecurityScoreTotalGetGetRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30SecurityScoreTotalGetGet Method for OpenApiV30SecurityScoreTotalGetGet
 
+账户累计积分
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SecurityScoreTotalGetGetRequest
 */

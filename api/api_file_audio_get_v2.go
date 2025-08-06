@@ -72,6 +72,8 @@ func (r *ApiOpenApi2FileAudioGetGetRequest) WithLog(enable bool) *ApiOpenApi2Fil
 /*
 OpenApi2FileAudioGetGet Method for OpenApi2FileAudioGetGet
 
+根据此接口，客户可以获取他的音频库列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileAudioGetGetRequest
 */

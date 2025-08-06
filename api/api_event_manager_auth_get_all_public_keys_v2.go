@@ -52,6 +52,8 @@ func (r *ApiOpenApi2EventManagerAuthGetAllPublicKeysGetRequest) WithLog(enable b
 /*
 OpenApi2EventManagerAuthGetAllPublicKeysGet Method for OpenApi2EventManagerAuthGetAllPublicKeysGet
 
+# API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EventManagerAuthGetAllPublicKeysGetRequest
 */

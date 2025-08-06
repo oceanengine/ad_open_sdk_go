@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListConvertStatus
+// ToolsClueLifeGetV2DataListConvertStatus 转化状态
 type ToolsClueLifeGetV2DataListConvertStatus int64
 
 // List of tools_clue_life_get_v2_data_list_convert_status

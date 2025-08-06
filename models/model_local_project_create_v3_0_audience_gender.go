@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30AudienceGender
+// LocalProjectCreateV30AudienceGender 性别
 type LocalProjectCreateV30AudienceGender string
 
 // List of local_project_create_v3.0_audience_gender

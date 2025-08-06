@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// OpenMaterialAuditProGetV30DataOutputStatus
+// OpenMaterialAuditProGetV30DataOutputStatus 审核状态
 type OpenMaterialAuditProGetV30DataOutputStatus string
 
 // List of open_material_audit_pro_get_v3.0_data_output_status

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SharedWalletWalletBalanceGetV30WalletBalanceFiltersDeliveryType
+// SharedWalletWalletBalanceGetV30WalletBalanceFiltersDeliveryType 投放类型：竞价、品牌、通用; 不填默认不过滤
 type SharedWalletWalletBalanceGetV30WalletBalanceFiltersDeliveryType string
 
 // List of shared_wallet_wallet_balance_get_v3.0_wallet_balance_filters_delivery_type

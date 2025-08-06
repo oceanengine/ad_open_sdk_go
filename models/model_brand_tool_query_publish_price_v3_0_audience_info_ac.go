@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandToolQueryPublishPriceV30AudienceInfoAc
+// BrandToolQueryPublishPriceV30AudienceInfoAc 网络
 type BrandToolQueryPublishPriceV30AudienceInfoAc string
 
 // List of brand_tool_query_publish_price_v3.0_audience_info_ac

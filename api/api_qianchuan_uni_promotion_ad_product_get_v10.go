@@ -116,6 +116,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) WithLog(enabl
 /*
 OpenApiV10QianchuanUniPromotionAdProductGetGet Method for OpenApiV10QianchuanUniPromotionAdProductGetGet
 
+获取全域计划下商品列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest
 */

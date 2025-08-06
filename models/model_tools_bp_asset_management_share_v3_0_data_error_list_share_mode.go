@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsBpAssetManagementShareV30DataErrorListShareMode
+// ToolsBpAssetManagementShareV30DataErrorListShareMode 共享类型
 type ToolsBpAssetManagementShareV30DataErrorListShareMode string
 
 // List of tools_bp_asset_management_share_v3.0_data_error_list_share_mode

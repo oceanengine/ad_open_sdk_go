@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsSiteTemplateSiteCreateV2BricksButtonDownloadEventAndroidLinkLinkType
+// ToolsSiteTemplateSiteCreateV2BricksButtonDownloadEventAndroidLinkLinkType 链接类型，当图片跳转链接信息不为空时，必填，可传值`URL`:链接地址，`QUICK_APP`：快应用
 type ToolsSiteTemplateSiteCreateV2BricksButtonDownloadEventAndroidLinkLinkType string
 
 // List of tools_site_template_site_create_v2_bricks_button_download_event_android_link_link_type

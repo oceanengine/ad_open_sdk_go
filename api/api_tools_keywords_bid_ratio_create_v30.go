@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsKeywordsBidRatioCreatePostRequest) WithLog(enable boo
 /*
 OpenApiV30ToolsKeywordsBidRatioCreatePost Method for OpenApiV30ToolsKeywordsBidRatioCreatePost
 
+创建优词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsKeywordsBidRatioCreatePostRequest
 */

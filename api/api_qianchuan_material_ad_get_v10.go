@@ -127,6 +127,8 @@ func (r *ApiOpenApiV10QianchuanMaterialAdGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV10QianchuanMaterialAdGetGet Method for OpenApiV10QianchuanMaterialAdGetGet
 
+获取推广列表中素材关联的计划list
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanMaterialAdGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectDetailV30DataAudienceRegionCityDivide
+// LocalProjectDetailV30DataAudienceRegionCityDivide 城市划分
 type LocalProjectDetailV30DataAudienceRegionCityDivide string
 
 // List of local_project_detail_v3.0_data_audience_region_city_divide

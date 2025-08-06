@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsPreAuditSendV2PreAuditMaterialsType
+// ToolsPreAuditSendV2PreAuditMaterialsType 前置预审物料类型
 type ToolsPreAuditSendV2PreAuditMaterialsType string
 
 // List of tools_pre_audit_send_v2_pre_audit_materials_type

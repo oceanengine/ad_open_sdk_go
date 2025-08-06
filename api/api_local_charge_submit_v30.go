@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30LocalChargeSubmitPostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30LocalChargeSubmitPost Method for OpenApiV30LocalChargeSubmitPost
 
+创建一笔充值单，生成支付链接，进行支付
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalChargeSubmitPostRequest
 */

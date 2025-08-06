@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarOrderDemanderCancelPostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2StarOrderDemanderCancelPost Method for OpenApi2StarOrderDemanderCancelPost
 
+任务取消
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarOrderDemanderCancelPostRequest
 */

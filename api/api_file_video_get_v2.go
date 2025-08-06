@@ -74,6 +74,8 @@ func (r *ApiOpenApi2FileVideoGetGetRequest) WithLog(enable bool) *ApiOpenApi2Fil
 /*
 OpenApi2FileVideoGetGet Method for OpenApi2FileVideoGetGet
 
+通过此接口，用户可以获取经过一定条件过滤后的广告主下创意素材库对应的视频及视频信息。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileVideoGetGetRequest
 */

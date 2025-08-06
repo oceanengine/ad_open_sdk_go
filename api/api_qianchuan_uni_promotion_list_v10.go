@@ -114,6 +114,8 @@ func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) WithLog(enable bool) 
 /*
 OpenApiV10QianchuanUniPromotionListGet Method for OpenApiV10QianchuanUniPromotionListGet
 
+获取全域推广列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionListGetRequest
 */

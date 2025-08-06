@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeOrderDetailGetV10DataAudienceDistrict
+// QianchuanAwemeOrderDetailGetV10DataAudienceDistrict 地域定向类型
 type QianchuanAwemeOrderDetailGetV10DataAudienceDistrict string
 
 // List of qianchuan_aweme_order_detail_get_v1.0_data_audience_district

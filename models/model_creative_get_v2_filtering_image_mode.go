@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreativeGetV2FilteringImageMode
+// CreativeGetV2FilteringImageMode 按照创意素材类型过滤，[【附录-素材类型】](https://ad.oceanengine.com/openapi/doc/index.html?id=1696710760171535#custom-anchor-素材类型)
 type CreativeGetV2FilteringImageMode string
 
 // List of creative_get_v2_filtering_image_mode

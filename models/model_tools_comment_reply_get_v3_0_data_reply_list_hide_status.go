@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsCommentReplyGetV30DataReplyListHideStatus
+// ToolsCommentReplyGetV30DataReplyListHideStatus 隐藏状态，允许值： 已隐藏 HIDE 未隐藏 NOT_HIDE 不限 ALL
 type ToolsCommentReplyGetV30DataReplyListHideStatus string
 
 // List of tools_comment_reply_get_v3.0_data_reply_list_hide_status

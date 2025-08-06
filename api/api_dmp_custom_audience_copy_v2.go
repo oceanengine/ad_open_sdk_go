@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DmpCustomAudienceCopyPostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2DmpCustomAudienceCopyPost Method for OpenApi2DmpCustomAudienceCopyPost
 
+通过此接口，将DMP人群包复制一个，并推送至对应的云图账号内，可在人群模块自定义分析查看和应用（该人群不支持再次推送）
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DmpCustomAudienceCopyPostRequest
 */

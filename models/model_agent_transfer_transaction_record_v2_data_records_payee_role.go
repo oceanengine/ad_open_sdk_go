@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentTransferTransactionRecordV2DataRecordsPayeeRole
+// AgentTransferTransactionRecordV2DataRecordsPayeeRole 转入方账户类型
 type AgentTransferTransactionRecordV2DataRecordsPayeeRole string
 
 // List of agent_transfer_transaction_record_v2_data_records_payee_role

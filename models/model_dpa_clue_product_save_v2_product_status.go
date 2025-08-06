@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DpaClueProductSaveV2ProductStatus
+// DpaClueProductSaveV2ProductStatus 商品状态
 type DpaClueProductSaveV2ProductStatus string
 
 // List of dpa_clue_product_save_v2_product_status

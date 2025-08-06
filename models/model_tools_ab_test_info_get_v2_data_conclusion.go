@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAbTestInfoGetV2DataConclusion
+// ToolsAbTestInfoGetV2DataConclusion 实验结论，`\"NOT_START\"`：未开始，`\"OBVIOUS\"`：有明显结论，`\"INSUFFICIENT\"`：数据量不足；`\"FAILED\"`：不满足实验条件，`\"TMP_OBVIOUS\"`：有初步结论。
 type ToolsAbTestInfoGetV2DataConclusion string
 
 // List of tools_ab_test_info_get_v2_data_conclusion

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandPolicyListV30DeliveryInfoStockIncreasePackageType
+// BrandPolicyListV30DeliveryInfoStockIncreasePackageType 库存加量包
 type BrandPolicyListV30DeliveryInfoStockIncreasePackageType string
 
 // List of brand_policy_list_v3.0_delivery_info_stock_increase_package_type

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsAbTestCreatePostRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2ToolsAbTestCreatePost Method for OpenApi2ToolsAbTestCreatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAbTestCreatePostRequest
 */

@@ -130,6 +130,8 @@ func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) WithLog(enable bool) *A
 /*
 OpenApiV10QianchuanSuggestRoiGoalGet Method for OpenApiV10QianchuanSuggestRoiGoalGet
 
+获取建议roi目标
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest
 */

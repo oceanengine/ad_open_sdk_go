@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarChallengeAddBudgetPostRequest) WithLog(enable bool) *Api
 /*
 OpenApi2StarChallengeAddBudgetPost Method for OpenApi2StarChallengeAddBudgetPost
 
+追加预算
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarChallengeAddBudgetPostRequest
 */

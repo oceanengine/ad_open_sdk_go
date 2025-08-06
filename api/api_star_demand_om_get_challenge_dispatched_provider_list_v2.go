@@ -71,6 +71,8 @@ func (r *ApiOpenApi2StarDemandOmGetChallengeDispatchedProviderListGetRequest) Wi
 /*
 OpenApi2StarDemandOmGetChallengeDispatchedProviderListGet Method for OpenApi2StarDemandOmGetChallengeDispatchedProviderListGet
 
+查询任务派单服务商列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemandOmGetChallengeDispatchedProviderListGetRequest
 */

@@ -58,6 +58,8 @@ func (r *ApiOpenApiV10QianchuanFileVideoOriginalGetGetRequest) WithLog(enable bo
 /*
 OpenApiV10QianchuanFileVideoOriginalGetGet Method for OpenApiV10QianchuanFileVideoOriginalGetGet
 
+支持查询素材是否是首发素材，传入素材ID列表，返回首发素材列表。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanFileVideoOriginalGetGetRequest
 */

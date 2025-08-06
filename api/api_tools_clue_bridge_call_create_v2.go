@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueBridgeCallCreatePostRequest) WithLog(enable bool) *
 /*
 OpenApi2ToolsClueBridgeCallCreatePost Method for OpenApi2ToolsClueBridgeCallCreatePost
 
+飞鱼pc端发起语音双呼
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueBridgeCallCreatePostRequest
 */

@@ -95,6 +95,8 @@ func (r *ApiOpenApiV30AicMaterialGetGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30AicMaterialGetGet Method for OpenApiV30AicMaterialGetGet
 
+获取组织或者代理商下面已保存的即创素材(视频)
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AicMaterialGetGetRequest
 */

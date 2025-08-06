@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsLandingGroupCreateV2ExperimentSiteType
+// ToolsLandingGroupCreateV2ExperimentSiteType 落地页类型，OWN：橙子建站落地页，THIRD_PARTY：自有落地页
 type ToolsLandingGroupCreateV2ExperimentSiteType string
 
 // List of tools_landing_group_create_v2_experiment_site_type

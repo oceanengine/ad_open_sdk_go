@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StardeliveryTaskDetailV30DataStarTaskMaterialPurchaseMethod
+// StardeliveryTaskDetailV30DataStarTaskMaterialPurchaseMethod 素材采买方式
 type StardeliveryTaskDetailV30DataStarTaskMaterialPurchaseMethod string
 
 // List of stardelivery_task_detail_v3.0_data_star_task_material_purchase_method

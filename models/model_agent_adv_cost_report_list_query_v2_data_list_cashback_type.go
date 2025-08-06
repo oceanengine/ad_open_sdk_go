@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2DataListCashbackType
+// AgentAdvCostReportListQueryV2DataListCashbackType 资源包类型(-1: 无,0: 个案包,-1: 无,0: 个案包,1: A类,2: B类,3: C类,4: 常规,5: B2,6: 非B2,7: 固定政策,8: 标准政策,9: 激励政策)
 type AgentAdvCostReportListQueryV2DataListCashbackType int64
 
 // List of agent_adv_cost_report_list_query_v2_data_list_cashback_type

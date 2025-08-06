@@ -64,6 +64,8 @@ func (r *ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest) WithLog(enable bool) *Api
 /*
 OpenApi2ToolsAwemeAuthorInfoGetGet Method for OpenApi2ToolsAwemeAuthorInfoGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest
 */

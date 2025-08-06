@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListProductType
+// ToolsClueLifeGetV2DataListProductType 商品类型
 type ToolsClueLifeGetV2DataListProductType string
 
 // List of tools_clue_life_get_v2_data_list_product_type

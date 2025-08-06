@@ -78,6 +78,8 @@ func (r *ApiOpenApi2StarClueGetGetRequest) WithLog(enable bool) *ApiOpenApi2Star
 /*
 OpenApi2StarClueGetGet Method for OpenApi2StarClueGetGet
 
+获取星图订单投后线索
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarClueGetGetRequest
 */

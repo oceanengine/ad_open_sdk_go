@@ -67,6 +67,8 @@ func (r *ApiOpenApiV30CgTransferQueryTransferBalanceGetRequest) WithLog(enable b
 /*
 OpenApiV30CgTransferQueryTransferBalanceGet Method for OpenApiV30CgTransferQueryTransferBalanceGet
 
+查询账户自身转账余额、作为减款方需要预留的竞价消耗保证金
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30CgTransferQueryTransferBalanceGetRequest
 */

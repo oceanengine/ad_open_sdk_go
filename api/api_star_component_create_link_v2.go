@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarComponentCreateLinkPostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2StarComponentCreateLinkPost Method for OpenApi2StarComponentCreateLinkPost
 
+常规组件创建
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarComponentCreateLinkPostRequest
 */

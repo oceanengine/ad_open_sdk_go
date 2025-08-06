@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarClueGetV2DataListComponentType
+// StarClueGetV2DataListComponentType 视频组件类型
 type StarClueGetV2DataListComponentType string
 
 // List of star_clue_get_v2_data_list_component_type

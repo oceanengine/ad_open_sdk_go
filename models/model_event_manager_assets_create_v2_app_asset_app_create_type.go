@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// EventManagerAssetsCreateV2AppAssetAppCreateType
+// EventManagerAssetsCreateV2AppAssetAppCreateType 应用创建类型，允许：UG，NORMAL，默认值为NORMAL
 type EventManagerAssetsCreateV2AppAssetAppCreateType string
 
 // List of event_manager_assets_create_v2_app_asset_app_create_type

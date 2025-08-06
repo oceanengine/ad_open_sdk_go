@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionListV30FilteringMarketingGoal
+// LocalPromotionListV30FilteringMarketingGoal 营销场景筛选，默认不限
 type LocalPromotionListV30FilteringMarketingGoal string
 
 // List of local_promotion_list_v3.0_filtering_marketing_goal

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag
+// AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag 账户报备类型
 type AgentAdvertiserInfoQueryV2DataAccountDetailListSelfOperationTag string
 
 // List of agent_advertiser_info_query_v2_data_account_detail_list_self_operation_tag

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarChallengePushItemsToAdPostRequest) WithLog(enable bool) 
 /*
 OpenApi2StarChallengePushItemsToAdPost Method for OpenApi2StarChallengePushItemsToAdPost
 
+投稿作品推送AD
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarChallengePushItemsToAdPostRequest
 */

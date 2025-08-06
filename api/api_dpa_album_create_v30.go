@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30DpaAlbumCreatePostRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30DpaAlbumCreatePost Method for OpenApiV30DpaAlbumCreatePost
 
+上传短剧信息，创建短剧
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30DpaAlbumCreatePostRequest
 */

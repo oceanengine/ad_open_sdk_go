@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30PromotionEasyUpdatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30PromotionEasyUpdatePost Method for OpenApiV30PromotionEasyUpdatePost
 
+更新简单投广告
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionEasyUpdatePostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListLeadsPage
+// ToolsClueLifeGetV2DataListLeadsPage 留资页面
 type ToolsClueLifeGetV2DataListLeadsPage string
 
 // List of tools_clue_life_get_v2_data_list_leads_page

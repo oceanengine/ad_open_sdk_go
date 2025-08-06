@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandPolicyListV30AudienceInfoRetargetingInfoRetargetingType
+// BrandPolicyListV30AudienceInfoRetargetingInfoRetargetingType 人群包类型，定向排除
 type BrandPolicyListV30AudienceInfoRetargetingInfoRetargetingType string
 
 // List of brand_policy_list_v3.0_audience_info_retargeting_info_retargeting_type

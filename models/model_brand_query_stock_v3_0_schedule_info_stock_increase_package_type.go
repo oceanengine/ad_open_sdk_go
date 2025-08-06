@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandQueryStockV30ScheduleInfoStockIncreasePackageType
+// BrandQueryStockV30ScheduleInfoStockIncreasePackageType 库存加量包
 type BrandQueryStockV30ScheduleInfoStockIncreasePackageType string
 
 // List of brand_query_stock_v3.0_schedule_info_stock_increase_package_type

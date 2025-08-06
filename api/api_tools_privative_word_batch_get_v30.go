@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsPrivativeWordBatchGetPostRequest) WithLog(enable bool
 /*
 OpenApiV30ToolsPrivativeWordBatchGetPost Method for OpenApiV30ToolsPrivativeWordBatchGetPost
 
+2.0项目批量查询否定词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsPrivativeWordBatchGetPostRequest
 */

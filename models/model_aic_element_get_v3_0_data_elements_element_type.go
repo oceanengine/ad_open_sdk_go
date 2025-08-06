@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicElementGetV30DataElementsElementType
+// AicElementGetV30DataElementsElementType 元素类型
 type AicElementGetV30DataElementsElementType string
 
 // List of aic_element_get_v3.0_data_elements_element_type

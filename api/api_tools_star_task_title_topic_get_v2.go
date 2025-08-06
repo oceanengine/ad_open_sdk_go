@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsStarTaskTitleTopicGetGetRequest) WithLog(enable bool) *
 /*
 OpenApi2ToolsStarTaskTitleTopicGetGet Method for OpenApi2ToolsStarTaskTitleTopicGetGet
 
+查询星广任务标题指定话题
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsStarTaskTitleTopicGetGetRequest
 */

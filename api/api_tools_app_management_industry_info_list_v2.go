@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest) WithLog(enable
 /*
 OpenApi2ToolsAppManagementIndustryInfoListGet Method for OpenApi2ToolsAppManagementIndustryInfoListGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest
 */

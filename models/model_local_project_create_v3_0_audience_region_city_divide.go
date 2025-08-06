@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30AudienceRegionCityDivide
+// LocalProjectCreateV30AudienceRegionCityDivide 城市划分类型
 type LocalProjectCreateV30AudienceRegionCityDivide string
 
 // List of local_project_create_v3.0_audience_region_city_divide

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsAppManagementUpdateAuthorizationPostRequest) WithLog(en
 /*
 OpenApi2ToolsAppManagementUpdateAuthorizationPost Method for OpenApi2ToolsAppManagementUpdateAuthorizationPost
 
+增加和删除ad应用资产的共享关系
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementUpdateAuthorizationPostRequest
 */

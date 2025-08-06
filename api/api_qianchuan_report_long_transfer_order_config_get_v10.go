@@ -58,6 +58,8 @@ func (r *ApiOpenApiV10QianchuanReportLongTransferOrderConfigGetGetRequest) WithL
 /*
 OpenApiV10QianchuanReportLongTransferOrderConfigGetGet Method for OpenApiV10QianchuanReportLongTransferOrderConfigGetGet
 
+查询用户可以用于长周期订单明细的指标和维度
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanReportLongTransferOrderConfigGetGetRequest
 */

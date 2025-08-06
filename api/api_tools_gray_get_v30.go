@@ -64,6 +64,8 @@ func (r *ApiOpenApiV30ToolsGrayGetGetRequest) WithLog(enable bool) *ApiOpenApiV3
 /*
 OpenApiV30ToolsGrayGetGet Method for OpenApiV30ToolsGrayGetGet
 
+支持客户通过接口查询广告主是否命中各项灰度/白名单功能
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsGrayGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionAutoGenerateConfigGetV30DataTemplatesTemplateType
+// PromotionAutoGenerateConfigGetV30DataTemplatesTemplateType 模板类型
 type PromotionAutoGenerateConfigGetV30DataTemplatesTemplateType string
 
 // List of promotion_auto_generate_config_get_v3.0_data_templates_template_type

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandCampaignGetV30DataCampaignsMarketingPurpose
+// BrandCampaignGetV30DataCampaignsMarketingPurpose 营销目标
 type BrandCampaignGetV30DataCampaignsMarketingPurpose int64
 
 // List of brand_campaign_get_v3.0_data_campaigns_marketing_purpose

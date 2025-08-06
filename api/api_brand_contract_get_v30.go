@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandContractGetGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV30BrandContractGetGet Method for OpenApiV30BrandContractGetGet
 
+查询广告主品牌合同列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandContractGetGetRequest
 */

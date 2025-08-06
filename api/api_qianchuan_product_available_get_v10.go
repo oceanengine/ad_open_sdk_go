@@ -89,6 +89,9 @@ func (r *ApiOpenApiV10QianchuanProductAvailableGetGetRequest) WithLog(enable boo
 /*
 OpenApiV10QianchuanProductAvailableGetGet Method for OpenApiV10QianchuanProductAvailableGetGet
 
+获取千川账户下店铺内可投商品列表接口
+注意：仅支持商家广告主，不支持达人&机构广告主
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanProductAvailableGetGetRequest
 */

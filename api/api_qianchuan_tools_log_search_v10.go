@@ -101,6 +101,8 @@ func (r *ApiOpenApiV10QianchuanToolsLogSearchGetRequest) WithLog(enable bool) *A
 /*
 OpenApiV10QianchuanToolsLogSearchGet Method for OpenApiV10QianchuanToolsLogSearchGet
 
+新增接口，支持查询操作日志
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanToolsLogSearchGetRequest
 */

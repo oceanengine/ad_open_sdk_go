@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AgentAdvCostReportListQueryPostRequest) WithLog(enable bool)
 /*
 OpenApi2AgentAdvCostReportListQueryPost Method for OpenApi2AgentAdvCostReportListQueryPost
 
+代理商消耗报表查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentAdvCostReportListQueryPostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectCreateV30DeliverySettingProjectCustom
+// ProjectCreateV30DeliverySettingProjectCustom 项目成本稳投开关
 type ProjectCreateV30DeliverySettingProjectCustom string
 
 // List of project_create_v3.0_delivery_setting_project_custom

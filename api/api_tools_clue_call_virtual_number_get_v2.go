@@ -74,6 +74,8 @@ func (r *ApiOpenApi2ToolsClueCallVirtualNumberGetGetRequest) WithLog(enable bool
 /*
 OpenApi2ToolsClueCallVirtualNumberGetGet Method for OpenApi2ToolsClueCallVirtualNumberGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueCallVirtualNumberGetGetRequest
 */

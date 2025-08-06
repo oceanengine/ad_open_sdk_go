@@ -76,6 +76,8 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) WithLog(enable b
 /*
 OpenApi2ToolsAppManagementAndroidAppListGet Method for OpenApi2ToolsAppManagementAndroidAppListGet
 
+查询账户下安卓应用信息（支持所有账户体系）及应用详细信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest
 */

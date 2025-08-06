@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarStarAdUniteTaskDetailV2DataEvaluateType
+// StarStarAdUniteTaskDetailV2DataEvaluateType 任务优化目标
 type StarStarAdUniteTaskDetailV2DataEvaluateType string
 
 // List of star_star_ad_unite_task_detail_v2_data_evaluate_type

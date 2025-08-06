@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QueryRebateAccountingInfoV2FilteringApprovalStatus
+// QueryRebateAccountingInfoV2FilteringApprovalStatus 返点核算单审批状态 (1:待代理商审批 2:待商务终审 3:审批通过)
 type QueryRebateAccountingInfoV2FilteringApprovalStatus string
 
 // List of query_rebate_accounting_info_v2_filtering_approval_status

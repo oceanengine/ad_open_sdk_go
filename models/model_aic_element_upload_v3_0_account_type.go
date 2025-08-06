@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicElementUploadV30AccountType
+// AicElementUploadV30AccountType 账户体系枚举
 type AicElementUploadV30AccountType string
 
 // List of aic_element_upload_v3.0_account_type

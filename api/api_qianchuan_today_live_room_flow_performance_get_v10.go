@@ -64,6 +64,8 @@ func (r *ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest) WithLo
 /*
 OpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGet Method for OpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGet
 
+获取直播间流量表现
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest
 */

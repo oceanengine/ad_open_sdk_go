@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionAutoGenerateConfigGetV30DataVersion
+// PromotionAutoGenerateConfigGetV30DataVersion 版本：Template版本(老版本)，Strategy版本（新版本）
 type PromotionAutoGenerateConfigGetV30DataVersion string
 
 // List of promotion_auto_generate_config_get_v3.0_data_version

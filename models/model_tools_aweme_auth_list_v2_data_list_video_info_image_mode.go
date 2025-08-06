@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAwemeAuthListV2DataListVideoInfoImageMode
+// ToolsAwemeAuthListV2DataListVideoInfoImageMode 素材类型
 type ToolsAwemeAuthListV2DataListVideoInfoImageMode string
 
 // List of tools_aweme_auth_list_v2_data_list_video_info_image_mode

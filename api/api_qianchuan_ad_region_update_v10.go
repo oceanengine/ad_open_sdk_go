@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAdRegionUpdatePostRequest) WithLog(enable bool) *
 /*
 OpenApiV10QianchuanAdRegionUpdatePost Method for OpenApiV10QianchuanAdRegionUpdatePost
 
+批量更新计划定向地域
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdRegionUpdatePostRequest
 */

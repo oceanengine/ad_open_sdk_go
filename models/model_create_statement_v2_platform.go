@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreateStatementV2Platform
+// CreateStatementV2Platform 平台
 type CreateStatementV2Platform string
 
 // List of create_statement_v2_platform

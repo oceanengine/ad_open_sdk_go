@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueLifeGetPostRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2ToolsClueLifeGetPost Method for OpenApi2ToolsClueLifeGetPost
 
+该接口用于获取广告主的本地推线索列表。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueLifeGetPostRequest
 */

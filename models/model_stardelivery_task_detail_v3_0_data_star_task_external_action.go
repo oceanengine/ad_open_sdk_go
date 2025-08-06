@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StardeliveryTaskDetailV30DataStarTaskExternalAction
+// StardeliveryTaskDetailV30DataStarTaskExternalAction 任务内选择的优化目标
 type StardeliveryTaskDetailV30DataStarTaskExternalAction string
 
 // List of stardelivery_task_detail_v3.0_data_star_task_external_action

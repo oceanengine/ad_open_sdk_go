@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ReportProductAsyncTaskGetPostRequest) WithLog(enable bool)
 /*
 OpenApiV30ReportProductAsyncTaskGetPost Method for OpenApiV30ReportProductAsyncTaskGetPost
 
+DPA商品报表-查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportProductAsyncTaskGetPostRequest
 */

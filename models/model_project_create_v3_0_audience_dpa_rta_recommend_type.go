@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectCreateV30AudienceDpaRtaRecommendType
+// ProjectCreateV30AudienceDpaRtaRecommendType RTA推荐逻辑，ONLY仅RTA推荐商品，MORE基于RTA推荐更多商品，开启RTA重定向开关时必填
 type ProjectCreateV30AudienceDpaRtaRecommendType string
 
 // List of project_create_v3.0_audience_dpa_rta_recommend_type

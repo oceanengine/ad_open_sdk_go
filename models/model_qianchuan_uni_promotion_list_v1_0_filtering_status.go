@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionListV10FilteringStatus
+// QianchuanUniPromotionListV10FilteringStatus 计划状态
 type QianchuanUniPromotionListV10FilteringStatus string
 
 // List of qianchuan_uni_promotion_list_v1.0_filtering_status

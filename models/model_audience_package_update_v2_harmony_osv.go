@@ -15,9 +15,9 @@ type AudiencePackageUpdateV2HarmonyOsv string
 
 // List of audience_package_update_v2_harmony_osv
 const (
-	NONE_AudiencePackageUpdateV2HarmonyOsv     AudiencePackageUpdateV2HarmonyOsv = "NONE"
-	Enum_5_0_AudiencePackageUpdateV2HarmonyOsv AudiencePackageUpdateV2HarmonyOsv = "5.0"
 	Enum_0_0_AudiencePackageUpdateV2HarmonyOsv AudiencePackageUpdateV2HarmonyOsv = "0.0"
+	Enum_5_0_AudiencePackageUpdateV2HarmonyOsv AudiencePackageUpdateV2HarmonyOsv = "5.0"
+	NONE_AudiencePackageUpdateV2HarmonyOsv     AudiencePackageUpdateV2HarmonyOsv = "NONE"
 )
 
 // Ptr returns reference to audience_package_update_v2_harmony_osv value

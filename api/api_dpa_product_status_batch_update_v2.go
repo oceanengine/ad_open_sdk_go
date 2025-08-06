@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DpaProductStatusBatchUpdatePostRequest) WithLog(enable bool)
 /*
 OpenApi2DpaProductStatusBatchUpdatePost Method for OpenApi2DpaProductStatusBatchUpdatePost
 
+此接口用于批量修改DPA商品状态
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaProductStatusBatchUpdatePostRequest
 */

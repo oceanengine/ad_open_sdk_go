@@ -88,6 +88,8 @@ func (r *ApiOpenApi2ReportRtaCusExpGetGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2ReportRtaCusExpGetGet Method for OpenApi2ReportRtaCusExpGetGet
 
+获取穿山甲的广告主分流的联合实验数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportRtaCusExpGetGetRequest
 */

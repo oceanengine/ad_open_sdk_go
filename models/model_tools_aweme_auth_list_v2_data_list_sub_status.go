@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAwemeAuthListV2DataListSubStatus
+// ToolsAwemeAuthListV2DataListSubStatus 授权子状态
 type ToolsAwemeAuthListV2DataListSubStatus string
 
 // List of tools_aweme_auth_list_v2_data_list_sub_status

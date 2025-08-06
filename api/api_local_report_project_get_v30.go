@@ -115,6 +115,8 @@ func (r *ApiOpenApiV30LocalReportProjectGetGetRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30LocalReportProjectGetGet Method for OpenApiV30LocalReportProjectGetGet
 
+获取项目投放的广告效果数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalReportProjectGetGetRequest
 */

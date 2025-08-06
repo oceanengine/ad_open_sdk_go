@@ -70,6 +70,8 @@ func (r *ApiOpenApi2ToolsLiveAuthorizeListGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ToolsLiveAuthorizeListGet Method for OpenApi2ToolsLiveAuthorizeListGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsLiveAuthorizeListGetRequest
 */

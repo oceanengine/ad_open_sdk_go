@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30BrandUploadImagePostRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30BrandUploadImagePost Method for OpenApiV30BrandUploadImagePost
 
+AD品牌上传图片
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandUploadImagePostRequest
 */

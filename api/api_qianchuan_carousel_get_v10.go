@@ -82,6 +82,8 @@ func (r *ApiOpenApiV10QianchuanCarouselGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV10QianchuanCarouselGetGet Method for OpenApiV10QianchuanCarouselGetGet
 
+获取千川素材库图文
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanCarouselGetGetRequest
 */

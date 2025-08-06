@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AdvertiserDeliveryPkgConfigV30DataIndustryConfigIndustryStatus
+// AdvertiserDeliveryPkgConfigV30DataIndustryConfigIndustryStatus 行业状态：1 生效 、2 禁投（不允许提交该行业的资质）
 type AdvertiserDeliveryPkgConfigV30DataIndustryConfigIndustryStatus string
 
 // List of advertiser_delivery_pkg_config_v3.0_data_industry_config_industry_status

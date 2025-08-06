@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30AdvertiserDeliveryPkgGetGetRequest) WithLog(enable bool) *
 /*
 OpenApiV30AdvertiserDeliveryPkgGetGet Method for OpenApiV30AdvertiserDeliveryPkgGetGet
 
+用于查询广告主以推广产品形式提交的投放资质，可以获取到资质审核状态等信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AdvertiserDeliveryPkgGetGetRequest
 */

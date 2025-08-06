@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdCreateV30Classify
+// BrandAdCreateV30Classify 广告类别
 type BrandAdCreateV30Classify string
 
 // List of brand_ad_create_v3.0_classify

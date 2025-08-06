@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AdvertiserDeliveryPkgGetV30DataDeliveryPkgStatus
+// AdvertiserDeliveryPkgGetV30DataDeliveryPkgStatus 推广产品整组的审核状态，标识该推广产品是否审核通过
 type AdvertiserDeliveryPkgGetV30DataDeliveryPkgStatus string
 
 // List of advertiser_delivery_pkg_get_v3.0_data_delivery_pkg_status

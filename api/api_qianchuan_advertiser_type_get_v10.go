@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAdvertiserTypeGetGetRequest) WithLog(enable bool)
 /*
 OpenApiV10QianchuanAdvertiserTypeGetGet Method for OpenApiV10QianchuanAdvertiserTypeGetGet
 
+最多20个
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdvertiserTypeGetGetRequest
 */

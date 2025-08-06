@@ -60,6 +60,8 @@ func (r *ApiOpenApi2UploadStatementPostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2UploadStatementPost Method for OpenApi2UploadStatementPost
 
+上传待盖章的结算单附件
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2UploadStatementPostRequest
 */

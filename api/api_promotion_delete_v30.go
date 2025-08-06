@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30PromotionDeletePostRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV30PromotionDeletePost Method for OpenApiV30PromotionDeletePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionDeletePostRequest
 */

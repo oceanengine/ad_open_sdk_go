@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectDetailV30DataAutoUpdatePois
+// LocalProjectDetailV30DataAutoUpdatePois 自动更新门店开启状态，仅推广全部门店项目返回
 type LocalProjectDetailV30DataAutoUpdatePois string
 
 // List of local_project_detail_v3.0_data_auto_update_pois

@@ -82,6 +82,8 @@ func (r *ApiOpenApi2DpaAssetsListGetRequest) WithLog(enable bool) *ApiOpenApi2Dp
 /*
 OpenApi2DpaAssetsListGet Method for OpenApi2DpaAssetsListGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaAssetsListGetRequest
 */

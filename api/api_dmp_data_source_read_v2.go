@@ -58,6 +58,8 @@ func (r *ApiOpenApi2DmpDataSourceReadGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2DmpDataSourceReadGet Method for OpenApi2DmpDataSourceReadGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DmpDataSourceReadGetRequest
 */

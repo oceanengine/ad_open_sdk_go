@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DpaCheckIndexEntryProgressPostRequest) WithLog(enable bool) 
 /*
 OpenApi2DpaCheckIndexEntryProgressPost Method for OpenApi2DpaCheckIndexEntryProgressPost
 
+用于查询xml的录入是否完成
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaCheckIndexEntryProgressPostRequest
 */

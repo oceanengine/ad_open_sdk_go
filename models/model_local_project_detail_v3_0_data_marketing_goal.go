@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectDetailV30DataMarketingGoal
+// LocalProjectDetailV30DataMarketingGoal 营销场景
 type LocalProjectDetailV30DataMarketingGoal string
 
 // List of local_project_detail_v3.0_data_marketing_goal

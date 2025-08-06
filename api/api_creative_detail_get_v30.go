@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30CreativeDetailGetGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30CreativeDetailGetGet Method for OpenApiV30CreativeDetailGetGet
 
+给定计划id，查询计划的创意设置详细信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30CreativeDetailGetGetRequest
 */

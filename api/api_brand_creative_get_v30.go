@@ -123,6 +123,8 @@ func (r *ApiOpenApiV30BrandCreativeGetGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV30BrandCreativeGetGet Method for OpenApiV30BrandCreativeGetGet
 
+查询AD品牌广告创意详情
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandCreativeGetGetRequest
 */

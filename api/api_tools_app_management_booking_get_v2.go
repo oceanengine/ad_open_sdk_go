@@ -94,6 +94,8 @@ func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) WithLog(enable bool)
 /*
 OpenApi2ToolsAppManagementBookingGetGet Method for OpenApi2ToolsAppManagementBookingGetGet
 
+查询游戏预约列表接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementBookingGetGetRequest
 */

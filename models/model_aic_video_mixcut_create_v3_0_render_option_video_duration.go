@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicVideoMixcutCreateV30RenderOptionVideoDuration
+// AicVideoMixcutCreateV30RenderOptionVideoDuration 视频生成时长
 type AicVideoMixcutCreateV30RenderOptionVideoDuration string
 
 // List of aic_video_mixcut_create_v3.0_render_option_video_duration

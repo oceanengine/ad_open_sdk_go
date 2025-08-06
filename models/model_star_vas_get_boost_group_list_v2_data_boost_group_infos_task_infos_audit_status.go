@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarVasGetBoostGroupListV2DataBoostGroupInfosTaskInfosAuditStatus
+// StarVasGetBoostGroupListV2DataBoostGroupInfosTaskInfosAuditStatus 任务助推审核状态
 type StarVasGetBoostGroupListV2DataBoostGroupInfosTaskInfosAuditStatus string
 
 // List of star_vas_get_boost_group_list_v2_data_boost_group_infos_task_infos_audit_status

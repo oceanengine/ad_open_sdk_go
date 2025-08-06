@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarDemanderGetRegisteredIpActsGetRequest) WithLog(enable bo
 /*
 OpenApi2StarDemanderGetRegisteredIpActsGet Method for OpenApi2StarDemanderGetRegisteredIpActsGet
 
+查询已报名IP活动
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemanderGetRegisteredIpActsGetRequest
 */

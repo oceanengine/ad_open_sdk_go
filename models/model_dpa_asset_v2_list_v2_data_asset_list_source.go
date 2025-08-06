@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DpaAssetV2ListV2DataAssetListSource
+// DpaAssetV2ListV2DataAssetListSource 来源
 type DpaAssetV2ListV2DataAssetListSource string
 
 // List of dpa_asset_v2_list_v2_data_asset_list_source

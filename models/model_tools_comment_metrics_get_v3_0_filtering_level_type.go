@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsCommentMetricsGetV30FilteringLevelType
+// ToolsCommentMetricsGetV30FilteringLevelType 评论层级
 type ToolsCommentMetricsGetV30FilteringLevelType string
 
 // List of tools_comment_metrics_get_v3.0_filtering_level_type

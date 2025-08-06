@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AnalyticsAttributionPostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30AnalyticsAttributionPost Method for OpenApiV30AnalyticsAttributionPost
 
+该接口主要承接广告主上传需要巨量引擎归因事件，当前仅支持biz_type=4，包含引流电商PA深转归因实时回传和引流电商点击时间回传。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AnalyticsAttributionPostRequest
 */

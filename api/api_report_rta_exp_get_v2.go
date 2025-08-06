@@ -81,6 +81,9 @@ func (r *ApiOpenApi2ReportRtaExpGetGetRequest) WithLog(enable bool) *ApiOpenApi2
 /*
 OpenApi2ReportRtaExpGetGet Method for OpenApi2ReportRtaExpGetGet
 
+## 功能
+获取穿山甲联合实验的效果数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ReportRtaExpGetGetRequest
 */

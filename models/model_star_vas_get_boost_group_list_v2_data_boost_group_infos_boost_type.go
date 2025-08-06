@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarVasGetBoostGroupListV2DataBoostGroupInfosBoostType
+// StarVasGetBoostGroupListV2DataBoostGroupInfosBoostType 加热方式
 type StarVasGetBoostGroupListV2DataBoostGroupInfosBoostType string
 
 // List of star_vas_get_boost_group_list_v2_data_boost_group_infos_boost_type

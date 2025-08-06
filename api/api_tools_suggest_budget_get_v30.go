@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30ToolsSuggestBudgetGetGetRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30ToolsSuggestBudgetGetGet Method for OpenApiV30ToolsSuggestBudgetGetGet
 
+获取广告建议起量预算
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsSuggestBudgetGetGetRequest
 */

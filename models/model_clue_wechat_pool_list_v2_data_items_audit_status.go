@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ClueWechatPoolListV2DataItemsAuditStatus
+// ClueWechatPoolListV2DataItemsAuditStatus 审核状态
 type ClueWechatPoolListV2DataItemsAuditStatus string
 
 // List of clue_wechat_pool_list_v2_data_items_audit_status

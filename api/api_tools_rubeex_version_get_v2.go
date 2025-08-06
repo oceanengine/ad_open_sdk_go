@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ToolsRubeexVersionGetGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2ToolsRubeexVersionGetGet Method for OpenApi2ToolsRubeexVersionGetGet
 
+> 获取互动广告作品对应的版本信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsRubeexVersionGetGetRequest
 */

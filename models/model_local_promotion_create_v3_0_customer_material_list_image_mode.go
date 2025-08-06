@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionCreateV30CustomerMaterialListImageMode
+// LocalPromotionCreateV30CustomerMaterialListImageMode 素材类型
 type LocalPromotionCreateV30CustomerMaterialListImageMode string
 
 // List of local_promotion_create_v3.0_customer_material_list_image_mode

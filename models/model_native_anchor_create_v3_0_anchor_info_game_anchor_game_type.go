@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// NativeAnchorCreateV30AnchorInfoGameAnchorGameType
+// NativeAnchorCreateV30AnchorInfoGameAnchorGameType 游戏锚点类型（GENERAL常规游戏锚点，MICRO_GAME微信小游戏锚点）
 type NativeAnchorCreateV30AnchorInfoGameAnchorGameType string
 
 // List of native_anchor_create_v3.0_anchor_info_game_anchor_game_type

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ClueWechatInstanceDetailV2DataWechatListHasQrCode
+// ClueWechatInstanceDetailV2DataWechatListHasQrCode 是否配置二维码
 type ClueWechatInstanceDetailV2DataWechatListHasQrCode string
 
 // List of clue_wechat_instance_detail_v2_data_wechat_list_has_qr_code

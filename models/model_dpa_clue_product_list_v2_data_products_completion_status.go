@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DpaClueProductListV2DataProductsCompletionStatus
+// DpaClueProductListV2DataProductsCompletionStatus 字段填充状态
 type DpaClueProductListV2DataProductsCompletionStatus string
 
 // List of dpa_clue_product_list_v2_data_products_completion_status

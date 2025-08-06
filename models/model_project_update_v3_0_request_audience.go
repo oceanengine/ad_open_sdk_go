@@ -82,5 +82,6 @@ type ProjectUpdateV30RequestAudience struct {
 	RetargetingTagsExclude []int64 `json:"retargeting_tags_exclude,omitempty"`
 	//
 	RetargetingTagsInclude []int64                                         `json:"retargeting_tags_include,omitempty"`
+	SmartExtend            *ProjectUpdateV30AudienceSmartExtend            `json:"smart_extend,omitempty"`
 	SuperiorPopularityType *ProjectUpdateV30AudienceSuperiorPopularityType `json:"superior_popularity_type,omitempty"`
 }

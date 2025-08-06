@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandCreativeGetV30DataCreativesCreativeExternalInfoExternalUrlType
+// BrandCreativeGetV30DataCreativesCreativeExternalInfoExternalUrlType 落地页类型
 type BrandCreativeGetV30DataCreativesCreativeExternalInfoExternalUrlType int64
 
 // List of brand_creative_get_v3.0_data_creatives_creative_external_info_external_url_type

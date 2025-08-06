@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ToolsPlayableListGetGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ToolsPlayableListGetGet Method for OpenApi2ToolsPlayableListGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPlayableListGetGetRequest
 */

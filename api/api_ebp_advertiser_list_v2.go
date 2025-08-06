@@ -79,6 +79,8 @@ func (r *ApiOpenApi2EbpAdvertiserListGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2EbpAdvertiserListGet Method for OpenApi2EbpAdvertiserListGet
 
+实时拉取EBP下账户列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EbpAdvertiserListGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionAdSuggestionV10DataListAuditPlatform
+// QianchuanUniPromotionAdSuggestionV10DataListAuditPlatform 审核来源类型
 type QianchuanUniPromotionAdSuggestionV10DataListAuditPlatform string
 
 // List of qianchuan_uni_promotion_ad_suggestion_v1.0_data_list_audit_platform

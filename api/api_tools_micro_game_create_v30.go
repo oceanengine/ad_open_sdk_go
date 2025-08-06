@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsMicroGameCreatePostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30ToolsMicroGameCreatePost Method for OpenApiV30ToolsMicroGameCreatePost
 
+创建字节小游戏
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsMicroGameCreatePostRequest
 */

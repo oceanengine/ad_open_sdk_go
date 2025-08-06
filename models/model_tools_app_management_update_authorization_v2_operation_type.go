@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementUpdateAuthorizationV2OperationType
+// ToolsAppManagementUpdateAuthorizationV2OperationType 共享关系变更类型。枚举值：ADD DEL
 type ToolsAppManagementUpdateAuthorizationV2OperationType string
 
 // List of tools_app_management_update_authorization_v2_operation_type

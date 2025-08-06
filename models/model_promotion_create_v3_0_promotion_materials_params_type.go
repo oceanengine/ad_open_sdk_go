@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionCreateV30PromotionMaterialsParamsType
+// PromotionCreateV30PromotionMaterialsParamsType 链接类型(落地页)，DPA推广目的下必填 允许值: DPA 商品库所含链接、CUSTOM 自定义链接
 type PromotionCreateV30PromotionMaterialsParamsType string
 
 // List of promotion_create_v3.0_promotion_materials_params_type

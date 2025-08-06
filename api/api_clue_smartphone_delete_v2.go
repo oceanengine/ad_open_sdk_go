@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ClueSmartphoneDeletePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2ClueSmartphoneDeletePost Method for OpenApi2ClueSmartphoneDeletePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueSmartphoneDeletePostRequest
 */

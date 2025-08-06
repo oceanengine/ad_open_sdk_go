@@ -64,6 +64,8 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest) WithLog(
 /*
 OpenApi2ToolsAppManagementAndroidBasicPackageGetGet Method for OpenApi2ToolsAppManagementAndroidBasicPackageGetGet
 
+查询安卓应用母包信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest
 */

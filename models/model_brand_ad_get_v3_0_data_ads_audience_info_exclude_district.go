@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsAudienceInfoExcludeDistrict
+// BrandAdGetV30DataAdsAudienceInfoExcludeDistrict 排除地域定向
 type BrandAdGetV30DataAdsAudienceInfoExcludeDistrict int64
 
 // List of brand_ad_get_v3.0_data_ads_audience_info_exclude_district

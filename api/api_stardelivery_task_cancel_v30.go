@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30StardeliveryTaskCancelPostRequest) WithLog(enable bool) *A
 /*
 OpenApiV30StardeliveryTaskCancelPost Method for OpenApiV30StardeliveryTaskCancelPost
 
+取消星广联投任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30StardeliveryTaskCancelPostRequest
 */

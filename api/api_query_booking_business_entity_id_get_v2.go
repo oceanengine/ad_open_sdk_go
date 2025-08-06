@@ -60,6 +60,8 @@ func (r *ApiOpenApi2QueryBookingBusinessEntityIdGetGetRequest) WithLog(enable bo
 /*
 OpenApi2QueryBookingBusinessEntityIdGetGet Method for OpenApi2QueryBookingBusinessEntityIdGetGet
 
+排期-查询业务实体ID
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2QueryBookingBusinessEntityIdGetGetRequest
 */

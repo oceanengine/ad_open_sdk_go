@@ -74,6 +74,8 @@ func (r *ApiOpenApi2ToolsTaskRaiseGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2ToolsTaskRaiseGetGet Method for OpenApi2ToolsTaskRaiseGetGet
 
+查询优选起量任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsTaskRaiseGetGetRequest
 */

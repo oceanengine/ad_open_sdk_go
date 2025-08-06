@@ -130,6 +130,8 @@ func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) WithLog(enable bool)
 /*
 OpenApiV30BrandToolQueryPublishPriceGet Method for OpenApiV30BrandToolQueryPublishPriceGet
 
+询价
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandToolQueryPublishPriceGetRequest
 */

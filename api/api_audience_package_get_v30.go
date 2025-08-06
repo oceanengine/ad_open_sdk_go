@@ -72,6 +72,8 @@ func (r *ApiOpenApiV30AudiencePackageGetGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30AudiencePackageGetGet Method for OpenApiV30AudiencePackageGetGet
 
+获取定向包
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AudiencePackageGetGetRequest
 */

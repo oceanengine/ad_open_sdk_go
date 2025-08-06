@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAwemeListV30DataAwemeUserInfoListOperatePlatform
+// BrandAwemeListV30DataAwemeUserInfoListOperatePlatform 操作平台
 type BrandAwemeListV30DataAwemeUserInfoListOperatePlatform string
 
 // List of brand_aweme_list_v3.0_data_aweme_user_info_list_operate_platform

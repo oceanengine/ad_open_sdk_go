@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandCreativeGetV30DataCreativesCreativeStatus
+// BrandCreativeGetV30DataCreativesCreativeStatus 创意状态
 type BrandCreativeGetV30DataCreativesCreativeStatus int64
 
 // List of brand_creative_get_v3.0_data_creatives_creative_status

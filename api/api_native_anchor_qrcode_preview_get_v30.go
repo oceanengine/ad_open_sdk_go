@@ -64,6 +64,8 @@ func (r *ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest) WithLog(enable boo
 /*
 OpenApiV30NativeAnchorQrcodePreviewGetGet Method for OpenApiV30NativeAnchorQrcodePreviewGetGet
 
+获取锚点的预览链接
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest
 */

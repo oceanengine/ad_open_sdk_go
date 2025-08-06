@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionListV10FilteringHavingCost
+// QianchuanUniPromotionListV10FilteringHavingCost 消耗情况
 type QianchuanUniPromotionListV10FilteringHavingCost string
 
 // List of qianchuan_uni_promotion_list_v1.0_filtering_having_cost

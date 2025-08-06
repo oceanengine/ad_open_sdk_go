@@ -71,6 +71,8 @@ func (r *ApiOpenApiV30RejectMaterialAiRepairGetGetRequest) WithLog(enable bool) 
 /*
 OpenApiV30RejectMaterialAiRepairGetGet Method for OpenApiV30RejectMaterialAiRepairGetGet
 
+获取拒审素材修复建议
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30RejectMaterialAiRepairGetGetRequest
 */

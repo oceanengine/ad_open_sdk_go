@@ -59,6 +59,8 @@ func (r *ApiOpenApiV30ReportCustomConfigGetGetRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30ReportCustomConfigGetGet Method for OpenApiV30ReportCustomConfigGetGet
 
+获取自定义报表可用指标和维度
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportCustomConfigGetGetRequest
 */

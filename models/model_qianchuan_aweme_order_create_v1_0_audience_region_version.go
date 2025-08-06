@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeOrderCreateV10AudienceRegionVersion
+// QianchuanAwemeOrderCreateV10AudienceRegionVersion 定向版本
 type QianchuanAwemeOrderCreateV10AudienceRegionVersion string
 
 // List of qianchuan_aweme_order_create_v1.0_audience_region_version

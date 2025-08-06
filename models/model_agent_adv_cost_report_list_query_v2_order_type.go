@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2OrderType
+// AgentAdvCostReportListQueryV2OrderType 排序顺序
 type AgentAdvCostReportListQueryV2OrderType string
 
 // List of agent_adv_cost_report_list_query_v2_order_type

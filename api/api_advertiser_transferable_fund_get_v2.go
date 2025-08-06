@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AdvertiserTransferableFundGetGetRequest) WithLog(enable bool
 /*
 OpenApi2AdvertiserTransferableFundGetGet Method for OpenApi2AdvertiserTransferableFundGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdvertiserTransferableFundGetGetRequest
 */

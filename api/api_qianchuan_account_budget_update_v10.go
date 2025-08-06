@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAccountBudgetUpdatePostRequest) WithLog(enable bo
 /*
 OpenApiV10QianchuanAccountBudgetUpdatePost Method for OpenApiV10QianchuanAccountBudgetUpdatePost
 
+更新账户日预算
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAccountBudgetUpdatePostRequest
 */

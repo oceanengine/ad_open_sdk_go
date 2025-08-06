@@ -58,6 +58,8 @@ func (r *ApiOpenApi2CarouselAdGetGetRequest) WithLog(enable bool) *ApiOpenApi2Ca
 /*
 OpenApi2CarouselAdGetGet Method for OpenApi2CarouselAdGetGet
 
+获取同主体下广告主图集素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CarouselAdGetGetRequest
 */

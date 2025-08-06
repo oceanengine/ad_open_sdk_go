@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CustomerCenterAccountListV30FilterAccountType
+// CustomerCenterAccountListV30FilterAccountType 需要查询的业务账户类型，允许值： - `AD` 巨量广告 - `QIANCHUAN` 巨量千川 - `LOCAL` 巨量本地推
 type CustomerCenterAccountListV30FilterAccountType string
 
 // List of customer_center_account_list_v3.0_filter_account_type

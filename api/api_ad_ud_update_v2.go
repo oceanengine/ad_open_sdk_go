@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AdUdUpdatePostRequest) WithLog(enable bool) *ApiOpenApi2AdUd
 /*
 OpenApi2AdUdUpdatePost Method for OpenApi2AdUdUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdUdUpdatePostRequest
 */

@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsDownloadPackageGetGetRequest) WithLog(enable bool) *Api
 /*
 OpenApi2ToolsDownloadPackageGetGet Method for OpenApi2ToolsDownloadPackageGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsDownloadPackageGetGetRequest
 */

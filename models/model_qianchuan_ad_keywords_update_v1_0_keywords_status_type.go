@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAdKeywordsUpdateV10KeywordsStatusType
+// QianchuanAdKeywordsUpdateV10KeywordsStatusType 关键词操作状态
 type QianchuanAdKeywordsUpdateV10KeywordsStatusType string
 
 // List of qianchuan_ad_keywords_update_v1.0_keywords_status_type

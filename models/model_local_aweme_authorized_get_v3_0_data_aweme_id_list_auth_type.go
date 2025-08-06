@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalAwemeAuthorizedGetV30DataAwemeIdListAuthType
+// LocalAwemeAuthorizedGetV30DataAwemeIdListAuthType 抖音号授权类型
 type LocalAwemeAuthorizedGetV30DataAwemeIdListAuthType string
 
 // List of local_aweme_authorized_get_v3.0_data_aweme_id_list_auth_type

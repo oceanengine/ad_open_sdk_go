@@ -88,6 +88,8 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) WithLog(enable b
 /*
 OpenApiV10QianchuanReportUniPromotionGetGet Method for OpenApiV10QianchuanReportUniPromotionGetGet
 
+查询千川广告主账号下全域推广投放账户维度聚合数据。支持指标包含消耗，点击等（可通过get_tool_response_field_desc工具查询应答内容）
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest
 */

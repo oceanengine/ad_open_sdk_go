@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionAdControlTaskCreateV10Scene
+// QianchuanUniPromotionAdControlTaskCreateV10Scene 调控任务类型
 type QianchuanUniPromotionAdControlTaskCreateV10Scene string
 
 // List of qianchuan_uni_promotion_ad_control_task_create_v1.0_scene

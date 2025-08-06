@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ReportCustomAsyncTaskCreatePostRequest) WithLog(enable boo
 /*
 OpenApiV30ReportCustomAsyncTaskCreatePost Method for OpenApiV30ReportCustomAsyncTaskCreatePost
 
+自定义报表—创建异步任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportCustomAsyncTaskCreatePostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialCreateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType
+// BrandMaterialCreateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType 小程序链接类型
 type BrandMaterialCreateV30MaterialListMaterialComponentCommonExternalMicroAppOpenUrlType string
 
 // List of brand_material_create_v3.0_material_list_material_component_common_external_micro_app_open_url_type

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarOrderUpdatePostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2StarOrderUpdatePost Method for OpenApi2StarOrderUpdatePost
 
+任务修改
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarOrderUpdatePostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAwemeAuthCancelV2AuthType
+// ToolsAwemeAuthCancelV2AuthType 抖音号授权类型
 type ToolsAwemeAuthCancelV2AuthType string
 
 // List of tools_aweme_auth_cancel_v2_auth_type

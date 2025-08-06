@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsSiteTemplateSiteCreateV2BricksTextLinkDtoLinkType
+// ToolsSiteTemplateSiteCreateV2BricksTextLinkDtoLinkType 链接类型，当图片跳转链接信息不为空时，必填
 type ToolsSiteTemplateSiteCreateV2BricksTextLinkDtoLinkType string
 
 // List of tools_site_template_site_create_v2_bricks_text_link_dto_link_type

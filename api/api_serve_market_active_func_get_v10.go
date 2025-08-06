@@ -76,6 +76,8 @@ func (r *ApiOpenApiV10ServeMarketActiveFuncGetGetRequest) WithLog(enable bool) *
 /*
 OpenApiV10ServeMarketActiveFuncGetGet Method for OpenApiV10ServeMarketActiveFuncGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10ServeMarketActiveFuncGetGetRequest
 */

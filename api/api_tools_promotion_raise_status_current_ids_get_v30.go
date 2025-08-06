@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30ToolsPromotionRaiseStatusCurrentIdsGetGetRequest) WithLog(
 /*
 OpenApiV30ToolsPromotionRaiseStatusCurrentIdsGetGet Method for OpenApiV30ToolsPromotionRaiseStatusCurrentIdsGetGet
 
+批量获取广告起量状态
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsPromotionRaiseStatusCurrentIdsGetGetRequest
 */

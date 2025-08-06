@@ -46,6 +46,8 @@ func (r *ApiOpenApiV10ServeMarketCidVerifyTokenGetRequest) WithLog(enable bool) 
 /*
 OpenApiV10ServeMarketCidVerifyTokenGet Method for OpenApiV10ServeMarketCidVerifyTokenGet
 
+该接口用于校验首次Cid回传数据，校验token是否可用场景，不可用于业务系统
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10ServeMarketCidVerifyTokenGetRequest
 */

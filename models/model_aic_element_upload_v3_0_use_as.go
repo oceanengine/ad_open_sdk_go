@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicElementUploadV30UseAs
+// AicElementUploadV30UseAs 元素标签，用于标记元素，单选
 type AicElementUploadV30UseAs string
 
 // List of aic_element_upload_v3.0_use_as

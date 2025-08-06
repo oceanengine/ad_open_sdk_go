@@ -80,6 +80,8 @@ func (r *ApiOpenApi2StarDemandOmGetChallengeItemsDataGetRequest) WithLog(enable 
 /*
 OpenApi2StarDemandOmGetChallengeItemsDataGet Method for OpenApi2StarDemandOmGetChallengeItemsDataGet
 
+小程序投稿任务结算数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemandOmGetChallengeItemsDataGetRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30PromotionShopInfoUpdatePostRequest) WithLog(enable bool) *
 /*
 OpenApiV30PromotionShopInfoUpdatePost Method for OpenApiV30PromotionShopInfoUpdatePost
 
+电商店铺信息回传
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionShopInfoUpdatePostRequest
 */

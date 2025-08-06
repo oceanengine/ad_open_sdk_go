@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAdCreatePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV10QianchuanAdCreatePost Method for OpenApiV10QianchuanAdCreatePost
 
+计划创建接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdCreatePostRequest
 */

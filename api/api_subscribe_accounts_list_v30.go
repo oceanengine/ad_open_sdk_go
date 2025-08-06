@@ -100,6 +100,8 @@ func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30SubscribeAccountsListGet Method for OpenApiV30SubscribeAccountsListGet
 
+查询订阅任务所订阅的 Adv
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SubscribeAccountsListGetRequest
 */

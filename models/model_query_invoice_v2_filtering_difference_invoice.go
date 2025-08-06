@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QueryInvoiceV2FilteringDifferenceInvoice
+// QueryInvoiceV2FilteringDifferenceInvoice 是否差额开票
 type QueryInvoiceV2FilteringDifferenceInvoice string
 
 // List of query_invoice_v2_filtering_difference_invoice

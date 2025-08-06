@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30BudgetMode
+// LocalProjectCreateV30BudgetMode 预算模式设置 本地交易场景下设置说明： 交易下仅支持日预算
 type LocalProjectCreateV30BudgetMode string
 
 // List of local_project_create_v3.0_budget_mode

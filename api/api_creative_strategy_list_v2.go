@@ -73,6 +73,8 @@ func (r *ApiOpenApi2CreativeStrategyListGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2CreativeStrategyListGet Method for OpenApi2CreativeStrategyListGet
 
+获取白盒策略列表，支持搜索
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CreativeStrategyListGetRequest
 */

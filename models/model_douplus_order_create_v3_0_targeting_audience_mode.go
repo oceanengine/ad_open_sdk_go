@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DouplusOrderCreateV30TargetingAudienceMode
+// DouplusOrderCreateV30TargetingAudienceMode 想吸引的观众类型，可选值: AUTO: 系统智能推荐（默认） CUSTOM: 自定义定向 AUDIENCE_PKG: 选择已有定向包id DMP_PKG: 人群包
 type DouplusOrderCreateV30TargetingAudienceMode string
 
 // List of douplus_order_create_v3.0_targeting_audience_mode

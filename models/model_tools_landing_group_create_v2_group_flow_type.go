@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsLandingGroupCreateV2GroupFlowType
+// ToolsLandingGroupCreateV2GroupFlowType 流量分配方式。详见：【附录-枚举值-落地页组流量分配方式】
 type ToolsLandingGroupCreateV2GroupFlowType string
 
 // List of tools_landing_group_create_v2_group_flow_type

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DpaProductUpdatePostRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2DpaProductUpdatePost Method for OpenApi2DpaProductUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaProductUpdatePostRequest
 */

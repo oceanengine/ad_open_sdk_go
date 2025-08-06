@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ReportProductDailyAsyncTaskCreatePostRequest) WithLog(enab
 /*
 OpenApiV30ReportProductDailyAsyncTaskCreatePost Method for OpenApiV30ReportProductDailyAsyncTaskCreatePost
 
+DPA天时级商品报表-创建
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportProductDailyAsyncTaskCreatePostRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30NativeAnchorDeletePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30NativeAnchorDeletePost Method for OpenApiV30NativeAnchorDeletePost
 
+删除原生锚点
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30NativeAnchorDeletePostRequest
 */

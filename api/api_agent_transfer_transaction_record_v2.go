@@ -87,6 +87,8 @@ func (r *ApiOpenApi2AgentTransferTransactionRecordGetRequest) WithLog(enable boo
 /*
 OpenApi2AgentTransferTransactionRecordGet Method for OpenApi2AgentTransferTransactionRecordGet
 
+代理商转账记录查询，相关功能与商务-转账记录-账户转账记录
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentTransferTransactionRecordGetRequest
 */

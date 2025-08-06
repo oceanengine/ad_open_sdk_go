@@ -106,6 +106,8 @@ func (r *ApiOpenApi2StarMcnGetContractedChallengeListGetRequest) WithLog(enable 
 /*
 OpenApi2StarMcnGetContractedChallengeListGet Method for OpenApi2StarMcnGetContractedChallengeListGet
 
+机构承包-获取已参与任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnGetContractedChallengeListGetRequest
 */

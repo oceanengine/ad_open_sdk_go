@@ -58,6 +58,8 @@ func (r *ApiOpenApi2AgentInfoGetRequest) WithLog(enable bool) *ApiOpenApi2AgentI
 /*
 OpenApi2AgentInfoGet Method for OpenApi2AgentInfoGet
 
+获取代理商信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentInfoGetRequest
 */

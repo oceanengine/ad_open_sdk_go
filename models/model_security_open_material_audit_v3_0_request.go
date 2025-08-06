@@ -19,6 +19,8 @@ type SecurityOpenMaterialAuditV30Request struct {
 	Data    string                              `json:"data"`
 	MsgType SecurityOpenMaterialAuditV30MsgType `json:"msg_type"`
 	// 需要取消送审的对象ID（由送审接口返回的object_id），送审时不填
-	ObjectId *int64                           `json:"object_id,omitempty"`
-	Type     SecurityOpenMaterialAuditV30Type `json:"type"`
+	ObjectId *int64 `json:"object_id,omitempty"`
+	// 商品ID，目前只支持千川的商品ID
+	ProductId *int64                           `json:"product_id,omitempty"`
+	Type      SecurityOpenMaterialAuditV30Type `json:"type"`
 }

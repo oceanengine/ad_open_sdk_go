@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsSiteCreatePostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2ToolsSiteCreatePost Method for OpenApi2ToolsSiteCreatePost
 
+通过此接口，用户可以创建站点（用于存放落地页），之后才能创建落地页。创建站点接口会返回"code_0"，代表站点创建成功。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsSiteCreatePostRequest
 */

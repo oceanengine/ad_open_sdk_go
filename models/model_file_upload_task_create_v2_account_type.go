@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileUploadTaskCreateV2AccountType
+// FileUploadTaskCreateV2AccountType 账户类型  ADVERTISER 广告主 AGTENT 代理商
 type FileUploadTaskCreateV2AccountType string
 
 // List of file_upload_task_create_v2_account_type

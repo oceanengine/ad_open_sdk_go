@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BudgetGroupCreateV30DeliveryMode
+// BudgetGroupCreateV30DeliveryMode 投放类型
 type BudgetGroupCreateV30DeliveryMode string
 
 // List of budget_group_create_v3.0_delivery_mode

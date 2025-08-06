@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BudgetGroupListV30FilteringBudgetGroupStatusFirst
+// BudgetGroupListV30FilteringBudgetGroupStatusFirst 预算组聚合一级状态
 type BudgetGroupListV30FilteringBudgetGroupStatusFirst string
 
 // List of budget_group_list_v3.0_filtering_budget_group_status_first

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileRebateMaterialDownloadCreateTaskV2FilteringIsLiveRebateType
+// FileRebateMaterialDownloadCreateTaskV2FilteringIsLiveRebateType 是否直播返点类型
 type FileRebateMaterialDownloadCreateTaskV2FilteringIsLiveRebateType string
 
 // List of file_rebate_material_download_create_task_v2_filtering_is_live_rebate_type

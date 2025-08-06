@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderListV30FilterAppOrigin
+// BrandOrderListV30FilterAppOrigin 投放端类型
 type BrandOrderListV30FilterAppOrigin string
 
 // List of brand_order_list_v3.0_filter_app_origin

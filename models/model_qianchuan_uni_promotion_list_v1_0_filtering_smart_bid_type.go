@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionListV10FilteringSmartBidType
+// QianchuanUniPromotionListV10FilteringSmartBidType 投放方式
 type QianchuanUniPromotionListV10FilteringSmartBidType string
 
 // List of qianchuan_uni_promotion_list_v1.0_filtering_smart_bid_type

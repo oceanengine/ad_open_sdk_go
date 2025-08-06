@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ClueCouponCodeConsumePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ClueCouponCodeConsumePost Method for OpenApi2ClueCouponCodeConsumePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueCouponCodeConsumePostRequest
 */

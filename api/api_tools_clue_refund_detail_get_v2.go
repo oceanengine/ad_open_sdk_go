@@ -74,6 +74,8 @@ func (r *ApiOpenApi2ToolsClueRefundDetailGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2ToolsClueRefundDetailGetGet Method for OpenApi2ToolsClueRefundDetailGetGet
 
+按广告计划维度统计按月的无效线索返款详情。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueRefundDetailGetGetRequest
 */

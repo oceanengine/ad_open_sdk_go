@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ToolsPrivativeWordGetGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2ToolsPrivativeWordGetGet Method for OpenApi2ToolsPrivativeWordGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPrivativeWordGetGetRequest
 */

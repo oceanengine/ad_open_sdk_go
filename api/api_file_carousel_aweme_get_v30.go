@@ -80,6 +80,8 @@ func (r *ApiOpenApiV30FileCarouselAwemeGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30FileCarouselAwemeGetGet Method for OpenApiV30FileCarouselAwemeGetGet
 
+获取创编可用的抖音图文素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30FileCarouselAwemeGetGetRequest
 */

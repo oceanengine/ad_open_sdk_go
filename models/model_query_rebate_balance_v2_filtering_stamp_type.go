@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QueryRebateBalanceV2FilteringStampType
+// QueryRebateBalanceV2FilteringStampType 是否电子签章 （1：是，2：否）
 type QueryRebateBalanceV2FilteringStampType string
 
 // List of query_rebate_balance_v2_filtering_stamp_type

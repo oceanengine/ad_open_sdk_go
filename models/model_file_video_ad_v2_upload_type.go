@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileVideoAdV2UploadType
+// FileVideoAdV2UploadType 视频上传方式 默认值：UPLOAD_BY_FILE 允许值：UPLOAD_BY_FILE、UPLOAD_BY_U
 type FileVideoAdV2UploadType string
 
 // List of file_video_ad_v2_upload_type

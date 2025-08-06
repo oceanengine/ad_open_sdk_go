@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvertiserInfoQueryV2DataAccountDetailListAdvertiserStatus
+// AgentAdvertiserInfoQueryV2DataAccountDetailListAdvertiserStatus 广告主账户状态
 type AgentAdvertiserInfoQueryV2DataAccountDetailListAdvertiserStatus string
 
 // List of agent_advertiser_info_query_v2_data_account_detail_list_advertiser_status

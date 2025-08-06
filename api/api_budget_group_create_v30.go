@@ -52,6 +52,10 @@ func (r *ApiOpenApiV30BudgetGroupCreatePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30BudgetGroupCreatePost Method for OpenApiV30BudgetGroupCreatePost
 
+新建预算组，预算组可设置多个项目的预算（日预算）
+
+注意：一个账户下同时最多存在 200 个有效的预算组，超过请先删除无用预算组
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BudgetGroupCreatePostRequest
 */

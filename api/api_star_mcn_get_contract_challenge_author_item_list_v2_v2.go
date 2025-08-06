@@ -76,6 +76,8 @@ func (r *ApiOpenApi2StarMcnGetContractChallengeAuthorItemListV2GetRequest) WithL
 /*
 OpenApi2StarMcnGetContractChallengeAuthorItemListV2Get Method for OpenApi2StarMcnGetContractChallengeAuthorItemListV2Get
 
+机构承包-获取投后数据信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnGetContractChallengeAuthorItemListV2GetRequest
 */

@@ -100,6 +100,8 @@ func (r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) WithLog(enab
 /*
 OpenApi2ToolsPioneerProgramAttachmentUploadPost Method for OpenApi2ToolsPioneerProgramAttachmentUploadPost
 
+上传先锋计划数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest
 */

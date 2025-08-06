@@ -12,11 +12,13 @@ package models
 
 // ToolsHotMaterialDeriveListV30ResponseDataDataInnerDeriveMaterialsInner struct for ToolsHotMaterialDeriveListV30ResponseDataDataInnerDeriveMaterialsInner
 type ToolsHotMaterialDeriveListV30ResponseDataDataInnerDeriveMaterialsInner struct {
+	// 预览链接，存在有效期
+	PreVideoUrl    string                                                                               `json:"pre_video_url"`
 	StrategyDetail ToolsHotMaterialDeriveListV30ResponseDataDataInnerDeriveMaterialsInnerStrategyDetail `json:"strategy_detail"`
 	//
 	Title string `json:"title"`
 	//
 	VideoId string `json:"video_id"`
-	// 预览链接，存在有效期
-	VideoUrl string `json:"video_url"`
+	//
+	VideoUrl *string `json:"video_url,omitempty"`
 }

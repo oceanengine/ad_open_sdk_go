@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderListV30DataOrdersAuditStatus
+// BrandOrderListV30DataOrdersAuditStatus 预定单审核状态
 type BrandOrderListV30DataOrdersAuditStatus string
 
 // List of brand_order_list_v3.0_data_orders_audit_status

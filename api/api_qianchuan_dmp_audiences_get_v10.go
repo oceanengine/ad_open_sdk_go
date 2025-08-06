@@ -70,6 +70,8 @@ func (r *ApiOpenApiV10QianchuanDmpAudiencesGetGetRequest) WithLog(enable bool) *
 /*
 OpenApiV10QianchuanDmpAudiencesGetGet Method for OpenApiV10QianchuanDmpAudiencesGetGet
 
+本接口，仅用来获取在PC端创建/更新广告计划，定向设置下选择“更多人群”时，所展示的人群包列表信息。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanDmpAudiencesGetGetRequest
 */

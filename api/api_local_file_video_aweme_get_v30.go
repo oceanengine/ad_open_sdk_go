@@ -87,6 +87,8 @@ func (r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV30LocalFileVideoAwemeGetGet Method for OpenApiV30LocalFileVideoAwemeGetGet
 
+拉抖音号主页视频接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalFileVideoAwemeGetGetRequest
 */

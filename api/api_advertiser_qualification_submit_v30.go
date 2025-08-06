@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AdvertiserQualificationSubmitPostRequest) WithLog(enable b
 /*
 OpenApiV30AdvertiserQualificationSubmitPost Method for OpenApiV30AdvertiserQualificationSubmitPost
 
+提交广告主资质信息为全量接口。更新的时候需要全量先获取所有资质，然后更新相应资质。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AdvertiserQualificationSubmitPostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsSiteTemplateGetV2DataListBricksPictureLinkDtoLinkType
+// ToolsSiteTemplateGetV2DataListBricksPictureLinkDtoLinkType 链接类型，当`link_dto`不为空时，有值
 type ToolsSiteTemplateGetV2DataListBricksPictureLinkDtoLinkType string
 
 // List of tools_site_template_get_v2_data_list_bricks_picture_link_dto_link_type

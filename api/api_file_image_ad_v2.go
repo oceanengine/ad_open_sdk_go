@@ -94,6 +94,8 @@ func (r *ApiOpenApi2FileImageAdPostRequest) WithLog(enable bool) *ApiOpenApi2Fil
 /*
 OpenApi2FileImageAdPost Method for OpenApi2FileImageAdPost
 
+通过此接口，用户可以上传和广告相关的素材图片，例如创意素材。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileImageAdPostRequest
 */

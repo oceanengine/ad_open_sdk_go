@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionListV30DataListKeywordsMatchType
+// PromotionListV30DataListKeywordsMatchType 匹配方式
 type PromotionListV30DataListKeywordsMatchType string
 
 // List of promotion_list_v3.0_data_list_keywords_match_type

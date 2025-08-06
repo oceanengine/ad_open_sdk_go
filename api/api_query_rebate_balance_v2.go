@@ -74,6 +74,8 @@ func (r *ApiOpenApi2QueryRebateBalanceGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2QueryRebateBalanceGet Method for OpenApi2QueryRebateBalanceGet
 
+结算-查询返点流水信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2QueryRebateBalanceGetRequest
 */

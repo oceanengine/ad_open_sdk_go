@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AdShopInfoUpdatePostRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30AdShopInfoUpdatePost Method for OpenApiV30AdShopInfoUpdatePost
 
+店铺信息更新
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AdShopInfoUpdatePostRequest
 */

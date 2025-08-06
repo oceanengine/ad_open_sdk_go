@@ -58,6 +58,8 @@ func (r *ApiOpenApi2AdvertiserAvatarUploadPostRequest) WithLog(enable bool) *Api
 /*
 OpenApi2AdvertiserAvatarUploadPost Method for OpenApi2AdvertiserAvatarUploadPost
 
+上传广告主头像
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdvertiserAvatarUploadPostRequest
 */

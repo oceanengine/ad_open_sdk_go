@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CgTransferQueryTransferDetailV30DataTransferDirection
+// CgTransferQueryTransferDetailV30DataTransferDirection 转账方向(以目标账户视角确定)
 type CgTransferQueryTransferDetailV30DataTransferDirection string
 
 // List of cg_transfer_query_transfer_detail_v3.0_data_transfer_direction

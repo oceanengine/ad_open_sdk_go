@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandCustomAudienceListGetRequest) WithLog(enable bool) *A
 /*
 OpenApiV30BrandCustomAudienceListGet Method for OpenApiV30BrandCustomAudienceListGet
 
+查询品牌可用人群包
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandCustomAudienceListGetRequest
 */

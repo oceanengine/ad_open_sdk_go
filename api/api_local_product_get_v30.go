@@ -80,6 +80,8 @@ func (r *ApiOpenApiV30LocalProductGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30LocalProductGetGet Method for OpenApiV30LocalProductGetGet
 
+获取商品列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalProductGetGetRequest
 */

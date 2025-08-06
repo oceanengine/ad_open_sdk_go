@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest) WithLog(en
 /*
 OpenApi2StarVasSubmitExportBoostItemGroupDataPost Method for OpenApi2StarVasSubmitExportBoostItemGroupDataPost
 
+发起导出投中加热组数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest
 */

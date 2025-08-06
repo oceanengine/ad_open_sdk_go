@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ClueWechatPoolListGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2ClueWechatPoolListGet Method for OpenApi2ClueWechatPoolListGet
 
+支持按页查询广告主账户下的全部微信
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueWechatPoolListGetRequest
 */

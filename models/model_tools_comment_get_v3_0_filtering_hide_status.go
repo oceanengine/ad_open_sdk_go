@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsCommentGetV30FilteringHideStatus
+// ToolsCommentGetV30FilteringHideStatus 隐藏状态， 允许值： 已隐藏 HIDE 未隐藏 NOT_HIDE
 type ToolsCommentGetV30FilteringHideStatus string
 
 // List of tools_comment_get_v3.0_filtering_hide_status

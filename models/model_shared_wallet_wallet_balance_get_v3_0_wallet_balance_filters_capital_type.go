@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SharedWalletWalletBalanceGetV30WalletBalanceFiltersCapitalType
+// SharedWalletWalletBalanceGetV30WalletBalanceFiltersCapitalType 资金类型包括 预付、授信; 不填默认不过滤资金类型
 type SharedWalletWalletBalanceGetV30WalletBalanceFiltersCapitalType string
 
 // List of shared_wallet_wallet_balance_get_v3.0_wallet_balance_filters_capital_type

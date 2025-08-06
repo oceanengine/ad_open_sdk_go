@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsAudienceInfoDistrictSplit
+// BrandAdGetV30DataAdsAudienceInfoDistrictSplit 城市拆分标识
 type BrandAdGetV30DataAdsAudienceInfoDistrictSplit int64
 
 // List of brand_ad_get_v3.0_data_ads_audience_info_district_split

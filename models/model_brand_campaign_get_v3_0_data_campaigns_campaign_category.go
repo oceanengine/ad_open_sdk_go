@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandCampaignGetV30DataCampaignsCampaignCategory
+// BrandCampaignGetV30DataCampaignsCampaignCategory 广告组类型
 type BrandCampaignGetV30DataCampaignsCampaignCategory int64
 
 // List of brand_campaign_get_v3.0_data_campaigns_campaign_category

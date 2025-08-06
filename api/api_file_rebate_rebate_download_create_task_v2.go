@@ -52,6 +52,8 @@ func (r *ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequest) WithLog(enabl
 /*
 OpenApi2FileRebateRebateDownloadCreateTaskPost Method for OpenApi2FileRebateRebateDownloadCreateTaskPost
 
+根据筛选条件创建相关指标的下载任务,返回用户query_id,用于后续的文件下载：目前主要用户核算指标下载
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequest
 */

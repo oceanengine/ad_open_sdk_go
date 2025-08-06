@@ -58,6 +58,8 @@ func (r *ApiOpenApi2StarMcnProviderGetTaskDetailGetRequest) WithLog(enable bool)
 /*
 OpenApi2StarMcnProviderGetTaskDetailGet Method for OpenApi2StarMcnProviderGetTaskDetailGet
 
+获取指定任务详情接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnProviderGetTaskDetailGetRequest
 */

@@ -70,6 +70,8 @@ func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30ToolsWechatAppletListGet Method for OpenApiV30ToolsWechatAppletListGet
 
+openapi场景下的小程序获取接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsWechatAppletListGetRequest
 */

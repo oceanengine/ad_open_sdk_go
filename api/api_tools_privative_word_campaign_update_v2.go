@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsPrivativeWordCampaignUpdatePostRequest) WithLog(enable 
 /*
 OpenApi2ToolsPrivativeWordCampaignUpdatePost Method for OpenApi2ToolsPrivativeWordCampaignUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPrivativeWordCampaignUpdatePostRequest
 */

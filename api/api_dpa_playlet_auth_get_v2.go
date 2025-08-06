@@ -67,6 +67,8 @@ func (r *ApiOpenApi2DpaPlayletAuthGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2DpaPlayletAuthGetGet Method for OpenApi2DpaPlayletAuthGetGet
 
+查询短剧商品原片授权申请状态
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaPlayletAuthGetGetRequest
 */

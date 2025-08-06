@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ToolsLogSearchGetRequest) WithLog(enable bool) *ApiOpenApi2T
 /*
 OpenApi2ToolsLogSearchGet Method for OpenApi2ToolsLogSearchGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsLogSearchGetRequest
 */

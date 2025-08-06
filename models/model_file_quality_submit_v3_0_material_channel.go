@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileQualitySubmitV30MaterialChannel
+// FileQualitySubmitV30MaterialChannel 素材业务线
 type FileQualitySubmitV30MaterialChannel string
 
 // List of file_quality_submit_v3.0_material_channel

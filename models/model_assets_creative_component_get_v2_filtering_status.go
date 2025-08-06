@@ -15,9 +15,9 @@ type AssetsCreativeComponentGetV2FilteringStatus string
 
 // List of assets_creative_component_get_v2_filtering_status
 const (
-	REJECT_AssetsCreativeComponentGetV2FilteringStatus AssetsCreativeComponentGetV2FilteringStatus = "REJECT"
-	PASS_AssetsCreativeComponentGetV2FilteringStatus   AssetsCreativeComponentGetV2FilteringStatus = "PASS"
 	UNDER_AssetsCreativeComponentGetV2FilteringStatus  AssetsCreativeComponentGetV2FilteringStatus = "UNDER"
+	PASS_AssetsCreativeComponentGetV2FilteringStatus   AssetsCreativeComponentGetV2FilteringStatus = "PASS"
+	REJECT_AssetsCreativeComponentGetV2FilteringStatus AssetsCreativeComponentGetV2FilteringStatus = "REJECT"
 )
 
 // Ptr returns reference to assets_creative_component_get_v2_filtering_status value

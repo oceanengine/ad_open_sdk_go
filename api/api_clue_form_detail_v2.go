@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ClueFormDetailGetRequest) WithLog(enable bool) *ApiOpenApi2C
 /*
 OpenApi2ClueFormDetailGet Method for OpenApi2ClueFormDetailGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueFormDetailGetRequest
 */

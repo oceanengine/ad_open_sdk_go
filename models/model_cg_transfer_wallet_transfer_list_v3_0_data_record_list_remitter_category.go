@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CgTransferWalletTransferListV30DataRecordListRemitterCategory
+// CgTransferWalletTransferListV30DataRecordListRemitterCategory 减款方类别
 type CgTransferWalletTransferListV30DataRecordListRemitterCategory string
 
 // List of cg_transfer_wallet_transfer_list_v3.0_data_record_list_remitter_category

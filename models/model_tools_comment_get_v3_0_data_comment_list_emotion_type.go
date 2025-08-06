@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsCommentGetV30DataCommentListEmotionType
+// ToolsCommentGetV30DataCommentListEmotionType 评论情感, 允许值： POSITIVE正向评论 NEGATIVE负向评论 NEUTRAL 中性评论
 type ToolsCommentGetV30DataCommentListEmotionType string
 
 // List of tools_comment_get_v3.0_data_comment_list_emotion_type

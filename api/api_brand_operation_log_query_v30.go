@@ -95,6 +95,8 @@ func (r *ApiOpenApiV30BrandOperationLogQueryGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV30BrandOperationLogQueryGet Method for OpenApiV30BrandOperationLogQueryGet
 
+操作日志查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandOperationLogQueryGetRequest
 */

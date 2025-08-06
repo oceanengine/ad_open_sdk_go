@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdCreateV30LandingType
+// BrandAdCreateV30LandingType 推广目的
 type BrandAdCreateV30LandingType string
 
 // List of brand_ad_create_v3.0_landing_type

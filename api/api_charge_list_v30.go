@@ -123,6 +123,8 @@ func (r *ApiOpenApiV30ChargeListGetRequest) WithLog(enable bool) *ApiOpenApiV30C
 /*
 OpenApiV30ChargeListGet Method for OpenApiV30ChargeListGet
 
+根据广告主账号和相应的业务线去查询对应的充值记录
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ChargeListGetRequest
 */

@@ -67,6 +67,8 @@ func (r *ApiOpenApi2ClueWechatDataGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2ClueWechatDataGetGet Method for OpenApi2ClueWechatDataGetGet
 
+线索通获取微信加粉链路数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueWechatDataGetGetRequest
 */

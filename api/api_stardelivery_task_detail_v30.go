@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30StardeliveryTaskDetailGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV30StardeliveryTaskDetailGet Method for OpenApiV30StardeliveryTaskDetailGet
 
+查询星广联投任务详情
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30StardeliveryTaskDetailGetRequest
 */

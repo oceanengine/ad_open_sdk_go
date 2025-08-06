@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicMaterialGetV30FilteringRadio
+// AicMaterialGetV30FilteringRadio 视频宽高比例枚举
 type AicMaterialGetV30FilteringRadio string
 
 // List of aic_material_get_v3.0_filtering_radio

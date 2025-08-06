@@ -80,6 +80,8 @@ func (r *ApiOpenApiV30DouplusOptionalItemsListGetRequest) WithLog(enable bool) *
 /*
 OpenApiV30DouplusOptionalItemsListGet Method for OpenApiV30DouplusOptionalItemsListGet
 
+获取DOU+可投视频列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30DouplusOptionalItemsListGetRequest
 */

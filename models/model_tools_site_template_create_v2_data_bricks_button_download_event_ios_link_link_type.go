@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsSiteTemplateCreateV2DataBricksButtonDownloadEventIosLinkLinkType
+// ToolsSiteTemplateCreateV2DataBricksButtonDownloadEventIosLinkLinkType 链接类型，当`ios_link`不为空时，有值
 type ToolsSiteTemplateCreateV2DataBricksButtonDownloadEventIosLinkLinkType string
 
 // List of tools_site_template_create_v2_data_bricks_button_download_event_ios_link_link_type

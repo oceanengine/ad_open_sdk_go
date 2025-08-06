@@ -77,6 +77,8 @@ func (r *ApiOpenApi2StarMcnProviderGetTaskItemListGetRequest) WithLog(enable boo
 /*
 OpenApi2StarMcnProviderGetTaskItemListGet Method for OpenApi2StarMcnProviderGetTaskItemListGet
 
+获取投后数据信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnProviderGetTaskItemListGetRequest
 */

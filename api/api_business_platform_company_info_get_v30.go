@@ -64,6 +64,8 @@ func (r *ApiOpenApiV30BusinessPlatformCompanyInfoGetGetRequest) WithLog(enable b
 /*
 OpenApiV30BusinessPlatformCompanyInfoGetGet Method for OpenApiV30BusinessPlatformCompanyInfoGetGet
 
+获取组织下全部主体
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BusinessPlatformCompanyInfoGetGetRequest
 */

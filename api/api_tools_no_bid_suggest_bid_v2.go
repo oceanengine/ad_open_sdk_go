@@ -76,6 +76,8 @@ func (r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ToolsNoBidSuggestBidGet Method for OpenApi2ToolsNoBidSuggestBidGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsNoBidSuggestBidGetRequest
 */

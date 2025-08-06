@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AssetsCreativeComponentUpdatePostRequest) WithLog(enable boo
 /*
 OpenApi2AssetsCreativeComponentUpdatePost Method for OpenApi2AssetsCreativeComponentUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AssetsCreativeComponentUpdatePostRequest
 */

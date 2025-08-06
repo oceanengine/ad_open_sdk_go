@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30ProjectCostProtectStatusGetGetRequest) WithLog(enable bool
 /*
 OpenApiV30ProjectCostProtectStatusGetGet Method for OpenApiV30ProjectCostProtectStatusGetGet
 
+支持查询UBA项目层级成本保障状态（接口能力仅对齐AD）
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ProjectCostProtectStatusGetGetRequest
 */

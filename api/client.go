@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.63
+// APIClient manages communication with the Oceanengine Open Api API v1.1.64
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -583,25 +583,7 @@ type APIClient struct {
 
 	EnterpriseBindListGetV10Api *EnterpriseBindListGetV10ApiService
 
-	EnterpriseCommentDetailV10Api *EnterpriseCommentDetailV10ApiService
-
-	EnterpriseCommentListGetV10Api *EnterpriseCommentListGetV10ApiService
-
-	EnterpriseCommentReplyListV10Api *EnterpriseCommentReplyListV10ApiService
-
-	EnterpriseCommentReplyV10Api *EnterpriseCommentReplyV10ApiService
-
-	EnterpriseFlowCategoryGetV10Api *EnterpriseFlowCategoryGetV10ApiService
-
 	EnterpriseInfoV10Api *EnterpriseInfoV10ApiService
-
-	EnterpriseItemListV10Api *EnterpriseItemListV10ApiService
-
-	EnterpriseOperationLogGetV10Api *EnterpriseOperationLogGetV10ApiService
-
-	EnterpriseOverviewDataGetV10Api *EnterpriseOverviewDataGetV10ApiService
-
-	EnterpriseVideoInfoGetV10Api *EnterpriseVideoInfoGetV10ApiService
 
 	EventManagerAbnormalAssetsGetV30Api *EventManagerAbnormalAssetsGetV30ApiService
 
@@ -609,11 +591,11 @@ type APIClient struct {
 
 	EventManagerAuthAddPublicKeyV2Api *EventManagerAuthAddPublicKeyV2ApiService
 
+	EventManagerAuthDelPublicKeyV2Api *EventManagerAuthDelPublicKeyV2ApiService
+
 	EventManagerAuthEnableV2Api *EventManagerAuthEnableV2ApiService
 
 	EventManagerAuthGetAllPublicKeysV2Api *EventManagerAuthGetAllPublicKeysV2ApiService
-
-	EventManagerAuthGetAuthStatusV2Api *EventManagerAuthGetAuthStatusV2ApiService
 
 	EventManagerAuthGetPublicKeyV2Api *EventManagerAuthGetPublicKeyV2ApiService
 
@@ -1109,8 +1091,6 @@ type APIClient struct {
 
 	QianchuanReportLiveGetV10Api *QianchuanReportLiveGetV10ApiService
 
-	QianchuanReportLiveV2GetV10Api *QianchuanReportLiveV2GetV10ApiService
-
 	QianchuanReportLongTransferOrderConfigGetV10Api *QianchuanReportLongTransferOrderConfigGetV10ApiService
 
 	QianchuanReportLongTransferOrderDataGetV10Api *QianchuanReportLongTransferOrderDataGetV10ApiService
@@ -1120,6 +1100,8 @@ type APIClient struct {
 	QianchuanReportMaterialGetV10Api *QianchuanReportMaterialGetV10ApiService
 
 	QianchuanReportSearchWordGetV10Api *QianchuanReportSearchWordGetV10ApiService
+
+	QianchuanReportTodayLiveGetV10Api *QianchuanReportTodayLiveGetV10ApiService
 
 	QianchuanReportTodayLiveRoomConfigGetV10Api *QianchuanReportTodayLiveRoomConfigGetV10ApiService
 
@@ -2400,22 +2382,13 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.EbpAdvertiserTaskListV2Api = (*EbpAdvertiserTaskListV2ApiService)(&c.common)
 	c.EbpLevelGetV2Api = (*EbpLevelGetV2ApiService)(&c.common)
 	c.EnterpriseBindListGetV10Api = (*EnterpriseBindListGetV10ApiService)(&c.common)
-	c.EnterpriseCommentDetailV10Api = (*EnterpriseCommentDetailV10ApiService)(&c.common)
-	c.EnterpriseCommentListGetV10Api = (*EnterpriseCommentListGetV10ApiService)(&c.common)
-	c.EnterpriseCommentReplyListV10Api = (*EnterpriseCommentReplyListV10ApiService)(&c.common)
-	c.EnterpriseCommentReplyV10Api = (*EnterpriseCommentReplyV10ApiService)(&c.common)
-	c.EnterpriseFlowCategoryGetV10Api = (*EnterpriseFlowCategoryGetV10ApiService)(&c.common)
 	c.EnterpriseInfoV10Api = (*EnterpriseInfoV10ApiService)(&c.common)
-	c.EnterpriseItemListV10Api = (*EnterpriseItemListV10ApiService)(&c.common)
-	c.EnterpriseOperationLogGetV10Api = (*EnterpriseOperationLogGetV10ApiService)(&c.common)
-	c.EnterpriseOverviewDataGetV10Api = (*EnterpriseOverviewDataGetV10ApiService)(&c.common)
-	c.EnterpriseVideoInfoGetV10Api = (*EnterpriseVideoInfoGetV10ApiService)(&c.common)
 	c.EventManagerAbnormalAssetsGetV30Api = (*EventManagerAbnormalAssetsGetV30ApiService)(&c.common)
 	c.EventManagerAssetsCreateV2Api = (*EventManagerAssetsCreateV2ApiService)(&c.common)
 	c.EventManagerAuthAddPublicKeyV2Api = (*EventManagerAuthAddPublicKeyV2ApiService)(&c.common)
+	c.EventManagerAuthDelPublicKeyV2Api = (*EventManagerAuthDelPublicKeyV2ApiService)(&c.common)
 	c.EventManagerAuthEnableV2Api = (*EventManagerAuthEnableV2ApiService)(&c.common)
 	c.EventManagerAuthGetAllPublicKeysV2Api = (*EventManagerAuthGetAllPublicKeysV2ApiService)(&c.common)
-	c.EventManagerAuthGetAuthStatusV2Api = (*EventManagerAuthGetAuthStatusV2ApiService)(&c.common)
 	c.EventManagerAuthGetPublicKeyV2Api = (*EventManagerAuthGetPublicKeyV2ApiService)(&c.common)
 	c.EventManagerAvailableEventsGetV2Api = (*EventManagerAvailableEventsGetV2ApiService)(&c.common)
 	c.EventManagerDeepBidTypeGetV30Api = (*EventManagerDeepBidTypeGetV30ApiService)(&c.common)
@@ -2663,12 +2636,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanReportCustomConfigGetV10Api = (*QianchuanReportCustomConfigGetV10ApiService)(&c.common)
 	c.QianchuanReportCustomGetV10Api = (*QianchuanReportCustomGetV10ApiService)(&c.common)
 	c.QianchuanReportLiveGetV10Api = (*QianchuanReportLiveGetV10ApiService)(&c.common)
-	c.QianchuanReportLiveV2GetV10Api = (*QianchuanReportLiveV2GetV10ApiService)(&c.common)
 	c.QianchuanReportLongTransferOrderConfigGetV10Api = (*QianchuanReportLongTransferOrderConfigGetV10ApiService)(&c.common)
 	c.QianchuanReportLongTransferOrderDataGetV10Api = (*QianchuanReportLongTransferOrderDataGetV10ApiService)(&c.common)
 	c.QianchuanReportLongTransferOrderGetV10Api = (*QianchuanReportLongTransferOrderGetV10ApiService)(&c.common)
 	c.QianchuanReportMaterialGetV10Api = (*QianchuanReportMaterialGetV10ApiService)(&c.common)
 	c.QianchuanReportSearchWordGetV10Api = (*QianchuanReportSearchWordGetV10ApiService)(&c.common)
+	c.QianchuanReportTodayLiveGetV10Api = (*QianchuanReportTodayLiveGetV10ApiService)(&c.common)
 	c.QianchuanReportTodayLiveRoomConfigGetV10Api = (*QianchuanReportTodayLiveRoomConfigGetV10ApiService)(&c.common)
 	c.QianchuanReportTodayLiveRoomDataGetV10Api = (*QianchuanReportTodayLiveRoomDataGetV10ApiService)(&c.common)
 	c.QianchuanReportUniPromotionConfigGetV10Api = (*QianchuanReportUniPromotionConfigGetV10ApiService)(&c.common)

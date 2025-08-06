@@ -70,6 +70,8 @@ func (r *ApiOpenApiV10QianchuanShopAdvertiserListGetRequest) WithLog(enable bool
 /*
 OpenApiV10QianchuanShopAdvertiserListGet Method for OpenApiV10QianchuanShopAdvertiserListGet
 
+用于获取店铺账户下的广告主账号列表。当授权账户为PLATFORM_ROLE_SHOP_ACCOUNT抖音店铺账户时，可通过当前工具查询店铺下管理的千川广告主账号。仅当账户返回额外权限列表包含随心推权限时，对应账户支持操作随心推业务接口。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanShopAdvertiserListGetRequest
 */

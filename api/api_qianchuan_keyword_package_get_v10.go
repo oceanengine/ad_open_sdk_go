@@ -64,6 +64,8 @@ func (r *ApiOpenApiV10QianchuanKeywordPackageGetGetRequest) WithLog(enable bool)
 /*
 OpenApiV10QianchuanKeywordPackageGetGet Method for OpenApiV10QianchuanKeywordPackageGetGet
 
+获取词包推荐关键词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanKeywordPackageGetGetRequest
 */

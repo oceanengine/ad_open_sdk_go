@@ -53,6 +53,8 @@ func (r *ApiOpenApiV30BrandActionCategoryGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30BrandActionCategoryGet Method for OpenApiV30BrandActionCategoryGet
 
+AD品牌查询兴趣定向，创编时使用
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandActionCategoryGetRequest
 */

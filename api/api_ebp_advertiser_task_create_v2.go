@@ -52,6 +52,8 @@ func (r *ApiOpenApi2EbpAdvertiserTaskCreatePostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2EbpAdvertiserTaskCreatePost Method for OpenApi2EbpAdvertiserTaskCreatePost
 
+创建离线拉取账户任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EbpAdvertiserTaskCreatePostRequest
 */

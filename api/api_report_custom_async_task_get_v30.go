@@ -70,6 +70,8 @@ func (r *ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest) WithLog(enable bool) *
 /*
 OpenApiV30ReportCustomAsyncTaskGetGet Method for OpenApiV30ReportCustomAsyncTaskGetGet
 
+自定义报表-获取异步任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest
 */

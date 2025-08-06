@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AgentAdvertiserUnassignPostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2AgentAdvertiserUnassignPost Method for OpenApi2AgentAdvertiserUnassignPost
 
+广告主账户解绑负责人、解绑协作者
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentAdvertiserUnassignPostRequest
 */

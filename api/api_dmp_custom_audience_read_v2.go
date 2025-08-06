@@ -58,6 +58,8 @@ func (r *ApiOpenApi2DmpCustomAudienceReadGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2DmpCustomAudienceReadGet Method for OpenApi2DmpCustomAudienceReadGet
 
+用户可以通过调用此接口，查询广告主下的指定人群包信息。支持查询已删除的人群包信息，具体包含的信息内容请查看应答参数。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DmpCustomAudienceReadGetRequest
 */

@@ -70,6 +70,8 @@ func (r *ApiOpenApi2ToolsAdRaiseVersionGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ToolsAdRaiseVersionGetGet Method for OpenApi2ToolsAdRaiseVersionGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAdRaiseVersionGetGetRequest
 */

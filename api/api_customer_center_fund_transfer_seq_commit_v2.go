@@ -52,6 +52,8 @@ func (r *ApiOpenApi2CustomerCenterFundTransferSeqCommitPostRequest) WithLog(enab
 /*
 OpenApi2CustomerCenterFundTransferSeqCommitPost Method for OpenApi2CustomerCenterFundTransferSeqCommitPost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CustomerCenterFundTransferSeqCommitPostRequest
 */

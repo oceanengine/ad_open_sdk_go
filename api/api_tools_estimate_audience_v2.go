@@ -322,6 +322,8 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2ToolsEstimateAudienceGet Method for OpenApi2ToolsEstimateAudienceGet
 
+通过此接口你可以查询计划的受众条件，预估其在今日头条、抖音短视频、火山小视频和西瓜视频中的覆盖用户量，当受众预估的结果低于3万时，建议重新设置受众选项。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsEstimateAudienceGetRequest
 */

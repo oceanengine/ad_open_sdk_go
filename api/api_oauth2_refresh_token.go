@@ -52,6 +52,8 @@ func (r *ApiOpenApiOauth2RefreshTokenPostRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiOauth2RefreshTokenPost Method for OpenApiOauth2RefreshTokenPost
 
+当Access_Token超时后，可以使用refresh_token进行刷新，每次刷新都会产生新的access_token和Refresh_Token，同时重置二者的有效期。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiOauth2RefreshTokenPostRequest
 */

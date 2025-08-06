@@ -77,6 +77,8 @@ func (r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) WithLog(enable boo
 /*
 OpenApiV30StardeliveryTaskAuthorDetailGet Method for OpenApiV30StardeliveryTaskAuthorDetailGet
 
+获取星广联投任务已投稿达人信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest
 */

@@ -74,6 +74,8 @@ func (r *ApiOpenApi2ToolsClueCallVirtualNumberRefundDetailGetGetRequest) WithLog
 /*
 OpenApi2ToolsClueCallVirtualNumberRefundDetailGetGet Method for OpenApi2ToolsClueCallVirtualNumberRefundDetailGetGet
 
+按主叫号码维度统计按月的呼叫话费返款详情
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueCallVirtualNumberRefundDetailGetGetRequest
 */

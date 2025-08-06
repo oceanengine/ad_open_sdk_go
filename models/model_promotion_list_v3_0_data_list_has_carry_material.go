@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionListV30DataListHasCarryMaterial
+// PromotionListV30DataListHasCarryMaterial 该广告是否包含搬运打压状态的素材 TRUE：存在打压风险 FALSE：不存在打压风险
 type PromotionListV30DataListHasCarryMaterial string
 
 // List of promotion_list_v3.0_data_list_has_carry_material

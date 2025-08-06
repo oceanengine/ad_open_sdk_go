@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAbTestCreateV2TestType
+// ToolsAbTestCreateV2TestType 实验类型，允许值：\"CAMPAIGN\"：广告组分流实验；\"AD\"：广告计划分流实验。
 type ToolsAbTestCreateV2TestType string
 
 // List of tools_ab_test_create_v2_test_type

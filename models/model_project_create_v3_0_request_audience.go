@@ -84,5 +84,6 @@ type ProjectCreateV30RequestAudience struct {
 	RetargetingTagsInclude []int64 `json:"retargeting_tags_include,omitempty"`
 	// RTA策略ID， https://open.oceanengine.com/labels/7/docs/1696710749917196
 	RtaId                  *int64                                          `json:"rta_id,omitempty"`
+	SmartExtend            *ProjectCreateV30AudienceSmartExtend            `json:"smart_extend,omitempty"`
 	SuperiorPopularityType *ProjectCreateV30AudienceSuperiorPopularityType `json:"superior_popularity_type,omitempty"`
 }

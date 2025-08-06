@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueRefundInfoQueryPostRequest) WithLog(enable bool) *A
 /*
 OpenApi2ToolsClueRefundInfoQueryPost Method for OpenApi2ToolsClueRefundInfoQueryPost
 
+查询线索返款相关信息。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueRefundInfoQueryPostRequest
 */

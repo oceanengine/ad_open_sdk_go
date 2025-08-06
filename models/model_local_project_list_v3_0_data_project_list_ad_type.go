@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30DataProjectListAdType
+// LocalProjectListV30DataProjectListAdType 广告类型
 type LocalProjectListV30DataProjectListAdType string
 
 // List of local_project_list_v3.0_data_project_list_ad_type

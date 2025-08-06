@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionCreateV30AutoExtendTraffic
+// PromotionCreateV30AutoExtendTraffic 智能拓流开关
 type PromotionCreateV30AutoExtendTraffic string
 
 // List of promotion_create_v3.0_auto_extend_traffic

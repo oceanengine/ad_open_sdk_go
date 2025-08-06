@@ -74,6 +74,8 @@ func (r *ApiOpenApi2StarChallengeGetCustomTaskDataGetRequest) WithLog(enable boo
 /*
 OpenApi2StarChallengeGetCustomTaskDataGet Method for OpenApi2StarChallengeGetCustomTaskDataGet
 
+提供一个生态任务数据查询API，便于获取任务数据和投稿数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarChallengeGetCustomTaskDataGetRequest
 */

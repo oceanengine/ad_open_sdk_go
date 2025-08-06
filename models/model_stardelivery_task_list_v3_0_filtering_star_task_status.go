@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StardeliveryTaskListV30FilteringStarTaskStatus
+// StardeliveryTaskListV30FilteringStarTaskStatus 任务一级状态过滤，允许值 PREPARATION 任务准备  PENDING_LAUNCH 任务待启动 CANCELLED 任务已取消 BILLING _IN_PROGRESS 计费中 COMPLETED 任务完成
 type StardeliveryTaskListV30FilteringStarTaskStatus string
 
 // List of stardelivery_task_list_v3.0_filtering_star_task_status

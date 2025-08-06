@@ -88,6 +88,8 @@ func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30ToolsOrangeSiteGetGet Method for OpenApiV30ToolsOrangeSiteGetGet
 
+获取支持对应优化目标的橙子建站站点列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsOrangeSiteGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2DataListPricingCategory
+// AgentAdvCostReportListQueryV2DataListPricingCategory 广告类型(\"0\":\"不区分品牌和竞价广告组\",\"1\":\"品牌广告组\",\"2\":\"竞价广告组\")
 type AgentAdvCostReportListQueryV2DataListPricingCategory int64
 
 // List of agent_adv_cost_report_list_query_v2_data_list_pricing_category

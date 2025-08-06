@@ -76,6 +76,8 @@ func (r *ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest) WithLog(enable
 /*
 OpenApiV10QianchuanAudienceFilePartUploadPost Method for OpenApiV10QianchuanAudienceFilePartUploadPost
 
+https://bytedance.feishu.cn/wiki/wikcnBy344NTluLkMQ9anjV5nff
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest
 */

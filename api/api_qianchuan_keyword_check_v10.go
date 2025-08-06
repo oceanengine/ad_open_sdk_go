@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanKeywordCheckPostRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV10QianchuanKeywordCheckPost Method for OpenApiV10QianchuanKeywordCheckPost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanKeywordCheckPostRequest
 */

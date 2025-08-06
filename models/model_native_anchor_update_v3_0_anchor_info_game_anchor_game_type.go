@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// NativeAnchorUpdateV30AnchorInfoGameAnchorGameType
+// NativeAnchorUpdateV30AnchorInfoGameAnchorGameType 推广内容，当前锚点必填
 type NativeAnchorUpdateV30AnchorInfoGameAnchorGameType string
 
 // List of native_anchor_update_v3.0_anchor_info_game_anchor_game_type

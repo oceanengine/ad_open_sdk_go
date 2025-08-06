@@ -88,6 +88,8 @@ func (r *ApiOpenApi2DpaMetaGetGetRequest) WithLog(enable bool) *ApiOpenApi2DpaMe
 /*
 OpenApi2DpaMetaGetGet Method for OpenApi2DpaMetaGetGet
 
+获取商品库元信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaMetaGetGetRequest
 */

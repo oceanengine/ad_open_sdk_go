@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementExtendPackageUpdateV2V2Mode
+// ToolsAppManagementExtendPackageUpdateV2V2Mode 更新分包模式，All 全部更新（将所有子包更新至最新母包版本）List 部分更新（将指定子包更新至最新母包版本）Customize 白名单自定义分包（将指定子包更新至具体母包版本）
 type ToolsAppManagementExtendPackageUpdateV2V2Mode string
 
 // List of tools_app_management_extend_package_update_v2_v2_mode

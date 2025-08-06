@@ -58,6 +58,8 @@ func (r *ApiOpenApi2FileRebateCommonDownloadGetDownloadTaskListGetRequest) WithL
 /*
 OpenApi2FileRebateCommonDownloadGetDownloadTaskListGet Method for OpenApi2FileRebateCommonDownloadGetDownloadTaskListGet
 
+查询指定query_id的所有下载任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileRebateCommonDownloadGetDownloadTaskListGetRequest
 */

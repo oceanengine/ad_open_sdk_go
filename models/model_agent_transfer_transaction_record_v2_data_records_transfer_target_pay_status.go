@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentTransferTransactionRecordV2DataRecordsTransferTargetPayStatus
+// AgentTransferTransactionRecordV2DataRecordsTransferTargetPayStatus 转账状态
 type AgentTransferTransactionRecordV2DataRecordsTransferTargetPayStatus string
 
 // List of agent_transfer_transaction_record_v2_data_records_transfer_target_pay_status

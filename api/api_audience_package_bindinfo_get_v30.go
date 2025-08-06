@@ -73,6 +73,8 @@ func (r *ApiOpenApiV30AudiencePackageBindinfoGetGetRequest) WithLog(enable bool)
 /*
 OpenApiV30AudiencePackageBindinfoGetGet Method for OpenApiV30AudiencePackageBindinfoGetGet
 
+定向包查询关联项目信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AudiencePackageBindinfoGetGetRequest
 */

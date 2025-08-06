@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ToolsCreativeWordSelectGetRequest) WithLog(enable bool) *Api
 /*
 OpenApi2ToolsCreativeWordSelectGet Method for OpenApi2ToolsCreativeWordSelectGet
 
+提供动态创意词包查询功能
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsCreativeWordSelectGetRequest
 */

@@ -70,6 +70,8 @@ func (r *ApiOpenApi2CarouselListGetRequest) WithLog(enable bool) *ApiOpenApi2Car
 /*
 OpenApi2CarouselListGet Method for OpenApi2CarouselListGet
 
+检索图集
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CarouselListGetRequest
 */

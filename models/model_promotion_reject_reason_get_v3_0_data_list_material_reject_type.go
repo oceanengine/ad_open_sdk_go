@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionRejectReasonGetV30DataListMaterialRejectType
+// PromotionRejectReasonGetV30DataListMaterialRejectType 素材类型
 type PromotionRejectReasonGetV30DataListMaterialRejectType string
 
 // List of promotion_reject_reason_get_v3.0_data_list_material_reject_type

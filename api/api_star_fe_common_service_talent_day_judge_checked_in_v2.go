@@ -53,6 +53,8 @@ func (r *ApiOpenApi2StarFeCommonServiceTalentDayJudgeCheckedInGetRequest) WithLo
 /*
 OpenApi2StarFeCommonServiceTalentDayJudgeCheckedInGet Method for OpenApi2StarFeCommonServiceTalentDayJudgeCheckedInGet
 
+达人节签到查询用户信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarFeCommonServiceTalentDayJudgeCheckedInGetRequest
 */

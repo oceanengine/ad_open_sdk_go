@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectListV30DataListKeywordsMatchType
+// ProjectListV30DataListKeywordsMatchType 匹配方式
 type ProjectListV30DataListKeywordsMatchType string
 
 // List of project_list_v3.0_data_list_keywords_match_type

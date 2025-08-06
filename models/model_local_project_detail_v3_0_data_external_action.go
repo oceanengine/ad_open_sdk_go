@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectDetailV30DataExternalAction
+// LocalProjectDetailV30DataExternalAction 优化目标
 type LocalProjectDetailV30DataExternalAction string
 
 // List of local_project_detail_v3.0_data_external_action

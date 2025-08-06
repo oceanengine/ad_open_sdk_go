@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreativeDetailGetV30DataAdDataSupplementsGamesOrientation
+// CreativeDetailGetV30DataAdDataSupplementsGamesOrientation 云游戏横竖屏
 type CreativeDetailGetV30DataAdDataSupplementsGamesOrientation string
 
 // List of creative_detail_get_v3.0_data_ad_data_supplements_games_orientation

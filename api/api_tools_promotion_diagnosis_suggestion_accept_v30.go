@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest) WithLo
 /*
 OpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPost Method for OpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPost
 
+2.0诊断采纳API
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest
 */

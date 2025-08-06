@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30CgTransferWalletTransferCreatePostRequest) WithLog(enable 
 /*
 OpenApiV30CgTransferWalletTransferCreatePost Method for OpenApiV30CgTransferWalletTransferCreatePost
 
+发起转账，支持大钱包与小钱包互转，1:N批量转账
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30CgTransferWalletTransferCreatePostRequest
 */

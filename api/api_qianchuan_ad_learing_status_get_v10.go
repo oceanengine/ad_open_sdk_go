@@ -58,6 +58,8 @@ func (r *ApiOpenApiV10QianchuanAdLearingStatusGetGetRequest) WithLog(enable bool
 /*
 OpenApiV10QianchuanAdLearingStatusGetGet Method for OpenApiV10QianchuanAdLearingStatusGetGet
 
+获取计划学习期状态，PRD：https://bytedance.feishu.cn/wiki/wikcnYND8yM4rlghMS4NXDGMq4i
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdLearingStatusGetGetRequest
 */

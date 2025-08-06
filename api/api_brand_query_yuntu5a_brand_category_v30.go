@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandQueryYuntu5aBrandCategoryGetRequest) WithLog(enable b
 /*
 OpenApiV30BrandQueryYuntu5aBrandCategoryGet Method for OpenApiV30BrandQueryYuntu5aBrandCategoryGet
 
+AD品牌查询种草品牌
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandQueryYuntu5aBrandCategoryGetRequest
 */

@@ -64,6 +64,8 @@ func (r *ApiOpenApiV30YuntuAudienceLabelGetGetRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30YuntuAudienceLabelGetGet Method for OpenApiV30YuntuAudienceLabelGetGet
 
+删除当前用户通过 API 接口创建的数据工厂人群标签。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30YuntuAudienceLabelGetGetRequest
 */

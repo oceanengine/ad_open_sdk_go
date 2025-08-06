@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileRebateMaterialDownloadCreateTaskV2FilteringRebateCalcPolicyType
+// FileRebateMaterialDownloadCreateTaskV2FilteringRebateCalcPolicyType 政策类型
 type FileRebateMaterialDownloadCreateTaskV2FilteringRebateCalcPolicyType string
 
 // List of file_rebate_material_download_create_task_v2_filtering_rebate_calc_policy_type

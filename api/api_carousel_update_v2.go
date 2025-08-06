@@ -52,6 +52,8 @@ func (r *ApiOpenApi2CarouselUpdatePostRequest) WithLog(enable bool) *ApiOpenApi2
 /*
 OpenApi2CarouselUpdatePost Method for OpenApi2CarouselUpdatePost
 
+更细图集信息，目前仅支持图集 file_name 和主题修改
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CarouselUpdatePostRequest
 */

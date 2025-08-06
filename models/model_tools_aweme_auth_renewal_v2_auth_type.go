@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAwemeAuthRenewalV2AuthType
+// ToolsAwemeAuthRenewalV2AuthType 抖音授权类型
 type ToolsAwemeAuthRenewalV2AuthType string
 
 // List of tools_aweme_auth_renewal_v2_auth_type

@@ -124,6 +124,8 @@ func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV30ToolsBidsSuggestGet Method for OpenApiV30ToolsBidsSuggestGet
 
+通过广告分析查询广告的建议出价
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsBidsSuggestGetRequest
 */

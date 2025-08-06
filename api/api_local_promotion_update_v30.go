@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30LocalPromotionUpdatePostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30LocalPromotionUpdatePost Method for OpenApiV30LocalPromotionUpdatePost
 
+广告更新
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalPromotionUpdatePostRequest
 */

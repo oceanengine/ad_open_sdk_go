@@ -71,6 +71,8 @@ func (r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) WithLog(enable boo
 /*
 OpenApiV10QianchuanAwemeEstimateProfitGet Method for OpenApiV10QianchuanAwemeEstimateProfitGet
 
+小店获取投放效果预估
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest
 */

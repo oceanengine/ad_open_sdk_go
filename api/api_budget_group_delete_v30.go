@@ -52,6 +52,11 @@ func (r *ApiOpenApiV30BudgetGroupDeletePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30BudgetGroupDeletePost Method for OpenApiV30BudgetGroupDeletePost
 
+删除预算组，删除后关联的项目不受影响，继续以项目预算进行推广
+
+- 预算组删除后不可恢复、不可见
+- 预算组内无项目、项目均为已删除时，才支持删除预算组
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BudgetGroupDeletePostRequest
 */

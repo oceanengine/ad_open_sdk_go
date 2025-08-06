@@ -64,6 +64,8 @@ func (r *ApiOpenApi2ToolsInterestActionActionKeywordGetRequest) WithLog(enable b
 /*
 OpenApi2ToolsInterestActionActionKeywordGet Method for OpenApi2ToolsInterestActionActionKeywordGet
 
+行为关键词查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsInterestActionActionKeywordGetRequest
 */

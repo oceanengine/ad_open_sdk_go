@@ -60,6 +60,8 @@ func (r *ApiOpenApiV30BrandFileVideoUploadPostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30BrandFileVideoUploadPost Method for OpenApiV30BrandFileVideoUploadPost
 
+AD品牌视频上传
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandFileVideoUploadPostRequest
 */

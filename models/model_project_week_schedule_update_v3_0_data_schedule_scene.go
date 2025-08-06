@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectWeekScheduleUpdateV30DataScheduleScene
+// ProjectWeekScheduleUpdateV30DataScheduleScene 生效方式 允许值：REALTIME==0实时（默认）、NEXT_DAY==1次日0点生效
 type ProjectWeekScheduleUpdateV30DataScheduleScene string
 
 // List of project_week_schedule_update_v3.0_data_schedule_scene

@@ -130,6 +130,8 @@ func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) WithLog(enable bool)
 /*
 OpenApiV30BrandToolQueryStockBalanceGet Method for OpenApiV30BrandToolQueryStockBalanceGet
 
+询量接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandToolQueryStockBalanceGetRequest
 */

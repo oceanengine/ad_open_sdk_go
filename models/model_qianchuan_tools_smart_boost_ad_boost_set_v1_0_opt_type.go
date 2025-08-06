@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanToolsSmartBoostAdBoostSetV10OptType
+// QianchuanToolsSmartBoostAdBoostSetV10OptType 起量操作，
 type QianchuanToolsSmartBoostAdBoostSetV10OptType string
 
 // List of qianchuan_tools_smart_boost_ad_boost_set_v1.0_opt_type

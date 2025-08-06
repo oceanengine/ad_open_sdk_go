@@ -53,6 +53,8 @@ func (r *ApiOpenApi2StarGetCreateChallengeDataDictGetRequest) WithLog(enable boo
 /*
 OpenApi2StarGetCreateChallengeDataDictGet Method for OpenApi2StarGetCreateChallengeDataDictGet
 
+获取投稿任务创建数据字典
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarGetCreateChallengeDataDictGetRequest
 */

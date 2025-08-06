@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalCxtStatusUpdateV30OptStatus
+// LocalCxtStatusUpdateV30OptStatus 操作类型
 type LocalCxtStatusUpdateV30OptStatus string
 
 // List of local_cxt_status_update_v3.0_opt_status

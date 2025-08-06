@@ -81,6 +81,8 @@ func (r *ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest) WithLog(enabl
 /*
 OpenApiV30CgTransferQueryCanTransferBalanceGet Method for OpenApiV30CgTransferQueryCanTransferBalanceGet
 
+查询减款方与加款方之间最大可转金额，接口内已自动扣除需要预留的竞价消耗保证金，支持查询1:N转账的最大可转金额
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest
 */

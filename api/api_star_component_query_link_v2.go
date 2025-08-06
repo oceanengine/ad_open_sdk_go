@@ -86,6 +86,8 @@ func (r *ApiOpenApi2StarComponentQueryLinkGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2StarComponentQueryLinkGet Method for OpenApi2StarComponentQueryLinkGet
 
+常规组件查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarComponentQueryLinkGetRequest
 */

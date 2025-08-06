@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsBpAssetManagementShareV30ShareMode
+// ToolsBpAssetManagementShareV30ShareMode 共享类型
 type ToolsBpAssetManagementShareV30ShareMode string
 
 // List of tools_bp_asset_management_share_v3.0_share_mode

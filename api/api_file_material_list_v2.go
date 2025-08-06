@@ -95,6 +95,8 @@ func (r *ApiOpenApi2FileMaterialListGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2FileMaterialListGet Method for OpenApi2FileMaterialListGet
 
+获取用户素材列表，支持素材属性标签筛选/
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileMaterialListGetRequest
 */

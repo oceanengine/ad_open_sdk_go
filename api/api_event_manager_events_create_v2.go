@@ -52,6 +52,12 @@ func (r *ApiOpenApi2EventManagerEventsCreatePostRequest) WithLog(enable bool) *A
 /*
 OpenApi2EventManagerEventsCreatePost Method for OpenApi2EventManagerEventsCreatePost
 
+> 此接口用于在资产下创建单个事件
+
+* 需要线通过【获取推广内容】接口获取要创建的资产ID（asset_id）
+* 需要先通过【获取可创建事件】接口获取到某资产下支持创建的事件ID（event_id）
+* 当资产类型是三方落地页时，同资产同事件支持多种回传方式，但XPATH不能与JSSDK和EXTERNAL_API同时存在
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EventManagerEventsCreatePostRequest
 */

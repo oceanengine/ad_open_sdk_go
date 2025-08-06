@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingBidType
+// QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingBidType 按优化目标出价时的出价类型
 type QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingBidType string
 
 // List of qianchuan_aweme_uni_promotion_order_detail_v1.0_data_delivery_setting_bid_type

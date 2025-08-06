@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FilePlayableListV30FilteringStatus
+// FilePlayableListV30FilteringStatus 素材状态过滤
 type FilePlayableListV30FilteringStatus string
 
 // List of file_playable_list_v3.0_filtering_status

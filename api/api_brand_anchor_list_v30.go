@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30BrandAnchorListGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30BrandAnchorListGet Method for OpenApiV30BrandAnchorListGet
 
+查询锚点
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandAnchorListGetRequest
 */

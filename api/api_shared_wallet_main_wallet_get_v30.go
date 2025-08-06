@@ -67,6 +67,8 @@ func (r *ApiOpenApiV30SharedWalletMainWalletGetGetRequest) WithLog(enable bool) 
 /*
 OpenApiV30SharedWalletMainWalletGetGet Method for OpenApiV30SharedWalletMainWalletGetGet
 
+查询当前共享钱包(大钱包)的信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SharedWalletMainWalletGetGetRequest
 */

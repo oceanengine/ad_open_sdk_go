@@ -74,6 +74,8 @@ func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetRequest) WithL
 /*
 OpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGet Method for OpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGet
 
+https://bytedance.feishu.cn/wiki/wikcnq0rDUKyzKVSPWUAt6EJD4b
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetRequest
 */

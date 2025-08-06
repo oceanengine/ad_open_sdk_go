@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ClueWechatInstanceDetailV2DataSuffix
+// ClueWechatInstanceDetailV2DataSuffix 尾缀
 type ClueWechatInstanceDetailV2DataSuffix string
 
 // List of clue_wechat_instance_detail_v2_data_suffix

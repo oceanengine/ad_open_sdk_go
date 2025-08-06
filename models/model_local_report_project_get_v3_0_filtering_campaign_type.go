@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalReportProjectGetV30FilteringCampaignType
+// LocalReportProjectGetV30FilteringCampaignType 广告类型
 type LocalReportProjectGetV30FilteringCampaignType string
 
 // List of local_report_project_get_v3.0_filtering_campaign_type

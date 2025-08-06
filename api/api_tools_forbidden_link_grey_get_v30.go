@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsForbiddenLinkGreyGetGetRequest) WithLog(enable bool) 
 /*
 OpenApiV30ToolsForbiddenLinkGreyGetGet Method for OpenApiV30ToolsForbiddenLinkGreyGetGet
 
+本地交易强切白名单查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsForbiddenLinkGreyGetGetRequest
 */

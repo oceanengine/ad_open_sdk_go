@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialListV30DataMaterialsCreativeTemplate
+// BrandMaterialListV30DataMaterialsCreativeTemplate 创意样式
 type BrandMaterialListV30DataMaterialsCreativeTemplate string
 
 // List of brand_material_list_v3.0_data_materials_creative_template

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanFileImageDeletePostRequest) WithLog(enable bool) 
 /*
 OpenApiV10QianchuanFileImageDeletePost Method for OpenApiV10QianchuanFileImageDeletePost
 
+批量删除图片素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanFileImageDeletePostRequest
 */

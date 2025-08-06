@@ -70,6 +70,8 @@ func (r *ApiOpenApiV10QianchuanAdDetailGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV10QianchuanAdDetailGetGet Method for OpenApiV10QianchuanAdDetailGetGet
 
+获取广告计划详情（包含创意）
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdDetailGetGetRequest
 */

@@ -74,6 +74,8 @@ func (r *ApiOpenApiV30DecorationCouponGetGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30DecorationCouponGetGet Method for OpenApiV30DecorationCouponGetGet
 
+线索通获取家装联盟卡券列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30DecorationCouponGetGetRequest
 */

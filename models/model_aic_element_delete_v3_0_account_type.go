@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicElementDeleteV30AccountType
+// AicElementDeleteV30AccountType 账户体系枚举
 type AicElementDeleteV30AccountType string
 
 // List of aic_element_delete_v3.0_account_type

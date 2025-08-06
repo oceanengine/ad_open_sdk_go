@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsBudgetInfoPricingType
+// BrandAdGetV30DataAdsBudgetInfoPricingType 付费方式
 type BrandAdGetV30DataAdsBudgetInfoPricingType int64
 
 // List of brand_ad_get_v3.0_data_ads_budget_info_pricing_type

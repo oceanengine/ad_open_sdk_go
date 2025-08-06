@@ -102,6 +102,8 @@ func (r *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetReque
 /*
 OpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGet Method for OpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGet
 
+获取星广短剧素材价值刻画报表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest
 */

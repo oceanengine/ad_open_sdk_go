@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderBudgetAddPostRequest) WithL
 /*
 OpenApiV10QianchuanAwemeUniPromotionOrderBudgetAddPost Method for OpenApiV10QianchuanAwemeUniPromotionOrderBudgetAddPost
 
+追加随心推全域订单预算
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeUniPromotionOrderBudgetAddPostRequest
 */

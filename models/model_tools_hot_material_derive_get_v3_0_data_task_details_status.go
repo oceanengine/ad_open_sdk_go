@@ -18,7 +18,7 @@ const (
 	FAILED_ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus       ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus = "FAILED"
 	INIT_ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus         ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus = "INIT"
 	PART_SUCCESS_ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus = "PART_SUCCESS"
-	PPOCESSING_ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus   ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus = "PPOCESSING"
+	PROCESSING_ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus   ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus = "PROCESSING"
 	SUCCESS_ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus      ToolsHotMaterialDeriveGetV30DataTaskDetailsStatus = "SUCCESS"
 )
 

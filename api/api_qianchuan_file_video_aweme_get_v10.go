@@ -88,6 +88,8 @@ func (r *ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest) WithLog(enable bool)
 /*
 OpenApiV10QianchuanFileVideoAwemeGetGet Method for OpenApiV10QianchuanFileVideoAwemeGetGet
 
+获取抖音号下已有的视频素材，支持传入商品id，过滤拉取包含待推广商品的视频
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest
 */

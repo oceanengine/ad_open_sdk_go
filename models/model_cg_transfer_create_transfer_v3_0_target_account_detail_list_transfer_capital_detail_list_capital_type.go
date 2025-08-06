@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CgTransferCreateTransferV30TargetAccountDetailListTransferCapitalDetailListCapitalType
+// CgTransferCreateTransferV30TargetAccountDetailListTransferCapitalDetailListCapitalType 转账资金类型
 type CgTransferCreateTransferV30TargetAccountDetailListTransferCapitalDetailListCapitalType string
 
 // List of cg_transfer_create_transfer_v3.0_target_account_detail_list_transfer_capital_detail_list_capital_type

@@ -58,6 +58,8 @@ func (r *ApiOpenApi2EbpAdvertiserTaskDownloadGetRequest) WithLog(enable bool) *A
 /*
 OpenApi2EbpAdvertiserTaskDownloadGet Method for OpenApi2EbpAdvertiserTaskDownloadGet
 
+下载异步任务结果
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EbpAdvertiserTaskDownloadGetRequest
 */

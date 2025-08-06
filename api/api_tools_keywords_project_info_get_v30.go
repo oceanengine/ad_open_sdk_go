@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30ToolsKeywordsProjectInfoGetGetRequest) WithLog(enable bool
 /*
 OpenApiV30ToolsKeywordsProjectInfoGetGet Method for OpenApiV30ToolsKeywordsProjectInfoGetGet
 
+账户优词工具-查询优词绑定的项目
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsKeywordsProjectInfoGetGetRequest
 */

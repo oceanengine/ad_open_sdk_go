@@ -76,6 +76,8 @@ func (r *ApiOpenApiV30ToolsWechatGameListGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30ToolsWechatGameListGet Method for OpenApiV30ToolsWechatGameListGet
 
+openapi场景获取微信小游戏list
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsWechatGameListGetRequest
 */

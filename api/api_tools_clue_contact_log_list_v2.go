@@ -67,6 +67,8 @@ func (r *ApiOpenApi2ToolsClueContactLogListGetRequest) WithLog(enable bool) *Api
 /*
 OpenApi2ToolsClueContactLogListGet Method for OpenApi2ToolsClueContactLogListGet
 
+根据线索外呼接口获得的呼叫记录id，获取对应呼叫记录的话单。线索外呼和用户回呼都会记录到对应的话单，且话单包含AXB三个号码
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueContactLogListGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileAudioGetV2DataListSource
+// FileAudioGetV2DataListSource 音频来源 AD_SITE  AD后台本地上传 MARKETING_API 开放平台上传 TTS_TEXT_TO_AUDIOTTS文本转音频
 type FileAudioGetV2DataListSource string
 
 // List of file_audio_get_v2_data_list_source

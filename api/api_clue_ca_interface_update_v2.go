@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ClueCaInterfaceUpdatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ClueCaInterfaceUpdatePost Method for OpenApi2ClueCaInterfaceUpdatePost
 
+获客助手接口版更新
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueCaInterfaceUpdatePostRequest
 */

@@ -88,6 +88,8 @@ func (r *ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest) WithLog(enab
 /*
 OpenApi2StarReportCustomDataTopicDailyReportGet Method for OpenApi2StarReportCustomDataTopicDailyReportGet
 
+用于获取每日趋势数据主题数据获取
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest
 */

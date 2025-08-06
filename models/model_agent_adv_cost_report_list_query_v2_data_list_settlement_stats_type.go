@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2DataListSettlementStatsType
+// AgentAdvCostReportListQueryV2DataListSettlementStatsType 结算行业统计类型(1: 行业类目,2: 引流电商,3: 白名单,4: 任务激励,5: 微信加粉,6: 直播电商,7: 直播非电商)
 type AgentAdvCostReportListQueryV2DataListSettlementStatsType int64
 
 // List of agent_adv_cost_report_list_query_v2_data_list_settlement_stats_type

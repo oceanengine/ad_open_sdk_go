@@ -52,6 +52,8 @@ func (r *ApiOpenApi2FileUploadTaskCreatePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2FileUploadTaskCreatePost Method for OpenApi2FileUploadTaskCreatePost
 
+异步上传视频文件
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileUploadTaskCreatePostRequest
 */

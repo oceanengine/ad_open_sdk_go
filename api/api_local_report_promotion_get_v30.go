@@ -115,6 +115,8 @@ func (r *ApiOpenApiV30LocalReportPromotionGetGetRequest) WithLog(enable bool) *A
 /*
 OpenApiV30LocalReportPromotionGetGet Method for OpenApiV30LocalReportPromotionGetGet
 
+获取广告数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalReportPromotionGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsSiteTemplateGetV2DataListBricksButtonDownloadEventAndroidLinkLinkType
+// ToolsSiteTemplateGetV2DataListBricksButtonDownloadEventAndroidLinkLinkType 链接类型，当`android_link`不为空时，有值
 type ToolsSiteTemplateGetV2DataListBricksButtonDownloadEventAndroidLinkLinkType string
 
 // List of tools_site_template_get_v2_data_list_bricks_button_download_event_android_link_link_type

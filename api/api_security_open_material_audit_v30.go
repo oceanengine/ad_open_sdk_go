@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30SecurityOpenMaterialAuditPostRequest) WithLog(enable bool)
 /*
 OpenApiV30SecurityOpenMaterialAuditPost Method for OpenApiV30SecurityOpenMaterialAuditPost
 
+与大盘素材使用相同规则进行素材预审
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SecurityOpenMaterialAuditPostRequest
 */

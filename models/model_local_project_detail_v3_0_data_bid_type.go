@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectDetailV30DataBidType
+// LocalProjectDetailV30DataBidType 出价方式
 type LocalProjectDetailV30DataBidType string
 
 // List of local_project_detail_v3.0_data_bid_type

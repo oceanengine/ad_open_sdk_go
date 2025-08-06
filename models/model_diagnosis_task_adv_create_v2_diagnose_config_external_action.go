@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DiagnosisTaskAdvCreateV2DiagnoseConfigExternalAction
+// DiagnosisTaskAdvCreateV2DiagnoseConfigExternalAction 转化目标
 type DiagnosisTaskAdvCreateV2DiagnoseConfigExternalAction string
 
 // List of diagnosis_task_adv_create_v2_diagnose_config_external_action

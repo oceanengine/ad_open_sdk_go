@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AudiencePackageUpdatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2AudiencePackageUpdatePost Method for OpenApi2AudiencePackageUpdatePost
 
+定向包更新
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AudiencePackageUpdatePostRequest
 */

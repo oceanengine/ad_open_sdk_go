@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsEnableMerchantIntention
+// BrandAdGetV30DataAdsEnableMerchantIntention 是否启用招商意向单 1:启用 0:未启用
 type BrandAdGetV30DataAdsEnableMerchantIntention int64
 
 // List of brand_ad_get_v3.0_data_ads_enable_merchant_intention

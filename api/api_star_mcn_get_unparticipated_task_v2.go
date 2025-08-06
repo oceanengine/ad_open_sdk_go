@@ -154,6 +154,8 @@ func (r *ApiOpenApi2StarMcnGetUnparticipatedTaskGetRequest) WithLog(enable bool)
 /*
 OpenApi2StarMcnGetUnparticipatedTaskGet Method for OpenApi2StarMcnGetUnparticipatedTaskGet
 
+机构承包-获取未参与任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnGetUnparticipatedTaskGetRequest
 */

@@ -80,6 +80,8 @@ func (r *ApiOpenApi2ToolsRubeexPlayableListGetRequest) WithLog(enable bool) *Api
 /*
 OpenApi2ToolsRubeexPlayableListGet Method for OpenApi2ToolsRubeexPlayableListGet
 
+获取互动作品关联的试玩素材列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsRubeexPlayableListGetRequest
 */

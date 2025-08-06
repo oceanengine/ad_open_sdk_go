@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileVideoMaterialClearTaskCreateV2ClearTaskParamsMaterialSource
+// FileVideoMaterialClearTaskCreateV2ClearTaskParamsMaterialSource 清理素材来源； 允许值： QIANCHUAN 千川 AD 广告平台
 type FileVideoMaterialClearTaskCreateV2ClearTaskParamsMaterialSource string
 
 // List of file_video_material_clear_task_create_v2_clear_task_params_material_source

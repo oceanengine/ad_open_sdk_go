@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30KeywordCreatePostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30KeywordCreatePost Method for OpenApiV30KeywordCreatePost
 
+搜索广告关键词创建
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30KeywordCreatePostRequest
 */

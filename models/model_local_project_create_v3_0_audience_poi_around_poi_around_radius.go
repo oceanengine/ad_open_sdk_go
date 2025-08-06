@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius
+// LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius 半径，门店附近仅支持固定半径的设置
 type LocalProjectCreateV30AudiencePoiAroundPoiAroundRadius string
 
 // List of local_project_create_v3.0_audience_poi_around_poi_around_radius

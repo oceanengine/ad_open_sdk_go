@@ -67,6 +67,8 @@ func (r *ApiOpenApi2StarAttachmentUploadPostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2StarAttachmentUploadPost Method for OpenApi2StarAttachmentUploadPost
 
+任务材料上传
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarAttachmentUploadPostRequest
 */

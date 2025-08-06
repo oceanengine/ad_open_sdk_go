@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalReportProjectGetV30FilteringLocalDeliveryScene
+// LocalReportProjectGetV30FilteringLocalDeliveryScene 推广目的
 type LocalReportProjectGetV30FilteringLocalDeliveryScene string
 
 // List of local_report_project_get_v3.0_filtering_local_delivery_scene

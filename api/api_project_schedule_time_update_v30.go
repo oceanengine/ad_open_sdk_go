@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ProjectScheduleTimeUpdatePostRequest) WithLog(enable bool)
 /*
 OpenApiV30ProjectScheduleTimeUpdatePost Method for OpenApiV30ProjectScheduleTimeUpdatePost
 
+批量更新项目投放时间
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ProjectScheduleTimeUpdatePostRequest
 */

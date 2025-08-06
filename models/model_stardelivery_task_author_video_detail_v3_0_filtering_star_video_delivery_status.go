@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StardeliveryTaskAuthorVideoDetailV30FilteringStarVideoDeliveryStatus
+// StardeliveryTaskAuthorVideoDetailV30FilteringStarVideoDeliveryStatus 达人视频审核状态,仅当查询任务下全量已投稿视频时支持该筛选项
 type StardeliveryTaskAuthorVideoDetailV30FilteringStarVideoDeliveryStatus string
 
 // List of stardelivery_task_author_video_detail_v3.0_filtering_star_video_delivery_status

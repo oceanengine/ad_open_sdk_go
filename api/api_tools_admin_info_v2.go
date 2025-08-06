@@ -81,6 +81,8 @@ func (r *ApiOpenApi2ToolsAdminInfoGetRequest) WithLog(enable bool) *ApiOpenApi2T
 /*
 OpenApi2ToolsAdminInfoGet Method for OpenApi2ToolsAdminInfoGet
 
+获取行政信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAdminInfoGetRequest
 */

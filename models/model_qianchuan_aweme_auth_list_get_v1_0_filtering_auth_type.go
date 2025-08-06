@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeAuthListGetV10FilteringAuthType
+// QianchuanAwemeAuthListGetV10FilteringAuthType 授权类型筛选，仅支持传0，1，2，3，4，5
 type QianchuanAwemeAuthListGetV10FilteringAuthType string
 
 // List of qianchuan_aweme_auth_list_get_v1.0_filtering_auth_type

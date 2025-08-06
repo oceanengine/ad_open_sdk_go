@@ -59,6 +59,8 @@ func (r *ApiOpenApiV30DpaAlbumStatusGetGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30DpaAlbumStatusGetGet Method for OpenApiV30DpaAlbumStatusGetGet
 
+通过短剧alblumID查询短剧可投状态
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30DpaAlbumStatusGetGetRequest
 */

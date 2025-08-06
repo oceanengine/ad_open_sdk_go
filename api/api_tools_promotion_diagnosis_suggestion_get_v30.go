@@ -64,6 +64,8 @@ func (r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest) WithLog(en
 /*
 OpenApiV30ToolsPromotionDiagnosisSuggestionGetGet Method for OpenApiV30ToolsPromotionDiagnosisSuggestionGetGet
 
+2.0广告诊断for活跃度低
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest
 */

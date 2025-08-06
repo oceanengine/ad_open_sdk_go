@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30FilteringProjectStatusFirst
+// LocalProjectListV30FilteringProjectStatusFirst 项目一级状态筛选，默认不限（不包含已删除）  项目一级状态筛选
 type LocalProjectListV30FilteringProjectStatusFirst string
 
 // List of local_project_list_v3.0_filtering_project_status_first

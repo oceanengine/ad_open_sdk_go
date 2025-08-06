@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentQueryRiskPromotionListV2DataDataFinalOperatorTag
+// AgentQueryRiskPromotionListV2DataDataFinalOperatorTag 自走收综合标签，同入参final_operator_tag枚举
 type AgentQueryRiskPromotionListV2DataDataFinalOperatorTag string
 
 // List of agent_query_risk_promotion_list_v2_data_data_final_operator_tag

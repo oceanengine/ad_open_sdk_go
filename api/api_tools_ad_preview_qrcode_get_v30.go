@@ -74,6 +74,8 @@ func (r *ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequest) WithLog(enable bool) *A
 /*
 OpenApiV30ToolsAdPreviewQrcodeGetGet Method for OpenApiV30ToolsAdPreviewQrcodeGetGet
 
+获取广告预览二维码、素材预览二维码
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequest
 */

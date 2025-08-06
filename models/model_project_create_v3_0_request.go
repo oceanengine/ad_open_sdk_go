@@ -81,4 +81,8 @@ type ProjectCreateV30Request struct {
 	UlinkUrl           *string                             `json:"ulink_url,omitempty"`
 	UlinkUrlType       *ProjectCreateV30UlinkUrlType       `json:"ulink_url_type,omitempty"`
 	ValueOptimizedType *ProjectCreateV30ValueOptimizedType `json:"value_optimized_type,omitempty"`
+	// 云图品牌ID
+	Yuntu5aBrandId *int64 `json:"yuntu_5a_brand_id,omitempty"`
+	// 云图品牌版行业ID
+	Yuntu5aBrandMainIndustryId *int64 `json:"yuntu_5a_brand_main_industry_id,omitempty"`
 }

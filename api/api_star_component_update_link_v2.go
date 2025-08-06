@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarComponentUpdateLinkPostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2StarComponentUpdateLinkPost Method for OpenApi2StarComponentUpdateLinkPost
 
+常规组件修改
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarComponentUpdateLinkPostRequest
 */

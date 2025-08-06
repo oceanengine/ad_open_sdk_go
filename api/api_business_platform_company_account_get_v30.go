@@ -76,6 +76,8 @@ func (r *ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest) WithLog(enabl
 /*
 OpenApiV30BusinessPlatformCompanyAccountGetGet Method for OpenApiV30BusinessPlatformCompanyAccountGetGet
 
+查看组织下主体的账户列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest
 */

@@ -15,11 +15,11 @@ type KeywordUpdateV2V2KeywordsBidType string
 
 // List of keyword_update_v2_v2_keywords_bid_type
 const (
-	BRAND_AD_KeywordUpdateV2V2KeywordsBidType       KeywordUpdateV2V2KeywordsBidType = "BRAND_AD"
 	FEED_TO_SEARCH_KeywordUpdateV2V2KeywordsBidType KeywordUpdateV2V2KeywordsBidType = "FEED_TO_SEARCH"
+	WITH_AD_KeywordUpdateV2V2KeywordsBidType        KeywordUpdateV2V2KeywordsBidType = "WITH_AD"
 	CUSTOM_KeywordUpdateV2V2KeywordsBidType         KeywordUpdateV2V2KeywordsBidType = "CUSTOM"
 	SUGGEST_KeywordUpdateV2V2KeywordsBidType        KeywordUpdateV2V2KeywordsBidType = "SUGGEST"
-	WITH_AD_KeywordUpdateV2V2KeywordsBidType        KeywordUpdateV2V2KeywordsBidType = "WITH_AD"
+	BRAND_AD_KeywordUpdateV2V2KeywordsBidType       KeywordUpdateV2V2KeywordsBidType = "BRAND_AD"
 )
 
 // Ptr returns reference to keyword_update_v2_v2_keywords_bid_type value

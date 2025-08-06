@@ -107,6 +107,8 @@ func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) WithLog(enable bo
 /*
 OpenApiV30ReportStardeliveryTaskDataGetGet Method for OpenApiV30ReportStardeliveryTaskDataGetGet
 
+获取星广联投任务数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest
 */

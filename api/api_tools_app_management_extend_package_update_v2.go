@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsAppManagementExtendPackageUpdatePostRequest) WithLog(en
 /*
 OpenApi2ToolsAppManagementExtendPackageUpdatePost Method for OpenApi2ToolsAppManagementExtendPackageUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementExtendPackageUpdatePostRequest
 */

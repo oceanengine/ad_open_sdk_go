@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionNewcustomerCreateV30PromotionMaterialsVideoMaterialListImageMode
+// PromotionNewcustomerCreateV30PromotionMaterialsVideoMaterialListImageMode 素材类型
 type PromotionNewcustomerCreateV30PromotionMaterialsVideoMaterialListImageMode string
 
 // List of promotion_newcustomer_create_v3.0_promotion_materials_video_material_list_image_mode

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderListV30FilterProType
+// BrandOrderListV30FilterProType 产品类型
 type BrandOrderListV30FilterProType string
 
 // List of brand_order_list_v3.0_filter_pro_type

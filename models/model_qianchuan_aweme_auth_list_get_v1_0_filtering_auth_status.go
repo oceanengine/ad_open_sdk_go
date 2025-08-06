@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeAuthListGetV10FilteringAuthStatus
+// QianchuanAwemeAuthListGetV10FilteringAuthStatus 授权状态筛选
 type QianchuanAwemeAuthListGetV10FilteringAuthStatus string
 
 // List of qianchuan_aweme_auth_list_get_v1.0_filtering_auth_status

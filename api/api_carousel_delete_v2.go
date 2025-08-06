@@ -52,6 +52,8 @@ func (r *ApiOpenApi2CarouselDeletePostRequest) WithLog(enable bool) *ApiOpenApi2
 /*
 OpenApi2CarouselDeletePost Method for OpenApi2CarouselDeletePost
 
+批量删除图集
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CarouselDeletePostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarDemandOmCreateChallengeV2ChallengeInfoAuthorScope
+// StarDemandOmCreateChallengeV2ChallengeInfoAuthorScope 达人选择 枚举，普通任务、专属任务
 type StarDemandOmCreateChallengeV2ChallengeInfoAuthorScope int64
 
 // List of star_demand_om_create_challenge_v2_challenge_info_author_scope

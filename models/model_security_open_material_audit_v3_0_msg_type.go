@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SecurityOpenMaterialAuditV30MsgType
+// SecurityOpenMaterialAuditV30MsgType 消息类别
 type SecurityOpenMaterialAuditV30MsgType string
 
 // List of security_open_material_audit_v3.0_msg_type

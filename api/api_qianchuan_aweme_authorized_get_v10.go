@@ -26,28 +26,32 @@ type ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanAwemeAuthorizedGetV10ApiService
 	advertiserId *int64
+	filtering    *QianchuanAwemeAuthorizedGetV10Filtering
 	page         *int32
 	pageSize     *int32
-	filtering    *QianchuanAwemeAuthorizedGetV10Filtering
 }
 
+// 千川业务账户ID，对应账户类型为&#x60;QIANCHUAN&#x60;
 func (r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest {
 	r.advertiserId = &advertiserId
 	return r
 }
 
+// 过滤器
+func (r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) Filtering(filtering QianchuanAwemeAuthorizedGetV10Filtering) *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest {
+	r.filtering = &filtering
+	return r
+}
+
+// 页码，默认值&#x60;1&#x60;
 func (r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) Page(page int32) *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest {
 	r.page = &page
 	return r
 }
 
+// 页面大小，默认为&#x60;10&#x60;，数值范围[1-100]
 func (r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) PageSize(pageSize int32) *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest {
 	r.pageSize = &pageSize
-	return r
-}
-
-func (r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) Filtering(filtering QianchuanAwemeAuthorizedGetV10Filtering) *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest {
-	r.filtering = &filtering
 	return r
 }
 
@@ -69,6 +73,8 @@ func (r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) WithLog(enable bool
 
 /*
 OpenApiV10QianchuanAwemeAuthorizedGetGet Method for OpenApiV10QianchuanAwemeAuthorizedGetGet
+
+查询千川广告主（对应账户类型为`QIANCHUAN`）下已授权抖音号相关投放权限范围。
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest
@@ -106,14 +112,14 @@ func (a *QianchuanAwemeAuthorizedGetV10ApiService) getExecute(r *ApiOpenApiV10Qi
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
+	if r.filtering != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	}
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
-	}
-	if r.filtering != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

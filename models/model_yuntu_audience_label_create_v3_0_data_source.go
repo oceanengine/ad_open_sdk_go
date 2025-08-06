@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// YuntuAudienceLabelCreateV30DataSource
+// YuntuAudienceLabelCreateV30DataSource 标签类别。
 type YuntuAudienceLabelCreateV30DataSource string
 
 // List of yuntu_audience_label_create_v3.0_data_source

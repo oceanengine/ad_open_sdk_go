@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicMaterialPushV30BussinessType
+// AicMaterialPushV30BussinessType 推送广告主所属平台
 type AicMaterialPushV30BussinessType string
 
 // List of aic_material_push_v3.0_bussiness_type

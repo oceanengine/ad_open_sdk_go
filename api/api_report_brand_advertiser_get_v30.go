@@ -95,6 +95,8 @@ func (r *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest) WithLog(enable bool) *
 /*
 OpenApiV30ReportBrandAdvertiserGetGet Method for OpenApiV30ReportBrandAdvertiserGetGet
 
+查询广告主维度数据报表信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportBrandAdvertiserGetGetRequest
 */

@@ -60,6 +60,8 @@ func (r *ApiOpenApi2QueryStatementGetRequest) WithLog(enable bool) *ApiOpenApi2Q
 /*
 OpenApi2QueryStatementGet Method for OpenApi2QueryStatementGet
 
+代理商查询项目关联结算单信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2QueryStatementGetRequest
 */

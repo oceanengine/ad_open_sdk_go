@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StardeliveryTaskDetailV30DataStarTaskMaterialsRequirementsVideoReviewer
+// StardeliveryTaskDetailV30DataStarTaskMaterialsRequirementsVideoReviewer 视频确认是否全权交给服务商，若仅由服务商确认返回CONFIRM_BY_ISV_ONLY，若我也要再次确认返回NEED_RE_CONFIRM
 type StardeliveryTaskDetailV30DataStarTaskMaterialsRequirementsVideoReviewer string
 
 // List of stardelivery_task_detail_v3.0_data_star_task_materials_requirements_video_reviewer

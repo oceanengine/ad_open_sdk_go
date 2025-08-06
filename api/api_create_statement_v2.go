@@ -52,6 +52,8 @@ func (r *ApiOpenApi2CreateStatementPostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2CreateStatementPost Method for OpenApi2CreateStatementPost
 
+结算单创建接口，负责代理的结算单创建
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CreateStatementPostRequest
 */

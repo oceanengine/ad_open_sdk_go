@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ProjectScheduleTimeUpdateV30DataScheduleType
+// ProjectScheduleTimeUpdateV30DataScheduleType 投放时间类型 允许值：SCHEDULE_FROM_NOW 从今天起长期投放（默认）、SCHEDULE_START_END 结束日期
 type ProjectScheduleTimeUpdateV30DataScheduleType string
 
 // List of project_schedule_time_update_v3.0_data_schedule_type

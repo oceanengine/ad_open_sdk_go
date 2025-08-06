@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalFileVideoAwemeGetV30DataVideoListImageMode
+// LocalFileVideoAwemeGetV30DataVideoListImageMode 视频格式
 type LocalFileVideoAwemeGetV30DataVideoListImageMode string
 
 // List of local_file_video_aweme_get_v3.0_data_video_list_image_mode

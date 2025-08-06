@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarStarAdUniteTaskListV2FilteringStatus
+// StarStarAdUniteTaskListV2FilteringStatus 任务状态
 type StarStarAdUniteTaskListV2FilteringStatus string
 
 // List of star_star_ad_unite_task_list_v2_filtering_status

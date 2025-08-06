@@ -59,6 +59,8 @@ func (r *ApiOpenApi2StarMcnProviderGetTagOnTaskGetRequest) WithLog(enable bool) 
 /*
 OpenApi2StarMcnProviderGetTagOnTaskGet Method for OpenApi2StarMcnProviderGetTagOnTaskGet
 
+星广服务商-视频标签查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarMcnProviderGetTagOnTaskGetRequest
 */

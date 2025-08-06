@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30KeywordUpdatePostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30KeywordUpdatePost Method for OpenApiV30KeywordUpdatePost
 
+搜索广告关键词更新
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30KeywordUpdatePostRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30LocalCxtExternalActionUpdatePostRequest) WithLog(enable bo
 /*
 OpenApiV30LocalCxtExternalActionUpdatePost Method for OpenApiV30LocalCxtExternalActionUpdatePost
 
+修改持续投优化目标
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalCxtExternalActionUpdatePostRequest
 */

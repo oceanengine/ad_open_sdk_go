@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueContactLogListV2DataListCallDirection
+// ToolsClueContactLogListV2DataListCallDirection 呼叫方式
 type ToolsClueContactLogListV2DataListCallDirection string
 
 // List of tools_clue_contact_log_list_v2_data_list_call_direction

@@ -74,6 +74,8 @@ func (r *ApiOpenApiV30ToolsPromotionRaiseVersionGetGetRequest) WithLog(enable bo
 /*
 OpenApiV30ToolsPromotionRaiseVersionGetGet Method for OpenApiV30ToolsPromotionRaiseVersionGetGet
 
+获取起量版本信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsPromotionRaiseVersionGetGetRequest
 */

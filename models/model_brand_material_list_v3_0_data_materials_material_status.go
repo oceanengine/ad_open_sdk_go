@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialListV30DataMaterialsMaterialStatus
+// BrandMaterialListV30DataMaterialsMaterialStatus 素材状态
 type BrandMaterialListV30DataMaterialsMaterialStatus string
 
 // List of brand_material_list_v3.0_data_materials_material_status

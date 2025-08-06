@@ -81,6 +81,8 @@ func (r *ApiOpenApiV10QianchuanFinanceDetailGetGetRequest) WithLog(enable bool) 
 /*
 OpenApiV10QianchuanFinanceDetailGetGet Method for OpenApiV10QianchuanFinanceDetailGetGet
 
+API Description2
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanFinanceDetailGetGetRequest
 */

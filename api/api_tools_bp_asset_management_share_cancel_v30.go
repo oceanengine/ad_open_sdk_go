@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsBpAssetManagementShareCancelPostRequest) WithLog(enab
 /*
 OpenApiV30ToolsBpAssetManagementShareCancelPost Method for OpenApiV30ToolsBpAssetManagementShareCancelPost
 
+取消资产共享
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsBpAssetManagementShareCancelPostRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30PromotionNameUpdatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30PromotionNameUpdatePost Method for OpenApiV30PromotionNameUpdatePost
 
+update promotion name
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionNameUpdatePostRequest
 */

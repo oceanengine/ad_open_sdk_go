@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ProjectRoigoalUpdatePostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30ProjectRoigoalUpdatePost Method for OpenApiV30ProjectRoigoalUpdatePost
 
+创编2.0批量更新项目ROI系数
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ProjectRoigoalUpdatePostRequest
 */

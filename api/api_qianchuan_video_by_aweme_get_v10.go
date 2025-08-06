@@ -74,6 +74,8 @@ func (r *ApiOpenApiV10QianchuanVideoByAwemeGetGetRequest) WithLog(enable bool) *
 /*
 OpenApiV10QianchuanVideoByAwemeGetGet Method for OpenApiV10QianchuanVideoByAwemeGetGet
 
+通过抖音主页视频 ID/URL 查询对应的本地上传视频信息，包含已隐藏视频
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanVideoByAwemeGetGetRequest
 */

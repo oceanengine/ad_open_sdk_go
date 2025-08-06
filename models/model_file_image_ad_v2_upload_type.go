@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileImageAdV2UploadType
+// FileImageAdV2UploadType 图片上传方式 默认值：UPLOAD_BY_FILE 允许值：UPLOAD_BY_FILE、UPLOAD_BY_URL
 type FileImageAdV2UploadType string
 
 // List of file_image_ad_v2_upload_type

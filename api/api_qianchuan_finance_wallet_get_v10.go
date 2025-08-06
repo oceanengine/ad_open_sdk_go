@@ -53,6 +53,8 @@ func (r *ApiOpenApiV10QianchuanFinanceWalletGetGetRequest) WithLog(enable bool) 
 /*
 OpenApiV10QianchuanFinanceWalletGetGet Method for OpenApiV10QianchuanFinanceWalletGetGet
 
+通过此接口，用户可以获取账户钱包内余额信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanFinanceWalletGetGetRequest
 */

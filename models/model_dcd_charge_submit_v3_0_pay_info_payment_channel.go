@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// DcdChargeSubmitV30PayInfoPaymentChannel
+// DcdChargeSubmitV30PayInfoPaymentChannel 收银台类型
 type DcdChargeSubmitV30PayInfoPaymentChannel string
 
 // List of dcd_charge_submit_v3.0_pay_info_payment_channel

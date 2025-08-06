@@ -52,6 +52,8 @@ func (r *ApiOpenApi2FileVideoPausePostRequest) WithLog(enable bool) *ApiOpenApi2
 /*
 OpenApi2FileVideoPausePost Method for OpenApi2FileVideoPausePost
 
+暂停账户下的素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileVideoPausePostRequest
 */

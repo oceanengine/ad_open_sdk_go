@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30DouplusRtaGetInfoGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30DouplusRtaGetInfoGet Method for OpenApiV30DouplusRtaGetInfoGet
 
+查询客户获取RTA策略信息与数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30DouplusRtaGetInfoGetRequest
 */

@@ -74,6 +74,8 @@ func (r *ApiOpenApi2ToolsRubeexRemarkGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2ToolsRubeexRemarkGet Method for OpenApi2ToolsRubeexRemarkGet
 
+> 获取作品场景信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsRubeexRemarkGetRequest
 */

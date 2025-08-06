@@ -115,6 +115,8 @@ func (r *ApiOpenApiV30LocalReportMaterialGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV30LocalReportMaterialGetGet Method for OpenApiV30LocalReportMaterialGetGet
 
+获取素材数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalReportMaterialGetGetRequest
 */

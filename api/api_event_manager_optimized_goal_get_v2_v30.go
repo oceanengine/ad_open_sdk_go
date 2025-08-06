@@ -160,6 +160,8 @@ func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) WithLog(enable b
 /*
 OpenApiV30EventManagerOptimizedGoalGetV2Get Method for OpenApiV30EventManagerOptimizedGoalGetV2Get
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandCampaignRevokeModifyPostRequest) WithLog(enable bool)
 /*
 OpenApiV30BrandCampaignRevokeModifyPost Method for OpenApiV30BrandCampaignRevokeModifyPost
 
+AD品牌2.0广告组取消撤改
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandCampaignRevokeModifyPostRequest
 */

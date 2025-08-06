@@ -74,6 +74,8 @@ func (r *ApiOpenApi2FileVideoMaterialClearTaskGetGetRequest) WithLog(enable bool
 /*
 OpenApi2FileVideoMaterialClearTaskGetGet Method for OpenApi2FileVideoMaterialClearTaskGetGet
 
+获取清理任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileVideoMaterialClearTaskGetGetRequest
 */

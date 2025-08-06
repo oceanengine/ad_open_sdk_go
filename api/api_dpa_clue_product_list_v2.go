@@ -72,6 +72,8 @@ func (r *ApiOpenApi2DpaClueProductListGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApi2DpaClueProductListGet Method for OpenApi2DpaClueProductListGet
 
+获取线索商品列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaClueProductListGetRequest
 */

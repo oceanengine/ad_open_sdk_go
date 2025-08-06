@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdCreateV30AdForm
+// BrandAdCreateV30AdForm 版位
 type BrandAdCreateV30AdForm string
 
 // List of brand_ad_create_v3.0_ad_form

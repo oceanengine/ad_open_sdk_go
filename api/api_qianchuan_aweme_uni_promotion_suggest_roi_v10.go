@@ -64,6 +64,8 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestRoiGetRequest) WithLog(en
 /*
 OpenApiV10QianchuanAwemeUniPromotionSuggestRoiGet Method for OpenApiV10QianchuanAwemeUniPromotionSuggestRoiGet
 
+获取随心推全域手动出价计划建议ROI
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeUniPromotionSuggestRoiGetRequest
 */

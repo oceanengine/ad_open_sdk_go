@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// StarDemandOmCreateChallengeV2ChallengeInfoCommissionType
+// StarDemandOmCreateChallengeV2ChallengeInfoCommissionType 分佣模式 枚举，付费分佣（支付分佣）、付费分佣（绑定分佣）、广告分成
 type StarDemandOmCreateChallengeV2ChallengeInfoCommissionType int64
 
 // List of star_demand_om_create_challenge_v2_challenge_info_commission_type

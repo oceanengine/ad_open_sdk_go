@@ -60,6 +60,8 @@ func (r *ApiOpenApi2StarDemanderDemanderGetBindShareCodeGetRequest) WithLog(enab
 /*
 OpenApi2StarDemanderDemanderGetBindShareCodeGet Method for OpenApi2StarDemanderDemanderGetBindShareCodeGet
 
+客户获取达人绑定口令码
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemanderDemanderGetBindShareCodeGetRequest
 */

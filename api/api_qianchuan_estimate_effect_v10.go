@@ -118,6 +118,8 @@ func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) WithLog(enable bool) *A
 /*
 OpenApiV10QianchuanEstimateEffectGet Method for OpenApiV10QianchuanEstimateEffectGet
 
+推直播间-日常销售-通投-托管-放量投放场景获取预估效果
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanEstimateEffectGetRequest
 */

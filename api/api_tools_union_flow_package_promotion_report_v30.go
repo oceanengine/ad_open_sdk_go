@@ -88,6 +88,8 @@ func (r *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest) WithLog(en
 /*
 OpenApiV30ToolsUnionFlowPackagePromotionReportGet Method for OpenApiV30ToolsUnionFlowPackagePromotionReportGet
 
+查看穿山甲2.0广告位数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest
 */

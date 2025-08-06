@@ -58,6 +58,8 @@ func (r *ApiOpenApi2ClueCouponDetailGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2ClueCouponDetailGet Method for OpenApi2ClueCouponDetailGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueCouponDetailGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalCxtCreateV30AudienceDistrict
+// LocalCxtCreateV30AudienceDistrict 地域类型
 type LocalCxtCreateV30AudienceDistrict string
 
 // List of local_cxt_create_v3.0_audience_district

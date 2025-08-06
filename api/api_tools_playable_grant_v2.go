@@ -52,6 +52,9 @@ func (r *ApiOpenApi2ToolsPlayableGrantPostRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApi2ToolsPlayableGrantPost Method for OpenApi2ToolsPlayableGrantPost
 
+本接口用于试玩素材推送，推送仅可推送至同主体下已开通试玩素材白名单的广告主。
+一次最多推送50个，由于推送是异步的，不会马上推送成功，从而会返回task_id，可根据task_id查询推送状态。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPlayableGrantPostRequest
 */

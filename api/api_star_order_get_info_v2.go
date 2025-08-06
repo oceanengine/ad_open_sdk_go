@@ -60,6 +60,8 @@ func (r *ApiOpenApi2StarOrderGetInfoGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2StarOrderGetInfoGet Method for OpenApi2StarOrderGetInfoGet
 
+任务信息查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarOrderGetInfoGetRequest
 */

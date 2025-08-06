@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ClueCaInterfaceCreatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ClueCaInterfaceCreatePost Method for OpenApi2ClueCaInterfaceCreatePost
 
+获客助手接口版创建
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueCaInterfaceCreatePostRequest
 */

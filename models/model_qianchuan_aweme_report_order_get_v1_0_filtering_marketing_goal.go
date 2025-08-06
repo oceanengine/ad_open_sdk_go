@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeReportOrderGetV10FilteringMarketingGoal
+// QianchuanAwemeReportOrderGetV10FilteringMarketingGoal 按营销目标过滤，允许值：VIDEO_PROM_GOODS：短视频带货；LIVE_PROM_GOODS：直播带货
 type QianchuanAwemeReportOrderGetV10FilteringMarketingGoal string
 
 // List of qianchuan_aweme_report_order_get_v1.0_filtering_marketing_goal

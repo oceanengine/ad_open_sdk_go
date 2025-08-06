@@ -58,6 +58,8 @@ func (r *ApiOpenApiV10QianchuanAudienceGroupGetGetRequest) WithLog(enable bool) 
 /*
 OpenApiV10QianchuanAudienceGroupGetGet Method for OpenApiV10QianchuanAudienceGroupGetGet
 
+https://bytedance.feishu.cn/wiki/wikcnBy344NTluLkMQ9anjV5nff
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAudienceGroupGetGetRequest
 */

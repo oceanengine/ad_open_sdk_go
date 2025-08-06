@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30FilteringBidType
+// LocalProjectListV30FilteringBidType 出价方式筛选，默认不限
 type LocalProjectListV30FilteringBidType string
 
 // List of local_project_list_v3.0_filtering_bid_type

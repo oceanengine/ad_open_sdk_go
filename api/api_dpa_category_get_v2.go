@@ -58,6 +58,8 @@ func (r *ApiOpenApi2DpaCategoryGetGetRequest) WithLog(enable bool) *ApiOpenApi2D
 /*
 OpenApi2DpaCategoryGetGet Method for OpenApi2DpaCategoryGetGet
 
+获取DPA分类
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaCategoryGetGetRequest
 */

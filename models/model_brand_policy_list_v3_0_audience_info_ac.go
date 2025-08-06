@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandPolicyListV30AudienceInfoAc
+// BrandPolicyListV30AudienceInfoAc 网络
 type BrandPolicyListV30AudienceInfoAc string
 
 // List of brand_policy_list_v3.0_audience_info_ac

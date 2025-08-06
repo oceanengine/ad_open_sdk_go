@@ -128,6 +128,7 @@ const (
 	AD_CONVERT_TYPE_PHONE_CONFIRM_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction               EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_PHONE_CONFIRM"
 	AD_CONVERT_TYPE_PHONE_CONNECT_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction               EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_PHONE_CONNECT"
 	AD_CONVERT_TYPE_PHONE_EFFECTIVE_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction             EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_PHONE_EFFECTIVE"
+	AD_CONVERT_TYPE_PLANTING_GRASS_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_PLANTING_GRASS"
 	AD_CONVERT_TYPE_POI_ADDRESS_CLICK_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction           EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_POI_ADDRESS_CLICK"
 	AD_CONVERT_TYPE_POI_COLLECT_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                 EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_POI_COLLECT"
 	AD_CONVERT_TYPE_POI_MULTIPLE_EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction                EventManagerOptimizedGoalGetV2V30DataGoalsExternalAction = "AD_CONVERT_TYPE_POI_MULTIPLE"

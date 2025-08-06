@@ -88,6 +88,8 @@ func (r *ApiOpenApiV30LocalChargeListGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30LocalChargeListGet Method for OpenApiV30LocalChargeListGet
 
+查询账户充值记录
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalChargeListGetRequest
 */

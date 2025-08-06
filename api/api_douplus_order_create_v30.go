@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30DouplusOrderCreatePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30DouplusOrderCreatePost Method for OpenApiV30DouplusOrderCreatePost
 
+创建DOU+订单(API白名单，联系巨量引擎销售开通）
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30DouplusOrderCreatePostRequest
 */

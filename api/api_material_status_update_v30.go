@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30MaterialStatusUpdatePostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30MaterialStatusUpdatePost Method for OpenApiV30MaterialStatusUpdatePost
 
+批量更新广告素材启用状态
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30MaterialStatusUpdatePostRequest
 */

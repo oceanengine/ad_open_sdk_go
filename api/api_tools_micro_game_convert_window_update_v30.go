@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest) WithLog(enab
 /*
 OpenApiV30ToolsMicroGameConvertWindowUpdatePost Method for OpenApiV30ToolsMicroGameConvertWindowUpdatePost
 
+修改字节小游戏归因激活时间窗
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest
 */

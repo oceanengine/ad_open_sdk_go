@@ -81,6 +81,8 @@ func (r *ApiOpenApi2StarDemandOrderListGetRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApi2StarDemandOrderListGet Method for OpenApi2StarDemandOrderListGet
 
+获取星图客户任务订单列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemandOrderListGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AdvertiserQualificationGetV30DataStatus
+// AdvertiserQualificationGetV30DataStatus 状态
 type AdvertiserQualificationGetV30DataStatus string
 
 // List of advertiser_qualification_get_v3.0_data_status

@@ -107,6 +107,8 @@ func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) WithLog(enable boo
 /*
 OpenApiV10QianchuanAwemeReportOrderGetGet Method for OpenApiV10QianchuanAwemeReportOrderGetGet
 
+随心推报表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest
 */

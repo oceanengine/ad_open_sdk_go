@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandCreativeGetV30DataCreativesCreativeAdvancedCreativeInfoAdvancedCreativeType
+// BrandCreativeGetV30DataCreativesCreativeAdvancedCreativeInfoAdvancedCreativeType 附加创意类型
 type BrandCreativeGetV30DataCreativesCreativeAdvancedCreativeInfoAdvancedCreativeType int64
 
 // List of brand_creative_get_v3.0_data_creatives_creative_advanced_creative_info_advanced_creative_type

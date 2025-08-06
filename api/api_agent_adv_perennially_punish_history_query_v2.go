@@ -59,6 +59,8 @@ func (r *ApiOpenApi2AgentAdvPerenniallyPunishHistoryQueryGetRequest) WithLog(ena
 /*
 OpenApi2AgentAdvPerenniallyPunishHistoryQueryGet Method for OpenApi2AgentAdvPerenniallyPunishHistoryQueryGet
 
+	查询某adv历史被代理商操作永久封停的记录，仅包含方舟新永久封停渠道封停的记录类型
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentAdvPerenniallyPunishHistoryQueryGetRequest
 */

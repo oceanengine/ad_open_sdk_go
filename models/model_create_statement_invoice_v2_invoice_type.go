@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreateStatementInvoiceV2InvoiceType
+// CreateStatementInvoiceV2InvoiceType 开票类型
 type CreateStatementInvoiceV2InvoiceType string
 
 // List of create_statement_invoice_v2_invoice_type

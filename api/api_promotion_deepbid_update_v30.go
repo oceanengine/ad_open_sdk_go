@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30PromotionDeepbidUpdatePostRequest) WithLog(enable bool) *A
 /*
 OpenApiV30PromotionDeepbidUpdatePost Method for OpenApiV30PromotionDeepbidUpdatePost
 
+创编2.0批量修改深度出价
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30PromotionDeepbidUpdatePostRequest
 */

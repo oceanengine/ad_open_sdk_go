@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest) WithLog(en
 /*
 OpenApiV10QianchuanAdScheduleFixedRangeUpdatePost Method for OpenApiV10QianchuanAdScheduleFixedRangeUpdatePost
 
+批量更新计划固定时长
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest
 */

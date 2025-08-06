@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AdvertiserQualificationSubmitV30SubjectCheckType
+// AdvertiserQualificationSubmitV30SubjectCheckType 对公验证类型
 type AdvertiserQualificationSubmitV30SubjectCheckType string
 
 // List of advertiser_qualification_submit_v3.0_subject_check_type

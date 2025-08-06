@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionRejectReasonGetV30DataListMaterialRejectAuditPlatform
+// PromotionRejectReasonGetV30DataListMaterialRejectAuditPlatform 审核来源类型，返回值：AD 广告审核、CONTENT 内容审核
 type PromotionRejectReasonGetV30DataListMaterialRejectAuditPlatform string
 
 // List of promotion_reject_reason_get_v3.0_data_list_material_reject_audit_platform

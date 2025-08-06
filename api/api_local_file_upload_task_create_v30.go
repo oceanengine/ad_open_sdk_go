@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30LocalFileUploadTaskCreatePostRequest) WithLog(enable bool)
 /*
 OpenApiV30LocalFileUploadTaskCreatePost Method for OpenApiV30LocalFileUploadTaskCreatePost
 
+异步上传本地推视频
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalFileUploadTaskCreatePostRequest
 */

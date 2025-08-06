@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreativeStrategyListV2DataStrategyModelsType
+// CreativeStrategyListV2DataStrategyModelsType 策略类型
 type CreativeStrategyListV2DataStrategyModelsType string
 
 // List of creative_strategy_list_v2_data_strategy_models_type

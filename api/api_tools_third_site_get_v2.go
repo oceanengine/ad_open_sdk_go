@@ -70,6 +70,8 @@ func (r *ApiOpenApi2ToolsThirdSiteGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2ToolsThirdSiteGetGet Method for OpenApi2ToolsThirdSiteGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsThirdSiteGetGetRequest
 */

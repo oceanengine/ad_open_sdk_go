@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreativeDetailGetV30DataCreativeImageMaterialsImageMode
+// CreativeDetailGetV30DataCreativeImageMaterialsImageMode 素材类型
 type CreativeDetailGetV30DataCreativeImageMaterialsImageMode string
 
 // List of creative_detail_get_v3.0_data_creative_image_materials_image_mode

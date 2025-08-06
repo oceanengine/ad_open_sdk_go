@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeOrderDetailGetV10DataRoomInfoRoomStatus
+// QianchuanAwemeOrderDetailGetV10DataRoomInfoRoomStatus 直播间状态
 type QianchuanAwemeOrderDetailGetV10DataRoomInfoRoomStatus string
 
 // List of qianchuan_aweme_order_detail_get_v1.0_data_room_info_room_status

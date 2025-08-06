@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeOrderGetV10DataPageInfoHasMore
+// QianchuanAwemeOrderGetV10DataPageInfoHasMore 是否有下一页
 type QianchuanAwemeOrderGetV10DataPageInfoHasMore int64
 
 // List of qianchuan_aweme_order_get_v1.0_data_page_info_has_more

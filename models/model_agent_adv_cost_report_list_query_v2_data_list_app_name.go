@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2DataListAppName
+// AgentAdvCostReportListQueryV2DataListAppName 投放平台(1: 通投智选, 2: 西瓜APP, 3: 搜索广告, 4: 头条APP, 5: 火山APP, 6: 番茄小说, 7: 抖音APP, 8: 站内通投, 9: J项目, 10: 懂车帝APP, 11: 穿山甲, 12: 剪映, 13: 鲜时光, 14: FaceU, 15: 抖音lite, 16: 皮皮虾, 17: 头条lite APP)
 type AgentAdvCostReportListQueryV2DataListAppName int64
 
 // List of agent_adv_cost_report_list_query_v2_data_list_app_name

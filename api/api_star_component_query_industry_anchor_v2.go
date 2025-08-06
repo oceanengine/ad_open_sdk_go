@@ -81,6 +81,8 @@ func (r *ApiOpenApi2StarComponentQueryIndustryAnchorGetRequest) WithLog(enable b
 /*
 OpenApi2StarComponentQueryIndustryAnchorGet Method for OpenApi2StarComponentQueryIndustryAnchorGet
 
+行业组件查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarComponentQueryIndustryAnchorGetRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarDemanderUploadCpsTaskSalesPostRequest) WithLog(enable bo
 /*
 OpenApi2StarDemanderUploadCpsTaskSalesPost Method for OpenApi2StarDemanderUploadCpsTaskSalesPost
 
+客户回传cps流水
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemanderUploadCpsTaskSalesPostRequest
 */

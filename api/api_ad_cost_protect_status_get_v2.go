@@ -60,6 +60,8 @@ func (r *ApiOpenApi2AdCostProtectStatusGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2AdCostProtectStatusGetGet Method for OpenApi2AdCostProtectStatusGetGet
 
+获取成本保障状态及时同步广告主计划投放状态，可以获取计划是否处于保障中，满足赔付规则
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdCostProtectStatusGetGetRequest
 */

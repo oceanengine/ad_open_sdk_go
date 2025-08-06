@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsThirdSiteCreatePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2ToolsThirdSiteCreatePost Method for OpenApi2ToolsThirdSiteCreatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsThirdSiteCreatePostRequest
 */

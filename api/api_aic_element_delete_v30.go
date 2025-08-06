@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AicElementDeletePostRequest) WithLog(enable bool) *ApiOpen
 /*
 OpenApiV30AicElementDeletePost Method for OpenApiV30AicElementDeletePost
 
+输入element_id，删除对应的元素(文件、文件夹)
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AicElementDeletePostRequest
 */

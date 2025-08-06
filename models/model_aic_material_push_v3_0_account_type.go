@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicMaterialPushV30AccountType
+// AicMaterialPushV30AccountType 账户体系枚举
 type AicMaterialPushV30AccountType string
 
 // List of aic_material_push_v3.0_account_type

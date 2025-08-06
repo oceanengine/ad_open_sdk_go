@@ -12,23 +12,23 @@ package models
 
 // QianchuanAwemeAuthorizedGetV10ResponseDataAwemeIdListInner struct for QianchuanAwemeAuthorizedGetV10ResponseDataAwemeIdListInner
 type QianchuanAwemeAuthorizedGetV10ResponseDataAwemeIdListInner struct {
-	//
+	// 抖音头像
 	AwemeAvatar *string `json:"aweme_avatar,omitempty"`
-	//
+	// 抖音号是否有直播带货权限，只有具有带货权限才可以创建直播带货投放 如需开通请前往抖音APP-【创作作者服务中心】-【商品橱窗】进行申请
 	AwemeHasLivePermission *bool `json:"aweme_has_live_permission,omitempty"`
-	//
+	// 标识抖音号是否有\"使用抖音号发布作品\"权限 注意：针对官方/自运营类型的抖音号，是否支持\"使用抖音号发布作品\"得根据该字段来做判断。如果为false，那么针对官方/自运营的创编权限同达人。
 	AwemeHasPublishPermission *bool `json:"aweme_has_publish_permission,omitempty"`
-	//
+	// 该抖音号是否有直播全域推广计划投放，如果开启了投放，那么该抖音号不可以用来投放其他直播带货广告
 	AwemeHasUniProm *bool `json:"aweme_has_uni_prom,omitempty"`
-	//
+	// 抖音号是否有短视频带货权限，只有具有带货权限才可以创建短视频投放 如需开通请前往抖音APP-【创作作者服务中心】-【商品橱窗】进行申请
 	AwemeHasVideoPermission *bool `json:"aweme_has_video_permission,omitempty"`
-	//
+	// 抖音id，用于创建计划，拉取抖音号视频素材时入参
 	AwemeId *int64 `json:"aweme_id,omitempty"`
-	//
+	// 抖音号名称
 	AwemeName *string `json:"aweme_name,omitempty"`
-	//
+	// 抖音号，即客户在手机端上看到的抖音号，若向客户披露抖音号请使用该字段
 	AwemeShowId *string                                                   `json:"aweme_show_id,omitempty"`
 	AwemeStatus *QianchuanAwemeAuthorizedGetV10DataAwemeIdListAwemeStatus `json:"aweme_status,omitempty"`
-	//
+	// 抖音号授权类型，枚举值： - `AWEME_COOPERATOR` 合作达人 - `DOU_SHOP_LIVE_SELF` 抖店自运营 - `EXPIRED` 已过期 - `OFFICIAL` 官方 - `ROOM` 直播间 -`SELF` 自运营 - `TALENT_USER_OWNER` 无店达人登录时的owner账户 - `UNAUTHORIZED` 未授权
 	BindType []*QianchuanAwemeAuthorizedGetV10DataAwemeIdListBindType `json:"bind_type,omitempty"`
 }

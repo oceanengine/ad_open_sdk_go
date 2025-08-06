@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanUniAwemeAdCreatePostRequest) WithLog(enable bool)
 /*
 OpenApiV10QianchuanUniAwemeAdCreatePost Method for OpenApiV10QianchuanUniAwemeAdCreatePost
 
+新建全域推广计划
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniAwemeAdCreatePostRequest
 */

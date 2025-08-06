@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueRobotTaskCreatePostRequest) WithLog(enable bool) *A
 /*
 OpenApi2ToolsClueRobotTaskCreatePost Method for OpenApi2ToolsClueRobotTaskCreatePost
 
+创建机器人任务。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueRobotTaskCreatePostRequest
 */

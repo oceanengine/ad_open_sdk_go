@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest) WithLog(ena
 /*
 OpenApiV10QianchuanToolsSmartBoostAdBoostSetPost Method for OpenApiV10QianchuanToolsSmartBoostAdBoostSetPost
 
+https://bytedance.feishu.cn/wiki/wikcnq0rDUKyzKVSPWUAt6EJD4b
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionCreateV30PromotionMaterialsOpenUrlType
+// PromotionCreateV30PromotionMaterialsOpenUrlType 直达链接类型，允许值: NONE不启用, DPA商品库所含链接, CUSTOM自定义链接 商品库链接对应商品库内调起字段，如对接多种调起链接则可选择；自定义链接可自行输入调起链接。
 type PromotionCreateV30PromotionMaterialsOpenUrlType string
 
 // List of promotion_create_v3.0_promotion_materials_open_url_type

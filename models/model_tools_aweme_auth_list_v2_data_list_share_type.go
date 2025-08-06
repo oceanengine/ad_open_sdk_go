@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAwemeAuthListV2DataListShareType
+// ToolsAwemeAuthListV2DataListShareType 授权共享类型
 type ToolsAwemeAuthListV2DataListShareType string
 
 // List of tools_aweme_auth_list_v2_data_list_share_type

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// NativeAnchorCreateV30AnchorInfoNetServiceAnchorNetServiceType
+// NativeAnchorCreateV30AnchorInfoNetServiceAnchorNetServiceType 网服锚点类型（1常规网服锚点，2微信小程序锚点，3快应用锚点，4添加微信号码包锚点，5添加企业微信号码包锚点）
 type NativeAnchorCreateV30AnchorInfoNetServiceAnchorNetServiceType string
 
 // List of native_anchor_create_v3.0_anchor_info_net_service_anchor_net_service_type

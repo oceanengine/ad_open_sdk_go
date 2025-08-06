@@ -59,6 +59,8 @@ func (r *ApiOpenApi2ToolsPlayableUploadPostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2ToolsPlayableUploadPost Method for OpenApi2ToolsPlayableUploadPost
 
+试玩素材上传，首先调用playable/upload/进行素材包上传，然后调用playable/validate/进行素材上传结果校验，若审核通过，即可调用playable/save/完成素材上传。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPlayableUploadPostRequest
 */

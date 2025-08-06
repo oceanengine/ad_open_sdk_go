@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandAdGetV30DataAdsFrequencyInfoFrequencyStatus
+// BrandAdGetV30DataAdsFrequencyInfoFrequencyStatus 是否开启频控
 type BrandAdGetV30DataAdsFrequencyInfoFrequencyStatus int64
 
 // List of brand_ad_get_v3.0_data_ads_frequency_info_frequency_status

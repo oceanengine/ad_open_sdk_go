@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectDetailV30DataDeliveryPoiMode
+// LocalProjectDetailV30DataDeliveryPoiMode 推广门店类型
 type LocalProjectDetailV30DataDeliveryPoiMode string
 
 // List of local_project_detail_v3.0_data_delivery_poi_mode

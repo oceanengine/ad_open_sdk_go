@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CreativeDetailGetV30DataAdDataParamsType
+// CreativeDetailGetV30DataAdDataParamsType 链接类型
 type CreativeDetailGetV30DataAdDataParamsType string
 
 // List of creative_detail_get_v3.0_data_ad_data_params_type

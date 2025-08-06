@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsTaskRaiseCreatePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2ToolsTaskRaiseCreatePost Method for OpenApi2ToolsTaskRaiseCreatePost
 
+新建优选起量任务
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsTaskRaiseCreatePostRequest
 */

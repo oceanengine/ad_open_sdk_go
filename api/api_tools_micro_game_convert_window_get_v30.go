@@ -70,6 +70,8 @@ func (r *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest) WithLog(enable b
 /*
 OpenApiV30ToolsMicroGameConvertWindowGetGet Method for OpenApiV30ToolsMicroGameConvertWindowGetGet
 
+查询字节小游戏归因激活时间窗
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest
 */

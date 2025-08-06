@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicVideoMixcutCreateV30RenderOptionTargetRadio
+// AicVideoMixcutCreateV30RenderOptionTargetRadio 生成视频的宽高比，横板视频、竖版视频
 type AicVideoMixcutCreateV30RenderOptionTargetRadio string
 
 // List of aic_video_mixcut_create_v3.0_render_option_target_radio

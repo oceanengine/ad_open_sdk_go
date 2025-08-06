@@ -88,6 +88,8 @@ func (r *ApiOpenApi2ClueSmartphoneGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2ClueSmartphoneGetGet Method for OpenApi2ClueSmartphoneGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueSmartphoneGetGetRequest
 */

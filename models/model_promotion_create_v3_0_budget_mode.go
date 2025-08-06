@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// PromotionCreateV30BudgetMode
+// PromotionCreateV30BudgetMode 预算模式
 type PromotionCreateV30BudgetMode string
 
 // List of promotion_create_v3.0_budget_mode

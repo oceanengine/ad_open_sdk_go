@@ -73,6 +73,10 @@ func (r *ApiOpenApiV30AdvertiserDeliveryPkgConfigGetRequest) WithLog(enable bool
 /*
 OpenApiV30AdvertiserDeliveryPkgConfigGet Method for OpenApiV30AdvertiserDeliveryPkgConfigGet
 
+根据商业化行业获取不同行业下对应的资质提交规则。
+
+需注意：每个行业下的资质提交规则可能会因平台及外部监管的要求而发生变化，当规则发生变更时，规则的版本号+1
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AdvertiserDeliveryPkgConfigGetRequest
 */

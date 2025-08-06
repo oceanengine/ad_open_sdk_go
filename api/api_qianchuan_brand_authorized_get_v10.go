@@ -52,6 +52,9 @@ func (r *ApiOpenApiV10QianchuanBrandAuthorizedGetGetRequest) WithLog(enable bool
 /*
 OpenApiV10QianchuanBrandAuthorizedGetGet Method for OpenApiV10QianchuanBrandAuthorizedGetGet
 
+在品牌新客场景下，支持广告主选择具体绑定的品牌进行新客投放
+投放到近365天未在该品牌下发生过成交订单的人群
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanBrandAuthorizedGetGetRequest
 */

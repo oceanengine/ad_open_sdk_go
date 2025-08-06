@@ -53,6 +53,8 @@ func (r *ApiOpenApi2DmpBrandGetGetRequest) WithLog(enable bool) *ApiOpenApi2DmpB
 /*
 OpenApi2DmpBrandGetGet Method for OpenApi2DmpBrandGetGet
 
+根据真实的客户adv_id 获取有权限的云图品牌列表信息，信息包括：品牌id、品牌名称、虚拟advid
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DmpBrandGetGetRequest
 */

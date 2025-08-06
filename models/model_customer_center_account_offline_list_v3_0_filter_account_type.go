@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CustomerCenterAccountOfflineListV30FilterAccountType
+// CustomerCenterAccountOfflineListV30FilterAccountType 需要查询的业务账户类型，允许值： - `QIANCHUAN` 巨量千川
 type CustomerCenterAccountOfflineListV30FilterAccountType string
 
 // List of customer_center_account_offline_list_v3.0_filter_account_type

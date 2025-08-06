@@ -66,6 +66,8 @@ func (r *ApiOpenApi2DownloadStatementGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApi2DownloadStatementGet Method for OpenApi2DownloadStatementGet
 
+获取结算单附件的下载链接，链接有效3小时，过后可重新获取
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DownloadStatementGetRequest
 */

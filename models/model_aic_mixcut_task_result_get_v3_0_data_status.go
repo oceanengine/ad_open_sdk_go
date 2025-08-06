@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AicMixcutTaskResultGetV30DataStatus
+// AicMixcutTaskResultGetV30DataStatus 任务生成状态: 并行生成多个视频会有部分成功的情况
 type AicMixcutTaskResultGetV30DataStatus string
 
 // List of aic_mixcut_task_result_get_v3.0_data_status

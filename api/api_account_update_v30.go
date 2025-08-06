@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AccountUpdatePostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30AccountUpdatePost Method for OpenApiV30AccountUpdatePost
 
+修改账户信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AccountUpdatePostRequest
 */

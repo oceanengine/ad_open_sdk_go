@@ -52,6 +52,8 @@ func (r *ApiOpenApi2FileVideoDeletePostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApi2FileVideoDeletePost Method for OpenApi2FileVideoDeletePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2FileVideoDeletePostRequest
 */

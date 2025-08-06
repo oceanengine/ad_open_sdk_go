@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest) WithLog(ena
 /*
 OpenApi2ToolsAppManagementExtendPackageListV2Get Method for OpenApi2ToolsAppManagementExtendPackageListV2Get
 
+通过应用包id，查询该应用包相关信息和包含的分包信息。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest
 */

@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest) WithLog(enable bool) *
 /*
 OpenApiV30ToolsKeywordsBidRatioGetGet Method for OpenApiV30ToolsKeywordsBidRatioGetGet
 
+账户优词工具-查询优词
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest
 */

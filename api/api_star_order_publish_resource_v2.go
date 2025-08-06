@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarOrderPublishResourcePostRequest) WithLog(enable bool) *A
 /*
 OpenApi2StarOrderPublishResourcePost Method for OpenApi2StarOrderPublishResourcePost
 
+任务资源发布
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarOrderPublishResourcePostRequest
 */

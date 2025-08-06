@@ -95,6 +95,8 @@ func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) WithLog(enable bool) *A
 /*
 OpenApi2StarDemandOmGetDemandListGet Method for OpenApi2StarDemandOmGetDemandListGet
 
+小程序查询任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemandOmGetDemandListGetRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10QianchuanBatchCampaignStatusUpdatePostRequest) WithLog(ena
 /*
 OpenApiV10QianchuanBatchCampaignStatusUpdatePost Method for OpenApiV10QianchuanBatchCampaignStatusUpdatePost
 
+此接口用于更新当前千川广告账户下的广告组的状态。
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanBatchCampaignStatusUpdatePostRequest
 */

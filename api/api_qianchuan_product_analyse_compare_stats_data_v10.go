@@ -64,6 +64,9 @@ func (r *ApiOpenApiV10QianchuanProductAnalyseCompareStatsDataGetRequest) WithLog
 /*
 OpenApiV10QianchuanProductAnalyseCompareStatsDataGet Method for OpenApiV10QianchuanProductAnalyseCompareStatsDataGet
 
+获取商品竞争分析详情-效果对比详情
+prd:prd:https://bytedance.feishu.cn/wiki/TC0DwmRPniehkDkAtkUc78FInag
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanProductAnalyseCompareStatsDataGetRequest
 */

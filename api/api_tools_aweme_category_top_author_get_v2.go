@@ -64,6 +64,8 @@ func (r *ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest) WithLog(enable boo
 /*
 OpenApi2ToolsAwemeCategoryTopAuthorGetGet Method for OpenApi2ToolsAwemeCategoryTopAuthorGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest
 */

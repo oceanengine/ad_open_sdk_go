@@ -94,6 +94,8 @@ func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2ToolsAppManagementAppGetGet Method for OpenApi2ToolsAppManagementAppGetGet
 
+查询应用信息 可通过请求参数advertiser_id广告主id 查询广告主下应用列表及应用详细信息，具体返回信息见返回参数
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementAppGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// SharedWalletDailyStatGetV30DataResultsWalletType
+// SharedWalletDailyStatGetV30DataResultsWalletType 共享钱包类型
 type SharedWalletDailyStatGetV30DataResultsWalletType string
 
 // List of shared_wallet_daily_stat_get_v3.0_data_results_wallet_type

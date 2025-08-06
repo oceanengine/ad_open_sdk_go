@@ -77,6 +77,8 @@ func (r *ApiOpenApiV10QianchuanAwemeVideoGetGetRequest) WithLog(enable bool) *Ap
 /*
 OpenApiV10QianchuanAwemeVideoGetGet Method for OpenApiV10QianchuanAwemeVideoGetGet
 
+获取小店可投视频列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeVideoGetGetRequest
 */

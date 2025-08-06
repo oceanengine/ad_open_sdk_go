@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsSiteTemplateGetV2DataListBricksType
+// ToolsSiteTemplateGetV2DataListBricksType 组件类型
 type ToolsSiteTemplateGetV2DataListBricksType string
 
 // List of tools_site_template_get_v2_data_list_bricks_type

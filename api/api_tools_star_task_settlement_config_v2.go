@@ -88,6 +88,8 @@ func (r *ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest) WithLog(enable bool
 /*
 OpenApi2ToolsStarTaskSettlementConfigGet Method for OpenApi2ToolsStarTaskSettlementConfigGet
 
+查询星广任务金额配置条件
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest
 */

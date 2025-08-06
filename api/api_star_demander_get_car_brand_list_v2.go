@@ -52,6 +52,8 @@ func (r *ApiOpenApi2StarDemanderGetCarBrandListGetRequest) WithLog(enable bool) 
 /*
 OpenApi2StarDemanderGetCarBrandListGet Method for OpenApi2StarDemanderGetCarBrandListGet
 
+获取全量车系信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2StarDemanderGetCarBrandListGetRequest
 */

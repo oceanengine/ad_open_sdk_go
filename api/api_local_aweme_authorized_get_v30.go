@@ -81,6 +81,8 @@ func (r *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest) WithLog(enable bool) *A
 /*
 OpenApiV30LocalAwemeAuthorizedGetGet Method for OpenApiV30LocalAwemeAuthorizedGetGet
 
+获取本地推创编可用抖音号
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest
 */

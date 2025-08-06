@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// CgTransferWalletTransferListV30DataRecordListTransferCapitalRecordListPlatform
+// CgTransferWalletTransferListV30DataRecordListTransferCapitalRecordListPlatform 转账业务线
 type CgTransferWalletTransferListV30DataRecordListTransferCapitalRecordListPlatform string
 
 // List of cg_transfer_wallet_transfer_list_v3.0_data_record_list_transfer_capital_record_list_platform

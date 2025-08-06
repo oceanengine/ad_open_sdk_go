@@ -52,6 +52,8 @@ func (r *ApiOpenApi2CampaignUpdateStatusPostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2CampaignUpdateStatusPost Method for OpenApi2CampaignUpdateStatusPost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2CampaignUpdateStatusPostRequest
 */

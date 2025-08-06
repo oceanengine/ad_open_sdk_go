@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// NativeAnchorUpdateV30AnchorInfoNetServiceAnchorNetServiceType
+// NativeAnchorUpdateV30AnchorInfoNetServiceAnchorNetServiceType 推广内容，当前锚点必填
 type NativeAnchorUpdateV30AnchorInfoNetServiceAnchorNetServiceType string
 
 // List of native_anchor_update_v3.0_anchor_info_net_service_anchor_net_service_type

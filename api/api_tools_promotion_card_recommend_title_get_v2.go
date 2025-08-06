@@ -82,6 +82,8 @@ func (r *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest) WithLog(enabl
 /*
 OpenApi2ToolsPromotionCardRecommendTitleGetGet Method for OpenApi2ToolsPromotionCardRecommendTitleGetGet
 
+用于获取推广卡片推荐文案列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsEventAllAssetsDetailV2DataAssetListAppType
+// ToolsEventAllAssetsDetailV2DataAssetListAppType 应用类型，当asset_type = APP 时返回，枚举值： ANDROID 安卓 IOS ios
 type ToolsEventAllAssetsDetailV2DataAssetListAppType string
 
 // List of tools_event_all_assets_detail_v2_data_asset_list_app_type

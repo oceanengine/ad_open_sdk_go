@@ -60,6 +60,8 @@ func (r *ApiOpenApi2EventManagerAvailableEventsGetGetRequest) WithLog(enable boo
 /*
 OpenApi2EventManagerAvailableEventsGetGet Method for OpenApi2EventManagerAvailableEventsGetGet
 
+此接口用于查询资产下支持创建的事件列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EventManagerAvailableEventsGetGetRequest
 */

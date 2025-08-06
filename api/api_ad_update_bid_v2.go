@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AdUpdateBidPostRequest) WithLog(enable bool) *ApiOpenApi2AdU
 /*
 OpenApi2AdUpdateBidPost Method for OpenApi2AdUpdateBidPost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AdUpdateBidPostRequest
 */

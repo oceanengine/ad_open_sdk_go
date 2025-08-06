@@ -52,6 +52,8 @@ func (r *ApiOpenApiV10EnterpriseInfoGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV10EnterpriseInfoGet Method for OpenApiV10EnterpriseInfoGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10EnterpriseInfoGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandQueryStockV30AudienceInfoDistrictInfoCitySelectType
+// BrandQueryStockV30AudienceInfoDistrictInfoCitySelectType 城市选择类型
 type BrandQueryStockV30AudienceInfoDistrictInfoCitySelectType string
 
 // List of brand_query_stock_v3.0_audience_info_district_info_city_select_type

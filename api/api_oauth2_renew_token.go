@@ -52,6 +52,8 @@ func (r *ApiOpenApiOauth2RenewTokenPostRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiOauth2RenewTokenPost Method for OpenApiOauth2RenewTokenPost
 
+重置 token 有效期
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiOauth2RenewTokenPostRequest
 */

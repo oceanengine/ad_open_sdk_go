@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsAwemeAuthAuthShareAdSharePostRequest) WithLog(enable bo
 /*
 OpenApi2ToolsAwemeAuthAuthShareAdSharePost Method for OpenApi2ToolsAwemeAuthAuthShareAdSharePost
 
+共享抖音号授权
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAwemeAuthAuthShareAdSharePostRequest
 */

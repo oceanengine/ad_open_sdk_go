@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandToolQueryStockBalanceV30AudienceInfoDistrictInfoDistrictType
+// BrandToolQueryStockBalanceV30AudienceInfoDistrictInfoDistrictType 地域定向类型
 type BrandToolQueryStockBalanceV30AudienceInfoDistrictInfoDistrictType string
 
 // List of brand_tool_query_stock_balance_v3.0_audience_info_district_info_district_type

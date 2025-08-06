@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AdvertiserVerifyInfoGetV30DataRecordsPlatform
+// AdvertiserVerifyInfoGetV30DataRecordsPlatform 平台号
 type AdvertiserVerifyInfoGetV30DataRecordsPlatform string
 
 // List of advertiser_verify_info_get_v3.0_data_records_platform

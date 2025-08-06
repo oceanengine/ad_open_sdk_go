@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectListV30DataProjectListProjectStatusFirst
+// LocalProjectListV30DataProjectListProjectStatusFirst 项目一级状态
 type LocalProjectListV30DataProjectListProjectStatusFirst string
 
 // List of local_project_list_v3.0_data_project_list_project_status_first

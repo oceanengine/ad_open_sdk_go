@@ -17,8 +17,8 @@ type AgentAdvertiserSelectV2FilteringCostPeriod string
 const (
 	YESTERDAY_AgentAdvertiserSelectV2FilteringCostPeriod    AgentAdvertiserSelectV2FilteringCostPeriod = "YESTERDAY"
 	LAST_30_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_30_DAYS"
-	LAST_7_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod  AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_7_DAYS"
 	TODAY_AgentAdvertiserSelectV2FilteringCostPeriod        AgentAdvertiserSelectV2FilteringCostPeriod = "TODAY"
+	LAST_7_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod  AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_7_DAYS"
 	LAST_15_DAYS_AgentAdvertiserSelectV2FilteringCostPeriod AgentAdvertiserSelectV2FilteringCostPeriod = "LAST_15_DAYS"
 )
 

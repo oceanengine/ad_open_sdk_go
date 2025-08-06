@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// FileVideoUploadTaskListV2DataListStatus
+// FileVideoUploadTaskListV2DataListStatus 任务处理状态
 type FileVideoUploadTaskListV2DataListStatus string
 
 // List of file_video_upload_task_list_v2_data_list_status

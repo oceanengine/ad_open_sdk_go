@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderCreateV30ProType
+// BrandOrderCreateV30ProType 产品类型
 type BrandOrderCreateV30ProType string
 
 // List of brand_order_create_v3.0_pro_type

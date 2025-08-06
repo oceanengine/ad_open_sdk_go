@@ -70,6 +70,8 @@ func (r *ApiOpenApiV30EventManagerShareGetGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30EventManagerShareGetGet Method for OpenApiV30EventManagerShareGetGet
 
+事件管理资产查看共享范围
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30EventManagerShareGetGetRequest
 */

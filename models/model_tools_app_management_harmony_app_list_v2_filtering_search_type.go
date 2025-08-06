@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsAppManagementHarmonyAppListV2FilteringSearchType
+// ToolsAppManagementHarmonyAppListV2FilteringSearchType 搜索类型
 type ToolsAppManagementHarmonyAppListV2FilteringSearchType string
 
 // List of tools_app_management_harmony_app_list_v2_filtering_search_type

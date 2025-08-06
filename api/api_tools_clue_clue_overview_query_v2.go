@@ -67,6 +67,8 @@ func (r *ApiOpenApi2ToolsClueClueOverviewQueryGetRequest) WithLog(enable bool) *
 /*
 OpenApi2ToolsClueClueOverviewQueryGet Method for OpenApi2ToolsClueClueOverviewQueryGet
 
+查询线索概览报表数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueClueOverviewQueryGetRequest
 */

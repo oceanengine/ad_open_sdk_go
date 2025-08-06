@@ -70,6 +70,8 @@ func (r *ApiOpenApi2AsyncTaskGetGetRequest) WithLog(enable bool) *ApiOpenApi2Asy
 /*
 OpenApi2AsyncTaskGetGet Method for OpenApi2AsyncTaskGetGet
 
+异步数据报表-获取任务列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AsyncTaskGetGetRequest
 */

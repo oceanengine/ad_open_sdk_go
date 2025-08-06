@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsClueLifeGetV2DataListIsPrivateClue
+// ToolsClueLifeGetV2DataListIsPrivateClue 是否私信线索
 type ToolsClueLifeGetV2DataListIsPrivateClue string
 
 // List of tools_clue_life_get_v2_data_list_is_private_clue

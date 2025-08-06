@@ -70,6 +70,8 @@ func (r *ApiOpenApiV30FilePreauditGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30FilePreauditGetGet Method for OpenApiV30FilePreauditGetGet
 
+素材预审结果查询
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30FilePreauditGetGetRequest
 */

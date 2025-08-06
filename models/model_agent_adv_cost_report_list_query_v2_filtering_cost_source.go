@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvCostReportListQueryV2FilteringCostSource
+// AgentAdvCostReportListQueryV2FilteringCostSource 消耗来源
 type AgentAdvCostReportListQueryV2FilteringCostSource int64
 
 // List of agent_adv_cost_report_list_query_v2_filtering_cost_source

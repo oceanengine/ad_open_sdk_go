@@ -64,6 +64,8 @@ func (r *ApiOpenApi2KeywordFeedadsSuggestGetRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2KeywordFeedadsSuggestGet Method for OpenApi2KeywordFeedadsSuggestGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2KeywordFeedadsSuggestGetRequest
 */

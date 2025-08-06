@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30AicImageMixcutCreatePostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30AicImageMixcutCreatePost Method for OpenApiV30AicImageMixcutCreatePost
 
+可以把图片生成 AIGC 的视频并输出
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30AicImageMixcutCreatePostRequest
 */

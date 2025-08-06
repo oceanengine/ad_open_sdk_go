@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30EventManagerShareCancelPostRequest) WithLog(enable bool) *
 /*
 OpenApiV30EventManagerShareCancelPost Method for OpenApiV30EventManagerShareCancelPost
 
+事件管理资产取消共享
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30EventManagerShareCancelPostRequest
 */

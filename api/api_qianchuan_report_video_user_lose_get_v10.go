@@ -76,6 +76,8 @@ func (r *ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest) WithLog(enable 
 /*
 OpenApiV10QianchuanReportVideoUserLoseGetGet Method for OpenApiV10QianchuanReportVideoUserLoseGetGet
 
+视频互动流失数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest
 */

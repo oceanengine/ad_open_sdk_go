@@ -70,6 +70,8 @@ func (r *ApiOpenApi2DpaVideoGetGetRequest) WithLog(enable bool) *ApiOpenApi2DpaV
 /*
 OpenApi2DpaVideoGetGet Method for OpenApi2DpaVideoGetGet
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DpaVideoGetGetRequest
 */

@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentAdvertiserCopyV2DataCopyStatus
+// AgentAdvertiserCopyV2DataCopyStatus 复制结果状态码
 type AgentAdvertiserCopyV2DataCopyStatus int64
 
 // List of agent_advertiser_copy_v2_data_copy_status

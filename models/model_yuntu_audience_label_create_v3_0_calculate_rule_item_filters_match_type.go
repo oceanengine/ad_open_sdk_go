@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// YuntuAudienceLabelCreateV30CalculateRuleItemFiltersMatchType
+// YuntuAudienceLabelCreateV30CalculateRuleItemFiltersMatchType 匹配类型。所有人群标签下必传，固定传入 0。
 type YuntuAudienceLabelCreateV30CalculateRuleItemFiltersMatchType int64
 
 // List of yuntu_audience_label_create_v3.0_calculate_rule_item_filters_match_type

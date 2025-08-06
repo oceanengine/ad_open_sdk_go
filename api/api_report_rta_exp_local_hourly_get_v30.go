@@ -82,6 +82,8 @@ func (r *ApiOpenApiV30ReportRtaExpLocalHourlyGetGetRequest) WithLog(enable bool)
 /*
 OpenApiV30ReportRtaExpLocalHourlyGetGet Method for OpenApiV30ReportRtaExpLocalHourlyGetGet
 
+该接口用于查询站内媒体渠道的RTA联合实验数据，支持分时t+5级别数据
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportRtaExpLocalHourlyGetGetRequest
 */

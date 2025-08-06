@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionListV30DataPromotionListPromotionStatusFirst
+// LocalPromotionListV30DataPromotionListPromotionStatusFirst 广告一级状态
 type LocalPromotionListV30DataPromotionListPromotionStatusFirst string
 
 // List of local_promotion_list_v3.0_data_promotion_list_promotion_status_first

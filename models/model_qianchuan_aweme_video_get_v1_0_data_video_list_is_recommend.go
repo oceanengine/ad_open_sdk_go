@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeVideoGetV10DataVideoListIsRecommend
+// QianchuanAwemeVideoGetV10DataVideoListIsRecommend 是否推荐 0 不推荐 1 推荐
 type QianchuanAwemeVideoGetV10DataVideoListIsRecommend int64
 
 // List of qianchuan_aweme_video_get_v1.0_data_video_list_is_recommend

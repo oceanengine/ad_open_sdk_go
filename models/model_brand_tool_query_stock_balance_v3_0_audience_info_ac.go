@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandToolQueryStockBalanceV30AudienceInfoAc
+// BrandToolQueryStockBalanceV30AudienceInfoAc 网络
 type BrandToolQueryStockBalanceV30AudienceInfoAc string
 
 // List of brand_tool_query_stock_balance_v3.0_audience_info_ac

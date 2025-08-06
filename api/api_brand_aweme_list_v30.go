@@ -53,6 +53,8 @@ func (r *ApiOpenApiV30BrandAwemeListGetRequest) WithLog(enable bool) *ApiOpenApi
 /*
 OpenApiV30BrandAwemeListGet Method for OpenApiV30BrandAwemeListGet
 
+AD品牌查询抖音号列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandAwemeListGetRequest
 */

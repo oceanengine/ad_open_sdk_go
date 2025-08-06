@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandOrderUpdateV30FrequencyInfoFrequencyStatus
+// BrandOrderUpdateV30FrequencyInfoFrequencyStatus 是否启用频控
 type BrandOrderUpdateV30FrequencyInfoFrequencyStatus string
 
 // List of brand_order_update_v3.0_frequency_info_frequency_status

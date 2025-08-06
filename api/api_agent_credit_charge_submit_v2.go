@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AgentCreditChargeSubmitPostRequest) WithLog(enable bool) *Ap
 /*
 OpenApi2AgentCreditChargeSubmitPost Method for OpenApi2AgentCreditChargeSubmitPost
 
+充值接口分为三步, 包含校验能否充值接口、提交授信充值接口、查询充值结果接口，本接口为第二步；提交之前需要校验能否充值，提交之后，通过轮训查询充值结果
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentCreditChargeSubmitPostRequest
 */

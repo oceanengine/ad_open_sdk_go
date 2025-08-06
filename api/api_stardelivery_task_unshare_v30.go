@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30StardeliveryTaskUnsharePostRequest) WithLog(enable bool) *
 /*
 OpenApiV30StardeliveryTaskUnsharePost Method for OpenApiV30StardeliveryTaskUnsharePost
 
+取消广告主adv发起的星广联投任务共享
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30StardeliveryTaskUnsharePostRequest
 */

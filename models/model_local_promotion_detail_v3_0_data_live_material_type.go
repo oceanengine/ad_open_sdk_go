@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionDetailV30DataLiveMaterialType
+// LocalPromotionDetailV30DataLiveMaterialType 直播素材类型
 type LocalPromotionDetailV30DataLiveMaterialType string
 
 // List of local_promotion_detail_v3.0_data_live_material_type

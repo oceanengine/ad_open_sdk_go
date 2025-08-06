@@ -60,6 +60,8 @@ func (r *ApiOpenApi2ClueWechatInstanceListGetRequest) WithLog(enable bool) *ApiO
 /*
 OpenApi2ClueWechatInstanceListGet Method for OpenApi2ClueWechatInstanceListGet
 
+支持按页查询广告主账户下的微信号码包
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ClueWechatInstanceListGetRequest
 */

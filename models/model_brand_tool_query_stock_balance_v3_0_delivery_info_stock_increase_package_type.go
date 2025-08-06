@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandToolQueryStockBalanceV30DeliveryInfoStockIncreasePackageType
+// BrandToolQueryStockBalanceV30DeliveryInfoStockIncreasePackageType 库存加量包
 type BrandToolQueryStockBalanceV30DeliveryInfoStockIncreasePackageType string
 
 // List of brand_tool_query_stock_balance_v3.0_delivery_info_stock_increase_package_type

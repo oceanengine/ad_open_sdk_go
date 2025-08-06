@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30NativeAnchorCreatePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30NativeAnchorCreatePost Method for OpenApiV30NativeAnchorCreatePost
 
+锚点创建接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30NativeAnchorCreatePostRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsAwemeAuthCancelPostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2ToolsAwemeAuthCancelPost Method for OpenApi2ToolsAwemeAuthCancelPost
 
+抖音授权关系解绑
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAwemeAuthCancelPostRequest
 */

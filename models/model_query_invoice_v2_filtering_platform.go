@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QueryInvoiceV2FilteringPlatform
+// QueryInvoiceV2FilteringPlatform 开票平台
 type QueryInvoiceV2FilteringPlatform string
 
 // List of query_invoice_v2_filtering_platform

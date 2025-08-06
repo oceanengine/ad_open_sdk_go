@@ -123,6 +123,8 @@ func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest) WithLo
 /*
 OpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGet Method for OpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGet
 
+https://bytedance.feishu.cn/wiki/wikcnq0rDUKyzKVSPWUAt6EJD4b
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest
 */

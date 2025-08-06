@@ -74,6 +74,8 @@ func (r *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest) WithLog(enable boo
 /*
 OpenApiV30SharedWalletWalletBalanceGetGet Method for OpenApiV30SharedWalletWalletBalanceGetGet
 
+资金共享-批量查询钱包余额
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest
 */

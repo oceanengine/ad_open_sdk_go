@@ -58,6 +58,8 @@ func (r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) WithLog(enable bool) *A
 /*
 OpenApiV30LocalProductGetByPoiidsGet Method for OpenApiV30LocalProductGetByPoiidsGet
 
+根据门店ID拉取商品
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30LocalProductGetByPoiidsGetRequest
 */

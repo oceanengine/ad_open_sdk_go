@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30FilePlayableCreatePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApiV30FilePlayableCreatePost Method for OpenApiV30FilePlayableCreatePost
 
+创建试玩、直玩素材
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30FilePlayableCreatePostRequest
 */

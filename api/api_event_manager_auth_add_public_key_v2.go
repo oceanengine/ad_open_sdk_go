@@ -52,6 +52,8 @@ func (r *ApiOpenApi2EventManagerAuthAddPublicKeyPostRequest) WithLog(enable bool
 /*
 OpenApi2EventManagerAuthAddPublicKeyPost Method for OpenApi2EventManagerAuthAddPublicKeyPost
 
+# API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EventManagerAuthAddPublicKeyPostRequest
 */

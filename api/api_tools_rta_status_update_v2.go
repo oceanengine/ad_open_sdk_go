@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsRtaStatusUpdatePostRequest) WithLog(enable bool) *ApiOp
 /*
 OpenApi2ToolsRtaStatusUpdatePost Method for OpenApi2ToolsRtaStatusUpdatePost
 
+修改RTA策略状态
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsRtaStatusUpdatePostRequest
 */

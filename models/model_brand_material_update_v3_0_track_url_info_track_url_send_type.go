@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// BrandMaterialUpdateV30TrackUrlInfoTrackUrlSendType
+// BrandMaterialUpdateV30TrackUrlInfoTrackUrlSendType 数据发送方式
 type BrandMaterialUpdateV30TrackUrlInfoTrackUrlSendType string
 
 // List of brand_material_update_v3.0_track_url_info_track_url_send_type

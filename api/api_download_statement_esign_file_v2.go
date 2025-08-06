@@ -60,6 +60,8 @@ func (r *ApiOpenApi2DownloadStatementEsignFileGetRequest) WithLog(enable bool) *
 /*
 OpenApi2DownloadStatementEsignFileGet Method for OpenApi2DownloadStatementEsignFileGet
 
+查询结算单双章附件下载链接
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DownloadStatementEsignFileGetRequest
 */

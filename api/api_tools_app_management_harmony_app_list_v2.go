@@ -78,6 +78,8 @@ func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) WithLog(enable b
 /*
 OpenApi2ToolsAppManagementHarmonyAppListGet Method for OpenApi2ToolsAppManagementHarmonyAppListGet
 
+查询鸿蒙应用列表
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest
 */

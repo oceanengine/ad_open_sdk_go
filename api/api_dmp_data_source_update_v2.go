@@ -52,6 +52,8 @@ func (r *ApiOpenApi2DmpDataSourceUpdatePostRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApi2DmpDataSourceUpdatePost Method for OpenApi2DmpDataSourceUpdatePost
 
+API Description
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2DmpDataSourceUpdatePostRequest
 */

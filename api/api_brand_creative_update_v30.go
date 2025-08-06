@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30BrandCreativeUpdatePostRequest) WithLog(enable bool) *ApiO
 /*
 OpenApiV30BrandCreativeUpdatePost Method for OpenApiV30BrandCreativeUpdatePost
 
+创意编辑
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30BrandCreativeUpdatePostRequest
 */

@@ -52,6 +52,8 @@ func (r *ApiOpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest) WithLog(
 /*
 OpenApi2AgentPrepayChargeGenerateRemittanceCodePost Method for OpenApi2AgentPrepayChargeGenerateRemittanceCodePost
 
+代理商进行预付充值生成汇款码记录，并透传汇款码信息给用户
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest
 */

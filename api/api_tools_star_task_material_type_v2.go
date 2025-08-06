@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsStarTaskMaterialTypeGetRequest) WithLog(enable bool) *A
 /*
 OpenApi2ToolsStarTaskMaterialTypeGet Method for OpenApi2ToolsStarTaskMaterialTypeGet
 
+查询星广任务可选素材类型
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsStarTaskMaterialTypeGetRequest
 */

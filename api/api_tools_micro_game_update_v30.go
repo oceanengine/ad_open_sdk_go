@@ -52,6 +52,8 @@ func (r *ApiOpenApiV30ToolsMicroGameUpdatePostRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30ToolsMicroGameUpdatePost Method for OpenApiV30ToolsMicroGameUpdatePost
 
+更新字节小游戏
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsMicroGameUpdatePostRequest
 */

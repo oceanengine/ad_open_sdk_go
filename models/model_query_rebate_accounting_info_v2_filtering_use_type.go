@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QueryRebateAccountingInfoV2FilteringUseType
+// QueryRebateAccountingInfoV2FilteringUseType 使用类型 (1:提现 2:抵扣 3:充值)
 type QueryRebateAccountingInfoV2FilteringUseType string
 
 // List of query_rebate_accounting_info_v2_filtering_use_type

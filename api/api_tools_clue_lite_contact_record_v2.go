@@ -52,6 +52,8 @@ func (r *ApiOpenApi2ToolsClueLiteContactRecordPostRequest) WithLog(enable bool) 
 /*
 OpenApi2ToolsClueLiteContactRecordPost Method for OpenApi2ToolsClueLiteContactRecordPost
 
+轻量化api，获取录音文件接口
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsClueLiteContactRecordPostRequest
 */

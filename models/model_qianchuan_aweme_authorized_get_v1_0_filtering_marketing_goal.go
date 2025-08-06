@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanAwemeAuthorizedGetV10FilteringMarketingGoal
+// QianchuanAwemeAuthorizedGetV10FilteringMarketingGoal 按照营销目标过滤，允许值： - `ALL` 全部 - `VIDEO_PROM_GOODS` 商品全域 - `LIVE_PROM_GOODS` 直播全域
 type QianchuanAwemeAuthorizedGetV10FilteringMarketingGoal string
 
 // List of qianchuan_aweme_authorized_get_v1.0_filtering_marketing_goal

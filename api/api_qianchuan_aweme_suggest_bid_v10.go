@@ -65,6 +65,8 @@ func (r *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest) WithLog(enable bool) *
 /*
 OpenApiV10QianchuanAwemeSuggestBidGet Method for OpenApiV10QianchuanAwemeSuggestBidGet
 
+小店获取短视频建议出价
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest
 */

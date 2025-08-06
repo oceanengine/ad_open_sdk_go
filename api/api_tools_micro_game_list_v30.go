@@ -70,6 +70,8 @@ func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) WithLog(enable bool) *ApiOpe
 /*
 OpenApiV30ToolsMicroGameListGet Method for OpenApiV30ToolsMicroGameListGet
 
+mapi场景获取字节小游戏信息
+
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ToolsMicroGameListGetRequest
 */

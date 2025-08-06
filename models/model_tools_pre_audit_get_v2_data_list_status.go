@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// ToolsPreAuditGetV2DataListStatus
+// ToolsPreAuditGetV2DataListStatus 审核状态
 type ToolsPreAuditGetV2DataListStatus string
 
 // List of tools_pre_audit_get_v2_data_list_status
