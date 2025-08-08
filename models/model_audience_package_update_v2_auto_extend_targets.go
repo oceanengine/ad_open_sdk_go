@@ -16,11 +16,11 @@ type AudiencePackageUpdateV2AutoExtendTargets string
 // List of audience_package_update_v2_auto_extend_targets
 const (
 	REGION_AudiencePackageUpdateV2AutoExtendTargets          AudiencePackageUpdateV2AutoExtendTargets = "REGION"
-	INTEREST_TAG_AudiencePackageUpdateV2AutoExtendTargets    AudiencePackageUpdateV2AutoExtendTargets = "INTEREST_TAG"
-	AGE_AudiencePackageUpdateV2AutoExtendTargets             AudiencePackageUpdateV2AutoExtendTargets = "AGE"
 	AD_TAG_AudiencePackageUpdateV2AutoExtendTargets          AudiencePackageUpdateV2AutoExtendTargets = "AD_TAG"
-	GENDER_AudiencePackageUpdateV2AutoExtendTargets          AudiencePackageUpdateV2AutoExtendTargets = "GENDER"
 	CUSTOM_AUDIENCE_AudiencePackageUpdateV2AutoExtendTargets AudiencePackageUpdateV2AutoExtendTargets = "CUSTOM_AUDIENCE"
+	INTEREST_TAG_AudiencePackageUpdateV2AutoExtendTargets    AudiencePackageUpdateV2AutoExtendTargets = "INTEREST_TAG"
+	GENDER_AudiencePackageUpdateV2AutoExtendTargets          AudiencePackageUpdateV2AutoExtendTargets = "GENDER"
+	AGE_AudiencePackageUpdateV2AutoExtendTargets             AudiencePackageUpdateV2AutoExtendTargets = "AGE"
 )
 
 // Ptr returns reference to audience_package_update_v2_auto_extend_targets value

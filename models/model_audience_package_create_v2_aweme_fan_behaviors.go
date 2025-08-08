@@ -15,18 +15,18 @@ type AudiencePackageCreateV2AwemeFanBehaviors string
 
 // List of audience_package_create_v2_aweme_fan_behaviors
 const (
-	LIVE_EXCEPTIONAL_AudiencePackageCreateV2AwemeFanBehaviors     AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_EXCEPTIONAL"
-	GOODS_CARTS_CLICK_AudiencePackageCreateV2AwemeFanBehaviors    AudiencePackageCreateV2AwemeFanBehaviors = "GOODS_CARTS_CLICK"
-	GOODS_CARTS_ORDER_AudiencePackageCreateV2AwemeFanBehaviors    AudiencePackageCreateV2AwemeFanBehaviors = "GOODS_CARTS_ORDER"
-	COMMENTED_USER_AudiencePackageCreateV2AwemeFanBehaviors       AudiencePackageCreateV2AwemeFanBehaviors = "COMMENTED_USER"
-	LIVE_WATCH_AudiencePackageCreateV2AwemeFanBehaviors           AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_WATCH"
-	LIVE_GOODS_CLICK_AudiencePackageCreateV2AwemeFanBehaviors     AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_GOODS_CLICK"
-	LIVE_GOODS_ORDER_AudiencePackageCreateV2AwemeFanBehaviors     AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_GOODS_ORDER"
-	LIKED_USER_AudiencePackageCreateV2AwemeFanBehaviors           AudiencePackageCreateV2AwemeFanBehaviors = "LIKED_USER"
-	LIVE_EFFECTIVE_WATCH_AudiencePackageCreateV2AwemeFanBehaviors AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_EFFECTIVE_WATCH"
-	SHARED_USER_AudiencePackageCreateV2AwemeFanBehaviors          AudiencePackageCreateV2AwemeFanBehaviors = "SHARED_USER"
-	FOLLOWED_USER_AudiencePackageCreateV2AwemeFanBehaviors        AudiencePackageCreateV2AwemeFanBehaviors = "FOLLOWED_USER"
 	LIVE_COMMENT_AudiencePackageCreateV2AwemeFanBehaviors         AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_COMMENT"
+	GOODS_CARTS_ORDER_AudiencePackageCreateV2AwemeFanBehaviors    AudiencePackageCreateV2AwemeFanBehaviors = "GOODS_CARTS_ORDER"
+	GOODS_CARTS_CLICK_AudiencePackageCreateV2AwemeFanBehaviors    AudiencePackageCreateV2AwemeFanBehaviors = "GOODS_CARTS_CLICK"
+	LIVE_WATCH_AudiencePackageCreateV2AwemeFanBehaviors           AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_WATCH"
+	LIVE_EFFECTIVE_WATCH_AudiencePackageCreateV2AwemeFanBehaviors AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_EFFECTIVE_WATCH"
+	COMMENTED_USER_AudiencePackageCreateV2AwemeFanBehaviors       AudiencePackageCreateV2AwemeFanBehaviors = "COMMENTED_USER"
+	SHARED_USER_AudiencePackageCreateV2AwemeFanBehaviors          AudiencePackageCreateV2AwemeFanBehaviors = "SHARED_USER"
+	LIVE_GOODS_ORDER_AudiencePackageCreateV2AwemeFanBehaviors     AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_GOODS_ORDER"
+	LIVE_EXCEPTIONAL_AudiencePackageCreateV2AwemeFanBehaviors     AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_EXCEPTIONAL"
+	LIVE_GOODS_CLICK_AudiencePackageCreateV2AwemeFanBehaviors     AudiencePackageCreateV2AwemeFanBehaviors = "LIVE_GOODS_CLICK"
+	LIKED_USER_AudiencePackageCreateV2AwemeFanBehaviors           AudiencePackageCreateV2AwemeFanBehaviors = "LIKED_USER"
+	FOLLOWED_USER_AudiencePackageCreateV2AwemeFanBehaviors        AudiencePackageCreateV2AwemeFanBehaviors = "FOLLOWED_USER"
 )
 
 // Ptr returns reference to audience_package_create_v2_aweme_fan_behaviors value

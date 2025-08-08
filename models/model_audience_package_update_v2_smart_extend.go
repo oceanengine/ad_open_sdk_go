@@ -16,8 +16,8 @@ type AudiencePackageUpdateV2SmartExtend string
 // List of audience_package_update_v2_smart_extend
 const (
 	OFF_AudiencePackageUpdateV2SmartExtend  AudiencePackageUpdateV2SmartExtend = "OFF"
-	ON_AudiencePackageUpdateV2SmartExtend   AudiencePackageUpdateV2SmartExtend = "ON"
 	NONE_AudiencePackageUpdateV2SmartExtend AudiencePackageUpdateV2SmartExtend = "NONE"
+	ON_AudiencePackageUpdateV2SmartExtend   AudiencePackageUpdateV2SmartExtend = "ON"
 )
 
 // Ptr returns reference to audience_package_update_v2_smart_extend value

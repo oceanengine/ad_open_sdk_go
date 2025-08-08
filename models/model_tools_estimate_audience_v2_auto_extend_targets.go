@@ -16,11 +16,11 @@ type ToolsEstimateAudienceV2AutoExtendTargets string
 // List of tools_estimate_audience_v2_auto_extend_targets
 const (
 	REGION_ToolsEstimateAudienceV2AutoExtendTargets          ToolsEstimateAudienceV2AutoExtendTargets = "REGION"
-	INTEREST_TAG_ToolsEstimateAudienceV2AutoExtendTargets    ToolsEstimateAudienceV2AutoExtendTargets = "INTEREST_TAG"
-	AGE_ToolsEstimateAudienceV2AutoExtendTargets             ToolsEstimateAudienceV2AutoExtendTargets = "AGE"
 	AD_TAG_ToolsEstimateAudienceV2AutoExtendTargets          ToolsEstimateAudienceV2AutoExtendTargets = "AD_TAG"
-	GENDER_ToolsEstimateAudienceV2AutoExtendTargets          ToolsEstimateAudienceV2AutoExtendTargets = "GENDER"
 	CUSTOM_AUDIENCE_ToolsEstimateAudienceV2AutoExtendTargets ToolsEstimateAudienceV2AutoExtendTargets = "CUSTOM_AUDIENCE"
+	INTEREST_TAG_ToolsEstimateAudienceV2AutoExtendTargets    ToolsEstimateAudienceV2AutoExtendTargets = "INTEREST_TAG"
+	GENDER_ToolsEstimateAudienceV2AutoExtendTargets          ToolsEstimateAudienceV2AutoExtendTargets = "GENDER"
+	AGE_ToolsEstimateAudienceV2AutoExtendTargets             ToolsEstimateAudienceV2AutoExtendTargets = "AGE"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_auto_extend_targets value

@@ -15,16 +15,16 @@ type ReportAdGetV2FilteringLandingTypes string
 
 // List of report_ad_get_v2_filtering_landing_types
 const (
-	APP_ReportAdGetV2FilteringLandingTypes       ReportAdGetV2FilteringLandingTypes = "APP"
+	STORE_ReportAdGetV2FilteringLandingTypes     ReportAdGetV2FilteringLandingTypes = "STORE"
 	QUICK_APP_ReportAdGetV2FilteringLandingTypes ReportAdGetV2FilteringLandingTypes = "QUICK_APP"
 	LINK_ReportAdGetV2FilteringLandingTypes      ReportAdGetV2FilteringLandingTypes = "LINK"
-	DPA_ReportAdGetV2FilteringLandingTypes       ReportAdGetV2FilteringLandingTypes = "DPA"
-	ARTICLE_ReportAdGetV2FilteringLandingTypes   ReportAdGetV2FilteringLandingTypes = "ARTICLE"
 	SHOP_ReportAdGetV2FilteringLandingTypes      ReportAdGetV2FilteringLandingTypes = "SHOP"
-	LIVE_ReportAdGetV2FilteringLandingTypes      ReportAdGetV2FilteringLandingTypes = "LIVE"
+	APP_ReportAdGetV2FilteringLandingTypes       ReportAdGetV2FilteringLandingTypes = "APP"
 	AWEME_ReportAdGetV2FilteringLandingTypes     ReportAdGetV2FilteringLandingTypes = "AWEME"
+	DPA_ReportAdGetV2FilteringLandingTypes       ReportAdGetV2FilteringLandingTypes = "DPA"
+	LIVE_ReportAdGetV2FilteringLandingTypes      ReportAdGetV2FilteringLandingTypes = "LIVE"
 	GOODS_ReportAdGetV2FilteringLandingTypes     ReportAdGetV2FilteringLandingTypes = "GOODS"
-	STORE_ReportAdGetV2FilteringLandingTypes     ReportAdGetV2FilteringLandingTypes = "STORE"
+	ARTICLE_ReportAdGetV2FilteringLandingTypes   ReportAdGetV2FilteringLandingTypes = "ARTICLE"
 )
 
 // Ptr returns reference to report_ad_get_v2_filtering_landing_types value

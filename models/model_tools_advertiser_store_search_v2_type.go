@@ -15,8 +15,8 @@ type ToolsAdvertiserStoreSearchV2Type string
 
 // List of tools_advertiser_store_search_v2_type
 const (
-	STORE_DOUYIN_ToolsAdvertiserStoreSearchV2Type      ToolsAdvertiserStoreSearchV2Type = "STORE_DOUYIN"
 	STORE_LANDING_ToolsAdvertiserStoreSearchV2Type     ToolsAdvertiserStoreSearchV2Type = "STORE_LANDING"
+	STORE_DOUYIN_ToolsAdvertiserStoreSearchV2Type      ToolsAdvertiserStoreSearchV2Type = "STORE_DOUYIN"
 	STORE_THIRT_PARTY_ToolsAdvertiserStoreSearchV2Type ToolsAdvertiserStoreSearchV2Type = "STORE_THIRT_PARTY"
 	STORE_NORMAL_ToolsAdvertiserStoreSearchV2Type      ToolsAdvertiserStoreSearchV2Type = "STORE_NORMAL"
 )

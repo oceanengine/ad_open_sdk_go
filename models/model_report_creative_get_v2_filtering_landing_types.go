@@ -15,16 +15,16 @@ type ReportCreativeGetV2FilteringLandingTypes string
 
 // List of report_creative_get_v2_filtering_landing_types
 const (
-	APP_ReportCreativeGetV2FilteringLandingTypes       ReportCreativeGetV2FilteringLandingTypes = "APP"
+	STORE_ReportCreativeGetV2FilteringLandingTypes     ReportCreativeGetV2FilteringLandingTypes = "STORE"
 	QUICK_APP_ReportCreativeGetV2FilteringLandingTypes ReportCreativeGetV2FilteringLandingTypes = "QUICK_APP"
 	LINK_ReportCreativeGetV2FilteringLandingTypes      ReportCreativeGetV2FilteringLandingTypes = "LINK"
-	DPA_ReportCreativeGetV2FilteringLandingTypes       ReportCreativeGetV2FilteringLandingTypes = "DPA"
-	ARTICLE_ReportCreativeGetV2FilteringLandingTypes   ReportCreativeGetV2FilteringLandingTypes = "ARTICLE"
 	SHOP_ReportCreativeGetV2FilteringLandingTypes      ReportCreativeGetV2FilteringLandingTypes = "SHOP"
-	LIVE_ReportCreativeGetV2FilteringLandingTypes      ReportCreativeGetV2FilteringLandingTypes = "LIVE"
+	APP_ReportCreativeGetV2FilteringLandingTypes       ReportCreativeGetV2FilteringLandingTypes = "APP"
 	AWEME_ReportCreativeGetV2FilteringLandingTypes     ReportCreativeGetV2FilteringLandingTypes = "AWEME"
+	DPA_ReportCreativeGetV2FilteringLandingTypes       ReportCreativeGetV2FilteringLandingTypes = "DPA"
+	LIVE_ReportCreativeGetV2FilteringLandingTypes      ReportCreativeGetV2FilteringLandingTypes = "LIVE"
 	GOODS_ReportCreativeGetV2FilteringLandingTypes     ReportCreativeGetV2FilteringLandingTypes = "GOODS"
-	STORE_ReportCreativeGetV2FilteringLandingTypes     ReportCreativeGetV2FilteringLandingTypes = "STORE"
+	ARTICLE_ReportCreativeGetV2FilteringLandingTypes   ReportCreativeGetV2FilteringLandingTypes = "ARTICLE"
 )
 
 // Ptr returns reference to report_creative_get_v2_filtering_landing_types value

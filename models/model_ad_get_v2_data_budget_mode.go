@@ -15,9 +15,9 @@ type AdGetV2DataBudgetMode string
 
 // List of ad_get_v2_data_budget_mode
 const (
-	BUDGET_MODE_INFINITE_AdGetV2DataBudgetMode AdGetV2DataBudgetMode = "BUDGET_MODE_INFINITE"
-	BUDGET_MODE_TOTAL_AdGetV2DataBudgetMode    AdGetV2DataBudgetMode = "BUDGET_MODE_TOTAL"
 	BUDGET_MODE_DAY_AdGetV2DataBudgetMode      AdGetV2DataBudgetMode = "BUDGET_MODE_DAY"
+	BUDGET_MODE_TOTAL_AdGetV2DataBudgetMode    AdGetV2DataBudgetMode = "BUDGET_MODE_TOTAL"
+	BUDGET_MODE_INFINITE_AdGetV2DataBudgetMode AdGetV2DataBudgetMode = "BUDGET_MODE_INFINITE"
 )
 
 // Ptr returns reference to ad_get_v2_data_budget_mode value

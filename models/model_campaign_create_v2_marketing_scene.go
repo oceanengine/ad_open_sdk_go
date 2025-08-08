@@ -16,15 +16,15 @@ type CampaignCreateV2MarketingScene string
 // List of campaign_create_v2_marketing_scene
 const (
 	VIDEO_INFO_CampaignCreateV2MarketingScene        CampaignCreateV2MarketingScene = "VIDEO_INFO"
-	GAME_SUBSCRIBE_CampaignCreateV2MarketingScene    CampaignCreateV2MarketingScene = "GAME_SUBSCRIBE"
-	CAR_CampaignCreateV2MarketingScene               CampaignCreateV2MarketingScene = "CAR"
-	GAME_PROMOTION_CampaignCreateV2MarketingScene    CampaignCreateV2MarketingScene = "GAME_PROMOTION"
-	NOVEL_CampaignCreateV2MarketingScene             CampaignCreateV2MarketingScene = "NOVEL"
-	ECOMMERCE_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "ECOMMERCE"
-	EDUCATION_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "EDUCATION"
 	MERCHANTS_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "MERCHANTS"
+	EDUCATION_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "EDUCATION"
+	ECOMMERCE_CampaignCreateV2MarketingScene         CampaignCreateV2MarketingScene = "ECOMMERCE"
+	CAR_CampaignCreateV2MarketingScene               CampaignCreateV2MarketingScene = "CAR"
 	PROMOTION_PURPOSE_CampaignCreateV2MarketingScene CampaignCreateV2MarketingScene = "PROMOTION_PURPOSE"
+	GAME_SUBSCRIBE_CampaignCreateV2MarketingScene    CampaignCreateV2MarketingScene = "GAME_SUBSCRIBE"
 	SOCIAL_CampaignCreateV2MarketingScene            CampaignCreateV2MarketingScene = "SOCIAL"
+	NOVEL_CampaignCreateV2MarketingScene             CampaignCreateV2MarketingScene = "NOVEL"
+	GAME_PROMOTION_CampaignCreateV2MarketingScene    CampaignCreateV2MarketingScene = "GAME_PROMOTION"
 )
 
 // Ptr returns reference to campaign_create_v2_marketing_scene value
