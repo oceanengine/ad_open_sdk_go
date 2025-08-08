@@ -15,12 +15,12 @@ type ReportCampaignGetV2DataListAc string
 
 // List of report_campaign_get_v2_data_list_ac
 const (
-	Enum_4_G_ReportCampaignGetV2DataListAc ReportCampaignGetV2DataListAc = "4G"
-	Enum_2_G_ReportCampaignGetV2DataListAc ReportCampaignGetV2DataListAc = "2G"
-	Enum_3_G_ReportCampaignGetV2DataListAc ReportCampaignGetV2DataListAc = "3G"
-	WIFI_ReportCampaignGetV2DataListAc     ReportCampaignGetV2DataListAc = "WIFI"
-	Enum_5_G_ReportCampaignGetV2DataListAc ReportCampaignGetV2DataListAc = "5G"
 	UNKNOWN_ReportCampaignGetV2DataListAc  ReportCampaignGetV2DataListAc = "unknown"
+	WIFI_ReportCampaignGetV2DataListAc     ReportCampaignGetV2DataListAc = "WIFI"
+	Enum_2_G_ReportCampaignGetV2DataListAc ReportCampaignGetV2DataListAc = "2G"
+	Enum_5_G_ReportCampaignGetV2DataListAc ReportCampaignGetV2DataListAc = "5G"
+	Enum_3_G_ReportCampaignGetV2DataListAc ReportCampaignGetV2DataListAc = "3G"
+	Enum_4_G_ReportCampaignGetV2DataListAc ReportCampaignGetV2DataListAc = "4G"
 )
 
 // Ptr returns reference to report_campaign_get_v2_data_list_ac value

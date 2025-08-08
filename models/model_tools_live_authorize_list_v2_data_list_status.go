@@ -15,10 +15,10 @@ type ToolsLiveAuthorizeListV2DataListStatus string
 
 // List of tools_live_authorize_list_v2_data_list_status
 const (
+	APPLYING_ToolsLiveAuthorizeListV2DataListStatus          ToolsLiveAuthorizeListV2DataListStatus = "APPLYING"
 	APPLY_OVERDUE_ToolsLiveAuthorizeListV2DataListStatus     ToolsLiveAuthorizeListV2DataListStatus = "APPLY_OVERDUE"
 	AUTHORIZING_ToolsLiveAuthorizeListV2DataListStatus       ToolsLiveAuthorizeListV2DataListStatus = "AUTHORIZING"
 	AUTHORIZE_OVERDUE_ToolsLiveAuthorizeListV2DataListStatus ToolsLiveAuthorizeListV2DataListStatus = "AUTHORIZE_OVERDUE"
-	APPLYING_ToolsLiveAuthorizeListV2DataListStatus          ToolsLiveAuthorizeListV2DataListStatus = "APPLYING"
 )
 
 // Ptr returns reference to tools_live_authorize_list_v2_data_list_status value
