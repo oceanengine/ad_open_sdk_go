@@ -563,6 +563,8 @@ Class | Method | HTTP request
 *LocalFileVideoGetV30Api* | **OpenApiV30LocalFileVideoGetGet** | **Get** /open_api/v3.0/local/file/video/get/
 *LocalFileVideoUploadTaskListV30Api* | **OpenApiV30LocalFileVideoUploadTaskListGet** | **Get** /open_api/v3.0/local/file/video/upload_task/list/
 *LocalFileVideoUploadV30Api* | **OpenApiV30LocalFileVideoUploadPost** | **Post** /open_api/v3.0/local/file/video/upload/
+*LocalImQueryMsgV30Api* | **OpenApiV30LocalImQueryMsgGet** | **Get** /open_api/v3.0/local/im/query/msg/
+*LocalImSendMsgV30Api* | **OpenApiV30LocalImSendMsgPost** | **Post** /open_api/v3.0/local/im/send/msg/
 *LocalLifeAdvertiserCreateV30Api* | **OpenApiV30LocalLifeAdvertiserCreatePost** | **Post** /open_api/v3.0/local/life/advertiser/create/
 *LocalLifeAdvertiserListV30Api* | **OpenApiV30LocalLifeAdvertiserListGet** | **Get** /open_api/v3.0/local/life/advertiser/list/
 *LocalMultiPoiIdPoiIdsGetV30Api* | **OpenApiV30LocalMultiPoiIdPoiIdsGetGet** | **Get** /open_api/v3.0/local/multi_poi_id/poi_ids/get/

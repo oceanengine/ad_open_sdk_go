@@ -19,5 +19,7 @@ type SubscribeAccountsRemoveV30Request struct {
 	//
 	CoreUserId int64 `json:"core_user_id"`
 	//
+	SubscribePackageType *int64 `json:"subscribe_package_type,omitempty"`
+	//
 	SubscribeTaskId int64 `json:"subscribe_task_id"`
 }

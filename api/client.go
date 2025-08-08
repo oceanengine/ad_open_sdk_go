@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.64
+// APIClient manages communication with the Oceanengine Open Api API v1.1.65
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -764,6 +764,10 @@ type APIClient struct {
 	LocalFileVideoUploadTaskListV30Api *LocalFileVideoUploadTaskListV30ApiService
 
 	LocalFileVideoUploadV30Api *LocalFileVideoUploadV30ApiService
+
+	LocalImQueryMsgV30Api *LocalImQueryMsgV30ApiService
+
+	LocalImSendMsgV30Api *LocalImSendMsgV30ApiService
 
 	LocalLifeAdvertiserCreateV30Api *LocalLifeAdvertiserCreateV30ApiService
 
@@ -2473,6 +2477,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.LocalFileVideoGetV30Api = (*LocalFileVideoGetV30ApiService)(&c.common)
 	c.LocalFileVideoUploadTaskListV30Api = (*LocalFileVideoUploadTaskListV30ApiService)(&c.common)
 	c.LocalFileVideoUploadV30Api = (*LocalFileVideoUploadV30ApiService)(&c.common)
+	c.LocalImQueryMsgV30Api = (*LocalImQueryMsgV30ApiService)(&c.common)
+	c.LocalImSendMsgV30Api = (*LocalImSendMsgV30ApiService)(&c.common)
 	c.LocalLifeAdvertiserCreateV30Api = (*LocalLifeAdvertiserCreateV30ApiService)(&c.common)
 	c.LocalLifeAdvertiserListV30Api = (*LocalLifeAdvertiserListV30ApiService)(&c.common)
 	c.LocalMultiPoiIdPoiIdsGetV30Api = (*LocalMultiPoiIdPoiIdsGetV30ApiService)(&c.common)

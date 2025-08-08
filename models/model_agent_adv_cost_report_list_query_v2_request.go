@@ -18,6 +18,8 @@ type AgentAdvCostReportListQueryV2Request struct {
 	// 结束时间。格式：YYYY-MM-DD。闭区间,可选日期范围是今天以前；开始时间与结束时间的跨度不能超过365天。
 	EndDate   string                                         `json:"end_date"`
 	Filtering *AgentAdvCostReportListQueryV2RequestFiltering `json:"filtering,omitempty"`
+	// 分页游标，使用该字段时，不用传入排序字段，会自动按该字段升序排列，需要传入size，根据size返回数据。第一次传入空字符串，后续传入上一次返回的uniqueKey
+	LastUniqueKey *string `json:"last_unique_key,omitempty"`
 	// 排序字段
 	OrderField *string                                 `json:"order_field,omitempty"`
 	OrderType  *AgentAdvCostReportListQueryV2OrderType `json:"order_type,omitempty"`

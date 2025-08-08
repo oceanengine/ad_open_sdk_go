@@ -1,5 +1,5 @@
 /*
-API version: 1.1.64
+API version: 1.1.65
 */
 package ad_open_sdk_go
 
@@ -1453,6 +1453,14 @@ func (c *Client) LocalFileVideoUploadTaskListV30Api() *api.LocalFileVideoUploadT
 
 func (c *Client) LocalFileVideoUploadV30Api() *api.LocalFileVideoUploadV30ApiService {
 	return c.ApiClient.LocalFileVideoUploadV30Api
+}
+
+func (c *Client) LocalImQueryMsgV30Api() *api.LocalImQueryMsgV30ApiService {
+	return c.ApiClient.LocalImQueryMsgV30Api
+}
+
+func (c *Client) LocalImSendMsgV30Api() *api.LocalImSendMsgV30ApiService {
+	return c.ApiClient.LocalImSendMsgV30Api
 }
 
 func (c *Client) LocalLifeAdvertiserCreateV30Api() *api.LocalLifeAdvertiserCreateV30ApiService {

@@ -118,4 +118,6 @@ type AgentAdvCostReportListQueryV2ResponseDataListInner struct {
 	// 共享预付消耗(单位：千分之一分)
 	SubSharedWalletPrepayCost *int64                                             `json:"sub_shared_wallet_prepay_cost,omitempty"`
 	SystemOrigin              *AgentAdvCostReportListQueryV2DataListSystemOrigin `json:"system_origin,omitempty"`
+	// 唯一键，用于游标方式分页查询
+	UniqueKey *string `json:"unique_key,omitempty"`
 }

@@ -36,6 +36,7 @@ const (
 	OFFLINE_AUDIT_QianchuanAdGetV10DataListStatus                 QianchuanAdGetV10DataListStatus = "OFFLINE_AUDIT"
 	OFFLINE_BALANCE_QianchuanAdGetV10DataListStatus               QianchuanAdGetV10DataListStatus = "OFFLINE_BALANCE"
 	OFFLINE_BUDGET_QianchuanAdGetV10DataListStatus                QianchuanAdGetV10DataListStatus = "OFFLINE_BUDGET"
+	OFFLINE_SHARED_WALLET_BALANCE_QianchuanAdGetV10DataListStatus QianchuanAdGetV10DataListStatus = "OFFLINE_SHARED_WALLET_BALANCE"
 	PRE_OFFLINE_BUDGET_QianchuanAdGetV10DataListStatus            QianchuanAdGetV10DataListStatus = "PRE_OFFLINE_BUDGET"
 	PRE_ONLINE_QianchuanAdGetV10DataListStatus                    QianchuanAdGetV10DataListStatus = "PRE_ONLINE"
 	QUOTA_DISABLE_QianchuanAdGetV10DataListStatus                 QianchuanAdGetV10DataListStatus = "QUOTA_DISABLE"

@@ -23,17 +23,18 @@ import (
 type SubscribeAccountsListV30ApiService service
 
 type ApiOpenApiV30SubscribeAccountsListGetRequest struct {
-	ctx             context.Context
-	ApiService      *SubscribeAccountsListV30ApiService
-	aPPAccessToken  *string
-	appId           *int64
-	subscribeTaskId *int64
-	events          *[]string
-	coreUserId      *int64
-	advertiserIds   *[]int64
-	statuses        *[]*SubscribeAccountsListV30Statuses
-	cursor          *int64
-	count           *int64
+	ctx                  context.Context
+	ApiService           *SubscribeAccountsListV30ApiService
+	aPPAccessToken       *string
+	appId                *int64
+	subscribeTaskId      *int64
+	events               *[]string
+	coreUserId           *int64
+	advertiserIds        *[]int64
+	statuses             *[]*SubscribeAccountsListV30Statuses
+	cursor               *int64
+	count                *int64
+	subscribePackageType *int64
 }
 
 func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) APPAccessToken(aPPAccessToken string) *ApiOpenApiV30SubscribeAccountsListGetRequest {
@@ -78,6 +79,11 @@ func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) Cursor(cursor int64) *Api
 
 func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) Count(count int64) *ApiOpenApiV30SubscribeAccountsListGetRequest {
 	r.count = &count
+	return r
+}
+
+func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) SubscribePackageType(subscribePackageType int64) *ApiOpenApiV30SubscribeAccountsListGetRequest {
+	r.subscribePackageType = &subscribePackageType
 	return r
 }
 
@@ -162,6 +168,9 @@ func (a *SubscribeAccountsListV30ApiService) getExecute(r *ApiOpenApiV30Subscrib
 	}
 	if r.count != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "count", r.count)
+	}
+	if r.subscribePackageType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "subscribe_package_type", r.subscribePackageType)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

@@ -14,13 +14,21 @@ package models
 type BrandOrderListV30ResponseDataOrdersInnerAudienceInfo struct {
 	Ac *BrandOrderListV30DataOrdersAudienceInfoAc `json:"ac,omitempty"`
 	// 兴趣
-	ActionCategories []int64 `json:"action_categories,omitempty"`
+	ActionCategories    []int64                                                     `json:"action_categories,omitempty"`
+	AdditionalTargeting *BrandOrderListV30DataOrdersAudienceInfoAdditionalTargeting `json:"additional_targeting,omitempty"`
 	// 年龄
 	Ages []*BrandOrderListV30DataOrdersAudienceInfoAges `json:"ages,omitempty"`
 	// 优选人群拓展
-	AutoExtendTargets []string                                                             `json:"auto_extend_targets,omitempty"`
-	DistrictInfo      *BrandOrderListV30ResponseDataOrdersInnerAudienceInfoDistrictInfo    `json:"district_info,omitempty"`
-	Gender            *BrandOrderListV30DataOrdersAudienceInfoGender                       `json:"gender,omitempty"`
-	Platform          *BrandOrderListV30DataOrdersAudienceInfoPlatform                     `json:"platform,omitempty"`
-	RetargetingInfo   *BrandOrderListV30ResponseDataOrdersInnerAudienceInfoRetargetingInfo `json:"retargeting_info,omitempty"`
+	AutoExtendTargets []string `json:"auto_extend_targets,omitempty"`
+	//
+	ChaseBrandList []string `json:"chase_brand_list,omitempty"`
+	//
+	ChaseCategoryList []string                                                          `json:"chase_category_list,omitempty"`
+	DistrictInfo      *BrandOrderListV30ResponseDataOrdersInnerAudienceInfoDistrictInfo `json:"district_info,omitempty"`
+	Gender            *BrandOrderListV30DataOrdersAudienceInfoGender                    `json:"gender,omitempty"`
+	//
+	HotSpotEventList        []map[string]interface{}                                             `json:"hot_spot_event_list,omitempty"`
+	IsRealTimeContextTarget *BrandOrderListV30DataOrdersAudienceInfoIsRealTimeContextTarget      `json:"is_real_time_context_target,omitempty"`
+	Platform                *BrandOrderListV30DataOrdersAudienceInfoPlatform                     `json:"platform,omitempty"`
+	RetargetingInfo         *BrandOrderListV30ResponseDataOrdersInnerAudienceInfoRetargetingInfo `json:"retargeting_info,omitempty"`
 }

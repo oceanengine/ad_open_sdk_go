@@ -23,15 +23,16 @@ import (
 )
 
 type ApiOpenApiV30SubscribeAccountsListGetRequestExample struct {
-	APPAccessToken  string                              `json:"APP-Access-Token"`
-	AppId           int64                               `json:"app_id"`
-	SubscribeTaskId int64                               `json:"subscribe_task_id"`
-	Events          []string                            `json:"events,omitempty"`
-	CoreUserId      int64                               `json:"core_user_id,omitempty"`
-	AdvertiserIds   []int64                             `json:"advertiser_ids,omitempty"`
-	Statuses        []*SubscribeAccountsListV30Statuses `json:"statuses,omitempty"`
-	Cursor          int64                               `json:"cursor,omitempty"`
-	Count           int64                               `json:"count,omitempty"`
+	APPAccessToken       string                              `json:"APP-Access-Token"`
+	AppId                int64                               `json:"app_id"`
+	SubscribeTaskId      int64                               `json:"subscribe_task_id"`
+	Events               []string                            `json:"events,omitempty"`
+	CoreUserId           int64                               `json:"core_user_id,omitempty"`
+	AdvertiserIds        []int64                             `json:"advertiser_ids,omitempty"`
+	Statuses             []*SubscribeAccountsListV30Statuses `json:"statuses,omitempty"`
+	Cursor               int64                               `json:"cursor,omitempty"`
+	Count                int64                               `json:"count,omitempty"`
+	SubscribePackageType int64                               `json:"subscribe_package_type,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/subscribe/accounts/list/ Get
@@ -53,7 +54,7 @@ func main() {
 	resp, httpRes, err := apiClient.SubscribeAccountsListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		APPAccessToken(request.APPAccessToken).AppId(request.AppId).SubscribeTaskId(request.SubscribeTaskId).Events(request.Events).CoreUserId(request.CoreUserId).AdvertiserIds(request.AdvertiserIds).Statuses(request.Statuses).Cursor(request.Cursor).Count(request.Count).
+		APPAccessToken(request.APPAccessToken).AppId(request.AppId).SubscribeTaskId(request.SubscribeTaskId).Events(request.Events).CoreUserId(request.CoreUserId).AdvertiserIds(request.AdvertiserIds).Statuses(request.Statuses).Cursor(request.Cursor).Count(request.Count).SubscribePackageType(request.SubscribePackageType).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

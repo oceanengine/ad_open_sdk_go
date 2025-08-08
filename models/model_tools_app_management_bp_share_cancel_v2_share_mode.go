@@ -15,8 +15,8 @@ type ToolsAppManagementBpShareCancelV2ShareMode string
 
 // List of tools_app_management_bp_share_cancel_v2_share_mode
 const (
-	ALL_ToolsAppManagementBpShareCancelV2ShareMode     ToolsAppManagementBpShareCancelV2ShareMode = "ALL"
 	PART_ToolsAppManagementBpShareCancelV2ShareMode    ToolsAppManagementBpShareCancelV2ShareMode = "PART"
+	ALL_ToolsAppManagementBpShareCancelV2ShareMode     ToolsAppManagementBpShareCancelV2ShareMode = "ALL"
 	COMPANY_ToolsAppManagementBpShareCancelV2ShareMode ToolsAppManagementBpShareCancelV2ShareMode = "COMPANY"
 )
 
