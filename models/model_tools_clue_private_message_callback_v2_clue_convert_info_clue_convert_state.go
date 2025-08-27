@@ -15,12 +15,14 @@ type ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState string
 
 // List of tools_clue_private_message_callback_v2_clue_convert_info_clue_convert_state
 const (
-	NEW_CLUE_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "NEW_CLUE"
-	INVALID_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState  ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "INVALID"
-	CONFIRM_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState  ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "CONFIRM"
-	VX_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState       ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "VX"
-	ARRIVAL_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState  ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "ARRIVAL"
-	DEAL_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState     ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "DEAL"
+	NEW_CLUE_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState            ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "NEW_CLUE"
+	INVALID_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState             ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "INVALID"
+	CONFIRM_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState             ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "CONFIRM"
+	VX_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState                  ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "VX"
+	ARRIVAL_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState             ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "ARRIVAL"
+	DEAL_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState                ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "DEAL"
+	CLUE_CONFIRM_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState        ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "CLUE_CONFIRM"
+	CLUE_HIGH_INTENTION_ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState ToolsCluePrivateMessageCallbackV2ClueConvertInfoClueConvertState = "CLUE_HIGH_INTENTION"
 )
 
 // Ptr returns reference to tools_clue_private_message_callback_v2_clue_convert_info_clue_convert_state value

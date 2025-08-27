@@ -48,7 +48,7 @@ func (r *ApiOpenApiOauth2AdvertiserGetGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiOauth2AdvertiserGetGet Method for OpenApiOauth2AdvertiserGetGet
 
-获取有操作权限的各类型账户列表。账户类型，枚举值： • ADVERTISER 广告账户 • CUSTOMER_ADMIN 工作台-管理员 • CUSTOMER_OPERATOR 工作台-协作者 • AGENT 代理商 • CHILD_AGENT 二级代理商 • PLATFORM_ROLE_STAR 星图账户 • PLATFORM_ROLE_SHOP_ACCOUNT 抖音店铺账户 • PLATFORM_ROLE_QIANCHUAN_AGENT 千川代理商 • PLATFORM_ROLE_STAR_AGENT 星图代理商 • PLATFORM_ROLE_AWEME 抖音号 • PLATFORM_ROLE_STAR_MCN 星图MCN机构 • PLATFORM_ROLE_STAR_ISV 星图服务商 • AGENT_SYSTEM_ACCOUNT 代理商系统账户 • PLATFORM_ROLE_LOCAL_AGENT 本地推代理商 • PLATFORM_ROLE_YUNTU_BRAND_ISV_ADMIN 云图品牌服务商管理员 • PLATFORM_ROLE_LIFE 抖音来客账户 • PLATFORM_ROLE_ENTERPRISE_BP_ADMIN 企业号-管理员 • PLATFORM_ROLE_ENTERPRISE_BP_OPERATOR 企业号-协作者
+获取账号下已授权的管理/业务账户，如果是管理账户可再通过相关管理账户接口查询管理账户下的具体业务账户。例如工作台和代理商为管理账户，可通过工作台下业务账户列表/代理商下业务账户列表查询具体管理业务账户。
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiOauth2AdvertiserGetGetRequest

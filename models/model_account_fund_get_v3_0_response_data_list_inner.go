@@ -22,6 +22,10 @@ type AccountFundGetV30ResponseDataListInner struct {
 	BiddingCreditBalance *int64 `json:"bidding_credit_balance,omitempty"`
 	//
 	BiddingCreditValidBalance *int64 `json:"bidding_credit_valid_balance,omitempty"`
+	// 预借款竞价专用总余额
+	BiddingPreloanBalance *int64 `json:"bidding_preloan_balance,omitempty"`
+	// 预借款竞价专用可用余额
+	BiddingPreloanValidBalance *int64 `json:"bidding_preloan_valid_balance,omitempty"`
 	//
 	BiddingPrepayBalance *int64 `json:"bidding_prepay_balance,omitempty"`
 	//
@@ -34,6 +38,10 @@ type AccountFundGetV30ResponseDataListInner struct {
 	BrandCreditBalance *int64 `json:"brand_credit_balance,omitempty"`
 	//
 	BrandCreditValidBalance *int64 `json:"brand_credit_valid_balance,omitempty"`
+	// 预借款品牌专用总余额
+	BrandPreloanBalance *int64 `json:"brand_preloan_balance,omitempty"`
+	// 预借款品牌专用可用余额
+	BrandPreloanValidBalance *int64 `json:"brand_preloan_valid_balance,omitempty"`
 	//
 	BrandPrepayBalance *int64 `json:"brand_prepay_balance,omitempty"`
 	//
@@ -62,6 +70,10 @@ type AccountFundGetV30ResponseDataListInner struct {
 	GeneralCreditBalance *int64 `json:"general_credit_balance,omitempty"`
 	//
 	GeneralCreditValidBalance *int64 `json:"general_credit_valid_balance,omitempty"`
+	// 预借款通用总余额
+	GeneralPreloanBalance *int64 `json:"general_preloan_balance,omitempty"`
+	// 预借款通用可用余额
+	GeneralPreloanValidBalance *int64 `json:"general_preloan_valid_balance,omitempty"`
 	//
 	GeneralPrepayBalance *int64 `json:"general_prepay_balance,omitempty"`
 	//
@@ -70,6 +82,12 @@ type AccountFundGetV30ResponseDataListInner struct {
 	GeneralValidGrant *int64 `json:"general_valid_grant,omitempty"`
 	//
 	Grant *int64 `json:"grant,omitempty"`
+	// 预借款总余额
+	PreloanBalance *int64 `json:"preloan_balance,omitempty"`
+	// 账户预借款可转余额
+	PreloanTransferBalance *int64 `json:"preloan_transfer_balance,omitempty"`
+	// 预借款可用总余额
+	PreloanValidBalance *int64 `json:"preloan_valid_balance,omitempty"`
 	//
 	PrepayBalance *int64 `json:"prepay_balance,omitempty"`
 	//

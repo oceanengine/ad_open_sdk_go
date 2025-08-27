@@ -25,14 +25,6 @@ type StardeliveryTaskListV30ResponseDataListInner struct {
 	//
 	StarMaterialBidRange []float64 `json:"star_material_bid_range,omitempty"`
 	//
-	StarMaterialFirstName *string `json:"star_material_first_name,omitempty"`
-	//
-	StarMaterialFirstType *int64 `json:"star_material_first_type,omitempty"`
-	//
-	StarMaterialSecondName *string `json:"star_material_second_name,omitempty"`
-	//
-	StarMaterialSecondType *int64 `json:"star_material_second_type,omitempty"`
-	//
 	StarPendingConfirmCount *int64 `json:"star_pending_confirm_count,omitempty"`
 	//
 	StarSaleCostEndTime *string `json:"star_sale_cost_end_time,omitempty"`

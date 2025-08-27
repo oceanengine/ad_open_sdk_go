@@ -34,6 +34,10 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	InAppStatCostRangeT1 []float64 `json:"in_app_stat_cost_range_t1,omitempty"`
 	//
 	InstallFinishCnt *int64 `json:"install_finish_cnt,omitempty"`
+	// 服务商ID
+	IsvId *int64 `json:"isv_id,omitempty"`
+	// 服务商名称
+	IsvName *string `json:"isv_name,omitempty"`
 	//
 	MaterialId *int64 `json:"material_id,omitempty"`
 	//
@@ -52,17 +56,13 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	StarDeepPurchaseCount *int64 `json:"star_deep_purchase_count,omitempty"`
 	//
 	StarInstallFinishCount *int64 `json:"star_install_finish_count,omitempty"`
-	//
-	StarMaterialFirstName *string `json:"star_material_first_name,omitempty"`
-	//
-	StarMaterialFirstType *int32 `json:"star_material_first_type,omitempty"`
+	// 视频创意方向
+	StarMaterialCreativeOrient *string `json:"star_material_creative_orient,omitempty"`
+	// 视频呈现形式
+	StarMaterialDisplayFormat *string `json:"star_material_display_format,omitempty"`
 	//
 	StarMaterialNaturalViewsT1 *int64                                                                   `json:"star_material_natural_views_t1,omitempty"`
 	StarMaterialPurchaseMethod *ReportStardeliveryTaskVideoDataGetV30DataListStarMaterialPurchaseMethod `json:"star_material_purchase_method,omitempty"`
-	//
-	StarMaterialSecondName *string `json:"star_material_second_name,omitempty"`
-	//
-	StarMaterialSecondType *int32 `json:"star_material_second_type,omitempty"`
 	//
 	StarMaterialStatCost *float64 `json:"star_material_stat_cost,omitempty"`
 	//

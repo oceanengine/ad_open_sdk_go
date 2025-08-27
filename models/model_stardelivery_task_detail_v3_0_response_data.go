@@ -60,11 +60,7 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	// 素材出价（元），每条视频最低需要付给达人的底价价格
 	StarMaterialBid *float64 `json:"star_material_bid,omitempty"`
 	// 基础素材费单价区间，报价区间为建议值，系统优先邀约符合报价区间的达人
-	StarMaterialBidRange []float64 `json:"star_material_bid_range,omitempty"`
-	// 素材一级类目id
-	StarMaterialFirstType *int32 `json:"star_material_first_type,omitempty"`
-	// 素材二级类目id
-	StarMaterialSecondType    *int32                                                          `json:"star_material_second_type,omitempty"`
+	StarMaterialBidRange      []float64                                                       `json:"star_material_bid_range,omitempty"`
 	StarTaskAlbumMicroAppInfo *StardeliveryTaskDetailV30ResponseDataStarTaskAlbumMicroAppInfo `json:"star_task_album_micro_app_info,omitempty"`
 	// 原生锚点ID
 	StarTaskAnchorId   *int64                                                  `json:"star_task_anchor_id,omitempty"`

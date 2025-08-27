@@ -13,7 +13,9 @@ package models
 // StarDemandCreateChallengeV2RequestDemandInfoComponentInfoPaidContentComponent
 type StarDemandCreateChallengeV2RequestDemandInfoComponentInfoPaidContentComponent struct {
 	// 抖音号
-	DouyinId *string `json:"douyin_id,omitempty"`
-	// 短剧的商品ID
+	DouyinId string `json:"douyin_id"`
+	// 商品ID（可不填）
 	ProductId *int64 `json:"product_id,omitempty"`
+	// 短剧ID（必填）
+	SeriesId int64 `json:"series_id"`
 }

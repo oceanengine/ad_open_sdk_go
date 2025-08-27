@@ -15,9 +15,9 @@ type ToolsEstimateAudienceV2AppBehaviorTarget string
 
 // List of tools_estimate_audience_v2_app_behavior_target
 const (
-	CATEGORY_ToolsEstimateAudienceV2AppBehaviorTarget ToolsEstimateAudienceV2AppBehaviorTarget = "CATEGORY"
-	NONE_ToolsEstimateAudienceV2AppBehaviorTarget     ToolsEstimateAudienceV2AppBehaviorTarget = "NONE"
 	APP_ToolsEstimateAudienceV2AppBehaviorTarget      ToolsEstimateAudienceV2AppBehaviorTarget = "APP"
+	NONE_ToolsEstimateAudienceV2AppBehaviorTarget     ToolsEstimateAudienceV2AppBehaviorTarget = "NONE"
+	CATEGORY_ToolsEstimateAudienceV2AppBehaviorTarget ToolsEstimateAudienceV2AppBehaviorTarget = "CATEGORY"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_app_behavior_target value

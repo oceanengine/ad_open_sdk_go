@@ -15,18 +15,18 @@ type ToolsAwemeAuthorInfoGetV2Behaviors string
 
 // List of tools_aweme_author_info_get_v2_behaviors
 const (
-	LIVE_WATCH_ToolsAwemeAuthorInfoGetV2Behaviors           ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_WATCH"
-	COMMENTED_USER_ToolsAwemeAuthorInfoGetV2Behaviors       ToolsAwemeAuthorInfoGetV2Behaviors = "COMMENTED_USER"
-	GOODS_CARTS_ORDER_ToolsAwemeAuthorInfoGetV2Behaviors    ToolsAwemeAuthorInfoGetV2Behaviors = "GOODS_CARTS_ORDER"
-	LIKED_USER_ToolsAwemeAuthorInfoGetV2Behaviors           ToolsAwemeAuthorInfoGetV2Behaviors = "LIKED_USER"
 	GOODS_CARTS_CLICK_ToolsAwemeAuthorInfoGetV2Behaviors    ToolsAwemeAuthorInfoGetV2Behaviors = "GOODS_CARTS_CLICK"
-	LIVE_GOODS_ORDER_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_GOODS_ORDER"
+	LIVE_EXCEPTIONAL_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_EXCEPTIONAL"
 	SHARED_USER_ToolsAwemeAuthorInfoGetV2Behaviors          ToolsAwemeAuthorInfoGetV2Behaviors = "SHARED_USER"
 	LIVE_COMMENT_ToolsAwemeAuthorInfoGetV2Behaviors         ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_COMMENT"
+	LIVE_WATCH_ToolsAwemeAuthorInfoGetV2Behaviors           ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_WATCH"
 	FOLLOWED_USER_ToolsAwemeAuthorInfoGetV2Behaviors        ToolsAwemeAuthorInfoGetV2Behaviors = "FOLLOWED_USER"
-	LIVE_EXCEPTIONAL_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_EXCEPTIONAL"
+	LIVE_GOODS_ORDER_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_GOODS_ORDER"
 	LIVE_EFFECTIVE_WATCH_ToolsAwemeAuthorInfoGetV2Behaviors ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_EFFECTIVE_WATCH"
 	LIVE_GOODS_CLICK_ToolsAwemeAuthorInfoGetV2Behaviors     ToolsAwemeAuthorInfoGetV2Behaviors = "LIVE_GOODS_CLICK"
+	GOODS_CARTS_ORDER_ToolsAwemeAuthorInfoGetV2Behaviors    ToolsAwemeAuthorInfoGetV2Behaviors = "GOODS_CARTS_ORDER"
+	COMMENTED_USER_ToolsAwemeAuthorInfoGetV2Behaviors       ToolsAwemeAuthorInfoGetV2Behaviors = "COMMENTED_USER"
+	LIKED_USER_ToolsAwemeAuthorInfoGetV2Behaviors           ToolsAwemeAuthorInfoGetV2Behaviors = "LIKED_USER"
 )
 
 // Ptr returns reference to tools_aweme_author_info_get_v2_behaviors value

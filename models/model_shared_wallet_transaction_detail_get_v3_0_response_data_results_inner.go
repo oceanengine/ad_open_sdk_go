@@ -24,6 +24,8 @@ type SharedWalletTransactionDetailGetV30ResponseDataResultsInner struct {
 	// 收款账户名称
 	PayeeName *string                                                  `json:"payee_name,omitempty"`
 	PayeeType *SharedWalletTransactionDetailGetV30DataResultsPayeeType `json:"payee_type,omitempty"`
+	// 预借款金额(单位元)
+	PreloanAmount *float64 `json:"preloan_amount,omitempty"`
 	// 预付金额(单位元)
 	PrepayAmount *float64 `json:"prepay_amount,omitempty"`
 	// 付款账户ID

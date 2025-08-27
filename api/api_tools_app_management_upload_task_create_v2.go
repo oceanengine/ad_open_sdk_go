@@ -52,7 +52,7 @@ func (r *ApiOpenApi2ToolsAppManagementUploadTaskCreatePostRequest) WithLog(enabl
 /*
 OpenApi2ToolsAppManagementUploadTaskCreatePost Method for OpenApi2ToolsAppManagementUploadTaskCreatePost
 
-API Description
+创建异步下载任务「支持所有账户体系】 可通过请求参数account_id 账户id和account_type 账户类型，执行异步下载&上传到TOS&apk解析。
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementUploadTaskCreatePostRequest

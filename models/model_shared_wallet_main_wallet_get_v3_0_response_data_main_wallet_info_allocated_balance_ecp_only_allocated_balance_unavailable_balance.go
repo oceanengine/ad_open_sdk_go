@@ -18,6 +18,12 @@ type SharedWalletMainWalletGetV30ResponseDataMainWalletInfoAllocatedBalanceEcpOn
 	CreditBrandBalance *float64 `json:"credit_brand_balance,omitempty"`
 	// 授信通用不可用余额(单位元)
 	CreditGeneralBalance *float64 `json:"credit_general_balance,omitempty"`
+	// 预借款竞价不可用余额(单位元)
+	PreloanBiddingBalance *float64 `json:"preloan_bidding_balance,omitempty"`
+	// 预借款品牌不可用余额(单位元)
+	PreloanBrandBalance *float64 `json:"preloan_brand_balance,omitempty"`
+	// 预借款通用不可用余额(单位元)
+	PreloanGeneralBalance *float64 `json:"preloan_general_balance,omitempty"`
 	// 预付竞价不可用余额(单位元)
 	PrepayBiddingBalance *float64 `json:"prepay_bidding_balance,omitempty"`
 	// 预付品牌不可用余额(单位元)

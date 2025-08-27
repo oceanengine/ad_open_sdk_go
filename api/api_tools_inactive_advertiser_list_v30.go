@@ -23,11 +23,12 @@ import (
 type ToolsInactiveAdvertiserListV30ApiService service
 
 type ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest struct {
-	ctx        context.Context
-	ApiService *ToolsInactiveAdvertiserListV30ApiService
-	appId      *int64
-	cursor     *int64
-	count      *int32
+	ctx            context.Context
+	ApiService     *ToolsInactiveAdvertiserListV30ApiService
+	appId          *int64
+	cursor         *int64
+	count          *int32
+	advertiserType *ToolsInactiveAdvertiserListV30AdvertiserType
 }
 
 func (r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) AppId(appId int64) *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest {
@@ -42,6 +43,11 @@ func (r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) Cursor(cursor int64
 
 func (r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) Count(count int32) *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest {
 	r.count = &count
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) AdvertiserType(advertiserType ToolsInactiveAdvertiserListV30AdvertiserType) *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest {
+	r.advertiserType = &advertiserType
 	return r
 }
 
@@ -107,6 +113,9 @@ func (a *ToolsInactiveAdvertiserListV30ApiService) getExecute(r *ApiOpenApiV30To
 	}
 	if r.count != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "count", r.count)
+	}
+	if r.advertiserType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_type", r.advertiserType)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

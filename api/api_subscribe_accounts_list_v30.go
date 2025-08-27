@@ -34,7 +34,9 @@ type ApiOpenApiV30SubscribeAccountsListGetRequest struct {
 	statuses             *[]*SubscribeAccountsListV30Statuses
 	cursor               *int64
 	count                *int64
-	subscribePackageType *int64
+	subscribePackageType *SubscribeAccountsListV30SubscribePackageType
+	source               *SubscribeAccountsListV30Source
+	accountType          *SubscribeAccountsListV30AccountType
 }
 
 func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) APPAccessToken(aPPAccessToken string) *ApiOpenApiV30SubscribeAccountsListGetRequest {
@@ -82,8 +84,18 @@ func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) Count(count int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) SubscribePackageType(subscribePackageType int64) *ApiOpenApiV30SubscribeAccountsListGetRequest {
+func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) SubscribePackageType(subscribePackageType SubscribeAccountsListV30SubscribePackageType) *ApiOpenApiV30SubscribeAccountsListGetRequest {
 	r.subscribePackageType = &subscribePackageType
+	return r
+}
+
+func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) Source(source SubscribeAccountsListV30Source) *ApiOpenApiV30SubscribeAccountsListGetRequest {
+	r.source = &source
+	return r
+}
+
+func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) AccountType(accountType SubscribeAccountsListV30AccountType) *ApiOpenApiV30SubscribeAccountsListGetRequest {
+	r.accountType = &accountType
 	return r
 }
 
@@ -145,12 +157,11 @@ func (a *SubscribeAccountsListV30ApiService) getExecute(r *ApiOpenApiV30Subscrib
 	if r.appId == nil {
 		return localVarReturnValue, nil, ReportError("appId is required and must be specified")
 	}
-	if r.subscribeTaskId == nil {
-		return localVarReturnValue, nil, ReportError("subscribeTaskId is required and must be specified")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "app_id", r.appId)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "subscribe_task_id", r.subscribeTaskId)
+	if r.subscribeTaskId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "subscribe_task_id", r.subscribeTaskId)
+	}
 	if r.events != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "events", r.events)
 	}
@@ -171,6 +182,12 @@ func (a *SubscribeAccountsListV30ApiService) getExecute(r *ApiOpenApiV30Subscrib
 	}
 	if r.subscribePackageType != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "subscribe_package_type", r.subscribePackageType)
+	}
+	if r.source != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "source", r.source)
+	}
+	if r.accountType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

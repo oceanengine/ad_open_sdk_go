@@ -15,18 +15,18 @@ type ToolsAwemeMultiLevelCategoryGetV2Behaviors string
 
 // List of tools_aweme_multi_level_category_get_v2_behaviors
 const (
-	LIVE_WATCH_ToolsAwemeMultiLevelCategoryGetV2Behaviors           ToolsAwemeMultiLevelCategoryGetV2Behaviors = "LIVE_WATCH"
-	COMMENTED_USER_ToolsAwemeMultiLevelCategoryGetV2Behaviors       ToolsAwemeMultiLevelCategoryGetV2Behaviors = "COMMENTED_USER"
-	GOODS_CARTS_ORDER_ToolsAwemeMultiLevelCategoryGetV2Behaviors    ToolsAwemeMultiLevelCategoryGetV2Behaviors = "GOODS_CARTS_ORDER"
-	LIKED_USER_ToolsAwemeMultiLevelCategoryGetV2Behaviors           ToolsAwemeMultiLevelCategoryGetV2Behaviors = "LIKED_USER"
 	GOODS_CARTS_CLICK_ToolsAwemeMultiLevelCategoryGetV2Behaviors    ToolsAwemeMultiLevelCategoryGetV2Behaviors = "GOODS_CARTS_CLICK"
-	LIVE_GOODS_ORDER_ToolsAwemeMultiLevelCategoryGetV2Behaviors     ToolsAwemeMultiLevelCategoryGetV2Behaviors = "LIVE_GOODS_ORDER"
+	LIVE_EXCEPTIONAL_ToolsAwemeMultiLevelCategoryGetV2Behaviors     ToolsAwemeMultiLevelCategoryGetV2Behaviors = "LIVE_EXCEPTIONAL"
 	SHARED_USER_ToolsAwemeMultiLevelCategoryGetV2Behaviors          ToolsAwemeMultiLevelCategoryGetV2Behaviors = "SHARED_USER"
 	LIVE_COMMENT_ToolsAwemeMultiLevelCategoryGetV2Behaviors         ToolsAwemeMultiLevelCategoryGetV2Behaviors = "LIVE_COMMENT"
+	LIVE_WATCH_ToolsAwemeMultiLevelCategoryGetV2Behaviors           ToolsAwemeMultiLevelCategoryGetV2Behaviors = "LIVE_WATCH"
 	FOLLOWED_USER_ToolsAwemeMultiLevelCategoryGetV2Behaviors        ToolsAwemeMultiLevelCategoryGetV2Behaviors = "FOLLOWED_USER"
-	LIVE_EXCEPTIONAL_ToolsAwemeMultiLevelCategoryGetV2Behaviors     ToolsAwemeMultiLevelCategoryGetV2Behaviors = "LIVE_EXCEPTIONAL"
+	LIVE_GOODS_ORDER_ToolsAwemeMultiLevelCategoryGetV2Behaviors     ToolsAwemeMultiLevelCategoryGetV2Behaviors = "LIVE_GOODS_ORDER"
 	LIVE_EFFECTIVE_WATCH_ToolsAwemeMultiLevelCategoryGetV2Behaviors ToolsAwemeMultiLevelCategoryGetV2Behaviors = "LIVE_EFFECTIVE_WATCH"
 	LIVE_GOODS_CLICK_ToolsAwemeMultiLevelCategoryGetV2Behaviors     ToolsAwemeMultiLevelCategoryGetV2Behaviors = "LIVE_GOODS_CLICK"
+	GOODS_CARTS_ORDER_ToolsAwemeMultiLevelCategoryGetV2Behaviors    ToolsAwemeMultiLevelCategoryGetV2Behaviors = "GOODS_CARTS_ORDER"
+	COMMENTED_USER_ToolsAwemeMultiLevelCategoryGetV2Behaviors       ToolsAwemeMultiLevelCategoryGetV2Behaviors = "COMMENTED_USER"
+	LIKED_USER_ToolsAwemeMultiLevelCategoryGetV2Behaviors           ToolsAwemeMultiLevelCategoryGetV2Behaviors = "LIKED_USER"
 )
 
 // Ptr returns reference to tools_aweme_multi_level_category_get_v2_behaviors value

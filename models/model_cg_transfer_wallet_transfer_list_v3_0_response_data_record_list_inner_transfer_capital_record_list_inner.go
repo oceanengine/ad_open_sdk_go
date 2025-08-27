@@ -12,6 +12,8 @@ package models
 
 // CgTransferWalletTransferListV30ResponseDataRecordListInnerTransferCapitalRecordListInner struct for CgTransferWalletTransferListV30ResponseDataRecordListInnerTransferCapitalRecordListInner
 type CgTransferWalletTransferListV30ResponseDataRecordListInnerTransferCapitalRecordListInner struct {
+	// 转账资金子类型明细列表
+	CapitalSubDetailList []*CgTransferWalletTransferListV30ResponseDataRecordListInnerTransferCapitalRecordListInnerCapitalSubDetailListInner `json:"capital_sub_detail_list,omitempty"`
 	// 转账资金创建时间yyyy-MM-dd HH:mm:ss
 	CreateTime *string `json:"create_time,omitempty"`
 	// 转账资金完成时间yyyy-MM-dd HH:mm:ss

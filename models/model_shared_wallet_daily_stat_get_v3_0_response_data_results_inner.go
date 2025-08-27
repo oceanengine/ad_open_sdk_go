@@ -22,6 +22,8 @@ type SharedWalletDailyStatGetV30ResponseDataResultsInner struct {
 	Expenses *float64 `json:"expenses,omitempty"`
 	// 总存入(单位元)
 	Incomes *float64 `json:"incomes,omitempty"`
+	// 预借款日终结余(单位元)
+	PreloanBalance *float64 `json:"preloan_balance,omitempty"`
 	// 预付日终结余(单位元）
 	PrepayBalance *float64 `json:"prepay_balance,omitempty"`
 	// 共享钱包ID

@@ -12,7 +12,9 @@ package models
 
 // CgTransferQueryTransferDetailV30ResponseDataTransferTargetRecordListInnerTransferCapitalRecordListInner struct for CgTransferQueryTransferDetailV30ResponseDataTransferTargetRecordListInnerTransferCapitalRecordListInner
 type CgTransferQueryTransferDetailV30ResponseDataTransferTargetRecordListInnerTransferCapitalRecordListInner struct {
-	CapitalType *CgTransferQueryTransferDetailV30DataTransferTargetRecordListTransferCapitalRecordListCapitalType `json:"capital_type,omitempty"`
+	// 转账资金子类型明细列表
+	CapitalSubDetailList []*CgTransferQueryTransferDetailV30ResponseDataTransferTargetRecordListInnerTransferCapitalRecordListInnerCapitalSubDetailListInner `json:"capital_sub_detail_list,omitempty"`
+	CapitalType          *CgTransferQueryTransferDetailV30DataTransferTargetRecordListTransferCapitalRecordListCapitalType                                   `json:"capital_type,omitempty"`
 	// 失败原因
 	FailReason *string `json:"fail_reason,omitempty"`
 	// 转账资金金额(单位：分)

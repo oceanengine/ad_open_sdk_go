@@ -32,4 +32,6 @@ type QianchuanToolsLogSearchV10ResponseDataLogsInner struct {
 	OperatorName *string `json:"operator_name,omitempty"`
 	// 操作IP
 	OptIp *string `json:"opt_ip,omitempty"`
+	//
+	SubLogs []*QianchuanToolsLogSearchV10ResponseDataLogsInnerSubLogsInner `json:"sub_logs,omitempty"`
 }

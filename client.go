@@ -1,5 +1,5 @@
 /*
-API version: 1.1.67
+API version: 1.1.68
 */
 package ad_open_sdk_go
 
@@ -195,8 +195,16 @@ func (c *Client) AgentAdvPerenniallyPunishHistoryQueryV2Api() *api.AgentAdvPeren
 	return c.ApiClient.AgentAdvPerenniallyPunishHistoryQueryV2Api
 }
 
+func (c *Client) AgentAdvPerenniallyPunishV2Api() *api.AgentAdvPerenniallyPunishV2ApiService {
+	return c.ApiClient.AgentAdvPerenniallyPunishV2Api
+}
+
 func (c *Client) AgentAdvRechargeRechargeRecordV2Api() *api.AgentAdvRechargeRechargeRecordV2ApiService {
 	return c.ApiClient.AgentAdvRechargeRechargeRecordV2Api
+}
+
+func (c *Client) AgentAdvTemporaryPunishV2Api() *api.AgentAdvTemporaryPunishV2ApiService {
+	return c.ApiClient.AgentAdvTemporaryPunishV2Api
 }
 
 func (c *Client) AgentAdvertiserAssignV2Api() *api.AgentAdvertiserAssignV2ApiService {
@@ -243,14 +251,6 @@ func (c *Client) AgentCreditChargeSubmitV2Api() *api.AgentCreditChargeSubmitV2Ap
 	return c.ApiClient.AgentCreditChargeSubmitV2Api
 }
 
-func (c *Client) AgentFundTransferSeqCommitV2Api() *api.AgentFundTransferSeqCommitV2ApiService {
-	return c.ApiClient.AgentFundTransferSeqCommitV2Api
-}
-
-func (c *Client) AgentFundTransferSeqCreateV2Api() *api.AgentFundTransferSeqCreateV2ApiService {
-	return c.ApiClient.AgentFundTransferSeqCreateV2Api
-}
-
 func (c *Client) AgentInfoV2Api() *api.AgentInfoV2ApiService {
 	return c.ApiClient.AgentInfoV2Api
 }
@@ -261,14 +261,6 @@ func (c *Client) AgentPrepayChargeGenerateRemittanceCodeV2Api() *api.AgentPrepay
 
 func (c *Client) AgentQueryRiskPromotionListV2Api() *api.AgentQueryRiskPromotionListV2ApiService {
 	return c.ApiClient.AgentQueryRiskPromotionListV2Api
-}
-
-func (c *Client) AgentRefundTransferSeqCommitV2Api() *api.AgentRefundTransferSeqCommitV2ApiService {
-	return c.ApiClient.AgentRefundTransferSeqCommitV2Api
-}
-
-func (c *Client) AgentRefundTransferSeqCreateV2Api() *api.AgentRefundTransferSeqCreateV2ApiService {
-	return c.ApiClient.AgentRefundTransferSeqCreateV2Api
 }
 
 func (c *Client) AgentTransferTransactionRecordV2Api() *api.AgentTransferTransactionRecordV2ApiService {
@@ -911,6 +903,10 @@ func (c *Client) DmpCustomAudienceReadV2Api() *api.DmpCustomAudienceReadV2ApiSer
 	return c.ApiClient.DmpCustomAudienceReadV2Api
 }
 
+func (c *Client) DmpCustomAudienceSelectV2Api() *api.DmpCustomAudienceSelectV2ApiService {
+	return c.ApiClient.DmpCustomAudienceSelectV2Api
+}
+
 func (c *Client) DmpDataSourceCreateV2Api() *api.DmpDataSourceCreateV2ApiService {
 	return c.ApiClient.DmpDataSourceCreateV2Api
 }
@@ -1091,10 +1087,6 @@ func (c *Client) EnterpriseBindListGetV10Api() *api.EnterpriseBindListGetV10ApiS
 	return c.ApiClient.EnterpriseBindListGetV10Api
 }
 
-func (c *Client) EnterpriseInfoV10Api() *api.EnterpriseInfoV10ApiService {
-	return c.ApiClient.EnterpriseInfoV10Api
-}
-
 func (c *Client) EventManagerAbnormalAssetsGetV30Api() *api.EventManagerAbnormalAssetsGetV30ApiService {
 	return c.ApiClient.EventManagerAbnormalAssetsGetV30Api
 }
@@ -1111,12 +1103,20 @@ func (c *Client) EventManagerAuthDelPublicKeyV2Api() *api.EventManagerAuthDelPub
 	return c.ApiClient.EventManagerAuthDelPublicKeyV2Api
 }
 
+func (c *Client) EventManagerAuthDisableV2Api() *api.EventManagerAuthDisableV2ApiService {
+	return c.ApiClient.EventManagerAuthDisableV2Api
+}
+
 func (c *Client) EventManagerAuthEnableV2Api() *api.EventManagerAuthEnableV2ApiService {
 	return c.ApiClient.EventManagerAuthEnableV2Api
 }
 
 func (c *Client) EventManagerAuthGetAllPublicKeysV2Api() *api.EventManagerAuthGetAllPublicKeysV2ApiService {
 	return c.ApiClient.EventManagerAuthGetAllPublicKeysV2Api
+}
+
+func (c *Client) EventManagerAuthGetAuthStatusV2Api() *api.EventManagerAuthGetAuthStatusV2ApiService {
+	return c.ApiClient.EventManagerAuthGetAuthStatusV2Api
 }
 
 func (c *Client) EventManagerAuthGetPublicKeyV2Api() *api.EventManagerAuthGetPublicKeyV2ApiService {
@@ -2283,6 +2283,10 @@ func (c *Client) QianchuanUniAwemeSuggestBudgetV10Api() *api.QianchuanUniAwemeSu
 	return c.ApiClient.QianchuanUniAwemeSuggestBudgetV10Api
 }
 
+func (c *Client) QianchuanUniPromotionAdBudgetUpdateV10Api() *api.QianchuanUniPromotionAdBudgetUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdBudgetUpdateV10Api
+}
+
 func (c *Client) QianchuanUniPromotionAdControlTaskCreateV10Api() *api.QianchuanUniPromotionAdControlTaskCreateV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdControlTaskCreateV10Api
 }
@@ -2311,6 +2315,10 @@ func (c *Client) QianchuanUniPromotionAdMaterialGetV10Api() *api.QianchuanUniPro
 	return c.ApiClient.QianchuanUniPromotionAdMaterialGetV10Api
 }
 
+func (c *Client) QianchuanUniPromotionAdNameUpdateV10Api() *api.QianchuanUniPromotionAdNameUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdNameUpdateV10Api
+}
+
 func (c *Client) QianchuanUniPromotionAdProductDeleteV10Api() *api.QianchuanUniPromotionAdProductDeleteV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdProductDeleteV10Api
 }
@@ -2319,12 +2327,24 @@ func (c *Client) QianchuanUniPromotionAdProductGetV10Api() *api.QianchuanUniProm
 	return c.ApiClient.QianchuanUniPromotionAdProductGetV10Api
 }
 
+func (c *Client) QianchuanUniPromotionAdRoi2GoalUpdateV10Api() *api.QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdRoi2GoalUpdateV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdScheduleDateUpdateV10Api() *api.QianchuanUniPromotionAdScheduleDateUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdScheduleDateUpdateV10Api
+}
+
 func (c *Client) QianchuanUniPromotionAdStatusUpdateV10Api() *api.QianchuanUniPromotionAdStatusUpdateV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdStatusUpdateV10Api
 }
 
 func (c *Client) QianchuanUniPromotionAdSuggestionV10Api() *api.QianchuanUniPromotionAdSuggestionV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdSuggestionV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAuthInitV10Api() *api.QianchuanUniPromotionAuthInitV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAuthInitV10Api
 }
 
 func (c *Client) QianchuanUniPromotionBlockMaterialGetV10Api() *api.QianchuanUniPromotionBlockMaterialGetV10ApiService {
@@ -2631,6 +2651,14 @@ func (c *Client) SharedWalletAccountRelationGetV30Api() *api.SharedWalletAccount
 	return c.ApiClient.SharedWalletAccountRelationGetV30Api
 }
 
+func (c *Client) SharedWalletBudgetGetV30Api() *api.SharedWalletBudgetGetV30ApiService {
+	return c.ApiClient.SharedWalletBudgetGetV30Api
+}
+
+func (c *Client) SharedWalletBudgetSubmitV30Api() *api.SharedWalletBudgetSubmitV30ApiService {
+	return c.ApiClient.SharedWalletBudgetSubmitV30Api
+}
+
 func (c *Client) SharedWalletDailyStatGetV30Api() *api.SharedWalletDailyStatGetV30ApiService {
 	return c.ApiClient.SharedWalletDailyStatGetV30Api
 }
@@ -2653,6 +2681,14 @@ func (c *Client) SharedWalletWalletInfoGetV30Api() *api.SharedWalletWalletInfoGe
 
 func (c *Client) SharedWalletWalletRelationGetV30Api() *api.SharedWalletWalletRelationGetV30ApiService {
 	return c.ApiClient.SharedWalletWalletRelationGetV30Api
+}
+
+func (c *Client) SharedWalletWatchRuleGetV30Api() *api.SharedWalletWatchRuleGetV30ApiService {
+	return c.ApiClient.SharedWalletWatchRuleGetV30Api
+}
+
+func (c *Client) SharedWalletWatchRuleSubmitV30Api() *api.SharedWalletWatchRuleSubmitV30ApiService {
+	return c.ApiClient.SharedWalletWatchRuleSubmitV30Api
 }
 
 func (c *Client) ShopBonusCreateV30Api() *api.ShopBonusCreateV30ApiService {
@@ -3175,20 +3211,12 @@ func (c *Client) ToolQuickAppManagementQuickAppGetV2Api() *api.ToolQuickAppManag
 	return c.ApiClient.ToolQuickAppManagementQuickAppGetV2Api
 }
 
-func (c *Client) ToolsAbTestCreateV2Api() *api.ToolsAbTestCreateV2ApiService {
-	return c.ApiClient.ToolsAbTestCreateV2Api
-}
-
 func (c *Client) ToolsAbTestInfoGetV2Api() *api.ToolsAbTestInfoGetV2ApiService {
 	return c.ApiClient.ToolsAbTestInfoGetV2Api
 }
 
 func (c *Client) ToolsAbTestListGetV2Api() *api.ToolsAbTestListGetV2ApiService {
 	return c.ApiClient.ToolsAbTestListGetV2Api
-}
-
-func (c *Client) ToolsAbTestUpdateV2Api() *api.ToolsAbTestUpdateV2ApiService {
-	return c.ApiClient.ToolsAbTestUpdateV2Api
 }
 
 func (c *Client) ToolsAdPreviewQrcodeGetV30Api() *api.ToolsAdPreviewQrcodeGetV30ApiService {

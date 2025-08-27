@@ -21,6 +21,7 @@ const (
 	OTHERS_StardeliveryTaskDetailV30DataProductAdditionalIntroductionGamePromotionEventPromotionType                  StardeliveryTaskDetailV30DataProductAdditionalIntroductionGamePromotionEventPromotionType = "OTHERS"
 	REGULAR_StardeliveryTaskDetailV30DataProductAdditionalIntroductionGamePromotionEventPromotionType                 StardeliveryTaskDetailV30DataProductAdditionalIntroductionGamePromotionEventPromotionType = "REGULAR"
 	VERSION_UPDATE_StardeliveryTaskDetailV30DataProductAdditionalIntroductionGamePromotionEventPromotionType          StardeliveryTaskDetailV30DataProductAdditionalIntroductionGamePromotionEventPromotionType = "VERSION_UPDATE"
+	RESERVATION_StardeliveryTaskDetailV30DataProductAdditionalIntroductionGamePromotionEventPromotionType             StardeliveryTaskDetailV30DataProductAdditionalIntroductionGamePromotionEventPromotionType = "RESERVATION"
 )
 
 // Ptr returns reference to stardelivery_task_detail_v3.0_data_product_additional_introduction_game_promotion_event_promotion_type value

@@ -23,9 +23,10 @@ import (
 )
 
 type ApiOpenApiV30ToolsInactiveAdvertiserListGetRequestExample struct {
-	AppId  int64 `json:"app_id"`
-	Cursor int64 `json:"cursor,omitempty"`
-	Count  int32 `json:"count,omitempty"`
+	AppId          int64                                        `json:"app_id"`
+	Cursor         int64                                        `json:"cursor,omitempty"`
+	Count          int32                                        `json:"count,omitempty"`
+	AdvertiserType ToolsInactiveAdvertiserListV30AdvertiserType `json:"advertiser_type,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/inactive_advertiser/list/ Get
@@ -47,7 +48,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsInactiveAdvertiserListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AppId(request.AppId).Cursor(request.Cursor).Count(request.Count).
+		AppId(request.AppId).Cursor(request.Cursor).Count(request.Count).AdvertiserType(request.AdvertiserType).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

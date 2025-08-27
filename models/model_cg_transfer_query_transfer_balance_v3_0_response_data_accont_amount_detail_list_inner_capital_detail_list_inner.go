@@ -12,7 +12,9 @@ package models
 
 // CgTransferQueryTransferBalanceV30ResponseDataAccontAmountDetailListInnerCapitalDetailListInner struct for CgTransferQueryTransferBalanceV30ResponseDataAccontAmountDetailListInnerCapitalDetailListInner
 type CgTransferQueryTransferBalanceV30ResponseDataAccontAmountDetailListInnerCapitalDetailListInner struct {
-	CapitalType CgTransferQueryTransferBalanceV30DataAccontAmountDetailListCapitalDetailListCapitalType `json:"capital_type"`
+	// 可转资金子类型明细列表
+	CapitalSubDetails []*CgTransferQueryTransferBalanceV30ResponseDataAccontAmountDetailListInnerCapitalDetailListInnerCapitalSubDetailsInner `json:"capital_sub_details,omitempty"`
+	CapitalType       CgTransferQueryTransferBalanceV30DataAccontAmountDetailListCapitalDetailListCapitalType                                 `json:"capital_type"`
 	// 可转资金金额(单位：分)
 	TransferBalance int64 `json:"transfer_balance"`
 }

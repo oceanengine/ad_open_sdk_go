@@ -15,8 +15,8 @@ type ReportCampaignGetV2DataListCreativeMaterialMode string
 
 // List of report_campaign_get_v2_data_list_creative_material_mode
 const (
-	INTERVENE_ReportCampaignGetV2DataListCreativeMaterialMode       ReportCampaignGetV2DataListCreativeMaterialMode = "INTERVENE"
 	STATIC_ASSEMBLE_ReportCampaignGetV2DataListCreativeMaterialMode ReportCampaignGetV2DataListCreativeMaterialMode = "STATIC_ASSEMBLE"
+	INTERVENE_ReportCampaignGetV2DataListCreativeMaterialMode       ReportCampaignGetV2DataListCreativeMaterialMode = "INTERVENE"
 	CTR_ReportCampaignGetV2DataListCreativeMaterialMode             ReportCampaignGetV2DataListCreativeMaterialMode = "CTR"
 )
 

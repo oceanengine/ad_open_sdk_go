@@ -12,14 +12,14 @@ package models
 
 // SubscribeAccountsRemoveV30Request struct for SubscribeAccountsRemoveV30Request
 type SubscribeAccountsRemoveV30Request struct {
+	AccountType *SubscribeAccountsRemoveV30AccountType `json:"account_type,omitempty"`
 	//
 	AdvertiserIds []int64 `json:"advertiser_ids"`
 	//
 	AppId int64 `json:"app_id"`
 	//
-	CoreUserId int64 `json:"core_user_id"`
+	CoreUserId           int64                                           `json:"core_user_id"`
+	SubscribePackageType *SubscribeAccountsRemoveV30SubscribePackageType `json:"subscribe_package_type,omitempty"`
 	//
-	SubscribePackageType *int64 `json:"subscribe_package_type,omitempty"`
-	//
-	SubscribeTaskId int64 `json:"subscribe_task_id"`
+	SubscribeTaskId *int64 `json:"subscribe_task_id,omitempty"`
 }

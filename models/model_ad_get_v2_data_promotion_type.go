@@ -17,8 +17,8 @@ type AdGetV2DataPromotionType string
 const (
 	GOODS_AdGetV2DataPromotionType             AdGetV2DataPromotionType = "GOODS"
 	LIVE_AdGetV2DataPromotionType              AdGetV2DataPromotionType = "LIVE"
-	LANDING_PAGE_LINK_AdGetV2DataPromotionType AdGetV2DataPromotionType = "LANDING_PAGE_LINK"
 	AWEME_HOME_PAGE_AdGetV2DataPromotionType   AdGetV2DataPromotionType = "AWEME_HOME_PAGE"
+	LANDING_PAGE_LINK_AdGetV2DataPromotionType AdGetV2DataPromotionType = "LANDING_PAGE_LINK"
 )
 
 // Ptr returns reference to ad_get_v2_data_promotion_type value

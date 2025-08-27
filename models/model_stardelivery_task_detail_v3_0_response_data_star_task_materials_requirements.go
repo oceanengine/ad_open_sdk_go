@@ -25,7 +25,10 @@ type StardeliveryTaskDetailV30ResponseDataStarTaskMaterialsRequirements struct {
 	//
 	SampleMaterialInfo *string `json:"sample_material_info,omitempty"`
 	// 示例视频url，最多可添加3个，需要输入抖音视频链接并确保该视频为在线状态 （如 https://www.douyin.com/video/xxx）
-	SampleVideoUrls []string `json:"sample_video_urls,omitempty"`
+	SampleVideoUrls []string                                                                `json:"sample_video_urls,omitempty"`
+	SpecifiedIsv    *StardeliveryTaskDetailV30DataStarTaskMaterialsRequirementsSpecifiedIsv `json:"specified_isv,omitempty"`
+	//
+	SpecifiedIsvDetail []*StardeliveryTaskDetailV30ResponseDataStarTaskMaterialsRequirementsSpecifiedIsvDetailInner `json:"specified_isv_detail,omitempty"`
 	// 要@ 的抖音号，抖音用户个人主页抖音昵称下方可找到
 	TitleMentionsAwemeId *string `json:"title_mentions_aweme_id,omitempty"`
 	// 标题要求，1-80个字符，例如标题包含商品名称、商品性能/特点关键词等；若需提及账号或话题，请在其他要求参数中填写

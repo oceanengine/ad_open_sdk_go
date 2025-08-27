@@ -18,6 +18,12 @@ type SharedWalletWalletBalanceGetV30ResponseDataSharedWalletBalanceInfoValueGene
 	CreditBrandValidBalance *float64 `json:"credit_brand_valid_balance,omitempty"`
 	// 授信通用可用余额(单位元)
 	CreditGeneralValidBalance *float64 `json:"credit_general_valid_balance,omitempty"`
+	// 预借款竞价可用余额(单位元)
+	PreloanBiddingValidBalance *float64 `json:"preloan_bidding_valid_balance,omitempty"`
+	// 预借款品牌可用余额(单位元)
+	PreloanBrandValidBalance *float64 `json:"preloan_brand_valid_balance,omitempty"`
+	// 预借款通用可用余额(单位元)
+	PreloanGeneralValidBalance *float64 `json:"preloan_general_valid_balance,omitempty"`
 	// 预付竞价可用余额(单位元)
 	PrepayBiddingValidBalance *float64 `json:"prepay_bidding_valid_balance,omitempty"`
 	// 预付品牌可用余额(单位元)

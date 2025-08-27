@@ -20,11 +20,19 @@ type StardeliveryTaskAuthorVideoDetailV30ResponseDataValidAuthorSubmittedVideosI
 	Duration  *int64                                                                       `json:"duration,omitempty"`
 	ImageMode *StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosImageMode `json:"image_mode,omitempty"`
 	//
+	IsvId *int64 `json:"isv_id,omitempty"`
+	//
+	IsvName *string `json:"isv_name,omitempty"`
+	//
 	ItemId *int64 `json:"item_id,omitempty"`
 	//
-	MaterialId                 *int64                                                                                             `json:"material_id,omitempty"`
-	MaterialProperties         *StardeliveryTaskAuthorVideoDetailV30ResponseDataValidAuthorSubmittedVideosInnerMaterialProperties `json:"material_properties,omitempty"`
-	StarMaterialPurchaseMethod *StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarMaterialPurchaseMethod      `json:"star_material_purchase_method,omitempty"`
+	MaterialId         *int64                                                                                             `json:"material_id,omitempty"`
+	MaterialProperties *StardeliveryTaskAuthorVideoDetailV30ResponseDataValidAuthorSubmittedVideosInnerMaterialProperties `json:"material_properties,omitempty"`
+	//
+	StarMaterialCreativeOrient *string `json:"star_material_creative_orient,omitempty"`
+	//
+	StarMaterialDisplayFormat  *string                                                                                       `json:"star_material_display_format,omitempty"`
+	StarMaterialPurchaseMethod *StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarMaterialPurchaseMethod `json:"star_material_purchase_method,omitempty"`
 	// 视频被客户审核拒绝的理由
 	StarVideoBanReasonDetail *string `json:"star_video_ban_reason_detail,omitempty"`
 	// 视频被服务商审核通过的时间

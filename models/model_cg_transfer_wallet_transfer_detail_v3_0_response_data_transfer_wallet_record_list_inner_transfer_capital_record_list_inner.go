@@ -12,7 +12,9 @@ package models
 
 // CgTransferWalletTransferDetailV30ResponseDataTransferWalletRecordListInnerTransferCapitalRecordListInner struct for CgTransferWalletTransferDetailV30ResponseDataTransferWalletRecordListInnerTransferCapitalRecordListInner
 type CgTransferWalletTransferDetailV30ResponseDataTransferWalletRecordListInnerTransferCapitalRecordListInner struct {
-	CapitalType *CgTransferWalletTransferDetailV30DataTransferWalletRecordListTransferCapitalRecordListCapitalType `json:"capital_type,omitempty"`
+	// 转账资金子类型明细列表
+	CapitalSubDetailList []*CgTransferWalletTransferDetailV30ResponseDataTransferWalletRecordListInnerTransferCapitalRecordListInnerCapitalSubDetailListInner `json:"capital_sub_detail_list,omitempty"`
+	CapitalType          *CgTransferWalletTransferDetailV30DataTransferWalletRecordListTransferCapitalRecordListCapitalType                                   `json:"capital_type,omitempty"`
 	// 失败原因
 	FailReason *string                                                                                         `json:"fail_reason,omitempty"`
 	Platform   *CgTransferWalletTransferDetailV30DataTransferWalletRecordListTransferCapitalRecordListPlatform `json:"platform,omitempty"`

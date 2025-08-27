@@ -52,7 +52,7 @@ func (r *ApiOpenApi2EventManagerAssetsCreatePostRequest) WithLog(enable bool) *A
 /*
 OpenApi2EventManagerAssetsCreatePost Method for OpenApi2EventManagerAssetsCreatePost
 
-API Description
+此接口用于创建广告账户下资产
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2EventManagerAssetsCreatePostRequest

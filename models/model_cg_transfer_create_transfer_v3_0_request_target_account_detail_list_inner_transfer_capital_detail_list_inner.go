@@ -12,7 +12,8 @@ package models
 
 // CgTransferCreateTransferV30RequestTargetAccountDetailListInnerTransferCapitalDetailListInner struct for CgTransferCreateTransferV30RequestTargetAccountDetailListInnerTransferCapitalDetailListInner
 type CgTransferCreateTransferV30RequestTargetAccountDetailListInnerTransferCapitalDetailListInner struct {
-	CapitalType CgTransferCreateTransferV30TargetAccountDetailListTransferCapitalDetailListCapitalType `json:"capital_type"`
+	CapitalSubType *CgTransferCreateTransferV30TargetAccountDetailListTransferCapitalDetailListCapitalSubType `json:"capital_sub_type,omitempty"`
+	CapitalType    CgTransferCreateTransferV30TargetAccountDetailListTransferCapitalDetailListCapitalType     `json:"capital_type"`
 	// 转账资金金额(单位：分)
 	TransferAmount int64 `json:"transfer_amount"`
 }

@@ -15,11 +15,11 @@ type ToolsCluePrivateMessageCallbackV2Request struct {
 	Adinfo *ToolsCluePrivateMessageCallbackV2RequestAdinfo `json:"adinfo,omitempty"`
 	// 授权的广告主id，可以取抖开私信拉取接口里的adv_id
 	AdvertiserId int64 `json:"advertiser_id"`
-	// 接待商家的抖音open id
+	// 接待商家的抖音open id，对齐私信拉取接口里面的 open_id
 	BOpenId string `json:"b_open_id"`
-	// 留资用户的抖音open id
+	// 留资用户的抖音open id，对齐私信拉取接口里面的 open_id
 	COpenId string `json:"c_open_id"`
-	// 抖开接口里面的开发者唯一标识
+	// 抖开接口里面的开发者唯一标识，对齐私信拉取接口里面的 client_key
 	ClientKey       string                                                  `json:"client_key"`
 	ClueConvertInfo ToolsCluePrivateMessageCallbackV2RequestClueConvertInfo `json:"clue_convert_info"`
 	ClueData        ToolsCluePrivateMessageCallbackV2RequestClueData        `json:"clue_data"`

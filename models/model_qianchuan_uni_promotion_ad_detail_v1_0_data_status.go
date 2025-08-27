@@ -24,6 +24,7 @@ const (
 	CAMPAIGN_OFFLINE_BUDGET_QianchuanUniPromotionAdDetailV10DataStatus       QianchuanUniPromotionAdDetailV10DataStatus = "CAMPAIGN_OFFLINE_BUDGET"
 	CAMPAIGN_PRE_OFFLINE_BUDGET_QianchuanUniPromotionAdDetailV10DataStatus   QianchuanUniPromotionAdDetailV10DataStatus = "CAMPAIGN_PRE_OFFLINE_BUDGET"
 	CREATE_QianchuanUniPromotionAdDetailV10DataStatus                        QianchuanUniPromotionAdDetailV10DataStatus = "CREATE"
+	DAILY_DELIVERY_SECONDS_DONE_QianchuanUniPromotionAdDetailV10DataStatus   QianchuanUniPromotionAdDetailV10DataStatus = "DAILY_DELIVERY_SECONDS_DONE"
 	DELETE_QianchuanUniPromotionAdDetailV10DataStatus                        QianchuanUniPromotionAdDetailV10DataStatus = "DELETE"
 	DELIVERY_OK_QianchuanUniPromotionAdDetailV10DataStatus                   QianchuanUniPromotionAdDetailV10DataStatus = "DELIVERY_OK"
 	DISABLE_QianchuanUniPromotionAdDetailV10DataStatus                       QianchuanUniPromotionAdDetailV10DataStatus = "DISABLE"

@@ -16,6 +16,8 @@ type AicMixcutTaskResultGetV30ResponseDataVideoInfosInner struct {
 	VideoId *string `json:"video_id,omitempty"`
 	// 视频名称
 	VideoName *string `json:"video_name,omitempty"`
+	// 视频使用的脚本内容
+	VideoScript *string `json:"video_script,omitempty"`
 	// 视频预览链接，可利用此链接批量下载视频
 	VideoUrl *string `json:"video_url,omitempty"`
 }

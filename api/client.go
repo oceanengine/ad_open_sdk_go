@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.67
+// APIClient manages communication with the Oceanengine Open Api API v1.1.68
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -135,7 +135,11 @@ type APIClient struct {
 
 	AgentAdvPerenniallyPunishHistoryQueryV2Api *AgentAdvPerenniallyPunishHistoryQueryV2ApiService
 
+	AgentAdvPerenniallyPunishV2Api *AgentAdvPerenniallyPunishV2ApiService
+
 	AgentAdvRechargeRechargeRecordV2Api *AgentAdvRechargeRechargeRecordV2ApiService
+
+	AgentAdvTemporaryPunishV2Api *AgentAdvTemporaryPunishV2ApiService
 
 	AgentAdvertiserAssignV2Api *AgentAdvertiserAssignV2ApiService
 
@@ -159,19 +163,11 @@ type APIClient struct {
 
 	AgentCreditChargeSubmitV2Api *AgentCreditChargeSubmitV2ApiService
 
-	AgentFundTransferSeqCommitV2Api *AgentFundTransferSeqCommitV2ApiService
-
-	AgentFundTransferSeqCreateV2Api *AgentFundTransferSeqCreateV2ApiService
-
 	AgentInfoV2Api *AgentInfoV2ApiService
 
 	AgentPrepayChargeGenerateRemittanceCodeV2Api *AgentPrepayChargeGenerateRemittanceCodeV2ApiService
 
 	AgentQueryRiskPromotionListV2Api *AgentQueryRiskPromotionListV2ApiService
-
-	AgentRefundTransferSeqCommitV2Api *AgentRefundTransferSeqCommitV2ApiService
-
-	AgentRefundTransferSeqCreateV2Api *AgentRefundTransferSeqCreateV2ApiService
 
 	AgentTransferTransactionRecordV2Api *AgentTransferTransactionRecordV2ApiService
 
@@ -493,6 +489,8 @@ type APIClient struct {
 
 	DmpCustomAudienceReadV2Api *DmpCustomAudienceReadV2ApiService
 
+	DmpCustomAudienceSelectV2Api *DmpCustomAudienceSelectV2ApiService
+
 	DmpDataSourceCreateV2Api *DmpDataSourceCreateV2ApiService
 
 	DmpDataSourceFileUploadV2Api *DmpDataSourceFileUploadV2ApiService
@@ -583,8 +581,6 @@ type APIClient struct {
 
 	EnterpriseBindListGetV10Api *EnterpriseBindListGetV10ApiService
 
-	EnterpriseInfoV10Api *EnterpriseInfoV10ApiService
-
 	EventManagerAbnormalAssetsGetV30Api *EventManagerAbnormalAssetsGetV30ApiService
 
 	EventManagerAssetsCreateV2Api *EventManagerAssetsCreateV2ApiService
@@ -593,9 +589,13 @@ type APIClient struct {
 
 	EventManagerAuthDelPublicKeyV2Api *EventManagerAuthDelPublicKeyV2ApiService
 
+	EventManagerAuthDisableV2Api *EventManagerAuthDisableV2ApiService
+
 	EventManagerAuthEnableV2Api *EventManagerAuthEnableV2ApiService
 
 	EventManagerAuthGetAllPublicKeysV2Api *EventManagerAuthGetAllPublicKeysV2ApiService
+
+	EventManagerAuthGetAuthStatusV2Api *EventManagerAuthGetAuthStatusV2ApiService
 
 	EventManagerAuthGetPublicKeyV2Api *EventManagerAuthGetPublicKeyV2ApiService
 
@@ -1179,6 +1179,8 @@ type APIClient struct {
 
 	QianchuanUniAwemeSuggestBudgetV10Api *QianchuanUniAwemeSuggestBudgetV10ApiService
 
+	QianchuanUniPromotionAdBudgetUpdateV10Api *QianchuanUniPromotionAdBudgetUpdateV10ApiService
+
 	QianchuanUniPromotionAdControlTaskCreateV10Api *QianchuanUniPromotionAdControlTaskCreateV10ApiService
 
 	QianchuanUniPromotionAdControlTaskListV10Api *QianchuanUniPromotionAdControlTaskListV10ApiService
@@ -1193,13 +1195,21 @@ type APIClient struct {
 
 	QianchuanUniPromotionAdMaterialGetV10Api *QianchuanUniPromotionAdMaterialGetV10ApiService
 
+	QianchuanUniPromotionAdNameUpdateV10Api *QianchuanUniPromotionAdNameUpdateV10ApiService
+
 	QianchuanUniPromotionAdProductDeleteV10Api *QianchuanUniPromotionAdProductDeleteV10ApiService
 
 	QianchuanUniPromotionAdProductGetV10Api *QianchuanUniPromotionAdProductGetV10ApiService
 
+	QianchuanUniPromotionAdRoi2GoalUpdateV10Api *QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService
+
+	QianchuanUniPromotionAdScheduleDateUpdateV10Api *QianchuanUniPromotionAdScheduleDateUpdateV10ApiService
+
 	QianchuanUniPromotionAdStatusUpdateV10Api *QianchuanUniPromotionAdStatusUpdateV10ApiService
 
 	QianchuanUniPromotionAdSuggestionV10Api *QianchuanUniPromotionAdSuggestionV10ApiService
+
+	QianchuanUniPromotionAuthInitV10Api *QianchuanUniPromotionAuthInitV10ApiService
 
 	QianchuanUniPromotionBlockMaterialGetV10Api *QianchuanUniPromotionBlockMaterialGetV10ApiService
 
@@ -1353,6 +1363,10 @@ type APIClient struct {
 
 	SharedWalletAccountRelationGetV30Api *SharedWalletAccountRelationGetV30ApiService
 
+	SharedWalletBudgetGetV30Api *SharedWalletBudgetGetV30ApiService
+
+	SharedWalletBudgetSubmitV30Api *SharedWalletBudgetSubmitV30ApiService
+
 	SharedWalletDailyStatGetV30Api *SharedWalletDailyStatGetV30ApiService
 
 	SharedWalletMainWalletGetV30Api *SharedWalletMainWalletGetV30ApiService
@@ -1364,6 +1378,10 @@ type APIClient struct {
 	SharedWalletWalletInfoGetV30Api *SharedWalletWalletInfoGetV30ApiService
 
 	SharedWalletWalletRelationGetV30Api *SharedWalletWalletRelationGetV30ApiService
+
+	SharedWalletWatchRuleGetV30Api *SharedWalletWatchRuleGetV30ApiService
+
+	SharedWalletWatchRuleSubmitV30Api *SharedWalletWatchRuleSubmitV30ApiService
 
 	ShopBonusCreateV30Api *ShopBonusCreateV30ApiService
 
@@ -1625,13 +1643,9 @@ type APIClient struct {
 
 	ToolQuickAppManagementQuickAppGetV2Api *ToolQuickAppManagementQuickAppGetV2ApiService
 
-	ToolsAbTestCreateV2Api *ToolsAbTestCreateV2ApiService
-
 	ToolsAbTestInfoGetV2Api *ToolsAbTestInfoGetV2ApiService
 
 	ToolsAbTestListGetV2Api *ToolsAbTestListGetV2ApiService
-
-	ToolsAbTestUpdateV2Api *ToolsAbTestUpdateV2ApiService
 
 	ToolsAdPreviewQrcodeGetV30Api *ToolsAdPreviewQrcodeGetV30ApiService
 
@@ -2162,7 +2176,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AgentAdvBrandListQueryV2Api = (*AgentAdvBrandListQueryV2ApiService)(&c.common)
 	c.AgentAdvCostReportListQueryV2Api = (*AgentAdvCostReportListQueryV2ApiService)(&c.common)
 	c.AgentAdvPerenniallyPunishHistoryQueryV2Api = (*AgentAdvPerenniallyPunishHistoryQueryV2ApiService)(&c.common)
+	c.AgentAdvPerenniallyPunishV2Api = (*AgentAdvPerenniallyPunishV2ApiService)(&c.common)
 	c.AgentAdvRechargeRechargeRecordV2Api = (*AgentAdvRechargeRechargeRecordV2ApiService)(&c.common)
+	c.AgentAdvTemporaryPunishV2Api = (*AgentAdvTemporaryPunishV2ApiService)(&c.common)
 	c.AgentAdvertiserAssignV2Api = (*AgentAdvertiserAssignV2ApiService)(&c.common)
 	c.AgentAdvertiserCopyV2Api = (*AgentAdvertiserCopyV2ApiService)(&c.common)
 	c.AgentAdvertiserInfoQueryV2Api = (*AgentAdvertiserInfoQueryV2ApiService)(&c.common)
@@ -2174,13 +2190,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AgentCompanyBiddingListQueryV2Api = (*AgentCompanyBiddingListQueryV2ApiService)(&c.common)
 	c.AgentCompanyBrandListQueryV2Api = (*AgentCompanyBrandListQueryV2ApiService)(&c.common)
 	c.AgentCreditChargeSubmitV2Api = (*AgentCreditChargeSubmitV2ApiService)(&c.common)
-	c.AgentFundTransferSeqCommitV2Api = (*AgentFundTransferSeqCommitV2ApiService)(&c.common)
-	c.AgentFundTransferSeqCreateV2Api = (*AgentFundTransferSeqCreateV2ApiService)(&c.common)
 	c.AgentInfoV2Api = (*AgentInfoV2ApiService)(&c.common)
 	c.AgentPrepayChargeGenerateRemittanceCodeV2Api = (*AgentPrepayChargeGenerateRemittanceCodeV2ApiService)(&c.common)
 	c.AgentQueryRiskPromotionListV2Api = (*AgentQueryRiskPromotionListV2ApiService)(&c.common)
-	c.AgentRefundTransferSeqCommitV2Api = (*AgentRefundTransferSeqCommitV2ApiService)(&c.common)
-	c.AgentRefundTransferSeqCreateV2Api = (*AgentRefundTransferSeqCreateV2ApiService)(&c.common)
 	c.AgentTransferTransactionRecordV2Api = (*AgentTransferTransactionRecordV2ApiService)(&c.common)
 	c.AicElementDeleteV30Api = (*AicElementDeleteV30ApiService)(&c.common)
 	c.AicElementGetV30Api = (*AicElementGetV30ApiService)(&c.common)
@@ -2341,6 +2353,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.DmpCustomAudiencePublishV2Api = (*DmpCustomAudiencePublishV2ApiService)(&c.common)
 	c.DmpCustomAudiencePushV2V2Api = (*DmpCustomAudiencePushV2V2ApiService)(&c.common)
 	c.DmpCustomAudienceReadV2Api = (*DmpCustomAudienceReadV2ApiService)(&c.common)
+	c.DmpCustomAudienceSelectV2Api = (*DmpCustomAudienceSelectV2ApiService)(&c.common)
 	c.DmpDataSourceCreateV2Api = (*DmpDataSourceCreateV2ApiService)(&c.common)
 	c.DmpDataSourceFileUploadV2Api = (*DmpDataSourceFileUploadV2ApiService)(&c.common)
 	c.DmpDataSourceReadV2Api = (*DmpDataSourceReadV2ApiService)(&c.common)
@@ -2386,13 +2399,14 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.EbpAdvertiserTaskListV2Api = (*EbpAdvertiserTaskListV2ApiService)(&c.common)
 	c.EbpLevelGetV2Api = (*EbpLevelGetV2ApiService)(&c.common)
 	c.EnterpriseBindListGetV10Api = (*EnterpriseBindListGetV10ApiService)(&c.common)
-	c.EnterpriseInfoV10Api = (*EnterpriseInfoV10ApiService)(&c.common)
 	c.EventManagerAbnormalAssetsGetV30Api = (*EventManagerAbnormalAssetsGetV30ApiService)(&c.common)
 	c.EventManagerAssetsCreateV2Api = (*EventManagerAssetsCreateV2ApiService)(&c.common)
 	c.EventManagerAuthAddPublicKeyV2Api = (*EventManagerAuthAddPublicKeyV2ApiService)(&c.common)
 	c.EventManagerAuthDelPublicKeyV2Api = (*EventManagerAuthDelPublicKeyV2ApiService)(&c.common)
+	c.EventManagerAuthDisableV2Api = (*EventManagerAuthDisableV2ApiService)(&c.common)
 	c.EventManagerAuthEnableV2Api = (*EventManagerAuthEnableV2ApiService)(&c.common)
 	c.EventManagerAuthGetAllPublicKeysV2Api = (*EventManagerAuthGetAllPublicKeysV2ApiService)(&c.common)
+	c.EventManagerAuthGetAuthStatusV2Api = (*EventManagerAuthGetAuthStatusV2ApiService)(&c.common)
 	c.EventManagerAuthGetPublicKeyV2Api = (*EventManagerAuthGetPublicKeyV2ApiService)(&c.common)
 	c.EventManagerAvailableEventsGetV2Api = (*EventManagerAvailableEventsGetV2ApiService)(&c.common)
 	c.EventManagerDeepBidTypeGetV30Api = (*EventManagerDeepBidTypeGetV30ApiService)(&c.common)
@@ -2684,6 +2698,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanUniAwemeAdUpdateV10Api = (*QianchuanUniAwemeAdUpdateV10ApiService)(&c.common)
 	c.QianchuanUniAwemeAuthorizedGetV10Api = (*QianchuanUniAwemeAuthorizedGetV10ApiService)(&c.common)
 	c.QianchuanUniAwemeSuggestBudgetV10Api = (*QianchuanUniAwemeSuggestBudgetV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdBudgetUpdateV10Api = (*QianchuanUniPromotionAdBudgetUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdControlTaskCreateV10Api = (*QianchuanUniPromotionAdControlTaskCreateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdControlTaskListV10Api = (*QianchuanUniPromotionAdControlTaskListV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdControlTaskStatusUpdateV10Api = (*QianchuanUniPromotionAdControlTaskStatusUpdateV10ApiService)(&c.common)
@@ -2691,10 +2706,14 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanUniPromotionAdMaterialAddV10Api = (*QianchuanUniPromotionAdMaterialAddV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdMaterialDeleteV10Api = (*QianchuanUniPromotionAdMaterialDeleteV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdMaterialGetV10Api = (*QianchuanUniPromotionAdMaterialGetV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdNameUpdateV10Api = (*QianchuanUniPromotionAdNameUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdProductDeleteV10Api = (*QianchuanUniPromotionAdProductDeleteV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdProductGetV10Api = (*QianchuanUniPromotionAdProductGetV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdRoi2GoalUpdateV10Api = (*QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAdScheduleDateUpdateV10Api = (*QianchuanUniPromotionAdScheduleDateUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdStatusUpdateV10Api = (*QianchuanUniPromotionAdStatusUpdateV10ApiService)(&c.common)
 	c.QianchuanUniPromotionAdSuggestionV10Api = (*QianchuanUniPromotionAdSuggestionV10ApiService)(&c.common)
+	c.QianchuanUniPromotionAuthInitV10Api = (*QianchuanUniPromotionAuthInitV10ApiService)(&c.common)
 	c.QianchuanUniPromotionBlockMaterialGetV10Api = (*QianchuanUniPromotionBlockMaterialGetV10ApiService)(&c.common)
 	c.QianchuanUniPromotionListV10Api = (*QianchuanUniPromotionListV10ApiService)(&c.common)
 	c.QianchuanUniPromotionProductAwemeGetV10Api = (*QianchuanUniPromotionProductAwemeGetV10ApiService)(&c.common)
@@ -2771,12 +2790,16 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ServeMarketCidVerifyTokenV10Api = (*ServeMarketCidVerifyTokenV10ApiService)(&c.common)
 	c.ServeMarketOrderGetV10Api = (*ServeMarketOrderGetV10ApiService)(&c.common)
 	c.SharedWalletAccountRelationGetV30Api = (*SharedWalletAccountRelationGetV30ApiService)(&c.common)
+	c.SharedWalletBudgetGetV30Api = (*SharedWalletBudgetGetV30ApiService)(&c.common)
+	c.SharedWalletBudgetSubmitV30Api = (*SharedWalletBudgetSubmitV30ApiService)(&c.common)
 	c.SharedWalletDailyStatGetV30Api = (*SharedWalletDailyStatGetV30ApiService)(&c.common)
 	c.SharedWalletMainWalletGetV30Api = (*SharedWalletMainWalletGetV30ApiService)(&c.common)
 	c.SharedWalletTransactionDetailGetV30Api = (*SharedWalletTransactionDetailGetV30ApiService)(&c.common)
 	c.SharedWalletWalletBalanceGetV30Api = (*SharedWalletWalletBalanceGetV30ApiService)(&c.common)
 	c.SharedWalletWalletInfoGetV30Api = (*SharedWalletWalletInfoGetV30ApiService)(&c.common)
 	c.SharedWalletWalletRelationGetV30Api = (*SharedWalletWalletRelationGetV30ApiService)(&c.common)
+	c.SharedWalletWatchRuleGetV30Api = (*SharedWalletWatchRuleGetV30ApiService)(&c.common)
+	c.SharedWalletWatchRuleSubmitV30Api = (*SharedWalletWatchRuleSubmitV30ApiService)(&c.common)
 	c.ShopBonusCreateV30Api = (*ShopBonusCreateV30ApiService)(&c.common)
 	c.ShopBonusSuccessGetV30Api = (*ShopBonusSuccessGetV30ApiService)(&c.common)
 	c.SpiTaskGetV2Api = (*SpiTaskGetV2ApiService)(&c.common)
@@ -2907,10 +2930,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.SubscribeAccountsRemoveV30Api = (*SubscribeAccountsRemoveV30ApiService)(&c.common)
 	c.SuggWordsV30Api = (*SuggWordsV30ApiService)(&c.common)
 	c.ToolQuickAppManagementQuickAppGetV2Api = (*ToolQuickAppManagementQuickAppGetV2ApiService)(&c.common)
-	c.ToolsAbTestCreateV2Api = (*ToolsAbTestCreateV2ApiService)(&c.common)
 	c.ToolsAbTestInfoGetV2Api = (*ToolsAbTestInfoGetV2ApiService)(&c.common)
 	c.ToolsAbTestListGetV2Api = (*ToolsAbTestListGetV2ApiService)(&c.common)
-	c.ToolsAbTestUpdateV2Api = (*ToolsAbTestUpdateV2ApiService)(&c.common)
 	c.ToolsAdPreviewQrcodeGetV30Api = (*ToolsAdPreviewQrcodeGetV30ApiService)(&c.common)
 	c.ToolsAdRaiseStatusGetV2Api = (*ToolsAdRaiseStatusGetV2ApiService)(&c.common)
 	c.ToolsAdRaiseVersionGetV2Api = (*ToolsAdRaiseVersionGetV2ApiService)(&c.common)

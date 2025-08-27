@@ -14,6 +14,7 @@ package models
 type AgentAdvertiserSelectV2Filtering struct {
 	//
 	AdvertiserIds []int64                                     `json:"advertiser_ids,omitempty"`
+	CanCopy       *AgentAdvertiserSelectV2FilteringCanCopy    `json:"can_copy,omitempty"`
 	CostPeriod    *AgentAdvertiserSelectV2FilteringCostPeriod `json:"cost_period,omitempty"`
 	//
 	CreateEndTime **string `json:"create_end_time,omitempty"`

@@ -18,12 +18,12 @@ const (
 	CUSTOMER_NAME_AgentInfoV2Fields  AgentInfoV2Fields = "customer_name"
 	CUSTOMER_ID_AgentInfoV2Fields    AgentInfoV2Fields = "customer_id"
 	CREATE_TIME_AgentInfoV2Fields    AgentInfoV2Fields = "create_time"
-	AGENT_ID_AgentInfoV2Fields       AgentInfoV2Fields = "agent_id"
-	AGENT_NAME_AgentInfoV2Fields     AgentInfoV2Fields = "agent_name"
-	ROLE_AgentInfoV2Fields           AgentInfoV2Fields = "role"
 	ACCOUNT_STATUS_AgentInfoV2Fields AgentInfoV2Fields = "account_status"
-	COMPANY_ID_AgentInfoV2Fields     AgentInfoV2Fields = "company_id"
 	COMPANY_NAME_AgentInfoV2Fields   AgentInfoV2Fields = "company_name"
+	ROLE_AgentInfoV2Fields           AgentInfoV2Fields = "role"
+	AGENT_NAME_AgentInfoV2Fields     AgentInfoV2Fields = "agent_name"
+	COMPANY_ID_AgentInfoV2Fields     AgentInfoV2Fields = "company_id"
+	AGENT_ID_AgentInfoV2Fields       AgentInfoV2Fields = "agent_id"
 )
 
 // Ptr returns reference to agent_info_v2_fields value

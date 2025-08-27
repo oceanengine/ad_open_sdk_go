@@ -12,6 +12,7 @@ package models
 
 // SubscribeAccountsListV30ResponseDataAdvertisersInner struct for SubscribeAccountsListV30ResponseDataAdvertisersInner
 type SubscribeAccountsListV30ResponseDataAdvertisersInner struct {
+	AccountType *SubscribeAccountsListV30DataAdvertisersAccountType `json:"account_type,omitempty"`
 	//
 	AdvertiserId int64 `json:"advertiser_id"`
 	//
@@ -22,6 +23,7 @@ type SubscribeAccountsListV30ResponseDataAdvertisersInner struct {
 	Event *string `json:"event,omitempty"`
 	//
 	Reason *string                                        `json:"reason,omitempty"`
+	Source *SubscribeAccountsListV30DataAdvertisersSource `json:"source,omitempty"`
 	Status *SubscribeAccountsListV30DataAdvertisersStatus `json:"status,omitempty"`
 	//
 	UpdatedTime *string `json:"updated_time,omitempty"`
