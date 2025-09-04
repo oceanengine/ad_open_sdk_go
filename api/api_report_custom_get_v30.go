@@ -116,7 +116,7 @@ func (r *ApiOpenApiV30ReportCustomGetGetRequest) WithLog(enable bool) *ApiOpenAp
 /*
 OpenApiV30ReportCustomGetGet Method for OpenApiV30ReportCustomGetGet
 
-自定义报表
+用于获取自定义报表数据，支持自由选择和组合指标和维度定义数据报表字段。
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30ReportCustomGetGetRequest

@@ -15,10 +15,10 @@ type ClueSmartphoneCreateV2ValidateType string
 
 // List of clue_smartphone_create_v2_validate_type
 const (
-	AUTO_VERIFICATION_ClueSmartphoneCreateV2ValidateType ClueSmartphoneCreateV2ValidateType = "AUTO_VERIFICATION"
-	ALL_VERIFICATION_ClueSmartphoneCreateV2ValidateType  ClueSmartphoneCreateV2ValidateType = "ALL_VERIFICATION"
-	CLUE_PRIORITY_ClueSmartphoneCreateV2ValidateType     ClueSmartphoneCreateV2ValidateType = "CLUE_PRIORITY"
 	NONE_VERIFICATION_ClueSmartphoneCreateV2ValidateType ClueSmartphoneCreateV2ValidateType = "NONE_VERIFICATION"
+	CLUE_PRIORITY_ClueSmartphoneCreateV2ValidateType     ClueSmartphoneCreateV2ValidateType = "CLUE_PRIORITY"
+	ALL_VERIFICATION_ClueSmartphoneCreateV2ValidateType  ClueSmartphoneCreateV2ValidateType = "ALL_VERIFICATION"
+	AUTO_VERIFICATION_ClueSmartphoneCreateV2ValidateType ClueSmartphoneCreateV2ValidateType = "AUTO_VERIFICATION"
 	VALIDITY_PRIORITY_ClueSmartphoneCreateV2ValidateType ClueSmartphoneCreateV2ValidateType = "VALIDITY_PRIORITY"
 )
 

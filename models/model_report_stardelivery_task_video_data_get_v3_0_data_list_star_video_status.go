@@ -15,9 +15,11 @@ type ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus string
 
 // List of report_stardelivery_task_video_data_get_v3.0_data_list_star_video_status
 const (
-	INVISIBLE_ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus   ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus = "INVISIBLE"
-	UNPUBLISHED_ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus = "UNPUBLISHED"
-	VISIBLE_ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus     ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus = "VISIBLE"
+	AD_DELIVERY_STOPPED_ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus = "AD_DELIVERY_STOPPED"
+	INVISIBLE_ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus           ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus = "INVISIBLE"
+	SHARING_CANCELED_ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus    ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus = "SHARING_CANCELED"
+	UNPUBLISHED_ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus         ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus = "UNPUBLISHED"
+	VISIBLE_ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus             ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus = "VISIBLE"
 )
 
 // Ptr returns reference to report_stardelivery_task_video_data_get_v3.0_data_list_star_video_status value

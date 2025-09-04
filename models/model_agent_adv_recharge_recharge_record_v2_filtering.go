@@ -12,7 +12,9 @@ package models
 
 // AgentAdvRechargeRechargeRecordV2Filtering
 type AgentAdvRechargeRechargeRecordV2Filtering struct {
-	AccountType  *AgentAdvRechargeRechargeRecordV2FilteringAccountType  `json:"account_type,omitempty"`
+	AccountType *AgentAdvRechargeRechargeRecordV2FilteringAccountType `json:"account_type,omitempty"`
+	// 广告主id列表
+	AdvIds       []int64                                                `json:"adv_ids,omitempty"`
 	Platform     *AgentAdvRechargeRechargeRecordV2FilteringPlatform     `json:"platform,omitempty"`
 	RechargeType *AgentAdvRechargeRechargeRecordV2FilteringRechargeType `json:"recharge_type,omitempty"`
 }

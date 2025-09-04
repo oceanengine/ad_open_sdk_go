@@ -15,12 +15,12 @@ type AudiencePackageCreateV2ConvertedTimeDuration string
 
 // List of audience_package_create_v2_converted_time_duration
 const (
-	SEVEN_DAY_AudiencePackageCreateV2ConvertedTimeDuration    AudiencePackageCreateV2ConvertedTimeDuration = "SEVEN_DAY"
-	TODAY_AudiencePackageCreateV2ConvertedTimeDuration        AudiencePackageCreateV2ConvertedTimeDuration = "TODAY"
-	THREE_MONTH_AudiencePackageCreateV2ConvertedTimeDuration  AudiencePackageCreateV2ConvertedTimeDuration = "THREE_MONTH"
 	NONE_AudiencePackageCreateV2ConvertedTimeDuration         AudiencePackageCreateV2ConvertedTimeDuration = "NONE"
-	SIX_MONTH_AudiencePackageCreateV2ConvertedTimeDuration    AudiencePackageCreateV2ConvertedTimeDuration = "SIX_MONTH"
+	SEVEN_DAY_AudiencePackageCreateV2ConvertedTimeDuration    AudiencePackageCreateV2ConvertedTimeDuration = "SEVEN_DAY"
 	ONE_MONTH_AudiencePackageCreateV2ConvertedTimeDuration    AudiencePackageCreateV2ConvertedTimeDuration = "ONE_MONTH"
+	THREE_MONTH_AudiencePackageCreateV2ConvertedTimeDuration  AudiencePackageCreateV2ConvertedTimeDuration = "THREE_MONTH"
+	SIX_MONTH_AudiencePackageCreateV2ConvertedTimeDuration    AudiencePackageCreateV2ConvertedTimeDuration = "SIX_MONTH"
+	TODAY_AudiencePackageCreateV2ConvertedTimeDuration        AudiencePackageCreateV2ConvertedTimeDuration = "TODAY"
 	TWELVE_MONTH_AudiencePackageCreateV2ConvertedTimeDuration AudiencePackageCreateV2ConvertedTimeDuration = "TWELVE_MONTH"
 )
 

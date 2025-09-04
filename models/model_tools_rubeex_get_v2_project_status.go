@@ -16,8 +16,8 @@ type ToolsRubeexGetV2ProjectStatus string
 // List of tools_rubeex_get_v2_project_status
 const (
 	ENABLED_ToolsRubeexGetV2ProjectStatus ToolsRubeexGetV2ProjectStatus = "ENABLED"
-	DELETED_ToolsRubeexGetV2ProjectStatus ToolsRubeexGetV2ProjectStatus = "DELETED"
 	INITAL_ToolsRubeexGetV2ProjectStatus  ToolsRubeexGetV2ProjectStatus = "INITAL"
+	DELETED_ToolsRubeexGetV2ProjectStatus ToolsRubeexGetV2ProjectStatus = "DELETED"
 )
 
 // Ptr returns reference to tools_rubeex_get_v2_project_status value

@@ -47,6 +47,7 @@ const (
 	MATERIAL_STATUS_SYSTEM_DISABLE_QUOTA_LIMIT_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus  PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_SYSTEM_DISABLE_QUOTA_LIMIT"
 	MATERIAL_STATUS_TIME_DONE_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus                   PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_TIME_DONE"
 	MATERIAL_STATUS_TIME_NO_REACH_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus               PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_TIME_NO_REACH"
+	MATERIAL_STATUS_VIDEO_NO_ADS_PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus                PromotionListV30DataListPromotionMaterialsVideoMaterialListMaterialStatus = "MATERIAL_STATUS_VIDEO_NO_ADS"
 )
 
 // Ptr returns reference to promotion_list_v3.0_data_list_promotion_materials_video_material_list_material_status value

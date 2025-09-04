@@ -18,7 +18,5 @@ type PromotionCreateV30RequestNativeSetting struct {
 	//
 	AwemeIds         []string                                         `json:"aweme_ids,omitempty"`
 	AwemeSettingType *PromotionCreateV30NativeSettingAwemeSettingType `json:"aweme_setting_type,omitempty"`
-	//
-	ExcludeAwemeIds []string                                        `json:"exclude_aweme_ids,omitempty"`
-	IsFeedAndFavSee *PromotionCreateV30NativeSettingIsFeedAndFavSee `json:"is_feed_and_fav_see,omitempty"`
+	IsFeedAndFavSee  *PromotionCreateV30NativeSettingIsFeedAndFavSee  `json:"is_feed_and_fav_see,omitempty"`
 }

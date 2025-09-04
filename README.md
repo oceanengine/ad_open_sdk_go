@@ -1202,7 +1202,6 @@ Class | Method | HTTP request
 *ToolsSiteTemplateSiteCreateV2Api* | **OpenApi2ToolsSiteTemplateSiteCreatePost** | **Post** /open_api/2/tools/site_template/site/create/
 *ToolsSiteUpdateStatusV2Api* | **OpenApi2ToolsSiteUpdateStatusPost** | **Post** /open_api/2/tools/site/update_status/
 *ToolsSiteUpdateV2Api* | **OpenApi2ToolsSiteUpdatePost** | **Post** /open_api/2/tools/site/update/
-*ToolsStarTaskMaterialTypeV2Api* | **OpenApi2ToolsStarTaskMaterialTypeGet** | **Get** /open_api/2/tools/star_task/material_type/
 *ToolsStarTaskSettlementConfigV2Api* | **OpenApi2ToolsStarTaskSettlementConfigGet** | **Get** /open_api/2/tools/star_task/settlement_config/
 *ToolsStarTaskTitleTopicGetV2Api* | **OpenApi2ToolsStarTaskTitleTopicGetGet** | **Get** /open_api/2/tools/star_task/title_topic/get/
 *ToolsSuggestBudgetGetV30Api* | **OpenApiV30ToolsSuggestBudgetGetGet** | **Get** /open_api/v3.0/tools/suggest_budget/get/

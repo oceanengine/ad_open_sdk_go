@@ -15,11 +15,11 @@ type ReportAudienceAwemeListV2FilteringAudienceLevel string
 
 // List of report_audience_aweme_list_v2_filtering_audience_level
 const (
-	FIRST_LEVEL_ReportAudienceAwemeListV2FilteringAudienceLevel   ReportAudienceAwemeListV2FilteringAudienceLevel = "FIRST_LEVEL"
+	THIRD_LEVEL_ReportAudienceAwemeListV2FilteringAudienceLevel   ReportAudienceAwemeListV2FilteringAudienceLevel = "THIRD_LEVEL"
 	FOURTH_LEVEL_ReportAudienceAwemeListV2FilteringAudienceLevel  ReportAudienceAwemeListV2FilteringAudienceLevel = "FOURTH_LEVEL"
 	KEYWORD_AWEME_ReportAudienceAwemeListV2FilteringAudienceLevel ReportAudienceAwemeListV2FilteringAudienceLevel = "KEYWORD_AWEME"
-	THIRD_LEVEL_ReportAudienceAwemeListV2FilteringAudienceLevel   ReportAudienceAwemeListV2FilteringAudienceLevel = "THIRD_LEVEL"
 	SECOND_LEVEL_ReportAudienceAwemeListV2FilteringAudienceLevel  ReportAudienceAwemeListV2FilteringAudienceLevel = "SECOND_LEVEL"
+	FIRST_LEVEL_ReportAudienceAwemeListV2FilteringAudienceLevel   ReportAudienceAwemeListV2FilteringAudienceLevel = "FIRST_LEVEL"
 )
 
 // Ptr returns reference to report_audience_aweme_list_v2_filtering_audience_level value

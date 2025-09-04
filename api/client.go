@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.68
+// APIClient manages communication with the Oceanengine Open Api API v1.1.69
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -2043,8 +2043,6 @@ type APIClient struct {
 
 	ToolsSiteUpdateV2Api *ToolsSiteUpdateV2ApiService
 
-	ToolsStarTaskMaterialTypeV2Api *ToolsStarTaskMaterialTypeV2ApiService
-
 	ToolsStarTaskSettlementConfigV2Api *ToolsStarTaskSettlementConfigV2ApiService
 
 	ToolsStarTaskTitleTopicGetV2Api *ToolsStarTaskTitleTopicGetV2ApiService
@@ -3130,7 +3128,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsSiteTemplateSiteCreateV2Api = (*ToolsSiteTemplateSiteCreateV2ApiService)(&c.common)
 	c.ToolsSiteUpdateStatusV2Api = (*ToolsSiteUpdateStatusV2ApiService)(&c.common)
 	c.ToolsSiteUpdateV2Api = (*ToolsSiteUpdateV2ApiService)(&c.common)
-	c.ToolsStarTaskMaterialTypeV2Api = (*ToolsStarTaskMaterialTypeV2ApiService)(&c.common)
 	c.ToolsStarTaskSettlementConfigV2Api = (*ToolsStarTaskSettlementConfigV2ApiService)(&c.common)
 	c.ToolsStarTaskTitleTopicGetV2Api = (*ToolsStarTaskTitleTopicGetV2ApiService)(&c.common)
 	c.ToolsSuggestBudgetGetV30Api = (*ToolsSuggestBudgetGetV30ApiService)(&c.common)

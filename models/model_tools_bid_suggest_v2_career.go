@@ -15,12 +15,12 @@ type ToolsBidSuggestV2Career string
 
 // List of tools_bid_suggest_v2_career
 const (
-	IT_ToolsBidSuggestV2Career              ToolsBidSuggestV2Career = "IT"
-	FINANCIAL_ToolsBidSuggestV2Career       ToolsBidSuggestV2Career = "FINANCIAL"
 	CIVIL_SERVANTS_ToolsBidSuggestV2Career  ToolsBidSuggestV2Career = "CIVIL_SERVANTS"
-	COLLEGE_STUDENT_ToolsBidSuggestV2Career ToolsBidSuggestV2Career = "COLLEGE_STUDENT"
 	MEDICAL_STAFF_ToolsBidSuggestV2Career   ToolsBidSuggestV2Career = "MEDICAL_STAFF"
+	COLLEGE_STUDENT_ToolsBidSuggestV2Career ToolsBidSuggestV2Career = "COLLEGE_STUDENT"
+	FINANCIAL_ToolsBidSuggestV2Career       ToolsBidSuggestV2Career = "FINANCIAL"
 	TEACHER_ToolsBidSuggestV2Career         ToolsBidSuggestV2Career = "TEACHER"
+	IT_ToolsBidSuggestV2Career              ToolsBidSuggestV2Career = "IT"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_career value

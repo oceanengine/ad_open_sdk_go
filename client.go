@@ -1,5 +1,5 @@
 /*
-API version: 1.1.68
+API version: 1.1.69
 */
 package ad_open_sdk_go
 
@@ -4009,10 +4009,6 @@ func (c *Client) ToolsSiteUpdateStatusV2Api() *api.ToolsSiteUpdateStatusV2ApiSer
 
 func (c *Client) ToolsSiteUpdateV2Api() *api.ToolsSiteUpdateV2ApiService {
 	return c.ApiClient.ToolsSiteUpdateV2Api
-}
-
-func (c *Client) ToolsStarTaskMaterialTypeV2Api() *api.ToolsStarTaskMaterialTypeV2ApiService {
-	return c.ApiClient.ToolsStarTaskMaterialTypeV2Api
 }
 
 func (c *Client) ToolsStarTaskSettlementConfigV2Api() *api.ToolsStarTaskSettlementConfigV2ApiService {
