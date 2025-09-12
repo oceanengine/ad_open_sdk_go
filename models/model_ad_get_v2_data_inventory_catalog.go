@@ -15,11 +15,11 @@ type AdGetV2DataInventoryCatalog string
 
 // List of ad_get_v2_data_inventory_catalog
 const (
-	UNIVERSAL_AdGetV2DataInventoryCatalog       AdGetV2DataInventoryCatalog = "UNIVERSAL"
-	MANUAL_AdGetV2DataInventoryCatalog          AdGetV2DataInventoryCatalog = "MANUAL"
-	SCENE_AdGetV2DataInventoryCatalog           AdGetV2DataInventoryCatalog = "SCENE"
-	UNIVERSAL_SMART_AdGetV2DataInventoryCatalog AdGetV2DataInventoryCatalog = "UNIVERSAL_SMART"
 	SMART_AdGetV2DataInventoryCatalog           AdGetV2DataInventoryCatalog = "SMART"
+	UNIVERSAL_AdGetV2DataInventoryCatalog       AdGetV2DataInventoryCatalog = "UNIVERSAL"
+	UNIVERSAL_SMART_AdGetV2DataInventoryCatalog AdGetV2DataInventoryCatalog = "UNIVERSAL_SMART"
+	SCENE_AdGetV2DataInventoryCatalog           AdGetV2DataInventoryCatalog = "SCENE"
+	MANUAL_AdGetV2DataInventoryCatalog          AdGetV2DataInventoryCatalog = "MANUAL"
 )
 
 // Ptr returns reference to ad_get_v2_data_inventory_catalog value

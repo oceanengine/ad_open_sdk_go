@@ -15,6 +15,8 @@ type ToolsHotMaterialDeriveSubmitV30ExcludeStrategies string
 
 // List of tools_hot_material_derive_submit_v3.0_exclude_strategies
 const (
+	AIGC_HUMAN_REPLACE_ToolsHotMaterialDeriveSubmitV30ExcludeStrategies               ToolsHotMaterialDeriveSubmitV30ExcludeStrategies = "AIGC_HUMAN_REPLACE"
+	AIGC_PRE_VIDEO_ToolsHotMaterialDeriveSubmitV30ExcludeStrategies                   ToolsHotMaterialDeriveSubmitV30ExcludeStrategies = "AIGC_PRE_VIDEO"
 	CLIP_REPLACE_ToolsHotMaterialDeriveSubmitV30ExcludeStrategies                     ToolsHotMaterialDeriveSubmitV30ExcludeStrategies = "CLIP_REPLACE"
 	DERIVE_FROM_CHOSEN_HOT_MID_ToolsHotMaterialDeriveSubmitV30ExcludeStrategies       ToolsHotMaterialDeriveSubmitV30ExcludeStrategies = "DERIVE_FROM_CHOSEN_HOT_MID"
 	DERIVE_FROM_INDUSTRY_HOT_PATTERN_ToolsHotMaterialDeriveSubmitV30ExcludeStrategies ToolsHotMaterialDeriveSubmitV30ExcludeStrategies = "DERIVE_FROM_INDUSTRY_HOT_PATTERN"
@@ -23,6 +25,7 @@ const (
 	PRE_VIDEO_CLIP_REPLACE_ToolsHotMaterialDeriveSubmitV30ExcludeStrategies           ToolsHotMaterialDeriveSubmitV30ExcludeStrategies = "PRE_VIDEO_CLIP_REPLACE"
 	RAW_MATERIAL_REPLACE_ToolsHotMaterialDeriveSubmitV30ExcludeStrategies             ToolsHotMaterialDeriveSubmitV30ExcludeStrategies = "RAW_MATERIAL_REPLACE"
 	ROBOT_REPLACE_ToolsHotMaterialDeriveSubmitV30ExcludeStrategies                    ToolsHotMaterialDeriveSubmitV30ExcludeStrategies = "ROBOT_REPLACE"
+	SMART_REPLACE_ToolsHotMaterialDeriveSubmitV30ExcludeStrategies                    ToolsHotMaterialDeriveSubmitV30ExcludeStrategies = "SMART_REPLACE"
 )
 
 // Ptr returns reference to tools_hot_material_derive_submit_v3.0_exclude_strategies value

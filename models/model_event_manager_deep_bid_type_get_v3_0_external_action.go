@@ -15,6 +15,7 @@ type EventManagerDeepBidTypeGetV30ExternalAction string
 
 // List of event_manager_deep_bid_type_get_v3.0_external_action
 const (
+	AD_CONVERT_ADD_TO_CART_EventManagerDeepBidTypeGetV30ExternalAction                      EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_ADD_TO_CART"
 	AD_CONVERT_PAGE_VIEW_EventManagerDeepBidTypeGetV30ExternalAction                        EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_PAGE_VIEW"
 	AD_CONVERT_TYPE_ACTIVE_EventManagerDeepBidTypeGetV30ExternalAction                      EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_ACTIVE"
 	AD_CONVERT_TYPE_ACTIVE_REGISTER_EventManagerDeepBidTypeGetV30ExternalAction             EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_ACTIVE_REGISTER"

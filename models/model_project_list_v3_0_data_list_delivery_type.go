@@ -15,8 +15,9 @@ type ProjectListV30DataListDeliveryType string
 
 // List of project_list_v3.0_data_list_delivery_type
 const (
-	DURATION_ProjectListV30DataListDeliveryType ProjectListV30DataListDeliveryType = "DURATION"
-	NORMAL_ProjectListV30DataListDeliveryType   ProjectListV30DataListDeliveryType = "NORMAL"
+	DURATION_ProjectListV30DataListDeliveryType        ProjectListV30DataListDeliveryType = "DURATION"
+	NORMAL_ProjectListV30DataListDeliveryType          ProjectListV30DataListDeliveryType = "NORMAL"
+	UBX_INTELLIGENT_ProjectListV30DataListDeliveryType ProjectListV30DataListDeliveryType = "UBX_INTELLIGENT"
 )
 
 // Ptr returns reference to project_list_v3.0_data_list_delivery_type value

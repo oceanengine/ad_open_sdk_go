@@ -15,7 +15,8 @@ type ShopBonusCreateV30CouponShopPlatform string
 
 // List of shop_bonus_create_v3.0_coupon_shop_platform
 const (
-	ALIHEALTH_ShopBonusCreateV30CouponShopPlatform ShopBonusCreateV30CouponShopPlatform = "ALIHEALTH"
+	ALIHEALTH_ShopBonusCreateV30CouponShopPlatform  ShopBonusCreateV30CouponShopPlatform = "ALIHEALTH"
+	ALIMAMA_UD_ShopBonusCreateV30CouponShopPlatform ShopBonusCreateV30CouponShopPlatform = "ALIMAMA_UD"
 )
 
 // Ptr returns reference to shop_bonus_create_v3.0_coupon_shop_platform value

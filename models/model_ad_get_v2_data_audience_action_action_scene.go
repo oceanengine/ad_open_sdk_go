@@ -15,11 +15,11 @@ type AdGetV2DataAudienceActionActionScene string
 
 // List of ad_get_v2_data_audience_action_action_scene
 const (
-	SEARCH_AdGetV2DataAudienceActionActionScene     AdGetV2DataAudienceActionActionScene = "SEARCH"
-	NEWS_AdGetV2DataAudienceActionActionScene       AdGetV2DataAudienceActionActionScene = "NEWS"
-	E_COMMERCE_AdGetV2DataAudienceActionActionScene AdGetV2DataAudienceActionActionScene = "E-COMMERCE"
 	AD_AdGetV2DataAudienceActionActionScene         AdGetV2DataAudienceActionActionScene = "AD"
+	E_COMMERCE_AdGetV2DataAudienceActionActionScene AdGetV2DataAudienceActionActionScene = "E-COMMERCE"
+	SEARCH_AdGetV2DataAudienceActionActionScene     AdGetV2DataAudienceActionActionScene = "SEARCH"
 	APP_AdGetV2DataAudienceActionActionScene        AdGetV2DataAudienceActionActionScene = "APP"
+	NEWS_AdGetV2DataAudienceActionActionScene       AdGetV2DataAudienceActionActionScene = "NEWS"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_action_action_scene value

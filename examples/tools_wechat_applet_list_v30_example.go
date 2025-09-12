@@ -23,10 +23,12 @@ import (
 )
 
 type ApiOpenApiV30ToolsWechatAppletListGetRequestExample struct {
-	AdvertiserId int64                             `json:"advertiser_id"`
-	Filtering    ToolsWechatAppletListV30Filtering `json:"filtering,omitempty"`
-	Page         int32                             `json:"page,omitempty"`
-	PageSize     int32                             `json:"page_size,omitempty"`
+	AdvertiserId int64                              `json:"advertiser_id"`
+	Filtering    ToolsWechatAppletListV30Filtering  `json:"filtering,omitempty"`
+	Page         int32                              `json:"page,omitempty"`
+	PageSize     int32                              `json:"page_size,omitempty"`
+	OrderType    ToolsWechatAppletListV30OrderType  `json:"order_type,omitempty"`
+	OrderField   ToolsWechatAppletListV30OrderField `json:"order_field,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/wechat_applet/list/ Get
@@ -48,7 +50,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsWechatAppletListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).OrderType(request.OrderType).OrderField(request.OrderField).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

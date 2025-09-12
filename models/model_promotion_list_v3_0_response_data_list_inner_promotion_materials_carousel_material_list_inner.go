@@ -15,6 +15,8 @@ type PromotionListV30ResponseDataListInnerPromotionMaterialsCarouselMaterialList
 	//
 	AudioId *string `json:"audio_id,omitempty"`
 	//
+	CreateTime *string `json:"create_time,omitempty"`
+	//
 	ImageId []string `json:"image_id,omitempty"`
 	//
 	IsBlueFlowRecommendMaterial *bool `json:"is_blue_flow_recommend_material,omitempty"`

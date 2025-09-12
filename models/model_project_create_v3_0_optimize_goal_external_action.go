@@ -15,6 +15,7 @@ type ProjectCreateV30OptimizeGoalExternalAction string
 
 // List of project_create_v3.0_optimize_goal_external_action
 const (
+	AD_CONVERT_ADD_TO_CART_ProjectCreateV30OptimizeGoalExternalAction                      ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_ADD_TO_CART"
 	AD_CONVERT_PAGE_VIEW_ProjectCreateV30OptimizeGoalExternalAction                        ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_PAGE_VIEW"
 	AD_CONVERT_TYPE_ACTIVE_ProjectCreateV30OptimizeGoalExternalAction                      ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_ACTIVE"
 	AD_CONVERT_TYPE_ACTIVE_REGISTER_ProjectCreateV30OptimizeGoalExternalAction             ProjectCreateV30OptimizeGoalExternalAction = "AD_CONVERT_TYPE_ACTIVE_REGISTER"

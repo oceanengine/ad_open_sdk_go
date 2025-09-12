@@ -16,10 +16,10 @@ type ReportSitePageV2InventoryType string
 // List of report_site_page_v2_inventory_type
 const (
 	WATERMELON_ReportSitePageV2InventoryType ReportSitePageV2InventoryType = "WATERMELON"
+	UNION_SLOT_ReportSitePageV2InventoryType ReportSitePageV2InventoryType = "UNION_SLOT"
+	HOTSOON_ReportSitePageV2InventoryType    ReportSitePageV2InventoryType = "HOTSOON"
 	TOUTIAO_ReportSitePageV2InventoryType    ReportSitePageV2InventoryType = "TOUTIAO"
 	AWEME_ReportSitePageV2InventoryType      ReportSitePageV2InventoryType = "AWEME"
-	HOTSOON_ReportSitePageV2InventoryType    ReportSitePageV2InventoryType = "HOTSOON"
-	UNION_SLOT_ReportSitePageV2InventoryType ReportSitePageV2InventoryType = "UNION_SLOT"
 )
 
 // Ptr returns reference to report_site_page_v2_inventory_type value

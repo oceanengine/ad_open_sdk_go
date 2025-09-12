@@ -12,7 +12,9 @@ package models
 
 // PromotionListV30ResponseDataListInnerPromotionMaterialsImageMaterialListInner struct for PromotionListV30ResponseDataListInnerPromotionMaterialsImageMaterialListInner
 type PromotionListV30ResponseDataListInnerPromotionMaterialsImageMaterialListInner struct {
-	ImageMode *PromotionListV30DataListPromotionMaterialsImageMaterialListImageMode `json:"image_mode,omitempty"`
+	//
+	CreateTime *string                                                               `json:"create_time,omitempty"`
+	ImageMode  *PromotionListV30DataListPromotionMaterialsImageMaterialListImageMode `json:"image_mode,omitempty"`
 	//
 	Images []*PromotionListV30ResponseDataListInnerPromotionMaterialsImageMaterialListInnerImagesInner `json:"images,omitempty"`
 }

@@ -29,6 +29,8 @@ type ApiOpenApiV30ToolsWechatAppletListGetRequest struct {
 	filtering    *ToolsWechatAppletListV30Filtering
 	page         *int32
 	pageSize     *int32
+	orderType    *ToolsWechatAppletListV30OrderType
+	orderField   *ToolsWechatAppletListV30OrderField
 }
 
 func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
@@ -48,6 +50,18 @@ func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) Page(page int32) *ApiOpen
 
 func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) PageSize(pageSize int32) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+// 排序方式，允许值： ASC 升序 DESC 降序（默认值）
+func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) OrderType(orderType ToolsWechatAppletListV30OrderType) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
+	r.orderType = &orderType
+	return r
+}
+
+// 排序字段，允许值： create_time modify_time (默认值)
+func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) OrderField(orderField ToolsWechatAppletListV30OrderField) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
+	r.orderField = &orderField
 	return r
 }
 
@@ -116,6 +130,12 @@ func (a *ToolsWechatAppletListV30ApiService) getExecute(r *ApiOpenApiV30ToolsWec
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.orderType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "order_type", r.orderType)
+	}
+	if r.orderField != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "order_field", r.orderField)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

@@ -15,6 +15,8 @@ type ToolsHotMaterialDeriveSubmitV30Strategies string
 
 // List of tools_hot_material_derive_submit_v3.0_strategies
 const (
+	AIGC_HUMAN_REPLACE_ToolsHotMaterialDeriveSubmitV30Strategies               ToolsHotMaterialDeriveSubmitV30Strategies = "AIGC_HUMAN_REPLACE"
+	AIGC_PRE_VIDEO_ToolsHotMaterialDeriveSubmitV30Strategies                   ToolsHotMaterialDeriveSubmitV30Strategies = "AIGC_PRE_VIDEO"
 	CLIP_REPLACE_ToolsHotMaterialDeriveSubmitV30Strategies                     ToolsHotMaterialDeriveSubmitV30Strategies = "CLIP_REPLACE"
 	DERIVE_FROM_CHOSEN_HOT_MID_ToolsHotMaterialDeriveSubmitV30Strategies       ToolsHotMaterialDeriveSubmitV30Strategies = "DERIVE_FROM_CHOSEN_HOT_MID"
 	DERIVE_FROM_INDUSTRY_HOT_PATTERN_ToolsHotMaterialDeriveSubmitV30Strategies ToolsHotMaterialDeriveSubmitV30Strategies = "DERIVE_FROM_INDUSTRY_HOT_PATTERN"
@@ -23,6 +25,7 @@ const (
 	PRE_VIDEO_CLIP_REPLACE_ToolsHotMaterialDeriveSubmitV30Strategies           ToolsHotMaterialDeriveSubmitV30Strategies = "PRE_VIDEO_CLIP_REPLACE"
 	RAW_MATERIAL_REPLACE_ToolsHotMaterialDeriveSubmitV30Strategies             ToolsHotMaterialDeriveSubmitV30Strategies = "RAW_MATERIAL_REPLACE"
 	ROBOT_REPLACE_ToolsHotMaterialDeriveSubmitV30Strategies                    ToolsHotMaterialDeriveSubmitV30Strategies = "ROBOT_REPLACE"
+	SMART_REPLACE_ToolsHotMaterialDeriveSubmitV30Strategies                    ToolsHotMaterialDeriveSubmitV30Strategies = "SMART_REPLACE"
 )
 
 // Ptr returns reference to tools_hot_material_derive_submit_v3.0_strategies value

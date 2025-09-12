@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.69
+// APIClient manages communication with the Oceanengine Open Api API v1.1.70
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -1491,6 +1491,8 @@ type APIClient struct {
 
 	StarDemanderGetRegisteredIpActsV2Api *StarDemanderGetRegisteredIpActsV2ApiService
 
+	StarDemanderQueryCpsTaskSalesV2Api *StarDemanderQueryCpsTaskSalesV2ApiService
+
 	StarDemanderUploadCpsTaskSalesV2Api *StarDemanderUploadCpsTaskSalesV2ApiService
 
 	StarFeCommonServiceTalentDayGetCheckInCodeV2Api *StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService
@@ -2852,6 +2854,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarDemanderDemanderGetBindShareCodeV2Api = (*StarDemanderDemanderGetBindShareCodeV2ApiService)(&c.common)
 	c.StarDemanderGetCarBrandListV2Api = (*StarDemanderGetCarBrandListV2ApiService)(&c.common)
 	c.StarDemanderGetRegisteredIpActsV2Api = (*StarDemanderGetRegisteredIpActsV2ApiService)(&c.common)
+	c.StarDemanderQueryCpsTaskSalesV2Api = (*StarDemanderQueryCpsTaskSalesV2ApiService)(&c.common)
 	c.StarDemanderUploadCpsTaskSalesV2Api = (*StarDemanderUploadCpsTaskSalesV2ApiService)(&c.common)
 	c.StarFeCommonServiceTalentDayGetCheckInCodeV2Api = (*StarFeCommonServiceTalentDayGetCheckInCodeV2ApiService)(&c.common)
 	c.StarFeCommonServiceTalentDayJudgeCheckedInV2Api = (*StarFeCommonServiceTalentDayJudgeCheckedInV2ApiService)(&c.common)

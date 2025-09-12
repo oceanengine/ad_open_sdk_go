@@ -15,8 +15,9 @@ type ProjectCreateV30DeliveryType string
 
 // List of project_create_v3.0_delivery_type
 const (
-	DURATION_ProjectCreateV30DeliveryType ProjectCreateV30DeliveryType = "DURATION"
-	NORMAL_ProjectCreateV30DeliveryType   ProjectCreateV30DeliveryType = "NORMAL"
+	DURATION_ProjectCreateV30DeliveryType        ProjectCreateV30DeliveryType = "DURATION"
+	NORMAL_ProjectCreateV30DeliveryType          ProjectCreateV30DeliveryType = "NORMAL"
+	UBX_INTELLIGENT_ProjectCreateV30DeliveryType ProjectCreateV30DeliveryType = "UBX_INTELLIGENT"
 )
 
 // Ptr returns reference to project_create_v3.0_delivery_type value

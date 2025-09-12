@@ -17,8 +17,8 @@ type ToolsAppIosListV2DataListStatus string
 const (
 	AUDIT_ACCEPTED_ToolsAppIosListV2DataListStatus ToolsAppIosListV2DataListStatus = "AUDIT_ACCEPTED"
 	AUDIT_DOING_ToolsAppIosListV2DataListStatus    ToolsAppIosListV2DataListStatus = "AUDIT_DOING"
-	ENABLE_ToolsAppIosListV2DataListStatus         ToolsAppIosListV2DataListStatus = "ENABLE"
 	AUDIT_REJECTED_ToolsAppIosListV2DataListStatus ToolsAppIosListV2DataListStatus = "AUDIT_REJECTED"
+	ENABLE_ToolsAppIosListV2DataListStatus         ToolsAppIosListV2DataListStatus = "ENABLE"
 	ALL_ToolsAppIosListV2DataListStatus            ToolsAppIosListV2DataListStatus = "ALL"
 )
 

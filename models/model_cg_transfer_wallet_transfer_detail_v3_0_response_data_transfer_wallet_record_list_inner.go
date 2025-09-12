@@ -20,5 +20,7 @@ type CgTransferWalletTransferDetailV30ResponseDataTransferWalletRecordListInner 
 	TransferAmount *int64 `json:"transfer_amount,omitempty"`
 	// 转账资金类型列表
 	TransferCapitalRecordList []*CgTransferWalletTransferDetailV30ResponseDataTransferWalletRecordListInnerTransferCapitalRecordListInner `json:"transfer_capital_record_list,omitempty"`
-	TransferStatus            *CgTransferWalletTransferDetailV30DataTransferWalletRecordListTransferStatus                                `json:"transfer_status,omitempty"`
+	// 钱包间转账编号
+	TransferSerial *string                                                                      `json:"transfer_serial,omitempty"`
+	TransferStatus *CgTransferWalletTransferDetailV30DataTransferWalletRecordListTransferStatus `json:"transfer_status,omitempty"`
 }

@@ -12,6 +12,8 @@ package models
 
 // ProjectCreateV30ResponseData
 type ProjectCreateV30ResponseData struct {
+	//
+	AutoDurationProjectCount *int64 `json:"auto_duration_project_count,omitempty"`
 	// 剩余自动投放项目余额
 	AutoProjectCount *int64 `json:"auto_project_count,omitempty"`
 	//

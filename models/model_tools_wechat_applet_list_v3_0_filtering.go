@@ -17,4 +17,7 @@ type ToolsWechatAppletListV30Filtering struct {
 	//
 	Name       *string                                      `json:"name,omitempty"`
 	SearchType *ToolsWechatAppletListV30FilteringSearchType `json:"search_type,omitempty"`
+	UpdateTime *ToolsWechatAppletListV30FilteringUpdateTime `json:"update_time,omitempty"`
+	// 微信小程序原始ID筛选
+	UserName *string `json:"user_name,omitempty"`
 }

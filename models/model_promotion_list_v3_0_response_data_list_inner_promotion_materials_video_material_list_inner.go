@@ -13,6 +13,8 @@ package models
 // PromotionListV30ResponseDataListInnerPromotionMaterialsVideoMaterialListInner struct for PromotionListV30ResponseDataListInnerPromotionMaterialsVideoMaterialListInner
 type PromotionListV30ResponseDataListInnerPromotionMaterialsVideoMaterialListInner struct {
 	AutoMaterialSource *PromotionListV30DataListPromotionMaterialsVideoMaterialListAutoMaterialSource `json:"auto_material_source,omitempty"`
+	//
+	CreateTime *string `json:"create_time,omitempty"`
 	// 引导视频id
 	GuideVideoId    *string                                                                     `json:"guide_video_id,omitempty"`
 	ImageMode       *PromotionListV30DataListPromotionMaterialsVideoMaterialListImageMode       `json:"image_mode,omitempty"`

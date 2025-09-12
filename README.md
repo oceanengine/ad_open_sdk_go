@@ -926,6 +926,7 @@ Class | Method | HTTP request
 *StarDemanderDemanderGetBindShareCodeV2Api* | **OpenApi2StarDemanderDemanderGetBindShareCodeGet** | **Get** /open_api/2/star/demander/demander_get_bind_share_code/
 *StarDemanderGetCarBrandListV2Api* | **OpenApi2StarDemanderGetCarBrandListGet** | **Get** /open_api/2/star/demander/get_car_brand_list/
 *StarDemanderGetRegisteredIpActsV2Api* | **OpenApi2StarDemanderGetRegisteredIpActsGet** | **Get** /open_api/2/star/demander/get_registered_ip_acts/
+*StarDemanderQueryCpsTaskSalesV2Api* | **OpenApi2StarDemanderQueryCpsTaskSalesGet** | **Get** /open_api/2/star/demander_query_cps_task_sales/
 *StarDemanderUploadCpsTaskSalesV2Api* | **OpenApi2StarDemanderUploadCpsTaskSalesPost** | **Post** /open_api/2/star/demander_upload_cps_task_sales/
 *StarFeCommonServiceTalentDayGetCheckInCodeV2Api* | **OpenApi2StarFeCommonServiceTalentDayGetCheckInCodeGet** | **Get** /open_api/2/star/fe_common_service/talent_day/get_check_in_code/
 *StarFeCommonServiceTalentDayJudgeCheckedInV2Api* | **OpenApi2StarFeCommonServiceTalentDayJudgeCheckedInGet** | **Get** /open_api/2/star/fe_common_service/talent_day/judge_checked_in/

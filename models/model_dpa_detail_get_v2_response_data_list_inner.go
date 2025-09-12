@@ -19,6 +19,8 @@ type DpaDetailGetV2ResponseDataListInner struct {
 	//
 	AuditReasonText *string `json:"audit_reason_text,omitempty"`
 	//
+	AuditReasons []*DpaDetailGetV2ResponseDataListInnerAuditReasonsInner `json:"audit_reasons,omitempty"`
+	//
 	AuditStatus *int32 `json:"audit_status,omitempty"`
 	//
 	Bought    *int64                                        `json:"bought,omitempty"`

@@ -12,7 +12,9 @@ package models
 
 // QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoVideoMaterial
 type QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoVideoMaterial struct {
-	CoverImage *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoVideoMaterialCoverImage `json:"cover_image,omitempty"`
+	//
+	AwemeItemId *int64                                                                                                    `json:"aweme_item_id,omitempty"`
+	CoverImage  *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfoVideoMaterialCoverImage `json:"cover_image,omitempty"`
 	//
 	MaterialId  *int64                                                                                        `json:"material_id,omitempty"`
 	Source      *QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialInfoVideoMaterialSource      `json:"source,omitempty"`

@@ -15,8 +15,8 @@ type ToolsAppManagementBpShareCancelV2AllAccountsAccountType string
 
 // List of tools_app_management_bp_share_cancel_v2_all_accounts_account_type
 const (
-	AD_ToolsAppManagementBpShareCancelV2AllAccountsAccountType   ToolsAppManagementBpShareCancelV2AllAccountsAccountType = "AD"
 	STAR_ToolsAppManagementBpShareCancelV2AllAccountsAccountType ToolsAppManagementBpShareCancelV2AllAccountsAccountType = "STAR"
+	AD_ToolsAppManagementBpShareCancelV2AllAccountsAccountType   ToolsAppManagementBpShareCancelV2AllAccountsAccountType = "AD"
 	BP_ToolsAppManagementBpShareCancelV2AllAccountsAccountType   ToolsAppManagementBpShareCancelV2AllAccountsAccountType = "BP"
 )
 

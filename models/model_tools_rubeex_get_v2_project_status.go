@@ -15,8 +15,8 @@ type ToolsRubeexGetV2ProjectStatus string
 
 // List of tools_rubeex_get_v2_project_status
 const (
-	ENABLED_ToolsRubeexGetV2ProjectStatus ToolsRubeexGetV2ProjectStatus = "ENABLED"
 	INITAL_ToolsRubeexGetV2ProjectStatus  ToolsRubeexGetV2ProjectStatus = "INITAL"
+	ENABLED_ToolsRubeexGetV2ProjectStatus ToolsRubeexGetV2ProjectStatus = "ENABLED"
 	DELETED_ToolsRubeexGetV2ProjectStatus ToolsRubeexGetV2ProjectStatus = "DELETED"
 )
 

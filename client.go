@@ -1,5 +1,5 @@
 /*
-API version: 1.1.69
+API version: 1.1.70
 */
 package ad_open_sdk_go
 
@@ -2905,6 +2905,10 @@ func (c *Client) StarDemanderGetCarBrandListV2Api() *api.StarDemanderGetCarBrand
 
 func (c *Client) StarDemanderGetRegisteredIpActsV2Api() *api.StarDemanderGetRegisteredIpActsV2ApiService {
 	return c.ApiClient.StarDemanderGetRegisteredIpActsV2Api
+}
+
+func (c *Client) StarDemanderQueryCpsTaskSalesV2Api() *api.StarDemanderQueryCpsTaskSalesV2ApiService {
+	return c.ApiClient.StarDemanderQueryCpsTaskSalesV2Api
 }
 
 func (c *Client) StarDemanderUploadCpsTaskSalesV2Api() *api.StarDemanderUploadCpsTaskSalesV2ApiService {

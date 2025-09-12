@@ -45,6 +45,8 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	// 内容ID
 	ContentId     *string                                  `json:"content_id,omitempty"`
 	ConvertStatus *ToolsClueLifeGetV2DataListConvertStatus `json:"convert_status,omitempty"`
+	// 区县，取值同 county_name 命名与飞鱼保持一致
+	CountryName *string `json:"country_name,omitempty"`
 	// 用户填写区县
 	CountyName *string `json:"county_name,omitempty"`
 	// 线索创建时间，如：2020-04-29 00:00:00
@@ -95,6 +97,8 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	RemarkDict *string `json:"remark_dict,omitempty"`
 	// 当前线索对应广告的请求id
 	ReqId *string `json:"req_id,omitempty"`
+	// 搜索关键词
+	SearchBidWord *string `json:"search_bid_word,omitempty"`
 	// 来源职人号抖音号
 	SourceCraftsmanDouyinId *string `json:"source_craftsman_douyin_id,omitempty"`
 	// 来源职人号昵称

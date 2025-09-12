@@ -99,6 +99,8 @@ type ToolsClueGetV2ResponseDataListInner struct {
 	//
 	ReqId *string `json:"req_id,omitempty"`
 	//
+	SearchBidWord *string `json:"search_bid_word,omitempty"`
+	//
 	SiteId *string `json:"site_id,omitempty"`
 	//
 	SiteName *string                                   `json:"site_name,omitempty"`

@@ -37,9 +37,10 @@ type ProjectUpdateV30Request struct {
 	ProjectId      int64                                  `json:"project_id"`
 	RelatedProduct *ProjectUpdateV30RequestRelatedProduct `json:"related_product,omitempty"`
 	//
-	SearchBidRatio         *float64                                `json:"search_bid_ratio,omitempty"`
-	StarAutoDeliverySwitch *ProjectUpdateV30StarAutoDeliverySwitch `json:"star_auto_delivery_switch,omitempty"`
-	TrackUrlSetting        *ProjectUpdateV30RequestTrackUrlSetting `json:"track_url_setting,omitempty"`
+	SearchBidRatio                 *float64                                        `json:"search_bid_ratio,omitempty"`
+	StarAutoDeliverySwitch         *ProjectUpdateV30StarAutoDeliverySwitch         `json:"star_auto_delivery_switch,omitempty"`
+	StarAutoMaterialAdditionSwitch *ProjectUpdateV30StarAutoMaterialAdditionSwitch `json:"star_auto_material_addition_switch,omitempty"`
+	TrackUrlSetting                *ProjectUpdateV30RequestTrackUrlSetting         `json:"track_url_setting,omitempty"`
 	//
 	UlinkUrl     *string                       `json:"ulink_url,omitempty"`
 	UlinkUrlType *ProjectUpdateV30UlinkUrlType `json:"ulink_url_type,omitempty"`
