@@ -15,14 +15,14 @@ type ReportRtaGetV2ReportType string
 
 // List of report_rta_get_v2_report_type
 const (
-	AD_RTA_ReportRtaGetV2ReportType                  ReportRtaGetV2ReportType = "AD_RTA"
-	CAMPAIGN_RTA_ReportRtaGetV2ReportType            ReportRtaGetV2ReportType = "CAMPAIGN_RTA"
-	AD_RTA_PLATFORM_ReportRtaGetV2ReportType         ReportRtaGetV2ReportType = "AD_RTA_PLATFORM"
 	ADVERTISER_RTA_PLATFORM_ReportRtaGetV2ReportType ReportRtaGetV2ReportType = "ADVERTISER_RTA_PLATFORM"
+	ADVERTISER_RTA_ReportRtaGetV2ReportType          ReportRtaGetV2ReportType = "ADVERTISER_RTA"
+	AD_RTA_ReportRtaGetV2ReportType                  ReportRtaGetV2ReportType = "AD_RTA"
+	CREATIVE_RTA_ReportRtaGetV2ReportType            ReportRtaGetV2ReportType = "CREATIVE_RTA"
 	CAMPAIGN_RTA_PLATFORM_ReportRtaGetV2ReportType   ReportRtaGetV2ReportType = "CAMPAIGN_RTA_PLATFORM"
 	CREATIVE_RTA_PLATFORM_ReportRtaGetV2ReportType   ReportRtaGetV2ReportType = "CREATIVE_RTA_PLATFORM"
-	ADVERTISER_RTA_ReportRtaGetV2ReportType          ReportRtaGetV2ReportType = "ADVERTISER_RTA"
-	CREATIVE_RTA_ReportRtaGetV2ReportType            ReportRtaGetV2ReportType = "CREATIVE_RTA"
+	AD_RTA_PLATFORM_ReportRtaGetV2ReportType         ReportRtaGetV2ReportType = "AD_RTA_PLATFORM"
+	CAMPAIGN_RTA_ReportRtaGetV2ReportType            ReportRtaGetV2ReportType = "CAMPAIGN_RTA"
 )
 
 // Ptr returns reference to report_rta_get_v2_report_type value

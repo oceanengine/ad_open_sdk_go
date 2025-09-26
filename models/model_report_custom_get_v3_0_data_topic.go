@@ -18,6 +18,7 @@ const (
 	BASIC_DATA_ReportCustomGetV30DataTopic           ReportCustomGetV30DataTopic = "BASIC_DATA"
 	BIDWORD_DATA_ReportCustomGetV30DataTopic         ReportCustomGetV30DataTopic = "BIDWORD_DATA"
 	DMP_DATA_ReportCustomGetV30DataTopic             ReportCustomGetV30DataTopic = "DMP_DATA"
+	MATERIAL_BOOST_DATA_ReportCustomGetV30DataTopic  ReportCustomGetV30DataTopic = "MATERIAL_BOOST_DATA"
 	MATERIAL_DATA_ReportCustomGetV30DataTopic        ReportCustomGetV30DataTopic = "MATERIAL_DATA"
 	ONE_KEY_BOOST_DATA_ReportCustomGetV30DataTopic   ReportCustomGetV30DataTopic = "ONE_KEY_BOOST_DATA"
 	PRODUCT_DATA_ReportCustomGetV30DataTopic         ReportCustomGetV30DataTopic = "PRODUCT_DATA"

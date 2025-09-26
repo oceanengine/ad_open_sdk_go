@@ -21,10 +21,12 @@ type StarVasCreateBoostItemGroupV2Request struct {
 	BoostHours        *int32                                                 `json:"boost_hours,omitempty"`
 	BoostType         StarVasCreateBoostItemGroupV2BoostType                 `json:"boost_type"`
 	CustomAudienceTag *StarVasCreateBoostItemGroupV2RequestCustomAudienceTag `json:"custom_audience_tag,omitempty"`
+	// 关联投稿视频，该字段与order_ids只取其一。同一助推组下指派和投稿不可共存
+	ItemIds []int64 `json:"item_ids,omitempty"`
 	// 加热组名称
 	Name string `json:"name"`
-	// 关联指派单，指派单必须在当前同一主体账户下
-	OrderIds []int64 `json:"order_ids"`
+	// 关联指派单，指派单必须在当前同一主体账户下。该字段与item_ids只取其一。同一助推组下指派和投稿不可共存
+	OrderIds []int64 `json:"order_ids,omitempty"`
 	// 关联人群包，仅boost_type为CUSTOM_PACKAGE时传参
 	PackId *int64 `json:"pack_id,omitempty"`
 	// 客户ID

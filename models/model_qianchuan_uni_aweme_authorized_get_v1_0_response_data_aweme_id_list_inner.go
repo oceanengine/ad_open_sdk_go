@@ -42,4 +42,14 @@ type QianchuanUniAwemeAuthorizedGetV10ResponseDataAwemeIdListInner struct {
 	IsAllowMall *bool `json:"is_allow_mall,omitempty"`
 	// 是否抖音c号
 	IsAwemeC *bool `json:"is_aweme_c,omitempty"`
+	//
+	IsLiveUniPromDisabled *bool `json:"is_live_uni_prom_disabled,omitempty"`
+	//
+	IsProductUniPromDisabled *bool `json:"is_product_uni_prom_disabled,omitempty"`
+	//
+	LiveDisableReasons   []*QianchuanUniAwemeAuthorizedGetV10DataAwemeIdListLiveDisableReasons `json:"live_disable_reasons,omitempty"`
+	LiveUniPromApplyType *QianchuanUniAwemeAuthorizedGetV10DataAwemeIdListLiveUniPromApplyType `json:"live_uni_prom_apply_type,omitempty"`
+	//
+	ProductDisableReasons   []*QianchuanUniAwemeAuthorizedGetV10DataAwemeIdListProductDisableReasons `json:"product_disable_reasons,omitempty"`
+	ProductUniPromApplyType *QianchuanUniAwemeAuthorizedGetV10DataAwemeIdListProductUniPromApplyType `json:"product_uni_prom_apply_type,omitempty"`
 }

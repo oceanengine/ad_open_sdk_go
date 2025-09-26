@@ -13,6 +13,7 @@ package models
 // QianchuanUniAwemeAuthorizedGetV10Filtering
 type QianchuanUniAwemeAuthorizedGetV10Filtering struct {
 	MarketingGoal *QianchuanUniAwemeAuthorizedGetV10FilteringMarketingGoal `json:"marketing_goal,omitempty"`
+	Scene         *QianchuanUniAwemeAuthorizedGetV10FilteringScene         `json:"scene,omitempty"`
 	// 检索词，支持抖音号show_Id/抖音号名搜索
 	SearchKeyWords *string `json:"search_key_words,omitempty"`
 }

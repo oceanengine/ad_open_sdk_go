@@ -39,9 +39,11 @@ type StardeliveryTaskAuthorVideoDetailV30ResponseDataValidAuthorSubmittedVideosI
 	StarVideoCusApprovalTime *string                                                                                    `json:"star_video_cus_approval_time,omitempty"`
 	StarVideoDeliveryStatus  *StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoDeliveryStatus `json:"star_video_delivery_status,omitempty"`
 	// 视频发布时间
-	StarVideoPublishTime  *string                                                                                  `json:"star_video_publish_time,omitempty"`
-	StarVideoReviewResult *StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoReviewResult `json:"star_video_review_result,omitempty"`
-	StarVideoStatus       *StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoStatus       `json:"star_video_status,omitempty"`
+	StarVideoPublishTime *string `json:"star_video_publish_time,omitempty"`
+	//
+	StarVideoRelatePromotionCount *int64                                                                                   `json:"star_video_relate_promotion_count,omitempty"`
+	StarVideoReviewResult         *StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoReviewResult `json:"star_video_review_result,omitempty"`
+	StarVideoStatus               *StardeliveryTaskAuthorVideoDetailV30DataValidAuthorSubmittedVideosStarVideoStatus       `json:"star_video_status,omitempty"`
 	//
 	VideoCoverId *string `json:"video_cover_id,omitempty"`
 	//

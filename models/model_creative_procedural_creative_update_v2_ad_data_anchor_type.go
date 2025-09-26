@@ -16,11 +16,11 @@ type CreativeProceduralCreativeUpdateV2AdDataAnchorType string
 // List of creative_procedural_creative_update_v2_ad_data_anchor_type
 const (
 	PRIVATE_CHAT_CreativeProceduralCreativeUpdateV2AdDataAnchorType         CreativeProceduralCreativeUpdateV2AdDataAnchorType = "PRIVATE_CHAT"
-	INSURANCE_CreativeProceduralCreativeUpdateV2AdDataAnchorType            CreativeProceduralCreativeUpdateV2AdDataAnchorType = "INSURANCE"
+	APP_GAME_CreativeProceduralCreativeUpdateV2AdDataAnchorType             CreativeProceduralCreativeUpdateV2AdDataAnchorType = "APP_GAME"
 	APP_SHOP_CreativeProceduralCreativeUpdateV2AdDataAnchorType             CreativeProceduralCreativeUpdateV2AdDataAnchorType = "APP_SHOP"
 	APP_INTERNET_SERVICE_CreativeProceduralCreativeUpdateV2AdDataAnchorType CreativeProceduralCreativeUpdateV2AdDataAnchorType = "APP_INTERNET_SERVICE"
-	APP_GAME_CreativeProceduralCreativeUpdateV2AdDataAnchorType             CreativeProceduralCreativeUpdateV2AdDataAnchorType = "APP_GAME"
 	ONLINE_SUBSCRIBE_CreativeProceduralCreativeUpdateV2AdDataAnchorType     CreativeProceduralCreativeUpdateV2AdDataAnchorType = "ONLINE_SUBSCRIBE"
+	INSURANCE_CreativeProceduralCreativeUpdateV2AdDataAnchorType            CreativeProceduralCreativeUpdateV2AdDataAnchorType = "INSURANCE"
 	SHOPPING_CART_CreativeProceduralCreativeUpdateV2AdDataAnchorType        CreativeProceduralCreativeUpdateV2AdDataAnchorType = "SHOPPING_CART"
 )
 

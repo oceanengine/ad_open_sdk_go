@@ -15,12 +15,12 @@ type ReportCreativeGetV2DataListAc string
 
 // List of report_creative_get_v2_data_list_ac
 const (
-	WIFI_ReportCreativeGetV2DataListAc     ReportCreativeGetV2DataListAc = "WIFI"
-	Enum_5_G_ReportCreativeGetV2DataListAc ReportCreativeGetV2DataListAc = "5G"
-	Enum_4_G_ReportCreativeGetV2DataListAc ReportCreativeGetV2DataListAc = "4G"
 	Enum_3_G_ReportCreativeGetV2DataListAc ReportCreativeGetV2DataListAc = "3G"
+	Enum_4_G_ReportCreativeGetV2DataListAc ReportCreativeGetV2DataListAc = "4G"
+	WIFI_ReportCreativeGetV2DataListAc     ReportCreativeGetV2DataListAc = "WIFI"
 	UNKNOWN_ReportCreativeGetV2DataListAc  ReportCreativeGetV2DataListAc = "unknown"
 	Enum_2_G_ReportCreativeGetV2DataListAc ReportCreativeGetV2DataListAc = "2G"
+	Enum_5_G_ReportCreativeGetV2DataListAc ReportCreativeGetV2DataListAc = "5G"
 )
 
 // Ptr returns reference to report_creative_get_v2_data_list_ac value

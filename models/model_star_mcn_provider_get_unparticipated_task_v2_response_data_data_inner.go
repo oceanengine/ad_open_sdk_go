@@ -45,6 +45,8 @@ type StarMcnProviderGetUnparticipatedTaskV2ResponseDataDataInner struct {
 	//
 	ProductCategory *int64 `json:"product_category,omitempty"`
 	//
+	Quota *int64 `json:"quota,omitempty"`
+	//
 	SecondClassCategory *int64                                                                   `json:"second_class_category,omitempty"`
 	SmallAppInfo        *StarMcnProviderGetUnparticipatedTaskV2ResponseDataDataInnerSmallAppInfo `json:"small_app_info,omitempty"`
 	//

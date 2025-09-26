@@ -15,8 +15,8 @@ type KeywordCreateV2V2DataSuccessListMatchType string
 
 // List of keyword_create_v2_v2_data_success_list_match_type
 const (
-	PRECISION_KeywordCreateV2V2DataSuccessListMatchType KeywordCreateV2V2DataSuccessListMatchType = "PRECISION"
 	EXTENSIVE_KeywordCreateV2V2DataSuccessListMatchType KeywordCreateV2V2DataSuccessListMatchType = "EXTENSIVE"
+	PRECISION_KeywordCreateV2V2DataSuccessListMatchType KeywordCreateV2V2DataSuccessListMatchType = "PRECISION"
 	PHRASE_KeywordCreateV2V2DataSuccessListMatchType    KeywordCreateV2V2DataSuccessListMatchType = "PHRASE"
 )
 

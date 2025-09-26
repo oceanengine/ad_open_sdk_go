@@ -39,13 +39,13 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) AdvertiserId(adv
 	return r
 }
 
-// 查询统计数据开始时间，格式：&#x60;yyyy-mm-dd&#x60;，如：2021-04-05
+// 查询统计数据开始时间，格式：&#x60;yyyy-mm-dd&#x60;，如：2021-04-05 00:00:00
 func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) StartDate(startDate string) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
 	r.startDate = &startDate
 	return r
 }
 
-// 查询统计数据结束时间，格式：&#x60;yyyy-mm-dd&#x60;，如：2021-04-05
+// 查询统计数据结束时间，格式：&#x60;yyyy-mm-dd&#x60;，如：2021-04-05 23:59:59
 func (r *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest) EndDate(endDate string) *ApiOpenApiV10QianchuanReportUniPromotionGetGetRequest {
 	r.endDate = &endDate
 	return r

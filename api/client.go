@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.70
+// APIClient manages communication with the Oceanengine Open Api API v1.1.71
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -735,26 +735,6 @@ type APIClient struct {
 
 	LocalCustomAudienceGetV30Api *LocalCustomAudienceGetV30ApiService
 
-	LocalCxtAudienceUpdateV30Api *LocalCxtAudienceUpdateV30ApiService
-
-	LocalCxtBudgetUpdateV30Api *LocalCxtBudgetUpdateV30ApiService
-
-	LocalCxtCreateV30Api *LocalCxtCreateV30ApiService
-
-	LocalCxtDetailV30Api *LocalCxtDetailV30ApiService
-
-	LocalCxtExternalActionUpdateV30Api *LocalCxtExternalActionUpdateV30ApiService
-
-	LocalCxtPoiUpdateV30Api *LocalCxtPoiUpdateV30ApiService
-
-	LocalCxtReportAudienceGetV30Api *LocalCxtReportAudienceGetV30ApiService
-
-	LocalCxtReportBasicGetV30Api *LocalCxtReportBasicGetV30ApiService
-
-	LocalCxtReportConvertGetV30Api *LocalCxtReportConvertGetV30ApiService
-
-	LocalCxtStatusUpdateV30Api *LocalCxtStatusUpdateV30ApiService
-
 	LocalFileUploadTaskCreateV30Api *LocalFileUploadTaskCreateV30ApiService
 
 	LocalFileVideoAwemeGetV30Api *LocalFileVideoAwemeGetV30ApiService
@@ -840,6 +820,8 @@ type APIClient struct {
 	OpenMaterialAuditProGetV30Api *OpenMaterialAuditProGetV30ApiService
 
 	OpenMaterialAuditProSubmitV30Api *OpenMaterialAuditProSubmitV30ApiService
+
+	PenaltyTaskGetV30Api *PenaltyTaskGetV30ApiService
 
 	ProjectBudgetUpdateV30Api *ProjectBudgetUpdateV30ApiService
 
@@ -1001,6 +983,8 @@ type APIClient struct {
 
 	QianchuanAwemeSuggestRoiGoalV10Api *QianchuanAwemeSuggestRoiGoalV10ApiService
 
+	QianchuanAwemeUniPromotionAdMaterialGetV10Api *QianchuanAwemeUniPromotionAdMaterialGetV10ApiService
+
 	QianchuanAwemeUniPromotionEstimateEffectV10Api *QianchuanAwemeUniPromotionEstimateEffectV10ApiService
 
 	QianchuanAwemeUniPromotionOrderBudgetAddV10Api *QianchuanAwemeUniPromotionOrderBudgetAddV10ApiService
@@ -1010,6 +994,8 @@ type APIClient struct {
 	QianchuanAwemeUniPromotionOrderDetailV10Api *QianchuanAwemeUniPromotionOrderDetailV10ApiService
 
 	QianchuanAwemeUniPromotionOrderGetV10Api *QianchuanAwemeUniPromotionOrderGetV10ApiService
+
+	QianchuanAwemeUniPromotionOrderReportGetV10Api *QianchuanAwemeUniPromotionOrderReportGetV10ApiService
 
 	QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api *QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService
 
@@ -1909,6 +1895,18 @@ type APIClient struct {
 
 	ToolsLogSearchV2Api *ToolsLogSearchV2ApiService
 
+	ToolsMaterialRaiseCreateV30Api *ToolsMaterialRaiseCreateV30ApiService
+
+	ToolsMaterialRaiseGetV30Api *ToolsMaterialRaiseGetV30ApiService
+
+	ToolsMaterialRaiseMaterialIdsGetV30Api *ToolsMaterialRaiseMaterialIdsGetV30ApiService
+
+	ToolsMaterialRaiseRecordsGetV30Api *ToolsMaterialRaiseRecordsGetV30ApiService
+
+	ToolsMaterialRaiseStatusGetV30Api *ToolsMaterialRaiseStatusGetV30ApiService
+
+	ToolsMaterialRaiseStopV30Api *ToolsMaterialRaiseStopV30ApiService
+
 	ToolsMicroAppCreateV30Api *ToolsMicroAppCreateV30ApiService
 
 	ToolsMicroAppListV30Api *ToolsMicroAppListV30ApiService
@@ -2476,16 +2474,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.LocalChargeResultV30Api = (*LocalChargeResultV30ApiService)(&c.common)
 	c.LocalChargeSubmitV30Api = (*LocalChargeSubmitV30ApiService)(&c.common)
 	c.LocalCustomAudienceGetV30Api = (*LocalCustomAudienceGetV30ApiService)(&c.common)
-	c.LocalCxtAudienceUpdateV30Api = (*LocalCxtAudienceUpdateV30ApiService)(&c.common)
-	c.LocalCxtBudgetUpdateV30Api = (*LocalCxtBudgetUpdateV30ApiService)(&c.common)
-	c.LocalCxtCreateV30Api = (*LocalCxtCreateV30ApiService)(&c.common)
-	c.LocalCxtDetailV30Api = (*LocalCxtDetailV30ApiService)(&c.common)
-	c.LocalCxtExternalActionUpdateV30Api = (*LocalCxtExternalActionUpdateV30ApiService)(&c.common)
-	c.LocalCxtPoiUpdateV30Api = (*LocalCxtPoiUpdateV30ApiService)(&c.common)
-	c.LocalCxtReportAudienceGetV30Api = (*LocalCxtReportAudienceGetV30ApiService)(&c.common)
-	c.LocalCxtReportBasicGetV30Api = (*LocalCxtReportBasicGetV30ApiService)(&c.common)
-	c.LocalCxtReportConvertGetV30Api = (*LocalCxtReportConvertGetV30ApiService)(&c.common)
-	c.LocalCxtStatusUpdateV30Api = (*LocalCxtStatusUpdateV30ApiService)(&c.common)
 	c.LocalFileUploadTaskCreateV30Api = (*LocalFileUploadTaskCreateV30ApiService)(&c.common)
 	c.LocalFileVideoAwemeGetV30Api = (*LocalFileVideoAwemeGetV30ApiService)(&c.common)
 	c.LocalFileVideoGetV30Api = (*LocalFileVideoGetV30ApiService)(&c.common)
@@ -2529,6 +2517,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.Oauth2RenewTokenApi = (*Oauth2RenewTokenApiService)(&c.common)
 	c.OpenMaterialAuditProGetV30Api = (*OpenMaterialAuditProGetV30ApiService)(&c.common)
 	c.OpenMaterialAuditProSubmitV30Api = (*OpenMaterialAuditProSubmitV30ApiService)(&c.common)
+	c.PenaltyTaskGetV30Api = (*PenaltyTaskGetV30ApiService)(&c.common)
 	c.ProjectBudgetUpdateV30Api = (*ProjectBudgetUpdateV30ApiService)(&c.common)
 	c.ProjectCostProtectStatusGetV30Api = (*ProjectCostProtectStatusGetV30ApiService)(&c.common)
 	c.ProjectCreateV30Api = (*ProjectCreateV30ApiService)(&c.common)
@@ -2609,11 +2598,13 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanAwemeReportOrderGetV10Api = (*QianchuanAwemeReportOrderGetV10ApiService)(&c.common)
 	c.QianchuanAwemeSuggestBidV10Api = (*QianchuanAwemeSuggestBidV10ApiService)(&c.common)
 	c.QianchuanAwemeSuggestRoiGoalV10Api = (*QianchuanAwemeSuggestRoiGoalV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionAdMaterialGetV10Api = (*QianchuanAwemeUniPromotionAdMaterialGetV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionEstimateEffectV10Api = (*QianchuanAwemeUniPromotionEstimateEffectV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionOrderBudgetAddV10Api = (*QianchuanAwemeUniPromotionOrderBudgetAddV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionOrderCreateV10Api = (*QianchuanAwemeUniPromotionOrderCreateV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionOrderDetailV10Api = (*QianchuanAwemeUniPromotionOrderDetailV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionOrderGetV10Api = (*QianchuanAwemeUniPromotionOrderGetV10ApiService)(&c.common)
+	c.QianchuanAwemeUniPromotionOrderReportGetV10Api = (*QianchuanAwemeUniPromotionOrderReportGetV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api = (*QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionReportV10Api = (*QianchuanAwemeUniPromotionReportV10ApiService)(&c.common)
 	c.QianchuanAwemeUniPromotionSuggestRoiV10Api = (*QianchuanAwemeUniPromotionSuggestRoiV10ApiService)(&c.common)
@@ -3063,6 +3054,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsLandingGroupUpdateV2Api = (*ToolsLandingGroupUpdateV2ApiService)(&c.common)
 	c.ToolsLiveAuthorizeListV2Api = (*ToolsLiveAuthorizeListV2ApiService)(&c.common)
 	c.ToolsLogSearchV2Api = (*ToolsLogSearchV2ApiService)(&c.common)
+	c.ToolsMaterialRaiseCreateV30Api = (*ToolsMaterialRaiseCreateV30ApiService)(&c.common)
+	c.ToolsMaterialRaiseGetV30Api = (*ToolsMaterialRaiseGetV30ApiService)(&c.common)
+	c.ToolsMaterialRaiseMaterialIdsGetV30Api = (*ToolsMaterialRaiseMaterialIdsGetV30ApiService)(&c.common)
+	c.ToolsMaterialRaiseRecordsGetV30Api = (*ToolsMaterialRaiseRecordsGetV30ApiService)(&c.common)
+	c.ToolsMaterialRaiseStatusGetV30Api = (*ToolsMaterialRaiseStatusGetV30ApiService)(&c.common)
+	c.ToolsMaterialRaiseStopV30Api = (*ToolsMaterialRaiseStopV30ApiService)(&c.common)
 	c.ToolsMicroAppCreateV30Api = (*ToolsMicroAppCreateV30ApiService)(&c.common)
 	c.ToolsMicroAppListV30Api = (*ToolsMicroAppListV30ApiService)(&c.common)
 	c.ToolsMicroAppUpdateV30Api = (*ToolsMicroAppUpdateV30ApiService)(&c.common)

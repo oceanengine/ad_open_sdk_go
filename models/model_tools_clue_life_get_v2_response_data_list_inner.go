@@ -37,6 +37,8 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	CityName *string `json:"city_name,omitempty"`
 	// 线索ID
 	ClueId *string `json:"clue_id,omitempty"`
+	// 线索意向，格式 json
+	ClueIntention *string `json:"clue_intention,omitempty"`
 	// 所属人姓名
 	ClueOwnerName *string `json:"clue_owner_name,omitempty"`
 	// 线索返回状态：正常 or 账户状态异常

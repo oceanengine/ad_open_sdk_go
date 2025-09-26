@@ -1,5 +1,5 @@
 /*
-API version: 1.1.70
+API version: 1.1.71
 */
 package ad_open_sdk_go
 
@@ -1395,46 +1395,6 @@ func (c *Client) LocalCustomAudienceGetV30Api() *api.LocalCustomAudienceGetV30Ap
 	return c.ApiClient.LocalCustomAudienceGetV30Api
 }
 
-func (c *Client) LocalCxtAudienceUpdateV30Api() *api.LocalCxtAudienceUpdateV30ApiService {
-	return c.ApiClient.LocalCxtAudienceUpdateV30Api
-}
-
-func (c *Client) LocalCxtBudgetUpdateV30Api() *api.LocalCxtBudgetUpdateV30ApiService {
-	return c.ApiClient.LocalCxtBudgetUpdateV30Api
-}
-
-func (c *Client) LocalCxtCreateV30Api() *api.LocalCxtCreateV30ApiService {
-	return c.ApiClient.LocalCxtCreateV30Api
-}
-
-func (c *Client) LocalCxtDetailV30Api() *api.LocalCxtDetailV30ApiService {
-	return c.ApiClient.LocalCxtDetailV30Api
-}
-
-func (c *Client) LocalCxtExternalActionUpdateV30Api() *api.LocalCxtExternalActionUpdateV30ApiService {
-	return c.ApiClient.LocalCxtExternalActionUpdateV30Api
-}
-
-func (c *Client) LocalCxtPoiUpdateV30Api() *api.LocalCxtPoiUpdateV30ApiService {
-	return c.ApiClient.LocalCxtPoiUpdateV30Api
-}
-
-func (c *Client) LocalCxtReportAudienceGetV30Api() *api.LocalCxtReportAudienceGetV30ApiService {
-	return c.ApiClient.LocalCxtReportAudienceGetV30Api
-}
-
-func (c *Client) LocalCxtReportBasicGetV30Api() *api.LocalCxtReportBasicGetV30ApiService {
-	return c.ApiClient.LocalCxtReportBasicGetV30Api
-}
-
-func (c *Client) LocalCxtReportConvertGetV30Api() *api.LocalCxtReportConvertGetV30ApiService {
-	return c.ApiClient.LocalCxtReportConvertGetV30Api
-}
-
-func (c *Client) LocalCxtStatusUpdateV30Api() *api.LocalCxtStatusUpdateV30ApiService {
-	return c.ApiClient.LocalCxtStatusUpdateV30Api
-}
-
 func (c *Client) LocalFileUploadTaskCreateV30Api() *api.LocalFileUploadTaskCreateV30ApiService {
 	return c.ApiClient.LocalFileUploadTaskCreateV30Api
 }
@@ -1605,6 +1565,10 @@ func (c *Client) OpenMaterialAuditProGetV30Api() *api.OpenMaterialAuditProGetV30
 
 func (c *Client) OpenMaterialAuditProSubmitV30Api() *api.OpenMaterialAuditProSubmitV30ApiService {
 	return c.ApiClient.OpenMaterialAuditProSubmitV30Api
+}
+
+func (c *Client) PenaltyTaskGetV30Api() *api.PenaltyTaskGetV30ApiService {
+	return c.ApiClient.PenaltyTaskGetV30Api
 }
 
 func (c *Client) ProjectBudgetUpdateV30Api() *api.ProjectBudgetUpdateV30ApiService {
@@ -1927,6 +1891,10 @@ func (c *Client) QianchuanAwemeSuggestRoiGoalV10Api() *api.QianchuanAwemeSuggest
 	return c.ApiClient.QianchuanAwemeSuggestRoiGoalV10Api
 }
 
+func (c *Client) QianchuanAwemeUniPromotionAdMaterialGetV10Api() *api.QianchuanAwemeUniPromotionAdMaterialGetV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionAdMaterialGetV10Api
+}
+
 func (c *Client) QianchuanAwemeUniPromotionEstimateEffectV10Api() *api.QianchuanAwemeUniPromotionEstimateEffectV10ApiService {
 	return c.ApiClient.QianchuanAwemeUniPromotionEstimateEffectV10Api
 }
@@ -1945,6 +1913,10 @@ func (c *Client) QianchuanAwemeUniPromotionOrderDetailV10Api() *api.QianchuanAwe
 
 func (c *Client) QianchuanAwemeUniPromotionOrderGetV10Api() *api.QianchuanAwemeUniPromotionOrderGetV10ApiService {
 	return c.ApiClient.QianchuanAwemeUniPromotionOrderGetV10Api
+}
+
+func (c *Client) QianchuanAwemeUniPromotionOrderReportGetV10Api() *api.QianchuanAwemeUniPromotionOrderReportGetV10ApiService {
+	return c.ApiClient.QianchuanAwemeUniPromotionOrderReportGetV10Api
 }
 
 func (c *Client) QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api() *api.QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService {
@@ -3741,6 +3713,30 @@ func (c *Client) ToolsLiveAuthorizeListV2Api() *api.ToolsLiveAuthorizeListV2ApiS
 
 func (c *Client) ToolsLogSearchV2Api() *api.ToolsLogSearchV2ApiService {
 	return c.ApiClient.ToolsLogSearchV2Api
+}
+
+func (c *Client) ToolsMaterialRaiseCreateV30Api() *api.ToolsMaterialRaiseCreateV30ApiService {
+	return c.ApiClient.ToolsMaterialRaiseCreateV30Api
+}
+
+func (c *Client) ToolsMaterialRaiseGetV30Api() *api.ToolsMaterialRaiseGetV30ApiService {
+	return c.ApiClient.ToolsMaterialRaiseGetV30Api
+}
+
+func (c *Client) ToolsMaterialRaiseMaterialIdsGetV30Api() *api.ToolsMaterialRaiseMaterialIdsGetV30ApiService {
+	return c.ApiClient.ToolsMaterialRaiseMaterialIdsGetV30Api
+}
+
+func (c *Client) ToolsMaterialRaiseRecordsGetV30Api() *api.ToolsMaterialRaiseRecordsGetV30ApiService {
+	return c.ApiClient.ToolsMaterialRaiseRecordsGetV30Api
+}
+
+func (c *Client) ToolsMaterialRaiseStatusGetV30Api() *api.ToolsMaterialRaiseStatusGetV30ApiService {
+	return c.ApiClient.ToolsMaterialRaiseStatusGetV30Api
+}
+
+func (c *Client) ToolsMaterialRaiseStopV30Api() *api.ToolsMaterialRaiseStopV30ApiService {
+	return c.ApiClient.ToolsMaterialRaiseStopV30Api
 }
 
 func (c *Client) ToolsMicroAppCreateV30Api() *api.ToolsMicroAppCreateV30ApiService {

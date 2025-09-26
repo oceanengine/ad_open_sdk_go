@@ -52,7 +52,7 @@ func (r *ApiOpenApiV10QianchuanShopGetGetRequest) WithLog(enable bool) *ApiOpenA
 /*
 OpenApiV10QianchuanShopGetGet Method for OpenApiV10QianchuanShopGetGet
 
-API Description
+获取店铺的基本信息
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanShopGetGetRequest
@@ -87,6 +87,12 @@ func (a *QianchuanShopGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanShop
 	localVarFormParams := url.Values{}
 	if r.shopIds == nil {
 		return localVarReturnValue, nil, ReportError("shopIds is required and must be specified")
+	}
+	if len(*r.shopIds) < 1 {
+		return localVarReturnValue, nil, ReportError("shopIds must have at least 1 elements")
+	}
+	if len(*r.shopIds) > 10 {
+		return localVarReturnValue, nil, ReportError("shopIds must have less than 10 elements")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "shop_ids", r.shopIds)

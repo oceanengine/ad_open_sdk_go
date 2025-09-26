@@ -31,6 +31,8 @@ type CgTransferWalletTransferListV30ResponseDataRecordListInner struct {
 	// 完成时间yyyy-MM-dd HH:mm:ss
 	TransferTargetCreateTime *string `json:"transfer_target_create_time,omitempty"`
 	// 创建时间yyyy-MM-dd HH:mm:ss
-	TransferTargetFinishTime *string                                                            `json:"transfer_target_finish_time,omitempty"`
-	TransferTargetStatus     *CgTransferWalletTransferListV30DataRecordListTransferTargetStatus `json:"transfer_target_status,omitempty"`
+	TransferTargetFinishTime *string `json:"transfer_target_finish_time,omitempty"`
+	// 账户间唯一转账编号
+	TransferTargetSerial *string                                                            `json:"transfer_target_serial,omitempty"`
+	TransferTargetStatus *CgTransferWalletTransferListV30DataRecordListTransferTargetStatus `json:"transfer_target_status,omitempty"`
 }

@@ -16,7 +16,9 @@ type QianchuanToolsAwemeAuthV10Request struct {
 	AdvertiserId int64                              `json:"advertiser_id"`
 	AuthType     QianchuanToolsAwemeAuthV10AuthType `json:"auth_type"`
 	//
-	AwemeId string `json:"aweme_id"`
+	AwemeId *string `json:"aweme_id,omitempty"`
+	//
+	AwemeShowId *string `json:"aweme_show_id,omitempty"`
 	//
 	Code string `json:"code"`
 	//

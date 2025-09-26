@@ -23,7 +23,8 @@ type StarMcnProviderGetParticipatedTaskV2ResponseDataDataInner struct {
 	//
 	PayType *int64 `json:"pay_type,omitempty"`
 	//
-	ProviderOrderTaskStatus *int64 `json:"provider_order_task_status,omitempty"`
+	ProviderOrderTaskStatus *int64                                                              `json:"provider_order_task_status,omitempty"`
+	QuotaInfo               *StarMcnProviderGetParticipatedTaskV2ResponseDataDataInnerQuotaInfo `json:"quota_info,omitempty"`
 	// 0-1000，撮合服务商兜底抽佣比例。千分之一，例如50%，写入500
 	ServiceProviderProfitRate *int64 `json:"service_provider_profit_rate,omitempty"`
 	// 0-1000，撮合服务商分渠道抽佣比例，千分之一

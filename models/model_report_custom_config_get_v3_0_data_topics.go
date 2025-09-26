@@ -20,6 +20,7 @@ const (
 	CREATIVE_DATA_ReportCustomConfigGetV30DataTopics        ReportCustomConfigGetV30DataTopics = "CREATIVE_DATA"
 	DMP_DATA_ReportCustomConfigGetV30DataTopics             ReportCustomConfigGetV30DataTopics = "DMP_DATA"
 	DPA_VIDEO_DATA_ReportCustomConfigGetV30DataTopics       ReportCustomConfigGetV30DataTopics = "DPA_VIDEO_DATA"
+	MATERIAL_BOOST_DATA_ReportCustomConfigGetV30DataTopics  ReportCustomConfigGetV30DataTopics = "MATERIAL_BOOST_DATA"
 	MATERIAL_DATA_ReportCustomConfigGetV30DataTopics        ReportCustomConfigGetV30DataTopics = "MATERIAL_DATA"
 	ONE_KEY_BOOST_DATA_ReportCustomConfigGetV30DataTopics   ReportCustomConfigGetV30DataTopics = "ONE_KEY_BOOST_DATA"
 	PRODUCT_DATA_ReportCustomConfigGetV30DataTopics         ReportCustomConfigGetV30DataTopics = "PRODUCT_DATA"

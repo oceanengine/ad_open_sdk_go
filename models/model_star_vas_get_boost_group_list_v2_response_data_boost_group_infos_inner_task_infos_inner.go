@@ -17,10 +17,12 @@ type StarVasGetBoostGroupListV2ResponseDataBoostGroupInfosInnerTaskInfosInner st
 	AuthorId int64 `json:"author_id"`
 	// 达人名称
 	AuthorName string `json:"author_name"`
+	// 投稿视频ID
+	ItemId *int64 `json:"item_id,omitempty"`
 	// 视频名称
 	ItemName string `json:"item_name"`
-	// 指派单ID
+	// 指派/投稿任务ID
 	OrderId int64 `json:"order_id"`
-	// 指派单名称
+	// 指派/投稿任务名称
 	OrderName string `json:"order_name"`
 }

@@ -75,6 +75,8 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	//
 	StarTaskId *int64 `json:"star_task_id,omitempty"`
 	//
+	StarVideoMaterialAssessment []*ReportStardeliveryTaskVideoDataGetV30DataListStarVideoMaterialAssessment `json:"star_video_material_assessment,omitempty"`
+	//
 	StarVideoRelatePromotionCount *int64                                                        `json:"star_video_relate_promotion_count,omitempty"`
 	StarVideoStatus               *ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus `json:"star_video_status,omitempty"`
 	//

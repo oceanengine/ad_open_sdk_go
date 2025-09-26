@@ -14,7 +14,9 @@ package models
 type StarVasAppendOrderToBoostItemGroupV2Request struct {
 	// 助推金额，单位元。若为null，则不追加
 	BoostAmount *int64 `json:"boost_amount,omitempty"`
-	// 关联指派单。若为null，则不追加
+	// 关联投稿视频，该字段与order_ids只取其一。同一主推组下指派和投稿不可同时存在
+	ItemIds []int64 `json:"item_ids,omitempty"`
+	// 关联指派单，该字段与item_ids只取其一。同一主推组下指派和投稿不可同时存在
 	OrderIds []int64 `json:"order_ids,omitempty"`
 	// 客户ID
 	StarId int64 `json:"star_id"`

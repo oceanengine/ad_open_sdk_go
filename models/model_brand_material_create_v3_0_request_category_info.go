@@ -18,12 +18,12 @@ type BrandMaterialCreateV30RequestCategoryInfo struct {
 	BrandNameId *int64 `json:"brand_name_id,omitempty"`
 	// cdp返回的品牌名称id，非种草必填，与brand_name_id分别对应对应非种草和种草的品牌名称
 	CdpBrandId *int64 `json:"cdp_brand_id,omitempty"`
-	// 广告分类（行业3.0版），必填
-	IndustryV3 int64 `json:"industry_v3"`
+	// 广告分类（行业3.0版），选填
+	IndustryV3 *int64 `json:"industry_v3,omitempty"`
 	// 产品系列
 	SubBrandNameIds []int64 `json:"sub_brand_name_ids,omitempty"`
-	// 所属类别（云图分类），必填
-	YuntuCategoryId int64 `json:"yuntu_category_id"`
+	// 所属类别（云图分类），种草产品必填，其余选填
+	YuntuCategoryId *int64 `json:"yuntu_category_id,omitempty"`
 	// 云图spuid，选填
 	YuntuSpuId *string `json:"yuntu_spu_id,omitempty"`
 }

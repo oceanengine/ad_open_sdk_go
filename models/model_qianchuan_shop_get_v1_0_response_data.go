@@ -13,5 +13,5 @@ package models
 // QianchuanShopGetV10ResponseData
 type QianchuanShopGetV10ResponseData struct {
 	//
-	List []*QianchuanShopGetV10ResponseDataListInner `json:"list[],omitempty"`
+	List []*QianchuanShopGetV10ResponseDataListInner `json:"list,omitempty"`
 }

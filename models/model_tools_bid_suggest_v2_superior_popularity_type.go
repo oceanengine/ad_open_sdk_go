@@ -15,8 +15,8 @@ type ToolsBidSuggestV2SuperiorPopularityType string
 
 // List of tools_bid_suggest_v2_superior_popularity_type
 const (
-	GAME_ToolsBidSuggestV2SuperiorPopularityType ToolsBidSuggestV2SuperiorPopularityType = "GAME"
 	NONE_ToolsBidSuggestV2SuperiorPopularityType ToolsBidSuggestV2SuperiorPopularityType = "NONE"
+	GAME_ToolsBidSuggestV2SuperiorPopularityType ToolsBidSuggestV2SuperiorPopularityType = "GAME"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_superior_popularity_type value
