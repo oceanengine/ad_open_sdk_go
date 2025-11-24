@@ -23,11 +23,15 @@ import (
 type StarVasGetBoostGroupListV2ApiService service
 
 type ApiOpenApi2StarVasGetBoostGroupListGetRequest struct {
-	ctx        context.Context
-	ApiService *StarVasGetBoostGroupListV2ApiService
-	starId     *int64
-	page       *int32
-	limit      *int32
+	ctx          context.Context
+	ApiService   *StarVasGetBoostGroupListV2ApiService
+	starId       *int64
+	page         *int32
+	limit        *int32
+	status       *StarVasGetBoostGroupListV2Status
+	ltCreateTime *int64
+	gtCreateTime *int64
+	itemOrderId  *int64
 }
 
 // 客户ID
@@ -45,6 +49,30 @@ func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) Page(page int32) *ApiOpe
 // 页内数量，不能超过30
 func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) Limit(limit int32) *ApiOpenApi2StarVasGetBoostGroupListGetRequest {
 	r.limit = &limit
+	return r
+}
+
+// 助推组状态
+func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) Status(status StarVasGetBoostGroupListV2Status) *ApiOpenApi2StarVasGetBoostGroupListGetRequest {
+	r.status = &status
+	return r
+}
+
+// 小于指定助推组创建时间戳
+func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) LtCreateTime(ltCreateTime int64) *ApiOpenApi2StarVasGetBoostGroupListGetRequest {
+	r.ltCreateTime = &ltCreateTime
+	return r
+}
+
+// 大于指定助推组创建时间戳
+func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) GtCreateTime(gtCreateTime int64) *ApiOpenApi2StarVasGetBoostGroupListGetRequest {
+	r.gtCreateTime = &gtCreateTime
+	return r
+}
+
+// 视频所属任务ID
+func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) ItemOrderId(itemOrderId int64) *ApiOpenApi2StarVasGetBoostGroupListGetRequest {
+	r.itemOrderId = &itemOrderId
 	return r
 }
 
@@ -122,6 +150,18 @@ func (a *StarVasGetBoostGroupListV2ApiService) getExecute(r *ApiOpenApi2StarVasG
 	parameterAddToHeaderOrQuery(localVarQueryParams, "star_id", r.starId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "limit", r.limit)
+	if r.status != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "status", r.status)
+	}
+	if r.ltCreateTime != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "lt_create_time", r.ltCreateTime)
+	}
+	if r.gtCreateTime != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "gt_create_time", r.gtCreateTime)
+	}
+	if r.itemOrderId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "item_order_id", r.itemOrderId)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

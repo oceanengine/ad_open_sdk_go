@@ -23,12 +23,13 @@ import (
 )
 
 type ApiOpenApi2AgentAdvRechargeRechargeRecordGetRequestExample struct {
-	AgentIds  []int64                                   `json:"agent_ids"`
-	StartTime string                                    `json:"start_time"`
-	EndTime   string                                    `json:"end_time"`
-	Page      int64                                     `json:"page"`
-	PageSize  int64                                     `json:"page_size"`
-	Filtering AgentAdvRechargeRechargeRecordV2Filtering `json:"filtering,omitempty"`
+	AgentIds       []int64                                   `json:"agent_ids"`
+	StartTime      string                                    `json:"start_time"`
+	EndTime        string                                    `json:"end_time"`
+	Page           int64                                     `json:"page"`
+	PageSize       int64                                     `json:"page_size"`
+	Filtering      AgentAdvRechargeRechargeRecordV2Filtering `json:"filtering,omitempty"`
+	AgentCompanyId int64                                     `json:"agent_company_id,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/agent/adv/recharge/recharge_record/ Get
@@ -50,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.AgentAdvRechargeRechargeRecordV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AgentIds(request.AgentIds).StartTime(request.StartTime).EndTime(request.EndTime).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).
+		AgentIds(request.AgentIds).StartTime(request.StartTime).EndTime(request.EndTime).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).AgentCompanyId(request.AgentCompanyId).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

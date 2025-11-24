@@ -23,14 +23,15 @@ import (
 type ToolsWechatAppletListV30ApiService service
 
 type ApiOpenApiV30ToolsWechatAppletListGetRequest struct {
-	ctx          context.Context
-	ApiService   *ToolsWechatAppletListV30ApiService
-	advertiserId *int64
-	filtering    *ToolsWechatAppletListV30Filtering
-	page         *int32
-	pageSize     *int32
-	orderType    *ToolsWechatAppletListV30OrderType
-	orderField   *ToolsWechatAppletListV30OrderField
+	ctx                    context.Context
+	ApiService             *ToolsWechatAppletListV30ApiService
+	advertiserId           *int64
+	filtering              *ToolsWechatAppletListV30Filtering
+	page                   *int32
+	pageSize               *int32
+	orderType              *ToolsWechatAppletListV30OrderType
+	orderField             *ToolsWechatAppletListV30OrderField
+	accountAssetQueryScope *ToolsWechatAppletListV30AccountAssetQueryScope
 }
 
 func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
@@ -62,6 +63,11 @@ func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) OrderType(orderType Tools
 // 排序字段，允许值： create_time modify_time (默认值)
 func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) OrderField(orderField ToolsWechatAppletListV30OrderField) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
 	r.orderField = &orderField
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsWechatAppletListV30AccountAssetQueryScope) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
+	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
@@ -136,6 +142,9 @@ func (a *ToolsWechatAppletListV30ApiService) getExecute(r *ApiOpenApiV30ToolsWec
 	}
 	if r.orderField != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "order_field", r.orderField)
+	}
+	if r.accountAssetQueryScope != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "account_asset_query_scope", r.accountAssetQueryScope)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

@@ -12,6 +12,8 @@ package models
 
 // BrandMaterialCreateV30ResponseData
 type BrandMaterialCreateV30ResponseData struct {
+	// 创意ID-创意名称映射关系
+	MaterialIdNameMap *map[string]string `json:"material_id_name_map,omitempty"`
 	//
 	MaterialIds []int64 `json:"material_ids,omitempty"`
 }

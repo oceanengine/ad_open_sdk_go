@@ -15,8 +15,9 @@ type ToolsWechatGameListV30AccountType string
 
 // List of tools_wechat_game_list_v3.0_account_type
 const (
-	BP_ToolsWechatGameListV30AccountType ToolsWechatGameListV30AccountType = "BP"
-	AD_ToolsWechatGameListV30AccountType ToolsWechatGameListV30AccountType = "AD"
+	BP_ToolsWechatGameListV30AccountType  ToolsWechatGameListV30AccountType = "BP"
+	AD_ToolsWechatGameListV30AccountType  ToolsWechatGameListV30AccountType = "AD"
+	EBP_ToolsWechatGameListV30AccountType ToolsWechatGameListV30AccountType = "EBP"
 )
 
 // Ptr returns reference to tools_wechat_game_list_v3.0_account_type value

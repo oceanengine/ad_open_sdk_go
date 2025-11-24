@@ -23,13 +23,14 @@ import (
 type ToolsAppManagementHarmonyAppListV2ApiService service
 
 type ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest struct {
-	ctx         context.Context
-	ApiService  *ToolsAppManagementHarmonyAppListV2ApiService
-	accountId   *int64
-	accountType *ToolsAppManagementHarmonyAppListV2AccountType
-	page        *int64
-	pageSize    *int64
-	filtering   *ToolsAppManagementHarmonyAppListV2Filtering
+	ctx                    context.Context
+	ApiService             *ToolsAppManagementHarmonyAppListV2ApiService
+	accountId              *int64
+	accountType            *ToolsAppManagementHarmonyAppListV2AccountType
+	page                   *int64
+	pageSize               *int64
+	filtering              *ToolsAppManagementHarmonyAppListV2Filtering
+	accountAssetQueryScope *ToolsAppManagementHarmonyAppListV2AccountAssetQueryScope
 }
 
 func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AccountId(accountId int64) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
@@ -56,6 +57,11 @@ func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) PageSize(pageSiz
 // 过滤器
 func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) Filtering(filtering ToolsAppManagementHarmonyAppListV2Filtering) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
 	r.filtering = &filtering
+	return r
+}
+
+func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsAppManagementHarmonyAppListV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
+	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
@@ -128,6 +134,9 @@ func (a *ToolsAppManagementHarmonyAppListV2ApiService) getExecute(r *ApiOpenApi2
 	}
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	}
+	if r.accountAssetQueryScope != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "account_asset_query_scope", r.accountAssetQueryScope)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

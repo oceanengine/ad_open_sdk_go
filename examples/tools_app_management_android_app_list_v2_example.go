@@ -23,11 +23,12 @@ import (
 )
 
 type ApiOpenApi2ToolsAppManagementAndroidAppListGetRequestExample struct {
-	AccountId   int64                                         `json:"account_id"`
-	AccountType ToolsAppManagementAndroidAppListV2AccountType `json:"account_type"`
-	Page        int32                                         `json:"page,omitempty"`
-	PageSize    int32                                         `json:"page_size,omitempty"`
-	Filtering   ToolsAppManagementAndroidAppListV2Filtering   `json:"filtering,omitempty"`
+	AccountId              int64                                                    `json:"account_id"`
+	AccountType            ToolsAppManagementAndroidAppListV2AccountType            `json:"account_type"`
+	Page                   int32                                                    `json:"page,omitempty"`
+	PageSize               int32                                                    `json:"page_size,omitempty"`
+	Filtering              ToolsAppManagementAndroidAppListV2Filtering              `json:"filtering,omitempty"`
+	AccountAssetQueryScope ToolsAppManagementAndroidAppListV2AccountAssetQueryScope `json:"account_asset_query_scope,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/app_management/android_app/list/ Get
@@ -49,7 +50,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsAppManagementAndroidAppListV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).AccountType(request.AccountType).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).
+		AccountId(request.AccountId).AccountType(request.AccountType).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).AccountAssetQueryScope(request.AccountAssetQueryScope).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -68,6 +68,8 @@ type ProjectCreateV30Request struct {
 	//
 	QuickAppId     *int64                                 `json:"quick_app_id,omitempty"`
 	RelatedProduct *ProjectCreateV30RequestRelatedProduct `json:"related_product,omitempty"`
+	//
+	RtaId *int64 `json:"rta_id,omitempty"`
 	// 出价系数
 	SearchBidRatio                 *float64                                        `json:"search_bid_ratio,omitempty"`
 	StarAutoDeliverySwitch         *ProjectCreateV30StarAutoDeliverySwitch         `json:"star_auto_delivery_switch,omitempty"`

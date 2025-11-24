@@ -23,10 +23,11 @@ import (
 )
 
 type ApiOpenApiV30ToolsMicroAppListGetRequestExample struct {
-	AdvertiserId int64                         `json:"advertiser_id"`
-	Filtering    ToolsMicroAppListV30Filtering `json:"filtering,omitempty"`
-	Page         int32                         `json:"page,omitempty"`
-	PageSize     int32                         `json:"page_size,omitempty"`
+	AdvertiserId           int64                                      `json:"advertiser_id"`
+	Filtering              ToolsMicroAppListV30Filtering              `json:"filtering,omitempty"`
+	Page                   int32                                      `json:"page,omitempty"`
+	PageSize               int32                                      `json:"page_size,omitempty"`
+	AccountAssetQueryScope ToolsMicroAppListV30AccountAssetQueryScope `json:"account_asset_query_scope,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/micro_app/list/ Get
@@ -48,7 +49,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsMicroAppListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).AccountAssetQueryScope(request.AccountAssetQueryScope).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -23,14 +23,15 @@ import (
 )
 
 type ApiOpenApi2ToolsAppManagementBookingGetGetRequestExample struct {
-	AdvertiserId         int64                                              `json:"advertiser_id"`
-	Page                 int32                                              `json:"page,omitempty"`
-	PageSize             int32                                              `json:"page_size,omitempty"`
-	SearchKey            string                                             `json:"search_key,omitempty"`
-	SearchType           ToolsAppManagementBookingGetV2SearchType           `json:"search_type,omitempty"`
-	Status               ToolsAppManagementBookingGetV2Status               `json:"status,omitempty"`
-	ScheduledPublishTime ToolsAppManagementBookingGetV2ScheduledPublishTime `json:"scheduled_publish_time,omitempty"`
-	CreateTime           ToolsAppManagementBookingGetV2CreateTime           `json:"create_time,omitempty"`
+	AdvertiserId           int64                                                `json:"advertiser_id"`
+	Page                   int32                                                `json:"page,omitempty"`
+	PageSize               int32                                                `json:"page_size,omitempty"`
+	SearchKey              string                                               `json:"search_key,omitempty"`
+	SearchType             ToolsAppManagementBookingGetV2SearchType             `json:"search_type,omitempty"`
+	Status                 ToolsAppManagementBookingGetV2Status                 `json:"status,omitempty"`
+	ScheduledPublishTime   ToolsAppManagementBookingGetV2ScheduledPublishTime   `json:"scheduled_publish_time,omitempty"`
+	CreateTime             ToolsAppManagementBookingGetV2CreateTime             `json:"create_time,omitempty"`
+	AccountAssetQueryScope ToolsAppManagementBookingGetV2AccountAssetQueryScope `json:"account_asset_query_scope,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/app_management/booking/get/ Get
@@ -52,7 +53,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsAppManagementBookingGetV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Page(request.Page).PageSize(request.PageSize).SearchKey(request.SearchKey).SearchType(request.SearchType).Status(request.Status).ScheduledPublishTime(request.ScheduledPublishTime).CreateTime(request.CreateTime).
+		AdvertiserId(request.AdvertiserId).Page(request.Page).PageSize(request.PageSize).SearchKey(request.SearchKey).SearchType(request.SearchType).Status(request.Status).ScheduledPublishTime(request.ScheduledPublishTime).CreateTime(request.CreateTime).AccountAssetQueryScope(request.AccountAssetQueryScope).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

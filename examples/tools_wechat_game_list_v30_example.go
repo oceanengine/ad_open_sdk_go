@@ -23,11 +23,12 @@ import (
 )
 
 type ApiOpenApiV30ToolsWechatGameListGetRequestExample struct {
-	AccountId   int64                             `json:"account_id"`
-	AccountType ToolsWechatGameListV30AccountType `json:"account_type"`
-	Filtering   ToolsWechatGameListV30Filtering   `json:"filtering,omitempty"`
-	Page        int32                             `json:"page,omitempty"`
-	PageSize    int32                             `json:"page_size,omitempty"`
+	AccountId              int64                                        `json:"account_id"`
+	AccountType            ToolsWechatGameListV30AccountType            `json:"account_type"`
+	Page                   int32                                        `json:"page,omitempty"`
+	PageSize               int32                                        `json:"page_size,omitempty"`
+	AccountAssetQueryScope ToolsWechatGameListV30AccountAssetQueryScope `json:"account_asset_query_scope,omitempty"`
+	Filtering              ToolsWechatGameListV30Filtering              `json:"filtering,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/wechat_game/list/ Get
@@ -49,7 +50,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsWechatGameListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).AccountType(request.AccountType).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
+		AccountId(request.AccountId).AccountType(request.AccountType).Page(request.Page).PageSize(request.PageSize).AccountAssetQueryScope(request.AccountAssetQueryScope).Filtering(request.Filtering).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -23,16 +23,17 @@ import (
 type ToolsAppManagementBookingGetV2ApiService service
 
 type ApiOpenApi2ToolsAppManagementBookingGetGetRequest struct {
-	ctx                  context.Context
-	ApiService           *ToolsAppManagementBookingGetV2ApiService
-	advertiserId         *int64
-	page                 *int32
-	pageSize             *int32
-	searchKey            *string
-	searchType           *ToolsAppManagementBookingGetV2SearchType
-	status               *ToolsAppManagementBookingGetV2Status
-	scheduledPublishTime *ToolsAppManagementBookingGetV2ScheduledPublishTime
-	createTime           *ToolsAppManagementBookingGetV2CreateTime
+	ctx                    context.Context
+	ApiService             *ToolsAppManagementBookingGetV2ApiService
+	advertiserId           *int64
+	page                   *int32
+	pageSize               *int32
+	searchKey              *string
+	searchType             *ToolsAppManagementBookingGetV2SearchType
+	status                 *ToolsAppManagementBookingGetV2Status
+	scheduledPublishTime   *ToolsAppManagementBookingGetV2ScheduledPublishTime
+	createTime             *ToolsAppManagementBookingGetV2CreateTime
+	accountAssetQueryScope *ToolsAppManagementBookingGetV2AccountAssetQueryScope
 }
 
 func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
@@ -72,6 +73,11 @@ func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) ScheduledPublishTime
 
 func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) CreateTime(createTime ToolsAppManagementBookingGetV2CreateTime) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
 	r.createTime = &createTime
+	return r
+}
+
+func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsAppManagementBookingGetV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
+	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
@@ -152,6 +158,9 @@ func (a *ToolsAppManagementBookingGetV2ApiService) getExecute(r *ApiOpenApi2Tool
 	}
 	if r.createTime != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "create_time", r.createTime)
+	}
+	if r.accountAssetQueryScope != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "account_asset_query_scope", r.accountAssetQueryScope)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

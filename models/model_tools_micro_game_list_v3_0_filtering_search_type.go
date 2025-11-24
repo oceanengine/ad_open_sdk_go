@@ -17,6 +17,7 @@ type ToolsMicroGameListV30FilteringSearchType string
 const (
 	CREATE_ONLY_ToolsMicroGameListV30FilteringSearchType ToolsMicroGameListV30FilteringSearchType = "CREATE_ONLY"
 	SHARE_ONLY_ToolsMicroGameListV30FilteringSearchType  ToolsMicroGameListV30FilteringSearchType = "SHARE_ONLY"
+	ALL_ToolsMicroGameListV30FilteringSearchType         ToolsMicroGameListV30FilteringSearchType = "ALL"
 )
 
 // Ptr returns reference to tools_micro_game_list_v3.0_filtering_search_type value

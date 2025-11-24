@@ -32,11 +32,13 @@ type BrandOrderListV30ResponseDataOrdersInner struct {
 	// 创建时间
 	CreateTime *string `json:"create_time,omitempty"`
 	// 预定单创建人
-	Creator           *string                                                    `json:"creator,omitempty"`
-	FrequencyInfo     *BrandOrderListV30ResponseDataOrdersInnerFrequencyInfo     `json:"frequency_info,omitempty"`
-	GdSendType        *BrandOrderListV30DataOrdersGdSendType                     `json:"gd_send_type,omitempty"`
-	MagazinePriceInfo *BrandOrderListV30ResponseDataOrdersInnerMagazinePriceInfo `json:"magazine_price_info,omitempty"`
-	MerchantIntention *BrandOrderListV30ResponseDataOrdersInnerMerchantIntention `json:"merchant_intention,omitempty"`
+	Creator *string `json:"creator,omitempty"`
+	//
+	FailInfoList      []*BrandOrderListV30ResponseDataOrdersInnerFailInfoListInner `json:"fail_info_list,omitempty"`
+	FrequencyInfo     *BrandOrderListV30ResponseDataOrdersInnerFrequencyInfo       `json:"frequency_info,omitempty"`
+	GdSendType        *BrandOrderListV30DataOrdersGdSendType                       `json:"gd_send_type,omitempty"`
+	MagazinePriceInfo *BrandOrderListV30ResponseDataOrdersInnerMagazinePriceInfo   `json:"magazine_price_info,omitempty"`
+	MerchantIntention *BrandOrderListV30ResponseDataOrdersInnerMerchantIntention   `json:"merchant_intention,omitempty"`
 	// 预定单ID
 	OrderId *int64 `json:"order_id,omitempty"`
 	// 预定单名称

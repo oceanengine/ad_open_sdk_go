@@ -23,9 +23,13 @@ import (
 )
 
 type ApiOpenApi2StarVasGetBoostGroupListGetRequestExample struct {
-	StarId int64 `json:"star_id"`
-	Page   int32 `json:"page"`
-	Limit  int32 `json:"limit"`
+	StarId       int64                            `json:"star_id"`
+	Page         int32                            `json:"page"`
+	Limit        int32                            `json:"limit"`
+	Status       StarVasGetBoostGroupListV2Status `json:"status,omitempty"`
+	LtCreateTime int64                            `json:"lt_create_time,omitempty"`
+	GtCreateTime int64                            `json:"gt_create_time,omitempty"`
+	ItemOrderId  int64                            `json:"item_order_id,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/star/vas/get_boost_group_list/ Get
@@ -47,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.StarVasGetBoostGroupListV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		StarId(request.StarId).Page(request.Page).Limit(request.Limit).
+		StarId(request.StarId).Page(request.Page).Limit(request.Limit).Status(request.Status).LtCreateTime(request.LtCreateTime).GtCreateTime(request.GtCreateTime).ItemOrderId(request.ItemOrderId).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

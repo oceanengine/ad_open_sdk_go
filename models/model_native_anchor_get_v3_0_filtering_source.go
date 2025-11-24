@@ -17,6 +17,7 @@ type NativeAnchorGetV30FilteringSource string
 const (
 	AUTO_NativeAnchorGetV30FilteringSource   NativeAnchorGetV30FilteringSource = "AUTO"
 	CUSTOM_NativeAnchorGetV30FilteringSource NativeAnchorGetV30FilteringSource = "CUSTOM"
+	GROUP_NativeAnchorGetV30FilteringSource  NativeAnchorGetV30FilteringSource = "GROUP"
 	MANUAL_NativeAnchorGetV30FilteringSource NativeAnchorGetV30FilteringSource = "MANUAL"
 )
 

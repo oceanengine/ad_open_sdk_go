@@ -18,4 +18,6 @@ type QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMateri
 	AwemeId *int64 `json:"aweme_id,omitempty"`
 	//
 	AwemeName *string `json:"aweme_name,omitempty"`
+	//
+	MaterialId *int64 `json:"material_id,omitempty"`
 }

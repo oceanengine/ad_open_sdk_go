@@ -15,14 +15,25 @@ type QianchuanUniPromotionAdControlTaskCreateV10Request struct {
 	// 调控的目标全域控计划ID
 	AdId int64 `json:"ad_id"`
 	// 千川广告主账户ID
-	AdvertiserId int64 `json:"advertiser_id"`
+	AdvertiserId int64                                                       `json:"advertiser_id"`
+	Audience     *QianchuanUniPromotionAdControlTaskCreateV10RequestAudience `json:"audience,omitempty"`
+	// 直播全域-素材追投-控成本追投-直播间成交的转化出价，出价不能大于预算
+	Bid *float64 `json:"bid,omitempty"`
 	// 调控预算，单位元，小数点后两位，注意：不得超过全域计划预算，注意：调控类型为SMART_BOOST时必填
-	Budget *float64 `json:"budget,omitempty"`
+	Budget             *float64                                                       `json:"budget,omitempty"`
+	DeepExternalAction *QianchuanUniPromotionAdControlTaskCreateV10DeepExternalAction `json:"deep_external_action,omitempty"`
 	// 调控时长，0.5h～24.0h，步进0.5h，注意：调控类型为SMART_BOOST时必填
-	Duration *float64 `json:"duration,omitempty"`
+	Duration       *float64                                                   `json:"duration,omitempty"`
+	ExternalAction *QianchuanUniPromotionAdControlTaskCreateV10ExternalAction `json:"external_action,omitempty"`
 	// 素材列表，需要追投的素材ids 注意：最多支持20个素材
-	MaterialIds []int64 `json:"material_ids,omitempty"`
+	MaterialIds  []int64                                                  `json:"material_ids,omitempty"`
+	MaterialType *QianchuanUniPromotionAdControlTaskCreateV10MaterialType `json:"material_type,omitempty"`
 	// 任务名称，1-50个字
-	Name  string                                           `json:"name"`
-	Scene QianchuanUniPromotionAdControlTaskCreateV10Scene `json:"scene"`
+	Name *string `json:"name,omitempty"`
+	// 直播全域-素材追投-控成本追投-支付ROI目标，单位元，最多支持两位小数
+	Roi2Goal *float64 `json:"roi2_goal,omitempty"`
+	// 直播全域-素材追投-直播间画面素材id
+	RoomMaterialId *int64                                                   `json:"room_material_id,omitempty"`
+	Scene          QianchuanUniPromotionAdControlTaskCreateV10Scene         `json:"scene"`
+	SmartBidType   *QianchuanUniPromotionAdControlTaskCreateV10SmartBidType `json:"smart_bid_type,omitempty"`
 }

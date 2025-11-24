@@ -51,8 +51,9 @@ type ToolsMicroGameListV30ResponseDataListInner struct {
 	//
 	Reason *string `json:"reason,omitempty"`
 	//
-	Remark       *string                                    `json:"remark,omitempty"`
-	RevenueModel *ToolsMicroGameListV30DataListRevenueModel `json:"revenue_model,omitempty"`
+	Remark            *string                                         `json:"remark,omitempty"`
+	RevenueModel      *ToolsMicroGameListV30DataListRevenueModel      `json:"revenue_model,omitempty"`
+	RevenueModelPoint *ToolsMicroGameListV30DataListRevenueModelPoint `json:"revenue_model_point,omitempty"`
 	//
 	ScheduleCards []*ToolsMicroGameListV30DataListScheduleCards `json:"schedule_cards,omitempty"`
 	//

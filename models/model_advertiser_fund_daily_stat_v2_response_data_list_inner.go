@@ -25,6 +25,8 @@ type AdvertiserFundDailyStatV2ResponseDataListInner struct {
 	//
 	Date *string `json:"date,omitempty"`
 	//
+	DeductionCost *float64 `json:"deduction_cost,omitempty"`
+	//
 	Frozen *float64 `json:"frozen,omitempty"`
 	//
 	GrantBalance *float64 `json:"grant_balance,omitempty"`
@@ -32,6 +34,8 @@ type AdvertiserFundDailyStatV2ResponseDataListInner struct {
 	Income *float64 `json:"income,omitempty"`
 	//
 	NonGrantBalance *float64 `json:"non_grant_balance,omitempty"`
+	//
+	RealtimeCouponCost *float64 `json:"realtime_coupon_cost,omitempty"`
 	//
 	RewardCost *float64 `json:"reward_cost,omitempty"`
 	//

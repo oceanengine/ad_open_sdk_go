@@ -15,8 +15,8 @@ type KeywordCreateV2V2KeywordsMatchType string
 
 // List of keyword_create_v2_v2_keywords_match_type
 const (
-	EXTENSIVE_KeywordCreateV2V2KeywordsMatchType KeywordCreateV2V2KeywordsMatchType = "EXTENSIVE"
 	PRECISION_KeywordCreateV2V2KeywordsMatchType KeywordCreateV2V2KeywordsMatchType = "PRECISION"
+	EXTENSIVE_KeywordCreateV2V2KeywordsMatchType KeywordCreateV2V2KeywordsMatchType = "EXTENSIVE"
 	PHRASE_KeywordCreateV2V2KeywordsMatchType    KeywordCreateV2V2KeywordsMatchType = "PHRASE"
 )
 

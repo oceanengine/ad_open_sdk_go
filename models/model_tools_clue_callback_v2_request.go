@@ -23,4 +23,6 @@ type ToolsClueCallbackV2Request struct {
 	EventData *ToolsClueCallbackV2RequestEventData `json:"event_data,omitempty"`
 	//
 	Source int64 `json:"source"`
+	// 回传打标类型：1:人工打标，2:智能客服识别
+	SourceType *int64 `json:"source_type,omitempty"`
 }

@@ -12,6 +12,9 @@ package models
 
 // ToolsAppManagementAppGetV2ResponseDataListInner struct for ToolsAppManagementAppGetV2ResponseDataListInner
 type ToolsAppManagementAppGetV2ResponseDataListInner struct {
+	// 客户id
+	AccountId   *int64                                         `json:"account_id,omitempty"`
+	AccountType *ToolsAppManagementAppGetV2DataListAccountType `json:"account_type,omitempty"`
 	//
 	AppCloudId *int64 `json:"app_cloud_id,omitempty"`
 	//

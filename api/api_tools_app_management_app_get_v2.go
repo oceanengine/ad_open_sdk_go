@@ -23,16 +23,17 @@ import (
 type ToolsAppManagementAppGetV2ApiService service
 
 type ApiOpenApi2ToolsAppManagementAppGetGetRequest struct {
-	ctx          context.Context
-	ApiService   *ToolsAppManagementAppGetV2ApiService
-	advertiserId *int64
-	page         *int32
-	pageSize     *int32
-	searchKey    *string
-	searchType   *ToolsAppManagementAppGetV2SearchType
-	status       *ToolsAppManagementAppGetV2Status
-	publishTime  *ToolsAppManagementAppGetV2PublishTime
-	createTime   *ToolsAppManagementAppGetV2CreateTime
+	ctx                    context.Context
+	ApiService             *ToolsAppManagementAppGetV2ApiService
+	advertiserId           *int64
+	page                   *int32
+	pageSize               *int32
+	searchKey              *string
+	searchType             *ToolsAppManagementAppGetV2SearchType
+	status                 *ToolsAppManagementAppGetV2Status
+	publishTime            *ToolsAppManagementAppGetV2PublishTime
+	createTime             *ToolsAppManagementAppGetV2CreateTime
+	accountAssetQueryScope *ToolsAppManagementAppGetV2AccountAssetQueryScope
 }
 
 func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
@@ -72,6 +73,11 @@ func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) PublishTime(publishTime 
 
 func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) CreateTime(createTime ToolsAppManagementAppGetV2CreateTime) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
 	r.createTime = &createTime
+	return r
+}
+
+func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsAppManagementAppGetV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
+	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
@@ -152,6 +158,9 @@ func (a *ToolsAppManagementAppGetV2ApiService) getExecute(r *ApiOpenApi2ToolsApp
 	}
 	if r.createTime != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "create_time", r.createTime)
+	}
+	if r.accountAssetQueryScope != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "account_asset_query_scope", r.accountAssetQueryScope)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

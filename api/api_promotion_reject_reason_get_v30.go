@@ -23,11 +23,12 @@ import (
 type PromotionRejectReasonGetV30ApiService service
 
 type ApiOpenApiV30PromotionRejectReasonGetGetRequest struct {
-	ctx          context.Context
-	ApiService   *PromotionRejectReasonGetV30ApiService
-	advertiserId *int64
-	promotionIds *[]int64
-	deliveryMode *PromotionRejectReasonGetV30DeliveryMode
+	ctx                 context.Context
+	ApiService          *PromotionRejectReasonGetV30ApiService
+	advertiserId        *int64
+	promotionIds        *[]int64
+	deliveryMode        *PromotionRejectReasonGetV30DeliveryMode
+	needMaterialLegoMid *bool
 }
 
 // 广告主ID
@@ -45,6 +46,12 @@ func (r *ApiOpenApiV30PromotionRejectReasonGetGetRequest) PromotionIds(promotion
 // 投放模式，允许值： MANUAL手动投放（默认值） PROCEDURAL自动投放
 func (r *ApiOpenApiV30PromotionRejectReasonGetGetRequest) DeliveryMode(deliveryMode PromotionRejectReasonGetV30DeliveryMode) *ApiOpenApiV30PromotionRejectReasonGetGetRequest {
 	r.deliveryMode = &deliveryMode
+	return r
+}
+
+// 是否需要返回素材legoMid
+func (r *ApiOpenApiV30PromotionRejectReasonGetGetRequest) NeedMaterialLegoMid(needMaterialLegoMid bool) *ApiOpenApiV30PromotionRejectReasonGetGetRequest {
+	r.needMaterialLegoMid = &needMaterialLegoMid
 	return r
 }
 
@@ -120,6 +127,9 @@ func (a *PromotionRejectReasonGetV30ApiService) getExecute(r *ApiOpenApiV30Promo
 	parameterAddToHeaderOrQuery(localVarQueryParams, "promotion_ids", r.promotionIds)
 	if r.deliveryMode != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "delivery_mode", r.deliveryMode)
+	}
+	if r.needMaterialLegoMid != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "need_material_lego_mid", r.needMaterialLegoMid)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

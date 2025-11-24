@@ -15,6 +15,8 @@ type ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy 
 
 // List of tools_hot_material_derive_list_v3.0_data_data_derive_materials_strategy_detail_strategy
 const (
+	AIGC_HUMAN_REPLACE_ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy               ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy = "AIGC_HUMAN_REPLACE"
+	AIGC_PRE_VIDEO_ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy                   ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy = "AIGC_PRE_VIDEO"
 	CLIP_REPLACE_ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy                     ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy = "CLIP_REPLACE"
 	DERIVE_FROM_CHOSEN_HOT_MID_ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy       ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy = "DERIVE_FROM_CHOSEN_HOT_MID"
 	DERIVE_FROM_INDUSTRY_HOT_PATTERN_ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy = "DERIVE_FROM_INDUSTRY_HOT_PATTERN"
@@ -23,6 +25,7 @@ const (
 	PRE_VIDEO_CLIP_REPLACE_ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy           ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy = "PRE_VIDEO_CLIP_REPLACE"
 	RAW_MATERIAL_REPLACE_ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy             ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy = "RAW_MATERIAL_REPLACE"
 	ROBOT_REPLACE_ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy                    ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy = "ROBOT_REPLACE"
+	SMART_REPLACE_ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy                    ToolsHotMaterialDeriveListV30DataDataDeriveMaterialsStrategyDetailStrategy = "SMART_REPLACE"
 )
 
 // Ptr returns reference to tools_hot_material_derive_list_v3.0_data_data_derive_materials_strategy_detail_strategy value

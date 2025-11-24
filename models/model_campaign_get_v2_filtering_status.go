@@ -15,10 +15,10 @@ type CampaignGetV2FilteringStatus string
 
 // List of campaign_get_v2_filtering_status
 const (
-	CAMPAIGN_STATUS_DISABLE_CampaignGetV2FilteringStatus    CampaignGetV2FilteringStatus = "CAMPAIGN_STATUS_DISABLE"
-	CAMPAIGN_STATUS_NOT_DELETE_CampaignGetV2FilteringStatus CampaignGetV2FilteringStatus = "CAMPAIGN_STATUS_NOT_DELETE"
-	CAMPAIGN_STATUS_ALL_CampaignGetV2FilteringStatus        CampaignGetV2FilteringStatus = "CAMPAIGN_STATUS_ALL"
 	CAMPAIGN_STATUS_ENABLE_CampaignGetV2FilteringStatus     CampaignGetV2FilteringStatus = "CAMPAIGN_STATUS_ENABLE"
+	CAMPAIGN_STATUS_NOT_DELETE_CampaignGetV2FilteringStatus CampaignGetV2FilteringStatus = "CAMPAIGN_STATUS_NOT_DELETE"
+	CAMPAIGN_STATUS_DISABLE_CampaignGetV2FilteringStatus    CampaignGetV2FilteringStatus = "CAMPAIGN_STATUS_DISABLE"
+	CAMPAIGN_STATUS_ALL_CampaignGetV2FilteringStatus        CampaignGetV2FilteringStatus = "CAMPAIGN_STATUS_ALL"
 	CAMPAIGN_STATUS_DELETE_CampaignGetV2FilteringStatus     CampaignGetV2FilteringStatus = "CAMPAIGN_STATUS_DELETE"
 )
 

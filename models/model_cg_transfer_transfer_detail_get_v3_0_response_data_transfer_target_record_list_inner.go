@@ -16,6 +16,8 @@ type CgTransferTransferDetailGetV30ResponseDataTransferTargetRecordListInner str
 	OpponentTargetId *int64 `json:"opponent_target_id,omitempty"`
 	// 目标账户id，1:N的N
 	TargetId *int64 `json:"target_id,omitempty"`
+	// 账户间转账编号
+	TargetTransferSerial *string `json:"target_transfer_serial,omitempty"`
 	// 转账金额(单位：分)
 	TransferAmount *int64 `json:"transfer_amount,omitempty"`
 	// 转账资金类型列表

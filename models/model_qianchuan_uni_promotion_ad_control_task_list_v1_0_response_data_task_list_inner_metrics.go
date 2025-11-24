@@ -18,6 +18,10 @@ type QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMetrics s
 	ConvertRateForRoi2Assist *float64 `json:"convert_rate_for_roi2_assist,omitempty"`
 	// 调控点击率
 	CtrForRoi2Assist *float64 `json:"ctr_for_roi2_assist,omitempty"`
+	// 调控成交人数
+	PayConvertCntForRoi2Assist *int64 `json:"pay_convert_cnt_for_roi2_assist,omitempty"`
+	// 调控成交成本，单位元
+	PayConvertCostForRoi2Assist *float64 `json:"pay_convert_cost_for_roi2_assist,omitempty"`
 	// 调控展示次数
 	ShowCntForRoi2Assist *int64 `json:"show_cnt_for_roi2_assist,omitempty"`
 	// 调控消耗，单位元
@@ -28,6 +32,8 @@ type QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMetrics s
 	TotalEcomPlatformSubsidyAmountForRoi2Assist *float64 `json:"total_ecom_platform_subsidy_amount_for_roi2_assist,omitempty"`
 	// 调控成交订单数
 	TotalPayOrderCountForRoi2Assist *int64 `json:"total_pay_order_count_for_roi2_assist,omitempty"`
+	// 调控成交智能优惠券金额
+	TotalPayOrderCouponAmountForRoi2Assist *float64 `json:"total_pay_order_coupon_amount_for_roi2_assist,omitempty"`
 	// 调控用户实际支付金额，单位元
 	TotalPayOrderGmvForRoi2Assist *float64 `json:"total_pay_order_gmv_for_roi2_assist,omitempty"`
 	// 调控整体成交金额金额，单位元

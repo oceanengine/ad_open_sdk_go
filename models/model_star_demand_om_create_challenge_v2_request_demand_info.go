@@ -12,6 +12,7 @@ package models
 
 // StarDemandOmCreateChallengeV2RequestDemandInfo
 type StarDemandOmCreateChallengeV2RequestDemandInfo struct {
+	AdSyncConf *StarDemandOmCreateChallengeV2RequestDemandInfoAdSyncConf `json:"ad_sync_conf,omitempty"`
 	// 参考素材 list<string> 最多3个
 	AttatchmentsUrl []string `json:"attatchments_url,omitempty"`
 	// 任务名称 字符串，最长17

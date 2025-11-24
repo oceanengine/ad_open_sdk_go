@@ -26,5 +26,7 @@ type ReportRtaGetV2ResponseDataListInner struct {
 	//
 	Platform *string `json:"platform,omitempty"`
 	//
+	StatTime *string `json:"stat_time,omitempty"`
+	//
 	StatTimeDay *string `json:"stat_time_day,omitempty"`
 }

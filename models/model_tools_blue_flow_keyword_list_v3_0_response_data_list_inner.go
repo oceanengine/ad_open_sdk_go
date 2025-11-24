@@ -19,6 +19,4 @@ type ToolsBlueFlowKeywordListV30ResponseDataListInner struct {
 	//
 	BlueFlowKeywordTopQueryWordList []string                                                  `json:"blue_flow_keyword_top_query_word_list,omitempty"`
 	BlueFlowRecommendType           *ToolsBlueFlowKeywordListV30DataListBlueFlowRecommendType `json:"blue_flow_recommend_type,omitempty"`
-	//
-	SupportBlueFlowRecommendMaterial *bool `json:"support_blue_flow_recommend_material,omitempty"`
 }

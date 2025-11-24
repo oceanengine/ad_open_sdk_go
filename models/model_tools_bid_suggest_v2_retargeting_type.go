@@ -17,8 +17,8 @@ type ToolsBidSuggestV2RetargetingType string
 const (
 	RETARGETING_NONE_ToolsBidSuggestV2RetargetingType    ToolsBidSuggestV2RetargetingType = "RETARGETING_NONE"
 	RETARGETING_EXCLUDE_ToolsBidSuggestV2RetargetingType ToolsBidSuggestV2RetargetingType = "RETARGETING_EXCLUDE"
-	NONE_ToolsBidSuggestV2RetargetingType                ToolsBidSuggestV2RetargetingType = "NONE"
 	RETARGETING_INCLUDE_ToolsBidSuggestV2RetargetingType ToolsBidSuggestV2RetargetingType = "RETARGETING_INCLUDE"
+	NONE_ToolsBidSuggestV2RetargetingType                ToolsBidSuggestV2RetargetingType = "NONE"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_retargeting_type value

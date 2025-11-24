@@ -23,13 +23,14 @@ import (
 type ToolsAppManagementAndroidAppListV2ApiService service
 
 type ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest struct {
-	ctx         context.Context
-	ApiService  *ToolsAppManagementAndroidAppListV2ApiService
-	accountId   *int64
-	accountType *ToolsAppManagementAndroidAppListV2AccountType
-	page        *int32
-	pageSize    *int32
-	filtering   *ToolsAppManagementAndroidAppListV2Filtering
+	ctx                    context.Context
+	ApiService             *ToolsAppManagementAndroidAppListV2ApiService
+	accountId              *int64
+	accountType            *ToolsAppManagementAndroidAppListV2AccountType
+	page                   *int32
+	pageSize               *int32
+	filtering              *ToolsAppManagementAndroidAppListV2Filtering
+	accountAssetQueryScope *ToolsAppManagementAndroidAppListV2AccountAssetQueryScope
 }
 
 func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) AccountId(accountId int64) *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest {
@@ -54,6 +55,11 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) PageSize(pageSiz
 
 func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) Filtering(filtering ToolsAppManagementAndroidAppListV2Filtering) *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest {
 	r.filtering = &filtering
+	return r
+}
+
+func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsAppManagementAndroidAppListV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest {
+	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
@@ -126,6 +132,9 @@ func (a *ToolsAppManagementAndroidAppListV2ApiService) getExecute(r *ApiOpenApi2
 	}
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	}
+	if r.accountAssetQueryScope != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "account_asset_query_scope", r.accountAssetQueryScope)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

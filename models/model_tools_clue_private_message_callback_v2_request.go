@@ -26,4 +26,6 @@ type ToolsCluePrivateMessageCallbackV2Request struct {
 	// 事件/状态变更发生的秒级时间戳
 	EventTimestamp *int64                                           `json:"event_timestamp,omitempty"`
 	MsgInfo        *ToolsCluePrivateMessageCallbackV2RequestMsgInfo `json:"msg_info,omitempty"`
+	// 回传打标类型：1:人工打标，2:智能客服识别
+	SourceType *int64 `json:"source_type,omitempty"`
 }

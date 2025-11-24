@@ -23,14 +23,15 @@ import (
 type AgentAdvRechargeRechargeRecordV2ApiService service
 
 type ApiOpenApi2AgentAdvRechargeRechargeRecordGetRequest struct {
-	ctx        context.Context
-	ApiService *AgentAdvRechargeRechargeRecordV2ApiService
-	agentIds   *[]int64
-	startTime  *string
-	endTime    *string
-	page       *int64
-	pageSize   *int64
-	filtering  *AgentAdvRechargeRechargeRecordV2Filtering
+	ctx            context.Context
+	ApiService     *AgentAdvRechargeRechargeRecordV2ApiService
+	agentIds       *[]int64
+	startTime      *string
+	endTime        *string
+	page           *int64
+	pageSize       *int64
+	filtering      *AgentAdvRechargeRechargeRecordV2Filtering
+	agentCompanyId *int64
 }
 
 // 代理商id列表
@@ -66,6 +67,12 @@ func (r *ApiOpenApi2AgentAdvRechargeRechargeRecordGetRequest) PageSize(pageSize 
 // 过滤器
 func (r *ApiOpenApi2AgentAdvRechargeRechargeRecordGetRequest) Filtering(filtering AgentAdvRechargeRechargeRecordV2Filtering) *ApiOpenApi2AgentAdvRechargeRechargeRecordGetRequest {
 	r.filtering = &filtering
+	return r
+}
+
+// 代理商公司id，不传入则默认使用当前userId在方舟登录的公司id，仅支持单个公司查询
+func (r *ApiOpenApi2AgentAdvRechargeRechargeRecordGetRequest) AgentCompanyId(agentCompanyId int64) *ApiOpenApi2AgentAdvRechargeRechargeRecordGetRequest {
+	r.agentCompanyId = &agentCompanyId
 	return r
 }
 
@@ -151,6 +158,9 @@ func (a *AgentAdvRechargeRechargeRecordV2ApiService) getExecute(r *ApiOpenApi2Ag
 	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	if r.agentCompanyId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "agent_company_id", r.agentCompanyId)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

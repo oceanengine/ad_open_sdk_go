@@ -12,6 +12,9 @@ package models
 
 // DpaProductAvailablesV2ResponseDataListInner struct for DpaProductAvailablesV2ResponseDataListInner
 type DpaProductAvailablesV2ResponseDataListInner struct {
+	// 客户id
+	AccountId   *int64                                     `json:"account_id,omitempty"`
+	AccountType *DpaProductAvailablesV2DataListAccountType `json:"account_type,omitempty"`
 	//
 	Name *string `json:"name,omitempty"`
 	//

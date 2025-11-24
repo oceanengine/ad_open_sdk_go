@@ -15,9 +15,11 @@ type QianchuanUniPromotionAdControlTaskListV10Filtering struct {
 	// 任务结束时间，格式 2021-04-05 00:00:00
 	CreateEndTime *string `json:"create_end_time,omitempty"`
 	// 任务开始时间，格式 2021-04-05 00:00:00
-	CreateStartTime *string                                                       `json:"create_start_time,omitempty"`
-	HavingCost      *QianchuanUniPromotionAdControlTaskListV10FilteringHavingCost `json:"having_cost,omitempty"`
+	CreateStartTime *string                                                           `json:"create_start_time,omitempty"`
+	ExternalAction  *QianchuanUniPromotionAdControlTaskListV10FilteringExternalAction `json:"external_action,omitempty"`
+	HavingCost      *QianchuanUniPromotionAdControlTaskListV10FilteringHavingCost     `json:"having_cost,omitempty"`
 	// 支持根据任务id/名称进行搜索
-	SearchKeyword *string                                                       `json:"search_keyword,omitempty"`
-	TaskStatus    *QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus `json:"task_status,omitempty"`
+	SearchKeyword *string                                                         `json:"search_keyword,omitempty"`
+	SmartBidType  *QianchuanUniPromotionAdControlTaskListV10FilteringSmartBidType `json:"smart_bid_type,omitempty"`
+	TaskStatus    *QianchuanUniPromotionAdControlTaskListV10FilteringTaskStatus   `json:"task_status,omitempty"`
 }

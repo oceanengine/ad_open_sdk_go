@@ -15,6 +15,7 @@ type QianchuanUniPromotionAdControlTaskListV10MarketingGoal string
 
 // List of qianchuan_uni_promotion_ad_control_task_list_v1.0_marketing_goal
 const (
+	LIVE_PROM_GOODS_QianchuanUniPromotionAdControlTaskListV10MarketingGoal  QianchuanUniPromotionAdControlTaskListV10MarketingGoal = "LIVE_PROM_GOODS"
 	VIDEO_PROM_GOODS_QianchuanUniPromotionAdControlTaskListV10MarketingGoal QianchuanUniPromotionAdControlTaskListV10MarketingGoal = "VIDEO_PROM_GOODS"
 )
 

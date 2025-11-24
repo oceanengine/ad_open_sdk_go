@@ -23,12 +23,13 @@ import (
 type ToolsMicroGameListV30ApiService service
 
 type ApiOpenApiV30ToolsMicroGameListGetRequest struct {
-	ctx          context.Context
-	ApiService   *ToolsMicroGameListV30ApiService
-	advertiserId *int64
-	filtering    *ToolsMicroGameListV30Filtering
-	page         *int32
-	pageSize     *int32
+	ctx                    context.Context
+	ApiService             *ToolsMicroGameListV30ApiService
+	advertiserId           *int64
+	filtering              *ToolsMicroGameListV30Filtering
+	page                   *int32
+	pageSize               *int32
+	accountAssetQueryScope *ToolsMicroGameListV30AccountAssetQueryScope
 }
 
 func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsMicroGameListGetRequest {
@@ -48,6 +49,11 @@ func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) Page(page int32) *ApiOpenApi
 
 func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) PageSize(pageSize int32) *ApiOpenApiV30ToolsMicroGameListGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsMicroGameListV30AccountAssetQueryScope) *ApiOpenApiV30ToolsMicroGameListGetRequest {
+	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
@@ -116,6 +122,9 @@ func (a *ToolsMicroGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsMicroG
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.accountAssetQueryScope != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "account_asset_query_scope", r.accountAssetQueryScope)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

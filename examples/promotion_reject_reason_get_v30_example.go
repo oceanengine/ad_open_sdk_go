@@ -23,9 +23,10 @@ import (
 )
 
 type ApiOpenApiV30PromotionRejectReasonGetGetRequestExample struct {
-	AdvertiserId int64                                   `json:"advertiser_id"`
-	PromotionIds []int64                                 `json:"promotion_ids"`
-	DeliveryMode PromotionRejectReasonGetV30DeliveryMode `json:"delivery_mode,omitempty"`
+	AdvertiserId        int64                                   `json:"advertiser_id"`
+	PromotionIds        []int64                                 `json:"promotion_ids"`
+	DeliveryMode        PromotionRejectReasonGetV30DeliveryMode `json:"delivery_mode,omitempty"`
+	NeedMaterialLegoMid bool                                    `json:"need_material_lego_mid,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/promotion/reject_reason/get/ Get
@@ -47,7 +48,7 @@ func main() {
 	resp, httpRes, err := apiClient.PromotionRejectReasonGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).PromotionIds(request.PromotionIds).DeliveryMode(request.DeliveryMode).
+		AdvertiserId(request.AdvertiserId).PromotionIds(request.PromotionIds).DeliveryMode(request.DeliveryMode).NeedMaterialLegoMid(request.NeedMaterialLegoMid).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

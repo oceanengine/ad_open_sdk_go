@@ -23,6 +23,7 @@ const (
 	FEED_ReportBrandDataV30FilterAdForm                      ReportBrandDataV30FilterAdForm = "FEED"
 	FEEDSLIVE_AD_ReportBrandDataV30FilterAdForm              ReportBrandDataV30FilterAdForm = "FEEDSLIVE_AD"
 	FEEDSLIVE_SERVICE_ReportBrandDataV30FilterAdForm         ReportBrandDataV30FilterAdForm = "FEEDSLIVE_SERVICE"
+	LITE_FEED_ReportBrandDataV30FilterAdForm                 ReportBrandDataV30FilterAdForm = "LITE_FEED"
 	SPLASH_ReportBrandDataV30FilterAdForm                    ReportBrandDataV30FilterAdForm = "SPLASH"
 	VIDEOLIVE_AD_ReportBrandDataV30FilterAdForm              ReportBrandDataV30FilterAdForm = "VIDEOLIVE_AD"
 )

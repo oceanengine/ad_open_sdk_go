@@ -23,15 +23,15 @@ import (
 )
 
 type ApiOpenApi2ReportRtaGetGetRequestExample struct {
-	AdvertiserId    int64                         `json:"advertiser_id,omitempty"`
-	EndDate         string                        `json:"end_date,omitempty"`
-	OrderField      ReportRtaGetV2OrderField      `json:"order_field,omitempty"`
-	OrderType       ReportRtaGetV2OrderType       `json:"order_type,omitempty"`
-	Page            int64                         `json:"page,omitempty"`
-	PageSize        int64                         `json:"page_size,omitempty"`
-	ReportType      ReportRtaGetV2ReportType      `json:"report_type,omitempty"`
-	StartDate       string                        `json:"start_date,omitempty"`
-	TimeGranularity ReportRtaGetV2TimeGranularity `json:"time_granularity,omitempty"`
+	AdvertiserId    int64                   `json:"advertiser_id"`
+	StartDate       string                  `json:"start_date"`
+	EndDate         string                  `json:"end_date"`
+	ReportType      string                  `json:"report_type"`
+	TimeGranularity string                  `json:"time_granularity,omitempty"`
+	OrderField      string                  `json:"order_field,omitempty"`
+	OrderType       ReportRtaGetV2OrderType `json:"order_type,omitempty"`
+	Page            int64                   `json:"page,omitempty"`
+	PageSize        int64                   `json:"page_size,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/report/rta/get/ Get
@@ -53,7 +53,7 @@ func main() {
 	resp, httpRes, err := apiClient.ReportRtaGetV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).EndDate(request.EndDate).OrderField(request.OrderField).OrderType(request.OrderType).Page(request.Page).PageSize(request.PageSize).ReportType(request.ReportType).StartDate(request.StartDate).TimeGranularity(request.TimeGranularity).
+		AdvertiserId(request.AdvertiserId).StartDate(request.StartDate).EndDate(request.EndDate).ReportType(request.ReportType).TimeGranularity(request.TimeGranularity).OrderField(request.OrderField).OrderType(request.OrderType).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

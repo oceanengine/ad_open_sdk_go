@@ -17,6 +17,7 @@ type ToolsSiteGetV2ShareType string
 const (
 	MY_CREATIONS_ToolsSiteGetV2ShareType ToolsSiteGetV2ShareType = "MY_CREATIONS"
 	SHARE_ToolsSiteGetV2ShareType        ToolsSiteGetV2ShareType = "SHARE"
+	GROUP_ToolsSiteGetV2ShareType        ToolsSiteGetV2ShareType = "GROUP"
 )
 
 // Ptr returns reference to tools_site_get_v2_share_type value

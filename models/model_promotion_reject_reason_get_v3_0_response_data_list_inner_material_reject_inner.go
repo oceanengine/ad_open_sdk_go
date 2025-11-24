@@ -15,6 +15,8 @@ type PromotionRejectReasonGetV30ResponseDataListInnerMaterialRejectInner struct 
 	AuditPlatform *PromotionRejectReasonGetV30DataListMaterialRejectAuditPlatform `json:"audit_platform,omitempty"`
 	//
 	Item *string `json:"item,omitempty"`
+	// 素材legoMid
+	LegoMid *int64 `json:"lego_mid,omitempty"`
 	// 拒绝建议
 	RejectReason []string `json:"reject_reason,omitempty"`
 	// 审核建议

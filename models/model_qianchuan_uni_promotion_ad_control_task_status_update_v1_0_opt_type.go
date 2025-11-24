@@ -15,7 +15,10 @@ type QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType string
 
 // List of qianchuan_uni_promotion_ad_control_task_status_update_v1.0_opt_type
 const (
+	DELETE_QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType  QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType = "DELETE"
 	DISABLE_QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType = "DISABLE"
+	ENABLE_QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType  QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType = "ENABLE"
+	PAUSE_QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType   QianchuanUniPromotionAdControlTaskStatusUpdateV10OptType = "PAUSE"
 )
 
 // Ptr returns reference to qianchuan_uni_promotion_ad_control_task_status_update_v1.0_opt_type value

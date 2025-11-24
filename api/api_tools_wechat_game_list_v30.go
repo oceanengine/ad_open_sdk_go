@@ -23,13 +23,14 @@ import (
 type ToolsWechatGameListV30ApiService service
 
 type ApiOpenApiV30ToolsWechatGameListGetRequest struct {
-	ctx         context.Context
-	ApiService  *ToolsWechatGameListV30ApiService
-	accountId   *int64
-	accountType *ToolsWechatGameListV30AccountType
-	filtering   *ToolsWechatGameListV30Filtering
-	page        *int32
-	pageSize    *int32
+	ctx                    context.Context
+	ApiService             *ToolsWechatGameListV30ApiService
+	accountId              *int64
+	accountType            *ToolsWechatGameListV30AccountType
+	page                   *int32
+	pageSize               *int32
+	accountAssetQueryScope *ToolsWechatGameListV30AccountAssetQueryScope
+	filtering              *ToolsWechatGameListV30Filtering
 }
 
 func (r *ApiOpenApiV30ToolsWechatGameListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsWechatGameListGetRequest {
@@ -42,11 +43,6 @@ func (r *ApiOpenApiV30ToolsWechatGameListGetRequest) AccountType(accountType Too
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsWechatGameListGetRequest) Filtering(filtering ToolsWechatGameListV30Filtering) *ApiOpenApiV30ToolsWechatGameListGetRequest {
-	r.filtering = &filtering
-	return r
-}
-
 func (r *ApiOpenApiV30ToolsWechatGameListGetRequest) Page(page int32) *ApiOpenApiV30ToolsWechatGameListGetRequest {
 	r.page = &page
 	return r
@@ -54,6 +50,16 @@ func (r *ApiOpenApiV30ToolsWechatGameListGetRequest) Page(page int32) *ApiOpenAp
 
 func (r *ApiOpenApiV30ToolsWechatGameListGetRequest) PageSize(pageSize int32) *ApiOpenApiV30ToolsWechatGameListGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsWechatGameListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsWechatGameListV30AccountAssetQueryScope) *ApiOpenApiV30ToolsWechatGameListGetRequest {
+	r.accountAssetQueryScope = &accountAssetQueryScope
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsWechatGameListGetRequest) Filtering(filtering ToolsWechatGameListV30Filtering) *ApiOpenApiV30ToolsWechatGameListGetRequest {
+	r.filtering = &filtering
 	return r
 }
 
@@ -118,14 +124,17 @@ func (a *ToolsWechatGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsWecha
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "account_id", r.accountId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
-	if r.filtering != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
-	}
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.accountAssetQueryScope != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "account_asset_query_scope", r.accountAssetQueryScope)
+	}
+	if r.filtering != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

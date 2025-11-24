@@ -23,14 +23,15 @@ import (
 )
 
 type ApiOpenApi2ToolsAppManagementAppGetGetRequestExample struct {
-	AdvertiserId int64                                 `json:"advertiser_id"`
-	Page         int32                                 `json:"page,omitempty"`
-	PageSize     int32                                 `json:"page_size,omitempty"`
-	SearchKey    string                                `json:"search_key,omitempty"`
-	SearchType   ToolsAppManagementAppGetV2SearchType  `json:"search_type,omitempty"`
-	Status       ToolsAppManagementAppGetV2Status      `json:"status,omitempty"`
-	PublishTime  ToolsAppManagementAppGetV2PublishTime `json:"publish_time,omitempty"`
-	CreateTime   ToolsAppManagementAppGetV2CreateTime  `json:"create_time,omitempty"`
+	AdvertiserId           int64                                            `json:"advertiser_id"`
+	Page                   int32                                            `json:"page,omitempty"`
+	PageSize               int32                                            `json:"page_size,omitempty"`
+	SearchKey              string                                           `json:"search_key,omitempty"`
+	SearchType             ToolsAppManagementAppGetV2SearchType             `json:"search_type,omitempty"`
+	Status                 ToolsAppManagementAppGetV2Status                 `json:"status,omitempty"`
+	PublishTime            ToolsAppManagementAppGetV2PublishTime            `json:"publish_time,omitempty"`
+	CreateTime             ToolsAppManagementAppGetV2CreateTime             `json:"create_time,omitempty"`
+	AccountAssetQueryScope ToolsAppManagementAppGetV2AccountAssetQueryScope `json:"account_asset_query_scope,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/app_management/app/get/ Get
@@ -52,7 +53,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsAppManagementAppGetV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Page(request.Page).PageSize(request.PageSize).SearchKey(request.SearchKey).SearchType(request.SearchType).Status(request.Status).PublishTime(request.PublishTime).CreateTime(request.CreateTime).
+		AdvertiserId(request.AdvertiserId).Page(request.Page).PageSize(request.PageSize).SearchKey(request.SearchKey).SearchType(request.SearchType).Status(request.Status).PublishTime(request.PublishTime).CreateTime(request.CreateTime).AccountAssetQueryScope(request.AccountAssetQueryScope).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -17,6 +17,7 @@ type ToolsEventAllAssetsDetailV2DataAssetListAppType string
 const (
 	ANDROID_ToolsEventAllAssetsDetailV2DataAssetListAppType ToolsEventAllAssetsDetailV2DataAssetListAppType = "ANDROID"
 	IOS_ToolsEventAllAssetsDetailV2DataAssetListAppType     ToolsEventAllAssetsDetailV2DataAssetListAppType = "IOS"
+	HARMONY_ToolsEventAllAssetsDetailV2DataAssetListAppType ToolsEventAllAssetsDetailV2DataAssetListAppType = "HARMONY"
 )
 
 // Ptr returns reference to tools_event_all_assets_detail_v2_data_asset_list_app_type value
