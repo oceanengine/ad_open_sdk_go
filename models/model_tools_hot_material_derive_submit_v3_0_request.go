@@ -21,6 +21,8 @@ type ToolsHotMaterialDeriveSubmitV30Request struct {
 	//
 	MaterialIds []int64 `json:"material_ids"`
 	//
+	RemoveAiWatermark *bool `json:"remove_ai_watermark,omitempty"`
+	//
 	StickerElementIds []int64 `json:"sticker_element_ids,omitempty"`
 	//
 	Strategies []*ToolsHotMaterialDeriveSubmitV30Strategies `json:"strategies,omitempty"`

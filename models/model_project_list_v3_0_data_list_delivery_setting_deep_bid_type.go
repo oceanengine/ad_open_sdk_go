@@ -28,6 +28,8 @@ const (
 	IAAP_SEVEN_ROI_COEFFICIENT_ProjectListV30DataListDeliverySettingDeepBidType   ProjectListV30DataListDeliverySettingDeepBidType = "IAAP_SEVEN_ROI_COEFFICIENT"
 	LOAN_ROI_ProjectListV30DataListDeliverySettingDeepBidType                     ProjectListV30DataListDeliverySettingDeepBidType = "LOAN_ROI"
 	MIN_SECOND_STAGE_ProjectListV30DataListDeliverySettingDeepBidType             ProjectListV30DataListDeliverySettingDeepBidType = "MIN_SECOND_STAGE"
+	NET_ORDER_ProjectListV30DataListDeliverySettingDeepBidType                    ProjectListV30DataListDeliverySettingDeepBidType = "NET_ORDER"
+	NET_ORDER_ROI_ProjectListV30DataListDeliverySettingDeepBidType                ProjectListV30DataListDeliverySettingDeepBidType = "NET_ORDER_ROI"
 	PACING_SECOND_STAGE_ProjectListV30DataListDeliverySettingDeepBidType          ProjectListV30DataListDeliverySettingDeepBidType = "PACING_SECOND_STAGE"
 	PER_AND_SEVEN_PAY_ROI_ProjectListV30DataListDeliverySettingDeepBidType        ProjectListV30DataListDeliverySettingDeepBidType = "PER_AND_SEVEN_PAY_ROI"
 	PHONE_CONNECT_BID_ProjectListV30DataListDeliverySettingDeepBidType            ProjectListV30DataListDeliverySettingDeepBidType = "PHONE_CONNECT_BID"

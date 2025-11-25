@@ -28,6 +28,8 @@ const (
 	IAAP_SEVEN_ROI_COEFFICIENT_ProjectCreateV30DeliverySettingDeepBidType   ProjectCreateV30DeliverySettingDeepBidType = "IAAP_SEVEN_ROI_COEFFICIENT"
 	LOAN_ROI_ProjectCreateV30DeliverySettingDeepBidType                     ProjectCreateV30DeliverySettingDeepBidType = "LOAN_ROI"
 	MIN_SECOND_STAGE_ProjectCreateV30DeliverySettingDeepBidType             ProjectCreateV30DeliverySettingDeepBidType = "MIN_SECOND_STAGE"
+	NET_ORDER_ProjectCreateV30DeliverySettingDeepBidType                    ProjectCreateV30DeliverySettingDeepBidType = "NET_ORDER"
+	NET_ORDER_ROI_ProjectCreateV30DeliverySettingDeepBidType                ProjectCreateV30DeliverySettingDeepBidType = "NET_ORDER_ROI"
 	PACING_SECOND_STAGE_ProjectCreateV30DeliverySettingDeepBidType          ProjectCreateV30DeliverySettingDeepBidType = "PACING_SECOND_STAGE"
 	PER_AND_SEVEN_PAY_ROI_ProjectCreateV30DeliverySettingDeepBidType        ProjectCreateV30DeliverySettingDeepBidType = "PER_AND_SEVEN_PAY_ROI"
 	PHONE_CONNECT_BID_ProjectCreateV30DeliverySettingDeepBidType            ProjectCreateV30DeliverySettingDeepBidType = "PHONE_CONNECT_BID"
