@@ -15,9 +15,9 @@ type AdGetV2DataAudienceAppBehaviorTarget string
 
 // List of ad_get_v2_data_audience_app_behavior_target
 const (
-	CATEGORY_AdGetV2DataAudienceAppBehaviorTarget AdGetV2DataAudienceAppBehaviorTarget = "CATEGORY"
-	NONE_AdGetV2DataAudienceAppBehaviorTarget     AdGetV2DataAudienceAppBehaviorTarget = "NONE"
 	APP_AdGetV2DataAudienceAppBehaviorTarget      AdGetV2DataAudienceAppBehaviorTarget = "APP"
+	NONE_AdGetV2DataAudienceAppBehaviorTarget     AdGetV2DataAudienceAppBehaviorTarget = "NONE"
+	CATEGORY_AdGetV2DataAudienceAppBehaviorTarget AdGetV2DataAudienceAppBehaviorTarget = "CATEGORY"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_app_behavior_target value

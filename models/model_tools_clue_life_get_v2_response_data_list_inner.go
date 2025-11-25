@@ -93,6 +93,9 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	PromotionName *string `json:"promotion_name,omitempty"`
 	// 用户填写省份
 	ProvinceName *string `json:"province_name,omitempty"`
+	// 买单补贴券信息
+	QcpxTicketInfo   *string                                     `json:"qcpx_ticket_info,omitempty"`
+	QcpxTicketStatus *ToolsClueLifeGetV2DataListQcpxTicketStatus `json:"qcpx_ticket_status,omitempty"`
 	// 商家备注
 	Remark *string `json:"remark,omitempty"`
 	// 商家表单自定义的字段信息，及其他线索相关信息

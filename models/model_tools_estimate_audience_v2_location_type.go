@@ -17,8 +17,8 @@ type ToolsEstimateAudienceV2LocationType string
 const (
 	CURRENT_ToolsEstimateAudienceV2LocationType ToolsEstimateAudienceV2LocationType = "CURRENT"
 	HOME_ToolsEstimateAudienceV2LocationType    ToolsEstimateAudienceV2LocationType = "HOME"
-	ALL_ToolsEstimateAudienceV2LocationType     ToolsEstimateAudienceV2LocationType = "ALL"
 	TRAVEL_ToolsEstimateAudienceV2LocationType  ToolsEstimateAudienceV2LocationType = "TRAVEL"
+	ALL_ToolsEstimateAudienceV2LocationType     ToolsEstimateAudienceV2LocationType = "ALL"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_location_type value

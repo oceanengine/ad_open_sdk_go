@@ -28,6 +28,8 @@ const (
 	IAAP_SEVEN_ROI_COEFFICIENT_EventManagerDeepBidTypeGetV30DataDeepBidType   EventManagerDeepBidTypeGetV30DataDeepBidType = "IAAP_SEVEN_ROI_COEFFICIENT"
 	LOAN_ROI_EventManagerDeepBidTypeGetV30DataDeepBidType                     EventManagerDeepBidTypeGetV30DataDeepBidType = "LOAN_ROI"
 	MIN_SECOND_STAGE_EventManagerDeepBidTypeGetV30DataDeepBidType             EventManagerDeepBidTypeGetV30DataDeepBidType = "MIN_SECOND_STAGE"
+	NET_ORDER_EventManagerDeepBidTypeGetV30DataDeepBidType                    EventManagerDeepBidTypeGetV30DataDeepBidType = "NET_ORDER"
+	NET_ORDER_ROI_EventManagerDeepBidTypeGetV30DataDeepBidType                EventManagerDeepBidTypeGetV30DataDeepBidType = "NET_ORDER_ROI"
 	PACING_SECOND_STAGE_EventManagerDeepBidTypeGetV30DataDeepBidType          EventManagerDeepBidTypeGetV30DataDeepBidType = "PACING_SECOND_STAGE"
 	PER_AND_SEVEN_PAY_ROI_EventManagerDeepBidTypeGetV30DataDeepBidType        EventManagerDeepBidTypeGetV30DataDeepBidType = "PER_AND_SEVEN_PAY_ROI"
 	PHONE_CONNECT_BID_EventManagerDeepBidTypeGetV30DataDeepBidType            EventManagerDeepBidTypeGetV30DataDeepBidType = "PHONE_CONNECT_BID"

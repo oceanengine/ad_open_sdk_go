@@ -35,6 +35,7 @@ type ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest struct {
 	adType             *EventManagerDeepBidTypeGetV30AdType
 	marketingGoal      *EventManagerDeepBidTypeGetV30MarketingGoal
 	microPromotionType *EventManagerDeepBidTypeGetV30MicroPromotionType
+	productSetting     *EventManagerDeepBidTypeGetV30ProductSetting
 }
 
 // 广告主id
@@ -89,6 +90,11 @@ func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) MarketingGoal(market
 
 func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) MicroPromotionType(microPromotionType EventManagerDeepBidTypeGetV30MicroPromotionType) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
 	r.microPromotionType = &microPromotionType
+	return r
+}
+
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) ProductSetting(productSetting EventManagerDeepBidTypeGetV30ProductSetting) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+	r.productSetting = &productSetting
 	return r
 }
 
@@ -179,6 +185,9 @@ func (a *EventManagerDeepBidTypeGetV30ApiService) getExecute(r *ApiOpenApiV30Eve
 	}
 	if r.microPromotionType != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "micro_promotion_type", r.microPromotionType)
+	}
+	if r.productSetting != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "product_setting", r.productSetting)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
