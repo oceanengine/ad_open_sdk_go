@@ -1,5 +1,5 @@
 /*
-API version: 1.1.72
+API version: 1.1.73
 */
 package ad_open_sdk_go
 
@@ -33,6 +33,10 @@ func (c *Client) AccountFundGetV30Api() *api.AccountFundGetV30ApiService {
 
 func (c *Client) AccountUpdateV30Api() *api.AccountUpdateV30ApiService {
 	return c.ApiClient.AccountUpdateV30Api
+}
+
+func (c *Client) AdBillingUniqueIdGetV30Api() *api.AdBillingUniqueIdGetV30ApiService {
+	return c.ApiClient.AdBillingUniqueIdGetV30Api
 }
 
 func (c *Client) AdCostProtectStatusGetV2Api() *api.AdCostProtectStatusGetV2ApiService {
@@ -1023,6 +1027,66 @@ func (c *Client) DpaDictGetV2Api() *api.DpaDictGetV2ApiService {
 	return c.ApiClient.DpaDictGetV2Api
 }
 
+func (c *Client) DpaEbpCategoryGetV30Api() *api.DpaEbpCategoryGetV30ApiService {
+	return c.ApiClient.DpaEbpCategoryGetV30Api
+}
+
+func (c *Client) DpaEbpClueProductDeleteV30Api() *api.DpaEbpClueProductDeleteV30ApiService {
+	return c.ApiClient.DpaEbpClueProductDeleteV30Api
+}
+
+func (c *Client) DpaEbpClueProductGetV30Api() *api.DpaEbpClueProductGetV30ApiService {
+	return c.ApiClient.DpaEbpClueProductGetV30Api
+}
+
+func (c *Client) DpaEbpClueProductListV30Api() *api.DpaEbpClueProductListV30ApiService {
+	return c.ApiClient.DpaEbpClueProductListV30Api
+}
+
+func (c *Client) DpaEbpClueProductSaveV30Api() *api.DpaEbpClueProductSaveV30ApiService {
+	return c.ApiClient.DpaEbpClueProductSaveV30Api
+}
+
+func (c *Client) DpaEbpDictGetV30Api() *api.DpaEbpDictGetV30ApiService {
+	return c.ApiClient.DpaEbpDictGetV30Api
+}
+
+func (c *Client) DpaEbpLibraryListV30Api() *api.DpaEbpLibraryListV30ApiService {
+	return c.ApiClient.DpaEbpLibraryListV30Api
+}
+
+func (c *Client) DpaEbpMetaGetV30Api() *api.DpaEbpMetaGetV30ApiService {
+	return c.ApiClient.DpaEbpMetaGetV30Api
+}
+
+func (c *Client) DpaEbpPlayletAuthGetV30Api() *api.DpaEbpPlayletAuthGetV30ApiService {
+	return c.ApiClient.DpaEbpPlayletAuthGetV30Api
+}
+
+func (c *Client) DpaEbpProductCreateV30Api() *api.DpaEbpProductCreateV30ApiService {
+	return c.ApiClient.DpaEbpProductCreateV30Api
+}
+
+func (c *Client) DpaEbpProductDeleteV30Api() *api.DpaEbpProductDeleteV30ApiService {
+	return c.ApiClient.DpaEbpProductDeleteV30Api
+}
+
+func (c *Client) DpaEbpProductDetailGetV30Api() *api.DpaEbpProductDetailGetV30ApiService {
+	return c.ApiClient.DpaEbpProductDetailGetV30Api
+}
+
+func (c *Client) DpaEbpProductListV30Api() *api.DpaEbpProductListV30ApiService {
+	return c.ApiClient.DpaEbpProductListV30Api
+}
+
+func (c *Client) DpaEbpProductStatusBatchUpdateV30Api() *api.DpaEbpProductStatusBatchUpdateV30ApiService {
+	return c.ApiClient.DpaEbpProductStatusBatchUpdateV30Api
+}
+
+func (c *Client) DpaEbpProductUpdateV30Api() *api.DpaEbpProductUpdateV30ApiService {
+	return c.ApiClient.DpaEbpProductUpdateV30Api
+}
+
 func (c *Client) DpaMetaGetV2Api() *api.DpaMetaGetV2ApiService {
 	return c.ApiClient.DpaMetaGetV2Api
 }
@@ -1429,6 +1493,10 @@ func (c *Client) LocalImQueryMsgV30Api() *api.LocalImQueryMsgV30ApiService {
 
 func (c *Client) LocalImSendMsgV30Api() *api.LocalImSendMsgV30ApiService {
 	return c.ApiClient.LocalImSendMsgV30Api
+}
+
+func (c *Client) LocalImUploadImageV30Api() *api.LocalImUploadImageV30ApiService {
+	return c.ApiClient.LocalImUploadImageV30Api
 }
 
 func (c *Client) LocalLifeAdvertiserCreateV30Api() *api.LocalLifeAdvertiserCreateV30ApiService {
@@ -2255,16 +2323,36 @@ func (c *Client) QianchuanUniPromotionAdBudgetUpdateV10Api() *api.QianchuanUniPr
 	return c.ApiClient.QianchuanUniPromotionAdBudgetUpdateV10Api
 }
 
+func (c *Client) QianchuanUniPromotionAdControlTaskBudgetUpdateV10Api() *api.QianchuanUniPromotionAdControlTaskBudgetUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskBudgetUpdateV10Api
+}
+
 func (c *Client) QianchuanUniPromotionAdControlTaskCreateV10Api() *api.QianchuanUniPromotionAdControlTaskCreateV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdControlTaskCreateV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdControlTaskDurationUpdateV10Api() *api.QianchuanUniPromotionAdControlTaskDurationUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskDurationUpdateV10Api
 }
 
 func (c *Client) QianchuanUniPromotionAdControlTaskListV10Api() *api.QianchuanUniPromotionAdControlTaskListV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdControlTaskListV10Api
 }
 
+func (c *Client) QianchuanUniPromotionAdControlTaskSmartControlCreateV10Api() *api.QianchuanUniPromotionAdControlTaskSmartControlCreateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskSmartControlCreateV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Api() *api.QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Api
+}
+
 func (c *Client) QianchuanUniPromotionAdControlTaskStatusUpdateV10Api() *api.QianchuanUniPromotionAdControlTaskStatusUpdateV10ApiService {
 	return c.ApiClient.QianchuanUniPromotionAdControlTaskStatusUpdateV10Api
+}
+
+func (c *Client) QianchuanUniPromotionAdControlTaskUpdateV10Api() *api.QianchuanUniPromotionAdControlTaskUpdateV10ApiService {
+	return c.ApiClient.QianchuanUniPromotionAdControlTaskUpdateV10Api
 }
 
 func (c *Client) QianchuanUniPromotionAdDetailV10Api() *api.QianchuanUniPromotionAdDetailV10ApiService {
@@ -2667,8 +2755,16 @@ func (c *Client) SharedWalletMainWalletGetV30Api() *api.SharedWalletMainWalletGe
 	return c.ApiClient.SharedWalletMainWalletGetV30Api
 }
 
+func (c *Client) SharedWalletSharedRelationCreateV30Api() *api.SharedWalletSharedRelationCreateV30ApiService {
+	return c.ApiClient.SharedWalletSharedRelationCreateV30Api
+}
+
 func (c *Client) SharedWalletTransactionDetailGetV30Api() *api.SharedWalletTransactionDetailGetV30ApiService {
 	return c.ApiClient.SharedWalletTransactionDetailGetV30Api
+}
+
+func (c *Client) SharedWalletWalletAdvOperationLogGetV30Api() *api.SharedWalletWalletAdvOperationLogGetV30ApiService {
+	return c.ApiClient.SharedWalletWalletAdvOperationLogGetV30Api
 }
 
 func (c *Client) SharedWalletWalletBalanceGetV30Api() *api.SharedWalletWalletBalanceGetV30ApiService {
@@ -2677,6 +2773,10 @@ func (c *Client) SharedWalletWalletBalanceGetV30Api() *api.SharedWalletWalletBal
 
 func (c *Client) SharedWalletWalletInfoGetV30Api() *api.SharedWalletWalletInfoGetV30ApiService {
 	return c.ApiClient.SharedWalletWalletInfoGetV30Api
+}
+
+func (c *Client) SharedWalletWalletOperationLogGetV30Api() *api.SharedWalletWalletOperationLogGetV30ApiService {
+	return c.ApiClient.SharedWalletWalletOperationLogGetV30Api
 }
 
 func (c *Client) SharedWalletWalletRelationGetV30Api() *api.SharedWalletWalletRelationGetV30ApiService {
@@ -3653,6 +3753,66 @@ func (c *Client) ToolsEbpAppListV30Api() *api.ToolsEbpAppListV30ApiService {
 
 func (c *Client) ToolsEbpAppPublishV30Api() *api.ToolsEbpAppPublishV30ApiService {
 	return c.ApiClient.ToolsEbpAppPublishV30Api
+}
+
+func (c *Client) ToolsEbpAppUpdateV30Api() *api.ToolsEbpAppUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpAppUpdateV30Api
+}
+
+func (c *Client) ToolsEbpMicroAppletCreateV30Api() *api.ToolsEbpMicroAppletCreateV30ApiService {
+	return c.ApiClient.ToolsEbpMicroAppletCreateV30Api
+}
+
+func (c *Client) ToolsEbpMicroAppletLinkListV30Api() *api.ToolsEbpMicroAppletLinkListV30ApiService {
+	return c.ApiClient.ToolsEbpMicroAppletLinkListV30Api
+}
+
+func (c *Client) ToolsEbpMicroAppletListV30Api() *api.ToolsEbpMicroAppletListV30ApiService {
+	return c.ApiClient.ToolsEbpMicroAppletListV30Api
+}
+
+func (c *Client) ToolsEbpMicroAppletUpdateV30Api() *api.ToolsEbpMicroAppletUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpMicroAppletUpdateV30Api
+}
+
+func (c *Client) ToolsEbpMicroGameCreateV30Api() *api.ToolsEbpMicroGameCreateV30ApiService {
+	return c.ApiClient.ToolsEbpMicroGameCreateV30Api
+}
+
+func (c *Client) ToolsEbpMicroGameLinkListV30Api() *api.ToolsEbpMicroGameLinkListV30ApiService {
+	return c.ApiClient.ToolsEbpMicroGameLinkListV30Api
+}
+
+func (c *Client) ToolsEbpMicroGameListV30Api() *api.ToolsEbpMicroGameListV30ApiService {
+	return c.ApiClient.ToolsEbpMicroGameListV30Api
+}
+
+func (c *Client) ToolsEbpMicroGameUpdateV30Api() *api.ToolsEbpMicroGameUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpMicroGameUpdateV30Api
+}
+
+func (c *Client) ToolsEbpWechatAppletCreateV30Api() *api.ToolsEbpWechatAppletCreateV30ApiService {
+	return c.ApiClient.ToolsEbpWechatAppletCreateV30Api
+}
+
+func (c *Client) ToolsEbpWechatAppletListV30Api() *api.ToolsEbpWechatAppletListV30ApiService {
+	return c.ApiClient.ToolsEbpWechatAppletListV30Api
+}
+
+func (c *Client) ToolsEbpWechatAppletUpdateV30Api() *api.ToolsEbpWechatAppletUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpWechatAppletUpdateV30Api
+}
+
+func (c *Client) ToolsEbpWechatGameCreateV30Api() *api.ToolsEbpWechatGameCreateV30ApiService {
+	return c.ApiClient.ToolsEbpWechatGameCreateV30Api
+}
+
+func (c *Client) ToolsEbpWechatGameListV30Api() *api.ToolsEbpWechatGameListV30ApiService {
+	return c.ApiClient.ToolsEbpWechatGameListV30Api
+}
+
+func (c *Client) ToolsEbpWechatGameUpdateV30Api() *api.ToolsEbpWechatGameUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpWechatGameUpdateV30Api
 }
 
 func (c *Client) ToolsEstimateAudienceV2Api() *api.ToolsEstimateAudienceV2ApiService {

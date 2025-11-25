@@ -15,11 +15,11 @@ type ReportAdGetV2DataListAc string
 
 // List of report_ad_get_v2_data_list_ac
 const (
-	UNKNOWN_ReportAdGetV2DataListAc  ReportAdGetV2DataListAc = "unknown"
-	Enum_4_G_ReportAdGetV2DataListAc ReportAdGetV2DataListAc = "4G"
 	Enum_3_G_ReportAdGetV2DataListAc ReportAdGetV2DataListAc = "3G"
 	Enum_2_G_ReportAdGetV2DataListAc ReportAdGetV2DataListAc = "2G"
+	UNKNOWN_ReportAdGetV2DataListAc  ReportAdGetV2DataListAc = "unknown"
 	WIFI_ReportAdGetV2DataListAc     ReportAdGetV2DataListAc = "WIFI"
+	Enum_4_G_ReportAdGetV2DataListAc ReportAdGetV2DataListAc = "4G"
 	Enum_5_G_ReportAdGetV2DataListAc ReportAdGetV2DataListAc = "5G"
 )
 

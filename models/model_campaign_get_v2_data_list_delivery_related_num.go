@@ -16,8 +16,8 @@ type CampaignGetV2DataListDeliveryRelatedNum string
 // List of campaign_get_v2_data_list_delivery_related_num
 const (
 	CAMPAIGN_DPA_SINGLE_DELIVERY_CampaignGetV2DataListDeliveryRelatedNum CampaignGetV2DataListDeliveryRelatedNum = "CAMPAIGN_DPA_SINGLE_DELIVERY"
-	CAMPAIGN_DPA_MULTI_DELIVERY_CampaignGetV2DataListDeliveryRelatedNum  CampaignGetV2DataListDeliveryRelatedNum = "CAMPAIGN_DPA_MULTI_DELIVERY"
 	CAMPAIGN_DPA_DEFAULT_NOT_CampaignGetV2DataListDeliveryRelatedNum     CampaignGetV2DataListDeliveryRelatedNum = "CAMPAIGN_DPA_DEFAULT_NOT"
+	CAMPAIGN_DPA_MULTI_DELIVERY_CampaignGetV2DataListDeliveryRelatedNum  CampaignGetV2DataListDeliveryRelatedNum = "CAMPAIGN_DPA_MULTI_DELIVERY"
 )
 
 // Ptr returns reference to campaign_get_v2_data_list_delivery_related_num value

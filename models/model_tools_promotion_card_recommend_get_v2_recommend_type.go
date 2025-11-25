@@ -15,9 +15,9 @@ type ToolsPromotionCardRecommendGetV2RecommendType string
 
 // List of tools_promotion_card_recommend_get_v2_recommend_type
 const (
-	CALL_TO_ACTION_ToolsPromotionCardRecommendGetV2RecommendType      ToolsPromotionCardRecommendGetV2RecommendType = "CALL_TO_ACTION"
-	SELLING_POINTS_ToolsPromotionCardRecommendGetV2RecommendType      ToolsPromotionCardRecommendGetV2RecommendType = "SELLING_POINTS"
 	PRODUCT_DESCRIPTION_ToolsPromotionCardRecommendGetV2RecommendType ToolsPromotionCardRecommendGetV2RecommendType = "PRODUCT_DESCRIPTION"
+	SELLING_POINTS_ToolsPromotionCardRecommendGetV2RecommendType      ToolsPromotionCardRecommendGetV2RecommendType = "SELLING_POINTS"
+	CALL_TO_ACTION_ToolsPromotionCardRecommendGetV2RecommendType      ToolsPromotionCardRecommendGetV2RecommendType = "CALL_TO_ACTION"
 )
 
 // Ptr returns reference to tools_promotion_card_recommend_get_v2_recommend_type value

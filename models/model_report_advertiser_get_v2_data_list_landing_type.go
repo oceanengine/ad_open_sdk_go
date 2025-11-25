@@ -15,16 +15,16 @@ type ReportAdvertiserGetV2DataListLandingType string
 
 // List of report_advertiser_get_v2_data_list_landing_type
 const (
-	AWEME_ReportAdvertiserGetV2DataListLandingType     ReportAdvertiserGetV2DataListLandingType = "AWEME"
-	LINK_ReportAdvertiserGetV2DataListLandingType      ReportAdvertiserGetV2DataListLandingType = "LINK"
-	QUICK_APP_ReportAdvertiserGetV2DataListLandingType ReportAdvertiserGetV2DataListLandingType = "QUICK_APP"
 	SHOP_ReportAdvertiserGetV2DataListLandingType      ReportAdvertiserGetV2DataListLandingType = "SHOP"
-	LIVE_ReportAdvertiserGetV2DataListLandingType      ReportAdvertiserGetV2DataListLandingType = "LIVE"
-	APP_ReportAdvertiserGetV2DataListLandingType       ReportAdvertiserGetV2DataListLandingType = "APP"
-	GOODS_ReportAdvertiserGetV2DataListLandingType     ReportAdvertiserGetV2DataListLandingType = "GOODS"
-	DPA_ReportAdvertiserGetV2DataListLandingType       ReportAdvertiserGetV2DataListLandingType = "DPA"
 	STORE_ReportAdvertiserGetV2DataListLandingType     ReportAdvertiserGetV2DataListLandingType = "STORE"
+	DPA_ReportAdvertiserGetV2DataListLandingType       ReportAdvertiserGetV2DataListLandingType = "DPA"
+	LIVE_ReportAdvertiserGetV2DataListLandingType      ReportAdvertiserGetV2DataListLandingType = "LIVE"
+	LINK_ReportAdvertiserGetV2DataListLandingType      ReportAdvertiserGetV2DataListLandingType = "LINK"
+	AWEME_ReportAdvertiserGetV2DataListLandingType     ReportAdvertiserGetV2DataListLandingType = "AWEME"
+	QUICK_APP_ReportAdvertiserGetV2DataListLandingType ReportAdvertiserGetV2DataListLandingType = "QUICK_APP"
 	ARTICLE_ReportAdvertiserGetV2DataListLandingType   ReportAdvertiserGetV2DataListLandingType = "ARTICLE"
+	GOODS_ReportAdvertiserGetV2DataListLandingType     ReportAdvertiserGetV2DataListLandingType = "GOODS"
+	APP_ReportAdvertiserGetV2DataListLandingType       ReportAdvertiserGetV2DataListLandingType = "APP"
 )
 
 // Ptr returns reference to report_advertiser_get_v2_data_list_landing_type value

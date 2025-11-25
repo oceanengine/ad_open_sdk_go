@@ -15,8 +15,8 @@ type ClueCouponDetailV2DataFormFormType string
 
 // List of clue_coupon_detail_v2_data_form_form_type
 const (
-	NATIVE_FORM_ClueCouponDetailV2DataFormFormType            ClueCouponDetailV2DataFormFormType = "NATIVE_FORM"
 	ADVANCED_CREATIVE_FORM_ClueCouponDetailV2DataFormFormType ClueCouponDetailV2DataFormFormType = "ADVANCED_CREATIVE_FORM"
+	NATIVE_FORM_ClueCouponDetailV2DataFormFormType            ClueCouponDetailV2DataFormFormType = "NATIVE_FORM"
 	NORMAL_FORM_ClueCouponDetailV2DataFormFormType            ClueCouponDetailV2DataFormFormType = "NORMAL_FORM"
 )
 

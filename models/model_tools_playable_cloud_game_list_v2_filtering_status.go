@@ -17,8 +17,8 @@ type ToolsPlayableCloudGameListV2FilteringStatus string
 const (
 	ON_SHELF_ToolsPlayableCloudGameListV2FilteringStatus      ToolsPlayableCloudGameListV2FilteringStatus = "ON_SHELF"
 	AUDIT_SUCCESS_ToolsPlayableCloudGameListV2FilteringStatus ToolsPlayableCloudGameListV2FilteringStatus = "AUDIT_SUCCESS"
-	AUDIT_FAIL_ToolsPlayableCloudGameListV2FilteringStatus    ToolsPlayableCloudGameListV2FilteringStatus = "AUDIT_FAIL"
 	UPLOAD_STATUS_ToolsPlayableCloudGameListV2FilteringStatus ToolsPlayableCloudGameListV2FilteringStatus = "UPLOAD_STATUS"
+	AUDIT_FAIL_ToolsPlayableCloudGameListV2FilteringStatus    ToolsPlayableCloudGameListV2FilteringStatus = "AUDIT_FAIL"
 	OFF_SHELF_ToolsPlayableCloudGameListV2FilteringStatus     ToolsPlayableCloudGameListV2FilteringStatus = "OFF_SHELF"
 )
 

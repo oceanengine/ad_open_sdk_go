@@ -15,9 +15,9 @@ type ReportAdGetV2FilteringCampaignTypes string
 
 // List of report_ad_get_v2_filtering_campaign_types
 const (
+	CONTENT_ReportAdGetV2FilteringCampaignTypes ReportAdGetV2FilteringCampaignTypes = "CONTENT"
 	SEARCH_ReportAdGetV2FilteringCampaignTypes  ReportAdGetV2FilteringCampaignTypes = "SEARCH"
 	FEED_ReportAdGetV2FilteringCampaignTypes    ReportAdGetV2FilteringCampaignTypes = "FEED"
-	CONTENT_ReportAdGetV2FilteringCampaignTypes ReportAdGetV2FilteringCampaignTypes = "CONTENT"
 )
 
 // Ptr returns reference to report_ad_get_v2_filtering_campaign_types value
