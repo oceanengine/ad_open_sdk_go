@@ -26,9 +26,9 @@ type ApiOpenApi2AssetsCreativeComponentGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *AssetsCreativeComponentGetV2ApiService
 	advertiserId *int64
-	filtering    *AssetsCreativeComponentGetV2Filtering
 	page         *int64
 	pageSize     *int64
+	filtering    *AssetsCreativeComponentGetV2Filtering
 }
 
 func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2AssetsCreativeComponentGetGetRequest {
@@ -36,18 +36,21 @@ func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) AdvertiserId(advertise
 	return r
 }
 
-func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) Filtering(filtering AssetsCreativeComponentGetV2Filtering) *ApiOpenApi2AssetsCreativeComponentGetGetRequest {
-	r.filtering = &filtering
-	return r
-}
-
+// 页码
 func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) Page(page int64) *ApiOpenApi2AssetsCreativeComponentGetGetRequest {
 	r.page = &page
 	return r
 }
 
+// 页面大小
 func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) PageSize(pageSize int64) *ApiOpenApi2AssetsCreativeComponentGetGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+// 过滤器
+func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) Filtering(filtering AssetsCreativeComponentGetV2Filtering) *ApiOpenApi2AssetsCreativeComponentGetGetRequest {
+	r.filtering = &filtering
 	return r
 }
 
@@ -103,18 +106,22 @@ func (a *AssetsCreativeComponentGetV2ApiService) getExecute(r *ApiOpenApi2Assets
 	formFiles = make(map[string]*FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
+	if r.advertiserId == nil {
+		return localVarReturnValue, nil, ReportError("advertiserId is required and must be specified")
+	}
+	if *r.advertiserId < 1 {
+		return localVarReturnValue, nil, ReportError("advertiserId must be greater than 1")
+	}
 
-	if r.advertiserId != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
-	}
-	if r.filtering != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
-	}
+	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.filtering != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

@@ -23,10 +23,10 @@ import (
 )
 
 type ApiOpenApi2AssetsCreativeComponentGetGetRequestExample struct {
-	AdvertiserId int64                                 `json:"advertiser_id,omitempty"`
-	Filtering    AssetsCreativeComponentGetV2Filtering `json:"filtering,omitempty"`
+	AdvertiserId int64                                 `json:"advertiser_id"`
 	Page         int64                                 `json:"page,omitempty"`
 	PageSize     int64                                 `json:"page_size,omitempty"`
+	Filtering    AssetsCreativeComponentGetV2Filtering `json:"filtering,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/assets/creative_component/get/ Get
@@ -48,7 +48,7 @@ func main() {
 	resp, httpRes, err := apiClient.AssetsCreativeComponentGetV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -17,11 +17,9 @@ type AssetsCreativeComponentGetV2ResponseDataListInner struct {
 	//
 	ComponentId *int64 `json:"component_id,omitempty"`
 	//
-	ComponentName *string `json:"component_name,omitempty"`
+	ComponentName *string                                            `json:"component_name,omitempty"`
+	ComponentType *AssetsCreativeComponentGetV2DataListComponentType `json:"component_type,omitempty"`
 	//
-	ComponentType *string `json:"component_type,omitempty"`
-	//
-	CreateTime *string `json:"create_time,omitempty"`
-	//
-	Status *string `json:"status,omitempty"`
+	CreateTime *string                                     `json:"create_time,omitempty"`
+	Status     *AssetsCreativeComponentGetV2DataListStatus `json:"status,omitempty"`
 }
