@@ -12,8 +12,8 @@ package models
 
 // ToolsAppManagementIndustryInfoListV2ResponseDataIndustriesInnerChildrenInnerThemeTagsInner struct for ToolsAppManagementIndustryInfoListV2ResponseDataIndustriesInnerChildrenInnerThemeTagsInner
 type ToolsAppManagementIndustryInfoListV2ResponseDataIndustriesInnerChildrenInnerThemeTagsInner struct {
-	// 题材id
+	//
 	Id *string `json:"id,omitempty"`
-	// 题材名称
+	//
 	Name *string `json:"name,omitempty"`
 }

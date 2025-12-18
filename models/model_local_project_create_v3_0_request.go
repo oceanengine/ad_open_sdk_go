@@ -12,30 +12,40 @@ package models
 
 // LocalProjectCreateV30Request struct for LocalProjectCreateV30Request
 type LocalProjectCreateV30Request struct {
-	AdType         LocalProjectCreateV30AdType           `json:"ad_type"`
-	Audience       *LocalProjectCreateV30RequestAudience `json:"audience,omitempty"`
-	AutoUpdatePois *LocalProjectCreateV30AutoUpdatePois  `json:"auto_update_pois,omitempty"`
-	// 用于推广直播间的抖音号，可通过【获取本地推创编可用抖音号】接口获取 填写说明： 当marketing_goal=`LIVE`时有效且必填
+	AdType                    LocalProjectCreateV30AdType                     `json:"ad_type"`
+	AigcDynamicCreativeSwitch *LocalProjectCreateV30AigcDynamicCreativeSwitch `json:"aigc_dynamic_creative_switch,omitempty"`
+	Audience                  *LocalProjectCreateV30RequestAudience           `json:"audience,omitempty"`
+	AutoUpdatePois            *LocalProjectCreateV30AutoUpdatePois            `json:"auto_update_pois,omitempty"`
+	// 用于推广直播间的抖音号，可通过【获取本地推创编可用抖音号】接口获取，仅推广目的=非线索使用 填写说明： 当marketing_goal=`LIVE`时有效且必填
 	AwemeId *string `json:"aweme_id,omitempty"`
 	// 出价（单位：分）
-	Bid     *int64                       `json:"bid,omitempty"`
-	BidType LocalProjectCreateV30BidType `json:"bid_type"`
+	Bid     *int64                        `json:"bid,omitempty"`
+	BidType *LocalProjectCreateV30BidType `json:"bid_type,omitempty"`
 	// 预算（单位：分）
-	Budget          int64                                 `json:"budget"`
-	BudgetMode      LocalProjectCreateV30BudgetMode       `json:"budget_mode"`
-	DeliveryGoal    *LocalProjectCreateV30DeliveryGoal    `json:"delivery_goal,omitempty"`
-	DeliveryPoiMode *LocalProjectCreateV30DeliveryPoiMode `json:"delivery_poi_mode,omitempty"`
+	Budget     int64                           `json:"budget"`
+	BudgetMode LocalProjectCreateV30BudgetMode `json:"budget_mode"`
+	// 私信接待抖音号，详细规则： 1、仅local_delivery_scene=“EXTERNAL”线索时支持传 2、intelligent_selection_mode = On时：(选的留咨组件+选的n个营销页里有1个关联组件里包含私信)->必传，否则不传 3、intelligent_selection_mode = Off时 3.1、 localAssetType=详情页/私信页:选的留咨组件里包含私信->必传，否则不传 3.2、 localAssetType=营销页：选的n个营销页里有1个关联组件里包含私信->必传，否则不传
+	ConsultAwemeUid *string `json:"consult_aweme_uid,omitempty"`
+	// 每日投放时长（单位：秒，必须为1800s的整数倍） 仅local_delivery_scene=“EXTERNAL”线索且直播且schedule_type=DAILY_DELIVERY_DURATION时允许传
+	DailyDeliverySeconds *int64                                `json:"daily_delivery_seconds,omitempty"`
+	DeliveryGoal         *LocalProjectCreateV30DeliveryGoal    `json:"delivery_goal,omitempty"`
+	DeliveryPackage      *LocalProjectCreateV30DeliveryPackage `json:"delivery_package,omitempty"`
+	DeliveryPoiMode      *LocalProjectCreateV30DeliveryPoiMode `json:"delivery_poi_mode,omitempty"`
 	// 结束投放时间 注意：当schedule_type=“START_TO_END”时支持填写该字段
 	EndTime        *string                              `json:"end_time,omitempty"`
 	ExternalAction *LocalProjectCreateV30ExternalAction `json:"external_action,omitempty"`
 	// 高峰日预算上调比例（注意：该字段为百分比，例如：传“40”表示高峰日时预算上调“40%”）
-	HighBudgetRate *int64 `json:"high_budget_rate,omitempty"`
+	HighBudgetRate           *int64                                         `json:"high_budget_rate,omitempty"`
+	IntelligentSelectionMode *LocalProjectCreateV30IntelligentSelectionMode `json:"intelligent_selection_mode,omitempty"`
 	// 高峰日预算设置 该字段为false时：高峰日（自然周、节假日）、高峰日预算上调比例 均不可填值
 	IsSetPeakBudget *bool `json:"is_set_peak_budget,omitempty"`
 	// 本地推广告账户ID
 	LocalAccountId     int64                                   `json:"local_account_id"`
+	LocalAssetType     *LocalProjectCreateV30LocalAssetType    `json:"local_asset_type,omitempty"`
 	LocalDeliveryScene LocalProjectCreateV30LocalDeliveryScene `json:"local_delivery_scene"`
-	MarketingGoal      LocalProjectCreateV30MarketingGoal      `json:"marketing_goal"`
+	// 选择的营销页ids，详细规则： 1、仅local_delivery_scene=“EXTERNAL”线索时支持传 2、仅(intelligent_selection_mode = Off && local_asset_type = 营销页 ) 或者  （intelligent_selection_mode = On && 所选的门店/商品包含营销页） 时必传，否则不传
+	MarketPageIds []int64                            `json:"market_page_ids,omitempty"`
+	MarketingGoal LocalProjectCreateV30MarketingGoal `json:"marketing_goal"`
 	// 项目名称，长度是1-50个字（两个英文字符占1个字）
 	Name string `json:"name"`
 	// 高峰日-节假日
@@ -51,6 +61,8 @@ type LocalProjectCreateV30Request struct {
 	//
 	ScheduleTime *string                           `json:"schedule_time,omitempty"`
 	ScheduleType LocalProjectCreateV30ScheduleType `json:"schedule_type"`
-	// 开始投放时间 注意：当schedule_type=“START_TO_END”时支持填写该字段
+	// 开始投放时间 注意：当schedule_type=“START_TO_END”/“DELIVERY_7DAY”时支持填写该字段
 	StartTime *string `json:"start_time,omitempty"`
+	// 留咨组件id,详细规则： 1、仅local_delivery_scene=“EXTERNAL”线索时支持传  2、仅intelligent_selection_mode=Off&local_asset_type=营销页不能传（营销页本身绑定了留咨组件），否则必传 3、intelligent_selection_mode=On&所选商品/门店不包含营销页:所选组件需要支持优选(enableInteLligentSelection=true)
+	ToolPackId *int64 `json:"tool_pack_id,omitempty"`
 }

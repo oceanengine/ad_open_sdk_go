@@ -14,16 +14,18 @@ package models
 type LocalPromotionCreateV30Request struct {
 	// 抖音号 说明：当选择素材库和上传视频投广时，该字段必填
 	AwemeId *string `json:"aweme_id,omitempty"`
-	//
+	// 交易广告素材入参，仅交易广告可传
 	CustomerMaterialList []*LocalPromotionCreateV30RequestCustomerMaterialListInner `json:"customer_material_list,omitempty"`
-	// 是否开启团购卡
+	// 是否开启团购卡，仅交易广告可传
 	EnableGraphicDelivery *bool                                    `json:"enable_graphic_delivery,omitempty"`
 	LiveMaterialType      *LocalPromotionCreateV30LiveMaterialType `json:"live_material_type,omitempty"`
 	//
 	LocalAccountId int64 `json:"local_account_id"`
 	// 广告名称
-	Name string `json:"name"`
+	Name               string                                            `json:"name"`
+	ProceduralMaterial *LocalPromotionCreateV30RequestProceduralMaterial `json:"procedural_material,omitempty"`
 	// 项目ID
-	ProjectId         int64                                     `json:"project_id"`
-	VideoHpVisibility *LocalPromotionCreateV30VideoHpVisibility `json:"video_hp_visibility,omitempty"`
+	ProjectId         int64                                            `json:"project_id"`
+	PromotionCardInfo *LocalPromotionCreateV30RequestPromotionCardInfo `json:"promotion_card_info,omitempty"`
+	VideoHpVisibility *LocalPromotionCreateV30VideoHpVisibility        `json:"video_hp_visibility,omitempty"`
 }

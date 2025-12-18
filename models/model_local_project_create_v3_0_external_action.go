@@ -15,6 +15,9 @@ type LocalProjectCreateV30ExternalAction string
 
 // List of local_project_create_v3.0_external_action
 const (
+	CLUE_ACQUISITION_LocalProjectCreateV30ExternalAction      LocalProjectCreateV30ExternalAction = "CLUE_ACQUISITION"
+	CLUE_CONFIRM_LocalProjectCreateV30ExternalAction          LocalProjectCreateV30ExternalAction = "CLUE_CONFIRM"
+	CLUE_HIGH_INTENTION_LocalProjectCreateV30ExternalAction   LocalProjectCreateV30ExternalAction = "CLUE_HIGH_INTENTION"
 	FOLLOW_ACTION_LocalProjectCreateV30ExternalAction         LocalProjectCreateV30ExternalAction = "FOLLOW_ACTION"
 	LIVE_ENGAGEMENT_LocalProjectCreateV30ExternalAction       LocalProjectCreateV30ExternalAction = "LIVE_ENGAGEMENT"
 	LIVE_ENTER_ACTION_LocalProjectCreateV30ExternalAction     LocalProjectCreateV30ExternalAction = "LIVE_ENTER_ACTION"
@@ -23,6 +26,7 @@ const (
 	LIVE_STAY_TIME_LocalProjectCreateV30ExternalAction        LocalProjectCreateV30ExternalAction = "LIVE_STAY_TIME"
 	NATIVE_ACTION_LocalProjectCreateV30ExternalAction         LocalProjectCreateV30ExternalAction = "NATIVE_ACTION"
 	POI_RECOMMEND_LocalProjectCreateV30ExternalAction         LocalProjectCreateV30ExternalAction = "POI_RECOMMEND"
+	PRIVATE_MESSAGE_LocalProjectCreateV30ExternalAction       LocalProjectCreateV30ExternalAction = "PRIVATE_MESSAGE"
 	SHOW_LocalProjectCreateV30ExternalAction                  LocalProjectCreateV30ExternalAction = "SHOW"
 )
 

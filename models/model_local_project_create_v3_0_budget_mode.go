@@ -10,14 +10,15 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30BudgetMode 预算模式设置 本地交易场景下设置说明： 交易下仅支持日预算
+// LocalProjectCreateV30BudgetMode 预算模式设置 本地场景下设置说明： 交易/线索下仅支持日预算 仅线索周期稳投支持：BUDGET_MODE_7DAY_TOTAL
 type LocalProjectCreateV30BudgetMode string
 
 // List of local_project_create_v3.0_budget_mode
 const (
-	ALL_LocalProjectCreateV30BudgetMode               LocalProjectCreateV30BudgetMode = "ALL"
-	BUDGET_MODE_DAY_LocalProjectCreateV30BudgetMode   LocalProjectCreateV30BudgetMode = "BUDGET_MODE_DAY"
-	BUDGET_MODE_TOTAL_LocalProjectCreateV30BudgetMode LocalProjectCreateV30BudgetMode = "BUDGET_MODE_TOTAL"
+	ALL_LocalProjectCreateV30BudgetMode                     LocalProjectCreateV30BudgetMode = "ALL"
+	BUDGET_MODE_7_DAY_TOTAL_LocalProjectCreateV30BudgetMode LocalProjectCreateV30BudgetMode = "BUDGET_MODE_7DAY_TOTAL"
+	BUDGET_MODE_DAY_LocalProjectCreateV30BudgetMode         LocalProjectCreateV30BudgetMode = "BUDGET_MODE_DAY"
+	BUDGET_MODE_TOTAL_LocalProjectCreateV30BudgetMode       LocalProjectCreateV30BudgetMode = "BUDGET_MODE_TOTAL"
 )
 
 // Ptr returns reference to local_project_create_v3.0_budget_mode value

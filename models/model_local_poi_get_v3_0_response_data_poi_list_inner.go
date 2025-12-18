@@ -12,6 +12,8 @@ package models
 
 // LocalPoiGetV30ResponseDataPoiListInner struct for LocalPoiGetV30ResponseDataPoiListInner
 type LocalPoiGetV30ResponseDataPoiListInner struct {
+	//
+	BindMarketPageInfos []*LocalPoiGetV30ResponseDataPoiListInnerBindMarketPageInfosInner `json:"bind_market_page_infos,omitempty"`
 	// 所在城市
 	City *string `json:"city,omitempty"`
 	// 所在区

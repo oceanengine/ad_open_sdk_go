@@ -12,16 +12,21 @@ package models
 
 // LocalProjectDetailV30ResponseDataAudience 定向相关数据
 type LocalProjectDetailV30ResponseDataAudience struct {
+	ActionConfig *LocalProjectDetailV30ResponseDataAudienceActionConfig `json:"action_config,omitempty"`
 	// 年龄
 	Age                   []*LocalProjectDetailV30DataAudienceAge                 `json:"age,omitempty"`
 	ConvertedTimeDuration *LocalProjectDetailV30DataAudienceConvertedTimeDuration `json:"converted_time_duration,omitempty"`
 	// 自定义区域定向设置
-	CustomArea      []*LocalProjectDetailV30ResponseDataAudienceCustomAreaInner `json:"custom_area,omitempty"`
-	District        *LocalProjectDetailV30DataAudienceDistrict                  `json:"district,omitempty"`
-	Gender          *LocalProjectDetailV30DataAudienceGender                    `json:"gender,omitempty"`
-	HideIfConverted *LocalProjectDetailV30DataAudienceHideIfConverted           `json:"hide_if_converted,omitempty"`
-	PoiAround       *LocalProjectDetailV30ResponseDataAudiencePoiAround         `json:"poi_around,omitempty"`
-	Region          *LocalProjectDetailV30ResponseDataAudienceRegion            `json:"region,omitempty"`
+	CustomArea                []*LocalProjectDetailV30ResponseDataAudienceCustomAreaInner `json:"custom_area,omitempty"`
+	CustomizedInterestAction  *LocalProjectDetailV30DataAudienceCustomizedInterestAction  `json:"customized_interest_action,omitempty"`
+	District                  *LocalProjectDetailV30DataAudienceDistrict                  `json:"district,omitempty"`
+	FilterAwemeAbnormalActive *LocalProjectDetailV30DataAudienceFilterAwemeAbnormalActive `json:"filter_aweme_abnormal_active,omitempty"`
+	FilterAwemeFansCount      *LocalProjectDetailV30DataAudienceFilterAwemeFansCount      `json:"filter_aweme_fans_count,omitempty"`
+	Gender                    *LocalProjectDetailV30DataAudienceGender                    `json:"gender,omitempty"`
+	HideIfConverted           *LocalProjectDetailV30DataAudienceHideIfConverted           `json:"hide_if_converted,omitempty"`
+	InterestConfig            *LocalProjectDetailV30ResponseDataAudienceInterestConfig    `json:"interest_config,omitempty"`
+	PoiAround                 *LocalProjectDetailV30ResponseDataAudiencePoiAround         `json:"poi_around,omitempty"`
+	Region                    *LocalProjectDetailV30ResponseDataAudienceRegion            `json:"region,omitempty"`
 	// 定向人群包列表
 	RetargetingTags []int64 `json:"retargeting_tags,omitempty"`
 	// 排除人群包列表

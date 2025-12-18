@@ -15,6 +15,9 @@ type LocalProjectListV30DataProjectListExternalAction string
 
 // List of local_project_list_v3.0_data_project_list_external_action
 const (
+	CLUE_ACQUISITION_LocalProjectListV30DataProjectListExternalAction      LocalProjectListV30DataProjectListExternalAction = "CLUE_ACQUISITION"
+	CLUE_CONFIRM_LocalProjectListV30DataProjectListExternalAction          LocalProjectListV30DataProjectListExternalAction = "CLUE_CONFIRM"
+	CLUE_HIGH_INTENTION_LocalProjectListV30DataProjectListExternalAction   LocalProjectListV30DataProjectListExternalAction = "CLUE_HIGH_INTENTION"
 	FOLLOW_ACTION_LocalProjectListV30DataProjectListExternalAction         LocalProjectListV30DataProjectListExternalAction = "FOLLOW_ACTION"
 	LIVE_ENGAGEMENT_LocalProjectListV30DataProjectListExternalAction       LocalProjectListV30DataProjectListExternalAction = "LIVE_ENGAGEMENT"
 	LIVE_ENTER_ACTION_LocalProjectListV30DataProjectListExternalAction     LocalProjectListV30DataProjectListExternalAction = "LIVE_ENTER_ACTION"
@@ -23,6 +26,7 @@ const (
 	LIVE_STAY_TIME_LocalProjectListV30DataProjectListExternalAction        LocalProjectListV30DataProjectListExternalAction = "LIVE_STAY_TIME"
 	NATIVE_ACTION_LocalProjectListV30DataProjectListExternalAction         LocalProjectListV30DataProjectListExternalAction = "NATIVE_ACTION"
 	POI_RECOMMEND_LocalProjectListV30DataProjectListExternalAction         LocalProjectListV30DataProjectListExternalAction = "POI_RECOMMEND"
+	PRIVATE_MESSAGE_LocalProjectListV30DataProjectListExternalAction       LocalProjectListV30DataProjectListExternalAction = "PRIVATE_MESSAGE"
 	SHOW_LocalProjectListV30DataProjectListExternalAction                  LocalProjectListV30DataProjectListExternalAction = "SHOW"
 )
 

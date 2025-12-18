@@ -14,6 +14,8 @@ package models
 type LocalProductGetV30ResponseDataProductsInner struct {
 	// 商品适用门店数
 	ApplicablePoiNum *int64 `json:"applicable_poi_num,omitempty"`
+	//
+	BindMarketPageInfos []*LocalProductGetV30ResponseDataProductsInnerBindMarketPageInfosInner `json:"bind_market_page_infos,omitempty"`
 	// 商品价格，单位元
 	Price *int64 `json:"price,omitempty"`
 	// 商品ID

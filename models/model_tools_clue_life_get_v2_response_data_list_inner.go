@@ -55,8 +55,10 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	CreateTimeDetail   *string                                       `json:"create_time_detail,omitempty"`
 	EffectiveState     *ToolsClueLifeGetV2DataListEffectiveState     `json:"effective_state,omitempty"`
 	EffectiveStateName *ToolsClueLifeGetV2DataListEffectiveStateName `json:"effective_state_name,omitempty"`
-	FlowEntrance       *ToolsClueLifeGetV2DataListFlowEntrance       `json:"flow_entrance,omitempty"`
-	FlowType           *ToolsClueLifeGetV2DataListFlowType           `json:"flow_type,omitempty"`
+	// 扩展字段
+	ExtInfo      *string                                 `json:"ext_info,omitempty"`
+	FlowEntrance *ToolsClueLifeGetV2DataListFlowEntrance `json:"flow_entrance,omitempty"`
+	FlowType     *ToolsClueLifeGetV2DataListFlowType     `json:"flow_type,omitempty"`
 	// 跟进账户ID
 	FollowLifeAccountId *string `json:"follow_life_account_id,omitempty"`
 	// 跟进账户名称

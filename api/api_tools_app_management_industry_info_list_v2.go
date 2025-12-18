@@ -60,7 +60,7 @@ func (r *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest) WithLog(enable
 /*
 OpenApi2ToolsAppManagementIndustryInfoListGet Method for OpenApi2ToolsAppManagementIndustryInfoListGet
 
-API Description
+获取应用细分分类及题材标签「支持所有账户体系】 可通过请求参数account_id 账户id（指可以接的账号体系如广告主id、bpid等）和account_type 账户类型，查询所有应用细分分类及题材标签情况。
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest

@@ -17,8 +17,10 @@ type LocalPromotionDetailV30ResponseData struct {
 	// 自定义素材组合
 	CustomerMaterialList []*LocalPromotionDetailV30ResponseDataCustomerMaterialListInner `json:"customer_material_list,omitempty"`
 	// 是否开启团购卡
-	EnableGraphicDelivery *bool                                        `json:"enable_graphic_delivery,omitempty"`
-	LiveMaterialType      *LocalPromotionDetailV30DataLiveMaterialType `json:"live_material_type,omitempty"`
+	EnableGraphicDelivery *bool                                                  `json:"enable_graphic_delivery,omitempty"`
+	LiveMaterialType      *LocalPromotionDetailV30DataLiveMaterialType           `json:"live_material_type,omitempty"`
+	ProceduralMaterial    *LocalPromotionDetailV30ResponseDataProceduralMaterial `json:"procedural_material,omitempty"`
+	PromotionCardInfo     *LocalPromotionDetailV30ResponseDataPromotionCardInfo  `json:"promotion_card_info,omitempty"`
 	// 广告ID
 	PromotionId       *int64                                        `json:"promotion_id,omitempty"`
 	VideoHpVisibility *LocalPromotionDetailV30DataVideoHpVisibility `json:"video_hp_visibility,omitempty"`

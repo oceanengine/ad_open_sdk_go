@@ -28,10 +28,10 @@ type ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest struct {
 	accountId   *int64
 	accountType *ToolsEbpMicroGameLinkListV30AccountType
 	instanceId  *int64
-	page        *int64
-	pageSize    *int64
 	appId       *string
 	createTime  *ToolsEbpMicroGameLinkListV30CreateTime
+	page        *int64
+	pageSize    *int64
 }
 
 func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest {
@@ -49,16 +49,6 @@ func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) InstanceId(instanceId
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) Page(page int64) *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest {
-	r.page = &page
-	return r
-}
-
-func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) PageSize(pageSize int64) *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest {
-	r.pageSize = &pageSize
-	return r
-}
-
 func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) AppId(appId string) *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest {
 	r.appId = &appId
 	return r
@@ -66,6 +56,16 @@ func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) AppId(appId string) *
 
 func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) CreateTime(createTime ToolsEbpMicroGameLinkListV30CreateTime) *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest {
 	r.createTime = &createTime
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) Page(page int64) *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest {
+	r.page = &page
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) PageSize(pageSize int64) *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest {
+	r.pageSize = &pageSize
 	return r
 }
 
@@ -133,17 +133,17 @@ func (a *ToolsEbpMicroGameLinkListV30ApiService) getExecute(r *ApiOpenApiV30Tool
 	if r.instanceId != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "instance_id", r.instanceId)
 	}
-	if r.page != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
-	}
-	if r.pageSize != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
-	}
 	if r.appId != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "app_id", r.appId)
 	}
 	if r.createTime != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "create_time", r.createTime)
+	}
+	if r.page != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
+	}
+	if r.pageSize != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

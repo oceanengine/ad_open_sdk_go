@@ -19,8 +19,6 @@ type ToolsEbpAppDetailV30ResponseDataCurrentVersion struct {
 	//
 	AuditMessage *string `json:"audit_message,omitempty"`
 	//
-	ByteAppId *string `json:"byte_app_id,omitempty"`
-	//
 	DiscountRate *int64 `json:"discount_rate,omitempty"`
 	//
 	FeatureTags []string `json:"feature_tags,omitempty"`
@@ -60,8 +58,6 @@ type ToolsEbpAppDetailV30ResponseDataCurrentVersion struct {
 	ThemeTag *string `json:"theme_tag,omitempty"`
 	//
 	VersionCode *string `json:"version_code,omitempty"`
-	//
-	VersionId *string `json:"version_id,omitempty"`
 	//
 	VersionName *string `json:"version_name,omitempty"`
 }

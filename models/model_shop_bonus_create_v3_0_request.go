@@ -18,6 +18,8 @@ type ShopBonusCreateV30Request struct {
 	CouponInfos        []*ShopBonusCreateV30RequestCouponInfosInner `json:"coupon_infos,omitempty"`
 	CouponShopPlatform ShopBonusCreateV30CouponShopPlatform         `json:"coupon_shop_platform"`
 	//
+	CouponType []*ShopBonusCreateV30CouponType `json:"coupon_type,omitempty"`
+	//
 	EnableCoupon bool `json:"enable_coupon"`
 	// 广告id
 	PromotionId int64 `json:"promotion_id"`

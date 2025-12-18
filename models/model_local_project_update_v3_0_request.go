@@ -17,6 +17,10 @@ type LocalProjectUpdateV30Request struct {
 	Bid *int64 `json:"bid,omitempty"`
 	// 预算
 	Budget *int64 `json:"budget,omitempty"`
+	// 私信接待抖音号，详细规则： 1、仅local_delivery_scene=“EXTERNAL”线索时支持传 2、intelligent_selection_mode = On时：(选的留咨组件+选的n个营销页里有1个关联组件里包含私信)->必传，否则不传 3、intelligent_selection_mode = Off时 3.1、 localAssetType=详情页/私信页:选的留咨组件里包含私信->必传，否则不传 3.2、 localAssetType=营销页：选的n个营销页里有1个关联组件里包含私信->必传，否则不传 3.3 不传不更新，传了=0认为：删除，传了>0:认为：更新
+	ConsultAwemeUid *string `json:"consult_aweme_uid,omitempty"`
+	// 每日投放时长（单位：秒，必须为1800s的整数倍）
+	DailyDeliverySeconds *int64 `json:"daily_delivery_seconds,omitempty"`
 	// 结束投放时间
 	EndTime *string `json:"end_time,omitempty"`
 	// 高峰日-预算上调比例（40表示上调40%）
@@ -25,6 +29,8 @@ type LocalProjectUpdateV30Request struct {
 	IsSetPeakBudget *bool `json:"is_set_peak_budget,omitempty"`
 	//
 	LocalAccountId int64 `json:"local_account_id"`
+	// 选择的营销页ids，详细规则： 1、仅local_delivery_scene=“EXTERNAL”线索时支持传 2、仅(intelligent_selection_mode = Off && local_asset_type = 营销页 ) 或者  （intelligent_selection_mode = On && 所选的门店/商品包含营销页） 时必传，否则不传
+	MarketPageIds []int64 `json:"market_page_ids,omitempty"`
 	// 项目名称
 	Name *string `json:"name,omitempty"`
 	// 高峰日-节假日

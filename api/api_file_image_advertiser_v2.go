@@ -27,10 +27,10 @@ type ApiOpenApi2FileImageAdvertiserPostRequest struct {
 	ApiService     *FileImageAdvertiserV2ApiService
 	advertiserId   *int64
 	uploadTo       *FileImageAdvertiserV2UploadTo
-	uploadType     *FileImageAdvertiserV2UploadType
 	imageFile      *FormFileInfo
 	imageSignature *string
 	imageUrl       *string
+	uploadType     *FileImageAdvertiserV2UploadType
 }
 
 func (r *ApiOpenApi2FileImageAdvertiserPostRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2FileImageAdvertiserPostRequest {
@@ -40,11 +40,6 @@ func (r *ApiOpenApi2FileImageAdvertiserPostRequest) AdvertiserId(advertiserId in
 
 func (r *ApiOpenApi2FileImageAdvertiserPostRequest) UploadTo(uploadTo FileImageAdvertiserV2UploadTo) *ApiOpenApi2FileImageAdvertiserPostRequest {
 	r.uploadTo = &uploadTo
-	return r
-}
-
-func (r *ApiOpenApi2FileImageAdvertiserPostRequest) UploadType(uploadType FileImageAdvertiserV2UploadType) *ApiOpenApi2FileImageAdvertiserPostRequest {
-	r.uploadType = &uploadType
 	return r
 }
 
@@ -60,6 +55,11 @@ func (r *ApiOpenApi2FileImageAdvertiserPostRequest) ImageSignature(imageSignatur
 
 func (r *ApiOpenApi2FileImageAdvertiserPostRequest) ImageUrl(imageUrl string) *ApiOpenApi2FileImageAdvertiserPostRequest {
 	r.imageUrl = &imageUrl
+	return r
+}
+
+func (r *ApiOpenApi2FileImageAdvertiserPostRequest) UploadType(uploadType FileImageAdvertiserV2UploadType) *ApiOpenApi2FileImageAdvertiserPostRequest {
+	r.uploadType = &uploadType
 	return r
 }
 
@@ -121,9 +121,6 @@ func (a *FileImageAdvertiserV2ApiService) postExecute(r *ApiOpenApi2FileImageAdv
 	if r.uploadTo == nil {
 		return localVarReturnValue, nil, ReportError("uploadTo is required and must be specified")
 	}
-	if r.uploadType == nil {
-		return localVarReturnValue, nil, ReportError("uploadType is required and must be specified")
-	}
 
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{"multipart/form-data"}
@@ -145,7 +142,9 @@ func (a *FileImageAdvertiserV2ApiService) postExecute(r *ApiOpenApi2FileImageAdv
 		parameterAddToHeaderOrQuery(localVarFormParams, "image_url", r.imageUrl)
 	}
 	parameterAddToHeaderOrQuery(localVarFormParams, "upload_to", r.uploadTo)
-	parameterAddToHeaderOrQuery(localVarFormParams, "upload_type", r.uploadType)
+	if r.uploadType != nil {
+		parameterAddToHeaderOrQuery(localVarFormParams, "upload_type", r.uploadType)
+	}
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, formFiles)
 	if err != nil {
 		return localVarReturnValue, nil, err

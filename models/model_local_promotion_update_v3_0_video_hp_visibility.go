@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// LocalPromotionUpdateV30VideoHpVisibility
+// LocalPromotionUpdateV30VideoHpVisibility 主页视频是否可见，仅交易广告可传
 type LocalPromotionUpdateV30VideoHpVisibility string
 
 // List of local_promotion_update_v3.0_video_hp_visibility

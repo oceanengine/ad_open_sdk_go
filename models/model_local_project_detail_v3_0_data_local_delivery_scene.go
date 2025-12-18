@@ -16,6 +16,7 @@ type LocalProjectDetailV30DataLocalDeliveryScene string
 // List of local_project_detail_v3.0_data_local_delivery_scene
 const (
 	CONTENT_HEAT_LocalProjectDetailV30DataLocalDeliveryScene  LocalProjectDetailV30DataLocalDeliveryScene = "CONTENT_HEAT"
+	EXTERNAL_LocalProjectDetailV30DataLocalDeliveryScene      LocalProjectDetailV30DataLocalDeliveryScene = "EXTERNAL"
 	POI_RECOMMEND_LocalProjectDetailV30DataLocalDeliveryScene LocalProjectDetailV30DataLocalDeliveryScene = "POI_RECOMMEND"
 	PRODUCT_PAY_LocalProjectDetailV30DataLocalDeliveryScene   LocalProjectDetailV30DataLocalDeliveryScene = "PRODUCT_PAY"
 )

@@ -19,6 +19,7 @@ const (
 	AGENT_FileMaterialAttributesListV2AccountType     FileMaterialAttributesListV2AccountType = "AGENT"
 	AD_FileMaterialAttributesListV2AccountType        FileMaterialAttributesListV2AccountType = "AD"
 	QIANCHUAN_FileMaterialAttributesListV2AccountType FileMaterialAttributesListV2AccountType = "QIANCHUAN"
+	LOCAL_FileMaterialAttributesListV2AccountType     FileMaterialAttributesListV2AccountType = "LOCAL"
 )
 
 // Ptr returns reference to file_material_attributes_list_v2_account_type value

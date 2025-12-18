@@ -12,11 +12,12 @@ package models
 
 // LocalPromotionListV30Filtering
 type LocalPromotionListV30Filtering struct {
-	AdType        *LocalPromotionListV30FilteringAdType        `json:"ad_type,omitempty"`
-	BidType       *LocalPromotionListV30FilteringBidType       `json:"bid_type,omitempty"`
-	BudgetMode    *LocalPromotionListV30FilteringBudgetMode    `json:"budget_mode,omitempty"`
-	LearningPhase *LocalPromotionListV30FilteringLearningPhase `json:"learning_phase,omitempty"`
-	MarketingGoal *LocalPromotionListV30FilteringMarketingGoal `json:"marketing_goal,omitempty"`
+	AdType             *LocalPromotionListV30FilteringAdType             `json:"ad_type,omitempty"`
+	BidType            *LocalPromotionListV30FilteringBidType            `json:"bid_type,omitempty"`
+	BudgetMode         *LocalPromotionListV30FilteringBudgetMode         `json:"budget_mode,omitempty"`
+	LearningPhase      *LocalPromotionListV30FilteringLearningPhase      `json:"learning_phase,omitempty"`
+	LocalDeliveryScene *LocalPromotionListV30FilteringLocalDeliveryScene `json:"local_delivery_scene,omitempty"`
+	MarketingGoal      *LocalPromotionListV30FilteringMarketingGoal      `json:"marketing_goal,omitempty"`
 	// 项目ID筛选
 	ProjectId *int64 `json:"project_id,omitempty"`
 	// 广告创建结束时间，格式\"yyyy-MM-dd HH:mm:ss\",与time_start搭配使用

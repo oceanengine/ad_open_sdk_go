@@ -15,6 +15,8 @@ type ShopBonusSuccessGetV30ResponseData struct {
 	//
 	CouponInfos []*ShopBonusSuccessGetV30ResponseDataCouponInfosInner `json:"coupon_infos,omitempty"`
 	//
+	CouponType []string `json:"coupon_type,omitempty"`
+	//
 	EnableCoupon *bool `json:"enable_coupon,omitempty"`
 	//
 	PromotionId *int64 `json:"promotion_id,omitempty"`

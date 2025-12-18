@@ -15,7 +15,8 @@ type QianchuanUniAwemeAdUpdateV10RequestDeliverySetting struct {
 	//
 	Budget *float64 `json:"budget,omitempty"`
 	//
-	DailyDeliveryTime *float64 `json:"daily_delivery_time,omitempty"`
+	DailyDeliveryTime  *float64                                                       `json:"daily_delivery_time,omitempty"`
+	DeepExternalAction *QianchuanUniAwemeAdUpdateV10DeliverySettingDeepExternalAction `json:"deep_external_action,omitempty"`
 	//
 	EndTime *string `json:"end_time,omitempty"`
 	//

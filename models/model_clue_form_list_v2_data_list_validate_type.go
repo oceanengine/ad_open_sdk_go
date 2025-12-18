@@ -16,8 +16,8 @@ type ClueFormListV2DataListValidateType string
 // List of clue_form_list_v2_data_list_validate_type
 const (
 	ALL_VERIFICATION_ClueFormListV2DataListValidateType  ClueFormListV2DataListValidateType = "ALL_VERIFICATION"
-	CLUE_PRIORITY_ClueFormListV2DataListValidateType     ClueFormListV2DataListValidateType = "CLUE_PRIORITY"
 	NONE_VERIFICATION_ClueFormListV2DataListValidateType ClueFormListV2DataListValidateType = "NONE_VERIFICATION"
+	CLUE_PRIORITY_ClueFormListV2DataListValidateType     ClueFormListV2DataListValidateType = "CLUE_PRIORITY"
 	AUTO_VERIFICATION_ClueFormListV2DataListValidateType ClueFormListV2DataListValidateType = "AUTO_VERIFICATION"
 	VALIDITY_PRIORITY_ClueFormListV2DataListValidateType ClueFormListV2DataListValidateType = "VALIDITY_PRIORITY"
 )

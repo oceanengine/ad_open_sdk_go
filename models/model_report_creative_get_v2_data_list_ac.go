@@ -15,10 +15,10 @@ type ReportCreativeGetV2DataListAc string
 
 // List of report_creative_get_v2_data_list_ac
 const (
+	Enum_5_G_ReportCreativeGetV2DataListAc ReportCreativeGetV2DataListAc = "5G"
+	UNKNOWN_ReportCreativeGetV2DataListAc  ReportCreativeGetV2DataListAc = "unknown"
 	Enum_3_G_ReportCreativeGetV2DataListAc ReportCreativeGetV2DataListAc = "3G"
 	Enum_4_G_ReportCreativeGetV2DataListAc ReportCreativeGetV2DataListAc = "4G"
-	UNKNOWN_ReportCreativeGetV2DataListAc  ReportCreativeGetV2DataListAc = "unknown"
-	Enum_5_G_ReportCreativeGetV2DataListAc ReportCreativeGetV2DataListAc = "5G"
 	Enum_2_G_ReportCreativeGetV2DataListAc ReportCreativeGetV2DataListAc = "2G"
 	WIFI_ReportCreativeGetV2DataListAc     ReportCreativeGetV2DataListAc = "WIFI"
 )

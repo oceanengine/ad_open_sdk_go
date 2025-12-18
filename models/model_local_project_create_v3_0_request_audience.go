@@ -12,15 +12,20 @@ package models
 
 // LocalProjectCreateV30RequestAudience
 type LocalProjectCreateV30RequestAudience struct {
+	ActionConfig *LocalProjectCreateV30RequestAudienceActionConfig `json:"action_config,omitempty"`
 	// 年龄
-	Age                   []*LocalProjectCreateV30AudienceAge                 `json:"age,omitempty"`
-	ConvertedTimeDuration *LocalProjectCreateV30AudienceConvertedTimeDuration `json:"converted_time_duration,omitempty"`
-	CustomArea            *LocalProjectCreateV30RequestAudienceCustomArea     `json:"custom_area,omitempty"`
-	District              LocalProjectCreateV30AudienceDistrict               `json:"district"`
-	Gender                *LocalProjectCreateV30AudienceGender                `json:"gender,omitempty"`
-	HideIfConverted       *LocalProjectCreateV30AudienceHideIfConverted       `json:"hide_if_converted,omitempty"`
-	PoiAround             *LocalProjectCreateV30RequestAudiencePoiAround      `json:"poi_around,omitempty"`
-	Region                *LocalProjectCreateV30RequestAudienceRegion         `json:"region,omitempty"`
+	Age                       []*LocalProjectCreateV30AudienceAge                     `json:"age,omitempty"`
+	ConvertedTimeDuration     *LocalProjectCreateV30AudienceConvertedTimeDuration     `json:"converted_time_duration,omitempty"`
+	CustomArea                *LocalProjectCreateV30RequestAudienceCustomArea         `json:"custom_area,omitempty"`
+	CustomizedInterestAction  *LocalProjectCreateV30AudienceCustomizedInterestAction  `json:"customized_interest_action,omitempty"`
+	District                  LocalProjectCreateV30AudienceDistrict                   `json:"district"`
+	FilterAwemeAbnormalActive *LocalProjectCreateV30AudienceFilterAwemeAbnormalActive `json:"filter_aweme_abnormal_active,omitempty"`
+	FilterAwemeFansCount      *LocalProjectCreateV30AudienceFilterAwemeFansCount      `json:"filter_aweme_fans_count,omitempty"`
+	Gender                    *LocalProjectCreateV30AudienceGender                    `json:"gender,omitempty"`
+	HideIfConverted           *LocalProjectCreateV30AudienceHideIfConverted           `json:"hide_if_converted,omitempty"`
+	InterestConfig            *LocalProjectCreateV30RequestAudienceInterestConfig     `json:"interest_config,omitempty"`
+	PoiAround                 *LocalProjectCreateV30RequestAudiencePoiAround          `json:"poi_around,omitempty"`
+	Region                    *LocalProjectCreateV30RequestAudienceRegion             `json:"region,omitempty"`
 	// 定向人群包ID
 	RetargetingTags []int64 `json:"retargeting_tags,omitempty"`
 	// 排除人群包ID

@@ -15,13 +15,13 @@ type ClueCouponUpdateV2Status string
 
 // List of clue_coupon_update_v2_status
 const (
-	NORMAL_ClueCouponUpdateV2Status      ClueCouponUpdateV2Status = "NORMAL"
 	OFFLINE_ClueCouponUpdateV2Status     ClueCouponUpdateV2Status = "OFFLINE"
-	AUDIT_FAIL_ClueCouponUpdateV2Status  ClueCouponUpdateV2Status = "AUDIT_FAIL"
 	PAUSE_ClueCouponUpdateV2Status       ClueCouponUpdateV2Status = "PAUSE"
-	DELETED_ClueCouponUpdateV2Status     ClueCouponUpdateV2Status = "DELETED"
 	UNAUDITED_ClueCouponUpdateV2Status   ClueCouponUpdateV2Status = "UNAUDITED"
+	NORMAL_ClueCouponUpdateV2Status      ClueCouponUpdateV2Status = "NORMAL"
 	AUDIT_DOING_ClueCouponUpdateV2Status ClueCouponUpdateV2Status = "AUDIT_DOING"
+	AUDIT_FAIL_ClueCouponUpdateV2Status  ClueCouponUpdateV2Status = "AUDIT_FAIL"
+	DELETED_ClueCouponUpdateV2Status     ClueCouponUpdateV2Status = "DELETED"
 )
 
 // Ptr returns reference to clue_coupon_update_v2_status value

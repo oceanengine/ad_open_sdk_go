@@ -52,7 +52,7 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest) Wit
 /*
 OpenApi2ToolsAppManagementAndroidBasicPackagePublishPost Method for OpenApi2ToolsAppManagementAndroidBasicPackagePublishPost
 
-API Description
+发布安卓应用母包「支持所有账户体系】 可通过请求参数account_id 账户id（指可以接的账号体系如广告主id、巨量纵横组织id等）和account_type 账户类型，发布审核通过的安卓应用母包。
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApi2ToolsAppManagementAndroidBasicPackagePublishPostRequest

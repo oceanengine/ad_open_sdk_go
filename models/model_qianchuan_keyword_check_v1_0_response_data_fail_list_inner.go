@@ -13,7 +13,7 @@ package models
 // QianchuanKeywordCheckV10ResponseDataFailListInner struct for QianchuanKeywordCheckV10ResponseDataFailListInner
 type QianchuanKeywordCheckV10ResponseDataFailListInner struct {
 	//
-	FailReason string `json:"fail_reason"`
+	FailReason *string `json:"fail_reason,omitempty"`
 	//
-	Keyword string `json:"keyword"`
+	Keyword *string `json:"keyword,omitempty"`
 }

@@ -37,61 +37,51 @@ type ApiOpenApiV30ReportCustomGetGetRequest struct {
 	dataTopic    *ReportCustomGetV30DataTopic
 }
 
-// 维度列表
 func (r *ApiOpenApiV30ReportCustomGetGetRequest) Dimensions(dimensions []string) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.dimensions = &dimensions
 	return r
 }
 
-// 广告主id
 func (r *ApiOpenApiV30ReportCustomGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.advertiserId = &advertiserId
 	return r
 }
 
-// 指标列表
 func (r *ApiOpenApiV30ReportCustomGetGetRequest) Metrics(metrics []string) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.metrics = &metrics
 	return r
 }
 
-// 过滤条件
 func (r *ApiOpenApiV30ReportCustomGetGetRequest) Filters(filters []*ReportCustomGetV30FiltersInner) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.filters = &filters
 	return r
 }
 
-// 开始时间。单位毫秒
 func (r *ApiOpenApiV30ReportCustomGetGetRequest) StartTime(startTime string) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.startTime = &startTime
 	return r
 }
 
-// 结束时间。单位毫秒
 func (r *ApiOpenApiV30ReportCustomGetGetRequest) EndTime(endTime string) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.endTime = &endTime
 	return r
 }
 
-// 排序
 func (r *ApiOpenApiV30ReportCustomGetGetRequest) OrderBy(orderBy []*ReportCustomGetV30OrderByInner) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.orderBy = &orderBy
 	return r
 }
 
-// 页码。默认为1
 func (r *ApiOpenApiV30ReportCustomGetGetRequest) Page(page int32) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.page = &page
 	return r
 }
 
-// 页面大小。默认为10，最大100
 func (r *ApiOpenApiV30ReportCustomGetGetRequest) PageSize(pageSize int32) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.pageSize = &pageSize
 	return r
 }
 
-// 数据
 func (r *ApiOpenApiV30ReportCustomGetGetRequest) DataTopic(dataTopic ReportCustomGetV30DataTopic) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.dataTopic = &dataTopic
 	return r

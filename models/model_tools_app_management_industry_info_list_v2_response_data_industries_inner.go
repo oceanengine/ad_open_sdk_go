@@ -16,7 +16,7 @@ type ToolsAppManagementIndustryInfoListV2ResponseDataIndustriesInner struct {
 	Children []*ToolsAppManagementIndustryInfoListV2ResponseDataIndustriesInnerChildrenInner `json:"children,omitempty"`
 	// 分类id
 	Id *string `json:"id,omitempty"`
-	// 级别
+	// 级别 格式: int64
 	Level *int64 `json:"level,omitempty"`
 	// 分类名称
 	Name *string `json:"name,omitempty"`

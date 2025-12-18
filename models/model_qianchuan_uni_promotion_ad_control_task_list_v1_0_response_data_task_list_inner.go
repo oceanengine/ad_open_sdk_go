@@ -21,6 +21,8 @@ type QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInner struct {
 	DeepExternalActionName *string `json:"deep_external_action_name,omitempty"`
 	// 调控时长，0.5h～24.0h，步进0.5h
 	Duration *float64 `json:"duration,omitempty"`
+	//
+	EcpRoiGoal *float64 `json:"ecp_roi_goal,omitempty"`
 	// 转化目标名称
 	ExternalActionName *string `json:"external_action_name,omitempty"`
 	// 任务id
@@ -29,7 +31,8 @@ type QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInner struct {
 	MaterialList []*QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMaterialListInner `json:"material_list,omitempty"`
 	Metrics      *QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMetrics             `json:"metrics,omitempty"`
 	// 任务名称
-	Name       *string                                                                     `json:"name,omitempty"`
-	RoomInfo   *QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerRoomInfo `json:"room_info,omitempty"`
-	TaskStatus *QianchuanUniPromotionAdControlTaskListV10DataTaskListTaskStatus            `json:"task_status,omitempty"`
+	Name         *string                                                                     `json:"name,omitempty"`
+	RoomInfo     *QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerRoomInfo `json:"room_info,omitempty"`
+	SmartBidType *QianchuanUniPromotionAdControlTaskListV10DataTaskListSmartBidType          `json:"smart_bid_type,omitempty"`
+	TaskStatus   *QianchuanUniPromotionAdControlTaskListV10DataTaskListTaskStatus            `json:"task_status,omitempty"`
 }

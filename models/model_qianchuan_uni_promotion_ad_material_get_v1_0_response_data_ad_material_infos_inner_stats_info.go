@@ -12,6 +12,26 @@ package models
 
 // QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerStatsInfo
 type QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerStatsInfo struct {
+	//
+	LiveConvertRateExcludeVideoForRoi2 *float64 `json:"live_convert_rate_exclude_video_for_roi2,omitempty"`
+	//
+	LiveConvertRateForRoi2V2 *float64 `json:"live_convert_rate_for_roi2_v2,omitempty"`
+	//
+	LiveCvrRateExcludeVideoForRoi2 *float64 `json:"live_cvr_rate_exclude_video_for_roi2,omitempty"`
+	//
+	LiveCvrRateForRoi2V2 *float64 `json:"live_cvr_rate_for_roi2_v2,omitempty"`
+	//
+	LiveShowCountExcludeVideoForRoi2 *int64 `json:"live_show_count_exclude_video_for_roi2,omitempty"`
+	//
+	LiveShowCountForRoi2V2 *int64 `json:"live_show_count_for_roi2_v2,omitempty"`
+	//
+	LiveWatchCountExcludeVideoForRoi2 *int64 `json:"live_watch_count_exclude_video_for_roi2,omitempty"`
+	//
+	LiveWatchCountForRoi2V2 *int64 `json:"live_watch_count_for_roi2_v2,omitempty"`
+	//
+	NoRefundEcomCouponAmountForRoi2 *float64 `json:"no_refund_ecom_coupon_amount_for_roi2,omitempty"`
+	//
+	NoRefundEcomPlatformSubsidyAmountForRoi2 *float64 `json:"no_refund_ecom_platform_subsidy_amount_for_roi2,omitempty"`
 	// 整体点击次数
 	ProductClickCountForRoi2 *int64 `json:"product_click_count_for_roi2,omitempty"`
 	// 整体转化率
@@ -24,8 +44,20 @@ type QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerStatsI
 	StatCostForRoi2 *float64 `json:"stat_cost_for_roi2,omitempty"`
 	// 整体成交订单成本，单位元
 	TotalCostPerPayOrderForRoi2 *float64 `json:"total_cost_per_pay_order_for_roi2,omitempty"`
+	//
+	TotalCostPerPayOrderSettleForRoi21h *float64 `json:"total_cost_per_pay_order_settle_for_roi2_1h,omitempty"`
 	// 电商平台补贴金额，单位元
 	TotalEcomPlatformSubsidyAmountForRoi2 *float64 `json:"total_ecom_platform_subsidy_amount_for_roi2,omitempty"`
+	//
+	TotalOrderRealSettleAmountForRoi21h *float64 `json:"total_order_real_settle_amount_for_roi2_1h,omitempty"`
+	//
+	TotalOrderSettleAmountForRoi21h *float64 `json:"total_order_settle_amount_for_roi2_1h,omitempty"`
+	//
+	TotalOrderSettleAmountRateForRoi21h *float64 `json:"total_order_settle_amount_rate_for_roi2_1h,omitempty"`
+	//
+	TotalOrderSettleCountForRoi21h *int64 `json:"total_order_settle_count_for_roi2_1h,omitempty"`
+	//
+	TotalOrderSettleCountRateForRoi21h *float64 `json:"total_order_settle_count_rate_for_roi2_1h,omitempty"`
 	// 整体成交订单数
 	TotalPayOrderCountForRoi2 *int64 `json:"total_pay_order_count_for_roi2,omitempty"`
 	// 整体成交智能优惠券金额，单位元
@@ -36,6 +68,14 @@ type QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerStatsI
 	TotalPayOrderGmvIncludeCouponForRoi2 *float64 `json:"total_pay_order_gmv_include_coupon_for_roi2,omitempty"`
 	// 整体支付ROI
 	TotalPrepayAndPayOrderRoi2 *float64 `json:"total_prepay_and_pay_order_roi2,omitempty"`
+	//
+	TotalPrepayAndPaySettleRoi21h *float64 `json:"total_prepay_and_pay_settle_roi2_1h,omitempty"`
+	//
+	TotalRefundOrderCountForRoi21h *int64 `json:"total_refund_order_count_for_roi2_1h,omitempty"`
+	//
+	TotalRefundOrderGmvForRoi21hAll *float64 `json:"total_refund_order_gmv_for_roi2_1h_all,omitempty"`
+	//
+	TotalRefundOrderGmvForRoi21hRate *float64 `json:"total_refund_order_gmv_for_roi2_1h_rate,omitempty"`
 	// 整体未完结预售订单预估金额，单位元
 	TotalUnfinishedEstimateOrderGmvForRoi2 *float64 `json:"total_unfinished_estimate_order_gmv_for_roi2,omitempty"`
 }

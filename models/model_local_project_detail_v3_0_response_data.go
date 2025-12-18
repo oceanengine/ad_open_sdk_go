@@ -12,29 +12,39 @@ package models
 
 // LocalProjectDetailV30ResponseData
 type LocalProjectDetailV30ResponseData struct {
-	AdType         *LocalProjectDetailV30DataAdType           `json:"ad_type,omitempty"`
-	Audience       *LocalProjectDetailV30ResponseDataAudience `json:"audience,omitempty"`
-	AutoUpdatePois *LocalProjectDetailV30DataAutoUpdatePois   `json:"auto_update_pois,omitempty"`
+	AdType                    *LocalProjectDetailV30DataAdType                    `json:"ad_type,omitempty"`
+	AigcDynamicCreativeSwitch *LocalProjectDetailV30DataAigcDynamicCreativeSwitch `json:"aigc_dynamic_creative_switch,omitempty"`
+	Audience                  *LocalProjectDetailV30ResponseDataAudience          `json:"audience,omitempty"`
+	AutoUpdatePois            *LocalProjectDetailV30DataAutoUpdatePois            `json:"auto_update_pois,omitempty"`
 	// 抖音号id
 	AwemeId *string `json:"aweme_id,omitempty"`
 	// 出价，单位为分
 	Bid     *int64                            `json:"bid,omitempty"`
 	BidType *LocalProjectDetailV30DataBidType `json:"bid_type,omitempty"`
 	// 项目预算，单位为分
-	Budget          *int64                                    `json:"budget,omitempty"`
-	BudgetMode      *LocalProjectDetailV30DataBudgetMode      `json:"budget_mode,omitempty"`
-	DeliveryPoiMode *LocalProjectDetailV30DataDeliveryPoiMode `json:"delivery_poi_mode,omitempty"`
+	Budget     *int64                               `json:"budget,omitempty"`
+	BudgetMode *LocalProjectDetailV30DataBudgetMode `json:"budget_mode,omitempty"`
+	// 私信接待抖音号,仅短视频线索使用
+	ConsultAwemeUid *string `json:"consult_aweme_uid,omitempty"`
+	// 每日投放时长，单位：秒,仅直播线索使用
+	DailyDeliverySeconds *int64                                    `json:"daily_delivery_seconds,omitempty"`
+	DeliveryPackage      *LocalProjectDetailV30DataDeliveryPackage `json:"delivery_package,omitempty"`
+	DeliveryPoiMode      *LocalProjectDetailV30DataDeliveryPoiMode `json:"delivery_poi_mode,omitempty"`
 	// 投放结束时间
 	EndTime        *string                                  `json:"end_time,omitempty"`
 	ExternalAction *LocalProjectDetailV30DataExternalAction `json:"external_action,omitempty"`
 	// 上调高峰日预算比例，单位为百分比
-	HighBudgetRate *int64 `json:"high_budget_rate,omitempty"`
+	HighBudgetRate           *int64                                             `json:"high_budget_rate,omitempty"`
+	IntelligentSelectionMode *LocalProjectDetailV30DataIntelligentSelectionMode `json:"intelligent_selection_mode,omitempty"`
 	// 是否设置了高峰日预算
 	IsSetPeakBudget *bool `json:"is_set_peak_budget,omitempty"`
 	// 广告账户id
 	LocalAccountId     *int64                                       `json:"local_account_id,omitempty"`
+	LocalAssetType     *LocalProjectDetailV30DataLocalAssetType     `json:"local_asset_type,omitempty"`
 	LocalDeliveryScene *LocalProjectDetailV30DataLocalDeliveryScene `json:"local_delivery_scene,omitempty"`
-	MarketingGoal      *LocalProjectDetailV30DataMarketingGoal      `json:"marketing_goal,omitempty"`
+	// 选择的营销页ids,仅短视频线索使用
+	MarketPageIds []int64                                 `json:"market_page_ids,omitempty"`
+	MarketingGoal *LocalProjectDetailV30DataMarketingGoal `json:"marketing_goal,omitempty"`
 	// 多门店id
 	MultiPoiId *int64 `json:"multi_poi_id,omitempty"`
 	// 项目名称
@@ -56,4 +66,6 @@ type LocalProjectDetailV30ResponseData struct {
 	ScheduleType *LocalProjectDetailV30DataScheduleType `json:"schedule_type,omitempty"`
 	// 投放起始时间
 	StartTime *string `json:"start_time,omitempty"`
+	// 留咨组件id,仅短视频线索使用
+	ToolPackId *int64 `json:"tool_pack_id,omitempty"`
 }

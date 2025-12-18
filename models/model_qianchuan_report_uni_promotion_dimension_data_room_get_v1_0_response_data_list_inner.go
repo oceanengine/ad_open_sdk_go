@@ -15,6 +15,10 @@ type QianchuanReportUniPromotionDimensionDataRoomGetV10ResponseDataListInner str
 	//
 	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
 	//
+	NoRefundEcomCouponAmountForRoi2 *float64 `json:"no_refund_ecom_coupon_amount_for_roi2,omitempty"`
+	//
+	NoRefundEcomPlatformSubsidyAmountForRoi2 *float64 `json:"no_refund_ecom_platform_subsidy_amount_for_roi2,omitempty"`
+	//
 	RoomId *int64 `json:"room_id,omitempty"`
 	//
 	StatCostForRoi2 *float64 `json:"stat_cost_for_roi2,omitempty"`
@@ -23,7 +27,19 @@ type QianchuanReportUniPromotionDimensionDataRoomGetV10ResponseDataListInner str
 	//
 	TotalCostPerPayOrderForRoi2 *float64 `json:"total_cost_per_pay_order_for_roi2,omitempty"`
 	//
+	TotalCostPerPayOrderSettleForRoi21h *float64 `json:"total_cost_per_pay_order_settle_for_roi2_1h,omitempty"`
+	//
 	TotalEcomPlatformSubsidyAmountForRoi2 *float64 `json:"total_ecom_platform_subsidy_amount_for_roi2,omitempty"`
+	//
+	TotalOrderRealSettleAmountForRoi21h *float64 `json:"total_order_real_settle_amount_for_roi2_1h,omitempty"`
+	//
+	TotalOrderSettleAmountForRoi21h *float64 `json:"total_order_settle_amount_for_roi2_1h,omitempty"`
+	//
+	TotalOrderSettleAmountRateForRoi21h *float64 `json:"total_order_settle_amount_rate_for_roi2_1h,omitempty"`
+	//
+	TotalOrderSettleCountForRoi21h *int64 `json:"total_order_settle_count_for_roi2_1h,omitempty"`
+	//
+	TotalOrderSettleCountRateForRoi21h *float64 `json:"total_order_settle_count_rate_for_roi2_1h,omitempty"`
 	//
 	TotalPayOrderCountForRoi2 *float64 `json:"total_pay_order_count_for_roi2,omitempty"`
 	//
@@ -35,9 +51,17 @@ type QianchuanReportUniPromotionDimensionDataRoomGetV10ResponseDataListInner str
 	//
 	TotalPrepayAndPayOrderRoi2 *float64 `json:"total_prepay_and_pay_order_roi2,omitempty"`
 	//
+	TotalPrepayAndPaySettleRoi21h *float64 `json:"total_prepay_and_pay_settle_roi2_1h,omitempty"`
+	//
 	TotalPrepayOrderCountForRoi2 *float64 `json:"total_prepay_order_count_for_roi2,omitempty"`
 	//
 	TotalPrepayOrderGmvForRoi2 *float64 `json:"total_prepay_order_gmv_for_roi2,omitempty"`
+	//
+	TotalRefundOrderCountForRoi21h *int64 `json:"total_refund_order_count_for_roi2_1h,omitempty"`
+	//
+	TotalRefundOrderGmvForRoi21hAll *float64 `json:"total_refund_order_gmv_for_roi2_1h_all,omitempty"`
+	//
+	TotalRefundOrderGmvForRoi21hRate *float64 `json:"total_refund_order_gmv_for_roi2_1h_rate,omitempty"`
 	//
 	TotalUnfinishedEstimateOrderGmvForRoi2 *float64 `json:"total_unfinished_estimate_order_gmv_for_roi2,omitempty"`
 }

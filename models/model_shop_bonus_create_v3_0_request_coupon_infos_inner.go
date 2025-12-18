@@ -13,5 +13,9 @@ package models
 // ShopBonusCreateV30RequestCouponInfosInner struct for ShopBonusCreateV30RequestCouponInfosInner
 type ShopBonusCreateV30RequestCouponInfosInner struct {
 	//
-	CouponValue int64 `json:"coupon_value"`
+	CouponValue *int64 `json:"coupon_value,omitempty"`
+	//
+	DiscountRangeMax *float64 `json:"discount_range_max,omitempty"`
+	//
+	DiscountRangeMin *float64 `json:"discount_range_min,omitempty"`
 }

@@ -19,7 +19,7 @@ type FileImageAdvertiserV2Request struct {
 	//
 	ImageSignature *string `json:"image_signature,omitempty"`
 	//
-	ImageUrl   *string                         `json:"image_url,omitempty"`
-	UploadTo   FileImageAdvertiserV2UploadTo   `json:"upload_to"`
-	UploadType FileImageAdvertiserV2UploadType `json:"upload_type"`
+	ImageUrl   *string                          `json:"image_url,omitempty"`
+	UploadTo   FileImageAdvertiserV2UploadTo    `json:"upload_to"`
+	UploadType *FileImageAdvertiserV2UploadType `json:"upload_type,omitempty"`
 }

@@ -12,7 +12,7 @@ package models
 
 // QianchuanKeywordCheckV10Request struct for QianchuanKeywordCheckV10Request
 type QianchuanKeywordCheckV10Request struct {
-	//
+	// 格式: int64
 	AdvertiserId int64 `json:"advertiser_id"`
 	// 关键词列表
 	Keywords []string `json:"keywords"`

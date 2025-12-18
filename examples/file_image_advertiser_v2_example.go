@@ -25,10 +25,10 @@ import (
 type ApiOpenApi2FileImageAdvertiserPostRequestExample struct {
 	AdvertiserId   int64                           `json:"advertiser_id"`
 	UploadTo       FileImageAdvertiserV2UploadTo   `json:"upload_to"`
-	UploadType     FileImageAdvertiserV2UploadType `json:"upload_type"`
 	ImageFile      *FormFileInfo                   `json:"image_file,omitempty"`
 	ImageSignature string                          `json:"image_signature,omitempty"`
 	ImageUrl       string                          `json:"image_url,omitempty"`
+	UploadType     FileImageAdvertiserV2UploadType `json:"upload_type,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/file/image/advertiser/ Post
@@ -50,7 +50,7 @@ func main() {
 	resp, httpRes, err := apiClient.FileImageAdvertiserV2Api().
 		Post(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).UploadTo(request.UploadTo).UploadType(request.UploadType).ImageFile(request.ImageFile).ImageSignature(request.ImageSignature).ImageUrl(request.ImageUrl).
+		AdvertiserId(request.AdvertiserId).UploadTo(request.UploadTo).ImageFile(request.ImageFile).ImageSignature(request.ImageSignature).ImageUrl(request.ImageUrl).UploadType(request.UploadType).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

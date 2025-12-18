@@ -15,8 +15,10 @@ type LocalProjectListV30DataProjectListBidType string
 
 // List of local_project_list_v3.0_data_project_list_bid_type
 const (
-	MANUAL_LocalProjectListV30DataProjectListBidType LocalProjectListV30DataProjectListBidType = "MANUAL"
-	SMART_LocalProjectListV30DataProjectListBidType  LocalProjectListV30DataProjectListBidType = "SMART"
+	MANUAL_LocalProjectListV30DataProjectListBidType          LocalProjectListV30DataProjectListBidType = "MANUAL"
+	MAX_CONVERSION_LocalProjectListV30DataProjectListBidType  LocalProjectListV30DataProjectListBidType = "MAX_CONVERSION"
+	SMART_LocalProjectListV30DataProjectListBidType           LocalProjectListV30DataProjectListBidType = "SMART"
+	STABILIZE_COSTS_LocalProjectListV30DataProjectListBidType LocalProjectListV30DataProjectListBidType = "STABILIZE_COSTS"
 )
 
 // Ptr returns reference to local_project_list_v3.0_data_project_list_bid_type value

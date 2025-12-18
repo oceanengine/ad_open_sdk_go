@@ -16,10 +16,10 @@ type ReportCampaignGetV2FilteringPricingCategories string
 // List of report_campaign_get_v2_filtering_pricing_categories
 const (
 	PRICING_CATEGORY_BRAND_AND_PRICING_ReportCampaignGetV2FilteringPricingCategories ReportCampaignGetV2FilteringPricingCategories = "PRICING_CATEGORY_BRAND_AND_PRICING"
-	PRICING_CATEGORY_BID_ReportCampaignGetV2FilteringPricingCategories               ReportCampaignGetV2FilteringPricingCategories = "PRICING_CATEGORY_BID"
 	PRICING_CATEGORY_BRAND_ReportCampaignGetV2FilteringPricingCategories             ReportCampaignGetV2FilteringPricingCategories = "PRICING_CATEGORY_BRAND"
-	PRICING_CATEGORY_NOC_ReportCampaignGetV2FilteringPricingCategories               ReportCampaignGetV2FilteringPricingCategories = "PRICING_CATEGORY_NOC"
+	PRICING_CATEGORY_BID_ReportCampaignGetV2FilteringPricingCategories               ReportCampaignGetV2FilteringPricingCategories = "PRICING_CATEGORY_BID"
 	PRICING_CATEGORY_FREE_ReportCampaignGetV2FilteringPricingCategories              ReportCampaignGetV2FilteringPricingCategories = "PRICING_CATEGORY_FREE"
+	PRICING_CATEGORY_NOC_ReportCampaignGetV2FilteringPricingCategories               ReportCampaignGetV2FilteringPricingCategories = "PRICING_CATEGORY_NOC"
 )
 
 // Ptr returns reference to report_campaign_get_v2_filtering_pricing_categories value

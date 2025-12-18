@@ -14,6 +14,7 @@ package models
 type LocalProjectListV30Filtering struct {
 	AdType             *LocalProjectListV30FilteringAdType             `json:"ad_type,omitempty"`
 	BidType            *LocalProjectListV30FilteringBidType            `json:"bid_type,omitempty"`
+	DeliveryPackage    *LocalProjectListV30FilteringDeliveryPackage    `json:"delivery_package,omitempty"`
 	LocalDeliveryScene *LocalProjectListV30FilteringLocalDeliveryScene `json:"local_delivery_scene,omitempty"`
 	MarketingGoal      *LocalProjectListV30FilteringMarketingGoal      `json:"marketing_goal,omitempty"`
 	// 商品IDs筛选，最多10个

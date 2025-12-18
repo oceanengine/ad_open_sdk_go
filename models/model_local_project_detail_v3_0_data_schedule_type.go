@@ -15,9 +15,11 @@ type LocalProjectDetailV30DataScheduleType string
 
 // List of local_project_detail_v3.0_data_schedule_type
 const (
-	FIXED_TIME_LocalProjectDetailV30DataScheduleType   LocalProjectDetailV30DataScheduleType = "FIXED_TIME"
-	FROM_NOW_ON_LocalProjectDetailV30DataScheduleType  LocalProjectDetailV30DataScheduleType = "FROM_NOW_ON"
-	START_TO_END_LocalProjectDetailV30DataScheduleType LocalProjectDetailV30DataScheduleType = "START_TO_END"
+	DAILY_DELIVERY_DURATION_LocalProjectDetailV30DataScheduleType LocalProjectDetailV30DataScheduleType = "DAILY_DELIVERY_DURATION"
+	DELIVERY_7_DAY_LocalProjectDetailV30DataScheduleType          LocalProjectDetailV30DataScheduleType = "DELIVERY_7DAY"
+	FIXED_TIME_LocalProjectDetailV30DataScheduleType              LocalProjectDetailV30DataScheduleType = "FIXED_TIME"
+	FROM_NOW_ON_LocalProjectDetailV30DataScheduleType             LocalProjectDetailV30DataScheduleType = "FROM_NOW_ON"
+	START_TO_END_LocalProjectDetailV30DataScheduleType            LocalProjectDetailV30DataScheduleType = "START_TO_END"
 )
 
 // Ptr returns reference to local_project_detail_v3.0_data_schedule_type value

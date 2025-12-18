@@ -10,13 +10,15 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30BidType 出价方式
+// LocalProjectCreateV30BidType 出价方式 local_delivery_scene=“EXTERNAL”线索时，仅支持传STABILIZE_COSTS/MAX_CONVERSION 其他非线索时：仅支持传MANUAL/SMART 线索周期稳投：不用传
 type LocalProjectCreateV30BidType string
 
 // List of local_project_create_v3.0_bid_type
 const (
-	MANUAL_LocalProjectCreateV30BidType LocalProjectCreateV30BidType = "MANUAL"
-	SMART_LocalProjectCreateV30BidType  LocalProjectCreateV30BidType = "SMART"
+	MANUAL_LocalProjectCreateV30BidType          LocalProjectCreateV30BidType = "MANUAL"
+	MAX_CONVERSION_LocalProjectCreateV30BidType  LocalProjectCreateV30BidType = "MAX_CONVERSION"
+	SMART_LocalProjectCreateV30BidType           LocalProjectCreateV30BidType = "SMART"
+	STABILIZE_COSTS_LocalProjectCreateV30BidType LocalProjectCreateV30BidType = "STABILIZE_COSTS"
 )
 
 // Ptr returns reference to local_project_create_v3.0_bid_type value

@@ -23,8 +23,9 @@ import (
 )
 
 type ApiOpenApiV30LocalProductGetByPoiidsGetRequestExample struct {
-	LocalAccountId int64   `json:"local_account_id"`
-	PoiIds         []int64 `json:"poi_ids"`
+	LocalAccountId     int64                                        `json:"local_account_id"`
+	PoiIds             []int64                                      `json:"poi_ids"`
+	LocalDeliveryScene LocalProductGetByPoiidsV30LocalDeliveryScene `json:"local_delivery_scene,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/local/product/get_by_poiids/ Get
@@ -46,7 +47,7 @@ func main() {
 	resp, httpRes, err := apiClient.LocalProductGetByPoiidsV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		LocalAccountId(request.LocalAccountId).PoiIds(request.PoiIds).
+		LocalAccountId(request.LocalAccountId).PoiIds(request.PoiIds).LocalDeliveryScene(request.LocalDeliveryScene).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

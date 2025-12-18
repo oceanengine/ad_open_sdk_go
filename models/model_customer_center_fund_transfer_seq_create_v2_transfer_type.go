@@ -15,12 +15,12 @@ type CustomerCenterFundTransferSeqCreateV2TransferType string
 
 // List of customer_center_fund_transfer_seq_create_v2_transfer_type
 const (
-	CREDIT_BID_CustomerCenterFundTransferSeqCreateV2TransferType       CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_BID"
-	PREPAY_BRAND_CustomerCenterFundTransferSeqCreateV2TransferType     CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_BRAND"
-	CREDIT_UNIVERSAL_CustomerCenterFundTransferSeqCreateV2TransferType CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_UNIVERSAL"
-	CREDIT_BRAND_CustomerCenterFundTransferSeqCreateV2TransferType     CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_BRAND"
 	GRANT_CustomerCenterFundTransferSeqCreateV2TransferType            CustomerCenterFundTransferSeqCreateV2TransferType = "GRANT"
+	CREDIT_UNIVERSAL_CustomerCenterFundTransferSeqCreateV2TransferType CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_UNIVERSAL"
 	PREPAY_BID_CustomerCenterFundTransferSeqCreateV2TransferType       CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_BID"
+	CREDIT_BRAND_CustomerCenterFundTransferSeqCreateV2TransferType     CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_BRAND"
+	PREPAY_BRAND_CustomerCenterFundTransferSeqCreateV2TransferType     CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_BRAND"
+	CREDIT_BID_CustomerCenterFundTransferSeqCreateV2TransferType       CustomerCenterFundTransferSeqCreateV2TransferType = "CREDIT_BID"
 	PREPAY_UNIVERSAL_CustomerCenterFundTransferSeqCreateV2TransferType CustomerCenterFundTransferSeqCreateV2TransferType = "PREPAY_UNIVERSAL"
 )
 

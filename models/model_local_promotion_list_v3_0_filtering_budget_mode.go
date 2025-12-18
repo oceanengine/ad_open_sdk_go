@@ -15,9 +15,10 @@ type LocalPromotionListV30FilteringBudgetMode string
 
 // List of local_promotion_list_v3.0_filtering_budget_mode
 const (
-	ALL_LocalPromotionListV30FilteringBudgetMode               LocalPromotionListV30FilteringBudgetMode = "ALL"
-	BUDGET_MODE_DAY_LocalPromotionListV30FilteringBudgetMode   LocalPromotionListV30FilteringBudgetMode = "BUDGET_MODE_DAY"
-	BUDGET_MODE_TOTAL_LocalPromotionListV30FilteringBudgetMode LocalPromotionListV30FilteringBudgetMode = "BUDGET_MODE_TOTAL"
+	ALL_LocalPromotionListV30FilteringBudgetMode                     LocalPromotionListV30FilteringBudgetMode = "ALL"
+	BUDGET_MODE_7_DAY_TOTAL_LocalPromotionListV30FilteringBudgetMode LocalPromotionListV30FilteringBudgetMode = "BUDGET_MODE_7DAY_TOTAL"
+	BUDGET_MODE_DAY_LocalPromotionListV30FilteringBudgetMode         LocalPromotionListV30FilteringBudgetMode = "BUDGET_MODE_DAY"
+	BUDGET_MODE_TOTAL_LocalPromotionListV30FilteringBudgetMode       LocalPromotionListV30FilteringBudgetMode = "BUDGET_MODE_TOTAL"
 )
 
 // Ptr returns reference to local_promotion_list_v3.0_filtering_budget_mode value

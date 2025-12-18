@@ -23,10 +23,11 @@ import (
 type LocalProductGetByPoiidsV30ApiService service
 
 type ApiOpenApiV30LocalProductGetByPoiidsGetRequest struct {
-	ctx            context.Context
-	ApiService     *LocalProductGetByPoiidsV30ApiService
-	localAccountId *int64
-	poiIds         *[]int64
+	ctx                context.Context
+	ApiService         *LocalProductGetByPoiidsV30ApiService
+	localAccountId     *int64
+	poiIds             *[]int64
+	localDeliveryScene *LocalProductGetByPoiidsV30LocalDeliveryScene
 }
 
 func (r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) LocalAccountId(localAccountId int64) *ApiOpenApiV30LocalProductGetByPoiidsGetRequest {
@@ -36,6 +37,11 @@ func (r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) LocalAccountId(localAcc
 
 func (r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) PoiIds(poiIds []int64) *ApiOpenApiV30LocalProductGetByPoiidsGetRequest {
 	r.poiIds = &poiIds
+	return r
+}
+
+func (r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) LocalDeliveryScene(localDeliveryScene LocalProductGetByPoiidsV30LocalDeliveryScene) *ApiOpenApiV30LocalProductGetByPoiidsGetRequest {
+	r.localDeliveryScene = &localDeliveryScene
 	return r
 }
 
@@ -100,6 +106,9 @@ func (a *LocalProductGetByPoiidsV30ApiService) getExecute(r *ApiOpenApiV30LocalP
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "local_account_id", r.localAccountId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "poi_ids", r.poiIds)
+	if r.localDeliveryScene != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "local_delivery_scene", r.localDeliveryScene)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

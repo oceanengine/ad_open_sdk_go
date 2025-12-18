@@ -17,6 +17,7 @@ type LocalProjectListV30FilteringLocalDeliveryScene string
 const (
 	ALL_LocalProjectListV30FilteringLocalDeliveryScene           LocalProjectListV30FilteringLocalDeliveryScene = "ALL"
 	CONTENT_HEAT_LocalProjectListV30FilteringLocalDeliveryScene  LocalProjectListV30FilteringLocalDeliveryScene = "CONTENT_HEAT"
+	EXTERNAL_LocalProjectListV30FilteringLocalDeliveryScene      LocalProjectListV30FilteringLocalDeliveryScene = "EXTERNAL"
 	POI_RECOMMEND_LocalProjectListV30FilteringLocalDeliveryScene LocalProjectListV30FilteringLocalDeliveryScene = "POI_RECOMMEND"
 	PRODUCT_PAY_LocalProjectListV30FilteringLocalDeliveryScene   LocalProjectListV30FilteringLocalDeliveryScene = "PRODUCT_PAY"
 )

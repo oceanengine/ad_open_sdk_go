@@ -19,7 +19,8 @@ type QianchuanUniPromotionListV10ResponseDataAdListInnerAdInfo struct {
 	//
 	CreateTime *string `json:"create_time,omitempty"`
 	//
-	DailyDeliveryTime *float64 `json:"daily_delivery_time,omitempty"`
+	DailyDeliveryTime  *float64                                                        `json:"daily_delivery_time,omitempty"`
+	DeepExternalAction *QianchuanUniPromotionListV10DataAdListAdInfoDeepExternalAction `json:"deep_external_action,omitempty"`
 	//
 	DeliverySeconds *int64 `json:"delivery_seconds,omitempty"`
 	//

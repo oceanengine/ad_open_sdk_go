@@ -16,9 +16,9 @@ type CampaignGetV2DataListMarketingPurpose string
 // List of campaign_get_v2_data_list_marketing_purpose
 const (
 	ACKNOWLEDGE_CampaignGetV2DataListMarketingPurpose CampaignGetV2DataListMarketingPurpose = "ACKNOWLEDGE"
-	CONVERSION_CampaignGetV2DataListMarketingPurpose  CampaignGetV2DataListMarketingPurpose = "CONVERSION"
-	UNLIMITED_CampaignGetV2DataListMarketingPurpose   CampaignGetV2DataListMarketingPurpose = "UNLIMITED"
 	INTENTION_CampaignGetV2DataListMarketingPurpose   CampaignGetV2DataListMarketingPurpose = "INTENTION"
+	UNLIMITED_CampaignGetV2DataListMarketingPurpose   CampaignGetV2DataListMarketingPurpose = "UNLIMITED"
+	CONVERSION_CampaignGetV2DataListMarketingPurpose  CampaignGetV2DataListMarketingPurpose = "CONVERSION"
 )
 
 // Ptr returns reference to campaign_get_v2_data_list_marketing_purpose value

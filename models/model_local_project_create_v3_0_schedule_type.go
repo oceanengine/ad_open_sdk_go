@@ -10,14 +10,16 @@ Oceanengine Open Api
 
 package models
 
-// LocalProjectCreateV30ScheduleType 投放日期类型设置
+// LocalProjectCreateV30ScheduleType 投放日期类型设置  仅线索短视频周期稳投仅允许传：DELIVERY_7DAY  仅线索直播允许传：DAILY_DELIVERY_DURATION
 type LocalProjectCreateV30ScheduleType string
 
 // List of local_project_create_v3.0_schedule_type
 const (
-	FIXED_TIME_LocalProjectCreateV30ScheduleType   LocalProjectCreateV30ScheduleType = "FIXED_TIME"
-	FROM_NOW_ON_LocalProjectCreateV30ScheduleType  LocalProjectCreateV30ScheduleType = "FROM_NOW_ON"
-	START_TO_END_LocalProjectCreateV30ScheduleType LocalProjectCreateV30ScheduleType = "START_TO_END"
+	DAILY_DELIVERY_DURATION_LocalProjectCreateV30ScheduleType LocalProjectCreateV30ScheduleType = "DAILY_DELIVERY_DURATION"
+	DELIVERY_7_DAY_LocalProjectCreateV30ScheduleType          LocalProjectCreateV30ScheduleType = "DELIVERY_7DAY"
+	FIXED_TIME_LocalProjectCreateV30ScheduleType              LocalProjectCreateV30ScheduleType = "FIXED_TIME"
+	FROM_NOW_ON_LocalProjectCreateV30ScheduleType             LocalProjectCreateV30ScheduleType = "FROM_NOW_ON"
+	START_TO_END_LocalProjectCreateV30ScheduleType            LocalProjectCreateV30ScheduleType = "START_TO_END"
 )
 
 // Ptr returns reference to local_project_create_v3.0_schedule_type value

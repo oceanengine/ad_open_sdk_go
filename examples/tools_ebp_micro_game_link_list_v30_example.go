@@ -26,10 +26,10 @@ type ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequestExample struct {
 	AccountId   int64                                   `json:"account_id"`
 	AccountType ToolsEbpMicroGameLinkListV30AccountType `json:"account_type"`
 	InstanceId  int64                                   `json:"instance_id,omitempty"`
-	Page        int64                                   `json:"page,omitempty"`
-	PageSize    int64                                   `json:"page_size,omitempty"`
 	AppId       string                                  `json:"app_id,omitempty"`
 	CreateTime  ToolsEbpMicroGameLinkListV30CreateTime  `json:"create_time,omitempty"`
+	Page        int64                                   `json:"page,omitempty"`
+	PageSize    int64                                   `json:"page_size,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/ebp/micro_game/link/list/ Get
@@ -51,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsEbpMicroGameLinkListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).AccountType(request.AccountType).InstanceId(request.InstanceId).Page(request.Page).PageSize(request.PageSize).AppId(request.AppId).CreateTime(request.CreateTime).
+		AccountId(request.AccountId).AccountType(request.AccountType).InstanceId(request.InstanceId).AppId(request.AppId).CreateTime(request.CreateTime).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

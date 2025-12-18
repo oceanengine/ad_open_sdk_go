@@ -14,4 +14,8 @@ package models
 type ShopBonusSuccessGetV30ResponseDataCouponInfosInner struct {
 	//
 	CouponValue *int64 `json:"coupon_value,omitempty"`
+	//
+	DiscountRangeMax *float64 `json:"discount_range_max,omitempty"`
+	//
+	DiscountRangeMin *float64 `json:"discount_range_min,omitempty"`
 }

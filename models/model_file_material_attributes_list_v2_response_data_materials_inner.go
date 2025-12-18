@@ -32,12 +32,18 @@ type FileMaterialAttributesListV2ResponseDataMaterialsInner struct {
 	IsFirstPublishMaterial *bool `json:"is_first_publish_material,omitempty"`
 	// 是否低效素材
 	IsInefficientMaterial *bool `json:"is_inefficient_material,omitempty"`
+	// 是否本地推优质素材
+	IsLocalHighQualityMaterial *bool `json:"is_local_high_quality_material,omitempty"`
+	// 是否本地推低质素材
+	IsLocalLowQualityMaterial *bool `json:"is_local_low_quality_material,omitempty"`
 	// 是否同质化素材风险-未投放预计排队素材 - 方舟/纵横不支持
 	IsSimilarExpectedQueueMaterial *bool `json:"is_similar_expected_queue_material,omitempty"`
 	// 是否同质化挤压严重素材 - 方舟/纵横不支持
 	IsSimilarMaterial *bool `json:"is_similar_material,omitempty"`
 	// 是否同质化素材风险-排队投放素材 - 方舟/纵横不支持
 	IsSimilarQueueMaterial *bool `json:"is_similar_queue_material,omitempty"`
+	// 当该素材为本地推低质素材时，返回低质原因
+	LocalLowQualitySuggestions []string `json:"local_low_quality_suggestions,omitempty"`
 	// 素材id
 	MaterialId int64 `json:"material_id"`
 }

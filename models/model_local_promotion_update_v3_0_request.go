@@ -12,14 +12,16 @@ package models
 
 // LocalPromotionUpdateV30Request struct for LocalPromotionUpdateV30Request
 type LocalPromotionUpdateV30Request struct {
-	// 抖音号id
+	// 抖音号id，仅交易广告可传
 	AwemeId *string `json:"aweme_id,omitempty"`
-	//
+	// 交易广告素材入参，仅交易广告可传
 	CustomerMaterialList []*LocalPromotionUpdateV30RequestCustomerMaterialListInner `json:"customer_material_list,omitempty"`
 	//
 	LocalAccountId int64 `json:"local_account_id"`
 	//
-	Name *string `json:"name,omitempty"`
+	Name               *string                                           `json:"name,omitempty"`
+	ProceduralMaterial *LocalPromotionUpdateV30RequestProceduralMaterial `json:"procedural_material,omitempty"`
+	PromotionCardInfo  *LocalPromotionUpdateV30RequestPromotionCardInfo  `json:"promotion_card_info,omitempty"`
 	//
 	PromotionId       int64                                     `json:"promotion_id"`
 	VideoHpVisibility *LocalPromotionUpdateV30VideoHpVisibility `json:"video_hp_visibility,omitempty"`

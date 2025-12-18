@@ -12,7 +12,7 @@ package models
 
 // ReportCustomGetV30OrderByInner struct for ReportCustomGetV30OrderByInner
 type ReportCustomGetV30OrderByInner struct {
-	// 排序字段
+	//
 	Field string                         `json:"field"`
 	Type  *ReportCustomGetV30OrderByType `json:"type,omitempty"`
 }

@@ -15,8 +15,9 @@ type LocalProjectDetailV30DataBudgetMode string
 
 // List of local_project_detail_v3.0_data_budget_mode
 const (
-	BUDGET_MODE_DAY_LocalProjectDetailV30DataBudgetMode   LocalProjectDetailV30DataBudgetMode = "BUDGET_MODE_DAY"
-	BUDGET_MODE_TOTAL_LocalProjectDetailV30DataBudgetMode LocalProjectDetailV30DataBudgetMode = "BUDGET_MODE_TOTAL"
+	BUDGET_MODE_7_DAY_TOTAL_LocalProjectDetailV30DataBudgetMode LocalProjectDetailV30DataBudgetMode = "BUDGET_MODE_7DAY_TOTAL"
+	BUDGET_MODE_DAY_LocalProjectDetailV30DataBudgetMode         LocalProjectDetailV30DataBudgetMode = "BUDGET_MODE_DAY"
+	BUDGET_MODE_TOTAL_LocalProjectDetailV30DataBudgetMode       LocalProjectDetailV30DataBudgetMode = "BUDGET_MODE_TOTAL"
 )
 
 // Ptr returns reference to local_project_detail_v3.0_data_budget_mode value

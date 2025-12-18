@@ -13,7 +13,8 @@ package models
 // QianchuanUniPromotionAdRoi2GoalUpdateV10RequestUpdateRoi2InfosInner struct for QianchuanUniPromotionAdRoi2GoalUpdateV10RequestUpdateRoi2InfosInner
 type QianchuanUniPromotionAdRoi2GoalUpdateV10RequestUpdateRoi2InfosInner struct {
 	//
-	AdId int64 `json:"ad_id"`
+	AdId               int64                                                                      `json:"ad_id"`
+	DeepExternalAction *QianchuanUniPromotionAdRoi2GoalUpdateV10UpdateRoi2InfosDeepExternalAction `json:"deep_external_action,omitempty"`
 	//
 	Roi2Goal float64 `json:"roi2_goal"`
 }

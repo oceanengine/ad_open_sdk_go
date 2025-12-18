@@ -13,6 +13,10 @@ package models
 // StarVasCreateBoostItemGroupV2RequestCustomAudienceTag 人群标签定向，仅boost_type为CUSTOM_TAG时传参
 type StarVasCreateBoostItemGroupV2RequestCustomAudienceTag struct {
 	// 年龄，空则为不限 可选值: 18_TO_23 18-23; 24_TO_30 24-30; 31_TO_40 31-40; 41_TO_50 41-50; INFINITE 不限;
-	Age    []*StarVasCreateBoostItemGroupV2CustomAudienceTagAge  `json:"age,omitempty"`
-	Gender *StarVasCreateBoostItemGroupV2CustomAudienceTagGender `json:"gender,omitempty"`
+	Age []*StarVasCreateBoostItemGroupV2CustomAudienceTagAge `json:"age,omitempty"`
+	// 地域 code，空则为全国。如果填值，要么都是CITY类型的地域，要么都是COUNTY类型的地域。枚举值见/open_api/2/star/vas/get_boost_group_options/接口里的district/city_level字段下的地域代码code
+	District []string                                              `json:"district,omitempty"`
+	Gender   *StarVasCreateBoostItemGroupV2CustomAudienceTagGender `json:"gender,omitempty"`
+	// 兴趣标签，空则不限。仅支持SECOND类型的标签。枚举值见/open_api/2/star/vas/get_boost_group_options/接口里的interest_tag字段下的标签代码code
+	InterestTag []int32 `json:"interest_tag,omitempty"`
 }

@@ -13,4 +13,8 @@ package models
 // FileImageAdvertiserV2ResponseData
 type FileImageAdvertiserV2ResponseData struct {
 	Data *FileImageAdvertiserV2ResponseDataData `json:"data,omitempty"`
+	//
+	Id *string `json:"id,omitempty"`
+	//
+	Url *string `json:"url,omitempty"`
 }
