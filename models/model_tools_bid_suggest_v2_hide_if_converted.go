@@ -16,12 +16,12 @@ type ToolsBidSuggestV2HideIfConverted string
 // List of tools_bid_suggest_v2_hide_if_converted
 const (
 	ADVERTISER_ToolsBidSuggestV2HideIfConverted   ToolsBidSuggestV2HideIfConverted = "ADVERTISER"
-	CUSTOMER_ToolsBidSuggestV2HideIfConverted     ToolsBidSuggestV2HideIfConverted = "CUSTOMER"
-	APP_ToolsBidSuggestV2HideIfConverted          ToolsBidSuggestV2HideIfConverted = "APP"
 	ORGANIZATION_ToolsBidSuggestV2HideIfConverted ToolsBidSuggestV2HideIfConverted = "ORGANIZATION"
-	NO_EXCLUDE_ToolsBidSuggestV2HideIfConverted   ToolsBidSuggestV2HideIfConverted = "NO_EXCLUDE"
-	GLOBAL_APP_ToolsBidSuggestV2HideIfConverted   ToolsBidSuggestV2HideIfConverted = "GLOBAL_APP"
 	AD_ToolsBidSuggestV2HideIfConverted           ToolsBidSuggestV2HideIfConverted = "AD"
+	APP_ToolsBidSuggestV2HideIfConverted          ToolsBidSuggestV2HideIfConverted = "APP"
+	CUSTOMER_ToolsBidSuggestV2HideIfConverted     ToolsBidSuggestV2HideIfConverted = "CUSTOMER"
+	GLOBAL_APP_ToolsBidSuggestV2HideIfConverted   ToolsBidSuggestV2HideIfConverted = "GLOBAL_APP"
+	NO_EXCLUDE_ToolsBidSuggestV2HideIfConverted   ToolsBidSuggestV2HideIfConverted = "NO_EXCLUDE"
 	CAMPAIGN_ToolsBidSuggestV2HideIfConverted     ToolsBidSuggestV2HideIfConverted = "CAMPAIGN"
 )
 

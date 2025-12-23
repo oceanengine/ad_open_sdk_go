@@ -15,9 +15,9 @@ type CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType string
 
 // List of creative_custom_creative_update_v2_ad_data_mini_program_info_type
 const (
-	BYTE_APP_CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType     CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType = "BYTE_APP"
 	BYTE_GAME_CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType    CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType = "BYTE_GAME"
 	SHELL_APP_CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType    CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType = "SHELL_APP"
+	BYTE_APP_CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType     CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType = "BYTE_APP"
 	TEMPLATE_APP_CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType CreativeCustomCreativeUpdateV2AdDataMiniProgramInfoType = "TEMPLATE_APP"
 )
 

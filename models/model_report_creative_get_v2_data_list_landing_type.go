@@ -15,16 +15,16 @@ type ReportCreativeGetV2DataListLandingType string
 
 // List of report_creative_get_v2_data_list_landing_type
 const (
-	ARTICLE_ReportCreativeGetV2DataListLandingType   ReportCreativeGetV2DataListLandingType = "ARTICLE"
-	GOODS_ReportCreativeGetV2DataListLandingType     ReportCreativeGetV2DataListLandingType = "GOODS"
-	SHOP_ReportCreativeGetV2DataListLandingType      ReportCreativeGetV2DataListLandingType = "SHOP"
-	APP_ReportCreativeGetV2DataListLandingType       ReportCreativeGetV2DataListLandingType = "APP"
 	DPA_ReportCreativeGetV2DataListLandingType       ReportCreativeGetV2DataListLandingType = "DPA"
-	LINK_ReportCreativeGetV2DataListLandingType      ReportCreativeGetV2DataListLandingType = "LINK"
-	QUICK_APP_ReportCreativeGetV2DataListLandingType ReportCreativeGetV2DataListLandingType = "QUICK_APP"
-	LIVE_ReportCreativeGetV2DataListLandingType      ReportCreativeGetV2DataListLandingType = "LIVE"
 	AWEME_ReportCreativeGetV2DataListLandingType     ReportCreativeGetV2DataListLandingType = "AWEME"
 	STORE_ReportCreativeGetV2DataListLandingType     ReportCreativeGetV2DataListLandingType = "STORE"
+	APP_ReportCreativeGetV2DataListLandingType       ReportCreativeGetV2DataListLandingType = "APP"
+	ARTICLE_ReportCreativeGetV2DataListLandingType   ReportCreativeGetV2DataListLandingType = "ARTICLE"
+	LINK_ReportCreativeGetV2DataListLandingType      ReportCreativeGetV2DataListLandingType = "LINK"
+	GOODS_ReportCreativeGetV2DataListLandingType     ReportCreativeGetV2DataListLandingType = "GOODS"
+	QUICK_APP_ReportCreativeGetV2DataListLandingType ReportCreativeGetV2DataListLandingType = "QUICK_APP"
+	SHOP_ReportCreativeGetV2DataListLandingType      ReportCreativeGetV2DataListLandingType = "SHOP"
+	LIVE_ReportCreativeGetV2DataListLandingType      ReportCreativeGetV2DataListLandingType = "LIVE"
 )
 
 // Ptr returns reference to report_creative_get_v2_data_list_landing_type value

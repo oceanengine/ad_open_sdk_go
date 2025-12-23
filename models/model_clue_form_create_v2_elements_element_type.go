@@ -15,19 +15,19 @@ type ClueFormCreateV2ElementsElementType string
 
 // List of clue_form_create_v2_elements_element_type
 const (
-	TEXT_ClueFormCreateV2ElementsElementType       ClueFormCreateV2ElementsElementType = "TEXT"
+	TELEPHONE_ClueFormCreateV2ElementsElementType  ClueFormCreateV2ElementsElementType = "TELEPHONE"
+	CALCULATOR_ClueFormCreateV2ElementsElementType ClueFormCreateV2ElementsElementType = "CALCULATOR"
 	CHECKBOX_ClueFormCreateV2ElementsElementType   ClueFormCreateV2ElementsElementType = "CHECKBOX"
 	TEXTAREA_ClueFormCreateV2ElementsElementType   ClueFormCreateV2ElementsElementType = "TEXTAREA"
-	NUMBER_ClueFormCreateV2ElementsElementType     ClueFormCreateV2ElementsElementType = "NUMBER"
-	TELEPHONE_ClueFormCreateV2ElementsElementType  ClueFormCreateV2ElementsElementType = "TELEPHONE"
-	SELECT_ClueFormCreateV2ElementsElementType     ClueFormCreateV2ElementsElementType = "SELECT"
-	CALCULATOR_ClueFormCreateV2ElementsElementType ClueFormCreateV2ElementsElementType = "CALCULATOR"
-	CITY_ClueFormCreateV2ElementsElementType       ClueFormCreateV2ElementsElementType = "CITY"
-	RADIO_ClueFormCreateV2ElementsElementType      ClueFormCreateV2ElementsElementType = "RADIO"
-	DATE_ClueFormCreateV2ElementsElementType       ClueFormCreateV2ElementsElementType = "DATE"
 	SEX_ClueFormCreateV2ElementsElementType        ClueFormCreateV2ElementsElementType = "SEX"
+	CITY_ClueFormCreateV2ElementsElementType       ClueFormCreateV2ElementsElementType = "CITY"
+	SELECT_ClueFormCreateV2ElementsElementType     ClueFormCreateV2ElementsElementType = "SELECT"
 	EMAIL_ClueFormCreateV2ElementsElementType      ClueFormCreateV2ElementsElementType = "EMAIL"
 	NAME_ClueFormCreateV2ElementsElementType       ClueFormCreateV2ElementsElementType = "NAME"
+	TEXT_ClueFormCreateV2ElementsElementType       ClueFormCreateV2ElementsElementType = "TEXT"
+	DATE_ClueFormCreateV2ElementsElementType       ClueFormCreateV2ElementsElementType = "DATE"
+	NUMBER_ClueFormCreateV2ElementsElementType     ClueFormCreateV2ElementsElementType = "NUMBER"
+	RADIO_ClueFormCreateV2ElementsElementType      ClueFormCreateV2ElementsElementType = "RADIO"
 )
 
 // Ptr returns reference to clue_form_create_v2_elements_element_type value

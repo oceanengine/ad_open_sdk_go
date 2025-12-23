@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.78
+// APIClient manages communication with the Oceanengine Open Api API v1.1.79
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration

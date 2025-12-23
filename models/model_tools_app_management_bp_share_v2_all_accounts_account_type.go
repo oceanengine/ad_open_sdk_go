@@ -15,8 +15,8 @@ type ToolsAppManagementBpShareV2AllAccountsAccountType string
 
 // List of tools_app_management_bp_share_v2_all_accounts_account_type
 const (
-	STAR_ToolsAppManagementBpShareV2AllAccountsAccountType ToolsAppManagementBpShareV2AllAccountsAccountType = "STAR"
 	BP_ToolsAppManagementBpShareV2AllAccountsAccountType   ToolsAppManagementBpShareV2AllAccountsAccountType = "BP"
+	STAR_ToolsAppManagementBpShareV2AllAccountsAccountType ToolsAppManagementBpShareV2AllAccountsAccountType = "STAR"
 	AD_ToolsAppManagementBpShareV2AllAccountsAccountType   ToolsAppManagementBpShareV2AllAccountsAccountType = "AD"
 )
 

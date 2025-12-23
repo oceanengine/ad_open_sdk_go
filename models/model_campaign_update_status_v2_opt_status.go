@@ -15,8 +15,8 @@ type CampaignUpdateStatusV2OptStatus string
 
 // List of campaign_update_status_v2_opt_status
 const (
-	ENABLE_CampaignUpdateStatusV2OptStatus  CampaignUpdateStatusV2OptStatus = "enable"
 	DISABLE_CampaignUpdateStatusV2OptStatus CampaignUpdateStatusV2OptStatus = "disable"
+	ENABLE_CampaignUpdateStatusV2OptStatus  CampaignUpdateStatusV2OptStatus = "enable"
 	DELETE_CampaignUpdateStatusV2OptStatus  CampaignUpdateStatusV2OptStatus = "delete"
 )
 

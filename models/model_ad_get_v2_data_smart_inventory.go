@@ -15,10 +15,10 @@ type AdGetV2DataSmartInventory string
 
 // List of ad_get_v2_data_smart_inventory
 const (
-	NORMAL_AdGetV2DataSmartInventory        AdGetV2DataSmartInventory = "NORMAL"
-	SMART_AdGetV2DataSmartInventory         AdGetV2DataSmartInventory = "SMART"
-	UNIVERSAL_AdGetV2DataSmartInventory     AdGetV2DataSmartInventory = "UNIVERSAL"
 	UNIVERSAL_ALL_AdGetV2DataSmartInventory AdGetV2DataSmartInventory = "UNIVERSAL_ALL"
+	SMART_AdGetV2DataSmartInventory         AdGetV2DataSmartInventory = "SMART"
+	NORMAL_AdGetV2DataSmartInventory        AdGetV2DataSmartInventory = "NORMAL"
+	UNIVERSAL_AdGetV2DataSmartInventory     AdGetV2DataSmartInventory = "UNIVERSAL"
 )
 
 // Ptr returns reference to ad_get_v2_data_smart_inventory value

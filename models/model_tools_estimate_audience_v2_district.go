@@ -16,11 +16,11 @@ type ToolsEstimateAudienceV2District string
 // List of tools_estimate_audience_v2_district
 const (
 	COUNTY_ToolsEstimateAudienceV2District            ToolsEstimateAudienceV2District = "COUNTY"
-	NONE_ToolsEstimateAudienceV2District              ToolsEstimateAudienceV2District = "NONE"
-	OVERSEA_ToolsEstimateAudienceV2District           ToolsEstimateAudienceV2District = "OVERSEA"
-	CITY_ToolsEstimateAudienceV2District              ToolsEstimateAudienceV2District = "CITY"
-	REGION_ToolsEstimateAudienceV2District            ToolsEstimateAudienceV2District = "REGION"
 	BUSINESS_DISTRICT_ToolsEstimateAudienceV2District ToolsEstimateAudienceV2District = "BUSINESS_DISTRICT"
+	NONE_ToolsEstimateAudienceV2District              ToolsEstimateAudienceV2District = "NONE"
+	CITY_ToolsEstimateAudienceV2District              ToolsEstimateAudienceV2District = "CITY"
+	OVERSEA_ToolsEstimateAudienceV2District           ToolsEstimateAudienceV2District = "OVERSEA"
+	REGION_ToolsEstimateAudienceV2District            ToolsEstimateAudienceV2District = "REGION"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_district value

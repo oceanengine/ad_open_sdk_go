@@ -17,10 +17,10 @@ type ClueCouponDetailV2DataCouponResourceListIndustryType string
 const (
 	TICKET_ClueCouponDetailV2DataCouponResourceListIndustryType        ClueCouponDetailV2DataCouponResourceListIndustryType = "TICKET"
 	OTHER_ClueCouponDetailV2DataCouponResourceListIndustryType         ClueCouponDetailV2DataCouponResourceListIndustryType = "OTHER"
-	ENTERTAINMENT_ClueCouponDetailV2DataCouponResourceListIndustryType ClueCouponDetailV2DataCouponResourceListIndustryType = "ENTERTAINMENT"
-	FINANCIAL_ClueCouponDetailV2DataCouponResourceListIndustryType     ClueCouponDetailV2DataCouponResourceListIndustryType = "FINANCIAL"
 	GAME_ClueCouponDetailV2DataCouponResourceListIndustryType          ClueCouponDetailV2DataCouponResourceListIndustryType = "GAME"
 	FOOD_ClueCouponDetailV2DataCouponResourceListIndustryType          ClueCouponDetailV2DataCouponResourceListIndustryType = "FOOD"
+	FINANCIAL_ClueCouponDetailV2DataCouponResourceListIndustryType     ClueCouponDetailV2DataCouponResourceListIndustryType = "FINANCIAL"
+	ENTERTAINMENT_ClueCouponDetailV2DataCouponResourceListIndustryType ClueCouponDetailV2DataCouponResourceListIndustryType = "ENTERTAINMENT"
 )
 
 // Ptr returns reference to clue_coupon_detail_v2_data_coupon_resource_list_industry_type value
