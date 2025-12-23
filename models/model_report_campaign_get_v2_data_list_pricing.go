@@ -15,12 +15,12 @@ type ReportCampaignGetV2DataListPricing string
 
 // List of report_campaign_get_v2_data_list_pricing
 const (
-	PRICING_ECPC_ReportCampaignGetV2DataListPricing ReportCampaignGetV2DataListPricing = "PRICING_ECPC"
 	PRICING_CPC_ReportCampaignGetV2DataListPricing  ReportCampaignGetV2DataListPricing = "PRICING_CPC"
-	PRICING_CPV_ReportCampaignGetV2DataListPricing  ReportCampaignGetV2DataListPricing = "PRICING_CPV"
-	PRICING_OCPM_ReportCampaignGetV2DataListPricing ReportCampaignGetV2DataListPricing = "PRICING_OCPM"
-	PRICING_CPM_ReportCampaignGetV2DataListPricing  ReportCampaignGetV2DataListPricing = "PRICING_CPM"
 	PRICING_OCPC_ReportCampaignGetV2DataListPricing ReportCampaignGetV2DataListPricing = "PRICING_OCPC"
+	PRICING_OCPM_ReportCampaignGetV2DataListPricing ReportCampaignGetV2DataListPricing = "PRICING_OCPM"
+	PRICING_ECPC_ReportCampaignGetV2DataListPricing ReportCampaignGetV2DataListPricing = "PRICING_ECPC"
+	PRICING_CPM_ReportCampaignGetV2DataListPricing  ReportCampaignGetV2DataListPricing = "PRICING_CPM"
+	PRICING_CPV_ReportCampaignGetV2DataListPricing  ReportCampaignGetV2DataListPricing = "PRICING_CPV"
 	PRICING_CPA_ReportCampaignGetV2DataListPricing  ReportCampaignGetV2DataListPricing = "PRICING_CPA"
 )
 

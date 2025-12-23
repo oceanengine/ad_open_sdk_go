@@ -15,11 +15,11 @@ type ToolsBidSuggestV2District string
 
 // List of tools_bid_suggest_v2_district
 const (
-	NONE_ToolsBidSuggestV2District              ToolsBidSuggestV2District = "NONE"
-	REGION_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "REGION"
-	OVERSEA_ToolsBidSuggestV2District           ToolsBidSuggestV2District = "OVERSEA"
 	COUNTY_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "COUNTY"
+	NONE_ToolsBidSuggestV2District              ToolsBidSuggestV2District = "NONE"
+	OVERSEA_ToolsBidSuggestV2District           ToolsBidSuggestV2District = "OVERSEA"
 	CITY_ToolsBidSuggestV2District              ToolsBidSuggestV2District = "CITY"
+	REGION_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "REGION"
 	BUSINESS_DISTRICT_ToolsBidSuggestV2District ToolsBidSuggestV2District = "BUSINESS_DISTRICT"
 )
 

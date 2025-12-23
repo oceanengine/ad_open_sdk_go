@@ -15,8 +15,8 @@ type ReportLiveRoomFlowCategoryGetV2OrderType string
 
 // List of report_live_room_flow_category_get_v2_order_type
 const (
-	ASC_ReportLiveRoomFlowCategoryGetV2OrderType  ReportLiveRoomFlowCategoryGetV2OrderType = "ASC"
 	DESC_ReportLiveRoomFlowCategoryGetV2OrderType ReportLiveRoomFlowCategoryGetV2OrderType = "DESC"
+	ASC_ReportLiveRoomFlowCategoryGetV2OrderType  ReportLiveRoomFlowCategoryGetV2OrderType = "ASC"
 )
 
 // Ptr returns reference to report_live_room_flow_category_get_v2_order_type value

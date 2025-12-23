@@ -15,8 +15,8 @@ type ToolsInterestActionId2wordV2TargetingType string
 
 // List of tools_interest_action_id2word_v2_targeting_type
 const (
-	ACTION_ToolsInterestActionId2wordV2TargetingType   ToolsInterestActionId2wordV2TargetingType = "ACTION"
 	INTEREST_ToolsInterestActionId2wordV2TargetingType ToolsInterestActionId2wordV2TargetingType = "INTEREST"
+	ACTION_ToolsInterestActionId2wordV2TargetingType   ToolsInterestActionId2wordV2TargetingType = "ACTION"
 )
 
 // Ptr returns reference to tools_interest_action_id2word_v2_targeting_type value

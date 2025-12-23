@@ -15,10 +15,10 @@ type AdGetV2DataPromotionType string
 
 // List of ad_get_v2_data_promotion_type
 const (
-	AWEME_HOME_PAGE_AdGetV2DataPromotionType   AdGetV2DataPromotionType = "AWEME_HOME_PAGE"
-	LIVE_AdGetV2DataPromotionType              AdGetV2DataPromotionType = "LIVE"
 	LANDING_PAGE_LINK_AdGetV2DataPromotionType AdGetV2DataPromotionType = "LANDING_PAGE_LINK"
 	GOODS_AdGetV2DataPromotionType             AdGetV2DataPromotionType = "GOODS"
+	AWEME_HOME_PAGE_AdGetV2DataPromotionType   AdGetV2DataPromotionType = "AWEME_HOME_PAGE"
+	LIVE_AdGetV2DataPromotionType              AdGetV2DataPromotionType = "LIVE"
 )
 
 // Ptr returns reference to ad_get_v2_data_promotion_type value
