@@ -33,7 +33,9 @@ type AgentTransferTransactionRecordV2Filtering struct {
 	RemitterType           *AgentTransferTransactionRecordV2FilteringRemitterType `json:"remitter_type,omitempty"`
 	// 转出方账户
 	Remitters []int64 `json:"remitters,omitempty"`
+	// 转账单编号
+	TransferOrderSerial *string `json:"transfer_order_serial,omitempty"`
 	// 转账编号
-	TransferOrderSerial *string                                               `json:"transfer_order_serial,omitempty"`
-	TransferType        AgentTransferTransactionRecordV2FilteringTransferType `json:"transfer_type"`
+	TransferTargetSerial *string                                               `json:"transfer_target_serial,omitempty"`
+	TransferType         AgentTransferTransactionRecordV2FilteringTransferType `json:"transfer_type"`
 }

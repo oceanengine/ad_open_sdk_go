@@ -26,6 +26,7 @@ const (
 	FORM_BID_ProjectCreateV30DeliverySettingDeepBidType                     ProjectCreateV30DeliverySettingDeepBidType = "FORM_BID"
 	IAAP_ROI_24_H_AND_7_D_ProjectCreateV30DeliverySettingDeepBidType        ProjectCreateV30DeliverySettingDeepBidType = "IAAP_ROI_24H_AND_7D"
 	IAAP_SEVEN_ROI_COEFFICIENT_ProjectCreateV30DeliverySettingDeepBidType   ProjectCreateV30DeliverySettingDeepBidType = "IAAP_SEVEN_ROI_COEFFICIENT"
+	LAYER_ROI_ProjectCreateV30DeliverySettingDeepBidType                    ProjectCreateV30DeliverySettingDeepBidType = "LAYER_ROI"
 	LOAN_ROI_ProjectCreateV30DeliverySettingDeepBidType                     ProjectCreateV30DeliverySettingDeepBidType = "LOAN_ROI"
 	MIN_SECOND_STAGE_ProjectCreateV30DeliverySettingDeepBidType             ProjectCreateV30DeliverySettingDeepBidType = "MIN_SECOND_STAGE"
 	NET_ORDER_ProjectCreateV30DeliverySettingDeepBidType                    ProjectCreateV30DeliverySettingDeepBidType = "NET_ORDER"

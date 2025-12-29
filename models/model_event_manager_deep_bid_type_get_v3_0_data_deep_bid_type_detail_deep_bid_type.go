@@ -26,6 +26,7 @@ const (
 	FORM_BID_EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType                     EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = "FORM_BID"
 	IAAP_ROI_24_H_AND_7_D_EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType        EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = "IAAP_ROI_24H_AND_7D"
 	IAAP_SEVEN_ROI_COEFFICIENT_EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType   EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = "IAAP_SEVEN_ROI_COEFFICIENT"
+	LAYER_ROI_EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType                    EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = "LAYER_ROI"
 	LOAN_ROI_EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType                     EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = "LOAN_ROI"
 	MIN_SECOND_STAGE_EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType             EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = "MIN_SECOND_STAGE"
 	NET_ORDER_EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType                    EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = "NET_ORDER"

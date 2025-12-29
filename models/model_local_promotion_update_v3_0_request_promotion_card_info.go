@@ -18,7 +18,7 @@ type LocalPromotionUpdateV30RequestPromotionCardInfo struct {
 	EnablePersonalCallToAction bool `json:"enable_personal_call_to_action"`
 	// 卡片配图，长度[1,10]
 	ProductImages []*LocalPromotionUpdateV30RequestPromotionCardInfoProductImagesInner `json:"product_images"`
-	// 卡片标题，1-20字符
+	// 卡片标题
 	ProductName string `json:"product_name"`
 	// 推广卖点，长度[1,10]
 	ProductSellingPoints []*LocalPromotionUpdateV30RequestPromotionCardInfoProductSellingPointsInner `json:"product_selling_points"`

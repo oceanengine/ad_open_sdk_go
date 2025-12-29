@@ -12,6 +12,6 @@ package models
 
 // LocalPromotionUpdateV30RequestPromotionCardInfoCallToActionsInner struct for LocalPromotionUpdateV30RequestPromotionCardInfoCallToActionsInner
 type LocalPromotionUpdateV30RequestPromotionCardInfoCallToActionsInner struct {
-	// 号召描述，2-4字符
+	// 号召描述
 	Action string `json:"action"`
 }

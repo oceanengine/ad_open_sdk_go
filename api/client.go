@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.79
+// APIClient manages communication with the Oceanengine Open Api API v1.1.80
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -1375,15 +1375,7 @@ type APIClient struct {
 
 	ReportJointGrowthGetV30Api *ReportJointGrowthGetV30ApiService
 
-	ReportLiveRoomAnalysisGetV2Api *ReportLiveRoomAnalysisGetV2ApiService
-
 	ReportLiveRoomAnalysisGetV30Api *ReportLiveRoomAnalysisGetV30ApiService
-
-	ReportLiveRoomAttributeGetV2Api *ReportLiveRoomAttributeGetV2ApiService
-
-	ReportLiveRoomAudiencePortraitGetV2Api *ReportLiveRoomAudiencePortraitGetV2ApiService
-
-	ReportLiveRoomFlowCategoryGetV2Api *ReportLiveRoomFlowCategoryGetV2ApiService
 
 	ReportProductAsyncTaskDownloadV30Api *ReportProductAsyncTaskDownloadV30ApiService
 
@@ -1940,6 +1932,12 @@ type APIClient struct {
 	ToolsEbpAppPublishV30Api *ToolsEbpAppPublishV30ApiService
 
 	ToolsEbpAppUpdateV30Api *ToolsEbpAppUpdateV30ApiService
+
+	ToolsEbpAssetAuthCancelV30Api *ToolsEbpAssetAuthCancelV30ApiService
+
+	ToolsEbpAssetAuthListV30Api *ToolsEbpAssetAuthListV30ApiService
+
+	ToolsEbpAssetAuthV30Api *ToolsEbpAssetAuthV30ApiService
 
 	ToolsEbpMicroAppletCreateV30Api *ToolsEbpMicroAppletCreateV30ApiService
 
@@ -2932,11 +2930,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ReportCustomGetV30Api = (*ReportCustomGetV30ApiService)(&c.common)
 	c.ReportJointGrowthCusGetV30Api = (*ReportJointGrowthCusGetV30ApiService)(&c.common)
 	c.ReportJointGrowthGetV30Api = (*ReportJointGrowthGetV30ApiService)(&c.common)
-	c.ReportLiveRoomAnalysisGetV2Api = (*ReportLiveRoomAnalysisGetV2ApiService)(&c.common)
 	c.ReportLiveRoomAnalysisGetV30Api = (*ReportLiveRoomAnalysisGetV30ApiService)(&c.common)
-	c.ReportLiveRoomAttributeGetV2Api = (*ReportLiveRoomAttributeGetV2ApiService)(&c.common)
-	c.ReportLiveRoomAudiencePortraitGetV2Api = (*ReportLiveRoomAudiencePortraitGetV2ApiService)(&c.common)
-	c.ReportLiveRoomFlowCategoryGetV2Api = (*ReportLiveRoomFlowCategoryGetV2ApiService)(&c.common)
 	c.ReportProductAsyncTaskDownloadV30Api = (*ReportProductAsyncTaskDownloadV30ApiService)(&c.common)
 	c.ReportProductAsyncTaskGetV30Api = (*ReportProductAsyncTaskGetV30ApiService)(&c.common)
 	c.ReportProductDailyAsyncTaskCreateV30Api = (*ReportProductDailyAsyncTaskCreateV30ApiService)(&c.common)
@@ -3215,6 +3209,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsEbpAppListV30Api = (*ToolsEbpAppListV30ApiService)(&c.common)
 	c.ToolsEbpAppPublishV30Api = (*ToolsEbpAppPublishV30ApiService)(&c.common)
 	c.ToolsEbpAppUpdateV30Api = (*ToolsEbpAppUpdateV30ApiService)(&c.common)
+	c.ToolsEbpAssetAuthCancelV30Api = (*ToolsEbpAssetAuthCancelV30ApiService)(&c.common)
+	c.ToolsEbpAssetAuthListV30Api = (*ToolsEbpAssetAuthListV30ApiService)(&c.common)
+	c.ToolsEbpAssetAuthV30Api = (*ToolsEbpAssetAuthV30ApiService)(&c.common)
 	c.ToolsEbpMicroAppletCreateV30Api = (*ToolsEbpMicroAppletCreateV30ApiService)(&c.common)
 	c.ToolsEbpMicroAppletLinkListV30Api = (*ToolsEbpMicroAppletLinkListV30ApiService)(&c.common)
 	c.ToolsEbpMicroAppletListV30Api = (*ToolsEbpMicroAppletListV30ApiService)(&c.common)

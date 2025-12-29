@@ -12,6 +12,6 @@ package models
 
 // LocalPromotionUpdateV30RequestPromotionCardInfoProductSellingPointsInner struct for LocalPromotionUpdateV30RequestPromotionCardInfoProductSellingPointsInner
 type LocalPromotionUpdateV30RequestPromotionCardInfoProductSellingPointsInner struct {
-	// 卖点描述,4-10字符
+	// 卖点描述
 	SellingPoint string `json:"selling_point"`
 }

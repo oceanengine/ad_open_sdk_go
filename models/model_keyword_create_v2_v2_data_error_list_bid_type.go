@@ -15,11 +15,11 @@ type KeywordCreateV2V2DataErrorListBidType string
 
 // List of keyword_create_v2_v2_data_error_list_bid_type
 const (
-	WITH_AD_KeywordCreateV2V2DataErrorListBidType        KeywordCreateV2V2DataErrorListBidType = "WITH_AD"
-	SUGGEST_KeywordCreateV2V2DataErrorListBidType        KeywordCreateV2V2DataErrorListBidType = "SUGGEST"
-	BRAND_AD_KeywordCreateV2V2DataErrorListBidType       KeywordCreateV2V2DataErrorListBidType = "BRAND_AD"
-	FEED_TO_SEARCH_KeywordCreateV2V2DataErrorListBidType KeywordCreateV2V2DataErrorListBidType = "FEED_TO_SEARCH"
 	CUSTOM_KeywordCreateV2V2DataErrorListBidType         KeywordCreateV2V2DataErrorListBidType = "CUSTOM"
+	FEED_TO_SEARCH_KeywordCreateV2V2DataErrorListBidType KeywordCreateV2V2DataErrorListBidType = "FEED_TO_SEARCH"
+	SUGGEST_KeywordCreateV2V2DataErrorListBidType        KeywordCreateV2V2DataErrorListBidType = "SUGGEST"
+	WITH_AD_KeywordCreateV2V2DataErrorListBidType        KeywordCreateV2V2DataErrorListBidType = "WITH_AD"
+	BRAND_AD_KeywordCreateV2V2DataErrorListBidType       KeywordCreateV2V2DataErrorListBidType = "BRAND_AD"
 )
 
 // Ptr returns reference to keyword_create_v2_v2_data_error_list_bid_type value

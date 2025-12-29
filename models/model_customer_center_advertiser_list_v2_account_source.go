@@ -15,9 +15,9 @@ type CustomerCenterAdvertiserListV2AccountSource string
 
 // List of customer_center_advertiser_list_v2_account_source
 const (
-	AD_CustomerCenterAdvertiserListV2AccountSource         CustomerCenterAdvertiserListV2AccountSource = "AD"
-	ENTERPRISE_CustomerCenterAdvertiserListV2AccountSource CustomerCenterAdvertiserListV2AccountSource = "ENTERPRISE"
 	LOCAL_CustomerCenterAdvertiserListV2AccountSource      CustomerCenterAdvertiserListV2AccountSource = "LOCAL"
+	ENTERPRISE_CustomerCenterAdvertiserListV2AccountSource CustomerCenterAdvertiserListV2AccountSource = "ENTERPRISE"
+	AD_CustomerCenterAdvertiserListV2AccountSource         CustomerCenterAdvertiserListV2AccountSource = "AD"
 	QIANCHUAN_CustomerCenterAdvertiserListV2AccountSource  CustomerCenterAdvertiserListV2AccountSource = "QIANCHUAN"
 )
 

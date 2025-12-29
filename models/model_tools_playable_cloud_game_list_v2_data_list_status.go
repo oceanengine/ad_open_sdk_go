@@ -15,10 +15,10 @@ type ToolsPlayableCloudGameListV2DataListStatus string
 
 // List of tools_playable_cloud_game_list_v2_data_list_status
 const (
-	OFF_SHELF_ToolsPlayableCloudGameListV2DataListStatus     ToolsPlayableCloudGameListV2DataListStatus = "OFF_SHELF"
-	UPLOAD_STATUS_ToolsPlayableCloudGameListV2DataListStatus ToolsPlayableCloudGameListV2DataListStatus = "UPLOAD_STATUS"
-	AUDIT_FAIL_ToolsPlayableCloudGameListV2DataListStatus    ToolsPlayableCloudGameListV2DataListStatus = "AUDIT_FAIL"
 	ON_SHELF_ToolsPlayableCloudGameListV2DataListStatus      ToolsPlayableCloudGameListV2DataListStatus = "ON_SHELF"
+	OFF_SHELF_ToolsPlayableCloudGameListV2DataListStatus     ToolsPlayableCloudGameListV2DataListStatus = "OFF_SHELF"
+	AUDIT_FAIL_ToolsPlayableCloudGameListV2DataListStatus    ToolsPlayableCloudGameListV2DataListStatus = "AUDIT_FAIL"
+	UPLOAD_STATUS_ToolsPlayableCloudGameListV2DataListStatus ToolsPlayableCloudGameListV2DataListStatus = "UPLOAD_STATUS"
 	AUDIT_SUCCESS_ToolsPlayableCloudGameListV2DataListStatus ToolsPlayableCloudGameListV2DataListStatus = "AUDIT_SUCCESS"
 )
 

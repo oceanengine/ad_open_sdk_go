@@ -1,5 +1,5 @@
 /*
-API version: 1.1.79
+API version: 1.1.80
 */
 package ad_open_sdk_go
 
@@ -2675,24 +2675,8 @@ func (c *Client) ReportJointGrowthGetV30Api() *api.ReportJointGrowthGetV30ApiSer
 	return c.ApiClient.ReportJointGrowthGetV30Api
 }
 
-func (c *Client) ReportLiveRoomAnalysisGetV2Api() *api.ReportLiveRoomAnalysisGetV2ApiService {
-	return c.ApiClient.ReportLiveRoomAnalysisGetV2Api
-}
-
 func (c *Client) ReportLiveRoomAnalysisGetV30Api() *api.ReportLiveRoomAnalysisGetV30ApiService {
 	return c.ApiClient.ReportLiveRoomAnalysisGetV30Api
-}
-
-func (c *Client) ReportLiveRoomAttributeGetV2Api() *api.ReportLiveRoomAttributeGetV2ApiService {
-	return c.ApiClient.ReportLiveRoomAttributeGetV2Api
-}
-
-func (c *Client) ReportLiveRoomAudiencePortraitGetV2Api() *api.ReportLiveRoomAudiencePortraitGetV2ApiService {
-	return c.ApiClient.ReportLiveRoomAudiencePortraitGetV2Api
-}
-
-func (c *Client) ReportLiveRoomFlowCategoryGetV2Api() *api.ReportLiveRoomFlowCategoryGetV2ApiService {
-	return c.ApiClient.ReportLiveRoomFlowCategoryGetV2Api
 }
 
 func (c *Client) ReportProductAsyncTaskDownloadV30Api() *api.ReportProductAsyncTaskDownloadV30ApiService {
@@ -3805,6 +3789,18 @@ func (c *Client) ToolsEbpAppPublishV30Api() *api.ToolsEbpAppPublishV30ApiService
 
 func (c *Client) ToolsEbpAppUpdateV30Api() *api.ToolsEbpAppUpdateV30ApiService {
 	return c.ApiClient.ToolsEbpAppUpdateV30Api
+}
+
+func (c *Client) ToolsEbpAssetAuthCancelV30Api() *api.ToolsEbpAssetAuthCancelV30ApiService {
+	return c.ApiClient.ToolsEbpAssetAuthCancelV30Api
+}
+
+func (c *Client) ToolsEbpAssetAuthListV30Api() *api.ToolsEbpAssetAuthListV30ApiService {
+	return c.ApiClient.ToolsEbpAssetAuthListV30Api
+}
+
+func (c *Client) ToolsEbpAssetAuthV30Api() *api.ToolsEbpAssetAuthV30ApiService {
+	return c.ApiClient.ToolsEbpAssetAuthV30Api
 }
 
 func (c *Client) ToolsEbpMicroAppletCreateV30Api() *api.ToolsEbpMicroAppletCreateV30ApiService {

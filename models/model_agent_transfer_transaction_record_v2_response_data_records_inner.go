@@ -17,7 +17,8 @@ type AgentTransferTransactionRecordV2ResponseDataRecordsInner struct {
 	// 非赠款金额(元)
 	Cash *float64 `json:"cash,omitempty"`
 	// 授信金额额（元）
-	CreditAmount *float64 `json:"credit_amount,omitempty"`
+	CreditAmount *float64                                                 `json:"credit_amount,omitempty"`
+	DeliveryType *AgentTransferTransactionRecordV2DataRecordsDeliveryType `json:"delivery_type,omitempty"`
 	// 赠款金额(元)
 	Grants *float64 `json:"grants,omitempty"`
 	// 转账时间
@@ -63,8 +64,10 @@ type AgentTransferTransactionRecordV2ResponseDataRecordsInner struct {
 	RemitterRole *AgentTransferTransactionRecordV2DataRecordsRemitterRole `json:"remitter_role,omitempty"`
 	// 转出方二代账户ID
 	RemitterSecondAdAgentId *string `json:"remitter_second_ad_agent_id,omitempty"`
-	// 转账编号
+	// 转账单编号
 	TransferOrderSerial     *string                                                             `json:"transfer_order_serial,omitempty"`
 	TransferTargetPayStatus *AgentTransferTransactionRecordV2DataRecordsTransferTargetPayStatus `json:"transfer_target_pay_status,omitempty"`
-	TransferType            *AgentTransferTransactionRecordV2DataRecordsTransferType            `json:"transfer_type,omitempty"`
+	// 转账编号
+	TransferTargetSerial *string                                                  `json:"transfer_target_serial,omitempty"`
+	TransferType         *AgentTransferTransactionRecordV2DataRecordsTransferType `json:"transfer_type,omitempty"`
 }

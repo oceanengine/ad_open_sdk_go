@@ -15,11 +15,11 @@ type ClueFormCreateV2ValidateType string
 
 // List of clue_form_create_v2_validate_type
 const (
-	AUTO_VERIFICATION_ClueFormCreateV2ValidateType ClueFormCreateV2ValidateType = "AUTO_VERIFICATION"
-	ALL_VERIFICATION_ClueFormCreateV2ValidateType  ClueFormCreateV2ValidateType = "ALL_VERIFICATION"
 	NONE_VERIFICATION_ClueFormCreateV2ValidateType ClueFormCreateV2ValidateType = "NONE_VERIFICATION"
-	CLUE_PRIORITY_ClueFormCreateV2ValidateType     ClueFormCreateV2ValidateType = "CLUE_PRIORITY"
 	VALIDITY_PRIORITY_ClueFormCreateV2ValidateType ClueFormCreateV2ValidateType = "VALIDITY_PRIORITY"
+	ALL_VERIFICATION_ClueFormCreateV2ValidateType  ClueFormCreateV2ValidateType = "ALL_VERIFICATION"
+	AUTO_VERIFICATION_ClueFormCreateV2ValidateType ClueFormCreateV2ValidateType = "AUTO_VERIFICATION"
+	CLUE_PRIORITY_ClueFormCreateV2ValidateType     ClueFormCreateV2ValidateType = "CLUE_PRIORITY"
 )
 
 // Ptr returns reference to clue_form_create_v2_validate_type value

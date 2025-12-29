@@ -15,4 +15,6 @@ type BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfo struc
 	// 品牌分类名称
 	BrandNameList []*BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoBrandNameListInner `json:"brand_name_list,omitempty"`
 	YuntuCategory *BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoYuntuCategory        `json:"yuntu_category,omitempty"`
+	//
+	YuntuSubBrandInfo *map[string][]*BrandQueryYuntu5aBrandCategoryV30ResponseDataYuntu5aBrandCategoryInfoYuntuSubBrandInfoValueInner `json:"yuntu_sub_brand_info,omitempty"`
 }

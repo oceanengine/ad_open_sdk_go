@@ -15,8 +15,8 @@ type AudiencePackageUpdateV2InterestActionMode string
 
 // List of audience_package_update_v2_interest_action_mode
 const (
-	RECOMMEND_AudiencePackageUpdateV2InterestActionMode AudiencePackageUpdateV2InterestActionMode = "RECOMMEND"
 	CUSTOM_AudiencePackageUpdateV2InterestActionMode    AudiencePackageUpdateV2InterestActionMode = "CUSTOM"
+	RECOMMEND_AudiencePackageUpdateV2InterestActionMode AudiencePackageUpdateV2InterestActionMode = "RECOMMEND"
 	UNLIMITED_AudiencePackageUpdateV2InterestActionMode AudiencePackageUpdateV2InterestActionMode = "UNLIMITED"
 )
 

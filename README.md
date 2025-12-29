@@ -868,11 +868,7 @@ Class | Method | HTTP request
 *ReportCustomGetV30Api* | **OpenApiV30ReportCustomGetGet** | **Get** /open_api/v3.0/report/custom/get/
 *ReportJointGrowthCusGetV30Api* | **OpenApiV30ReportJointGrowthCusGetGet** | **Get** /open_api/v3.0/report/joint_growth_cus/get/
 *ReportJointGrowthGetV30Api* | **OpenApiV30ReportJointGrowthGetGet** | **Get** /open_api/v3.0/report/joint_growth/get/
-*ReportLiveRoomAnalysisGetV2Api* | **OpenApi2ReportLiveRoomAnalysisGetGet** | **Get** /open_api/2/report/live_room/analysis/get/
 *ReportLiveRoomAnalysisGetV30Api* | **OpenApiV30ReportLiveRoomAnalysisGetGet** | **Get** /open_api/v3.0/report/live_room/analysis/get/
-*ReportLiveRoomAttributeGetV2Api* | **OpenApi2ReportLiveRoomAttributeGetGet** | **Get** /open_api/2/report/live_room/attribute/get/
-*ReportLiveRoomAudiencePortraitGetV2Api* | **OpenApi2ReportLiveRoomAudiencePortraitGetGet** | **Get** /open_api/2/report/live_room/audience/portrait/get/
-*ReportLiveRoomFlowCategoryGetV2Api* | **OpenApi2ReportLiveRoomFlowCategoryGetGet** | **Get** /open_api/2/report/live_room/flow_category/get/
 *ReportProductAsyncTaskDownloadV30Api* | **OpenApiV30ReportProductAsyncTaskDownloadGet** | **Get** /open_api/v3.0/report/product/async_task/download/
 *ReportProductAsyncTaskGetV30Api* | **OpenApiV30ReportProductAsyncTaskGetPost** | **Post** /open_api/v3.0/report/product/async_task/get/
 *ReportProductDailyAsyncTaskCreateV30Api* | **OpenApiV30ReportProductDailyAsyncTaskCreatePost** | **Post** /open_api/v3.0/report/product_daily/async_task/create/
@@ -1151,6 +1147,9 @@ Class | Method | HTTP request
 *ToolsEbpAppListV30Api* | **OpenApiV30ToolsEbpAppListGet** | **Get** /open_api/v3.0/tools/ebp/app/list/
 *ToolsEbpAppPublishV30Api* | **OpenApiV30ToolsEbpAppPublishPost** | **Post** /open_api/v3.0/tools/ebp/app/publish/
 *ToolsEbpAppUpdateV30Api* | **OpenApiV30ToolsEbpAppUpdatePost** | **Post** /open_api/v3.0/tools/ebp/app/update/
+*ToolsEbpAssetAuthCancelV30Api* | **OpenApiV30ToolsEbpAssetAuthCancelPost** | **Post** /open_api/v3.0/tools/ebp/asset/auth/cancel/
+*ToolsEbpAssetAuthListV30Api* | **OpenApiV30ToolsEbpAssetAuthListGet** | **Get** /open_api/v3.0/tools/ebp/asset/auth/list/
+*ToolsEbpAssetAuthV30Api* | **OpenApiV30ToolsEbpAssetAuthPost** | **Post** /open_api/v3.0/tools/ebp/asset/auth/
 *ToolsEbpMicroAppletCreateV30Api* | **OpenApiV30ToolsEbpMicroAppletCreatePost** | **Post** /open_api/v3.0/tools/ebp/micro_applet/create/
 *ToolsEbpMicroAppletLinkListV30Api* | **OpenApiV30ToolsEbpMicroAppletLinkListGet** | **Get** /open_api/v3.0/tools/ebp/micro_applet/link/list/
 *ToolsEbpMicroAppletListV30Api* | **OpenApiV30ToolsEbpMicroAppletListGet** | **Get** /open_api/v3.0/tools/ebp/micro_applet/list/
