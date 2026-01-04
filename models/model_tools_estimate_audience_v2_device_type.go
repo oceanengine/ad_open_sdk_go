@@ -15,8 +15,8 @@ type ToolsEstimateAudienceV2DeviceType string
 
 // List of tools_estimate_audience_v2_device_type
 const (
-	MOBILE_ToolsEstimateAudienceV2DeviceType ToolsEstimateAudienceV2DeviceType = "MOBILE"
 	PAD_ToolsEstimateAudienceV2DeviceType    ToolsEstimateAudienceV2DeviceType = "PAD"
+	MOBILE_ToolsEstimateAudienceV2DeviceType ToolsEstimateAudienceV2DeviceType = "MOBILE"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_device_type value

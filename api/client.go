@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.80
+// APIClient manages communication with the Oceanengine Open Api API v1.1.81
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -1721,8 +1721,6 @@ type APIClient struct {
 
 	ToolQuickAppManagementQuickAppGetV2Api *ToolQuickAppManagementQuickAppGetV2ApiService
 
-	ToolsAbTestInfoGetV2Api *ToolsAbTestInfoGetV2ApiService
-
 	ToolsAdPreviewQrcodeGetV30Api *ToolsAdPreviewQrcodeGetV30ApiService
 
 	ToolsAdRaiseStatusGetV2Api *ToolsAdRaiseStatusGetV2ApiService
@@ -3103,7 +3101,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.SubscribeAccountsRemoveV30Api = (*SubscribeAccountsRemoveV30ApiService)(&c.common)
 	c.SuggWordsV30Api = (*SuggWordsV30ApiService)(&c.common)
 	c.ToolQuickAppManagementQuickAppGetV2Api = (*ToolQuickAppManagementQuickAppGetV2ApiService)(&c.common)
-	c.ToolsAbTestInfoGetV2Api = (*ToolsAbTestInfoGetV2ApiService)(&c.common)
 	c.ToolsAdPreviewQrcodeGetV30Api = (*ToolsAdPreviewQrcodeGetV30ApiService)(&c.common)
 	c.ToolsAdRaiseStatusGetV2Api = (*ToolsAdRaiseStatusGetV2ApiService)(&c.common)
 	c.ToolsAdminInfoV2Api = (*ToolsAdminInfoV2ApiService)(&c.common)

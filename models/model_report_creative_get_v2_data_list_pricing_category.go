@@ -17,9 +17,9 @@ type ReportCreativeGetV2DataListPricingCategory string
 const (
 	PRICING_CATEGORY_BID_ReportCreativeGetV2DataListPricingCategory               ReportCreativeGetV2DataListPricingCategory = "PRICING_CATEGORY_BID"
 	PRICING_CATEGORY_NOC_ReportCreativeGetV2DataListPricingCategory               ReportCreativeGetV2DataListPricingCategory = "PRICING_CATEGORY_NOC"
-	PRICING_CATEGORY_BRAND_ReportCreativeGetV2DataListPricingCategory             ReportCreativeGetV2DataListPricingCategory = "PRICING_CATEGORY_BRAND"
-	PRICING_CATEGORY_FREE_ReportCreativeGetV2DataListPricingCategory              ReportCreativeGetV2DataListPricingCategory = "PRICING_CATEGORY_FREE"
 	PRICING_CATEGORY_BRAND_AND_PRICING_ReportCreativeGetV2DataListPricingCategory ReportCreativeGetV2DataListPricingCategory = "PRICING_CATEGORY_BRAND_AND_PRICING"
+	PRICING_CATEGORY_FREE_ReportCreativeGetV2DataListPricingCategory              ReportCreativeGetV2DataListPricingCategory = "PRICING_CATEGORY_FREE"
+	PRICING_CATEGORY_BRAND_ReportCreativeGetV2DataListPricingCategory             ReportCreativeGetV2DataListPricingCategory = "PRICING_CATEGORY_BRAND"
 )
 
 // Ptr returns reference to report_creative_get_v2_data_list_pricing_category value

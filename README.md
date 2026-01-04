@@ -1041,7 +1041,6 @@ Class | Method | HTTP request
 *SubscribeAccountsRemoveV30Api* | **OpenApiV30SubscribeAccountsRemovePost** | **Post** /open_api/v3.0/subscribe/accounts/remove/
 *SuggWordsV30Api* | **OpenApiV30SuggWordsPost** | **Post** /open_api/v3.0/sugg_words/
 *ToolQuickAppManagementQuickAppGetV2Api* | **OpenApi2ToolQuickAppManagementQuickAppGetGet** | **Get** /open_api/2/tool/quick_app_management/quick_app/get/
-*ToolsAbTestInfoGetV2Api* | **OpenApi2ToolsAbTestInfoGetGet** | **Get** /open_api/2/tools/ab_test_info/get/
 *ToolsAdPreviewQrcodeGetV30Api* | **OpenApiV30ToolsAdPreviewQrcodeGetGet** | **Get** /open_api/v3.0/tools/ad_preview/qrcode_get/
 *ToolsAdRaiseStatusGetV2Api* | **OpenApi2ToolsAdRaiseStatusGetGet** | **Get** /open_api/2/tools/ad_raise_status/get/
 *ToolsAdminInfoV2Api* | **OpenApi2ToolsAdminInfoGet** | **Get** /open_api/2/tools/admin/info/

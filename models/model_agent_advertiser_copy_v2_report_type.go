@@ -21,6 +21,7 @@ const (
 	INCREASE_QUANTITY_QUANTITY_AgentAdvertiserCopyV2ReportType AgentAdvertiserCopyV2ReportType = "INCREASE_QUANTITY_QUANTITY"
 	ASCEND_REPORT_AgentAdvertiserCopyV2ReportType              AgentAdvertiserCopyV2ReportType = "ASCEND_REPORT"
 	DESCEND_REPORT_AgentAdvertiserCopyV2ReportType             AgentAdvertiserCopyV2ReportType = "DESCEND_REPORT"
+	NON_DESCEND_REPORT_AgentAdvertiserCopyV2ReportType         AgentAdvertiserCopyV2ReportType = "NON_DESCEND_REPORT"
 )
 
 // Ptr returns reference to agent_advertiser_copy_v2_report_type value

@@ -1,5 +1,5 @@
 /*
-API version: 1.1.80
+API version: 1.1.81
 */
 package ad_open_sdk_go
 
@@ -3365,10 +3365,6 @@ func (c *Client) SuggWordsV30Api() *api.SuggWordsV30ApiService {
 
 func (c *Client) ToolQuickAppManagementQuickAppGetV2Api() *api.ToolQuickAppManagementQuickAppGetV2ApiService {
 	return c.ApiClient.ToolQuickAppManagementQuickAppGetV2Api
-}
-
-func (c *Client) ToolsAbTestInfoGetV2Api() *api.ToolsAbTestInfoGetV2ApiService {
-	return c.ApiClient.ToolsAbTestInfoGetV2Api
 }
 
 func (c *Client) ToolsAdPreviewQrcodeGetV30Api() *api.ToolsAdPreviewQrcodeGetV30ApiService {
