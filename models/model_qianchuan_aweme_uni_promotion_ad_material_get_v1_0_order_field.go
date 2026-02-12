@@ -16,9 +16,11 @@ type QianchuanAwemeUniPromotionAdMaterialGetV10OrderField string
 // List of qianchuan_aweme_uni_promotion_ad_material_get_v1.0_order_field
 const (
 	STAT_COST_FOR_ROI2_QianchuanAwemeUniPromotionAdMaterialGetV10OrderField                          QianchuanAwemeUniPromotionAdMaterialGetV10OrderField = "stat_cost_for_roi2"
+	TOTAL_ORDER_SETTLE_AMOUNT_FOR_ROI2_1H_QianchuanAwemeUniPromotionAdMaterialGetV10OrderField       QianchuanAwemeUniPromotionAdMaterialGetV10OrderField = "total_order_settle_amount_for_roi2_1h"
 	TOTAL_PAY_ORDER_COUNT_FOR_ROI2_QianchuanAwemeUniPromotionAdMaterialGetV10OrderField              QianchuanAwemeUniPromotionAdMaterialGetV10OrderField = "total_pay_order_count_for_roi2"
 	TOTAL_PAY_ORDER_GMV_INCLUDE_COUPON_FOR_ROI2_QianchuanAwemeUniPromotionAdMaterialGetV10OrderField QianchuanAwemeUniPromotionAdMaterialGetV10OrderField = "total_pay_order_gmv_include_coupon_for_roi2"
 	TOTAL_PREPAY_AND_PAY_ORDER_ROI2_QianchuanAwemeUniPromotionAdMaterialGetV10OrderField             QianchuanAwemeUniPromotionAdMaterialGetV10OrderField = "total_prepay_and_pay_order_roi2"
+	TOTAL_PREPAY_AND_PAY_SETTLE_ROI2_1H_QianchuanAwemeUniPromotionAdMaterialGetV10OrderField         QianchuanAwemeUniPromotionAdMaterialGetV10OrderField = "total_prepay_and_pay_settle_roi2_1h"
 )
 
 // Ptr returns reference to qianchuan_aweme_uni_promotion_ad_material_get_v1.0_order_field value

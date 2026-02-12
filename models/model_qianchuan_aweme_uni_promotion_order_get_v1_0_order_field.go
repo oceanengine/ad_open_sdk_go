@@ -15,10 +15,12 @@ type QianchuanAwemeUniPromotionOrderGetV10OrderField string
 
 // List of qianchuan_aweme_uni_promotion_order_get_v1.0_order_field
 const (
-	ORDER_CREATE_TIME_QianchuanAwemeUniPromotionOrderGetV10OrderField               QianchuanAwemeUniPromotionOrderGetV10OrderField = "order_create_time"
-	STAT_COST_FOR_ROI2_QianchuanAwemeUniPromotionOrderGetV10OrderField              QianchuanAwemeUniPromotionOrderGetV10OrderField = "stat_cost_for_roi2"
-	TOTAL_PAY_ORDER_GMV_FOR_ROI2_QianchuanAwemeUniPromotionOrderGetV10OrderField    QianchuanAwemeUniPromotionOrderGetV10OrderField = "total_pay_order_gmv_for_roi2"
-	TOTAL_PREPAY_AND_PAY_ORDER_ROI2_QianchuanAwemeUniPromotionOrderGetV10OrderField QianchuanAwemeUniPromotionOrderGetV10OrderField = "total_prepay_and_pay_order_roi2"
+	ORDER_CREATE_TIME_QianchuanAwemeUniPromotionOrderGetV10OrderField                     QianchuanAwemeUniPromotionOrderGetV10OrderField = "order_create_time"
+	STAT_COST_FOR_ROI2_QianchuanAwemeUniPromotionOrderGetV10OrderField                    QianchuanAwemeUniPromotionOrderGetV10OrderField = "stat_cost_for_roi2"
+	TOTAL_ORDER_SETTLE_AMOUNT_FOR_ROI2_1H_QianchuanAwemeUniPromotionOrderGetV10OrderField QianchuanAwemeUniPromotionOrderGetV10OrderField = "total_order_settle_amount_for_roi2_1h"
+	TOTAL_PAY_ORDER_GMV_FOR_ROI2_QianchuanAwemeUniPromotionOrderGetV10OrderField          QianchuanAwemeUniPromotionOrderGetV10OrderField = "total_pay_order_gmv_for_roi2"
+	TOTAL_PREPAY_AND_PAY_ORDER_ROI2_QianchuanAwemeUniPromotionOrderGetV10OrderField       QianchuanAwemeUniPromotionOrderGetV10OrderField = "total_prepay_and_pay_order_roi2"
+	TOTAL_PREPAY_AND_PAY_SETTLE_ROI2_1H_QianchuanAwemeUniPromotionOrderGetV10OrderField   QianchuanAwemeUniPromotionOrderGetV10OrderField = "total_prepay_and_pay_settle_roi2_1h"
 )
 
 // Ptr returns reference to qianchuan_aweme_uni_promotion_order_get_v1.0_order_field value

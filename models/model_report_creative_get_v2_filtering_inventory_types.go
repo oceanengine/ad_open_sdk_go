@@ -15,21 +15,21 @@ type ReportCreativeGetV2FilteringInventoryTypes string
 
 // List of report_creative_get_v2_filtering_inventory_types
 const (
-	INVENTORY_VIDEO_FEED_ReportCreativeGetV2FilteringInventoryTypes   ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_VIDEO_FEED"
-	INVENTORY_FURNISH_ReportCreativeGetV2FilteringInventoryTypes      ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_FURNISH"
-	INVENTORY_UNION_SLOT_ReportCreativeGetV2FilteringInventoryTypes   ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_UNION_SLOT"
 	INVENTORY_FACE_U_ReportCreativeGetV2FilteringInventoryTypes       ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_FACE_U"
-	INVENTORY_STUDY_ReportCreativeGetV2FilteringInventoryTypes        ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_STUDY"
+	INVENTORY_UNIVERSAL_ReportCreativeGetV2FilteringInventoryTypes    ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_UNIVERSAL"
 	UNION_BOUTIQUE_GAME_ReportCreativeGetV2FilteringInventoryTypes    ReportCreativeGetV2FilteringInventoryTypes = "UNION_BOUTIQUE_GAME"
 	INVENTORY_FEED_ReportCreativeGetV2FilteringInventoryTypes         ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_FEED"
+	INVENTORY_AWEME_FEED_ReportCreativeGetV2FilteringInventoryTypes   ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_AWEME_FEED"
+	INVENTORY_STUDY_ReportCreativeGetV2FilteringInventoryTypes        ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_STUDY"
 	INVENTORY_AUTOMOBILE_ReportCreativeGetV2FilteringInventoryTypes   ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_AUTOMOBILE"
 	INVENTORY_PIPIXIA_ReportCreativeGetV2FilteringInventoryTypes      ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_PIPIXIA"
 	INVENTORY_BEAUTY_ReportCreativeGetV2FilteringInventoryTypes       ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_BEAUTY"
 	INVENTORY_SEARCH_ReportCreativeGetV2FilteringInventoryTypes       ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_SEARCH"
 	INVENTORY_HOTSOON_FEED_ReportCreativeGetV2FilteringInventoryTypes ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_HOTSOON_FEED"
-	INVENTORY_UNIVERSAL_ReportCreativeGetV2FilteringInventoryTypes    ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_UNIVERSAL"
 	INVENTORY_TOMATO_NOVEL_ReportCreativeGetV2FilteringInventoryTypes ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_TOMATO_NOVEL"
-	INVENTORY_AWEME_FEED_ReportCreativeGetV2FilteringInventoryTypes   ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_AWEME_FEED"
+	INVENTORY_VIDEO_FEED_ReportCreativeGetV2FilteringInventoryTypes   ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_VIDEO_FEED"
+	INVENTORY_FURNISH_ReportCreativeGetV2FilteringInventoryTypes      ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_FURNISH"
+	INVENTORY_UNION_SLOT_ReportCreativeGetV2FilteringInventoryTypes   ReportCreativeGetV2FilteringInventoryTypes = "INVENTORY_UNION_SLOT"
 )
 
 // Ptr returns reference to report_creative_get_v2_filtering_inventory_types value

@@ -1,5 +1,5 @@
 /*
-API version: 1.1.81
+API version: 1.1.82
 */
 package ad_open_sdk_go
 
@@ -367,10 +367,6 @@ func (c *Client) BrandAdCancelDeleteV30Api() *api.BrandAdCancelDeleteV30ApiServi
 	return c.ApiClient.BrandAdCancelDeleteV30Api
 }
 
-func (c *Client) BrandAdCreateV30Api() *api.BrandAdCreateV30ApiService {
-	return c.ApiClient.BrandAdCreateV30Api
-}
-
 func (c *Client) BrandAdDeleteV30Api() *api.BrandAdDeleteV30ApiService {
 	return c.ApiClient.BrandAdDeleteV30Api
 }
@@ -397,10 +393,6 @@ func (c *Client) BrandAwemeListV30Api() *api.BrandAwemeListV30ApiService {
 
 func (c *Client) BrandCampaignAddV30Api() *api.BrandCampaignAddV30ApiService {
 	return c.ApiClient.BrandCampaignAddV30Api
-}
-
-func (c *Client) BrandCampaignCreateV30Api() *api.BrandCampaignCreateV30ApiService {
-	return c.ApiClient.BrandCampaignCreateV30Api
 }
 
 func (c *Client) BrandCampaignDeleteV30Api() *api.BrandCampaignDeleteV30ApiService {
@@ -669,6 +661,10 @@ func (c *Client) ChargeListV30Api() *api.ChargeListV30ApiService {
 
 func (c *Client) ChargeResultV30Api() *api.ChargeResultV30ApiService {
 	return c.ApiClient.ChargeResultV30Api
+}
+
+func (c *Client) ChargeVerifyGetV30Api() *api.ChargeVerifyGetV30ApiService {
+	return c.ApiClient.ChargeVerifyGetV30Api
 }
 
 func (c *Client) ClueCaCreateV2Api() *api.ClueCaCreateV2ApiService {
@@ -991,8 +987,8 @@ func (c *Client) DpaAssetsDetailReadV2Api() *api.DpaAssetsDetailReadV2ApiService
 	return c.ApiClient.DpaAssetsDetailReadV2Api
 }
 
-func (c *Client) DpaAssetsListV2Api() *api.DpaAssetsListV2ApiService {
-	return c.ApiClient.DpaAssetsListV2Api
+func (c *Client) DpaBrandFuzzyGetV30Api() *api.DpaBrandFuzzyGetV30ApiService {
+	return c.ApiClient.DpaBrandFuzzyGetV30Api
 }
 
 func (c *Client) DpaCategoryGetV2Api() *api.DpaCategoryGetV2ApiService {
@@ -1399,6 +1395,10 @@ func (c *Client) FileVideoUploadTaskListV2Api() *api.FileVideoUploadTaskListV2Ap
 	return c.ApiClient.FileVideoUploadTaskListV2Api
 }
 
+func (c *Client) FixRemittanceCodeListGetV30Api() *api.FixRemittanceCodeListGetV30ApiService {
+	return c.ApiClient.FixRemittanceCodeListGetV30Api
+}
+
 func (c *Client) FundSharedWalletBalanceGetV2Api() *api.FundSharedWalletBalanceGetV2ApiService {
 	return c.ApiClient.FundSharedWalletBalanceGetV2Api
 }
@@ -1713,6 +1713,14 @@ func (c *Client) OpenMaterialAuditProSubmitV30Api() *api.OpenMaterialAuditProSub
 
 func (c *Client) PenaltyTaskGetV30Api() *api.PenaltyTaskGetV30ApiService {
 	return c.ApiClient.PenaltyTaskGetV30Api
+}
+
+func (c *Client) PrepayChargeGenerateFixRemiattanceCodeCreateV30Api() *api.PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService {
+	return c.ApiClient.PrepayChargeGenerateFixRemiattanceCodeCreateV30Api
+}
+
+func (c *Client) PrepayChargeGenerateRemittanceCodeCreateV30Api() *api.PrepayChargeGenerateRemittanceCodeCreateV30ApiService {
+	return c.ApiClient.PrepayChargeGenerateRemittanceCodeCreateV30Api
 }
 
 func (c *Client) ProjectBudgetUpdateV30Api() *api.ProjectBudgetUpdateV30ApiService {
@@ -2567,6 +2575,10 @@ func (c *Client) RejectMaterialAiRepairGetV30Api() *api.RejectMaterialAiRepairGe
 	return c.ApiClient.RejectMaterialAiRepairGetV30Api
 }
 
+func (c *Client) RemittanceCodeListGetV30Api() *api.RemittanceCodeListGetV30ApiService {
+	return c.ApiClient.RemittanceCodeListGetV30Api
+}
+
 func (c *Client) RemittanceCodeListV30Api() *api.RemittanceCodeListV30ApiService {
 	return c.ApiClient.RemittanceCodeListV30Api
 }
@@ -2967,6 +2979,14 @@ func (c *Client) StarComponentUpdateLinkV2Api() *api.StarComponentUpdateLinkV2Ap
 	return c.ApiClient.StarComponentUpdateLinkV2Api
 }
 
+func (c *Client) StarCopyrightCreateV2Api() *api.StarCopyrightCreateV2ApiService {
+	return c.ApiClient.StarCopyrightCreateV2Api
+}
+
+func (c *Client) StarCopyrightGetV2Api() *api.StarCopyrightGetV2ApiService {
+	return c.ApiClient.StarCopyrightGetV2Api
+}
+
 func (c *Client) StarCreateProjectV2Api() *api.StarCreateProjectV2ApiService {
 	return c.ApiClient.StarCreateProjectV2Api
 }
@@ -3363,6 +3383,10 @@ func (c *Client) SuggWordsV30Api() *api.SuggWordsV30ApiService {
 	return c.ApiClient.SuggWordsV30Api
 }
 
+func (c *Client) SvipChargeVerifyGetV30Api() *api.SvipChargeVerifyGetV30ApiService {
+	return c.ApiClient.SvipChargeVerifyGetV30Api
+}
+
 func (c *Client) ToolQuickAppManagementQuickAppGetV2Api() *api.ToolQuickAppManagementQuickAppGetV2ApiService {
 	return c.ApiClient.ToolQuickAppManagementQuickAppGetV2Api
 }
@@ -3377,6 +3401,14 @@ func (c *Client) ToolsAdRaiseStatusGetV2Api() *api.ToolsAdRaiseStatusGetV2ApiSer
 
 func (c *Client) ToolsAdminInfoV2Api() *api.ToolsAdminInfoV2ApiService {
 	return c.ApiClient.ToolsAdminInfoV2Api
+}
+
+func (c *Client) ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Api() *api.ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ApiService {
+	return c.ApiClient.ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Api
+}
+
+func (c *Client) ToolsAdvertiserDiagnosisSuggestionGetV30Api() *api.ToolsAdvertiserDiagnosisSuggestionGetV30ApiService {
+	return c.ApiClient.ToolsAdvertiserDiagnosisSuggestionGetV30Api
 }
 
 func (c *Client) ToolsAdvertiserStoreSearchV2Api() *api.ToolsAdvertiserStoreSearchV2ApiService {
@@ -3799,6 +3831,18 @@ func (c *Client) ToolsEbpAssetAuthV30Api() *api.ToolsEbpAssetAuthV30ApiService {
 	return c.ApiClient.ToolsEbpAssetAuthV30Api
 }
 
+func (c *Client) ToolsEbpMaterialAuthCreateV30Api() *api.ToolsEbpMaterialAuthCreateV30ApiService {
+	return c.ApiClient.ToolsEbpMaterialAuthCreateV30Api
+}
+
+func (c *Client) ToolsEbpMaterialAuthDeleteV30Api() *api.ToolsEbpMaterialAuthDeleteV30ApiService {
+	return c.ApiClient.ToolsEbpMaterialAuthDeleteV30Api
+}
+
+func (c *Client) ToolsEbpMaterialAuthListV30Api() *api.ToolsEbpMaterialAuthListV30ApiService {
+	return c.ApiClient.ToolsEbpMaterialAuthListV30Api
+}
+
 func (c *Client) ToolsEbpMicroAppletCreateV30Api() *api.ToolsEbpMicroAppletCreateV30ApiService {
 	return c.ApiClient.ToolsEbpMicroAppletCreateV30Api
 }
@@ -3829,6 +3873,26 @@ func (c *Client) ToolsEbpMicroGameListV30Api() *api.ToolsEbpMicroGameListV30ApiS
 
 func (c *Client) ToolsEbpMicroGameUpdateV30Api() *api.ToolsEbpMicroGameUpdateV30ApiService {
 	return c.ApiClient.ToolsEbpMicroGameUpdateV30Api
+}
+
+func (c *Client) ToolsEbpSubjectListV30Api() *api.ToolsEbpSubjectListV30ApiService {
+	return c.ApiClient.ToolsEbpSubjectListV30Api
+}
+
+func (c *Client) ToolsEbpVideoAttributesListV30Api() *api.ToolsEbpVideoAttributesListV30ApiService {
+	return c.ApiClient.ToolsEbpVideoAttributesListV30Api
+}
+
+func (c *Client) ToolsEbpVideoDeleteV30Api() *api.ToolsEbpVideoDeleteV30ApiService {
+	return c.ApiClient.ToolsEbpVideoDeleteV30Api
+}
+
+func (c *Client) ToolsEbpVideoUpdateV30Api() *api.ToolsEbpVideoUpdateV30ApiService {
+	return c.ApiClient.ToolsEbpVideoUpdateV30Api
+}
+
+func (c *Client) ToolsEbpVideoUploadV30Api() *api.ToolsEbpVideoUploadV30ApiService {
+	return c.ApiClient.ToolsEbpVideoUploadV30Api
 }
 
 func (c *Client) ToolsEbpWechatAppletCreateV30Api() *api.ToolsEbpWechatAppletCreateV30ApiService {
@@ -4309,10 +4373,6 @@ func (c *Client) ToolsTaskRaiseOptimizationIdsGetV2Api() *api.ToolsTaskRaiseOpti
 
 func (c *Client) ToolsTaskRaiseStatusStopV2Api() *api.ToolsTaskRaiseStatusStopV2ApiService {
 	return c.ApiClient.ToolsTaskRaiseStatusStopV2Api
-}
-
-func (c *Client) ToolsThirdSiteCreateV2Api() *api.ToolsThirdSiteCreateV2ApiService {
-	return c.ApiClient.ToolsThirdSiteCreateV2Api
 }
 
 func (c *Client) ToolsThirdSiteDeleteV2Api() *api.ToolsThirdSiteDeleteV2ApiService {

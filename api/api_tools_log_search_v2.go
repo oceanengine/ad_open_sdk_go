@@ -26,20 +26,15 @@ type ApiOpenApi2ToolsLogSearchGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsLogSearchV2ApiService
 	advertiserId *int64
-	endTime      **string
 	objectId     *[]int64
+	startTime    *string
+	endTime      *string
 	page         *int64
 	pageSize     *int64
-	startTime    **string
 }
 
 func (r *ApiOpenApi2ToolsLogSearchGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsLogSearchGetRequest {
 	r.advertiserId = &advertiserId
-	return r
-}
-
-func (r *ApiOpenApi2ToolsLogSearchGetRequest) EndTime(endTime *string) *ApiOpenApi2ToolsLogSearchGetRequest {
-	r.endTime = &endTime
 	return r
 }
 
@@ -48,18 +43,25 @@ func (r *ApiOpenApi2ToolsLogSearchGetRequest) ObjectId(objectId []int64) *ApiOpe
 	return r
 }
 
+func (r *ApiOpenApi2ToolsLogSearchGetRequest) StartTime(startTime string) *ApiOpenApi2ToolsLogSearchGetRequest {
+	r.startTime = &startTime
+	return r
+}
+
+func (r *ApiOpenApi2ToolsLogSearchGetRequest) EndTime(endTime string) *ApiOpenApi2ToolsLogSearchGetRequest {
+	r.endTime = &endTime
+	return r
+}
+
+// 页码
 func (r *ApiOpenApi2ToolsLogSearchGetRequest) Page(page int64) *ApiOpenApi2ToolsLogSearchGetRequest {
 	r.page = &page
 	return r
 }
 
+// 页面大小
 func (r *ApiOpenApi2ToolsLogSearchGetRequest) PageSize(pageSize int64) *ApiOpenApi2ToolsLogSearchGetRequest {
 	r.pageSize = &pageSize
-	return r
-}
-
-func (r *ApiOpenApi2ToolsLogSearchGetRequest) StartTime(startTime *string) *ApiOpenApi2ToolsLogSearchGetRequest {
-	r.startTime = &startTime
 	return r
 }
 
@@ -115,24 +117,25 @@ func (a *ToolsLogSearchV2ApiService) getExecute(r *ApiOpenApi2ToolsLogSearchGetR
 	formFiles = make(map[string]*FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
+	if r.advertiserId == nil {
+		return localVarReturnValue, nil, ReportError("advertiserId is required and must be specified")
+	}
 
-	if r.advertiserId != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
+	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
+	if r.objectId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "object_id", r.objectId)
+	}
+	if r.startTime != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "start_time", r.startTime)
 	}
 	if r.endTime != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "end_time", r.endTime)
-	}
-	if r.objectId != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "object_id", r.objectId)
 	}
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
-	}
-	if r.startTime != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "start_time", r.startTime)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

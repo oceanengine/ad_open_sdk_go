@@ -15,8 +15,9 @@ type PromotionListV30DataListMaterialsType string
 
 // List of promotion_list_v3.0_data_list_materials_type
 const (
-	LIVE_MATERIALS_PromotionListV30DataListMaterialsType      PromotionListV30DataListMaterialsType = "LIVE_MATERIALS"
-	PROMOTION_MATERIALS_PromotionListV30DataListMaterialsType PromotionListV30DataListMaterialsType = "PROMOTION_MATERIALS"
+	LIVE_MATERIALS_PromotionListV30DataListMaterialsType               PromotionListV30DataListMaterialsType = "LIVE_MATERIALS"
+	LIVE_MIX_PROMOTION_MATERIALS_PromotionListV30DataListMaterialsType PromotionListV30DataListMaterialsType = "LIVE_MIX_PROMOTION_MATERIALS"
+	PROMOTION_MATERIALS_PromotionListV30DataListMaterialsType          PromotionListV30DataListMaterialsType = "PROMOTION_MATERIALS"
 )
 
 // Ptr returns reference to promotion_list_v3.0_data_list_materials_type value

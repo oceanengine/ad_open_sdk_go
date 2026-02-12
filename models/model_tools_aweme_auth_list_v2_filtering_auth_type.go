@@ -18,6 +18,7 @@ const (
 	AWEME_ACCOUNT_ToolsAwemeAuthListV2FilteringAuthType  ToolsAwemeAuthListV2FilteringAuthType = "AWEME_ACCOUNT"
 	AWEME_HOMEPAGE_ToolsAwemeAuthListV2FilteringAuthType ToolsAwemeAuthListV2FilteringAuthType = "AWEME_HOMEPAGE"
 	LIVE_ACCOUNT_ToolsAwemeAuthListV2FilteringAuthType   ToolsAwemeAuthListV2FilteringAuthType = "LIVE_ACCOUNT"
+	UNI_PROMOTION_ToolsAwemeAuthListV2FilteringAuthType  ToolsAwemeAuthListV2FilteringAuthType = "UNI_PROMOTION"
 	VIDEO_ITEM_ToolsAwemeAuthListV2FilteringAuthType     ToolsAwemeAuthListV2FilteringAuthType = "VIDEO_ITEM"
 )
 

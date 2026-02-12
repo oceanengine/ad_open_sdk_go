@@ -13,8 +13,6 @@ package models
 // BrandOrderUpdateV30RequestAudienceInfo 定向
 type BrandOrderUpdateV30RequestAudienceInfo struct {
 	Ac *BrandOrderUpdateV30AudienceInfoAc `json:"ac,omitempty"`
-	// 兴趣
-	ActionCategories []int64 `json:"action_categories,omitempty"`
 	// 年龄
 	Ages            []*BrandOrderUpdateV30AudienceInfoAges                 `json:"ages,omitempty"`
 	DistrictInfo    *BrandOrderUpdateV30RequestAudienceInfoDistrictInfo    `json:"district_info,omitempty"`

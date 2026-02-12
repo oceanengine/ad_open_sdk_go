@@ -23,4 +23,6 @@ type QianchuanAwemeUniPromotionOrderGetV10ResponseDataOrderListInner struct {
 	ProductInfo *QianchuanAwemeUniPromotionOrderGetV10ResponseDataOrderListInnerProductInfo `json:"product_info,omitempty"`
 	StatsInfo   *QianchuanAwemeUniPromotionOrderGetV10ResponseDataOrderListInnerStatsInfo   `json:"stats_info,omitempty"`
 	Status      *QianchuanAwemeUniPromotionOrderGetV10DataOrderListStatus                   `json:"status,omitempty"`
+	// 是否支持续费追投
+	SupportAddBudget *bool `json:"support_add_budget,omitempty"`
 }

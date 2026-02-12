@@ -15,19 +15,22 @@ type LocalProjectListV30DataProjectListExternalAction string
 
 // List of local_project_list_v3.0_data_project_list_external_action
 const (
-	CLUE_ACQUISITION_LocalProjectListV30DataProjectListExternalAction      LocalProjectListV30DataProjectListExternalAction = "CLUE_ACQUISITION"
-	CLUE_CONFIRM_LocalProjectListV30DataProjectListExternalAction          LocalProjectListV30DataProjectListExternalAction = "CLUE_CONFIRM"
-	CLUE_HIGH_INTENTION_LocalProjectListV30DataProjectListExternalAction   LocalProjectListV30DataProjectListExternalAction = "CLUE_HIGH_INTENTION"
-	FOLLOW_ACTION_LocalProjectListV30DataProjectListExternalAction         LocalProjectListV30DataProjectListExternalAction = "FOLLOW_ACTION"
-	LIVE_ENGAGEMENT_LocalProjectListV30DataProjectListExternalAction       LocalProjectListV30DataProjectListExternalAction = "LIVE_ENGAGEMENT"
-	LIVE_ENTER_ACTION_LocalProjectListV30DataProjectListExternalAction     LocalProjectListV30DataProjectListExternalAction = "LIVE_ENTER_ACTION"
-	LIVE_OTO_CLICK_LocalProjectListV30DataProjectListExternalAction        LocalProjectListV30DataProjectListExternalAction = "LIVE_OTO_CLICK"
-	LIVE_OTO_GROUP_BUYING_LocalProjectListV30DataProjectListExternalAction LocalProjectListV30DataProjectListExternalAction = "LIVE_OTO_GROUP_BUYING"
-	LIVE_STAY_TIME_LocalProjectListV30DataProjectListExternalAction        LocalProjectListV30DataProjectListExternalAction = "LIVE_STAY_TIME"
-	NATIVE_ACTION_LocalProjectListV30DataProjectListExternalAction         LocalProjectListV30DataProjectListExternalAction = "NATIVE_ACTION"
-	POI_RECOMMEND_LocalProjectListV30DataProjectListExternalAction         LocalProjectListV30DataProjectListExternalAction = "POI_RECOMMEND"
-	PRIVATE_MESSAGE_LocalProjectListV30DataProjectListExternalAction       LocalProjectListV30DataProjectListExternalAction = "PRIVATE_MESSAGE"
-	SHOW_LocalProjectListV30DataProjectListExternalAction                  LocalProjectListV30DataProjectListExternalAction = "SHOW"
+	CLUE_ACQUISITION_LocalProjectListV30DataProjectListExternalAction           LocalProjectListV30DataProjectListExternalAction = "CLUE_ACQUISITION"
+	CLUE_CONFIRM_LocalProjectListV30DataProjectListExternalAction               LocalProjectListV30DataProjectListExternalAction = "CLUE_CONFIRM"
+	CLUE_HIGH_INTENTION_LocalProjectListV30DataProjectListExternalAction        LocalProjectListV30DataProjectListExternalAction = "CLUE_HIGH_INTENTION"
+	FOLLOW_ACTION_LocalProjectListV30DataProjectListExternalAction              LocalProjectListV30DataProjectListExternalAction = "FOLLOW_ACTION"
+	INTENTION_CLUE_ACQUISITION_LocalProjectListV30DataProjectListExternalAction LocalProjectListV30DataProjectListExternalAction = "INTENTION_CLUE_ACQUISITION"
+	LIVE_ENGAGEMENT_LocalProjectListV30DataProjectListExternalAction            LocalProjectListV30DataProjectListExternalAction = "LIVE_ENGAGEMENT"
+	LIVE_ENTER_ACTION_LocalProjectListV30DataProjectListExternalAction          LocalProjectListV30DataProjectListExternalAction = "LIVE_ENTER_ACTION"
+	LIVE_OTO_CLICK_LocalProjectListV30DataProjectListExternalAction             LocalProjectListV30DataProjectListExternalAction = "LIVE_OTO_CLICK"
+	LIVE_OTO_GROUP_BUYING_LocalProjectListV30DataProjectListExternalAction      LocalProjectListV30DataProjectListExternalAction = "LIVE_OTO_GROUP_BUYING"
+	LIVE_STAY_TIME_LocalProjectListV30DataProjectListExternalAction             LocalProjectListV30DataProjectListExternalAction = "LIVE_STAY_TIME"
+	MESSAGE_INTENTION_CLUE_LocalProjectListV30DataProjectListExternalAction     LocalProjectListV30DataProjectListExternalAction = "MESSAGE_INTENTION_CLUE"
+	NATIVE_ACTION_LocalProjectListV30DataProjectListExternalAction              LocalProjectListV30DataProjectListExternalAction = "NATIVE_ACTION"
+	OTO_PAY_LocalProjectListV30DataProjectListExternalAction                    LocalProjectListV30DataProjectListExternalAction = "OTO_PAY"
+	POI_RECOMMEND_LocalProjectListV30DataProjectListExternalAction              LocalProjectListV30DataProjectListExternalAction = "POI_RECOMMEND"
+	PRIVATE_MESSAGE_LocalProjectListV30DataProjectListExternalAction            LocalProjectListV30DataProjectListExternalAction = "PRIVATE_MESSAGE"
+	SHOW_LocalProjectListV30DataProjectListExternalAction                       LocalProjectListV30DataProjectListExternalAction = "SHOW"
 )
 
 // Ptr returns reference to local_project_list_v3.0_data_project_list_external_action value

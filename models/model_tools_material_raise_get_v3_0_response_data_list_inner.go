@@ -15,6 +15,8 @@ type ToolsMaterialRaiseGetV30ResponseDataListInner struct {
 	//
 	MaterialIds []int64 `json:"material_ids,omitempty"`
 	//
+	MaterialList []*ToolsMaterialRaiseGetV30ResponseDataListInnerMaterialListInner `json:"material_list,omitempty"`
+	//
 	ProjectId *int64                                                  `json:"project_id,omitempty"`
 	RaiseInfo *ToolsMaterialRaiseGetV30ResponseDataListInnerRaiseInfo `json:"raise_info,omitempty"`
 	//

@@ -36,6 +36,10 @@ type StardeliveryTaskListV30ResponseDataListInner struct {
 	//
 	StarTaskBid *float64 `json:"star_task_bid,omitempty"`
 	//
+	StarTaskBidAndroid *float64 `json:"star_task_bid_android,omitempty"`
+	//
+	StarTaskBidIos *float64 `json:"star_task_bid_ios,omitempty"`
+	//
 	StarTaskBudget *float64 `json:"star_task_budget,omitempty"`
 	//
 	StarTaskCanDeliveryItemCount *int64 `json:"star_task_can_delivery_item_count,omitempty"`

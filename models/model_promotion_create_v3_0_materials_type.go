@@ -15,8 +15,9 @@ type PromotionCreateV30MaterialsType string
 
 // List of promotion_create_v3.0_materials_type
 const (
-	LIVE_MATERIALS_PromotionCreateV30MaterialsType      PromotionCreateV30MaterialsType = "LIVE_MATERIALS"
-	PROMOTION_MATERIALS_PromotionCreateV30MaterialsType PromotionCreateV30MaterialsType = "PROMOTION_MATERIALS"
+	LIVE_MATERIALS_PromotionCreateV30MaterialsType               PromotionCreateV30MaterialsType = "LIVE_MATERIALS"
+	LIVE_MIX_PROMOTION_MATERIALS_PromotionCreateV30MaterialsType PromotionCreateV30MaterialsType = "LIVE_MIX_PROMOTION_MATERIALS"
+	PROMOTION_MATERIALS_PromotionCreateV30MaterialsType          PromotionCreateV30MaterialsType = "PROMOTION_MATERIALS"
 )
 
 // Ptr returns reference to promotion_create_v3.0_materials_type value

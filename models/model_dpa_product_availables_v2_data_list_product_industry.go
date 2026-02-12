@@ -48,6 +48,7 @@ const (
 	OTHER_DpaProductAvailablesV2DataListProductIndustry               DpaProductAvailablesV2DataListProductIndustry = "OTHER"
 	PLAYLET_DpaProductAvailablesV2DataListProductIndustry             DpaProductAvailablesV2DataListProductIndustry = "PLAYLET"
 	RECRUITMENT_DpaProductAvailablesV2DataListProductIndustry         DpaProductAvailablesV2DataListProductIndustry = "RECRUITMENT"
+	SHORTANDANIMEPLAY_DpaProductAvailablesV2DataListProductIndustry   DpaProductAvailablesV2DataListProductIndustry = "SHORTANDANIMEPLAY"
 	SPECIALMAKEUP_DpaProductAvailablesV2DataListProductIndustry       DpaProductAvailablesV2DataListProductIndustry = "SPECIALMAKEUP"
 	TOUR_HOTEL_DpaProductAvailablesV2DataListProductIndustry          DpaProductAvailablesV2DataListProductIndustry = "TOUR_HOTEL"
 	TOUR_ROUTE_DpaProductAvailablesV2DataListProductIndustry          DpaProductAvailablesV2DataListProductIndustry = "TOUR_ROUTE"

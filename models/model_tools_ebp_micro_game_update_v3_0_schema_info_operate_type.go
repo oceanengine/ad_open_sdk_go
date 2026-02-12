@@ -15,7 +15,6 @@ type ToolsEbpMicroGameUpdateV30SchemaInfoOperateType string
 
 // List of tools_ebp_micro_game_update_v3.0_schema_info_operate_type
 const (
-	CREATE_ToolsEbpMicroGameUpdateV30SchemaInfoOperateType ToolsEbpMicroGameUpdateV30SchemaInfoOperateType = "CREATE"
 	UPDATE_ToolsEbpMicroGameUpdateV30SchemaInfoOperateType ToolsEbpMicroGameUpdateV30SchemaInfoOperateType = "UPDATE"
 	DELETE_ToolsEbpMicroGameUpdateV30SchemaInfoOperateType ToolsEbpMicroGameUpdateV30SchemaInfoOperateType = "DELETE"
 )

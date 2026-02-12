@@ -23,12 +23,12 @@ import (
 )
 
 type ApiOpenApi2ToolsLogSearchGetRequestExample struct {
-	AdvertiserId int64   `json:"advertiser_id,omitempty"`
-	EndTime      *string `json:"end_time,omitempty"`
+	AdvertiserId int64   `json:"advertiser_id"`
 	ObjectId     []int64 `json:"object_id,omitempty"`
+	StartTime    string  `json:"start_time,omitempty"`
+	EndTime      string  `json:"end_time,omitempty"`
 	Page         int64   `json:"page,omitempty"`
 	PageSize     int64   `json:"page_size,omitempty"`
-	StartTime    *string `json:"start_time,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/log_search/ Get
@@ -50,7 +50,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsLogSearchV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).EndTime(request.EndTime).ObjectId(request.ObjectId).Page(request.Page).PageSize(request.PageSize).StartTime(request.StartTime).
+		AdvertiserId(request.AdvertiserId).ObjectId(request.ObjectId).StartTime(request.StartTime).EndTime(request.EndTime).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

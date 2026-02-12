@@ -33,7 +33,8 @@ type PromotionUpdateV30Request struct {
 	FirstRoiGoal     *float64                            `json:"first_roi_goal,omitempty"`
 	IsCommentDisable *PromotionUpdateV30IsCommentDisable `json:"is_comment_disable,omitempty"`
 	//
-	Keywords []*PromotionUpdateV30RequestKeywordsInner `json:"keywords,omitempty"`
+	Keywords      []*PromotionUpdateV30RequestKeywordsInner `json:"keywords,omitempty"`
+	MaterialsType *PromotionUpdateV30MaterialsType          `json:"materials_type,omitempty"`
 	//
 	Name          string                                  `json:"name"`
 	NativeSetting *PromotionUpdateV30RequestNativeSetting `json:"native_setting,omitempty"`

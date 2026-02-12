@@ -15,8 +15,8 @@ type CampaignGetV2DataListCampaignType string
 
 // List of campaign_get_v2_data_list_campaign_type
 const (
-	SEARCH_CampaignGetV2DataListCampaignType  CampaignGetV2DataListCampaignType = "SEARCH"
 	FEED_CampaignGetV2DataListCampaignType    CampaignGetV2DataListCampaignType = "FEED"
+	SEARCH_CampaignGetV2DataListCampaignType  CampaignGetV2DataListCampaignType = "SEARCH"
 	CONTENT_CampaignGetV2DataListCampaignType CampaignGetV2DataListCampaignType = "CONTENT"
 )
 

@@ -29,6 +29,8 @@ type LocalReportAccountGetV30ResponseDataDataListInner struct {
 	//
 	AttributionIntentionMessageClueCnt *int64 `json:"attribution_intention_message_clue_cnt,omitempty"`
 	//
+	AttributionIntentionMessageClueCost *float64 `json:"attribution_intention_message_clue_cost,omitempty"`
+	//
 	AttributionIntentionPhoneCnt *int64 `json:"attribution_intention_phone_cnt,omitempty"`
 	//
 	AttributionMessageActionCnt *int64 `json:"attribution_message_action_cnt,omitempty"`

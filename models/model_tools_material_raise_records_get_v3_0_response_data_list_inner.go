@@ -18,4 +18,6 @@ type ToolsMaterialRaiseRecordsGetV30ResponseDataListInner struct {
 	// 起量任务ID
 	RecordId *int64                                         `json:"record_id,omitempty"`
 	Status   *ToolsMaterialRaiseRecordsGetV30DataListStatus `json:"status,omitempty"`
+	// 起量版本
+	Version *int64 `json:"version,omitempty"`
 }

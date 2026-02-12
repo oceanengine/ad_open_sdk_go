@@ -70,6 +70,10 @@ type StardeliveryTaskDetailV30ResponseData struct {
 	StarTaskBanReasonDetail *string `json:"star_task_ban_reason_detail,omitempty"`
 	// 任务出价（元）
 	StarTaskBid *float64 `json:"star_task_bid,omitempty"`
+	// 安卓出价（元）
+	StarTaskBidAndroid *float64 `json:"star_task_bid_android,omitempty"`
+	// IOS出价（元）
+	StarTaskBidIos *float64 `json:"star_task_bid_ios,omitempty"`
 	// 任务预算（元），只能是10000-1000000元之间的整数
 	StarTaskBudget *float64 `json:"star_task_budget,omitempty"`
 	// 任务创建时间，格式YYYY-MM-DD

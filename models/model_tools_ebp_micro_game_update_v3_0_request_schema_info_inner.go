@@ -15,8 +15,12 @@ type ToolsEbpMicroGameUpdateV30RequestSchemaInfoInner struct {
 	//
 	Id *int64 `json:"id,omitempty"`
 	//
-	Link        string                                           `json:"link"`
-	OperateType *ToolsEbpMicroGameUpdateV30SchemaInfoOperateType `json:"operate_type,omitempty"`
+	Link        *string                                         `json:"link,omitempty"`
+	OperateType ToolsEbpMicroGameUpdateV30SchemaInfoOperateType `json:"operate_type"`
 	//
 	Remark string `json:"remark"`
+	//
+	StartPage *string `json:"start_page,omitempty"`
+	//
+	StartParam *string `json:"start_param,omitempty"`
 }

@@ -20,6 +20,7 @@ const (
 	CONTENTSERVICE_BrandToolQueryPublishPriceV30AdForm            BrandToolQueryPublishPriceV30AdForm = "CONTENTSERVICE"
 	CONTENTSERVICE_NO_GRASS_BrandToolQueryPublishPriceV30AdForm   BrandToolQueryPublishPriceV30AdForm = "CONTENTSERVICE_NO_GRASS"
 	FEED_BrandToolQueryPublishPriceV30AdForm                      BrandToolQueryPublishPriceV30AdForm = "FEED"
+	NEW_PLANT_GRASS_BrandToolQueryPublishPriceV30AdForm           BrandToolQueryPublishPriceV30AdForm = "NEW_PLANT_GRASS"
 )
 
 // Ptr returns reference to brand_tool_query_publish_price_v3.0_ad_form value

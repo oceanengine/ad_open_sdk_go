@@ -20,6 +20,7 @@ const (
 	CONTENTSERVICE_BrandPolicyListV30AdForm            BrandPolicyListV30AdForm = "CONTENTSERVICE"
 	CONTENTSERVICE_NO_GRASS_BrandPolicyListV30AdForm   BrandPolicyListV30AdForm = "CONTENTSERVICE_NO_GRASS"
 	FEED_BrandPolicyListV30AdForm                      BrandPolicyListV30AdForm = "FEED"
+	NEW_PLANT_GRASS_BrandPolicyListV30AdForm           BrandPolicyListV30AdForm = "NEW_PLANT_GRASS"
 )
 
 // Ptr returns reference to brand_policy_list_v3.0_ad_form value

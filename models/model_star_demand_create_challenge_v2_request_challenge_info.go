@@ -20,6 +20,8 @@ type StarDemandCreateChallengeV2RequestChallengeInfo struct {
 	AuthorTaskName string `json:"author_task_name"`
 	// 总预算，单位元 正整数，最低10000
 	Budget int64 `json:"budget"`
+	// 漫剧任务填写10，其余任务不填写
+	ChallengePlayType *int32 `json:"challenge_play_type,omitempty"`
 	// 投稿活动结束时间，unix时间戳（秒） 不可早于start_time
 	EndTime int64 `json:"end_time"`
 	//

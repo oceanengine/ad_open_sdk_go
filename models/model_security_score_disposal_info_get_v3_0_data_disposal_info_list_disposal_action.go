@@ -16,6 +16,7 @@ type SecurityScoreDisposalInfoGetV30DataDisposalInfoListDisposalAction string
 // List of security_score_disposal_info_get_v3.0_data_disposal_info_list_disposal_action
 const (
 	ACCOUNTCLEAR_SecurityScoreDisposalInfoGetV30DataDisposalInfoListDisposalAction SecurityScoreDisposalInfoGetV30DataDisposalInfoListDisposalAction = "ACCOUNTCLEAR"
+	CLEAR_SecurityScoreDisposalInfoGetV30DataDisposalInfoListDisposalAction        SecurityScoreDisposalInfoGetV30DataDisposalInfoListDisposalAction = "CLEAR"
 )
 
 // Ptr returns reference to security_score_disposal_info_get_v3.0_data_disposal_info_list_disposal_action value

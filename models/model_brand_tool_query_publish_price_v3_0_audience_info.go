@@ -13,8 +13,6 @@ package models
 // BrandToolQueryPublishPriceV30AudienceInfo
 type BrandToolQueryPublishPriceV30AudienceInfo struct {
 	Ac *BrandToolQueryPublishPriceV30AudienceInfoAc `json:"ac,omitempty"`
-	// 兴趣
-	ActionCategories []int64 `json:"action_categories,omitempty"`
 	// 年龄
 	Ages            []*BrandToolQueryPublishPriceV30AudienceInfoAges          `json:"ages,omitempty"`
 	DistrictInfo    *BrandToolQueryPublishPriceV30AudienceInfoDistrictInfo    `json:"district_info,omitempty"`

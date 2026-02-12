@@ -15,8 +15,12 @@ type ToolsEbpMicroAppletUpdateV30RequestSchemaInfoInner struct {
 	//
 	Id *int64 `json:"id,omitempty"`
 	//
-	Link        string                                            `json:"link"`
+	Link        *string                                           `json:"link,omitempty"`
 	OperateType ToolsEbpMicroAppletUpdateV30SchemaInfoOperateType `json:"operate_type"`
 	//
 	Remark string `json:"remark"`
+	//
+	StartPage *string `json:"start_page,omitempty"`
+	//
+	StartParam *string `json:"start_param,omitempty"`
 }

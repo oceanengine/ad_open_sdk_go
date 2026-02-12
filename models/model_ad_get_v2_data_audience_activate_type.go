@@ -15,9 +15,9 @@ type AdGetV2DataAudienceActivateType string
 
 // List of ad_get_v2_data_audience_activate_type
 const (
-	ONE_MONTH_2_THREE_MONTH_AdGetV2DataAudienceActivateType AdGetV2DataAudienceActivateType = "ONE_MONTH_2_THREE_MONTH"
 	UNLIMITED_AdGetV2DataAudienceActivateType               AdGetV2DataAudienceActivateType = "UNLIMITED"
 	THREE_MONTH_EAILIER_AdGetV2DataAudienceActivateType     AdGetV2DataAudienceActivateType = "THREE_MONTH_EAILIER"
+	ONE_MONTH_2_THREE_MONTH_AdGetV2DataAudienceActivateType AdGetV2DataAudienceActivateType = "ONE_MONTH_2_THREE_MONTH"
 	WITH_IN_A_MONTH_AdGetV2DataAudienceActivateType         AdGetV2DataAudienceActivateType = "WITH_IN_A_MONTH"
 )
 

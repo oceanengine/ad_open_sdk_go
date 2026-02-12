@@ -27,9 +27,10 @@ type LocalProjectDetailV30ResponseData struct {
 	// 私信接待抖音号,仅短视频线索使用
 	ConsultAwemeUid *string `json:"consult_aweme_uid,omitempty"`
 	// 每日投放时长，单位：秒,仅直播线索使用
-	DailyDeliverySeconds *int64                                    `json:"daily_delivery_seconds,omitempty"`
-	DeliveryPackage      *LocalProjectDetailV30DataDeliveryPackage `json:"delivery_package,omitempty"`
-	DeliveryPoiMode      *LocalProjectDetailV30DataDeliveryPoiMode `json:"delivery_poi_mode,omitempty"`
+	DailyDeliverySeconds *int64                                       `json:"daily_delivery_seconds,omitempty"`
+	DeepExternalAction   *LocalProjectDetailV30DataDeepExternalAction `json:"deep_external_action,omitempty"`
+	DeliveryPackage      *LocalProjectDetailV30DataDeliveryPackage    `json:"delivery_package,omitempty"`
+	DeliveryPoiMode      *LocalProjectDetailV30DataDeliveryPoiMode    `json:"delivery_poi_mode,omitempty"`
 	// 投放结束时间
 	EndTime        *string                                  `json:"end_time,omitempty"`
 	ExternalAction *LocalProjectDetailV30DataExternalAction `json:"external_action,omitempty"`

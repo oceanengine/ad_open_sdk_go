@@ -15,8 +15,8 @@ type AudiencePackageCreateV2Platform string
 
 // List of audience_package_create_v2_platform
 const (
-	PC_AudiencePackageCreateV2Platform      AudiencePackageCreateV2Platform = "PC"
 	ANDROID_AudiencePackageCreateV2Platform AudiencePackageCreateV2Platform = "ANDROID"
+	PC_AudiencePackageCreateV2Platform      AudiencePackageCreateV2Platform = "PC"
 	IOS_AudiencePackageCreateV2Platform     AudiencePackageCreateV2Platform = "IOS"
 	IPAD_AudiencePackageCreateV2Platform    AudiencePackageCreateV2Platform = "IPAD"
 	HARMONY_AudiencePackageCreateV2Platform AudiencePackageCreateV2Platform = "HARMONY"

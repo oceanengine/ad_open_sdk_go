@@ -77,6 +77,7 @@ const (
 	AD_CONVERT_TYPE_IAAP_ROI_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction                    EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_IAAP_ROI"
 	AD_CONVERT_TYPE_IDCARD_INFORMATION_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction          EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_IDCARD_INFORMATION"
 	AD_CONVERT_TYPE_INAPP_NEXT_DAY_OPEN_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction         EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_INAPP_NEXT_DAY_OPEN"
+	AD_CONVERT_TYPE_INAPP_ROI_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction                   EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_INAPP_ROI"
 	AD_CONVERT_TYPE_INSTALL_FINISH_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_INSTALL_FINISH"
 	AD_CONVERT_TYPE_INTELLIGENT_SERVICE_OPEN_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction    EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_INTELLIGENT_SERVICE_OPEN"
 	AD_CONVERT_TYPE_INTENTION_CLUE_EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction              EventManagerOptimizedGoalGetV2V30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_INTENTION_CLUE"

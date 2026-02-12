@@ -13,8 +13,12 @@ package models
 // ToolsEbpMicroAppletCreateV30RequestSchemaInfoInner struct for ToolsEbpMicroAppletCreateV30RequestSchemaInfoInner
 type ToolsEbpMicroAppletCreateV30RequestSchemaInfoInner struct {
 	//
-	Link        string                                             `json:"link"`
+	Link        *string                                            `json:"link,omitempty"`
 	OperateType *ToolsEbpMicroAppletCreateV30SchemaInfoOperateType `json:"operate_type,omitempty"`
 	//
 	Remark string `json:"remark"`
+	//
+	StartPage *string `json:"start_page,omitempty"`
+	//
+	StartParam *string `json:"start_param,omitempty"`
 }

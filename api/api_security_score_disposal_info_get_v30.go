@@ -25,13 +25,18 @@ type SecurityScoreDisposalInfoGetV30ApiService service
 type ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *SecurityScoreDisposalInfoGetV30ApiService
+	advertiserId *int64
 	businessLine *SecurityScoreDisposalInfoGetV30BusinessLine
 	filtering    *SecurityScoreDisposalInfoGetV30Filtering
-	advertiserId *int64
 	page         *int64
 	pageSize     *int64
 	orderField   *SecurityScoreDisposalInfoGetV30OrderField
 	orderType    *SecurityScoreDisposalInfoGetV30OrderType
+}
+
+func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest {
+	r.advertiserId = &advertiserId
+	return r
 }
 
 // 业务线
@@ -43,11 +48,6 @@ func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) BusinessLine(busin
 // 过滤器
 func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) Filtering(filtering SecurityScoreDisposalInfoGetV30Filtering) *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest {
 	r.filtering = &filtering
-	return r
-}
-
-func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest {
-	r.advertiserId = &advertiserId
 	return r
 }
 
@@ -127,6 +127,9 @@ func (a *SecurityScoreDisposalInfoGetV30ApiService) getExecute(r *ApiOpenApiV30S
 	formFiles = make(map[string]*FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
+	if r.advertiserId == nil {
+		return localVarReturnValue, nil, ReportError("advertiserId is required and must be specified")
+	}
 	if r.businessLine == nil {
 		return localVarReturnValue, nil, ReportError("businessLine is required and must be specified")
 	}
@@ -134,9 +137,7 @@ func (a *SecurityScoreDisposalInfoGetV30ApiService) getExecute(r *ApiOpenApiV30S
 		return localVarReturnValue, nil, ReportError("filtering is required and must be specified")
 	}
 
-	if r.advertiserId != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
-	}
+	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "business_line", r.businessLine)
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)

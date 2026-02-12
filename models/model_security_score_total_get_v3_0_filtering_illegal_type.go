@@ -15,12 +15,14 @@ type SecurityScoreTotalGetV30FilteringIllegalType string
 
 // List of security_score_total_get_v3.0_filtering_illegal_type
 const (
-	CRITICAL_SecurityScoreTotalGetV30FilteringIllegalType      SecurityScoreTotalGetV30FilteringIllegalType = "CRITICAL"
-	GENERAL_SecurityScoreTotalGetV30FilteringIllegalType       SecurityScoreTotalGetV30FilteringIllegalType = "GENERAL"
-	MINOR_SecurityScoreTotalGetV30FilteringIllegalType         SecurityScoreTotalGetV30FilteringIllegalType = "MINOR"
-	ONECLASS_SecurityScoreTotalGetV30FilteringIllegalType      SecurityScoreTotalGetV30FilteringIllegalType = "ONECLASS"
-	SERIOUS_SecurityScoreTotalGetV30FilteringIllegalType       SecurityScoreTotalGetV30FilteringIllegalType = "SERIOUS"
-	TWOTHREECLASS_SecurityScoreTotalGetV30FilteringIllegalType SecurityScoreTotalGetV30FilteringIllegalType = "TWOTHREECLASS"
+	BACKLINKGENERAL_SecurityScoreTotalGetV30FilteringIllegalType SecurityScoreTotalGetV30FilteringIllegalType = "BACKLINKGENERAL"
+	BACKLINKSERIOUS_SecurityScoreTotalGetV30FilteringIllegalType SecurityScoreTotalGetV30FilteringIllegalType = "BACKLINKSERIOUS"
+	CRITICAL_SecurityScoreTotalGetV30FilteringIllegalType        SecurityScoreTotalGetV30FilteringIllegalType = "CRITICAL"
+	GENERAL_SecurityScoreTotalGetV30FilteringIllegalType         SecurityScoreTotalGetV30FilteringIllegalType = "GENERAL"
+	MINOR_SecurityScoreTotalGetV30FilteringIllegalType           SecurityScoreTotalGetV30FilteringIllegalType = "MINOR"
+	ONECLASS_SecurityScoreTotalGetV30FilteringIllegalType        SecurityScoreTotalGetV30FilteringIllegalType = "ONECLASS"
+	SERIOUS_SecurityScoreTotalGetV30FilteringIllegalType         SecurityScoreTotalGetV30FilteringIllegalType = "SERIOUS"
+	TWOTHREECLASS_SecurityScoreTotalGetV30FilteringIllegalType   SecurityScoreTotalGetV30FilteringIllegalType = "TWOTHREECLASS"
 )
 
 // Ptr returns reference to security_score_total_get_v3.0_filtering_illegal_type value

@@ -15,8 +15,8 @@ type ToolsEstimateAudienceV2SuperiorPopularityType string
 
 // List of tools_estimate_audience_v2_superior_popularity_type
 const (
-	NONE_ToolsEstimateAudienceV2SuperiorPopularityType ToolsEstimateAudienceV2SuperiorPopularityType = "NONE"
 	GAME_ToolsEstimateAudienceV2SuperiorPopularityType ToolsEstimateAudienceV2SuperiorPopularityType = "GAME"
+	NONE_ToolsEstimateAudienceV2SuperiorPopularityType ToolsEstimateAudienceV2SuperiorPopularityType = "NONE"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_superior_popularity_type value

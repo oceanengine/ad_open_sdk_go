@@ -20,6 +20,7 @@ const (
 	CONTENTSERVICE_BrandOrderCreateV30AdForm            BrandOrderCreateV30AdForm = "CONTENTSERVICE"
 	CONTENTSERVICE_NO_GRASS_BrandOrderCreateV30AdForm   BrandOrderCreateV30AdForm = "CONTENTSERVICE_NO_GRASS"
 	FEED_BrandOrderCreateV30AdForm                      BrandOrderCreateV30AdForm = "FEED"
+	NEW_PLANT_GRASS_BrandOrderCreateV30AdForm           BrandOrderCreateV30AdForm = "NEW_PLANT_GRASS"
 )
 
 // Ptr returns reference to brand_order_create_v3.0_ad_form value

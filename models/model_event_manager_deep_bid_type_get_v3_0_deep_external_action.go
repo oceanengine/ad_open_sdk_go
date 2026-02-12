@@ -77,6 +77,7 @@ const (
 	AD_CONVERT_TYPE_IAAP_ROI_EventManagerDeepBidTypeGetV30DeepExternalAction                    EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_IAAP_ROI"
 	AD_CONVERT_TYPE_IDCARD_INFORMATION_EventManagerDeepBidTypeGetV30DeepExternalAction          EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_IDCARD_INFORMATION"
 	AD_CONVERT_TYPE_INAPP_NEXT_DAY_OPEN_EventManagerDeepBidTypeGetV30DeepExternalAction         EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_INAPP_NEXT_DAY_OPEN"
+	AD_CONVERT_TYPE_INAPP_ROI_EventManagerDeepBidTypeGetV30DeepExternalAction                   EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_INAPP_ROI"
 	AD_CONVERT_TYPE_INSTALL_FINISH_EventManagerDeepBidTypeGetV30DeepExternalAction              EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_INSTALL_FINISH"
 	AD_CONVERT_TYPE_INTELLIGENT_SERVICE_OPEN_EventManagerDeepBidTypeGetV30DeepExternalAction    EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_INTELLIGENT_SERVICE_OPEN"
 	AD_CONVERT_TYPE_INTENTION_CLUE_EventManagerDeepBidTypeGetV30DeepExternalAction              EventManagerDeepBidTypeGetV30DeepExternalAction = "AD_CONVERT_TYPE_INTENTION_CLUE"

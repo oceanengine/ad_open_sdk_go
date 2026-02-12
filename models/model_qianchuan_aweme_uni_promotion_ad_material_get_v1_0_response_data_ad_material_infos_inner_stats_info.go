@@ -14,10 +14,18 @@ package models
 type QianchuanAwemeUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerStatsInfo struct {
 	// 整体消耗，单位元
 	StatCostForRoi2 *float64 `json:"stat_cost_for_roi2,omitempty"`
+	// 净成交订单成本
+	TotalCostPerPayOrderSettleForRoi21h *float64 `json:"total_cost_per_pay_order_settle_for_roi2_1h,omitempty"`
+	// 净成交金额，单位元
+	TotalOrderSettleAmountForRoi21h *float64 `json:"total_order_settle_amount_for_roi2_1h,omitempty"`
+	// 净成交订单数
+	TotalOrderSettleCountForRoi21h *int64 `json:"total_order_settle_count_for_roi2_1h,omitempty"`
 	// 整体成交订单数
 	TotalPayOrderCountForRoi2 *int64 `json:"total_pay_order_count_for_roi2,omitempty"`
 	// 整体成交金额，单位元
 	TotalPayOrderGmvIncludeCouponForRoi2 *float64 `json:"total_pay_order_gmv_include_coupon_for_roi2,omitempty"`
 	// 整体支付ROI
 	TotalPrepayAndPayOrderRoi2 *float64 `json:"total_prepay_and_pay_order_roi2,omitempty"`
+	// 净成交ROI
+	TotalPrepayAndPaySettleRoi21h *float64 `json:"total_prepay_and_pay_settle_roi2_1h,omitempty"`
 }

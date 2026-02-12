@@ -77,6 +77,7 @@ const (
 	AD_CONVERT_TYPE_IAAP_ROI_ProjectCreateV30OptimizeGoalDeepExternalAction                    ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_IAAP_ROI"
 	AD_CONVERT_TYPE_IDCARD_INFORMATION_ProjectCreateV30OptimizeGoalDeepExternalAction          ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_IDCARD_INFORMATION"
 	AD_CONVERT_TYPE_INAPP_NEXT_DAY_OPEN_ProjectCreateV30OptimizeGoalDeepExternalAction         ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_INAPP_NEXT_DAY_OPEN"
+	AD_CONVERT_TYPE_INAPP_ROI_ProjectCreateV30OptimizeGoalDeepExternalAction                   ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_INAPP_ROI"
 	AD_CONVERT_TYPE_INSTALL_FINISH_ProjectCreateV30OptimizeGoalDeepExternalAction              ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_INSTALL_FINISH"
 	AD_CONVERT_TYPE_INTELLIGENT_SERVICE_OPEN_ProjectCreateV30OptimizeGoalDeepExternalAction    ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_INTELLIGENT_SERVICE_OPEN"
 	AD_CONVERT_TYPE_INTENTION_CLUE_ProjectCreateV30OptimizeGoalDeepExternalAction              ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_INTENTION_CLUE"

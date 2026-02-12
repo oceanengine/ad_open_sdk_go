@@ -12,6 +12,7 @@ package models
 
 // ToolsAssetLinkListV30ResponseData
 type ToolsAssetLinkListV30ResponseData struct {
+	CursorInfo *ToolsAssetLinkListV30ResponseDataCursorInfo `json:"cursor_info,omitempty"`
 	//
 	List     []*ToolsAssetLinkListV30ResponseDataListInner `json:"list,omitempty"`
 	PageInfo *ToolsAssetLinkListV30ResponseDataPageInfo    `json:"page_info,omitempty"`

@@ -13,8 +13,6 @@ package models
 // BrandPolicyListV30AudienceInfo
 type BrandPolicyListV30AudienceInfo struct {
 	Ac *BrandPolicyListV30AudienceInfoAc `json:"ac,omitempty"`
-	// 兴趣
-	ActionCategories []int64 `json:"action_categories,omitempty"`
 	// 年龄
 	Ages            []*BrandPolicyListV30AudienceInfoAges          `json:"ages,omitempty"`
 	DistrictInfo    *BrandPolicyListV30AudienceInfoDistrictInfo    `json:"district_info,omitempty"`

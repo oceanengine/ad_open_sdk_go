@@ -27,6 +27,8 @@ type ApiOpenApiV30ToolsAssetLinkListGetRequestExample struct {
 	Filtering    ToolsAssetLinkListV30Filtering `json:"filtering"`
 	Page         int32                          `json:"page,omitempty"`
 	PageSize     int32                          `json:"page_size,omitempty"`
+	Cursor       int64                          `json:"cursor,omitempty"`
+	Count        int64                          `json:"count,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/asset_link/list/ Get
@@ -48,7 +50,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsAssetLinkListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).Cursor(request.Cursor).Count(request.Count).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

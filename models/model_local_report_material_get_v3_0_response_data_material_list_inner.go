@@ -28,6 +28,8 @@ type LocalReportMaterialGetV30ResponseDataMaterialListInner struct {
 	AttributionIntentionFormCnt *int64 `json:"attribution_intention_form_cnt,omitempty"`
 	// 意向咨询数(计费时间)
 	AttributionIntentionMessageClueCnt *int64 `json:"attribution_intention_message_clue_cnt,omitempty"`
+	//
+	AttributionIntentionMessageClueCost *float64 `json:"attribution_intention_message_clue_cost,omitempty"`
 	// 意向话单数(计费时间)
 	AttributionIntentionPhoneCnt *int64 `json:"attribution_intention_phone_cnt,omitempty"`
 	// 私信咨询数(计费时间)

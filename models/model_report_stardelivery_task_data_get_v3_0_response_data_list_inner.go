@@ -19,9 +19,13 @@ type ReportStardeliveryTaskDataGetV30ResponseDataListInner struct {
 	//
 	ActiveRegister *int64 `json:"active_register,omitempty"`
 	//
+	AndroidConvertCnt *int64 `json:"android_convert_cnt,omitempty"`
+	//
 	GamePayCount *int64 `json:"game_pay_count,omitempty"`
 	//
 	InstallFinishCnt *int64 `json:"install_finish_cnt,omitempty"`
+	//
+	IosConvertCnt *int64 `json:"ios_convert_cnt,omitempty"`
 	//
 	NonAdStatCost *float64 `json:"non_ad_stat_cost,omitempty"`
 	//
@@ -76,5 +80,9 @@ type ReportStardeliveryTaskDataGetV30ResponseDataListInner struct {
 	//
 	StarTaskUnfrozenAmount *float64 `json:"star_task_unfrozen_amount,omitempty"`
 	//
+	StatAndroidCost *float64 `json:"stat_android_cost,omitempty"`
+	//
 	StatCost *float64 `json:"stat_cost,omitempty"`
+	//
+	StatIosCost *float64 `json:"stat_ios_cost,omitempty"`
 }

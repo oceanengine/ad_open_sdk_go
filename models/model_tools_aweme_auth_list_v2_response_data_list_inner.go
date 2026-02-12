@@ -33,7 +33,9 @@ type ToolsAwemeAuthListV2ResponseDataListInner struct {
 	// 发布新视频素材到该抖音号下时，视频主页可见性只能设置「仅单次展示可见」 枚举值： true：是 false：否，表示无此限制  当值返回true时，代表在创建广告时添加新视频素材到该抖音号下推广，视频的主页可见性设置只允许HIDE_VIDEO_ON_HP「仅单次展示可见」
 	HasVideoHpVisibilityLimit *bool `json:"has_video_hp_visibility_limit,omitempty"`
 	// 备注
-	Note      *string                                `json:"note,omitempty"`
+	Note *string `json:"note,omitempty"`
+	// 抖音号openID，非抖音号开放平台openID
+	OpenId    *string                                `json:"open_id,omitempty"`
 	ShareType *ToolsAwemeAuthListV2DataListShareType `json:"share_type,omitempty"`
 	// 授权开始时间
 	StartTime *string                                             `json:"start_time,omitempty"`

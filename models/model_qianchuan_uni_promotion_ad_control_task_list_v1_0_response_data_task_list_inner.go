@@ -13,6 +13,8 @@ package models
 // QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInner struct for QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInner
 type QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInner struct {
 	Audience *QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerAudience `json:"audience,omitempty"`
+	// 直播全域-素材追投-控成本追投-直播间成交的转化出价，单位元
+	Bid *float64 `json:"bid,omitempty"`
 	// 预算，单位元，最多支持两位小数
 	Budget *float64 `json:"budget,omitempty"`
 	// 创建时间，datetime格式
@@ -21,8 +23,6 @@ type QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInner struct {
 	DeepExternalActionName *string `json:"deep_external_action_name,omitempty"`
 	// 调控时长，0.5h～24.0h，步进0.5h
 	Duration *float64 `json:"duration,omitempty"`
-	//
-	EcpRoiGoal *float64 `json:"ecp_roi_goal,omitempty"`
 	// 转化目标名称
 	ExternalActionName *string `json:"external_action_name,omitempty"`
 	// 任务id
@@ -31,7 +31,9 @@ type QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInner struct {
 	MaterialList []*QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMaterialListInner `json:"material_list,omitempty"`
 	Metrics      *QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerMetrics             `json:"metrics,omitempty"`
 	// 任务名称
-	Name         *string                                                                     `json:"name,omitempty"`
+	Name *string `json:"name,omitempty"`
+	// 直播全域-素材追投-控成本追投-支付ROI目标，单位元
+	Roi2Goal     *float64                                                                    `json:"roi2_goal,omitempty"`
 	RoomInfo     *QianchuanUniPromotionAdControlTaskListV10ResponseDataTaskListInnerRoomInfo `json:"room_info,omitempty"`
 	SmartBidType *QianchuanUniPromotionAdControlTaskListV10DataTaskListSmartBidType          `json:"smart_bid_type,omitempty"`
 	TaskStatus   *QianchuanUniPromotionAdControlTaskListV10DataTaskListTaskStatus            `json:"task_status,omitempty"`

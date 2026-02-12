@@ -14,4 +14,6 @@ package models
 type ToolsMaterialRaiseMaterialIdsGetV30ResponseData struct {
 	// 项目下素材ID列表（仅返回项目下可用素材列表，若素材被删除 不在本接口返回）
 	MaterialIds []int64 `json:"material_ids,omitempty"`
+	//
+	MaterialList []*ToolsMaterialRaiseMaterialIdsGetV30ResponseDataMaterialListInner `json:"material_list,omitempty"`
 }

@@ -22,6 +22,8 @@ type AdConvertSignalV2Request struct {
 	AppPackage *string `json:"app_package,omitempty"`
 	// app版本
 	AppVersion *string `json:"app_version,omitempty"`
+	// 蓝牙的系统开关
+	BluetoothEnabled *bool `json:"bluetooth_enabled,omitempty"`
 	// 系统启动时间戳（秒级）
 	BootTimeSec *string `json:"boot_time_sec,omitempty"`
 	// 设备机型
@@ -50,8 +52,16 @@ type AdConvertSignalV2Request struct {
 	Ipv4 *string `json:"ipv4,omitempty"`
 	// 客户端事件上报ipv6
 	Ipv6 *string `json:"ipv6,omitempty"`
+	// 小程序当前登录状态下的启动参数，多层json map，需要dump成字符串
+	LaunchOption *string `json:"launch_option,omitempty"`
+	// 地理位置的系统开关
+	LocationEnabled *bool `json:"location_enabled,omitempty"`
+	// true 表示模糊定位，false 表示精确定位，仅 iOS 支持
+	LocationReducedAccuracy *bool `json:"location_reduced_accuracy,omitempty"`
 	// 物理内存大小
 	Memory *string `json:"memory,omitempty"`
+	// 微信小程序id（gh开头的格式）
+	MicroAppId *string `json:"micro_app_id,omitempty"`
 	// 硬盘挂载id
 	MntId *string `json:"mnt_id,omitempty"`
 	// 安卓/鸿蒙oaid设备标识符
@@ -64,12 +74,24 @@ type AdConvertSignalV2Request struct {
 	OsVersion *string `json:"os_version,omitempty"`
 	// 事件属性，单层json map，需要dump成字符串
 	Params *string `json:"params,omitempty"`
+	// 设备像素比
+	PixelRatio *int64 `json:"pixel_ratio,omitempty"`
+	// 屏幕高度，单位px
+	ScreenHeight *int64 `json:"screen_height,omitempty"`
+	// 屏幕宽度，单位px
+	ScreenWidth *int64 `json:"screen_width,omitempty"`
 	// 生效的策略类型   0：全部生效，默认   1:  仅生效去重   2:  仅生效助攻
 	StrategyType *string `json:"strategy_type,omitempty"`
 	// 系统更新时间
 	SysFileTime *string `json:"sys_file_time,omitempty"`
+	// 操作系统及版本
+	System *string `json:"system,omitempty"`
+	// 系统当前主题，取值为light或dark，全局配置\"darkmode\":true时才能获取，否则为 undefined （不支持小游戏）
+	Theme *string `json:"theme,omitempty"`
 	// 系统webview user agent
 	UserAgent *string `json:"user_agent,omitempty"`
 	// 广告主自定义用户唯一标识符
 	UserUniqueId *string `json:"user_unique_id,omitempty"`
+	// Wi-Fi 的系统开关
+	WifiEnabled *bool `json:"wifi_enabled,omitempty"`
 }

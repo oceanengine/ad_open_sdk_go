@@ -18,8 +18,8 @@ const (
 	E_COMMERCE_AdGetV2DataAudienceActionActionScene AdGetV2DataAudienceActionActionScene = "E-COMMERCE"
 	APP_AdGetV2DataAudienceActionActionScene        AdGetV2DataAudienceActionActionScene = "APP"
 	NEWS_AdGetV2DataAudienceActionActionScene       AdGetV2DataAudienceActionActionScene = "NEWS"
-	AD_AdGetV2DataAudienceActionActionScene         AdGetV2DataAudienceActionActionScene = "AD"
 	SEARCH_AdGetV2DataAudienceActionActionScene     AdGetV2DataAudienceActionActionScene = "SEARCH"
+	AD_AdGetV2DataAudienceActionActionScene         AdGetV2DataAudienceActionActionScene = "AD"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_action_action_scene value

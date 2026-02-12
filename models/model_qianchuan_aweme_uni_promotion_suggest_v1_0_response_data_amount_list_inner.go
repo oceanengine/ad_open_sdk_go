@@ -14,14 +14,22 @@ package models
 type QianchuanAwemeUniPromotionSuggestV10ResponseDataAmountListInner struct {
 	//
 	Amount *int64 `json:"amount,omitempty"`
+	// 预估最大净成交金额
+	MaxTotalOrderSettleAmountForRoi21h *int64 `json:"max_total_order_settle_amount_for_roi2_1h,omitempty"`
 	// 预估最大整体成交金额
 	MaxTotalPayOrderGmv *int64 `json:"max_total_pay_order_gmv,omitempty"`
 	// 预估最大整体支付roi
 	MaxTotalPrepayAndPayOrderRoi *float64 `json:"max_total_prepay_and_pay_order_roi,omitempty"`
+	// 预估最大净支付roi
+	MaxTotalPrepayAndPaySettleRoi21h *float64 `json:"max_total_prepay_and_pay_settle_roi2_1h,omitempty"`
+	// 预估最小净成交金额
+	MinTotalOrderSettleAmountForRoi21h *int64 `json:"min_total_order_settle_amount_for_roi2_1h,omitempty"`
 	// 预估最小整体成交金额
 	MinTotalPayOrderGmv *int64 `json:"min_total_pay_order_gmv,omitempty"`
 	// 预估最小整体支付roi
 	MinTotalPrepayAndPayOrderRoi *float64 `json:"min_total_prepay_and_pay_order_roi,omitempty"`
+	// 预估最小净支付roi
+	MinTotalPrepayAndPaySettleRoi21h *float64 `json:"min_total_prepay_and_pay_settle_roi2_1h,omitempty"`
 	//
 	Tag *string `json:"tag,omitempty"`
 }

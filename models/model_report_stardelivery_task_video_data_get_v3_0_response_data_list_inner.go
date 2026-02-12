@@ -19,6 +19,8 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	//
 	ActiveRegister *int64 `json:"active_register,omitempty"`
 	//
+	AndroidConvertCnt *int64 `json:"android_convert_cnt,omitempty"`
+	//
 	GamePayCount *int64 `json:"game_pay_count,omitempty"`
 	//
 	IesAvatarUrl *string `json:"ies_avatar_url,omitempty"`
@@ -34,6 +36,8 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	InAppStatCostRangeT1 []float64 `json:"in_app_stat_cost_range_t1,omitempty"`
 	//
 	InstallFinishCnt *int64 `json:"install_finish_cnt,omitempty"`
+	//
+	IosConvertCnt *int64 `json:"ios_convert_cnt,omitempty"`
 	// 服务商ID
 	IsvId *int64 `json:"isv_id,omitempty"`
 	// 服务商名称
@@ -80,7 +84,11 @@ type ReportStardeliveryTaskVideoDataGetV30ResponseDataListInner struct {
 	StarVideoRelatePromotionCount *int64                                                        `json:"star_video_relate_promotion_count,omitempty"`
 	StarVideoStatus               *ReportStardeliveryTaskVideoDataGetV30DataListStarVideoStatus `json:"star_video_status,omitempty"`
 	//
+	StatAndroidCost *float64 `json:"stat_android_cost,omitempty"`
+	//
 	StatCost *float64 `json:"stat_cost,omitempty"`
+	//
+	StatIosCost *float64 `json:"stat_ios_cost,omitempty"`
 	//
 	VideoCoverUrl *string `json:"video_cover_url,omitempty"`
 	//

@@ -18,8 +18,14 @@ type QianchuanAwemeUniPromotionOrderReportGetV10ResponseDataAdListInner struct {
 	StartDateTime *string `json:"start_date_time,omitempty"`
 	// 整体消耗，单位元
 	StatCostForRoi2 *float64 `json:"stat_cost_for_roi2,omitempty"`
+	// 净成交订单成本
+	TotalCostPerPayOrderSettleForRoi21h *float64 `json:"total_cost_per_pay_order_settle_for_roi2_1h,omitempty"`
 	// 平台补贴金额，单位元
 	TotalEcomPlatformSubsidyAmountForRoi2 *float64 `json:"total_ecom_platform_subsidy_amount_for_roi2,omitempty"`
+	// 净成交金额，单位元
+	TotalOrderSettleAmountForRoi21h *float64 `json:"total_order_settle_amount_for_roi2_1h,omitempty"`
+	// 净成交订单数
+	TotalOrderSettleCountForRoi21h *int64 `json:"total_order_settle_count_for_roi2_1h,omitempty"`
 	// 整体成交订单数
 	TotalPayOrderCountForRoi2 *int64 `json:"total_pay_order_count_for_roi2,omitempty"`
 	// 整体成交智能优惠券金额，单位元
@@ -30,6 +36,8 @@ type QianchuanAwemeUniPromotionOrderReportGetV10ResponseDataAdListInner struct {
 	TotalPayOrderGmvIncludeCouponForRoi2 *float64 `json:"total_pay_order_gmv_include_coupon_for_roi2,omitempty"`
 	// 整体支付ROI
 	TotalPrepayAndPayOrderRoi2 *float64 `json:"total_prepay_and_pay_order_roi2,omitempty"`
+	// 净成交ROI
+	TotalPrepayAndPaySettleRoi21h *float64 `json:"total_prepay_and_pay_settle_roi2_1h,omitempty"`
 	// 整体未完结预售订单预估金额，单位元
 	TotalUnfinishedEstimateOrderGmvForRoi2 *float64 `json:"total_unfinished_estimate_order_gmv_for_roi2,omitempty"`
 }

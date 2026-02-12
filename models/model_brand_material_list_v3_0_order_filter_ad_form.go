@@ -24,6 +24,7 @@ const (
 	FEEDSLIVE_BrandMaterialListV30OrderFilterAdForm                 BrandMaterialListV30OrderFilterAdForm = "FEEDSLIVE"
 	FEEDSLIVE_AD_BrandMaterialListV30OrderFilterAdForm              BrandMaterialListV30OrderFilterAdForm = "FEEDSLIVE_AD"
 	FEEDSLIVE_SERVICE_BrandMaterialListV30OrderFilterAdForm         BrandMaterialListV30OrderFilterAdForm = "FEEDSLIVE_SERVICE"
+	NEW_PLANT_GRASS_BrandMaterialListV30OrderFilterAdForm           BrandMaterialListV30OrderFilterAdForm = "NEW_PLANT_GRASS"
 	SEARCH_BrandMaterialListV30OrderFilterAdForm                    BrandMaterialListV30OrderFilterAdForm = "SEARCH"
 	SPLASH_BrandMaterialListV30OrderFilterAdForm                    BrandMaterialListV30OrderFilterAdForm = "SPLASH"
 	VIDEOLIVE_AD_BrandMaterialListV30OrderFilterAdForm              BrandMaterialListV30OrderFilterAdForm = "VIDEOLIVE_AD"

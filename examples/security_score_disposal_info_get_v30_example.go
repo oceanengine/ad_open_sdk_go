@@ -23,9 +23,9 @@ import (
 )
 
 type ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequestExample struct {
+	AdvertiserId int64                                       `json:"advertiser_id"`
 	BusinessLine SecurityScoreDisposalInfoGetV30BusinessLine `json:"business_line"`
 	Filtering    SecurityScoreDisposalInfoGetV30Filtering    `json:"filtering"`
-	AdvertiserId int64                                       `json:"advertiser_id,omitempty"`
 	Page         int64                                       `json:"page,omitempty"`
 	PageSize     int64                                       `json:"page_size,omitempty"`
 	OrderField   SecurityScoreDisposalInfoGetV30OrderField   `json:"order_field,omitempty"`
@@ -51,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.SecurityScoreDisposalInfoGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		BusinessLine(request.BusinessLine).Filtering(request.Filtering).AdvertiserId(request.AdvertiserId).Page(request.Page).PageSize(request.PageSize).OrderField(request.OrderField).OrderType(request.OrderType).
+		AdvertiserId(request.AdvertiserId).BusinessLine(request.BusinessLine).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).OrderField(request.OrderField).OrderType(request.OrderType).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

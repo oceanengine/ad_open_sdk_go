@@ -15,7 +15,7 @@ type ToolsEbpMicroGameCreateV30RequestSchemaInfoInner struct {
 	//
 	Id *int64 `json:"id,omitempty"`
 	//
-	Link        string                                           `json:"link"`
+	Link        *string                                          `json:"link,omitempty"`
 	OperateType *ToolsEbpMicroGameCreateV30SchemaInfoOperateType `json:"operate_type,omitempty"`
 	//
 	Remark string `json:"remark"`

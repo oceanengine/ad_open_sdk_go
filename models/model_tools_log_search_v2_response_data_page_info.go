@@ -10,14 +10,14 @@ Oceanengine Open Api
 
 package models
 
-// ToolsLogSearchV2ResponseDataPageInfo
+// ToolsLogSearchV2ResponseDataPageInfo 分页信息
 type ToolsLogSearchV2ResponseDataPageInfo struct {
-	//
+	// 页码
 	Page *int64 `json:"page,omitempty"`
-	//
+	// 页面大小
 	PageSize *int64 `json:"page_size,omitempty"`
-	//
+	// 总数
 	TotalNumber *int64 `json:"total_number,omitempty"`
-	//
+	// 总页数
 	TotalPage *int64 `json:"total_page,omitempty"`
 }

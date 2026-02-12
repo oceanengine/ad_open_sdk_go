@@ -18,8 +18,8 @@ const (
 	E_COMMERCE_ToolsBidSuggestV2ActionScene ToolsBidSuggestV2ActionScene = "E-COMMERCE"
 	APP_ToolsBidSuggestV2ActionScene        ToolsBidSuggestV2ActionScene = "APP"
 	NEWS_ToolsBidSuggestV2ActionScene       ToolsBidSuggestV2ActionScene = "NEWS"
-	AD_ToolsBidSuggestV2ActionScene         ToolsBidSuggestV2ActionScene = "AD"
 	SEARCH_ToolsBidSuggestV2ActionScene     ToolsBidSuggestV2ActionScene = "SEARCH"
+	AD_ToolsBidSuggestV2ActionScene         ToolsBidSuggestV2ActionScene = "AD"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_action_scene value

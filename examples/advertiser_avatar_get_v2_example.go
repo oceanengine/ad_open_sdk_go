@@ -23,7 +23,7 @@ import (
 )
 
 type ApiOpenApi2AdvertiserAvatarGetGetRequestExample struct {
-	AdvertiserId int64 `json:"advertiser_id,omitempty"`
+	AdvertiserId int64 `json:"advertiser_id"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/advertiser/avatar/get/ Get

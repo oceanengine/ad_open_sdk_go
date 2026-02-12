@@ -12,10 +12,11 @@ package models
 
 // LocalProjectListV30ResponseDataProjectListInner struct for LocalProjectListV30ResponseDataProjectListInner
 type LocalProjectListV30ResponseDataProjectListInner struct {
-	AdType          *LocalProjectListV30DataProjectListAdType          `json:"ad_type,omitempty"`
-	BidType         *LocalProjectListV30DataProjectListBidType         `json:"bid_type,omitempty"`
-	DeliveryGoal    *LocalProjectListV30DataProjectListDeliveryGoal    `json:"delivery_goal,omitempty"`
-	DeliveryPackage *LocalProjectListV30DataProjectListDeliveryPackage `json:"delivery_package,omitempty"`
+	AdType             *LocalProjectListV30DataProjectListAdType             `json:"ad_type,omitempty"`
+	BidType            *LocalProjectListV30DataProjectListBidType            `json:"bid_type,omitempty"`
+	DeepExternalAction *LocalProjectListV30DataProjectListDeepExternalAction `json:"deep_external_action,omitempty"`
+	DeliveryGoal       *LocalProjectListV30DataProjectListDeliveryGoal       `json:"delivery_goal,omitempty"`
+	DeliveryPackage    *LocalProjectListV30DataProjectListDeliveryPackage    `json:"delivery_package,omitempty"`
 	// 投放结束时间
 	EndTime        *string                                           `json:"end_time,omitempty"`
 	ExternalAction *LocalProjectListV30DataProjectListExternalAction `json:"external_action,omitempty"`

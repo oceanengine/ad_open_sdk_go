@@ -15,14 +15,14 @@ type AudiencePackageUpdateV2HideIfConverted string
 
 // List of audience_package_update_v2_hide_if_converted
 const (
+	GLOBAL_APP_AudiencePackageUpdateV2HideIfConverted   AudiencePackageUpdateV2HideIfConverted = "GLOBAL_APP"
+	NO_EXCLUDE_AudiencePackageUpdateV2HideIfConverted   AudiencePackageUpdateV2HideIfConverted = "NO_EXCLUDE"
+	ADVERTISER_AudiencePackageUpdateV2HideIfConverted   AudiencePackageUpdateV2HideIfConverted = "ADVERTISER"
 	CAMPAIGN_AudiencePackageUpdateV2HideIfConverted     AudiencePackageUpdateV2HideIfConverted = "CAMPAIGN"
 	ORGANIZATION_AudiencePackageUpdateV2HideIfConverted AudiencePackageUpdateV2HideIfConverted = "ORGANIZATION"
 	APP_AudiencePackageUpdateV2HideIfConverted          AudiencePackageUpdateV2HideIfConverted = "APP"
-	ADVERTISER_AudiencePackageUpdateV2HideIfConverted   AudiencePackageUpdateV2HideIfConverted = "ADVERTISER"
 	AD_AudiencePackageUpdateV2HideIfConverted           AudiencePackageUpdateV2HideIfConverted = "AD"
-	GLOBAL_APP_AudiencePackageUpdateV2HideIfConverted   AudiencePackageUpdateV2HideIfConverted = "GLOBAL_APP"
 	CUSTOMER_AudiencePackageUpdateV2HideIfConverted     AudiencePackageUpdateV2HideIfConverted = "CUSTOMER"
-	NO_EXCLUDE_AudiencePackageUpdateV2HideIfConverted   AudiencePackageUpdateV2HideIfConverted = "NO_EXCLUDE"
 )
 
 // Ptr returns reference to audience_package_update_v2_hide_if_converted value

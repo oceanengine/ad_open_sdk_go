@@ -29,6 +29,8 @@ type ApiOpenApiV30ToolsAssetLinkListGetRequest struct {
 	filtering    *ToolsAssetLinkListV30Filtering
 	page         *int32
 	pageSize     *int32
+	cursor       *int64
+	count        *int64
 }
 
 func (r *ApiOpenApiV30ToolsAssetLinkListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsAssetLinkListGetRequest {
@@ -48,6 +50,18 @@ func (r *ApiOpenApiV30ToolsAssetLinkListGetRequest) Page(page int32) *ApiOpenApi
 
 func (r *ApiOpenApiV30ToolsAssetLinkListGetRequest) PageSize(pageSize int32) *ApiOpenApiV30ToolsAssetLinkListGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+// 页码游标值，第一次拉取，请传入0 不传入或者传空字符串默认使用page+page_size 注：page+page_size与cursor+count为两种分页方式
+func (r *ApiOpenApiV30ToolsAssetLinkListGetRequest) Cursor(cursor int64) *ApiOpenApiV30ToolsAssetLinkListGetRequest {
+	r.cursor = &cursor
+	return r
+}
+
+// 页面数据量 注：page+page_size与cursor+count为两种分页方式
+func (r *ApiOpenApiV30ToolsAssetLinkListGetRequest) Count(count int64) *ApiOpenApiV30ToolsAssetLinkListGetRequest {
+	r.count = &count
 	return r
 }
 
@@ -117,6 +131,12 @@ func (a *ToolsAssetLinkListV30ApiService) getExecute(r *ApiOpenApiV30ToolsAssetL
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.cursor != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "cursor", r.cursor)
+	}
+	if r.count != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "count", r.count)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

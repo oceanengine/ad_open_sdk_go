@@ -13,11 +13,14 @@ package models
 // QianchuanAwemeUniPromotionOrderDetailV10ResponseDataDeliverySetting 投放设置
 type QianchuanAwemeUniPromotionOrderDetailV10ResponseDataDeliverySetting struct {
 	// 投放金额（用户在下单金额列表中）选择的金额.单位元。
-	Amount  *int64                                                              `json:"amount,omitempty"`
-	BidType *QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingBidType `json:"bid_type,omitempty"`
+	Amount             *int64                                                                         `json:"amount,omitempty"`
+	BidType            *QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingBidType            `json:"bid_type,omitempty"`
+	DeepExternalAction *QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingDeepExternalAction `json:"deep_external_action,omitempty"`
 	// 预期投放时长，单位小时
 	DeliveryTime *float64                                                             `json:"delivery_time,omitempty"`
 	QcpxMode     *QianchuanAwemeUniPromotionOrderDetailV10DataDeliverySettingQcpxMode `json:"qcpx_mode,omitempty"`
 	// 支付ROI目标
 	RoiGoal *float64 `json:"roi_goal,omitempty"`
+	// 是否支持追加预算（追投）
+	SupportAddBudget *bool `json:"support_add_budget,omitempty"`
 }

@@ -38,7 +38,8 @@ type StarDemandCreateChallengeV2RequestDemandInfo struct {
 	// ip活动ID
 	IpActId *int64 `json:"ip_act_id,omitempty"`
 	// 视频曝光监测链接 https开头的URL
-	ItemShowMonitorUrl *string `json:"item_show_monitor_url,omitempty"`
+	ItemShowMonitorUrl *string                                                      `json:"item_show_monitor_url,omitempty"`
+	ObjectFieldInfo    *StarDemandCreateChallengeV2RequestDemandInfoObjectFieldInfo `json:"object_field_info,omitempty"`
 	// 所属类目 类目文本，特定品牌下需要
 	ProductCategory []string `json:"product_category,omitempty"`
 	// 产品所属行业 [一级行业, 二级行业]

@@ -15,7 +15,6 @@ type ToolsEbpMicroAppletUpdateV30SchemaInfoOperateType string
 
 // List of tools_ebp_micro_applet_update_v3.0_schema_info_operate_type
 const (
-	CREATE_ToolsEbpMicroAppletUpdateV30SchemaInfoOperateType ToolsEbpMicroAppletUpdateV30SchemaInfoOperateType = "CREATE"
 	DELETE_ToolsEbpMicroAppletUpdateV30SchemaInfoOperateType ToolsEbpMicroAppletUpdateV30SchemaInfoOperateType = "DELETE"
 	UPDATE_ToolsEbpMicroAppletUpdateV30SchemaInfoOperateType ToolsEbpMicroAppletUpdateV30SchemaInfoOperateType = "UPDATE"
 )

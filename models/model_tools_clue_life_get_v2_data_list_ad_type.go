@@ -36,6 +36,7 @@ const (
 	Enum_200_ToolsClueLifeGetV2DataListAdType ToolsClueLifeGetV2DataListAdType = 200
 	Enum_300_ToolsClueLifeGetV2DataListAdType ToolsClueLifeGetV2DataListAdType = 300
 	Enum_17_ToolsClueLifeGetV2DataListAdType  ToolsClueLifeGetV2DataListAdType = 17
+	Enum_18_ToolsClueLifeGetV2DataListAdType  ToolsClueLifeGetV2DataListAdType = 18
 )
 
 // Ptr returns reference to tools_clue_life_get_v2_data_list_ad_type value

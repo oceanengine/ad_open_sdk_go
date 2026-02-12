@@ -14,4 +14,6 @@ package models
 type QianchuanAwemeUniPromotionSuggestRoiV10ResponseData struct {
 	// 推荐支付ROI
 	SuggestPayRoi *float64 `json:"suggest_pay_roi,omitempty"`
+	// 推荐净成交ROI
+	SuggestSettleRoi *float64 `json:"suggest_settle_roi,omitempty"`
 }
