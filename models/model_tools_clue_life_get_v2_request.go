@@ -12,6 +12,8 @@ package models
 
 // ToolsClueLifeGetV2Request struct for ToolsClueLifeGetV2Request
 type ToolsClueLifeGetV2Request struct {
+	// 是否开启敏感字段加密传输功能
+	EncryptSensitiveFields *bool `json:"encrypt_sensitive_fields,omitempty"`
 	// 查询截止时间，格式：yyyy-MM-dd hh:mm:ss
 	EndTime string `json:"end_time"`
 	// 广告主ids，上限50

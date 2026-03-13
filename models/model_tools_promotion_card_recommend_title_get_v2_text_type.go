@@ -15,8 +15,8 @@ type ToolsPromotionCardRecommendTitleGetV2TextType string
 
 // List of tools_promotion_card_recommend_title_get_v2_text_type
 const (
-	CALL_TO_ACTION_ToolsPromotionCardRecommendTitleGetV2TextType ToolsPromotionCardRecommendTitleGetV2TextType = "CALL_TO_ACTION"
 	CARD_TITLE_ToolsPromotionCardRecommendTitleGetV2TextType     ToolsPromotionCardRecommendTitleGetV2TextType = "CARD_TITLE"
+	CALL_TO_ACTION_ToolsPromotionCardRecommendTitleGetV2TextType ToolsPromotionCardRecommendTitleGetV2TextType = "CALL_TO_ACTION"
 	PROMOTION_ToolsPromotionCardRecommendTitleGetV2TextType      ToolsPromotionCardRecommendTitleGetV2TextType = "PROMOTION"
 )
 

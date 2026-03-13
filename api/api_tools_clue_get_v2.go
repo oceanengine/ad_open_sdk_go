@@ -23,14 +23,15 @@ import (
 type ToolsClueGetV2ApiService service
 
 type ApiOpenApi2ToolsClueGetGetRequest struct {
-	ctx           context.Context
-	ApiService    *ToolsClueGetV2ApiService
-	advertiserIds *[]int64
-	startTime     *string
-	endTime       *string
-	page          *int32
-	pageSize      *int32
-	clueIds       *[]int64
+	ctx                    context.Context
+	ApiService             *ToolsClueGetV2ApiService
+	advertiserIds          *[]int64
+	startTime              *string
+	endTime                *string
+	page                   *int32
+	pageSize               *int32
+	clueIds                *[]int64
+	encryptSensitiveFields *bool
 }
 
 func (r *ApiOpenApi2ToolsClueGetGetRequest) AdvertiserIds(advertiserIds []int64) *ApiOpenApi2ToolsClueGetGetRequest {
@@ -60,6 +61,11 @@ func (r *ApiOpenApi2ToolsClueGetGetRequest) PageSize(pageSize int32) *ApiOpenApi
 
 func (r *ApiOpenApi2ToolsClueGetGetRequest) ClueIds(clueIds []int64) *ApiOpenApi2ToolsClueGetGetRequest {
 	r.clueIds = &clueIds
+	return r
+}
+
+func (r *ApiOpenApi2ToolsClueGetGetRequest) EncryptSensitiveFields(encryptSensitiveFields bool) *ApiOpenApi2ToolsClueGetGetRequest {
+	r.encryptSensitiveFields = &encryptSensitiveFields
 	return r
 }
 
@@ -133,6 +139,9 @@ func (a *ToolsClueGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueGetGetReque
 	}
 	if r.clueIds != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "clue_ids", r.clueIds)
+	}
+	if r.encryptSensitiveFields != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "encrypt_sensitive_fields", r.encryptSensitiveFields)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

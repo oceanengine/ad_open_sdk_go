@@ -29,6 +29,7 @@ type ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequest struct {
 	idType       *string
 	promotionId  *int64
 	materialId   *int64
+	projectId    *int64
 }
 
 // 广告主ID
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequest) AdvertiserId(advertiser
 	return r
 }
 
-// 查询条件，可选值:\&quot;ID_TYPE_PROJECT\&quot;,\&quot;ID_TYPE_PROMOTION\&quot;
+// 查询条件，可选值:\&quot;ID_TYPE_PROJECT\&quot;,\&quot;ID_TYPE_PROMOTION\&quot;,\&quot;ID_TYPE_MATERIAL\&quot;
 func (r *ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequest) IdType(idType string) *ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequest {
 	r.idType = &idType
 	return r
@@ -52,6 +53,12 @@ func (r *ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequest) PromotionId(promotionId
 // 素材ID，查询素材预览时使用
 func (r *ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequest) MaterialId(materialId int64) *ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequest {
 	r.materialId = &materialId
+	return r
+}
+
+// 项目ID
+func (r *ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequest) ProjectId(projectId int64) *ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequest {
+	r.projectId = &projectId
 	return r
 }
 
@@ -113,15 +120,17 @@ func (a *ToolsAdPreviewQrcodeGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsA
 	if r.idType == nil {
 		return localVarReturnValue, nil, ReportError("idType is required and must be specified")
 	}
-	if r.promotionId == nil {
-		return localVarReturnValue, nil, ReportError("promotionId is required and must be specified")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "id_type", r.idType)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "promotion_id", r.promotionId)
+	if r.promotionId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "promotion_id", r.promotionId)
+	}
 	if r.materialId != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "material_id", r.materialId)
+	}
+	if r.projectId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "project_id", r.projectId)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

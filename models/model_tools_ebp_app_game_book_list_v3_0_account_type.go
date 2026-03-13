@@ -15,9 +15,7 @@ type ToolsEbpAppGameBookListV30AccountType string
 
 // List of tools_ebp_app_game_book_list_v3.0_account_type
 const (
-	AD_ToolsEbpAppGameBookListV30AccountType   ToolsEbpAppGameBookListV30AccountType = "AD"
-	BP_ToolsEbpAppGameBookListV30AccountType   ToolsEbpAppGameBookListV30AccountType = "BP"
-	STAR_ToolsEbpAppGameBookListV30AccountType ToolsEbpAppGameBookListV30AccountType = "STAR"
+	EBP_ToolsEbpAppGameBookListV30AccountType ToolsEbpAppGameBookListV30AccountType = "EBP"
 )
 
 // Ptr returns reference to tools_ebp_app_game_book_list_v3.0_account_type value

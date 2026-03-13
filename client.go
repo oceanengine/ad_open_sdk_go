@@ -1,5 +1,5 @@
 /*
-API version: 1.1.82
+API version: 1.1.83
 */
 package ad_open_sdk_go
 
@@ -1143,10 +1143,6 @@ func (c *Client) EbpLevelGetV2Api() *api.EbpLevelGetV2ApiService {
 	return c.ApiClient.EbpLevelGetV2Api
 }
 
-func (c *Client) EnterpriseBindListGetV10Api() *api.EnterpriseBindListGetV10ApiService {
-	return c.ApiClient.EnterpriseBindListGetV10Api
-}
-
 func (c *Client) EventManagerAbnormalAssetsGetV30Api() *api.EventManagerAbnormalAssetsGetV30ApiService {
 	return c.ApiClient.EventManagerAbnormalAssetsGetV30Api
 }
@@ -1703,6 +1699,26 @@ func (c *Client) Oauth2RenewTokenApi() *api.Oauth2RenewTokenApiService {
 	return c.ApiClient.Oauth2RenewTokenApi
 }
 
+func (c *Client) OcProjectMaterialCreateV30Api() *api.OcProjectMaterialCreateV30ApiService {
+	return c.ApiClient.OcProjectMaterialCreateV30Api
+}
+
+func (c *Client) OcProjectMaterialDeleteV30Api() *api.OcProjectMaterialDeleteV30ApiService {
+	return c.ApiClient.OcProjectMaterialDeleteV30Api
+}
+
+func (c *Client) OcProjectMaterialGetV30Api() *api.OcProjectMaterialGetV30ApiService {
+	return c.ApiClient.OcProjectMaterialGetV30Api
+}
+
+func (c *Client) OcProjectMaterialStatusUpdateV30Api() *api.OcProjectMaterialStatusUpdateV30ApiService {
+	return c.ApiClient.OcProjectMaterialStatusUpdateV30Api
+}
+
+func (c *Client) OcProjectRejectReasonGetV30Api() *api.OcProjectRejectReasonGetV30ApiService {
+	return c.ApiClient.OcProjectRejectReasonGetV30Api
+}
+
 func (c *Client) OpenMaterialAuditProGetV30Api() *api.OpenMaterialAuditProGetV30ApiService {
 	return c.ApiClient.OpenMaterialAuditProGetV30Api
 }
@@ -1731,8 +1747,16 @@ func (c *Client) ProjectCostProtectStatusGetV30Api() *api.ProjectCostProtectStat
 	return c.ApiClient.ProjectCostProtectStatusGetV30Api
 }
 
+func (c *Client) ProjectCpaBidUpdateV30Api() *api.ProjectCpaBidUpdateV30ApiService {
+	return c.ApiClient.ProjectCpaBidUpdateV30Api
+}
+
 func (c *Client) ProjectCreateV30Api() *api.ProjectCreateV30ApiService {
 	return c.ApiClient.ProjectCreateV30Api
+}
+
+func (c *Client) ProjectDeepCpaBidUpdateV30Api() *api.ProjectDeepCpaBidUpdateV30ApiService {
+	return c.ApiClient.ProjectDeepCpaBidUpdateV30Api
 }
 
 func (c *Client) ProjectDeleteV30Api() *api.ProjectDeleteV30ApiService {
@@ -2815,6 +2839,10 @@ func (c *Client) SharedWalletSharedRelationCreateV30Api() *api.SharedWalletShare
 	return c.ApiClient.SharedWalletSharedRelationCreateV30Api
 }
 
+func (c *Client) SharedWalletSubWalletCreateV30Api() *api.SharedWalletSubWalletCreateV30ApiService {
+	return c.ApiClient.SharedWalletSubWalletCreateV30Api
+}
+
 func (c *Client) SharedWalletTransactionDetailGetV30Api() *api.SharedWalletTransactionDetailGetV30ApiService {
 	return c.ApiClient.SharedWalletTransactionDetailGetV30Api
 }
@@ -3127,6 +3155,10 @@ func (c *Client) StarMcnProviderGetParticipatedTaskV2Api() *api.StarMcnProviderG
 	return c.ApiClient.StarMcnProviderGetParticipatedTaskV2Api
 }
 
+func (c *Client) StarMcnProviderGetRecruitInfoGetV2Api() *api.StarMcnProviderGetRecruitInfoGetV2ApiService {
+	return c.ApiClient.StarMcnProviderGetRecruitInfoGetV2Api
+}
+
 func (c *Client) StarMcnProviderGetTagOnTaskV2Api() *api.StarMcnProviderGetTagOnTaskV2ApiService {
 	return c.ApiClient.StarMcnProviderGetTagOnTaskV2Api
 }
@@ -3157,6 +3189,10 @@ func (c *Client) StarMcnProviderHandleJoinedAuthorV2Api() *api.StarMcnProviderHa
 
 func (c *Client) StarMcnProviderUploadSearchItemV2Api() *api.StarMcnProviderUploadSearchItemV2ApiService {
 	return c.ApiClient.StarMcnProviderUploadSearchItemV2Api
+}
+
+func (c *Client) StarMcnRecuritProviderGetTaskOrderListGetV2Api() *api.StarMcnRecuritProviderGetTaskOrderListGetV2ApiService {
+	return c.ApiClient.StarMcnRecuritProviderGetTaskOrderListGetV2Api
 }
 
 func (c *Client) StarOrderApproveResourceV2Api() *api.StarOrderApproveResourceV2ApiService {
@@ -3787,10 +3823,6 @@ func (c *Client) ToolsDownloadPackageParseV2Api() *api.ToolsDownloadPackageParse
 	return c.ApiClient.ToolsDownloadPackageParseV2Api
 }
 
-func (c *Client) ToolsEbpAppDetailV30Api() *api.ToolsEbpAppDetailV30ApiService {
-	return c.ApiClient.ToolsEbpAppDetailV30Api
-}
-
 func (c *Client) ToolsEbpAppExtendCreateV30Api() *api.ToolsEbpAppExtendCreateV30ApiService {
 	return c.ApiClient.ToolsEbpAppExtendCreateV30Api
 }
@@ -3825,10 +3857,6 @@ func (c *Client) ToolsEbpAssetAuthCancelV30Api() *api.ToolsEbpAssetAuthCancelV30
 
 func (c *Client) ToolsEbpAssetAuthListV30Api() *api.ToolsEbpAssetAuthListV30ApiService {
 	return c.ApiClient.ToolsEbpAssetAuthListV30Api
-}
-
-func (c *Client) ToolsEbpAssetAuthV30Api() *api.ToolsEbpAssetAuthV30ApiService {
-	return c.ApiClient.ToolsEbpAssetAuthV30Api
 }
 
 func (c *Client) ToolsEbpMaterialAuthCreateV30Api() *api.ToolsEbpMaterialAuthCreateV30ApiService {
@@ -4045,6 +4073,10 @@ func (c *Client) ToolsLandingGroupUpdateV2Api() *api.ToolsLandingGroupUpdateV2Ap
 
 func (c *Client) ToolsLiveAuthorizeListV2Api() *api.ToolsLiveAuthorizeListV2ApiService {
 	return c.ApiClient.ToolsLiveAuthorizeListV2Api
+}
+
+func (c *Client) ToolsLogSearchDetailGetV2Api() *api.ToolsLogSearchDetailGetV2ApiService {
+	return c.ApiClient.ToolsLogSearchDetailGetV2Api
 }
 
 func (c *Client) ToolsLogSearchV2Api() *api.ToolsLogSearchV2ApiService {
@@ -4443,12 +4475,44 @@ func (c *Client) ToolsWechatGameListV30Api() *api.ToolsWechatGameListV30ApiServi
 	return c.ApiClient.ToolsWechatGameListV30Api
 }
 
+func (c *Client) UniProjectAwemeAuthorizedGetV30Api() *api.UniProjectAwemeAuthorizedGetV30ApiService {
+	return c.ApiClient.UniProjectAwemeAuthorizedGetV30Api
+}
+
+func (c *Client) UniProjectCreateV30Api() *api.UniProjectCreateV30ApiService {
+	return c.ApiClient.UniProjectCreateV30Api
+}
+
+func (c *Client) UniProjectListGetV30Api() *api.UniProjectListGetV30ApiService {
+	return c.ApiClient.UniProjectListGetV30Api
+}
+
+func (c *Client) UniProjectMonetizationModeUpdateV30Api() *api.UniProjectMonetizationModeUpdateV30ApiService {
+	return c.ApiClient.UniProjectMonetizationModeUpdateV30Api
+}
+
+func (c *Client) UniProjectUpdateV30Api() *api.UniProjectUpdateV30ApiService {
+	return c.ApiClient.UniProjectUpdateV30Api
+}
+
 func (c *Client) UploadStatementV2Api() *api.UploadStatementV2ApiService {
 	return c.ApiClient.UploadStatementV2Api
 }
 
 func (c *Client) UserInfoV2Api() *api.UserInfoV2ApiService {
 	return c.ApiClient.UserInfoV2Api
+}
+
+func (c *Client) WalletChargeVerifyGetV30Api() *api.WalletChargeVerifyGetV30ApiService {
+	return c.ApiClient.WalletChargeVerifyGetV30Api
+}
+
+func (c *Client) WalletPrepayChargeGenerateRemittanceCodeCreateV30Api() *api.WalletPrepayChargeGenerateRemittanceCodeCreateV30ApiService {
+	return c.ApiClient.WalletPrepayChargeGenerateRemittanceCodeCreateV30Api
+}
+
+func (c *Client) WalletRemittanceCodeListGetV30Api() *api.WalletRemittanceCodeListGetV30ApiService {
+	return c.ApiClient.WalletRemittanceCodeListGetV30Api
 }
 
 func (c *Client) YuntuAudienceInfoCreateV30Api() *api.YuntuAudienceInfoCreateV30ApiService {

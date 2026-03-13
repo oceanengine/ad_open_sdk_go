@@ -35,6 +35,7 @@ type ApiOpenApiV30ToolsEbpAppGameBookListGetRequest struct {
 	pageSize             *int64
 }
 
+// 操作用户id
 func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
 	r.accountId = &accountId
 	return r
@@ -51,7 +52,6 @@ func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AssetOwnership(assetOwn
 	return r
 }
 
-// 操作用户id
 func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AssetManagementScope(assetManagementScope ToolsEbpAppGameBookListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
 	r.assetManagementScope = &assetManagementScope
 	return r

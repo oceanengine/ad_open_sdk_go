@@ -17,6 +17,7 @@ type ToolsAppManagementUploadTaskCreateV2AccountType string
 const (
 	AD_ToolsAppManagementUploadTaskCreateV2AccountType   ToolsAppManagementUploadTaskCreateV2AccountType = "AD"
 	BP_ToolsAppManagementUploadTaskCreateV2AccountType   ToolsAppManagementUploadTaskCreateV2AccountType = "BP"
+	EBP_ToolsAppManagementUploadTaskCreateV2AccountType  ToolsAppManagementUploadTaskCreateV2AccountType = "EBP"
 	STAR_ToolsAppManagementUploadTaskCreateV2AccountType ToolsAppManagementUploadTaskCreateV2AccountType = "STAR"
 )
 

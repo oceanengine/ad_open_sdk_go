@@ -15,7 +15,6 @@ type ToolsEbpAppExtendCreateV30AccountType string
 
 // List of tools_ebp_app_extend_create_v3.0_account_type
 const (
-	BP_ToolsEbpAppExtendCreateV30AccountType  ToolsEbpAppExtendCreateV30AccountType = "BP"
 	EBP_ToolsEbpAppExtendCreateV30AccountType ToolsEbpAppExtendCreateV30AccountType = "EBP"
 )
 

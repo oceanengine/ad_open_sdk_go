@@ -73,7 +73,7 @@ type LocalReportAudienceGetV30ResponseDataListInnerFields struct {
 	//
 	VideoOtoPayOrderCountForRoi2 *int64 `json:"video_oto_pay_order_count_for_roi2,omitempty"`
 	//
-	VideoOtoPayOrderRoi2New *int64 `json:"video_oto_pay_order_roi2_new,omitempty"`
+	VideoOtoPayOrderRoi2New *float64 `json:"video_oto_pay_order_roi2_new,omitempty"`
 	//
 	VideoOtoPayOrderStatAmount *float64 `json:"video_oto_pay_order_stat_amount,omitempty"`
 	//

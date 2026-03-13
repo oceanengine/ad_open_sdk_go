@@ -15,8 +15,9 @@ type ToolsAppManagementUploadTaskListV2AccountType string
 
 // List of tools_app_management_upload_task_list_v2_account_type
 const (
-	AD_ToolsAppManagementUploadTaskListV2AccountType ToolsAppManagementUploadTaskListV2AccountType = "AD"
-	BP_ToolsAppManagementUploadTaskListV2AccountType ToolsAppManagementUploadTaskListV2AccountType = "BP"
+	AD_ToolsAppManagementUploadTaskListV2AccountType  ToolsAppManagementUploadTaskListV2AccountType = "AD"
+	BP_ToolsAppManagementUploadTaskListV2AccountType  ToolsAppManagementUploadTaskListV2AccountType = "BP"
+	EBP_ToolsAppManagementUploadTaskListV2AccountType ToolsAppManagementUploadTaskListV2AccountType = "EBP"
 )
 
 // Ptr returns reference to tools_app_management_upload_task_list_v2_account_type value

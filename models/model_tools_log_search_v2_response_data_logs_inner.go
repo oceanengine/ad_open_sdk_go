@@ -28,4 +28,6 @@ type ToolsLogSearchV2ResponseDataLogsInner struct {
 	Operator *string `json:"operator,omitempty"`
 	//
 	OptIp *string `json:"opt_ip,omitempty"`
+	//
+	SecondLogId *int64 `json:"second_log_id,omitempty"`
 }

@@ -22,6 +22,7 @@ type PrepayChargeGenerateRemittanceCodeCreateV30Request struct {
 	ChargeTargetType PrepayChargeGenerateRemittanceCodeCreateV30ChargeTargetType     `json:"charge_target_type"`
 	ChargeType       PrepayChargeGenerateRemittanceCodeCreateV30ChargeType           `json:"charge_type"`
 	ContractInfo     *PrepayChargeGenerateRemittanceCodeCreateV30RequestContractInfo `json:"contract_info,omitempty"`
+	Platform         *PrepayChargeGenerateRemittanceCodeCreateV30Platform            `json:"platform,omitempty"`
 	// 唯一请求ID
 	RequestId string `json:"request_id"`
 }

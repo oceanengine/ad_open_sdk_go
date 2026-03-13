@@ -27,11 +27,11 @@ type ApiOpenApiV30ToolsEbpAppExtendListGetRequest struct {
 	ApiService  *ToolsEbpAppExtendListV30ApiService
 	accountId   *int64
 	packageId   *string
-	page        *int64
-	pageSize    *int64
 	accountType *ToolsEbpAppExtendListV30AccountType
 	filtering   *ToolsEbpAppExtendListV30Filtering
 	updateTime  *ToolsEbpAppExtendListV30UpdateTime
+	page        *int64
+	pageSize    *int64
 }
 
 func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
@@ -41,17 +41,6 @@ func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) AccountId(accountId int64
 
 func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) PackageId(packageId string) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
 	r.packageId = &packageId
-	return r
-}
-
-func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) Page(page int64) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
-	r.page = &page
-	return r
-}
-
-// 页面大小
-func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) PageSize(pageSize int64) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
-	r.pageSize = &pageSize
 	return r
 }
 
@@ -70,6 +59,17 @@ func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) Filtering(filtering Tools
 // 时间范围
 func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) UpdateTime(updateTime ToolsEbpAppExtendListV30UpdateTime) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
 	r.updateTime = &updateTime
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) Page(page int64) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
+	r.page = &page
+	return r
+}
+
+// 页面大小
+func (r *ApiOpenApiV30ToolsEbpAppExtendListGetRequest) PageSize(pageSize int64) *ApiOpenApiV30ToolsEbpAppExtendListGetRequest {
+	r.pageSize = &pageSize
 	return r
 }
 
@@ -131,12 +131,6 @@ func (a *ToolsEbpAppExtendListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbp
 	if r.packageId == nil {
 		return localVarReturnValue, nil, ReportError("packageId is required and must be specified")
 	}
-	if r.page == nil {
-		return localVarReturnValue, nil, ReportError("page is required and must be specified")
-	}
-	if r.pageSize == nil {
-		return localVarReturnValue, nil, ReportError("pageSize is required and must be specified")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "account_id", r.accountId)
 	if r.accountType != nil {
@@ -146,10 +140,14 @@ func (a *ToolsEbpAppExtendListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbp
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
-	parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
 	if r.updateTime != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "update_time", r.updateTime)
+	}
+	if r.page != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
+	}
+	if r.pageSize != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

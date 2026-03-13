@@ -15,17 +15,19 @@ type ReportCustomConfigGetV30DataListDataTopic string
 
 // List of report_custom_config_get_v3.0_data_list_data_topic
 const (
-	BASIC_DATA_ReportCustomConfigGetV30DataListDataTopic           ReportCustomConfigGetV30DataListDataTopic = "BASIC_DATA"
-	BIDWORD_DATA_ReportCustomConfigGetV30DataListDataTopic         ReportCustomConfigGetV30DataListDataTopic = "BIDWORD_DATA"
-	CREATIVE_DATA_ReportCustomConfigGetV30DataListDataTopic        ReportCustomConfigGetV30DataListDataTopic = "CREATIVE_DATA"
-	DMP_DATA_ReportCustomConfigGetV30DataListDataTopic             ReportCustomConfigGetV30DataListDataTopic = "DMP_DATA"
-	DPA_VIDEO_DATA_ReportCustomConfigGetV30DataListDataTopic       ReportCustomConfigGetV30DataListDataTopic = "DPA_VIDEO_DATA"
-	MATERIAL_BOOST_DATA_ReportCustomConfigGetV30DataListDataTopic  ReportCustomConfigGetV30DataListDataTopic = "MATERIAL_BOOST_DATA"
-	MATERIAL_DATA_ReportCustomConfigGetV30DataListDataTopic        ReportCustomConfigGetV30DataListDataTopic = "MATERIAL_DATA"
-	ONE_KEY_BOOST_DATA_ReportCustomConfigGetV30DataListDataTopic   ReportCustomConfigGetV30DataListDataTopic = "ONE_KEY_BOOST_DATA"
-	PRODUCT_DATA_ReportCustomConfigGetV30DataListDataTopic         ReportCustomConfigGetV30DataListDataTopic = "PRODUCT_DATA"
-	QUERY_DATA_ReportCustomConfigGetV30DataListDataTopic           ReportCustomConfigGetV30DataListDataTopic = "QUERY_DATA"
-	VIDEO_DUARATION_DATA_ReportCustomConfigGetV30DataListDataTopic ReportCustomConfigGetV30DataListDataTopic = "VIDEO_DUARATION_DATA"
+	BASIC_DATA_ReportCustomConfigGetV30DataListDataTopic                  ReportCustomConfigGetV30DataListDataTopic = "BASIC_DATA"
+	BIDWORD_DATA_ReportCustomConfigGetV30DataListDataTopic                ReportCustomConfigGetV30DataListDataTopic = "BIDWORD_DATA"
+	CREATIVE_DATA_ReportCustomConfigGetV30DataListDataTopic               ReportCustomConfigGetV30DataListDataTopic = "CREATIVE_DATA"
+	DMP_DATA_ReportCustomConfigGetV30DataListDataTopic                    ReportCustomConfigGetV30DataListDataTopic = "DMP_DATA"
+	DPA_VIDEO_DATA_ReportCustomConfigGetV30DataListDataTopic              ReportCustomConfigGetV30DataListDataTopic = "DPA_VIDEO_DATA"
+	MATERIAL_BOOST_DATA_ReportCustomConfigGetV30DataListDataTopic         ReportCustomConfigGetV30DataListDataTopic = "MATERIAL_BOOST_DATA"
+	MATERIAL_DATA_ReportCustomConfigGetV30DataListDataTopic               ReportCustomConfigGetV30DataListDataTopic = "MATERIAL_DATA"
+	ONE_KEY_BOOST_DATA_ReportCustomConfigGetV30DataListDataTopic          ReportCustomConfigGetV30DataListDataTopic = "ONE_KEY_BOOST_DATA"
+	PRODUCT_DATA_ReportCustomConfigGetV30DataListDataTopic                ReportCustomConfigGetV30DataListDataTopic = "PRODUCT_DATA"
+	QUERY_DATA_ReportCustomConfigGetV30DataListDataTopic                  ReportCustomConfigGetV30DataListDataTopic = "QUERY_DATA"
+	UNI_PROMOTION_DATA_ReportCustomConfigGetV30DataListDataTopic          ReportCustomConfigGetV30DataListDataTopic = "UNI_PROMOTION_DATA"
+	UNI_PROMOTION_MATERIAL_DATA_ReportCustomConfigGetV30DataListDataTopic ReportCustomConfigGetV30DataListDataTopic = "UNI_PROMOTION_MATERIAL_DATA"
+	VIDEO_DUARATION_DATA_ReportCustomConfigGetV30DataListDataTopic        ReportCustomConfigGetV30DataListDataTopic = "VIDEO_DUARATION_DATA"
 )
 
 // Ptr returns reference to report_custom_config_get_v3.0_data_list_data_topic value

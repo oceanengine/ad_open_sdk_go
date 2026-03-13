@@ -20,6 +20,8 @@ type ToolsAdPreviewQrcodeGetV30ResponseDataData struct {
 	//
 	MaterialId *int64 `json:"material_id,omitempty"`
 	//
+	ProjectId *int64 `json:"project_id,omitempty"`
+	//
 	PromotionId int64 `json:"promotion_id"`
 	//
 	QrcodeMsgUrl string `json:"qrcode_msg_url"`

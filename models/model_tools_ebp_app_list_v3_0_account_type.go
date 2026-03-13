@@ -15,7 +15,6 @@ type ToolsEbpAppListV30AccountType string
 
 // List of tools_ebp_app_list_v3.0_account_type
 const (
-	BP_ToolsEbpAppListV30AccountType  ToolsEbpAppListV30AccountType = "BP"
 	EBP_ToolsEbpAppListV30AccountType ToolsEbpAppListV30AccountType = "EBP"
 )
 

@@ -15,11 +15,14 @@ type ToolsEbpAssetAuthListV30AssetType string
 
 // List of tools_ebp_asset_auth_list_v3.0_asset_type
 const (
+	APP_ToolsEbpAssetAuthListV30AssetType           ToolsEbpAssetAuthListV30AssetType = "APP"
 	APPLETS_ToolsEbpAssetAuthListV30AssetType       ToolsEbpAssetAuthListV30AssetType = "APPLETS"
 	BYTED_APPLETS_ToolsEbpAssetAuthListV30AssetType ToolsEbpAssetAuthListV30AssetType = "BYTED_APPLETS"
 	BYTED_GAME_ToolsEbpAssetAuthListV30AssetType    ToolsEbpAssetAuthListV30AssetType = "BYTED_GAME"
 	DPA_ToolsEbpAssetAuthListV30AssetType           ToolsEbpAssetAuthListV30AssetType = "DPA"
+	HARMONY_APP_ToolsEbpAssetAuthListV30AssetType   ToolsEbpAssetAuthListV30AssetType = "HARMONY_APP"
 	PRODUCT_ToolsEbpAssetAuthListV30AssetType       ToolsEbpAssetAuthListV30AssetType = "PRODUCT"
+	QUICK_APP_ToolsEbpAssetAuthListV30AssetType     ToolsEbpAssetAuthListV30AssetType = "QUICK_APP"
 	WECHAT_GAME_ToolsEbpAssetAuthListV30AssetType   ToolsEbpAssetAuthListV30AssetType = "WECHAT_GAME"
 )
 

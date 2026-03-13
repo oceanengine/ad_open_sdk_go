@@ -27,10 +27,10 @@ type ApiOpenApiV30ToolsEbpAppListGetRequest struct {
 	ApiService           *ToolsEbpAppListV30ApiService
 	accountId            *int64
 	accountType          *ToolsEbpAppListV30AccountType
-	page                 *int32
-	pageSize             *int32
 	assetManagementScope *ToolsEbpAppListV30AssetManagementScope
 	filtering            *ToolsEbpAppListV30Filtering
+	page                 *int32
+	pageSize             *int32
 }
 
 func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpAppListGetRequest {
@@ -44,16 +44,6 @@ func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AccountType(accountType ToolsEb
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) Page(page int32) *ApiOpenApiV30ToolsEbpAppListGetRequest {
-	r.page = &page
-	return r
-}
-
-func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) PageSize(pageSize int32) *ApiOpenApiV30ToolsEbpAppListGetRequest {
-	r.pageSize = &pageSize
-	return r
-}
-
 func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AssetManagementScope(assetManagementScope ToolsEbpAppListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpAppListGetRequest {
 	r.assetManagementScope = &assetManagementScope
 	return r
@@ -62,6 +52,16 @@ func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AssetManagementScope(assetManag
 // 过滤器
 func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) Filtering(filtering ToolsEbpAppListV30Filtering) *ApiOpenApiV30ToolsEbpAppListGetRequest {
 	r.filtering = &filtering
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) Page(page int32) *ApiOpenApiV30ToolsEbpAppListGetRequest {
+	r.page = &page
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) PageSize(pageSize int32) *ApiOpenApiV30ToolsEbpAppListGetRequest {
+	r.pageSize = &pageSize
 	return r
 }
 
@@ -123,21 +123,6 @@ func (a *ToolsEbpAppListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppLis
 	if r.accountType == nil {
 		return localVarReturnValue, nil, ReportError("accountType is required and must be specified")
 	}
-	if r.page == nil {
-		return localVarReturnValue, nil, ReportError("page is required and must be specified")
-	}
-	if *r.page < 1 {
-		return localVarReturnValue, nil, ReportError("page must be greater than 1")
-	}
-	if r.pageSize == nil {
-		return localVarReturnValue, nil, ReportError("pageSize is required and must be specified")
-	}
-	if *r.pageSize < 1 {
-		return localVarReturnValue, nil, ReportError("pageSize must be greater than 1")
-	}
-	if *r.pageSize > 200 {
-		return localVarReturnValue, nil, ReportError("pageSize must be less than 200")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "account_id", r.accountId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
@@ -147,8 +132,12 @@ func (a *ToolsEbpAppListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppLis
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
-	parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	if r.page != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
+	}
+	if r.pageSize != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

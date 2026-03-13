@@ -15,9 +15,7 @@ type ToolsEbpAppPublishV30AccountType string
 
 // List of tools_ebp_app_publish_v3.0_account_type
 const (
-	AD_ToolsEbpAppPublishV30AccountType   ToolsEbpAppPublishV30AccountType = "AD"
-	BP_ToolsEbpAppPublishV30AccountType   ToolsEbpAppPublishV30AccountType = "BP"
-	STAR_ToolsEbpAppPublishV30AccountType ToolsEbpAppPublishV30AccountType = "STAR"
+	EBP_ToolsEbpAppPublishV30AccountType ToolsEbpAppPublishV30AccountType = "EBP"
 )
 
 // Ptr returns reference to tools_ebp_app_publish_v3.0_account_type value

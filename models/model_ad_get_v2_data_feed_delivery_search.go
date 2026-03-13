@@ -15,8 +15,8 @@ type AdGetV2DataFeedDeliverySearch string
 
 // List of ad_get_v2_data_feed_delivery_search
 const (
-	HAS_OPEN_AdGetV2DataFeedDeliverySearch AdGetV2DataFeedDeliverySearch = "HAS_OPEN"
 	DISABLED_AdGetV2DataFeedDeliverySearch AdGetV2DataFeedDeliverySearch = "DISABLED"
+	HAS_OPEN_AdGetV2DataFeedDeliverySearch AdGetV2DataFeedDeliverySearch = "HAS_OPEN"
 )
 
 // Ptr returns reference to ad_get_v2_data_feed_delivery_search value

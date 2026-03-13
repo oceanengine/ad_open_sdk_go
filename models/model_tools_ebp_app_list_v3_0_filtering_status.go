@@ -15,17 +15,12 @@ type ToolsEbpAppListV30FilteringStatus string
 
 // List of tools_ebp_app_list_v3.0_filtering_status
 const (
-	BOOKING_ToolsEbpAppListV30FilteringStatus            ToolsEbpAppListV30FilteringStatus = "BOOKING"
-	IN_USE_ToolsEbpAppListV30FilteringStatus             ToolsEbpAppListV30FilteringStatus = "IN_USE"
-	OFFLINE_ToolsEbpAppListV30FilteringStatus            ToolsEbpAppListV30FilteringStatus = "OFFLINE"
-	OFFLINE_BY_REG_ToolsEbpAppListV30FilteringStatus     ToolsEbpAppListV30FilteringStatus = "OFFLINE_BY_REG"
-	OVERDUE_ToolsEbpAppListV30FilteringStatus            ToolsEbpAppListV30FilteringStatus = "OVERDUE"
-	PUNISHED_ToolsEbpAppListV30FilteringStatus           ToolsEbpAppListV30FilteringStatus = "PUNISHED"
-	PUNISH_FIRST_LEVEL_ToolsEbpAppListV30FilteringStatus ToolsEbpAppListV30FilteringStatus = "PUNISH_FIRST_LEVEL"
-	PUNISH_SECOND_LEVE_ToolsEbpAppListV30FilteringStatus ToolsEbpAppListV30FilteringStatus = "PUNISH_SECOND_LEVE"
-	REVIEWING_ToolsEbpAppListV30FilteringStatus          ToolsEbpAppListV30FilteringStatus = "REVIEWING"
-	REVIEW_FAIL_ToolsEbpAppListV30FilteringStatus        ToolsEbpAppListV30FilteringStatus = "REVIEW_FAIL"
-	REVIEW_SUCCESS_ToolsEbpAppListV30FilteringStatus     ToolsEbpAppListV30FilteringStatus = "REVIEW_SUCCESS"
+	IN_USE_ToolsEbpAppListV30FilteringStatus         ToolsEbpAppListV30FilteringStatus = "IN_USE"
+	OFFLINE_ToolsEbpAppListV30FilteringStatus        ToolsEbpAppListV30FilteringStatus = "OFFLINE"
+	PUNISHED_ToolsEbpAppListV30FilteringStatus       ToolsEbpAppListV30FilteringStatus = "PUNISHED"
+	REVIEWING_ToolsEbpAppListV30FilteringStatus      ToolsEbpAppListV30FilteringStatus = "REVIEWING"
+	REVIEW_FAIL_ToolsEbpAppListV30FilteringStatus    ToolsEbpAppListV30FilteringStatus = "REVIEW_FAIL"
+	REVIEW_SUCCESS_ToolsEbpAppListV30FilteringStatus ToolsEbpAppListV30FilteringStatus = "REVIEW_SUCCESS"
 )
 
 // Ptr returns reference to tools_ebp_app_list_v3.0_filtering_status value

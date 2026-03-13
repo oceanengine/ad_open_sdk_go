@@ -16,8 +16,8 @@ type ToolsNoBidSuggestBidV2BudgetMode string
 // List of tools_no_bid_suggest_bid_v2_budget_mode
 const (
 	BUDGET_MODE_TOTAL_ToolsNoBidSuggestBidV2BudgetMode    ToolsNoBidSuggestBidV2BudgetMode = "BUDGET_MODE_TOTAL"
-	BUDGET_MODE_DAY_ToolsNoBidSuggestBidV2BudgetMode      ToolsNoBidSuggestBidV2BudgetMode = "BUDGET_MODE_DAY"
 	BUDGET_MODE_INFINITE_ToolsNoBidSuggestBidV2BudgetMode ToolsNoBidSuggestBidV2BudgetMode = "BUDGET_MODE_INFINITE"
+	BUDGET_MODE_DAY_ToolsNoBidSuggestBidV2BudgetMode      ToolsNoBidSuggestBidV2BudgetMode = "BUDGET_MODE_DAY"
 )
 
 // Ptr returns reference to tools_no_bid_suggest_bid_v2_budget_mode value

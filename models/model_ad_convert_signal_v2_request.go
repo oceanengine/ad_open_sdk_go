@@ -26,12 +26,12 @@ type AdConvertSignalV2Request struct {
 	BluetoothEnabled *bool `json:"bluetooth_enabled,omitempty"`
 	// 系统启动时间戳（秒级）
 	BootTimeSec *string `json:"boot_time_sec,omitempty"`
-	// 设备机型
-	DeiviceModel *string `json:"deivice_model,omitempty"`
 	// 设备品牌
 	DeviceBrand *string `json:"device_brand,omitempty"`
 	// 设备初始化时间戳
 	DeviceInitTime *string `json:"device_init_time,omitempty"`
+	// 设备机型
+	DeviceModel *string `json:"device_model,omitempty"`
 	// 硬盘大小
 	Disk *string `json:"disk,omitempty"`
 	// 抖音app的安装和更新时间（json数组格式）
@@ -52,6 +52,8 @@ type AdConvertSignalV2Request struct {
 	Ipv4 *string `json:"ipv4,omitempty"`
 	// 客户端事件上报ipv6
 	Ipv6 *string `json:"ipv6,omitempty"`
+	// 转化标记“是否需要跳过归因”
+	IsSkipAttribution *string `json:"is_skip_attribution,omitempty"`
 	// 小程序当前登录状态下的启动参数，多层json map，需要dump成字符串
 	LaunchOption *string `json:"launch_option,omitempty"`
 	// 地理位置的系统开关

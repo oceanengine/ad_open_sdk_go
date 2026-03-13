@@ -17,6 +17,7 @@ type FileVideoUploadTaskListV2AccountType string
 const (
 	ADVERTISER_FileVideoUploadTaskListV2AccountType FileVideoUploadTaskListV2AccountType = "ADVERTISER"
 	AGENT_FileVideoUploadTaskListV2AccountType      FileVideoUploadTaskListV2AccountType = "AGENT"
+	EBP_FileVideoUploadTaskListV2AccountType        FileVideoUploadTaskListV2AccountType = "EBP"
 )
 
 // Ptr returns reference to file_video_upload_task_list_v2_account_type value

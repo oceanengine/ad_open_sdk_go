@@ -15,8 +15,8 @@ type ClueCouponEmployeeCreateV2DataSuccessListUserType string
 
 // List of clue_coupon_employee_create_v2_data_success_list_user_type
 const (
-	TOUTIAO_ClueCouponEmployeeCreateV2DataSuccessListUserType ClueCouponEmployeeCreateV2DataSuccessListUserType = "TOUTIAO"
 	DOUYIN_ClueCouponEmployeeCreateV2DataSuccessListUserType  ClueCouponEmployeeCreateV2DataSuccessListUserType = "DOUYIN"
+	TOUTIAO_ClueCouponEmployeeCreateV2DataSuccessListUserType ClueCouponEmployeeCreateV2DataSuccessListUserType = "TOUTIAO"
 )
 
 // Ptr returns reference to clue_coupon_employee_create_v2_data_success_list_user_type value

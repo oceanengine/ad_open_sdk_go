@@ -25,11 +25,11 @@ import (
 type ApiOpenApiV30ToolsEbpAppExtendListGetRequestExample struct {
 	AccountId   int64                               `json:"account_id"`
 	PackageId   string                              `json:"package_id"`
-	Page        int64                               `json:"page"`
-	PageSize    int64                               `json:"page_size"`
 	AccountType ToolsEbpAppExtendListV30AccountType `json:"account_type,omitempty"`
 	Filtering   ToolsEbpAppExtendListV30Filtering   `json:"filtering,omitempty"`
 	UpdateTime  ToolsEbpAppExtendListV30UpdateTime  `json:"update_time,omitempty"`
+	Page        int64                               `json:"page,omitempty"`
+	PageSize    int64                               `json:"page_size,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/ebp/app_extend/list/ Get
@@ -51,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsEbpAppExtendListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).PackageId(request.PackageId).Page(request.Page).PageSize(request.PageSize).AccountType(request.AccountType).Filtering(request.Filtering).UpdateTime(request.UpdateTime).
+		AccountId(request.AccountId).PackageId(request.PackageId).AccountType(request.AccountType).Filtering(request.Filtering).UpdateTime(request.UpdateTime).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

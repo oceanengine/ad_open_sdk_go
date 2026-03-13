@@ -17,6 +17,7 @@ type ToolsEbpMicroGameUpdateV30SchemaInfoOperateType string
 const (
 	UPDATE_ToolsEbpMicroGameUpdateV30SchemaInfoOperateType ToolsEbpMicroGameUpdateV30SchemaInfoOperateType = "UPDATE"
 	DELETE_ToolsEbpMicroGameUpdateV30SchemaInfoOperateType ToolsEbpMicroGameUpdateV30SchemaInfoOperateType = "DELETE"
+	CREATE_ToolsEbpMicroGameUpdateV30SchemaInfoOperateType ToolsEbpMicroGameUpdateV30SchemaInfoOperateType = "CREATE"
 )
 
 // Ptr returns reference to tools_ebp_micro_game_update_v3.0_schema_info_operate_type value

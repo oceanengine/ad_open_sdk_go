@@ -25,8 +25,9 @@ import (
 type ApiOpenApiV30ToolsAdPreviewQrcodeGetGetRequestExample struct {
 	AdvertiserId int64  `json:"advertiser_id"`
 	IdType       string `json:"id_type"`
-	PromotionId  int64  `json:"promotion_id"`
+	PromotionId  int64  `json:"promotion_id,omitempty"`
 	MaterialId   int64  `json:"material_id,omitempty"`
+	ProjectId    int64  `json:"project_id,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/ad_preview/qrcode_get/ Get
@@ -48,7 +49,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsAdPreviewQrcodeGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).IdType(request.IdType).PromotionId(request.PromotionId).MaterialId(request.MaterialId).
+		AdvertiserId(request.AdvertiserId).IdType(request.IdType).PromotionId(request.PromotionId).MaterialId(request.MaterialId).ProjectId(request.ProjectId).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

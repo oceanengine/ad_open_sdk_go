@@ -14,6 +14,14 @@ package models
 type ToolsEbpAssetAuthListV30ResponseDataPage struct {
 	//
 	HasMore *bool `json:"has_more,omitempty"`
+	// 页码
+	Page *int64 `json:"page,omitempty"`
+	// 页面大小
+	PageSize *int64 `json:"page_size,omitempty"`
 	//
 	Total *int64 `json:"total,omitempty"`
+	// 总数
+	TotalNumber *int64 `json:"total_number,omitempty"`
+	// 总页数
+	TotalPage *int64 `json:"total_page,omitempty"`
 }

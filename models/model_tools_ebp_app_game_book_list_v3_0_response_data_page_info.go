@@ -18,4 +18,6 @@ type ToolsEbpAppGameBookListV30ResponseDataPageInfo struct {
 	PageSize *int64 `json:"page_size,omitempty"`
 	// 总数
 	TotalNumber *int64 `json:"total_number,omitempty"`
+	// 总页数
+	TotalPage *int64 `json:"total_page,omitempty"`
 }

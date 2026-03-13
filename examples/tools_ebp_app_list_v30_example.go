@@ -25,10 +25,10 @@ import (
 type ApiOpenApiV30ToolsEbpAppListGetRequestExample struct {
 	AccountId            int64                                  `json:"account_id"`
 	AccountType          ToolsEbpAppListV30AccountType          `json:"account_type"`
-	Page                 int32                                  `json:"page"`
-	PageSize             int32                                  `json:"page_size"`
 	AssetManagementScope ToolsEbpAppListV30AssetManagementScope `json:"asset_management_scope,omitempty"`
 	Filtering            ToolsEbpAppListV30Filtering            `json:"filtering,omitempty"`
+	Page                 int32                                  `json:"page,omitempty"`
+	PageSize             int32                                  `json:"page_size,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/ebp/app/list/ Get
@@ -50,7 +50,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsEbpAppListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).AccountType(request.AccountType).Page(request.Page).PageSize(request.PageSize).AssetManagementScope(request.AssetManagementScope).Filtering(request.Filtering).
+		AccountId(request.AccountId).AccountType(request.AccountType).AssetManagementScope(request.AssetManagementScope).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

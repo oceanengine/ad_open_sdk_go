@@ -15,15 +15,17 @@ type ReportCustomGetV30DataTopic string
 
 // List of report_custom_get_v3.0_data_topic
 const (
-	BASIC_DATA_ReportCustomGetV30DataTopic           ReportCustomGetV30DataTopic = "BASIC_DATA"
-	BIDWORD_DATA_ReportCustomGetV30DataTopic         ReportCustomGetV30DataTopic = "BIDWORD_DATA"
-	DMP_DATA_ReportCustomGetV30DataTopic             ReportCustomGetV30DataTopic = "DMP_DATA"
-	MATERIAL_BOOST_DATA_ReportCustomGetV30DataTopic  ReportCustomGetV30DataTopic = "MATERIAL_BOOST_DATA"
-	MATERIAL_DATA_ReportCustomGetV30DataTopic        ReportCustomGetV30DataTopic = "MATERIAL_DATA"
-	ONE_KEY_BOOST_DATA_ReportCustomGetV30DataTopic   ReportCustomGetV30DataTopic = "ONE_KEY_BOOST_DATA"
-	PRODUCT_DATA_ReportCustomGetV30DataTopic         ReportCustomGetV30DataTopic = "PRODUCT_DATA"
-	QUERY_DATA_ReportCustomGetV30DataTopic           ReportCustomGetV30DataTopic = "QUERY_DATA"
-	VIDEO_DUARATION_DATA_ReportCustomGetV30DataTopic ReportCustomGetV30DataTopic = "VIDEO_DUARATION_DATA"
+	BASIC_DATA_ReportCustomGetV30DataTopic                ReportCustomGetV30DataTopic = "BASIC_DATA"
+	BIDWORD_DATA_ReportCustomGetV30DataTopic              ReportCustomGetV30DataTopic = "BIDWORD_DATA"
+	DMP_DATA_ReportCustomGetV30DataTopic                  ReportCustomGetV30DataTopic = "DMP_DATA"
+	MATERIAL_BOOST_DATA_ReportCustomGetV30DataTopic       ReportCustomGetV30DataTopic = "MATERIAL_BOOST_DATA"
+	MATERIAL_DATA_ReportCustomGetV30DataTopic             ReportCustomGetV30DataTopic = "MATERIAL_DATA"
+	ONE_KEY_BOOST_DATA_ReportCustomGetV30DataTopic        ReportCustomGetV30DataTopic = "ONE_KEY_BOOST_DATA"
+	PRODUCT_DATA_ReportCustomGetV30DataTopic              ReportCustomGetV30DataTopic = "PRODUCT_DATA"
+	QUERY_DATA_ReportCustomGetV30DataTopic                ReportCustomGetV30DataTopic = "QUERY_DATA"
+	UNI_PROJECT_DATA_ReportCustomGetV30DataTopic          ReportCustomGetV30DataTopic = "UNI_PROJECT_DATA"
+	UNI_PROJECT_MATERIAL_DATA_ReportCustomGetV30DataTopic ReportCustomGetV30DataTopic = "UNI_PROJECT_MATERIAL_DATA"
+	VIDEO_DUARATION_DATA_ReportCustomGetV30DataTopic      ReportCustomGetV30DataTopic = "VIDEO_DUARATION_DATA"
 )
 
 // Ptr returns reference to report_custom_get_v3.0_data_topic value

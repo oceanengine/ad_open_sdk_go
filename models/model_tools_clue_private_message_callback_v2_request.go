@@ -15,17 +15,21 @@ type ToolsCluePrivateMessageCallbackV2Request struct {
 	Adinfo *ToolsCluePrivateMessageCallbackV2RequestAdinfo `json:"adinfo,omitempty"`
 	// 授权的广告主id，可以取抖开私信拉取接口里的adv_id
 	AdvertiserId int64 `json:"advertiser_id"`
-	// 接待商家的抖音open id，对齐私信拉取接口里面的 open_id
+	// 接待商家的抖音open id，对齐私信拉取接口里面的 open_id。如果是飞鸽商家，则无需填写。
 	BOpenId string `json:"b_open_id"`
-	// 留资用户的抖音open id，对齐私信拉取接口里面的 open_id
+	// 留资用户的抖音open id，对齐私信拉取接口里面的 open_id。如果是飞鸽商家，则无需填写。
 	COpenId string `json:"c_open_id"`
-	// 抖开接口里面的开发者唯一标识，对齐私信拉取接口里面的 client_key
+	// 抖开接口里面的开发者唯一标识，对齐私信拉取接口里面的 client_key。如果是飞鸽商家，则无需填写。
 	ClientKey       string                                                  `json:"client_key"`
 	ClueConvertInfo ToolsCluePrivateMessageCallbackV2RequestClueConvertInfo `json:"clue_convert_info"`
 	ClueData        ToolsCluePrivateMessageCallbackV2RequestClueData        `json:"clue_data"`
 	// 事件/状态变更发生的秒级时间戳
-	EventTimestamp *int64                                           `json:"event_timestamp,omitempty"`
-	MsgInfo        *ToolsCluePrivateMessageCallbackV2RequestMsgInfo `json:"msg_info,omitempty"`
+	EventTimestamp *int64 `json:"event_timestamp,omitempty"`
+	// 飞鸽消息接受接口中返回的extra.root_life_account_id，飞鸽商家生服的根户id
+	FeigeRootLifeAccountId *int64 `json:"feige_root_life_account_id,omitempty"`
+	// 飞鸽消息接受接口中返回的guest_info.user_id，是一个加密的C端用户uid
+	FeigeUserId *string                                          `json:"feige_user_id,omitempty"`
+	MsgInfo     *ToolsCluePrivateMessageCallbackV2RequestMsgInfo `json:"msg_info,omitempty"`
 	// 回传打标类型：1:人工打标，2:智能客服识别
 	SourceType *int64 `json:"source_type,omitempty"`
 }

@@ -41,8 +41,9 @@ type AgentTransferTransactionRecordV2ResponseDataRecordsInner struct {
 	PayeeName *string                                               `json:"payee_name,omitempty"`
 	PayeeRole *AgentTransferTransactionRecordV2DataRecordsPayeeRole `json:"payee_role,omitempty"`
 	// 转入方二代账户ID
-	PayeeSecondAdAgentId *string                                              `json:"payee_second_ad_agent_id,omitempty"`
-	Platform             *AgentTransferTransactionRecordV2DataRecordsPlatform `json:"platform,omitempty"`
+	PayeeSecondAdAgentId *string `json:"payee_second_ad_agent_id,omitempty"`
+	// 业务平台
+	Platform *string `json:"platform,omitempty"`
 	// 预借款金额（元）
 	PreloanAmount *float64 `json:"preloan_amount,omitempty"`
 	// 预付金额（元）

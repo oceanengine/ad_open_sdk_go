@@ -15,9 +15,7 @@ type ToolsEbpAppExtendListV30AccountType string
 
 // List of tools_ebp_app_extend_list_v3.0_account_type
 const (
-	AD_ToolsEbpAppExtendListV30AccountType   ToolsEbpAppExtendListV30AccountType = "AD"
-	BP_ToolsEbpAppExtendListV30AccountType   ToolsEbpAppExtendListV30AccountType = "BP"
-	STAR_ToolsEbpAppExtendListV30AccountType ToolsEbpAppExtendListV30AccountType = "STAR"
+	EBP_ToolsEbpAppExtendListV30AccountType ToolsEbpAppExtendListV30AccountType = "EBP"
 )
 
 // Ptr returns reference to tools_ebp_app_extend_list_v3.0_account_type value

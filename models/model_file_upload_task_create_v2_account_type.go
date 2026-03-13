@@ -15,9 +15,9 @@ type FileUploadTaskCreateV2AccountType string
 
 // List of file_upload_task_create_v2_account_type
 const (
-	ADVERTISER_FileUploadTaskCreateV2AccountType    FileUploadTaskCreateV2AccountType = "ADVERTISER"
-	AGENT_FileUploadTaskCreateV2AccountType         FileUploadTaskCreateV2AccountType = "AGENT"
-	ENTERPRISE_BP_FileUploadTaskCreateV2AccountType FileUploadTaskCreateV2AccountType = "ENTERPRISE_BP"
+	ADVERTISER_FileUploadTaskCreateV2AccountType FileUploadTaskCreateV2AccountType = "ADVERTISER"
+	AGENT_FileUploadTaskCreateV2AccountType      FileUploadTaskCreateV2AccountType = "AGENT"
+	EBP_FileUploadTaskCreateV2AccountType        FileUploadTaskCreateV2AccountType = "EBP"
 )
 
 // Ptr returns reference to file_upload_task_create_v2_account_type value

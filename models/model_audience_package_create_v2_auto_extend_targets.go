@@ -17,8 +17,8 @@ type AudiencePackageCreateV2AutoExtendTargets string
 const (
 	GENDER_AudiencePackageCreateV2AutoExtendTargets          AudiencePackageCreateV2AutoExtendTargets = "GENDER"
 	AGE_AudiencePackageCreateV2AutoExtendTargets             AudiencePackageCreateV2AutoExtendTargets = "AGE"
-	AD_TAG_AudiencePackageCreateV2AutoExtendTargets          AudiencePackageCreateV2AutoExtendTargets = "AD_TAG"
 	REGION_AudiencePackageCreateV2AutoExtendTargets          AudiencePackageCreateV2AutoExtendTargets = "REGION"
+	AD_TAG_AudiencePackageCreateV2AutoExtendTargets          AudiencePackageCreateV2AutoExtendTargets = "AD_TAG"
 	INTEREST_TAG_AudiencePackageCreateV2AutoExtendTargets    AudiencePackageCreateV2AutoExtendTargets = "INTEREST_TAG"
 	CUSTOM_AUDIENCE_AudiencePackageCreateV2AutoExtendTargets AudiencePackageCreateV2AutoExtendTargets = "CUSTOM_AUDIENCE"
 )

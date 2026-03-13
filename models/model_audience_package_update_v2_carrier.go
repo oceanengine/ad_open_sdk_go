@@ -16,8 +16,8 @@ type AudiencePackageUpdateV2Carrier string
 // List of audience_package_update_v2_carrier
 const (
 	MOBILE_AudiencePackageUpdateV2Carrier AudiencePackageUpdateV2Carrier = "MOBILE"
-	UNICOM_AudiencePackageUpdateV2Carrier AudiencePackageUpdateV2Carrier = "UNICOM"
 	TELCOM_AudiencePackageUpdateV2Carrier AudiencePackageUpdateV2Carrier = "TELCOM"
+	UNICOM_AudiencePackageUpdateV2Carrier AudiencePackageUpdateV2Carrier = "UNICOM"
 )
 
 // Ptr returns reference to audience_package_update_v2_carrier value
