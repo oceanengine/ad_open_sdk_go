@@ -27,10 +27,10 @@ type ApiOpenApiV30ToolsEbpMicroGameListGetRequest struct {
 	ApiService           *ToolsEbpMicroGameListV30ApiService
 	accountId            *int64
 	accountType          *ToolsEbpMicroGameListV30AccountType
-	page                 *int32
-	pageSize             *int32
 	assetManagementScope *ToolsEbpMicroGameListV30AssetManagementScope
 	filtering            *ToolsEbpMicroGameListV30Filtering
+	page                 *int32
+	pageSize             *int32
 }
 
 func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
@@ -44,16 +44,6 @@ func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) AccountType(accountType T
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) Page(page int32) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
-	r.page = &page
-	return r
-}
-
-func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) PageSize(pageSize int32) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
-	r.pageSize = &pageSize
-	return r
-}
-
 func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) AssetManagementScope(assetManagementScope ToolsEbpMicroGameListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
 	r.assetManagementScope = &assetManagementScope
 	return r
@@ -62,6 +52,16 @@ func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) AssetManagementScope(asse
 // 过滤器
 func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) Filtering(filtering ToolsEbpMicroGameListV30Filtering) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
 	r.filtering = &filtering
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) Page(page int32) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
+	r.page = &page
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) PageSize(pageSize int32) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
+	r.pageSize = &pageSize
 	return r
 }
 
@@ -123,18 +123,6 @@ func (a *ToolsEbpMicroGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbp
 	if r.accountType == nil {
 		return localVarReturnValue, nil, ReportError("accountType is required and must be specified")
 	}
-	if r.page == nil {
-		return localVarReturnValue, nil, ReportError("page is required and must be specified")
-	}
-	if *r.page < 1 {
-		return localVarReturnValue, nil, ReportError("page must be greater than 1")
-	}
-	if r.pageSize == nil {
-		return localVarReturnValue, nil, ReportError("pageSize is required and must be specified")
-	}
-	if *r.pageSize < 10 {
-		return localVarReturnValue, nil, ReportError("pageSize must be greater than 10")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "account_id", r.accountId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
@@ -144,8 +132,12 @@ func (a *ToolsEbpMicroGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbp
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
-	parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	if r.page != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
+	}
+	if r.pageSize != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

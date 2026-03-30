@@ -15,8 +15,8 @@ type ToolsInterestActionId2wordV2TagType string
 
 // List of tools_interest_action_id2word_v2_tag_type
 const (
-	CATEGORY_ToolsInterestActionId2wordV2TagType ToolsInterestActionId2wordV2TagType = "CATEGORY"
 	KEYWORD_ToolsInterestActionId2wordV2TagType  ToolsInterestActionId2wordV2TagType = "KEYWORD"
+	CATEGORY_ToolsInterestActionId2wordV2TagType ToolsInterestActionId2wordV2TagType = "CATEGORY"
 )
 
 // Ptr returns reference to tools_interest_action_id2word_v2_tag_type value

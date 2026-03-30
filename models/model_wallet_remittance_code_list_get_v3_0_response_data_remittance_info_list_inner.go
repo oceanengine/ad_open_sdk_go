@@ -14,6 +14,8 @@ package models
 type WalletRemittanceCodeListGetV30ResponseDataRemittanceInfoListInner struct {
 	// 充值金额
 	ChargeAmount *int64 `json:"charge_amount,omitempty"`
+	// 充值完成时间
+	ChargeFinishTime *string `json:"charge_finish_time,omitempty"`
 	// 充值对象ID
 	ChargeTargetId *int64 `json:"charge_target_id,omitempty"`
 	// 汇款码创建时间
@@ -23,6 +25,8 @@ type WalletRemittanceCodeListGetV30ResponseDataRemittanceInfoListInner struct {
 	// 失败原因
 	FailReason *string                                                       `json:"fail_reason,omitempty"`
 	Platform   *WalletRemittanceCodeListGetV30DataRemittanceInfoListPlatform `json:"platform,omitempty"`
+	// 款项到账日期
+	ReceiveDate *string `json:"receive_date,omitempty"`
 	// 备注
 	Remark *string `json:"remark,omitempty"`
 	// 汇款码

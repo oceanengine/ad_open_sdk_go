@@ -15,8 +15,8 @@ type CreativeCustomCreativeUpdateV2AdDataEnableSmartSource string
 
 // List of creative_custom_creative_update_v2_ad_data_enable_smart_source
 const (
-	OFF_CreativeCustomCreativeUpdateV2AdDataEnableSmartSource CreativeCustomCreativeUpdateV2AdDataEnableSmartSource = "OFF"
 	ON_CreativeCustomCreativeUpdateV2AdDataEnableSmartSource  CreativeCustomCreativeUpdateV2AdDataEnableSmartSource = "ON"
+	OFF_CreativeCustomCreativeUpdateV2AdDataEnableSmartSource CreativeCustomCreativeUpdateV2AdDataEnableSmartSource = "OFF"
 )
 
 // Ptr returns reference to creative_custom_creative_update_v2_ad_data_enable_smart_source value

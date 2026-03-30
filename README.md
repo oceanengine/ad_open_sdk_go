@@ -960,6 +960,7 @@ Class | Method | HTTP request
 *StarDemandGetEpisodeLimitV2Api* | **OpenApi2StarDemandGetEpisodeLimitGet** | **Get** /open_api/2/star/demand/get_episode_limit/
 *StarDemandGetResellCodeV2Api* | **OpenApi2StarDemandGetResellCodeGet** | **Get** /open_api/2/star/demand/get_resell_code/
 *StarDemandListV2Api* | **OpenApi2StarDemandListGet** | **Get** /open_api/2/star/demand/list/
+*StarDemandMixListGetV2Api* | **OpenApi2StarDemandMixListGetGet** | **Get** /open_api/2/star/demand/mix/list/get/
 *StarDemandOmCreateChallengeV2Api* | **OpenApi2StarDemandOmCreateChallengePost** | **Post** /open_api/2/star/demand/om_create_challenge/
 *StarDemandOmExpandChallengeProviderV2Api* | **OpenApi2StarDemandOmExpandChallengeProviderPost** | **Post** /open_api/2/star/demand/om_expand_challenge_provider/
 *StarDemandOmExpandChallengeV2Api* | **OpenApi2StarDemandOmExpandChallengePost** | **Post** /open_api/2/star/demand/om_expand_challenge/
@@ -987,6 +988,7 @@ Class | Method | HTTP request
 *StarMcnGetContractedChallengeListV2Api* | **OpenApi2StarMcnGetContractedChallengeListGet** | **Get** /open_api/2/star/mcn/get_contracted_challenge_list/
 *StarMcnGetContractedChallengeUrlV2Api* | **OpenApi2StarMcnGetContractedChallengeUrlGet** | **Get** /open_api/2/star/mcn/get_contracted_challenge_url/
 *StarMcnGetUnparticipatedTaskV2Api* | **OpenApi2StarMcnGetUnparticipatedTaskGet** | **Get** /open_api/2/star/mcn/get_unparticipated_task/
+*StarMcnMixListGetV2Api* | **OpenApi2StarMcnMixListGetGet** | **Get** /open_api/2/star/mcn/mix/list/get/
 *StarMcnProviderGetParticipatedTaskV2Api* | **OpenApi2StarMcnProviderGetParticipatedTaskGet** | **Get** /open_api/2/star/mcn/provider_get_participated_task/
 *StarMcnProviderGetRecruitInfoGetV2Api* | **OpenApi2StarMcnProviderGetRecruitInfoGetGet** | **Get** /open_api/2/star/mcn/provider_get_recruit_info/get/
 *StarMcnProviderGetTagOnTaskV2Api* | **OpenApi2StarMcnProviderGetTagOnTaskGet** | **Get** /open_api/2/star/mcn/provider_get_tag_on_task/
@@ -1155,6 +1157,7 @@ Class | Method | HTTP request
 *ToolsDiagnosisSuggestionGetV30Api* | **OpenApiV30ToolsDiagnosisSuggestionGetGet** | **Get** /open_api/v3.0/tools/diagnosis/suggestion/get/
 *ToolsDownloadPackageGetV2Api* | **OpenApi2ToolsDownloadPackageGetGet** | **Get** /open_api/2/tools/download/package/get/
 *ToolsDownloadPackageParseV2Api* | **OpenApi2ToolsDownloadPackageParsePost** | **Post** /open_api/2/tools/download/package/parse/
+*ToolsEbpAppDetailV30Api* | **OpenApiV30ToolsEbpAppDetailGet** | **Get** /open_api/v3.0/tools/ebp/app/detail/
 *ToolsEbpAppExtendCreateV30Api* | **OpenApiV30ToolsEbpAppExtendCreatePost** | **Post** /open_api/v3.0/tools/ebp/app_extend/create/
 *ToolsEbpAppExtendListV30Api* | **OpenApiV30ToolsEbpAppExtendListGet** | **Get** /open_api/v3.0/tools/ebp/app_extend/list/
 *ToolsEbpAppExtendUpdateV30Api* | **OpenApiV30ToolsEbpAppExtendUpdatePost** | **Post** /open_api/v3.0/tools/ebp/app_extend/update/
@@ -1164,6 +1167,7 @@ Class | Method | HTTP request
 *ToolsEbpAppUpdateV30Api* | **OpenApiV30ToolsEbpAppUpdatePost** | **Post** /open_api/v3.0/tools/ebp/app/update/
 *ToolsEbpAssetAuthCancelV30Api* | **OpenApiV30ToolsEbpAssetAuthCancelPost** | **Post** /open_api/v3.0/tools/ebp/asset/auth/cancel/
 *ToolsEbpAssetAuthListV30Api* | **OpenApiV30ToolsEbpAssetAuthListGet** | **Get** /open_api/v3.0/tools/ebp/asset/auth/list/
+*ToolsEbpAssetAuthV30Api* | **OpenApiV30ToolsEbpAssetAuthPost** | **Post** /open_api/v3.0/tools/ebp/asset/auth/
 *ToolsEbpMaterialAuthCreateV30Api* | **OpenApiV30ToolsEbpMaterialAuthCreatePost** | **Post** /open_api/v3.0/tools/ebp/material/auth/create/
 *ToolsEbpMaterialAuthDeleteV30Api* | **OpenApiV30ToolsEbpMaterialAuthDeletePost** | **Post** /open_api/v3.0/tools/ebp/material/auth/delete/
 *ToolsEbpMaterialAuthListV30Api* | **OpenApiV30ToolsEbpMaterialAuthListGet** | **Get** /open_api/v3.0/tools/ebp/material/auth/list/

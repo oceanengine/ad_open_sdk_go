@@ -89,6 +89,8 @@ type StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfo struct {
 	ProfitRateChannel *map[string]int64 `json:"profit_rate_channel,omitempty"`
 	// 服务商任务类型
 	ProviderTaskType *int32 `json:"provider_task_type,omitempty"`
+	// 任务关联实体信息
+	RelationObjectInfo []*StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoRelationObjectInfoInner `json:"relation_object_info,omitempty"`
 	//
 	SecondClassCategory         *int64                                                                               `json:"second_class_category,omitempty"`
 	SmallAppInfo                *StarMcnProviderGetTaskDetailV2ResponseDataTaskDetailInfoSmallAppInfo                `json:"small_app_info,omitempty"`

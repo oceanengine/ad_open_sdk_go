@@ -15,8 +15,8 @@ type ToolsBidSuggestV2ScheduleType string
 
 // List of tools_bid_suggest_v2_schedule_type
 const (
-	SCHEDULE_FROM_NOW_ToolsBidSuggestV2ScheduleType  ToolsBidSuggestV2ScheduleType = "SCHEDULE_FROM_NOW"
 	SCHEDULE_START_END_ToolsBidSuggestV2ScheduleType ToolsBidSuggestV2ScheduleType = "SCHEDULE_START_END"
+	SCHEDULE_FROM_NOW_ToolsBidSuggestV2ScheduleType  ToolsBidSuggestV2ScheduleType = "SCHEDULE_FROM_NOW"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_schedule_type value

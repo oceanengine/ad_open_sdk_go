@@ -27,9 +27,9 @@ type ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequestExample struct {
 	AccountType ToolsEbpMicroAppletLinkListV30AccountType `json:"account_type"`
 	InstanceId  int64                                     `json:"instance_id,omitempty"`
 	AppId       string                                    `json:"app_id,omitempty"`
+	CreateTime  ToolsEbpMicroAppletLinkListV30CreateTime  `json:"create_time,omitempty"`
 	Page        int64                                     `json:"page,omitempty"`
 	PageSize    int64                                     `json:"page_size,omitempty"`
-	CreateTime  ToolsEbpMicroAppletLinkListV30CreateTime  `json:"create_time,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/ebp/micro_applet/link/list/ Get
@@ -51,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsEbpMicroAppletLinkListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).AccountType(request.AccountType).InstanceId(request.InstanceId).AppId(request.AppId).Page(request.Page).PageSize(request.PageSize).CreateTime(request.CreateTime).
+		AccountId(request.AccountId).AccountType(request.AccountType).InstanceId(request.InstanceId).AppId(request.AppId).CreateTime(request.CreateTime).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

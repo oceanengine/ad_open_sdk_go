@@ -15,6 +15,4 @@ type ToolsEbpMicroGameListV30ResponseData struct {
 	//
 	Applets  []*ToolsEbpMicroGameListV30ResponseDataAppletsInner `json:"applets,omitempty"`
 	PageInfo *ToolsEbpMicroGameListV30ResponseDataPageInfo       `json:"page_info,omitempty"`
-	//
-	TotalCount *int64 `json:"total_count,omitempty"`
 }

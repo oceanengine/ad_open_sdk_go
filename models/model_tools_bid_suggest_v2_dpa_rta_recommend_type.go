@@ -15,8 +15,8 @@ type ToolsBidSuggestV2DpaRtaRecommendType string
 
 // List of tools_bid_suggest_v2_dpa_rta_recommend_type
 const (
-	ONLY_ToolsBidSuggestV2DpaRtaRecommendType ToolsBidSuggestV2DpaRtaRecommendType = "ONLY"
 	MORE_ToolsBidSuggestV2DpaRtaRecommendType ToolsBidSuggestV2DpaRtaRecommendType = "MORE"
+	ONLY_ToolsBidSuggestV2DpaRtaRecommendType ToolsBidSuggestV2DpaRtaRecommendType = "ONLY"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_dpa_rta_recommend_type value

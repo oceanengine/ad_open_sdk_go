@@ -21,7 +21,7 @@ type PrepayChargeGenerateFixRemiattanceCodeCreateV30ResponseDataRemittanceInfo s
 	// 付款方账号
 	PayerName *string `json:"payer_name,omitempty"`
 	// 收款方名称
-	ReceiverAme *string `json:"receiver_ame,omitempty"`
+	ReceiverName *string `json:"receiver_name,omitempty"`
 	// 汇款码
 	RemittanceCode *string `json:"remittance_code,omitempty"`
 }

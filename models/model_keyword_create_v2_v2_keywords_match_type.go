@@ -15,9 +15,9 @@ type KeywordCreateV2V2KeywordsMatchType string
 
 // List of keyword_create_v2_v2_keywords_match_type
 const (
-	EXTENSIVE_KeywordCreateV2V2KeywordsMatchType KeywordCreateV2V2KeywordsMatchType = "EXTENSIVE"
-	PRECISION_KeywordCreateV2V2KeywordsMatchType KeywordCreateV2V2KeywordsMatchType = "PRECISION"
 	PHRASE_KeywordCreateV2V2KeywordsMatchType    KeywordCreateV2V2KeywordsMatchType = "PHRASE"
+	PRECISION_KeywordCreateV2V2KeywordsMatchType KeywordCreateV2V2KeywordsMatchType = "PRECISION"
+	EXTENSIVE_KeywordCreateV2V2KeywordsMatchType KeywordCreateV2V2KeywordsMatchType = "EXTENSIVE"
 )
 
 // Ptr returns reference to keyword_create_v2_v2_keywords_match_type value

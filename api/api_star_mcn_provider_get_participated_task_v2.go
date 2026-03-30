@@ -30,6 +30,7 @@ type ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest struct {
 	pageSize                *int32
 	providerOrderTaskStatus *int32
 	providerTaskCategory    *int32
+	isComicTask             *bool
 }
 
 func (r *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest) StarId(starId int64) *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest {
@@ -54,6 +55,12 @@ func (r *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest) ProviderOrderT
 
 func (r *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest) ProviderTaskCategory(providerTaskCategory int32) *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest {
 	r.providerTaskCategory = &providerTaskCategory
+	return r
+}
+
+// 是否筛选漫剧任务，false-不筛选，true-筛选
+func (r *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest) IsComicTask(isComicTask bool) *ApiOpenApi2StarMcnProviderGetParticipatedTaskGetRequest {
+	r.isComicTask = &isComicTask
 	return r
 }
 
@@ -133,6 +140,9 @@ func (a *StarMcnProviderGetParticipatedTaskV2ApiService) getExecute(r *ApiOpenAp
 	}
 	if r.providerTaskCategory != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "provider_task_category", r.providerTaskCategory)
+	}
+	if r.isComicTask != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "is_comic_task", r.isComicTask)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

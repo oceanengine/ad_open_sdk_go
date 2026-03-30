@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.83
+// APIClient manages communication with the Oceanengine Open Api API v1.1.84
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -1559,6 +1559,8 @@ type APIClient struct {
 
 	StarDemandListV2Api *StarDemandListV2ApiService
 
+	StarDemandMixListGetV2Api *StarDemandMixListGetV2ApiService
+
 	StarDemandOmCreateChallengeV2Api *StarDemandOmCreateChallengeV2ApiService
 
 	StarDemandOmExpandChallengeProviderV2Api *StarDemandOmExpandChallengeProviderV2ApiService
@@ -1612,6 +1614,8 @@ type APIClient struct {
 	StarMcnGetContractedChallengeUrlV2Api *StarMcnGetContractedChallengeUrlV2ApiService
 
 	StarMcnGetUnparticipatedTaskV2Api *StarMcnGetUnparticipatedTaskV2ApiService
+
+	StarMcnMixListGetV2Api *StarMcnMixListGetV2ApiService
 
 	StarMcnProviderGetParticipatedTaskV2Api *StarMcnProviderGetParticipatedTaskV2ApiService
 
@@ -1949,6 +1953,8 @@ type APIClient struct {
 
 	ToolsDownloadPackageParseV2Api *ToolsDownloadPackageParseV2ApiService
 
+	ToolsEbpAppDetailV30Api *ToolsEbpAppDetailV30ApiService
+
 	ToolsEbpAppExtendCreateV30Api *ToolsEbpAppExtendCreateV30ApiService
 
 	ToolsEbpAppExtendListV30Api *ToolsEbpAppExtendListV30ApiService
@@ -1966,6 +1972,8 @@ type APIClient struct {
 	ToolsEbpAssetAuthCancelV30Api *ToolsEbpAssetAuthCancelV30ApiService
 
 	ToolsEbpAssetAuthListV30Api *ToolsEbpAssetAuthListV30ApiService
+
+	ToolsEbpAssetAuthV30Api *ToolsEbpAssetAuthV30ApiService
 
 	ToolsEbpMaterialAuthCreateV30Api *ToolsEbpMaterialAuthCreateV30ApiService
 
@@ -3082,6 +3090,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarDemandGetEpisodeLimitV2Api = (*StarDemandGetEpisodeLimitV2ApiService)(&c.common)
 	c.StarDemandGetResellCodeV2Api = (*StarDemandGetResellCodeV2ApiService)(&c.common)
 	c.StarDemandListV2Api = (*StarDemandListV2ApiService)(&c.common)
+	c.StarDemandMixListGetV2Api = (*StarDemandMixListGetV2ApiService)(&c.common)
 	c.StarDemandOmCreateChallengeV2Api = (*StarDemandOmCreateChallengeV2ApiService)(&c.common)
 	c.StarDemandOmExpandChallengeProviderV2Api = (*StarDemandOmExpandChallengeProviderV2ApiService)(&c.common)
 	c.StarDemandOmExpandChallengeV2Api = (*StarDemandOmExpandChallengeV2ApiService)(&c.common)
@@ -3109,6 +3118,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarMcnGetContractedChallengeListV2Api = (*StarMcnGetContractedChallengeListV2ApiService)(&c.common)
 	c.StarMcnGetContractedChallengeUrlV2Api = (*StarMcnGetContractedChallengeUrlV2ApiService)(&c.common)
 	c.StarMcnGetUnparticipatedTaskV2Api = (*StarMcnGetUnparticipatedTaskV2ApiService)(&c.common)
+	c.StarMcnMixListGetV2Api = (*StarMcnMixListGetV2ApiService)(&c.common)
 	c.StarMcnProviderGetParticipatedTaskV2Api = (*StarMcnProviderGetParticipatedTaskV2ApiService)(&c.common)
 	c.StarMcnProviderGetRecruitInfoGetV2Api = (*StarMcnProviderGetRecruitInfoGetV2ApiService)(&c.common)
 	c.StarMcnProviderGetTagOnTaskV2Api = (*StarMcnProviderGetTagOnTaskV2ApiService)(&c.common)
@@ -3277,6 +3287,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsDiagnosisSuggestionGetV30Api = (*ToolsDiagnosisSuggestionGetV30ApiService)(&c.common)
 	c.ToolsDownloadPackageGetV2Api = (*ToolsDownloadPackageGetV2ApiService)(&c.common)
 	c.ToolsDownloadPackageParseV2Api = (*ToolsDownloadPackageParseV2ApiService)(&c.common)
+	c.ToolsEbpAppDetailV30Api = (*ToolsEbpAppDetailV30ApiService)(&c.common)
 	c.ToolsEbpAppExtendCreateV30Api = (*ToolsEbpAppExtendCreateV30ApiService)(&c.common)
 	c.ToolsEbpAppExtendListV30Api = (*ToolsEbpAppExtendListV30ApiService)(&c.common)
 	c.ToolsEbpAppExtendUpdateV30Api = (*ToolsEbpAppExtendUpdateV30ApiService)(&c.common)
@@ -3286,6 +3297,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsEbpAppUpdateV30Api = (*ToolsEbpAppUpdateV30ApiService)(&c.common)
 	c.ToolsEbpAssetAuthCancelV30Api = (*ToolsEbpAssetAuthCancelV30ApiService)(&c.common)
 	c.ToolsEbpAssetAuthListV30Api = (*ToolsEbpAssetAuthListV30ApiService)(&c.common)
+	c.ToolsEbpAssetAuthV30Api = (*ToolsEbpAssetAuthV30ApiService)(&c.common)
 	c.ToolsEbpMaterialAuthCreateV30Api = (*ToolsEbpMaterialAuthCreateV30ApiService)(&c.common)
 	c.ToolsEbpMaterialAuthDeleteV30Api = (*ToolsEbpMaterialAuthDeleteV30ApiService)(&c.common)
 	c.ToolsEbpMaterialAuthListV30Api = (*ToolsEbpMaterialAuthListV30ApiService)(&c.common)

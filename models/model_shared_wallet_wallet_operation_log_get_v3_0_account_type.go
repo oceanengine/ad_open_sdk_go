@@ -15,8 +15,11 @@ type SharedWalletWalletOperationLogGetV30AccountType string
 
 // List of shared_wallet_wallet_operation_log_get_v3.0_account_type
 const (
-	AGENT_SharedWalletWalletOperationLogGetV30AccountType SharedWalletWalletOperationLogGetV30AccountType = "AGENT"
-	BP_SharedWalletWalletOperationLogGetV30AccountType    SharedWalletWalletOperationLogGetV30AccountType = "BP"
+	AD_SharedWalletWalletOperationLogGetV30AccountType        SharedWalletWalletOperationLogGetV30AccountType = "AD"
+	AGENT_SharedWalletWalletOperationLogGetV30AccountType     SharedWalletWalletOperationLogGetV30AccountType = "AGENT"
+	BP_SharedWalletWalletOperationLogGetV30AccountType        SharedWalletWalletOperationLogGetV30AccountType = "BP"
+	LOCAL_SharedWalletWalletOperationLogGetV30AccountType     SharedWalletWalletOperationLogGetV30AccountType = "LOCAL"
+	QIANCHUAN_SharedWalletWalletOperationLogGetV30AccountType SharedWalletWalletOperationLogGetV30AccountType = "QIANCHUAN"
 )
 
 // Ptr returns reference to shared_wallet_wallet_operation_log_get_v3.0_account_type value

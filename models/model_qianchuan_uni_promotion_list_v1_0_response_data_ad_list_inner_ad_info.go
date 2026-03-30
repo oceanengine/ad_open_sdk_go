@@ -12,6 +12,7 @@ package models
 
 // QianchuanUniPromotionListV10ResponseDataAdListInnerAdInfo
 type QianchuanUniPromotionListV10ResponseDataAdListInnerAdInfo struct {
+	AdlabScene *QianchuanUniPromotionListV10DataAdListAdInfoAdlabScene `json:"adlab_scene,omitempty"`
 	//
 	Budget         *float64                                                                 `json:"budget,omitempty"`
 	BudgetMode     *QianchuanUniPromotionListV10DataAdListAdInfoBudgetMode                  `json:"budget_mode,omitempty"`
@@ -26,8 +27,9 @@ type QianchuanUniPromotionListV10ResponseDataAdListInnerAdInfo struct {
 	//
 	EndTime *string `json:"end_time,omitempty"`
 	//
-	Id            *int64                                                     `json:"id,omitempty"`
-	MarketingGoal *QianchuanUniPromotionListV10DataAdListAdInfoMarketingGoal `json:"marketing_goal,omitempty"`
+	Id                    *int64                                                             `json:"id,omitempty"`
+	MarketingGoal         *QianchuanUniPromotionListV10DataAdListAdInfoMarketingGoal         `json:"marketing_goal,omitempty"`
+	MarketingServicesMode *QianchuanUniPromotionListV10DataAdListAdInfoMarketingServicesMode `json:"marketing_services_mode,omitempty"`
 	//
 	ModifyTime *string `json:"modify_time,omitempty"`
 	//

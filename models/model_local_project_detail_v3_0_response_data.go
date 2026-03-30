@@ -12,10 +12,11 @@ package models
 
 // LocalProjectDetailV30ResponseData
 type LocalProjectDetailV30ResponseData struct {
-	AdType                    *LocalProjectDetailV30DataAdType                    `json:"ad_type,omitempty"`
-	AigcDynamicCreativeSwitch *LocalProjectDetailV30DataAigcDynamicCreativeSwitch `json:"aigc_dynamic_creative_switch,omitempty"`
-	Audience                  *LocalProjectDetailV30ResponseDataAudience          `json:"audience,omitempty"`
-	AutoUpdatePois            *LocalProjectDetailV30DataAutoUpdatePois            `json:"auto_update_pois,omitempty"`
+	AdType                     *LocalProjectDetailV30DataAdType                     `json:"ad_type,omitempty"`
+	AiOptimizeLocalAssetSwitch *LocalProjectDetailV30DataAiOptimizeLocalAssetSwitch `json:"ai_optimize_local_asset_switch,omitempty"`
+	AigcDynamicCreativeSwitch  *LocalProjectDetailV30DataAigcDynamicCreativeSwitch  `json:"aigc_dynamic_creative_switch,omitempty"`
+	Audience                   *LocalProjectDetailV30ResponseDataAudience           `json:"audience,omitempty"`
+	AutoUpdatePois             *LocalProjectDetailV30DataAutoUpdatePois             `json:"auto_update_pois,omitempty"`
 	// 抖音号id
 	AwemeId *string `json:"aweme_id,omitempty"`
 	// 出价，单位为分

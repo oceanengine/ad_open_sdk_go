@@ -15,6 +15,13 @@ type QianchuanReportUniPromotionDataGetV10DataTopic string
 
 // List of qianchuan_report_uni_promotion_data_get_v1.0_data_topic
 const (
+	OVERALL_ROI_LIVE_AWEME_QianchuanReportUniPromotionDataGetV10DataTopic                  QianchuanReportUniPromotionDataGetV10DataTopic = "OVERALL_ROI_LIVE_AWEME"
+	OVERALL_ROI_LIVE_MATERIAL_LIVE_QianchuanReportUniPromotionDataGetV10DataTopic          QianchuanReportUniPromotionDataGetV10DataTopic = "OVERALL_ROI_LIVE_MATERIAL_LIVE"
+	OVERALL_ROI_LIVE_MATERIAL_VIDEO_QianchuanReportUniPromotionDataGetV10DataTopic         QianchuanReportUniPromotionDataGetV10DataTopic = "OVERALL_ROI_LIVE_MATERIAL_VIDEO"
+	OVERALL_ROI_PRODUCT_AWEME_QianchuanReportUniPromotionDataGetV10DataTopic               QianchuanReportUniPromotionDataGetV10DataTopic = "OVERALL_ROI_PRODUCT_AWEME"
+	OVERALL_ROI_PRODUCT_MATERIAL_QianchuanReportUniPromotionDataGetV10DataTopic            QianchuanReportUniPromotionDataGetV10DataTopic = "OVERALL_ROI_PRODUCT_MATERIAL"
+	OVERALL_ROI_PRODUCT_PRODUCT_QianchuanReportUniPromotionDataGetV10DataTopic             QianchuanReportUniPromotionDataGetV10DataTopic = "OVERALL_ROI_PRODUCT_PRODUCT"
+	OVERALL_ROI_PRODUCT_PROJECT_QianchuanReportUniPromotionDataGetV10DataTopic             QianchuanReportUniPromotionDataGetV10DataTopic = "OVERALL_ROI_PRODUCT_PROJECT"
 	ROI2_IMAGE_AGG_MATERIAL_ANALYSIS_QianchuanReportUniPromotionDataGetV10DataTopic        QianchuanReportUniPromotionDataGetV10DataTopic = "ROI2_IMAGE_AGG_MATERIAL_ANALYSIS"
 	SITE_PROMOTION_POST_DATA_LIVE_QianchuanReportUniPromotionDataGetV10DataTopic           QianchuanReportUniPromotionDataGetV10DataTopic = "SITE_PROMOTION_POST_DATA_LIVE"
 	SITE_PROMOTION_POST_DATA_OTHER_QianchuanReportUniPromotionDataGetV10DataTopic          QianchuanReportUniPromotionDataGetV10DataTopic = "SITE_PROMOTION_POST_DATA_OTHER"

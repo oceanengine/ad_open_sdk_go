@@ -16,10 +16,16 @@ type QianchuanUniPromotionListV10ResponseDataAdListInnerStatsInfo struct {
 	NoRefundEcomCouponAmountForRoi2 *float64 `json:"no_refund_ecom_coupon_amount_for_roi2,omitempty"`
 	//
 	NoRefundEcomPlatformSubsidyAmountForRoi2 *float64 `json:"no_refund_ecom_platform_subsidy_amount_for_roi2,omitempty"`
+	// 预估达人佣金成本
+	ShopEstimatedComissionCost *float64 `json:"shop_estimated_comission_cost,omitempty"`
 	//
 	StatCost *float64 `json:"stat_cost,omitempty"`
+	// 综合成本
+	StatCostForOverallRoi2 *float64 `json:"stat_cost_for_overall_roi2,omitempty"`
 	//
 	TotalCostPerPayOrderForRoi2 *float64 `json:"total_cost_per_pay_order_for_roi2,omitempty"`
+	// 综合订单成本
+	TotalCostPerPayOrderSettleForOverallRoi21h *float64 `json:"total_cost_per_pay_order_settle_for_overall_roi2_1h,omitempty"`
 	//
 	TotalCostPerPayOrderSettleForRoi21h *float64 `json:"total_cost_per_pay_order_settle_for_roi2_1h,omitempty"`
 	//
@@ -44,6 +50,8 @@ type QianchuanUniPromotionListV10ResponseDataAdListInnerStatsInfo struct {
 	TotalPayOrderGmvIncludeCouponForRoi2 *float64 `json:"total_pay_order_gmv_include_coupon_for_roi2,omitempty"`
 	//
 	TotalPrepayAndPayOrderRoi2 *float64 `json:"total_prepay_and_pay_order_roi2,omitempty"`
+	// 综合ROI
+	TotalPrepayAndPaySettleOverallRoi21h *float64 `json:"total_prepay_and_pay_settle_overall_roi2_1h,omitempty"`
 	//
 	TotalPrepayAndPaySettleRoi21h *float64 `json:"total_prepay_and_pay_settle_roi2_1h,omitempty"`
 	//

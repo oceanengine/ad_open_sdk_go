@@ -1,5 +1,5 @@
 /*
-API version: 1.1.83
+API version: 1.1.84
 */
 package ad_open_sdk_go
 
@@ -3043,6 +3043,10 @@ func (c *Client) StarDemandListV2Api() *api.StarDemandListV2ApiService {
 	return c.ApiClient.StarDemandListV2Api
 }
 
+func (c *Client) StarDemandMixListGetV2Api() *api.StarDemandMixListGetV2ApiService {
+	return c.ApiClient.StarDemandMixListGetV2Api
+}
+
 func (c *Client) StarDemandOmCreateChallengeV2Api() *api.StarDemandOmCreateChallengeV2ApiService {
 	return c.ApiClient.StarDemandOmCreateChallengeV2Api
 }
@@ -3149,6 +3153,10 @@ func (c *Client) StarMcnGetContractedChallengeUrlV2Api() *api.StarMcnGetContract
 
 func (c *Client) StarMcnGetUnparticipatedTaskV2Api() *api.StarMcnGetUnparticipatedTaskV2ApiService {
 	return c.ApiClient.StarMcnGetUnparticipatedTaskV2Api
+}
+
+func (c *Client) StarMcnMixListGetV2Api() *api.StarMcnMixListGetV2ApiService {
+	return c.ApiClient.StarMcnMixListGetV2Api
 }
 
 func (c *Client) StarMcnProviderGetParticipatedTaskV2Api() *api.StarMcnProviderGetParticipatedTaskV2ApiService {
@@ -3823,6 +3831,10 @@ func (c *Client) ToolsDownloadPackageParseV2Api() *api.ToolsDownloadPackageParse
 	return c.ApiClient.ToolsDownloadPackageParseV2Api
 }
 
+func (c *Client) ToolsEbpAppDetailV30Api() *api.ToolsEbpAppDetailV30ApiService {
+	return c.ApiClient.ToolsEbpAppDetailV30Api
+}
+
 func (c *Client) ToolsEbpAppExtendCreateV30Api() *api.ToolsEbpAppExtendCreateV30ApiService {
 	return c.ApiClient.ToolsEbpAppExtendCreateV30Api
 }
@@ -3857,6 +3869,10 @@ func (c *Client) ToolsEbpAssetAuthCancelV30Api() *api.ToolsEbpAssetAuthCancelV30
 
 func (c *Client) ToolsEbpAssetAuthListV30Api() *api.ToolsEbpAssetAuthListV30ApiService {
 	return c.ApiClient.ToolsEbpAssetAuthListV30Api
+}
+
+func (c *Client) ToolsEbpAssetAuthV30Api() *api.ToolsEbpAssetAuthV30ApiService {
+	return c.ApiClient.ToolsEbpAssetAuthV30Api
 }
 
 func (c *Client) ToolsEbpMaterialAuthCreateV30Api() *api.ToolsEbpMaterialAuthCreateV30ApiService {

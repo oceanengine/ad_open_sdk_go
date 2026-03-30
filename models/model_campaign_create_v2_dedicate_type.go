@@ -15,8 +15,8 @@ type CampaignCreateV2DedicateType string
 
 // List of campaign_create_v2_dedicate_type
 const (
-	DEDICATED_CampaignCreateV2DedicateType CampaignCreateV2DedicateType = "DEDICATED"
 	UNSET_CampaignCreateV2DedicateType     CampaignCreateV2DedicateType = "UNSET"
+	DEDICATED_CampaignCreateV2DedicateType CampaignCreateV2DedicateType = "DEDICATED"
 )
 
 // Ptr returns reference to campaign_create_v2_dedicate_type value

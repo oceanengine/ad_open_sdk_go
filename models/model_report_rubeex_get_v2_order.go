@@ -15,8 +15,8 @@ type ReportRubeexGetV2Order string
 
 // List of report_rubeex_get_v2_order
 const (
-	DESC_ReportRubeexGetV2Order ReportRubeexGetV2Order = "DESC"
 	ASC_ReportRubeexGetV2Order  ReportRubeexGetV2Order = "ASC"
+	DESC_ReportRubeexGetV2Order ReportRubeexGetV2Order = "DESC"
 )
 
 // Ptr returns reference to report_rubeex_get_v2_order value

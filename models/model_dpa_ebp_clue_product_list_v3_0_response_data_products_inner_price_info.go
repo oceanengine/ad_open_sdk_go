@@ -15,19 +15,19 @@ type DpaEbpClueProductListV30ResponseDataProductsInnerPriceInfo struct {
 	// 日付
 	DailyMortgage *string `json:"daily_mortgage,omitempty"`
 	// 折扣
-	Discount *int64 `json:"discount,omitempty"`
+	Discount *float64 `json:"discount,omitempty"`
 	// 月付
 	DownPayment *string `json:"down_payment,omitempty"`
 	// 首付
 	Mortgage *string `json:"mortgage,omitempty"`
 	// 商品现价
-	Price *int64 `json:"price,omitempty"`
+	Price *float64 `json:"price,omitempty"`
 	// 价格单位
 	PriceUnit *string `json:"price_unit,omitempty"`
 	// 促销活动
 	SalesPromotion *string `json:"sales_promotion,omitempty"`
 	// 减价
-	Saving *int64 `json:"saving,omitempty"`
+	Saving *float64 `json:"saving,omitempty"`
 	// 商品原价
-	Value *int64 `json:"value,omitempty"`
+	Value *float64 `json:"value,omitempty"`
 }

@@ -12,7 +12,7 @@ package models
 
 // FileEbpVideoGetV30ResponseData
 type FileEbpVideoGetV30ResponseData struct {
-	Pagination *FileEbpVideoGetV30ResponseDataPagination `json:"pagination,omitempty"`
-	//
-	VideoInfos []*FileEbpVideoGetV30ResponseDataVideoInfosInner `json:"video_infos,omitempty"`
+	// 视频素材列表
+	List     []*FileEbpVideoGetV30ResponseDataListInner `json:"list,omitempty"`
+	PageInfo *FileEbpVideoGetV30ResponseDataPageInfo    `json:"page_info,omitempty"`
 }

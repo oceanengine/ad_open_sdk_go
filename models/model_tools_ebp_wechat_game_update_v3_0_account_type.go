@@ -15,8 +15,6 @@ type ToolsEbpWechatGameUpdateV30AccountType string
 
 // List of tools_ebp_wechat_game_update_v3.0_account_type
 const (
-	AD_ToolsEbpWechatGameUpdateV30AccountType  ToolsEbpWechatGameUpdateV30AccountType = "AD"
-	BP_ToolsEbpWechatGameUpdateV30AccountType  ToolsEbpWechatGameUpdateV30AccountType = "BP"
 	EBP_ToolsEbpWechatGameUpdateV30AccountType ToolsEbpWechatGameUpdateV30AccountType = "EBP"
 )
 

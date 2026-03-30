@@ -38,7 +38,7 @@ func (r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) AccountId(
 	return r
 }
 
-// 账号类型，代理商/直客
+// 账号类型，代理商/直客/ADV
 func (r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) AccountType(accountType SharedWalletWalletAdvOperationLogGetV30AccountType) *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest {
 	r.accountType = &accountType
 	return r

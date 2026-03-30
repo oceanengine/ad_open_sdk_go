@@ -103,8 +103,8 @@ func (a *AccountFundGetV30ApiService) getExecute(r *ApiOpenApiV30AccountFundGetG
 	if len(*r.accountIds) < 1 {
 		return localVarReturnValue, nil, ReportError("accountIds must have at least 1 elements")
 	}
-	if len(*r.accountIds) > 20 {
-		return localVarReturnValue, nil, ReportError("accountIds must have less than 20 elements")
+	if len(*r.accountIds) > 50 {
+		return localVarReturnValue, nil, ReportError("accountIds must have less than 50 elements")
 	}
 	if r.accountType == nil {
 		return localVarReturnValue, nil, ReportError("accountType is required and must be specified")

@@ -29,9 +29,9 @@ type ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest struct {
 	accountType *ToolsEbpMicroAppletLinkListV30AccountType
 	instanceId  *int64
 	appId       *string
+	createTime  *ToolsEbpMicroAppletLinkListV30CreateTime
 	page        *int64
 	pageSize    *int64
-	createTime  *ToolsEbpMicroAppletLinkListV30CreateTime
 }
 
 func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest {
@@ -54,6 +54,11 @@ func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) AppId(appId string)
 	return r
 }
 
+func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) CreateTime(createTime ToolsEbpMicroAppletLinkListV30CreateTime) *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest {
+	r.createTime = &createTime
+	return r
+}
+
 func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) Page(page int64) *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest {
 	r.page = &page
 	return r
@@ -61,11 +66,6 @@ func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) Page(page int64) *A
 
 func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) PageSize(pageSize int64) *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest {
 	r.pageSize = &pageSize
-	return r
-}
-
-func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) CreateTime(createTime ToolsEbpMicroAppletLinkListV30CreateTime) *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest {
-	r.createTime = &createTime
 	return r
 }
 
@@ -136,14 +136,14 @@ func (a *ToolsEbpMicroAppletLinkListV30ApiService) getExecute(r *ApiOpenApiV30To
 	if r.appId != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "app_id", r.appId)
 	}
+	if r.createTime != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "create_time", r.createTime)
+	}
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
-	}
-	if r.createTime != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "create_time", r.createTime)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

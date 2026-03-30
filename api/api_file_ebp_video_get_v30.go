@@ -26,26 +26,30 @@ type ApiOpenApiV30FileEbpVideoGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *FileEbpVideoGetV30ApiService
 	advertiserId *int64
-	filterParam  *FileEbpVideoGetV30FilterParam
+	filtering    *FileEbpVideoGetV30Filtering
 	page         *int64
 	pageSize     *int64
 }
 
+// 账户ID
 func (r *ApiOpenApiV30FileEbpVideoGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30FileEbpVideoGetGetRequest {
 	r.advertiserId = &advertiserId
 	return r
 }
 
-func (r *ApiOpenApiV30FileEbpVideoGetGetRequest) FilterParam(filterParam FileEbpVideoGetV30FilterParam) *ApiOpenApiV30FileEbpVideoGetGetRequest {
-	r.filterParam = &filterParam
+// 过滤器
+func (r *ApiOpenApiV30FileEbpVideoGetGetRequest) Filtering(filtering FileEbpVideoGetV30Filtering) *ApiOpenApiV30FileEbpVideoGetGetRequest {
+	r.filtering = &filtering
 	return r
 }
 
+// 页数
 func (r *ApiOpenApiV30FileEbpVideoGetGetRequest) Page(page int64) *ApiOpenApiV30FileEbpVideoGetGetRequest {
 	r.page = &page
 	return r
 }
 
+// 页面大小
 func (r *ApiOpenApiV30FileEbpVideoGetGetRequest) PageSize(pageSize int64) *ApiOpenApiV30FileEbpVideoGetGetRequest {
 	r.pageSize = &pageSize
 	return r
@@ -108,8 +112,8 @@ func (a *FileEbpVideoGetV30ApiService) getExecute(r *ApiOpenApiV30FileEbpVideoGe
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
-	if r.filterParam != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "filter_param", r.filterParam)
+	if r.filtering != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	}
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)

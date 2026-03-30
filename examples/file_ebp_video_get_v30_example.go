@@ -23,10 +23,10 @@ import (
 )
 
 type ApiOpenApiV30FileEbpVideoGetGetRequestExample struct {
-	AdvertiserId int64                         `json:"advertiser_id"`
-	FilterParam  FileEbpVideoGetV30FilterParam `json:"filter_param,omitempty"`
-	Page         int64                         `json:"page,omitempty"`
-	PageSize     int64                         `json:"page_size,omitempty"`
+	AdvertiserId int64                       `json:"advertiser_id"`
+	Filtering    FileEbpVideoGetV30Filtering `json:"filtering,omitempty"`
+	Page         int64                       `json:"page,omitempty"`
+	PageSize     int64                       `json:"page_size,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/file/ebp_video/get/ Get
@@ -48,7 +48,7 @@ func main() {
 	resp, httpRes, err := apiClient.FileEbpVideoGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).FilterParam(request.FilterParam).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

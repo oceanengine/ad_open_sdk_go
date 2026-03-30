@@ -10,16 +10,16 @@ Oceanengine Open Api
 
 package models
 
-// FileEbpVideoGetV30ResponseDataPagination
-type FileEbpVideoGetV30ResponseDataPagination struct {
+// FileEbpVideoGetV30ResponseDataPageInfo
+type FileEbpVideoGetV30ResponseDataPageInfo struct {
 	//
 	HasMore *bool `json:"has_more,omitempty"`
 	//
-	PageIndex *int64 `json:"page_index,omitempty"`
+	Page *int64 `json:"page,omitempty"`
 	//
 	PageSize *int64 `json:"page_size,omitempty"`
 	//
-	TotalCount *int64 `json:"total_count,omitempty"`
+	TotalNumber *int64 `json:"total_number,omitempty"`
 	//
 	TotalPage *int64 `json:"total_page,omitempty"`
 }
