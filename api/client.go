@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.84
+// APIClient manages communication with the Oceanengine Open Api API v1.1.85
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -1430,6 +1430,8 @@ type APIClient struct {
 	SecurityCreateAppealV30Api *SecurityCreateAppealV30ApiService
 
 	SecurityGetConsultResultV30Api *SecurityGetConsultResultV30ApiService
+
+	SecurityNonScoreDisposalInfoGetV30Api *SecurityNonScoreDisposalInfoGetV30ApiService
 
 	SecurityOpenMaterialAuditV30Api *SecurityOpenMaterialAuditV30ApiService
 
@@ -3026,6 +3028,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.SecurityAuditResultsV30Api = (*SecurityAuditResultsV30ApiService)(&c.common)
 	c.SecurityCreateAppealV30Api = (*SecurityCreateAppealV30ApiService)(&c.common)
 	c.SecurityGetConsultResultV30Api = (*SecurityGetConsultResultV30ApiService)(&c.common)
+	c.SecurityNonScoreDisposalInfoGetV30Api = (*SecurityNonScoreDisposalInfoGetV30ApiService)(&c.common)
 	c.SecurityOpenMaterialAuditV30Api = (*SecurityOpenMaterialAuditV30ApiService)(&c.common)
 	c.SecurityScoreDisposalInfoGetV30Api = (*SecurityScoreDisposalInfoGetV30ApiService)(&c.common)
 	c.SecurityScoreTotalGetV30Api = (*SecurityScoreTotalGetV30ApiService)(&c.common)

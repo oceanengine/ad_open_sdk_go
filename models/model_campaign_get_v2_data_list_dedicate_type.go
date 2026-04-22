@@ -15,8 +15,8 @@ type CampaignGetV2DataListDedicateType string
 
 // List of campaign_get_v2_data_list_dedicate_type
 const (
-	UNSET_CampaignGetV2DataListDedicateType     CampaignGetV2DataListDedicateType = "UNSET"
 	DEDICATED_CampaignGetV2DataListDedicateType CampaignGetV2DataListDedicateType = "DEDICATED"
+	UNSET_CampaignGetV2DataListDedicateType     CampaignGetV2DataListDedicateType = "UNSET"
 )
 
 // Ptr returns reference to campaign_get_v2_data_list_dedicate_type value

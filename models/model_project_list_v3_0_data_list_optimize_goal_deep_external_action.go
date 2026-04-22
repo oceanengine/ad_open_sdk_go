@@ -116,6 +116,7 @@ const (
 	AD_CONVERT_TYPE_MESSAGE_ACTION_ProjectListV30DataListOptimizeGoalDeepExternalAction              ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE_ACTION"
 	AD_CONVERT_TYPE_MESSAGE_CLICK_ProjectListV30DataListOptimizeGoalDeepExternalAction               ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE_CLICK"
 	AD_CONVERT_TYPE_MESSAGE_CLUE_ProjectListV30DataListOptimizeGoalDeepExternalAction                ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE_CLUE"
+	AD_CONVERT_TYPE_MESSAGE_INTENTION_CLUE_ProjectListV30DataListOptimizeGoalDeepExternalAction      ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE_INTENTION_CLUE"
 	AD_CONVERT_TYPE_MESSAGE_INTERACTION_ProjectListV30DataListOptimizeGoalDeepExternalAction         ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE_INTERACTION"
 	AD_CONVERT_TYPE_MESSAGE_JOIN_GROUP_ProjectListV30DataListOptimizeGoalDeepExternalAction          ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE_JOIN_GROUP"
 	AD_CONVERT_TYPE_MESSAGE_ORDER_SUCCESS_ProjectListV30DataListOptimizeGoalDeepExternalAction       ProjectListV30DataListOptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_MESSAGE_ORDER_SUCCESS"

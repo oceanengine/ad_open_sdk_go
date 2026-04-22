@@ -15,8 +15,8 @@ type FileAutoGenerateSourceGetV2MaterialsMaterialType string
 
 // List of file_auto_generate_source_get_v2_materials_material_type
 const (
-	IMAGE_FileAutoGenerateSourceGetV2MaterialsMaterialType FileAutoGenerateSourceGetV2MaterialsMaterialType = "image"
 	VIDEO_FileAutoGenerateSourceGetV2MaterialsMaterialType FileAutoGenerateSourceGetV2MaterialsMaterialType = "video"
+	IMAGE_FileAutoGenerateSourceGetV2MaterialsMaterialType FileAutoGenerateSourceGetV2MaterialsMaterialType = "image"
 )
 
 // Ptr returns reference to file_auto_generate_source_get_v2_materials_material_type value

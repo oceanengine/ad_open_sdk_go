@@ -15,8 +15,8 @@ type ReportCampaignGetV2OrderType string
 
 // List of report_campaign_get_v2_order_type
 const (
-	DESC_ReportCampaignGetV2OrderType ReportCampaignGetV2OrderType = "DESC"
 	ASC_ReportCampaignGetV2OrderType  ReportCampaignGetV2OrderType = "ASC"
+	DESC_ReportCampaignGetV2OrderType ReportCampaignGetV2OrderType = "DESC"
 )
 
 // Ptr returns reference to report_campaign_get_v2_order_type value

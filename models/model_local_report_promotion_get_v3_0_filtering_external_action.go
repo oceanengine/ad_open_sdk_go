@@ -16,6 +16,8 @@ type LocalReportPromotionGetV30FilteringExternalAction string
 // List of local_report_promotion_get_v3.0_filtering_external_action
 const (
 	CLUE_ACQUISITION_LocalReportPromotionGetV30FilteringExternalAction           LocalReportPromotionGetV30FilteringExternalAction = "CLUE_ACQUISITION"
+	CLUE_CONFIRM_LocalReportPromotionGetV30FilteringExternalAction               LocalReportPromotionGetV30FilteringExternalAction = "CLUE_CONFIRM"
+	CLUE_HIGH_INTENTION_LocalReportPromotionGetV30FilteringExternalAction        LocalReportPromotionGetV30FilteringExternalAction = "CLUE_HIGH_INTENTION"
 	FOLLOW_ACTION_LocalReportPromotionGetV30FilteringExternalAction              LocalReportPromotionGetV30FilteringExternalAction = "FOLLOW_ACTION"
 	INTENTION_CLUE_ACQUISITION_LocalReportPromotionGetV30FilteringExternalAction LocalReportPromotionGetV30FilteringExternalAction = "INTENTION_CLUE_ACQUISITION"
 	LIVE_ENGAGEMENT_LocalReportPromotionGetV30FilteringExternalAction            LocalReportPromotionGetV30FilteringExternalAction = "LIVE_ENGAGEMENT"

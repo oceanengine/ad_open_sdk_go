@@ -12,15 +12,27 @@ package models
 
 // LocalReportProjectGetV30ResponseDataProjectListInner struct for LocalReportProjectGetV30ResponseDataProjectListInner
 type LocalReportProjectGetV30ResponseDataProjectListInner struct {
+	// 确认意向数(计费时间)
+	AttributionClueConfirm *int64 `json:"attribution_clue_confirm,omitempty"`
+	// 确认意向成本(计费时间)
+	AttributionClueConfirmCost *float64 `json:"attribution_clue_confirm_cost,omitempty"`
+	// 预付定金数(计费时间)
+	AttributionClueHighIntention *int64 `json:"attribution_clue_high_intention,omitempty"`
+	// 预付定金成本(计费时间)
+	AttributionClueHighIntentionCost *float64 `json:"attribution_clue_high_intention_cost,omitempty"`
 	// 私信留资数(计费时间)
 	AttributionClueMessageCnt *int64 `json:"attribution_clue_message_cnt,omitempty"`
 	// 团购线索数(计费时间)
 	AttributionCluePayOrderCnt *int64 `json:"attribution_clue_pay_order_cnt,omitempty"`
-	// 转化率(计费时间)
+	// 正价课购买成本(计费时间)
+	AttributionConversionClassCost *float64 `json:"attribution_conversion_class_cost,omitempty"`
+	// 正价课购买数(计费时间)
+	AttributionConversionClassCount *int64 `json:"attribution_conversion_class_count,omitempty"`
+	// 转化率(计费时间)(建议参考对应的事件指标)
 	AttributionConversionRate *float64 `json:"attribution_conversion_rate,omitempty"`
-	// 转化数(计费时间)
+	// 转化数(计费时间)(建议参考对应的事件指标)
 	AttributionConvertCnt *int64 `json:"attribution_convert_cnt,omitempty"`
-	// 转化成本(元)(计费时间)
+	// 转化成本(元)(计费时间)(建议参考对应的事件指标)
 	AttributionConvertCost *float64 `json:"attribution_convert_cost,omitempty"`
 	// 表单提交数(计费时间)
 	AttributionFormCnt *int64 `json:"attribution_form_cnt,omitempty"`
@@ -44,11 +56,11 @@ type LocalReportProjectGetV30ResponseDataProjectListInner struct {
 	ClueMessageCount *int64 `json:"clue_message_count,omitempty"`
 	// 团购线索数
 	CluePayOrderCnt *int64 `json:"clue_pay_order_cnt,omitempty"`
-	// 转化成本(元)
+	// 转化成本(元)(建议参考对应的事件指标)
 	ConversionCost *float64 `json:"conversion_cost,omitempty"`
-	// 转化率
+	// 转化率(建议参考对应的事件指标)
 	ConversionRate *float64 `json:"conversion_rate,omitempty"`
-	// 转化数
+	// 转化数(建议参考对应的事件指标)
 	ConvertCnt *int64 `json:"convert_cnt,omitempty"`
 	//
 	CostPerVideoOtoPayOrder7d *float64 `json:"cost_per_video_oto_pay_order_7d,omitempty"`

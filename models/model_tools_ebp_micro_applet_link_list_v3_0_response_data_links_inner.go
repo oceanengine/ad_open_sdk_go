@@ -12,6 +12,7 @@ package models
 
 // ToolsEbpMicroAppletLinkListV30ResponseDataLinksInner struct for ToolsEbpMicroAppletLinkListV30ResponseDataLinksInner
 type ToolsEbpMicroAppletLinkListV30ResponseDataLinksInner struct {
+	ActiveStatus *ToolsEbpMicroAppletLinkListV30DataLinksActiveStatus `json:"active_status,omitempty"`
 	//
 	AppId       *string                                             `json:"app_id,omitempty"`
 	AuditStatus *ToolsEbpMicroAppletLinkListV30DataLinksAuditStatus `json:"audit_status,omitempty"`

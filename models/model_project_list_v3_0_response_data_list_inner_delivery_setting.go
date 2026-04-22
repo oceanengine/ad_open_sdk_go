@@ -33,7 +33,8 @@ type ProjectListV30ResponseDataListInnerDeliverySetting struct {
 	//
 	FilterNightSwitch *string `json:"filter_night_switch,omitempty"`
 	//
-	FirstRoiGoal *float64 `json:"first_roi_goal,omitempty"`
+	FirstRoiGoal   *float64                                             `json:"first_roi_goal,omitempty"`
+	LayerRoiSwitch *ProjectListV30DataListDeliverySettingLayerRoiSwitch `json:"layer_roi_switch,omitempty"`
 	//
 	LiveDuration  *float64                                            `json:"live_duration,omitempty"`
 	ProjectCustom *ProjectListV30DataListDeliverySettingProjectCustom `json:"project_custom,omitempty"`

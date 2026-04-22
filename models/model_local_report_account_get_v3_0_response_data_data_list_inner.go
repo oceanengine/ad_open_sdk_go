@@ -12,10 +12,22 @@ package models
 
 // LocalReportAccountGetV30ResponseDataDataListInner struct for LocalReportAccountGetV30ResponseDataDataListInner
 type LocalReportAccountGetV30ResponseDataDataListInner struct {
+	// 确认意向数(计费时间)
+	AttributionClueConfirm *int64 `json:"attribution_clue_confirm,omitempty"`
+	// 确认意向成本(计费时间)
+	AttributionClueConfirmCost *float64 `json:"attribution_clue_confirm_cost,omitempty"`
+	// 预付定金数(计费时间)
+	AttributionClueHighIntention *int64 `json:"attribution_clue_high_intention,omitempty"`
+	// 预付定金成本(计费时间)
+	AttributionClueHighIntentionCost *float64 `json:"attribution_clue_high_intention_cost,omitempty"`
 	//
 	AttributionClueMessageCnt *int64 `json:"attribution_clue_message_cnt,omitempty"`
 	//
 	AttributionCluePayOrderCnt *int64 `json:"attribution_clue_pay_order_cnt,omitempty"`
+	// 正价课购买成本(计费时间)
+	AttributionConversionClassCost *float64 `json:"attribution_conversion_class_cost,omitempty"`
+	// 正价课购买数(计费时间)
+	AttributionConversionClassCount *int64 `json:"attribution_conversion_class_count,omitempty"`
 	//
 	AttributionConversionRate *float64 `json:"attribution_conversion_rate,omitempty"`
 	//

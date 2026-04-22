@@ -15,8 +15,8 @@ type ToolsBidSuggestV2BidMode string
 
 // List of tools_bid_suggest_v2_bid_mode
 const (
-	SUGGEST_ToolsBidSuggestV2BidMode  ToolsBidSuggestV2BidMode = "SUGGEST"
 	AUTO_BID_ToolsBidSuggestV2BidMode ToolsBidSuggestV2BidMode = "AUTO_BID"
+	SUGGEST_ToolsBidSuggestV2BidMode  ToolsBidSuggestV2BidMode = "SUGGEST"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_bid_mode value

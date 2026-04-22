@@ -896,6 +896,7 @@ Class | Method | HTTP request
 *SecurityAuditResultsV30Api* | **OpenApiV30SecurityAuditResultsGet** | **Get** /open_api/v3.0/security/audit_results/
 *SecurityCreateAppealV30Api* | **OpenApiV30SecurityCreateAppealPost** | **Post** /open_api/v3.0/security/create_appeal/
 *SecurityGetConsultResultV30Api* | **OpenApiV30SecurityGetConsultResultGet** | **Get** /open_api/v3.0/security/get_consult_result/
+*SecurityNonScoreDisposalInfoGetV30Api* | **OpenApiV30SecurityNonScoreDisposalInfoGetGet** | **Get** /open_api/v3.0/security/non_score_disposal_info/get/
 *SecurityOpenMaterialAuditV30Api* | **OpenApiV30SecurityOpenMaterialAuditPost** | **Post** /open_api/v3.0/security/open_material_audit/
 *SecurityScoreDisposalInfoGetV30Api* | **OpenApiV30SecurityScoreDisposalInfoGetGet** | **Get** /open_api/v3.0/security/score_disposal_info/get/
 *SecurityScoreTotalGetV30Api* | **OpenApiV30SecurityScoreTotalGetGet** | **Get** /open_api/v3.0/security/score_total/get/

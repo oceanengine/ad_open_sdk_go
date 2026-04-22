@@ -15,7 +15,8 @@ type ToolsMicroGameConvertWindowGetV30AccountType string
 
 // List of tools_micro_game_convert_window_get_v3.0_account_type
 const (
-	AD_ToolsMicroGameConvertWindowGetV30AccountType ToolsMicroGameConvertWindowGetV30AccountType = "AD"
+	AD_ToolsMicroGameConvertWindowGetV30AccountType  ToolsMicroGameConvertWindowGetV30AccountType = "AD"
+	EBP_ToolsMicroGameConvertWindowGetV30AccountType ToolsMicroGameConvertWindowGetV30AccountType = "EBP"
 )
 
 // Ptr returns reference to tools_micro_game_convert_window_get_v3.0_account_type value

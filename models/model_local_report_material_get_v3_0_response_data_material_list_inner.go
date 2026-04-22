@@ -12,10 +12,22 @@ package models
 
 // LocalReportMaterialGetV30ResponseDataMaterialListInner struct for LocalReportMaterialGetV30ResponseDataMaterialListInner
 type LocalReportMaterialGetV30ResponseDataMaterialListInner struct {
+	// 确认意向数(计费时间)
+	AttributionClueConfirm *int64 `json:"attribution_clue_confirm,omitempty"`
+	// 确认意向成本(计费时间)
+	AttributionClueConfirmCost *float64 `json:"attribution_clue_confirm_cost,omitempty"`
+	// 预付定金数(计费时间)
+	AttributionClueHighIntention *int64 `json:"attribution_clue_high_intention,omitempty"`
+	// 预付定金成本(计费时间)
+	AttributionClueHighIntentionCost *float64 `json:"attribution_clue_high_intention_cost,omitempty"`
 	// 私信留资数(计费时间)
 	AttributionClueMessageCnt *int64 `json:"attribution_clue_message_cnt,omitempty"`
 	// 团购线索数(计费时间)
 	AttributionCluePayOrderCnt *int64 `json:"attribution_clue_pay_order_cnt,omitempty"`
+	// 正价课购买成本(计费时间)
+	AttributionConversionClassCost *float64 `json:"attribution_conversion_class_cost,omitempty"`
+	// 正价课购买数(计费时间)
+	AttributionConversionClassCount *int64 `json:"attribution_conversion_class_count,omitempty"`
 	// 转化率(计费时间)
 	AttributionConversionRate *float64 `json:"attribution_conversion_rate,omitempty"`
 	// 转化数(计费时间)

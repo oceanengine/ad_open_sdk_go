@@ -15,9 +15,9 @@ type ToolsAppManagementBpShareCancelV2ShareMode string
 
 // List of tools_app_management_bp_share_cancel_v2_share_mode
 const (
+	PART_ToolsAppManagementBpShareCancelV2ShareMode    ToolsAppManagementBpShareCancelV2ShareMode = "PART"
 	COMPANY_ToolsAppManagementBpShareCancelV2ShareMode ToolsAppManagementBpShareCancelV2ShareMode = "COMPANY"
 	ALL_ToolsAppManagementBpShareCancelV2ShareMode     ToolsAppManagementBpShareCancelV2ShareMode = "ALL"
-	PART_ToolsAppManagementBpShareCancelV2ShareMode    ToolsAppManagementBpShareCancelV2ShareMode = "PART"
 )
 
 // Ptr returns reference to tools_app_management_bp_share_cancel_v2_share_mode value

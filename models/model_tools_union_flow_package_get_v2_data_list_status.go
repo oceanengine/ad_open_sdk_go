@@ -15,8 +15,8 @@ type ToolsUnionFlowPackageGetV2DataListStatus string
 
 // List of tools_union_flow_package_get_v2_data_list_status
 const (
-	FLOW_PACKAGE_ENABLE_ToolsUnionFlowPackageGetV2DataListStatus  ToolsUnionFlowPackageGetV2DataListStatus = "FLOW_PACKAGE_ENABLE"
 	FLOW_PACKAGE_DISABLE_ToolsUnionFlowPackageGetV2DataListStatus ToolsUnionFlowPackageGetV2DataListStatus = "FLOW_PACKAGE_DISABLE"
+	FLOW_PACKAGE_ENABLE_ToolsUnionFlowPackageGetV2DataListStatus  ToolsUnionFlowPackageGetV2DataListStatus = "FLOW_PACKAGE_ENABLE"
 )
 
 // Ptr returns reference to tools_union_flow_package_get_v2_data_list_status value

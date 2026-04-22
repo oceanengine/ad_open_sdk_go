@@ -16,8 +16,8 @@ type AdGetV2DataCategoryType string
 // List of ad_get_v2_data_category_type
 const (
 	PRODUCT_AdGetV2DataCategoryType  AdGetV2DataCategoryType = "PRODUCT"
-	CATEGORY_AdGetV2DataCategoryType AdGetV2DataCategoryType = "CATEGORY"
 	NONE_AdGetV2DataCategoryType     AdGetV2DataCategoryType = "NONE"
+	CATEGORY_AdGetV2DataCategoryType AdGetV2DataCategoryType = "CATEGORY"
 )
 
 // Ptr returns reference to ad_get_v2_data_category_type value

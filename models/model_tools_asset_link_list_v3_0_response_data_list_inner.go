@@ -13,8 +13,9 @@ package models
 // ToolsAssetLinkListV30ResponseDataListInner struct for ToolsAssetLinkListV30ResponseDataListInner
 type ToolsAssetLinkListV30ResponseDataListInner struct {
 	// 客户id
-	AccountId   *int64                                    `json:"account_id,omitempty"`
-	AccountType *ToolsAssetLinkListV30DataListAccountType `json:"account_type,omitempty"`
+	AccountId    *int64                                     `json:"account_id,omitempty"`
+	AccountType  *ToolsAssetLinkListV30DataListAccountType  `json:"account_type,omitempty"`
+	ActiveStatus *ToolsAssetLinkListV30DataListActiveStatus `json:"active_status,omitempty"`
 	//
 	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
 	//

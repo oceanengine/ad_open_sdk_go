@@ -15,8 +15,10 @@ type FileEbpVideoGetV30DataListImageMode string
 
 // List of file_ebp_video_get_v3.0_data_list_image_mode
 const (
-	CREATIVE_IMAGE_MODE_VIDEO_FileEbpVideoGetV30DataListImageMode          FileEbpVideoGetV30DataListImageMode = "CREATIVE_IMAGE_MODE_VIDEO"
-	CREATIVE_IMAGE_MODE_VIDEO_VERTICAL_FileEbpVideoGetV30DataListImageMode FileEbpVideoGetV30DataListImageMode = "CREATIVE_IMAGE_MODE_VIDEO_VERTICAL"
+	CREATIVE_IMAGE_MODE_CALIBRATION_FREE_VIDEO_FileEbpVideoGetV30DataListImageMode FileEbpVideoGetV30DataListImageMode = "CREATIVE_IMAGE_MODE_CALIBRATION_FREE_VIDEO"
+	CREATIVE_IMAGE_MODE_UNION_SPLASH_VIDEO_FileEbpVideoGetV30DataListImageMode     FileEbpVideoGetV30DataListImageMode = "CREATIVE_IMAGE_MODE_UNION_SPLASH_VIDEO"
+	CREATIVE_IMAGE_MODE_VIDEO_FileEbpVideoGetV30DataListImageMode                  FileEbpVideoGetV30DataListImageMode = "CREATIVE_IMAGE_MODE_VIDEO"
+	CREATIVE_IMAGE_MODE_VIDEO_VERTICAL_FileEbpVideoGetV30DataListImageMode         FileEbpVideoGetV30DataListImageMode = "CREATIVE_IMAGE_MODE_VIDEO_VERTICAL"
 )
 
 // Ptr returns reference to file_ebp_video_get_v3.0_data_list_image_mode value

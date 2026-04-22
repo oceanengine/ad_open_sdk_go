@@ -1,5 +1,5 @@
 /*
-API version: 1.1.84
+API version: 1.1.85
 */
 package ad_open_sdk_go
 
@@ -2785,6 +2785,10 @@ func (c *Client) SecurityCreateAppealV30Api() *api.SecurityCreateAppealV30ApiSer
 
 func (c *Client) SecurityGetConsultResultV30Api() *api.SecurityGetConsultResultV30ApiService {
 	return c.ApiClient.SecurityGetConsultResultV30Api
+}
+
+func (c *Client) SecurityNonScoreDisposalInfoGetV30Api() *api.SecurityNonScoreDisposalInfoGetV30ApiService {
+	return c.ApiClient.SecurityNonScoreDisposalInfoGetV30Api
 }
 
 func (c *Client) SecurityOpenMaterialAuditV30Api() *api.SecurityOpenMaterialAuditV30ApiService {

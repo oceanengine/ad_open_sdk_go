@@ -18,8 +18,8 @@ const (
 	UNIVERSAL_AdGetV2DataInventoryCatalog       AdGetV2DataInventoryCatalog = "UNIVERSAL"
 	SCENE_AdGetV2DataInventoryCatalog           AdGetV2DataInventoryCatalog = "SCENE"
 	SMART_AdGetV2DataInventoryCatalog           AdGetV2DataInventoryCatalog = "SMART"
-	MANUAL_AdGetV2DataInventoryCatalog          AdGetV2DataInventoryCatalog = "MANUAL"
 	UNIVERSAL_SMART_AdGetV2DataInventoryCatalog AdGetV2DataInventoryCatalog = "UNIVERSAL_SMART"
+	MANUAL_AdGetV2DataInventoryCatalog          AdGetV2DataInventoryCatalog = "MANUAL"
 )
 
 // Ptr returns reference to ad_get_v2_data_inventory_catalog value

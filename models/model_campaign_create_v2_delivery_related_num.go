@@ -15,8 +15,8 @@ type CampaignCreateV2DeliveryRelatedNum string
 
 // List of campaign_create_v2_delivery_related_num
 const (
-	CAMPAIGN_DPA_MULTI_DELIVERY_CampaignCreateV2DeliveryRelatedNum  CampaignCreateV2DeliveryRelatedNum = "CAMPAIGN_DPA_MULTI_DELIVERY"
 	CAMPAIGN_DPA_DEFAULT_NOT_CampaignCreateV2DeliveryRelatedNum     CampaignCreateV2DeliveryRelatedNum = "CAMPAIGN_DPA_DEFAULT_NOT"
+	CAMPAIGN_DPA_MULTI_DELIVERY_CampaignCreateV2DeliveryRelatedNum  CampaignCreateV2DeliveryRelatedNum = "CAMPAIGN_DPA_MULTI_DELIVERY"
 	CAMPAIGN_DPA_SINGLE_DELIVERY_CampaignCreateV2DeliveryRelatedNum CampaignCreateV2DeliveryRelatedNum = "CAMPAIGN_DPA_SINGLE_DELIVERY"
 )
 

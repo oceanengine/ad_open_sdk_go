@@ -30,6 +30,8 @@ type FileMaterialAttributesListV2ResponseDataMaterialsInner struct {
 	IsEcpLowQualityMaterial *bool `json:"is_ecp_low_quality_material,omitempty"`
 	// 是否是首发素材
 	IsFirstPublishMaterial *bool `json:"is_first_publish_material,omitempty"`
+	// 是否暗水印搬运素材，仅 account_type = AD 或 LOCAL 查询
+	IsHiddenWatermark *bool `json:"is_hidden_watermark,omitempty"`
 	// 是否低效素材
 	IsInefficientMaterial *bool `json:"is_inefficient_material,omitempty"`
 	// 是否本地推优质素材

@@ -25,7 +25,8 @@ type UniProjectListGetV30ResponseDataListInner struct {
 	EndTime          *string                                       `json:"end_time,omitempty"`
 	MonetizationMode *UniProjectListGetV30DataListMonetizationMode `json:"monetization_mode,omitempty"`
 	//
-	Name *string `json:"name,omitempty"`
+	Name    *string                              `json:"name,omitempty"`
+	Pricing *UniProjectListGetV30DataListPricing `json:"pricing,omitempty"`
 	//
 	ProjectId      *int64                                                   `json:"project_id,omitempty"`
 	RelatedProduct *UniProjectListGetV30ResponseDataListInnerRelatedProduct `json:"related_product,omitempty"`
