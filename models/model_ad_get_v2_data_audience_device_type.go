@@ -15,8 +15,8 @@ type AdGetV2DataAudienceDeviceType string
 
 // List of ad_get_v2_data_audience_device_type
 const (
-	PAD_AdGetV2DataAudienceDeviceType    AdGetV2DataAudienceDeviceType = "PAD"
 	MOBILE_AdGetV2DataAudienceDeviceType AdGetV2DataAudienceDeviceType = "MOBILE"
+	PAD_AdGetV2DataAudienceDeviceType    AdGetV2DataAudienceDeviceType = "PAD"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_device_type value

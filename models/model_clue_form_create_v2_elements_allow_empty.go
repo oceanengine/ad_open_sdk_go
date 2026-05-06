@@ -15,8 +15,8 @@ type ClueFormCreateV2ElementsAllowEmpty string
 
 // List of clue_form_create_v2_elements_allow_empty
 const (
-	Enum_0_ClueFormCreateV2ElementsAllowEmpty ClueFormCreateV2ElementsAllowEmpty = "0"
 	Enum_1_ClueFormCreateV2ElementsAllowEmpty ClueFormCreateV2ElementsAllowEmpty = "1"
+	Enum_0_ClueFormCreateV2ElementsAllowEmpty ClueFormCreateV2ElementsAllowEmpty = "0"
 )
 
 // Ptr returns reference to clue_form_create_v2_elements_allow_empty value

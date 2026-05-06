@@ -15,8 +15,8 @@ type ClueCouponGetV2IsDel string
 
 // List of clue_coupon_get_v2_is_del
 const (
-	Enum_0_ClueCouponGetV2IsDel ClueCouponGetV2IsDel = "0"
 	Enum_1_ClueCouponGetV2IsDel ClueCouponGetV2IsDel = "1"
+	Enum_0_ClueCouponGetV2IsDel ClueCouponGetV2IsDel = "0"
 )
 
 // Ptr returns reference to clue_coupon_get_v2_is_del value

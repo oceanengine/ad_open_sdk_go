@@ -15,8 +15,8 @@ type AudiencePackageCreateV2DeviceType string
 
 // List of audience_package_create_v2_device_type
 const (
-	PAD_AudiencePackageCreateV2DeviceType    AudiencePackageCreateV2DeviceType = "PAD"
 	MOBILE_AudiencePackageCreateV2DeviceType AudiencePackageCreateV2DeviceType = "MOBILE"
+	PAD_AudiencePackageCreateV2DeviceType    AudiencePackageCreateV2DeviceType = "PAD"
 )
 
 // Ptr returns reference to audience_package_create_v2_device_type value

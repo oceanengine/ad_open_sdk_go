@@ -15,11 +15,12 @@ type SecurityScoreViolationEventGetV30DataAdvScoreEventStatus string
 
 // List of security_score_violation_event_get_v3.0_data_adv_score_event_status
 const (
-	APPEAL_SecurityScoreViolationEventGetV30DataAdvScoreEventStatus     SecurityScoreViolationEventGetV30DataAdvScoreEventStatus = "APPEAL"
-	FAILAPPEAL_SecurityScoreViolationEventGetV30DataAdvScoreEventStatus SecurityScoreViolationEventGetV30DataAdvScoreEventStatus = "FAILAPPEAL"
-	ONAPPEAL_SecurityScoreViolationEventGetV30DataAdvScoreEventStatus   SecurityScoreViolationEventGetV30DataAdvScoreEventStatus = "ONAPPEAL"
-	TIMEOUT_SecurityScoreViolationEventGetV30DataAdvScoreEventStatus    SecurityScoreViolationEventGetV30DataAdvScoreEventStatus = "TIMEOUT"
-	VALID_SecurityScoreViolationEventGetV30DataAdvScoreEventStatus      SecurityScoreViolationEventGetV30DataAdvScoreEventStatus = "VALID"
+	APPEAL_SecurityScoreViolationEventGetV30DataAdvScoreEventStatus         SecurityScoreViolationEventGetV30DataAdvScoreEventStatus = "APPEAL"
+	APPEALDISABLED_SecurityScoreViolationEventGetV30DataAdvScoreEventStatus SecurityScoreViolationEventGetV30DataAdvScoreEventStatus = "APPEALDISABLED"
+	FAILAPPEAL_SecurityScoreViolationEventGetV30DataAdvScoreEventStatus     SecurityScoreViolationEventGetV30DataAdvScoreEventStatus = "FAILAPPEAL"
+	ONAPPEAL_SecurityScoreViolationEventGetV30DataAdvScoreEventStatus       SecurityScoreViolationEventGetV30DataAdvScoreEventStatus = "ONAPPEAL"
+	TIMEOUT_SecurityScoreViolationEventGetV30DataAdvScoreEventStatus        SecurityScoreViolationEventGetV30DataAdvScoreEventStatus = "TIMEOUT"
+	VALID_SecurityScoreViolationEventGetV30DataAdvScoreEventStatus          SecurityScoreViolationEventGetV30DataAdvScoreEventStatus = "VALID"
 )
 
 // Ptr returns reference to security_score_violation_event_get_v3.0_data_adv_score_event_status value

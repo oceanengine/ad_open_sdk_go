@@ -15,8 +15,8 @@ type CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType string
 
 // List of creative_custom_creative_update_v2_ad_data_anchor_related_type
 const (
-	OFF_CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType    CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType = "OFF"
 	AUTO_CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType   CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType = "AUTO"
+	OFF_CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType    CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType = "OFF"
 	SELECT_CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType CreativeCustomCreativeUpdateV2AdDataAnchorRelatedType = "SELECT"
 )
 

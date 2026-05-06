@@ -20,7 +20,7 @@ type UniProjectCreateV30Request struct {
 	AwemeId   *string                              `json:"aweme_id,omitempty"`
 	BrandInfo *UniProjectCreateV30RequestBrandInfo `json:"brand_info,omitempty"`
 	//
-	Budget float64 `json:"budget"`
+	Budget *float64 `json:"budget,omitempty"`
 	//
 	CallToActionButtons []string                           `json:"call_to_action_buttons,omitempty"`
 	DeliveryProduct     UniProjectCreateV30DeliveryProduct `json:"delivery_product"`

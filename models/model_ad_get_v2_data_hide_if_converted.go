@@ -15,14 +15,14 @@ type AdGetV2DataHideIfConverted string
 
 // List of ad_get_v2_data_hide_if_converted
 const (
-	APP_AdGetV2DataHideIfConverted          AdGetV2DataHideIfConverted = "APP"
-	ADVERTISER_AdGetV2DataHideIfConverted   AdGetV2DataHideIfConverted = "ADVERTISER"
-	GLOBAL_APP_AdGetV2DataHideIfConverted   AdGetV2DataHideIfConverted = "GLOBAL_APP"
 	NO_EXCLUDE_AdGetV2DataHideIfConverted   AdGetV2DataHideIfConverted = "NO_EXCLUDE"
+	AD_AdGetV2DataHideIfConverted           AdGetV2DataHideIfConverted = "AD"
+	ADVERTISER_AdGetV2DataHideIfConverted   AdGetV2DataHideIfConverted = "ADVERTISER"
 	CAMPAIGN_AdGetV2DataHideIfConverted     AdGetV2DataHideIfConverted = "CAMPAIGN"
 	CUSTOMER_AdGetV2DataHideIfConverted     AdGetV2DataHideIfConverted = "CUSTOMER"
+	GLOBAL_APP_AdGetV2DataHideIfConverted   AdGetV2DataHideIfConverted = "GLOBAL_APP"
 	ORGANIZATION_AdGetV2DataHideIfConverted AdGetV2DataHideIfConverted = "ORGANIZATION"
-	AD_AdGetV2DataHideIfConverted           AdGetV2DataHideIfConverted = "AD"
+	APP_AdGetV2DataHideIfConverted          AdGetV2DataHideIfConverted = "APP"
 )
 
 // Ptr returns reference to ad_get_v2_data_hide_if_converted value

@@ -15,8 +15,8 @@ type ClueFormCreateV2EnableLayer string
 
 // List of clue_form_create_v2_enable_layer
 const (
-	Enum_0_ClueFormCreateV2EnableLayer ClueFormCreateV2EnableLayer = "0"
 	Enum_1_ClueFormCreateV2EnableLayer ClueFormCreateV2EnableLayer = "1"
+	Enum_0_ClueFormCreateV2EnableLayer ClueFormCreateV2EnableLayer = "0"
 )
 
 // Ptr returns reference to clue_form_create_v2_enable_layer value
