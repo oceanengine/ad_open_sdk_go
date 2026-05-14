@@ -13,9 +13,11 @@ package models
 // SharedWalletSharedRelationCreateV30Request struct for SharedWalletSharedRelationCreateV30Request
 type SharedWalletSharedRelationCreateV30Request struct {
 	// 账号id
-	AccountId         int64                                                       `json:"account_id"`
-	AccountType       SharedWalletSharedRelationCreateV30AccountType              `json:"account_type"`
-	AdvRangeParameter SharedWalletSharedRelationCreateV30RequestAdvRangeParameter `json:"adv_range_parameter"`
+	AccountId int64 `json:"account_id"`
+	// 账户业务线列表，本次操作的adv业务线，EBP的操作必须传此参数
+	AccountPlatformList []*SharedWalletSharedRelationCreateV30AccountPlatformList   `json:"account_platform_list,omitempty"`
+	AccountType         SharedWalletSharedRelationCreateV30AccountType              `json:"account_type"`
+	AdvRangeParameter   SharedWalletSharedRelationCreateV30RequestAdvRangeParameter `json:"adv_range_parameter"`
 	// 如果是绑定，填 0
 	FromWalletId int64 `json:"from_wallet_id"`
 	// 操作id

@@ -16,6 +16,7 @@ type UniProjectUpdateV30AudiencePlatform string
 // List of uni_project_update_v3.0_audience_platform
 const (
 	ANDROID_UniProjectUpdateV30AudiencePlatform UniProjectUpdateV30AudiencePlatform = "ANDROID"
+	HARMONY_UniProjectUpdateV30AudiencePlatform UniProjectUpdateV30AudiencePlatform = "HARMONY"
 	IOS_UniProjectUpdateV30AudiencePlatform     UniProjectUpdateV30AudiencePlatform = "IOS"
 )
 

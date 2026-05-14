@@ -16,6 +16,7 @@ type UniProjectCreateV30AudiencePlatform string
 // List of uni_project_create_v3.0_audience_platform
 const (
 	ANDROID_UniProjectCreateV30AudiencePlatform UniProjectCreateV30AudiencePlatform = "ANDROID"
+	HARMONY_UniProjectCreateV30AudiencePlatform UniProjectCreateV30AudiencePlatform = "HARMONY"
 	IOS_UniProjectCreateV30AudiencePlatform     UniProjectCreateV30AudiencePlatform = "IOS"
 )
 

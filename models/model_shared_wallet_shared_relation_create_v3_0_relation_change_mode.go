@@ -15,8 +15,9 @@ type SharedWalletSharedRelationCreateV30RelationChangeMode string
 
 // List of shared_wallet_shared_relation_create_v3.0_relation_change_mode
 const (
-	BIND_SharedWalletSharedRelationCreateV30RelationChangeMode   SharedWalletSharedRelationCreateV30RelationChangeMode = "bind"
-	UNBIND_SharedWalletSharedRelationCreateV30RelationChangeMode SharedWalletSharedRelationCreateV30RelationChangeMode = "unbind"
+	BIND_SharedWalletSharedRelationCreateV30RelationChangeMode     SharedWalletSharedRelationCreateV30RelationChangeMode = "bind"
+	TRANSFER_SharedWalletSharedRelationCreateV30RelationChangeMode SharedWalletSharedRelationCreateV30RelationChangeMode = "transfer"
+	UNBIND_SharedWalletSharedRelationCreateV30RelationChangeMode   SharedWalletSharedRelationCreateV30RelationChangeMode = "unbind"
 )
 
 // Ptr returns reference to shared_wallet_shared_relation_create_v3.0_relation_change_mode value

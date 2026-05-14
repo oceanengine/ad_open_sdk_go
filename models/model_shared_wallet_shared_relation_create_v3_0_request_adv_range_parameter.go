@@ -14,6 +14,6 @@ package models
 type SharedWalletSharedRelationCreateV30RequestAdvRangeParameter struct {
 	// 账号id，上限1w
 	AdvIds []int64 `json:"adv_ids,omitempty"`
-	// 广告主公司列表，上限1
+	// 广告主公司列表，上限1，解绑时不支持
 	SelfCompanyIds []int64 `json:"self_company_ids,omitempty"`
 }

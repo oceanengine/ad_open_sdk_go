@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.86
+// APIClient manages communication with the Oceanengine Open Api API v1.1.87
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -1745,6 +1745,10 @@ type APIClient struct {
 
 	StardeliveryTaskUnshareV30Api *StardeliveryTaskUnshareV30ApiService
 
+	StdProjectCreateV30Api *StdProjectCreateV30ApiService
+
+	StdProjectUpdateV30Api *StdProjectUpdateV30ApiService
+
 	SubscribeAccountsAddV30Api *SubscribeAccountsAddV30ApiService
 
 	SubscribeAccountsListV30Api *SubscribeAccountsListV30ApiService
@@ -3185,6 +3189,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StardeliveryTaskShareableListV30Api = (*StardeliveryTaskShareableListV30ApiService)(&c.common)
 	c.StardeliveryTaskSharingListV30Api = (*StardeliveryTaskSharingListV30ApiService)(&c.common)
 	c.StardeliveryTaskUnshareV30Api = (*StardeliveryTaskUnshareV30ApiService)(&c.common)
+	c.StdProjectCreateV30Api = (*StdProjectCreateV30ApiService)(&c.common)
+	c.StdProjectUpdateV30Api = (*StdProjectUpdateV30ApiService)(&c.common)
 	c.SubscribeAccountsAddV30Api = (*SubscribeAccountsAddV30ApiService)(&c.common)
 	c.SubscribeAccountsListV30Api = (*SubscribeAccountsListV30ApiService)(&c.common)
 	c.SubscribeAccountsRemoveV30Api = (*SubscribeAccountsRemoveV30ApiService)(&c.common)

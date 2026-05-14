@@ -15,8 +15,8 @@ type ReportAdvertiserGetV2OrderType string
 
 // List of report_advertiser_get_v2_order_type
 const (
-	DESC_ReportAdvertiserGetV2OrderType ReportAdvertiserGetV2OrderType = "DESC"
 	ASC_ReportAdvertiserGetV2OrderType  ReportAdvertiserGetV2OrderType = "ASC"
+	DESC_ReportAdvertiserGetV2OrderType ReportAdvertiserGetV2OrderType = "DESC"
 )
 
 // Ptr returns reference to report_advertiser_get_v2_order_type value

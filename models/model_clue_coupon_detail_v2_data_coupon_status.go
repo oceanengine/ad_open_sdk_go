@@ -16,11 +16,11 @@ type ClueCouponDetailV2DataCouponStatus string
 // List of clue_coupon_detail_v2_data_coupon_status
 const (
 	OFFLINE_ClueCouponDetailV2DataCouponStatus     ClueCouponDetailV2DataCouponStatus = "OFFLINE"
-	UNAUDITED_ClueCouponDetailV2DataCouponStatus   ClueCouponDetailV2DataCouponStatus = "UNAUDITED"
-	DELETED_ClueCouponDetailV2DataCouponStatus     ClueCouponDetailV2DataCouponStatus = "DELETED"
 	AUDIT_DOING_ClueCouponDetailV2DataCouponStatus ClueCouponDetailV2DataCouponStatus = "AUDIT_DOING"
 	NORMAL_ClueCouponDetailV2DataCouponStatus      ClueCouponDetailV2DataCouponStatus = "NORMAL"
 	PAUSE_ClueCouponDetailV2DataCouponStatus       ClueCouponDetailV2DataCouponStatus = "PAUSE"
+	DELETED_ClueCouponDetailV2DataCouponStatus     ClueCouponDetailV2DataCouponStatus = "DELETED"
+	UNAUDITED_ClueCouponDetailV2DataCouponStatus   ClueCouponDetailV2DataCouponStatus = "UNAUDITED"
 	AUDIT_FAIL_ClueCouponDetailV2DataCouponStatus  ClueCouponDetailV2DataCouponStatus = "AUDIT_FAIL"
 )
 

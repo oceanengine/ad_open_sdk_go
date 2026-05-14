@@ -13,7 +13,8 @@ package models
 // ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorLink
 type ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorLink struct {
 	//
-	LinkType *string `json:"link_type,omitempty"`
+	LinkType *string                                                             `json:"link_type,omitempty"`
+	MicroApp *ToolsSiteUpdateV2RequestBricksInnerEventsInnerBehaviorLinkMicroApp `json:"micro_app,omitempty"`
 	//
 	QuickApp *string `json:"quick_app,omitempty"`
 	//

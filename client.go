@@ -1,5 +1,5 @@
 /*
-API version: 1.1.86
+API version: 1.1.87
 */
 package ad_open_sdk_go
 
@@ -3413,6 +3413,14 @@ func (c *Client) StardeliveryTaskSharingListV30Api() *api.StardeliveryTaskSharin
 
 func (c *Client) StardeliveryTaskUnshareV30Api() *api.StardeliveryTaskUnshareV30ApiService {
 	return c.ApiClient.StardeliveryTaskUnshareV30Api
+}
+
+func (c *Client) StdProjectCreateV30Api() *api.StdProjectCreateV30ApiService {
+	return c.ApiClient.StdProjectCreateV30Api
+}
+
+func (c *Client) StdProjectUpdateV30Api() *api.StdProjectUpdateV30ApiService {
+	return c.ApiClient.StdProjectUpdateV30Api
 }
 
 func (c *Client) SubscribeAccountsAddV30Api() *api.SubscribeAccountsAddV30ApiService {

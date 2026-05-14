@@ -14,10 +14,12 @@ package models
 type BrandMaterialListV30ResponseDataMaterialsInner struct {
 	CategoryInfo *BrandMaterialListV30ResponseDataMaterialsInnerCategoryInfo `json:"category_info,omitempty"`
 	//
-	CreateTime          *string                                               `json:"create_time,omitempty"`
-	CreativeDisplayMode *BrandMaterialListV30DataMaterialsCreativeDisplayMode `json:"creative_display_mode,omitempty"`
-	CreativeIsAigc      *BrandMaterialListV30DataMaterialsCreativeIsAigc      `json:"creative_is_aigc,omitempty"`
-	CreativeTemplate    *BrandMaterialListV30DataMaterialsCreativeTemplate    `json:"creative_template,omitempty"`
+	CreateTime *string `json:"create_time,omitempty"`
+	//
+	CreativeData        []*BrandMaterialListV30ResponseDataMaterialsInnerCreativeDataInner `json:"creative_data,omitempty"`
+	CreativeDisplayMode *BrandMaterialListV30DataMaterialsCreativeDisplayMode              `json:"creative_display_mode,omitempty"`
+	CreativeIsAigc      *BrandMaterialListV30DataMaterialsCreativeIsAigc                   `json:"creative_is_aigc,omitempty"`
+	CreativeTemplate    *BrandMaterialListV30DataMaterialsCreativeTemplate                 `json:"creative_template,omitempty"`
 	// 投放日期 2023-03-25
 	Date []string `json:"date,omitempty"`
 	// 投放结束时间

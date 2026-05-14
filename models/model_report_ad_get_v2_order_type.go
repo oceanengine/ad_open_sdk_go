@@ -15,8 +15,8 @@ type ReportAdGetV2OrderType string
 
 // List of report_ad_get_v2_order_type
 const (
-	DESC_ReportAdGetV2OrderType ReportAdGetV2OrderType = "DESC"
 	ASC_ReportAdGetV2OrderType  ReportAdGetV2OrderType = "ASC"
+	DESC_ReportAdGetV2OrderType ReportAdGetV2OrderType = "DESC"
 )
 
 // Ptr returns reference to report_ad_get_v2_order_type value

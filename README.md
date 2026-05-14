@@ -1053,6 +1053,8 @@ Class | Method | HTTP request
 *StardeliveryTaskShareableListV30Api* | **OpenApiV30StardeliveryTaskShareableListGet** | **Get** /open_api/v3.0/stardelivery/task/shareable/list/
 *StardeliveryTaskSharingListV30Api* | **OpenApiV30StardeliveryTaskSharingListGet** | **Get** /open_api/v3.0/stardelivery/task/sharing/list/
 *StardeliveryTaskUnshareV30Api* | **OpenApiV30StardeliveryTaskUnsharePost** | **Post** /open_api/v3.0/stardelivery/task/unshare/
+*StdProjectCreateV30Api* | **OpenApiV30StdProjectCreatePost** | **Post** /open_api/v3.0/std_project/create/
+*StdProjectUpdateV30Api* | **OpenApiV30StdProjectUpdatePost** | **Post** /open_api/v3.0/std_project/update/
 *SubscribeAccountsAddV30Api* | **OpenApiV30SubscribeAccountsAddPost** | **Post** /open_api/v3.0/subscribe/accounts/add/
 *SubscribeAccountsListV30Api* | **OpenApiV30SubscribeAccountsListGet** | **Get** /open_api/v3.0/subscribe/accounts/list/
 *SubscribeAccountsRemoveV30Api* | **OpenApiV30SubscribeAccountsRemovePost** | **Post** /open_api/v3.0/subscribe/accounts/remove/

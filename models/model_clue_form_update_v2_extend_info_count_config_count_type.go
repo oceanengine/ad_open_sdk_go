@@ -15,8 +15,8 @@ type ClueFormUpdateV2ExtendInfoCountConfigCountType string
 
 // List of clue_form_update_v2_extend_info_count_config_count_type
 const (
-	COUNT_TYPE_DECREMENT_ClueFormUpdateV2ExtendInfoCountConfigCountType ClueFormUpdateV2ExtendInfoCountConfigCountType = "COUNT_TYPE_DECREMENT"
 	COUNT_TYPE_INCREMENT_ClueFormUpdateV2ExtendInfoCountConfigCountType ClueFormUpdateV2ExtendInfoCountConfigCountType = "COUNT_TYPE_INCREMENT"
+	COUNT_TYPE_DECREMENT_ClueFormUpdateV2ExtendInfoCountConfigCountType ClueFormUpdateV2ExtendInfoCountConfigCountType = "COUNT_TYPE_DECREMENT"
 )
 
 // Ptr returns reference to clue_form_update_v2_extend_info_count_config_count_type value
