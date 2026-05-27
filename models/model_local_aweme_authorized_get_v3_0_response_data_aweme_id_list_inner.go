@@ -15,7 +15,7 @@ type LocalAwemeAuthorizedGetV30ResponseDataAwemeIdListInner struct {
 	AuthType *LocalAwemeAuthorizedGetV30DataAwemeIdListAuthType `json:"auth_type,omitempty"`
 	// 抖音头像
 	AwemeAvatar *string `json:"aweme_avatar,omitempty"`
-	// 该抖音号是否有全域推广计划投放
+	// 抖音号在全域下的投放状态
 	AwemeHasUniProm *bool `json:"aweme_has_uni_prom,omitempty"`
 	// 抖音号
 	AwemeId *string `json:"aweme_id,omitempty"`
@@ -23,4 +23,6 @@ type LocalAwemeAuthorizedGetV30ResponseDataAwemeIdListInner struct {
 	AwemeName *string `json:"aweme_name,omitempty"`
 	// 是否能创建roi2广告，margoal=2时返回
 	CanCreateRoi2Ad *bool `json:"can_create_roi2_ad,omitempty"`
+	// 是否有在投的roi2计划
+	HaveDeliveringRoi2Ad *bool `json:"have_delivering_roi2_ad,omitempty"`
 }

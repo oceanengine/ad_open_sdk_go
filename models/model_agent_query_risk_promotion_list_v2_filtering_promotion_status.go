@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentQueryRiskPromotionListV2FilteringPromotionStatus 广告状态
+// AgentQueryRiskPromotionListV2FilteringPromotionStatus 广告状态；枚举过时，请使用promotion_status_list来过滤投放单元状态
 type AgentQueryRiskPromotionListV2FilteringPromotionStatus string
 
 // List of agent_query_risk_promotion_list_v2_filtering_promotion_status

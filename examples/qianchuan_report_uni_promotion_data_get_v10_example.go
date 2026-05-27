@@ -31,6 +31,7 @@ type ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequestExample struct {
 	StartTime    string                                               `json:"start_time"`
 	EndTime      string                                               `json:"end_time"`
 	OrderBy      []*QianchuanReportUniPromotionDataGetV10OrderByInner `json:"order_by"`
+	DataPeriod   QianchuanReportUniPromotionDataGetV10DataPeriod      `json:"data_period,omitempty"`
 	Page         int64                                                `json:"page,omitempty"`
 	PageSize     QianchuanReportUniPromotionDataGetV10PageSize        `json:"page_size,omitempty"`
 }
@@ -54,7 +55,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanReportUniPromotionDataGetV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).DataTopic(request.DataTopic).Dimensions(request.Dimensions).Metrics(request.Metrics).Filters(request.Filters).StartTime(request.StartTime).EndTime(request.EndTime).OrderBy(request.OrderBy).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).DataTopic(request.DataTopic).Dimensions(request.Dimensions).Metrics(request.Metrics).Filters(request.Filters).StartTime(request.StartTime).EndTime(request.EndTime).OrderBy(request.OrderBy).DataPeriod(request.DataPeriod).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

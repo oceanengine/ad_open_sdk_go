@@ -23,26 +23,21 @@ import (
 type AgentQueryRiskPromotionListV2ApiService service
 
 type ApiOpenApi2AgentQueryRiskPromotionListGetRequest struct {
-	ctx          context.Context
-	ApiService   *AgentQueryRiskPromotionListV2ApiService
-	agentId      *int64
-	businessType *AgentQueryRiskPromotionListV2BusinessType
-	startDate    *string
-	endDate      *string
-	cursor       *int64
-	count        *int32
-	filtering    *AgentQueryRiskPromotionListV2Filtering
+	ctx              context.Context
+	ApiService       *AgentQueryRiskPromotionListV2ApiService
+	agentId          *int64
+	startDate        *string
+	endDate          *string
+	businessType     *AgentQueryRiskPromotionListV2BusinessType
+	cursor           *int64
+	count            *int32
+	filtering        *AgentQueryRiskPromotionListV2Filtering
+	businessTypeList *[]*AgentQueryRiskPromotionListV2BusinessTypeList
 }
 
 // 代理商账户ID
 func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) AgentId(agentId int64) *ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
 	r.agentId = &agentId
-	return r
-}
-
-// 业务线，默认AD业务线传-1
-func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) BusinessType(businessType AgentQueryRiskPromotionListV2BusinessType) *ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
-	r.businessType = &businessType
 	return r
 }
 
@@ -55,6 +50,12 @@ func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) StartDate(startDate s
 // 推送结束时间，比如：2024-03-01（最长跨度31天）
 func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) EndDate(endDate string) *ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
 	r.endDate = &endDate
+	return r
+}
+
+// 业务线，默认AD业务线传-1
+func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) BusinessType(businessType AgentQueryRiskPromotionListV2BusinessType) *ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
+	r.businessType = &businessType
 	return r
 }
 
@@ -73,6 +74,12 @@ func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) Count(count int32) *A
 // 过滤器
 func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) Filtering(filtering AgentQueryRiskPromotionListV2Filtering) *ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
 	r.filtering = &filtering
+	return r
+}
+
+// 业务线；如果同时设置business_type和本字段，将以本字段为准
+func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) BusinessTypeList(businessTypeList []*AgentQueryRiskPromotionListV2BusinessTypeList) *ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
+	r.businessTypeList = &businessTypeList
 	return r
 }
 
@@ -131,9 +138,6 @@ func (a *AgentQueryRiskPromotionListV2ApiService) getExecute(r *ApiOpenApi2Agent
 	if r.agentId == nil {
 		return localVarReturnValue, nil, ReportError("agentId is required and must be specified")
 	}
-	if r.businessType == nil {
-		return localVarReturnValue, nil, ReportError("businessType is required and must be specified")
-	}
 	if r.startDate == nil {
 		return localVarReturnValue, nil, ReportError("startDate is required and must be specified")
 	}
@@ -142,7 +146,9 @@ func (a *AgentQueryRiskPromotionListV2ApiService) getExecute(r *ApiOpenApi2Agent
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "agent_id", r.agentId)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "business_type", r.businessType)
+	if r.businessType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "business_type", r.businessType)
+	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "start_date", r.startDate)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "end_date", r.endDate)
 	if r.cursor != nil {
@@ -153,6 +159,9 @@ func (a *AgentQueryRiskPromotionListV2ApiService) getExecute(r *ApiOpenApi2Agent
 	}
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	}
+	if r.businessTypeList != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "business_type_list", r.businessTypeList)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

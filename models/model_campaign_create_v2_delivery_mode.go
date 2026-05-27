@@ -15,8 +15,8 @@ type CampaignCreateV2DeliveryMode string
 
 // List of campaign_create_v2_delivery_mode
 const (
-	MANUAL_CampaignCreateV2DeliveryMode     CampaignCreateV2DeliveryMode = "MANUAL"
 	PROCEDURAL_CampaignCreateV2DeliveryMode CampaignCreateV2DeliveryMode = "PROCEDURAL"
+	MANUAL_CampaignCreateV2DeliveryMode     CampaignCreateV2DeliveryMode = "MANUAL"
 )
 
 // Ptr returns reference to campaign_create_v2_delivery_mode value

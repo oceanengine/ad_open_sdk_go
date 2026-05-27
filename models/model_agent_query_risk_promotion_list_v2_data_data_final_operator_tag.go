@@ -18,6 +18,7 @@ const (
 	DECREASE_QUANTITY_AgentQueryRiskPromotionListV2DataDataFinalOperatorTag AgentQueryRiskPromotionListV2DataDataFinalOperatorTag = "DECREASE_QUANTITY"
 	EMPTY_AgentQueryRiskPromotionListV2DataDataFinalOperatorTag             AgentQueryRiskPromotionListV2DataDataFinalOperatorTag = "EMPTY"
 	INCREASE_QUANTITY_AgentQueryRiskPromotionListV2DataDataFinalOperatorTag AgentQueryRiskPromotionListV2DataDataFinalOperatorTag = "INCREASE_QUANTITY"
+	NON_DESCEND_AgentQueryRiskPromotionListV2DataDataFinalOperatorTag       AgentQueryRiskPromotionListV2DataDataFinalOperatorTag = "NON_DESCEND"
 	SELF_OPERATION_AgentQueryRiskPromotionListV2DataDataFinalOperatorTag    AgentQueryRiskPromotionListV2DataDataFinalOperatorTag = "SELF_OPERATION"
 )
 

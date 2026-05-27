@@ -33,6 +33,8 @@ type RejectMaterialAiRepairGetV30ResponseDataRepairMaterialInfoInner struct {
 	//
 	PreviewUrl *string `json:"preview_url,omitempty"`
 	//
+	ProjectId *int64 `json:"project_id,omitempty"`
+	//
 	PromotionId *int64 `json:"promotion_id,omitempty"`
 	//
 	VideoId *string `json:"video_id,omitempty"`

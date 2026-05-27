@@ -15,12 +15,8 @@ type StdProjectCreateV30BidType string
 
 // List of std_project_create_v3.0_bid_type
 const (
-	CONSERVATIVE_StdProjectCreateV30BidType    StdProjectCreateV30BidType = "CONSERVATIVE"
-	CUSTOM_StdProjectCreateV30BidType          StdProjectCreateV30BidType = "CUSTOM"
-	EXPLORE_UPGRADE_StdProjectCreateV30BidType StdProjectCreateV30BidType = "EXPLORE_UPGRADE"
-	NO_BID_StdProjectCreateV30BidType          StdProjectCreateV30BidType = "NO_BID"
-	OPTIMAL_COST_StdProjectCreateV30BidType    StdProjectCreateV30BidType = "OPTIMAL_COST"
-	UPPER_CONTROL_StdProjectCreateV30BidType   StdProjectCreateV30BidType = "UPPER_CONTROL"
+	CUSTOM_StdProjectCreateV30BidType StdProjectCreateV30BidType = "CUSTOM"
+	NO_BID_StdProjectCreateV30BidType StdProjectCreateV30BidType = "NO_BID"
 )
 
 // Ptr returns reference to std_project_create_v3.0_bid_type value

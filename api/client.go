@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.87
+// APIClient manages communication with the Oceanengine Open Api API v1.1.88
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -581,6 +581,8 @@ type APIClient struct {
 
 	DpaMetaGetV2Api *DpaMetaGetV2ApiService
 
+	DpaOfflineProductBatchDeleteV30Api *DpaOfflineProductBatchDeleteV30ApiService
+
 	DpaPlayletAuthGetV2Api *DpaPlayletAuthGetV2ApiService
 
 	DpaProductAvailablesV2Api *DpaProductAvailablesV2ApiService
@@ -629,6 +631,8 @@ type APIClient struct {
 
 	EventManagerAvailableEventsGetV2Api *EventManagerAvailableEventsGetV2ApiService
 
+	EventManagerDbtGetV30Api *EventManagerDbtGetV30ApiService
+
 	EventManagerDeepBidTypeGetV30Api *EventManagerDeepBidTypeGetV30ApiService
 
 	EventManagerEventConfigsGetV2Api *EventManagerEventConfigsGetV2ApiService
@@ -636,6 +640,8 @@ type APIClient struct {
 	EventManagerEventsCreateV2Api *EventManagerEventsCreateV2ApiService
 
 	EventManagerOptimizedGoalGetV2V30Api *EventManagerOptimizedGoalGetV2V30ApiService
+
+	EventManagerOptimizedGoalGetV30Api *EventManagerOptimizedGoalGetV30ApiService
 
 	EventManagerShareCancelV30Api *EventManagerShareCancelV30ApiService
 
@@ -765,7 +771,13 @@ type APIClient struct {
 
 	LocalAdvertiserBudgetGetV30Api *LocalAdvertiserBudgetGetV30ApiService
 
+	LocalAudiencePackageGetV30Api *LocalAudiencePackageGetV30ApiService
+
+	LocalAudiencePackageUpdateV30Api *LocalAudiencePackageUpdateV30ApiService
+
 	LocalAwemeAuthorizedGetV30Api *LocalAwemeAuthorizedGetV30ApiService
+
+	LocalBudgetUpdateV30Api *LocalBudgetUpdateV30ApiService
 
 	LocalChargeListV30Api *LocalChargeListV30ApiService
 
@@ -823,6 +835,8 @@ type APIClient struct {
 
 	LocalProjectCreateV30Api *LocalProjectCreateV30ApiService
 
+	LocalProjectDeleteV30Api *LocalProjectDeleteV30ApiService
+
 	LocalProjectDetailV30Api *LocalProjectDetailV30ApiService
 
 	LocalProjectListV30Api *LocalProjectListV30ApiService
@@ -833,7 +847,11 @@ type APIClient struct {
 
 	LocalProjectWeekScheduleUpdateV30Api *LocalProjectWeekScheduleUpdateV30ApiService
 
+	LocalPromotionCostProtectStatusGetV30Api *LocalPromotionCostProtectStatusGetV30ApiService
+
 	LocalPromotionCreateV30Api *LocalPromotionCreateV30ApiService
+
+	LocalPromotionDeleteV30Api *LocalPromotionDeleteV30ApiService
 
 	LocalPromotionDetailV30Api *LocalPromotionDetailV30ApiService
 
@@ -896,6 +914,36 @@ type APIClient struct {
 	OcProjectMaterialStatusUpdateV30Api *OcProjectMaterialStatusUpdateV30ApiService
 
 	OcProjectRejectReasonGetV30Api *OcProjectRejectReasonGetV30ApiService
+
+	OcProjectStdProjectToolsGetV30Api *OcProjectStdProjectToolsGetV30ApiService
+
+	OcProjectToolsAudienceCreateV30Api *OcProjectToolsAudienceCreateV30ApiService
+
+	OcProjectToolsAudienceDeleteV30Api *OcProjectToolsAudienceDeleteV30ApiService
+
+	OcProjectToolsAudienceListV30Api *OcProjectToolsAudienceListV30ApiService
+
+	OcProjectToolsAudienceStatusUpdateV30Api *OcProjectToolsAudienceStatusUpdateV30ApiService
+
+	OcProjectToolsAudienceUpdateV30Api *OcProjectToolsAudienceUpdateV30ApiService
+
+	OcProjectToolsCostProtectStatusGetV30Api *OcProjectToolsCostProtectStatusGetV30ApiService
+
+	OcProjectToolsKeywordCreateV30Api *OcProjectToolsKeywordCreateV30ApiService
+
+	OcProjectToolsKeywordDeleteV30Api *OcProjectToolsKeywordDeleteV30ApiService
+
+	OcProjectToolsKeywordListV30Api *OcProjectToolsKeywordListV30ApiService
+
+	OcProjectToolsKeywordStatusUpdateV30Api *OcProjectToolsKeywordStatusUpdateV30ApiService
+
+	OcProjectToolsKeywordUpdateV30Api *OcProjectToolsKeywordUpdateV30ApiService
+
+	OcProjectToolsMaterialRaiseCreateV30Api *OcProjectToolsMaterialRaiseCreateV30ApiService
+
+	OcProjectToolsMaterialRaiseDeleteV30Api *OcProjectToolsMaterialRaiseDeleteV30ApiService
+
+	OcProjectToolsMaterialRaiseGetV30Api *OcProjectToolsMaterialRaiseGetV30ApiService
 
 	OpenMaterialAuditProGetV30Api *OpenMaterialAuditProGetV30ApiService
 
@@ -1150,6 +1198,8 @@ type APIClient struct {
 	QianchuanReportAdMaterialGetV10Api *QianchuanReportAdMaterialGetV10ApiService
 
 	QianchuanReportAdvertiserGetV10Api *QianchuanReportAdvertiserGetV10ApiService
+
+	QianchuanReportAllPromotionGetV10Api *QianchuanReportAllPromotionGetV10ApiService
 
 	QianchuanReportCustomConfigGetV10Api *QianchuanReportCustomConfigGetV10ApiService
 
@@ -1424,6 +1474,8 @@ type APIClient struct {
 	ReportStardeliveryTaskVideoDataGetV30Api *ReportStardeliveryTaskVideoDataGetV30ApiService
 
 	ReportVideoFrameGetV2Api *ReportVideoFrameGetV2ApiService
+
+	ScheduleResultGetV30Api *ScheduleResultGetV30ApiService
 
 	SecurityAuditResultsV30Api *SecurityAuditResultsV30ApiService
 
@@ -1746,6 +1798,8 @@ type APIClient struct {
 	StardeliveryTaskUnshareV30Api *StardeliveryTaskUnshareV30ApiService
 
 	StdProjectCreateV30Api *StdProjectCreateV30ApiService
+
+	StdProjectListV30Api *StdProjectListV30ApiService
 
 	StdProjectUpdateV30Api *StdProjectUpdateV30ApiService
 
@@ -2263,6 +2317,10 @@ type APIClient struct {
 
 	ToolsThirdSiteUpdateV2Api *ToolsThirdSiteUpdateV2ApiService
 
+	ToolsToolsTaskDetailGetV30Api *ToolsToolsTaskDetailGetV30ApiService
+
+	ToolsToolsTaskGetV30Api *ToolsToolsTaskGetV30ApiService
+
 	ToolsUnionFlowPackageCreateV2Api *ToolsUnionFlowPackageCreateV2ApiService
 
 	ToolsUnionFlowPackageDeleteV2Api *ToolsUnionFlowPackageDeleteV2ApiService
@@ -2607,6 +2665,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.DpaEbpProductStatusBatchUpdateV30Api = (*DpaEbpProductStatusBatchUpdateV30ApiService)(&c.common)
 	c.DpaEbpProductUpdateV30Api = (*DpaEbpProductUpdateV30ApiService)(&c.common)
 	c.DpaMetaGetV2Api = (*DpaMetaGetV2ApiService)(&c.common)
+	c.DpaOfflineProductBatchDeleteV30Api = (*DpaOfflineProductBatchDeleteV30ApiService)(&c.common)
 	c.DpaPlayletAuthGetV2Api = (*DpaPlayletAuthGetV2ApiService)(&c.common)
 	c.DpaProductAvailablesV2Api = (*DpaProductAvailablesV2ApiService)(&c.common)
 	c.DpaProductCreateV2Api = (*DpaProductCreateV2ApiService)(&c.common)
@@ -2631,10 +2690,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.EventManagerAuthGetAuthStatusV2Api = (*EventManagerAuthGetAuthStatusV2ApiService)(&c.common)
 	c.EventManagerAuthGetPublicKeyV2Api = (*EventManagerAuthGetPublicKeyV2ApiService)(&c.common)
 	c.EventManagerAvailableEventsGetV2Api = (*EventManagerAvailableEventsGetV2ApiService)(&c.common)
+	c.EventManagerDbtGetV30Api = (*EventManagerDbtGetV30ApiService)(&c.common)
 	c.EventManagerDeepBidTypeGetV30Api = (*EventManagerDeepBidTypeGetV30ApiService)(&c.common)
 	c.EventManagerEventConfigsGetV2Api = (*EventManagerEventConfigsGetV2ApiService)(&c.common)
 	c.EventManagerEventsCreateV2Api = (*EventManagerEventsCreateV2ApiService)(&c.common)
 	c.EventManagerOptimizedGoalGetV2V30Api = (*EventManagerOptimizedGoalGetV2V30ApiService)(&c.common)
+	c.EventManagerOptimizedGoalGetV30Api = (*EventManagerOptimizedGoalGetV30ApiService)(&c.common)
 	c.EventManagerShareCancelV30Api = (*EventManagerShareCancelV30ApiService)(&c.common)
 	c.EventManagerShareGetV30Api = (*EventManagerShareGetV30ApiService)(&c.common)
 	c.EventManagerShareV30Api = (*EventManagerShareV30ApiService)(&c.common)
@@ -2699,7 +2760,10 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.LocalActionCategoryV30Api = (*LocalActionCategoryV30ApiService)(&c.common)
 	c.LocalActionKeywordV30Api = (*LocalActionKeywordV30ApiService)(&c.common)
 	c.LocalAdvertiserBudgetGetV30Api = (*LocalAdvertiserBudgetGetV30ApiService)(&c.common)
+	c.LocalAudiencePackageGetV30Api = (*LocalAudiencePackageGetV30ApiService)(&c.common)
+	c.LocalAudiencePackageUpdateV30Api = (*LocalAudiencePackageUpdateV30ApiService)(&c.common)
 	c.LocalAwemeAuthorizedGetV30Api = (*LocalAwemeAuthorizedGetV30ApiService)(&c.common)
+	c.LocalBudgetUpdateV30Api = (*LocalBudgetUpdateV30ApiService)(&c.common)
 	c.LocalChargeListV30Api = (*LocalChargeListV30ApiService)(&c.common)
 	c.LocalChargeResultV30Api = (*LocalChargeResultV30ApiService)(&c.common)
 	c.LocalChargeSubmitV30Api = (*LocalChargeSubmitV30ApiService)(&c.common)
@@ -2728,12 +2792,15 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.LocalProductGetByPoiidsV30Api = (*LocalProductGetByPoiidsV30ApiService)(&c.common)
 	c.LocalProductGetV30Api = (*LocalProductGetV30ApiService)(&c.common)
 	c.LocalProjectCreateV30Api = (*LocalProjectCreateV30ApiService)(&c.common)
+	c.LocalProjectDeleteV30Api = (*LocalProjectDeleteV30ApiService)(&c.common)
 	c.LocalProjectDetailV30Api = (*LocalProjectDetailV30ApiService)(&c.common)
 	c.LocalProjectListV30Api = (*LocalProjectListV30ApiService)(&c.common)
 	c.LocalProjectStatusUpdateV30Api = (*LocalProjectStatusUpdateV30ApiService)(&c.common)
 	c.LocalProjectUpdateV30Api = (*LocalProjectUpdateV30ApiService)(&c.common)
 	c.LocalProjectWeekScheduleUpdateV30Api = (*LocalProjectWeekScheduleUpdateV30ApiService)(&c.common)
+	c.LocalPromotionCostProtectStatusGetV30Api = (*LocalPromotionCostProtectStatusGetV30ApiService)(&c.common)
 	c.LocalPromotionCreateV30Api = (*LocalPromotionCreateV30ApiService)(&c.common)
+	c.LocalPromotionDeleteV30Api = (*LocalPromotionDeleteV30ApiService)(&c.common)
 	c.LocalPromotionDetailV30Api = (*LocalPromotionDetailV30ApiService)(&c.common)
 	c.LocalPromotionListV30Api = (*LocalPromotionListV30ApiService)(&c.common)
 	c.LocalPromotionRejectReasonGetV30Api = (*LocalPromotionRejectReasonGetV30ApiService)(&c.common)
@@ -2765,6 +2832,21 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.OcProjectMaterialGetV30Api = (*OcProjectMaterialGetV30ApiService)(&c.common)
 	c.OcProjectMaterialStatusUpdateV30Api = (*OcProjectMaterialStatusUpdateV30ApiService)(&c.common)
 	c.OcProjectRejectReasonGetV30Api = (*OcProjectRejectReasonGetV30ApiService)(&c.common)
+	c.OcProjectStdProjectToolsGetV30Api = (*OcProjectStdProjectToolsGetV30ApiService)(&c.common)
+	c.OcProjectToolsAudienceCreateV30Api = (*OcProjectToolsAudienceCreateV30ApiService)(&c.common)
+	c.OcProjectToolsAudienceDeleteV30Api = (*OcProjectToolsAudienceDeleteV30ApiService)(&c.common)
+	c.OcProjectToolsAudienceListV30Api = (*OcProjectToolsAudienceListV30ApiService)(&c.common)
+	c.OcProjectToolsAudienceStatusUpdateV30Api = (*OcProjectToolsAudienceStatusUpdateV30ApiService)(&c.common)
+	c.OcProjectToolsAudienceUpdateV30Api = (*OcProjectToolsAudienceUpdateV30ApiService)(&c.common)
+	c.OcProjectToolsCostProtectStatusGetV30Api = (*OcProjectToolsCostProtectStatusGetV30ApiService)(&c.common)
+	c.OcProjectToolsKeywordCreateV30Api = (*OcProjectToolsKeywordCreateV30ApiService)(&c.common)
+	c.OcProjectToolsKeywordDeleteV30Api = (*OcProjectToolsKeywordDeleteV30ApiService)(&c.common)
+	c.OcProjectToolsKeywordListV30Api = (*OcProjectToolsKeywordListV30ApiService)(&c.common)
+	c.OcProjectToolsKeywordStatusUpdateV30Api = (*OcProjectToolsKeywordStatusUpdateV30ApiService)(&c.common)
+	c.OcProjectToolsKeywordUpdateV30Api = (*OcProjectToolsKeywordUpdateV30ApiService)(&c.common)
+	c.OcProjectToolsMaterialRaiseCreateV30Api = (*OcProjectToolsMaterialRaiseCreateV30ApiService)(&c.common)
+	c.OcProjectToolsMaterialRaiseDeleteV30Api = (*OcProjectToolsMaterialRaiseDeleteV30ApiService)(&c.common)
+	c.OcProjectToolsMaterialRaiseGetV30Api = (*OcProjectToolsMaterialRaiseGetV30ApiService)(&c.common)
 	c.OpenMaterialAuditProGetV30Api = (*OpenMaterialAuditProGetV30ApiService)(&c.common)
 	c.OpenMaterialAuditProSubmitV30Api = (*OpenMaterialAuditProSubmitV30ApiService)(&c.common)
 	c.PenaltyTaskGetV30Api = (*PenaltyTaskGetV30ApiService)(&c.common)
@@ -2892,6 +2974,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanReportAdGetV10Api = (*QianchuanReportAdGetV10ApiService)(&c.common)
 	c.QianchuanReportAdMaterialGetV10Api = (*QianchuanReportAdMaterialGetV10ApiService)(&c.common)
 	c.QianchuanReportAdvertiserGetV10Api = (*QianchuanReportAdvertiserGetV10ApiService)(&c.common)
+	c.QianchuanReportAllPromotionGetV10Api = (*QianchuanReportAllPromotionGetV10ApiService)(&c.common)
 	c.QianchuanReportCustomConfigGetV10Api = (*QianchuanReportCustomConfigGetV10ApiService)(&c.common)
 	c.QianchuanReportCustomGetV10Api = (*QianchuanReportCustomGetV10ApiService)(&c.common)
 	c.QianchuanReportLiveGetV10Api = (*QianchuanReportLiveGetV10ApiService)(&c.common)
@@ -3029,6 +3112,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ReportStardeliveryTaskDataGetV30Api = (*ReportStardeliveryTaskDataGetV30ApiService)(&c.common)
 	c.ReportStardeliveryTaskVideoDataGetV30Api = (*ReportStardeliveryTaskVideoDataGetV30ApiService)(&c.common)
 	c.ReportVideoFrameGetV2Api = (*ReportVideoFrameGetV2ApiService)(&c.common)
+	c.ScheduleResultGetV30Api = (*ScheduleResultGetV30ApiService)(&c.common)
 	c.SecurityAuditResultsV30Api = (*SecurityAuditResultsV30ApiService)(&c.common)
 	c.SecurityCreateAppealV30Api = (*SecurityCreateAppealV30ApiService)(&c.common)
 	c.SecurityGetConsultResultV30Api = (*SecurityGetConsultResultV30ApiService)(&c.common)
@@ -3190,6 +3274,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StardeliveryTaskSharingListV30Api = (*StardeliveryTaskSharingListV30ApiService)(&c.common)
 	c.StardeliveryTaskUnshareV30Api = (*StardeliveryTaskUnshareV30ApiService)(&c.common)
 	c.StdProjectCreateV30Api = (*StdProjectCreateV30ApiService)(&c.common)
+	c.StdProjectListV30Api = (*StdProjectListV30ApiService)(&c.common)
 	c.StdProjectUpdateV30Api = (*StdProjectUpdateV30ApiService)(&c.common)
 	c.SubscribeAccountsAddV30Api = (*SubscribeAccountsAddV30ApiService)(&c.common)
 	c.SubscribeAccountsListV30Api = (*SubscribeAccountsListV30ApiService)(&c.common)
@@ -3448,6 +3533,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsThirdSiteGetV2Api = (*ToolsThirdSiteGetV2ApiService)(&c.common)
 	c.ToolsThirdSitePreviewV2Api = (*ToolsThirdSitePreviewV2ApiService)(&c.common)
 	c.ToolsThirdSiteUpdateV2Api = (*ToolsThirdSiteUpdateV2ApiService)(&c.common)
+	c.ToolsToolsTaskDetailGetV30Api = (*ToolsToolsTaskDetailGetV30ApiService)(&c.common)
+	c.ToolsToolsTaskGetV30Api = (*ToolsToolsTaskGetV30ApiService)(&c.common)
 	c.ToolsUnionFlowPackageCreateV2Api = (*ToolsUnionFlowPackageCreateV2ApiService)(&c.common)
 	c.ToolsUnionFlowPackageDeleteV2Api = (*ToolsUnionFlowPackageDeleteV2ApiService)(&c.common)
 	c.ToolsUnionFlowPackageGetV2Api = (*ToolsUnionFlowPackageGetV2ApiService)(&c.common)

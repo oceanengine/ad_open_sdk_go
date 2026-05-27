@@ -12,7 +12,9 @@ package models
 
 // OcProjectMaterialCreateV30RequestVideoMaterialListInner struct for OcProjectMaterialCreateV30RequestVideoMaterialListInner
 type OcProjectMaterialCreateV30RequestVideoMaterialListInner struct {
-	ImageMode *OcProjectMaterialCreateV30VideoMaterialListImageMode `json:"image_mode,omitempty"`
+	//
+	GuideVideoId *string                                               `json:"guide_video_id,omitempty"`
+	ImageMode    *OcProjectMaterialCreateV30VideoMaterialListImageMode `json:"image_mode,omitempty"`
 	//
 	ItemId *int64 `json:"item_id,omitempty"`
 	//

@@ -21,6 +21,8 @@ type LocalPromotionListV30ResponseDataPromotionListInner struct {
 	// 广告账户id
 	LocalAccountId     *int64                                                    `json:"local_account_id,omitempty"`
 	LocalDeliveryScene *LocalPromotionListV30DataPromotionListLocalDeliveryScene `json:"local_delivery_scene,omitempty"`
+	// 项目启停状态
+	OptStatus *int64 `json:"opt_status,omitempty"`
 	// 项目ID
 	ProjectId *int64 `json:"project_id,omitempty"`
 	// 广告创建时间，格式yyyy-MM-dd HH:mm:ss

@@ -29,7 +29,9 @@ type StdProjectCreateV30RequestAudience struct {
 	HideIfExists    *StdProjectCreateV30AudienceHideIfExists              `json:"hide_if_exists,omitempty"`
 	IosOsv          *StdProjectCreateV30AudienceIosOsv                    `json:"ios_osv,omitempty"`
 	LocationType    *StdProjectCreateV30AudienceLocationType              `json:"location_type,omitempty"`
-	RegionRecommend *StdProjectCreateV30AudienceRegionRecommend           `json:"region_recommend,omitempty"`
+	//
+	Platform        []*StdProjectCreateV30AudiencePlatform      `json:"platform,omitempty"`
+	RegionRecommend *StdProjectCreateV30AudienceRegionRecommend `json:"region_recommend,omitempty"`
 	//
 	RegionVersion *string `json:"region_version,omitempty"`
 	//

@@ -15,13 +15,25 @@ type AgentQueryRiskPromotionListV2Filtering struct {
 	// 广告主账户ID，最多支持100个
 	AdvertiserIds []int64 `json:"advertiser_ids,omitempty"`
 	// 广告主账户名称，模糊搜索，长度不能超过30
-	AdvertiserName   *string                                                 `json:"advertiser_name,omitempty"`
+	AdvertiserName *string `json:"advertiser_name,omitempty"`
+	// 客户公司ID，最多支持100个
+	CompanyIds []int64 `json:"company_ids,omitempty"`
+	// 客户公司名称，模糊搜索，长度不能超过30
+	CompanyName      *string                                                 `json:"company_name,omitempty"`
 	FinalOperatorTag *AgentQueryRiskPromotionListV2FilteringFinalOperatorTag `json:"final_operator_tag,omitempty"`
+	// 预结算标签；如果同时设置final_operator_tag和本字段，将以本字段为准
+	FinalOperatorTagList []*AgentQueryRiskPromotionListV2FilteringFinalOperatorTagList `json:"final_operator_tag_list,omitempty"`
 	// 违规素材ids，最多支持100个
 	IllegalMaterialIds []int64 `json:"illegal_material_ids,omitempty"`
+	// 本地推计划状态
+	LocalAdStatusList []*AgentQueryRiskPromotionListV2FilteringLocalAdStatusList `json:"local_ad_status_list,omitempty"`
 	// 广告ID，最多支持100个
 	PromotionIds []int64 `json:"promotion_ids,omitempty"`
 	// 广告名称，模糊搜索，长度不能超过30
 	PromotionName   *string                                                `json:"promotion_name,omitempty"`
 	PromotionStatus *AgentQueryRiskPromotionListV2FilteringPromotionStatus `json:"promotion_status,omitempty"`
+	// 投放单元状态；如果同时设置promotion_status和本字段，将以本字段为准
+	PromotionStatusList []*AgentQueryRiskPromotionListV2FilteringPromotionStatusList `json:"promotion_status_list,omitempty"`
+	// 千川计划状态
+	QianchuanAdStatusList []*AgentQueryRiskPromotionListV2FilteringQianchuanAdStatusList `json:"qianchuan_ad_status_list,omitempty"`
 }

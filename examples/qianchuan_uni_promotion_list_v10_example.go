@@ -35,6 +35,7 @@ type ApiOpenApiV10QianchuanUniPromotionListGetRequestExample struct {
 	Page               int32                                     `json:"page,omitempty"`
 	PageSize           QianchuanUniPromotionListV10PageSize      `json:"page_size,omitempty"`
 	AdlabScene         QianchuanUniPromotionListV10AdlabScene    `json:"adlab_scene,omitempty"`
+	DataPeriod         QianchuanUniPromotionListV10DataPeriod    `json:"data_period,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/qianchuan/uni_promotion/list/ Get
@@ -56,7 +57,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanUniPromotionListV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).StartTime(request.StartTime).EndTime(request.EndTime).MarketingGoal(request.MarketingGoal).Fields(request.Fields).Filtering(request.Filtering).NeedCompensateInfo(request.NeedCompensateInfo).OrderType(request.OrderType).OrderField(request.OrderField).Page(request.Page).PageSize(request.PageSize).AdlabScene(request.AdlabScene).
+		AdvertiserId(request.AdvertiserId).StartTime(request.StartTime).EndTime(request.EndTime).MarketingGoal(request.MarketingGoal).Fields(request.Fields).Filtering(request.Filtering).NeedCompensateInfo(request.NeedCompensateInfo).OrderType(request.OrderType).OrderField(request.OrderField).Page(request.Page).PageSize(request.PageSize).AdlabScene(request.AdlabScene).DataPeriod(request.DataPeriod).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -12,12 +12,10 @@ package models
 
 // StdProjectCreateV30ResponseData
 type StdProjectCreateV30ResponseData struct {
-	// 剩余自动投放时长项目余额
-	AutoDurationProjectCount *int64 `json:"auto_duration_project_count,omitempty"`
 	// 自定义关键词上传失败的关键词list，关键词添加失败不会影响项目创建结果
 	ErrorKeywordsList []*StdProjectCreateV30ResponseDataErrorKeywordsListInner `json:"error_keywords_list,omitempty"`
 	// 创编消息提示
-	Notice *string `json:"notice,omitempty"`
+	Notice []*StdProjectCreateV30ResponseDataNoticeInner `json:"notice,omitempty"`
 	// 项目ID
 	ProjectId *int64 `json:"project_id,omitempty"`
 	// 星广联投投放协议查看地址，仅短剧行业投放星广联投项目时会返回

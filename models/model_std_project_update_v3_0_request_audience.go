@@ -16,9 +16,6 @@ type StdProjectUpdateV30RequestAudience struct {
 	Age        []*StdProjectUpdateV30AudienceAge      `json:"age,omitempty"`
 	AndroidOsv *StdProjectUpdateV30AudienceAndroidOsv `json:"android_osv,omitempty"`
 	//
-	AutoExtendTargets     []*StdProjectUpdateV30AudienceAutoExtendTargets   `json:"auto_extend_targets,omitempty"`
-	CarrierRegionOptimize *StdProjectUpdateV30AudienceCarrierRegionOptimize `json:"carrier_region_optimize,omitempty"`
-	//
 	City                  []int64                                           `json:"city,omitempty"`
 	ConvertedTimeDuration *StdProjectUpdateV30AudienceConvertedTimeDuration `json:"converted_time_duration,omitempty"`
 	District              *StdProjectUpdateV30AudienceDistrict              `json:"district,omitempty"`
@@ -40,6 +37,5 @@ type StdProjectUpdateV30RequestAudience struct {
 	//
 	RetargetingTagsExclude []int64 `json:"retargeting_tags_exclude,omitempty"`
 	//
-	RetargetingTagsInclude []int64                                 `json:"retargeting_tags_include,omitempty"`
-	SmartExtend            *StdProjectUpdateV30AudienceSmartExtend `json:"smart_extend,omitempty"`
+	RetargetingTagsInclude []int64 `json:"retargeting_tags_include,omitempty"`
 }

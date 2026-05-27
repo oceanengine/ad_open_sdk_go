@@ -17,6 +17,8 @@ type DpaDetailGetV2Filtering struct {
 	DpaCategories []int64                             `json:"dpa_categories,omitempty"`
 	IsRecommend   *DpaDetailGetV2FilteringIsRecommend `json:"is_recommend,omitempty"`
 	//
+	OfflineModifyTime *string `json:"offline_modify_time,omitempty"`
+	//
 	ProductId *int64 `json:"product_id,omitempty"`
 	//
 	ProductName *string `json:"product_name,omitempty"`

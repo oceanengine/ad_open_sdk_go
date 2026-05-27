@@ -15,7 +15,9 @@ type AgentQueryRiskPromotionListV2BusinessType string
 
 // List of agent_query_risk_promotion_list_v2_business_type
 const (
-	AD_AgentQueryRiskPromotionListV2BusinessType AgentQueryRiskPromotionListV2BusinessType = "AD"
+	AD_AgentQueryRiskPromotionListV2BusinessType        AgentQueryRiskPromotionListV2BusinessType = "AD"
+	QIANCHUAN_AgentQueryRiskPromotionListV2BusinessType AgentQueryRiskPromotionListV2BusinessType = "QIANCHUAN"
+	LOCAL_AgentQueryRiskPromotionListV2BusinessType     AgentQueryRiskPromotionListV2BusinessType = "LOCAL"
 )
 
 // Ptr returns reference to agent_query_risk_promotion_list_v2_business_type value

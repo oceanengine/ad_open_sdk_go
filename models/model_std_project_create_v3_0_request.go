@@ -44,6 +44,7 @@ type StdProjectCreateV30Request struct {
 	DeepExternalAction *StdProjectCreateV30DeepExternalAction `json:"deep_external_action,omitempty"`
 	DeliveryMedium     *StdProjectCreateV30DeliveryMedium     `json:"delivery_medium,omitempty"`
 	DeliveryMode       StdProjectCreateV30DeliveryMode        `json:"delivery_mode"`
+	DeliveryType       *StdProjectCreateV30DeliveryType       `json:"delivery_type,omitempty"`
 	DownloadMode       *StdProjectCreateV30DownloadMode       `json:"download_mode,omitempty"`
 	DownloadType       *StdProjectCreateV30DownloadType       `json:"download_type,omitempty"`
 	//
@@ -77,7 +78,6 @@ type StdProjectCreateV30Request struct {
 	ScheduleTime           *string                                    `json:"schedule_time,omitempty"`
 	ScheduleType           StdProjectCreateV30ScheduleType            `json:"schedule_type"`
 	SearchContinueDelivery *StdProjectCreateV30SearchContinueDelivery `json:"search_continue_delivery,omitempty"`
-	StarAutoDeliverySwitch *StdProjectCreateV30StarAutoDeliverySwitch `json:"star_auto_delivery_switch,omitempty"`
 	//
 	StarTaskIdList []int64 `json:"star_task_id_list,omitempty"`
 	//

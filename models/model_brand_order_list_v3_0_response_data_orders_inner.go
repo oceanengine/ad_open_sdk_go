@@ -16,6 +16,7 @@ type BrandOrderListV30ResponseDataOrdersInner struct {
 	// 计划信息
 	AdInfos              []*BrandOrderListV30ResponseDataOrdersInnerAdInfosInner `json:"ad_infos,omitempty"`
 	AdvancedCreativeType *BrandOrderListV30DataOrdersAdvancedCreativeType        `json:"advanced_creative_type,omitempty"`
+	AdvancedOption       *BrandOrderListV30DataOrdersAdvancedOption              `json:"advanced_option,omitempty"`
 	// 广告主ID
 	AdvertiserId        *int64                                                       `json:"advertiser_id,omitempty"`
 	AppOrigin           *BrandOrderListV30DataOrdersAppOrigin                        `json:"app_origin,omitempty"`

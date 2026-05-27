@@ -13,7 +13,7 @@ package models
 // SharedWalletWalletRelationGetV30ResponseDataResultsInner struct for SharedWalletWalletRelationGetV30ResponseDataResultsInner
 type SharedWalletWalletRelationGetV30ResponseDataResultsInner struct {
 	// 广告主ID
-	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
+	AdvId *int64 `json:"adv_id,omitempty"`
 	// 共享钱包ID
-	SharedWalletId *int64 `json:"shared_wallet_id,omitempty"`
+	WalletId *int64 `json:"wallet_id,omitempty"`
 }

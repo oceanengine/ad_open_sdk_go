@@ -29,9 +29,9 @@ type AgentQueryRiskPromotionListV2ResponseDataDataInner struct {
 	CollaboratorIds []int64 `json:"collaborator_ids,omitempty"`
 	// 协作者姓名
 	CollaboratorNames []string `json:"collaborator_names,omitempty"`
-	// 广告主公司ID
+	// 客户公司ID
 	CompanyId *int64 `json:"company_id,omitempty"`
-	// 广告主公司名称
+	// 客户公司名称
 	CompanyName      *string                                                `json:"company_name,omitempty"`
 	FinalOperatorTag *AgentQueryRiskPromotionListV2DataDataFinalOperatorTag `json:"final_operator_tag,omitempty"`
 	// 一代代理商公司ID
@@ -39,7 +39,8 @@ type AgentQueryRiskPromotionListV2ResponseDataDataInner struct {
 	// 一代代理商公司名称
 	FirstAgentCompanyName *string `json:"first_agent_company_name,omitempty"`
 	// 记录的唯一ID
-	Id *int64 `json:"id,omitempty"`
+	Id            *int64                                              `json:"id,omitempty"`
+	LocalAdStatus *AgentQueryRiskPromotionListV2DataDataLocalAdStatus `json:"local_ad_status,omitempty"`
 	// 违规素材列表，包含广告下投前+投中拒审的素材信息
 	MaterialList []*AgentQueryRiskPromotionListV2ResponseDataDataInnerMaterialListInner `json:"material_list,omitempty"`
 	// 优化师ID
@@ -49,8 +50,10 @@ type AgentQueryRiskPromotionListV2ResponseDataDataInner struct {
 	// 广告ID
 	PromotionId *int64 `json:"promotion_id,omitempty"`
 	// 广告名称
-	PromotionName   *string                                               `json:"promotion_name,omitempty"`
-	PromotionStatus *AgentQueryRiskPromotionListV2DataDataPromotionStatus `json:"promotion_status,omitempty"`
+	PromotionName      *string                                                  `json:"promotion_name,omitempty"`
+	PromotionStatus    *AgentQueryRiskPromotionListV2DataDataPromotionStatus    `json:"promotion_status,omitempty"`
+	PromotionStatusNew *AgentQueryRiskPromotionListV2DataDataPromotionStatusNew `json:"promotion_status_new,omitempty"`
+	QianchuanAdStatus  *AgentQueryRiskPromotionListV2DataDataQianchuanAdStatus  `json:"qianchuan_ad_status,omitempty"`
 	// 推送时间，比如：
 	SendTime *string `json:"send_time,omitempty"`
 }

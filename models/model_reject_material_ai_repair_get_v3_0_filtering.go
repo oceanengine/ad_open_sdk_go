@@ -15,7 +15,11 @@ type RejectMaterialAiRepairGetV30Filtering struct {
 	//
 	AiRepairIds []int64 `json:"ai_repair_ids,omitempty"`
 	//
+	IsOc *bool `json:"is_oc,omitempty"`
+	//
 	MaterialIds []int64 `json:"material_ids,omitempty"`
+	//
+	ProjectIds []int64 `json:"project_ids,omitempty"`
 	//
 	PromotionIds []int64 `json:"promotion_ids,omitempty"`
 	//

@@ -33,6 +33,7 @@ type ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest struct {
 	startTime    *string
 	endTime      *string
 	orderBy      *[]*QianchuanReportUniPromotionDataGetV10OrderByInner
+	dataPeriod   *QianchuanReportUniPromotionDataGetV10DataPeriod
 	page         *int64
 	pageSize     *QianchuanReportUniPromotionDataGetV10PageSize
 }
@@ -74,6 +75,12 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) EndTime(endT
 
 func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) OrderBy(orderBy []*QianchuanReportUniPromotionDataGetV10OrderByInner) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
 	r.orderBy = &orderBy
+	return r
+}
+
+// 数据周期，允许值： - OVER_ALL_DATA 乘方期间数据 - UNI_DATA 全域期间数据 - ALL_DATA 整体数据 （默认值） 当且仅当 adlab_scene&#x3D;OVERALL_PROJECT 时支持传入
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) DataPeriod(dataPeriod QianchuanReportUniPromotionDataGetV10DataPeriod) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
+	r.dataPeriod = &dataPeriod
 	return r
 }
 
@@ -168,6 +175,9 @@ func (a *QianchuanReportUniPromotionDataGetV10ApiService) getExecute(r *ApiOpenA
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "data_topic", r.dataTopic)
+	if r.dataPeriod != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "data_period", r.dataPeriod)
+	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "dimensions", r.dimensions)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "metrics", r.metrics)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "filters", r.filters)

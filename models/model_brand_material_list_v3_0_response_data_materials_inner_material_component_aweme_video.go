@@ -16,6 +16,11 @@ type BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideo s
 	AwemeItemId *string `json:"aweme_item_id,omitempty"`
 	// 是否塞物料 1为取物料（拉取抖音主页视频） 0为塞物料（上传视频）
 	AwemeItemSource *int64 `json:"aweme_item_source,omitempty"`
+	//
+	Images    []*BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoImagesInner `json:"images,omitempty"`
+	MusicInfo *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoMusicInfo     `json:"music_info,omitempty"`
+	//
+	Slides []*BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoSlidesInner `json:"slides,omitempty"`
 	// 视频标题
 	Title *string                                                                         `json:"title,omitempty"`
 	Video *BrandMaterialListV30ResponseDataMaterialsInnerMaterialComponentAwemeVideoVideo `json:"video,omitempty"`

@@ -37,6 +37,7 @@ type ApiOpenApiV10QianchuanUniPromotionListGetRequest struct {
 	page               *int32
 	pageSize           *QianchuanUniPromotionListV10PageSize
 	adlabScene         *QianchuanUniPromotionListV10AdlabScene
+	dataPeriod         *QianchuanUniPromotionListV10DataPeriod
 }
 
 func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
@@ -99,6 +100,11 @@ func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) PageSize(pageSize Qia
 // 计划类型（全域 or 乘方）
 func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) AdlabScene(adlabScene QianchuanUniPromotionListV10AdlabScene) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.adlabScene = &adlabScene
+	return r
+}
+
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) DataPeriod(dataPeriod QianchuanUniPromotionListV10DataPeriod) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
+	r.dataPeriod = &dataPeriod
 	return r
 }
 
@@ -195,6 +201,9 @@ func (a *QianchuanUniPromotionListV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	}
 	if r.adlabScene != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "adlab_scene", r.adlabScene)
+	}
+	if r.dataPeriod != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "data_period", r.dataPeriod)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

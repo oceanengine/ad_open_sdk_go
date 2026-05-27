@@ -25,6 +25,7 @@ import (
 type ApiOpenApiV10QianchuanReportUniPromotionConfigGetGetRequestExample struct {
 	AdvertiserId int64                                                `json:"advertiser_id"`
 	DataTopics   []*QianchuanReportUniPromotionConfigGetV10DataTopics `json:"data_topics"`
+	DataPeriod   QianchuanReportUniPromotionConfigGetV10DataPeriod    `json:"data_period,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/qianchuan/report/uni_promotion/config/get/ Get
@@ -46,7 +47,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanReportUniPromotionConfigGetV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).DataTopics(request.DataTopics).
+		AdvertiserId(request.AdvertiserId).DataTopics(request.DataTopics).DataPeriod(request.DataPeriod).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

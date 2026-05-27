@@ -15,8 +15,8 @@ type StdProjectCreateV30AigcDynamicCreativeSwitch string
 
 // List of std_project_create_v3.0_aigc_dynamic_creative_switch
 const (
-	ON_StdProjectCreateV30AigcDynamicCreativeSwitch  StdProjectCreateV30AigcDynamicCreativeSwitch = "ON"
 	OFF_StdProjectCreateV30AigcDynamicCreativeSwitch StdProjectCreateV30AigcDynamicCreativeSwitch = "OFF"
+	ON_StdProjectCreateV30AigcDynamicCreativeSwitch  StdProjectCreateV30AigcDynamicCreativeSwitch = "ON"
 )
 
 // Ptr returns reference to std_project_create_v3.0_aigc_dynamic_creative_switch value

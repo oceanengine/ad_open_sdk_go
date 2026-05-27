@@ -12,7 +12,9 @@ package models
 
 // StdProjectCreateV30RequestProjectMaterialsVideoMaterialListInner struct for StdProjectCreateV30RequestProjectMaterialsVideoMaterialListInner
 type StdProjectCreateV30RequestProjectMaterialsVideoMaterialListInner struct {
-	ImageMode *StdProjectCreateV30ProjectMaterialsVideoMaterialListImageMode `json:"image_mode,omitempty"`
+	//
+	GuideVideoId *string                                                        `json:"guide_video_id,omitempty"`
+	ImageMode    *StdProjectCreateV30ProjectMaterialsVideoMaterialListImageMode `json:"image_mode,omitempty"`
 	//
 	ItemId *int64 `json:"item_id,omitempty"`
 	//

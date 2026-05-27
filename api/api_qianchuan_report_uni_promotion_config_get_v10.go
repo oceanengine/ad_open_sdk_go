@@ -27,6 +27,7 @@ type ApiOpenApiV10QianchuanReportUniPromotionConfigGetGetRequest struct {
 	ApiService   *QianchuanReportUniPromotionConfigGetV10ApiService
 	advertiserId *int64
 	dataTopics   *[]*QianchuanReportUniPromotionConfigGetV10DataTopics
+	dataPeriod   *QianchuanReportUniPromotionConfigGetV10DataPeriod
 }
 
 func (r *ApiOpenApiV10QianchuanReportUniPromotionConfigGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanReportUniPromotionConfigGetGetRequest {
@@ -36,6 +37,12 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionConfigGetGetRequest) Advertiser
 
 func (r *ApiOpenApiV10QianchuanReportUniPromotionConfigGetGetRequest) DataTopics(dataTopics []*QianchuanReportUniPromotionConfigGetV10DataTopics) *ApiOpenApiV10QianchuanReportUniPromotionConfigGetGetRequest {
 	r.dataTopics = &dataTopics
+	return r
+}
+
+// 3. 数据周期，允许值：   - OVER_ALL_DATA 乘方期间数据   - UNI_DATA 全域期间数据       - ALL_DATA 整体数据 （默认值）
+func (r *ApiOpenApiV10QianchuanReportUniPromotionConfigGetGetRequest) DataPeriod(dataPeriod QianchuanReportUniPromotionConfigGetV10DataPeriod) *ApiOpenApiV10QianchuanReportUniPromotionConfigGetGetRequest {
+	r.dataPeriod = &dataPeriod
 	return r
 }
 
@@ -100,6 +107,9 @@ func (a *QianchuanReportUniPromotionConfigGetV10ApiService) getExecute(r *ApiOpe
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "data_topics", r.dataTopics)
+	if r.dataPeriod != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "data_period", r.dataPeriod)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

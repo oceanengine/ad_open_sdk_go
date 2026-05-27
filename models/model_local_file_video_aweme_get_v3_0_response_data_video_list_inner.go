@@ -30,7 +30,8 @@ type LocalFileVideoAwemeGetV30ResponseDataVideoListInner struct {
 	//
 	LegoMaterialId *int64 `json:"lego_material_id,omitempty"`
 	// 不可投放原因
-	NotDeliveryReason []string `json:"not_delivery_reason,omitempty"`
+	NotDeliveryReason []string                                           `json:"not_delivery_reason,omitempty"`
+	QualityMark       *LocalFileVideoAwemeGetV30DataVideoListQualityMark `json:"quality_mark,omitempty"`
 	// 视频标题
 	Title string `json:"title"`
 	//

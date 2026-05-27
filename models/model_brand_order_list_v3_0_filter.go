@@ -13,8 +13,9 @@ package models
 // BrandOrderListV30Filter
 type BrandOrderListV30Filter struct {
 	// 投放产品
-	AdForm    []*BrandOrderListV30FilterAdForm  `json:"ad_form,omitempty"`
-	AppOrigin *BrandOrderListV30FilterAppOrigin `json:"app_origin,omitempty"`
+	AdForm         []*BrandOrderListV30FilterAdForm       `json:"ad_form,omitempty"`
+	AdvancedOption *BrandOrderListV30FilterAdvancedOption `json:"advanced_option,omitempty"`
+	AppOrigin      *BrandOrderListV30FilterAppOrigin      `json:"app_origin,omitempty"`
 	//
 	AuditStatus []*BrandOrderListV30FilterAuditStatus `json:"audit_status,omitempty"`
 	Classify    *BrandOrderListV30FilterClassify      `json:"classify,omitempty"`

@@ -16,9 +16,10 @@ type PromotionListV30ResponseDataListInnerPromotionMaterialsVideoMaterialListInn
 	//
 	CreateTime *string `json:"create_time,omitempty"`
 	// 引导视频id
-	GuideVideoId    *string                                                                     `json:"guide_video_id,omitempty"`
-	ImageMode       *PromotionListV30DataListPromotionMaterialsVideoMaterialListImageMode       `json:"image_mode,omitempty"`
-	IsCarryMaterial *PromotionListV30DataListPromotionMaterialsVideoMaterialListIsCarryMaterial `json:"is_carry_material,omitempty"`
+	GuideVideoId      *string                                                                       `json:"guide_video_id,omitempty"`
+	ImageMode         *PromotionListV30DataListPromotionMaterialsVideoMaterialListImageMode         `json:"image_mode,omitempty"`
+	IsCarryMaterial   *PromotionListV30DataListPromotionMaterialsVideoMaterialListIsCarryMaterial   `json:"is_carry_material,omitempty"`
+	IsHiddenWatermark *PromotionListV30DataListPromotionMaterialsVideoMaterialListIsHiddenWatermark `json:"is_hidden_watermark,omitempty"`
 	//
 	ItemId *int64 `json:"item_id,omitempty"`
 	//

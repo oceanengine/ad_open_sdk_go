@@ -12,6 +12,8 @@ package models
 
 // LocalCustomAudienceGetV30ResponseDataCustomAudienceListInner struct for LocalCustomAudienceGetV30ResponseDataCustomAudienceListInner
 type LocalCustomAudienceGetV30ResponseDataCustomAudienceListInner struct {
+	// 人群包预计覆盖人数
+	CoverNum *int64 `json:"cover_num,omitempty"`
 	// 人群包创建时间
 	CreateTime *string `json:"create_time,omitempty"`
 	// 人群包ID

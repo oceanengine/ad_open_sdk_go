@@ -19,8 +19,6 @@ type StdProjectCreateV30RequestBrandInfo struct {
 	//
 	CdpBrandName *string `json:"cdp_brand_name,omitempty"`
 	//
-	SubBrandNameIds []string `json:"sub_brand_name_ids,omitempty"`
-	//
 	SubBrandNames []string `json:"sub_brand_names,omitempty"`
 	//
 	YuntuCategoryId *int64 `json:"yuntu_category_id,omitempty"`

@@ -18,9 +18,10 @@ type KeywordListV30ResponseDataListInner struct {
 	//
 	IsPause *int64 `json:"is_pause,omitempty"`
 	//
-	KeywordId *int64                           `json:"keyword_id,omitempty"`
-	MatchType *KeywordListV30DataListMatchType `json:"match_type,omitempty"`
-	Status    *KeywordListV30DataListStatus    `json:"status,omitempty"`
+	KeywordId   *int64                             `json:"keyword_id,omitempty"`
+	KeywordType *KeywordListV30DataListKeywordType `json:"keyword_type,omitempty"`
+	MatchType   *KeywordListV30DataListMatchType   `json:"match_type,omitempty"`
+	Status      *KeywordListV30DataListStatus      `json:"status,omitempty"`
 	//
 	Word *string `json:"word,omitempty"`
 	//

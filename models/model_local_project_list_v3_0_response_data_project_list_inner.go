@@ -12,7 +12,9 @@ package models
 
 // LocalProjectListV30ResponseDataProjectListInner struct for LocalProjectListV30ResponseDataProjectListInner
 type LocalProjectListV30ResponseDataProjectListInner struct {
-	AdType             *LocalProjectListV30DataProjectListAdType             `json:"ad_type,omitempty"`
+	AdType *LocalProjectListV30DataProjectListAdType `json:"ad_type,omitempty"`
+	// 定向包ID
+	AudiencePackageId  *int64                                                `json:"audience_package_id,omitempty"`
 	BidType            *LocalProjectListV30DataProjectListBidType            `json:"bid_type,omitempty"`
 	DeepExternalAction *LocalProjectListV30DataProjectListDeepExternalAction `json:"deep_external_action,omitempty"`
 	DeliveryGoal       *LocalProjectListV30DataProjectListDeliveryGoal       `json:"delivery_goal,omitempty"`
@@ -25,7 +27,9 @@ type LocalProjectListV30ResponseDataProjectListInner struct {
 	LocalDeliveryScene *LocalProjectListV30DataProjectListLocalDeliveryScene `json:"local_delivery_scene,omitempty"`
 	MarketingGoal      *LocalProjectListV30DataProjectListMarketingGoal      `json:"marketing_goal,omitempty"`
 	// 项目名称
-	Name        *string                                                     `json:"name,omitempty"`
+	Name *string `json:"name,omitempty"`
+	// 项目启停状态
+	OptStatus   *int64                                                      `json:"opt_status,omitempty"`
 	PoiInfo     *LocalProjectListV30ResponseDataProjectListInnerPoiInfo     `json:"poi_info,omitempty"`
 	ProductInfo *LocalProjectListV30ResponseDataProjectListInnerProductInfo `json:"product_info,omitempty"`
 	// 项目出价

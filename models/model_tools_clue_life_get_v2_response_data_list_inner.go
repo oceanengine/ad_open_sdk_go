@@ -44,6 +44,8 @@ type ToolsClueLifeGetV2ResponseDataListInner struct {
 	// 线索返回状态：正常 or 账户状态异常
 	ClueReturnStatus *string                             `json:"clue_return_status,omitempty"`
 	ClueType         *ToolsClueLifeGetV2DataListClueType `json:"clue_type,omitempty"`
+	// 营销类型
+	ComponentEventTypeTags []int64 `json:"component_event_type_tags,omitempty"`
 	// 内容ID
 	ContentId     *string                                  `json:"content_id,omitempty"`
 	ConvertStatus *ToolsClueLifeGetV2DataListConvertStatus `json:"convert_status,omitempty"`

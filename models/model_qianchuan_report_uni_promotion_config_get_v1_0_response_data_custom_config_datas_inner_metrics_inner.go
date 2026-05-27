@@ -21,7 +21,7 @@ type QianchuanReportUniPromotionConfigGetV10ResponseDataCustomConfigDatasInnerMe
 	//
 	Name *string `json:"name,omitempty"`
 	//
-	SortAble *bool `json:"sort_able,omitempty"`
+	Sortable *bool `json:"sortable,omitempty"`
 	//
 	Unit *int64 `json:"unit,omitempty"`
 }

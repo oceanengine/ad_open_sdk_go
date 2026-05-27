@@ -15,8 +15,8 @@ type AudiencePackageCreateV2AdType string
 
 // List of audience_package_create_v2_ad_type
 const (
-	SEARCH_AudiencePackageCreateV2AdType AudiencePackageCreateV2AdType = "SEARCH"
 	ALL_AudiencePackageCreateV2AdType    AudiencePackageCreateV2AdType = "ALL"
+	SEARCH_AudiencePackageCreateV2AdType AudiencePackageCreateV2AdType = "SEARCH"
 )
 
 // Ptr returns reference to audience_package_create_v2_ad_type value

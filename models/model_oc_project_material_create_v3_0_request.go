@@ -15,7 +15,15 @@ type OcProjectMaterialCreateV30Request struct {
 	//
 	AdvertiserId int64 `json:"advertiser_id"`
 	//
+	CarouselMaterialList []*OcProjectMaterialCreateV30RequestCarouselMaterialListInner `json:"carousel_material_list,omitempty"`
+	//
+	ImageMaterialList []*OcProjectMaterialCreateV30RequestImageMaterialListInner `json:"image_material_list,omitempty"`
+	//
 	ProjectId int64 `json:"project_id"`
+	//
+	TitleMaterialList []*OcProjectMaterialCreateV30RequestTitleMaterialListInner `json:"title_material_list,omitempty"`
+	//
+	TrialPlayMaterialList []*OcProjectMaterialCreateV30RequestTrialPlayMaterialListInner `json:"trial_play_material_list,omitempty"`
 	//
 	VideoMaterialList []*OcProjectMaterialCreateV30RequestVideoMaterialListInner `json:"video_material_list,omitempty"`
 }

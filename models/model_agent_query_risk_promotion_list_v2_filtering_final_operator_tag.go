@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// AgentQueryRiskPromotionListV2FilteringFinalOperatorTag 自走收综合标签（T+1后数据稳定）
+// AgentQueryRiskPromotionListV2FilteringFinalOperatorTag 预结算标签
 type AgentQueryRiskPromotionListV2FilteringFinalOperatorTag string
 
 // List of agent_query_risk_promotion_list_v2_filtering_final_operator_tag
@@ -18,6 +18,7 @@ const (
 	DECREASE_QUANTITY_AgentQueryRiskPromotionListV2FilteringFinalOperatorTag AgentQueryRiskPromotionListV2FilteringFinalOperatorTag = "DECREASE_QUANTITY"
 	EMPTY_AgentQueryRiskPromotionListV2FilteringFinalOperatorTag             AgentQueryRiskPromotionListV2FilteringFinalOperatorTag = "EMPTY"
 	INCREASE_QUANTITY_AgentQueryRiskPromotionListV2FilteringFinalOperatorTag AgentQueryRiskPromotionListV2FilteringFinalOperatorTag = "INCREASE_QUANTITY"
+	NON_DESCEND_AgentQueryRiskPromotionListV2FilteringFinalOperatorTag       AgentQueryRiskPromotionListV2FilteringFinalOperatorTag = "NON_DESCEND"
 	SELF_OPERATION_AgentQueryRiskPromotionListV2FilteringFinalOperatorTag    AgentQueryRiskPromotionListV2FilteringFinalOperatorTag = "SELF_OPERATION"
 )
 

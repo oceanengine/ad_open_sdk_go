@@ -23,13 +23,14 @@ import (
 )
 
 type ApiOpenApi2AgentQueryRiskPromotionListGetRequestExample struct {
-	AgentId      int64                                     `json:"agent_id"`
-	BusinessType AgentQueryRiskPromotionListV2BusinessType `json:"business_type"`
-	StartDate    string                                    `json:"start_date"`
-	EndDate      string                                    `json:"end_date"`
-	Cursor       int64                                     `json:"cursor,omitempty"`
-	Count        int32                                     `json:"count,omitempty"`
-	Filtering    AgentQueryRiskPromotionListV2Filtering    `json:"filtering,omitempty"`
+	AgentId          int64                                            `json:"agent_id"`
+	StartDate        string                                           `json:"start_date"`
+	EndDate          string                                           `json:"end_date"`
+	BusinessType     AgentQueryRiskPromotionListV2BusinessType        `json:"business_type,omitempty"`
+	Cursor           int64                                            `json:"cursor,omitempty"`
+	Count            int32                                            `json:"count,omitempty"`
+	Filtering        AgentQueryRiskPromotionListV2Filtering           `json:"filtering,omitempty"`
+	BusinessTypeList []*AgentQueryRiskPromotionListV2BusinessTypeList `json:"business_type_list,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/agent/query/risk_promotion_list/ Get
@@ -51,7 +52,7 @@ func main() {
 	resp, httpRes, err := apiClient.AgentQueryRiskPromotionListV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AgentId(request.AgentId).BusinessType(request.BusinessType).StartDate(request.StartDate).EndDate(request.EndDate).Cursor(request.Cursor).Count(request.Count).Filtering(request.Filtering).
+		AgentId(request.AgentId).StartDate(request.StartDate).EndDate(request.EndDate).BusinessType(request.BusinessType).Cursor(request.Cursor).Count(request.Count).Filtering(request.Filtering).BusinessTypeList(request.BusinessTypeList).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

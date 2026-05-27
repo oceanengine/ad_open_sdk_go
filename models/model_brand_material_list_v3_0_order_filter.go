@@ -13,8 +13,9 @@ package models
 // BrandMaterialListV30OrderFilter
 type BrandMaterialListV30OrderFilter struct {
 	// 产品
-	AdForm    []*BrandMaterialListV30OrderFilterAdForm  `json:"ad_form,omitempty"`
-	AppOrigin *BrandMaterialListV30OrderFilterAppOrigin `json:"app_origin,omitempty"`
+	AdForm         []*BrandMaterialListV30OrderFilterAdForm       `json:"ad_form,omitempty"`
+	AdvancedOption *BrandMaterialListV30OrderFilterAdvancedOption `json:"advanced_option,omitempty"`
+	AppOrigin      *BrandMaterialListV30OrderFilterAppOrigin      `json:"app_origin,omitempty"`
 	// 预订单创建截止时间
 	CreateEndTime *string `json:"create_end_time,omitempty"`
 	// 预订单创建起始时间
