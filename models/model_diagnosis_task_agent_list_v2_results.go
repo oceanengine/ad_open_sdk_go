@@ -15,14 +15,16 @@ type DiagnosisTaskAgentListV2Results string
 
 // List of diagnosis_task_agent_list_v2_results
 const (
-	AD_HIGH_QUALITY_MATERIAL_DiagnosisTaskAgentListV2Results      DiagnosisTaskAgentListV2Results = "AD_HIGH_QUALITY_MATERIAL"
-	ECP_HIGH_QUALITY_MATERIAL_DiagnosisTaskAgentListV2Results     DiagnosisTaskAgentListV2Results = "ECP_HIGH_QUALITY_MATERIAL"
-	FIRST_PUBLISH_MATERIAL_DiagnosisTaskAgentListV2Results        DiagnosisTaskAgentListV2Results = "FIRST_PUBLISH_MATERIAL"
-	INEFFICIENT_MATERIAL_DiagnosisTaskAgentListV2Results          DiagnosisTaskAgentListV2Results = "INEFFICIENT_MATERIAL"
-	NON_AD_HIGH_QUALITY_MATERIAL_DiagnosisTaskAgentListV2Results  DiagnosisTaskAgentListV2Results = "NON_AD_HIGH_QUALITY_MATERIAL"
-	NON_ECP_HIGH_QUALITY_MATERIAL_DiagnosisTaskAgentListV2Results DiagnosisTaskAgentListV2Results = "NON_ECP_HIGH_QUALITY_MATERIAL"
-	NON_FIRST_PUBLISH_MATERIAL_DiagnosisTaskAgentListV2Results    DiagnosisTaskAgentListV2Results = "NON_FIRST_PUBLISH_MATERIAL"
-	NON_INEFFICIENT_MATERIAL_DiagnosisTaskAgentListV2Results      DiagnosisTaskAgentListV2Results = "NON_INEFFICIENT_MATERIAL"
+	AD_HIGH_QUALITY_MATERIAL_DiagnosisTaskAgentListV2Results        DiagnosisTaskAgentListV2Results = "AD_HIGH_QUALITY_MATERIAL"
+	ECP_HIGH_QUALITY_MATERIAL_DiagnosisTaskAgentListV2Results       DiagnosisTaskAgentListV2Results = "ECP_HIGH_QUALITY_MATERIAL"
+	FIRST_PUBLISH_MATERIAL_DiagnosisTaskAgentListV2Results          DiagnosisTaskAgentListV2Results = "FIRST_PUBLISH_MATERIAL"
+	INEFFICIENT_MATERIAL_DiagnosisTaskAgentListV2Results            DiagnosisTaskAgentListV2Results = "INEFFICIENT_MATERIAL"
+	LOCAL_HIGH_QUALITY_MATERIAL_DiagnosisTaskAgentListV2Results     DiagnosisTaskAgentListV2Results = "LOCAL_HIGH_QUALITY_MATERIAL"
+	NON_AD_HIGH_QUALITY_MATERIAL_DiagnosisTaskAgentListV2Results    DiagnosisTaskAgentListV2Results = "NON_AD_HIGH_QUALITY_MATERIAL"
+	NON_ECP_HIGH_QUALITY_MATERIAL_DiagnosisTaskAgentListV2Results   DiagnosisTaskAgentListV2Results = "NON_ECP_HIGH_QUALITY_MATERIAL"
+	NON_FIRST_PUBLISH_MATERIAL_DiagnosisTaskAgentListV2Results      DiagnosisTaskAgentListV2Results = "NON_FIRST_PUBLISH_MATERIAL"
+	NON_INEFFICIENT_MATERIAL_DiagnosisTaskAgentListV2Results        DiagnosisTaskAgentListV2Results = "NON_INEFFICIENT_MATERIAL"
+	NON_LOCAL_HIGH_QUALITY_MATERIAL_DiagnosisTaskAgentListV2Results DiagnosisTaskAgentListV2Results = "NON_LOCAL_HIGH_QUALITY_MATERIAL"
 )
 
 // Ptr returns reference to diagnosis_task_agent_list_v2_results value

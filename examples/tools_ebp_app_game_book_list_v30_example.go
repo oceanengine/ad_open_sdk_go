@@ -31,6 +31,7 @@ type ApiOpenApiV30ToolsEbpAppGameBookListGetRequestExample struct {
 	Filtering            ToolsEbpAppGameBookListV30Filtering            `json:"filtering,omitempty"`
 	Page                 int64                                          `json:"page,omitempty"`
 	PageSize             int64                                          `json:"page_size,omitempty"`
+	AssetGeneration      ToolsEbpAppGameBookListV30AssetGeneration      `json:"asset_generation,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/ebp/app_game_book/list/ Get
@@ -52,7 +53,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsEbpAppGameBookListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).AccountType(request.AccountType).AssetOwnership(request.AssetOwnership).AssetManagementScope(request.AssetManagementScope).SearchKey(request.SearchKey).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
+		AccountId(request.AccountId).AccountType(request.AccountType).AssetOwnership(request.AssetOwnership).AssetManagementScope(request.AssetManagementScope).SearchKey(request.SearchKey).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).AssetGeneration(request.AssetGeneration).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

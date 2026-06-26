@@ -12,6 +12,7 @@ package models
 
 // OcProjectMaterialGetV30ResponseDataVideoMaterialListInner struct for OcProjectMaterialGetV30ResponseDataVideoMaterialListInner
 type OcProjectMaterialGetV30ResponseDataVideoMaterialListInner struct {
+	ImageMode *OcProjectMaterialGetV30DataVideoMaterialListImageMode `json:"image_mode,omitempty"`
 	//
 	MaterialId *int64 `json:"material_id,omitempty"`
 	//

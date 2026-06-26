@@ -29,8 +29,9 @@ type ApiOpenApiV30ToolsEbpAppListGetRequest struct {
 	accountType          *ToolsEbpAppListV30AccountType
 	assetManagementScope *ToolsEbpAppListV30AssetManagementScope
 	filtering            *ToolsEbpAppListV30Filtering
-	page                 *int32
-	pageSize             *int32
+	page                 *int64
+	pageSize             *int64
+	assetGeneration      *ToolsEbpAppListV30AssetGeneration
 }
 
 func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpAppListGetRequest {
@@ -55,13 +56,20 @@ func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) Filtering(filtering ToolsEbpApp
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) Page(page int32) *ApiOpenApiV30ToolsEbpAppListGetRequest {
+// 页码
+func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) Page(page int64) *ApiOpenApiV30ToolsEbpAppListGetRequest {
 	r.page = &page
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) PageSize(pageSize int32) *ApiOpenApiV30ToolsEbpAppListGetRequest {
+// 页面大小
+func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) PageSize(pageSize int64) *ApiOpenApiV30ToolsEbpAppListGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AssetGeneration(assetGeneration ToolsEbpAppListV30AssetGeneration) *ApiOpenApiV30ToolsEbpAppListGetRequest {
+	r.assetGeneration = &assetGeneration
 	return r
 }
 
@@ -137,6 +145,9 @@ func (a *ToolsEbpAppListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppLis
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.assetGeneration != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "asset_generation", r.assetGeneration)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

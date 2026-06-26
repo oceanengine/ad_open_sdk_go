@@ -37,10 +37,12 @@ const (
 	ROI_COEFFICIENT_EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType              EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType = "ROI_COEFFICIENT"
 	ROI_DIRECT_MAIL_EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType              EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType = "ROI_DIRECT_MAIL"
 	ROI_PACING_EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType                   EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType = "ROI_PACING"
+	ROI_THREE_EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType                    EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType = "ROI_THREE"
 	RTA_DOUBLE_BID_EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType               EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType = "RTA_DOUBLE_BID"
 	SEVEN_ROI_COEFFICIENT_EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType        EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType = "SEVEN_ROI_COEFFICIENT"
 	SMARTBID_EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType                     EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType = "SMARTBID"
 	SOCIAL_ROI_EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType                   EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType = "SOCIAL_ROI"
+	THIRTY_ROI_COEFFICIENT_EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType       EventManagerDbtGetV30DataDeepBidTypeDetailDeepBidType = "THIRTY_ROI_COEFFICIENT"
 )
 
 // Ptr returns reference to event_manager_dbt_get_v3.0_data_deep_bid_type_detail_deep_bid_type value

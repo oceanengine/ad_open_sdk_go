@@ -16,6 +16,8 @@ type QianchuanUniPromotionAdDetailV10ResponseData struct {
 	AdId *int64 `json:"ad_id,omitempty"`
 	// 抖音号id
 	AwemeId *int64 `json:"aweme_id,omitempty"`
+	// 计划绑定的抖音号信息
+	AwemeInfos []*QianchuanUniPromotionAdDetailV10ResponseDataAwemeInfosInner `json:"aweme_infos,omitempty"`
 	//
 	CreateTime      *string                                                      `json:"create_time,omitempty"`
 	CreativeSetting *QianchuanUniPromotionAdDetailV10ResponseDataCreativeSetting `json:"creative_setting,omitempty"`

@@ -27,6 +27,7 @@ type ApiOpenApiV30GameAddictionIdGetGetRequest struct {
 	ApiService   *GameAddictionIdGetV30ApiService
 	advertiserId *int64
 	assetId      *int64
+	userName     *string
 }
 
 func (r *ApiOpenApiV30GameAddictionIdGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30GameAddictionIdGetGetRequest {
@@ -36,6 +37,11 @@ func (r *ApiOpenApiV30GameAddictionIdGetGetRequest) AdvertiserId(advertiserId in
 
 func (r *ApiOpenApiV30GameAddictionIdGetGetRequest) AssetId(assetId int64) *ApiOpenApiV30GameAddictionIdGetGetRequest {
 	r.assetId = &assetId
+	return r
+}
+
+func (r *ApiOpenApiV30GameAddictionIdGetGetRequest) UserName(userName string) *ApiOpenApiV30GameAddictionIdGetGetRequest {
+	r.userName = &userName
 	return r
 }
 
@@ -94,12 +100,14 @@ func (a *GameAddictionIdGetV30ApiService) getExecute(r *ApiOpenApiV30GameAddicti
 	if r.advertiserId == nil {
 		return localVarReturnValue, nil, ReportError("advertiserId is required and must be specified")
 	}
-	if r.assetId == nil {
-		return localVarReturnValue, nil, ReportError("assetId is required and must be specified")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "asset_id", r.assetId)
+	if r.assetId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "asset_id", r.assetId)
+	}
+	if r.userName != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "user_name", r.userName)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

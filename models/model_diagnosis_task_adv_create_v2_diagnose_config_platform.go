@@ -16,6 +16,7 @@ type DiagnosisTaskAdvCreateV2DiagnoseConfigPlatform string
 // List of diagnosis_task_adv_create_v2_diagnose_config_platform
 const (
 	AD_DiagnosisTaskAdvCreateV2DiagnoseConfigPlatform        DiagnosisTaskAdvCreateV2DiagnoseConfigPlatform = "AD"
+	LOCAL_DiagnosisTaskAdvCreateV2DiagnoseConfigPlatform     DiagnosisTaskAdvCreateV2DiagnoseConfigPlatform = "LOCAL"
 	QIANCHUAN_DiagnosisTaskAdvCreateV2DiagnoseConfigPlatform DiagnosisTaskAdvCreateV2DiagnoseConfigPlatform = "QIANCHUAN"
 )
 

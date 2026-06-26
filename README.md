@@ -446,6 +446,8 @@ Class | Method | HTTP request
 *DpaAssetV2DetailReadV2Api* | **OpenApi2DpaAssetV2DetailReadPost** | **Post** /open_api/2/dpa/asset_v2/detail/read/
 *DpaAssetV2ListV2Api* | **OpenApi2DpaAssetV2ListPost** | **Post** /open_api/2/dpa/asset_v2/list/
 *DpaAssetsDetailReadV2Api* | **OpenApi2DpaAssetsDetailReadGet** | **Get** /open_api/2/dpa/assets/detail/read/
+*DpaBrandAdvAuthFuzzyGetV30Api* | **OpenApiV30DpaBrandAdvAuthFuzzyGetGet** | **Get** /open_api/v3.0/dpa/brand/adv_auth/fuzzy/get/
+*DpaBrandAdvAuthIndustryGetV30Api* | **OpenApiV30DpaBrandAdvAuthIndustryGetGet** | **Get** /open_api/v3.0/dpa/brand/adv_auth/industry/get/
 *DpaBrandFuzzyGetV30Api* | **OpenApiV30DpaBrandFuzzyGetGet** | **Get** /open_api/v3.0/dpa/brand/fuzzy/get/
 *DpaCategoryGetV2Api* | **OpenApi2DpaCategoryGetGet** | **Get** /open_api/2/dpa/category/get/
 *DpaCheckIndexEntryProgressV2Api* | **OpenApi2DpaCheckIndexEntryProgressPost** | **Post** /open_api/2/dpa/check_index_entry_progress/
@@ -554,6 +556,12 @@ Class | Method | HTTP request
 *FundSharedWalletBalanceGetV2Api* | **OpenApi2FundSharedWalletBalanceGetGet** | **Get** /open_api/2/fund/shared_wallet_balance/get/
 *GameAddictionIdGetV30Api* | **OpenApiV30GameAddictionIdGetGet** | **Get** /open_api/v3.0/game_addiction_id/get/
 *GameplayListV30Api* | **OpenApiV30GameplayListGet** | **Get** /open_api/v3.0/gameplay/list/
+*InvoiceApplyOrderCreateV30Api* | **OpenApiV30InvoiceApplyOrderCreatePost** | **Post** /open_api/v3.0/invoice/apply_order/create/
+*InvoiceApplyOrderListV30Api* | **OpenApiV30InvoiceApplyOrderListGet** | **Get** /open_api/v3.0/invoice/apply_order/list/
+*InvoiceApplyResultGetV30Api* | **OpenApiV30InvoiceApplyResultGetGet** | **Get** /open_api/v3.0/invoice/apply_result/get/
+*InvoiceDownloadUrlListV30Api* | **OpenApiV30InvoiceDownloadUrlListGet** | **Get** /open_api/v3.0/invoice/download_url/list/
+*InvoiceTicketListV30Api* | **OpenApiV30InvoiceTicketListGet** | **Get** /open_api/v3.0/invoice/ticket/list/
+*IosAppListV30Api* | **OpenApiV30IosAppListGet** | **Get** /open_api/v3.0/ios_app/list/
 *KeywordCreateV2V2Api* | **OpenApi2KeywordCreateV2Post** | **Post** /open_api/2/keyword/create_v2/
 *KeywordCreateV30Api* | **OpenApiV30KeywordCreatePost** | **Post** /open_api/v3.0/keyword/create/
 *KeywordDeleteV2V2Api* | **OpenApi2KeywordDeleteV2Post** | **Post** /open_api/2/keyword/delete_v2/
@@ -706,6 +714,7 @@ Class | Method | HTTP request
 *QianchuanAdMaterialDeleteV10Api* | **OpenApiV10QianchuanAdMaterialDeletePost** | **Post** /open_api/v1.0/qianchuan/ad/material/delete/
 *QianchuanAdMaterialGetV10Api* | **OpenApiV10QianchuanAdMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/ad/material/get/
 *QianchuanAdMaterialSuggestionV10Api* | **OpenApiV10QianchuanAdMaterialSuggestionGet** | **Get** /open_api/v1.0/qianchuan/ad/material/suggestion/
+*QianchuanAdOverallMarketingUpdateV10Api* | **OpenApiV10QianchuanAdOverallMarketingUpdatePost** | **Post** /open_api/v1.0/qianchuan/ad/overall_marketing/update/
 *QianchuanAdQuotaGetV10Api* | **OpenApiV10QianchuanAdQuotaGetGet** | **Get** /open_api/v1.0/qianchuan/ad/quota/get/
 *QianchuanAdRecommendKeywordsGetV10Api* | **OpenApiV10QianchuanAdRecommendKeywordsGetGet** | **Get** /open_api/v1.0/qianchuan/ad/recommend_keywords/get/
 *QianchuanAdRegionUpdateV10Api* | **OpenApiV10QianchuanAdRegionUpdatePost** | **Post** /open_api/v1.0/qianchuan/ad/region/update/
@@ -774,6 +783,7 @@ Class | Method | HTTP request
 *QianchuanMaterialAdGetV10Api* | **OpenApiV10QianchuanMaterialAdGetGet** | **Get** /open_api/v1.0/qianchuan/material/ad/get/
 *QianchuanMaterialGetV10Api* | **OpenApiV10QianchuanMaterialGetGet** | **Get** /open_api/v1.0/qianchuan/material/get/
 *QianchuanOrientationPackageGetV10Api* | **OpenApiV10QianchuanOrientationPackageGetGet** | **Get** /open_api/v1.0/qianchuan/orientation_package/get/
+*QianchuanOverallAwemeAwemeDeleteV10Api* | **OpenApiV10QianchuanOverallAwemeAwemeDeletePost** | **Post** /open_api/v1.0/qianchuan/overall_aweme/aweme/delete/
 *QianchuanProductAvailableGetV10Api* | **OpenApiV10QianchuanProductAvailableGetGet** | **Get** /open_api/v1.0/qianchuan/product/available/get/
 *QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api* | **OpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGet** | **Get** /open_api/v1.0/qianchuan/qianchuan/report/today_live/room/config/get/
 *QianchuanQianchuanVideoStarGetV10Api* | **OpenApiV10QianchuanQianchuanVideoStarGetGet** | **Get** /open_api/v1.0/qianchuan/qianchuan/video/star/get/

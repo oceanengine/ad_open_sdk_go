@@ -15,8 +15,8 @@ type OcProjectToolsAudienceListV30Filtering struct {
 	FirstStatus *OcProjectToolsAudienceListV30FilteringFirstStatus `json:"first_status,omitempty"`
 	// 定向调控任务名称,长度小于50字符
 	Name *string `json:"name,omitempty"`
-	// 项目IDs,list <= 100（待定）
-	ProjectId []int64 `json:"project_id,omitempty"`
+	// 项目ID
+	ProjectId int64 `json:"project_id"`
 	// 定向调控任务ID
 	ScheduleId   []int64                                             `json:"schedule_id,omitempty"`
 	SecondStatus *OcProjectToolsAudienceListV30FilteringSecondStatus `json:"second_status,omitempty"`

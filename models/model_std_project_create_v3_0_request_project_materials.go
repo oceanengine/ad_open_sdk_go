@@ -26,9 +26,18 @@ type StdProjectCreateV30RequestProjectMaterials struct {
 	//
 	ImageMaterialList []*StdProjectCreateV30RequestProjectMaterialsImageMaterialListInner `json:"image_material_list,omitempty"`
 	//
-	OpenUrl            *string                                                `json:"open_url,omitempty"`
+	InstantPlayMaterialList []*StdProjectCreateV30RequestProjectMaterialsInstantPlayMaterialListInner `json:"instant_play_material_list,omitempty"`
+	MiniProgramInfo         *StdProjectCreateV30RequestProjectMaterialsMiniProgramInfo                `json:"mini_program_info,omitempty"`
+	//
+	OpenUrl *string `json:"open_url,omitempty"`
+	//
+	OpenUrls           []string                                               `json:"open_urls,omitempty"`
 	OriginalVideoTitle *StdProjectCreateV30ProjectMaterialsOriginalVideoTitle `json:"original_video_title,omitempty"`
-	ProductInfo        *StdProjectCreateV30RequestProjectMaterialsProductInfo `json:"product_info,omitempty"`
+	//
+	PlayletSeriesUrlList []string                                               `json:"playlet_series_url_list,omitempty"`
+	ProductInfo          *StdProjectCreateV30RequestProjectMaterialsProductInfo `json:"product_info,omitempty"`
+	//
+	Source *string `json:"source,omitempty"`
 	//
 	TitleMaterialList []*StdProjectCreateV30RequestProjectMaterialsTitleMaterialListInner `json:"title_material_list,omitempty"`
 	//

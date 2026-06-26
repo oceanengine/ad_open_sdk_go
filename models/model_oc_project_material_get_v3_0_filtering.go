@@ -12,9 +12,9 @@ package models
 
 // OcProjectMaterialGetV30Filtering
 type OcProjectMaterialGetV30Filtering struct {
-	MaterialStatusFrist *OcProjectMaterialGetV30FilteringMaterialStatusFrist `json:"material_status_frist,omitempty"`
-	//
-	MaterialType string `json:"material_type"`
+	MaterialStatusFirst  *OcProjectMaterialGetV30FilteringMaterialStatusFirst  `json:"material_status_first,omitempty"`
+	MaterialStatusSecond *OcProjectMaterialGetV30FilteringMaterialStatusSecond `json:"material_status_second,omitempty"`
+	MaterialType         OcProjectMaterialGetV30FilteringMaterialType          `json:"material_type"`
 	//
 	SearchKeyword *string `json:"search_keyword,omitempty"`
 }

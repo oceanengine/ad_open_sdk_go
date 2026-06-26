@@ -29,4 +29,8 @@ type OcProjectToolsAudienceCreateV30RequestDeliverySetting struct {
 	// 愿意降低xx%的ROI系数目标
 	RoiGoalRate *float64                                                  `json:"roi_goal_rate,omitempty"`
 	SettingType OcProjectToolsAudienceCreateV30DeliverySettingSettingType `json:"setting_type"`
+	//
+	SevenRoiGoal *float64 `json:"seven_roi_goal,omitempty"`
+	//
+	SevenRoiGoalRate *float64 `json:"seven_roi_goal_rate,omitempty"`
 }

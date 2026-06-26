@@ -23,8 +23,9 @@ import (
 )
 
 type ApiOpenApiV30GameAddictionIdGetGetRequestExample struct {
-	AdvertiserId int64 `json:"advertiser_id"`
-	AssetId      int64 `json:"asset_id"`
+	AdvertiserId int64  `json:"advertiser_id"`
+	AssetId      int64  `json:"asset_id,omitempty"`
+	UserName     string `json:"user_name,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/game_addiction_id/get/ Get
@@ -46,7 +47,7 @@ func main() {
 	resp, httpRes, err := apiClient.GameAddictionIdGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).AssetId(request.AssetId).
+		AdvertiserId(request.AdvertiserId).AssetId(request.AssetId).UserName(request.UserName).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -16,7 +16,8 @@ type OcProjectToolsAudienceListV30ResponseDataListInnerDistrictAudience struct {
 	City     []int64                                                        `json:"city,omitempty"`
 	District *OcProjectToolsAudienceListV30DataListDistrictAudienceDistrict `json:"district,omitempty"`
 	// 地域定向设置详情
-	Geolocation []*OcProjectToolsAudienceListV30ResponseDataListInnerDistrictAudienceGeolocationInner `json:"geolocation,omitempty"`
+	Geolocation  []*OcProjectToolsAudienceListV30ResponseDataListInnerDistrictAudienceGeolocationInner `json:"geolocation,omitempty"`
+	LocationType *OcProjectToolsAudienceListV30DataListDistrictAudienceLocationType                    `json:"location_type,omitempty"`
 	//
 	RegionVersion *string `json:"region_version,omitempty"`
 }

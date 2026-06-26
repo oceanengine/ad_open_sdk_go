@@ -26,8 +26,8 @@ type ApiOpenApiV30OcProjectToolsAudienceListGetRequest struct {
 	ctx          context.Context
 	ApiService   *OcProjectToolsAudienceListV30ApiService
 	advertiserId *int64
-	pageInfo     *OcProjectToolsAudienceListV30PageInfo
 	filtering    *OcProjectToolsAudienceListV30Filtering
+	pageInfo     *OcProjectToolsAudienceListV30PageInfo
 }
 
 // 投放账户ID
@@ -36,15 +36,15 @@ func (r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) AdvertiserId(adverti
 	return r
 }
 
-// 分页信息
-func (r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) PageInfo(pageInfo OcProjectToolsAudienceListV30PageInfo) *ApiOpenApiV30OcProjectToolsAudienceListGetRequest {
-	r.pageInfo = &pageInfo
-	return r
-}
-
 // 过滤条件（不过滤则返回全部）
 func (r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) Filtering(filtering OcProjectToolsAudienceListV30Filtering) *ApiOpenApiV30OcProjectToolsAudienceListGetRequest {
 	r.filtering = &filtering
+	return r
+}
+
+// 分页信息
+func (r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) PageInfo(pageInfo OcProjectToolsAudienceListV30PageInfo) *ApiOpenApiV30OcProjectToolsAudienceListGetRequest {
+	r.pageInfo = &pageInfo
 	return r
 }
 
@@ -106,14 +106,15 @@ func (a *OcProjectToolsAudienceListV30ApiService) getExecute(r *ApiOpenApiV30OcP
 	if *r.advertiserId < 1 {
 		return localVarReturnValue, nil, ReportError("advertiserId must be greater than 1")
 	}
+	if r.filtering == nil {
+		return localVarReturnValue, nil, ReportError("filtering is required and must be specified")
+	}
 	if r.pageInfo == nil {
 		return localVarReturnValue, nil, ReportError("pageInfo is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
-	if r.filtering != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
-	}
+	parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "page_info", r.pageInfo)
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

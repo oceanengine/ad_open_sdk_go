@@ -15,7 +15,8 @@ type ToolsAppManagementHarmonyAppListV2ResponseDataItemsInner struct {
 	//
 	AppId string `json:"app_id"`
 	//
-	AppName string `json:"app_name"`
+	AppName         string                                                      `json:"app_name"`
+	AssetGeneration *ToolsAppManagementHarmonyAppListV2DataItemsAssetGeneration `json:"asset_generation,omitempty"`
 	//
 	AssetId string `json:"asset_id"`
 	//

@@ -29,6 +29,7 @@ type ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequestExample struct {
 	PageSize               int64                                                    `json:"page_size,omitempty"`
 	Filtering              ToolsAppManagementHarmonyAppListV2Filtering              `json:"filtering,omitempty"`
 	AccountAssetQueryScope ToolsAppManagementHarmonyAppListV2AccountAssetQueryScope `json:"account_asset_query_scope,omitempty"`
+	AssetGeneration        ToolsAppManagementHarmonyAppListV2AssetGeneration        `json:"asset_generation,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tools/app_management/harmony_app_list/ Get
@@ -50,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsAppManagementHarmonyAppListV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).AccountType(request.AccountType).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).AccountAssetQueryScope(request.AccountAssetQueryScope).
+		AccountId(request.AccountId).AccountType(request.AccountType).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).AccountAssetQueryScope(request.AccountAssetQueryScope).AssetGeneration(request.AssetGeneration).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

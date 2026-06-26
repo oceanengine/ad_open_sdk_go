@@ -29,6 +29,7 @@ type ApiOpenApiV30ToolsEbpWechatGameListGetRequestExample struct {
 	Filtering            ToolsEbpWechatGameListV30Filtering            `json:"filtering,omitempty"`
 	Page                 int64                                         `json:"page,omitempty"`
 	PageSize             int64                                         `json:"page_size,omitempty"`
+	AssetGeneration      ToolsEbpWechatGameListV30AssetGeneration      `json:"asset_generation,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/ebp/wechat_game/list/ Get
@@ -50,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsEbpWechatGameListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).AccountType(request.AccountType).AssetManagementScope(request.AssetManagementScope).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
+		AccountId(request.AccountId).AccountType(request.AccountType).AssetManagementScope(request.AssetManagementScope).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).AssetGeneration(request.AssetGeneration).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

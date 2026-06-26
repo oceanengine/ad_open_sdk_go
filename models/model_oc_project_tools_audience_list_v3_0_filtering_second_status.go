@@ -15,12 +15,9 @@ type OcProjectToolsAudienceListV30FilteringSecondStatus string
 
 // List of oc_project_tools_audience_list_v3.0_filtering_second_status
 const (
-	ADJUST_DELETED_OcProjectToolsAudienceListV30FilteringSecondStatus                    OcProjectToolsAudienceListV30FilteringSecondStatus = "ADJUST_DELETED"
-	ADJUST_TERMINATED_OcProjectToolsAudienceListV30FilteringSecondStatus                 OcProjectToolsAudienceListV30FilteringSecondStatus = "ADJUST_TERMINATED"
-	PAUSED_OcProjectToolsAudienceListV30FilteringSecondStatus                            OcProjectToolsAudienceListV30FilteringSecondStatus = "PAUSED"
+	DISABLE_OcProjectToolsAudienceListV30FilteringSecondStatus                           OcProjectToolsAudienceListV30FilteringSecondStatus = "DISABLE"
 	PROJECT_AUDIENCE_SETTING_CONFLICT_OcProjectToolsAudienceListV30FilteringSecondStatus OcProjectToolsAudienceListV30FilteringSecondStatus = "PROJECT_AUDIENCE_SETTING_CONFLICT"
-	PROJECT_DELETED_OcProjectToolsAudienceListV30FilteringSecondStatus                   OcProjectToolsAudienceListV30FilteringSecondStatus = "PROJECT_DELETED"
-	PROJECT_TERMINATED_OcProjectToolsAudienceListV30FilteringSecondStatus                OcProjectToolsAudienceListV30FilteringSecondStatus = "PROJECT_TERMINATED"
+	TASK_BID_EXCEEDS_PROJECT_BUDGET_OcProjectToolsAudienceListV30FilteringSecondStatus   OcProjectToolsAudienceListV30FilteringSecondStatus = "TASK_BID_EXCEEDS_PROJECT_BUDGET"
 )
 
 // Ptr returns reference to oc_project_tools_audience_list_v3.0_filtering_second_status value

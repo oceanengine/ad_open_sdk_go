@@ -15,13 +15,11 @@ type OcProjectToolsKeywordListV30DataListFirstStatus string
 
 // List of oc_project_tools_keyword_list_v3.0_data_list_first_status
 const (
-	ADJUSTING_OcProjectToolsKeywordListV30DataListFirstStatus           OcProjectToolsKeywordListV30DataListFirstStatus = "ADJUSTING"
-	ALL_OcProjectToolsKeywordListV30DataListFirstStatus                 OcProjectToolsKeywordListV30DataListFirstStatus = "ALL"
-	ALL_INCLUDE_DELETED_OcProjectToolsKeywordListV30DataListFirstStatus OcProjectToolsKeywordListV30DataListFirstStatus = "ALL_INCLUDE_DELETED"
-	DELETED_OcProjectToolsKeywordListV30DataListFirstStatus             OcProjectToolsKeywordListV30DataListFirstStatus = "DELETED"
-	FINISH_OcProjectToolsKeywordListV30DataListFirstStatus              OcProjectToolsKeywordListV30DataListFirstStatus = "FINISH"
-	TERMINAL_OcProjectToolsKeywordListV30DataListFirstStatus            OcProjectToolsKeywordListV30DataListFirstStatus = "TERMINAL"
-	UNADJUSTED_OcProjectToolsKeywordListV30DataListFirstStatus          OcProjectToolsKeywordListV30DataListFirstStatus = "UNADJUSTED"
+	ADJUSTING_OcProjectToolsKeywordListV30DataListFirstStatus  OcProjectToolsKeywordListV30DataListFirstStatus = "ADJUSTING"
+	DELETED_OcProjectToolsKeywordListV30DataListFirstStatus    OcProjectToolsKeywordListV30DataListFirstStatus = "DELETED"
+	FINISH_OcProjectToolsKeywordListV30DataListFirstStatus     OcProjectToolsKeywordListV30DataListFirstStatus = "FINISH"
+	TERMINAL_OcProjectToolsKeywordListV30DataListFirstStatus   OcProjectToolsKeywordListV30DataListFirstStatus = "TERMINAL"
+	UNADJUSTED_OcProjectToolsKeywordListV30DataListFirstStatus OcProjectToolsKeywordListV30DataListFirstStatus = "UNADJUSTED"
 )
 
 // Ptr returns reference to oc_project_tools_keyword_list_v3.0_data_list_first_status value

@@ -22,6 +22,10 @@ type QueryRebateBalanceV2ResponseDataRebatesInner struct {
 	ArchiveStatus *int32 `json:"archive_status,omitempty"`
 	// 回收状态名称
 	ArchiveStatusName *string `json:"archive_status_name,omitempty"`
+	// 计费类型
+	BillingType *int64 `json:"billing_type,omitempty"`
+	// 计费类型名称
+	BillingTypeName *string `json:"billing_type_name,omitempty"`
 	// 合同名称
 	ContractName *string `json:"contract_name,omitempty"`
 	// 合同编号

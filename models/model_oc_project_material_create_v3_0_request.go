@@ -19,6 +19,8 @@ type OcProjectMaterialCreateV30Request struct {
 	//
 	ImageMaterialList []*OcProjectMaterialCreateV30RequestImageMaterialListInner `json:"image_material_list,omitempty"`
 	//
+	InstantPlayMaterialList []*OcProjectMaterialCreateV30RequestInstantPlayMaterialListInner `json:"instant_play_material_list,omitempty"`
+	//
 	ProjectId int64 `json:"project_id"`
 	//
 	TitleMaterialList []*OcProjectMaterialCreateV30RequestTitleMaterialListInner `json:"title_material_list,omitempty"`

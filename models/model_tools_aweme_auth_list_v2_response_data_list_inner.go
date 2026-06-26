@@ -13,10 +13,12 @@ package models
 // ToolsAwemeAuthListV2ResponseDataListInner struct for ToolsAwemeAuthListV2ResponseDataListInner
 type ToolsAwemeAuthListV2ResponseDataListInner struct {
 	//
-	AuthAutoExpireDate *string                                                     `json:"auth_auto_expire_date,omitempty"`
-	AuthStatus         *ToolsAwemeAuthListV2DataListAuthStatus                     `json:"auth_status,omitempty"`
-	AuthThresholdInfo  *ToolsAwemeAuthListV2ResponseDataListInnerAuthThresholdInfo `json:"auth_threshold_info,omitempty"`
-	AuthType           *ToolsAwemeAuthListV2DataListAuthType                       `json:"auth_type,omitempty"`
+	AuthAutoExpireDate *string `json:"auth_auto_expire_date,omitempty"`
+	// 全域授权类型
+	AuthScenarios     []*ToolsAwemeAuthListV2DataListAuthScenarios                `json:"auth_scenarios,omitempty"`
+	AuthStatus        *ToolsAwemeAuthListV2DataListAuthStatus                     `json:"auth_status,omitempty"`
+	AuthThresholdInfo *ToolsAwemeAuthListV2ResponseDataListInnerAuthThresholdInfo `json:"auth_threshold_info,omitempty"`
+	AuthType          *ToolsAwemeAuthListV2DataListAuthType                       `json:"auth_type,omitempty"`
 	// 抖音号作者发起解除授权时上传的凭证信息（选填项，抖音号作者可能不填，此时该参数返回为null）
 	AwemeCancelImageList []string `json:"aweme_cancel_image_list,omitempty"`
 	// 抖音号作者发起解除授权时填写的联系方式（选填项，抖音号作者可能不填，此时该参数返回为null）

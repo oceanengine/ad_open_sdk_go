@@ -12,6 +12,8 @@ package models
 
 // QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInner struct for QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInner
 type QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInner struct {
+	// 抖音号ID
+	AwemeUid *int64 `json:"aweme_uid,omitempty"`
 	//
 	BlockMaterial []*QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInnerBlockMaterialInner `json:"block_material,omitempty"`
 	//
@@ -21,7 +23,8 @@ type QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInner s
 	//
 	HideInAweme *bool `json:"hide_in_aweme,omitempty"`
 	//
-	ImageMaterial []*QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInnerImageMaterialInner `json:"image_material,omitempty"`
+	ImageMaterial  []*QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInnerImageMaterialInner `json:"image_material,omitempty"`
+	ProductChannel *QianchuanUniPromotionAdDetailV10ResponseDataMultiProductCreativeListInnerProductChannel       `json:"product_channel,omitempty"`
 	//
 	ProductId *int64 `json:"product_id,omitempty"`
 	//

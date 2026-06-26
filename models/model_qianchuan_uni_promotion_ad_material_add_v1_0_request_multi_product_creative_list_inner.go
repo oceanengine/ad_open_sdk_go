@@ -12,6 +12,8 @@ package models
 
 // QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInner struct for QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInner
 type QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInner struct {
+	// 抖音号ID，多号场景必填
+	AwemeUid *int64 `json:"aweme_uid,omitempty"`
 	//
 	CarouselMaterial []*QianchuanUniPromotionAdMaterialAddV10RequestMultiProductCreativeListInnerCarouselMaterialInner `json:"carousel_material,omitempty"`
 	//

@@ -987,6 +987,14 @@ func (c *Client) DpaAssetsDetailReadV2Api() *api.DpaAssetsDetailReadV2ApiService
 	return c.ApiClient.DpaAssetsDetailReadV2Api
 }
 
+func (c *Client) DpaBrandAdvAuthFuzzyGetV30Api() *api.DpaBrandAdvAuthFuzzyGetV30ApiService {
+	return c.ApiClient.DpaBrandAdvAuthFuzzyGetV30Api
+}
+
+func (c *Client) DpaBrandAdvAuthIndustryGetV30Api() *api.DpaBrandAdvAuthIndustryGetV30ApiService {
+	return c.ApiClient.DpaBrandAdvAuthIndustryGetV30Api
+}
+
 func (c *Client) DpaBrandFuzzyGetV30Api() *api.DpaBrandFuzzyGetV30ApiService {
 	return c.ApiClient.DpaBrandFuzzyGetV30Api
 }
@@ -1417,6 +1425,30 @@ func (c *Client) GameAddictionIdGetV30Api() *api.GameAddictionIdGetV30ApiService
 
 func (c *Client) GameplayListV30Api() *api.GameplayListV30ApiService {
 	return c.ApiClient.GameplayListV30Api
+}
+
+func (c *Client) InvoiceApplyOrderCreateV30Api() *api.InvoiceApplyOrderCreateV30ApiService {
+	return c.ApiClient.InvoiceApplyOrderCreateV30Api
+}
+
+func (c *Client) InvoiceApplyOrderListV30Api() *api.InvoiceApplyOrderListV30ApiService {
+	return c.ApiClient.InvoiceApplyOrderListV30Api
+}
+
+func (c *Client) InvoiceApplyResultGetV30Api() *api.InvoiceApplyResultGetV30ApiService {
+	return c.ApiClient.InvoiceApplyResultGetV30Api
+}
+
+func (c *Client) InvoiceDownloadUrlListV30Api() *api.InvoiceDownloadUrlListV30ApiService {
+	return c.ApiClient.InvoiceDownloadUrlListV30Api
+}
+
+func (c *Client) InvoiceTicketListV30Api() *api.InvoiceTicketListV30ApiService {
+	return c.ApiClient.InvoiceTicketListV30Api
+}
+
+func (c *Client) IosAppListV30Api() *api.IosAppListV30ApiService {
+	return c.ApiClient.IosAppListV30Api
 }
 
 func (c *Client) KeywordCreateV2V2Api() *api.KeywordCreateV2V2ApiService {
@@ -2027,6 +2059,10 @@ func (c *Client) QianchuanAdMaterialSuggestionV10Api() *api.QianchuanAdMaterialS
 	return c.ApiClient.QianchuanAdMaterialSuggestionV10Api
 }
 
+func (c *Client) QianchuanAdOverallMarketingUpdateV10Api() *api.QianchuanAdOverallMarketingUpdateV10ApiService {
+	return c.ApiClient.QianchuanAdOverallMarketingUpdateV10Api
+}
+
 func (c *Client) QianchuanAdQuotaGetV10Api() *api.QianchuanAdQuotaGetV10ApiService {
 	return c.ApiClient.QianchuanAdQuotaGetV10Api
 }
@@ -2297,6 +2333,10 @@ func (c *Client) QianchuanMaterialGetV10Api() *api.QianchuanMaterialGetV10ApiSer
 
 func (c *Client) QianchuanOrientationPackageGetV10Api() *api.QianchuanOrientationPackageGetV10ApiService {
 	return c.ApiClient.QianchuanOrientationPackageGetV10Api
+}
+
+func (c *Client) QianchuanOverallAwemeAwemeDeleteV10Api() *api.QianchuanOverallAwemeAwemeDeleteV10ApiService {
+	return c.ApiClient.QianchuanOverallAwemeAwemeDeleteV10Api
 }
 
 func (c *Client) QianchuanProductAvailableGetV10Api() *api.QianchuanProductAvailableGetV10ApiService {

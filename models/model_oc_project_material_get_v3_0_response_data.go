@@ -13,13 +13,40 @@ package models
 // OcProjectMaterialGetV30ResponseData
 type OcProjectMaterialGetV30ResponseData struct {
 	//
-	CallToActionButtons []string                                     `json:"call_to_action_buttons,omitempty"`
-	PageInfo            *OcProjectMaterialGetV30ResponseDataPageInfo `json:"page_info,omitempty"`
+	AnchorMaterialList []*OcProjectMaterialGetV30ResponseDataAnchorMaterialListInner `json:"anchor_material_list,omitempty"`
+	AnchorRelatedType  *OcProjectMaterialGetV30DataAnchorRelatedType                 `json:"anchor_related_type,omitempty"`
+	//
+	CallToActionButtons []string `json:"call_to_action_buttons,omitempty"`
+	//
+	CarouselMaterialList []*OcProjectMaterialGetV30ResponseDataCarouselMaterialListInner `json:"carousel_material_list,omitempty"`
+	//
+	ComponentMaterialList []*OcProjectMaterialGetV30ResponseDataComponentMaterialListInner `json:"component_material_list,omitempty"`
+	//
+	ExternalUrlMaterialList []string `json:"external_url_material_list,omitempty"`
+	//
+	ImageMaterialList []*OcProjectMaterialGetV30ResponseDataImageMaterialListInner `json:"image_material_list,omitempty"`
+	//
+	InstantPlayMaterialList []*OcProjectMaterialGetV30ResponseDataInstantPlayMaterialListInner `json:"instant_play_material_list,omitempty"`
+	MiniProgramInfo         *OcProjectMaterialGetV30ResponseDataMiniProgramInfo                `json:"mini_program_info,omitempty"`
+	//
+	OpenUrl *string `json:"open_url,omitempty"`
+	//
+	OpenUrls []string                                     `json:"open_urls,omitempty"`
+	PageInfo *OcProjectMaterialGetV30ResponseDataPageInfo `json:"page_info,omitempty"`
 	//
 	PlayletSeriesUrlInfo []*OcProjectMaterialGetV30ResponseDataPlayletSeriesUrlInfoInner `json:"playlet_series_url_info,omitempty"`
-	ProductInfo          *OcProjectMaterialGetV30ResponseDataProductInfo                 `json:"product_info,omitempty"`
+	//
+	PlayletSeriesUrlList []string                                        `json:"playlet_series_url_list,omitempty"`
+	ProductInfo          *OcProjectMaterialGetV30ResponseDataProductInfo `json:"product_info,omitempty"`
 	//
 	TitleMaterialList []*OcProjectMaterialGetV30ResponseDataTitleMaterialListInner `json:"title_material_list,omitempty"`
 	//
+	TrialPlayMaterialList []*OcProjectMaterialGetV30ResponseDataTrialPlayMaterialListInner `json:"trial_play_material_list,omitempty"`
+	//
+	UlinkUrl     *string                                  `json:"ulink_url,omitempty"`
+	UlinkUrlType *OcProjectMaterialGetV30DataUlinkUrlType `json:"ulink_url_type,omitempty"`
+	//
 	VideoMaterialList []*OcProjectMaterialGetV30ResponseDataVideoMaterialListInner `json:"video_material_list,omitempty"`
+	//
+	WebUrlMaterialList []string `json:"web_url_material_list,omitempty"`
 }

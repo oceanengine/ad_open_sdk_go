@@ -15,7 +15,15 @@ type StdProjectCreateV30DeliveryMedium string
 
 // List of std_project_create_v3.0_delivery_medium
 const (
-	APP_StdProjectCreateV30DeliveryMedium StdProjectCreateV30DeliveryMedium = "APP"
+	APP_StdProjectCreateV30DeliveryMedium         StdProjectCreateV30DeliveryMedium = "APP"
+	AWEME_StdProjectCreateV30DeliveryMedium       StdProjectCreateV30DeliveryMedium = "AWEME"
+	BYTE_APP_StdProjectCreateV30DeliveryMedium    StdProjectCreateV30DeliveryMedium = "BYTE_APP"
+	BYTE_GAME_StdProjectCreateV30DeliveryMedium   StdProjectCreateV30DeliveryMedium = "BYTE_GAME"
+	ENTERPRISE_StdProjectCreateV30DeliveryMedium  StdProjectCreateV30DeliveryMedium = "ENTERPRISE"
+	ORANGE_StdProjectCreateV30DeliveryMedium      StdProjectCreateV30DeliveryMedium = "ORANGE"
+	THIRDPARTY_StdProjectCreateV30DeliveryMedium  StdProjectCreateV30DeliveryMedium = "THIRDPARTY"
+	WECHAT_APP_StdProjectCreateV30DeliveryMedium  StdProjectCreateV30DeliveryMedium = "WECHAT_APP"
+	WECHAT_GAME_StdProjectCreateV30DeliveryMedium StdProjectCreateV30DeliveryMedium = "WECHAT_GAME"
 )
 
 // Ptr returns reference to std_project_create_v3.0_delivery_medium value

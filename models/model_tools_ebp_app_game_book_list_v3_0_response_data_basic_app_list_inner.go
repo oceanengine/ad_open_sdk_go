@@ -24,7 +24,8 @@ type ToolsEbpAppGameBookListV30ResponseDataBasicAppListInner struct {
 	// 应用名称
 	AppName string `json:"app_name"`
 	// 英文应用名称
-	AppNameEn string `json:"app_name_en"`
+	AppNameEn       string                                                     `json:"app_name_en"`
+	AssetGeneration *ToolsEbpAppGameBookListV30DataBasicAppListAssetGeneration `json:"asset_generation,omitempty"`
 	// AD账户查询时是否能以BP校验权限
 	AuthDetail *bool `json:"auth_detail,omitempty"`
 	//

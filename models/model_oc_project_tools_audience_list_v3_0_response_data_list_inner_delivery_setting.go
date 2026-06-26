@@ -29,4 +29,8 @@ type OcProjectToolsAudienceListV30ResponseDataListInnerDeliverySetting struct {
 	//
 	RoiGoalRate *float64                                                         `json:"roi_goal_rate,omitempty"`
 	SettingType *OcProjectToolsAudienceListV30DataListDeliverySettingSettingType `json:"setting_type,omitempty"`
+	//
+	SevenRoiGoal *float64 `json:"seven_roi_goal,omitempty"`
+	//
+	SevenRoiGoalRate *float64 `json:"seven_roi_goal_rate,omitempty"`
 }

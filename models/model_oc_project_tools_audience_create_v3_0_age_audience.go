@@ -15,7 +15,6 @@ type OcProjectToolsAudienceCreateV30AgeAudience string
 
 // List of oc_project_tools_audience_create_v3.0_age_audience
 const (
-	AGE_ABOVE_0_17_OcProjectToolsAudienceCreateV30AgeAudience    OcProjectToolsAudienceCreateV30AgeAudience = "AGE_ABOVE_0_17"
 	AGE_ABOVE_50_OcProjectToolsAudienceCreateV30AgeAudience      OcProjectToolsAudienceCreateV30AgeAudience = "AGE_ABOVE_50"
 	AGE_ABOVE_60_OcProjectToolsAudienceCreateV30AgeAudience      OcProjectToolsAudienceCreateV30AgeAudience = "AGE_ABOVE_60"
 	AGE_BETWEEN_18_19_OcProjectToolsAudienceCreateV30AgeAudience OcProjectToolsAudienceCreateV30AgeAudience = "AGE_BETWEEN_18_19"

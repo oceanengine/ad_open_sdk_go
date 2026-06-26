@@ -15,7 +15,15 @@ type StdProjectListV30DataListDeliveryMedium string
 
 // List of std_project_list_v3.0_data_list_delivery_medium
 const (
-	APP_StdProjectListV30DataListDeliveryMedium StdProjectListV30DataListDeliveryMedium = "APP"
+	APP_StdProjectListV30DataListDeliveryMedium         StdProjectListV30DataListDeliveryMedium = "APP"
+	AWEME_StdProjectListV30DataListDeliveryMedium       StdProjectListV30DataListDeliveryMedium = "AWEME"
+	BYTE_APP_StdProjectListV30DataListDeliveryMedium    StdProjectListV30DataListDeliveryMedium = "BYTE_APP"
+	BYTE_GAME_StdProjectListV30DataListDeliveryMedium   StdProjectListV30DataListDeliveryMedium = "BYTE_GAME"
+	ENTERPRISE_StdProjectListV30DataListDeliveryMedium  StdProjectListV30DataListDeliveryMedium = "ENTERPRISE"
+	ORANGE_StdProjectListV30DataListDeliveryMedium      StdProjectListV30DataListDeliveryMedium = "ORANGE"
+	THIRDPARTY_StdProjectListV30DataListDeliveryMedium  StdProjectListV30DataListDeliveryMedium = "THIRDPARTY"
+	WECHAT_APP_StdProjectListV30DataListDeliveryMedium  StdProjectListV30DataListDeliveryMedium = "WECHAT_APP"
+	WECHAT_GAME_StdProjectListV30DataListDeliveryMedium StdProjectListV30DataListDeliveryMedium = "WECHAT_GAME"
 )
 
 // Ptr returns reference to std_project_list_v3.0_data_list_delivery_medium value

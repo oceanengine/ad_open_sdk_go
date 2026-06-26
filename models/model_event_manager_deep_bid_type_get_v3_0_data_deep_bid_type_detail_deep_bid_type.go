@@ -40,6 +40,7 @@ const (
 	SEVEN_ROI_COEFFICIENT_EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType        EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = "SEVEN_ROI_COEFFICIENT"
 	SMARTBID_EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType                     EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = "SMARTBID"
 	SOCIAL_ROI_EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType                   EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = "SOCIAL_ROI"
+	THIRTY_ROI_COEFFICIENT_EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType       EventManagerDeepBidTypeGetV30DataDeepBidTypeDetailDeepBidType = "THIRTY_ROI_COEFFICIENT"
 )
 
 // Ptr returns reference to event_manager_deep_bid_type_get_v3.0_data_deep_bid_type_detail_deep_bid_type value

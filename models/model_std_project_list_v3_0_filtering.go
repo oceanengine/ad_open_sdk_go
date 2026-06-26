@@ -13,10 +13,21 @@ package models
 // StdProjectListV30Filtering
 type StdProjectListV30Filtering struct {
 	AdType *StdProjectListV30FilteringAdType `json:"ad_type,omitempty"`
+	// 抖音号ID
+	AwemeId *string `json:"aweme_id,omitempty"`
 	// 竞价策略，枚举值：CUSTOM 稳定成本、NO_BID 最大转化投放
 	BidType                []*StdProjectListV30FilteringBidType              `json:"bid_type,omitempty"`
 	BlueFlowPackageSetting *StdProjectListV30FilteringBlueFlowPackageSetting `json:"blue_flow_package_setting,omitempty"`
-	BudgetMode             *StdProjectListV30FilteringBudgetMode             `json:"budget_mode,omitempty"`
+	// 品牌ID
+	BrandId            *int64                                        `json:"brand_id,omitempty"`
+	BudgetMode         *StdProjectListV30FilteringBudgetMode         `json:"budget_mode,omitempty"`
+	DeepBidType        *StdProjectListV30FilteringDeepBidType        `json:"deep_bid_type,omitempty"`
+	DeepExternalAction *StdProjectListV30FilteringDeepExternalAction `json:"deep_external_action,omitempty"`
+	ExternalAction     *StdProjectListV30FilteringExternalAction     `json:"external_action,omitempty"`
+	// 关键行为ID
+	GameAddictionId *int64 `json:"game_addiction_id,omitempty"`
+	// 字节小游戏/小程序、微信小游戏/小程序ID
+	InstanceId *int64 `json:"instance_id,omitempty"`
 	// 营销目的，允许值：APP 应用、LINK 销售线索、MICRO_GAME 小程序、SHOP 电商、QUICK_APP 快应用、NATIVE_ACTION 原生互动、DPA 商品目录
 	LandingType []*StdProjectListV30FilteringLandingType `json:"landing_type,omitempty"`
 	// 营销场景，允许值：VIDEO_AND_IMAGE 短视频/图片、LIVE 直播
@@ -27,6 +38,10 @@ type StdProjectListV30Filtering struct {
 	// 按平台过滤，允许值：IOS、ANDROID、HARMONY
 	Platform []*StdProjectListV30FilteringPlatform `json:"platform,omitempty"`
 	Pricing  *StdProjectListV30FilteringPricing    `json:"pricing,omitempty"`
+	// 商品ID
+	ProductId *int64 `json:"product_id,omitempty"`
+	//
+	ProductPlatformId *int64 `json:"product_platform_id,omitempty"`
 	// 项目更新时间，格式yyyy-mm-dd，表示过滤出当天更新的项目
 	ProjectCreateEndTime *string `json:"project_create_end_time,omitempty"`
 	// 项目创建时间，格式yyyy-mm-dd，表示过滤出当天创建的项目
@@ -42,4 +57,6 @@ type StdProjectListV30Filtering struct {
 	StarDeliveryType []*StdProjectListV30FilteringStarDeliveryType `json:"star_delivery_type,omitempty"`
 	StatusFirst      *StdProjectListV30FilteringStatusFirst        `json:"status_first,omitempty"`
 	StatusSecond     *StdProjectListV30FilteringStatusSecond       `json:"status_second,omitempty"`
+	//
+	UniqueProductId *int64 `json:"unique_product_id,omitempty"`
 }

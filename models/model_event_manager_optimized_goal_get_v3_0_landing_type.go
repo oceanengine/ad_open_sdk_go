@@ -15,7 +15,10 @@ type EventManagerOptimizedGoalGetV30LandingType string
 
 // List of event_manager_optimized_goal_get_v3.0_landing_type
 const (
-	APP_EventManagerOptimizedGoalGetV30LandingType EventManagerOptimizedGoalGetV30LandingType = "APP"
+	APP_EventManagerOptimizedGoalGetV30LandingType        EventManagerOptimizedGoalGetV30LandingType = "APP"
+	LINK_EventManagerOptimizedGoalGetV30LandingType       EventManagerOptimizedGoalGetV30LandingType = "LINK"
+	MICRO_GAME_EventManagerOptimizedGoalGetV30LandingType EventManagerOptimizedGoalGetV30LandingType = "MICRO_GAME"
+	SHOP_EventManagerOptimizedGoalGetV30LandingType       EventManagerOptimizedGoalGetV30LandingType = "SHOP"
 )
 
 // Ptr returns reference to event_manager_optimized_goal_get_v3.0_landing_type value

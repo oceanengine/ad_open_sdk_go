@@ -13,6 +13,14 @@ package models
 // StdProjectCreateV30RequestAudience
 type StdProjectCreateV30RequestAudience struct {
 	//
+	Ac []*StdProjectCreateV30AudienceAc `json:"ac,omitempty"`
+	//
+	ActionCategories []int64 `json:"action_categories,omitempty"`
+	//
+	ActionDays *int64 `json:"action_days,omitempty"`
+	//
+	ActionWords []int64 `json:"action_words,omitempty"`
+	//
 	Age        []*StdProjectCreateV30AudienceAge      `json:"age,omitempty"`
 	AndroidOsv *StdProjectCreateV30AudienceAndroidOsv `json:"android_osv,omitempty"`
 	//
@@ -20,15 +28,23 @@ type StdProjectCreateV30RequestAudience struct {
 	ConvertedTimeDuration *StdProjectCreateV30AudienceConvertedTimeDuration `json:"converted_time_duration,omitempty"`
 	District              *StdProjectCreateV30AudienceDistrict              `json:"district,omitempty"`
 	//
-	FilterEvent []*StdProjectCreateV30AudienceFilterEvent `json:"filter_event,omitempty"`
-	Gender      *StdProjectCreateV30AudienceGender        `json:"gender,omitempty"`
+	FilterEvent        []*StdProjectCreateV30AudienceFilterEvent      `json:"filter_event,omitempty"`
+	FilterOwnAwemeFans *StdProjectCreateV30AudienceFilterOwnAwemeFans `json:"filter_own_aweme_fans,omitempty"`
+	Gender             *StdProjectCreateV30AudienceGender             `json:"gender,omitempty"`
 	//
-	Geolocation     []*StdProjectCreateV30RequestAudienceGeolocationInner `json:"geolocation,omitempty"`
-	HarmonyOsv      *StdProjectCreateV30AudienceHarmonyOsv                `json:"harmony_osv,omitempty"`
-	HideIfConverted *StdProjectCreateV30AudienceHideIfConverted           `json:"hide_if_converted,omitempty"`
-	HideIfExists    *StdProjectCreateV30AudienceHideIfExists              `json:"hide_if_exists,omitempty"`
-	IosOsv          *StdProjectCreateV30AudienceIosOsv                    `json:"ios_osv,omitempty"`
-	LocationType    *StdProjectCreateV30AudienceLocationType              `json:"location_type,omitempty"`
+	Geolocation        []*StdProjectCreateV30RequestAudienceGeolocationInner `json:"geolocation,omitempty"`
+	HarmonyOsv         *StdProjectCreateV30AudienceHarmonyOsv                `json:"harmony_osv,omitempty"`
+	HideIfConverted    *StdProjectCreateV30AudienceHideIfConverted           `json:"hide_if_converted,omitempty"`
+	HideIfExists       *StdProjectCreateV30AudienceHideIfExists              `json:"hide_if_exists,omitempty"`
+	InterestActionMode *StdProjectCreateV30AudienceInterestActionMode        `json:"interest_action_mode,omitempty"`
+	//
+	InterestCategories []int64 `json:"interest_categories,omitempty"`
+	//
+	InterestWords []int64                            `json:"interest_words,omitempty"`
+	IosOsv        *StdProjectCreateV30AudienceIosOsv `json:"ios_osv,omitempty"`
+	//
+	LaunchPrice  []int64                                  `json:"launch_price,omitempty"`
+	LocationType *StdProjectCreateV30AudienceLocationType `json:"location_type,omitempty"`
 	//
 	Platform        []*StdProjectCreateV30AudiencePlatform      `json:"platform,omitempty"`
 	RegionRecommend *StdProjectCreateV30AudienceRegionRecommend `json:"region_recommend,omitempty"`
@@ -37,5 +53,6 @@ type StdProjectCreateV30RequestAudience struct {
 	//
 	RetargetingTagsExclude []int64 `json:"retargeting_tags_exclude,omitempty"`
 	//
-	RetargetingTagsInclude []int64 `json:"retargeting_tags_include,omitempty"`
+	RetargetingTagsInclude []int64                                 `json:"retargeting_tags_include,omitempty"`
+	SmartExtend            *StdProjectCreateV30AudienceSmartExtend `json:"smart_extend,omitempty"`
 }

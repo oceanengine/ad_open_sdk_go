@@ -37,6 +37,8 @@ type ToolsCommentGetV30ResponseDataCommentListInner struct {
 	LikeCount *int64 `json:"like_count,omitempty"`
 	//
 	MaterialId *int64 `json:"material_id,omitempty"`
+	//
+	ProjectId *int64 `json:"project_id,omitempty"`
 	// 广告id，仅2.0平台适用，仅引流流量返回
 	PromotionId *int64 `json:"promotion_id,omitempty"`
 	// 评论的回复数量

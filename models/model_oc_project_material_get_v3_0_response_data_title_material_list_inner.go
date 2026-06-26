@@ -13,5 +13,7 @@ package models
 // OcProjectMaterialGetV30ResponseDataTitleMaterialListInner struct for OcProjectMaterialGetV30ResponseDataTitleMaterialListInner
 type OcProjectMaterialGetV30ResponseDataTitleMaterialListInner struct {
 	//
+	MaterialId *int64 `json:"material_id,omitempty"`
+	//
 	Title *string `json:"title,omitempty"`
 }

@@ -52,7 +52,7 @@ func (r *ApiOpenApiV30OcProjectMaterialCreatePostRequest) WithLog(enable bool) *
 /*
 OpenApiV30OcProjectMaterialCreatePost Method for OpenApiV30OcProjectMaterialCreatePost
 
-批量添加全域推广项目下素材
+批量添加智擎版项目下素材
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30OcProjectMaterialCreatePostRequest

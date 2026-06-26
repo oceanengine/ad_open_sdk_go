@@ -13,9 +13,10 @@ package models
 // ToolsEbpWechatGameListV30ResponseDataAppletsInner struct for ToolsEbpWechatGameListV30ResponseDataAppletsInner
 type ToolsEbpWechatGameListV30ResponseDataAppletsInner struct {
 	// 账号id account_id
-	AccountId   int64                                            `json:"account_id"`
-	AccountType ToolsEbpWechatGameListV30DataAppletsAccountType  `json:"account_type"`
-	AuditStatus *ToolsEbpWechatGameListV30DataAppletsAuditStatus `json:"audit_status,omitempty"`
+	AccountId       int64                                                `json:"account_id"`
+	AccountType     ToolsEbpWechatGameListV30DataAppletsAccountType      `json:"account_type"`
+	AssetGeneration *ToolsEbpWechatGameListV30DataAppletsAssetGeneration `json:"asset_generation,omitempty"`
+	AuditStatus     *ToolsEbpWechatGameListV30DataAppletsAuditStatus     `json:"audit_status,omitempty"`
 	// 主成分字段存储
 	Data  *map[string]string                                     `json:"data,omitempty"`
 	Extra ToolsEbpWechatGameListV30ResponseDataAppletsInnerExtra `json:"extra"`

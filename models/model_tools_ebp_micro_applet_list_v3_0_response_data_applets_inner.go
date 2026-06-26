@@ -13,8 +13,9 @@ package models
 // ToolsEbpMicroAppletListV30ResponseDataAppletsInner struct for ToolsEbpMicroAppletListV30ResponseDataAppletsInner
 type ToolsEbpMicroAppletListV30ResponseDataAppletsInner struct {
 	//
-	AppId       *string                                           `json:"app_id,omitempty"`
-	AuditStatus *ToolsEbpMicroAppletListV30DataAppletsAuditStatus `json:"audit_status,omitempty"`
+	AppId           *string                                               `json:"app_id,omitempty"`
+	AssetGeneration *ToolsEbpMicroAppletListV30DataAppletsAssetGeneration `json:"asset_generation,omitempty"`
+	AuditStatus     *ToolsEbpMicroAppletListV30DataAppletsAuditStatus     `json:"audit_status,omitempty"`
 	// 应管主成分字段
 	Data *map[string]string `json:"data,omitempty"`
 	//

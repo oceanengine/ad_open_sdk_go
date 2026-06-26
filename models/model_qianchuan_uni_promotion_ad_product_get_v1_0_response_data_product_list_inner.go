@@ -12,8 +12,12 @@ package models
 
 // QianchuanUniPromotionAdProductGetV10ResponseDataProductListInner struct for QianchuanUniPromotionAdProductGetV10ResponseDataProductListInner
 type QianchuanUniPromotionAdProductGetV10ResponseDataProductListInner struct {
+	// 抖音号ID列表，仅多号乘方商品计划返回
+	AwemeIdList []int64 `json:"aweme_id_list,omitempty"`
 	// 商品是否已删除
-	IsDel       bool                                                                        `json:"is_del"`
+	IsDel bool `json:"is_del"`
+	// 商品ID，当计划为商品全域/乘方计划时返回
+	ProductId   *int64                                                                      `json:"product_id,omitempty"`
 	ProductInfo QianchuanUniPromotionAdProductGetV10ResponseDataProductListInnerProductInfo `json:"product_info"`
 	StatsInfo   QianchuanUniPromotionAdProductGetV10ResponseDataProductListInnerStatsInfo   `json:"stats_info"`
 }

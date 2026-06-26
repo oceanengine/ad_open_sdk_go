@@ -13,11 +13,12 @@ package models
 // DiagnosisTaskAgentListV2ResponseDataTaskListInner struct for DiagnosisTaskAgentListV2ResponseDataTaskListInner
 type DiagnosisTaskAgentListV2ResponseDataTaskListInner struct {
 	//
-	AdvertiserId             *int64                                                        `json:"advertiser_id,omitempty"`
-	IsAdHighQualityMaterial  *DiagnosisTaskAgentListV2DataTaskListIsAdHighQualityMaterial  `json:"is_ad_high_quality_material,omitempty"`
-	IsEcpHighQualityMaterial *DiagnosisTaskAgentListV2DataTaskListIsEcpHighQualityMaterial `json:"is_ecp_high_quality_material,omitempty"`
-	IsFirstPublishMaterial   *DiagnosisTaskAgentListV2DataTaskListIsFirstPublishMaterial   `json:"is_first_publish_material,omitempty"`
-	IsInefficientMaterial    *DiagnosisTaskAgentListV2DataTaskListIsInefficientMaterial    `json:"is_inefficient_material,omitempty"`
+	AdvertiserId               *int64                                                          `json:"advertiser_id,omitempty"`
+	IsAdHighQualityMaterial    *DiagnosisTaskAgentListV2DataTaskListIsAdHighQualityMaterial    `json:"is_ad_high_quality_material,omitempty"`
+	IsEcpHighQualityMaterial   *DiagnosisTaskAgentListV2DataTaskListIsEcpHighQualityMaterial   `json:"is_ecp_high_quality_material,omitempty"`
+	IsFirstPublishMaterial     *DiagnosisTaskAgentListV2DataTaskListIsFirstPublishMaterial     `json:"is_first_publish_material,omitempty"`
+	IsInefficientMaterial      *DiagnosisTaskAgentListV2DataTaskListIsInefficientMaterial      `json:"is_inefficient_material,omitempty"`
+	IsLocalHighQualityMaterial *DiagnosisTaskAgentListV2DataTaskListIsLocalHighQualityMaterial `json:"is_local_high_quality_material,omitempty"`
 	//
 	MaterialId *int64 `json:"material_id,omitempty"`
 	//

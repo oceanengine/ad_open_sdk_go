@@ -31,6 +31,7 @@ type ApiOpenApiV30ToolsEbpMicroAppletListGetRequest struct {
 	filtering            *ToolsEbpMicroAppletListV30Filtering
 	page                 *int64
 	pageSize             *int64
+	assetGeneration      *ToolsEbpMicroAppletListV30AssetGeneration
 }
 
 func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest {
@@ -62,6 +63,11 @@ func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) Page(page int64) *ApiOp
 
 func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) PageSize(pageSize int64) *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest) AssetGeneration(assetGeneration ToolsEbpMicroAppletListV30AssetGeneration) *ApiOpenApiV30ToolsEbpMicroAppletListGetRequest {
+	r.assetGeneration = &assetGeneration
 	return r
 }
 
@@ -138,6 +144,9 @@ func (a *ToolsEbpMicroAppletListV30ApiService) getExecute(r *ApiOpenApiV30ToolsE
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.assetGeneration != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "asset_generation", r.assetGeneration)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

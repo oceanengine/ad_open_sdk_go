@@ -15,18 +15,10 @@ type EventManagerDbtGetV30LandingType string
 
 // List of event_manager_dbt_get_v3.0_landing_type
 const (
-	APP_EventManagerDbtGetV30LandingType            EventManagerDbtGetV30LandingType = "APP"
-	ARTICLE_EventManagerDbtGetV30LandingType        EventManagerDbtGetV30LandingType = "ARTICLE"
-	BRAND_EXTERNAL_EventManagerDbtGetV30LandingType EventManagerDbtGetV30LandingType = "BRAND_EXTERNAL"
-	DPA_EventManagerDbtGetV30LandingType            EventManagerDbtGetV30LandingType = "DPA"
-	GOODS_EventManagerDbtGetV30LandingType          EventManagerDbtGetV30LandingType = "GOODS"
-	LINK_EventManagerDbtGetV30LandingType           EventManagerDbtGetV30LandingType = "LINK"
-	LIVE_EventManagerDbtGetV30LandingType           EventManagerDbtGetV30LandingType = "LIVE"
-	MICRO_GAME_EventManagerDbtGetV30LandingType     EventManagerDbtGetV30LandingType = "MICRO_GAME"
-	NATIVE_ACTION_EventManagerDbtGetV30LandingType  EventManagerDbtGetV30LandingType = "NATIVE_ACTION"
-	QUICK_APP_EventManagerDbtGetV30LandingType      EventManagerDbtGetV30LandingType = "QUICK_APP"
-	SHOP_EventManagerDbtGetV30LandingType           EventManagerDbtGetV30LandingType = "SHOP"
-	STORE_EventManagerDbtGetV30LandingType          EventManagerDbtGetV30LandingType = "STORE"
+	APP_EventManagerDbtGetV30LandingType        EventManagerDbtGetV30LandingType = "APP"
+	LINK_EventManagerDbtGetV30LandingType       EventManagerDbtGetV30LandingType = "LINK"
+	MICRO_GAME_EventManagerDbtGetV30LandingType EventManagerDbtGetV30LandingType = "MICRO_GAME"
+	SHOP_EventManagerDbtGetV30LandingType       EventManagerDbtGetV30LandingType = "SHOP"
 )
 
 // Ptr returns reference to event_manager_dbt_get_v3.0_landing_type value

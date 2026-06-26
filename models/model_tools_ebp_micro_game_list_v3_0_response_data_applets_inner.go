@@ -13,8 +13,9 @@ package models
 // ToolsEbpMicroGameListV30ResponseDataAppletsInner struct for ToolsEbpMicroGameListV30ResponseDataAppletsInner
 type ToolsEbpMicroGameListV30ResponseDataAppletsInner struct {
 	//
-	AppId       *string                                         `json:"app_id,omitempty"`
-	AuditStatus *ToolsEbpMicroGameListV30DataAppletsAuditStatus `json:"audit_status,omitempty"`
+	AppId           *string                                             `json:"app_id,omitempty"`
+	AssetGeneration *ToolsEbpMicroGameListV30DataAppletsAssetGeneration `json:"asset_generation,omitempty"`
+	AuditStatus     *ToolsEbpMicroGameListV30DataAppletsAuditStatus     `json:"audit_status,omitempty"`
 	// 应管主成分字段
 	Data *map[string]string `json:"data,omitempty"`
 	//

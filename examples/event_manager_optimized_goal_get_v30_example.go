@@ -39,6 +39,7 @@ type ApiOpenApiV30EventManagerOptimizedGoalGetGetRequestExample struct {
 	MicroPromotionType  EventManagerOptimizedGoalGetV30MicroPromotionType  `json:"micro_promotion_type,omitempty"`
 	MicroAppInstanceId  int64                                              `json:"micro_app_instance_id,omitempty"`
 	DeliveryType        EventManagerOptimizedGoalGetV30DeliveryType        `json:"delivery_type,omitempty"`
+	ProductSetting      EventManagerOptimizedGoalGetV30ProductSetting      `json:"product_setting,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/event_manager/optimized_goal/get/ Get
@@ -60,7 +61,7 @@ func main() {
 	resp, httpRes, err := apiClient.EventManagerOptimizedGoalGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).LandingType(request.LandingType).AdType(request.AdType).DeliveryMedium(request.DeliveryMedium).MultiDeliveryMedium(request.MultiDeliveryMedium).AssetId(request.AssetId).PackageName(request.PackageName).AppType(request.AppType).AppPromotionType(request.AppPromotionType).MarketingGoal(request.MarketingGoal).QuickAppId(request.QuickAppId).DeliveryMode(request.DeliveryMode).MiniProgramId(request.MiniProgramId).MicroPromotionType(request.MicroPromotionType).MicroAppInstanceId(request.MicroAppInstanceId).DeliveryType(request.DeliveryType).
+		AdvertiserId(request.AdvertiserId).LandingType(request.LandingType).AdType(request.AdType).DeliveryMedium(request.DeliveryMedium).MultiDeliveryMedium(request.MultiDeliveryMedium).AssetId(request.AssetId).PackageName(request.PackageName).AppType(request.AppType).AppPromotionType(request.AppPromotionType).MarketingGoal(request.MarketingGoal).QuickAppId(request.QuickAppId).DeliveryMode(request.DeliveryMode).MiniProgramId(request.MiniProgramId).MicroPromotionType(request.MicroPromotionType).MicroAppInstanceId(request.MicroAppInstanceId).DeliveryType(request.DeliveryType).ProductSetting(request.ProductSetting).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

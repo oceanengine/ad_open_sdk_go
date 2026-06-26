@@ -31,6 +31,7 @@ type ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest struct {
 	pageSize               *int64
 	filtering              *ToolsAppManagementHarmonyAppListV2Filtering
 	accountAssetQueryScope *ToolsAppManagementHarmonyAppListV2AccountAssetQueryScope
+	assetGeneration        *ToolsAppManagementHarmonyAppListV2AssetGeneration
 }
 
 func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AccountId(accountId int64) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
@@ -62,6 +63,12 @@ func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) Filtering(filter
 
 func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsAppManagementHarmonyAppListV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
 	r.accountAssetQueryScope = &accountAssetQueryScope
+	return r
+}
+
+// 不传默认返回全部
+func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AssetGeneration(assetGeneration ToolsAppManagementHarmonyAppListV2AssetGeneration) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
+	r.assetGeneration = &assetGeneration
 	return r
 }
 
@@ -137,6 +144,9 @@ func (a *ToolsAppManagementHarmonyAppListV2ApiService) getExecute(r *ApiOpenApi2
 	}
 	if r.accountAssetQueryScope != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "account_asset_query_scope", r.accountAssetQueryScope)
+	}
+	if r.assetGeneration != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "asset_generation", r.assetGeneration)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

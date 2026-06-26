@@ -15,8 +15,8 @@ type AdGetV2DataAppType string
 
 // List of ad_get_v2_data_app_type
 const (
-	APP_ANDROID_AdGetV2DataAppType AdGetV2DataAppType = "APP_ANDROID"
 	APP_IOS_AdGetV2DataAppType     AdGetV2DataAppType = "APP_IOS"
+	APP_ANDROID_AdGetV2DataAppType AdGetV2DataAppType = "APP_ANDROID"
 )
 
 // Ptr returns reference to ad_get_v2_data_app_type value

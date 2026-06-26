@@ -15,7 +15,6 @@ type StdProjectCreateV30DeliveryMode string
 
 // List of std_project_create_v3.0_delivery_mode
 const (
-	MANUAL_StdProjectCreateV30DeliveryMode     StdProjectCreateV30DeliveryMode = "MANUAL"
 	PROCEDURAL_StdProjectCreateV30DeliveryMode StdProjectCreateV30DeliveryMode = "PROCEDURAL"
 )
 

@@ -15,8 +15,8 @@ type CreativeProceduralCreativeUpdateV2AdDataParamsType string
 
 // List of creative_procedural_creative_update_v2_ad_data_params_type
 const (
-	DPA_CreativeProceduralCreativeUpdateV2AdDataParamsType    CreativeProceduralCreativeUpdateV2AdDataParamsType = "DPA"
 	CUSTOM_CreativeProceduralCreativeUpdateV2AdDataParamsType CreativeProceduralCreativeUpdateV2AdDataParamsType = "CUSTOM"
+	DPA_CreativeProceduralCreativeUpdateV2AdDataParamsType    CreativeProceduralCreativeUpdateV2AdDataParamsType = "DPA"
 )
 
 // Ptr returns reference to creative_procedural_creative_update_v2_ad_data_params_type value

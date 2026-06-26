@@ -24,7 +24,7 @@ import (
 
 type ApiOpenApiV30OcProjectToolsMaterialRaiseGetGetRequestExample struct {
 	AdvertiserId int64                                      `json:"advertiser_id"`
-	Filtering    OcProjectToolsMaterialRaiseGetV30Filtering `json:"filtering,omitempty"`
+	Filtering    OcProjectToolsMaterialRaiseGetV30Filtering `json:"filtering"`
 	Page         int64                                      `json:"page,omitempty"`
 	PageSize     int64                                      `json:"page_size,omitempty"`
 }

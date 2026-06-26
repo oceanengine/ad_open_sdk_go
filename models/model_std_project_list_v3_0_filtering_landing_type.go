@@ -15,7 +15,10 @@ type StdProjectListV30FilteringLandingType string
 
 // List of std_project_list_v3.0_filtering_landing_type
 const (
-	APP_StdProjectListV30FilteringLandingType StdProjectListV30FilteringLandingType = "APP"
+	APP_StdProjectListV30FilteringLandingType        StdProjectListV30FilteringLandingType = "APP"
+	LINK_StdProjectListV30FilteringLandingType       StdProjectListV30FilteringLandingType = "LINK"
+	MICRO_GAME_StdProjectListV30FilteringLandingType StdProjectListV30FilteringLandingType = "MICRO_GAME"
+	SHOP_StdProjectListV30FilteringLandingType       StdProjectListV30FilteringLandingType = "SHOP"
 )
 
 // Ptr returns reference to std_project_list_v3.0_filtering_landing_type value

@@ -15,8 +15,8 @@ type ClueFormUpdateV2ExtendInfoSignUpConfigSignType string
 
 // List of clue_form_update_v2_extend_info_sign_up_config_sign_type
 const (
-	SIGN_TYPE_SCROLL_WALL_ClueFormUpdateV2ExtendInfoSignUpConfigSignType ClueFormUpdateV2ExtendInfoSignUpConfigSignType = "SIGN_TYPE_SCROLL_WALL"
 	SIGN_TYPE_SCROLL_BAR_ClueFormUpdateV2ExtendInfoSignUpConfigSignType  ClueFormUpdateV2ExtendInfoSignUpConfigSignType = "SIGN_TYPE_SCROLL_BAR"
+	SIGN_TYPE_SCROLL_WALL_ClueFormUpdateV2ExtendInfoSignUpConfigSignType ClueFormUpdateV2ExtendInfoSignUpConfigSignType = "SIGN_TYPE_SCROLL_WALL"
 )
 
 // Ptr returns reference to clue_form_update_v2_extend_info_sign_up_config_sign_type value

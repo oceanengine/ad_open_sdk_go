@@ -15,7 +15,8 @@ type StdProjectCreateV30DeliveryType string
 
 // List of std_project_create_v3.0_delivery_type
 const (
-	NORMAL_StdProjectCreateV30DeliveryType StdProjectCreateV30DeliveryType = "NORMAL"
+	NORMAL_StdProjectCreateV30DeliveryType          StdProjectCreateV30DeliveryType = "NORMAL"
+	UBX_INTELLIGENT_StdProjectCreateV30DeliveryType StdProjectCreateV30DeliveryType = "UBX_INTELLIGENT"
 )
 
 // Ptr returns reference to std_project_create_v3.0_delivery_type value

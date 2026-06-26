@@ -19,7 +19,6 @@ type StdProjectCreateV30Request struct {
 	//
 	AppName          *string                              `json:"app_name,omitempty"`
 	AppPromotionType *StdProjectCreateV30AppPromotionType `json:"app_promotion_type,omitempty"`
-	AppType          *StdProjectCreateV30AppType          `json:"app_type,omitempty"`
 	//
 	AssetId           *int64                                `json:"asset_id,omitempty"`
 	Audience          *StdProjectCreateV30RequestAudience   `json:"audience,omitempty"`
@@ -55,14 +54,21 @@ type StdProjectCreateV30Request struct {
 	//
 	FirstRoiGoal *float64 `json:"first_roi_goal,omitempty"`
 	//
-	GameAddictionId        *string                                           `json:"game_addiction_id,omitempty"`
+	GameAddictionId *string `json:"game_addiction_id,omitempty"`
+	//
+	InstanceId             *int64                                            `json:"instance_id,omitempty"`
 	InternalAdvertiserInfo *StdProjectCreateV30RequestInternalAdvertiserInfo `json:"internal_advertiser_info,omitempty"`
 	IsCommentDisable       *StdProjectCreateV30IsCommentDisable              `json:"is_comment_disable,omitempty"`
 	//
-	Keywords      []*StdProjectCreateV30RequestKeywordsInner `json:"keywords,omitempty"`
-	LandingType   StdProjectCreateV30LandingType             `json:"landing_type"`
-	LaunchType    *StdProjectCreateV30LaunchType             `json:"launch_type,omitempty"`
-	MarketingGoal StdProjectCreateV30MarketingGoal           `json:"marketing_goal"`
+	Keywords            []*StdProjectCreateV30RequestKeywordsInner `json:"keywords,omitempty"`
+	LandingPageStayTime *StdProjectCreateV30LandingPageStayTime    `json:"landing_page_stay_time,omitempty"`
+	LandingType         StdProjectCreateV30LandingType             `json:"landing_type"`
+	LaunchType          *StdProjectCreateV30LaunchType             `json:"launch_type,omitempty"`
+	LayerRoiSwitch      *StdProjectCreateV30LayerRoiSwitch         `json:"layer_roi_switch,omitempty"`
+	//
+	LiveDuration        *float64                                `json:"live_duration,omitempty"`
+	MarketingGoal       StdProjectCreateV30MarketingGoal        `json:"marketing_goal"`
+	MultiDeliveryMedium *StdProjectCreateV30MultiDeliveryMedium `json:"multi_delivery_medium,omitempty"`
 	//
 	Name       string                        `json:"name"`
 	NativeType StdProjectCreateV30NativeType `json:"native_type"`
@@ -78,6 +84,9 @@ type StdProjectCreateV30Request struct {
 	ScheduleTime           *string                                    `json:"schedule_time,omitempty"`
 	ScheduleType           StdProjectCreateV30ScheduleType            `json:"schedule_type"`
 	SearchContinueDelivery *StdProjectCreateV30SearchContinueDelivery `json:"search_continue_delivery,omitempty"`
+	//
+	SevenRoiGoal *float64                         `json:"seven_roi_goal,omitempty"`
+	ShopPlatform *StdProjectCreateV30ShopPlatform `json:"shop_platform,omitempty"`
 	//
 	StarTaskIdList []int64 `json:"star_task_id_list,omitempty"`
 	//

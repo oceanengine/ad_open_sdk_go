@@ -41,6 +41,7 @@ type ApiOpenApiV30EventManagerOptimizedGoalGetGetRequest struct {
 	microPromotionType  *EventManagerOptimizedGoalGetV30MicroPromotionType
 	microAppInstanceId  *int64
 	deliveryType        *EventManagerOptimizedGoalGetV30DeliveryType
+	productSetting      *EventManagerOptimizedGoalGetV30ProductSetting
 }
 
 // 广告主id
@@ -49,7 +50,7 @@ func (r *ApiOpenApiV30EventManagerOptimizedGoalGetGetRequest) AdvertiserId(adver
 	return r
 }
 
-// 推广目的，允许值：APP 应用推广
+// 推广目的，允许值：APP，LINK，MICRO_GAME，SHOP
 func (r *ApiOpenApiV30EventManagerOptimizedGoalGetGetRequest) LandingType(landingType EventManagerOptimizedGoalGetV30LandingType) *ApiOpenApiV30EventManagerOptimizedGoalGetGetRequest {
 	r.landingType = &landingType
 	return r
@@ -102,7 +103,7 @@ func (r *ApiOpenApiV30EventManagerOptimizedGoalGetGetRequest) MarketingGoal(mark
 	return r
 }
 
-// 快应用资产id
+// 快应用id
 func (r *ApiOpenApiV30EventManagerOptimizedGoalGetGetRequest) QuickAppId(quickAppId int64) *ApiOpenApiV30EventManagerOptimizedGoalGetGetRequest {
 	r.quickAppId = &quickAppId
 	return r
@@ -132,6 +133,11 @@ func (r *ApiOpenApiV30EventManagerOptimizedGoalGetGetRequest) MicroAppInstanceId
 
 func (r *ApiOpenApiV30EventManagerOptimizedGoalGetGetRequest) DeliveryType(deliveryType EventManagerOptimizedGoalGetV30DeliveryType) *ApiOpenApiV30EventManagerOptimizedGoalGetGetRequest {
 	r.deliveryType = &deliveryType
+	return r
+}
+
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetGetRequest) ProductSetting(productSetting EventManagerOptimizedGoalGetV30ProductSetting) *ApiOpenApiV30EventManagerOptimizedGoalGetGetRequest {
+	r.productSetting = &productSetting
 	return r
 }
 
@@ -241,6 +247,9 @@ func (a *EventManagerOptimizedGoalGetV30ApiService) getExecute(r *ApiOpenApiV30E
 	}
 	if r.deliveryType != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "delivery_type", r.deliveryType)
+	}
+	if r.productSetting != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "product_setting", r.productSetting)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

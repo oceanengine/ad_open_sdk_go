@@ -19,6 +19,8 @@ type QianchuanUniPromotionAdMaterialGetV10Filtering struct {
 	MaterialSelectType *QianchuanUniPromotionAdMaterialGetV10FilteringMaterialSelectType `json:"material_select_type,omitempty"`
 	MaterialStatus     *QianchuanUniPromotionAdMaterialGetV10FilteringMaterialStatus     `json:"material_status,omitempty"`
 	MaterialType       QianchuanUniPromotionAdMaterialGetV10FilteringMaterialType        `json:"material_type"`
+	// 商品ID，仅商品全域/乘方计划支持
+	ProductId *string `json:"product_id,omitempty"`
 	//
 	ProductKeyword *string `json:"product_keyword,omitempty"`
 	//

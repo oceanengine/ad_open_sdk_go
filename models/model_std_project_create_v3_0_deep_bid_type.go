@@ -26,7 +26,6 @@ const (
 	FORM_BID_StdProjectCreateV30DeepBidType                     StdProjectCreateV30DeepBidType = "FORM_BID"
 	IAAP_ROI_24_H_AND_7_D_StdProjectCreateV30DeepBidType        StdProjectCreateV30DeepBidType = "IAAP_ROI_24H_AND_7D"
 	IAAP_SEVEN_ROI_COEFFICIENT_StdProjectCreateV30DeepBidType   StdProjectCreateV30DeepBidType = "IAAP_SEVEN_ROI_COEFFICIENT"
-	LAYER_ROI_StdProjectCreateV30DeepBidType                    StdProjectCreateV30DeepBidType = "LAYER_ROI"
 	LOAN_ROI_StdProjectCreateV30DeepBidType                     StdProjectCreateV30DeepBidType = "LOAN_ROI"
 	MIN_SECOND_STAGE_StdProjectCreateV30DeepBidType             StdProjectCreateV30DeepBidType = "MIN_SECOND_STAGE"
 	NET_ORDER_StdProjectCreateV30DeepBidType                    StdProjectCreateV30DeepBidType = "NET_ORDER"
@@ -37,10 +36,12 @@ const (
 	ROI_COEFFICIENT_StdProjectCreateV30DeepBidType              StdProjectCreateV30DeepBidType = "ROI_COEFFICIENT"
 	ROI_DIRECT_MAIL_StdProjectCreateV30DeepBidType              StdProjectCreateV30DeepBidType = "ROI_DIRECT_MAIL"
 	ROI_PACING_StdProjectCreateV30DeepBidType                   StdProjectCreateV30DeepBidType = "ROI_PACING"
+	ROI_THREE_StdProjectCreateV30DeepBidType                    StdProjectCreateV30DeepBidType = "ROI_THREE"
 	RTA_DOUBLE_BID_StdProjectCreateV30DeepBidType               StdProjectCreateV30DeepBidType = "RTA_DOUBLE_BID"
 	SEVEN_ROI_COEFFICIENT_StdProjectCreateV30DeepBidType        StdProjectCreateV30DeepBidType = "SEVEN_ROI_COEFFICIENT"
 	SMARTBID_StdProjectCreateV30DeepBidType                     StdProjectCreateV30DeepBidType = "SMARTBID"
 	SOCIAL_ROI_StdProjectCreateV30DeepBidType                   StdProjectCreateV30DeepBidType = "SOCIAL_ROI"
+	THIRTY_ROI_COEFFICIENT_StdProjectCreateV30DeepBidType       StdProjectCreateV30DeepBidType = "THIRTY_ROI_COEFFICIENT"
 )
 
 // Ptr returns reference to std_project_create_v3.0_deep_bid_type value

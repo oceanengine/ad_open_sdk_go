@@ -13,6 +13,8 @@ package models
 // QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInner struct for QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInner
 type QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInner struct {
 	AuditStatus *QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosAuditStatus `json:"audit_status,omitempty"`
+	// 抖音号ID列表，乘方多号场景用于标识素材关联的 pid-uid pairs
+	AwemeIdList []int64 `json:"aweme_id_list,omitempty"`
 	//
 	DeliveryNotReason []string `json:"delivery_not_reason,omitempty"`
 	//
@@ -20,6 +22,8 @@ type QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInner struc
 	MaterialInfo       *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerMaterialInfo `json:"material_info,omitempty"`
 	MaterialSelectType *QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialSelectType        `json:"material_select_type,omitempty"`
 	MaterialStatus     *QianchuanUniPromotionAdMaterialGetV10DataAdMaterialInfosMaterialStatus            `json:"material_status,omitempty"`
+	// 商品ID列表，乘方多号场景用于标识素材关联的 pid-uid pairs
+	ProductIdList []int64 `json:"product_id_list,omitempty"`
 	//
 	ProductInfo []*QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerProductInfoInner `json:"product_info,omitempty"`
 	StatsInfo   *QianchuanUniPromotionAdMaterialGetV10ResponseDataAdMaterialInfosInnerStatsInfo          `json:"stats_info,omitempty"`

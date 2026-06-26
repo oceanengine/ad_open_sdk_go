@@ -15,13 +15,11 @@ type OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst string
 
 // List of oc_project_tools_material_raise_get_v3.0_data_list_material_adjust_status_first
 const (
-	ADJUSTING_OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst           OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst = "ADJUSTING"
-	ALL_OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst                 OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst = "ALL"
-	ALL_INCLUDE_DELETED_OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst = "ALL_INCLUDE_DELETED"
-	DELETED_OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst             OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst = "DELETED"
-	FINISH_OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst              OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst = "FINISH"
-	TERMINAL_OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst            OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst = "TERMINAL"
-	UNADJUSTED_OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst          OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst = "UNADJUSTED"
+	ADJUSTING_OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst  OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst = "ADJUSTING"
+	DELETED_OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst    OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst = "DELETED"
+	FINISH_OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst     OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst = "FINISH"
+	TERMINAL_OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst   OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst = "TERMINAL"
+	UNADJUSTED_OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst OcProjectToolsMaterialRaiseGetV30DataListMaterialAdjustStatusFirst = "UNADJUSTED"
 )
 
 // Ptr returns reference to oc_project_tools_material_raise_get_v3.0_data_list_material_adjust_status_first value

@@ -12,6 +12,10 @@ package models
 
 // QianchuanUniPromotionAdDetailV10ResponseDataDeliverySetting
 type QianchuanUniPromotionAdDetailV10ResponseDataDeliverySetting struct {
+	// 达人带货佣金优化开关，ON/OFF
+	AllianceCommisionSwitch *string `json:"alliance_commision_switch,omitempty"`
+	//
+	AutoAwemeMaterial *bool `json:"auto_aweme_material,omitempty"`
 	//
 	Budget     *float64                                                       `json:"budget,omitempty"`
 	BudgetMode *QianchuanUniPromotionAdDetailV10DataDeliverySettingBudgetMode `json:"budget_mode,omitempty"`
@@ -19,15 +23,27 @@ type QianchuanUniPromotionAdDetailV10ResponseDataDeliverySetting struct {
 	DailyDeliveryTime  *float64                                                               `json:"daily_delivery_time,omitempty"`
 	DeepBidType        *QianchuanUniPromotionAdDetailV10DataDeliverySettingDeepBidType        `json:"deep_bid_type,omitempty"`
 	DeepExternalAction *QianchuanUniPromotionAdDetailV10DataDeliverySettingDeepExternalAction `json:"deep_external_action,omitempty"`
+	// 是否开启 AIGC 动态创意
+	EnableAigcCreative *bool `json:"enable_aigc_creative,omitempty"`
 	//
-	EndTime          *string                                                              `json:"end_time,omitempty"`
-	ExternalAction   *QianchuanUniPromotionAdDetailV10DataDeliverySettingExternalAction   `json:"external_action,omitempty"`
+	EndTime        *string                                                            `json:"end_time,omitempty"`
+	ExternalAction *QianchuanUniPromotionAdDetailV10DataDeliverySettingExternalAction `json:"external_action,omitempty"`
+	// 是否多号乘方计划
+	IsMultiAwemeUid  *bool                                                                `json:"is_multi_aweme_uid,omitempty"`
 	LiveScheduleType *QianchuanUniPromotionAdDetailV10DataDeliverySettingLiveScheduleType `json:"live_schedule_type,omitempty"`
-	PricingType      *QianchuanUniPromotionAdDetailV10DataDeliverySettingPricingType      `json:"pricing_type,omitempty"`
-	QcpxMode         *QianchuanUniPromotionAdDetailV10DataDeliverySettingQcpxMode         `json:"qcpx_mode,omitempty"`
+	// 是否无号投商城
+	NoAwemeId *bool `json:"no_aweme_id,omitempty"`
+	// 全域 ROI 成本项；包含 3 表示星选素材，包含 4 表示达人带货佣金优化
+	OverallRoiCostItems []int64                                                         `json:"overall_roi_cost_items,omitempty"`
+	PricingType         *QianchuanUniPromotionAdDetailV10DataDeliverySettingPricingType `json:"pricing_type,omitempty"`
+	QcpxMode            *QianchuanUniPromotionAdDetailV10DataDeliverySettingQcpxMode    `json:"qcpx_mode,omitempty"`
 	//
-	Roi2Goal     *float64                                                         `json:"roi2_goal,omitempty"`
-	SmartBidType *QianchuanUniPromotionAdDetailV10DataDeliverySettingSmartBidType `json:"smart_bid_type,omitempty"`
+	Roi2Goal *float64 `json:"roi2_goal,omitempty"`
+	// 直播下：所选星选商品ID列表；以 Creation 返回为准
+	SelectedStarPids []int64                                                          `json:"selected_star_pids,omitempty"`
+	SmartBidType     *QianchuanUniPromotionAdDetailV10DataDeliverySettingSmartBidType `json:"smart_bid_type,omitempty"`
+	// 千川星选素材投放开关，ON/OFF
+	StarTaskMaterialSwitch *string `json:"star_task_material_switch,omitempty"`
 	//
 	StartTime         *string                                                               `json:"start_time,omitempty"`
 	VideoScheduleType *QianchuanUniPromotionAdDetailV10DataDeliverySettingVideoScheduleType `json:"video_schedule_type,omitempty"`

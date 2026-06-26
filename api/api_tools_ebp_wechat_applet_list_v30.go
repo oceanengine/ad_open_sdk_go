@@ -31,6 +31,7 @@ type ApiOpenApiV30ToolsEbpWechatAppletListGetRequest struct {
 	filtering            *ToolsEbpWechatAppletListV30Filtering
 	page                 *int64
 	pageSize             *int64
+	assetGeneration      *ToolsEbpWechatAppletListV30AssetGeneration
 }
 
 func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest {
@@ -64,6 +65,11 @@ func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) Page(page int64) *ApiO
 // 每页数量
 func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) PageSize(pageSize int64) *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest) AssetGeneration(assetGeneration ToolsEbpWechatAppletListV30AssetGeneration) *ApiOpenApiV30ToolsEbpWechatAppletListGetRequest {
+	r.assetGeneration = &assetGeneration
 	return r
 }
 
@@ -139,6 +145,9 @@ func (a *ToolsEbpWechatAppletListV30ApiService) getExecute(r *ApiOpenApiV30Tools
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.assetGeneration != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "asset_generation", r.assetGeneration)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

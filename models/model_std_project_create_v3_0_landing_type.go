@@ -15,7 +15,10 @@ type StdProjectCreateV30LandingType string
 
 // List of std_project_create_v3.0_landing_type
 const (
-	APP_StdProjectCreateV30LandingType StdProjectCreateV30LandingType = "APP"
+	APP_StdProjectCreateV30LandingType        StdProjectCreateV30LandingType = "APP"
+	LINK_StdProjectCreateV30LandingType       StdProjectCreateV30LandingType = "LINK"
+	MICRO_GAME_StdProjectCreateV30LandingType StdProjectCreateV30LandingType = "MICRO_GAME"
+	SHOP_StdProjectCreateV30LandingType       StdProjectCreateV30LandingType = "SHOP"
 )
 
 // Ptr returns reference to std_project_create_v3.0_landing_type value

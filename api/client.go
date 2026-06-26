@@ -531,6 +531,10 @@ type APIClient struct {
 
 	DpaAssetsDetailReadV2Api *DpaAssetsDetailReadV2ApiService
 
+	DpaBrandAdvAuthFuzzyGetV30Api *DpaBrandAdvAuthFuzzyGetV30ApiService
+
+	DpaBrandAdvAuthIndustryGetV30Api *DpaBrandAdvAuthIndustryGetV30ApiService
+
 	DpaBrandFuzzyGetV30Api *DpaBrandFuzzyGetV30ApiService
 
 	DpaCategoryGetV2Api *DpaCategoryGetV2ApiService
@@ -746,6 +750,18 @@ type APIClient struct {
 	GameAddictionIdGetV30Api *GameAddictionIdGetV30ApiService
 
 	GameplayListV30Api *GameplayListV30ApiService
+
+	InvoiceApplyOrderCreateV30Api *InvoiceApplyOrderCreateV30ApiService
+
+	InvoiceApplyOrderListV30Api *InvoiceApplyOrderListV30ApiService
+
+	InvoiceApplyResultGetV30Api *InvoiceApplyResultGetV30ApiService
+
+	InvoiceDownloadUrlListV30Api *InvoiceDownloadUrlListV30ApiService
+
+	InvoiceTicketListV30Api *InvoiceTicketListV30ApiService
+
+	IosAppListV30Api *IosAppListV30ApiService
 
 	KeywordCreateV2V2Api *KeywordCreateV2V2ApiService
 
@@ -1051,6 +1067,8 @@ type APIClient struct {
 
 	QianchuanAdMaterialSuggestionV10Api *QianchuanAdMaterialSuggestionV10ApiService
 
+	QianchuanAdOverallMarketingUpdateV10Api *QianchuanAdOverallMarketingUpdateV10ApiService
+
 	QianchuanAdQuotaGetV10Api *QianchuanAdQuotaGetV10ApiService
 
 	QianchuanAdRecommendKeywordsGetV10Api *QianchuanAdRecommendKeywordsGetV10ApiService
@@ -1186,6 +1204,8 @@ type APIClient struct {
 	QianchuanMaterialGetV10Api *QianchuanMaterialGetV10ApiService
 
 	QianchuanOrientationPackageGetV10Api *QianchuanOrientationPackageGetV10ApiService
+
+	QianchuanOverallAwemeAwemeDeleteV10Api *QianchuanOverallAwemeAwemeDeleteV10ApiService
 
 	QianchuanProductAvailableGetV10Api *QianchuanProductAvailableGetV10ApiService
 
@@ -2640,6 +2660,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.DpaAssetV2DetailReadV2Api = (*DpaAssetV2DetailReadV2ApiService)(&c.common)
 	c.DpaAssetV2ListV2Api = (*DpaAssetV2ListV2ApiService)(&c.common)
 	c.DpaAssetsDetailReadV2Api = (*DpaAssetsDetailReadV2ApiService)(&c.common)
+	c.DpaBrandAdvAuthFuzzyGetV30Api = (*DpaBrandAdvAuthFuzzyGetV30ApiService)(&c.common)
+	c.DpaBrandAdvAuthIndustryGetV30Api = (*DpaBrandAdvAuthIndustryGetV30ApiService)(&c.common)
 	c.DpaBrandFuzzyGetV30Api = (*DpaBrandFuzzyGetV30ApiService)(&c.common)
 	c.DpaCategoryGetV2Api = (*DpaCategoryGetV2ApiService)(&c.common)
 	c.DpaCheckIndexEntryProgressV2Api = (*DpaCheckIndexEntryProgressV2ApiService)(&c.common)
@@ -2748,6 +2770,12 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.FundSharedWalletBalanceGetV2Api = (*FundSharedWalletBalanceGetV2ApiService)(&c.common)
 	c.GameAddictionIdGetV30Api = (*GameAddictionIdGetV30ApiService)(&c.common)
 	c.GameplayListV30Api = (*GameplayListV30ApiService)(&c.common)
+	c.InvoiceApplyOrderCreateV30Api = (*InvoiceApplyOrderCreateV30ApiService)(&c.common)
+	c.InvoiceApplyOrderListV30Api = (*InvoiceApplyOrderListV30ApiService)(&c.common)
+	c.InvoiceApplyResultGetV30Api = (*InvoiceApplyResultGetV30ApiService)(&c.common)
+	c.InvoiceDownloadUrlListV30Api = (*InvoiceDownloadUrlListV30ApiService)(&c.common)
+	c.InvoiceTicketListV30Api = (*InvoiceTicketListV30ApiService)(&c.common)
+	c.IosAppListV30Api = (*IosAppListV30ApiService)(&c.common)
 	c.KeywordCreateV2V2Api = (*KeywordCreateV2V2ApiService)(&c.common)
 	c.KeywordCreateV30Api = (*KeywordCreateV30ApiService)(&c.common)
 	c.KeywordDeleteV2V2Api = (*KeywordDeleteV2V2ApiService)(&c.common)
@@ -2900,6 +2928,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanAdMaterialDeleteV10Api = (*QianchuanAdMaterialDeleteV10ApiService)(&c.common)
 	c.QianchuanAdMaterialGetV10Api = (*QianchuanAdMaterialGetV10ApiService)(&c.common)
 	c.QianchuanAdMaterialSuggestionV10Api = (*QianchuanAdMaterialSuggestionV10ApiService)(&c.common)
+	c.QianchuanAdOverallMarketingUpdateV10Api = (*QianchuanAdOverallMarketingUpdateV10ApiService)(&c.common)
 	c.QianchuanAdQuotaGetV10Api = (*QianchuanAdQuotaGetV10ApiService)(&c.common)
 	c.QianchuanAdRecommendKeywordsGetV10Api = (*QianchuanAdRecommendKeywordsGetV10ApiService)(&c.common)
 	c.QianchuanAdRegionUpdateV10Api = (*QianchuanAdRegionUpdateV10ApiService)(&c.common)
@@ -2968,6 +2997,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanMaterialAdGetV10Api = (*QianchuanMaterialAdGetV10ApiService)(&c.common)
 	c.QianchuanMaterialGetV10Api = (*QianchuanMaterialGetV10ApiService)(&c.common)
 	c.QianchuanOrientationPackageGetV10Api = (*QianchuanOrientationPackageGetV10ApiService)(&c.common)
+	c.QianchuanOverallAwemeAwemeDeleteV10Api = (*QianchuanOverallAwemeAwemeDeleteV10ApiService)(&c.common)
 	c.QianchuanProductAvailableGetV10Api = (*QianchuanProductAvailableGetV10ApiService)(&c.common)
 	c.QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api = (*QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiService)(&c.common)
 	c.QianchuanQianchuanVideoStarGetV10Api = (*QianchuanQianchuanVideoStarGetV10ApiService)(&c.common)

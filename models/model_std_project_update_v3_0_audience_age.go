@@ -15,7 +15,6 @@ type StdProjectUpdateV30AudienceAge string
 
 // List of std_project_update_v3.0_audience_age
 const (
-	AGE_ABOVE_0_17_StdProjectUpdateV30AudienceAge    StdProjectUpdateV30AudienceAge = "AGE_ABOVE_0_17"
 	AGE_ABOVE_50_StdProjectUpdateV30AudienceAge      StdProjectUpdateV30AudienceAge = "AGE_ABOVE_50"
 	AGE_ABOVE_60_StdProjectUpdateV30AudienceAge      StdProjectUpdateV30AudienceAge = "AGE_ABOVE_60"
 	AGE_BETWEEN_18_19_StdProjectUpdateV30AudienceAge StdProjectUpdateV30AudienceAge = "AGE_BETWEEN_18_19"

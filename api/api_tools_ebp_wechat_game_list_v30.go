@@ -31,6 +31,7 @@ type ApiOpenApiV30ToolsEbpWechatGameListGetRequest struct {
 	filtering            *ToolsEbpWechatGameListV30Filtering
 	page                 *int64
 	pageSize             *int64
+	assetGeneration      *ToolsEbpWechatGameListV30AssetGeneration
 }
 
 func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpWechatGameListGetRequest {
@@ -63,6 +64,11 @@ func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) Page(page int64) *ApiOpe
 // 每页数量
 func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) PageSize(pageSize int64) *ApiOpenApiV30ToolsEbpWechatGameListGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpWechatGameListGetRequest) AssetGeneration(assetGeneration ToolsEbpWechatGameListV30AssetGeneration) *ApiOpenApiV30ToolsEbpWechatGameListGetRequest {
+	r.assetGeneration = &assetGeneration
 	return r
 }
 
@@ -137,6 +143,9 @@ func (a *ToolsEbpWechatGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEb
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.assetGeneration != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "asset_generation", r.assetGeneration)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

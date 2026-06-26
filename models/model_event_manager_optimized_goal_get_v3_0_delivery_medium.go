@@ -15,7 +15,15 @@ type EventManagerOptimizedGoalGetV30DeliveryMedium string
 
 // List of event_manager_optimized_goal_get_v3.0_delivery_medium
 const (
-	APP_EventManagerOptimizedGoalGetV30DeliveryMedium EventManagerOptimizedGoalGetV30DeliveryMedium = "APP"
+	APP_EventManagerOptimizedGoalGetV30DeliveryMedium         EventManagerOptimizedGoalGetV30DeliveryMedium = "APP"
+	AWEME_EventManagerOptimizedGoalGetV30DeliveryMedium       EventManagerOptimizedGoalGetV30DeliveryMedium = "AWEME"
+	BYTE_APP_EventManagerOptimizedGoalGetV30DeliveryMedium    EventManagerOptimizedGoalGetV30DeliveryMedium = "BYTE_APP"
+	BYTE_GAME_EventManagerOptimizedGoalGetV30DeliveryMedium   EventManagerOptimizedGoalGetV30DeliveryMedium = "BYTE_GAME"
+	ENTERPRISE_EventManagerOptimizedGoalGetV30DeliveryMedium  EventManagerOptimizedGoalGetV30DeliveryMedium = "ENTERPRISE"
+	ORANGE_EventManagerOptimizedGoalGetV30DeliveryMedium      EventManagerOptimizedGoalGetV30DeliveryMedium = "ORANGE"
+	THIRDPARTY_EventManagerOptimizedGoalGetV30DeliveryMedium  EventManagerOptimizedGoalGetV30DeliveryMedium = "THIRDPARTY"
+	WECHAT_APP_EventManagerOptimizedGoalGetV30DeliveryMedium  EventManagerOptimizedGoalGetV30DeliveryMedium = "WECHAT_APP"
+	WECHAT_GAME_EventManagerOptimizedGoalGetV30DeliveryMedium EventManagerOptimizedGoalGetV30DeliveryMedium = "WECHAT_GAME"
 )
 
 // Ptr returns reference to event_manager_optimized_goal_get_v3.0_delivery_medium value

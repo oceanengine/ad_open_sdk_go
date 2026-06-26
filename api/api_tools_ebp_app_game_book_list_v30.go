@@ -33,6 +33,7 @@ type ApiOpenApiV30ToolsEbpAppGameBookListGetRequest struct {
 	filtering            *ToolsEbpAppGameBookListV30Filtering
 	page                 *int64
 	pageSize             *int64
+	assetGeneration      *ToolsEbpAppGameBookListV30AssetGeneration
 }
 
 // 操作用户id
@@ -78,6 +79,12 @@ func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) Page(page int64) *ApiOp
 // 页面大小
 func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) PageSize(pageSize int64) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+// 不传默认返回全部
+func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AssetGeneration(assetGeneration ToolsEbpAppGameBookListV30AssetGeneration) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
+	r.assetGeneration = &assetGeneration
 	return r
 }
 
@@ -160,6 +167,9 @@ func (a *ToolsEbpAppGameBookListV30ApiService) getExecute(r *ApiOpenApiV30ToolsE
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.assetGeneration != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "asset_generation", r.assetGeneration)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

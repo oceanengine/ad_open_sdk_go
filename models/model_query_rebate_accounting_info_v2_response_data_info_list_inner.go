@@ -18,6 +18,10 @@ type QueryRebateAccountingInfoV2ResponseDataInfoListInner struct {
 	AgentName *string `json:"agent_name,omitempty"`
 	// 返点金额 单位 元 保留2位小数
 	Amount *float64 `json:"amount,omitempty"`
+	// 计费类型
+	BillingType *int64 `json:"billing_type,omitempty"`
+	// 计费类型名称
+	BillingTypeName *string `json:"billing_type_name,omitempty"`
 	// 合同编号
 	ContractSerial *string `json:"contract_serial,omitempty"`
 	// 媒体签约主体

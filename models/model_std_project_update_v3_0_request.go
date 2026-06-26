@@ -23,7 +23,7 @@ type StdProjectUpdateV30Request struct {
 	//
 	BlueFlowKeywordName []string                             `json:"blue_flow_keyword_name,omitempty"`
 	BrandInfo           *StdProjectUpdateV30RequestBrandInfo `json:"brand_info,omitempty"`
-	//
+	// 预算
 	Budget *float64 `json:"budget,omitempty"`
 	//
 	CpaBid *float64 `json:"cpa_bid,omitempty"`
@@ -39,9 +39,11 @@ type StdProjectUpdateV30Request struct {
 	//
 	Keywords []*StdProjectUpdateV30RequestKeywordsInner `json:"keywords,omitempty"`
 	//
+	LiveDuration *float64 `json:"live_duration,omitempty"`
+	//
 	Name *string `json:"name,omitempty"`
 	//
-	ProjectId        *int64                                      `json:"project_id,omitempty"`
+	ProjectId        int64                                       `json:"project_id"`
 	ProjectMaterials *StdProjectUpdateV30RequestProjectMaterials `json:"project_materials,omitempty"`
 	//
 	RoiGoal *float64 `json:"roi_goal,omitempty"`
@@ -49,6 +51,8 @@ type StdProjectUpdateV30Request struct {
 	ScheduleTime           *string                                    `json:"schedule_time,omitempty"`
 	ScheduleType           *StdProjectUpdateV30ScheduleType           `json:"schedule_type,omitempty"`
 	SearchContinueDelivery *StdProjectUpdateV30SearchContinueDelivery `json:"search_continue_delivery,omitempty"`
+	//
+	SevenRoiGoal *float64 `json:"seven_roi_goal,omitempty"`
 	//
 	StarTaskIdList  []int64                                    `json:"star_task_id_list,omitempty"`
 	TrackUrlSetting *StdProjectUpdateV30RequestTrackUrlSetting `json:"track_url_setting,omitempty"`

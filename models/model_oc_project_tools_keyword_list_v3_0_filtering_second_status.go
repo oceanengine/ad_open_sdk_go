@@ -15,16 +15,11 @@ type OcProjectToolsKeywordListV30FilteringSecondStatus string
 
 // List of oc_project_tools_keyword_list_v3.0_filtering_second_status
 const (
-	ADJUST_DELETED_OcProjectToolsKeywordListV30FilteringSecondStatus                  OcProjectToolsKeywordListV30FilteringSecondStatus = "ADJUST_DELETED"
-	ADJUST_TERMINATED_OcProjectToolsKeywordListV30FilteringSecondStatus               OcProjectToolsKeywordListV30FilteringSecondStatus = "ADJUST_TERMINATED"
-	ALL_KEYWORDS_DELETED_OcProjectToolsKeywordListV30FilteringSecondStatus            OcProjectToolsKeywordListV30FilteringSecondStatus = "ALL_KEYWORDS_DELETED"
-	AUDIT_REJECTED_OcProjectToolsKeywordListV30FilteringSecondStatus                  OcProjectToolsKeywordListV30FilteringSecondStatus = "AUDIT_REJECTED"
-	MODIFIED_AUDITING_OcProjectToolsKeywordListV30FilteringSecondStatus               OcProjectToolsKeywordListV30FilteringSecondStatus = "MODIFIED_AUDITING"
-	NEW_CREATED_AUDITING_OcProjectToolsKeywordListV30FilteringSecondStatus            OcProjectToolsKeywordListV30FilteringSecondStatus = "NEW_CREATED_AUDITING"
-	PAUSED_OcProjectToolsKeywordListV30FilteringSecondStatus                          OcProjectToolsKeywordListV30FilteringSecondStatus = "PAUSED"
-	PROJECT_DELETED_OcProjectToolsKeywordListV30FilteringSecondStatus                 OcProjectToolsKeywordListV30FilteringSecondStatus = "PROJECT_DELETED"
-	PROJECT_TERMINATED_OcProjectToolsKeywordListV30FilteringSecondStatus              OcProjectToolsKeywordListV30FilteringSecondStatus = "PROJECT_TERMINATED"
-	TASK_BID_EXCEEDS_PROJECT_BUDGET_OcProjectToolsKeywordListV30FilteringSecondStatus OcProjectToolsKeywordListV30FilteringSecondStatus = "TASK_BID_EXCEEDS_PROJECT_BUDGET"
+	ALL_KEYWORD_DELETED_OcProjectToolsKeywordListV30FilteringSecondStatus                 OcProjectToolsKeywordListV30FilteringSecondStatus = "ALL_KEYWORD_DELETED"
+	DISABLE_OcProjectToolsKeywordListV30FilteringSecondStatus                             OcProjectToolsKeywordListV30FilteringSecondStatus = "DISABLE"
+	KEYWORD_ADJUST_AUDITING_OcProjectToolsKeywordListV30FilteringSecondStatus             OcProjectToolsKeywordListV30FilteringSecondStatus = "KEYWORD_ADJUST_AUDITING"
+	KEYWORD_ADJUST_NEW_CREATED_AUDITING_OcProjectToolsKeywordListV30FilteringSecondStatus OcProjectToolsKeywordListV30FilteringSecondStatus = "KEYWORD_ADJUST_NEW_CREATED_AUDITING"
+	TASK_BID_EXCEEDS_PROJECT_BUDGET_OcProjectToolsKeywordListV30FilteringSecondStatus     OcProjectToolsKeywordListV30FilteringSecondStatus = "TASK_BID_EXCEEDS_PROJECT_BUDGET"
 )
 
 // Ptr returns reference to oc_project_tools_keyword_list_v3.0_filtering_second_status value

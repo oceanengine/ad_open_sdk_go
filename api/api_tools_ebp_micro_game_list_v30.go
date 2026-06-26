@@ -31,6 +31,7 @@ type ApiOpenApiV30ToolsEbpMicroGameListGetRequest struct {
 	filtering            *ToolsEbpMicroGameListV30Filtering
 	page                 *int32
 	pageSize             *int32
+	assetGeneration      *ToolsEbpMicroGameListV30AssetGeneration
 }
 
 func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
@@ -62,6 +63,11 @@ func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) Page(page int32) *ApiOpen
 
 func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) PageSize(pageSize int32) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpMicroGameListGetRequest) AssetGeneration(assetGeneration ToolsEbpMicroGameListV30AssetGeneration) *ApiOpenApiV30ToolsEbpMicroGameListGetRequest {
+	r.assetGeneration = &assetGeneration
 	return r
 }
 
@@ -137,6 +143,9 @@ func (a *ToolsEbpMicroGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbp
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.assetGeneration != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "asset_generation", r.assetGeneration)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

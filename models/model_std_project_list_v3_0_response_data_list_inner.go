@@ -45,6 +45,7 @@ type StdProjectListV30ResponseDataListInner struct {
 	DeepExternalAction *StdProjectListV30DataListDeepExternalAction `json:"deep_external_action,omitempty"`
 	DeliveryMedium     *StdProjectListV30DataListDeliveryMedium     `json:"delivery_medium,omitempty"`
 	DeliveryMode       *StdProjectListV30DataListDeliveryMode       `json:"delivery_mode,omitempty"`
+	DeliveryType       *StdProjectListV30DataListDeliveryType       `json:"delivery_type,omitempty"`
 	DownloadMode       *StdProjectListV30DataListDownloadMode       `json:"download_mode,omitempty"`
 	DownloadType       *StdProjectListV30DataListDownloadType       `json:"download_type,omitempty"`
 	// 下载链接
@@ -55,12 +56,22 @@ type StdProjectListV30ResponseDataListInner struct {
 	//
 	FirstRoiGoal *float64 `json:"first_roi_goal,omitempty"`
 	// 关键行为ID
-	GameAddictionId  *string                                    `json:"game_addiction_id,omitempty"`
+	GameAddictionId *string `json:"game_addiction_id,omitempty"`
+	//
+	InstanceId       *int64                                     `json:"instance_id,omitempty"`
 	InventoryCatalog *StdProjectListV30DataListInventoryCatalog `json:"inventory_catalog,omitempty"`
 	IsCommentDisable *StdProjectListV30DataListIsCommentDisable `json:"is_comment_disable,omitempty"`
-	LandingType      *StdProjectListV30DataListLandingType      `json:"landing_type,omitempty"`
-	LaunchType       *StdProjectListV30DataListLaunchType       `json:"launch_type,omitempty"`
-	MarketingGoal    *StdProjectListV30DataListMarketingGoal    `json:"marketing_goal,omitempty"`
+	//
+	LandingPageStayTime *int64                                `json:"landing_page_stay_time,omitempty"`
+	LandingType         *StdProjectListV30DataListLandingType `json:"landing_type,omitempty"`
+	LaunchType          *StdProjectListV30DataListLaunchType  `json:"launch_type,omitempty"`
+	//
+	LayerRoiGoal   []*StdProjectListV30ResponseDataListInnerLayerRoiGoalInner `json:"layer_roi_goal,omitempty"`
+	LayerRoiSwitch *StdProjectListV30DataListLayerRoiSwitch                   `json:"layer_roi_switch,omitempty"`
+	//
+	LiveDuration        *float64                                      `json:"live_duration,omitempty"`
+	MarketingGoal       *StdProjectListV30DataListMarketingGoal       `json:"marketing_goal,omitempty"`
+	MultiDeliveryMedium *StdProjectListV30DataListMultiDeliveryMedium `json:"multi_delivery_medium,omitempty"`
 	// 项目名称
 	Name *string `json:"name,omitempty"`
 	// 投放身份
@@ -85,6 +96,9 @@ type StdProjectListV30ResponseDataListInner struct {
 	ScheduleTime           *string                                          `json:"schedule_time,omitempty"`
 	ScheduleType           *StdProjectListV30DataListScheduleType           `json:"schedule_type,omitempty"`
 	SearchContinueDelivery *StdProjectListV30DataListSearchContinueDelivery `json:"search_continue_delivery,omitempty"`
+	//
+	SevenRoiGoal           *float64                                         `json:"seven_roi_goal,omitempty"`
+	ShopPlatform           *StdProjectListV30DataListShopPlatform           `json:"shop_platform,omitempty"`
 	StarAutoDeliverySwitch *StdProjectListV30DataListStarAutoDeliverySwitch `json:"star_auto_delivery_switch,omitempty"`
 	//
 	StarTaskIdList []int64 `json:"star_task_id_list,omitempty"`

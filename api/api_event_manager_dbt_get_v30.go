@@ -23,17 +23,20 @@ import (
 type EventManagerDbtGetV30ApiService service
 
 type ApiOpenApiV30EventManagerDbtGetGetRequest struct {
-	ctx                context.Context
-	ApiService         *EventManagerDbtGetV30ApiService
-	advertiserId       *int64
-	externalAction     *EventManagerDbtGetV30ExternalAction
-	landingType        *EventManagerDbtGetV30LandingType
-	adType             *EventManagerDbtGetV30AdType
-	marketingGoal      *EventManagerDbtGetV30MarketingGoal
-	assetId            *int64
-	deepExternalAction *EventManagerDbtGetV30DeepExternalAction
-	valueOptimizedType *EventManagerDbtGetV30ValueOptimizedType
-	deliveryMode       *EventManagerDbtGetV30DeliveryMode
+	ctx                 context.Context
+	ApiService          *EventManagerDbtGetV30ApiService
+	advertiserId        *int64
+	externalAction      *EventManagerDbtGetV30ExternalAction
+	landingType         *EventManagerDbtGetV30LandingType
+	adType              *EventManagerDbtGetV30AdType
+	marketingGoal       *EventManagerDbtGetV30MarketingGoal
+	assetId             *int64
+	deepExternalAction  *EventManagerDbtGetV30DeepExternalAction
+	valueOptimizedType  *EventManagerDbtGetV30ValueOptimizedType
+	deliveryMode        *EventManagerDbtGetV30DeliveryMode
+	productSetting      *EventManagerDbtGetV30ProductSetting
+	multiDeliveryMedium *EventManagerDbtGetV30MultiDeliveryMedium
+	deliveryMedium      *EventManagerDbtGetV30DeliveryMedium
 }
 
 // 广告主id
@@ -82,6 +85,21 @@ func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) ValueOptimizedType(valueOpti
 
 func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) DeliveryMode(deliveryMode EventManagerDbtGetV30DeliveryMode) *ApiOpenApiV30EventManagerDbtGetGetRequest {
 	r.deliveryMode = &deliveryMode
+	return r
+}
+
+func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) ProductSetting(productSetting EventManagerDbtGetV30ProductSetting) *ApiOpenApiV30EventManagerDbtGetGetRequest {
+	r.productSetting = &productSetting
+	return r
+}
+
+func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) MultiDeliveryMedium(multiDeliveryMedium EventManagerDbtGetV30MultiDeliveryMedium) *ApiOpenApiV30EventManagerDbtGetGetRequest {
+	r.multiDeliveryMedium = &multiDeliveryMedium
+	return r
+}
+
+func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) DeliveryMedium(deliveryMedium EventManagerDbtGetV30DeliveryMedium) *ApiOpenApiV30EventManagerDbtGetGetRequest {
+	r.deliveryMedium = &deliveryMedium
 	return r
 }
 
@@ -169,6 +187,15 @@ func (a *EventManagerDbtGetV30ApiService) getExecute(r *ApiOpenApiV30EventManage
 	}
 	if r.deliveryMode != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "delivery_mode", r.deliveryMode)
+	}
+	if r.productSetting != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "product_setting", r.productSetting)
+	}
+	if r.multiDeliveryMedium != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "multi_delivery_medium", r.multiDeliveryMedium)
+	}
+	if r.deliveryMedium != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "delivery_medium", r.deliveryMedium)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

@@ -24,7 +24,8 @@ type ToolsEbpAppListV30ResponseDataBasicAppListInner struct {
 	// 应用名称
 	AppName string `json:"app_name"`
 	// 英文应用名称
-	AppNameEn string `json:"app_name_en"`
+	AppNameEn       string                                             `json:"app_name_en"`
+	AssetGeneration *ToolsEbpAppListV30DataBasicAppListAssetGeneration `json:"asset_generation,omitempty"`
 	//
 	AuthorityLevel *int64 `json:"authority_level,omitempty"`
 	//

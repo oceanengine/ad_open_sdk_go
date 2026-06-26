@@ -16,7 +16,8 @@ type OcProjectToolsAudienceCreateV30RequestDistrictAudience struct {
 	City     []int64                                                  `json:"city,omitempty"`
 	District *OcProjectToolsAudienceCreateV30DistrictAudienceDistrict `json:"district,omitempty"`
 	// 从地图添加(地图位置)
-	Geolocation []*OcProjectToolsAudienceCreateV30RequestDistrictAudienceGeolocationInner `json:"geolocation,omitempty"`
+	Geolocation  []*OcProjectToolsAudienceCreateV30RequestDistrictAudienceGeolocationInner `json:"geolocation,omitempty"`
+	LocationType *OcProjectToolsAudienceCreateV30DistrictAudienceLocationType              `json:"location_type,omitempty"`
 	// 行政区域版本号
 	RegionVersion *string `json:"region_version,omitempty"`
 }

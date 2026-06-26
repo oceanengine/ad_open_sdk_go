@@ -12,6 +12,7 @@ package models
 
 // ToolsAwemeAuthListV2Filtering
 type ToolsAwemeAuthListV2Filtering struct {
+	AuthScenario *ToolsAwemeAuthListV2FilteringAuthScenario `json:"auth_scenario,omitempty"`
 	// 授权状态
 	AuthStatus []*ToolsAwemeAuthListV2FilteringAuthStatus `json:"auth_status,omitempty"`
 	// 授权类型

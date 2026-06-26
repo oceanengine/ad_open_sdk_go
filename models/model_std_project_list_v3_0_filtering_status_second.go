@@ -16,16 +16,17 @@ type StdProjectListV30FilteringStatusSecond string
 // List of std_project_list_v3.0_filtering_status_second
 const (
 	ADVERTISER_AVATAR_OFFLINE_StdProjectListV30FilteringStatusSecond             StdProjectListV30FilteringStatusSecond = "ADVERTISER_AVATAR_OFFLINE"
-	PROJECT_STATUS_ADV_OFFLINE_BUDGET_StdProjectListV30FilteringStatusSecond     StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_ADV_OFFLINE_BUDGET"
+	APP_NOT_AVAILABLE_FOR_DELIVERY_StdProjectListV30FilteringStatusSecond        StdProjectListV30FilteringStatusSecond = "APP_NOT_AVAILABLE_FOR_DELIVERY"
+	LACK_BASIC_MATERIAL_STATUS_StdProjectListV30FilteringStatusSecond            StdProjectListV30FilteringStatusSecond = "LACK_BASIC_MATERIAL_STATUS"
+	LIVE_ROOM_NOT_AVAILABLE_FOR_DELIVERY_StdProjectListV30FilteringStatusSecond  StdProjectListV30FilteringStatusSecond = "LIVE_ROOM_NOT_AVAILABLE_FOR_DELIVERY"
 	PROJECT_STATUS_AUDIT_StdProjectListV30FilteringStatusSecond                  StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_AUDIT"
 	PROJECT_STATUS_AWEME_ACCOUNT_DISABLED_StdProjectListV30FilteringStatusSecond StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_AWEME_ACCOUNT_DISABLED"
 	PROJECT_STATUS_BUDGET_EXCEED_StdProjectListV30FilteringStatusSecond          StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_BUDGET_EXCEED"
 	PROJECT_STATUS_NOT_START_StdProjectListV30FilteringStatusSecond              StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_NOT_START"
 	PROJECT_STATUS_NO_SCHEDULE_StdProjectListV30FilteringStatusSecond            StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_NO_SCHEDULE"
 	PROJECT_STATUS_OFFLINE_AUDIT_StdProjectListV30FilteringStatusSecond          StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_OFFLINE_AUDIT"
-	PROJECT_STATUS_OFFLINE_BUDGET_StdProjectListV30FilteringStatusSecond         StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_OFFLINE_BUDGET"
+	PROJECT_STATUS_PROCEDURAL_DISABLE_StdProjectListV30FilteringStatusSecond     StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_PROCEDURAL_DISABLE"
 	PROJECT_STATUS_PRODUCT_OFFLINE_StdProjectListV30FilteringStatusSecond        StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_PRODUCT_OFFLINE"
-	PROJECT_STATUS_REACH_DAILY_DELIVERY_StdProjectListV30FilteringStatusSecond   StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_REACH_DAILY_DELIVERY"
 	PROJECT_STATUS_REAUDIT_StdProjectListV30FilteringStatusSecond                StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_REAUDIT"
 	PROJECT_STATUS_STOP_StdProjectListV30FilteringStatusSecond                   StdProjectListV30FilteringStatusSecond = "PROJECT_STATUS_STOP"
 )

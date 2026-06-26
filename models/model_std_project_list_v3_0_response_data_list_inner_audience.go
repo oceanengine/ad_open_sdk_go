@@ -13,6 +13,14 @@ package models
 // StdProjectListV30ResponseDataListInnerAudience
 type StdProjectListV30ResponseDataListInnerAudience struct {
 	//
+	Ac []*StdProjectListV30DataListAudienceAc `json:"ac,omitempty"`
+	//
+	ActionCategories []int64 `json:"action_categories,omitempty"`
+	//
+	ActionDays *int64 `json:"action_days,omitempty"`
+	//
+	ActionWords []int64 `json:"action_words,omitempty"`
+	//
 	Age        []string                                     `json:"age,omitempty"`
 	AndroidOsv *StdProjectListV30DataListAudienceAndroidOsv `json:"android_osv,omitempty"`
 	//
@@ -21,13 +29,21 @@ type StdProjectListV30ResponseDataListInnerAudience struct {
 	City                  []int64                                                    `json:"city,omitempty"`
 	ConvertedTimeDuration *StdProjectListV30DataListAudienceConvertedTimeDuration    `json:"converted_time_duration,omitempty"`
 	District              *StdProjectListV30DataListAudienceDistrict                 `json:"district,omitempty"`
+	FilterOwnAwemeFans    *StdProjectListV30DataListAudienceFilterOwnAwemeFans       `json:"filter_own_aweme_fans,omitempty"`
 	Gender                *StdProjectListV30DataListAudienceGender                   `json:"gender,omitempty"`
 	Geolocation           *StdProjectListV30ResponseDataListInnerAudienceGeolocation `json:"geolocation,omitempty"`
 	HarmonyOsv            *StdProjectListV30DataListAudienceHarmonyOsv               `json:"harmony_osv,omitempty"`
 	HideIfConverted       *StdProjectListV30DataListAudienceHideIfConverted          `json:"hide_if_converted,omitempty"`
 	HideIfExists          *StdProjectListV30DataListAudienceHideIfExists             `json:"hide_if_exists,omitempty"`
-	IosOsv                *StdProjectListV30DataListAudienceIosOsv                   `json:"ios_osv,omitempty"`
-	LocationType          *StdProjectListV30DataListAudienceLocationType             `json:"location_type,omitempty"`
+	InterestActionMode    *StdProjectListV30DataListAudienceInterestActionMode       `json:"interest_action_mode,omitempty"`
+	//
+	InterestCategories []int64 `json:"interest_categories,omitempty"`
+	//
+	InterestWords []int64                                  `json:"interest_words,omitempty"`
+	IosOsv        *StdProjectListV30DataListAudienceIosOsv `json:"ios_osv,omitempty"`
+	//
+	LaunchPrice  []int64                                        `json:"launch_price,omitempty"`
+	LocationType *StdProjectListV30DataListAudienceLocationType `json:"location_type,omitempty"`
 	//
 	Platform []*StdProjectListV30DataListAudiencePlatform `json:"platform,omitempty"`
 	//
@@ -35,5 +51,6 @@ type StdProjectListV30ResponseDataListInnerAudience struct {
 	//
 	RetargetingTagsExclude []int64 `json:"retargeting_tags_exclude,omitempty"`
 	//
-	RetargetingTagsInclude []int64 `json:"retargeting_tags_include,omitempty"`
+	RetargetingTagsInclude []int64                                       `json:"retargeting_tags_include,omitempty"`
+	SmartExtend            *StdProjectListV30DataListAudienceSmartExtend `json:"smart_extend,omitempty"`
 }

@@ -40,6 +40,7 @@ const (
 	SEVEN_ROI_COEFFICIENT_ProjectCreateV30DeliverySettingDeepBidType        ProjectCreateV30DeliverySettingDeepBidType = "SEVEN_ROI_COEFFICIENT"
 	SMARTBID_ProjectCreateV30DeliverySettingDeepBidType                     ProjectCreateV30DeliverySettingDeepBidType = "SMARTBID"
 	SOCIAL_ROI_ProjectCreateV30DeliverySettingDeepBidType                   ProjectCreateV30DeliverySettingDeepBidType = "SOCIAL_ROI"
+	THIRTY_ROI_COEFFICIENT_ProjectCreateV30DeliverySettingDeepBidType       ProjectCreateV30DeliverySettingDeepBidType = "THIRTY_ROI_COEFFICIENT"
 )
 
 // Ptr returns reference to project_create_v3.0_delivery_setting_deep_bid_type value

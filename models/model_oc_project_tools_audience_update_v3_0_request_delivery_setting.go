@@ -28,4 +28,8 @@ type OcProjectToolsAudienceUpdateV30RequestDeliverySetting struct {
 	RoiGoal *float64 `json:"roi_goal,omitempty"`
 	// 愿意降低xx%的ROI系数目标
 	RoiGoalRate *float64 `json:"roi_goal_rate,omitempty"`
+	//
+	SevenRoiGoal *float64 `json:"seven_roi_goal,omitempty"`
+	//
+	SevenRoiGoalRate *float64 `json:"seven_roi_goal_rate,omitempty"`
 }

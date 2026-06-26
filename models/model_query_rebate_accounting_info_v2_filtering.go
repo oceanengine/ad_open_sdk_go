@@ -13,6 +13,7 @@ package models
 // QueryRebateAccountingInfoV2Filtering
 type QueryRebateAccountingInfoV2Filtering struct {
 	ApprovalStatus *QueryRebateAccountingInfoV2FilteringApprovalStatus `json:"approval_status,omitempty"`
+	BillingType    *QueryRebateAccountingInfoV2FilteringBillingType    `json:"billing_type,omitempty"`
 	// 合同编号
 	ContractSerial *string                                             `json:"contract_serial,omitempty"`
 	IsCreateRebate *QueryRebateAccountingInfoV2FilteringIsCreateRebate `json:"is_create_rebate,omitempty"`

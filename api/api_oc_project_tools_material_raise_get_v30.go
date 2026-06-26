@@ -107,11 +107,12 @@ func (a *OcProjectToolsMaterialRaiseGetV30ApiService) getExecute(r *ApiOpenApiV3
 	if r.advertiserId == nil {
 		return localVarReturnValue, nil, ReportError("advertiserId is required and must be specified")
 	}
+	if r.filtering == nil {
+		return localVarReturnValue, nil, ReportError("filtering is required and must be specified")
+	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
-	if r.filtering != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
-	}
+	parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	}

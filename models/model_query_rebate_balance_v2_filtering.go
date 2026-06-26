@@ -15,6 +15,7 @@ type QueryRebateBalanceV2Filtering struct {
 	ApprovalStatus *QueryRebateBalanceV2FilteringApprovalStatus `json:"approval_status,omitempty"`
 	// 回收状态 （1：未回收，2：已回收，3：已归档）
 	ArchiveStatusList []*QueryRebateBalanceV2FilteringArchiveStatusList `json:"archive_status_list,omitempty"`
+	BillingType       *QueryRebateBalanceV2FilteringBillingType         `json:"billing_type,omitempty"`
 	// 合同编号
 	ContractSerial *string `json:"contract_serial,omitempty"`
 	// 创建时间范围结束时间

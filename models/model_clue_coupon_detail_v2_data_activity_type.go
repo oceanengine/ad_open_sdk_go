@@ -15,8 +15,8 @@ type ClueCouponDetailV2DataActivityType string
 
 // List of clue_coupon_detail_v2_data_activity_type
 const (
-	DIRECT_NEED_PHONE_ClueCouponDetailV2DataActivityType     ClueCouponDetailV2DataActivityType = "DIRECT_NEED_PHONE"
 	DIRECT_NOT_NEED_PHONE_ClueCouponDetailV2DataActivityType ClueCouponDetailV2DataActivityType = "DIRECT_NOT_NEED_PHONE"
+	DIRECT_NEED_PHONE_ClueCouponDetailV2DataActivityType     ClueCouponDetailV2DataActivityType = "DIRECT_NEED_PHONE"
 )
 
 // Ptr returns reference to clue_coupon_detail_v2_data_activity_type value
