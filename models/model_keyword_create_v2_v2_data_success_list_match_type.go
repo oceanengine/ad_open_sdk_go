@@ -15,9 +15,9 @@ type KeywordCreateV2V2DataSuccessListMatchType string
 
 // List of keyword_create_v2_v2_data_success_list_match_type
 const (
-	PHRASE_KeywordCreateV2V2DataSuccessListMatchType    KeywordCreateV2V2DataSuccessListMatchType = "PHRASE"
-	EXTENSIVE_KeywordCreateV2V2DataSuccessListMatchType KeywordCreateV2V2DataSuccessListMatchType = "EXTENSIVE"
 	PRECISION_KeywordCreateV2V2DataSuccessListMatchType KeywordCreateV2V2DataSuccessListMatchType = "PRECISION"
+	EXTENSIVE_KeywordCreateV2V2DataSuccessListMatchType KeywordCreateV2V2DataSuccessListMatchType = "EXTENSIVE"
+	PHRASE_KeywordCreateV2V2DataSuccessListMatchType    KeywordCreateV2V2DataSuccessListMatchType = "PHRASE"
 )
 
 // Ptr returns reference to keyword_create_v2_v2_data_success_list_match_type value

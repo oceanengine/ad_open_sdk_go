@@ -15,8 +15,8 @@ type AudiencePackageCreateV2InterestActionMode string
 
 // List of audience_package_create_v2_interest_action_mode
 const (
-	CUSTOM_AudiencePackageCreateV2InterestActionMode    AudiencePackageCreateV2InterestActionMode = "CUSTOM"
 	RECOMMEND_AudiencePackageCreateV2InterestActionMode AudiencePackageCreateV2InterestActionMode = "RECOMMEND"
+	CUSTOM_AudiencePackageCreateV2InterestActionMode    AudiencePackageCreateV2InterestActionMode = "CUSTOM"
 	UNLIMITED_AudiencePackageCreateV2InterestActionMode AudiencePackageCreateV2InterestActionMode = "UNLIMITED"
 )
 

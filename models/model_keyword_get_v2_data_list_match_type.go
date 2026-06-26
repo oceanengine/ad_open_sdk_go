@@ -15,9 +15,9 @@ type KeywordGetV2DataListMatchType string
 
 // List of keyword_get_v2_data_list_match_type
 const (
-	PHRASE_KeywordGetV2DataListMatchType    KeywordGetV2DataListMatchType = "PHRASE"
-	EXTENSIVE_KeywordGetV2DataListMatchType KeywordGetV2DataListMatchType = "EXTENSIVE"
 	PRECISION_KeywordGetV2DataListMatchType KeywordGetV2DataListMatchType = "PRECISION"
+	EXTENSIVE_KeywordGetV2DataListMatchType KeywordGetV2DataListMatchType = "EXTENSIVE"
+	PHRASE_KeywordGetV2DataListMatchType    KeywordGetV2DataListMatchType = "PHRASE"
 )
 
 // Ptr returns reference to keyword_get_v2_data_list_match_type value
