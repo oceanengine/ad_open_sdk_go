@@ -15,9 +15,9 @@ type ToolsBidSuggestV2InterestActionMode string
 
 // List of tools_bid_suggest_v2_interest_action_mode
 const (
-	RECOMMEND_ToolsBidSuggestV2InterestActionMode ToolsBidSuggestV2InterestActionMode = "RECOMMEND"
-	CUSTOM_ToolsBidSuggestV2InterestActionMode    ToolsBidSuggestV2InterestActionMode = "CUSTOM"
 	UNLIMITED_ToolsBidSuggestV2InterestActionMode ToolsBidSuggestV2InterestActionMode = "UNLIMITED"
+	CUSTOM_ToolsBidSuggestV2InterestActionMode    ToolsBidSuggestV2InterestActionMode = "CUSTOM"
+	RECOMMEND_ToolsBidSuggestV2InterestActionMode ToolsBidSuggestV2InterestActionMode = "RECOMMEND"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_interest_action_mode value

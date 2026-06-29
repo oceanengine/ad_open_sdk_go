@@ -1219,6 +1219,11 @@ Class | Method | HTTP request
 *ToolsEbpMicroGameLinkListV30Api* | **OpenApiV30ToolsEbpMicroGameLinkListGet** | **Get** /open_api/v3.0/tools/ebp/micro_game/link/list/
 *ToolsEbpMicroGameListV30Api* | **OpenApiV30ToolsEbpMicroGameListGet** | **Get** /open_api/v3.0/tools/ebp/micro_game/list/
 *ToolsEbpMicroGameUpdateV30Api* | **OpenApiV30ToolsEbpMicroGameUpdatePost** | **Post** /open_api/v3.0/tools/ebp/micro_game/update/
+*ToolsEbpStarTaskGetV30Api* | **OpenApiV30ToolsEbpStarTaskGetGet** | **Get** /open_api/v3.0/tools/ebp/star_task/get/
+*ToolsEbpStarTaskListV30Api* | **OpenApiV30ToolsEbpStarTaskListGet** | **Get** /open_api/v3.0/tools/ebp/star_task/list/
+*ToolsEbpStarTaskTaskAuthorGetV30Api* | **OpenApiV30ToolsEbpStarTaskTaskAuthorGetGet** | **Get** /open_api/v3.0/tools/ebp/star_task/task_author/get/
+*ToolsEbpStarTaskTaskAuthorVedioGetV30Api* | **OpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGet** | **Get** /open_api/v3.0/tools/ebp/star_task/task_author_vedio/get/
+*ToolsEbpStarTaskTaskVideoDataGetV30Api* | **OpenApiV30ToolsEbpStarTaskTaskVideoDataGetGet** | **Get** /open_api/v3.0/tools/ebp/star_task/task_video_data/get/
 *ToolsEbpSubjectListV30Api* | **OpenApiV30ToolsEbpSubjectListGet** | **Get** /open_api/v3.0/tools/ebp/subject/list/
 *ToolsEbpVideoAttributesListV30Api* | **OpenApiV30ToolsEbpVideoAttributesListGet** | **Get** /open_api/v3.0/tools/ebp/video_attributes/list/
 *ToolsEbpVideoDeleteV30Api* | **OpenApiV30ToolsEbpVideoDeletePost** | **Post** /open_api/v3.0/tools/ebp/video/delete/

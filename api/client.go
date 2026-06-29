@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.89
+// APIClient manages communication with the Oceanengine Open Api API v1.1.90
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -2077,6 +2077,16 @@ type APIClient struct {
 
 	ToolsEbpMicroGameUpdateV30Api *ToolsEbpMicroGameUpdateV30ApiService
 
+	ToolsEbpStarTaskGetV30Api *ToolsEbpStarTaskGetV30ApiService
+
+	ToolsEbpStarTaskListV30Api *ToolsEbpStarTaskListV30ApiService
+
+	ToolsEbpStarTaskTaskAuthorGetV30Api *ToolsEbpStarTaskTaskAuthorGetV30ApiService
+
+	ToolsEbpStarTaskTaskAuthorVedioGetV30Api *ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService
+
+	ToolsEbpStarTaskTaskVideoDataGetV30Api *ToolsEbpStarTaskTaskVideoDataGetV30ApiService
+
 	ToolsEbpSubjectListV30Api *ToolsEbpSubjectListV30ApiService
 
 	ToolsEbpVideoAttributesListV30Api *ToolsEbpVideoAttributesListV30ApiService
@@ -3433,6 +3443,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsEbpMicroGameLinkListV30Api = (*ToolsEbpMicroGameLinkListV30ApiService)(&c.common)
 	c.ToolsEbpMicroGameListV30Api = (*ToolsEbpMicroGameListV30ApiService)(&c.common)
 	c.ToolsEbpMicroGameUpdateV30Api = (*ToolsEbpMicroGameUpdateV30ApiService)(&c.common)
+	c.ToolsEbpStarTaskGetV30Api = (*ToolsEbpStarTaskGetV30ApiService)(&c.common)
+	c.ToolsEbpStarTaskListV30Api = (*ToolsEbpStarTaskListV30ApiService)(&c.common)
+	c.ToolsEbpStarTaskTaskAuthorGetV30Api = (*ToolsEbpStarTaskTaskAuthorGetV30ApiService)(&c.common)
+	c.ToolsEbpStarTaskTaskAuthorVedioGetV30Api = (*ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService)(&c.common)
+	c.ToolsEbpStarTaskTaskVideoDataGetV30Api = (*ToolsEbpStarTaskTaskVideoDataGetV30ApiService)(&c.common)
 	c.ToolsEbpSubjectListV30Api = (*ToolsEbpSubjectListV30ApiService)(&c.common)
 	c.ToolsEbpVideoAttributesListV30Api = (*ToolsEbpVideoAttributesListV30ApiService)(&c.common)
 	c.ToolsEbpVideoDeleteV30Api = (*ToolsEbpVideoDeleteV30ApiService)(&c.common)

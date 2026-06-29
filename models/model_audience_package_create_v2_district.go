@@ -17,8 +17,8 @@ type AudiencePackageCreateV2District string
 const (
 	REGION_AudiencePackageCreateV2District            AudiencePackageCreateV2District = "REGION"
 	BUSINESS_DISTRICT_AudiencePackageCreateV2District AudiencePackageCreateV2District = "BUSINESS_DISTRICT"
-	NONE_AudiencePackageCreateV2District              AudiencePackageCreateV2District = "NONE"
 	OVERSEA_AudiencePackageCreateV2District           AudiencePackageCreateV2District = "OVERSEA"
+	NONE_AudiencePackageCreateV2District              AudiencePackageCreateV2District = "NONE"
 )
 
 // Ptr returns reference to audience_package_create_v2_district value

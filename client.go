@@ -1,5 +1,5 @@
 /*
-API version: 1.1.89
+API version: 1.1.90
 */
 package ad_open_sdk_go
 
@@ -4077,6 +4077,26 @@ func (c *Client) ToolsEbpMicroGameListV30Api() *api.ToolsEbpMicroGameListV30ApiS
 
 func (c *Client) ToolsEbpMicroGameUpdateV30Api() *api.ToolsEbpMicroGameUpdateV30ApiService {
 	return c.ApiClient.ToolsEbpMicroGameUpdateV30Api
+}
+
+func (c *Client) ToolsEbpStarTaskGetV30Api() *api.ToolsEbpStarTaskGetV30ApiService {
+	return c.ApiClient.ToolsEbpStarTaskGetV30Api
+}
+
+func (c *Client) ToolsEbpStarTaskListV30Api() *api.ToolsEbpStarTaskListV30ApiService {
+	return c.ApiClient.ToolsEbpStarTaskListV30Api
+}
+
+func (c *Client) ToolsEbpStarTaskTaskAuthorGetV30Api() *api.ToolsEbpStarTaskTaskAuthorGetV30ApiService {
+	return c.ApiClient.ToolsEbpStarTaskTaskAuthorGetV30Api
+}
+
+func (c *Client) ToolsEbpStarTaskTaskAuthorVedioGetV30Api() *api.ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService {
+	return c.ApiClient.ToolsEbpStarTaskTaskAuthorVedioGetV30Api
+}
+
+func (c *Client) ToolsEbpStarTaskTaskVideoDataGetV30Api() *api.ToolsEbpStarTaskTaskVideoDataGetV30ApiService {
+	return c.ApiClient.ToolsEbpStarTaskTaskVideoDataGetV30Api
 }
 
 func (c *Client) ToolsEbpSubjectListV30Api() *api.ToolsEbpSubjectListV30ApiService {

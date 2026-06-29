@@ -15,8 +15,8 @@ type AdGetV2DataAudienceSuperiorPopularityType string
 
 // List of ad_get_v2_data_audience_superior_popularity_type
 const (
-	NONE_AdGetV2DataAudienceSuperiorPopularityType AdGetV2DataAudienceSuperiorPopularityType = "NONE"
 	GAME_AdGetV2DataAudienceSuperiorPopularityType AdGetV2DataAudienceSuperiorPopularityType = "GAME"
+	NONE_AdGetV2DataAudienceSuperiorPopularityType AdGetV2DataAudienceSuperiorPopularityType = "NONE"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_superior_popularity_type value

@@ -15,8 +15,8 @@ type ClueCouponEmployeeDeleteV2ListUserType string
 
 // List of clue_coupon_employee_delete_v2_list_user_type
 const (
-	TOUTIAO_ClueCouponEmployeeDeleteV2ListUserType ClueCouponEmployeeDeleteV2ListUserType = "TOUTIAO"
 	DOUYIN_ClueCouponEmployeeDeleteV2ListUserType  ClueCouponEmployeeDeleteV2ListUserType = "DOUYIN"
+	TOUTIAO_ClueCouponEmployeeDeleteV2ListUserType ClueCouponEmployeeDeleteV2ListUserType = "TOUTIAO"
 )
 
 // Ptr returns reference to clue_coupon_employee_delete_v2_list_user_type value

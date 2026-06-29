@@ -15,8 +15,8 @@ type ToolsPlayableListGetV2PlayableSource string
 
 // List of tools_playable_list_get_v2_playable_source
 const (
-	DIRECT_PLAYABLE_ToolsPlayableListGetV2PlayableSource ToolsPlayableListGetV2PlayableSource = "DIRECT_PLAYABLE"
 	EXCLUDE_DIRECT_ToolsPlayableListGetV2PlayableSource  ToolsPlayableListGetV2PlayableSource = "EXCLUDE_DIRECT"
+	DIRECT_PLAYABLE_ToolsPlayableListGetV2PlayableSource ToolsPlayableListGetV2PlayableSource = "DIRECT_PLAYABLE"
 )
 
 // Ptr returns reference to tools_playable_list_get_v2_playable_source value

@@ -15,8 +15,8 @@ type AdGetV2DataUnionVideoType string
 
 // List of ad_get_v2_data_union_video_type
 const (
-	SPLASH_VIDEO_AdGetV2DataUnionVideoType   AdGetV2DataUnionVideoType = "SPLASH_VIDEO"
 	REWARDED_VIDEO_AdGetV2DataUnionVideoType AdGetV2DataUnionVideoType = "REWARDED_VIDEO"
+	SPLASH_VIDEO_AdGetV2DataUnionVideoType   AdGetV2DataUnionVideoType = "SPLASH_VIDEO"
 	ORIGINAL_VIDEO_AdGetV2DataUnionVideoType AdGetV2DataUnionVideoType = "ORIGINAL_VIDEO"
 )
 
