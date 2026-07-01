@@ -15,8 +15,8 @@ type DpaAssetsDetailReadV2DataListStatus string
 
 // List of dpa_assets_detail_read_v2_data_list_status
 const (
-	DISABLE_DpaAssetsDetailReadV2DataListStatus DpaAssetsDetailReadV2DataListStatus = "DISABLE"
 	ENABLE_DpaAssetsDetailReadV2DataListStatus  DpaAssetsDetailReadV2DataListStatus = "ENABLE"
+	DISABLE_DpaAssetsDetailReadV2DataListStatus DpaAssetsDetailReadV2DataListStatus = "DISABLE"
 )
 
 // Ptr returns reference to dpa_assets_detail_read_v2_data_list_status value

@@ -15,8 +15,8 @@ type AdGetV2DataDownloadType string
 
 // List of ad_get_v2_data_download_type
 const (
-	DOWNLOAD_URL_AdGetV2DataDownloadType AdGetV2DataDownloadType = "DOWNLOAD_URL"
 	EXTERNAL_URL_AdGetV2DataDownloadType AdGetV2DataDownloadType = "EXTERNAL_URL"
+	DOWNLOAD_URL_AdGetV2DataDownloadType AdGetV2DataDownloadType = "DOWNLOAD_URL"
 )
 
 // Ptr returns reference to ad_get_v2_data_download_type value

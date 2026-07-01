@@ -22,12 +22,14 @@ import (
 	. "github.com/oceanengine/ad_open_sdk_go/models"
 )
 
-type ApiOpenApi2FileRebateMaterialDownloadGetDownloadTaskListGetRequestExample struct {
-	AgentId int64  `json:"agent_id"`
-	QueryId string `json:"query_id,omitempty"`
+type ApiOpenApiV30LocalAwemeAuthListGetRequestExample struct {
+	LocalAccountId int64                          `json:"local_account_id"`
+	Page           int64                          `json:"page,omitempty"`
+	PageSize       int64                          `json:"page_size,omitempty"`
+	Filtering      LocalAwemeAuthListV30Filtering `json:"filtering,omitempty"`
 }
 
-// url: https://api.oceanengine.com/open_api/2/file/rebate/material_download/get_download_task_list/ Get
+// url: https://api.oceanengine.com/open_api/v3.0/local/aweme_auth/list/ Get
 func main() {
 	const demoreq = ``
 	const accessToken = "ACCESS_TOKEN"
@@ -37,16 +39,16 @@ func main() {
 	apiClient := ad_open_sdk_go.Init(configuration)
 	apiClient.SetLogEnable(true)
 
-	var request ApiOpenApi2FileRebateMaterialDownloadGetDownloadTaskListGetRequestExample
+	var request ApiOpenApiV30LocalAwemeAuthListGetRequestExample
 	err := json.Unmarshal([]byte(demoreq), &request)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	resp, httpRes, err := apiClient.FileRebateMaterialDownloadGetDownloadTaskListV2Api().
+	resp, httpRes, err := apiClient.LocalAwemeAuthListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AgentId(request.AgentId).QueryId(request.QueryId).
+		LocalAccountId(request.LocalAccountId).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

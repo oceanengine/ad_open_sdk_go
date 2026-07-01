@@ -17,10 +17,10 @@ type ToolsBidSuggestV2District string
 const (
 	CITY_ToolsBidSuggestV2District              ToolsBidSuggestV2District = "CITY"
 	BUSINESS_DISTRICT_ToolsBidSuggestV2District ToolsBidSuggestV2District = "BUSINESS_DISTRICT"
+	REGION_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "REGION"
+	COUNTY_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "COUNTY"
 	OVERSEA_ToolsBidSuggestV2District           ToolsBidSuggestV2District = "OVERSEA"
 	NONE_ToolsBidSuggestV2District              ToolsBidSuggestV2District = "NONE"
-	COUNTY_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "COUNTY"
-	REGION_ToolsBidSuggestV2District            ToolsBidSuggestV2District = "REGION"
 )
 
 // Ptr returns reference to tools_bid_suggest_v2_district value

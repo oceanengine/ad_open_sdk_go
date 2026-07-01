@@ -22,12 +22,11 @@ import (
 	. "github.com/oceanengine/ad_open_sdk_go/models"
 )
 
-type ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequestExample struct {
-	AgentId int64  `json:"agent_id"`
-	TaskId  string `json:"task_id"`
+type ApiOpenApiV30LocalAwemeAuthRenewCreatePostRequestExample struct {
+	LocalAwemeAuthRenewCreateV30Request LocalAwemeAuthRenewCreateV30Request `json:"LocalAwemeAuthRenewCreateV30Request,omitempty"`
 }
 
-// url: https://api.oceanengine.com/open_api/2/file/rebate/material_download/download_file/ Get
+// url: https://api.oceanengine.com/open_api/v3.0/local/aweme_auth_renew/create/ Post
 func main() {
 	const demoreq = ``
 	const accessToken = "ACCESS_TOKEN"
@@ -37,18 +36,18 @@ func main() {
 	apiClient := ad_open_sdk_go.Init(configuration)
 	apiClient.SetLogEnable(true)
 
-	var request ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequestExample
+	var request ApiOpenApiV30LocalAwemeAuthRenewCreatePostRequestExample
 	err := json.Unmarshal([]byte(demoreq), &request)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	resp, httpRes, err := apiClient.FileRebateMaterialDownloadDownloadFileV2Api().
-		Get(ctx).
+	resp, httpRes, err := apiClient.LocalAwemeAuthRenewCreateV30Api().
+		Post(ctx).
 		AccessToken(accessToken).
-		AgentId(request.AgentId).TaskId(request.TaskId).
+		LocalAwemeAuthRenewCreateV30Request(request.LocalAwemeAuthRenewCreateV30Request).
 		Execute()
-	fmt.Println(string(resp))
+	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)
 	fmt.Println(string(resBytes))
 	fmt.Println(err)

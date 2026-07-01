@@ -15,8 +15,8 @@ type AudiencePackageCreateV2MarketingGoal string
 
 // List of audience_package_create_v2_marketing_goal
 const (
-	VIDEO_AND_IMAGE_AudiencePackageCreateV2MarketingGoal AudiencePackageCreateV2MarketingGoal = "VIDEO_AND_IMAGE"
 	LIVE_AudiencePackageCreateV2MarketingGoal            AudiencePackageCreateV2MarketingGoal = "LIVE"
+	VIDEO_AND_IMAGE_AudiencePackageCreateV2MarketingGoal AudiencePackageCreateV2MarketingGoal = "VIDEO_AND_IMAGE"
 )
 
 // Ptr returns reference to audience_package_create_v2_marketing_goal value

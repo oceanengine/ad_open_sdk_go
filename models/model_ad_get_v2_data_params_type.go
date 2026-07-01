@@ -15,8 +15,8 @@ type AdGetV2DataParamsType string
 
 // List of ad_get_v2_data_params_type
 const (
-	CUSTOM_AdGetV2DataParamsType AdGetV2DataParamsType = "CUSTOM"
 	DPA_AdGetV2DataParamsType    AdGetV2DataParamsType = "DPA"
+	CUSTOM_AdGetV2DataParamsType AdGetV2DataParamsType = "CUSTOM"
 )
 
 // Ptr returns reference to ad_get_v2_data_params_type value

@@ -10,8 +10,8 @@ Oceanengine Open Api
 
 package models
 
-// FileRebateMaterialDownloadDownloadFileV2Response struct for FileRebateMaterialDownloadDownloadFileV2Response
-type FileRebateMaterialDownloadDownloadFileV2Response struct {
+// LocalAwemeAuthCreateV30Response struct for LocalAwemeAuthCreateV30Response
+type LocalAwemeAuthCreateV30Response struct {
 	//
 	Code *int64 `json:"code,omitempty"`
 	//

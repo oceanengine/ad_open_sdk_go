@@ -26,7 +26,6 @@ const (
 	FORM_BID_StdProjectListV30DataListDeepBidType                     StdProjectListV30DataListDeepBidType = "FORM_BID"
 	IAAP_ROI_24_H_AND_7_D_StdProjectListV30DataListDeepBidType        StdProjectListV30DataListDeepBidType = "IAAP_ROI_24H_AND_7D"
 	IAAP_SEVEN_ROI_COEFFICIENT_StdProjectListV30DataListDeepBidType   StdProjectListV30DataListDeepBidType = "IAAP_SEVEN_ROI_COEFFICIENT"
-	LAYER_ROI_StdProjectListV30DataListDeepBidType                    StdProjectListV30DataListDeepBidType = "LAYER_ROI"
 	LOAN_ROI_StdProjectListV30DataListDeepBidType                     StdProjectListV30DataListDeepBidType = "LOAN_ROI"
 	MIN_SECOND_STAGE_StdProjectListV30DataListDeepBidType             StdProjectListV30DataListDeepBidType = "MIN_SECOND_STAGE"
 	NET_ORDER_StdProjectListV30DataListDeepBidType                    StdProjectListV30DataListDeepBidType = "NET_ORDER"
@@ -37,10 +36,12 @@ const (
 	ROI_COEFFICIENT_StdProjectListV30DataListDeepBidType              StdProjectListV30DataListDeepBidType = "ROI_COEFFICIENT"
 	ROI_DIRECT_MAIL_StdProjectListV30DataListDeepBidType              StdProjectListV30DataListDeepBidType = "ROI_DIRECT_MAIL"
 	ROI_PACING_StdProjectListV30DataListDeepBidType                   StdProjectListV30DataListDeepBidType = "ROI_PACING"
+	ROI_THREE_StdProjectListV30DataListDeepBidType                    StdProjectListV30DataListDeepBidType = "ROI_THREE"
 	RTA_DOUBLE_BID_StdProjectListV30DataListDeepBidType               StdProjectListV30DataListDeepBidType = "RTA_DOUBLE_BID"
 	SEVEN_ROI_COEFFICIENT_StdProjectListV30DataListDeepBidType        StdProjectListV30DataListDeepBidType = "SEVEN_ROI_COEFFICIENT"
 	SMARTBID_StdProjectListV30DataListDeepBidType                     StdProjectListV30DataListDeepBidType = "SMARTBID"
 	SOCIAL_ROI_StdProjectListV30DataListDeepBidType                   StdProjectListV30DataListDeepBidType = "SOCIAL_ROI"
+	THIRTY_ROI_COEFFICIENT_StdProjectListV30DataListDeepBidType       StdProjectListV30DataListDeepBidType = "THIRTY_ROI_COEFFICIENT"
 )
 
 // Ptr returns reference to std_project_list_v3.0_data_list_deep_bid_type value

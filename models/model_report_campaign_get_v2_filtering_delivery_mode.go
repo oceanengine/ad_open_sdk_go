@@ -15,8 +15,8 @@ type ReportCampaignGetV2FilteringDeliveryMode string
 
 // List of report_campaign_get_v2_filtering_delivery_mode
 const (
-	ADLAB_FREE_ReportCampaignGetV2FilteringDeliveryMode ReportCampaignGetV2FilteringDeliveryMode = "ADLAB_FREE"
 	STANDARD_ReportCampaignGetV2FilteringDeliveryMode   ReportCampaignGetV2FilteringDeliveryMode = "STANDARD"
+	ADLAB_FREE_ReportCampaignGetV2FilteringDeliveryMode ReportCampaignGetV2FilteringDeliveryMode = "ADLAB_FREE"
 )
 
 // Ptr returns reference to report_campaign_get_v2_filtering_delivery_mode value

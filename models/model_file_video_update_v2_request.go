@@ -12,8 +12,8 @@ package models
 
 // FileVideoUpdateV2Request struct for FileVideoUpdateV2Request
 type FileVideoUpdateV2Request struct {
-	//
-	AdvertiserId int64 `json:"advertiser_id"`
-	//
-	Videos []*FileVideoUpdateV2RequestVideosInner `json:"videos,omitempty"`
+	// 客户ID
+	AdvertiserId *int64 `json:"advertiser_id,omitempty"`
+	// 限制最多 100 个
+	Videos []*FileVideoUpdateV2RequestVideosInner `json:"videos"`
 }

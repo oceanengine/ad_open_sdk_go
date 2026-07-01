@@ -15,11 +15,13 @@ type FileRebateRebateDownloadCreateTaskV2Request struct {
 	// 代理商账户id
 	AgentId int64 `json:"agent_id"`
 	// 月/季度，可以传多个，以逗号分隔，如传入   1,2,3
-	MonthQuarter string `json:"month_quarter"`
-	// 查询类型,目前包括 month_punish_details:下载违规明细月度 quarter_punish_details:下载违规明细季度  month_rebate_details:下载核算明细月度 quarter_rebate_details:下载核算明细季度 month_performance_details:下载业绩明细月度 quarter_performance_details:下载业绩明细季度
+	MonthQuarter *string `json:"month_quarter,omitempty"`
+	// 对于激励政策，必须填写policy_id
+	PolicyId *int64 `json:"policy_id,omitempty"`
+	// 查询类型,目前包括 month_punish_details:下载违规明细月度 quarter_punish_details:下载违规明细季度  month_rebate_details:下载核算明细月度 quarter_rebate_details:下载核算明细季度 month_performance_details:下载业绩明细月度 quarter_performance_details:下载业绩明细季度, normal_calc_details:激励常规结算, special_calc_details: 激励特殊结算, material_details:激励素材考核
 	QueryType string `json:"query_type"`
 	// 等待最新数据参数，默认等待
 	WaitLatest *bool `json:"wait_latest,omitempty"`
 	// 年
-	Year int32 `json:"year"`
+	Year *int64 `json:"year,omitempty"`
 }

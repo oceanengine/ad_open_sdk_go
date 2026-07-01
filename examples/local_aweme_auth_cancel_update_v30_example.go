@@ -22,11 +22,11 @@ import (
 	. "github.com/oceanengine/ad_open_sdk_go/models"
 )
 
-type ApiOpenApi2FileRebateMaterialDownloadCreateTaskPostRequestExample struct {
-	FileRebateMaterialDownloadCreateTaskV2Request FileRebateMaterialDownloadCreateTaskV2Request `json:"FileRebateMaterialDownloadCreateTaskV2Request,omitempty"`
+type ApiOpenApiV30LocalAwemeAuthCancelUpdatePostRequestExample struct {
+	LocalAwemeAuthCancelUpdateV30Request LocalAwemeAuthCancelUpdateV30Request `json:"LocalAwemeAuthCancelUpdateV30Request,omitempty"`
 }
 
-// url: https://api.oceanengine.com/open_api/2/file/rebate/material_download/create_task/ Post
+// url: https://api.oceanengine.com/open_api/v3.0/local/aweme_auth_cancel/update/ Post
 func main() {
 	const demoreq = ``
 	const accessToken = "ACCESS_TOKEN"
@@ -36,16 +36,16 @@ func main() {
 	apiClient := ad_open_sdk_go.Init(configuration)
 	apiClient.SetLogEnable(true)
 
-	var request ApiOpenApi2FileRebateMaterialDownloadCreateTaskPostRequestExample
+	var request ApiOpenApiV30LocalAwemeAuthCancelUpdatePostRequestExample
 	err := json.Unmarshal([]byte(demoreq), &request)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	resp, httpRes, err := apiClient.FileRebateMaterialDownloadCreateTaskV2Api().
+	resp, httpRes, err := apiClient.LocalAwemeAuthCancelUpdateV30Api().
 		Post(ctx).
 		AccessToken(accessToken).
-		FileRebateMaterialDownloadCreateTaskV2Request(request.FileRebateMaterialDownloadCreateTaskV2Request).
+		LocalAwemeAuthCancelUpdateV30Request(request.LocalAwemeAuthCancelUpdateV30Request).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

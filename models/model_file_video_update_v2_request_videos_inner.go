@@ -12,8 +12,10 @@ package models
 
 // FileVideoUpdateV2RequestVideosInner struct for FileVideoUpdateV2RequestVideosInner
 type FileVideoUpdateV2RequestVideosInner struct {
-	//
+	// 视频素材名称，最多255个字
 	Filename *string `json:"filename,omitempty"`
-	//
+	// 标签
+	Labels []string `json:"labels,omitempty"`
+	// 视频id，更新必填
 	VideoId string `json:"video_id"`
 }

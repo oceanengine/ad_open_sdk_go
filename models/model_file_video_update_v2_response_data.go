@@ -12,6 +12,6 @@ package models
 
 // FileVideoUpdateV2ResponseData
 type FileVideoUpdateV2ResponseData struct {
-	//
+	// 视频列表
 	Videos []*FileVideoUpdateV2ResponseDataVideosInner `json:"videos,omitempty"`
 }

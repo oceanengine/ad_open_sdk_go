@@ -19,38 +19,36 @@ import (
 	. "github.com/oceanengine/ad_open_sdk_go/models"
 )
 
-// FileRebateMaterialDownloadDownloadFileV2ApiService FileRebateMaterialDownloadDownloadFileV2Api service
-type FileRebateMaterialDownloadDownloadFileV2ApiService service
+// FileIncentivePolicyBaseInfoGetV2ApiService FileIncentivePolicyBaseInfoGetV2Api service
+type FileIncentivePolicyBaseInfoGetV2ApiService service
 
-type ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest struct {
+type ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest struct {
 	ctx        context.Context
-	ApiService *FileRebateMaterialDownloadDownloadFileV2ApiService
+	ApiService *FileIncentivePolicyBaseInfoGetV2ApiService
 	agentId    *int64
-	taskId     *string
+	year       *int64
 }
 
-// 代理商帐户ID
-func (r *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest) AgentId(agentId int64) *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest {
+func (r *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest) AgentId(agentId int64) *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest {
 	r.agentId = &agentId
 	return r
 }
 
-// 任务ID
-func (r *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest) TaskId(taskId string) *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest {
-	r.taskId = &taskId
+func (r *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest) Year(year int64) *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest {
+	r.year = &year
 	return r
 }
 
-func (r *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest) Execute() ([]byte, *http.Response, error) {
+func (r *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest) Execute() (*FileIncentivePolicyBaseInfoGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
-func (r *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest) AccessToken(accessToken string) *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest {
+func (r *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest) AccessToken(accessToken string) *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest {
 	r.ctx = context.WithValue(r.ctx, config.ContextAccessToken, accessToken)
 	return r
 }
 
-func (r *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest) WithLog(enable bool) *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest {
+func (r *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest) WithLog(enable bool) *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest {
 	if enable {
 		r.ctx = context.WithValue(r.ctx, config.ContextEnableLog, true)
 	}
@@ -58,15 +56,15 @@ func (r *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest) WithLog(en
 }
 
 /*
-OpenApi2FileRebateMaterialDownloadDownloadFileGet Method for OpenApi2FileRebateMaterialDownloadDownloadFileGet
+OpenApi2FileIncentivePolicyBaseInfoGetGet Method for OpenApi2FileIncentivePolicyBaseInfoGetGet
 
-通过指定的task_id,获取对应的数据明细文件
+明点激励政策基础信息查询
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@return ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest
+	@return ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest
 */
-func (a *FileRebateMaterialDownloadDownloadFileV2ApiService) Get(ctx context.Context) *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest {
-	return &ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest{
+func (a *FileIncentivePolicyBaseInfoGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest {
+	return &ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest{
 		ApiService: a,
 		ctx:        ctx,
 	}
@@ -74,20 +72,20 @@ func (a *FileRebateMaterialDownloadDownloadFileV2ApiService) Get(ctx context.Con
 
 // Execute executes the request
 //
-//	@return FileRebateMaterialDownloadDownloadFileV2Response
-func (a *FileRebateMaterialDownloadDownloadFileV2ApiService) getExecute(r *ApiOpenApi2FileRebateMaterialDownloadDownloadFileGetRequest) ([]byte, *http.Response, error) {
+//	@return FileIncentivePolicyBaseInfoGetV2Response
+func (a *FileIncentivePolicyBaseInfoGetV2ApiService) getExecute(r *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest) (*FileIncentivePolicyBaseInfoGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
 		formFiles           map[string]*FormFileInfo
-		localVarReturnValue []byte
+		localVarReturnValue *FileIncentivePolicyBaseInfoGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
 
 	localBasePath := a.client.Cfg.GetBasePath()
 
-	localVarPath := localBasePath + "/open_api/2/file/rebate/material_download/download_file/"
+	localVarPath := localBasePath + "/open_api/2/file/incentive_policy_base_info/get/"
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)
@@ -96,12 +94,12 @@ func (a *FileRebateMaterialDownloadDownloadFileV2ApiService) getExecute(r *ApiOp
 	if r.agentId == nil {
 		return localVarReturnValue, nil, ReportError("agentId is required and must be specified")
 	}
-	if r.taskId == nil {
-		return localVarReturnValue, nil, ReportError("taskId is required and must be specified")
+	if r.year == nil {
+		return localVarReturnValue, nil, ReportError("year is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "agent_id", r.agentId)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "task_id", r.taskId)
+	parameterAddToHeaderOrQuery(localVarQueryParams, "year", r.year)
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 
