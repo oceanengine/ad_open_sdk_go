@@ -15,7 +15,9 @@ type ToolsEbpMaterialAuthCreateV30MaterialType string
 
 // List of tools_ebp_material_auth_create_v3.0_material_type
 const (
-	VIDEO_ToolsEbpMaterialAuthCreateV30MaterialType ToolsEbpMaterialAuthCreateV30MaterialType = "VIDEO"
+	PLAYABLE_NEW_ToolsEbpMaterialAuthCreateV30MaterialType      ToolsEbpMaterialAuthCreateV30MaterialType = "PLAYABLE_NEW"
+	STRAIGHT_PLAYABLE_ToolsEbpMaterialAuthCreateV30MaterialType ToolsEbpMaterialAuthCreateV30MaterialType = "STRAIGHT_PLAYABLE"
+	VIDEO_ToolsEbpMaterialAuthCreateV30MaterialType             ToolsEbpMaterialAuthCreateV30MaterialType = "VIDEO"
 )
 
 // Ptr returns reference to tools_ebp_material_auth_create_v3.0_material_type value

@@ -15,8 +15,8 @@ type AudiencePackageUpdateV2SuperiorPopularityType string
 
 // List of audience_package_update_v2_superior_popularity_type
 const (
-	NONE_AudiencePackageUpdateV2SuperiorPopularityType AudiencePackageUpdateV2SuperiorPopularityType = "NONE"
 	GAME_AudiencePackageUpdateV2SuperiorPopularityType AudiencePackageUpdateV2SuperiorPopularityType = "GAME"
+	NONE_AudiencePackageUpdateV2SuperiorPopularityType AudiencePackageUpdateV2SuperiorPopularityType = "NONE"
 )
 
 // Ptr returns reference to audience_package_update_v2_superior_popularity_type value

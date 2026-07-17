@@ -15,6 +15,7 @@ type UniProjectListGetV30DataListMonetizationMode string
 
 // List of uni_project_list_get_v3.0_data_list_monetization_mode
 const (
+	IAA_UniProjectListGetV30DataListMonetizationMode         UniProjectListGetV30DataListMonetizationMode = "IAA"
 	IAA_AND_IAP_UniProjectListGetV30DataListMonetizationMode UniProjectListGetV30DataListMonetizationMode = "IAA_AND_IAP"
 	IAP_UniProjectListGetV30DataListMonetizationMode         UniProjectListGetV30DataListMonetizationMode = "IAP"
 )

@@ -15,8 +15,8 @@ type CreativeCustomCreativeCreateV2AdDataParamsType string
 
 // List of creative_custom_creative_create_v2_ad_data_params_type
 const (
-	DPA_CreativeCustomCreativeCreateV2AdDataParamsType    CreativeCustomCreativeCreateV2AdDataParamsType = "DPA"
 	CUSTOM_CreativeCustomCreativeCreateV2AdDataParamsType CreativeCustomCreativeCreateV2AdDataParamsType = "CUSTOM"
+	DPA_CreativeCustomCreativeCreateV2AdDataParamsType    CreativeCustomCreativeCreateV2AdDataParamsType = "DPA"
 )
 
 // Ptr returns reference to creative_custom_creative_create_v2_ad_data_params_type value

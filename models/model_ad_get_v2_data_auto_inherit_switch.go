@@ -15,8 +15,8 @@ type AdGetV2DataAutoInheritSwitch string
 
 // List of ad_get_v2_data_auto_inherit_switch
 const (
-	ON_AdGetV2DataAutoInheritSwitch  AdGetV2DataAutoInheritSwitch = "ON"
 	OFF_AdGetV2DataAutoInheritSwitch AdGetV2DataAutoInheritSwitch = "OFF"
+	ON_AdGetV2DataAutoInheritSwitch  AdGetV2DataAutoInheritSwitch = "ON"
 )
 
 // Ptr returns reference to ad_get_v2_data_auto_inherit_switch value

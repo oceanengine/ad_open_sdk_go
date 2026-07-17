@@ -1,5 +1,5 @@
 /*
-API version: 1.1.91
+API version: 1.1.92
 */
 package ad_open_sdk_go
 
@@ -3427,6 +3427,14 @@ func (c *Client) StarProjectListV2Api() *api.StarProjectListV2ApiService {
 	return c.ApiClient.StarProjectListV2Api
 }
 
+func (c *Client) StarProviderTaskItemListV2Api() *api.StarProviderTaskItemListV2ApiService {
+	return c.ApiClient.StarProviderTaskItemListV2Api
+}
+
+func (c *Client) StarProviderTaskListV2Api() *api.StarProviderTaskListV2ApiService {
+	return c.ApiClient.StarProviderTaskListV2Api
+}
+
 func (c *Client) StarReportCustomDataTopicDailyReportV2Api() *api.StarReportCustomDataTopicDailyReportV2ApiService {
 	return c.ApiClient.StarReportCustomDataTopicDailyReportV2Api
 }
@@ -3625,6 +3633,14 @@ func (c *Client) ToolsAdvertiserDiagnosisSuggestionGetV30Api() *api.ToolsAdverti
 
 func (c *Client) ToolsAdvertiserStoreSearchV2Api() *api.ToolsAdvertiserStoreSearchV2ApiService {
 	return c.ApiClient.ToolsAdvertiserStoreSearchV2Api
+}
+
+func (c *Client) ToolsAgreementCreateV30Api() *api.ToolsAgreementCreateV30ApiService {
+	return c.ApiClient.ToolsAgreementCreateV30Api
+}
+
+func (c *Client) ToolsAgreementListV30Api() *api.ToolsAgreementListV30ApiService {
+	return c.ApiClient.ToolsAgreementListV30Api
 }
 
 func (c *Client) ToolsAipThirdSiteCreateV2Api() *api.ToolsAipThirdSiteCreateV2ApiService {
@@ -4433,6 +4449,10 @@ func (c *Client) ToolsPrivativeWordPromotionAddV30Api() *api.ToolsPrivativeWordP
 
 func (c *Client) ToolsPrivativeWordPromotionUpdateV30Api() *api.ToolsPrivativeWordPromotionUpdateV30ApiService {
 	return c.ApiClient.ToolsPrivativeWordPromotionUpdateV30Api
+}
+
+func (c *Client) ToolsProjectMaterialTypeUpdateV30Api() *api.ToolsProjectMaterialTypeUpdateV30ApiService {
+	return c.ApiClient.ToolsProjectMaterialTypeUpdateV30Api
 }
 
 func (c *Client) ToolsPromotionCardRecommendGetV2Api() *api.ToolsPromotionCardRecommendGetV2ApiService {

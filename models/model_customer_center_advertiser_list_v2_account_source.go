@@ -17,8 +17,8 @@ type CustomerCenterAdvertiserListV2AccountSource string
 const (
 	ENTERPRISE_CustomerCenterAdvertiserListV2AccountSource CustomerCenterAdvertiserListV2AccountSource = "ENTERPRISE"
 	AD_CustomerCenterAdvertiserListV2AccountSource         CustomerCenterAdvertiserListV2AccountSource = "AD"
-	LOCAL_CustomerCenterAdvertiserListV2AccountSource      CustomerCenterAdvertiserListV2AccountSource = "LOCAL"
 	QIANCHUAN_CustomerCenterAdvertiserListV2AccountSource  CustomerCenterAdvertiserListV2AccountSource = "QIANCHUAN"
+	LOCAL_CustomerCenterAdvertiserListV2AccountSource      CustomerCenterAdvertiserListV2AccountSource = "LOCAL"
 )
 
 // Ptr returns reference to customer_center_advertiser_list_v2_account_source value

@@ -1056,6 +1056,8 @@ Class | Method | HTTP request
 *StarOrderReplyAuthorCancelV2Api* | **OpenApi2StarOrderReplyAuthorCancelPost** | **Post** /open_api/2/star/order/reply_author_cancel/
 *StarOrderUpdateV2Api* | **OpenApi2StarOrderUpdatePost** | **Post** /open_api/2/star/order/update/
 *StarProjectListV2Api* | **OpenApi2StarProjectListGet** | **Get** /open_api/2/star/project/list/
+*StarProviderTaskItemListV2Api* | **OpenApi2StarProviderTaskItemListGet** | **Get** /open_api/2/star/provider/task/item/list/
+*StarProviderTaskListV2Api* | **OpenApi2StarProviderTaskListGet** | **Get** /open_api/2/star/provider/task/list/
 *StarReportCustomDataTopicDailyReportV2Api* | **OpenApi2StarReportCustomDataTopicDailyReportGet** | **Get** /open_api/2/star/report/custom_data_topic_daily_report/
 *StarReportCustomDataTopicReportV2Api* | **OpenApi2StarReportCustomDataTopicReportGet** | **Get** /open_api/2/star/report/custom_data_topic_report/
 *StarReportDataTopicConfigV2Api* | **OpenApi2StarReportDataTopicConfigGet** | **Get** /open_api/2/star/report/data_topic_config/
@@ -1106,6 +1108,8 @@ Class | Method | HTTP request
 *ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Api* | **OpenApiV30ToolsAdvertiserDiagnosisSuggestionAcceptUpdatePost** | **Post** /open_api/v3.0/tools/advertiser_diagnosis/suggestion/accept/update/
 *ToolsAdvertiserDiagnosisSuggestionGetV30Api* | **OpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGet** | **Get** /open_api/v3.0/tools/advertiser_diagnosis/suggestion/get/
 *ToolsAdvertiserStoreSearchV2Api* | **OpenApi2ToolsAdvertiserStoreSearchGet** | **Get** /open_api/2/tools/advertiser_store/search/
+*ToolsAgreementCreateV30Api* | **OpenApiV30ToolsAgreementCreatePost** | **Post** /open_api/v3.0/tools/agreement/create/
+*ToolsAgreementListV30Api* | **OpenApiV30ToolsAgreementListGet** | **Get** /open_api/v3.0/tools/agreement/list/
 *ToolsAipThirdSiteCreateV2Api* | **OpenApi2ToolsAipThirdSiteCreatePost** | **Post** /open_api/2/tools/aip_third_site/create/
 *ToolsAipThirdSiteGetV2Api* | **OpenApi2ToolsAipThirdSiteGetGet** | **Get** /open_api/2/tools/aip_third_site/get/
 *ToolsAipThirdSiteUpdateV2Api* | **OpenApi2ToolsAipThirdSiteUpdatePost** | **Post** /open_api/2/tools/aip_third_site/update/
@@ -1308,6 +1312,7 @@ Class | Method | HTTP request
 *ToolsPrivativeWordProjectUpdateV30Api* | **OpenApiV30ToolsPrivativeWordProjectUpdatePost** | **Post** /open_api/v3.0/tools/privative_word/project/update/
 *ToolsPrivativeWordPromotionAddV30Api* | **OpenApiV30ToolsPrivativeWordPromotionAddPost** | **Post** /open_api/v3.0/tools/privative_word/promotion/add/
 *ToolsPrivativeWordPromotionUpdateV30Api* | **OpenApiV30ToolsPrivativeWordPromotionUpdatePost** | **Post** /open_api/v3.0/tools/privative_word/promotion/update/
+*ToolsProjectMaterialTypeUpdateV30Api* | **OpenApiV30ToolsProjectMaterialTypeUpdatePost** | **Post** /open_api/v3.0/tools/project_material_type/update/
 *ToolsPromotionCardRecommendGetV2Api* | **OpenApi2ToolsPromotionCardRecommendGetGet** | **Get** /open_api/2/tools/promotion_card/recommend/get/
 *ToolsPromotionCardRecommendTitleGetV2Api* | **OpenApi2ToolsPromotionCardRecommendTitleGetGet** | **Get** /open_api/2/tools/promotion_card/recommend_title/get/
 *ToolsPromotionDiagnosisSuggestionAcceptV30Api* | **OpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPost** | **Post** /open_api/v3.0/tools/promotion_diagnosis/suggestion/accept/

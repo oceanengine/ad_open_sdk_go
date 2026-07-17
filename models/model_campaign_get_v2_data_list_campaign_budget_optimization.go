@@ -15,8 +15,8 @@ type CampaignGetV2DataListCampaignBudgetOptimization string
 
 // List of campaign_get_v2_data_list_campaign_budget_optimization
 const (
-	ON_CampaignGetV2DataListCampaignBudgetOptimization  CampaignGetV2DataListCampaignBudgetOptimization = "ON"
 	OFF_CampaignGetV2DataListCampaignBudgetOptimization CampaignGetV2DataListCampaignBudgetOptimization = "OFF"
+	ON_CampaignGetV2DataListCampaignBudgetOptimization  CampaignGetV2DataListCampaignBudgetOptimization = "ON"
 )
 
 // Ptr returns reference to campaign_get_v2_data_list_campaign_budget_optimization value

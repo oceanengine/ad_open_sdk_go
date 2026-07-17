@@ -16,6 +16,7 @@ type LocalImSendMsgV30SourceName string
 // List of local_im_send_msg_v3.0_source_name
 const (
 	Enum_AI即用_LocalImSendMsgV30SourceName       LocalImSendMsgV30SourceName = "AI即用"
+	Enum_云雀客服_LocalImSendMsgV30SourceName       LocalImSendMsgV30SourceName = "云雀客服"
 	Enum_优居AI智慧客服系统_LocalImSendMsgV30SourceName LocalImSendMsgV30SourceName = "优居AI智慧客服系统"
 	Enum_内部测试_LocalImSendMsgV30SourceName       LocalImSendMsgV30SourceName = "内部测试"
 	Enum_北京易聊智能客服_LocalImSendMsgV30SourceName   LocalImSendMsgV30SourceName = "北京易聊智能客服"

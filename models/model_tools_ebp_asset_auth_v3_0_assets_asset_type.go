@@ -20,6 +20,7 @@ const (
 	BYTED_APPLETS_ToolsEbpAssetAuthV30AssetsAssetType ToolsEbpAssetAuthV30AssetsAssetType = "BYTED_APPLETS"
 	BYTED_GAME_ToolsEbpAssetAuthV30AssetsAssetType    ToolsEbpAssetAuthV30AssetsAssetType = "BYTED_GAME"
 	DPA_ToolsEbpAssetAuthV30AssetsAssetType           ToolsEbpAssetAuthV30AssetsAssetType = "DPA"
+	EVENT_MANAGER_ToolsEbpAssetAuthV30AssetsAssetType ToolsEbpAssetAuthV30AssetsAssetType = "EVENT_MANAGER"
 	HARMONY_APP_ToolsEbpAssetAuthV30AssetsAssetType   ToolsEbpAssetAuthV30AssetsAssetType = "HARMONY_APP"
 	PRODUCT_ToolsEbpAssetAuthV30AssetsAssetType       ToolsEbpAssetAuthV30AssetsAssetType = "PRODUCT"
 	QUICK_APP_ToolsEbpAssetAuthV30AssetsAssetType     ToolsEbpAssetAuthV30AssetsAssetType = "QUICK_APP"

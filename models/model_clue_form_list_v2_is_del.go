@@ -15,8 +15,8 @@ type ClueFormListV2IsDel string
 
 // List of clue_form_list_v2_is_del
 const (
-	Enum_0_ClueFormListV2IsDel ClueFormListV2IsDel = "0"
 	Enum_1_ClueFormListV2IsDel ClueFormListV2IsDel = "1"
+	Enum_0_ClueFormListV2IsDel ClueFormListV2IsDel = "0"
 )
 
 // Ptr returns reference to clue_form_list_v2_is_del value

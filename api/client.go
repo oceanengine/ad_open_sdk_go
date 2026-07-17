@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.91
+// APIClient manages communication with the Oceanengine Open Api API v1.1.92
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -1751,6 +1751,10 @@ type APIClient struct {
 
 	StarProjectListV2Api *StarProjectListV2ApiService
 
+	StarProviderTaskItemListV2Api *StarProviderTaskItemListV2ApiService
+
+	StarProviderTaskListV2Api *StarProviderTaskListV2ApiService
+
 	StarReportCustomDataTopicDailyReportV2Api *StarReportCustomDataTopicDailyReportV2ApiService
 
 	StarReportCustomDataTopicReportV2Api *StarReportCustomDataTopicReportV2ApiService
@@ -1850,6 +1854,10 @@ type APIClient struct {
 	ToolsAdvertiserDiagnosisSuggestionGetV30Api *ToolsAdvertiserDiagnosisSuggestionGetV30ApiService
 
 	ToolsAdvertiserStoreSearchV2Api *ToolsAdvertiserStoreSearchV2ApiService
+
+	ToolsAgreementCreateV30Api *ToolsAgreementCreateV30ApiService
+
+	ToolsAgreementListV30Api *ToolsAgreementListV30ApiService
 
 	ToolsAipThirdSiteCreateV2Api *ToolsAipThirdSiteCreateV2ApiService
 
@@ -2254,6 +2262,8 @@ type APIClient struct {
 	ToolsPrivativeWordPromotionAddV30Api *ToolsPrivativeWordPromotionAddV30ApiService
 
 	ToolsPrivativeWordPromotionUpdateV30Api *ToolsPrivativeWordPromotionUpdateV30ApiService
+
+	ToolsProjectMaterialTypeUpdateV30Api *ToolsProjectMaterialTypeUpdateV30ApiService
 
 	ToolsPromotionCardRecommendGetV2Api *ToolsPromotionCardRecommendGetV2ApiService
 
@@ -3284,6 +3294,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StarOrderReplyAuthorCancelV2Api = (*StarOrderReplyAuthorCancelV2ApiService)(&c.common)
 	c.StarOrderUpdateV2Api = (*StarOrderUpdateV2ApiService)(&c.common)
 	c.StarProjectListV2Api = (*StarProjectListV2ApiService)(&c.common)
+	c.StarProviderTaskItemListV2Api = (*StarProviderTaskItemListV2ApiService)(&c.common)
+	c.StarProviderTaskListV2Api = (*StarProviderTaskListV2ApiService)(&c.common)
 	c.StarReportCustomDataTopicDailyReportV2Api = (*StarReportCustomDataTopicDailyReportV2ApiService)(&c.common)
 	c.StarReportCustomDataTopicReportV2Api = (*StarReportCustomDataTopicReportV2ApiService)(&c.common)
 	c.StarReportDataTopicConfigV2Api = (*StarReportDataTopicConfigV2ApiService)(&c.common)
@@ -3334,6 +3346,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Api = (*ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ApiService)(&c.common)
 	c.ToolsAdvertiserDiagnosisSuggestionGetV30Api = (*ToolsAdvertiserDiagnosisSuggestionGetV30ApiService)(&c.common)
 	c.ToolsAdvertiserStoreSearchV2Api = (*ToolsAdvertiserStoreSearchV2ApiService)(&c.common)
+	c.ToolsAgreementCreateV30Api = (*ToolsAgreementCreateV30ApiService)(&c.common)
+	c.ToolsAgreementListV30Api = (*ToolsAgreementListV30ApiService)(&c.common)
 	c.ToolsAipThirdSiteCreateV2Api = (*ToolsAipThirdSiteCreateV2ApiService)(&c.common)
 	c.ToolsAipThirdSiteGetV2Api = (*ToolsAipThirdSiteGetV2ApiService)(&c.common)
 	c.ToolsAipThirdSiteUpdateV2Api = (*ToolsAipThirdSiteUpdateV2ApiService)(&c.common)
@@ -3536,6 +3550,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ToolsPrivativeWordProjectUpdateV30Api = (*ToolsPrivativeWordProjectUpdateV30ApiService)(&c.common)
 	c.ToolsPrivativeWordPromotionAddV30Api = (*ToolsPrivativeWordPromotionAddV30ApiService)(&c.common)
 	c.ToolsPrivativeWordPromotionUpdateV30Api = (*ToolsPrivativeWordPromotionUpdateV30ApiService)(&c.common)
+	c.ToolsProjectMaterialTypeUpdateV30Api = (*ToolsProjectMaterialTypeUpdateV30ApiService)(&c.common)
 	c.ToolsPromotionCardRecommendGetV2Api = (*ToolsPromotionCardRecommendGetV2ApiService)(&c.common)
 	c.ToolsPromotionCardRecommendTitleGetV2Api = (*ToolsPromotionCardRecommendTitleGetV2ApiService)(&c.common)
 	c.ToolsPromotionDiagnosisSuggestionAcceptV30Api = (*ToolsPromotionDiagnosisSuggestionAcceptV30ApiService)(&c.common)

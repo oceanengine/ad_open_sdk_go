@@ -15,8 +15,9 @@ type ToolsRtaSetScopeV2TargetType string
 
 // List of tools_rta_set_scope_v2_target_type
 const (
-	ADV_ToolsRtaSetScopeV2TargetType     ToolsRtaSetScopeV2TargetType = "ADV"
-	PROJECT_ToolsRtaSetScopeV2TargetType ToolsRtaSetScopeV2TargetType = "PROJECT"
+	ADV_ToolsRtaSetScopeV2TargetType         ToolsRtaSetScopeV2TargetType = "ADV"
+	PROJECT_ToolsRtaSetScopeV2TargetType     ToolsRtaSetScopeV2TargetType = "PROJECT"
+	STD_PROJECT_ToolsRtaSetScopeV2TargetType ToolsRtaSetScopeV2TargetType = "STD_PROJECT"
 )
 
 // Ptr returns reference to tools_rta_set_scope_v2_target_type value

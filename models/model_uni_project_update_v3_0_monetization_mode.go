@@ -15,6 +15,7 @@ type UniProjectUpdateV30MonetizationMode string
 
 // List of uni_project_update_v3.0_monetization_mode
 const (
+	IAA_UniProjectUpdateV30MonetizationMode         UniProjectUpdateV30MonetizationMode = "IAA"
 	IAA_AND_IAP_UniProjectUpdateV30MonetizationMode UniProjectUpdateV30MonetizationMode = "IAA_AND_IAP"
 	IAP_UniProjectUpdateV30MonetizationMode         UniProjectUpdateV30MonetizationMode = "IAP"
 )

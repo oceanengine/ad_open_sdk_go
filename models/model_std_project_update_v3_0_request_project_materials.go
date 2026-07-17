@@ -25,8 +25,7 @@ type StdProjectUpdateV30RequestProjectMaterials struct {
 	//
 	OpenUrl *string `json:"open_url,omitempty"`
 	//
-	OpenUrls           []string                                               `json:"open_urls,omitempty"`
-	OriginalVideoTitle *StdProjectUpdateV30ProjectMaterialsOriginalVideoTitle `json:"original_video_title,omitempty"`
+	OpenUrls []string `json:"open_urls,omitempty"`
 	//
 	PlayletSeriesUrlList []string                                               `json:"playlet_series_url_list,omitempty"`
 	ProductInfo          *StdProjectUpdateV30RequestProjectMaterialsProductInfo `json:"product_info,omitempty"`
