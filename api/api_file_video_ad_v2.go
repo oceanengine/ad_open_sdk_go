@@ -31,6 +31,7 @@ type ApiOpenApi2FileVideoAdPostRequest struct {
 	isGuideVideo   *bool
 	labels         *[]string
 	uploadType     *FileVideoAdV2UploadType
+	videoCoverId   *string
 	videoFile      *FormFileInfo
 	videoSignature *string
 	videoUrl       *string
@@ -67,6 +68,12 @@ func (r *ApiOpenApi2FileVideoAdPostRequest) Labels(labels []string) *ApiOpenApi2
 
 func (r *ApiOpenApi2FileVideoAdPostRequest) UploadType(uploadType FileVideoAdV2UploadType) *ApiOpenApi2FileVideoAdPostRequest {
 	r.uploadType = &uploadType
+	return r
+}
+
+// 视频封面
+func (r *ApiOpenApi2FileVideoAdPostRequest) VideoCoverId(videoCoverId string) *ApiOpenApi2FileVideoAdPostRequest {
+	r.videoCoverId = &videoCoverId
 	return r
 }
 
@@ -168,6 +175,9 @@ func (a *FileVideoAdV2ApiService) postExecute(r *ApiOpenApi2FileVideoAdPostReque
 	}
 	if r.uploadType != nil {
 		parameterAddToHeaderOrQuery(localVarFormParams, "upload_type", r.uploadType)
+	}
+	if r.videoCoverId != nil {
+		parameterAddToHeaderOrQuery(localVarFormParams, "video_cover_id", r.videoCoverId)
 	}
 	if r.videoFile != nil {
 		formFiles["video_file"] = r.videoFile

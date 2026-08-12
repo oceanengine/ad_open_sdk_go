@@ -24,9 +24,9 @@ import (
 
 type ApiOpenApiV30ToolsEbpStarTaskListGetRequestExample struct {
 	AccountId      int64                                 `json:"account_id"`
+	AccountType    ToolsEbpStarTaskListV30AccountType    `json:"account_type"`
 	StartDate      string                                `json:"start_date"`
 	EndDate        string                                `json:"end_date"`
-	AccountType    ToolsEbpStarTaskListV30AccountType    `json:"account_type,omitempty"`
 	StarTaskSource ToolsEbpStarTaskListV30StarTaskSource `json:"star_task_source,omitempty"`
 	Filtering      ToolsEbpStarTaskListV30Filtering      `json:"filtering,omitempty"`
 	OrderField     string                                `json:"order_field,omitempty"`
@@ -54,7 +54,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsEbpStarTaskListV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).StartDate(request.StartDate).EndDate(request.EndDate).AccountType(request.AccountType).StarTaskSource(request.StarTaskSource).Filtering(request.Filtering).OrderField(request.OrderField).OrderType(request.OrderType).Page(request.Page).PageSize(request.PageSize).
+		AccountId(request.AccountId).AccountType(request.AccountType).StartDate(request.StartDate).EndDate(request.EndDate).StarTaskSource(request.StarTaskSource).Filtering(request.Filtering).OrderField(request.OrderField).OrderType(request.OrderType).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

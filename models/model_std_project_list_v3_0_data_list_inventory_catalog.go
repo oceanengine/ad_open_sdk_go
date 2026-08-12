@@ -10,11 +10,12 @@ Oceanengine Open Api
 
 package models
 
-// StdProjectListV30DataListInventoryCatalog
+// StdProjectListV30DataListInventoryCatalog 投放版位 - 通投智选 - 首选媒体
 type StdProjectListV30DataListInventoryCatalog string
 
 // List of std_project_list_v3.0_data_list_inventory_catalog
 const (
+	MANUAL_StdProjectListV30DataListInventoryCatalog          StdProjectListV30DataListInventoryCatalog = "MANUAL"
 	UNIVERSAL_SMART_StdProjectListV30DataListInventoryCatalog StdProjectListV30DataListInventoryCatalog = "UNIVERSAL_SMART"
 )
 

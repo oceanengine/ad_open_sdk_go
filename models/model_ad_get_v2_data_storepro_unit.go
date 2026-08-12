@@ -15,8 +15,8 @@ type AdGetV2DataStoreproUnit string
 
 // List of ad_get_v2_data_storepro_unit
 const (
-	STORE_ACTIVITY_AdGetV2DataStoreproUnit AdGetV2DataStoreproUnit = "STORE_ACTIVITY"
 	STORE_AdGetV2DataStoreproUnit          AdGetV2DataStoreproUnit = "STORE"
+	STORE_ACTIVITY_AdGetV2DataStoreproUnit AdGetV2DataStoreproUnit = "STORE_ACTIVITY"
 )
 
 // Ptr returns reference to ad_get_v2_data_storepro_unit value

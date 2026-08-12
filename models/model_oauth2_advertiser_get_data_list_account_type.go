@@ -26,6 +26,7 @@ const (
 	PLATFORM_ROLE_AWEME_Oauth2AdvertiserGetDataListAccountType                    Oauth2AdvertiserGetDataListAccountType = "PLATFORM_ROLE_AWEME"
 	PLATFORM_ROLE_ENTERPRISE_BP_ADMIN_Oauth2AdvertiserGetDataListAccountType      Oauth2AdvertiserGetDataListAccountType = "PLATFORM_ROLE_ENTERPRISE_BP_ADMIN"
 	PLATFORM_ROLE_ENTERPRISE_BP_OPERATOR_Oauth2AdvertiserGetDataListAccountType   Oauth2AdvertiserGetDataListAccountType = "PLATFORM_ROLE_ENTERPRISE_BP_OPERATOR"
+	PLATFORM_ROLE_ENTERPRISE_BP_CUSTOM_Oauth2AdvertiserGetDataListAccountType     Oauth2AdvertiserGetDataListAccountType = "PLATFORM_ROLE_ENTERPRISE_BP_CUSTOM"
 	PLATFORM_ROLE_GROUP_BP_ADMIN_Oauth2AdvertiserGetDataListAccountType           Oauth2AdvertiserGetDataListAccountType = "PLATFORM_ROLE_GROUP_BP_ADMIN"
 	PLATFORM_ROLE_GROUP_BP_OPERATOR_Oauth2AdvertiserGetDataListAccountType        Oauth2AdvertiserGetDataListAccountType = "PLATFORM_ROLE_GROUP_BP_OPERATOR"
 	PLATFORM_ROLE_LIFE_Oauth2AdvertiserGetDataListAccountType                     Oauth2AdvertiserGetDataListAccountType = "PLATFORM_ROLE_LIFE"

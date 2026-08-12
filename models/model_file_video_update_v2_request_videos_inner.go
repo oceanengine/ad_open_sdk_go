@@ -16,6 +16,8 @@ type FileVideoUpdateV2RequestVideosInner struct {
 	Filename *string `json:"filename,omitempty"`
 	// 标签
 	Labels []string `json:"labels,omitempty"`
+	// 视频封面
+	VideoCoverId *string `json:"video_cover_id,omitempty"`
 	// 视频id，更新必填
 	VideoId string `json:"video_id"`
 }

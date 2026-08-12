@@ -23,13 +23,14 @@ import (
 )
 
 type ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequestExample struct {
-	AdvertiserId int64                                         `json:"advertiser_id"`
-	Status       []*ToolQuickAppManagementQuickAppGetV2Status  `json:"status,omitempty"`
-	Page         int32                                         `json:"page,omitempty"`
-	PageSize     int32                                         `json:"page_size,omitempty"`
-	UpdateTime   ToolQuickAppManagementQuickAppGetV2UpdateTime `json:"update_time,omitempty"`
-	SearchKey    string                                        `json:"search_key,omitempty"`
-	QuickAppIds  []int64                                       `json:"quick_app_ids,omitempty"`
+	AdvertiserId    int64                                              `json:"advertiser_id"`
+	Status          []*ToolQuickAppManagementQuickAppGetV2Status       `json:"status,omitempty"`
+	Page            int32                                              `json:"page,omitempty"`
+	PageSize        int32                                              `json:"page_size,omitempty"`
+	UpdateTime      ToolQuickAppManagementQuickAppGetV2UpdateTime      `json:"update_time,omitempty"`
+	SearchKey       string                                             `json:"search_key,omitempty"`
+	QuickAppIds     []int64                                            `json:"quick_app_ids,omitempty"`
+	AssetGeneration ToolQuickAppManagementQuickAppGetV2AssetGeneration `json:"asset_generation,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/tool/quick_app_management/quick_app/get/ Get
@@ -51,7 +52,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolQuickAppManagementQuickAppGetV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Status(request.Status).Page(request.Page).PageSize(request.PageSize).UpdateTime(request.UpdateTime).SearchKey(request.SearchKey).QuickAppIds(request.QuickAppIds).
+		AdvertiserId(request.AdvertiserId).Status(request.Status).Page(request.Page).PageSize(request.PageSize).UpdateTime(request.UpdateTime).SearchKey(request.SearchKey).QuickAppIds(request.QuickAppIds).AssetGeneration(request.AssetGeneration).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

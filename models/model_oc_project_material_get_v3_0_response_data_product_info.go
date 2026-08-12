@@ -14,6 +14,15 @@ package models
 type OcProjectMaterialGetV30ResponseDataProductInfo struct {
 	//
 	ImageIds []string `json:"image_ids,omitempty"`
+	// DPA产品库图片字段
+	ProductImageFields []string                                                `json:"product_image_fields,omitempty"`
+	ProductImageType   *OcProjectMaterialGetV30DataProductInfoProductImageType `json:"product_image_type,omitempty"`
+	// DPA产品库名称字段
+	ProductNameFields []string                                               `json:"product_name_fields,omitempty"`
+	ProductNameType   *OcProjectMaterialGetV30DataProductInfoProductNameType `json:"product_name_type,omitempty"`
+	// DPA产品库卖点类型字段
+	ProductSellingPointFields []string                                                       `json:"product_selling_point_fields,omitempty"`
+	ProductSellingPointType   *OcProjectMaterialGetV30DataProductInfoProductSellingPointType `json:"product_selling_point_type,omitempty"`
 	//
 	SellingPoints []string `json:"selling_points,omitempty"`
 	//

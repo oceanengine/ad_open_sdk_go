@@ -35,6 +35,7 @@ type ApiOpenApiV30EventManagerDbtGetGetRequestExample struct {
 	ProductSetting      EventManagerDbtGetV30ProductSetting      `json:"product_setting,omitempty"`
 	MultiDeliveryMedium EventManagerDbtGetV30MultiDeliveryMedium `json:"multi_delivery_medium,omitempty"`
 	DeliveryMedium      EventManagerDbtGetV30DeliveryMedium      `json:"delivery_medium,omitempty"`
+	DeliveryProduct     string                                   `json:"delivery_product,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/event_manager/dbt/get/ Get
@@ -56,7 +57,7 @@ func main() {
 	resp, httpRes, err := apiClient.EventManagerDbtGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).ExternalAction(request.ExternalAction).LandingType(request.LandingType).AdType(request.AdType).MarketingGoal(request.MarketingGoal).AssetId(request.AssetId).DeepExternalAction(request.DeepExternalAction).ValueOptimizedType(request.ValueOptimizedType).DeliveryMode(request.DeliveryMode).ProductSetting(request.ProductSetting).MultiDeliveryMedium(request.MultiDeliveryMedium).DeliveryMedium(request.DeliveryMedium).
+		AdvertiserId(request.AdvertiserId).ExternalAction(request.ExternalAction).LandingType(request.LandingType).AdType(request.AdType).MarketingGoal(request.MarketingGoal).AssetId(request.AssetId).DeepExternalAction(request.DeepExternalAction).ValueOptimizedType(request.ValueOptimizedType).DeliveryMode(request.DeliveryMode).ProductSetting(request.ProductSetting).MultiDeliveryMedium(request.MultiDeliveryMedium).DeliveryMedium(request.DeliveryMedium).DeliveryProduct(request.DeliveryProduct).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

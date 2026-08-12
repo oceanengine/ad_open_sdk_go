@@ -14,6 +14,8 @@ package models
 type QianchuanUniPromotionAdDetailV10ResponseData struct {
 	//
 	AdId *int64 `json:"ad_id,omitempty"`
+	//
+	AdlabScene *int64 `json:"adlab_scene,omitempty"`
 	// 抖音号id
 	AwemeId *int64 `json:"aweme_id,omitempty"`
 	// 计划绑定的抖音号信息
@@ -36,4 +38,6 @@ type QianchuanUniPromotionAdDetailV10ResponseData struct {
 	//
 	RoomInfo []*QianchuanUniPromotionAdDetailV10ResponseDataRoomInfoInner `json:"room_info,omitempty"`
 	Status   *QianchuanUniPromotionAdDetailV10DataStatus                  `json:"status,omitempty"`
+	// 全店计划对应的shopId
+	UniPromShopId *int64 `json:"uni_prom_shop_id,omitempty"`
 }

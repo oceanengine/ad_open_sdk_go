@@ -15,8 +15,8 @@ type AdGetV2DataAudienceInterestActionMode string
 
 // List of ad_get_v2_data_audience_interest_action_mode
 const (
-	CUSTOM_AdGetV2DataAudienceInterestActionMode    AdGetV2DataAudienceInterestActionMode = "CUSTOM"
 	UNLIMITED_AdGetV2DataAudienceInterestActionMode AdGetV2DataAudienceInterestActionMode = "UNLIMITED"
+	CUSTOM_AdGetV2DataAudienceInterestActionMode    AdGetV2DataAudienceInterestActionMode = "CUSTOM"
 	RECOMMEND_AdGetV2DataAudienceInterestActionMode AdGetV2DataAudienceInterestActionMode = "RECOMMEND"
 )
 

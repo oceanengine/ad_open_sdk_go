@@ -23,15 +23,14 @@ import (
 )
 
 type ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequestExample struct {
-	EnterpriseOrganizationId int64                                                   `json:"enterprise_organization_id"`
-	StarTaskId               int64                                                   `json:"star_task_id"`
-	AccountId                int64                                                   `json:"account_id"`
-	AccountType              ToolsEbpStarTaskTaskAuthorVedioGetV30AccountType        `json:"account_type"`
-	AwemeId                  string                                                  `json:"aweme_id,omitempty"`
-	StarTaskVideoRange       ToolsEbpStarTaskTaskAuthorVedioGetV30StarTaskVideoRange `json:"star_task_video_range,omitempty"`
-	Filtering                ToolsEbpStarTaskTaskAuthorVedioGetV30Filtering          `json:"filtering,omitempty"`
-	Cursor                   int64                                                   `json:"cursor,omitempty"`
-	Count                    int64                                                   `json:"count,omitempty"`
+	AccountId          int64                                                   `json:"account_id"`
+	AccountType        ToolsEbpStarTaskTaskAuthorVedioGetV30AccountType        `json:"account_type"`
+	StarTaskId         int64                                                   `json:"star_task_id"`
+	StarTaskVideoRange ToolsEbpStarTaskTaskAuthorVedioGetV30StarTaskVideoRange `json:"star_task_video_range,omitempty"`
+	AwemeId            string                                                  `json:"aweme_id,omitempty"`
+	Filtering          ToolsEbpStarTaskTaskAuthorVedioGetV30Filtering          `json:"filtering,omitempty"`
+	Cursor             int64                                                   `json:"cursor,omitempty"`
+	Count              int64                                                   `json:"count,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/ebp/star_task/task_author_vedio/get/ Get
@@ -53,7 +52,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsEbpStarTaskTaskAuthorVedioGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		EnterpriseOrganizationId(request.EnterpriseOrganizationId).StarTaskId(request.StarTaskId).AccountId(request.AccountId).AccountType(request.AccountType).AwemeId(request.AwemeId).StarTaskVideoRange(request.StarTaskVideoRange).Filtering(request.Filtering).Cursor(request.Cursor).Count(request.Count).
+		AccountId(request.AccountId).AccountType(request.AccountType).StarTaskId(request.StarTaskId).StarTaskVideoRange(request.StarTaskVideoRange).AwemeId(request.AwemeId).Filtering(request.Filtering).Cursor(request.Cursor).Count(request.Count).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

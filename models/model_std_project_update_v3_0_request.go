@@ -24,7 +24,8 @@ type StdProjectUpdateV30Request struct {
 	BlueFlowKeywordName []string                             `json:"blue_flow_keyword_name,omitempty"`
 	BrandInfo           *StdProjectUpdateV30RequestBrandInfo `json:"brand_info,omitempty"`
 	// 预算
-	Budget *float64 `json:"budget,omitempty"`
+	Budget     *float64                       `json:"budget,omitempty"`
+	BudgetMode *StdProjectUpdateV30BudgetMode `json:"budget_mode,omitempty"`
 	//
 	CpaBid *float64 `json:"cpa_bid,omitempty"`
 	//
@@ -56,4 +57,6 @@ type StdProjectUpdateV30Request struct {
 	//
 	StarTaskIdList  []int64                                    `json:"star_task_id_list,omitempty"`
 	TrackUrlSetting *StdProjectUpdateV30RequestTrackUrlSetting `json:"track_url_setting,omitempty"`
+	//
+	UnionBidRatio *float64 `json:"union_bid_ratio,omitempty"`
 }

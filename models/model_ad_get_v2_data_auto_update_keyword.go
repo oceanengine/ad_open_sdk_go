@@ -15,8 +15,8 @@ type AdGetV2DataAutoUpdateKeyword string
 
 // List of ad_get_v2_data_auto_update_keyword
 const (
-	OFF_AdGetV2DataAutoUpdateKeyword AdGetV2DataAutoUpdateKeyword = "OFF"
 	ON_AdGetV2DataAutoUpdateKeyword  AdGetV2DataAutoUpdateKeyword = "ON"
+	OFF_AdGetV2DataAutoUpdateKeyword AdGetV2DataAutoUpdateKeyword = "OFF"
 )
 
 // Ptr returns reference to ad_get_v2_data_auto_update_keyword value

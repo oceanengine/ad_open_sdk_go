@@ -11,11 +11,11 @@ Oceanengine Open Api
 package models
 
 // ToolsEbpStarTaskListV30FilteringMetricValueFilterOperator
-type ToolsEbpStarTaskListV30FilteringMetricValueFilterOperator int64
+type ToolsEbpStarTaskListV30FilteringMetricValueFilterOperator string
 
 // List of tools_ebp_star_task_list_v3.0_filtering_metric_value_filter_operator
 const (
-	Enum_1_ToolsEbpStarTaskListV30FilteringMetricValueFilterOperator ToolsEbpStarTaskListV30FilteringMetricValueFilterOperator = 1
+	GREATER_THAN_ToolsEbpStarTaskListV30FilteringMetricValueFilterOperator ToolsEbpStarTaskListV30FilteringMetricValueFilterOperator = "GREATER_THAN"
 )
 
 // Ptr returns reference to tools_ebp_star_task_list_v3.0_filtering_metric_value_filter_operator value

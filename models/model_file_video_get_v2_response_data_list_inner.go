@@ -14,6 +14,8 @@ package models
 type FileVideoGetV2ResponseDataListInner struct {
 	// 素材id，即多合一报表中的素材id，一个素材唯一对应一个素材id
 	BitRate *int64 `json:"bit_rate,omitempty"`
+	// 视频封面来源  MANUAL_SOURCE ，人工自提 FIRST_FRAME  默认封面或人工裁剪   AI_COVER  AI推荐封面
+	CoverSource *string `json:"cover_source,omitempty"`
 	// 素材的上传时间，格式：\"yyyy-mm-dd HH:MM:SS\"
 	CreateTime *string `json:"create_time,omitempty"`
 	// 码率，单位bps
@@ -44,6 +46,8 @@ type FileVideoGetV2ResponseDataListInner struct {
 	StarAuthorId *string `json:"star_author_id,omitempty"`
 	// 视频地址，仅限同主体进行素材预览查看，若非同主体会返回“素材所属主体与开发者主体不一致无法获取URL” 链接仅做预览使用，预览链接有效期为1小时
 	Url *string `json:"url,omitempty"`
+	// 视频封面
+	VideoCoverId *string `json:"video_cover_id,omitempty"`
 	// 视频宽度
 	Width *int64 `json:"width,omitempty"`
 }

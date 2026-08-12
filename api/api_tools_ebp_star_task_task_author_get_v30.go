@@ -23,34 +23,37 @@ import (
 type ToolsEbpStarTaskTaskAuthorGetV30ApiService service
 
 type ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest struct {
-	ctx                      context.Context
-	ApiService               *ToolsEbpStarTaskTaskAuthorGetV30ApiService
-	enterpriseOrganizationId *int64
-	starTaskId               *int64
-	accountId                *int64
-	accountType              *ToolsEbpStarTaskTaskAuthorGetV30AccountType
-	page                     *int64
-	pageSize                 *int64
-	filtering                *ToolsEbpStarTaskTaskAuthorGetV30Filtering
+	ctx         context.Context
+	ApiService  *ToolsEbpStarTaskTaskAuthorGetV30ApiService
+	accountId   *int64
+	accountType *ToolsEbpStarTaskTaskAuthorGetV30AccountType
+	starTaskId  *int64
+	filtering   *ToolsEbpStarTaskTaskAuthorGetV30Filtering
+	page        *int64
+	pageSize    *int64
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) EnterpriseOrganizationId(enterpriseOrganizationId int64) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
-	r.enterpriseOrganizationId = &enterpriseOrganizationId
-	return r
-}
-
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) StarTaskId(starTaskId int64) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
-	r.starTaskId = &starTaskId
-	return r
-}
-
+// 账户ID
 func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
 	r.accountId = &accountId
 	return r
 }
 
+// 账户类型
 func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) AccountType(accountType ToolsEbpStarTaskTaskAuthorGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
 	r.accountType = &accountType
+	return r
+}
+
+// 星广任务ID
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) StarTaskId(starTaskId int64) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
+	r.starTaskId = &starTaskId
+	return r
+}
+
+// 过滤器
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) Filtering(filtering ToolsEbpStarTaskTaskAuthorGetV30Filtering) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
+	r.filtering = &filtering
 	return r
 }
 
@@ -61,12 +64,6 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) Page(page int64) 
 
 func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) PageSize(pageSize int64) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
 	r.pageSize = &pageSize
-	return r
-}
-
-// 过滤器
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest) Filtering(filtering ToolsEbpStarTaskTaskAuthorGetV30Filtering) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequest {
-	r.filtering = &filtering
 	return r
 }
 
@@ -122,32 +119,28 @@ func (a *ToolsEbpStarTaskTaskAuthorGetV30ApiService) getExecute(r *ApiOpenApiV30
 	formFiles = make(map[string]*FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
-	if r.enterpriseOrganizationId == nil {
-		return localVarReturnValue, nil, ReportError("enterpriseOrganizationId is required and must be specified")
-	}
-	if r.starTaskId == nil {
-		return localVarReturnValue, nil, ReportError("starTaskId is required and must be specified")
-	}
 	if r.accountId == nil {
 		return localVarReturnValue, nil, ReportError("accountId is required and must be specified")
 	}
 	if r.accountType == nil {
 		return localVarReturnValue, nil, ReportError("accountType is required and must be specified")
 	}
+	if r.starTaskId == nil {
+		return localVarReturnValue, nil, ReportError("starTaskId is required and must be specified")
+	}
 
-	parameterAddToHeaderOrQuery(localVarQueryParams, "enterprise_organization_id", r.enterpriseOrganizationId)
+	parameterAddToHeaderOrQuery(localVarQueryParams, "account_id", r.accountId)
+	parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
+	parameterAddToHeaderOrQuery(localVarQueryParams, "star_task_id", r.starTaskId)
+	if r.filtering != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
+	}
 	if r.page != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page", r.page)
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
 	}
-	parameterAddToHeaderOrQuery(localVarQueryParams, "star_task_id", r.starTaskId)
-	if r.filtering != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
-	}
-	parameterAddToHeaderOrQuery(localVarQueryParams, "account_id", r.accountId)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

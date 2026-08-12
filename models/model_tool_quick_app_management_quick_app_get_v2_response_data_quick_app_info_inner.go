@@ -12,6 +12,7 @@ package models
 
 // ToolQuickAppManagementQuickAppGetV2ResponseDataQuickAppInfoInner struct for ToolQuickAppManagementQuickAppGetV2ResponseDataQuickAppInfoInner
 type ToolQuickAppManagementQuickAppGetV2ResponseDataQuickAppInfoInner struct {
+	AssetGeneration *ToolQuickAppManagementQuickAppGetV2DataQuickAppInfoAssetGeneration `json:"asset_generation,omitempty"`
 	//
 	CreateTime string `json:"create_time"`
 	//

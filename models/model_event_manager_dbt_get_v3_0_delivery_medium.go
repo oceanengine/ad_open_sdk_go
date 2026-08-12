@@ -20,6 +20,7 @@ const (
 	BYTE_APP_EventManagerDbtGetV30DeliveryMedium    EventManagerDbtGetV30DeliveryMedium = "BYTE_APP"
 	BYTE_GAME_EventManagerDbtGetV30DeliveryMedium   EventManagerDbtGetV30DeliveryMedium = "BYTE_GAME"
 	ENTERPRISE_EventManagerDbtGetV30DeliveryMedium  EventManagerDbtGetV30DeliveryMedium = "ENTERPRISE"
+	QUICK_APP_EventManagerDbtGetV30DeliveryMedium   EventManagerDbtGetV30DeliveryMedium = "QUICK_APP"
 	THIRDPARTY_EventManagerDbtGetV30DeliveryMedium  EventManagerDbtGetV30DeliveryMedium = "THIRDPARTY"
 	WECHAT_APP_EventManagerDbtGetV30DeliveryMedium  EventManagerDbtGetV30DeliveryMedium = "WECHAT_APP"
 	WECHAT_GAME_EventManagerDbtGetV30DeliveryMedium EventManagerDbtGetV30DeliveryMedium = "WECHAT_GAME"

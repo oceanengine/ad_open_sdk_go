@@ -16,8 +16,10 @@ type StdProjectCreateV30LandingType string
 // List of std_project_create_v3.0_landing_type
 const (
 	APP_StdProjectCreateV30LandingType        StdProjectCreateV30LandingType = "APP"
+	DPA_StdProjectCreateV30LandingType        StdProjectCreateV30LandingType = "DPA"
 	LINK_StdProjectCreateV30LandingType       StdProjectCreateV30LandingType = "LINK"
 	MICRO_GAME_StdProjectCreateV30LandingType StdProjectCreateV30LandingType = "MICRO_GAME"
+	QUICK_APP_StdProjectCreateV30LandingType  StdProjectCreateV30LandingType = "QUICK_APP"
 	SHOP_StdProjectCreateV30LandingType       StdProjectCreateV30LandingType = "SHOP"
 )
 

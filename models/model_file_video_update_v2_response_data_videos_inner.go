@@ -15,7 +15,10 @@ type FileVideoUpdateV2ResponseDataVideosInner struct {
 	// 标签
 	Labels []string `json:"labels,omitempty"`
 	// 更新状态 SUCCESS 成功 FAILURE 失败（原因：操作视频非当前客户所有或操作的视频不存在）
-	StatusCode *int64 `json:"status_code,omitempty"`
+	StatusCode   *int64                                   `json:"status_code,omitempty"`
+	UpdateStatus *FileVideoUpdateV2DataVideosUpdateStatus `json:"update_status,omitempty"`
+	// 视频封面uri
+	VideoCoverId *string `json:"video_cover_id,omitempty"`
 	// 视频id
 	VideoId *string `json:"video_id,omitempty"`
 }

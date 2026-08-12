@@ -23,17 +23,18 @@ import (
 type QianchuanUniPromotionProductGetV10ApiService service
 
 type ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest struct {
-	ctx          context.Context
-	ApiService   *QianchuanUniPromotionProductGetV10ApiService
-	advertiserId *int64
-	filtering    *QianchuanUniPromotionProductGetV10Filtering
-	awemeId      *int64
-	orderField   *QianchuanUniPromotionProductGetV10OrderField
-	orderType    *QianchuanUniPromotionProductGetV10OrderType
-	page         *int32
-	pageSize     *int32
-	cursor       *int64
-	platfrom     *QianchuanUniPromotionProductGetV10Platfrom
+	ctx                context.Context
+	ApiService         *QianchuanUniPromotionProductGetV10ApiService
+	advertiserId       *int64
+	filtering          *QianchuanUniPromotionProductGetV10Filtering
+	awemeId            *int64
+	isOverallMarketing *bool
+	orderField         *QianchuanUniPromotionProductGetV10OrderField
+	orderType          *QianchuanUniPromotionProductGetV10OrderType
+	page               *int32
+	pageSize           *int32
+	cursor             *int64
+	platfrom           *QianchuanUniPromotionProductGetV10Platfrom
 }
 
 func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest {
@@ -47,9 +48,15 @@ func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) Filtering(filte
 	return r
 }
 
-// 抖音号id
+// 抖音号id，乘方创编场景下不传，若乘方场景下传0，表示乘方无号创编商品列表；
 func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) AwemeId(awemeId int64) *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest {
 	r.awemeId = &awemeId
+	return r
+}
+
+// 是否乘方创编场景获取商品列表
+func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) IsOverallMarketing(isOverallMarketing bool) *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest {
+	r.isOverallMarketing = &isOverallMarketing
 	return r
 }
 
@@ -108,7 +115,7 @@ func (r *ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest) WithLog(enable 
 /*
 OpenApiV10QianchuanUniPromotionProductGetGet Method for OpenApiV10QianchuanUniPromotionProductGetGet
 
-全域商家可选商品列表
+乘方|全域商家创编可选商品列表
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV10QianchuanUniPromotionProductGetGetRequest
@@ -154,6 +161,9 @@ func (a *QianchuanUniPromotionProductGetV10ApiService) getExecute(r *ApiOpenApiV
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	if r.awemeId != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "aweme_id", r.awemeId)
+	}
+	if r.isOverallMarketing != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "is_overall_marketing", r.isOverallMarketing)
 	}
 	parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
 	if r.orderField != nil {

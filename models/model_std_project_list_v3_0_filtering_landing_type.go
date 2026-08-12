@@ -16,8 +16,10 @@ type StdProjectListV30FilteringLandingType string
 // List of std_project_list_v3.0_filtering_landing_type
 const (
 	APP_StdProjectListV30FilteringLandingType        StdProjectListV30FilteringLandingType = "APP"
+	DPA_StdProjectListV30FilteringLandingType        StdProjectListV30FilteringLandingType = "DPA"
 	LINK_StdProjectListV30FilteringLandingType       StdProjectListV30FilteringLandingType = "LINK"
 	MICRO_GAME_StdProjectListV30FilteringLandingType StdProjectListV30FilteringLandingType = "MICRO_GAME"
+	QUICK_APP_StdProjectListV30FilteringLandingType  StdProjectListV30FilteringLandingType = "QUICK_APP"
 	SHOP_StdProjectListV30FilteringLandingType       StdProjectListV30FilteringLandingType = "SHOP"
 )
 

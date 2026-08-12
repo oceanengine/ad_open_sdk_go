@@ -23,15 +23,16 @@ import (
 )
 
 type ApiOpenApiV10QianchuanUniPromotionProductGetGetRequestExample struct {
-	AdvertiserId int64                                        `json:"advertiser_id"`
-	Filtering    QianchuanUniPromotionProductGetV10Filtering  `json:"filtering"`
-	AwemeId      int64                                        `json:"aweme_id,omitempty"`
-	OrderField   QianchuanUniPromotionProductGetV10OrderField `json:"order_field,omitempty"`
-	OrderType    QianchuanUniPromotionProductGetV10OrderType  `json:"order_type,omitempty"`
-	Page         int32                                        `json:"page,omitempty"`
-	PageSize     int32                                        `json:"page_size,omitempty"`
-	Cursor       int64                                        `json:"cursor,omitempty"`
-	Platfrom     QianchuanUniPromotionProductGetV10Platfrom   `json:"platfrom,omitempty"`
+	AdvertiserId       int64                                        `json:"advertiser_id"`
+	Filtering          QianchuanUniPromotionProductGetV10Filtering  `json:"filtering"`
+	AwemeId            int64                                        `json:"aweme_id,omitempty"`
+	IsOverallMarketing bool                                         `json:"is_overall_marketing,omitempty"`
+	OrderField         QianchuanUniPromotionProductGetV10OrderField `json:"order_field,omitempty"`
+	OrderType          QianchuanUniPromotionProductGetV10OrderType  `json:"order_type,omitempty"`
+	Page               int32                                        `json:"page,omitempty"`
+	PageSize           int32                                        `json:"page_size,omitempty"`
+	Cursor             int64                                        `json:"cursor,omitempty"`
+	Platfrom           QianchuanUniPromotionProductGetV10Platfrom   `json:"platfrom,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v1.0/qianchuan/uni_promotion/product/get/ Get
@@ -53,7 +54,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanUniPromotionProductGetV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).AwemeId(request.AwemeId).OrderField(request.OrderField).OrderType(request.OrderType).Page(request.Page).PageSize(request.PageSize).Cursor(request.Cursor).Platfrom(request.Platfrom).
+		AdvertiserId(request.AdvertiserId).Filtering(request.Filtering).AwemeId(request.AwemeId).IsOverallMarketing(request.IsOverallMarketing).OrderField(request.OrderField).OrderType(request.OrderType).Page(request.Page).PageSize(request.PageSize).Cursor(request.Cursor).Platfrom(request.Platfrom).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

@@ -20,12 +20,23 @@ type StdProjectUpdateV30RequestProjectMaterials struct {
 	//
 	ComponentMaterialList []*StdProjectUpdateV30RequestProjectMaterialsComponentMaterialListInner `json:"component_material_list,omitempty"`
 	//
-	ExternalUrlMaterialList []string                                                   `json:"external_url_material_list,omitempty"`
-	MiniProgramInfo         *StdProjectUpdateV30RequestProjectMaterialsMiniProgramInfo `json:"mini_program_info,omitempty"`
+	DpaImageMode []*StdProjectUpdateV30ProjectMaterialsDpaImageMode `json:"dpa_image_mode,omitempty"`
+	//
+	ExternalUrlField *string `json:"external_url_field,omitempty"`
+	//
+	ExternalUrlMaterialList []string `json:"external_url_material_list,omitempty"`
+	//
+	ExternalUrlParams *string                                                    `json:"external_url_params,omitempty"`
+	MiniProgramInfo   *StdProjectUpdateV30RequestProjectMaterialsMiniProgramInfo `json:"mini_program_info,omitempty"`
 	//
 	OpenUrl *string `json:"open_url,omitempty"`
 	//
-	OpenUrls []string `json:"open_urls,omitempty"`
+	OpenUrlField *string `json:"open_url_field,omitempty"`
+	//
+	OpenUrlParams *string `json:"open_url_params,omitempty"`
+	//
+	OpenUrls           []string                                               `json:"open_urls,omitempty"`
+	OriginalVideoTitle *StdProjectUpdateV30ProjectMaterialsOriginalVideoTitle `json:"original_video_title,omitempty"`
 	//
 	PlayletSeriesUrlList []string                                               `json:"playlet_series_url_list,omitempty"`
 	ProductInfo          *StdProjectUpdateV30RequestProjectMaterialsProductInfo `json:"product_info,omitempty"`

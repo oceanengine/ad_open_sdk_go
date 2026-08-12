@@ -22,7 +22,13 @@ type StdProjectCreateV30RequestProjectMaterials struct {
 	//
 	ComponentMaterialList []*StdProjectCreateV30RequestProjectMaterialsComponentMaterialListInner `json:"component_material_list,omitempty"`
 	//
+	DpaImageMode []*StdProjectCreateV30ProjectMaterialsDpaImageMode `json:"dpa_image_mode,omitempty"`
+	//
+	ExternalUrlField *string `json:"external_url_field,omitempty"`
+	//
 	ExternalUrlMaterialList []string `json:"external_url_material_list,omitempty"`
+	//
+	ExternalUrlParams *string `json:"external_url_params,omitempty"`
 	//
 	ImageMaterialList []*StdProjectCreateV30RequestProjectMaterialsImageMaterialListInner `json:"image_material_list,omitempty"`
 	//
@@ -31,8 +37,14 @@ type StdProjectCreateV30RequestProjectMaterials struct {
 	//
 	OpenUrl *string `json:"open_url,omitempty"`
 	//
+	OpenUrlField *string `json:"open_url_field,omitempty"`
+	//
+	OpenUrlParams *string                                         `json:"open_url_params,omitempty"`
+	OpenUrlType   *StdProjectCreateV30ProjectMaterialsOpenUrlType `json:"open_url_type,omitempty"`
+	//
 	OpenUrls           []string                                               `json:"open_urls,omitempty"`
 	OriginalVideoTitle *StdProjectCreateV30ProjectMaterialsOriginalVideoTitle `json:"original_video_title,omitempty"`
+	ParamsType         *StdProjectCreateV30ProjectMaterialsParamsType         `json:"params_type,omitempty"`
 	//
 	PlayletSeriesUrlList []string                                               `json:"playlet_series_url_list,omitempty"`
 	ProductInfo          *StdProjectCreateV30RequestProjectMaterialsProductInfo `json:"product_info,omitempty"`

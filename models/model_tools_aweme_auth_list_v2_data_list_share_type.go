@@ -15,9 +15,12 @@ type ToolsAwemeAuthListV2DataListShareType string
 
 // List of tools_aweme_auth_list_v2_data_list_share_type
 const (
-	SHARE_BY_ONESELF_ToolsAwemeAuthListV2DataListShareType     ToolsAwemeAuthListV2DataListShareType = "SHARE_BY_ONESELF"
-	SHARE_BY_SAME_ENTITY_ToolsAwemeAuthListV2DataListShareType ToolsAwemeAuthListV2DataListShareType = "SHARE_BY_SAME_ENTITY"
-	SHARE_FROM_BP_ToolsAwemeAuthListV2DataListShareType        ToolsAwemeAuthListV2DataListShareType = "SHARE_FROM_BP"
+	SHARE_BY_ACCOUNT_ToolsAwemeAuthListV2DataListShareType             ToolsAwemeAuthListV2DataListShareType = "SHARE_BY_ACCOUNT"
+	SHARE_BY_COMPANY_ToolsAwemeAuthListV2DataListShareType             ToolsAwemeAuthListV2DataListShareType = "SHARE_BY_COMPANY"
+	SHARE_BY_EBP_CASCADE_ACCOUNT_ToolsAwemeAuthListV2DataListShareType ToolsAwemeAuthListV2DataListShareType = "SHARE_BY_EBP_CASCADE_ACCOUNT"
+	SHARE_BY_EBP_DIRECT_ACCOUNT_ToolsAwemeAuthListV2DataListShareType  ToolsAwemeAuthListV2DataListShareType = "SHARE_BY_EBP_DIRECT_ACCOUNT"
+	SHARE_BY_GROUP_ToolsAwemeAuthListV2DataListShareType               ToolsAwemeAuthListV2DataListShareType = "SHARE_BY_GROUP"
+	SHARE_BY_ONESELF_ToolsAwemeAuthListV2DataListShareType             ToolsAwemeAuthListV2DataListShareType = "SHARE_BY_ONESELF"
 )
 
 // Ptr returns reference to tools_aweme_auth_list_v2_data_list_share_type value

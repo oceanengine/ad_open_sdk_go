@@ -16,8 +16,10 @@ type EventManagerDbtGetV30LandingType string
 // List of event_manager_dbt_get_v3.0_landing_type
 const (
 	APP_EventManagerDbtGetV30LandingType        EventManagerDbtGetV30LandingType = "APP"
+	DPA_EventManagerDbtGetV30LandingType        EventManagerDbtGetV30LandingType = "DPA"
 	LINK_EventManagerDbtGetV30LandingType       EventManagerDbtGetV30LandingType = "LINK"
 	MICRO_GAME_EventManagerDbtGetV30LandingType EventManagerDbtGetV30LandingType = "MICRO_GAME"
+	QUICK_APP_EventManagerDbtGetV30LandingType  EventManagerDbtGetV30LandingType = "QUICK_APP"
 	SHOP_EventManagerDbtGetV30LandingType       EventManagerDbtGetV30LandingType = "SHOP"
 )
 

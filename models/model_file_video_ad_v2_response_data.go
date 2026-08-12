@@ -20,6 +20,8 @@ type FileVideoAdV2ResponseData struct {
 	MaterialId *int64 `json:"material_id,omitempty"`
 	// 视频大小
 	Size *int64 `json:"size,omitempty"`
+	// 视频封面
+	VideoCoverId *string `json:"video_cover_id,omitempty"`
 	// 视频ID
 	VideoId *string `json:"video_id,omitempty"`
 	//

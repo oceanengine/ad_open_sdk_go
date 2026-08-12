@@ -21,6 +21,7 @@ const (
 	BYTE_GAME_EventManagerOptimizedGoalGetV30DeliveryMedium   EventManagerOptimizedGoalGetV30DeliveryMedium = "BYTE_GAME"
 	ENTERPRISE_EventManagerOptimizedGoalGetV30DeliveryMedium  EventManagerOptimizedGoalGetV30DeliveryMedium = "ENTERPRISE"
 	ORANGE_EventManagerOptimizedGoalGetV30DeliveryMedium      EventManagerOptimizedGoalGetV30DeliveryMedium = "ORANGE"
+	QUICK_APP_EventManagerOptimizedGoalGetV30DeliveryMedium   EventManagerOptimizedGoalGetV30DeliveryMedium = "QUICK_APP"
 	THIRDPARTY_EventManagerOptimizedGoalGetV30DeliveryMedium  EventManagerOptimizedGoalGetV30DeliveryMedium = "THIRDPARTY"
 	WECHAT_APP_EventManagerOptimizedGoalGetV30DeliveryMedium  EventManagerOptimizedGoalGetV30DeliveryMedium = "WECHAT_APP"
 	WECHAT_GAME_EventManagerOptimizedGoalGetV30DeliveryMedium EventManagerOptimizedGoalGetV30DeliveryMedium = "WECHAT_GAME"

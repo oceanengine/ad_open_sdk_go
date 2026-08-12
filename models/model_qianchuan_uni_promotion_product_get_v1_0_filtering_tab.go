@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanUniPromotionProductGetV10FilteringTab
+// QianchuanUniPromotionProductGetV10FilteringTab 乘方创编选商品时，Tab=1,2,14,15
 type QianchuanUniPromotionProductGetV10FilteringTab string
 
 // List of qianchuan_uni_promotion_product_get_v1.0_filtering_tab

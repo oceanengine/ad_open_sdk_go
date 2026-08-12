@@ -13,5 +13,7 @@ package models
 // StdProjectCreateV30RequestProjectMaterialsTitleMaterialListInner struct for StdProjectCreateV30RequestProjectMaterialsTitleMaterialListInner
 type StdProjectCreateV30RequestProjectMaterialsTitleMaterialListInner struct {
 	//
+	DpaWordList []int64 `json:"dpa_word_list,omitempty"`
+	//
 	Title *string `json:"title,omitempty"`
 }

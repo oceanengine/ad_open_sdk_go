@@ -21,6 +21,7 @@ const (
 	BYTE_GAME_StdProjectCreateV30DeliveryMedium   StdProjectCreateV30DeliveryMedium = "BYTE_GAME"
 	ENTERPRISE_StdProjectCreateV30DeliveryMedium  StdProjectCreateV30DeliveryMedium = "ENTERPRISE"
 	ORANGE_StdProjectCreateV30DeliveryMedium      StdProjectCreateV30DeliveryMedium = "ORANGE"
+	QUICK_APP_StdProjectCreateV30DeliveryMedium   StdProjectCreateV30DeliveryMedium = "QUICK_APP"
 	THIRDPARTY_StdProjectCreateV30DeliveryMedium  StdProjectCreateV30DeliveryMedium = "THIRDPARTY"
 	WECHAT_APP_StdProjectCreateV30DeliveryMedium  StdProjectCreateV30DeliveryMedium = "WECHAT_APP"
 	WECHAT_GAME_StdProjectCreateV30DeliveryMedium StdProjectCreateV30DeliveryMedium = "WECHAT_GAME"

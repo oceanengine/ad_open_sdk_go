@@ -15,6 +15,12 @@ type StdProjectUpdateV30RequestProjectMaterialsProductInfo struct {
 	//
 	ImageIds []string `json:"image_ids,omitempty"`
 	//
+	ProductImageFields []string `json:"product_image_fields,omitempty"`
+	//
+	ProductNameFields []string `json:"product_name_fields,omitempty"`
+	//
+	ProductSellingPointFields []string `json:"product_selling_point_fields,omitempty"`
+	//
 	SellingPoints []string `json:"selling_points,omitempty"`
 	//
 	Titles []string `json:"titles,omitempty"`

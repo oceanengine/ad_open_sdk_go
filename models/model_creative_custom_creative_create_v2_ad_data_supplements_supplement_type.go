@@ -15,8 +15,8 @@ type CreativeCustomCreativeCreateV2AdDataSupplementsSupplementType string
 
 // List of creative_custom_creative_create_v2_ad_data_supplements_supplement_type
 const (
-	NORMAL_CreativeCustomCreativeCreateV2AdDataSupplementsSupplementType     CreativeCustomCreativeCreateV2AdDataSupplementsSupplementType = "NORMAL"
 	CLOUD_GAME_CreativeCustomCreativeCreateV2AdDataSupplementsSupplementType CreativeCustomCreativeCreateV2AdDataSupplementsSupplementType = "CLOUD_GAME"
+	NORMAL_CreativeCustomCreativeCreateV2AdDataSupplementsSupplementType     CreativeCustomCreativeCreateV2AdDataSupplementsSupplementType = "NORMAL"
 )
 
 // Ptr returns reference to creative_custom_creative_create_v2_ad_data_supplements_supplement_type value

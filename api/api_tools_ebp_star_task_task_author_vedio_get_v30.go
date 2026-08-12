@@ -23,21 +23,27 @@ import (
 type ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService service
 
 type ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest struct {
-	ctx                      context.Context
-	ApiService               *ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService
-	enterpriseOrganizationId *int64
-	starTaskId               *int64
-	accountId                *int64
-	accountType              *ToolsEbpStarTaskTaskAuthorVedioGetV30AccountType
-	awemeId                  *string
-	starTaskVideoRange       *ToolsEbpStarTaskTaskAuthorVedioGetV30StarTaskVideoRange
-	filtering                *ToolsEbpStarTaskTaskAuthorVedioGetV30Filtering
-	cursor                   *int64
-	count                    *int64
+	ctx                context.Context
+	ApiService         *ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService
+	accountId          *int64
+	accountType        *ToolsEbpStarTaskTaskAuthorVedioGetV30AccountType
+	starTaskId         *int64
+	starTaskVideoRange *ToolsEbpStarTaskTaskAuthorVedioGetV30StarTaskVideoRange
+	awemeId            *string
+	filtering          *ToolsEbpStarTaskTaskAuthorVedioGetV30Filtering
+	cursor             *int64
+	count              *int64
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) EnterpriseOrganizationId(enterpriseOrganizationId int64) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
-	r.enterpriseOrganizationId = &enterpriseOrganizationId
+// 账户ID
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
+	r.accountId = &accountId
+	return r
+}
+
+// 账户类型
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) AccountType(accountType ToolsEbpStarTaskTaskAuthorVedioGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
+	r.accountType = &accountType
 	return r
 }
 
@@ -46,26 +52,15 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) StarTaskId(s
 	return r
 }
 
-// 客户id
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
-	r.accountId = &accountId
-	return r
-}
-
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) AccountType(accountType ToolsEbpStarTaskTaskAuthorVedioGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
-	r.accountType = &accountType
+// 返回的视频范围
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) StarTaskVideoRange(starTaskVideoRange ToolsEbpStarTaskTaskAuthorVedioGetV30StarTaskVideoRange) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
+	r.starTaskVideoRange = &starTaskVideoRange
 	return r
 }
 
 // 抖音号id
 func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) AwemeId(awemeId string) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
 	r.awemeId = &awemeId
-	return r
-}
-
-// 返回的视频范围
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) StarTaskVideoRange(starTaskVideoRange ToolsEbpStarTaskTaskAuthorVedioGetV30StarTaskVideoRange) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
-	r.starTaskVideoRange = &starTaskVideoRange
 	return r
 }
 
@@ -139,26 +134,24 @@ func (a *ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService) getExecute(r *ApiOpenA
 	formFiles = make(map[string]*FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
-	if r.enterpriseOrganizationId == nil {
-		return localVarReturnValue, nil, ReportError("enterpriseOrganizationId is required and must be specified")
-	}
-	if r.starTaskId == nil {
-		return localVarReturnValue, nil, ReportError("starTaskId is required and must be specified")
-	}
 	if r.accountId == nil {
 		return localVarReturnValue, nil, ReportError("accountId is required and must be specified")
 	}
 	if r.accountType == nil {
 		return localVarReturnValue, nil, ReportError("accountType is required and must be specified")
 	}
-
-	parameterAddToHeaderOrQuery(localVarQueryParams, "enterprise_organization_id", r.enterpriseOrganizationId)
-	if r.awemeId != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "aweme_id", r.awemeId)
+	if r.starTaskId == nil {
+		return localVarReturnValue, nil, ReportError("starTaskId is required and must be specified")
 	}
+
+	parameterAddToHeaderOrQuery(localVarQueryParams, "account_id", r.accountId)
+	parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "star_task_id", r.starTaskId)
 	if r.starTaskVideoRange != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "star_task_video_range", r.starTaskVideoRange)
+	}
+	if r.awemeId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "aweme_id", r.awemeId)
 	}
 	if r.filtering != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "filtering", r.filtering)
@@ -169,8 +162,6 @@ func (a *ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService) getExecute(r *ApiOpenA
 	if r.count != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "count", r.count)
 	}
-	parameterAddToHeaderOrQuery(localVarQueryParams, "account_id", r.accountId)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

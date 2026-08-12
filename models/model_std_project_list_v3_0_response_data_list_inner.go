@@ -51,6 +51,8 @@ type StdProjectListV30ResponseDataListInner struct {
 	// 下载链接
 	DownloadUrl *string `json:"download_url,omitempty"`
 	//
+	DpaImageMode []*StdProjectListV30DataListDpaImageMode `json:"dpa_image_mode,omitempty"`
+	//
 	EndTime        *string                                  `json:"end_time,omitempty"`
 	ExternalAction *StdProjectListV30DataListExternalAction `json:"external_action,omitempty"`
 	//
@@ -60,6 +62,8 @@ type StdProjectListV30ResponseDataListInner struct {
 	//
 	InstanceId       *int64                                     `json:"instance_id,omitempty"`
 	InventoryCatalog *StdProjectListV30DataListInventoryCatalog `json:"inventory_catalog,omitempty"`
+	// 首选媒体 枚举值： - 今日头条 - 西瓜视频 - 抖音 - 番茄系媒体 - 穿山甲
+	InventoryType    []*StdProjectListV30DataListInventoryType  `json:"inventory_type,omitempty"`
 	IsCommentDisable *StdProjectListV30DataListIsCommentDisable `json:"is_comment_disable,omitempty"`
 	//
 	LandingPageStayTime *int64                                `json:"landing_page_stay_time,omitempty"`
@@ -114,6 +118,9 @@ type StdProjectListV30ResponseDataListInner struct {
 	// 预约链接
 	SubscribeUrl    *string                                                `json:"subscribe_url,omitempty"`
 	TrackUrlSetting *StdProjectListV30ResponseDataListInnerTrackUrlSetting `json:"track_url_setting,omitempty"`
+	// 穿山甲ROI系数
+	UnionBidRatio  *float64                                 `json:"union_bid_ratio,omitempty"`
+	UnionVideoType *StdProjectListV30DataListUnionVideoType `json:"union_video_type,omitempty"`
 	// 升级版商品库产品ID
 	UniqueProductId *int64 `json:"unique_product_id,omitempty"`
 }

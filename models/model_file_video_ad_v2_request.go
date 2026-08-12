@@ -23,6 +23,8 @@ type FileVideoAdV2Request struct {
 	//
 	Labels     []string                 `json:"labels,omitempty"`
 	UploadType *FileVideoAdV2UploadType `json:"upload_type,omitempty"`
+	// 视频封面
+	VideoCoverId *string `json:"video_cover_id,omitempty"`
 	// 视频文件 允许格式：mp4、mpeg、3gp、avi（10s超时限制） upload_type为UPLOAD_BY_File必填
 	VideoFile **FormFileInfo `json:"video_file,omitempty"`
 	// 视频的md5值(用于服务端校验) upload_type为UPLOAD_BY_File必填

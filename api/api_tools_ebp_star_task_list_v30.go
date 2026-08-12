@@ -26,9 +26,9 @@ type ApiOpenApiV30ToolsEbpStarTaskListGetRequest struct {
 	ctx            context.Context
 	ApiService     *ToolsEbpStarTaskListV30ApiService
 	accountId      *int64
+	accountType    *ToolsEbpStarTaskListV30AccountType
 	startDate      *string
 	endDate        *string
-	accountType    *ToolsEbpStarTaskListV30AccountType
 	starTaskSource *ToolsEbpStarTaskListV30StarTaskSource
 	filtering      *ToolsEbpStarTaskListV30Filtering
 	orderField     *string
@@ -37,29 +37,31 @@ type ApiOpenApiV30ToolsEbpStarTaskListGetRequest struct {
 	pageSize       *int32
 }
 
+// 账户ID
 func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
 	r.accountId = &accountId
 	return r
 }
 
-// 查询起始日期
-func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) StartDate(startDate string) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
-	r.startDate = &startDate
-	return r
-}
-
-// 查询结束日期
-func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) EndDate(endDate string) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
-	r.endDate = &endDate
-	return r
-}
-
+// 账户类型
 func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) AccountType(accountType ToolsEbpStarTaskListV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-// 创建来源，允许值： MY_CREATIONS 归属组织管理 SHARING 组织被共享
+// 查询起始日期，时间格式：yyyy-mm-dd
+func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) StartDate(startDate string) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
+	r.startDate = &startDate
+	return r
+}
+
+// 查询结束日期，时间格式：yyyy-mm-dd
+func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) EndDate(endDate string) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
+	r.endDate = &endDate
+	return r
+}
+
+// 创建来源，允许值： - &#x60;MY_CREATIONS&#x60; 归属组织管理 - &#x60;SHARING&#x60; 组织被共享
 func (r *ApiOpenApiV30ToolsEbpStarTaskListGetRequest) StarTaskSource(starTaskSource ToolsEbpStarTaskListV30StarTaskSource) *ApiOpenApiV30ToolsEbpStarTaskListGetRequest {
 	r.starTaskSource = &starTaskSource
 	return r
@@ -149,6 +151,9 @@ func (a *ToolsEbpStarTaskListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpS
 	if r.accountId == nil {
 		return localVarReturnValue, nil, ReportError("accountId is required and must be specified")
 	}
+	if r.accountType == nil {
+		return localVarReturnValue, nil, ReportError("accountType is required and must be specified")
+	}
 	if r.startDate == nil {
 		return localVarReturnValue, nil, ReportError("startDate is required and must be specified")
 	}
@@ -157,9 +162,7 @@ func (a *ToolsEbpStarTaskListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpS
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "account_id", r.accountId)
-	if r.accountType != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
-	}
+	parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
 	if r.starTaskSource != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "star_task_source", r.starTaskSource)
 	}

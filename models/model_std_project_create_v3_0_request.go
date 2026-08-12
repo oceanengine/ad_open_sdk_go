@@ -58,7 +58,10 @@ type StdProjectCreateV30Request struct {
 	//
 	InstanceId             *int64                                            `json:"instance_id,omitempty"`
 	InternalAdvertiserInfo *StdProjectCreateV30RequestInternalAdvertiserInfo `json:"internal_advertiser_info,omitempty"`
-	IsCommentDisable       *StdProjectCreateV30IsCommentDisable              `json:"is_comment_disable,omitempty"`
+	InventoryCatalog       *StdProjectCreateV30InventoryCatalog              `json:"inventory_catalog,omitempty"`
+	//
+	InventoryType    []*StdProjectCreateV30InventoryType  `json:"inventory_type,omitempty"`
+	IsCommentDisable *StdProjectCreateV30IsCommentDisable `json:"is_comment_disable,omitempty"`
 	//
 	Keywords            []*StdProjectCreateV30RequestKeywordsInner `json:"keywords,omitempty"`
 	LandingPageStayTime *StdProjectCreateV30LandingPageStayTime    `json:"landing_page_stay_time,omitempty"`
@@ -79,6 +82,8 @@ type StdProjectCreateV30Request struct {
 	ProductPlatformId *int64                                      `json:"product_platform_id,omitempty"`
 	ProjectMaterials  *StdProjectCreateV30RequestProjectMaterials `json:"project_materials,omitempty"`
 	//
+	QuickAppId *int64 `json:"quick_app_id,omitempty"`
+	//
 	RoiGoal *float64 `json:"roi_goal,omitempty"`
 	//
 	ScheduleTime           *string                                    `json:"schedule_time,omitempty"`
@@ -94,6 +99,9 @@ type StdProjectCreateV30Request struct {
 	//
 	SubscribeUrl    *string                                    `json:"subscribe_url,omitempty"`
 	TrackUrlSetting *StdProjectCreateV30RequestTrackUrlSetting `json:"track_url_setting,omitempty"`
+	//
+	UnionBidRatio  *float64                           `json:"union_bid_ratio,omitempty"`
+	UnionVideoType *StdProjectCreateV30UnionVideoType `json:"union_video_type,omitempty"`
 	//
 	UniqueProductId *int64 `json:"unique_product_id,omitempty"`
 }

@@ -15,6 +15,15 @@ type StdProjectCreateV30RequestProjectMaterialsProductInfo struct {
 	//
 	ImageIds []string `json:"image_ids,omitempty"`
 	//
+	ProductImageFields []string                                                        `json:"product_image_fields,omitempty"`
+	ProductImageType   *StdProjectCreateV30ProjectMaterialsProductInfoProductImageType `json:"product_image_type,omitempty"`
+	//
+	ProductNameFields []string                                                       `json:"product_name_fields,omitempty"`
+	ProductNameType   *StdProjectCreateV30ProjectMaterialsProductInfoProductNameType `json:"product_name_type,omitempty"`
+	//
+	ProductSellingPointFields []string                                                               `json:"product_selling_point_fields,omitempty"`
+	ProductSellingPointType   *StdProjectCreateV30ProjectMaterialsProductInfoProductSellingPointType `json:"product_selling_point_type,omitempty"`
+	//
 	SellingPoints []string `json:"selling_points,omitempty"`
 	//
 	Titles []string `json:"titles,omitempty"`

@@ -12,7 +12,9 @@ package models
 
 // ToolsClueCallbackV2RequestEventData
 type ToolsClueCallbackV2RequestEventData struct {
-	ReasonCode *ToolsClueCallbackV2EventDataReasonCode `json:"reason_code,omitempty"`
+	// 成单金额
+	DealSubAmount *int32                                  `json:"deal_sub_amount,omitempty"`
+	ReasonCode    *ToolsClueCallbackV2EventDataReasonCode `json:"reason_code,omitempty"`
 	//
 	ReasonMessage *string `json:"reason_message,omitempty"`
 }

@@ -37,6 +37,7 @@ type ApiOpenApiV30EventManagerDbtGetGetRequest struct {
 	productSetting      *EventManagerDbtGetV30ProductSetting
 	multiDeliveryMedium *EventManagerDbtGetV30MultiDeliveryMedium
 	deliveryMedium      *EventManagerDbtGetV30DeliveryMedium
+	deliveryProduct     *string
 }
 
 // 广告主id
@@ -100,6 +101,11 @@ func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) MultiDeliveryMedium(multiDel
 
 func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) DeliveryMedium(deliveryMedium EventManagerDbtGetV30DeliveryMedium) *ApiOpenApiV30EventManagerDbtGetGetRequest {
 	r.deliveryMedium = &deliveryMedium
+	return r
+}
+
+func (r *ApiOpenApiV30EventManagerDbtGetGetRequest) DeliveryProduct(deliveryProduct string) *ApiOpenApiV30EventManagerDbtGetGetRequest {
+	r.deliveryProduct = &deliveryProduct
 	return r
 }
 
@@ -196,6 +202,9 @@ func (a *EventManagerDbtGetV30ApiService) getExecute(r *ApiOpenApiV30EventManage
 	}
 	if r.deliveryMedium != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "delivery_medium", r.deliveryMedium)
+	}
+	if r.deliveryProduct != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "delivery_product", r.deliveryProduct)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

@@ -23,6 +23,8 @@ type OcProjectMaterialGetV30ResponseDataVideoMaterialListInner struct {
 	//
 	MaterialStatusSecond []*OcProjectMaterialGetV30DataVideoMaterialListMaterialStatusSecond `json:"material_status_second,omitempty"`
 	//
+	VideoCoverId *string `json:"video_cover_id,omitempty"`
+	//
 	VideoCoverUri *string `json:"video_cover_uri,omitempty"`
 	//
 	VideoId *string `json:"video_id,omitempty"`

@@ -23,10 +23,9 @@ import (
 )
 
 type ApiOpenApiV30ToolsEbpStarTaskGetGetRequestExample struct {
-	AccountId                int64                         `json:"account_id"`
-	EnterpriseOrganizationId int64                         `json:"enterprise_organization_id"`
-	StarTaskId               int64                         `json:"star_task_id"`
-	Account                  ToolsEbpStarTaskGetV30Account `json:"account"`
+	AccountId   int64                             `json:"account_id"`
+	AccountType ToolsEbpStarTaskGetV30AccountType `json:"account_type"`
+	StarTaskId  int64                             `json:"star_task_id"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/ebp/star_task/get/ Get
@@ -48,7 +47,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsEbpStarTaskGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).EnterpriseOrganizationId(request.EnterpriseOrganizationId).StarTaskId(request.StarTaskId).Account(request.Account).
+		AccountId(request.AccountId).AccountType(request.AccountType).StarTaskId(request.StarTaskId).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

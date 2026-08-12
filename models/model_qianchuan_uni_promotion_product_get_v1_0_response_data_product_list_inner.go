@@ -21,6 +21,8 @@ type QianchuanUniPromotionProductGetV10ResponseDataProductListInner struct {
 	ChannelType *QianchuanUniPromotionProductGetV10DataProductListChannelType `json:"channel_type,omitempty"`
 	//
 	GrayReason []string `json:"gray_reason,omitempty"`
+	// 乘方创编商品列表，展示“星选素材”标
+	HasRelatedStarTask *bool `json:"has_related_star_task,omitempty"`
 	//
 	Id *int64 `json:"id,omitempty"`
 	//

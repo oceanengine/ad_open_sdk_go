@@ -26,10 +26,10 @@ type ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *ToolsEbpStarTaskTaskVideoDataGetV30ApiService
 	accountId   *int64
+	accountType *ToolsEbpStarTaskTaskVideoDataGetV30AccountType
 	starTaskId  *int64
 	startDate   *string
 	endDate     *string
-	accountType *ToolsEbpStarTaskTaskVideoDataGetV30AccountType
 	filtering   *ToolsEbpStarTaskTaskVideoDataGetV30Filtering
 	orderField  *string
 	orderType   *ToolsEbpStarTaskTaskVideoDataGetV30OrderType
@@ -39,6 +39,11 @@ type ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest struct {
 
 func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest {
 	r.accountId = &accountId
+	return r
+}
+
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) AccountType(accountType ToolsEbpStarTaskTaskVideoDataGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest {
+	r.accountType = &accountType
 	return r
 }
 
@@ -56,11 +61,6 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) StartDate(star
 // 数据统计结束时间，格式：YYYY-MM-DD
 func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) EndDate(endDate string) *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest {
 	r.endDate = &endDate
-	return r
-}
-
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) AccountType(accountType ToolsEbpStarTaskTaskVideoDataGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest {
-	r.accountType = &accountType
 	return r
 }
 
@@ -148,6 +148,9 @@ func (a *ToolsEbpStarTaskTaskVideoDataGetV30ApiService) getExecute(r *ApiOpenApi
 	if r.accountId == nil {
 		return localVarReturnValue, nil, ReportError("accountId is required and must be specified")
 	}
+	if r.accountType == nil {
+		return localVarReturnValue, nil, ReportError("accountType is required and must be specified")
+	}
 	if r.starTaskId == nil {
 		return localVarReturnValue, nil, ReportError("starTaskId is required and must be specified")
 	}
@@ -159,9 +162,7 @@ func (a *ToolsEbpStarTaskTaskVideoDataGetV30ApiService) getExecute(r *ApiOpenApi
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "account_id", r.accountId)
-	if r.accountType != nil {
-		parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
-	}
+	parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "star_task_id", r.starTaskId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "start_date", r.startDate)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "end_date", r.endDate)

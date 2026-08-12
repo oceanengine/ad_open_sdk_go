@@ -15,14 +15,14 @@ type StdProjectListV30DataListAudienceHideIfConverted string
 
 // List of std_project_list_v3.0_data_list_audience_hide_if_converted
 const (
-	AD_StdProjectListV30DataListAudienceHideIfConverted           StdProjectListV30DataListAudienceHideIfConverted = "AD"
 	ADVERTISER_StdProjectListV30DataListAudienceHideIfConverted   StdProjectListV30DataListAudienceHideIfConverted = "ADVERTISER"
 	APP_StdProjectListV30DataListAudienceHideIfConverted          StdProjectListV30DataListAudienceHideIfConverted = "APP"
-	CAMPAIGN_StdProjectListV30DataListAudienceHideIfConverted     StdProjectListV30DataListAudienceHideIfConverted = "CAMPAIGN"
 	CUSTOMER_StdProjectListV30DataListAudienceHideIfConverted     StdProjectListV30DataListAudienceHideIfConverted = "CUSTOMER"
 	GLOBAL_APP_StdProjectListV30DataListAudienceHideIfConverted   StdProjectListV30DataListAudienceHideIfConverted = "GLOBAL_APP"
 	NO_EXCLUDE_StdProjectListV30DataListAudienceHideIfConverted   StdProjectListV30DataListAudienceHideIfConverted = "NO_EXCLUDE"
 	ORGANIZATION_StdProjectListV30DataListAudienceHideIfConverted StdProjectListV30DataListAudienceHideIfConverted = "ORGANIZATION"
+	PROJECT_StdProjectListV30DataListAudienceHideIfConverted      StdProjectListV30DataListAudienceHideIfConverted = "PROJECT"
+	PROMOTION_StdProjectListV30DataListAudienceHideIfConverted    StdProjectListV30DataListAudienceHideIfConverted = "PROMOTION"
 )
 
 // Ptr returns reference to std_project_list_v3.0_data_list_audience_hide_if_converted value

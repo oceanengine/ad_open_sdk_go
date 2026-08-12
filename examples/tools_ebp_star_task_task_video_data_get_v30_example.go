@@ -24,10 +24,10 @@ import (
 
 type ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequestExample struct {
 	AccountId   int64                                          `json:"account_id"`
+	AccountType ToolsEbpStarTaskTaskVideoDataGetV30AccountType `json:"account_type"`
 	StarTaskId  int64                                          `json:"star_task_id"`
 	StartDate   string                                         `json:"start_date"`
 	EndDate     string                                         `json:"end_date"`
-	AccountType ToolsEbpStarTaskTaskVideoDataGetV30AccountType `json:"account_type,omitempty"`
 	Filtering   ToolsEbpStarTaskTaskVideoDataGetV30Filtering   `json:"filtering,omitempty"`
 	OrderField  string                                         `json:"order_field,omitempty"`
 	OrderType   ToolsEbpStarTaskTaskVideoDataGetV30OrderType   `json:"order_type,omitempty"`
@@ -54,7 +54,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsEbpStarTaskTaskVideoDataGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AccountId(request.AccountId).StarTaskId(request.StarTaskId).StartDate(request.StartDate).EndDate(request.EndDate).AccountType(request.AccountType).Filtering(request.Filtering).OrderField(request.OrderField).OrderType(request.OrderType).Page(request.Page).PageSize(request.PageSize).
+		AccountId(request.AccountId).AccountType(request.AccountType).StarTaskId(request.StarTaskId).StartDate(request.StartDate).EndDate(request.EndDate).Filtering(request.Filtering).OrderField(request.OrderField).OrderType(request.OrderType).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

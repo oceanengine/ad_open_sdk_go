@@ -24,13 +24,27 @@ type StdProjectCreateV30RequestAudience struct {
 	Age        []*StdProjectCreateV30AudienceAge      `json:"age,omitempty"`
 	AndroidOsv *StdProjectCreateV30AudienceAndroidOsv `json:"android_osv,omitempty"`
 	//
+	AutoExtendTargets []*StdProjectCreateV30AudienceAutoExtendTargets `json:"auto_extend_targets,omitempty"`
+	//
 	City                  []int64                                           `json:"city,omitempty"`
 	ConvertedTimeDuration *StdProjectCreateV30AudienceConvertedTimeDuration `json:"converted_time_duration,omitempty"`
-	District              *StdProjectCreateV30AudienceDistrict              `json:"district,omitempty"`
+	//
+	DeviceBrand []*StdProjectCreateV30AudienceDeviceBrand `json:"device_brand,omitempty"`
+	//
+	DeviceType []*StdProjectCreateV30AudienceDeviceType `json:"device_type,omitempty"`
+	District   *StdProjectCreateV30AudienceDistrict     `json:"district,omitempty"`
+	// DPA 定向条件
+	DpaProductTarget    []*StdProjectCreateV30RequestAudienceDpaProductTargetInner `json:"dpa_product_target,omitempty"`
+	DpaRtaRecommendType *StdProjectCreateV30AudienceDpaRtaRecommendType            `json:"dpa_rta_recommend_type,omitempty"`
+	DpaRtaSwitch        *StdProjectCreateV30AudienceDpaRtaSwitch                   `json:"dpa_rta_switch,omitempty"`
+	//
+	ExcludeFlowPackage []int64 `json:"exclude_flow_package,omitempty"`
 	//
 	FilterEvent        []*StdProjectCreateV30AudienceFilterEvent      `json:"filter_event,omitempty"`
 	FilterOwnAwemeFans *StdProjectCreateV30AudienceFilterOwnAwemeFans `json:"filter_own_aweme_fans,omitempty"`
-	Gender             *StdProjectCreateV30AudienceGender             `json:"gender,omitempty"`
+	//
+	FlowPackage []int64                            `json:"flow_package,omitempty"`
+	Gender      *StdProjectCreateV30AudienceGender `json:"gender,omitempty"`
 	//
 	Geolocation        []*StdProjectCreateV30RequestAudienceGeolocationInner `json:"geolocation,omitempty"`
 	HarmonyOsv         *StdProjectCreateV30AudienceHarmonyOsv                `json:"harmony_osv,omitempty"`
@@ -53,6 +67,9 @@ type StdProjectCreateV30RequestAudience struct {
 	//
 	RetargetingTagsExclude []int64 `json:"retargeting_tags_exclude,omitempty"`
 	//
-	RetargetingTagsInclude []int64                                 `json:"retargeting_tags_include,omitempty"`
-	SmartExtend            *StdProjectCreateV30AudienceSmartExtend `json:"smart_extend,omitempty"`
+	RetargetingTagsInclude []int64 `json:"retargeting_tags_include,omitempty"`
+	//
+	RtaId                  *int64                                             `json:"rta_id,omitempty"`
+	SmartExtend            *StdProjectCreateV30AudienceSmartExtend            `json:"smart_extend,omitempty"`
+	SuperiorPopularityType *StdProjectCreateV30AudienceSuperiorPopularityType `json:"superior_popularity_type,omitempty"`
 }

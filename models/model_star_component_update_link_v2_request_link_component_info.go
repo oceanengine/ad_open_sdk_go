@@ -16,6 +16,10 @@ type StarComponentUpdateLinkV2RequestLinkComponentInfo struct {
 	LinkAndroid *string `json:"link_android,omitempty"`
 	// Android app 下载链接 HTTPS URL，Android下载时需要
 	LinkAndroidDownload *string `json:"link_android_download,omitempty"`
+	// 鸿蒙落地页链接 HTTPS URL
+	LinkHarmony *string `json:"link_harmony,omitempty"`
+	// 鸿蒙 app 下载链接 HTTPS URL，鸿蒙下载时需要
+	LinkHarmonyDownload *string `json:"link_harmony_download,omitempty"`
 	// iOS落地页链接 HTTPS URL
 	LinkIos *string `json:"link_ios,omitempty"`
 	// iOS app 下载链接 App store 链接，iOS下载时需要

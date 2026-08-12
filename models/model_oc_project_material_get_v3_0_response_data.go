@@ -21,8 +21,12 @@ type OcProjectMaterialGetV30ResponseData struct {
 	CarouselMaterialList []*OcProjectMaterialGetV30ResponseDataCarouselMaterialListInner `json:"carousel_material_list,omitempty"`
 	//
 	ComponentMaterialList []*OcProjectMaterialGetV30ResponseDataComponentMaterialListInner `json:"component_material_list,omitempty"`
+	// 落地页链接字段选择
+	ExternalUrlField *string `json:"external_url_field,omitempty"`
 	//
 	ExternalUrlMaterialList []string `json:"external_url_material_list,omitempty"`
+	// 落地页检测参数
+	ExternalUrlParams *string `json:"external_url_params,omitempty"`
 	//
 	ImageMaterialList []*OcProjectMaterialGetV30ResponseDataImageMaterialListInner `json:"image_material_list,omitempty"`
 	//
@@ -30,9 +34,15 @@ type OcProjectMaterialGetV30ResponseData struct {
 	MiniProgramInfo         *OcProjectMaterialGetV30ResponseDataMiniProgramInfo                `json:"mini_program_info,omitempty"`
 	//
 	OpenUrl *string `json:"open_url,omitempty"`
+	// 直达链接字段选择
+	OpenUrlField *string `json:"open_url_field,omitempty"`
+	// 直达链接检测参数
+	OpenUrlParams *string                                 `json:"open_url_params,omitempty"`
+	OpenUrlType   *OcProjectMaterialGetV30DataOpenUrlType `json:"open_url_type,omitempty"`
 	//
-	OpenUrls []string                                     `json:"open_urls,omitempty"`
-	PageInfo *OcProjectMaterialGetV30ResponseDataPageInfo `json:"page_info,omitempty"`
+	OpenUrls   []string                                     `json:"open_urls,omitempty"`
+	PageInfo   *OcProjectMaterialGetV30ResponseDataPageInfo `json:"page_info,omitempty"`
+	ParamsType *OcProjectMaterialGetV30DataParamsType       `json:"params_type,omitempty"`
 	//
 	PlayletSeriesUrlInfo []*OcProjectMaterialGetV30ResponseDataPlayletSeriesUrlInfoInner `json:"playlet_series_url_info,omitempty"`
 	//

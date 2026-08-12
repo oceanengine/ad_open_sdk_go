@@ -16,8 +16,8 @@ type AudiencePackageCreateV2District string
 // List of audience_package_create_v2_district
 const (
 	REGION_AudiencePackageCreateV2District            AudiencePackageCreateV2District = "REGION"
-	BUSINESS_DISTRICT_AudiencePackageCreateV2District AudiencePackageCreateV2District = "BUSINESS_DISTRICT"
 	OVERSEA_AudiencePackageCreateV2District           AudiencePackageCreateV2District = "OVERSEA"
+	BUSINESS_DISTRICT_AudiencePackageCreateV2District AudiencePackageCreateV2District = "BUSINESS_DISTRICT"
 	NONE_AudiencePackageCreateV2District              AudiencePackageCreateV2District = "NONE"
 )
 

@@ -15,8 +15,8 @@ type CreativeProceduralCreativeUpdateV2AdDataPriorityTrial string
 
 // List of creative_procedural_creative_update_v2_ad_data_priority_trial
 const (
-	OFF_CreativeProceduralCreativeUpdateV2AdDataPriorityTrial CreativeProceduralCreativeUpdateV2AdDataPriorityTrial = "OFF"
 	ON_CreativeProceduralCreativeUpdateV2AdDataPriorityTrial  CreativeProceduralCreativeUpdateV2AdDataPriorityTrial = "ON"
+	OFF_CreativeProceduralCreativeUpdateV2AdDataPriorityTrial CreativeProceduralCreativeUpdateV2AdDataPriorityTrial = "OFF"
 )
 
 // Ptr returns reference to creative_procedural_creative_update_v2_ad_data_priority_trial value

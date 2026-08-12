@@ -26,16 +26,28 @@ type StdProjectListV30ResponseDataListInnerAudience struct {
 	//
 	AudienceType *string `json:"audience_type,omitempty"`
 	//
-	City                  []int64                                                    `json:"city,omitempty"`
-	ConvertedTimeDuration *StdProjectListV30DataListAudienceConvertedTimeDuration    `json:"converted_time_duration,omitempty"`
-	District              *StdProjectListV30DataListAudienceDistrict                 `json:"district,omitempty"`
-	FilterOwnAwemeFans    *StdProjectListV30DataListAudienceFilterOwnAwemeFans       `json:"filter_own_aweme_fans,omitempty"`
-	Gender                *StdProjectListV30DataListAudienceGender                   `json:"gender,omitempty"`
-	Geolocation           *StdProjectListV30ResponseDataListInnerAudienceGeolocation `json:"geolocation,omitempty"`
-	HarmonyOsv            *StdProjectListV30DataListAudienceHarmonyOsv               `json:"harmony_osv,omitempty"`
-	HideIfConverted       *StdProjectListV30DataListAudienceHideIfConverted          `json:"hide_if_converted,omitempty"`
-	HideIfExists          *StdProjectListV30DataListAudienceHideIfExists             `json:"hide_if_exists,omitempty"`
-	InterestActionMode    *StdProjectListV30DataListAudienceInterestActionMode       `json:"interest_action_mode,omitempty"`
+	AutoExtendTargets []*StdProjectListV30DataListAudienceAutoExtendTargets `json:"auto_extend_targets,omitempty"`
+	//
+	City                  []int64                                                 `json:"city,omitempty"`
+	ConvertedTimeDuration *StdProjectListV30DataListAudienceConvertedTimeDuration `json:"converted_time_duration,omitempty"`
+	//
+	DeviceBrand []*StdProjectListV30DataListAudienceDeviceBrand `json:"device_brand,omitempty"`
+	District    *StdProjectListV30DataListAudienceDistrict      `json:"district,omitempty"`
+	//
+	DpaProductTarget    []*StdProjectListV30ResponseDataListInnerAudienceDpaProductTargetInner `json:"dpa_product_target,omitempty"`
+	DpaRtaRecommendType *StdProjectListV30DataListAudienceDpaRtaRecommendType                  `json:"dpa_rta_recommend_type,omitempty"`
+	DpaRtaSwitch        *StdProjectListV30DataListAudienceDpaRtaSwitch                         `json:"dpa_rta_switch,omitempty"`
+	//
+	ExcludeFlowPackage []int64                                              `json:"exclude_flow_package,omitempty"`
+	FilterOwnAwemeFans *StdProjectListV30DataListAudienceFilterOwnAwemeFans `json:"filter_own_aweme_fans,omitempty"`
+	//
+	FlowPackage        []int64                                                    `json:"flow_package,omitempty"`
+	Gender             *StdProjectListV30DataListAudienceGender                   `json:"gender,omitempty"`
+	Geolocation        *StdProjectListV30ResponseDataListInnerAudienceGeolocation `json:"geolocation,omitempty"`
+	HarmonyOsv         *StdProjectListV30DataListAudienceHarmonyOsv               `json:"harmony_osv,omitempty"`
+	HideIfConverted    *StdProjectListV30DataListAudienceHideIfConverted          `json:"hide_if_converted,omitempty"`
+	HideIfExists       *StdProjectListV30DataListAudienceHideIfExists             `json:"hide_if_exists,omitempty"`
+	InterestActionMode *StdProjectListV30DataListAudienceInterestActionMode       `json:"interest_action_mode,omitempty"`
 	//
 	InterestCategories []int64 `json:"interest_categories,omitempty"`
 	//
@@ -51,6 +63,8 @@ type StdProjectListV30ResponseDataListInnerAudience struct {
 	//
 	RetargetingTagsExclude []int64 `json:"retargeting_tags_exclude,omitempty"`
 	//
-	RetargetingTagsInclude []int64                                       `json:"retargeting_tags_include,omitempty"`
-	SmartExtend            *StdProjectListV30DataListAudienceSmartExtend `json:"smart_extend,omitempty"`
+	RetargetingTagsInclude []int64 `json:"retargeting_tags_include,omitempty"`
+	// RTA策略ID
+	RtaId       *int64                                        `json:"rta_id,omitempty"`
+	SmartExtend *StdProjectListV30DataListAudienceSmartExtend `json:"smart_extend,omitempty"`
 }

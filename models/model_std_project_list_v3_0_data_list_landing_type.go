@@ -16,8 +16,10 @@ type StdProjectListV30DataListLandingType string
 // List of std_project_list_v3.0_data_list_landing_type
 const (
 	APP_StdProjectListV30DataListLandingType        StdProjectListV30DataListLandingType = "APP"
+	DPA_StdProjectListV30DataListLandingType        StdProjectListV30DataListLandingType = "DPA"
 	LINK_StdProjectListV30DataListLandingType       StdProjectListV30DataListLandingType = "LINK"
 	MICRO_GAME_StdProjectListV30DataListLandingType StdProjectListV30DataListLandingType = "MICRO_GAME"
+	QUICK_APP_StdProjectListV30DataListLandingType  StdProjectListV30DataListLandingType = "QUICK_APP"
 	SHOP_StdProjectListV30DataListLandingType       StdProjectListV30DataListLandingType = "SHOP"
 )
 

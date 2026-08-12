@@ -26,13 +26,25 @@ type StdProjectUpdateV30RequestAudience struct {
 	Age        []*StdProjectUpdateV30AudienceAge      `json:"age,omitempty"`
 	AndroidOsv *StdProjectUpdateV30AudienceAndroidOsv `json:"android_osv,omitempty"`
 	//
+	AutoExtendTargets []*StdProjectUpdateV30AudienceAutoExtendTargets `json:"auto_extend_targets,omitempty"`
+	//
 	City                  []int64                                           `json:"city,omitempty"`
 	ConvertedTimeDuration *StdProjectUpdateV30AudienceConvertedTimeDuration `json:"converted_time_duration,omitempty"`
-	District              *StdProjectUpdateV30AudienceDistrict              `json:"district,omitempty"`
+	//
+	DeviceBrand []*StdProjectUpdateV30AudienceDeviceBrand `json:"device_brand,omitempty"`
+	//
+	DeviceType []*StdProjectUpdateV30AudienceDeviceType `json:"device_type,omitempty"`
+	District   *StdProjectUpdateV30AudienceDistrict     `json:"district,omitempty"`
+	// DPA 定向条件
+	DpaProductTarget []*StdProjectUpdateV30RequestAudienceDpaProductTargetInner `json:"dpa_product_target,omitempty"`
+	//
+	ExcludeFlowPackage []int64 `json:"exclude_flow_package,omitempty"`
 	//
 	FilterEvent        []*StdProjectUpdateV30AudienceFilterEvent      `json:"filter_event,omitempty"`
 	FilterOwnAwemeFans *StdProjectUpdateV30AudienceFilterOwnAwemeFans `json:"filter_own_aweme_fans,omitempty"`
-	Gender             *StdProjectUpdateV30AudienceGender             `json:"gender,omitempty"`
+	//
+	FlowPackage []int64                            `json:"flow_package,omitempty"`
+	Gender      *StdProjectUpdateV30AudienceGender `json:"gender,omitempty"`
 	//
 	Geolocation        []*StdProjectUpdateV30RequestAudienceGeolocationInner `json:"geolocation,omitempty"`
 	HarmonyOsv         *StdProjectUpdateV30AudienceHarmonyOsv                `json:"harmony_osv,omitempty"`
@@ -55,6 +67,7 @@ type StdProjectUpdateV30RequestAudience struct {
 	//
 	RetargetingTagsExclude []int64 `json:"retargeting_tags_exclude,omitempty"`
 	//
-	RetargetingTagsInclude []int64                                 `json:"retargeting_tags_include,omitempty"`
-	SmartExtend            *StdProjectUpdateV30AudienceSmartExtend `json:"smart_extend,omitempty"`
+	RetargetingTagsInclude []int64                                            `json:"retargeting_tags_include,omitempty"`
+	SmartExtend            *StdProjectUpdateV30AudienceSmartExtend            `json:"smart_extend,omitempty"`
+	SuperiorPopularityType *StdProjectUpdateV30AudienceSuperiorPopularityType `json:"superior_popularity_type,omitempty"`
 }

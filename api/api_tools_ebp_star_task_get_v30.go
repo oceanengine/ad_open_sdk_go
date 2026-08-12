@@ -23,12 +23,11 @@ import (
 type ToolsEbpStarTaskGetV30ApiService service
 
 type ApiOpenApiV30ToolsEbpStarTaskGetGetRequest struct {
-	ctx                      context.Context
-	ApiService               *ToolsEbpStarTaskGetV30ApiService
-	accountId                *int64
-	enterpriseOrganizationId *int64
-	starTaskId               *int64
-	account                  *ToolsEbpStarTaskGetV30Account
+	ctx         context.Context
+	ApiService  *ToolsEbpStarTaskGetV30ApiService
+	accountId   *int64
+	accountType *ToolsEbpStarTaskGetV30AccountType
+	starTaskId  *int64
 }
 
 func (r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest {
@@ -36,19 +35,14 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) AccountId(accountId int64) 
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) EnterpriseOrganizationId(enterpriseOrganizationId int64) *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest {
-	r.enterpriseOrganizationId = &enterpriseOrganizationId
+func (r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) AccountType(accountType ToolsEbpStarTaskGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest {
+	r.accountType = &accountType
 	return r
 }
 
 // 星图任务id
 func (r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) StarTaskId(starTaskId int64) *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest {
 	r.starTaskId = &starTaskId
-	return r
-}
-
-func (r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) Account(account ToolsEbpStarTaskGetV30Account) *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest {
-	r.account = &account
 	return r
 }
 
@@ -107,20 +101,16 @@ func (a *ToolsEbpStarTaskGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpSt
 	if r.accountId == nil {
 		return localVarReturnValue, nil, ReportError("accountId is required and must be specified")
 	}
-	if r.enterpriseOrganizationId == nil {
-		return localVarReturnValue, nil, ReportError("enterpriseOrganizationId is required and must be specified")
+	if r.accountType == nil {
+		return localVarReturnValue, nil, ReportError("accountType is required and must be specified")
 	}
 	if r.starTaskId == nil {
 		return localVarReturnValue, nil, ReportError("starTaskId is required and must be specified")
 	}
-	if r.account == nil {
-		return localVarReturnValue, nil, ReportError("account is required and must be specified")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "account_id", r.accountId)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "enterprise_organization_id", r.enterpriseOrganizationId)
+	parameterAddToHeaderOrQuery(localVarQueryParams, "account_type", r.accountType)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "star_task_id", r.starTaskId)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "account", r.account)
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

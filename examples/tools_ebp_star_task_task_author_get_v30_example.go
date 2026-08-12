@@ -23,13 +23,12 @@ import (
 )
 
 type ApiOpenApiV30ToolsEbpStarTaskTaskAuthorGetGetRequestExample struct {
-	EnterpriseOrganizationId int64                                       `json:"enterprise_organization_id"`
-	StarTaskId               int64                                       `json:"star_task_id"`
-	AccountId                int64                                       `json:"account_id"`
-	AccountType              ToolsEbpStarTaskTaskAuthorGetV30AccountType `json:"account_type"`
-	Page                     int64                                       `json:"page,omitempty"`
-	PageSize                 int64                                       `json:"page_size,omitempty"`
-	Filtering                ToolsEbpStarTaskTaskAuthorGetV30Filtering   `json:"filtering,omitempty"`
+	AccountId   int64                                       `json:"account_id"`
+	AccountType ToolsEbpStarTaskTaskAuthorGetV30AccountType `json:"account_type"`
+	StarTaskId  int64                                       `json:"star_task_id"`
+	Filtering   ToolsEbpStarTaskTaskAuthorGetV30Filtering   `json:"filtering,omitempty"`
+	Page        int64                                       `json:"page,omitempty"`
+	PageSize    int64                                       `json:"page_size,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/tools/ebp/star_task/task_author/get/ Get
@@ -51,7 +50,7 @@ func main() {
 	resp, httpRes, err := apiClient.ToolsEbpStarTaskTaskAuthorGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		EnterpriseOrganizationId(request.EnterpriseOrganizationId).StarTaskId(request.StarTaskId).AccountId(request.AccountId).AccountType(request.AccountType).Page(request.Page).PageSize(request.PageSize).Filtering(request.Filtering).
+		AccountId(request.AccountId).AccountType(request.AccountType).StarTaskId(request.StarTaskId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

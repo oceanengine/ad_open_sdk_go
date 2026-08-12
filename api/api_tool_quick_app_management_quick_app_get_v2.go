@@ -23,15 +23,16 @@ import (
 type ToolQuickAppManagementQuickAppGetV2ApiService service
 
 type ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest struct {
-	ctx          context.Context
-	ApiService   *ToolQuickAppManagementQuickAppGetV2ApiService
-	advertiserId *int64
-	status       *[]*ToolQuickAppManagementQuickAppGetV2Status
-	page         *int32
-	pageSize     *int32
-	updateTime   *ToolQuickAppManagementQuickAppGetV2UpdateTime
-	searchKey    *string
-	quickAppIds  *[]int64
+	ctx             context.Context
+	ApiService      *ToolQuickAppManagementQuickAppGetV2ApiService
+	advertiserId    *int64
+	status          *[]*ToolQuickAppManagementQuickAppGetV2Status
+	page            *int32
+	pageSize        *int32
+	updateTime      *ToolQuickAppManagementQuickAppGetV2UpdateTime
+	searchKey       *string
+	quickAppIds     *[]int64
+	assetGeneration *ToolQuickAppManagementQuickAppGetV2AssetGeneration
 }
 
 // 广告主ID
@@ -73,6 +74,11 @@ func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) SearchKey(searc
 // 快应用ids
 func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) QuickAppIds(quickAppIds []int64) *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest {
 	r.quickAppIds = &quickAppIds
+	return r
+}
+
+func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) AssetGeneration(assetGeneration ToolQuickAppManagementQuickAppGetV2AssetGeneration) *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest {
+	r.assetGeneration = &assetGeneration
 	return r
 }
 
@@ -150,6 +156,9 @@ func (a *ToolQuickAppManagementQuickAppGetV2ApiService) getExecute(r *ApiOpenApi
 	}
 	if r.quickAppIds != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "quick_app_ids", r.quickAppIds)
+	}
+	if r.assetGeneration != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "asset_generation", r.assetGeneration)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

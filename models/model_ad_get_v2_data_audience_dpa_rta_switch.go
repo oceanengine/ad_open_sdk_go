@@ -15,8 +15,8 @@ type AdGetV2DataAudienceDpaRtaSwitch string
 
 // List of ad_get_v2_data_audience_dpa_rta_switch
 const (
-	OFF_AdGetV2DataAudienceDpaRtaSwitch AdGetV2DataAudienceDpaRtaSwitch = "OFF"
 	ON_AdGetV2DataAudienceDpaRtaSwitch  AdGetV2DataAudienceDpaRtaSwitch = "ON"
+	OFF_AdGetV2DataAudienceDpaRtaSwitch AdGetV2DataAudienceDpaRtaSwitch = "OFF"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_dpa_rta_switch value

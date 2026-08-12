@@ -15,8 +15,8 @@ type CampaignCreateV2CampaignBudgetOptimization string
 
 // List of campaign_create_v2_campaign_budget_optimization
 const (
-	OFF_CampaignCreateV2CampaignBudgetOptimization CampaignCreateV2CampaignBudgetOptimization = "OFF"
 	ON_CampaignCreateV2CampaignBudgetOptimization  CampaignCreateV2CampaignBudgetOptimization = "ON"
+	OFF_CampaignCreateV2CampaignBudgetOptimization CampaignCreateV2CampaignBudgetOptimization = "OFF"
 )
 
 // Ptr returns reference to campaign_create_v2_campaign_budget_optimization value

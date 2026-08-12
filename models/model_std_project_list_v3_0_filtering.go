@@ -13,6 +13,8 @@ package models
 // StdProjectListV30Filtering
 type StdProjectListV30Filtering struct {
 	AdType *StdProjectListV30FilteringAdType `json:"ad_type,omitempty"`
+	// 应用asset_id，可通过【获取已创建资产详情（新）】获取
+	AssetId *int64 `json:"asset_id,omitempty"`
 	// 抖音号ID
 	AwemeId *string `json:"aweme_id,omitempty"`
 	// 竞价策略，枚举值：CUSTOM 稳定成本、NO_BID 最大转化投放
@@ -42,17 +44,19 @@ type StdProjectListV30Filtering struct {
 	ProductId *int64 `json:"product_id,omitempty"`
 	//
 	ProductPlatformId *int64 `json:"product_platform_id,omitempty"`
-	// 项目更新时间，格式yyyy-mm-dd，表示过滤出当天更新的项目
+	// 项目创建结束时间，格式yyyy-mm-dd或者yyyy-mm-dd hh:mm:ss
 	ProjectCreateEndTime *string `json:"project_create_end_time,omitempty"`
-	// 项目创建时间，格式yyyy-mm-dd，表示过滤出当天创建的项目
+	// 项目创建开始时间，格式yyyy-mm-dd或者yyyy-mm-dd hh:mm:ss
 	ProjectCreateStartTime *string `json:"project_create_start_time,omitempty"`
 	// 项目IDs
 	ProjectIds []int64 `json:"project_ids,omitempty"`
-	// 项目更新结束时间，格式yyyy-mm-dd hh:mm:ss
+	// 项目更新结束时间，格式yyyy-mm-dd或者yyyy-mm-dd hh:mm:ss
 	ProjectModifyEndTime *string `json:"project_modify_end_time,omitempty"`
-	// 项目更新开始时间，格式yyyy-mm-dd hh:mm:ss
-	ProjectModifyStartTime *string                                     `json:"project_modify_start_time,omitempty"`
-	RejectReasonType       *StdProjectListV30FilteringRejectReasonType `json:"reject_reason_type,omitempty"`
+	// 项目更新开始时间，格式yyyy-mm-dd或者yyyy-mm-dd hh:mm:ss
+	ProjectModifyStartTime *string `json:"project_modify_start_time,omitempty"`
+	// 快应用资产id
+	QuickAppId       *int64                                      `json:"quick_app_id,omitempty"`
+	RejectReasonType *StdProjectListV30FilteringRejectReasonType `json:"reject_reason_type,omitempty"`
 	// 是否为星广联投项目，STAR_DELIVERY 星广联投项目，NOT_STAR_DELIVERY 非星广联投项目
 	StarDeliveryType []*StdProjectListV30FilteringStarDeliveryType `json:"star_delivery_type,omitempty"`
 	StatusFirst      *StdProjectListV30FilteringStatusFirst        `json:"status_first,omitempty"`

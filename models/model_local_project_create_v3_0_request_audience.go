@@ -14,11 +14,13 @@ package models
 type LocalProjectCreateV30RequestAudience struct {
 	ActionConfig *LocalProjectCreateV30RequestAudienceActionConfig `json:"action_config,omitempty"`
 	// 年龄
-	Age                       []*LocalProjectCreateV30AudienceAge                     `json:"age,omitempty"`
+	Age []*LocalProjectCreateV30AudienceAge `json:"age,omitempty"`
+	// 定向包id
+	AudiencePackageId         *int64                                                  `json:"audience_package_id,omitempty"`
 	ConvertedTimeDuration     *LocalProjectCreateV30AudienceConvertedTimeDuration     `json:"converted_time_duration,omitempty"`
 	CustomArea                *LocalProjectCreateV30RequestAudienceCustomArea         `json:"custom_area,omitempty"`
 	CustomizedInterestAction  *LocalProjectCreateV30AudienceCustomizedInterestAction  `json:"customized_interest_action,omitempty"`
-	District                  LocalProjectCreateV30AudienceDistrict                   `json:"district"`
+	District                  *LocalProjectCreateV30AudienceDistrict                  `json:"district,omitempty"`
 	FilterAwemeAbnormalActive *LocalProjectCreateV30AudienceFilterAwemeAbnormalActive `json:"filter_aweme_abnormal_active,omitempty"`
 	FilterAwemeFansCount      *LocalProjectCreateV30AudienceFilterAwemeFansCount      `json:"filter_aweme_fans_count,omitempty"`
 	Gender                    *LocalProjectCreateV30AudienceGender                    `json:"gender,omitempty"`

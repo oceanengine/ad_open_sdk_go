@@ -29,6 +29,7 @@ type ApiOpenApi2FileVideoAdPostRequestExample struct {
 	IsGuideVideo   bool                    `json:"is_guide_video,omitempty"`
 	Labels         []string                `json:"labels,omitempty"`
 	UploadType     FileVideoAdV2UploadType `json:"upload_type,omitempty"`
+	VideoCoverId   string                  `json:"video_cover_id,omitempty"`
 	VideoFile      *FormFileInfo           `json:"video_file,omitempty"`
 	VideoSignature string                  `json:"video_signature,omitempty"`
 	VideoUrl       string                  `json:"video_url,omitempty"`
@@ -53,7 +54,7 @@ func main() {
 	resp, httpRes, err := apiClient.FileVideoAdV2Api().
 		Post(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Filename(request.Filename).IsAigc(request.IsAigc).IsGuideVideo(request.IsGuideVideo).Labels(request.Labels).UploadType(request.UploadType).VideoFile(request.VideoFile).VideoSignature(request.VideoSignature).VideoUrl(request.VideoUrl).
+		AdvertiserId(request.AdvertiserId).Filename(request.Filename).IsAigc(request.IsAigc).IsGuideVideo(request.IsGuideVideo).Labels(request.Labels).UploadType(request.UploadType).VideoCoverId(request.VideoCoverId).VideoFile(request.VideoFile).VideoSignature(request.VideoSignature).VideoUrl(request.VideoUrl).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)
