@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanKeywordCheckV10ApiService QianchuanKeywordCheckV10Api service
@@ -25,15 +26,15 @@ type QianchuanKeywordCheckV10ApiService service
 type ApiOpenApiV10QianchuanKeywordCheckPostRequest struct {
 	ctx                             context.Context
 	ApiService                      *QianchuanKeywordCheckV10ApiService
-	qianchuanKeywordCheckV10Request *QianchuanKeywordCheckV10Request
+	qianchuanKeywordCheckV10Request *models.QianchuanKeywordCheckV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanKeywordCheckPostRequest) QianchuanKeywordCheckV10Request(qianchuanKeywordCheckV10Request QianchuanKeywordCheckV10Request) *ApiOpenApiV10QianchuanKeywordCheckPostRequest {
+func (r *ApiOpenApiV10QianchuanKeywordCheckPostRequest) QianchuanKeywordCheckV10Request(qianchuanKeywordCheckV10Request models.QianchuanKeywordCheckV10Request) *ApiOpenApiV10QianchuanKeywordCheckPostRequest {
 	r.qianchuanKeywordCheckV10Request = &qianchuanKeywordCheckV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanKeywordCheckPostRequest) Execute() (*QianchuanKeywordCheckV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanKeywordCheckPostRequest) Execute() (*models.QianchuanKeywordCheckV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanKeywordCheckV10ApiService) Post(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return QianchuanKeywordCheckV10Response
-func (a *QianchuanKeywordCheckV10ApiService) postExecute(r *ApiOpenApiV10QianchuanKeywordCheckPostRequest) (*QianchuanKeywordCheckV10Response, *http.Response, error) {
+func (a *QianchuanKeywordCheckV10ApiService) postExecute(r *ApiOpenApiV10QianchuanKeywordCheckPostRequest) (*models.QianchuanKeywordCheckV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanKeywordCheckV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanKeywordCheckV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanKeywordCheckV10ApiService) postExecute(r *ApiOpenApiV10Qianchu
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/keyword/check/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

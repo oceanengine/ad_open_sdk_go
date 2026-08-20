@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService QianchuanUniPromotionAdRoi2GoalUpdateV10Api service
@@ -25,15 +26,15 @@ type QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService service
 type ApiOpenApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostRequest struct {
 	ctx                                             context.Context
 	ApiService                                      *QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService
-	qianchuanUniPromotionAdRoi2GoalUpdateV10Request *QianchuanUniPromotionAdRoi2GoalUpdateV10Request
+	qianchuanUniPromotionAdRoi2GoalUpdateV10Request *models.QianchuanUniPromotionAdRoi2GoalUpdateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostRequest) QianchuanUniPromotionAdRoi2GoalUpdateV10Request(qianchuanUniPromotionAdRoi2GoalUpdateV10Request QianchuanUniPromotionAdRoi2GoalUpdateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostRequest) QianchuanUniPromotionAdRoi2GoalUpdateV10Request(qianchuanUniPromotionAdRoi2GoalUpdateV10Request models.QianchuanUniPromotionAdRoi2GoalUpdateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostRequest {
 	r.qianchuanUniPromotionAdRoi2GoalUpdateV10Request = &qianchuanUniPromotionAdRoi2GoalUpdateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostRequest) Execute() (*QianchuanUniPromotionAdRoi2GoalUpdateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostRequest) Execute() (*models.QianchuanUniPromotionAdRoi2GoalUpdateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService) Post(ctx context.Co
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdRoi2GoalUpdateV10Response
-func (a *QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostRequest) (*QianchuanUniPromotionAdRoi2GoalUpdateV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdRoi2GoalUpdatePostRequest) (*models.QianchuanUniPromotionAdRoi2GoalUpdateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdRoi2GoalUpdateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdRoi2GoalUpdateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanUniPromotionAdRoi2GoalUpdateV10ApiService) postExecute(r *ApiO
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/roi2_goal/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

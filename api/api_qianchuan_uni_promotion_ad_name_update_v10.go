@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdNameUpdateV10ApiService QianchuanUniPromotionAdNameUpdateV10Api service
@@ -25,15 +26,15 @@ type QianchuanUniPromotionAdNameUpdateV10ApiService service
 type ApiOpenApiV10QianchuanUniPromotionAdNameUpdatePostRequest struct {
 	ctx                                         context.Context
 	ApiService                                  *QianchuanUniPromotionAdNameUpdateV10ApiService
-	qianchuanUniPromotionAdNameUpdateV10Request *QianchuanUniPromotionAdNameUpdateV10Request
+	qianchuanUniPromotionAdNameUpdateV10Request *models.QianchuanUniPromotionAdNameUpdateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdNameUpdatePostRequest) QianchuanUniPromotionAdNameUpdateV10Request(qianchuanUniPromotionAdNameUpdateV10Request QianchuanUniPromotionAdNameUpdateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdNameUpdatePostRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdNameUpdatePostRequest) QianchuanUniPromotionAdNameUpdateV10Request(qianchuanUniPromotionAdNameUpdateV10Request models.QianchuanUniPromotionAdNameUpdateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdNameUpdatePostRequest {
 	r.qianchuanUniPromotionAdNameUpdateV10Request = &qianchuanUniPromotionAdNameUpdateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdNameUpdatePostRequest) Execute() (*QianchuanUniPromotionAdNameUpdateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdNameUpdatePostRequest) Execute() (*models.QianchuanUniPromotionAdNameUpdateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanUniPromotionAdNameUpdateV10ApiService) Post(ctx context.Contex
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdNameUpdateV10Response
-func (a *QianchuanUniPromotionAdNameUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdNameUpdatePostRequest) (*QianchuanUniPromotionAdNameUpdateV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdNameUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdNameUpdatePostRequest) (*models.QianchuanUniPromotionAdNameUpdateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdNameUpdateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdNameUpdateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanUniPromotionAdNameUpdateV10ApiService) postExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/name/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

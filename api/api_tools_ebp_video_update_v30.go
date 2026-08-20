@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpVideoUpdateV30ApiService ToolsEbpVideoUpdateV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpVideoUpdateV30ApiService service
 type ApiOpenApiV30ToolsEbpVideoUpdatePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *ToolsEbpVideoUpdateV30ApiService
-	toolsEbpVideoUpdateV30Request *ToolsEbpVideoUpdateV30Request
+	toolsEbpVideoUpdateV30Request *models.ToolsEbpVideoUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpVideoUpdatePostRequest) ToolsEbpVideoUpdateV30Request(toolsEbpVideoUpdateV30Request ToolsEbpVideoUpdateV30Request) *ApiOpenApiV30ToolsEbpVideoUpdatePostRequest {
+func (r *ApiOpenApiV30ToolsEbpVideoUpdatePostRequest) ToolsEbpVideoUpdateV30Request(toolsEbpVideoUpdateV30Request models.ToolsEbpVideoUpdateV30Request) *ApiOpenApiV30ToolsEbpVideoUpdatePostRequest {
 	r.toolsEbpVideoUpdateV30Request = &toolsEbpVideoUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpVideoUpdatePostRequest) Execute() (*ToolsEbpVideoUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpVideoUpdatePostRequest) Execute() (*models.ToolsEbpVideoUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpVideoUpdateV30ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsEbpVideoUpdateV30Response
-func (a *ToolsEbpVideoUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpVideoUpdatePostRequest) (*ToolsEbpVideoUpdateV30Response, *http.Response, error) {
+func (a *ToolsEbpVideoUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpVideoUpdatePostRequest) (*models.ToolsEbpVideoUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpVideoUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpVideoUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpVideoUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpV
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/video/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

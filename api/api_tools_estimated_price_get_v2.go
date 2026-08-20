@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEstimatedPriceGetV2ApiService ToolsEstimatedPriceGetV2Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApi2ToolsEstimatedPriceGetGetRequest) AdvertiserId(advertiserId 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimatedPriceGetGetRequest) Execute() (*ToolsEstimatedPriceGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsEstimatedPriceGetGetRequest) Execute() (*models.ToolsEstimatedPriceGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEstimatedPriceGetV2ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsEstimatedPriceGetV2Response
-func (a *ToolsEstimatedPriceGetV2ApiService) getExecute(r *ApiOpenApi2ToolsEstimatedPriceGetGetRequest) (*ToolsEstimatedPriceGetV2Response, *http.Response, error) {
+func (a *ToolsEstimatedPriceGetV2ApiService) getExecute(r *ApiOpenApi2ToolsEstimatedPriceGetGetRequest) (*models.ToolsEstimatedPriceGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEstimatedPriceGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEstimatedPriceGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEstimatedPriceGetV2ApiService) getExecute(r *ApiOpenApi2ToolsEstim
 	localVarPath := localBasePath + "/open_api/2/tools/estimated_price/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

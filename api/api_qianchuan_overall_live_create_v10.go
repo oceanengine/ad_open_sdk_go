@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanOverallLiveCreateV10ApiService QianchuanOverallLiveCreateV10Api service
@@ -25,15 +26,15 @@ type QianchuanOverallLiveCreateV10ApiService service
 type ApiOpenApiV10QianchuanOverallLiveCreatePostRequest struct {
 	ctx                                  context.Context
 	ApiService                           *QianchuanOverallLiveCreateV10ApiService
-	qianchuanOverallLiveCreateV10Request *QianchuanOverallLiveCreateV10Request
+	qianchuanOverallLiveCreateV10Request *models.QianchuanOverallLiveCreateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanOverallLiveCreatePostRequest) QianchuanOverallLiveCreateV10Request(qianchuanOverallLiveCreateV10Request QianchuanOverallLiveCreateV10Request) *ApiOpenApiV10QianchuanOverallLiveCreatePostRequest {
+func (r *ApiOpenApiV10QianchuanOverallLiveCreatePostRequest) QianchuanOverallLiveCreateV10Request(qianchuanOverallLiveCreateV10Request models.QianchuanOverallLiveCreateV10Request) *ApiOpenApiV10QianchuanOverallLiveCreatePostRequest {
 	r.qianchuanOverallLiveCreateV10Request = &qianchuanOverallLiveCreateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOverallLiveCreatePostRequest) Execute() (*QianchuanOverallLiveCreateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanOverallLiveCreatePostRequest) Execute() (*models.QianchuanOverallLiveCreateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanOverallLiveCreateV10ApiService) Post(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return QianchuanOverallLiveCreateV10Response
-func (a *QianchuanOverallLiveCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanOverallLiveCreatePostRequest) (*QianchuanOverallLiveCreateV10Response, *http.Response, error) {
+func (a *QianchuanOverallLiveCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanOverallLiveCreatePostRequest) (*models.QianchuanOverallLiveCreateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanOverallLiveCreateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanOverallLiveCreateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanOverallLiveCreateV10ApiService) postExecute(r *ApiOpenApiV10Qi
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/overall_live/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

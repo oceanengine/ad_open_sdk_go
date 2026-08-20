@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalPromotionDetailV30ApiService LocalPromotionDetailV30Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30LocalPromotionDetailGetRequest) PromotionId(promotionId in
 	return r
 }
 
-func (r *ApiOpenApiV30LocalPromotionDetailGetRequest) Execute() (*LocalPromotionDetailV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalPromotionDetailGetRequest) Execute() (*models.LocalPromotionDetailV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *LocalPromotionDetailV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return LocalPromotionDetailV30Response
-func (a *LocalPromotionDetailV30ApiService) getExecute(r *ApiOpenApiV30LocalPromotionDetailGetRequest) (*LocalPromotionDetailV30Response, *http.Response, error) {
+func (a *LocalPromotionDetailV30ApiService) getExecute(r *ApiOpenApiV30LocalPromotionDetailGetRequest) (*models.LocalPromotionDetailV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalPromotionDetailV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalPromotionDetailV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *LocalPromotionDetailV30ApiService) getExecute(r *ApiOpenApiV30LocalProm
 	localVarPath := localBasePath + "/open_api/v3.0/local/promotion/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

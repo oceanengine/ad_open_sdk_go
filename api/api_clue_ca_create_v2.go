@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueCaCreateV2ApiService ClueCaCreateV2Api service
@@ -25,15 +26,15 @@ type ClueCaCreateV2ApiService service
 type ApiOpenApi2ClueCaCreatePostRequest struct {
 	ctx                   context.Context
 	ApiService            *ClueCaCreateV2ApiService
-	clueCaCreateV2Request *ClueCaCreateV2Request
+	clueCaCreateV2Request *models.ClueCaCreateV2Request
 }
 
-func (r *ApiOpenApi2ClueCaCreatePostRequest) ClueCaCreateV2Request(clueCaCreateV2Request ClueCaCreateV2Request) *ApiOpenApi2ClueCaCreatePostRequest {
+func (r *ApiOpenApi2ClueCaCreatePostRequest) ClueCaCreateV2Request(clueCaCreateV2Request models.ClueCaCreateV2Request) *ApiOpenApi2ClueCaCreatePostRequest {
 	r.clueCaCreateV2Request = &clueCaCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ClueCaCreatePostRequest) Execute() (*ClueCaCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueCaCreatePostRequest) Execute() (*models.ClueCaCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ClueCaCreateV2ApiService) Post(ctx context.Context) *ApiOpenApi2ClueCaC
 // Execute executes the request
 //
 //	@return ClueCaCreateV2Response
-func (a *ClueCaCreateV2ApiService) postExecute(r *ApiOpenApi2ClueCaCreatePostRequest) (*ClueCaCreateV2Response, *http.Response, error) {
+func (a *ClueCaCreateV2ApiService) postExecute(r *ApiOpenApi2ClueCaCreatePostRequest) (*models.ClueCaCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueCaCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueCaCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ClueCaCreateV2ApiService) postExecute(r *ApiOpenApi2ClueCaCreatePostReq
 	localVarPath := localBasePath + "/open_api/2/clue/ca/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

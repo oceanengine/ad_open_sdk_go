@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerAuthDelPublicKeyV2ApiService EventManagerAuthDelPublicKeyV2Api service
@@ -25,15 +26,15 @@ type EventManagerAuthDelPublicKeyV2ApiService service
 type ApiOpenApi2EventManagerAuthDelPublicKeyPostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *EventManagerAuthDelPublicKeyV2ApiService
-	eventManagerAuthDelPublicKeyV2Request *EventManagerAuthDelPublicKeyV2Request
+	eventManagerAuthDelPublicKeyV2Request *models.EventManagerAuthDelPublicKeyV2Request
 }
 
-func (r *ApiOpenApi2EventManagerAuthDelPublicKeyPostRequest) EventManagerAuthDelPublicKeyV2Request(eventManagerAuthDelPublicKeyV2Request EventManagerAuthDelPublicKeyV2Request) *ApiOpenApi2EventManagerAuthDelPublicKeyPostRequest {
+func (r *ApiOpenApi2EventManagerAuthDelPublicKeyPostRequest) EventManagerAuthDelPublicKeyV2Request(eventManagerAuthDelPublicKeyV2Request models.EventManagerAuthDelPublicKeyV2Request) *ApiOpenApi2EventManagerAuthDelPublicKeyPostRequest {
 	r.eventManagerAuthDelPublicKeyV2Request = &eventManagerAuthDelPublicKeyV2Request
 	return r
 }
 
-func (r *ApiOpenApi2EventManagerAuthDelPublicKeyPostRequest) Execute() (*EventManagerAuthDelPublicKeyV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EventManagerAuthDelPublicKeyPostRequest) Execute() (*models.EventManagerAuthDelPublicKeyV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EventManagerAuthDelPublicKeyV2ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return EventManagerAuthDelPublicKeyV2Response
-func (a *EventManagerAuthDelPublicKeyV2ApiService) postExecute(r *ApiOpenApi2EventManagerAuthDelPublicKeyPostRequest) (*EventManagerAuthDelPublicKeyV2Response, *http.Response, error) {
+func (a *EventManagerAuthDelPublicKeyV2ApiService) postExecute(r *ApiOpenApi2EventManagerAuthDelPublicKeyPostRequest) (*models.EventManagerAuthDelPublicKeyV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerAuthDelPublicKeyV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerAuthDelPublicKeyV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EventManagerAuthDelPublicKeyV2ApiService) postExecute(r *ApiOpenApi2Eve
 	localVarPath := localBasePath + "/open_api/2/event_manager/auth/del_public_key/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

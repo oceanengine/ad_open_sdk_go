@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QueryInvoiceDetailSelfV2ApiService QueryInvoiceDetailSelfV2Api service
@@ -47,7 +48,7 @@ func (r *ApiOpenApi2QueryInvoiceDetailSelfGetRequest) InvoiceId(invoiceId int64)
 	return r
 }
 
-func (r *ApiOpenApi2QueryInvoiceDetailSelfGetRequest) Execute() (*QueryInvoiceDetailSelfV2Response, *http.Response, error) {
+func (r *ApiOpenApi2QueryInvoiceDetailSelfGetRequest) Execute() (*models.QueryInvoiceDetailSelfV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -81,12 +82,12 @@ func (a *QueryInvoiceDetailSelfV2ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return QueryInvoiceDetailSelfV2Response
-func (a *QueryInvoiceDetailSelfV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceDetailSelfGetRequest) (*QueryInvoiceDetailSelfV2Response, *http.Response, error) {
+func (a *QueryInvoiceDetailSelfV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceDetailSelfGetRequest) (*models.QueryInvoiceDetailSelfV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QueryInvoiceDetailSelfV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QueryInvoiceDetailSelfV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -96,7 +97,7 @@ func (a *QueryInvoiceDetailSelfV2ApiService) getExecute(r *ApiOpenApi2QueryInvoi
 	localVarPath := localBasePath + "/open_api/2/query/invoice_detail/self/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

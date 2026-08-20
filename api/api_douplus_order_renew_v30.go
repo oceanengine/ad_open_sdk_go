@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DouplusOrderRenewV30ApiService DouplusOrderRenewV30Api service
@@ -25,15 +26,15 @@ type DouplusOrderRenewV30ApiService service
 type ApiOpenApiV30DouplusOrderRenewPostRequest struct {
 	ctx                         context.Context
 	ApiService                  *DouplusOrderRenewV30ApiService
-	douplusOrderRenewV30Request *DouplusOrderRenewV30Request
+	douplusOrderRenewV30Request *models.DouplusOrderRenewV30Request
 }
 
-func (r *ApiOpenApiV30DouplusOrderRenewPostRequest) DouplusOrderRenewV30Request(douplusOrderRenewV30Request DouplusOrderRenewV30Request) *ApiOpenApiV30DouplusOrderRenewPostRequest {
+func (r *ApiOpenApiV30DouplusOrderRenewPostRequest) DouplusOrderRenewV30Request(douplusOrderRenewV30Request models.DouplusOrderRenewV30Request) *ApiOpenApiV30DouplusOrderRenewPostRequest {
 	r.douplusOrderRenewV30Request = &douplusOrderRenewV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30DouplusOrderRenewPostRequest) Execute() (*DouplusOrderRenewV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DouplusOrderRenewPostRequest) Execute() (*models.DouplusOrderRenewV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DouplusOrderRenewV30ApiService) Post(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return DouplusOrderRenewV30Response
-func (a *DouplusOrderRenewV30ApiService) postExecute(r *ApiOpenApiV30DouplusOrderRenewPostRequest) (*DouplusOrderRenewV30Response, *http.Response, error) {
+func (a *DouplusOrderRenewV30ApiService) postExecute(r *ApiOpenApiV30DouplusOrderRenewPostRequest) (*models.DouplusOrderRenewV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DouplusOrderRenewV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DouplusOrderRenewV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DouplusOrderRenewV30ApiService) postExecute(r *ApiOpenApiV30DouplusOrde
 	localVarPath := localBasePath + "/open_api/v3.0/douplus/order/renew/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

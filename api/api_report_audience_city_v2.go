@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportAudienceCityV2ApiService ReportAudienceCityV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2ReportAudienceCityGetRequest struct {
 	ApiService   *ReportAudienceCityV2ApiService
 	advertiserId *int64
 	endDate      **string
-	idType       *ReportAudienceCityV2IdType
+	idType       *models.ReportAudienceCityV2IdType
 	ids          *[]int64
 	metrics      *[]string
 	startDate    **string
@@ -43,7 +44,7 @@ func (r *ApiOpenApi2ReportAudienceCityGetRequest) EndDate(endDate *string) *ApiO
 	return r
 }
 
-func (r *ApiOpenApi2ReportAudienceCityGetRequest) IdType(idType ReportAudienceCityV2IdType) *ApiOpenApi2ReportAudienceCityGetRequest {
+func (r *ApiOpenApi2ReportAudienceCityGetRequest) IdType(idType models.ReportAudienceCityV2IdType) *ApiOpenApi2ReportAudienceCityGetRequest {
 	r.idType = &idType
 	return r
 }
@@ -63,7 +64,7 @@ func (r *ApiOpenApi2ReportAudienceCityGetRequest) StartDate(startDate *string) *
 	return r
 }
 
-func (r *ApiOpenApi2ReportAudienceCityGetRequest) Execute() (*ReportAudienceCityV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ReportAudienceCityGetRequest) Execute() (*models.ReportAudienceCityV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ReportAudienceCityV2ApiService) Get(ctx context.Context) *ApiOpenApi2Re
 // Execute executes the request
 //
 //	@return ReportAudienceCityV2Response
-func (a *ReportAudienceCityV2ApiService) getExecute(r *ApiOpenApi2ReportAudienceCityGetRequest) (*ReportAudienceCityV2Response, *http.Response, error) {
+func (a *ReportAudienceCityV2ApiService) getExecute(r *ApiOpenApi2ReportAudienceCityGetRequest) (*models.ReportAudienceCityV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportAudienceCityV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportAudienceCityV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ReportAudienceCityV2ApiService) getExecute(r *ApiOpenApi2ReportAudience
 	localVarPath := localBasePath + "/open_api/2/report/audience/city/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

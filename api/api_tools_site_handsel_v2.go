@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsSiteHandselV2ApiService ToolsSiteHandselV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsSiteHandselPostRequest struct {
 	ctx                       context.Context
 	ApiService                *ToolsSiteHandselV2ApiService
 	xOrangeCaller             *string
-	toolsSiteHandselV2Request *ToolsSiteHandselV2Request
+	toolsSiteHandselV2Request *models.ToolsSiteHandselV2Request
 }
 
 func (r *ApiOpenApi2ToolsSiteHandselPostRequest) XOrangeCaller(xOrangeCaller string) *ApiOpenApi2ToolsSiteHandselPostRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2ToolsSiteHandselPostRequest) XOrangeCaller(xOrangeCaller str
 	return r
 }
 
-func (r *ApiOpenApi2ToolsSiteHandselPostRequest) ToolsSiteHandselV2Request(toolsSiteHandselV2Request ToolsSiteHandselV2Request) *ApiOpenApi2ToolsSiteHandselPostRequest {
+func (r *ApiOpenApi2ToolsSiteHandselPostRequest) ToolsSiteHandselV2Request(toolsSiteHandselV2Request models.ToolsSiteHandselV2Request) *ApiOpenApi2ToolsSiteHandselPostRequest {
 	r.toolsSiteHandselV2Request = &toolsSiteHandselV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsSiteHandselPostRequest) Execute() (*ToolsSiteHandselV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsSiteHandselPostRequest) Execute() (*models.ToolsSiteHandselV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsSiteHandselV2ApiService) Post(ctx context.Context) *ApiOpenApi2Too
 // Execute executes the request
 //
 //	@return ToolsSiteHandselV2Response
-func (a *ToolsSiteHandselV2ApiService) postExecute(r *ApiOpenApi2ToolsSiteHandselPostRequest) (*ToolsSiteHandselV2Response, *http.Response, error) {
+func (a *ToolsSiteHandselV2ApiService) postExecute(r *ApiOpenApi2ToolsSiteHandselPostRequest) (*models.ToolsSiteHandselV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsSiteHandselV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsSiteHandselV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsSiteHandselV2ApiService) postExecute(r *ApiOpenApi2ToolsSiteHandse
 	localVarPath := localBasePath + "/open_api/2/tools/site/handsel/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

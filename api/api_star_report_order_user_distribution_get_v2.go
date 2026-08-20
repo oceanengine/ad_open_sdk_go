@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarReportOrderUserDistributionGetV2ApiService StarReportOrderUserDistributionGetV2Api service
@@ -25,18 +26,18 @@ type StarReportOrderUserDistributionGetV2ApiService service
 type ApiOpenApi2StarReportOrderUserDistributionGetGetRequest struct {
 	ctx             context.Context
 	ApiService      *StarReportOrderUserDistributionGetV2ApiService
-	fanType         *StarReportOrderUserDistributionGetV2FanType
-	interactiveType *StarReportOrderUserDistributionGetV2InteractiveType
+	fanType         *models.StarReportOrderUserDistributionGetV2FanType
+	interactiveType *models.StarReportOrderUserDistributionGetV2InteractiveType
 	orderId         *int64
 	starId          *int64
 }
 
-func (r *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest) FanType(fanType StarReportOrderUserDistributionGetV2FanType) *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest {
+func (r *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest) FanType(fanType models.StarReportOrderUserDistributionGetV2FanType) *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest {
 	r.fanType = &fanType
 	return r
 }
 
-func (r *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest) InteractiveType(interactiveType StarReportOrderUserDistributionGetV2InteractiveType) *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest {
+func (r *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest) InteractiveType(interactiveType models.StarReportOrderUserDistributionGetV2InteractiveType) *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest {
 	r.interactiveType = &interactiveType
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest) StarId(starId 
 	return r
 }
 
-func (r *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest) Execute() (*StarReportOrderUserDistributionGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest) Execute() (*models.StarReportOrderUserDistributionGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *StarReportOrderUserDistributionGetV2ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return StarReportOrderUserDistributionGetV2Response
-func (a *StarReportOrderUserDistributionGetV2ApiService) getExecute(r *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest) (*StarReportOrderUserDistributionGetV2Response, *http.Response, error) {
+func (a *StarReportOrderUserDistributionGetV2ApiService) getExecute(r *ApiOpenApi2StarReportOrderUserDistributionGetGetRequest) (*models.StarReportOrderUserDistributionGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarReportOrderUserDistributionGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarReportOrderUserDistributionGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *StarReportOrderUserDistributionGetV2ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/2/star/report/order_user_distribution/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

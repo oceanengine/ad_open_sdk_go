@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaEbpClueProductListV30ApiService DpaEbpClueProductListV30Api service
@@ -26,16 +27,16 @@ type ApiOpenApiV30DpaEbpClueProductListGetRequest struct {
 	ctx                   context.Context
 	ApiService            *DpaEbpClueProductListV30ApiService
 	accountId             *int64
-	accountType           *DpaEbpClueProductListV30AccountType
+	accountType           *models.DpaEbpClueProductListV30AccountType
 	offset                *int64
 	limit                 *int64
 	productIds            *[]int64
 	productName           *string
-	auditStatus           *[]*DpaEbpClueProductListV30AuditStatus
+	auditStatus           *[]*models.DpaEbpClueProductListV30AuditStatus
 	categoryIds           *[]int64
 	productIdOrNameSearch *string
-	statuses              *[]*DpaEbpClueProductListV30Statuses
-	assetQueryScope       *DpaEbpClueProductListV30AssetQueryScope
+	statuses              *[]*models.DpaEbpClueProductListV30Statuses
+	assetQueryScope       *models.DpaEbpClueProductListV30AssetQueryScope
 }
 
 func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) AccountId(accountId int64) *ApiOpenApiV30DpaEbpClueProductListGetRequest {
@@ -43,7 +44,7 @@ func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) AccountId(accountId int64
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) AccountType(accountType DpaEbpClueProductListV30AccountType) *ApiOpenApiV30DpaEbpClueProductListGetRequest {
+func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) AccountType(accountType models.DpaEbpClueProductListV30AccountType) *ApiOpenApiV30DpaEbpClueProductListGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -71,7 +72,7 @@ func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) ProductName(productName s
 }
 
 // 审核状态
-func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) AuditStatus(auditStatus []*DpaEbpClueProductListV30AuditStatus) *ApiOpenApiV30DpaEbpClueProductListGetRequest {
+func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) AuditStatus(auditStatus []*models.DpaEbpClueProductListV30AuditStatus) *ApiOpenApiV30DpaEbpClueProductListGetRequest {
 	r.auditStatus = &auditStatus
 	return r
 }
@@ -89,18 +90,18 @@ func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) ProductIdOrNameSearch(pro
 }
 
 // 可投状态过滤
-func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) Statuses(statuses []*DpaEbpClueProductListV30Statuses) *ApiOpenApiV30DpaEbpClueProductListGetRequest {
+func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) Statuses(statuses []*models.DpaEbpClueProductListV30Statuses) *ApiOpenApiV30DpaEbpClueProductListGetRequest {
 	r.statuses = &statuses
 	return r
 }
 
 // EBP资产查询范围，作用于归属于ebp部分的数据
-func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) AssetQueryScope(assetQueryScope DpaEbpClueProductListV30AssetQueryScope) *ApiOpenApiV30DpaEbpClueProductListGetRequest {
+func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) AssetQueryScope(assetQueryScope models.DpaEbpClueProductListV30AssetQueryScope) *ApiOpenApiV30DpaEbpClueProductListGetRequest {
 	r.assetQueryScope = &assetQueryScope
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) Execute() (*DpaEbpClueProductListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) Execute() (*models.DpaEbpClueProductListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -134,12 +135,12 @@ func (a *DpaEbpClueProductListV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return DpaEbpClueProductListV30Response
-func (a *DpaEbpClueProductListV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpClueProductListGetRequest) (*DpaEbpClueProductListV30Response, *http.Response, error) {
+func (a *DpaEbpClueProductListV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpClueProductListGetRequest) (*models.DpaEbpClueProductListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaEbpClueProductListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaEbpClueProductListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -149,7 +150,7 @@ func (a *DpaEbpClueProductListV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpCl
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/ebp/clue_product/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

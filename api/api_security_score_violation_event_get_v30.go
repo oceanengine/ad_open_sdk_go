@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SecurityScoreViolationEventGetV30ApiService SecurityScoreViolationEventGetV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30SecurityScoreViolationEventGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *SecurityScoreViolationEventGetV30ApiService
 	advertiserId *int64
-	businessLine *SecurityScoreViolationEventGetV30BusinessLine
-	filtering    *SecurityScoreViolationEventGetV30Filtering
+	businessLine *models.SecurityScoreViolationEventGetV30BusinessLine
+	filtering    *models.SecurityScoreViolationEventGetV30Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -39,13 +40,13 @@ func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) AdvertiserId(adv
 }
 
 // 业务线
-func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) BusinessLine(businessLine SecurityScoreViolationEventGetV30BusinessLine) *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest {
+func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) BusinessLine(businessLine models.SecurityScoreViolationEventGetV30BusinessLine) *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest {
 	r.businessLine = &businessLine
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) Filtering(filtering SecurityScoreViolationEventGetV30Filtering) *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest {
+func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) Filtering(filtering models.SecurityScoreViolationEventGetV30Filtering) *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) PageSize(pageSiz
 	return r
 }
 
-func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) Execute() (*SecurityScoreViolationEventGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) Execute() (*models.SecurityScoreViolationEventGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *SecurityScoreViolationEventGetV30ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return SecurityScoreViolationEventGetV30Response
-func (a *SecurityScoreViolationEventGetV30ApiService) getExecute(r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) (*SecurityScoreViolationEventGetV30Response, *http.Response, error) {
+func (a *SecurityScoreViolationEventGetV30ApiService) getExecute(r *ApiOpenApiV30SecurityScoreViolationEventGetGetRequest) (*models.SecurityScoreViolationEventGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SecurityScoreViolationEventGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SecurityScoreViolationEventGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *SecurityScoreViolationEventGetV30ApiService) getExecute(r *ApiOpenApiV3
 	localVarPath := localBasePath + "/open_api/v3.0/security/score_violation_event/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

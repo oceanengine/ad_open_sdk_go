@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPrivativeWordBatchGetV30ApiService ToolsPrivativeWordBatchGetV30Api service
@@ -25,15 +26,15 @@ type ToolsPrivativeWordBatchGetV30ApiService service
 type ApiOpenApiV30ToolsPrivativeWordBatchGetPostRequest struct {
 	ctx                                  context.Context
 	ApiService                           *ToolsPrivativeWordBatchGetV30ApiService
-	toolsPrivativeWordBatchGetV30Request *ToolsPrivativeWordBatchGetV30Request
+	toolsPrivativeWordBatchGetV30Request *models.ToolsPrivativeWordBatchGetV30Request
 }
 
-func (r *ApiOpenApiV30ToolsPrivativeWordBatchGetPostRequest) ToolsPrivativeWordBatchGetV30Request(toolsPrivativeWordBatchGetV30Request ToolsPrivativeWordBatchGetV30Request) *ApiOpenApiV30ToolsPrivativeWordBatchGetPostRequest {
+func (r *ApiOpenApiV30ToolsPrivativeWordBatchGetPostRequest) ToolsPrivativeWordBatchGetV30Request(toolsPrivativeWordBatchGetV30Request models.ToolsPrivativeWordBatchGetV30Request) *ApiOpenApiV30ToolsPrivativeWordBatchGetPostRequest {
 	r.toolsPrivativeWordBatchGetV30Request = &toolsPrivativeWordBatchGetV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsPrivativeWordBatchGetPostRequest) Execute() (*ToolsPrivativeWordBatchGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsPrivativeWordBatchGetPostRequest) Execute() (*models.ToolsPrivativeWordBatchGetV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsPrivativeWordBatchGetV30ApiService) Post(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return ToolsPrivativeWordBatchGetV30Response
-func (a *ToolsPrivativeWordBatchGetV30ApiService) postExecute(r *ApiOpenApiV30ToolsPrivativeWordBatchGetPostRequest) (*ToolsPrivativeWordBatchGetV30Response, *http.Response, error) {
+func (a *ToolsPrivativeWordBatchGetV30ApiService) postExecute(r *ApiOpenApiV30ToolsPrivativeWordBatchGetPostRequest) (*models.ToolsPrivativeWordBatchGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPrivativeWordBatchGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPrivativeWordBatchGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsPrivativeWordBatchGetV30ApiService) postExecute(r *ApiOpenApiV30To
 	localVarPath := localBasePath + "/open_api/v3.0/tools/privative_word/batch_get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

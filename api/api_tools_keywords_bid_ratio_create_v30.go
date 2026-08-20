@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsKeywordsBidRatioCreateV30ApiService ToolsKeywordsBidRatioCreateV30Api service
@@ -25,15 +26,15 @@ type ToolsKeywordsBidRatioCreateV30ApiService service
 type ApiOpenApiV30ToolsKeywordsBidRatioCreatePostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *ToolsKeywordsBidRatioCreateV30ApiService
-	toolsKeywordsBidRatioCreateV30Request *ToolsKeywordsBidRatioCreateV30Request
+	toolsKeywordsBidRatioCreateV30Request *models.ToolsKeywordsBidRatioCreateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsKeywordsBidRatioCreatePostRequest) ToolsKeywordsBidRatioCreateV30Request(toolsKeywordsBidRatioCreateV30Request ToolsKeywordsBidRatioCreateV30Request) *ApiOpenApiV30ToolsKeywordsBidRatioCreatePostRequest {
+func (r *ApiOpenApiV30ToolsKeywordsBidRatioCreatePostRequest) ToolsKeywordsBidRatioCreateV30Request(toolsKeywordsBidRatioCreateV30Request models.ToolsKeywordsBidRatioCreateV30Request) *ApiOpenApiV30ToolsKeywordsBidRatioCreatePostRequest {
 	r.toolsKeywordsBidRatioCreateV30Request = &toolsKeywordsBidRatioCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsKeywordsBidRatioCreatePostRequest) Execute() (*ToolsKeywordsBidRatioCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsKeywordsBidRatioCreatePostRequest) Execute() (*models.ToolsKeywordsBidRatioCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsKeywordsBidRatioCreateV30ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return ToolsKeywordsBidRatioCreateV30Response
-func (a *ToolsKeywordsBidRatioCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsKeywordsBidRatioCreatePostRequest) (*ToolsKeywordsBidRatioCreateV30Response, *http.Response, error) {
+func (a *ToolsKeywordsBidRatioCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsKeywordsBidRatioCreatePostRequest) (*models.ToolsKeywordsBidRatioCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsKeywordsBidRatioCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsKeywordsBidRatioCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsKeywordsBidRatioCreateV30ApiService) postExecute(r *ApiOpenApiV30T
 	localVarPath := localBasePath + "/open_api/v3.0/tools/keywords_bid_ratio/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

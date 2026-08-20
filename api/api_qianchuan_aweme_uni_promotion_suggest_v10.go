@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeUniPromotionSuggestV10ApiService QianchuanAwemeUniPromotionSuggestV10Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest struct {
 	advertiserId *int64
 	awemeId      *int64
 	productId    *int64
-	bidType      *QianchuanAwemeUniPromotionSuggestV10BidType
+	bidType      *models.QianchuanAwemeUniPromotionSuggestV10BidType
 }
 
 func (r *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest {
@@ -47,12 +48,12 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest) ProductId(pro
 }
 
 // 出价类型
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest) BidType(bidType QianchuanAwemeUniPromotionSuggestV10BidType) *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest) BidType(bidType models.QianchuanAwemeUniPromotionSuggestV10BidType) *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest {
 	r.bidType = &bidType
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest) Execute() (*QianchuanAwemeUniPromotionSuggestV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest) Execute() (*models.QianchuanAwemeUniPromotionSuggestV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -86,12 +87,12 @@ func (a *QianchuanAwemeUniPromotionSuggestV10ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return QianchuanAwemeUniPromotionSuggestV10Response
-func (a *QianchuanAwemeUniPromotionSuggestV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest) (*QianchuanAwemeUniPromotionSuggestV10Response, *http.Response, error) {
+func (a *QianchuanAwemeUniPromotionSuggestV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeUniPromotionSuggestGetRequest) (*models.QianchuanAwemeUniPromotionSuggestV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeUniPromotionSuggestV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeUniPromotionSuggestV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -101,7 +102,7 @@ func (a *QianchuanAwemeUniPromotionSuggestV10ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/uni_promotion/suggest/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

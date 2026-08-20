@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementAndroidBasicPackageGetV2ApiService ToolsAppManagementAndroidBasicPackageGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *ToolsAppManagementAndroidBasicPackageGetV2ApiService
 	accountId   *int64
-	accountType *ToolsAppManagementAndroidBasicPackageGetV2AccountType
+	accountType *models.ToolsAppManagementAndroidBasicPackageGetV2AccountType
 	packageId   *string
 }
 
@@ -35,7 +36,7 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest) AccountI
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest) AccountType(accountType ToolsAppManagementAndroidBasicPackageGetV2AccountType) *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest) AccountType(accountType models.ToolsAppManagementAndroidBasicPackageGetV2AccountType) *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -45,7 +46,7 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest) PackageI
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest) Execute() (*ToolsAppManagementAndroidBasicPackageGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest) Execute() (*models.ToolsAppManagementAndroidBasicPackageGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *ToolsAppManagementAndroidBasicPackageGetV2ApiService) Get(ctx context.C
 // Execute executes the request
 //
 //	@return ToolsAppManagementAndroidBasicPackageGetV2Response
-func (a *ToolsAppManagementAndroidBasicPackageGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest) (*ToolsAppManagementAndroidBasicPackageGetV2Response, *http.Response, error) {
+func (a *ToolsAppManagementAndroidBasicPackageGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageGetGetRequest) (*models.ToolsAppManagementAndroidBasicPackageGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementAndroidBasicPackageGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementAndroidBasicPackageGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *ToolsAppManagementAndroidBasicPackageGetV2ApiService) getExecute(r *Api
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/android_basic_package/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsRegionGetV2ApiService ToolsRegionGetV2Api service
@@ -25,21 +26,21 @@ type ToolsRegionGetV2ApiService service
 type ApiOpenApi2ToolsRegionGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *ToolsRegionGetV2ApiService
-	regionLevel *ToolsRegionGetV2RegionLevel
-	regionType  *ToolsRegionGetV2RegionType
+	regionLevel *models.ToolsRegionGetV2RegionLevel
+	regionType  *models.ToolsRegionGetV2RegionType
 }
 
-func (r *ApiOpenApi2ToolsRegionGetGetRequest) RegionLevel(regionLevel ToolsRegionGetV2RegionLevel) *ApiOpenApi2ToolsRegionGetGetRequest {
+func (r *ApiOpenApi2ToolsRegionGetGetRequest) RegionLevel(regionLevel models.ToolsRegionGetV2RegionLevel) *ApiOpenApi2ToolsRegionGetGetRequest {
 	r.regionLevel = &regionLevel
 	return r
 }
 
-func (r *ApiOpenApi2ToolsRegionGetGetRequest) RegionType(regionType ToolsRegionGetV2RegionType) *ApiOpenApi2ToolsRegionGetGetRequest {
+func (r *ApiOpenApi2ToolsRegionGetGetRequest) RegionType(regionType models.ToolsRegionGetV2RegionType) *ApiOpenApi2ToolsRegionGetGetRequest {
 	r.regionType = &regionType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsRegionGetGetRequest) Execute() (*ToolsRegionGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsRegionGetGetRequest) Execute() (*models.ToolsRegionGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsRegionGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2ToolsR
 // Execute executes the request
 //
 //	@return ToolsRegionGetV2Response
-func (a *ToolsRegionGetV2ApiService) getExecute(r *ApiOpenApi2ToolsRegionGetGetRequest) (*ToolsRegionGetV2Response, *http.Response, error) {
+func (a *ToolsRegionGetV2ApiService) getExecute(r *ApiOpenApi2ToolsRegionGetGetRequest) (*models.ToolsRegionGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsRegionGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsRegionGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsRegionGetV2ApiService) getExecute(r *ApiOpenApi2ToolsRegionGetGetR
 	localVarPath := localBasePath + "/open_api/2/tools/region/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

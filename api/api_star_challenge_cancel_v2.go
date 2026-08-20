@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarChallengeCancelV2ApiService StarChallengeCancelV2Api service
@@ -25,15 +26,15 @@ type StarChallengeCancelV2ApiService service
 type ApiOpenApi2StarChallengeCancelPostRequest struct {
 	ctx                          context.Context
 	ApiService                   *StarChallengeCancelV2ApiService
-	starChallengeCancelV2Request *StarChallengeCancelV2Request
+	starChallengeCancelV2Request *models.StarChallengeCancelV2Request
 }
 
-func (r *ApiOpenApi2StarChallengeCancelPostRequest) StarChallengeCancelV2Request(starChallengeCancelV2Request StarChallengeCancelV2Request) *ApiOpenApi2StarChallengeCancelPostRequest {
+func (r *ApiOpenApi2StarChallengeCancelPostRequest) StarChallengeCancelV2Request(starChallengeCancelV2Request models.StarChallengeCancelV2Request) *ApiOpenApi2StarChallengeCancelPostRequest {
 	r.starChallengeCancelV2Request = &starChallengeCancelV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarChallengeCancelPostRequest) Execute() (*StarChallengeCancelV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarChallengeCancelPostRequest) Execute() (*models.StarChallengeCancelV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarChallengeCancelV2ApiService) Post(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return StarChallengeCancelV2Response
-func (a *StarChallengeCancelV2ApiService) postExecute(r *ApiOpenApi2StarChallengeCancelPostRequest) (*StarChallengeCancelV2Response, *http.Response, error) {
+func (a *StarChallengeCancelV2ApiService) postExecute(r *ApiOpenApi2StarChallengeCancelPostRequest) (*models.StarChallengeCancelV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarChallengeCancelV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarChallengeCancelV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarChallengeCancelV2ApiService) postExecute(r *ApiOpenApi2StarChalleng
 	localVarPath := localBasePath + "/open_api/2/star/challenge/cancel/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

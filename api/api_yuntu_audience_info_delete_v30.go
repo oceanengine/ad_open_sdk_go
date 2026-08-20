@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // YuntuAudienceInfoDeleteV30ApiService YuntuAudienceInfoDeleteV30Api service
@@ -25,15 +26,15 @@ type YuntuAudienceInfoDeleteV30ApiService service
 type ApiOpenApiV30YuntuAudienceInfoDeletePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *YuntuAudienceInfoDeleteV30ApiService
-	yuntuAudienceInfoDeleteV30Request *YuntuAudienceInfoDeleteV30Request
+	yuntuAudienceInfoDeleteV30Request *models.YuntuAudienceInfoDeleteV30Request
 }
 
-func (r *ApiOpenApiV30YuntuAudienceInfoDeletePostRequest) YuntuAudienceInfoDeleteV30Request(yuntuAudienceInfoDeleteV30Request YuntuAudienceInfoDeleteV30Request) *ApiOpenApiV30YuntuAudienceInfoDeletePostRequest {
+func (r *ApiOpenApiV30YuntuAudienceInfoDeletePostRequest) YuntuAudienceInfoDeleteV30Request(yuntuAudienceInfoDeleteV30Request models.YuntuAudienceInfoDeleteV30Request) *ApiOpenApiV30YuntuAudienceInfoDeletePostRequest {
 	r.yuntuAudienceInfoDeleteV30Request = &yuntuAudienceInfoDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30YuntuAudienceInfoDeletePostRequest) Execute() (*YuntuAudienceInfoDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30YuntuAudienceInfoDeletePostRequest) Execute() (*models.YuntuAudienceInfoDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *YuntuAudienceInfoDeleteV30ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return YuntuAudienceInfoDeleteV30Response
-func (a *YuntuAudienceInfoDeleteV30ApiService) postExecute(r *ApiOpenApiV30YuntuAudienceInfoDeletePostRequest) (*YuntuAudienceInfoDeleteV30Response, *http.Response, error) {
+func (a *YuntuAudienceInfoDeleteV30ApiService) postExecute(r *ApiOpenApiV30YuntuAudienceInfoDeletePostRequest) (*models.YuntuAudienceInfoDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *YuntuAudienceInfoDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.YuntuAudienceInfoDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *YuntuAudienceInfoDeleteV30ApiService) postExecute(r *ApiOpenApiV30Yuntu
 	localVarPath := localBasePath + "/open_api/v3.0/yuntu/audience_info/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementAppGetV2ApiService ToolsAppManagementAppGetV2Api service
@@ -29,11 +30,11 @@ type ApiOpenApi2ToolsAppManagementAppGetGetRequest struct {
 	page                   *int32
 	pageSize               *int32
 	searchKey              *string
-	searchType             *ToolsAppManagementAppGetV2SearchType
-	status                 *ToolsAppManagementAppGetV2Status
-	publishTime            *ToolsAppManagementAppGetV2PublishTime
-	createTime             *ToolsAppManagementAppGetV2CreateTime
-	accountAssetQueryScope *ToolsAppManagementAppGetV2AccountAssetQueryScope
+	searchType             *models.ToolsAppManagementAppGetV2SearchType
+	status                 *models.ToolsAppManagementAppGetV2Status
+	publishTime            *models.ToolsAppManagementAppGetV2PublishTime
+	createTime             *models.ToolsAppManagementAppGetV2CreateTime
+	accountAssetQueryScope *models.ToolsAppManagementAppGetV2AccountAssetQueryScope
 }
 
 func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
@@ -56,32 +57,32 @@ func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) SearchKey(searchKey stri
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) SearchType(searchType ToolsAppManagementAppGetV2SearchType) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) SearchType(searchType models.ToolsAppManagementAppGetV2SearchType) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
 	r.searchType = &searchType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) Status(status ToolsAppManagementAppGetV2Status) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) Status(status models.ToolsAppManagementAppGetV2Status) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
 	r.status = &status
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) PublishTime(publishTime ToolsAppManagementAppGetV2PublishTime) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) PublishTime(publishTime models.ToolsAppManagementAppGetV2PublishTime) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
 	r.publishTime = &publishTime
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) CreateTime(createTime ToolsAppManagementAppGetV2CreateTime) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) CreateTime(createTime models.ToolsAppManagementAppGetV2CreateTime) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
 	r.createTime = &createTime
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsAppManagementAppGetV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) AccountAssetQueryScope(accountAssetQueryScope models.ToolsAppManagementAppGetV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementAppGetGetRequest {
 	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) Execute() (*ToolsAppManagementAppGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) Execute() (*models.ToolsAppManagementAppGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -115,12 +116,12 @@ func (a *ToolsAppManagementAppGetV2ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsAppManagementAppGetV2Response
-func (a *ToolsAppManagementAppGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) (*ToolsAppManagementAppGetV2Response, *http.Response, error) {
+func (a *ToolsAppManagementAppGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementAppGetGetRequest) (*models.ToolsAppManagementAppGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementAppGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementAppGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -130,7 +131,7 @@ func (a *ToolsAppManagementAppGetV2ApiService) getExecute(r *ApiOpenApi2ToolsApp
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/app/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

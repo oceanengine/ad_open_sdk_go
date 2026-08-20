@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferTransferDetailGetV30ApiService CgTransferTransferDetailGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30CgTransferTransferDetailGetGetRequest struct {
 	ApiService           *CgTransferTransferDetailGetV30ApiService
 	organizationId       *int64
 	bizRequestNo         *string
-	platform             *CgTransferTransferDetailGetV30Platform
+	platform             *models.CgTransferTransferDetailGetV30Platform
 	transferBizRequestNo *string
 	transferSerial       *string
 }
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV30CgTransferTransferDetailGetGetRequest) BizRequestNo(bizReq
 }
 
 // 转账业务线
-func (r *ApiOpenApiV30CgTransferTransferDetailGetGetRequest) Platform(platform CgTransferTransferDetailGetV30Platform) *ApiOpenApiV30CgTransferTransferDetailGetGetRequest {
+func (r *ApiOpenApiV30CgTransferTransferDetailGetGetRequest) Platform(platform models.CgTransferTransferDetailGetV30Platform) *ApiOpenApiV30CgTransferTransferDetailGetGetRequest {
 	r.platform = &platform
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30CgTransferTransferDetailGetGetRequest) TransferSerial(tran
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferTransferDetailGetGetRequest) Execute() (*CgTransferTransferDetailGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferTransferDetailGetGetRequest) Execute() (*models.CgTransferTransferDetailGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *CgTransferTransferDetailGetV30ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return CgTransferTransferDetailGetV30Response
-func (a *CgTransferTransferDetailGetV30ApiService) getExecute(r *ApiOpenApiV30CgTransferTransferDetailGetGetRequest) (*CgTransferTransferDetailGetV30Response, *http.Response, error) {
+func (a *CgTransferTransferDetailGetV30ApiService) getExecute(r *ApiOpenApiV30CgTransferTransferDetailGetGetRequest) (*models.CgTransferTransferDetailGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferTransferDetailGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferTransferDetailGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *CgTransferTransferDetailGetV30ApiService) getExecute(r *ApiOpenApiV30Cg
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/transfer_detail/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.organizationId == nil {

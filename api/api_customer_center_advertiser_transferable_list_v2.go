@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CustomerCenterAdvertiserTransferableListV2ApiService CustomerCenterAdvertiserTransferableListV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest struct {
 	ctx                 context.Context
 	ApiService          *CustomerCenterAdvertiserTransferableListV2ApiService
 	advertiserId        *int64
-	transferAccountType *CustomerCenterAdvertiserTransferableListV2TransferAccountType
+	transferAccountType *models.CustomerCenterAdvertiserTransferableListV2TransferAccountType
 	page                *int32
 	pageSize            *int32
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest) Advertis
 	return r
 }
 
-func (r *ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest) TransferAccountType(transferAccountType CustomerCenterAdvertiserTransferableListV2TransferAccountType) *ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest {
+func (r *ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest) TransferAccountType(transferAccountType models.CustomerCenterAdvertiserTransferableListV2TransferAccountType) *ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest {
 	r.transferAccountType = &transferAccountType
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest) PageSize
 	return r
 }
 
-func (r *ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest) Execute() (*CustomerCenterAdvertiserTransferableListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest) Execute() (*models.CustomerCenterAdvertiserTransferableListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -87,12 +88,12 @@ func (a *CustomerCenterAdvertiserTransferableListV2ApiService) Get(ctx context.C
 // Execute executes the request
 //
 //	@return CustomerCenterAdvertiserTransferableListV2Response
-func (a *CustomerCenterAdvertiserTransferableListV2ApiService) getExecute(r *ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest) (*CustomerCenterAdvertiserTransferableListV2Response, *http.Response, error) {
+func (a *CustomerCenterAdvertiserTransferableListV2ApiService) getExecute(r *ApiOpenApi2CustomerCenterAdvertiserTransferableListGetRequest) (*models.CustomerCenterAdvertiserTransferableListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CustomerCenterAdvertiserTransferableListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CustomerCenterAdvertiserTransferableListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -102,7 +103,7 @@ func (a *CustomerCenterAdvertiserTransferableListV2ApiService) getExecute(r *Api
 	localVarPath := localBasePath + "/open_api/2/customer_center/advertiser/transferable/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

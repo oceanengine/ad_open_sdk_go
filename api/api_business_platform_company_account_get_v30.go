@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BusinessPlatformCompanyAccountGetV30ApiService BusinessPlatformCompanyAccountGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest struct {
 	ApiService     *BusinessPlatformCompanyAccountGetV30ApiService
 	organizationId *int64
 	companyId      *int64
-	accountType    *[]*BusinessPlatformCompanyAccountGetV30AccountType
+	accountType    *[]*models.BusinessPlatformCompanyAccountGetV30AccountType
 	page           *int32
 	pageSize       *int32
 }
@@ -42,7 +43,7 @@ func (r *ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest) CompanyId(com
 	return r
 }
 
-func (r *ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest) AccountType(accountType []*BusinessPlatformCompanyAccountGetV30AccountType) *ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest {
+func (r *ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest) AccountType(accountType []*models.BusinessPlatformCompanyAccountGetV30AccountType) *ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest) PageSize(page
 	return r
 }
 
-func (r *ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest) Execute() (*BusinessPlatformCompanyAccountGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest) Execute() (*models.BusinessPlatformCompanyAccountGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *BusinessPlatformCompanyAccountGetV30ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return BusinessPlatformCompanyAccountGetV30Response
-func (a *BusinessPlatformCompanyAccountGetV30ApiService) getExecute(r *ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest) (*BusinessPlatformCompanyAccountGetV30Response, *http.Response, error) {
+func (a *BusinessPlatformCompanyAccountGetV30ApiService) getExecute(r *ApiOpenApiV30BusinessPlatformCompanyAccountGetGetRequest) (*models.BusinessPlatformCompanyAccountGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BusinessPlatformCompanyAccountGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BusinessPlatformCompanyAccountGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *BusinessPlatformCompanyAccountGetV30ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/v3.0/business_platform/company_account/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.organizationId == nil {

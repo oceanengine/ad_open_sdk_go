@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsStarTaskTitleTopicGetV2ApiService ToolsStarTaskTitleTopicGetV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2ToolsStarTaskTitleTopicGetGetRequest) TitleSpecifiesTopicIte
 	return r
 }
 
-func (r *ApiOpenApi2ToolsStarTaskTitleTopicGetGetRequest) Execute() (*ToolsStarTaskTitleTopicGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsStarTaskTitleTopicGetGetRequest) Execute() (*models.ToolsStarTaskTitleTopicGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsStarTaskTitleTopicGetV2ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsStarTaskTitleTopicGetV2Response
-func (a *ToolsStarTaskTitleTopicGetV2ApiService) getExecute(r *ApiOpenApi2ToolsStarTaskTitleTopicGetGetRequest) (*ToolsStarTaskTitleTopicGetV2Response, *http.Response, error) {
+func (a *ToolsStarTaskTitleTopicGetV2ApiService) getExecute(r *ApiOpenApi2ToolsStarTaskTitleTopicGetGetRequest) (*models.ToolsStarTaskTitleTopicGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsStarTaskTitleTopicGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsStarTaskTitleTopicGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsStarTaskTitleTopicGetV2ApiService) getExecute(r *ApiOpenApi2ToolsS
 	localVarPath := localBasePath + "/open_api/2/tools/star_task/title_topic/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

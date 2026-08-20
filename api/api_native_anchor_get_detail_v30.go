@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // NativeAnchorGetDetailV30ApiService NativeAnchorGetDetailV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30NativeAnchorGetDetailGetRequest struct {
 	ApiService   *NativeAnchorGetDetailV30ApiService
 	anchorIds    *[]string
 	advertiserId *int64
-	anchorType   *NativeAnchorGetDetailV30AnchorType
+	anchorType   *models.NativeAnchorGetDetailV30AnchorType
 }
 
 func (r *ApiOpenApiV30NativeAnchorGetDetailGetRequest) AnchorIds(anchorIds []string) *ApiOpenApiV30NativeAnchorGetDetailGetRequest {
@@ -40,12 +41,12 @@ func (r *ApiOpenApiV30NativeAnchorGetDetailGetRequest) AdvertiserId(advertiserId
 	return r
 }
 
-func (r *ApiOpenApiV30NativeAnchorGetDetailGetRequest) AnchorType(anchorType NativeAnchorGetDetailV30AnchorType) *ApiOpenApiV30NativeAnchorGetDetailGetRequest {
+func (r *ApiOpenApiV30NativeAnchorGetDetailGetRequest) AnchorType(anchorType models.NativeAnchorGetDetailV30AnchorType) *ApiOpenApiV30NativeAnchorGetDetailGetRequest {
 	r.anchorType = &anchorType
 	return r
 }
 
-func (r *ApiOpenApiV30NativeAnchorGetDetailGetRequest) Execute() (*NativeAnchorGetDetailV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30NativeAnchorGetDetailGetRequest) Execute() (*models.NativeAnchorGetDetailV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *NativeAnchorGetDetailV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return NativeAnchorGetDetailV30Response
-func (a *NativeAnchorGetDetailV30ApiService) getExecute(r *ApiOpenApiV30NativeAnchorGetDetailGetRequest) (*NativeAnchorGetDetailV30Response, *http.Response, error) {
+func (a *NativeAnchorGetDetailV30ApiService) getExecute(r *ApiOpenApiV30NativeAnchorGetDetailGetRequest) (*models.NativeAnchorGetDetailV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *NativeAnchorGetDetailV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.NativeAnchorGetDetailV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *NativeAnchorGetDetailV30ApiService) getExecute(r *ApiOpenApiV30NativeAn
 	localVarPath := localBasePath + "/open_api/v3.0/native_anchor/get/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.anchorIds == nil {

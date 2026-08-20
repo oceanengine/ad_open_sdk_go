@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPlayableUploadV2ApiService ToolsPlayableUploadV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsPlayableUploadPostRequest struct {
 	ctx             context.Context
 	ApiService      *ToolsPlayableUploadV2ApiService
 	advertiserId    *int64
-	playablePackage *FormFileInfo
+	playablePackage *models.FormFileInfo
 }
 
 func (r *ApiOpenApi2ToolsPlayableUploadPostRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsPlayableUploadPostRequest {
@@ -35,12 +36,12 @@ func (r *ApiOpenApi2ToolsPlayableUploadPostRequest) AdvertiserId(advertiserId in
 }
 
 // 试玩素材文件 【格式说明】： 1.格式为zip，大小不超过3M 2.已接入穿山甲JS-SDK，并且调用方式为window.openAppStore(); 3.主html文件需命名为index，且位于一级目录中 4.试玩广告播放方向字段应存储于config.json文件中，位于一级目录中，取值为0,1,2 5.文件名称仅支持大小写字母、数字、减号和下划线 6.素材中不允许使用 mraid.js 格式 7.素材不允许通过外部网络加载动态素材 8.素材中不允许包含JS 重定向 9.素材不允许发出 HTTP 请求 10.素材中不允许存在内容为空的文件
-func (r *ApiOpenApi2ToolsPlayableUploadPostRequest) PlayablePackage(playablePackage *FormFileInfo) *ApiOpenApi2ToolsPlayableUploadPostRequest {
+func (r *ApiOpenApi2ToolsPlayableUploadPostRequest) PlayablePackage(playablePackage *models.FormFileInfo) *ApiOpenApi2ToolsPlayableUploadPostRequest {
 	r.playablePackage = playablePackage
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPlayableUploadPostRequest) Execute() (*ToolsPlayableUploadV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPlayableUploadPostRequest) Execute() (*models.ToolsPlayableUploadV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *ToolsPlayableUploadV2ApiService) Post(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return ToolsPlayableUploadV2Response
-func (a *ToolsPlayableUploadV2ApiService) postExecute(r *ApiOpenApi2ToolsPlayableUploadPostRequest) (*ToolsPlayableUploadV2Response, *http.Response, error) {
+func (a *ToolsPlayableUploadV2ApiService) postExecute(r *ApiOpenApi2ToolsPlayableUploadPostRequest) (*models.ToolsPlayableUploadV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPlayableUploadV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPlayableUploadV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *ToolsPlayableUploadV2ApiService) postExecute(r *ApiOpenApi2ToolsPlayabl
 	localVarPath := localBasePath + "/open_api/2/tools/playable/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

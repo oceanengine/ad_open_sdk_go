@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanOverallAwemeAwemeDeleteV10ApiService QianchuanOverallAwemeAwemeDeleteV10Api service
@@ -25,15 +26,15 @@ type QianchuanOverallAwemeAwemeDeleteV10ApiService service
 type ApiOpenApiV10QianchuanOverallAwemeAwemeDeletePostRequest struct {
 	ctx                                        context.Context
 	ApiService                                 *QianchuanOverallAwemeAwemeDeleteV10ApiService
-	qianchuanOverallAwemeAwemeDeleteV10Request *QianchuanOverallAwemeAwemeDeleteV10Request
+	qianchuanOverallAwemeAwemeDeleteV10Request *models.QianchuanOverallAwemeAwemeDeleteV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanOverallAwemeAwemeDeletePostRequest) QianchuanOverallAwemeAwemeDeleteV10Request(qianchuanOverallAwemeAwemeDeleteV10Request QianchuanOverallAwemeAwemeDeleteV10Request) *ApiOpenApiV10QianchuanOverallAwemeAwemeDeletePostRequest {
+func (r *ApiOpenApiV10QianchuanOverallAwemeAwemeDeletePostRequest) QianchuanOverallAwemeAwemeDeleteV10Request(qianchuanOverallAwemeAwemeDeleteV10Request models.QianchuanOverallAwemeAwemeDeleteV10Request) *ApiOpenApiV10QianchuanOverallAwemeAwemeDeletePostRequest {
 	r.qianchuanOverallAwemeAwemeDeleteV10Request = &qianchuanOverallAwemeAwemeDeleteV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOverallAwemeAwemeDeletePostRequest) Execute() (*QianchuanOverallAwemeAwemeDeleteV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanOverallAwemeAwemeDeletePostRequest) Execute() (*models.QianchuanOverallAwemeAwemeDeleteV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanOverallAwemeAwemeDeleteV10ApiService) Post(ctx context.Context
 // Execute executes the request
 //
 //	@return QianchuanOverallAwemeAwemeDeleteV10Response
-func (a *QianchuanOverallAwemeAwemeDeleteV10ApiService) postExecute(r *ApiOpenApiV10QianchuanOverallAwemeAwemeDeletePostRequest) (*QianchuanOverallAwemeAwemeDeleteV10Response, *http.Response, error) {
+func (a *QianchuanOverallAwemeAwemeDeleteV10ApiService) postExecute(r *ApiOpenApiV10QianchuanOverallAwemeAwemeDeletePostRequest) (*models.QianchuanOverallAwemeAwemeDeleteV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanOverallAwemeAwemeDeleteV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanOverallAwemeAwemeDeleteV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanOverallAwemeAwemeDeleteV10ApiService) postExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/overall_aweme/aweme/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

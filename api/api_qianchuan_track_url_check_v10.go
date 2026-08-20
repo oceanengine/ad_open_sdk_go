@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanTrackUrlCheckV10ApiService QianchuanTrackUrlCheckV10Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV10QianchuanTrackUrlCheckGetRequest) TrackUrl(trackUrl []stri
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanTrackUrlCheckGetRequest) Execute() (*QianchuanTrackUrlCheckV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanTrackUrlCheckGetRequest) Execute() (*models.QianchuanTrackUrlCheckV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -76,12 +77,12 @@ func (a *QianchuanTrackUrlCheckV10ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return QianchuanTrackUrlCheckV10Response
-func (a *QianchuanTrackUrlCheckV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTrackUrlCheckGetRequest) (*QianchuanTrackUrlCheckV10Response, *http.Response, error) {
+func (a *QianchuanTrackUrlCheckV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTrackUrlCheckGetRequest) (*models.QianchuanTrackUrlCheckV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanTrackUrlCheckV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanTrackUrlCheckV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -91,7 +92,7 @@ func (a *QianchuanTrackUrlCheckV10ApiService) getExecute(r *ApiOpenApiV10Qianchu
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/track_url/check/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

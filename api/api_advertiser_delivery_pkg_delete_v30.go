@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserDeliveryPkgDeleteV30ApiService AdvertiserDeliveryPkgDeleteV30Api service
@@ -25,15 +26,15 @@ type AdvertiserDeliveryPkgDeleteV30ApiService service
 type ApiOpenApiV30AdvertiserDeliveryPkgDeletePostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *AdvertiserDeliveryPkgDeleteV30ApiService
-	advertiserDeliveryPkgDeleteV30Request *AdvertiserDeliveryPkgDeleteV30Request
+	advertiserDeliveryPkgDeleteV30Request *models.AdvertiserDeliveryPkgDeleteV30Request
 }
 
-func (r *ApiOpenApiV30AdvertiserDeliveryPkgDeletePostRequest) AdvertiserDeliveryPkgDeleteV30Request(advertiserDeliveryPkgDeleteV30Request AdvertiserDeliveryPkgDeleteV30Request) *ApiOpenApiV30AdvertiserDeliveryPkgDeletePostRequest {
+func (r *ApiOpenApiV30AdvertiserDeliveryPkgDeletePostRequest) AdvertiserDeliveryPkgDeleteV30Request(advertiserDeliveryPkgDeleteV30Request models.AdvertiserDeliveryPkgDeleteV30Request) *ApiOpenApiV30AdvertiserDeliveryPkgDeletePostRequest {
 	r.advertiserDeliveryPkgDeleteV30Request = &advertiserDeliveryPkgDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30AdvertiserDeliveryPkgDeletePostRequest) Execute() (*AdvertiserDeliveryPkgDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AdvertiserDeliveryPkgDeletePostRequest) Execute() (*models.AdvertiserDeliveryPkgDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AdvertiserDeliveryPkgDeleteV30ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return AdvertiserDeliveryPkgDeleteV30Response
-func (a *AdvertiserDeliveryPkgDeleteV30ApiService) postExecute(r *ApiOpenApiV30AdvertiserDeliveryPkgDeletePostRequest) (*AdvertiserDeliveryPkgDeleteV30Response, *http.Response, error) {
+func (a *AdvertiserDeliveryPkgDeleteV30ApiService) postExecute(r *ApiOpenApiV30AdvertiserDeliveryPkgDeletePostRequest) (*models.AdvertiserDeliveryPkgDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserDeliveryPkgDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserDeliveryPkgDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AdvertiserDeliveryPkgDeleteV30ApiService) postExecute(r *ApiOpenApiV30A
 	localVarPath := localBasePath + "/open_api/v3.0/advertiser/delivery_pkg/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

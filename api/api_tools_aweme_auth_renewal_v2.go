@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAwemeAuthRenewalV2ApiService ToolsAwemeAuthRenewalV2Api service
@@ -25,15 +26,15 @@ type ToolsAwemeAuthRenewalV2ApiService service
 type ApiOpenApi2ToolsAwemeAuthRenewalPostRequest struct {
 	ctx                            context.Context
 	ApiService                     *ToolsAwemeAuthRenewalV2ApiService
-	toolsAwemeAuthRenewalV2Request *ToolsAwemeAuthRenewalV2Request
+	toolsAwemeAuthRenewalV2Request *models.ToolsAwemeAuthRenewalV2Request
 }
 
-func (r *ApiOpenApi2ToolsAwemeAuthRenewalPostRequest) ToolsAwemeAuthRenewalV2Request(toolsAwemeAuthRenewalV2Request ToolsAwemeAuthRenewalV2Request) *ApiOpenApi2ToolsAwemeAuthRenewalPostRequest {
+func (r *ApiOpenApi2ToolsAwemeAuthRenewalPostRequest) ToolsAwemeAuthRenewalV2Request(toolsAwemeAuthRenewalV2Request models.ToolsAwemeAuthRenewalV2Request) *ApiOpenApi2ToolsAwemeAuthRenewalPostRequest {
 	r.toolsAwemeAuthRenewalV2Request = &toolsAwemeAuthRenewalV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeAuthRenewalPostRequest) Execute() (*ToolsAwemeAuthRenewalV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAwemeAuthRenewalPostRequest) Execute() (*models.ToolsAwemeAuthRenewalV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsAwemeAuthRenewalV2ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsAwemeAuthRenewalV2Response
-func (a *ToolsAwemeAuthRenewalV2ApiService) postExecute(r *ApiOpenApi2ToolsAwemeAuthRenewalPostRequest) (*ToolsAwemeAuthRenewalV2Response, *http.Response, error) {
+func (a *ToolsAwemeAuthRenewalV2ApiService) postExecute(r *ApiOpenApi2ToolsAwemeAuthRenewalPostRequest) (*models.ToolsAwemeAuthRenewalV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAwemeAuthRenewalV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAwemeAuthRenewalV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsAwemeAuthRenewalV2ApiService) postExecute(r *ApiOpenApi2ToolsAweme
 	localVarPath := localBasePath + "/open_api/2/tools/aweme_auth/renewal/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

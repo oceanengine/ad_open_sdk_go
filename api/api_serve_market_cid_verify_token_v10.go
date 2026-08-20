@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ServeMarketCidVerifyTokenV10ApiService ServeMarketCidVerifyTokenV10Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV10ServeMarketCidVerifyTokenGetRequest struct {
 	ApiService *ServeMarketCidVerifyTokenV10ApiService
 }
 
-func (r *ApiOpenApiV10ServeMarketCidVerifyTokenGetRequest) Execute() (*ServeMarketCidVerifyTokenV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10ServeMarketCidVerifyTokenGetRequest) Execute() (*models.ServeMarketCidVerifyTokenV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -61,12 +62,12 @@ func (a *ServeMarketCidVerifyTokenV10ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ServeMarketCidVerifyTokenV10Response
-func (a *ServeMarketCidVerifyTokenV10ApiService) getExecute(r *ApiOpenApiV10ServeMarketCidVerifyTokenGetRequest) (*ServeMarketCidVerifyTokenV10Response, *http.Response, error) {
+func (a *ServeMarketCidVerifyTokenV10ApiService) getExecute(r *ApiOpenApiV10ServeMarketCidVerifyTokenGetRequest) (*models.ServeMarketCidVerifyTokenV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ServeMarketCidVerifyTokenV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ServeMarketCidVerifyTokenV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -76,7 +77,7 @@ func (a *ServeMarketCidVerifyTokenV10ApiService) getExecute(r *ApiOpenApiV10Serv
 	localVarPath := localBasePath + "/open_api/v1.0/serve_market/cid/verify_token/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

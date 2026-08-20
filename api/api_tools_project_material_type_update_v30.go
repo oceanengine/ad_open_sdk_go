@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsProjectMaterialTypeUpdateV30ApiService ToolsProjectMaterialTypeUpdateV30Api service
@@ -25,15 +26,15 @@ type ToolsProjectMaterialTypeUpdateV30ApiService service
 type ApiOpenApiV30ToolsProjectMaterialTypeUpdatePostRequest struct {
 	ctx                                      context.Context
 	ApiService                               *ToolsProjectMaterialTypeUpdateV30ApiService
-	toolsProjectMaterialTypeUpdateV30Request *ToolsProjectMaterialTypeUpdateV30Request
+	toolsProjectMaterialTypeUpdateV30Request *models.ToolsProjectMaterialTypeUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsProjectMaterialTypeUpdatePostRequest) ToolsProjectMaterialTypeUpdateV30Request(toolsProjectMaterialTypeUpdateV30Request ToolsProjectMaterialTypeUpdateV30Request) *ApiOpenApiV30ToolsProjectMaterialTypeUpdatePostRequest {
+func (r *ApiOpenApiV30ToolsProjectMaterialTypeUpdatePostRequest) ToolsProjectMaterialTypeUpdateV30Request(toolsProjectMaterialTypeUpdateV30Request models.ToolsProjectMaterialTypeUpdateV30Request) *ApiOpenApiV30ToolsProjectMaterialTypeUpdatePostRequest {
 	r.toolsProjectMaterialTypeUpdateV30Request = &toolsProjectMaterialTypeUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsProjectMaterialTypeUpdatePostRequest) Execute() (*ToolsProjectMaterialTypeUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsProjectMaterialTypeUpdatePostRequest) Execute() (*models.ToolsProjectMaterialTypeUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsProjectMaterialTypeUpdateV30ApiService) Post(ctx context.Context) 
 // Execute executes the request
 //
 //	@return ToolsProjectMaterialTypeUpdateV30Response
-func (a *ToolsProjectMaterialTypeUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsProjectMaterialTypeUpdatePostRequest) (*ToolsProjectMaterialTypeUpdateV30Response, *http.Response, error) {
+func (a *ToolsProjectMaterialTypeUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsProjectMaterialTypeUpdatePostRequest) (*models.ToolsProjectMaterialTypeUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsProjectMaterialTypeUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsProjectMaterialTypeUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsProjectMaterialTypeUpdateV30ApiService) postExecute(r *ApiOpenApiV
 	localVarPath := localBasePath + "/open_api/v3.0/tools/project_material_type/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpAssetAuthListV30ApiService ToolsEbpAssetAuthListV30Api service
@@ -26,10 +27,10 @@ type ApiOpenApiV30ToolsEbpAssetAuthListGetRequest struct {
 	ctx            context.Context
 	ApiService     *ToolsEbpAssetAuthListV30ApiService
 	accountId      *int64
-	accountType    *ToolsEbpAssetAuthListV30AccountType
-	assetType      *ToolsEbpAssetAuthListV30AssetType
+	accountType    *models.ToolsEbpAssetAuthListV30AccountType
+	assetType      *models.ToolsEbpAssetAuthListV30AssetType
 	assetScope     *int64
-	assetScopeType *ToolsEbpAssetAuthListV30AssetScopeType
+	assetScopeType *models.ToolsEbpAssetAuthListV30AssetScopeType
 	page           *int64
 	pageSize       *int64
 }
@@ -39,12 +40,12 @@ func (r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) AccountId(accountId int64
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) AccountType(accountType ToolsEbpAssetAuthListV30AccountType) *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) AccountType(accountType models.ToolsEbpAssetAuthListV30AccountType) *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) AssetType(assetType ToolsEbpAssetAuthListV30AssetType) *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) AssetType(assetType models.ToolsEbpAssetAuthListV30AssetType) *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest {
 	r.assetType = &assetType
 	return r
 }
@@ -56,7 +57,7 @@ func (r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) AssetScope(assetScope int
 }
 
 // 查询的资产范围类型 1-单个资产 2-组织直连资产 3-组织以及子组织资产
-func (r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) AssetScopeType(assetScopeType ToolsEbpAssetAuthListV30AssetScopeType) *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) AssetScopeType(assetScopeType models.ToolsEbpAssetAuthListV30AssetScopeType) *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest {
 	r.assetScopeType = &assetScopeType
 	return r
 }
@@ -71,7 +72,7 @@ func (r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) PageSize(pageSize int64) 
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) Execute() (*ToolsEbpAssetAuthListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) Execute() (*models.ToolsEbpAssetAuthListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -105,12 +106,12 @@ func (a *ToolsEbpAssetAuthListV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsEbpAssetAuthListV30Response
-func (a *ToolsEbpAssetAuthListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) (*ToolsEbpAssetAuthListV30Response, *http.Response, error) {
+func (a *ToolsEbpAssetAuthListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAssetAuthListGetRequest) (*models.ToolsEbpAssetAuthListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpAssetAuthListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpAssetAuthListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -120,7 +121,7 @@ func (a *ToolsEbpAssetAuthListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbp
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/asset/auth/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

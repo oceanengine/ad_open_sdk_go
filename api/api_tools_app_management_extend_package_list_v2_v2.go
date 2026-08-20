@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementExtendPackageListV2V2ApiService ToolsAppManagementExtendPackageListV2V2Api service
@@ -26,11 +27,11 @@ type ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest struct {
 	ctx         context.Context
 	ApiService  *ToolsAppManagementExtendPackageListV2V2ApiService
 	accountId   *int64
-	accountType *ToolsAppManagementExtendPackageListV2V2AccountType
+	accountType *models.ToolsAppManagementExtendPackageListV2V2AccountType
 	packageId   *string
 	page        *int32
 	pageSize    *int32
-	filtering   *ToolsAppManagementExtendPackageListV2V2Filtering
+	filtering   *models.ToolsAppManagementExtendPackageListV2V2Filtering
 }
 
 func (r *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest) AccountId(accountId int64) *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest {
@@ -38,7 +39,7 @@ func (r *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest) AccountId(a
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest) AccountType(accountType ToolsAppManagementExtendPackageListV2V2AccountType) *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest {
+func (r *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest) AccountType(accountType models.ToolsAppManagementExtendPackageListV2V2AccountType) *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -58,12 +59,12 @@ func (r *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest) PageSize(pa
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest) Filtering(filtering ToolsAppManagementExtendPackageListV2V2Filtering) *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest {
+func (r *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest) Filtering(filtering models.ToolsAppManagementExtendPackageListV2V2Filtering) *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest) Execute() (*ToolsAppManagementExtendPackageListV2V2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest) Execute() (*models.ToolsAppManagementExtendPackageListV2V2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ToolsAppManagementExtendPackageListV2V2ApiService) Get(ctx context.Cont
 // Execute executes the request
 //
 //	@return ToolsAppManagementExtendPackageListV2V2Response
-func (a *ToolsAppManagementExtendPackageListV2V2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest) (*ToolsAppManagementExtendPackageListV2V2Response, *http.Response, error) {
+func (a *ToolsAppManagementExtendPackageListV2V2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementExtendPackageListV2GetRequest) (*models.ToolsAppManagementExtendPackageListV2V2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementExtendPackageListV2V2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementExtendPackageListV2V2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ToolsAppManagementExtendPackageListV2V2ApiService) getExecute(r *ApiOpe
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/extend_package/list_v2/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

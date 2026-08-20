@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueCallVirtualNumberGetV2ApiService ToolsClueCallVirtualNumberGetV2Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2ToolsClueCallVirtualNumberGetGetRequest) CalleeNumber(callee
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueCallVirtualNumberGetGetRequest) Execute() (*ToolsClueCallVirtualNumberGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueCallVirtualNumberGetGetRequest) Execute() (*models.ToolsClueCallVirtualNumberGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *ToolsClueCallVirtualNumberGetV2ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return ToolsClueCallVirtualNumberGetV2Response
-func (a *ToolsClueCallVirtualNumberGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueCallVirtualNumberGetGetRequest) (*ToolsClueCallVirtualNumberGetV2Response, *http.Response, error) {
+func (a *ToolsClueCallVirtualNumberGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueCallVirtualNumberGetGetRequest) (*models.ToolsClueCallVirtualNumberGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueCallVirtualNumberGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueCallVirtualNumberGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *ToolsClueCallVirtualNumberGetV2ApiService) getExecute(r *ApiOpenApi2Too
 	localVarPath := localBasePath + "/open_api/2/tools/clue/call_virtual_number/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

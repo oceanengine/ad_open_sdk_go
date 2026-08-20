@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalAwemeAuthorizedGetV30ApiService LocalAwemeAuthorizedGetV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest struct {
 	ctx            context.Context
 	ApiService     *LocalAwemeAuthorizedGetV30ApiService
 	localAccountId *int64
-	marketingGoal  *LocalAwemeAuthorizedGetV30MarketingGoal
-	filtering      *LocalAwemeAuthorizedGetV30Filtering
+	marketingGoal  *models.LocalAwemeAuthorizedGetV30MarketingGoal
+	filtering      *models.LocalAwemeAuthorizedGetV30Filtering
 	page           *int64
 	pageSize       *int64
 }
@@ -39,13 +40,13 @@ func (r *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest) LocalAccountId(localAcc
 }
 
 // 抖音号使用场景
-func (r *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest) MarketingGoal(marketingGoal LocalAwemeAuthorizedGetV30MarketingGoal) *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest {
+func (r *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest) MarketingGoal(marketingGoal models.LocalAwemeAuthorizedGetV30MarketingGoal) *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest) Filtering(filtering LocalAwemeAuthorizedGetV30Filtering) *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest {
+func (r *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest) Filtering(filtering models.LocalAwemeAuthorizedGetV30Filtering) *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest) PageSize(pageSize int64
 	return r
 }
 
-func (r *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest) Execute() (*LocalAwemeAuthorizedGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest) Execute() (*models.LocalAwemeAuthorizedGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *LocalAwemeAuthorizedGetV30ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return LocalAwemeAuthorizedGetV30Response
-func (a *LocalAwemeAuthorizedGetV30ApiService) getExecute(r *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest) (*LocalAwemeAuthorizedGetV30Response, *http.Response, error) {
+func (a *LocalAwemeAuthorizedGetV30ApiService) getExecute(r *ApiOpenApiV30LocalAwemeAuthorizedGetGetRequest) (*models.LocalAwemeAuthorizedGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalAwemeAuthorizedGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalAwemeAuthorizedGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *LocalAwemeAuthorizedGetV30ApiService) getExecute(r *ApiOpenApiV30LocalA
 	localVarPath := localBasePath + "/open_api/v3.0/local/aweme/authorized/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

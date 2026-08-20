@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FilePlayableCreateV30ApiService FilePlayableCreateV30Api service
@@ -25,15 +26,15 @@ type FilePlayableCreateV30ApiService service
 type ApiOpenApiV30FilePlayableCreatePostRequest struct {
 	ctx                          context.Context
 	ApiService                   *FilePlayableCreateV30ApiService
-	filePlayableCreateV30Request *FilePlayableCreateV30Request
+	filePlayableCreateV30Request *models.FilePlayableCreateV30Request
 }
 
-func (r *ApiOpenApiV30FilePlayableCreatePostRequest) FilePlayableCreateV30Request(filePlayableCreateV30Request FilePlayableCreateV30Request) *ApiOpenApiV30FilePlayableCreatePostRequest {
+func (r *ApiOpenApiV30FilePlayableCreatePostRequest) FilePlayableCreateV30Request(filePlayableCreateV30Request models.FilePlayableCreateV30Request) *ApiOpenApiV30FilePlayableCreatePostRequest {
 	r.filePlayableCreateV30Request = &filePlayableCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30FilePlayableCreatePostRequest) Execute() (*FilePlayableCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30FilePlayableCreatePostRequest) Execute() (*models.FilePlayableCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *FilePlayableCreateV30ApiService) Post(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return FilePlayableCreateV30Response
-func (a *FilePlayableCreateV30ApiService) postExecute(r *ApiOpenApiV30FilePlayableCreatePostRequest) (*FilePlayableCreateV30Response, *http.Response, error) {
+func (a *FilePlayableCreateV30ApiService) postExecute(r *ApiOpenApiV30FilePlayableCreatePostRequest) (*models.FilePlayableCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FilePlayableCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FilePlayableCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *FilePlayableCreateV30ApiService) postExecute(r *ApiOpenApiV30FilePlayab
 	localVarPath := localBasePath + "/open_api/v3.0/file/playable/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

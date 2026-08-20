@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // NativeAnchorUpdateV30ApiService NativeAnchorUpdateV30Api service
@@ -25,15 +26,15 @@ type NativeAnchorUpdateV30ApiService service
 type ApiOpenApiV30NativeAnchorUpdatePostRequest struct {
 	ctx                          context.Context
 	ApiService                   *NativeAnchorUpdateV30ApiService
-	nativeAnchorUpdateV30Request *NativeAnchorUpdateV30Request
+	nativeAnchorUpdateV30Request *models.NativeAnchorUpdateV30Request
 }
 
-func (r *ApiOpenApiV30NativeAnchorUpdatePostRequest) NativeAnchorUpdateV30Request(nativeAnchorUpdateV30Request NativeAnchorUpdateV30Request) *ApiOpenApiV30NativeAnchorUpdatePostRequest {
+func (r *ApiOpenApiV30NativeAnchorUpdatePostRequest) NativeAnchorUpdateV30Request(nativeAnchorUpdateV30Request models.NativeAnchorUpdateV30Request) *ApiOpenApiV30NativeAnchorUpdatePostRequest {
 	r.nativeAnchorUpdateV30Request = &nativeAnchorUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30NativeAnchorUpdatePostRequest) Execute() (*NativeAnchorUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30NativeAnchorUpdatePostRequest) Execute() (*models.NativeAnchorUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *NativeAnchorUpdateV30ApiService) Post(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return NativeAnchorUpdateV30Response
-func (a *NativeAnchorUpdateV30ApiService) postExecute(r *ApiOpenApiV30NativeAnchorUpdatePostRequest) (*NativeAnchorUpdateV30Response, *http.Response, error) {
+func (a *NativeAnchorUpdateV30ApiService) postExecute(r *ApiOpenApiV30NativeAnchorUpdatePostRequest) (*models.NativeAnchorUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *NativeAnchorUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.NativeAnchorUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *NativeAnchorUpdateV30ApiService) postExecute(r *ApiOpenApiV30NativeAnch
 	localVarPath := localBasePath + "/open_api/v3.0/native_anchor/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

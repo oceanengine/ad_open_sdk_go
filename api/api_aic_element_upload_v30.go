@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AicElementUploadV30ApiService AicElementUploadV30Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV30AicElementUploadPostRequest struct {
 	ctx         context.Context
 	ApiService  *AicElementUploadV30ApiService
 	accountId   *int64
-	accountType *AicElementUploadV30AccountType
-	elementType *AicElementUploadV30ElementType
+	accountType *models.AicElementUploadV30AccountType
+	elementType *models.AicElementUploadV30ElementType
 	elementName *string
-	file        *FormFileInfo
+	file        *models.FormFileInfo
 	pathName    *string
-	useAs       *AicElementUploadV30UseAs
+	useAs       *models.AicElementUploadV30UseAs
 }
 
 // BP账户体系:组织id，Agent账户体系:代理商id
@@ -40,12 +41,12 @@ func (r *ApiOpenApiV30AicElementUploadPostRequest) AccountId(accountId int64) *A
 	return r
 }
 
-func (r *ApiOpenApiV30AicElementUploadPostRequest) AccountType(accountType AicElementUploadV30AccountType) *ApiOpenApiV30AicElementUploadPostRequest {
+func (r *ApiOpenApiV30AicElementUploadPostRequest) AccountType(accountType models.AicElementUploadV30AccountType) *ApiOpenApiV30AicElementUploadPostRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApiV30AicElementUploadPostRequest) ElementType(elementType AicElementUploadV30ElementType) *ApiOpenApiV30AicElementUploadPostRequest {
+func (r *ApiOpenApiV30AicElementUploadPostRequest) ElementType(elementType models.AicElementUploadV30ElementType) *ApiOpenApiV30AicElementUploadPostRequest {
 	r.elementType = &elementType
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApiV30AicElementUploadPostRequest) ElementName(elementName strin
 }
 
 // 上传二进制数据，如果在相同的路径下有相同的视频即为更新， 视频数据：支持mp4、mpeg、mov，单视频时长不超过10min，大小＜500M, 图片数据：jpg、jpeg、png、webp、bmp，大小&lt;150MB 字体数据：ttf格式，大小&lt;150MB 音乐数据：mp3、wav、flac、aac，大小&lt;150MB,时长不超过5min
-func (r *ApiOpenApiV30AicElementUploadPostRequest) File(file *FormFileInfo) *ApiOpenApiV30AicElementUploadPostRequest {
+func (r *ApiOpenApiV30AicElementUploadPostRequest) File(file *models.FormFileInfo) *ApiOpenApiV30AicElementUploadPostRequest {
 	r.file = file
 	return r
 }
@@ -68,12 +69,12 @@ func (r *ApiOpenApiV30AicElementUploadPostRequest) PathName(pathName string) *Ap
 	return r
 }
 
-func (r *ApiOpenApiV30AicElementUploadPostRequest) UseAs(useAs AicElementUploadV30UseAs) *ApiOpenApiV30AicElementUploadPostRequest {
+func (r *ApiOpenApiV30AicElementUploadPostRequest) UseAs(useAs models.AicElementUploadV30UseAs) *ApiOpenApiV30AicElementUploadPostRequest {
 	r.useAs = &useAs
 	return r
 }
 
-func (r *ApiOpenApiV30AicElementUploadPostRequest) Execute() (*AicElementUploadV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AicElementUploadPostRequest) Execute() (*models.AicElementUploadV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -107,12 +108,12 @@ func (a *AicElementUploadV30ApiService) Post(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return AicElementUploadV30Response
-func (a *AicElementUploadV30ApiService) postExecute(r *ApiOpenApiV30AicElementUploadPostRequest) (*AicElementUploadV30Response, *http.Response, error) {
+func (a *AicElementUploadV30ApiService) postExecute(r *ApiOpenApiV30AicElementUploadPostRequest) (*models.AicElementUploadV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AicElementUploadV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AicElementUploadV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -122,7 +123,7 @@ func (a *AicElementUploadV30ApiService) postExecute(r *ApiOpenApiV30AicElementUp
 	localVarPath := localBasePath + "/open_api/v3.0/aic/element/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

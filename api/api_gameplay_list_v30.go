@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // GameplayListV30ApiService GameplayListV30Api service
@@ -26,10 +27,10 @@ type ApiOpenApiV30GameplayListGetRequest struct {
 	ctx             context.Context
 	ApiService      *GameplayListV30ApiService
 	accountId       *int64
-	accountType     *GameplayListV30AccountType
+	accountType     *models.GameplayListV30AccountType
 	assetId         *string
-	assetType       *GameplayListV30AssetType
-	pageInfo        *GameplayListV30PageInfo
+	assetType       *models.GameplayListV30AssetType
+	pageInfo        *models.GameplayListV30PageInfo
 	filterPlayNames *[]string
 }
 
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30GameplayListGetRequest) AccountId(accountId int64) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApiV30GameplayListGetRequest) AccountType(accountType GameplayListV30AccountType) *ApiOpenApiV30GameplayListGetRequest {
+func (r *ApiOpenApiV30GameplayListGetRequest) AccountType(accountType models.GameplayListV30AccountType) *ApiOpenApiV30GameplayListGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -48,12 +49,12 @@ func (r *ApiOpenApiV30GameplayListGetRequest) AssetId(assetId string) *ApiOpenAp
 	return r
 }
 
-func (r *ApiOpenApiV30GameplayListGetRequest) AssetType(assetType GameplayListV30AssetType) *ApiOpenApiV30GameplayListGetRequest {
+func (r *ApiOpenApiV30GameplayListGetRequest) AssetType(assetType models.GameplayListV30AssetType) *ApiOpenApiV30GameplayListGetRequest {
 	r.assetType = &assetType
 	return r
 }
 
-func (r *ApiOpenApiV30GameplayListGetRequest) PageInfo(pageInfo GameplayListV30PageInfo) *ApiOpenApiV30GameplayListGetRequest {
+func (r *ApiOpenApiV30GameplayListGetRequest) PageInfo(pageInfo models.GameplayListV30PageInfo) *ApiOpenApiV30GameplayListGetRequest {
 	r.pageInfo = &pageInfo
 	return r
 }
@@ -63,7 +64,7 @@ func (r *ApiOpenApiV30GameplayListGetRequest) FilterPlayNames(filterPlayNames []
 	return r
 }
 
-func (r *ApiOpenApiV30GameplayListGetRequest) Execute() (*GameplayListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30GameplayListGetRequest) Execute() (*models.GameplayListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *GameplayListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Gamep
 // Execute executes the request
 //
 //	@return GameplayListV30Response
-func (a *GameplayListV30ApiService) getExecute(r *ApiOpenApiV30GameplayListGetRequest) (*GameplayListV30Response, *http.Response, error) {
+func (a *GameplayListV30ApiService) getExecute(r *ApiOpenApiV30GameplayListGetRequest) (*models.GameplayListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *GameplayListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.GameplayListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *GameplayListV30ApiService) getExecute(r *ApiOpenApiV30GameplayListGetRe
 	localVarPath := localBasePath + "/open_api/v3.0/gameplay/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

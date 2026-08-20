@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerAssetsCreateV2ApiService EventManagerAssetsCreateV2Api service
@@ -25,15 +26,15 @@ type EventManagerAssetsCreateV2ApiService service
 type ApiOpenApi2EventManagerAssetsCreatePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *EventManagerAssetsCreateV2ApiService
-	eventManagerAssetsCreateV2Request *EventManagerAssetsCreateV2Request
+	eventManagerAssetsCreateV2Request *models.EventManagerAssetsCreateV2Request
 }
 
-func (r *ApiOpenApi2EventManagerAssetsCreatePostRequest) EventManagerAssetsCreateV2Request(eventManagerAssetsCreateV2Request EventManagerAssetsCreateV2Request) *ApiOpenApi2EventManagerAssetsCreatePostRequest {
+func (r *ApiOpenApi2EventManagerAssetsCreatePostRequest) EventManagerAssetsCreateV2Request(eventManagerAssetsCreateV2Request models.EventManagerAssetsCreateV2Request) *ApiOpenApi2EventManagerAssetsCreatePostRequest {
 	r.eventManagerAssetsCreateV2Request = &eventManagerAssetsCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2EventManagerAssetsCreatePostRequest) Execute() (*EventManagerAssetsCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EventManagerAssetsCreatePostRequest) Execute() (*models.EventManagerAssetsCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EventManagerAssetsCreateV2ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return EventManagerAssetsCreateV2Response
-func (a *EventManagerAssetsCreateV2ApiService) postExecute(r *ApiOpenApi2EventManagerAssetsCreatePostRequest) (*EventManagerAssetsCreateV2Response, *http.Response, error) {
+func (a *EventManagerAssetsCreateV2ApiService) postExecute(r *ApiOpenApi2EventManagerAssetsCreatePostRequest) (*models.EventManagerAssetsCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerAssetsCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerAssetsCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EventManagerAssetsCreateV2ApiService) postExecute(r *ApiOpenApi2EventMa
 	localVarPath := localBasePath + "/open_api/2/event_manager/assets/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

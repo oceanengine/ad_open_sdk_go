@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaCheckIndexEntryProgressV2ApiService DpaCheckIndexEntryProgressV2Api service
@@ -25,15 +26,15 @@ type DpaCheckIndexEntryProgressV2ApiService service
 type ApiOpenApi2DpaCheckIndexEntryProgressPostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *DpaCheckIndexEntryProgressV2ApiService
-	dpaCheckIndexEntryProgressV2Request *DpaCheckIndexEntryProgressV2Request
+	dpaCheckIndexEntryProgressV2Request *models.DpaCheckIndexEntryProgressV2Request
 }
 
-func (r *ApiOpenApi2DpaCheckIndexEntryProgressPostRequest) DpaCheckIndexEntryProgressV2Request(dpaCheckIndexEntryProgressV2Request DpaCheckIndexEntryProgressV2Request) *ApiOpenApi2DpaCheckIndexEntryProgressPostRequest {
+func (r *ApiOpenApi2DpaCheckIndexEntryProgressPostRequest) DpaCheckIndexEntryProgressV2Request(dpaCheckIndexEntryProgressV2Request models.DpaCheckIndexEntryProgressV2Request) *ApiOpenApi2DpaCheckIndexEntryProgressPostRequest {
 	r.dpaCheckIndexEntryProgressV2Request = &dpaCheckIndexEntryProgressV2Request
 	return r
 }
 
-func (r *ApiOpenApi2DpaCheckIndexEntryProgressPostRequest) Execute() (*DpaCheckIndexEntryProgressV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DpaCheckIndexEntryProgressPostRequest) Execute() (*models.DpaCheckIndexEntryProgressV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DpaCheckIndexEntryProgressV2ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return DpaCheckIndexEntryProgressV2Response
-func (a *DpaCheckIndexEntryProgressV2ApiService) postExecute(r *ApiOpenApi2DpaCheckIndexEntryProgressPostRequest) (*DpaCheckIndexEntryProgressV2Response, *http.Response, error) {
+func (a *DpaCheckIndexEntryProgressV2ApiService) postExecute(r *ApiOpenApi2DpaCheckIndexEntryProgressPostRequest) (*models.DpaCheckIndexEntryProgressV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaCheckIndexEntryProgressV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaCheckIndexEntryProgressV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DpaCheckIndexEntryProgressV2ApiService) postExecute(r *ApiOpenApi2DpaCh
 	localVarPath := localBasePath + "/open_api/2/dpa/check_index_entry_progress/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

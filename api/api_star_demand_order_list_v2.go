@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemandOrderListV2ApiService StarDemandOrderListV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2StarDemandOrderListGetRequest struct {
 	ApiService *StarDemandOrderListV2ApiService
 	starId     *int64
 	demandId   *int64
-	filtering  *StarDemandOrderListV2Filtering
+	filtering  *models.StarDemandOrderListV2Filtering
 	page       *int32
 	pageSize   *int32
 }
@@ -45,7 +46,7 @@ func (r *ApiOpenApi2StarDemandOrderListGetRequest) DemandId(demandId int64) *Api
 }
 
 // 过滤条件，若此字段不传，或传空则视为无限制条件
-func (r *ApiOpenApi2StarDemandOrderListGetRequest) Filtering(filtering StarDemandOrderListV2Filtering) *ApiOpenApi2StarDemandOrderListGetRequest {
+func (r *ApiOpenApi2StarDemandOrderListGetRequest) Filtering(filtering models.StarDemandOrderListV2Filtering) *ApiOpenApi2StarDemandOrderListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApi2StarDemandOrderListGetRequest) PageSize(pageSize int32) *Api
 	return r
 }
 
-func (r *ApiOpenApi2StarDemandOrderListGetRequest) Execute() (*StarDemandOrderListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemandOrderListGetRequest) Execute() (*models.StarDemandOrderListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *StarDemandOrderListV2ApiService) Get(ctx context.Context) *ApiOpenApi2S
 // Execute executes the request
 //
 //	@return StarDemandOrderListV2Response
-func (a *StarDemandOrderListV2ApiService) getExecute(r *ApiOpenApi2StarDemandOrderListGetRequest) (*StarDemandOrderListV2Response, *http.Response, error) {
+func (a *StarDemandOrderListV2ApiService) getExecute(r *ApiOpenApi2StarDemandOrderListGetRequest) (*models.StarDemandOrderListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemandOrderListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemandOrderListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *StarDemandOrderListV2ApiService) getExecute(r *ApiOpenApi2StarDemandOrd
 	localVarPath := localBasePath + "/open_api/2/star/demand/order/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

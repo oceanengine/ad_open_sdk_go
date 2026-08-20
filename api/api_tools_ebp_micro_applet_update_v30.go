@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpMicroAppletUpdateV30ApiService ToolsEbpMicroAppletUpdateV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpMicroAppletUpdateV30ApiService service
 type ApiOpenApiV30ToolsEbpMicroAppletUpdatePostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *ToolsEbpMicroAppletUpdateV30ApiService
-	toolsEbpMicroAppletUpdateV30Request *ToolsEbpMicroAppletUpdateV30Request
+	toolsEbpMicroAppletUpdateV30Request *models.ToolsEbpMicroAppletUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroAppletUpdatePostRequest) ToolsEbpMicroAppletUpdateV30Request(toolsEbpMicroAppletUpdateV30Request ToolsEbpMicroAppletUpdateV30Request) *ApiOpenApiV30ToolsEbpMicroAppletUpdatePostRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroAppletUpdatePostRequest) ToolsEbpMicroAppletUpdateV30Request(toolsEbpMicroAppletUpdateV30Request models.ToolsEbpMicroAppletUpdateV30Request) *ApiOpenApiV30ToolsEbpMicroAppletUpdatePostRequest {
 	r.toolsEbpMicroAppletUpdateV30Request = &toolsEbpMicroAppletUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroAppletUpdatePostRequest) Execute() (*ToolsEbpMicroAppletUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpMicroAppletUpdatePostRequest) Execute() (*models.ToolsEbpMicroAppletUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpMicroAppletUpdateV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return ToolsEbpMicroAppletUpdateV30Response
-func (a *ToolsEbpMicroAppletUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpMicroAppletUpdatePostRequest) (*ToolsEbpMicroAppletUpdateV30Response, *http.Response, error) {
+func (a *ToolsEbpMicroAppletUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpMicroAppletUpdatePostRequest) (*models.ToolsEbpMicroAppletUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpMicroAppletUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpMicroAppletUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpMicroAppletUpdateV30ApiService) postExecute(r *ApiOpenApiV30Too
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/micro_applet/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

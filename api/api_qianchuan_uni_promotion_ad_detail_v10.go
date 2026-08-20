@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdDetailV10ApiService QianchuanUniPromotionAdDetailV10Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdDetailGetRequest) AdId(adId int64) 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdDetailGetRequest) Execute() (*QianchuanUniPromotionAdDetailV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdDetailGetRequest) Execute() (*models.QianchuanUniPromotionAdDetailV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *QianchuanUniPromotionAdDetailV10ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdDetailV10Response
-func (a *QianchuanUniPromotionAdDetailV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionAdDetailGetRequest) (*QianchuanUniPromotionAdDetailV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdDetailV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionAdDetailGetRequest) (*models.QianchuanUniPromotionAdDetailV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdDetailV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdDetailV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *QianchuanUniPromotionAdDetailV10ApiService) getExecute(r *ApiOpenApiV10
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

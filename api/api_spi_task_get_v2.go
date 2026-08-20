@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SpiTaskGetV2ApiService SpiTaskGetV2Api service
@@ -33,7 +34,7 @@ type ApiOpenApi2SpiTaskGetGetRequest struct {
 	pageSize     *int64
 	serviceLabel *string
 	startDate    *string
-	status       *SpiTaskGetV2Status
+	status       *models.SpiTaskGetV2Status
 	subscribeId  *int64
 }
 
@@ -77,7 +78,7 @@ func (r *ApiOpenApi2SpiTaskGetGetRequest) StartDate(startDate string) *ApiOpenAp
 	return r
 }
 
-func (r *ApiOpenApi2SpiTaskGetGetRequest) Status(status SpiTaskGetV2Status) *ApiOpenApi2SpiTaskGetGetRequest {
+func (r *ApiOpenApi2SpiTaskGetGetRequest) Status(status models.SpiTaskGetV2Status) *ApiOpenApi2SpiTaskGetGetRequest {
 	r.status = &status
 	return r
 }
@@ -87,7 +88,7 @@ func (r *ApiOpenApi2SpiTaskGetGetRequest) SubscribeId(subscribeId int64) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApi2SpiTaskGetGetRequest) Execute() (*SpiTaskGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2SpiTaskGetGetRequest) Execute() (*models.SpiTaskGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -121,12 +122,12 @@ func (a *SpiTaskGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2SpiTaskGet
 // Execute executes the request
 //
 //	@return SpiTaskGetV2Response
-func (a *SpiTaskGetV2ApiService) getExecute(r *ApiOpenApi2SpiTaskGetGetRequest) (*SpiTaskGetV2Response, *http.Response, error) {
+func (a *SpiTaskGetV2ApiService) getExecute(r *ApiOpenApi2SpiTaskGetGetRequest) (*models.SpiTaskGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SpiTaskGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SpiTaskGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -136,7 +137,7 @@ func (a *SpiTaskGetV2ApiService) getExecute(r *ApiOpenApi2SpiTaskGetGetRequest) 
 	localVarPath := localBasePath + "/open_api/2/spi_task/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

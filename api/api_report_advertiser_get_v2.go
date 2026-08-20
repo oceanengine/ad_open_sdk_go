@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportAdvertiserGetV2ApiService ReportAdvertiserGetV2Api service
@@ -28,14 +29,14 @@ type ApiOpenApi2ReportAdvertiserGetGetRequest struct {
 	advertiserId    *int64
 	endDate         **string
 	fields          *[]string
-	filtering       *ReportAdvertiserGetV2Filtering
-	groupBy         *[]*ReportAdvertiserGetV2GroupBy
-	orderField      *ReportAdvertiserGetV2OrderField
-	orderType       *ReportAdvertiserGetV2OrderType
+	filtering       *models.ReportAdvertiserGetV2Filtering
+	groupBy         *[]*models.ReportAdvertiserGetV2GroupBy
+	orderField      *models.ReportAdvertiserGetV2OrderField
+	orderType       *models.ReportAdvertiserGetV2OrderType
 	page            *int64
 	pageSize        *int64
 	startDate       **string
-	timeGranularity *ReportAdvertiserGetV2TimeGranularity
+	timeGranularity *models.ReportAdvertiserGetV2TimeGranularity
 }
 
 func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ReportAdvertiserGetGetRequest {
@@ -53,22 +54,22 @@ func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) Fields(fields []string) *ApiO
 	return r
 }
 
-func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) Filtering(filtering ReportAdvertiserGetV2Filtering) *ApiOpenApi2ReportAdvertiserGetGetRequest {
+func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) Filtering(filtering models.ReportAdvertiserGetV2Filtering) *ApiOpenApi2ReportAdvertiserGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) GroupBy(groupBy []*ReportAdvertiserGetV2GroupBy) *ApiOpenApi2ReportAdvertiserGetGetRequest {
+func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) GroupBy(groupBy []*models.ReportAdvertiserGetV2GroupBy) *ApiOpenApi2ReportAdvertiserGetGetRequest {
 	r.groupBy = &groupBy
 	return r
 }
 
-func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) OrderField(orderField ReportAdvertiserGetV2OrderField) *ApiOpenApi2ReportAdvertiserGetGetRequest {
+func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) OrderField(orderField models.ReportAdvertiserGetV2OrderField) *ApiOpenApi2ReportAdvertiserGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
 
-func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) OrderType(orderType ReportAdvertiserGetV2OrderType) *ApiOpenApi2ReportAdvertiserGetGetRequest {
+func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) OrderType(orderType models.ReportAdvertiserGetV2OrderType) *ApiOpenApi2ReportAdvertiserGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -88,12 +89,12 @@ func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) StartDate(startDate *string) 
 	return r
 }
 
-func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) TimeGranularity(timeGranularity ReportAdvertiserGetV2TimeGranularity) *ApiOpenApi2ReportAdvertiserGetGetRequest {
+func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) TimeGranularity(timeGranularity models.ReportAdvertiserGetV2TimeGranularity) *ApiOpenApi2ReportAdvertiserGetGetRequest {
 	r.timeGranularity = &timeGranularity
 	return r
 }
 
-func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) Execute() (*ReportAdvertiserGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ReportAdvertiserGetGetRequest) Execute() (*models.ReportAdvertiserGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -127,12 +128,12 @@ func (a *ReportAdvertiserGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2R
 // Execute executes the request
 //
 //	@return ReportAdvertiserGetV2Response
-func (a *ReportAdvertiserGetV2ApiService) getExecute(r *ApiOpenApi2ReportAdvertiserGetGetRequest) (*ReportAdvertiserGetV2Response, *http.Response, error) {
+func (a *ReportAdvertiserGetV2ApiService) getExecute(r *ApiOpenApi2ReportAdvertiserGetGetRequest) (*models.ReportAdvertiserGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportAdvertiserGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportAdvertiserGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -142,7 +143,7 @@ func (a *ReportAdvertiserGetV2ApiService) getExecute(r *ApiOpenApi2ReportAdverti
 	localVarPath := localBasePath + "/open_api/2/report/advertiser/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeOrderGetV10ApiService QianchuanAwemeOrderGetV10Api service
@@ -26,10 +27,10 @@ type ApiOpenApiV10QianchuanAwemeOrderGetGetRequest struct {
 	ctx                  context.Context
 	ApiService           *QianchuanAwemeOrderGetV10ApiService
 	advertiserId         *int64
-	filtering            *QianchuanAwemeOrderGetV10Filtering
+	filtering            *models.QianchuanAwemeOrderGetV10Filtering
 	cursor               *int64
-	count                *QianchuanAwemeOrderGetV10Count
-	orderField           *QianchuanAwemeOrderGetV10OrderField
+	count                *models.QianchuanAwemeOrderGetV10Count
+	orderField           *models.QianchuanAwemeOrderGetV10OrderField
 	orderCreateStartDate *string
 	orderCreateEndDate   *string
 }
@@ -40,7 +41,7 @@ func (r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) AdvertiserId(advertiserI
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) Filtering(filtering QianchuanAwemeOrderGetV10Filtering) *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) Filtering(filtering models.QianchuanAwemeOrderGetV10Filtering) *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -52,13 +53,13 @@ func (r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) Cursor(cursor int64) *Ap
 }
 
 // 页面大小，允许值：10, 20, 50，默认值：10
-func (r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) Count(count QianchuanAwemeOrderGetV10Count) *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) Count(count models.QianchuanAwemeOrderGetV10Count) *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest {
 	r.count = &count
 	return r
 }
 
 // 排序字段。默认升序
-func (r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) OrderField(orderField QianchuanAwemeOrderGetV10OrderField) *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) OrderField(orderField models.QianchuanAwemeOrderGetV10OrderField) *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
@@ -75,7 +76,7 @@ func (r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) OrderCreateEndDate(order
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) Execute() (*QianchuanAwemeOrderGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) Execute() (*models.QianchuanAwemeOrderGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -109,12 +110,12 @@ func (a *QianchuanAwemeOrderGetV10ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return QianchuanAwemeOrderGetV10Response
-func (a *QianchuanAwemeOrderGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) (*QianchuanAwemeOrderGetV10Response, *http.Response, error) {
+func (a *QianchuanAwemeOrderGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeOrderGetGetRequest) (*models.QianchuanAwemeOrderGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeOrderGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeOrderGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -124,7 +125,7 @@ func (a *QianchuanAwemeOrderGetV10ApiService) getExecute(r *ApiOpenApiV10Qianchu
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/order/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPromotionRaiseSetV30ApiService ToolsPromotionRaiseSetV30Api service
@@ -25,15 +26,15 @@ type ToolsPromotionRaiseSetV30ApiService service
 type ApiOpenApiV30ToolsPromotionRaiseSetPostRequest struct {
 	ctx                              context.Context
 	ApiService                       *ToolsPromotionRaiseSetV30ApiService
-	toolsPromotionRaiseSetV30Request *ToolsPromotionRaiseSetV30Request
+	toolsPromotionRaiseSetV30Request *models.ToolsPromotionRaiseSetV30Request
 }
 
-func (r *ApiOpenApiV30ToolsPromotionRaiseSetPostRequest) ToolsPromotionRaiseSetV30Request(toolsPromotionRaiseSetV30Request ToolsPromotionRaiseSetV30Request) *ApiOpenApiV30ToolsPromotionRaiseSetPostRequest {
+func (r *ApiOpenApiV30ToolsPromotionRaiseSetPostRequest) ToolsPromotionRaiseSetV30Request(toolsPromotionRaiseSetV30Request models.ToolsPromotionRaiseSetV30Request) *ApiOpenApiV30ToolsPromotionRaiseSetPostRequest {
 	r.toolsPromotionRaiseSetV30Request = &toolsPromotionRaiseSetV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsPromotionRaiseSetPostRequest) Execute() (*ToolsPromotionRaiseSetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsPromotionRaiseSetPostRequest) Execute() (*models.ToolsPromotionRaiseSetV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsPromotionRaiseSetV30ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsPromotionRaiseSetV30Response
-func (a *ToolsPromotionRaiseSetV30ApiService) postExecute(r *ApiOpenApiV30ToolsPromotionRaiseSetPostRequest) (*ToolsPromotionRaiseSetV30Response, *http.Response, error) {
+func (a *ToolsPromotionRaiseSetV30ApiService) postExecute(r *ApiOpenApiV30ToolsPromotionRaiseSetPostRequest) (*models.ToolsPromotionRaiseSetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPromotionRaiseSetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPromotionRaiseSetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsPromotionRaiseSetV30ApiService) postExecute(r *ApiOpenApiV30ToolsP
 	localVarPath := localBasePath + "/open_api/v3.0/tools/promotion_raise/set/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

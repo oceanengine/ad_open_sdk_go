@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdControlTaskListV10ApiService QianchuanUniPromotionAdControlTaskListV10Api service
@@ -26,14 +27,14 @@ type ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest struct {
 	ctx           context.Context
 	ApiService    *QianchuanUniPromotionAdControlTaskListV10ApiService
 	advertiserId  *int64
-	marketingGoal *QianchuanUniPromotionAdControlTaskListV10MarketingGoal
+	marketingGoal *models.QianchuanUniPromotionAdControlTaskListV10MarketingGoal
 	adId          *int64
 	startTime     *string
 	endTime       *string
-	scene         *QianchuanUniPromotionAdControlTaskListV10Scene
-	fields        *[]*QianchuanUniPromotionAdControlTaskListV10Fields
-	filtering     *QianchuanUniPromotionAdControlTaskListV10Filtering
-	orderType     *QianchuanUniPromotionAdControlTaskListV10OrderType
+	scene         *models.QianchuanUniPromotionAdControlTaskListV10Scene
+	fields        *[]*models.QianchuanUniPromotionAdControlTaskListV10Fields
+	filtering     *models.QianchuanUniPromotionAdControlTaskListV10Filtering
+	orderType     *models.QianchuanUniPromotionAdControlTaskListV10OrderType
 	orderField    *string
 	page          *int64
 	pageSize      *int64
@@ -44,7 +45,7 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) Advertis
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) MarketingGoal(marketingGoal QianchuanUniPromotionAdControlTaskListV10MarketingGoal) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) MarketingGoal(marketingGoal models.QianchuanUniPromotionAdControlTaskListV10MarketingGoal) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
@@ -68,25 +69,25 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) EndTime(
 }
 
 // 调控任务类型， SMART_BOOST 一键起量
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) Scene(scene QianchuanUniPromotionAdControlTaskListV10Scene) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) Scene(scene models.QianchuanUniPromotionAdControlTaskListV10Scene) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
 	r.scene = &scene
 	return r
 }
 
 // 查询指标
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) Fields(fields []*QianchuanUniPromotionAdControlTaskListV10Fields) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) Fields(fields []*models.QianchuanUniPromotionAdControlTaskListV10Fields) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
 	r.fields = &fields
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) Filtering(filtering QianchuanUniPromotionAdControlTaskListV10Filtering) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) Filtering(filtering models.QianchuanUniPromotionAdControlTaskListV10Filtering) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
 // 排序方式，允许值： ASC 升序（默认）、DESC 降序
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) OrderType(orderType QianchuanUniPromotionAdControlTaskListV10OrderType) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) OrderType(orderType models.QianchuanUniPromotionAdControlTaskListV10OrderType) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -109,7 +110,7 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) PageSize
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) Execute() (*QianchuanUniPromotionAdControlTaskListV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) Execute() (*models.QianchuanUniPromotionAdControlTaskListV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -143,12 +144,12 @@ func (a *QianchuanUniPromotionAdControlTaskListV10ApiService) Get(ctx context.Co
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdControlTaskListV10Response
-func (a *QianchuanUniPromotionAdControlTaskListV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) (*QianchuanUniPromotionAdControlTaskListV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdControlTaskListV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskListGetRequest) (*models.QianchuanUniPromotionAdControlTaskListV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdControlTaskListV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdControlTaskListV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -158,7 +159,7 @@ func (a *QianchuanUniPromotionAdControlTaskListV10ApiService) getExecute(r *ApiO
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/control_task/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

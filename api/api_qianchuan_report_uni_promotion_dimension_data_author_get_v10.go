@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService QianchuanReportUniPromotionDimensionDataAuthorGetV10Api service
@@ -27,14 +28,14 @@ type ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest st
 	ApiService    *QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService
 	advertiserId  *int64
 	awemeId       *int64
-	marketingGoal *QianchuanReportUniPromotionDimensionDataAuthorGetV10MarketingGoal
-	metrics       *[]*QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics
+	marketingGoal *models.QianchuanReportUniPromotionDimensionDataAuthorGetV10MarketingGoal
+	metrics       *[]*models.QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics
 	startTime     *string
 	endTime       *string
-	dimension     *QianchuanReportUniPromotionDimensionDataAuthorGetV10Dimension
-	orderType     *QianchuanReportUniPromotionDimensionDataAuthorGetV10OrderType
+	dimension     *models.QianchuanReportUniPromotionDimensionDataAuthorGetV10Dimension
+	orderType     *models.QianchuanReportUniPromotionDimensionDataAuthorGetV10OrderType
 	orderField    *string
-	filtering     *QianchuanReportUniPromotionDimensionDataAuthorGetV10Filtering
+	filtering     *models.QianchuanReportUniPromotionDimensionDataAuthorGetV10Filtering
 	page          *int32
 	pageSize      *int32
 }
@@ -50,12 +51,12 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetReques
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) MarketingGoal(marketingGoal QianchuanReportUniPromotionDimensionDataAuthorGetV10MarketingGoal) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) MarketingGoal(marketingGoal models.QianchuanReportUniPromotionDimensionDataAuthorGetV10MarketingGoal) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) Metrics(metrics []*QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) Metrics(metrics []*models.QianchuanReportUniPromotionDimensionDataAuthorGetV10Metrics) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
 	r.metrics = &metrics
 	return r
 }
@@ -70,13 +71,13 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetReques
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) Dimension(dimension QianchuanReportUniPromotionDimensionDataAuthorGetV10Dimension) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) Dimension(dimension models.QianchuanReportUniPromotionDimensionDataAuthorGetV10Dimension) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
 	r.dimension = &dimension
 	return r
 }
 
 // 排序方式
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) OrderType(orderType QianchuanReportUniPromotionDimensionDataAuthorGetV10OrderType) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) OrderType(orderType models.QianchuanReportUniPromotionDimensionDataAuthorGetV10OrderType) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -87,7 +88,7 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetReques
 }
 
 // 过滤器
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) Filtering(filtering QianchuanReportUniPromotionDimensionDataAuthorGetV10Filtering) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) Filtering(filtering models.QianchuanReportUniPromotionDimensionDataAuthorGetV10Filtering) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -104,7 +105,7 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetReques
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) Execute() (*QianchuanReportUniPromotionDimensionDataAuthorGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) Execute() (*models.QianchuanReportUniPromotionDimensionDataAuthorGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -138,12 +139,12 @@ func (a *QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService) Get(ctx
 // Execute executes the request
 //
 //	@return QianchuanReportUniPromotionDimensionDataAuthorGetV10Response
-func (a *QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) (*QianchuanReportUniPromotionDimensionDataAuthorGetV10Response, *http.Response, error) {
+func (a *QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataAuthorGetGetRequest) (*models.QianchuanReportUniPromotionDimensionDataAuthorGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportUniPromotionDimensionDataAuthorGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportUniPromotionDimensionDataAuthorGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -153,7 +154,7 @@ func (a *QianchuanReportUniPromotionDimensionDataAuthorGetV10ApiService) getExec
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/uni_promotion/dimension_data/author/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

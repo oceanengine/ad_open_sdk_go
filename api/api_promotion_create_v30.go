@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // PromotionCreateV30ApiService PromotionCreateV30Api service
@@ -25,15 +26,15 @@ type PromotionCreateV30ApiService service
 type ApiOpenApiV30PromotionCreatePostRequest struct {
 	ctx                       context.Context
 	ApiService                *PromotionCreateV30ApiService
-	promotionCreateV30Request *PromotionCreateV30Request
+	promotionCreateV30Request *models.PromotionCreateV30Request
 }
 
-func (r *ApiOpenApiV30PromotionCreatePostRequest) PromotionCreateV30Request(promotionCreateV30Request PromotionCreateV30Request) *ApiOpenApiV30PromotionCreatePostRequest {
+func (r *ApiOpenApiV30PromotionCreatePostRequest) PromotionCreateV30Request(promotionCreateV30Request models.PromotionCreateV30Request) *ApiOpenApiV30PromotionCreatePostRequest {
 	r.promotionCreateV30Request = &promotionCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30PromotionCreatePostRequest) Execute() (*PromotionCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30PromotionCreatePostRequest) Execute() (*models.PromotionCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *PromotionCreateV30ApiService) Post(ctx context.Context) *ApiOpenApiV30P
 // Execute executes the request
 //
 //	@return PromotionCreateV30Response
-func (a *PromotionCreateV30ApiService) postExecute(r *ApiOpenApiV30PromotionCreatePostRequest) (*PromotionCreateV30Response, *http.Response, error) {
+func (a *PromotionCreateV30ApiService) postExecute(r *ApiOpenApiV30PromotionCreatePostRequest) (*models.PromotionCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *PromotionCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.PromotionCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *PromotionCreateV30ApiService) postExecute(r *ApiOpenApiV30PromotionCrea
 	localVarPath := localBasePath + "/open_api/v3.0/promotion/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

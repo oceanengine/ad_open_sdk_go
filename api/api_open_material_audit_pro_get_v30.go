@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OpenMaterialAuditProGetV30ApiService OpenMaterialAuditProGetV30Api service
@@ -40,7 +41,7 @@ func (r *ApiOpenApiV30OpenMaterialAuditProGetGetRequest) RunId(runId string) *Ap
 	return r
 }
 
-func (r *ApiOpenApiV30OpenMaterialAuditProGetGetRequest) Execute() (*OpenMaterialAuditProGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OpenMaterialAuditProGetGetRequest) Execute() (*models.OpenMaterialAuditProGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *OpenMaterialAuditProGetV30ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return OpenMaterialAuditProGetV30Response
-func (a *OpenMaterialAuditProGetV30ApiService) getExecute(r *ApiOpenApiV30OpenMaterialAuditProGetGetRequest) (*OpenMaterialAuditProGetV30Response, *http.Response, error) {
+func (a *OpenMaterialAuditProGetV30ApiService) getExecute(r *ApiOpenApiV30OpenMaterialAuditProGetGetRequest) (*models.OpenMaterialAuditProGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OpenMaterialAuditProGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OpenMaterialAuditProGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *OpenMaterialAuditProGetV30ApiService) getExecute(r *ApiOpenApiV30OpenMa
 	localVarPath := localBasePath + "/open_api/v3.0/open_material_audit/pro/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

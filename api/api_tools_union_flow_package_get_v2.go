@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsUnionFlowPackageGetV2ApiService ToolsUnionFlowPackageGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsUnionFlowPackageGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsUnionFlowPackageGetV2ApiService
 	advertiserId *int64
-	filtering    *ToolsUnionFlowPackageGetV2Filtering
+	filtering    *models.ToolsUnionFlowPackageGetV2Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApi2ToolsUnionFlowPackageGetGetRequest) AdvertiserId(advertiserI
 	return r
 }
 
-func (r *ApiOpenApi2ToolsUnionFlowPackageGetGetRequest) Filtering(filtering ToolsUnionFlowPackageGetV2Filtering) *ApiOpenApi2ToolsUnionFlowPackageGetGetRequest {
+func (r *ApiOpenApi2ToolsUnionFlowPackageGetGetRequest) Filtering(filtering models.ToolsUnionFlowPackageGetV2Filtering) *ApiOpenApi2ToolsUnionFlowPackageGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2ToolsUnionFlowPackageGetGetRequest) PageSize(pageSize int64)
 	return r
 }
 
-func (r *ApiOpenApi2ToolsUnionFlowPackageGetGetRequest) Execute() (*ToolsUnionFlowPackageGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsUnionFlowPackageGetGetRequest) Execute() (*models.ToolsUnionFlowPackageGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ToolsUnionFlowPackageGetV2ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsUnionFlowPackageGetV2Response
-func (a *ToolsUnionFlowPackageGetV2ApiService) getExecute(r *ApiOpenApi2ToolsUnionFlowPackageGetGetRequest) (*ToolsUnionFlowPackageGetV2Response, *http.Response, error) {
+func (a *ToolsUnionFlowPackageGetV2ApiService) getExecute(r *ApiOpenApi2ToolsUnionFlowPackageGetGetRequest) (*models.ToolsUnionFlowPackageGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsUnionFlowPackageGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsUnionFlowPackageGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ToolsUnionFlowPackageGetV2ApiService) getExecute(r *ApiOpenApi2ToolsUni
 	localVarPath := localBasePath + "/open_api/2/tools/union/flow_package/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportStardeliveryTaskDataGetV30ApiService ReportStardeliveryTaskDataGetV30Api service
@@ -29,9 +30,9 @@ type ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest struct {
 	startDate       *string
 	endDate         *string
 	starTaskVersion *string
-	filtering       *ReportStardeliveryTaskDataGetV30Filtering
+	filtering       *models.ReportStardeliveryTaskDataGetV30Filtering
 	orderField      *string
-	orderType       *ReportStardeliveryTaskDataGetV30OrderType
+	orderType       *models.ReportStardeliveryTaskDataGetV30OrderType
 	page            *int32
 	pageSize        *int32
 }
@@ -60,7 +61,7 @@ func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) StarTaskVersion(s
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) Filtering(filtering ReportStardeliveryTaskDataGetV30Filtering) *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest {
+func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) Filtering(filtering models.ReportStardeliveryTaskDataGetV30Filtering) *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -72,7 +73,7 @@ func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) OrderField(orderF
 }
 
 // 排序方式
-func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) OrderType(orderType ReportStardeliveryTaskDataGetV30OrderType) *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest {
+func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) OrderType(orderType models.ReportStardeliveryTaskDataGetV30OrderType) *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -88,7 +89,7 @@ func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) PageSize(pageSize
 	return r
 }
 
-func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) Execute() (*ReportStardeliveryTaskDataGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) Execute() (*models.ReportStardeliveryTaskDataGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -122,12 +123,12 @@ func (a *ReportStardeliveryTaskDataGetV30ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return ReportStardeliveryTaskDataGetV30Response
-func (a *ReportStardeliveryTaskDataGetV30ApiService) getExecute(r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) (*ReportStardeliveryTaskDataGetV30Response, *http.Response, error) {
+func (a *ReportStardeliveryTaskDataGetV30ApiService) getExecute(r *ApiOpenApiV30ReportStardeliveryTaskDataGetGetRequest) (*models.ReportStardeliveryTaskDataGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportStardeliveryTaskDataGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportStardeliveryTaskDataGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -137,7 +138,7 @@ func (a *ReportStardeliveryTaskDataGetV30ApiService) getExecute(r *ApiOpenApiV30
 	localVarPath := localBasePath + "/open_api/v3.0/report/stardelivery/task_data/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

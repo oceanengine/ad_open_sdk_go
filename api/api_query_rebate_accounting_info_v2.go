@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QueryRebateAccountingInfoV2ApiService QueryRebateAccountingInfoV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2QueryRebateAccountingInfoGetRequest struct {
 	ctx        context.Context
 	ApiService *QueryRebateAccountingInfoV2ApiService
 	agentId    *int64
-	filtering  *QueryRebateAccountingInfoV2Filtering
+	filtering  *models.QueryRebateAccountingInfoV2Filtering
 	page       *int64
 	pageSize   *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApi2QueryRebateAccountingInfoGetRequest) AgentId(agentId int64) 
 }
 
 // 过滤器
-func (r *ApiOpenApi2QueryRebateAccountingInfoGetRequest) Filtering(filtering QueryRebateAccountingInfoV2Filtering) *ApiOpenApi2QueryRebateAccountingInfoGetRequest {
+func (r *ApiOpenApi2QueryRebateAccountingInfoGetRequest) Filtering(filtering models.QueryRebateAccountingInfoV2Filtering) *ApiOpenApi2QueryRebateAccountingInfoGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2QueryRebateAccountingInfoGetRequest) PageSize(pageSize int64
 	return r
 }
 
-func (r *ApiOpenApi2QueryRebateAccountingInfoGetRequest) Execute() (*QueryRebateAccountingInfoV2Response, *http.Response, error) {
+func (r *ApiOpenApi2QueryRebateAccountingInfoGetRequest) Execute() (*models.QueryRebateAccountingInfoV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *QueryRebateAccountingInfoV2ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return QueryRebateAccountingInfoV2Response
-func (a *QueryRebateAccountingInfoV2ApiService) getExecute(r *ApiOpenApi2QueryRebateAccountingInfoGetRequest) (*QueryRebateAccountingInfoV2Response, *http.Response, error) {
+func (a *QueryRebateAccountingInfoV2ApiService) getExecute(r *ApiOpenApi2QueryRebateAccountingInfoGetRequest) (*models.QueryRebateAccountingInfoV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QueryRebateAccountingInfoV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QueryRebateAccountingInfoV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *QueryRebateAccountingInfoV2ApiService) getExecute(r *ApiOpenApi2QueryRe
 	localVarPath := localBasePath + "/open_api/2/query/rebate_accounting_info/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanToolsSmartBoostAdBoostReportGetV10ApiService QianchuanToolsSmartBoostAdBoostReportGetV10Api service
@@ -35,7 +36,7 @@ type ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest struct {
 	timeGranularity *string
 	filed           *[]string
 	orderField      *string
-	orderType       *QianchuanToolsSmartBoostAdBoostReportGetV10OrderType
+	orderType       *models.QianchuanToolsSmartBoostAdBoostReportGetV10OrderType
 }
 
 // 千川广告主账户ID
@@ -99,12 +100,12 @@ func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest) OrderF
 }
 
 // 排序方式
-func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest) OrderType(orderType QianchuanToolsSmartBoostAdBoostReportGetV10OrderType) *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest {
+func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest) OrderType(orderType models.QianchuanToolsSmartBoostAdBoostReportGetV10OrderType) *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest) Execute() (*QianchuanToolsSmartBoostAdBoostReportGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest) Execute() (*models.QianchuanToolsSmartBoostAdBoostReportGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -138,12 +139,12 @@ func (a *QianchuanToolsSmartBoostAdBoostReportGetV10ApiService) Get(ctx context.
 // Execute executes the request
 //
 //	@return QianchuanToolsSmartBoostAdBoostReportGetV10Response
-func (a *QianchuanToolsSmartBoostAdBoostReportGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest) (*QianchuanToolsSmartBoostAdBoostReportGetV10Response, *http.Response, error) {
+func (a *QianchuanToolsSmartBoostAdBoostReportGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostReportGetGetRequest) (*models.QianchuanToolsSmartBoostAdBoostReportGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanToolsSmartBoostAdBoostReportGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanToolsSmartBoostAdBoostReportGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -153,7 +154,7 @@ func (a *QianchuanToolsSmartBoostAdBoostReportGetV10ApiService) getExecute(r *Ap
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/report/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DmpCustomAudienceCopyV2ApiService DmpCustomAudienceCopyV2Api service
@@ -25,15 +26,15 @@ type DmpCustomAudienceCopyV2ApiService service
 type ApiOpenApi2DmpCustomAudienceCopyPostRequest struct {
 	ctx                            context.Context
 	ApiService                     *DmpCustomAudienceCopyV2ApiService
-	dmpCustomAudienceCopyV2Request *DmpCustomAudienceCopyV2Request
+	dmpCustomAudienceCopyV2Request *models.DmpCustomAudienceCopyV2Request
 }
 
-func (r *ApiOpenApi2DmpCustomAudienceCopyPostRequest) DmpCustomAudienceCopyV2Request(dmpCustomAudienceCopyV2Request DmpCustomAudienceCopyV2Request) *ApiOpenApi2DmpCustomAudienceCopyPostRequest {
+func (r *ApiOpenApi2DmpCustomAudienceCopyPostRequest) DmpCustomAudienceCopyV2Request(dmpCustomAudienceCopyV2Request models.DmpCustomAudienceCopyV2Request) *ApiOpenApi2DmpCustomAudienceCopyPostRequest {
 	r.dmpCustomAudienceCopyV2Request = &dmpCustomAudienceCopyV2Request
 	return r
 }
 
-func (r *ApiOpenApi2DmpCustomAudienceCopyPostRequest) Execute() (*DmpCustomAudienceCopyV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DmpCustomAudienceCopyPostRequest) Execute() (*models.DmpCustomAudienceCopyV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DmpCustomAudienceCopyV2ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return DmpCustomAudienceCopyV2Response
-func (a *DmpCustomAudienceCopyV2ApiService) postExecute(r *ApiOpenApi2DmpCustomAudienceCopyPostRequest) (*DmpCustomAudienceCopyV2Response, *http.Response, error) {
+func (a *DmpCustomAudienceCopyV2ApiService) postExecute(r *ApiOpenApi2DmpCustomAudienceCopyPostRequest) (*models.DmpCustomAudienceCopyV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DmpCustomAudienceCopyV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DmpCustomAudienceCopyV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DmpCustomAudienceCopyV2ApiService) postExecute(r *ApiOpenApi2DmpCustomA
 	localVarPath := localBasePath + "/open_api/2/dmp/custom_audience/copy/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

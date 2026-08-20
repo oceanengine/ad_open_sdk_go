@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalProductGetByPoiidsV30ApiService LocalProductGetByPoiidsV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30LocalProductGetByPoiidsGetRequest struct {
 	ApiService         *LocalProductGetByPoiidsV30ApiService
 	localAccountId     *int64
 	poiIds             *[]int64
-	localDeliveryScene *LocalProductGetByPoiidsV30LocalDeliveryScene
+	localDeliveryScene *models.LocalProductGetByPoiidsV30LocalDeliveryScene
 }
 
 func (r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) LocalAccountId(localAccountId int64) *ApiOpenApiV30LocalProductGetByPoiidsGetRequest {
@@ -40,12 +41,12 @@ func (r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) PoiIds(poiIds []int64) 
 	return r
 }
 
-func (r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) LocalDeliveryScene(localDeliveryScene LocalProductGetByPoiidsV30LocalDeliveryScene) *ApiOpenApiV30LocalProductGetByPoiidsGetRequest {
+func (r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) LocalDeliveryScene(localDeliveryScene models.LocalProductGetByPoiidsV30LocalDeliveryScene) *ApiOpenApiV30LocalProductGetByPoiidsGetRequest {
 	r.localDeliveryScene = &localDeliveryScene
 	return r
 }
 
-func (r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) Execute() (*LocalProductGetByPoiidsV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) Execute() (*models.LocalProductGetByPoiidsV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *LocalProductGetByPoiidsV30ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return LocalProductGetByPoiidsV30Response
-func (a *LocalProductGetByPoiidsV30ApiService) getExecute(r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) (*LocalProductGetByPoiidsV30Response, *http.Response, error) {
+func (a *LocalProductGetByPoiidsV30ApiService) getExecute(r *ApiOpenApiV30LocalProductGetByPoiidsGetRequest) (*models.LocalProductGetByPoiidsV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalProductGetByPoiidsV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalProductGetByPoiidsV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *LocalProductGetByPoiidsV30ApiService) getExecute(r *ApiOpenApiV30LocalP
 	localVarPath := localBasePath + "/open_api/v3.0/local/product/get_by_poiids/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

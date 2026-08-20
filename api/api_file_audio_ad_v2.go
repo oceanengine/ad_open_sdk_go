@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileAudioAdV2ApiService FileAudioAdV2Api service
@@ -26,8 +27,8 @@ type ApiOpenApi2FileAudioAdPostRequest struct {
 	ctx            context.Context
 	ApiService     *FileAudioAdV2ApiService
 	advertiserId   *int64
-	uploadType     *FileAudioAdV2UploadType
-	audioFile      *FormFileInfo
+	uploadType     *models.FileAudioAdV2UploadType
+	audioFile      *models.FormFileInfo
 	audioSignature *string
 	audioUrl       *string
 }
@@ -38,12 +39,12 @@ func (r *ApiOpenApi2FileAudioAdPostRequest) AdvertiserId(advertiserId int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2FileAudioAdPostRequest) UploadType(uploadType FileAudioAdV2UploadType) *ApiOpenApi2FileAudioAdPostRequest {
+func (r *ApiOpenApi2FileAudioAdPostRequest) UploadType(uploadType models.FileAudioAdV2UploadType) *ApiOpenApi2FileAudioAdPostRequest {
 	r.uploadType = &uploadType
 	return r
 }
 
-func (r *ApiOpenApi2FileAudioAdPostRequest) AudioFile(audioFile *FormFileInfo) *ApiOpenApi2FileAudioAdPostRequest {
+func (r *ApiOpenApi2FileAudioAdPostRequest) AudioFile(audioFile *models.FormFileInfo) *ApiOpenApi2FileAudioAdPostRequest {
 	r.audioFile = audioFile
 	return r
 }
@@ -59,7 +60,7 @@ func (r *ApiOpenApi2FileAudioAdPostRequest) AudioUrl(audioUrl string) *ApiOpenAp
 	return r
 }
 
-func (r *ApiOpenApi2FileAudioAdPostRequest) Execute() (*FileAudioAdV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileAudioAdPostRequest) Execute() (*models.FileAudioAdV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -93,12 +94,12 @@ func (a *FileAudioAdV2ApiService) Post(ctx context.Context) *ApiOpenApi2FileAudi
 // Execute executes the request
 //
 //	@return FileAudioAdV2Response
-func (a *FileAudioAdV2ApiService) postExecute(r *ApiOpenApi2FileAudioAdPostRequest) (*FileAudioAdV2Response, *http.Response, error) {
+func (a *FileAudioAdV2ApiService) postExecute(r *ApiOpenApi2FileAudioAdPostRequest) (*models.FileAudioAdV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileAudioAdV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileAudioAdV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -108,7 +109,7 @@ func (a *FileAudioAdV2ApiService) postExecute(r *ApiOpenApi2FileAudioAdPostReque
 	localVarPath := localBasePath + "/open_api/2/file/audio/ad/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

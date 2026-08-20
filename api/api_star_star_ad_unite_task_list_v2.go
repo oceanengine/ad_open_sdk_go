@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarStarAdUniteTaskListV2ApiService StarStarAdUniteTaskListV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2StarStarAdUniteTaskListGetRequest struct {
 	starId     *int64
 	page       *int32
 	pageSize   *int32
-	filtering  *StarStarAdUniteTaskListV2Filtering
+	filtering  *models.StarStarAdUniteTaskListV2Filtering
 }
 
 // 客户的星图id
@@ -50,12 +51,12 @@ func (r *ApiOpenApi2StarStarAdUniteTaskListGetRequest) PageSize(pageSize int32) 
 }
 
 // 过滤器
-func (r *ApiOpenApi2StarStarAdUniteTaskListGetRequest) Filtering(filtering StarStarAdUniteTaskListV2Filtering) *ApiOpenApi2StarStarAdUniteTaskListGetRequest {
+func (r *ApiOpenApi2StarStarAdUniteTaskListGetRequest) Filtering(filtering models.StarStarAdUniteTaskListV2Filtering) *ApiOpenApi2StarStarAdUniteTaskListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2StarStarAdUniteTaskListGetRequest) Execute() (*StarStarAdUniteTaskListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarStarAdUniteTaskListGetRequest) Execute() (*models.StarStarAdUniteTaskListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *StarStarAdUniteTaskListV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return StarStarAdUniteTaskListV2Response
-func (a *StarStarAdUniteTaskListV2ApiService) getExecute(r *ApiOpenApi2StarStarAdUniteTaskListGetRequest) (*StarStarAdUniteTaskListV2Response, *http.Response, error) {
+func (a *StarStarAdUniteTaskListV2ApiService) getExecute(r *ApiOpenApi2StarStarAdUniteTaskListGetRequest) (*models.StarStarAdUniteTaskListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarStarAdUniteTaskListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarStarAdUniteTaskListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *StarStarAdUniteTaskListV2ApiService) getExecute(r *ApiOpenApi2StarStarA
 	localVarPath := localBasePath + "/open_api/2/star/star_ad_unite_task/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

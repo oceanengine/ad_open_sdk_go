@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AicElementDeleteV30ApiService AicElementDeleteV30Api service
@@ -25,15 +26,15 @@ type AicElementDeleteV30ApiService service
 type ApiOpenApiV30AicElementDeletePostRequest struct {
 	ctx                        context.Context
 	ApiService                 *AicElementDeleteV30ApiService
-	aicElementDeleteV30Request *AicElementDeleteV30Request
+	aicElementDeleteV30Request *models.AicElementDeleteV30Request
 }
 
-func (r *ApiOpenApiV30AicElementDeletePostRequest) AicElementDeleteV30Request(aicElementDeleteV30Request AicElementDeleteV30Request) *ApiOpenApiV30AicElementDeletePostRequest {
+func (r *ApiOpenApiV30AicElementDeletePostRequest) AicElementDeleteV30Request(aicElementDeleteV30Request models.AicElementDeleteV30Request) *ApiOpenApiV30AicElementDeletePostRequest {
 	r.aicElementDeleteV30Request = &aicElementDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30AicElementDeletePostRequest) Execute() (*AicElementDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AicElementDeletePostRequest) Execute() (*models.AicElementDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AicElementDeleteV30ApiService) Post(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return AicElementDeleteV30Response
-func (a *AicElementDeleteV30ApiService) postExecute(r *ApiOpenApiV30AicElementDeletePostRequest) (*AicElementDeleteV30Response, *http.Response, error) {
+func (a *AicElementDeleteV30ApiService) postExecute(r *ApiOpenApiV30AicElementDeletePostRequest) (*models.AicElementDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AicElementDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AicElementDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AicElementDeleteV30ApiService) postExecute(r *ApiOpenApiV30AicElementDe
 	localVarPath := localBasePath + "/open_api/v3.0/aic/element/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

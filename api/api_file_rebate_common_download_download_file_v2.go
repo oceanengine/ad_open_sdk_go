@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileRebateCommonDownloadDownloadFileV2ApiService FileRebateCommonDownloadDownloadFileV2Api service
@@ -79,7 +80,7 @@ func (a *FileRebateCommonDownloadDownloadFileV2ApiService) getExecute(r *ApiOpen
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
+		formFiles           map[string]*models.FormFileInfo
 		localVarReturnValue []byte
 	)
 
@@ -90,7 +91,7 @@ func (a *FileRebateCommonDownloadDownloadFileV2ApiService) getExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/2/file/rebate/common_download/download_file/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

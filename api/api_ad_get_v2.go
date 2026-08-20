@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdGetV2ApiService AdGetV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2AdGetGetRequest struct {
 	ApiService   *AdGetV2ApiService
 	advertiserId *int64
 	fields       *[]string
-	filtering    *AdGetV2Filtering
+	filtering    *models.AdGetV2Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -42,7 +43,7 @@ func (r *ApiOpenApi2AdGetGetRequest) Fields(fields []string) *ApiOpenApi2AdGetGe
 	return r
 }
 
-func (r *ApiOpenApi2AdGetGetRequest) Filtering(filtering AdGetV2Filtering) *ApiOpenApi2AdGetGetRequest {
+func (r *ApiOpenApi2AdGetGetRequest) Filtering(filtering models.AdGetV2Filtering) *ApiOpenApi2AdGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApi2AdGetGetRequest) PageSize(pageSize int64) *ApiOpenApi2AdGetG
 	return r
 }
 
-func (r *ApiOpenApi2AdGetGetRequest) Execute() (*AdGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdGetGetRequest) Execute() (*models.AdGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *AdGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2AdGetGetRequest
 // Execute executes the request
 //
 //	@return AdGetV2Response
-func (a *AdGetV2ApiService) getExecute(r *ApiOpenApi2AdGetGetRequest) (*AdGetV2Response, *http.Response, error) {
+func (a *AdGetV2ApiService) getExecute(r *ApiOpenApi2AdGetGetRequest) (*models.AdGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *AdGetV2ApiService) getExecute(r *ApiOpenApi2AdGetGetRequest) (*AdGetV2R
 	localVarPath := localBasePath + "/open_api/2/ad/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

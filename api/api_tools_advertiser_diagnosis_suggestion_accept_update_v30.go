@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ApiService ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Api service
@@ -25,15 +26,15 @@ type ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ApiService service
 type ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionAcceptUpdatePostRequest struct {
 	ctx                                                      context.Context
 	ApiService                                               *ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ApiService
-	toolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request *ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request
+	toolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request *models.ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionAcceptUpdatePostRequest) ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request(toolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request) *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionAcceptUpdatePostRequest {
+func (r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionAcceptUpdatePostRequest) ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request(toolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request models.ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request) *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionAcceptUpdatePostRequest {
 	r.toolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request = &toolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionAcceptUpdatePostRequest) Execute() (*ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionAcceptUpdatePostRequest) Execute() (*models.ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ApiService) Post(ctx c
 // Execute executes the request
 //
 //	@return ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Response
-func (a *ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionAcceptUpdatePostRequest) (*ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Response, *http.Response, error) {
+func (a *ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionAcceptUpdatePostRequest) (*models.ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsAdvertiserDiagnosisSuggestionAcceptUpdateV30ApiService) postExecut
 	localVarPath := localBasePath + "/open_api/v3.0/tools/advertiser_diagnosis/suggestion/accept/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

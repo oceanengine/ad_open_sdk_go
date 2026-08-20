@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CustomerCenterAdvertiserListV2ApiService CustomerCenterAdvertiserListV2Api service
@@ -25,14 +26,14 @@ type CustomerCenterAdvertiserListV2ApiService service
 type ApiOpenApi2CustomerCenterAdvertiserListGetRequest struct {
 	ctx           context.Context
 	ApiService    *CustomerCenterAdvertiserListV2ApiService
-	accountSource *CustomerCenterAdvertiserListV2AccountSource
+	accountSource *models.CustomerCenterAdvertiserListV2AccountSource
 	ccAccountId   *int64
-	filtering     *CustomerCenterAdvertiserListV2Filtering
+	filtering     *models.CustomerCenterAdvertiserListV2Filtering
 	page          *int64
 	pageSize      *int64
 }
 
-func (r *ApiOpenApi2CustomerCenterAdvertiserListGetRequest) AccountSource(accountSource CustomerCenterAdvertiserListV2AccountSource) *ApiOpenApi2CustomerCenterAdvertiserListGetRequest {
+func (r *ApiOpenApi2CustomerCenterAdvertiserListGetRequest) AccountSource(accountSource models.CustomerCenterAdvertiserListV2AccountSource) *ApiOpenApi2CustomerCenterAdvertiserListGetRequest {
 	r.accountSource = &accountSource
 	return r
 }
@@ -42,7 +43,7 @@ func (r *ApiOpenApi2CustomerCenterAdvertiserListGetRequest) CcAccountId(ccAccoun
 	return r
 }
 
-func (r *ApiOpenApi2CustomerCenterAdvertiserListGetRequest) Filtering(filtering CustomerCenterAdvertiserListV2Filtering) *ApiOpenApi2CustomerCenterAdvertiserListGetRequest {
+func (r *ApiOpenApi2CustomerCenterAdvertiserListGetRequest) Filtering(filtering models.CustomerCenterAdvertiserListV2Filtering) *ApiOpenApi2CustomerCenterAdvertiserListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApi2CustomerCenterAdvertiserListGetRequest) PageSize(pageSize in
 	return r
 }
 
-func (r *ApiOpenApi2CustomerCenterAdvertiserListGetRequest) Execute() (*CustomerCenterAdvertiserListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CustomerCenterAdvertiserListGetRequest) Execute() (*models.CustomerCenterAdvertiserListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *CustomerCenterAdvertiserListV2ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return CustomerCenterAdvertiserListV2Response
-func (a *CustomerCenterAdvertiserListV2ApiService) getExecute(r *ApiOpenApi2CustomerCenterAdvertiserListGetRequest) (*CustomerCenterAdvertiserListV2Response, *http.Response, error) {
+func (a *CustomerCenterAdvertiserListV2ApiService) getExecute(r *ApiOpenApi2CustomerCenterAdvertiserListGetRequest) (*models.CustomerCenterAdvertiserListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CustomerCenterAdvertiserListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CustomerCenterAdvertiserListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *CustomerCenterAdvertiserListV2ApiService) getExecute(r *ApiOpenApi2Cust
 	localVarPath := localBasePath + "/open_api/2/customer_center/advertiser/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

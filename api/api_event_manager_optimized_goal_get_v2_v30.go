@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerOptimizedGoalGetV2V30ApiService EventManagerOptimizedGoalGetV2V30Api service
@@ -26,22 +27,22 @@ type ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest struct {
 	ctx                context.Context
 	ApiService         *EventManagerOptimizedGoalGetV2V30ApiService
 	advertiserId       *int64
-	landingType        *EventManagerOptimizedGoalGetV2V30LandingType
-	adType             *EventManagerOptimizedGoalGetV2V30AdType
-	assetType          *EventManagerOptimizedGoalGetV2V30AssetType
-	multiAssetType     *EventManagerOptimizedGoalGetV2V30MultiAssetType
+	landingType        *models.EventManagerOptimizedGoalGetV2V30LandingType
+	adType             *models.EventManagerOptimizedGoalGetV2V30AdType
+	assetType          *models.EventManagerOptimizedGoalGetV2V30AssetType
+	multiAssetType     *models.EventManagerOptimizedGoalGetV2V30MultiAssetType
 	assetId            *int64
 	packageName        *string
-	appType            *EventManagerOptimizedGoalGetV2V30AppType
-	appPromotionType   *EventManagerOptimizedGoalGetV2V30AppPromotionType
-	marketingGoal      *EventManagerOptimizedGoalGetV2V30MarketingGoal
+	appType            *models.EventManagerOptimizedGoalGetV2V30AppType
+	appPromotionType   *models.EventManagerOptimizedGoalGetV2V30AppPromotionType
+	marketingGoal      *models.EventManagerOptimizedGoalGetV2V30MarketingGoal
 	quickAppId         *int64
-	deliveryMode       *EventManagerOptimizedGoalGetV2V30DeliveryMode
+	deliveryMode       *models.EventManagerOptimizedGoalGetV2V30DeliveryMode
 	miniProgramId      *string
-	dpaAdtype          *EventManagerOptimizedGoalGetV2V30DpaAdtype
-	microPromotionType *EventManagerOptimizedGoalGetV2V30MicroPromotionType
+	dpaAdtype          *models.EventManagerOptimizedGoalGetV2V30DpaAdtype
+	microPromotionType *models.EventManagerOptimizedGoalGetV2V30MicroPromotionType
 	microAppInstanceId *int64
-	deliveryType       *EventManagerOptimizedGoalGetV2V30DeliveryType
+	deliveryType       *models.EventManagerOptimizedGoalGetV2V30DeliveryType
 }
 
 // 广告主id
@@ -51,24 +52,24 @@ func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) AdvertiserId(adv
 }
 
 // 推广目的，允许值：APP 应用推广
-func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) LandingType(landingType EventManagerOptimizedGoalGetV2V30LandingType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) LandingType(landingType models.EventManagerOptimizedGoalGetV2V30LandingType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
 	r.landingType = &landingType
 	return r
 }
 
 // 广告类型，允许值：ALL
-func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) AdType(adType EventManagerOptimizedGoalGetV2V30AdType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) AdType(adType models.EventManagerOptimizedGoalGetV2V30AdType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
 	r.adType = &adType
 	return r
 }
 
 // 资产类型，允许值：APP 应用
-func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) AssetType(assetType EventManagerOptimizedGoalGetV2V30AssetType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) AssetType(assetType models.EventManagerOptimizedGoalGetV2V30AssetType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
 	r.assetType = &assetType
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) MultiAssetType(multiAssetType EventManagerOptimizedGoalGetV2V30MultiAssetType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) MultiAssetType(multiAssetType models.EventManagerOptimizedGoalGetV2V30MultiAssetType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
 	r.multiAssetType = &multiAssetType
 	return r
 }
@@ -86,19 +87,19 @@ func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) PackageName(pack
 }
 
 // 应用类型，当asset_type为应用APP时必填 可选值：ANDROID 、IOS
-func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) AppType(appType EventManagerOptimizedGoalGetV2V30AppType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) AppType(appType models.EventManagerOptimizedGoalGetV2V30AppType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
 	r.appType = &appType
 	return r
 }
 
 // 子目标，支持： DOWNLOAD（应用下载）、LAUNCH（应用调起）、RESERVE（预约下载）
-func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) AppPromotionType(appPromotionType EventManagerOptimizedGoalGetV2V30AppPromotionType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) AppPromotionType(appPromotionType models.EventManagerOptimizedGoalGetV2V30AppPromotionType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
 	r.appPromotionType = &appPromotionType
 	return r
 }
 
 // 营销场景， 允许值：VIDEO_AND_IMAGE 短视频/图片 LIVE直播
-func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) MarketingGoal(marketingGoal EventManagerOptimizedGoalGetV2V30MarketingGoal) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) MarketingGoal(marketingGoal models.EventManagerOptimizedGoalGetV2V30MarketingGoal) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
@@ -110,7 +111,7 @@ func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) QuickAppId(quick
 }
 
 // 投放模式
-func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) DeliveryMode(deliveryMode EventManagerOptimizedGoalGetV2V30DeliveryMode) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) DeliveryMode(deliveryMode models.EventManagerOptimizedGoalGetV2V30DeliveryMode) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
 	r.deliveryMode = &deliveryMode
 	return r
 }
@@ -120,12 +121,12 @@ func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) MiniProgramId(mi
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) DpaAdtype(dpaAdtype EventManagerOptimizedGoalGetV2V30DpaAdtype) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) DpaAdtype(dpaAdtype models.EventManagerOptimizedGoalGetV2V30DpaAdtype) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
 	r.dpaAdtype = &dpaAdtype
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) MicroPromotionType(microPromotionType EventManagerOptimizedGoalGetV2V30MicroPromotionType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) MicroPromotionType(microPromotionType models.EventManagerOptimizedGoalGetV2V30MicroPromotionType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
 	r.microPromotionType = &microPromotionType
 	return r
 }
@@ -136,12 +137,12 @@ func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) MicroAppInstance
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) DeliveryType(deliveryType EventManagerOptimizedGoalGetV2V30DeliveryType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) DeliveryType(deliveryType models.EventManagerOptimizedGoalGetV2V30DeliveryType) *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest {
 	r.deliveryType = &deliveryType
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) Execute() (*EventManagerOptimizedGoalGetV2V30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) Execute() (*models.EventManagerOptimizedGoalGetV2V30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -175,12 +176,12 @@ func (a *EventManagerOptimizedGoalGetV2V30ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return EventManagerOptimizedGoalGetV2V30Response
-func (a *EventManagerOptimizedGoalGetV2V30ApiService) getExecute(r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) (*EventManagerOptimizedGoalGetV2V30Response, *http.Response, error) {
+func (a *EventManagerOptimizedGoalGetV2V30ApiService) getExecute(r *ApiOpenApiV30EventManagerOptimizedGoalGetV2GetRequest) (*models.EventManagerOptimizedGoalGetV2V30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerOptimizedGoalGetV2V30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerOptimizedGoalGetV2V30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -190,7 +191,7 @@ func (a *EventManagerOptimizedGoalGetV2V30ApiService) getExecute(r *ApiOpenApiV3
 	localVarPath := localBasePath + "/open_api/v3.0/event_manager/optimized_goal/get_v2/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

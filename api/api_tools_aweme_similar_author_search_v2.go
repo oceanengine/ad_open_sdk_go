@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAwemeSimilarAuthorSearchV2ApiService ToolsAwemeSimilarAuthorSearchV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest struct {
 	ApiService   *ToolsAwemeSimilarAuthorSearchV2ApiService
 	advertiserId *int64
 	awemeId      *string
-	behaviors    *[]*ToolsAwemeSimilarAuthorSearchV2Behaviors
+	behaviors    *[]*models.ToolsAwemeSimilarAuthorSearchV2Behaviors
 }
 
 func (r *ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest {
@@ -40,12 +41,12 @@ func (r *ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest) AwemeId(awemeId str
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest) Behaviors(behaviors []*ToolsAwemeSimilarAuthorSearchV2Behaviors) *ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest {
+func (r *ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest) Behaviors(behaviors []*models.ToolsAwemeSimilarAuthorSearchV2Behaviors) *ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest {
 	r.behaviors = &behaviors
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest) Execute() (*ToolsAwemeSimilarAuthorSearchV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest) Execute() (*models.ToolsAwemeSimilarAuthorSearchV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *ToolsAwemeSimilarAuthorSearchV2ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return ToolsAwemeSimilarAuthorSearchV2Response
-func (a *ToolsAwemeSimilarAuthorSearchV2ApiService) getExecute(r *ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest) (*ToolsAwemeSimilarAuthorSearchV2Response, *http.Response, error) {
+func (a *ToolsAwemeSimilarAuthorSearchV2ApiService) getExecute(r *ApiOpenApi2ToolsAwemeSimilarAuthorSearchGetRequest) (*models.ToolsAwemeSimilarAuthorSearchV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAwemeSimilarAuthorSearchV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAwemeSimilarAuthorSearchV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *ToolsAwemeSimilarAuthorSearchV2ApiService) getExecute(r *ApiOpenApi2Too
 	localVarPath := localBasePath + "/open_api/2/tools/aweme_similar_author_search/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

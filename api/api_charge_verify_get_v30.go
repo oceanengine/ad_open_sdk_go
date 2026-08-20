@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ChargeVerifyGetV30ApiService ChargeVerifyGetV30Api service
@@ -27,11 +28,11 @@ type ApiOpenApiV30ChargeVerifyGetGetRequest struct {
 	ApiService   *ChargeVerifyGetV30ApiService
 	ccAccountId  *int64
 	accountId    *int64
-	platform     *ChargeVerifyGetV30Platform
+	platform     *models.ChargeVerifyGetV30Platform
 	requestId    *string
-	chargeType   *ChargeVerifyGetV30ChargeType
-	chargeSource *ChargeVerifyGetV30ChargeSource
-	caller       *ChargeVerifyGetV30Caller
+	chargeType   *models.ChargeVerifyGetV30ChargeType
+	chargeSource *models.ChargeVerifyGetV30ChargeSource
+	caller       *models.ChargeVerifyGetV30Caller
 }
 
 func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) CcAccountId(ccAccountId int64) *ApiOpenApiV30ChargeVerifyGetGetRequest {
@@ -46,7 +47,7 @@ func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) AccountId(accountId int64) *Api
 }
 
 // 业务线
-func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) Platform(platform ChargeVerifyGetV30Platform) *ApiOpenApiV30ChargeVerifyGetGetRequest {
+func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) Platform(platform models.ChargeVerifyGetV30Platform) *ApiOpenApiV30ChargeVerifyGetGetRequest {
 	r.platform = &platform
 	return r
 }
@@ -58,24 +59,24 @@ func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) RequestId(requestId string) *Ap
 }
 
 // 充值类型
-func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) ChargeType(chargeType ChargeVerifyGetV30ChargeType) *ApiOpenApiV30ChargeVerifyGetGetRequest {
+func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) ChargeType(chargeType models.ChargeVerifyGetV30ChargeType) *ApiOpenApiV30ChargeVerifyGetGetRequest {
 	r.chargeType = &chargeType
 	return r
 }
 
 // 充值来源
-func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) ChargeSource(chargeSource ChargeVerifyGetV30ChargeSource) *ApiOpenApiV30ChargeVerifyGetGetRequest {
+func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) ChargeSource(chargeSource models.ChargeVerifyGetV30ChargeSource) *ApiOpenApiV30ChargeVerifyGetGetRequest {
 	r.chargeSource = &chargeSource
 	return r
 }
 
 // 请求方
-func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) Caller(caller ChargeVerifyGetV30Caller) *ApiOpenApiV30ChargeVerifyGetGetRequest {
+func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) Caller(caller models.ChargeVerifyGetV30Caller) *ApiOpenApiV30ChargeVerifyGetGetRequest {
 	r.caller = &caller
 	return r
 }
 
-func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) Execute() (*ChargeVerifyGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ChargeVerifyGetGetRequest) Execute() (*models.ChargeVerifyGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -109,12 +110,12 @@ func (a *ChargeVerifyGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Ch
 // Execute executes the request
 //
 //	@return ChargeVerifyGetV30Response
-func (a *ChargeVerifyGetV30ApiService) getExecute(r *ApiOpenApiV30ChargeVerifyGetGetRequest) (*ChargeVerifyGetV30Response, *http.Response, error) {
+func (a *ChargeVerifyGetV30ApiService) getExecute(r *ApiOpenApiV30ChargeVerifyGetGetRequest) (*models.ChargeVerifyGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ChargeVerifyGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ChargeVerifyGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -124,7 +125,7 @@ func (a *ChargeVerifyGetV30ApiService) getExecute(r *ApiOpenApiV30ChargeVerifyGe
 	localVarPath := localBasePath + "/open_api/v3.0/charge/verify/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.ccAccountId == nil {

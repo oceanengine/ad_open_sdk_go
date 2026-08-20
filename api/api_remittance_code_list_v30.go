@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // RemittanceCodeListV30ApiService RemittanceCodeListV30Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30RemittanceCodeListGetRequest) RemittanceCodeList(remittanc
 	return r
 }
 
-func (r *ApiOpenApiV30RemittanceCodeListGetRequest) Execute() (*RemittanceCodeListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30RemittanceCodeListGetRequest) Execute() (*models.RemittanceCodeListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *RemittanceCodeListV30ApiService) Get(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return RemittanceCodeListV30Response
-func (a *RemittanceCodeListV30ApiService) getExecute(r *ApiOpenApiV30RemittanceCodeListGetRequest) (*RemittanceCodeListV30Response, *http.Response, error) {
+func (a *RemittanceCodeListV30ApiService) getExecute(r *ApiOpenApiV30RemittanceCodeListGetRequest) (*models.RemittanceCodeListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *RemittanceCodeListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.RemittanceCodeListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *RemittanceCodeListV30ApiService) getExecute(r *ApiOpenApiV30RemittanceC
 	localVarPath := localBasePath + "/open_api/v3.0/remittance_code/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

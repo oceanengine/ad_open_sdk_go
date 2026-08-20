@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarOrderReplyAuthorCancelV2ApiService StarOrderReplyAuthorCancelV2Api service
@@ -25,15 +26,15 @@ type StarOrderReplyAuthorCancelV2ApiService service
 type ApiOpenApi2StarOrderReplyAuthorCancelPostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *StarOrderReplyAuthorCancelV2ApiService
-	starOrderReplyAuthorCancelV2Request *StarOrderReplyAuthorCancelV2Request
+	starOrderReplyAuthorCancelV2Request *models.StarOrderReplyAuthorCancelV2Request
 }
 
-func (r *ApiOpenApi2StarOrderReplyAuthorCancelPostRequest) StarOrderReplyAuthorCancelV2Request(starOrderReplyAuthorCancelV2Request StarOrderReplyAuthorCancelV2Request) *ApiOpenApi2StarOrderReplyAuthorCancelPostRequest {
+func (r *ApiOpenApi2StarOrderReplyAuthorCancelPostRequest) StarOrderReplyAuthorCancelV2Request(starOrderReplyAuthorCancelV2Request models.StarOrderReplyAuthorCancelV2Request) *ApiOpenApi2StarOrderReplyAuthorCancelPostRequest {
 	r.starOrderReplyAuthorCancelV2Request = &starOrderReplyAuthorCancelV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarOrderReplyAuthorCancelPostRequest) Execute() (*StarOrderReplyAuthorCancelV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarOrderReplyAuthorCancelPostRequest) Execute() (*models.StarOrderReplyAuthorCancelV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarOrderReplyAuthorCancelV2ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return StarOrderReplyAuthorCancelV2Response
-func (a *StarOrderReplyAuthorCancelV2ApiService) postExecute(r *ApiOpenApi2StarOrderReplyAuthorCancelPostRequest) (*StarOrderReplyAuthorCancelV2Response, *http.Response, error) {
+func (a *StarOrderReplyAuthorCancelV2ApiService) postExecute(r *ApiOpenApi2StarOrderReplyAuthorCancelPostRequest) (*models.StarOrderReplyAuthorCancelV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarOrderReplyAuthorCancelV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarOrderReplyAuthorCancelV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarOrderReplyAuthorCancelV2ApiService) postExecute(r *ApiOpenApi2StarO
 	localVarPath := localBasePath + "/open_api/2/star/order/reply_author_cancel/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

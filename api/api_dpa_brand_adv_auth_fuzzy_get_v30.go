@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaBrandAdvAuthFuzzyGetV30ApiService DpaBrandAdvAuthFuzzyGetV30Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest struct {
 	ctx                 context.Context
 	ApiService          *DpaBrandAdvAuthFuzzyGetV30ApiService
 	accountId           *int64
-	brandDataSourceList *[]*DpaBrandAdvAuthFuzzyGetV30BrandDataSourceList
+	brandDataSourceList *[]*models.DpaBrandAdvAuthFuzzyGetV30BrandDataSourceList
 	page                *int64
 	pageSize            *int64
 	brandName           *string
-	matchType           *DpaBrandAdvAuthFuzzyGetV30MatchType
-	has5aGrassBrand     *DpaBrandAdvAuthFuzzyGetV30Has5aGrassBrand
+	matchType           *models.DpaBrandAdvAuthFuzzyGetV30MatchType
+	has5aGrassBrand     *models.DpaBrandAdvAuthFuzzyGetV30Has5aGrassBrand
 }
 
 // 广告账户id
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest) AccountId(accountId int
 }
 
 // 品牌数据来源
-func (r *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest) BrandDataSourceList(brandDataSourceList []*DpaBrandAdvAuthFuzzyGetV30BrandDataSourceList) *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest {
+func (r *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest) BrandDataSourceList(brandDataSourceList []*models.DpaBrandAdvAuthFuzzyGetV30BrandDataSourceList) *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest {
 	r.brandDataSourceList = &brandDataSourceList
 	return r
 }
@@ -65,18 +66,18 @@ func (r *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest) BrandName(brandName str
 }
 
 // 检索类型
-func (r *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest) MatchType(matchType DpaBrandAdvAuthFuzzyGetV30MatchType) *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest {
+func (r *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest) MatchType(matchType models.DpaBrandAdvAuthFuzzyGetV30MatchType) *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest {
 	r.matchType = &matchType
 	return r
 }
 
 // 是否支持5a种草
-func (r *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest) Has5aGrassBrand(has5aGrassBrand DpaBrandAdvAuthFuzzyGetV30Has5aGrassBrand) *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest {
+func (r *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest) Has5aGrassBrand(has5aGrassBrand models.DpaBrandAdvAuthFuzzyGetV30Has5aGrassBrand) *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest {
 	r.has5aGrassBrand = &has5aGrassBrand
 	return r
 }
 
-func (r *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest) Execute() (*DpaBrandAdvAuthFuzzyGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest) Execute() (*models.DpaBrandAdvAuthFuzzyGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *DpaBrandAdvAuthFuzzyGetV30ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return DpaBrandAdvAuthFuzzyGetV30Response
-func (a *DpaBrandAdvAuthFuzzyGetV30ApiService) getExecute(r *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest) (*DpaBrandAdvAuthFuzzyGetV30Response, *http.Response, error) {
+func (a *DpaBrandAdvAuthFuzzyGetV30ApiService) getExecute(r *ApiOpenApiV30DpaBrandAdvAuthFuzzyGetGetRequest) (*models.DpaBrandAdvAuthFuzzyGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaBrandAdvAuthFuzzyGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaBrandAdvAuthFuzzyGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *DpaBrandAdvAuthFuzzyGetV30ApiService) getExecute(r *ApiOpenApiV30DpaBra
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/brand/adv_auth/fuzzy/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

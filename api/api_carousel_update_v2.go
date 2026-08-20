@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CarouselUpdateV2ApiService CarouselUpdateV2Api service
@@ -25,15 +26,15 @@ type CarouselUpdateV2ApiService service
 type ApiOpenApi2CarouselUpdatePostRequest struct {
 	ctx                     context.Context
 	ApiService              *CarouselUpdateV2ApiService
-	carouselUpdateV2Request *CarouselUpdateV2Request
+	carouselUpdateV2Request *models.CarouselUpdateV2Request
 }
 
-func (r *ApiOpenApi2CarouselUpdatePostRequest) CarouselUpdateV2Request(carouselUpdateV2Request CarouselUpdateV2Request) *ApiOpenApi2CarouselUpdatePostRequest {
+func (r *ApiOpenApi2CarouselUpdatePostRequest) CarouselUpdateV2Request(carouselUpdateV2Request models.CarouselUpdateV2Request) *ApiOpenApi2CarouselUpdatePostRequest {
 	r.carouselUpdateV2Request = &carouselUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2CarouselUpdatePostRequest) Execute() (*CarouselUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CarouselUpdatePostRequest) Execute() (*models.CarouselUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *CarouselUpdateV2ApiService) Post(ctx context.Context) *ApiOpenApi2Carou
 // Execute executes the request
 //
 //	@return CarouselUpdateV2Response
-func (a *CarouselUpdateV2ApiService) postExecute(r *ApiOpenApi2CarouselUpdatePostRequest) (*CarouselUpdateV2Response, *http.Response, error) {
+func (a *CarouselUpdateV2ApiService) postExecute(r *ApiOpenApi2CarouselUpdatePostRequest) (*models.CarouselUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CarouselUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CarouselUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *CarouselUpdateV2ApiService) postExecute(r *ApiOpenApi2CarouselUpdatePos
 	localVarPath := localBasePath + "/open_api/2/carousel/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

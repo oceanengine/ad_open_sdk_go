@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsSiteTemplateCreateV2ApiService ToolsSiteTemplateCreateV2Api service
@@ -25,15 +26,15 @@ type ToolsSiteTemplateCreateV2ApiService service
 type ApiOpenApi2ToolsSiteTemplateCreatePostRequest struct {
 	ctx                              context.Context
 	ApiService                       *ToolsSiteTemplateCreateV2ApiService
-	toolsSiteTemplateCreateV2Request *ToolsSiteTemplateCreateV2Request
+	toolsSiteTemplateCreateV2Request *models.ToolsSiteTemplateCreateV2Request
 }
 
-func (r *ApiOpenApi2ToolsSiteTemplateCreatePostRequest) ToolsSiteTemplateCreateV2Request(toolsSiteTemplateCreateV2Request ToolsSiteTemplateCreateV2Request) *ApiOpenApi2ToolsSiteTemplateCreatePostRequest {
+func (r *ApiOpenApi2ToolsSiteTemplateCreatePostRequest) ToolsSiteTemplateCreateV2Request(toolsSiteTemplateCreateV2Request models.ToolsSiteTemplateCreateV2Request) *ApiOpenApi2ToolsSiteTemplateCreatePostRequest {
 	r.toolsSiteTemplateCreateV2Request = &toolsSiteTemplateCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsSiteTemplateCreatePostRequest) Execute() (*ToolsSiteTemplateCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsSiteTemplateCreatePostRequest) Execute() (*models.ToolsSiteTemplateCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsSiteTemplateCreateV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsSiteTemplateCreateV2Response
-func (a *ToolsSiteTemplateCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsSiteTemplateCreatePostRequest) (*ToolsSiteTemplateCreateV2Response, *http.Response, error) {
+func (a *ToolsSiteTemplateCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsSiteTemplateCreatePostRequest) (*models.ToolsSiteTemplateCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsSiteTemplateCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsSiteTemplateCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsSiteTemplateCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsSit
 	localVarPath := localBasePath + "/open_api/2/tools/site_template/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

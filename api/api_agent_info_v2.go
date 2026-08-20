@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentInfoV2ApiService AgentInfoV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2AgentInfoGetRequest struct {
 	ctx           context.Context
 	ApiService    *AgentInfoV2ApiService
 	advertiserIds *[]int64
-	fields        *[]*AgentInfoV2Fields
+	fields        *[]*models.AgentInfoV2Fields
 }
 
 func (r *ApiOpenApi2AgentInfoGetRequest) AdvertiserIds(advertiserIds []int64) *ApiOpenApi2AgentInfoGetRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2AgentInfoGetRequest) AdvertiserIds(advertiserIds []int64) *A
 	return r
 }
 
-func (r *ApiOpenApi2AgentInfoGetRequest) Fields(fields []*AgentInfoV2Fields) *ApiOpenApi2AgentInfoGetRequest {
+func (r *ApiOpenApi2AgentInfoGetRequest) Fields(fields []*models.AgentInfoV2Fields) *ApiOpenApi2AgentInfoGetRequest {
 	r.fields = &fields
 	return r
 }
 
-func (r *ApiOpenApi2AgentInfoGetRequest) Execute() (*AgentInfoV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentInfoGetRequest) Execute() (*models.AgentInfoV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *AgentInfoV2ApiService) Get(ctx context.Context) *ApiOpenApi2AgentInfoGe
 // Execute executes the request
 //
 //	@return AgentInfoV2Response
-func (a *AgentInfoV2ApiService) getExecute(r *ApiOpenApi2AgentInfoGetRequest) (*AgentInfoV2Response, *http.Response, error) {
+func (a *AgentInfoV2ApiService) getExecute(r *ApiOpenApi2AgentInfoGetRequest) (*models.AgentInfoV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentInfoV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentInfoV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *AgentInfoV2ApiService) getExecute(r *ApiOpenApi2AgentInfoGetRequest) (*
 	localVarPath := localBasePath + "/open_api/2/agent/info/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

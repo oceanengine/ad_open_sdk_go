@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalImQueryMsgV30ApiService LocalImQueryMsgV30Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30LocalImQueryMsgGetRequest) MsgId(msgId string) *ApiOpenApi
 	return r
 }
 
-func (r *ApiOpenApiV30LocalImQueryMsgGetRequest) Execute() (*LocalImQueryMsgV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalImQueryMsgGetRequest) Execute() (*models.LocalImQueryMsgV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *LocalImQueryMsgV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Lo
 // Execute executes the request
 //
 //	@return LocalImQueryMsgV30Response
-func (a *LocalImQueryMsgV30ApiService) getExecute(r *ApiOpenApiV30LocalImQueryMsgGetRequest) (*LocalImQueryMsgV30Response, *http.Response, error) {
+func (a *LocalImQueryMsgV30ApiService) getExecute(r *ApiOpenApiV30LocalImQueryMsgGetRequest) (*models.LocalImQueryMsgV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalImQueryMsgV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalImQueryMsgV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *LocalImQueryMsgV30ApiService) getExecute(r *ApiOpenApiV30LocalImQueryMs
 	localVarPath := localBasePath + "/open_api/v3.0/local/im/query/msg/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

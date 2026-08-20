@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ProjectWeekScheduleUpdateV30ApiService ProjectWeekScheduleUpdateV30Api service
@@ -25,15 +26,15 @@ type ProjectWeekScheduleUpdateV30ApiService service
 type ApiOpenApiV30ProjectWeekScheduleUpdatePostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *ProjectWeekScheduleUpdateV30ApiService
-	projectWeekScheduleUpdateV30Request *ProjectWeekScheduleUpdateV30Request
+	projectWeekScheduleUpdateV30Request *models.ProjectWeekScheduleUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ProjectWeekScheduleUpdatePostRequest) ProjectWeekScheduleUpdateV30Request(projectWeekScheduleUpdateV30Request ProjectWeekScheduleUpdateV30Request) *ApiOpenApiV30ProjectWeekScheduleUpdatePostRequest {
+func (r *ApiOpenApiV30ProjectWeekScheduleUpdatePostRequest) ProjectWeekScheduleUpdateV30Request(projectWeekScheduleUpdateV30Request models.ProjectWeekScheduleUpdateV30Request) *ApiOpenApiV30ProjectWeekScheduleUpdatePostRequest {
 	r.projectWeekScheduleUpdateV30Request = &projectWeekScheduleUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ProjectWeekScheduleUpdatePostRequest) Execute() (*ProjectWeekScheduleUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ProjectWeekScheduleUpdatePostRequest) Execute() (*models.ProjectWeekScheduleUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ProjectWeekScheduleUpdateV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return ProjectWeekScheduleUpdateV30Response
-func (a *ProjectWeekScheduleUpdateV30ApiService) postExecute(r *ApiOpenApiV30ProjectWeekScheduleUpdatePostRequest) (*ProjectWeekScheduleUpdateV30Response, *http.Response, error) {
+func (a *ProjectWeekScheduleUpdateV30ApiService) postExecute(r *ApiOpenApiV30ProjectWeekScheduleUpdatePostRequest) (*models.ProjectWeekScheduleUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ProjectWeekScheduleUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ProjectWeekScheduleUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ProjectWeekScheduleUpdateV30ApiService) postExecute(r *ApiOpenApiV30Pro
 	localVarPath := localBasePath + "/open_api/v3.0/project/week_schedule/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

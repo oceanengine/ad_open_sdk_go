@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferCanTransferBalanceGetV30ApiService CgTransferCanTransferBalanceGetV30Api service
@@ -29,8 +30,8 @@ type ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest struct {
 	bizRequestNo      *string
 	opponentTargetId  *int64
 	targetIdList      *[]int64
-	transferDirection *CgTransferCanTransferBalanceGetV30TransferDirection
-	platform          *CgTransferCanTransferBalanceGetV30Platform
+	transferDirection *models.CgTransferCanTransferBalanceGetV30TransferDirection
+	platform          *models.CgTransferCanTransferBalanceGetV30Platform
 }
 
 // 组织id
@@ -58,18 +59,18 @@ func (r *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest) TargetIdList(ta
 }
 
 // 转账方向，以目标账户视角确定
-func (r *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest) TransferDirection(transferDirection CgTransferCanTransferBalanceGetV30TransferDirection) *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest {
+func (r *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest) TransferDirection(transferDirection models.CgTransferCanTransferBalanceGetV30TransferDirection) *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest {
 	r.transferDirection = &transferDirection
 	return r
 }
 
 // 转账业务线
-func (r *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest) Platform(platform CgTransferCanTransferBalanceGetV30Platform) *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest {
+func (r *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest) Platform(platform models.CgTransferCanTransferBalanceGetV30Platform) *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest {
 	r.platform = &platform
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest) Execute() (*CgTransferCanTransferBalanceGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest) Execute() (*models.CgTransferCanTransferBalanceGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *CgTransferCanTransferBalanceGetV30ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return CgTransferCanTransferBalanceGetV30Response
-func (a *CgTransferCanTransferBalanceGetV30ApiService) getExecute(r *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest) (*CgTransferCanTransferBalanceGetV30Response, *http.Response, error) {
+func (a *CgTransferCanTransferBalanceGetV30ApiService) getExecute(r *ApiOpenApiV30CgTransferCanTransferBalanceGetGetRequest) (*models.CgTransferCanTransferBalanceGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferCanTransferBalanceGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferCanTransferBalanceGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *CgTransferCanTransferBalanceGetV30ApiService) getExecute(r *ApiOpenApiV
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/can_transfer_balance/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.organizationId == nil {

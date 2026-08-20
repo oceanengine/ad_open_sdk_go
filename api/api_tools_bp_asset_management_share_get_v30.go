@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsBpAssetManagementShareGetV30ApiService ToolsBpAssetManagementShareGetV30Api service
@@ -25,15 +26,15 @@ type ToolsBpAssetManagementShareGetV30ApiService service
 type ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest struct {
 	ctx            context.Context
 	ApiService     *ToolsBpAssetManagementShareGetV30ApiService
-	assetType      *ToolsBpAssetManagementShareGetV30AssetType
+	assetType      *models.ToolsBpAssetManagementShareGetV30AssetType
 	instanceId     *int64
 	organizationId *int64
 	page           *int32
 	pageSize       *int32
-	shareType      *ToolsBpAssetManagementShareGetV30ShareType
+	shareType      *models.ToolsBpAssetManagementShareGetV30ShareType
 }
 
-func (r *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest) AssetType(assetType ToolsBpAssetManagementShareGetV30AssetType) *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest {
+func (r *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest) AssetType(assetType models.ToolsBpAssetManagementShareGetV30AssetType) *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest {
 	r.assetType = &assetType
 	return r
 }
@@ -58,12 +59,12 @@ func (r *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest) PageSize(pageSiz
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest) ShareType(shareType ToolsBpAssetManagementShareGetV30ShareType) *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest {
+func (r *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest) ShareType(shareType models.ToolsBpAssetManagementShareGetV30ShareType) *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest {
 	r.shareType = &shareType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest) Execute() (*ToolsBpAssetManagementShareGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest) Execute() (*models.ToolsBpAssetManagementShareGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ToolsBpAssetManagementShareGetV30ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return ToolsBpAssetManagementShareGetV30Response
-func (a *ToolsBpAssetManagementShareGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest) (*ToolsBpAssetManagementShareGetV30Response, *http.Response, error) {
+func (a *ToolsBpAssetManagementShareGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsBpAssetManagementShareGetGetRequest) (*models.ToolsBpAssetManagementShareGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsBpAssetManagementShareGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsBpAssetManagementShareGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ToolsBpAssetManagementShareGetV30ApiService) getExecute(r *ApiOpenApiV3
 	localVarPath := localBasePath + "/open_api/v3.0/tools/bp_asset_management/share/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.assetType == nil {

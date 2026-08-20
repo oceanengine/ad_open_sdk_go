@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAdRecommendKeywordsGetV10ApiService QianchuanAdRecommendKeywordsGetV10Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanAdRecommendKeywordsGetV10ApiService
 	advertiserId *int64
-	filtering    *QianchuanAdRecommendKeywordsGetV10Filtering
-	orderField   *QianchuanAdRecommendKeywordsGetV10OrderField
-	orderType    *QianchuanAdRecommendKeywordsGetV10OrderType
+	filtering    *models.QianchuanAdRecommendKeywordsGetV10Filtering
+	orderField   *models.QianchuanAdRecommendKeywordsGetV10OrderField
+	orderType    *models.QianchuanAdRecommendKeywordsGetV10OrderType
 	cacheId      *string
 	page         *int32
 	pageSize     *int32
@@ -41,19 +42,19 @@ func (r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) AdvertiserId(ad
 }
 
 // 过滤条件 1. “search_word”、“product_id”、“aweme_id”，必须传入一个； 2. 优先按“search_word”过滤，其次按“product_id”过滤，最后按“aweme_id”过滤
-func (r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) Filtering(filtering QianchuanAdRecommendKeywordsGetV10Filtering) *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) Filtering(filtering models.QianchuanAdRecommendKeywordsGetV10Filtering) *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
 // 排序字段： 推荐度（默认）DEFAULT、 相关性RELEVANCE、 月搜索量PV、 竞争程度COMPETITION
-func (r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) OrderField(orderField QianchuanAdRecommendKeywordsGetV10OrderField) *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) OrderField(orderField models.QianchuanAdRecommendKeywordsGetV10OrderField) *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
 
 // 排序方式，允许值： ASC 升序、 DESC 降序（默认）
-func (r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) OrderType(orderType QianchuanAdRecommendKeywordsGetV10OrderType) *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) OrderType(orderType models.QianchuanAdRecommendKeywordsGetV10OrderType) *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -76,7 +77,7 @@ func (r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) PageSize(pageSi
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) Execute() (*QianchuanAdRecommendKeywordsGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) Execute() (*models.QianchuanAdRecommendKeywordsGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *QianchuanAdRecommendKeywordsGetV10ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return QianchuanAdRecommendKeywordsGetV10Response
-func (a *QianchuanAdRecommendKeywordsGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) (*QianchuanAdRecommendKeywordsGetV10Response, *http.Response, error) {
+func (a *QianchuanAdRecommendKeywordsGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAdRecommendKeywordsGetGetRequest) (*models.QianchuanAdRecommendKeywordsGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAdRecommendKeywordsGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAdRecommendKeywordsGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *QianchuanAdRecommendKeywordsGetV10ApiService) getExecute(r *ApiOpenApiV
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/ad/recommend_keywords/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

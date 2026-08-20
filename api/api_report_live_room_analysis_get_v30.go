@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportLiveRoomAnalysisGetV30ApiService ReportLiveRoomAnalysisGetV30Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ReportLiveRoomAnalysisGetV30ApiService
 	advertiserId *int64
-	filtering    *ReportLiveRoomAnalysisGetV30Filtering
+	filtering    *models.ReportLiveRoomAnalysisGetV30Filtering
 	startTime    *string
 	endTime      *string
 	fields       *[]string
 	orderField   *string
-	orderType    *ReportLiveRoomAnalysisGetV30OrderType
+	orderType    *models.ReportLiveRoomAnalysisGetV30OrderType
 	page         *int64
 	pageSize     *int64
 }
@@ -43,7 +44,7 @@ func (r *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest) AdvertiserId(advertis
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest) Filtering(filtering ReportLiveRoomAnalysisGetV30Filtering) *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest {
+func (r *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest) Filtering(filtering models.ReportLiveRoomAnalysisGetV30Filtering) *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -73,7 +74,7 @@ func (r *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest) OrderField(orderField
 }
 
 // 排序方式
-func (r *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest) OrderType(orderType ReportLiveRoomAnalysisGetV30OrderType) *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest {
+func (r *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest) OrderType(orderType models.ReportLiveRoomAnalysisGetV30OrderType) *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -88,7 +89,7 @@ func (r *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest) PageSize(pageSize int
 	return r
 }
 
-func (r *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest) Execute() (*ReportLiveRoomAnalysisGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest) Execute() (*models.ReportLiveRoomAnalysisGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -122,12 +123,12 @@ func (a *ReportLiveRoomAnalysisGetV30ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ReportLiveRoomAnalysisGetV30Response
-func (a *ReportLiveRoomAnalysisGetV30ApiService) getExecute(r *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest) (*ReportLiveRoomAnalysisGetV30Response, *http.Response, error) {
+func (a *ReportLiveRoomAnalysisGetV30ApiService) getExecute(r *ApiOpenApiV30ReportLiveRoomAnalysisGetGetRequest) (*models.ReportLiveRoomAnalysisGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportLiveRoomAnalysisGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportLiveRoomAnalysisGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -137,7 +138,7 @@ func (a *ReportLiveRoomAnalysisGetV30ApiService) getExecute(r *ApiOpenApiV30Repo
 	localVarPath := localBasePath + "/open_api/v3.0/report/live_room/analysis/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

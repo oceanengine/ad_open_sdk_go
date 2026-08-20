@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DmpCustomAudienceDeleteV2ApiService DmpCustomAudienceDeleteV2Api service
@@ -25,15 +26,15 @@ type DmpCustomAudienceDeleteV2ApiService service
 type ApiOpenApi2DmpCustomAudienceDeletePostRequest struct {
 	ctx                              context.Context
 	ApiService                       *DmpCustomAudienceDeleteV2ApiService
-	dmpCustomAudienceDeleteV2Request *DmpCustomAudienceDeleteV2Request
+	dmpCustomAudienceDeleteV2Request *models.DmpCustomAudienceDeleteV2Request
 }
 
-func (r *ApiOpenApi2DmpCustomAudienceDeletePostRequest) DmpCustomAudienceDeleteV2Request(dmpCustomAudienceDeleteV2Request DmpCustomAudienceDeleteV2Request) *ApiOpenApi2DmpCustomAudienceDeletePostRequest {
+func (r *ApiOpenApi2DmpCustomAudienceDeletePostRequest) DmpCustomAudienceDeleteV2Request(dmpCustomAudienceDeleteV2Request models.DmpCustomAudienceDeleteV2Request) *ApiOpenApi2DmpCustomAudienceDeletePostRequest {
 	r.dmpCustomAudienceDeleteV2Request = &dmpCustomAudienceDeleteV2Request
 	return r
 }
 
-func (r *ApiOpenApi2DmpCustomAudienceDeletePostRequest) Execute() (*DmpCustomAudienceDeleteV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DmpCustomAudienceDeletePostRequest) Execute() (*models.DmpCustomAudienceDeleteV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DmpCustomAudienceDeleteV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return DmpCustomAudienceDeleteV2Response
-func (a *DmpCustomAudienceDeleteV2ApiService) postExecute(r *ApiOpenApi2DmpCustomAudienceDeletePostRequest) (*DmpCustomAudienceDeleteV2Response, *http.Response, error) {
+func (a *DmpCustomAudienceDeleteV2ApiService) postExecute(r *ApiOpenApi2DmpCustomAudienceDeletePostRequest) (*models.DmpCustomAudienceDeleteV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DmpCustomAudienceDeleteV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DmpCustomAudienceDeleteV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DmpCustomAudienceDeleteV2ApiService) postExecute(r *ApiOpenApi2DmpCusto
 	localVarPath := localBasePath + "/open_api/2/dmp/custom_audience/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

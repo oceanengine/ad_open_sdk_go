@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentChargeVerifyV2ApiService AgentChargeVerifyV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2AgentChargeVerifyGetRequest struct {
 	ctx        context.Context
 	ApiService *AgentChargeVerifyV2ApiService
 	agentId    *int64
-	chargeType *AgentChargeVerifyV2ChargeType
+	chargeType *models.AgentChargeVerifyV2ChargeType
 }
 
 // 代理商ID
@@ -36,12 +37,12 @@ func (r *ApiOpenApi2AgentChargeVerifyGetRequest) AgentId(agentId int64) *ApiOpen
 }
 
 // 充值类型
-func (r *ApiOpenApi2AgentChargeVerifyGetRequest) ChargeType(chargeType AgentChargeVerifyV2ChargeType) *ApiOpenApi2AgentChargeVerifyGetRequest {
+func (r *ApiOpenApi2AgentChargeVerifyGetRequest) ChargeType(chargeType models.AgentChargeVerifyV2ChargeType) *ApiOpenApi2AgentChargeVerifyGetRequest {
 	r.chargeType = &chargeType
 	return r
 }
 
-func (r *ApiOpenApi2AgentChargeVerifyGetRequest) Execute() (*AgentChargeVerifyV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentChargeVerifyGetRequest) Execute() (*models.AgentChargeVerifyV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *AgentChargeVerifyV2ApiService) Get(ctx context.Context) *ApiOpenApi2Age
 // Execute executes the request
 //
 //	@return AgentChargeVerifyV2Response
-func (a *AgentChargeVerifyV2ApiService) getExecute(r *ApiOpenApi2AgentChargeVerifyGetRequest) (*AgentChargeVerifyV2Response, *http.Response, error) {
+func (a *AgentChargeVerifyV2ApiService) getExecute(r *ApiOpenApi2AgentChargeVerifyGetRequest) (*models.AgentChargeVerifyV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentChargeVerifyV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentChargeVerifyV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *AgentChargeVerifyV2ApiService) getExecute(r *ApiOpenApi2AgentChargeVeri
 	localVarPath := localBasePath + "/open_api/2/agent/charge/verify/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

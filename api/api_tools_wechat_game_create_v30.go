@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsWechatGameCreateV30ApiService ToolsWechatGameCreateV30Api service
@@ -25,15 +26,15 @@ type ToolsWechatGameCreateV30ApiService service
 type ApiOpenApiV30ToolsWechatGameCreatePostRequest struct {
 	ctx                             context.Context
 	ApiService                      *ToolsWechatGameCreateV30ApiService
-	toolsWechatGameCreateV30Request *ToolsWechatGameCreateV30Request
+	toolsWechatGameCreateV30Request *models.ToolsWechatGameCreateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsWechatGameCreatePostRequest) ToolsWechatGameCreateV30Request(toolsWechatGameCreateV30Request ToolsWechatGameCreateV30Request) *ApiOpenApiV30ToolsWechatGameCreatePostRequest {
+func (r *ApiOpenApiV30ToolsWechatGameCreatePostRequest) ToolsWechatGameCreateV30Request(toolsWechatGameCreateV30Request models.ToolsWechatGameCreateV30Request) *ApiOpenApiV30ToolsWechatGameCreatePostRequest {
 	r.toolsWechatGameCreateV30Request = &toolsWechatGameCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsWechatGameCreatePostRequest) Execute() (*ToolsWechatGameCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsWechatGameCreatePostRequest) Execute() (*models.ToolsWechatGameCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsWechatGameCreateV30ApiService) Post(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return ToolsWechatGameCreateV30Response
-func (a *ToolsWechatGameCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsWechatGameCreatePostRequest) (*ToolsWechatGameCreateV30Response, *http.Response, error) {
+func (a *ToolsWechatGameCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsWechatGameCreatePostRequest) (*models.ToolsWechatGameCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsWechatGameCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsWechatGameCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsWechatGameCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsWe
 	localVarPath := localBasePath + "/open_api/v3.0/tools/wechat_game/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

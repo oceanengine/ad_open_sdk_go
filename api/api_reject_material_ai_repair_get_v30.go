@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // RejectMaterialAiRepairGetV30ApiService RejectMaterialAiRepairGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30RejectMaterialAiRepairGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *RejectMaterialAiRepairGetV30ApiService
 	advertiserId *int64
-	filtering    *RejectMaterialAiRepairGetV30Filtering
+	filtering    *models.RejectMaterialAiRepairGetV30Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV30RejectMaterialAiRepairGetGetRequest) AdvertiserId(advertis
 }
 
 // 过滤器
-func (r *ApiOpenApiV30RejectMaterialAiRepairGetGetRequest) Filtering(filtering RejectMaterialAiRepairGetV30Filtering) *ApiOpenApiV30RejectMaterialAiRepairGetGetRequest {
+func (r *ApiOpenApiV30RejectMaterialAiRepairGetGetRequest) Filtering(filtering models.RejectMaterialAiRepairGetV30Filtering) *ApiOpenApiV30RejectMaterialAiRepairGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -52,7 +53,7 @@ func (r *ApiOpenApiV30RejectMaterialAiRepairGetGetRequest) PageSize(pageSize int
 	return r
 }
 
-func (r *ApiOpenApiV30RejectMaterialAiRepairGetGetRequest) Execute() (*RejectMaterialAiRepairGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30RejectMaterialAiRepairGetGetRequest) Execute() (*models.RejectMaterialAiRepairGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -86,12 +87,12 @@ func (a *RejectMaterialAiRepairGetV30ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return RejectMaterialAiRepairGetV30Response
-func (a *RejectMaterialAiRepairGetV30ApiService) getExecute(r *ApiOpenApiV30RejectMaterialAiRepairGetGetRequest) (*RejectMaterialAiRepairGetV30Response, *http.Response, error) {
+func (a *RejectMaterialAiRepairGetV30ApiService) getExecute(r *ApiOpenApiV30RejectMaterialAiRepairGetGetRequest) (*models.RejectMaterialAiRepairGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *RejectMaterialAiRepairGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.RejectMaterialAiRepairGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -101,7 +102,7 @@ func (a *RejectMaterialAiRepairGetV30ApiService) getExecute(r *ApiOpenApiV30Reje
 	localVarPath := localBasePath + "/open_api/v3.0/reject_material/ai_repair/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

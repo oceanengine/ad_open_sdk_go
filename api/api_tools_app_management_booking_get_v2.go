@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementBookingGetV2ApiService ToolsAppManagementBookingGetV2Api service
@@ -29,11 +30,11 @@ type ApiOpenApi2ToolsAppManagementBookingGetGetRequest struct {
 	page                   *int32
 	pageSize               *int32
 	searchKey              *string
-	searchType             *ToolsAppManagementBookingGetV2SearchType
-	status                 *ToolsAppManagementBookingGetV2Status
-	scheduledPublishTime   *ToolsAppManagementBookingGetV2ScheduledPublishTime
-	createTime             *ToolsAppManagementBookingGetV2CreateTime
-	accountAssetQueryScope *ToolsAppManagementBookingGetV2AccountAssetQueryScope
+	searchType             *models.ToolsAppManagementBookingGetV2SearchType
+	status                 *models.ToolsAppManagementBookingGetV2Status
+	scheduledPublishTime   *models.ToolsAppManagementBookingGetV2ScheduledPublishTime
+	createTime             *models.ToolsAppManagementBookingGetV2CreateTime
+	accountAssetQueryScope *models.ToolsAppManagementBookingGetV2AccountAssetQueryScope
 }
 
 func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
@@ -56,32 +57,32 @@ func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) SearchKey(searchKey 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) SearchType(searchType ToolsAppManagementBookingGetV2SearchType) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) SearchType(searchType models.ToolsAppManagementBookingGetV2SearchType) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
 	r.searchType = &searchType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) Status(status ToolsAppManagementBookingGetV2Status) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) Status(status models.ToolsAppManagementBookingGetV2Status) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
 	r.status = &status
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) ScheduledPublishTime(scheduledPublishTime ToolsAppManagementBookingGetV2ScheduledPublishTime) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) ScheduledPublishTime(scheduledPublishTime models.ToolsAppManagementBookingGetV2ScheduledPublishTime) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
 	r.scheduledPublishTime = &scheduledPublishTime
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) CreateTime(createTime ToolsAppManagementBookingGetV2CreateTime) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) CreateTime(createTime models.ToolsAppManagementBookingGetV2CreateTime) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
 	r.createTime = &createTime
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsAppManagementBookingGetV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) AccountAssetQueryScope(accountAssetQueryScope models.ToolsAppManagementBookingGetV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementBookingGetGetRequest {
 	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) Execute() (*ToolsAppManagementBookingGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) Execute() (*models.ToolsAppManagementBookingGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -115,12 +116,12 @@ func (a *ToolsAppManagementBookingGetV2ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return ToolsAppManagementBookingGetV2Response
-func (a *ToolsAppManagementBookingGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) (*ToolsAppManagementBookingGetV2Response, *http.Response, error) {
+func (a *ToolsAppManagementBookingGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementBookingGetGetRequest) (*models.ToolsAppManagementBookingGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementBookingGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementBookingGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -130,7 +131,7 @@ func (a *ToolsAppManagementBookingGetV2ApiService) getExecute(r *ApiOpenApi2Tool
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/booking/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

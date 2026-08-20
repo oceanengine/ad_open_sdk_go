@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeOrderTerminateV10ApiService QianchuanAwemeOrderTerminateV10Api service
@@ -25,15 +26,15 @@ type QianchuanAwemeOrderTerminateV10ApiService service
 type ApiOpenApiV10QianchuanAwemeOrderTerminatePostRequest struct {
 	ctx                                    context.Context
 	ApiService                             *QianchuanAwemeOrderTerminateV10ApiService
-	qianchuanAwemeOrderTerminateV10Request *QianchuanAwemeOrderTerminateV10Request
+	qianchuanAwemeOrderTerminateV10Request *models.QianchuanAwemeOrderTerminateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeOrderTerminatePostRequest) QianchuanAwemeOrderTerminateV10Request(qianchuanAwemeOrderTerminateV10Request QianchuanAwemeOrderTerminateV10Request) *ApiOpenApiV10QianchuanAwemeOrderTerminatePostRequest {
+func (r *ApiOpenApiV10QianchuanAwemeOrderTerminatePostRequest) QianchuanAwemeOrderTerminateV10Request(qianchuanAwemeOrderTerminateV10Request models.QianchuanAwemeOrderTerminateV10Request) *ApiOpenApiV10QianchuanAwemeOrderTerminatePostRequest {
 	r.qianchuanAwemeOrderTerminateV10Request = &qianchuanAwemeOrderTerminateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeOrderTerminatePostRequest) Execute() (*QianchuanAwemeOrderTerminateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeOrderTerminatePostRequest) Execute() (*models.QianchuanAwemeOrderTerminateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanAwemeOrderTerminateV10ApiService) Post(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return QianchuanAwemeOrderTerminateV10Response
-func (a *QianchuanAwemeOrderTerminateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAwemeOrderTerminatePostRequest) (*QianchuanAwemeOrderTerminateV10Response, *http.Response, error) {
+func (a *QianchuanAwemeOrderTerminateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAwemeOrderTerminatePostRequest) (*models.QianchuanAwemeOrderTerminateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeOrderTerminateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeOrderTerminateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanAwemeOrderTerminateV10ApiService) postExecute(r *ApiOpenApiV10
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/order/terminate/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

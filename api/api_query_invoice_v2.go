@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QueryInvoiceV2ApiService QueryInvoiceV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2QueryInvoiceGetRequest struct {
 	ctx        context.Context
 	ApiService *QueryInvoiceV2ApiService
 	agentId    *int64
-	filtering  *QueryInvoiceV2Filtering
+	filtering  *models.QueryInvoiceV2Filtering
 	pageSize   *int32
 	page       *int64
 }
@@ -37,7 +38,7 @@ func (r *ApiOpenApi2QueryInvoiceGetRequest) AgentId(agentId int64) *ApiOpenApi2Q
 }
 
 // 过滤器
-func (r *ApiOpenApi2QueryInvoiceGetRequest) Filtering(filtering QueryInvoiceV2Filtering) *ApiOpenApi2QueryInvoiceGetRequest {
+func (r *ApiOpenApi2QueryInvoiceGetRequest) Filtering(filtering models.QueryInvoiceV2Filtering) *ApiOpenApi2QueryInvoiceGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -54,7 +55,7 @@ func (r *ApiOpenApi2QueryInvoiceGetRequest) Page(page int64) *ApiOpenApi2QueryIn
 	return r
 }
 
-func (r *ApiOpenApi2QueryInvoiceGetRequest) Execute() (*QueryInvoiceV2Response, *http.Response, error) {
+func (r *ApiOpenApi2QueryInvoiceGetRequest) Execute() (*models.QueryInvoiceV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -88,12 +89,12 @@ func (a *QueryInvoiceV2ApiService) Get(ctx context.Context) *ApiOpenApi2QueryInv
 // Execute executes the request
 //
 //	@return QueryInvoiceV2Response
-func (a *QueryInvoiceV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceGetRequest) (*QueryInvoiceV2Response, *http.Response, error) {
+func (a *QueryInvoiceV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceGetRequest) (*models.QueryInvoiceV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QueryInvoiceV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QueryInvoiceV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -103,7 +104,7 @@ func (a *QueryInvoiceV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceGetReque
 	localVarPath := localBasePath + "/open_api/2/query/invoice/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

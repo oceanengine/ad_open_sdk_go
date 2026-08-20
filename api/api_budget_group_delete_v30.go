@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BudgetGroupDeleteV30ApiService BudgetGroupDeleteV30Api service
@@ -25,15 +26,15 @@ type BudgetGroupDeleteV30ApiService service
 type ApiOpenApiV30BudgetGroupDeletePostRequest struct {
 	ctx                         context.Context
 	ApiService                  *BudgetGroupDeleteV30ApiService
-	budgetGroupDeleteV30Request *BudgetGroupDeleteV30Request
+	budgetGroupDeleteV30Request *models.BudgetGroupDeleteV30Request
 }
 
-func (r *ApiOpenApiV30BudgetGroupDeletePostRequest) BudgetGroupDeleteV30Request(budgetGroupDeleteV30Request BudgetGroupDeleteV30Request) *ApiOpenApiV30BudgetGroupDeletePostRequest {
+func (r *ApiOpenApiV30BudgetGroupDeletePostRequest) BudgetGroupDeleteV30Request(budgetGroupDeleteV30Request models.BudgetGroupDeleteV30Request) *ApiOpenApiV30BudgetGroupDeletePostRequest {
 	r.budgetGroupDeleteV30Request = &budgetGroupDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30BudgetGroupDeletePostRequest) Execute() (*BudgetGroupDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BudgetGroupDeletePostRequest) Execute() (*models.BudgetGroupDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -70,12 +71,12 @@ func (a *BudgetGroupDeleteV30ApiService) Post(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return BudgetGroupDeleteV30Response
-func (a *BudgetGroupDeleteV30ApiService) postExecute(r *ApiOpenApiV30BudgetGroupDeletePostRequest) (*BudgetGroupDeleteV30Response, *http.Response, error) {
+func (a *BudgetGroupDeleteV30ApiService) postExecute(r *ApiOpenApiV30BudgetGroupDeletePostRequest) (*models.BudgetGroupDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BudgetGroupDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BudgetGroupDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -85,7 +86,7 @@ func (a *BudgetGroupDeleteV30ApiService) postExecute(r *ApiOpenApiV30BudgetGroup
 	localVarPath := localBasePath + "/open_api/v3.0/budget_group/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

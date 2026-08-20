@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoAgentV2ApiService FileVideoAgentV2Api service
@@ -29,8 +30,8 @@ type ApiOpenApi2FileVideoAgentPostRequest struct {
 	fileName       *string
 	isNeedAuth     *bool
 	isAigc         *bool
-	uploadType     *FileVideoAgentV2UploadType
-	videoFile      *FormFileInfo
+	uploadType     *models.FileVideoAgentV2UploadType
+	videoFile      *models.FormFileInfo
 	videoSignature *string
 	videoUrl       *string
 }
@@ -59,13 +60,13 @@ func (r *ApiOpenApi2FileVideoAgentPostRequest) IsAigc(isAigc bool) *ApiOpenApi2F
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoAgentPostRequest) UploadType(uploadType FileVideoAgentV2UploadType) *ApiOpenApi2FileVideoAgentPostRequest {
+func (r *ApiOpenApi2FileVideoAgentPostRequest) UploadType(uploadType models.FileVideoAgentV2UploadType) *ApiOpenApi2FileVideoAgentPostRequest {
 	r.uploadType = &uploadType
 	return r
 }
 
 // 文件数据
-func (r *ApiOpenApi2FileVideoAgentPostRequest) VideoFile(videoFile *FormFileInfo) *ApiOpenApi2FileVideoAgentPostRequest {
+func (r *ApiOpenApi2FileVideoAgentPostRequest) VideoFile(videoFile *models.FormFileInfo) *ApiOpenApi2FileVideoAgentPostRequest {
 	r.videoFile = videoFile
 	return r
 }
@@ -82,7 +83,7 @@ func (r *ApiOpenApi2FileVideoAgentPostRequest) VideoUrl(videoUrl string) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoAgentPostRequest) Execute() (*FileVideoAgentV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoAgentPostRequest) Execute() (*models.FileVideoAgentV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -116,12 +117,12 @@ func (a *FileVideoAgentV2ApiService) Post(ctx context.Context) *ApiOpenApi2FileV
 // Execute executes the request
 //
 //	@return FileVideoAgentV2Response
-func (a *FileVideoAgentV2ApiService) postExecute(r *ApiOpenApi2FileVideoAgentPostRequest) (*FileVideoAgentV2Response, *http.Response, error) {
+func (a *FileVideoAgentV2ApiService) postExecute(r *ApiOpenApi2FileVideoAgentPostRequest) (*models.FileVideoAgentV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoAgentV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoAgentV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -131,7 +132,7 @@ func (a *FileVideoAgentV2ApiService) postExecute(r *ApiOpenApi2FileVideoAgentPos
 	localVarPath := localBasePath + "/open_api/2/file/video/agent/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalProjectDetailV30ApiService LocalProjectDetailV30Api service
@@ -40,7 +41,7 @@ func (r *ApiOpenApiV30LocalProjectDetailGetRequest) ProjectId(projectId int64) *
 	return r
 }
 
-func (r *ApiOpenApiV30LocalProjectDetailGetRequest) Execute() (*LocalProjectDetailV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalProjectDetailGetRequest) Execute() (*models.LocalProjectDetailV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *LocalProjectDetailV30ApiService) Get(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return LocalProjectDetailV30Response
-func (a *LocalProjectDetailV30ApiService) getExecute(r *ApiOpenApiV30LocalProjectDetailGetRequest) (*LocalProjectDetailV30Response, *http.Response, error) {
+func (a *LocalProjectDetailV30ApiService) getExecute(r *ApiOpenApiV30LocalProjectDetailGetRequest) (*models.LocalProjectDetailV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalProjectDetailV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalProjectDetailV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *LocalProjectDetailV30ApiService) getExecute(r *ApiOpenApiV30LocalProjec
 	localVarPath := localBasePath + "/open_api/v3.0/local/project/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

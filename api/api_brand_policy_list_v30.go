@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandPolicyListV30ApiService BrandPolicyListV30Api service
@@ -26,16 +27,16 @@ type ApiOpenApiV30BrandPolicyListGetRequest struct {
 	ctx           context.Context
 	ApiService    *BrandPolicyListV30ApiService
 	advertiserId  *int64
-	classify      *BrandPolicyListV30Classify
-	proType       *BrandPolicyListV30ProType
-	adForm        *BrandPolicyListV30AdForm
-	appOrigin     *BrandPolicyListV30AppOrigin
-	pricingType   *BrandPolicyListV30PricingType
-	gdSendType    *BrandPolicyListV30GdSendType
-	deliveryInfo  *BrandPolicyListV30DeliveryInfo
+	classify      *models.BrandPolicyListV30Classify
+	proType       *models.BrandPolicyListV30ProType
+	adForm        *models.BrandPolicyListV30AdForm
+	appOrigin     *models.BrandPolicyListV30AppOrigin
+	pricingType   *models.BrandPolicyListV30PricingType
+	gdSendType    *models.BrandPolicyListV30GdSendType
+	deliveryInfo  *models.BrandPolicyListV30DeliveryInfo
 	intentionNo   *string
-	audienceInfo  *BrandPolicyListV30AudienceInfo
-	frequencyInfo *BrandPolicyListV30FrequencyInfo
+	audienceInfo  *models.BrandPolicyListV30AudienceInfo
+	frequencyInfo *models.BrandPolicyListV30FrequencyInfo
 }
 
 // 广告主ID
@@ -45,43 +46,43 @@ func (r *ApiOpenApiV30BrandPolicyListGetRequest) AdvertiserId(advertiserId int64
 }
 
 // 广告类别
-func (r *ApiOpenApiV30BrandPolicyListGetRequest) Classify(classify BrandPolicyListV30Classify) *ApiOpenApiV30BrandPolicyListGetRequest {
+func (r *ApiOpenApiV30BrandPolicyListGetRequest) Classify(classify models.BrandPolicyListV30Classify) *ApiOpenApiV30BrandPolicyListGetRequest {
 	r.classify = &classify
 	return r
 }
 
 // 产品类型
-func (r *ApiOpenApiV30BrandPolicyListGetRequest) ProType(proType BrandPolicyListV30ProType) *ApiOpenApiV30BrandPolicyListGetRequest {
+func (r *ApiOpenApiV30BrandPolicyListGetRequest) ProType(proType models.BrandPolicyListV30ProType) *ApiOpenApiV30BrandPolicyListGetRequest {
 	r.proType = &proType
 	return r
 }
 
 // 投放产品
-func (r *ApiOpenApiV30BrandPolicyListGetRequest) AdForm(adForm BrandPolicyListV30AdForm) *ApiOpenApiV30BrandPolicyListGetRequest {
+func (r *ApiOpenApiV30BrandPolicyListGetRequest) AdForm(adForm models.BrandPolicyListV30AdForm) *ApiOpenApiV30BrandPolicyListGetRequest {
 	r.adForm = &adForm
 	return r
 }
 
 // 投放位置（媒体端）
-func (r *ApiOpenApiV30BrandPolicyListGetRequest) AppOrigin(appOrigin BrandPolicyListV30AppOrigin) *ApiOpenApiV30BrandPolicyListGetRequest {
+func (r *ApiOpenApiV30BrandPolicyListGetRequest) AppOrigin(appOrigin models.BrandPolicyListV30AppOrigin) *ApiOpenApiV30BrandPolicyListGetRequest {
 	r.appOrigin = &appOrigin
 	return r
 }
 
 // 计费类型
-func (r *ApiOpenApiV30BrandPolicyListGetRequest) PricingType(pricingType BrandPolicyListV30PricingType) *ApiOpenApiV30BrandPolicyListGetRequest {
+func (r *ApiOpenApiV30BrandPolicyListGetRequest) PricingType(pricingType models.BrandPolicyListV30PricingType) *ApiOpenApiV30BrandPolicyListGetRequest {
 	r.pricingType = &pricingType
 	return r
 }
 
 // 优化目标
-func (r *ApiOpenApiV30BrandPolicyListGetRequest) GdSendType(gdSendType BrandPolicyListV30GdSendType) *ApiOpenApiV30BrandPolicyListGetRequest {
+func (r *ApiOpenApiV30BrandPolicyListGetRequest) GdSendType(gdSendType models.BrandPolicyListV30GdSendType) *ApiOpenApiV30BrandPolicyListGetRequest {
 	r.gdSendType = &gdSendType
 	return r
 }
 
 // 投放日期信息
-func (r *ApiOpenApiV30BrandPolicyListGetRequest) DeliveryInfo(deliveryInfo BrandPolicyListV30DeliveryInfo) *ApiOpenApiV30BrandPolicyListGetRequest {
+func (r *ApiOpenApiV30BrandPolicyListGetRequest) DeliveryInfo(deliveryInfo models.BrandPolicyListV30DeliveryInfo) *ApiOpenApiV30BrandPolicyListGetRequest {
 	r.deliveryInfo = &deliveryInfo
 	return r
 }
@@ -93,18 +94,18 @@ func (r *ApiOpenApiV30BrandPolicyListGetRequest) IntentionNo(intentionNo string)
 }
 
 // 定向
-func (r *ApiOpenApiV30BrandPolicyListGetRequest) AudienceInfo(audienceInfo BrandPolicyListV30AudienceInfo) *ApiOpenApiV30BrandPolicyListGetRequest {
+func (r *ApiOpenApiV30BrandPolicyListGetRequest) AudienceInfo(audienceInfo models.BrandPolicyListV30AudienceInfo) *ApiOpenApiV30BrandPolicyListGetRequest {
 	r.audienceInfo = &audienceInfo
 	return r
 }
 
 // 频控
-func (r *ApiOpenApiV30BrandPolicyListGetRequest) FrequencyInfo(frequencyInfo BrandPolicyListV30FrequencyInfo) *ApiOpenApiV30BrandPolicyListGetRequest {
+func (r *ApiOpenApiV30BrandPolicyListGetRequest) FrequencyInfo(frequencyInfo models.BrandPolicyListV30FrequencyInfo) *ApiOpenApiV30BrandPolicyListGetRequest {
 	r.frequencyInfo = &frequencyInfo
 	return r
 }
 
-func (r *ApiOpenApiV30BrandPolicyListGetRequest) Execute() (*BrandPolicyListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandPolicyListGetRequest) Execute() (*models.BrandPolicyListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -138,12 +139,12 @@ func (a *BrandPolicyListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Br
 // Execute executes the request
 //
 //	@return BrandPolicyListV30Response
-func (a *BrandPolicyListV30ApiService) getExecute(r *ApiOpenApiV30BrandPolicyListGetRequest) (*BrandPolicyListV30Response, *http.Response, error) {
+func (a *BrandPolicyListV30ApiService) getExecute(r *ApiOpenApiV30BrandPolicyListGetRequest) (*models.BrandPolicyListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandPolicyListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandPolicyListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -153,7 +154,7 @@ func (a *BrandPolicyListV30ApiService) getExecute(r *ApiOpenApiV30BrandPolicyLis
 	localVarPath := localBasePath + "/open_api/v3.0/brand/policy/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

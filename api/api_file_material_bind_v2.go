@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileMaterialBindV2ApiService FileMaterialBindV2Api service
@@ -25,15 +26,15 @@ type FileMaterialBindV2ApiService service
 type ApiOpenApi2FileMaterialBindPostRequest struct {
 	ctx                       context.Context
 	ApiService                *FileMaterialBindV2ApiService
-	fileMaterialBindV2Request *FileMaterialBindV2Request
+	fileMaterialBindV2Request *models.FileMaterialBindV2Request
 }
 
-func (r *ApiOpenApi2FileMaterialBindPostRequest) FileMaterialBindV2Request(fileMaterialBindV2Request FileMaterialBindV2Request) *ApiOpenApi2FileMaterialBindPostRequest {
+func (r *ApiOpenApi2FileMaterialBindPostRequest) FileMaterialBindV2Request(fileMaterialBindV2Request models.FileMaterialBindV2Request) *ApiOpenApi2FileMaterialBindPostRequest {
 	r.fileMaterialBindV2Request = &fileMaterialBindV2Request
 	return r
 }
 
-func (r *ApiOpenApi2FileMaterialBindPostRequest) Execute() (*FileMaterialBindV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileMaterialBindPostRequest) Execute() (*models.FileMaterialBindV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *FileMaterialBindV2ApiService) Post(ctx context.Context) *ApiOpenApi2Fil
 // Execute executes the request
 //
 //	@return FileMaterialBindV2Response
-func (a *FileMaterialBindV2ApiService) postExecute(r *ApiOpenApi2FileMaterialBindPostRequest) (*FileMaterialBindV2Response, *http.Response, error) {
+func (a *FileMaterialBindV2ApiService) postExecute(r *ApiOpenApi2FileMaterialBindPostRequest) (*models.FileMaterialBindV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileMaterialBindV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileMaterialBindV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *FileMaterialBindV2ApiService) postExecute(r *ApiOpenApi2FileMaterialBin
 	localVarPath := localBasePath + "/open_api/2/file/material/bind/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniAwemeSuggestRoiV10ApiService QianchuanUniAwemeSuggestRoiV10Api service
@@ -26,13 +27,13 @@ type ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest struct {
 	ctx                context.Context
 	ApiService         *QianchuanUniAwemeSuggestRoiV10ApiService
 	advertiserId       *int64
-	marketingGoal      *QianchuanUniAwemeSuggestRoiV10MarketingGoal
+	marketingGoal      *models.QianchuanUniAwemeSuggestRoiV10MarketingGoal
 	awemeId            *int64
-	deepExternalAction *QianchuanUniAwemeSuggestRoiV10DeepExternalAction
+	deepExternalAction *models.QianchuanUniAwemeSuggestRoiV10DeepExternalAction
 	productIds         *[]int64
 	adId               *int64
 	taskId             *int64
-	scene              *QianchuanUniAwemeSuggestRoiV10Scene
+	scene              *models.QianchuanUniAwemeSuggestRoiV10Scene
 }
 
 func (r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest {
@@ -40,7 +41,7 @@ func (r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) AdvertiserId(advert
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) MarketingGoal(marketingGoal QianchuanUniAwemeSuggestRoiV10MarketingGoal) *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest {
+func (r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) MarketingGoal(marketingGoal models.QianchuanUniAwemeSuggestRoiV10MarketingGoal) *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
@@ -50,7 +51,7 @@ func (r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) AwemeId(awemeId int
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) DeepExternalAction(deepExternalAction QianchuanUniAwemeSuggestRoiV10DeepExternalAction) *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest {
+func (r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) DeepExternalAction(deepExternalAction models.QianchuanUniAwemeSuggestRoiV10DeepExternalAction) *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest {
 	r.deepExternalAction = &deepExternalAction
 	return r
 }
@@ -70,12 +71,12 @@ func (r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) TaskId(taskId int64
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) Scene(scene QianchuanUniAwemeSuggestRoiV10Scene) *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest {
+func (r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) Scene(scene models.QianchuanUniAwemeSuggestRoiV10Scene) *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest {
 	r.scene = &scene
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) Execute() (*QianchuanUniAwemeSuggestRoiV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) Execute() (*models.QianchuanUniAwemeSuggestRoiV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -109,12 +110,12 @@ func (a *QianchuanUniAwemeSuggestRoiV10ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return QianchuanUniAwemeSuggestRoiV10Response
-func (a *QianchuanUniAwemeSuggestRoiV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) (*QianchuanUniAwemeSuggestRoiV10Response, *http.Response, error) {
+func (a *QianchuanUniAwemeSuggestRoiV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniAwemeSuggestRoiGetRequest) (*models.QianchuanUniAwemeSuggestRoiV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniAwemeSuggestRoiV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniAwemeSuggestRoiV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -124,7 +125,7 @@ func (a *QianchuanUniAwemeSuggestRoiV10ApiService) getExecute(r *ApiOpenApiV10Qi
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_aweme/suggest/roi/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

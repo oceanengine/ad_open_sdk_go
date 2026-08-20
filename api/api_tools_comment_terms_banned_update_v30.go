@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsCommentTermsBannedUpdateV30ApiService ToolsCommentTermsBannedUpdateV30Api service
@@ -25,15 +26,15 @@ type ToolsCommentTermsBannedUpdateV30ApiService service
 type ApiOpenApiV30ToolsCommentTermsBannedUpdatePostRequest struct {
 	ctx                                     context.Context
 	ApiService                              *ToolsCommentTermsBannedUpdateV30ApiService
-	toolsCommentTermsBannedUpdateV30Request *ToolsCommentTermsBannedUpdateV30Request
+	toolsCommentTermsBannedUpdateV30Request *models.ToolsCommentTermsBannedUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsCommentTermsBannedUpdatePostRequest) ToolsCommentTermsBannedUpdateV30Request(toolsCommentTermsBannedUpdateV30Request ToolsCommentTermsBannedUpdateV30Request) *ApiOpenApiV30ToolsCommentTermsBannedUpdatePostRequest {
+func (r *ApiOpenApiV30ToolsCommentTermsBannedUpdatePostRequest) ToolsCommentTermsBannedUpdateV30Request(toolsCommentTermsBannedUpdateV30Request models.ToolsCommentTermsBannedUpdateV30Request) *ApiOpenApiV30ToolsCommentTermsBannedUpdatePostRequest {
 	r.toolsCommentTermsBannedUpdateV30Request = &toolsCommentTermsBannedUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsCommentTermsBannedUpdatePostRequest) Execute() (*ToolsCommentTermsBannedUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsCommentTermsBannedUpdatePostRequest) Execute() (*models.ToolsCommentTermsBannedUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsCommentTermsBannedUpdateV30ApiService) Post(ctx context.Context) *
 // Execute executes the request
 //
 //	@return ToolsCommentTermsBannedUpdateV30Response
-func (a *ToolsCommentTermsBannedUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsCommentTermsBannedUpdatePostRequest) (*ToolsCommentTermsBannedUpdateV30Response, *http.Response, error) {
+func (a *ToolsCommentTermsBannedUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsCommentTermsBannedUpdatePostRequest) (*models.ToolsCommentTermsBannedUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsCommentTermsBannedUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsCommentTermsBannedUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsCommentTermsBannedUpdateV30ApiService) postExecute(r *ApiOpenApiV3
 	localVarPath := localBasePath + "/open_api/v3.0/tools/comment/terms_banned/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

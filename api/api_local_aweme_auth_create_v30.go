@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalAwemeAuthCreateV30ApiService LocalAwemeAuthCreateV30Api service
@@ -25,15 +26,15 @@ type LocalAwemeAuthCreateV30ApiService service
 type ApiOpenApiV30LocalAwemeAuthCreatePostRequest struct {
 	ctx                            context.Context
 	ApiService                     *LocalAwemeAuthCreateV30ApiService
-	localAwemeAuthCreateV30Request *LocalAwemeAuthCreateV30Request
+	localAwemeAuthCreateV30Request *models.LocalAwemeAuthCreateV30Request
 }
 
-func (r *ApiOpenApiV30LocalAwemeAuthCreatePostRequest) LocalAwemeAuthCreateV30Request(localAwemeAuthCreateV30Request LocalAwemeAuthCreateV30Request) *ApiOpenApiV30LocalAwemeAuthCreatePostRequest {
+func (r *ApiOpenApiV30LocalAwemeAuthCreatePostRequest) LocalAwemeAuthCreateV30Request(localAwemeAuthCreateV30Request models.LocalAwemeAuthCreateV30Request) *ApiOpenApiV30LocalAwemeAuthCreatePostRequest {
 	r.localAwemeAuthCreateV30Request = &localAwemeAuthCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30LocalAwemeAuthCreatePostRequest) Execute() (*LocalAwemeAuthCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalAwemeAuthCreatePostRequest) Execute() (*models.LocalAwemeAuthCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *LocalAwemeAuthCreateV30ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return LocalAwemeAuthCreateV30Response
-func (a *LocalAwemeAuthCreateV30ApiService) postExecute(r *ApiOpenApiV30LocalAwemeAuthCreatePostRequest) (*LocalAwemeAuthCreateV30Response, *http.Response, error) {
+func (a *LocalAwemeAuthCreateV30ApiService) postExecute(r *ApiOpenApiV30LocalAwemeAuthCreatePostRequest) (*models.LocalAwemeAuthCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalAwemeAuthCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalAwemeAuthCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *LocalAwemeAuthCreateV30ApiService) postExecute(r *ApiOpenApiV30LocalAwe
 	localVarPath := localBasePath + "/open_api/v3.0/local/aweme_auth/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

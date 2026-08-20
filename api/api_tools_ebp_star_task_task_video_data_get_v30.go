@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpStarTaskTaskVideoDataGetV30ApiService ToolsEbpStarTaskTaskVideoDataGetV30Api service
@@ -26,13 +27,13 @@ type ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *ToolsEbpStarTaskTaskVideoDataGetV30ApiService
 	accountId   *int64
-	accountType *ToolsEbpStarTaskTaskVideoDataGetV30AccountType
+	accountType *models.ToolsEbpStarTaskTaskVideoDataGetV30AccountType
 	starTaskId  *int64
 	startDate   *string
 	endDate     *string
-	filtering   *ToolsEbpStarTaskTaskVideoDataGetV30Filtering
+	filtering   *models.ToolsEbpStarTaskTaskVideoDataGetV30Filtering
 	orderField  *string
-	orderType   *ToolsEbpStarTaskTaskVideoDataGetV30OrderType
+	orderType   *models.ToolsEbpStarTaskTaskVideoDataGetV30OrderType
 	page        *int32
 	pageSize    *int32
 }
@@ -42,7 +43,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) AccountId(acco
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) AccountType(accountType ToolsEbpStarTaskTaskVideoDataGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) AccountType(accountType models.ToolsEbpStarTaskTaskVideoDataGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -65,7 +66,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) EndDate(endDat
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) Filtering(filtering ToolsEbpStarTaskTaskVideoDataGetV30Filtering) *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) Filtering(filtering models.ToolsEbpStarTaskTaskVideoDataGetV30Filtering) *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -76,7 +77,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) OrderField(ord
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) OrderType(orderType ToolsEbpStarTaskTaskVideoDataGetV30OrderType) *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) OrderType(orderType models.ToolsEbpStarTaskTaskVideoDataGetV30OrderType) *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -93,7 +94,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) PageSize(pageS
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) Execute() (*ToolsEbpStarTaskTaskVideoDataGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) Execute() (*models.ToolsEbpStarTaskTaskVideoDataGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -127,12 +128,12 @@ func (a *ToolsEbpStarTaskTaskVideoDataGetV30ApiService) Get(ctx context.Context)
 // Execute executes the request
 //
 //	@return ToolsEbpStarTaskTaskVideoDataGetV30Response
-func (a *ToolsEbpStarTaskTaskVideoDataGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) (*ToolsEbpStarTaskTaskVideoDataGetV30Response, *http.Response, error) {
+func (a *ToolsEbpStarTaskTaskVideoDataGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpStarTaskTaskVideoDataGetGetRequest) (*models.ToolsEbpStarTaskTaskVideoDataGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpStarTaskTaskVideoDataGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpStarTaskTaskVideoDataGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -142,7 +143,7 @@ func (a *ToolsEbpStarTaskTaskVideoDataGetV30ApiService) getExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/star_task/task_video_data/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsRtaGetInfoV2ApiService ToolsRtaGetInfoV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2ToolsRtaGetInfoGetRequest struct {
 	ApiService   *ToolsRtaGetInfoV2ApiService
 	advertiserId *int64
 	campaignId   *int64
-	accountType  *ToolsRtaGetInfoV2AccountType
+	accountType  *models.ToolsRtaGetInfoV2AccountType
 }
 
 // 广告账户id
@@ -43,12 +44,12 @@ func (r *ApiOpenApi2ToolsRtaGetInfoGetRequest) CampaignId(campaignId int64) *Api
 }
 
 // 账户类型，默认值为AD，允许值： AD 表示入参advertiser_id为巨量广告账户ID STAR 表示入参advertiser_id为星图账户ID
-func (r *ApiOpenApi2ToolsRtaGetInfoGetRequest) AccountType(accountType ToolsRtaGetInfoV2AccountType) *ApiOpenApi2ToolsRtaGetInfoGetRequest {
+func (r *ApiOpenApi2ToolsRtaGetInfoGetRequest) AccountType(accountType models.ToolsRtaGetInfoV2AccountType) *ApiOpenApi2ToolsRtaGetInfoGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsRtaGetInfoGetRequest) Execute() (*ToolsRtaGetInfoV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsRtaGetInfoGetRequest) Execute() (*models.ToolsRtaGetInfoV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *ToolsRtaGetInfoV2ApiService) Get(ctx context.Context) *ApiOpenApi2Tools
 // Execute executes the request
 //
 //	@return ToolsRtaGetInfoV2Response
-func (a *ToolsRtaGetInfoV2ApiService) getExecute(r *ApiOpenApi2ToolsRtaGetInfoGetRequest) (*ToolsRtaGetInfoV2Response, *http.Response, error) {
+func (a *ToolsRtaGetInfoV2ApiService) getExecute(r *ApiOpenApi2ToolsRtaGetInfoGetRequest) (*models.ToolsRtaGetInfoV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsRtaGetInfoV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsRtaGetInfoV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *ToolsRtaGetInfoV2ApiService) getExecute(r *ApiOpenApi2ToolsRtaGetInfoGe
 	localVarPath := localBasePath + "/open_api/2/tools/rta/get_info/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

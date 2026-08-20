@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OcProjectToolsAudienceDeleteV30ApiService OcProjectToolsAudienceDeleteV30Api service
@@ -25,15 +26,15 @@ type OcProjectToolsAudienceDeleteV30ApiService service
 type ApiOpenApiV30OcProjectToolsAudienceDeletePostRequest struct {
 	ctx                                    context.Context
 	ApiService                             *OcProjectToolsAudienceDeleteV30ApiService
-	ocProjectToolsAudienceDeleteV30Request *OcProjectToolsAudienceDeleteV30Request
+	ocProjectToolsAudienceDeleteV30Request *models.OcProjectToolsAudienceDeleteV30Request
 }
 
-func (r *ApiOpenApiV30OcProjectToolsAudienceDeletePostRequest) OcProjectToolsAudienceDeleteV30Request(ocProjectToolsAudienceDeleteV30Request OcProjectToolsAudienceDeleteV30Request) *ApiOpenApiV30OcProjectToolsAudienceDeletePostRequest {
+func (r *ApiOpenApiV30OcProjectToolsAudienceDeletePostRequest) OcProjectToolsAudienceDeleteV30Request(ocProjectToolsAudienceDeleteV30Request models.OcProjectToolsAudienceDeleteV30Request) *ApiOpenApiV30OcProjectToolsAudienceDeletePostRequest {
 	r.ocProjectToolsAudienceDeleteV30Request = &ocProjectToolsAudienceDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30OcProjectToolsAudienceDeletePostRequest) Execute() (*OcProjectToolsAudienceDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OcProjectToolsAudienceDeletePostRequest) Execute() (*models.OcProjectToolsAudienceDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *OcProjectToolsAudienceDeleteV30ApiService) Post(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return OcProjectToolsAudienceDeleteV30Response
-func (a *OcProjectToolsAudienceDeleteV30ApiService) postExecute(r *ApiOpenApiV30OcProjectToolsAudienceDeletePostRequest) (*OcProjectToolsAudienceDeleteV30Response, *http.Response, error) {
+func (a *OcProjectToolsAudienceDeleteV30ApiService) postExecute(r *ApiOpenApiV30OcProjectToolsAudienceDeletePostRequest) (*models.OcProjectToolsAudienceDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OcProjectToolsAudienceDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OcProjectToolsAudienceDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *OcProjectToolsAudienceDeleteV30ApiService) postExecute(r *ApiOpenApiV30
 	localVarPath := localBasePath + "/open_api/v3.0/oc_project/tools_audience/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

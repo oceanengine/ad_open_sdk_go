@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpWechatAppletCreateV30ApiService ToolsEbpWechatAppletCreateV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpWechatAppletCreateV30ApiService service
 type ApiOpenApiV30ToolsEbpWechatAppletCreatePostRequest struct {
 	ctx                                  context.Context
 	ApiService                           *ToolsEbpWechatAppletCreateV30ApiService
-	toolsEbpWechatAppletCreateV30Request *ToolsEbpWechatAppletCreateV30Request
+	toolsEbpWechatAppletCreateV30Request *models.ToolsEbpWechatAppletCreateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpWechatAppletCreatePostRequest) ToolsEbpWechatAppletCreateV30Request(toolsEbpWechatAppletCreateV30Request ToolsEbpWechatAppletCreateV30Request) *ApiOpenApiV30ToolsEbpWechatAppletCreatePostRequest {
+func (r *ApiOpenApiV30ToolsEbpWechatAppletCreatePostRequest) ToolsEbpWechatAppletCreateV30Request(toolsEbpWechatAppletCreateV30Request models.ToolsEbpWechatAppletCreateV30Request) *ApiOpenApiV30ToolsEbpWechatAppletCreatePostRequest {
 	r.toolsEbpWechatAppletCreateV30Request = &toolsEbpWechatAppletCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpWechatAppletCreatePostRequest) Execute() (*ToolsEbpWechatAppletCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpWechatAppletCreatePostRequest) Execute() (*models.ToolsEbpWechatAppletCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpWechatAppletCreateV30ApiService) Post(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return ToolsEbpWechatAppletCreateV30Response
-func (a *ToolsEbpWechatAppletCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpWechatAppletCreatePostRequest) (*ToolsEbpWechatAppletCreateV30Response, *http.Response, error) {
+func (a *ToolsEbpWechatAppletCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpWechatAppletCreatePostRequest) (*models.ToolsEbpWechatAppletCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpWechatAppletCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpWechatAppletCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpWechatAppletCreateV30ApiService) postExecute(r *ApiOpenApiV30To
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/wechat_applet/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

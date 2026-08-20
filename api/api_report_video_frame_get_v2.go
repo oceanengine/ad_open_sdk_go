@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportVideoFrameGetV2ApiService ReportVideoFrameGetV2Api service
@@ -27,8 +28,8 @@ type ApiOpenApi2ReportVideoFrameGetGetRequest struct {
 	ApiService   *ReportVideoFrameGetV2ApiService
 	advertiserId *int64
 	endDate      **string
-	filtering    *ReportVideoFrameGetV2Filtering
-	metrics      *[]*ReportVideoFrameGetV2Metrics
+	filtering    *models.ReportVideoFrameGetV2Filtering
+	metrics      *[]*models.ReportVideoFrameGetV2Metrics
 	startDate    **string
 }
 
@@ -42,12 +43,12 @@ func (r *ApiOpenApi2ReportVideoFrameGetGetRequest) EndDate(endDate *string) *Api
 	return r
 }
 
-func (r *ApiOpenApi2ReportVideoFrameGetGetRequest) Filtering(filtering ReportVideoFrameGetV2Filtering) *ApiOpenApi2ReportVideoFrameGetGetRequest {
+func (r *ApiOpenApi2ReportVideoFrameGetGetRequest) Filtering(filtering models.ReportVideoFrameGetV2Filtering) *ApiOpenApi2ReportVideoFrameGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ReportVideoFrameGetGetRequest) Metrics(metrics []*ReportVideoFrameGetV2Metrics) *ApiOpenApi2ReportVideoFrameGetGetRequest {
+func (r *ApiOpenApi2ReportVideoFrameGetGetRequest) Metrics(metrics []*models.ReportVideoFrameGetV2Metrics) *ApiOpenApi2ReportVideoFrameGetGetRequest {
 	r.metrics = &metrics
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApi2ReportVideoFrameGetGetRequest) StartDate(startDate *string) 
 	return r
 }
 
-func (r *ApiOpenApi2ReportVideoFrameGetGetRequest) Execute() (*ReportVideoFrameGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ReportVideoFrameGetGetRequest) Execute() (*models.ReportVideoFrameGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ReportVideoFrameGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2R
 // Execute executes the request
 //
 //	@return ReportVideoFrameGetV2Response
-func (a *ReportVideoFrameGetV2ApiService) getExecute(r *ApiOpenApi2ReportVideoFrameGetGetRequest) (*ReportVideoFrameGetV2Response, *http.Response, error) {
+func (a *ReportVideoFrameGetV2ApiService) getExecute(r *ApiOpenApi2ReportVideoFrameGetGetRequest) (*models.ReportVideoFrameGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportVideoFrameGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportVideoFrameGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ReportVideoFrameGetV2ApiService) getExecute(r *ApiOpenApi2ReportVideoFr
 	localVarPath := localBasePath + "/open_api/2/report/video/frame/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

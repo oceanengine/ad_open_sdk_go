@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarVasCancelBoostItemGroupV2ApiService StarVasCancelBoostItemGroupV2Api service
@@ -25,15 +26,15 @@ type StarVasCancelBoostItemGroupV2ApiService service
 type ApiOpenApi2StarVasCancelBoostItemGroupPostRequest struct {
 	ctx                                  context.Context
 	ApiService                           *StarVasCancelBoostItemGroupV2ApiService
-	starVasCancelBoostItemGroupV2Request *StarVasCancelBoostItemGroupV2Request
+	starVasCancelBoostItemGroupV2Request *models.StarVasCancelBoostItemGroupV2Request
 }
 
-func (r *ApiOpenApi2StarVasCancelBoostItemGroupPostRequest) StarVasCancelBoostItemGroupV2Request(starVasCancelBoostItemGroupV2Request StarVasCancelBoostItemGroupV2Request) *ApiOpenApi2StarVasCancelBoostItemGroupPostRequest {
+func (r *ApiOpenApi2StarVasCancelBoostItemGroupPostRequest) StarVasCancelBoostItemGroupV2Request(starVasCancelBoostItemGroupV2Request models.StarVasCancelBoostItemGroupV2Request) *ApiOpenApi2StarVasCancelBoostItemGroupPostRequest {
 	r.starVasCancelBoostItemGroupV2Request = &starVasCancelBoostItemGroupV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarVasCancelBoostItemGroupPostRequest) Execute() (*StarVasCancelBoostItemGroupV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarVasCancelBoostItemGroupPostRequest) Execute() (*models.StarVasCancelBoostItemGroupV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarVasCancelBoostItemGroupV2ApiService) Post(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return StarVasCancelBoostItemGroupV2Response
-func (a *StarVasCancelBoostItemGroupV2ApiService) postExecute(r *ApiOpenApi2StarVasCancelBoostItemGroupPostRequest) (*StarVasCancelBoostItemGroupV2Response, *http.Response, error) {
+func (a *StarVasCancelBoostItemGroupV2ApiService) postExecute(r *ApiOpenApi2StarVasCancelBoostItemGroupPostRequest) (*models.StarVasCancelBoostItemGroupV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarVasCancelBoostItemGroupV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarVasCancelBoostItemGroupV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarVasCancelBoostItemGroupV2ApiService) postExecute(r *ApiOpenApi2Star
 	localVarPath := localBasePath + "/open_api/2/star/vas/cancel_boost_item_group/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

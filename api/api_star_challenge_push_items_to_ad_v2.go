@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarChallengePushItemsToAdV2ApiService StarChallengePushItemsToAdV2Api service
@@ -25,15 +26,15 @@ type StarChallengePushItemsToAdV2ApiService service
 type ApiOpenApi2StarChallengePushItemsToAdPostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *StarChallengePushItemsToAdV2ApiService
-	starChallengePushItemsToAdV2Request *StarChallengePushItemsToAdV2Request
+	starChallengePushItemsToAdV2Request *models.StarChallengePushItemsToAdV2Request
 }
 
-func (r *ApiOpenApi2StarChallengePushItemsToAdPostRequest) StarChallengePushItemsToAdV2Request(starChallengePushItemsToAdV2Request StarChallengePushItemsToAdV2Request) *ApiOpenApi2StarChallengePushItemsToAdPostRequest {
+func (r *ApiOpenApi2StarChallengePushItemsToAdPostRequest) StarChallengePushItemsToAdV2Request(starChallengePushItemsToAdV2Request models.StarChallengePushItemsToAdV2Request) *ApiOpenApi2StarChallengePushItemsToAdPostRequest {
 	r.starChallengePushItemsToAdV2Request = &starChallengePushItemsToAdV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarChallengePushItemsToAdPostRequest) Execute() (*StarChallengePushItemsToAdV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarChallengePushItemsToAdPostRequest) Execute() (*models.StarChallengePushItemsToAdV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarChallengePushItemsToAdV2ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return StarChallengePushItemsToAdV2Response
-func (a *StarChallengePushItemsToAdV2ApiService) postExecute(r *ApiOpenApi2StarChallengePushItemsToAdPostRequest) (*StarChallengePushItemsToAdV2Response, *http.Response, error) {
+func (a *StarChallengePushItemsToAdV2ApiService) postExecute(r *ApiOpenApi2StarChallengePushItemsToAdPostRequest) (*models.StarChallengePushItemsToAdV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarChallengePushItemsToAdV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarChallengePushItemsToAdV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarChallengePushItemsToAdV2ApiService) postExecute(r *ApiOpenApi2StarC
 	localVarPath := localBasePath + "/open_api/2/star/challenge/push_items_to_ad/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

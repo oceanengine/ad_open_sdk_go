@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentAdvPerenniallyPunishV2ApiService AgentAdvPerenniallyPunishV2Api service
@@ -25,15 +26,15 @@ type AgentAdvPerenniallyPunishV2ApiService service
 type ApiOpenApi2AgentAdvPerenniallyPunishPostRequest struct {
 	ctx                                context.Context
 	ApiService                         *AgentAdvPerenniallyPunishV2ApiService
-	agentAdvPerenniallyPunishV2Request *AgentAdvPerenniallyPunishV2Request
+	agentAdvPerenniallyPunishV2Request *models.AgentAdvPerenniallyPunishV2Request
 }
 
-func (r *ApiOpenApi2AgentAdvPerenniallyPunishPostRequest) AgentAdvPerenniallyPunishV2Request(agentAdvPerenniallyPunishV2Request AgentAdvPerenniallyPunishV2Request) *ApiOpenApi2AgentAdvPerenniallyPunishPostRequest {
+func (r *ApiOpenApi2AgentAdvPerenniallyPunishPostRequest) AgentAdvPerenniallyPunishV2Request(agentAdvPerenniallyPunishV2Request models.AgentAdvPerenniallyPunishV2Request) *ApiOpenApi2AgentAdvPerenniallyPunishPostRequest {
 	r.agentAdvPerenniallyPunishV2Request = &agentAdvPerenniallyPunishV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AgentAdvPerenniallyPunishPostRequest) Execute() (*AgentAdvPerenniallyPunishV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentAdvPerenniallyPunishPostRequest) Execute() (*models.AgentAdvPerenniallyPunishV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AgentAdvPerenniallyPunishV2ApiService) Post(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return AgentAdvPerenniallyPunishV2Response
-func (a *AgentAdvPerenniallyPunishV2ApiService) postExecute(r *ApiOpenApi2AgentAdvPerenniallyPunishPostRequest) (*AgentAdvPerenniallyPunishV2Response, *http.Response, error) {
+func (a *AgentAdvPerenniallyPunishV2ApiService) postExecute(r *ApiOpenApi2AgentAdvPerenniallyPunishPostRequest) (*models.AgentAdvPerenniallyPunishV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentAdvPerenniallyPunishV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentAdvPerenniallyPunishV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AgentAdvPerenniallyPunishV2ApiService) postExecute(r *ApiOpenApi2AgentA
 	localVarPath := localBasePath + "/open_api/2/agent/adv/perennially/punish/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

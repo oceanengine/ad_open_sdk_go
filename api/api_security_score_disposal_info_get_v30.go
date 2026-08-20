@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SecurityScoreDisposalInfoGetV30ApiService SecurityScoreDisposalInfoGetV30Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *SecurityScoreDisposalInfoGetV30ApiService
 	advertiserId *int64
-	businessLine *SecurityScoreDisposalInfoGetV30BusinessLine
-	filtering    *SecurityScoreDisposalInfoGetV30Filtering
+	businessLine *models.SecurityScoreDisposalInfoGetV30BusinessLine
+	filtering    *models.SecurityScoreDisposalInfoGetV30Filtering
 	page         *int64
 	pageSize     *int64
-	orderField   *SecurityScoreDisposalInfoGetV30OrderField
-	orderType    *SecurityScoreDisposalInfoGetV30OrderType
+	orderField   *models.SecurityScoreDisposalInfoGetV30OrderField
+	orderType    *models.SecurityScoreDisposalInfoGetV30OrderType
 }
 
 func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest {
@@ -40,13 +41,13 @@ func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) AdvertiserId(adver
 }
 
 // 业务线
-func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) BusinessLine(businessLine SecurityScoreDisposalInfoGetV30BusinessLine) *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest {
+func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) BusinessLine(businessLine models.SecurityScoreDisposalInfoGetV30BusinessLine) *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest {
 	r.businessLine = &businessLine
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) Filtering(filtering SecurityScoreDisposalInfoGetV30Filtering) *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest {
+func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) Filtering(filtering models.SecurityScoreDisposalInfoGetV30Filtering) *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -64,18 +65,18 @@ func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) PageSize(pageSize 
 }
 
 // 排序字段
-func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) OrderField(orderField SecurityScoreDisposalInfoGetV30OrderField) *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest {
+func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) OrderField(orderField models.SecurityScoreDisposalInfoGetV30OrderField) *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
 
 // 排序方式
-func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) OrderType(orderType SecurityScoreDisposalInfoGetV30OrderType) *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest {
+func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) OrderType(orderType models.SecurityScoreDisposalInfoGetV30OrderType) *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
 
-func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) Execute() (*SecurityScoreDisposalInfoGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) Execute() (*models.SecurityScoreDisposalInfoGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -109,12 +110,12 @@ func (a *SecurityScoreDisposalInfoGetV30ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return SecurityScoreDisposalInfoGetV30Response
-func (a *SecurityScoreDisposalInfoGetV30ApiService) getExecute(r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) (*SecurityScoreDisposalInfoGetV30Response, *http.Response, error) {
+func (a *SecurityScoreDisposalInfoGetV30ApiService) getExecute(r *ApiOpenApiV30SecurityScoreDisposalInfoGetGetRequest) (*models.SecurityScoreDisposalInfoGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SecurityScoreDisposalInfoGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SecurityScoreDisposalInfoGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -124,7 +125,7 @@ func (a *SecurityScoreDisposalInfoGetV30ApiService) getExecute(r *ApiOpenApiV30S
 	localVarPath := localBasePath + "/open_api/v3.0/security/score_disposal_info/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

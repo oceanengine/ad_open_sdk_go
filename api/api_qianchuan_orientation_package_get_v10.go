@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanOrientationPackageGetV10ApiService QianchuanOrientationPackageGetV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanOrientationPackageGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanOrientationPackageGetV10ApiService
 	advertiserId *int64
-	filtering    *QianchuanOrientationPackageGetV10Filtering
+	filtering    *models.QianchuanOrientationPackageGetV10Filtering
 	page         *int32
 	pageSize     *int32
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApiV10QianchuanOrientationPackageGetGetRequest) AdvertiserId(adv
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOrientationPackageGetGetRequest) Filtering(filtering QianchuanOrientationPackageGetV10Filtering) *ApiOpenApiV10QianchuanOrientationPackageGetGetRequest {
+func (r *ApiOpenApiV10QianchuanOrientationPackageGetGetRequest) Filtering(filtering models.QianchuanOrientationPackageGetV10Filtering) *ApiOpenApiV10QianchuanOrientationPackageGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV10QianchuanOrientationPackageGetGetRequest) PageSize(pageSiz
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOrientationPackageGetGetRequest) Execute() (*QianchuanOrientationPackageGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanOrientationPackageGetGetRequest) Execute() (*models.QianchuanOrientationPackageGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *QianchuanOrientationPackageGetV10ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return QianchuanOrientationPackageGetV10Response
-func (a *QianchuanOrientationPackageGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanOrientationPackageGetGetRequest) (*QianchuanOrientationPackageGetV10Response, *http.Response, error) {
+func (a *QianchuanOrientationPackageGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanOrientationPackageGetGetRequest) (*models.QianchuanOrientationPackageGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanOrientationPackageGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanOrientationPackageGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *QianchuanOrientationPackageGetV10ApiService) getExecute(r *ApiOpenApiV1
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/orientation_package/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

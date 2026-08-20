@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEventAssetsGetV2ApiService ToolsEventAssetsGetV2Api service
@@ -26,9 +27,9 @@ type ApiOpenApi2ToolsEventAssetsGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsEventAssetsGetV2ApiService
 	advertiserId *int64
-	assetType    *ToolsEventAssetsGetV2AssetType
-	filtering    *ToolsEventAssetsGetV2Filtering
-	sortType     *ToolsEventAssetsGetV2SortType
+	assetType    *models.ToolsEventAssetsGetV2AssetType
+	filtering    *models.ToolsEventAssetsGetV2Filtering
+	sortType     *models.ToolsEventAssetsGetV2SortType
 	page         *int64
 	pageSize     *int64
 }
@@ -40,19 +41,19 @@ func (r *ApiOpenApi2ToolsEventAssetsGetGetRequest) AdvertiserId(advertiserId int
 }
 
 // 资产类型，允许值:&#x60;THIRD_EXTERNAL&#x60;:三方落地页,&#x60;APP&#x60;:应用,&#x60;QUICK_APP&#x60;:快应用,&#x60;MINI_PROGRAME&#x60;:小程序
-func (r *ApiOpenApi2ToolsEventAssetsGetGetRequest) AssetType(assetType ToolsEventAssetsGetV2AssetType) *ApiOpenApi2ToolsEventAssetsGetGetRequest {
+func (r *ApiOpenApi2ToolsEventAssetsGetGetRequest) AssetType(assetType models.ToolsEventAssetsGetV2AssetType) *ApiOpenApi2ToolsEventAssetsGetGetRequest {
 	r.assetType = &assetType
 	return r
 }
 
 // 过滤条件
-func (r *ApiOpenApi2ToolsEventAssetsGetGetRequest) Filtering(filtering ToolsEventAssetsGetV2Filtering) *ApiOpenApi2ToolsEventAssetsGetGetRequest {
+func (r *ApiOpenApi2ToolsEventAssetsGetGetRequest) Filtering(filtering models.ToolsEventAssetsGetV2Filtering) *ApiOpenApi2ToolsEventAssetsGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
 // 排序方式，允许值：&#x60;ASC&#x60;：升序  &#x60;DESC&#x60;：降序&lt;br&gt;默认值&#x60;ASC&#x60;
-func (r *ApiOpenApi2ToolsEventAssetsGetGetRequest) SortType(sortType ToolsEventAssetsGetV2SortType) *ApiOpenApi2ToolsEventAssetsGetGetRequest {
+func (r *ApiOpenApi2ToolsEventAssetsGetGetRequest) SortType(sortType models.ToolsEventAssetsGetV2SortType) *ApiOpenApi2ToolsEventAssetsGetGetRequest {
 	r.sortType = &sortType
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApi2ToolsEventAssetsGetGetRequest) PageSize(pageSize int64) *Api
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEventAssetsGetGetRequest) Execute() (*ToolsEventAssetsGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsEventAssetsGetGetRequest) Execute() (*models.ToolsEventAssetsGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *ToolsEventAssetsGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2T
 // Execute executes the request
 //
 //	@return ToolsEventAssetsGetV2Response
-func (a *ToolsEventAssetsGetV2ApiService) getExecute(r *ApiOpenApi2ToolsEventAssetsGetGetRequest) (*ToolsEventAssetsGetV2Response, *http.Response, error) {
+func (a *ToolsEventAssetsGetV2ApiService) getExecute(r *ApiOpenApi2ToolsEventAssetsGetGetRequest) (*models.ToolsEventAssetsGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEventAssetsGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEventAssetsGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *ToolsEventAssetsGetV2ApiService) getExecute(r *ApiOpenApi2ToolsEventAss
 	localVarPath := localBasePath + "/open_api/2/tools/event/assets/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

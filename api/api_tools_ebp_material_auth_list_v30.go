@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpMaterialAuthListV30ApiService ToolsEbpMaterialAuthListV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsEbpMaterialAuthListV30ApiService
 	accountId    *int64
-	accountType  *ToolsEbpMaterialAuthListV30AccountType
-	materialType *ToolsEbpMaterialAuthListV30MaterialType
+	accountType  *models.ToolsEbpMaterialAuthListV30AccountType
+	materialType *models.ToolsEbpMaterialAuthListV30MaterialType
 	page         *int64
 	pageSize     *int32
 }
@@ -37,12 +38,12 @@ func (r *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest) AccountId(accountId in
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest) AccountType(accountType ToolsEbpMaterialAuthListV30AccountType) *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest) AccountType(accountType models.ToolsEbpMaterialAuthListV30AccountType) *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest) MaterialType(materialType ToolsEbpMaterialAuthListV30MaterialType) *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest) MaterialType(materialType models.ToolsEbpMaterialAuthListV30MaterialType) *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest {
 	r.materialType = &materialType
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest) PageSize(pageSize int3
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest) Execute() (*ToolsEbpMaterialAuthListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest) Execute() (*models.ToolsEbpMaterialAuthListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ToolsEbpMaterialAuthListV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsEbpMaterialAuthListV30Response
-func (a *ToolsEbpMaterialAuthListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest) (*ToolsEbpMaterialAuthListV30Response, *http.Response, error) {
+func (a *ToolsEbpMaterialAuthListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpMaterialAuthListGetRequest) (*models.ToolsEbpMaterialAuthListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpMaterialAuthListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpMaterialAuthListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ToolsEbpMaterialAuthListV30ApiService) getExecute(r *ApiOpenApiV30Tools
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/material/auth/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

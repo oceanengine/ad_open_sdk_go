@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanBrandReportAdvertiserGetV10ApiService QianchuanBrandReportAdvertiserGetV10Api service
@@ -29,10 +30,10 @@ type ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest struct {
 	startDate       *string
 	endDate         *string
 	fields          *[]string
-	filtering       *QianchuanBrandReportAdvertiserGetV10Filtering
-	timeGranularity *QianchuanBrandReportAdvertiserGetV10TimeGranularity
+	filtering       *models.QianchuanBrandReportAdvertiserGetV10Filtering
+	timeGranularity *models.QianchuanBrandReportAdvertiserGetV10TimeGranularity
 	orderField      *string
-	orderType       *QianchuanBrandReportAdvertiserGetV10OrderType
+	orderType       *models.QianchuanBrandReportAdvertiserGetV10OrderType
 	page            *int32
 	pageSize        *int32
 }
@@ -59,12 +60,12 @@ func (r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) Fields(fields
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) Filtering(filtering QianchuanBrandReportAdvertiserGetV10Filtering) *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest {
+func (r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) Filtering(filtering models.QianchuanBrandReportAdvertiserGetV10Filtering) *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) TimeGranularity(timeGranularity QianchuanBrandReportAdvertiserGetV10TimeGranularity) *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest {
+func (r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) TimeGranularity(timeGranularity models.QianchuanBrandReportAdvertiserGetV10TimeGranularity) *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest {
 	r.timeGranularity = &timeGranularity
 	return r
 }
@@ -74,7 +75,7 @@ func (r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) OrderField(or
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) OrderType(orderType QianchuanBrandReportAdvertiserGetV10OrderType) *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest {
+func (r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) OrderType(orderType models.QianchuanBrandReportAdvertiserGetV10OrderType) *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -89,7 +90,7 @@ func (r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) PageSize(page
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) Execute() (*QianchuanBrandReportAdvertiserGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) Execute() (*models.QianchuanBrandReportAdvertiserGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -123,12 +124,12 @@ func (a *QianchuanBrandReportAdvertiserGetV10ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return QianchuanBrandReportAdvertiserGetV10Response
-func (a *QianchuanBrandReportAdvertiserGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) (*QianchuanBrandReportAdvertiserGetV10Response, *http.Response, error) {
+func (a *QianchuanBrandReportAdvertiserGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanBrandReportAdvertiserGetGetRequest) (*models.QianchuanBrandReportAdvertiserGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanBrandReportAdvertiserGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanBrandReportAdvertiserGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -138,7 +139,7 @@ func (a *QianchuanBrandReportAdvertiserGetV10ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/brand/report/advertiser/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

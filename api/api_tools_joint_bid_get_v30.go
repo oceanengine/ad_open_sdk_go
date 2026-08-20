@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsJointBidGetV30ApiService ToolsJointBidGetV30Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApiV30ToolsJointBidGetGetRequest) AdvertiserId(advertiserId int6
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsJointBidGetGetRequest) Execute() (*ToolsJointBidGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsJointBidGetGetRequest) Execute() (*models.ToolsJointBidGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsJointBidGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30T
 // Execute executes the request
 //
 //	@return ToolsJointBidGetV30Response
-func (a *ToolsJointBidGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsJointBidGetGetRequest) (*ToolsJointBidGetV30Response, *http.Response, error) {
+func (a *ToolsJointBidGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsJointBidGetGetRequest) (*models.ToolsJointBidGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsJointBidGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsJointBidGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsJointBidGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsJointBid
 	localVarPath := localBasePath + "/open_api/v3.0/tools/joint_bid/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

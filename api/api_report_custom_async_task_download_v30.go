@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportCustomAsyncTaskDownloadV30ApiService ReportCustomAsyncTaskDownloadV30Api service
@@ -77,7 +78,7 @@ func (a *ReportCustomAsyncTaskDownloadV30ApiService) getExecute(r *ApiOpenApiV30
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
+		formFiles           map[string]*models.FormFileInfo
 		localVarReturnValue []byte
 	)
 
@@ -88,7 +89,7 @@ func (a *ReportCustomAsyncTaskDownloadV30ApiService) getExecute(r *ApiOpenApiV30
 	localVarPath := localBasePath + "/open_api/v3.0/report/custom/async_task/download/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

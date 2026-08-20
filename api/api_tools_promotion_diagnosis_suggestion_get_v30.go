@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPromotionDiagnosisSuggestionGetV30ApiService ToolsPromotionDiagnosisSuggestionGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest struct {
 	ApiService   *ToolsPromotionDiagnosisSuggestionGetV30ApiService
 	advertiserId *int64
 	promotionIds *[]int64
-	scenes       *[]*ToolsPromotionDiagnosisSuggestionGetV30Scenes
+	scenes       *[]*models.ToolsPromotionDiagnosisSuggestionGetV30Scenes
 }
 
 func (r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest {
@@ -40,12 +41,12 @@ func (r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest) PromotionI
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest) Scenes(scenes []*ToolsPromotionDiagnosisSuggestionGetV30Scenes) *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest {
+func (r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest) Scenes(scenes []*models.ToolsPromotionDiagnosisSuggestionGetV30Scenes) *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest {
 	r.scenes = &scenes
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest) Execute() (*ToolsPromotionDiagnosisSuggestionGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest) Execute() (*models.ToolsPromotionDiagnosisSuggestionGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *ToolsPromotionDiagnosisSuggestionGetV30ApiService) Get(ctx context.Cont
 // Execute executes the request
 //
 //	@return ToolsPromotionDiagnosisSuggestionGetV30Response
-func (a *ToolsPromotionDiagnosisSuggestionGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest) (*ToolsPromotionDiagnosisSuggestionGetV30Response, *http.Response, error) {
+func (a *ToolsPromotionDiagnosisSuggestionGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionGetGetRequest) (*models.ToolsPromotionDiagnosisSuggestionGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPromotionDiagnosisSuggestionGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPromotionDiagnosisSuggestionGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *ToolsPromotionDiagnosisSuggestionGetV30ApiService) getExecute(r *ApiOpe
 	localVarPath := localBasePath + "/open_api/v3.0/tools/promotion_diagnosis/suggestion/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

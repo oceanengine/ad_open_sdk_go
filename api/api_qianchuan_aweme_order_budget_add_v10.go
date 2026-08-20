@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeOrderBudgetAddV10ApiService QianchuanAwemeOrderBudgetAddV10Api service
@@ -25,15 +26,15 @@ type QianchuanAwemeOrderBudgetAddV10ApiService service
 type ApiOpenApiV10QianchuanAwemeOrderBudgetAddPostRequest struct {
 	ctx                                    context.Context
 	ApiService                             *QianchuanAwemeOrderBudgetAddV10ApiService
-	qianchuanAwemeOrderBudgetAddV10Request *QianchuanAwemeOrderBudgetAddV10Request
+	qianchuanAwemeOrderBudgetAddV10Request *models.QianchuanAwemeOrderBudgetAddV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeOrderBudgetAddPostRequest) QianchuanAwemeOrderBudgetAddV10Request(qianchuanAwemeOrderBudgetAddV10Request QianchuanAwemeOrderBudgetAddV10Request) *ApiOpenApiV10QianchuanAwemeOrderBudgetAddPostRequest {
+func (r *ApiOpenApiV10QianchuanAwemeOrderBudgetAddPostRequest) QianchuanAwemeOrderBudgetAddV10Request(qianchuanAwemeOrderBudgetAddV10Request models.QianchuanAwemeOrderBudgetAddV10Request) *ApiOpenApiV10QianchuanAwemeOrderBudgetAddPostRequest {
 	r.qianchuanAwemeOrderBudgetAddV10Request = &qianchuanAwemeOrderBudgetAddV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeOrderBudgetAddPostRequest) Execute() (*QianchuanAwemeOrderBudgetAddV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeOrderBudgetAddPostRequest) Execute() (*models.QianchuanAwemeOrderBudgetAddV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanAwemeOrderBudgetAddV10ApiService) Post(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return QianchuanAwemeOrderBudgetAddV10Response
-func (a *QianchuanAwemeOrderBudgetAddV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAwemeOrderBudgetAddPostRequest) (*QianchuanAwemeOrderBudgetAddV10Response, *http.Response, error) {
+func (a *QianchuanAwemeOrderBudgetAddV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAwemeOrderBudgetAddPostRequest) (*models.QianchuanAwemeOrderBudgetAddV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeOrderBudgetAddV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeOrderBudgetAddV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanAwemeOrderBudgetAddV10ApiService) postExecute(r *ApiOpenApiV10
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/order/budget/add/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

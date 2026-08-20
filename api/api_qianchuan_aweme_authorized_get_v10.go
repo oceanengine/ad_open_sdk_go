@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeAuthorizedGetV10ApiService QianchuanAwemeAuthorizedGetV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanAwemeAuthorizedGetV10ApiService
 	advertiserId *int64
-	filtering    *QianchuanAwemeAuthorizedGetV10Filtering
+	filtering    *models.QianchuanAwemeAuthorizedGetV10Filtering
 	page         *int32
 	pageSize     *int32
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) AdvertiserId(advert
 }
 
 // 过滤器
-func (r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) Filtering(filtering QianchuanAwemeAuthorizedGetV10Filtering) *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) Filtering(filtering models.QianchuanAwemeAuthorizedGetV10Filtering) *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) PageSize(pageSize i
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) Execute() (*QianchuanAwemeAuthorizedGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) Execute() (*models.QianchuanAwemeAuthorizedGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *QianchuanAwemeAuthorizedGetV10ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return QianchuanAwemeAuthorizedGetV10Response
-func (a *QianchuanAwemeAuthorizedGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) (*QianchuanAwemeAuthorizedGetV10Response, *http.Response, error) {
+func (a *QianchuanAwemeAuthorizedGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeAuthorizedGetGetRequest) (*models.QianchuanAwemeAuthorizedGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeAuthorizedGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeAuthorizedGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *QianchuanAwemeAuthorizedGetV10ApiService) getExecute(r *ApiOpenApiV10Qi
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/authorized/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

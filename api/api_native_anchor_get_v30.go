@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // NativeAnchorGetV30ApiService NativeAnchorGetV30Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV30NativeAnchorGetGetRequest struct {
 	advertiserId *int64
 	page         *int32
 	pageSize     *int32
-	filtering    *NativeAnchorGetV30Filtering
+	filtering    *models.NativeAnchorGetV30Filtering
 }
 
 func (r *ApiOpenApiV30NativeAnchorGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30NativeAnchorGetGetRequest {
@@ -46,12 +47,12 @@ func (r *ApiOpenApiV30NativeAnchorGetGetRequest) PageSize(pageSize int32) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApiV30NativeAnchorGetGetRequest) Filtering(filtering NativeAnchorGetV30Filtering) *ApiOpenApiV30NativeAnchorGetGetRequest {
+func (r *ApiOpenApiV30NativeAnchorGetGetRequest) Filtering(filtering models.NativeAnchorGetV30Filtering) *ApiOpenApiV30NativeAnchorGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30NativeAnchorGetGetRequest) Execute() (*NativeAnchorGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30NativeAnchorGetGetRequest) Execute() (*models.NativeAnchorGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *NativeAnchorGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Na
 // Execute executes the request
 //
 //	@return NativeAnchorGetV30Response
-func (a *NativeAnchorGetV30ApiService) getExecute(r *ApiOpenApiV30NativeAnchorGetGetRequest) (*NativeAnchorGetV30Response, *http.Response, error) {
+func (a *NativeAnchorGetV30ApiService) getExecute(r *ApiOpenApiV30NativeAnchorGetGetRequest) (*models.NativeAnchorGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *NativeAnchorGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.NativeAnchorGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *NativeAnchorGetV30ApiService) getExecute(r *ApiOpenApiV30NativeAnchorGe
 	localVarPath := localBasePath + "/open_api/v3.0/native_anchor/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

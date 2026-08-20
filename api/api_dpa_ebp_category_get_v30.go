@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaEbpCategoryGetV30ApiService DpaEbpCategoryGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30DpaEbpCategoryGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *DpaEbpCategoryGetV30ApiService
 	accountId   *int64
-	accountType *DpaEbpCategoryGetV30AccountType
+	accountType *models.DpaEbpCategoryGetV30AccountType
 	platformId  *int64
 }
 
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV30DpaEbpCategoryGetGetRequest) AccountId(accountId int64) *A
 }
 
 // 账户类型
-func (r *ApiOpenApiV30DpaEbpCategoryGetGetRequest) AccountType(accountType DpaEbpCategoryGetV30AccountType) *ApiOpenApiV30DpaEbpCategoryGetGetRequest {
+func (r *ApiOpenApiV30DpaEbpCategoryGetGetRequest) AccountType(accountType models.DpaEbpCategoryGetV30AccountType) *ApiOpenApiV30DpaEbpCategoryGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -48,7 +49,7 @@ func (r *ApiOpenApiV30DpaEbpCategoryGetGetRequest) PlatformId(platformId int64) 
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpCategoryGetGetRequest) Execute() (*DpaEbpCategoryGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaEbpCategoryGetGetRequest) Execute() (*models.DpaEbpCategoryGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *DpaEbpCategoryGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return DpaEbpCategoryGetV30Response
-func (a *DpaEbpCategoryGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpCategoryGetGetRequest) (*DpaEbpCategoryGetV30Response, *http.Response, error) {
+func (a *DpaEbpCategoryGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpCategoryGetGetRequest) (*models.DpaEbpCategoryGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaEbpCategoryGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaEbpCategoryGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *DpaEbpCategoryGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpCatego
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/ebp/category/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

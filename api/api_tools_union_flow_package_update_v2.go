@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsUnionFlowPackageUpdateV2ApiService ToolsUnionFlowPackageUpdateV2Api service
@@ -25,15 +26,15 @@ type ToolsUnionFlowPackageUpdateV2ApiService service
 type ApiOpenApi2ToolsUnionFlowPackageUpdatePostRequest struct {
 	ctx                                  context.Context
 	ApiService                           *ToolsUnionFlowPackageUpdateV2ApiService
-	toolsUnionFlowPackageUpdateV2Request *ToolsUnionFlowPackageUpdateV2Request
+	toolsUnionFlowPackageUpdateV2Request *models.ToolsUnionFlowPackageUpdateV2Request
 }
 
-func (r *ApiOpenApi2ToolsUnionFlowPackageUpdatePostRequest) ToolsUnionFlowPackageUpdateV2Request(toolsUnionFlowPackageUpdateV2Request ToolsUnionFlowPackageUpdateV2Request) *ApiOpenApi2ToolsUnionFlowPackageUpdatePostRequest {
+func (r *ApiOpenApi2ToolsUnionFlowPackageUpdatePostRequest) ToolsUnionFlowPackageUpdateV2Request(toolsUnionFlowPackageUpdateV2Request models.ToolsUnionFlowPackageUpdateV2Request) *ApiOpenApi2ToolsUnionFlowPackageUpdatePostRequest {
 	r.toolsUnionFlowPackageUpdateV2Request = &toolsUnionFlowPackageUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsUnionFlowPackageUpdatePostRequest) Execute() (*ToolsUnionFlowPackageUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsUnionFlowPackageUpdatePostRequest) Execute() (*models.ToolsUnionFlowPackageUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsUnionFlowPackageUpdateV2ApiService) Post(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return ToolsUnionFlowPackageUpdateV2Response
-func (a *ToolsUnionFlowPackageUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsUnionFlowPackageUpdatePostRequest) (*ToolsUnionFlowPackageUpdateV2Response, *http.Response, error) {
+func (a *ToolsUnionFlowPackageUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsUnionFlowPackageUpdatePostRequest) (*models.ToolsUnionFlowPackageUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsUnionFlowPackageUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsUnionFlowPackageUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsUnionFlowPackageUpdateV2ApiService) postExecute(r *ApiOpenApi2Tool
 	localVarPath := localBasePath + "/open_api/2/tools/union/flow_package/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

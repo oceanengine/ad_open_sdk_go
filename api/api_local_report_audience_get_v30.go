@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalReportAudienceGetV30ApiService LocalReportAudienceGetV30Api service
@@ -28,12 +29,12 @@ type ApiOpenApiV30LocalReportAudienceGetGetRequest struct {
 	localAccountId    *int64
 	startDate         *string
 	endDate           *string
-	audienceDimension *LocalReportAudienceGetV30AudienceDimension
-	dataDimension     *LocalReportAudienceGetV30DataDimension
+	audienceDimension *models.LocalReportAudienceGetV30AudienceDimension
+	dataDimension     *models.LocalReportAudienceGetV30DataDimension
 	fields            *[]string
-	orderType         *LocalReportAudienceGetV30OrderType
+	orderType         *models.LocalReportAudienceGetV30OrderType
 	orderField        *string
-	filtering         *LocalReportAudienceGetV30Filtering
+	filtering         *models.LocalReportAudienceGetV30Filtering
 	page              *int64
 	pageSize          *int64
 }
@@ -55,12 +56,12 @@ func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) EndDate(endDate string) 
 	return r
 }
 
-func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) AudienceDimension(audienceDimension LocalReportAudienceGetV30AudienceDimension) *ApiOpenApiV30LocalReportAudienceGetGetRequest {
+func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) AudienceDimension(audienceDimension models.LocalReportAudienceGetV30AudienceDimension) *ApiOpenApiV30LocalReportAudienceGetGetRequest {
 	r.audienceDimension = &audienceDimension
 	return r
 }
 
-func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) DataDimension(dataDimension LocalReportAudienceGetV30DataDimension) *ApiOpenApiV30LocalReportAudienceGetGetRequest {
+func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) DataDimension(dataDimension models.LocalReportAudienceGetV30DataDimension) *ApiOpenApiV30LocalReportAudienceGetGetRequest {
 	r.dataDimension = &dataDimension
 	return r
 }
@@ -71,7 +72,7 @@ func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) Fields(fields []string) 
 }
 
 // 排序方式
-func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) OrderType(orderType LocalReportAudienceGetV30OrderType) *ApiOpenApiV30LocalReportAudienceGetGetRequest {
+func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) OrderType(orderType models.LocalReportAudienceGetV30OrderType) *ApiOpenApiV30LocalReportAudienceGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -83,7 +84,7 @@ func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) OrderField(orderField st
 }
 
 // 过滤器
-func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) Filtering(filtering LocalReportAudienceGetV30Filtering) *ApiOpenApiV30LocalReportAudienceGetGetRequest {
+func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) Filtering(filtering models.LocalReportAudienceGetV30Filtering) *ApiOpenApiV30LocalReportAudienceGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -98,7 +99,7 @@ func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) PageSize(pageSize int64)
 	return r
 }
 
-func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) Execute() (*LocalReportAudienceGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalReportAudienceGetGetRequest) Execute() (*models.LocalReportAudienceGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -132,12 +133,12 @@ func (a *LocalReportAudienceGetV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return LocalReportAudienceGetV30Response
-func (a *LocalReportAudienceGetV30ApiService) getExecute(r *ApiOpenApiV30LocalReportAudienceGetGetRequest) (*LocalReportAudienceGetV30Response, *http.Response, error) {
+func (a *LocalReportAudienceGetV30ApiService) getExecute(r *ApiOpenApiV30LocalReportAudienceGetGetRequest) (*models.LocalReportAudienceGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalReportAudienceGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalReportAudienceGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -147,7 +148,7 @@ func (a *LocalReportAudienceGetV30ApiService) getExecute(r *ApiOpenApiV30LocalRe
 	localVarPath := localBasePath + "/open_api/v3.0/local/report/audience/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

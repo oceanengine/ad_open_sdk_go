@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10ApiService QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Api service
@@ -25,15 +26,15 @@ type QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10ApiService ser
 type ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlStatusUpdatePostRequest struct {
 	ctx                                                                  context.Context
 	ApiService                                                           *QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10ApiService
-	qianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request *QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request
+	qianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request *models.QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlStatusUpdatePostRequest) QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request(qianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlStatusUpdatePostRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlStatusUpdatePostRequest) QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request(qianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request models.QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlStatusUpdatePostRequest {
 	r.qianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request = &qianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlStatusUpdatePostRequest) Execute() (*QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlStatusUpdatePostRequest) Execute() (*models.QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10ApiService
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Response
-func (a *QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlStatusUpdatePostRequest) (*QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlStatusUpdatePostRequest) (*models.QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanUniPromotionAdControlTaskSmartControlStatusUpdateV10ApiService
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/control_task/smart_control/status/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

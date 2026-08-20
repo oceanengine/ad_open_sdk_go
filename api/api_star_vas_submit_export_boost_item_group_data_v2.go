@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarVasSubmitExportBoostItemGroupDataV2ApiService StarVasSubmitExportBoostItemGroupDataV2Api service
@@ -25,15 +26,15 @@ type StarVasSubmitExportBoostItemGroupDataV2ApiService service
 type ApiOpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest struct {
 	ctx                                            context.Context
 	ApiService                                     *StarVasSubmitExportBoostItemGroupDataV2ApiService
-	starVasSubmitExportBoostItemGroupDataV2Request *StarVasSubmitExportBoostItemGroupDataV2Request
+	starVasSubmitExportBoostItemGroupDataV2Request *models.StarVasSubmitExportBoostItemGroupDataV2Request
 }
 
-func (r *ApiOpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest) StarVasSubmitExportBoostItemGroupDataV2Request(starVasSubmitExportBoostItemGroupDataV2Request StarVasSubmitExportBoostItemGroupDataV2Request) *ApiOpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest {
+func (r *ApiOpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest) StarVasSubmitExportBoostItemGroupDataV2Request(starVasSubmitExportBoostItemGroupDataV2Request models.StarVasSubmitExportBoostItemGroupDataV2Request) *ApiOpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest {
 	r.starVasSubmitExportBoostItemGroupDataV2Request = &starVasSubmitExportBoostItemGroupDataV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest) Execute() (*StarVasSubmitExportBoostItemGroupDataV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest) Execute() (*models.StarVasSubmitExportBoostItemGroupDataV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarVasSubmitExportBoostItemGroupDataV2ApiService) Post(ctx context.Con
 // Execute executes the request
 //
 //	@return StarVasSubmitExportBoostItemGroupDataV2Response
-func (a *StarVasSubmitExportBoostItemGroupDataV2ApiService) postExecute(r *ApiOpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest) (*StarVasSubmitExportBoostItemGroupDataV2Response, *http.Response, error) {
+func (a *StarVasSubmitExportBoostItemGroupDataV2ApiService) postExecute(r *ApiOpenApi2StarVasSubmitExportBoostItemGroupDataPostRequest) (*models.StarVasSubmitExportBoostItemGroupDataV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarVasSubmitExportBoostItemGroupDataV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarVasSubmitExportBoostItemGroupDataV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarVasSubmitExportBoostItemGroupDataV2ApiService) postExecute(r *ApiOp
 	localVarPath := localBasePath + "/open_api/2/star/vas/submit_export_boost_item_group_data/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

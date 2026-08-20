@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementAndroidBasicPackageUpdateV2ApiService ToolsAppManagementAndroidBasicPackageUpdateV2Api service
@@ -25,15 +26,15 @@ type ToolsAppManagementAndroidBasicPackageUpdateV2ApiService service
 type ApiOpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest struct {
 	ctx                                                  context.Context
 	ApiService                                           *ToolsAppManagementAndroidBasicPackageUpdateV2ApiService
-	toolsAppManagementAndroidBasicPackageUpdateV2Request *ToolsAppManagementAndroidBasicPackageUpdateV2Request
+	toolsAppManagementAndroidBasicPackageUpdateV2Request *models.ToolsAppManagementAndroidBasicPackageUpdateV2Request
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest) ToolsAppManagementAndroidBasicPackageUpdateV2Request(toolsAppManagementAndroidBasicPackageUpdateV2Request ToolsAppManagementAndroidBasicPackageUpdateV2Request) *ApiOpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest {
+func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest) ToolsAppManagementAndroidBasicPackageUpdateV2Request(toolsAppManagementAndroidBasicPackageUpdateV2Request models.ToolsAppManagementAndroidBasicPackageUpdateV2Request) *ApiOpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest {
 	r.toolsAppManagementAndroidBasicPackageUpdateV2Request = &toolsAppManagementAndroidBasicPackageUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest) Execute() (*ToolsAppManagementAndroidBasicPackageUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest) Execute() (*models.ToolsAppManagementAndroidBasicPackageUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsAppManagementAndroidBasicPackageUpdateV2ApiService) Post(ctx conte
 // Execute executes the request
 //
 //	@return ToolsAppManagementAndroidBasicPackageUpdateV2Response
-func (a *ToolsAppManagementAndroidBasicPackageUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest) (*ToolsAppManagementAndroidBasicPackageUpdateV2Response, *http.Response, error) {
+func (a *ToolsAppManagementAndroidBasicPackageUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsAppManagementAndroidBasicPackageUpdatePostRequest) (*models.ToolsAppManagementAndroidBasicPackageUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementAndroidBasicPackageUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementAndroidBasicPackageUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsAppManagementAndroidBasicPackageUpdateV2ApiService) postExecute(r 
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/android_basic_package/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

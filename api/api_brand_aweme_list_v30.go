@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandAwemeListV30ApiService BrandAwemeListV30Api service
@@ -34,7 +35,7 @@ func (r *ApiOpenApiV30BrandAwemeListGetRequest) AdvertiserId(advertiserId int64)
 	return r
 }
 
-func (r *ApiOpenApiV30BrandAwemeListGetRequest) Execute() (*BrandAwemeListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandAwemeListGetRequest) Execute() (*models.BrandAwemeListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *BrandAwemeListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Bra
 // Execute executes the request
 //
 //	@return BrandAwemeListV30Response
-func (a *BrandAwemeListV30ApiService) getExecute(r *ApiOpenApiV30BrandAwemeListGetRequest) (*BrandAwemeListV30Response, *http.Response, error) {
+func (a *BrandAwemeListV30ApiService) getExecute(r *ApiOpenApiV30BrandAwemeListGetRequest) (*models.BrandAwemeListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandAwemeListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandAwemeListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *BrandAwemeListV30ApiService) getExecute(r *ApiOpenApiV30BrandAwemeListG
 	localVarPath := localBasePath + "/open_api/v3.0/brand/aweme_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

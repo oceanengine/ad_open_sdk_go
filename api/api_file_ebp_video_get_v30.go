@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileEbpVideoGetV30ApiService FileEbpVideoGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30FileEbpVideoGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *FileEbpVideoGetV30ApiService
 	advertiserId *int64
-	filtering    *FileEbpVideoGetV30Filtering
+	filtering    *models.FileEbpVideoGetV30Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30FileEbpVideoGetGetRequest) AdvertiserId(advertiserId int64
 }
 
 // 过滤器
-func (r *ApiOpenApiV30FileEbpVideoGetGetRequest) Filtering(filtering FileEbpVideoGetV30Filtering) *ApiOpenApiV30FileEbpVideoGetGetRequest {
+func (r *ApiOpenApiV30FileEbpVideoGetGetRequest) Filtering(filtering models.FileEbpVideoGetV30Filtering) *ApiOpenApiV30FileEbpVideoGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30FileEbpVideoGetGetRequest) PageSize(pageSize int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApiV30FileEbpVideoGetGetRequest) Execute() (*FileEbpVideoGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30FileEbpVideoGetGetRequest) Execute() (*models.FileEbpVideoGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *FileEbpVideoGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Fi
 // Execute executes the request
 //
 //	@return FileEbpVideoGetV30Response
-func (a *FileEbpVideoGetV30ApiService) getExecute(r *ApiOpenApiV30FileEbpVideoGetGetRequest) (*FileEbpVideoGetV30Response, *http.Response, error) {
+func (a *FileEbpVideoGetV30ApiService) getExecute(r *ApiOpenApiV30FileEbpVideoGetGetRequest) (*models.FileEbpVideoGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileEbpVideoGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileEbpVideoGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *FileEbpVideoGetV30ApiService) getExecute(r *ApiOpenApiV30FileEbpVideoGe
 	localVarPath := localBasePath + "/open_api/v3.0/file/ebp_video/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

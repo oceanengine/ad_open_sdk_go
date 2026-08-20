@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CreateStatementV2ApiService CreateStatementV2Api service
@@ -25,15 +26,15 @@ type CreateStatementV2ApiService service
 type ApiOpenApi2CreateStatementPostRequest struct {
 	ctx                      context.Context
 	ApiService               *CreateStatementV2ApiService
-	createStatementV2Request *CreateStatementV2Request
+	createStatementV2Request *models.CreateStatementV2Request
 }
 
-func (r *ApiOpenApi2CreateStatementPostRequest) CreateStatementV2Request(createStatementV2Request CreateStatementV2Request) *ApiOpenApi2CreateStatementPostRequest {
+func (r *ApiOpenApi2CreateStatementPostRequest) CreateStatementV2Request(createStatementV2Request models.CreateStatementV2Request) *ApiOpenApi2CreateStatementPostRequest {
 	r.createStatementV2Request = &createStatementV2Request
 	return r
 }
 
-func (r *ApiOpenApi2CreateStatementPostRequest) Execute() (*CreateStatementV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CreateStatementPostRequest) Execute() (*models.CreateStatementV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *CreateStatementV2ApiService) Post(ctx context.Context) *ApiOpenApi2Crea
 // Execute executes the request
 //
 //	@return CreateStatementV2Response
-func (a *CreateStatementV2ApiService) postExecute(r *ApiOpenApi2CreateStatementPostRequest) (*CreateStatementV2Response, *http.Response, error) {
+func (a *CreateStatementV2ApiService) postExecute(r *ApiOpenApi2CreateStatementPostRequest) (*models.CreateStatementV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CreateStatementV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CreateStatementV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *CreateStatementV2ApiService) postExecute(r *ApiOpenApi2CreateStatementP
 	localVarPath := localBasePath + "/open_api/2/create/statement/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

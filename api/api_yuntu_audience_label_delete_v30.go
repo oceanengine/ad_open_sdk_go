@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // YuntuAudienceLabelDeleteV30ApiService YuntuAudienceLabelDeleteV30Api service
@@ -25,15 +26,15 @@ type YuntuAudienceLabelDeleteV30ApiService service
 type ApiOpenApiV30YuntuAudienceLabelDeletePostRequest struct {
 	ctx                                context.Context
 	ApiService                         *YuntuAudienceLabelDeleteV30ApiService
-	yuntuAudienceLabelDeleteV30Request *YuntuAudienceLabelDeleteV30Request
+	yuntuAudienceLabelDeleteV30Request *models.YuntuAudienceLabelDeleteV30Request
 }
 
-func (r *ApiOpenApiV30YuntuAudienceLabelDeletePostRequest) YuntuAudienceLabelDeleteV30Request(yuntuAudienceLabelDeleteV30Request YuntuAudienceLabelDeleteV30Request) *ApiOpenApiV30YuntuAudienceLabelDeletePostRequest {
+func (r *ApiOpenApiV30YuntuAudienceLabelDeletePostRequest) YuntuAudienceLabelDeleteV30Request(yuntuAudienceLabelDeleteV30Request models.YuntuAudienceLabelDeleteV30Request) *ApiOpenApiV30YuntuAudienceLabelDeletePostRequest {
 	r.yuntuAudienceLabelDeleteV30Request = &yuntuAudienceLabelDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30YuntuAudienceLabelDeletePostRequest) Execute() (*YuntuAudienceLabelDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30YuntuAudienceLabelDeletePostRequest) Execute() (*models.YuntuAudienceLabelDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *YuntuAudienceLabelDeleteV30ApiService) Post(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return YuntuAudienceLabelDeleteV30Response
-func (a *YuntuAudienceLabelDeleteV30ApiService) postExecute(r *ApiOpenApiV30YuntuAudienceLabelDeletePostRequest) (*YuntuAudienceLabelDeleteV30Response, *http.Response, error) {
+func (a *YuntuAudienceLabelDeleteV30ApiService) postExecute(r *ApiOpenApiV30YuntuAudienceLabelDeletePostRequest) (*models.YuntuAudienceLabelDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *YuntuAudienceLabelDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.YuntuAudienceLabelDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *YuntuAudienceLabelDeleteV30ApiService) postExecute(r *ApiOpenApiV30Yunt
 	localVarPath := localBasePath + "/open_api/v3.0/yuntu/audience_label/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

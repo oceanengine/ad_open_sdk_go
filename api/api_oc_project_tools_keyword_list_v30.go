@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OcProjectToolsKeywordListV30ApiService OcProjectToolsKeywordListV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30OcProjectToolsKeywordListGetRequest struct {
 	ctx          context.Context
 	ApiService   *OcProjectToolsKeywordListV30ApiService
 	advertiserId *int64
-	pageInfo     *OcProjectToolsKeywordListV30PageInfo
-	filtering    *OcProjectToolsKeywordListV30Filtering
+	pageInfo     *models.OcProjectToolsKeywordListV30PageInfo
+	filtering    *models.OcProjectToolsKeywordListV30Filtering
 }
 
 // 投放账户ID
@@ -37,18 +38,18 @@ func (r *ApiOpenApiV30OcProjectToolsKeywordListGetRequest) AdvertiserId(advertis
 }
 
 // 分页信息
-func (r *ApiOpenApiV30OcProjectToolsKeywordListGetRequest) PageInfo(pageInfo OcProjectToolsKeywordListV30PageInfo) *ApiOpenApiV30OcProjectToolsKeywordListGetRequest {
+func (r *ApiOpenApiV30OcProjectToolsKeywordListGetRequest) PageInfo(pageInfo models.OcProjectToolsKeywordListV30PageInfo) *ApiOpenApiV30OcProjectToolsKeywordListGetRequest {
 	r.pageInfo = &pageInfo
 	return r
 }
 
 // 过滤条件（不过滤则返回全部）
-func (r *ApiOpenApiV30OcProjectToolsKeywordListGetRequest) Filtering(filtering OcProjectToolsKeywordListV30Filtering) *ApiOpenApiV30OcProjectToolsKeywordListGetRequest {
+func (r *ApiOpenApiV30OcProjectToolsKeywordListGetRequest) Filtering(filtering models.OcProjectToolsKeywordListV30Filtering) *ApiOpenApiV30OcProjectToolsKeywordListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30OcProjectToolsKeywordListGetRequest) Execute() (*OcProjectToolsKeywordListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OcProjectToolsKeywordListGetRequest) Execute() (*models.OcProjectToolsKeywordListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *OcProjectToolsKeywordListV30ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return OcProjectToolsKeywordListV30Response
-func (a *OcProjectToolsKeywordListV30ApiService) getExecute(r *ApiOpenApiV30OcProjectToolsKeywordListGetRequest) (*OcProjectToolsKeywordListV30Response, *http.Response, error) {
+func (a *OcProjectToolsKeywordListV30ApiService) getExecute(r *ApiOpenApiV30OcProjectToolsKeywordListGetRequest) (*models.OcProjectToolsKeywordListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OcProjectToolsKeywordListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OcProjectToolsKeywordListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *OcProjectToolsKeywordListV30ApiService) getExecute(r *ApiOpenApiV30OcPr
 	localVarPath := localBasePath + "/open_api/v3.0/oc_project/tools_keyword/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

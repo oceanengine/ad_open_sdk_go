@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoUploadTaskListV2ApiService FileVideoUploadTaskListV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2FileVideoUploadTaskListGetRequest struct {
 	ctx         context.Context
 	ApiService  *FileVideoUploadTaskListV2ApiService
 	accountId   *int64
-	accountType *FileVideoUploadTaskListV2AccountType
+	accountType *models.FileVideoUploadTaskListV2AccountType
 	taskIds     *[]int64
 }
 
@@ -37,7 +38,7 @@ func (r *ApiOpenApi2FileVideoUploadTaskListGetRequest) AccountId(accountId int64
 }
 
 // 账户类型 ADVERTISER 广告主 AGTENT 代理商
-func (r *ApiOpenApi2FileVideoUploadTaskListGetRequest) AccountType(accountType FileVideoUploadTaskListV2AccountType) *ApiOpenApi2FileVideoUploadTaskListGetRequest {
+func (r *ApiOpenApi2FileVideoUploadTaskListGetRequest) AccountType(accountType models.FileVideoUploadTaskListV2AccountType) *ApiOpenApi2FileVideoUploadTaskListGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -48,7 +49,7 @@ func (r *ApiOpenApi2FileVideoUploadTaskListGetRequest) TaskIds(taskIds []int64) 
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoUploadTaskListGetRequest) Execute() (*FileVideoUploadTaskListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoUploadTaskListGetRequest) Execute() (*models.FileVideoUploadTaskListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *FileVideoUploadTaskListV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return FileVideoUploadTaskListV2Response
-func (a *FileVideoUploadTaskListV2ApiService) getExecute(r *ApiOpenApi2FileVideoUploadTaskListGetRequest) (*FileVideoUploadTaskListV2Response, *http.Response, error) {
+func (a *FileVideoUploadTaskListV2ApiService) getExecute(r *ApiOpenApi2FileVideoUploadTaskListGetRequest) (*models.FileVideoUploadTaskListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoUploadTaskListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoUploadTaskListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *FileVideoUploadTaskListV2ApiService) getExecute(r *ApiOpenApi2FileVideo
 	localVarPath := localBasePath + "/open_api/2/file/video/upload_task/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

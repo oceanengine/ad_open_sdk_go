@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserDeliveryPkgGetV30ApiService AdvertiserDeliveryPkgGetV30Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30AdvertiserDeliveryPkgGetGetRequest) PkgId(pkgId int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApiV30AdvertiserDeliveryPkgGetGetRequest) Execute() (*AdvertiserDeliveryPkgGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AdvertiserDeliveryPkgGetGetRequest) Execute() (*models.AdvertiserDeliveryPkgGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *AdvertiserDeliveryPkgGetV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return AdvertiserDeliveryPkgGetV30Response
-func (a *AdvertiserDeliveryPkgGetV30ApiService) getExecute(r *ApiOpenApiV30AdvertiserDeliveryPkgGetGetRequest) (*AdvertiserDeliveryPkgGetV30Response, *http.Response, error) {
+func (a *AdvertiserDeliveryPkgGetV30ApiService) getExecute(r *ApiOpenApiV30AdvertiserDeliveryPkgGetGetRequest) (*models.AdvertiserDeliveryPkgGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserDeliveryPkgGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserDeliveryPkgGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *AdvertiserDeliveryPkgGetV30ApiService) getExecute(r *ApiOpenApiV30Adver
 	localVarPath := localBasePath + "/open_api/v3.0/advertiser/delivery_pkg/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

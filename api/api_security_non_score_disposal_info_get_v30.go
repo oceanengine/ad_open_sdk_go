@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SecurityNonScoreDisposalInfoGetV30ApiService SecurityNonScoreDisposalInfoGetV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *SecurityNonScoreDisposalInfoGetV30ApiService
 	advertiserId *int64
-	businessLine *SecurityNonScoreDisposalInfoGetV30BusinessLine
-	timeRange    *SecurityNonScoreDisposalInfoGetV30TimeRange
+	businessLine *models.SecurityNonScoreDisposalInfoGetV30BusinessLine
+	timeRange    *models.SecurityNonScoreDisposalInfoGetV30TimeRange
 	page         *int64
 	pageSize     *int64
 }
@@ -38,12 +39,12 @@ func (r *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest) AdvertiserId(ad
 }
 
 // 业务线枚举
-func (r *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest) BusinessLine(businessLine SecurityNonScoreDisposalInfoGetV30BusinessLine) *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest {
+func (r *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest) BusinessLine(businessLine models.SecurityNonScoreDisposalInfoGetV30BusinessLine) *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest {
 	r.businessLine = &businessLine
 	return r
 }
 
-func (r *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest) TimeRange(timeRange SecurityNonScoreDisposalInfoGetV30TimeRange) *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest {
+func (r *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest) TimeRange(timeRange models.SecurityNonScoreDisposalInfoGetV30TimeRange) *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest {
 	r.timeRange = &timeRange
 	return r
 }
@@ -59,7 +60,7 @@ func (r *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest) PageSize(pageSi
 	return r
 }
 
-func (r *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest) Execute() (*SecurityNonScoreDisposalInfoGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest) Execute() (*models.SecurityNonScoreDisposalInfoGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -93,12 +94,12 @@ func (a *SecurityNonScoreDisposalInfoGetV30ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return SecurityNonScoreDisposalInfoGetV30Response
-func (a *SecurityNonScoreDisposalInfoGetV30ApiService) getExecute(r *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest) (*SecurityNonScoreDisposalInfoGetV30Response, *http.Response, error) {
+func (a *SecurityNonScoreDisposalInfoGetV30ApiService) getExecute(r *ApiOpenApiV30SecurityNonScoreDisposalInfoGetGetRequest) (*models.SecurityNonScoreDisposalInfoGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SecurityNonScoreDisposalInfoGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SecurityNonScoreDisposalInfoGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -108,7 +109,7 @@ func (a *SecurityNonScoreDisposalInfoGetV30ApiService) getExecute(r *ApiOpenApiV
 	localVarPath := localBasePath + "/open_api/v3.0/security/non_score_disposal_info/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OcProjectToolsKeywordCreateV30ApiService OcProjectToolsKeywordCreateV30Api service
@@ -25,15 +26,15 @@ type OcProjectToolsKeywordCreateV30ApiService service
 type ApiOpenApiV30OcProjectToolsKeywordCreatePostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *OcProjectToolsKeywordCreateV30ApiService
-	ocProjectToolsKeywordCreateV30Request *OcProjectToolsKeywordCreateV30Request
+	ocProjectToolsKeywordCreateV30Request *models.OcProjectToolsKeywordCreateV30Request
 }
 
-func (r *ApiOpenApiV30OcProjectToolsKeywordCreatePostRequest) OcProjectToolsKeywordCreateV30Request(ocProjectToolsKeywordCreateV30Request OcProjectToolsKeywordCreateV30Request) *ApiOpenApiV30OcProjectToolsKeywordCreatePostRequest {
+func (r *ApiOpenApiV30OcProjectToolsKeywordCreatePostRequest) OcProjectToolsKeywordCreateV30Request(ocProjectToolsKeywordCreateV30Request models.OcProjectToolsKeywordCreateV30Request) *ApiOpenApiV30OcProjectToolsKeywordCreatePostRequest {
 	r.ocProjectToolsKeywordCreateV30Request = &ocProjectToolsKeywordCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30OcProjectToolsKeywordCreatePostRequest) Execute() (*OcProjectToolsKeywordCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OcProjectToolsKeywordCreatePostRequest) Execute() (*models.OcProjectToolsKeywordCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *OcProjectToolsKeywordCreateV30ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return OcProjectToolsKeywordCreateV30Response
-func (a *OcProjectToolsKeywordCreateV30ApiService) postExecute(r *ApiOpenApiV30OcProjectToolsKeywordCreatePostRequest) (*OcProjectToolsKeywordCreateV30Response, *http.Response, error) {
+func (a *OcProjectToolsKeywordCreateV30ApiService) postExecute(r *ApiOpenApiV30OcProjectToolsKeywordCreatePostRequest) (*models.OcProjectToolsKeywordCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OcProjectToolsKeywordCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OcProjectToolsKeywordCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *OcProjectToolsKeywordCreateV30ApiService) postExecute(r *ApiOpenApiV30O
 	localVarPath := localBasePath + "/open_api/v3.0/oc_project/tools_keyword/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAudienceCreateByFileV10ApiService QianchuanAudienceCreateByFileV10Api service
@@ -25,15 +26,15 @@ type QianchuanAudienceCreateByFileV10ApiService service
 type ApiOpenApiV10QianchuanAudienceCreateByFilePostRequest struct {
 	ctx                                     context.Context
 	ApiService                              *QianchuanAudienceCreateByFileV10ApiService
-	qianchuanAudienceCreateByFileV10Request *QianchuanAudienceCreateByFileV10Request
+	qianchuanAudienceCreateByFileV10Request *models.QianchuanAudienceCreateByFileV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanAudienceCreateByFilePostRequest) QianchuanAudienceCreateByFileV10Request(qianchuanAudienceCreateByFileV10Request QianchuanAudienceCreateByFileV10Request) *ApiOpenApiV10QianchuanAudienceCreateByFilePostRequest {
+func (r *ApiOpenApiV10QianchuanAudienceCreateByFilePostRequest) QianchuanAudienceCreateByFileV10Request(qianchuanAudienceCreateByFileV10Request models.QianchuanAudienceCreateByFileV10Request) *ApiOpenApiV10QianchuanAudienceCreateByFilePostRequest {
 	r.qianchuanAudienceCreateByFileV10Request = &qianchuanAudienceCreateByFileV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAudienceCreateByFilePostRequest) Execute() (*QianchuanAudienceCreateByFileV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAudienceCreateByFilePostRequest) Execute() (*models.QianchuanAudienceCreateByFileV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanAudienceCreateByFileV10ApiService) Post(ctx context.Context) *
 // Execute executes the request
 //
 //	@return QianchuanAudienceCreateByFileV10Response
-func (a *QianchuanAudienceCreateByFileV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAudienceCreateByFilePostRequest) (*QianchuanAudienceCreateByFileV10Response, *http.Response, error) {
+func (a *QianchuanAudienceCreateByFileV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAudienceCreateByFilePostRequest) (*models.QianchuanAudienceCreateByFileV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAudienceCreateByFileV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAudienceCreateByFileV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanAudienceCreateByFileV10ApiService) postExecute(r *ApiOpenApiV1
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/audience/create_by_file/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

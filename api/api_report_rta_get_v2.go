@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportRtaGetV2ApiService ReportRtaGetV2Api service
@@ -31,7 +32,7 @@ type ApiOpenApi2ReportRtaGetGetRequest struct {
 	reportType      *string
 	timeGranularity *string
 	orderField      *string
-	orderType       *ReportRtaGetV2OrderType
+	orderType       *models.ReportRtaGetV2OrderType
 	page            *int64
 	pageSize        *int64
 }
@@ -67,7 +68,7 @@ func (r *ApiOpenApi2ReportRtaGetGetRequest) OrderField(orderField string) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2ReportRtaGetGetRequest) OrderType(orderType ReportRtaGetV2OrderType) *ApiOpenApi2ReportRtaGetGetRequest {
+func (r *ApiOpenApi2ReportRtaGetGetRequest) OrderType(orderType models.ReportRtaGetV2OrderType) *ApiOpenApi2ReportRtaGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -82,7 +83,7 @@ func (r *ApiOpenApi2ReportRtaGetGetRequest) PageSize(pageSize int64) *ApiOpenApi
 	return r
 }
 
-func (r *ApiOpenApi2ReportRtaGetGetRequest) Execute() (*ReportRtaGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ReportRtaGetGetRequest) Execute() (*models.ReportRtaGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -116,12 +117,12 @@ func (a *ReportRtaGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2ReportRt
 // Execute executes the request
 //
 //	@return ReportRtaGetV2Response
-func (a *ReportRtaGetV2ApiService) getExecute(r *ApiOpenApi2ReportRtaGetGetRequest) (*ReportRtaGetV2Response, *http.Response, error) {
+func (a *ReportRtaGetV2ApiService) getExecute(r *ApiOpenApi2ReportRtaGetGetRequest) (*models.ReportRtaGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportRtaGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportRtaGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -131,7 +132,7 @@ func (a *ReportRtaGetV2ApiService) getExecute(r *ApiOpenApi2ReportRtaGetGetReque
 	localVarPath := localBasePath + "/open_api/2/report/rta/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

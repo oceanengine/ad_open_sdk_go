@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferCanTransferTargetListV30ApiService CgTransferCanTransferTargetListV30Api service
@@ -28,8 +29,8 @@ type ApiOpenApiV30CgTransferCanTransferTargetListGetRequest struct {
 	organizationId    *int64
 	bizRequestNo      *string
 	opponentTargetId  *int64
-	transferDirection *CgTransferCanTransferTargetListV30TransferDirection
-	platform          *CgTransferCanTransferTargetListV30Platform
+	transferDirection *models.CgTransferCanTransferTargetListV30TransferDirection
+	platform          *models.CgTransferCanTransferTargetListV30Platform
 	page              *int64
 	pageSize          *int64
 }
@@ -53,13 +54,13 @@ func (r *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest) OpponentTargetI
 }
 
 // 转账方向，以可转列表视角确定
-func (r *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest) TransferDirection(transferDirection CgTransferCanTransferTargetListV30TransferDirection) *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest {
+func (r *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest) TransferDirection(transferDirection models.CgTransferCanTransferTargetListV30TransferDirection) *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest {
 	r.transferDirection = &transferDirection
 	return r
 }
 
 // 业务线
-func (r *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest) Platform(platform CgTransferCanTransferTargetListV30Platform) *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest {
+func (r *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest) Platform(platform models.CgTransferCanTransferTargetListV30Platform) *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest {
 	r.platform = &platform
 	return r
 }
@@ -76,7 +77,7 @@ func (r *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest) PageSize(pageSi
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest) Execute() (*CgTransferCanTransferTargetListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest) Execute() (*models.CgTransferCanTransferTargetListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *CgTransferCanTransferTargetListV30ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return CgTransferCanTransferTargetListV30Response
-func (a *CgTransferCanTransferTargetListV30ApiService) getExecute(r *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest) (*CgTransferCanTransferTargetListV30Response, *http.Response, error) {
+func (a *CgTransferCanTransferTargetListV30ApiService) getExecute(r *ApiOpenApiV30CgTransferCanTransferTargetListGetRequest) (*models.CgTransferCanTransferTargetListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferCanTransferTargetListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferCanTransferTargetListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *CgTransferCanTransferTargetListV30ApiService) getExecute(r *ApiOpenApiV
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/can_transfer_target/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.organizationId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentTransferTransactionRecordV2ApiService AgentTransferTransactionRecordV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2AgentTransferTransactionRecordGetRequest struct {
 	agentId    *int64
 	startDate  *string
 	endDate    *string
-	filtering  *AgentTransferTransactionRecordV2Filtering
+	filtering  *models.AgentTransferTransactionRecordV2Filtering
 	page       *int64
 	pageSize   *int64
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2AgentTransferTransactionRecordGetRequest) EndDate(endDate st
 }
 
 // 过滤器
-func (r *ApiOpenApi2AgentTransferTransactionRecordGetRequest) Filtering(filtering AgentTransferTransactionRecordV2Filtering) *ApiOpenApi2AgentTransferTransactionRecordGetRequest {
+func (r *ApiOpenApi2AgentTransferTransactionRecordGetRequest) Filtering(filtering models.AgentTransferTransactionRecordV2Filtering) *ApiOpenApi2AgentTransferTransactionRecordGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -68,7 +69,7 @@ func (r *ApiOpenApi2AgentTransferTransactionRecordGetRequest) PageSize(pageSize 
 	return r
 }
 
-func (r *ApiOpenApi2AgentTransferTransactionRecordGetRequest) Execute() (*AgentTransferTransactionRecordV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentTransferTransactionRecordGetRequest) Execute() (*models.AgentTransferTransactionRecordV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -102,12 +103,12 @@ func (a *AgentTransferTransactionRecordV2ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return AgentTransferTransactionRecordV2Response
-func (a *AgentTransferTransactionRecordV2ApiService) getExecute(r *ApiOpenApi2AgentTransferTransactionRecordGetRequest) (*AgentTransferTransactionRecordV2Response, *http.Response, error) {
+func (a *AgentTransferTransactionRecordV2ApiService) getExecute(r *ApiOpenApi2AgentTransferTransactionRecordGetRequest) (*models.AgentTransferTransactionRecordV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentTransferTransactionRecordV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentTransferTransactionRecordV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -117,7 +118,7 @@ func (a *AgentTransferTransactionRecordV2ApiService) getExecute(r *ApiOpenApi2Ag
 	localVarPath := localBasePath + "/open_api/2/agent/transfer/transaction_record/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpAppExtendCreateV30ApiService ToolsEbpAppExtendCreateV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpAppExtendCreateV30ApiService service
 type ApiOpenApiV30ToolsEbpAppExtendCreatePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *ToolsEbpAppExtendCreateV30ApiService
-	toolsEbpAppExtendCreateV30Request *ToolsEbpAppExtendCreateV30Request
+	toolsEbpAppExtendCreateV30Request *models.ToolsEbpAppExtendCreateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppExtendCreatePostRequest) ToolsEbpAppExtendCreateV30Request(toolsEbpAppExtendCreateV30Request ToolsEbpAppExtendCreateV30Request) *ApiOpenApiV30ToolsEbpAppExtendCreatePostRequest {
+func (r *ApiOpenApiV30ToolsEbpAppExtendCreatePostRequest) ToolsEbpAppExtendCreateV30Request(toolsEbpAppExtendCreateV30Request models.ToolsEbpAppExtendCreateV30Request) *ApiOpenApiV30ToolsEbpAppExtendCreatePostRequest {
 	r.toolsEbpAppExtendCreateV30Request = &toolsEbpAppExtendCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppExtendCreatePostRequest) Execute() (*ToolsEbpAppExtendCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpAppExtendCreatePostRequest) Execute() (*models.ToolsEbpAppExtendCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpAppExtendCreateV30ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsEbpAppExtendCreateV30Response
-func (a *ToolsEbpAppExtendCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpAppExtendCreatePostRequest) (*ToolsEbpAppExtendCreateV30Response, *http.Response, error) {
+func (a *ToolsEbpAppExtendCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpAppExtendCreatePostRequest) (*models.ToolsEbpAppExtendCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpAppExtendCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpAppExtendCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpAppExtendCreateV30ApiService) postExecute(r *ApiOpenApiV30Tools
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/app_extend/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

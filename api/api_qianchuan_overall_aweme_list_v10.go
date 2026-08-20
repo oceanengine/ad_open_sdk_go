@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanOverallAwemeListV10ApiService QianchuanOverallAwemeListV10Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV10QianchuanOverallAwemeListGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanOverallAwemeListV10ApiService
 	advertiserId *int64
-	pageParams   *QianchuanOverallAwemeListV10PageParams
-	filter       *QianchuanOverallAwemeListV10Filter
+	pageParams   *models.QianchuanOverallAwemeListV10PageParams
+	filter       *models.QianchuanOverallAwemeListV10Filter
 }
 
 func (r *ApiOpenApiV10QianchuanOverallAwemeListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanOverallAwemeListGetRequest {
@@ -35,17 +36,17 @@ func (r *ApiOpenApiV10QianchuanOverallAwemeListGetRequest) AdvertiserId(advertis
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOverallAwemeListGetRequest) PageParams(pageParams QianchuanOverallAwemeListV10PageParams) *ApiOpenApiV10QianchuanOverallAwemeListGetRequest {
+func (r *ApiOpenApiV10QianchuanOverallAwemeListGetRequest) PageParams(pageParams models.QianchuanOverallAwemeListV10PageParams) *ApiOpenApiV10QianchuanOverallAwemeListGetRequest {
 	r.pageParams = &pageParams
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOverallAwemeListGetRequest) Filter(filter QianchuanOverallAwemeListV10Filter) *ApiOpenApiV10QianchuanOverallAwemeListGetRequest {
+func (r *ApiOpenApiV10QianchuanOverallAwemeListGetRequest) Filter(filter models.QianchuanOverallAwemeListV10Filter) *ApiOpenApiV10QianchuanOverallAwemeListGetRequest {
 	r.filter = &filter
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOverallAwemeListGetRequest) Execute() (*QianchuanOverallAwemeListV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanOverallAwemeListGetRequest) Execute() (*models.QianchuanOverallAwemeListV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *QianchuanOverallAwemeListV10ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return QianchuanOverallAwemeListV10Response
-func (a *QianchuanOverallAwemeListV10ApiService) getExecute(r *ApiOpenApiV10QianchuanOverallAwemeListGetRequest) (*QianchuanOverallAwemeListV10Response, *http.Response, error) {
+func (a *QianchuanOverallAwemeListV10ApiService) getExecute(r *ApiOpenApiV10QianchuanOverallAwemeListGetRequest) (*models.QianchuanOverallAwemeListV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanOverallAwemeListV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanOverallAwemeListV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *QianchuanOverallAwemeListV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/overall_aweme/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

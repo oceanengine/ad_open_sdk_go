@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DouplusOrderCreateV30ApiService DouplusOrderCreateV30Api service
@@ -25,15 +26,15 @@ type DouplusOrderCreateV30ApiService service
 type ApiOpenApiV30DouplusOrderCreatePostRequest struct {
 	ctx                          context.Context
 	ApiService                   *DouplusOrderCreateV30ApiService
-	douplusOrderCreateV30Request *DouplusOrderCreateV30Request
+	douplusOrderCreateV30Request *models.DouplusOrderCreateV30Request
 }
 
-func (r *ApiOpenApiV30DouplusOrderCreatePostRequest) DouplusOrderCreateV30Request(douplusOrderCreateV30Request DouplusOrderCreateV30Request) *ApiOpenApiV30DouplusOrderCreatePostRequest {
+func (r *ApiOpenApiV30DouplusOrderCreatePostRequest) DouplusOrderCreateV30Request(douplusOrderCreateV30Request models.DouplusOrderCreateV30Request) *ApiOpenApiV30DouplusOrderCreatePostRequest {
 	r.douplusOrderCreateV30Request = &douplusOrderCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30DouplusOrderCreatePostRequest) Execute() (*DouplusOrderCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DouplusOrderCreatePostRequest) Execute() (*models.DouplusOrderCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DouplusOrderCreateV30ApiService) Post(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return DouplusOrderCreateV30Response
-func (a *DouplusOrderCreateV30ApiService) postExecute(r *ApiOpenApiV30DouplusOrderCreatePostRequest) (*DouplusOrderCreateV30Response, *http.Response, error) {
+func (a *DouplusOrderCreateV30ApiService) postExecute(r *ApiOpenApiV30DouplusOrderCreatePostRequest) (*models.DouplusOrderCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DouplusOrderCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DouplusOrderCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DouplusOrderCreateV30ApiService) postExecute(r *ApiOpenApiV30DouplusOrd
 	localVarPath := localBasePath + "/open_api/v3.0/douplus/order/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

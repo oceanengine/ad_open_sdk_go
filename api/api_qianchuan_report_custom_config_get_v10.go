@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportCustomConfigGetV10ApiService QianchuanReportCustomConfigGetV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanReportCustomConfigGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanReportCustomConfigGetV10ApiService
 	advertiserId *int64
-	dataTopics   *[]*QianchuanReportCustomConfigGetV10DataTopics
+	dataTopics   *[]*models.QianchuanReportCustomConfigGetV10DataTopics
 }
 
 func (r *ApiOpenApiV10QianchuanReportCustomConfigGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanReportCustomConfigGetGetRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApiV10QianchuanReportCustomConfigGetGetRequest) AdvertiserId(adv
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportCustomConfigGetGetRequest) DataTopics(dataTopics []*QianchuanReportCustomConfigGetV10DataTopics) *ApiOpenApiV10QianchuanReportCustomConfigGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportCustomConfigGetGetRequest) DataTopics(dataTopics []*models.QianchuanReportCustomConfigGetV10DataTopics) *ApiOpenApiV10QianchuanReportCustomConfigGetGetRequest {
 	r.dataTopics = &dataTopics
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportCustomConfigGetGetRequest) Execute() (*QianchuanReportCustomConfigGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportCustomConfigGetGetRequest) Execute() (*models.QianchuanReportCustomConfigGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *QianchuanReportCustomConfigGetV10ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return QianchuanReportCustomConfigGetV10Response
-func (a *QianchuanReportCustomConfigGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportCustomConfigGetGetRequest) (*QianchuanReportCustomConfigGetV10Response, *http.Response, error) {
+func (a *QianchuanReportCustomConfigGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportCustomConfigGetGetRequest) (*models.QianchuanReportCustomConfigGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportCustomConfigGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportCustomConfigGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *QianchuanReportCustomConfigGetV10ApiService) getExecute(r *ApiOpenApiV1
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/custom/config/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AssetsCreativeComponentGetV2ApiService AssetsCreativeComponentGetV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2AssetsCreativeComponentGetGetRequest struct {
 	advertiserId *int64
 	page         *int64
 	pageSize     *int64
-	filtering    *AssetsCreativeComponentGetV2Filtering
+	filtering    *models.AssetsCreativeComponentGetV2Filtering
 }
 
 func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2AssetsCreativeComponentGetGetRequest {
@@ -49,12 +50,12 @@ func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) PageSize(pageSize int6
 }
 
 // 过滤器
-func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) Filtering(filtering AssetsCreativeComponentGetV2Filtering) *ApiOpenApi2AssetsCreativeComponentGetGetRequest {
+func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) Filtering(filtering models.AssetsCreativeComponentGetV2Filtering) *ApiOpenApi2AssetsCreativeComponentGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) Execute() (*AssetsCreativeComponentGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) Execute() (*models.AssetsCreativeComponentGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -88,12 +89,12 @@ func (a *AssetsCreativeComponentGetV2ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return AssetsCreativeComponentGetV2Response
-func (a *AssetsCreativeComponentGetV2ApiService) getExecute(r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) (*AssetsCreativeComponentGetV2Response, *http.Response, error) {
+func (a *AssetsCreativeComponentGetV2ApiService) getExecute(r *ApiOpenApi2AssetsCreativeComponentGetGetRequest) (*models.AssetsCreativeComponentGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AssetsCreativeComponentGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AssetsCreativeComponentGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -103,7 +104,7 @@ func (a *AssetsCreativeComponentGetV2ApiService) getExecute(r *ApiOpenApi2Assets
 	localVarPath := localBasePath + "/open_api/2/assets/creative_component/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

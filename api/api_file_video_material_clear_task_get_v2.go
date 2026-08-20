@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoMaterialClearTaskGetV2ApiService FileVideoMaterialClearTaskGetV2Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2FileVideoMaterialClearTaskGetGetRequest) PageSize(pageSize i
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoMaterialClearTaskGetGetRequest) Execute() (*FileVideoMaterialClearTaskGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoMaterialClearTaskGetGetRequest) Execute() (*models.FileVideoMaterialClearTaskGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *FileVideoMaterialClearTaskGetV2ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return FileVideoMaterialClearTaskGetV2Response
-func (a *FileVideoMaterialClearTaskGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoMaterialClearTaskGetGetRequest) (*FileVideoMaterialClearTaskGetV2Response, *http.Response, error) {
+func (a *FileVideoMaterialClearTaskGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoMaterialClearTaskGetGetRequest) (*models.FileVideoMaterialClearTaskGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoMaterialClearTaskGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoMaterialClearTaskGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *FileVideoMaterialClearTaskGetV2ApiService) getExecute(r *ApiOpenApi2Fil
 	localVarPath := localBasePath + "/open_api/2/file/video/material/clear_task/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

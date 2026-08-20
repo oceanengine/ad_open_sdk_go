@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAdvertiserStoreSearchV2ApiService ToolsAdvertiserStoreSearchV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest struct {
 	advertiserId *int64
 	page         *int64
 	pageSize     *int64
-	type_        *ToolsAdvertiserStoreSearchV2Type
+	type_        *models.ToolsAdvertiserStoreSearchV2Type
 }
 
 func (r *ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest {
@@ -46,12 +47,12 @@ func (r *ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest) PageSize(pageSize int6
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest) Type_(type_ ToolsAdvertiserStoreSearchV2Type) *ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest {
+func (r *ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest) Type_(type_ models.ToolsAdvertiserStoreSearchV2Type) *ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest {
 	r.type_ = &type_
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest) Execute() (*ToolsAdvertiserStoreSearchV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest) Execute() (*models.ToolsAdvertiserStoreSearchV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ToolsAdvertiserStoreSearchV2ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsAdvertiserStoreSearchV2Response
-func (a *ToolsAdvertiserStoreSearchV2ApiService) getExecute(r *ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest) (*ToolsAdvertiserStoreSearchV2Response, *http.Response, error) {
+func (a *ToolsAdvertiserStoreSearchV2ApiService) getExecute(r *ApiOpenApi2ToolsAdvertiserStoreSearchGetRequest) (*models.ToolsAdvertiserStoreSearchV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAdvertiserStoreSearchV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAdvertiserStoreSearchV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ToolsAdvertiserStoreSearchV2ApiService) getExecute(r *ApiOpenApi2ToolsA
 	localVarPath := localBasePath + "/open_api/2/tools/advertiser_store/search/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

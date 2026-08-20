@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemanderGetRegisteredIpActsV2ApiService StarDemanderGetRegisteredIpActsV2Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApi2StarDemanderGetRegisteredIpActsGetRequest) StarId(starId int
 	return r
 }
 
-func (r *ApiOpenApi2StarDemanderGetRegisteredIpActsGetRequest) Execute() (*StarDemanderGetRegisteredIpActsV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemanderGetRegisteredIpActsGetRequest) Execute() (*models.StarDemanderGetRegisteredIpActsV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarDemanderGetRegisteredIpActsV2ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return StarDemanderGetRegisteredIpActsV2Response
-func (a *StarDemanderGetRegisteredIpActsV2ApiService) getExecute(r *ApiOpenApi2StarDemanderGetRegisteredIpActsGetRequest) (*StarDemanderGetRegisteredIpActsV2Response, *http.Response, error) {
+func (a *StarDemanderGetRegisteredIpActsV2ApiService) getExecute(r *ApiOpenApi2StarDemanderGetRegisteredIpActsGetRequest) (*models.StarDemanderGetRegisteredIpActsV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemanderGetRegisteredIpActsV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemanderGetRegisteredIpActsV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarDemanderGetRegisteredIpActsV2ApiService) getExecute(r *ApiOpenApi2S
 	localVarPath := localBasePath + "/open_api/2/star/demander/get_registered_ip_acts/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

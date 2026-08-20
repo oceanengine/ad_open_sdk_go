@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanToolsAllowCouponV10ApiService QianchuanToolsAllowCouponV10Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV10QianchuanToolsAllowCouponGetRequest struct {
 	ctx            context.Context
 	ApiService     *QianchuanToolsAllowCouponV10ApiService
 	advertiserId   *int64
-	marketingGoal  *QianchuanToolsAllowCouponV10MarketingGoal
-	campaignScene  *QianchuanToolsAllowCouponV10CampaignScene
-	marketingScene *QianchuanToolsAllowCouponV10MarketingScene
+	marketingGoal  *models.QianchuanToolsAllowCouponV10MarketingGoal
+	campaignScene  *models.QianchuanToolsAllowCouponV10CampaignScene
+	marketingScene *models.QianchuanToolsAllowCouponV10MarketingScene
 	awemeIds       *[]int64
 	productIds     *[]int64
 	isLabAd        *bool
@@ -39,17 +40,17 @@ func (r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) AdvertiserId(advertis
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) MarketingGoal(marketingGoal QianchuanToolsAllowCouponV10MarketingGoal) *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest {
+func (r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) MarketingGoal(marketingGoal models.QianchuanToolsAllowCouponV10MarketingGoal) *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) CampaignScene(campaignScene QianchuanToolsAllowCouponV10CampaignScene) *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest {
+func (r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) CampaignScene(campaignScene models.QianchuanToolsAllowCouponV10CampaignScene) *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest {
 	r.campaignScene = &campaignScene
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) MarketingScene(marketingScene QianchuanToolsAllowCouponV10MarketingScene) *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest {
+func (r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) MarketingScene(marketingScene models.QianchuanToolsAllowCouponV10MarketingScene) *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest {
 	r.marketingScene = &marketingScene
 	return r
 }
@@ -70,7 +71,7 @@ func (r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) IsLabAd(isLabAd bool)
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) Execute() (*QianchuanToolsAllowCouponV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) Execute() (*models.QianchuanToolsAllowCouponV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -104,12 +105,12 @@ func (a *QianchuanToolsAllowCouponV10ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return QianchuanToolsAllowCouponV10Response
-func (a *QianchuanToolsAllowCouponV10ApiService) getExecute(r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) (*QianchuanToolsAllowCouponV10Response, *http.Response, error) {
+func (a *QianchuanToolsAllowCouponV10ApiService) getExecute(r *ApiOpenApiV10QianchuanToolsAllowCouponGetRequest) (*models.QianchuanToolsAllowCouponV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanToolsAllowCouponV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanToolsAllowCouponV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -119,7 +120,7 @@ func (a *QianchuanToolsAllowCouponV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/tools/allow_coupon/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

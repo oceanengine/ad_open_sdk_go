@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvConvertOleConvertV2ApiService AdvConvertOleConvertV2Api service
@@ -25,15 +26,15 @@ type AdvConvertOleConvertV2ApiService service
 type ApiOpenApi2AdvConvertOleConvertPostRequest struct {
 	ctx                           context.Context
 	ApiService                    *AdvConvertOleConvertV2ApiService
-	advConvertOleConvertV2Request *AdvConvertOleConvertV2Request
+	advConvertOleConvertV2Request *models.AdvConvertOleConvertV2Request
 }
 
-func (r *ApiOpenApi2AdvConvertOleConvertPostRequest) AdvConvertOleConvertV2Request(advConvertOleConvertV2Request AdvConvertOleConvertV2Request) *ApiOpenApi2AdvConvertOleConvertPostRequest {
+func (r *ApiOpenApi2AdvConvertOleConvertPostRequest) AdvConvertOleConvertV2Request(advConvertOleConvertV2Request models.AdvConvertOleConvertV2Request) *ApiOpenApi2AdvConvertOleConvertPostRequest {
 	r.advConvertOleConvertV2Request = &advConvertOleConvertV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AdvConvertOleConvertPostRequest) Execute() (*AdvConvertOleConvertV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdvConvertOleConvertPostRequest) Execute() (*models.AdvConvertOleConvertV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AdvConvertOleConvertV2ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return AdvConvertOleConvertV2Response
-func (a *AdvConvertOleConvertV2ApiService) postExecute(r *ApiOpenApi2AdvConvertOleConvertPostRequest) (*AdvConvertOleConvertV2Response, *http.Response, error) {
+func (a *AdvConvertOleConvertV2ApiService) postExecute(r *ApiOpenApi2AdvConvertOleConvertPostRequest) (*models.AdvConvertOleConvertV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvConvertOleConvertV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvConvertOleConvertV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AdvConvertOleConvertV2ApiService) postExecute(r *ApiOpenApi2AdvConvertO
 	localVarPath := localBasePath + "/open_api/2/adv_convert/ole/convert/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

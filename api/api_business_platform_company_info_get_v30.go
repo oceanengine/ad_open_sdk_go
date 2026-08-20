@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BusinessPlatformCompanyInfoGetV30ApiService BusinessPlatformCompanyInfoGetV30Api service
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV30BusinessPlatformCompanyInfoGetGetRequest) PageSize(pageSiz
 	return r
 }
 
-func (r *ApiOpenApiV30BusinessPlatformCompanyInfoGetGetRequest) Execute() (*BusinessPlatformCompanyInfoGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BusinessPlatformCompanyInfoGetGetRequest) Execute() (*models.BusinessPlatformCompanyInfoGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *BusinessPlatformCompanyInfoGetV30ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return BusinessPlatformCompanyInfoGetV30Response
-func (a *BusinessPlatformCompanyInfoGetV30ApiService) getExecute(r *ApiOpenApiV30BusinessPlatformCompanyInfoGetGetRequest) (*BusinessPlatformCompanyInfoGetV30Response, *http.Response, error) {
+func (a *BusinessPlatformCompanyInfoGetV30ApiService) getExecute(r *ApiOpenApiV30BusinessPlatformCompanyInfoGetGetRequest) (*models.BusinessPlatformCompanyInfoGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BusinessPlatformCompanyInfoGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BusinessPlatformCompanyInfoGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *BusinessPlatformCompanyInfoGetV30ApiService) getExecute(r *ApiOpenApiV3
 	localVarPath := localBasePath + "/open_api/v3.0/business_platform/company_info/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.organizationId == nil {

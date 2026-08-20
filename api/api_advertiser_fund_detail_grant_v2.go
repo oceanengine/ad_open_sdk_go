@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserFundDetailGrantV2ApiService AdvertiserFundDetailGrantV2Api service
@@ -57,7 +58,7 @@ func (r *ApiOpenApi2AdvertiserFundDetailGrantGetRequest) PageSize(pageSize int32
 	return r
 }
 
-func (r *ApiOpenApi2AdvertiserFundDetailGrantGetRequest) Execute() (*AdvertiserFundDetailGrantV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdvertiserFundDetailGrantGetRequest) Execute() (*models.AdvertiserFundDetailGrantV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *AdvertiserFundDetailGrantV2ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return AdvertiserFundDetailGrantV2Response
-func (a *AdvertiserFundDetailGrantV2ApiService) getExecute(r *ApiOpenApi2AdvertiserFundDetailGrantGetRequest) (*AdvertiserFundDetailGrantV2Response, *http.Response, error) {
+func (a *AdvertiserFundDetailGrantV2ApiService) getExecute(r *ApiOpenApi2AdvertiserFundDetailGrantGetRequest) (*models.AdvertiserFundDetailGrantV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserFundDetailGrantV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserFundDetailGrantV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *AdvertiserFundDetailGrantV2ApiService) getExecute(r *ApiOpenApi2Adverti
 	localVarPath := localBasePath + "/open_api/2/advertiser/fund/detail_grant/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

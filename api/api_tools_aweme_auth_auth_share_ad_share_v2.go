@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAwemeAuthAuthShareAdShareV2ApiService ToolsAwemeAuthAuthShareAdShareV2Api service
@@ -25,15 +26,15 @@ type ToolsAwemeAuthAuthShareAdShareV2ApiService service
 type ApiOpenApi2ToolsAwemeAuthAuthShareAdSharePostRequest struct {
 	ctx                                     context.Context
 	ApiService                              *ToolsAwemeAuthAuthShareAdShareV2ApiService
-	toolsAwemeAuthAuthShareAdShareV2Request *ToolsAwemeAuthAuthShareAdShareV2Request
+	toolsAwemeAuthAuthShareAdShareV2Request *models.ToolsAwemeAuthAuthShareAdShareV2Request
 }
 
-func (r *ApiOpenApi2ToolsAwemeAuthAuthShareAdSharePostRequest) ToolsAwemeAuthAuthShareAdShareV2Request(toolsAwemeAuthAuthShareAdShareV2Request ToolsAwemeAuthAuthShareAdShareV2Request) *ApiOpenApi2ToolsAwemeAuthAuthShareAdSharePostRequest {
+func (r *ApiOpenApi2ToolsAwemeAuthAuthShareAdSharePostRequest) ToolsAwemeAuthAuthShareAdShareV2Request(toolsAwemeAuthAuthShareAdShareV2Request models.ToolsAwemeAuthAuthShareAdShareV2Request) *ApiOpenApi2ToolsAwemeAuthAuthShareAdSharePostRequest {
 	r.toolsAwemeAuthAuthShareAdShareV2Request = &toolsAwemeAuthAuthShareAdShareV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeAuthAuthShareAdSharePostRequest) Execute() (*ToolsAwemeAuthAuthShareAdShareV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAwemeAuthAuthShareAdSharePostRequest) Execute() (*models.ToolsAwemeAuthAuthShareAdShareV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsAwemeAuthAuthShareAdShareV2ApiService) Post(ctx context.Context) *
 // Execute executes the request
 //
 //	@return ToolsAwemeAuthAuthShareAdShareV2Response
-func (a *ToolsAwemeAuthAuthShareAdShareV2ApiService) postExecute(r *ApiOpenApi2ToolsAwemeAuthAuthShareAdSharePostRequest) (*ToolsAwemeAuthAuthShareAdShareV2Response, *http.Response, error) {
+func (a *ToolsAwemeAuthAuthShareAdShareV2ApiService) postExecute(r *ApiOpenApi2ToolsAwemeAuthAuthShareAdSharePostRequest) (*models.ToolsAwemeAuthAuthShareAdShareV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAwemeAuthAuthShareAdShareV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAwemeAuthAuthShareAdShareV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsAwemeAuthAuthShareAdShareV2ApiService) postExecute(r *ApiOpenApi2T
 	localVarPath := localBasePath + "/open_api/2/tools/aweme_auth/auth_share/ad_share/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

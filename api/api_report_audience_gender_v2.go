@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportAudienceGenderV2ApiService ReportAudienceGenderV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2ReportAudienceGenderGetRequest struct {
 	ApiService   *ReportAudienceGenderV2ApiService
 	advertiserId *int64
 	endDate      **string
-	idType       *ReportAudienceGenderV2IdType
+	idType       *models.ReportAudienceGenderV2IdType
 	ids          *[]int64
 	metrics      *[]string
 	startDate    **string
@@ -43,7 +44,7 @@ func (r *ApiOpenApi2ReportAudienceGenderGetRequest) EndDate(endDate *string) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2ReportAudienceGenderGetRequest) IdType(idType ReportAudienceGenderV2IdType) *ApiOpenApi2ReportAudienceGenderGetRequest {
+func (r *ApiOpenApi2ReportAudienceGenderGetRequest) IdType(idType models.ReportAudienceGenderV2IdType) *ApiOpenApi2ReportAudienceGenderGetRequest {
 	r.idType = &idType
 	return r
 }
@@ -63,7 +64,7 @@ func (r *ApiOpenApi2ReportAudienceGenderGetRequest) StartDate(startDate *string)
 	return r
 }
 
-func (r *ApiOpenApi2ReportAudienceGenderGetRequest) Execute() (*ReportAudienceGenderV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ReportAudienceGenderGetRequest) Execute() (*models.ReportAudienceGenderV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ReportAudienceGenderV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return ReportAudienceGenderV2Response
-func (a *ReportAudienceGenderV2ApiService) getExecute(r *ApiOpenApi2ReportAudienceGenderGetRequest) (*ReportAudienceGenderV2Response, *http.Response, error) {
+func (a *ReportAudienceGenderV2ApiService) getExecute(r *ApiOpenApi2ReportAudienceGenderGetRequest) (*models.ReportAudienceGenderV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportAudienceGenderV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportAudienceGenderV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ReportAudienceGenderV2ApiService) getExecute(r *ApiOpenApi2ReportAudien
 	localVarPath := localBasePath + "/open_api/2/report/audience/gender/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

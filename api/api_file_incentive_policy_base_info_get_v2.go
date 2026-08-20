@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileIncentivePolicyBaseInfoGetV2ApiService FileIncentivePolicyBaseInfoGetV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest) Year(year int64) *
 	return r
 }
 
-func (r *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest) Execute() (*FileIncentivePolicyBaseInfoGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest) Execute() (*models.FileIncentivePolicyBaseInfoGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *FileIncentivePolicyBaseInfoGetV2ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return FileIncentivePolicyBaseInfoGetV2Response
-func (a *FileIncentivePolicyBaseInfoGetV2ApiService) getExecute(r *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest) (*FileIncentivePolicyBaseInfoGetV2Response, *http.Response, error) {
+func (a *FileIncentivePolicyBaseInfoGetV2ApiService) getExecute(r *ApiOpenApi2FileIncentivePolicyBaseInfoGetGetRequest) (*models.FileIncentivePolicyBaseInfoGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileIncentivePolicyBaseInfoGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileIncentivePolicyBaseInfoGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *FileIncentivePolicyBaseInfoGetV2ApiService) getExecute(r *ApiOpenApi2Fi
 	localVarPath := localBasePath + "/open_api/2/file/incentive_policy_base_info/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanToolsGrayV10ApiService QianchuanToolsGrayV10Api service
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV10QianchuanToolsGrayGetRequest) AwemeIds(awemeIds []int64) *
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsGrayGetRequest) Execute() (*QianchuanToolsGrayV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanToolsGrayGetRequest) Execute() (*models.QianchuanToolsGrayV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *QianchuanToolsGrayV10ApiService) Get(ctx context.Context) *ApiOpenApiV1
 // Execute executes the request
 //
 //	@return QianchuanToolsGrayV10Response
-func (a *QianchuanToolsGrayV10ApiService) getExecute(r *ApiOpenApiV10QianchuanToolsGrayGetRequest) (*QianchuanToolsGrayV10Response, *http.Response, error) {
+func (a *QianchuanToolsGrayV10ApiService) getExecute(r *ApiOpenApiV10QianchuanToolsGrayGetRequest) (*models.QianchuanToolsGrayV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanToolsGrayV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanToolsGrayV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *QianchuanToolsGrayV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTo
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/tools/gray/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

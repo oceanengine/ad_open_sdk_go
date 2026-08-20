@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandCustomAudienceListV30ApiService BrandCustomAudienceListV30Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApiV30BrandCustomAudienceListGetRequest) AdvertiserId(advertiser
 	return r
 }
 
-func (r *ApiOpenApiV30BrandCustomAudienceListGetRequest) Execute() (*BrandCustomAudienceListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandCustomAudienceListGetRequest) Execute() (*models.BrandCustomAudienceListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *BrandCustomAudienceListV30ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return BrandCustomAudienceListV30Response
-func (a *BrandCustomAudienceListV30ApiService) getExecute(r *ApiOpenApiV30BrandCustomAudienceListGetRequest) (*BrandCustomAudienceListV30Response, *http.Response, error) {
+func (a *BrandCustomAudienceListV30ApiService) getExecute(r *ApiOpenApiV30BrandCustomAudienceListGetRequest) (*models.BrandCustomAudienceListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandCustomAudienceListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandCustomAudienceListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *BrandCustomAudienceListV30ApiService) getExecute(r *ApiOpenApiV30BrandC
 	localVarPath := localBasePath + "/open_api/v3.0/brand/custom_audience/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

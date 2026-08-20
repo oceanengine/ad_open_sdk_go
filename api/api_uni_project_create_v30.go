@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // UniProjectCreateV30ApiService UniProjectCreateV30Api service
@@ -25,15 +26,15 @@ type UniProjectCreateV30ApiService service
 type ApiOpenApiV30UniProjectCreatePostRequest struct {
 	ctx                        context.Context
 	ApiService                 *UniProjectCreateV30ApiService
-	uniProjectCreateV30Request *UniProjectCreateV30Request
+	uniProjectCreateV30Request *models.UniProjectCreateV30Request
 }
 
-func (r *ApiOpenApiV30UniProjectCreatePostRequest) UniProjectCreateV30Request(uniProjectCreateV30Request UniProjectCreateV30Request) *ApiOpenApiV30UniProjectCreatePostRequest {
+func (r *ApiOpenApiV30UniProjectCreatePostRequest) UniProjectCreateV30Request(uniProjectCreateV30Request models.UniProjectCreateV30Request) *ApiOpenApiV30UniProjectCreatePostRequest {
 	r.uniProjectCreateV30Request = &uniProjectCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30UniProjectCreatePostRequest) Execute() (*UniProjectCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30UniProjectCreatePostRequest) Execute() (*models.UniProjectCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *UniProjectCreateV30ApiService) Post(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return UniProjectCreateV30Response
-func (a *UniProjectCreateV30ApiService) postExecute(r *ApiOpenApiV30UniProjectCreatePostRequest) (*UniProjectCreateV30Response, *http.Response, error) {
+func (a *UniProjectCreateV30ApiService) postExecute(r *ApiOpenApiV30UniProjectCreatePostRequest) (*models.UniProjectCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *UniProjectCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.UniProjectCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *UniProjectCreateV30ApiService) postExecute(r *ApiOpenApiV30UniProjectCr
 	localVarPath := localBasePath + "/open_api/v3.0/uni_project/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

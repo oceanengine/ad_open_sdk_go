@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserFundGrantTransactionGetV2ApiService AdvertiserFundGrantTransactionGetV2Api service
@@ -63,7 +64,7 @@ func (r *ApiOpenApi2AdvertiserFundGrantTransactionGetGetRequest) TransactionType
 	return r
 }
 
-func (r *ApiOpenApi2AdvertiserFundGrantTransactionGetGetRequest) Execute() (*AdvertiserFundGrantTransactionGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdvertiserFundGrantTransactionGetGetRequest) Execute() (*models.AdvertiserFundGrantTransactionGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *AdvertiserFundGrantTransactionGetV2ApiService) Get(ctx context.Context)
 // Execute executes the request
 //
 //	@return AdvertiserFundGrantTransactionGetV2Response
-func (a *AdvertiserFundGrantTransactionGetV2ApiService) getExecute(r *ApiOpenApi2AdvertiserFundGrantTransactionGetGetRequest) (*AdvertiserFundGrantTransactionGetV2Response, *http.Response, error) {
+func (a *AdvertiserFundGrantTransactionGetV2ApiService) getExecute(r *ApiOpenApi2AdvertiserFundGrantTransactionGetGetRequest) (*models.AdvertiserFundGrantTransactionGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserFundGrantTransactionGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserFundGrantTransactionGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *AdvertiserFundGrantTransactionGetV2ApiService) getExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/2/advertiser/fund/grant_transaction/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

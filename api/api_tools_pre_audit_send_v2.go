@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPreAuditSendV2ApiService ToolsPreAuditSendV2Api service
@@ -25,15 +26,15 @@ type ToolsPreAuditSendV2ApiService service
 type ApiOpenApi2ToolsPreAuditSendPostRequest struct {
 	ctx                        context.Context
 	ApiService                 *ToolsPreAuditSendV2ApiService
-	toolsPreAuditSendV2Request *ToolsPreAuditSendV2Request
+	toolsPreAuditSendV2Request *models.ToolsPreAuditSendV2Request
 }
 
-func (r *ApiOpenApi2ToolsPreAuditSendPostRequest) ToolsPreAuditSendV2Request(toolsPreAuditSendV2Request ToolsPreAuditSendV2Request) *ApiOpenApi2ToolsPreAuditSendPostRequest {
+func (r *ApiOpenApi2ToolsPreAuditSendPostRequest) ToolsPreAuditSendV2Request(toolsPreAuditSendV2Request models.ToolsPreAuditSendV2Request) *ApiOpenApi2ToolsPreAuditSendPostRequest {
 	r.toolsPreAuditSendV2Request = &toolsPreAuditSendV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPreAuditSendPostRequest) Execute() (*ToolsPreAuditSendV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPreAuditSendPostRequest) Execute() (*models.ToolsPreAuditSendV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *ToolsPreAuditSendV2ApiService) Post(ctx context.Context) *ApiOpenApi2To
 // Execute executes the request
 //
 //	@return ToolsPreAuditSendV2Response
-func (a *ToolsPreAuditSendV2ApiService) postExecute(r *ApiOpenApi2ToolsPreAuditSendPostRequest) (*ToolsPreAuditSendV2Response, *http.Response, error) {
+func (a *ToolsPreAuditSendV2ApiService) postExecute(r *ApiOpenApi2ToolsPreAuditSendPostRequest) (*models.ToolsPreAuditSendV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPreAuditSendV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPreAuditSendV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *ToolsPreAuditSendV2ApiService) postExecute(r *ApiOpenApi2ToolsPreAuditS
 	localVarPath := localBasePath + "/open_api/2/tools/pre_audit/send/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

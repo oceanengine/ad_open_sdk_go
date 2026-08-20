@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsUnionFlowPackagePromotionReportV30ApiService ToolsUnionFlowPackagePromotionReportV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsUnionFlowPackagePromotionReportV30ApiService
 	advertiserId *int64
-	filter       *ToolsUnionFlowPackagePromotionReportV30Filter
+	filter       *models.ToolsUnionFlowPackagePromotionReportV30Filter
 	orderField   *string
-	orderType    *ToolsUnionFlowPackagePromotionReportV30OrderType
+	orderType    *models.ToolsUnionFlowPackagePromotionReportV30OrderType
 	page         *int64
 	pageSize     *int64
 }
@@ -40,7 +41,7 @@ func (r *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest) Advertiser
 }
 
 // 筛选条件
-func (r *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest) Filter(filter ToolsUnionFlowPackagePromotionReportV30Filter) *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest {
+func (r *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest) Filter(filter models.ToolsUnionFlowPackagePromotionReportV30Filter) *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest {
 	r.filter = &filter
 	return r
 }
@@ -52,7 +53,7 @@ func (r *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest) OrderField
 }
 
 // 排序方式 枚举值：ASC（升序），DESC（降序） 默认：DESC
-func (r *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest) OrderType(orderType ToolsUnionFlowPackagePromotionReportV30OrderType) *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest {
+func (r *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest) OrderType(orderType models.ToolsUnionFlowPackagePromotionReportV30OrderType) *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest) PageSize(p
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest) Execute() (*ToolsUnionFlowPackagePromotionReportV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest) Execute() (*models.ToolsUnionFlowPackagePromotionReportV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *ToolsUnionFlowPackagePromotionReportV30ApiService) Get(ctx context.Cont
 // Execute executes the request
 //
 //	@return ToolsUnionFlowPackagePromotionReportV30Response
-func (a *ToolsUnionFlowPackagePromotionReportV30ApiService) getExecute(r *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest) (*ToolsUnionFlowPackagePromotionReportV30Response, *http.Response, error) {
+func (a *ToolsUnionFlowPackagePromotionReportV30ApiService) getExecute(r *ApiOpenApiV30ToolsUnionFlowPackagePromotionReportGetRequest) (*models.ToolsUnionFlowPackagePromotionReportV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsUnionFlowPackagePromotionReportV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsUnionFlowPackagePromotionReportV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *ToolsUnionFlowPackagePromotionReportV30ApiService) getExecute(r *ApiOpe
 	localVarPath := localBasePath + "/open_api/v3.0/tools/union/flow_package/promotion/report/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

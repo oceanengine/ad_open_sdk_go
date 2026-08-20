@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanVideoGetV10ApiService QianchuanVideoGetV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanVideoGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanVideoGetV10ApiService
 	advertiserId *int64
-	filtering    *QianchuanVideoGetV10Filtering
+	filtering    *models.QianchuanVideoGetV10Filtering
 	page         *int32
 	pageSize     *int32
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApiV10QianchuanVideoGetGetRequest) AdvertiserId(advertiserId int
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanVideoGetGetRequest) Filtering(filtering QianchuanVideoGetV10Filtering) *ApiOpenApiV10QianchuanVideoGetGetRequest {
+func (r *ApiOpenApiV10QianchuanVideoGetGetRequest) Filtering(filtering models.QianchuanVideoGetV10Filtering) *ApiOpenApiV10QianchuanVideoGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV10QianchuanVideoGetGetRequest) PageSize(pageSize int32) *Api
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanVideoGetGetRequest) Execute() (*QianchuanVideoGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanVideoGetGetRequest) Execute() (*models.QianchuanVideoGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -87,12 +88,12 @@ func (a *QianchuanVideoGetV10ApiService) Get(ctx context.Context) *ApiOpenApiV10
 // Execute executes the request
 //
 //	@return QianchuanVideoGetV10Response
-func (a *QianchuanVideoGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanVideoGetGetRequest) (*QianchuanVideoGetV10Response, *http.Response, error) {
+func (a *QianchuanVideoGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanVideoGetGetRequest) (*models.QianchuanVideoGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanVideoGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanVideoGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -102,7 +103,7 @@ func (a *QianchuanVideoGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanVid
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/video/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

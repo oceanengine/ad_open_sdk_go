@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // NativeAnchorDeleteV30ApiService NativeAnchorDeleteV30Api service
@@ -25,15 +26,15 @@ type NativeAnchorDeleteV30ApiService service
 type ApiOpenApiV30NativeAnchorDeletePostRequest struct {
 	ctx                          context.Context
 	ApiService                   *NativeAnchorDeleteV30ApiService
-	nativeAnchorDeleteV30Request *NativeAnchorDeleteV30Request
+	nativeAnchorDeleteV30Request *models.NativeAnchorDeleteV30Request
 }
 
-func (r *ApiOpenApiV30NativeAnchorDeletePostRequest) NativeAnchorDeleteV30Request(nativeAnchorDeleteV30Request NativeAnchorDeleteV30Request) *ApiOpenApiV30NativeAnchorDeletePostRequest {
+func (r *ApiOpenApiV30NativeAnchorDeletePostRequest) NativeAnchorDeleteV30Request(nativeAnchorDeleteV30Request models.NativeAnchorDeleteV30Request) *ApiOpenApiV30NativeAnchorDeletePostRequest {
 	r.nativeAnchorDeleteV30Request = &nativeAnchorDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30NativeAnchorDeletePostRequest) Execute() (*NativeAnchorDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30NativeAnchorDeletePostRequest) Execute() (*models.NativeAnchorDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *NativeAnchorDeleteV30ApiService) Post(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return NativeAnchorDeleteV30Response
-func (a *NativeAnchorDeleteV30ApiService) postExecute(r *ApiOpenApiV30NativeAnchorDeletePostRequest) (*NativeAnchorDeleteV30Response, *http.Response, error) {
+func (a *NativeAnchorDeleteV30ApiService) postExecute(r *ApiOpenApiV30NativeAnchorDeletePostRequest) (*models.NativeAnchorDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *NativeAnchorDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.NativeAnchorDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *NativeAnchorDeleteV30ApiService) postExecute(r *ApiOpenApiV30NativeAnch
 	localVarPath := localBasePath + "/open_api/v3.0/native_anchor/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

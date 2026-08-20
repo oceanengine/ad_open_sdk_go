@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ProjectDeleteV30ApiService ProjectDeleteV30Api service
@@ -25,15 +26,15 @@ type ProjectDeleteV30ApiService service
 type ApiOpenApiV30ProjectDeletePostRequest struct {
 	ctx                     context.Context
 	ApiService              *ProjectDeleteV30ApiService
-	projectDeleteV30Request *ProjectDeleteV30Request
+	projectDeleteV30Request *models.ProjectDeleteV30Request
 }
 
-func (r *ApiOpenApiV30ProjectDeletePostRequest) ProjectDeleteV30Request(projectDeleteV30Request ProjectDeleteV30Request) *ApiOpenApiV30ProjectDeletePostRequest {
+func (r *ApiOpenApiV30ProjectDeletePostRequest) ProjectDeleteV30Request(projectDeleteV30Request models.ProjectDeleteV30Request) *ApiOpenApiV30ProjectDeletePostRequest {
 	r.projectDeleteV30Request = &projectDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ProjectDeletePostRequest) Execute() (*ProjectDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ProjectDeletePostRequest) Execute() (*models.ProjectDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ProjectDeleteV30ApiService) Post(ctx context.Context) *ApiOpenApiV30Pro
 // Execute executes the request
 //
 //	@return ProjectDeleteV30Response
-func (a *ProjectDeleteV30ApiService) postExecute(r *ApiOpenApiV30ProjectDeletePostRequest) (*ProjectDeleteV30Response, *http.Response, error) {
+func (a *ProjectDeleteV30ApiService) postExecute(r *ApiOpenApiV30ProjectDeletePostRequest) (*models.ProjectDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ProjectDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ProjectDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ProjectDeleteV30ApiService) postExecute(r *ApiOpenApiV30ProjectDeletePo
 	localVarPath := localBasePath + "/open_api/v3.0/project/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

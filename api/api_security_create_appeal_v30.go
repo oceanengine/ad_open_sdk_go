@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SecurityCreateAppealV30ApiService SecurityCreateAppealV30Api service
@@ -25,15 +26,15 @@ type SecurityCreateAppealV30ApiService service
 type ApiOpenApiV30SecurityCreateAppealPostRequest struct {
 	ctx                            context.Context
 	ApiService                     *SecurityCreateAppealV30ApiService
-	securityCreateAppealV30Request *SecurityCreateAppealV30Request
+	securityCreateAppealV30Request *models.SecurityCreateAppealV30Request
 }
 
-func (r *ApiOpenApiV30SecurityCreateAppealPostRequest) SecurityCreateAppealV30Request(securityCreateAppealV30Request SecurityCreateAppealV30Request) *ApiOpenApiV30SecurityCreateAppealPostRequest {
+func (r *ApiOpenApiV30SecurityCreateAppealPostRequest) SecurityCreateAppealV30Request(securityCreateAppealV30Request models.SecurityCreateAppealV30Request) *ApiOpenApiV30SecurityCreateAppealPostRequest {
 	r.securityCreateAppealV30Request = &securityCreateAppealV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30SecurityCreateAppealPostRequest) Execute() (*SecurityCreateAppealV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SecurityCreateAppealPostRequest) Execute() (*models.SecurityCreateAppealV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *SecurityCreateAppealV30ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return SecurityCreateAppealV30Response
-func (a *SecurityCreateAppealV30ApiService) postExecute(r *ApiOpenApiV30SecurityCreateAppealPostRequest) (*SecurityCreateAppealV30Response, *http.Response, error) {
+func (a *SecurityCreateAppealV30ApiService) postExecute(r *ApiOpenApiV30SecurityCreateAppealPostRequest) (*models.SecurityCreateAppealV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SecurityCreateAppealV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SecurityCreateAppealV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *SecurityCreateAppealV30ApiService) postExecute(r *ApiOpenApiV30Security
 	localVarPath := localBasePath + "/open_api/v3.0/security/create_appeal/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

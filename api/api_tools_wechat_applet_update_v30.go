@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsWechatAppletUpdateV30ApiService ToolsWechatAppletUpdateV30Api service
@@ -25,15 +26,15 @@ type ToolsWechatAppletUpdateV30ApiService service
 type ApiOpenApiV30ToolsWechatAppletUpdatePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *ToolsWechatAppletUpdateV30ApiService
-	toolsWechatAppletUpdateV30Request *ToolsWechatAppletUpdateV30Request
+	toolsWechatAppletUpdateV30Request *models.ToolsWechatAppletUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsWechatAppletUpdatePostRequest) ToolsWechatAppletUpdateV30Request(toolsWechatAppletUpdateV30Request ToolsWechatAppletUpdateV30Request) *ApiOpenApiV30ToolsWechatAppletUpdatePostRequest {
+func (r *ApiOpenApiV30ToolsWechatAppletUpdatePostRequest) ToolsWechatAppletUpdateV30Request(toolsWechatAppletUpdateV30Request models.ToolsWechatAppletUpdateV30Request) *ApiOpenApiV30ToolsWechatAppletUpdatePostRequest {
 	r.toolsWechatAppletUpdateV30Request = &toolsWechatAppletUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsWechatAppletUpdatePostRequest) Execute() (*ToolsWechatAppletUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsWechatAppletUpdatePostRequest) Execute() (*models.ToolsWechatAppletUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsWechatAppletUpdateV30ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsWechatAppletUpdateV30Response
-func (a *ToolsWechatAppletUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsWechatAppletUpdatePostRequest) (*ToolsWechatAppletUpdateV30Response, *http.Response, error) {
+func (a *ToolsWechatAppletUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsWechatAppletUpdatePostRequest) (*models.ToolsWechatAppletUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsWechatAppletUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsWechatAppletUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsWechatAppletUpdateV30ApiService) postExecute(r *ApiOpenApiV30Tools
 	localVarPath := localBasePath + "/open_api/v3.0/tools/wechat_applet/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

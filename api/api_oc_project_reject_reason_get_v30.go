@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OcProjectRejectReasonGetV30ApiService OcProjectRejectReasonGetV30Api service
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV30OcProjectRejectReasonGetGetRequest) PageSize(pageSize int6
 	return r
 }
 
-func (r *ApiOpenApiV30OcProjectRejectReasonGetGetRequest) Execute() (*OcProjectRejectReasonGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OcProjectRejectReasonGetGetRequest) Execute() (*models.OcProjectRejectReasonGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *OcProjectRejectReasonGetV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return OcProjectRejectReasonGetV30Response
-func (a *OcProjectRejectReasonGetV30ApiService) getExecute(r *ApiOpenApiV30OcProjectRejectReasonGetGetRequest) (*OcProjectRejectReasonGetV30Response, *http.Response, error) {
+func (a *OcProjectRejectReasonGetV30ApiService) getExecute(r *ApiOpenApiV30OcProjectRejectReasonGetGetRequest) (*models.OcProjectRejectReasonGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OcProjectRejectReasonGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OcProjectRejectReasonGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *OcProjectRejectReasonGetV30ApiService) getExecute(r *ApiOpenApiV30OcPro
 	localVarPath := localBasePath + "/open_api/v3.0/oc_project/reject_reason/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

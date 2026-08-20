@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // NativeAnchorCreateV30ApiService NativeAnchorCreateV30Api service
@@ -25,15 +26,15 @@ type NativeAnchorCreateV30ApiService service
 type ApiOpenApiV30NativeAnchorCreatePostRequest struct {
 	ctx                          context.Context
 	ApiService                   *NativeAnchorCreateV30ApiService
-	nativeAnchorCreateV30Request *NativeAnchorCreateV30Request
+	nativeAnchorCreateV30Request *models.NativeAnchorCreateV30Request
 }
 
-func (r *ApiOpenApiV30NativeAnchorCreatePostRequest) NativeAnchorCreateV30Request(nativeAnchorCreateV30Request NativeAnchorCreateV30Request) *ApiOpenApiV30NativeAnchorCreatePostRequest {
+func (r *ApiOpenApiV30NativeAnchorCreatePostRequest) NativeAnchorCreateV30Request(nativeAnchorCreateV30Request models.NativeAnchorCreateV30Request) *ApiOpenApiV30NativeAnchorCreatePostRequest {
 	r.nativeAnchorCreateV30Request = &nativeAnchorCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30NativeAnchorCreatePostRequest) Execute() (*NativeAnchorCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30NativeAnchorCreatePostRequest) Execute() (*models.NativeAnchorCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *NativeAnchorCreateV30ApiService) Post(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return NativeAnchorCreateV30Response
-func (a *NativeAnchorCreateV30ApiService) postExecute(r *ApiOpenApiV30NativeAnchorCreatePostRequest) (*NativeAnchorCreateV30Response, *http.Response, error) {
+func (a *NativeAnchorCreateV30ApiService) postExecute(r *ApiOpenApiV30NativeAnchorCreatePostRequest) (*models.NativeAnchorCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *NativeAnchorCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.NativeAnchorCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *NativeAnchorCreateV30ApiService) postExecute(r *ApiOpenApiV30NativeAnch
 	localVarPath := localBasePath + "/open_api/v3.0/native_anchor/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

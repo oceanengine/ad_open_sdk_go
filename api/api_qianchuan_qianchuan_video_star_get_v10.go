@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanQianchuanVideoStarGetV10ApiService QianchuanQianchuanVideoStarGetV10Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanQianchuanVideoStarGetV10ApiService
 	advertiserId *int64
-	filtering    *QianchuanQianchuanVideoStarGetV10Filtering
-	orderField   *QianchuanQianchuanVideoStarGetV10OrderField
+	filtering    *models.QianchuanQianchuanVideoStarGetV10Filtering
+	orderField   *models.QianchuanQianchuanVideoStarGetV10OrderField
 	cursor       *int64
 	count        *int64
 }
@@ -38,13 +39,13 @@ func (r *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest) AdvertiserId(adv
 }
 
 // 视频过滤条件
-func (r *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest) Filtering(filtering QianchuanQianchuanVideoStarGetV10Filtering) *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest {
+func (r *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest) Filtering(filtering models.QianchuanQianchuanVideoStarGetV10Filtering) *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
 // 排序字段。默认根据创建时间排序排序 - 按创建时间从近到远：creat_time - 按整体消耗从高到低:stat_cost - 按整体点击率从高到低:ctr - 按整体转化率从高到低:convert_rate - 按整体支付ROI从高到低:total_prepay_and_pay_order_roi2 - 按整体成交金额从高到低:total_pay_order_gmv_for_roi2 - 按播放数从高到低:view_cnt - 按点赞数从高到低:like_cnt - 按评论数从高到低:comment_cnt - 按分享数从高到低:share_cnt
-func (r *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest) OrderField(orderField QianchuanQianchuanVideoStarGetV10OrderField) *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest {
+func (r *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest) OrderField(orderField models.QianchuanQianchuanVideoStarGetV10OrderField) *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
@@ -61,7 +62,7 @@ func (r *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest) Count(count int6
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest) Execute() (*QianchuanQianchuanVideoStarGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest) Execute() (*models.QianchuanQianchuanVideoStarGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *QianchuanQianchuanVideoStarGetV10ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return QianchuanQianchuanVideoStarGetV10Response
-func (a *QianchuanQianchuanVideoStarGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest) (*QianchuanQianchuanVideoStarGetV10Response, *http.Response, error) {
+func (a *QianchuanQianchuanVideoStarGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanQianchuanVideoStarGetGetRequest) (*models.QianchuanQianchuanVideoStarGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanQianchuanVideoStarGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanQianchuanVideoStarGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *QianchuanQianchuanVideoStarGetV10ApiService) getExecute(r *ApiOpenApiV1
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/qianchuan/video/star/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

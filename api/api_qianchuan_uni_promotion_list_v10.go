@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionListV10ApiService QianchuanUniPromotionListV10Api service
@@ -28,16 +29,16 @@ type ApiOpenApiV10QianchuanUniPromotionListGetRequest struct {
 	advertiserId       *int64
 	startTime          *string
 	endTime            *string
-	marketingGoal      *QianchuanUniPromotionListV10MarketingGoal
-	fields             *[]*QianchuanUniPromotionListV10Fields
-	filtering          *QianchuanUniPromotionListV10Filtering
+	marketingGoal      *models.QianchuanUniPromotionListV10MarketingGoal
+	fields             *[]*models.QianchuanUniPromotionListV10Fields
+	filtering          *models.QianchuanUniPromotionListV10Filtering
 	needCompensateInfo *bool
-	orderType          *QianchuanUniPromotionListV10OrderType
-	orderField         *QianchuanUniPromotionListV10OrderField
+	orderType          *models.QianchuanUniPromotionListV10OrderType
+	orderField         *models.QianchuanUniPromotionListV10OrderField
 	page               *int32
-	pageSize           *QianchuanUniPromotionListV10PageSize
-	adlabScene         *QianchuanUniPromotionListV10AdlabScene
-	dataPeriod         *QianchuanUniPromotionListV10DataPeriod
+	pageSize           *models.QianchuanUniPromotionListV10PageSize
+	adlabScene         *models.QianchuanUniPromotionListV10AdlabScene
+	dataPeriod         *models.QianchuanUniPromotionListV10DataPeriod
 }
 
 func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
@@ -55,18 +56,18 @@ func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) EndTime(endTime strin
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) MarketingGoal(marketingGoal QianchuanUniPromotionListV10MarketingGoal) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) MarketingGoal(marketingGoal models.QianchuanUniPromotionListV10MarketingGoal) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Fields(fields []*QianchuanUniPromotionListV10Fields) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Fields(fields []*models.QianchuanUniPromotionListV10Fields) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.fields = &fields
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Filtering(filtering QianchuanUniPromotionListV10Filtering) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Filtering(filtering models.QianchuanUniPromotionListV10Filtering) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -77,12 +78,12 @@ func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) NeedCompensateInfo(ne
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) OrderType(orderType QianchuanUniPromotionListV10OrderType) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) OrderType(orderType models.QianchuanUniPromotionListV10OrderType) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.orderType = &orderType
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) OrderField(orderField QianchuanUniPromotionListV10OrderField) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) OrderField(orderField models.QianchuanUniPromotionListV10OrderField) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.orderField = &orderField
 	return r
 }
@@ -92,23 +93,23 @@ func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Page(page int32) *Api
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) PageSize(pageSize QianchuanUniPromotionListV10PageSize) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) PageSize(pageSize models.QianchuanUniPromotionListV10PageSize) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.pageSize = &pageSize
 	return r
 }
 
 // 计划类型（全域 or 乘方）
-func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) AdlabScene(adlabScene QianchuanUniPromotionListV10AdlabScene) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) AdlabScene(adlabScene models.QianchuanUniPromotionListV10AdlabScene) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.adlabScene = &adlabScene
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) DataPeriod(dataPeriod QianchuanUniPromotionListV10DataPeriod) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) DataPeriod(dataPeriod models.QianchuanUniPromotionListV10DataPeriod) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.dataPeriod = &dataPeriod
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Execute() (*QianchuanUniPromotionListV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Execute() (*models.QianchuanUniPromotionListV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -142,12 +143,12 @@ func (a *QianchuanUniPromotionListV10ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionListV10Response
-func (a *QianchuanUniPromotionListV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) (*QianchuanUniPromotionListV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionListV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) (*models.QianchuanUniPromotionListV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionListV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionListV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -157,7 +158,7 @@ func (a *QianchuanUniPromotionListV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

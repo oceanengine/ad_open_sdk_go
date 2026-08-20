@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // PromotionAutoGenerateConfigCreateV30ApiService PromotionAutoGenerateConfigCreateV30Api service
@@ -25,15 +26,15 @@ type PromotionAutoGenerateConfigCreateV30ApiService service
 type ApiOpenApiV30PromotionAutoGenerateConfigCreatePostRequest struct {
 	ctx                                         context.Context
 	ApiService                                  *PromotionAutoGenerateConfigCreateV30ApiService
-	promotionAutoGenerateConfigCreateV30Request *PromotionAutoGenerateConfigCreateV30Request
+	promotionAutoGenerateConfigCreateV30Request *models.PromotionAutoGenerateConfigCreateV30Request
 }
 
-func (r *ApiOpenApiV30PromotionAutoGenerateConfigCreatePostRequest) PromotionAutoGenerateConfigCreateV30Request(promotionAutoGenerateConfigCreateV30Request PromotionAutoGenerateConfigCreateV30Request) *ApiOpenApiV30PromotionAutoGenerateConfigCreatePostRequest {
+func (r *ApiOpenApiV30PromotionAutoGenerateConfigCreatePostRequest) PromotionAutoGenerateConfigCreateV30Request(promotionAutoGenerateConfigCreateV30Request models.PromotionAutoGenerateConfigCreateV30Request) *ApiOpenApiV30PromotionAutoGenerateConfigCreatePostRequest {
 	r.promotionAutoGenerateConfigCreateV30Request = &promotionAutoGenerateConfigCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30PromotionAutoGenerateConfigCreatePostRequest) Execute() (*PromotionAutoGenerateConfigCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30PromotionAutoGenerateConfigCreatePostRequest) Execute() (*models.PromotionAutoGenerateConfigCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *PromotionAutoGenerateConfigCreateV30ApiService) Post(ctx context.Contex
 // Execute executes the request
 //
 //	@return PromotionAutoGenerateConfigCreateV30Response
-func (a *PromotionAutoGenerateConfigCreateV30ApiService) postExecute(r *ApiOpenApiV30PromotionAutoGenerateConfigCreatePostRequest) (*PromotionAutoGenerateConfigCreateV30Response, *http.Response, error) {
+func (a *PromotionAutoGenerateConfigCreateV30ApiService) postExecute(r *ApiOpenApiV30PromotionAutoGenerateConfigCreatePostRequest) (*models.PromotionAutoGenerateConfigCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *PromotionAutoGenerateConfigCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.PromotionAutoGenerateConfigCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *PromotionAutoGenerateConfigCreateV30ApiService) postExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/v3.0/promotion/auto_generate_config/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

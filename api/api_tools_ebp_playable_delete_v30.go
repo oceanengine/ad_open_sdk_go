@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpPlayableDeleteV30ApiService ToolsEbpPlayableDeleteV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpPlayableDeleteV30ApiService service
 type ApiOpenApiV30ToolsEbpPlayableDeletePostRequest struct {
 	ctx                              context.Context
 	ApiService                       *ToolsEbpPlayableDeleteV30ApiService
-	toolsEbpPlayableDeleteV30Request *ToolsEbpPlayableDeleteV30Request
+	toolsEbpPlayableDeleteV30Request *models.ToolsEbpPlayableDeleteV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpPlayableDeletePostRequest) ToolsEbpPlayableDeleteV30Request(toolsEbpPlayableDeleteV30Request ToolsEbpPlayableDeleteV30Request) *ApiOpenApiV30ToolsEbpPlayableDeletePostRequest {
+func (r *ApiOpenApiV30ToolsEbpPlayableDeletePostRequest) ToolsEbpPlayableDeleteV30Request(toolsEbpPlayableDeleteV30Request models.ToolsEbpPlayableDeleteV30Request) *ApiOpenApiV30ToolsEbpPlayableDeletePostRequest {
 	r.toolsEbpPlayableDeleteV30Request = &toolsEbpPlayableDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpPlayableDeletePostRequest) Execute() (*ToolsEbpPlayableDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpPlayableDeletePostRequest) Execute() (*models.ToolsEbpPlayableDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpPlayableDeleteV30ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsEbpPlayableDeleteV30Response
-func (a *ToolsEbpPlayableDeleteV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpPlayableDeletePostRequest) (*ToolsEbpPlayableDeleteV30Response, *http.Response, error) {
+func (a *ToolsEbpPlayableDeleteV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpPlayableDeletePostRequest) (*models.ToolsEbpPlayableDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpPlayableDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpPlayableDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpPlayableDeleteV30ApiService) postExecute(r *ApiOpenApiV30ToolsE
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/playable/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

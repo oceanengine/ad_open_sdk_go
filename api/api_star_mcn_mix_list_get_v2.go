@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarMcnMixListGetV2ApiService StarMcnMixListGetV2Api service
@@ -59,7 +60,7 @@ func (r *ApiOpenApi2StarMcnMixListGetGetRequest) DeveloperId(developerId int64) 
 	return r
 }
 
-func (r *ApiOpenApi2StarMcnMixListGetGetRequest) Execute() (*StarMcnMixListGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarMcnMixListGetGetRequest) Execute() (*models.StarMcnMixListGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -93,12 +94,12 @@ func (a *StarMcnMixListGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Sta
 // Execute executes the request
 //
 //	@return StarMcnMixListGetV2Response
-func (a *StarMcnMixListGetV2ApiService) getExecute(r *ApiOpenApi2StarMcnMixListGetGetRequest) (*StarMcnMixListGetV2Response, *http.Response, error) {
+func (a *StarMcnMixListGetV2ApiService) getExecute(r *ApiOpenApi2StarMcnMixListGetGetRequest) (*models.StarMcnMixListGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarMcnMixListGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarMcnMixListGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -108,7 +109,7 @@ func (a *StarMcnMixListGetV2ApiService) getExecute(r *ApiOpenApi2StarMcnMixListG
 	localVarPath := localBasePath + "/open_api/2/star/mcn/mix/list/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

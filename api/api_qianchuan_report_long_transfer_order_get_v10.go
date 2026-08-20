@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportLongTransferOrderGetV10ApiService QianchuanReportLongTransferOrderGetV10Api service
@@ -28,10 +29,10 @@ type ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest struct {
 	advertiserId          *int64
 	startDate             *string
 	endDate               *string
-	optimizationTimeScope *QianchuanReportLongTransferOrderGetV10OptimizationTimeScope
-	filtering             *QianchuanReportLongTransferOrderGetV10Filtering
-	marketingGoal         *QianchuanReportLongTransferOrderGetV10MarketingGoal
-	orderType             *QianchuanReportLongTransferOrderGetV10OrderType
+	optimizationTimeScope *models.QianchuanReportLongTransferOrderGetV10OptimizationTimeScope
+	filtering             *models.QianchuanReportLongTransferOrderGetV10Filtering
+	marketingGoal         *models.QianchuanReportLongTransferOrderGetV10MarketingGoal
+	orderType             *models.QianchuanReportLongTransferOrderGetV10OrderType
 	page                  *int32
 	pageSize              *int32
 }
@@ -53,22 +54,22 @@ func (r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) EndDate(end
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) OptimizationTimeScope(optimizationTimeScope QianchuanReportLongTransferOrderGetV10OptimizationTimeScope) *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) OptimizationTimeScope(optimizationTimeScope models.QianchuanReportLongTransferOrderGetV10OptimizationTimeScope) *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest {
 	r.optimizationTimeScope = &optimizationTimeScope
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) Filtering(filtering QianchuanReportLongTransferOrderGetV10Filtering) *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) Filtering(filtering models.QianchuanReportLongTransferOrderGetV10Filtering) *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) MarketingGoal(marketingGoal QianchuanReportLongTransferOrderGetV10MarketingGoal) *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) MarketingGoal(marketingGoal models.QianchuanReportLongTransferOrderGetV10MarketingGoal) *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) OrderType(orderType QianchuanReportLongTransferOrderGetV10OrderType) *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) OrderType(orderType models.QianchuanReportLongTransferOrderGetV10OrderType) *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -83,7 +84,7 @@ func (r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) PageSize(pa
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) Execute() (*QianchuanReportLongTransferOrderGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) Execute() (*models.QianchuanReportLongTransferOrderGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -117,12 +118,12 @@ func (a *QianchuanReportLongTransferOrderGetV10ApiService) Get(ctx context.Conte
 // Execute executes the request
 //
 //	@return QianchuanReportLongTransferOrderGetV10Response
-func (a *QianchuanReportLongTransferOrderGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) (*QianchuanReportLongTransferOrderGetV10Response, *http.Response, error) {
+func (a *QianchuanReportLongTransferOrderGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportLongTransferOrderGetGetRequest) (*models.QianchuanReportLongTransferOrderGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportLongTransferOrderGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportLongTransferOrderGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -132,7 +133,7 @@ func (a *QianchuanReportLongTransferOrderGetV10ApiService) getExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/long_transfer/order/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

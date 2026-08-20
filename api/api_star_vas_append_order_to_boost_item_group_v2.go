@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarVasAppendOrderToBoostItemGroupV2ApiService StarVasAppendOrderToBoostItemGroupV2Api service
@@ -25,15 +26,15 @@ type StarVasAppendOrderToBoostItemGroupV2ApiService service
 type ApiOpenApi2StarVasAppendOrderToBoostItemGroupPostRequest struct {
 	ctx                                         context.Context
 	ApiService                                  *StarVasAppendOrderToBoostItemGroupV2ApiService
-	starVasAppendOrderToBoostItemGroupV2Request *StarVasAppendOrderToBoostItemGroupV2Request
+	starVasAppendOrderToBoostItemGroupV2Request *models.StarVasAppendOrderToBoostItemGroupV2Request
 }
 
-func (r *ApiOpenApi2StarVasAppendOrderToBoostItemGroupPostRequest) StarVasAppendOrderToBoostItemGroupV2Request(starVasAppendOrderToBoostItemGroupV2Request StarVasAppendOrderToBoostItemGroupV2Request) *ApiOpenApi2StarVasAppendOrderToBoostItemGroupPostRequest {
+func (r *ApiOpenApi2StarVasAppendOrderToBoostItemGroupPostRequest) StarVasAppendOrderToBoostItemGroupV2Request(starVasAppendOrderToBoostItemGroupV2Request models.StarVasAppendOrderToBoostItemGroupV2Request) *ApiOpenApi2StarVasAppendOrderToBoostItemGroupPostRequest {
 	r.starVasAppendOrderToBoostItemGroupV2Request = &starVasAppendOrderToBoostItemGroupV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarVasAppendOrderToBoostItemGroupPostRequest) Execute() (*StarVasAppendOrderToBoostItemGroupV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarVasAppendOrderToBoostItemGroupPostRequest) Execute() (*models.StarVasAppendOrderToBoostItemGroupV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarVasAppendOrderToBoostItemGroupV2ApiService) Post(ctx context.Contex
 // Execute executes the request
 //
 //	@return StarVasAppendOrderToBoostItemGroupV2Response
-func (a *StarVasAppendOrderToBoostItemGroupV2ApiService) postExecute(r *ApiOpenApi2StarVasAppendOrderToBoostItemGroupPostRequest) (*StarVasAppendOrderToBoostItemGroupV2Response, *http.Response, error) {
+func (a *StarVasAppendOrderToBoostItemGroupV2ApiService) postExecute(r *ApiOpenApi2StarVasAppendOrderToBoostItemGroupPostRequest) (*models.StarVasAppendOrderToBoostItemGroupV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarVasAppendOrderToBoostItemGroupV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarVasAppendOrderToBoostItemGroupV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarVasAppendOrderToBoostItemGroupV2ApiService) postExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/2/star/vas/append_order_to_boost_item_group/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

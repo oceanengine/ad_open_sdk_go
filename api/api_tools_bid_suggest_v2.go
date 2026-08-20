@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsBidSuggestV2ApiService ToolsBidSuggestV2Api service
@@ -25,76 +26,76 @@ type ToolsBidSuggestV2ApiService service
 type ApiOpenApi2ToolsBidSuggestGetRequest struct {
 	ctx                       context.Context
 	ApiService                *ToolsBidSuggestV2ApiService
-	ac                        *[]*ToolsBidSuggestV2Ac
+	ac                        *[]*models.ToolsBidSuggestV2Ac
 	actionCategories          *[]int64
-	actionDays                *ToolsBidSuggestV2ActionDays
-	actionScene               *[]*ToolsBidSuggestV2ActionScene
+	actionDays                *models.ToolsBidSuggestV2ActionDays
+	actionScene               *[]*models.ToolsBidSuggestV2ActionScene
 	actionWords               *[]int64
-	activateType              *[]*ToolsBidSuggestV2ActivateType
+	activateType              *[]*models.ToolsBidSuggestV2ActivateType
 	adId                      *int64
 	adTag                     *[]int64
 	advertiserId              *int64
-	age                       *[]*ToolsBidSuggestV2Age
-	androidOsv                *ToolsBidSuggestV2AndroidOsv
-	appBehaviorTarget         *ToolsBidSuggestV2AppBehaviorTarget
+	age                       *[]*models.ToolsBidSuggestV2Age
+	androidOsv                *models.ToolsBidSuggestV2AndroidOsv
+	appBehaviorTarget         *models.ToolsBidSuggestV2AppBehaviorTarget
 	appCategory               *[]int64
 	appIds                    *[]int64
-	articleCategory           *[]*ToolsBidSuggestV2ArticleCategory
+	articleCategory           *[]*models.ToolsBidSuggestV2ArticleCategory
 	audiencePackageId         *int64
-	autoExtendTargets         *[]*ToolsBidSuggestV2AutoExtendTargets
+	autoExtendTargets         *[]*models.ToolsBidSuggestV2AutoExtendTargets
 	awemeFanAccounts          *[]int64
-	awemeFanBehaviors         *[]*ToolsBidSuggestV2AwemeFanBehaviors
+	awemeFanBehaviors         *[]*models.ToolsBidSuggestV2AwemeFanBehaviors
 	awemeFanCategories        *[]int64
-	awemeFanTimeScope         *ToolsBidSuggestV2AwemeFanTimeScope
+	awemeFanTimeScope         *models.ToolsBidSuggestV2AwemeFanTimeScope
 	awemeFansNumbers          *[]int64
-	bidMode                   *ToolsBidSuggestV2BidMode
+	bidMode                   *models.ToolsBidSuggestV2BidMode
 	budget                    *int64
-	budgetMode                *ToolsBidSuggestV2BudgetMode
+	budgetMode                *models.ToolsBidSuggestV2BudgetMode
 	businessIds               *[]int64
 	campaignId                *int64
-	career                    *[]*ToolsBidSuggestV2Career
-	carrier                   *[]*ToolsBidSuggestV2Carrier
+	career                    *[]*models.ToolsBidSuggestV2Career
+	carrier                   *[]*models.ToolsBidSuggestV2Carrier
 	city                      *[]int64
 	convertId                 *int64
-	convertedTimeDuration     *ToolsBidSuggestV2ConvertedTimeDuration
-	deviceBrand               *[]*ToolsBidSuggestV2DeviceBrand
-	deviceType                *[]*ToolsBidSuggestV2DeviceType
-	district                  *ToolsBidSuggestV2District
-	dpaLocalAudience          *ToolsBidSuggestV2DpaLocalAudience
-	dpaRtaRecommendType       *ToolsBidSuggestV2DpaRtaRecommendType
-	dpaRtaSwitch              *ToolsBidSuggestV2DpaRtaSwitch
-	excludeCustomActions      *[]*ToolsBidSuggestV2ExcludeCustomActionsInner
+	convertedTimeDuration     *models.ToolsBidSuggestV2ConvertedTimeDuration
+	deviceBrand               *[]*models.ToolsBidSuggestV2DeviceBrand
+	deviceType                *[]*models.ToolsBidSuggestV2DeviceType
+	district                  *models.ToolsBidSuggestV2District
+	dpaLocalAudience          *models.ToolsBidSuggestV2DpaLocalAudience
+	dpaRtaRecommendType       *models.ToolsBidSuggestV2DpaRtaRecommendType
+	dpaRtaSwitch              *models.ToolsBidSuggestV2DpaRtaSwitch
+	excludeCustomActions      *[]*models.ToolsBidSuggestV2ExcludeCustomActionsInner
 	excludeFlowPackage        *[]int64
-	filterAwemeAbnormalActive *ToolsBidSuggestV2FilterAwemeAbnormalActive
+	filterAwemeAbnormalActive *models.ToolsBidSuggestV2FilterAwemeAbnormalActive
 	filterAwemeFansCount      *int64
-	filterOwnAwemeFans        *ToolsBidSuggestV2FilterOwnAwemeFans
-	flowControlMode           *ToolsBidSuggestV2FlowControlMode
+	filterOwnAwemeFans        *models.ToolsBidSuggestV2FilterOwnAwemeFans
+	flowControlMode           *models.ToolsBidSuggestV2FlowControlMode
 	flowPackage               *[]int64
-	gender                    *ToolsBidSuggestV2Gender
-	geolocation               *[]*ToolsBidSuggestV2GeolocationInner
-	hideIfConverted           *ToolsBidSuggestV2HideIfConverted
-	hideIfExists              *ToolsBidSuggestV2HideIfExists
-	includeCustomActions      *[]*ToolsBidSuggestV2IncludeCustomActionsInner
-	interestActionMode        *ToolsBidSuggestV2InterestActionMode
+	gender                    *models.ToolsBidSuggestV2Gender
+	geolocation               *[]*models.ToolsBidSuggestV2GeolocationInner
+	hideIfConverted           *models.ToolsBidSuggestV2HideIfConverted
+	hideIfExists              *models.ToolsBidSuggestV2HideIfExists
+	includeCustomActions      *[]*models.ToolsBidSuggestV2IncludeCustomActionsInner
+	interestActionMode        *models.ToolsBidSuggestV2InterestActionMode
 	interestCategories        *[]int64
 	interestTags              *[]int64
 	interestWords             *[]int64
-	iosOsv                    *ToolsBidSuggestV2IosOsv
+	iosOsv                    *models.ToolsBidSuggestV2IosOsv
 	launchPrice               *[]int64
-	locationType              *ToolsBidSuggestV2LocationType
-	platform                  *[]*ToolsBidSuggestV2Platform
-	pricing                   *ToolsBidSuggestV2Pricing
+	locationType              *models.ToolsBidSuggestV2LocationType
+	platform                  *[]*models.ToolsBidSuggestV2Platform
+	pricing                   *models.ToolsBidSuggestV2Pricing
 	regionVersion             *string
 	retargetingTags           *[]int64
 	retargetingTagsExclude    *[]int64
 	retargetingTagsInclude    *[]int64
-	retargetingType           *ToolsBidSuggestV2RetargetingType
-	scheduleType              *ToolsBidSuggestV2ScheduleType
-	superiorPopularityType    *ToolsBidSuggestV2SuperiorPopularityType
+	retargetingType           *models.ToolsBidSuggestV2RetargetingType
+	scheduleType              *models.ToolsBidSuggestV2ScheduleType
+	superiorPopularityType    *models.ToolsBidSuggestV2SuperiorPopularityType
 	userType                  *[]int64
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Ac(ac []*ToolsBidSuggestV2Ac) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Ac(ac []*models.ToolsBidSuggestV2Ac) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.ac = &ac
 	return r
 }
@@ -104,12 +105,12 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ActionCategories(actionCategories
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ActionDays(actionDays ToolsBidSuggestV2ActionDays) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ActionDays(actionDays models.ToolsBidSuggestV2ActionDays) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.actionDays = &actionDays
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ActionScene(actionScene []*ToolsBidSuggestV2ActionScene) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ActionScene(actionScene []*models.ToolsBidSuggestV2ActionScene) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.actionScene = &actionScene
 	return r
 }
@@ -119,7 +120,7 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ActionWords(actionWords []int64) 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ActivateType(activateType []*ToolsBidSuggestV2ActivateType) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ActivateType(activateType []*models.ToolsBidSuggestV2ActivateType) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.activateType = &activateType
 	return r
 }
@@ -139,17 +140,17 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AdvertiserId(advertiserId int64) 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Age(age []*ToolsBidSuggestV2Age) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Age(age []*models.ToolsBidSuggestV2Age) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.age = &age
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AndroidOsv(androidOsv ToolsBidSuggestV2AndroidOsv) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AndroidOsv(androidOsv models.ToolsBidSuggestV2AndroidOsv) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.androidOsv = &androidOsv
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AppBehaviorTarget(appBehaviorTarget ToolsBidSuggestV2AppBehaviorTarget) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AppBehaviorTarget(appBehaviorTarget models.ToolsBidSuggestV2AppBehaviorTarget) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.appBehaviorTarget = &appBehaviorTarget
 	return r
 }
@@ -164,7 +165,7 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AppIds(appIds []int64) *ApiOpenAp
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ArticleCategory(articleCategory []*ToolsBidSuggestV2ArticleCategory) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ArticleCategory(articleCategory []*models.ToolsBidSuggestV2ArticleCategory) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.articleCategory = &articleCategory
 	return r
 }
@@ -174,7 +175,7 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AudiencePackageId(audiencePackage
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AutoExtendTargets(autoExtendTargets []*ToolsBidSuggestV2AutoExtendTargets) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AutoExtendTargets(autoExtendTargets []*models.ToolsBidSuggestV2AutoExtendTargets) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.autoExtendTargets = &autoExtendTargets
 	return r
 }
@@ -184,7 +185,7 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AwemeFanAccounts(awemeFanAccounts
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AwemeFanBehaviors(awemeFanBehaviors []*ToolsBidSuggestV2AwemeFanBehaviors) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AwemeFanBehaviors(awemeFanBehaviors []*models.ToolsBidSuggestV2AwemeFanBehaviors) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.awemeFanBehaviors = &awemeFanBehaviors
 	return r
 }
@@ -194,7 +195,7 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AwemeFanCategories(awemeFanCatego
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AwemeFanTimeScope(awemeFanTimeScope ToolsBidSuggestV2AwemeFanTimeScope) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AwemeFanTimeScope(awemeFanTimeScope models.ToolsBidSuggestV2AwemeFanTimeScope) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.awemeFanTimeScope = &awemeFanTimeScope
 	return r
 }
@@ -204,7 +205,7 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) AwemeFansNumbers(awemeFansNumbers
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) BidMode(bidMode ToolsBidSuggestV2BidMode) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) BidMode(bidMode models.ToolsBidSuggestV2BidMode) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.bidMode = &bidMode
 	return r
 }
@@ -214,7 +215,7 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Budget(budget int64) *ApiOpenApi2
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) BudgetMode(budgetMode ToolsBidSuggestV2BudgetMode) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) BudgetMode(budgetMode models.ToolsBidSuggestV2BudgetMode) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.budgetMode = &budgetMode
 	return r
 }
@@ -229,12 +230,12 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) CampaignId(campaignId int64) *Api
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Career(career []*ToolsBidSuggestV2Career) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Career(career []*models.ToolsBidSuggestV2Career) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.career = &career
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Carrier(carrier []*ToolsBidSuggestV2Carrier) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Carrier(carrier []*models.ToolsBidSuggestV2Carrier) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.carrier = &carrier
 	return r
 }
@@ -249,42 +250,42 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ConvertId(convertId int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ConvertedTimeDuration(convertedTimeDuration ToolsBidSuggestV2ConvertedTimeDuration) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ConvertedTimeDuration(convertedTimeDuration models.ToolsBidSuggestV2ConvertedTimeDuration) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.convertedTimeDuration = &convertedTimeDuration
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) DeviceBrand(deviceBrand []*ToolsBidSuggestV2DeviceBrand) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) DeviceBrand(deviceBrand []*models.ToolsBidSuggestV2DeviceBrand) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.deviceBrand = &deviceBrand
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) DeviceType(deviceType []*ToolsBidSuggestV2DeviceType) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) DeviceType(deviceType []*models.ToolsBidSuggestV2DeviceType) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.deviceType = &deviceType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) District(district ToolsBidSuggestV2District) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) District(district models.ToolsBidSuggestV2District) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.district = &district
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) DpaLocalAudience(dpaLocalAudience ToolsBidSuggestV2DpaLocalAudience) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) DpaLocalAudience(dpaLocalAudience models.ToolsBidSuggestV2DpaLocalAudience) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.dpaLocalAudience = &dpaLocalAudience
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) DpaRtaRecommendType(dpaRtaRecommendType ToolsBidSuggestV2DpaRtaRecommendType) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) DpaRtaRecommendType(dpaRtaRecommendType models.ToolsBidSuggestV2DpaRtaRecommendType) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.dpaRtaRecommendType = &dpaRtaRecommendType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) DpaRtaSwitch(dpaRtaSwitch ToolsBidSuggestV2DpaRtaSwitch) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) DpaRtaSwitch(dpaRtaSwitch models.ToolsBidSuggestV2DpaRtaSwitch) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.dpaRtaSwitch = &dpaRtaSwitch
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ExcludeCustomActions(excludeCustomActions []*ToolsBidSuggestV2ExcludeCustomActionsInner) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ExcludeCustomActions(excludeCustomActions []*models.ToolsBidSuggestV2ExcludeCustomActionsInner) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.excludeCustomActions = &excludeCustomActions
 	return r
 }
@@ -294,7 +295,7 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ExcludeFlowPackage(excludeFlowPac
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) FilterAwemeAbnormalActive(filterAwemeAbnormalActive ToolsBidSuggestV2FilterAwemeAbnormalActive) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) FilterAwemeAbnormalActive(filterAwemeAbnormalActive models.ToolsBidSuggestV2FilterAwemeAbnormalActive) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.filterAwemeAbnormalActive = &filterAwemeAbnormalActive
 	return r
 }
@@ -304,12 +305,12 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) FilterAwemeFansCount(filterAwemeF
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) FilterOwnAwemeFans(filterOwnAwemeFans ToolsBidSuggestV2FilterOwnAwemeFans) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) FilterOwnAwemeFans(filterOwnAwemeFans models.ToolsBidSuggestV2FilterOwnAwemeFans) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.filterOwnAwemeFans = &filterOwnAwemeFans
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) FlowControlMode(flowControlMode ToolsBidSuggestV2FlowControlMode) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) FlowControlMode(flowControlMode models.ToolsBidSuggestV2FlowControlMode) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.flowControlMode = &flowControlMode
 	return r
 }
@@ -319,32 +320,32 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) FlowPackage(flowPackage []int64) 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Gender(gender ToolsBidSuggestV2Gender) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Gender(gender models.ToolsBidSuggestV2Gender) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.gender = &gender
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Geolocation(geolocation []*ToolsBidSuggestV2GeolocationInner) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Geolocation(geolocation []*models.ToolsBidSuggestV2GeolocationInner) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.geolocation = &geolocation
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) HideIfConverted(hideIfConverted ToolsBidSuggestV2HideIfConverted) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) HideIfConverted(hideIfConverted models.ToolsBidSuggestV2HideIfConverted) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.hideIfConverted = &hideIfConverted
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) HideIfExists(hideIfExists ToolsBidSuggestV2HideIfExists) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) HideIfExists(hideIfExists models.ToolsBidSuggestV2HideIfExists) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.hideIfExists = &hideIfExists
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) IncludeCustomActions(includeCustomActions []*ToolsBidSuggestV2IncludeCustomActionsInner) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) IncludeCustomActions(includeCustomActions []*models.ToolsBidSuggestV2IncludeCustomActionsInner) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.includeCustomActions = &includeCustomActions
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) InterestActionMode(interestActionMode ToolsBidSuggestV2InterestActionMode) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) InterestActionMode(interestActionMode models.ToolsBidSuggestV2InterestActionMode) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.interestActionMode = &interestActionMode
 	return r
 }
@@ -364,7 +365,7 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) InterestWords(interestWords []int
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) IosOsv(iosOsv ToolsBidSuggestV2IosOsv) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) IosOsv(iosOsv models.ToolsBidSuggestV2IosOsv) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.iosOsv = &iosOsv
 	return r
 }
@@ -374,17 +375,17 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) LaunchPrice(launchPrice []int64) 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) LocationType(locationType ToolsBidSuggestV2LocationType) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) LocationType(locationType models.ToolsBidSuggestV2LocationType) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.locationType = &locationType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Platform(platform []*ToolsBidSuggestV2Platform) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Platform(platform []*models.ToolsBidSuggestV2Platform) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.platform = &platform
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Pricing(pricing ToolsBidSuggestV2Pricing) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Pricing(pricing models.ToolsBidSuggestV2Pricing) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.pricing = &pricing
 	return r
 }
@@ -409,17 +410,17 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) RetargetingTagsInclude(retargetin
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) RetargetingType(retargetingType ToolsBidSuggestV2RetargetingType) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) RetargetingType(retargetingType models.ToolsBidSuggestV2RetargetingType) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.retargetingType = &retargetingType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ScheduleType(scheduleType ToolsBidSuggestV2ScheduleType) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) ScheduleType(scheduleType models.ToolsBidSuggestV2ScheduleType) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.scheduleType = &scheduleType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) SuperiorPopularityType(superiorPopularityType ToolsBidSuggestV2SuperiorPopularityType) *ApiOpenApi2ToolsBidSuggestGetRequest {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) SuperiorPopularityType(superiorPopularityType models.ToolsBidSuggestV2SuperiorPopularityType) *ApiOpenApi2ToolsBidSuggestGetRequest {
 	r.superiorPopularityType = &superiorPopularityType
 	return r
 }
@@ -429,7 +430,7 @@ func (r *ApiOpenApi2ToolsBidSuggestGetRequest) UserType(userType []int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Execute() (*ToolsBidSuggestV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsBidSuggestGetRequest) Execute() (*models.ToolsBidSuggestV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -463,12 +464,12 @@ func (a *ToolsBidSuggestV2ApiService) Get(ctx context.Context) *ApiOpenApi2Tools
 // Execute executes the request
 //
 //	@return ToolsBidSuggestV2Response
-func (a *ToolsBidSuggestV2ApiService) getExecute(r *ApiOpenApi2ToolsBidSuggestGetRequest) (*ToolsBidSuggestV2Response, *http.Response, error) {
+func (a *ToolsBidSuggestV2ApiService) getExecute(r *ApiOpenApi2ToolsBidSuggestGetRequest) (*models.ToolsBidSuggestV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsBidSuggestV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsBidSuggestV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -478,7 +479,7 @@ func (a *ToolsBidSuggestV2ApiService) getExecute(r *ApiOpenApi2ToolsBidSuggestGe
 	localVarPath := localBasePath + "/open_api/2/tools/bid/suggest/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

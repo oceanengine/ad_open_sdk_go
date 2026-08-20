@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsSiteCreateV2ApiService ToolsSiteCreateV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsSiteCreatePostRequest struct {
 	ctx                      context.Context
 	ApiService               *ToolsSiteCreateV2ApiService
 	xOrangeCaller            *string
-	toolsSiteCreateV2Request *ToolsSiteCreateV2Request
+	toolsSiteCreateV2Request *models.ToolsSiteCreateV2Request
 }
 
 func (r *ApiOpenApi2ToolsSiteCreatePostRequest) XOrangeCaller(xOrangeCaller string) *ApiOpenApi2ToolsSiteCreatePostRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2ToolsSiteCreatePostRequest) XOrangeCaller(xOrangeCaller stri
 	return r
 }
 
-func (r *ApiOpenApi2ToolsSiteCreatePostRequest) ToolsSiteCreateV2Request(toolsSiteCreateV2Request ToolsSiteCreateV2Request) *ApiOpenApi2ToolsSiteCreatePostRequest {
+func (r *ApiOpenApi2ToolsSiteCreatePostRequest) ToolsSiteCreateV2Request(toolsSiteCreateV2Request models.ToolsSiteCreateV2Request) *ApiOpenApi2ToolsSiteCreatePostRequest {
 	r.toolsSiteCreateV2Request = &toolsSiteCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsSiteCreatePostRequest) Execute() (*ToolsSiteCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsSiteCreatePostRequest) Execute() (*models.ToolsSiteCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsSiteCreateV2ApiService) Post(ctx context.Context) *ApiOpenApi2Tool
 // Execute executes the request
 //
 //	@return ToolsSiteCreateV2Response
-func (a *ToolsSiteCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsSiteCreatePostRequest) (*ToolsSiteCreateV2Response, *http.Response, error) {
+func (a *ToolsSiteCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsSiteCreatePostRequest) (*models.ToolsSiteCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsSiteCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsSiteCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsSiteCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsSiteCreateP
 	localVarPath := localBasePath + "/open_api/2/tools/site/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

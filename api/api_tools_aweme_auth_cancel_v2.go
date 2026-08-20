@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAwemeAuthCancelV2ApiService ToolsAwemeAuthCancelV2Api service
@@ -25,15 +26,15 @@ type ToolsAwemeAuthCancelV2ApiService service
 type ApiOpenApi2ToolsAwemeAuthCancelPostRequest struct {
 	ctx                           context.Context
 	ApiService                    *ToolsAwemeAuthCancelV2ApiService
-	toolsAwemeAuthCancelV2Request *ToolsAwemeAuthCancelV2Request
+	toolsAwemeAuthCancelV2Request *models.ToolsAwemeAuthCancelV2Request
 }
 
-func (r *ApiOpenApi2ToolsAwemeAuthCancelPostRequest) ToolsAwemeAuthCancelV2Request(toolsAwemeAuthCancelV2Request ToolsAwemeAuthCancelV2Request) *ApiOpenApi2ToolsAwemeAuthCancelPostRequest {
+func (r *ApiOpenApi2ToolsAwemeAuthCancelPostRequest) ToolsAwemeAuthCancelV2Request(toolsAwemeAuthCancelV2Request models.ToolsAwemeAuthCancelV2Request) *ApiOpenApi2ToolsAwemeAuthCancelPostRequest {
 	r.toolsAwemeAuthCancelV2Request = &toolsAwemeAuthCancelV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeAuthCancelPostRequest) Execute() (*ToolsAwemeAuthCancelV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAwemeAuthCancelPostRequest) Execute() (*models.ToolsAwemeAuthCancelV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsAwemeAuthCancelV2ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsAwemeAuthCancelV2Response
-func (a *ToolsAwemeAuthCancelV2ApiService) postExecute(r *ApiOpenApi2ToolsAwemeAuthCancelPostRequest) (*ToolsAwemeAuthCancelV2Response, *http.Response, error) {
+func (a *ToolsAwemeAuthCancelV2ApiService) postExecute(r *ApiOpenApi2ToolsAwemeAuthCancelPostRequest) (*models.ToolsAwemeAuthCancelV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAwemeAuthCancelV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAwemeAuthCancelV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsAwemeAuthCancelV2ApiService) postExecute(r *ApiOpenApi2ToolsAwemeA
 	localVarPath := localBasePath + "/open_api/2/tools/aweme_auth/cancel/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

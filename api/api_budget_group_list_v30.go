@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BudgetGroupListV30ApiService BudgetGroupListV30Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV30BudgetGroupListGetRequest struct {
 	advertiserId *int64
 	page         *int64
 	pageSize     *int64
-	filtering    *BudgetGroupListV30Filtering
+	filtering    *models.BudgetGroupListV30Filtering
 }
 
 // 广告主id
@@ -48,12 +49,12 @@ func (r *ApiOpenApiV30BudgetGroupListGetRequest) PageSize(pageSize int64) *ApiOp
 }
 
 // 过滤条件
-func (r *ApiOpenApiV30BudgetGroupListGetRequest) Filtering(filtering BudgetGroupListV30Filtering) *ApiOpenApiV30BudgetGroupListGetRequest {
+func (r *ApiOpenApiV30BudgetGroupListGetRequest) Filtering(filtering models.BudgetGroupListV30Filtering) *ApiOpenApiV30BudgetGroupListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30BudgetGroupListGetRequest) Execute() (*BudgetGroupListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BudgetGroupListGetRequest) Execute() (*models.BudgetGroupListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -87,12 +88,12 @@ func (a *BudgetGroupListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Bu
 // Execute executes the request
 //
 //	@return BudgetGroupListV30Response
-func (a *BudgetGroupListV30ApiService) getExecute(r *ApiOpenApiV30BudgetGroupListGetRequest) (*BudgetGroupListV30Response, *http.Response, error) {
+func (a *BudgetGroupListV30ApiService) getExecute(r *ApiOpenApiV30BudgetGroupListGetRequest) (*models.BudgetGroupListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BudgetGroupListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BudgetGroupListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -102,7 +103,7 @@ func (a *BudgetGroupListV30ApiService) getExecute(r *ApiOpenApiV30BudgetGroupLis
 	localVarPath := localBasePath + "/open_api/v3.0/budget_group/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

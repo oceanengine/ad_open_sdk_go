@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentAdvertiserUnassignV2ApiService AgentAdvertiserUnassignV2Api service
@@ -25,15 +26,15 @@ type AgentAdvertiserUnassignV2ApiService service
 type ApiOpenApi2AgentAdvertiserUnassignPostRequest struct {
 	ctx                              context.Context
 	ApiService                       *AgentAdvertiserUnassignV2ApiService
-	agentAdvertiserUnassignV2Request *AgentAdvertiserUnassignV2Request
+	agentAdvertiserUnassignV2Request *models.AgentAdvertiserUnassignV2Request
 }
 
-func (r *ApiOpenApi2AgentAdvertiserUnassignPostRequest) AgentAdvertiserUnassignV2Request(agentAdvertiserUnassignV2Request AgentAdvertiserUnassignV2Request) *ApiOpenApi2AgentAdvertiserUnassignPostRequest {
+func (r *ApiOpenApi2AgentAdvertiserUnassignPostRequest) AgentAdvertiserUnassignV2Request(agentAdvertiserUnassignV2Request models.AgentAdvertiserUnassignV2Request) *ApiOpenApi2AgentAdvertiserUnassignPostRequest {
 	r.agentAdvertiserUnassignV2Request = &agentAdvertiserUnassignV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AgentAdvertiserUnassignPostRequest) Execute() (*AgentAdvertiserUnassignV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentAdvertiserUnassignPostRequest) Execute() (*models.AgentAdvertiserUnassignV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AgentAdvertiserUnassignV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return AgentAdvertiserUnassignV2Response
-func (a *AgentAdvertiserUnassignV2ApiService) postExecute(r *ApiOpenApi2AgentAdvertiserUnassignPostRequest) (*AgentAdvertiserUnassignV2Response, *http.Response, error) {
+func (a *AgentAdvertiserUnassignV2ApiService) postExecute(r *ApiOpenApi2AgentAdvertiserUnassignPostRequest) (*models.AgentAdvertiserUnassignV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentAdvertiserUnassignV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentAdvertiserUnassignV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AgentAdvertiserUnassignV2ApiService) postExecute(r *ApiOpenApi2AgentAdv
 	localVarPath := localBasePath + "/open_api/2/agent/advertiser/unassign/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

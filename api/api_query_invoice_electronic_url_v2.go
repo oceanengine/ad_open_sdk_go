@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QueryInvoiceElectronicUrlV2ApiService QueryInvoiceElectronicUrlV2Api service
@@ -40,7 +41,7 @@ func (r *ApiOpenApi2QueryInvoiceElectronicUrlGetRequest) AgentIds(agentIds []int
 	return r
 }
 
-func (r *ApiOpenApi2QueryInvoiceElectronicUrlGetRequest) Execute() (*QueryInvoiceElectronicUrlV2Response, *http.Response, error) {
+func (r *ApiOpenApi2QueryInvoiceElectronicUrlGetRequest) Execute() (*models.QueryInvoiceElectronicUrlV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *QueryInvoiceElectronicUrlV2ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return QueryInvoiceElectronicUrlV2Response
-func (a *QueryInvoiceElectronicUrlV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceElectronicUrlGetRequest) (*QueryInvoiceElectronicUrlV2Response, *http.Response, error) {
+func (a *QueryInvoiceElectronicUrlV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceElectronicUrlGetRequest) (*models.QueryInvoiceElectronicUrlV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QueryInvoiceElectronicUrlV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QueryInvoiceElectronicUrlV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *QueryInvoiceElectronicUrlV2ApiService) getExecute(r *ApiOpenApi2QueryIn
 	localVarPath := localBasePath + "/open_api/2/query/invoice_electronic_url/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.invoiceSerial == nil {

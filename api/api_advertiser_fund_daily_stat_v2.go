@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserFundDailyStatV2ApiService AdvertiserFundDailyStatV2Api service
@@ -30,7 +31,7 @@ type ApiOpenApi2AdvertiserFundDailyStatGetRequest struct {
 	endDate      *string
 	page         *int64
 	pageSize     *int64
-	accountType  *AdvertiserFundDailyStatV2AccountType
+	accountType  *models.AdvertiserFundDailyStatV2AccountType
 }
 
 func (r *ApiOpenApi2AdvertiserFundDailyStatGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2AdvertiserFundDailyStatGetRequest {
@@ -58,12 +59,12 @@ func (r *ApiOpenApi2AdvertiserFundDailyStatGetRequest) PageSize(pageSize int64) 
 	return r
 }
 
-func (r *ApiOpenApi2AdvertiserFundDailyStatGetRequest) AccountType(accountType AdvertiserFundDailyStatV2AccountType) *ApiOpenApi2AdvertiserFundDailyStatGetRequest {
+func (r *ApiOpenApi2AdvertiserFundDailyStatGetRequest) AccountType(accountType models.AdvertiserFundDailyStatV2AccountType) *ApiOpenApi2AdvertiserFundDailyStatGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApi2AdvertiserFundDailyStatGetRequest) Execute() (*AdvertiserFundDailyStatV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdvertiserFundDailyStatGetRequest) Execute() (*models.AdvertiserFundDailyStatV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *AdvertiserFundDailyStatV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return AdvertiserFundDailyStatV2Response
-func (a *AdvertiserFundDailyStatV2ApiService) getExecute(r *ApiOpenApi2AdvertiserFundDailyStatGetRequest) (*AdvertiserFundDailyStatV2Response, *http.Response, error) {
+func (a *AdvertiserFundDailyStatV2ApiService) getExecute(r *ApiOpenApi2AdvertiserFundDailyStatGetRequest) (*models.AdvertiserFundDailyStatV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserFundDailyStatV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserFundDailyStatV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *AdvertiserFundDailyStatV2ApiService) getExecute(r *ApiOpenApi2Advertise
 	localVarPath := localBasePath + "/open_api/2/advertiser/fund/daily_stat/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

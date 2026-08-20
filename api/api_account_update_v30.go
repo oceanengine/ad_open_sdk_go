@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AccountUpdateV30ApiService AccountUpdateV30Api service
@@ -25,15 +26,15 @@ type AccountUpdateV30ApiService service
 type ApiOpenApiV30AccountUpdatePostRequest struct {
 	ctx                     context.Context
 	ApiService              *AccountUpdateV30ApiService
-	accountUpdateV30Request *AccountUpdateV30Request
+	accountUpdateV30Request *models.AccountUpdateV30Request
 }
 
-func (r *ApiOpenApiV30AccountUpdatePostRequest) AccountUpdateV30Request(accountUpdateV30Request AccountUpdateV30Request) *ApiOpenApiV30AccountUpdatePostRequest {
+func (r *ApiOpenApiV30AccountUpdatePostRequest) AccountUpdateV30Request(accountUpdateV30Request models.AccountUpdateV30Request) *ApiOpenApiV30AccountUpdatePostRequest {
 	r.accountUpdateV30Request = &accountUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30AccountUpdatePostRequest) Execute() (*AccountUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AccountUpdatePostRequest) Execute() (*models.AccountUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AccountUpdateV30ApiService) Post(ctx context.Context) *ApiOpenApiV30Acc
 // Execute executes the request
 //
 //	@return AccountUpdateV30Response
-func (a *AccountUpdateV30ApiService) postExecute(r *ApiOpenApiV30AccountUpdatePostRequest) (*AccountUpdateV30Response, *http.Response, error) {
+func (a *AccountUpdateV30ApiService) postExecute(r *ApiOpenApiV30AccountUpdatePostRequest) (*models.AccountUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AccountUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AccountUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AccountUpdateV30ApiService) postExecute(r *ApiOpenApiV30AccountUpdatePo
 	localVarPath := localBasePath + "/open_api/v3.0/account/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

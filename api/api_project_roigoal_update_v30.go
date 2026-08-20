@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ProjectRoigoalUpdateV30ApiService ProjectRoigoalUpdateV30Api service
@@ -25,15 +26,15 @@ type ProjectRoigoalUpdateV30ApiService service
 type ApiOpenApiV30ProjectRoigoalUpdatePostRequest struct {
 	ctx                            context.Context
 	ApiService                     *ProjectRoigoalUpdateV30ApiService
-	projectRoigoalUpdateV30Request *ProjectRoigoalUpdateV30Request
+	projectRoigoalUpdateV30Request *models.ProjectRoigoalUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ProjectRoigoalUpdatePostRequest) ProjectRoigoalUpdateV30Request(projectRoigoalUpdateV30Request ProjectRoigoalUpdateV30Request) *ApiOpenApiV30ProjectRoigoalUpdatePostRequest {
+func (r *ApiOpenApiV30ProjectRoigoalUpdatePostRequest) ProjectRoigoalUpdateV30Request(projectRoigoalUpdateV30Request models.ProjectRoigoalUpdateV30Request) *ApiOpenApiV30ProjectRoigoalUpdatePostRequest {
 	r.projectRoigoalUpdateV30Request = &projectRoigoalUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ProjectRoigoalUpdatePostRequest) Execute() (*ProjectRoigoalUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ProjectRoigoalUpdatePostRequest) Execute() (*models.ProjectRoigoalUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ProjectRoigoalUpdateV30ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ProjectRoigoalUpdateV30Response
-func (a *ProjectRoigoalUpdateV30ApiService) postExecute(r *ApiOpenApiV30ProjectRoigoalUpdatePostRequest) (*ProjectRoigoalUpdateV30Response, *http.Response, error) {
+func (a *ProjectRoigoalUpdateV30ApiService) postExecute(r *ApiOpenApiV30ProjectRoigoalUpdatePostRequest) (*models.ProjectRoigoalUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ProjectRoigoalUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ProjectRoigoalUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ProjectRoigoalUpdateV30ApiService) postExecute(r *ApiOpenApiV30ProjectR
 	localVarPath := localBasePath + "/open_api/v3.0/project/roigoal/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

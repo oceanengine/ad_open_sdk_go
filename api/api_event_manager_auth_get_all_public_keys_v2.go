@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerAuthGetAllPublicKeysV2ApiService EventManagerAuthGetAllPublicKeysV2Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApi2EventManagerAuthGetAllPublicKeysGetRequest) AdvertiserId(adv
 	return r
 }
 
-func (r *ApiOpenApi2EventManagerAuthGetAllPublicKeysGetRequest) Execute() (*EventManagerAuthGetAllPublicKeysV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EventManagerAuthGetAllPublicKeysGetRequest) Execute() (*models.EventManagerAuthGetAllPublicKeysV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EventManagerAuthGetAllPublicKeysV2ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return EventManagerAuthGetAllPublicKeysV2Response
-func (a *EventManagerAuthGetAllPublicKeysV2ApiService) getExecute(r *ApiOpenApi2EventManagerAuthGetAllPublicKeysGetRequest) (*EventManagerAuthGetAllPublicKeysV2Response, *http.Response, error) {
+func (a *EventManagerAuthGetAllPublicKeysV2ApiService) getExecute(r *ApiOpenApi2EventManagerAuthGetAllPublicKeysGetRequest) (*models.EventManagerAuthGetAllPublicKeysV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerAuthGetAllPublicKeysV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerAuthGetAllPublicKeysV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EventManagerAuthGetAllPublicKeysV2ApiService) getExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/event_manager/auth/get_all_public_keys/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandOperationLogQueryV30ApiService BrandOperationLogQueryV30Api service
@@ -27,11 +28,11 @@ type ApiOpenApiV30BrandOperationLogQueryGetRequest struct {
 	ApiService   *BrandOperationLogQueryV30ApiService
 	advertiserId *int64
 	objectId     *int64
-	objectType   *BrandOperationLogQueryV30ObjectType
-	fields       *[]*BrandOperationLogQueryV30Fields
+	objectType   *models.BrandOperationLogQueryV30ObjectType
+	fields       *[]*models.BrandOperationLogQueryV30Fields
 	startDate    *string
 	endDate      *string
-	page         *BrandOperationLogQueryV30Page
+	page         *models.BrandOperationLogQueryV30Page
 }
 
 // 广告主ID
@@ -47,13 +48,13 @@ func (r *ApiOpenApiV30BrandOperationLogQueryGetRequest) ObjectId(objectId int64)
 }
 
 // 查询类型
-func (r *ApiOpenApiV30BrandOperationLogQueryGetRequest) ObjectType(objectType BrandOperationLogQueryV30ObjectType) *ApiOpenApiV30BrandOperationLogQueryGetRequest {
+func (r *ApiOpenApiV30BrandOperationLogQueryGetRequest) ObjectType(objectType models.BrandOperationLogQueryV30ObjectType) *ApiOpenApiV30BrandOperationLogQueryGetRequest {
 	r.objectType = &objectType
 	return r
 }
 
 // 查询范围
-func (r *ApiOpenApiV30BrandOperationLogQueryGetRequest) Fields(fields []*BrandOperationLogQueryV30Fields) *ApiOpenApiV30BrandOperationLogQueryGetRequest {
+func (r *ApiOpenApiV30BrandOperationLogQueryGetRequest) Fields(fields []*models.BrandOperationLogQueryV30Fields) *ApiOpenApiV30BrandOperationLogQueryGetRequest {
 	r.fields = &fields
 	return r
 }
@@ -71,12 +72,12 @@ func (r *ApiOpenApiV30BrandOperationLogQueryGetRequest) EndDate(endDate string) 
 }
 
 // 分页
-func (r *ApiOpenApiV30BrandOperationLogQueryGetRequest) Page(page BrandOperationLogQueryV30Page) *ApiOpenApiV30BrandOperationLogQueryGetRequest {
+func (r *ApiOpenApiV30BrandOperationLogQueryGetRequest) Page(page models.BrandOperationLogQueryV30Page) *ApiOpenApiV30BrandOperationLogQueryGetRequest {
 	r.page = &page
 	return r
 }
 
-func (r *ApiOpenApiV30BrandOperationLogQueryGetRequest) Execute() (*BrandOperationLogQueryV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandOperationLogQueryGetRequest) Execute() (*models.BrandOperationLogQueryV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *BrandOperationLogQueryV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return BrandOperationLogQueryV30Response
-func (a *BrandOperationLogQueryV30ApiService) getExecute(r *ApiOpenApiV30BrandOperationLogQueryGetRequest) (*BrandOperationLogQueryV30Response, *http.Response, error) {
+func (a *BrandOperationLogQueryV30ApiService) getExecute(r *ApiOpenApiV30BrandOperationLogQueryGetRequest) (*models.BrandOperationLogQueryV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandOperationLogQueryV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandOperationLogQueryV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *BrandOperationLogQueryV30ApiService) getExecute(r *ApiOpenApiV30BrandOp
 	localVarPath := localBasePath + "/open_api/v3.0/brand/operation_log/query/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

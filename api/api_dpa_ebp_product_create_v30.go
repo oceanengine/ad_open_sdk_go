@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaEbpProductCreateV30ApiService DpaEbpProductCreateV30Api service
@@ -25,15 +26,15 @@ type DpaEbpProductCreateV30ApiService service
 type ApiOpenApiV30DpaEbpProductCreatePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *DpaEbpProductCreateV30ApiService
-	dpaEbpProductCreateV30Request *DpaEbpProductCreateV30Request
+	dpaEbpProductCreateV30Request *models.DpaEbpProductCreateV30Request
 }
 
-func (r *ApiOpenApiV30DpaEbpProductCreatePostRequest) DpaEbpProductCreateV30Request(dpaEbpProductCreateV30Request DpaEbpProductCreateV30Request) *ApiOpenApiV30DpaEbpProductCreatePostRequest {
+func (r *ApiOpenApiV30DpaEbpProductCreatePostRequest) DpaEbpProductCreateV30Request(dpaEbpProductCreateV30Request models.DpaEbpProductCreateV30Request) *ApiOpenApiV30DpaEbpProductCreatePostRequest {
 	r.dpaEbpProductCreateV30Request = &dpaEbpProductCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpProductCreatePostRequest) Execute() (*DpaEbpProductCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaEbpProductCreatePostRequest) Execute() (*models.DpaEbpProductCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DpaEbpProductCreateV30ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return DpaEbpProductCreateV30Response
-func (a *DpaEbpProductCreateV30ApiService) postExecute(r *ApiOpenApiV30DpaEbpProductCreatePostRequest) (*DpaEbpProductCreateV30Response, *http.Response, error) {
+func (a *DpaEbpProductCreateV30ApiService) postExecute(r *ApiOpenApiV30DpaEbpProductCreatePostRequest) (*models.DpaEbpProductCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaEbpProductCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaEbpProductCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DpaEbpProductCreateV30ApiService) postExecute(r *ApiOpenApiV30DpaEbpPro
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/ebp/product/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanTodayLiveRoomUserGetV10ApiService QianchuanTodayLiveRoomUserGetV10Api service
@@ -27,9 +28,9 @@ type ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest struct {
 	ApiService   *QianchuanTodayLiveRoomUserGetV10ApiService
 	advertiserId *int64
 	roomId       *int64
-	actionEvent  *QianchuanTodayLiveRoomUserGetV10ActionEvent
-	dimension    *[]*QianchuanTodayLiveRoomUserGetV10Dimension
-	flowSource   *QianchuanTodayLiveRoomUserGetV10FlowSource
+	actionEvent  *models.QianchuanTodayLiveRoomUserGetV10ActionEvent
+	dimension    *[]*models.QianchuanTodayLiveRoomUserGetV10Dimension
+	flowSource   *models.QianchuanTodayLiveRoomUserGetV10FlowSource
 }
 
 func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest {
@@ -43,23 +44,23 @@ func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) RoomId(roomId int
 }
 
 // 行为事件 第二个单选
-func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) ActionEvent(actionEvent QianchuanTodayLiveRoomUserGetV10ActionEvent) *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest {
+func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) ActionEvent(actionEvent models.QianchuanTodayLiveRoomUserGetV10ActionEvent) *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest {
 	r.actionEvent = &actionEvent
 	return r
 }
 
 // 用户分布类型，传入一个数组
-func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) Dimension(dimension []*QianchuanTodayLiveRoomUserGetV10Dimension) *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest {
+func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) Dimension(dimension []*models.QianchuanTodayLiveRoomUserGetV10Dimension) *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest {
 	r.dimension = &dimension
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) FlowSource(flowSource QianchuanTodayLiveRoomUserGetV10FlowSource) *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest {
+func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) FlowSource(flowSource models.QianchuanTodayLiveRoomUserGetV10FlowSource) *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest {
 	r.flowSource = &flowSource
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) Execute() (*QianchuanTodayLiveRoomUserGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) Execute() (*models.QianchuanTodayLiveRoomUserGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -93,12 +94,12 @@ func (a *QianchuanTodayLiveRoomUserGetV10ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return QianchuanTodayLiveRoomUserGetV10Response
-func (a *QianchuanTodayLiveRoomUserGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) (*QianchuanTodayLiveRoomUserGetV10Response, *http.Response, error) {
+func (a *QianchuanTodayLiveRoomUserGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTodayLiveRoomUserGetGetRequest) (*models.QianchuanTodayLiveRoomUserGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanTodayLiveRoomUserGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanTodayLiveRoomUserGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -108,7 +109,7 @@ func (a *QianchuanTodayLiveRoomUserGetV10ApiService) getExecute(r *ApiOpenApiV10
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/today_live/room/user/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

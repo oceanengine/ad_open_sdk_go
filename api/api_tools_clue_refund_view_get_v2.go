@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueRefundViewGetV2ApiService ToolsClueRefundViewGetV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2ToolsClueRefundViewGetGetRequest) ClueId(clueId int64) *ApiO
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueRefundViewGetGetRequest) Execute() (*ToolsClueRefundViewGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueRefundViewGetGetRequest) Execute() (*models.ToolsClueRefundViewGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ToolsClueRefundViewGetV2ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsClueRefundViewGetV2Response
-func (a *ToolsClueRefundViewGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueRefundViewGetGetRequest) (*ToolsClueRefundViewGetV2Response, *http.Response, error) {
+func (a *ToolsClueRefundViewGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueRefundViewGetGetRequest) (*models.ToolsClueRefundViewGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueRefundViewGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueRefundViewGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ToolsClueRefundViewGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueR
 	localVarPath := localBasePath + "/open_api/2/tools/clue/refund_view/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

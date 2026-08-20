@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsMicroAppListV30ApiService ToolsMicroAppListV30Api service
@@ -26,10 +27,10 @@ type ApiOpenApiV30ToolsMicroAppListGetRequest struct {
 	ctx                    context.Context
 	ApiService             *ToolsMicroAppListV30ApiService
 	advertiserId           *int64
-	filtering              *ToolsMicroAppListV30Filtering
+	filtering              *models.ToolsMicroAppListV30Filtering
 	page                   *int32
 	pageSize               *int32
-	accountAssetQueryScope *ToolsMicroAppListV30AccountAssetQueryScope
+	accountAssetQueryScope *models.ToolsMicroAppListV30AccountAssetQueryScope
 }
 
 func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsMicroAppListGetRequest {
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) AdvertiserId(advertiserId int
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) Filtering(filtering ToolsMicroAppListV30Filtering) *ApiOpenApiV30ToolsMicroAppListGetRequest {
+func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) Filtering(filtering models.ToolsMicroAppListV30Filtering) *ApiOpenApiV30ToolsMicroAppListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -52,12 +53,12 @@ func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) PageSize(pageSize int32) *Api
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsMicroAppListV30AccountAssetQueryScope) *ApiOpenApiV30ToolsMicroAppListGetRequest {
+func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope models.ToolsMicroAppListV30AccountAssetQueryScope) *ApiOpenApiV30ToolsMicroAppListGetRequest {
 	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) Execute() (*ToolsMicroAppListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsMicroAppListGetRequest) Execute() (*models.ToolsMicroAppListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ToolsMicroAppListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return ToolsMicroAppListV30Response
-func (a *ToolsMicroAppListV30ApiService) getExecute(r *ApiOpenApiV30ToolsMicroAppListGetRequest) (*ToolsMicroAppListV30Response, *http.Response, error) {
+func (a *ToolsMicroAppListV30ApiService) getExecute(r *ApiOpenApiV30ToolsMicroAppListGetRequest) (*models.ToolsMicroAppListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsMicroAppListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsMicroAppListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ToolsMicroAppListV30ApiService) getExecute(r *ApiOpenApiV30ToolsMicroAp
 	localVarPath := localBasePath + "/open_api/v3.0/tools/micro_app/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerEventConfigsGetV2ApiService EventManagerEventConfigsGetV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2EventManagerEventConfigsGetGetRequest struct {
 	ApiService   *EventManagerEventConfigsGetV2ApiService
 	advertiserId *int64
 	assetId      *int64
-	sortType     *EventManagerEventConfigsGetV2SortType
+	sortType     *models.EventManagerEventConfigsGetV2SortType
 }
 
 // 广告主ID
@@ -43,12 +44,12 @@ func (r *ApiOpenApi2EventManagerEventConfigsGetGetRequest) AssetId(assetId int64
 }
 
 // 创建时间排序方式，允许值：&#x60;DESC&#x60; 降序、&#x60;ASC&#x60; 升序。默认：&#x60;ASC&#x60;
-func (r *ApiOpenApi2EventManagerEventConfigsGetGetRequest) SortType(sortType EventManagerEventConfigsGetV2SortType) *ApiOpenApi2EventManagerEventConfigsGetGetRequest {
+func (r *ApiOpenApi2EventManagerEventConfigsGetGetRequest) SortType(sortType models.EventManagerEventConfigsGetV2SortType) *ApiOpenApi2EventManagerEventConfigsGetGetRequest {
 	r.sortType = &sortType
 	return r
 }
 
-func (r *ApiOpenApi2EventManagerEventConfigsGetGetRequest) Execute() (*EventManagerEventConfigsGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EventManagerEventConfigsGetGetRequest) Execute() (*models.EventManagerEventConfigsGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *EventManagerEventConfigsGetV2ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return EventManagerEventConfigsGetV2Response
-func (a *EventManagerEventConfigsGetV2ApiService) getExecute(r *ApiOpenApi2EventManagerEventConfigsGetGetRequest) (*EventManagerEventConfigsGetV2Response, *http.Response, error) {
+func (a *EventManagerEventConfigsGetV2ApiService) getExecute(r *ApiOpenApi2EventManagerEventConfigsGetGetRequest) (*models.EventManagerEventConfigsGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerEventConfigsGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerEventConfigsGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *EventManagerEventConfigsGetV2ApiService) getExecute(r *ApiOpenApi2Event
 	localVarPath := localBasePath + "/open_api/2/event_manager/event_configs/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

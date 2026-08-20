@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AicElementUpdateV30ApiService AicElementUpdateV30Api service
@@ -25,15 +26,15 @@ type AicElementUpdateV30ApiService service
 type ApiOpenApiV30AicElementUpdatePostRequest struct {
 	ctx                        context.Context
 	ApiService                 *AicElementUpdateV30ApiService
-	aicElementUpdateV30Request *AicElementUpdateV30Request
+	aicElementUpdateV30Request *models.AicElementUpdateV30Request
 }
 
-func (r *ApiOpenApiV30AicElementUpdatePostRequest) AicElementUpdateV30Request(aicElementUpdateV30Request AicElementUpdateV30Request) *ApiOpenApiV30AicElementUpdatePostRequest {
+func (r *ApiOpenApiV30AicElementUpdatePostRequest) AicElementUpdateV30Request(aicElementUpdateV30Request models.AicElementUpdateV30Request) *ApiOpenApiV30AicElementUpdatePostRequest {
 	r.aicElementUpdateV30Request = &aicElementUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30AicElementUpdatePostRequest) Execute() (*AicElementUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AicElementUpdatePostRequest) Execute() (*models.AicElementUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AicElementUpdateV30ApiService) Post(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return AicElementUpdateV30Response
-func (a *AicElementUpdateV30ApiService) postExecute(r *ApiOpenApiV30AicElementUpdatePostRequest) (*AicElementUpdateV30Response, *http.Response, error) {
+func (a *AicElementUpdateV30ApiService) postExecute(r *ApiOpenApiV30AicElementUpdatePostRequest) (*models.AicElementUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AicElementUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AicElementUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AicElementUpdateV30ApiService) postExecute(r *ApiOpenApiV30AicElementUp
 	localVarPath := localBasePath + "/open_api/v3.0/aic/element/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

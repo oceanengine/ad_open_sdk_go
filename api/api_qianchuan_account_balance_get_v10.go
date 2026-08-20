@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAccountBalanceGetV10ApiService QianchuanAccountBalanceGetV10Api service
@@ -34,7 +35,7 @@ func (r *ApiOpenApiV10QianchuanAccountBalanceGetGetRequest) AdvertiserId(adverti
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAccountBalanceGetGetRequest) Execute() (*QianchuanAccountBalanceGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAccountBalanceGetGetRequest) Execute() (*models.QianchuanAccountBalanceGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *QianchuanAccountBalanceGetV10ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return QianchuanAccountBalanceGetV10Response
-func (a *QianchuanAccountBalanceGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAccountBalanceGetGetRequest) (*QianchuanAccountBalanceGetV10Response, *http.Response, error) {
+func (a *QianchuanAccountBalanceGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAccountBalanceGetGetRequest) (*models.QianchuanAccountBalanceGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAccountBalanceGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAccountBalanceGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *QianchuanAccountBalanceGetV10ApiService) getExecute(r *ApiOpenApiV10Qia
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/account/balance/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

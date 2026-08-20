@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpStarTaskGetV30ApiService ToolsEbpStarTaskGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30ToolsEbpStarTaskGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *ToolsEbpStarTaskGetV30ApiService
 	accountId   *int64
-	accountType *ToolsEbpStarTaskGetV30AccountType
+	accountType *models.ToolsEbpStarTaskGetV30AccountType
 	starTaskId  *int64
 }
 
@@ -35,7 +36,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) AccountId(accountId int64) 
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) AccountType(accountType ToolsEbpStarTaskGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) AccountType(accountType models.ToolsEbpStarTaskGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -46,7 +47,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) StarTaskId(starTaskId int64
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) Execute() (*ToolsEbpStarTaskGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) Execute() (*models.ToolsEbpStarTaskGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -80,12 +81,12 @@ func (a *ToolsEbpStarTaskGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return ToolsEbpStarTaskGetV30Response
-func (a *ToolsEbpStarTaskGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) (*ToolsEbpStarTaskGetV30Response, *http.Response, error) {
+func (a *ToolsEbpStarTaskGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpStarTaskGetGetRequest) (*models.ToolsEbpStarTaskGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpStarTaskGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpStarTaskGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -95,7 +96,7 @@ func (a *ToolsEbpStarTaskGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpSt
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/star_task/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

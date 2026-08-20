@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileAutoGenerateSourceGetV2ApiService FileAutoGenerateSourceGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2FileAutoGenerateSourceGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *FileAutoGenerateSourceGetV2ApiService
 	advertiserId *int64
-	materials    *[]*FileAutoGenerateSourceGetV2MaterialsInner
+	materials    *[]*models.FileAutoGenerateSourceGetV2MaterialsInner
 }
 
 func (r *ApiOpenApi2FileAutoGenerateSourceGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2FileAutoGenerateSourceGetGetRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2FileAutoGenerateSourceGetGetRequest) AdvertiserId(advertiser
 	return r
 }
 
-func (r *ApiOpenApi2FileAutoGenerateSourceGetGetRequest) Materials(materials []*FileAutoGenerateSourceGetV2MaterialsInner) *ApiOpenApi2FileAutoGenerateSourceGetGetRequest {
+func (r *ApiOpenApi2FileAutoGenerateSourceGetGetRequest) Materials(materials []*models.FileAutoGenerateSourceGetV2MaterialsInner) *ApiOpenApi2FileAutoGenerateSourceGetGetRequest {
 	r.materials = &materials
 	return r
 }
 
-func (r *ApiOpenApi2FileAutoGenerateSourceGetGetRequest) Execute() (*FileAutoGenerateSourceGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileAutoGenerateSourceGetGetRequest) Execute() (*models.FileAutoGenerateSourceGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *FileAutoGenerateSourceGetV2ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return FileAutoGenerateSourceGetV2Response
-func (a *FileAutoGenerateSourceGetV2ApiService) getExecute(r *ApiOpenApi2FileAutoGenerateSourceGetGetRequest) (*FileAutoGenerateSourceGetV2Response, *http.Response, error) {
+func (a *FileAutoGenerateSourceGetV2ApiService) getExecute(r *ApiOpenApi2FileAutoGenerateSourceGetGetRequest) (*models.FileAutoGenerateSourceGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileAutoGenerateSourceGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileAutoGenerateSourceGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *FileAutoGenerateSourceGetV2ApiService) getExecute(r *ApiOpenApi2FileAut
 	localVarPath := localBasePath + "/open_api/2/file/auto_generate_source/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

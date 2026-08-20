@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueBridgeCallCreateV2ApiService ToolsClueBridgeCallCreateV2Api service
@@ -25,15 +26,15 @@ type ToolsClueBridgeCallCreateV2ApiService service
 type ApiOpenApi2ToolsClueBridgeCallCreatePostRequest struct {
 	ctx                                context.Context
 	ApiService                         *ToolsClueBridgeCallCreateV2ApiService
-	toolsClueBridgeCallCreateV2Request *ToolsClueBridgeCallCreateV2Request
+	toolsClueBridgeCallCreateV2Request *models.ToolsClueBridgeCallCreateV2Request
 }
 
-func (r *ApiOpenApi2ToolsClueBridgeCallCreatePostRequest) ToolsClueBridgeCallCreateV2Request(toolsClueBridgeCallCreateV2Request ToolsClueBridgeCallCreateV2Request) *ApiOpenApi2ToolsClueBridgeCallCreatePostRequest {
+func (r *ApiOpenApi2ToolsClueBridgeCallCreatePostRequest) ToolsClueBridgeCallCreateV2Request(toolsClueBridgeCallCreateV2Request models.ToolsClueBridgeCallCreateV2Request) *ApiOpenApi2ToolsClueBridgeCallCreatePostRequest {
 	r.toolsClueBridgeCallCreateV2Request = &toolsClueBridgeCallCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueBridgeCallCreatePostRequest) Execute() (*ToolsClueBridgeCallCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueBridgeCallCreatePostRequest) Execute() (*models.ToolsClueBridgeCallCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsClueBridgeCallCreateV2ApiService) Post(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsClueBridgeCallCreateV2Response
-func (a *ToolsClueBridgeCallCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsClueBridgeCallCreatePostRequest) (*ToolsClueBridgeCallCreateV2Response, *http.Response, error) {
+func (a *ToolsClueBridgeCallCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsClueBridgeCallCreatePostRequest) (*models.ToolsClueBridgeCallCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueBridgeCallCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueBridgeCallCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsClueBridgeCallCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsC
 	localVarPath := localBasePath + "/open_api/2/tools/clue/bridge_call/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

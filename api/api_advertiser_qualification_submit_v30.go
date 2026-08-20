@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserQualificationSubmitV30ApiService AdvertiserQualificationSubmitV30Api service
@@ -25,15 +26,15 @@ type AdvertiserQualificationSubmitV30ApiService service
 type ApiOpenApiV30AdvertiserQualificationSubmitPostRequest struct {
 	ctx                                     context.Context
 	ApiService                              *AdvertiserQualificationSubmitV30ApiService
-	advertiserQualificationSubmitV30Request *AdvertiserQualificationSubmitV30Request
+	advertiserQualificationSubmitV30Request *models.AdvertiserQualificationSubmitV30Request
 }
 
-func (r *ApiOpenApiV30AdvertiserQualificationSubmitPostRequest) AdvertiserQualificationSubmitV30Request(advertiserQualificationSubmitV30Request AdvertiserQualificationSubmitV30Request) *ApiOpenApiV30AdvertiserQualificationSubmitPostRequest {
+func (r *ApiOpenApiV30AdvertiserQualificationSubmitPostRequest) AdvertiserQualificationSubmitV30Request(advertiserQualificationSubmitV30Request models.AdvertiserQualificationSubmitV30Request) *ApiOpenApiV30AdvertiserQualificationSubmitPostRequest {
 	r.advertiserQualificationSubmitV30Request = &advertiserQualificationSubmitV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30AdvertiserQualificationSubmitPostRequest) Execute() (*AdvertiserQualificationSubmitV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AdvertiserQualificationSubmitPostRequest) Execute() (*models.AdvertiserQualificationSubmitV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AdvertiserQualificationSubmitV30ApiService) Post(ctx context.Context) *
 // Execute executes the request
 //
 //	@return AdvertiserQualificationSubmitV30Response
-func (a *AdvertiserQualificationSubmitV30ApiService) postExecute(r *ApiOpenApiV30AdvertiserQualificationSubmitPostRequest) (*AdvertiserQualificationSubmitV30Response, *http.Response, error) {
+func (a *AdvertiserQualificationSubmitV30ApiService) postExecute(r *ApiOpenApiV30AdvertiserQualificationSubmitPostRequest) (*models.AdvertiserQualificationSubmitV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserQualificationSubmitV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserQualificationSubmitV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AdvertiserQualificationSubmitV30ApiService) postExecute(r *ApiOpenApiV3
 	localVarPath := localBasePath + "/open_api/v3.0/advertiser/qualification/submit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StardeliveryTaskShareV30ApiService StardeliveryTaskShareV30Api service
@@ -25,15 +26,15 @@ type StardeliveryTaskShareV30ApiService service
 type ApiOpenApiV30StardeliveryTaskSharePostRequest struct {
 	ctx                             context.Context
 	ApiService                      *StardeliveryTaskShareV30ApiService
-	stardeliveryTaskShareV30Request *StardeliveryTaskShareV30Request
+	stardeliveryTaskShareV30Request *models.StardeliveryTaskShareV30Request
 }
 
-func (r *ApiOpenApiV30StardeliveryTaskSharePostRequest) StardeliveryTaskShareV30Request(stardeliveryTaskShareV30Request StardeliveryTaskShareV30Request) *ApiOpenApiV30StardeliveryTaskSharePostRequest {
+func (r *ApiOpenApiV30StardeliveryTaskSharePostRequest) StardeliveryTaskShareV30Request(stardeliveryTaskShareV30Request models.StardeliveryTaskShareV30Request) *ApiOpenApiV30StardeliveryTaskSharePostRequest {
 	r.stardeliveryTaskShareV30Request = &stardeliveryTaskShareV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30StardeliveryTaskSharePostRequest) Execute() (*StardeliveryTaskShareV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30StardeliveryTaskSharePostRequest) Execute() (*models.StardeliveryTaskShareV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StardeliveryTaskShareV30ApiService) Post(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return StardeliveryTaskShareV30Response
-func (a *StardeliveryTaskShareV30ApiService) postExecute(r *ApiOpenApiV30StardeliveryTaskSharePostRequest) (*StardeliveryTaskShareV30Response, *http.Response, error) {
+func (a *StardeliveryTaskShareV30ApiService) postExecute(r *ApiOpenApiV30StardeliveryTaskSharePostRequest) (*models.StardeliveryTaskShareV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StardeliveryTaskShareV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StardeliveryTaskShareV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StardeliveryTaskShareV30ApiService) postExecute(r *ApiOpenApiV30Stardel
 	localVarPath := localBasePath + "/open_api/v3.0/stardelivery/task/share/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

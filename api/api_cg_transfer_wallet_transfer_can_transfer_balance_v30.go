@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferWalletTransferCanTransferBalanceV30ApiService CgTransferWalletTransferCanTransferBalanceV30Api service
@@ -26,11 +27,11 @@ type ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest struct {
 	ctx               context.Context
 	ApiService        *CgTransferWalletTransferCanTransferBalanceV30ApiService
 	accountId         *int64
-	accountType       *CgTransferWalletTransferCanTransferBalanceV30AccountType
+	accountType       *models.CgTransferWalletTransferCanTransferBalanceV30AccountType
 	bizRequestNo      *string
 	mainWalletId      *int64
 	subWalletList     *[]int64
-	transferDirection *CgTransferWalletTransferCanTransferBalanceV30TransferDirection
+	transferDirection *models.CgTransferWalletTransferCanTransferBalanceV30TransferDirection
 }
 
 // 鉴权账户
@@ -40,7 +41,7 @@ func (r *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest) Acco
 }
 
 // 鉴权账户类型
-func (r *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest) AccountType(accountType CgTransferWalletTransferCanTransferBalanceV30AccountType) *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest {
+func (r *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest) AccountType(accountType models.CgTransferWalletTransferCanTransferBalanceV30AccountType) *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -64,12 +65,12 @@ func (r *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest) SubW
 }
 
 // 转账方向，以小钱包视角确定
-func (r *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest) TransferDirection(transferDirection CgTransferWalletTransferCanTransferBalanceV30TransferDirection) *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest {
+func (r *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest) TransferDirection(transferDirection models.CgTransferWalletTransferCanTransferBalanceV30TransferDirection) *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest {
 	r.transferDirection = &transferDirection
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest) Execute() (*CgTransferWalletTransferCanTransferBalanceV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest) Execute() (*models.CgTransferWalletTransferCanTransferBalanceV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *CgTransferWalletTransferCanTransferBalanceV30ApiService) Get(ctx contex
 // Execute executes the request
 //
 //	@return CgTransferWalletTransferCanTransferBalanceV30Response
-func (a *CgTransferWalletTransferCanTransferBalanceV30ApiService) getExecute(r *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest) (*CgTransferWalletTransferCanTransferBalanceV30Response, *http.Response, error) {
+func (a *CgTransferWalletTransferCanTransferBalanceV30ApiService) getExecute(r *ApiOpenApiV30CgTransferWalletTransferCanTransferBalanceGetRequest) (*models.CgTransferWalletTransferCanTransferBalanceV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferWalletTransferCanTransferBalanceV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferWalletTransferCanTransferBalanceV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *CgTransferWalletTransferCanTransferBalanceV30ApiService) getExecute(r *
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/wallet/transfer/can_transfer_balance/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalAwemeAuthRenewCreateV30ApiService LocalAwemeAuthRenewCreateV30Api service
@@ -25,15 +26,15 @@ type LocalAwemeAuthRenewCreateV30ApiService service
 type ApiOpenApiV30LocalAwemeAuthRenewCreatePostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *LocalAwemeAuthRenewCreateV30ApiService
-	localAwemeAuthRenewCreateV30Request *LocalAwemeAuthRenewCreateV30Request
+	localAwemeAuthRenewCreateV30Request *models.LocalAwemeAuthRenewCreateV30Request
 }
 
-func (r *ApiOpenApiV30LocalAwemeAuthRenewCreatePostRequest) LocalAwemeAuthRenewCreateV30Request(localAwemeAuthRenewCreateV30Request LocalAwemeAuthRenewCreateV30Request) *ApiOpenApiV30LocalAwemeAuthRenewCreatePostRequest {
+func (r *ApiOpenApiV30LocalAwemeAuthRenewCreatePostRequest) LocalAwemeAuthRenewCreateV30Request(localAwemeAuthRenewCreateV30Request models.LocalAwemeAuthRenewCreateV30Request) *ApiOpenApiV30LocalAwemeAuthRenewCreatePostRequest {
 	r.localAwemeAuthRenewCreateV30Request = &localAwemeAuthRenewCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30LocalAwemeAuthRenewCreatePostRequest) Execute() (*LocalAwemeAuthRenewCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalAwemeAuthRenewCreatePostRequest) Execute() (*models.LocalAwemeAuthRenewCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *LocalAwemeAuthRenewCreateV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return LocalAwemeAuthRenewCreateV30Response
-func (a *LocalAwemeAuthRenewCreateV30ApiService) postExecute(r *ApiOpenApiV30LocalAwemeAuthRenewCreatePostRequest) (*LocalAwemeAuthRenewCreateV30Response, *http.Response, error) {
+func (a *LocalAwemeAuthRenewCreateV30ApiService) postExecute(r *ApiOpenApiV30LocalAwemeAuthRenewCreatePostRequest) (*models.LocalAwemeAuthRenewCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalAwemeAuthRenewCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalAwemeAuthRenewCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *LocalAwemeAuthRenewCreateV30ApiService) postExecute(r *ApiOpenApiV30Loc
 	localVarPath := localBasePath + "/open_api/v3.0/local/aweme_auth_renew/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerAuthAddPublicKeyV2ApiService EventManagerAuthAddPublicKeyV2Api service
@@ -25,15 +26,15 @@ type EventManagerAuthAddPublicKeyV2ApiService service
 type ApiOpenApi2EventManagerAuthAddPublicKeyPostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *EventManagerAuthAddPublicKeyV2ApiService
-	eventManagerAuthAddPublicKeyV2Request *EventManagerAuthAddPublicKeyV2Request
+	eventManagerAuthAddPublicKeyV2Request *models.EventManagerAuthAddPublicKeyV2Request
 }
 
-func (r *ApiOpenApi2EventManagerAuthAddPublicKeyPostRequest) EventManagerAuthAddPublicKeyV2Request(eventManagerAuthAddPublicKeyV2Request EventManagerAuthAddPublicKeyV2Request) *ApiOpenApi2EventManagerAuthAddPublicKeyPostRequest {
+func (r *ApiOpenApi2EventManagerAuthAddPublicKeyPostRequest) EventManagerAuthAddPublicKeyV2Request(eventManagerAuthAddPublicKeyV2Request models.EventManagerAuthAddPublicKeyV2Request) *ApiOpenApi2EventManagerAuthAddPublicKeyPostRequest {
 	r.eventManagerAuthAddPublicKeyV2Request = &eventManagerAuthAddPublicKeyV2Request
 	return r
 }
 
-func (r *ApiOpenApi2EventManagerAuthAddPublicKeyPostRequest) Execute() (*EventManagerAuthAddPublicKeyV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EventManagerAuthAddPublicKeyPostRequest) Execute() (*models.EventManagerAuthAddPublicKeyV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EventManagerAuthAddPublicKeyV2ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return EventManagerAuthAddPublicKeyV2Response
-func (a *EventManagerAuthAddPublicKeyV2ApiService) postExecute(r *ApiOpenApi2EventManagerAuthAddPublicKeyPostRequest) (*EventManagerAuthAddPublicKeyV2Response, *http.Response, error) {
+func (a *EventManagerAuthAddPublicKeyV2ApiService) postExecute(r *ApiOpenApi2EventManagerAuthAddPublicKeyPostRequest) (*models.EventManagerAuthAddPublicKeyV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerAuthAddPublicKeyV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerAuthAddPublicKeyV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EventManagerAuthAddPublicKeyV2ApiService) postExecute(r *ApiOpenApi2Eve
 	localVarPath := localBasePath + "/open_api/2/event_manager/auth/add_public_key/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

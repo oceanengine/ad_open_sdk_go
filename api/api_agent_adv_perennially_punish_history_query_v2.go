@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentAdvPerenniallyPunishHistoryQueryV2ApiService AgentAdvPerenniallyPunishHistoryQueryV2Api service
@@ -40,7 +41,7 @@ func (r *ApiOpenApi2AgentAdvPerenniallyPunishHistoryQueryGetRequest) AdvertiserI
 	return r
 }
 
-func (r *ApiOpenApi2AgentAdvPerenniallyPunishHistoryQueryGetRequest) Execute() (*AgentAdvPerenniallyPunishHistoryQueryV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentAdvPerenniallyPunishHistoryQueryGetRequest) Execute() (*models.AgentAdvPerenniallyPunishHistoryQueryV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *AgentAdvPerenniallyPunishHistoryQueryV2ApiService) Get(ctx context.Cont
 // Execute executes the request
 //
 //	@return AgentAdvPerenniallyPunishHistoryQueryV2Response
-func (a *AgentAdvPerenniallyPunishHistoryQueryV2ApiService) getExecute(r *ApiOpenApi2AgentAdvPerenniallyPunishHistoryQueryGetRequest) (*AgentAdvPerenniallyPunishHistoryQueryV2Response, *http.Response, error) {
+func (a *AgentAdvPerenniallyPunishHistoryQueryV2ApiService) getExecute(r *ApiOpenApi2AgentAdvPerenniallyPunishHistoryQueryGetRequest) (*models.AgentAdvPerenniallyPunishHistoryQueryV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentAdvPerenniallyPunishHistoryQueryV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentAdvPerenniallyPunishHistoryQueryV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *AgentAdvPerenniallyPunishHistoryQueryV2ApiService) getExecute(r *ApiOpe
 	localVarPath := localBasePath + "/open_api/2/agent/adv/perennially/punish_history/query/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

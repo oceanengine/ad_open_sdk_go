@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppIosListV2ApiService ToolsAppIosListV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsAppIosListGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsAppIosListV2ApiService
 	advertiserId *int64
-	filtering    *ToolsAppIosListV2Filtering
+	filtering    *models.ToolsAppIosListV2Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApi2ToolsAppIosListGetRequest) AdvertiserId(advertiserId int64) 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppIosListGetRequest) Filtering(filtering ToolsAppIosListV2Filtering) *ApiOpenApi2ToolsAppIosListGetRequest {
+func (r *ApiOpenApi2ToolsAppIosListGetRequest) Filtering(filtering models.ToolsAppIosListV2Filtering) *ApiOpenApi2ToolsAppIosListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2ToolsAppIosListGetRequest) PageSize(pageSize int64) *ApiOpen
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppIosListGetRequest) Execute() (*ToolsAppIosListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppIosListGetRequest) Execute() (*models.ToolsAppIosListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ToolsAppIosListV2ApiService) Get(ctx context.Context) *ApiOpenApi2Tools
 // Execute executes the request
 //
 //	@return ToolsAppIosListV2Response
-func (a *ToolsAppIosListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppIosListGetRequest) (*ToolsAppIosListV2Response, *http.Response, error) {
+func (a *ToolsAppIosListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppIosListGetRequest) (*models.ToolsAppIosListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppIosListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppIosListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ToolsAppIosListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppIosListGe
 	localVarPath := localBasePath + "/open_api/2/tools/app/ios/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

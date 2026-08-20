@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EbpRolePermissionGetV2ApiService EbpRolePermissionGetV2Api service
@@ -34,7 +35,7 @@ func (r *ApiOpenApi2EbpRolePermissionGetGetRequest) EnterpriseOrganizationIds(en
 	return r
 }
 
-func (r *ApiOpenApi2EbpRolePermissionGetGetRequest) Execute() (*EbpRolePermissionGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EbpRolePermissionGetGetRequest) Execute() (*models.EbpRolePermissionGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *EbpRolePermissionGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return EbpRolePermissionGetV2Response
-func (a *EbpRolePermissionGetV2ApiService) getExecute(r *ApiOpenApi2EbpRolePermissionGetGetRequest) (*EbpRolePermissionGetV2Response, *http.Response, error) {
+func (a *EbpRolePermissionGetV2ApiService) getExecute(r *ApiOpenApi2EbpRolePermissionGetGetRequest) (*models.EbpRolePermissionGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EbpRolePermissionGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EbpRolePermissionGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *EbpRolePermissionGetV2ApiService) getExecute(r *ApiOpenApi2EbpRolePermi
 	localVarPath := localBasePath + "/open_api/2/ebp/role_permission/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.enterpriseOrganizationIds == nil {

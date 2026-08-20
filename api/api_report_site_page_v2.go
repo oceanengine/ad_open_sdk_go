@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportSitePageV2ApiService ReportSitePageV2Api service
@@ -26,9 +27,9 @@ type ApiOpenApi2ReportSitePageGetRequest struct {
 	ctx           context.Context
 	ApiService    *ReportSitePageV2ApiService
 	advertiserId  *int64
-	inventoryType *ReportSitePageV2InventoryType
+	inventoryType *models.ReportSitePageV2InventoryType
 	siteId        *string
-	timeDuration  *ReportSitePageV2TimeDuration
+	timeDuration  *models.ReportSitePageV2TimeDuration
 }
 
 func (r *ApiOpenApi2ReportSitePageGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ReportSitePageGetRequest {
@@ -36,7 +37,7 @@ func (r *ApiOpenApi2ReportSitePageGetRequest) AdvertiserId(advertiserId int64) *
 	return r
 }
 
-func (r *ApiOpenApi2ReportSitePageGetRequest) InventoryType(inventoryType ReportSitePageV2InventoryType) *ApiOpenApi2ReportSitePageGetRequest {
+func (r *ApiOpenApi2ReportSitePageGetRequest) InventoryType(inventoryType models.ReportSitePageV2InventoryType) *ApiOpenApi2ReportSitePageGetRequest {
 	r.inventoryType = &inventoryType
 	return r
 }
@@ -46,12 +47,12 @@ func (r *ApiOpenApi2ReportSitePageGetRequest) SiteId(siteId string) *ApiOpenApi2
 	return r
 }
 
-func (r *ApiOpenApi2ReportSitePageGetRequest) TimeDuration(timeDuration ReportSitePageV2TimeDuration) *ApiOpenApi2ReportSitePageGetRequest {
+func (r *ApiOpenApi2ReportSitePageGetRequest) TimeDuration(timeDuration models.ReportSitePageV2TimeDuration) *ApiOpenApi2ReportSitePageGetRequest {
 	r.timeDuration = &timeDuration
 	return r
 }
 
-func (r *ApiOpenApi2ReportSitePageGetRequest) Execute() (*ReportSitePageV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ReportSitePageGetRequest) Execute() (*models.ReportSitePageV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ReportSitePageV2ApiService) Get(ctx context.Context) *ApiOpenApi2Report
 // Execute executes the request
 //
 //	@return ReportSitePageV2Response
-func (a *ReportSitePageV2ApiService) getExecute(r *ApiOpenApi2ReportSitePageGetRequest) (*ReportSitePageV2Response, *http.Response, error) {
+func (a *ReportSitePageV2ApiService) getExecute(r *ApiOpenApi2ReportSitePageGetRequest) (*models.ReportSitePageV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportSitePageV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportSitePageV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ReportSitePageV2ApiService) getExecute(r *ApiOpenApi2ReportSitePageGetR
 	localVarPath := localBasePath + "/open_api/2/report/site/page/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanToolsAwemeAuthV10ApiService QianchuanToolsAwemeAuthV10Api service
@@ -25,15 +26,15 @@ type QianchuanToolsAwemeAuthV10ApiService service
 type ApiOpenApiV10QianchuanToolsAwemeAuthPostRequest struct {
 	ctx                               context.Context
 	ApiService                        *QianchuanToolsAwemeAuthV10ApiService
-	qianchuanToolsAwemeAuthV10Request *QianchuanToolsAwemeAuthV10Request
+	qianchuanToolsAwemeAuthV10Request *models.QianchuanToolsAwemeAuthV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanToolsAwemeAuthPostRequest) QianchuanToolsAwemeAuthV10Request(qianchuanToolsAwemeAuthV10Request QianchuanToolsAwemeAuthV10Request) *ApiOpenApiV10QianchuanToolsAwemeAuthPostRequest {
+func (r *ApiOpenApiV10QianchuanToolsAwemeAuthPostRequest) QianchuanToolsAwemeAuthV10Request(qianchuanToolsAwemeAuthV10Request models.QianchuanToolsAwemeAuthV10Request) *ApiOpenApiV10QianchuanToolsAwemeAuthPostRequest {
 	r.qianchuanToolsAwemeAuthV10Request = &qianchuanToolsAwemeAuthV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsAwemeAuthPostRequest) Execute() (*QianchuanToolsAwemeAuthV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanToolsAwemeAuthPostRequest) Execute() (*models.QianchuanToolsAwemeAuthV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *QianchuanToolsAwemeAuthV10ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return QianchuanToolsAwemeAuthV10Response
-func (a *QianchuanToolsAwemeAuthV10ApiService) postExecute(r *ApiOpenApiV10QianchuanToolsAwemeAuthPostRequest) (*QianchuanToolsAwemeAuthV10Response, *http.Response, error) {
+func (a *QianchuanToolsAwemeAuthV10ApiService) postExecute(r *ApiOpenApiV10QianchuanToolsAwemeAuthPostRequest) (*models.QianchuanToolsAwemeAuthV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanToolsAwemeAuthV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanToolsAwemeAuthV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *QianchuanToolsAwemeAuthV10ApiService) postExecute(r *ApiOpenApiV10Qianc
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/tools/aweme_auth/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

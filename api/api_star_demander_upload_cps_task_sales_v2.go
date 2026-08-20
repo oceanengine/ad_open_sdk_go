@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemanderUploadCpsTaskSalesV2ApiService StarDemanderUploadCpsTaskSalesV2Api service
@@ -25,15 +26,15 @@ type StarDemanderUploadCpsTaskSalesV2ApiService service
 type ApiOpenApi2StarDemanderUploadCpsTaskSalesPostRequest struct {
 	ctx                                     context.Context
 	ApiService                              *StarDemanderUploadCpsTaskSalesV2ApiService
-	starDemanderUploadCpsTaskSalesV2Request *StarDemanderUploadCpsTaskSalesV2Request
+	starDemanderUploadCpsTaskSalesV2Request *models.StarDemanderUploadCpsTaskSalesV2Request
 }
 
-func (r *ApiOpenApi2StarDemanderUploadCpsTaskSalesPostRequest) StarDemanderUploadCpsTaskSalesV2Request(starDemanderUploadCpsTaskSalesV2Request StarDemanderUploadCpsTaskSalesV2Request) *ApiOpenApi2StarDemanderUploadCpsTaskSalesPostRequest {
+func (r *ApiOpenApi2StarDemanderUploadCpsTaskSalesPostRequest) StarDemanderUploadCpsTaskSalesV2Request(starDemanderUploadCpsTaskSalesV2Request models.StarDemanderUploadCpsTaskSalesV2Request) *ApiOpenApi2StarDemanderUploadCpsTaskSalesPostRequest {
 	r.starDemanderUploadCpsTaskSalesV2Request = &starDemanderUploadCpsTaskSalesV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarDemanderUploadCpsTaskSalesPostRequest) Execute() (*StarDemanderUploadCpsTaskSalesV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemanderUploadCpsTaskSalesPostRequest) Execute() (*models.StarDemanderUploadCpsTaskSalesV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarDemanderUploadCpsTaskSalesV2ApiService) Post(ctx context.Context) *
 // Execute executes the request
 //
 //	@return StarDemanderUploadCpsTaskSalesV2Response
-func (a *StarDemanderUploadCpsTaskSalesV2ApiService) postExecute(r *ApiOpenApi2StarDemanderUploadCpsTaskSalesPostRequest) (*StarDemanderUploadCpsTaskSalesV2Response, *http.Response, error) {
+func (a *StarDemanderUploadCpsTaskSalesV2ApiService) postExecute(r *ApiOpenApi2StarDemanderUploadCpsTaskSalesPostRequest) (*models.StarDemanderUploadCpsTaskSalesV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemanderUploadCpsTaskSalesV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemanderUploadCpsTaskSalesV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarDemanderUploadCpsTaskSalesV2ApiService) postExecute(r *ApiOpenApi2S
 	localVarPath := localBasePath + "/open_api/2/star/demander_upload_cps_task_sales/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

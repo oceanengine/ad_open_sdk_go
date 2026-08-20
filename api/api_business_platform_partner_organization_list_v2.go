@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BusinessPlatformPartnerOrganizationListV2ApiService BusinessPlatformPartnerOrganizationListV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest struct {
 	organizationId *int64
 	page           *int32
 	pageSize       *int32
-	filtering      *BusinessPlatformPartnerOrganizationListV2Filtering
+	filtering      *models.BusinessPlatformPartnerOrganizationListV2Filtering
 }
 
 // 巨量纵横组织id
@@ -50,12 +51,12 @@ func (r *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest) PageSize(
 }
 
 // 过滤条件
-func (r *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest) Filtering(filtering BusinessPlatformPartnerOrganizationListV2Filtering) *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest {
+func (r *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest) Filtering(filtering models.BusinessPlatformPartnerOrganizationListV2Filtering) *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest) Execute() (*BusinessPlatformPartnerOrganizationListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest) Execute() (*models.BusinessPlatformPartnerOrganizationListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *BusinessPlatformPartnerOrganizationListV2ApiService) Get(ctx context.Co
 // Execute executes the request
 //
 //	@return BusinessPlatformPartnerOrganizationListV2Response
-func (a *BusinessPlatformPartnerOrganizationListV2ApiService) getExecute(r *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest) (*BusinessPlatformPartnerOrganizationListV2Response, *http.Response, error) {
+func (a *BusinessPlatformPartnerOrganizationListV2ApiService) getExecute(r *ApiOpenApi2BusinessPlatformPartnerOrganizationListGetRequest) (*models.BusinessPlatformPartnerOrganizationListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BusinessPlatformPartnerOrganizationListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BusinessPlatformPartnerOrganizationListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *BusinessPlatformPartnerOrganizationListV2ApiService) getExecute(r *ApiO
 	localVarPath := localBasePath + "/open_api/2/business_platform/partner_organization/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.organizationId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoAdV2ApiService FileVideoAdV2Api service
@@ -30,9 +31,9 @@ type ApiOpenApi2FileVideoAdPostRequest struct {
 	isAigc         *bool
 	isGuideVideo   *bool
 	labels         *[]string
-	uploadType     *FileVideoAdV2UploadType
+	uploadType     *models.FileVideoAdV2UploadType
 	videoCoverId   *string
-	videoFile      *FormFileInfo
+	videoFile      *models.FormFileInfo
 	videoSignature *string
 	videoUrl       *string
 }
@@ -66,7 +67,7 @@ func (r *ApiOpenApi2FileVideoAdPostRequest) Labels(labels []string) *ApiOpenApi2
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoAdPostRequest) UploadType(uploadType FileVideoAdV2UploadType) *ApiOpenApi2FileVideoAdPostRequest {
+func (r *ApiOpenApi2FileVideoAdPostRequest) UploadType(uploadType models.FileVideoAdV2UploadType) *ApiOpenApi2FileVideoAdPostRequest {
 	r.uploadType = &uploadType
 	return r
 }
@@ -78,7 +79,7 @@ func (r *ApiOpenApi2FileVideoAdPostRequest) VideoCoverId(videoCoverId string) *A
 }
 
 // 视频文件 允许格式：mp4、mpeg、3gp、avi（10s超时限制） upload_type为UPLOAD_BY_File必填
-func (r *ApiOpenApi2FileVideoAdPostRequest) VideoFile(videoFile *FormFileInfo) *ApiOpenApi2FileVideoAdPostRequest {
+func (r *ApiOpenApi2FileVideoAdPostRequest) VideoFile(videoFile *models.FormFileInfo) *ApiOpenApi2FileVideoAdPostRequest {
 	r.videoFile = videoFile
 	return r
 }
@@ -95,7 +96,7 @@ func (r *ApiOpenApi2FileVideoAdPostRequest) VideoUrl(videoUrl string) *ApiOpenAp
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoAdPostRequest) Execute() (*FileVideoAdV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoAdPostRequest) Execute() (*models.FileVideoAdV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -129,12 +130,12 @@ func (a *FileVideoAdV2ApiService) Post(ctx context.Context) *ApiOpenApi2FileVide
 // Execute executes the request
 //
 //	@return FileVideoAdV2Response
-func (a *FileVideoAdV2ApiService) postExecute(r *ApiOpenApi2FileVideoAdPostRequest) (*FileVideoAdV2Response, *http.Response, error) {
+func (a *FileVideoAdV2ApiService) postExecute(r *ApiOpenApi2FileVideoAdPostRequest) (*models.FileVideoAdV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoAdV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoAdV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -144,7 +145,7 @@ func (a *FileVideoAdV2ApiService) postExecute(r *ApiOpenApi2FileVideoAdPostReque
 	localVarPath := localBasePath + "/open_api/2/file/video/ad/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

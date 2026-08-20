@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniAwemeSuggestBudgetV10ApiService QianchuanUniAwemeSuggestBudgetV10Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest struct {
 	ApiService    *QianchuanUniAwemeSuggestBudgetV10ApiService
 	advertiserId  *int64
 	awemeId       *int64
-	marketingGoal *QianchuanUniAwemeSuggestBudgetV10MarketingGoal
+	marketingGoal *models.QianchuanUniAwemeSuggestBudgetV10MarketingGoal
 	productIds    *[]int64
 	adId          *int64
 }
@@ -42,7 +43,7 @@ func (r *ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest) AwemeId(awemeId 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest) MarketingGoal(marketingGoal QianchuanUniAwemeSuggestBudgetV10MarketingGoal) *ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest {
+func (r *ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest) MarketingGoal(marketingGoal models.QianchuanUniAwemeSuggestBudgetV10MarketingGoal) *ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest) AdId(adId int64)
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest) Execute() (*QianchuanUniAwemeSuggestBudgetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest) Execute() (*models.QianchuanUniAwemeSuggestBudgetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *QianchuanUniAwemeSuggestBudgetV10ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return QianchuanUniAwemeSuggestBudgetV10Response
-func (a *QianchuanUniAwemeSuggestBudgetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest) (*QianchuanUniAwemeSuggestBudgetV10Response, *http.Response, error) {
+func (a *QianchuanUniAwemeSuggestBudgetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniAwemeSuggestBudgetGetRequest) (*models.QianchuanUniAwemeSuggestBudgetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniAwemeSuggestBudgetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniAwemeSuggestBudgetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *QianchuanUniAwemeSuggestBudgetV10ApiService) getExecute(r *ApiOpenApiV1
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_aweme/suggest/budget/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

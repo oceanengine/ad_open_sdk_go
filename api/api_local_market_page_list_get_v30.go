@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalMarketPageListGetV30ApiService LocalMarketPageListGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30LocalMarketPageListGetGetRequest struct {
 	ctx            context.Context
 	ApiService     *LocalMarketPageListGetV30ApiService
 	localAccountId *int64
-	deliveryGoal   *LocalMarketPageListGetV30DeliveryGoal
+	deliveryGoal   *models.LocalMarketPageListGetV30DeliveryGoal
 	poiIds         *[]int64
 	productIds     *[]int64
 	page           *int64
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30LocalMarketPageListGetGetRequest) LocalAccountId(localAcco
 	return r
 }
 
-func (r *ApiOpenApiV30LocalMarketPageListGetGetRequest) DeliveryGoal(deliveryGoal LocalMarketPageListGetV30DeliveryGoal) *ApiOpenApiV30LocalMarketPageListGetGetRequest {
+func (r *ApiOpenApiV30LocalMarketPageListGetGetRequest) DeliveryGoal(deliveryGoal models.LocalMarketPageListGetV30DeliveryGoal) *ApiOpenApiV30LocalMarketPageListGetGetRequest {
 	r.deliveryGoal = &deliveryGoal
 	return r
 }
@@ -67,7 +68,7 @@ func (r *ApiOpenApiV30LocalMarketPageListGetGetRequest) PageSize(pageSize int64)
 	return r
 }
 
-func (r *ApiOpenApiV30LocalMarketPageListGetGetRequest) Execute() (*LocalMarketPageListGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalMarketPageListGetGetRequest) Execute() (*models.LocalMarketPageListGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -101,12 +102,12 @@ func (a *LocalMarketPageListGetV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return LocalMarketPageListGetV30Response
-func (a *LocalMarketPageListGetV30ApiService) getExecute(r *ApiOpenApiV30LocalMarketPageListGetGetRequest) (*LocalMarketPageListGetV30Response, *http.Response, error) {
+func (a *LocalMarketPageListGetV30ApiService) getExecute(r *ApiOpenApiV30LocalMarketPageListGetGetRequest) (*models.LocalMarketPageListGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalMarketPageListGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalMarketPageListGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -116,7 +117,7 @@ func (a *LocalMarketPageListGetV30ApiService) getExecute(r *ApiOpenApiV30LocalMa
 	localVarPath := localBasePath + "/open_api/v3.0/local/market_page_list/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

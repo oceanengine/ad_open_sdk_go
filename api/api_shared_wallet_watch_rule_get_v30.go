@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SharedWalletWatchRuleGetV30ApiService SharedWalletWatchRuleGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30SharedWalletWatchRuleGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *SharedWalletWatchRuleGetV30ApiService
 	accountId   *int64
-	accountType *SharedWalletWatchRuleGetV30AccountType
+	accountType *models.SharedWalletWatchRuleGetV30AccountType
 	subWalletId *int64
 }
 
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV30SharedWalletWatchRuleGetGetRequest) AccountId(accountId in
 }
 
 // 鉴权账户类型
-func (r *ApiOpenApiV30SharedWalletWatchRuleGetGetRequest) AccountType(accountType SharedWalletWatchRuleGetV30AccountType) *ApiOpenApiV30SharedWalletWatchRuleGetGetRequest {
+func (r *ApiOpenApiV30SharedWalletWatchRuleGetGetRequest) AccountType(accountType models.SharedWalletWatchRuleGetV30AccountType) *ApiOpenApiV30SharedWalletWatchRuleGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -48,7 +49,7 @@ func (r *ApiOpenApiV30SharedWalletWatchRuleGetGetRequest) SubWalletId(subWalletI
 	return r
 }
 
-func (r *ApiOpenApiV30SharedWalletWatchRuleGetGetRequest) Execute() (*SharedWalletWatchRuleGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SharedWalletWatchRuleGetGetRequest) Execute() (*models.SharedWalletWatchRuleGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *SharedWalletWatchRuleGetV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return SharedWalletWatchRuleGetV30Response
-func (a *SharedWalletWatchRuleGetV30ApiService) getExecute(r *ApiOpenApiV30SharedWalletWatchRuleGetGetRequest) (*SharedWalletWatchRuleGetV30Response, *http.Response, error) {
+func (a *SharedWalletWatchRuleGetV30ApiService) getExecute(r *ApiOpenApiV30SharedWalletWatchRuleGetGetRequest) (*models.SharedWalletWatchRuleGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SharedWalletWatchRuleGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SharedWalletWatchRuleGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *SharedWalletWatchRuleGetV30ApiService) getExecute(r *ApiOpenApiV30Share
 	localVarPath := localBasePath + "/open_api/v3.0/shared_wallet/watch_rule/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

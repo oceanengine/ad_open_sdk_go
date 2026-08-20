@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAdRejectReasonV10ApiService QianchuanAdRejectReasonV10Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV10QianchuanAdRejectReasonGetRequest) AdvertiserId(advertiser
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAdRejectReasonGetRequest) Execute() (*QianchuanAdRejectReasonV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAdRejectReasonGetRequest) Execute() (*models.QianchuanAdRejectReasonV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *QianchuanAdRejectReasonV10ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return QianchuanAdRejectReasonV10Response
-func (a *QianchuanAdRejectReasonV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAdRejectReasonGetRequest) (*QianchuanAdRejectReasonV10Response, *http.Response, error) {
+func (a *QianchuanAdRejectReasonV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAdRejectReasonGetRequest) (*models.QianchuanAdRejectReasonV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAdRejectReasonV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAdRejectReasonV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *QianchuanAdRejectReasonV10ApiService) getExecute(r *ApiOpenApiV10Qianch
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/ad/reject_reason/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

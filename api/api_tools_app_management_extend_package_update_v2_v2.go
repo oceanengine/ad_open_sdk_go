@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementExtendPackageUpdateV2V2ApiService ToolsAppManagementExtendPackageUpdateV2V2Api service
@@ -25,15 +26,15 @@ type ToolsAppManagementExtendPackageUpdateV2V2ApiService service
 type ApiOpenApi2ToolsAppManagementExtendPackageUpdateV2PostRequest struct {
 	ctx                                              context.Context
 	ApiService                                       *ToolsAppManagementExtendPackageUpdateV2V2ApiService
-	toolsAppManagementExtendPackageUpdateV2V2Request *ToolsAppManagementExtendPackageUpdateV2V2Request
+	toolsAppManagementExtendPackageUpdateV2V2Request *models.ToolsAppManagementExtendPackageUpdateV2V2Request
 }
 
-func (r *ApiOpenApi2ToolsAppManagementExtendPackageUpdateV2PostRequest) ToolsAppManagementExtendPackageUpdateV2V2Request(toolsAppManagementExtendPackageUpdateV2V2Request ToolsAppManagementExtendPackageUpdateV2V2Request) *ApiOpenApi2ToolsAppManagementExtendPackageUpdateV2PostRequest {
+func (r *ApiOpenApi2ToolsAppManagementExtendPackageUpdateV2PostRequest) ToolsAppManagementExtendPackageUpdateV2V2Request(toolsAppManagementExtendPackageUpdateV2V2Request models.ToolsAppManagementExtendPackageUpdateV2V2Request) *ApiOpenApi2ToolsAppManagementExtendPackageUpdateV2PostRequest {
 	r.toolsAppManagementExtendPackageUpdateV2V2Request = &toolsAppManagementExtendPackageUpdateV2V2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementExtendPackageUpdateV2PostRequest) Execute() (*ToolsAppManagementExtendPackageUpdateV2V2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementExtendPackageUpdateV2PostRequest) Execute() (*models.ToolsAppManagementExtendPackageUpdateV2V2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsAppManagementExtendPackageUpdateV2V2ApiService) Post(ctx context.C
 // Execute executes the request
 //
 //	@return ToolsAppManagementExtendPackageUpdateV2V2Response
-func (a *ToolsAppManagementExtendPackageUpdateV2V2ApiService) postExecute(r *ApiOpenApi2ToolsAppManagementExtendPackageUpdateV2PostRequest) (*ToolsAppManagementExtendPackageUpdateV2V2Response, *http.Response, error) {
+func (a *ToolsAppManagementExtendPackageUpdateV2V2ApiService) postExecute(r *ApiOpenApi2ToolsAppManagementExtendPackageUpdateV2PostRequest) (*models.ToolsAppManagementExtendPackageUpdateV2V2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementExtendPackageUpdateV2V2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementExtendPackageUpdateV2V2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsAppManagementExtendPackageUpdateV2V2ApiService) postExecute(r *Api
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/extend_package/update_v2/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

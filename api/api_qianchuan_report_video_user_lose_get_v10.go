@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportVideoUserLoseGetV10ApiService QianchuanReportVideoUserLoseGetV10Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest struct {
 	fields       *[]string
 	startDate    *string
 	endDate      *string
-	filtering    *QianchuanReportVideoUserLoseGetV10Filtering
+	filtering    *models.QianchuanReportVideoUserLoseGetV10Filtering
 	advertiserId *int64
 }
 
@@ -47,7 +48,7 @@ func (r *ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest) EndDate(endDate
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest) Filtering(filtering QianchuanReportVideoUserLoseGetV10Filtering) *ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest) Filtering(filtering models.QianchuanReportVideoUserLoseGetV10Filtering) *ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest) AdvertiserId(ad
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest) Execute() (*QianchuanReportVideoUserLoseGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest) Execute() (*models.QianchuanReportVideoUserLoseGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *QianchuanReportVideoUserLoseGetV10ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return QianchuanReportVideoUserLoseGetV10Response
-func (a *QianchuanReportVideoUserLoseGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest) (*QianchuanReportVideoUserLoseGetV10Response, *http.Response, error) {
+func (a *QianchuanReportVideoUserLoseGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportVideoUserLoseGetGetRequest) (*models.QianchuanReportVideoUserLoseGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportVideoUserLoseGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportVideoUserLoseGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *QianchuanReportVideoUserLoseGetV10ApiService) getExecute(r *ApiOpenApiV
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/video_user_lose/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.fields == nil {

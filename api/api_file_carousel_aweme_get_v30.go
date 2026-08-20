@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileCarouselAwemeGetV30ApiService FileCarouselAwemeGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30FileCarouselAwemeGetGetRequest struct {
 	ApiService   *FileCarouselAwemeGetV30ApiService
 	advertiserId *int64
 	awemeId      *string
-	filtering    *FileCarouselAwemeGetV30Filtering
+	filtering    *models.FileCarouselAwemeGetV30Filtering
 	cursor       *string
 	count        *int64
 }
@@ -44,7 +45,7 @@ func (r *ApiOpenApiV30FileCarouselAwemeGetGetRequest) AwemeId(awemeId string) *A
 }
 
 // 过滤器
-func (r *ApiOpenApiV30FileCarouselAwemeGetGetRequest) Filtering(filtering FileCarouselAwemeGetV30Filtering) *ApiOpenApiV30FileCarouselAwemeGetGetRequest {
+func (r *ApiOpenApiV30FileCarouselAwemeGetGetRequest) Filtering(filtering models.FileCarouselAwemeGetV30Filtering) *ApiOpenApiV30FileCarouselAwemeGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -61,7 +62,7 @@ func (r *ApiOpenApiV30FileCarouselAwemeGetGetRequest) Count(count int64) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApiV30FileCarouselAwemeGetGetRequest) Execute() (*FileCarouselAwemeGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30FileCarouselAwemeGetGetRequest) Execute() (*models.FileCarouselAwemeGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -95,12 +96,12 @@ func (a *FileCarouselAwemeGetV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return FileCarouselAwemeGetV30Response
-func (a *FileCarouselAwemeGetV30ApiService) getExecute(r *ApiOpenApiV30FileCarouselAwemeGetGetRequest) (*FileCarouselAwemeGetV30Response, *http.Response, error) {
+func (a *FileCarouselAwemeGetV30ApiService) getExecute(r *ApiOpenApiV30FileCarouselAwemeGetGetRequest) (*models.FileCarouselAwemeGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileCarouselAwemeGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileCarouselAwemeGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -110,7 +111,7 @@ func (a *FileCarouselAwemeGetV30ApiService) getExecute(r *ApiOpenApiV30FileCarou
 	localVarPath := localBasePath + "/open_api/v3.0/file/carousel/aweme/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAuthorizableShopListV10ApiService QianchuanUniPromotionAuthorizableShopListV10Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest struct {
 	ApiService   *QianchuanUniPromotionAuthorizableShopListV10ApiService
 	advertiserId *int64
 	awemeId      *int64
-	filter       *QianchuanUniPromotionAuthorizableShopListV10Filter
+	filter       *models.QianchuanUniPromotionAuthorizableShopListV10Filter
 	page         *int64
 	pageSize     *int64
 }
@@ -42,7 +43,7 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest) Aweme
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest) Filter(filter QianchuanUniPromotionAuthorizableShopListV10Filter) *ApiOpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest) Filter(filter models.QianchuanUniPromotionAuthorizableShopListV10Filter) *ApiOpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest {
 	r.filter = &filter
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest) PageS
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest) Execute() (*QianchuanUniPromotionAuthorizableShopListV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest) Execute() (*models.QianchuanUniPromotionAuthorizableShopListV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *QianchuanUniPromotionAuthorizableShopListV10ApiService) Get(ctx context
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAuthorizableShopListV10Response
-func (a *QianchuanUniPromotionAuthorizableShopListV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest) (*QianchuanUniPromotionAuthorizableShopListV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAuthorizableShopListV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionAuthorizableShopListGetRequest) (*models.QianchuanUniPromotionAuthorizableShopListV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAuthorizableShopListV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAuthorizableShopListV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *QianchuanUniPromotionAuthorizableShopListV10ApiService) getExecute(r *A
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/authorizable_shop/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

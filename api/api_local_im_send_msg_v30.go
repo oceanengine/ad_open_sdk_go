@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalImSendMsgV30ApiService LocalImSendMsgV30Api service
@@ -25,15 +26,15 @@ type LocalImSendMsgV30ApiService service
 type ApiOpenApiV30LocalImSendMsgPostRequest struct {
 	ctx                      context.Context
 	ApiService               *LocalImSendMsgV30ApiService
-	localImSendMsgV30Request *LocalImSendMsgV30Request
+	localImSendMsgV30Request *models.LocalImSendMsgV30Request
 }
 
-func (r *ApiOpenApiV30LocalImSendMsgPostRequest) LocalImSendMsgV30Request(localImSendMsgV30Request LocalImSendMsgV30Request) *ApiOpenApiV30LocalImSendMsgPostRequest {
+func (r *ApiOpenApiV30LocalImSendMsgPostRequest) LocalImSendMsgV30Request(localImSendMsgV30Request models.LocalImSendMsgV30Request) *ApiOpenApiV30LocalImSendMsgPostRequest {
 	r.localImSendMsgV30Request = &localImSendMsgV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30LocalImSendMsgPostRequest) Execute() (*LocalImSendMsgV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalImSendMsgPostRequest) Execute() (*models.LocalImSendMsgV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *LocalImSendMsgV30ApiService) Post(ctx context.Context) *ApiOpenApiV30Lo
 // Execute executes the request
 //
 //	@return LocalImSendMsgV30Response
-func (a *LocalImSendMsgV30ApiService) postExecute(r *ApiOpenApiV30LocalImSendMsgPostRequest) (*LocalImSendMsgV30Response, *http.Response, error) {
+func (a *LocalImSendMsgV30ApiService) postExecute(r *ApiOpenApiV30LocalImSendMsgPostRequest) (*models.LocalImSendMsgV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalImSendMsgV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalImSendMsgV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *LocalImSendMsgV30ApiService) postExecute(r *ApiOpenApiV30LocalImSendMsg
 	localVarPath := localBasePath + "/open_api/v3.0/local/im/send/msg/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

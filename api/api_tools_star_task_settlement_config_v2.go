@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsStarTaskSettlementConfigV2ApiService ToolsStarTaskSettlementConfigV2Api service
@@ -30,7 +31,7 @@ type ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest struct {
 	secondIndustryId       *int64
 	starMaterialFirstType  *int64
 	starMaterialSecondType *int64
-	starTaskExternalAction *ToolsStarTaskSettlementConfigV2StarTaskExternalAction
+	starTaskExternalAction *models.ToolsStarTaskSettlementConfigV2StarTaskExternalAction
 }
 
 // 广告账户id
@@ -64,12 +65,12 @@ func (r *ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest) StarMaterialSecondT
 }
 
 // 优化目标，仅对达人流量生效。支持3种可选值）
-func (r *ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest) StarTaskExternalAction(starTaskExternalAction ToolsStarTaskSettlementConfigV2StarTaskExternalAction) *ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest {
+func (r *ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest) StarTaskExternalAction(starTaskExternalAction models.ToolsStarTaskSettlementConfigV2StarTaskExternalAction) *ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest {
 	r.starTaskExternalAction = &starTaskExternalAction
 	return r
 }
 
-func (r *ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest) Execute() (*ToolsStarTaskSettlementConfigV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest) Execute() (*models.ToolsStarTaskSettlementConfigV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *ToolsStarTaskSettlementConfigV2ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return ToolsStarTaskSettlementConfigV2Response
-func (a *ToolsStarTaskSettlementConfigV2ApiService) getExecute(r *ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest) (*ToolsStarTaskSettlementConfigV2Response, *http.Response, error) {
+func (a *ToolsStarTaskSettlementConfigV2ApiService) getExecute(r *ApiOpenApi2ToolsStarTaskSettlementConfigGetRequest) (*models.ToolsStarTaskSettlementConfigV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsStarTaskSettlementConfigV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsStarTaskSettlementConfigV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *ToolsStarTaskSettlementConfigV2ApiService) getExecute(r *ApiOpenApi2Too
 	localVarPath := localBasePath + "/open_api/2/tools/star_task/settlement_config/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

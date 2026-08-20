@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // WalletChargeVerifyGetV30ApiService WalletChargeVerifyGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30WalletChargeVerifyGetGetRequest struct {
 	ApiService *WalletChargeVerifyGetV30ApiService
 	accountId  *int64
 	walletId   *int64
-	chargeType *WalletChargeVerifyGetV30ChargeType
+	chargeType *models.WalletChargeVerifyGetV30ChargeType
 }
 
 // 组织ID
@@ -43,12 +44,12 @@ func (r *ApiOpenApiV30WalletChargeVerifyGetGetRequest) WalletId(walletId int64) 
 }
 
 // 充值类型
-func (r *ApiOpenApiV30WalletChargeVerifyGetGetRequest) ChargeType(chargeType WalletChargeVerifyGetV30ChargeType) *ApiOpenApiV30WalletChargeVerifyGetGetRequest {
+func (r *ApiOpenApiV30WalletChargeVerifyGetGetRequest) ChargeType(chargeType models.WalletChargeVerifyGetV30ChargeType) *ApiOpenApiV30WalletChargeVerifyGetGetRequest {
 	r.chargeType = &chargeType
 	return r
 }
 
-func (r *ApiOpenApiV30WalletChargeVerifyGetGetRequest) Execute() (*WalletChargeVerifyGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30WalletChargeVerifyGetGetRequest) Execute() (*models.WalletChargeVerifyGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *WalletChargeVerifyGetV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return WalletChargeVerifyGetV30Response
-func (a *WalletChargeVerifyGetV30ApiService) getExecute(r *ApiOpenApiV30WalletChargeVerifyGetGetRequest) (*WalletChargeVerifyGetV30Response, *http.Response, error) {
+func (a *WalletChargeVerifyGetV30ApiService) getExecute(r *ApiOpenApiV30WalletChargeVerifyGetGetRequest) (*models.WalletChargeVerifyGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *WalletChargeVerifyGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.WalletChargeVerifyGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *WalletChargeVerifyGetV30ApiService) getExecute(r *ApiOpenApiV30WalletCh
 	localVarPath := localBasePath + "/open_api/v3.0/wallet/charge/verify/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

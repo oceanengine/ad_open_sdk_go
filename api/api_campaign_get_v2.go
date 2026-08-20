@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CampaignGetV2ApiService CampaignGetV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2CampaignGetGetRequest struct {
 	ApiService   *CampaignGetV2ApiService
 	advertiserId *int64
 	fields       *[]string
-	filtering    *CampaignGetV2Filtering
+	filtering    *models.CampaignGetV2Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -42,7 +43,7 @@ func (r *ApiOpenApi2CampaignGetGetRequest) Fields(fields []string) *ApiOpenApi2C
 	return r
 }
 
-func (r *ApiOpenApi2CampaignGetGetRequest) Filtering(filtering CampaignGetV2Filtering) *ApiOpenApi2CampaignGetGetRequest {
+func (r *ApiOpenApi2CampaignGetGetRequest) Filtering(filtering models.CampaignGetV2Filtering) *ApiOpenApi2CampaignGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApi2CampaignGetGetRequest) PageSize(pageSize int64) *ApiOpenApi2
 	return r
 }
 
-func (r *ApiOpenApi2CampaignGetGetRequest) Execute() (*CampaignGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CampaignGetGetRequest) Execute() (*models.CampaignGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *CampaignGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2CampaignG
 // Execute executes the request
 //
 //	@return CampaignGetV2Response
-func (a *CampaignGetV2ApiService) getExecute(r *ApiOpenApi2CampaignGetGetRequest) (*CampaignGetV2Response, *http.Response, error) {
+func (a *CampaignGetV2ApiService) getExecute(r *ApiOpenApi2CampaignGetGetRequest) (*models.CampaignGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CampaignGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CampaignGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *CampaignGetV2ApiService) getExecute(r *ApiOpenApi2CampaignGetGetRequest
 	localVarPath := localBasePath + "/open_api/2/campaign/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

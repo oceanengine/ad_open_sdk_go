@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueCouponGetV2ApiService ClueCouponGetV2Api service
@@ -26,10 +27,10 @@ type ApiOpenApi2ClueCouponGetGetRequest struct {
 	ctx           context.Context
 	ApiService    *ClueCouponGetV2ApiService
 	activityIds   *[]int64
-	activityTypes *[]*ClueCouponGetV2ActivityTypes
+	activityTypes *[]*models.ClueCouponGetV2ActivityTypes
 	advertiserId  *int64
 	endTime       **string
-	isDel         *ClueCouponGetV2IsDel
+	isDel         *models.ClueCouponGetV2IsDel
 	page          *int64
 	pageSize      *int64
 	startTime     **string
@@ -40,7 +41,7 @@ func (r *ApiOpenApi2ClueCouponGetGetRequest) ActivityIds(activityIds []int64) *A
 	return r
 }
 
-func (r *ApiOpenApi2ClueCouponGetGetRequest) ActivityTypes(activityTypes []*ClueCouponGetV2ActivityTypes) *ApiOpenApi2ClueCouponGetGetRequest {
+func (r *ApiOpenApi2ClueCouponGetGetRequest) ActivityTypes(activityTypes []*models.ClueCouponGetV2ActivityTypes) *ApiOpenApi2ClueCouponGetGetRequest {
 	r.activityTypes = &activityTypes
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2ClueCouponGetGetRequest) EndTime(endTime *string) *ApiOpenAp
 	return r
 }
 
-func (r *ApiOpenApi2ClueCouponGetGetRequest) IsDel(isDel ClueCouponGetV2IsDel) *ApiOpenApi2ClueCouponGetGetRequest {
+func (r *ApiOpenApi2ClueCouponGetGetRequest) IsDel(isDel models.ClueCouponGetV2IsDel) *ApiOpenApi2ClueCouponGetGetRequest {
 	r.isDel = &isDel
 	return r
 }
@@ -75,7 +76,7 @@ func (r *ApiOpenApi2ClueCouponGetGetRequest) StartTime(startTime *string) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2ClueCouponGetGetRequest) Execute() (*ClueCouponGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueCouponGetGetRequest) Execute() (*models.ClueCouponGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -109,12 +110,12 @@ func (a *ClueCouponGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2ClueCou
 // Execute executes the request
 //
 //	@return ClueCouponGetV2Response
-func (a *ClueCouponGetV2ApiService) getExecute(r *ApiOpenApi2ClueCouponGetGetRequest) (*ClueCouponGetV2Response, *http.Response, error) {
+func (a *ClueCouponGetV2ApiService) getExecute(r *ApiOpenApi2ClueCouponGetGetRequest) (*models.ClueCouponGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueCouponGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueCouponGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -124,7 +125,7 @@ func (a *ClueCouponGetV2ApiService) getExecute(r *ApiOpenApi2ClueCouponGetGetReq
 	localVarPath := localBasePath + "/open_api/2/clue/coupon/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

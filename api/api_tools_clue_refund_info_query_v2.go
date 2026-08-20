@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueRefundInfoQueryV2ApiService ToolsClueRefundInfoQueryV2Api service
@@ -25,15 +26,15 @@ type ToolsClueRefundInfoQueryV2ApiService service
 type ApiOpenApi2ToolsClueRefundInfoQueryPostRequest struct {
 	ctx                               context.Context
 	ApiService                        *ToolsClueRefundInfoQueryV2ApiService
-	toolsClueRefundInfoQueryV2Request *ToolsClueRefundInfoQueryV2Request
+	toolsClueRefundInfoQueryV2Request *models.ToolsClueRefundInfoQueryV2Request
 }
 
-func (r *ApiOpenApi2ToolsClueRefundInfoQueryPostRequest) ToolsClueRefundInfoQueryV2Request(toolsClueRefundInfoQueryV2Request ToolsClueRefundInfoQueryV2Request) *ApiOpenApi2ToolsClueRefundInfoQueryPostRequest {
+func (r *ApiOpenApi2ToolsClueRefundInfoQueryPostRequest) ToolsClueRefundInfoQueryV2Request(toolsClueRefundInfoQueryV2Request models.ToolsClueRefundInfoQueryV2Request) *ApiOpenApi2ToolsClueRefundInfoQueryPostRequest {
 	r.toolsClueRefundInfoQueryV2Request = &toolsClueRefundInfoQueryV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueRefundInfoQueryPostRequest) Execute() (*ToolsClueRefundInfoQueryV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueRefundInfoQueryPostRequest) Execute() (*models.ToolsClueRefundInfoQueryV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsClueRefundInfoQueryV2ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsClueRefundInfoQueryV2Response
-func (a *ToolsClueRefundInfoQueryV2ApiService) postExecute(r *ApiOpenApi2ToolsClueRefundInfoQueryPostRequest) (*ToolsClueRefundInfoQueryV2Response, *http.Response, error) {
+func (a *ToolsClueRefundInfoQueryV2ApiService) postExecute(r *ApiOpenApi2ToolsClueRefundInfoQueryPostRequest) (*models.ToolsClueRefundInfoQueryV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueRefundInfoQueryV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueRefundInfoQueryV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsClueRefundInfoQueryV2ApiService) postExecute(r *ApiOpenApi2ToolsCl
 	localVarPath := localBasePath + "/open_api/2/tools/clue/refund/info/query/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

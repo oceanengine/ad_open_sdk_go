@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalAudiencePackageGetV30ApiService LocalAudiencePackageGetV30Api service
@@ -48,7 +49,7 @@ func (r *ApiOpenApiV30LocalAudiencePackageGetGetRequest) PageSize(pageSize int64
 	return r
 }
 
-func (r *ApiOpenApiV30LocalAudiencePackageGetGetRequest) Execute() (*LocalAudiencePackageGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalAudiencePackageGetGetRequest) Execute() (*models.LocalAudiencePackageGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *LocalAudiencePackageGetV30ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return LocalAudiencePackageGetV30Response
-func (a *LocalAudiencePackageGetV30ApiService) getExecute(r *ApiOpenApiV30LocalAudiencePackageGetGetRequest) (*LocalAudiencePackageGetV30Response, *http.Response, error) {
+func (a *LocalAudiencePackageGetV30ApiService) getExecute(r *ApiOpenApiV30LocalAudiencePackageGetGetRequest) (*models.LocalAudiencePackageGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalAudiencePackageGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalAudiencePackageGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *LocalAudiencePackageGetV30ApiService) getExecute(r *ApiOpenApiV30LocalA
 	localVarPath := localBasePath + "/open_api/v3.0/local/audience_package/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

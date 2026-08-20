@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueFormDeleteV2ApiService ClueFormDeleteV2Api service
@@ -25,15 +26,15 @@ type ClueFormDeleteV2ApiService service
 type ApiOpenApi2ClueFormDeletePostRequest struct {
 	ctx                     context.Context
 	ApiService              *ClueFormDeleteV2ApiService
-	clueFormDeleteV2Request *ClueFormDeleteV2Request
+	clueFormDeleteV2Request *models.ClueFormDeleteV2Request
 }
 
-func (r *ApiOpenApi2ClueFormDeletePostRequest) ClueFormDeleteV2Request(clueFormDeleteV2Request ClueFormDeleteV2Request) *ApiOpenApi2ClueFormDeletePostRequest {
+func (r *ApiOpenApi2ClueFormDeletePostRequest) ClueFormDeleteV2Request(clueFormDeleteV2Request models.ClueFormDeleteV2Request) *ApiOpenApi2ClueFormDeletePostRequest {
 	r.clueFormDeleteV2Request = &clueFormDeleteV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ClueFormDeletePostRequest) Execute() (*ClueFormDeleteV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueFormDeletePostRequest) Execute() (*models.ClueFormDeleteV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ClueFormDeleteV2ApiService) Post(ctx context.Context) *ApiOpenApi2ClueF
 // Execute executes the request
 //
 //	@return ClueFormDeleteV2Response
-func (a *ClueFormDeleteV2ApiService) postExecute(r *ApiOpenApi2ClueFormDeletePostRequest) (*ClueFormDeleteV2Response, *http.Response, error) {
+func (a *ClueFormDeleteV2ApiService) postExecute(r *ApiOpenApi2ClueFormDeletePostRequest) (*models.ClueFormDeleteV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueFormDeleteV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueFormDeleteV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ClueFormDeleteV2ApiService) postExecute(r *ApiOpenApi2ClueFormDeletePos
 	localVarPath := localBasePath + "/open_api/2/clue/form/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

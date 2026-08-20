@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QueryRebateBalanceV2ApiService QueryRebateBalanceV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2QueryRebateBalanceGetRequest struct {
 	ctx        context.Context
 	ApiService *QueryRebateBalanceV2ApiService
 	agentId    *int64
-	filtering  *QueryRebateBalanceV2Filtering
+	filtering  *models.QueryRebateBalanceV2Filtering
 	page       *int64
 	pageSize   *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApi2QueryRebateBalanceGetRequest) AgentId(agentId int64) *ApiOpe
 }
 
 // 过滤器
-func (r *ApiOpenApi2QueryRebateBalanceGetRequest) Filtering(filtering QueryRebateBalanceV2Filtering) *ApiOpenApi2QueryRebateBalanceGetRequest {
+func (r *ApiOpenApi2QueryRebateBalanceGetRequest) Filtering(filtering models.QueryRebateBalanceV2Filtering) *ApiOpenApi2QueryRebateBalanceGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2QueryRebateBalanceGetRequest) PageSize(pageSize int64) *ApiO
 	return r
 }
 
-func (r *ApiOpenApi2QueryRebateBalanceGetRequest) Execute() (*QueryRebateBalanceV2Response, *http.Response, error) {
+func (r *ApiOpenApi2QueryRebateBalanceGetRequest) Execute() (*models.QueryRebateBalanceV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *QueryRebateBalanceV2ApiService) Get(ctx context.Context) *ApiOpenApi2Qu
 // Execute executes the request
 //
 //	@return QueryRebateBalanceV2Response
-func (a *QueryRebateBalanceV2ApiService) getExecute(r *ApiOpenApi2QueryRebateBalanceGetRequest) (*QueryRebateBalanceV2Response, *http.Response, error) {
+func (a *QueryRebateBalanceV2ApiService) getExecute(r *ApiOpenApi2QueryRebateBalanceGetRequest) (*models.QueryRebateBalanceV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QueryRebateBalanceV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QueryRebateBalanceV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *QueryRebateBalanceV2ApiService) getExecute(r *ApiOpenApi2QueryRebateBal
 	localVarPath := localBasePath + "/open_api/2/query/rebate_balance/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanSuggestRoiGoalV10ApiService QianchuanSuggestRoiGoalV10Api service
@@ -27,15 +28,15 @@ type ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest struct {
 	ApiService         *QianchuanSuggestRoiGoalV10ApiService
 	advertiserId       *int64
 	awemeId            *int64
-	marketingScene     *QianchuanSuggestRoiGoalV10MarketingScene
-	marketingGoal      *QianchuanSuggestRoiGoalV10MarketingGoal
+	marketingScene     *models.QianchuanSuggestRoiGoalV10MarketingScene
+	marketingGoal      *models.QianchuanSuggestRoiGoalV10MarketingGoal
 	productId          *int64
 	productNewOpen     *bool
-	externalAction     *QianchuanSuggestRoiGoalV10ExternalAction
-	campaignScene      *QianchuanSuggestRoiGoalV10CampaignScene
-	deepExternalAction *QianchuanSuggestRoiGoalV10DeepExternalAction
-	deepBidType        *QianchuanSuggestRoiGoalV10DeepBidType
-	ecomGuestType      *QianchuanSuggestRoiGoalV10EcomGuestType
+	externalAction     *models.QianchuanSuggestRoiGoalV10ExternalAction
+	campaignScene      *models.QianchuanSuggestRoiGoalV10CampaignScene
+	deepExternalAction *models.QianchuanSuggestRoiGoalV10DeepExternalAction
+	deepBidType        *models.QianchuanSuggestRoiGoalV10DeepBidType
+	ecomGuestType      *models.QianchuanSuggestRoiGoalV10EcomGuestType
 	shopId             *int64
 	brandId            *int64
 }
@@ -53,13 +54,13 @@ func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) AwemeId(awemeId int64) 
 }
 
 // 营销场景
-func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) MarketingScene(marketingScene QianchuanSuggestRoiGoalV10MarketingScene) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
+func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) MarketingScene(marketingScene models.QianchuanSuggestRoiGoalV10MarketingScene) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
 	r.marketingScene = &marketingScene
 	return r
 }
 
 // MarGoal
-func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) MarketingGoal(marketingGoal QianchuanSuggestRoiGoalV10MarketingGoal) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
+func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) MarketingGoal(marketingGoal models.QianchuanSuggestRoiGoalV10MarketingGoal) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
@@ -76,27 +77,27 @@ func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) ProductNewOpen(productN
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) ExternalAction(externalAction QianchuanSuggestRoiGoalV10ExternalAction) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
+func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) ExternalAction(externalAction models.QianchuanSuggestRoiGoalV10ExternalAction) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
 	r.externalAction = &externalAction
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) CampaignScene(campaignScene QianchuanSuggestRoiGoalV10CampaignScene) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
+func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) CampaignScene(campaignScene models.QianchuanSuggestRoiGoalV10CampaignScene) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
 	r.campaignScene = &campaignScene
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) DeepExternalAction(deepExternalAction QianchuanSuggestRoiGoalV10DeepExternalAction) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
+func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) DeepExternalAction(deepExternalAction models.QianchuanSuggestRoiGoalV10DeepExternalAction) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
 	r.deepExternalAction = &deepExternalAction
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) DeepBidType(deepBidType QianchuanSuggestRoiGoalV10DeepBidType) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
+func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) DeepBidType(deepBidType models.QianchuanSuggestRoiGoalV10DeepBidType) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
 	r.deepBidType = &deepBidType
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) EcomGuestType(ecomGuestType QianchuanSuggestRoiGoalV10EcomGuestType) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
+func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) EcomGuestType(ecomGuestType models.QianchuanSuggestRoiGoalV10EcomGuestType) *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest {
 	r.ecomGuestType = &ecomGuestType
 	return r
 }
@@ -111,7 +112,7 @@ func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) BrandId(brandId int64) 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) Execute() (*QianchuanSuggestRoiGoalV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) Execute() (*models.QianchuanSuggestRoiGoalV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -145,12 +146,12 @@ func (a *QianchuanSuggestRoiGoalV10ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return QianchuanSuggestRoiGoalV10Response
-func (a *QianchuanSuggestRoiGoalV10ApiService) getExecute(r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) (*QianchuanSuggestRoiGoalV10Response, *http.Response, error) {
+func (a *QianchuanSuggestRoiGoalV10ApiService) getExecute(r *ApiOpenApiV10QianchuanSuggestRoiGoalGetRequest) (*models.QianchuanSuggestRoiGoalV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanSuggestRoiGoalV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanSuggestRoiGoalV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -160,7 +161,7 @@ func (a *QianchuanSuggestRoiGoalV10ApiService) getExecute(r *ApiOpenApiV10Qianch
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/suggest/roi/goal/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

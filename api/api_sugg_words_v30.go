@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SuggWordsV30ApiService SuggWordsV30Api service
@@ -25,15 +26,15 @@ type SuggWordsV30ApiService service
 type ApiOpenApiV30SuggWordsPostRequest struct {
 	ctx                 context.Context
 	ApiService          *SuggWordsV30ApiService
-	suggWordsV30Request *SuggWordsV30Request
+	suggWordsV30Request *models.SuggWordsV30Request
 }
 
-func (r *ApiOpenApiV30SuggWordsPostRequest) SuggWordsV30Request(suggWordsV30Request SuggWordsV30Request) *ApiOpenApiV30SuggWordsPostRequest {
+func (r *ApiOpenApiV30SuggWordsPostRequest) SuggWordsV30Request(suggWordsV30Request models.SuggWordsV30Request) *ApiOpenApiV30SuggWordsPostRequest {
 	r.suggWordsV30Request = &suggWordsV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30SuggWordsPostRequest) Execute() (*SuggWordsV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SuggWordsPostRequest) Execute() (*models.SuggWordsV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *SuggWordsV30ApiService) Post(ctx context.Context) *ApiOpenApiV30SuggWor
 // Execute executes the request
 //
 //	@return SuggWordsV30Response
-func (a *SuggWordsV30ApiService) postExecute(r *ApiOpenApiV30SuggWordsPostRequest) (*SuggWordsV30Response, *http.Response, error) {
+func (a *SuggWordsV30ApiService) postExecute(r *ApiOpenApiV30SuggWordsPostRequest) (*models.SuggWordsV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SuggWordsV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SuggWordsV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *SuggWordsV30ApiService) postExecute(r *ApiOpenApiV30SuggWordsPostReques
 	localVarPath := localBasePath + "/open_api/v3.0/sugg_words/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

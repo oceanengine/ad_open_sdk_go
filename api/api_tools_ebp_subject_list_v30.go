@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpSubjectListV30ApiService ToolsEbpSubjectListV30Api service
@@ -26,10 +27,10 @@ type ApiOpenApiV30ToolsEbpSubjectListGetRequest struct {
 	ctx                      context.Context
 	ApiService               *ToolsEbpSubjectListV30ApiService
 	enterpriseOrganizationId *int64
-	queryTypes               *[]*ToolsEbpSubjectListV30QueryTypes
-	pagination               *ToolsEbpSubjectListV30Pagination
+	queryTypes               *[]*models.ToolsEbpSubjectListV30QueryTypes
+	pagination               *models.ToolsEbpSubjectListV30Pagination
 	filterCompanyId          *[]int64
-	filterStatus             *[]*ToolsEbpSubjectListV30FilterStatus
+	filterStatus             *[]*models.ToolsEbpSubjectListV30FilterStatus
 	filterAccountIds         *[]int64
 }
 
@@ -39,13 +40,13 @@ func (r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) EnterpriseOrganizationId(en
 }
 
 // 主体类型
-func (r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) QueryTypes(queryTypes []*ToolsEbpSubjectListV30QueryTypes) *ApiOpenApiV30ToolsEbpSubjectListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) QueryTypes(queryTypes []*models.ToolsEbpSubjectListV30QueryTypes) *ApiOpenApiV30ToolsEbpSubjectListGetRequest {
 	r.queryTypes = &queryTypes
 	return r
 }
 
 // 每页最多50条
-func (r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) Pagination(pagination ToolsEbpSubjectListV30Pagination) *ApiOpenApiV30ToolsEbpSubjectListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) Pagination(pagination models.ToolsEbpSubjectListV30Pagination) *ApiOpenApiV30ToolsEbpSubjectListGetRequest {
 	r.pagination = &pagination
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) FilterCompanyId(filterCompa
 }
 
 // 状态过滤
-func (r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) FilterStatus(filterStatus []*ToolsEbpSubjectListV30FilterStatus) *ApiOpenApiV30ToolsEbpSubjectListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) FilterStatus(filterStatus []*models.ToolsEbpSubjectListV30FilterStatus) *ApiOpenApiV30ToolsEbpSubjectListGetRequest {
 	r.filterStatus = &filterStatus
 	return r
 }
@@ -68,7 +69,7 @@ func (r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) FilterAccountIds(filterAcco
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) Execute() (*ToolsEbpSubjectListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) Execute() (*models.ToolsEbpSubjectListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -102,12 +103,12 @@ func (a *ToolsEbpSubjectListV30ApiService) Get(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return ToolsEbpSubjectListV30Response
-func (a *ToolsEbpSubjectListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) (*ToolsEbpSubjectListV30Response, *http.Response, error) {
+func (a *ToolsEbpSubjectListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpSubjectListGetRequest) (*models.ToolsEbpSubjectListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpSubjectListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpSubjectListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -117,7 +118,7 @@ func (a *ToolsEbpSubjectListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpSu
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/subject/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.enterpriseOrganizationId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OcProjectToolsAudienceListV30ApiService OcProjectToolsAudienceListV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30OcProjectToolsAudienceListGetRequest struct {
 	ctx          context.Context
 	ApiService   *OcProjectToolsAudienceListV30ApiService
 	advertiserId *int64
-	filtering    *OcProjectToolsAudienceListV30Filtering
-	pageInfo     *OcProjectToolsAudienceListV30PageInfo
+	filtering    *models.OcProjectToolsAudienceListV30Filtering
+	pageInfo     *models.OcProjectToolsAudienceListV30PageInfo
 }
 
 // 投放账户ID
@@ -37,18 +38,18 @@ func (r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) AdvertiserId(adverti
 }
 
 // 过滤条件（不过滤则返回全部）
-func (r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) Filtering(filtering OcProjectToolsAudienceListV30Filtering) *ApiOpenApiV30OcProjectToolsAudienceListGetRequest {
+func (r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) Filtering(filtering models.OcProjectToolsAudienceListV30Filtering) *ApiOpenApiV30OcProjectToolsAudienceListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
 // 分页信息
-func (r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) PageInfo(pageInfo OcProjectToolsAudienceListV30PageInfo) *ApiOpenApiV30OcProjectToolsAudienceListGetRequest {
+func (r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) PageInfo(pageInfo models.OcProjectToolsAudienceListV30PageInfo) *ApiOpenApiV30OcProjectToolsAudienceListGetRequest {
 	r.pageInfo = &pageInfo
 	return r
 }
 
-func (r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) Execute() (*OcProjectToolsAudienceListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) Execute() (*models.OcProjectToolsAudienceListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *OcProjectToolsAudienceListV30ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return OcProjectToolsAudienceListV30Response
-func (a *OcProjectToolsAudienceListV30ApiService) getExecute(r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) (*OcProjectToolsAudienceListV30Response, *http.Response, error) {
+func (a *OcProjectToolsAudienceListV30ApiService) getExecute(r *ApiOpenApiV30OcProjectToolsAudienceListGetRequest) (*models.OcProjectToolsAudienceListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OcProjectToolsAudienceListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OcProjectToolsAudienceListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *OcProjectToolsAudienceListV30ApiService) getExecute(r *ApiOpenApiV30OcP
 	localVarPath := localBasePath + "/open_api/v3.0/oc_project/tools_audience/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

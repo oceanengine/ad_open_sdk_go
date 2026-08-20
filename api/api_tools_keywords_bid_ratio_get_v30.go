@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsKeywordsBidRatioGetV30ApiService ToolsKeywordsBidRatioGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsKeywordsBidRatioGetV30ApiService
 	advertiserId *int64
-	filtering    *ToolsKeywordsBidRatioGetV30Filtering
+	filtering    *models.ToolsKeywordsBidRatioGetV30Filtering
 }
 
 func (r *ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest) AdvertiserId(advertise
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest) Filtering(filtering ToolsKeywordsBidRatioGetV30Filtering) *ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest {
+func (r *ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest) Filtering(filtering models.ToolsKeywordsBidRatioGetV30Filtering) *ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest) Execute() (*ToolsKeywordsBidRatioGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest) Execute() (*models.ToolsKeywordsBidRatioGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsKeywordsBidRatioGetV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsKeywordsBidRatioGetV30Response
-func (a *ToolsKeywordsBidRatioGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest) (*ToolsKeywordsBidRatioGetV30Response, *http.Response, error) {
+func (a *ToolsKeywordsBidRatioGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsKeywordsBidRatioGetGetRequest) (*models.ToolsKeywordsBidRatioGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsKeywordsBidRatioGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsKeywordsBidRatioGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsKeywordsBidRatioGetV30ApiService) getExecute(r *ApiOpenApiV30Tools
 	localVarPath := localBasePath + "/open_api/v3.0/tools/keywords_bid_ratio/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportTodayLiveGetV10ApiService QianchuanReportTodayLiveGetV10Api service
@@ -30,7 +31,7 @@ type ApiOpenApiV10QianchuanReportTodayLiveGetGetRequest struct {
 	startTime      *string
 	endTime        *string
 	fields         *[]string
-	statsAuthority *QianchuanReportTodayLiveGetV10StatsAuthority
+	statsAuthority *models.QianchuanReportTodayLiveGetV10StatsAuthority
 }
 
 // 千川业务账户ID，对应账户类型为&#x60;QIANCHUAN&#x60;
@@ -64,12 +65,12 @@ func (r *ApiOpenApiV10QianchuanReportTodayLiveGetGetRequest) Fields(fields []str
 }
 
 // 需要查询的广告账户维度，允许值： -  &#x60;QUALIFICATION&#x60; 同主体账户，仅直客账户支持，查看官方抖音号下同主体全部广告账户的数据表现 - &#x60;CURRENT&#x60; 当前广告账户（默认值）
-func (r *ApiOpenApiV10QianchuanReportTodayLiveGetGetRequest) StatsAuthority(statsAuthority QianchuanReportTodayLiveGetV10StatsAuthority) *ApiOpenApiV10QianchuanReportTodayLiveGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportTodayLiveGetGetRequest) StatsAuthority(statsAuthority models.QianchuanReportTodayLiveGetV10StatsAuthority) *ApiOpenApiV10QianchuanReportTodayLiveGetGetRequest {
 	r.statsAuthority = &statsAuthority
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportTodayLiveGetGetRequest) Execute() (*QianchuanReportTodayLiveGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportTodayLiveGetGetRequest) Execute() (*models.QianchuanReportTodayLiveGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *QianchuanReportTodayLiveGetV10ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return QianchuanReportTodayLiveGetV10Response
-func (a *QianchuanReportTodayLiveGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportTodayLiveGetGetRequest) (*QianchuanReportTodayLiveGetV10Response, *http.Response, error) {
+func (a *QianchuanReportTodayLiveGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportTodayLiveGetGetRequest) (*models.QianchuanReportTodayLiveGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportTodayLiveGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportTodayLiveGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *QianchuanReportTodayLiveGetV10ApiService) getExecute(r *ApiOpenApiV10Qi
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/today_live/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

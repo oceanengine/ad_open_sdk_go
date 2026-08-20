@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueSmartphoneDeleteV2ApiService ClueSmartphoneDeleteV2Api service
@@ -25,15 +26,15 @@ type ClueSmartphoneDeleteV2ApiService service
 type ApiOpenApi2ClueSmartphoneDeletePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *ClueSmartphoneDeleteV2ApiService
-	clueSmartphoneDeleteV2Request *ClueSmartphoneDeleteV2Request
+	clueSmartphoneDeleteV2Request *models.ClueSmartphoneDeleteV2Request
 }
 
-func (r *ApiOpenApi2ClueSmartphoneDeletePostRequest) ClueSmartphoneDeleteV2Request(clueSmartphoneDeleteV2Request ClueSmartphoneDeleteV2Request) *ApiOpenApi2ClueSmartphoneDeletePostRequest {
+func (r *ApiOpenApi2ClueSmartphoneDeletePostRequest) ClueSmartphoneDeleteV2Request(clueSmartphoneDeleteV2Request models.ClueSmartphoneDeleteV2Request) *ApiOpenApi2ClueSmartphoneDeletePostRequest {
 	r.clueSmartphoneDeleteV2Request = &clueSmartphoneDeleteV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ClueSmartphoneDeletePostRequest) Execute() (*ClueSmartphoneDeleteV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueSmartphoneDeletePostRequest) Execute() (*models.ClueSmartphoneDeleteV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ClueSmartphoneDeleteV2ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ClueSmartphoneDeleteV2Response
-func (a *ClueSmartphoneDeleteV2ApiService) postExecute(r *ApiOpenApi2ClueSmartphoneDeletePostRequest) (*ClueSmartphoneDeleteV2Response, *http.Response, error) {
+func (a *ClueSmartphoneDeleteV2ApiService) postExecute(r *ApiOpenApi2ClueSmartphoneDeletePostRequest) (*models.ClueSmartphoneDeleteV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueSmartphoneDeleteV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueSmartphoneDeleteV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ClueSmartphoneDeleteV2ApiService) postExecute(r *ApiOpenApi2ClueSmartph
 	localVarPath := localBasePath + "/open_api/2/clue/smartphone/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

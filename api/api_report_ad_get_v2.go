@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportAdGetV2ApiService ReportAdGetV2Api service
@@ -28,14 +29,14 @@ type ApiOpenApi2ReportAdGetGetRequest struct {
 	advertiserId    *int64
 	endDate         **string
 	fields          *[]string
-	filtering       *ReportAdGetV2Filtering
-	groupBy         *[]*ReportAdGetV2GroupBy
-	orderField      *ReportAdGetV2OrderField
-	orderType       *ReportAdGetV2OrderType
+	filtering       *models.ReportAdGetV2Filtering
+	groupBy         *[]*models.ReportAdGetV2GroupBy
+	orderField      *models.ReportAdGetV2OrderField
+	orderType       *models.ReportAdGetV2OrderType
 	page            *int64
 	pageSize        *int64
 	startDate       **string
-	timeGranularity *ReportAdGetV2TimeGranularity
+	timeGranularity *models.ReportAdGetV2TimeGranularity
 }
 
 func (r *ApiOpenApi2ReportAdGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ReportAdGetGetRequest {
@@ -53,22 +54,22 @@ func (r *ApiOpenApi2ReportAdGetGetRequest) Fields(fields []string) *ApiOpenApi2R
 	return r
 }
 
-func (r *ApiOpenApi2ReportAdGetGetRequest) Filtering(filtering ReportAdGetV2Filtering) *ApiOpenApi2ReportAdGetGetRequest {
+func (r *ApiOpenApi2ReportAdGetGetRequest) Filtering(filtering models.ReportAdGetV2Filtering) *ApiOpenApi2ReportAdGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ReportAdGetGetRequest) GroupBy(groupBy []*ReportAdGetV2GroupBy) *ApiOpenApi2ReportAdGetGetRequest {
+func (r *ApiOpenApi2ReportAdGetGetRequest) GroupBy(groupBy []*models.ReportAdGetV2GroupBy) *ApiOpenApi2ReportAdGetGetRequest {
 	r.groupBy = &groupBy
 	return r
 }
 
-func (r *ApiOpenApi2ReportAdGetGetRequest) OrderField(orderField ReportAdGetV2OrderField) *ApiOpenApi2ReportAdGetGetRequest {
+func (r *ApiOpenApi2ReportAdGetGetRequest) OrderField(orderField models.ReportAdGetV2OrderField) *ApiOpenApi2ReportAdGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
 
-func (r *ApiOpenApi2ReportAdGetGetRequest) OrderType(orderType ReportAdGetV2OrderType) *ApiOpenApi2ReportAdGetGetRequest {
+func (r *ApiOpenApi2ReportAdGetGetRequest) OrderType(orderType models.ReportAdGetV2OrderType) *ApiOpenApi2ReportAdGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -88,12 +89,12 @@ func (r *ApiOpenApi2ReportAdGetGetRequest) StartDate(startDate *string) *ApiOpen
 	return r
 }
 
-func (r *ApiOpenApi2ReportAdGetGetRequest) TimeGranularity(timeGranularity ReportAdGetV2TimeGranularity) *ApiOpenApi2ReportAdGetGetRequest {
+func (r *ApiOpenApi2ReportAdGetGetRequest) TimeGranularity(timeGranularity models.ReportAdGetV2TimeGranularity) *ApiOpenApi2ReportAdGetGetRequest {
 	r.timeGranularity = &timeGranularity
 	return r
 }
 
-func (r *ApiOpenApi2ReportAdGetGetRequest) Execute() (*ReportAdGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ReportAdGetGetRequest) Execute() (*models.ReportAdGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -127,12 +128,12 @@ func (a *ReportAdGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2ReportAdG
 // Execute executes the request
 //
 //	@return ReportAdGetV2Response
-func (a *ReportAdGetV2ApiService) getExecute(r *ApiOpenApi2ReportAdGetGetRequest) (*ReportAdGetV2Response, *http.Response, error) {
+func (a *ReportAdGetV2ApiService) getExecute(r *ApiOpenApi2ReportAdGetGetRequest) (*models.ReportAdGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportAdGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportAdGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -142,7 +143,7 @@ func (a *ReportAdGetV2ApiService) getExecute(r *ApiOpenApi2ReportAdGetGetRequest
 	localVarPath := localBasePath + "/open_api/2/report/ad/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

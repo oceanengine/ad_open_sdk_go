@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarStarAdUniteTaskItemListV2ApiService StarStarAdUniteTaskItemListV2Api service
@@ -69,7 +70,7 @@ func (r *ApiOpenApi2StarStarAdUniteTaskItemListGetRequest) PageSize(pageSize int
 	return r
 }
 
-func (r *ApiOpenApi2StarStarAdUniteTaskItemListGetRequest) Execute() (*StarStarAdUniteTaskItemListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarStarAdUniteTaskItemListGetRequest) Execute() (*models.StarStarAdUniteTaskItemListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *StarStarAdUniteTaskItemListV2ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return StarStarAdUniteTaskItemListV2Response
-func (a *StarStarAdUniteTaskItemListV2ApiService) getExecute(r *ApiOpenApi2StarStarAdUniteTaskItemListGetRequest) (*StarStarAdUniteTaskItemListV2Response, *http.Response, error) {
+func (a *StarStarAdUniteTaskItemListV2ApiService) getExecute(r *ApiOpenApi2StarStarAdUniteTaskItemListGetRequest) (*models.StarStarAdUniteTaskItemListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarStarAdUniteTaskItemListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarStarAdUniteTaskItemListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *StarStarAdUniteTaskItemListV2ApiService) getExecute(r *ApiOpenApi2StarS
 	localVarPath := localBasePath + "/open_api/2/star/star_ad_unite_task_item/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

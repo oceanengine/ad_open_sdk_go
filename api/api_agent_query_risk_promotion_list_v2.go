@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentQueryRiskPromotionListV2ApiService AgentQueryRiskPromotionListV2Api service
@@ -28,11 +29,11 @@ type ApiOpenApi2AgentQueryRiskPromotionListGetRequest struct {
 	agentId          *int64
 	startDate        *string
 	endDate          *string
-	businessType     *AgentQueryRiskPromotionListV2BusinessType
+	businessType     *models.AgentQueryRiskPromotionListV2BusinessType
 	cursor           *int64
 	count            *int32
-	filtering        *AgentQueryRiskPromotionListV2Filtering
-	businessTypeList *[]*AgentQueryRiskPromotionListV2BusinessTypeList
+	filtering        *models.AgentQueryRiskPromotionListV2Filtering
+	businessTypeList *[]*models.AgentQueryRiskPromotionListV2BusinessTypeList
 }
 
 // 代理商账户ID
@@ -54,7 +55,7 @@ func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) EndDate(endDate strin
 }
 
 // 业务线，默认AD业务线传-1
-func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) BusinessType(businessType AgentQueryRiskPromotionListV2BusinessType) *ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
+func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) BusinessType(businessType models.AgentQueryRiskPromotionListV2BusinessType) *ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
 	r.businessType = &businessType
 	return r
 }
@@ -72,18 +73,18 @@ func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) Count(count int32) *A
 }
 
 // 过滤器
-func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) Filtering(filtering AgentQueryRiskPromotionListV2Filtering) *ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
+func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) Filtering(filtering models.AgentQueryRiskPromotionListV2Filtering) *ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
 // 业务线；如果同时设置business_type和本字段，将以本字段为准
-func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) BusinessTypeList(businessTypeList []*AgentQueryRiskPromotionListV2BusinessTypeList) *ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
+func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) BusinessTypeList(businessTypeList []*models.AgentQueryRiskPromotionListV2BusinessTypeList) *ApiOpenApi2AgentQueryRiskPromotionListGetRequest {
 	r.businessTypeList = &businessTypeList
 	return r
 }
 
-func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) Execute() (*AgentQueryRiskPromotionListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) Execute() (*models.AgentQueryRiskPromotionListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -117,12 +118,12 @@ func (a *AgentQueryRiskPromotionListV2ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return AgentQueryRiskPromotionListV2Response
-func (a *AgentQueryRiskPromotionListV2ApiService) getExecute(r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) (*AgentQueryRiskPromotionListV2Response, *http.Response, error) {
+func (a *AgentQueryRiskPromotionListV2ApiService) getExecute(r *ApiOpenApi2AgentQueryRiskPromotionListGetRequest) (*models.AgentQueryRiskPromotionListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentQueryRiskPromotionListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentQueryRiskPromotionListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -132,7 +133,7 @@ func (a *AgentQueryRiskPromotionListV2ApiService) getExecute(r *ApiOpenApi2Agent
 	localVarPath := localBasePath + "/open_api/2/agent/query/risk_promotion_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

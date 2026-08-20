@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerTrackUrlGetV2ApiService EventManagerTrackUrlGetV2Api service
@@ -76,7 +77,7 @@ func (r *ApiOpenApi2EventManagerTrackUrlGetGetRequest) PageSize(pageSize int64) 
 	return r
 }
 
-func (r *ApiOpenApi2EventManagerTrackUrlGetGetRequest) Execute() (*EventManagerTrackUrlGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EventManagerTrackUrlGetGetRequest) Execute() (*models.EventManagerTrackUrlGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *EventManagerTrackUrlGetV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return EventManagerTrackUrlGetV2Response
-func (a *EventManagerTrackUrlGetV2ApiService) getExecute(r *ApiOpenApi2EventManagerTrackUrlGetGetRequest) (*EventManagerTrackUrlGetV2Response, *http.Response, error) {
+func (a *EventManagerTrackUrlGetV2ApiService) getExecute(r *ApiOpenApi2EventManagerTrackUrlGetGetRequest) (*models.EventManagerTrackUrlGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerTrackUrlGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerTrackUrlGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *EventManagerTrackUrlGetV2ApiService) getExecute(r *ApiOpenApi2EventMana
 	localVarPath := localBasePath + "/open_api/2/event_manager/track_url/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

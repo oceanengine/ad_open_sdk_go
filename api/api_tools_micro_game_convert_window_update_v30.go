@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsMicroGameConvertWindowUpdateV30ApiService ToolsMicroGameConvertWindowUpdateV30Api service
@@ -25,15 +26,15 @@ type ToolsMicroGameConvertWindowUpdateV30ApiService service
 type ApiOpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest struct {
 	ctx                                         context.Context
 	ApiService                                  *ToolsMicroGameConvertWindowUpdateV30ApiService
-	toolsMicroGameConvertWindowUpdateV30Request *ToolsMicroGameConvertWindowUpdateV30Request
+	toolsMicroGameConvertWindowUpdateV30Request *models.ToolsMicroGameConvertWindowUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest) ToolsMicroGameConvertWindowUpdateV30Request(toolsMicroGameConvertWindowUpdateV30Request ToolsMicroGameConvertWindowUpdateV30Request) *ApiOpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest {
+func (r *ApiOpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest) ToolsMicroGameConvertWindowUpdateV30Request(toolsMicroGameConvertWindowUpdateV30Request models.ToolsMicroGameConvertWindowUpdateV30Request) *ApiOpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest {
 	r.toolsMicroGameConvertWindowUpdateV30Request = &toolsMicroGameConvertWindowUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest) Execute() (*ToolsMicroGameConvertWindowUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest) Execute() (*models.ToolsMicroGameConvertWindowUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsMicroGameConvertWindowUpdateV30ApiService) Post(ctx context.Contex
 // Execute executes the request
 //
 //	@return ToolsMicroGameConvertWindowUpdateV30Response
-func (a *ToolsMicroGameConvertWindowUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest) (*ToolsMicroGameConvertWindowUpdateV30Response, *http.Response, error) {
+func (a *ToolsMicroGameConvertWindowUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsMicroGameConvertWindowUpdatePostRequest) (*models.ToolsMicroGameConvertWindowUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsMicroGameConvertWindowUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsMicroGameConvertWindowUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsMicroGameConvertWindowUpdateV30ApiService) postExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/v3.0/tools/micro_game/convert_window/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

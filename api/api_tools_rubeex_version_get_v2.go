@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsRubeexVersionGetV2ApiService ToolsRubeexVersionGetV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2ToolsRubeexVersionGetGetRequest) ProjectId(projectId float64
 	return r
 }
 
-func (r *ApiOpenApi2ToolsRubeexVersionGetGetRequest) Execute() (*ToolsRubeexVersionGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsRubeexVersionGetGetRequest) Execute() (*models.ToolsRubeexVersionGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ToolsRubeexVersionGetV2ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsRubeexVersionGetV2Response
-func (a *ToolsRubeexVersionGetV2ApiService) getExecute(r *ApiOpenApi2ToolsRubeexVersionGetGetRequest) (*ToolsRubeexVersionGetV2Response, *http.Response, error) {
+func (a *ToolsRubeexVersionGetV2ApiService) getExecute(r *ApiOpenApi2ToolsRubeexVersionGetGetRequest) (*models.ToolsRubeexVersionGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsRubeexVersionGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsRubeexVersionGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ToolsRubeexVersionGetV2ApiService) getExecute(r *ApiOpenApi2ToolsRubeex
 	localVarPath := localBasePath + "/open_api/2/tools/rubeex/version/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

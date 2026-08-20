@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanSuggestBudgetV10ApiService QianchuanSuggestBudgetV10Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV10QianchuanSuggestBudgetGetRequest struct {
 	ApiService         *QianchuanSuggestBudgetV10ApiService
 	advertiserId       *int64
 	awemeId            *int64
-	liveScheduleType   *QianchuanSuggestBudgetV10LiveScheduleType
+	liveScheduleType   *models.QianchuanSuggestBudgetV10LiveScheduleType
 	startTime          *string
 	endTime            *string
 	scheduleTime       *string
@@ -44,7 +45,7 @@ func (r *ApiOpenApiV10QianchuanSuggestBudgetGetRequest) AwemeId(awemeId int64) *
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestBudgetGetRequest) LiveScheduleType(liveScheduleType QianchuanSuggestBudgetV10LiveScheduleType) *ApiOpenApiV10QianchuanSuggestBudgetGetRequest {
+func (r *ApiOpenApiV10QianchuanSuggestBudgetGetRequest) LiveScheduleType(liveScheduleType models.QianchuanSuggestBudgetV10LiveScheduleType) *ApiOpenApiV10QianchuanSuggestBudgetGetRequest {
 	r.liveScheduleType = &liveScheduleType
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApiV10QianchuanSuggestBudgetGetRequest) ScheduleFixedRange(sched
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestBudgetGetRequest) Execute() (*QianchuanSuggestBudgetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanSuggestBudgetGetRequest) Execute() (*models.QianchuanSuggestBudgetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *QianchuanSuggestBudgetV10ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return QianchuanSuggestBudgetV10Response
-func (a *QianchuanSuggestBudgetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanSuggestBudgetGetRequest) (*QianchuanSuggestBudgetV10Response, *http.Response, error) {
+func (a *QianchuanSuggestBudgetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanSuggestBudgetGetRequest) (*models.QianchuanSuggestBudgetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanSuggestBudgetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanSuggestBudgetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *QianchuanSuggestBudgetV10ApiService) getExecute(r *ApiOpenApiV10Qianchu
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/suggest/budget/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

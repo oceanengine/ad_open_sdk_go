@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DmpCustomAudienceSelectV2ApiService DmpCustomAudienceSelectV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2DmpCustomAudienceSelectGetRequest struct {
 	ctx          context.Context
 	ApiService   *DmpCustomAudienceSelectV2ApiService
 	advertiserId *int64
-	selectType   *DmpCustomAudienceSelectV2SelectType
+	selectType   *models.DmpCustomAudienceSelectV2SelectType
 	offset       *int64
 	limit        *int64
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApi2DmpCustomAudienceSelectGetRequest) AdvertiserId(advertiserId
 	return r
 }
 
-func (r *ApiOpenApi2DmpCustomAudienceSelectGetRequest) SelectType(selectType DmpCustomAudienceSelectV2SelectType) *ApiOpenApi2DmpCustomAudienceSelectGetRequest {
+func (r *ApiOpenApi2DmpCustomAudienceSelectGetRequest) SelectType(selectType models.DmpCustomAudienceSelectV2SelectType) *ApiOpenApi2DmpCustomAudienceSelectGetRequest {
 	r.selectType = &selectType
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2DmpCustomAudienceSelectGetRequest) Limit(limit int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2DmpCustomAudienceSelectGetRequest) Execute() (*DmpCustomAudienceSelectV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DmpCustomAudienceSelectGetRequest) Execute() (*models.DmpCustomAudienceSelectV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *DmpCustomAudienceSelectV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return DmpCustomAudienceSelectV2Response
-func (a *DmpCustomAudienceSelectV2ApiService) getExecute(r *ApiOpenApi2DmpCustomAudienceSelectGetRequest) (*DmpCustomAudienceSelectV2Response, *http.Response, error) {
+func (a *DmpCustomAudienceSelectV2ApiService) getExecute(r *ApiOpenApi2DmpCustomAudienceSelectGetRequest) (*models.DmpCustomAudienceSelectV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DmpCustomAudienceSelectV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DmpCustomAudienceSelectV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *DmpCustomAudienceSelectV2ApiService) getExecute(r *ApiOpenApi2DmpCustom
 	localVarPath := localBasePath + "/open_api/2/dmp/custom_audience/select/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

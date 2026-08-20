@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsDownloadPackageParseV2ApiService ToolsDownloadPackageParseV2Api service
@@ -25,15 +26,15 @@ type ToolsDownloadPackageParseV2ApiService service
 type ApiOpenApi2ToolsDownloadPackageParsePostRequest struct {
 	ctx                                context.Context
 	ApiService                         *ToolsDownloadPackageParseV2ApiService
-	toolsDownloadPackageParseV2Request *ToolsDownloadPackageParseV2Request
+	toolsDownloadPackageParseV2Request *models.ToolsDownloadPackageParseV2Request
 }
 
-func (r *ApiOpenApi2ToolsDownloadPackageParsePostRequest) ToolsDownloadPackageParseV2Request(toolsDownloadPackageParseV2Request ToolsDownloadPackageParseV2Request) *ApiOpenApi2ToolsDownloadPackageParsePostRequest {
+func (r *ApiOpenApi2ToolsDownloadPackageParsePostRequest) ToolsDownloadPackageParseV2Request(toolsDownloadPackageParseV2Request models.ToolsDownloadPackageParseV2Request) *ApiOpenApi2ToolsDownloadPackageParsePostRequest {
 	r.toolsDownloadPackageParseV2Request = &toolsDownloadPackageParseV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsDownloadPackageParsePostRequest) Execute() (*ToolsDownloadPackageParseV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsDownloadPackageParsePostRequest) Execute() (*models.ToolsDownloadPackageParseV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsDownloadPackageParseV2ApiService) Post(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsDownloadPackageParseV2Response
-func (a *ToolsDownloadPackageParseV2ApiService) postExecute(r *ApiOpenApi2ToolsDownloadPackageParsePostRequest) (*ToolsDownloadPackageParseV2Response, *http.Response, error) {
+func (a *ToolsDownloadPackageParseV2ApiService) postExecute(r *ApiOpenApi2ToolsDownloadPackageParsePostRequest) (*models.ToolsDownloadPackageParseV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsDownloadPackageParseV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsDownloadPackageParseV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsDownloadPackageParseV2ApiService) postExecute(r *ApiOpenApi2ToolsD
 	localVarPath := localBasePath + "/open_api/2/tools/download/package/parse/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

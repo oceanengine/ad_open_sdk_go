@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StardeliveryTaskBudgetUpdateV30ApiService StardeliveryTaskBudgetUpdateV30Api service
@@ -25,15 +26,15 @@ type StardeliveryTaskBudgetUpdateV30ApiService service
 type ApiOpenApiV30StardeliveryTaskBudgetUpdatePostRequest struct {
 	ctx                                    context.Context
 	ApiService                             *StardeliveryTaskBudgetUpdateV30ApiService
-	stardeliveryTaskBudgetUpdateV30Request *StardeliveryTaskBudgetUpdateV30Request
+	stardeliveryTaskBudgetUpdateV30Request *models.StardeliveryTaskBudgetUpdateV30Request
 }
 
-func (r *ApiOpenApiV30StardeliveryTaskBudgetUpdatePostRequest) StardeliveryTaskBudgetUpdateV30Request(stardeliveryTaskBudgetUpdateV30Request StardeliveryTaskBudgetUpdateV30Request) *ApiOpenApiV30StardeliveryTaskBudgetUpdatePostRequest {
+func (r *ApiOpenApiV30StardeliveryTaskBudgetUpdatePostRequest) StardeliveryTaskBudgetUpdateV30Request(stardeliveryTaskBudgetUpdateV30Request models.StardeliveryTaskBudgetUpdateV30Request) *ApiOpenApiV30StardeliveryTaskBudgetUpdatePostRequest {
 	r.stardeliveryTaskBudgetUpdateV30Request = &stardeliveryTaskBudgetUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30StardeliveryTaskBudgetUpdatePostRequest) Execute() (*StardeliveryTaskBudgetUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30StardeliveryTaskBudgetUpdatePostRequest) Execute() (*models.StardeliveryTaskBudgetUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StardeliveryTaskBudgetUpdateV30ApiService) Post(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return StardeliveryTaskBudgetUpdateV30Response
-func (a *StardeliveryTaskBudgetUpdateV30ApiService) postExecute(r *ApiOpenApiV30StardeliveryTaskBudgetUpdatePostRequest) (*StardeliveryTaskBudgetUpdateV30Response, *http.Response, error) {
+func (a *StardeliveryTaskBudgetUpdateV30ApiService) postExecute(r *ApiOpenApiV30StardeliveryTaskBudgetUpdatePostRequest) (*models.StardeliveryTaskBudgetUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StardeliveryTaskBudgetUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StardeliveryTaskBudgetUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StardeliveryTaskBudgetUpdateV30ApiService) postExecute(r *ApiOpenApiV30
 	localVarPath := localBasePath + "/open_api/v3.0/stardelivery/task/budget/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // PromotionDeepbidUpdateV30ApiService PromotionDeepbidUpdateV30Api service
@@ -25,15 +26,15 @@ type PromotionDeepbidUpdateV30ApiService service
 type ApiOpenApiV30PromotionDeepbidUpdatePostRequest struct {
 	ctx                              context.Context
 	ApiService                       *PromotionDeepbidUpdateV30ApiService
-	promotionDeepbidUpdateV30Request *PromotionDeepbidUpdateV30Request
+	promotionDeepbidUpdateV30Request *models.PromotionDeepbidUpdateV30Request
 }
 
-func (r *ApiOpenApiV30PromotionDeepbidUpdatePostRequest) PromotionDeepbidUpdateV30Request(promotionDeepbidUpdateV30Request PromotionDeepbidUpdateV30Request) *ApiOpenApiV30PromotionDeepbidUpdatePostRequest {
+func (r *ApiOpenApiV30PromotionDeepbidUpdatePostRequest) PromotionDeepbidUpdateV30Request(promotionDeepbidUpdateV30Request models.PromotionDeepbidUpdateV30Request) *ApiOpenApiV30PromotionDeepbidUpdatePostRequest {
 	r.promotionDeepbidUpdateV30Request = &promotionDeepbidUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30PromotionDeepbidUpdatePostRequest) Execute() (*PromotionDeepbidUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30PromotionDeepbidUpdatePostRequest) Execute() (*models.PromotionDeepbidUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *PromotionDeepbidUpdateV30ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return PromotionDeepbidUpdateV30Response
-func (a *PromotionDeepbidUpdateV30ApiService) postExecute(r *ApiOpenApiV30PromotionDeepbidUpdatePostRequest) (*PromotionDeepbidUpdateV30Response, *http.Response, error) {
+func (a *PromotionDeepbidUpdateV30ApiService) postExecute(r *ApiOpenApiV30PromotionDeepbidUpdatePostRequest) (*models.PromotionDeepbidUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *PromotionDeepbidUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.PromotionDeepbidUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *PromotionDeepbidUpdateV30ApiService) postExecute(r *ApiOpenApiV30Promot
 	localVarPath := localBasePath + "/open_api/v3.0/promotion/deepbid/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

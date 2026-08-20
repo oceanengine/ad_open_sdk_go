@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // Oauth2AdvertiserGetApiService Oauth2AdvertiserGetApi service
@@ -34,7 +35,7 @@ func (r *ApiOpenApiOauth2AdvertiserGetGetRequest) AccessToken(accessToken string
 	return r
 }
 
-func (r *ApiOpenApiOauth2AdvertiserGetGetRequest) Execute() (*Oauth2AdvertiserGetResponse, *http.Response, error) {
+func (r *ApiOpenApiOauth2AdvertiserGetGetRequest) Execute() (*models.Oauth2AdvertiserGetResponse, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -63,12 +64,12 @@ func (a *Oauth2AdvertiserGetApiService) Get(ctx context.Context) *ApiOpenApiOaut
 // Execute executes the request
 //
 //	@return Oauth2AdvertiserGetResponse
-func (a *Oauth2AdvertiserGetApiService) getExecute(r *ApiOpenApiOauth2AdvertiserGetGetRequest) (*Oauth2AdvertiserGetResponse, *http.Response, error) {
+func (a *Oauth2AdvertiserGetApiService) getExecute(r *ApiOpenApiOauth2AdvertiserGetGetRequest) (*models.Oauth2AdvertiserGetResponse, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *Oauth2AdvertiserGetResponse
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.Oauth2AdvertiserGetResponse
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -78,7 +79,7 @@ func (a *Oauth2AdvertiserGetApiService) getExecute(r *ApiOpenApiOauth2Advertiser
 	localVarPath := localBasePath + "/open_api/oauth2/advertiser/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

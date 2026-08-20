@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsMaterialRaiseCreateV30ApiService ToolsMaterialRaiseCreateV30Api service
@@ -25,15 +26,15 @@ type ToolsMaterialRaiseCreateV30ApiService service
 type ApiOpenApiV30ToolsMaterialRaiseCreatePostRequest struct {
 	ctx                                context.Context
 	ApiService                         *ToolsMaterialRaiseCreateV30ApiService
-	toolsMaterialRaiseCreateV30Request *ToolsMaterialRaiseCreateV30Request
+	toolsMaterialRaiseCreateV30Request *models.ToolsMaterialRaiseCreateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsMaterialRaiseCreatePostRequest) ToolsMaterialRaiseCreateV30Request(toolsMaterialRaiseCreateV30Request ToolsMaterialRaiseCreateV30Request) *ApiOpenApiV30ToolsMaterialRaiseCreatePostRequest {
+func (r *ApiOpenApiV30ToolsMaterialRaiseCreatePostRequest) ToolsMaterialRaiseCreateV30Request(toolsMaterialRaiseCreateV30Request models.ToolsMaterialRaiseCreateV30Request) *ApiOpenApiV30ToolsMaterialRaiseCreatePostRequest {
 	r.toolsMaterialRaiseCreateV30Request = &toolsMaterialRaiseCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMaterialRaiseCreatePostRequest) Execute() (*ToolsMaterialRaiseCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsMaterialRaiseCreatePostRequest) Execute() (*models.ToolsMaterialRaiseCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsMaterialRaiseCreateV30ApiService) Post(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsMaterialRaiseCreateV30Response
-func (a *ToolsMaterialRaiseCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsMaterialRaiseCreatePostRequest) (*ToolsMaterialRaiseCreateV30Response, *http.Response, error) {
+func (a *ToolsMaterialRaiseCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsMaterialRaiseCreatePostRequest) (*models.ToolsMaterialRaiseCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsMaterialRaiseCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsMaterialRaiseCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsMaterialRaiseCreateV30ApiService) postExecute(r *ApiOpenApiV30Tool
 	localVarPath := localBasePath + "/open_api/v3.0/tools/material_raise/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

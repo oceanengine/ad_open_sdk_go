@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsInterestActionActionKeywordV2ApiService ToolsInterestActionActionKeywordV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2ToolsInterestActionActionKeywordGetRequest struct {
 	ApiService   *ToolsInterestActionActionKeywordV2ApiService
 	advertiserId *int64
 	queryWords   *string
-	actionDays   *ToolsInterestActionActionKeywordV2ActionDays
+	actionDays   *models.ToolsInterestActionActionKeywordV2ActionDays
 }
 
 func (r *ApiOpenApi2ToolsInterestActionActionKeywordGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsInterestActionActionKeywordGetRequest {
@@ -40,12 +41,12 @@ func (r *ApiOpenApi2ToolsInterestActionActionKeywordGetRequest) QueryWords(query
 	return r
 }
 
-func (r *ApiOpenApi2ToolsInterestActionActionKeywordGetRequest) ActionDays(actionDays ToolsInterestActionActionKeywordV2ActionDays) *ApiOpenApi2ToolsInterestActionActionKeywordGetRequest {
+func (r *ApiOpenApi2ToolsInterestActionActionKeywordGetRequest) ActionDays(actionDays models.ToolsInterestActionActionKeywordV2ActionDays) *ApiOpenApi2ToolsInterestActionActionKeywordGetRequest {
 	r.actionDays = &actionDays
 	return r
 }
 
-func (r *ApiOpenApi2ToolsInterestActionActionKeywordGetRequest) Execute() (*ToolsInterestActionActionKeywordV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsInterestActionActionKeywordGetRequest) Execute() (*models.ToolsInterestActionActionKeywordV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *ToolsInterestActionActionKeywordV2ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return ToolsInterestActionActionKeywordV2Response
-func (a *ToolsInterestActionActionKeywordV2ApiService) getExecute(r *ApiOpenApi2ToolsInterestActionActionKeywordGetRequest) (*ToolsInterestActionActionKeywordV2Response, *http.Response, error) {
+func (a *ToolsInterestActionActionKeywordV2ApiService) getExecute(r *ApiOpenApi2ToolsInterestActionActionKeywordGetRequest) (*models.ToolsInterestActionActionKeywordV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsInterestActionActionKeywordV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsInterestActionActionKeywordV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *ToolsInterestActionActionKeywordV2ApiService) getExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/tools/interest_action/action/keyword/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

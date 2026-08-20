@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarMcnGetAuthorListV2ApiService StarMcnGetAuthorListV2Api service
@@ -57,7 +58,7 @@ func (r *ApiOpenApi2StarMcnGetAuthorListGetRequest) DeveloperId(developerId int6
 	return r
 }
 
-func (r *ApiOpenApi2StarMcnGetAuthorListGetRequest) Execute() (*StarMcnGetAuthorListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarMcnGetAuthorListGetRequest) Execute() (*models.StarMcnGetAuthorListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *StarMcnGetAuthorListV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return StarMcnGetAuthorListV2Response
-func (a *StarMcnGetAuthorListV2ApiService) getExecute(r *ApiOpenApi2StarMcnGetAuthorListGetRequest) (*StarMcnGetAuthorListV2Response, *http.Response, error) {
+func (a *StarMcnGetAuthorListV2ApiService) getExecute(r *ApiOpenApi2StarMcnGetAuthorListGetRequest) (*models.StarMcnGetAuthorListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarMcnGetAuthorListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarMcnGetAuthorListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *StarMcnGetAuthorListV2ApiService) getExecute(r *ApiOpenApi2StarMcnGetAu
 	localVarPath := localBasePath + "/open_api/2/star/mcn/get_author_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

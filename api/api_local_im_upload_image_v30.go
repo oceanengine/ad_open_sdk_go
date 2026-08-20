@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalImUploadImageV30ApiService LocalImUploadImageV30Api service
@@ -25,11 +26,11 @@ type LocalImUploadImageV30ApiService service
 type ApiOpenApiV30LocalImUploadImagePostRequest struct {
 	ctx            context.Context
 	ApiService     *LocalImUploadImageV30ApiService
-	imageFile      *FormFileInfo
+	imageFile      *models.FormFileInfo
 	localAccountId *int64
 }
 
-func (r *ApiOpenApiV30LocalImUploadImagePostRequest) ImageFile(imageFile *FormFileInfo) *ApiOpenApiV30LocalImUploadImagePostRequest {
+func (r *ApiOpenApiV30LocalImUploadImagePostRequest) ImageFile(imageFile *models.FormFileInfo) *ApiOpenApiV30LocalImUploadImagePostRequest {
 	r.imageFile = imageFile
 	return r
 }
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30LocalImUploadImagePostRequest) LocalAccountId(localAccount
 	return r
 }
 
-func (r *ApiOpenApiV30LocalImUploadImagePostRequest) Execute() (*LocalImUploadImageV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalImUploadImagePostRequest) Execute() (*models.LocalImUploadImageV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *LocalImUploadImageV30ApiService) Post(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return LocalImUploadImageV30Response
-func (a *LocalImUploadImageV30ApiService) postExecute(r *ApiOpenApiV30LocalImUploadImagePostRequest) (*LocalImUploadImageV30Response, *http.Response, error) {
+func (a *LocalImUploadImageV30ApiService) postExecute(r *ApiOpenApiV30LocalImUploadImagePostRequest) (*models.LocalImUploadImageV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalImUploadImageV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalImUploadImageV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *LocalImUploadImageV30ApiService) postExecute(r *ApiOpenApiV30LocalImUpl
 	localVarPath := localBasePath + "/open_api/v3.0/local/im/upload/image/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.imageFile == nil {

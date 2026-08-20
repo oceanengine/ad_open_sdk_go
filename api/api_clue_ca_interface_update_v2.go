@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueCaInterfaceUpdateV2ApiService ClueCaInterfaceUpdateV2Api service
@@ -25,15 +26,15 @@ type ClueCaInterfaceUpdateV2ApiService service
 type ApiOpenApi2ClueCaInterfaceUpdatePostRequest struct {
 	ctx                            context.Context
 	ApiService                     *ClueCaInterfaceUpdateV2ApiService
-	clueCaInterfaceUpdateV2Request *ClueCaInterfaceUpdateV2Request
+	clueCaInterfaceUpdateV2Request *models.ClueCaInterfaceUpdateV2Request
 }
 
-func (r *ApiOpenApi2ClueCaInterfaceUpdatePostRequest) ClueCaInterfaceUpdateV2Request(clueCaInterfaceUpdateV2Request ClueCaInterfaceUpdateV2Request) *ApiOpenApi2ClueCaInterfaceUpdatePostRequest {
+func (r *ApiOpenApi2ClueCaInterfaceUpdatePostRequest) ClueCaInterfaceUpdateV2Request(clueCaInterfaceUpdateV2Request models.ClueCaInterfaceUpdateV2Request) *ApiOpenApi2ClueCaInterfaceUpdatePostRequest {
 	r.clueCaInterfaceUpdateV2Request = &clueCaInterfaceUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ClueCaInterfaceUpdatePostRequest) Execute() (*ClueCaInterfaceUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueCaInterfaceUpdatePostRequest) Execute() (*models.ClueCaInterfaceUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ClueCaInterfaceUpdateV2ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ClueCaInterfaceUpdateV2Response
-func (a *ClueCaInterfaceUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueCaInterfaceUpdatePostRequest) (*ClueCaInterfaceUpdateV2Response, *http.Response, error) {
+func (a *ClueCaInterfaceUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueCaInterfaceUpdatePostRequest) (*models.ClueCaInterfaceUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueCaInterfaceUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueCaInterfaceUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ClueCaInterfaceUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueCaInte
 	localVarPath := localBasePath + "/open_api/2/clue/ca/interface/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

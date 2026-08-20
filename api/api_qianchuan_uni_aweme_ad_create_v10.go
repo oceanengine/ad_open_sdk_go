@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniAwemeAdCreateV10ApiService QianchuanUniAwemeAdCreateV10Api service
@@ -25,15 +26,15 @@ type QianchuanUniAwemeAdCreateV10ApiService service
 type ApiOpenApiV10QianchuanUniAwemeAdCreatePostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *QianchuanUniAwemeAdCreateV10ApiService
-	qianchuanUniAwemeAdCreateV10Request *QianchuanUniAwemeAdCreateV10Request
+	qianchuanUniAwemeAdCreateV10Request *models.QianchuanUniAwemeAdCreateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanUniAwemeAdCreatePostRequest) QianchuanUniAwemeAdCreateV10Request(qianchuanUniAwemeAdCreateV10Request QianchuanUniAwemeAdCreateV10Request) *ApiOpenApiV10QianchuanUniAwemeAdCreatePostRequest {
+func (r *ApiOpenApiV10QianchuanUniAwemeAdCreatePostRequest) QianchuanUniAwemeAdCreateV10Request(qianchuanUniAwemeAdCreateV10Request models.QianchuanUniAwemeAdCreateV10Request) *ApiOpenApiV10QianchuanUniAwemeAdCreatePostRequest {
 	r.qianchuanUniAwemeAdCreateV10Request = &qianchuanUniAwemeAdCreateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniAwemeAdCreatePostRequest) Execute() (*QianchuanUniAwemeAdCreateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniAwemeAdCreatePostRequest) Execute() (*models.QianchuanUniAwemeAdCreateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanUniAwemeAdCreateV10ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return QianchuanUniAwemeAdCreateV10Response
-func (a *QianchuanUniAwemeAdCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniAwemeAdCreatePostRequest) (*QianchuanUniAwemeAdCreateV10Response, *http.Response, error) {
+func (a *QianchuanUniAwemeAdCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniAwemeAdCreatePostRequest) (*models.QianchuanUniAwemeAdCreateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniAwemeAdCreateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniAwemeAdCreateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanUniAwemeAdCreateV10ApiService) postExecute(r *ApiOpenApiV10Qia
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_aweme/ad/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

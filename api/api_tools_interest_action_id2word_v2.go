@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsInterestActionId2wordV2ApiService ToolsInterestActionId2wordV2Api service
@@ -25,14 +26,14 @@ type ToolsInterestActionId2wordV2ApiService service
 type ApiOpenApi2ToolsInterestActionId2wordGetRequest struct {
 	ctx           context.Context
 	ApiService    *ToolsInterestActionId2wordV2ApiService
-	actionDays    *ToolsInterestActionId2wordV2ActionDays
+	actionDays    *models.ToolsInterestActionId2wordV2ActionDays
 	advertiserId  *int64
 	ids           *[]int64
-	tagType       *ToolsInterestActionId2wordV2TagType
-	targetingType *ToolsInterestActionId2wordV2TargetingType
+	tagType       *models.ToolsInterestActionId2wordV2TagType
+	targetingType *models.ToolsInterestActionId2wordV2TargetingType
 }
 
-func (r *ApiOpenApi2ToolsInterestActionId2wordGetRequest) ActionDays(actionDays ToolsInterestActionId2wordV2ActionDays) *ApiOpenApi2ToolsInterestActionId2wordGetRequest {
+func (r *ApiOpenApi2ToolsInterestActionId2wordGetRequest) ActionDays(actionDays models.ToolsInterestActionId2wordV2ActionDays) *ApiOpenApi2ToolsInterestActionId2wordGetRequest {
 	r.actionDays = &actionDays
 	return r
 }
@@ -47,17 +48,17 @@ func (r *ApiOpenApi2ToolsInterestActionId2wordGetRequest) Ids(ids []int64) *ApiO
 	return r
 }
 
-func (r *ApiOpenApi2ToolsInterestActionId2wordGetRequest) TagType(tagType ToolsInterestActionId2wordV2TagType) *ApiOpenApi2ToolsInterestActionId2wordGetRequest {
+func (r *ApiOpenApi2ToolsInterestActionId2wordGetRequest) TagType(tagType models.ToolsInterestActionId2wordV2TagType) *ApiOpenApi2ToolsInterestActionId2wordGetRequest {
 	r.tagType = &tagType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsInterestActionId2wordGetRequest) TargetingType(targetingType ToolsInterestActionId2wordV2TargetingType) *ApiOpenApi2ToolsInterestActionId2wordGetRequest {
+func (r *ApiOpenApi2ToolsInterestActionId2wordGetRequest) TargetingType(targetingType models.ToolsInterestActionId2wordV2TargetingType) *ApiOpenApi2ToolsInterestActionId2wordGetRequest {
 	r.targetingType = &targetingType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsInterestActionId2wordGetRequest) Execute() (*ToolsInterestActionId2wordV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsInterestActionId2wordGetRequest) Execute() (*models.ToolsInterestActionId2wordV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ToolsInterestActionId2wordV2ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsInterestActionId2wordV2Response
-func (a *ToolsInterestActionId2wordV2ApiService) getExecute(r *ApiOpenApi2ToolsInterestActionId2wordGetRequest) (*ToolsInterestActionId2wordV2Response, *http.Response, error) {
+func (a *ToolsInterestActionId2wordV2ApiService) getExecute(r *ApiOpenApi2ToolsInterestActionId2wordGetRequest) (*models.ToolsInterestActionId2wordV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsInterestActionId2wordV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsInterestActionId2wordV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ToolsInterestActionId2wordV2ApiService) getExecute(r *ApiOpenApi2ToolsI
 	localVarPath := localBasePath + "/open_api/2/tools/interest_action/id2word/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

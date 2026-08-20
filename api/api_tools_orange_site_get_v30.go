@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsOrangeSiteGetV30ApiService ToolsOrangeSiteGetV30Api service
@@ -28,10 +29,10 @@ type ApiOpenApiV30ToolsOrangeSiteGetGetRequest struct {
 	advertiserId   *int64
 	page           *int32
 	pageSize       *int32
-	optimizeGoal   *ToolsOrangeSiteGetV30OptimizeGoal
-	status         *ToolsOrangeSiteGetV30Status
-	filtering      *ToolsOrangeSiteGetV30Filtering
-	multiAssetType *ToolsOrangeSiteGetV30MultiAssetType
+	optimizeGoal   *models.ToolsOrangeSiteGetV30OptimizeGoal
+	status         *models.ToolsOrangeSiteGetV30Status
+	filtering      *models.ToolsOrangeSiteGetV30Filtering
+	multiAssetType *models.ToolsOrangeSiteGetV30MultiAssetType
 }
 
 func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsOrangeSiteGetGetRequest {
@@ -49,27 +50,27 @@ func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) PageSize(pageSize int32) *Ap
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) OptimizeGoal(optimizeGoal ToolsOrangeSiteGetV30OptimizeGoal) *ApiOpenApiV30ToolsOrangeSiteGetGetRequest {
+func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) OptimizeGoal(optimizeGoal models.ToolsOrangeSiteGetV30OptimizeGoal) *ApiOpenApiV30ToolsOrangeSiteGetGetRequest {
 	r.optimizeGoal = &optimizeGoal
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) Status(status ToolsOrangeSiteGetV30Status) *ApiOpenApiV30ToolsOrangeSiteGetGetRequest {
+func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) Status(status models.ToolsOrangeSiteGetV30Status) *ApiOpenApiV30ToolsOrangeSiteGetGetRequest {
 	r.status = &status
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) Filtering(filtering ToolsOrangeSiteGetV30Filtering) *ApiOpenApiV30ToolsOrangeSiteGetGetRequest {
+func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) Filtering(filtering models.ToolsOrangeSiteGetV30Filtering) *ApiOpenApiV30ToolsOrangeSiteGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) MultiAssetType(multiAssetType ToolsOrangeSiteGetV30MultiAssetType) *ApiOpenApiV30ToolsOrangeSiteGetGetRequest {
+func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) MultiAssetType(multiAssetType models.ToolsOrangeSiteGetV30MultiAssetType) *ApiOpenApiV30ToolsOrangeSiteGetGetRequest {
 	r.multiAssetType = &multiAssetType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) Execute() (*ToolsOrangeSiteGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) Execute() (*models.ToolsOrangeSiteGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *ToolsOrangeSiteGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return ToolsOrangeSiteGetV30Response
-func (a *ToolsOrangeSiteGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) (*ToolsOrangeSiteGetV30Response, *http.Response, error) {
+func (a *ToolsOrangeSiteGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsOrangeSiteGetGetRequest) (*models.ToolsOrangeSiteGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsOrangeSiteGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsOrangeSiteGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *ToolsOrangeSiteGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsOrange
 	localVarPath := localBasePath + "/open_api/v3.0/tools/orange_site/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

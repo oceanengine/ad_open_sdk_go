@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdSuggestionV10ApiService QianchuanUniPromotionAdSuggestionV10Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest struct {
 	ApiService   *QianchuanUniPromotionAdSuggestionV10ApiService
 	advertiserId *int64
 	adId         *int64
-	filtering    *QianchuanUniPromotionAdSuggestionV10Filtering
+	filtering    *models.QianchuanUniPromotionAdSuggestionV10Filtering
 	page         *int32
 	pageSize     *int32
 }
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest) AdId(adId int
 }
 
 // 过滤条件
-func (r *ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest) Filtering(filtering QianchuanUniPromotionAdSuggestionV10Filtering) *ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest) Filtering(filtering models.QianchuanUniPromotionAdSuggestionV10Filtering) *ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest) PageSize(page
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest) Execute() (*QianchuanUniPromotionAdSuggestionV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest) Execute() (*models.QianchuanUniPromotionAdSuggestionV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *QianchuanUniPromotionAdSuggestionV10ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdSuggestionV10Response
-func (a *QianchuanUniPromotionAdSuggestionV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest) (*QianchuanUniPromotionAdSuggestionV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdSuggestionV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionAdSuggestionGetRequest) (*models.QianchuanUniPromotionAdSuggestionV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdSuggestionV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdSuggestionV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *QianchuanUniPromotionAdSuggestionV10ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/suggestion/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

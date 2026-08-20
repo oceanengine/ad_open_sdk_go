@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsSearchBidRatioGetV2ApiService ToolsSearchBidRatioGetV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2ToolsSearchBidRatioGetGetRequest) AdId(adId int64) *ApiOpenA
 	return r
 }
 
-func (r *ApiOpenApi2ToolsSearchBidRatioGetGetRequest) Execute() (*ToolsSearchBidRatioGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsSearchBidRatioGetGetRequest) Execute() (*models.ToolsSearchBidRatioGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ToolsSearchBidRatioGetV2ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsSearchBidRatioGetV2Response
-func (a *ToolsSearchBidRatioGetV2ApiService) getExecute(r *ApiOpenApi2ToolsSearchBidRatioGetGetRequest) (*ToolsSearchBidRatioGetV2Response, *http.Response, error) {
+func (a *ToolsSearchBidRatioGetV2ApiService) getExecute(r *ApiOpenApi2ToolsSearchBidRatioGetGetRequest) (*models.ToolsSearchBidRatioGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsSearchBidRatioGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsSearchBidRatioGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ToolsSearchBidRatioGetV2ApiService) getExecute(r *ApiOpenApi2ToolsSearc
 	localVarPath := localBasePath + "/open_api/2/tools/search_bid_ratio/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarItemAuthorGetV2ApiService StarItemAuthorGetV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2StarItemAuthorGetGetRequest) ItemIds(itemIds []int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2StarItemAuthorGetGetRequest) Execute() (*StarItemAuthorGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarItemAuthorGetGetRequest) Execute() (*models.StarItemAuthorGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *StarItemAuthorGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Sta
 // Execute executes the request
 //
 //	@return StarItemAuthorGetV2Response
-func (a *StarItemAuthorGetV2ApiService) getExecute(r *ApiOpenApi2StarItemAuthorGetGetRequest) (*StarItemAuthorGetV2Response, *http.Response, error) {
+func (a *StarItemAuthorGetV2ApiService) getExecute(r *ApiOpenApi2StarItemAuthorGetGetRequest) (*models.StarItemAuthorGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarItemAuthorGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarItemAuthorGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *StarItemAuthorGetV2ApiService) getExecute(r *ApiOpenApi2StarItemAuthorG
 	localVarPath := localBasePath + "/open_api/2/star/item/author/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

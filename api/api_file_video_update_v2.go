@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoUpdateV2ApiService FileVideoUpdateV2Api service
@@ -25,15 +26,15 @@ type FileVideoUpdateV2ApiService service
 type ApiOpenApi2FileVideoUpdatePostRequest struct {
 	ctx                      context.Context
 	ApiService               *FileVideoUpdateV2ApiService
-	fileVideoUpdateV2Request *FileVideoUpdateV2Request
+	fileVideoUpdateV2Request *models.FileVideoUpdateV2Request
 }
 
-func (r *ApiOpenApi2FileVideoUpdatePostRequest) FileVideoUpdateV2Request(fileVideoUpdateV2Request FileVideoUpdateV2Request) *ApiOpenApi2FileVideoUpdatePostRequest {
+func (r *ApiOpenApi2FileVideoUpdatePostRequest) FileVideoUpdateV2Request(fileVideoUpdateV2Request models.FileVideoUpdateV2Request) *ApiOpenApi2FileVideoUpdatePostRequest {
 	r.fileVideoUpdateV2Request = &fileVideoUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoUpdatePostRequest) Execute() (*FileVideoUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoUpdatePostRequest) Execute() (*models.FileVideoUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *FileVideoUpdateV2ApiService) Post(ctx context.Context) *ApiOpenApi2File
 // Execute executes the request
 //
 //	@return FileVideoUpdateV2Response
-func (a *FileVideoUpdateV2ApiService) postExecute(r *ApiOpenApi2FileVideoUpdatePostRequest) (*FileVideoUpdateV2Response, *http.Response, error) {
+func (a *FileVideoUpdateV2ApiService) postExecute(r *ApiOpenApi2FileVideoUpdatePostRequest) (*models.FileVideoUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *FileVideoUpdateV2ApiService) postExecute(r *ApiOpenApi2FileVideoUpdateP
 	localVarPath := localBasePath + "/open_api/2/file/video/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

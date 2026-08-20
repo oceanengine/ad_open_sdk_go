@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsTaskRaiseCreateV2ApiService ToolsTaskRaiseCreateV2Api service
@@ -25,15 +26,15 @@ type ToolsTaskRaiseCreateV2ApiService service
 type ApiOpenApi2ToolsTaskRaiseCreatePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *ToolsTaskRaiseCreateV2ApiService
-	toolsTaskRaiseCreateV2Request *ToolsTaskRaiseCreateV2Request
+	toolsTaskRaiseCreateV2Request *models.ToolsTaskRaiseCreateV2Request
 }
 
-func (r *ApiOpenApi2ToolsTaskRaiseCreatePostRequest) ToolsTaskRaiseCreateV2Request(toolsTaskRaiseCreateV2Request ToolsTaskRaiseCreateV2Request) *ApiOpenApi2ToolsTaskRaiseCreatePostRequest {
+func (r *ApiOpenApi2ToolsTaskRaiseCreatePostRequest) ToolsTaskRaiseCreateV2Request(toolsTaskRaiseCreateV2Request models.ToolsTaskRaiseCreateV2Request) *ApiOpenApi2ToolsTaskRaiseCreatePostRequest {
 	r.toolsTaskRaiseCreateV2Request = &toolsTaskRaiseCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsTaskRaiseCreatePostRequest) Execute() (*ToolsTaskRaiseCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsTaskRaiseCreatePostRequest) Execute() (*models.ToolsTaskRaiseCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsTaskRaiseCreateV2ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsTaskRaiseCreateV2Response
-func (a *ToolsTaskRaiseCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsTaskRaiseCreatePostRequest) (*ToolsTaskRaiseCreateV2Response, *http.Response, error) {
+func (a *ToolsTaskRaiseCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsTaskRaiseCreatePostRequest) (*models.ToolsTaskRaiseCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsTaskRaiseCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsTaskRaiseCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsTaskRaiseCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsTaskRa
 	localVarPath := localBasePath + "/open_api/2/tools/task_raise/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

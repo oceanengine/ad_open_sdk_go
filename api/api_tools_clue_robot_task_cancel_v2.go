@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueRobotTaskCancelV2ApiService ToolsClueRobotTaskCancelV2Api service
@@ -25,15 +26,15 @@ type ToolsClueRobotTaskCancelV2ApiService service
 type ApiOpenApi2ToolsClueRobotTaskCancelPostRequest struct {
 	ctx                               context.Context
 	ApiService                        *ToolsClueRobotTaskCancelV2ApiService
-	toolsClueRobotTaskCancelV2Request *ToolsClueRobotTaskCancelV2Request
+	toolsClueRobotTaskCancelV2Request *models.ToolsClueRobotTaskCancelV2Request
 }
 
-func (r *ApiOpenApi2ToolsClueRobotTaskCancelPostRequest) ToolsClueRobotTaskCancelV2Request(toolsClueRobotTaskCancelV2Request ToolsClueRobotTaskCancelV2Request) *ApiOpenApi2ToolsClueRobotTaskCancelPostRequest {
+func (r *ApiOpenApi2ToolsClueRobotTaskCancelPostRequest) ToolsClueRobotTaskCancelV2Request(toolsClueRobotTaskCancelV2Request models.ToolsClueRobotTaskCancelV2Request) *ApiOpenApi2ToolsClueRobotTaskCancelPostRequest {
 	r.toolsClueRobotTaskCancelV2Request = &toolsClueRobotTaskCancelV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueRobotTaskCancelPostRequest) Execute() (*ToolsClueRobotTaskCancelV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueRobotTaskCancelPostRequest) Execute() (*models.ToolsClueRobotTaskCancelV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsClueRobotTaskCancelV2ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsClueRobotTaskCancelV2Response
-func (a *ToolsClueRobotTaskCancelV2ApiService) postExecute(r *ApiOpenApi2ToolsClueRobotTaskCancelPostRequest) (*ToolsClueRobotTaskCancelV2Response, *http.Response, error) {
+func (a *ToolsClueRobotTaskCancelV2ApiService) postExecute(r *ApiOpenApi2ToolsClueRobotTaskCancelPostRequest) (*models.ToolsClueRobotTaskCancelV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueRobotTaskCancelV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueRobotTaskCancelV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsClueRobotTaskCancelV2ApiService) postExecute(r *ApiOpenApi2ToolsCl
 	localVarPath := localBasePath + "/open_api/2/tools/clue/robot/task/cancel/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpMicroAppletLinkListV30ApiService ToolsEbpMicroAppletLinkListV30Api service
@@ -26,10 +27,10 @@ type ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest struct {
 	ctx         context.Context
 	ApiService  *ToolsEbpMicroAppletLinkListV30ApiService
 	accountId   *int64
-	accountType *ToolsEbpMicroAppletLinkListV30AccountType
+	accountType *models.ToolsEbpMicroAppletLinkListV30AccountType
 	instanceId  *int64
 	appId       *string
-	createTime  *ToolsEbpMicroAppletLinkListV30CreateTime
+	createTime  *models.ToolsEbpMicroAppletLinkListV30CreateTime
 	page        *int64
 	pageSize    *int64
 }
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) AccountId(accountId
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) AccountType(accountType ToolsEbpMicroAppletLinkListV30AccountType) *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) AccountType(accountType models.ToolsEbpMicroAppletLinkListV30AccountType) *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -54,7 +55,7 @@ func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) AppId(appId string)
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) CreateTime(createTime ToolsEbpMicroAppletLinkListV30CreateTime) *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) CreateTime(createTime models.ToolsEbpMicroAppletLinkListV30CreateTime) *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest {
 	r.createTime = &createTime
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) PageSize(pageSize i
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) Execute() (*ToolsEbpMicroAppletLinkListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) Execute() (*models.ToolsEbpMicroAppletLinkListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *ToolsEbpMicroAppletLinkListV30ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return ToolsEbpMicroAppletLinkListV30Response
-func (a *ToolsEbpMicroAppletLinkListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) (*ToolsEbpMicroAppletLinkListV30Response, *http.Response, error) {
+func (a *ToolsEbpMicroAppletLinkListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpMicroAppletLinkListGetRequest) (*models.ToolsEbpMicroAppletLinkListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpMicroAppletLinkListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpMicroAppletLinkListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *ToolsEbpMicroAppletLinkListV30ApiService) getExecute(r *ApiOpenApiV30To
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/micro_applet/link/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

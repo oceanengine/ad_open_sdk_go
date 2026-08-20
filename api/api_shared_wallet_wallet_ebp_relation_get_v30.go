@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SharedWalletWalletEbpRelationGetV30ApiService SharedWalletWalletEbpRelationGetV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *SharedWalletWalletEbpRelationGetV30ApiService
 	accountId   *int64
-	accountType *SharedWalletWalletEbpRelationGetV30AccountType
+	accountType *models.SharedWalletWalletEbpRelationGetV30AccountType
 	ebpIds      *[]int64
-	walletTypes *[]*SharedWalletWalletEbpRelationGetV30WalletTypes
+	walletTypes *[]*models.SharedWalletWalletEbpRelationGetV30WalletTypes
 }
 
 // 鉴权的组织id
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest) AccountId(acco
 }
 
 // 账号类型，BP工作台
-func (r *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest) AccountType(accountType SharedWalletWalletEbpRelationGetV30AccountType) *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest {
+func (r *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest) AccountType(accountType models.SharedWalletWalletEbpRelationGetV30AccountType) *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -50,12 +51,12 @@ func (r *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest) EbpIds(ebpIds 
 }
 
 // 查询的钱包类型集合
-func (r *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest) WalletTypes(walletTypes []*SharedWalletWalletEbpRelationGetV30WalletTypes) *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest {
+func (r *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest) WalletTypes(walletTypes []*models.SharedWalletWalletEbpRelationGetV30WalletTypes) *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest {
 	r.walletTypes = &walletTypes
 	return r
 }
 
-func (r *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest) Execute() (*SharedWalletWalletEbpRelationGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest) Execute() (*models.SharedWalletWalletEbpRelationGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *SharedWalletWalletEbpRelationGetV30ApiService) Get(ctx context.Context)
 // Execute executes the request
 //
 //	@return SharedWalletWalletEbpRelationGetV30Response
-func (a *SharedWalletWalletEbpRelationGetV30ApiService) getExecute(r *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest) (*SharedWalletWalletEbpRelationGetV30Response, *http.Response, error) {
+func (a *SharedWalletWalletEbpRelationGetV30ApiService) getExecute(r *ApiOpenApiV30SharedWalletWalletEbpRelationGetGetRequest) (*models.SharedWalletWalletEbpRelationGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SharedWalletWalletEbpRelationGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SharedWalletWalletEbpRelationGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *SharedWalletWalletEbpRelationGetV30ApiService) getExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/v3.0/shared_wallet/wallet_ebp_relation/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

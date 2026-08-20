@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalChargeListV30ApiService LocalChargeListV30Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV30LocalChargeListGetRequest struct {
 	localAccountId *int64
 	startTime      *string
 	endTime        *string
-	chargeMethods  *[]*LocalChargeListV30ChargeMethods
+	chargeMethods  *[]*models.LocalChargeListV30ChargeMethods
 	page           *int32
 	pageSize       *int32
 }
@@ -52,7 +53,7 @@ func (r *ApiOpenApiV30LocalChargeListGetRequest) EndTime(endTime string) *ApiOpe
 }
 
 // 充值方式，多选
-func (r *ApiOpenApiV30LocalChargeListGetRequest) ChargeMethods(chargeMethods []*LocalChargeListV30ChargeMethods) *ApiOpenApiV30LocalChargeListGetRequest {
+func (r *ApiOpenApiV30LocalChargeListGetRequest) ChargeMethods(chargeMethods []*models.LocalChargeListV30ChargeMethods) *ApiOpenApiV30LocalChargeListGetRequest {
 	r.chargeMethods = &chargeMethods
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApiV30LocalChargeListGetRequest) PageSize(pageSize int32) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApiV30LocalChargeListGetRequest) Execute() (*LocalChargeListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalChargeListGetRequest) Execute() (*models.LocalChargeListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *LocalChargeListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Lo
 // Execute executes the request
 //
 //	@return LocalChargeListV30Response
-func (a *LocalChargeListV30ApiService) getExecute(r *ApiOpenApiV30LocalChargeListGetRequest) (*LocalChargeListV30Response, *http.Response, error) {
+func (a *LocalChargeListV30ApiService) getExecute(r *ApiOpenApiV30LocalChargeListGetRequest) (*models.LocalChargeListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalChargeListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalChargeListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *LocalChargeListV30ApiService) getExecute(r *ApiOpenApiV30LocalChargeLis
 	localVarPath := localBasePath + "/open_api/v3.0/local/charge/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

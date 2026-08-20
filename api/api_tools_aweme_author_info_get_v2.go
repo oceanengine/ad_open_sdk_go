@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAwemeAuthorInfoGetV2ApiService ToolsAwemeAuthorInfoGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsAwemeAuthorInfoGetV2ApiService
 	advertiserId *int64
-	behaviors    *[]*ToolsAwemeAuthorInfoGetV2Behaviors
+	behaviors    *[]*models.ToolsAwemeAuthorInfoGetV2Behaviors
 	labelIds     *[]int64
 }
 
@@ -35,7 +36,7 @@ func (r *ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest) AdvertiserId(advertiserId
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest) Behaviors(behaviors []*ToolsAwemeAuthorInfoGetV2Behaviors) *ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest {
+func (r *ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest) Behaviors(behaviors []*models.ToolsAwemeAuthorInfoGetV2Behaviors) *ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest {
 	r.behaviors = &behaviors
 	return r
 }
@@ -45,7 +46,7 @@ func (r *ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest) LabelIds(labelIds []int64
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest) Execute() (*ToolsAwemeAuthorInfoGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest) Execute() (*models.ToolsAwemeAuthorInfoGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *ToolsAwemeAuthorInfoGetV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return ToolsAwemeAuthorInfoGetV2Response
-func (a *ToolsAwemeAuthorInfoGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest) (*ToolsAwemeAuthorInfoGetV2Response, *http.Response, error) {
+func (a *ToolsAwemeAuthorInfoGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAwemeAuthorInfoGetGetRequest) (*models.ToolsAwemeAuthorInfoGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAwemeAuthorInfoGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAwemeAuthorInfoGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *ToolsAwemeAuthorInfoGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAwem
 	localVarPath := localBasePath + "/open_api/2/tools/aweme_author_info/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

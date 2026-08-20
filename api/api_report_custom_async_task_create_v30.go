@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportCustomAsyncTaskCreateV30ApiService ReportCustomAsyncTaskCreateV30Api service
@@ -25,15 +26,15 @@ type ReportCustomAsyncTaskCreateV30ApiService service
 type ApiOpenApiV30ReportCustomAsyncTaskCreatePostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *ReportCustomAsyncTaskCreateV30ApiService
-	reportCustomAsyncTaskCreateV30Request *ReportCustomAsyncTaskCreateV30Request
+	reportCustomAsyncTaskCreateV30Request *models.ReportCustomAsyncTaskCreateV30Request
 }
 
-func (r *ApiOpenApiV30ReportCustomAsyncTaskCreatePostRequest) ReportCustomAsyncTaskCreateV30Request(reportCustomAsyncTaskCreateV30Request ReportCustomAsyncTaskCreateV30Request) *ApiOpenApiV30ReportCustomAsyncTaskCreatePostRequest {
+func (r *ApiOpenApiV30ReportCustomAsyncTaskCreatePostRequest) ReportCustomAsyncTaskCreateV30Request(reportCustomAsyncTaskCreateV30Request models.ReportCustomAsyncTaskCreateV30Request) *ApiOpenApiV30ReportCustomAsyncTaskCreatePostRequest {
 	r.reportCustomAsyncTaskCreateV30Request = &reportCustomAsyncTaskCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ReportCustomAsyncTaskCreatePostRequest) Execute() (*ReportCustomAsyncTaskCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportCustomAsyncTaskCreatePostRequest) Execute() (*models.ReportCustomAsyncTaskCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ReportCustomAsyncTaskCreateV30ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return ReportCustomAsyncTaskCreateV30Response
-func (a *ReportCustomAsyncTaskCreateV30ApiService) postExecute(r *ApiOpenApiV30ReportCustomAsyncTaskCreatePostRequest) (*ReportCustomAsyncTaskCreateV30Response, *http.Response, error) {
+func (a *ReportCustomAsyncTaskCreateV30ApiService) postExecute(r *ApiOpenApiV30ReportCustomAsyncTaskCreatePostRequest) (*models.ReportCustomAsyncTaskCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportCustomAsyncTaskCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportCustomAsyncTaskCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ReportCustomAsyncTaskCreateV30ApiService) postExecute(r *ApiOpenApiV30R
 	localVarPath := localBasePath + "/open_api/v3.0/report/custom/async_task/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

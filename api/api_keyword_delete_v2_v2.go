@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // KeywordDeleteV2V2ApiService KeywordDeleteV2V2Api service
@@ -25,15 +26,15 @@ type KeywordDeleteV2V2ApiService service
 type ApiOpenApi2KeywordDeleteV2PostRequest struct {
 	ctx                      context.Context
 	ApiService               *KeywordDeleteV2V2ApiService
-	keywordDeleteV2V2Request *KeywordDeleteV2V2Request
+	keywordDeleteV2V2Request *models.KeywordDeleteV2V2Request
 }
 
-func (r *ApiOpenApi2KeywordDeleteV2PostRequest) KeywordDeleteV2V2Request(keywordDeleteV2V2Request KeywordDeleteV2V2Request) *ApiOpenApi2KeywordDeleteV2PostRequest {
+func (r *ApiOpenApi2KeywordDeleteV2PostRequest) KeywordDeleteV2V2Request(keywordDeleteV2V2Request models.KeywordDeleteV2V2Request) *ApiOpenApi2KeywordDeleteV2PostRequest {
 	r.keywordDeleteV2V2Request = &keywordDeleteV2V2Request
 	return r
 }
 
-func (r *ApiOpenApi2KeywordDeleteV2PostRequest) Execute() (*KeywordDeleteV2V2Response, *http.Response, error) {
+func (r *ApiOpenApi2KeywordDeleteV2PostRequest) Execute() (*models.KeywordDeleteV2V2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *KeywordDeleteV2V2ApiService) Post(ctx context.Context) *ApiOpenApi2Keyw
 // Execute executes the request
 //
 //	@return KeywordDeleteV2V2Response
-func (a *KeywordDeleteV2V2ApiService) postExecute(r *ApiOpenApi2KeywordDeleteV2PostRequest) (*KeywordDeleteV2V2Response, *http.Response, error) {
+func (a *KeywordDeleteV2V2ApiService) postExecute(r *ApiOpenApi2KeywordDeleteV2PostRequest) (*models.KeywordDeleteV2V2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *KeywordDeleteV2V2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.KeywordDeleteV2V2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *KeywordDeleteV2V2ApiService) postExecute(r *ApiOpenApi2KeywordDeleteV2P
 	localVarPath := localBasePath + "/open_api/2/keyword/delete_v2/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

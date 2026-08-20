@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // PromotionRejectReasonGetV30ApiService PromotionRejectReasonGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30PromotionRejectReasonGetGetRequest struct {
 	ApiService          *PromotionRejectReasonGetV30ApiService
 	advertiserId        *int64
 	promotionIds        *[]int64
-	deliveryMode        *PromotionRejectReasonGetV30DeliveryMode
+	deliveryMode        *models.PromotionRejectReasonGetV30DeliveryMode
 	needMaterialLegoMid *bool
 }
 
@@ -44,7 +45,7 @@ func (r *ApiOpenApiV30PromotionRejectReasonGetGetRequest) PromotionIds(promotion
 }
 
 // 投放模式，允许值： MANUAL手动投放（默认值） PROCEDURAL自动投放
-func (r *ApiOpenApiV30PromotionRejectReasonGetGetRequest) DeliveryMode(deliveryMode PromotionRejectReasonGetV30DeliveryMode) *ApiOpenApiV30PromotionRejectReasonGetGetRequest {
+func (r *ApiOpenApiV30PromotionRejectReasonGetGetRequest) DeliveryMode(deliveryMode models.PromotionRejectReasonGetV30DeliveryMode) *ApiOpenApiV30PromotionRejectReasonGetGetRequest {
 	r.deliveryMode = &deliveryMode
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30PromotionRejectReasonGetGetRequest) NeedMaterialLegoMid(ne
 	return r
 }
 
-func (r *ApiOpenApiV30PromotionRejectReasonGetGetRequest) Execute() (*PromotionRejectReasonGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30PromotionRejectReasonGetGetRequest) Execute() (*models.PromotionRejectReasonGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *PromotionRejectReasonGetV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return PromotionRejectReasonGetV30Response
-func (a *PromotionRejectReasonGetV30ApiService) getExecute(r *ApiOpenApiV30PromotionRejectReasonGetGetRequest) (*PromotionRejectReasonGetV30Response, *http.Response, error) {
+func (a *PromotionRejectReasonGetV30ApiService) getExecute(r *ApiOpenApiV30PromotionRejectReasonGetGetRequest) (*models.PromotionRejectReasonGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *PromotionRejectReasonGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.PromotionRejectReasonGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *PromotionRejectReasonGetV30ApiService) getExecute(r *ApiOpenApiV30Promo
 	localVarPath := localBasePath + "/open_api/v3.0/promotion/reject_reason/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

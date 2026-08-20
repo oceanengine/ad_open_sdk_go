@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // Oauth2RefreshTokenApiService Oauth2RefreshTokenApi service
@@ -25,15 +26,15 @@ type Oauth2RefreshTokenApiService service
 type ApiOpenApiOauth2RefreshTokenPostRequest struct {
 	ctx                       context.Context
 	ApiService                *Oauth2RefreshTokenApiService
-	oauth2RefreshTokenRequest *Oauth2RefreshTokenRequest
+	oauth2RefreshTokenRequest *models.Oauth2RefreshTokenRequest
 }
 
-func (r *ApiOpenApiOauth2RefreshTokenPostRequest) Oauth2RefreshTokenRequest(oauth2RefreshTokenRequest Oauth2RefreshTokenRequest) *ApiOpenApiOauth2RefreshTokenPostRequest {
+func (r *ApiOpenApiOauth2RefreshTokenPostRequest) Oauth2RefreshTokenRequest(oauth2RefreshTokenRequest models.Oauth2RefreshTokenRequest) *ApiOpenApiOauth2RefreshTokenPostRequest {
 	r.oauth2RefreshTokenRequest = &oauth2RefreshTokenRequest
 	return r
 }
 
-func (r *ApiOpenApiOauth2RefreshTokenPostRequest) Execute() (*Oauth2RefreshTokenResponse, *http.Response, error) {
+func (r *ApiOpenApiOauth2RefreshTokenPostRequest) Execute() (*models.Oauth2RefreshTokenResponse, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *Oauth2RefreshTokenApiService) Post(ctx context.Context) *ApiOpenApiOaut
 // Execute executes the request
 //
 //	@return Oauth2RefreshTokenResponse
-func (a *Oauth2RefreshTokenApiService) postExecute(r *ApiOpenApiOauth2RefreshTokenPostRequest) (*Oauth2RefreshTokenResponse, *http.Response, error) {
+func (a *Oauth2RefreshTokenApiService) postExecute(r *ApiOpenApiOauth2RefreshTokenPostRequest) (*models.Oauth2RefreshTokenResponse, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *Oauth2RefreshTokenResponse
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.Oauth2RefreshTokenResponse
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *Oauth2RefreshTokenApiService) postExecute(r *ApiOpenApiOauth2RefreshTok
 	localVarPath := localBasePath + "/open_api/oauth2/refresh_token/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

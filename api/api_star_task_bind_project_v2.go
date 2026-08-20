@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarTaskBindProjectV2ApiService StarTaskBindProjectV2Api service
@@ -25,15 +26,15 @@ type StarTaskBindProjectV2ApiService service
 type ApiOpenApi2StarTaskBindProjectPostRequest struct {
 	ctx                          context.Context
 	ApiService                   *StarTaskBindProjectV2ApiService
-	starTaskBindProjectV2Request *StarTaskBindProjectV2Request
+	starTaskBindProjectV2Request *models.StarTaskBindProjectV2Request
 }
 
-func (r *ApiOpenApi2StarTaskBindProjectPostRequest) StarTaskBindProjectV2Request(starTaskBindProjectV2Request StarTaskBindProjectV2Request) *ApiOpenApi2StarTaskBindProjectPostRequest {
+func (r *ApiOpenApi2StarTaskBindProjectPostRequest) StarTaskBindProjectV2Request(starTaskBindProjectV2Request models.StarTaskBindProjectV2Request) *ApiOpenApi2StarTaskBindProjectPostRequest {
 	r.starTaskBindProjectV2Request = &starTaskBindProjectV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarTaskBindProjectPostRequest) Execute() (*StarTaskBindProjectV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarTaskBindProjectPostRequest) Execute() (*models.StarTaskBindProjectV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarTaskBindProjectV2ApiService) Post(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return StarTaskBindProjectV2Response
-func (a *StarTaskBindProjectV2ApiService) postExecute(r *ApiOpenApi2StarTaskBindProjectPostRequest) (*StarTaskBindProjectV2Response, *http.Response, error) {
+func (a *StarTaskBindProjectV2ApiService) postExecute(r *ApiOpenApi2StarTaskBindProjectPostRequest) (*models.StarTaskBindProjectV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarTaskBindProjectV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarTaskBindProjectV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarTaskBindProjectV2ApiService) postExecute(r *ApiOpenApi2StarTaskBind
 	localVarPath := localBasePath + "/open_api/2/star/task/bind_project/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

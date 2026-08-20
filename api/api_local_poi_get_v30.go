@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalPoiGetV30ApiService LocalPoiGetV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30LocalPoiGetGetRequest struct {
 	ctx                context.Context
 	ApiService         *LocalPoiGetV30ApiService
 	localAccountId     *int64
-	localDeliveryScene *LocalPoiGetV30LocalDeliveryScene
-	filtering          *LocalPoiGetV30Filtering
+	localDeliveryScene *models.LocalPoiGetV30LocalDeliveryScene
+	filtering          *models.LocalPoiGetV30Filtering
 	page               *int64
 	pageSize           *int64
 }
@@ -39,13 +40,13 @@ func (r *ApiOpenApiV30LocalPoiGetGetRequest) LocalAccountId(localAccountId int64
 }
 
 // 项目设置的推广目的，根据推广目的筛选可投门店列表
-func (r *ApiOpenApiV30LocalPoiGetGetRequest) LocalDeliveryScene(localDeliveryScene LocalPoiGetV30LocalDeliveryScene) *ApiOpenApiV30LocalPoiGetGetRequest {
+func (r *ApiOpenApiV30LocalPoiGetGetRequest) LocalDeliveryScene(localDeliveryScene models.LocalPoiGetV30LocalDeliveryScene) *ApiOpenApiV30LocalPoiGetGetRequest {
 	r.localDeliveryScene = &localDeliveryScene
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV30LocalPoiGetGetRequest) Filtering(filtering LocalPoiGetV30Filtering) *ApiOpenApiV30LocalPoiGetGetRequest {
+func (r *ApiOpenApiV30LocalPoiGetGetRequest) Filtering(filtering models.LocalPoiGetV30Filtering) *ApiOpenApiV30LocalPoiGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30LocalPoiGetGetRequest) PageSize(pageSize int64) *ApiOpenAp
 	return r
 }
 
-func (r *ApiOpenApiV30LocalPoiGetGetRequest) Execute() (*LocalPoiGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalPoiGetGetRequest) Execute() (*models.LocalPoiGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *LocalPoiGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30LocalP
 // Execute executes the request
 //
 //	@return LocalPoiGetV30Response
-func (a *LocalPoiGetV30ApiService) getExecute(r *ApiOpenApiV30LocalPoiGetGetRequest) (*LocalPoiGetV30Response, *http.Response, error) {
+func (a *LocalPoiGetV30ApiService) getExecute(r *ApiOpenApiV30LocalPoiGetGetRequest) (*models.LocalPoiGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalPoiGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalPoiGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *LocalPoiGetV30ApiService) getExecute(r *ApiOpenApiV30LocalPoiGetGetRequ
 	localVarPath := localBasePath + "/open_api/v3.0/local/poi/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

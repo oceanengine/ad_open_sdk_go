@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsThirdSiteGetV2ApiService ToolsThirdSiteGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsThirdSiteGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsThirdSiteGetV2ApiService
 	advertiserId *int64
-	filtering    *ToolsThirdSiteGetV2Filtering
+	filtering    *models.ToolsThirdSiteGetV2Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApi2ToolsThirdSiteGetGetRequest) AdvertiserId(advertiserId int64
 	return r
 }
 
-func (r *ApiOpenApi2ToolsThirdSiteGetGetRequest) Filtering(filtering ToolsThirdSiteGetV2Filtering) *ApiOpenApi2ToolsThirdSiteGetGetRequest {
+func (r *ApiOpenApi2ToolsThirdSiteGetGetRequest) Filtering(filtering models.ToolsThirdSiteGetV2Filtering) *ApiOpenApi2ToolsThirdSiteGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2ToolsThirdSiteGetGetRequest) PageSize(pageSize int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2ToolsThirdSiteGetGetRequest) Execute() (*ToolsThirdSiteGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsThirdSiteGetGetRequest) Execute() (*models.ToolsThirdSiteGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ToolsThirdSiteGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Too
 // Execute executes the request
 //
 //	@return ToolsThirdSiteGetV2Response
-func (a *ToolsThirdSiteGetV2ApiService) getExecute(r *ApiOpenApi2ToolsThirdSiteGetGetRequest) (*ToolsThirdSiteGetV2Response, *http.Response, error) {
+func (a *ToolsThirdSiteGetV2ApiService) getExecute(r *ApiOpenApi2ToolsThirdSiteGetGetRequest) (*models.ToolsThirdSiteGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsThirdSiteGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsThirdSiteGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ToolsThirdSiteGetV2ApiService) getExecute(r *ApiOpenApi2ToolsThirdSiteG
 	localVarPath := localBasePath + "/open_api/2/tools/third_site/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarReportDataTopicConfigV2ApiService StarReportDataTopicConfigV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2StarReportDataTopicConfigGetRequest struct {
 	starId     *int64
 	workId     *int64
 	demandId   *int64
-	topics     *[]*StarReportDataTopicConfigV2Topics
+	topics     *[]*models.StarReportDataTopicConfigV2Topics
 }
 
 // 发起请求的客户的starId
@@ -50,12 +51,12 @@ func (r *ApiOpenApi2StarReportDataTopicConfigGetRequest) DemandId(demandId int64
 }
 
 // 数据主题: BASIC_DATA：基础信息、 FLOW_DATA：流量表现、 CONVERT_DATA：转化表现、 SEARCH_DATA：搜索表现、 RECOMMEND_DATA： 种草表现、 DY_SHOP_DATA：抖音进店、 USER_DISTRIBUTION_DATA：用户画像、 INDEX_SCORE_DATA： 指数得分、 COMMENT_DATA：评论数据 直播用户画像仅保留近90天且直播时长 &gt;&#x3D; 25 分钟直播数据
-func (r *ApiOpenApi2StarReportDataTopicConfigGetRequest) Topics(topics []*StarReportDataTopicConfigV2Topics) *ApiOpenApi2StarReportDataTopicConfigGetRequest {
+func (r *ApiOpenApi2StarReportDataTopicConfigGetRequest) Topics(topics []*models.StarReportDataTopicConfigV2Topics) *ApiOpenApi2StarReportDataTopicConfigGetRequest {
 	r.topics = &topics
 	return r
 }
 
-func (r *ApiOpenApi2StarReportDataTopicConfigGetRequest) Execute() (*StarReportDataTopicConfigV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarReportDataTopicConfigGetRequest) Execute() (*models.StarReportDataTopicConfigV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *StarReportDataTopicConfigV2ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return StarReportDataTopicConfigV2Response
-func (a *StarReportDataTopicConfigV2ApiService) getExecute(r *ApiOpenApi2StarReportDataTopicConfigGetRequest) (*StarReportDataTopicConfigV2Response, *http.Response, error) {
+func (a *StarReportDataTopicConfigV2ApiService) getExecute(r *ApiOpenApi2StarReportDataTopicConfigGetRequest) (*models.StarReportDataTopicConfigV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarReportDataTopicConfigV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarReportDataTopicConfigV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *StarReportDataTopicConfigV2ApiService) getExecute(r *ApiOpenApi2StarRep
 	localVarPath := localBasePath + "/open_api/2/star/report/data_topic_config/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

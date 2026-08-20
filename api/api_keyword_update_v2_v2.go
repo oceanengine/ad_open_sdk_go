@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // KeywordUpdateV2V2ApiService KeywordUpdateV2V2Api service
@@ -25,15 +26,15 @@ type KeywordUpdateV2V2ApiService service
 type ApiOpenApi2KeywordUpdateV2PostRequest struct {
 	ctx                      context.Context
 	ApiService               *KeywordUpdateV2V2ApiService
-	keywordUpdateV2V2Request *KeywordUpdateV2V2Request
+	keywordUpdateV2V2Request *models.KeywordUpdateV2V2Request
 }
 
-func (r *ApiOpenApi2KeywordUpdateV2PostRequest) KeywordUpdateV2V2Request(keywordUpdateV2V2Request KeywordUpdateV2V2Request) *ApiOpenApi2KeywordUpdateV2PostRequest {
+func (r *ApiOpenApi2KeywordUpdateV2PostRequest) KeywordUpdateV2V2Request(keywordUpdateV2V2Request models.KeywordUpdateV2V2Request) *ApiOpenApi2KeywordUpdateV2PostRequest {
 	r.keywordUpdateV2V2Request = &keywordUpdateV2V2Request
 	return r
 }
 
-func (r *ApiOpenApi2KeywordUpdateV2PostRequest) Execute() (*KeywordUpdateV2V2Response, *http.Response, error) {
+func (r *ApiOpenApi2KeywordUpdateV2PostRequest) Execute() (*models.KeywordUpdateV2V2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *KeywordUpdateV2V2ApiService) Post(ctx context.Context) *ApiOpenApi2Keyw
 // Execute executes the request
 //
 //	@return KeywordUpdateV2V2Response
-func (a *KeywordUpdateV2V2ApiService) postExecute(r *ApiOpenApi2KeywordUpdateV2PostRequest) (*KeywordUpdateV2V2Response, *http.Response, error) {
+func (a *KeywordUpdateV2V2ApiService) postExecute(r *ApiOpenApi2KeywordUpdateV2PostRequest) (*models.KeywordUpdateV2V2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *KeywordUpdateV2V2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.KeywordUpdateV2V2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *KeywordUpdateV2V2ApiService) postExecute(r *ApiOpenApi2KeywordUpdateV2P
 	localVarPath := localBasePath + "/open_api/2/keyword/update_v2/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

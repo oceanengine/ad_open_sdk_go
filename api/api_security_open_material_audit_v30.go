@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SecurityOpenMaterialAuditV30ApiService SecurityOpenMaterialAuditV30Api service
@@ -25,15 +26,15 @@ type SecurityOpenMaterialAuditV30ApiService service
 type ApiOpenApiV30SecurityOpenMaterialAuditPostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *SecurityOpenMaterialAuditV30ApiService
-	securityOpenMaterialAuditV30Request *SecurityOpenMaterialAuditV30Request
+	securityOpenMaterialAuditV30Request *models.SecurityOpenMaterialAuditV30Request
 }
 
-func (r *ApiOpenApiV30SecurityOpenMaterialAuditPostRequest) SecurityOpenMaterialAuditV30Request(securityOpenMaterialAuditV30Request SecurityOpenMaterialAuditV30Request) *ApiOpenApiV30SecurityOpenMaterialAuditPostRequest {
+func (r *ApiOpenApiV30SecurityOpenMaterialAuditPostRequest) SecurityOpenMaterialAuditV30Request(securityOpenMaterialAuditV30Request models.SecurityOpenMaterialAuditV30Request) *ApiOpenApiV30SecurityOpenMaterialAuditPostRequest {
 	r.securityOpenMaterialAuditV30Request = &securityOpenMaterialAuditV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30SecurityOpenMaterialAuditPostRequest) Execute() (*SecurityOpenMaterialAuditV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SecurityOpenMaterialAuditPostRequest) Execute() (*models.SecurityOpenMaterialAuditV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *SecurityOpenMaterialAuditV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return SecurityOpenMaterialAuditV30Response
-func (a *SecurityOpenMaterialAuditV30ApiService) postExecute(r *ApiOpenApiV30SecurityOpenMaterialAuditPostRequest) (*SecurityOpenMaterialAuditV30Response, *http.Response, error) {
+func (a *SecurityOpenMaterialAuditV30ApiService) postExecute(r *ApiOpenApiV30SecurityOpenMaterialAuditPostRequest) (*models.SecurityOpenMaterialAuditV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SecurityOpenMaterialAuditV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SecurityOpenMaterialAuditV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *SecurityOpenMaterialAuditV30ApiService) postExecute(r *ApiOpenApiV30Sec
 	localVarPath := localBasePath + "/open_api/v3.0/security/open_material_audit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

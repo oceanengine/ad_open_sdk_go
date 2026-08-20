@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsSiteGetV2ApiService ToolsSiteGetV2Api service
@@ -29,9 +30,9 @@ type ApiOpenApi2ToolsSiteGetGetRequest struct {
 	xOrangeCaller *string
 	page          *int64
 	pageSize      *int64
-	status        *ToolsSiteGetV2Status
-	shareType     *ToolsSiteGetV2ShareType
-	filtering     *ToolsSiteGetV2Filtering
+	status        *models.ToolsSiteGetV2Status
+	shareType     *models.ToolsSiteGetV2ShareType
+	filtering     *models.ToolsSiteGetV2Filtering
 }
 
 // 广告主id，范围：1 &lt;&#x3D; advertiser_id &lt;&#x3D; MAX_INT64
@@ -58,23 +59,23 @@ func (r *ApiOpenApi2ToolsSiteGetGetRequest) PageSize(pageSize int64) *ApiOpenApi
 }
 
 // 建站粗粒度状态，详见【附录-枚举值-建站粗粒度状态】
-func (r *ApiOpenApi2ToolsSiteGetGetRequest) Status(status ToolsSiteGetV2Status) *ApiOpenApi2ToolsSiteGetGetRequest {
+func (r *ApiOpenApi2ToolsSiteGetGetRequest) Status(status models.ToolsSiteGetV2Status) *ApiOpenApi2ToolsSiteGetGetRequest {
 	r.status = &status
 	return r
 }
 
-func (r *ApiOpenApi2ToolsSiteGetGetRequest) ShareType(shareType ToolsSiteGetV2ShareType) *ApiOpenApi2ToolsSiteGetGetRequest {
+func (r *ApiOpenApi2ToolsSiteGetGetRequest) ShareType(shareType models.ToolsSiteGetV2ShareType) *ApiOpenApi2ToolsSiteGetGetRequest {
 	r.shareType = &shareType
 	return r
 }
 
 // 过滤条件
-func (r *ApiOpenApi2ToolsSiteGetGetRequest) Filtering(filtering ToolsSiteGetV2Filtering) *ApiOpenApi2ToolsSiteGetGetRequest {
+func (r *ApiOpenApi2ToolsSiteGetGetRequest) Filtering(filtering models.ToolsSiteGetV2Filtering) *ApiOpenApi2ToolsSiteGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ToolsSiteGetGetRequest) Execute() (*ToolsSiteGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsSiteGetGetRequest) Execute() (*models.ToolsSiteGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *ToolsSiteGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2ToolsSit
 // Execute executes the request
 //
 //	@return ToolsSiteGetV2Response
-func (a *ToolsSiteGetV2ApiService) getExecute(r *ApiOpenApi2ToolsSiteGetGetRequest) (*ToolsSiteGetV2Response, *http.Response, error) {
+func (a *ToolsSiteGetV2ApiService) getExecute(r *ApiOpenApi2ToolsSiteGetGetRequest) (*models.ToolsSiteGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsSiteGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsSiteGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *ToolsSiteGetV2ApiService) getExecute(r *ApiOpenApi2ToolsSiteGetGetReque
 	localVarPath := localBasePath + "/open_api/2/tools/site/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

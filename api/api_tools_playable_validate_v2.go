@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPlayableValidateV2ApiService ToolsPlayableValidateV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2ToolsPlayableValidateGetRequest) PlayableId(playableId int64
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPlayableValidateGetRequest) Execute() (*ToolsPlayableValidateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPlayableValidateGetRequest) Execute() (*models.ToolsPlayableValidateV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ToolsPlayableValidateV2ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsPlayableValidateV2Response
-func (a *ToolsPlayableValidateV2ApiService) getExecute(r *ApiOpenApi2ToolsPlayableValidateGetRequest) (*ToolsPlayableValidateV2Response, *http.Response, error) {
+func (a *ToolsPlayableValidateV2ApiService) getExecute(r *ApiOpenApi2ToolsPlayableValidateGetRequest) (*models.ToolsPlayableValidateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPlayableValidateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPlayableValidateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ToolsPlayableValidateV2ApiService) getExecute(r *ApiOpenApi2ToolsPlayab
 	localVarPath := localBasePath + "/open_api/2/tools/playable/validate/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // IosAppListV30ApiService IosAppListV30Api service
@@ -29,13 +30,13 @@ type ApiOpenApiV30IosAppListGetRequest struct {
 	page                   *int64
 	size                   *int64
 	searchKey              *string
-	status                 *IosAppListV30Status
-	searchType             *IosAppListV30SearchType
-	accountAssetQueryScope *IosAppListV30AccountAssetQueryScope
-	accountType            *IosAppListV30AccountType
-	hierarchy              *IosAppListV30Hierarchy
-	publishTime            *IosAppListV30PublishTime
-	assetGeneration        *IosAppListV30AssetGeneration
+	status                 *models.IosAppListV30Status
+	searchType             *models.IosAppListV30SearchType
+	accountAssetQueryScope *models.IosAppListV30AccountAssetQueryScope
+	accountType            *models.IosAppListV30AccountType
+	hierarchy              *models.IosAppListV30Hierarchy
+	publishTime            *models.IosAppListV30PublishTime
+	assetGeneration        *models.IosAppListV30AssetGeneration
 }
 
 func (r *ApiOpenApiV30IosAppListGetRequest) AccountId(accountId int64) *ApiOpenApiV30IosAppListGetRequest {
@@ -58,48 +59,48 @@ func (r *ApiOpenApiV30IosAppListGetRequest) SearchKey(searchKey string) *ApiOpen
 	return r
 }
 
-func (r *ApiOpenApiV30IosAppListGetRequest) Status(status IosAppListV30Status) *ApiOpenApiV30IosAppListGetRequest {
+func (r *ApiOpenApiV30IosAppListGetRequest) Status(status models.IosAppListV30Status) *ApiOpenApiV30IosAppListGetRequest {
 	r.status = &status
 	return r
 }
 
 // 查询类型，针对basicIos 有效
-func (r *ApiOpenApiV30IosAppListGetRequest) SearchType(searchType IosAppListV30SearchType) *ApiOpenApiV30IosAppListGetRequest {
+func (r *ApiOpenApiV30IosAppListGetRequest) SearchType(searchType models.IosAppListV30SearchType) *ApiOpenApiV30IosAppListGetRequest {
 	r.searchType = &searchType
 	return r
 }
 
 // 账户资产查询范围
-func (r *ApiOpenApiV30IosAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope IosAppListV30AccountAssetQueryScope) *ApiOpenApiV30IosAppListGetRequest {
+func (r *ApiOpenApiV30IosAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope models.IosAppListV30AccountAssetQueryScope) *ApiOpenApiV30IosAppListGetRequest {
 	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
 // 操作类型 EBP/AD
-func (r *ApiOpenApiV30IosAppListGetRequest) AccountType(accountType IosAppListV30AccountType) *ApiOpenApiV30IosAppListGetRequest {
+func (r *ApiOpenApiV30IosAppListGetRequest) AccountType(accountType models.IosAppListV30AccountType) *ApiOpenApiV30IosAppListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
 // EBP 查询层级，默认直联
-func (r *ApiOpenApiV30IosAppListGetRequest) Hierarchy(hierarchy IosAppListV30Hierarchy) *ApiOpenApiV30IosAppListGetRequest {
+func (r *ApiOpenApiV30IosAppListGetRequest) Hierarchy(hierarchy models.IosAppListV30Hierarchy) *ApiOpenApiV30IosAppListGetRequest {
 	r.hierarchy = &hierarchy
 	return r
 }
 
 // 发布时间
-func (r *ApiOpenApiV30IosAppListGetRequest) PublishTime(publishTime IosAppListV30PublishTime) *ApiOpenApiV30IosAppListGetRequest {
+func (r *ApiOpenApiV30IosAppListGetRequest) PublishTime(publishTime models.IosAppListV30PublishTime) *ApiOpenApiV30IosAppListGetRequest {
 	r.publishTime = &publishTime
 	return r
 }
 
 // 资产版本类型
-func (r *ApiOpenApiV30IosAppListGetRequest) AssetGeneration(assetGeneration IosAppListV30AssetGeneration) *ApiOpenApiV30IosAppListGetRequest {
+func (r *ApiOpenApiV30IosAppListGetRequest) AssetGeneration(assetGeneration models.IosAppListV30AssetGeneration) *ApiOpenApiV30IosAppListGetRequest {
 	r.assetGeneration = &assetGeneration
 	return r
 }
 
-func (r *ApiOpenApiV30IosAppListGetRequest) Execute() (*IosAppListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30IosAppListGetRequest) Execute() (*models.IosAppListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -133,12 +134,12 @@ func (a *IosAppListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30IosAppL
 // Execute executes the request
 //
 //	@return IosAppListV30Response
-func (a *IosAppListV30ApiService) getExecute(r *ApiOpenApiV30IosAppListGetRequest) (*IosAppListV30Response, *http.Response, error) {
+func (a *IosAppListV30ApiService) getExecute(r *ApiOpenApiV30IosAppListGetRequest) (*models.IosAppListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *IosAppListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.IosAppListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -148,7 +149,7 @@ func (a *IosAppListV30ApiService) getExecute(r *ApiOpenApiV30IosAppListGetReques
 	localVarPath := localBasePath + "/open_api/v3.0/ios_app/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

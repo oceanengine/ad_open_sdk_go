@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandAdGetV30ApiService BrandAdGetV30Api service
@@ -31,9 +32,9 @@ type ApiOpenApiV30BrandAdGetGetRequest struct {
 	adIds           *[]string
 	adNames         *[]string
 	campaignIds     *[]string
-	appOrigin       *BrandAdGetV30AppOrigin
-	adForm          *BrandAdGetV30AdForm
-	adStatus        *BrandAdGetV30AdStatus
+	appOrigin       *models.BrandAdGetV30AppOrigin
+	adForm          *models.BrandAdGetV30AdForm
+	adStatus        *models.BrandAdGetV30AdStatus
 	createStartTime *string
 	createEndTime   *string
 	startTime       *string
@@ -77,19 +78,19 @@ func (r *ApiOpenApiV30BrandAdGetGetRequest) CampaignIds(campaignIds []string) *A
 }
 
 // 媒体端
-func (r *ApiOpenApiV30BrandAdGetGetRequest) AppOrigin(appOrigin BrandAdGetV30AppOrigin) *ApiOpenApiV30BrandAdGetGetRequest {
+func (r *ApiOpenApiV30BrandAdGetGetRequest) AppOrigin(appOrigin models.BrandAdGetV30AppOrigin) *ApiOpenApiV30BrandAdGetGetRequest {
 	r.appOrigin = &appOrigin
 	return r
 }
 
 // 版位
-func (r *ApiOpenApiV30BrandAdGetGetRequest) AdForm(adForm BrandAdGetV30AdForm) *ApiOpenApiV30BrandAdGetGetRequest {
+func (r *ApiOpenApiV30BrandAdGetGetRequest) AdForm(adForm models.BrandAdGetV30AdForm) *ApiOpenApiV30BrandAdGetGetRequest {
 	r.adForm = &adForm
 	return r
 }
 
 // 广告计划状态
-func (r *ApiOpenApiV30BrandAdGetGetRequest) AdStatus(adStatus BrandAdGetV30AdStatus) *ApiOpenApiV30BrandAdGetGetRequest {
+func (r *ApiOpenApiV30BrandAdGetGetRequest) AdStatus(adStatus models.BrandAdGetV30AdStatus) *ApiOpenApiV30BrandAdGetGetRequest {
 	r.adStatus = &adStatus
 	return r
 }
@@ -118,7 +119,7 @@ func (r *ApiOpenApiV30BrandAdGetGetRequest) EndTime(endTime string) *ApiOpenApiV
 	return r
 }
 
-func (r *ApiOpenApiV30BrandAdGetGetRequest) Execute() (*BrandAdGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandAdGetGetRequest) Execute() (*models.BrandAdGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -152,12 +153,12 @@ func (a *BrandAdGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30BrandAd
 // Execute executes the request
 //
 //	@return BrandAdGetV30Response
-func (a *BrandAdGetV30ApiService) getExecute(r *ApiOpenApiV30BrandAdGetGetRequest) (*BrandAdGetV30Response, *http.Response, error) {
+func (a *BrandAdGetV30ApiService) getExecute(r *ApiOpenApiV30BrandAdGetGetRequest) (*models.BrandAdGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandAdGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandAdGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -167,7 +168,7 @@ func (a *BrandAdGetV30ApiService) getExecute(r *ApiOpenApiV30BrandAdGetGetReques
 	localVarPath := localBasePath + "/open_api/v3.0/brand/ad/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

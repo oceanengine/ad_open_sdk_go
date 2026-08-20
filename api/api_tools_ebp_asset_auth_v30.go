@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpAssetAuthV30ApiService ToolsEbpAssetAuthV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpAssetAuthV30ApiService service
 type ApiOpenApiV30ToolsEbpAssetAuthPostRequest struct {
 	ctx                         context.Context
 	ApiService                  *ToolsEbpAssetAuthV30ApiService
-	toolsEbpAssetAuthV30Request *ToolsEbpAssetAuthV30Request
+	toolsEbpAssetAuthV30Request *models.ToolsEbpAssetAuthV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpAssetAuthPostRequest) ToolsEbpAssetAuthV30Request(toolsEbpAssetAuthV30Request ToolsEbpAssetAuthV30Request) *ApiOpenApiV30ToolsEbpAssetAuthPostRequest {
+func (r *ApiOpenApiV30ToolsEbpAssetAuthPostRequest) ToolsEbpAssetAuthV30Request(toolsEbpAssetAuthV30Request models.ToolsEbpAssetAuthV30Request) *ApiOpenApiV30ToolsEbpAssetAuthPostRequest {
 	r.toolsEbpAssetAuthV30Request = &toolsEbpAssetAuthV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAssetAuthPostRequest) Execute() (*ToolsEbpAssetAuthV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpAssetAuthPostRequest) Execute() (*models.ToolsEbpAssetAuthV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpAssetAuthV30ApiService) Post(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return ToolsEbpAssetAuthV30Response
-func (a *ToolsEbpAssetAuthV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpAssetAuthPostRequest) (*ToolsEbpAssetAuthV30Response, *http.Response, error) {
+func (a *ToolsEbpAssetAuthV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpAssetAuthPostRequest) (*models.ToolsEbpAssetAuthV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpAssetAuthV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpAssetAuthV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpAssetAuthV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpAss
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/asset/auth/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

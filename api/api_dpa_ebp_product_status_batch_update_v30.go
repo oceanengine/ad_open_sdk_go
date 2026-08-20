@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaEbpProductStatusBatchUpdateV30ApiService DpaEbpProductStatusBatchUpdateV30Api service
@@ -25,15 +26,15 @@ type DpaEbpProductStatusBatchUpdateV30ApiService service
 type ApiOpenApiV30DpaEbpProductStatusBatchUpdatePostRequest struct {
 	ctx                                      context.Context
 	ApiService                               *DpaEbpProductStatusBatchUpdateV30ApiService
-	dpaEbpProductStatusBatchUpdateV30Request *DpaEbpProductStatusBatchUpdateV30Request
+	dpaEbpProductStatusBatchUpdateV30Request *models.DpaEbpProductStatusBatchUpdateV30Request
 }
 
-func (r *ApiOpenApiV30DpaEbpProductStatusBatchUpdatePostRequest) DpaEbpProductStatusBatchUpdateV30Request(dpaEbpProductStatusBatchUpdateV30Request DpaEbpProductStatusBatchUpdateV30Request) *ApiOpenApiV30DpaEbpProductStatusBatchUpdatePostRequest {
+func (r *ApiOpenApiV30DpaEbpProductStatusBatchUpdatePostRequest) DpaEbpProductStatusBatchUpdateV30Request(dpaEbpProductStatusBatchUpdateV30Request models.DpaEbpProductStatusBatchUpdateV30Request) *ApiOpenApiV30DpaEbpProductStatusBatchUpdatePostRequest {
 	r.dpaEbpProductStatusBatchUpdateV30Request = &dpaEbpProductStatusBatchUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpProductStatusBatchUpdatePostRequest) Execute() (*DpaEbpProductStatusBatchUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaEbpProductStatusBatchUpdatePostRequest) Execute() (*models.DpaEbpProductStatusBatchUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DpaEbpProductStatusBatchUpdateV30ApiService) Post(ctx context.Context) 
 // Execute executes the request
 //
 //	@return DpaEbpProductStatusBatchUpdateV30Response
-func (a *DpaEbpProductStatusBatchUpdateV30ApiService) postExecute(r *ApiOpenApiV30DpaEbpProductStatusBatchUpdatePostRequest) (*DpaEbpProductStatusBatchUpdateV30Response, *http.Response, error) {
+func (a *DpaEbpProductStatusBatchUpdateV30ApiService) postExecute(r *ApiOpenApiV30DpaEbpProductStatusBatchUpdatePostRequest) (*models.DpaEbpProductStatusBatchUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaEbpProductStatusBatchUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaEbpProductStatusBatchUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DpaEbpProductStatusBatchUpdateV30ApiService) postExecute(r *ApiOpenApiV
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/ebp/product_status/batch_update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

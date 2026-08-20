@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsCommentGetV30ApiService ToolsCommentGetV30Api service
@@ -28,9 +29,9 @@ type ApiOpenApiV30ToolsCommentGetGetRequest struct {
 	advertiserId *int64
 	startTime    *string
 	endTime      *string
-	orderField   *ToolsCommentGetV30OrderField
-	orderType    *ToolsCommentGetV30OrderType
-	filtering    *ToolsCommentGetV30Filtering
+	orderField   *models.ToolsCommentGetV30OrderField
+	orderType    *models.ToolsCommentGetV30OrderType
+	filtering    *models.ToolsCommentGetV30Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -54,19 +55,19 @@ func (r *ApiOpenApiV30ToolsCommentGetGetRequest) EndTime(endTime string) *ApiOpe
 }
 
 // 排序字段 允许值： REPLY_COUNT 按评论回复数量排序 LIKE_COUNT   按点赞数量排序 CREATE_TIME 按评论时间排序（默认值）
-func (r *ApiOpenApiV30ToolsCommentGetGetRequest) OrderField(orderField ToolsCommentGetV30OrderField) *ApiOpenApiV30ToolsCommentGetGetRequest {
+func (r *ApiOpenApiV30ToolsCommentGetGetRequest) OrderField(orderField models.ToolsCommentGetV30OrderField) *ApiOpenApiV30ToolsCommentGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
 
 // 排序类型 允许值： ASC 升序 DESC 降序（默认值）
-func (r *ApiOpenApiV30ToolsCommentGetGetRequest) OrderType(orderType ToolsCommentGetV30OrderType) *ApiOpenApiV30ToolsCommentGetGetRequest {
+func (r *ApiOpenApiV30ToolsCommentGetGetRequest) OrderType(orderType models.ToolsCommentGetV30OrderType) *ApiOpenApiV30ToolsCommentGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
 
 // 过滤条件，若此字段不传，或传空则视为无限制条件
-func (r *ApiOpenApiV30ToolsCommentGetGetRequest) Filtering(filtering ToolsCommentGetV30Filtering) *ApiOpenApiV30ToolsCommentGetGetRequest {
+func (r *ApiOpenApiV30ToolsCommentGetGetRequest) Filtering(filtering models.ToolsCommentGetV30Filtering) *ApiOpenApiV30ToolsCommentGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -83,7 +84,7 @@ func (r *ApiOpenApiV30ToolsCommentGetGetRequest) PageSize(pageSize int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsCommentGetGetRequest) Execute() (*ToolsCommentGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsCommentGetGetRequest) Execute() (*models.ToolsCommentGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -117,12 +118,12 @@ func (a *ToolsCommentGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30To
 // Execute executes the request
 //
 //	@return ToolsCommentGetV30Response
-func (a *ToolsCommentGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsCommentGetGetRequest) (*ToolsCommentGetV30Response, *http.Response, error) {
+func (a *ToolsCommentGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsCommentGetGetRequest) (*models.ToolsCommentGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsCommentGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsCommentGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -132,7 +133,7 @@ func (a *ToolsCommentGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsCommentGe
 	localVarPath := localBasePath + "/open_api/v3.0/tools/comment/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

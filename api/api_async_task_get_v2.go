@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AsyncTaskGetV2ApiService AsyncTaskGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2AsyncTaskGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *AsyncTaskGetV2ApiService
 	advertiserId *int64
-	filtering    *AsyncTaskGetV2Filtering
+	filtering    *models.AsyncTaskGetV2Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApi2AsyncTaskGetGetRequest) AdvertiserId(advertiserId int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2AsyncTaskGetGetRequest) Filtering(filtering AsyncTaskGetV2Filtering) *ApiOpenApi2AsyncTaskGetGetRequest {
+func (r *ApiOpenApi2AsyncTaskGetGetRequest) Filtering(filtering models.AsyncTaskGetV2Filtering) *ApiOpenApi2AsyncTaskGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2AsyncTaskGetGetRequest) PageSize(pageSize int64) *ApiOpenApi
 	return r
 }
 
-func (r *ApiOpenApi2AsyncTaskGetGetRequest) Execute() (*AsyncTaskGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AsyncTaskGetGetRequest) Execute() (*models.AsyncTaskGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *AsyncTaskGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2AsyncTas
 // Execute executes the request
 //
 //	@return AsyncTaskGetV2Response
-func (a *AsyncTaskGetV2ApiService) getExecute(r *ApiOpenApi2AsyncTaskGetGetRequest) (*AsyncTaskGetV2Response, *http.Response, error) {
+func (a *AsyncTaskGetV2ApiService) getExecute(r *ApiOpenApi2AsyncTaskGetGetRequest) (*models.AsyncTaskGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AsyncTaskGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AsyncTaskGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *AsyncTaskGetV2ApiService) getExecute(r *ApiOpenApi2AsyncTaskGetGetReque
 	localVarPath := localBasePath + "/open_api/2/async_task/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

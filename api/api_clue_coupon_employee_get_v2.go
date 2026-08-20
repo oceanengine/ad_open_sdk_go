@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueCouponEmployeeGetV2ApiService ClueCouponEmployeeGetV2Api service
@@ -45,7 +46,7 @@ func (r *ApiOpenApi2ClueCouponEmployeeGetGetRequest) PageSize(pageSize int64) *A
 	return r
 }
 
-func (r *ApiOpenApi2ClueCouponEmployeeGetGetRequest) Execute() (*ClueCouponEmployeeGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueCouponEmployeeGetGetRequest) Execute() (*models.ClueCouponEmployeeGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *ClueCouponEmployeeGetV2ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ClueCouponEmployeeGetV2Response
-func (a *ClueCouponEmployeeGetV2ApiService) getExecute(r *ApiOpenApi2ClueCouponEmployeeGetGetRequest) (*ClueCouponEmployeeGetV2Response, *http.Response, error) {
+func (a *ClueCouponEmployeeGetV2ApiService) getExecute(r *ApiOpenApi2ClueCouponEmployeeGetGetRequest) (*models.ClueCouponEmployeeGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueCouponEmployeeGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueCouponEmployeeGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *ClueCouponEmployeeGetV2ApiService) getExecute(r *ApiOpenApi2ClueCouponE
 	localVarPath := localBasePath + "/open_api/2/clue/coupon/employee/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

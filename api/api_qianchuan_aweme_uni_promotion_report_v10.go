@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeUniPromotionReportV10ApiService QianchuanAwemeUniPromotionReportV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest struct {
 	ctx           context.Context
 	ApiService    *QianchuanAwemeUniPromotionReportV10ApiService
 	advertiserId  *int64
-	marketingGoal *QianchuanAwemeUniPromotionReportV10MarketingGoal
+	marketingGoal *models.QianchuanAwemeUniPromotionReportV10MarketingGoal
 	startDate     *string
 	endDate       *string
 	fields        *[]string
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest) AdvertiserId(a
 }
 
 // 按营销目标过滤, VIDEO_PROM_GOODS：商品全域
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest) MarketingGoal(marketingGoal QianchuanAwemeUniPromotionReportV10MarketingGoal) *ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest) MarketingGoal(marketingGoal models.QianchuanAwemeUniPromotionReportV10MarketingGoal) *ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
@@ -59,7 +60,7 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest) Fields(fields 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest) Execute() (*QianchuanAwemeUniPromotionReportV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest) Execute() (*models.QianchuanAwemeUniPromotionReportV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -93,12 +94,12 @@ func (a *QianchuanAwemeUniPromotionReportV10ApiService) Get(ctx context.Context)
 // Execute executes the request
 //
 //	@return QianchuanAwemeUniPromotionReportV10Response
-func (a *QianchuanAwemeUniPromotionReportV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest) (*QianchuanAwemeUniPromotionReportV10Response, *http.Response, error) {
+func (a *QianchuanAwemeUniPromotionReportV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeUniPromotionReportGetRequest) (*models.QianchuanAwemeUniPromotionReportV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeUniPromotionReportV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeUniPromotionReportV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -108,7 +109,7 @@ func (a *QianchuanAwemeUniPromotionReportV10ApiService) getExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/uni_promotion/report/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

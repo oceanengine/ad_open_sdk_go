@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueWebrtcTokenGetV2V30ApiService ToolsClueWebrtcTokenGetV2V30Api service
@@ -25,15 +26,15 @@ type ToolsClueWebrtcTokenGetV2V30ApiService service
 type ApiOpenApiV30ToolsClueWebrtcTokenGetV2PostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *ToolsClueWebrtcTokenGetV2V30ApiService
-	toolsClueWebrtcTokenGetV2V30Request *ToolsClueWebrtcTokenGetV2V30Request
+	toolsClueWebrtcTokenGetV2V30Request *models.ToolsClueWebrtcTokenGetV2V30Request
 }
 
-func (r *ApiOpenApiV30ToolsClueWebrtcTokenGetV2PostRequest) ToolsClueWebrtcTokenGetV2V30Request(toolsClueWebrtcTokenGetV2V30Request ToolsClueWebrtcTokenGetV2V30Request) *ApiOpenApiV30ToolsClueWebrtcTokenGetV2PostRequest {
+func (r *ApiOpenApiV30ToolsClueWebrtcTokenGetV2PostRequest) ToolsClueWebrtcTokenGetV2V30Request(toolsClueWebrtcTokenGetV2V30Request models.ToolsClueWebrtcTokenGetV2V30Request) *ApiOpenApiV30ToolsClueWebrtcTokenGetV2PostRequest {
 	r.toolsClueWebrtcTokenGetV2V30Request = &toolsClueWebrtcTokenGetV2V30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsClueWebrtcTokenGetV2PostRequest) Execute() (*ToolsClueWebrtcTokenGetV2V30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsClueWebrtcTokenGetV2PostRequest) Execute() (*models.ToolsClueWebrtcTokenGetV2V30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsClueWebrtcTokenGetV2V30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return ToolsClueWebrtcTokenGetV2V30Response
-func (a *ToolsClueWebrtcTokenGetV2V30ApiService) postExecute(r *ApiOpenApiV30ToolsClueWebrtcTokenGetV2PostRequest) (*ToolsClueWebrtcTokenGetV2V30Response, *http.Response, error) {
+func (a *ToolsClueWebrtcTokenGetV2V30ApiService) postExecute(r *ApiOpenApiV30ToolsClueWebrtcTokenGetV2PostRequest) (*models.ToolsClueWebrtcTokenGetV2V30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueWebrtcTokenGetV2V30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueWebrtcTokenGetV2V30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsClueWebrtcTokenGetV2V30ApiService) postExecute(r *ApiOpenApiV30Too
 	localVarPath := localBasePath + "/open_api/v3.0/tools/clue/webrtc/token/get/v2/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

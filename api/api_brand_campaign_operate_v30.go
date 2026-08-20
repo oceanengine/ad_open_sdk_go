@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandCampaignOperateV30ApiService BrandCampaignOperateV30Api service
@@ -25,15 +26,15 @@ type BrandCampaignOperateV30ApiService service
 type ApiOpenApiV30BrandCampaignOperatePostRequest struct {
 	ctx                            context.Context
 	ApiService                     *BrandCampaignOperateV30ApiService
-	brandCampaignOperateV30Request *BrandCampaignOperateV30Request
+	brandCampaignOperateV30Request *models.BrandCampaignOperateV30Request
 }
 
-func (r *ApiOpenApiV30BrandCampaignOperatePostRequest) BrandCampaignOperateV30Request(brandCampaignOperateV30Request BrandCampaignOperateV30Request) *ApiOpenApiV30BrandCampaignOperatePostRequest {
+func (r *ApiOpenApiV30BrandCampaignOperatePostRequest) BrandCampaignOperateV30Request(brandCampaignOperateV30Request models.BrandCampaignOperateV30Request) *ApiOpenApiV30BrandCampaignOperatePostRequest {
 	r.brandCampaignOperateV30Request = &brandCampaignOperateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30BrandCampaignOperatePostRequest) Execute() (*BrandCampaignOperateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandCampaignOperatePostRequest) Execute() (*models.BrandCampaignOperateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *BrandCampaignOperateV30ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return BrandCampaignOperateV30Response
-func (a *BrandCampaignOperateV30ApiService) postExecute(r *ApiOpenApiV30BrandCampaignOperatePostRequest) (*BrandCampaignOperateV30Response, *http.Response, error) {
+func (a *BrandCampaignOperateV30ApiService) postExecute(r *ApiOpenApiV30BrandCampaignOperatePostRequest) (*models.BrandCampaignOperateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandCampaignOperateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandCampaignOperateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *BrandCampaignOperateV30ApiService) postExecute(r *ApiOpenApiV30BrandCam
 	localVarPath := localBasePath + "/open_api/v3.0/brand/campaign/operate/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

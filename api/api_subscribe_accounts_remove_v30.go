@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SubscribeAccountsRemoveV30ApiService SubscribeAccountsRemoveV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30SubscribeAccountsRemovePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *SubscribeAccountsRemoveV30ApiService
 	aPPAccessToken                    *string
-	subscribeAccountsRemoveV30Request *SubscribeAccountsRemoveV30Request
+	subscribeAccountsRemoveV30Request *models.SubscribeAccountsRemoveV30Request
 }
 
 func (r *ApiOpenApiV30SubscribeAccountsRemovePostRequest) APPAccessToken(aPPAccessToken string) *ApiOpenApiV30SubscribeAccountsRemovePostRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApiV30SubscribeAccountsRemovePostRequest) APPAccessToken(aPPAcce
 	return r
 }
 
-func (r *ApiOpenApiV30SubscribeAccountsRemovePostRequest) SubscribeAccountsRemoveV30Request(subscribeAccountsRemoveV30Request SubscribeAccountsRemoveV30Request) *ApiOpenApiV30SubscribeAccountsRemovePostRequest {
+func (r *ApiOpenApiV30SubscribeAccountsRemovePostRequest) SubscribeAccountsRemoveV30Request(subscribeAccountsRemoveV30Request models.SubscribeAccountsRemoveV30Request) *ApiOpenApiV30SubscribeAccountsRemovePostRequest {
 	r.subscribeAccountsRemoveV30Request = &subscribeAccountsRemoveV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30SubscribeAccountsRemovePostRequest) Execute() (*SubscribeAccountsRemoveV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SubscribeAccountsRemovePostRequest) Execute() (*models.SubscribeAccountsRemoveV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *SubscribeAccountsRemoveV30ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return SubscribeAccountsRemoveV30Response
-func (a *SubscribeAccountsRemoveV30ApiService) postExecute(r *ApiOpenApiV30SubscribeAccountsRemovePostRequest) (*SubscribeAccountsRemoveV30Response, *http.Response, error) {
+func (a *SubscribeAccountsRemoveV30ApiService) postExecute(r *ApiOpenApiV30SubscribeAccountsRemovePostRequest) (*models.SubscribeAccountsRemoveV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SubscribeAccountsRemoveV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SubscribeAccountsRemoveV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *SubscribeAccountsRemoveV30ApiService) postExecute(r *ApiOpenApiV30Subsc
 	localVarPath := localBasePath + "/open_api/v3.0/subscribe/accounts/remove/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.aPPAccessToken == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpWechatGameUpdateV30ApiService ToolsEbpWechatGameUpdateV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpWechatGameUpdateV30ApiService service
 type ApiOpenApiV30ToolsEbpWechatGameUpdatePostRequest struct {
 	ctx                                context.Context
 	ApiService                         *ToolsEbpWechatGameUpdateV30ApiService
-	toolsEbpWechatGameUpdateV30Request *ToolsEbpWechatGameUpdateV30Request
+	toolsEbpWechatGameUpdateV30Request *models.ToolsEbpWechatGameUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpWechatGameUpdatePostRequest) ToolsEbpWechatGameUpdateV30Request(toolsEbpWechatGameUpdateV30Request ToolsEbpWechatGameUpdateV30Request) *ApiOpenApiV30ToolsEbpWechatGameUpdatePostRequest {
+func (r *ApiOpenApiV30ToolsEbpWechatGameUpdatePostRequest) ToolsEbpWechatGameUpdateV30Request(toolsEbpWechatGameUpdateV30Request models.ToolsEbpWechatGameUpdateV30Request) *ApiOpenApiV30ToolsEbpWechatGameUpdatePostRequest {
 	r.toolsEbpWechatGameUpdateV30Request = &toolsEbpWechatGameUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpWechatGameUpdatePostRequest) Execute() (*ToolsEbpWechatGameUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpWechatGameUpdatePostRequest) Execute() (*models.ToolsEbpWechatGameUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpWechatGameUpdateV30ApiService) Post(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsEbpWechatGameUpdateV30Response
-func (a *ToolsEbpWechatGameUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpWechatGameUpdatePostRequest) (*ToolsEbpWechatGameUpdateV30Response, *http.Response, error) {
+func (a *ToolsEbpWechatGameUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpWechatGameUpdatePostRequest) (*models.ToolsEbpWechatGameUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpWechatGameUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpWechatGameUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpWechatGameUpdateV30ApiService) postExecute(r *ApiOpenApiV30Tool
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/wechat_game/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

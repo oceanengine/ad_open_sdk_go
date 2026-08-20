@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsIsSupportUniversalGetV2ApiService ToolsIsSupportUniversalGetV2Api service
@@ -26,10 +27,10 @@ type ApiOpenApi2ToolsIsSupportUniversalGetGetRequest struct {
 	ctx                context.Context
 	ApiService         *ToolsIsSupportUniversalGetV2ApiService
 	advertiserId       *int64
-	landingType        *ToolsIsSupportUniversalGetV2LandingType
-	externalAction     *ToolsIsSupportUniversalGetV2ExternalAction
-	deepExternalAction *ToolsIsSupportUniversalGetV2DeepExternalAction
-	deepBidType        *ToolsIsSupportUniversalGetV2DeepBidType
+	landingType        *models.ToolsIsSupportUniversalGetV2LandingType
+	externalAction     *models.ToolsIsSupportUniversalGetV2ExternalAction
+	deepExternalAction *models.ToolsIsSupportUniversalGetV2DeepExternalAction
+	deepBidType        *models.ToolsIsSupportUniversalGetV2DeepBidType
 }
 
 // 广告主id
@@ -39,30 +40,30 @@ func (r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) AdvertiserId(advertise
 }
 
 // 广告组推广目的, 详见【附录-推广目的类型】&lt;br&gt;允许值: &#x60;LINK&#x60;、&#x60;APP&#x60;、&#x60;QUICK_APP&#x60;、&#x60;DPA&#x60;、&#x60;GOODS&#x60;、&#x60;SHOP&#x60;、&#x60;AWEME&#x60;、&#x60;LIVE&#x60;
-func (r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) LandingType(landingType ToolsIsSupportUniversalGetV2LandingType) *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest {
+func (r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) LandingType(landingType models.ToolsIsSupportUniversalGetV2LandingType) *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest {
 	r.landingType = &landingType
 	return r
 }
 
 // 优化目标，可通过【获取优化目标】接口获取
-func (r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) ExternalAction(externalAction ToolsIsSupportUniversalGetV2ExternalAction) *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest {
+func (r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) ExternalAction(externalAction models.ToolsIsSupportUniversalGetV2ExternalAction) *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest {
 	r.externalAction = &externalAction
 	return r
 }
 
 // 深度转化目标，可通过【获取优化目标】接口获取
-func (r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) DeepExternalAction(deepExternalAction ToolsIsSupportUniversalGetV2DeepExternalAction) *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest {
+func (r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) DeepExternalAction(deepExternalAction models.ToolsIsSupportUniversalGetV2DeepExternalAction) *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest {
 	r.deepExternalAction = &deepExternalAction
 	return r
 }
 
 // 深度优化方式，允许值详见【附录-深度优化方式】，对于每次付费的转化，深度优化类型需要设置为BID_PER_ACTION（每次付费出价）
-func (r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) DeepBidType(deepBidType ToolsIsSupportUniversalGetV2DeepBidType) *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest {
+func (r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) DeepBidType(deepBidType models.ToolsIsSupportUniversalGetV2DeepBidType) *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest {
 	r.deepBidType = &deepBidType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) Execute() (*ToolsIsSupportUniversalGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) Execute() (*models.ToolsIsSupportUniversalGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *ToolsIsSupportUniversalGetV2ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsIsSupportUniversalGetV2Response
-func (a *ToolsIsSupportUniversalGetV2ApiService) getExecute(r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) (*ToolsIsSupportUniversalGetV2Response, *http.Response, error) {
+func (a *ToolsIsSupportUniversalGetV2ApiService) getExecute(r *ApiOpenApi2ToolsIsSupportUniversalGetGetRequest) (*models.ToolsIsSupportUniversalGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsIsSupportUniversalGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsIsSupportUniversalGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *ToolsIsSupportUniversalGetV2ApiService) getExecute(r *ApiOpenApi2ToolsI
 	localVarPath := localBasePath + "/open_api/2/tools/is_support_universal/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerAuthGetAuthStatusV2ApiService EventManagerAuthGetAuthStatusV2Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApi2EventManagerAuthGetAuthStatusGetRequest) AdvertiserId(advert
 	return r
 }
 
-func (r *ApiOpenApi2EventManagerAuthGetAuthStatusGetRequest) Execute() (*EventManagerAuthGetAuthStatusV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EventManagerAuthGetAuthStatusGetRequest) Execute() (*models.EventManagerAuthGetAuthStatusV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -65,12 +66,12 @@ func (a *EventManagerAuthGetAuthStatusV2ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return EventManagerAuthGetAuthStatusV2Response
-func (a *EventManagerAuthGetAuthStatusV2ApiService) getExecute(r *ApiOpenApi2EventManagerAuthGetAuthStatusGetRequest) (*EventManagerAuthGetAuthStatusV2Response, *http.Response, error) {
+func (a *EventManagerAuthGetAuthStatusV2ApiService) getExecute(r *ApiOpenApi2EventManagerAuthGetAuthStatusGetRequest) (*models.EventManagerAuthGetAuthStatusV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerAuthGetAuthStatusV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerAuthGetAuthStatusV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -80,7 +81,7 @@ func (a *EventManagerAuthGetAuthStatusV2ApiService) getExecute(r *ApiOpenApi2Eve
 	localVarPath := localBasePath + "/open_api/2/event_manager/auth/get_auth_status/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

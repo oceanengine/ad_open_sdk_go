@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemandGetResellCodeV2ApiService StarDemandGetResellCodeV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2StarDemandGetResellCodeGetRequest) TaskId(taskId int64) *Api
 	return r
 }
 
-func (r *ApiOpenApi2StarDemandGetResellCodeGetRequest) Execute() (*StarDemandGetResellCodeV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemandGetResellCodeGetRequest) Execute() (*models.StarDemandGetResellCodeV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *StarDemandGetResellCodeV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return StarDemandGetResellCodeV2Response
-func (a *StarDemandGetResellCodeV2ApiService) getExecute(r *ApiOpenApi2StarDemandGetResellCodeGetRequest) (*StarDemandGetResellCodeV2Response, *http.Response, error) {
+func (a *StarDemandGetResellCodeV2ApiService) getExecute(r *ApiOpenApi2StarDemandGetResellCodeGetRequest) (*models.StarDemandGetResellCodeV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemandGetResellCodeV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemandGetResellCodeV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *StarDemandGetResellCodeV2ApiService) getExecute(r *ApiOpenApi2StarDeman
 	localVarPath := localBasePath + "/open_api/2/star/demand/get_resell_code/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

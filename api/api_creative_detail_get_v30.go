@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CreativeDetailGetV30ApiService CreativeDetailGetV30Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30CreativeDetailGetGetRequest) AdId(adId int64) *ApiOpenApiV
 	return r
 }
 
-func (r *ApiOpenApiV30CreativeDetailGetGetRequest) Execute() (*CreativeDetailGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CreativeDetailGetGetRequest) Execute() (*models.CreativeDetailGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *CreativeDetailGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return CreativeDetailGetV30Response
-func (a *CreativeDetailGetV30ApiService) getExecute(r *ApiOpenApiV30CreativeDetailGetGetRequest) (*CreativeDetailGetV30Response, *http.Response, error) {
+func (a *CreativeDetailGetV30ApiService) getExecute(r *ApiOpenApiV30CreativeDetailGetGetRequest) (*models.CreativeDetailGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CreativeDetailGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CreativeDetailGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *CreativeDetailGetV30ApiService) getExecute(r *ApiOpenApiV30CreativeDeta
 	localVarPath := localBasePath + "/open_api/v3.0/creative/detail/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

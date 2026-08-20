@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementUpdateAuthorizationV2ApiService ToolsAppManagementUpdateAuthorizationV2Api service
@@ -25,15 +26,15 @@ type ToolsAppManagementUpdateAuthorizationV2ApiService service
 type ApiOpenApi2ToolsAppManagementUpdateAuthorizationPostRequest struct {
 	ctx                                            context.Context
 	ApiService                                     *ToolsAppManagementUpdateAuthorizationV2ApiService
-	toolsAppManagementUpdateAuthorizationV2Request *ToolsAppManagementUpdateAuthorizationV2Request
+	toolsAppManagementUpdateAuthorizationV2Request *models.ToolsAppManagementUpdateAuthorizationV2Request
 }
 
-func (r *ApiOpenApi2ToolsAppManagementUpdateAuthorizationPostRequest) ToolsAppManagementUpdateAuthorizationV2Request(toolsAppManagementUpdateAuthorizationV2Request ToolsAppManagementUpdateAuthorizationV2Request) *ApiOpenApi2ToolsAppManagementUpdateAuthorizationPostRequest {
+func (r *ApiOpenApi2ToolsAppManagementUpdateAuthorizationPostRequest) ToolsAppManagementUpdateAuthorizationV2Request(toolsAppManagementUpdateAuthorizationV2Request models.ToolsAppManagementUpdateAuthorizationV2Request) *ApiOpenApi2ToolsAppManagementUpdateAuthorizationPostRequest {
 	r.toolsAppManagementUpdateAuthorizationV2Request = &toolsAppManagementUpdateAuthorizationV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementUpdateAuthorizationPostRequest) Execute() (*ToolsAppManagementUpdateAuthorizationV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementUpdateAuthorizationPostRequest) Execute() (*models.ToolsAppManagementUpdateAuthorizationV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsAppManagementUpdateAuthorizationV2ApiService) Post(ctx context.Con
 // Execute executes the request
 //
 //	@return ToolsAppManagementUpdateAuthorizationV2Response
-func (a *ToolsAppManagementUpdateAuthorizationV2ApiService) postExecute(r *ApiOpenApi2ToolsAppManagementUpdateAuthorizationPostRequest) (*ToolsAppManagementUpdateAuthorizationV2Response, *http.Response, error) {
+func (a *ToolsAppManagementUpdateAuthorizationV2ApiService) postExecute(r *ApiOpenApi2ToolsAppManagementUpdateAuthorizationPostRequest) (*models.ToolsAppManagementUpdateAuthorizationV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementUpdateAuthorizationV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementUpdateAuthorizationV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsAppManagementUpdateAuthorizationV2ApiService) postExecute(r *ApiOp
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/update/authorization/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

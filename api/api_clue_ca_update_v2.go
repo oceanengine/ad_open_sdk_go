@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueCaUpdateV2ApiService ClueCaUpdateV2Api service
@@ -25,15 +26,15 @@ type ClueCaUpdateV2ApiService service
 type ApiOpenApi2ClueCaUpdatePostRequest struct {
 	ctx                   context.Context
 	ApiService            *ClueCaUpdateV2ApiService
-	clueCaUpdateV2Request *ClueCaUpdateV2Request
+	clueCaUpdateV2Request *models.ClueCaUpdateV2Request
 }
 
-func (r *ApiOpenApi2ClueCaUpdatePostRequest) ClueCaUpdateV2Request(clueCaUpdateV2Request ClueCaUpdateV2Request) *ApiOpenApi2ClueCaUpdatePostRequest {
+func (r *ApiOpenApi2ClueCaUpdatePostRequest) ClueCaUpdateV2Request(clueCaUpdateV2Request models.ClueCaUpdateV2Request) *ApiOpenApi2ClueCaUpdatePostRequest {
 	r.clueCaUpdateV2Request = &clueCaUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ClueCaUpdatePostRequest) Execute() (*ClueCaUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueCaUpdatePostRequest) Execute() (*models.ClueCaUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ClueCaUpdateV2ApiService) Post(ctx context.Context) *ApiOpenApi2ClueCaU
 // Execute executes the request
 //
 //	@return ClueCaUpdateV2Response
-func (a *ClueCaUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueCaUpdatePostRequest) (*ClueCaUpdateV2Response, *http.Response, error) {
+func (a *ClueCaUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueCaUpdatePostRequest) (*models.ClueCaUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueCaUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueCaUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ClueCaUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueCaUpdatePostReq
 	localVarPath := localBasePath + "/open_api/2/clue/ca/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaEbpDictGetV30ApiService DpaEbpDictGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30DpaEbpDictGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *DpaEbpDictGetV30ApiService
 	accountId   *int64
-	accountType *DpaEbpDictGetV30AccountType
+	accountType *models.DpaEbpDictGetV30AccountType
 	platformId  *int64
 }
 
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV30DpaEbpDictGetGetRequest) AccountId(accountId int64) *ApiOp
 }
 
 // 账户类型
-func (r *ApiOpenApiV30DpaEbpDictGetGetRequest) AccountType(accountType DpaEbpDictGetV30AccountType) *ApiOpenApiV30DpaEbpDictGetGetRequest {
+func (r *ApiOpenApiV30DpaEbpDictGetGetRequest) AccountType(accountType models.DpaEbpDictGetV30AccountType) *ApiOpenApiV30DpaEbpDictGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -48,7 +49,7 @@ func (r *ApiOpenApiV30DpaEbpDictGetGetRequest) PlatformId(platformId int64) *Api
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpDictGetGetRequest) Execute() (*DpaEbpDictGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaEbpDictGetGetRequest) Execute() (*models.DpaEbpDictGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *DpaEbpDictGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30DpaE
 // Execute executes the request
 //
 //	@return DpaEbpDictGetV30Response
-func (a *DpaEbpDictGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpDictGetGetRequest) (*DpaEbpDictGetV30Response, *http.Response, error) {
+func (a *DpaEbpDictGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpDictGetGetRequest) (*models.DpaEbpDictGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaEbpDictGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaEbpDictGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *DpaEbpDictGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpDictGetGet
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/ebp/dict/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPioneerProgramAttachmentUploadV2ApiService ToolsPioneerProgramAttachmentUploadV2Api service
@@ -26,12 +27,12 @@ type ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsPioneerProgramAttachmentUploadV2ApiService
 	appId        *int64
-	dataFileType *ToolsPioneerProgramAttachmentUploadV2DataFileType
-	fileData     *FormFileInfo
+	dataFileType *models.ToolsPioneerProgramAttachmentUploadV2DataFileType
+	fileData     *models.FormFileInfo
 	fileIndex    *int64
 	fileTotalNum *int64
 	pDate        *string
-	platform     *ToolsPioneerProgramAttachmentUploadV2Platform
+	platform     *models.ToolsPioneerProgramAttachmentUploadV2Platform
 	debugMode    *bool
 }
 
@@ -41,13 +42,13 @@ func (r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) AppId(appId 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) DataFileType(dataFileType ToolsPioneerProgramAttachmentUploadV2DataFileType) *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest {
+func (r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) DataFileType(dataFileType models.ToolsPioneerProgramAttachmentUploadV2DataFileType) *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest {
 	r.dataFileType = &dataFileType
 	return r
 }
 
 // 文件数据，binary格式
-func (r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) FileData(fileData *FormFileInfo) *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest {
+func (r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) FileData(fileData *models.FormFileInfo) *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest {
 	r.fileData = fileData
 	return r
 }
@@ -70,7 +71,7 @@ func (r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) PDate(pDate 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) Platform(platform ToolsPioneerProgramAttachmentUploadV2Platform) *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest {
+func (r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) Platform(platform models.ToolsPioneerProgramAttachmentUploadV2Platform) *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest {
 	r.platform = &platform
 	return r
 }
@@ -81,7 +82,7 @@ func (r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) DebugMode(de
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) Execute() (*ToolsPioneerProgramAttachmentUploadV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) Execute() (*models.ToolsPioneerProgramAttachmentUploadV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -115,12 +116,12 @@ func (a *ToolsPioneerProgramAttachmentUploadV2ApiService) Post(ctx context.Conte
 // Execute executes the request
 //
 //	@return ToolsPioneerProgramAttachmentUploadV2Response
-func (a *ToolsPioneerProgramAttachmentUploadV2ApiService) postExecute(r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) (*ToolsPioneerProgramAttachmentUploadV2Response, *http.Response, error) {
+func (a *ToolsPioneerProgramAttachmentUploadV2ApiService) postExecute(r *ApiOpenApi2ToolsPioneerProgramAttachmentUploadPostRequest) (*models.ToolsPioneerProgramAttachmentUploadV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPioneerProgramAttachmentUploadV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPioneerProgramAttachmentUploadV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -130,7 +131,7 @@ func (a *ToolsPioneerProgramAttachmentUploadV2ApiService) postExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/2/tools/pioneer_program/attachment/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.appId == nil {

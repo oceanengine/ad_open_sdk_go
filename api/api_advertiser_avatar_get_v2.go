@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserAvatarGetV2ApiService AdvertiserAvatarGetV2Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApi2AdvertiserAvatarGetGetRequest) AdvertiserId(advertiserId int
 	return r
 }
 
-func (r *ApiOpenApi2AdvertiserAvatarGetGetRequest) Execute() (*AdvertiserAvatarGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdvertiserAvatarGetGetRequest) Execute() (*models.AdvertiserAvatarGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AdvertiserAvatarGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2A
 // Execute executes the request
 //
 //	@return AdvertiserAvatarGetV2Response
-func (a *AdvertiserAvatarGetV2ApiService) getExecute(r *ApiOpenApi2AdvertiserAvatarGetGetRequest) (*AdvertiserAvatarGetV2Response, *http.Response, error) {
+func (a *AdvertiserAvatarGetV2ApiService) getExecute(r *ApiOpenApi2AdvertiserAvatarGetGetRequest) (*models.AdvertiserAvatarGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserAvatarGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserAvatarGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AdvertiserAvatarGetV2ApiService) getExecute(r *ApiOpenApi2AdvertiserAva
 	localVarPath := localBasePath + "/open_api/2/advertiser/avatar/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SubscribeAccountsAddV30ApiService SubscribeAccountsAddV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30SubscribeAccountsAddPostRequest struct {
 	ctx                            context.Context
 	ApiService                     *SubscribeAccountsAddV30ApiService
 	aPPAccessToken                 *string
-	subscribeAccountsAddV30Request *SubscribeAccountsAddV30Request
+	subscribeAccountsAddV30Request *models.SubscribeAccountsAddV30Request
 }
 
 func (r *ApiOpenApiV30SubscribeAccountsAddPostRequest) APPAccessToken(aPPAccessToken string) *ApiOpenApiV30SubscribeAccountsAddPostRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApiV30SubscribeAccountsAddPostRequest) APPAccessToken(aPPAccessT
 	return r
 }
 
-func (r *ApiOpenApiV30SubscribeAccountsAddPostRequest) SubscribeAccountsAddV30Request(subscribeAccountsAddV30Request SubscribeAccountsAddV30Request) *ApiOpenApiV30SubscribeAccountsAddPostRequest {
+func (r *ApiOpenApiV30SubscribeAccountsAddPostRequest) SubscribeAccountsAddV30Request(subscribeAccountsAddV30Request models.SubscribeAccountsAddV30Request) *ApiOpenApiV30SubscribeAccountsAddPostRequest {
 	r.subscribeAccountsAddV30Request = &subscribeAccountsAddV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30SubscribeAccountsAddPostRequest) Execute() (*SubscribeAccountsAddV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SubscribeAccountsAddPostRequest) Execute() (*models.SubscribeAccountsAddV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *SubscribeAccountsAddV30ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return SubscribeAccountsAddV30Response
-func (a *SubscribeAccountsAddV30ApiService) postExecute(r *ApiOpenApiV30SubscribeAccountsAddPostRequest) (*SubscribeAccountsAddV30Response, *http.Response, error) {
+func (a *SubscribeAccountsAddV30ApiService) postExecute(r *ApiOpenApiV30SubscribeAccountsAddPostRequest) (*models.SubscribeAccountsAddV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SubscribeAccountsAddV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SubscribeAccountsAddV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *SubscribeAccountsAddV30ApiService) postExecute(r *ApiOpenApiV30Subscrib
 	localVarPath := localBasePath + "/open_api/v3.0/subscribe/accounts/add/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.aPPAccessToken == nil {

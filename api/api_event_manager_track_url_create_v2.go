@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerTrackUrlCreateV2ApiService EventManagerTrackUrlCreateV2Api service
@@ -25,15 +26,15 @@ type EventManagerTrackUrlCreateV2ApiService service
 type ApiOpenApi2EventManagerTrackUrlCreatePostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *EventManagerTrackUrlCreateV2ApiService
-	eventManagerTrackUrlCreateV2Request *EventManagerTrackUrlCreateV2Request
+	eventManagerTrackUrlCreateV2Request *models.EventManagerTrackUrlCreateV2Request
 }
 
-func (r *ApiOpenApi2EventManagerTrackUrlCreatePostRequest) EventManagerTrackUrlCreateV2Request(eventManagerTrackUrlCreateV2Request EventManagerTrackUrlCreateV2Request) *ApiOpenApi2EventManagerTrackUrlCreatePostRequest {
+func (r *ApiOpenApi2EventManagerTrackUrlCreatePostRequest) EventManagerTrackUrlCreateV2Request(eventManagerTrackUrlCreateV2Request models.EventManagerTrackUrlCreateV2Request) *ApiOpenApi2EventManagerTrackUrlCreatePostRequest {
 	r.eventManagerTrackUrlCreateV2Request = &eventManagerTrackUrlCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2EventManagerTrackUrlCreatePostRequest) Execute() (*EventManagerTrackUrlCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EventManagerTrackUrlCreatePostRequest) Execute() (*models.EventManagerTrackUrlCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EventManagerTrackUrlCreateV2ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return EventManagerTrackUrlCreateV2Response
-func (a *EventManagerTrackUrlCreateV2ApiService) postExecute(r *ApiOpenApi2EventManagerTrackUrlCreatePostRequest) (*EventManagerTrackUrlCreateV2Response, *http.Response, error) {
+func (a *EventManagerTrackUrlCreateV2ApiService) postExecute(r *ApiOpenApi2EventManagerTrackUrlCreatePostRequest) (*models.EventManagerTrackUrlCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerTrackUrlCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerTrackUrlCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EventManagerTrackUrlCreateV2ApiService) postExecute(r *ApiOpenApi2Event
 	localVarPath := localBasePath + "/open_api/2/event_manager/track_url/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

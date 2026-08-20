@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsDiagnosisSuggestionGetV30ApiService ToolsDiagnosisSuggestionGetV30Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30ToolsDiagnosisSuggestionGetGetRequest) AdvertiserId(advert
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsDiagnosisSuggestionGetGetRequest) Execute() (*ToolsDiagnosisSuggestionGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsDiagnosisSuggestionGetGetRequest) Execute() (*models.ToolsDiagnosisSuggestionGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsDiagnosisSuggestionGetV30ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return ToolsDiagnosisSuggestionGetV30Response
-func (a *ToolsDiagnosisSuggestionGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsDiagnosisSuggestionGetGetRequest) (*ToolsDiagnosisSuggestionGetV30Response, *http.Response, error) {
+func (a *ToolsDiagnosisSuggestionGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsDiagnosisSuggestionGetGetRequest) (*models.ToolsDiagnosisSuggestionGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsDiagnosisSuggestionGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsDiagnosisSuggestionGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsDiagnosisSuggestionGetV30ApiService) getExecute(r *ApiOpenApiV30To
 	localVarPath := localBasePath + "/open_api/v3.0/tools/diagnosis/suggestion/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.promotionIds == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserAvatarUploadV2ApiService AdvertiserAvatarUploadV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2AdvertiserAvatarUploadPostRequest struct {
 	ctx          context.Context
 	ApiService   *AdvertiserAvatarUploadV2ApiService
 	advertiserId *int64
-	imageFile    *FormFileInfo
+	imageFile    *models.FormFileInfo
 }
 
 func (r *ApiOpenApi2AdvertiserAvatarUploadPostRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2AdvertiserAvatarUploadPostRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2AdvertiserAvatarUploadPostRequest) AdvertiserId(advertiserId
 	return r
 }
 
-func (r *ApiOpenApi2AdvertiserAvatarUploadPostRequest) ImageFile(imageFile *FormFileInfo) *ApiOpenApi2AdvertiserAvatarUploadPostRequest {
+func (r *ApiOpenApi2AdvertiserAvatarUploadPostRequest) ImageFile(imageFile *models.FormFileInfo) *ApiOpenApi2AdvertiserAvatarUploadPostRequest {
 	r.imageFile = imageFile
 	return r
 }
 
-func (r *ApiOpenApi2AdvertiserAvatarUploadPostRequest) Execute() (*AdvertiserAvatarUploadV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdvertiserAvatarUploadPostRequest) Execute() (*models.AdvertiserAvatarUploadV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *AdvertiserAvatarUploadV2ApiService) Post(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return AdvertiserAvatarUploadV2Response
-func (a *AdvertiserAvatarUploadV2ApiService) postExecute(r *ApiOpenApi2AdvertiserAvatarUploadPostRequest) (*AdvertiserAvatarUploadV2Response, *http.Response, error) {
+func (a *AdvertiserAvatarUploadV2ApiService) postExecute(r *ApiOpenApi2AdvertiserAvatarUploadPostRequest) (*models.AdvertiserAvatarUploadV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserAvatarUploadV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserAvatarUploadV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *AdvertiserAvatarUploadV2ApiService) postExecute(r *ApiOpenApi2Advertise
 	localVarPath := localBasePath + "/open_api/2/advertiser/avatar/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

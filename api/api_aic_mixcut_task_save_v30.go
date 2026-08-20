@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AicMixcutTaskSaveV30ApiService AicMixcutTaskSaveV30Api service
@@ -25,15 +26,15 @@ type AicMixcutTaskSaveV30ApiService service
 type ApiOpenApiV30AicMixcutTaskSavePostRequest struct {
 	ctx                         context.Context
 	ApiService                  *AicMixcutTaskSaveV30ApiService
-	aicMixcutTaskSaveV30Request *AicMixcutTaskSaveV30Request
+	aicMixcutTaskSaveV30Request *models.AicMixcutTaskSaveV30Request
 }
 
-func (r *ApiOpenApiV30AicMixcutTaskSavePostRequest) AicMixcutTaskSaveV30Request(aicMixcutTaskSaveV30Request AicMixcutTaskSaveV30Request) *ApiOpenApiV30AicMixcutTaskSavePostRequest {
+func (r *ApiOpenApiV30AicMixcutTaskSavePostRequest) AicMixcutTaskSaveV30Request(aicMixcutTaskSaveV30Request models.AicMixcutTaskSaveV30Request) *ApiOpenApiV30AicMixcutTaskSavePostRequest {
 	r.aicMixcutTaskSaveV30Request = &aicMixcutTaskSaveV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30AicMixcutTaskSavePostRequest) Execute() (*AicMixcutTaskSaveV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AicMixcutTaskSavePostRequest) Execute() (*models.AicMixcutTaskSaveV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AicMixcutTaskSaveV30ApiService) Post(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return AicMixcutTaskSaveV30Response
-func (a *AicMixcutTaskSaveV30ApiService) postExecute(r *ApiOpenApiV30AicMixcutTaskSavePostRequest) (*AicMixcutTaskSaveV30Response, *http.Response, error) {
+func (a *AicMixcutTaskSaveV30ApiService) postExecute(r *ApiOpenApiV30AicMixcutTaskSavePostRequest) (*models.AicMixcutTaskSaveV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AicMixcutTaskSaveV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AicMixcutTaskSaveV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AicMixcutTaskSaveV30ApiService) postExecute(r *ApiOpenApiV30AicMixcutTa
 	localVarPath := localBasePath + "/open_api/v3.0/aic/mixcut_task/save/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

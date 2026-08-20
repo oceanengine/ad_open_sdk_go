@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemandOmGetChallengeDispatchedProviderListV2ApiService StarDemandOmGetChallengeDispatchedProviderListV2Api service
@@ -52,7 +53,7 @@ func (r *ApiOpenApi2StarDemandOmGetChallengeDispatchedProviderListGetRequest) Li
 	return r
 }
 
-func (r *ApiOpenApi2StarDemandOmGetChallengeDispatchedProviderListGetRequest) Execute() (*StarDemandOmGetChallengeDispatchedProviderListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemandOmGetChallengeDispatchedProviderListGetRequest) Execute() (*models.StarDemandOmGetChallengeDispatchedProviderListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -86,12 +87,12 @@ func (a *StarDemandOmGetChallengeDispatchedProviderListV2ApiService) Get(ctx con
 // Execute executes the request
 //
 //	@return StarDemandOmGetChallengeDispatchedProviderListV2Response
-func (a *StarDemandOmGetChallengeDispatchedProviderListV2ApiService) getExecute(r *ApiOpenApi2StarDemandOmGetChallengeDispatchedProviderListGetRequest) (*StarDemandOmGetChallengeDispatchedProviderListV2Response, *http.Response, error) {
+func (a *StarDemandOmGetChallengeDispatchedProviderListV2ApiService) getExecute(r *ApiOpenApi2StarDemandOmGetChallengeDispatchedProviderListGetRequest) (*models.StarDemandOmGetChallengeDispatchedProviderListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemandOmGetChallengeDispatchedProviderListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemandOmGetChallengeDispatchedProviderListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -101,7 +102,7 @@ func (a *StarDemandOmGetChallengeDispatchedProviderListV2ApiService) getExecute(
 	localVarPath := localBasePath + "/open_api/2/star/demand/om_get_challenge_dispatched_provider_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

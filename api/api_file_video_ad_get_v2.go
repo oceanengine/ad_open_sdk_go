@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoAdGetV2ApiService FileVideoAdGetV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2FileVideoAdGetGetRequest) VideoIds(videoIds []string) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoAdGetGetRequest) Execute() (*FileVideoAdGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoAdGetGetRequest) Execute() (*models.FileVideoAdGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *FileVideoAdGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2FileVi
 // Execute executes the request
 //
 //	@return FileVideoAdGetV2Response
-func (a *FileVideoAdGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoAdGetGetRequest) (*FileVideoAdGetV2Response, *http.Response, error) {
+func (a *FileVideoAdGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoAdGetGetRequest) (*models.FileVideoAdGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoAdGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoAdGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *FileVideoAdGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoAdGetGetR
 	localVarPath := localBasePath + "/open_api/2/file/video/ad/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

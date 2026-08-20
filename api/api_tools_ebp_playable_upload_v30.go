@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpPlayableUploadV30ApiService ToolsEbpPlayableUploadV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpPlayableUploadV30ApiService service
 type ApiOpenApiV30ToolsEbpPlayableUploadPostRequest struct {
 	ctx                              context.Context
 	ApiService                       *ToolsEbpPlayableUploadV30ApiService
-	toolsEbpPlayableUploadV30Request *ToolsEbpPlayableUploadV30Request
+	toolsEbpPlayableUploadV30Request *models.ToolsEbpPlayableUploadV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpPlayableUploadPostRequest) ToolsEbpPlayableUploadV30Request(toolsEbpPlayableUploadV30Request ToolsEbpPlayableUploadV30Request) *ApiOpenApiV30ToolsEbpPlayableUploadPostRequest {
+func (r *ApiOpenApiV30ToolsEbpPlayableUploadPostRequest) ToolsEbpPlayableUploadV30Request(toolsEbpPlayableUploadV30Request models.ToolsEbpPlayableUploadV30Request) *ApiOpenApiV30ToolsEbpPlayableUploadPostRequest {
 	r.toolsEbpPlayableUploadV30Request = &toolsEbpPlayableUploadV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpPlayableUploadPostRequest) Execute() (*ToolsEbpPlayableUploadV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpPlayableUploadPostRequest) Execute() (*models.ToolsEbpPlayableUploadV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpPlayableUploadV30ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsEbpPlayableUploadV30Response
-func (a *ToolsEbpPlayableUploadV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpPlayableUploadPostRequest) (*ToolsEbpPlayableUploadV30Response, *http.Response, error) {
+func (a *ToolsEbpPlayableUploadV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpPlayableUploadPostRequest) (*models.ToolsEbpPlayableUploadV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpPlayableUploadV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpPlayableUploadV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpPlayableUploadV30ApiService) postExecute(r *ApiOpenApiV30ToolsE
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/playable/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

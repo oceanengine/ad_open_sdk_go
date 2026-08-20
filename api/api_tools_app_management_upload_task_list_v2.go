@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementUploadTaskListV2ApiService ToolsAppManagementUploadTaskListV2Api service
@@ -26,8 +27,8 @@ type ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest struct {
 	ctx         context.Context
 	ApiService  *ToolsAppManagementUploadTaskListV2ApiService
 	accountId   *int64
-	accountType *ToolsAppManagementUploadTaskListV2AccountType
-	filtering   *ToolsAppManagementUploadTaskListV2Filtering
+	accountType *models.ToolsAppManagementUploadTaskListV2AccountType
+	filtering   *models.ToolsAppManagementUploadTaskListV2Filtering
 }
 
 // 账户id指可以接的账号体系如广告主id、巨量纵横组织id等
@@ -37,18 +38,18 @@ func (r *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest) AccountId(accoun
 }
 
 // 账户类型
-func (r *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest) AccountType(accountType ToolsAppManagementUploadTaskListV2AccountType) *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest) AccountType(accountType models.ToolsAppManagementUploadTaskListV2AccountType) *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
 // 过滤条件
-func (r *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest) Filtering(filtering ToolsAppManagementUploadTaskListV2Filtering) *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest) Filtering(filtering models.ToolsAppManagementUploadTaskListV2Filtering) *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest) Execute() (*ToolsAppManagementUploadTaskListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest) Execute() (*models.ToolsAppManagementUploadTaskListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *ToolsAppManagementUploadTaskListV2ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return ToolsAppManagementUploadTaskListV2Response
-func (a *ToolsAppManagementUploadTaskListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest) (*ToolsAppManagementUploadTaskListV2Response, *http.Response, error) {
+func (a *ToolsAppManagementUploadTaskListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementUploadTaskListGetRequest) (*models.ToolsAppManagementUploadTaskListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementUploadTaskListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementUploadTaskListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *ToolsAppManagementUploadTaskListV2ApiService) getExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/upload_task/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

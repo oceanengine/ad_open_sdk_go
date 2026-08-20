@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportCustomConfigGetV30ApiService ReportCustomConfigGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30ReportCustomConfigGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ReportCustomConfigGetV30ApiService
 	advertiserId *int64
-	dataTopics   *[]*ReportCustomConfigGetV30DataTopics
+	dataTopics   *[]*models.ReportCustomConfigGetV30DataTopics
 }
 
 func (r *ApiOpenApiV30ReportCustomConfigGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ReportCustomConfigGetGetRequest {
@@ -35,12 +36,12 @@ func (r *ApiOpenApiV30ReportCustomConfigGetGetRequest) AdvertiserId(advertiserId
 }
 
 // 数据主题查询列表
-func (r *ApiOpenApiV30ReportCustomConfigGetGetRequest) DataTopics(dataTopics []*ReportCustomConfigGetV30DataTopics) *ApiOpenApiV30ReportCustomConfigGetGetRequest {
+func (r *ApiOpenApiV30ReportCustomConfigGetGetRequest) DataTopics(dataTopics []*models.ReportCustomConfigGetV30DataTopics) *ApiOpenApiV30ReportCustomConfigGetGetRequest {
 	r.dataTopics = &dataTopics
 	return r
 }
 
-func (r *ApiOpenApiV30ReportCustomConfigGetGetRequest) Execute() (*ReportCustomConfigGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportCustomConfigGetGetRequest) Execute() (*models.ReportCustomConfigGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *ReportCustomConfigGetV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ReportCustomConfigGetV30Response
-func (a *ReportCustomConfigGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCustomConfigGetGetRequest) (*ReportCustomConfigGetV30Response, *http.Response, error) {
+func (a *ReportCustomConfigGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCustomConfigGetGetRequest) (*models.ReportCustomConfigGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportCustomConfigGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportCustomConfigGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *ReportCustomConfigGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCu
 	localVarPath := localBasePath + "/open_api/v3.0/report/custom/config/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

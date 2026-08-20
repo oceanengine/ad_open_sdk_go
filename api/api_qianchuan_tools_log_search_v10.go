@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanToolsLogSearchV10ApiService QianchuanToolsLogSearchV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanToolsLogSearchGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanToolsLogSearchV10ApiService
 	advertiserId *int64
-	objectType   *QianchuanToolsLogSearchV10ObjectType
+	objectType   *models.QianchuanToolsLogSearchV10ObjectType
 	objectId     *int64
 	operatorId   *[]int64
 	startTime    *string
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV10QianchuanToolsLogSearchGetRequest) AdvertiserId(advertiser
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsLogSearchGetRequest) ObjectType(objectType QianchuanToolsLogSearchV10ObjectType) *ApiOpenApiV10QianchuanToolsLogSearchGetRequest {
+func (r *ApiOpenApiV10QianchuanToolsLogSearchGetRequest) ObjectType(objectType models.QianchuanToolsLogSearchV10ObjectType) *ApiOpenApiV10QianchuanToolsLogSearchGetRequest {
 	r.objectType = &objectType
 	return r
 }
@@ -82,7 +83,7 @@ func (r *ApiOpenApiV10QianchuanToolsLogSearchGetRequest) PageSize(pageSize int32
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsLogSearchGetRequest) Execute() (*QianchuanToolsLogSearchV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanToolsLogSearchGetRequest) Execute() (*models.QianchuanToolsLogSearchV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -116,12 +117,12 @@ func (a *QianchuanToolsLogSearchV10ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return QianchuanToolsLogSearchV10Response
-func (a *QianchuanToolsLogSearchV10ApiService) getExecute(r *ApiOpenApiV10QianchuanToolsLogSearchGetRequest) (*QianchuanToolsLogSearchV10Response, *http.Response, error) {
+func (a *QianchuanToolsLogSearchV10ApiService) getExecute(r *ApiOpenApiV10QianchuanToolsLogSearchGetRequest) (*models.QianchuanToolsLogSearchV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanToolsLogSearchV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanToolsLogSearchV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -131,7 +132,7 @@ func (a *QianchuanToolsLogSearchV10ApiService) getExecute(r *ApiOpenApiV10Qianch
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/tools/log_search/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

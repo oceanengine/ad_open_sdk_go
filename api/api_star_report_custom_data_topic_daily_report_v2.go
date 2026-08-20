@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarReportCustomDataTopicDailyReportV2ApiService StarReportCustomDataTopicDailyReportV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest struct {
 	starId     *int64
 	workId     *int64
 	demandId   *int64
-	topics     *[]*StarReportCustomDataTopicDailyReportV2Topics
+	topics     *[]*models.StarReportCustomDataTopicDailyReportV2Topics
 	startTime  *string
 	endTime    *string
 }
@@ -52,7 +53,7 @@ func (r *ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest) DemandId(dem
 }
 
 // 数据主题: BASIC_DATA：基础信息、 FLOW_DATA：流量表现、 CONVERT_DATA：转化表现、 SEARCH_DATA：搜索表现、 RECOMMEND_DATA： 种草表现
-func (r *ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest) Topics(topics []*StarReportCustomDataTopicDailyReportV2Topics) *ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest {
+func (r *ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest) Topics(topics []*models.StarReportCustomDataTopicDailyReportV2Topics) *ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest {
 	r.topics = &topics
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest) EndTime(endT
 	return r
 }
 
-func (r *ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest) Execute() (*StarReportCustomDataTopicDailyReportV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest) Execute() (*models.StarReportCustomDataTopicDailyReportV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *StarReportCustomDataTopicDailyReportV2ApiService) Get(ctx context.Conte
 // Execute executes the request
 //
 //	@return StarReportCustomDataTopicDailyReportV2Response
-func (a *StarReportCustomDataTopicDailyReportV2ApiService) getExecute(r *ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest) (*StarReportCustomDataTopicDailyReportV2Response, *http.Response, error) {
+func (a *StarReportCustomDataTopicDailyReportV2ApiService) getExecute(r *ApiOpenApi2StarReportCustomDataTopicDailyReportGetRequest) (*models.StarReportCustomDataTopicDailyReportV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarReportCustomDataTopicDailyReportV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarReportCustomDataTopicDailyReportV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *StarReportCustomDataTopicDailyReportV2ApiService) getExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/2/star/report/custom_data_topic_daily_report/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

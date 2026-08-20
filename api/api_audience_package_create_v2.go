@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AudiencePackageCreateV2ApiService AudiencePackageCreateV2Api service
@@ -25,15 +26,15 @@ type AudiencePackageCreateV2ApiService service
 type ApiOpenApi2AudiencePackageCreatePostRequest struct {
 	ctx                            context.Context
 	ApiService                     *AudiencePackageCreateV2ApiService
-	audiencePackageCreateV2Request *AudiencePackageCreateV2Request
+	audiencePackageCreateV2Request *models.AudiencePackageCreateV2Request
 }
 
-func (r *ApiOpenApi2AudiencePackageCreatePostRequest) AudiencePackageCreateV2Request(audiencePackageCreateV2Request AudiencePackageCreateV2Request) *ApiOpenApi2AudiencePackageCreatePostRequest {
+func (r *ApiOpenApi2AudiencePackageCreatePostRequest) AudiencePackageCreateV2Request(audiencePackageCreateV2Request models.AudiencePackageCreateV2Request) *ApiOpenApi2AudiencePackageCreatePostRequest {
 	r.audiencePackageCreateV2Request = &audiencePackageCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AudiencePackageCreatePostRequest) Execute() (*AudiencePackageCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AudiencePackageCreatePostRequest) Execute() (*models.AudiencePackageCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AudiencePackageCreateV2ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return AudiencePackageCreateV2Response
-func (a *AudiencePackageCreateV2ApiService) postExecute(r *ApiOpenApi2AudiencePackageCreatePostRequest) (*AudiencePackageCreateV2Response, *http.Response, error) {
+func (a *AudiencePackageCreateV2ApiService) postExecute(r *ApiOpenApi2AudiencePackageCreatePostRequest) (*models.AudiencePackageCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AudiencePackageCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AudiencePackageCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AudiencePackageCreateV2ApiService) postExecute(r *ApiOpenApi2AudiencePa
 	localVarPath := localBasePath + "/open_api/2/audience_package/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

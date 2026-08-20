@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdControlTaskBudgetUpdateV10ApiService QianchuanUniPromotionAdControlTaskBudgetUpdateV10Api service
@@ -25,15 +26,15 @@ type QianchuanUniPromotionAdControlTaskBudgetUpdateV10ApiService service
 type ApiOpenApiV10QianchuanUniPromotionAdControlTaskBudgetUpdatePostRequest struct {
 	ctx                                                      context.Context
 	ApiService                                               *QianchuanUniPromotionAdControlTaskBudgetUpdateV10ApiService
-	qianchuanUniPromotionAdControlTaskBudgetUpdateV10Request *QianchuanUniPromotionAdControlTaskBudgetUpdateV10Request
+	qianchuanUniPromotionAdControlTaskBudgetUpdateV10Request *models.QianchuanUniPromotionAdControlTaskBudgetUpdateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskBudgetUpdatePostRequest) QianchuanUniPromotionAdControlTaskBudgetUpdateV10Request(qianchuanUniPromotionAdControlTaskBudgetUpdateV10Request QianchuanUniPromotionAdControlTaskBudgetUpdateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskBudgetUpdatePostRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskBudgetUpdatePostRequest) QianchuanUniPromotionAdControlTaskBudgetUpdateV10Request(qianchuanUniPromotionAdControlTaskBudgetUpdateV10Request models.QianchuanUniPromotionAdControlTaskBudgetUpdateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskBudgetUpdatePostRequest {
 	r.qianchuanUniPromotionAdControlTaskBudgetUpdateV10Request = &qianchuanUniPromotionAdControlTaskBudgetUpdateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskBudgetUpdatePostRequest) Execute() (*QianchuanUniPromotionAdControlTaskBudgetUpdateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskBudgetUpdatePostRequest) Execute() (*models.QianchuanUniPromotionAdControlTaskBudgetUpdateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanUniPromotionAdControlTaskBudgetUpdateV10ApiService) Post(ctx c
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdControlTaskBudgetUpdateV10Response
-func (a *QianchuanUniPromotionAdControlTaskBudgetUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskBudgetUpdatePostRequest) (*QianchuanUniPromotionAdControlTaskBudgetUpdateV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdControlTaskBudgetUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskBudgetUpdatePostRequest) (*models.QianchuanUniPromotionAdControlTaskBudgetUpdateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdControlTaskBudgetUpdateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdControlTaskBudgetUpdateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanUniPromotionAdControlTaskBudgetUpdateV10ApiService) postExecut
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/control_task/budget/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

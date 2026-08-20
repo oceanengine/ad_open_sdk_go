@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerShareGetV30ApiService EventManagerShareGetV30Api service
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV30EventManagerShareGetGetRequest) PageSize(pageSize int32) *
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerShareGetGetRequest) Execute() (*EventManagerShareGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EventManagerShareGetGetRequest) Execute() (*models.EventManagerShareGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *EventManagerShareGetV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return EventManagerShareGetV30Response
-func (a *EventManagerShareGetV30ApiService) getExecute(r *ApiOpenApiV30EventManagerShareGetGetRequest) (*EventManagerShareGetV30Response, *http.Response, error) {
+func (a *EventManagerShareGetV30ApiService) getExecute(r *ApiOpenApiV30EventManagerShareGetGetRequest) (*models.EventManagerShareGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerShareGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerShareGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *EventManagerShareGetV30ApiService) getExecute(r *ApiOpenApiV30EventMana
 	localVarPath := localBasePath + "/open_api/v3.0/event_manager/share/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.organizationId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaProductAvailablesV2ApiService DpaProductAvailablesV2Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApi2DpaProductAvailablesGetRequest) AdvertiserId(advertiserId in
 	return r
 }
 
-func (r *ApiOpenApi2DpaProductAvailablesGetRequest) Execute() (*DpaProductAvailablesV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DpaProductAvailablesGetRequest) Execute() (*models.DpaProductAvailablesV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DpaProductAvailablesV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return DpaProductAvailablesV2Response
-func (a *DpaProductAvailablesV2ApiService) getExecute(r *ApiOpenApi2DpaProductAvailablesGetRequest) (*DpaProductAvailablesV2Response, *http.Response, error) {
+func (a *DpaProductAvailablesV2ApiService) getExecute(r *ApiOpenApi2DpaProductAvailablesGetRequest) (*models.DpaProductAvailablesV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaProductAvailablesV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaProductAvailablesV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DpaProductAvailablesV2ApiService) getExecute(r *ApiOpenApi2DpaProductAv
 	localVarPath := localBasePath + "/open_api/2/dpa/product/availables/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

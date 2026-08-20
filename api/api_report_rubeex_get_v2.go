@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportRubeexGetV2ApiService ReportRubeexGetV2Api service
@@ -27,9 +28,9 @@ type ApiOpenApi2ReportRubeexGetGetRequest struct {
 	ApiService   *ReportRubeexGetV2ApiService
 	advertiserId *int64
 	dimensions   *[]string
-	filtering    *ReportRubeexGetV2Filtering
+	filtering    *models.ReportRubeexGetV2Filtering
 	metrics      *[]string
-	order        *ReportRubeexGetV2Order
+	order        *models.ReportRubeexGetV2Order
 	page         *int64
 	pageSize     *int64
 	projectId    *int64
@@ -46,7 +47,7 @@ func (r *ApiOpenApi2ReportRubeexGetGetRequest) Dimensions(dimensions []string) *
 	return r
 }
 
-func (r *ApiOpenApi2ReportRubeexGetGetRequest) Filtering(filtering ReportRubeexGetV2Filtering) *ApiOpenApi2ReportRubeexGetGetRequest {
+func (r *ApiOpenApi2ReportRubeexGetGetRequest) Filtering(filtering models.ReportRubeexGetV2Filtering) *ApiOpenApi2ReportRubeexGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -56,7 +57,7 @@ func (r *ApiOpenApi2ReportRubeexGetGetRequest) Metrics(metrics []string) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApi2ReportRubeexGetGetRequest) Order(order ReportRubeexGetV2Order) *ApiOpenApi2ReportRubeexGetGetRequest {
+func (r *ApiOpenApi2ReportRubeexGetGetRequest) Order(order models.ReportRubeexGetV2Order) *ApiOpenApi2ReportRubeexGetGetRequest {
 	r.order = &order
 	return r
 }
@@ -81,7 +82,7 @@ func (r *ApiOpenApi2ReportRubeexGetGetRequest) StatTimeDay(statTimeDay []string)
 	return r
 }
 
-func (r *ApiOpenApi2ReportRubeexGetGetRequest) Execute() (*ReportRubeexGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ReportRubeexGetGetRequest) Execute() (*models.ReportRubeexGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -115,12 +116,12 @@ func (a *ReportRubeexGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Repor
 // Execute executes the request
 //
 //	@return ReportRubeexGetV2Response
-func (a *ReportRubeexGetV2ApiService) getExecute(r *ApiOpenApi2ReportRubeexGetGetRequest) (*ReportRubeexGetV2Response, *http.Response, error) {
+func (a *ReportRubeexGetV2ApiService) getExecute(r *ApiOpenApi2ReportRubeexGetGetRequest) (*models.ReportRubeexGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportRubeexGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportRubeexGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -130,7 +131,7 @@ func (a *ReportRubeexGetV2ApiService) getExecute(r *ApiOpenApi2ReportRubeexGetGe
 	localVarPath := localBasePath + "/open_api/2/report/rubeex/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

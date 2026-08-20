@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaEbpPlayletAuthGetV30ApiService DpaEbpPlayletAuthGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30DpaEbpPlayletAuthGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *DpaEbpPlayletAuthGetV30ApiService
 	accountId   *int64
-	accountType *DpaEbpPlayletAuthGetV30AccountType
+	accountType *models.DpaEbpPlayletAuthGetV30AccountType
 	platformId  *int64
 	productId   *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30DpaEbpPlayletAuthGetGetRequest) AccountId(accountId int64)
 }
 
 // 账户类型
-func (r *ApiOpenApiV30DpaEbpPlayletAuthGetGetRequest) AccountType(accountType DpaEbpPlayletAuthGetV30AccountType) *ApiOpenApiV30DpaEbpPlayletAuthGetGetRequest {
+func (r *ApiOpenApiV30DpaEbpPlayletAuthGetGetRequest) AccountType(accountType models.DpaEbpPlayletAuthGetV30AccountType) *ApiOpenApiV30DpaEbpPlayletAuthGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30DpaEbpPlayletAuthGetGetRequest) ProductId(productId int64)
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpPlayletAuthGetGetRequest) Execute() (*DpaEbpPlayletAuthGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaEbpPlayletAuthGetGetRequest) Execute() (*models.DpaEbpPlayletAuthGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *DpaEbpPlayletAuthGetV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return DpaEbpPlayletAuthGetV30Response
-func (a *DpaEbpPlayletAuthGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpPlayletAuthGetGetRequest) (*DpaEbpPlayletAuthGetV30Response, *http.Response, error) {
+func (a *DpaEbpPlayletAuthGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpPlayletAuthGetGetRequest) (*models.DpaEbpPlayletAuthGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaEbpPlayletAuthGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaEbpPlayletAuthGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *DpaEbpPlayletAuthGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpPla
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/ebp/playlet/auth/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

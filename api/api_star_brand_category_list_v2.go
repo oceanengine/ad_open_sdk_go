@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarBrandCategoryListV2ApiService StarBrandCategoryListV2Api service
@@ -45,7 +46,7 @@ func (r *ApiOpenApi2StarBrandCategoryListGetRequest) Industry(industry []string)
 	return r
 }
 
-func (r *ApiOpenApi2StarBrandCategoryListGetRequest) Execute() (*StarBrandCategoryListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarBrandCategoryListGetRequest) Execute() (*models.StarBrandCategoryListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *StarBrandCategoryListV2ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return StarBrandCategoryListV2Response
-func (a *StarBrandCategoryListV2ApiService) getExecute(r *ApiOpenApi2StarBrandCategoryListGetRequest) (*StarBrandCategoryListV2Response, *http.Response, error) {
+func (a *StarBrandCategoryListV2ApiService) getExecute(r *ApiOpenApi2StarBrandCategoryListGetRequest) (*models.StarBrandCategoryListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarBrandCategoryListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarBrandCategoryListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *StarBrandCategoryListV2ApiService) getExecute(r *ApiOpenApi2StarBrandCa
 	localVarPath := localBasePath + "/open_api/2/star/brand_category/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

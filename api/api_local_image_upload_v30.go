@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalImageUploadV30ApiService LocalImageUploadV30Api service
@@ -26,10 +27,10 @@ type ApiOpenApiV30LocalImageUploadPostRequest struct {
 	ctx            context.Context
 	ApiService     *LocalImageUploadV30ApiService
 	localAccountId *int64
-	imageFile      *FormFileInfo
+	imageFile      *models.FormFileInfo
 	imageSignature *string
 	isAigc         *bool
-	uploadType     *LocalImageUploadV30UploadType
+	uploadType     *models.LocalImageUploadV30UploadType
 }
 
 func (r *ApiOpenApiV30LocalImageUploadPostRequest) LocalAccountId(localAccountId int64) *ApiOpenApiV30LocalImageUploadPostRequest {
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30LocalImageUploadPostRequest) LocalAccountId(localAccountId
 }
 
 // 图片文件 upload_type为UPLOAD_BY_FILE必填 格式: jpg、jpeg、png、bmp、gif, 大小1.5M内
-func (r *ApiOpenApiV30LocalImageUploadPostRequest) ImageFile(imageFile *FormFileInfo) *ApiOpenApiV30LocalImageUploadPostRequest {
+func (r *ApiOpenApiV30LocalImageUploadPostRequest) ImageFile(imageFile *models.FormFileInfo) *ApiOpenApiV30LocalImageUploadPostRequest {
 	r.imageFile = imageFile
 	return r
 }
@@ -55,12 +56,12 @@ func (r *ApiOpenApiV30LocalImageUploadPostRequest) IsAigc(isAigc bool) *ApiOpenA
 	return r
 }
 
-func (r *ApiOpenApiV30LocalImageUploadPostRequest) UploadType(uploadType LocalImageUploadV30UploadType) *ApiOpenApiV30LocalImageUploadPostRequest {
+func (r *ApiOpenApiV30LocalImageUploadPostRequest) UploadType(uploadType models.LocalImageUploadV30UploadType) *ApiOpenApiV30LocalImageUploadPostRequest {
 	r.uploadType = &uploadType
 	return r
 }
 
-func (r *ApiOpenApiV30LocalImageUploadPostRequest) Execute() (*LocalImageUploadV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalImageUploadPostRequest) Execute() (*models.LocalImageUploadV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -94,12 +95,12 @@ func (a *LocalImageUploadV30ApiService) Post(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return LocalImageUploadV30Response
-func (a *LocalImageUploadV30ApiService) postExecute(r *ApiOpenApiV30LocalImageUploadPostRequest) (*LocalImageUploadV30Response, *http.Response, error) {
+func (a *LocalImageUploadV30ApiService) postExecute(r *ApiOpenApiV30LocalImageUploadPostRequest) (*models.LocalImageUploadV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalImageUploadV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalImageUploadV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -109,7 +110,7 @@ func (a *LocalImageUploadV30ApiService) postExecute(r *ApiOpenApiV30LocalImageUp
 	localVarPath := localBasePath + "/open_api/v3.0/local/image/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

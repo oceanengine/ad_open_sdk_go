@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPlayableCloudGameListV2ApiService ToolsPlayableCloudGameListV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsPlayableCloudGameListGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsPlayableCloudGameListV2ApiService
 	advertiserId *int64
-	filtering    *ToolsPlayableCloudGameListV2Filtering
+	filtering    *models.ToolsPlayableCloudGameListV2Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApi2ToolsPlayableCloudGameListGetRequest) AdvertiserId(advertise
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPlayableCloudGameListGetRequest) Filtering(filtering ToolsPlayableCloudGameListV2Filtering) *ApiOpenApi2ToolsPlayableCloudGameListGetRequest {
+func (r *ApiOpenApi2ToolsPlayableCloudGameListGetRequest) Filtering(filtering models.ToolsPlayableCloudGameListV2Filtering) *ApiOpenApi2ToolsPlayableCloudGameListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2ToolsPlayableCloudGameListGetRequest) PageSize(pageSize int6
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPlayableCloudGameListGetRequest) Execute() (*ToolsPlayableCloudGameListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPlayableCloudGameListGetRequest) Execute() (*models.ToolsPlayableCloudGameListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ToolsPlayableCloudGameListV2ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsPlayableCloudGameListV2Response
-func (a *ToolsPlayableCloudGameListV2ApiService) getExecute(r *ApiOpenApi2ToolsPlayableCloudGameListGetRequest) (*ToolsPlayableCloudGameListV2Response, *http.Response, error) {
+func (a *ToolsPlayableCloudGameListV2ApiService) getExecute(r *ApiOpenApi2ToolsPlayableCloudGameListGetRequest) (*models.ToolsPlayableCloudGameListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPlayableCloudGameListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPlayableCloudGameListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ToolsPlayableCloudGameListV2ApiService) getExecute(r *ApiOpenApi2ToolsP
 	localVarPath := localBasePath + "/open_api/2/tools/playable/cloud_game/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

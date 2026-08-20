@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPrivativeWordProjectUpdateV30ApiService ToolsPrivativeWordProjectUpdateV30Api service
@@ -25,15 +26,15 @@ type ToolsPrivativeWordProjectUpdateV30ApiService service
 type ApiOpenApiV30ToolsPrivativeWordProjectUpdatePostRequest struct {
 	ctx                                       context.Context
 	ApiService                                *ToolsPrivativeWordProjectUpdateV30ApiService
-	toolsPrivativeWordProjectUpdateV30Request *ToolsPrivativeWordProjectUpdateV30Request
+	toolsPrivativeWordProjectUpdateV30Request *models.ToolsPrivativeWordProjectUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsPrivativeWordProjectUpdatePostRequest) ToolsPrivativeWordProjectUpdateV30Request(toolsPrivativeWordProjectUpdateV30Request ToolsPrivativeWordProjectUpdateV30Request) *ApiOpenApiV30ToolsPrivativeWordProjectUpdatePostRequest {
+func (r *ApiOpenApiV30ToolsPrivativeWordProjectUpdatePostRequest) ToolsPrivativeWordProjectUpdateV30Request(toolsPrivativeWordProjectUpdateV30Request models.ToolsPrivativeWordProjectUpdateV30Request) *ApiOpenApiV30ToolsPrivativeWordProjectUpdatePostRequest {
 	r.toolsPrivativeWordProjectUpdateV30Request = &toolsPrivativeWordProjectUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsPrivativeWordProjectUpdatePostRequest) Execute() (*ToolsPrivativeWordProjectUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsPrivativeWordProjectUpdatePostRequest) Execute() (*models.ToolsPrivativeWordProjectUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsPrivativeWordProjectUpdateV30ApiService) Post(ctx context.Context)
 // Execute executes the request
 //
 //	@return ToolsPrivativeWordProjectUpdateV30Response
-func (a *ToolsPrivativeWordProjectUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsPrivativeWordProjectUpdatePostRequest) (*ToolsPrivativeWordProjectUpdateV30Response, *http.Response, error) {
+func (a *ToolsPrivativeWordProjectUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsPrivativeWordProjectUpdatePostRequest) (*models.ToolsPrivativeWordProjectUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPrivativeWordProjectUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPrivativeWordProjectUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsPrivativeWordProjectUpdateV30ApiService) postExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/v3.0/tools/privative_word/project/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

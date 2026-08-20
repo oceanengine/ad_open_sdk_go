@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPrivativeWordCampaignAddV2ApiService ToolsPrivativeWordCampaignAddV2Api service
@@ -25,15 +26,15 @@ type ToolsPrivativeWordCampaignAddV2ApiService service
 type ApiOpenApi2ToolsPrivativeWordCampaignAddPostRequest struct {
 	ctx                                    context.Context
 	ApiService                             *ToolsPrivativeWordCampaignAddV2ApiService
-	toolsPrivativeWordCampaignAddV2Request *ToolsPrivativeWordCampaignAddV2Request
+	toolsPrivativeWordCampaignAddV2Request *models.ToolsPrivativeWordCampaignAddV2Request
 }
 
-func (r *ApiOpenApi2ToolsPrivativeWordCampaignAddPostRequest) ToolsPrivativeWordCampaignAddV2Request(toolsPrivativeWordCampaignAddV2Request ToolsPrivativeWordCampaignAddV2Request) *ApiOpenApi2ToolsPrivativeWordCampaignAddPostRequest {
+func (r *ApiOpenApi2ToolsPrivativeWordCampaignAddPostRequest) ToolsPrivativeWordCampaignAddV2Request(toolsPrivativeWordCampaignAddV2Request models.ToolsPrivativeWordCampaignAddV2Request) *ApiOpenApi2ToolsPrivativeWordCampaignAddPostRequest {
 	r.toolsPrivativeWordCampaignAddV2Request = &toolsPrivativeWordCampaignAddV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPrivativeWordCampaignAddPostRequest) Execute() (*ToolsPrivativeWordCampaignAddV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPrivativeWordCampaignAddPostRequest) Execute() (*models.ToolsPrivativeWordCampaignAddV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsPrivativeWordCampaignAddV2ApiService) Post(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return ToolsPrivativeWordCampaignAddV2Response
-func (a *ToolsPrivativeWordCampaignAddV2ApiService) postExecute(r *ApiOpenApi2ToolsPrivativeWordCampaignAddPostRequest) (*ToolsPrivativeWordCampaignAddV2Response, *http.Response, error) {
+func (a *ToolsPrivativeWordCampaignAddV2ApiService) postExecute(r *ApiOpenApi2ToolsPrivativeWordCampaignAddPostRequest) (*models.ToolsPrivativeWordCampaignAddV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPrivativeWordCampaignAddV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPrivativeWordCampaignAddV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsPrivativeWordCampaignAddV2ApiService) postExecute(r *ApiOpenApi2To
 	localVarPath := localBasePath + "/open_api/2/tools/privative_word/campaign/add/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

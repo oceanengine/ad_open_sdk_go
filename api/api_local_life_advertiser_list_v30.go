@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalLifeAdvertiserListV30ApiService LocalLifeAdvertiserListV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30LocalLifeAdvertiserListGetRequest struct {
 	ctx           context.Context
 	ApiService    *LocalLifeAdvertiserListV30ApiService
 	lifeAccountId *int64
-	filtering     *LocalLifeAdvertiserListV30Filtering
+	filtering     *models.LocalLifeAdvertiserListV30Filtering
 	page          *int64
 	pageSize      *int64
 }
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV30LocalLifeAdvertiserListGetRequest) LifeAccountId(lifeAccou
 }
 
 // 过滤器
-func (r *ApiOpenApiV30LocalLifeAdvertiserListGetRequest) Filtering(filtering LocalLifeAdvertiserListV30Filtering) *ApiOpenApiV30LocalLifeAdvertiserListGetRequest {
+func (r *ApiOpenApiV30LocalLifeAdvertiserListGetRequest) Filtering(filtering models.LocalLifeAdvertiserListV30Filtering) *ApiOpenApiV30LocalLifeAdvertiserListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -54,7 +55,7 @@ func (r *ApiOpenApiV30LocalLifeAdvertiserListGetRequest) PageSize(pageSize int64
 	return r
 }
 
-func (r *ApiOpenApiV30LocalLifeAdvertiserListGetRequest) Execute() (*LocalLifeAdvertiserListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalLifeAdvertiserListGetRequest) Execute() (*models.LocalLifeAdvertiserListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -88,12 +89,12 @@ func (a *LocalLifeAdvertiserListV30ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return LocalLifeAdvertiserListV30Response
-func (a *LocalLifeAdvertiserListV30ApiService) getExecute(r *ApiOpenApiV30LocalLifeAdvertiserListGetRequest) (*LocalLifeAdvertiserListV30Response, *http.Response, error) {
+func (a *LocalLifeAdvertiserListV30ApiService) getExecute(r *ApiOpenApiV30LocalLifeAdvertiserListGetRequest) (*models.LocalLifeAdvertiserListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalLifeAdvertiserListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalLifeAdvertiserListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -103,7 +104,7 @@ func (a *LocalLifeAdvertiserListV30ApiService) getExecute(r *ApiOpenApiV30LocalL
 	localVarPath := localBasePath + "/open_api/v3.0/local/life/advertiser/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.lifeAccountId == nil {

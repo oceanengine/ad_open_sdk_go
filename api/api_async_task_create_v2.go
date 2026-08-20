@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AsyncTaskCreateV2ApiService AsyncTaskCreateV2Api service
@@ -25,15 +26,15 @@ type AsyncTaskCreateV2ApiService service
 type ApiOpenApi2AsyncTaskCreatePostRequest struct {
 	ctx                      context.Context
 	ApiService               *AsyncTaskCreateV2ApiService
-	asyncTaskCreateV2Request *AsyncTaskCreateV2Request
+	asyncTaskCreateV2Request *models.AsyncTaskCreateV2Request
 }
 
-func (r *ApiOpenApi2AsyncTaskCreatePostRequest) AsyncTaskCreateV2Request(asyncTaskCreateV2Request AsyncTaskCreateV2Request) *ApiOpenApi2AsyncTaskCreatePostRequest {
+func (r *ApiOpenApi2AsyncTaskCreatePostRequest) AsyncTaskCreateV2Request(asyncTaskCreateV2Request models.AsyncTaskCreateV2Request) *ApiOpenApi2AsyncTaskCreatePostRequest {
 	r.asyncTaskCreateV2Request = &asyncTaskCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AsyncTaskCreatePostRequest) Execute() (*AsyncTaskCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AsyncTaskCreatePostRequest) Execute() (*models.AsyncTaskCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AsyncTaskCreateV2ApiService) Post(ctx context.Context) *ApiOpenApi2Asyn
 // Execute executes the request
 //
 //	@return AsyncTaskCreateV2Response
-func (a *AsyncTaskCreateV2ApiService) postExecute(r *ApiOpenApi2AsyncTaskCreatePostRequest) (*AsyncTaskCreateV2Response, *http.Response, error) {
+func (a *AsyncTaskCreateV2ApiService) postExecute(r *ApiOpenApi2AsyncTaskCreatePostRequest) (*models.AsyncTaskCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AsyncTaskCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AsyncTaskCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AsyncTaskCreateV2ApiService) postExecute(r *ApiOpenApi2AsyncTaskCreateP
 	localVarPath := localBasePath + "/open_api/2/async_task/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

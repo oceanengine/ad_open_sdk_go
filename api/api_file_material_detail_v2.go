@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileMaterialDetailV2ApiService FileMaterialDetailV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2FileMaterialDetailGetRequest) MaterialIds(materialIds []int6
 	return r
 }
 
-func (r *ApiOpenApi2FileMaterialDetailGetRequest) Execute() (*FileMaterialDetailV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileMaterialDetailGetRequest) Execute() (*models.FileMaterialDetailV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *FileMaterialDetailV2ApiService) Get(ctx context.Context) *ApiOpenApi2Fi
 // Execute executes the request
 //
 //	@return FileMaterialDetailV2Response
-func (a *FileMaterialDetailV2ApiService) getExecute(r *ApiOpenApi2FileMaterialDetailGetRequest) (*FileMaterialDetailV2Response, *http.Response, error) {
+func (a *FileMaterialDetailV2ApiService) getExecute(r *ApiOpenApi2FileMaterialDetailGetRequest) (*models.FileMaterialDetailV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileMaterialDetailV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileMaterialDetailV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *FileMaterialDetailV2ApiService) getExecute(r *ApiOpenApi2FileMaterialDe
 	localVarPath := localBasePath + "/open_api/2/file/material/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

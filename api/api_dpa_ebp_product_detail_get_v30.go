@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaEbpProductDetailGetV30ApiService DpaEbpProductDetailGetV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30DpaEbpProductDetailGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *DpaEbpProductDetailGetV30ApiService
 	accountId   *int64
-	accountType *DpaEbpProductDetailGetV30AccountType
+	accountType *models.DpaEbpProductDetailGetV30AccountType
 	platformId  *int64
-	filtering   *DpaEbpProductDetailGetV30Filtering
+	filtering   *models.DpaEbpProductDetailGetV30Filtering
 	page        *int64
 	pageSize    *int64
 }
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30DpaEbpProductDetailGetGetRequest) AccountId(accountId int6
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpProductDetailGetGetRequest) AccountType(accountType DpaEbpProductDetailGetV30AccountType) *ApiOpenApiV30DpaEbpProductDetailGetGetRequest {
+func (r *ApiOpenApiV30DpaEbpProductDetailGetGetRequest) AccountType(accountType models.DpaEbpProductDetailGetV30AccountType) *ApiOpenApiV30DpaEbpProductDetailGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -50,7 +51,7 @@ func (r *ApiOpenApiV30DpaEbpProductDetailGetGetRequest) PlatformId(platformId in
 }
 
 // 过滤器
-func (r *ApiOpenApiV30DpaEbpProductDetailGetGetRequest) Filtering(filtering DpaEbpProductDetailGetV30Filtering) *ApiOpenApiV30DpaEbpProductDetailGetGetRequest {
+func (r *ApiOpenApiV30DpaEbpProductDetailGetGetRequest) Filtering(filtering models.DpaEbpProductDetailGetV30Filtering) *ApiOpenApiV30DpaEbpProductDetailGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -67,7 +68,7 @@ func (r *ApiOpenApiV30DpaEbpProductDetailGetGetRequest) PageSize(pageSize int64)
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpProductDetailGetGetRequest) Execute() (*DpaEbpProductDetailGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaEbpProductDetailGetGetRequest) Execute() (*models.DpaEbpProductDetailGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -101,12 +102,12 @@ func (a *DpaEbpProductDetailGetV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return DpaEbpProductDetailGetV30Response
-func (a *DpaEbpProductDetailGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpProductDetailGetGetRequest) (*DpaEbpProductDetailGetV30Response, *http.Response, error) {
+func (a *DpaEbpProductDetailGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpProductDetailGetGetRequest) (*models.DpaEbpProductDetailGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaEbpProductDetailGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaEbpProductDetailGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -116,7 +117,7 @@ func (a *DpaEbpProductDetailGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpP
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/ebp/product/detail/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

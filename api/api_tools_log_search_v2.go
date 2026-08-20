@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsLogSearchV2ApiService ToolsLogSearchV2Api service
@@ -65,7 +66,7 @@ func (r *ApiOpenApi2ToolsLogSearchGetRequest) PageSize(pageSize int64) *ApiOpenA
 	return r
 }
 
-func (r *ApiOpenApi2ToolsLogSearchGetRequest) Execute() (*ToolsLogSearchV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsLogSearchGetRequest) Execute() (*models.ToolsLogSearchV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -99,12 +100,12 @@ func (a *ToolsLogSearchV2ApiService) Get(ctx context.Context) *ApiOpenApi2ToolsL
 // Execute executes the request
 //
 //	@return ToolsLogSearchV2Response
-func (a *ToolsLogSearchV2ApiService) getExecute(r *ApiOpenApi2ToolsLogSearchGetRequest) (*ToolsLogSearchV2Response, *http.Response, error) {
+func (a *ToolsLogSearchV2ApiService) getExecute(r *ApiOpenApi2ToolsLogSearchGetRequest) (*models.ToolsLogSearchV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsLogSearchV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsLogSearchV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -114,7 +115,7 @@ func (a *ToolsLogSearchV2ApiService) getExecute(r *ApiOpenApi2ToolsLogSearchGetR
 	localVarPath := localBasePath + "/open_api/2/tools/log_search/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

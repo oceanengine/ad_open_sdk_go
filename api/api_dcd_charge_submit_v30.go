@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DcdChargeSubmitV30ApiService DcdChargeSubmitV30Api service
@@ -25,15 +26,15 @@ type DcdChargeSubmitV30ApiService service
 type ApiOpenApiV30DcdChargeSubmitPostRequest struct {
 	ctx                       context.Context
 	ApiService                *DcdChargeSubmitV30ApiService
-	dcdChargeSubmitV30Request *DcdChargeSubmitV30Request
+	dcdChargeSubmitV30Request *models.DcdChargeSubmitV30Request
 }
 
-func (r *ApiOpenApiV30DcdChargeSubmitPostRequest) DcdChargeSubmitV30Request(dcdChargeSubmitV30Request DcdChargeSubmitV30Request) *ApiOpenApiV30DcdChargeSubmitPostRequest {
+func (r *ApiOpenApiV30DcdChargeSubmitPostRequest) DcdChargeSubmitV30Request(dcdChargeSubmitV30Request models.DcdChargeSubmitV30Request) *ApiOpenApiV30DcdChargeSubmitPostRequest {
 	r.dcdChargeSubmitV30Request = &dcdChargeSubmitV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30DcdChargeSubmitPostRequest) Execute() (*DcdChargeSubmitV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DcdChargeSubmitPostRequest) Execute() (*models.DcdChargeSubmitV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DcdChargeSubmitV30ApiService) Post(ctx context.Context) *ApiOpenApiV30D
 // Execute executes the request
 //
 //	@return DcdChargeSubmitV30Response
-func (a *DcdChargeSubmitV30ApiService) postExecute(r *ApiOpenApiV30DcdChargeSubmitPostRequest) (*DcdChargeSubmitV30Response, *http.Response, error) {
+func (a *DcdChargeSubmitV30ApiService) postExecute(r *ApiOpenApiV30DcdChargeSubmitPostRequest) (*models.DcdChargeSubmitV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DcdChargeSubmitV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DcdChargeSubmitV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DcdChargeSubmitV30ApiService) postExecute(r *ApiOpenApiV30DcdChargeSubm
 	localVarPath := localBasePath + "/open_api/v3.0/dcd/charge/submit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

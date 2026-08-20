@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportCustomGetV10ApiService QianchuanReportCustomGetV10Api service
@@ -25,19 +26,19 @@ type QianchuanReportCustomGetV10ApiService service
 type ApiOpenApiV10QianchuanReportCustomGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanReportCustomGetV10ApiService
-	dataTopic    *QianchuanReportCustomGetV10DataTopic
+	dataTopic    *models.QianchuanReportCustomGetV10DataTopic
 	dimensions   *[]string
 	metrics      *[]string
-	filters      *[]*QianchuanReportCustomGetV10FiltersInner
+	filters      *[]*models.QianchuanReportCustomGetV10FiltersInner
 	startTime    *string
 	endTime      *string
-	orderBy      *[]*QianchuanReportCustomGetV10OrderByInner
+	orderBy      *[]*models.QianchuanReportCustomGetV10OrderByInner
 	advertiserId *int64
 	page         *int32
 	pageSize     *int32
 }
 
-func (r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) DataTopic(dataTopic QianchuanReportCustomGetV10DataTopic) *ApiOpenApiV10QianchuanReportCustomGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) DataTopic(dataTopic models.QianchuanReportCustomGetV10DataTopic) *ApiOpenApiV10QianchuanReportCustomGetGetRequest {
 	r.dataTopic = &dataTopic
 	return r
 }
@@ -52,7 +53,7 @@ func (r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) Metrics(metrics []stri
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) Filters(filters []*QianchuanReportCustomGetV10FiltersInner) *ApiOpenApiV10QianchuanReportCustomGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) Filters(filters []*models.QianchuanReportCustomGetV10FiltersInner) *ApiOpenApiV10QianchuanReportCustomGetGetRequest {
 	r.filters = &filters
 	return r
 }
@@ -67,7 +68,7 @@ func (r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) EndTime(endTime string
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) OrderBy(orderBy []*QianchuanReportCustomGetV10OrderByInner) *ApiOpenApiV10QianchuanReportCustomGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) OrderBy(orderBy []*models.QianchuanReportCustomGetV10OrderByInner) *ApiOpenApiV10QianchuanReportCustomGetGetRequest {
 	r.orderBy = &orderBy
 	return r
 }
@@ -89,7 +90,7 @@ func (r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) PageSize(pageSize int3
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) Execute() (*QianchuanReportCustomGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) Execute() (*models.QianchuanReportCustomGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -123,12 +124,12 @@ func (a *QianchuanReportCustomGetV10ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return QianchuanReportCustomGetV10Response
-func (a *QianchuanReportCustomGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) (*QianchuanReportCustomGetV10Response, *http.Response, error) {
+func (a *QianchuanReportCustomGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportCustomGetGetRequest) (*models.QianchuanReportCustomGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportCustomGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportCustomGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -138,7 +139,7 @@ func (a *QianchuanReportCustomGetV10ApiService) getExecute(r *ApiOpenApiV10Qianc
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/custom/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.dataTopic == nil {

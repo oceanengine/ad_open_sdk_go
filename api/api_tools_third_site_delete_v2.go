@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsThirdSiteDeleteV2ApiService ToolsThirdSiteDeleteV2Api service
@@ -25,15 +26,15 @@ type ToolsThirdSiteDeleteV2ApiService service
 type ApiOpenApi2ToolsThirdSiteDeletePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *ToolsThirdSiteDeleteV2ApiService
-	toolsThirdSiteDeleteV2Request *ToolsThirdSiteDeleteV2Request
+	toolsThirdSiteDeleteV2Request *models.ToolsThirdSiteDeleteV2Request
 }
 
-func (r *ApiOpenApi2ToolsThirdSiteDeletePostRequest) ToolsThirdSiteDeleteV2Request(toolsThirdSiteDeleteV2Request ToolsThirdSiteDeleteV2Request) *ApiOpenApi2ToolsThirdSiteDeletePostRequest {
+func (r *ApiOpenApi2ToolsThirdSiteDeletePostRequest) ToolsThirdSiteDeleteV2Request(toolsThirdSiteDeleteV2Request models.ToolsThirdSiteDeleteV2Request) *ApiOpenApi2ToolsThirdSiteDeletePostRequest {
 	r.toolsThirdSiteDeleteV2Request = &toolsThirdSiteDeleteV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsThirdSiteDeletePostRequest) Execute() (*ToolsThirdSiteDeleteV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsThirdSiteDeletePostRequest) Execute() (*models.ToolsThirdSiteDeleteV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsThirdSiteDeleteV2ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsThirdSiteDeleteV2Response
-func (a *ToolsThirdSiteDeleteV2ApiService) postExecute(r *ApiOpenApi2ToolsThirdSiteDeletePostRequest) (*ToolsThirdSiteDeleteV2Response, *http.Response, error) {
+func (a *ToolsThirdSiteDeleteV2ApiService) postExecute(r *ApiOpenApi2ToolsThirdSiteDeletePostRequest) (*models.ToolsThirdSiteDeleteV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsThirdSiteDeleteV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsThirdSiteDeleteV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsThirdSiteDeleteV2ApiService) postExecute(r *ApiOpenApi2ToolsThirdS
 	localVarPath := localBasePath + "/open_api/2/tools/third_site/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

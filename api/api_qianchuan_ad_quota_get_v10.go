@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAdQuotaGetV10ApiService QianchuanAdQuotaGetV10Api service
@@ -34,7 +35,7 @@ func (r *ApiOpenApiV10QianchuanAdQuotaGetGetRequest) AdvertiserId(advertiserId i
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAdQuotaGetGetRequest) Execute() (*QianchuanAdQuotaGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAdQuotaGetGetRequest) Execute() (*models.QianchuanAdQuotaGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *QianchuanAdQuotaGetV10ApiService) Get(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return QianchuanAdQuotaGetV10Response
-func (a *QianchuanAdQuotaGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAdQuotaGetGetRequest) (*QianchuanAdQuotaGetV10Response, *http.Response, error) {
+func (a *QianchuanAdQuotaGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAdQuotaGetGetRequest) (*models.QianchuanAdQuotaGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAdQuotaGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAdQuotaGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *QianchuanAdQuotaGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanA
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/ad/quota/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

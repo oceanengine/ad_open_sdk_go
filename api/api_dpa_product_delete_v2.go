@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaProductDeleteV2ApiService DpaProductDeleteV2Api service
@@ -25,15 +26,15 @@ type DpaProductDeleteV2ApiService service
 type ApiOpenApi2DpaProductDeletePostRequest struct {
 	ctx                       context.Context
 	ApiService                *DpaProductDeleteV2ApiService
-	dpaProductDeleteV2Request *DpaProductDeleteV2Request
+	dpaProductDeleteV2Request *models.DpaProductDeleteV2Request
 }
 
-func (r *ApiOpenApi2DpaProductDeletePostRequest) DpaProductDeleteV2Request(dpaProductDeleteV2Request DpaProductDeleteV2Request) *ApiOpenApi2DpaProductDeletePostRequest {
+func (r *ApiOpenApi2DpaProductDeletePostRequest) DpaProductDeleteV2Request(dpaProductDeleteV2Request models.DpaProductDeleteV2Request) *ApiOpenApi2DpaProductDeletePostRequest {
 	r.dpaProductDeleteV2Request = &dpaProductDeleteV2Request
 	return r
 }
 
-func (r *ApiOpenApi2DpaProductDeletePostRequest) Execute() (*DpaProductDeleteV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DpaProductDeletePostRequest) Execute() (*models.DpaProductDeleteV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DpaProductDeleteV2ApiService) Post(ctx context.Context) *ApiOpenApi2Dpa
 // Execute executes the request
 //
 //	@return DpaProductDeleteV2Response
-func (a *DpaProductDeleteV2ApiService) postExecute(r *ApiOpenApi2DpaProductDeletePostRequest) (*DpaProductDeleteV2Response, *http.Response, error) {
+func (a *DpaProductDeleteV2ApiService) postExecute(r *ApiOpenApi2DpaProductDeletePostRequest) (*models.DpaProductDeleteV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaProductDeleteV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaProductDeleteV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DpaProductDeleteV2ApiService) postExecute(r *ApiOpenApi2DpaProductDelet
 	localVarPath := localBasePath + "/open_api/2/dpa/product/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

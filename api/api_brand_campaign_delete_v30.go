@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandCampaignDeleteV30ApiService BrandCampaignDeleteV30Api service
@@ -25,15 +26,15 @@ type BrandCampaignDeleteV30ApiService service
 type ApiOpenApiV30BrandCampaignDeletePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *BrandCampaignDeleteV30ApiService
-	brandCampaignDeleteV30Request *BrandCampaignDeleteV30Request
+	brandCampaignDeleteV30Request *models.BrandCampaignDeleteV30Request
 }
 
-func (r *ApiOpenApiV30BrandCampaignDeletePostRequest) BrandCampaignDeleteV30Request(brandCampaignDeleteV30Request BrandCampaignDeleteV30Request) *ApiOpenApiV30BrandCampaignDeletePostRequest {
+func (r *ApiOpenApiV30BrandCampaignDeletePostRequest) BrandCampaignDeleteV30Request(brandCampaignDeleteV30Request models.BrandCampaignDeleteV30Request) *ApiOpenApiV30BrandCampaignDeletePostRequest {
 	r.brandCampaignDeleteV30Request = &brandCampaignDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30BrandCampaignDeletePostRequest) Execute() (*BrandCampaignDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandCampaignDeletePostRequest) Execute() (*models.BrandCampaignDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *BrandCampaignDeleteV30ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return BrandCampaignDeleteV30Response
-func (a *BrandCampaignDeleteV30ApiService) postExecute(r *ApiOpenApiV30BrandCampaignDeletePostRequest) (*BrandCampaignDeleteV30Response, *http.Response, error) {
+func (a *BrandCampaignDeleteV30ApiService) postExecute(r *ApiOpenApiV30BrandCampaignDeletePostRequest) (*models.BrandCampaignDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandCampaignDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandCampaignDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *BrandCampaignDeleteV30ApiService) postExecute(r *ApiOpenApiV30BrandCamp
 	localVarPath := localBasePath + "/open_api/v3.0/brand/campaign/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

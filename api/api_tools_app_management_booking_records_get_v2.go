@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementBookingRecordsGetV2ApiService ToolsAppManagementBookingRecordsGetV2Api service
@@ -27,10 +28,10 @@ type ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest struct {
 	ApiService   *ToolsAppManagementBookingRecordsGetV2ApiService
 	advertiserId *int64
 	packageId    *string
-	hostType     *ToolsAppManagementBookingRecordsGetV2HostType
+	hostType     *models.ToolsAppManagementBookingRecordsGetV2HostType
 	page         *int64
 	pageSize     *int64
-	createTime   *ToolsAppManagementBookingRecordsGetV2CreateTime
+	createTime   *models.ToolsAppManagementBookingRecordsGetV2CreateTime
 }
 
 func (r *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest {
@@ -43,7 +44,7 @@ func (r *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest) PackageId(pac
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest) HostType(hostType ToolsAppManagementBookingRecordsGetV2HostType) *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest) HostType(hostType models.ToolsAppManagementBookingRecordsGetV2HostType) *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest {
 	r.hostType = &hostType
 	return r
 }
@@ -58,12 +59,12 @@ func (r *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest) PageSize(page
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest) CreateTime(createTime ToolsAppManagementBookingRecordsGetV2CreateTime) *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest) CreateTime(createTime models.ToolsAppManagementBookingRecordsGetV2CreateTime) *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest {
 	r.createTime = &createTime
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest) Execute() (*ToolsAppManagementBookingRecordsGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest) Execute() (*models.ToolsAppManagementBookingRecordsGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ToolsAppManagementBookingRecordsGetV2ApiService) Get(ctx context.Contex
 // Execute executes the request
 //
 //	@return ToolsAppManagementBookingRecordsGetV2Response
-func (a *ToolsAppManagementBookingRecordsGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest) (*ToolsAppManagementBookingRecordsGetV2Response, *http.Response, error) {
+func (a *ToolsAppManagementBookingRecordsGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementBookingRecordsGetGetRequest) (*models.ToolsAppManagementBookingRecordsGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementBookingRecordsGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementBookingRecordsGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ToolsAppManagementBookingRecordsGetV2ApiService) getExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/booking_records/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

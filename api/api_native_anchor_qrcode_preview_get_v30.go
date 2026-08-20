@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // NativeAnchorQrcodePreviewGetV30ApiService NativeAnchorQrcodePreviewGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest struct {
 	ApiService   *NativeAnchorQrcodePreviewGetV30ApiService
 	advertiserId *int64
 	anchorIds    *[]string
-	anchorType   *NativeAnchorQrcodePreviewGetV30AnchorType
+	anchorType   *models.NativeAnchorQrcodePreviewGetV30AnchorType
 }
 
 func (r *ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest {
@@ -40,12 +41,12 @@ func (r *ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest) AnchorIds(anchorId
 	return r
 }
 
-func (r *ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest) AnchorType(anchorType NativeAnchorQrcodePreviewGetV30AnchorType) *ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest {
+func (r *ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest) AnchorType(anchorType models.NativeAnchorQrcodePreviewGetV30AnchorType) *ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest {
 	r.anchorType = &anchorType
 	return r
 }
 
-func (r *ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest) Execute() (*NativeAnchorQrcodePreviewGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest) Execute() (*models.NativeAnchorQrcodePreviewGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *NativeAnchorQrcodePreviewGetV30ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return NativeAnchorQrcodePreviewGetV30Response
-func (a *NativeAnchorQrcodePreviewGetV30ApiService) getExecute(r *ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest) (*NativeAnchorQrcodePreviewGetV30Response, *http.Response, error) {
+func (a *NativeAnchorQrcodePreviewGetV30ApiService) getExecute(r *ApiOpenApiV30NativeAnchorQrcodePreviewGetGetRequest) (*models.NativeAnchorQrcodePreviewGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *NativeAnchorQrcodePreviewGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.NativeAnchorQrcodePreviewGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *NativeAnchorQrcodePreviewGetV30ApiService) getExecute(r *ApiOpenApiV30N
 	localVarPath := localBasePath + "/open_api/v3.0/native_anchor/qrcode_preview/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

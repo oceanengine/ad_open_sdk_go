@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // YuntuAudienceLabelGetV30ApiService YuntuAudienceLabelGetV30Api service
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV30YuntuAudienceLabelGetGetRequest) LabelId(labelId int64) *A
 	return r
 }
 
-func (r *ApiOpenApiV30YuntuAudienceLabelGetGetRequest) Execute() (*YuntuAudienceLabelGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30YuntuAudienceLabelGetGetRequest) Execute() (*models.YuntuAudienceLabelGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *YuntuAudienceLabelGetV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return YuntuAudienceLabelGetV30Response
-func (a *YuntuAudienceLabelGetV30ApiService) getExecute(r *ApiOpenApiV30YuntuAudienceLabelGetGetRequest) (*YuntuAudienceLabelGetV30Response, *http.Response, error) {
+func (a *YuntuAudienceLabelGetV30ApiService) getExecute(r *ApiOpenApiV30YuntuAudienceLabelGetGetRequest) (*models.YuntuAudienceLabelGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *YuntuAudienceLabelGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.YuntuAudienceLabelGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *YuntuAudienceLabelGetV30ApiService) getExecute(r *ApiOpenApiV30YuntuAud
 	localVarPath := localBasePath + "/open_api/v3.0/yuntu/audience_label/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.yuntuBrandId == nil {

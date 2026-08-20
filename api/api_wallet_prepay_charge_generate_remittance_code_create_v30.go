@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // WalletPrepayChargeGenerateRemittanceCodeCreateV30ApiService WalletPrepayChargeGenerateRemittanceCodeCreateV30Api service
@@ -25,15 +26,15 @@ type WalletPrepayChargeGenerateRemittanceCodeCreateV30ApiService service
 type ApiOpenApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostRequest struct {
 	ctx                                                      context.Context
 	ApiService                                               *WalletPrepayChargeGenerateRemittanceCodeCreateV30ApiService
-	walletPrepayChargeGenerateRemittanceCodeCreateV30Request *WalletPrepayChargeGenerateRemittanceCodeCreateV30Request
+	walletPrepayChargeGenerateRemittanceCodeCreateV30Request *models.WalletPrepayChargeGenerateRemittanceCodeCreateV30Request
 }
 
-func (r *ApiOpenApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostRequest) WalletPrepayChargeGenerateRemittanceCodeCreateV30Request(walletPrepayChargeGenerateRemittanceCodeCreateV30Request WalletPrepayChargeGenerateRemittanceCodeCreateV30Request) *ApiOpenApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostRequest {
+func (r *ApiOpenApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostRequest) WalletPrepayChargeGenerateRemittanceCodeCreateV30Request(walletPrepayChargeGenerateRemittanceCodeCreateV30Request models.WalletPrepayChargeGenerateRemittanceCodeCreateV30Request) *ApiOpenApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostRequest {
 	r.walletPrepayChargeGenerateRemittanceCodeCreateV30Request = &walletPrepayChargeGenerateRemittanceCodeCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostRequest) Execute() (*WalletPrepayChargeGenerateRemittanceCodeCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostRequest) Execute() (*models.WalletPrepayChargeGenerateRemittanceCodeCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *WalletPrepayChargeGenerateRemittanceCodeCreateV30ApiService) Post(ctx c
 // Execute executes the request
 //
 //	@return WalletPrepayChargeGenerateRemittanceCodeCreateV30Response
-func (a *WalletPrepayChargeGenerateRemittanceCodeCreateV30ApiService) postExecute(r *ApiOpenApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostRequest) (*WalletPrepayChargeGenerateRemittanceCodeCreateV30Response, *http.Response, error) {
+func (a *WalletPrepayChargeGenerateRemittanceCodeCreateV30ApiService) postExecute(r *ApiOpenApiV30WalletPrepayChargeGenerateRemittanceCodeCreatePostRequest) (*models.WalletPrepayChargeGenerateRemittanceCodeCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *WalletPrepayChargeGenerateRemittanceCodeCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.WalletPrepayChargeGenerateRemittanceCodeCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *WalletPrepayChargeGenerateRemittanceCodeCreateV30ApiService) postExecut
 	localVarPath := localBasePath + "/open_api/v3.0/wallet/prepay_charge/generate_remittance_code/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

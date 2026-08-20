@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ApiService ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Api service
@@ -28,9 +29,9 @@ type ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest s
 	organizationId *int64
 	startDate      *string
 	endDate        *string
-	filtering      *ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Filtering
+	filtering      *models.ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Filtering
 	orderField     *string
-	orderType      *ReportBusinessPlatformStardeliveryTaskVideoDataGetV30OrderType
+	orderType      *models.ReportBusinessPlatformStardeliveryTaskVideoDataGetV30OrderType
 	page           *int64
 	pageSize       *int64
 }
@@ -54,7 +55,7 @@ func (r *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetReque
 }
 
 // - 过滤条件，若此字段不传，或传空则视为无限制条件 - 多个条件之间为与关系，返回交集
-func (r *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest) Filtering(filtering ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Filtering) *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest {
+func (r *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest) Filtering(filtering models.ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Filtering) *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -66,7 +67,7 @@ func (r *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetReque
 }
 
 // 排序方式；默认值: DESC； - ASC 顺序 - DESC倒序
-func (r *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest) OrderType(orderType ReportBusinessPlatformStardeliveryTaskVideoDataGetV30OrderType) *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest {
+func (r *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest) OrderType(orderType models.ReportBusinessPlatformStardeliveryTaskVideoDataGetV30OrderType) *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -83,7 +84,7 @@ func (r *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetReque
 	return r
 }
 
-func (r *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest) Execute() (*ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest) Execute() (*models.ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -117,12 +118,12 @@ func (a *ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ApiService) Get(ct
 // Execute executes the request
 //
 //	@return ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Response
-func (a *ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ApiService) getExecute(r *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest) (*ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Response, *http.Response, error) {
+func (a *ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ApiService) getExecute(r *ApiOpenApiV30ReportBusinessPlatformStardeliveryTaskVideoDataGetGetRequest) (*models.ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportBusinessPlatformStardeliveryTaskVideoDataGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -132,7 +133,7 @@ func (a *ReportBusinessPlatformStardeliveryTaskVideoDataGetV30ApiService) getExe
 	localVarPath := localBasePath + "/open_api/v3.0/report/business_platform/stardelivery/task_video_data/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.organizationId == nil {

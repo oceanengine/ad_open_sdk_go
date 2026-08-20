@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanToolsEstimateAudienceV10ApiService QianchuanToolsEstimateAudienceV10Api service
@@ -26,11 +27,11 @@ type ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest struct {
 	ctx            context.Context
 	ApiService     *QianchuanToolsEstimateAudienceV10ApiService
 	advertiserId   *int64
-	marketingGoal  *QianchuanToolsEstimateAudienceV10MarketingGoal
-	externalAction *QianchuanToolsEstimateAudienceV10ExternalAction
+	marketingGoal  *models.QianchuanToolsEstimateAudienceV10MarketingGoal
+	externalAction *models.QianchuanToolsEstimateAudienceV10ExternalAction
 	productId      *int64
 	awemeId        *int64
-	audience       *QianchuanToolsEstimateAudienceV10Audience
+	audience       *models.QianchuanToolsEstimateAudienceV10Audience
 }
 
 func (r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest {
@@ -38,12 +39,12 @@ func (r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) AdvertiserId(adv
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) MarketingGoal(marketingGoal QianchuanToolsEstimateAudienceV10MarketingGoal) *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) MarketingGoal(marketingGoal models.QianchuanToolsEstimateAudienceV10MarketingGoal) *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) ExternalAction(externalAction QianchuanToolsEstimateAudienceV10ExternalAction) *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) ExternalAction(externalAction models.QianchuanToolsEstimateAudienceV10ExternalAction) *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest {
 	r.externalAction = &externalAction
 	return r
 }
@@ -58,12 +59,12 @@ func (r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) AwemeId(awemeId 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) Audience(audience QianchuanToolsEstimateAudienceV10Audience) *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) Audience(audience models.QianchuanToolsEstimateAudienceV10Audience) *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest {
 	r.audience = &audience
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) Execute() (*QianchuanToolsEstimateAudienceV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) Execute() (*models.QianchuanToolsEstimateAudienceV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *QianchuanToolsEstimateAudienceV10ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return QianchuanToolsEstimateAudienceV10Response
-func (a *QianchuanToolsEstimateAudienceV10ApiService) getExecute(r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) (*QianchuanToolsEstimateAudienceV10Response, *http.Response, error) {
+func (a *QianchuanToolsEstimateAudienceV10ApiService) getExecute(r *ApiOpenApiV10QianchuanToolsEstimateAudienceGetRequest) (*models.QianchuanToolsEstimateAudienceV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanToolsEstimateAudienceV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanToolsEstimateAudienceV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *QianchuanToolsEstimateAudienceV10ApiService) getExecute(r *ApiOpenApiV1
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/tools/estimate_audience/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

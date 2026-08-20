@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CustomerCenterAdvertiserCopyV2ApiService CustomerCenterAdvertiserCopyV2Api service
@@ -25,15 +26,15 @@ type CustomerCenterAdvertiserCopyV2ApiService service
 type ApiOpenApi2CustomerCenterAdvertiserCopyPostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *CustomerCenterAdvertiserCopyV2ApiService
-	customerCenterAdvertiserCopyV2Request *CustomerCenterAdvertiserCopyV2Request
+	customerCenterAdvertiserCopyV2Request *models.CustomerCenterAdvertiserCopyV2Request
 }
 
-func (r *ApiOpenApi2CustomerCenterAdvertiserCopyPostRequest) CustomerCenterAdvertiserCopyV2Request(customerCenterAdvertiserCopyV2Request CustomerCenterAdvertiserCopyV2Request) *ApiOpenApi2CustomerCenterAdvertiserCopyPostRequest {
+func (r *ApiOpenApi2CustomerCenterAdvertiserCopyPostRequest) CustomerCenterAdvertiserCopyV2Request(customerCenterAdvertiserCopyV2Request models.CustomerCenterAdvertiserCopyV2Request) *ApiOpenApi2CustomerCenterAdvertiserCopyPostRequest {
 	r.customerCenterAdvertiserCopyV2Request = &customerCenterAdvertiserCopyV2Request
 	return r
 }
 
-func (r *ApiOpenApi2CustomerCenterAdvertiserCopyPostRequest) Execute() (*CustomerCenterAdvertiserCopyV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CustomerCenterAdvertiserCopyPostRequest) Execute() (*models.CustomerCenterAdvertiserCopyV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *CustomerCenterAdvertiserCopyV2ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return CustomerCenterAdvertiserCopyV2Response
-func (a *CustomerCenterAdvertiserCopyV2ApiService) postExecute(r *ApiOpenApi2CustomerCenterAdvertiserCopyPostRequest) (*CustomerCenterAdvertiserCopyV2Response, *http.Response, error) {
+func (a *CustomerCenterAdvertiserCopyV2ApiService) postExecute(r *ApiOpenApi2CustomerCenterAdvertiserCopyPostRequest) (*models.CustomerCenterAdvertiserCopyV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CustomerCenterAdvertiserCopyV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CustomerCenterAdvertiserCopyV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *CustomerCenterAdvertiserCopyV2ApiService) postExecute(r *ApiOpenApi2Cus
 	localVarPath := localBasePath + "/open_api/2/customer_center/advertiser/copy/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

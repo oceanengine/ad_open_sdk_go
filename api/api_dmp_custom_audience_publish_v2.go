@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DmpCustomAudiencePublishV2ApiService DmpCustomAudiencePublishV2Api service
@@ -25,15 +26,15 @@ type DmpCustomAudiencePublishV2ApiService service
 type ApiOpenApi2DmpCustomAudiencePublishPostRequest struct {
 	ctx                               context.Context
 	ApiService                        *DmpCustomAudiencePublishV2ApiService
-	dmpCustomAudiencePublishV2Request *DmpCustomAudiencePublishV2Request
+	dmpCustomAudiencePublishV2Request *models.DmpCustomAudiencePublishV2Request
 }
 
-func (r *ApiOpenApi2DmpCustomAudiencePublishPostRequest) DmpCustomAudiencePublishV2Request(dmpCustomAudiencePublishV2Request DmpCustomAudiencePublishV2Request) *ApiOpenApi2DmpCustomAudiencePublishPostRequest {
+func (r *ApiOpenApi2DmpCustomAudiencePublishPostRequest) DmpCustomAudiencePublishV2Request(dmpCustomAudiencePublishV2Request models.DmpCustomAudiencePublishV2Request) *ApiOpenApi2DmpCustomAudiencePublishPostRequest {
 	r.dmpCustomAudiencePublishV2Request = &dmpCustomAudiencePublishV2Request
 	return r
 }
 
-func (r *ApiOpenApi2DmpCustomAudiencePublishPostRequest) Execute() (*DmpCustomAudiencePublishV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DmpCustomAudiencePublishPostRequest) Execute() (*models.DmpCustomAudiencePublishV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DmpCustomAudiencePublishV2ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return DmpCustomAudiencePublishV2Response
-func (a *DmpCustomAudiencePublishV2ApiService) postExecute(r *ApiOpenApi2DmpCustomAudiencePublishPostRequest) (*DmpCustomAudiencePublishV2Response, *http.Response, error) {
+func (a *DmpCustomAudiencePublishV2ApiService) postExecute(r *ApiOpenApi2DmpCustomAudiencePublishPostRequest) (*models.DmpCustomAudiencePublishV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DmpCustomAudiencePublishV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DmpCustomAudiencePublishV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DmpCustomAudiencePublishV2ApiService) postExecute(r *ApiOpenApi2DmpCust
 	localVarPath := localBasePath + "/open_api/2/dmp/custom_audience/publish/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

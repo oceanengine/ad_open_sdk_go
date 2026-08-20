@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaClueProductSaveV2ApiService DpaClueProductSaveV2Api service
@@ -25,15 +26,15 @@ type DpaClueProductSaveV2ApiService service
 type ApiOpenApi2DpaClueProductSavePostRequest struct {
 	ctx                         context.Context
 	ApiService                  *DpaClueProductSaveV2ApiService
-	dpaClueProductSaveV2Request *DpaClueProductSaveV2Request
+	dpaClueProductSaveV2Request *models.DpaClueProductSaveV2Request
 }
 
-func (r *ApiOpenApi2DpaClueProductSavePostRequest) DpaClueProductSaveV2Request(dpaClueProductSaveV2Request DpaClueProductSaveV2Request) *ApiOpenApi2DpaClueProductSavePostRequest {
+func (r *ApiOpenApi2DpaClueProductSavePostRequest) DpaClueProductSaveV2Request(dpaClueProductSaveV2Request models.DpaClueProductSaveV2Request) *ApiOpenApi2DpaClueProductSavePostRequest {
 	r.dpaClueProductSaveV2Request = &dpaClueProductSaveV2Request
 	return r
 }
 
-func (r *ApiOpenApi2DpaClueProductSavePostRequest) Execute() (*DpaClueProductSaveV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DpaClueProductSavePostRequest) Execute() (*models.DpaClueProductSaveV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DpaClueProductSaveV2ApiService) Post(ctx context.Context) *ApiOpenApi2D
 // Execute executes the request
 //
 //	@return DpaClueProductSaveV2Response
-func (a *DpaClueProductSaveV2ApiService) postExecute(r *ApiOpenApi2DpaClueProductSavePostRequest) (*DpaClueProductSaveV2Response, *http.Response, error) {
+func (a *DpaClueProductSaveV2ApiService) postExecute(r *ApiOpenApi2DpaClueProductSavePostRequest) (*models.DpaClueProductSaveV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaClueProductSaveV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaClueProductSaveV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DpaClueProductSaveV2ApiService) postExecute(r *ApiOpenApi2DpaClueProduc
 	localVarPath := localBasePath + "/open_api/2/dpa/clue_product/save/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

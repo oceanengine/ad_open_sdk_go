@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoGetV2ApiService FileVideoGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2FileVideoGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *FileVideoGetV2ApiService
 	advertiserId *int64
-	filtering    *FileVideoGetV2Filtering
+	filtering    *models.FileVideoGetV2Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApi2FileVideoGetGetRequest) AdvertiserId(advertiserId int64) *Ap
 }
 
 // 视频过滤条件
-func (r *ApiOpenApi2FileVideoGetGetRequest) Filtering(filtering FileVideoGetV2Filtering) *ApiOpenApi2FileVideoGetGetRequest {
+func (r *ApiOpenApi2FileVideoGetGetRequest) Filtering(filtering models.FileVideoGetV2Filtering) *ApiOpenApi2FileVideoGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2FileVideoGetGetRequest) PageSize(pageSize int64) *ApiOpenApi
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoGetGetRequest) Execute() (*FileVideoGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoGetGetRequest) Execute() (*models.FileVideoGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *FileVideoGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2FileVide
 // Execute executes the request
 //
 //	@return FileVideoGetV2Response
-func (a *FileVideoGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoGetGetRequest) (*FileVideoGetV2Response, *http.Response, error) {
+func (a *FileVideoGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoGetGetRequest) (*models.FileVideoGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *FileVideoGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoGetGetReque
 	localVarPath := localBasePath + "/open_api/2/file/video/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

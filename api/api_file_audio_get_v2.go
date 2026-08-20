@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileAudioGetV2ApiService FileAudioGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2FileAudioGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *FileAudioGetV2ApiService
 	advertiserId *int64
-	filtering    *FileAudioGetV2Filtering
+	filtering    *models.FileAudioGetV2Filtering
 	page         *int32
 	pageSize     *int32
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApi2FileAudioGetGetRequest) AdvertiserId(advertiserId int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2FileAudioGetGetRequest) Filtering(filtering FileAudioGetV2Filtering) *ApiOpenApi2FileAudioGetGetRequest {
+func (r *ApiOpenApi2FileAudioGetGetRequest) Filtering(filtering models.FileAudioGetV2Filtering) *ApiOpenApi2FileAudioGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -53,7 +54,7 @@ func (r *ApiOpenApi2FileAudioGetGetRequest) PageSize(pageSize int32) *ApiOpenApi
 	return r
 }
 
-func (r *ApiOpenApi2FileAudioGetGetRequest) Execute() (*FileAudioGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileAudioGetGetRequest) Execute() (*models.FileAudioGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -87,12 +88,12 @@ func (a *FileAudioGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2FileAudi
 // Execute executes the request
 //
 //	@return FileAudioGetV2Response
-func (a *FileAudioGetV2ApiService) getExecute(r *ApiOpenApi2FileAudioGetGetRequest) (*FileAudioGetV2Response, *http.Response, error) {
+func (a *FileAudioGetV2ApiService) getExecute(r *ApiOpenApi2FileAudioGetGetRequest) (*models.FileAudioGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileAudioGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileAudioGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -102,7 +103,7 @@ func (a *FileAudioGetV2ApiService) getExecute(r *ApiOpenApi2FileAudioGetGetReque
 	localVarPath := localBasePath + "/open_api/2/file/audio/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

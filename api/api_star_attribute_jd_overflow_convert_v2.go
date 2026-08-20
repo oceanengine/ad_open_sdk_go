@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarAttributeJdOverflowConvertV2ApiService StarAttributeJdOverflowConvertV2Api service
@@ -25,15 +26,15 @@ type StarAttributeJdOverflowConvertV2ApiService service
 type ApiOpenApi2StarAttributeJdOverflowConvertPostRequest struct {
 	ctx                                     context.Context
 	ApiService                              *StarAttributeJdOverflowConvertV2ApiService
-	starAttributeJdOverflowConvertV2Request *StarAttributeJdOverflowConvertV2Request
+	starAttributeJdOverflowConvertV2Request *models.StarAttributeJdOverflowConvertV2Request
 }
 
-func (r *ApiOpenApi2StarAttributeJdOverflowConvertPostRequest) StarAttributeJdOverflowConvertV2Request(starAttributeJdOverflowConvertV2Request StarAttributeJdOverflowConvertV2Request) *ApiOpenApi2StarAttributeJdOverflowConvertPostRequest {
+func (r *ApiOpenApi2StarAttributeJdOverflowConvertPostRequest) StarAttributeJdOverflowConvertV2Request(starAttributeJdOverflowConvertV2Request models.StarAttributeJdOverflowConvertV2Request) *ApiOpenApi2StarAttributeJdOverflowConvertPostRequest {
 	r.starAttributeJdOverflowConvertV2Request = &starAttributeJdOverflowConvertV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarAttributeJdOverflowConvertPostRequest) Execute() (*StarAttributeJdOverflowConvertV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarAttributeJdOverflowConvertPostRequest) Execute() (*models.StarAttributeJdOverflowConvertV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarAttributeJdOverflowConvertV2ApiService) Post(ctx context.Context) *
 // Execute executes the request
 //
 //	@return StarAttributeJdOverflowConvertV2Response
-func (a *StarAttributeJdOverflowConvertV2ApiService) postExecute(r *ApiOpenApi2StarAttributeJdOverflowConvertPostRequest) (*StarAttributeJdOverflowConvertV2Response, *http.Response, error) {
+func (a *StarAttributeJdOverflowConvertV2ApiService) postExecute(r *ApiOpenApi2StarAttributeJdOverflowConvertPostRequest) (*models.StarAttributeJdOverflowConvertV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarAttributeJdOverflowConvertV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarAttributeJdOverflowConvertV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarAttributeJdOverflowConvertV2ApiService) postExecute(r *ApiOpenApi2S
 	localVarPath := localBasePath + "/open_api/2/star/attribute/jd_overflow_convert/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

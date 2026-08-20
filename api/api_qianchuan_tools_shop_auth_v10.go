@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanToolsShopAuthV10ApiService QianchuanToolsShopAuthV10Api service
@@ -25,15 +26,15 @@ type QianchuanToolsShopAuthV10ApiService service
 type ApiOpenApiV10QianchuanToolsShopAuthPostRequest struct {
 	ctx                              context.Context
 	ApiService                       *QianchuanToolsShopAuthV10ApiService
-	qianchuanToolsShopAuthV10Request *QianchuanToolsShopAuthV10Request
+	qianchuanToolsShopAuthV10Request *models.QianchuanToolsShopAuthV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanToolsShopAuthPostRequest) QianchuanToolsShopAuthV10Request(qianchuanToolsShopAuthV10Request QianchuanToolsShopAuthV10Request) *ApiOpenApiV10QianchuanToolsShopAuthPostRequest {
+func (r *ApiOpenApiV10QianchuanToolsShopAuthPostRequest) QianchuanToolsShopAuthV10Request(qianchuanToolsShopAuthV10Request models.QianchuanToolsShopAuthV10Request) *ApiOpenApiV10QianchuanToolsShopAuthPostRequest {
 	r.qianchuanToolsShopAuthV10Request = &qianchuanToolsShopAuthV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsShopAuthPostRequest) Execute() (*QianchuanToolsShopAuthV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanToolsShopAuthPostRequest) Execute() (*models.QianchuanToolsShopAuthV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanToolsShopAuthV10ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return QianchuanToolsShopAuthV10Response
-func (a *QianchuanToolsShopAuthV10ApiService) postExecute(r *ApiOpenApiV10QianchuanToolsShopAuthPostRequest) (*QianchuanToolsShopAuthV10Response, *http.Response, error) {
+func (a *QianchuanToolsShopAuthV10ApiService) postExecute(r *ApiOpenApiV10QianchuanToolsShopAuthPostRequest) (*models.QianchuanToolsShopAuthV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanToolsShopAuthV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanToolsShopAuthV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanToolsShopAuthV10ApiService) postExecute(r *ApiOpenApiV10Qianch
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/tools/shop_auth/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

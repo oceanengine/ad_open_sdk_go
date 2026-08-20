@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SecurityAuditResultsV30ApiService SecurityAuditResultsV30Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30SecurityAuditResultsGetRequest) ObjectId(objectId int64) *
 	return r
 }
 
-func (r *ApiOpenApiV30SecurityAuditResultsGetRequest) Execute() (*SecurityAuditResultsV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SecurityAuditResultsGetRequest) Execute() (*models.SecurityAuditResultsV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *SecurityAuditResultsV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return SecurityAuditResultsV30Response
-func (a *SecurityAuditResultsV30ApiService) getExecute(r *ApiOpenApiV30SecurityAuditResultsGetRequest) (*SecurityAuditResultsV30Response, *http.Response, error) {
+func (a *SecurityAuditResultsV30ApiService) getExecute(r *ApiOpenApiV30SecurityAuditResultsGetRequest) (*models.SecurityAuditResultsV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SecurityAuditResultsV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SecurityAuditResultsV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *SecurityAuditResultsV30ApiService) getExecute(r *ApiOpenApiV30SecurityA
 	localVarPath := localBasePath + "/open_api/v3.0/security/audit_results/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

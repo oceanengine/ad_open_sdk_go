@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPlayableSaveV2ApiService ToolsPlayableSaveV2Api service
@@ -25,15 +26,15 @@ type ToolsPlayableSaveV2ApiService service
 type ApiOpenApi2ToolsPlayableSavePostRequest struct {
 	ctx                        context.Context
 	ApiService                 *ToolsPlayableSaveV2ApiService
-	toolsPlayableSaveV2Request *ToolsPlayableSaveV2Request
+	toolsPlayableSaveV2Request *models.ToolsPlayableSaveV2Request
 }
 
-func (r *ApiOpenApi2ToolsPlayableSavePostRequest) ToolsPlayableSaveV2Request(toolsPlayableSaveV2Request ToolsPlayableSaveV2Request) *ApiOpenApi2ToolsPlayableSavePostRequest {
+func (r *ApiOpenApi2ToolsPlayableSavePostRequest) ToolsPlayableSaveV2Request(toolsPlayableSaveV2Request models.ToolsPlayableSaveV2Request) *ApiOpenApi2ToolsPlayableSavePostRequest {
 	r.toolsPlayableSaveV2Request = &toolsPlayableSaveV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPlayableSavePostRequest) Execute() (*ToolsPlayableSaveV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPlayableSavePostRequest) Execute() (*models.ToolsPlayableSaveV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsPlayableSaveV2ApiService) Post(ctx context.Context) *ApiOpenApi2To
 // Execute executes the request
 //
 //	@return ToolsPlayableSaveV2Response
-func (a *ToolsPlayableSaveV2ApiService) postExecute(r *ApiOpenApi2ToolsPlayableSavePostRequest) (*ToolsPlayableSaveV2Response, *http.Response, error) {
+func (a *ToolsPlayableSaveV2ApiService) postExecute(r *ApiOpenApi2ToolsPlayableSavePostRequest) (*models.ToolsPlayableSaveV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPlayableSaveV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPlayableSaveV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsPlayableSaveV2ApiService) postExecute(r *ApiOpenApi2ToolsPlayableS
 	localVarPath := localBasePath + "/open_api/2/tools/playable/save/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

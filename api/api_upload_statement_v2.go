@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // UploadStatementV2ApiService UploadStatementV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2UploadStatementPostRequest struct {
 	ctx        context.Context
 	ApiService *UploadStatementV2ApiService
 	agentId    *int64
-	file       *FormFileInfo
+	file       *models.FormFileInfo
 }
 
 // 代理商id
@@ -36,12 +37,12 @@ func (r *ApiOpenApi2UploadStatementPostRequest) AgentId(agentId int64) *ApiOpenA
 }
 
 // 文件
-func (r *ApiOpenApi2UploadStatementPostRequest) File(file *FormFileInfo) *ApiOpenApi2UploadStatementPostRequest {
+func (r *ApiOpenApi2UploadStatementPostRequest) File(file *models.FormFileInfo) *ApiOpenApi2UploadStatementPostRequest {
 	r.file = file
 	return r
 }
 
-func (r *ApiOpenApi2UploadStatementPostRequest) Execute() (*UploadStatementV2Response, *http.Response, error) {
+func (r *ApiOpenApi2UploadStatementPostRequest) Execute() (*models.UploadStatementV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *UploadStatementV2ApiService) Post(ctx context.Context) *ApiOpenApi2Uplo
 // Execute executes the request
 //
 //	@return UploadStatementV2Response
-func (a *UploadStatementV2ApiService) postExecute(r *ApiOpenApi2UploadStatementPostRequest) (*UploadStatementV2Response, *http.Response, error) {
+func (a *UploadStatementV2ApiService) postExecute(r *ApiOpenApi2UploadStatementPostRequest) (*models.UploadStatementV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *UploadStatementV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.UploadStatementV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *UploadStatementV2ApiService) postExecute(r *ApiOpenApi2UploadStatementP
 	localVarPath := localBasePath + "/open_api/2/upload/statement/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

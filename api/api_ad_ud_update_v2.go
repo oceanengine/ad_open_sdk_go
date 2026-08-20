@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdUdUpdateV2ApiService AdUdUpdateV2Api service
@@ -25,15 +26,15 @@ type AdUdUpdateV2ApiService service
 type ApiOpenApi2AdUdUpdatePostRequest struct {
 	ctx                 context.Context
 	ApiService          *AdUdUpdateV2ApiService
-	adUdUpdateV2Request *AdUdUpdateV2Request
+	adUdUpdateV2Request *models.AdUdUpdateV2Request
 }
 
-func (r *ApiOpenApi2AdUdUpdatePostRequest) AdUdUpdateV2Request(adUdUpdateV2Request AdUdUpdateV2Request) *ApiOpenApi2AdUdUpdatePostRequest {
+func (r *ApiOpenApi2AdUdUpdatePostRequest) AdUdUpdateV2Request(adUdUpdateV2Request models.AdUdUpdateV2Request) *ApiOpenApi2AdUdUpdatePostRequest {
 	r.adUdUpdateV2Request = &adUdUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AdUdUpdatePostRequest) Execute() (*AdUdUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdUdUpdatePostRequest) Execute() (*models.AdUdUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AdUdUpdateV2ApiService) Post(ctx context.Context) *ApiOpenApi2AdUdUpdat
 // Execute executes the request
 //
 //	@return AdUdUpdateV2Response
-func (a *AdUdUpdateV2ApiService) postExecute(r *ApiOpenApi2AdUdUpdatePostRequest) (*AdUdUpdateV2Response, *http.Response, error) {
+func (a *AdUdUpdateV2ApiService) postExecute(r *ApiOpenApi2AdUdUpdatePostRequest) (*models.AdUdUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdUdUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdUdUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AdUdUpdateV2ApiService) postExecute(r *ApiOpenApi2AdUdUpdatePostRequest
 	localVarPath := localBasePath + "/open_api/2/ad/ud/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

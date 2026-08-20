@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAwemeInfoSearchV2ApiService ToolsAwemeInfoSearchV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2ToolsAwemeInfoSearchGetRequest struct {
 	ApiService   *ToolsAwemeInfoSearchV2ApiService
 	advertiserId *int64
 	queryWord    *string
-	behaviors    *[]*ToolsAwemeInfoSearchV2Behaviors
+	behaviors    *[]*models.ToolsAwemeInfoSearchV2Behaviors
 }
 
 func (r *ApiOpenApi2ToolsAwemeInfoSearchGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsAwemeInfoSearchGetRequest {
@@ -40,12 +41,12 @@ func (r *ApiOpenApi2ToolsAwemeInfoSearchGetRequest) QueryWord(queryWord string) 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeInfoSearchGetRequest) Behaviors(behaviors []*ToolsAwemeInfoSearchV2Behaviors) *ApiOpenApi2ToolsAwemeInfoSearchGetRequest {
+func (r *ApiOpenApi2ToolsAwemeInfoSearchGetRequest) Behaviors(behaviors []*models.ToolsAwemeInfoSearchV2Behaviors) *ApiOpenApi2ToolsAwemeInfoSearchGetRequest {
 	r.behaviors = &behaviors
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeInfoSearchGetRequest) Execute() (*ToolsAwemeInfoSearchV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAwemeInfoSearchGetRequest) Execute() (*models.ToolsAwemeInfoSearchV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *ToolsAwemeInfoSearchV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return ToolsAwemeInfoSearchV2Response
-func (a *ToolsAwemeInfoSearchV2ApiService) getExecute(r *ApiOpenApi2ToolsAwemeInfoSearchGetRequest) (*ToolsAwemeInfoSearchV2Response, *http.Response, error) {
+func (a *ToolsAwemeInfoSearchV2ApiService) getExecute(r *ApiOpenApi2ToolsAwemeInfoSearchGetRequest) (*models.ToolsAwemeInfoSearchV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAwemeInfoSearchV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAwemeInfoSearchV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *ToolsAwemeInfoSearchV2ApiService) getExecute(r *ApiOpenApi2ToolsAwemeIn
 	localVarPath := localBasePath + "/open_api/2/tools/aweme_info_search/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

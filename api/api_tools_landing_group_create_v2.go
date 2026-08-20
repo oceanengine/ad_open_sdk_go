@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsLandingGroupCreateV2ApiService ToolsLandingGroupCreateV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsLandingGroupCreatePostRequest struct {
 	ctx                              context.Context
 	ApiService                       *ToolsLandingGroupCreateV2ApiService
 	xOrangeCaller                    *string
-	toolsLandingGroupCreateV2Request *ToolsLandingGroupCreateV2Request
+	toolsLandingGroupCreateV2Request *models.ToolsLandingGroupCreateV2Request
 }
 
 func (r *ApiOpenApi2ToolsLandingGroupCreatePostRequest) XOrangeCaller(xOrangeCaller string) *ApiOpenApi2ToolsLandingGroupCreatePostRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2ToolsLandingGroupCreatePostRequest) XOrangeCaller(xOrangeCal
 	return r
 }
 
-func (r *ApiOpenApi2ToolsLandingGroupCreatePostRequest) ToolsLandingGroupCreateV2Request(toolsLandingGroupCreateV2Request ToolsLandingGroupCreateV2Request) *ApiOpenApi2ToolsLandingGroupCreatePostRequest {
+func (r *ApiOpenApi2ToolsLandingGroupCreatePostRequest) ToolsLandingGroupCreateV2Request(toolsLandingGroupCreateV2Request models.ToolsLandingGroupCreateV2Request) *ApiOpenApi2ToolsLandingGroupCreatePostRequest {
 	r.toolsLandingGroupCreateV2Request = &toolsLandingGroupCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsLandingGroupCreatePostRequest) Execute() (*ToolsLandingGroupCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsLandingGroupCreatePostRequest) Execute() (*models.ToolsLandingGroupCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsLandingGroupCreateV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsLandingGroupCreateV2Response
-func (a *ToolsLandingGroupCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsLandingGroupCreatePostRequest) (*ToolsLandingGroupCreateV2Response, *http.Response, error) {
+func (a *ToolsLandingGroupCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsLandingGroupCreatePostRequest) (*models.ToolsLandingGroupCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsLandingGroupCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsLandingGroupCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsLandingGroupCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsLan
 	localVarPath := localBasePath + "/open_api/2/tools/landing_group/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

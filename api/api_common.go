@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 type CommonApiService service
@@ -65,7 +66,7 @@ func (r *CommonApiRequest) RequestForm(requestForm map[string]interface{}) *Comm
 	return r
 }
 
-func (r *CommonApiRequest) Execute() (*CommonResponse, *http.Response, error) {
+func (r *CommonApiRequest) Execute() (*models.CommonResponse, *http.Response, error) {
 	return r.ApiService.execute(r)
 }
 
@@ -98,14 +99,14 @@ func (a *CommonApiService) PostMultipart(ctx context.Context, path string) *Comm
 	}
 }
 
-func (a *CommonApiService) execute(r *CommonApiRequest) (*CommonResponse, *http.Response, error) {
-	var localVarReturnValue *CommonResponse
+func (a *CommonApiService) execute(r *CommonApiRequest) (*models.CommonResponse, *http.Response, error) {
+	var localVarReturnValue *models.CommonResponse
 
 	r.ctx = a.client.prepareCtx(r.ctx)
 	localBasePath := a.client.Cfg.GetBasePath()
 	localVarPath := localBasePath + r.path
 	localVarHeaderParams := make(map[string]string)
-	localVarFormFiles := make(map[string]*FormFileInfo)
+	localVarFormFiles := make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
@@ -125,7 +126,7 @@ func (a *CommonApiService) execute(r *CommonApiRequest) (*CommonResponse, *http.
 
 	if len(r.requestFile) > 0 {
 		for k, v := range r.requestFile {
-			localVarFormFiles[k] = &FormFileInfo{FileName: v.FileName, FileBytes: v.FileBytes}
+			localVarFormFiles[k] = &models.FormFileInfo{FileName: v.FileName, FileBytes: v.FileBytes}
 		}
 	}
 

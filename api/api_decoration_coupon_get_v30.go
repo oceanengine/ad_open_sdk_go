@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DecorationCouponGetV30ApiService DecorationCouponGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30DecorationCouponGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *DecorationCouponGetV30ApiService
 	advertiserId *int64
-	filtering    *DecorationCouponGetV30Filtering
+	filtering    *models.DecorationCouponGetV30Filtering
 	page         *int32
 	pageSize     *int32
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30DecorationCouponGetGetRequest) AdvertiserId(advertiserId i
 }
 
 // 过滤条件
-func (r *ApiOpenApiV30DecorationCouponGetGetRequest) Filtering(filtering DecorationCouponGetV30Filtering) *ApiOpenApiV30DecorationCouponGetGetRequest {
+func (r *ApiOpenApiV30DecorationCouponGetGetRequest) Filtering(filtering models.DecorationCouponGetV30Filtering) *ApiOpenApiV30DecorationCouponGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30DecorationCouponGetGetRequest) PageSize(pageSize int32) *A
 	return r
 }
 
-func (r *ApiOpenApiV30DecorationCouponGetGetRequest) Execute() (*DecorationCouponGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DecorationCouponGetGetRequest) Execute() (*models.DecorationCouponGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *DecorationCouponGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return DecorationCouponGetV30Response
-func (a *DecorationCouponGetV30ApiService) getExecute(r *ApiOpenApiV30DecorationCouponGetGetRequest) (*DecorationCouponGetV30Response, *http.Response, error) {
+func (a *DecorationCouponGetV30ApiService) getExecute(r *ApiOpenApiV30DecorationCouponGetGetRequest) (*models.DecorationCouponGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DecorationCouponGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DecorationCouponGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *DecorationCouponGetV30ApiService) getExecute(r *ApiOpenApiV30Decoration
 	localVarPath := localBasePath + "/open_api/v3.0/decoration/coupon/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

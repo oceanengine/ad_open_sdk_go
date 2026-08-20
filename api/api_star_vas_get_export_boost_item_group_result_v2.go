@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarVasGetExportBoostItemGroupResultV2ApiService StarVasGetExportBoostItemGroupResultV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2StarVasGetExportBoostItemGroupResultGetRequest) TicketId(tic
 	return r
 }
 
-func (r *ApiOpenApi2StarVasGetExportBoostItemGroupResultGetRequest) Execute() (*StarVasGetExportBoostItemGroupResultV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarVasGetExportBoostItemGroupResultGetRequest) Execute() (*models.StarVasGetExportBoostItemGroupResultV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *StarVasGetExportBoostItemGroupResultV2ApiService) Get(ctx context.Conte
 // Execute executes the request
 //
 //	@return StarVasGetExportBoostItemGroupResultV2Response
-func (a *StarVasGetExportBoostItemGroupResultV2ApiService) getExecute(r *ApiOpenApi2StarVasGetExportBoostItemGroupResultGetRequest) (*StarVasGetExportBoostItemGroupResultV2Response, *http.Response, error) {
+func (a *StarVasGetExportBoostItemGroupResultV2ApiService) getExecute(r *ApiOpenApi2StarVasGetExportBoostItemGroupResultGetRequest) (*models.StarVasGetExportBoostItemGroupResultV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarVasGetExportBoostItemGroupResultV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarVasGetExportBoostItemGroupResultV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *StarVasGetExportBoostItemGroupResultV2ApiService) getExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/2/star/vas/get_export_boost_item_group_result/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

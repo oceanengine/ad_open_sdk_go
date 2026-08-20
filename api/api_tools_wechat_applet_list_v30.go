@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsWechatAppletListV30ApiService ToolsWechatAppletListV30Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV30ToolsWechatAppletListGetRequest struct {
 	ctx                    context.Context
 	ApiService             *ToolsWechatAppletListV30ApiService
 	advertiserId           *int64
-	filtering              *ToolsWechatAppletListV30Filtering
+	filtering              *models.ToolsWechatAppletListV30Filtering
 	page                   *int32
 	pageSize               *int32
-	orderType              *ToolsWechatAppletListV30OrderType
-	orderField             *ToolsWechatAppletListV30OrderField
-	accountAssetQueryScope *ToolsWechatAppletListV30AccountAssetQueryScope
+	orderType              *models.ToolsWechatAppletListV30OrderType
+	orderField             *models.ToolsWechatAppletListV30OrderField
+	accountAssetQueryScope *models.ToolsWechatAppletListV30AccountAssetQueryScope
 }
 
 func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) AdvertiserId(advertiserId
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) Filtering(filtering ToolsWechatAppletListV30Filtering) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
+func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) Filtering(filtering models.ToolsWechatAppletListV30Filtering) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -55,23 +56,23 @@ func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) PageSize(pageSize int32) 
 }
 
 // 排序方式，允许值： ASC 升序 DESC 降序（默认值）
-func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) OrderType(orderType ToolsWechatAppletListV30OrderType) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
+func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) OrderType(orderType models.ToolsWechatAppletListV30OrderType) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
 	r.orderType = &orderType
 	return r
 }
 
 // 排序字段，允许值： create_time modify_time (默认值)
-func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) OrderField(orderField ToolsWechatAppletListV30OrderField) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
+func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) OrderField(orderField models.ToolsWechatAppletListV30OrderField) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
 	r.orderField = &orderField
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsWechatAppletListV30AccountAssetQueryScope) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
+func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) AccountAssetQueryScope(accountAssetQueryScope models.ToolsWechatAppletListV30AccountAssetQueryScope) *ApiOpenApiV30ToolsWechatAppletListGetRequest {
 	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) Execute() (*ToolsWechatAppletListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsWechatAppletListGetRequest) Execute() (*models.ToolsWechatAppletListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -105,12 +106,12 @@ func (a *ToolsWechatAppletListV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsWechatAppletListV30Response
-func (a *ToolsWechatAppletListV30ApiService) getExecute(r *ApiOpenApiV30ToolsWechatAppletListGetRequest) (*ToolsWechatAppletListV30Response, *http.Response, error) {
+func (a *ToolsWechatAppletListV30ApiService) getExecute(r *ApiOpenApiV30ToolsWechatAppletListGetRequest) (*models.ToolsWechatAppletListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsWechatAppletListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsWechatAppletListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -120,7 +121,7 @@ func (a *ToolsWechatAppletListV30ApiService) getExecute(r *ApiOpenApiV30ToolsWec
 	localVarPath := localBasePath + "/open_api/v3.0/tools/wechat_applet/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

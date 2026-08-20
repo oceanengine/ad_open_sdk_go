@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalFileUploadTaskCreateV30ApiService LocalFileUploadTaskCreateV30Api service
@@ -25,15 +26,15 @@ type LocalFileUploadTaskCreateV30ApiService service
 type ApiOpenApiV30LocalFileUploadTaskCreatePostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *LocalFileUploadTaskCreateV30ApiService
-	localFileUploadTaskCreateV30Request *LocalFileUploadTaskCreateV30Request
+	localFileUploadTaskCreateV30Request *models.LocalFileUploadTaskCreateV30Request
 }
 
-func (r *ApiOpenApiV30LocalFileUploadTaskCreatePostRequest) LocalFileUploadTaskCreateV30Request(localFileUploadTaskCreateV30Request LocalFileUploadTaskCreateV30Request) *ApiOpenApiV30LocalFileUploadTaskCreatePostRequest {
+func (r *ApiOpenApiV30LocalFileUploadTaskCreatePostRequest) LocalFileUploadTaskCreateV30Request(localFileUploadTaskCreateV30Request models.LocalFileUploadTaskCreateV30Request) *ApiOpenApiV30LocalFileUploadTaskCreatePostRequest {
 	r.localFileUploadTaskCreateV30Request = &localFileUploadTaskCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30LocalFileUploadTaskCreatePostRequest) Execute() (*LocalFileUploadTaskCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalFileUploadTaskCreatePostRequest) Execute() (*models.LocalFileUploadTaskCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *LocalFileUploadTaskCreateV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return LocalFileUploadTaskCreateV30Response
-func (a *LocalFileUploadTaskCreateV30ApiService) postExecute(r *ApiOpenApiV30LocalFileUploadTaskCreatePostRequest) (*LocalFileUploadTaskCreateV30Response, *http.Response, error) {
+func (a *LocalFileUploadTaskCreateV30ApiService) postExecute(r *ApiOpenApiV30LocalFileUploadTaskCreatePostRequest) (*models.LocalFileUploadTaskCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalFileUploadTaskCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalFileUploadTaskCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *LocalFileUploadTaskCreateV30ApiService) postExecute(r *ApiOpenApiV30Loc
 	localVarPath := localBasePath + "/open_api/v3.0/local/file/upload_task/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

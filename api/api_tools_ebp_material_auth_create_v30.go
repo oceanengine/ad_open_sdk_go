@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpMaterialAuthCreateV30ApiService ToolsEbpMaterialAuthCreateV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpMaterialAuthCreateV30ApiService service
 type ApiOpenApiV30ToolsEbpMaterialAuthCreatePostRequest struct {
 	ctx                                  context.Context
 	ApiService                           *ToolsEbpMaterialAuthCreateV30ApiService
-	toolsEbpMaterialAuthCreateV30Request *ToolsEbpMaterialAuthCreateV30Request
+	toolsEbpMaterialAuthCreateV30Request *models.ToolsEbpMaterialAuthCreateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpMaterialAuthCreatePostRequest) ToolsEbpMaterialAuthCreateV30Request(toolsEbpMaterialAuthCreateV30Request ToolsEbpMaterialAuthCreateV30Request) *ApiOpenApiV30ToolsEbpMaterialAuthCreatePostRequest {
+func (r *ApiOpenApiV30ToolsEbpMaterialAuthCreatePostRequest) ToolsEbpMaterialAuthCreateV30Request(toolsEbpMaterialAuthCreateV30Request models.ToolsEbpMaterialAuthCreateV30Request) *ApiOpenApiV30ToolsEbpMaterialAuthCreatePostRequest {
 	r.toolsEbpMaterialAuthCreateV30Request = &toolsEbpMaterialAuthCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMaterialAuthCreatePostRequest) Execute() (*ToolsEbpMaterialAuthCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpMaterialAuthCreatePostRequest) Execute() (*models.ToolsEbpMaterialAuthCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpMaterialAuthCreateV30ApiService) Post(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return ToolsEbpMaterialAuthCreateV30Response
-func (a *ToolsEbpMaterialAuthCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpMaterialAuthCreatePostRequest) (*ToolsEbpMaterialAuthCreateV30Response, *http.Response, error) {
+func (a *ToolsEbpMaterialAuthCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpMaterialAuthCreatePostRequest) (*models.ToolsEbpMaterialAuthCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpMaterialAuthCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpMaterialAuthCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpMaterialAuthCreateV30ApiService) postExecute(r *ApiOpenApiV30To
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/material/auth/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

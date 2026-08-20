@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsLandingGroupSiteOptStatusUpdateV2ApiService ToolsLandingGroupSiteOptStatusUpdateV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest struct {
 	ctx                                           context.Context
 	ApiService                                    *ToolsLandingGroupSiteOptStatusUpdateV2ApiService
 	xOrangeCaller                                 *string
-	toolsLandingGroupSiteOptStatusUpdateV2Request *ToolsLandingGroupSiteOptStatusUpdateV2Request
+	toolsLandingGroupSiteOptStatusUpdateV2Request *models.ToolsLandingGroupSiteOptStatusUpdateV2Request
 }
 
 func (r *ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest) XOrangeCaller(xOrangeCaller string) *ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest) XOrangeCall
 	return r
 }
 
-func (r *ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest) ToolsLandingGroupSiteOptStatusUpdateV2Request(toolsLandingGroupSiteOptStatusUpdateV2Request ToolsLandingGroupSiteOptStatusUpdateV2Request) *ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest {
+func (r *ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest) ToolsLandingGroupSiteOptStatusUpdateV2Request(toolsLandingGroupSiteOptStatusUpdateV2Request models.ToolsLandingGroupSiteOptStatusUpdateV2Request) *ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest {
 	r.toolsLandingGroupSiteOptStatusUpdateV2Request = &toolsLandingGroupSiteOptStatusUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest) Execute() (*ToolsLandingGroupSiteOptStatusUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest) Execute() (*models.ToolsLandingGroupSiteOptStatusUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsLandingGroupSiteOptStatusUpdateV2ApiService) Post(ctx context.Cont
 // Execute executes the request
 //
 //	@return ToolsLandingGroupSiteOptStatusUpdateV2Response
-func (a *ToolsLandingGroupSiteOptStatusUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest) (*ToolsLandingGroupSiteOptStatusUpdateV2Response, *http.Response, error) {
+func (a *ToolsLandingGroupSiteOptStatusUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsLandingGroupSiteOptStatusUpdatePostRequest) (*models.ToolsLandingGroupSiteOptStatusUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsLandingGroupSiteOptStatusUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsLandingGroupSiteOptStatusUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsLandingGroupSiteOptStatusUpdateV2ApiService) postExecute(r *ApiOpe
 	localVarPath := localBasePath + "/open_api/2/tools/landing_group/site_opt_status/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

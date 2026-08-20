@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AicMaterialPushV30ApiService AicMaterialPushV30Api service
@@ -25,15 +26,15 @@ type AicMaterialPushV30ApiService service
 type ApiOpenApiV30AicMaterialPushPostRequest struct {
 	ctx                       context.Context
 	ApiService                *AicMaterialPushV30ApiService
-	aicMaterialPushV30Request *AicMaterialPushV30Request
+	aicMaterialPushV30Request *models.AicMaterialPushV30Request
 }
 
-func (r *ApiOpenApiV30AicMaterialPushPostRequest) AicMaterialPushV30Request(aicMaterialPushV30Request AicMaterialPushV30Request) *ApiOpenApiV30AicMaterialPushPostRequest {
+func (r *ApiOpenApiV30AicMaterialPushPostRequest) AicMaterialPushV30Request(aicMaterialPushV30Request models.AicMaterialPushV30Request) *ApiOpenApiV30AicMaterialPushPostRequest {
 	r.aicMaterialPushV30Request = &aicMaterialPushV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30AicMaterialPushPostRequest) Execute() (*AicMaterialPushV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AicMaterialPushPostRequest) Execute() (*models.AicMaterialPushV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AicMaterialPushV30ApiService) Post(ctx context.Context) *ApiOpenApiV30A
 // Execute executes the request
 //
 //	@return AicMaterialPushV30Response
-func (a *AicMaterialPushV30ApiService) postExecute(r *ApiOpenApiV30AicMaterialPushPostRequest) (*AicMaterialPushV30Response, *http.Response, error) {
+func (a *AicMaterialPushV30ApiService) postExecute(r *ApiOpenApiV30AicMaterialPushPostRequest) (*models.AicMaterialPushV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AicMaterialPushV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AicMaterialPushV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AicMaterialPushV30ApiService) postExecute(r *ApiOpenApiV30AicMaterialPu
 	localVarPath := localBasePath + "/open_api/v3.0/aic/material/push/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

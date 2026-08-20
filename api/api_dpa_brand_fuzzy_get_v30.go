@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaBrandFuzzyGetV30ApiService DpaBrandFuzzyGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30DpaBrandFuzzyGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *DpaBrandFuzzyGetV30ApiService
 	accountId   *int64
-	accountType *DpaBrandFuzzyGetV30AccountType
+	accountType *models.DpaBrandFuzzyGetV30AccountType
 	brandName   *string
 	page        *int64
 	pageSize    *int64
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30DpaBrandFuzzyGetGetRequest) AccountId(accountId int64) *Ap
 }
 
 // 账户类型
-func (r *ApiOpenApiV30DpaBrandFuzzyGetGetRequest) AccountType(accountType DpaBrandFuzzyGetV30AccountType) *ApiOpenApiV30DpaBrandFuzzyGetGetRequest {
+func (r *ApiOpenApiV30DpaBrandFuzzyGetGetRequest) AccountType(accountType models.DpaBrandFuzzyGetV30AccountType) *ApiOpenApiV30DpaBrandFuzzyGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30DpaBrandFuzzyGetGetRequest) PageSize(pageSize int64) *ApiO
 	return r
 }
 
-func (r *ApiOpenApiV30DpaBrandFuzzyGetGetRequest) Execute() (*DpaBrandFuzzyGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaBrandFuzzyGetGetRequest) Execute() (*models.DpaBrandFuzzyGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *DpaBrandFuzzyGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30D
 // Execute executes the request
 //
 //	@return DpaBrandFuzzyGetV30Response
-func (a *DpaBrandFuzzyGetV30ApiService) getExecute(r *ApiOpenApiV30DpaBrandFuzzyGetGetRequest) (*DpaBrandFuzzyGetV30Response, *http.Response, error) {
+func (a *DpaBrandFuzzyGetV30ApiService) getExecute(r *ApiOpenApiV30DpaBrandFuzzyGetGetRequest) (*models.DpaBrandFuzzyGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaBrandFuzzyGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaBrandFuzzyGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *DpaBrandFuzzyGetV30ApiService) getExecute(r *ApiOpenApiV30DpaBrandFuzzy
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/brand/fuzzy/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

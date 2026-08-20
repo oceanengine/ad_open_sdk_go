@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferQueryTransferBalanceV30ApiService CgTransferQueryTransferBalanceV30Api service
@@ -48,7 +49,7 @@ func (r *ApiOpenApiV30CgTransferQueryTransferBalanceGetRequest) AccountIdList(ac
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferQueryTransferBalanceGetRequest) Execute() (*CgTransferQueryTransferBalanceV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferQueryTransferBalanceGetRequest) Execute() (*models.CgTransferQueryTransferBalanceV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *CgTransferQueryTransferBalanceV30ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return CgTransferQueryTransferBalanceV30Response
-func (a *CgTransferQueryTransferBalanceV30ApiService) getExecute(r *ApiOpenApiV30CgTransferQueryTransferBalanceGetRequest) (*CgTransferQueryTransferBalanceV30Response, *http.Response, error) {
+func (a *CgTransferQueryTransferBalanceV30ApiService) getExecute(r *ApiOpenApiV30CgTransferQueryTransferBalanceGetRequest) (*models.CgTransferQueryTransferBalanceV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferQueryTransferBalanceV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferQueryTransferBalanceV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *CgTransferQueryTransferBalanceV30ApiService) getExecute(r *ApiOpenApiV3
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/query_transfer_balance/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.bizRequestNo == nil {

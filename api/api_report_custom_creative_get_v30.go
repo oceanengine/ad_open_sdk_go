@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportCustomCreativeGetV30ApiService ReportCustomCreativeGetV30Api service
@@ -28,10 +29,10 @@ type ApiOpenApiV30ReportCustomCreativeGetGetRequest struct {
 	dimensions   *[]string
 	advertiserId *int64
 	metrics      *[]string
-	filters      *[]*ReportCustomCreativeGetV30FiltersInner
+	filters      *[]*models.ReportCustomCreativeGetV30FiltersInner
 	startTime    *string
 	endTime      *string
-	orderBy      *[]*ReportCustomCreativeGetV30OrderByInner
+	orderBy      *[]*models.ReportCustomCreativeGetV30OrderByInner
 	page         *int32
 	pageSize     *int32
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30ReportCustomCreativeGetGetRequest) Metrics(metrics []strin
 }
 
 // 过滤条件
-func (r *ApiOpenApiV30ReportCustomCreativeGetGetRequest) Filters(filters []*ReportCustomCreativeGetV30FiltersInner) *ApiOpenApiV30ReportCustomCreativeGetGetRequest {
+func (r *ApiOpenApiV30ReportCustomCreativeGetGetRequest) Filters(filters []*models.ReportCustomCreativeGetV30FiltersInner) *ApiOpenApiV30ReportCustomCreativeGetGetRequest {
 	r.filters = &filters
 	return r
 }
@@ -73,7 +74,7 @@ func (r *ApiOpenApiV30ReportCustomCreativeGetGetRequest) EndTime(endTime string)
 }
 
 // 排序
-func (r *ApiOpenApiV30ReportCustomCreativeGetGetRequest) OrderBy(orderBy []*ReportCustomCreativeGetV30OrderByInner) *ApiOpenApiV30ReportCustomCreativeGetGetRequest {
+func (r *ApiOpenApiV30ReportCustomCreativeGetGetRequest) OrderBy(orderBy []*models.ReportCustomCreativeGetV30OrderByInner) *ApiOpenApiV30ReportCustomCreativeGetGetRequest {
 	r.orderBy = &orderBy
 	return r
 }
@@ -90,7 +91,7 @@ func (r *ApiOpenApiV30ReportCustomCreativeGetGetRequest) PageSize(pageSize int32
 	return r
 }
 
-func (r *ApiOpenApiV30ReportCustomCreativeGetGetRequest) Execute() (*ReportCustomCreativeGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportCustomCreativeGetGetRequest) Execute() (*models.ReportCustomCreativeGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -124,12 +125,12 @@ func (a *ReportCustomCreativeGetV30ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ReportCustomCreativeGetV30Response
-func (a *ReportCustomCreativeGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCustomCreativeGetGetRequest) (*ReportCustomCreativeGetV30Response, *http.Response, error) {
+func (a *ReportCustomCreativeGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCustomCreativeGetGetRequest) (*models.ReportCustomCreativeGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportCustomCreativeGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportCustomCreativeGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -139,7 +140,7 @@ func (a *ReportCustomCreativeGetV30ApiService) getExecute(r *ApiOpenApiV30Report
 	localVarPath := localBasePath + "/open_api/v3.0/report/custom/creative/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.dimensions == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AudiencePackageDeleteV2ApiService AudiencePackageDeleteV2Api service
@@ -25,15 +26,15 @@ type AudiencePackageDeleteV2ApiService service
 type ApiOpenApi2AudiencePackageDeletePostRequest struct {
 	ctx                            context.Context
 	ApiService                     *AudiencePackageDeleteV2ApiService
-	audiencePackageDeleteV2Request *AudiencePackageDeleteV2Request
+	audiencePackageDeleteV2Request *models.AudiencePackageDeleteV2Request
 }
 
-func (r *ApiOpenApi2AudiencePackageDeletePostRequest) AudiencePackageDeleteV2Request(audiencePackageDeleteV2Request AudiencePackageDeleteV2Request) *ApiOpenApi2AudiencePackageDeletePostRequest {
+func (r *ApiOpenApi2AudiencePackageDeletePostRequest) AudiencePackageDeleteV2Request(audiencePackageDeleteV2Request models.AudiencePackageDeleteV2Request) *ApiOpenApi2AudiencePackageDeletePostRequest {
 	r.audiencePackageDeleteV2Request = &audiencePackageDeleteV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AudiencePackageDeletePostRequest) Execute() (*AudiencePackageDeleteV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AudiencePackageDeletePostRequest) Execute() (*models.AudiencePackageDeleteV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AudiencePackageDeleteV2ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return AudiencePackageDeleteV2Response
-func (a *AudiencePackageDeleteV2ApiService) postExecute(r *ApiOpenApi2AudiencePackageDeletePostRequest) (*AudiencePackageDeleteV2Response, *http.Response, error) {
+func (a *AudiencePackageDeleteV2ApiService) postExecute(r *ApiOpenApi2AudiencePackageDeletePostRequest) (*models.AudiencePackageDeleteV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AudiencePackageDeleteV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AudiencePackageDeleteV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AudiencePackageDeleteV2ApiService) postExecute(r *ApiOpenApi2AudiencePa
 	localVarPath := localBasePath + "/open_api/2/audience_package/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

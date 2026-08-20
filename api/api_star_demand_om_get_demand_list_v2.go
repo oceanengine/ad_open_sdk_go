@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemandOmGetDemandListV2ApiService StarDemandOmGetDemandListV2Api service
@@ -30,7 +31,7 @@ type ApiOpenApi2StarDemandOmGetDemandListGetRequest struct {
 	pageSize                *int32
 	createStartTime         *int64
 	createEndTime           *int64
-	universalSettlementType *StarDemandOmGetDemandListV2UniversalSettlementType
+	universalSettlementType *models.StarDemandOmGetDemandListV2UniversalSettlementType
 	microAppId              *string
 }
 
@@ -65,7 +66,7 @@ func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) CreateEndTime(createEnd
 }
 
 // 结算方式 枚举，付费分佣、广告分成
-func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) UniversalSettlementType(universalSettlementType StarDemandOmGetDemandListV2UniversalSettlementType) *ApiOpenApi2StarDemandOmGetDemandListGetRequest {
+func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) UniversalSettlementType(universalSettlementType models.StarDemandOmGetDemandListV2UniversalSettlementType) *ApiOpenApi2StarDemandOmGetDemandListGetRequest {
 	r.universalSettlementType = &universalSettlementType
 	return r
 }
@@ -76,7 +77,7 @@ func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) MicroAppId(microAppId s
 	return r
 }
 
-func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) Execute() (*StarDemandOmGetDemandListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) Execute() (*models.StarDemandOmGetDemandListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *StarDemandOmGetDemandListV2ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return StarDemandOmGetDemandListV2Response
-func (a *StarDemandOmGetDemandListV2ApiService) getExecute(r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) (*StarDemandOmGetDemandListV2Response, *http.Response, error) {
+func (a *StarDemandOmGetDemandListV2ApiService) getExecute(r *ApiOpenApi2StarDemandOmGetDemandListGetRequest) (*models.StarDemandOmGetDemandListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemandOmGetDemandListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemandOmGetDemandListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *StarDemandOmGetDemandListV2ApiService) getExecute(r *ApiOpenApi2StarDem
 	localVarPath := localBasePath + "/open_api/2/star/demand/om_get_demand_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandCreativeGetV30ApiService BrandCreativeGetV30Api service
@@ -31,7 +32,7 @@ type ApiOpenApiV30BrandCreativeGetGetRequest struct {
 	adIds           *[]string
 	campaignIds     *[]string
 	creativeIds     *[]string
-	creativeStatus  *BrandCreativeGetV30CreativeStatus
+	creativeStatus  *models.BrandCreativeGetV30CreativeStatus
 	createStartTime *string
 	createEndTime   *string
 	startTime       *string
@@ -75,7 +76,7 @@ func (r *ApiOpenApiV30BrandCreativeGetGetRequest) CreativeIds(creativeIds []stri
 }
 
 // 广告创意状态
-func (r *ApiOpenApiV30BrandCreativeGetGetRequest) CreativeStatus(creativeStatus BrandCreativeGetV30CreativeStatus) *ApiOpenApiV30BrandCreativeGetGetRequest {
+func (r *ApiOpenApiV30BrandCreativeGetGetRequest) CreativeStatus(creativeStatus models.BrandCreativeGetV30CreativeStatus) *ApiOpenApiV30BrandCreativeGetGetRequest {
 	r.creativeStatus = &creativeStatus
 	return r
 }
@@ -104,7 +105,7 @@ func (r *ApiOpenApiV30BrandCreativeGetGetRequest) EndTime(endTime string) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApiV30BrandCreativeGetGetRequest) Execute() (*BrandCreativeGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandCreativeGetGetRequest) Execute() (*models.BrandCreativeGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -138,12 +139,12 @@ func (a *BrandCreativeGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30B
 // Execute executes the request
 //
 //	@return BrandCreativeGetV30Response
-func (a *BrandCreativeGetV30ApiService) getExecute(r *ApiOpenApiV30BrandCreativeGetGetRequest) (*BrandCreativeGetV30Response, *http.Response, error) {
+func (a *BrandCreativeGetV30ApiService) getExecute(r *ApiOpenApiV30BrandCreativeGetGetRequest) (*models.BrandCreativeGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandCreativeGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandCreativeGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -153,7 +154,7 @@ func (a *BrandCreativeGetV30ApiService) getExecute(r *ApiOpenApiV30BrandCreative
 	localVarPath := localBasePath + "/open_api/v3.0/brand/creative/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

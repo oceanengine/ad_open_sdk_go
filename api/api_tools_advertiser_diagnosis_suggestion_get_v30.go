@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAdvertiserDiagnosisSuggestionGetV30ApiService ToolsAdvertiserDiagnosisSuggestionGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsAdvertiserDiagnosisSuggestionGetV30ApiService
 	advertiserId *int64
-	filtering    *ToolsAdvertiserDiagnosisSuggestionGetV30Filtering
+	filtering    *models.ToolsAdvertiserDiagnosisSuggestionGetV30Filtering
 }
 
 func (r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest {
@@ -35,12 +36,12 @@ func (r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest) Advertise
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest) Filtering(filtering ToolsAdvertiserDiagnosisSuggestionGetV30Filtering) *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest {
+func (r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest) Filtering(filtering models.ToolsAdvertiserDiagnosisSuggestionGetV30Filtering) *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest) Execute() (*ToolsAdvertiserDiagnosisSuggestionGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest) Execute() (*models.ToolsAdvertiserDiagnosisSuggestionGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *ToolsAdvertiserDiagnosisSuggestionGetV30ApiService) Get(ctx context.Con
 // Execute executes the request
 //
 //	@return ToolsAdvertiserDiagnosisSuggestionGetV30Response
-func (a *ToolsAdvertiserDiagnosisSuggestionGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest) (*ToolsAdvertiserDiagnosisSuggestionGetV30Response, *http.Response, error) {
+func (a *ToolsAdvertiserDiagnosisSuggestionGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsAdvertiserDiagnosisSuggestionGetGetRequest) (*models.ToolsAdvertiserDiagnosisSuggestionGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAdvertiserDiagnosisSuggestionGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAdvertiserDiagnosisSuggestionGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *ToolsAdvertiserDiagnosisSuggestionGetV30ApiService) getExecute(r *ApiOp
 	localVarPath := localBasePath + "/open_api/v3.0/tools/advertiser_diagnosis/suggestion/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

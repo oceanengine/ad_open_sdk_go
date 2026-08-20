@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // RejectMaterialAiRepairAcceptTaskCreateV30ApiService RejectMaterialAiRepairAcceptTaskCreateV30Api service
@@ -25,15 +26,15 @@ type RejectMaterialAiRepairAcceptTaskCreateV30ApiService service
 type ApiOpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest struct {
 	ctx                                              context.Context
 	ApiService                                       *RejectMaterialAiRepairAcceptTaskCreateV30ApiService
-	rejectMaterialAiRepairAcceptTaskCreateV30Request *RejectMaterialAiRepairAcceptTaskCreateV30Request
+	rejectMaterialAiRepairAcceptTaskCreateV30Request *models.RejectMaterialAiRepairAcceptTaskCreateV30Request
 }
 
-func (r *ApiOpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest) RejectMaterialAiRepairAcceptTaskCreateV30Request(rejectMaterialAiRepairAcceptTaskCreateV30Request RejectMaterialAiRepairAcceptTaskCreateV30Request) *ApiOpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest {
+func (r *ApiOpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest) RejectMaterialAiRepairAcceptTaskCreateV30Request(rejectMaterialAiRepairAcceptTaskCreateV30Request models.RejectMaterialAiRepairAcceptTaskCreateV30Request) *ApiOpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest {
 	r.rejectMaterialAiRepairAcceptTaskCreateV30Request = &rejectMaterialAiRepairAcceptTaskCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest) Execute() (*RejectMaterialAiRepairAcceptTaskCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest) Execute() (*models.RejectMaterialAiRepairAcceptTaskCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *RejectMaterialAiRepairAcceptTaskCreateV30ApiService) Post(ctx context.C
 // Execute executes the request
 //
 //	@return RejectMaterialAiRepairAcceptTaskCreateV30Response
-func (a *RejectMaterialAiRepairAcceptTaskCreateV30ApiService) postExecute(r *ApiOpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest) (*RejectMaterialAiRepairAcceptTaskCreateV30Response, *http.Response, error) {
+func (a *RejectMaterialAiRepairAcceptTaskCreateV30ApiService) postExecute(r *ApiOpenApiV30RejectMaterialAiRepairAcceptTaskCreatePostRequest) (*models.RejectMaterialAiRepairAcceptTaskCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *RejectMaterialAiRepairAcceptTaskCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.RejectMaterialAiRepairAcceptTaskCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *RejectMaterialAiRepairAcceptTaskCreateV30ApiService) postExecute(r *Api
 	localVarPath := localBasePath + "/open_api/v3.0/reject_material/ai_repair_accept_task/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

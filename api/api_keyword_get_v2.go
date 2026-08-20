@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // KeywordGetV2ApiService KeywordGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2KeywordGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *KeywordGetV2ApiService
 	advertiserId *int64
-	filtering    *KeywordGetV2Filtering
+	filtering    *models.KeywordGetV2Filtering
 }
 
 func (r *ApiOpenApi2KeywordGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2KeywordGetGetRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2KeywordGetGetRequest) AdvertiserId(advertiserId int64) *ApiO
 	return r
 }
 
-func (r *ApiOpenApi2KeywordGetGetRequest) Filtering(filtering KeywordGetV2Filtering) *ApiOpenApi2KeywordGetGetRequest {
+func (r *ApiOpenApi2KeywordGetGetRequest) Filtering(filtering models.KeywordGetV2Filtering) *ApiOpenApi2KeywordGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2KeywordGetGetRequest) Execute() (*KeywordGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2KeywordGetGetRequest) Execute() (*models.KeywordGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *KeywordGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2KeywordGet
 // Execute executes the request
 //
 //	@return KeywordGetV2Response
-func (a *KeywordGetV2ApiService) getExecute(r *ApiOpenApi2KeywordGetGetRequest) (*KeywordGetV2Response, *http.Response, error) {
+func (a *KeywordGetV2ApiService) getExecute(r *ApiOpenApi2KeywordGetGetRequest) (*models.KeywordGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *KeywordGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.KeywordGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *KeywordGetV2ApiService) getExecute(r *ApiOpenApi2KeywordGetGetRequest) 
 	localVarPath := localBasePath + "/open_api/2/keyword/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

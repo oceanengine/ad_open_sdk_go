@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarMcnRecuritProviderGetTaskOrderListGetV2ApiService StarMcnRecuritProviderGetTaskOrderListGetV2Api service
@@ -53,7 +54,7 @@ func (r *ApiOpenApi2StarMcnRecuritProviderGetTaskOrderListGetGetRequest) PageSiz
 	return r
 }
 
-func (r *ApiOpenApi2StarMcnRecuritProviderGetTaskOrderListGetGetRequest) Execute() (*StarMcnRecuritProviderGetTaskOrderListGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarMcnRecuritProviderGetTaskOrderListGetGetRequest) Execute() (*models.StarMcnRecuritProviderGetTaskOrderListGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -87,12 +88,12 @@ func (a *StarMcnRecuritProviderGetTaskOrderListGetV2ApiService) Get(ctx context.
 // Execute executes the request
 //
 //	@return StarMcnRecuritProviderGetTaskOrderListGetV2Response
-func (a *StarMcnRecuritProviderGetTaskOrderListGetV2ApiService) getExecute(r *ApiOpenApi2StarMcnRecuritProviderGetTaskOrderListGetGetRequest) (*StarMcnRecuritProviderGetTaskOrderListGetV2Response, *http.Response, error) {
+func (a *StarMcnRecuritProviderGetTaskOrderListGetV2ApiService) getExecute(r *ApiOpenApi2StarMcnRecuritProviderGetTaskOrderListGetGetRequest) (*models.StarMcnRecuritProviderGetTaskOrderListGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarMcnRecuritProviderGetTaskOrderListGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarMcnRecuritProviderGetTaskOrderListGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -102,7 +103,7 @@ func (a *StarMcnRecuritProviderGetTaskOrderListGetV2ApiService) getExecute(r *Ap
 	localVarPath := localBasePath + "/open_api/2/star/mcn/recurit_provider_get_task_order_list/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

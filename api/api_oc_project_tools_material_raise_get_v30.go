@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OcProjectToolsMaterialRaiseGetV30ApiService OcProjectToolsMaterialRaiseGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30OcProjectToolsMaterialRaiseGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *OcProjectToolsMaterialRaiseGetV30ApiService
 	advertiserId *int64
-	filtering    *OcProjectToolsMaterialRaiseGetV30Filtering
+	filtering    *models.OcProjectToolsMaterialRaiseGetV30Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV30OcProjectToolsMaterialRaiseGetGetRequest) AdvertiserId(adv
 }
 
 // 过滤器
-func (r *ApiOpenApiV30OcProjectToolsMaterialRaiseGetGetRequest) Filtering(filtering OcProjectToolsMaterialRaiseGetV30Filtering) *ApiOpenApiV30OcProjectToolsMaterialRaiseGetGetRequest {
+func (r *ApiOpenApiV30OcProjectToolsMaterialRaiseGetGetRequest) Filtering(filtering models.OcProjectToolsMaterialRaiseGetV30Filtering) *ApiOpenApiV30OcProjectToolsMaterialRaiseGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -52,7 +53,7 @@ func (r *ApiOpenApiV30OcProjectToolsMaterialRaiseGetGetRequest) PageSize(pageSiz
 	return r
 }
 
-func (r *ApiOpenApiV30OcProjectToolsMaterialRaiseGetGetRequest) Execute() (*OcProjectToolsMaterialRaiseGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OcProjectToolsMaterialRaiseGetGetRequest) Execute() (*models.OcProjectToolsMaterialRaiseGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -86,12 +87,12 @@ func (a *OcProjectToolsMaterialRaiseGetV30ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return OcProjectToolsMaterialRaiseGetV30Response
-func (a *OcProjectToolsMaterialRaiseGetV30ApiService) getExecute(r *ApiOpenApiV30OcProjectToolsMaterialRaiseGetGetRequest) (*OcProjectToolsMaterialRaiseGetV30Response, *http.Response, error) {
+func (a *OcProjectToolsMaterialRaiseGetV30ApiService) getExecute(r *ApiOpenApiV30OcProjectToolsMaterialRaiseGetGetRequest) (*models.OcProjectToolsMaterialRaiseGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OcProjectToolsMaterialRaiseGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OcProjectToolsMaterialRaiseGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -101,7 +102,7 @@ func (a *OcProjectToolsMaterialRaiseGetV30ApiService) getExecute(r *ApiOpenApiV3
 	localVarPath := localBasePath + "/open_api/v3.0/oc_project/tools_material_raise/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

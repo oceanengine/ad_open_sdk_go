@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarMcnProviderUploadSearchItemV2ApiService StarMcnProviderUploadSearchItemV2Api service
@@ -25,15 +26,15 @@ type StarMcnProviderUploadSearchItemV2ApiService service
 type ApiOpenApi2StarMcnProviderUploadSearchItemPostRequest struct {
 	ctx                                      context.Context
 	ApiService                               *StarMcnProviderUploadSearchItemV2ApiService
-	starMcnProviderUploadSearchItemV2Request *StarMcnProviderUploadSearchItemV2Request
+	starMcnProviderUploadSearchItemV2Request *models.StarMcnProviderUploadSearchItemV2Request
 }
 
-func (r *ApiOpenApi2StarMcnProviderUploadSearchItemPostRequest) StarMcnProviderUploadSearchItemV2Request(starMcnProviderUploadSearchItemV2Request StarMcnProviderUploadSearchItemV2Request) *ApiOpenApi2StarMcnProviderUploadSearchItemPostRequest {
+func (r *ApiOpenApi2StarMcnProviderUploadSearchItemPostRequest) StarMcnProviderUploadSearchItemV2Request(starMcnProviderUploadSearchItemV2Request models.StarMcnProviderUploadSearchItemV2Request) *ApiOpenApi2StarMcnProviderUploadSearchItemPostRequest {
 	r.starMcnProviderUploadSearchItemV2Request = &starMcnProviderUploadSearchItemV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarMcnProviderUploadSearchItemPostRequest) Execute() (*StarMcnProviderUploadSearchItemV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarMcnProviderUploadSearchItemPostRequest) Execute() (*models.StarMcnProviderUploadSearchItemV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarMcnProviderUploadSearchItemV2ApiService) Post(ctx context.Context) 
 // Execute executes the request
 //
 //	@return StarMcnProviderUploadSearchItemV2Response
-func (a *StarMcnProviderUploadSearchItemV2ApiService) postExecute(r *ApiOpenApi2StarMcnProviderUploadSearchItemPostRequest) (*StarMcnProviderUploadSearchItemV2Response, *http.Response, error) {
+func (a *StarMcnProviderUploadSearchItemV2ApiService) postExecute(r *ApiOpenApi2StarMcnProviderUploadSearchItemPostRequest) (*models.StarMcnProviderUploadSearchItemV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarMcnProviderUploadSearchItemV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarMcnProviderUploadSearchItemV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarMcnProviderUploadSearchItemV2ApiService) postExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/star/mcn/provider_upload_search_item/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

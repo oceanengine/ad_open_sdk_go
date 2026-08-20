@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpMicroGameLinkListV30ApiService ToolsEbpMicroGameLinkListV30Api service
@@ -26,10 +27,10 @@ type ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest struct {
 	ctx         context.Context
 	ApiService  *ToolsEbpMicroGameLinkListV30ApiService
 	accountId   *int64
-	accountType *ToolsEbpMicroGameLinkListV30AccountType
+	accountType *models.ToolsEbpMicroGameLinkListV30AccountType
 	instanceId  *int64
 	appId       *string
-	createTime  *ToolsEbpMicroGameLinkListV30CreateTime
+	createTime  *models.ToolsEbpMicroGameLinkListV30CreateTime
 	page        *int64
 	pageSize    *int64
 }
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) AccountId(accountId i
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) AccountType(accountType ToolsEbpMicroGameLinkListV30AccountType) *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) AccountType(accountType models.ToolsEbpMicroGameLinkListV30AccountType) *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -54,7 +55,7 @@ func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) AppId(appId string) *
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) CreateTime(createTime ToolsEbpMicroGameLinkListV30CreateTime) *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) CreateTime(createTime models.ToolsEbpMicroGameLinkListV30CreateTime) *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest {
 	r.createTime = &createTime
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) PageSize(pageSize int
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) Execute() (*ToolsEbpMicroGameLinkListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) Execute() (*models.ToolsEbpMicroGameLinkListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *ToolsEbpMicroGameLinkListV30ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsEbpMicroGameLinkListV30Response
-func (a *ToolsEbpMicroGameLinkListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) (*ToolsEbpMicroGameLinkListV30Response, *http.Response, error) {
+func (a *ToolsEbpMicroGameLinkListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpMicroGameLinkListGetRequest) (*models.ToolsEbpMicroGameLinkListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpMicroGameLinkListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpMicroGameLinkListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *ToolsEbpMicroGameLinkListV30ApiService) getExecute(r *ApiOpenApiV30Tool
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/micro_game/link/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

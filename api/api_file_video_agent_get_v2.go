@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoAgentGetV2ApiService FileVideoAgentGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2FileVideoAgentGetGetRequest struct {
 	ctx        context.Context
 	ApiService *FileVideoAgentGetV2ApiService
 	agentId    *int64
-	filtering  *FileVideoAgentGetV2Filtering
+	filtering  *models.FileVideoAgentGetV2Filtering
 	page       *int64
 	pageSize   *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApi2FileVideoAgentGetGetRequest) AgentId(agentId int64) *ApiOpen
 }
 
 // 视频过滤条件
-func (r *ApiOpenApi2FileVideoAgentGetGetRequest) Filtering(filtering FileVideoAgentGetV2Filtering) *ApiOpenApi2FileVideoAgentGetGetRequest {
+func (r *ApiOpenApi2FileVideoAgentGetGetRequest) Filtering(filtering models.FileVideoAgentGetV2Filtering) *ApiOpenApi2FileVideoAgentGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2FileVideoAgentGetGetRequest) PageSize(pageSize int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoAgentGetGetRequest) Execute() (*FileVideoAgentGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoAgentGetGetRequest) Execute() (*models.FileVideoAgentGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *FileVideoAgentGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Fil
 // Execute executes the request
 //
 //	@return FileVideoAgentGetV2Response
-func (a *FileVideoAgentGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoAgentGetGetRequest) (*FileVideoAgentGetV2Response, *http.Response, error) {
+func (a *FileVideoAgentGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoAgentGetGetRequest) (*models.FileVideoAgentGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoAgentGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoAgentGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *FileVideoAgentGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoAgentG
 	localVarPath := localBasePath + "/open_api/2/file/video/agent/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

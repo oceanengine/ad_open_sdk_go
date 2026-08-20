@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaProductUpdateV2ApiService DpaProductUpdateV2Api service
@@ -25,15 +26,15 @@ type DpaProductUpdateV2ApiService service
 type ApiOpenApi2DpaProductUpdatePostRequest struct {
 	ctx                       context.Context
 	ApiService                *DpaProductUpdateV2ApiService
-	dpaProductUpdateV2Request *DpaProductUpdateV2Request
+	dpaProductUpdateV2Request *models.DpaProductUpdateV2Request
 }
 
-func (r *ApiOpenApi2DpaProductUpdatePostRequest) DpaProductUpdateV2Request(dpaProductUpdateV2Request DpaProductUpdateV2Request) *ApiOpenApi2DpaProductUpdatePostRequest {
+func (r *ApiOpenApi2DpaProductUpdatePostRequest) DpaProductUpdateV2Request(dpaProductUpdateV2Request models.DpaProductUpdateV2Request) *ApiOpenApi2DpaProductUpdatePostRequest {
 	r.dpaProductUpdateV2Request = &dpaProductUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2DpaProductUpdatePostRequest) Execute() (*DpaProductUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DpaProductUpdatePostRequest) Execute() (*models.DpaProductUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DpaProductUpdateV2ApiService) Post(ctx context.Context) *ApiOpenApi2Dpa
 // Execute executes the request
 //
 //	@return DpaProductUpdateV2Response
-func (a *DpaProductUpdateV2ApiService) postExecute(r *ApiOpenApi2DpaProductUpdatePostRequest) (*DpaProductUpdateV2Response, *http.Response, error) {
+func (a *DpaProductUpdateV2ApiService) postExecute(r *ApiOpenApi2DpaProductUpdatePostRequest) (*models.DpaProductUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaProductUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaProductUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DpaProductUpdateV2ApiService) postExecute(r *ApiOpenApi2DpaProductUpdat
 	localVarPath := localBasePath + "/open_api/2/dpa/product/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

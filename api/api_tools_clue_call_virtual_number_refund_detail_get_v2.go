@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueCallVirtualNumberRefundDetailGetV2ApiService ToolsClueCallVirtualNumberRefundDetailGetV2Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2ToolsClueCallVirtualNumberRefundDetailGetGetRequest) PageSiz
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueCallVirtualNumberRefundDetailGetGetRequest) Execute() (*ToolsClueCallVirtualNumberRefundDetailGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueCallVirtualNumberRefundDetailGetGetRequest) Execute() (*models.ToolsClueCallVirtualNumberRefundDetailGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *ToolsClueCallVirtualNumberRefundDetailGetV2ApiService) Get(ctx context.
 // Execute executes the request
 //
 //	@return ToolsClueCallVirtualNumberRefundDetailGetV2Response
-func (a *ToolsClueCallVirtualNumberRefundDetailGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueCallVirtualNumberRefundDetailGetGetRequest) (*ToolsClueCallVirtualNumberRefundDetailGetV2Response, *http.Response, error) {
+func (a *ToolsClueCallVirtualNumberRefundDetailGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueCallVirtualNumberRefundDetailGetGetRequest) (*models.ToolsClueCallVirtualNumberRefundDetailGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueCallVirtualNumberRefundDetailGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueCallVirtualNumberRefundDetailGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *ToolsClueCallVirtualNumberRefundDetailGetV2ApiService) getExecute(r *Ap
 	localVarPath := localBasePath + "/open_api/2/tools/clue/call_virtual_number/refund_detail/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsMicroGameUpdateV30ApiService ToolsMicroGameUpdateV30Api service
@@ -25,15 +26,15 @@ type ToolsMicroGameUpdateV30ApiService service
 type ApiOpenApiV30ToolsMicroGameUpdatePostRequest struct {
 	ctx                            context.Context
 	ApiService                     *ToolsMicroGameUpdateV30ApiService
-	toolsMicroGameUpdateV30Request *ToolsMicroGameUpdateV30Request
+	toolsMicroGameUpdateV30Request *models.ToolsMicroGameUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsMicroGameUpdatePostRequest) ToolsMicroGameUpdateV30Request(toolsMicroGameUpdateV30Request ToolsMicroGameUpdateV30Request) *ApiOpenApiV30ToolsMicroGameUpdatePostRequest {
+func (r *ApiOpenApiV30ToolsMicroGameUpdatePostRequest) ToolsMicroGameUpdateV30Request(toolsMicroGameUpdateV30Request models.ToolsMicroGameUpdateV30Request) *ApiOpenApiV30ToolsMicroGameUpdatePostRequest {
 	r.toolsMicroGameUpdateV30Request = &toolsMicroGameUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMicroGameUpdatePostRequest) Execute() (*ToolsMicroGameUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsMicroGameUpdatePostRequest) Execute() (*models.ToolsMicroGameUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsMicroGameUpdateV30ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsMicroGameUpdateV30Response
-func (a *ToolsMicroGameUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsMicroGameUpdatePostRequest) (*ToolsMicroGameUpdateV30Response, *http.Response, error) {
+func (a *ToolsMicroGameUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsMicroGameUpdatePostRequest) (*models.ToolsMicroGameUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsMicroGameUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsMicroGameUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsMicroGameUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsMic
 	localVarPath := localBasePath + "/open_api/v3.0/tools/micro_game/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileMaterialListV2ApiService FileMaterialListV2Api service
@@ -26,8 +27,8 @@ type ApiOpenApi2FileMaterialListGetRequest struct {
 	ctx              context.Context
 	ApiService       *FileMaterialListV2ApiService
 	advertiserId     *int64
-	materialSource   *FileMaterialListV2MaterialSource
-	propertiesFilter *[]*FileMaterialListV2PropertiesFilter
+	materialSource   *models.FileMaterialListV2MaterialSource
+	propertiesFilter *[]*models.FileMaterialListV2PropertiesFilter
 	startTime        *string
 	endTime          *string
 	page             *int32
@@ -41,13 +42,13 @@ func (r *ApiOpenApi2FileMaterialListGetRequest) AdvertiserId(advertiserId int64)
 }
 
 // 素材来源，允许值： QIANCHUAN 千川 AD 广告平台
-func (r *ApiOpenApi2FileMaterialListGetRequest) MaterialSource(materialSource FileMaterialListV2MaterialSource) *ApiOpenApi2FileMaterialListGetRequest {
+func (r *ApiOpenApi2FileMaterialListGetRequest) MaterialSource(materialSource models.FileMaterialListV2MaterialSource) *ApiOpenApi2FileMaterialListGetRequest {
 	r.materialSource = &materialSource
 	return r
 }
 
 // 素材标签过滤项， 允许值： INEFFICIENT_MATERIAL低效素材； SIMILAR_MATERIAL 同质化挤压严重素材； SIMILAR_QUEUE_MATERIAL 同质化素材风险-排队投放素材 AD_HIGH_QUALITY_MATERIAL AD 优质素材 ECP_HIGH_QUALITY_MATERIAL 千川优质素材 FIRST_PUBLISH_MATERIAL  首发素材 如果不传，则默认为全部素材标签
-func (r *ApiOpenApi2FileMaterialListGetRequest) PropertiesFilter(propertiesFilter []*FileMaterialListV2PropertiesFilter) *ApiOpenApi2FileMaterialListGetRequest {
+func (r *ApiOpenApi2FileMaterialListGetRequest) PropertiesFilter(propertiesFilter []*models.FileMaterialListV2PropertiesFilter) *ApiOpenApi2FileMaterialListGetRequest {
 	r.propertiesFilter = &propertiesFilter
 	return r
 }
@@ -76,7 +77,7 @@ func (r *ApiOpenApi2FileMaterialListGetRequest) PageSize(pageSize int32) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApi2FileMaterialListGetRequest) Execute() (*FileMaterialListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileMaterialListGetRequest) Execute() (*models.FileMaterialListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *FileMaterialListV2ApiService) Get(ctx context.Context) *ApiOpenApi2File
 // Execute executes the request
 //
 //	@return FileMaterialListV2Response
-func (a *FileMaterialListV2ApiService) getExecute(r *ApiOpenApi2FileMaterialListGetRequest) (*FileMaterialListV2Response, *http.Response, error) {
+func (a *FileMaterialListV2ApiService) getExecute(r *ApiOpenApi2FileMaterialListGetRequest) (*models.FileMaterialListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileMaterialListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileMaterialListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *FileMaterialListV2ApiService) getExecute(r *ApiOpenApi2FileMaterialList
 	localVarPath := localBasePath + "/open_api/2/file/material/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

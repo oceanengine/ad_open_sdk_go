@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAdScheduleFixedRangeUpdateV10ApiService QianchuanAdScheduleFixedRangeUpdateV10Api service
@@ -25,15 +26,15 @@ type QianchuanAdScheduleFixedRangeUpdateV10ApiService service
 type ApiOpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest struct {
 	ctx                                           context.Context
 	ApiService                                    *QianchuanAdScheduleFixedRangeUpdateV10ApiService
-	qianchuanAdScheduleFixedRangeUpdateV10Request *QianchuanAdScheduleFixedRangeUpdateV10Request
+	qianchuanAdScheduleFixedRangeUpdateV10Request *models.QianchuanAdScheduleFixedRangeUpdateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest) QianchuanAdScheduleFixedRangeUpdateV10Request(qianchuanAdScheduleFixedRangeUpdateV10Request QianchuanAdScheduleFixedRangeUpdateV10Request) *ApiOpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest {
+func (r *ApiOpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest) QianchuanAdScheduleFixedRangeUpdateV10Request(qianchuanAdScheduleFixedRangeUpdateV10Request models.QianchuanAdScheduleFixedRangeUpdateV10Request) *ApiOpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest {
 	r.qianchuanAdScheduleFixedRangeUpdateV10Request = &qianchuanAdScheduleFixedRangeUpdateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest) Execute() (*QianchuanAdScheduleFixedRangeUpdateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest) Execute() (*models.QianchuanAdScheduleFixedRangeUpdateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanAdScheduleFixedRangeUpdateV10ApiService) Post(ctx context.Cont
 // Execute executes the request
 //
 //	@return QianchuanAdScheduleFixedRangeUpdateV10Response
-func (a *QianchuanAdScheduleFixedRangeUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest) (*QianchuanAdScheduleFixedRangeUpdateV10Response, *http.Response, error) {
+func (a *QianchuanAdScheduleFixedRangeUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAdScheduleFixedRangeUpdatePostRequest) (*models.QianchuanAdScheduleFixedRangeUpdateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAdScheduleFixedRangeUpdateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAdScheduleFixedRangeUpdateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanAdScheduleFixedRangeUpdateV10ApiService) postExecute(r *ApiOpe
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/ad/schedule_fixed_range/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

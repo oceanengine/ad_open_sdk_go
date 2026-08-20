@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ShopBonusCreateV30ApiService ShopBonusCreateV30Api service
@@ -25,15 +26,15 @@ type ShopBonusCreateV30ApiService service
 type ApiOpenApiV30ShopBonusCreatePostRequest struct {
 	ctx                       context.Context
 	ApiService                *ShopBonusCreateV30ApiService
-	shopBonusCreateV30Request *ShopBonusCreateV30Request
+	shopBonusCreateV30Request *models.ShopBonusCreateV30Request
 }
 
-func (r *ApiOpenApiV30ShopBonusCreatePostRequest) ShopBonusCreateV30Request(shopBonusCreateV30Request ShopBonusCreateV30Request) *ApiOpenApiV30ShopBonusCreatePostRequest {
+func (r *ApiOpenApiV30ShopBonusCreatePostRequest) ShopBonusCreateV30Request(shopBonusCreateV30Request models.ShopBonusCreateV30Request) *ApiOpenApiV30ShopBonusCreatePostRequest {
 	r.shopBonusCreateV30Request = &shopBonusCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ShopBonusCreatePostRequest) Execute() (*ShopBonusCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ShopBonusCreatePostRequest) Execute() (*models.ShopBonusCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ShopBonusCreateV30ApiService) Post(ctx context.Context) *ApiOpenApiV30S
 // Execute executes the request
 //
 //	@return ShopBonusCreateV30Response
-func (a *ShopBonusCreateV30ApiService) postExecute(r *ApiOpenApiV30ShopBonusCreatePostRequest) (*ShopBonusCreateV30Response, *http.Response, error) {
+func (a *ShopBonusCreateV30ApiService) postExecute(r *ApiOpenApiV30ShopBonusCreatePostRequest) (*models.ShopBonusCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ShopBonusCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ShopBonusCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ShopBonusCreateV30ApiService) postExecute(r *ApiOpenApiV30ShopBonusCrea
 	localVarPath := localBasePath + "/open_api/v3.0/shop_bonus/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

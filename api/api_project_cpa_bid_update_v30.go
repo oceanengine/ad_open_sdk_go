@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ProjectCpaBidUpdateV30ApiService ProjectCpaBidUpdateV30Api service
@@ -25,15 +26,15 @@ type ProjectCpaBidUpdateV30ApiService service
 type ApiOpenApiV30ProjectCpaBidUpdatePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *ProjectCpaBidUpdateV30ApiService
-	projectCpaBidUpdateV30Request *ProjectCpaBidUpdateV30Request
+	projectCpaBidUpdateV30Request *models.ProjectCpaBidUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ProjectCpaBidUpdatePostRequest) ProjectCpaBidUpdateV30Request(projectCpaBidUpdateV30Request ProjectCpaBidUpdateV30Request) *ApiOpenApiV30ProjectCpaBidUpdatePostRequest {
+func (r *ApiOpenApiV30ProjectCpaBidUpdatePostRequest) ProjectCpaBidUpdateV30Request(projectCpaBidUpdateV30Request models.ProjectCpaBidUpdateV30Request) *ApiOpenApiV30ProjectCpaBidUpdatePostRequest {
 	r.projectCpaBidUpdateV30Request = &projectCpaBidUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ProjectCpaBidUpdatePostRequest) Execute() (*ProjectCpaBidUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ProjectCpaBidUpdatePostRequest) Execute() (*models.ProjectCpaBidUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ProjectCpaBidUpdateV30ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ProjectCpaBidUpdateV30Response
-func (a *ProjectCpaBidUpdateV30ApiService) postExecute(r *ApiOpenApiV30ProjectCpaBidUpdatePostRequest) (*ProjectCpaBidUpdateV30Response, *http.Response, error) {
+func (a *ProjectCpaBidUpdateV30ApiService) postExecute(r *ApiOpenApiV30ProjectCpaBidUpdatePostRequest) (*models.ProjectCpaBidUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ProjectCpaBidUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ProjectCpaBidUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ProjectCpaBidUpdateV30ApiService) postExecute(r *ApiOpenApiV30ProjectCp
 	localVarPath := localBasePath + "/open_api/v3.0/project/cpa_bid/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

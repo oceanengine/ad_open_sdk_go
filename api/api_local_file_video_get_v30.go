@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalFileVideoGetV30ApiService LocalFileVideoGetV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30LocalFileVideoGetGetRequest struct {
 	ctx            context.Context
 	ApiService     *LocalFileVideoGetV30ApiService
 	localAccountId *int64
-	filtering      *LocalFileVideoGetV30Filtering
-	orderField     *LocalFileVideoGetV30OrderField
-	orderType      *LocalFileVideoGetV30OrderType
+	filtering      *models.LocalFileVideoGetV30Filtering
+	orderField     *models.LocalFileVideoGetV30OrderField
+	orderType      *models.LocalFileVideoGetV30OrderType
 	page           *int64
 	pageSize       *int64
 }
@@ -39,17 +40,17 @@ func (r *ApiOpenApiV30LocalFileVideoGetGetRequest) LocalAccountId(localAccountId
 }
 
 // 过滤器
-func (r *ApiOpenApiV30LocalFileVideoGetGetRequest) Filtering(filtering LocalFileVideoGetV30Filtering) *ApiOpenApiV30LocalFileVideoGetGetRequest {
+func (r *ApiOpenApiV30LocalFileVideoGetGetRequest) Filtering(filtering models.LocalFileVideoGetV30Filtering) *ApiOpenApiV30LocalFileVideoGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30LocalFileVideoGetGetRequest) OrderField(orderField LocalFileVideoGetV30OrderField) *ApiOpenApiV30LocalFileVideoGetGetRequest {
+func (r *ApiOpenApiV30LocalFileVideoGetGetRequest) OrderField(orderField models.LocalFileVideoGetV30OrderField) *ApiOpenApiV30LocalFileVideoGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
 
-func (r *ApiOpenApiV30LocalFileVideoGetGetRequest) OrderType(orderType LocalFileVideoGetV30OrderType) *ApiOpenApiV30LocalFileVideoGetGetRequest {
+func (r *ApiOpenApiV30LocalFileVideoGetGetRequest) OrderType(orderType models.LocalFileVideoGetV30OrderType) *ApiOpenApiV30LocalFileVideoGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -66,7 +67,7 @@ func (r *ApiOpenApiV30LocalFileVideoGetGetRequest) PageSize(pageSize int64) *Api
 	return r
 }
 
-func (r *ApiOpenApiV30LocalFileVideoGetGetRequest) Execute() (*LocalFileVideoGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalFileVideoGetGetRequest) Execute() (*models.LocalFileVideoGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -100,12 +101,12 @@ func (a *LocalFileVideoGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return LocalFileVideoGetV30Response
-func (a *LocalFileVideoGetV30ApiService) getExecute(r *ApiOpenApiV30LocalFileVideoGetGetRequest) (*LocalFileVideoGetV30Response, *http.Response, error) {
+func (a *LocalFileVideoGetV30ApiService) getExecute(r *ApiOpenApiV30LocalFileVideoGetGetRequest) (*models.LocalFileVideoGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalFileVideoGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalFileVideoGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -115,7 +116,7 @@ func (a *LocalFileVideoGetV30ApiService) getExecute(r *ApiOpenApiV30LocalFileVid
 	localVarPath := localBasePath + "/open_api/v3.0/local/file/video/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

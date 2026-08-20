@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAudienceListGetV10ApiService QianchuanAudienceListGetV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanAudienceListGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanAudienceListGetV10ApiService
 	advertiserId *int64
-	filtering    *QianchuanAudienceListGetV10Filtering
+	filtering    *models.QianchuanAudienceListGetV10Filtering
 	page         *int32
 	pageSize     *int32
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApiV10QianchuanAudienceListGetGetRequest) AdvertiserId(advertise
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAudienceListGetGetRequest) Filtering(filtering QianchuanAudienceListGetV10Filtering) *ApiOpenApiV10QianchuanAudienceListGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAudienceListGetGetRequest) Filtering(filtering models.QianchuanAudienceListGetV10Filtering) *ApiOpenApiV10QianchuanAudienceListGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV10QianchuanAudienceListGetGetRequest) PageSize(pageSize int3
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAudienceListGetGetRequest) Execute() (*QianchuanAudienceListGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAudienceListGetGetRequest) Execute() (*models.QianchuanAudienceListGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -87,12 +88,12 @@ func (a *QianchuanAudienceListGetV10ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return QianchuanAudienceListGetV10Response
-func (a *QianchuanAudienceListGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAudienceListGetGetRequest) (*QianchuanAudienceListGetV10Response, *http.Response, error) {
+func (a *QianchuanAudienceListGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAudienceListGetGetRequest) (*models.QianchuanAudienceListGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAudienceListGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAudienceListGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -102,7 +103,7 @@ func (a *QianchuanAudienceListGetV10ApiService) getExecute(r *ApiOpenApiV10Qianc
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/audience_list/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

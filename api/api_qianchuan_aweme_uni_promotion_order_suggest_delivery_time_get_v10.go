@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Api service
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGetRe
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGetRequest) Execute() (*QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGetRequest) Execute() (*models.QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService) Get
 // Execute executes the request
 //
 //	@return QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Response
-func (a *QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGetRequest) (*QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Response, *http.Response, error) {
+func (a *QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetGetRequest) (*models.QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *QianchuanAwemeUniPromotionOrderSuggestDeliveryTimeGetV10ApiService) get
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/uni_promotion/order/suggest/delivery_time/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

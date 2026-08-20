@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentAdvAdvertiserUpdateSaleV2ApiService AgentAdvAdvertiserUpdateSaleV2Api service
@@ -25,15 +26,15 @@ type AgentAdvAdvertiserUpdateSaleV2ApiService service
 type ApiOpenApi2AgentAdvAdvertiserUpdateSalePostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *AgentAdvAdvertiserUpdateSaleV2ApiService
-	agentAdvAdvertiserUpdateSaleV2Request *AgentAdvAdvertiserUpdateSaleV2Request
+	agentAdvAdvertiserUpdateSaleV2Request *models.AgentAdvAdvertiserUpdateSaleV2Request
 }
 
-func (r *ApiOpenApi2AgentAdvAdvertiserUpdateSalePostRequest) AgentAdvAdvertiserUpdateSaleV2Request(agentAdvAdvertiserUpdateSaleV2Request AgentAdvAdvertiserUpdateSaleV2Request) *ApiOpenApi2AgentAdvAdvertiserUpdateSalePostRequest {
+func (r *ApiOpenApi2AgentAdvAdvertiserUpdateSalePostRequest) AgentAdvAdvertiserUpdateSaleV2Request(agentAdvAdvertiserUpdateSaleV2Request models.AgentAdvAdvertiserUpdateSaleV2Request) *ApiOpenApi2AgentAdvAdvertiserUpdateSalePostRequest {
 	r.agentAdvAdvertiserUpdateSaleV2Request = &agentAdvAdvertiserUpdateSaleV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AgentAdvAdvertiserUpdateSalePostRequest) Execute() (*AgentAdvAdvertiserUpdateSaleV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentAdvAdvertiserUpdateSalePostRequest) Execute() (*models.AgentAdvAdvertiserUpdateSaleV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AgentAdvAdvertiserUpdateSaleV2ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return AgentAdvAdvertiserUpdateSaleV2Response
-func (a *AgentAdvAdvertiserUpdateSaleV2ApiService) postExecute(r *ApiOpenApi2AgentAdvAdvertiserUpdateSalePostRequest) (*AgentAdvAdvertiserUpdateSaleV2Response, *http.Response, error) {
+func (a *AgentAdvAdvertiserUpdateSaleV2ApiService) postExecute(r *ApiOpenApi2AgentAdvAdvertiserUpdateSalePostRequest) (*models.AgentAdvAdvertiserUpdateSaleV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentAdvAdvertiserUpdateSaleV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentAdvAdvertiserUpdateSaleV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AgentAdvAdvertiserUpdateSaleV2ApiService) postExecute(r *ApiOpenApi2Age
 	localVarPath := localBasePath + "/open_api/2/agent/adv/advertiser/update_sale/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

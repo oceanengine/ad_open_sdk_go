@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalImCardGetV30ApiService LocalImCardGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30LocalImCardGetGetRequest struct {
 	ApiService     *LocalImCardGetV30ApiService
 	localAccountId *int64
 	lifeAccountId  *int64
-	sourceName     *LocalImCardGetV30SourceName
+	sourceName     *models.LocalImCardGetV30SourceName
 	page           *int64
 	pageSize       *int64
 	cardType       *int64
@@ -47,7 +48,7 @@ func (r *ApiOpenApiV30LocalImCardGetGetRequest) LifeAccountId(lifeAccountId int6
 }
 
 // 请求来源
-func (r *ApiOpenApiV30LocalImCardGetGetRequest) SourceName(sourceName LocalImCardGetV30SourceName) *ApiOpenApiV30LocalImCardGetGetRequest {
+func (r *ApiOpenApiV30LocalImCardGetGetRequest) SourceName(sourceName models.LocalImCardGetV30SourceName) *ApiOpenApiV30LocalImCardGetGetRequest {
 	r.sourceName = &sourceName
 	return r
 }
@@ -82,7 +83,7 @@ func (r *ApiOpenApiV30LocalImCardGetGetRequest) CardIdList(cardIdList []int64) *
 	return r
 }
 
-func (r *ApiOpenApiV30LocalImCardGetGetRequest) Execute() (*LocalImCardGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalImCardGetGetRequest) Execute() (*models.LocalImCardGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -116,12 +117,12 @@ func (a *LocalImCardGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Loc
 // Execute executes the request
 //
 //	@return LocalImCardGetV30Response
-func (a *LocalImCardGetV30ApiService) getExecute(r *ApiOpenApiV30LocalImCardGetGetRequest) (*LocalImCardGetV30Response, *http.Response, error) {
+func (a *LocalImCardGetV30ApiService) getExecute(r *ApiOpenApiV30LocalImCardGetGetRequest) (*models.LocalImCardGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalImCardGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalImCardGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -131,7 +132,7 @@ func (a *LocalImCardGetV30ApiService) getExecute(r *ApiOpenApiV30LocalImCardGetG
 	localVarPath := localBasePath + "/open_api/v3.0/local/im_card/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

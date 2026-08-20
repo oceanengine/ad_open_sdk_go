@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileQualityGetV30ApiService FileQualityGetV30Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30FileQualityGetGetRequest) MaterialIds(materialIds []int64)
 	return r
 }
 
-func (r *ApiOpenApiV30FileQualityGetGetRequest) Execute() (*FileQualityGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30FileQualityGetGetRequest) Execute() (*models.FileQualityGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *FileQualityGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Fil
 // Execute executes the request
 //
 //	@return FileQualityGetV30Response
-func (a *FileQualityGetV30ApiService) getExecute(r *ApiOpenApiV30FileQualityGetGetRequest) (*FileQualityGetV30Response, *http.Response, error) {
+func (a *FileQualityGetV30ApiService) getExecute(r *ApiOpenApiV30FileQualityGetGetRequest) (*models.FileQualityGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileQualityGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileQualityGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *FileQualityGetV30ApiService) getExecute(r *ApiOpenApiV30FileQualityGetG
 	localVarPath := localBasePath + "/open_api/v3.0/file/quality/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

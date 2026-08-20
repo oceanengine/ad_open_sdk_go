@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdUpdateBudgetV2ApiService AdUpdateBudgetV2Api service
@@ -25,15 +26,15 @@ type AdUpdateBudgetV2ApiService service
 type ApiOpenApi2AdUpdateBudgetPostRequest struct {
 	ctx                     context.Context
 	ApiService              *AdUpdateBudgetV2ApiService
-	adUpdateBudgetV2Request *AdUpdateBudgetV2Request
+	adUpdateBudgetV2Request *models.AdUpdateBudgetV2Request
 }
 
-func (r *ApiOpenApi2AdUpdateBudgetPostRequest) AdUpdateBudgetV2Request(adUpdateBudgetV2Request AdUpdateBudgetV2Request) *ApiOpenApi2AdUpdateBudgetPostRequest {
+func (r *ApiOpenApi2AdUpdateBudgetPostRequest) AdUpdateBudgetV2Request(adUpdateBudgetV2Request models.AdUpdateBudgetV2Request) *ApiOpenApi2AdUpdateBudgetPostRequest {
 	r.adUpdateBudgetV2Request = &adUpdateBudgetV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AdUpdateBudgetPostRequest) Execute() (*AdUpdateBudgetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdUpdateBudgetPostRequest) Execute() (*models.AdUpdateBudgetV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AdUpdateBudgetV2ApiService) Post(ctx context.Context) *ApiOpenApi2AdUpd
 // Execute executes the request
 //
 //	@return AdUpdateBudgetV2Response
-func (a *AdUpdateBudgetV2ApiService) postExecute(r *ApiOpenApi2AdUpdateBudgetPostRequest) (*AdUpdateBudgetV2Response, *http.Response, error) {
+func (a *AdUpdateBudgetV2ApiService) postExecute(r *ApiOpenApi2AdUpdateBudgetPostRequest) (*models.AdUpdateBudgetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdUpdateBudgetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdUpdateBudgetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AdUpdateBudgetV2ApiService) postExecute(r *ApiOpenApi2AdUpdateBudgetPos
 	localVarPath := localBasePath + "/open_api/2/ad/update/budget/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

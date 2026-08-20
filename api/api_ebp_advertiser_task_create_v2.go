@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EbpAdvertiserTaskCreateV2ApiService EbpAdvertiserTaskCreateV2Api service
@@ -25,15 +26,15 @@ type EbpAdvertiserTaskCreateV2ApiService service
 type ApiOpenApi2EbpAdvertiserTaskCreatePostRequest struct {
 	ctx                              context.Context
 	ApiService                       *EbpAdvertiserTaskCreateV2ApiService
-	ebpAdvertiserTaskCreateV2Request *EbpAdvertiserTaskCreateV2Request
+	ebpAdvertiserTaskCreateV2Request *models.EbpAdvertiserTaskCreateV2Request
 }
 
-func (r *ApiOpenApi2EbpAdvertiserTaskCreatePostRequest) EbpAdvertiserTaskCreateV2Request(ebpAdvertiserTaskCreateV2Request EbpAdvertiserTaskCreateV2Request) *ApiOpenApi2EbpAdvertiserTaskCreatePostRequest {
+func (r *ApiOpenApi2EbpAdvertiserTaskCreatePostRequest) EbpAdvertiserTaskCreateV2Request(ebpAdvertiserTaskCreateV2Request models.EbpAdvertiserTaskCreateV2Request) *ApiOpenApi2EbpAdvertiserTaskCreatePostRequest {
 	r.ebpAdvertiserTaskCreateV2Request = &ebpAdvertiserTaskCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2EbpAdvertiserTaskCreatePostRequest) Execute() (*EbpAdvertiserTaskCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EbpAdvertiserTaskCreatePostRequest) Execute() (*models.EbpAdvertiserTaskCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EbpAdvertiserTaskCreateV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return EbpAdvertiserTaskCreateV2Response
-func (a *EbpAdvertiserTaskCreateV2ApiService) postExecute(r *ApiOpenApi2EbpAdvertiserTaskCreatePostRequest) (*EbpAdvertiserTaskCreateV2Response, *http.Response, error) {
+func (a *EbpAdvertiserTaskCreateV2ApiService) postExecute(r *ApiOpenApi2EbpAdvertiserTaskCreatePostRequest) (*models.EbpAdvertiserTaskCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EbpAdvertiserTaskCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EbpAdvertiserTaskCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EbpAdvertiserTaskCreateV2ApiService) postExecute(r *ApiOpenApi2EbpAdver
 	localVarPath := localBasePath + "/open_api/2/ebp/advertiser/task/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

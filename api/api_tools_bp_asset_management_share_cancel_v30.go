@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsBpAssetManagementShareCancelV30ApiService ToolsBpAssetManagementShareCancelV30Api service
@@ -25,15 +26,15 @@ type ToolsBpAssetManagementShareCancelV30ApiService service
 type ApiOpenApiV30ToolsBpAssetManagementShareCancelPostRequest struct {
 	ctx                                         context.Context
 	ApiService                                  *ToolsBpAssetManagementShareCancelV30ApiService
-	toolsBpAssetManagementShareCancelV30Request *ToolsBpAssetManagementShareCancelV30Request
+	toolsBpAssetManagementShareCancelV30Request *models.ToolsBpAssetManagementShareCancelV30Request
 }
 
-func (r *ApiOpenApiV30ToolsBpAssetManagementShareCancelPostRequest) ToolsBpAssetManagementShareCancelV30Request(toolsBpAssetManagementShareCancelV30Request ToolsBpAssetManagementShareCancelV30Request) *ApiOpenApiV30ToolsBpAssetManagementShareCancelPostRequest {
+func (r *ApiOpenApiV30ToolsBpAssetManagementShareCancelPostRequest) ToolsBpAssetManagementShareCancelV30Request(toolsBpAssetManagementShareCancelV30Request models.ToolsBpAssetManagementShareCancelV30Request) *ApiOpenApiV30ToolsBpAssetManagementShareCancelPostRequest {
 	r.toolsBpAssetManagementShareCancelV30Request = &toolsBpAssetManagementShareCancelV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsBpAssetManagementShareCancelPostRequest) Execute() (*ToolsBpAssetManagementShareCancelV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsBpAssetManagementShareCancelPostRequest) Execute() (*models.ToolsBpAssetManagementShareCancelV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsBpAssetManagementShareCancelV30ApiService) Post(ctx context.Contex
 // Execute executes the request
 //
 //	@return ToolsBpAssetManagementShareCancelV30Response
-func (a *ToolsBpAssetManagementShareCancelV30ApiService) postExecute(r *ApiOpenApiV30ToolsBpAssetManagementShareCancelPostRequest) (*ToolsBpAssetManagementShareCancelV30Response, *http.Response, error) {
+func (a *ToolsBpAssetManagementShareCancelV30ApiService) postExecute(r *ApiOpenApiV30ToolsBpAssetManagementShareCancelPostRequest) (*models.ToolsBpAssetManagementShareCancelV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsBpAssetManagementShareCancelV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsBpAssetManagementShareCancelV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsBpAssetManagementShareCancelV30ApiService) postExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/v3.0/tools/bp_asset_management/share/cancel/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

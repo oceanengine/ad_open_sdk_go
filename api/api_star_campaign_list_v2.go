@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarCampaignListV2ApiService StarCampaignListV2Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2StarCampaignListGetRequest) Limit(limit int32) *ApiOpenApi2S
 	return r
 }
 
-func (r *ApiOpenApi2StarCampaignListGetRequest) Execute() (*StarCampaignListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarCampaignListGetRequest) Execute() (*models.StarCampaignListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *StarCampaignListV2ApiService) Get(ctx context.Context) *ApiOpenApi2Star
 // Execute executes the request
 //
 //	@return StarCampaignListV2Response
-func (a *StarCampaignListV2ApiService) getExecute(r *ApiOpenApi2StarCampaignListGetRequest) (*StarCampaignListV2Response, *http.Response, error) {
+func (a *StarCampaignListV2ApiService) getExecute(r *ApiOpenApi2StarCampaignListGetRequest) (*models.StarCampaignListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarCampaignListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarCampaignListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *StarCampaignListV2ApiService) getExecute(r *ApiOpenApi2StarCampaignList
 	localVarPath := localBasePath + "/open_api/2/star/campaign/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

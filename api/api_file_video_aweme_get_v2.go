@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoAwemeGetV2ApiService FileVideoAwemeGetV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2FileVideoAwemeGetGetRequest struct {
 	ApiService   *FileVideoAwemeGetV2ApiService
 	advertiserId *int64
 	awemeId      *string
-	filtering    *FileVideoAwemeGetV2Filtering
+	filtering    *models.FileVideoAwemeGetV2Filtering
 	page         *int64
 	pageSize     *int64
 	cursor       *string
@@ -46,7 +47,7 @@ func (r *ApiOpenApi2FileVideoAwemeGetGetRequest) AwemeId(awemeId string) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoAwemeGetGetRequest) Filtering(filtering FileVideoAwemeGetV2Filtering) *ApiOpenApi2FileVideoAwemeGetGetRequest {
+func (r *ApiOpenApi2FileVideoAwemeGetGetRequest) Filtering(filtering models.FileVideoAwemeGetV2Filtering) *ApiOpenApi2FileVideoAwemeGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -75,7 +76,7 @@ func (r *ApiOpenApi2FileVideoAwemeGetGetRequest) Count(count int64) *ApiOpenApi2
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoAwemeGetGetRequest) Execute() (*FileVideoAwemeGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoAwemeGetGetRequest) Execute() (*models.FileVideoAwemeGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -109,12 +110,12 @@ func (a *FileVideoAwemeGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Fil
 // Execute executes the request
 //
 //	@return FileVideoAwemeGetV2Response
-func (a *FileVideoAwemeGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoAwemeGetGetRequest) (*FileVideoAwemeGetV2Response, *http.Response, error) {
+func (a *FileVideoAwemeGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoAwemeGetGetRequest) (*models.FileVideoAwemeGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoAwemeGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoAwemeGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -124,7 +125,7 @@ func (a *FileVideoAwemeGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoAwemeG
 	localVarPath := localBasePath + "/open_api/2/file/video/aweme/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

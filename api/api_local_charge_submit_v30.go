@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalChargeSubmitV30ApiService LocalChargeSubmitV30Api service
@@ -25,15 +26,15 @@ type LocalChargeSubmitV30ApiService service
 type ApiOpenApiV30LocalChargeSubmitPostRequest struct {
 	ctx                         context.Context
 	ApiService                  *LocalChargeSubmitV30ApiService
-	localChargeSubmitV30Request *LocalChargeSubmitV30Request
+	localChargeSubmitV30Request *models.LocalChargeSubmitV30Request
 }
 
-func (r *ApiOpenApiV30LocalChargeSubmitPostRequest) LocalChargeSubmitV30Request(localChargeSubmitV30Request LocalChargeSubmitV30Request) *ApiOpenApiV30LocalChargeSubmitPostRequest {
+func (r *ApiOpenApiV30LocalChargeSubmitPostRequest) LocalChargeSubmitV30Request(localChargeSubmitV30Request models.LocalChargeSubmitV30Request) *ApiOpenApiV30LocalChargeSubmitPostRequest {
 	r.localChargeSubmitV30Request = &localChargeSubmitV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30LocalChargeSubmitPostRequest) Execute() (*LocalChargeSubmitV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalChargeSubmitPostRequest) Execute() (*models.LocalChargeSubmitV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *LocalChargeSubmitV30ApiService) Post(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return LocalChargeSubmitV30Response
-func (a *LocalChargeSubmitV30ApiService) postExecute(r *ApiOpenApiV30LocalChargeSubmitPostRequest) (*LocalChargeSubmitV30Response, *http.Response, error) {
+func (a *LocalChargeSubmitV30ApiService) postExecute(r *ApiOpenApiV30LocalChargeSubmitPostRequest) (*models.LocalChargeSubmitV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalChargeSubmitV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalChargeSubmitV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *LocalChargeSubmitV30ApiService) postExecute(r *ApiOpenApiV30LocalCharge
 	localVarPath := localBasePath + "/open_api/v3.0/local/charge/submit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

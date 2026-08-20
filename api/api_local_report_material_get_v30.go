@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalReportMaterialGetV30ApiService LocalReportMaterialGetV30Api service
@@ -29,10 +30,10 @@ type ApiOpenApiV30LocalReportMaterialGetGetRequest struct {
 	startDate       *string
 	endDate         *string
 	metrics         *[]string
-	timeGranularity *LocalReportMaterialGetV30TimeGranularity
-	orderType       *LocalReportMaterialGetV30OrderType
+	timeGranularity *models.LocalReportMaterialGetV30TimeGranularity
+	orderType       *models.LocalReportMaterialGetV30OrderType
 	orderField      *string
-	filtering       *LocalReportMaterialGetV30Filtering
+	filtering       *models.LocalReportMaterialGetV30Filtering
 	page            *int64
 	pageSize        *int64
 }
@@ -61,13 +62,13 @@ func (r *ApiOpenApiV30LocalReportMaterialGetGetRequest) Metrics(metrics []string
 }
 
 // 时间粒度
-func (r *ApiOpenApiV30LocalReportMaterialGetGetRequest) TimeGranularity(timeGranularity LocalReportMaterialGetV30TimeGranularity) *ApiOpenApiV30LocalReportMaterialGetGetRequest {
+func (r *ApiOpenApiV30LocalReportMaterialGetGetRequest) TimeGranularity(timeGranularity models.LocalReportMaterialGetV30TimeGranularity) *ApiOpenApiV30LocalReportMaterialGetGetRequest {
 	r.timeGranularity = &timeGranularity
 	return r
 }
 
 // 排序方式
-func (r *ApiOpenApiV30LocalReportMaterialGetGetRequest) OrderType(orderType LocalReportMaterialGetV30OrderType) *ApiOpenApiV30LocalReportMaterialGetGetRequest {
+func (r *ApiOpenApiV30LocalReportMaterialGetGetRequest) OrderType(orderType models.LocalReportMaterialGetV30OrderType) *ApiOpenApiV30LocalReportMaterialGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -79,7 +80,7 @@ func (r *ApiOpenApiV30LocalReportMaterialGetGetRequest) OrderField(orderField st
 }
 
 // 过滤器
-func (r *ApiOpenApiV30LocalReportMaterialGetGetRequest) Filtering(filtering LocalReportMaterialGetV30Filtering) *ApiOpenApiV30LocalReportMaterialGetGetRequest {
+func (r *ApiOpenApiV30LocalReportMaterialGetGetRequest) Filtering(filtering models.LocalReportMaterialGetV30Filtering) *ApiOpenApiV30LocalReportMaterialGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -96,7 +97,7 @@ func (r *ApiOpenApiV30LocalReportMaterialGetGetRequest) PageSize(pageSize int64)
 	return r
 }
 
-func (r *ApiOpenApiV30LocalReportMaterialGetGetRequest) Execute() (*LocalReportMaterialGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalReportMaterialGetGetRequest) Execute() (*models.LocalReportMaterialGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -130,12 +131,12 @@ func (a *LocalReportMaterialGetV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return LocalReportMaterialGetV30Response
-func (a *LocalReportMaterialGetV30ApiService) getExecute(r *ApiOpenApiV30LocalReportMaterialGetGetRequest) (*LocalReportMaterialGetV30Response, *http.Response, error) {
+func (a *LocalReportMaterialGetV30ApiService) getExecute(r *ApiOpenApiV30LocalReportMaterialGetGetRequest) (*models.LocalReportMaterialGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalReportMaterialGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalReportMaterialGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -145,7 +146,7 @@ func (a *LocalReportMaterialGetV30ApiService) getExecute(r *ApiOpenApiV30LocalRe
 	localVarPath := localBasePath + "/open_api/v3.0/local/report/material/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

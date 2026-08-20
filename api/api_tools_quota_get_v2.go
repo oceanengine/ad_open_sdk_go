@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsQuotaGetV2ApiService ToolsQuotaGetV2Api service
@@ -26,8 +27,8 @@ type ApiOpenApi2ToolsQuotaGetGetRequest struct {
 	ctx           context.Context
 	ApiService    *ToolsQuotaGetV2ApiService
 	advertiserId  *int64
-	campaignType  *ToolsQuotaGetV2CampaignType
-	deliveryRange *ToolsQuotaGetV2DeliveryRange
+	campaignType  *models.ToolsQuotaGetV2CampaignType
+	deliveryRange *models.ToolsQuotaGetV2DeliveryRange
 }
 
 // 广告账户id
@@ -37,17 +38,17 @@ func (r *ApiOpenApi2ToolsQuotaGetGetRequest) AdvertiserId(advertiserId int64) *A
 }
 
 // 广告组类型，&#x60;FEED&#x60;：信息流  &#x60;SEARCH&#x60;:搜索广告
-func (r *ApiOpenApi2ToolsQuotaGetGetRequest) CampaignType(campaignType ToolsQuotaGetV2CampaignType) *ApiOpenApi2ToolsQuotaGetGetRequest {
+func (r *ApiOpenApi2ToolsQuotaGetGetRequest) CampaignType(campaignType models.ToolsQuotaGetV2CampaignType) *ApiOpenApi2ToolsQuotaGetGetRequest {
 	r.campaignType = &campaignType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsQuotaGetGetRequest) DeliveryRange(deliveryRange ToolsQuotaGetV2DeliveryRange) *ApiOpenApi2ToolsQuotaGetGetRequest {
+func (r *ApiOpenApi2ToolsQuotaGetGetRequest) DeliveryRange(deliveryRange models.ToolsQuotaGetV2DeliveryRange) *ApiOpenApi2ToolsQuotaGetGetRequest {
 	r.deliveryRange = &deliveryRange
 	return r
 }
 
-func (r *ApiOpenApi2ToolsQuotaGetGetRequest) Execute() (*ToolsQuotaGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsQuotaGetGetRequest) Execute() (*models.ToolsQuotaGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -81,12 +82,12 @@ func (a *ToolsQuotaGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2ToolsQu
 // Execute executes the request
 //
 //	@return ToolsQuotaGetV2Response
-func (a *ToolsQuotaGetV2ApiService) getExecute(r *ApiOpenApi2ToolsQuotaGetGetRequest) (*ToolsQuotaGetV2Response, *http.Response, error) {
+func (a *ToolsQuotaGetV2ApiService) getExecute(r *ApiOpenApi2ToolsQuotaGetGetRequest) (*models.ToolsQuotaGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsQuotaGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsQuotaGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -96,7 +97,7 @@ func (a *ToolsQuotaGetV2ApiService) getExecute(r *ApiOpenApi2ToolsQuotaGetGetReq
 	localVarPath := localBasePath + "/open_api/2/tools/quota/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanOverallSuggestRoiGetV10ApiService QianchuanOverallSuggestRoiGetV10Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest struct {
 	ctx                context.Context
 	ApiService         *QianchuanOverallSuggestRoiGetV10ApiService
 	advertiserId       *int64
-	marketingGoal      *QianchuanOverallSuggestRoiGetV10MarketingGoal
-	deepExternalAction *QianchuanOverallSuggestRoiGetV10DeepExternalAction
+	marketingGoal      *models.QianchuanOverallSuggestRoiGetV10MarketingGoal
+	deepExternalAction *models.QianchuanOverallSuggestRoiGetV10DeepExternalAction
 	awemeId            *int64
 	adId               *int64
-	overallCostItems   *QianchuanOverallSuggestRoiGetV10OverallCostItems
-	productId2AwemeUid *[]*QianchuanOverallSuggestRoiGetV10ProductId2AwemeUidInner
+	overallCostItems   *models.QianchuanOverallSuggestRoiGetV10OverallCostItems
+	productId2AwemeUid *[]*models.QianchuanOverallSuggestRoiGetV10ProductId2AwemeUidInner
 }
 
 func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest {
@@ -39,12 +40,12 @@ func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) AdvertiserId(adve
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) MarketingGoal(marketingGoal QianchuanOverallSuggestRoiGetV10MarketingGoal) *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest {
+func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) MarketingGoal(marketingGoal models.QianchuanOverallSuggestRoiGetV10MarketingGoal) *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) DeepExternalAction(deepExternalAction QianchuanOverallSuggestRoiGetV10DeepExternalAction) *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest {
+func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) DeepExternalAction(deepExternalAction models.QianchuanOverallSuggestRoiGetV10DeepExternalAction) *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest {
 	r.deepExternalAction = &deepExternalAction
 	return r
 }
@@ -61,18 +62,18 @@ func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) AdId(adId int64) 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) OverallCostItems(overallCostItems QianchuanOverallSuggestRoiGetV10OverallCostItems) *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest {
+func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) OverallCostItems(overallCostItems models.QianchuanOverallSuggestRoiGetV10OverallCostItems) *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest {
 	r.overallCostItems = &overallCostItems
 	return r
 }
 
 // 仅乘方商品，ProductID与AwemeUID的叉乘关系
-func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) ProductId2AwemeUid(productId2AwemeUid []*QianchuanOverallSuggestRoiGetV10ProductId2AwemeUidInner) *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest {
+func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) ProductId2AwemeUid(productId2AwemeUid []*models.QianchuanOverallSuggestRoiGetV10ProductId2AwemeUidInner) *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest {
 	r.productId2AwemeUid = &productId2AwemeUid
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) Execute() (*QianchuanOverallSuggestRoiGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) Execute() (*models.QianchuanOverallSuggestRoiGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -106,12 +107,12 @@ func (a *QianchuanOverallSuggestRoiGetV10ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return QianchuanOverallSuggestRoiGetV10Response
-func (a *QianchuanOverallSuggestRoiGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) (*QianchuanOverallSuggestRoiGetV10Response, *http.Response, error) {
+func (a *QianchuanOverallSuggestRoiGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanOverallSuggestRoiGetGetRequest) (*models.QianchuanOverallSuggestRoiGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanOverallSuggestRoiGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanOverallSuggestRoiGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -121,7 +122,7 @@ func (a *QianchuanOverallSuggestRoiGetV10ApiService) getExecute(r *ApiOpenApiV10
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/overall/suggest/roi/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

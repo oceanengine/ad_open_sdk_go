@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ServeMarketOrderGetV10ApiService ServeMarketOrderGetV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10ServeMarketOrderGetGetRequest struct {
 	ctx        context.Context
 	ApiService *ServeMarketOrderGetV10ApiService
 	appId      *int64
-	filtering  *ServeMarketOrderGetV10Filtering
+	filtering  *models.ServeMarketOrderGetV10Filtering
 	page       *int64
 	pageSize   *int64
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApiV10ServeMarketOrderGetGetRequest) AppId(appId int64) *ApiOpen
 	return r
 }
 
-func (r *ApiOpenApiV10ServeMarketOrderGetGetRequest) Filtering(filtering ServeMarketOrderGetV10Filtering) *ApiOpenApiV10ServeMarketOrderGetGetRequest {
+func (r *ApiOpenApiV10ServeMarketOrderGetGetRequest) Filtering(filtering models.ServeMarketOrderGetV10Filtering) *ApiOpenApiV10ServeMarketOrderGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV10ServeMarketOrderGetGetRequest) PageSize(pageSize int64) *A
 	return r
 }
 
-func (r *ApiOpenApiV10ServeMarketOrderGetGetRequest) Execute() (*ServeMarketOrderGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10ServeMarketOrderGetGetRequest) Execute() (*models.ServeMarketOrderGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ServeMarketOrderGetV10ApiService) Get(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return ServeMarketOrderGetV10Response
-func (a *ServeMarketOrderGetV10ApiService) getExecute(r *ApiOpenApiV10ServeMarketOrderGetGetRequest) (*ServeMarketOrderGetV10Response, *http.Response, error) {
+func (a *ServeMarketOrderGetV10ApiService) getExecute(r *ApiOpenApiV10ServeMarketOrderGetGetRequest) (*models.ServeMarketOrderGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ServeMarketOrderGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ServeMarketOrderGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ServeMarketOrderGetV10ApiService) getExecute(r *ApiOpenApiV10ServeMarke
 	localVarPath := localBasePath + "/open_api/v1.0/serve_market/order/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

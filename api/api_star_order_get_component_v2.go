@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarOrderGetComponentV2ApiService StarOrderGetComponentV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2StarOrderGetComponentGetRequest) OrderIds(orderIds []int64) 
 	return r
 }
 
-func (r *ApiOpenApi2StarOrderGetComponentGetRequest) Execute() (*StarOrderGetComponentV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarOrderGetComponentGetRequest) Execute() (*models.StarOrderGetComponentV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *StarOrderGetComponentV2ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return StarOrderGetComponentV2Response
-func (a *StarOrderGetComponentV2ApiService) getExecute(r *ApiOpenApi2StarOrderGetComponentGetRequest) (*StarOrderGetComponentV2Response, *http.Response, error) {
+func (a *StarOrderGetComponentV2ApiService) getExecute(r *ApiOpenApi2StarOrderGetComponentGetRequest) (*models.StarOrderGetComponentV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarOrderGetComponentV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarOrderGetComponentV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *StarOrderGetComponentV2ApiService) getExecute(r *ApiOpenApi2StarOrderGe
 	localVarPath := localBasePath + "/open_api/2/star/order/get_component/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

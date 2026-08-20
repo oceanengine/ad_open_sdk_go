@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarOrderListByCampaignV2ApiService StarOrderListByCampaignV2Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2StarOrderListByCampaignGetRequest) Limit(limit int32) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2StarOrderListByCampaignGetRequest) Execute() (*StarOrderListByCampaignV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarOrderListByCampaignGetRequest) Execute() (*models.StarOrderListByCampaignV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *StarOrderListByCampaignV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return StarOrderListByCampaignV2Response
-func (a *StarOrderListByCampaignV2ApiService) getExecute(r *ApiOpenApi2StarOrderListByCampaignGetRequest) (*StarOrderListByCampaignV2Response, *http.Response, error) {
+func (a *StarOrderListByCampaignV2ApiService) getExecute(r *ApiOpenApi2StarOrderListByCampaignGetRequest) (*models.StarOrderListByCampaignV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarOrderListByCampaignV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarOrderListByCampaignV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *StarOrderListByCampaignV2ApiService) getExecute(r *ApiOpenApi2StarOrder
 	localVarPath := localBasePath + "/open_api/2/star/order/list_by_campaign/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

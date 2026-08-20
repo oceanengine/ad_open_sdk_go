@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPromotionCardRecommendGetV2ApiService ToolsPromotionCardRecommendGetV2Api service
@@ -26,11 +27,11 @@ type ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest struct {
 	ctx                  context.Context
 	ApiService           *ToolsPromotionCardRecommendGetV2ApiService
 	adId                 *int64
-	advancedCreativeType *ToolsPromotionCardRecommendGetV2AdvancedCreativeType
+	advancedCreativeType *models.ToolsPromotionCardRecommendGetV2AdvancedCreativeType
 	advertiserId         *int64
-	downloadType         *ToolsPromotionCardRecommendGetV2DownloadType
-	recommendType        *ToolsPromotionCardRecommendGetV2RecommendType
-	titleList            *[]*ToolsPromotionCardRecommendGetV2TitleListInner
+	downloadType         *models.ToolsPromotionCardRecommendGetV2DownloadType
+	recommendType        *models.ToolsPromotionCardRecommendGetV2RecommendType
+	titleList            *[]*models.ToolsPromotionCardRecommendGetV2TitleListInner
 }
 
 func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) AdId(adId int64) *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest {
@@ -38,7 +39,7 @@ func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) AdId(adId int64) *
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) AdvancedCreativeType(advancedCreativeType ToolsPromotionCardRecommendGetV2AdvancedCreativeType) *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest {
+func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) AdvancedCreativeType(advancedCreativeType models.ToolsPromotionCardRecommendGetV2AdvancedCreativeType) *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest {
 	r.advancedCreativeType = &advancedCreativeType
 	return r
 }
@@ -48,22 +49,22 @@ func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) AdvertiserId(adver
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) DownloadType(downloadType ToolsPromotionCardRecommendGetV2DownloadType) *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest {
+func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) DownloadType(downloadType models.ToolsPromotionCardRecommendGetV2DownloadType) *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest {
 	r.downloadType = &downloadType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) RecommendType(recommendType ToolsPromotionCardRecommendGetV2RecommendType) *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest {
+func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) RecommendType(recommendType models.ToolsPromotionCardRecommendGetV2RecommendType) *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest {
 	r.recommendType = &recommendType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) TitleList(titleList []*ToolsPromotionCardRecommendGetV2TitleListInner) *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest {
+func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) TitleList(titleList []*models.ToolsPromotionCardRecommendGetV2TitleListInner) *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest {
 	r.titleList = &titleList
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) Execute() (*ToolsPromotionCardRecommendGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) Execute() (*models.ToolsPromotionCardRecommendGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ToolsPromotionCardRecommendGetV2ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return ToolsPromotionCardRecommendGetV2Response
-func (a *ToolsPromotionCardRecommendGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) (*ToolsPromotionCardRecommendGetV2Response, *http.Response, error) {
+func (a *ToolsPromotionCardRecommendGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPromotionCardRecommendGetGetRequest) (*models.ToolsPromotionCardRecommendGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPromotionCardRecommendGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPromotionCardRecommendGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ToolsPromotionCardRecommendGetV2ApiService) getExecute(r *ApiOpenApi2To
 	localVarPath := localBasePath + "/open_api/2/tools/promotion_card/recommend/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

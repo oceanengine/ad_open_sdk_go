@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalActionCategoryV30ApiService LocalActionCategoryV30Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApiV30LocalActionCategoryGetRequest) LocalAccountId(localAccount
 	return r
 }
 
-func (r *ApiOpenApiV30LocalActionCategoryGetRequest) Execute() (*LocalActionCategoryV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalActionCategoryGetRequest) Execute() (*models.LocalActionCategoryV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *LocalActionCategoryV30ApiService) Get(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return LocalActionCategoryV30Response
-func (a *LocalActionCategoryV30ApiService) getExecute(r *ApiOpenApiV30LocalActionCategoryGetRequest) (*LocalActionCategoryV30Response, *http.Response, error) {
+func (a *LocalActionCategoryV30ApiService) getExecute(r *ApiOpenApiV30LocalActionCategoryGetRequest) (*models.LocalActionCategoryV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalActionCategoryV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalActionCategoryV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *LocalActionCategoryV30ApiService) getExecute(r *ApiOpenApiV30LocalActio
 	localVarPath := localBasePath + "/open_api/v3.0/local/action/category/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarMcnContractChallengeV2ApiService StarMcnContractChallengeV2Api service
@@ -25,15 +26,15 @@ type StarMcnContractChallengeV2ApiService service
 type ApiOpenApi2StarMcnContractChallengePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *StarMcnContractChallengeV2ApiService
-	starMcnContractChallengeV2Request *StarMcnContractChallengeV2Request
+	starMcnContractChallengeV2Request *models.StarMcnContractChallengeV2Request
 }
 
-func (r *ApiOpenApi2StarMcnContractChallengePostRequest) StarMcnContractChallengeV2Request(starMcnContractChallengeV2Request StarMcnContractChallengeV2Request) *ApiOpenApi2StarMcnContractChallengePostRequest {
+func (r *ApiOpenApi2StarMcnContractChallengePostRequest) StarMcnContractChallengeV2Request(starMcnContractChallengeV2Request models.StarMcnContractChallengeV2Request) *ApiOpenApi2StarMcnContractChallengePostRequest {
 	r.starMcnContractChallengeV2Request = &starMcnContractChallengeV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarMcnContractChallengePostRequest) Execute() (*StarMcnContractChallengeV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarMcnContractChallengePostRequest) Execute() (*models.StarMcnContractChallengeV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarMcnContractChallengeV2ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return StarMcnContractChallengeV2Response
-func (a *StarMcnContractChallengeV2ApiService) postExecute(r *ApiOpenApi2StarMcnContractChallengePostRequest) (*StarMcnContractChallengeV2Response, *http.Response, error) {
+func (a *StarMcnContractChallengeV2ApiService) postExecute(r *ApiOpenApi2StarMcnContractChallengePostRequest) (*models.StarMcnContractChallengeV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarMcnContractChallengeV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarMcnContractChallengeV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarMcnContractChallengeV2ApiService) postExecute(r *ApiOpenApi2StarMcn
 	localVarPath := localBasePath + "/open_api/2/star/mcn/contract_challenge/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SubscribeAccountsListV30ApiService SubscribeAccountsListV30Api service
@@ -31,12 +32,12 @@ type ApiOpenApiV30SubscribeAccountsListGetRequest struct {
 	events               *[]string
 	coreUserId           *int64
 	advertiserIds        *[]int64
-	statuses             *[]*SubscribeAccountsListV30Statuses
+	statuses             *[]*models.SubscribeAccountsListV30Statuses
 	cursor               *int64
 	count                *int64
-	subscribePackageType *SubscribeAccountsListV30SubscribePackageType
-	source               *SubscribeAccountsListV30Source
-	accountType          *SubscribeAccountsListV30AccountType
+	subscribePackageType *models.SubscribeAccountsListV30SubscribePackageType
+	source               *models.SubscribeAccountsListV30Source
+	accountType          *models.SubscribeAccountsListV30AccountType
 }
 
 func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) APPAccessToken(aPPAccessToken string) *ApiOpenApiV30SubscribeAccountsListGetRequest {
@@ -69,7 +70,7 @@ func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) AdvertiserIds(advertiserI
 	return r
 }
 
-func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) Statuses(statuses []*SubscribeAccountsListV30Statuses) *ApiOpenApiV30SubscribeAccountsListGetRequest {
+func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) Statuses(statuses []*models.SubscribeAccountsListV30Statuses) *ApiOpenApiV30SubscribeAccountsListGetRequest {
 	r.statuses = &statuses
 	return r
 }
@@ -84,22 +85,22 @@ func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) Count(count int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) SubscribePackageType(subscribePackageType SubscribeAccountsListV30SubscribePackageType) *ApiOpenApiV30SubscribeAccountsListGetRequest {
+func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) SubscribePackageType(subscribePackageType models.SubscribeAccountsListV30SubscribePackageType) *ApiOpenApiV30SubscribeAccountsListGetRequest {
 	r.subscribePackageType = &subscribePackageType
 	return r
 }
 
-func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) Source(source SubscribeAccountsListV30Source) *ApiOpenApiV30SubscribeAccountsListGetRequest {
+func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) Source(source models.SubscribeAccountsListV30Source) *ApiOpenApiV30SubscribeAccountsListGetRequest {
 	r.source = &source
 	return r
 }
 
-func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) AccountType(accountType SubscribeAccountsListV30AccountType) *ApiOpenApiV30SubscribeAccountsListGetRequest {
+func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) AccountType(accountType models.SubscribeAccountsListV30AccountType) *ApiOpenApiV30SubscribeAccountsListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) Execute() (*SubscribeAccountsListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SubscribeAccountsListGetRequest) Execute() (*models.SubscribeAccountsListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -133,12 +134,12 @@ func (a *SubscribeAccountsListV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return SubscribeAccountsListV30Response
-func (a *SubscribeAccountsListV30ApiService) getExecute(r *ApiOpenApiV30SubscribeAccountsListGetRequest) (*SubscribeAccountsListV30Response, *http.Response, error) {
+func (a *SubscribeAccountsListV30ApiService) getExecute(r *ApiOpenApiV30SubscribeAccountsListGetRequest) (*models.SubscribeAccountsListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SubscribeAccountsListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SubscribeAccountsListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -148,7 +149,7 @@ func (a *SubscribeAccountsListV30ApiService) getExecute(r *ApiOpenApiV30Subscrib
 	localVarPath := localBasePath + "/open_api/v3.0/subscribe/accounts/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.aPPAccessToken == nil {

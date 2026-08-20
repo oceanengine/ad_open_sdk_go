@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsCommentTermsBannedGetV30ApiService ToolsCommentTermsBannedGetV30Api service
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30ToolsCommentTermsBannedGetGetRequest) IsApplyToAdv(isApply
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsCommentTermsBannedGetGetRequest) Execute() (*ToolsCommentTermsBannedGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsCommentTermsBannedGetGetRequest) Execute() (*models.ToolsCommentTermsBannedGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *ToolsCommentTermsBannedGetV30ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return ToolsCommentTermsBannedGetV30Response
-func (a *ToolsCommentTermsBannedGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsCommentTermsBannedGetGetRequest) (*ToolsCommentTermsBannedGetV30Response, *http.Response, error) {
+func (a *ToolsCommentTermsBannedGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsCommentTermsBannedGetGetRequest) (*models.ToolsCommentTermsBannedGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsCommentTermsBannedGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsCommentTermsBannedGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *ToolsCommentTermsBannedGetV30ApiService) getExecute(r *ApiOpenApiV30Too
 	localVarPath := localBasePath + "/open_api/v3.0/tools/comment/terms_banned/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

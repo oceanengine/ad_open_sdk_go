@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsNoBidSuggestBidV2ApiService ToolsNoBidSuggestBidV2Api service
@@ -27,9 +28,9 @@ type ApiOpenApi2ToolsNoBidSuggestBidGetRequest struct {
 	ApiService     *ToolsNoBidSuggestBidV2ApiService
 	advertiserId   *int64
 	budget         *int64
-	budgetMode     *ToolsNoBidSuggestBidV2BudgetMode
-	externalAction *ToolsNoBidSuggestBidV2ExternalAction
-	filtering      *ToolsNoBidSuggestBidV2Filtering
+	budgetMode     *models.ToolsNoBidSuggestBidV2BudgetMode
+	externalAction *models.ToolsNoBidSuggestBidV2ExternalAction
+	filtering      *models.ToolsNoBidSuggestBidV2Filtering
 }
 
 func (r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsNoBidSuggestBidGetRequest {
@@ -42,22 +43,22 @@ func (r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) Budget(budget int64) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) BudgetMode(budgetMode ToolsNoBidSuggestBidV2BudgetMode) *ApiOpenApi2ToolsNoBidSuggestBidGetRequest {
+func (r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) BudgetMode(budgetMode models.ToolsNoBidSuggestBidV2BudgetMode) *ApiOpenApi2ToolsNoBidSuggestBidGetRequest {
 	r.budgetMode = &budgetMode
 	return r
 }
 
-func (r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) ExternalAction(externalAction ToolsNoBidSuggestBidV2ExternalAction) *ApiOpenApi2ToolsNoBidSuggestBidGetRequest {
+func (r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) ExternalAction(externalAction models.ToolsNoBidSuggestBidV2ExternalAction) *ApiOpenApi2ToolsNoBidSuggestBidGetRequest {
 	r.externalAction = &externalAction
 	return r
 }
 
-func (r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) Filtering(filtering ToolsNoBidSuggestBidV2Filtering) *ApiOpenApi2ToolsNoBidSuggestBidGetRequest {
+func (r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) Filtering(filtering models.ToolsNoBidSuggestBidV2Filtering) *ApiOpenApi2ToolsNoBidSuggestBidGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) Execute() (*ToolsNoBidSuggestBidV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) Execute() (*models.ToolsNoBidSuggestBidV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ToolsNoBidSuggestBidV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return ToolsNoBidSuggestBidV2Response
-func (a *ToolsNoBidSuggestBidV2ApiService) getExecute(r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) (*ToolsNoBidSuggestBidV2Response, *http.Response, error) {
+func (a *ToolsNoBidSuggestBidV2ApiService) getExecute(r *ApiOpenApi2ToolsNoBidSuggestBidGetRequest) (*models.ToolsNoBidSuggestBidV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsNoBidSuggestBidV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsNoBidSuggestBidV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ToolsNoBidSuggestBidV2ApiService) getExecute(r *ApiOpenApi2ToolsNoBidSu
 	localVarPath := localBasePath + "/open_api/2/tools/no_bid/suggest_bid/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // KeywordUpdateV30ApiService KeywordUpdateV30Api service
@@ -25,15 +26,15 @@ type KeywordUpdateV30ApiService service
 type ApiOpenApiV30KeywordUpdatePostRequest struct {
 	ctx                     context.Context
 	ApiService              *KeywordUpdateV30ApiService
-	keywordUpdateV30Request *KeywordUpdateV30Request
+	keywordUpdateV30Request *models.KeywordUpdateV30Request
 }
 
-func (r *ApiOpenApiV30KeywordUpdatePostRequest) KeywordUpdateV30Request(keywordUpdateV30Request KeywordUpdateV30Request) *ApiOpenApiV30KeywordUpdatePostRequest {
+func (r *ApiOpenApiV30KeywordUpdatePostRequest) KeywordUpdateV30Request(keywordUpdateV30Request models.KeywordUpdateV30Request) *ApiOpenApiV30KeywordUpdatePostRequest {
 	r.keywordUpdateV30Request = &keywordUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30KeywordUpdatePostRequest) Execute() (*KeywordUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30KeywordUpdatePostRequest) Execute() (*models.KeywordUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *KeywordUpdateV30ApiService) Post(ctx context.Context) *ApiOpenApiV30Key
 // Execute executes the request
 //
 //	@return KeywordUpdateV30Response
-func (a *KeywordUpdateV30ApiService) postExecute(r *ApiOpenApiV30KeywordUpdatePostRequest) (*KeywordUpdateV30Response, *http.Response, error) {
+func (a *KeywordUpdateV30ApiService) postExecute(r *ApiOpenApiV30KeywordUpdatePostRequest) (*models.KeywordUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *KeywordUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.KeywordUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *KeywordUpdateV30ApiService) postExecute(r *ApiOpenApiV30KeywordUpdatePo
 	localVarPath := localBasePath + "/open_api/v3.0/keyword/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsCluePrivateMessageCallbackV2ApiService ToolsCluePrivateMessageCallbackV2Api service
@@ -25,15 +26,15 @@ type ToolsCluePrivateMessageCallbackV2ApiService service
 type ApiOpenApi2ToolsCluePrivateMessageCallbackPostRequest struct {
 	ctx                                      context.Context
 	ApiService                               *ToolsCluePrivateMessageCallbackV2ApiService
-	toolsCluePrivateMessageCallbackV2Request *ToolsCluePrivateMessageCallbackV2Request
+	toolsCluePrivateMessageCallbackV2Request *models.ToolsCluePrivateMessageCallbackV2Request
 }
 
-func (r *ApiOpenApi2ToolsCluePrivateMessageCallbackPostRequest) ToolsCluePrivateMessageCallbackV2Request(toolsCluePrivateMessageCallbackV2Request ToolsCluePrivateMessageCallbackV2Request) *ApiOpenApi2ToolsCluePrivateMessageCallbackPostRequest {
+func (r *ApiOpenApi2ToolsCluePrivateMessageCallbackPostRequest) ToolsCluePrivateMessageCallbackV2Request(toolsCluePrivateMessageCallbackV2Request models.ToolsCluePrivateMessageCallbackV2Request) *ApiOpenApi2ToolsCluePrivateMessageCallbackPostRequest {
 	r.toolsCluePrivateMessageCallbackV2Request = &toolsCluePrivateMessageCallbackV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsCluePrivateMessageCallbackPostRequest) Execute() (*ToolsCluePrivateMessageCallbackV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsCluePrivateMessageCallbackPostRequest) Execute() (*models.ToolsCluePrivateMessageCallbackV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsCluePrivateMessageCallbackV2ApiService) Post(ctx context.Context) 
 // Execute executes the request
 //
 //	@return ToolsCluePrivateMessageCallbackV2Response
-func (a *ToolsCluePrivateMessageCallbackV2ApiService) postExecute(r *ApiOpenApi2ToolsCluePrivateMessageCallbackPostRequest) (*ToolsCluePrivateMessageCallbackV2Response, *http.Response, error) {
+func (a *ToolsCluePrivateMessageCallbackV2ApiService) postExecute(r *ApiOpenApi2ToolsCluePrivateMessageCallbackPostRequest) (*models.ToolsCluePrivateMessageCallbackV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsCluePrivateMessageCallbackV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsCluePrivateMessageCallbackV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsCluePrivateMessageCallbackV2ApiService) postExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/tools/clue/private_message/callback/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

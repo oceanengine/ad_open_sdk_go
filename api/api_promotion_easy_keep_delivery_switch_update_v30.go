@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // PromotionEasyKeepDeliverySwitchUpdateV30ApiService PromotionEasyKeepDeliverySwitchUpdateV30Api service
@@ -25,15 +26,15 @@ type PromotionEasyKeepDeliverySwitchUpdateV30ApiService service
 type ApiOpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest struct {
 	ctx                                             context.Context
 	ApiService                                      *PromotionEasyKeepDeliverySwitchUpdateV30ApiService
-	promotionEasyKeepDeliverySwitchUpdateV30Request *PromotionEasyKeepDeliverySwitchUpdateV30Request
+	promotionEasyKeepDeliverySwitchUpdateV30Request *models.PromotionEasyKeepDeliverySwitchUpdateV30Request
 }
 
-func (r *ApiOpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest) PromotionEasyKeepDeliverySwitchUpdateV30Request(promotionEasyKeepDeliverySwitchUpdateV30Request PromotionEasyKeepDeliverySwitchUpdateV30Request) *ApiOpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest {
+func (r *ApiOpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest) PromotionEasyKeepDeliverySwitchUpdateV30Request(promotionEasyKeepDeliverySwitchUpdateV30Request models.PromotionEasyKeepDeliverySwitchUpdateV30Request) *ApiOpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest {
 	r.promotionEasyKeepDeliverySwitchUpdateV30Request = &promotionEasyKeepDeliverySwitchUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest) Execute() (*PromotionEasyKeepDeliverySwitchUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest) Execute() (*models.PromotionEasyKeepDeliverySwitchUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *PromotionEasyKeepDeliverySwitchUpdateV30ApiService) Post(ctx context.Co
 // Execute executes the request
 //
 //	@return PromotionEasyKeepDeliverySwitchUpdateV30Response
-func (a *PromotionEasyKeepDeliverySwitchUpdateV30ApiService) postExecute(r *ApiOpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest) (*PromotionEasyKeepDeliverySwitchUpdateV30Response, *http.Response, error) {
+func (a *PromotionEasyKeepDeliverySwitchUpdateV30ApiService) postExecute(r *ApiOpenApiV30PromotionEasyKeepDeliverySwitchUpdatePostRequest) (*models.PromotionEasyKeepDeliverySwitchUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *PromotionEasyKeepDeliverySwitchUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.PromotionEasyKeepDeliverySwitchUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *PromotionEasyKeepDeliverySwitchUpdateV30ApiService) postExecute(r *ApiO
 	localVarPath := localBasePath + "/open_api/v3.0/promotion_easy/keep_delivery_switch/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

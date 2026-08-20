@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QueryInvoiceDetailV2ApiService QueryInvoiceDetailV2Api service
@@ -45,7 +46,7 @@ func (r *ApiOpenApi2QueryInvoiceDetailGetRequest) InvoiceId(invoiceId int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2QueryInvoiceDetailGetRequest) Execute() (*QueryInvoiceDetailV2Response, *http.Response, error) {
+func (r *ApiOpenApi2QueryInvoiceDetailGetRequest) Execute() (*models.QueryInvoiceDetailV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *QueryInvoiceDetailV2ApiService) Get(ctx context.Context) *ApiOpenApi2Qu
 // Execute executes the request
 //
 //	@return QueryInvoiceDetailV2Response
-func (a *QueryInvoiceDetailV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceDetailGetRequest) (*QueryInvoiceDetailV2Response, *http.Response, error) {
+func (a *QueryInvoiceDetailV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceDetailGetRequest) (*models.QueryInvoiceDetailV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QueryInvoiceDetailV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QueryInvoiceDetailV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *QueryInvoiceDetailV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceDe
 	localVarPath := localBasePath + "/open_api/2/query/invoice_detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentIds == nil {

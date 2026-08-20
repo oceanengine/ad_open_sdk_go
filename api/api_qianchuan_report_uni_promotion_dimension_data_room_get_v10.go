@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService QianchuanReportUniPromotionDimensionDataRoomGetV10Api service
@@ -29,13 +30,13 @@ type ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest stru
 	roomId       *int64
 	startTime    *string
 	endTime      *string
-	dimension    *QianchuanReportUniPromotionDimensionDataRoomGetV10Dimension
-	metrics      *[]*QianchuanReportUniPromotionDimensionDataRoomGetV10Metrics
+	dimension    *models.QianchuanReportUniPromotionDimensionDataRoomGetV10Dimension
+	metrics      *[]*models.QianchuanReportUniPromotionDimensionDataRoomGetV10Metrics
 	orderField   *string
-	orderType    *QianchuanReportUniPromotionDimensionDataRoomGetV10OrderType
+	orderType    *models.QianchuanReportUniPromotionDimensionDataRoomGetV10OrderType
 	page         *int32
 	pageSize     *int32
-	filtering    *QianchuanReportUniPromotionDimensionDataRoomGetV10Filtering
+	filtering    *models.QianchuanReportUniPromotionDimensionDataRoomGetV10Filtering
 }
 
 func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest {
@@ -58,12 +59,12 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest)
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) Dimension(dimension QianchuanReportUniPromotionDimensionDataRoomGetV10Dimension) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) Dimension(dimension models.QianchuanReportUniPromotionDimensionDataRoomGetV10Dimension) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest {
 	r.dimension = &dimension
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) Metrics(metrics []*QianchuanReportUniPromotionDimensionDataRoomGetV10Metrics) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) Metrics(metrics []*models.QianchuanReportUniPromotionDimensionDataRoomGetV10Metrics) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest {
 	r.metrics = &metrics
 	return r
 }
@@ -74,7 +75,7 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest)
 }
 
 // 排序方式
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) OrderType(orderType QianchuanReportUniPromotionDimensionDataRoomGetV10OrderType) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) OrderType(orderType models.QianchuanReportUniPromotionDimensionDataRoomGetV10OrderType) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -92,12 +93,12 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest)
 }
 
 // 过滤器
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) Filtering(filtering QianchuanReportUniPromotionDimensionDataRoomGetV10Filtering) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) Filtering(filtering models.QianchuanReportUniPromotionDimensionDataRoomGetV10Filtering) *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) Execute() (*QianchuanReportUniPromotionDimensionDataRoomGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) Execute() (*models.QianchuanReportUniPromotionDimensionDataRoomGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -131,12 +132,12 @@ func (a *QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService) Get(ctx c
 // Execute executes the request
 //
 //	@return QianchuanReportUniPromotionDimensionDataRoomGetV10Response
-func (a *QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) (*QianchuanReportUniPromotionDimensionDataRoomGetV10Response, *http.Response, error) {
+func (a *QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportUniPromotionDimensionDataRoomGetGetRequest) (*models.QianchuanReportUniPromotionDimensionDataRoomGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportUniPromotionDimensionDataRoomGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportUniPromotionDimensionDataRoomGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -146,7 +147,7 @@ func (a *QianchuanReportUniPromotionDimensionDataRoomGetV10ApiService) getExecut
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/uni_promotion/dimension_data/room/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

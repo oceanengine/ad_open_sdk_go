@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerAbnormalAssetsGetV30ApiService EventManagerAbnormalAssetsGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *EventManagerAbnormalAssetsGetV30ApiService
 	advertiserId *string
-	pageInfo     *EventManagerAbnormalAssetsGetV30PageInfo
+	pageInfo     *models.EventManagerAbnormalAssetsGetV30PageInfo
 }
 
 // 广告主ID
@@ -36,12 +37,12 @@ func (r *ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest) AdvertiserId(adve
 }
 
 // 分页信息
-func (r *ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest) PageInfo(pageInfo EventManagerAbnormalAssetsGetV30PageInfo) *ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest {
+func (r *ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest) PageInfo(pageInfo models.EventManagerAbnormalAssetsGetV30PageInfo) *ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest {
 	r.pageInfo = &pageInfo
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest) Execute() (*EventManagerAbnormalAssetsGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest) Execute() (*models.EventManagerAbnormalAssetsGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *EventManagerAbnormalAssetsGetV30ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return EventManagerAbnormalAssetsGetV30Response
-func (a *EventManagerAbnormalAssetsGetV30ApiService) getExecute(r *ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest) (*EventManagerAbnormalAssetsGetV30Response, *http.Response, error) {
+func (a *EventManagerAbnormalAssetsGetV30ApiService) getExecute(r *ApiOpenApiV30EventManagerAbnormalAssetsGetGetRequest) (*models.EventManagerAbnormalAssetsGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerAbnormalAssetsGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerAbnormalAssetsGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *EventManagerAbnormalAssetsGetV30ApiService) getExecute(r *ApiOpenApiV30
 	localVarPath := localBasePath + "/open_api/v3.0/event_manager/abnormal_assets/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

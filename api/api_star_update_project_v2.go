@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarUpdateProjectV2ApiService StarUpdateProjectV2Api service
@@ -25,15 +26,15 @@ type StarUpdateProjectV2ApiService service
 type ApiOpenApi2StarUpdateProjectPostRequest struct {
 	ctx                        context.Context
 	ApiService                 *StarUpdateProjectV2ApiService
-	starUpdateProjectV2Request *StarUpdateProjectV2Request
+	starUpdateProjectV2Request *models.StarUpdateProjectV2Request
 }
 
-func (r *ApiOpenApi2StarUpdateProjectPostRequest) StarUpdateProjectV2Request(starUpdateProjectV2Request StarUpdateProjectV2Request) *ApiOpenApi2StarUpdateProjectPostRequest {
+func (r *ApiOpenApi2StarUpdateProjectPostRequest) StarUpdateProjectV2Request(starUpdateProjectV2Request models.StarUpdateProjectV2Request) *ApiOpenApi2StarUpdateProjectPostRequest {
 	r.starUpdateProjectV2Request = &starUpdateProjectV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarUpdateProjectPostRequest) Execute() (*StarUpdateProjectV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarUpdateProjectPostRequest) Execute() (*models.StarUpdateProjectV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarUpdateProjectV2ApiService) Post(ctx context.Context) *ApiOpenApi2St
 // Execute executes the request
 //
 //	@return StarUpdateProjectV2Response
-func (a *StarUpdateProjectV2ApiService) postExecute(r *ApiOpenApi2StarUpdateProjectPostRequest) (*StarUpdateProjectV2Response, *http.Response, error) {
+func (a *StarUpdateProjectV2ApiService) postExecute(r *ApiOpenApi2StarUpdateProjectPostRequest) (*models.StarUpdateProjectV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarUpdateProjectV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarUpdateProjectV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarUpdateProjectV2ApiService) postExecute(r *ApiOpenApi2StarUpdateProj
 	localVarPath := localBasePath + "/open_api/2/star/update/project/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

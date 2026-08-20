@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerAuthEnableV2ApiService EventManagerAuthEnableV2Api service
@@ -25,15 +26,15 @@ type EventManagerAuthEnableV2ApiService service
 type ApiOpenApi2EventManagerAuthEnablePostRequest struct {
 	ctx                             context.Context
 	ApiService                      *EventManagerAuthEnableV2ApiService
-	eventManagerAuthEnableV2Request *EventManagerAuthEnableV2Request
+	eventManagerAuthEnableV2Request *models.EventManagerAuthEnableV2Request
 }
 
-func (r *ApiOpenApi2EventManagerAuthEnablePostRequest) EventManagerAuthEnableV2Request(eventManagerAuthEnableV2Request EventManagerAuthEnableV2Request) *ApiOpenApi2EventManagerAuthEnablePostRequest {
+func (r *ApiOpenApi2EventManagerAuthEnablePostRequest) EventManagerAuthEnableV2Request(eventManagerAuthEnableV2Request models.EventManagerAuthEnableV2Request) *ApiOpenApi2EventManagerAuthEnablePostRequest {
 	r.eventManagerAuthEnableV2Request = &eventManagerAuthEnableV2Request
 	return r
 }
 
-func (r *ApiOpenApi2EventManagerAuthEnablePostRequest) Execute() (*EventManagerAuthEnableV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EventManagerAuthEnablePostRequest) Execute() (*models.EventManagerAuthEnableV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EventManagerAuthEnableV2ApiService) Post(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return EventManagerAuthEnableV2Response
-func (a *EventManagerAuthEnableV2ApiService) postExecute(r *ApiOpenApi2EventManagerAuthEnablePostRequest) (*EventManagerAuthEnableV2Response, *http.Response, error) {
+func (a *EventManagerAuthEnableV2ApiService) postExecute(r *ApiOpenApi2EventManagerAuthEnablePostRequest) (*models.EventManagerAuthEnableV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerAuthEnableV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerAuthEnableV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EventManagerAuthEnableV2ApiService) postExecute(r *ApiOpenApi2EventMana
 	localVarPath := localBasePath + "/open_api/2/event_manager/auth/enable/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaOfflineProductBatchDeleteV30ApiService DpaOfflineProductBatchDeleteV30Api service
@@ -25,15 +26,15 @@ type DpaOfflineProductBatchDeleteV30ApiService service
 type ApiOpenApiV30DpaOfflineProductBatchDeletePostRequest struct {
 	ctx                                    context.Context
 	ApiService                             *DpaOfflineProductBatchDeleteV30ApiService
-	dpaOfflineProductBatchDeleteV30Request *DpaOfflineProductBatchDeleteV30Request
+	dpaOfflineProductBatchDeleteV30Request *models.DpaOfflineProductBatchDeleteV30Request
 }
 
-func (r *ApiOpenApiV30DpaOfflineProductBatchDeletePostRequest) DpaOfflineProductBatchDeleteV30Request(dpaOfflineProductBatchDeleteV30Request DpaOfflineProductBatchDeleteV30Request) *ApiOpenApiV30DpaOfflineProductBatchDeletePostRequest {
+func (r *ApiOpenApiV30DpaOfflineProductBatchDeletePostRequest) DpaOfflineProductBatchDeleteV30Request(dpaOfflineProductBatchDeleteV30Request models.DpaOfflineProductBatchDeleteV30Request) *ApiOpenApiV30DpaOfflineProductBatchDeletePostRequest {
 	r.dpaOfflineProductBatchDeleteV30Request = &dpaOfflineProductBatchDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30DpaOfflineProductBatchDeletePostRequest) Execute() (*DpaOfflineProductBatchDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaOfflineProductBatchDeletePostRequest) Execute() (*models.DpaOfflineProductBatchDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DpaOfflineProductBatchDeleteV30ApiService) Post(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return DpaOfflineProductBatchDeleteV30Response
-func (a *DpaOfflineProductBatchDeleteV30ApiService) postExecute(r *ApiOpenApiV30DpaOfflineProductBatchDeletePostRequest) (*DpaOfflineProductBatchDeleteV30Response, *http.Response, error) {
+func (a *DpaOfflineProductBatchDeleteV30ApiService) postExecute(r *ApiOpenApiV30DpaOfflineProductBatchDeletePostRequest) (*models.DpaOfflineProductBatchDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaOfflineProductBatchDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaOfflineProductBatchDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DpaOfflineProductBatchDeleteV30ApiService) postExecute(r *ApiOpenApiV30
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/offline_product_batch/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

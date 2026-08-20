@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsSiteTemplatePreviewV2ApiService ToolsSiteTemplatePreviewV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2ToolsSiteTemplatePreviewGetRequest) TemplateId(templateId in
 	return r
 }
 
-func (r *ApiOpenApi2ToolsSiteTemplatePreviewGetRequest) Execute() (*ToolsSiteTemplatePreviewV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsSiteTemplatePreviewGetRequest) Execute() (*models.ToolsSiteTemplatePreviewV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -77,12 +78,12 @@ func (a *ToolsSiteTemplatePreviewV2ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsSiteTemplatePreviewV2Response
-func (a *ToolsSiteTemplatePreviewV2ApiService) getExecute(r *ApiOpenApi2ToolsSiteTemplatePreviewGetRequest) (*ToolsSiteTemplatePreviewV2Response, *http.Response, error) {
+func (a *ToolsSiteTemplatePreviewV2ApiService) getExecute(r *ApiOpenApi2ToolsSiteTemplatePreviewGetRequest) (*models.ToolsSiteTemplatePreviewV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsSiteTemplatePreviewV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsSiteTemplatePreviewV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -92,7 +93,7 @@ func (a *ToolsSiteTemplatePreviewV2ApiService) getExecute(r *ApiOpenApi2ToolsSit
 	localVarPath := localBasePath + "/open_api/2/tools/site_template/preview/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiService QianchuanQianchuanReportTodayLiveRoomConfigGetV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest struc
 	ctx          context.Context
 	ApiService   *QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiService
 	advertiserId *int64
-	dataTopics   *[]*QianchuanQianchuanReportTodayLiveRoomConfigGetV10DataTopics
+	dataTopics   *[]*models.QianchuanQianchuanReportTodayLiveRoomConfigGetV10DataTopics
 }
 
 func (r *ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest) 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest) DataTopics(dataTopics []*QianchuanQianchuanReportTodayLiveRoomConfigGetV10DataTopics) *ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest {
+func (r *ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest) DataTopics(dataTopics []*models.QianchuanQianchuanReportTodayLiveRoomConfigGetV10DataTopics) *ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest {
 	r.dataTopics = &dataTopics
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest) Execute() (*QianchuanQianchuanReportTodayLiveRoomConfigGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest) Execute() (*models.QianchuanQianchuanReportTodayLiveRoomConfigGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiService) Get(ctx co
 // Execute executes the request
 //
 //	@return QianchuanQianchuanReportTodayLiveRoomConfigGetV10Response
-func (a *QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest) (*QianchuanQianchuanReportTodayLiveRoomConfigGetV10Response, *http.Response, error) {
+func (a *QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanQianchuanReportTodayLiveRoomConfigGetGetRequest) (*models.QianchuanQianchuanReportTodayLiveRoomConfigGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanQianchuanReportTodayLiveRoomConfigGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanQianchuanReportTodayLiveRoomConfigGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *QianchuanQianchuanReportTodayLiveRoomConfigGetV10ApiService) getExecute
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/qianchuan/report/today_live/room/config/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

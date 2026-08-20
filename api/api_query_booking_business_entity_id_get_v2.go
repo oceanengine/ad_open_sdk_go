@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QueryBookingBusinessEntityIdGetV2ApiService QueryBookingBusinessEntityIdGetV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2QueryBookingBusinessEntityIdGetGetRequest) OrderIds(orderIds
 	return r
 }
 
-func (r *ApiOpenApi2QueryBookingBusinessEntityIdGetGetRequest) Execute() (*QueryBookingBusinessEntityIdGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2QueryBookingBusinessEntityIdGetGetRequest) Execute() (*models.QueryBookingBusinessEntityIdGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *QueryBookingBusinessEntityIdGetV2ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return QueryBookingBusinessEntityIdGetV2Response
-func (a *QueryBookingBusinessEntityIdGetV2ApiService) getExecute(r *ApiOpenApi2QueryBookingBusinessEntityIdGetGetRequest) (*QueryBookingBusinessEntityIdGetV2Response, *http.Response, error) {
+func (a *QueryBookingBusinessEntityIdGetV2ApiService) getExecute(r *ApiOpenApi2QueryBookingBusinessEntityIdGetGetRequest) (*models.QueryBookingBusinessEntityIdGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QueryBookingBusinessEntityIdGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QueryBookingBusinessEntityIdGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *QueryBookingBusinessEntityIdGetV2ApiService) getExecute(r *ApiOpenApi2Q
 	localVarPath := localBasePath + "/open_api/2/query/booking/business_entity_id/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

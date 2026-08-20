@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CarouselListV2ApiService CarouselListV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2CarouselListGetRequest struct {
 	ctx          context.Context
 	ApiService   *CarouselListV2ApiService
 	advertiserId *int64
-	filtering    *CarouselListV2Filtering
+	filtering    *models.CarouselListV2Filtering
 	pageSize     *int64
 	page         *int64
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApi2CarouselListGetRequest) AdvertiserId(advertiserId int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2CarouselListGetRequest) Filtering(filtering CarouselListV2Filtering) *ApiOpenApi2CarouselListGetRequest {
+func (r *ApiOpenApi2CarouselListGetRequest) Filtering(filtering models.CarouselListV2Filtering) *ApiOpenApi2CarouselListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2CarouselListGetRequest) Page(page int64) *ApiOpenApi2Carouse
 	return r
 }
 
-func (r *ApiOpenApi2CarouselListGetRequest) Execute() (*CarouselListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CarouselListGetRequest) Execute() (*models.CarouselListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *CarouselListV2ApiService) Get(ctx context.Context) *ApiOpenApi2Carousel
 // Execute executes the request
 //
 //	@return CarouselListV2Response
-func (a *CarouselListV2ApiService) getExecute(r *ApiOpenApi2CarouselListGetRequest) (*CarouselListV2Response, *http.Response, error) {
+func (a *CarouselListV2ApiService) getExecute(r *ApiOpenApi2CarouselListGetRequest) (*models.CarouselListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CarouselListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CarouselListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *CarouselListV2ApiService) getExecute(r *ApiOpenApi2CarouselListGetReque
 	localVarPath := localBasePath + "/open_api/2/carousel/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

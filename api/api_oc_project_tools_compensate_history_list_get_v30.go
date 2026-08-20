@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OcProjectToolsCompensateHistoryListGetV30ApiService OcProjectToolsCompensateHistoryListGetV30Api service
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV30OcProjectToolsCompensateHistoryListGetGetRequest) Schedule
 	return r
 }
 
-func (r *ApiOpenApiV30OcProjectToolsCompensateHistoryListGetGetRequest) Execute() (*OcProjectToolsCompensateHistoryListGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OcProjectToolsCompensateHistoryListGetGetRequest) Execute() (*models.OcProjectToolsCompensateHistoryListGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *OcProjectToolsCompensateHistoryListGetV30ApiService) Get(ctx context.Co
 // Execute executes the request
 //
 //	@return OcProjectToolsCompensateHistoryListGetV30Response
-func (a *OcProjectToolsCompensateHistoryListGetV30ApiService) getExecute(r *ApiOpenApiV30OcProjectToolsCompensateHistoryListGetGetRequest) (*OcProjectToolsCompensateHistoryListGetV30Response, *http.Response, error) {
+func (a *OcProjectToolsCompensateHistoryListGetV30ApiService) getExecute(r *ApiOpenApiV30OcProjectToolsCompensateHistoryListGetGetRequest) (*models.OcProjectToolsCompensateHistoryListGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OcProjectToolsCompensateHistoryListGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OcProjectToolsCompensateHistoryListGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *OcProjectToolsCompensateHistoryListGetV30ApiService) getExecute(r *ApiO
 	localVarPath := localBasePath + "/open_api/v3.0/oc_project/tools/compensate_history_list/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

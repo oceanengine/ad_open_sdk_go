@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalProjectUpdateV30ApiService LocalProjectUpdateV30Api service
@@ -25,15 +26,15 @@ type LocalProjectUpdateV30ApiService service
 type ApiOpenApiV30LocalProjectUpdatePostRequest struct {
 	ctx                          context.Context
 	ApiService                   *LocalProjectUpdateV30ApiService
-	localProjectUpdateV30Request *LocalProjectUpdateV30Request
+	localProjectUpdateV30Request *models.LocalProjectUpdateV30Request
 }
 
-func (r *ApiOpenApiV30LocalProjectUpdatePostRequest) LocalProjectUpdateV30Request(localProjectUpdateV30Request LocalProjectUpdateV30Request) *ApiOpenApiV30LocalProjectUpdatePostRequest {
+func (r *ApiOpenApiV30LocalProjectUpdatePostRequest) LocalProjectUpdateV30Request(localProjectUpdateV30Request models.LocalProjectUpdateV30Request) *ApiOpenApiV30LocalProjectUpdatePostRequest {
 	r.localProjectUpdateV30Request = &localProjectUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30LocalProjectUpdatePostRequest) Execute() (*LocalProjectUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalProjectUpdatePostRequest) Execute() (*models.LocalProjectUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *LocalProjectUpdateV30ApiService) Post(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return LocalProjectUpdateV30Response
-func (a *LocalProjectUpdateV30ApiService) postExecute(r *ApiOpenApiV30LocalProjectUpdatePostRequest) (*LocalProjectUpdateV30Response, *http.Response, error) {
+func (a *LocalProjectUpdateV30ApiService) postExecute(r *ApiOpenApiV30LocalProjectUpdatePostRequest) (*models.LocalProjectUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalProjectUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalProjectUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *LocalProjectUpdateV30ApiService) postExecute(r *ApiOpenApiV30LocalProje
 	localVarPath := localBasePath + "/open_api/v3.0/local/project/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

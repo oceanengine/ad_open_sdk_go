@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportAudienceInterestActionListV2ApiService ReportAudienceInterestActionListV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2ReportAudienceInterestActionListGetRequest struct {
 	ApiService   *ReportAudienceInterestActionListV2ApiService
 	advertiserId *int64
 	endDate      **string
-	filtering    *ReportAudienceInterestActionListV2Filtering
+	filtering    *models.ReportAudienceInterestActionListV2Filtering
 	metrics      *[]string
 	page         *int64
 	pageSize     *int64
@@ -44,7 +45,7 @@ func (r *ApiOpenApi2ReportAudienceInterestActionListGetRequest) EndDate(endDate 
 	return r
 }
 
-func (r *ApiOpenApi2ReportAudienceInterestActionListGetRequest) Filtering(filtering ReportAudienceInterestActionListV2Filtering) *ApiOpenApi2ReportAudienceInterestActionListGetRequest {
+func (r *ApiOpenApi2ReportAudienceInterestActionListGetRequest) Filtering(filtering models.ReportAudienceInterestActionListV2Filtering) *ApiOpenApi2ReportAudienceInterestActionListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApi2ReportAudienceInterestActionListGetRequest) StartDate(startD
 	return r
 }
 
-func (r *ApiOpenApi2ReportAudienceInterestActionListGetRequest) Execute() (*ReportAudienceInterestActionListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ReportAudienceInterestActionListGetRequest) Execute() (*models.ReportAudienceInterestActionListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *ReportAudienceInterestActionListV2ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return ReportAudienceInterestActionListV2Response
-func (a *ReportAudienceInterestActionListV2ApiService) getExecute(r *ApiOpenApi2ReportAudienceInterestActionListGetRequest) (*ReportAudienceInterestActionListV2Response, *http.Response, error) {
+func (a *ReportAudienceInterestActionListV2ApiService) getExecute(r *ApiOpenApi2ReportAudienceInterestActionListGetRequest) (*models.ReportAudienceInterestActionListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportAudienceInterestActionListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportAudienceInterestActionListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *ReportAudienceInterestActionListV2ApiService) getExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/report/audience/interest_action/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

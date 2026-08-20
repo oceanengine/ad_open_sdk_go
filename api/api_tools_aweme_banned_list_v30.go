@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAwemeBannedListV30ApiService ToolsAwemeBannedListV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30ToolsAwemeBannedListGetRequest struct {
 	ctx             context.Context
 	ApiService      *ToolsAwemeBannedListV30ApiService
 	advertiserId    *int64
-	bannedType      *ToolsAwemeBannedListV30BannedType
+	bannedType      *models.ToolsAwemeBannedListV30BannedType
 	awemeId         *string
 	isApplyToAdv    *bool
 	nicknameKeyword *string
@@ -42,7 +43,7 @@ func (r *ApiOpenApiV30ToolsAwemeBannedListGetRequest) AdvertiserId(advertiserId 
 }
 
 // 屏蔽类型， 允许值： CUSTOM_TYPE：自定义规则，根据昵称关键词屏蔽；AWEME_TYPE：根据抖音id屏蔽。
-func (r *ApiOpenApiV30ToolsAwemeBannedListGetRequest) BannedType(bannedType ToolsAwemeBannedListV30BannedType) *ApiOpenApiV30ToolsAwemeBannedListGetRequest {
+func (r *ApiOpenApiV30ToolsAwemeBannedListGetRequest) BannedType(bannedType models.ToolsAwemeBannedListV30BannedType) *ApiOpenApiV30ToolsAwemeBannedListGetRequest {
 	r.bannedType = &bannedType
 	return r
 }
@@ -83,7 +84,7 @@ func (r *ApiOpenApiV30ToolsAwemeBannedListGetRequest) PageSize(pageSize int64) *
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsAwemeBannedListGetRequest) Execute() (*ToolsAwemeBannedListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsAwemeBannedListGetRequest) Execute() (*models.ToolsAwemeBannedListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -117,12 +118,12 @@ func (a *ToolsAwemeBannedListV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsAwemeBannedListV30Response
-func (a *ToolsAwemeBannedListV30ApiService) getExecute(r *ApiOpenApiV30ToolsAwemeBannedListGetRequest) (*ToolsAwemeBannedListV30Response, *http.Response, error) {
+func (a *ToolsAwemeBannedListV30ApiService) getExecute(r *ApiOpenApiV30ToolsAwemeBannedListGetRequest) (*models.ToolsAwemeBannedListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAwemeBannedListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAwemeBannedListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -132,7 +133,7 @@ func (a *ToolsAwemeBannedListV30ApiService) getExecute(r *ApiOpenApiV30ToolsAwem
 	localVarPath := localBasePath + "/open_api/v3.0/tools/aweme_banned/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

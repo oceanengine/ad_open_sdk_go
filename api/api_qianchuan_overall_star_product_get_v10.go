@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanOverallStarProductGetV10ApiService QianchuanOverallStarProductGetV10Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV10QianchuanOverallStarProductGetGetRequest struct {
 	advertiserId *int64
 	shopId       *int64
 	userId       *int64
-	pageParams   *QianchuanOverallStarProductGetV10PageParams
+	pageParams   *models.QianchuanOverallStarProductGetV10PageParams
 }
 
 // adv_id
@@ -50,12 +51,12 @@ func (r *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest) UserId(userId in
 }
 
 // 分页查询参数
-func (r *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest) PageParams(pageParams QianchuanOverallStarProductGetV10PageParams) *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest {
+func (r *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest) PageParams(pageParams models.QianchuanOverallStarProductGetV10PageParams) *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest {
 	r.pageParams = &pageParams
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest) Execute() (*QianchuanOverallStarProductGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest) Execute() (*models.QianchuanOverallStarProductGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *QianchuanOverallStarProductGetV10ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return QianchuanOverallStarProductGetV10Response
-func (a *QianchuanOverallStarProductGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest) (*QianchuanOverallStarProductGetV10Response, *http.Response, error) {
+func (a *QianchuanOverallStarProductGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanOverallStarProductGetGetRequest) (*models.QianchuanOverallStarProductGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanOverallStarProductGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanOverallStarProductGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *QianchuanOverallStarProductGetV10ApiService) getExecute(r *ApiOpenApiV1
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/overall_star_product/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AicVideoMixcutCreateV30ApiService AicVideoMixcutCreateV30Api service
@@ -25,15 +26,15 @@ type AicVideoMixcutCreateV30ApiService service
 type ApiOpenApiV30AicVideoMixcutCreatePostRequest struct {
 	ctx                            context.Context
 	ApiService                     *AicVideoMixcutCreateV30ApiService
-	aicVideoMixcutCreateV30Request *AicVideoMixcutCreateV30Request
+	aicVideoMixcutCreateV30Request *models.AicVideoMixcutCreateV30Request
 }
 
-func (r *ApiOpenApiV30AicVideoMixcutCreatePostRequest) AicVideoMixcutCreateV30Request(aicVideoMixcutCreateV30Request AicVideoMixcutCreateV30Request) *ApiOpenApiV30AicVideoMixcutCreatePostRequest {
+func (r *ApiOpenApiV30AicVideoMixcutCreatePostRequest) AicVideoMixcutCreateV30Request(aicVideoMixcutCreateV30Request models.AicVideoMixcutCreateV30Request) *ApiOpenApiV30AicVideoMixcutCreatePostRequest {
 	r.aicVideoMixcutCreateV30Request = &aicVideoMixcutCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30AicVideoMixcutCreatePostRequest) Execute() (*AicVideoMixcutCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AicVideoMixcutCreatePostRequest) Execute() (*models.AicVideoMixcutCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AicVideoMixcutCreateV30ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return AicVideoMixcutCreateV30Response
-func (a *AicVideoMixcutCreateV30ApiService) postExecute(r *ApiOpenApiV30AicVideoMixcutCreatePostRequest) (*AicVideoMixcutCreateV30Response, *http.Response, error) {
+func (a *AicVideoMixcutCreateV30ApiService) postExecute(r *ApiOpenApiV30AicVideoMixcutCreatePostRequest) (*models.AicVideoMixcutCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AicVideoMixcutCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AicVideoMixcutCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AicVideoMixcutCreateV30ApiService) postExecute(r *ApiOpenApiV30AicVideo
 	localVarPath := localBasePath + "/open_api/v3.0/aic/video_mixcut/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

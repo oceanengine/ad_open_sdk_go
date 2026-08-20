@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAwemeCategoryTopAuthorGetV2ApiService ToolsAwemeCategoryTopAuthorGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsAwemeCategoryTopAuthorGetV2ApiService
 	advertiserId *int64
-	behaviors    *[]*ToolsAwemeCategoryTopAuthorGetV2Behaviors
+	behaviors    *[]*models.ToolsAwemeCategoryTopAuthorGetV2Behaviors
 	categoryId   *int64
 }
 
@@ -35,7 +36,7 @@ func (r *ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest) AdvertiserId(adver
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest) Behaviors(behaviors []*ToolsAwemeCategoryTopAuthorGetV2Behaviors) *ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest {
+func (r *ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest) Behaviors(behaviors []*models.ToolsAwemeCategoryTopAuthorGetV2Behaviors) *ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest {
 	r.behaviors = &behaviors
 	return r
 }
@@ -45,7 +46,7 @@ func (r *ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest) CategoryId(categor
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest) Execute() (*ToolsAwemeCategoryTopAuthorGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest) Execute() (*models.ToolsAwemeCategoryTopAuthorGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *ToolsAwemeCategoryTopAuthorGetV2ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return ToolsAwemeCategoryTopAuthorGetV2Response
-func (a *ToolsAwemeCategoryTopAuthorGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest) (*ToolsAwemeCategoryTopAuthorGetV2Response, *http.Response, error) {
+func (a *ToolsAwemeCategoryTopAuthorGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAwemeCategoryTopAuthorGetGetRequest) (*models.ToolsAwemeCategoryTopAuthorGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAwemeCategoryTopAuthorGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAwemeCategoryTopAuthorGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *ToolsAwemeCategoryTopAuthorGetV2ApiService) getExecute(r *ApiOpenApi2To
 	localVarPath := localBasePath + "/open_api/2/tools/aweme_category_top_author/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

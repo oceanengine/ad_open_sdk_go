@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalPromotionRejectReasonGetV30ApiService LocalPromotionRejectReasonGetV30Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30LocalPromotionRejectReasonGetGetRequest) PromotionIds(prom
 	return r
 }
 
-func (r *ApiOpenApiV30LocalPromotionRejectReasonGetGetRequest) Execute() (*LocalPromotionRejectReasonGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalPromotionRejectReasonGetGetRequest) Execute() (*models.LocalPromotionRejectReasonGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *LocalPromotionRejectReasonGetV30ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return LocalPromotionRejectReasonGetV30Response
-func (a *LocalPromotionRejectReasonGetV30ApiService) getExecute(r *ApiOpenApiV30LocalPromotionRejectReasonGetGetRequest) (*LocalPromotionRejectReasonGetV30Response, *http.Response, error) {
+func (a *LocalPromotionRejectReasonGetV30ApiService) getExecute(r *ApiOpenApiV30LocalPromotionRejectReasonGetGetRequest) (*models.LocalPromotionRejectReasonGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalPromotionRejectReasonGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalPromotionRejectReasonGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *LocalPromotionRejectReasonGetV30ApiService) getExecute(r *ApiOpenApiV30
 	localVarPath := localBasePath + "/open_api/v3.0/local/promotion/reject_reason/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

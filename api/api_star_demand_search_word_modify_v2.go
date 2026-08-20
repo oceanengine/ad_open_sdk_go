@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemandSearchWordModifyV2ApiService StarDemandSearchWordModifyV2Api service
@@ -25,15 +26,15 @@ type StarDemandSearchWordModifyV2ApiService service
 type ApiOpenApi2StarDemandSearchWordModifyPostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *StarDemandSearchWordModifyV2ApiService
-	starDemandSearchWordModifyV2Request *StarDemandSearchWordModifyV2Request
+	starDemandSearchWordModifyV2Request *models.StarDemandSearchWordModifyV2Request
 }
 
-func (r *ApiOpenApi2StarDemandSearchWordModifyPostRequest) StarDemandSearchWordModifyV2Request(starDemandSearchWordModifyV2Request StarDemandSearchWordModifyV2Request) *ApiOpenApi2StarDemandSearchWordModifyPostRequest {
+func (r *ApiOpenApi2StarDemandSearchWordModifyPostRequest) StarDemandSearchWordModifyV2Request(starDemandSearchWordModifyV2Request models.StarDemandSearchWordModifyV2Request) *ApiOpenApi2StarDemandSearchWordModifyPostRequest {
 	r.starDemandSearchWordModifyV2Request = &starDemandSearchWordModifyV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarDemandSearchWordModifyPostRequest) Execute() (*StarDemandSearchWordModifyV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemandSearchWordModifyPostRequest) Execute() (*models.StarDemandSearchWordModifyV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarDemandSearchWordModifyV2ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return StarDemandSearchWordModifyV2Response
-func (a *StarDemandSearchWordModifyV2ApiService) postExecute(r *ApiOpenApi2StarDemandSearchWordModifyPostRequest) (*StarDemandSearchWordModifyV2Response, *http.Response, error) {
+func (a *StarDemandSearchWordModifyV2ApiService) postExecute(r *ApiOpenApi2StarDemandSearchWordModifyPostRequest) (*models.StarDemandSearchWordModifyV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemandSearchWordModifyV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemandSearchWordModifyV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarDemandSearchWordModifyV2ApiService) postExecute(r *ApiOpenApi2StarD
 	localVarPath := localBasePath + "/open_api/2/star/demand/search_word/modify/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

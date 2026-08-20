@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CampaignUpdateV2ApiService CampaignUpdateV2Api service
@@ -25,15 +26,15 @@ type CampaignUpdateV2ApiService service
 type ApiOpenApi2CampaignUpdatePostRequest struct {
 	ctx                     context.Context
 	ApiService              *CampaignUpdateV2ApiService
-	campaignUpdateV2Request *CampaignUpdateV2Request
+	campaignUpdateV2Request *models.CampaignUpdateV2Request
 }
 
-func (r *ApiOpenApi2CampaignUpdatePostRequest) CampaignUpdateV2Request(campaignUpdateV2Request CampaignUpdateV2Request) *ApiOpenApi2CampaignUpdatePostRequest {
+func (r *ApiOpenApi2CampaignUpdatePostRequest) CampaignUpdateV2Request(campaignUpdateV2Request models.CampaignUpdateV2Request) *ApiOpenApi2CampaignUpdatePostRequest {
 	r.campaignUpdateV2Request = &campaignUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2CampaignUpdatePostRequest) Execute() (*CampaignUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CampaignUpdatePostRequest) Execute() (*models.CampaignUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *CampaignUpdateV2ApiService) Post(ctx context.Context) *ApiOpenApi2Campa
 // Execute executes the request
 //
 //	@return CampaignUpdateV2Response
-func (a *CampaignUpdateV2ApiService) postExecute(r *ApiOpenApi2CampaignUpdatePostRequest) (*CampaignUpdateV2Response, *http.Response, error) {
+func (a *CampaignUpdateV2ApiService) postExecute(r *ApiOpenApi2CampaignUpdatePostRequest) (*models.CampaignUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CampaignUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CampaignUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *CampaignUpdateV2ApiService) postExecute(r *ApiOpenApi2CampaignUpdatePos
 	localVarPath := localBasePath + "/open_api/2/campaign/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

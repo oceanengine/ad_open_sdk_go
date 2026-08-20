@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandRegionGetV30ApiService BrandRegionGetV30Api service
@@ -34,7 +35,7 @@ func (r *ApiOpenApiV30BrandRegionGetGetRequest) AdvertiserId(advertiserId int64)
 	return r
 }
 
-func (r *ApiOpenApiV30BrandRegionGetGetRequest) Execute() (*BrandRegionGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandRegionGetGetRequest) Execute() (*models.BrandRegionGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *BrandRegionGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Bra
 // Execute executes the request
 //
 //	@return BrandRegionGetV30Response
-func (a *BrandRegionGetV30ApiService) getExecute(r *ApiOpenApiV30BrandRegionGetGetRequest) (*BrandRegionGetV30Response, *http.Response, error) {
+func (a *BrandRegionGetV30ApiService) getExecute(r *ApiOpenApiV30BrandRegionGetGetRequest) (*models.BrandRegionGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandRegionGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandRegionGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *BrandRegionGetV30ApiService) getExecute(r *ApiOpenApiV30BrandRegionGetG
 	localVarPath := localBasePath + "/open_api/v3.0/brand/region/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

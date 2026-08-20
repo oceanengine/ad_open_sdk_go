@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StardeliveryTaskSharingListV30ApiService StardeliveryTaskSharingListV30Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30StardeliveryTaskSharingListGetRequest) PageSize(pageSize i
 	return r
 }
 
-func (r *ApiOpenApiV30StardeliveryTaskSharingListGetRequest) Execute() (*StardeliveryTaskSharingListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30StardeliveryTaskSharingListGetRequest) Execute() (*models.StardeliveryTaskSharingListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *StardeliveryTaskSharingListV30ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return StardeliveryTaskSharingListV30Response
-func (a *StardeliveryTaskSharingListV30ApiService) getExecute(r *ApiOpenApiV30StardeliveryTaskSharingListGetRequest) (*StardeliveryTaskSharingListV30Response, *http.Response, error) {
+func (a *StardeliveryTaskSharingListV30ApiService) getExecute(r *ApiOpenApiV30StardeliveryTaskSharingListGetRequest) (*models.StardeliveryTaskSharingListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StardeliveryTaskSharingListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StardeliveryTaskSharingListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *StardeliveryTaskSharingListV30ApiService) getExecute(r *ApiOpenApiV30St
 	localVarPath := localBasePath + "/open_api/v3.0/stardelivery/task/sharing/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

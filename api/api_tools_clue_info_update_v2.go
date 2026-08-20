@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueInfoUpdateV2ApiService ToolsClueInfoUpdateV2Api service
@@ -25,15 +26,15 @@ type ToolsClueInfoUpdateV2ApiService service
 type ApiOpenApi2ToolsClueInfoUpdatePostRequest struct {
 	ctx                          context.Context
 	ApiService                   *ToolsClueInfoUpdateV2ApiService
-	toolsClueInfoUpdateV2Request *ToolsClueInfoUpdateV2Request
+	toolsClueInfoUpdateV2Request *models.ToolsClueInfoUpdateV2Request
 }
 
-func (r *ApiOpenApi2ToolsClueInfoUpdatePostRequest) ToolsClueInfoUpdateV2Request(toolsClueInfoUpdateV2Request ToolsClueInfoUpdateV2Request) *ApiOpenApi2ToolsClueInfoUpdatePostRequest {
+func (r *ApiOpenApi2ToolsClueInfoUpdatePostRequest) ToolsClueInfoUpdateV2Request(toolsClueInfoUpdateV2Request models.ToolsClueInfoUpdateV2Request) *ApiOpenApi2ToolsClueInfoUpdatePostRequest {
 	r.toolsClueInfoUpdateV2Request = &toolsClueInfoUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueInfoUpdatePostRequest) Execute() (*ToolsClueInfoUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueInfoUpdatePostRequest) Execute() (*models.ToolsClueInfoUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -72,12 +73,12 @@ func (a *ToolsClueInfoUpdateV2ApiService) Post(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return ToolsClueInfoUpdateV2Response
-func (a *ToolsClueInfoUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsClueInfoUpdatePostRequest) (*ToolsClueInfoUpdateV2Response, *http.Response, error) {
+func (a *ToolsClueInfoUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsClueInfoUpdatePostRequest) (*models.ToolsClueInfoUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueInfoUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueInfoUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -87,7 +88,7 @@ func (a *ToolsClueInfoUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsClueInf
 	localVarPath := localBasePath + "/open_api/2/tools/clue/info/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

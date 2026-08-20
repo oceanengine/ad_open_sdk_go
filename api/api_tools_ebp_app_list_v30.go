@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpAppListV30ApiService ToolsEbpAppListV30Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV30ToolsEbpAppListGetRequest struct {
 	ctx                  context.Context
 	ApiService           *ToolsEbpAppListV30ApiService
 	accountId            *int64
-	accountType          *ToolsEbpAppListV30AccountType
-	assetManagementScope *ToolsEbpAppListV30AssetManagementScope
-	filtering            *ToolsEbpAppListV30Filtering
+	accountType          *models.ToolsEbpAppListV30AccountType
+	assetManagementScope *models.ToolsEbpAppListV30AssetManagementScope
+	filtering            *models.ToolsEbpAppListV30Filtering
 	page                 *int64
 	pageSize             *int64
-	assetGeneration      *ToolsEbpAppListV30AssetGeneration
+	assetGeneration      *models.ToolsEbpAppListV30AssetGeneration
 }
 
 func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsEbpAppListGetRequest {
@@ -40,18 +41,18 @@ func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AccountId(accountId int64) *Api
 }
 
 // 操作账号类型
-func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AccountType(accountType ToolsEbpAppListV30AccountType) *ApiOpenApiV30ToolsEbpAppListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AccountType(accountType models.ToolsEbpAppListV30AccountType) *ApiOpenApiV30ToolsEbpAppListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AssetManagementScope(assetManagementScope ToolsEbpAppListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpAppListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AssetManagementScope(assetManagementScope models.ToolsEbpAppListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpAppListGetRequest {
 	r.assetManagementScope = &assetManagementScope
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) Filtering(filtering ToolsEbpAppListV30Filtering) *ApiOpenApiV30ToolsEbpAppListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) Filtering(filtering models.ToolsEbpAppListV30Filtering) *ApiOpenApiV30ToolsEbpAppListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -68,12 +69,12 @@ func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) PageSize(pageSize int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AssetGeneration(assetGeneration ToolsEbpAppListV30AssetGeneration) *ApiOpenApiV30ToolsEbpAppListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) AssetGeneration(assetGeneration models.ToolsEbpAppListV30AssetGeneration) *ApiOpenApiV30ToolsEbpAppListGetRequest {
 	r.assetGeneration = &assetGeneration
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) Execute() (*ToolsEbpAppListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpAppListGetRequest) Execute() (*models.ToolsEbpAppListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -107,12 +108,12 @@ func (a *ToolsEbpAppListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30To
 // Execute executes the request
 //
 //	@return ToolsEbpAppListV30Response
-func (a *ToolsEbpAppListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppListGetRequest) (*ToolsEbpAppListV30Response, *http.Response, error) {
+func (a *ToolsEbpAppListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppListGetRequest) (*models.ToolsEbpAppListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpAppListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpAppListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -122,7 +123,7 @@ func (a *ToolsEbpAppListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppLis
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/app/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

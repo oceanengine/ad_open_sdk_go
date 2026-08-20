@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueWechatPoolListV2ApiService ClueWechatPoolListV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ClueWechatPoolListGetRequest struct {
 	ctx          context.Context
 	ApiService   *ClueWechatPoolListV2ApiService
 	advertiserId *int64
-	filter       *ClueWechatPoolListV2Filter
+	filter       *models.ClueWechatPoolListV2Filter
 }
 
 // 广告主ID
@@ -36,12 +37,12 @@ func (r *ApiOpenApi2ClueWechatPoolListGetRequest) AdvertiserId(advertiserId int6
 }
 
 // 过滤条件
-func (r *ApiOpenApi2ClueWechatPoolListGetRequest) Filter(filter ClueWechatPoolListV2Filter) *ApiOpenApi2ClueWechatPoolListGetRequest {
+func (r *ApiOpenApi2ClueWechatPoolListGetRequest) Filter(filter models.ClueWechatPoolListV2Filter) *ApiOpenApi2ClueWechatPoolListGetRequest {
 	r.filter = &filter
 	return r
 }
 
-func (r *ApiOpenApi2ClueWechatPoolListGetRequest) Execute() (*ClueWechatPoolListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueWechatPoolListGetRequest) Execute() (*models.ClueWechatPoolListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ClueWechatPoolListV2ApiService) Get(ctx context.Context) *ApiOpenApi2Cl
 // Execute executes the request
 //
 //	@return ClueWechatPoolListV2Response
-func (a *ClueWechatPoolListV2ApiService) getExecute(r *ApiOpenApi2ClueWechatPoolListGetRequest) (*ClueWechatPoolListV2Response, *http.Response, error) {
+func (a *ClueWechatPoolListV2ApiService) getExecute(r *ApiOpenApi2ClueWechatPoolListGetRequest) (*models.ClueWechatPoolListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueWechatPoolListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueWechatPoolListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ClueWechatPoolListV2ApiService) getExecute(r *ApiOpenApi2ClueWechatPool
 	localVarPath := localBasePath + "/open_api/2/clue/wechat_pool/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarVasGetCommonAuthorPackageListV2ApiService StarVasGetCommonAuthorPackageListV2Api service
@@ -34,7 +35,7 @@ func (r *ApiOpenApi2StarVasGetCommonAuthorPackageListGetRequest) StarId(starId i
 	return r
 }
 
-func (r *ApiOpenApi2StarVasGetCommonAuthorPackageListGetRequest) Execute() (*StarVasGetCommonAuthorPackageListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarVasGetCommonAuthorPackageListGetRequest) Execute() (*models.StarVasGetCommonAuthorPackageListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *StarVasGetCommonAuthorPackageListV2ApiService) Get(ctx context.Context)
 // Execute executes the request
 //
 //	@return StarVasGetCommonAuthorPackageListV2Response
-func (a *StarVasGetCommonAuthorPackageListV2ApiService) getExecute(r *ApiOpenApi2StarVasGetCommonAuthorPackageListGetRequest) (*StarVasGetCommonAuthorPackageListV2Response, *http.Response, error) {
+func (a *StarVasGetCommonAuthorPackageListV2ApiService) getExecute(r *ApiOpenApi2StarVasGetCommonAuthorPackageListGetRequest) (*models.StarVasGetCommonAuthorPackageListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarVasGetCommonAuthorPackageListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarVasGetCommonAuthorPackageListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *StarVasGetCommonAuthorPackageListV2ApiService) getExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/2/star/vas/get_common_author_package_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueLifeCallbackV2ApiService ToolsClueLifeCallbackV2Api service
@@ -25,15 +26,15 @@ type ToolsClueLifeCallbackV2ApiService service
 type ApiOpenApi2ToolsClueLifeCallbackPostRequest struct {
 	ctx                            context.Context
 	ApiService                     *ToolsClueLifeCallbackV2ApiService
-	toolsClueLifeCallbackV2Request *ToolsClueLifeCallbackV2Request
+	toolsClueLifeCallbackV2Request *models.ToolsClueLifeCallbackV2Request
 }
 
-func (r *ApiOpenApi2ToolsClueLifeCallbackPostRequest) ToolsClueLifeCallbackV2Request(toolsClueLifeCallbackV2Request ToolsClueLifeCallbackV2Request) *ApiOpenApi2ToolsClueLifeCallbackPostRequest {
+func (r *ApiOpenApi2ToolsClueLifeCallbackPostRequest) ToolsClueLifeCallbackV2Request(toolsClueLifeCallbackV2Request models.ToolsClueLifeCallbackV2Request) *ApiOpenApi2ToolsClueLifeCallbackPostRequest {
 	r.toolsClueLifeCallbackV2Request = &toolsClueLifeCallbackV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueLifeCallbackPostRequest) Execute() (*ToolsClueLifeCallbackV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueLifeCallbackPostRequest) Execute() (*models.ToolsClueLifeCallbackV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsClueLifeCallbackV2ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsClueLifeCallbackV2Response
-func (a *ToolsClueLifeCallbackV2ApiService) postExecute(r *ApiOpenApi2ToolsClueLifeCallbackPostRequest) (*ToolsClueLifeCallbackV2Response, *http.Response, error) {
+func (a *ToolsClueLifeCallbackV2ApiService) postExecute(r *ApiOpenApi2ToolsClueLifeCallbackPostRequest) (*models.ToolsClueLifeCallbackV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueLifeCallbackV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueLifeCallbackV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsClueLifeCallbackV2ApiService) postExecute(r *ApiOpenApi2ToolsClueL
 	localVarPath := localBasePath + "/open_api/2/tools/clue/life/callback/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

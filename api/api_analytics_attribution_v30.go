@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AnalyticsAttributionV30ApiService AnalyticsAttributionV30Api service
@@ -25,15 +26,15 @@ type AnalyticsAttributionV30ApiService service
 type ApiOpenApiV30AnalyticsAttributionPostRequest struct {
 	ctx                            context.Context
 	ApiService                     *AnalyticsAttributionV30ApiService
-	analyticsAttributionV30Request *AnalyticsAttributionV30Request
+	analyticsAttributionV30Request *models.AnalyticsAttributionV30Request
 }
 
-func (r *ApiOpenApiV30AnalyticsAttributionPostRequest) AnalyticsAttributionV30Request(analyticsAttributionV30Request AnalyticsAttributionV30Request) *ApiOpenApiV30AnalyticsAttributionPostRequest {
+func (r *ApiOpenApiV30AnalyticsAttributionPostRequest) AnalyticsAttributionV30Request(analyticsAttributionV30Request models.AnalyticsAttributionV30Request) *ApiOpenApiV30AnalyticsAttributionPostRequest {
 	r.analyticsAttributionV30Request = &analyticsAttributionV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30AnalyticsAttributionPostRequest) Execute() (*AnalyticsAttributionV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AnalyticsAttributionPostRequest) Execute() (*models.AnalyticsAttributionV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AnalyticsAttributionV30ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return AnalyticsAttributionV30Response
-func (a *AnalyticsAttributionV30ApiService) postExecute(r *ApiOpenApiV30AnalyticsAttributionPostRequest) (*AnalyticsAttributionV30Response, *http.Response, error) {
+func (a *AnalyticsAttributionV30ApiService) postExecute(r *ApiOpenApiV30AnalyticsAttributionPostRequest) (*models.AnalyticsAttributionV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AnalyticsAttributionV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AnalyticsAttributionV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AnalyticsAttributionV30ApiService) postExecute(r *ApiOpenApiV30Analytic
 	localVarPath := localBasePath + "/open_api/v3.0/analytics/attribution/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

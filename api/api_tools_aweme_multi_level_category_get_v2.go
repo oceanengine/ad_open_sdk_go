@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAwemeMultiLevelCategoryGetV2ApiService ToolsAwemeMultiLevelCategoryGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsAwemeMultiLevelCategoryGetV2ApiService
 	advertiserId *int64
-	behaviors    *[]*ToolsAwemeMultiLevelCategoryGetV2Behaviors
+	behaviors    *[]*models.ToolsAwemeMultiLevelCategoryGetV2Behaviors
 }
 
 func (r *ApiOpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest) AdvertiserId(adve
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest) Behaviors(behaviors []*ToolsAwemeMultiLevelCategoryGetV2Behaviors) *ApiOpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest {
+func (r *ApiOpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest) Behaviors(behaviors []*models.ToolsAwemeMultiLevelCategoryGetV2Behaviors) *ApiOpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest {
 	r.behaviors = &behaviors
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest) Execute() (*ToolsAwemeMultiLevelCategoryGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest) Execute() (*models.ToolsAwemeMultiLevelCategoryGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsAwemeMultiLevelCategoryGetV2ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return ToolsAwemeMultiLevelCategoryGetV2Response
-func (a *ToolsAwemeMultiLevelCategoryGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest) (*ToolsAwemeMultiLevelCategoryGetV2Response, *http.Response, error) {
+func (a *ToolsAwemeMultiLevelCategoryGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAwemeMultiLevelCategoryGetGetRequest) (*models.ToolsAwemeMultiLevelCategoryGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAwemeMultiLevelCategoryGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAwemeMultiLevelCategoryGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsAwemeMultiLevelCategoryGetV2ApiService) getExecute(r *ApiOpenApi2T
 	localVarPath := localBasePath + "/open_api/2/tools/aweme_multi_level_category/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

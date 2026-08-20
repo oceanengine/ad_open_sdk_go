@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpMicroGameCreateV30ApiService ToolsEbpMicroGameCreateV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpMicroGameCreateV30ApiService service
 type ApiOpenApiV30ToolsEbpMicroGameCreatePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *ToolsEbpMicroGameCreateV30ApiService
-	toolsEbpMicroGameCreateV30Request *ToolsEbpMicroGameCreateV30Request
+	toolsEbpMicroGameCreateV30Request *models.ToolsEbpMicroGameCreateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroGameCreatePostRequest) ToolsEbpMicroGameCreateV30Request(toolsEbpMicroGameCreateV30Request ToolsEbpMicroGameCreateV30Request) *ApiOpenApiV30ToolsEbpMicroGameCreatePostRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroGameCreatePostRequest) ToolsEbpMicroGameCreateV30Request(toolsEbpMicroGameCreateV30Request models.ToolsEbpMicroGameCreateV30Request) *ApiOpenApiV30ToolsEbpMicroGameCreatePostRequest {
 	r.toolsEbpMicroGameCreateV30Request = &toolsEbpMicroGameCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroGameCreatePostRequest) Execute() (*ToolsEbpMicroGameCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpMicroGameCreatePostRequest) Execute() (*models.ToolsEbpMicroGameCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpMicroGameCreateV30ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsEbpMicroGameCreateV30Response
-func (a *ToolsEbpMicroGameCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpMicroGameCreatePostRequest) (*ToolsEbpMicroGameCreateV30Response, *http.Response, error) {
+func (a *ToolsEbpMicroGameCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpMicroGameCreatePostRequest) (*models.ToolsEbpMicroGameCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpMicroGameCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpMicroGameCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpMicroGameCreateV30ApiService) postExecute(r *ApiOpenApiV30Tools
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/micro_game/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

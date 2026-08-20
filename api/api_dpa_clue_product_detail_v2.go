@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaClueProductDetailV2ApiService DpaClueProductDetailV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2DpaClueProductDetailGetRequest) ProductIds(productIds []int6
 	return r
 }
 
-func (r *ApiOpenApi2DpaClueProductDetailGetRequest) Execute() (*DpaClueProductDetailV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DpaClueProductDetailGetRequest) Execute() (*models.DpaClueProductDetailV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *DpaClueProductDetailV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return DpaClueProductDetailV2Response
-func (a *DpaClueProductDetailV2ApiService) getExecute(r *ApiOpenApi2DpaClueProductDetailGetRequest) (*DpaClueProductDetailV2Response, *http.Response, error) {
+func (a *DpaClueProductDetailV2ApiService) getExecute(r *ApiOpenApi2DpaClueProductDetailGetRequest) (*models.DpaClueProductDetailV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaClueProductDetailV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaClueProductDetailV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *DpaClueProductDetailV2ApiService) getExecute(r *ApiOpenApi2DpaClueProdu
 	localVarPath := localBasePath + "/open_api/2/dpa/clue_product/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

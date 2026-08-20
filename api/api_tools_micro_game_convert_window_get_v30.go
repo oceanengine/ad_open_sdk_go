@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsMicroGameConvertWindowGetV30ApiService ToolsMicroGameConvertWindowGetV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *ToolsMicroGameConvertWindowGetV30ApiService
 	accountId   *int64
-	accountType *ToolsMicroGameConvertWindowGetV30AccountType
+	accountType *models.ToolsMicroGameConvertWindowGetV30AccountType
 	assetId     *string
-	assetType   *ToolsMicroGameConvertWindowGetV30AssetType
+	assetType   *models.ToolsMicroGameConvertWindowGetV30AssetType
 }
 
 func (r *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest) AccountId(accountId int64) *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest {
@@ -36,7 +37,7 @@ func (r *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest) AccountId(accoun
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest) AccountType(accountType ToolsMicroGameConvertWindowGetV30AccountType) *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest {
+func (r *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest) AccountType(accountType models.ToolsMicroGameConvertWindowGetV30AccountType) *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -46,12 +47,12 @@ func (r *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest) AssetId(assetId 
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest) AssetType(assetType ToolsMicroGameConvertWindowGetV30AssetType) *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest {
+func (r *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest) AssetType(assetType models.ToolsMicroGameConvertWindowGetV30AssetType) *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest {
 	r.assetType = &assetType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest) Execute() (*ToolsMicroGameConvertWindowGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest) Execute() (*models.ToolsMicroGameConvertWindowGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ToolsMicroGameConvertWindowGetV30ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return ToolsMicroGameConvertWindowGetV30Response
-func (a *ToolsMicroGameConvertWindowGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest) (*ToolsMicroGameConvertWindowGetV30Response, *http.Response, error) {
+func (a *ToolsMicroGameConvertWindowGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsMicroGameConvertWindowGetGetRequest) (*models.ToolsMicroGameConvertWindowGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsMicroGameConvertWindowGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsMicroGameConvertWindowGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ToolsMicroGameConvertWindowGetV30ApiService) getExecute(r *ApiOpenApiV3
 	localVarPath := localBasePath + "/open_api/v3.0/tools/micro_game/convert_window/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

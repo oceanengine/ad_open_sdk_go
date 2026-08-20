@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsTaskRaiseOptimizationIdsGetV2ApiService ToolsTaskRaiseOptimizationIdsGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest struct {
 	ctx             context.Context
 	ApiService      *ToolsTaskRaiseOptimizationIdsGetV2ApiService
 	advertiserId    *int64
-	platformVersion *ToolsTaskRaiseOptimizationIdsGetV2PlatformVersion
+	platformVersion *models.ToolsTaskRaiseOptimizationIdsGetV2PlatformVersion
 }
 
 func (r *ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest) AdvertiserId(adv
 	return r
 }
 
-func (r *ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest) PlatformVersion(platformVersion ToolsTaskRaiseOptimizationIdsGetV2PlatformVersion) *ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest {
+func (r *ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest) PlatformVersion(platformVersion models.ToolsTaskRaiseOptimizationIdsGetV2PlatformVersion) *ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest {
 	r.platformVersion = &platformVersion
 	return r
 }
 
-func (r *ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest) Execute() (*ToolsTaskRaiseOptimizationIdsGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest) Execute() (*models.ToolsTaskRaiseOptimizationIdsGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsTaskRaiseOptimizationIdsGetV2ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return ToolsTaskRaiseOptimizationIdsGetV2Response
-func (a *ToolsTaskRaiseOptimizationIdsGetV2ApiService) getExecute(r *ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest) (*ToolsTaskRaiseOptimizationIdsGetV2Response, *http.Response, error) {
+func (a *ToolsTaskRaiseOptimizationIdsGetV2ApiService) getExecute(r *ApiOpenApi2ToolsTaskRaiseOptimizationIdsGetGetRequest) (*models.ToolsTaskRaiseOptimizationIdsGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsTaskRaiseOptimizationIdsGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsTaskRaiseOptimizationIdsGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsTaskRaiseOptimizationIdsGetV2ApiService) getExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/tools/task_raise/optimization_ids/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

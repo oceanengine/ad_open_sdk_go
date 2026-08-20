@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CarouselCreateV2ApiService CarouselCreateV2Api service
@@ -25,15 +26,15 @@ type CarouselCreateV2ApiService service
 type ApiOpenApi2CarouselCreatePostRequest struct {
 	ctx                     context.Context
 	ApiService              *CarouselCreateV2ApiService
-	carouselCreateV2Request *CarouselCreateV2Request
+	carouselCreateV2Request *models.CarouselCreateV2Request
 }
 
-func (r *ApiOpenApi2CarouselCreatePostRequest) CarouselCreateV2Request(carouselCreateV2Request CarouselCreateV2Request) *ApiOpenApi2CarouselCreatePostRequest {
+func (r *ApiOpenApi2CarouselCreatePostRequest) CarouselCreateV2Request(carouselCreateV2Request models.CarouselCreateV2Request) *ApiOpenApi2CarouselCreatePostRequest {
 	r.carouselCreateV2Request = &carouselCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2CarouselCreatePostRequest) Execute() (*CarouselCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CarouselCreatePostRequest) Execute() (*models.CarouselCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *CarouselCreateV2ApiService) Post(ctx context.Context) *ApiOpenApi2Carou
 // Execute executes the request
 //
 //	@return CarouselCreateV2Response
-func (a *CarouselCreateV2ApiService) postExecute(r *ApiOpenApi2CarouselCreatePostRequest) (*CarouselCreateV2Response, *http.Response, error) {
+func (a *CarouselCreateV2ApiService) postExecute(r *ApiOpenApi2CarouselCreatePostRequest) (*models.CarouselCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CarouselCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CarouselCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *CarouselCreateV2ApiService) postExecute(r *ApiOpenApi2CarouselCreatePos
 	localVarPath := localBasePath + "/open_api/2/carousel/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

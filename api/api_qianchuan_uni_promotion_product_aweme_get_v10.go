@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionProductAwemeGetV10ApiService QianchuanUniPromotionProductAwemeGetV10Api service
@@ -27,9 +28,9 @@ type ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest struct {
 	ApiService   *QianchuanUniPromotionProductAwemeGetV10ApiService
 	advertiserId *int64
 	awemeId      *int64
-	filtering    *QianchuanUniPromotionProductAwemeGetV10Filtering
+	filtering    *models.QianchuanUniPromotionProductAwemeGetV10Filtering
 	cursor       *int64
-	platform     *QianchuanUniPromotionProductAwemeGetV10Platform
+	platform     *models.QianchuanUniPromotionProductAwemeGetV10Platform
 }
 
 func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest {
@@ -44,7 +45,7 @@ func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) AwemeId(aw
 }
 
 // 过滤器
-func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Filtering(filtering QianchuanUniPromotionProductAwemeGetV10Filtering) *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Filtering(filtering models.QianchuanUniPromotionProductAwemeGetV10Filtering) *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -56,12 +57,12 @@ func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Cursor(cur
 }
 
 // 0-Unknown 1-PC 2-随心推 不传默认PC
-func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Platform(platform QianchuanUniPromotionProductAwemeGetV10Platform) *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Platform(platform models.QianchuanUniPromotionProductAwemeGetV10Platform) *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest {
 	r.platform = &platform
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Execute() (*QianchuanUniPromotionProductAwemeGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) Execute() (*models.QianchuanUniPromotionProductAwemeGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -95,12 +96,12 @@ func (a *QianchuanUniPromotionProductAwemeGetV10ApiService) Get(ctx context.Cont
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionProductAwemeGetV10Response
-func (a *QianchuanUniPromotionProductAwemeGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) (*QianchuanUniPromotionProductAwemeGetV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionProductAwemeGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionProductAwemeGetGetRequest) (*models.QianchuanUniPromotionProductAwemeGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionProductAwemeGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionProductAwemeGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -110,7 +111,7 @@ func (a *QianchuanUniPromotionProductAwemeGetV10ApiService) getExecute(r *ApiOpe
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/product/aweme/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

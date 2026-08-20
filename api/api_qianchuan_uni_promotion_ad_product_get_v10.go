@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdProductGetV10ApiService QianchuanUniPromotionAdProductGetV10Api service
@@ -30,11 +31,11 @@ type ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest struct {
 	startDate    *string
 	endDate      *string
 	fields       *[]string
-	filtering    *QianchuanUniPromotionAdProductGetV10Filtering
-	orderType    *QianchuanUniPromotionAdProductGetV10OrderType
+	filtering    *models.QianchuanUniPromotionAdProductGetV10Filtering
+	orderType    *models.QianchuanUniPromotionAdProductGetV10OrderType
 	orderField   *string
 	page         *int64
-	pageSize     *QianchuanUniPromotionAdProductGetV10PageSize
+	pageSize     *models.QianchuanUniPromotionAdProductGetV10PageSize
 }
 
 // 千川广告账户ID
@@ -68,13 +69,13 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) Fields(fields
 }
 
 // 过滤条件
-func (r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) Filtering(filtering QianchuanUniPromotionAdProductGetV10Filtering) *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) Filtering(filtering models.QianchuanUniPromotionAdProductGetV10Filtering) *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
 // 排序方式，允许值： ASC 升序（默认）、DESC 降序
-func (r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) OrderType(orderType QianchuanUniPromotionAdProductGetV10OrderType) *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) OrderType(orderType models.QianchuanUniPromotionAdProductGetV10OrderType) *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -92,12 +93,12 @@ func (r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) Page(page int
 }
 
 // 页面大小，允许值：10, 20, 50, 100，默认值：10
-func (r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) PageSize(pageSize QianchuanUniPromotionAdProductGetV10PageSize) *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) PageSize(pageSize models.QianchuanUniPromotionAdProductGetV10PageSize) *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest {
 	r.pageSize = &pageSize
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) Execute() (*QianchuanUniPromotionAdProductGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) Execute() (*models.QianchuanUniPromotionAdProductGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -131,12 +132,12 @@ func (a *QianchuanUniPromotionAdProductGetV10ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdProductGetV10Response
-func (a *QianchuanUniPromotionAdProductGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) (*QianchuanUniPromotionAdProductGetV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdProductGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionAdProductGetGetRequest) (*models.QianchuanUniPromotionAdProductGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdProductGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdProductGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -146,7 +147,7 @@ func (a *QianchuanUniPromotionAdProductGetV10ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/product/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

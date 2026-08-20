@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService ToolsEbpStarTaskTaskAuthorVedioGetV30Api service
@@ -26,11 +27,11 @@ type ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest struct {
 	ctx                context.Context
 	ApiService         *ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService
 	accountId          *int64
-	accountType        *ToolsEbpStarTaskTaskAuthorVedioGetV30AccountType
+	accountType        *models.ToolsEbpStarTaskTaskAuthorVedioGetV30AccountType
 	starTaskId         *int64
-	starTaskVideoRange *ToolsEbpStarTaskTaskAuthorVedioGetV30StarTaskVideoRange
+	starTaskVideoRange *models.ToolsEbpStarTaskTaskAuthorVedioGetV30StarTaskVideoRange
 	awemeId            *string
-	filtering          *ToolsEbpStarTaskTaskAuthorVedioGetV30Filtering
+	filtering          *models.ToolsEbpStarTaskTaskAuthorVedioGetV30Filtering
 	cursor             *int64
 	count              *int64
 }
@@ -42,7 +43,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) AccountId(ac
 }
 
 // 账户类型
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) AccountType(accountType ToolsEbpStarTaskTaskAuthorVedioGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) AccountType(accountType models.ToolsEbpStarTaskTaskAuthorVedioGetV30AccountType) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -53,7 +54,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) StarTaskId(s
 }
 
 // 返回的视频范围
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) StarTaskVideoRange(starTaskVideoRange ToolsEbpStarTaskTaskAuthorVedioGetV30StarTaskVideoRange) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) StarTaskVideoRange(starTaskVideoRange models.ToolsEbpStarTaskTaskAuthorVedioGetV30StarTaskVideoRange) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
 	r.starTaskVideoRange = &starTaskVideoRange
 	return r
 }
@@ -65,7 +66,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) AwemeId(awem
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) Filtering(filtering ToolsEbpStarTaskTaskAuthorVedioGetV30Filtering) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) Filtering(filtering models.ToolsEbpStarTaskTaskAuthorVedioGetV30Filtering) *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -82,7 +83,7 @@ func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) Count(count 
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) Execute() (*ToolsEbpStarTaskTaskAuthorVedioGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) Execute() (*models.ToolsEbpStarTaskTaskAuthorVedioGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -116,12 +117,12 @@ func (a *ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService) Get(ctx context.Contex
 // Execute executes the request
 //
 //	@return ToolsEbpStarTaskTaskAuthorVedioGetV30Response
-func (a *ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) (*ToolsEbpStarTaskTaskAuthorVedioGetV30Response, *http.Response, error) {
+func (a *ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpStarTaskTaskAuthorVedioGetGetRequest) (*models.ToolsEbpStarTaskTaskAuthorVedioGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpStarTaskTaskAuthorVedioGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpStarTaskTaskAuthorVedioGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -131,7 +132,7 @@ func (a *ToolsEbpStarTaskTaskAuthorVedioGetV30ApiService) getExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/star_task/task_author_vedio/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

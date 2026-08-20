@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsMaterialRaiseRecordsGetV30ApiService ToolsMaterialRaiseRecordsGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30ToolsMaterialRaiseRecordsGetGetRequest struct {
 	ApiService   *ToolsMaterialRaiseRecordsGetV30ApiService
 	advertiserId *int64
 	projectIds   *[]int64
-	status       *[]*ToolsMaterialRaiseRecordsGetV30Status
+	status       *[]*models.ToolsMaterialRaiseRecordsGetV30Status
 	page         *int64
 	pageSize     *int64
 }
@@ -44,7 +45,7 @@ func (r *ApiOpenApiV30ToolsMaterialRaiseRecordsGetGetRequest) ProjectIds(project
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMaterialRaiseRecordsGetGetRequest) Status(status []*ToolsMaterialRaiseRecordsGetV30Status) *ApiOpenApiV30ToolsMaterialRaiseRecordsGetGetRequest {
+func (r *ApiOpenApiV30ToolsMaterialRaiseRecordsGetGetRequest) Status(status []*models.ToolsMaterialRaiseRecordsGetV30Status) *ApiOpenApiV30ToolsMaterialRaiseRecordsGetGetRequest {
 	r.status = &status
 	return r
 }
@@ -61,7 +62,7 @@ func (r *ApiOpenApiV30ToolsMaterialRaiseRecordsGetGetRequest) PageSize(pageSize 
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMaterialRaiseRecordsGetGetRequest) Execute() (*ToolsMaterialRaiseRecordsGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsMaterialRaiseRecordsGetGetRequest) Execute() (*models.ToolsMaterialRaiseRecordsGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -95,12 +96,12 @@ func (a *ToolsMaterialRaiseRecordsGetV30ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return ToolsMaterialRaiseRecordsGetV30Response
-func (a *ToolsMaterialRaiseRecordsGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsMaterialRaiseRecordsGetGetRequest) (*ToolsMaterialRaiseRecordsGetV30Response, *http.Response, error) {
+func (a *ToolsMaterialRaiseRecordsGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsMaterialRaiseRecordsGetGetRequest) (*models.ToolsMaterialRaiseRecordsGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsMaterialRaiseRecordsGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsMaterialRaiseRecordsGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -110,7 +111,7 @@ func (a *ToolsMaterialRaiseRecordsGetV30ApiService) getExecute(r *ApiOpenApiV30T
 	localVarPath := localBasePath + "/open_api/v3.0/tools/material_raise_records/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

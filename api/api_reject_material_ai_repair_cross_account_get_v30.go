@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // RejectMaterialAiRepairCrossAccountGetV30ApiService RejectMaterialAiRepairCrossAccountGetV30Api service
@@ -40,7 +41,7 @@ func (r *ApiOpenApiV30RejectMaterialAiRepairCrossAccountGetGetRequest) MaterialI
 	return r
 }
 
-func (r *ApiOpenApiV30RejectMaterialAiRepairCrossAccountGetGetRequest) Execute() (*RejectMaterialAiRepairCrossAccountGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30RejectMaterialAiRepairCrossAccountGetGetRequest) Execute() (*models.RejectMaterialAiRepairCrossAccountGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *RejectMaterialAiRepairCrossAccountGetV30ApiService) Get(ctx context.Con
 // Execute executes the request
 //
 //	@return RejectMaterialAiRepairCrossAccountGetV30Response
-func (a *RejectMaterialAiRepairCrossAccountGetV30ApiService) getExecute(r *ApiOpenApiV30RejectMaterialAiRepairCrossAccountGetGetRequest) (*RejectMaterialAiRepairCrossAccountGetV30Response, *http.Response, error) {
+func (a *RejectMaterialAiRepairCrossAccountGetV30ApiService) getExecute(r *ApiOpenApiV30RejectMaterialAiRepairCrossAccountGetGetRequest) (*models.RejectMaterialAiRepairCrossAccountGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *RejectMaterialAiRepairCrossAccountGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.RejectMaterialAiRepairCrossAccountGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *RejectMaterialAiRepairCrossAccountGetV30ApiService) getExecute(r *ApiOp
 	localVarPath := localBasePath + "/open_api/v3.0/reject_material/ai_repair/cross_account/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

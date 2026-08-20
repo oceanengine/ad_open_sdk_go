@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferWalletTransferListV30ApiService CgTransferWalletTransferListV30Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV30CgTransferWalletTransferListGetRequest struct {
 	ctx               context.Context
 	ApiService        *CgTransferWalletTransferListV30ApiService
 	accountId         *int64
-	accountType       *CgTransferWalletTransferListV30AccountType
+	accountType       *models.CgTransferWalletTransferListV30AccountType
 	bizRequestNo      *string
 	queryBeginTime    *string
 	queryEndTime      *string
 	queryWalletIdList *[]int64
-	pageInfo          *CgTransferWalletTransferListV30PageInfo
+	pageInfo          *models.CgTransferWalletTransferListV30PageInfo
 	payeeId           *int64
 	remitterId        *int64
 }
@@ -43,7 +44,7 @@ func (r *ApiOpenApiV30CgTransferWalletTransferListGetRequest) AccountId(accountI
 }
 
 // 鉴权账户类型
-func (r *ApiOpenApiV30CgTransferWalletTransferListGetRequest) AccountType(accountType CgTransferWalletTransferListV30AccountType) *ApiOpenApiV30CgTransferWalletTransferListGetRequest {
+func (r *ApiOpenApiV30CgTransferWalletTransferListGetRequest) AccountType(accountType models.CgTransferWalletTransferListV30AccountType) *ApiOpenApiV30CgTransferWalletTransferListGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -73,7 +74,7 @@ func (r *ApiOpenApiV30CgTransferWalletTransferListGetRequest) QueryWalletIdList(
 }
 
 // 分页信息
-func (r *ApiOpenApiV30CgTransferWalletTransferListGetRequest) PageInfo(pageInfo CgTransferWalletTransferListV30PageInfo) *ApiOpenApiV30CgTransferWalletTransferListGetRequest {
+func (r *ApiOpenApiV30CgTransferWalletTransferListGetRequest) PageInfo(pageInfo models.CgTransferWalletTransferListV30PageInfo) *ApiOpenApiV30CgTransferWalletTransferListGetRequest {
 	r.pageInfo = &pageInfo
 	return r
 }
@@ -90,7 +91,7 @@ func (r *ApiOpenApiV30CgTransferWalletTransferListGetRequest) RemitterId(remitte
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferWalletTransferListGetRequest) Execute() (*CgTransferWalletTransferListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferWalletTransferListGetRequest) Execute() (*models.CgTransferWalletTransferListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -124,12 +125,12 @@ func (a *CgTransferWalletTransferListV30ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return CgTransferWalletTransferListV30Response
-func (a *CgTransferWalletTransferListV30ApiService) getExecute(r *ApiOpenApiV30CgTransferWalletTransferListGetRequest) (*CgTransferWalletTransferListV30Response, *http.Response, error) {
+func (a *CgTransferWalletTransferListV30ApiService) getExecute(r *ApiOpenApiV30CgTransferWalletTransferListGetRequest) (*models.CgTransferWalletTransferListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferWalletTransferListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferWalletTransferListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -139,7 +140,7 @@ func (a *CgTransferWalletTransferListV30ApiService) getExecute(r *ApiOpenApiV30C
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/wallet/transfer/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

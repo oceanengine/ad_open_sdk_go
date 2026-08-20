@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementShareAccountListV2ApiService ToolsAppManagementShareAccountListV2Api service
@@ -29,7 +30,7 @@ type ApiOpenApi2ToolsAppManagementShareAccountListGetRequest struct {
 	packageId      *string
 	page           *int64
 	pageSize       *int64
-	searchType     *ToolsAppManagementShareAccountListV2SearchType
+	searchType     *models.ToolsAppManagementShareAccountListV2SearchType
 }
 
 func (r *ApiOpenApi2ToolsAppManagementShareAccountListGetRequest) OrganizationId(organizationId int64) *ApiOpenApi2ToolsAppManagementShareAccountListGetRequest {
@@ -52,12 +53,12 @@ func (r *ApiOpenApi2ToolsAppManagementShareAccountListGetRequest) PageSize(pageS
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementShareAccountListGetRequest) SearchType(searchType ToolsAppManagementShareAccountListV2SearchType) *ApiOpenApi2ToolsAppManagementShareAccountListGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementShareAccountListGetRequest) SearchType(searchType models.ToolsAppManagementShareAccountListV2SearchType) *ApiOpenApi2ToolsAppManagementShareAccountListGetRequest {
 	r.searchType = &searchType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementShareAccountListGetRequest) Execute() (*ToolsAppManagementShareAccountListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementShareAccountListGetRequest) Execute() (*models.ToolsAppManagementShareAccountListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ToolsAppManagementShareAccountListV2ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return ToolsAppManagementShareAccountListV2Response
-func (a *ToolsAppManagementShareAccountListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementShareAccountListGetRequest) (*ToolsAppManagementShareAccountListV2Response, *http.Response, error) {
+func (a *ToolsAppManagementShareAccountListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementShareAccountListGetRequest) (*models.ToolsAppManagementShareAccountListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementShareAccountListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementShareAccountListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ToolsAppManagementShareAccountListV2ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/share_account/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

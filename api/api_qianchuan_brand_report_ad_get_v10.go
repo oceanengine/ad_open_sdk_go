@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanBrandReportAdGetV10ApiService QianchuanBrandReportAdGetV10Api service
@@ -29,10 +30,10 @@ type ApiOpenApiV10QianchuanBrandReportAdGetGetRequest struct {
 	startDate       *string
 	endDate         *string
 	fields          *[]string
-	filtering       *QianchuanBrandReportAdGetV10Filtering
-	timeGranularity *QianchuanBrandReportAdGetV10TimeGranularity
+	filtering       *models.QianchuanBrandReportAdGetV10Filtering
+	timeGranularity *models.QianchuanBrandReportAdGetV10TimeGranularity
 	orderField      *string
-	orderType       *QianchuanBrandReportAdGetV10OrderType
+	orderType       *models.QianchuanBrandReportAdGetV10OrderType
 	page            *int32
 	pageSize        *int32
 }
@@ -59,12 +60,12 @@ func (r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) Fields(fields []strin
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) Filtering(filtering QianchuanBrandReportAdGetV10Filtering) *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest {
+func (r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) Filtering(filtering models.QianchuanBrandReportAdGetV10Filtering) *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) TimeGranularity(timeGranularity QianchuanBrandReportAdGetV10TimeGranularity) *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest {
+func (r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) TimeGranularity(timeGranularity models.QianchuanBrandReportAdGetV10TimeGranularity) *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest {
 	r.timeGranularity = &timeGranularity
 	return r
 }
@@ -74,7 +75,7 @@ func (r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) OrderField(orderField
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) OrderType(orderType QianchuanBrandReportAdGetV10OrderType) *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest {
+func (r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) OrderType(orderType models.QianchuanBrandReportAdGetV10OrderType) *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -89,7 +90,7 @@ func (r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) PageSize(pageSize int
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) Execute() (*QianchuanBrandReportAdGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) Execute() (*models.QianchuanBrandReportAdGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -123,12 +124,12 @@ func (a *QianchuanBrandReportAdGetV10ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return QianchuanBrandReportAdGetV10Response
-func (a *QianchuanBrandReportAdGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) (*QianchuanBrandReportAdGetV10Response, *http.Response, error) {
+func (a *QianchuanBrandReportAdGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanBrandReportAdGetGetRequest) (*models.QianchuanBrandReportAdGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanBrandReportAdGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanBrandReportAdGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -138,7 +139,7 @@ func (a *QianchuanBrandReportAdGetV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/brand/report/ad/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

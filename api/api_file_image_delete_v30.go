@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileImageDeleteV30ApiService FileImageDeleteV30Api service
@@ -25,15 +26,15 @@ type FileImageDeleteV30ApiService service
 type ApiOpenApiV30FileImageDeletePostRequest struct {
 	ctx                       context.Context
 	ApiService                *FileImageDeleteV30ApiService
-	fileImageDeleteV30Request *FileImageDeleteV30Request
+	fileImageDeleteV30Request *models.FileImageDeleteV30Request
 }
 
-func (r *ApiOpenApiV30FileImageDeletePostRequest) FileImageDeleteV30Request(fileImageDeleteV30Request FileImageDeleteV30Request) *ApiOpenApiV30FileImageDeletePostRequest {
+func (r *ApiOpenApiV30FileImageDeletePostRequest) FileImageDeleteV30Request(fileImageDeleteV30Request models.FileImageDeleteV30Request) *ApiOpenApiV30FileImageDeletePostRequest {
 	r.fileImageDeleteV30Request = &fileImageDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30FileImageDeletePostRequest) Execute() (*FileImageDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30FileImageDeletePostRequest) Execute() (*models.FileImageDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *FileImageDeleteV30ApiService) Post(ctx context.Context) *ApiOpenApiV30F
 // Execute executes the request
 //
 //	@return FileImageDeleteV30Response
-func (a *FileImageDeleteV30ApiService) postExecute(r *ApiOpenApiV30FileImageDeletePostRequest) (*FileImageDeleteV30Response, *http.Response, error) {
+func (a *FileImageDeleteV30ApiService) postExecute(r *ApiOpenApiV30FileImageDeletePostRequest) (*models.FileImageDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileImageDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileImageDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *FileImageDeleteV30ApiService) postExecute(r *ApiOpenApiV30FileImageDele
 	localVarPath := localBasePath + "/open_api/v3.0/file/image/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DmpDataSourceUpdateV2ApiService DmpDataSourceUpdateV2Api service
@@ -25,15 +26,15 @@ type DmpDataSourceUpdateV2ApiService service
 type ApiOpenApi2DmpDataSourceUpdatePostRequest struct {
 	ctx                          context.Context
 	ApiService                   *DmpDataSourceUpdateV2ApiService
-	dmpDataSourceUpdateV2Request *DmpDataSourceUpdateV2Request
+	dmpDataSourceUpdateV2Request *models.DmpDataSourceUpdateV2Request
 }
 
-func (r *ApiOpenApi2DmpDataSourceUpdatePostRequest) DmpDataSourceUpdateV2Request(dmpDataSourceUpdateV2Request DmpDataSourceUpdateV2Request) *ApiOpenApi2DmpDataSourceUpdatePostRequest {
+func (r *ApiOpenApi2DmpDataSourceUpdatePostRequest) DmpDataSourceUpdateV2Request(dmpDataSourceUpdateV2Request models.DmpDataSourceUpdateV2Request) *ApiOpenApi2DmpDataSourceUpdatePostRequest {
 	r.dmpDataSourceUpdateV2Request = &dmpDataSourceUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2DmpDataSourceUpdatePostRequest) Execute() (*DmpDataSourceUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DmpDataSourceUpdatePostRequest) Execute() (*models.DmpDataSourceUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DmpDataSourceUpdateV2ApiService) Post(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return DmpDataSourceUpdateV2Response
-func (a *DmpDataSourceUpdateV2ApiService) postExecute(r *ApiOpenApi2DmpDataSourceUpdatePostRequest) (*DmpDataSourceUpdateV2Response, *http.Response, error) {
+func (a *DmpDataSourceUpdateV2ApiService) postExecute(r *ApiOpenApi2DmpDataSourceUpdatePostRequest) (*models.DmpDataSourceUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DmpDataSourceUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DmpDataSourceUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DmpDataSourceUpdateV2ApiService) postExecute(r *ApiOpenApi2DmpDataSourc
 	localVarPath := localBasePath + "/open_api/2/dmp/data_source/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

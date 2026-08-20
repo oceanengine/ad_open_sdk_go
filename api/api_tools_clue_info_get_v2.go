@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueInfoGetV2ApiService ToolsClueInfoGetV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2ToolsClueInfoGetGetRequest) ClueIds(clueIds []int64) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueInfoGetGetRequest) Execute() (*ToolsClueInfoGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueInfoGetGetRequest) Execute() (*models.ToolsClueInfoGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ToolsClueInfoGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Tool
 // Execute executes the request
 //
 //	@return ToolsClueInfoGetV2Response
-func (a *ToolsClueInfoGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueInfoGetGetRequest) (*ToolsClueInfoGetV2Response, *http.Response, error) {
+func (a *ToolsClueInfoGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueInfoGetGetRequest) (*models.ToolsClueInfoGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueInfoGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueInfoGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ToolsClueInfoGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueInfoGet
 	localVarPath := localBasePath + "/open_api/2/tools/clue_info/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserIds == nil {

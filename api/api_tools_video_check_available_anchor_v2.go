@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsVideoCheckAvailableAnchorV2ApiService ToolsVideoCheckAvailableAnchorV2Api service
@@ -27,8 +28,8 @@ type ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest struct {
 	ApiService     *ToolsVideoCheckAvailableAnchorV2ApiService
 	advertiserId   *int64
 	itemIds        *[]int64
-	landingType    *ToolsVideoCheckAvailableAnchorV2LandingType
-	externalAction *ToolsVideoCheckAvailableAnchorV2ExternalAction
+	landingType    *models.ToolsVideoCheckAvailableAnchorV2LandingType
+	externalAction *models.ToolsVideoCheckAvailableAnchorV2ExternalAction
 }
 
 // 广告主ID
@@ -44,18 +45,18 @@ func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) ItemIds(itemIds []
 }
 
 // 推广目的
-func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) LandingType(landingType ToolsVideoCheckAvailableAnchorV2LandingType) *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
+func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) LandingType(landingType models.ToolsVideoCheckAvailableAnchorV2LandingType) *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
 	r.landingType = &landingType
 	return r
 }
 
 // 转化目标
-func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) ExternalAction(externalAction ToolsVideoCheckAvailableAnchorV2ExternalAction) *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
+func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) ExternalAction(externalAction models.ToolsVideoCheckAvailableAnchorV2ExternalAction) *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest {
 	r.externalAction = &externalAction
 	return r
 }
 
-func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) Execute() (*ToolsVideoCheckAvailableAnchorV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) Execute() (*models.ToolsVideoCheckAvailableAnchorV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *ToolsVideoCheckAvailableAnchorV2ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return ToolsVideoCheckAvailableAnchorV2Response
-func (a *ToolsVideoCheckAvailableAnchorV2ApiService) getExecute(r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) (*ToolsVideoCheckAvailableAnchorV2Response, *http.Response, error) {
+func (a *ToolsVideoCheckAvailableAnchorV2ApiService) getExecute(r *ApiOpenApi2ToolsVideoCheckAvailableAnchorGetRequest) (*models.ToolsVideoCheckAvailableAnchorV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsVideoCheckAvailableAnchorV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsVideoCheckAvailableAnchorV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *ToolsVideoCheckAvailableAnchorV2ApiService) getExecute(r *ApiOpenApi2To
 	localVarPath := localBasePath + "/open_api/2/tools/video/check_available_anchor/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

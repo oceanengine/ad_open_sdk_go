@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdProductDeleteV10ApiService QianchuanUniPromotionAdProductDeleteV10Api service
@@ -25,15 +26,15 @@ type QianchuanUniPromotionAdProductDeleteV10ApiService service
 type ApiOpenApiV10QianchuanUniPromotionAdProductDeletePostRequest struct {
 	ctx                                            context.Context
 	ApiService                                     *QianchuanUniPromotionAdProductDeleteV10ApiService
-	qianchuanUniPromotionAdProductDeleteV10Request *QianchuanUniPromotionAdProductDeleteV10Request
+	qianchuanUniPromotionAdProductDeleteV10Request *models.QianchuanUniPromotionAdProductDeleteV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdProductDeletePostRequest) QianchuanUniPromotionAdProductDeleteV10Request(qianchuanUniPromotionAdProductDeleteV10Request QianchuanUniPromotionAdProductDeleteV10Request) *ApiOpenApiV10QianchuanUniPromotionAdProductDeletePostRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdProductDeletePostRequest) QianchuanUniPromotionAdProductDeleteV10Request(qianchuanUniPromotionAdProductDeleteV10Request models.QianchuanUniPromotionAdProductDeleteV10Request) *ApiOpenApiV10QianchuanUniPromotionAdProductDeletePostRequest {
 	r.qianchuanUniPromotionAdProductDeleteV10Request = &qianchuanUniPromotionAdProductDeleteV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdProductDeletePostRequest) Execute() (*QianchuanUniPromotionAdProductDeleteV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdProductDeletePostRequest) Execute() (*models.QianchuanUniPromotionAdProductDeleteV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanUniPromotionAdProductDeleteV10ApiService) Post(ctx context.Con
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdProductDeleteV10Response
-func (a *QianchuanUniPromotionAdProductDeleteV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdProductDeletePostRequest) (*QianchuanUniPromotionAdProductDeleteV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdProductDeleteV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdProductDeletePostRequest) (*models.QianchuanUniPromotionAdProductDeleteV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdProductDeleteV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdProductDeleteV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanUniPromotionAdProductDeleteV10ApiService) postExecute(r *ApiOp
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/product/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

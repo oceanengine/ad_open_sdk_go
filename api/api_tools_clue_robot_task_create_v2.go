@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueRobotTaskCreateV2ApiService ToolsClueRobotTaskCreateV2Api service
@@ -25,15 +26,15 @@ type ToolsClueRobotTaskCreateV2ApiService service
 type ApiOpenApi2ToolsClueRobotTaskCreatePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *ToolsClueRobotTaskCreateV2ApiService
-	toolsClueRobotTaskCreateV2Request *ToolsClueRobotTaskCreateV2Request
+	toolsClueRobotTaskCreateV2Request *models.ToolsClueRobotTaskCreateV2Request
 }
 
-func (r *ApiOpenApi2ToolsClueRobotTaskCreatePostRequest) ToolsClueRobotTaskCreateV2Request(toolsClueRobotTaskCreateV2Request ToolsClueRobotTaskCreateV2Request) *ApiOpenApi2ToolsClueRobotTaskCreatePostRequest {
+func (r *ApiOpenApi2ToolsClueRobotTaskCreatePostRequest) ToolsClueRobotTaskCreateV2Request(toolsClueRobotTaskCreateV2Request models.ToolsClueRobotTaskCreateV2Request) *ApiOpenApi2ToolsClueRobotTaskCreatePostRequest {
 	r.toolsClueRobotTaskCreateV2Request = &toolsClueRobotTaskCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueRobotTaskCreatePostRequest) Execute() (*ToolsClueRobotTaskCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueRobotTaskCreatePostRequest) Execute() (*models.ToolsClueRobotTaskCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsClueRobotTaskCreateV2ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsClueRobotTaskCreateV2Response
-func (a *ToolsClueRobotTaskCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsClueRobotTaskCreatePostRequest) (*ToolsClueRobotTaskCreateV2Response, *http.Response, error) {
+func (a *ToolsClueRobotTaskCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsClueRobotTaskCreatePostRequest) (*models.ToolsClueRobotTaskCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueRobotTaskCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueRobotTaskCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsClueRobotTaskCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsCl
 	localVarPath := localBasePath + "/open_api/2/tools/clue/robot/task/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

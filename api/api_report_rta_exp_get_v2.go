@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportRtaExpGetV2ApiService ReportRtaExpGetV2Api service
@@ -62,7 +63,7 @@ func (r *ApiOpenApi2ReportRtaExpGetGetRequest) Strategy(strategy int64) *ApiOpen
 	return r
 }
 
-func (r *ApiOpenApi2ReportRtaExpGetGetRequest) Execute() (*ReportRtaExpGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ReportRtaExpGetGetRequest) Execute() (*models.ReportRtaExpGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ReportRtaExpGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Repor
 // Execute executes the request
 //
 //	@return ReportRtaExpGetV2Response
-func (a *ReportRtaExpGetV2ApiService) getExecute(r *ApiOpenApi2ReportRtaExpGetGetRequest) (*ReportRtaExpGetV2Response, *http.Response, error) {
+func (a *ReportRtaExpGetV2ApiService) getExecute(r *ApiOpenApi2ReportRtaExpGetGetRequest) (*models.ReportRtaExpGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportRtaExpGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportRtaExpGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ReportRtaExpGetV2ApiService) getExecute(r *ApiOpenApi2ReportRtaExpGetGe
 	localVarPath := localBasePath + "/open_api/2/report/rta_exp/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementBpShareCancelV2ApiService ToolsAppManagementBpShareCancelV2Api service
@@ -25,15 +26,15 @@ type ToolsAppManagementBpShareCancelV2ApiService service
 type ApiOpenApi2ToolsAppManagementBpShareCancelPostRequest struct {
 	ctx                                      context.Context
 	ApiService                               *ToolsAppManagementBpShareCancelV2ApiService
-	toolsAppManagementBpShareCancelV2Request *ToolsAppManagementBpShareCancelV2Request
+	toolsAppManagementBpShareCancelV2Request *models.ToolsAppManagementBpShareCancelV2Request
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBpShareCancelPostRequest) ToolsAppManagementBpShareCancelV2Request(toolsAppManagementBpShareCancelV2Request ToolsAppManagementBpShareCancelV2Request) *ApiOpenApi2ToolsAppManagementBpShareCancelPostRequest {
+func (r *ApiOpenApi2ToolsAppManagementBpShareCancelPostRequest) ToolsAppManagementBpShareCancelV2Request(toolsAppManagementBpShareCancelV2Request models.ToolsAppManagementBpShareCancelV2Request) *ApiOpenApi2ToolsAppManagementBpShareCancelPostRequest {
 	r.toolsAppManagementBpShareCancelV2Request = &toolsAppManagementBpShareCancelV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBpShareCancelPostRequest) Execute() (*ToolsAppManagementBpShareCancelV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementBpShareCancelPostRequest) Execute() (*models.ToolsAppManagementBpShareCancelV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsAppManagementBpShareCancelV2ApiService) Post(ctx context.Context) 
 // Execute executes the request
 //
 //	@return ToolsAppManagementBpShareCancelV2Response
-func (a *ToolsAppManagementBpShareCancelV2ApiService) postExecute(r *ApiOpenApi2ToolsAppManagementBpShareCancelPostRequest) (*ToolsAppManagementBpShareCancelV2Response, *http.Response, error) {
+func (a *ToolsAppManagementBpShareCancelV2ApiService) postExecute(r *ApiOpenApi2ToolsAppManagementBpShareCancelPostRequest) (*models.ToolsAppManagementBpShareCancelV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementBpShareCancelV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementBpShareCancelV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsAppManagementBpShareCancelV2ApiService) postExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/bp_share/cancel/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

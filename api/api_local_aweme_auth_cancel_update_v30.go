@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalAwemeAuthCancelUpdateV30ApiService LocalAwemeAuthCancelUpdateV30Api service
@@ -25,15 +26,15 @@ type LocalAwemeAuthCancelUpdateV30ApiService service
 type ApiOpenApiV30LocalAwemeAuthCancelUpdatePostRequest struct {
 	ctx                                  context.Context
 	ApiService                           *LocalAwemeAuthCancelUpdateV30ApiService
-	localAwemeAuthCancelUpdateV30Request *LocalAwemeAuthCancelUpdateV30Request
+	localAwemeAuthCancelUpdateV30Request *models.LocalAwemeAuthCancelUpdateV30Request
 }
 
-func (r *ApiOpenApiV30LocalAwemeAuthCancelUpdatePostRequest) LocalAwemeAuthCancelUpdateV30Request(localAwemeAuthCancelUpdateV30Request LocalAwemeAuthCancelUpdateV30Request) *ApiOpenApiV30LocalAwemeAuthCancelUpdatePostRequest {
+func (r *ApiOpenApiV30LocalAwemeAuthCancelUpdatePostRequest) LocalAwemeAuthCancelUpdateV30Request(localAwemeAuthCancelUpdateV30Request models.LocalAwemeAuthCancelUpdateV30Request) *ApiOpenApiV30LocalAwemeAuthCancelUpdatePostRequest {
 	r.localAwemeAuthCancelUpdateV30Request = &localAwemeAuthCancelUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30LocalAwemeAuthCancelUpdatePostRequest) Execute() (*LocalAwemeAuthCancelUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalAwemeAuthCancelUpdatePostRequest) Execute() (*models.LocalAwemeAuthCancelUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *LocalAwemeAuthCancelUpdateV30ApiService) Post(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return LocalAwemeAuthCancelUpdateV30Response
-func (a *LocalAwemeAuthCancelUpdateV30ApiService) postExecute(r *ApiOpenApiV30LocalAwemeAuthCancelUpdatePostRequest) (*LocalAwemeAuthCancelUpdateV30Response, *http.Response, error) {
+func (a *LocalAwemeAuthCancelUpdateV30ApiService) postExecute(r *ApiOpenApiV30LocalAwemeAuthCancelUpdatePostRequest) (*models.LocalAwemeAuthCancelUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalAwemeAuthCancelUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalAwemeAuthCancelUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *LocalAwemeAuthCancelUpdateV30ApiService) postExecute(r *ApiOpenApiV30Lo
 	localVarPath := localBasePath + "/open_api/v3.0/local/aweme_auth_cancel/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

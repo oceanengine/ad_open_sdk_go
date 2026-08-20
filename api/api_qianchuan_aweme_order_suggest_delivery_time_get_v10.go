@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeOrderSuggestDeliveryTimeGetV10ApiService QianchuanAwemeOrderSuggestDeliveryTimeGetV10Api service
@@ -48,7 +49,7 @@ func (r *ApiOpenApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGetRequest) AddAm
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGetRequest) Execute() (*QianchuanAwemeOrderSuggestDeliveryTimeGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGetRequest) Execute() (*models.QianchuanAwemeOrderSuggestDeliveryTimeGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *QianchuanAwemeOrderSuggestDeliveryTimeGetV10ApiService) Get(ctx context
 // Execute executes the request
 //
 //	@return QianchuanAwemeOrderSuggestDeliveryTimeGetV10Response
-func (a *QianchuanAwemeOrderSuggestDeliveryTimeGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGetRequest) (*QianchuanAwemeOrderSuggestDeliveryTimeGetV10Response, *http.Response, error) {
+func (a *QianchuanAwemeOrderSuggestDeliveryTimeGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeOrderSuggestDeliveryTimeGetGetRequest) (*models.QianchuanAwemeOrderSuggestDeliveryTimeGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeOrderSuggestDeliveryTimeGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeOrderSuggestDeliveryTimeGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *QianchuanAwemeOrderSuggestDeliveryTimeGetV10ApiService) getExecute(r *A
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/order/suggest/delivery_time/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

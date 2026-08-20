@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueFormGetV2ApiService ToolsClueFormGetV2Api service
@@ -33,7 +34,7 @@ type ApiOpenApi2ToolsClueFormGetGetRequest struct {
 	instanceId   *int64
 	name         *string
 	isDel        *int64
-	formType     *ToolsClueFormGetV2FormType
+	formType     *models.ToolsClueFormGetV2FormType
 }
 
 func (r *ApiOpenApi2ToolsClueFormGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsClueFormGetGetRequest {
@@ -76,12 +77,12 @@ func (r *ApiOpenApi2ToolsClueFormGetGetRequest) IsDel(isDel int64) *ApiOpenApi2T
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueFormGetGetRequest) FormType(formType ToolsClueFormGetV2FormType) *ApiOpenApi2ToolsClueFormGetGetRequest {
+func (r *ApiOpenApi2ToolsClueFormGetGetRequest) FormType(formType models.ToolsClueFormGetV2FormType) *ApiOpenApi2ToolsClueFormGetGetRequest {
 	r.formType = &formType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueFormGetGetRequest) Execute() (*ToolsClueFormGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueFormGetGetRequest) Execute() (*models.ToolsClueFormGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -115,12 +116,12 @@ func (a *ToolsClueFormGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Tool
 // Execute executes the request
 //
 //	@return ToolsClueFormGetV2Response
-func (a *ToolsClueFormGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueFormGetGetRequest) (*ToolsClueFormGetV2Response, *http.Response, error) {
+func (a *ToolsClueFormGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueFormGetGetRequest) (*models.ToolsClueFormGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueFormGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueFormGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -130,7 +131,7 @@ func (a *ToolsClueFormGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueFormGet
 	localVarPath := localBasePath + "/open_api/2/tools/clue/form/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

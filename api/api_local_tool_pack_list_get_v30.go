@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalToolPackListGetV30ApiService LocalToolPackListGetV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30LocalToolPackListGetGetRequest struct {
 	ctx                      context.Context
 	ApiService               *LocalToolPackListGetV30ApiService
 	localAccountId           *int64
-	deliveryGoal             *LocalToolPackListGetV30DeliveryGoal
-	intelligentSelectionMode *LocalToolPackListGetV30IntelligentSelectionMode
+	deliveryGoal             *models.LocalToolPackListGetV30DeliveryGoal
+	intelligentSelectionMode *models.LocalToolPackListGetV30IntelligentSelectionMode
 	poiIds                   *[]int64
 	productIds               *[]int64
 	page                     *int64
@@ -40,13 +41,13 @@ func (r *ApiOpenApiV30LocalToolPackListGetGetRequest) LocalAccountId(localAccoun
 }
 
 // 推广内容：推商品 退门店
-func (r *ApiOpenApiV30LocalToolPackListGetGetRequest) DeliveryGoal(deliveryGoal LocalToolPackListGetV30DeliveryGoal) *ApiOpenApiV30LocalToolPackListGetGetRequest {
+func (r *ApiOpenApiV30LocalToolPackListGetGetRequest) DeliveryGoal(deliveryGoal models.LocalToolPackListGetV30DeliveryGoal) *ApiOpenApiV30LocalToolPackListGetGetRequest {
 	r.deliveryGoal = &deliveryGoal
 	return r
 }
 
 // 0 自定义, 1 智能优选
-func (r *ApiOpenApiV30LocalToolPackListGetGetRequest) IntelligentSelectionMode(intelligentSelectionMode LocalToolPackListGetV30IntelligentSelectionMode) *ApiOpenApiV30LocalToolPackListGetGetRequest {
+func (r *ApiOpenApiV30LocalToolPackListGetGetRequest) IntelligentSelectionMode(intelligentSelectionMode models.LocalToolPackListGetV30IntelligentSelectionMode) *ApiOpenApiV30LocalToolPackListGetGetRequest {
 	r.intelligentSelectionMode = &intelligentSelectionMode
 	return r
 }
@@ -75,7 +76,7 @@ func (r *ApiOpenApiV30LocalToolPackListGetGetRequest) PageSize(pageSize int64) *
 	return r
 }
 
-func (r *ApiOpenApiV30LocalToolPackListGetGetRequest) Execute() (*LocalToolPackListGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalToolPackListGetGetRequest) Execute() (*models.LocalToolPackListGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -109,12 +110,12 @@ func (a *LocalToolPackListGetV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return LocalToolPackListGetV30Response
-func (a *LocalToolPackListGetV30ApiService) getExecute(r *ApiOpenApiV30LocalToolPackListGetGetRequest) (*LocalToolPackListGetV30Response, *http.Response, error) {
+func (a *LocalToolPackListGetV30ApiService) getExecute(r *ApiOpenApiV30LocalToolPackListGetGetRequest) (*models.LocalToolPackListGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalToolPackListGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalToolPackListGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -124,7 +125,7 @@ func (a *LocalToolPackListGetV30ApiService) getExecute(r *ApiOpenApiV30LocalTool
 	localVarPath := localBasePath + "/open_api/v3.0/local/tool_pack_list/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

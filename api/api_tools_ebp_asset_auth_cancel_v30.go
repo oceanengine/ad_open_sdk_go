@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpAssetAuthCancelV30ApiService ToolsEbpAssetAuthCancelV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpAssetAuthCancelV30ApiService service
 type ApiOpenApiV30ToolsEbpAssetAuthCancelPostRequest struct {
 	ctx                               context.Context
 	ApiService                        *ToolsEbpAssetAuthCancelV30ApiService
-	toolsEbpAssetAuthCancelV30Request *ToolsEbpAssetAuthCancelV30Request
+	toolsEbpAssetAuthCancelV30Request *models.ToolsEbpAssetAuthCancelV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpAssetAuthCancelPostRequest) ToolsEbpAssetAuthCancelV30Request(toolsEbpAssetAuthCancelV30Request ToolsEbpAssetAuthCancelV30Request) *ApiOpenApiV30ToolsEbpAssetAuthCancelPostRequest {
+func (r *ApiOpenApiV30ToolsEbpAssetAuthCancelPostRequest) ToolsEbpAssetAuthCancelV30Request(toolsEbpAssetAuthCancelV30Request models.ToolsEbpAssetAuthCancelV30Request) *ApiOpenApiV30ToolsEbpAssetAuthCancelPostRequest {
 	r.toolsEbpAssetAuthCancelV30Request = &toolsEbpAssetAuthCancelV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAssetAuthCancelPostRequest) Execute() (*ToolsEbpAssetAuthCancelV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpAssetAuthCancelPostRequest) Execute() (*models.ToolsEbpAssetAuthCancelV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpAssetAuthCancelV30ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsEbpAssetAuthCancelV30Response
-func (a *ToolsEbpAssetAuthCancelV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpAssetAuthCancelPostRequest) (*ToolsEbpAssetAuthCancelV30Response, *http.Response, error) {
+func (a *ToolsEbpAssetAuthCancelV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpAssetAuthCancelPostRequest) (*models.ToolsEbpAssetAuthCancelV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpAssetAuthCancelV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpAssetAuthCancelV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpAssetAuthCancelV30ApiService) postExecute(r *ApiOpenApiV30Tools
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/asset/auth/cancel/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

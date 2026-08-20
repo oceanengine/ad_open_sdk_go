@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemanderDemanderGetBindShareCodeV2ApiService StarDemanderDemanderGetBindShareCodeV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2StarDemanderDemanderGetBindShareCodeGetRequest) BizUid(bizUi
 	return r
 }
 
-func (r *ApiOpenApi2StarDemanderDemanderGetBindShareCodeGetRequest) Execute() (*StarDemanderDemanderGetBindShareCodeV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemanderDemanderGetBindShareCodeGetRequest) Execute() (*models.StarDemanderDemanderGetBindShareCodeV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *StarDemanderDemanderGetBindShareCodeV2ApiService) Get(ctx context.Conte
 // Execute executes the request
 //
 //	@return StarDemanderDemanderGetBindShareCodeV2Response
-func (a *StarDemanderDemanderGetBindShareCodeV2ApiService) getExecute(r *ApiOpenApi2StarDemanderDemanderGetBindShareCodeGetRequest) (*StarDemanderDemanderGetBindShareCodeV2Response, *http.Response, error) {
+func (a *StarDemanderDemanderGetBindShareCodeV2ApiService) getExecute(r *ApiOpenApi2StarDemanderDemanderGetBindShareCodeGetRequest) (*models.StarDemanderDemanderGetBindShareCodeV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemanderDemanderGetBindShareCodeV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemanderDemanderGetBindShareCodeV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *StarDemanderDemanderGetBindShareCodeV2ApiService) getExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/2/star/demander/demander_get_bind_share_code/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

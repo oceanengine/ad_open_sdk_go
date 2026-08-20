@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAdminInfoV2ApiService ToolsAdminInfoV2Api service
@@ -27,9 +28,9 @@ type ApiOpenApi2ToolsAdminInfoGetRequest struct {
 	ApiService   *ToolsAdminInfoV2ApiService
 	advertiserId *int64
 	codes        *[]string
-	language     *ToolsAdminInfoV2Language
-	subDistrict  *ToolsAdminInfoV2SubDistrict
-	version      *ToolsAdminInfoV2Version
+	language     *models.ToolsAdminInfoV2Language
+	subDistrict  *models.ToolsAdminInfoV2SubDistrict
+	version      *models.ToolsAdminInfoV2Version
 }
 
 // 广告主id
@@ -45,24 +46,24 @@ func (r *ApiOpenApi2ToolsAdminInfoGetRequest) Codes(codes []string) *ApiOpenApi2
 }
 
 // 语言类型&lt;br&gt;&#x60;ZH_CN&#x60;表示常用名，如“北京”&lt;br&gt;&#x60;ZH_CN_GOV&#x60;表示官方全称，如“北京市”
-func (r *ApiOpenApi2ToolsAdminInfoGetRequest) Language(language ToolsAdminInfoV2Language) *ApiOpenApi2ToolsAdminInfoGetRequest {
+func (r *ApiOpenApi2ToolsAdminInfoGetRequest) Language(language models.ToolsAdminInfoV2Language) *ApiOpenApi2ToolsAdminInfoGetRequest {
 	r.language = &language
 	return r
 }
 
 // 行政区域层级。&lt;br&gt;&#x60;NONE&#x60; 当前层级&lt;br&gt;&#x60;ONE_LEVEL&#x60;下一级区域&lt;br&gt;&#x60;TWO_LEVEL&#x60;下二级区域&lt;br&gt;&#x60;THREE_LEVEL&#x60;下三级区域&lt;br&gt;&#x60;FOUR_LEVEL&#x60;下四级区域
-func (r *ApiOpenApi2ToolsAdminInfoGetRequest) SubDistrict(subDistrict ToolsAdminInfoV2SubDistrict) *ApiOpenApi2ToolsAdminInfoGetRequest {
+func (r *ApiOpenApi2ToolsAdminInfoGetRequest) SubDistrict(subDistrict models.ToolsAdminInfoV2SubDistrict) *ApiOpenApi2ToolsAdminInfoGetRequest {
 	r.subDistrict = &subDistrict
 	return r
 }
 
 // 行政区划版本
-func (r *ApiOpenApi2ToolsAdminInfoGetRequest) Version(version ToolsAdminInfoV2Version) *ApiOpenApi2ToolsAdminInfoGetRequest {
+func (r *ApiOpenApi2ToolsAdminInfoGetRequest) Version(version models.ToolsAdminInfoV2Version) *ApiOpenApi2ToolsAdminInfoGetRequest {
 	r.version = &version
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAdminInfoGetRequest) Execute() (*ToolsAdminInfoV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAdminInfoGetRequest) Execute() (*models.ToolsAdminInfoV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *ToolsAdminInfoV2ApiService) Get(ctx context.Context) *ApiOpenApi2ToolsA
 // Execute executes the request
 //
 //	@return ToolsAdminInfoV2Response
-func (a *ToolsAdminInfoV2ApiService) getExecute(r *ApiOpenApi2ToolsAdminInfoGetRequest) (*ToolsAdminInfoV2Response, *http.Response, error) {
+func (a *ToolsAdminInfoV2ApiService) getExecute(r *ApiOpenApi2ToolsAdminInfoGetRequest) (*models.ToolsAdminInfoV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAdminInfoV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAdminInfoV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *ToolsAdminInfoV2ApiService) getExecute(r *ApiOpenApi2ToolsAdminInfoGetR
 	localVarPath := localBasePath + "/open_api/2/tools/admin/info/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CreateProjectInvoiceV2ApiService CreateProjectInvoiceV2Api service
@@ -25,15 +26,15 @@ type CreateProjectInvoiceV2ApiService service
 type ApiOpenApi2CreateProjectInvoicePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *CreateProjectInvoiceV2ApiService
-	createProjectInvoiceV2Request *CreateProjectInvoiceV2Request
+	createProjectInvoiceV2Request *models.CreateProjectInvoiceV2Request
 }
 
-func (r *ApiOpenApi2CreateProjectInvoicePostRequest) CreateProjectInvoiceV2Request(createProjectInvoiceV2Request CreateProjectInvoiceV2Request) *ApiOpenApi2CreateProjectInvoicePostRequest {
+func (r *ApiOpenApi2CreateProjectInvoicePostRequest) CreateProjectInvoiceV2Request(createProjectInvoiceV2Request models.CreateProjectInvoiceV2Request) *ApiOpenApi2CreateProjectInvoicePostRequest {
 	r.createProjectInvoiceV2Request = &createProjectInvoiceV2Request
 	return r
 }
 
-func (r *ApiOpenApi2CreateProjectInvoicePostRequest) Execute() (*CreateProjectInvoiceV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CreateProjectInvoicePostRequest) Execute() (*models.CreateProjectInvoiceV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *CreateProjectInvoiceV2ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return CreateProjectInvoiceV2Response
-func (a *CreateProjectInvoiceV2ApiService) postExecute(r *ApiOpenApi2CreateProjectInvoicePostRequest) (*CreateProjectInvoiceV2Response, *http.Response, error) {
+func (a *CreateProjectInvoiceV2ApiService) postExecute(r *ApiOpenApi2CreateProjectInvoicePostRequest) (*models.CreateProjectInvoiceV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CreateProjectInvoiceV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CreateProjectInvoiceV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *CreateProjectInvoiceV2ApiService) postExecute(r *ApiOpenApi2CreateProje
 	localVarPath := localBasePath + "/open_api/2/create/project_invoice/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

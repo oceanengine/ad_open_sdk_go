@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportCustomGetV30ApiService ReportCustomGetV30Api service
@@ -28,13 +29,13 @@ type ApiOpenApiV30ReportCustomGetGetRequest struct {
 	dimensions   *[]string
 	advertiserId *int64
 	metrics      *[]string
-	filters      *[]*ReportCustomGetV30FiltersInner
+	filters      *[]*models.ReportCustomGetV30FiltersInner
 	startTime    *string
 	endTime      *string
-	orderBy      *[]*ReportCustomGetV30OrderByInner
+	orderBy      *[]*models.ReportCustomGetV30OrderByInner
 	page         *int32
 	pageSize     *int32
-	dataTopic    *ReportCustomGetV30DataTopic
+	dataTopic    *models.ReportCustomGetV30DataTopic
 }
 
 func (r *ApiOpenApiV30ReportCustomGetGetRequest) Dimensions(dimensions []string) *ApiOpenApiV30ReportCustomGetGetRequest {
@@ -52,7 +53,7 @@ func (r *ApiOpenApiV30ReportCustomGetGetRequest) Metrics(metrics []string) *ApiO
 	return r
 }
 
-func (r *ApiOpenApiV30ReportCustomGetGetRequest) Filters(filters []*ReportCustomGetV30FiltersInner) *ApiOpenApiV30ReportCustomGetGetRequest {
+func (r *ApiOpenApiV30ReportCustomGetGetRequest) Filters(filters []*models.ReportCustomGetV30FiltersInner) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.filters = &filters
 	return r
 }
@@ -67,7 +68,7 @@ func (r *ApiOpenApiV30ReportCustomGetGetRequest) EndTime(endTime string) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApiV30ReportCustomGetGetRequest) OrderBy(orderBy []*ReportCustomGetV30OrderByInner) *ApiOpenApiV30ReportCustomGetGetRequest {
+func (r *ApiOpenApiV30ReportCustomGetGetRequest) OrderBy(orderBy []*models.ReportCustomGetV30OrderByInner) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.orderBy = &orderBy
 	return r
 }
@@ -82,12 +83,12 @@ func (r *ApiOpenApiV30ReportCustomGetGetRequest) PageSize(pageSize int32) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApiV30ReportCustomGetGetRequest) DataTopic(dataTopic ReportCustomGetV30DataTopic) *ApiOpenApiV30ReportCustomGetGetRequest {
+func (r *ApiOpenApiV30ReportCustomGetGetRequest) DataTopic(dataTopic models.ReportCustomGetV30DataTopic) *ApiOpenApiV30ReportCustomGetGetRequest {
 	r.dataTopic = &dataTopic
 	return r
 }
 
-func (r *ApiOpenApiV30ReportCustomGetGetRequest) Execute() (*ReportCustomGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportCustomGetGetRequest) Execute() (*models.ReportCustomGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -121,12 +122,12 @@ func (a *ReportCustomGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Re
 // Execute executes the request
 //
 //	@return ReportCustomGetV30Response
-func (a *ReportCustomGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCustomGetGetRequest) (*ReportCustomGetV30Response, *http.Response, error) {
+func (a *ReportCustomGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCustomGetGetRequest) (*models.ReportCustomGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportCustomGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportCustomGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -136,7 +137,7 @@ func (a *ReportCustomGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCustomGe
 	localVarPath := localBasePath + "/open_api/v3.0/report/custom/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.dimensions == nil {

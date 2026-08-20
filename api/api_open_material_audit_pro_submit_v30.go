@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OpenMaterialAuditProSubmitV30ApiService OpenMaterialAuditProSubmitV30Api service
@@ -25,15 +26,15 @@ type OpenMaterialAuditProSubmitV30ApiService service
 type ApiOpenApiV30OpenMaterialAuditProSubmitPostRequest struct {
 	ctx                                  context.Context
 	ApiService                           *OpenMaterialAuditProSubmitV30ApiService
-	openMaterialAuditProSubmitV30Request *OpenMaterialAuditProSubmitV30Request
+	openMaterialAuditProSubmitV30Request *models.OpenMaterialAuditProSubmitV30Request
 }
 
-func (r *ApiOpenApiV30OpenMaterialAuditProSubmitPostRequest) OpenMaterialAuditProSubmitV30Request(openMaterialAuditProSubmitV30Request OpenMaterialAuditProSubmitV30Request) *ApiOpenApiV30OpenMaterialAuditProSubmitPostRequest {
+func (r *ApiOpenApiV30OpenMaterialAuditProSubmitPostRequest) OpenMaterialAuditProSubmitV30Request(openMaterialAuditProSubmitV30Request models.OpenMaterialAuditProSubmitV30Request) *ApiOpenApiV30OpenMaterialAuditProSubmitPostRequest {
 	r.openMaterialAuditProSubmitV30Request = &openMaterialAuditProSubmitV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30OpenMaterialAuditProSubmitPostRequest) Execute() (*OpenMaterialAuditProSubmitV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OpenMaterialAuditProSubmitPostRequest) Execute() (*models.OpenMaterialAuditProSubmitV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *OpenMaterialAuditProSubmitV30ApiService) Post(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return OpenMaterialAuditProSubmitV30Response
-func (a *OpenMaterialAuditProSubmitV30ApiService) postExecute(r *ApiOpenApiV30OpenMaterialAuditProSubmitPostRequest) (*OpenMaterialAuditProSubmitV30Response, *http.Response, error) {
+func (a *OpenMaterialAuditProSubmitV30ApiService) postExecute(r *ApiOpenApiV30OpenMaterialAuditProSubmitPostRequest) (*models.OpenMaterialAuditProSubmitV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OpenMaterialAuditProSubmitV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OpenMaterialAuditProSubmitV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *OpenMaterialAuditProSubmitV30ApiService) postExecute(r *ApiOpenApiV30Op
 	localVarPath := localBasePath + "/open_api/v3.0/open_material_audit/pro/submit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

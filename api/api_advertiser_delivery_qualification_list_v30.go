@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserDeliveryQualificationListV30ApiService AdvertiserDeliveryQualificationListV30Api service
@@ -28,8 +29,8 @@ type ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest struct {
 	advertiserId      *int64
 	page              *int32
 	pageSize          *int32
-	qualificationType *AdvertiserDeliveryQualificationListV30QualificationType
-	status            *AdvertiserDeliveryQualificationListV30Status
+	qualificationType *models.AdvertiserDeliveryQualificationListV30QualificationType
+	status            *models.AdvertiserDeliveryQualificationListV30Status
 }
 
 func (r *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest {
@@ -47,17 +48,17 @@ func (r *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest) PageSize(pa
 	return r
 }
 
-func (r *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest) QualificationType(qualificationType AdvertiserDeliveryQualificationListV30QualificationType) *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest {
+func (r *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest) QualificationType(qualificationType models.AdvertiserDeliveryQualificationListV30QualificationType) *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest {
 	r.qualificationType = &qualificationType
 	return r
 }
 
-func (r *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest) Status(status AdvertiserDeliveryQualificationListV30Status) *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest {
+func (r *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest) Status(status models.AdvertiserDeliveryQualificationListV30Status) *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest {
 	r.status = &status
 	return r
 }
 
-func (r *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest) Execute() (*AdvertiserDeliveryQualificationListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest) Execute() (*models.AdvertiserDeliveryQualificationListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *AdvertiserDeliveryQualificationListV30ApiService) Get(ctx context.Conte
 // Execute executes the request
 //
 //	@return AdvertiserDeliveryQualificationListV30Response
-func (a *AdvertiserDeliveryQualificationListV30ApiService) getExecute(r *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest) (*AdvertiserDeliveryQualificationListV30Response, *http.Response, error) {
+func (a *AdvertiserDeliveryQualificationListV30ApiService) getExecute(r *ApiOpenApiV30AdvertiserDeliveryQualificationListGetRequest) (*models.AdvertiserDeliveryQualificationListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserDeliveryQualificationListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserDeliveryQualificationListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *AdvertiserDeliveryQualificationListV30ApiService) getExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/v3.0/advertiser/delivery_qualification/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

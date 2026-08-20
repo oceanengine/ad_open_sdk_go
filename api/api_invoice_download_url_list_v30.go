@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // InvoiceDownloadUrlListV30ApiService InvoiceDownloadUrlListV30Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30InvoiceDownloadUrlListGetRequest) InvoiceApplySerials(invo
 	return r
 }
 
-func (r *ApiOpenApiV30InvoiceDownloadUrlListGetRequest) Execute() (*InvoiceDownloadUrlListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30InvoiceDownloadUrlListGetRequest) Execute() (*models.InvoiceDownloadUrlListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *InvoiceDownloadUrlListV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return InvoiceDownloadUrlListV30Response
-func (a *InvoiceDownloadUrlListV30ApiService) getExecute(r *ApiOpenApiV30InvoiceDownloadUrlListGetRequest) (*InvoiceDownloadUrlListV30Response, *http.Response, error) {
+func (a *InvoiceDownloadUrlListV30ApiService) getExecute(r *ApiOpenApiV30InvoiceDownloadUrlListGetRequest) (*models.InvoiceDownloadUrlListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *InvoiceDownloadUrlListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.InvoiceDownloadUrlListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *InvoiceDownloadUrlListV30ApiService) getExecute(r *ApiOpenApiV30Invoice
 	localVarPath := localBasePath + "/open_api/v3.0/invoice/download_url/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

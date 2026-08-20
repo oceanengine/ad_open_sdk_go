@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarVasGetBoostGroupListV2ApiService StarVasGetBoostGroupListV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2StarVasGetBoostGroupListGetRequest struct {
 	starId       *int64
 	page         *int32
 	limit        *int32
-	status       *StarVasGetBoostGroupListV2Status
+	status       *models.StarVasGetBoostGroupListV2Status
 	ltCreateTime *int64
 	gtCreateTime *int64
 	itemOrderId  *int64
@@ -53,7 +54,7 @@ func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) Limit(limit int32) *ApiO
 }
 
 // 助推组状态
-func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) Status(status StarVasGetBoostGroupListV2Status) *ApiOpenApi2StarVasGetBoostGroupListGetRequest {
+func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) Status(status models.StarVasGetBoostGroupListV2Status) *ApiOpenApi2StarVasGetBoostGroupListGetRequest {
 	r.status = &status
 	return r
 }
@@ -76,7 +77,7 @@ func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) ItemOrderId(itemOrderId 
 	return r
 }
 
-func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) Execute() (*StarVasGetBoostGroupListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) Execute() (*models.StarVasGetBoostGroupListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *StarVasGetBoostGroupListV2ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return StarVasGetBoostGroupListV2Response
-func (a *StarVasGetBoostGroupListV2ApiService) getExecute(r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) (*StarVasGetBoostGroupListV2Response, *http.Response, error) {
+func (a *StarVasGetBoostGroupListV2ApiService) getExecute(r *ApiOpenApi2StarVasGetBoostGroupListGetRequest) (*models.StarVasGetBoostGroupListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarVasGetBoostGroupListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarVasGetBoostGroupListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *StarVasGetBoostGroupListV2ApiService) getExecute(r *ApiOpenApi2StarVasG
 	localVarPath := localBasePath + "/open_api/2/star/vas/get_boost_group_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

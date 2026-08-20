@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarMcnProviderHandleJoinedAuthorV2ApiService StarMcnProviderHandleJoinedAuthorV2Api service
@@ -25,15 +26,15 @@ type StarMcnProviderHandleJoinedAuthorV2ApiService service
 type ApiOpenApi2StarMcnProviderHandleJoinedAuthorPostRequest struct {
 	ctx                                        context.Context
 	ApiService                                 *StarMcnProviderHandleJoinedAuthorV2ApiService
-	starMcnProviderHandleJoinedAuthorV2Request *StarMcnProviderHandleJoinedAuthorV2Request
+	starMcnProviderHandleJoinedAuthorV2Request *models.StarMcnProviderHandleJoinedAuthorV2Request
 }
 
-func (r *ApiOpenApi2StarMcnProviderHandleJoinedAuthorPostRequest) StarMcnProviderHandleJoinedAuthorV2Request(starMcnProviderHandleJoinedAuthorV2Request StarMcnProviderHandleJoinedAuthorV2Request) *ApiOpenApi2StarMcnProviderHandleJoinedAuthorPostRequest {
+func (r *ApiOpenApi2StarMcnProviderHandleJoinedAuthorPostRequest) StarMcnProviderHandleJoinedAuthorV2Request(starMcnProviderHandleJoinedAuthorV2Request models.StarMcnProviderHandleJoinedAuthorV2Request) *ApiOpenApi2StarMcnProviderHandleJoinedAuthorPostRequest {
 	r.starMcnProviderHandleJoinedAuthorV2Request = &starMcnProviderHandleJoinedAuthorV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarMcnProviderHandleJoinedAuthorPostRequest) Execute() (*StarMcnProviderHandleJoinedAuthorV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarMcnProviderHandleJoinedAuthorPostRequest) Execute() (*models.StarMcnProviderHandleJoinedAuthorV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarMcnProviderHandleJoinedAuthorV2ApiService) Post(ctx context.Context
 // Execute executes the request
 //
 //	@return StarMcnProviderHandleJoinedAuthorV2Response
-func (a *StarMcnProviderHandleJoinedAuthorV2ApiService) postExecute(r *ApiOpenApi2StarMcnProviderHandleJoinedAuthorPostRequest) (*StarMcnProviderHandleJoinedAuthorV2Response, *http.Response, error) {
+func (a *StarMcnProviderHandleJoinedAuthorV2ApiService) postExecute(r *ApiOpenApi2StarMcnProviderHandleJoinedAuthorPostRequest) (*models.StarMcnProviderHandleJoinedAuthorV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarMcnProviderHandleJoinedAuthorV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarMcnProviderHandleJoinedAuthorV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarMcnProviderHandleJoinedAuthorV2ApiService) postExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/2/star/mcn/provider_handle_joined_author/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

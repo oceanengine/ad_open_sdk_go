@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsBidsSuggestV30ApiService ToolsBidsSuggestV30Api service
@@ -26,14 +27,14 @@ type ApiOpenApiV30ToolsBidsSuggestGetRequest struct {
 	ctx                context.Context
 	ApiService         *ToolsBidsSuggestV30ApiService
 	advertiserId       *int64
-	pricing            *ToolsBidsSuggestV30Pricing
-	externalAction     *ToolsBidsSuggestV30ExternalAction
+	pricing            *models.ToolsBidsSuggestV30Pricing
+	externalAction     *models.ToolsBidsSuggestV30ExternalAction
 	projectId          *int64
-	deepExternalAction *ToolsBidsSuggestV30DeepExternalAction
-	deepBidType        *ToolsBidsSuggestV30DeepBidType
-	platform           *[]*ToolsBidsSuggestV30Platform
-	marketingGoal      *ToolsBidsSuggestV30MarketingGoal
-	campaignType       *ToolsBidsSuggestV30CampaignType
+	deepExternalAction *models.ToolsBidsSuggestV30DeepExternalAction
+	deepBidType        *models.ToolsBidsSuggestV30DeepBidType
+	platform           *[]*models.ToolsBidsSuggestV30Platform
+	marketingGoal      *models.ToolsBidsSuggestV30MarketingGoal
+	campaignType       *models.ToolsBidsSuggestV30CampaignType
 	packageName        *string
 	userName           *string
 	appId              *string
@@ -44,12 +45,12 @@ func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) AdvertiserId(advertiserId int6
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) Pricing(pricing ToolsBidsSuggestV30Pricing) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) Pricing(pricing models.ToolsBidsSuggestV30Pricing) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
 	r.pricing = &pricing
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) ExternalAction(externalAction ToolsBidsSuggestV30ExternalAction) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) ExternalAction(externalAction models.ToolsBidsSuggestV30ExternalAction) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
 	r.externalAction = &externalAction
 	return r
 }
@@ -59,30 +60,30 @@ func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) ProjectId(projectId int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) DeepExternalAction(deepExternalAction ToolsBidsSuggestV30DeepExternalAction) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) DeepExternalAction(deepExternalAction models.ToolsBidsSuggestV30DeepExternalAction) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
 	r.deepExternalAction = &deepExternalAction
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) DeepBidType(deepBidType ToolsBidsSuggestV30DeepBidType) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) DeepBidType(deepBidType models.ToolsBidsSuggestV30DeepBidType) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
 	r.deepBidType = &deepBidType
 	return r
 }
 
 // 定向目标平台
-func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) Platform(platform []*ToolsBidsSuggestV30Platform) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) Platform(platform []*models.ToolsBidsSuggestV30Platform) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
 	r.platform = &platform
 	return r
 }
 
 // 营销目标
-func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) MarketingGoal(marketingGoal ToolsBidsSuggestV30MarketingGoal) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) MarketingGoal(marketingGoal models.ToolsBidsSuggestV30MarketingGoal) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
 // 项目类型
-func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) CampaignType(campaignType ToolsBidsSuggestV30CampaignType) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) CampaignType(campaignType models.ToolsBidsSuggestV30CampaignType) *ApiOpenApiV30ToolsBidsSuggestGetRequest {
 	r.campaignType = &campaignType
 	return r
 }
@@ -105,7 +106,7 @@ func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) AppId(appId string) *ApiOpenAp
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) Execute() (*ToolsBidsSuggestV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsBidsSuggestGetRequest) Execute() (*models.ToolsBidsSuggestV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -139,12 +140,12 @@ func (a *ToolsBidsSuggestV30ApiService) Get(ctx context.Context) *ApiOpenApiV30T
 // Execute executes the request
 //
 //	@return ToolsBidsSuggestV30Response
-func (a *ToolsBidsSuggestV30ApiService) getExecute(r *ApiOpenApiV30ToolsBidsSuggestGetRequest) (*ToolsBidsSuggestV30Response, *http.Response, error) {
+func (a *ToolsBidsSuggestV30ApiService) getExecute(r *ApiOpenApiV30ToolsBidsSuggestGetRequest) (*models.ToolsBidsSuggestV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsBidsSuggestV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsBidsSuggestV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -154,7 +155,7 @@ func (a *ToolsBidsSuggestV30ApiService) getExecute(r *ApiOpenApiV30ToolsBidsSugg
 	localVarPath := localBasePath + "/open_api/v3.0/tools/bids/suggest/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

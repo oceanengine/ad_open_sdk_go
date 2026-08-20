@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAdMaterialSuggestionV10ApiService QianchuanAdMaterialSuggestionV10Api service
@@ -47,7 +48,7 @@ func (r *ApiOpenApiV10QianchuanAdMaterialSuggestionGetRequest) MaterialIds(mater
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAdMaterialSuggestionGetRequest) Execute() (*QianchuanAdMaterialSuggestionV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAdMaterialSuggestionGetRequest) Execute() (*models.QianchuanAdMaterialSuggestionV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -81,12 +82,12 @@ func (a *QianchuanAdMaterialSuggestionV10ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return QianchuanAdMaterialSuggestionV10Response
-func (a *QianchuanAdMaterialSuggestionV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAdMaterialSuggestionGetRequest) (*QianchuanAdMaterialSuggestionV10Response, *http.Response, error) {
+func (a *QianchuanAdMaterialSuggestionV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAdMaterialSuggestionGetRequest) (*models.QianchuanAdMaterialSuggestionV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAdMaterialSuggestionV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAdMaterialSuggestionV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -96,7 +97,7 @@ func (a *QianchuanAdMaterialSuggestionV10ApiService) getExecute(r *ApiOpenApiV10
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/ad/material/suggestion/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

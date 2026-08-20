@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPromotionRaiseVersionGetV30ApiService ToolsPromotionRaiseVersionGetV30Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30ToolsPromotionRaiseVersionGetGetRequest) PageSize(pageSize
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsPromotionRaiseVersionGetGetRequest) Execute() (*ToolsPromotionRaiseVersionGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsPromotionRaiseVersionGetGetRequest) Execute() (*models.ToolsPromotionRaiseVersionGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *ToolsPromotionRaiseVersionGetV30ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return ToolsPromotionRaiseVersionGetV30Response
-func (a *ToolsPromotionRaiseVersionGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsPromotionRaiseVersionGetGetRequest) (*ToolsPromotionRaiseVersionGetV30Response, *http.Response, error) {
+func (a *ToolsPromotionRaiseVersionGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsPromotionRaiseVersionGetGetRequest) (*models.ToolsPromotionRaiseVersionGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPromotionRaiseVersionGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPromotionRaiseVersionGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *ToolsPromotionRaiseVersionGetV30ApiService) getExecute(r *ApiOpenApiV30
 	localVarPath := localBasePath + "/open_api/v3.0/tools/promotion_raise_version/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

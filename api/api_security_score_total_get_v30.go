@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SecurityScoreTotalGetV30ApiService SecurityScoreTotalGetV30Api service
@@ -26,10 +27,10 @@ type ApiOpenApiV30SecurityScoreTotalGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *SecurityScoreTotalGetV30ApiService
 	advertiserId *int64
-	businessLine *SecurityScoreTotalGetV30BusinessLine
+	businessLine *models.SecurityScoreTotalGetV30BusinessLine
 	page         *int64
 	pageSize     *int64
-	filtering    *SecurityScoreTotalGetV30Filtering
+	filtering    *models.SecurityScoreTotalGetV30Filtering
 }
 
 func (r *ApiOpenApiV30SecurityScoreTotalGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30SecurityScoreTotalGetGetRequest {
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30SecurityScoreTotalGetGetRequest) AdvertiserId(advertiserId
 }
 
 // 业务线
-func (r *ApiOpenApiV30SecurityScoreTotalGetGetRequest) BusinessLine(businessLine SecurityScoreTotalGetV30BusinessLine) *ApiOpenApiV30SecurityScoreTotalGetGetRequest {
+func (r *ApiOpenApiV30SecurityScoreTotalGetGetRequest) BusinessLine(businessLine models.SecurityScoreTotalGetV30BusinessLine) *ApiOpenApiV30SecurityScoreTotalGetGetRequest {
 	r.businessLine = &businessLine
 	return r
 }
@@ -56,12 +57,12 @@ func (r *ApiOpenApiV30SecurityScoreTotalGetGetRequest) PageSize(pageSize int64) 
 }
 
 // 过滤器
-func (r *ApiOpenApiV30SecurityScoreTotalGetGetRequest) Filtering(filtering SecurityScoreTotalGetV30Filtering) *ApiOpenApiV30SecurityScoreTotalGetGetRequest {
+func (r *ApiOpenApiV30SecurityScoreTotalGetGetRequest) Filtering(filtering models.SecurityScoreTotalGetV30Filtering) *ApiOpenApiV30SecurityScoreTotalGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30SecurityScoreTotalGetGetRequest) Execute() (*SecurityScoreTotalGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SecurityScoreTotalGetGetRequest) Execute() (*models.SecurityScoreTotalGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -95,12 +96,12 @@ func (a *SecurityScoreTotalGetV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return SecurityScoreTotalGetV30Response
-func (a *SecurityScoreTotalGetV30ApiService) getExecute(r *ApiOpenApiV30SecurityScoreTotalGetGetRequest) (*SecurityScoreTotalGetV30Response, *http.Response, error) {
+func (a *SecurityScoreTotalGetV30ApiService) getExecute(r *ApiOpenApiV30SecurityScoreTotalGetGetRequest) (*models.SecurityScoreTotalGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SecurityScoreTotalGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SecurityScoreTotalGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -110,7 +111,7 @@ func (a *SecurityScoreTotalGetV30ApiService) getExecute(r *ApiOpenApiV30Security
 	localVarPath := localBasePath + "/open_api/v3.0/security/score_total/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

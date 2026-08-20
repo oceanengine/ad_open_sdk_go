@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportMaterialGetV10ApiService QianchuanReportMaterialGetV10Api service
@@ -29,9 +30,9 @@ type ApiOpenApiV10QianchuanReportMaterialGetGetRequest struct {
 	endDate      *string
 	advertiserId *int64
 	fields       *[]string
-	orderType    *QianchuanReportMaterialGetV10OrderType
+	orderType    *models.QianchuanReportMaterialGetV10OrderType
 	orderField   *string
-	filtering    *QianchuanReportMaterialGetV10Filtering
+	filtering    *models.QianchuanReportMaterialGetV10Filtering
 	page         *int32
 	pageSize     *int32
 }
@@ -56,7 +57,7 @@ func (r *ApiOpenApiV10QianchuanReportMaterialGetGetRequest) Fields(fields []stri
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportMaterialGetGetRequest) OrderType(orderType QianchuanReportMaterialGetV10OrderType) *ApiOpenApiV10QianchuanReportMaterialGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportMaterialGetGetRequest) OrderType(orderType models.QianchuanReportMaterialGetV10OrderType) *ApiOpenApiV10QianchuanReportMaterialGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -66,7 +67,7 @@ func (r *ApiOpenApiV10QianchuanReportMaterialGetGetRequest) OrderField(orderFiel
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportMaterialGetGetRequest) Filtering(filtering QianchuanReportMaterialGetV10Filtering) *ApiOpenApiV10QianchuanReportMaterialGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportMaterialGetGetRequest) Filtering(filtering models.QianchuanReportMaterialGetV10Filtering) *ApiOpenApiV10QianchuanReportMaterialGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -81,7 +82,7 @@ func (r *ApiOpenApiV10QianchuanReportMaterialGetGetRequest) PageSize(pageSize in
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportMaterialGetGetRequest) Execute() (*QianchuanReportMaterialGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportMaterialGetGetRequest) Execute() (*models.QianchuanReportMaterialGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -115,12 +116,12 @@ func (a *QianchuanReportMaterialGetV10ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return QianchuanReportMaterialGetV10Response
-func (a *QianchuanReportMaterialGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportMaterialGetGetRequest) (*QianchuanReportMaterialGetV10Response, *http.Response, error) {
+func (a *QianchuanReportMaterialGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportMaterialGetGetRequest) (*models.QianchuanReportMaterialGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportMaterialGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportMaterialGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -130,7 +131,7 @@ func (a *QianchuanReportMaterialGetV10ApiService) getExecute(r *ApiOpenApiV10Qia
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/material/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.startDate == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileQualitySubmitV30ApiService FileQualitySubmitV30Api service
@@ -25,15 +26,15 @@ type FileQualitySubmitV30ApiService service
 type ApiOpenApiV30FileQualitySubmitPostRequest struct {
 	ctx                         context.Context
 	ApiService                  *FileQualitySubmitV30ApiService
-	fileQualitySubmitV30Request *FileQualitySubmitV30Request
+	fileQualitySubmitV30Request *models.FileQualitySubmitV30Request
 }
 
-func (r *ApiOpenApiV30FileQualitySubmitPostRequest) FileQualitySubmitV30Request(fileQualitySubmitV30Request FileQualitySubmitV30Request) *ApiOpenApiV30FileQualitySubmitPostRequest {
+func (r *ApiOpenApiV30FileQualitySubmitPostRequest) FileQualitySubmitV30Request(fileQualitySubmitV30Request models.FileQualitySubmitV30Request) *ApiOpenApiV30FileQualitySubmitPostRequest {
 	r.fileQualitySubmitV30Request = &fileQualitySubmitV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30FileQualitySubmitPostRequest) Execute() (*FileQualitySubmitV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30FileQualitySubmitPostRequest) Execute() (*models.FileQualitySubmitV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *FileQualitySubmitV30ApiService) Post(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return FileQualitySubmitV30Response
-func (a *FileQualitySubmitV30ApiService) postExecute(r *ApiOpenApiV30FileQualitySubmitPostRequest) (*FileQualitySubmitV30Response, *http.Response, error) {
+func (a *FileQualitySubmitV30ApiService) postExecute(r *ApiOpenApiV30FileQualitySubmitPostRequest) (*models.FileQualitySubmitV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileQualitySubmitV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileQualitySubmitV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *FileQualitySubmitV30ApiService) postExecute(r *ApiOpenApiV30FileQuality
 	localVarPath := localBasePath + "/open_api/v3.0/file/quality/submit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

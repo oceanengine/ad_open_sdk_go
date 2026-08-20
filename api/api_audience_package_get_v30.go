@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AudiencePackageGetV30ApiService AudiencePackageGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30AudiencePackageGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *AudiencePackageGetV30ApiService
 	advertiserId *int64
-	filtering    *AudiencePackageGetV30Filtering
+	filtering    *models.AudiencePackageGetV30Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30AudiencePackageGetGetRequest) AdvertiserId(advertiserId in
 }
 
 // 过滤器
-func (r *ApiOpenApiV30AudiencePackageGetGetRequest) Filtering(filtering AudiencePackageGetV30Filtering) *ApiOpenApiV30AudiencePackageGetGetRequest {
+func (r *ApiOpenApiV30AudiencePackageGetGetRequest) Filtering(filtering models.AudiencePackageGetV30Filtering) *ApiOpenApiV30AudiencePackageGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -53,7 +54,7 @@ func (r *ApiOpenApiV30AudiencePackageGetGetRequest) PageSize(pageSize int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApiV30AudiencePackageGetGetRequest) Execute() (*AudiencePackageGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AudiencePackageGetGetRequest) Execute() (*models.AudiencePackageGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -87,12 +88,12 @@ func (a *AudiencePackageGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return AudiencePackageGetV30Response
-func (a *AudiencePackageGetV30ApiService) getExecute(r *ApiOpenApiV30AudiencePackageGetGetRequest) (*AudiencePackageGetV30Response, *http.Response, error) {
+func (a *AudiencePackageGetV30ApiService) getExecute(r *ApiOpenApiV30AudiencePackageGetGetRequest) (*models.AudiencePackageGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AudiencePackageGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AudiencePackageGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -102,7 +103,7 @@ func (a *AudiencePackageGetV30ApiService) getExecute(r *ApiOpenApiV30AudiencePac
 	localVarPath := localBasePath + "/open_api/v3.0/audience_package/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

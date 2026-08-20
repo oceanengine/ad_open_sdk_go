@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferTransferCreateV30ApiService CgTransferTransferCreateV30Api service
@@ -25,15 +26,15 @@ type CgTransferTransferCreateV30ApiService service
 type ApiOpenApiV30CgTransferTransferCreatePostRequest struct {
 	ctx                                context.Context
 	ApiService                         *CgTransferTransferCreateV30ApiService
-	cgTransferTransferCreateV30Request *CgTransferTransferCreateV30Request
+	cgTransferTransferCreateV30Request *models.CgTransferTransferCreateV30Request
 }
 
-func (r *ApiOpenApiV30CgTransferTransferCreatePostRequest) CgTransferTransferCreateV30Request(cgTransferTransferCreateV30Request CgTransferTransferCreateV30Request) *ApiOpenApiV30CgTransferTransferCreatePostRequest {
+func (r *ApiOpenApiV30CgTransferTransferCreatePostRequest) CgTransferTransferCreateV30Request(cgTransferTransferCreateV30Request models.CgTransferTransferCreateV30Request) *ApiOpenApiV30CgTransferTransferCreatePostRequest {
 	r.cgTransferTransferCreateV30Request = &cgTransferTransferCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferTransferCreatePostRequest) Execute() (*CgTransferTransferCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferTransferCreatePostRequest) Execute() (*models.CgTransferTransferCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *CgTransferTransferCreateV30ApiService) Post(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return CgTransferTransferCreateV30Response
-func (a *CgTransferTransferCreateV30ApiService) postExecute(r *ApiOpenApiV30CgTransferTransferCreatePostRequest) (*CgTransferTransferCreateV30Response, *http.Response, error) {
+func (a *CgTransferTransferCreateV30ApiService) postExecute(r *ApiOpenApiV30CgTransferTransferCreatePostRequest) (*models.CgTransferTransferCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferTransferCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferTransferCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *CgTransferTransferCreateV30ApiService) postExecute(r *ApiOpenApiV30CgTr
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/transfer/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

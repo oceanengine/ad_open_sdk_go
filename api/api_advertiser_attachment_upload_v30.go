@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserAttachmentUploadV30ApiService AdvertiserAttachmentUploadV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30AdvertiserAttachmentUploadPostRequest struct {
 	ctx            context.Context
 	ApiService     *AdvertiserAttachmentUploadV30ApiService
 	advertiserId   *int64
-	attachmentType *AdvertiserAttachmentUploadV30AttachmentType
+	attachmentType *models.AdvertiserAttachmentUploadV30AttachmentType
 	filename       *string
-	imageData      *FormFileInfo
+	imageData      *models.FormFileInfo
 }
 
 func (r *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest {
@@ -36,7 +37,7 @@ func (r *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest) AdvertiserId(advert
 	return r
 }
 
-func (r *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest) AttachmentType(attachmentType AdvertiserAttachmentUploadV30AttachmentType) *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest {
+func (r *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest) AttachmentType(attachmentType models.AdvertiserAttachmentUploadV30AttachmentType) *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest {
 	r.attachmentType = &attachmentType
 	return r
 }
@@ -48,12 +49,12 @@ func (r *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest) Filename(filename s
 }
 
 // 图片数据
-func (r *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest) ImageData(imageData *FormFileInfo) *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest {
+func (r *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest) ImageData(imageData *models.FormFileInfo) *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest {
 	r.imageData = imageData
 	return r
 }
 
-func (r *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest) Execute() (*AdvertiserAttachmentUploadV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest) Execute() (*models.AdvertiserAttachmentUploadV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -87,12 +88,12 @@ func (a *AdvertiserAttachmentUploadV30ApiService) Post(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return AdvertiserAttachmentUploadV30Response
-func (a *AdvertiserAttachmentUploadV30ApiService) postExecute(r *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest) (*AdvertiserAttachmentUploadV30Response, *http.Response, error) {
+func (a *AdvertiserAttachmentUploadV30ApiService) postExecute(r *ApiOpenApiV30AdvertiserAttachmentUploadPostRequest) (*models.AdvertiserAttachmentUploadV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserAttachmentUploadV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserAttachmentUploadV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -102,7 +103,7 @@ func (a *AdvertiserAttachmentUploadV30ApiService) postExecute(r *ApiOpenApiV30Ad
 	localVarPath := localBasePath + "/open_api/v3.0/advertiser/attachment/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

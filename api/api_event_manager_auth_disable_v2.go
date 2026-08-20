@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerAuthDisableV2ApiService EventManagerAuthDisableV2Api service
@@ -25,15 +26,15 @@ type EventManagerAuthDisableV2ApiService service
 type ApiOpenApi2EventManagerAuthDisablePostRequest struct {
 	ctx                              context.Context
 	ApiService                       *EventManagerAuthDisableV2ApiService
-	eventManagerAuthDisableV2Request *EventManagerAuthDisableV2Request
+	eventManagerAuthDisableV2Request *models.EventManagerAuthDisableV2Request
 }
 
-func (r *ApiOpenApi2EventManagerAuthDisablePostRequest) EventManagerAuthDisableV2Request(eventManagerAuthDisableV2Request EventManagerAuthDisableV2Request) *ApiOpenApi2EventManagerAuthDisablePostRequest {
+func (r *ApiOpenApi2EventManagerAuthDisablePostRequest) EventManagerAuthDisableV2Request(eventManagerAuthDisableV2Request models.EventManagerAuthDisableV2Request) *ApiOpenApi2EventManagerAuthDisablePostRequest {
 	r.eventManagerAuthDisableV2Request = &eventManagerAuthDisableV2Request
 	return r
 }
 
-func (r *ApiOpenApi2EventManagerAuthDisablePostRequest) Execute() (*EventManagerAuthDisableV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EventManagerAuthDisablePostRequest) Execute() (*models.EventManagerAuthDisableV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EventManagerAuthDisableV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return EventManagerAuthDisableV2Response
-func (a *EventManagerAuthDisableV2ApiService) postExecute(r *ApiOpenApi2EventManagerAuthDisablePostRequest) (*EventManagerAuthDisableV2Response, *http.Response, error) {
+func (a *EventManagerAuthDisableV2ApiService) postExecute(r *ApiOpenApi2EventManagerAuthDisablePostRequest) (*models.EventManagerAuthDisableV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerAuthDisableV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerAuthDisableV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EventManagerAuthDisableV2ApiService) postExecute(r *ApiOpenApi2EventMan
 	localVarPath := localBasePath + "/open_api/2/event_manager/auth/disable/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

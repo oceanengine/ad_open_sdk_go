@@ -32,7 +32,6 @@ import (
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
 	"github.com/oceanengine/ad_open_sdk_go/models"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 var (
@@ -3888,7 +3887,7 @@ func (c *APIClient) GetConfig() *config.Configuration {
 	return c.Cfg
 }
 
-type FormFile FormFileInfo
+type FormFile models.FormFileInfo
 
 // prepareRequest build the request
 func (c *APIClient) prepareRequest(
@@ -3898,7 +3897,7 @@ func (c *APIClient) prepareRequest(
 	headerParams map[string]string,
 	queryParams url.Values,
 	formParams url.Values,
-	formFiles map[string]*FormFileInfo) (localVarRequest *http.Request, err error) {
+	formFiles map[string]*models.FormFileInfo) (localVarRequest *http.Request, err error) {
 
 	var body *bytes.Buffer
 

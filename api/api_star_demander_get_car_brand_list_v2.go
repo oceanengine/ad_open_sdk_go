@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemanderGetCarBrandListV2ApiService StarDemanderGetCarBrandListV2Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApi2StarDemanderGetCarBrandListGetRequest) StarId(starId int64) 
 	return r
 }
 
-func (r *ApiOpenApi2StarDemanderGetCarBrandListGetRequest) Execute() (*StarDemanderGetCarBrandListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemanderGetCarBrandListGetRequest) Execute() (*models.StarDemanderGetCarBrandListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarDemanderGetCarBrandListV2ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return StarDemanderGetCarBrandListV2Response
-func (a *StarDemanderGetCarBrandListV2ApiService) getExecute(r *ApiOpenApi2StarDemanderGetCarBrandListGetRequest) (*StarDemanderGetCarBrandListV2Response, *http.Response, error) {
+func (a *StarDemanderGetCarBrandListV2ApiService) getExecute(r *ApiOpenApi2StarDemanderGetCarBrandListGetRequest) (*models.StarDemanderGetCarBrandListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemanderGetCarBrandListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemanderGetCarBrandListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarDemanderGetCarBrandListV2ApiService) getExecute(r *ApiOpenApi2StarD
 	localVarPath := localBasePath + "/open_api/2/star/demander/get_car_brand_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

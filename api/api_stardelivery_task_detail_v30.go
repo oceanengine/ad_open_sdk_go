@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StardeliveryTaskDetailV30ApiService StardeliveryTaskDetailV30Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30StardeliveryTaskDetailGetRequest) StarTaskId(starTaskId in
 	return r
 }
 
-func (r *ApiOpenApiV30StardeliveryTaskDetailGetRequest) Execute() (*StardeliveryTaskDetailV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30StardeliveryTaskDetailGetRequest) Execute() (*models.StardeliveryTaskDetailV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *StardeliveryTaskDetailV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return StardeliveryTaskDetailV30Response
-func (a *StardeliveryTaskDetailV30ApiService) getExecute(r *ApiOpenApiV30StardeliveryTaskDetailGetRequest) (*StardeliveryTaskDetailV30Response, *http.Response, error) {
+func (a *StardeliveryTaskDetailV30ApiService) getExecute(r *ApiOpenApiV30StardeliveryTaskDetailGetRequest) (*models.StardeliveryTaskDetailV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StardeliveryTaskDetailV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StardeliveryTaskDetailV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *StardeliveryTaskDetailV30ApiService) getExecute(r *ApiOpenApiV30Stardel
 	localVarPath := localBasePath + "/open_api/v3.0/stardelivery/task/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

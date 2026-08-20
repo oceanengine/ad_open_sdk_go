@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportReportLiveRoomAudiencePortraitGetV30ApiService ReportReportLiveRoomAudiencePortraitGetV30Api service
@@ -26,13 +27,13 @@ type ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ReportReportLiveRoomAudiencePortraitGetV30ApiService
 	advertiserId *int64
-	dimension    *ReportReportLiveRoomAudiencePortraitGetV30Dimension
-	filtering    *ReportReportLiveRoomAudiencePortraitGetV30Filtering
+	dimension    *models.ReportReportLiveRoomAudiencePortraitGetV30Dimension
+	filtering    *models.ReportReportLiveRoomAudiencePortraitGetV30Filtering
 	startTime    *string
 	endTime      *string
 	fields       *[]string
 	orderField   *string
-	orderType    *ReportReportLiveRoomAudiencePortraitGetV30OrderType
+	orderType    *models.ReportReportLiveRoomAudiencePortraitGetV30OrderType
 	page         *int64
 	pageSize     *int64
 }
@@ -42,12 +43,12 @@ func (r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) Adverti
 	return r
 }
 
-func (r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) Dimension(dimension ReportReportLiveRoomAudiencePortraitGetV30Dimension) *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest {
+func (r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) Dimension(dimension models.ReportReportLiveRoomAudiencePortraitGetV30Dimension) *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest {
 	r.dimension = &dimension
 	return r
 }
 
-func (r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) Filtering(filtering ReportReportLiveRoomAudiencePortraitGetV30Filtering) *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest {
+func (r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) Filtering(filtering models.ReportReportLiveRoomAudiencePortraitGetV30Filtering) *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -72,7 +73,7 @@ func (r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) OrderFi
 	return r
 }
 
-func (r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) OrderType(orderType ReportReportLiveRoomAudiencePortraitGetV30OrderType) *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest {
+func (r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) OrderType(orderType models.ReportReportLiveRoomAudiencePortraitGetV30OrderType) *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -87,7 +88,7 @@ func (r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) PageSiz
 	return r
 }
 
-func (r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) Execute() (*ReportReportLiveRoomAudiencePortraitGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) Execute() (*models.ReportReportLiveRoomAudiencePortraitGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -121,12 +122,12 @@ func (a *ReportReportLiveRoomAudiencePortraitGetV30ApiService) Get(ctx context.C
 // Execute executes the request
 //
 //	@return ReportReportLiveRoomAudiencePortraitGetV30Response
-func (a *ReportReportLiveRoomAudiencePortraitGetV30ApiService) getExecute(r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) (*ReportReportLiveRoomAudiencePortraitGetV30Response, *http.Response, error) {
+func (a *ReportReportLiveRoomAudiencePortraitGetV30ApiService) getExecute(r *ApiOpenApiV30ReportReportLiveRoomAudiencePortraitGetGetRequest) (*models.ReportReportLiveRoomAudiencePortraitGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportReportLiveRoomAudiencePortraitGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportReportLiveRoomAudiencePortraitGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -136,7 +137,7 @@ func (a *ReportReportLiveRoomAudiencePortraitGetV30ApiService) getExecute(r *Api
 	localVarPath := localBasePath + "/open_api/v3.0/report/report/live_room/audience/portrait/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

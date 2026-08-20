@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAdLearingStatusGetV10ApiService QianchuanAdLearingStatusGetV10Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV10QianchuanAdLearingStatusGetGetRequest) AdIds(adIds []int64
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAdLearingStatusGetGetRequest) Execute() (*QianchuanAdLearingStatusGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAdLearingStatusGetGetRequest) Execute() (*models.QianchuanAdLearingStatusGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *QianchuanAdLearingStatusGetV10ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return QianchuanAdLearingStatusGetV10Response
-func (a *QianchuanAdLearingStatusGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAdLearingStatusGetGetRequest) (*QianchuanAdLearingStatusGetV10Response, *http.Response, error) {
+func (a *QianchuanAdLearingStatusGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAdLearingStatusGetGetRequest) (*models.QianchuanAdLearingStatusGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAdLearingStatusGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAdLearingStatusGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *QianchuanAdLearingStatusGetV10ApiService) getExecute(r *ApiOpenApiV10Qi
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/ad/learing_status/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

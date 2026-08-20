@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsRtaStatusUpdateV2ApiService ToolsRtaStatusUpdateV2Api service
@@ -25,15 +26,15 @@ type ToolsRtaStatusUpdateV2ApiService service
 type ApiOpenApi2ToolsRtaStatusUpdatePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *ToolsRtaStatusUpdateV2ApiService
-	toolsRtaStatusUpdateV2Request *ToolsRtaStatusUpdateV2Request
+	toolsRtaStatusUpdateV2Request *models.ToolsRtaStatusUpdateV2Request
 }
 
-func (r *ApiOpenApi2ToolsRtaStatusUpdatePostRequest) ToolsRtaStatusUpdateV2Request(toolsRtaStatusUpdateV2Request ToolsRtaStatusUpdateV2Request) *ApiOpenApi2ToolsRtaStatusUpdatePostRequest {
+func (r *ApiOpenApi2ToolsRtaStatusUpdatePostRequest) ToolsRtaStatusUpdateV2Request(toolsRtaStatusUpdateV2Request models.ToolsRtaStatusUpdateV2Request) *ApiOpenApi2ToolsRtaStatusUpdatePostRequest {
 	r.toolsRtaStatusUpdateV2Request = &toolsRtaStatusUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsRtaStatusUpdatePostRequest) Execute() (*ToolsRtaStatusUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsRtaStatusUpdatePostRequest) Execute() (*models.ToolsRtaStatusUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsRtaStatusUpdateV2ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsRtaStatusUpdateV2Response
-func (a *ToolsRtaStatusUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsRtaStatusUpdatePostRequest) (*ToolsRtaStatusUpdateV2Response, *http.Response, error) {
+func (a *ToolsRtaStatusUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsRtaStatusUpdatePostRequest) (*models.ToolsRtaStatusUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsRtaStatusUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsRtaStatusUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsRtaStatusUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsRtaSta
 	localVarPath := localBasePath + "/open_api/2/tools/rta/status_update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

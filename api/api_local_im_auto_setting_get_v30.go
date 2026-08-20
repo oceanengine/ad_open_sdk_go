@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalImAutoSettingGetV30ApiService LocalImAutoSettingGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30LocalImAutoSettingGetGetRequest struct {
 	ctx               context.Context
 	ApiService        *LocalImAutoSettingGetV30ApiService
 	localAccountId    *int64
-	sourceName        *LocalImAutoSettingGetV30SourceName
+	sourceName        *models.LocalImAutoSettingGetV30SourceName
 	lifeAccountIdList *[]int64
 }
 
@@ -36,7 +37,7 @@ func (r *ApiOpenApiV30LocalImAutoSettingGetGetRequest) LocalAccountId(localAccou
 }
 
 // 请求来源
-func (r *ApiOpenApiV30LocalImAutoSettingGetGetRequest) SourceName(sourceName LocalImAutoSettingGetV30SourceName) *ApiOpenApiV30LocalImAutoSettingGetGetRequest {
+func (r *ApiOpenApiV30LocalImAutoSettingGetGetRequest) SourceName(sourceName models.LocalImAutoSettingGetV30SourceName) *ApiOpenApiV30LocalImAutoSettingGetGetRequest {
 	r.sourceName = &sourceName
 	return r
 }
@@ -47,7 +48,7 @@ func (r *ApiOpenApiV30LocalImAutoSettingGetGetRequest) LifeAccountIdList(lifeAcc
 	return r
 }
 
-func (r *ApiOpenApiV30LocalImAutoSettingGetGetRequest) Execute() (*LocalImAutoSettingGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalImAutoSettingGetGetRequest) Execute() (*models.LocalImAutoSettingGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -81,12 +82,12 @@ func (a *LocalImAutoSettingGetV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return LocalImAutoSettingGetV30Response
-func (a *LocalImAutoSettingGetV30ApiService) getExecute(r *ApiOpenApiV30LocalImAutoSettingGetGetRequest) (*LocalImAutoSettingGetV30Response, *http.Response, error) {
+func (a *LocalImAutoSettingGetV30ApiService) getExecute(r *ApiOpenApiV30LocalImAutoSettingGetGetRequest) (*models.LocalImAutoSettingGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalImAutoSettingGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalImAutoSettingGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -96,7 +97,7 @@ func (a *LocalImAutoSettingGetV30ApiService) getExecute(r *ApiOpenApiV30LocalImA
 	localVarPath := localBasePath + "/open_api/v3.0/local/im_auto_setting/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

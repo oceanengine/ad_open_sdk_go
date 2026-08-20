@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferQueryCanTransferBalanceV30ApiService CgTransferQueryCanTransferBalanceV30Api service
@@ -29,7 +30,7 @@ type ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest struct {
 	agentId             *int64
 	accountId           *int64
 	targetAccountIdList *[]int64
-	transferDirection   *CgTransferQueryCanTransferBalanceV30TransferDirection
+	transferDirection   *models.CgTransferQueryCanTransferBalanceV30TransferDirection
 }
 
 // 请求id，推荐uuid，方便请求链路对齐
@@ -57,12 +58,12 @@ func (r *ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest) TargetAccount
 }
 
 // 转账方向，以目标账户视角确定
-func (r *ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest) TransferDirection(transferDirection CgTransferQueryCanTransferBalanceV30TransferDirection) *ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest {
+func (r *ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest) TransferDirection(transferDirection models.CgTransferQueryCanTransferBalanceV30TransferDirection) *ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest {
 	r.transferDirection = &transferDirection
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest) Execute() (*CgTransferQueryCanTransferBalanceV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest) Execute() (*models.CgTransferQueryCanTransferBalanceV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *CgTransferQueryCanTransferBalanceV30ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return CgTransferQueryCanTransferBalanceV30Response
-func (a *CgTransferQueryCanTransferBalanceV30ApiService) getExecute(r *ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest) (*CgTransferQueryCanTransferBalanceV30Response, *http.Response, error) {
+func (a *CgTransferQueryCanTransferBalanceV30ApiService) getExecute(r *ApiOpenApiV30CgTransferQueryCanTransferBalanceGetRequest) (*models.CgTransferQueryCanTransferBalanceV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferQueryCanTransferBalanceV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferQueryCanTransferBalanceV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *CgTransferQueryCanTransferBalanceV30ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/query_can_transfer_balance/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.bizRequestNo == nil {

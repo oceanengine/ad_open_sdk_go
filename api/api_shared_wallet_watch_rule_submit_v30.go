@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SharedWalletWatchRuleSubmitV30ApiService SharedWalletWatchRuleSubmitV30Api service
@@ -25,15 +26,15 @@ type SharedWalletWatchRuleSubmitV30ApiService service
 type ApiOpenApiV30SharedWalletWatchRuleSubmitPostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *SharedWalletWatchRuleSubmitV30ApiService
-	sharedWalletWatchRuleSubmitV30Request *SharedWalletWatchRuleSubmitV30Request
+	sharedWalletWatchRuleSubmitV30Request *models.SharedWalletWatchRuleSubmitV30Request
 }
 
-func (r *ApiOpenApiV30SharedWalletWatchRuleSubmitPostRequest) SharedWalletWatchRuleSubmitV30Request(sharedWalletWatchRuleSubmitV30Request SharedWalletWatchRuleSubmitV30Request) *ApiOpenApiV30SharedWalletWatchRuleSubmitPostRequest {
+func (r *ApiOpenApiV30SharedWalletWatchRuleSubmitPostRequest) SharedWalletWatchRuleSubmitV30Request(sharedWalletWatchRuleSubmitV30Request models.SharedWalletWatchRuleSubmitV30Request) *ApiOpenApiV30SharedWalletWatchRuleSubmitPostRequest {
 	r.sharedWalletWatchRuleSubmitV30Request = &sharedWalletWatchRuleSubmitV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30SharedWalletWatchRuleSubmitPostRequest) Execute() (*SharedWalletWatchRuleSubmitV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SharedWalletWatchRuleSubmitPostRequest) Execute() (*models.SharedWalletWatchRuleSubmitV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *SharedWalletWatchRuleSubmitV30ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return SharedWalletWatchRuleSubmitV30Response
-func (a *SharedWalletWatchRuleSubmitV30ApiService) postExecute(r *ApiOpenApiV30SharedWalletWatchRuleSubmitPostRequest) (*SharedWalletWatchRuleSubmitV30Response, *http.Response, error) {
+func (a *SharedWalletWatchRuleSubmitV30ApiService) postExecute(r *ApiOpenApiV30SharedWalletWatchRuleSubmitPostRequest) (*models.SharedWalletWatchRuleSubmitV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SharedWalletWatchRuleSubmitV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SharedWalletWatchRuleSubmitV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *SharedWalletWatchRuleSubmitV30ApiService) postExecute(r *ApiOpenApiV30S
 	localVarPath := localBasePath + "/open_api/v3.0/shared_wallet/watch_rule/submit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CreativeStrategyListV2ApiService CreativeStrategyListV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2CreativeStrategyListGetRequest struct {
 	ctx           context.Context
 	ApiService    *CreativeStrategyListV2ApiService
 	advertiserId  *int64
-	strategyTypes *[]*CreativeStrategyListV2StrategyTypes
+	strategyTypes *[]*models.CreativeStrategyListV2StrategyTypes
 	page          *int32
 	pageSize      *int32
 }
@@ -37,7 +38,7 @@ func (r *ApiOpenApi2CreativeStrategyListGetRequest) AdvertiserId(advertiserId in
 }
 
 // 策略类型(支持多选)
-func (r *ApiOpenApi2CreativeStrategyListGetRequest) StrategyTypes(strategyTypes []*CreativeStrategyListV2StrategyTypes) *ApiOpenApi2CreativeStrategyListGetRequest {
+func (r *ApiOpenApi2CreativeStrategyListGetRequest) StrategyTypes(strategyTypes []*models.CreativeStrategyListV2StrategyTypes) *ApiOpenApi2CreativeStrategyListGetRequest {
 	r.strategyTypes = &strategyTypes
 	return r
 }
@@ -54,7 +55,7 @@ func (r *ApiOpenApi2CreativeStrategyListGetRequest) PageSize(pageSize int32) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2CreativeStrategyListGetRequest) Execute() (*CreativeStrategyListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CreativeStrategyListGetRequest) Execute() (*models.CreativeStrategyListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -88,12 +89,12 @@ func (a *CreativeStrategyListV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return CreativeStrategyListV2Response
-func (a *CreativeStrategyListV2ApiService) getExecute(r *ApiOpenApi2CreativeStrategyListGetRequest) (*CreativeStrategyListV2Response, *http.Response, error) {
+func (a *CreativeStrategyListV2ApiService) getExecute(r *ApiOpenApi2CreativeStrategyListGetRequest) (*models.CreativeStrategyListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CreativeStrategyListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CreativeStrategyListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -103,7 +104,7 @@ func (a *CreativeStrategyListV2ApiService) getExecute(r *ApiOpenApi2CreativeStra
 	localVarPath := localBasePath + "/open_api/2/creative/strategy/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

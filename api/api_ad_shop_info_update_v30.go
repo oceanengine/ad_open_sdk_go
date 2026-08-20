@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdShopInfoUpdateV30ApiService AdShopInfoUpdateV30Api service
@@ -25,15 +26,15 @@ type AdShopInfoUpdateV30ApiService service
 type ApiOpenApiV30AdShopInfoUpdatePostRequest struct {
 	ctx                        context.Context
 	ApiService                 *AdShopInfoUpdateV30ApiService
-	adShopInfoUpdateV30Request *AdShopInfoUpdateV30Request
+	adShopInfoUpdateV30Request *models.AdShopInfoUpdateV30Request
 }
 
-func (r *ApiOpenApiV30AdShopInfoUpdatePostRequest) AdShopInfoUpdateV30Request(adShopInfoUpdateV30Request AdShopInfoUpdateV30Request) *ApiOpenApiV30AdShopInfoUpdatePostRequest {
+func (r *ApiOpenApiV30AdShopInfoUpdatePostRequest) AdShopInfoUpdateV30Request(adShopInfoUpdateV30Request models.AdShopInfoUpdateV30Request) *ApiOpenApiV30AdShopInfoUpdatePostRequest {
 	r.adShopInfoUpdateV30Request = &adShopInfoUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30AdShopInfoUpdatePostRequest) Execute() (*AdShopInfoUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AdShopInfoUpdatePostRequest) Execute() (*models.AdShopInfoUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AdShopInfoUpdateV30ApiService) Post(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return AdShopInfoUpdateV30Response
-func (a *AdShopInfoUpdateV30ApiService) postExecute(r *ApiOpenApiV30AdShopInfoUpdatePostRequest) (*AdShopInfoUpdateV30Response, *http.Response, error) {
+func (a *AdShopInfoUpdateV30ApiService) postExecute(r *ApiOpenApiV30AdShopInfoUpdatePostRequest) (*models.AdShopInfoUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdShopInfoUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdShopInfoUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AdShopInfoUpdateV30ApiService) postExecute(r *ApiOpenApiV30AdShopInfoUp
 	localVarPath := localBasePath + "/open_api/v3.0/ad/shop_info/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoMaterialClearTaskCreateV2ApiService FileVideoMaterialClearTaskCreateV2Api service
@@ -25,15 +26,15 @@ type FileVideoMaterialClearTaskCreateV2ApiService service
 type ApiOpenApi2FileVideoMaterialClearTaskCreatePostRequest struct {
 	ctx                                       context.Context
 	ApiService                                *FileVideoMaterialClearTaskCreateV2ApiService
-	fileVideoMaterialClearTaskCreateV2Request *FileVideoMaterialClearTaskCreateV2Request
+	fileVideoMaterialClearTaskCreateV2Request *models.FileVideoMaterialClearTaskCreateV2Request
 }
 
-func (r *ApiOpenApi2FileVideoMaterialClearTaskCreatePostRequest) FileVideoMaterialClearTaskCreateV2Request(fileVideoMaterialClearTaskCreateV2Request FileVideoMaterialClearTaskCreateV2Request) *ApiOpenApi2FileVideoMaterialClearTaskCreatePostRequest {
+func (r *ApiOpenApi2FileVideoMaterialClearTaskCreatePostRequest) FileVideoMaterialClearTaskCreateV2Request(fileVideoMaterialClearTaskCreateV2Request models.FileVideoMaterialClearTaskCreateV2Request) *ApiOpenApi2FileVideoMaterialClearTaskCreatePostRequest {
 	r.fileVideoMaterialClearTaskCreateV2Request = &fileVideoMaterialClearTaskCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoMaterialClearTaskCreatePostRequest) Execute() (*FileVideoMaterialClearTaskCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoMaterialClearTaskCreatePostRequest) Execute() (*models.FileVideoMaterialClearTaskCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *FileVideoMaterialClearTaskCreateV2ApiService) Post(ctx context.Context)
 // Execute executes the request
 //
 //	@return FileVideoMaterialClearTaskCreateV2Response
-func (a *FileVideoMaterialClearTaskCreateV2ApiService) postExecute(r *ApiOpenApi2FileVideoMaterialClearTaskCreatePostRequest) (*FileVideoMaterialClearTaskCreateV2Response, *http.Response, error) {
+func (a *FileVideoMaterialClearTaskCreateV2ApiService) postExecute(r *ApiOpenApi2FileVideoMaterialClearTaskCreatePostRequest) (*models.FileVideoMaterialClearTaskCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoMaterialClearTaskCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoMaterialClearTaskCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *FileVideoMaterialClearTaskCreateV2ApiService) postExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/2/file/video/material/clear_task/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

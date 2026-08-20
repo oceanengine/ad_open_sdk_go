@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsSiteTemplateGetV2ApiService ToolsSiteTemplateGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsSiteTemplateGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsSiteTemplateGetV2ApiService
 	advertiserId *int64
-	filter       *ToolsSiteTemplateGetV2Filter
+	filter       *models.ToolsSiteTemplateGetV2Filter
 	page         *int64
 	pageSize     *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApi2ToolsSiteTemplateGetGetRequest) AdvertiserId(advertiserId in
 }
 
 // 过滤条件
-func (r *ApiOpenApi2ToolsSiteTemplateGetGetRequest) Filter(filter ToolsSiteTemplateGetV2Filter) *ApiOpenApi2ToolsSiteTemplateGetGetRequest {
+func (r *ApiOpenApi2ToolsSiteTemplateGetGetRequest) Filter(filter models.ToolsSiteTemplateGetV2Filter) *ApiOpenApi2ToolsSiteTemplateGetGetRequest {
 	r.filter = &filter
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2ToolsSiteTemplateGetGetRequest) PageSize(pageSize int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2ToolsSiteTemplateGetGetRequest) Execute() (*ToolsSiteTemplateGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsSiteTemplateGetGetRequest) Execute() (*models.ToolsSiteTemplateGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ToolsSiteTemplateGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return ToolsSiteTemplateGetV2Response
-func (a *ToolsSiteTemplateGetV2ApiService) getExecute(r *ApiOpenApi2ToolsSiteTemplateGetGetRequest) (*ToolsSiteTemplateGetV2Response, *http.Response, error) {
+func (a *ToolsSiteTemplateGetV2ApiService) getExecute(r *ApiOpenApi2ToolsSiteTemplateGetGetRequest) (*models.ToolsSiteTemplateGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsSiteTemplateGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsSiteTemplateGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ToolsSiteTemplateGetV2ApiService) getExecute(r *ApiOpenApi2ToolsSiteTem
 	localVarPath := localBasePath + "/open_api/2/tools/site_template/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemandCreateChallengeV2ApiService StarDemandCreateChallengeV2Api service
@@ -25,15 +26,15 @@ type StarDemandCreateChallengeV2ApiService service
 type ApiOpenApi2StarDemandCreateChallengePostRequest struct {
 	ctx                                context.Context
 	ApiService                         *StarDemandCreateChallengeV2ApiService
-	starDemandCreateChallengeV2Request *StarDemandCreateChallengeV2Request
+	starDemandCreateChallengeV2Request *models.StarDemandCreateChallengeV2Request
 }
 
-func (r *ApiOpenApi2StarDemandCreateChallengePostRequest) StarDemandCreateChallengeV2Request(starDemandCreateChallengeV2Request StarDemandCreateChallengeV2Request) *ApiOpenApi2StarDemandCreateChallengePostRequest {
+func (r *ApiOpenApi2StarDemandCreateChallengePostRequest) StarDemandCreateChallengeV2Request(starDemandCreateChallengeV2Request models.StarDemandCreateChallengeV2Request) *ApiOpenApi2StarDemandCreateChallengePostRequest {
 	r.starDemandCreateChallengeV2Request = &starDemandCreateChallengeV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarDemandCreateChallengePostRequest) Execute() (*StarDemandCreateChallengeV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemandCreateChallengePostRequest) Execute() (*models.StarDemandCreateChallengeV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarDemandCreateChallengeV2ApiService) Post(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return StarDemandCreateChallengeV2Response
-func (a *StarDemandCreateChallengeV2ApiService) postExecute(r *ApiOpenApi2StarDemandCreateChallengePostRequest) (*StarDemandCreateChallengeV2Response, *http.Response, error) {
+func (a *StarDemandCreateChallengeV2ApiService) postExecute(r *ApiOpenApi2StarDemandCreateChallengePostRequest) (*models.StarDemandCreateChallengeV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemandCreateChallengeV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemandCreateChallengeV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarDemandCreateChallengeV2ApiService) postExecute(r *ApiOpenApi2StarDe
 	localVarPath := localBasePath + "/open_api/2/star/demand/create_challenge/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

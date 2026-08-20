@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarOrderRejectResourceV2ApiService StarOrderRejectResourceV2Api service
@@ -25,15 +26,15 @@ type StarOrderRejectResourceV2ApiService service
 type ApiOpenApi2StarOrderRejectResourcePostRequest struct {
 	ctx                              context.Context
 	ApiService                       *StarOrderRejectResourceV2ApiService
-	starOrderRejectResourceV2Request *StarOrderRejectResourceV2Request
+	starOrderRejectResourceV2Request *models.StarOrderRejectResourceV2Request
 }
 
-func (r *ApiOpenApi2StarOrderRejectResourcePostRequest) StarOrderRejectResourceV2Request(starOrderRejectResourceV2Request StarOrderRejectResourceV2Request) *ApiOpenApi2StarOrderRejectResourcePostRequest {
+func (r *ApiOpenApi2StarOrderRejectResourcePostRequest) StarOrderRejectResourceV2Request(starOrderRejectResourceV2Request models.StarOrderRejectResourceV2Request) *ApiOpenApi2StarOrderRejectResourcePostRequest {
 	r.starOrderRejectResourceV2Request = &starOrderRejectResourceV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarOrderRejectResourcePostRequest) Execute() (*StarOrderRejectResourceV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarOrderRejectResourcePostRequest) Execute() (*models.StarOrderRejectResourceV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarOrderRejectResourceV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return StarOrderRejectResourceV2Response
-func (a *StarOrderRejectResourceV2ApiService) postExecute(r *ApiOpenApi2StarOrderRejectResourcePostRequest) (*StarOrderRejectResourceV2Response, *http.Response, error) {
+func (a *StarOrderRejectResourceV2ApiService) postExecute(r *ApiOpenApi2StarOrderRejectResourcePostRequest) (*models.StarOrderRejectResourceV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarOrderRejectResourceV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarOrderRejectResourceV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarOrderRejectResourceV2ApiService) postExecute(r *ApiOpenApi2StarOrde
 	localVarPath := localBasePath + "/open_api/2/star/order/reject_resource/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

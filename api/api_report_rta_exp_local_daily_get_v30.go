@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportRtaExpLocalDailyGetV30ApiService ReportRtaExpLocalDailyGetV30Api service
@@ -31,7 +32,7 @@ type ApiOpenApiV30ReportRtaExpLocalDailyGetGetRequest struct {
 	endDate      *string
 	vid          *int64
 	cusVid       *int64
-	filtering    *ReportRtaExpLocalDailyGetV30Filtering
+	filtering    *models.ReportRtaExpLocalDailyGetV30Filtering
 }
 
 func (r *ApiOpenApiV30ReportRtaExpLocalDailyGetGetRequest) RtaId(rtaId int64) *ApiOpenApiV30ReportRtaExpLocalDailyGetGetRequest {
@@ -64,12 +65,12 @@ func (r *ApiOpenApiV30ReportRtaExpLocalDailyGetGetRequest) CusVid(cusVid int64) 
 	return r
 }
 
-func (r *ApiOpenApiV30ReportRtaExpLocalDailyGetGetRequest) Filtering(filtering ReportRtaExpLocalDailyGetV30Filtering) *ApiOpenApiV30ReportRtaExpLocalDailyGetGetRequest {
+func (r *ApiOpenApiV30ReportRtaExpLocalDailyGetGetRequest) Filtering(filtering models.ReportRtaExpLocalDailyGetV30Filtering) *ApiOpenApiV30ReportRtaExpLocalDailyGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30ReportRtaExpLocalDailyGetGetRequest) Execute() (*ReportRtaExpLocalDailyGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportRtaExpLocalDailyGetGetRequest) Execute() (*models.ReportRtaExpLocalDailyGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *ReportRtaExpLocalDailyGetV30ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ReportRtaExpLocalDailyGetV30Response
-func (a *ReportRtaExpLocalDailyGetV30ApiService) getExecute(r *ApiOpenApiV30ReportRtaExpLocalDailyGetGetRequest) (*ReportRtaExpLocalDailyGetV30Response, *http.Response, error) {
+func (a *ReportRtaExpLocalDailyGetV30ApiService) getExecute(r *ApiOpenApiV30ReportRtaExpLocalDailyGetGetRequest) (*models.ReportRtaExpLocalDailyGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportRtaExpLocalDailyGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportRtaExpLocalDailyGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *ReportRtaExpLocalDailyGetV30ApiService) getExecute(r *ApiOpenApiV30Repo
 	localVarPath := localBasePath + "/open_api/v3.0/report/rta_exp_local_daily/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.rtaId == nil {

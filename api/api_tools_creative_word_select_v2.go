@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsCreativeWordSelectV2ApiService ToolsCreativeWordSelectV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2ToolsCreativeWordSelectGetRequest) CreativeWordIds(creativeW
 	return r
 }
 
-func (r *ApiOpenApi2ToolsCreativeWordSelectGetRequest) Execute() (*ToolsCreativeWordSelectV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsCreativeWordSelectGetRequest) Execute() (*models.ToolsCreativeWordSelectV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ToolsCreativeWordSelectV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return ToolsCreativeWordSelectV2Response
-func (a *ToolsCreativeWordSelectV2ApiService) getExecute(r *ApiOpenApi2ToolsCreativeWordSelectGetRequest) (*ToolsCreativeWordSelectV2Response, *http.Response, error) {
+func (a *ToolsCreativeWordSelectV2ApiService) getExecute(r *ApiOpenApi2ToolsCreativeWordSelectGetRequest) (*models.ToolsCreativeWordSelectV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsCreativeWordSelectV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsCreativeWordSelectV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ToolsCreativeWordSelectV2ApiService) getExecute(r *ApiOpenApi2ToolsCrea
 	localVarPath := localBasePath + "/open_api/2/tools/creative_word/select/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

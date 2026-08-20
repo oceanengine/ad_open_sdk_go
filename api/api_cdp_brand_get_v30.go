@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CdpBrandGetV30ApiService CdpBrandGetV30Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApiV30CdpBrandGetGetRequest) AdvertiserId(advertiserId int64) *A
 	return r
 }
 
-func (r *ApiOpenApiV30CdpBrandGetGetRequest) Execute() (*CdpBrandGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CdpBrandGetGetRequest) Execute() (*models.CdpBrandGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *CdpBrandGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30CdpBra
 // Execute executes the request
 //
 //	@return CdpBrandGetV30Response
-func (a *CdpBrandGetV30ApiService) getExecute(r *ApiOpenApiV30CdpBrandGetGetRequest) (*CdpBrandGetV30Response, *http.Response, error) {
+func (a *CdpBrandGetV30ApiService) getExecute(r *ApiOpenApiV30CdpBrandGetGetRequest) (*models.CdpBrandGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CdpBrandGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CdpBrandGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *CdpBrandGetV30ApiService) getExecute(r *ApiOpenApiV30CdpBrandGetGetRequ
 	localVarPath := localBasePath + "/open_api/v3.0/cdp/brand/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

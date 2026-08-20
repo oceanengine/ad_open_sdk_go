@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsVideoCoverSuggestV2ApiService ToolsVideoCoverSuggestV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2ToolsVideoCoverSuggestGetRequest) VideoId(videoId string) *A
 	return r
 }
 
-func (r *ApiOpenApi2ToolsVideoCoverSuggestGetRequest) Execute() (*ToolsVideoCoverSuggestV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsVideoCoverSuggestGetRequest) Execute() (*models.ToolsVideoCoverSuggestV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ToolsVideoCoverSuggestV2ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsVideoCoverSuggestV2Response
-func (a *ToolsVideoCoverSuggestV2ApiService) getExecute(r *ApiOpenApi2ToolsVideoCoverSuggestGetRequest) (*ToolsVideoCoverSuggestV2Response, *http.Response, error) {
+func (a *ToolsVideoCoverSuggestV2ApiService) getExecute(r *ApiOpenApi2ToolsVideoCoverSuggestGetRequest) (*models.ToolsVideoCoverSuggestV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsVideoCoverSuggestV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsVideoCoverSuggestV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ToolsVideoCoverSuggestV2ApiService) getExecute(r *ApiOpenApi2ToolsVideo
 	localVarPath := localBasePath + "/open_api/2/tools/video_cover/suggest/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

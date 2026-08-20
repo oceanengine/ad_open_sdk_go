@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // PromotionNewcustomerCreateV30ApiService PromotionNewcustomerCreateV30Api service
@@ -25,15 +26,15 @@ type PromotionNewcustomerCreateV30ApiService service
 type ApiOpenApiV30PromotionNewcustomerCreatePostRequest struct {
 	ctx                                  context.Context
 	ApiService                           *PromotionNewcustomerCreateV30ApiService
-	promotionNewcustomerCreateV30Request *PromotionNewcustomerCreateV30Request
+	promotionNewcustomerCreateV30Request *models.PromotionNewcustomerCreateV30Request
 }
 
-func (r *ApiOpenApiV30PromotionNewcustomerCreatePostRequest) PromotionNewcustomerCreateV30Request(promotionNewcustomerCreateV30Request PromotionNewcustomerCreateV30Request) *ApiOpenApiV30PromotionNewcustomerCreatePostRequest {
+func (r *ApiOpenApiV30PromotionNewcustomerCreatePostRequest) PromotionNewcustomerCreateV30Request(promotionNewcustomerCreateV30Request models.PromotionNewcustomerCreateV30Request) *ApiOpenApiV30PromotionNewcustomerCreatePostRequest {
 	r.promotionNewcustomerCreateV30Request = &promotionNewcustomerCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30PromotionNewcustomerCreatePostRequest) Execute() (*PromotionNewcustomerCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30PromotionNewcustomerCreatePostRequest) Execute() (*models.PromotionNewcustomerCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *PromotionNewcustomerCreateV30ApiService) Post(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return PromotionNewcustomerCreateV30Response
-func (a *PromotionNewcustomerCreateV30ApiService) postExecute(r *ApiOpenApiV30PromotionNewcustomerCreatePostRequest) (*PromotionNewcustomerCreateV30Response, *http.Response, error) {
+func (a *PromotionNewcustomerCreateV30ApiService) postExecute(r *ApiOpenApiV30PromotionNewcustomerCreatePostRequest) (*models.PromotionNewcustomerCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *PromotionNewcustomerCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.PromotionNewcustomerCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *PromotionNewcustomerCreateV30ApiService) postExecute(r *ApiOpenApiV30Pr
 	localVarPath := localBasePath + "/open_api/v3.0/promotion_newcustomer/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

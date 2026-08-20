@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CarouselAdGetV2ApiService CarouselAdGetV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2CarouselAdGetGetRequest) CarouselIds(carouselIds []int64) *A
 	return r
 }
 
-func (r *ApiOpenApi2CarouselAdGetGetRequest) Execute() (*CarouselAdGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CarouselAdGetGetRequest) Execute() (*models.CarouselAdGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *CarouselAdGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Carouse
 // Execute executes the request
 //
 //	@return CarouselAdGetV2Response
-func (a *CarouselAdGetV2ApiService) getExecute(r *ApiOpenApi2CarouselAdGetGetRequest) (*CarouselAdGetV2Response, *http.Response, error) {
+func (a *CarouselAdGetV2ApiService) getExecute(r *ApiOpenApi2CarouselAdGetGetRequest) (*models.CarouselAdGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CarouselAdGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CarouselAdGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *CarouselAdGetV2ApiService) getExecute(r *ApiOpenApi2CarouselAdGetGetReq
 	localVarPath := localBasePath + "/open_api/2/carousel/ad/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

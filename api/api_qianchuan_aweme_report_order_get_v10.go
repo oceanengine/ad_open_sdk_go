@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeReportOrderGetV10ApiService QianchuanAwemeReportOrderGetV10Api service
@@ -28,12 +29,12 @@ type ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest struct {
 	advertiserId *int64
 	startDate    *string
 	endDate      *string
-	filtering    *QianchuanAwemeReportOrderGetV10Filtering
+	filtering    *models.QianchuanAwemeReportOrderGetV10Filtering
 	fields       *[]string
 	orderField   *string
-	orderType    *QianchuanAwemeReportOrderGetV10OrderType
+	orderType    *models.QianchuanAwemeReportOrderGetV10OrderType
 	page         *int64
-	pageSize     *QianchuanAwemeReportOrderGetV10PageSize
+	pageSize     *models.QianchuanAwemeReportOrderGetV10PageSize
 }
 
 func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest {
@@ -53,7 +54,7 @@ func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) EndDate(endDate st
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) Filtering(filtering QianchuanAwemeReportOrderGetV10Filtering) *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) Filtering(filtering models.QianchuanAwemeReportOrderGetV10Filtering) *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -71,7 +72,7 @@ func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) OrderField(orderFi
 }
 
 // 排序方式，允许值： ASC 升序（默认）、DESC 降序
-func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) OrderType(orderType QianchuanAwemeReportOrderGetV10OrderType) *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) OrderType(orderType models.QianchuanAwemeReportOrderGetV10OrderType) *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -83,12 +84,12 @@ func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) Page(page int64) *
 }
 
 // 页面大小，允许值：10, 20, 50, 100, 200，默认值：10
-func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) PageSize(pageSize QianchuanAwemeReportOrderGetV10PageSize) *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) PageSize(pageSize models.QianchuanAwemeReportOrderGetV10PageSize) *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest {
 	r.pageSize = &pageSize
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) Execute() (*QianchuanAwemeReportOrderGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) Execute() (*models.QianchuanAwemeReportOrderGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -122,12 +123,12 @@ func (a *QianchuanAwemeReportOrderGetV10ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return QianchuanAwemeReportOrderGetV10Response
-func (a *QianchuanAwemeReportOrderGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) (*QianchuanAwemeReportOrderGetV10Response, *http.Response, error) {
+func (a *QianchuanAwemeReportOrderGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeReportOrderGetGetRequest) (*models.QianchuanAwemeReportOrderGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeReportOrderGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeReportOrderGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -137,7 +138,7 @@ func (a *QianchuanAwemeReportOrderGetV10ApiService) getExecute(r *ApiOpenApiV10Q
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/report/order/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

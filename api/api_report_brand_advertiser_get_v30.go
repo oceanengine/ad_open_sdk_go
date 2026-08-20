@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportBrandAdvertiserGetV30ApiService ReportBrandAdvertiserGetV30Api service
@@ -30,8 +31,8 @@ type ApiOpenApiV30ReportBrandAdvertiserGetGetRequest struct {
 	endTime      *string
 	page         *int64
 	size         *int64
-	landingType  *ReportBrandAdvertiserGetV30LandingType
-	pricingType  *ReportBrandAdvertiserGetV30PricingType
+	landingType  *models.ReportBrandAdvertiserGetV30LandingType
+	pricingType  *models.ReportBrandAdvertiserGetV30PricingType
 }
 
 // 广告主ID
@@ -65,18 +66,18 @@ func (r *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest) Size(size int64) *ApiO
 }
 
 // 推广目的
-func (r *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest) LandingType(landingType ReportBrandAdvertiserGetV30LandingType) *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest {
+func (r *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest) LandingType(landingType models.ReportBrandAdvertiserGetV30LandingType) *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest {
 	r.landingType = &landingType
 	return r
 }
 
 // 计费类型
-func (r *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest) PricingType(pricingType ReportBrandAdvertiserGetV30PricingType) *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest {
+func (r *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest) PricingType(pricingType models.ReportBrandAdvertiserGetV30PricingType) *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest {
 	r.pricingType = &pricingType
 	return r
 }
 
-func (r *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest) Execute() (*ReportBrandAdvertiserGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest) Execute() (*models.ReportBrandAdvertiserGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *ReportBrandAdvertiserGetV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ReportBrandAdvertiserGetV30Response
-func (a *ReportBrandAdvertiserGetV30ApiService) getExecute(r *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest) (*ReportBrandAdvertiserGetV30Response, *http.Response, error) {
+func (a *ReportBrandAdvertiserGetV30ApiService) getExecute(r *ApiOpenApiV30ReportBrandAdvertiserGetGetRequest) (*models.ReportBrandAdvertiserGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportBrandAdvertiserGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportBrandAdvertiserGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *ReportBrandAdvertiserGetV30ApiService) getExecute(r *ApiOpenApiV30Repor
 	localVarPath := localBasePath + "/open_api/v3.0/report/brand/advertiser/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentAdvertiserUpdateV2ApiService AgentAdvertiserUpdateV2Api service
@@ -25,15 +26,15 @@ type AgentAdvertiserUpdateV2ApiService service
 type ApiOpenApi2AgentAdvertiserUpdatePostRequest struct {
 	ctx                            context.Context
 	ApiService                     *AgentAdvertiserUpdateV2ApiService
-	agentAdvertiserUpdateV2Request *AgentAdvertiserUpdateV2Request
+	agentAdvertiserUpdateV2Request *models.AgentAdvertiserUpdateV2Request
 }
 
-func (r *ApiOpenApi2AgentAdvertiserUpdatePostRequest) AgentAdvertiserUpdateV2Request(agentAdvertiserUpdateV2Request AgentAdvertiserUpdateV2Request) *ApiOpenApi2AgentAdvertiserUpdatePostRequest {
+func (r *ApiOpenApi2AgentAdvertiserUpdatePostRequest) AgentAdvertiserUpdateV2Request(agentAdvertiserUpdateV2Request models.AgentAdvertiserUpdateV2Request) *ApiOpenApi2AgentAdvertiserUpdatePostRequest {
 	r.agentAdvertiserUpdateV2Request = &agentAdvertiserUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AgentAdvertiserUpdatePostRequest) Execute() (*AgentAdvertiserUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentAdvertiserUpdatePostRequest) Execute() (*models.AgentAdvertiserUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AgentAdvertiserUpdateV2ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return AgentAdvertiserUpdateV2Response
-func (a *AgentAdvertiserUpdateV2ApiService) postExecute(r *ApiOpenApi2AgentAdvertiserUpdatePostRequest) (*AgentAdvertiserUpdateV2Response, *http.Response, error) {
+func (a *AgentAdvertiserUpdateV2ApiService) postExecute(r *ApiOpenApi2AgentAdvertiserUpdatePostRequest) (*models.AgentAdvertiserUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentAdvertiserUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentAdvertiserUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AgentAdvertiserUpdateV2ApiService) postExecute(r *ApiOpenApi2AgentAdver
 	localVarPath := localBasePath + "/open_api/2/agent/advertiser/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

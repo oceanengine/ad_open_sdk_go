@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsRubeexPlayableListV2ApiService ToolsRubeexPlayableListV2Api service
@@ -29,7 +30,7 @@ type ApiOpenApi2ToolsRubeexPlayableListGetRequest struct {
 	advertiserId *int64
 	page         *int32
 	pageSize     *int32
-	filtering    *ToolsRubeexPlayableListV2Filtering
+	filtering    *models.ToolsRubeexPlayableListV2Filtering
 }
 
 // 互动作品id
@@ -56,12 +57,12 @@ func (r *ApiOpenApi2ToolsRubeexPlayableListGetRequest) PageSize(pageSize int32) 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsRubeexPlayableListGetRequest) Filtering(filtering ToolsRubeexPlayableListV2Filtering) *ApiOpenApi2ToolsRubeexPlayableListGetRequest {
+func (r *ApiOpenApi2ToolsRubeexPlayableListGetRequest) Filtering(filtering models.ToolsRubeexPlayableListV2Filtering) *ApiOpenApi2ToolsRubeexPlayableListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ToolsRubeexPlayableListGetRequest) Execute() (*ToolsRubeexPlayableListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsRubeexPlayableListGetRequest) Execute() (*models.ToolsRubeexPlayableListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -95,12 +96,12 @@ func (a *ToolsRubeexPlayableListV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return ToolsRubeexPlayableListV2Response
-func (a *ToolsRubeexPlayableListV2ApiService) getExecute(r *ApiOpenApi2ToolsRubeexPlayableListGetRequest) (*ToolsRubeexPlayableListV2Response, *http.Response, error) {
+func (a *ToolsRubeexPlayableListV2ApiService) getExecute(r *ApiOpenApi2ToolsRubeexPlayableListGetRequest) (*models.ToolsRubeexPlayableListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsRubeexPlayableListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsRubeexPlayableListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -110,7 +111,7 @@ func (a *ToolsRubeexPlayableListV2ApiService) getExecute(r *ApiOpenApi2ToolsRube
 	localVarPath := localBasePath + "/open_api/2/tools/rubeex_playable/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.projectId == nil {

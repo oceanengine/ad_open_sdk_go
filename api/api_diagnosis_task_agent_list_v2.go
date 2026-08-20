@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DiagnosisTaskAgentListV2ApiService DiagnosisTaskAgentListV2Api service
@@ -26,8 +27,8 @@ type ApiOpenApi2DiagnosisTaskAgentListGetRequest struct {
 	ctx           context.Context
 	ApiService    *DiagnosisTaskAgentListV2ApiService
 	agentId       *int64
-	results       *[]*DiagnosisTaskAgentListV2Results
-	status        *[]*DiagnosisTaskAgentListV2Status
+	results       *[]*models.DiagnosisTaskAgentListV2Results
+	status        *[]*models.DiagnosisTaskAgentListV2Status
 	startTime     *string
 	endTime       *string
 	page          *int32
@@ -43,13 +44,13 @@ func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) AgentId(agentId int64) *Ap
 }
 
 // 根据任务结果筛选 允许值： FIRST_PUBLISH_MATERIAL 首发素材 NON_FIRST_PUBLISH_MATERIAL 非首发素材 AD_HIGH_QUALITY_MATERIAL AD优质素材 NON_AD_HIGH_QUALITY_MATERIAL AD非优质素材 ECP_HIGH_QUALITY_MATERIAL 千川优质素材 NON_ECP_HIGH_QUALITY_MATERIAL 千川非优质素材 INEFFICIENT_MATERIAL 低效素材 NON_INEFFICIENT_MATERIAL 非低效素材
-func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) Results(results []*DiagnosisTaskAgentListV2Results) *ApiOpenApi2DiagnosisTaskAgentListGetRequest {
+func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) Results(results []*models.DiagnosisTaskAgentListV2Results) *ApiOpenApi2DiagnosisTaskAgentListGetRequest {
 	r.results = &results
 	return r
 }
 
 // 根据任务状态筛选，允许值： PENDING SUCCESS FAILED
-func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) Status(status []*DiagnosisTaskAgentListV2Status) *ApiOpenApi2DiagnosisTaskAgentListGetRequest {
+func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) Status(status []*models.DiagnosisTaskAgentListV2Status) *ApiOpenApi2DiagnosisTaskAgentListGetRequest {
 	r.status = &status
 	return r
 }
@@ -90,7 +91,7 @@ func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) EndDateTime(endDateTime st
 	return r
 }
 
-func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) Execute() (*DiagnosisTaskAgentListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) Execute() (*models.DiagnosisTaskAgentListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -124,12 +125,12 @@ func (a *DiagnosisTaskAgentListV2ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return DiagnosisTaskAgentListV2Response
-func (a *DiagnosisTaskAgentListV2ApiService) getExecute(r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) (*DiagnosisTaskAgentListV2Response, *http.Response, error) {
+func (a *DiagnosisTaskAgentListV2ApiService) getExecute(r *ApiOpenApi2DiagnosisTaskAgentListGetRequest) (*models.DiagnosisTaskAgentListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DiagnosisTaskAgentListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DiagnosisTaskAgentListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -139,7 +140,7 @@ func (a *DiagnosisTaskAgentListV2ApiService) getExecute(r *ApiOpenApi2DiagnosisT
 	localVarPath := localBasePath + "/open_api/2/diagnosis_task/agent/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

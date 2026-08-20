@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAgreementListV30ApiService ToolsAgreementListV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30ToolsAgreementListGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsAgreementListV30ApiService
 	advertiserId *int64
-	types        *[]*ToolsAgreementListV30Types
-	signStatus   *ToolsAgreementListV30SignStatus
+	types        *[]*models.ToolsAgreementListV30Types
+	signStatus   *models.ToolsAgreementListV30SignStatus
 }
 
 // 广告主id
@@ -37,18 +38,18 @@ func (r *ApiOpenApiV30ToolsAgreementListGetRequest) AdvertiserId(advertiserId in
 }
 
 // 通知类型列表，不传则返回全部配置类型
-func (r *ApiOpenApiV30ToolsAgreementListGetRequest) Types(types []*ToolsAgreementListV30Types) *ApiOpenApiV30ToolsAgreementListGetRequest {
+func (r *ApiOpenApiV30ToolsAgreementListGetRequest) Types(types []*models.ToolsAgreementListV30Types) *ApiOpenApiV30ToolsAgreementListGetRequest {
 	r.types = &types
 	return r
 }
 
 // 签署状态，不传则不过滤；0-未签署，1-已签署
-func (r *ApiOpenApiV30ToolsAgreementListGetRequest) SignStatus(signStatus ToolsAgreementListV30SignStatus) *ApiOpenApiV30ToolsAgreementListGetRequest {
+func (r *ApiOpenApiV30ToolsAgreementListGetRequest) SignStatus(signStatus models.ToolsAgreementListV30SignStatus) *ApiOpenApiV30ToolsAgreementListGetRequest {
 	r.signStatus = &signStatus
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsAgreementListGetRequest) Execute() (*ToolsAgreementListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsAgreementListGetRequest) Execute() (*models.ToolsAgreementListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *ToolsAgreementListV30ApiService) Get(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return ToolsAgreementListV30Response
-func (a *ToolsAgreementListV30ApiService) getExecute(r *ApiOpenApiV30ToolsAgreementListGetRequest) (*ToolsAgreementListV30Response, *http.Response, error) {
+func (a *ToolsAgreementListV30ApiService) getExecute(r *ApiOpenApiV30ToolsAgreementListGetRequest) (*models.ToolsAgreementListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAgreementListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAgreementListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *ToolsAgreementListV30ApiService) getExecute(r *ApiOpenApiV30ToolsAgreem
 	localVarPath := localBasePath + "/open_api/v3.0/tools/agreement/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

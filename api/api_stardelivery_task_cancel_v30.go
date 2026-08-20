@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StardeliveryTaskCancelV30ApiService StardeliveryTaskCancelV30Api service
@@ -25,15 +26,15 @@ type StardeliveryTaskCancelV30ApiService service
 type ApiOpenApiV30StardeliveryTaskCancelPostRequest struct {
 	ctx                              context.Context
 	ApiService                       *StardeliveryTaskCancelV30ApiService
-	stardeliveryTaskCancelV30Request *StardeliveryTaskCancelV30Request
+	stardeliveryTaskCancelV30Request *models.StardeliveryTaskCancelV30Request
 }
 
-func (r *ApiOpenApiV30StardeliveryTaskCancelPostRequest) StardeliveryTaskCancelV30Request(stardeliveryTaskCancelV30Request StardeliveryTaskCancelV30Request) *ApiOpenApiV30StardeliveryTaskCancelPostRequest {
+func (r *ApiOpenApiV30StardeliveryTaskCancelPostRequest) StardeliveryTaskCancelV30Request(stardeliveryTaskCancelV30Request models.StardeliveryTaskCancelV30Request) *ApiOpenApiV30StardeliveryTaskCancelPostRequest {
 	r.stardeliveryTaskCancelV30Request = &stardeliveryTaskCancelV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30StardeliveryTaskCancelPostRequest) Execute() (*StardeliveryTaskCancelV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30StardeliveryTaskCancelPostRequest) Execute() (*models.StardeliveryTaskCancelV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StardeliveryTaskCancelV30ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return StardeliveryTaskCancelV30Response
-func (a *StardeliveryTaskCancelV30ApiService) postExecute(r *ApiOpenApiV30StardeliveryTaskCancelPostRequest) (*StardeliveryTaskCancelV30Response, *http.Response, error) {
+func (a *StardeliveryTaskCancelV30ApiService) postExecute(r *ApiOpenApiV30StardeliveryTaskCancelPostRequest) (*models.StardeliveryTaskCancelV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StardeliveryTaskCancelV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StardeliveryTaskCancelV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StardeliveryTaskCancelV30ApiService) postExecute(r *ApiOpenApiV30Starde
 	localVarPath := localBasePath + "/open_api/v3.0/stardelivery/task/cancel/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

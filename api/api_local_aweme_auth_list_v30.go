@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalAwemeAuthListV30ApiService LocalAwemeAuthListV30Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV30LocalAwemeAuthListGetRequest struct {
 	localAccountId *int64
 	page           *int64
 	pageSize       *int64
-	filtering      *LocalAwemeAuthListV30Filtering
+	filtering      *models.LocalAwemeAuthListV30Filtering
 }
 
 // 账户id
@@ -50,12 +51,12 @@ func (r *ApiOpenApiV30LocalAwemeAuthListGetRequest) PageSize(pageSize int64) *Ap
 }
 
 // 过滤器
-func (r *ApiOpenApiV30LocalAwemeAuthListGetRequest) Filtering(filtering LocalAwemeAuthListV30Filtering) *ApiOpenApiV30LocalAwemeAuthListGetRequest {
+func (r *ApiOpenApiV30LocalAwemeAuthListGetRequest) Filtering(filtering models.LocalAwemeAuthListV30Filtering) *ApiOpenApiV30LocalAwemeAuthListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30LocalAwemeAuthListGetRequest) Execute() (*LocalAwemeAuthListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalAwemeAuthListGetRequest) Execute() (*models.LocalAwemeAuthListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *LocalAwemeAuthListV30ApiService) Get(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return LocalAwemeAuthListV30Response
-func (a *LocalAwemeAuthListV30ApiService) getExecute(r *ApiOpenApiV30LocalAwemeAuthListGetRequest) (*LocalAwemeAuthListV30Response, *http.Response, error) {
+func (a *LocalAwemeAuthListV30ApiService) getExecute(r *ApiOpenApiV30LocalAwemeAuthListGetRequest) (*models.LocalAwemeAuthListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalAwemeAuthListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalAwemeAuthListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *LocalAwemeAuthListV30ApiService) getExecute(r *ApiOpenApiV30LocalAwemeA
 	localVarPath := localBasePath + "/open_api/v3.0/local/aweme_auth/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

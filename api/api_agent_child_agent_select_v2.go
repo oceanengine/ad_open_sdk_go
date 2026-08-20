@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentChildAgentSelectV2ApiService AgentChildAgentSelectV2Api service
@@ -45,7 +46,7 @@ func (r *ApiOpenApi2AgentChildAgentSelectGetRequest) PageSize(pageSize int32) *A
 	return r
 }
 
-func (r *ApiOpenApi2AgentChildAgentSelectGetRequest) Execute() (*AgentChildAgentSelectV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentChildAgentSelectGetRequest) Execute() (*models.AgentChildAgentSelectV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *AgentChildAgentSelectV2ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return AgentChildAgentSelectV2Response
-func (a *AgentChildAgentSelectV2ApiService) getExecute(r *ApiOpenApi2AgentChildAgentSelectGetRequest) (*AgentChildAgentSelectV2Response, *http.Response, error) {
+func (a *AgentChildAgentSelectV2ApiService) getExecute(r *ApiOpenApi2AgentChildAgentSelectGetRequest) (*models.AgentChildAgentSelectV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentChildAgentSelectV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentChildAgentSelectV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *AgentChildAgentSelectV2ApiService) getExecute(r *ApiOpenApi2AgentChildA
 	localVarPath := localBasePath + "/open_api/2/agent/child_agent/select/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

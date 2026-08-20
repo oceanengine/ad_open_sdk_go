@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanCarouselAwemeGetV10ApiService QianchuanCarouselAwemeGetV10Api service
@@ -27,11 +28,11 @@ type ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest struct {
 	ApiService   *QianchuanCarouselAwemeGetV10ApiService
 	advertiserId *int64
 	awemeId      *int64
-	filtering    *QianchuanCarouselAwemeGetV10Filtering
+	filtering    *models.QianchuanCarouselAwemeGetV10Filtering
 	cursor       *int64
 	count        *int64
-	orderField   *QianchuanCarouselAwemeGetV10OrderField
-	orderType    *QianchuanCarouselAwemeGetV10OrderType
+	orderField   *models.QianchuanCarouselAwemeGetV10OrderField
+	orderType    *models.QianchuanCarouselAwemeGetV10OrderType
 }
 
 func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) AwemeId(awemeId int64
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) Filtering(filtering QianchuanCarouselAwemeGetV10Filtering) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
+func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) Filtering(filtering models.QianchuanCarouselAwemeGetV10Filtering) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -61,18 +62,18 @@ func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) Count(count int64) *A
 }
 
 // 排序字段
-func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) OrderField(orderField QianchuanCarouselAwemeGetV10OrderField) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
+func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) OrderField(orderField models.QianchuanCarouselAwemeGetV10OrderField) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
 
 // 排序方式
-func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) OrderType(orderType QianchuanCarouselAwemeGetV10OrderType) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
+func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) OrderType(orderType models.QianchuanCarouselAwemeGetV10OrderType) *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) Execute() (*QianchuanCarouselAwemeGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) Execute() (*models.QianchuanCarouselAwemeGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -106,12 +107,12 @@ func (a *QianchuanCarouselAwemeGetV10ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return QianchuanCarouselAwemeGetV10Response
-func (a *QianchuanCarouselAwemeGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) (*QianchuanCarouselAwemeGetV10Response, *http.Response, error) {
+func (a *QianchuanCarouselAwemeGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanCarouselAwemeGetGetRequest) (*models.QianchuanCarouselAwemeGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanCarouselAwemeGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanCarouselAwemeGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -121,7 +122,7 @@ func (a *QianchuanCarouselAwemeGetV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/carousel/aweme/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

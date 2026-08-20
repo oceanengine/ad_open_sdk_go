@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ChargeListV30ApiService ChargeListV30Api service
@@ -26,11 +27,11 @@ type ApiOpenApiV30ChargeListGetRequest struct {
 	ctx              context.Context
 	ApiService       *ChargeListV30ApiService
 	advertiserId     *int64
-	chargeTargetType *ChargeListV30ChargeTargetType
-	platformList     *[]*ChargeListV30PlatformList
-	chargeStatusList *[]*ChargeListV30ChargeStatusList
-	chargeTypeList   *[]*ChargeListV30ChargeTypeList
-	chargeSourceList *[]*ChargeListV30ChargeSourceList
+	chargeTargetType *models.ChargeListV30ChargeTargetType
+	platformList     *[]*models.ChargeListV30PlatformList
+	chargeStatusList *[]*models.ChargeListV30ChargeStatusList
+	chargeTypeList   *[]*models.ChargeListV30ChargeTypeList
+	chargeSourceList *[]*models.ChargeListV30ChargeSourceList
 	startTime        *string
 	endTime          *string
 	needTotalAmount  *bool
@@ -45,31 +46,31 @@ func (r *ApiOpenApiV30ChargeListGetRequest) AdvertiserId(advertiserId int64) *Ap
 }
 
 // 账户类型，1广告主，2钱包
-func (r *ApiOpenApiV30ChargeListGetRequest) ChargeTargetType(chargeTargetType ChargeListV30ChargeTargetType) *ApiOpenApiV30ChargeListGetRequest {
+func (r *ApiOpenApiV30ChargeListGetRequest) ChargeTargetType(chargeTargetType models.ChargeListV30ChargeTargetType) *ApiOpenApiV30ChargeListGetRequest {
 	r.chargeTargetType = &chargeTargetType
 	return r
 }
 
 // 业务线列表
-func (r *ApiOpenApiV30ChargeListGetRequest) PlatformList(platformList []*ChargeListV30PlatformList) *ApiOpenApiV30ChargeListGetRequest {
+func (r *ApiOpenApiV30ChargeListGetRequest) PlatformList(platformList []*models.ChargeListV30PlatformList) *ApiOpenApiV30ChargeListGetRequest {
 	r.platformList = &platformList
 	return r
 }
 
 // 充值状态列表
-func (r *ApiOpenApiV30ChargeListGetRequest) ChargeStatusList(chargeStatusList []*ChargeListV30ChargeStatusList) *ApiOpenApiV30ChargeListGetRequest {
+func (r *ApiOpenApiV30ChargeListGetRequest) ChargeStatusList(chargeStatusList []*models.ChargeListV30ChargeStatusList) *ApiOpenApiV30ChargeListGetRequest {
 	r.chargeStatusList = &chargeStatusList
 	return r
 }
 
 // 充值类型列表
-func (r *ApiOpenApiV30ChargeListGetRequest) ChargeTypeList(chargeTypeList []*ChargeListV30ChargeTypeList) *ApiOpenApiV30ChargeListGetRequest {
+func (r *ApiOpenApiV30ChargeListGetRequest) ChargeTypeList(chargeTypeList []*models.ChargeListV30ChargeTypeList) *ApiOpenApiV30ChargeListGetRequest {
 	r.chargeTypeList = &chargeTypeList
 	return r
 }
 
 // 充值来源列表
-func (r *ApiOpenApiV30ChargeListGetRequest) ChargeSourceList(chargeSourceList []*ChargeListV30ChargeSourceList) *ApiOpenApiV30ChargeListGetRequest {
+func (r *ApiOpenApiV30ChargeListGetRequest) ChargeSourceList(chargeSourceList []*models.ChargeListV30ChargeSourceList) *ApiOpenApiV30ChargeListGetRequest {
 	r.chargeSourceList = &chargeSourceList
 	return r
 }
@@ -104,7 +105,7 @@ func (r *ApiOpenApiV30ChargeListGetRequest) PageSize(pageSize int64) *ApiOpenApi
 	return r
 }
 
-func (r *ApiOpenApiV30ChargeListGetRequest) Execute() (*ChargeListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ChargeListGetRequest) Execute() (*models.ChargeListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -138,12 +139,12 @@ func (a *ChargeListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30ChargeL
 // Execute executes the request
 //
 //	@return ChargeListV30Response
-func (a *ChargeListV30ApiService) getExecute(r *ApiOpenApiV30ChargeListGetRequest) (*ChargeListV30Response, *http.Response, error) {
+func (a *ChargeListV30ApiService) getExecute(r *ApiOpenApiV30ChargeListGetRequest) (*models.ChargeListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ChargeListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ChargeListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -153,7 +154,7 @@ func (a *ChargeListV30ApiService) getExecute(r *ApiOpenApiV30ChargeListGetReques
 	localVarPath := localBasePath + "/open_api/v3.0/charge/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

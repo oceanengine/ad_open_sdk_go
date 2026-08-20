@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportRtaExpLocalHourlyGetV30ApiService ReportRtaExpLocalHourlyGetV30Api service
@@ -63,7 +64,7 @@ func (r *ApiOpenApiV30ReportRtaExpLocalHourlyGetGetRequest) CusVid(cusVid int64)
 	return r
 }
 
-func (r *ApiOpenApiV30ReportRtaExpLocalHourlyGetGetRequest) Execute() (*ReportRtaExpLocalHourlyGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportRtaExpLocalHourlyGetGetRequest) Execute() (*models.ReportRtaExpLocalHourlyGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ReportRtaExpLocalHourlyGetV30ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return ReportRtaExpLocalHourlyGetV30Response
-func (a *ReportRtaExpLocalHourlyGetV30ApiService) getExecute(r *ApiOpenApiV30ReportRtaExpLocalHourlyGetGetRequest) (*ReportRtaExpLocalHourlyGetV30Response, *http.Response, error) {
+func (a *ReportRtaExpLocalHourlyGetV30ApiService) getExecute(r *ApiOpenApiV30ReportRtaExpLocalHourlyGetGetRequest) (*models.ReportRtaExpLocalHourlyGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportRtaExpLocalHourlyGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportRtaExpLocalHourlyGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ReportRtaExpLocalHourlyGetV30ApiService) getExecute(r *ApiOpenApiV30Rep
 	localVarPath := localBasePath + "/open_api/v3.0/report/rta_exp_local_hourly/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.rtaId == nil {

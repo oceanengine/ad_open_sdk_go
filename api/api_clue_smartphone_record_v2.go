@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueSmartphoneRecordV2ApiService ClueSmartphoneRecordV2Api service
@@ -81,7 +82,7 @@ func (r *ApiOpenApi2ClueSmartphoneRecordGetRequest) PageSize(pageSize int32) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2ClueSmartphoneRecordGetRequest) Execute() (*ClueSmartphoneRecordV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueSmartphoneRecordGetRequest) Execute() (*models.ClueSmartphoneRecordV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -115,12 +116,12 @@ func (a *ClueSmartphoneRecordV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return ClueSmartphoneRecordV2Response
-func (a *ClueSmartphoneRecordV2ApiService) getExecute(r *ApiOpenApi2ClueSmartphoneRecordGetRequest) (*ClueSmartphoneRecordV2Response, *http.Response, error) {
+func (a *ClueSmartphoneRecordV2ApiService) getExecute(r *ApiOpenApi2ClueSmartphoneRecordGetRequest) (*models.ClueSmartphoneRecordV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueSmartphoneRecordV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueSmartphoneRecordV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -130,7 +131,7 @@ func (a *ClueSmartphoneRecordV2ApiService) getExecute(r *ApiOpenApi2ClueSmartpho
 	localVarPath := localBasePath + "/open_api/2/clue/smartphone/record/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

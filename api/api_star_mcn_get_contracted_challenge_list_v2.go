@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarMcnGetContractedChallengeListV2ApiService StarMcnGetContractedChallengeListV2Api service
@@ -87,7 +88,7 @@ func (r *ApiOpenApi2StarMcnGetContractedChallengeListGetRequest) DeveloperId(dev
 	return r
 }
 
-func (r *ApiOpenApi2StarMcnGetContractedChallengeListGetRequest) Execute() (*StarMcnGetContractedChallengeListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarMcnGetContractedChallengeListGetRequest) Execute() (*models.StarMcnGetContractedChallengeListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -121,12 +122,12 @@ func (a *StarMcnGetContractedChallengeListV2ApiService) Get(ctx context.Context)
 // Execute executes the request
 //
 //	@return StarMcnGetContractedChallengeListV2Response
-func (a *StarMcnGetContractedChallengeListV2ApiService) getExecute(r *ApiOpenApi2StarMcnGetContractedChallengeListGetRequest) (*StarMcnGetContractedChallengeListV2Response, *http.Response, error) {
+func (a *StarMcnGetContractedChallengeListV2ApiService) getExecute(r *ApiOpenApi2StarMcnGetContractedChallengeListGetRequest) (*models.StarMcnGetContractedChallengeListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarMcnGetContractedChallengeListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarMcnGetContractedChallengeListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -136,7 +137,7 @@ func (a *StarMcnGetContractedChallengeListV2ApiService) getExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/2/star/mcn/get_contracted_challenge_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

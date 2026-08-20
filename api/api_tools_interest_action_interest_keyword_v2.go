@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsInterestActionInterestKeywordV2ApiService ToolsInterestActionInterestKeywordV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2ToolsInterestActionInterestKeywordGetRequest) QueryWords(que
 	return r
 }
 
-func (r *ApiOpenApi2ToolsInterestActionInterestKeywordGetRequest) Execute() (*ToolsInterestActionInterestKeywordV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsInterestActionInterestKeywordGetRequest) Execute() (*models.ToolsInterestActionInterestKeywordV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsInterestActionInterestKeywordV2ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return ToolsInterestActionInterestKeywordV2Response
-func (a *ToolsInterestActionInterestKeywordV2ApiService) getExecute(r *ApiOpenApi2ToolsInterestActionInterestKeywordGetRequest) (*ToolsInterestActionInterestKeywordV2Response, *http.Response, error) {
+func (a *ToolsInterestActionInterestKeywordV2ApiService) getExecute(r *ApiOpenApi2ToolsInterestActionInterestKeywordGetRequest) (*models.ToolsInterestActionInterestKeywordV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsInterestActionInterestKeywordV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsInterestActionInterestKeywordV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsInterestActionInterestKeywordV2ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/2/tools/interest_action/interest/keyword/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

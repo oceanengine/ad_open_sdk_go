@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAdKeywordsGetV10ApiService QianchuanAdKeywordsGetV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanAdKeywordsGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanAdKeywordsGetV10ApiService
 	advertiserId *int64
-	filtering    *QianchuanAdKeywordsGetV10Filtering
+	filtering    *models.QianchuanAdKeywordsGetV10Filtering
 	page         *int32
 	pageSize     *int32
 }
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV10QianchuanAdKeywordsGetGetRequest) AdvertiserId(advertiserI
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAdKeywordsGetGetRequest) Filtering(filtering QianchuanAdKeywordsGetV10Filtering) *ApiOpenApiV10QianchuanAdKeywordsGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAdKeywordsGetGetRequest) Filtering(filtering models.QianchuanAdKeywordsGetV10Filtering) *ApiOpenApiV10QianchuanAdKeywordsGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -54,7 +55,7 @@ func (r *ApiOpenApiV10QianchuanAdKeywordsGetGetRequest) PageSize(pageSize int32)
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAdKeywordsGetGetRequest) Execute() (*QianchuanAdKeywordsGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAdKeywordsGetGetRequest) Execute() (*models.QianchuanAdKeywordsGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -88,12 +89,12 @@ func (a *QianchuanAdKeywordsGetV10ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return QianchuanAdKeywordsGetV10Response
-func (a *QianchuanAdKeywordsGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAdKeywordsGetGetRequest) (*QianchuanAdKeywordsGetV10Response, *http.Response, error) {
+func (a *QianchuanAdKeywordsGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAdKeywordsGetGetRequest) (*models.QianchuanAdKeywordsGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAdKeywordsGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAdKeywordsGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -103,7 +104,7 @@ func (a *QianchuanAdKeywordsGetV10ApiService) getExecute(r *ApiOpenApiV10Qianchu
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/ad/keywords/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

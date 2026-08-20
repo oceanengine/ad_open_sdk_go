@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StardeliveryTaskListV30ApiService StardeliveryTaskListV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30StardeliveryTaskListGetRequest struct {
 	ApiService      *StardeliveryTaskListV30ApiService
 	advertiserId    *int64
 	starTaskVersion *string
-	filtering       *StardeliveryTaskListV30Filtering
+	filtering       *models.StardeliveryTaskListV30Filtering
 	page            *int32
 	pageSize        *int32
 }
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV30StardeliveryTaskListGetRequest) StarTaskVersion(starTaskVe
 }
 
 // 过滤器
-func (r *ApiOpenApiV30StardeliveryTaskListGetRequest) Filtering(filtering StardeliveryTaskListV30Filtering) *ApiOpenApiV30StardeliveryTaskListGetRequest {
+func (r *ApiOpenApiV30StardeliveryTaskListGetRequest) Filtering(filtering models.StardeliveryTaskListV30Filtering) *ApiOpenApiV30StardeliveryTaskListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -60,7 +61,7 @@ func (r *ApiOpenApiV30StardeliveryTaskListGetRequest) PageSize(pageSize int32) *
 	return r
 }
 
-func (r *ApiOpenApiV30StardeliveryTaskListGetRequest) Execute() (*StardeliveryTaskListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30StardeliveryTaskListGetRequest) Execute() (*models.StardeliveryTaskListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -94,12 +95,12 @@ func (a *StardeliveryTaskListV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return StardeliveryTaskListV30Response
-func (a *StardeliveryTaskListV30ApiService) getExecute(r *ApiOpenApiV30StardeliveryTaskListGetRequest) (*StardeliveryTaskListV30Response, *http.Response, error) {
+func (a *StardeliveryTaskListV30ApiService) getExecute(r *ApiOpenApiV30StardeliveryTaskListGetRequest) (*models.StardeliveryTaskListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StardeliveryTaskListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StardeliveryTaskListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -109,7 +110,7 @@ func (a *StardeliveryTaskListV30ApiService) getExecute(r *ApiOpenApiV30Stardeliv
 	localVarPath := localBasePath + "/open_api/v3.0/stardelivery/task/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

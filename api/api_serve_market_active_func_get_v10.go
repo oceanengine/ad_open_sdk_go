@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ServeMarketActiveFuncGetV10ApiService ServeMarketActiveFuncGetV10Api service
@@ -57,7 +58,7 @@ func (r *ApiOpenApiV10ServeMarketActiveFuncGetGetRequest) FuncKeys(funcKeys []st
 	return r
 }
 
-func (r *ApiOpenApiV10ServeMarketActiveFuncGetGetRequest) Execute() (*ServeMarketActiveFuncGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10ServeMarketActiveFuncGetGetRequest) Execute() (*models.ServeMarketActiveFuncGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ServeMarketActiveFuncGetV10ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ServeMarketActiveFuncGetV10Response
-func (a *ServeMarketActiveFuncGetV10ApiService) getExecute(r *ApiOpenApiV10ServeMarketActiveFuncGetGetRequest) (*ServeMarketActiveFuncGetV10Response, *http.Response, error) {
+func (a *ServeMarketActiveFuncGetV10ApiService) getExecute(r *ApiOpenApiV10ServeMarketActiveFuncGetGetRequest) (*models.ServeMarketActiveFuncGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ServeMarketActiveFuncGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ServeMarketActiveFuncGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ServeMarketActiveFuncGetV10ApiService) getExecute(r *ApiOpenApiV10Serve
 	localVarPath := localBasePath + "/open_api/v1.0/serve_market/active_func/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.useUid == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsMicroAppCreateV30ApiService ToolsMicroAppCreateV30Api service
@@ -25,15 +26,15 @@ type ToolsMicroAppCreateV30ApiService service
 type ApiOpenApiV30ToolsMicroAppCreatePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *ToolsMicroAppCreateV30ApiService
-	toolsMicroAppCreateV30Request *ToolsMicroAppCreateV30Request
+	toolsMicroAppCreateV30Request *models.ToolsMicroAppCreateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsMicroAppCreatePostRequest) ToolsMicroAppCreateV30Request(toolsMicroAppCreateV30Request ToolsMicroAppCreateV30Request) *ApiOpenApiV30ToolsMicroAppCreatePostRequest {
+func (r *ApiOpenApiV30ToolsMicroAppCreatePostRequest) ToolsMicroAppCreateV30Request(toolsMicroAppCreateV30Request models.ToolsMicroAppCreateV30Request) *ApiOpenApiV30ToolsMicroAppCreatePostRequest {
 	r.toolsMicroAppCreateV30Request = &toolsMicroAppCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMicroAppCreatePostRequest) Execute() (*ToolsMicroAppCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsMicroAppCreatePostRequest) Execute() (*models.ToolsMicroAppCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsMicroAppCreateV30ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsMicroAppCreateV30Response
-func (a *ToolsMicroAppCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsMicroAppCreatePostRequest) (*ToolsMicroAppCreateV30Response, *http.Response, error) {
+func (a *ToolsMicroAppCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsMicroAppCreatePostRequest) (*models.ToolsMicroAppCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsMicroAppCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsMicroAppCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsMicroAppCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsMicr
 	localVarPath := localBasePath + "/open_api/v3.0/tools/micro_app/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

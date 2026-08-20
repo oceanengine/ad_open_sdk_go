@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarClueGetV2ApiService StarClueGetV2Api service
@@ -59,7 +60,7 @@ func (r *ApiOpenApi2StarClueGetGetRequest) PageSize(pageSize int32) *ApiOpenApi2
 	return r
 }
 
-func (r *ApiOpenApi2StarClueGetGetRequest) Execute() (*StarClueGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarClueGetGetRequest) Execute() (*models.StarClueGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -93,12 +94,12 @@ func (a *StarClueGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2StarClueG
 // Execute executes the request
 //
 //	@return StarClueGetV2Response
-func (a *StarClueGetV2ApiService) getExecute(r *ApiOpenApi2StarClueGetGetRequest) (*StarClueGetV2Response, *http.Response, error) {
+func (a *StarClueGetV2ApiService) getExecute(r *ApiOpenApi2StarClueGetGetRequest) (*models.StarClueGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarClueGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarClueGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -108,7 +109,7 @@ func (a *StarClueGetV2ApiService) getExecute(r *ApiOpenApi2StarClueGetGetRequest
 	localVarPath := localBasePath + "/open_api/2/star/clue/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DouplusOrderListV30ApiService DouplusOrderListV30Api service
@@ -26,11 +27,11 @@ type ApiOpenApiV30DouplusOrderListGetRequest struct {
 	ctx          context.Context
 	ApiService   *DouplusOrderListV30ApiService
 	awemeSecUid  *string
-	filter       *DouplusOrderListV30Filter
+	filter       *models.DouplusOrderListV30Filter
 	pageSize     *int64
 	page         *int64
-	orderByField *DouplusOrderListV30OrderByField
-	orderByType  *DouplusOrderListV30OrderByType
+	orderByField *models.DouplusOrderListV30OrderByField
+	orderByType  *models.DouplusOrderListV30OrderByType
 }
 
 func (r *ApiOpenApiV30DouplusOrderListGetRequest) AwemeSecUid(awemeSecUid string) *ApiOpenApiV30DouplusOrderListGetRequest {
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30DouplusOrderListGetRequest) AwemeSecUid(awemeSecUid string
 	return r
 }
 
-func (r *ApiOpenApiV30DouplusOrderListGetRequest) Filter(filter DouplusOrderListV30Filter) *ApiOpenApiV30DouplusOrderListGetRequest {
+func (r *ApiOpenApiV30DouplusOrderListGetRequest) Filter(filter models.DouplusOrderListV30Filter) *ApiOpenApiV30DouplusOrderListGetRequest {
 	r.filter = &filter
 	return r
 }
@@ -54,17 +55,17 @@ func (r *ApiOpenApiV30DouplusOrderListGetRequest) Page(page int64) *ApiOpenApiV3
 }
 
 // 排序字段
-func (r *ApiOpenApiV30DouplusOrderListGetRequest) OrderByField(orderByField DouplusOrderListV30OrderByField) *ApiOpenApiV30DouplusOrderListGetRequest {
+func (r *ApiOpenApiV30DouplusOrderListGetRequest) OrderByField(orderByField models.DouplusOrderListV30OrderByField) *ApiOpenApiV30DouplusOrderListGetRequest {
 	r.orderByField = &orderByField
 	return r
 }
 
-func (r *ApiOpenApiV30DouplusOrderListGetRequest) OrderByType(orderByType DouplusOrderListV30OrderByType) *ApiOpenApiV30DouplusOrderListGetRequest {
+func (r *ApiOpenApiV30DouplusOrderListGetRequest) OrderByType(orderByType models.DouplusOrderListV30OrderByType) *ApiOpenApiV30DouplusOrderListGetRequest {
 	r.orderByType = &orderByType
 	return r
 }
 
-func (r *ApiOpenApiV30DouplusOrderListGetRequest) Execute() (*DouplusOrderListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DouplusOrderListGetRequest) Execute() (*models.DouplusOrderListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -98,12 +99,12 @@ func (a *DouplusOrderListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30D
 // Execute executes the request
 //
 //	@return DouplusOrderListV30Response
-func (a *DouplusOrderListV30ApiService) getExecute(r *ApiOpenApiV30DouplusOrderListGetRequest) (*DouplusOrderListV30Response, *http.Response, error) {
+func (a *DouplusOrderListV30ApiService) getExecute(r *ApiOpenApiV30DouplusOrderListGetRequest) (*models.DouplusOrderListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DouplusOrderListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DouplusOrderListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -113,7 +114,7 @@ func (a *DouplusOrderListV30ApiService) getExecute(r *ApiOpenApiV30DouplusOrderL
 	localVarPath := localBasePath + "/open_api/v3.0/douplus/order/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpAppPublishV30ApiService ToolsEbpAppPublishV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpAppPublishV30ApiService service
 type ApiOpenApiV30ToolsEbpAppPublishPostRequest struct {
 	ctx                          context.Context
 	ApiService                   *ToolsEbpAppPublishV30ApiService
-	toolsEbpAppPublishV30Request *ToolsEbpAppPublishV30Request
+	toolsEbpAppPublishV30Request *models.ToolsEbpAppPublishV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppPublishPostRequest) ToolsEbpAppPublishV30Request(toolsEbpAppPublishV30Request ToolsEbpAppPublishV30Request) *ApiOpenApiV30ToolsEbpAppPublishPostRequest {
+func (r *ApiOpenApiV30ToolsEbpAppPublishPostRequest) ToolsEbpAppPublishV30Request(toolsEbpAppPublishV30Request models.ToolsEbpAppPublishV30Request) *ApiOpenApiV30ToolsEbpAppPublishPostRequest {
 	r.toolsEbpAppPublishV30Request = &toolsEbpAppPublishV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppPublishPostRequest) Execute() (*ToolsEbpAppPublishV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpAppPublishPostRequest) Execute() (*models.ToolsEbpAppPublishV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpAppPublishV30ApiService) Post(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return ToolsEbpAppPublishV30Response
-func (a *ToolsEbpAppPublishV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpAppPublishPostRequest) (*ToolsEbpAppPublishV30Response, *http.Response, error) {
+func (a *ToolsEbpAppPublishV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpAppPublishPostRequest) (*models.ToolsEbpAppPublishV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpAppPublishV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpAppPublishV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpAppPublishV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpAp
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/app/publish/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

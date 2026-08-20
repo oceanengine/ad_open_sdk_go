@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeEstimateProfitV10ApiService QianchuanAwemeEstimateProfitV10Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest struct {
 	ctx             context.Context
 	ApiService      *QianchuanAwemeEstimateProfitV10ApiService
 	advertiserId    *int64
-	marketingGoal   *QianchuanAwemeEstimateProfitV10MarketingGoal
-	deliverySetting *QianchuanAwemeEstimateProfitV10DeliverySetting
-	audience        *QianchuanAwemeEstimateProfitV10Audience
+	marketingGoal   *models.QianchuanAwemeEstimateProfitV10MarketingGoal
+	deliverySetting *models.QianchuanAwemeEstimateProfitV10DeliverySetting
+	audience        *models.QianchuanAwemeEstimateProfitV10Audience
 }
 
 func (r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest {
@@ -36,23 +37,23 @@ func (r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) AdvertiserId(adver
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) MarketingGoal(marketingGoal QianchuanAwemeEstimateProfitV10MarketingGoal) *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) MarketingGoal(marketingGoal models.QianchuanAwemeEstimateProfitV10MarketingGoal) *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
 // 投放设置
-func (r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) DeliverySetting(deliverySetting QianchuanAwemeEstimateProfitV10DeliverySetting) *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) DeliverySetting(deliverySetting models.QianchuanAwemeEstimateProfitV10DeliverySetting) *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest {
 	r.deliverySetting = &deliverySetting
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) Audience(audience QianchuanAwemeEstimateProfitV10Audience) *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) Audience(audience models.QianchuanAwemeEstimateProfitV10Audience) *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest {
 	r.audience = &audience
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) Execute() (*QianchuanAwemeEstimateProfitV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) Execute() (*models.QianchuanAwemeEstimateProfitV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -86,12 +87,12 @@ func (a *QianchuanAwemeEstimateProfitV10ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return QianchuanAwemeEstimateProfitV10Response
-func (a *QianchuanAwemeEstimateProfitV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) (*QianchuanAwemeEstimateProfitV10Response, *http.Response, error) {
+func (a *QianchuanAwemeEstimateProfitV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeEstimateProfitGetRequest) (*models.QianchuanAwemeEstimateProfitV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeEstimateProfitV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeEstimateProfitV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -101,7 +102,7 @@ func (a *QianchuanAwemeEstimateProfitV10ApiService) getExecute(r *ApiOpenApiV10Q
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/estimate_profit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAdCreateV10ApiService QianchuanAdCreateV10Api service
@@ -25,15 +26,15 @@ type QianchuanAdCreateV10ApiService service
 type ApiOpenApiV10QianchuanAdCreatePostRequest struct {
 	ctx                         context.Context
 	ApiService                  *QianchuanAdCreateV10ApiService
-	qianchuanAdCreateV10Request *QianchuanAdCreateV10Request
+	qianchuanAdCreateV10Request *models.QianchuanAdCreateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanAdCreatePostRequest) QianchuanAdCreateV10Request(qianchuanAdCreateV10Request QianchuanAdCreateV10Request) *ApiOpenApiV10QianchuanAdCreatePostRequest {
+func (r *ApiOpenApiV10QianchuanAdCreatePostRequest) QianchuanAdCreateV10Request(qianchuanAdCreateV10Request models.QianchuanAdCreateV10Request) *ApiOpenApiV10QianchuanAdCreatePostRequest {
 	r.qianchuanAdCreateV10Request = &qianchuanAdCreateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAdCreatePostRequest) Execute() (*QianchuanAdCreateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAdCreatePostRequest) Execute() (*models.QianchuanAdCreateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanAdCreateV10ApiService) Post(ctx context.Context) *ApiOpenApiV1
 // Execute executes the request
 //
 //	@return QianchuanAdCreateV10Response
-func (a *QianchuanAdCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAdCreatePostRequest) (*QianchuanAdCreateV10Response, *http.Response, error) {
+func (a *QianchuanAdCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAdCreatePostRequest) (*models.QianchuanAdCreateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAdCreateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAdCreateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanAdCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAd
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/ad/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

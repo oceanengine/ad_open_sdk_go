@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // InvoiceApplyOrderListV30ApiService InvoiceApplyOrderListV30Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV30InvoiceApplyOrderListGetRequest struct {
 	ctx                 context.Context
 	ApiService          *InvoiceApplyOrderListV30ApiService
 	accountId           *int64
-	platform            *InvoiceApplyOrderListV30Platform
-	invoiceDirections   *[]*InvoiceApplyOrderListV30InvoiceDirections
-	invoiceTypes        *[]*InvoiceApplyOrderListV30InvoiceTypes
-	invoiceStatuses     *[]*InvoiceApplyOrderListV30InvoiceStatuses
+	platform            *models.InvoiceApplyOrderListV30Platform
+	invoiceDirections   *[]*models.InvoiceApplyOrderListV30InvoiceDirections
+	invoiceTypes        *[]*models.InvoiceApplyOrderListV30InvoiceTypes
+	invoiceStatuses     *[]*models.InvoiceApplyOrderListV30InvoiceStatuses
 	invoiceApplySerials *[]string
-	reverseStatuses     *[]*InvoiceApplyOrderListV30ReverseStatuses
+	reverseStatuses     *[]*models.InvoiceApplyOrderListV30ReverseStatuses
 	startDate           *string
 	endDate             *string
 	page                *int64
@@ -45,25 +46,25 @@ func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) AccountId(accountId int64
 }
 
 // 业务线
-func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) Platform(platform InvoiceApplyOrderListV30Platform) *ApiOpenApiV30InvoiceApplyOrderListGetRequest {
+func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) Platform(platform models.InvoiceApplyOrderListV30Platform) *ApiOpenApiV30InvoiceApplyOrderListGetRequest {
 	r.platform = &platform
 	return r
 }
 
 // 发票方向列表
-func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) InvoiceDirections(invoiceDirections []*InvoiceApplyOrderListV30InvoiceDirections) *ApiOpenApiV30InvoiceApplyOrderListGetRequest {
+func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) InvoiceDirections(invoiceDirections []*models.InvoiceApplyOrderListV30InvoiceDirections) *ApiOpenApiV30InvoiceApplyOrderListGetRequest {
 	r.invoiceDirections = &invoiceDirections
 	return r
 }
 
 // 发票类型列表
-func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) InvoiceTypes(invoiceTypes []*InvoiceApplyOrderListV30InvoiceTypes) *ApiOpenApiV30InvoiceApplyOrderListGetRequest {
+func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) InvoiceTypes(invoiceTypes []*models.InvoiceApplyOrderListV30InvoiceTypes) *ApiOpenApiV30InvoiceApplyOrderListGetRequest {
 	r.invoiceTypes = &invoiceTypes
 	return r
 }
 
 // 开票状态列表
-func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) InvoiceStatuses(invoiceStatuses []*InvoiceApplyOrderListV30InvoiceStatuses) *ApiOpenApiV30InvoiceApplyOrderListGetRequest {
+func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) InvoiceStatuses(invoiceStatuses []*models.InvoiceApplyOrderListV30InvoiceStatuses) *ApiOpenApiV30InvoiceApplyOrderListGetRequest {
 	r.invoiceStatuses = &invoiceStatuses
 	return r
 }
@@ -75,7 +76,7 @@ func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) InvoiceApplySerials(invoi
 }
 
 // 红冲状态列表
-func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) ReverseStatuses(reverseStatuses []*InvoiceApplyOrderListV30ReverseStatuses) *ApiOpenApiV30InvoiceApplyOrderListGetRequest {
+func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) ReverseStatuses(reverseStatuses []*models.InvoiceApplyOrderListV30ReverseStatuses) *ApiOpenApiV30InvoiceApplyOrderListGetRequest {
 	r.reverseStatuses = &reverseStatuses
 	return r
 }
@@ -104,7 +105,7 @@ func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) PageSize(pageSize int64) 
 	return r
 }
 
-func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) Execute() (*InvoiceApplyOrderListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) Execute() (*models.InvoiceApplyOrderListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -138,12 +139,12 @@ func (a *InvoiceApplyOrderListV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return InvoiceApplyOrderListV30Response
-func (a *InvoiceApplyOrderListV30ApiService) getExecute(r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) (*InvoiceApplyOrderListV30Response, *http.Response, error) {
+func (a *InvoiceApplyOrderListV30ApiService) getExecute(r *ApiOpenApiV30InvoiceApplyOrderListGetRequest) (*models.InvoiceApplyOrderListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *InvoiceApplyOrderListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.InvoiceApplyOrderListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -153,7 +154,7 @@ func (a *InvoiceApplyOrderListV30ApiService) getExecute(r *ApiOpenApiV30InvoiceA
 	localVarPath := localBasePath + "/open_api/v3.0/invoice/apply_order/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

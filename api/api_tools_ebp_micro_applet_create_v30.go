@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpMicroAppletCreateV30ApiService ToolsEbpMicroAppletCreateV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpMicroAppletCreateV30ApiService service
 type ApiOpenApiV30ToolsEbpMicroAppletCreatePostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *ToolsEbpMicroAppletCreateV30ApiService
-	toolsEbpMicroAppletCreateV30Request *ToolsEbpMicroAppletCreateV30Request
+	toolsEbpMicroAppletCreateV30Request *models.ToolsEbpMicroAppletCreateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroAppletCreatePostRequest) ToolsEbpMicroAppletCreateV30Request(toolsEbpMicroAppletCreateV30Request ToolsEbpMicroAppletCreateV30Request) *ApiOpenApiV30ToolsEbpMicroAppletCreatePostRequest {
+func (r *ApiOpenApiV30ToolsEbpMicroAppletCreatePostRequest) ToolsEbpMicroAppletCreateV30Request(toolsEbpMicroAppletCreateV30Request models.ToolsEbpMicroAppletCreateV30Request) *ApiOpenApiV30ToolsEbpMicroAppletCreatePostRequest {
 	r.toolsEbpMicroAppletCreateV30Request = &toolsEbpMicroAppletCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMicroAppletCreatePostRequest) Execute() (*ToolsEbpMicroAppletCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpMicroAppletCreatePostRequest) Execute() (*models.ToolsEbpMicroAppletCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpMicroAppletCreateV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return ToolsEbpMicroAppletCreateV30Response
-func (a *ToolsEbpMicroAppletCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpMicroAppletCreatePostRequest) (*ToolsEbpMicroAppletCreateV30Response, *http.Response, error) {
+func (a *ToolsEbpMicroAppletCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpMicroAppletCreatePostRequest) (*models.ToolsEbpMicroAppletCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpMicroAppletCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpMicroAppletCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpMicroAppletCreateV30ApiService) postExecute(r *ApiOpenApiV30Too
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/micro_applet/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

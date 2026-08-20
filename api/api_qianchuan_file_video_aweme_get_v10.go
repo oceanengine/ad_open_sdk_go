@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanFileVideoAwemeGetV10ApiService QianchuanFileVideoAwemeGetV10Api service
@@ -29,7 +30,7 @@ type ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest struct {
 	awemeId                 *int64
 	adBindAwemeId           *int64
 	pullAwemeExcellentVideo *bool
-	filtering               *QianchuanFileVideoAwemeGetV10Filtering
+	filtering               *models.QianchuanFileVideoAwemeGetV10Filtering
 	cursor                  *int64
 	count                   *int64
 }
@@ -54,7 +55,7 @@ func (r *ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest) PullAwemeExcellentVi
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest) Filtering(filtering QianchuanFileVideoAwemeGetV10Filtering) *ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest {
+func (r *ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest) Filtering(filtering models.QianchuanFileVideoAwemeGetV10Filtering) *ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest) Count(count int64) *
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest) Execute() (*QianchuanFileVideoAwemeGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest) Execute() (*models.QianchuanFileVideoAwemeGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *QianchuanFileVideoAwemeGetV10ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return QianchuanFileVideoAwemeGetV10Response
-func (a *QianchuanFileVideoAwemeGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest) (*QianchuanFileVideoAwemeGetV10Response, *http.Response, error) {
+func (a *QianchuanFileVideoAwemeGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanFileVideoAwemeGetGetRequest) (*models.QianchuanFileVideoAwemeGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanFileVideoAwemeGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanFileVideoAwemeGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *QianchuanFileVideoAwemeGetV10ApiService) getExecute(r *ApiOpenApiV10Qia
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/file/video/aweme/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

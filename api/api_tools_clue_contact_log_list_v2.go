@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueContactLogListV2ApiService ToolsClueContactLogListV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2ToolsClueContactLogListGetRequest struct {
 	ApiService   *ToolsClueContactLogListV2ApiService
 	advertiserId *int64
 	clueId       *int64
-	filter       *ToolsClueContactLogListV2Filter
+	filter       *models.ToolsClueContactLogListV2Filter
 }
 
 // 广告主ID
@@ -43,12 +44,12 @@ func (r *ApiOpenApi2ToolsClueContactLogListGetRequest) ClueId(clueId int64) *Api
 }
 
 // 过滤条件
-func (r *ApiOpenApi2ToolsClueContactLogListGetRequest) Filter(filter ToolsClueContactLogListV2Filter) *ApiOpenApi2ToolsClueContactLogListGetRequest {
+func (r *ApiOpenApi2ToolsClueContactLogListGetRequest) Filter(filter models.ToolsClueContactLogListV2Filter) *ApiOpenApi2ToolsClueContactLogListGetRequest {
 	r.filter = &filter
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueContactLogListGetRequest) Execute() (*ToolsClueContactLogListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueContactLogListGetRequest) Execute() (*models.ToolsClueContactLogListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *ToolsClueContactLogListV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return ToolsClueContactLogListV2Response
-func (a *ToolsClueContactLogListV2ApiService) getExecute(r *ApiOpenApi2ToolsClueContactLogListGetRequest) (*ToolsClueContactLogListV2Response, *http.Response, error) {
+func (a *ToolsClueContactLogListV2ApiService) getExecute(r *ApiOpenApi2ToolsClueContactLogListGetRequest) (*models.ToolsClueContactLogListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueContactLogListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueContactLogListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *ToolsClueContactLogListV2ApiService) getExecute(r *ApiOpenApi2ToolsClue
 	localVarPath := localBasePath + "/open_api/2/tools/clue/contact_log/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

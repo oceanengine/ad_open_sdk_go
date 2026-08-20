@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarChallengeChooseTaskItemWithRewardV2ApiService StarChallengeChooseTaskItemWithRewardV2Api service
@@ -25,15 +26,15 @@ type StarChallengeChooseTaskItemWithRewardV2ApiService service
 type ApiOpenApi2StarChallengeChooseTaskItemWithRewardPostRequest struct {
 	ctx                                            context.Context
 	ApiService                                     *StarChallengeChooseTaskItemWithRewardV2ApiService
-	starChallengeChooseTaskItemWithRewardV2Request *StarChallengeChooseTaskItemWithRewardV2Request
+	starChallengeChooseTaskItemWithRewardV2Request *models.StarChallengeChooseTaskItemWithRewardV2Request
 }
 
-func (r *ApiOpenApi2StarChallengeChooseTaskItemWithRewardPostRequest) StarChallengeChooseTaskItemWithRewardV2Request(starChallengeChooseTaskItemWithRewardV2Request StarChallengeChooseTaskItemWithRewardV2Request) *ApiOpenApi2StarChallengeChooseTaskItemWithRewardPostRequest {
+func (r *ApiOpenApi2StarChallengeChooseTaskItemWithRewardPostRequest) StarChallengeChooseTaskItemWithRewardV2Request(starChallengeChooseTaskItemWithRewardV2Request models.StarChallengeChooseTaskItemWithRewardV2Request) *ApiOpenApi2StarChallengeChooseTaskItemWithRewardPostRequest {
 	r.starChallengeChooseTaskItemWithRewardV2Request = &starChallengeChooseTaskItemWithRewardV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarChallengeChooseTaskItemWithRewardPostRequest) Execute() (*StarChallengeChooseTaskItemWithRewardV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarChallengeChooseTaskItemWithRewardPostRequest) Execute() (*models.StarChallengeChooseTaskItemWithRewardV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarChallengeChooseTaskItemWithRewardV2ApiService) Post(ctx context.Con
 // Execute executes the request
 //
 //	@return StarChallengeChooseTaskItemWithRewardV2Response
-func (a *StarChallengeChooseTaskItemWithRewardV2ApiService) postExecute(r *ApiOpenApi2StarChallengeChooseTaskItemWithRewardPostRequest) (*StarChallengeChooseTaskItemWithRewardV2Response, *http.Response, error) {
+func (a *StarChallengeChooseTaskItemWithRewardV2ApiService) postExecute(r *ApiOpenApi2StarChallengeChooseTaskItemWithRewardPostRequest) (*models.StarChallengeChooseTaskItemWithRewardV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarChallengeChooseTaskItemWithRewardV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarChallengeChooseTaskItemWithRewardV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarChallengeChooseTaskItemWithRewardV2ApiService) postExecute(r *ApiOp
 	localVarPath := localBasePath + "/open_api/2/star/challenge/choose_task_item_with_reward/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

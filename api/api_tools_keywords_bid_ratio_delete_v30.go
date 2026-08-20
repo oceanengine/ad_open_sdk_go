@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsKeywordsBidRatioDeleteV30ApiService ToolsKeywordsBidRatioDeleteV30Api service
@@ -25,15 +26,15 @@ type ToolsKeywordsBidRatioDeleteV30ApiService service
 type ApiOpenApiV30ToolsKeywordsBidRatioDeletePostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *ToolsKeywordsBidRatioDeleteV30ApiService
-	toolsKeywordsBidRatioDeleteV30Request *ToolsKeywordsBidRatioDeleteV30Request
+	toolsKeywordsBidRatioDeleteV30Request *models.ToolsKeywordsBidRatioDeleteV30Request
 }
 
-func (r *ApiOpenApiV30ToolsKeywordsBidRatioDeletePostRequest) ToolsKeywordsBidRatioDeleteV30Request(toolsKeywordsBidRatioDeleteV30Request ToolsKeywordsBidRatioDeleteV30Request) *ApiOpenApiV30ToolsKeywordsBidRatioDeletePostRequest {
+func (r *ApiOpenApiV30ToolsKeywordsBidRatioDeletePostRequest) ToolsKeywordsBidRatioDeleteV30Request(toolsKeywordsBidRatioDeleteV30Request models.ToolsKeywordsBidRatioDeleteV30Request) *ApiOpenApiV30ToolsKeywordsBidRatioDeletePostRequest {
 	r.toolsKeywordsBidRatioDeleteV30Request = &toolsKeywordsBidRatioDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsKeywordsBidRatioDeletePostRequest) Execute() (*ToolsKeywordsBidRatioDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsKeywordsBidRatioDeletePostRequest) Execute() (*models.ToolsKeywordsBidRatioDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsKeywordsBidRatioDeleteV30ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return ToolsKeywordsBidRatioDeleteV30Response
-func (a *ToolsKeywordsBidRatioDeleteV30ApiService) postExecute(r *ApiOpenApiV30ToolsKeywordsBidRatioDeletePostRequest) (*ToolsKeywordsBidRatioDeleteV30Response, *http.Response, error) {
+func (a *ToolsKeywordsBidRatioDeleteV30ApiService) postExecute(r *ApiOpenApiV30ToolsKeywordsBidRatioDeletePostRequest) (*models.ToolsKeywordsBidRatioDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsKeywordsBidRatioDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsKeywordsBidRatioDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsKeywordsBidRatioDeleteV30ApiService) postExecute(r *ApiOpenApiV30T
 	localVarPath := localBasePath + "/open_api/v3.0/tools/keywords_bid_ratio/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

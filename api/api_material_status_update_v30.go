@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // MaterialStatusUpdateV30ApiService MaterialStatusUpdateV30Api service
@@ -25,15 +26,15 @@ type MaterialStatusUpdateV30ApiService service
 type ApiOpenApiV30MaterialStatusUpdatePostRequest struct {
 	ctx                            context.Context
 	ApiService                     *MaterialStatusUpdateV30ApiService
-	materialStatusUpdateV30Request *MaterialStatusUpdateV30Request
+	materialStatusUpdateV30Request *models.MaterialStatusUpdateV30Request
 }
 
-func (r *ApiOpenApiV30MaterialStatusUpdatePostRequest) MaterialStatusUpdateV30Request(materialStatusUpdateV30Request MaterialStatusUpdateV30Request) *ApiOpenApiV30MaterialStatusUpdatePostRequest {
+func (r *ApiOpenApiV30MaterialStatusUpdatePostRequest) MaterialStatusUpdateV30Request(materialStatusUpdateV30Request models.MaterialStatusUpdateV30Request) *ApiOpenApiV30MaterialStatusUpdatePostRequest {
 	r.materialStatusUpdateV30Request = &materialStatusUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30MaterialStatusUpdatePostRequest) Execute() (*MaterialStatusUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30MaterialStatusUpdatePostRequest) Execute() (*models.MaterialStatusUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *MaterialStatusUpdateV30ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return MaterialStatusUpdateV30Response
-func (a *MaterialStatusUpdateV30ApiService) postExecute(r *ApiOpenApiV30MaterialStatusUpdatePostRequest) (*MaterialStatusUpdateV30Response, *http.Response, error) {
+func (a *MaterialStatusUpdateV30ApiService) postExecute(r *ApiOpenApiV30MaterialStatusUpdatePostRequest) (*models.MaterialStatusUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *MaterialStatusUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.MaterialStatusUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *MaterialStatusUpdateV30ApiService) postExecute(r *ApiOpenApiV30Material
 	localVarPath := localBasePath + "/open_api/v3.0/material/status/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

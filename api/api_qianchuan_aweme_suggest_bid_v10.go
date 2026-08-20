@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeSuggestBidV10ApiService QianchuanAwemeSuggestBidV10Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest struct {
 	ctx             context.Context
 	ApiService      *QianchuanAwemeSuggestBidV10ApiService
 	advertiserId    *int64
-	deliverySetting *QianchuanAwemeSuggestBidV10DeliverySetting
-	audience        *QianchuanAwemeSuggestBidV10Audience
+	deliverySetting *models.QianchuanAwemeSuggestBidV10DeliverySetting
+	audience        *models.QianchuanAwemeSuggestBidV10Audience
 }
 
 func (r *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest {
@@ -36,17 +37,17 @@ func (r *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest) AdvertiserId(advertise
 }
 
 // 投放设置
-func (r *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest) DeliverySetting(deliverySetting QianchuanAwemeSuggestBidV10DeliverySetting) *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest) DeliverySetting(deliverySetting models.QianchuanAwemeSuggestBidV10DeliverySetting) *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest {
 	r.deliverySetting = &deliverySetting
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest) Audience(audience QianchuanAwemeSuggestBidV10Audience) *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest) Audience(audience models.QianchuanAwemeSuggestBidV10Audience) *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest {
 	r.audience = &audience
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest) Execute() (*QianchuanAwemeSuggestBidV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest) Execute() (*models.QianchuanAwemeSuggestBidV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -80,12 +81,12 @@ func (a *QianchuanAwemeSuggestBidV10ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return QianchuanAwemeSuggestBidV10Response
-func (a *QianchuanAwemeSuggestBidV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest) (*QianchuanAwemeSuggestBidV10Response, *http.Response, error) {
+func (a *QianchuanAwemeSuggestBidV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeSuggestBidGetRequest) (*models.QianchuanAwemeSuggestBidV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeSuggestBidV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeSuggestBidV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -95,7 +96,7 @@ func (a *QianchuanAwemeSuggestBidV10ApiService) getExecute(r *ApiOpenApiV10Qianc
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/suggest_bid/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportAdvertiserGetV10ApiService QianchuanReportAdvertiserGetV10Api service
@@ -29,10 +30,10 @@ type ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest struct {
 	startDate       *string
 	endDate         *string
 	fields          *[]string
-	filtering       *QianchuanReportAdvertiserGetV10Filtering
-	timeGranularity *QianchuanReportAdvertiserGetV10TimeGranularity
+	filtering       *models.QianchuanReportAdvertiserGetV10Filtering
+	timeGranularity *models.QianchuanReportAdvertiserGetV10TimeGranularity
 	orderField      *string
-	orderType       *QianchuanReportAdvertiserGetV10OrderType
+	orderType       *models.QianchuanReportAdvertiserGetV10OrderType
 	page            *int32
 	pageSize        *int32
 }
@@ -62,13 +63,13 @@ func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) Fields(fields []st
 }
 
 // 过滤器
-func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) Filtering(filtering QianchuanReportAdvertiserGetV10Filtering) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) Filtering(filtering models.QianchuanReportAdvertiserGetV10Filtering) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
 // 返回数据时间聚合维度分组 ，允许值: - &#x60;TIME_GRANULARITY_DAILY&#x60;  天维度 - &#x60;TIME_GRANULARITY_HOURLY&#x60; 小时维度
-func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) TimeGranularity(timeGranularity QianchuanReportAdvertiserGetV10TimeGranularity) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) TimeGranularity(timeGranularity models.QianchuanReportAdvertiserGetV10TimeGranularity) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.timeGranularity = &timeGranularity
 	return r
 }
@@ -80,7 +81,7 @@ func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) OrderField(orderFi
 }
 
 // 排序方式，允许值： - &#x60;ASC&#x60; 升序（默认） - &#x60;DESC&#x60; 降序
-func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) OrderType(orderType QianchuanReportAdvertiserGetV10OrderType) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) OrderType(orderType models.QianchuanReportAdvertiserGetV10OrderType) *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -97,7 +98,7 @@ func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) PageSize(pageSize 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) Execute() (*QianchuanReportAdvertiserGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) Execute() (*models.QianchuanReportAdvertiserGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -131,12 +132,12 @@ func (a *QianchuanReportAdvertiserGetV10ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return QianchuanReportAdvertiserGetV10Response
-func (a *QianchuanReportAdvertiserGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) (*QianchuanReportAdvertiserGetV10Response, *http.Response, error) {
+func (a *QianchuanReportAdvertiserGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportAdvertiserGetGetRequest) (*models.QianchuanReportAdvertiserGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportAdvertiserGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportAdvertiserGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -146,7 +147,7 @@ func (a *QianchuanReportAdvertiserGetV10ApiService) getExecute(r *ApiOpenApiV10Q
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/advertiser/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

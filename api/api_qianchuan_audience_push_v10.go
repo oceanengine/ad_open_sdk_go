@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAudiencePushV10ApiService QianchuanAudiencePushV10Api service
@@ -25,15 +26,15 @@ type QianchuanAudiencePushV10ApiService service
 type ApiOpenApiV10QianchuanAudiencePushPostRequest struct {
 	ctx                             context.Context
 	ApiService                      *QianchuanAudiencePushV10ApiService
-	qianchuanAudiencePushV10Request *QianchuanAudiencePushV10Request
+	qianchuanAudiencePushV10Request *models.QianchuanAudiencePushV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanAudiencePushPostRequest) QianchuanAudiencePushV10Request(qianchuanAudiencePushV10Request QianchuanAudiencePushV10Request) *ApiOpenApiV10QianchuanAudiencePushPostRequest {
+func (r *ApiOpenApiV10QianchuanAudiencePushPostRequest) QianchuanAudiencePushV10Request(qianchuanAudiencePushV10Request models.QianchuanAudiencePushV10Request) *ApiOpenApiV10QianchuanAudiencePushPostRequest {
 	r.qianchuanAudiencePushV10Request = &qianchuanAudiencePushV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAudiencePushPostRequest) Execute() (*QianchuanAudiencePushV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAudiencePushPostRequest) Execute() (*models.QianchuanAudiencePushV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanAudiencePushV10ApiService) Post(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return QianchuanAudiencePushV10Response
-func (a *QianchuanAudiencePushV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAudiencePushPostRequest) (*QianchuanAudiencePushV10Response, *http.Response, error) {
+func (a *QianchuanAudiencePushV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAudiencePushPostRequest) (*models.QianchuanAudiencePushV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAudiencePushV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAudiencePushV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanAudiencePushV10ApiService) postExecute(r *ApiOpenApiV10Qianchu
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/audience/push/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

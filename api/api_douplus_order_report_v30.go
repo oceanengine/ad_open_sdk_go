@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DouplusOrderReportV30ApiService DouplusOrderReportV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30DouplusOrderReportGetRequest struct {
 	ctx         context.Context
 	ApiService  *DouplusOrderReportV30ApiService
 	awemeSecUid *string
-	statTime    *DouplusOrderReportV30StatTime
-	groupBy     *[]*DouplusOrderReportV30GroupBy
-	filter      *DouplusOrderReportV30Filter
+	statTime    *models.DouplusOrderReportV30StatTime
+	groupBy     *[]*models.DouplusOrderReportV30GroupBy
+	filter      *models.DouplusOrderReportV30Filter
 	pageSize    *int64
 	page        *int64
 }
@@ -38,17 +39,17 @@ func (r *ApiOpenApiV30DouplusOrderReportGetRequest) AwemeSecUid(awemeSecUid stri
 	return r
 }
 
-func (r *ApiOpenApiV30DouplusOrderReportGetRequest) StatTime(statTime DouplusOrderReportV30StatTime) *ApiOpenApiV30DouplusOrderReportGetRequest {
+func (r *ApiOpenApiV30DouplusOrderReportGetRequest) StatTime(statTime models.DouplusOrderReportV30StatTime) *ApiOpenApiV30DouplusOrderReportGetRequest {
 	r.statTime = &statTime
 	return r
 }
 
-func (r *ApiOpenApiV30DouplusOrderReportGetRequest) GroupBy(groupBy []*DouplusOrderReportV30GroupBy) *ApiOpenApiV30DouplusOrderReportGetRequest {
+func (r *ApiOpenApiV30DouplusOrderReportGetRequest) GroupBy(groupBy []*models.DouplusOrderReportV30GroupBy) *ApiOpenApiV30DouplusOrderReportGetRequest {
 	r.groupBy = &groupBy
 	return r
 }
 
-func (r *ApiOpenApiV30DouplusOrderReportGetRequest) Filter(filter DouplusOrderReportV30Filter) *ApiOpenApiV30DouplusOrderReportGetRequest {
+func (r *ApiOpenApiV30DouplusOrderReportGetRequest) Filter(filter models.DouplusOrderReportV30Filter) *ApiOpenApiV30DouplusOrderReportGetRequest {
 	r.filter = &filter
 	return r
 }
@@ -63,7 +64,7 @@ func (r *ApiOpenApiV30DouplusOrderReportGetRequest) Page(page int64) *ApiOpenApi
 	return r
 }
 
-func (r *ApiOpenApiV30DouplusOrderReportGetRequest) Execute() (*DouplusOrderReportV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DouplusOrderReportGetRequest) Execute() (*models.DouplusOrderReportV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *DouplusOrderReportV30ApiService) Get(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return DouplusOrderReportV30Response
-func (a *DouplusOrderReportV30ApiService) getExecute(r *ApiOpenApiV30DouplusOrderReportGetRequest) (*DouplusOrderReportV30Response, *http.Response, error) {
+func (a *DouplusOrderReportV30ApiService) getExecute(r *ApiOpenApiV30DouplusOrderReportGetRequest) (*models.DouplusOrderReportV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DouplusOrderReportV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DouplusOrderReportV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *DouplusOrderReportV30ApiService) getExecute(r *ApiOpenApiV30DouplusOrde
 	localVarPath := localBasePath + "/open_api/v3.0/douplus/order/report/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

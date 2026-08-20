@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsCommentHideV30ApiService ToolsCommentHideV30Api service
@@ -25,15 +26,15 @@ type ToolsCommentHideV30ApiService service
 type ApiOpenApiV30ToolsCommentHidePostRequest struct {
 	ctx                        context.Context
 	ApiService                 *ToolsCommentHideV30ApiService
-	toolsCommentHideV30Request *ToolsCommentHideV30Request
+	toolsCommentHideV30Request *models.ToolsCommentHideV30Request
 }
 
-func (r *ApiOpenApiV30ToolsCommentHidePostRequest) ToolsCommentHideV30Request(toolsCommentHideV30Request ToolsCommentHideV30Request) *ApiOpenApiV30ToolsCommentHidePostRequest {
+func (r *ApiOpenApiV30ToolsCommentHidePostRequest) ToolsCommentHideV30Request(toolsCommentHideV30Request models.ToolsCommentHideV30Request) *ApiOpenApiV30ToolsCommentHidePostRequest {
 	r.toolsCommentHideV30Request = &toolsCommentHideV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsCommentHidePostRequest) Execute() (*ToolsCommentHideV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsCommentHidePostRequest) Execute() (*models.ToolsCommentHideV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsCommentHideV30ApiService) Post(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return ToolsCommentHideV30Response
-func (a *ToolsCommentHideV30ApiService) postExecute(r *ApiOpenApiV30ToolsCommentHidePostRequest) (*ToolsCommentHideV30Response, *http.Response, error) {
+func (a *ToolsCommentHideV30ApiService) postExecute(r *ApiOpenApiV30ToolsCommentHidePostRequest) (*models.ToolsCommentHideV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsCommentHideV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsCommentHideV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsCommentHideV30ApiService) postExecute(r *ApiOpenApiV30ToolsComment
 	localVarPath := localBasePath + "/open_api/v3.0/tools/comment/hide/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

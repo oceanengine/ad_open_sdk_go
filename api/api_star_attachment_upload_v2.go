@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarAttachmentUploadV2ApiService StarAttachmentUploadV2Api service
@@ -25,13 +26,13 @@ type StarAttachmentUploadV2ApiService service
 type ApiOpenApi2StarAttachmentUploadPostRequest struct {
 	ctx        context.Context
 	ApiService *StarAttachmentUploadV2ApiService
-	file       *FormFileInfo
+	file       *models.FormFileInfo
 	fileName   *string
 	starId     *int64
 }
 
 // 上传的文件
-func (r *ApiOpenApi2StarAttachmentUploadPostRequest) File(file *FormFileInfo) *ApiOpenApi2StarAttachmentUploadPostRequest {
+func (r *ApiOpenApi2StarAttachmentUploadPostRequest) File(file *models.FormFileInfo) *ApiOpenApi2StarAttachmentUploadPostRequest {
 	r.file = file
 	return r
 }
@@ -48,7 +49,7 @@ func (r *ApiOpenApi2StarAttachmentUploadPostRequest) StarId(starId int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2StarAttachmentUploadPostRequest) Execute() (*StarAttachmentUploadV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarAttachmentUploadPostRequest) Execute() (*models.StarAttachmentUploadV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *StarAttachmentUploadV2ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return StarAttachmentUploadV2Response
-func (a *StarAttachmentUploadV2ApiService) postExecute(r *ApiOpenApi2StarAttachmentUploadPostRequest) (*StarAttachmentUploadV2Response, *http.Response, error) {
+func (a *StarAttachmentUploadV2ApiService) postExecute(r *ApiOpenApi2StarAttachmentUploadPostRequest) (*models.StarAttachmentUploadV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarAttachmentUploadV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarAttachmentUploadV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *StarAttachmentUploadV2ApiService) postExecute(r *ApiOpenApi2StarAttachm
 	localVarPath := localBasePath + "/open_api/2/star/attachment/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.file == nil {

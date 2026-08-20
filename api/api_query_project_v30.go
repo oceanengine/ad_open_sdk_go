@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QueryProjectV30ApiService QueryProjectV30Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV30QueryProjectGetRequest struct {
 	agentId    *int64
 	count      *int32
 	cursor     *int64
-	filtering  *QueryProjectV30Filtering
+	filtering  *models.QueryProjectV30Filtering
 }
 
 // 代理商ID
@@ -50,12 +51,12 @@ func (r *ApiOpenApiV30QueryProjectGetRequest) Cursor(cursor int64) *ApiOpenApiV3
 }
 
 // 过滤器
-func (r *ApiOpenApiV30QueryProjectGetRequest) Filtering(filtering QueryProjectV30Filtering) *ApiOpenApiV30QueryProjectGetRequest {
+func (r *ApiOpenApiV30QueryProjectGetRequest) Filtering(filtering models.QueryProjectV30Filtering) *ApiOpenApiV30QueryProjectGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30QueryProjectGetRequest) Execute() (*QueryProjectV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30QueryProjectGetRequest) Execute() (*models.QueryProjectV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *QueryProjectV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Query
 // Execute executes the request
 //
 //	@return QueryProjectV30Response
-func (a *QueryProjectV30ApiService) getExecute(r *ApiOpenApiV30QueryProjectGetRequest) (*QueryProjectV30Response, *http.Response, error) {
+func (a *QueryProjectV30ApiService) getExecute(r *ApiOpenApiV30QueryProjectGetRequest) (*models.QueryProjectV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QueryProjectV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QueryProjectV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *QueryProjectV30ApiService) getExecute(r *ApiOpenApiV30QueryProjectGetRe
 	localVarPath := localBasePath + "/open_api/v3.0/query/project/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

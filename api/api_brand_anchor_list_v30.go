@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandAnchorListV30ApiService BrandAnchorListV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30BrandAnchorListGetRequest struct {
 	ctx          context.Context
 	ApiService   *BrandAnchorListV30ApiService
 	advertiserId *int64
-	page         *BrandAnchorListV30Page
+	page         *models.BrandAnchorListV30Page
 }
 
 func (r *ApiOpenApiV30BrandAnchorListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30BrandAnchorListGetRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApiV30BrandAnchorListGetRequest) AdvertiserId(advertiserId int64
 	return r
 }
 
-func (r *ApiOpenApiV30BrandAnchorListGetRequest) Page(page BrandAnchorListV30Page) *ApiOpenApiV30BrandAnchorListGetRequest {
+func (r *ApiOpenApiV30BrandAnchorListGetRequest) Page(page models.BrandAnchorListV30Page) *ApiOpenApiV30BrandAnchorListGetRequest {
 	r.page = &page
 	return r
 }
 
-func (r *ApiOpenApiV30BrandAnchorListGetRequest) Execute() (*BrandAnchorListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandAnchorListGetRequest) Execute() (*models.BrandAnchorListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *BrandAnchorListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Br
 // Execute executes the request
 //
 //	@return BrandAnchorListV30Response
-func (a *BrandAnchorListV30ApiService) getExecute(r *ApiOpenApiV30BrandAnchorListGetRequest) (*BrandAnchorListV30Response, *http.Response, error) {
+func (a *BrandAnchorListV30ApiService) getExecute(r *ApiOpenApiV30BrandAnchorListGetRequest) (*models.BrandAnchorListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandAnchorListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandAnchorListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *BrandAnchorListV30ApiService) getExecute(r *ApiOpenApiV30BrandAnchorLis
 	localVarPath := localBasePath + "/open_api/v3.0/brand/anchor/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

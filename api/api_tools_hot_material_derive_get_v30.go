@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsHotMaterialDeriveGetV30ApiService ToolsHotMaterialDeriveGetV30Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30ToolsHotMaterialDeriveGetGetRequest) TaskIds(taskIds []int
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsHotMaterialDeriveGetGetRequest) Execute() (*ToolsHotMaterialDeriveGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsHotMaterialDeriveGetGetRequest) Execute() (*models.ToolsHotMaterialDeriveGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsHotMaterialDeriveGetV30ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsHotMaterialDeriveGetV30Response
-func (a *ToolsHotMaterialDeriveGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsHotMaterialDeriveGetGetRequest) (*ToolsHotMaterialDeriveGetV30Response, *http.Response, error) {
+func (a *ToolsHotMaterialDeriveGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsHotMaterialDeriveGetGetRequest) (*models.ToolsHotMaterialDeriveGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsHotMaterialDeriveGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsHotMaterialDeriveGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsHotMaterialDeriveGetV30ApiService) getExecute(r *ApiOpenApiV30Tool
 	localVarPath := localBasePath + "/open_api/v3.0/tools/hot_material_derive/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

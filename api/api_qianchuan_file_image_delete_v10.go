@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanFileImageDeleteV10ApiService QianchuanFileImageDeleteV10Api service
@@ -25,15 +26,15 @@ type QianchuanFileImageDeleteV10ApiService service
 type ApiOpenApiV10QianchuanFileImageDeletePostRequest struct {
 	ctx                                context.Context
 	ApiService                         *QianchuanFileImageDeleteV10ApiService
-	qianchuanFileImageDeleteV10Request *QianchuanFileImageDeleteV10Request
+	qianchuanFileImageDeleteV10Request *models.QianchuanFileImageDeleteV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanFileImageDeletePostRequest) QianchuanFileImageDeleteV10Request(qianchuanFileImageDeleteV10Request QianchuanFileImageDeleteV10Request) *ApiOpenApiV10QianchuanFileImageDeletePostRequest {
+func (r *ApiOpenApiV10QianchuanFileImageDeletePostRequest) QianchuanFileImageDeleteV10Request(qianchuanFileImageDeleteV10Request models.QianchuanFileImageDeleteV10Request) *ApiOpenApiV10QianchuanFileImageDeletePostRequest {
 	r.qianchuanFileImageDeleteV10Request = &qianchuanFileImageDeleteV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanFileImageDeletePostRequest) Execute() (*QianchuanFileImageDeleteV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanFileImageDeletePostRequest) Execute() (*models.QianchuanFileImageDeleteV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanFileImageDeleteV10ApiService) Post(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return QianchuanFileImageDeleteV10Response
-func (a *QianchuanFileImageDeleteV10ApiService) postExecute(r *ApiOpenApiV10QianchuanFileImageDeletePostRequest) (*QianchuanFileImageDeleteV10Response, *http.Response, error) {
+func (a *QianchuanFileImageDeleteV10ApiService) postExecute(r *ApiOpenApiV10QianchuanFileImageDeletePostRequest) (*models.QianchuanFileImageDeleteV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanFileImageDeleteV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanFileImageDeleteV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanFileImageDeleteV10ApiService) postExecute(r *ApiOpenApiV10Qian
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/file/image/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

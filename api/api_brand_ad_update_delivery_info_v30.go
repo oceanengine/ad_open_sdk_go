@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandAdUpdateDeliveryInfoV30ApiService BrandAdUpdateDeliveryInfoV30Api service
@@ -25,15 +26,15 @@ type BrandAdUpdateDeliveryInfoV30ApiService service
 type ApiOpenApiV30BrandAdUpdateDeliveryInfoPostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *BrandAdUpdateDeliveryInfoV30ApiService
-	brandAdUpdateDeliveryInfoV30Request *BrandAdUpdateDeliveryInfoV30Request
+	brandAdUpdateDeliveryInfoV30Request *models.BrandAdUpdateDeliveryInfoV30Request
 }
 
-func (r *ApiOpenApiV30BrandAdUpdateDeliveryInfoPostRequest) BrandAdUpdateDeliveryInfoV30Request(brandAdUpdateDeliveryInfoV30Request BrandAdUpdateDeliveryInfoV30Request) *ApiOpenApiV30BrandAdUpdateDeliveryInfoPostRequest {
+func (r *ApiOpenApiV30BrandAdUpdateDeliveryInfoPostRequest) BrandAdUpdateDeliveryInfoV30Request(brandAdUpdateDeliveryInfoV30Request models.BrandAdUpdateDeliveryInfoV30Request) *ApiOpenApiV30BrandAdUpdateDeliveryInfoPostRequest {
 	r.brandAdUpdateDeliveryInfoV30Request = &brandAdUpdateDeliveryInfoV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30BrandAdUpdateDeliveryInfoPostRequest) Execute() (*BrandAdUpdateDeliveryInfoV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandAdUpdateDeliveryInfoPostRequest) Execute() (*models.BrandAdUpdateDeliveryInfoV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *BrandAdUpdateDeliveryInfoV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return BrandAdUpdateDeliveryInfoV30Response
-func (a *BrandAdUpdateDeliveryInfoV30ApiService) postExecute(r *ApiOpenApiV30BrandAdUpdateDeliveryInfoPostRequest) (*BrandAdUpdateDeliveryInfoV30Response, *http.Response, error) {
+func (a *BrandAdUpdateDeliveryInfoV30ApiService) postExecute(r *ApiOpenApiV30BrandAdUpdateDeliveryInfoPostRequest) (*models.BrandAdUpdateDeliveryInfoV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandAdUpdateDeliveryInfoV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandAdUpdateDeliveryInfoV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *BrandAdUpdateDeliveryInfoV30ApiService) postExecute(r *ApiOpenApiV30Bra
 	localVarPath := localBasePath + "/open_api/v3.0/brand/ad/update_delivery_info/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

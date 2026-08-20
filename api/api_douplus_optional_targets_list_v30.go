@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DouplusOptionalTargetsListV30ApiService DouplusOptionalTargetsListV30Api service
@@ -47,7 +48,7 @@ func (r *ApiOpenApiV30DouplusOptionalTargetsListGetRequest) LiveAwemeId(liveAwem
 	return r
 }
 
-func (r *ApiOpenApiV30DouplusOptionalTargetsListGetRequest) Execute() (*DouplusOptionalTargetsListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DouplusOptionalTargetsListGetRequest) Execute() (*models.DouplusOptionalTargetsListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -81,12 +82,12 @@ func (a *DouplusOptionalTargetsListV30ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return DouplusOptionalTargetsListV30Response
-func (a *DouplusOptionalTargetsListV30ApiService) getExecute(r *ApiOpenApiV30DouplusOptionalTargetsListGetRequest) (*DouplusOptionalTargetsListV30Response, *http.Response, error) {
+func (a *DouplusOptionalTargetsListV30ApiService) getExecute(r *ApiOpenApiV30DouplusOptionalTargetsListGetRequest) (*models.DouplusOptionalTargetsListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DouplusOptionalTargetsListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DouplusOptionalTargetsListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -96,7 +97,7 @@ func (a *DouplusOptionalTargetsListV30ApiService) getExecute(r *ApiOpenApiV30Dou
 	localVarPath := localBasePath + "/open_api/v3.0/douplus/optional_targets/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

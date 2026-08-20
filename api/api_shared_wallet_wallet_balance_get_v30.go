@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SharedWalletWalletBalanceGetV30ApiService SharedWalletWalletBalanceGetV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest struct {
 	ctx                  context.Context
 	ApiService           *SharedWalletWalletBalanceGetV30ApiService
 	accountId            *int64
-	accountType          *SharedWalletWalletBalanceGetV30AccountType
+	accountType          *models.SharedWalletWalletBalanceGetV30AccountType
 	walletIdList         *[]int64
-	walletBalanceFilters *SharedWalletWalletBalanceGetV30WalletBalanceFilters
+	walletBalanceFilters *models.SharedWalletWalletBalanceGetV30WalletBalanceFilters
 }
 
 // 账户ID，对于巨量AD、千川、本地推是广告主ID，对于代理商是代理商ID
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest) AccountId(accountI
 }
 
 // 账户类型
-func (r *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest) AccountType(accountType SharedWalletWalletBalanceGetV30AccountType) *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest {
+func (r *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest) AccountType(accountType models.SharedWalletWalletBalanceGetV30AccountType) *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -50,12 +51,12 @@ func (r *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest) WalletIdList(walle
 }
 
 // 余额过滤条件
-func (r *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest) WalletBalanceFilters(walletBalanceFilters SharedWalletWalletBalanceGetV30WalletBalanceFilters) *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest {
+func (r *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest) WalletBalanceFilters(walletBalanceFilters models.SharedWalletWalletBalanceGetV30WalletBalanceFilters) *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest {
 	r.walletBalanceFilters = &walletBalanceFilters
 	return r
 }
 
-func (r *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest) Execute() (*SharedWalletWalletBalanceGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest) Execute() (*models.SharedWalletWalletBalanceGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *SharedWalletWalletBalanceGetV30ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return SharedWalletWalletBalanceGetV30Response
-func (a *SharedWalletWalletBalanceGetV30ApiService) getExecute(r *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest) (*SharedWalletWalletBalanceGetV30Response, *http.Response, error) {
+func (a *SharedWalletWalletBalanceGetV30ApiService) getExecute(r *ApiOpenApiV30SharedWalletWalletBalanceGetGetRequest) (*models.SharedWalletWalletBalanceGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SharedWalletWalletBalanceGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SharedWalletWalletBalanceGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *SharedWalletWalletBalanceGetV30ApiService) getExecute(r *ApiOpenApiV30S
 	localVarPath := localBasePath + "/open_api/v3.0/shared_wallet/wallet_balance/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

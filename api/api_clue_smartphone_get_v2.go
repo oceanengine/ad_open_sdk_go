@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueSmartphoneGetV2ApiService ClueSmartphoneGetV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2ClueSmartphoneGetGetRequest struct {
 	advertiserId *int64
 	endTime      **string
 	instanceIds  *[]int64
-	isDel        *ClueSmartphoneGetV2IsDel
+	isDel        *models.ClueSmartphoneGetV2IsDel
 	page         *int64
 	pageSize     *int64
 	startTime    **string
@@ -49,7 +50,7 @@ func (r *ApiOpenApi2ClueSmartphoneGetGetRequest) InstanceIds(instanceIds []int64
 	return r
 }
 
-func (r *ApiOpenApi2ClueSmartphoneGetGetRequest) IsDel(isDel ClueSmartphoneGetV2IsDel) *ApiOpenApi2ClueSmartphoneGetGetRequest {
+func (r *ApiOpenApi2ClueSmartphoneGetGetRequest) IsDel(isDel models.ClueSmartphoneGetV2IsDel) *ApiOpenApi2ClueSmartphoneGetGetRequest {
 	r.isDel = &isDel
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApi2ClueSmartphoneGetGetRequest) StartTime(startTime *string) *A
 	return r
 }
 
-func (r *ApiOpenApi2ClueSmartphoneGetGetRequest) Execute() (*ClueSmartphoneGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueSmartphoneGetGetRequest) Execute() (*models.ClueSmartphoneGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *ClueSmartphoneGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Clu
 // Execute executes the request
 //
 //	@return ClueSmartphoneGetV2Response
-func (a *ClueSmartphoneGetV2ApiService) getExecute(r *ApiOpenApi2ClueSmartphoneGetGetRequest) (*ClueSmartphoneGetV2Response, *http.Response, error) {
+func (a *ClueSmartphoneGetV2ApiService) getExecute(r *ApiOpenApi2ClueSmartphoneGetGetRequest) (*models.ClueSmartphoneGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueSmartphoneGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueSmartphoneGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *ClueSmartphoneGetV2ApiService) getExecute(r *ApiOpenApi2ClueSmartphoneG
 	localVarPath := localBasePath + "/open_api/2/clue/smartphone/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

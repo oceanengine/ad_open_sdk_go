@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemandGetEpisodeLimitV2ApiService StarDemandGetEpisodeLimitV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2StarDemandGetEpisodeLimitGetRequest) AlbumId(albumId int64) 
 	return r
 }
 
-func (r *ApiOpenApi2StarDemandGetEpisodeLimitGetRequest) Execute() (*StarDemandGetEpisodeLimitV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemandGetEpisodeLimitGetRequest) Execute() (*models.StarDemandGetEpisodeLimitV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *StarDemandGetEpisodeLimitV2ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return StarDemandGetEpisodeLimitV2Response
-func (a *StarDemandGetEpisodeLimitV2ApiService) getExecute(r *ApiOpenApi2StarDemandGetEpisodeLimitGetRequest) (*StarDemandGetEpisodeLimitV2Response, *http.Response, error) {
+func (a *StarDemandGetEpisodeLimitV2ApiService) getExecute(r *ApiOpenApi2StarDemandGetEpisodeLimitGetRequest) (*models.StarDemandGetEpisodeLimitV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemandGetEpisodeLimitV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemandGetEpisodeLimitV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *StarDemandGetEpisodeLimitV2ApiService) getExecute(r *ApiOpenApi2StarDem
 	localVarPath := localBasePath + "/open_api/2/star/demand/get_episode_limit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

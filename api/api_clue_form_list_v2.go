@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueFormListV2ApiService ClueFormListV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2ClueFormListGetRequest struct {
 	advertiserId *int64
 	endTime      **string
 	instanceIds  *[]int64
-	isDel        *ClueFormListV2IsDel
+	isDel        *models.ClueFormListV2IsDel
 	page         *int64
 	pageSize     *int64
 	startTime    **string
@@ -49,7 +50,7 @@ func (r *ApiOpenApi2ClueFormListGetRequest) InstanceIds(instanceIds []int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2ClueFormListGetRequest) IsDel(isDel ClueFormListV2IsDel) *ApiOpenApi2ClueFormListGetRequest {
+func (r *ApiOpenApi2ClueFormListGetRequest) IsDel(isDel models.ClueFormListV2IsDel) *ApiOpenApi2ClueFormListGetRequest {
 	r.isDel = &isDel
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApi2ClueFormListGetRequest) StartTime(startTime *string) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApi2ClueFormListGetRequest) Execute() (*ClueFormListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueFormListGetRequest) Execute() (*models.ClueFormListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *ClueFormListV2ApiService) Get(ctx context.Context) *ApiOpenApi2ClueForm
 // Execute executes the request
 //
 //	@return ClueFormListV2Response
-func (a *ClueFormListV2ApiService) getExecute(r *ApiOpenApi2ClueFormListGetRequest) (*ClueFormListV2Response, *http.Response, error) {
+func (a *ClueFormListV2ApiService) getExecute(r *ApiOpenApi2ClueFormListGetRequest) (*models.ClueFormListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueFormListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueFormListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *ClueFormListV2ApiService) getExecute(r *ApiOpenApi2ClueFormListGetReque
 	localVarPath := localBasePath + "/open_api/2/clue/form/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

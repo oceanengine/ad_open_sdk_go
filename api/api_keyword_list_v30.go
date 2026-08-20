@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // KeywordListV30ApiService KeywordListV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30KeywordListGetRequest struct {
 	ctx          context.Context
 	ApiService   *KeywordListV30ApiService
 	advertiserId *int64
-	filtering    *KeywordListV30Filtering
+	filtering    *models.KeywordListV30Filtering
 }
 
 func (r *ApiOpenApiV30KeywordListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30KeywordListGetRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApiV30KeywordListGetRequest) AdvertiserId(advertiserId int64) *A
 	return r
 }
 
-func (r *ApiOpenApiV30KeywordListGetRequest) Filtering(filtering KeywordListV30Filtering) *ApiOpenApiV30KeywordListGetRequest {
+func (r *ApiOpenApiV30KeywordListGetRequest) Filtering(filtering models.KeywordListV30Filtering) *ApiOpenApiV30KeywordListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30KeywordListGetRequest) Execute() (*KeywordListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30KeywordListGetRequest) Execute() (*models.KeywordListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *KeywordListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Keywor
 // Execute executes the request
 //
 //	@return KeywordListV30Response
-func (a *KeywordListV30ApiService) getExecute(r *ApiOpenApiV30KeywordListGetRequest) (*KeywordListV30Response, *http.Response, error) {
+func (a *KeywordListV30ApiService) getExecute(r *ApiOpenApiV30KeywordListGetRequest) (*models.KeywordListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *KeywordListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.KeywordListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *KeywordListV30ApiService) getExecute(r *ApiOpenApiV30KeywordListGetRequ
 	localVarPath := localBasePath + "/open_api/v3.0/keyword/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

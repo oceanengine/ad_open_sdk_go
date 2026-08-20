@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPlayableGrantV2ApiService ToolsPlayableGrantV2Api service
@@ -25,15 +26,15 @@ type ToolsPlayableGrantV2ApiService service
 type ApiOpenApi2ToolsPlayableGrantPostRequest struct {
 	ctx                         context.Context
 	ApiService                  *ToolsPlayableGrantV2ApiService
-	toolsPlayableGrantV2Request *ToolsPlayableGrantV2Request
+	toolsPlayableGrantV2Request *models.ToolsPlayableGrantV2Request
 }
 
-func (r *ApiOpenApi2ToolsPlayableGrantPostRequest) ToolsPlayableGrantV2Request(toolsPlayableGrantV2Request ToolsPlayableGrantV2Request) *ApiOpenApi2ToolsPlayableGrantPostRequest {
+func (r *ApiOpenApi2ToolsPlayableGrantPostRequest) ToolsPlayableGrantV2Request(toolsPlayableGrantV2Request models.ToolsPlayableGrantV2Request) *ApiOpenApi2ToolsPlayableGrantPostRequest {
 	r.toolsPlayableGrantV2Request = &toolsPlayableGrantV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPlayableGrantPostRequest) Execute() (*ToolsPlayableGrantV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPlayableGrantPostRequest) Execute() (*models.ToolsPlayableGrantV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *ToolsPlayableGrantV2ApiService) Post(ctx context.Context) *ApiOpenApi2T
 // Execute executes the request
 //
 //	@return ToolsPlayableGrantV2Response
-func (a *ToolsPlayableGrantV2ApiService) postExecute(r *ApiOpenApi2ToolsPlayableGrantPostRequest) (*ToolsPlayableGrantV2Response, *http.Response, error) {
+func (a *ToolsPlayableGrantV2ApiService) postExecute(r *ApiOpenApi2ToolsPlayableGrantPostRequest) (*models.ToolsPlayableGrantV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPlayableGrantV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPlayableGrantV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *ToolsPlayableGrantV2ApiService) postExecute(r *ApiOpenApi2ToolsPlayable
 	localVarPath := localBasePath + "/open_api/2/tools/playable/grant/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

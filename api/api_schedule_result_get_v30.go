@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ScheduleResultGetV30ApiService ScheduleResultGetV30Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30ScheduleResultGetGetRequest) AdvertiserId(advertiserId int
 	return r
 }
 
-func (r *ApiOpenApiV30ScheduleResultGetGetRequest) Execute() (*ScheduleResultGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ScheduleResultGetGetRequest) Execute() (*models.ScheduleResultGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ScheduleResultGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return ScheduleResultGetV30Response
-func (a *ScheduleResultGetV30ApiService) getExecute(r *ApiOpenApiV30ScheduleResultGetGetRequest) (*ScheduleResultGetV30Response, *http.Response, error) {
+func (a *ScheduleResultGetV30ApiService) getExecute(r *ApiOpenApiV30ScheduleResultGetGetRequest) (*models.ScheduleResultGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ScheduleResultGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ScheduleResultGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ScheduleResultGetV30ApiService) getExecute(r *ApiOpenApiV30ScheduleResu
 	localVarPath := localBasePath + "/open_api/v3.0/schedule/result/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.schedulerId == nil {

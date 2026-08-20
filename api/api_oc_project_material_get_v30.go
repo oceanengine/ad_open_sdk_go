@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OcProjectMaterialGetV30ApiService OcProjectMaterialGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30OcProjectMaterialGetGetRequest struct {
 	ApiService   *OcProjectMaterialGetV30ApiService
 	advertiserId *int64
 	projectId    *int64
-	filtering    *OcProjectMaterialGetV30Filtering
+	filtering    *models.OcProjectMaterialGetV30Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -43,7 +44,7 @@ func (r *ApiOpenApiV30OcProjectMaterialGetGetRequest) ProjectId(projectId int64)
 }
 
 // 过滤器
-func (r *ApiOpenApiV30OcProjectMaterialGetGetRequest) Filtering(filtering OcProjectMaterialGetV30Filtering) *ApiOpenApiV30OcProjectMaterialGetGetRequest {
+func (r *ApiOpenApiV30OcProjectMaterialGetGetRequest) Filtering(filtering models.OcProjectMaterialGetV30Filtering) *ApiOpenApiV30OcProjectMaterialGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -58,7 +59,7 @@ func (r *ApiOpenApiV30OcProjectMaterialGetGetRequest) PageSize(pageSize int64) *
 	return r
 }
 
-func (r *ApiOpenApiV30OcProjectMaterialGetGetRequest) Execute() (*OcProjectMaterialGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OcProjectMaterialGetGetRequest) Execute() (*models.OcProjectMaterialGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -92,12 +93,12 @@ func (a *OcProjectMaterialGetV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return OcProjectMaterialGetV30Response
-func (a *OcProjectMaterialGetV30ApiService) getExecute(r *ApiOpenApiV30OcProjectMaterialGetGetRequest) (*OcProjectMaterialGetV30Response, *http.Response, error) {
+func (a *OcProjectMaterialGetV30ApiService) getExecute(r *ApiOpenApiV30OcProjectMaterialGetGetRequest) (*models.OcProjectMaterialGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OcProjectMaterialGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OcProjectMaterialGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -107,7 +108,7 @@ func (a *OcProjectMaterialGetV30ApiService) getExecute(r *ApiOpenApiV30OcProject
 	localVarPath := localBasePath + "/open_api/v3.0/oc_project/material/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

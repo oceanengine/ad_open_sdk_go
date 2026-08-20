@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalPromotionCostProtectStatusGetV30ApiService LocalPromotionCostProtectStatusGetV30Api service
@@ -40,7 +41,7 @@ func (r *ApiOpenApiV30LocalPromotionCostProtectStatusGetGetRequest) PromotionIds
 	return r
 }
 
-func (r *ApiOpenApiV30LocalPromotionCostProtectStatusGetGetRequest) Execute() (*LocalPromotionCostProtectStatusGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalPromotionCostProtectStatusGetGetRequest) Execute() (*models.LocalPromotionCostProtectStatusGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *LocalPromotionCostProtectStatusGetV30ApiService) Get(ctx context.Contex
 // Execute executes the request
 //
 //	@return LocalPromotionCostProtectStatusGetV30Response
-func (a *LocalPromotionCostProtectStatusGetV30ApiService) getExecute(r *ApiOpenApiV30LocalPromotionCostProtectStatusGetGetRequest) (*LocalPromotionCostProtectStatusGetV30Response, *http.Response, error) {
+func (a *LocalPromotionCostProtectStatusGetV30ApiService) getExecute(r *ApiOpenApiV30LocalPromotionCostProtectStatusGetGetRequest) (*models.LocalPromotionCostProtectStatusGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalPromotionCostProtectStatusGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalPromotionCostProtectStatusGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *LocalPromotionCostProtectStatusGetV30ApiService) getExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/v3.0/local/promotion/cost_protect_status/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

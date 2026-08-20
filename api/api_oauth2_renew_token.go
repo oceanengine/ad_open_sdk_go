@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // Oauth2RenewTokenApiService Oauth2RenewTokenApi service
@@ -25,15 +26,15 @@ type Oauth2RenewTokenApiService service
 type ApiOpenApiOauth2RenewTokenPostRequest struct {
 	ctx                     context.Context
 	ApiService              *Oauth2RenewTokenApiService
-	oauth2RenewTokenRequest *Oauth2RenewTokenRequest
+	oauth2RenewTokenRequest *models.Oauth2RenewTokenRequest
 }
 
-func (r *ApiOpenApiOauth2RenewTokenPostRequest) Oauth2RenewTokenRequest(oauth2RenewTokenRequest Oauth2RenewTokenRequest) *ApiOpenApiOauth2RenewTokenPostRequest {
+func (r *ApiOpenApiOauth2RenewTokenPostRequest) Oauth2RenewTokenRequest(oauth2RenewTokenRequest models.Oauth2RenewTokenRequest) *ApiOpenApiOauth2RenewTokenPostRequest {
 	r.oauth2RenewTokenRequest = &oauth2RenewTokenRequest
 	return r
 }
 
-func (r *ApiOpenApiOauth2RenewTokenPostRequest) Execute() (*Oauth2RenewTokenResponse, *http.Response, error) {
+func (r *ApiOpenApiOauth2RenewTokenPostRequest) Execute() (*models.Oauth2RenewTokenResponse, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *Oauth2RenewTokenApiService) Post(ctx context.Context) *ApiOpenApiOauth2
 // Execute executes the request
 //
 //	@return Oauth2RenewTokenResponse
-func (a *Oauth2RenewTokenApiService) postExecute(r *ApiOpenApiOauth2RenewTokenPostRequest) (*Oauth2RenewTokenResponse, *http.Response, error) {
+func (a *Oauth2RenewTokenApiService) postExecute(r *ApiOpenApiOauth2RenewTokenPostRequest) (*models.Oauth2RenewTokenResponse, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *Oauth2RenewTokenResponse
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.Oauth2RenewTokenResponse
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *Oauth2RenewTokenApiService) postExecute(r *ApiOpenApiOauth2RenewTokenPo
 	localVarPath := localBasePath + "/open_api/oauth2/renew_token/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

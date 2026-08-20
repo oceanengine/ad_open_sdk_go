@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsCommentMetricsGetV30ApiService ToolsCommentMetricsGetV30Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV30ToolsCommentMetricsGetGetRequest struct {
 	advertiserId *int64
 	startTime    *string
 	endTime      *string
-	filtering    *ToolsCommentMetricsGetV30Filtering
+	filtering    *models.ToolsCommentMetricsGetV30Filtering
 }
 
 // 广告主id
@@ -47,12 +48,12 @@ func (r *ApiOpenApiV30ToolsCommentMetricsGetGetRequest) EndTime(endTime string) 
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsCommentMetricsGetGetRequest) Filtering(filtering ToolsCommentMetricsGetV30Filtering) *ApiOpenApiV30ToolsCommentMetricsGetGetRequest {
+func (r *ApiOpenApiV30ToolsCommentMetricsGetGetRequest) Filtering(filtering models.ToolsCommentMetricsGetV30Filtering) *ApiOpenApiV30ToolsCommentMetricsGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsCommentMetricsGetGetRequest) Execute() (*ToolsCommentMetricsGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsCommentMetricsGetGetRequest) Execute() (*models.ToolsCommentMetricsGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -86,12 +87,12 @@ func (a *ToolsCommentMetricsGetV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return ToolsCommentMetricsGetV30Response
-func (a *ToolsCommentMetricsGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsCommentMetricsGetGetRequest) (*ToolsCommentMetricsGetV30Response, *http.Response, error) {
+func (a *ToolsCommentMetricsGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsCommentMetricsGetGetRequest) (*models.ToolsCommentMetricsGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsCommentMetricsGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsCommentMetricsGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -101,7 +102,7 @@ func (a *ToolsCommentMetricsGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsCo
 	localVarPath := localBasePath + "/open_api/v3.0/tools/comment_metrics/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

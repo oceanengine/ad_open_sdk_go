@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueCaInterfaceCreateV2ApiService ClueCaInterfaceCreateV2Api service
@@ -25,15 +26,15 @@ type ClueCaInterfaceCreateV2ApiService service
 type ApiOpenApi2ClueCaInterfaceCreatePostRequest struct {
 	ctx                            context.Context
 	ApiService                     *ClueCaInterfaceCreateV2ApiService
-	clueCaInterfaceCreateV2Request *ClueCaInterfaceCreateV2Request
+	clueCaInterfaceCreateV2Request *models.ClueCaInterfaceCreateV2Request
 }
 
-func (r *ApiOpenApi2ClueCaInterfaceCreatePostRequest) ClueCaInterfaceCreateV2Request(clueCaInterfaceCreateV2Request ClueCaInterfaceCreateV2Request) *ApiOpenApi2ClueCaInterfaceCreatePostRequest {
+func (r *ApiOpenApi2ClueCaInterfaceCreatePostRequest) ClueCaInterfaceCreateV2Request(clueCaInterfaceCreateV2Request models.ClueCaInterfaceCreateV2Request) *ApiOpenApi2ClueCaInterfaceCreatePostRequest {
 	r.clueCaInterfaceCreateV2Request = &clueCaInterfaceCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ClueCaInterfaceCreatePostRequest) Execute() (*ClueCaInterfaceCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueCaInterfaceCreatePostRequest) Execute() (*models.ClueCaInterfaceCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ClueCaInterfaceCreateV2ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ClueCaInterfaceCreateV2Response
-func (a *ClueCaInterfaceCreateV2ApiService) postExecute(r *ApiOpenApi2ClueCaInterfaceCreatePostRequest) (*ClueCaInterfaceCreateV2Response, *http.Response, error) {
+func (a *ClueCaInterfaceCreateV2ApiService) postExecute(r *ApiOpenApi2ClueCaInterfaceCreatePostRequest) (*models.ClueCaInterfaceCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueCaInterfaceCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueCaInterfaceCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ClueCaInterfaceCreateV2ApiService) postExecute(r *ApiOpenApi2ClueCaInte
 	localVarPath := localBasePath + "/open_api/2/clue/ca/interface/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

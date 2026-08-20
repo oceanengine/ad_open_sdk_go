@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalFileVideoAwemeGetV30ApiService LocalFileVideoAwemeGetV30Api service
@@ -27,9 +28,9 @@ type ApiOpenApiV30LocalFileVideoAwemeGetGetRequest struct {
 	ApiService     *LocalFileVideoAwemeGetV30ApiService
 	localAccountId *int64
 	cursor         *string
-	filtering      *LocalFileVideoAwemeGetV30Filtering
-	orderFiled     *LocalFileVideoAwemeGetV30OrderFiled
-	externalAction *LocalFileVideoAwemeGetV30ExternalAction
+	filtering      *models.LocalFileVideoAwemeGetV30Filtering
+	orderFiled     *models.LocalFileVideoAwemeGetV30OrderFiled
+	externalAction *models.LocalFileVideoAwemeGetV30ExternalAction
 	count          *int64
 }
 
@@ -45,19 +46,19 @@ func (r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) Cursor(cursor string) *A
 }
 
 // 过滤字段
-func (r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) Filtering(filtering LocalFileVideoAwemeGetV30Filtering) *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest {
+func (r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) Filtering(filtering models.LocalFileVideoAwemeGetV30Filtering) *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
 // 排序字段
-func (r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) OrderFiled(orderFiled LocalFileVideoAwemeGetV30OrderFiled) *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest {
+func (r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) OrderFiled(orderFiled models.LocalFileVideoAwemeGetV30OrderFiled) *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest {
 	r.orderFiled = &orderFiled
 	return r
 }
 
 // ea，按预估效果排序的时候必传，仅支持传：OTO_PAY/OTO_PAY
-func (r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) ExternalAction(externalAction LocalFileVideoAwemeGetV30ExternalAction) *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest {
+func (r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) ExternalAction(externalAction models.LocalFileVideoAwemeGetV30ExternalAction) *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest {
 	r.externalAction = &externalAction
 	return r
 }
@@ -68,7 +69,7 @@ func (r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) Count(count int64) *ApiO
 	return r
 }
 
-func (r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) Execute() (*LocalFileVideoAwemeGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) Execute() (*models.LocalFileVideoAwemeGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -102,12 +103,12 @@ func (a *LocalFileVideoAwemeGetV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return LocalFileVideoAwemeGetV30Response
-func (a *LocalFileVideoAwemeGetV30ApiService) getExecute(r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) (*LocalFileVideoAwemeGetV30Response, *http.Response, error) {
+func (a *LocalFileVideoAwemeGetV30ApiService) getExecute(r *ApiOpenApiV30LocalFileVideoAwemeGetGetRequest) (*models.LocalFileVideoAwemeGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalFileVideoAwemeGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalFileVideoAwemeGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -117,7 +118,7 @@ func (a *LocalFileVideoAwemeGetV30ApiService) getExecute(r *ApiOpenApiV30LocalFi
 	localVarPath := localBasePath + "/open_api/v3.0/local/file/video/aweme/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

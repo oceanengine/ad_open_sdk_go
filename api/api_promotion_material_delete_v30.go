@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // PromotionMaterialDeleteV30ApiService PromotionMaterialDeleteV30Api service
@@ -25,15 +26,15 @@ type PromotionMaterialDeleteV30ApiService service
 type ApiOpenApiV30PromotionMaterialDeletePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *PromotionMaterialDeleteV30ApiService
-	promotionMaterialDeleteV30Request *PromotionMaterialDeleteV30Request
+	promotionMaterialDeleteV30Request *models.PromotionMaterialDeleteV30Request
 }
 
-func (r *ApiOpenApiV30PromotionMaterialDeletePostRequest) PromotionMaterialDeleteV30Request(promotionMaterialDeleteV30Request PromotionMaterialDeleteV30Request) *ApiOpenApiV30PromotionMaterialDeletePostRequest {
+func (r *ApiOpenApiV30PromotionMaterialDeletePostRequest) PromotionMaterialDeleteV30Request(promotionMaterialDeleteV30Request models.PromotionMaterialDeleteV30Request) *ApiOpenApiV30PromotionMaterialDeletePostRequest {
 	r.promotionMaterialDeleteV30Request = &promotionMaterialDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30PromotionMaterialDeletePostRequest) Execute() (*PromotionMaterialDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30PromotionMaterialDeletePostRequest) Execute() (*models.PromotionMaterialDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *PromotionMaterialDeleteV30ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return PromotionMaterialDeleteV30Response
-func (a *PromotionMaterialDeleteV30ApiService) postExecute(r *ApiOpenApiV30PromotionMaterialDeletePostRequest) (*PromotionMaterialDeleteV30Response, *http.Response, error) {
+func (a *PromotionMaterialDeleteV30ApiService) postExecute(r *ApiOpenApiV30PromotionMaterialDeletePostRequest) (*models.PromotionMaterialDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *PromotionMaterialDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.PromotionMaterialDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *PromotionMaterialDeleteV30ApiService) postExecute(r *ApiOpenApiV30Promo
 	localVarPath := localBasePath + "/open_api/v3.0/promotion/material/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

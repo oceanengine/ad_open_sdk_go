@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdConvertSignalV2ApiService AdConvertSignalV2Api service
@@ -25,10 +26,10 @@ type AdConvertSignalV2ApiService service
 type ApiOpenApi2AdConvertSignalPostRequest struct {
 	ctx                      context.Context
 	ApiService               *AdConvertSignalV2ApiService
-	adConvertSignalV2Request *AdConvertSignalV2Request
+	adConvertSignalV2Request *models.AdConvertSignalV2Request
 }
 
-func (r *ApiOpenApi2AdConvertSignalPostRequest) AdConvertSignalV2Request(adConvertSignalV2Request AdConvertSignalV2Request) *ApiOpenApi2AdConvertSignalPostRequest {
+func (r *ApiOpenApi2AdConvertSignalPostRequest) AdConvertSignalV2Request(adConvertSignalV2Request models.AdConvertSignalV2Request) *ApiOpenApi2AdConvertSignalPostRequest {
 	r.adConvertSignalV2Request = &adConvertSignalV2Request
 	return r
 }
@@ -71,7 +72,7 @@ func (a *AdConvertSignalV2ApiService) postExecute(r *ApiOpenApi2AdConvertSignalP
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
+		formFiles           map[string]*models.FormFileInfo
 		localVarReturnValue []byte
 	)
 
@@ -82,7 +83,7 @@ func (a *AdConvertSignalV2ApiService) postExecute(r *ApiOpenApi2AdConvertSignalP
 	localVarPath := localBasePath + "/open_api/2/ad_convert/signal/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandToolMaterialPreviewV30ApiService BrandToolMaterialPreviewV30Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30BrandToolMaterialPreviewGetRequest) MaterialId(materialId 
 	return r
 }
 
-func (r *ApiOpenApiV30BrandToolMaterialPreviewGetRequest) Execute() (*BrandToolMaterialPreviewV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandToolMaterialPreviewGetRequest) Execute() (*models.BrandToolMaterialPreviewV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *BrandToolMaterialPreviewV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return BrandToolMaterialPreviewV30Response
-func (a *BrandToolMaterialPreviewV30ApiService) getExecute(r *ApiOpenApiV30BrandToolMaterialPreviewGetRequest) (*BrandToolMaterialPreviewV30Response, *http.Response, error) {
+func (a *BrandToolMaterialPreviewV30ApiService) getExecute(r *ApiOpenApiV30BrandToolMaterialPreviewGetRequest) (*models.BrandToolMaterialPreviewV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandToolMaterialPreviewV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandToolMaterialPreviewV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *BrandToolMaterialPreviewV30ApiService) getExecute(r *ApiOpenApiV30Brand
 	localVarPath := localBasePath + "/open_api/v3.0/brand/tool/material_preview/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

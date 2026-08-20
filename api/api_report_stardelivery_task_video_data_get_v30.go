@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportStardeliveryTaskVideoDataGetV30ApiService ReportStardeliveryTaskVideoDataGetV30Api service
@@ -29,9 +30,9 @@ type ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest struct {
 	starTaskId   *int64
 	startDate    *string
 	endDate      *string
-	filtering    *ReportStardeliveryTaskVideoDataGetV30Filtering
+	filtering    *models.ReportStardeliveryTaskVideoDataGetV30Filtering
 	orderField   *string
-	orderType    *ReportStardeliveryTaskVideoDataGetV30OrderType
+	orderType    *models.ReportStardeliveryTaskVideoDataGetV30OrderType
 	page         *int32
 	pageSize     *int32
 }
@@ -59,7 +60,7 @@ func (r *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest) EndDate(endD
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest) Filtering(filtering ReportStardeliveryTaskVideoDataGetV30Filtering) *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest {
+func (r *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest) Filtering(filtering models.ReportStardeliveryTaskVideoDataGetV30Filtering) *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -70,7 +71,7 @@ func (r *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest) OrderField(o
 	return r
 }
 
-func (r *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest) OrderType(orderType ReportStardeliveryTaskVideoDataGetV30OrderType) *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest {
+func (r *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest) OrderType(orderType models.ReportStardeliveryTaskVideoDataGetV30OrderType) *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -87,7 +88,7 @@ func (r *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest) PageSize(pag
 	return r
 }
 
-func (r *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest) Execute() (*ReportStardeliveryTaskVideoDataGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest) Execute() (*models.ReportStardeliveryTaskVideoDataGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -121,12 +122,12 @@ func (a *ReportStardeliveryTaskVideoDataGetV30ApiService) Get(ctx context.Contex
 // Execute executes the request
 //
 //	@return ReportStardeliveryTaskVideoDataGetV30Response
-func (a *ReportStardeliveryTaskVideoDataGetV30ApiService) getExecute(r *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest) (*ReportStardeliveryTaskVideoDataGetV30Response, *http.Response, error) {
+func (a *ReportStardeliveryTaskVideoDataGetV30ApiService) getExecute(r *ApiOpenApiV30ReportStardeliveryTaskVideoDataGetGetRequest) (*models.ReportStardeliveryTaskVideoDataGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportStardeliveryTaskVideoDataGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportStardeliveryTaskVideoDataGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -136,7 +137,7 @@ func (a *ReportStardeliveryTaskVideoDataGetV30ApiService) getExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/v3.0/report/stardelivery/task_video_data/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

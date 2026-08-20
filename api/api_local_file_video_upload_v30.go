@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalFileVideoUploadV30ApiService LocalFileVideoUploadV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30LocalFileVideoUploadPostRequest struct {
 	ApiService     *LocalFileVideoUploadV30ApiService
 	filename       *string
 	localAccountId *int64
-	videoFile      *LocalFileVideoUploadV30RequestVideoFile
+	videoFile      *models.LocalFileVideoUploadV30RequestVideoFile
 	videoSignature *string
 }
 
@@ -42,7 +43,7 @@ func (r *ApiOpenApiV30LocalFileVideoUploadPostRequest) LocalAccountId(localAccou
 	return r
 }
 
-func (r *ApiOpenApiV30LocalFileVideoUploadPostRequest) VideoFile(videoFile LocalFileVideoUploadV30RequestVideoFile) *ApiOpenApiV30LocalFileVideoUploadPostRequest {
+func (r *ApiOpenApiV30LocalFileVideoUploadPostRequest) VideoFile(videoFile models.LocalFileVideoUploadV30RequestVideoFile) *ApiOpenApiV30LocalFileVideoUploadPostRequest {
 	r.videoFile = &videoFile
 	return r
 }
@@ -53,7 +54,7 @@ func (r *ApiOpenApiV30LocalFileVideoUploadPostRequest) VideoSignature(videoSigna
 	return r
 }
 
-func (r *ApiOpenApiV30LocalFileVideoUploadPostRequest) Execute() (*LocalFileVideoUploadV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalFileVideoUploadPostRequest) Execute() (*models.LocalFileVideoUploadV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -87,12 +88,12 @@ func (a *LocalFileVideoUploadV30ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return LocalFileVideoUploadV30Response
-func (a *LocalFileVideoUploadV30ApiService) postExecute(r *ApiOpenApiV30LocalFileVideoUploadPostRequest) (*LocalFileVideoUploadV30Response, *http.Response, error) {
+func (a *LocalFileVideoUploadV30ApiService) postExecute(r *ApiOpenApiV30LocalFileVideoUploadPostRequest) (*models.LocalFileVideoUploadV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalFileVideoUploadV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalFileVideoUploadV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -102,7 +103,7 @@ func (a *LocalFileVideoUploadV30ApiService) postExecute(r *ApiOpenApiV30LocalFil
 	localVarPath := localBasePath + "/open_api/v3.0/local/file/video/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.filename == nil {

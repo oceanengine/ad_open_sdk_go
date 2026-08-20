@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAudienceDeleteV10ApiService QianchuanAudienceDeleteV10Api service
@@ -25,15 +26,15 @@ type QianchuanAudienceDeleteV10ApiService service
 type ApiOpenApiV10QianchuanAudienceDeletePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *QianchuanAudienceDeleteV10ApiService
-	qianchuanAudienceDeleteV10Request *QianchuanAudienceDeleteV10Request
+	qianchuanAudienceDeleteV10Request *models.QianchuanAudienceDeleteV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanAudienceDeletePostRequest) QianchuanAudienceDeleteV10Request(qianchuanAudienceDeleteV10Request QianchuanAudienceDeleteV10Request) *ApiOpenApiV10QianchuanAudienceDeletePostRequest {
+func (r *ApiOpenApiV10QianchuanAudienceDeletePostRequest) QianchuanAudienceDeleteV10Request(qianchuanAudienceDeleteV10Request models.QianchuanAudienceDeleteV10Request) *ApiOpenApiV10QianchuanAudienceDeletePostRequest {
 	r.qianchuanAudienceDeleteV10Request = &qianchuanAudienceDeleteV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAudienceDeletePostRequest) Execute() (*QianchuanAudienceDeleteV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAudienceDeletePostRequest) Execute() (*models.QianchuanAudienceDeleteV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -69,12 +70,12 @@ func (a *QianchuanAudienceDeleteV10ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return QianchuanAudienceDeleteV10Response
-func (a *QianchuanAudienceDeleteV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAudienceDeletePostRequest) (*QianchuanAudienceDeleteV10Response, *http.Response, error) {
+func (a *QianchuanAudienceDeleteV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAudienceDeletePostRequest) (*models.QianchuanAudienceDeleteV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAudienceDeleteV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAudienceDeleteV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -84,7 +85,7 @@ func (a *QianchuanAudienceDeleteV10ApiService) postExecute(r *ApiOpenApiV10Qianc
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/audience/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

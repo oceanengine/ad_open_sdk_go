@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementIndustryInfoListV2ApiService ToolsAppManagementIndustryInfoListV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest struct {
 	ctx         context.Context
 	ApiService  *ToolsAppManagementIndustryInfoListV2ApiService
 	accountId   *int64
-	accountType *ToolsAppManagementIndustryInfoListV2AccountType
+	accountType *models.ToolsAppManagementIndustryInfoListV2AccountType
 }
 
 // 账户id指可以接的账号体系如广告主id、巨量纵横组织id等
@@ -36,12 +37,12 @@ func (r *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest) AccountId(acco
 }
 
 // 账户类型
-func (r *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest) AccountType(accountType ToolsAppManagementIndustryInfoListV2AccountType) *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest) AccountType(accountType models.ToolsAppManagementIndustryInfoListV2AccountType) *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest) Execute() (*ToolsAppManagementIndustryInfoListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest) Execute() (*models.ToolsAppManagementIndustryInfoListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ToolsAppManagementIndustryInfoListV2ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return ToolsAppManagementIndustryInfoListV2Response
-func (a *ToolsAppManagementIndustryInfoListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest) (*ToolsAppManagementIndustryInfoListV2Response, *http.Response, error) {
+func (a *ToolsAppManagementIndustryInfoListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementIndustryInfoListGetRequest) (*models.ToolsAppManagementIndustryInfoListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementIndustryInfoListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementIndustryInfoListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ToolsAppManagementIndustryInfoListV2ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/industry_info/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

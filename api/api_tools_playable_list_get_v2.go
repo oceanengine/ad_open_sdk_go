@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPlayableListGetV2ApiService ToolsPlayableListGetV2Api service
@@ -28,9 +29,9 @@ type ApiOpenApi2ToolsPlayableListGetGetRequest struct {
 	advertiserId   *int64
 	page           *int64
 	pageSize       *int64
-	playableSource *ToolsPlayableListGetV2PlayableSource
+	playableSource *models.ToolsPlayableListGetV2PlayableSource
 	playableUrl    *string
-	status         *ToolsPlayableListGetV2Status
+	status         *models.ToolsPlayableListGetV2Status
 }
 
 func (r *ApiOpenApi2ToolsPlayableListGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsPlayableListGetGetRequest {
@@ -48,7 +49,7 @@ func (r *ApiOpenApi2ToolsPlayableListGetGetRequest) PageSize(pageSize int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPlayableListGetGetRequest) PlayableSource(playableSource ToolsPlayableListGetV2PlayableSource) *ApiOpenApi2ToolsPlayableListGetGetRequest {
+func (r *ApiOpenApi2ToolsPlayableListGetGetRequest) PlayableSource(playableSource models.ToolsPlayableListGetV2PlayableSource) *ApiOpenApi2ToolsPlayableListGetGetRequest {
 	r.playableSource = &playableSource
 	return r
 }
@@ -58,12 +59,12 @@ func (r *ApiOpenApi2ToolsPlayableListGetGetRequest) PlayableUrl(playableUrl stri
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPlayableListGetGetRequest) Status(status ToolsPlayableListGetV2Status) *ApiOpenApi2ToolsPlayableListGetGetRequest {
+func (r *ApiOpenApi2ToolsPlayableListGetGetRequest) Status(status models.ToolsPlayableListGetV2Status) *ApiOpenApi2ToolsPlayableListGetGetRequest {
 	r.status = &status
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPlayableListGetGetRequest) Execute() (*ToolsPlayableListGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPlayableListGetGetRequest) Execute() (*models.ToolsPlayableListGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ToolsPlayableListGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return ToolsPlayableListGetV2Response
-func (a *ToolsPlayableListGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPlayableListGetGetRequest) (*ToolsPlayableListGetV2Response, *http.Response, error) {
+func (a *ToolsPlayableListGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPlayableListGetGetRequest) (*models.ToolsPlayableListGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPlayableListGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPlayableListGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ToolsPlayableListGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPlayabl
 	localVarPath := localBasePath + "/open_api/2/tools/playable_list/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

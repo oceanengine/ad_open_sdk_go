@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CreativeCustomCreativeUpdateV2ApiService CreativeCustomCreativeUpdateV2Api service
@@ -25,15 +26,15 @@ type CreativeCustomCreativeUpdateV2ApiService service
 type ApiOpenApi2CreativeCustomCreativeUpdatePostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *CreativeCustomCreativeUpdateV2ApiService
-	creativeCustomCreativeUpdateV2Request *CreativeCustomCreativeUpdateV2Request
+	creativeCustomCreativeUpdateV2Request *models.CreativeCustomCreativeUpdateV2Request
 }
 
-func (r *ApiOpenApi2CreativeCustomCreativeUpdatePostRequest) CreativeCustomCreativeUpdateV2Request(creativeCustomCreativeUpdateV2Request CreativeCustomCreativeUpdateV2Request) *ApiOpenApi2CreativeCustomCreativeUpdatePostRequest {
+func (r *ApiOpenApi2CreativeCustomCreativeUpdatePostRequest) CreativeCustomCreativeUpdateV2Request(creativeCustomCreativeUpdateV2Request models.CreativeCustomCreativeUpdateV2Request) *ApiOpenApi2CreativeCustomCreativeUpdatePostRequest {
 	r.creativeCustomCreativeUpdateV2Request = &creativeCustomCreativeUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2CreativeCustomCreativeUpdatePostRequest) Execute() (*CreativeCustomCreativeUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CreativeCustomCreativeUpdatePostRequest) Execute() (*models.CreativeCustomCreativeUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *CreativeCustomCreativeUpdateV2ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return CreativeCustomCreativeUpdateV2Response
-func (a *CreativeCustomCreativeUpdateV2ApiService) postExecute(r *ApiOpenApi2CreativeCustomCreativeUpdatePostRequest) (*CreativeCustomCreativeUpdateV2Response, *http.Response, error) {
+func (a *CreativeCustomCreativeUpdateV2ApiService) postExecute(r *ApiOpenApi2CreativeCustomCreativeUpdatePostRequest) (*models.CreativeCustomCreativeUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CreativeCustomCreativeUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CreativeCustomCreativeUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *CreativeCustomCreativeUpdateV2ApiService) postExecute(r *ApiOpenApi2Cre
 	localVarPath := localBasePath + "/open_api/2/creative/custom_creative/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

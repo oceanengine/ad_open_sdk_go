@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarMcnGetContractChallengeAuthorItemListV2V2ApiService StarMcnGetContractChallengeAuthorItemListV2V2Api service
@@ -57,7 +58,7 @@ func (r *ApiOpenApi2StarMcnGetContractChallengeAuthorItemListV2GetRequest) Devel
 	return r
 }
 
-func (r *ApiOpenApi2StarMcnGetContractChallengeAuthorItemListV2GetRequest) Execute() (*StarMcnGetContractChallengeAuthorItemListV2V2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarMcnGetContractChallengeAuthorItemListV2GetRequest) Execute() (*models.StarMcnGetContractChallengeAuthorItemListV2V2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *StarMcnGetContractChallengeAuthorItemListV2V2ApiService) Get(ctx contex
 // Execute executes the request
 //
 //	@return StarMcnGetContractChallengeAuthorItemListV2V2Response
-func (a *StarMcnGetContractChallengeAuthorItemListV2V2ApiService) getExecute(r *ApiOpenApi2StarMcnGetContractChallengeAuthorItemListV2GetRequest) (*StarMcnGetContractChallengeAuthorItemListV2V2Response, *http.Response, error) {
+func (a *StarMcnGetContractChallengeAuthorItemListV2V2ApiService) getExecute(r *ApiOpenApi2StarMcnGetContractChallengeAuthorItemListV2GetRequest) (*models.StarMcnGetContractChallengeAuthorItemListV2V2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarMcnGetContractChallengeAuthorItemListV2V2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarMcnGetContractChallengeAuthorItemListV2V2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *StarMcnGetContractChallengeAuthorItemListV2V2ApiService) getExecute(r *
 	localVarPath := localBasePath + "/open_api/2/star/mcn/get_contract_challenge_author_item_list_v2/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

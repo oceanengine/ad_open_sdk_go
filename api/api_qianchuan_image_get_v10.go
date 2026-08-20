@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanImageGetV10ApiService QianchuanImageGetV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanImageGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanImageGetV10ApiService
 	advertiserId *int64
-	filtering    *QianchuanImageGetV10Filtering
+	filtering    *models.QianchuanImageGetV10Filtering
 	page         *int32
 	pageSize     *int32
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApiV10QianchuanImageGetGetRequest) AdvertiserId(advertiserId int
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanImageGetGetRequest) Filtering(filtering QianchuanImageGetV10Filtering) *ApiOpenApiV10QianchuanImageGetGetRequest {
+func (r *ApiOpenApiV10QianchuanImageGetGetRequest) Filtering(filtering models.QianchuanImageGetV10Filtering) *ApiOpenApiV10QianchuanImageGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV10QianchuanImageGetGetRequest) PageSize(pageSize int32) *Api
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanImageGetGetRequest) Execute() (*QianchuanImageGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanImageGetGetRequest) Execute() (*models.QianchuanImageGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *QianchuanImageGetV10ApiService) Get(ctx context.Context) *ApiOpenApiV10
 // Execute executes the request
 //
 //	@return QianchuanImageGetV10Response
-func (a *QianchuanImageGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanImageGetGetRequest) (*QianchuanImageGetV10Response, *http.Response, error) {
+func (a *QianchuanImageGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanImageGetGetRequest) (*models.QianchuanImageGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanImageGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanImageGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *QianchuanImageGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanIma
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/image/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

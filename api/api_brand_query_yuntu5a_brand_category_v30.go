@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandQueryYuntu5aBrandCategoryV30ApiService BrandQueryYuntu5aBrandCategoryV30Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApiV30BrandQueryYuntu5aBrandCategoryGetRequest) AdvertiserId(adv
 	return r
 }
 
-func (r *ApiOpenApiV30BrandQueryYuntu5aBrandCategoryGetRequest) Execute() (*BrandQueryYuntu5aBrandCategoryV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandQueryYuntu5aBrandCategoryGetRequest) Execute() (*models.BrandQueryYuntu5aBrandCategoryV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *BrandQueryYuntu5aBrandCategoryV30ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return BrandQueryYuntu5aBrandCategoryV30Response
-func (a *BrandQueryYuntu5aBrandCategoryV30ApiService) getExecute(r *ApiOpenApiV30BrandQueryYuntu5aBrandCategoryGetRequest) (*BrandQueryYuntu5aBrandCategoryV30Response, *http.Response, error) {
+func (a *BrandQueryYuntu5aBrandCategoryV30ApiService) getExecute(r *ApiOpenApiV30BrandQueryYuntu5aBrandCategoryGetRequest) (*models.BrandQueryYuntu5aBrandCategoryV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandQueryYuntu5aBrandCategoryV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandQueryYuntu5aBrandCategoryV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *BrandQueryYuntu5aBrandCategoryV30ApiService) getExecute(r *ApiOpenApiV3
 	localVarPath := localBasePath + "/open_api/v3.0/brand/query_yuntu_5a_brand_category/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaEbpLibraryListV30ApiService DpaEbpLibraryListV30Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV30DpaEbpLibraryListGetRequest struct {
 	ctx             context.Context
 	ApiService      *DpaEbpLibraryListV30ApiService
 	accountId       *int64
-	accountType     *DpaEbpLibraryListV30AccountType
+	accountType     *models.DpaEbpLibraryListV30AccountType
 	storeType       *int64
 	nameOrId        *string
 	offset          *int64
 	limit           *int64
-	assetQueryScope *DpaEbpLibraryListV30AssetQueryScope
+	assetQueryScope *models.DpaEbpLibraryListV30AssetQueryScope
 }
 
 func (r *ApiOpenApiV30DpaEbpLibraryListGetRequest) AccountId(accountId int64) *ApiOpenApiV30DpaEbpLibraryListGetRequest {
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30DpaEbpLibraryListGetRequest) AccountId(accountId int64) *A
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpLibraryListGetRequest) AccountType(accountType DpaEbpLibraryListV30AccountType) *ApiOpenApiV30DpaEbpLibraryListGetRequest {
+func (r *ApiOpenApiV30DpaEbpLibraryListGetRequest) AccountType(accountType models.DpaEbpLibraryListV30AccountType) *ApiOpenApiV30DpaEbpLibraryListGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -67,12 +68,12 @@ func (r *ApiOpenApiV30DpaEbpLibraryListGetRequest) Limit(limit int64) *ApiOpenAp
 }
 
 // EBP资产查询范围，作用于归属于ebp部分的数据
-func (r *ApiOpenApiV30DpaEbpLibraryListGetRequest) AssetQueryScope(assetQueryScope DpaEbpLibraryListV30AssetQueryScope) *ApiOpenApiV30DpaEbpLibraryListGetRequest {
+func (r *ApiOpenApiV30DpaEbpLibraryListGetRequest) AssetQueryScope(assetQueryScope models.DpaEbpLibraryListV30AssetQueryScope) *ApiOpenApiV30DpaEbpLibraryListGetRequest {
 	r.assetQueryScope = &assetQueryScope
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpLibraryListGetRequest) Execute() (*DpaEbpLibraryListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaEbpLibraryListGetRequest) Execute() (*models.DpaEbpLibraryListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -106,12 +107,12 @@ func (a *DpaEbpLibraryListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return DpaEbpLibraryListV30Response
-func (a *DpaEbpLibraryListV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpLibraryListGetRequest) (*DpaEbpLibraryListV30Response, *http.Response, error) {
+func (a *DpaEbpLibraryListV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpLibraryListGetRequest) (*models.DpaEbpLibraryListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaEbpLibraryListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaEbpLibraryListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -121,7 +122,7 @@ func (a *DpaEbpLibraryListV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpLibrar
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/ebp/library/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

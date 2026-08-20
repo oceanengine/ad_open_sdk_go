@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // Oauth2AppAccessTokenApiService Oauth2AppAccessTokenApi service
@@ -25,15 +26,15 @@ type Oauth2AppAccessTokenApiService service
 type ApiOpenApiOauth2AppAccessTokenPostRequest struct {
 	ctx                         context.Context
 	ApiService                  *Oauth2AppAccessTokenApiService
-	oauth2AppAccessTokenRequest *Oauth2AppAccessTokenRequest
+	oauth2AppAccessTokenRequest *models.Oauth2AppAccessTokenRequest
 }
 
-func (r *ApiOpenApiOauth2AppAccessTokenPostRequest) Oauth2AppAccessTokenRequest(oauth2AppAccessTokenRequest Oauth2AppAccessTokenRequest) *ApiOpenApiOauth2AppAccessTokenPostRequest {
+func (r *ApiOpenApiOauth2AppAccessTokenPostRequest) Oauth2AppAccessTokenRequest(oauth2AppAccessTokenRequest models.Oauth2AppAccessTokenRequest) *ApiOpenApiOauth2AppAccessTokenPostRequest {
 	r.oauth2AppAccessTokenRequest = &oauth2AppAccessTokenRequest
 	return r
 }
 
-func (r *ApiOpenApiOauth2AppAccessTokenPostRequest) Execute() (*Oauth2AppAccessTokenResponse, *http.Response, error) {
+func (r *ApiOpenApiOauth2AppAccessTokenPostRequest) Execute() (*models.Oauth2AppAccessTokenResponse, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -62,12 +63,12 @@ func (a *Oauth2AppAccessTokenApiService) Post(ctx context.Context) *ApiOpenApiOa
 // Execute executes the request
 //
 //	@return Oauth2AppAccessTokenResponse
-func (a *Oauth2AppAccessTokenApiService) postExecute(r *ApiOpenApiOauth2AppAccessTokenPostRequest) (*Oauth2AppAccessTokenResponse, *http.Response, error) {
+func (a *Oauth2AppAccessTokenApiService) postExecute(r *ApiOpenApiOauth2AppAccessTokenPostRequest) (*models.Oauth2AppAccessTokenResponse, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *Oauth2AppAccessTokenResponse
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.Oauth2AppAccessTokenResponse
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -77,7 +78,7 @@ func (a *Oauth2AppAccessTokenApiService) postExecute(r *ApiOpenApiOauth2AppAcces
 	localVarPath := localBasePath + "/open_api/oauth2/app_access_token/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

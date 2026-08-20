@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaAssetsDetailReadV2ApiService DpaAssetsDetailReadV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2DpaAssetsDetailReadGetRequest) AssetIds(assetIds []int64) *A
 	return r
 }
 
-func (r *ApiOpenApi2DpaAssetsDetailReadGetRequest) Execute() (*DpaAssetsDetailReadV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DpaAssetsDetailReadGetRequest) Execute() (*models.DpaAssetsDetailReadV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *DpaAssetsDetailReadV2ApiService) Get(ctx context.Context) *ApiOpenApi2D
 // Execute executes the request
 //
 //	@return DpaAssetsDetailReadV2Response
-func (a *DpaAssetsDetailReadV2ApiService) getExecute(r *ApiOpenApi2DpaAssetsDetailReadGetRequest) (*DpaAssetsDetailReadV2Response, *http.Response, error) {
+func (a *DpaAssetsDetailReadV2ApiService) getExecute(r *ApiOpenApi2DpaAssetsDetailReadGetRequest) (*models.DpaAssetsDetailReadV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaAssetsDetailReadV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaAssetsDetailReadV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *DpaAssetsDetailReadV2ApiService) getExecute(r *ApiOpenApi2DpaAssetsDeta
 	localVarPath := localBasePath + "/open_api/2/dpa/assets/detail/read/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

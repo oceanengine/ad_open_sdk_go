@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementHarmonyAppListV2ApiService ToolsAppManagementHarmonyAppListV2Api service
@@ -26,12 +27,12 @@ type ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest struct {
 	ctx                    context.Context
 	ApiService             *ToolsAppManagementHarmonyAppListV2ApiService
 	accountId              *int64
-	accountType            *ToolsAppManagementHarmonyAppListV2AccountType
+	accountType            *models.ToolsAppManagementHarmonyAppListV2AccountType
 	page                   *int64
 	pageSize               *int64
-	filtering              *ToolsAppManagementHarmonyAppListV2Filtering
-	accountAssetQueryScope *ToolsAppManagementHarmonyAppListV2AccountAssetQueryScope
-	assetGeneration        *ToolsAppManagementHarmonyAppListV2AssetGeneration
+	filtering              *models.ToolsAppManagementHarmonyAppListV2Filtering
+	accountAssetQueryScope *models.ToolsAppManagementHarmonyAppListV2AccountAssetQueryScope
+	assetGeneration        *models.ToolsAppManagementHarmonyAppListV2AssetGeneration
 }
 
 func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AccountId(accountId int64) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AccountId(accoun
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AccountType(accountType ToolsAppManagementHarmonyAppListV2AccountType) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AccountType(accountType models.ToolsAppManagementHarmonyAppListV2AccountType) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -56,23 +57,23 @@ func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) PageSize(pageSiz
 }
 
 // 过滤器
-func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) Filtering(filtering ToolsAppManagementHarmonyAppListV2Filtering) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) Filtering(filtering models.ToolsAppManagementHarmonyAppListV2Filtering) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsAppManagementHarmonyAppListV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope models.ToolsAppManagementHarmonyAppListV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
 	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
 // 不传默认返回全部
-func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AssetGeneration(assetGeneration ToolsAppManagementHarmonyAppListV2AssetGeneration) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) AssetGeneration(assetGeneration models.ToolsAppManagementHarmonyAppListV2AssetGeneration) *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest {
 	r.assetGeneration = &assetGeneration
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) Execute() (*ToolsAppManagementHarmonyAppListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) Execute() (*models.ToolsAppManagementHarmonyAppListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -106,12 +107,12 @@ func (a *ToolsAppManagementHarmonyAppListV2ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return ToolsAppManagementHarmonyAppListV2Response
-func (a *ToolsAppManagementHarmonyAppListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) (*ToolsAppManagementHarmonyAppListV2Response, *http.Response, error) {
+func (a *ToolsAppManagementHarmonyAppListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementHarmonyAppListGetRequest) (*models.ToolsAppManagementHarmonyAppListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementHarmonyAppListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementHarmonyAppListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -121,7 +122,7 @@ func (a *ToolsAppManagementHarmonyAppListV2ApiService) getExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/harmony_app_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

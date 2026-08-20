@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAccountBudgetUpdateV10ApiService QianchuanAccountBudgetUpdateV10Api service
@@ -25,15 +26,15 @@ type QianchuanAccountBudgetUpdateV10ApiService service
 type ApiOpenApiV10QianchuanAccountBudgetUpdatePostRequest struct {
 	ctx                                    context.Context
 	ApiService                             *QianchuanAccountBudgetUpdateV10ApiService
-	qianchuanAccountBudgetUpdateV10Request *QianchuanAccountBudgetUpdateV10Request
+	qianchuanAccountBudgetUpdateV10Request *models.QianchuanAccountBudgetUpdateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanAccountBudgetUpdatePostRequest) QianchuanAccountBudgetUpdateV10Request(qianchuanAccountBudgetUpdateV10Request QianchuanAccountBudgetUpdateV10Request) *ApiOpenApiV10QianchuanAccountBudgetUpdatePostRequest {
+func (r *ApiOpenApiV10QianchuanAccountBudgetUpdatePostRequest) QianchuanAccountBudgetUpdateV10Request(qianchuanAccountBudgetUpdateV10Request models.QianchuanAccountBudgetUpdateV10Request) *ApiOpenApiV10QianchuanAccountBudgetUpdatePostRequest {
 	r.qianchuanAccountBudgetUpdateV10Request = &qianchuanAccountBudgetUpdateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAccountBudgetUpdatePostRequest) Execute() (*QianchuanAccountBudgetUpdateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAccountBudgetUpdatePostRequest) Execute() (*models.QianchuanAccountBudgetUpdateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanAccountBudgetUpdateV10ApiService) Post(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return QianchuanAccountBudgetUpdateV10Response
-func (a *QianchuanAccountBudgetUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAccountBudgetUpdatePostRequest) (*QianchuanAccountBudgetUpdateV10Response, *http.Response, error) {
+func (a *QianchuanAccountBudgetUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAccountBudgetUpdatePostRequest) (*models.QianchuanAccountBudgetUpdateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAccountBudgetUpdateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAccountBudgetUpdateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanAccountBudgetUpdateV10ApiService) postExecute(r *ApiOpenApiV10
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/account/budget/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

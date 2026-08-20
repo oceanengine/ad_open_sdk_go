@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementExtendPackageListV2ApiService ToolsAppManagementExtendPackageListV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsAppManagementExtendPackageListV2ApiService
 	advertiserId *int64
-	filtering    *ToolsAppManagementExtendPackageListV2Filtering
+	filtering    *models.ToolsAppManagementExtendPackageListV2Filtering
 	packageId    *string
 	page         *int64
 	pageSize     *int64
@@ -37,7 +38,7 @@ func (r *ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest) AdvertiserId(
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest) Filtering(filtering ToolsAppManagementExtendPackageListV2Filtering) *ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest) Filtering(filtering models.ToolsAppManagementExtendPackageListV2Filtering) *ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest) PageSize(page
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest) Execute() (*ToolsAppManagementExtendPackageListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest) Execute() (*models.ToolsAppManagementExtendPackageListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ToolsAppManagementExtendPackageListV2ApiService) Get(ctx context.Contex
 // Execute executes the request
 //
 //	@return ToolsAppManagementExtendPackageListV2Response
-func (a *ToolsAppManagementExtendPackageListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest) (*ToolsAppManagementExtendPackageListV2Response, *http.Response, error) {
+func (a *ToolsAppManagementExtendPackageListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementExtendPackageListGetRequest) (*models.ToolsAppManagementExtendPackageListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementExtendPackageListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementExtendPackageListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ToolsAppManagementExtendPackageListV2ApiService) getExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/extend_package/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

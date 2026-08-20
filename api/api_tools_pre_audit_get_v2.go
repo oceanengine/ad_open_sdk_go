@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPreAuditGetV2ApiService ToolsPreAuditGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsPreAuditGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsPreAuditGetV2ApiService
 	advertiserId *int64
-	filter       *ToolsPreAuditGetV2Filter
+	filter       *models.ToolsPreAuditGetV2Filter
 	page         *int32
 	pageSize     *int32
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApi2ToolsPreAuditGetGetRequest) AdvertiserId(advertiserId int64)
 }
 
 // 过滤条件
-func (r *ApiOpenApi2ToolsPreAuditGetGetRequest) Filter(filter ToolsPreAuditGetV2Filter) *ApiOpenApi2ToolsPreAuditGetGetRequest {
+func (r *ApiOpenApi2ToolsPreAuditGetGetRequest) Filter(filter models.ToolsPreAuditGetV2Filter) *ApiOpenApi2ToolsPreAuditGetGetRequest {
 	r.filter = &filter
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2ToolsPreAuditGetGetRequest) PageSize(pageSize int32) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPreAuditGetGetRequest) Execute() (*ToolsPreAuditGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPreAuditGetGetRequest) Execute() (*models.ToolsPreAuditGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ToolsPreAuditGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Tool
 // Execute executes the request
 //
 //	@return ToolsPreAuditGetV2Response
-func (a *ToolsPreAuditGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPreAuditGetGetRequest) (*ToolsPreAuditGetV2Response, *http.Response, error) {
+func (a *ToolsPreAuditGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPreAuditGetGetRequest) (*models.ToolsPreAuditGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPreAuditGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPreAuditGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ToolsPreAuditGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPreAuditGet
 	localVarPath := localBasePath + "/open_api/2/tools/pre_audit/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

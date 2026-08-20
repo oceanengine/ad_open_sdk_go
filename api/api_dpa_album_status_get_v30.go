@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaAlbumStatusGetV30ApiService DpaAlbumStatusGetV30Api service
@@ -40,7 +41,7 @@ func (r *ApiOpenApiV30DpaAlbumStatusGetGetRequest) AppId(appId int64) *ApiOpenAp
 	return r
 }
 
-func (r *ApiOpenApiV30DpaAlbumStatusGetGetRequest) Execute() (*DpaAlbumStatusGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaAlbumStatusGetGetRequest) Execute() (*models.DpaAlbumStatusGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *DpaAlbumStatusGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return DpaAlbumStatusGetV30Response
-func (a *DpaAlbumStatusGetV30ApiService) getExecute(r *ApiOpenApiV30DpaAlbumStatusGetGetRequest) (*DpaAlbumStatusGetV30Response, *http.Response, error) {
+func (a *DpaAlbumStatusGetV30ApiService) getExecute(r *ApiOpenApiV30DpaAlbumStatusGetGetRequest) (*models.DpaAlbumStatusGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaAlbumStatusGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaAlbumStatusGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *DpaAlbumStatusGetV30ApiService) getExecute(r *ApiOpenApiV30DpaAlbumStat
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/album_status/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.albumId == nil {

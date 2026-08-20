@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanTodayLiveRoomProductListGetV10ApiService QianchuanTodayLiveRoomProductListGetV10Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest struct {
 	advertiserId  *int64
 	roomId        *int64
 	fields        *[]string
-	explainStatus *QianchuanTodayLiveRoomProductListGetV10ExplainStatus
+	explainStatus *models.QianchuanTodayLiveRoomProductListGetV10ExplainStatus
 	page          *int32
 	pageSize      *int32
 }
@@ -48,7 +49,7 @@ func (r *ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest) Fields(fie
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest) ExplainStatus(explainStatus QianchuanTodayLiveRoomProductListGetV10ExplainStatus) *ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest {
+func (r *ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest) ExplainStatus(explainStatus models.QianchuanTodayLiveRoomProductListGetV10ExplainStatus) *ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest {
 	r.explainStatus = &explainStatus
 	return r
 }
@@ -63,7 +64,7 @@ func (r *ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest) PageSize(p
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest) Execute() (*QianchuanTodayLiveRoomProductListGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest) Execute() (*models.QianchuanTodayLiveRoomProductListGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *QianchuanTodayLiveRoomProductListGetV10ApiService) Get(ctx context.Cont
 // Execute executes the request
 //
 //	@return QianchuanTodayLiveRoomProductListGetV10Response
-func (a *QianchuanTodayLiveRoomProductListGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest) (*QianchuanTodayLiveRoomProductListGetV10Response, *http.Response, error) {
+func (a *QianchuanTodayLiveRoomProductListGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTodayLiveRoomProductListGetGetRequest) (*models.QianchuanTodayLiveRoomProductListGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanTodayLiveRoomProductListGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanTodayLiveRoomProductListGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *QianchuanTodayLiveRoomProductListGetV10ApiService) getExecute(r *ApiOpe
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/today_live/room/product_list/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

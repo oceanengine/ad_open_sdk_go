@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueWebrtcCreateV2V30ApiService ToolsClueWebrtcCreateV2V30Api service
@@ -25,15 +26,15 @@ type ToolsClueWebrtcCreateV2V30ApiService service
 type ApiOpenApiV30ToolsClueWebrtcCreateV2PostRequest struct {
 	ctx                               context.Context
 	ApiService                        *ToolsClueWebrtcCreateV2V30ApiService
-	toolsClueWebrtcCreateV2V30Request *ToolsClueWebrtcCreateV2V30Request
+	toolsClueWebrtcCreateV2V30Request *models.ToolsClueWebrtcCreateV2V30Request
 }
 
-func (r *ApiOpenApiV30ToolsClueWebrtcCreateV2PostRequest) ToolsClueWebrtcCreateV2V30Request(toolsClueWebrtcCreateV2V30Request ToolsClueWebrtcCreateV2V30Request) *ApiOpenApiV30ToolsClueWebrtcCreateV2PostRequest {
+func (r *ApiOpenApiV30ToolsClueWebrtcCreateV2PostRequest) ToolsClueWebrtcCreateV2V30Request(toolsClueWebrtcCreateV2V30Request models.ToolsClueWebrtcCreateV2V30Request) *ApiOpenApiV30ToolsClueWebrtcCreateV2PostRequest {
 	r.toolsClueWebrtcCreateV2V30Request = &toolsClueWebrtcCreateV2V30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsClueWebrtcCreateV2PostRequest) Execute() (*ToolsClueWebrtcCreateV2V30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsClueWebrtcCreateV2PostRequest) Execute() (*models.ToolsClueWebrtcCreateV2V30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsClueWebrtcCreateV2V30ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsClueWebrtcCreateV2V30Response
-func (a *ToolsClueWebrtcCreateV2V30ApiService) postExecute(r *ApiOpenApiV30ToolsClueWebrtcCreateV2PostRequest) (*ToolsClueWebrtcCreateV2V30Response, *http.Response, error) {
+func (a *ToolsClueWebrtcCreateV2V30ApiService) postExecute(r *ApiOpenApiV30ToolsClueWebrtcCreateV2PostRequest) (*models.ToolsClueWebrtcCreateV2V30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueWebrtcCreateV2V30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueWebrtcCreateV2V30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsClueWebrtcCreateV2V30ApiService) postExecute(r *ApiOpenApiV30Tools
 	localVarPath := localBasePath + "/open_api/v3.0/tools/clue/webrtc/create/v2/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

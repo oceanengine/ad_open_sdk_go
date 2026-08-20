@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionBlockMaterialGetV10ApiService QianchuanUniPromotionBlockMaterialGetV10Api service
@@ -27,11 +28,11 @@ type ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest struct {
 	ApiService    *QianchuanUniPromotionBlockMaterialGetV10ApiService
 	advertiserId  *int64
 	awemeId       *int64
-	marketingGoal *QianchuanUniPromotionBlockMaterialGetV10MarketingGoal
-	mediaType     *QianchuanUniPromotionBlockMaterialGetV10MediaType
+	marketingGoal *models.QianchuanUniPromotionBlockMaterialGetV10MarketingGoal
+	mediaType     *models.QianchuanUniPromotionBlockMaterialGetV10MediaType
 	productId     *[]int64
-	filtering     *QianchuanUniPromotionBlockMaterialGetV10Filtering
-	orderField    *QianchuanUniPromotionBlockMaterialGetV10OrderField
+	filtering     *models.QianchuanUniPromotionBlockMaterialGetV10Filtering
+	orderField    *models.QianchuanUniPromotionBlockMaterialGetV10OrderField
 	cursor        *int64
 }
 
@@ -46,12 +47,12 @@ func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) AwemeId(a
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) MarketingGoal(marketingGoal QianchuanUniPromotionBlockMaterialGetV10MarketingGoal) *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) MarketingGoal(marketingGoal models.QianchuanUniPromotionBlockMaterialGetV10MarketingGoal) *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) MediaType(mediaType QianchuanUniPromotionBlockMaterialGetV10MediaType) *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) MediaType(mediaType models.QianchuanUniPromotionBlockMaterialGetV10MediaType) *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest {
 	r.mediaType = &mediaType
 	return r
 }
@@ -62,12 +63,12 @@ func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) ProductId
 }
 
 // 过滤器
-func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) Filtering(filtering QianchuanUniPromotionBlockMaterialGetV10Filtering) *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) Filtering(filtering models.QianchuanUniPromotionBlockMaterialGetV10Filtering) *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) OrderField(orderField QianchuanUniPromotionBlockMaterialGetV10OrderField) *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) OrderField(orderField models.QianchuanUniPromotionBlockMaterialGetV10OrderField) *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
@@ -78,7 +79,7 @@ func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) Cursor(cu
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) Execute() (*QianchuanUniPromotionBlockMaterialGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) Execute() (*models.QianchuanUniPromotionBlockMaterialGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -112,12 +113,12 @@ func (a *QianchuanUniPromotionBlockMaterialGetV10ApiService) Get(ctx context.Con
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionBlockMaterialGetV10Response
-func (a *QianchuanUniPromotionBlockMaterialGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) (*QianchuanUniPromotionBlockMaterialGetV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionBlockMaterialGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionBlockMaterialGetGetRequest) (*models.QianchuanUniPromotionBlockMaterialGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionBlockMaterialGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionBlockMaterialGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -127,7 +128,7 @@ func (a *QianchuanUniPromotionBlockMaterialGetV10ApiService) getExecute(r *ApiOp
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/block_material/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

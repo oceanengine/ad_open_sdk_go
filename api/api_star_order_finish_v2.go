@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarOrderFinishV2ApiService StarOrderFinishV2Api service
@@ -25,15 +26,15 @@ type StarOrderFinishV2ApiService service
 type ApiOpenApi2StarOrderFinishPostRequest struct {
 	ctx                      context.Context
 	ApiService               *StarOrderFinishV2ApiService
-	starOrderFinishV2Request *StarOrderFinishV2Request
+	starOrderFinishV2Request *models.StarOrderFinishV2Request
 }
 
-func (r *ApiOpenApi2StarOrderFinishPostRequest) StarOrderFinishV2Request(starOrderFinishV2Request StarOrderFinishV2Request) *ApiOpenApi2StarOrderFinishPostRequest {
+func (r *ApiOpenApi2StarOrderFinishPostRequest) StarOrderFinishV2Request(starOrderFinishV2Request models.StarOrderFinishV2Request) *ApiOpenApi2StarOrderFinishPostRequest {
 	r.starOrderFinishV2Request = &starOrderFinishV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarOrderFinishPostRequest) Execute() (*StarOrderFinishV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarOrderFinishPostRequest) Execute() (*models.StarOrderFinishV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarOrderFinishV2ApiService) Post(ctx context.Context) *ApiOpenApi2Star
 // Execute executes the request
 //
 //	@return StarOrderFinishV2Response
-func (a *StarOrderFinishV2ApiService) postExecute(r *ApiOpenApi2StarOrderFinishPostRequest) (*StarOrderFinishV2Response, *http.Response, error) {
+func (a *StarOrderFinishV2ApiService) postExecute(r *ApiOpenApi2StarOrderFinishPostRequest) (*models.StarOrderFinishV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarOrderFinishV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarOrderFinishV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarOrderFinishV2ApiService) postExecute(r *ApiOpenApi2StarOrderFinishP
 	localVarPath := localBasePath + "/open_api/2/star/order/finish/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

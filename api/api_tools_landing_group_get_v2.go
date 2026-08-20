@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsLandingGroupGetV2ApiService ToolsLandingGroupGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsLandingGroupGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsLandingGroupGetV2ApiService
 	advertiserId *int64
-	filtering    *ToolsLandingGroupGetV2Filtering
+	filtering    *models.ToolsLandingGroupGetV2Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApi2ToolsLandingGroupGetGetRequest) AdvertiserId(advertiserId in
 	return r
 }
 
-func (r *ApiOpenApi2ToolsLandingGroupGetGetRequest) Filtering(filtering ToolsLandingGroupGetV2Filtering) *ApiOpenApi2ToolsLandingGroupGetGetRequest {
+func (r *ApiOpenApi2ToolsLandingGroupGetGetRequest) Filtering(filtering models.ToolsLandingGroupGetV2Filtering) *ApiOpenApi2ToolsLandingGroupGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2ToolsLandingGroupGetGetRequest) PageSize(pageSize int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2ToolsLandingGroupGetGetRequest) Execute() (*ToolsLandingGroupGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsLandingGroupGetGetRequest) Execute() (*models.ToolsLandingGroupGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ToolsLandingGroupGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return ToolsLandingGroupGetV2Response
-func (a *ToolsLandingGroupGetV2ApiService) getExecute(r *ApiOpenApi2ToolsLandingGroupGetGetRequest) (*ToolsLandingGroupGetV2Response, *http.Response, error) {
+func (a *ToolsLandingGroupGetV2ApiService) getExecute(r *ApiOpenApi2ToolsLandingGroupGetGetRequest) (*models.ToolsLandingGroupGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsLandingGroupGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsLandingGroupGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ToolsLandingGroupGetV2ApiService) getExecute(r *ApiOpenApi2ToolsLanding
 	localVarPath := localBasePath + "/open_api/2/tools/landing_group/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

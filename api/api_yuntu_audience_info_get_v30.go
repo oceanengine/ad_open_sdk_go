@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // YuntuAudienceInfoGetV30ApiService YuntuAudienceInfoGetV30Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30YuntuAudienceInfoGetGetRequest) CustomAudienceId(customAud
 	return r
 }
 
-func (r *ApiOpenApiV30YuntuAudienceInfoGetGetRequest) Execute() (*YuntuAudienceInfoGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30YuntuAudienceInfoGetGetRequest) Execute() (*models.YuntuAudienceInfoGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *YuntuAudienceInfoGetV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return YuntuAudienceInfoGetV30Response
-func (a *YuntuAudienceInfoGetV30ApiService) getExecute(r *ApiOpenApiV30YuntuAudienceInfoGetGetRequest) (*YuntuAudienceInfoGetV30Response, *http.Response, error) {
+func (a *YuntuAudienceInfoGetV30ApiService) getExecute(r *ApiOpenApiV30YuntuAudienceInfoGetGetRequest) (*models.YuntuAudienceInfoGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *YuntuAudienceInfoGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.YuntuAudienceInfoGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *YuntuAudienceInfoGetV30ApiService) getExecute(r *ApiOpenApiV30YuntuAudi
 	localVarPath := localBasePath + "/open_api/v3.0/yuntu/audience_info/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.yuntuBrandId == nil {

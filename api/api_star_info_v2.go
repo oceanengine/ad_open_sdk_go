@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarInfoV2ApiService StarInfoV2Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApi2StarInfoGetRequest) StarIds(starIds []int64) *ApiOpenApi2Sta
 	return r
 }
 
-func (r *ApiOpenApi2StarInfoGetRequest) Execute() (*StarInfoV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarInfoGetRequest) Execute() (*models.StarInfoV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarInfoV2ApiService) Get(ctx context.Context) *ApiOpenApi2StarInfoGetR
 // Execute executes the request
 //
 //	@return StarInfoV2Response
-func (a *StarInfoV2ApiService) getExecute(r *ApiOpenApi2StarInfoGetRequest) (*StarInfoV2Response, *http.Response, error) {
+func (a *StarInfoV2ApiService) getExecute(r *ApiOpenApi2StarInfoGetRequest) (*models.StarInfoV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarInfoV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarInfoV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarInfoV2ApiService) getExecute(r *ApiOpenApi2StarInfoGetRequest) (*St
 	localVarPath := localBasePath + "/open_api/2/star/info/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starIds == nil {

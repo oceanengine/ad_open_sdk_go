@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAwemeBannedDeleteV30ApiService ToolsAwemeBannedDeleteV30Api service
@@ -25,15 +26,15 @@ type ToolsAwemeBannedDeleteV30ApiService service
 type ApiOpenApiV30ToolsAwemeBannedDeletePostRequest struct {
 	ctx                              context.Context
 	ApiService                       *ToolsAwemeBannedDeleteV30ApiService
-	toolsAwemeBannedDeleteV30Request *ToolsAwemeBannedDeleteV30Request
+	toolsAwemeBannedDeleteV30Request *models.ToolsAwemeBannedDeleteV30Request
 }
 
-func (r *ApiOpenApiV30ToolsAwemeBannedDeletePostRequest) ToolsAwemeBannedDeleteV30Request(toolsAwemeBannedDeleteV30Request ToolsAwemeBannedDeleteV30Request) *ApiOpenApiV30ToolsAwemeBannedDeletePostRequest {
+func (r *ApiOpenApiV30ToolsAwemeBannedDeletePostRequest) ToolsAwemeBannedDeleteV30Request(toolsAwemeBannedDeleteV30Request models.ToolsAwemeBannedDeleteV30Request) *ApiOpenApiV30ToolsAwemeBannedDeletePostRequest {
 	r.toolsAwemeBannedDeleteV30Request = &toolsAwemeBannedDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsAwemeBannedDeletePostRequest) Execute() (*ToolsAwemeBannedDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsAwemeBannedDeletePostRequest) Execute() (*models.ToolsAwemeBannedDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsAwemeBannedDeleteV30ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsAwemeBannedDeleteV30Response
-func (a *ToolsAwemeBannedDeleteV30ApiService) postExecute(r *ApiOpenApiV30ToolsAwemeBannedDeletePostRequest) (*ToolsAwemeBannedDeleteV30Response, *http.Response, error) {
+func (a *ToolsAwemeBannedDeleteV30ApiService) postExecute(r *ApiOpenApiV30ToolsAwemeBannedDeletePostRequest) (*models.ToolsAwemeBannedDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAwemeBannedDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAwemeBannedDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsAwemeBannedDeleteV30ApiService) postExecute(r *ApiOpenApiV30ToolsA
 	localVarPath := localBasePath + "/open_api/v3.0/tools/aweme_banned/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

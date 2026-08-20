@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpVideoUploadV30ApiService ToolsEbpVideoUploadV30Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV30ToolsEbpVideoUploadPostRequest struct {
 	ctx            context.Context
 	ApiService     *ToolsEbpVideoUploadV30ApiService
 	accountId      *int64
-	accountType    *ToolsEbpVideoUploadV30AccountType
+	accountType    *models.ToolsEbpVideoUploadV30AccountType
 	fileName       *string
 	isAigc         *bool
 	labels         *[]string
-	uploadType     *ToolsEbpVideoUploadV30UploadType
-	videoFile      *FormFileInfo
+	uploadType     *models.ToolsEbpVideoUploadV30UploadType
+	videoFile      *models.FormFileInfo
 	videoSignature *string
 	videoUrl       *string
 }
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) AccountId(accountId int64)
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) AccountType(accountType ToolsEbpVideoUploadV30AccountType) *ApiOpenApiV30ToolsEbpVideoUploadPostRequest {
+func (r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) AccountType(accountType models.ToolsEbpVideoUploadV30AccountType) *ApiOpenApiV30ToolsEbpVideoUploadPostRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -63,13 +64,13 @@ func (r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) Labels(labels []string) *A
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) UploadType(uploadType ToolsEbpVideoUploadV30UploadType) *ApiOpenApiV30ToolsEbpVideoUploadPostRequest {
+func (r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) UploadType(uploadType models.ToolsEbpVideoUploadV30UploadType) *ApiOpenApiV30ToolsEbpVideoUploadPostRequest {
 	r.uploadType = &uploadType
 	return r
 }
 
 // 视频文件 允许格式：mp4、mpeg、3gp、avi（10s超时限制） upload_type为UPLOAD_BY_File必填
-func (r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) VideoFile(videoFile *FormFileInfo) *ApiOpenApiV30ToolsEbpVideoUploadPostRequest {
+func (r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) VideoFile(videoFile *models.FormFileInfo) *ApiOpenApiV30ToolsEbpVideoUploadPostRequest {
 	r.videoFile = videoFile
 	return r
 }
@@ -86,7 +87,7 @@ func (r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) VideoUrl(videoUrl string) 
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) Execute() (*ToolsEbpVideoUploadV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) Execute() (*models.ToolsEbpVideoUploadV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -120,12 +121,12 @@ func (a *ToolsEbpVideoUploadV30ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsEbpVideoUploadV30Response
-func (a *ToolsEbpVideoUploadV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) (*ToolsEbpVideoUploadV30Response, *http.Response, error) {
+func (a *ToolsEbpVideoUploadV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpVideoUploadPostRequest) (*models.ToolsEbpVideoUploadV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpVideoUploadV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpVideoUploadV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -135,7 +136,7 @@ func (a *ToolsEbpVideoUploadV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpV
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/video/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

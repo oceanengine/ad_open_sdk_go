@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpPlayableListV30ApiService ToolsEbpPlayableListV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30ToolsEbpPlayableListGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsEbpPlayableListV30ApiService
 	advertiserId *int64
-	materialType *ToolsEbpPlayableListV30MaterialType
-	filtering    *ToolsEbpPlayableListV30Filtering
+	materialType *models.ToolsEbpPlayableListV30MaterialType
+	filtering    *models.ToolsEbpPlayableListV30Filtering
 	pageSize     *int64
 	page         *int64
 }
@@ -39,13 +40,13 @@ func (r *ApiOpenApiV30ToolsEbpPlayableListGetRequest) AdvertiserId(advertiserId 
 }
 
 // 素材类型
-func (r *ApiOpenApiV30ToolsEbpPlayableListGetRequest) MaterialType(materialType ToolsEbpPlayableListV30MaterialType) *ApiOpenApiV30ToolsEbpPlayableListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpPlayableListGetRequest) MaterialType(materialType models.ToolsEbpPlayableListV30MaterialType) *ApiOpenApiV30ToolsEbpPlayableListGetRequest {
 	r.materialType = &materialType
 	return r
 }
 
 // 可选过滤参数
-func (r *ApiOpenApiV30ToolsEbpPlayableListGetRequest) Filtering(filtering ToolsEbpPlayableListV30Filtering) *ApiOpenApiV30ToolsEbpPlayableListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpPlayableListGetRequest) Filtering(filtering models.ToolsEbpPlayableListV30Filtering) *ApiOpenApiV30ToolsEbpPlayableListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30ToolsEbpPlayableListGetRequest) Page(page int64) *ApiOpenA
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpPlayableListGetRequest) Execute() (*ToolsEbpPlayableListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpPlayableListGetRequest) Execute() (*models.ToolsEbpPlayableListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *ToolsEbpPlayableListV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsEbpPlayableListV30Response
-func (a *ToolsEbpPlayableListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpPlayableListGetRequest) (*ToolsEbpPlayableListV30Response, *http.Response, error) {
+func (a *ToolsEbpPlayableListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpPlayableListGetRequest) (*models.ToolsEbpPlayableListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpPlayableListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpPlayableListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *ToolsEbpPlayableListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpP
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/playable/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

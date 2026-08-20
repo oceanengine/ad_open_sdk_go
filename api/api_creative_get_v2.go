@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CreativeGetV2ApiService CreativeGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2CreativeGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *CreativeGetV2ApiService
 	advertiserId *int64
-	filtering    *CreativeGetV2Filtering
+	filtering    *models.CreativeGetV2Filtering
 	fields       *[]string
 	page         *int64
 	pageSize     *int64
@@ -40,7 +41,7 @@ func (r *ApiOpenApi2CreativeGetGetRequest) AdvertiserId(advertiserId int64) *Api
 }
 
 // 过滤条件，若此字段不传，或传空则视为无限制条件
-func (r *ApiOpenApi2CreativeGetGetRequest) Filtering(filtering CreativeGetV2Filtering) *ApiOpenApi2CreativeGetGetRequest {
+func (r *ApiOpenApi2CreativeGetGetRequest) Filtering(filtering models.CreativeGetV2Filtering) *ApiOpenApi2CreativeGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -75,7 +76,7 @@ func (r *ApiOpenApi2CreativeGetGetRequest) Count(count int64) *ApiOpenApi2Creati
 	return r
 }
 
-func (r *ApiOpenApi2CreativeGetGetRequest) Execute() (*CreativeGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CreativeGetGetRequest) Execute() (*models.CreativeGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -109,12 +110,12 @@ func (a *CreativeGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2CreativeG
 // Execute executes the request
 //
 //	@return CreativeGetV2Response
-func (a *CreativeGetV2ApiService) getExecute(r *ApiOpenApi2CreativeGetGetRequest) (*CreativeGetV2Response, *http.Response, error) {
+func (a *CreativeGetV2ApiService) getExecute(r *ApiOpenApi2CreativeGetGetRequest) (*models.CreativeGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CreativeGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CreativeGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -124,7 +125,7 @@ func (a *CreativeGetV2ApiService) getExecute(r *ApiOpenApi2CreativeGetGetRequest
 	localVarPath := localBasePath + "/open_api/2/creative/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

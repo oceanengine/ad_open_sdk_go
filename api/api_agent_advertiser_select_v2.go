@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentAdvertiserSelectV2ApiService AgentAdvertiserSelectV2Api service
@@ -29,7 +30,7 @@ type ApiOpenApi2AgentAdvertiserSelectGetRequest struct {
 	companyIds   *[]int64
 	count        *int64
 	cursor       *int64
-	filtering    *AgentAdvertiserSelectV2Filtering
+	filtering    *models.AgentAdvertiserSelectV2Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -54,7 +55,7 @@ func (r *ApiOpenApi2AgentAdvertiserSelectGetRequest) Cursor(cursor int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2AgentAdvertiserSelectGetRequest) Filtering(filtering AgentAdvertiserSelectV2Filtering) *ApiOpenApi2AgentAdvertiserSelectGetRequest {
+func (r *ApiOpenApi2AgentAdvertiserSelectGetRequest) Filtering(filtering models.AgentAdvertiserSelectV2Filtering) *ApiOpenApi2AgentAdvertiserSelectGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApi2AgentAdvertiserSelectGetRequest) PageSize(pageSize int64) *A
 	return r
 }
 
-func (r *ApiOpenApi2AgentAdvertiserSelectGetRequest) Execute() (*AgentAdvertiserSelectV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentAdvertiserSelectGetRequest) Execute() (*models.AgentAdvertiserSelectV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *AgentAdvertiserSelectV2ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return AgentAdvertiserSelectV2Response
-func (a *AgentAdvertiserSelectV2ApiService) getExecute(r *ApiOpenApi2AgentAdvertiserSelectGetRequest) (*AgentAdvertiserSelectV2Response, *http.Response, error) {
+func (a *AgentAdvertiserSelectV2ApiService) getExecute(r *ApiOpenApi2AgentAdvertiserSelectGetRequest) (*models.AgentAdvertiserSelectV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentAdvertiserSelectV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentAdvertiserSelectV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *AgentAdvertiserSelectV2ApiService) getExecute(r *ApiOpenApi2AgentAdvert
 	localVarPath := localBasePath + "/open_api/2/agent/advertiser/select/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

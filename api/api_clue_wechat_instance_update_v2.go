@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueWechatInstanceUpdateV2ApiService ClueWechatInstanceUpdateV2Api service
@@ -25,15 +26,15 @@ type ClueWechatInstanceUpdateV2ApiService service
 type ApiOpenApi2ClueWechatInstanceUpdatePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *ClueWechatInstanceUpdateV2ApiService
-	clueWechatInstanceUpdateV2Request *ClueWechatInstanceUpdateV2Request
+	clueWechatInstanceUpdateV2Request *models.ClueWechatInstanceUpdateV2Request
 }
 
-func (r *ApiOpenApi2ClueWechatInstanceUpdatePostRequest) ClueWechatInstanceUpdateV2Request(clueWechatInstanceUpdateV2Request ClueWechatInstanceUpdateV2Request) *ApiOpenApi2ClueWechatInstanceUpdatePostRequest {
+func (r *ApiOpenApi2ClueWechatInstanceUpdatePostRequest) ClueWechatInstanceUpdateV2Request(clueWechatInstanceUpdateV2Request models.ClueWechatInstanceUpdateV2Request) *ApiOpenApi2ClueWechatInstanceUpdatePostRequest {
 	r.clueWechatInstanceUpdateV2Request = &clueWechatInstanceUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ClueWechatInstanceUpdatePostRequest) Execute() (*ClueWechatInstanceUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueWechatInstanceUpdatePostRequest) Execute() (*models.ClueWechatInstanceUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ClueWechatInstanceUpdateV2ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ClueWechatInstanceUpdateV2Response
-func (a *ClueWechatInstanceUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueWechatInstanceUpdatePostRequest) (*ClueWechatInstanceUpdateV2Response, *http.Response, error) {
+func (a *ClueWechatInstanceUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueWechatInstanceUpdatePostRequest) (*models.ClueWechatInstanceUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueWechatInstanceUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueWechatInstanceUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ClueWechatInstanceUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueWec
 	localVarPath := localBasePath + "/open_api/2/clue/wechat_instance/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

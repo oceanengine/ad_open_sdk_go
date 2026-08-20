@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportProductAsyncTaskGetV30ApiService ReportProductAsyncTaskGetV30Api service
@@ -25,10 +26,10 @@ type ReportProductAsyncTaskGetV30ApiService service
 type ApiOpenApiV30ReportProductAsyncTaskGetPostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *ReportProductAsyncTaskGetV30ApiService
-	reportProductAsyncTaskGetV30Request *ReportProductAsyncTaskGetV30Request
+	reportProductAsyncTaskGetV30Request *models.ReportProductAsyncTaskGetV30Request
 }
 
-func (r *ApiOpenApiV30ReportProductAsyncTaskGetPostRequest) ReportProductAsyncTaskGetV30Request(reportProductAsyncTaskGetV30Request ReportProductAsyncTaskGetV30Request) *ApiOpenApiV30ReportProductAsyncTaskGetPostRequest {
+func (r *ApiOpenApiV30ReportProductAsyncTaskGetPostRequest) ReportProductAsyncTaskGetV30Request(reportProductAsyncTaskGetV30Request models.ReportProductAsyncTaskGetV30Request) *ApiOpenApiV30ReportProductAsyncTaskGetPostRequest {
 	r.reportProductAsyncTaskGetV30Request = &reportProductAsyncTaskGetV30Request
 	return r
 }
@@ -71,7 +72,7 @@ func (a *ReportProductAsyncTaskGetV30ApiService) postExecute(r *ApiOpenApiV30Rep
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
+		formFiles           map[string]*models.FormFileInfo
 		localVarReturnValue []byte
 	)
 
@@ -82,7 +83,7 @@ func (a *ReportProductAsyncTaskGetV30ApiService) postExecute(r *ApiOpenApiV30Rep
 	localVarPath := localBasePath + "/open_api/v3.0/report/product/async_task/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

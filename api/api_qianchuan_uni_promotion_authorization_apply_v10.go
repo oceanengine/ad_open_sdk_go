@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAuthorizationApplyV10ApiService QianchuanUniPromotionAuthorizationApplyV10Api service
@@ -25,15 +26,15 @@ type QianchuanUniPromotionAuthorizationApplyV10ApiService service
 type ApiOpenApiV10QianchuanUniPromotionAuthorizationApplyPostRequest struct {
 	ctx                                               context.Context
 	ApiService                                        *QianchuanUniPromotionAuthorizationApplyV10ApiService
-	qianchuanUniPromotionAuthorizationApplyV10Request *QianchuanUniPromotionAuthorizationApplyV10Request
+	qianchuanUniPromotionAuthorizationApplyV10Request *models.QianchuanUniPromotionAuthorizationApplyV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAuthorizationApplyPostRequest) QianchuanUniPromotionAuthorizationApplyV10Request(qianchuanUniPromotionAuthorizationApplyV10Request QianchuanUniPromotionAuthorizationApplyV10Request) *ApiOpenApiV10QianchuanUniPromotionAuthorizationApplyPostRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAuthorizationApplyPostRequest) QianchuanUniPromotionAuthorizationApplyV10Request(qianchuanUniPromotionAuthorizationApplyV10Request models.QianchuanUniPromotionAuthorizationApplyV10Request) *ApiOpenApiV10QianchuanUniPromotionAuthorizationApplyPostRequest {
 	r.qianchuanUniPromotionAuthorizationApplyV10Request = &qianchuanUniPromotionAuthorizationApplyV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAuthorizationApplyPostRequest) Execute() (*QianchuanUniPromotionAuthorizationApplyV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAuthorizationApplyPostRequest) Execute() (*models.QianchuanUniPromotionAuthorizationApplyV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanUniPromotionAuthorizationApplyV10ApiService) Post(ctx context.
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAuthorizationApplyV10Response
-func (a *QianchuanUniPromotionAuthorizationApplyV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAuthorizationApplyPostRequest) (*QianchuanUniPromotionAuthorizationApplyV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAuthorizationApplyV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAuthorizationApplyPostRequest) (*models.QianchuanUniPromotionAuthorizationApplyV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAuthorizationApplyV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAuthorizationApplyV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanUniPromotionAuthorizationApplyV10ApiService) postExecute(r *Ap
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/authorization/apply/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

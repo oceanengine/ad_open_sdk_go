@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanTodayLiveRoomFlowPerformanceGetV10ApiService QianchuanTodayLiveRoomFlowPerformanceGetV10Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest struct {
 	ApiService   *QianchuanTodayLiveRoomFlowPerformanceGetV10ApiService
 	advertiserId *int64
 	roomId       *int64
-	flowSource   *QianchuanTodayLiveRoomFlowPerformanceGetV10FlowSource
+	flowSource   *models.QianchuanTodayLiveRoomFlowPerformanceGetV10FlowSource
 }
 
 func (r *ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest {
@@ -40,12 +41,12 @@ func (r *ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest) RoomId
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest) FlowSource(flowSource QianchuanTodayLiveRoomFlowPerformanceGetV10FlowSource) *ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest {
+func (r *ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest) FlowSource(flowSource models.QianchuanTodayLiveRoomFlowPerformanceGetV10FlowSource) *ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest {
 	r.flowSource = &flowSource
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest) Execute() (*QianchuanTodayLiveRoomFlowPerformanceGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest) Execute() (*models.QianchuanTodayLiveRoomFlowPerformanceGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *QianchuanTodayLiveRoomFlowPerformanceGetV10ApiService) Get(ctx context.
 // Execute executes the request
 //
 //	@return QianchuanTodayLiveRoomFlowPerformanceGetV10Response
-func (a *QianchuanTodayLiveRoomFlowPerformanceGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest) (*QianchuanTodayLiveRoomFlowPerformanceGetV10Response, *http.Response, error) {
+func (a *QianchuanTodayLiveRoomFlowPerformanceGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTodayLiveRoomFlowPerformanceGetGetRequest) (*models.QianchuanTodayLiveRoomFlowPerformanceGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanTodayLiveRoomFlowPerformanceGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanTodayLiveRoomFlowPerformanceGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *QianchuanTodayLiveRoomFlowPerformanceGetV10ApiService) getExecute(r *Ap
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/today_live/room/flow_performance/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

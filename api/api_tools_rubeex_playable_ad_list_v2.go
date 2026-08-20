@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsRubeexPlayableAdListV2ApiService ToolsRubeexPlayableAdListV2Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2ToolsRubeexPlayableAdListGetRequest) PageSize(pageSize int32
 	return r
 }
 
-func (r *ApiOpenApi2ToolsRubeexPlayableAdListGetRequest) Execute() (*ToolsRubeexPlayableAdListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsRubeexPlayableAdListGetRequest) Execute() (*models.ToolsRubeexPlayableAdListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *ToolsRubeexPlayableAdListV2ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsRubeexPlayableAdListV2Response
-func (a *ToolsRubeexPlayableAdListV2ApiService) getExecute(r *ApiOpenApi2ToolsRubeexPlayableAdListGetRequest) (*ToolsRubeexPlayableAdListV2Response, *http.Response, error) {
+func (a *ToolsRubeexPlayableAdListV2ApiService) getExecute(r *ApiOpenApi2ToolsRubeexPlayableAdListGetRequest) (*models.ToolsRubeexPlayableAdListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsRubeexPlayableAdListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsRubeexPlayableAdListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *ToolsRubeexPlayableAdListV2ApiService) getExecute(r *ApiOpenApi2ToolsRu
 	localVarPath := localBasePath + "/open_api/2/tools/rubeex_playable/ad_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.playableId == nil {

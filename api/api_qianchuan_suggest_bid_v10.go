@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanSuggestBidV10ApiService QianchuanSuggestBidV10Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV10QianchuanSuggestBidGetRequest struct {
 	ctx            context.Context
 	ApiService     *QianchuanSuggestBidV10ApiService
 	advertiserId   *int64
-	marketingGoal  *QianchuanSuggestBidV10MarketingGoal
-	externalAction *QianchuanSuggestBidV10ExternalAction
+	marketingGoal  *models.QianchuanSuggestBidV10MarketingGoal
+	externalAction *models.QianchuanSuggestBidV10ExternalAction
 	awemeId        *int64
 	productId      *int64
-	campaignScene  *QianchuanSuggestBidV10CampaignScene
-	ecomGuestType  *QianchuanSuggestBidV10EcomGuestType
+	campaignScene  *models.QianchuanSuggestBidV10CampaignScene
+	ecomGuestType  *models.QianchuanSuggestBidV10EcomGuestType
 	shopId         *int64
 	brandId        *int64
 }
@@ -41,12 +42,12 @@ func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) AdvertiserId(advertiserId i
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) MarketingGoal(marketingGoal QianchuanSuggestBidV10MarketingGoal) *ApiOpenApiV10QianchuanSuggestBidGetRequest {
+func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) MarketingGoal(marketingGoal models.QianchuanSuggestBidV10MarketingGoal) *ApiOpenApiV10QianchuanSuggestBidGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) ExternalAction(externalAction QianchuanSuggestBidV10ExternalAction) *ApiOpenApiV10QianchuanSuggestBidGetRequest {
+func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) ExternalAction(externalAction models.QianchuanSuggestBidV10ExternalAction) *ApiOpenApiV10QianchuanSuggestBidGetRequest {
 	r.externalAction = &externalAction
 	return r
 }
@@ -61,12 +62,12 @@ func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) ProductId(productId int64) 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) CampaignScene(campaignScene QianchuanSuggestBidV10CampaignScene) *ApiOpenApiV10QianchuanSuggestBidGetRequest {
+func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) CampaignScene(campaignScene models.QianchuanSuggestBidV10CampaignScene) *ApiOpenApiV10QianchuanSuggestBidGetRequest {
 	r.campaignScene = &campaignScene
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) EcomGuestType(ecomGuestType QianchuanSuggestBidV10EcomGuestType) *ApiOpenApiV10QianchuanSuggestBidGetRequest {
+func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) EcomGuestType(ecomGuestType models.QianchuanSuggestBidV10EcomGuestType) *ApiOpenApiV10QianchuanSuggestBidGetRequest {
 	r.ecomGuestType = &ecomGuestType
 	return r
 }
@@ -81,7 +82,7 @@ func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) BrandId(brandId int64) *Api
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) Execute() (*QianchuanSuggestBidV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanSuggestBidGetRequest) Execute() (*models.QianchuanSuggestBidV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -115,12 +116,12 @@ func (a *QianchuanSuggestBidV10ApiService) Get(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return QianchuanSuggestBidV10Response
-func (a *QianchuanSuggestBidV10ApiService) getExecute(r *ApiOpenApiV10QianchuanSuggestBidGetRequest) (*QianchuanSuggestBidV10Response, *http.Response, error) {
+func (a *QianchuanSuggestBidV10ApiService) getExecute(r *ApiOpenApiV10QianchuanSuggestBidGetRequest) (*models.QianchuanSuggestBidV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanSuggestBidV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanSuggestBidV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -130,7 +131,7 @@ func (a *QianchuanSuggestBidV10ApiService) getExecute(r *ApiOpenApiV10QianchuanS
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/suggest_bid/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

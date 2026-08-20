@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsMicroGameListV30ApiService ToolsMicroGameListV30Api service
@@ -26,10 +27,10 @@ type ApiOpenApiV30ToolsMicroGameListGetRequest struct {
 	ctx                    context.Context
 	ApiService             *ToolsMicroGameListV30ApiService
 	advertiserId           *int64
-	filtering              *ToolsMicroGameListV30Filtering
+	filtering              *models.ToolsMicroGameListV30Filtering
 	page                   *int32
 	pageSize               *int32
-	accountAssetQueryScope *ToolsMicroGameListV30AccountAssetQueryScope
+	accountAssetQueryScope *models.ToolsMicroGameListV30AccountAssetQueryScope
 }
 
 func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsMicroGameListGetRequest {
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) AdvertiserId(advertiserId in
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) Filtering(filtering ToolsMicroGameListV30Filtering) *ApiOpenApiV30ToolsMicroGameListGetRequest {
+func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) Filtering(filtering models.ToolsMicroGameListV30Filtering) *ApiOpenApiV30ToolsMicroGameListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -52,12 +53,12 @@ func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) PageSize(pageSize int32) *Ap
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsMicroGameListV30AccountAssetQueryScope) *ApiOpenApiV30ToolsMicroGameListGetRequest {
+func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) AccountAssetQueryScope(accountAssetQueryScope models.ToolsMicroGameListV30AccountAssetQueryScope) *ApiOpenApiV30ToolsMicroGameListGetRequest {
 	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) Execute() (*ToolsMicroGameListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsMicroGameListGetRequest) Execute() (*models.ToolsMicroGameListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ToolsMicroGameListV30ApiService) Get(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return ToolsMicroGameListV30Response
-func (a *ToolsMicroGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsMicroGameListGetRequest) (*ToolsMicroGameListV30Response, *http.Response, error) {
+func (a *ToolsMicroGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsMicroGameListGetRequest) (*models.ToolsMicroGameListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsMicroGameListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsMicroGameListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ToolsMicroGameListV30ApiService) getExecute(r *ApiOpenApiV30ToolsMicroG
 	localVarPath := localBasePath + "/open_api/v3.0/tools/micro_game/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

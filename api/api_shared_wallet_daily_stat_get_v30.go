@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SharedWalletDailyStatGetV30ApiService SharedWalletDailyStatGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30SharedWalletDailyStatGetGetRequest struct {
 	ctx            context.Context
 	ApiService     *SharedWalletDailyStatGetV30ApiService
 	accountId      *int64
-	accountType    *SharedWalletDailyStatGetV30AccountType
+	accountType    *models.SharedWalletDailyStatGetV30AccountType
 	sharedWalletId *int64
 	startDate      *string
 	endDate        *string
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30SharedWalletDailyStatGetGetRequest) AccountId(accountId in
 }
 
 // 账户类型
-func (r *ApiOpenApiV30SharedWalletDailyStatGetGetRequest) AccountType(accountType SharedWalletDailyStatGetV30AccountType) *ApiOpenApiV30SharedWalletDailyStatGetGetRequest {
+func (r *ApiOpenApiV30SharedWalletDailyStatGetGetRequest) AccountType(accountType models.SharedWalletDailyStatGetV30AccountType) *ApiOpenApiV30SharedWalletDailyStatGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -76,7 +77,7 @@ func (r *ApiOpenApiV30SharedWalletDailyStatGetGetRequest) PageSize(pageSize int6
 	return r
 }
 
-func (r *ApiOpenApiV30SharedWalletDailyStatGetGetRequest) Execute() (*SharedWalletDailyStatGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SharedWalletDailyStatGetGetRequest) Execute() (*models.SharedWalletDailyStatGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *SharedWalletDailyStatGetV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return SharedWalletDailyStatGetV30Response
-func (a *SharedWalletDailyStatGetV30ApiService) getExecute(r *ApiOpenApiV30SharedWalletDailyStatGetGetRequest) (*SharedWalletDailyStatGetV30Response, *http.Response, error) {
+func (a *SharedWalletDailyStatGetV30ApiService) getExecute(r *ApiOpenApiV30SharedWalletDailyStatGetGetRequest) (*models.SharedWalletDailyStatGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SharedWalletDailyStatGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SharedWalletDailyStatGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *SharedWalletDailyStatGetV30ApiService) getExecute(r *ApiOpenApiV30Share
 	localVarPath := localBasePath + "/open_api/v3.0/shared_wallet/daily_stat/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

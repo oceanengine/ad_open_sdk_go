@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueContactLogRecordUrlGetV2ApiService ToolsClueContactLogRecordUrlGetV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2ToolsClueContactLogRecordUrlGetGetRequest struct {
 	ApiService   *ToolsClueContactLogRecordUrlGetV2ApiService
 	advertiserId *int64
 	clueId       *int64
-	filter       *ToolsClueContactLogRecordUrlGetV2Filter
+	filter       *models.ToolsClueContactLogRecordUrlGetV2Filter
 }
 
 // 广告主id
@@ -43,12 +44,12 @@ func (r *ApiOpenApi2ToolsClueContactLogRecordUrlGetGetRequest) ClueId(clueId int
 }
 
 // 过滤条件
-func (r *ApiOpenApi2ToolsClueContactLogRecordUrlGetGetRequest) Filter(filter ToolsClueContactLogRecordUrlGetV2Filter) *ApiOpenApi2ToolsClueContactLogRecordUrlGetGetRequest {
+func (r *ApiOpenApi2ToolsClueContactLogRecordUrlGetGetRequest) Filter(filter models.ToolsClueContactLogRecordUrlGetV2Filter) *ApiOpenApi2ToolsClueContactLogRecordUrlGetGetRequest {
 	r.filter = &filter
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueContactLogRecordUrlGetGetRequest) Execute() (*ToolsClueContactLogRecordUrlGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueContactLogRecordUrlGetGetRequest) Execute() (*models.ToolsClueContactLogRecordUrlGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *ToolsClueContactLogRecordUrlGetV2ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return ToolsClueContactLogRecordUrlGetV2Response
-func (a *ToolsClueContactLogRecordUrlGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueContactLogRecordUrlGetGetRequest) (*ToolsClueContactLogRecordUrlGetV2Response, *http.Response, error) {
+func (a *ToolsClueContactLogRecordUrlGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueContactLogRecordUrlGetGetRequest) (*models.ToolsClueContactLogRecordUrlGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueContactLogRecordUrlGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueContactLogRecordUrlGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *ToolsClueContactLogRecordUrlGetV2ApiService) getExecute(r *ApiOpenApi2T
 	localVarPath := localBasePath + "/open_api/2/tools/clue/contact_log/record_url/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

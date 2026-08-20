@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAdMaterialDeleteV10ApiService QianchuanAdMaterialDeleteV10Api service
@@ -25,15 +26,15 @@ type QianchuanAdMaterialDeleteV10ApiService service
 type ApiOpenApiV10QianchuanAdMaterialDeletePostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *QianchuanAdMaterialDeleteV10ApiService
-	qianchuanAdMaterialDeleteV10Request *QianchuanAdMaterialDeleteV10Request
+	qianchuanAdMaterialDeleteV10Request *models.QianchuanAdMaterialDeleteV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanAdMaterialDeletePostRequest) QianchuanAdMaterialDeleteV10Request(qianchuanAdMaterialDeleteV10Request QianchuanAdMaterialDeleteV10Request) *ApiOpenApiV10QianchuanAdMaterialDeletePostRequest {
+func (r *ApiOpenApiV10QianchuanAdMaterialDeletePostRequest) QianchuanAdMaterialDeleteV10Request(qianchuanAdMaterialDeleteV10Request models.QianchuanAdMaterialDeleteV10Request) *ApiOpenApiV10QianchuanAdMaterialDeletePostRequest {
 	r.qianchuanAdMaterialDeleteV10Request = &qianchuanAdMaterialDeleteV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAdMaterialDeletePostRequest) Execute() (*QianchuanAdMaterialDeleteV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAdMaterialDeletePostRequest) Execute() (*models.QianchuanAdMaterialDeleteV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanAdMaterialDeleteV10ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return QianchuanAdMaterialDeleteV10Response
-func (a *QianchuanAdMaterialDeleteV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAdMaterialDeletePostRequest) (*QianchuanAdMaterialDeleteV10Response, *http.Response, error) {
+func (a *QianchuanAdMaterialDeleteV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAdMaterialDeletePostRequest) (*models.QianchuanAdMaterialDeleteV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAdMaterialDeleteV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAdMaterialDeleteV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanAdMaterialDeleteV10ApiService) postExecute(r *ApiOpenApiV10Qia
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/ad/material/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

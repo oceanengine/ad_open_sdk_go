@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileImageGetV2ApiService FileImageGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2FileImageGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *FileImageGetV2ApiService
 	advertiserId *int64
-	filtering    *FileImageGetV2Filtering
+	filtering    *models.FileImageGetV2Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApi2FileImageGetGetRequest) AdvertiserId(advertiserId int64) *Ap
 }
 
 // 图片过滤条件
-func (r *ApiOpenApi2FileImageGetGetRequest) Filtering(filtering FileImageGetV2Filtering) *ApiOpenApi2FileImageGetGetRequest {
+func (r *ApiOpenApi2FileImageGetGetRequest) Filtering(filtering models.FileImageGetV2Filtering) *ApiOpenApi2FileImageGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2FileImageGetGetRequest) PageSize(pageSize int64) *ApiOpenApi
 	return r
 }
 
-func (r *ApiOpenApi2FileImageGetGetRequest) Execute() (*FileImageGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileImageGetGetRequest) Execute() (*models.FileImageGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *FileImageGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2FileImag
 // Execute executes the request
 //
 //	@return FileImageGetV2Response
-func (a *FileImageGetV2ApiService) getExecute(r *ApiOpenApi2FileImageGetGetRequest) (*FileImageGetV2Response, *http.Response, error) {
+func (a *FileImageGetV2ApiService) getExecute(r *ApiOpenApi2FileImageGetGetRequest) (*models.FileImageGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileImageGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileImageGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *FileImageGetV2ApiService) getExecute(r *ApiOpenApi2FileImageGetGetReque
 	localVarPath := localBasePath + "/open_api/2/file/image/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

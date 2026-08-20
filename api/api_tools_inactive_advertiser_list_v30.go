@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsInactiveAdvertiserListV30ApiService ToolsInactiveAdvertiserListV30Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest struct {
 	appId          *int64
 	cursor         *int64
 	count          *int32
-	advertiserType *ToolsInactiveAdvertiserListV30AdvertiserType
+	advertiserType *models.ToolsInactiveAdvertiserListV30AdvertiserType
 }
 
 func (r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) AppId(appId int64) *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest {
@@ -46,12 +47,12 @@ func (r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) Count(count int32) 
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) AdvertiserType(advertiserType ToolsInactiveAdvertiserListV30AdvertiserType) *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest {
+func (r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) AdvertiserType(advertiserType models.ToolsInactiveAdvertiserListV30AdvertiserType) *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest {
 	r.advertiserType = &advertiserType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) Execute() (*ToolsInactiveAdvertiserListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) Execute() (*models.ToolsInactiveAdvertiserListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ToolsInactiveAdvertiserListV30ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return ToolsInactiveAdvertiserListV30Response
-func (a *ToolsInactiveAdvertiserListV30ApiService) getExecute(r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) (*ToolsInactiveAdvertiserListV30Response, *http.Response, error) {
+func (a *ToolsInactiveAdvertiserListV30ApiService) getExecute(r *ApiOpenApiV30ToolsInactiveAdvertiserListGetRequest) (*models.ToolsInactiveAdvertiserListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsInactiveAdvertiserListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsInactiveAdvertiserListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ToolsInactiveAdvertiserListV30ApiService) getExecute(r *ApiOpenApiV30To
 	localVarPath := localBasePath + "/open_api/v3.0/tools/inactive_advertiser/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.appId == nil {

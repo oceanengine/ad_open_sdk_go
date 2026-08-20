@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsUnionFlowPackageReportV2ApiService ToolsUnionFlowPackageReportV2Api service
@@ -26,9 +27,9 @@ type ApiOpenApi2ToolsUnionFlowPackageReportGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsUnionFlowPackageReportV2ApiService
 	advertiserId *int64
-	filter       *ToolsUnionFlowPackageReportV2Filter
+	filter       *models.ToolsUnionFlowPackageReportV2Filter
 	orderField   *string
-	orderType    *ToolsUnionFlowPackageReportV2OrderType
+	orderType    *models.ToolsUnionFlowPackageReportV2OrderType
 	page         *int64
 	pageSize     *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest) AdvertiserId(advertis
 	return r
 }
 
-func (r *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest) Filter(filter ToolsUnionFlowPackageReportV2Filter) *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest {
+func (r *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest) Filter(filter models.ToolsUnionFlowPackageReportV2Filter) *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest {
 	r.filter = &filter
 	return r
 }
@@ -48,7 +49,7 @@ func (r *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest) OrderField(orderField
 	return r
 }
 
-func (r *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest) OrderType(orderType ToolsUnionFlowPackageReportV2OrderType) *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest {
+func (r *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest) OrderType(orderType models.ToolsUnionFlowPackageReportV2OrderType) *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -63,7 +64,7 @@ func (r *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest) PageSize(pageSize int
 	return r
 }
 
-func (r *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest) Execute() (*ToolsUnionFlowPackageReportV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest) Execute() (*models.ToolsUnionFlowPackageReportV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ToolsUnionFlowPackageReportV2ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return ToolsUnionFlowPackageReportV2Response
-func (a *ToolsUnionFlowPackageReportV2ApiService) getExecute(r *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest) (*ToolsUnionFlowPackageReportV2Response, *http.Response, error) {
+func (a *ToolsUnionFlowPackageReportV2ApiService) getExecute(r *ApiOpenApi2ToolsUnionFlowPackageReportGetRequest) (*models.ToolsUnionFlowPackageReportV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsUnionFlowPackageReportV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsUnionFlowPackageReportV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ToolsUnionFlowPackageReportV2ApiService) getExecute(r *ApiOpenApi2Tools
 	localVarPath := localBasePath + "/open_api/2/tools/union/flow_package/report/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

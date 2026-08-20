@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdBillingUniqueIdGetV30ApiService AdBillingUniqueIdGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30AdBillingUniqueIdGetGetRequest struct {
 	ApiService   *AdBillingUniqueIdGetV30ApiService
 	advertiserId *int64
 	count        *int64
-	uniqueIdType *AdBillingUniqueIdGetV30UniqueIdType
+	uniqueIdType *models.AdBillingUniqueIdGetV30UniqueIdType
 }
 
 func (r *ApiOpenApiV30AdBillingUniqueIdGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30AdBillingUniqueIdGetGetRequest {
@@ -42,12 +43,12 @@ func (r *ApiOpenApiV30AdBillingUniqueIdGetGetRequest) Count(count int64) *ApiOpe
 }
 
 // 唯一键类型, 用于决定唯一键分类
-func (r *ApiOpenApiV30AdBillingUniqueIdGetGetRequest) UniqueIdType(uniqueIdType AdBillingUniqueIdGetV30UniqueIdType) *ApiOpenApiV30AdBillingUniqueIdGetGetRequest {
+func (r *ApiOpenApiV30AdBillingUniqueIdGetGetRequest) UniqueIdType(uniqueIdType models.AdBillingUniqueIdGetV30UniqueIdType) *ApiOpenApiV30AdBillingUniqueIdGetGetRequest {
 	r.uniqueIdType = &uniqueIdType
 	return r
 }
 
-func (r *ApiOpenApiV30AdBillingUniqueIdGetGetRequest) Execute() (*AdBillingUniqueIdGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AdBillingUniqueIdGetGetRequest) Execute() (*models.AdBillingUniqueIdGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -81,12 +82,12 @@ func (a *AdBillingUniqueIdGetV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return AdBillingUniqueIdGetV30Response
-func (a *AdBillingUniqueIdGetV30ApiService) getExecute(r *ApiOpenApiV30AdBillingUniqueIdGetGetRequest) (*AdBillingUniqueIdGetV30Response, *http.Response, error) {
+func (a *AdBillingUniqueIdGetV30ApiService) getExecute(r *ApiOpenApiV30AdBillingUniqueIdGetGetRequest) (*models.AdBillingUniqueIdGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdBillingUniqueIdGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdBillingUniqueIdGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -96,7 +97,7 @@ func (a *AdBillingUniqueIdGetV30ApiService) getExecute(r *ApiOpenApiV30AdBilling
 	localVarPath := localBasePath + "/open_api/v3.0/ad_billing/unique_id/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarProviderTaskItemListV2ApiService StarProviderTaskItemListV2Api service
@@ -83,7 +84,7 @@ func (r *ApiOpenApi2StarProviderTaskItemListGetRequest) PageSize(pageSize int64)
 	return r
 }
 
-func (r *ApiOpenApi2StarProviderTaskItemListGetRequest) Execute() (*StarProviderTaskItemListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarProviderTaskItemListGetRequest) Execute() (*models.StarProviderTaskItemListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -117,12 +118,12 @@ func (a *StarProviderTaskItemListV2ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return StarProviderTaskItemListV2Response
-func (a *StarProviderTaskItemListV2ApiService) getExecute(r *ApiOpenApi2StarProviderTaskItemListGetRequest) (*StarProviderTaskItemListV2Response, *http.Response, error) {
+func (a *StarProviderTaskItemListV2ApiService) getExecute(r *ApiOpenApi2StarProviderTaskItemListGetRequest) (*models.StarProviderTaskItemListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarProviderTaskItemListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarProviderTaskItemListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -132,7 +133,7 @@ func (a *StarProviderTaskItemListV2ApiService) getExecute(r *ApiOpenApi2StarProv
 	localVarPath := localBasePath + "/open_api/2/star/provider/task/item/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

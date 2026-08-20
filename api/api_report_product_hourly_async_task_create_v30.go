@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportProductHourlyAsyncTaskCreateV30ApiService ReportProductHourlyAsyncTaskCreateV30Api service
@@ -25,10 +26,10 @@ type ReportProductHourlyAsyncTaskCreateV30ApiService service
 type ApiOpenApiV30ReportProductHourlyAsyncTaskCreatePostRequest struct {
 	ctx                                          context.Context
 	ApiService                                   *ReportProductHourlyAsyncTaskCreateV30ApiService
-	reportProductHourlyAsyncTaskCreateV30Request *ReportProductHourlyAsyncTaskCreateV30Request
+	reportProductHourlyAsyncTaskCreateV30Request *models.ReportProductHourlyAsyncTaskCreateV30Request
 }
 
-func (r *ApiOpenApiV30ReportProductHourlyAsyncTaskCreatePostRequest) ReportProductHourlyAsyncTaskCreateV30Request(reportProductHourlyAsyncTaskCreateV30Request ReportProductHourlyAsyncTaskCreateV30Request) *ApiOpenApiV30ReportProductHourlyAsyncTaskCreatePostRequest {
+func (r *ApiOpenApiV30ReportProductHourlyAsyncTaskCreatePostRequest) ReportProductHourlyAsyncTaskCreateV30Request(reportProductHourlyAsyncTaskCreateV30Request models.ReportProductHourlyAsyncTaskCreateV30Request) *ApiOpenApiV30ReportProductHourlyAsyncTaskCreatePostRequest {
 	r.reportProductHourlyAsyncTaskCreateV30Request = &reportProductHourlyAsyncTaskCreateV30Request
 	return r
 }
@@ -71,7 +72,7 @@ func (a *ReportProductHourlyAsyncTaskCreateV30ApiService) postExecute(r *ApiOpen
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
+		formFiles           map[string]*models.FormFileInfo
 		localVarReturnValue []byte
 	)
 
@@ -82,7 +83,7 @@ func (a *ReportProductHourlyAsyncTaskCreateV30ApiService) postExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/v3.0/report/product_hourly/async_task/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

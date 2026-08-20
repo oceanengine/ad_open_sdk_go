@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemandCreateAssignV2ApiService StarDemandCreateAssignV2Api service
@@ -25,15 +26,15 @@ type StarDemandCreateAssignV2ApiService service
 type ApiOpenApi2StarDemandCreateAssignPostRequest struct {
 	ctx                             context.Context
 	ApiService                      *StarDemandCreateAssignV2ApiService
-	starDemandCreateAssignV2Request *StarDemandCreateAssignV2Request
+	starDemandCreateAssignV2Request *models.StarDemandCreateAssignV2Request
 }
 
-func (r *ApiOpenApi2StarDemandCreateAssignPostRequest) StarDemandCreateAssignV2Request(starDemandCreateAssignV2Request StarDemandCreateAssignV2Request) *ApiOpenApi2StarDemandCreateAssignPostRequest {
+func (r *ApiOpenApi2StarDemandCreateAssignPostRequest) StarDemandCreateAssignV2Request(starDemandCreateAssignV2Request models.StarDemandCreateAssignV2Request) *ApiOpenApi2StarDemandCreateAssignPostRequest {
 	r.starDemandCreateAssignV2Request = &starDemandCreateAssignV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarDemandCreateAssignPostRequest) Execute() (*StarDemandCreateAssignV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemandCreateAssignPostRequest) Execute() (*models.StarDemandCreateAssignV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarDemandCreateAssignV2ApiService) Post(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return StarDemandCreateAssignV2Response
-func (a *StarDemandCreateAssignV2ApiService) postExecute(r *ApiOpenApi2StarDemandCreateAssignPostRequest) (*StarDemandCreateAssignV2Response, *http.Response, error) {
+func (a *StarDemandCreateAssignV2ApiService) postExecute(r *ApiOpenApi2StarDemandCreateAssignPostRequest) (*models.StarDemandCreateAssignV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemandCreateAssignV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemandCreateAssignV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarDemandCreateAssignV2ApiService) postExecute(r *ApiOpenApi2StarDeman
 	localVarPath := localBasePath + "/open_api/2/star/demand/create_assign/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

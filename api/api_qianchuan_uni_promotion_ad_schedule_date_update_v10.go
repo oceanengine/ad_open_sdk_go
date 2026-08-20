@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdScheduleDateUpdateV10ApiService QianchuanUniPromotionAdScheduleDateUpdateV10Api service
@@ -25,15 +26,15 @@ type QianchuanUniPromotionAdScheduleDateUpdateV10ApiService service
 type ApiOpenApiV10QianchuanUniPromotionAdScheduleDateUpdatePostRequest struct {
 	ctx                                                 context.Context
 	ApiService                                          *QianchuanUniPromotionAdScheduleDateUpdateV10ApiService
-	qianchuanUniPromotionAdScheduleDateUpdateV10Request *QianchuanUniPromotionAdScheduleDateUpdateV10Request
+	qianchuanUniPromotionAdScheduleDateUpdateV10Request *models.QianchuanUniPromotionAdScheduleDateUpdateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdScheduleDateUpdatePostRequest) QianchuanUniPromotionAdScheduleDateUpdateV10Request(qianchuanUniPromotionAdScheduleDateUpdateV10Request QianchuanUniPromotionAdScheduleDateUpdateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdScheduleDateUpdatePostRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdScheduleDateUpdatePostRequest) QianchuanUniPromotionAdScheduleDateUpdateV10Request(qianchuanUniPromotionAdScheduleDateUpdateV10Request models.QianchuanUniPromotionAdScheduleDateUpdateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdScheduleDateUpdatePostRequest {
 	r.qianchuanUniPromotionAdScheduleDateUpdateV10Request = &qianchuanUniPromotionAdScheduleDateUpdateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdScheduleDateUpdatePostRequest) Execute() (*QianchuanUniPromotionAdScheduleDateUpdateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdScheduleDateUpdatePostRequest) Execute() (*models.QianchuanUniPromotionAdScheduleDateUpdateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanUniPromotionAdScheduleDateUpdateV10ApiService) Post(ctx contex
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdScheduleDateUpdateV10Response
-func (a *QianchuanUniPromotionAdScheduleDateUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdScheduleDateUpdatePostRequest) (*QianchuanUniPromotionAdScheduleDateUpdateV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdScheduleDateUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdScheduleDateUpdatePostRequest) (*models.QianchuanUniPromotionAdScheduleDateUpdateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdScheduleDateUpdateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdScheduleDateUpdateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanUniPromotionAdScheduleDateUpdateV10ApiService) postExecute(r *
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/schedule_date/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

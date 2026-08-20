@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandToolQueryStockBalanceV30ApiService BrandToolQueryStockBalanceV30Api service
@@ -26,17 +27,17 @@ type ApiOpenApiV30BrandToolQueryStockBalanceGetRequest struct {
 	ctx           context.Context
 	ApiService    *BrandToolQueryStockBalanceV30ApiService
 	advertiserId  *int64
-	classify      *BrandToolQueryStockBalanceV30Classify
-	proType       *BrandToolQueryStockBalanceV30ProType
-	adForm        *BrandToolQueryStockBalanceV30AdForm
-	appOrigin     *BrandToolQueryStockBalanceV30AppOrigin
-	pricingType   *BrandToolQueryStockBalanceV30PricingType
-	gdSendType    *BrandToolQueryStockBalanceV30GdSendType
+	classify      *models.BrandToolQueryStockBalanceV30Classify
+	proType       *models.BrandToolQueryStockBalanceV30ProType
+	adForm        *models.BrandToolQueryStockBalanceV30AdForm
+	appOrigin     *models.BrandToolQueryStockBalanceV30AppOrigin
+	pricingType   *models.BrandToolQueryStockBalanceV30PricingType
+	gdSendType    *models.BrandToolQueryStockBalanceV30GdSendType
 	policyNo      *string
-	deliveryInfo  *BrandToolQueryStockBalanceV30DeliveryInfo
+	deliveryInfo  *models.BrandToolQueryStockBalanceV30DeliveryInfo
 	intentionNo   *string
-	audienceInfo  *BrandToolQueryStockBalanceV30AudienceInfo
-	frequencyInfo *BrandToolQueryStockBalanceV30FrequencyInfo
+	audienceInfo  *models.BrandToolQueryStockBalanceV30AudienceInfo
+	frequencyInfo *models.BrandToolQueryStockBalanceV30FrequencyInfo
 }
 
 // 广告主ID
@@ -46,37 +47,37 @@ func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) AdvertiserId(adverti
 }
 
 // 广告类别
-func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) Classify(classify BrandToolQueryStockBalanceV30Classify) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) Classify(classify models.BrandToolQueryStockBalanceV30Classify) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
 	r.classify = &classify
 	return r
 }
 
 // 产品类型
-func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) ProType(proType BrandToolQueryStockBalanceV30ProType) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) ProType(proType models.BrandToolQueryStockBalanceV30ProType) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
 	r.proType = &proType
 	return r
 }
 
 // 投放产品
-func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) AdForm(adForm BrandToolQueryStockBalanceV30AdForm) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) AdForm(adForm models.BrandToolQueryStockBalanceV30AdForm) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
 	r.adForm = &adForm
 	return r
 }
 
 // 投放位置（媒体端）
-func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) AppOrigin(appOrigin BrandToolQueryStockBalanceV30AppOrigin) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) AppOrigin(appOrigin models.BrandToolQueryStockBalanceV30AppOrigin) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
 	r.appOrigin = &appOrigin
 	return r
 }
 
 // 计费类型
-func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) PricingType(pricingType BrandToolQueryStockBalanceV30PricingType) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) PricingType(pricingType models.BrandToolQueryStockBalanceV30PricingType) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
 	r.pricingType = &pricingType
 	return r
 }
 
 // 优化目标
-func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) GdSendType(gdSendType BrandToolQueryStockBalanceV30GdSendType) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) GdSendType(gdSendType models.BrandToolQueryStockBalanceV30GdSendType) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
 	r.gdSendType = &gdSendType
 	return r
 }
@@ -88,7 +89,7 @@ func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) PolicyNo(policyNo st
 }
 
 // 投放日期信息
-func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) DeliveryInfo(deliveryInfo BrandToolQueryStockBalanceV30DeliveryInfo) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) DeliveryInfo(deliveryInfo models.BrandToolQueryStockBalanceV30DeliveryInfo) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
 	r.deliveryInfo = &deliveryInfo
 	return r
 }
@@ -100,18 +101,18 @@ func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) IntentionNo(intentio
 }
 
 // 定向
-func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) AudienceInfo(audienceInfo BrandToolQueryStockBalanceV30AudienceInfo) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) AudienceInfo(audienceInfo models.BrandToolQueryStockBalanceV30AudienceInfo) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
 	r.audienceInfo = &audienceInfo
 	return r
 }
 
 // 频控信息
-func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) FrequencyInfo(frequencyInfo BrandToolQueryStockBalanceV30FrequencyInfo) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) FrequencyInfo(frequencyInfo models.BrandToolQueryStockBalanceV30FrequencyInfo) *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest {
 	r.frequencyInfo = &frequencyInfo
 	return r
 }
 
-func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) Execute() (*BrandToolQueryStockBalanceV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) Execute() (*models.BrandToolQueryStockBalanceV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -145,12 +146,12 @@ func (a *BrandToolQueryStockBalanceV30ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return BrandToolQueryStockBalanceV30Response
-func (a *BrandToolQueryStockBalanceV30ApiService) getExecute(r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) (*BrandToolQueryStockBalanceV30Response, *http.Response, error) {
+func (a *BrandToolQueryStockBalanceV30ApiService) getExecute(r *ApiOpenApiV30BrandToolQueryStockBalanceGetRequest) (*models.BrandToolQueryStockBalanceV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandToolQueryStockBalanceV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandToolQueryStockBalanceV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -160,7 +161,7 @@ func (a *BrandToolQueryStockBalanceV30ApiService) getExecute(r *ApiOpenApiV30Bra
 	localVarPath := localBasePath + "/open_api/v3.0/brand/tool/query_stock_balance/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

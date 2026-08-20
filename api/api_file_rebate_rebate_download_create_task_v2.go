@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileRebateRebateDownloadCreateTaskV2ApiService FileRebateRebateDownloadCreateTaskV2Api service
@@ -25,15 +26,15 @@ type FileRebateRebateDownloadCreateTaskV2ApiService service
 type ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequest struct {
 	ctx                                         context.Context
 	ApiService                                  *FileRebateRebateDownloadCreateTaskV2ApiService
-	fileRebateRebateDownloadCreateTaskV2Request *FileRebateRebateDownloadCreateTaskV2Request
+	fileRebateRebateDownloadCreateTaskV2Request *models.FileRebateRebateDownloadCreateTaskV2Request
 }
 
-func (r *ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequest) FileRebateRebateDownloadCreateTaskV2Request(fileRebateRebateDownloadCreateTaskV2Request FileRebateRebateDownloadCreateTaskV2Request) *ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequest {
+func (r *ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequest) FileRebateRebateDownloadCreateTaskV2Request(fileRebateRebateDownloadCreateTaskV2Request models.FileRebateRebateDownloadCreateTaskV2Request) *ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequest {
 	r.fileRebateRebateDownloadCreateTaskV2Request = &fileRebateRebateDownloadCreateTaskV2Request
 	return r
 }
 
-func (r *ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequest) Execute() (*FileRebateRebateDownloadCreateTaskV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequest) Execute() (*models.FileRebateRebateDownloadCreateTaskV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *FileRebateRebateDownloadCreateTaskV2ApiService) Post(ctx context.Contex
 // Execute executes the request
 //
 //	@return FileRebateRebateDownloadCreateTaskV2Response
-func (a *FileRebateRebateDownloadCreateTaskV2ApiService) postExecute(r *ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequest) (*FileRebateRebateDownloadCreateTaskV2Response, *http.Response, error) {
+func (a *FileRebateRebateDownloadCreateTaskV2ApiService) postExecute(r *ApiOpenApi2FileRebateRebateDownloadCreateTaskPostRequest) (*models.FileRebateRebateDownloadCreateTaskV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileRebateRebateDownloadCreateTaskV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileRebateRebateDownloadCreateTaskV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *FileRebateRebateDownloadCreateTaskV2ApiService) postExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/2/file/rebate/rebate_download/create_task/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

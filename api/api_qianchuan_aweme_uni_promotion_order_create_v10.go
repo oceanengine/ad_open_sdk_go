@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeUniPromotionOrderCreateV10ApiService QianchuanAwemeUniPromotionOrderCreateV10Api service
@@ -25,15 +26,15 @@ type QianchuanAwemeUniPromotionOrderCreateV10ApiService service
 type ApiOpenApiV10QianchuanAwemeUniPromotionOrderCreatePostRequest struct {
 	ctx                                             context.Context
 	ApiService                                      *QianchuanAwemeUniPromotionOrderCreateV10ApiService
-	qianchuanAwemeUniPromotionOrderCreateV10Request *QianchuanAwemeUniPromotionOrderCreateV10Request
+	qianchuanAwemeUniPromotionOrderCreateV10Request *models.QianchuanAwemeUniPromotionOrderCreateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderCreatePostRequest) QianchuanAwemeUniPromotionOrderCreateV10Request(qianchuanAwemeUniPromotionOrderCreateV10Request QianchuanAwemeUniPromotionOrderCreateV10Request) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderCreatePostRequest {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderCreatePostRequest) QianchuanAwemeUniPromotionOrderCreateV10Request(qianchuanAwemeUniPromotionOrderCreateV10Request models.QianchuanAwemeUniPromotionOrderCreateV10Request) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderCreatePostRequest {
 	r.qianchuanAwemeUniPromotionOrderCreateV10Request = &qianchuanAwemeUniPromotionOrderCreateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderCreatePostRequest) Execute() (*QianchuanAwemeUniPromotionOrderCreateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderCreatePostRequest) Execute() (*models.QianchuanAwemeUniPromotionOrderCreateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanAwemeUniPromotionOrderCreateV10ApiService) Post(ctx context.Co
 // Execute executes the request
 //
 //	@return QianchuanAwemeUniPromotionOrderCreateV10Response
-func (a *QianchuanAwemeUniPromotionOrderCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderCreatePostRequest) (*QianchuanAwemeUniPromotionOrderCreateV10Response, *http.Response, error) {
+func (a *QianchuanAwemeUniPromotionOrderCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderCreatePostRequest) (*models.QianchuanAwemeUniPromotionOrderCreateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeUniPromotionOrderCreateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeUniPromotionOrderCreateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanAwemeUniPromotionOrderCreateV10ApiService) postExecute(r *ApiO
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/uni_promotion/order/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

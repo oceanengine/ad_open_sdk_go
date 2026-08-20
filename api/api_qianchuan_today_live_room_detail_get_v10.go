@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanTodayLiveRoomDetailGetV10ApiService QianchuanTodayLiveRoomDetailGetV10Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV10QianchuanTodayLiveRoomDetailGetGetRequest) RoomId(roomId i
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanTodayLiveRoomDetailGetGetRequest) Execute() (*QianchuanTodayLiveRoomDetailGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanTodayLiveRoomDetailGetGetRequest) Execute() (*models.QianchuanTodayLiveRoomDetailGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *QianchuanTodayLiveRoomDetailGetV10ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return QianchuanTodayLiveRoomDetailGetV10Response
-func (a *QianchuanTodayLiveRoomDetailGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTodayLiveRoomDetailGetGetRequest) (*QianchuanTodayLiveRoomDetailGetV10Response, *http.Response, error) {
+func (a *QianchuanTodayLiveRoomDetailGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTodayLiveRoomDetailGetGetRequest) (*models.QianchuanTodayLiveRoomDetailGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanTodayLiveRoomDetailGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanTodayLiveRoomDetailGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *QianchuanTodayLiveRoomDetailGetV10ApiService) getExecute(r *ApiOpenApiV
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/today_live/room/detail/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

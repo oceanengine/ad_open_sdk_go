@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsRubeexRemarkV2ApiService ToolsRubeexRemarkV2Api service
@@ -27,8 +28,8 @@ type ApiOpenApi2ToolsRubeexRemarkGetRequest struct {
 	ApiService   *ToolsRubeexRemarkV2ApiService
 	advertiserId *float64
 	projectId    *float64
-	scene        *ToolsRubeexRemarkV2Scene
-	filtering    *ToolsRubeexRemarkV2Filtering
+	scene        *models.ToolsRubeexRemarkV2Scene
+	filtering    *models.ToolsRubeexRemarkV2Filtering
 }
 
 // 广告主ID
@@ -44,18 +45,18 @@ func (r *ApiOpenApi2ToolsRubeexRemarkGetRequest) ProjectId(projectId float64) *A
 }
 
 // &#x60;1&#x60;：分场景&lt;br&gt;&#x60;2&#x60;：分场景并且分区域
-func (r *ApiOpenApi2ToolsRubeexRemarkGetRequest) Scene(scene ToolsRubeexRemarkV2Scene) *ApiOpenApi2ToolsRubeexRemarkGetRequest {
+func (r *ApiOpenApi2ToolsRubeexRemarkGetRequest) Scene(scene models.ToolsRubeexRemarkV2Scene) *ApiOpenApi2ToolsRubeexRemarkGetRequest {
 	r.scene = &scene
 	return r
 }
 
 // 过滤条件
-func (r *ApiOpenApi2ToolsRubeexRemarkGetRequest) Filtering(filtering ToolsRubeexRemarkV2Filtering) *ApiOpenApi2ToolsRubeexRemarkGetRequest {
+func (r *ApiOpenApi2ToolsRubeexRemarkGetRequest) Filtering(filtering models.ToolsRubeexRemarkV2Filtering) *ApiOpenApi2ToolsRubeexRemarkGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ToolsRubeexRemarkGetRequest) Execute() (*ToolsRubeexRemarkV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsRubeexRemarkGetRequest) Execute() (*models.ToolsRubeexRemarkV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *ToolsRubeexRemarkV2ApiService) Get(ctx context.Context) *ApiOpenApi2Too
 // Execute executes the request
 //
 //	@return ToolsRubeexRemarkV2Response
-func (a *ToolsRubeexRemarkV2ApiService) getExecute(r *ApiOpenApi2ToolsRubeexRemarkGetRequest) (*ToolsRubeexRemarkV2Response, *http.Response, error) {
+func (a *ToolsRubeexRemarkV2ApiService) getExecute(r *ApiOpenApi2ToolsRubeexRemarkGetRequest) (*models.ToolsRubeexRemarkV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsRubeexRemarkV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsRubeexRemarkV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *ToolsRubeexRemarkV2ApiService) getExecute(r *ApiOpenApi2ToolsRubeexRema
 	localVarPath := localBasePath + "/open_api/2/tools/rubeex/remark/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

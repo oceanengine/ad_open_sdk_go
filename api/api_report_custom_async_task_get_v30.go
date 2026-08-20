@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportCustomAsyncTaskGetV30ApiService ReportCustomAsyncTaskGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ReportCustomAsyncTaskGetV30ApiService
 	advertiserId *int64
-	filtering    *ReportCustomAsyncTaskGetV30Filtering
+	filtering    *models.ReportCustomAsyncTaskGetV30Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest) AdvertiserId(advertise
 	return r
 }
 
-func (r *ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest) Filtering(filtering ReportCustomAsyncTaskGetV30Filtering) *ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest {
+func (r *ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest) Filtering(filtering models.ReportCustomAsyncTaskGetV30Filtering) *ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest) PageSize(pageSize int6
 	return r
 }
 
-func (r *ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest) Execute() (*ReportCustomAsyncTaskGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest) Execute() (*models.ReportCustomAsyncTaskGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ReportCustomAsyncTaskGetV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ReportCustomAsyncTaskGetV30Response
-func (a *ReportCustomAsyncTaskGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest) (*ReportCustomAsyncTaskGetV30Response, *http.Response, error) {
+func (a *ReportCustomAsyncTaskGetV30ApiService) getExecute(r *ApiOpenApiV30ReportCustomAsyncTaskGetGetRequest) (*models.ReportCustomAsyncTaskGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportCustomAsyncTaskGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportCustomAsyncTaskGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ReportCustomAsyncTaskGetV30ApiService) getExecute(r *ApiOpenApiV30Repor
 	localVarPath := localBasePath + "/open_api/v3.0/report/custom/async_task/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

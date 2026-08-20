@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanEstimateEffectV10ApiService QianchuanEstimateEffectV10Api service
@@ -27,12 +28,12 @@ type ApiOpenApiV10QianchuanEstimateEffectGetRequest struct {
 	ApiService         *QianchuanEstimateEffectV10ApiService
 	advertiserId       *int64
 	awemeId            *int64
-	externalAction     *QianchuanEstimateEffectV10ExternalAction
-	budgetMode         *QianchuanEstimateEffectV10BudgetMode
+	externalAction     *models.QianchuanEstimateEffectV10ExternalAction
+	budgetMode         *models.QianchuanEstimateEffectV10BudgetMode
 	budget             *float64
-	liveScheduleType   *QianchuanEstimateEffectV10LiveScheduleType
-	deepExternalAction *QianchuanEstimateEffectV10DeepExternalAction
-	deepBidType        *QianchuanEstimateEffectV10DeepBidType
+	liveScheduleType   *models.QianchuanEstimateEffectV10LiveScheduleType
+	deepExternalAction *models.QianchuanEstimateEffectV10DeepExternalAction
+	deepBidType        *models.QianchuanEstimateEffectV10DeepBidType
 	startTime          *string
 	endTime            *string
 	scheduleTime       *string
@@ -49,12 +50,12 @@ func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) AwemeId(awemeId int64) 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) ExternalAction(externalAction QianchuanEstimateEffectV10ExternalAction) *ApiOpenApiV10QianchuanEstimateEffectGetRequest {
+func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) ExternalAction(externalAction models.QianchuanEstimateEffectV10ExternalAction) *ApiOpenApiV10QianchuanEstimateEffectGetRequest {
 	r.externalAction = &externalAction
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) BudgetMode(budgetMode QianchuanEstimateEffectV10BudgetMode) *ApiOpenApiV10QianchuanEstimateEffectGetRequest {
+func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) BudgetMode(budgetMode models.QianchuanEstimateEffectV10BudgetMode) *ApiOpenApiV10QianchuanEstimateEffectGetRequest {
 	r.budgetMode = &budgetMode
 	return r
 }
@@ -64,17 +65,17 @@ func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) Budget(budget float64) 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) LiveScheduleType(liveScheduleType QianchuanEstimateEffectV10LiveScheduleType) *ApiOpenApiV10QianchuanEstimateEffectGetRequest {
+func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) LiveScheduleType(liveScheduleType models.QianchuanEstimateEffectV10LiveScheduleType) *ApiOpenApiV10QianchuanEstimateEffectGetRequest {
 	r.liveScheduleType = &liveScheduleType
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) DeepExternalAction(deepExternalAction QianchuanEstimateEffectV10DeepExternalAction) *ApiOpenApiV10QianchuanEstimateEffectGetRequest {
+func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) DeepExternalAction(deepExternalAction models.QianchuanEstimateEffectV10DeepExternalAction) *ApiOpenApiV10QianchuanEstimateEffectGetRequest {
 	r.deepExternalAction = &deepExternalAction
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) DeepBidType(deepBidType QianchuanEstimateEffectV10DeepBidType) *ApiOpenApiV10QianchuanEstimateEffectGetRequest {
+func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) DeepBidType(deepBidType models.QianchuanEstimateEffectV10DeepBidType) *ApiOpenApiV10QianchuanEstimateEffectGetRequest {
 	r.deepBidType = &deepBidType
 	return r
 }
@@ -99,7 +100,7 @@ func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) ScheduleFixedRange(sche
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) Execute() (*QianchuanEstimateEffectV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) Execute() (*models.QianchuanEstimateEffectV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -133,12 +134,12 @@ func (a *QianchuanEstimateEffectV10ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return QianchuanEstimateEffectV10Response
-func (a *QianchuanEstimateEffectV10ApiService) getExecute(r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) (*QianchuanEstimateEffectV10Response, *http.Response, error) {
+func (a *QianchuanEstimateEffectV10ApiService) getExecute(r *ApiOpenApiV10QianchuanEstimateEffectGetRequest) (*models.QianchuanEstimateEffectV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanEstimateEffectV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanEstimateEffectV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -148,7 +149,7 @@ func (a *QianchuanEstimateEffectV10ApiService) getExecute(r *ApiOpenApiV10Qianch
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/estimate/effect/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

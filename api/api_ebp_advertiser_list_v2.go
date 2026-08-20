@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EbpAdvertiserListV2ApiService EbpAdvertiserListV2Api service
@@ -26,8 +27,8 @@ type ApiOpenApi2EbpAdvertiserListGetRequest struct {
 	ctx                      context.Context
 	ApiService               *EbpAdvertiserListV2ApiService
 	enterpriseOrganizationId *int64
-	accountSource            *EbpAdvertiserListV2AccountSource
-	filtering                *EbpAdvertiserListV2Filtering
+	accountSource            *models.EbpAdvertiserListV2AccountSource
+	filtering                *models.EbpAdvertiserListV2Filtering
 	page                     *int64
 	pageSize                 *int64
 }
@@ -37,13 +38,13 @@ func (r *ApiOpenApi2EbpAdvertiserListGetRequest) EnterpriseOrganizationId(enterp
 	return r
 }
 
-func (r *ApiOpenApi2EbpAdvertiserListGetRequest) AccountSource(accountSource EbpAdvertiserListV2AccountSource) *ApiOpenApi2EbpAdvertiserListGetRequest {
+func (r *ApiOpenApi2EbpAdvertiserListGetRequest) AccountSource(accountSource models.EbpAdvertiserListV2AccountSource) *ApiOpenApi2EbpAdvertiserListGetRequest {
 	r.accountSource = &accountSource
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApi2EbpAdvertiserListGetRequest) Filtering(filtering EbpAdvertiserListV2Filtering) *ApiOpenApi2EbpAdvertiserListGetRequest {
+func (r *ApiOpenApi2EbpAdvertiserListGetRequest) Filtering(filtering models.EbpAdvertiserListV2Filtering) *ApiOpenApi2EbpAdvertiserListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -60,7 +61,7 @@ func (r *ApiOpenApi2EbpAdvertiserListGetRequest) PageSize(pageSize int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2EbpAdvertiserListGetRequest) Execute() (*EbpAdvertiserListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2EbpAdvertiserListGetRequest) Execute() (*models.EbpAdvertiserListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -94,12 +95,12 @@ func (a *EbpAdvertiserListV2ApiService) Get(ctx context.Context) *ApiOpenApi2Ebp
 // Execute executes the request
 //
 //	@return EbpAdvertiserListV2Response
-func (a *EbpAdvertiserListV2ApiService) getExecute(r *ApiOpenApi2EbpAdvertiserListGetRequest) (*EbpAdvertiserListV2Response, *http.Response, error) {
+func (a *EbpAdvertiserListV2ApiService) getExecute(r *ApiOpenApi2EbpAdvertiserListGetRequest) (*models.EbpAdvertiserListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EbpAdvertiserListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EbpAdvertiserListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -109,7 +110,7 @@ func (a *EbpAdvertiserListV2ApiService) getExecute(r *ApiOpenApi2EbpAdvertiserLi
 	localVarPath := localBasePath + "/open_api/2/ebp/advertiser/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.enterpriseOrganizationId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoDeleteV2ApiService FileVideoDeleteV2Api service
@@ -25,15 +26,15 @@ type FileVideoDeleteV2ApiService service
 type ApiOpenApi2FileVideoDeletePostRequest struct {
 	ctx                      context.Context
 	ApiService               *FileVideoDeleteV2ApiService
-	fileVideoDeleteV2Request *FileVideoDeleteV2Request
+	fileVideoDeleteV2Request *models.FileVideoDeleteV2Request
 }
 
-func (r *ApiOpenApi2FileVideoDeletePostRequest) FileVideoDeleteV2Request(fileVideoDeleteV2Request FileVideoDeleteV2Request) *ApiOpenApi2FileVideoDeletePostRequest {
+func (r *ApiOpenApi2FileVideoDeletePostRequest) FileVideoDeleteV2Request(fileVideoDeleteV2Request models.FileVideoDeleteV2Request) *ApiOpenApi2FileVideoDeletePostRequest {
 	r.fileVideoDeleteV2Request = &fileVideoDeleteV2Request
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoDeletePostRequest) Execute() (*FileVideoDeleteV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoDeletePostRequest) Execute() (*models.FileVideoDeleteV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *FileVideoDeleteV2ApiService) Post(ctx context.Context) *ApiOpenApi2File
 // Execute executes the request
 //
 //	@return FileVideoDeleteV2Response
-func (a *FileVideoDeleteV2ApiService) postExecute(r *ApiOpenApi2FileVideoDeletePostRequest) (*FileVideoDeleteV2Response, *http.Response, error) {
+func (a *FileVideoDeleteV2ApiService) postExecute(r *ApiOpenApi2FileVideoDeletePostRequest) (*models.FileVideoDeleteV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoDeleteV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoDeleteV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *FileVideoDeleteV2ApiService) postExecute(r *ApiOpenApi2FileVideoDeleteP
 	localVarPath := localBasePath + "/open_api/2/file/video/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

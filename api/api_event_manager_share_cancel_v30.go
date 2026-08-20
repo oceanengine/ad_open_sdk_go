@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerShareCancelV30ApiService EventManagerShareCancelV30Api service
@@ -25,15 +26,15 @@ type EventManagerShareCancelV30ApiService service
 type ApiOpenApiV30EventManagerShareCancelPostRequest struct {
 	ctx                               context.Context
 	ApiService                        *EventManagerShareCancelV30ApiService
-	eventManagerShareCancelV30Request *EventManagerShareCancelV30Request
+	eventManagerShareCancelV30Request *models.EventManagerShareCancelV30Request
 }
 
-func (r *ApiOpenApiV30EventManagerShareCancelPostRequest) EventManagerShareCancelV30Request(eventManagerShareCancelV30Request EventManagerShareCancelV30Request) *ApiOpenApiV30EventManagerShareCancelPostRequest {
+func (r *ApiOpenApiV30EventManagerShareCancelPostRequest) EventManagerShareCancelV30Request(eventManagerShareCancelV30Request models.EventManagerShareCancelV30Request) *ApiOpenApiV30EventManagerShareCancelPostRequest {
 	r.eventManagerShareCancelV30Request = &eventManagerShareCancelV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerShareCancelPostRequest) Execute() (*EventManagerShareCancelV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EventManagerShareCancelPostRequest) Execute() (*models.EventManagerShareCancelV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EventManagerShareCancelV30ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return EventManagerShareCancelV30Response
-func (a *EventManagerShareCancelV30ApiService) postExecute(r *ApiOpenApiV30EventManagerShareCancelPostRequest) (*EventManagerShareCancelV30Response, *http.Response, error) {
+func (a *EventManagerShareCancelV30ApiService) postExecute(r *ApiOpenApiV30EventManagerShareCancelPostRequest) (*models.EventManagerShareCancelV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerShareCancelV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerShareCancelV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EventManagerShareCancelV30ApiService) postExecute(r *ApiOpenApiV30Event
 	localVarPath := localBasePath + "/open_api/v3.0/event_manager/share/cancel/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

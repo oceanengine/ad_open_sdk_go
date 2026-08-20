@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPrivativeWordCampaignUpdateV2ApiService ToolsPrivativeWordCampaignUpdateV2Api service
@@ -25,15 +26,15 @@ type ToolsPrivativeWordCampaignUpdateV2ApiService service
 type ApiOpenApi2ToolsPrivativeWordCampaignUpdatePostRequest struct {
 	ctx                                       context.Context
 	ApiService                                *ToolsPrivativeWordCampaignUpdateV2ApiService
-	toolsPrivativeWordCampaignUpdateV2Request *ToolsPrivativeWordCampaignUpdateV2Request
+	toolsPrivativeWordCampaignUpdateV2Request *models.ToolsPrivativeWordCampaignUpdateV2Request
 }
 
-func (r *ApiOpenApi2ToolsPrivativeWordCampaignUpdatePostRequest) ToolsPrivativeWordCampaignUpdateV2Request(toolsPrivativeWordCampaignUpdateV2Request ToolsPrivativeWordCampaignUpdateV2Request) *ApiOpenApi2ToolsPrivativeWordCampaignUpdatePostRequest {
+func (r *ApiOpenApi2ToolsPrivativeWordCampaignUpdatePostRequest) ToolsPrivativeWordCampaignUpdateV2Request(toolsPrivativeWordCampaignUpdateV2Request models.ToolsPrivativeWordCampaignUpdateV2Request) *ApiOpenApi2ToolsPrivativeWordCampaignUpdatePostRequest {
 	r.toolsPrivativeWordCampaignUpdateV2Request = &toolsPrivativeWordCampaignUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPrivativeWordCampaignUpdatePostRequest) Execute() (*ToolsPrivativeWordCampaignUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPrivativeWordCampaignUpdatePostRequest) Execute() (*models.ToolsPrivativeWordCampaignUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsPrivativeWordCampaignUpdateV2ApiService) Post(ctx context.Context)
 // Execute executes the request
 //
 //	@return ToolsPrivativeWordCampaignUpdateV2Response
-func (a *ToolsPrivativeWordCampaignUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsPrivativeWordCampaignUpdatePostRequest) (*ToolsPrivativeWordCampaignUpdateV2Response, *http.Response, error) {
+func (a *ToolsPrivativeWordCampaignUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsPrivativeWordCampaignUpdatePostRequest) (*models.ToolsPrivativeWordCampaignUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPrivativeWordCampaignUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPrivativeWordCampaignUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsPrivativeWordCampaignUpdateV2ApiService) postExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/2/tools/privative_word/campaign/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

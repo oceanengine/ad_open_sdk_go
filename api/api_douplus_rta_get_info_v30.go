@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DouplusRtaGetInfoV30ApiService DouplusRtaGetInfoV30Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApiV30DouplusRtaGetInfoGetRequest) AwemeSecUid(awemeSecUid strin
 	return r
 }
 
-func (r *ApiOpenApiV30DouplusRtaGetInfoGetRequest) Execute() (*DouplusRtaGetInfoV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DouplusRtaGetInfoGetRequest) Execute() (*models.DouplusRtaGetInfoV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DouplusRtaGetInfoV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return DouplusRtaGetInfoV30Response
-func (a *DouplusRtaGetInfoV30ApiService) getExecute(r *ApiOpenApiV30DouplusRtaGetInfoGetRequest) (*DouplusRtaGetInfoV30Response, *http.Response, error) {
+func (a *DouplusRtaGetInfoV30ApiService) getExecute(r *ApiOpenApiV30DouplusRtaGetInfoGetRequest) (*models.DouplusRtaGetInfoV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DouplusRtaGetInfoV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DouplusRtaGetInfoV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DouplusRtaGetInfoV30ApiService) getExecute(r *ApiOpenApiV30DouplusRtaGe
 	localVarPath := localBasePath + "/open_api/v3.0/douplus/rta/get_info/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.awemeSecUid == nil {

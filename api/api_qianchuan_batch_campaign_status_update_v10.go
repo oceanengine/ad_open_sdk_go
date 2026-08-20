@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanBatchCampaignStatusUpdateV10ApiService QianchuanBatchCampaignStatusUpdateV10Api service
@@ -25,15 +26,15 @@ type QianchuanBatchCampaignStatusUpdateV10ApiService service
 type ApiOpenApiV10QianchuanBatchCampaignStatusUpdatePostRequest struct {
 	ctx                                          context.Context
 	ApiService                                   *QianchuanBatchCampaignStatusUpdateV10ApiService
-	qianchuanBatchCampaignStatusUpdateV10Request *QianchuanBatchCampaignStatusUpdateV10Request
+	qianchuanBatchCampaignStatusUpdateV10Request *models.QianchuanBatchCampaignStatusUpdateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanBatchCampaignStatusUpdatePostRequest) QianchuanBatchCampaignStatusUpdateV10Request(qianchuanBatchCampaignStatusUpdateV10Request QianchuanBatchCampaignStatusUpdateV10Request) *ApiOpenApiV10QianchuanBatchCampaignStatusUpdatePostRequest {
+func (r *ApiOpenApiV10QianchuanBatchCampaignStatusUpdatePostRequest) QianchuanBatchCampaignStatusUpdateV10Request(qianchuanBatchCampaignStatusUpdateV10Request models.QianchuanBatchCampaignStatusUpdateV10Request) *ApiOpenApiV10QianchuanBatchCampaignStatusUpdatePostRequest {
 	r.qianchuanBatchCampaignStatusUpdateV10Request = &qianchuanBatchCampaignStatusUpdateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanBatchCampaignStatusUpdatePostRequest) Execute() (*QianchuanBatchCampaignStatusUpdateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanBatchCampaignStatusUpdatePostRequest) Execute() (*models.QianchuanBatchCampaignStatusUpdateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanBatchCampaignStatusUpdateV10ApiService) Post(ctx context.Conte
 // Execute executes the request
 //
 //	@return QianchuanBatchCampaignStatusUpdateV10Response
-func (a *QianchuanBatchCampaignStatusUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanBatchCampaignStatusUpdatePostRequest) (*QianchuanBatchCampaignStatusUpdateV10Response, *http.Response, error) {
+func (a *QianchuanBatchCampaignStatusUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanBatchCampaignStatusUpdatePostRequest) (*models.QianchuanBatchCampaignStatusUpdateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanBatchCampaignStatusUpdateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanBatchCampaignStatusUpdateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanBatchCampaignStatusUpdateV10ApiService) postExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/batch_campaign_status/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

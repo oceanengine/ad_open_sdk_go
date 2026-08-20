@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SharedWalletSharedRelationCreateV30ApiService SharedWalletSharedRelationCreateV30Api service
@@ -25,15 +26,15 @@ type SharedWalletSharedRelationCreateV30ApiService service
 type ApiOpenApiV30SharedWalletSharedRelationCreatePostRequest struct {
 	ctx                                        context.Context
 	ApiService                                 *SharedWalletSharedRelationCreateV30ApiService
-	sharedWalletSharedRelationCreateV30Request *SharedWalletSharedRelationCreateV30Request
+	sharedWalletSharedRelationCreateV30Request *models.SharedWalletSharedRelationCreateV30Request
 }
 
-func (r *ApiOpenApiV30SharedWalletSharedRelationCreatePostRequest) SharedWalletSharedRelationCreateV30Request(sharedWalletSharedRelationCreateV30Request SharedWalletSharedRelationCreateV30Request) *ApiOpenApiV30SharedWalletSharedRelationCreatePostRequest {
+func (r *ApiOpenApiV30SharedWalletSharedRelationCreatePostRequest) SharedWalletSharedRelationCreateV30Request(sharedWalletSharedRelationCreateV30Request models.SharedWalletSharedRelationCreateV30Request) *ApiOpenApiV30SharedWalletSharedRelationCreatePostRequest {
 	r.sharedWalletSharedRelationCreateV30Request = &sharedWalletSharedRelationCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30SharedWalletSharedRelationCreatePostRequest) Execute() (*SharedWalletSharedRelationCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SharedWalletSharedRelationCreatePostRequest) Execute() (*models.SharedWalletSharedRelationCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *SharedWalletSharedRelationCreateV30ApiService) Post(ctx context.Context
 // Execute executes the request
 //
 //	@return SharedWalletSharedRelationCreateV30Response
-func (a *SharedWalletSharedRelationCreateV30ApiService) postExecute(r *ApiOpenApiV30SharedWalletSharedRelationCreatePostRequest) (*SharedWalletSharedRelationCreateV30Response, *http.Response, error) {
+func (a *SharedWalletSharedRelationCreateV30ApiService) postExecute(r *ApiOpenApiV30SharedWalletSharedRelationCreatePostRequest) (*models.SharedWalletSharedRelationCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SharedWalletSharedRelationCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SharedWalletSharedRelationCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *SharedWalletSharedRelationCreateV30ApiService) postExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/v3.0/shared_wallet/shared_relation/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

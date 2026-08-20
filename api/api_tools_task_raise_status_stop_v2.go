@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsTaskRaiseStatusStopV2ApiService ToolsTaskRaiseStatusStopV2Api service
@@ -25,15 +26,15 @@ type ToolsTaskRaiseStatusStopV2ApiService service
 type ApiOpenApi2ToolsTaskRaiseStatusStopPostRequest struct {
 	ctx                               context.Context
 	ApiService                        *ToolsTaskRaiseStatusStopV2ApiService
-	toolsTaskRaiseStatusStopV2Request *ToolsTaskRaiseStatusStopV2Request
+	toolsTaskRaiseStatusStopV2Request *models.ToolsTaskRaiseStatusStopV2Request
 }
 
-func (r *ApiOpenApi2ToolsTaskRaiseStatusStopPostRequest) ToolsTaskRaiseStatusStopV2Request(toolsTaskRaiseStatusStopV2Request ToolsTaskRaiseStatusStopV2Request) *ApiOpenApi2ToolsTaskRaiseStatusStopPostRequest {
+func (r *ApiOpenApi2ToolsTaskRaiseStatusStopPostRequest) ToolsTaskRaiseStatusStopV2Request(toolsTaskRaiseStatusStopV2Request models.ToolsTaskRaiseStatusStopV2Request) *ApiOpenApi2ToolsTaskRaiseStatusStopPostRequest {
 	r.toolsTaskRaiseStatusStopV2Request = &toolsTaskRaiseStatusStopV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsTaskRaiseStatusStopPostRequest) Execute() (*ToolsTaskRaiseStatusStopV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsTaskRaiseStatusStopPostRequest) Execute() (*models.ToolsTaskRaiseStatusStopV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsTaskRaiseStatusStopV2ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsTaskRaiseStatusStopV2Response
-func (a *ToolsTaskRaiseStatusStopV2ApiService) postExecute(r *ApiOpenApi2ToolsTaskRaiseStatusStopPostRequest) (*ToolsTaskRaiseStatusStopV2Response, *http.Response, error) {
+func (a *ToolsTaskRaiseStatusStopV2ApiService) postExecute(r *ApiOpenApi2ToolsTaskRaiseStatusStopPostRequest) (*models.ToolsTaskRaiseStatusStopV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsTaskRaiseStatusStopV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsTaskRaiseStatusStopV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsTaskRaiseStatusStopV2ApiService) postExecute(r *ApiOpenApi2ToolsTa
 	localVarPath := localBasePath + "/open_api/2/tools/task_raise/status/stop/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

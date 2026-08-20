@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CustomerCenterAccountListV30ApiService CustomerCenterAccountListV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30CustomerCenterAccountListGetRequest struct {
 	ctx        context.Context
 	ApiService *CustomerCenterAccountListV30ApiService
 	accountId  *int64
-	filter     *CustomerCenterAccountListV30Filter
+	filter     *models.CustomerCenterAccountListV30Filter
 	page       *int64
 	pageSize   *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30CustomerCenterAccountListGetRequest) AccountId(accountId i
 }
 
 // 过滤条件
-func (r *ApiOpenApiV30CustomerCenterAccountListGetRequest) Filter(filter CustomerCenterAccountListV30Filter) *ApiOpenApiV30CustomerCenterAccountListGetRequest {
+func (r *ApiOpenApiV30CustomerCenterAccountListGetRequest) Filter(filter models.CustomerCenterAccountListV30Filter) *ApiOpenApiV30CustomerCenterAccountListGetRequest {
 	r.filter = &filter
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30CustomerCenterAccountListGetRequest) PageSize(pageSize int
 	return r
 }
 
-func (r *ApiOpenApiV30CustomerCenterAccountListGetRequest) Execute() (*CustomerCenterAccountListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CustomerCenterAccountListGetRequest) Execute() (*models.CustomerCenterAccountListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *CustomerCenterAccountListV30ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return CustomerCenterAccountListV30Response
-func (a *CustomerCenterAccountListV30ApiService) getExecute(r *ApiOpenApiV30CustomerCenterAccountListGetRequest) (*CustomerCenterAccountListV30Response, *http.Response, error) {
+func (a *CustomerCenterAccountListV30ApiService) getExecute(r *ApiOpenApiV30CustomerCenterAccountListGetRequest) (*models.CustomerCenterAccountListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CustomerCenterAccountListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CustomerCenterAccountListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *CustomerCenterAccountListV30ApiService) getExecute(r *ApiOpenApiV30Cust
 	localVarPath := localBasePath + "/open_api/v3.0/customer_center/account/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

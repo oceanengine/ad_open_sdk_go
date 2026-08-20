@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ProjectListV30ApiService ProjectListV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30ProjectListGetRequest struct {
 	ApiService   *ProjectListV30ApiService
 	advertiserId *int64
 	fields       *[]string
-	filtering    *ProjectListV30Filtering
+	filtering    *models.ProjectListV30Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -42,7 +43,7 @@ func (r *ApiOpenApiV30ProjectListGetRequest) Fields(fields []string) *ApiOpenApi
 	return r
 }
 
-func (r *ApiOpenApiV30ProjectListGetRequest) Filtering(filtering ProjectListV30Filtering) *ApiOpenApiV30ProjectListGetRequest {
+func (r *ApiOpenApiV30ProjectListGetRequest) Filtering(filtering models.ProjectListV30Filtering) *ApiOpenApiV30ProjectListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApiV30ProjectListGetRequest) PageSize(pageSize int64) *ApiOpenAp
 	return r
 }
 
-func (r *ApiOpenApiV30ProjectListGetRequest) Execute() (*ProjectListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ProjectListGetRequest) Execute() (*models.ProjectListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ProjectListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Projec
 // Execute executes the request
 //
 //	@return ProjectListV30Response
-func (a *ProjectListV30ApiService) getExecute(r *ApiOpenApiV30ProjectListGetRequest) (*ProjectListV30Response, *http.Response, error) {
+func (a *ProjectListV30ApiService) getExecute(r *ApiOpenApiV30ProjectListGetRequest) (*models.ProjectListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ProjectListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ProjectListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ProjectListV30ApiService) getExecute(r *ApiOpenApiV30ProjectListGetRequ
 	localVarPath := localBasePath + "/open_api/v3.0/project/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

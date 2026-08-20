@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarComponentQueryIndustryAnchorV2ApiService StarComponentQueryIndustryAnchorV2Api service
@@ -62,7 +63,7 @@ func (r *ApiOpenApi2StarComponentQueryIndustryAnchorGetRequest) Limit(limit int3
 	return r
 }
 
-func (r *ApiOpenApi2StarComponentQueryIndustryAnchorGetRequest) Execute() (*StarComponentQueryIndustryAnchorV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarComponentQueryIndustryAnchorGetRequest) Execute() (*models.StarComponentQueryIndustryAnchorV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *StarComponentQueryIndustryAnchorV2ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return StarComponentQueryIndustryAnchorV2Response
-func (a *StarComponentQueryIndustryAnchorV2ApiService) getExecute(r *ApiOpenApi2StarComponentQueryIndustryAnchorGetRequest) (*StarComponentQueryIndustryAnchorV2Response, *http.Response, error) {
+func (a *StarComponentQueryIndustryAnchorV2ApiService) getExecute(r *ApiOpenApi2StarComponentQueryIndustryAnchorGetRequest) (*models.StarComponentQueryIndustryAnchorV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarComponentQueryIndustryAnchorV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarComponentQueryIndustryAnchorV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *StarComponentQueryIndustryAnchorV2ApiService) getExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/star/component/query_industry_anchor/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

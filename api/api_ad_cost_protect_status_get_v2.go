@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdCostProtectStatusGetV2ApiService AdCostProtectStatusGetV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2AdCostProtectStatusGetGetRequest) AdIds(adIds []int64) *ApiO
 	return r
 }
 
-func (r *ApiOpenApi2AdCostProtectStatusGetGetRequest) Execute() (*AdCostProtectStatusGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdCostProtectStatusGetGetRequest) Execute() (*models.AdCostProtectStatusGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *AdCostProtectStatusGetV2ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return AdCostProtectStatusGetV2Response
-func (a *AdCostProtectStatusGetV2ApiService) getExecute(r *ApiOpenApi2AdCostProtectStatusGetGetRequest) (*AdCostProtectStatusGetV2Response, *http.Response, error) {
+func (a *AdCostProtectStatusGetV2ApiService) getExecute(r *ApiOpenApi2AdCostProtectStatusGetGetRequest) (*models.AdCostProtectStatusGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdCostProtectStatusGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdCostProtectStatusGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *AdCostProtectStatusGetV2ApiService) getExecute(r *ApiOpenApi2AdCostProt
 	localVarPath := localBasePath + "/open_api/2/ad/cost_protect_status/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

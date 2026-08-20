@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserPublicInfoV2ApiService AdvertiserPublicInfoV2Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApi2AdvertiserPublicInfoGetRequest) AdvertiserIds(advertiserIds 
 	return r
 }
 
-func (r *ApiOpenApi2AdvertiserPublicInfoGetRequest) Execute() (*AdvertiserPublicInfoV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdvertiserPublicInfoGetRequest) Execute() (*models.AdvertiserPublicInfoV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AdvertiserPublicInfoV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return AdvertiserPublicInfoV2Response
-func (a *AdvertiserPublicInfoV2ApiService) getExecute(r *ApiOpenApi2AdvertiserPublicInfoGetRequest) (*AdvertiserPublicInfoV2Response, *http.Response, error) {
+func (a *AdvertiserPublicInfoV2ApiService) getExecute(r *ApiOpenApi2AdvertiserPublicInfoGetRequest) (*models.AdvertiserPublicInfoV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserPublicInfoV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserPublicInfoV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AdvertiserPublicInfoV2ApiService) getExecute(r *ApiOpenApi2AdvertiserPu
 	localVarPath := localBasePath + "/open_api/2/advertiser/public_info/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

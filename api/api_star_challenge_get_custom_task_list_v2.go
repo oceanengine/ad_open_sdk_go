@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarChallengeGetCustomTaskListV2ApiService StarChallengeGetCustomTaskListV2Api service
@@ -52,7 +53,7 @@ func (r *ApiOpenApi2StarChallengeGetCustomTaskListGetRequest) PageSize(pageSize 
 	return r
 }
 
-func (r *ApiOpenApi2StarChallengeGetCustomTaskListGetRequest) Execute() (*StarChallengeGetCustomTaskListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarChallengeGetCustomTaskListGetRequest) Execute() (*models.StarChallengeGetCustomTaskListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -86,12 +87,12 @@ func (a *StarChallengeGetCustomTaskListV2ApiService) Get(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return StarChallengeGetCustomTaskListV2Response
-func (a *StarChallengeGetCustomTaskListV2ApiService) getExecute(r *ApiOpenApi2StarChallengeGetCustomTaskListGetRequest) (*StarChallengeGetCustomTaskListV2Response, *http.Response, error) {
+func (a *StarChallengeGetCustomTaskListV2ApiService) getExecute(r *ApiOpenApi2StarChallengeGetCustomTaskListGetRequest) (*models.StarChallengeGetCustomTaskListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarChallengeGetCustomTaskListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarChallengeGetCustomTaskListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -101,7 +102,7 @@ func (a *StarChallengeGetCustomTaskListV2ApiService) getExecute(r *ApiOpenApi2St
 	localVarPath := localBasePath + "/open_api/2/star/challenge/get_custom_task_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

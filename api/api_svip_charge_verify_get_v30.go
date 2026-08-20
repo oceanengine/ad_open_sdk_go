@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SvipChargeVerifyGetV30ApiService SvipChargeVerifyGetV30Api service
@@ -27,11 +28,11 @@ type ApiOpenApiV30SvipChargeVerifyGetGetRequest struct {
 	ApiService   *SvipChargeVerifyGetV30ApiService
 	ccAccountId  *int64
 	accountId    *int64
-	platform     *SvipChargeVerifyGetV30Platform
+	platform     *models.SvipChargeVerifyGetV30Platform
 	requestId    *string
-	chargeType   *SvipChargeVerifyGetV30ChargeType
-	chargeSource *SvipChargeVerifyGetV30ChargeSource
-	caller       *SvipChargeVerifyGetV30Caller
+	chargeType   *models.SvipChargeVerifyGetV30ChargeType
+	chargeSource *models.SvipChargeVerifyGetV30ChargeSource
+	caller       *models.SvipChargeVerifyGetV30Caller
 }
 
 // 组织ID
@@ -47,7 +48,7 @@ func (r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) AccountId(accountId int64) 
 }
 
 // 业务线
-func (r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) Platform(platform SvipChargeVerifyGetV30Platform) *ApiOpenApiV30SvipChargeVerifyGetGetRequest {
+func (r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) Platform(platform models.SvipChargeVerifyGetV30Platform) *ApiOpenApiV30SvipChargeVerifyGetGetRequest {
 	r.platform = &platform
 	return r
 }
@@ -59,24 +60,24 @@ func (r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) RequestId(requestId string)
 }
 
 // 充值类型
-func (r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) ChargeType(chargeType SvipChargeVerifyGetV30ChargeType) *ApiOpenApiV30SvipChargeVerifyGetGetRequest {
+func (r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) ChargeType(chargeType models.SvipChargeVerifyGetV30ChargeType) *ApiOpenApiV30SvipChargeVerifyGetGetRequest {
 	r.chargeType = &chargeType
 	return r
 }
 
 // 充值来源
-func (r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) ChargeSource(chargeSource SvipChargeVerifyGetV30ChargeSource) *ApiOpenApiV30SvipChargeVerifyGetGetRequest {
+func (r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) ChargeSource(chargeSource models.SvipChargeVerifyGetV30ChargeSource) *ApiOpenApiV30SvipChargeVerifyGetGetRequest {
 	r.chargeSource = &chargeSource
 	return r
 }
 
 // 请求方
-func (r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) Caller(caller SvipChargeVerifyGetV30Caller) *ApiOpenApiV30SvipChargeVerifyGetGetRequest {
+func (r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) Caller(caller models.SvipChargeVerifyGetV30Caller) *ApiOpenApiV30SvipChargeVerifyGetGetRequest {
 	r.caller = &caller
 	return r
 }
 
-func (r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) Execute() (*SvipChargeVerifyGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) Execute() (*models.SvipChargeVerifyGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *SvipChargeVerifyGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return SvipChargeVerifyGetV30Response
-func (a *SvipChargeVerifyGetV30ApiService) getExecute(r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) (*SvipChargeVerifyGetV30Response, *http.Response, error) {
+func (a *SvipChargeVerifyGetV30ApiService) getExecute(r *ApiOpenApiV30SvipChargeVerifyGetGetRequest) (*models.SvipChargeVerifyGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SvipChargeVerifyGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SvipChargeVerifyGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *SvipChargeVerifyGetV30ApiService) getExecute(r *ApiOpenApiV30SvipCharge
 	localVarPath := localBasePath + "/open_api/v3.0/svip/charge/verify/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.ccAccountId == nil {

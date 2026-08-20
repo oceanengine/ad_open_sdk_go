@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsSiteCopyV2ApiService ToolsSiteCopyV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsSiteCopyPostRequest struct {
 	ctx                    context.Context
 	ApiService             *ToolsSiteCopyV2ApiService
 	xOrangeCaller          *string
-	toolsSiteCopyV2Request *ToolsSiteCopyV2Request
+	toolsSiteCopyV2Request *models.ToolsSiteCopyV2Request
 }
 
 func (r *ApiOpenApi2ToolsSiteCopyPostRequest) XOrangeCaller(xOrangeCaller string) *ApiOpenApi2ToolsSiteCopyPostRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2ToolsSiteCopyPostRequest) XOrangeCaller(xOrangeCaller string
 	return r
 }
 
-func (r *ApiOpenApi2ToolsSiteCopyPostRequest) ToolsSiteCopyV2Request(toolsSiteCopyV2Request ToolsSiteCopyV2Request) *ApiOpenApi2ToolsSiteCopyPostRequest {
+func (r *ApiOpenApi2ToolsSiteCopyPostRequest) ToolsSiteCopyV2Request(toolsSiteCopyV2Request models.ToolsSiteCopyV2Request) *ApiOpenApi2ToolsSiteCopyPostRequest {
 	r.toolsSiteCopyV2Request = &toolsSiteCopyV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsSiteCopyPostRequest) Execute() (*ToolsSiteCopyV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsSiteCopyPostRequest) Execute() (*models.ToolsSiteCopyV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ToolsSiteCopyV2ApiService) Post(ctx context.Context) *ApiOpenApi2ToolsS
 // Execute executes the request
 //
 //	@return ToolsSiteCopyV2Response
-func (a *ToolsSiteCopyV2ApiService) postExecute(r *ApiOpenApi2ToolsSiteCopyPostRequest) (*ToolsSiteCopyV2Response, *http.Response, error) {
+func (a *ToolsSiteCopyV2ApiService) postExecute(r *ApiOpenApi2ToolsSiteCopyPostRequest) (*models.ToolsSiteCopyV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsSiteCopyV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsSiteCopyV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ToolsSiteCopyV2ApiService) postExecute(r *ApiOpenApi2ToolsSiteCopyPostR
 	localVarPath := localBasePath + "/open_api/2/tools/site/copy/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

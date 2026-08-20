@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandCampaignListV30ApiService BrandCampaignListV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30BrandCampaignListGetRequest struct {
 	ctx          context.Context
 	ApiService   *BrandCampaignListV30ApiService
 	advertiserId *int64
-	filter       *BrandCampaignListV30Filter
-	pageInfo     *BrandCampaignListV30PageInfo
+	filter       *models.BrandCampaignListV30Filter
+	pageInfo     *models.BrandCampaignListV30PageInfo
 }
 
 // 广告主ID
@@ -37,18 +38,18 @@ func (r *ApiOpenApiV30BrandCampaignListGetRequest) AdvertiserId(advertiserId int
 }
 
 // 过滤条件
-func (r *ApiOpenApiV30BrandCampaignListGetRequest) Filter(filter BrandCampaignListV30Filter) *ApiOpenApiV30BrandCampaignListGetRequest {
+func (r *ApiOpenApiV30BrandCampaignListGetRequest) Filter(filter models.BrandCampaignListV30Filter) *ApiOpenApiV30BrandCampaignListGetRequest {
 	r.filter = &filter
 	return r
 }
 
 // 分页信息
-func (r *ApiOpenApiV30BrandCampaignListGetRequest) PageInfo(pageInfo BrandCampaignListV30PageInfo) *ApiOpenApiV30BrandCampaignListGetRequest {
+func (r *ApiOpenApiV30BrandCampaignListGetRequest) PageInfo(pageInfo models.BrandCampaignListV30PageInfo) *ApiOpenApiV30BrandCampaignListGetRequest {
 	r.pageInfo = &pageInfo
 	return r
 }
 
-func (r *ApiOpenApiV30BrandCampaignListGetRequest) Execute() (*BrandCampaignListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandCampaignListGetRequest) Execute() (*models.BrandCampaignListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *BrandCampaignListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return BrandCampaignListV30Response
-func (a *BrandCampaignListV30ApiService) getExecute(r *ApiOpenApiV30BrandCampaignListGetRequest) (*BrandCampaignListV30Response, *http.Response, error) {
+func (a *BrandCampaignListV30ApiService) getExecute(r *ApiOpenApiV30BrandCampaignListGetRequest) (*models.BrandCampaignListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandCampaignListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandCampaignListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *BrandCampaignListV30ApiService) getExecute(r *ApiOpenApiV30BrandCampaig
 	localVarPath := localBasePath + "/open_api/v3.0/brand/campaign/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DiagnosisTaskAgentCreateV2ApiService DiagnosisTaskAgentCreateV2Api service
@@ -25,15 +26,15 @@ type DiagnosisTaskAgentCreateV2ApiService service
 type ApiOpenApi2DiagnosisTaskAgentCreatePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *DiagnosisTaskAgentCreateV2ApiService
-	diagnosisTaskAgentCreateV2Request *DiagnosisTaskAgentCreateV2Request
+	diagnosisTaskAgentCreateV2Request *models.DiagnosisTaskAgentCreateV2Request
 }
 
-func (r *ApiOpenApi2DiagnosisTaskAgentCreatePostRequest) DiagnosisTaskAgentCreateV2Request(diagnosisTaskAgentCreateV2Request DiagnosisTaskAgentCreateV2Request) *ApiOpenApi2DiagnosisTaskAgentCreatePostRequest {
+func (r *ApiOpenApi2DiagnosisTaskAgentCreatePostRequest) DiagnosisTaskAgentCreateV2Request(diagnosisTaskAgentCreateV2Request models.DiagnosisTaskAgentCreateV2Request) *ApiOpenApi2DiagnosisTaskAgentCreatePostRequest {
 	r.diagnosisTaskAgentCreateV2Request = &diagnosisTaskAgentCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2DiagnosisTaskAgentCreatePostRequest) Execute() (*DiagnosisTaskAgentCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DiagnosisTaskAgentCreatePostRequest) Execute() (*models.DiagnosisTaskAgentCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DiagnosisTaskAgentCreateV2ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return DiagnosisTaskAgentCreateV2Response
-func (a *DiagnosisTaskAgentCreateV2ApiService) postExecute(r *ApiOpenApi2DiagnosisTaskAgentCreatePostRequest) (*DiagnosisTaskAgentCreateV2Response, *http.Response, error) {
+func (a *DiagnosisTaskAgentCreateV2ApiService) postExecute(r *ApiOpenApi2DiagnosisTaskAgentCreatePostRequest) (*models.DiagnosisTaskAgentCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DiagnosisTaskAgentCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DiagnosisTaskAgentCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DiagnosisTaskAgentCreateV2ApiService) postExecute(r *ApiOpenApi2Diagnos
 	localVarPath := localBasePath + "/open_api/2/diagnosis_task/agent/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

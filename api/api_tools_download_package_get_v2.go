@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsDownloadPackageGetV2ApiService ToolsDownloadPackageGetV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2ToolsDownloadPackageGetGetRequest) EventId(eventId string) *
 	return r
 }
 
-func (r *ApiOpenApi2ToolsDownloadPackageGetGetRequest) Execute() (*ToolsDownloadPackageGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsDownloadPackageGetGetRequest) Execute() (*models.ToolsDownloadPackageGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsDownloadPackageGetV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return ToolsDownloadPackageGetV2Response
-func (a *ToolsDownloadPackageGetV2ApiService) getExecute(r *ApiOpenApi2ToolsDownloadPackageGetGetRequest) (*ToolsDownloadPackageGetV2Response, *http.Response, error) {
+func (a *ToolsDownloadPackageGetV2ApiService) getExecute(r *ApiOpenApi2ToolsDownloadPackageGetGetRequest) (*models.ToolsDownloadPackageGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsDownloadPackageGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsDownloadPackageGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsDownloadPackageGetV2ApiService) getExecute(r *ApiOpenApi2ToolsDown
 	localVarPath := localBasePath + "/open_api/2/tools/download/package/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

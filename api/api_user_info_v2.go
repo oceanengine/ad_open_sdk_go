@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // UserInfoV2ApiService UserInfoV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2UserInfoGetRequest struct {
 	ApiService *UserInfoV2ApiService
 }
 
-func (r *ApiOpenApi2UserInfoGetRequest) Execute() (*UserInfoV2Response, *http.Response, error) {
+func (r *ApiOpenApi2UserInfoGetRequest) Execute() (*models.UserInfoV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -61,12 +62,12 @@ func (a *UserInfoV2ApiService) Get(ctx context.Context) *ApiOpenApi2UserInfoGetR
 // Execute executes the request
 //
 //	@return UserInfoV2Response
-func (a *UserInfoV2ApiService) getExecute(r *ApiOpenApi2UserInfoGetRequest) (*UserInfoV2Response, *http.Response, error) {
+func (a *UserInfoV2ApiService) getExecute(r *ApiOpenApi2UserInfoGetRequest) (*models.UserInfoV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *UserInfoV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.UserInfoV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -76,7 +77,7 @@ func (a *UserInfoV2ApiService) getExecute(r *ApiOpenApi2UserInfoGetRequest) (*Us
 	localVarPath := localBasePath + "/open_api/2/user/info/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

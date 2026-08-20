@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferWalletTransferDetailV30ApiService CgTransferWalletTransferDetailV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30CgTransferWalletTransferDetailGetRequest struct {
 	ctx                  context.Context
 	ApiService           *CgTransferWalletTransferDetailV30ApiService
 	accountId            *int64
-	accountType          *CgTransferWalletTransferDetailV30AccountType
+	accountType          *models.CgTransferWalletTransferDetailV30AccountType
 	bizRequestNo         *string
 	transferBizRequestNo *string
 	transferSerial       *string
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30CgTransferWalletTransferDetailGetRequest) AccountId(accoun
 }
 
 // 鉴权账户类型
-func (r *ApiOpenApiV30CgTransferWalletTransferDetailGetRequest) AccountType(accountType CgTransferWalletTransferDetailV30AccountType) *ApiOpenApiV30CgTransferWalletTransferDetailGetRequest {
+func (r *ApiOpenApiV30CgTransferWalletTransferDetailGetRequest) AccountType(accountType models.CgTransferWalletTransferDetailV30AccountType) *ApiOpenApiV30CgTransferWalletTransferDetailGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30CgTransferWalletTransferDetailGetRequest) TransferSerial(t
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferWalletTransferDetailGetRequest) Execute() (*CgTransferWalletTransferDetailV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferWalletTransferDetailGetRequest) Execute() (*models.CgTransferWalletTransferDetailV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *CgTransferWalletTransferDetailV30ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return CgTransferWalletTransferDetailV30Response
-func (a *CgTransferWalletTransferDetailV30ApiService) getExecute(r *ApiOpenApiV30CgTransferWalletTransferDetailGetRequest) (*CgTransferWalletTransferDetailV30Response, *http.Response, error) {
+func (a *CgTransferWalletTransferDetailV30ApiService) getExecute(r *ApiOpenApiV30CgTransferWalletTransferDetailGetRequest) (*models.CgTransferWalletTransferDetailV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferWalletTransferDetailV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferWalletTransferDetailV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *CgTransferWalletTransferDetailV30ApiService) getExecute(r *ApiOpenApiV3
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/wallet/transfer/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

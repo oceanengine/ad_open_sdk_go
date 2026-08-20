@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsToolsTaskGetV30ApiService ToolsToolsTaskGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30ToolsToolsTaskGetGetRequest struct {
 	ApiService   *ToolsToolsTaskGetV30ApiService
 	advertiserId *int64
 	taskIds      *[]int64
-	taskStatus   *[]*ToolsToolsTaskGetV30TaskStatus
+	taskStatus   *[]*models.ToolsToolsTaskGetV30TaskStatus
 	page         *int64
 	pageSize     *int64
 }
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV30ToolsToolsTaskGetGetRequest) TaskIds(taskIds []int64) *Api
 }
 
 // 任务状态
-func (r *ApiOpenApiV30ToolsToolsTaskGetGetRequest) TaskStatus(taskStatus []*ToolsToolsTaskGetV30TaskStatus) *ApiOpenApiV30ToolsToolsTaskGetGetRequest {
+func (r *ApiOpenApiV30ToolsToolsTaskGetGetRequest) TaskStatus(taskStatus []*models.ToolsToolsTaskGetV30TaskStatus) *ApiOpenApiV30ToolsToolsTaskGetGetRequest {
 	r.taskStatus = &taskStatus
 	return r
 }
@@ -62,7 +63,7 @@ func (r *ApiOpenApiV30ToolsToolsTaskGetGetRequest) PageSize(pageSize int64) *Api
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsToolsTaskGetGetRequest) Execute() (*ToolsToolsTaskGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsToolsTaskGetGetRequest) Execute() (*models.ToolsToolsTaskGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *ToolsToolsTaskGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return ToolsToolsTaskGetV30Response
-func (a *ToolsToolsTaskGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsToolsTaskGetGetRequest) (*ToolsToolsTaskGetV30Response, *http.Response, error) {
+func (a *ToolsToolsTaskGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsToolsTaskGetGetRequest) (*models.ToolsToolsTaskGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsToolsTaskGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsToolsTaskGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *ToolsToolsTaskGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsToolsTa
 	localVarPath := localBasePath + "/open_api/v3.0/tools/tools_task/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

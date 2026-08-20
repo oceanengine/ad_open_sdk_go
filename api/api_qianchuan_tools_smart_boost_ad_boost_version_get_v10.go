@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService QianchuanToolsSmartBoostAdBoostVersionGetV10Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetRequest) Count
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetRequest) Execute() (*QianchuanToolsSmartBoostAdBoostVersionGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetRequest) Execute() (*models.QianchuanToolsSmartBoostAdBoostVersionGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService) Get(ctx context
 // Execute executes the request
 //
 //	@return QianchuanToolsSmartBoostAdBoostVersionGetV10Response
-func (a *QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetRequest) (*QianchuanToolsSmartBoostAdBoostVersionGetV10Response, *http.Response, error) {
+func (a *QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostVersionGetGetRequest) (*models.QianchuanToolsSmartBoostAdBoostVersionGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanToolsSmartBoostAdBoostVersionGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanToolsSmartBoostAdBoostVersionGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *QianchuanToolsSmartBoostAdBoostVersionGetV10ApiService) getExecute(r *A
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/version/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

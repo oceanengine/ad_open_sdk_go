@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportUniPromotionDataGetV10ApiService QianchuanReportUniPromotionDataGetV10Api service
@@ -26,16 +27,16 @@ type ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanReportUniPromotionDataGetV10ApiService
 	advertiserId *int64
-	dataTopic    *QianchuanReportUniPromotionDataGetV10DataTopic
+	dataTopic    *models.QianchuanReportUniPromotionDataGetV10DataTopic
 	dimensions   *[]string
 	metrics      *[]string
-	filters      *[]*QianchuanReportUniPromotionDataGetV10FiltersInner
+	filters      *[]*models.QianchuanReportUniPromotionDataGetV10FiltersInner
 	startTime    *string
 	endTime      *string
-	orderBy      *[]*QianchuanReportUniPromotionDataGetV10OrderByInner
-	dataPeriod   *QianchuanReportUniPromotionDataGetV10DataPeriod
+	orderBy      *[]*models.QianchuanReportUniPromotionDataGetV10OrderByInner
+	dataPeriod   *models.QianchuanReportUniPromotionDataGetV10DataPeriod
 	page         *int64
-	pageSize     *QianchuanReportUniPromotionDataGetV10PageSize
+	pageSize     *models.QianchuanReportUniPromotionDataGetV10PageSize
 }
 
 func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
@@ -43,7 +44,7 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) AdvertiserId
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) DataTopic(dataTopic QianchuanReportUniPromotionDataGetV10DataTopic) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) DataTopic(dataTopic models.QianchuanReportUniPromotionDataGetV10DataTopic) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
 	r.dataTopic = &dataTopic
 	return r
 }
@@ -58,7 +59,7 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) Metrics(metr
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) Filters(filters []*QianchuanReportUniPromotionDataGetV10FiltersInner) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) Filters(filters []*models.QianchuanReportUniPromotionDataGetV10FiltersInner) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
 	r.filters = &filters
 	return r
 }
@@ -73,13 +74,13 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) EndTime(endT
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) OrderBy(orderBy []*QianchuanReportUniPromotionDataGetV10OrderByInner) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) OrderBy(orderBy []*models.QianchuanReportUniPromotionDataGetV10OrderByInner) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
 	r.orderBy = &orderBy
 	return r
 }
 
 // 数据周期，允许值： - OVER_ALL_DATA 乘方期间数据 - UNI_DATA 全域期间数据 - ALL_DATA 整体数据 （默认值） 当且仅当 adlab_scene&#x3D;OVERALL_PROJECT 时支持传入
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) DataPeriod(dataPeriod QianchuanReportUniPromotionDataGetV10DataPeriod) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) DataPeriod(dataPeriod models.QianchuanReportUniPromotionDataGetV10DataPeriod) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
 	r.dataPeriod = &dataPeriod
 	return r
 }
@@ -91,12 +92,12 @@ func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) Page(page in
 }
 
 // 页大小
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) PageSize(pageSize QianchuanReportUniPromotionDataGetV10PageSize) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) PageSize(pageSize models.QianchuanReportUniPromotionDataGetV10PageSize) *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest {
 	r.pageSize = &pageSize
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) Execute() (*QianchuanReportUniPromotionDataGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) Execute() (*models.QianchuanReportUniPromotionDataGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -130,12 +131,12 @@ func (a *QianchuanReportUniPromotionDataGetV10ApiService) Get(ctx context.Contex
 // Execute executes the request
 //
 //	@return QianchuanReportUniPromotionDataGetV10Response
-func (a *QianchuanReportUniPromotionDataGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) (*QianchuanReportUniPromotionDataGetV10Response, *http.Response, error) {
+func (a *QianchuanReportUniPromotionDataGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportUniPromotionDataGetGetRequest) (*models.QianchuanReportUniPromotionDataGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportUniPromotionDataGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportUniPromotionDataGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -145,7 +146,7 @@ func (a *QianchuanReportUniPromotionDataGetV10ApiService) getExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/uni_promotion/data/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

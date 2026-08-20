@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpVideoDeleteV30ApiService ToolsEbpVideoDeleteV30Api service
@@ -25,15 +26,15 @@ type ToolsEbpVideoDeleteV30ApiService service
 type ApiOpenApiV30ToolsEbpVideoDeletePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *ToolsEbpVideoDeleteV30ApiService
-	toolsEbpVideoDeleteV30Request *ToolsEbpVideoDeleteV30Request
+	toolsEbpVideoDeleteV30Request *models.ToolsEbpVideoDeleteV30Request
 }
 
-func (r *ApiOpenApiV30ToolsEbpVideoDeletePostRequest) ToolsEbpVideoDeleteV30Request(toolsEbpVideoDeleteV30Request ToolsEbpVideoDeleteV30Request) *ApiOpenApiV30ToolsEbpVideoDeletePostRequest {
+func (r *ApiOpenApiV30ToolsEbpVideoDeletePostRequest) ToolsEbpVideoDeleteV30Request(toolsEbpVideoDeleteV30Request models.ToolsEbpVideoDeleteV30Request) *ApiOpenApiV30ToolsEbpVideoDeletePostRequest {
 	r.toolsEbpVideoDeleteV30Request = &toolsEbpVideoDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpVideoDeletePostRequest) Execute() (*ToolsEbpVideoDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpVideoDeletePostRequest) Execute() (*models.ToolsEbpVideoDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsEbpVideoDeleteV30ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsEbpVideoDeleteV30Response
-func (a *ToolsEbpVideoDeleteV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpVideoDeletePostRequest) (*ToolsEbpVideoDeleteV30Response, *http.Response, error) {
+func (a *ToolsEbpVideoDeleteV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpVideoDeletePostRequest) (*models.ToolsEbpVideoDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpVideoDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpVideoDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsEbpVideoDeleteV30ApiService) postExecute(r *ApiOpenApiV30ToolsEbpV
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/video/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

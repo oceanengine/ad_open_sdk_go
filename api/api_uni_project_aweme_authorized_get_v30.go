@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // UniProjectAwemeAuthorizedGetV30ApiService UniProjectAwemeAuthorizedGetV30Api service
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV30UniProjectAwemeAuthorizedGetGetRequest) Page(page int64) *
 	return r
 }
 
-func (r *ApiOpenApiV30UniProjectAwemeAuthorizedGetGetRequest) Execute() (*UniProjectAwemeAuthorizedGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30UniProjectAwemeAuthorizedGetGetRequest) Execute() (*models.UniProjectAwemeAuthorizedGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *UniProjectAwemeAuthorizedGetV30ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return UniProjectAwemeAuthorizedGetV30Response
-func (a *UniProjectAwemeAuthorizedGetV30ApiService) getExecute(r *ApiOpenApiV30UniProjectAwemeAuthorizedGetGetRequest) (*UniProjectAwemeAuthorizedGetV30Response, *http.Response, error) {
+func (a *UniProjectAwemeAuthorizedGetV30ApiService) getExecute(r *ApiOpenApiV30UniProjectAwemeAuthorizedGetGetRequest) (*models.UniProjectAwemeAuthorizedGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *UniProjectAwemeAuthorizedGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.UniProjectAwemeAuthorizedGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *UniProjectAwemeAuthorizedGetV30ApiService) getExecute(r *ApiOpenApiV30U
 	localVarPath := localBasePath + "/open_api/v3.0/uni_project/aweme/authorized/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

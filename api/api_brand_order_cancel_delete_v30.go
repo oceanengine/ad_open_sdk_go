@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandOrderCancelDeleteV30ApiService BrandOrderCancelDeleteV30Api service
@@ -25,15 +26,15 @@ type BrandOrderCancelDeleteV30ApiService service
 type ApiOpenApiV30BrandOrderCancelDeletePostRequest struct {
 	ctx                              context.Context
 	ApiService                       *BrandOrderCancelDeleteV30ApiService
-	brandOrderCancelDeleteV30Request *BrandOrderCancelDeleteV30Request
+	brandOrderCancelDeleteV30Request *models.BrandOrderCancelDeleteV30Request
 }
 
-func (r *ApiOpenApiV30BrandOrderCancelDeletePostRequest) BrandOrderCancelDeleteV30Request(brandOrderCancelDeleteV30Request BrandOrderCancelDeleteV30Request) *ApiOpenApiV30BrandOrderCancelDeletePostRequest {
+func (r *ApiOpenApiV30BrandOrderCancelDeletePostRequest) BrandOrderCancelDeleteV30Request(brandOrderCancelDeleteV30Request models.BrandOrderCancelDeleteV30Request) *ApiOpenApiV30BrandOrderCancelDeletePostRequest {
 	r.brandOrderCancelDeleteV30Request = &brandOrderCancelDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30BrandOrderCancelDeletePostRequest) Execute() (*BrandOrderCancelDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandOrderCancelDeletePostRequest) Execute() (*models.BrandOrderCancelDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *BrandOrderCancelDeleteV30ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return BrandOrderCancelDeleteV30Response
-func (a *BrandOrderCancelDeleteV30ApiService) postExecute(r *ApiOpenApiV30BrandOrderCancelDeletePostRequest) (*BrandOrderCancelDeleteV30Response, *http.Response, error) {
+func (a *BrandOrderCancelDeleteV30ApiService) postExecute(r *ApiOpenApiV30BrandOrderCancelDeletePostRequest) (*models.BrandOrderCancelDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandOrderCancelDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandOrderCancelDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *BrandOrderCancelDeleteV30ApiService) postExecute(r *ApiOpenApiV30BrandO
 	localVarPath := localBasePath + "/open_api/v3.0/brand/order/cancel_delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

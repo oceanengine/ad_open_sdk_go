@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpVideoAttributesListV30ApiService ToolsEbpVideoAttributesListV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest struct {
 	ctx                         context.Context
 	ApiService                  *ToolsEbpVideoAttributesListV30ApiService
 	accountId                   *int64
-	accountType                 *ToolsEbpVideoAttributesListV30AccountType
-	filtering                   *ToolsEbpVideoAttributesListV30Filtering
+	accountType                 *models.ToolsEbpVideoAttributesListV30AccountType
+	filtering                   *models.ToolsEbpVideoAttributesListV30Filtering
 	returnLowqualitySuggestions *bool
 	pageSize                    *int32
 	page                        *int32
@@ -40,13 +41,13 @@ func (r *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest) AccountId(accountId
 }
 
 // 账户类型，允许值：
-func (r *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest) AccountType(accountType ToolsEbpVideoAttributesListV30AccountType) *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest) AccountType(accountType models.ToolsEbpVideoAttributesListV30AccountType) *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
 // 过滤条件
-func (r *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest) Filtering(filtering ToolsEbpVideoAttributesListV30Filtering) *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest) Filtering(filtering models.ToolsEbpVideoAttributesListV30Filtering) *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -68,7 +69,7 @@ func (r *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest) Page(page int32) *A
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest) Execute() (*ToolsEbpVideoAttributesListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest) Execute() (*models.ToolsEbpVideoAttributesListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -102,12 +103,12 @@ func (a *ToolsEbpVideoAttributesListV30ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return ToolsEbpVideoAttributesListV30Response
-func (a *ToolsEbpVideoAttributesListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest) (*ToolsEbpVideoAttributesListV30Response, *http.Response, error) {
+func (a *ToolsEbpVideoAttributesListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpVideoAttributesListGetRequest) (*models.ToolsEbpVideoAttributesListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpVideoAttributesListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpVideoAttributesListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -117,7 +118,7 @@ func (a *ToolsEbpVideoAttributesListV30ApiService) getExecute(r *ApiOpenApiV30To
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/video_attributes/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

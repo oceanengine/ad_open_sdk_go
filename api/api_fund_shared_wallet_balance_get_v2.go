@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FundSharedWalletBalanceGetV2ApiService FundSharedWalletBalanceGetV2Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApi2FundSharedWalletBalanceGetGetRequest) AdvertiserIds(advertis
 	return r
 }
 
-func (r *ApiOpenApi2FundSharedWalletBalanceGetGetRequest) Execute() (*FundSharedWalletBalanceGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FundSharedWalletBalanceGetGetRequest) Execute() (*models.FundSharedWalletBalanceGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *FundSharedWalletBalanceGetV2ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return FundSharedWalletBalanceGetV2Response
-func (a *FundSharedWalletBalanceGetV2ApiService) getExecute(r *ApiOpenApi2FundSharedWalletBalanceGetGetRequest) (*FundSharedWalletBalanceGetV2Response, *http.Response, error) {
+func (a *FundSharedWalletBalanceGetV2ApiService) getExecute(r *ApiOpenApi2FundSharedWalletBalanceGetGetRequest) (*models.FundSharedWalletBalanceGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FundSharedWalletBalanceGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FundSharedWalletBalanceGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *FundSharedWalletBalanceGetV2ApiService) getExecute(r *ApiOpenApi2FundSh
 	localVarPath := localBasePath + "/open_api/2/fund/shared_wallet_balance/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

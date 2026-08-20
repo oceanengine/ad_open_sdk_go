@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdControlTaskDurationUpdateV10ApiService QianchuanUniPromotionAdControlTaskDurationUpdateV10Api service
@@ -25,15 +26,15 @@ type QianchuanUniPromotionAdControlTaskDurationUpdateV10ApiService service
 type ApiOpenApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostRequest struct {
 	ctx                                                        context.Context
 	ApiService                                                 *QianchuanUniPromotionAdControlTaskDurationUpdateV10ApiService
-	qianchuanUniPromotionAdControlTaskDurationUpdateV10Request *QianchuanUniPromotionAdControlTaskDurationUpdateV10Request
+	qianchuanUniPromotionAdControlTaskDurationUpdateV10Request *models.QianchuanUniPromotionAdControlTaskDurationUpdateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostRequest) QianchuanUniPromotionAdControlTaskDurationUpdateV10Request(qianchuanUniPromotionAdControlTaskDurationUpdateV10Request QianchuanUniPromotionAdControlTaskDurationUpdateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostRequest) QianchuanUniPromotionAdControlTaskDurationUpdateV10Request(qianchuanUniPromotionAdControlTaskDurationUpdateV10Request models.QianchuanUniPromotionAdControlTaskDurationUpdateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostRequest {
 	r.qianchuanUniPromotionAdControlTaskDurationUpdateV10Request = &qianchuanUniPromotionAdControlTaskDurationUpdateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostRequest) Execute() (*QianchuanUniPromotionAdControlTaskDurationUpdateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostRequest) Execute() (*models.QianchuanUniPromotionAdControlTaskDurationUpdateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanUniPromotionAdControlTaskDurationUpdateV10ApiService) Post(ctx
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdControlTaskDurationUpdateV10Response
-func (a *QianchuanUniPromotionAdControlTaskDurationUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostRequest) (*QianchuanUniPromotionAdControlTaskDurationUpdateV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdControlTaskDurationUpdateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskDurationUpdatePostRequest) (*models.QianchuanUniPromotionAdControlTaskDurationUpdateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdControlTaskDurationUpdateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdControlTaskDurationUpdateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanUniPromotionAdControlTaskDurationUpdateV10ApiService) postExec
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/control_task/duration/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

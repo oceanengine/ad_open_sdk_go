@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StardeliveryTaskAuthorDetailV30ApiService StardeliveryTaskAuthorDetailV30Api service
@@ -29,7 +30,7 @@ type ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest struct {
 	starTaskId   *int64
 	page         *int64
 	pageSize     *int64
-	filtering    *StardeliveryTaskAuthorDetailV30Filtering
+	filtering    *models.StardeliveryTaskAuthorDetailV30Filtering
 }
 
 func (r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest {
@@ -53,12 +54,12 @@ func (r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) PageSize(pageSize 
 }
 
 // 过滤器
-func (r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) Filtering(filtering StardeliveryTaskAuthorDetailV30Filtering) *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest {
+func (r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) Filtering(filtering models.StardeliveryTaskAuthorDetailV30Filtering) *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) Execute() (*StardeliveryTaskAuthorDetailV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) Execute() (*models.StardeliveryTaskAuthorDetailV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -92,12 +93,12 @@ func (a *StardeliveryTaskAuthorDetailV30ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return StardeliveryTaskAuthorDetailV30Response
-func (a *StardeliveryTaskAuthorDetailV30ApiService) getExecute(r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) (*StardeliveryTaskAuthorDetailV30Response, *http.Response, error) {
+func (a *StardeliveryTaskAuthorDetailV30ApiService) getExecute(r *ApiOpenApiV30StardeliveryTaskAuthorDetailGetRequest) (*models.StardeliveryTaskAuthorDetailV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StardeliveryTaskAuthorDetailV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StardeliveryTaskAuthorDetailV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -107,7 +108,7 @@ func (a *StardeliveryTaskAuthorDetailV30ApiService) getExecute(r *ApiOpenApiV30S
 	localVarPath := localBasePath + "/open_api/v3.0/stardelivery/task_author/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

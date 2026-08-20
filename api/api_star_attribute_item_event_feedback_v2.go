@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarAttributeItemEventFeedbackV2ApiService StarAttributeItemEventFeedbackV2Api service
@@ -25,15 +26,15 @@ type StarAttributeItemEventFeedbackV2ApiService service
 type ApiOpenApi2StarAttributeItemEventFeedbackPostRequest struct {
 	ctx                                     context.Context
 	ApiService                              *StarAttributeItemEventFeedbackV2ApiService
-	starAttributeItemEventFeedbackV2Request *StarAttributeItemEventFeedbackV2Request
+	starAttributeItemEventFeedbackV2Request *models.StarAttributeItemEventFeedbackV2Request
 }
 
-func (r *ApiOpenApi2StarAttributeItemEventFeedbackPostRequest) StarAttributeItemEventFeedbackV2Request(starAttributeItemEventFeedbackV2Request StarAttributeItemEventFeedbackV2Request) *ApiOpenApi2StarAttributeItemEventFeedbackPostRequest {
+func (r *ApiOpenApi2StarAttributeItemEventFeedbackPostRequest) StarAttributeItemEventFeedbackV2Request(starAttributeItemEventFeedbackV2Request models.StarAttributeItemEventFeedbackV2Request) *ApiOpenApi2StarAttributeItemEventFeedbackPostRequest {
 	r.starAttributeItemEventFeedbackV2Request = &starAttributeItemEventFeedbackV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarAttributeItemEventFeedbackPostRequest) Execute() (*StarAttributeItemEventFeedbackV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarAttributeItemEventFeedbackPostRequest) Execute() (*models.StarAttributeItemEventFeedbackV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarAttributeItemEventFeedbackV2ApiService) Post(ctx context.Context) *
 // Execute executes the request
 //
 //	@return StarAttributeItemEventFeedbackV2Response
-func (a *StarAttributeItemEventFeedbackV2ApiService) postExecute(r *ApiOpenApi2StarAttributeItemEventFeedbackPostRequest) (*StarAttributeItemEventFeedbackV2Response, *http.Response, error) {
+func (a *StarAttributeItemEventFeedbackV2ApiService) postExecute(r *ApiOpenApi2StarAttributeItemEventFeedbackPostRequest) (*models.StarAttributeItemEventFeedbackV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarAttributeItemEventFeedbackV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarAttributeItemEventFeedbackV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarAttributeItemEventFeedbackV2ApiService) postExecute(r *ApiOpenApi2S
 	localVarPath := localBasePath + "/open_api/2/star/attribute/item_event_feedback/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

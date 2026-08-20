@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // PromotionListV30ApiService PromotionListV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30PromotionListGetRequest struct {
 	ctx                         context.Context
 	ApiService                  *PromotionListV30ApiService
 	advertiserId                *int64
-	filtering                   *PromotionListV30Filtering
+	filtering                   *models.PromotionListV30Filtering
 	fields                      *[]string
-	includingMaterialAtrributes *PromotionListV30IncludingMaterialAtrributes
+	includingMaterialAtrributes *models.PromotionListV30IncludingMaterialAtrributes
 	page                        *int64
 	pageSize                    *int64
 	cursor                      *int64
@@ -40,7 +41,7 @@ func (r *ApiOpenApiV30PromotionListGetRequest) AdvertiserId(advertiserId int64) 
 	return r
 }
 
-func (r *ApiOpenApiV30PromotionListGetRequest) Filtering(filtering PromotionListV30Filtering) *ApiOpenApiV30PromotionListGetRequest {
+func (r *ApiOpenApiV30PromotionListGetRequest) Filtering(filtering models.PromotionListV30Filtering) *ApiOpenApiV30PromotionListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV30PromotionListGetRequest) Fields(fields []string) *ApiOpenA
 }
 
 // RETURN_CARRY_DATA 返回视频素材的搬运属性
-func (r *ApiOpenApiV30PromotionListGetRequest) IncludingMaterialAtrributes(includingMaterialAtrributes PromotionListV30IncludingMaterialAtrributes) *ApiOpenApiV30PromotionListGetRequest {
+func (r *ApiOpenApiV30PromotionListGetRequest) IncludingMaterialAtrributes(includingMaterialAtrributes models.PromotionListV30IncludingMaterialAtrributes) *ApiOpenApiV30PromotionListGetRequest {
 	r.includingMaterialAtrributes = &includingMaterialAtrributes
 	return r
 }
@@ -78,7 +79,7 @@ func (r *ApiOpenApiV30PromotionListGetRequest) Count(count int64) *ApiOpenApiV30
 	return r
 }
 
-func (r *ApiOpenApiV30PromotionListGetRequest) Execute() (*PromotionListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30PromotionListGetRequest) Execute() (*models.PromotionListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -112,12 +113,12 @@ func (a *PromotionListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Prom
 // Execute executes the request
 //
 //	@return PromotionListV30Response
-func (a *PromotionListV30ApiService) getExecute(r *ApiOpenApiV30PromotionListGetRequest) (*PromotionListV30Response, *http.Response, error) {
+func (a *PromotionListV30ApiService) getExecute(r *ApiOpenApiV30PromotionListGetRequest) (*models.PromotionListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *PromotionListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.PromotionListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -127,7 +128,7 @@ func (a *PromotionListV30ApiService) getExecute(r *ApiOpenApiV30PromotionListGet
 	localVarPath := localBasePath + "/open_api/v3.0/promotion/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

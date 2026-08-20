@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsThirdSitePreviewV2ApiService ToolsThirdSitePreviewV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2ToolsThirdSitePreviewGetRequest) SiteId(siteId int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApi2ToolsThirdSitePreviewGetRequest) Execute() (*ToolsThirdSitePreviewV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsThirdSitePreviewGetRequest) Execute() (*models.ToolsThirdSitePreviewV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsThirdSitePreviewV2ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsThirdSitePreviewV2Response
-func (a *ToolsThirdSitePreviewV2ApiService) getExecute(r *ApiOpenApi2ToolsThirdSitePreviewGetRequest) (*ToolsThirdSitePreviewV2Response, *http.Response, error) {
+func (a *ToolsThirdSitePreviewV2ApiService) getExecute(r *ApiOpenApi2ToolsThirdSitePreviewGetRequest) (*models.ToolsThirdSitePreviewV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsThirdSitePreviewV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsThirdSitePreviewV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsThirdSitePreviewV2ApiService) getExecute(r *ApiOpenApi2ToolsThirdS
 	localVarPath := localBasePath + "/open_api/2/tools/third_site/preview/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandMaterialListV30ApiService BrandMaterialListV30Api service
@@ -28,13 +29,13 @@ type ApiOpenApiV30BrandMaterialListGetRequest struct {
 	advertiserId   *int64
 	materialIds    *[]int64
 	materialName   *string
-	materialStatus *[]*BrandMaterialListV30MaterialStatus
+	materialStatus *[]*models.BrandMaterialListV30MaterialStatus
 	iesCoreUserId  *string
-	orderFilter    *BrandMaterialListV30OrderFilter
+	orderFilter    *models.BrandMaterialListV30OrderFilter
 	startTime      *string
 	endTime        *string
-	campaignFilter *BrandMaterialListV30CampaignFilter
-	pageInfo       *BrandMaterialListV30PageInfo
+	campaignFilter *models.BrandMaterialListV30CampaignFilter
+	pageInfo       *models.BrandMaterialListV30PageInfo
 }
 
 // 广告主id
@@ -56,7 +57,7 @@ func (r *ApiOpenApiV30BrandMaterialListGetRequest) MaterialName(materialName str
 }
 
 // 素材状态
-func (r *ApiOpenApiV30BrandMaterialListGetRequest) MaterialStatus(materialStatus []*BrandMaterialListV30MaterialStatus) *ApiOpenApiV30BrandMaterialListGetRequest {
+func (r *ApiOpenApiV30BrandMaterialListGetRequest) MaterialStatus(materialStatus []*models.BrandMaterialListV30MaterialStatus) *ApiOpenApiV30BrandMaterialListGetRequest {
 	r.materialStatus = &materialStatus
 	return r
 }
@@ -68,7 +69,7 @@ func (r *ApiOpenApiV30BrandMaterialListGetRequest) IesCoreUserId(iesCoreUserId s
 }
 
 // 预订单过滤条件
-func (r *ApiOpenApiV30BrandMaterialListGetRequest) OrderFilter(orderFilter BrandMaterialListV30OrderFilter) *ApiOpenApiV30BrandMaterialListGetRequest {
+func (r *ApiOpenApiV30BrandMaterialListGetRequest) OrderFilter(orderFilter models.BrandMaterialListV30OrderFilter) *ApiOpenApiV30BrandMaterialListGetRequest {
 	r.orderFilter = &orderFilter
 	return r
 }
@@ -86,18 +87,18 @@ func (r *ApiOpenApiV30BrandMaterialListGetRequest) EndTime(endTime string) *ApiO
 }
 
 // 广告组过滤条件
-func (r *ApiOpenApiV30BrandMaterialListGetRequest) CampaignFilter(campaignFilter BrandMaterialListV30CampaignFilter) *ApiOpenApiV30BrandMaterialListGetRequest {
+func (r *ApiOpenApiV30BrandMaterialListGetRequest) CampaignFilter(campaignFilter models.BrandMaterialListV30CampaignFilter) *ApiOpenApiV30BrandMaterialListGetRequest {
 	r.campaignFilter = &campaignFilter
 	return r
 }
 
 // 分页信息
-func (r *ApiOpenApiV30BrandMaterialListGetRequest) PageInfo(pageInfo BrandMaterialListV30PageInfo) *ApiOpenApiV30BrandMaterialListGetRequest {
+func (r *ApiOpenApiV30BrandMaterialListGetRequest) PageInfo(pageInfo models.BrandMaterialListV30PageInfo) *ApiOpenApiV30BrandMaterialListGetRequest {
 	r.pageInfo = &pageInfo
 	return r
 }
 
-func (r *ApiOpenApiV30BrandMaterialListGetRequest) Execute() (*BrandMaterialListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandMaterialListGetRequest) Execute() (*models.BrandMaterialListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -131,12 +132,12 @@ func (a *BrandMaterialListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return BrandMaterialListV30Response
-func (a *BrandMaterialListV30ApiService) getExecute(r *ApiOpenApiV30BrandMaterialListGetRequest) (*BrandMaterialListV30Response, *http.Response, error) {
+func (a *BrandMaterialListV30ApiService) getExecute(r *ApiOpenApiV30BrandMaterialListGetRequest) (*models.BrandMaterialListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandMaterialListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandMaterialListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -146,7 +147,7 @@ func (a *BrandMaterialListV30ApiService) getExecute(r *ApiOpenApiV30BrandMateria
 	localVarPath := localBasePath + "/open_api/v3.0/brand/material/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

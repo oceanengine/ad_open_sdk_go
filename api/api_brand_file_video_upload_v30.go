@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandFileVideoUploadV30ApiService BrandFileVideoUploadV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30BrandFileVideoUploadPostRequest struct {
 	ctx          context.Context
 	ApiService   *BrandFileVideoUploadV30ApiService
 	advertiserId *int64
-	videoFile    *FormFileInfo
+	videoFile    *models.FormFileInfo
 }
 
 // 广告主ID
@@ -36,12 +37,12 @@ func (r *ApiOpenApiV30BrandFileVideoUploadPostRequest) AdvertiserId(advertiserId
 }
 
 // 视频文件
-func (r *ApiOpenApiV30BrandFileVideoUploadPostRequest) VideoFile(videoFile *FormFileInfo) *ApiOpenApiV30BrandFileVideoUploadPostRequest {
+func (r *ApiOpenApiV30BrandFileVideoUploadPostRequest) VideoFile(videoFile *models.FormFileInfo) *ApiOpenApiV30BrandFileVideoUploadPostRequest {
 	r.videoFile = videoFile
 	return r
 }
 
-func (r *ApiOpenApiV30BrandFileVideoUploadPostRequest) Execute() (*BrandFileVideoUploadV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandFileVideoUploadPostRequest) Execute() (*models.BrandFileVideoUploadV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *BrandFileVideoUploadV30ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return BrandFileVideoUploadV30Response
-func (a *BrandFileVideoUploadV30ApiService) postExecute(r *ApiOpenApiV30BrandFileVideoUploadPostRequest) (*BrandFileVideoUploadV30Response, *http.Response, error) {
+func (a *BrandFileVideoUploadV30ApiService) postExecute(r *ApiOpenApiV30BrandFileVideoUploadPostRequest) (*models.BrandFileVideoUploadV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandFileVideoUploadV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandFileVideoUploadV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *BrandFileVideoUploadV30ApiService) postExecute(r *ApiOpenApiV30BrandFil
 	localVarPath := localBasePath + "/open_api/v3.0/brand/file/video/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

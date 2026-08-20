@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalOcProjectListV30ApiService LocalOcProjectListV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30LocalOcProjectListGetRequest struct {
 	ctx            context.Context
 	ApiService     *LocalOcProjectListV30ApiService
 	localAccountId *int64
-	filtering      *LocalOcProjectListV30Filtering
+	filtering      *models.LocalOcProjectListV30Filtering
 	page           *int64
 	pageSize       *int64
 }
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV30LocalOcProjectListGetRequest) LocalAccountId(localAccountI
 }
 
 // 过滤器
-func (r *ApiOpenApiV30LocalOcProjectListGetRequest) Filtering(filtering LocalOcProjectListV30Filtering) *ApiOpenApiV30LocalOcProjectListGetRequest {
+func (r *ApiOpenApiV30LocalOcProjectListGetRequest) Filtering(filtering models.LocalOcProjectListV30Filtering) *ApiOpenApiV30LocalOcProjectListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -54,7 +55,7 @@ func (r *ApiOpenApiV30LocalOcProjectListGetRequest) PageSize(pageSize int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApiV30LocalOcProjectListGetRequest) Execute() (*LocalOcProjectListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalOcProjectListGetRequest) Execute() (*models.LocalOcProjectListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -88,12 +89,12 @@ func (a *LocalOcProjectListV30ApiService) Get(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return LocalOcProjectListV30Response
-func (a *LocalOcProjectListV30ApiService) getExecute(r *ApiOpenApiV30LocalOcProjectListGetRequest) (*LocalOcProjectListV30Response, *http.Response, error) {
+func (a *LocalOcProjectListV30ApiService) getExecute(r *ApiOpenApiV30LocalOcProjectListGetRequest) (*models.LocalOcProjectListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalOcProjectListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalOcProjectListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -103,7 +104,7 @@ func (a *LocalOcProjectListV30ApiService) getExecute(r *ApiOpenApiV30LocalOcProj
 	localVarPath := localBasePath + "/open_api/v3.0/local/oc_project/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

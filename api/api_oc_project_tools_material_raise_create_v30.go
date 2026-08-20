@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OcProjectToolsMaterialRaiseCreateV30ApiService OcProjectToolsMaterialRaiseCreateV30Api service
@@ -25,15 +26,15 @@ type OcProjectToolsMaterialRaiseCreateV30ApiService service
 type ApiOpenApiV30OcProjectToolsMaterialRaiseCreatePostRequest struct {
 	ctx                                         context.Context
 	ApiService                                  *OcProjectToolsMaterialRaiseCreateV30ApiService
-	ocProjectToolsMaterialRaiseCreateV30Request *OcProjectToolsMaterialRaiseCreateV30Request
+	ocProjectToolsMaterialRaiseCreateV30Request *models.OcProjectToolsMaterialRaiseCreateV30Request
 }
 
-func (r *ApiOpenApiV30OcProjectToolsMaterialRaiseCreatePostRequest) OcProjectToolsMaterialRaiseCreateV30Request(ocProjectToolsMaterialRaiseCreateV30Request OcProjectToolsMaterialRaiseCreateV30Request) *ApiOpenApiV30OcProjectToolsMaterialRaiseCreatePostRequest {
+func (r *ApiOpenApiV30OcProjectToolsMaterialRaiseCreatePostRequest) OcProjectToolsMaterialRaiseCreateV30Request(ocProjectToolsMaterialRaiseCreateV30Request models.OcProjectToolsMaterialRaiseCreateV30Request) *ApiOpenApiV30OcProjectToolsMaterialRaiseCreatePostRequest {
 	r.ocProjectToolsMaterialRaiseCreateV30Request = &ocProjectToolsMaterialRaiseCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30OcProjectToolsMaterialRaiseCreatePostRequest) Execute() (*OcProjectToolsMaterialRaiseCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OcProjectToolsMaterialRaiseCreatePostRequest) Execute() (*models.OcProjectToolsMaterialRaiseCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *OcProjectToolsMaterialRaiseCreateV30ApiService) Post(ctx context.Contex
 // Execute executes the request
 //
 //	@return OcProjectToolsMaterialRaiseCreateV30Response
-func (a *OcProjectToolsMaterialRaiseCreateV30ApiService) postExecute(r *ApiOpenApiV30OcProjectToolsMaterialRaiseCreatePostRequest) (*OcProjectToolsMaterialRaiseCreateV30Response, *http.Response, error) {
+func (a *OcProjectToolsMaterialRaiseCreateV30ApiService) postExecute(r *ApiOpenApiV30OcProjectToolsMaterialRaiseCreatePostRequest) (*models.OcProjectToolsMaterialRaiseCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OcProjectToolsMaterialRaiseCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OcProjectToolsMaterialRaiseCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *OcProjectToolsMaterialRaiseCreateV30ApiService) postExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/v3.0/oc_project/tools_material_raise/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

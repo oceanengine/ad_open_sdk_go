@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ProjectScheduleTimeUpdateV30ApiService ProjectScheduleTimeUpdateV30Api service
@@ -25,15 +26,15 @@ type ProjectScheduleTimeUpdateV30ApiService service
 type ApiOpenApiV30ProjectScheduleTimeUpdatePostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *ProjectScheduleTimeUpdateV30ApiService
-	projectScheduleTimeUpdateV30Request *ProjectScheduleTimeUpdateV30Request
+	projectScheduleTimeUpdateV30Request *models.ProjectScheduleTimeUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ProjectScheduleTimeUpdatePostRequest) ProjectScheduleTimeUpdateV30Request(projectScheduleTimeUpdateV30Request ProjectScheduleTimeUpdateV30Request) *ApiOpenApiV30ProjectScheduleTimeUpdatePostRequest {
+func (r *ApiOpenApiV30ProjectScheduleTimeUpdatePostRequest) ProjectScheduleTimeUpdateV30Request(projectScheduleTimeUpdateV30Request models.ProjectScheduleTimeUpdateV30Request) *ApiOpenApiV30ProjectScheduleTimeUpdatePostRequest {
 	r.projectScheduleTimeUpdateV30Request = &projectScheduleTimeUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ProjectScheduleTimeUpdatePostRequest) Execute() (*ProjectScheduleTimeUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ProjectScheduleTimeUpdatePostRequest) Execute() (*models.ProjectScheduleTimeUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ProjectScheduleTimeUpdateV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return ProjectScheduleTimeUpdateV30Response
-func (a *ProjectScheduleTimeUpdateV30ApiService) postExecute(r *ApiOpenApiV30ProjectScheduleTimeUpdatePostRequest) (*ProjectScheduleTimeUpdateV30Response, *http.Response, error) {
+func (a *ProjectScheduleTimeUpdateV30ApiService) postExecute(r *ApiOpenApiV30ProjectScheduleTimeUpdatePostRequest) (*models.ProjectScheduleTimeUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ProjectScheduleTimeUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ProjectScheduleTimeUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ProjectScheduleTimeUpdateV30ApiService) postExecute(r *ApiOpenApiV30Pro
 	localVarPath := localBasePath + "/open_api/v3.0/project/schedule_time/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

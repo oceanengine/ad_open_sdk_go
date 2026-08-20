@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CustomerCenterFundTransferSeqCommitV2ApiService CustomerCenterFundTransferSeqCommitV2Api service
@@ -25,15 +26,15 @@ type CustomerCenterFundTransferSeqCommitV2ApiService service
 type ApiOpenApi2CustomerCenterFundTransferSeqCommitPostRequest struct {
 	ctx                                          context.Context
 	ApiService                                   *CustomerCenterFundTransferSeqCommitV2ApiService
-	customerCenterFundTransferSeqCommitV2Request *CustomerCenterFundTransferSeqCommitV2Request
+	customerCenterFundTransferSeqCommitV2Request *models.CustomerCenterFundTransferSeqCommitV2Request
 }
 
-func (r *ApiOpenApi2CustomerCenterFundTransferSeqCommitPostRequest) CustomerCenterFundTransferSeqCommitV2Request(customerCenterFundTransferSeqCommitV2Request CustomerCenterFundTransferSeqCommitV2Request) *ApiOpenApi2CustomerCenterFundTransferSeqCommitPostRequest {
+func (r *ApiOpenApi2CustomerCenterFundTransferSeqCommitPostRequest) CustomerCenterFundTransferSeqCommitV2Request(customerCenterFundTransferSeqCommitV2Request models.CustomerCenterFundTransferSeqCommitV2Request) *ApiOpenApi2CustomerCenterFundTransferSeqCommitPostRequest {
 	r.customerCenterFundTransferSeqCommitV2Request = &customerCenterFundTransferSeqCommitV2Request
 	return r
 }
 
-func (r *ApiOpenApi2CustomerCenterFundTransferSeqCommitPostRequest) Execute() (*CustomerCenterFundTransferSeqCommitV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CustomerCenterFundTransferSeqCommitPostRequest) Execute() (*models.CustomerCenterFundTransferSeqCommitV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *CustomerCenterFundTransferSeqCommitV2ApiService) Post(ctx context.Conte
 // Execute executes the request
 //
 //	@return CustomerCenterFundTransferSeqCommitV2Response
-func (a *CustomerCenterFundTransferSeqCommitV2ApiService) postExecute(r *ApiOpenApi2CustomerCenterFundTransferSeqCommitPostRequest) (*CustomerCenterFundTransferSeqCommitV2Response, *http.Response, error) {
+func (a *CustomerCenterFundTransferSeqCommitV2ApiService) postExecute(r *ApiOpenApi2CustomerCenterFundTransferSeqCommitPostRequest) (*models.CustomerCenterFundTransferSeqCommitV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CustomerCenterFundTransferSeqCommitV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CustomerCenterFundTransferSeqCommitV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *CustomerCenterFundTransferSeqCommitV2ApiService) postExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/2/customer_center/fund/transfer_seq/commit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

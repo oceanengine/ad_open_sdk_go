@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserDeliveryQualificationSubmitV30ApiService AdvertiserDeliveryQualificationSubmitV30Api service
@@ -25,15 +26,15 @@ type AdvertiserDeliveryQualificationSubmitV30ApiService service
 type ApiOpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest struct {
 	ctx                                             context.Context
 	ApiService                                      *AdvertiserDeliveryQualificationSubmitV30ApiService
-	advertiserDeliveryQualificationSubmitV30Request *AdvertiserDeliveryQualificationSubmitV30Request
+	advertiserDeliveryQualificationSubmitV30Request *models.AdvertiserDeliveryQualificationSubmitV30Request
 }
 
-func (r *ApiOpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest) AdvertiserDeliveryQualificationSubmitV30Request(advertiserDeliveryQualificationSubmitV30Request AdvertiserDeliveryQualificationSubmitV30Request) *ApiOpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest {
+func (r *ApiOpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest) AdvertiserDeliveryQualificationSubmitV30Request(advertiserDeliveryQualificationSubmitV30Request models.AdvertiserDeliveryQualificationSubmitV30Request) *ApiOpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest {
 	r.advertiserDeliveryQualificationSubmitV30Request = &advertiserDeliveryQualificationSubmitV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest) Execute() (*AdvertiserDeliveryQualificationSubmitV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest) Execute() (*models.AdvertiserDeliveryQualificationSubmitV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AdvertiserDeliveryQualificationSubmitV30ApiService) Post(ctx context.Co
 // Execute executes the request
 //
 //	@return AdvertiserDeliveryQualificationSubmitV30Response
-func (a *AdvertiserDeliveryQualificationSubmitV30ApiService) postExecute(r *ApiOpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest) (*AdvertiserDeliveryQualificationSubmitV30Response, *http.Response, error) {
+func (a *AdvertiserDeliveryQualificationSubmitV30ApiService) postExecute(r *ApiOpenApiV30AdvertiserDeliveryQualificationSubmitPostRequest) (*models.AdvertiserDeliveryQualificationSubmitV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserDeliveryQualificationSubmitV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserDeliveryQualificationSubmitV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AdvertiserDeliveryQualificationSubmitV30ApiService) postExecute(r *ApiO
 	localVarPath := localBasePath + "/open_api/v3.0/advertiser/delivery_qualification/submit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

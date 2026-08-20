@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsLiveAuthorizeListV2ApiService ToolsLiveAuthorizeListV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2ToolsLiveAuthorizeListGetRequest struct {
 	advertiserId *int64
 	page         *int64
 	pageSize     *int64
-	status       *[]*ToolsLiveAuthorizeListV2Status
+	status       *[]*models.ToolsLiveAuthorizeListV2Status
 }
 
 func (r *ApiOpenApi2ToolsLiveAuthorizeListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsLiveAuthorizeListGetRequest {
@@ -46,12 +47,12 @@ func (r *ApiOpenApi2ToolsLiveAuthorizeListGetRequest) PageSize(pageSize int64) *
 	return r
 }
 
-func (r *ApiOpenApi2ToolsLiveAuthorizeListGetRequest) Status(status []*ToolsLiveAuthorizeListV2Status) *ApiOpenApi2ToolsLiveAuthorizeListGetRequest {
+func (r *ApiOpenApi2ToolsLiveAuthorizeListGetRequest) Status(status []*models.ToolsLiveAuthorizeListV2Status) *ApiOpenApi2ToolsLiveAuthorizeListGetRequest {
 	r.status = &status
 	return r
 }
 
-func (r *ApiOpenApi2ToolsLiveAuthorizeListGetRequest) Execute() (*ToolsLiveAuthorizeListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsLiveAuthorizeListGetRequest) Execute() (*models.ToolsLiveAuthorizeListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ToolsLiveAuthorizeListV2ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsLiveAuthorizeListV2Response
-func (a *ToolsLiveAuthorizeListV2ApiService) getExecute(r *ApiOpenApi2ToolsLiveAuthorizeListGetRequest) (*ToolsLiveAuthorizeListV2Response, *http.Response, error) {
+func (a *ToolsLiveAuthorizeListV2ApiService) getExecute(r *ApiOpenApi2ToolsLiveAuthorizeListGetRequest) (*models.ToolsLiveAuthorizeListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsLiveAuthorizeListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsLiveAuthorizeListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ToolsLiveAuthorizeListV2ApiService) getExecute(r *ApiOpenApi2ToolsLiveA
 	localVarPath := localBasePath + "/open_api/2/tools/live_authorize/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

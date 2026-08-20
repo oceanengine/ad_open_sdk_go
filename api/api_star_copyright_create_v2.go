@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarCopyrightCreateV2ApiService StarCopyrightCreateV2Api service
@@ -25,15 +26,15 @@ type StarCopyrightCreateV2ApiService service
 type ApiOpenApi2StarCopyrightCreatePostRequest struct {
 	ctx                          context.Context
 	ApiService                   *StarCopyrightCreateV2ApiService
-	starCopyrightCreateV2Request *StarCopyrightCreateV2Request
+	starCopyrightCreateV2Request *models.StarCopyrightCreateV2Request
 }
 
-func (r *ApiOpenApi2StarCopyrightCreatePostRequest) StarCopyrightCreateV2Request(starCopyrightCreateV2Request StarCopyrightCreateV2Request) *ApiOpenApi2StarCopyrightCreatePostRequest {
+func (r *ApiOpenApi2StarCopyrightCreatePostRequest) StarCopyrightCreateV2Request(starCopyrightCreateV2Request models.StarCopyrightCreateV2Request) *ApiOpenApi2StarCopyrightCreatePostRequest {
 	r.starCopyrightCreateV2Request = &starCopyrightCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarCopyrightCreatePostRequest) Execute() (*StarCopyrightCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarCopyrightCreatePostRequest) Execute() (*models.StarCopyrightCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarCopyrightCreateV2ApiService) Post(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return StarCopyrightCreateV2Response
-func (a *StarCopyrightCreateV2ApiService) postExecute(r *ApiOpenApi2StarCopyrightCreatePostRequest) (*StarCopyrightCreateV2Response, *http.Response, error) {
+func (a *StarCopyrightCreateV2ApiService) postExecute(r *ApiOpenApi2StarCopyrightCreatePostRequest) (*models.StarCopyrightCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarCopyrightCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarCopyrightCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarCopyrightCreateV2ApiService) postExecute(r *ApiOpenApi2StarCopyrigh
 	localVarPath := localBasePath + "/open_api/2/star/copyright/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

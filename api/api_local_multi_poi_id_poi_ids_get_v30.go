@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalMultiPoiIdPoiIdsGetV30ApiService LocalMultiPoiIdPoiIdsGetV30Api service
@@ -46,7 +47,7 @@ func (r *ApiOpenApiV30LocalMultiPoiIdPoiIdsGetGetRequest) NeedEnable(needEnable 
 	return r
 }
 
-func (r *ApiOpenApiV30LocalMultiPoiIdPoiIdsGetGetRequest) Execute() (*LocalMultiPoiIdPoiIdsGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalMultiPoiIdPoiIdsGetGetRequest) Execute() (*models.LocalMultiPoiIdPoiIdsGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -80,12 +81,12 @@ func (a *LocalMultiPoiIdPoiIdsGetV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return LocalMultiPoiIdPoiIdsGetV30Response
-func (a *LocalMultiPoiIdPoiIdsGetV30ApiService) getExecute(r *ApiOpenApiV30LocalMultiPoiIdPoiIdsGetGetRequest) (*LocalMultiPoiIdPoiIdsGetV30Response, *http.Response, error) {
+func (a *LocalMultiPoiIdPoiIdsGetV30ApiService) getExecute(r *ApiOpenApiV30LocalMultiPoiIdPoiIdsGetGetRequest) (*models.LocalMultiPoiIdPoiIdsGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalMultiPoiIdPoiIdsGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalMultiPoiIdPoiIdsGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -95,7 +96,7 @@ func (a *LocalMultiPoiIdPoiIdsGetV30ApiService) getExecute(r *ApiOpenApiV30Local
 	localVarPath := localBasePath + "/open_api/v3.0/local/multi_poi_id/poi_ids/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

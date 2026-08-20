@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileImageAdV2ApiService FileImageAdV2Api service
@@ -27,11 +28,11 @@ type ApiOpenApi2FileImageAdPostRequest struct {
 	ApiService     *FileImageAdV2ApiService
 	advertiserId   *int64
 	filename       *string
-	imageFile      *FormFileInfo
+	imageFile      *models.FormFileInfo
 	imageSignature *string
 	imageUrl       *string
 	isAigc         *bool
-	uploadType     *FileImageAdV2UploadType
+	uploadType     *models.FileImageAdV2UploadType
 }
 
 // 广告主ID
@@ -47,7 +48,7 @@ func (r *ApiOpenApi2FileImageAdPostRequest) Filename(filename string) *ApiOpenAp
 }
 
 // 图片文件 upload_type为UPLOAD_BY_FILE必填 格式: jpg、jpeg、png、bmp、gif, 大小1.5M内
-func (r *ApiOpenApi2FileImageAdPostRequest) ImageFile(imageFile *FormFileInfo) *ApiOpenApi2FileImageAdPostRequest {
+func (r *ApiOpenApi2FileImageAdPostRequest) ImageFile(imageFile *models.FormFileInfo) *ApiOpenApi2FileImageAdPostRequest {
 	r.imageFile = imageFile
 	return r
 }
@@ -70,12 +71,12 @@ func (r *ApiOpenApi2FileImageAdPostRequest) IsAigc(isAigc bool) *ApiOpenApi2File
 	return r
 }
 
-func (r *ApiOpenApi2FileImageAdPostRequest) UploadType(uploadType FileImageAdV2UploadType) *ApiOpenApi2FileImageAdPostRequest {
+func (r *ApiOpenApi2FileImageAdPostRequest) UploadType(uploadType models.FileImageAdV2UploadType) *ApiOpenApi2FileImageAdPostRequest {
 	r.uploadType = &uploadType
 	return r
 }
 
-func (r *ApiOpenApi2FileImageAdPostRequest) Execute() (*FileImageAdV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileImageAdPostRequest) Execute() (*models.FileImageAdV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -109,12 +110,12 @@ func (a *FileImageAdV2ApiService) Post(ctx context.Context) *ApiOpenApi2FileImag
 // Execute executes the request
 //
 //	@return FileImageAdV2Response
-func (a *FileImageAdV2ApiService) postExecute(r *ApiOpenApi2FileImageAdPostRequest) (*FileImageAdV2Response, *http.Response, error) {
+func (a *FileImageAdV2ApiService) postExecute(r *ApiOpenApi2FileImageAdPostRequest) (*models.FileImageAdV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileImageAdV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileImageAdV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -124,7 +125,7 @@ func (a *FileImageAdV2ApiService) postExecute(r *ApiOpenApi2FileImageAdPostReque
 	localVarPath := localBasePath + "/open_api/2/file/image/ad/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

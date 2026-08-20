@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAwemeAuthV2ApiService ToolsAwemeAuthV2Api service
@@ -25,15 +26,15 @@ type ToolsAwemeAuthV2ApiService service
 type ApiOpenApi2ToolsAwemeAuthPostRequest struct {
 	ctx                     context.Context
 	ApiService              *ToolsAwemeAuthV2ApiService
-	toolsAwemeAuthV2Request *ToolsAwemeAuthV2Request
+	toolsAwemeAuthV2Request *models.ToolsAwemeAuthV2Request
 }
 
-func (r *ApiOpenApi2ToolsAwemeAuthPostRequest) ToolsAwemeAuthV2Request(toolsAwemeAuthV2Request ToolsAwemeAuthV2Request) *ApiOpenApi2ToolsAwemeAuthPostRequest {
+func (r *ApiOpenApi2ToolsAwemeAuthPostRequest) ToolsAwemeAuthV2Request(toolsAwemeAuthV2Request models.ToolsAwemeAuthV2Request) *ApiOpenApi2ToolsAwemeAuthPostRequest {
 	r.toolsAwemeAuthV2Request = &toolsAwemeAuthV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAwemeAuthPostRequest) Execute() (*ToolsAwemeAuthV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAwemeAuthPostRequest) Execute() (*models.ToolsAwemeAuthV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsAwemeAuthV2ApiService) Post(ctx context.Context) *ApiOpenApi2Tools
 // Execute executes the request
 //
 //	@return ToolsAwemeAuthV2Response
-func (a *ToolsAwemeAuthV2ApiService) postExecute(r *ApiOpenApi2ToolsAwemeAuthPostRequest) (*ToolsAwemeAuthV2Response, *http.Response, error) {
+func (a *ToolsAwemeAuthV2ApiService) postExecute(r *ApiOpenApi2ToolsAwemeAuthPostRequest) (*models.ToolsAwemeAuthV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAwemeAuthV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAwemeAuthV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsAwemeAuthV2ApiService) postExecute(r *ApiOpenApi2ToolsAwemeAuthPos
 	localVarPath := localBasePath + "/open_api/2/tools/aweme_auth/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

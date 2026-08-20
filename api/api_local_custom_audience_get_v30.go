@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalCustomAudienceGetV30ApiService LocalCustomAudienceGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30LocalCustomAudienceGetGetRequest struct {
 	ctx            context.Context
 	ApiService     *LocalCustomAudienceGetV30ApiService
 	localAccountId *int64
-	tagsType       *LocalCustomAudienceGetV30TagsType
+	tagsType       *models.LocalCustomAudienceGetV30TagsType
 	page           *int64
 	pageSize       *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30LocalCustomAudienceGetGetRequest) LocalAccountId(localAcco
 }
 
 // 筛选条件：人群包属性
-func (r *ApiOpenApiV30LocalCustomAudienceGetGetRequest) TagsType(tagsType LocalCustomAudienceGetV30TagsType) *ApiOpenApiV30LocalCustomAudienceGetGetRequest {
+func (r *ApiOpenApiV30LocalCustomAudienceGetGetRequest) TagsType(tagsType models.LocalCustomAudienceGetV30TagsType) *ApiOpenApiV30LocalCustomAudienceGetGetRequest {
 	r.tagsType = &tagsType
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30LocalCustomAudienceGetGetRequest) PageSize(pageSize int64)
 	return r
 }
 
-func (r *ApiOpenApiV30LocalCustomAudienceGetGetRequest) Execute() (*LocalCustomAudienceGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalCustomAudienceGetGetRequest) Execute() (*models.LocalCustomAudienceGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *LocalCustomAudienceGetV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return LocalCustomAudienceGetV30Response
-func (a *LocalCustomAudienceGetV30ApiService) getExecute(r *ApiOpenApiV30LocalCustomAudienceGetGetRequest) (*LocalCustomAudienceGetV30Response, *http.Response, error) {
+func (a *LocalCustomAudienceGetV30ApiService) getExecute(r *ApiOpenApiV30LocalCustomAudienceGetGetRequest) (*models.LocalCustomAudienceGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalCustomAudienceGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalCustomAudienceGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *LocalCustomAudienceGetV30ApiService) getExecute(r *ApiOpenApiV30LocalCu
 	localVarPath := localBasePath + "/open_api/v3.0/local/custom_audience/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

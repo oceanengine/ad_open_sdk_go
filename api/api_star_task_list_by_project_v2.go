@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarTaskListByProjectV2ApiService StarTaskListByProjectV2Api service
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2StarTaskListByProjectGetRequest) Limit(limit int64) *ApiOpen
 	return r
 }
 
-func (r *ApiOpenApi2StarTaskListByProjectGetRequest) Execute() (*StarTaskListByProjectV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarTaskListByProjectGetRequest) Execute() (*models.StarTaskListByProjectV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *StarTaskListByProjectV2ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return StarTaskListByProjectV2Response
-func (a *StarTaskListByProjectV2ApiService) getExecute(r *ApiOpenApi2StarTaskListByProjectGetRequest) (*StarTaskListByProjectV2Response, *http.Response, error) {
+func (a *StarTaskListByProjectV2ApiService) getExecute(r *ApiOpenApi2StarTaskListByProjectGetRequest) (*models.StarTaskListByProjectV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarTaskListByProjectV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarTaskListByProjectV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *StarTaskListByProjectV2ApiService) getExecute(r *ApiOpenApi2StarTaskLis
 	localVarPath := localBasePath + "/open_api/2/star/task/list_by_project/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

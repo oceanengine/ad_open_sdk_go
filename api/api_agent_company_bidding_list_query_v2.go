@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentCompanyBiddingListQueryV2ApiService AgentCompanyBiddingListQueryV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2AgentCompanyBiddingListQueryGetRequest struct {
 	agentId    *int64
 	startDate  *string
 	endDate    *string
-	filtering  *AgentCompanyBiddingListQueryV2Filtering
+	filtering  *models.AgentCompanyBiddingListQueryV2Filtering
 	cursor     *int64
 	cursorSize *int64
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2AgentCompanyBiddingListQueryGetRequest) EndDate(endDate stri
 }
 
 // 筛选条件。
-func (r *ApiOpenApi2AgentCompanyBiddingListQueryGetRequest) Filtering(filtering AgentCompanyBiddingListQueryV2Filtering) *ApiOpenApi2AgentCompanyBiddingListQueryGetRequest {
+func (r *ApiOpenApi2AgentCompanyBiddingListQueryGetRequest) Filtering(filtering models.AgentCompanyBiddingListQueryV2Filtering) *ApiOpenApi2AgentCompanyBiddingListQueryGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -68,7 +69,7 @@ func (r *ApiOpenApi2AgentCompanyBiddingListQueryGetRequest) CursorSize(cursorSiz
 	return r
 }
 
-func (r *ApiOpenApi2AgentCompanyBiddingListQueryGetRequest) Execute() (*AgentCompanyBiddingListQueryV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentCompanyBiddingListQueryGetRequest) Execute() (*models.AgentCompanyBiddingListQueryV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -102,12 +103,12 @@ func (a *AgentCompanyBiddingListQueryV2ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return AgentCompanyBiddingListQueryV2Response
-func (a *AgentCompanyBiddingListQueryV2ApiService) getExecute(r *ApiOpenApi2AgentCompanyBiddingListQueryGetRequest) (*AgentCompanyBiddingListQueryV2Response, *http.Response, error) {
+func (a *AgentCompanyBiddingListQueryV2ApiService) getExecute(r *ApiOpenApi2AgentCompanyBiddingListQueryGetRequest) (*models.AgentCompanyBiddingListQueryV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentCompanyBiddingListQueryV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentCompanyBiddingListQueryV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -117,7 +118,7 @@ func (a *AgentCompanyBiddingListQueryV2ApiService) getExecute(r *ApiOpenApi2Agen
 	localVarPath := localBasePath + "/open_api/2/agent/company/bidding/list/query/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

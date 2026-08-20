@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // InvoiceTicketListV30ApiService InvoiceTicketListV30Api service
@@ -26,10 +27,10 @@ type ApiOpenApiV30InvoiceTicketListGetRequest struct {
 	ctx            context.Context
 	ApiService     *InvoiceTicketListV30ApiService
 	accountIds     *[]int64
-	platform       *InvoiceTicketListV30Platform
+	platform       *models.InvoiceTicketListV30Platform
 	startMonth     *string
 	endMonth       *string
-	ticketStatuses *[]*InvoiceTicketListV30TicketStatuses
+	ticketStatuses *[]*models.InvoiceTicketListV30TicketStatuses
 	scrollId       *string
 	pageSize       *int32
 }
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30InvoiceTicketListGetRequest) AccountIds(accountIds []int64
 }
 
 // 业务线
-func (r *ApiOpenApiV30InvoiceTicketListGetRequest) Platform(platform InvoiceTicketListV30Platform) *ApiOpenApiV30InvoiceTicketListGetRequest {
+func (r *ApiOpenApiV30InvoiceTicketListGetRequest) Platform(platform models.InvoiceTicketListV30Platform) *ApiOpenApiV30InvoiceTicketListGetRequest {
 	r.platform = &platform
 	return r
 }
@@ -59,7 +60,7 @@ func (r *ApiOpenApiV30InvoiceTicketListGetRequest) EndMonth(endMonth string) *Ap
 }
 
 // 账单状态
-func (r *ApiOpenApiV30InvoiceTicketListGetRequest) TicketStatuses(ticketStatuses []*InvoiceTicketListV30TicketStatuses) *ApiOpenApiV30InvoiceTicketListGetRequest {
+func (r *ApiOpenApiV30InvoiceTicketListGetRequest) TicketStatuses(ticketStatuses []*models.InvoiceTicketListV30TicketStatuses) *ApiOpenApiV30InvoiceTicketListGetRequest {
 	r.ticketStatuses = &ticketStatuses
 	return r
 }
@@ -75,7 +76,7 @@ func (r *ApiOpenApiV30InvoiceTicketListGetRequest) PageSize(pageSize int32) *Api
 	return r
 }
 
-func (r *ApiOpenApiV30InvoiceTicketListGetRequest) Execute() (*InvoiceTicketListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30InvoiceTicketListGetRequest) Execute() (*models.InvoiceTicketListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -112,12 +113,12 @@ func (a *InvoiceTicketListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return InvoiceTicketListV30Response
-func (a *InvoiceTicketListV30ApiService) getExecute(r *ApiOpenApiV30InvoiceTicketListGetRequest) (*InvoiceTicketListV30Response, *http.Response, error) {
+func (a *InvoiceTicketListV30ApiService) getExecute(r *ApiOpenApiV30InvoiceTicketListGetRequest) (*models.InvoiceTicketListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *InvoiceTicketListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.InvoiceTicketListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -127,7 +128,7 @@ func (a *InvoiceTicketListV30ApiService) getExecute(r *ApiOpenApiV30InvoiceTicke
 	localVarPath := localBasePath + "/open_api/v3.0/invoice/ticket/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountIds == nil {

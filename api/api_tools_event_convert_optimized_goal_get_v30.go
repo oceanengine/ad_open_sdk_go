@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEventConvertOptimizedGoalGetV30ApiService ToolsEventConvertOptimizedGoalGetV30Api service
@@ -25,28 +26,28 @@ type ToolsEventConvertOptimizedGoalGetV30ApiService service
 type ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest struct {
 	ctx                context.Context
 	ApiService         *ToolsEventConvertOptimizedGoalGetV30ApiService
-	landingType        *ToolsEventConvertOptimizedGoalGetV30LandingType
-	marketingPurpose   *ToolsEventConvertOptimizedGoalGetV30MarketingPurpose
-	assetType          *ToolsEventConvertOptimizedGoalGetV30AssetType
+	landingType        *models.ToolsEventConvertOptimizedGoalGetV30LandingType
+	marketingPurpose   *models.ToolsEventConvertOptimizedGoalGetV30MarketingPurpose
+	assetType          *models.ToolsEventConvertOptimizedGoalGetV30AssetType
 	advertiserId       *int64
 	siteId             *int64
 	miniProgramId      *string
 	assetId            *int64
-	campaignType       *ToolsEventConvertOptimizedGoalGetV30CampaignType
+	campaignType       *models.ToolsEventConvertOptimizedGoalGetV30CampaignType
 	microAppInstanceId *int64
 }
 
-func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) LandingType(landingType ToolsEventConvertOptimizedGoalGetV30LandingType) *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest {
+func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) LandingType(landingType models.ToolsEventConvertOptimizedGoalGetV30LandingType) *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest {
 	r.landingType = &landingType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) MarketingPurpose(marketingPurpose ToolsEventConvertOptimizedGoalGetV30MarketingPurpose) *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest {
+func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) MarketingPurpose(marketingPurpose models.ToolsEventConvertOptimizedGoalGetV30MarketingPurpose) *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest {
 	r.marketingPurpose = &marketingPurpose
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) AssetType(assetType ToolsEventConvertOptimizedGoalGetV30AssetType) *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest {
+func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) AssetType(assetType models.ToolsEventConvertOptimizedGoalGetV30AssetType) *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest {
 	r.assetType = &assetType
 	return r
 }
@@ -71,7 +72,7 @@ func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) AssetId(asset
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) CampaignType(campaignType ToolsEventConvertOptimizedGoalGetV30CampaignType) *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest {
+func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) CampaignType(campaignType models.ToolsEventConvertOptimizedGoalGetV30CampaignType) *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest {
 	r.campaignType = &campaignType
 	return r
 }
@@ -81,7 +82,7 @@ func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) MicroAppInsta
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) Execute() (*ToolsEventConvertOptimizedGoalGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) Execute() (*models.ToolsEventConvertOptimizedGoalGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -115,12 +116,12 @@ func (a *ToolsEventConvertOptimizedGoalGetV30ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return ToolsEventConvertOptimizedGoalGetV30Response
-func (a *ToolsEventConvertOptimizedGoalGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) (*ToolsEventConvertOptimizedGoalGetV30Response, *http.Response, error) {
+func (a *ToolsEventConvertOptimizedGoalGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsEventConvertOptimizedGoalGetGetRequest) (*models.ToolsEventConvertOptimizedGoalGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEventConvertOptimizedGoalGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEventConvertOptimizedGoalGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -130,7 +131,7 @@ func (a *ToolsEventConvertOptimizedGoalGetV30ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/v3.0/tools/event_convert/optimized_goal/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.landingType == nil {

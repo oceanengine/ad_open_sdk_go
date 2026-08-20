@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportBrandDataV30ApiService ReportBrandDataV30Api service
@@ -26,14 +27,14 @@ type ApiOpenApiV30ReportBrandDataGetRequest struct {
 	ctx            context.Context
 	ApiService     *ReportBrandDataV30ApiService
 	advertiserId   *int64
-	dataReportType *ReportBrandDataV30DataReportType
+	dataReportType *models.ReportBrandDataV30DataReportType
 	startTime      *string
 	endTime        *string
-	timeDimension  *ReportBrandDataV30TimeDimension
-	pageType       *ReportBrandDataV30PageType
-	filter         *ReportBrandDataV30Filter
+	timeDimension  *models.ReportBrandDataV30TimeDimension
+	pageType       *models.ReportBrandDataV30PageType
+	filter         *models.ReportBrandDataV30Filter
 	metrics        *[]string
-	page           *ReportBrandDataV30Page
+	page           *models.ReportBrandDataV30Page
 }
 
 func (r *ApiOpenApiV30ReportBrandDataGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ReportBrandDataGetRequest {
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30ReportBrandDataGetRequest) AdvertiserId(advertiserId int64
 	return r
 }
 
-func (r *ApiOpenApiV30ReportBrandDataGetRequest) DataReportType(dataReportType ReportBrandDataV30DataReportType) *ApiOpenApiV30ReportBrandDataGetRequest {
+func (r *ApiOpenApiV30ReportBrandDataGetRequest) DataReportType(dataReportType models.ReportBrandDataV30DataReportType) *ApiOpenApiV30ReportBrandDataGetRequest {
 	r.dataReportType = &dataReportType
 	return r
 }
@@ -57,17 +58,17 @@ func (r *ApiOpenApiV30ReportBrandDataGetRequest) EndTime(endTime string) *ApiOpe
 }
 
 // 按时间维度拆分
-func (r *ApiOpenApiV30ReportBrandDataGetRequest) TimeDimension(timeDimension ReportBrandDataV30TimeDimension) *ApiOpenApiV30ReportBrandDataGetRequest {
+func (r *ApiOpenApiV30ReportBrandDataGetRequest) TimeDimension(timeDimension models.ReportBrandDataV30TimeDimension) *ApiOpenApiV30ReportBrandDataGetRequest {
 	r.timeDimension = &timeDimension
 	return r
 }
 
-func (r *ApiOpenApiV30ReportBrandDataGetRequest) PageType(pageType ReportBrandDataV30PageType) *ApiOpenApiV30ReportBrandDataGetRequest {
+func (r *ApiOpenApiV30ReportBrandDataGetRequest) PageType(pageType models.ReportBrandDataV30PageType) *ApiOpenApiV30ReportBrandDataGetRequest {
 	r.pageType = &pageType
 	return r
 }
 
-func (r *ApiOpenApiV30ReportBrandDataGetRequest) Filter(filter ReportBrandDataV30Filter) *ApiOpenApiV30ReportBrandDataGetRequest {
+func (r *ApiOpenApiV30ReportBrandDataGetRequest) Filter(filter models.ReportBrandDataV30Filter) *ApiOpenApiV30ReportBrandDataGetRequest {
 	r.filter = &filter
 	return r
 }
@@ -77,12 +78,12 @@ func (r *ApiOpenApiV30ReportBrandDataGetRequest) Metrics(metrics []string) *ApiO
 	return r
 }
 
-func (r *ApiOpenApiV30ReportBrandDataGetRequest) Page(page ReportBrandDataV30Page) *ApiOpenApiV30ReportBrandDataGetRequest {
+func (r *ApiOpenApiV30ReportBrandDataGetRequest) Page(page models.ReportBrandDataV30Page) *ApiOpenApiV30ReportBrandDataGetRequest {
 	r.page = &page
 	return r
 }
 
-func (r *ApiOpenApiV30ReportBrandDataGetRequest) Execute() (*ReportBrandDataV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ReportBrandDataGetRequest) Execute() (*models.ReportBrandDataV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -116,12 +117,12 @@ func (a *ReportBrandDataV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Re
 // Execute executes the request
 //
 //	@return ReportBrandDataV30Response
-func (a *ReportBrandDataV30ApiService) getExecute(r *ApiOpenApiV30ReportBrandDataGetRequest) (*ReportBrandDataV30Response, *http.Response, error) {
+func (a *ReportBrandDataV30ApiService) getExecute(r *ApiOpenApiV30ReportBrandDataGetRequest) (*models.ReportBrandDataV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportBrandDataV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportBrandDataV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -131,7 +132,7 @@ func (a *ReportBrandDataV30ApiService) getExecute(r *ApiOpenApiV30ReportBrandDat
 	localVarPath := localBasePath + "/open_api/v3.0/report/brand/data/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

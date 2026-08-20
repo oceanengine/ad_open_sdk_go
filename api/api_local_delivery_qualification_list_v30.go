@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalDeliveryQualificationListV30ApiService LocalDeliveryQualificationListV30Api service
@@ -28,8 +29,8 @@ type ApiOpenApiV30LocalDeliveryQualificationListGetRequest struct {
 	localAccountId    *int64
 	page              *int64
 	pageSize          *int64
-	qualificationType *LocalDeliveryQualificationListV30QualificationType
-	status            *LocalDeliveryQualificationListV30Status
+	qualificationType *models.LocalDeliveryQualificationListV30QualificationType
+	status            *models.LocalDeliveryQualificationListV30Status
 }
 
 // 广告主id
@@ -51,18 +52,18 @@ func (r *ApiOpenApiV30LocalDeliveryQualificationListGetRequest) PageSize(pageSiz
 }
 
 // 投放资质类型：不传则返回所有类型的投放资质
-func (r *ApiOpenApiV30LocalDeliveryQualificationListGetRequest) QualificationType(qualificationType LocalDeliveryQualificationListV30QualificationType) *ApiOpenApiV30LocalDeliveryQualificationListGetRequest {
+func (r *ApiOpenApiV30LocalDeliveryQualificationListGetRequest) QualificationType(qualificationType models.LocalDeliveryQualificationListV30QualificationType) *ApiOpenApiV30LocalDeliveryQualificationListGetRequest {
 	r.qualificationType = &qualificationType
 	return r
 }
 
 // 资质状态
-func (r *ApiOpenApiV30LocalDeliveryQualificationListGetRequest) Status(status LocalDeliveryQualificationListV30Status) *ApiOpenApiV30LocalDeliveryQualificationListGetRequest {
+func (r *ApiOpenApiV30LocalDeliveryQualificationListGetRequest) Status(status models.LocalDeliveryQualificationListV30Status) *ApiOpenApiV30LocalDeliveryQualificationListGetRequest {
 	r.status = &status
 	return r
 }
 
-func (r *ApiOpenApiV30LocalDeliveryQualificationListGetRequest) Execute() (*LocalDeliveryQualificationListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalDeliveryQualificationListGetRequest) Execute() (*models.LocalDeliveryQualificationListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -96,12 +97,12 @@ func (a *LocalDeliveryQualificationListV30ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return LocalDeliveryQualificationListV30Response
-func (a *LocalDeliveryQualificationListV30ApiService) getExecute(r *ApiOpenApiV30LocalDeliveryQualificationListGetRequest) (*LocalDeliveryQualificationListV30Response, *http.Response, error) {
+func (a *LocalDeliveryQualificationListV30ApiService) getExecute(r *ApiOpenApiV30LocalDeliveryQualificationListGetRequest) (*models.LocalDeliveryQualificationListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalDeliveryQualificationListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalDeliveryQualificationListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -111,7 +112,7 @@ func (a *LocalDeliveryQualificationListV30ApiService) getExecute(r *ApiOpenApiV3
 	localVarPath := localBasePath + "/open_api/v3.0/local/delivery_qualification/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

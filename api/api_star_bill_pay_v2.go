@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarBillPayV2ApiService StarBillPayV2Api service
@@ -25,15 +26,15 @@ type StarBillPayV2ApiService service
 type ApiOpenApi2StarBillPayPostRequest struct {
 	ctx                  context.Context
 	ApiService           *StarBillPayV2ApiService
-	starBillPayV2Request *StarBillPayV2Request
+	starBillPayV2Request *models.StarBillPayV2Request
 }
 
-func (r *ApiOpenApi2StarBillPayPostRequest) StarBillPayV2Request(starBillPayV2Request StarBillPayV2Request) *ApiOpenApi2StarBillPayPostRequest {
+func (r *ApiOpenApi2StarBillPayPostRequest) StarBillPayV2Request(starBillPayV2Request models.StarBillPayV2Request) *ApiOpenApi2StarBillPayPostRequest {
 	r.starBillPayV2Request = &starBillPayV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarBillPayPostRequest) Execute() (*StarBillPayV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarBillPayPostRequest) Execute() (*models.StarBillPayV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarBillPayV2ApiService) Post(ctx context.Context) *ApiOpenApi2StarBill
 // Execute executes the request
 //
 //	@return StarBillPayV2Response
-func (a *StarBillPayV2ApiService) postExecute(r *ApiOpenApi2StarBillPayPostRequest) (*StarBillPayV2Response, *http.Response, error) {
+func (a *StarBillPayV2ApiService) postExecute(r *ApiOpenApi2StarBillPayPostRequest) (*models.StarBillPayV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarBillPayV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarBillPayV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarBillPayV2ApiService) postExecute(r *ApiOpenApi2StarBillPayPostReque
 	localVarPath := localBasePath + "/open_api/2/star/bill/pay/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

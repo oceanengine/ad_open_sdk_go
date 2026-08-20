@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportLiveGetV10ApiService QianchuanReportLiveGetV10Api service
@@ -30,7 +31,7 @@ type ApiOpenApiV10QianchuanReportLiveGetGetRequest struct {
 	startTime      *string
 	endTime        *string
 	fields         *[]string
-	statsAuthority *QianchuanReportLiveGetV10StatsAuthority
+	statsAuthority *models.QianchuanReportLiveGetV10StatsAuthority
 }
 
 func (r *ApiOpenApiV10QianchuanReportLiveGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanReportLiveGetGetRequest {
@@ -58,12 +59,12 @@ func (r *ApiOpenApiV10QianchuanReportLiveGetGetRequest) Fields(fields []string) 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportLiveGetGetRequest) StatsAuthority(statsAuthority QianchuanReportLiveGetV10StatsAuthority) *ApiOpenApiV10QianchuanReportLiveGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportLiveGetGetRequest) StatsAuthority(statsAuthority models.QianchuanReportLiveGetV10StatsAuthority) *ApiOpenApiV10QianchuanReportLiveGetGetRequest {
 	r.statsAuthority = &statsAuthority
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportLiveGetGetRequest) Execute() (*QianchuanReportLiveGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportLiveGetGetRequest) Execute() (*models.QianchuanReportLiveGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *QianchuanReportLiveGetV10ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return QianchuanReportLiveGetV10Response
-func (a *QianchuanReportLiveGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportLiveGetGetRequest) (*QianchuanReportLiveGetV10Response, *http.Response, error) {
+func (a *QianchuanReportLiveGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportLiveGetGetRequest) (*models.QianchuanReportLiveGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportLiveGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportLiveGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *QianchuanReportLiveGetV10ApiService) getExecute(r *ApiOpenApiV10Qianchu
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/live/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

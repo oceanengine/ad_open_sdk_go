@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserFundGetV2ApiService AdvertiserFundGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2AdvertiserFundGetGetRequest struct {
 	ctx            context.Context
 	ApiService     *AdvertiserFundGetV2ApiService
 	advertiserId   *int64
-	grantTypeSplit *AdvertiserFundGetV2GrantTypeSplit
+	grantTypeSplit *models.AdvertiserFundGetV2GrantTypeSplit
 }
 
 func (r *ApiOpenApi2AdvertiserFundGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2AdvertiserFundGetGetRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2AdvertiserFundGetGetRequest) AdvertiserId(advertiserId int64
 	return r
 }
 
-func (r *ApiOpenApi2AdvertiserFundGetGetRequest) GrantTypeSplit(grantTypeSplit AdvertiserFundGetV2GrantTypeSplit) *ApiOpenApi2AdvertiserFundGetGetRequest {
+func (r *ApiOpenApi2AdvertiserFundGetGetRequest) GrantTypeSplit(grantTypeSplit models.AdvertiserFundGetV2GrantTypeSplit) *ApiOpenApi2AdvertiserFundGetGetRequest {
 	r.grantTypeSplit = &grantTypeSplit
 	return r
 }
 
-func (r *ApiOpenApi2AdvertiserFundGetGetRequest) Execute() (*AdvertiserFundGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdvertiserFundGetGetRequest) Execute() (*models.AdvertiserFundGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *AdvertiserFundGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Adv
 // Execute executes the request
 //
 //	@return AdvertiserFundGetV2Response
-func (a *AdvertiserFundGetV2ApiService) getExecute(r *ApiOpenApi2AdvertiserFundGetGetRequest) (*AdvertiserFundGetV2Response, *http.Response, error) {
+func (a *AdvertiserFundGetV2ApiService) getExecute(r *ApiOpenApi2AdvertiserFundGetGetRequest) (*models.AdvertiserFundGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserFundGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserFundGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *AdvertiserFundGetV2ApiService) getExecute(r *ApiOpenApi2AdvertiserFundG
 	localVarPath := localBasePath + "/open_api/2/advertiser/fund/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

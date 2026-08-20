@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // PromotionEasyUpdateV30ApiService PromotionEasyUpdateV30Api service
@@ -25,15 +26,15 @@ type PromotionEasyUpdateV30ApiService service
 type ApiOpenApiV30PromotionEasyUpdatePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *PromotionEasyUpdateV30ApiService
-	promotionEasyUpdateV30Request *PromotionEasyUpdateV30Request
+	promotionEasyUpdateV30Request *models.PromotionEasyUpdateV30Request
 }
 
-func (r *ApiOpenApiV30PromotionEasyUpdatePostRequest) PromotionEasyUpdateV30Request(promotionEasyUpdateV30Request PromotionEasyUpdateV30Request) *ApiOpenApiV30PromotionEasyUpdatePostRequest {
+func (r *ApiOpenApiV30PromotionEasyUpdatePostRequest) PromotionEasyUpdateV30Request(promotionEasyUpdateV30Request models.PromotionEasyUpdateV30Request) *ApiOpenApiV30PromotionEasyUpdatePostRequest {
 	r.promotionEasyUpdateV30Request = &promotionEasyUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30PromotionEasyUpdatePostRequest) Execute() (*PromotionEasyUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30PromotionEasyUpdatePostRequest) Execute() (*models.PromotionEasyUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *PromotionEasyUpdateV30ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return PromotionEasyUpdateV30Response
-func (a *PromotionEasyUpdateV30ApiService) postExecute(r *ApiOpenApiV30PromotionEasyUpdatePostRequest) (*PromotionEasyUpdateV30Response, *http.Response, error) {
+func (a *PromotionEasyUpdateV30ApiService) postExecute(r *ApiOpenApiV30PromotionEasyUpdatePostRequest) (*models.PromotionEasyUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *PromotionEasyUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.PromotionEasyUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *PromotionEasyUpdateV30ApiService) postExecute(r *ApiOpenApiV30Promotion
 	localVarPath := localBasePath + "/open_api/v3.0/promotion_easy/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

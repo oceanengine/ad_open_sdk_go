@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaEbpClueProductGetV30ApiService DpaEbpClueProductGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30DpaEbpClueProductGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *DpaEbpClueProductGetV30ApiService
 	accountId   *int64
-	accountType *DpaEbpClueProductGetV30AccountType
+	accountType *models.DpaEbpClueProductGetV30AccountType
 	productIds  *[]int64
 }
 
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV30DpaEbpClueProductGetGetRequest) AccountId(accountId int64)
 }
 
 // 账户类型
-func (r *ApiOpenApiV30DpaEbpClueProductGetGetRequest) AccountType(accountType DpaEbpClueProductGetV30AccountType) *ApiOpenApiV30DpaEbpClueProductGetGetRequest {
+func (r *ApiOpenApiV30DpaEbpClueProductGetGetRequest) AccountType(accountType models.DpaEbpClueProductGetV30AccountType) *ApiOpenApiV30DpaEbpClueProductGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -47,7 +48,7 @@ func (r *ApiOpenApiV30DpaEbpClueProductGetGetRequest) ProductIds(productIds []in
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpClueProductGetGetRequest) Execute() (*DpaEbpClueProductGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaEbpClueProductGetGetRequest) Execute() (*models.DpaEbpClueProductGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -81,12 +82,12 @@ func (a *DpaEbpClueProductGetV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return DpaEbpClueProductGetV30Response
-func (a *DpaEbpClueProductGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpClueProductGetGetRequest) (*DpaEbpClueProductGetV30Response, *http.Response, error) {
+func (a *DpaEbpClueProductGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpClueProductGetGetRequest) (*models.DpaEbpClueProductGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaEbpClueProductGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaEbpClueProductGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -96,7 +97,7 @@ func (a *DpaEbpClueProductGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpClu
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/ebp/clue_product/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

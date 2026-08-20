@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAipThirdSiteUpdateV2ApiService ToolsAipThirdSiteUpdateV2Api service
@@ -25,15 +26,15 @@ type ToolsAipThirdSiteUpdateV2ApiService service
 type ApiOpenApi2ToolsAipThirdSiteUpdatePostRequest struct {
 	ctx                              context.Context
 	ApiService                       *ToolsAipThirdSiteUpdateV2ApiService
-	toolsAipThirdSiteUpdateV2Request *ToolsAipThirdSiteUpdateV2Request
+	toolsAipThirdSiteUpdateV2Request *models.ToolsAipThirdSiteUpdateV2Request
 }
 
-func (r *ApiOpenApi2ToolsAipThirdSiteUpdatePostRequest) ToolsAipThirdSiteUpdateV2Request(toolsAipThirdSiteUpdateV2Request ToolsAipThirdSiteUpdateV2Request) *ApiOpenApi2ToolsAipThirdSiteUpdatePostRequest {
+func (r *ApiOpenApi2ToolsAipThirdSiteUpdatePostRequest) ToolsAipThirdSiteUpdateV2Request(toolsAipThirdSiteUpdateV2Request models.ToolsAipThirdSiteUpdateV2Request) *ApiOpenApi2ToolsAipThirdSiteUpdatePostRequest {
 	r.toolsAipThirdSiteUpdateV2Request = &toolsAipThirdSiteUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAipThirdSiteUpdatePostRequest) Execute() (*ToolsAipThirdSiteUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAipThirdSiteUpdatePostRequest) Execute() (*models.ToolsAipThirdSiteUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *ToolsAipThirdSiteUpdateV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsAipThirdSiteUpdateV2Response
-func (a *ToolsAipThirdSiteUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsAipThirdSiteUpdatePostRequest) (*ToolsAipThirdSiteUpdateV2Response, *http.Response, error) {
+func (a *ToolsAipThirdSiteUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsAipThirdSiteUpdatePostRequest) (*models.ToolsAipThirdSiteUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAipThirdSiteUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAipThirdSiteUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *ToolsAipThirdSiteUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsAip
 	localVarPath := localBasePath + "/open_api/2/tools/aip_third_site/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeUniPromotionOrderReportGetV10ApiService QianchuanAwemeUniPromotionOrderReportGetV10Api service
@@ -28,12 +29,12 @@ type ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest struct {
 	advertiserId    *int64
 	startDate       *string
 	endDate         *string
-	timeGranularity *QianchuanAwemeUniPromotionOrderReportGetV10TimeGranularity
-	filter          *QianchuanAwemeUniPromotionOrderReportGetV10Filter
-	orderType       *QianchuanAwemeUniPromotionOrderReportGetV10OrderType
-	orderField      *QianchuanAwemeUniPromotionOrderReportGetV10OrderField
+	timeGranularity *models.QianchuanAwemeUniPromotionOrderReportGetV10TimeGranularity
+	filter          *models.QianchuanAwemeUniPromotionOrderReportGetV10Filter
+	orderType       *models.QianchuanAwemeUniPromotionOrderReportGetV10OrderType
+	orderField      *models.QianchuanAwemeUniPromotionOrderReportGetV10OrderField
 	page            *int64
-	pageSize        *QianchuanAwemeUniPromotionOrderReportGetV10PageSize
+	pageSize        *models.QianchuanAwemeUniPromotionOrderReportGetV10PageSize
 }
 
 func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest {
@@ -54,25 +55,25 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) EndDat
 }
 
 // 时间粒度 ，如果不传，返回查询日期内的聚合数据
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) TimeGranularity(timeGranularity QianchuanAwemeUniPromotionOrderReportGetV10TimeGranularity) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) TimeGranularity(timeGranularity models.QianchuanAwemeUniPromotionOrderReportGetV10TimeGranularity) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest {
 	r.timeGranularity = &timeGranularity
 	return r
 }
 
 // 过滤条件
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) Filter(filter QianchuanAwemeUniPromotionOrderReportGetV10Filter) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) Filter(filter models.QianchuanAwemeUniPromotionOrderReportGetV10Filter) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest {
 	r.filter = &filter
 	return r
 }
 
 // 排序类型
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) OrderType(orderType QianchuanAwemeUniPromotionOrderReportGetV10OrderType) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) OrderType(orderType models.QianchuanAwemeUniPromotionOrderReportGetV10OrderType) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
 
 // 排序字段
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) OrderField(orderField QianchuanAwemeUniPromotionOrderReportGetV10OrderField) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) OrderField(orderField models.QianchuanAwemeUniPromotionOrderReportGetV10OrderField) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
@@ -84,12 +85,12 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) Page(p
 }
 
 // 页面大小，允许值：10, 20, 50, 100，默认值：10
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) PageSize(pageSize QianchuanAwemeUniPromotionOrderReportGetV10PageSize) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) PageSize(pageSize models.QianchuanAwemeUniPromotionOrderReportGetV10PageSize) *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest {
 	r.pageSize = &pageSize
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) Execute() (*QianchuanAwemeUniPromotionOrderReportGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) Execute() (*models.QianchuanAwemeUniPromotionOrderReportGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -123,12 +124,12 @@ func (a *QianchuanAwemeUniPromotionOrderReportGetV10ApiService) Get(ctx context.
 // Execute executes the request
 //
 //	@return QianchuanAwemeUniPromotionOrderReportGetV10Response
-func (a *QianchuanAwemeUniPromotionOrderReportGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) (*QianchuanAwemeUniPromotionOrderReportGetV10Response, *http.Response, error) {
+func (a *QianchuanAwemeUniPromotionOrderReportGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeUniPromotionOrderReportGetGetRequest) (*models.QianchuanAwemeUniPromotionOrderReportGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeUniPromotionOrderReportGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeUniPromotionOrderReportGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -138,7 +139,7 @@ func (a *QianchuanAwemeUniPromotionOrderReportGetV10ApiService) getExecute(r *Ap
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/uni_promotion/order/report/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

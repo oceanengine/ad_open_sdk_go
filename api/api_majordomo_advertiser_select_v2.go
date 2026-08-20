@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // MajordomoAdvertiserSelectV2ApiService MajordomoAdvertiserSelectV2Api service
@@ -34,7 +35,7 @@ func (r *ApiOpenApi2MajordomoAdvertiserSelectGetRequest) AdvertiserId(advertiser
 	return r
 }
 
-func (r *ApiOpenApi2MajordomoAdvertiserSelectGetRequest) Execute() (*MajordomoAdvertiserSelectV2Response, *http.Response, error) {
+func (r *ApiOpenApi2MajordomoAdvertiserSelectGetRequest) Execute() (*models.MajordomoAdvertiserSelectV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *MajordomoAdvertiserSelectV2ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return MajordomoAdvertiserSelectV2Response
-func (a *MajordomoAdvertiserSelectV2ApiService) getExecute(r *ApiOpenApi2MajordomoAdvertiserSelectGetRequest) (*MajordomoAdvertiserSelectV2Response, *http.Response, error) {
+func (a *MajordomoAdvertiserSelectV2ApiService) getExecute(r *ApiOpenApi2MajordomoAdvertiserSelectGetRequest) (*models.MajordomoAdvertiserSelectV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *MajordomoAdvertiserSelectV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.MajordomoAdvertiserSelectV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *MajordomoAdvertiserSelectV2ApiService) getExecute(r *ApiOpenApi2Majordo
 	localVarPath := localBasePath + "/open_api/2/majordomo/advertiser/select/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

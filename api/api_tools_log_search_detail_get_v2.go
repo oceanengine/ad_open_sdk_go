@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsLogSearchDetailGetV2ApiService ToolsLogSearchDetailGetV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2ToolsLogSearchDetailGetGetRequest) SecondLogId(secondLogId i
 	return r
 }
 
-func (r *ApiOpenApi2ToolsLogSearchDetailGetGetRequest) Execute() (*ToolsLogSearchDetailGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsLogSearchDetailGetGetRequest) Execute() (*models.ToolsLogSearchDetailGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsLogSearchDetailGetV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return ToolsLogSearchDetailGetV2Response
-func (a *ToolsLogSearchDetailGetV2ApiService) getExecute(r *ApiOpenApi2ToolsLogSearchDetailGetGetRequest) (*ToolsLogSearchDetailGetV2Response, *http.Response, error) {
+func (a *ToolsLogSearchDetailGetV2ApiService) getExecute(r *ApiOpenApi2ToolsLogSearchDetailGetGetRequest) (*models.ToolsLogSearchDetailGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsLogSearchDetailGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsLogSearchDetailGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsLogSearchDetailGetV2ApiService) getExecute(r *ApiOpenApi2ToolsLogS
 	localVarPath := localBasePath + "/open_api/2/tools/log_search/detail/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

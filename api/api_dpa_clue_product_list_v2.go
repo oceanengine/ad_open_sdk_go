@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaClueProductListV2ApiService DpaClueProductListV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2DpaClueProductListGetRequest struct {
 	advertiserId *int64
 	page         *int64
 	pageSize     *int64
-	filtering    *DpaClueProductListV2Filtering
+	filtering    *models.DpaClueProductListV2Filtering
 }
 
 func (r *ApiOpenApi2DpaClueProductListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2DpaClueProductListGetRequest {
@@ -48,12 +49,12 @@ func (r *ApiOpenApi2DpaClueProductListGetRequest) PageSize(pageSize int64) *ApiO
 	return r
 }
 
-func (r *ApiOpenApi2DpaClueProductListGetRequest) Filtering(filtering DpaClueProductListV2Filtering) *ApiOpenApi2DpaClueProductListGetRequest {
+func (r *ApiOpenApi2DpaClueProductListGetRequest) Filtering(filtering models.DpaClueProductListV2Filtering) *ApiOpenApi2DpaClueProductListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2DpaClueProductListGetRequest) Execute() (*DpaClueProductListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DpaClueProductListGetRequest) Execute() (*models.DpaClueProductListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -87,12 +88,12 @@ func (a *DpaClueProductListV2ApiService) Get(ctx context.Context) *ApiOpenApi2Dp
 // Execute executes the request
 //
 //	@return DpaClueProductListV2Response
-func (a *DpaClueProductListV2ApiService) getExecute(r *ApiOpenApi2DpaClueProductListGetRequest) (*DpaClueProductListV2Response, *http.Response, error) {
+func (a *DpaClueProductListV2ApiService) getExecute(r *ApiOpenApi2DpaClueProductListGetRequest) (*models.DpaClueProductListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaClueProductListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaClueProductListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -102,7 +103,7 @@ func (a *DpaClueProductListV2ApiService) getExecute(r *ApiOpenApi2DpaClueProduct
 	localVarPath := localBasePath + "/open_api/2/dpa/clue_product/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

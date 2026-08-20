@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAgreementCreateV30ApiService ToolsAgreementCreateV30Api service
@@ -25,15 +26,15 @@ type ToolsAgreementCreateV30ApiService service
 type ApiOpenApiV30ToolsAgreementCreatePostRequest struct {
 	ctx                            context.Context
 	ApiService                     *ToolsAgreementCreateV30ApiService
-	toolsAgreementCreateV30Request *ToolsAgreementCreateV30Request
+	toolsAgreementCreateV30Request *models.ToolsAgreementCreateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsAgreementCreatePostRequest) ToolsAgreementCreateV30Request(toolsAgreementCreateV30Request ToolsAgreementCreateV30Request) *ApiOpenApiV30ToolsAgreementCreatePostRequest {
+func (r *ApiOpenApiV30ToolsAgreementCreatePostRequest) ToolsAgreementCreateV30Request(toolsAgreementCreateV30Request models.ToolsAgreementCreateV30Request) *ApiOpenApiV30ToolsAgreementCreatePostRequest {
 	r.toolsAgreementCreateV30Request = &toolsAgreementCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsAgreementCreatePostRequest) Execute() (*ToolsAgreementCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsAgreementCreatePostRequest) Execute() (*models.ToolsAgreementCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsAgreementCreateV30ApiService) Post(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsAgreementCreateV30Response
-func (a *ToolsAgreementCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsAgreementCreatePostRequest) (*ToolsAgreementCreateV30Response, *http.Response, error) {
+func (a *ToolsAgreementCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsAgreementCreatePostRequest) (*models.ToolsAgreementCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAgreementCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAgreementCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsAgreementCreateV30ApiService) postExecute(r *ApiOpenApiV30ToolsAgr
 	localVarPath := localBasePath + "/open_api/v3.0/tools/agreement/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeUniPromotionAdMaterialGetV10ApiService QianchuanAwemeUniPromotionAdMaterialGetV10Api service
@@ -27,11 +28,11 @@ type ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest struct {
 	ApiService   *QianchuanAwemeUniPromotionAdMaterialGetV10ApiService
 	advertiserId *int64
 	orderId      *int64
-	filter       *QianchuanAwemeUniPromotionAdMaterialGetV10Filter
-	orderType    *QianchuanAwemeUniPromotionAdMaterialGetV10OrderType
-	orderField   *QianchuanAwemeUniPromotionAdMaterialGetV10OrderField
+	filter       *models.QianchuanAwemeUniPromotionAdMaterialGetV10Filter
+	orderType    *models.QianchuanAwemeUniPromotionAdMaterialGetV10OrderType
+	orderField   *models.QianchuanAwemeUniPromotionAdMaterialGetV10OrderField
 	page         *int32
-	pageSize     *QianchuanAwemeUniPromotionAdMaterialGetV10PageSize
+	pageSize     *models.QianchuanAwemeUniPromotionAdMaterialGetV10PageSize
 }
 
 func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest {
@@ -44,19 +45,19 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) OrderId
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) Filter(filter QianchuanAwemeUniPromotionAdMaterialGetV10Filter) *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) Filter(filter models.QianchuanAwemeUniPromotionAdMaterialGetV10Filter) *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest {
 	r.filter = &filter
 	return r
 }
 
 // 排序方式，不传默认降序
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) OrderType(orderType QianchuanAwemeUniPromotionAdMaterialGetV10OrderType) *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) OrderType(orderType models.QianchuanAwemeUniPromotionAdMaterialGetV10OrderType) *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
 
 // 排序字段
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) OrderField(orderField QianchuanAwemeUniPromotionAdMaterialGetV10OrderField) *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) OrderField(orderField models.QianchuanAwemeUniPromotionAdMaterialGetV10OrderField) *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
@@ -66,12 +67,12 @@ func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) Page(pa
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) PageSize(pageSize QianchuanAwemeUniPromotionAdMaterialGetV10PageSize) *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) PageSize(pageSize models.QianchuanAwemeUniPromotionAdMaterialGetV10PageSize) *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest {
 	r.pageSize = &pageSize
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) Execute() (*QianchuanAwemeUniPromotionAdMaterialGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) Execute() (*models.QianchuanAwemeUniPromotionAdMaterialGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -105,12 +106,12 @@ func (a *QianchuanAwemeUniPromotionAdMaterialGetV10ApiService) Get(ctx context.C
 // Execute executes the request
 //
 //	@return QianchuanAwemeUniPromotionAdMaterialGetV10Response
-func (a *QianchuanAwemeUniPromotionAdMaterialGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) (*QianchuanAwemeUniPromotionAdMaterialGetV10Response, *http.Response, error) {
+func (a *QianchuanAwemeUniPromotionAdMaterialGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeUniPromotionAdMaterialGetGetRequest) (*models.QianchuanAwemeUniPromotionAdMaterialGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeUniPromotionAdMaterialGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeUniPromotionAdMaterialGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -120,7 +121,7 @@ func (a *QianchuanAwemeUniPromotionAdMaterialGetV10ApiService) getExecute(r *Api
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/uni_promotion/ad/material/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CgTransferWalletTransferCreateV30ApiService CgTransferWalletTransferCreateV30Api service
@@ -25,15 +26,15 @@ type CgTransferWalletTransferCreateV30ApiService service
 type ApiOpenApiV30CgTransferWalletTransferCreatePostRequest struct {
 	ctx                                      context.Context
 	ApiService                               *CgTransferWalletTransferCreateV30ApiService
-	cgTransferWalletTransferCreateV30Request *CgTransferWalletTransferCreateV30Request
+	cgTransferWalletTransferCreateV30Request *models.CgTransferWalletTransferCreateV30Request
 }
 
-func (r *ApiOpenApiV30CgTransferWalletTransferCreatePostRequest) CgTransferWalletTransferCreateV30Request(cgTransferWalletTransferCreateV30Request CgTransferWalletTransferCreateV30Request) *ApiOpenApiV30CgTransferWalletTransferCreatePostRequest {
+func (r *ApiOpenApiV30CgTransferWalletTransferCreatePostRequest) CgTransferWalletTransferCreateV30Request(cgTransferWalletTransferCreateV30Request models.CgTransferWalletTransferCreateV30Request) *ApiOpenApiV30CgTransferWalletTransferCreatePostRequest {
 	r.cgTransferWalletTransferCreateV30Request = &cgTransferWalletTransferCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30CgTransferWalletTransferCreatePostRequest) Execute() (*CgTransferWalletTransferCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CgTransferWalletTransferCreatePostRequest) Execute() (*models.CgTransferWalletTransferCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *CgTransferWalletTransferCreateV30ApiService) Post(ctx context.Context) 
 // Execute executes the request
 //
 //	@return CgTransferWalletTransferCreateV30Response
-func (a *CgTransferWalletTransferCreateV30ApiService) postExecute(r *ApiOpenApiV30CgTransferWalletTransferCreatePostRequest) (*CgTransferWalletTransferCreateV30Response, *http.Response, error) {
+func (a *CgTransferWalletTransferCreateV30ApiService) postExecute(r *ApiOpenApiV30CgTransferWalletTransferCreatePostRequest) (*models.CgTransferWalletTransferCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CgTransferWalletTransferCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CgTransferWalletTransferCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *CgTransferWalletTransferCreateV30ApiService) postExecute(r *ApiOpenApiV
 	localVarPath := localBasePath + "/open_api/v3.0/cg_transfer/wallet/transfer/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

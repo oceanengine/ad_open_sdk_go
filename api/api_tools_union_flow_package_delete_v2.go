@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsUnionFlowPackageDeleteV2ApiService ToolsUnionFlowPackageDeleteV2Api service
@@ -25,15 +26,15 @@ type ToolsUnionFlowPackageDeleteV2ApiService service
 type ApiOpenApi2ToolsUnionFlowPackageDeletePostRequest struct {
 	ctx                                  context.Context
 	ApiService                           *ToolsUnionFlowPackageDeleteV2ApiService
-	toolsUnionFlowPackageDeleteV2Request *ToolsUnionFlowPackageDeleteV2Request
+	toolsUnionFlowPackageDeleteV2Request *models.ToolsUnionFlowPackageDeleteV2Request
 }
 
-func (r *ApiOpenApi2ToolsUnionFlowPackageDeletePostRequest) ToolsUnionFlowPackageDeleteV2Request(toolsUnionFlowPackageDeleteV2Request ToolsUnionFlowPackageDeleteV2Request) *ApiOpenApi2ToolsUnionFlowPackageDeletePostRequest {
+func (r *ApiOpenApi2ToolsUnionFlowPackageDeletePostRequest) ToolsUnionFlowPackageDeleteV2Request(toolsUnionFlowPackageDeleteV2Request models.ToolsUnionFlowPackageDeleteV2Request) *ApiOpenApi2ToolsUnionFlowPackageDeletePostRequest {
 	r.toolsUnionFlowPackageDeleteV2Request = &toolsUnionFlowPackageDeleteV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsUnionFlowPackageDeletePostRequest) Execute() (*ToolsUnionFlowPackageDeleteV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsUnionFlowPackageDeletePostRequest) Execute() (*models.ToolsUnionFlowPackageDeleteV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsUnionFlowPackageDeleteV2ApiService) Post(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return ToolsUnionFlowPackageDeleteV2Response
-func (a *ToolsUnionFlowPackageDeleteV2ApiService) postExecute(r *ApiOpenApi2ToolsUnionFlowPackageDeletePostRequest) (*ToolsUnionFlowPackageDeleteV2Response, *http.Response, error) {
+func (a *ToolsUnionFlowPackageDeleteV2ApiService) postExecute(r *ApiOpenApi2ToolsUnionFlowPackageDeletePostRequest) (*models.ToolsUnionFlowPackageDeleteV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsUnionFlowPackageDeleteV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsUnionFlowPackageDeleteV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsUnionFlowPackageDeleteV2ApiService) postExecute(r *ApiOpenApi2Tool
 	localVarPath := localBasePath + "/open_api/2/tools/union/flow_package/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

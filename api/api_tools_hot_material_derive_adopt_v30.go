@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsHotMaterialDeriveAdoptV30ApiService ToolsHotMaterialDeriveAdoptV30Api service
@@ -25,15 +26,15 @@ type ToolsHotMaterialDeriveAdoptV30ApiService service
 type ApiOpenApiV30ToolsHotMaterialDeriveAdoptPostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *ToolsHotMaterialDeriveAdoptV30ApiService
-	toolsHotMaterialDeriveAdoptV30Request *ToolsHotMaterialDeriveAdoptV30Request
+	toolsHotMaterialDeriveAdoptV30Request *models.ToolsHotMaterialDeriveAdoptV30Request
 }
 
-func (r *ApiOpenApiV30ToolsHotMaterialDeriveAdoptPostRequest) ToolsHotMaterialDeriveAdoptV30Request(toolsHotMaterialDeriveAdoptV30Request ToolsHotMaterialDeriveAdoptV30Request) *ApiOpenApiV30ToolsHotMaterialDeriveAdoptPostRequest {
+func (r *ApiOpenApiV30ToolsHotMaterialDeriveAdoptPostRequest) ToolsHotMaterialDeriveAdoptV30Request(toolsHotMaterialDeriveAdoptV30Request models.ToolsHotMaterialDeriveAdoptV30Request) *ApiOpenApiV30ToolsHotMaterialDeriveAdoptPostRequest {
 	r.toolsHotMaterialDeriveAdoptV30Request = &toolsHotMaterialDeriveAdoptV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsHotMaterialDeriveAdoptPostRequest) Execute() (*ToolsHotMaterialDeriveAdoptV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsHotMaterialDeriveAdoptPostRequest) Execute() (*models.ToolsHotMaterialDeriveAdoptV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsHotMaterialDeriveAdoptV30ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return ToolsHotMaterialDeriveAdoptV30Response
-func (a *ToolsHotMaterialDeriveAdoptV30ApiService) postExecute(r *ApiOpenApiV30ToolsHotMaterialDeriveAdoptPostRequest) (*ToolsHotMaterialDeriveAdoptV30Response, *http.Response, error) {
+func (a *ToolsHotMaterialDeriveAdoptV30ApiService) postExecute(r *ApiOpenApiV30ToolsHotMaterialDeriveAdoptPostRequest) (*models.ToolsHotMaterialDeriveAdoptV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsHotMaterialDeriveAdoptV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsHotMaterialDeriveAdoptV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsHotMaterialDeriveAdoptV30ApiService) postExecute(r *ApiOpenApiV30T
 	localVarPath := localBasePath + "/open_api/v3.0/tools/hot_material_derive/adopt/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

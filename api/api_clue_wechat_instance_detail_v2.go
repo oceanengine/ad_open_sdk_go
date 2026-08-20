@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueWechatInstanceDetailV2ApiService ClueWechatInstanceDetailV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2ClueWechatInstanceDetailGetRequest) InstanceId(instanceId in
 	return r
 }
 
-func (r *ApiOpenApi2ClueWechatInstanceDetailGetRequest) Execute() (*ClueWechatInstanceDetailV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueWechatInstanceDetailGetRequest) Execute() (*models.ClueWechatInstanceDetailV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ClueWechatInstanceDetailV2ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ClueWechatInstanceDetailV2Response
-func (a *ClueWechatInstanceDetailV2ApiService) getExecute(r *ApiOpenApi2ClueWechatInstanceDetailGetRequest) (*ClueWechatInstanceDetailV2Response, *http.Response, error) {
+func (a *ClueWechatInstanceDetailV2ApiService) getExecute(r *ApiOpenApi2ClueWechatInstanceDetailGetRequest) (*models.ClueWechatInstanceDetailV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueWechatInstanceDetailV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueWechatInstanceDetailV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ClueWechatInstanceDetailV2ApiService) getExecute(r *ApiOpenApi2ClueWech
 	localVarPath := localBasePath + "/open_api/2/clue/wechat_instance/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

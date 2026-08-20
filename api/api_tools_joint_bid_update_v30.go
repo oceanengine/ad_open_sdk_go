@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsJointBidUpdateV30ApiService ToolsJointBidUpdateV30Api service
@@ -25,15 +26,15 @@ type ToolsJointBidUpdateV30ApiService service
 type ApiOpenApiV30ToolsJointBidUpdatePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *ToolsJointBidUpdateV30ApiService
-	toolsJointBidUpdateV30Request *ToolsJointBidUpdateV30Request
+	toolsJointBidUpdateV30Request *models.ToolsJointBidUpdateV30Request
 }
 
-func (r *ApiOpenApiV30ToolsJointBidUpdatePostRequest) ToolsJointBidUpdateV30Request(toolsJointBidUpdateV30Request ToolsJointBidUpdateV30Request) *ApiOpenApiV30ToolsJointBidUpdatePostRequest {
+func (r *ApiOpenApiV30ToolsJointBidUpdatePostRequest) ToolsJointBidUpdateV30Request(toolsJointBidUpdateV30Request models.ToolsJointBidUpdateV30Request) *ApiOpenApiV30ToolsJointBidUpdatePostRequest {
 	r.toolsJointBidUpdateV30Request = &toolsJointBidUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsJointBidUpdatePostRequest) Execute() (*ToolsJointBidUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsJointBidUpdatePostRequest) Execute() (*models.ToolsJointBidUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsJointBidUpdateV30ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsJointBidUpdateV30Response
-func (a *ToolsJointBidUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsJointBidUpdatePostRequest) (*ToolsJointBidUpdateV30Response, *http.Response, error) {
+func (a *ToolsJointBidUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsJointBidUpdatePostRequest) (*models.ToolsJointBidUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsJointBidUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsJointBidUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsJointBidUpdateV30ApiService) postExecute(r *ApiOpenApiV30ToolsJoin
 	localVarPath := localBasePath + "/open_api/v3.0/tools/joint_bid/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

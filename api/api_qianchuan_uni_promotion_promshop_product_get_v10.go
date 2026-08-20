@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionPromshopProductGetV10ApiService QianchuanUniPromotionPromshopProductGetV10Api service
@@ -31,10 +32,10 @@ type ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest struct {
 	endDate                  *string
 	fields                   *[]string
 	adProductBlockStatusList *[]int64
-	orderType                *QianchuanUniPromotionPromshopProductGetV10OrderType
+	orderType                *models.QianchuanUniPromotionPromshopProductGetV10OrderType
 	orderField               *string
 	page                     *int64
-	pageSize                 *QianchuanUniPromotionPromshopProductGetV10PageSize
+	pageSize                 *models.QianchuanUniPromotionPromshopProductGetV10PageSize
 }
 
 // 千川广告账户ID
@@ -74,7 +75,7 @@ func (r *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest) AdProdu
 }
 
 // 排序方式，允许值： ASC 升序（默认）、DESC 降序
-func (r *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest) OrderType(orderType QianchuanUniPromotionPromshopProductGetV10OrderType) *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest) OrderType(orderType models.QianchuanUniPromotionPromshopProductGetV10OrderType) *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -92,12 +93,12 @@ func (r *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest) Page(pa
 }
 
 // 页面大小，允许值：10, 20, 50, 100，默认值：10
-func (r *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest) PageSize(pageSize QianchuanUniPromotionPromshopProductGetV10PageSize) *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest) PageSize(pageSize models.QianchuanUniPromotionPromshopProductGetV10PageSize) *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest {
 	r.pageSize = &pageSize
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest) Execute() (*QianchuanUniPromotionPromshopProductGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest) Execute() (*models.QianchuanUniPromotionPromshopProductGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -131,12 +132,12 @@ func (a *QianchuanUniPromotionPromshopProductGetV10ApiService) Get(ctx context.C
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionPromshopProductGetV10Response
-func (a *QianchuanUniPromotionPromshopProductGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest) (*QianchuanUniPromotionPromshopProductGetV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionPromshopProductGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanUniPromotionPromshopProductGetGetRequest) (*models.QianchuanUniPromotionPromshopProductGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionPromshopProductGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionPromshopProductGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -146,7 +147,7 @@ func (a *QianchuanUniPromotionPromshopProductGetV10ApiService) getExecute(r *Api
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/promshop/product/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

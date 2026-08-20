@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAigcMaterialGetV2ApiService ToolsAigcMaterialGetV2Api service
@@ -26,12 +27,12 @@ type ApiOpenApi2ToolsAigcMaterialGetGetRequest struct {
 	ctx                 context.Context
 	ApiService          *ToolsAigcMaterialGetV2ApiService
 	advertiserId        *int64
-	projectType         *ToolsAigcMaterialGetV2ProjectType
+	projectType         *models.ToolsAigcMaterialGetV2ProjectType
 	productId           *int64
 	productPlatformId   *int64
 	uniqueProductId     *int64
-	deliveryMedium      *ToolsAigcMaterialGetV2DeliveryMedium
-	multiDeliveryMedium *ToolsAigcMaterialGetV2MultiDeliveryMedium
+	deliveryMedium      *models.ToolsAigcMaterialGetV2DeliveryMedium
+	multiDeliveryMedium *models.ToolsAigcMaterialGetV2MultiDeliveryMedium
 	awemeId             *string
 	instanceId          *int64
 	page                *int64
@@ -44,7 +45,7 @@ func (r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) AdvertiserId(advertiserId in
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) ProjectType(projectType ToolsAigcMaterialGetV2ProjectType) *ApiOpenApi2ToolsAigcMaterialGetGetRequest {
+func (r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) ProjectType(projectType models.ToolsAigcMaterialGetV2ProjectType) *ApiOpenApi2ToolsAigcMaterialGetGetRequest {
 	r.projectType = &projectType
 	return r
 }
@@ -68,13 +69,13 @@ func (r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) UniqueProductId(uniqueProduc
 }
 
 // 投放载体
-func (r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) DeliveryMedium(deliveryMedium ToolsAigcMaterialGetV2DeliveryMedium) *ApiOpenApi2ToolsAigcMaterialGetGetRequest {
+func (r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) DeliveryMedium(deliveryMedium models.ToolsAigcMaterialGetV2DeliveryMedium) *ApiOpenApi2ToolsAigcMaterialGetGetRequest {
 	r.deliveryMedium = &deliveryMedium
 	return r
 }
 
 // 多投放载体
-func (r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) MultiDeliveryMedium(multiDeliveryMedium ToolsAigcMaterialGetV2MultiDeliveryMedium) *ApiOpenApi2ToolsAigcMaterialGetGetRequest {
+func (r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) MultiDeliveryMedium(multiDeliveryMedium models.ToolsAigcMaterialGetV2MultiDeliveryMedium) *ApiOpenApi2ToolsAigcMaterialGetGetRequest {
 	r.multiDeliveryMedium = &multiDeliveryMedium
 	return r
 }
@@ -103,7 +104,7 @@ func (r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) PageSize(pageSize int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) Execute() (*ToolsAigcMaterialGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) Execute() (*models.ToolsAigcMaterialGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -137,12 +138,12 @@ func (a *ToolsAigcMaterialGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return ToolsAigcMaterialGetV2Response
-func (a *ToolsAigcMaterialGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) (*ToolsAigcMaterialGetV2Response, *http.Response, error) {
+func (a *ToolsAigcMaterialGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAigcMaterialGetGetRequest) (*models.ToolsAigcMaterialGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAigcMaterialGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAigcMaterialGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -152,7 +153,7 @@ func (a *ToolsAigcMaterialGetV2ApiService) getExecute(r *ApiOpenApi2ToolsAigcMat
 	localVarPath := localBasePath + "/open_api/2/tools/aigc_material/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

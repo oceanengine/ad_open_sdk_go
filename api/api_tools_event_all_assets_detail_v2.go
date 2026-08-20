@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEventAllAssetsDetailV2ApiService ToolsEventAllAssetsDetailV2Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApi2ToolsEventAllAssetsDetailGetRequest) AssetIds(assetIds []int
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEventAllAssetsDetailGetRequest) Execute() (*ToolsEventAllAssetsDetailV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsEventAllAssetsDetailGetRequest) Execute() (*models.ToolsEventAllAssetsDetailV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ToolsEventAllAssetsDetailV2ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsEventAllAssetsDetailV2Response
-func (a *ToolsEventAllAssetsDetailV2ApiService) getExecute(r *ApiOpenApi2ToolsEventAllAssetsDetailGetRequest) (*ToolsEventAllAssetsDetailV2Response, *http.Response, error) {
+func (a *ToolsEventAllAssetsDetailV2ApiService) getExecute(r *ApiOpenApi2ToolsEventAllAssetsDetailGetRequest) (*models.ToolsEventAllAssetsDetailV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEventAllAssetsDetailV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEventAllAssetsDetailV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ToolsEventAllAssetsDetailV2ApiService) getExecute(r *ApiOpenApi2ToolsEv
 	localVarPath := localBasePath + "/open_api/2/tools/event/all_assets/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanTodayLiveRoomGetV10ApiService QianchuanTodayLiveRoomGetV10Api service
@@ -29,8 +30,8 @@ type ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest struct {
 	awemeId      *int64
 	dateTime     *string
 	fields       *[]string
-	roomStatus   *QianchuanTodayLiveRoomGetV10RoomStatus
-	adStatus     *QianchuanTodayLiveRoomGetV10AdStatus
+	roomStatus   *models.QianchuanTodayLiveRoomGetV10RoomStatus
+	adStatus     *models.QianchuanTodayLiveRoomGetV10AdStatus
 	page         *int32
 	pageSize     *int32
 }
@@ -56,12 +57,12 @@ func (r *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest) Fields(fields []strin
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest) RoomStatus(roomStatus QianchuanTodayLiveRoomGetV10RoomStatus) *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest {
+func (r *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest) RoomStatus(roomStatus models.QianchuanTodayLiveRoomGetV10RoomStatus) *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest {
 	r.roomStatus = &roomStatus
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest) AdStatus(adStatus QianchuanTodayLiveRoomGetV10AdStatus) *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest {
+func (r *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest) AdStatus(adStatus models.QianchuanTodayLiveRoomGetV10AdStatus) *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest {
 	r.adStatus = &adStatus
 	return r
 }
@@ -76,7 +77,7 @@ func (r *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest) PageSize(pageSize int
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest) Execute() (*QianchuanTodayLiveRoomGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest) Execute() (*models.QianchuanTodayLiveRoomGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *QianchuanTodayLiveRoomGetV10ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return QianchuanTodayLiveRoomGetV10Response
-func (a *QianchuanTodayLiveRoomGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest) (*QianchuanTodayLiveRoomGetV10Response, *http.Response, error) {
+func (a *QianchuanTodayLiveRoomGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanTodayLiveRoomGetGetRequest) (*models.QianchuanTodayLiveRoomGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanTodayLiveRoomGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanTodayLiveRoomGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *QianchuanTodayLiveRoomGetV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/today_live/room/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanShopGetV10ApiService QianchuanShopGetV10Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApiV10QianchuanShopGetGetRequest) ShopIds(shopIds []int64) *ApiO
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanShopGetGetRequest) Execute() (*QianchuanShopGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanShopGetGetRequest) Execute() (*models.QianchuanShopGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanShopGetV10ApiService) Get(ctx context.Context) *ApiOpenApiV10Q
 // Execute executes the request
 //
 //	@return QianchuanShopGetV10Response
-func (a *QianchuanShopGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanShopGetGetRequest) (*QianchuanShopGetV10Response, *http.Response, error) {
+func (a *QianchuanShopGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanShopGetGetRequest) (*models.QianchuanShopGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanShopGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanShopGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanShopGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanShop
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/shop/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.shopIds == nil {

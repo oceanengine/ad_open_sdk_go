@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CustomerCenterAccountOfflineListV30ApiService CustomerCenterAccountOfflineListV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30CustomerCenterAccountOfflineListGetRequest struct {
 	ctx        context.Context
 	ApiService *CustomerCenterAccountOfflineListV30ApiService
 	accountId  *int64
-	filter     *CustomerCenterAccountOfflineListV30Filter
+	filter     *models.CustomerCenterAccountOfflineListV30Filter
 }
 
 // 工作台账户ID，账户类型为&#x60;CUSTOMER_ADMIN&#x60;或&#x60;CUSTOMER_OPERATOR&#x60;对应账户ID
@@ -36,12 +37,12 @@ func (r *ApiOpenApiV30CustomerCenterAccountOfflineListGetRequest) AccountId(acco
 }
 
 // 过滤条件
-func (r *ApiOpenApiV30CustomerCenterAccountOfflineListGetRequest) Filter(filter CustomerCenterAccountOfflineListV30Filter) *ApiOpenApiV30CustomerCenterAccountOfflineListGetRequest {
+func (r *ApiOpenApiV30CustomerCenterAccountOfflineListGetRequest) Filter(filter models.CustomerCenterAccountOfflineListV30Filter) *ApiOpenApiV30CustomerCenterAccountOfflineListGetRequest {
 	r.filter = &filter
 	return r
 }
 
-func (r *ApiOpenApiV30CustomerCenterAccountOfflineListGetRequest) Execute() (*CustomerCenterAccountOfflineListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30CustomerCenterAccountOfflineListGetRequest) Execute() (*models.CustomerCenterAccountOfflineListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *CustomerCenterAccountOfflineListV30ApiService) Get(ctx context.Context)
 // Execute executes the request
 //
 //	@return CustomerCenterAccountOfflineListV30Response
-func (a *CustomerCenterAccountOfflineListV30ApiService) getExecute(r *ApiOpenApiV30CustomerCenterAccountOfflineListGetRequest) (*CustomerCenterAccountOfflineListV30Response, *http.Response, error) {
+func (a *CustomerCenterAccountOfflineListV30ApiService) getExecute(r *ApiOpenApiV30CustomerCenterAccountOfflineListGetRequest) (*models.CustomerCenterAccountOfflineListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CustomerCenterAccountOfflineListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CustomerCenterAccountOfflineListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *CustomerCenterAccountOfflineListV30ApiService) getExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/v3.0/customer_center/account/offline_list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

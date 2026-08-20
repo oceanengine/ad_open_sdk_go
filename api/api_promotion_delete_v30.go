@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // PromotionDeleteV30ApiService PromotionDeleteV30Api service
@@ -25,15 +26,15 @@ type PromotionDeleteV30ApiService service
 type ApiOpenApiV30PromotionDeletePostRequest struct {
 	ctx                       context.Context
 	ApiService                *PromotionDeleteV30ApiService
-	promotionDeleteV30Request *PromotionDeleteV30Request
+	promotionDeleteV30Request *models.PromotionDeleteV30Request
 }
 
-func (r *ApiOpenApiV30PromotionDeletePostRequest) PromotionDeleteV30Request(promotionDeleteV30Request PromotionDeleteV30Request) *ApiOpenApiV30PromotionDeletePostRequest {
+func (r *ApiOpenApiV30PromotionDeletePostRequest) PromotionDeleteV30Request(promotionDeleteV30Request models.PromotionDeleteV30Request) *ApiOpenApiV30PromotionDeletePostRequest {
 	r.promotionDeleteV30Request = &promotionDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30PromotionDeletePostRequest) Execute() (*PromotionDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30PromotionDeletePostRequest) Execute() (*models.PromotionDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *PromotionDeleteV30ApiService) Post(ctx context.Context) *ApiOpenApiV30P
 // Execute executes the request
 //
 //	@return PromotionDeleteV30Response
-func (a *PromotionDeleteV30ApiService) postExecute(r *ApiOpenApiV30PromotionDeletePostRequest) (*PromotionDeleteV30Response, *http.Response, error) {
+func (a *PromotionDeleteV30ApiService) postExecute(r *ApiOpenApiV30PromotionDeletePostRequest) (*models.PromotionDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *PromotionDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.PromotionDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *PromotionDeleteV30ApiService) postExecute(r *ApiOpenApiV30PromotionDele
 	localVarPath := localBasePath + "/open_api/v3.0/promotion/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

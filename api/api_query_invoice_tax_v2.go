@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QueryInvoiceTaxV2ApiService QueryInvoiceTaxV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2QueryInvoiceTaxGetRequest struct {
 	ctx        context.Context
 	ApiService *QueryInvoiceTaxV2ApiService
 	agentId    *int64
-	filtering  *QueryInvoiceTaxV2Filtering
+	filtering  *models.QueryInvoiceTaxV2Filtering
 }
 
 func (r *ApiOpenApi2QueryInvoiceTaxGetRequest) AgentId(agentId int64) *ApiOpenApi2QueryInvoiceTaxGetRequest {
@@ -35,12 +36,12 @@ func (r *ApiOpenApi2QueryInvoiceTaxGetRequest) AgentId(agentId int64) *ApiOpenAp
 }
 
 // 过滤器
-func (r *ApiOpenApi2QueryInvoiceTaxGetRequest) Filtering(filtering QueryInvoiceTaxV2Filtering) *ApiOpenApi2QueryInvoiceTaxGetRequest {
+func (r *ApiOpenApi2QueryInvoiceTaxGetRequest) Filtering(filtering models.QueryInvoiceTaxV2Filtering) *ApiOpenApi2QueryInvoiceTaxGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2QueryInvoiceTaxGetRequest) Execute() (*QueryInvoiceTaxV2Response, *http.Response, error) {
+func (r *ApiOpenApi2QueryInvoiceTaxGetRequest) Execute() (*models.QueryInvoiceTaxV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *QueryInvoiceTaxV2ApiService) Get(ctx context.Context) *ApiOpenApi2Query
 // Execute executes the request
 //
 //	@return QueryInvoiceTaxV2Response
-func (a *QueryInvoiceTaxV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceTaxGetRequest) (*QueryInvoiceTaxV2Response, *http.Response, error) {
+func (a *QueryInvoiceTaxV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceTaxGetRequest) (*models.QueryInvoiceTaxV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QueryInvoiceTaxV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QueryInvoiceTaxV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *QueryInvoiceTaxV2ApiService) getExecute(r *ApiOpenApi2QueryInvoiceTaxGe
 	localVarPath := localBasePath + "/open_api/2/query/invoice_tax/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserQualificationCreateV2V2ApiService AdvertiserQualificationCreateV2V2Api service
@@ -25,15 +26,15 @@ type AdvertiserQualificationCreateV2V2ApiService service
 type ApiOpenApi2AdvertiserQualificationCreateV2PostRequest struct {
 	ctx                                      context.Context
 	ApiService                               *AdvertiserQualificationCreateV2V2ApiService
-	advertiserQualificationCreateV2V2Request *AdvertiserQualificationCreateV2V2Request
+	advertiserQualificationCreateV2V2Request *models.AdvertiserQualificationCreateV2V2Request
 }
 
-func (r *ApiOpenApi2AdvertiserQualificationCreateV2PostRequest) AdvertiserQualificationCreateV2V2Request(advertiserQualificationCreateV2V2Request AdvertiserQualificationCreateV2V2Request) *ApiOpenApi2AdvertiserQualificationCreateV2PostRequest {
+func (r *ApiOpenApi2AdvertiserQualificationCreateV2PostRequest) AdvertiserQualificationCreateV2V2Request(advertiserQualificationCreateV2V2Request models.AdvertiserQualificationCreateV2V2Request) *ApiOpenApi2AdvertiserQualificationCreateV2PostRequest {
 	r.advertiserQualificationCreateV2V2Request = &advertiserQualificationCreateV2V2Request
 	return r
 }
 
-func (r *ApiOpenApi2AdvertiserQualificationCreateV2PostRequest) Execute() (*AdvertiserQualificationCreateV2V2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdvertiserQualificationCreateV2PostRequest) Execute() (*models.AdvertiserQualificationCreateV2V2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AdvertiserQualificationCreateV2V2ApiService) Post(ctx context.Context) 
 // Execute executes the request
 //
 //	@return AdvertiserQualificationCreateV2V2Response
-func (a *AdvertiserQualificationCreateV2V2ApiService) postExecute(r *ApiOpenApi2AdvertiserQualificationCreateV2PostRequest) (*AdvertiserQualificationCreateV2V2Response, *http.Response, error) {
+func (a *AdvertiserQualificationCreateV2V2ApiService) postExecute(r *ApiOpenApi2AdvertiserQualificationCreateV2PostRequest) (*models.AdvertiserQualificationCreateV2V2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserQualificationCreateV2V2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserQualificationCreateV2V2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AdvertiserQualificationCreateV2V2ApiService) postExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/advertiser/qualification/create_v2/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

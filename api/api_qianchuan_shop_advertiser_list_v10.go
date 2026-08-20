@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanShopAdvertiserListV10ApiService QianchuanShopAdvertiserListV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanShopAdvertiserListGetRequest struct {
 	ctx        context.Context
 	ApiService *QianchuanShopAdvertiserListV10ApiService
 	shopId     *int64
-	permission *[]*QianchuanShopAdvertiserListV10Permission
+	permission *[]*models.QianchuanShopAdvertiserListV10Permission
 	page       *int64
 	pageSize   *int64
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApiV10QianchuanShopAdvertiserListGetRequest) ShopId(shopId int64
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanShopAdvertiserListGetRequest) Permission(permission []*QianchuanShopAdvertiserListV10Permission) *ApiOpenApiV10QianchuanShopAdvertiserListGetRequest {
+func (r *ApiOpenApiV10QianchuanShopAdvertiserListGetRequest) Permission(permission []*models.QianchuanShopAdvertiserListV10Permission) *ApiOpenApiV10QianchuanShopAdvertiserListGetRequest {
 	r.permission = &permission
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV10QianchuanShopAdvertiserListGetRequest) PageSize(pageSize i
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanShopAdvertiserListGetRequest) Execute() (*QianchuanShopAdvertiserListV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanShopAdvertiserListGetRequest) Execute() (*models.QianchuanShopAdvertiserListV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *QianchuanShopAdvertiserListV10ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return QianchuanShopAdvertiserListV10Response
-func (a *QianchuanShopAdvertiserListV10ApiService) getExecute(r *ApiOpenApiV10QianchuanShopAdvertiserListGetRequest) (*QianchuanShopAdvertiserListV10Response, *http.Response, error) {
+func (a *QianchuanShopAdvertiserListV10ApiService) getExecute(r *ApiOpenApiV10QianchuanShopAdvertiserListGetRequest) (*models.QianchuanShopAdvertiserListV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanShopAdvertiserListV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanShopAdvertiserListV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *QianchuanShopAdvertiserListV10ApiService) getExecute(r *ApiOpenApiV10Qi
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/shop/advertiser/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.shopId == nil {

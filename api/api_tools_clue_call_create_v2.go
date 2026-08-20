@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueCallCreateV2ApiService ToolsClueCallCreateV2Api service
@@ -25,15 +26,15 @@ type ToolsClueCallCreateV2ApiService service
 type ApiOpenApi2ToolsClueCallCreatePostRequest struct {
 	ctx                          context.Context
 	ApiService                   *ToolsClueCallCreateV2ApiService
-	toolsClueCallCreateV2Request *ToolsClueCallCreateV2Request
+	toolsClueCallCreateV2Request *models.ToolsClueCallCreateV2Request
 }
 
-func (r *ApiOpenApi2ToolsClueCallCreatePostRequest) ToolsClueCallCreateV2Request(toolsClueCallCreateV2Request ToolsClueCallCreateV2Request) *ApiOpenApi2ToolsClueCallCreatePostRequest {
+func (r *ApiOpenApi2ToolsClueCallCreatePostRequest) ToolsClueCallCreateV2Request(toolsClueCallCreateV2Request models.ToolsClueCallCreateV2Request) *ApiOpenApi2ToolsClueCallCreatePostRequest {
 	r.toolsClueCallCreateV2Request = &toolsClueCallCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueCallCreatePostRequest) Execute() (*ToolsClueCallCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueCallCreatePostRequest) Execute() (*models.ToolsClueCallCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsClueCallCreateV2ApiService) Post(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return ToolsClueCallCreateV2Response
-func (a *ToolsClueCallCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsClueCallCreatePostRequest) (*ToolsClueCallCreateV2Response, *http.Response, error) {
+func (a *ToolsClueCallCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsClueCallCreatePostRequest) (*models.ToolsClueCallCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueCallCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueCallCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsClueCallCreateV2ApiService) postExecute(r *ApiOpenApi2ToolsClueCal
 	localVarPath := localBasePath + "/open_api/2/tools/clue/call/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

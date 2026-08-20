@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalConsultAwameListGetV30ApiService LocalConsultAwameListGetV30Api service
@@ -26,10 +27,10 @@ type ApiOpenApiV30LocalConsultAwameListGetGetRequest struct {
 	ctx            context.Context
 	ApiService     *LocalConsultAwameListGetV30ApiService
 	localAccountId *int64
-	deliveryGoal   *LocalConsultAwameListGetV30DeliveryGoal
+	deliveryGoal   *models.LocalConsultAwameListGetV30DeliveryGoal
 	poiIds         *[]int64
 	productIds     *[]int64
-	filtering      *LocalConsultAwameListGetV30Filtering
+	filtering      *models.LocalConsultAwameListGetV30Filtering
 	page           *int64
 	pageSize       *int64
 }
@@ -40,7 +41,7 @@ func (r *ApiOpenApiV30LocalConsultAwameListGetGetRequest) LocalAccountId(localAc
 	return r
 }
 
-func (r *ApiOpenApiV30LocalConsultAwameListGetGetRequest) DeliveryGoal(deliveryGoal LocalConsultAwameListGetV30DeliveryGoal) *ApiOpenApiV30LocalConsultAwameListGetGetRequest {
+func (r *ApiOpenApiV30LocalConsultAwameListGetGetRequest) DeliveryGoal(deliveryGoal models.LocalConsultAwameListGetV30DeliveryGoal) *ApiOpenApiV30LocalConsultAwameListGetGetRequest {
 	r.deliveryGoal = &deliveryGoal
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApiV30LocalConsultAwameListGetGetRequest) ProductIds(productIds 
 	return r
 }
 
-func (r *ApiOpenApiV30LocalConsultAwameListGetGetRequest) Filtering(filtering LocalConsultAwameListGetV30Filtering) *ApiOpenApiV30LocalConsultAwameListGetGetRequest {
+func (r *ApiOpenApiV30LocalConsultAwameListGetGetRequest) Filtering(filtering models.LocalConsultAwameListGetV30Filtering) *ApiOpenApiV30LocalConsultAwameListGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -74,7 +75,7 @@ func (r *ApiOpenApiV30LocalConsultAwameListGetGetRequest) PageSize(pageSize int6
 	return r
 }
 
-func (r *ApiOpenApiV30LocalConsultAwameListGetGetRequest) Execute() (*LocalConsultAwameListGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalConsultAwameListGetGetRequest) Execute() (*models.LocalConsultAwameListGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -108,12 +109,12 @@ func (a *LocalConsultAwameListGetV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return LocalConsultAwameListGetV30Response
-func (a *LocalConsultAwameListGetV30ApiService) getExecute(r *ApiOpenApiV30LocalConsultAwameListGetGetRequest) (*LocalConsultAwameListGetV30Response, *http.Response, error) {
+func (a *LocalConsultAwameListGetV30ApiService) getExecute(r *ApiOpenApiV30LocalConsultAwameListGetGetRequest) (*models.LocalConsultAwameListGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalConsultAwameListGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalConsultAwameListGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -123,7 +124,7 @@ func (a *LocalConsultAwameListGetV30ApiService) getExecute(r *ApiOpenApiV30Local
 	localVarPath := localBasePath + "/open_api/v3.0/local/consult_awame_list/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

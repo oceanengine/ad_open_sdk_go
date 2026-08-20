@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarOrderPublishResourceV2ApiService StarOrderPublishResourceV2Api service
@@ -25,15 +26,15 @@ type StarOrderPublishResourceV2ApiService service
 type ApiOpenApi2StarOrderPublishResourcePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *StarOrderPublishResourceV2ApiService
-	starOrderPublishResourceV2Request *StarOrderPublishResourceV2Request
+	starOrderPublishResourceV2Request *models.StarOrderPublishResourceV2Request
 }
 
-func (r *ApiOpenApi2StarOrderPublishResourcePostRequest) StarOrderPublishResourceV2Request(starOrderPublishResourceV2Request StarOrderPublishResourceV2Request) *ApiOpenApi2StarOrderPublishResourcePostRequest {
+func (r *ApiOpenApi2StarOrderPublishResourcePostRequest) StarOrderPublishResourceV2Request(starOrderPublishResourceV2Request models.StarOrderPublishResourceV2Request) *ApiOpenApi2StarOrderPublishResourcePostRequest {
 	r.starOrderPublishResourceV2Request = &starOrderPublishResourceV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarOrderPublishResourcePostRequest) Execute() (*StarOrderPublishResourceV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarOrderPublishResourcePostRequest) Execute() (*models.StarOrderPublishResourceV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarOrderPublishResourceV2ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return StarOrderPublishResourceV2Response
-func (a *StarOrderPublishResourceV2ApiService) postExecute(r *ApiOpenApi2StarOrderPublishResourcePostRequest) (*StarOrderPublishResourceV2Response, *http.Response, error) {
+func (a *StarOrderPublishResourceV2ApiService) postExecute(r *ApiOpenApi2StarOrderPublishResourcePostRequest) (*models.StarOrderPublishResourceV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarOrderPublishResourceV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarOrderPublishResourceV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarOrderPublishResourceV2ApiService) postExecute(r *ApiOpenApi2StarOrd
 	localVarPath := localBasePath + "/open_api/2/star/order/publish_resource/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

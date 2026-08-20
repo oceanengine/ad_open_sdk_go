@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueCouponUpdateV2ApiService ClueCouponUpdateV2Api service
@@ -25,15 +26,15 @@ type ClueCouponUpdateV2ApiService service
 type ApiOpenApi2ClueCouponUpdatePostRequest struct {
 	ctx                       context.Context
 	ApiService                *ClueCouponUpdateV2ApiService
-	clueCouponUpdateV2Request *ClueCouponUpdateV2Request
+	clueCouponUpdateV2Request *models.ClueCouponUpdateV2Request
 }
 
-func (r *ApiOpenApi2ClueCouponUpdatePostRequest) ClueCouponUpdateV2Request(clueCouponUpdateV2Request ClueCouponUpdateV2Request) *ApiOpenApi2ClueCouponUpdatePostRequest {
+func (r *ApiOpenApi2ClueCouponUpdatePostRequest) ClueCouponUpdateV2Request(clueCouponUpdateV2Request models.ClueCouponUpdateV2Request) *ApiOpenApi2ClueCouponUpdatePostRequest {
 	r.clueCouponUpdateV2Request = &clueCouponUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ClueCouponUpdatePostRequest) Execute() (*ClueCouponUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueCouponUpdatePostRequest) Execute() (*models.ClueCouponUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *ClueCouponUpdateV2ApiService) Post(ctx context.Context) *ApiOpenApi2Clu
 // Execute executes the request
 //
 //	@return ClueCouponUpdateV2Response
-func (a *ClueCouponUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueCouponUpdatePostRequest) (*ClueCouponUpdateV2Response, *http.Response, error) {
+func (a *ClueCouponUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueCouponUpdatePostRequest) (*models.ClueCouponUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueCouponUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueCouponUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *ClueCouponUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueCouponUpdat
 	localVarPath := localBasePath + "/open_api/2/clue/coupon/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

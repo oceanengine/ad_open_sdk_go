@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentCompanyBrandListQueryV2ApiService AgentCompanyBrandListQueryV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2AgentCompanyBrandListQueryGetRequest struct {
 	agentId    *int64
 	startDate  *string
 	endDate    *string
-	filtering  *AgentCompanyBrandListQueryV2Filtering
+	filtering  *models.AgentCompanyBrandListQueryV2Filtering
 	cursor     *int64
 	cursorSize *int64
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApi2AgentCompanyBrandListQueryGetRequest) EndDate(endDate string
 }
 
 // 筛选条件。
-func (r *ApiOpenApi2AgentCompanyBrandListQueryGetRequest) Filtering(filtering AgentCompanyBrandListQueryV2Filtering) *ApiOpenApi2AgentCompanyBrandListQueryGetRequest {
+func (r *ApiOpenApi2AgentCompanyBrandListQueryGetRequest) Filtering(filtering models.AgentCompanyBrandListQueryV2Filtering) *ApiOpenApi2AgentCompanyBrandListQueryGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -68,7 +69,7 @@ func (r *ApiOpenApi2AgentCompanyBrandListQueryGetRequest) CursorSize(cursorSize 
 	return r
 }
 
-func (r *ApiOpenApi2AgentCompanyBrandListQueryGetRequest) Execute() (*AgentCompanyBrandListQueryV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentCompanyBrandListQueryGetRequest) Execute() (*models.AgentCompanyBrandListQueryV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -102,12 +103,12 @@ func (a *AgentCompanyBrandListQueryV2ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return AgentCompanyBrandListQueryV2Response
-func (a *AgentCompanyBrandListQueryV2ApiService) getExecute(r *ApiOpenApi2AgentCompanyBrandListQueryGetRequest) (*AgentCompanyBrandListQueryV2Response, *http.Response, error) {
+func (a *AgentCompanyBrandListQueryV2ApiService) getExecute(r *ApiOpenApi2AgentCompanyBrandListQueryGetRequest) (*models.AgentCompanyBrandListQueryV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentCompanyBrandListQueryV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentCompanyBrandListQueryV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -117,7 +118,7 @@ func (a *AgentCompanyBrandListQueryV2ApiService) getExecute(r *ApiOpenApi2AgentC
 	localVarPath := localBasePath + "/open_api/2/agent/company/brand/list/query/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.agentId == nil {

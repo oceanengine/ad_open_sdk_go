@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalAudiencePackageUpdateV30ApiService LocalAudiencePackageUpdateV30Api service
@@ -25,15 +26,15 @@ type LocalAudiencePackageUpdateV30ApiService service
 type ApiOpenApiV30LocalAudiencePackageUpdatePostRequest struct {
 	ctx                                  context.Context
 	ApiService                           *LocalAudiencePackageUpdateV30ApiService
-	localAudiencePackageUpdateV30Request *LocalAudiencePackageUpdateV30Request
+	localAudiencePackageUpdateV30Request *models.LocalAudiencePackageUpdateV30Request
 }
 
-func (r *ApiOpenApiV30LocalAudiencePackageUpdatePostRequest) LocalAudiencePackageUpdateV30Request(localAudiencePackageUpdateV30Request LocalAudiencePackageUpdateV30Request) *ApiOpenApiV30LocalAudiencePackageUpdatePostRequest {
+func (r *ApiOpenApiV30LocalAudiencePackageUpdatePostRequest) LocalAudiencePackageUpdateV30Request(localAudiencePackageUpdateV30Request models.LocalAudiencePackageUpdateV30Request) *ApiOpenApiV30LocalAudiencePackageUpdatePostRequest {
 	r.localAudiencePackageUpdateV30Request = &localAudiencePackageUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30LocalAudiencePackageUpdatePostRequest) Execute() (*LocalAudiencePackageUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalAudiencePackageUpdatePostRequest) Execute() (*models.LocalAudiencePackageUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *LocalAudiencePackageUpdateV30ApiService) Post(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return LocalAudiencePackageUpdateV30Response
-func (a *LocalAudiencePackageUpdateV30ApiService) postExecute(r *ApiOpenApiV30LocalAudiencePackageUpdatePostRequest) (*LocalAudiencePackageUpdateV30Response, *http.Response, error) {
+func (a *LocalAudiencePackageUpdateV30ApiService) postExecute(r *ApiOpenApiV30LocalAudiencePackageUpdatePostRequest) (*models.LocalAudiencePackageUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalAudiencePackageUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalAudiencePackageUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *LocalAudiencePackageUpdateV30ApiService) postExecute(r *ApiOpenApiV30Lo
 	localVarPath := localBasePath + "/open_api/v3.0/local/audience_package/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

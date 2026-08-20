@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdvertiserDeliveryPkgSubmitV30ApiService AdvertiserDeliveryPkgSubmitV30Api service
@@ -25,15 +26,15 @@ type AdvertiserDeliveryPkgSubmitV30ApiService service
 type ApiOpenApiV30AdvertiserDeliveryPkgSubmitPostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *AdvertiserDeliveryPkgSubmitV30ApiService
-	advertiserDeliveryPkgSubmitV30Request *AdvertiserDeliveryPkgSubmitV30Request
+	advertiserDeliveryPkgSubmitV30Request *models.AdvertiserDeliveryPkgSubmitV30Request
 }
 
-func (r *ApiOpenApiV30AdvertiserDeliveryPkgSubmitPostRequest) AdvertiserDeliveryPkgSubmitV30Request(advertiserDeliveryPkgSubmitV30Request AdvertiserDeliveryPkgSubmitV30Request) *ApiOpenApiV30AdvertiserDeliveryPkgSubmitPostRequest {
+func (r *ApiOpenApiV30AdvertiserDeliveryPkgSubmitPostRequest) AdvertiserDeliveryPkgSubmitV30Request(advertiserDeliveryPkgSubmitV30Request models.AdvertiserDeliveryPkgSubmitV30Request) *ApiOpenApiV30AdvertiserDeliveryPkgSubmitPostRequest {
 	r.advertiserDeliveryPkgSubmitV30Request = &advertiserDeliveryPkgSubmitV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30AdvertiserDeliveryPkgSubmitPostRequest) Execute() (*AdvertiserDeliveryPkgSubmitV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AdvertiserDeliveryPkgSubmitPostRequest) Execute() (*models.AdvertiserDeliveryPkgSubmitV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -68,12 +69,12 @@ func (a *AdvertiserDeliveryPkgSubmitV30ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return AdvertiserDeliveryPkgSubmitV30Response
-func (a *AdvertiserDeliveryPkgSubmitV30ApiService) postExecute(r *ApiOpenApiV30AdvertiserDeliveryPkgSubmitPostRequest) (*AdvertiserDeliveryPkgSubmitV30Response, *http.Response, error) {
+func (a *AdvertiserDeliveryPkgSubmitV30ApiService) postExecute(r *ApiOpenApiV30AdvertiserDeliveryPkgSubmitPostRequest) (*models.AdvertiserDeliveryPkgSubmitV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdvertiserDeliveryPkgSubmitV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdvertiserDeliveryPkgSubmitV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -83,7 +84,7 @@ func (a *AdvertiserDeliveryPkgSubmitV30ApiService) postExecute(r *ApiOpenApiV30A
 	localVarPath := localBasePath + "/open_api/v3.0/advertiser/delivery_pkg/submit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

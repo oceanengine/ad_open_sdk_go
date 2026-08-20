@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandOrderCreateV30ApiService BrandOrderCreateV30Api service
@@ -25,15 +26,15 @@ type BrandOrderCreateV30ApiService service
 type ApiOpenApiV30BrandOrderCreatePostRequest struct {
 	ctx                        context.Context
 	ApiService                 *BrandOrderCreateV30ApiService
-	brandOrderCreateV30Request *BrandOrderCreateV30Request
+	brandOrderCreateV30Request *models.BrandOrderCreateV30Request
 }
 
-func (r *ApiOpenApiV30BrandOrderCreatePostRequest) BrandOrderCreateV30Request(brandOrderCreateV30Request BrandOrderCreateV30Request) *ApiOpenApiV30BrandOrderCreatePostRequest {
+func (r *ApiOpenApiV30BrandOrderCreatePostRequest) BrandOrderCreateV30Request(brandOrderCreateV30Request models.BrandOrderCreateV30Request) *ApiOpenApiV30BrandOrderCreatePostRequest {
 	r.brandOrderCreateV30Request = &brandOrderCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30BrandOrderCreatePostRequest) Execute() (*BrandOrderCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandOrderCreatePostRequest) Execute() (*models.BrandOrderCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *BrandOrderCreateV30ApiService) Post(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return BrandOrderCreateV30Response
-func (a *BrandOrderCreateV30ApiService) postExecute(r *ApiOpenApiV30BrandOrderCreatePostRequest) (*BrandOrderCreateV30Response, *http.Response, error) {
+func (a *BrandOrderCreateV30ApiService) postExecute(r *ApiOpenApiV30BrandOrderCreatePostRequest) (*models.BrandOrderCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandOrderCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandOrderCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *BrandOrderCreateV30ApiService) postExecute(r *ApiOpenApiV30BrandOrderCr
 	localVarPath := localBasePath + "/open_api/v3.0/brand/order/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

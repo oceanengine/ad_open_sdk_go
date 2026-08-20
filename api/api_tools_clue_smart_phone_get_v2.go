@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueSmartPhoneGetV2ApiService ToolsClueSmartPhoneGetV2Api service
@@ -45,7 +46,7 @@ func (r *ApiOpenApi2ToolsClueSmartPhoneGetGetRequest) PageSize(pageSize int32) *
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueSmartPhoneGetGetRequest) Execute() (*ToolsClueSmartPhoneGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueSmartPhoneGetGetRequest) Execute() (*models.ToolsClueSmartPhoneGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *ToolsClueSmartPhoneGetV2ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsClueSmartPhoneGetV2Response
-func (a *ToolsClueSmartPhoneGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueSmartPhoneGetGetRequest) (*ToolsClueSmartPhoneGetV2Response, *http.Response, error) {
+func (a *ToolsClueSmartPhoneGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueSmartPhoneGetGetRequest) (*models.ToolsClueSmartPhoneGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueSmartPhoneGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueSmartPhoneGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *ToolsClueSmartPhoneGetV2ApiService) getExecute(r *ApiOpenApi2ToolsClueS
 	localVarPath := localBasePath + "/open_api/2/tools/clue/smart_phone/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

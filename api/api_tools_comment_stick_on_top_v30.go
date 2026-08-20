@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsCommentStickOnTopV30ApiService ToolsCommentStickOnTopV30Api service
@@ -25,15 +26,15 @@ type ToolsCommentStickOnTopV30ApiService service
 type ApiOpenApiV30ToolsCommentStickOnTopPostRequest struct {
 	ctx                              context.Context
 	ApiService                       *ToolsCommentStickOnTopV30ApiService
-	toolsCommentStickOnTopV30Request *ToolsCommentStickOnTopV30Request
+	toolsCommentStickOnTopV30Request *models.ToolsCommentStickOnTopV30Request
 }
 
-func (r *ApiOpenApiV30ToolsCommentStickOnTopPostRequest) ToolsCommentStickOnTopV30Request(toolsCommentStickOnTopV30Request ToolsCommentStickOnTopV30Request) *ApiOpenApiV30ToolsCommentStickOnTopPostRequest {
+func (r *ApiOpenApiV30ToolsCommentStickOnTopPostRequest) ToolsCommentStickOnTopV30Request(toolsCommentStickOnTopV30Request models.ToolsCommentStickOnTopV30Request) *ApiOpenApiV30ToolsCommentStickOnTopPostRequest {
 	r.toolsCommentStickOnTopV30Request = &toolsCommentStickOnTopV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsCommentStickOnTopPostRequest) Execute() (*ToolsCommentStickOnTopV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsCommentStickOnTopPostRequest) Execute() (*models.ToolsCommentStickOnTopV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsCommentStickOnTopV30ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsCommentStickOnTopV30Response
-func (a *ToolsCommentStickOnTopV30ApiService) postExecute(r *ApiOpenApiV30ToolsCommentStickOnTopPostRequest) (*ToolsCommentStickOnTopV30Response, *http.Response, error) {
+func (a *ToolsCommentStickOnTopV30ApiService) postExecute(r *ApiOpenApiV30ToolsCommentStickOnTopPostRequest) (*models.ToolsCommentStickOnTopV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsCommentStickOnTopV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsCommentStickOnTopV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsCommentStickOnTopV30ApiService) postExecute(r *ApiOpenApiV30ToolsC
 	localVarPath := localBasePath + "/open_api/v3.0/tools/comment/stick_on_top/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

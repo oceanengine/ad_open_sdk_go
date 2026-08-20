@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueLiteContactGetV2ApiService ToolsClueLiteContactGetV2Api service
@@ -25,15 +26,15 @@ type ToolsClueLiteContactGetV2ApiService service
 type ApiOpenApi2ToolsClueLiteContactGetPostRequest struct {
 	ctx                              context.Context
 	ApiService                       *ToolsClueLiteContactGetV2ApiService
-	toolsClueLiteContactGetV2Request *ToolsClueLiteContactGetV2Request
+	toolsClueLiteContactGetV2Request *models.ToolsClueLiteContactGetV2Request
 }
 
-func (r *ApiOpenApi2ToolsClueLiteContactGetPostRequest) ToolsClueLiteContactGetV2Request(toolsClueLiteContactGetV2Request ToolsClueLiteContactGetV2Request) *ApiOpenApi2ToolsClueLiteContactGetPostRequest {
+func (r *ApiOpenApi2ToolsClueLiteContactGetPostRequest) ToolsClueLiteContactGetV2Request(toolsClueLiteContactGetV2Request models.ToolsClueLiteContactGetV2Request) *ApiOpenApi2ToolsClueLiteContactGetPostRequest {
 	r.toolsClueLiteContactGetV2Request = &toolsClueLiteContactGetV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueLiteContactGetPostRequest) Execute() (*ToolsClueLiteContactGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueLiteContactGetPostRequest) Execute() (*models.ToolsClueLiteContactGetV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsClueLiteContactGetV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsClueLiteContactGetV2Response
-func (a *ToolsClueLiteContactGetV2ApiService) postExecute(r *ApiOpenApi2ToolsClueLiteContactGetPostRequest) (*ToolsClueLiteContactGetV2Response, *http.Response, error) {
+func (a *ToolsClueLiteContactGetV2ApiService) postExecute(r *ApiOpenApi2ToolsClueLiteContactGetPostRequest) (*models.ToolsClueLiteContactGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueLiteContactGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueLiteContactGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsClueLiteContactGetV2ApiService) postExecute(r *ApiOpenApi2ToolsClu
 	localVarPath := localBasePath + "/open_api/2/tools/clue/lite/contact/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

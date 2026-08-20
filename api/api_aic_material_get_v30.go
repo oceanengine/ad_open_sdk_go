@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AicMaterialGetV30ApiService AicMaterialGetV30Api service
@@ -26,12 +27,12 @@ type ApiOpenApiV30AicMaterialGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *AicMaterialGetV30ApiService
 	accountId   *int64
-	accountType *AicMaterialGetV30AccountType
-	filtering   *AicMaterialGetV30Filtering
+	accountType *models.AicMaterialGetV30AccountType
+	filtering   *models.AicMaterialGetV30Filtering
 	page        *int64
 	pageSize    *int64
-	orderField  *AicMaterialGetV30OrderField
-	orderType   *AicMaterialGetV30OrderType
+	orderField  *models.AicMaterialGetV30OrderField
+	orderType   *models.AicMaterialGetV30OrderType
 }
 
 // BP账户体系:组织id，Agent账户体系:代理商id
@@ -41,13 +42,13 @@ func (r *ApiOpenApiV30AicMaterialGetGetRequest) AccountId(accountId int64) *ApiO
 }
 
 // 账户体系枚举
-func (r *ApiOpenApiV30AicMaterialGetGetRequest) AccountType(accountType AicMaterialGetV30AccountType) *ApiOpenApiV30AicMaterialGetGetRequest {
+func (r *ApiOpenApiV30AicMaterialGetGetRequest) AccountType(accountType models.AicMaterialGetV30AccountType) *ApiOpenApiV30AicMaterialGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
 // 过滤条件 不同条件之间为「且」的关系，只有同时满足传入的多个条件，才会返回信息
-func (r *ApiOpenApiV30AicMaterialGetGetRequest) Filtering(filtering AicMaterialGetV30Filtering) *ApiOpenApiV30AicMaterialGetGetRequest {
+func (r *ApiOpenApiV30AicMaterialGetGetRequest) Filtering(filtering models.AicMaterialGetV30Filtering) *ApiOpenApiV30AicMaterialGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -65,18 +66,18 @@ func (r *ApiOpenApiV30AicMaterialGetGetRequest) PageSize(pageSize int64) *ApiOpe
 }
 
 // 排序字段
-func (r *ApiOpenApiV30AicMaterialGetGetRequest) OrderField(orderField AicMaterialGetV30OrderField) *ApiOpenApiV30AicMaterialGetGetRequest {
+func (r *ApiOpenApiV30AicMaterialGetGetRequest) OrderField(orderField models.AicMaterialGetV30OrderField) *ApiOpenApiV30AicMaterialGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
 
 // 排序方式
-func (r *ApiOpenApiV30AicMaterialGetGetRequest) OrderType(orderType AicMaterialGetV30OrderType) *ApiOpenApiV30AicMaterialGetGetRequest {
+func (r *ApiOpenApiV30AicMaterialGetGetRequest) OrderType(orderType models.AicMaterialGetV30OrderType) *ApiOpenApiV30AicMaterialGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
 
-func (r *ApiOpenApiV30AicMaterialGetGetRequest) Execute() (*AicMaterialGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AicMaterialGetGetRequest) Execute() (*models.AicMaterialGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *AicMaterialGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Aic
 // Execute executes the request
 //
 //	@return AicMaterialGetV30Response
-func (a *AicMaterialGetV30ApiService) getExecute(r *ApiOpenApiV30AicMaterialGetGetRequest) (*AicMaterialGetV30Response, *http.Response, error) {
+func (a *AicMaterialGetV30ApiService) getExecute(r *ApiOpenApiV30AicMaterialGetGetRequest) (*models.AicMaterialGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AicMaterialGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AicMaterialGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *AicMaterialGetV30ApiService) getExecute(r *ApiOpenApiV30AicMaterialGetG
 	localVarPath := localBasePath + "/open_api/v3.0/aic/material/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

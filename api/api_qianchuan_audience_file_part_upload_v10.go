@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAudienceFilePartUploadV10ApiService QianchuanAudienceFilePartUploadV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanAudienceFilePartUploadV10ApiService
 	advertiserId *int64
-	file         *FormFileInfo
+	file         *models.FormFileInfo
 	isFinished   *int32
 	partNum      *int64
 	fileKey      *string
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest) AdvertiserId(a
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest) File(file *FormFileInfo) *ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest {
+func (r *ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest) File(file *models.FormFileInfo) *ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest {
 	r.file = file
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest) FileKey(fileKe
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest) Execute() (*QianchuanAudienceFilePartUploadV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest) Execute() (*models.QianchuanAudienceFilePartUploadV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *QianchuanAudienceFilePartUploadV10ApiService) Post(ctx context.Context)
 // Execute executes the request
 //
 //	@return QianchuanAudienceFilePartUploadV10Response
-func (a *QianchuanAudienceFilePartUploadV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest) (*QianchuanAudienceFilePartUploadV10Response, *http.Response, error) {
+func (a *QianchuanAudienceFilePartUploadV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAudienceFilePartUploadPostRequest) (*models.QianchuanAudienceFilePartUploadV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAudienceFilePartUploadV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAudienceFilePartUploadV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *QianchuanAudienceFilePartUploadV10ApiService) postExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/audience_file/part_upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

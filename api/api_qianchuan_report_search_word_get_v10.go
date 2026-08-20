@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportSearchWordGetV10ApiService QianchuanReportSearchWordGetV10Api service
@@ -29,11 +30,11 @@ type ApiOpenApiV10QianchuanReportSearchWordGetGetRequest struct {
 	startDate       *string
 	endDate         *string
 	fields          *[]string
-	wordType        *QianchuanReportSearchWordGetV10WordType
-	filtering       *QianchuanReportSearchWordGetV10Filtering
-	timeGranularity *QianchuanReportSearchWordGetV10TimeGranularity
+	wordType        *models.QianchuanReportSearchWordGetV10WordType
+	filtering       *models.QianchuanReportSearchWordGetV10Filtering
+	timeGranularity *models.QianchuanReportSearchWordGetV10TimeGranularity
 	orderField      *string
-	orderType       *QianchuanReportSearchWordGetV10OrderType
+	orderType       *models.QianchuanReportSearchWordGetV10OrderType
 	page            *int32
 	pageSize        *int32
 }
@@ -60,17 +61,17 @@ func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) Fields(fields []st
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) WordType(wordType QianchuanReportSearchWordGetV10WordType) *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) WordType(wordType models.QianchuanReportSearchWordGetV10WordType) *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest {
 	r.wordType = &wordType
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) Filtering(filtering QianchuanReportSearchWordGetV10Filtering) *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) Filtering(filtering models.QianchuanReportSearchWordGetV10Filtering) *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) TimeGranularity(timeGranularity QianchuanReportSearchWordGetV10TimeGranularity) *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) TimeGranularity(timeGranularity models.QianchuanReportSearchWordGetV10TimeGranularity) *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest {
 	r.timeGranularity = &timeGranularity
 	return r
 }
@@ -80,7 +81,7 @@ func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) OrderField(orderFi
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) OrderType(orderType QianchuanReportSearchWordGetV10OrderType) *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) OrderType(orderType models.QianchuanReportSearchWordGetV10OrderType) *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -95,7 +96,7 @@ func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) PageSize(pageSize 
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) Execute() (*QianchuanReportSearchWordGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) Execute() (*models.QianchuanReportSearchWordGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -130,12 +131,12 @@ func (a *QianchuanReportSearchWordGetV10ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return QianchuanReportSearchWordGetV10Response
-func (a *QianchuanReportSearchWordGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) (*QianchuanReportSearchWordGetV10Response, *http.Response, error) {
+func (a *QianchuanReportSearchWordGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportSearchWordGetGetRequest) (*models.QianchuanReportSearchWordGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportSearchWordGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportSearchWordGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -145,7 +146,7 @@ func (a *QianchuanReportSearchWordGetV10ApiService) getExecute(r *ApiOpenApiV10Q
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/search_word/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

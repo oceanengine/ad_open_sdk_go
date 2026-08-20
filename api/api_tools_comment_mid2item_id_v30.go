@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsCommentMid2itemIdV30ApiService ToolsCommentMid2itemIdV30Api service
@@ -63,7 +64,7 @@ func (r *ApiOpenApiV30ToolsCommentMid2itemIdGetRequest) PageSize(pageSize int64)
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsCommentMid2itemIdGetRequest) Execute() (*ToolsCommentMid2itemIdV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsCommentMid2itemIdGetRequest) Execute() (*models.ToolsCommentMid2itemIdV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ToolsCommentMid2itemIdV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return ToolsCommentMid2itemIdV30Response
-func (a *ToolsCommentMid2itemIdV30ApiService) getExecute(r *ApiOpenApiV30ToolsCommentMid2itemIdGetRequest) (*ToolsCommentMid2itemIdV30Response, *http.Response, error) {
+func (a *ToolsCommentMid2itemIdV30ApiService) getExecute(r *ApiOpenApiV30ToolsCommentMid2itemIdGetRequest) (*models.ToolsCommentMid2itemIdV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsCommentMid2itemIdV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsCommentMid2itemIdV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ToolsCommentMid2itemIdV30ApiService) getExecute(r *ApiOpenApiV30ToolsCo
 	localVarPath := localBasePath + "/open_api/v3.0/tools/comment/mid2item_id/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

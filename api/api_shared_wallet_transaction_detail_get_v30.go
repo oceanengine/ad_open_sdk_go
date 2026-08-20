@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SharedWalletTransactionDetailGetV30ApiService SharedWalletTransactionDetailGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30SharedWalletTransactionDetailGetGetRequest struct {
 	ctx            context.Context
 	ApiService     *SharedWalletTransactionDetailGetV30ApiService
 	accountId      *int64
-	accountType    *SharedWalletTransactionDetailGetV30AccountType
+	accountType    *models.SharedWalletTransactionDetailGetV30AccountType
 	sharedWalletId *int64
 	startDate      *string
 	endDate        *string
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30SharedWalletTransactionDetailGetGetRequest) AccountId(acco
 }
 
 // 账户类型
-func (r *ApiOpenApiV30SharedWalletTransactionDetailGetGetRequest) AccountType(accountType SharedWalletTransactionDetailGetV30AccountType) *ApiOpenApiV30SharedWalletTransactionDetailGetGetRequest {
+func (r *ApiOpenApiV30SharedWalletTransactionDetailGetGetRequest) AccountType(accountType models.SharedWalletTransactionDetailGetV30AccountType) *ApiOpenApiV30SharedWalletTransactionDetailGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -76,7 +77,7 @@ func (r *ApiOpenApiV30SharedWalletTransactionDetailGetGetRequest) PageSize(pageS
 	return r
 }
 
-func (r *ApiOpenApiV30SharedWalletTransactionDetailGetGetRequest) Execute() (*SharedWalletTransactionDetailGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SharedWalletTransactionDetailGetGetRequest) Execute() (*models.SharedWalletTransactionDetailGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *SharedWalletTransactionDetailGetV30ApiService) Get(ctx context.Context)
 // Execute executes the request
 //
 //	@return SharedWalletTransactionDetailGetV30Response
-func (a *SharedWalletTransactionDetailGetV30ApiService) getExecute(r *ApiOpenApiV30SharedWalletTransactionDetailGetGetRequest) (*SharedWalletTransactionDetailGetV30Response, *http.Response, error) {
+func (a *SharedWalletTransactionDetailGetV30ApiService) getExecute(r *ApiOpenApiV30SharedWalletTransactionDetailGetGetRequest) (*models.SharedWalletTransactionDetailGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SharedWalletTransactionDetailGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SharedWalletTransactionDetailGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *SharedWalletTransactionDetailGetV30ApiService) getExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/v3.0/shared_wallet/transaction_detail/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

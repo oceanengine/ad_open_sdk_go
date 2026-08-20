@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FilePlayableListV30ApiService FilePlayableListV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30FilePlayableListGetRequest struct {
 	ctx          context.Context
 	ApiService   *FilePlayableListV30ApiService
 	advertiserId *int64
-	materialType *FilePlayableListV30MaterialType
-	filtering    *FilePlayableListV30Filtering
+	materialType *models.FilePlayableListV30MaterialType
+	filtering    *models.FilePlayableListV30Filtering
 	pageSize     *int64
 	page         *int64
 }
@@ -38,13 +39,13 @@ func (r *ApiOpenApiV30FilePlayableListGetRequest) AdvertiserId(advertiserId int6
 }
 
 // 素材类型
-func (r *ApiOpenApiV30FilePlayableListGetRequest) MaterialType(materialType FilePlayableListV30MaterialType) *ApiOpenApiV30FilePlayableListGetRequest {
+func (r *ApiOpenApiV30FilePlayableListGetRequest) MaterialType(materialType models.FilePlayableListV30MaterialType) *ApiOpenApiV30FilePlayableListGetRequest {
 	r.materialType = &materialType
 	return r
 }
 
 // 可选过滤参数
-func (r *ApiOpenApiV30FilePlayableListGetRequest) Filtering(filtering FilePlayableListV30Filtering) *ApiOpenApiV30FilePlayableListGetRequest {
+func (r *ApiOpenApiV30FilePlayableListGetRequest) Filtering(filtering models.FilePlayableListV30Filtering) *ApiOpenApiV30FilePlayableListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -61,7 +62,7 @@ func (r *ApiOpenApiV30FilePlayableListGetRequest) Page(page int64) *ApiOpenApiV3
 	return r
 }
 
-func (r *ApiOpenApiV30FilePlayableListGetRequest) Execute() (*FilePlayableListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30FilePlayableListGetRequest) Execute() (*models.FilePlayableListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -95,12 +96,12 @@ func (a *FilePlayableListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30F
 // Execute executes the request
 //
 //	@return FilePlayableListV30Response
-func (a *FilePlayableListV30ApiService) getExecute(r *ApiOpenApiV30FilePlayableListGetRequest) (*FilePlayableListV30Response, *http.Response, error) {
+func (a *FilePlayableListV30ApiService) getExecute(r *ApiOpenApiV30FilePlayableListGetRequest) (*models.FilePlayableListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FilePlayableListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FilePlayableListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -110,7 +111,7 @@ func (a *FilePlayableListV30ApiService) getExecute(r *ApiOpenApiV30FilePlayableL
 	localVarPath := localBasePath + "/open_api/v3.0/file/playable/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

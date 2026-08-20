@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarChallengeExpandRangeV2ApiService StarChallengeExpandRangeV2Api service
@@ -25,15 +26,15 @@ type StarChallengeExpandRangeV2ApiService service
 type ApiOpenApi2StarChallengeExpandRangePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *StarChallengeExpandRangeV2ApiService
-	starChallengeExpandRangeV2Request *StarChallengeExpandRangeV2Request
+	starChallengeExpandRangeV2Request *models.StarChallengeExpandRangeV2Request
 }
 
-func (r *ApiOpenApi2StarChallengeExpandRangePostRequest) StarChallengeExpandRangeV2Request(starChallengeExpandRangeV2Request StarChallengeExpandRangeV2Request) *ApiOpenApi2StarChallengeExpandRangePostRequest {
+func (r *ApiOpenApi2StarChallengeExpandRangePostRequest) StarChallengeExpandRangeV2Request(starChallengeExpandRangeV2Request models.StarChallengeExpandRangeV2Request) *ApiOpenApi2StarChallengeExpandRangePostRequest {
 	r.starChallengeExpandRangeV2Request = &starChallengeExpandRangeV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarChallengeExpandRangePostRequest) Execute() (*StarChallengeExpandRangeV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarChallengeExpandRangePostRequest) Execute() (*models.StarChallengeExpandRangeV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarChallengeExpandRangeV2ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return StarChallengeExpandRangeV2Response
-func (a *StarChallengeExpandRangeV2ApiService) postExecute(r *ApiOpenApi2StarChallengeExpandRangePostRequest) (*StarChallengeExpandRangeV2Response, *http.Response, error) {
+func (a *StarChallengeExpandRangeV2ApiService) postExecute(r *ApiOpenApi2StarChallengeExpandRangePostRequest) (*models.StarChallengeExpandRangeV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarChallengeExpandRangeV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarChallengeExpandRangeV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarChallengeExpandRangeV2ApiService) postExecute(r *ApiOpenApi2StarCha
 	localVarPath := localBasePath + "/open_api/2/star/challenge/expand_range/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

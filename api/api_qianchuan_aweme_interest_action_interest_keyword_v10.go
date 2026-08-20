@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeInterestActionInterestKeywordV10ApiService QianchuanAwemeInterestActionInterestKeywordV10Api service
@@ -33,7 +34,7 @@ func (r *ApiOpenApiV10QianchuanAwemeInterestActionInterestKeywordGetRequest) Adv
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeInterestActionInterestKeywordGetRequest) Execute() (*QianchuanAwemeInterestActionInterestKeywordV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeInterestActionInterestKeywordGetRequest) Execute() (*models.QianchuanAwemeInterestActionInterestKeywordV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanAwemeInterestActionInterestKeywordV10ApiService) Get(ctx conte
 // Execute executes the request
 //
 //	@return QianchuanAwemeInterestActionInterestKeywordV10Response
-func (a *QianchuanAwemeInterestActionInterestKeywordV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeInterestActionInterestKeywordGetRequest) (*QianchuanAwemeInterestActionInterestKeywordV10Response, *http.Response, error) {
+func (a *QianchuanAwemeInterestActionInterestKeywordV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeInterestActionInterestKeywordGetRequest) (*models.QianchuanAwemeInterestActionInterestKeywordV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeInterestActionInterestKeywordV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeInterestActionInterestKeywordV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanAwemeInterestActionInterestKeywordV10ApiService) getExecute(r 
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/interest_action/interest/keyword/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

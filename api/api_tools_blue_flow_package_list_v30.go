@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsBlueFlowPackageListV30ApiService ToolsBlueFlowPackageListV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30ToolsBlueFlowPackageListGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsBlueFlowPackageListV30ApiService
 	advertiserId *int64
-	filtering    *ToolsBlueFlowPackageListV30Filtering
+	filtering    *models.ToolsBlueFlowPackageListV30Filtering
 }
 
 func (r *ApiOpenApiV30ToolsBlueFlowPackageListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsBlueFlowPackageListGetRequest {
@@ -35,12 +36,12 @@ func (r *ApiOpenApiV30ToolsBlueFlowPackageListGetRequest) AdvertiserId(advertise
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsBlueFlowPackageListGetRequest) Filtering(filtering ToolsBlueFlowPackageListV30Filtering) *ApiOpenApiV30ToolsBlueFlowPackageListGetRequest {
+func (r *ApiOpenApiV30ToolsBlueFlowPackageListGetRequest) Filtering(filtering models.ToolsBlueFlowPackageListV30Filtering) *ApiOpenApiV30ToolsBlueFlowPackageListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsBlueFlowPackageListGetRequest) Execute() (*ToolsBlueFlowPackageListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsBlueFlowPackageListGetRequest) Execute() (*models.ToolsBlueFlowPackageListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *ToolsBlueFlowPackageListV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsBlueFlowPackageListV30Response
-func (a *ToolsBlueFlowPackageListV30ApiService) getExecute(r *ApiOpenApiV30ToolsBlueFlowPackageListGetRequest) (*ToolsBlueFlowPackageListV30Response, *http.Response, error) {
+func (a *ToolsBlueFlowPackageListV30ApiService) getExecute(r *ApiOpenApiV30ToolsBlueFlowPackageListGetRequest) (*models.ToolsBlueFlowPackageListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsBlueFlowPackageListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsBlueFlowPackageListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *ToolsBlueFlowPackageListV30ApiService) getExecute(r *ApiOpenApiV30Tools
 	localVarPath := localBasePath + "/open_api/v3.0/tools/blue_flow_package/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

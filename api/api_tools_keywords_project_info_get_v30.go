@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsKeywordsProjectInfoGetV30ApiService ToolsKeywordsProjectInfoGetV30Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30ToolsKeywordsProjectInfoGetGetRequest) PromotionWordId(pro
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsKeywordsProjectInfoGetGetRequest) Execute() (*ToolsKeywordsProjectInfoGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsKeywordsProjectInfoGetGetRequest) Execute() (*models.ToolsKeywordsProjectInfoGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsKeywordsProjectInfoGetV30ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return ToolsKeywordsProjectInfoGetV30Response
-func (a *ToolsKeywordsProjectInfoGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsKeywordsProjectInfoGetGetRequest) (*ToolsKeywordsProjectInfoGetV30Response, *http.Response, error) {
+func (a *ToolsKeywordsProjectInfoGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsKeywordsProjectInfoGetGetRequest) (*models.ToolsKeywordsProjectInfoGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsKeywordsProjectInfoGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsKeywordsProjectInfoGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsKeywordsProjectInfoGetV30ApiService) getExecute(r *ApiOpenApiV30To
 	localVarPath := localBasePath + "/open_api/v3.0/tools/keywords_project_info/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

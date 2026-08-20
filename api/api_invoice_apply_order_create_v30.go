@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // InvoiceApplyOrderCreateV30ApiService InvoiceApplyOrderCreateV30Api service
@@ -25,15 +26,15 @@ type InvoiceApplyOrderCreateV30ApiService service
 type ApiOpenApiV30InvoiceApplyOrderCreatePostRequest struct {
 	ctx                               context.Context
 	ApiService                        *InvoiceApplyOrderCreateV30ApiService
-	invoiceApplyOrderCreateV30Request *InvoiceApplyOrderCreateV30Request
+	invoiceApplyOrderCreateV30Request *models.InvoiceApplyOrderCreateV30Request
 }
 
-func (r *ApiOpenApiV30InvoiceApplyOrderCreatePostRequest) InvoiceApplyOrderCreateV30Request(invoiceApplyOrderCreateV30Request InvoiceApplyOrderCreateV30Request) *ApiOpenApiV30InvoiceApplyOrderCreatePostRequest {
+func (r *ApiOpenApiV30InvoiceApplyOrderCreatePostRequest) InvoiceApplyOrderCreateV30Request(invoiceApplyOrderCreateV30Request models.InvoiceApplyOrderCreateV30Request) *ApiOpenApiV30InvoiceApplyOrderCreatePostRequest {
 	r.invoiceApplyOrderCreateV30Request = &invoiceApplyOrderCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30InvoiceApplyOrderCreatePostRequest) Execute() (*InvoiceApplyOrderCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30InvoiceApplyOrderCreatePostRequest) Execute() (*models.InvoiceApplyOrderCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *InvoiceApplyOrderCreateV30ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return InvoiceApplyOrderCreateV30Response
-func (a *InvoiceApplyOrderCreateV30ApiService) postExecute(r *ApiOpenApiV30InvoiceApplyOrderCreatePostRequest) (*InvoiceApplyOrderCreateV30Response, *http.Response, error) {
+func (a *InvoiceApplyOrderCreateV30ApiService) postExecute(r *ApiOpenApiV30InvoiceApplyOrderCreatePostRequest) (*models.InvoiceApplyOrderCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *InvoiceApplyOrderCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.InvoiceApplyOrderCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *InvoiceApplyOrderCreateV30ApiService) postExecute(r *ApiOpenApiV30Invoi
 	localVarPath := localBasePath + "/open_api/v3.0/invoice/apply_order/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

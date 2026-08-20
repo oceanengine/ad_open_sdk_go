@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalProjectDeleteV30ApiService LocalProjectDeleteV30Api service
@@ -25,15 +26,15 @@ type LocalProjectDeleteV30ApiService service
 type ApiOpenApiV30LocalProjectDeletePostRequest struct {
 	ctx                          context.Context
 	ApiService                   *LocalProjectDeleteV30ApiService
-	localProjectDeleteV30Request *LocalProjectDeleteV30Request
+	localProjectDeleteV30Request *models.LocalProjectDeleteV30Request
 }
 
-func (r *ApiOpenApiV30LocalProjectDeletePostRequest) LocalProjectDeleteV30Request(localProjectDeleteV30Request LocalProjectDeleteV30Request) *ApiOpenApiV30LocalProjectDeletePostRequest {
+func (r *ApiOpenApiV30LocalProjectDeletePostRequest) LocalProjectDeleteV30Request(localProjectDeleteV30Request models.LocalProjectDeleteV30Request) *ApiOpenApiV30LocalProjectDeletePostRequest {
 	r.localProjectDeleteV30Request = &localProjectDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30LocalProjectDeletePostRequest) Execute() (*LocalProjectDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalProjectDeletePostRequest) Execute() (*models.LocalProjectDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *LocalProjectDeleteV30ApiService) Post(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return LocalProjectDeleteV30Response
-func (a *LocalProjectDeleteV30ApiService) postExecute(r *ApiOpenApiV30LocalProjectDeletePostRequest) (*LocalProjectDeleteV30Response, *http.Response, error) {
+func (a *LocalProjectDeleteV30ApiService) postExecute(r *ApiOpenApiV30LocalProjectDeletePostRequest) (*models.LocalProjectDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalProjectDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalProjectDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *LocalProjectDeleteV30ApiService) postExecute(r *ApiOpenApiV30LocalProje
 	localVarPath := localBasePath + "/open_api/v3.0/local/project/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

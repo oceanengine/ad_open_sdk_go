@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementAndroidAppListV2ApiService ToolsAppManagementAndroidAppListV2Api service
@@ -26,11 +27,11 @@ type ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest struct {
 	ctx                    context.Context
 	ApiService             *ToolsAppManagementAndroidAppListV2ApiService
 	accountId              *int64
-	accountType            *ToolsAppManagementAndroidAppListV2AccountType
+	accountType            *models.ToolsAppManagementAndroidAppListV2AccountType
 	page                   *int32
 	pageSize               *int32
-	filtering              *ToolsAppManagementAndroidAppListV2Filtering
-	accountAssetQueryScope *ToolsAppManagementAndroidAppListV2AccountAssetQueryScope
+	filtering              *models.ToolsAppManagementAndroidAppListV2Filtering
+	accountAssetQueryScope *models.ToolsAppManagementAndroidAppListV2AccountAssetQueryScope
 }
 
 func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) AccountId(accountId int64) *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest {
@@ -38,7 +39,7 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) AccountId(accoun
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) AccountType(accountType ToolsAppManagementAndroidAppListV2AccountType) *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) AccountType(accountType models.ToolsAppManagementAndroidAppListV2AccountType) *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -53,17 +54,17 @@ func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) PageSize(pageSiz
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) Filtering(filtering ToolsAppManagementAndroidAppListV2Filtering) *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) Filtering(filtering models.ToolsAppManagementAndroidAppListV2Filtering) *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope ToolsAppManagementAndroidAppListV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest {
+func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) AccountAssetQueryScope(accountAssetQueryScope models.ToolsAppManagementAndroidAppListV2AccountAssetQueryScope) *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest {
 	r.accountAssetQueryScope = &accountAssetQueryScope
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) Execute() (*ToolsAppManagementAndroidAppListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) Execute() (*models.ToolsAppManagementAndroidAppListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ToolsAppManagementAndroidAppListV2ApiService) Get(ctx context.Context) 
 // Execute executes the request
 //
 //	@return ToolsAppManagementAndroidAppListV2Response
-func (a *ToolsAppManagementAndroidAppListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) (*ToolsAppManagementAndroidAppListV2Response, *http.Response, error) {
+func (a *ToolsAppManagementAndroidAppListV2ApiService) getExecute(r *ApiOpenApi2ToolsAppManagementAndroidAppListGetRequest) (*models.ToolsAppManagementAndroidAppListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementAndroidAppListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementAndroidAppListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ToolsAppManagementAndroidAppListV2ApiService) getExecute(r *ApiOpenApi2
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/android_app/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

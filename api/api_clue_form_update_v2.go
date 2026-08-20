@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ClueFormUpdateV2ApiService ClueFormUpdateV2Api service
@@ -25,15 +26,15 @@ type ClueFormUpdateV2ApiService service
 type ApiOpenApi2ClueFormUpdatePostRequest struct {
 	ctx                     context.Context
 	ApiService              *ClueFormUpdateV2ApiService
-	clueFormUpdateV2Request *ClueFormUpdateV2Request
+	clueFormUpdateV2Request *models.ClueFormUpdateV2Request
 }
 
-func (r *ApiOpenApi2ClueFormUpdatePostRequest) ClueFormUpdateV2Request(clueFormUpdateV2Request ClueFormUpdateV2Request) *ApiOpenApi2ClueFormUpdatePostRequest {
+func (r *ApiOpenApi2ClueFormUpdatePostRequest) ClueFormUpdateV2Request(clueFormUpdateV2Request models.ClueFormUpdateV2Request) *ApiOpenApi2ClueFormUpdatePostRequest {
 	r.clueFormUpdateV2Request = &clueFormUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ClueFormUpdatePostRequest) Execute() (*ClueFormUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ClueFormUpdatePostRequest) Execute() (*models.ClueFormUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ClueFormUpdateV2ApiService) Post(ctx context.Context) *ApiOpenApi2ClueF
 // Execute executes the request
 //
 //	@return ClueFormUpdateV2Response
-func (a *ClueFormUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueFormUpdatePostRequest) (*ClueFormUpdateV2Response, *http.Response, error) {
+func (a *ClueFormUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueFormUpdatePostRequest) (*models.ClueFormUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ClueFormUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ClueFormUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ClueFormUpdateV2ApiService) postExecute(r *ApiOpenApi2ClueFormUpdatePos
 	localVarPath := localBasePath + "/open_api/2/clue/form/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

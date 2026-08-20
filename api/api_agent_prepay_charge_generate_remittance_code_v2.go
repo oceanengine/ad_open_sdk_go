@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentPrepayChargeGenerateRemittanceCodeV2ApiService AgentPrepayChargeGenerateRemittanceCodeV2Api service
@@ -25,15 +26,15 @@ type AgentPrepayChargeGenerateRemittanceCodeV2ApiService service
 type ApiOpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest struct {
 	ctx                                              context.Context
 	ApiService                                       *AgentPrepayChargeGenerateRemittanceCodeV2ApiService
-	agentPrepayChargeGenerateRemittanceCodeV2Request *AgentPrepayChargeGenerateRemittanceCodeV2Request
+	agentPrepayChargeGenerateRemittanceCodeV2Request *models.AgentPrepayChargeGenerateRemittanceCodeV2Request
 }
 
-func (r *ApiOpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest) AgentPrepayChargeGenerateRemittanceCodeV2Request(agentPrepayChargeGenerateRemittanceCodeV2Request AgentPrepayChargeGenerateRemittanceCodeV2Request) *ApiOpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest {
+func (r *ApiOpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest) AgentPrepayChargeGenerateRemittanceCodeV2Request(agentPrepayChargeGenerateRemittanceCodeV2Request models.AgentPrepayChargeGenerateRemittanceCodeV2Request) *ApiOpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest {
 	r.agentPrepayChargeGenerateRemittanceCodeV2Request = &agentPrepayChargeGenerateRemittanceCodeV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest) Execute() (*AgentPrepayChargeGenerateRemittanceCodeV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest) Execute() (*models.AgentPrepayChargeGenerateRemittanceCodeV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AgentPrepayChargeGenerateRemittanceCodeV2ApiService) Post(ctx context.C
 // Execute executes the request
 //
 //	@return AgentPrepayChargeGenerateRemittanceCodeV2Response
-func (a *AgentPrepayChargeGenerateRemittanceCodeV2ApiService) postExecute(r *ApiOpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest) (*AgentPrepayChargeGenerateRemittanceCodeV2Response, *http.Response, error) {
+func (a *AgentPrepayChargeGenerateRemittanceCodeV2ApiService) postExecute(r *ApiOpenApi2AgentPrepayChargeGenerateRemittanceCodePostRequest) (*models.AgentPrepayChargeGenerateRemittanceCodeV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentPrepayChargeGenerateRemittanceCodeV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentPrepayChargeGenerateRemittanceCodeV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AgentPrepayChargeGenerateRemittanceCodeV2ApiService) postExecute(r *Api
 	localVarPath := localBasePath + "/open_api/2/agent/prepay_charge/generate_remittance_code/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

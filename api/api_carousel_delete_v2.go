@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // CarouselDeleteV2ApiService CarouselDeleteV2Api service
@@ -25,15 +26,15 @@ type CarouselDeleteV2ApiService service
 type ApiOpenApi2CarouselDeletePostRequest struct {
 	ctx                     context.Context
 	ApiService              *CarouselDeleteV2ApiService
-	carouselDeleteV2Request *CarouselDeleteV2Request
+	carouselDeleteV2Request *models.CarouselDeleteV2Request
 }
 
-func (r *ApiOpenApi2CarouselDeletePostRequest) CarouselDeleteV2Request(carouselDeleteV2Request CarouselDeleteV2Request) *ApiOpenApi2CarouselDeletePostRequest {
+func (r *ApiOpenApi2CarouselDeletePostRequest) CarouselDeleteV2Request(carouselDeleteV2Request models.CarouselDeleteV2Request) *ApiOpenApi2CarouselDeletePostRequest {
 	r.carouselDeleteV2Request = &carouselDeleteV2Request
 	return r
 }
 
-func (r *ApiOpenApi2CarouselDeletePostRequest) Execute() (*CarouselDeleteV2Response, *http.Response, error) {
+func (r *ApiOpenApi2CarouselDeletePostRequest) Execute() (*models.CarouselDeleteV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *CarouselDeleteV2ApiService) Post(ctx context.Context) *ApiOpenApi2Carou
 // Execute executes the request
 //
 //	@return CarouselDeleteV2Response
-func (a *CarouselDeleteV2ApiService) postExecute(r *ApiOpenApi2CarouselDeletePostRequest) (*CarouselDeleteV2Response, *http.Response, error) {
+func (a *CarouselDeleteV2ApiService) postExecute(r *ApiOpenApi2CarouselDeletePostRequest) (*models.CarouselDeleteV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *CarouselDeleteV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.CarouselDeleteV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *CarouselDeleteV2ApiService) postExecute(r *ApiOpenApi2CarouselDeletePos
 	localVarPath := localBasePath + "/open_api/2/carousel/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

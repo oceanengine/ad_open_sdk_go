@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarComponentCreateLinkV2ApiService StarComponentCreateLinkV2Api service
@@ -25,15 +26,15 @@ type StarComponentCreateLinkV2ApiService service
 type ApiOpenApi2StarComponentCreateLinkPostRequest struct {
 	ctx                              context.Context
 	ApiService                       *StarComponentCreateLinkV2ApiService
-	starComponentCreateLinkV2Request *StarComponentCreateLinkV2Request
+	starComponentCreateLinkV2Request *models.StarComponentCreateLinkV2Request
 }
 
-func (r *ApiOpenApi2StarComponentCreateLinkPostRequest) StarComponentCreateLinkV2Request(starComponentCreateLinkV2Request StarComponentCreateLinkV2Request) *ApiOpenApi2StarComponentCreateLinkPostRequest {
+func (r *ApiOpenApi2StarComponentCreateLinkPostRequest) StarComponentCreateLinkV2Request(starComponentCreateLinkV2Request models.StarComponentCreateLinkV2Request) *ApiOpenApi2StarComponentCreateLinkPostRequest {
 	r.starComponentCreateLinkV2Request = &starComponentCreateLinkV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarComponentCreateLinkPostRequest) Execute() (*StarComponentCreateLinkV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarComponentCreateLinkPostRequest) Execute() (*models.StarComponentCreateLinkV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarComponentCreateLinkV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return StarComponentCreateLinkV2Response
-func (a *StarComponentCreateLinkV2ApiService) postExecute(r *ApiOpenApi2StarComponentCreateLinkPostRequest) (*StarComponentCreateLinkV2Response, *http.Response, error) {
+func (a *StarComponentCreateLinkV2ApiService) postExecute(r *ApiOpenApi2StarComponentCreateLinkPostRequest) (*models.StarComponentCreateLinkV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarComponentCreateLinkV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarComponentCreateLinkV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarComponentCreateLinkV2ApiService) postExecute(r *ApiOpenApi2StarComp
 	localVarPath := localBasePath + "/open_api/2/star/component/create_link/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

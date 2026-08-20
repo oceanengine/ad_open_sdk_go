@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanOverallVideoCreateV10ApiService QianchuanOverallVideoCreateV10Api service
@@ -25,15 +26,15 @@ type QianchuanOverallVideoCreateV10ApiService service
 type ApiOpenApiV10QianchuanOverallVideoCreatePostRequest struct {
 	ctx                                   context.Context
 	ApiService                            *QianchuanOverallVideoCreateV10ApiService
-	qianchuanOverallVideoCreateV10Request *QianchuanOverallVideoCreateV10Request
+	qianchuanOverallVideoCreateV10Request *models.QianchuanOverallVideoCreateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanOverallVideoCreatePostRequest) QianchuanOverallVideoCreateV10Request(qianchuanOverallVideoCreateV10Request QianchuanOverallVideoCreateV10Request) *ApiOpenApiV10QianchuanOverallVideoCreatePostRequest {
+func (r *ApiOpenApiV10QianchuanOverallVideoCreatePostRequest) QianchuanOverallVideoCreateV10Request(qianchuanOverallVideoCreateV10Request models.QianchuanOverallVideoCreateV10Request) *ApiOpenApiV10QianchuanOverallVideoCreatePostRequest {
 	r.qianchuanOverallVideoCreateV10Request = &qianchuanOverallVideoCreateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanOverallVideoCreatePostRequest) Execute() (*QianchuanOverallVideoCreateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanOverallVideoCreatePostRequest) Execute() (*models.QianchuanOverallVideoCreateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanOverallVideoCreateV10ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return QianchuanOverallVideoCreateV10Response
-func (a *QianchuanOverallVideoCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanOverallVideoCreatePostRequest) (*QianchuanOverallVideoCreateV10Response, *http.Response, error) {
+func (a *QianchuanOverallVideoCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanOverallVideoCreatePostRequest) (*models.QianchuanOverallVideoCreateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanOverallVideoCreateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanOverallVideoCreateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanOverallVideoCreateV10ApiService) postExecute(r *ApiOpenApiV10Q
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/overall_video/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

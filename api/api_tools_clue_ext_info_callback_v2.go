@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueExtInfoCallbackV2ApiService ToolsClueExtInfoCallbackV2Api service
@@ -25,15 +26,15 @@ type ToolsClueExtInfoCallbackV2ApiService service
 type ApiOpenApi2ToolsClueExtInfoCallbackPostRequest struct {
 	ctx                               context.Context
 	ApiService                        *ToolsClueExtInfoCallbackV2ApiService
-	toolsClueExtInfoCallbackV2Request *ToolsClueExtInfoCallbackV2Request
+	toolsClueExtInfoCallbackV2Request *models.ToolsClueExtInfoCallbackV2Request
 }
 
-func (r *ApiOpenApi2ToolsClueExtInfoCallbackPostRequest) ToolsClueExtInfoCallbackV2Request(toolsClueExtInfoCallbackV2Request ToolsClueExtInfoCallbackV2Request) *ApiOpenApi2ToolsClueExtInfoCallbackPostRequest {
+func (r *ApiOpenApi2ToolsClueExtInfoCallbackPostRequest) ToolsClueExtInfoCallbackV2Request(toolsClueExtInfoCallbackV2Request models.ToolsClueExtInfoCallbackV2Request) *ApiOpenApi2ToolsClueExtInfoCallbackPostRequest {
 	r.toolsClueExtInfoCallbackV2Request = &toolsClueExtInfoCallbackV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueExtInfoCallbackPostRequest) Execute() (*ToolsClueExtInfoCallbackV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueExtInfoCallbackPostRequest) Execute() (*models.ToolsClueExtInfoCallbackV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsClueExtInfoCallbackV2ApiService) Post(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return ToolsClueExtInfoCallbackV2Response
-func (a *ToolsClueExtInfoCallbackV2ApiService) postExecute(r *ApiOpenApi2ToolsClueExtInfoCallbackPostRequest) (*ToolsClueExtInfoCallbackV2Response, *http.Response, error) {
+func (a *ToolsClueExtInfoCallbackV2ApiService) postExecute(r *ApiOpenApi2ToolsClueExtInfoCallbackPostRequest) (*models.ToolsClueExtInfoCallbackV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueExtInfoCallbackV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueExtInfoCallbackV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsClueExtInfoCallbackV2ApiService) postExecute(r *ApiOpenApi2ToolsCl
 	localVarPath := localBasePath + "/open_api/2/tools/clue/ext_info/callback/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

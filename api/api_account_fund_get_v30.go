@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AccountFundGetV30ApiService AccountFundGetV30Api service
@@ -26,8 +27,8 @@ type ApiOpenApiV30AccountFundGetGetRequest struct {
 	ctx            context.Context
 	ApiService     *AccountFundGetV30ApiService
 	accountIds     *[]int64
-	accountType    *AccountFundGetV30AccountType
-	grantTypeSplit *AccountFundGetV30GrantTypeSplit
+	accountType    *models.AccountFundGetV30AccountType
+	grantTypeSplit *models.AccountFundGetV30GrantTypeSplit
 }
 
 func (r *ApiOpenApiV30AccountFundGetGetRequest) AccountIds(accountIds []int64) *ApiOpenApiV30AccountFundGetGetRequest {
@@ -35,17 +36,17 @@ func (r *ApiOpenApiV30AccountFundGetGetRequest) AccountIds(accountIds []int64) *
 	return r
 }
 
-func (r *ApiOpenApiV30AccountFundGetGetRequest) AccountType(accountType AccountFundGetV30AccountType) *ApiOpenApiV30AccountFundGetGetRequest {
+func (r *ApiOpenApiV30AccountFundGetGetRequest) AccountType(accountType models.AccountFundGetV30AccountType) *ApiOpenApiV30AccountFundGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApiV30AccountFundGetGetRequest) GrantTypeSplit(grantTypeSplit AccountFundGetV30GrantTypeSplit) *ApiOpenApiV30AccountFundGetGetRequest {
+func (r *ApiOpenApiV30AccountFundGetGetRequest) GrantTypeSplit(grantTypeSplit models.AccountFundGetV30GrantTypeSplit) *ApiOpenApiV30AccountFundGetGetRequest {
 	r.grantTypeSplit = &grantTypeSplit
 	return r
 }
 
-func (r *ApiOpenApiV30AccountFundGetGetRequest) Execute() (*AccountFundGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AccountFundGetGetRequest) Execute() (*models.AccountFundGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *AccountFundGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Acc
 // Execute executes the request
 //
 //	@return AccountFundGetV30Response
-func (a *AccountFundGetV30ApiService) getExecute(r *ApiOpenApiV30AccountFundGetGetRequest) (*AccountFundGetV30Response, *http.Response, error) {
+func (a *AccountFundGetV30ApiService) getExecute(r *ApiOpenApiV30AccountFundGetGetRequest) (*models.AccountFundGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AccountFundGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AccountFundGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *AccountFundGetV30ApiService) getExecute(r *ApiOpenApiV30AccountFundGetG
 	localVarPath := localBasePath + "/open_api/v3.0/account/fund/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountIds == nil {

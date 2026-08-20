@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsAppManagementBpShareV2ApiService ToolsAppManagementBpShareV2Api service
@@ -25,15 +26,15 @@ type ToolsAppManagementBpShareV2ApiService service
 type ApiOpenApi2ToolsAppManagementBpSharePostRequest struct {
 	ctx                                context.Context
 	ApiService                         *ToolsAppManagementBpShareV2ApiService
-	toolsAppManagementBpShareV2Request *ToolsAppManagementBpShareV2Request
+	toolsAppManagementBpShareV2Request *models.ToolsAppManagementBpShareV2Request
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBpSharePostRequest) ToolsAppManagementBpShareV2Request(toolsAppManagementBpShareV2Request ToolsAppManagementBpShareV2Request) *ApiOpenApi2ToolsAppManagementBpSharePostRequest {
+func (r *ApiOpenApi2ToolsAppManagementBpSharePostRequest) ToolsAppManagementBpShareV2Request(toolsAppManagementBpShareV2Request models.ToolsAppManagementBpShareV2Request) *ApiOpenApi2ToolsAppManagementBpSharePostRequest {
 	r.toolsAppManagementBpShareV2Request = &toolsAppManagementBpShareV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsAppManagementBpSharePostRequest) Execute() (*ToolsAppManagementBpShareV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsAppManagementBpSharePostRequest) Execute() (*models.ToolsAppManagementBpShareV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsAppManagementBpShareV2ApiService) Post(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsAppManagementBpShareV2Response
-func (a *ToolsAppManagementBpShareV2ApiService) postExecute(r *ApiOpenApi2ToolsAppManagementBpSharePostRequest) (*ToolsAppManagementBpShareV2Response, *http.Response, error) {
+func (a *ToolsAppManagementBpShareV2ApiService) postExecute(r *ApiOpenApi2ToolsAppManagementBpSharePostRequest) (*models.ToolsAppManagementBpShareV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsAppManagementBpShareV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsAppManagementBpShareV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsAppManagementBpShareV2ApiService) postExecute(r *ApiOpenApi2ToolsA
 	localVarPath := localBasePath + "/open_api/2/tools/app_management/bp_share/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

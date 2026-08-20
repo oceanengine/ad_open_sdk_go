@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPromotionCardRecommendTitleGetV2ApiService ToolsPromotionCardRecommendTitleGetV2Api service
@@ -27,10 +28,10 @@ type ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest struct {
 	ApiService   *ToolsPromotionCardRecommendTitleGetV2ApiService
 	adId         *int64
 	advertiserId *int64
-	contentType  *ToolsPromotionCardRecommendTitleGetV2ContentType
+	contentType  *models.ToolsPromotionCardRecommendTitleGetV2ContentType
 	externalUrl  *string
 	industryId   *int64
-	textType     *ToolsPromotionCardRecommendTitleGetV2TextType
+	textType     *models.ToolsPromotionCardRecommendTitleGetV2TextType
 }
 
 func (r *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest) AdId(adId int64) *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest {
@@ -43,7 +44,7 @@ func (r *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest) AdvertiserId(
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest) ContentType(contentType ToolsPromotionCardRecommendTitleGetV2ContentType) *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest {
+func (r *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest) ContentType(contentType models.ToolsPromotionCardRecommendTitleGetV2ContentType) *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest {
 	r.contentType = &contentType
 	return r
 }
@@ -58,12 +59,12 @@ func (r *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest) IndustryId(in
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest) TextType(textType ToolsPromotionCardRecommendTitleGetV2TextType) *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest {
+func (r *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest) TextType(textType models.ToolsPromotionCardRecommendTitleGetV2TextType) *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest {
 	r.textType = &textType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest) Execute() (*ToolsPromotionCardRecommendTitleGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest) Execute() (*models.ToolsPromotionCardRecommendTitleGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -97,12 +98,12 @@ func (a *ToolsPromotionCardRecommendTitleGetV2ApiService) Get(ctx context.Contex
 // Execute executes the request
 //
 //	@return ToolsPromotionCardRecommendTitleGetV2Response
-func (a *ToolsPromotionCardRecommendTitleGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest) (*ToolsPromotionCardRecommendTitleGetV2Response, *http.Response, error) {
+func (a *ToolsPromotionCardRecommendTitleGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPromotionCardRecommendTitleGetGetRequest) (*models.ToolsPromotionCardRecommendTitleGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPromotionCardRecommendTitleGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPromotionCardRecommendTitleGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -112,7 +113,7 @@ func (a *ToolsPromotionCardRecommendTitleGetV2ApiService) getExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/2/tools/promotion_card/recommend_title/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

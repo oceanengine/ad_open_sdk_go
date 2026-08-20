@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoPauseV2ApiService FileVideoPauseV2Api service
@@ -25,15 +26,15 @@ type FileVideoPauseV2ApiService service
 type ApiOpenApi2FileVideoPausePostRequest struct {
 	ctx                     context.Context
 	ApiService              *FileVideoPauseV2ApiService
-	fileVideoPauseV2Request *FileVideoPauseV2Request
+	fileVideoPauseV2Request *models.FileVideoPauseV2Request
 }
 
-func (r *ApiOpenApi2FileVideoPausePostRequest) FileVideoPauseV2Request(fileVideoPauseV2Request FileVideoPauseV2Request) *ApiOpenApi2FileVideoPausePostRequest {
+func (r *ApiOpenApi2FileVideoPausePostRequest) FileVideoPauseV2Request(fileVideoPauseV2Request models.FileVideoPauseV2Request) *ApiOpenApi2FileVideoPausePostRequest {
 	r.fileVideoPauseV2Request = &fileVideoPauseV2Request
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoPausePostRequest) Execute() (*FileVideoPauseV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoPausePostRequest) Execute() (*models.FileVideoPauseV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *FileVideoPauseV2ApiService) Post(ctx context.Context) *ApiOpenApi2FileV
 // Execute executes the request
 //
 //	@return FileVideoPauseV2Response
-func (a *FileVideoPauseV2ApiService) postExecute(r *ApiOpenApi2FileVideoPausePostRequest) (*FileVideoPauseV2Response, *http.Response, error) {
+func (a *FileVideoPauseV2ApiService) postExecute(r *ApiOpenApi2FileVideoPausePostRequest) (*models.FileVideoPauseV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoPauseV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoPauseV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *FileVideoPauseV2ApiService) postExecute(r *ApiOpenApi2FileVideoPausePos
 	localVarPath := localBasePath + "/open_api/2/file/video/pause/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

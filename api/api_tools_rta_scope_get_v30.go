@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsRtaScopeGetV30ApiService ToolsRtaScopeGetV30Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30ToolsRtaScopeGetGetRequest) RtaId(rtaId int64) *ApiOpenApi
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsRtaScopeGetGetRequest) Execute() (*ToolsRtaScopeGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsRtaScopeGetGetRequest) Execute() (*models.ToolsRtaScopeGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsRtaScopeGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30T
 // Execute executes the request
 //
 //	@return ToolsRtaScopeGetV30Response
-func (a *ToolsRtaScopeGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsRtaScopeGetGetRequest) (*ToolsRtaScopeGetV30Response, *http.Response, error) {
+func (a *ToolsRtaScopeGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsRtaScopeGetGetRequest) (*models.ToolsRtaScopeGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsRtaScopeGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsRtaScopeGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsRtaScopeGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsRtaScope
 	localVarPath := localBasePath + "/open_api/v3.0/tools/rta/scope/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

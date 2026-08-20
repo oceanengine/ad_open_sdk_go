@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AudiencePackageBindinfoGetV30ApiService AudiencePackageBindinfoGetV30Api service
@@ -54,7 +55,7 @@ func (r *ApiOpenApiV30AudiencePackageBindinfoGetGetRequest) PageSize(pageSize in
 	return r
 }
 
-func (r *ApiOpenApiV30AudiencePackageBindinfoGetGetRequest) Execute() (*AudiencePackageBindinfoGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AudiencePackageBindinfoGetGetRequest) Execute() (*models.AudiencePackageBindinfoGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -88,12 +89,12 @@ func (a *AudiencePackageBindinfoGetV30ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return AudiencePackageBindinfoGetV30Response
-func (a *AudiencePackageBindinfoGetV30ApiService) getExecute(r *ApiOpenApiV30AudiencePackageBindinfoGetGetRequest) (*AudiencePackageBindinfoGetV30Response, *http.Response, error) {
+func (a *AudiencePackageBindinfoGetV30ApiService) getExecute(r *ApiOpenApiV30AudiencePackageBindinfoGetGetRequest) (*models.AudiencePackageBindinfoGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AudiencePackageBindinfoGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AudiencePackageBindinfoGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -103,7 +104,7 @@ func (a *AudiencePackageBindinfoGetV30ApiService) getExecute(r *ApiOpenApiV30Aud
 	localVarPath := localBasePath + "/open_api/v3.0/audience_package_bindinfo/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

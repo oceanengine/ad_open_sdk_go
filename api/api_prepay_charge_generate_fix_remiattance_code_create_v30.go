@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService PrepayChargeGenerateFixRemiattanceCodeCreateV30Api service
@@ -25,15 +26,15 @@ type PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService service
 type ApiOpenApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostRequest struct {
 	ctx                                                    context.Context
 	ApiService                                             *PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService
-	prepayChargeGenerateFixRemiattanceCodeCreateV30Request *PrepayChargeGenerateFixRemiattanceCodeCreateV30Request
+	prepayChargeGenerateFixRemiattanceCodeCreateV30Request *models.PrepayChargeGenerateFixRemiattanceCodeCreateV30Request
 }
 
-func (r *ApiOpenApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostRequest) PrepayChargeGenerateFixRemiattanceCodeCreateV30Request(prepayChargeGenerateFixRemiattanceCodeCreateV30Request PrepayChargeGenerateFixRemiattanceCodeCreateV30Request) *ApiOpenApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostRequest {
+func (r *ApiOpenApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostRequest) PrepayChargeGenerateFixRemiattanceCodeCreateV30Request(prepayChargeGenerateFixRemiattanceCodeCreateV30Request models.PrepayChargeGenerateFixRemiattanceCodeCreateV30Request) *ApiOpenApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostRequest {
 	r.prepayChargeGenerateFixRemiattanceCodeCreateV30Request = &prepayChargeGenerateFixRemiattanceCodeCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostRequest) Execute() (*PrepayChargeGenerateFixRemiattanceCodeCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostRequest) Execute() (*models.PrepayChargeGenerateFixRemiattanceCodeCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService) Post(ctx con
 // Execute executes the request
 //
 //	@return PrepayChargeGenerateFixRemiattanceCodeCreateV30Response
-func (a *PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService) postExecute(r *ApiOpenApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostRequest) (*PrepayChargeGenerateFixRemiattanceCodeCreateV30Response, *http.Response, error) {
+func (a *PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService) postExecute(r *ApiOpenApiV30PrepayChargeGenerateFixRemiattanceCodeCreatePostRequest) (*models.PrepayChargeGenerateFixRemiattanceCodeCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *PrepayChargeGenerateFixRemiattanceCodeCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.PrepayChargeGenerateFixRemiattanceCodeCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService) postExecute(
 	localVarPath := localBasePath + "/open_api/v3.0/prepay_charge/generate_fix_remiattance_code/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

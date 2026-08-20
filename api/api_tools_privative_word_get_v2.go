@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPrivativeWordGetV2ApiService ToolsPrivativeWordGetV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsPrivativeWordGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsPrivativeWordGetV2ApiService
 	advertiserId *int64
-	filtering    *ToolsPrivativeWordGetV2Filtering
+	filtering    *models.ToolsPrivativeWordGetV2Filtering
 }
 
 func (r *ApiOpenApi2ToolsPrivativeWordGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsPrivativeWordGetGetRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2ToolsPrivativeWordGetGetRequest) AdvertiserId(advertiserId i
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPrivativeWordGetGetRequest) Filtering(filtering ToolsPrivativeWordGetV2Filtering) *ApiOpenApi2ToolsPrivativeWordGetGetRequest {
+func (r *ApiOpenApi2ToolsPrivativeWordGetGetRequest) Filtering(filtering models.ToolsPrivativeWordGetV2Filtering) *ApiOpenApi2ToolsPrivativeWordGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ToolsPrivativeWordGetGetRequest) Execute() (*ToolsPrivativeWordGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsPrivativeWordGetGetRequest) Execute() (*models.ToolsPrivativeWordGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsPrivativeWordGetV2ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsPrivativeWordGetV2Response
-func (a *ToolsPrivativeWordGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPrivativeWordGetGetRequest) (*ToolsPrivativeWordGetV2Response, *http.Response, error) {
+func (a *ToolsPrivativeWordGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPrivativeWordGetGetRequest) (*models.ToolsPrivativeWordGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPrivativeWordGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPrivativeWordGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsPrivativeWordGetV2ApiService) getExecute(r *ApiOpenApi2ToolsPrivat
 	localVarPath := localBasePath + "/open_api/2/tools/privative_word/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

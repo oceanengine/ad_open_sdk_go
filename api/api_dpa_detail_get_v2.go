@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaDetailGetV2ApiService DpaDetailGetV2Api service
@@ -27,7 +28,7 @@ type ApiOpenApi2DpaDetailGetGetRequest struct {
 	ApiService        *DpaDetailGetV2ApiService
 	advertiserId      *int64
 	productPlatformId *int64
-	filtering         *DpaDetailGetV2Filtering
+	filtering         *models.DpaDetailGetV2Filtering
 	page              *int32
 	pageSize          *int32
 }
@@ -42,7 +43,7 @@ func (r *ApiOpenApi2DpaDetailGetGetRequest) ProductPlatformId(productPlatformId 
 	return r
 }
 
-func (r *ApiOpenApi2DpaDetailGetGetRequest) Filtering(filtering DpaDetailGetV2Filtering) *ApiOpenApi2DpaDetailGetGetRequest {
+func (r *ApiOpenApi2DpaDetailGetGetRequest) Filtering(filtering models.DpaDetailGetV2Filtering) *ApiOpenApi2DpaDetailGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -57,7 +58,7 @@ func (r *ApiOpenApi2DpaDetailGetGetRequest) PageSize(pageSize int32) *ApiOpenApi
 	return r
 }
 
-func (r *ApiOpenApi2DpaDetailGetGetRequest) Execute() (*DpaDetailGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DpaDetailGetGetRequest) Execute() (*models.DpaDetailGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *DpaDetailGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2DpaDetai
 // Execute executes the request
 //
 //	@return DpaDetailGetV2Response
-func (a *DpaDetailGetV2ApiService) getExecute(r *ApiOpenApi2DpaDetailGetGetRequest) (*DpaDetailGetV2Response, *http.Response, error) {
+func (a *DpaDetailGetV2ApiService) getExecute(r *ApiOpenApi2DpaDetailGetGetRequest) (*models.DpaDetailGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaDetailGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaDetailGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *DpaDetailGetV2ApiService) getExecute(r *ApiOpenApi2DpaDetailGetGetReque
 	localVarPath := localBasePath + "/open_api/2/dpa/detail/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

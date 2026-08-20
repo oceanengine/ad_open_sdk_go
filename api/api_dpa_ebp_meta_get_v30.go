@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaEbpMetaGetV30ApiService DpaEbpMetaGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30DpaEbpMetaGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *DpaEbpMetaGetV30ApiService
 	accountId   *int64
-	accountType *DpaEbpMetaGetV30AccountType
+	accountType *models.DpaEbpMetaGetV30AccountType
 	platformId  *int64
 	indexable   *int64
 	extractable *int64
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV30DpaEbpMetaGetGetRequest) AccountId(accountId int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpMetaGetGetRequest) AccountType(accountType DpaEbpMetaGetV30AccountType) *ApiOpenApiV30DpaEbpMetaGetGetRequest {
+func (r *ApiOpenApiV30DpaEbpMetaGetGetRequest) AccountType(accountType models.DpaEbpMetaGetV30AccountType) *ApiOpenApiV30DpaEbpMetaGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -76,7 +77,7 @@ func (r *ApiOpenApiV30DpaEbpMetaGetGetRequest) MediaType(mediaType int64) *ApiOp
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpMetaGetGetRequest) Execute() (*DpaEbpMetaGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaEbpMetaGetGetRequest) Execute() (*models.DpaEbpMetaGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -110,12 +111,12 @@ func (a *DpaEbpMetaGetV30ApiService) Get(ctx context.Context) *ApiOpenApiV30DpaE
 // Execute executes the request
 //
 //	@return DpaEbpMetaGetV30Response
-func (a *DpaEbpMetaGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpMetaGetGetRequest) (*DpaEbpMetaGetV30Response, *http.Response, error) {
+func (a *DpaEbpMetaGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpMetaGetGetRequest) (*models.DpaEbpMetaGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaEbpMetaGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaEbpMetaGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -125,7 +126,7 @@ func (a *DpaEbpMetaGetV30ApiService) getExecute(r *ApiOpenApiV30DpaEbpMetaGetGet
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/ebp/meta/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

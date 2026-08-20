@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAudienceFileUploadV10ApiService QianchuanAudienceFileUploadV10Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV10QianchuanAudienceFileUploadPostRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanAudienceFileUploadV10ApiService
 	advertiserId *int64
-	file         *FormFileInfo
+	file         *models.FormFileInfo
 }
 
 func (r *ApiOpenApiV10QianchuanAudienceFileUploadPostRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanAudienceFileUploadPostRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApiV10QianchuanAudienceFileUploadPostRequest) AdvertiserId(adver
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAudienceFileUploadPostRequest) File(file *FormFileInfo) *ApiOpenApiV10QianchuanAudienceFileUploadPostRequest {
+func (r *ApiOpenApiV10QianchuanAudienceFileUploadPostRequest) File(file *models.FormFileInfo) *ApiOpenApiV10QianchuanAudienceFileUploadPostRequest {
 	r.file = file
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAudienceFileUploadPostRequest) Execute() (*QianchuanAudienceFileUploadV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAudienceFileUploadPostRequest) Execute() (*models.QianchuanAudienceFileUploadV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *QianchuanAudienceFileUploadV10ApiService) Post(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return QianchuanAudienceFileUploadV10Response
-func (a *QianchuanAudienceFileUploadV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAudienceFileUploadPostRequest) (*QianchuanAudienceFileUploadV10Response, *http.Response, error) {
+func (a *QianchuanAudienceFileUploadV10ApiService) postExecute(r *ApiOpenApiV10QianchuanAudienceFileUploadPostRequest) (*models.QianchuanAudienceFileUploadV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAudienceFileUploadV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAudienceFileUploadV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *QianchuanAudienceFileUploadV10ApiService) postExecute(r *ApiOpenApiV10Q
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/audience_file/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

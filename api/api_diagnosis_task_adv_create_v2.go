@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DiagnosisTaskAdvCreateV2ApiService DiagnosisTaskAdvCreateV2Api service
@@ -25,15 +26,15 @@ type DiagnosisTaskAdvCreateV2ApiService service
 type ApiOpenApi2DiagnosisTaskAdvCreatePostRequest struct {
 	ctx                             context.Context
 	ApiService                      *DiagnosisTaskAdvCreateV2ApiService
-	diagnosisTaskAdvCreateV2Request *DiagnosisTaskAdvCreateV2Request
+	diagnosisTaskAdvCreateV2Request *models.DiagnosisTaskAdvCreateV2Request
 }
 
-func (r *ApiOpenApi2DiagnosisTaskAdvCreatePostRequest) DiagnosisTaskAdvCreateV2Request(diagnosisTaskAdvCreateV2Request DiagnosisTaskAdvCreateV2Request) *ApiOpenApi2DiagnosisTaskAdvCreatePostRequest {
+func (r *ApiOpenApi2DiagnosisTaskAdvCreatePostRequest) DiagnosisTaskAdvCreateV2Request(diagnosisTaskAdvCreateV2Request models.DiagnosisTaskAdvCreateV2Request) *ApiOpenApi2DiagnosisTaskAdvCreatePostRequest {
 	r.diagnosisTaskAdvCreateV2Request = &diagnosisTaskAdvCreateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2DiagnosisTaskAdvCreatePostRequest) Execute() (*DiagnosisTaskAdvCreateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DiagnosisTaskAdvCreatePostRequest) Execute() (*models.DiagnosisTaskAdvCreateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DiagnosisTaskAdvCreateV2ApiService) Post(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return DiagnosisTaskAdvCreateV2Response
-func (a *DiagnosisTaskAdvCreateV2ApiService) postExecute(r *ApiOpenApi2DiagnosisTaskAdvCreatePostRequest) (*DiagnosisTaskAdvCreateV2Response, *http.Response, error) {
+func (a *DiagnosisTaskAdvCreateV2ApiService) postExecute(r *ApiOpenApi2DiagnosisTaskAdvCreatePostRequest) (*models.DiagnosisTaskAdvCreateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DiagnosisTaskAdvCreateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DiagnosisTaskAdvCreateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DiagnosisTaskAdvCreateV2ApiService) postExecute(r *ApiOpenApi2Diagnosis
 	localVarPath := localBasePath + "/open_api/2/diagnosis_task/adv/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

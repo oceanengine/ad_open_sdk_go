@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerShareV30ApiService EventManagerShareV30Api service
@@ -25,15 +26,15 @@ type EventManagerShareV30ApiService service
 type ApiOpenApiV30EventManagerSharePostRequest struct {
 	ctx                         context.Context
 	ApiService                  *EventManagerShareV30ApiService
-	eventManagerShareV30Request *EventManagerShareV30Request
+	eventManagerShareV30Request *models.EventManagerShareV30Request
 }
 
-func (r *ApiOpenApiV30EventManagerSharePostRequest) EventManagerShareV30Request(eventManagerShareV30Request EventManagerShareV30Request) *ApiOpenApiV30EventManagerSharePostRequest {
+func (r *ApiOpenApiV30EventManagerSharePostRequest) EventManagerShareV30Request(eventManagerShareV30Request models.EventManagerShareV30Request) *ApiOpenApiV30EventManagerSharePostRequest {
 	r.eventManagerShareV30Request = &eventManagerShareV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerSharePostRequest) Execute() (*EventManagerShareV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EventManagerSharePostRequest) Execute() (*models.EventManagerShareV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *EventManagerShareV30ApiService) Post(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return EventManagerShareV30Response
-func (a *EventManagerShareV30ApiService) postExecute(r *ApiOpenApiV30EventManagerSharePostRequest) (*EventManagerShareV30Response, *http.Response, error) {
+func (a *EventManagerShareV30ApiService) postExecute(r *ApiOpenApiV30EventManagerSharePostRequest) (*models.EventManagerShareV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerShareV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerShareV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *EventManagerShareV30ApiService) postExecute(r *ApiOpenApiV30EventManage
 	localVarPath := localBasePath + "/open_api/v3.0/event_manager/share/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

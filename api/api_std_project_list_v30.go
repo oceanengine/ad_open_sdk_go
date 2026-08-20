@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StdProjectListV30ApiService StdProjectListV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30StdProjectListGetRequest struct {
 	ctx          context.Context
 	ApiService   *StdProjectListV30ApiService
 	advertiserId *int64
-	filtering    *StdProjectListV30Filtering
+	filtering    *models.StdProjectListV30Filtering
 	page         *int64
 	pageSize     *int64
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30StdProjectListGetRequest) AdvertiserId(advertiserId int64)
 }
 
 // 过滤条件
-func (r *ApiOpenApiV30StdProjectListGetRequest) Filtering(filtering StdProjectListV30Filtering) *ApiOpenApiV30StdProjectListGetRequest {
+func (r *ApiOpenApiV30StdProjectListGetRequest) Filtering(filtering models.StdProjectListV30Filtering) *ApiOpenApiV30StdProjectListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApiV30StdProjectListGetRequest) PageSize(pageSize int64) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApiV30StdProjectListGetRequest) Execute() (*StdProjectListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30StdProjectListGetRequest) Execute() (*models.StdProjectListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *StdProjectListV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Std
 // Execute executes the request
 //
 //	@return StdProjectListV30Response
-func (a *StdProjectListV30ApiService) getExecute(r *ApiOpenApiV30StdProjectListGetRequest) (*StdProjectListV30Response, *http.Response, error) {
+func (a *StdProjectListV30ApiService) getExecute(r *ApiOpenApiV30StdProjectListGetRequest) (*models.StdProjectListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StdProjectListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StdProjectListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *StdProjectListV30ApiService) getExecute(r *ApiOpenApiV30StdProjectListG
 	localVarPath := localBasePath + "/open_api/v3.0/std_project/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

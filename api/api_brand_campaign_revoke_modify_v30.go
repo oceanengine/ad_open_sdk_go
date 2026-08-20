@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandCampaignRevokeModifyV30ApiService BrandCampaignRevokeModifyV30Api service
@@ -25,15 +26,15 @@ type BrandCampaignRevokeModifyV30ApiService service
 type ApiOpenApiV30BrandCampaignRevokeModifyPostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *BrandCampaignRevokeModifyV30ApiService
-	brandCampaignRevokeModifyV30Request *BrandCampaignRevokeModifyV30Request
+	brandCampaignRevokeModifyV30Request *models.BrandCampaignRevokeModifyV30Request
 }
 
-func (r *ApiOpenApiV30BrandCampaignRevokeModifyPostRequest) BrandCampaignRevokeModifyV30Request(brandCampaignRevokeModifyV30Request BrandCampaignRevokeModifyV30Request) *ApiOpenApiV30BrandCampaignRevokeModifyPostRequest {
+func (r *ApiOpenApiV30BrandCampaignRevokeModifyPostRequest) BrandCampaignRevokeModifyV30Request(brandCampaignRevokeModifyV30Request models.BrandCampaignRevokeModifyV30Request) *ApiOpenApiV30BrandCampaignRevokeModifyPostRequest {
 	r.brandCampaignRevokeModifyV30Request = &brandCampaignRevokeModifyV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30BrandCampaignRevokeModifyPostRequest) Execute() (*BrandCampaignRevokeModifyV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandCampaignRevokeModifyPostRequest) Execute() (*models.BrandCampaignRevokeModifyV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *BrandCampaignRevokeModifyV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return BrandCampaignRevokeModifyV30Response
-func (a *BrandCampaignRevokeModifyV30ApiService) postExecute(r *ApiOpenApiV30BrandCampaignRevokeModifyPostRequest) (*BrandCampaignRevokeModifyV30Response, *http.Response, error) {
+func (a *BrandCampaignRevokeModifyV30ApiService) postExecute(r *ApiOpenApiV30BrandCampaignRevokeModifyPostRequest) (*models.BrandCampaignRevokeModifyV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandCampaignRevokeModifyV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandCampaignRevokeModifyV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *BrandCampaignRevokeModifyV30ApiService) postExecute(r *ApiOpenApiV30Bra
 	localVarPath := localBasePath + "/open_api/v3.0/brand/campaign/revoke_modify/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

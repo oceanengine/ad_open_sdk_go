@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalPromotionListV30ApiService LocalPromotionListV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30LocalPromotionListGetRequest struct {
 	ctx            context.Context
 	ApiService     *LocalPromotionListV30ApiService
 	localAccountId *int64
-	filtering      *LocalPromotionListV30Filtering
+	filtering      *models.LocalPromotionListV30Filtering
 	page           *int64
 	pageSize       *int64
 }
@@ -36,7 +37,7 @@ func (r *ApiOpenApiV30LocalPromotionListGetRequest) LocalAccountId(localAccountI
 	return r
 }
 
-func (r *ApiOpenApiV30LocalPromotionListGetRequest) Filtering(filtering LocalPromotionListV30Filtering) *ApiOpenApiV30LocalPromotionListGetRequest {
+func (r *ApiOpenApiV30LocalPromotionListGetRequest) Filtering(filtering models.LocalPromotionListV30Filtering) *ApiOpenApiV30LocalPromotionListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -53,7 +54,7 @@ func (r *ApiOpenApiV30LocalPromotionListGetRequest) PageSize(pageSize int64) *Ap
 	return r
 }
 
-func (r *ApiOpenApiV30LocalPromotionListGetRequest) Execute() (*LocalPromotionListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalPromotionListGetRequest) Execute() (*models.LocalPromotionListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -87,12 +88,12 @@ func (a *LocalPromotionListV30ApiService) Get(ctx context.Context) *ApiOpenApiV3
 // Execute executes the request
 //
 //	@return LocalPromotionListV30Response
-func (a *LocalPromotionListV30ApiService) getExecute(r *ApiOpenApiV30LocalPromotionListGetRequest) (*LocalPromotionListV30Response, *http.Response, error) {
+func (a *LocalPromotionListV30ApiService) getExecute(r *ApiOpenApiV30LocalPromotionListGetRequest) (*models.LocalPromotionListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalPromotionListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalPromotionListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -102,7 +103,7 @@ func (a *LocalPromotionListV30ApiService) getExecute(r *ApiOpenApiV30LocalPromot
 	localVarPath := localBasePath + "/open_api/v3.0/local/promotion/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.localAccountId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DmpDataSourceFileUploadV2ApiService DmpDataSourceFileUploadV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2DmpDataSourceFileUploadPostRequest struct {
 	ctx           context.Context
 	ApiService    *DmpDataSourceFileUploadV2ApiService
 	advertiserId  *int64
-	file          *FormFileInfo
+	file          *models.FormFileInfo
 	fileSignature *string
 }
 
@@ -35,7 +36,7 @@ func (r *ApiOpenApi2DmpDataSourceFileUploadPostRequest) AdvertiserId(advertiserI
 	return r
 }
 
-func (r *ApiOpenApi2DmpDataSourceFileUploadPostRequest) File(file *FormFileInfo) *ApiOpenApi2DmpDataSourceFileUploadPostRequest {
+func (r *ApiOpenApi2DmpDataSourceFileUploadPostRequest) File(file *models.FormFileInfo) *ApiOpenApi2DmpDataSourceFileUploadPostRequest {
 	r.file = file
 	return r
 }
@@ -45,7 +46,7 @@ func (r *ApiOpenApi2DmpDataSourceFileUploadPostRequest) FileSignature(fileSignat
 	return r
 }
 
-func (r *ApiOpenApi2DmpDataSourceFileUploadPostRequest) Execute() (*DmpDataSourceFileUploadV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DmpDataSourceFileUploadPostRequest) Execute() (*models.DmpDataSourceFileUploadV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *DmpDataSourceFileUploadV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return DmpDataSourceFileUploadV2Response
-func (a *DmpDataSourceFileUploadV2ApiService) postExecute(r *ApiOpenApi2DmpDataSourceFileUploadPostRequest) (*DmpDataSourceFileUploadV2Response, *http.Response, error) {
+func (a *DmpDataSourceFileUploadV2ApiService) postExecute(r *ApiOpenApi2DmpDataSourceFileUploadPostRequest) (*models.DmpDataSourceFileUploadV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DmpDataSourceFileUploadV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DmpDataSourceFileUploadV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *DmpDataSourceFileUploadV2ApiService) postExecute(r *ApiOpenApi2DmpDataS
 	localVarPath := localBasePath + "/open_api/2/dmp/data_source/file/upload/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

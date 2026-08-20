@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpMaterialListV30ApiService ToolsEbpMaterialListV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30ToolsEbpMaterialListGetRequest struct {
 	ApiService    *ToolsEbpMaterialListV30ApiService
 	accountId     *int64
 	materialRange *string
-	filtering     *ToolsEbpMaterialListV30Filtering
+	filtering     *models.ToolsEbpMaterialListV30Filtering
 	page          *int64
 	pageSize      *int64
 }
@@ -44,7 +45,7 @@ func (r *ApiOpenApiV30ToolsEbpMaterialListGetRequest) MaterialRange(materialRang
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMaterialListGetRequest) Filtering(filtering ToolsEbpMaterialListV30Filtering) *ApiOpenApiV30ToolsEbpMaterialListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpMaterialListGetRequest) Filtering(filtering models.ToolsEbpMaterialListV30Filtering) *ApiOpenApiV30ToolsEbpMaterialListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -61,7 +62,7 @@ func (r *ApiOpenApiV30ToolsEbpMaterialListGetRequest) PageSize(pageSize int64) *
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpMaterialListGetRequest) Execute() (*ToolsEbpMaterialListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpMaterialListGetRequest) Execute() (*models.ToolsEbpMaterialListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -95,12 +96,12 @@ func (a *ToolsEbpMaterialListV30ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsEbpMaterialListV30Response
-func (a *ToolsEbpMaterialListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpMaterialListGetRequest) (*ToolsEbpMaterialListV30Response, *http.Response, error) {
+func (a *ToolsEbpMaterialListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpMaterialListGetRequest) (*models.ToolsEbpMaterialListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpMaterialListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpMaterialListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -110,7 +111,7 @@ func (a *ToolsEbpMaterialListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpM
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/material/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

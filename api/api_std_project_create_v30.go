@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StdProjectCreateV30ApiService StdProjectCreateV30Api service
@@ -25,15 +26,15 @@ type StdProjectCreateV30ApiService service
 type ApiOpenApiV30StdProjectCreatePostRequest struct {
 	ctx                        context.Context
 	ApiService                 *StdProjectCreateV30ApiService
-	stdProjectCreateV30Request *StdProjectCreateV30Request
+	stdProjectCreateV30Request *models.StdProjectCreateV30Request
 }
 
-func (r *ApiOpenApiV30StdProjectCreatePostRequest) StdProjectCreateV30Request(stdProjectCreateV30Request StdProjectCreateV30Request) *ApiOpenApiV30StdProjectCreatePostRequest {
+func (r *ApiOpenApiV30StdProjectCreatePostRequest) StdProjectCreateV30Request(stdProjectCreateV30Request models.StdProjectCreateV30Request) *ApiOpenApiV30StdProjectCreatePostRequest {
 	r.stdProjectCreateV30Request = &stdProjectCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30StdProjectCreatePostRequest) Execute() (*StdProjectCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30StdProjectCreatePostRequest) Execute() (*models.StdProjectCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StdProjectCreateV30ApiService) Post(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return StdProjectCreateV30Response
-func (a *StdProjectCreateV30ApiService) postExecute(r *ApiOpenApiV30StdProjectCreatePostRequest) (*StdProjectCreateV30Response, *http.Response, error) {
+func (a *StdProjectCreateV30ApiService) postExecute(r *ApiOpenApiV30StdProjectCreatePostRequest) (*models.StdProjectCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StdProjectCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StdProjectCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StdProjectCreateV30ApiService) postExecute(r *ApiOpenApiV30StdProjectCr
 	localVarPath := localBasePath + "/open_api/v3.0/std_project/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

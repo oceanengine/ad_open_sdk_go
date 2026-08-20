@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanReportAllPromotionGetV10ApiService QianchuanReportAllPromotionGetV10Api service
@@ -28,11 +29,11 @@ type ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest struct {
 	advertiserId  *int64
 	startTime     *string
 	endTime       *string
-	adlabScene    *QianchuanReportAllPromotionGetV10AdlabScene
+	adlabScene    *models.QianchuanReportAllPromotionGetV10AdlabScene
 	fields        *[]string
-	dataPeriod    *QianchuanReportAllPromotionGetV10DataPeriod
-	marketingGoal *QianchuanReportAllPromotionGetV10MarketingGoal
-	orderPlatform *QianchuanReportAllPromotionGetV10OrderPlatform
+	dataPeriod    *models.QianchuanReportAllPromotionGetV10DataPeriod
+	marketingGoal *models.QianchuanReportAllPromotionGetV10MarketingGoal
+	orderPlatform *models.QianchuanReportAllPromotionGetV10OrderPlatform
 }
 
 // 千川业务账户ID，对应账户类型为&#x60;QIANCHUAN&#x60;
@@ -54,7 +55,7 @@ func (r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) EndTime(endTime 
 }
 
 // 所查询的计划类型，可选值:  - OVERALL_PROJECT 乘方计划 - UNI_PROJECT 全域计划
-func (r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) AdlabScene(adlabScene QianchuanReportAllPromotionGetV10AdlabScene) *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) AdlabScene(adlabScene models.QianchuanReportAllPromotionGetV10AdlabScene) *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest {
 	r.adlabScene = &adlabScene
 	return r
 }
@@ -66,24 +67,24 @@ func (r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) Fields(fields []
 }
 
 // 数据周期，允许值： - OVER_ALL_DATA 乘方期间数据 - UNI_DATA 全域期间数据 - ALL_DATA 整体数据 （默认值） 当且仅当 adlab_scene&#x3D;OVERALL_PROJECT 时支持传入
-func (r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) DataPeriod(dataPeriod QianchuanReportAllPromotionGetV10DataPeriod) *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) DataPeriod(dataPeriod models.QianchuanReportAllPromotionGetV10DataPeriod) *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest {
 	r.dataPeriod = &dataPeriod
 	return r
 }
 
 // 按照营销目标过滤，允许值：  - &#x60;ALL&#x60; 全部（默认值） - &#x60;VIDEO_PROM_GOODS&#x60; 商品全域  - &#x60;LIVE_PROM_GOODS&#x60; 直播全域
-func (r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) MarketingGoal(marketingGoal QianchuanReportAllPromotionGetV10MarketingGoal) *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) MarketingGoal(marketingGoal models.QianchuanReportAllPromotionGetV10MarketingGoal) *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
 // 下单平台，允许值：  - &#x60;ALL&#x60; 全部  - &#x60;QIANCHUAN&#x60; 千川PC（默认值）  - &#x60;ECP_AWEME&#x60; 小店随心推，仅marketing_goal&#x3D;&#x60;ALL&#x60;时，支持传入
-func (r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) OrderPlatform(orderPlatform QianchuanReportAllPromotionGetV10OrderPlatform) *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest {
+func (r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) OrderPlatform(orderPlatform models.QianchuanReportAllPromotionGetV10OrderPlatform) *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest {
 	r.orderPlatform = &orderPlatform
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) Execute() (*QianchuanReportAllPromotionGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) Execute() (*models.QianchuanReportAllPromotionGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -117,12 +118,12 @@ func (a *QianchuanReportAllPromotionGetV10ApiService) Get(ctx context.Context) *
 // Execute executes the request
 //
 //	@return QianchuanReportAllPromotionGetV10Response
-func (a *QianchuanReportAllPromotionGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) (*QianchuanReportAllPromotionGetV10Response, *http.Response, error) {
+func (a *QianchuanReportAllPromotionGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanReportAllPromotionGetGetRequest) (*models.QianchuanReportAllPromotionGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanReportAllPromotionGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanReportAllPromotionGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -132,7 +133,7 @@ func (a *QianchuanReportAllPromotionGetV10ApiService) getExecute(r *ApiOpenApiV1
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/report/all_promotion/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // UniProjectMonetizationModeUpdateV30ApiService UniProjectMonetizationModeUpdateV30Api service
@@ -25,15 +26,15 @@ type UniProjectMonetizationModeUpdateV30ApiService service
 type ApiOpenApiV30UniProjectMonetizationModeUpdatePostRequest struct {
 	ctx                                        context.Context
 	ApiService                                 *UniProjectMonetizationModeUpdateV30ApiService
-	uniProjectMonetizationModeUpdateV30Request *UniProjectMonetizationModeUpdateV30Request
+	uniProjectMonetizationModeUpdateV30Request *models.UniProjectMonetizationModeUpdateV30Request
 }
 
-func (r *ApiOpenApiV30UniProjectMonetizationModeUpdatePostRequest) UniProjectMonetizationModeUpdateV30Request(uniProjectMonetizationModeUpdateV30Request UniProjectMonetizationModeUpdateV30Request) *ApiOpenApiV30UniProjectMonetizationModeUpdatePostRequest {
+func (r *ApiOpenApiV30UniProjectMonetizationModeUpdatePostRequest) UniProjectMonetizationModeUpdateV30Request(uniProjectMonetizationModeUpdateV30Request models.UniProjectMonetizationModeUpdateV30Request) *ApiOpenApiV30UniProjectMonetizationModeUpdatePostRequest {
 	r.uniProjectMonetizationModeUpdateV30Request = &uniProjectMonetizationModeUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30UniProjectMonetizationModeUpdatePostRequest) Execute() (*UniProjectMonetizationModeUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30UniProjectMonetizationModeUpdatePostRequest) Execute() (*models.UniProjectMonetizationModeUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *UniProjectMonetizationModeUpdateV30ApiService) Post(ctx context.Context
 // Execute executes the request
 //
 //	@return UniProjectMonetizationModeUpdateV30Response
-func (a *UniProjectMonetizationModeUpdateV30ApiService) postExecute(r *ApiOpenApiV30UniProjectMonetizationModeUpdatePostRequest) (*UniProjectMonetizationModeUpdateV30Response, *http.Response, error) {
+func (a *UniProjectMonetizationModeUpdateV30ApiService) postExecute(r *ApiOpenApiV30UniProjectMonetizationModeUpdatePostRequest) (*models.UniProjectMonetizationModeUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *UniProjectMonetizationModeUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.UniProjectMonetizationModeUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *UniProjectMonetizationModeUpdateV30ApiService) postExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/v3.0/uni_project/monetization_mode/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

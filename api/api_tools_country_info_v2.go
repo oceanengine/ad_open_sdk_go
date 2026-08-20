@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsCountryInfoV2ApiService ToolsCountryInfoV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsCountryInfoGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsCountryInfoV2ApiService
 	advertiserId *int64
-	language     *ToolsCountryInfoV2Language
+	language     *models.ToolsCountryInfoV2Language
 }
 
 // 广告主id
@@ -36,12 +37,12 @@ func (r *ApiOpenApi2ToolsCountryInfoGetRequest) AdvertiserId(advertiserId int64)
 }
 
 // 语言类型&lt;br&gt;&#x60;ZH_CN&#x60;表示常用名，如“北京”&lt;br&gt;&#x60;ZH_CN_GOV&#x60;表示官方全称，如“北京市”
-func (r *ApiOpenApi2ToolsCountryInfoGetRequest) Language(language ToolsCountryInfoV2Language) *ApiOpenApi2ToolsCountryInfoGetRequest {
+func (r *ApiOpenApi2ToolsCountryInfoGetRequest) Language(language models.ToolsCountryInfoV2Language) *ApiOpenApi2ToolsCountryInfoGetRequest {
 	r.language = &language
 	return r
 }
 
-func (r *ApiOpenApi2ToolsCountryInfoGetRequest) Execute() (*ToolsCountryInfoV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsCountryInfoGetRequest) Execute() (*models.ToolsCountryInfoV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *ToolsCountryInfoV2ApiService) Get(ctx context.Context) *ApiOpenApi2Tool
 // Execute executes the request
 //
 //	@return ToolsCountryInfoV2Response
-func (a *ToolsCountryInfoV2ApiService) getExecute(r *ApiOpenApi2ToolsCountryInfoGetRequest) (*ToolsCountryInfoV2Response, *http.Response, error) {
+func (a *ToolsCountryInfoV2ApiService) getExecute(r *ApiOpenApi2ToolsCountryInfoGetRequest) (*models.ToolsCountryInfoV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsCountryInfoV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsCountryInfoV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *ToolsCountryInfoV2ApiService) getExecute(r *ApiOpenApi2ToolsCountryInfo
 	localVarPath := localBasePath + "/open_api/2/tools/country/info/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

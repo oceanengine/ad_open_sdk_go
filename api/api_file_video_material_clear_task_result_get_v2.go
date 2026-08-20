@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileVideoMaterialClearTaskResultGetV2ApiService FileVideoMaterialClearTaskResultGetV2Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2FileVideoMaterialClearTaskResultGetGetRequest) PageSize(page
 	return r
 }
 
-func (r *ApiOpenApi2FileVideoMaterialClearTaskResultGetGetRequest) Execute() (*FileVideoMaterialClearTaskResultGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileVideoMaterialClearTaskResultGetGetRequest) Execute() (*models.FileVideoMaterialClearTaskResultGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *FileVideoMaterialClearTaskResultGetV2ApiService) Get(ctx context.Contex
 // Execute executes the request
 //
 //	@return FileVideoMaterialClearTaskResultGetV2Response
-func (a *FileVideoMaterialClearTaskResultGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoMaterialClearTaskResultGetGetRequest) (*FileVideoMaterialClearTaskResultGetV2Response, *http.Response, error) {
+func (a *FileVideoMaterialClearTaskResultGetV2ApiService) getExecute(r *ApiOpenApi2FileVideoMaterialClearTaskResultGetGetRequest) (*models.FileVideoMaterialClearTaskResultGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileVideoMaterialClearTaskResultGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileVideoMaterialClearTaskResultGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *FileVideoMaterialClearTaskResultGetV2ApiService) getExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/2/file/video/material/clear_task_result/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

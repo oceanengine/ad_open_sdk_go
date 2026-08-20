@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsClueRobotScriptQueryV2ApiService ToolsClueRobotScriptQueryV2Api service
@@ -25,15 +26,15 @@ type ToolsClueRobotScriptQueryV2ApiService service
 type ApiOpenApi2ToolsClueRobotScriptQueryPostRequest struct {
 	ctx                                context.Context
 	ApiService                         *ToolsClueRobotScriptQueryV2ApiService
-	toolsClueRobotScriptQueryV2Request *ToolsClueRobotScriptQueryV2Request
+	toolsClueRobotScriptQueryV2Request *models.ToolsClueRobotScriptQueryV2Request
 }
 
-func (r *ApiOpenApi2ToolsClueRobotScriptQueryPostRequest) ToolsClueRobotScriptQueryV2Request(toolsClueRobotScriptQueryV2Request ToolsClueRobotScriptQueryV2Request) *ApiOpenApi2ToolsClueRobotScriptQueryPostRequest {
+func (r *ApiOpenApi2ToolsClueRobotScriptQueryPostRequest) ToolsClueRobotScriptQueryV2Request(toolsClueRobotScriptQueryV2Request models.ToolsClueRobotScriptQueryV2Request) *ApiOpenApi2ToolsClueRobotScriptQueryPostRequest {
 	r.toolsClueRobotScriptQueryV2Request = &toolsClueRobotScriptQueryV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsClueRobotScriptQueryPostRequest) Execute() (*ToolsClueRobotScriptQueryV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsClueRobotScriptQueryPostRequest) Execute() (*models.ToolsClueRobotScriptQueryV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsClueRobotScriptQueryV2ApiService) Post(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return ToolsClueRobotScriptQueryV2Response
-func (a *ToolsClueRobotScriptQueryV2ApiService) postExecute(r *ApiOpenApi2ToolsClueRobotScriptQueryPostRequest) (*ToolsClueRobotScriptQueryV2Response, *http.Response, error) {
+func (a *ToolsClueRobotScriptQueryV2ApiService) postExecute(r *ApiOpenApi2ToolsClueRobotScriptQueryPostRequest) (*models.ToolsClueRobotScriptQueryV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsClueRobotScriptQueryV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsClueRobotScriptQueryV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsClueRobotScriptQueryV2ApiService) postExecute(r *ApiOpenApi2ToolsC
 	localVarPath := localBasePath + "/open_api/2/tools/clue/robot/script/query/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

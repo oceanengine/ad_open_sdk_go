@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEstimateAudienceV2ApiService ToolsEstimateAudienceV2Api service
@@ -25,55 +26,55 @@ type ToolsEstimateAudienceV2ApiService service
 type ApiOpenApi2ToolsEstimateAudienceGetRequest struct {
 	ctx                       context.Context
 	ApiService                *ToolsEstimateAudienceV2ApiService
-	ac                        *[]*ToolsEstimateAudienceV2Ac
+	ac                        *[]*models.ToolsEstimateAudienceV2Ac
 	actionCategories          *[]int64
-	actionDays                *ToolsEstimateAudienceV2ActionDays
+	actionDays                *models.ToolsEstimateAudienceV2ActionDays
 	actionWords               *[]int64
-	activateType              *[]*ToolsEstimateAudienceV2ActivateType
+	activateType              *[]*models.ToolsEstimateAudienceV2ActivateType
 	adTag                     *[]int64
 	advertiserId              *int64
-	age                       *[]*ToolsEstimateAudienceV2Age
-	androidOsv                *ToolsEstimateAudienceV2AndroidOsv
-	appBehaviorTarget         *ToolsEstimateAudienceV2AppBehaviorTarget
+	age                       *[]*models.ToolsEstimateAudienceV2Age
+	androidOsv                *models.ToolsEstimateAudienceV2AndroidOsv
+	appBehaviorTarget         *models.ToolsEstimateAudienceV2AppBehaviorTarget
 	appCategory               *[]int64
 	appIds                    *[]int64
-	articleCategory           *[]*ToolsEstimateAudienceV2ArticleCategory
+	articleCategory           *[]*models.ToolsEstimateAudienceV2ArticleCategory
 	audiencePackageId         *int64
-	autoExtendEnabled         *ToolsEstimateAudienceV2AutoExtendEnabled
-	autoExtendTargets         *[]*ToolsEstimateAudienceV2AutoExtendTargets
+	autoExtendEnabled         *models.ToolsEstimateAudienceV2AutoExtendEnabled
+	autoExtendTargets         *[]*models.ToolsEstimateAudienceV2AutoExtendTargets
 	awemeFansNumbers          *[]int64
-	carrier                   *[]*ToolsEstimateAudienceV2Carrier
+	carrier                   *[]*models.ToolsEstimateAudienceV2Carrier
 	city                      *[]int64
-	deviceBrand               *[]*ToolsEstimateAudienceV2DeviceBrand
-	deviceType                *[]*ToolsEstimateAudienceV2DeviceType
-	district                  *ToolsEstimateAudienceV2District
-	dpaLocalAudience          *ToolsEstimateAudienceV2DpaLocalAudience
-	excludeCustomActions      *[]*ToolsEstimateAudienceV2ExcludeCustomActionsInner
+	deviceBrand               *[]*models.ToolsEstimateAudienceV2DeviceBrand
+	deviceType                *[]*models.ToolsEstimateAudienceV2DeviceType
+	district                  *models.ToolsEstimateAudienceV2District
+	dpaLocalAudience          *models.ToolsEstimateAudienceV2DpaLocalAudience
+	excludeCustomActions      *[]*models.ToolsEstimateAudienceV2ExcludeCustomActionsInner
 	excludeFlowPackage        *[]int64
-	filterAwemeAbnormalActive *ToolsEstimateAudienceV2FilterAwemeAbnormalActive
+	filterAwemeAbnormalActive *models.ToolsEstimateAudienceV2FilterAwemeAbnormalActive
 	filterAwemeFansCount      *int64
-	filterOwnAwemeFans        *ToolsEstimateAudienceV2FilterOwnAwemeFans
+	filterOwnAwemeFans        *models.ToolsEstimateAudienceV2FilterOwnAwemeFans
 	flowPackage               *[]int64
-	gender                    *ToolsEstimateAudienceV2Gender
-	geolocation               *[]*ToolsEstimateAudienceV2GeolocationInner
-	includeCustomActions      *[]*ToolsEstimateAudienceV2IncludeCustomActionsInner
-	interestActionMode        *ToolsEstimateAudienceV2InterestActionMode
+	gender                    *models.ToolsEstimateAudienceV2Gender
+	geolocation               *[]*models.ToolsEstimateAudienceV2GeolocationInner
+	includeCustomActions      *[]*models.ToolsEstimateAudienceV2IncludeCustomActionsInner
+	interestActionMode        *models.ToolsEstimateAudienceV2InterestActionMode
 	interestCategories        *[]int64
 	interestTags              *[]int64
 	interestWords             *[]int64
-	iosOsv                    *ToolsEstimateAudienceV2IosOsv
+	iosOsv                    *models.ToolsEstimateAudienceV2IosOsv
 	launchPrice               *[]int64
-	locationType              *ToolsEstimateAudienceV2LocationType
-	platform                  *[]*ToolsEstimateAudienceV2Platform
+	locationType              *models.ToolsEstimateAudienceV2LocationType
+	platform                  *[]*models.ToolsEstimateAudienceV2Platform
 	retargetingTags           *[]int64
 	retargetingTagsExclude    *[]int64
 	retargetingTagsInclude    *[]int64
-	retargetingType           *ToolsEstimateAudienceV2RetargetingType
-	superiorPopularityType    *ToolsEstimateAudienceV2SuperiorPopularityType
+	retargetingType           *models.ToolsEstimateAudienceV2RetargetingType
+	superiorPopularityType    *models.ToolsEstimateAudienceV2SuperiorPopularityType
 	userType                  *[]int64
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Ac(ac []*ToolsEstimateAudienceV2Ac) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Ac(ac []*models.ToolsEstimateAudienceV2Ac) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.ac = &ac
 	return r
 }
@@ -83,7 +84,7 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) ActionCategories(actionCate
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) ActionDays(actionDays ToolsEstimateAudienceV2ActionDays) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) ActionDays(actionDays models.ToolsEstimateAudienceV2ActionDays) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.actionDays = &actionDays
 	return r
 }
@@ -93,7 +94,7 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) ActionWords(actionWords []i
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) ActivateType(activateType []*ToolsEstimateAudienceV2ActivateType) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) ActivateType(activateType []*models.ToolsEstimateAudienceV2ActivateType) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.activateType = &activateType
 	return r
 }
@@ -108,17 +109,17 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) AdvertiserId(advertiserId i
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Age(age []*ToolsEstimateAudienceV2Age) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Age(age []*models.ToolsEstimateAudienceV2Age) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.age = &age
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) AndroidOsv(androidOsv ToolsEstimateAudienceV2AndroidOsv) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) AndroidOsv(androidOsv models.ToolsEstimateAudienceV2AndroidOsv) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.androidOsv = &androidOsv
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) AppBehaviorTarget(appBehaviorTarget ToolsEstimateAudienceV2AppBehaviorTarget) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) AppBehaviorTarget(appBehaviorTarget models.ToolsEstimateAudienceV2AppBehaviorTarget) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.appBehaviorTarget = &appBehaviorTarget
 	return r
 }
@@ -133,7 +134,7 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) AppIds(appIds []int64) *Api
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) ArticleCategory(articleCategory []*ToolsEstimateAudienceV2ArticleCategory) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) ArticleCategory(articleCategory []*models.ToolsEstimateAudienceV2ArticleCategory) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.articleCategory = &articleCategory
 	return r
 }
@@ -143,12 +144,12 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) AudiencePackageId(audienceP
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) AutoExtendEnabled(autoExtendEnabled ToolsEstimateAudienceV2AutoExtendEnabled) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) AutoExtendEnabled(autoExtendEnabled models.ToolsEstimateAudienceV2AutoExtendEnabled) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.autoExtendEnabled = &autoExtendEnabled
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) AutoExtendTargets(autoExtendTargets []*ToolsEstimateAudienceV2AutoExtendTargets) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) AutoExtendTargets(autoExtendTargets []*models.ToolsEstimateAudienceV2AutoExtendTargets) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.autoExtendTargets = &autoExtendTargets
 	return r
 }
@@ -158,7 +159,7 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) AwemeFansNumbers(awemeFansN
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Carrier(carrier []*ToolsEstimateAudienceV2Carrier) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Carrier(carrier []*models.ToolsEstimateAudienceV2Carrier) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.carrier = &carrier
 	return r
 }
@@ -168,27 +169,27 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) City(city []int64) *ApiOpen
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) DeviceBrand(deviceBrand []*ToolsEstimateAudienceV2DeviceBrand) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) DeviceBrand(deviceBrand []*models.ToolsEstimateAudienceV2DeviceBrand) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.deviceBrand = &deviceBrand
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) DeviceType(deviceType []*ToolsEstimateAudienceV2DeviceType) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) DeviceType(deviceType []*models.ToolsEstimateAudienceV2DeviceType) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.deviceType = &deviceType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) District(district ToolsEstimateAudienceV2District) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) District(district models.ToolsEstimateAudienceV2District) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.district = &district
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) DpaLocalAudience(dpaLocalAudience ToolsEstimateAudienceV2DpaLocalAudience) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) DpaLocalAudience(dpaLocalAudience models.ToolsEstimateAudienceV2DpaLocalAudience) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.dpaLocalAudience = &dpaLocalAudience
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) ExcludeCustomActions(excludeCustomActions []*ToolsEstimateAudienceV2ExcludeCustomActionsInner) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) ExcludeCustomActions(excludeCustomActions []*models.ToolsEstimateAudienceV2ExcludeCustomActionsInner) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.excludeCustomActions = &excludeCustomActions
 	return r
 }
@@ -198,7 +199,7 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) ExcludeFlowPackage(excludeF
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) FilterAwemeAbnormalActive(filterAwemeAbnormalActive ToolsEstimateAudienceV2FilterAwemeAbnormalActive) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) FilterAwemeAbnormalActive(filterAwemeAbnormalActive models.ToolsEstimateAudienceV2FilterAwemeAbnormalActive) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.filterAwemeAbnormalActive = &filterAwemeAbnormalActive
 	return r
 }
@@ -208,7 +209,7 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) FilterAwemeFansCount(filter
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) FilterOwnAwemeFans(filterOwnAwemeFans ToolsEstimateAudienceV2FilterOwnAwemeFans) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) FilterOwnAwemeFans(filterOwnAwemeFans models.ToolsEstimateAudienceV2FilterOwnAwemeFans) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.filterOwnAwemeFans = &filterOwnAwemeFans
 	return r
 }
@@ -218,22 +219,22 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) FlowPackage(flowPackage []i
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Gender(gender ToolsEstimateAudienceV2Gender) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Gender(gender models.ToolsEstimateAudienceV2Gender) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.gender = &gender
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Geolocation(geolocation []*ToolsEstimateAudienceV2GeolocationInner) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Geolocation(geolocation []*models.ToolsEstimateAudienceV2GeolocationInner) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.geolocation = &geolocation
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) IncludeCustomActions(includeCustomActions []*ToolsEstimateAudienceV2IncludeCustomActionsInner) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) IncludeCustomActions(includeCustomActions []*models.ToolsEstimateAudienceV2IncludeCustomActionsInner) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.includeCustomActions = &includeCustomActions
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) InterestActionMode(interestActionMode ToolsEstimateAudienceV2InterestActionMode) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) InterestActionMode(interestActionMode models.ToolsEstimateAudienceV2InterestActionMode) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.interestActionMode = &interestActionMode
 	return r
 }
@@ -253,7 +254,7 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) InterestWords(interestWords
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) IosOsv(iosOsv ToolsEstimateAudienceV2IosOsv) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) IosOsv(iosOsv models.ToolsEstimateAudienceV2IosOsv) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.iosOsv = &iosOsv
 	return r
 }
@@ -263,12 +264,12 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) LaunchPrice(launchPrice []i
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) LocationType(locationType ToolsEstimateAudienceV2LocationType) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) LocationType(locationType models.ToolsEstimateAudienceV2LocationType) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.locationType = &locationType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Platform(platform []*ToolsEstimateAudienceV2Platform) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Platform(platform []*models.ToolsEstimateAudienceV2Platform) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.platform = &platform
 	return r
 }
@@ -288,12 +289,12 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) RetargetingTagsInclude(reta
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) RetargetingType(retargetingType ToolsEstimateAudienceV2RetargetingType) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) RetargetingType(retargetingType models.ToolsEstimateAudienceV2RetargetingType) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.retargetingType = &retargetingType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) SuperiorPopularityType(superiorPopularityType ToolsEstimateAudienceV2SuperiorPopularityType) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) SuperiorPopularityType(superiorPopularityType models.ToolsEstimateAudienceV2SuperiorPopularityType) *ApiOpenApi2ToolsEstimateAudienceGetRequest {
 	r.superiorPopularityType = &superiorPopularityType
 	return r
 }
@@ -303,7 +304,7 @@ func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) UserType(userType []int64) 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Execute() (*ToolsEstimateAudienceV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsEstimateAudienceGetRequest) Execute() (*models.ToolsEstimateAudienceV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -337,12 +338,12 @@ func (a *ToolsEstimateAudienceV2ApiService) Get(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return ToolsEstimateAudienceV2Response
-func (a *ToolsEstimateAudienceV2ApiService) getExecute(r *ApiOpenApi2ToolsEstimateAudienceGetRequest) (*ToolsEstimateAudienceV2Response, *http.Response, error) {
+func (a *ToolsEstimateAudienceV2ApiService) getExecute(r *ApiOpenApi2ToolsEstimateAudienceGetRequest) (*models.ToolsEstimateAudienceV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEstimateAudienceV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEstimateAudienceV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -352,7 +353,7 @@ func (a *ToolsEstimateAudienceV2ApiService) getExecute(r *ApiOpenApi2ToolsEstima
 	localVarPath := localBasePath + "/open_api/2/tools/estimate_audience/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

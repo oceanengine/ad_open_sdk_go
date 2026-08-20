@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalLifeAdvertiserCreateV30ApiService LocalLifeAdvertiserCreateV30Api service
@@ -25,15 +26,15 @@ type LocalLifeAdvertiserCreateV30ApiService service
 type ApiOpenApiV30LocalLifeAdvertiserCreatePostRequest struct {
 	ctx                                 context.Context
 	ApiService                          *LocalLifeAdvertiserCreateV30ApiService
-	localLifeAdvertiserCreateV30Request *LocalLifeAdvertiserCreateV30Request
+	localLifeAdvertiserCreateV30Request *models.LocalLifeAdvertiserCreateV30Request
 }
 
-func (r *ApiOpenApiV30LocalLifeAdvertiserCreatePostRequest) LocalLifeAdvertiserCreateV30Request(localLifeAdvertiserCreateV30Request LocalLifeAdvertiserCreateV30Request) *ApiOpenApiV30LocalLifeAdvertiserCreatePostRequest {
+func (r *ApiOpenApiV30LocalLifeAdvertiserCreatePostRequest) LocalLifeAdvertiserCreateV30Request(localLifeAdvertiserCreateV30Request models.LocalLifeAdvertiserCreateV30Request) *ApiOpenApiV30LocalLifeAdvertiserCreatePostRequest {
 	r.localLifeAdvertiserCreateV30Request = &localLifeAdvertiserCreateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30LocalLifeAdvertiserCreatePostRequest) Execute() (*LocalLifeAdvertiserCreateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalLifeAdvertiserCreatePostRequest) Execute() (*models.LocalLifeAdvertiserCreateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *LocalLifeAdvertiserCreateV30ApiService) Post(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return LocalLifeAdvertiserCreateV30Response
-func (a *LocalLifeAdvertiserCreateV30ApiService) postExecute(r *ApiOpenApiV30LocalLifeAdvertiserCreatePostRequest) (*LocalLifeAdvertiserCreateV30Response, *http.Response, error) {
+func (a *LocalLifeAdvertiserCreateV30ApiService) postExecute(r *ApiOpenApiV30LocalLifeAdvertiserCreatePostRequest) (*models.LocalLifeAdvertiserCreateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalLifeAdvertiserCreateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalLifeAdvertiserCreateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *LocalLifeAdvertiserCreateV30ApiService) postExecute(r *ApiOpenApiV30Loc
 	localVarPath := localBasePath + "/open_api/v3.0/local/life/advertiser/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

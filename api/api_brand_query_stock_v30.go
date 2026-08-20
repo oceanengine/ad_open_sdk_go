@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandQueryStockV30ApiService BrandQueryStockV30Api service
@@ -26,14 +27,14 @@ type ApiOpenApiV30BrandQueryStockGetRequest struct {
 	ctx                 context.Context
 	ApiService          *BrandQueryStockV30ApiService
 	advertiserId        *int64
-	classify            *BrandQueryStockV30Classify
-	landingType         *BrandQueryStockV30LandingType
-	appOrigin           *BrandQueryStockV30AppOrigin
-	adForm              *BrandQueryStockV30AdForm
-	gdSendType          *BrandQueryStockV30GdSendType
+	classify            *models.BrandQueryStockV30Classify
+	landingType         *models.BrandQueryStockV30LandingType
+	appOrigin           *models.BrandQueryStockV30AppOrigin
+	adForm              *models.BrandQueryStockV30AdForm
+	gdSendType          *models.BrandQueryStockV30GdSendType
 	policyNo            *string
-	scheduleInfo        *BrandQueryStockV30ScheduleInfo
-	audienceInfo        *BrandQueryStockV30AudienceInfo
+	scheduleInfo        *models.BrandQueryStockV30ScheduleInfo
+	audienceInfo        *models.BrandQueryStockV30AudienceInfo
 	merchantIntentionNo *string
 }
 
@@ -44,31 +45,31 @@ func (r *ApiOpenApiV30BrandQueryStockGetRequest) AdvertiserId(advertiserId int64
 }
 
 // 广告类别
-func (r *ApiOpenApiV30BrandQueryStockGetRequest) Classify(classify BrandQueryStockV30Classify) *ApiOpenApiV30BrandQueryStockGetRequest {
+func (r *ApiOpenApiV30BrandQueryStockGetRequest) Classify(classify models.BrandQueryStockV30Classify) *ApiOpenApiV30BrandQueryStockGetRequest {
 	r.classify = &classify
 	return r
 }
 
 // 推广目的
-func (r *ApiOpenApiV30BrandQueryStockGetRequest) LandingType(landingType BrandQueryStockV30LandingType) *ApiOpenApiV30BrandQueryStockGetRequest {
+func (r *ApiOpenApiV30BrandQueryStockGetRequest) LandingType(landingType models.BrandQueryStockV30LandingType) *ApiOpenApiV30BrandQueryStockGetRequest {
 	r.landingType = &landingType
 	return r
 }
 
 // 投放位置（媒体端）
-func (r *ApiOpenApiV30BrandQueryStockGetRequest) AppOrigin(appOrigin BrandQueryStockV30AppOrigin) *ApiOpenApiV30BrandQueryStockGetRequest {
+func (r *ApiOpenApiV30BrandQueryStockGetRequest) AppOrigin(appOrigin models.BrandQueryStockV30AppOrigin) *ApiOpenApiV30BrandQueryStockGetRequest {
 	r.appOrigin = &appOrigin
 	return r
 }
 
 // 版位
-func (r *ApiOpenApiV30BrandQueryStockGetRequest) AdForm(adForm BrandQueryStockV30AdForm) *ApiOpenApiV30BrandQueryStockGetRequest {
+func (r *ApiOpenApiV30BrandQueryStockGetRequest) AdForm(adForm models.BrandQueryStockV30AdForm) *ApiOpenApiV30BrandQueryStockGetRequest {
 	r.adForm = &adForm
 	return r
 }
 
 // 优化目标
-func (r *ApiOpenApiV30BrandQueryStockGetRequest) GdSendType(gdSendType BrandQueryStockV30GdSendType) *ApiOpenApiV30BrandQueryStockGetRequest {
+func (r *ApiOpenApiV30BrandQueryStockGetRequest) GdSendType(gdSendType models.BrandQueryStockV30GdSendType) *ApiOpenApiV30BrandQueryStockGetRequest {
 	r.gdSendType = &gdSendType
 	return r
 }
@@ -80,13 +81,13 @@ func (r *ApiOpenApiV30BrandQueryStockGetRequest) PolicyNo(policyNo string) *ApiO
 }
 
 // 日期
-func (r *ApiOpenApiV30BrandQueryStockGetRequest) ScheduleInfo(scheduleInfo BrandQueryStockV30ScheduleInfo) *ApiOpenApiV30BrandQueryStockGetRequest {
+func (r *ApiOpenApiV30BrandQueryStockGetRequest) ScheduleInfo(scheduleInfo models.BrandQueryStockV30ScheduleInfo) *ApiOpenApiV30BrandQueryStockGetRequest {
 	r.scheduleInfo = &scheduleInfo
 	return r
 }
 
 // 定向
-func (r *ApiOpenApiV30BrandQueryStockGetRequest) AudienceInfo(audienceInfo BrandQueryStockV30AudienceInfo) *ApiOpenApiV30BrandQueryStockGetRequest {
+func (r *ApiOpenApiV30BrandQueryStockGetRequest) AudienceInfo(audienceInfo models.BrandQueryStockV30AudienceInfo) *ApiOpenApiV30BrandQueryStockGetRequest {
 	r.audienceInfo = &audienceInfo
 	return r
 }
@@ -97,7 +98,7 @@ func (r *ApiOpenApiV30BrandQueryStockGetRequest) MerchantIntentionNo(merchantInt
 	return r
 }
 
-func (r *ApiOpenApiV30BrandQueryStockGetRequest) Execute() (*BrandQueryStockV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandQueryStockGetRequest) Execute() (*models.BrandQueryStockV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -131,12 +132,12 @@ func (a *BrandQueryStockV30ApiService) Get(ctx context.Context) *ApiOpenApiV30Br
 // Execute executes the request
 //
 //	@return BrandQueryStockV30Response
-func (a *BrandQueryStockV30ApiService) getExecute(r *ApiOpenApiV30BrandQueryStockGetRequest) (*BrandQueryStockV30Response, *http.Response, error) {
+func (a *BrandQueryStockV30ApiService) getExecute(r *ApiOpenApiV30BrandQueryStockGetRequest) (*models.BrandQueryStockV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandQueryStockV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandQueryStockV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -146,7 +147,7 @@ func (a *BrandQueryStockV30ApiService) getExecute(r *ApiOpenApiV30BrandQueryStoc
 	localVarPath := localBasePath + "/open_api/v3.0/brand/query_stock/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

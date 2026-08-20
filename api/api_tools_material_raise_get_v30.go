@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsMaterialRaiseGetV30ApiService ToolsMaterialRaiseGetV30Api service
@@ -54,7 +55,7 @@ func (r *ApiOpenApiV30ToolsMaterialRaiseGetGetRequest) PageSize(pageSize int64) 
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsMaterialRaiseGetGetRequest) Execute() (*ToolsMaterialRaiseGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsMaterialRaiseGetGetRequest) Execute() (*models.ToolsMaterialRaiseGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -88,12 +89,12 @@ func (a *ToolsMaterialRaiseGetV30ApiService) Get(ctx context.Context) *ApiOpenAp
 // Execute executes the request
 //
 //	@return ToolsMaterialRaiseGetV30Response
-func (a *ToolsMaterialRaiseGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsMaterialRaiseGetGetRequest) (*ToolsMaterialRaiseGetV30Response, *http.Response, error) {
+func (a *ToolsMaterialRaiseGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsMaterialRaiseGetGetRequest) (*models.ToolsMaterialRaiseGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsMaterialRaiseGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsMaterialRaiseGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -103,7 +104,7 @@ func (a *ToolsMaterialRaiseGetV30ApiService) getExecute(r *ApiOpenApiV30ToolsMat
 	localVarPath := localBasePath + "/open_api/v3.0/tools/material_raise/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

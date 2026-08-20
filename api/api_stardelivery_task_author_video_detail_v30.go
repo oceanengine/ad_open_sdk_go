@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StardeliveryTaskAuthorVideoDetailV30ApiService StardeliveryTaskAuthorVideoDetailV30Api service
@@ -28,8 +29,8 @@ type ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest struct {
 	advertiserId       *int64
 	starTaskId         *int64
 	awemeId            *string
-	starTaskVideoRange *StardeliveryTaskAuthorVideoDetailV30StarTaskVideoRange
-	filtering          *StardeliveryTaskAuthorVideoDetailV30Filtering
+	starTaskVideoRange *models.StardeliveryTaskAuthorVideoDetailV30StarTaskVideoRange
+	filtering          *models.StardeliveryTaskAuthorVideoDetailV30Filtering
 	cursor             *int64
 	count              *int64
 }
@@ -51,13 +52,13 @@ func (r *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest) AwemeId(aweme
 }
 
 // 返回的视频范围
-func (r *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest) StarTaskVideoRange(starTaskVideoRange StardeliveryTaskAuthorVideoDetailV30StarTaskVideoRange) *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest {
+func (r *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest) StarTaskVideoRange(starTaskVideoRange models.StardeliveryTaskAuthorVideoDetailV30StarTaskVideoRange) *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest {
 	r.starTaskVideoRange = &starTaskVideoRange
 	return r
 }
 
 // 过滤器
-func (r *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest) Filtering(filtering StardeliveryTaskAuthorVideoDetailV30Filtering) *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest {
+func (r *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest) Filtering(filtering models.StardeliveryTaskAuthorVideoDetailV30Filtering) *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -74,7 +75,7 @@ func (r *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest) Count(count i
 	return r
 }
 
-func (r *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest) Execute() (*StardeliveryTaskAuthorVideoDetailV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest) Execute() (*models.StardeliveryTaskAuthorVideoDetailV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -108,12 +109,12 @@ func (a *StardeliveryTaskAuthorVideoDetailV30ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return StardeliveryTaskAuthorVideoDetailV30Response
-func (a *StardeliveryTaskAuthorVideoDetailV30ApiService) getExecute(r *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest) (*StardeliveryTaskAuthorVideoDetailV30Response, *http.Response, error) {
+func (a *StardeliveryTaskAuthorVideoDetailV30ApiService) getExecute(r *ApiOpenApiV30StardeliveryTaskAuthorVideoDetailGetRequest) (*models.StardeliveryTaskAuthorVideoDetailV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StardeliveryTaskAuthorVideoDetailV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StardeliveryTaskAuthorVideoDetailV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -123,7 +124,7 @@ func (a *StardeliveryTaskAuthorVideoDetailV30ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/v3.0/stardelivery/task_author_video/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

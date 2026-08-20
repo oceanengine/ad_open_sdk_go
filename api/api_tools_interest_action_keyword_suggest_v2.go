@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsInterestActionKeywordSuggestV2ApiService ToolsInterestActionKeywordSuggestV2Api service
@@ -27,9 +28,9 @@ type ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest struct {
 	ApiService    *ToolsInterestActionKeywordSuggestV2ApiService
 	advertiserId  *int64
 	id            *int64
-	tagType       *ToolsInterestActionKeywordSuggestV2TagType
-	targetingType *ToolsInterestActionKeywordSuggestV2TargetingType
-	actionDays    *ToolsInterestActionKeywordSuggestV2ActionDays
+	tagType       *models.ToolsInterestActionKeywordSuggestV2TagType
+	targetingType *models.ToolsInterestActionKeywordSuggestV2TargetingType
+	actionDays    *models.ToolsInterestActionKeywordSuggestV2ActionDays
 }
 
 func (r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest {
@@ -42,22 +43,22 @@ func (r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) Id(id int64) *A
 	return r
 }
 
-func (r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) TagType(tagType ToolsInterestActionKeywordSuggestV2TagType) *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest {
+func (r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) TagType(tagType models.ToolsInterestActionKeywordSuggestV2TagType) *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest {
 	r.tagType = &tagType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) TargetingType(targetingType ToolsInterestActionKeywordSuggestV2TargetingType) *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest {
+func (r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) TargetingType(targetingType models.ToolsInterestActionKeywordSuggestV2TargetingType) *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest {
 	r.targetingType = &targetingType
 	return r
 }
 
-func (r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) ActionDays(actionDays ToolsInterestActionKeywordSuggestV2ActionDays) *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest {
+func (r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) ActionDays(actionDays models.ToolsInterestActionKeywordSuggestV2ActionDays) *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest {
 	r.actionDays = &actionDays
 	return r
 }
 
-func (r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) Execute() (*ToolsInterestActionKeywordSuggestV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) Execute() (*models.ToolsInterestActionKeywordSuggestV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -91,12 +92,12 @@ func (a *ToolsInterestActionKeywordSuggestV2ApiService) Get(ctx context.Context)
 // Execute executes the request
 //
 //	@return ToolsInterestActionKeywordSuggestV2Response
-func (a *ToolsInterestActionKeywordSuggestV2ApiService) getExecute(r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) (*ToolsInterestActionKeywordSuggestV2Response, *http.Response, error) {
+func (a *ToolsInterestActionKeywordSuggestV2ApiService) getExecute(r *ApiOpenApi2ToolsInterestActionKeywordSuggestGetRequest) (*models.ToolsInterestActionKeywordSuggestV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsInterestActionKeywordSuggestV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsInterestActionKeywordSuggestV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -106,7 +107,7 @@ func (a *ToolsInterestActionKeywordSuggestV2ApiService) getExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/2/tools/interest_action/keyword/suggest/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

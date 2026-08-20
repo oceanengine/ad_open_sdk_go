@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AicMixcutTaskResultGetV30ApiService AicMixcutTaskResultGetV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30AicMixcutTaskResultGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *AicMixcutTaskResultGetV30ApiService
 	accountId   *int64
-	accountType *AicMixcutTaskResultGetV30AccountType
+	accountType *models.AicMixcutTaskResultGetV30AccountType
 	taskId      *string
 }
 
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV30AicMixcutTaskResultGetGetRequest) AccountId(accountId int6
 }
 
 // 账户体系枚举
-func (r *ApiOpenApiV30AicMixcutTaskResultGetGetRequest) AccountType(accountType AicMixcutTaskResultGetV30AccountType) *ApiOpenApiV30AicMixcutTaskResultGetGetRequest {
+func (r *ApiOpenApiV30AicMixcutTaskResultGetGetRequest) AccountType(accountType models.AicMixcutTaskResultGetV30AccountType) *ApiOpenApiV30AicMixcutTaskResultGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -48,7 +49,7 @@ func (r *ApiOpenApiV30AicMixcutTaskResultGetGetRequest) TaskId(taskId string) *A
 	return r
 }
 
-func (r *ApiOpenApiV30AicMixcutTaskResultGetGetRequest) Execute() (*AicMixcutTaskResultGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30AicMixcutTaskResultGetGetRequest) Execute() (*models.AicMixcutTaskResultGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -82,12 +83,12 @@ func (a *AicMixcutTaskResultGetV30ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return AicMixcutTaskResultGetV30Response
-func (a *AicMixcutTaskResultGetV30ApiService) getExecute(r *ApiOpenApiV30AicMixcutTaskResultGetGetRequest) (*AicMixcutTaskResultGetV30Response, *http.Response, error) {
+func (a *AicMixcutTaskResultGetV30ApiService) getExecute(r *ApiOpenApiV30AicMixcutTaskResultGetGetRequest) (*models.AicMixcutTaskResultGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AicMixcutTaskResultGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AicMixcutTaskResultGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -97,7 +98,7 @@ func (a *AicMixcutTaskResultGetV30ApiService) getExecute(r *ApiOpenApiV30AicMixc
 	localVarPath := localBasePath + "/open_api/v3.0/aic/mixcut_task/result/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

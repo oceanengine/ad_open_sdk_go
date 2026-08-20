@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeOrderDetailGetV10ApiService QianchuanAwemeOrderDetailGetV10Api service
@@ -41,7 +42,7 @@ func (r *ApiOpenApiV10QianchuanAwemeOrderDetailGetGetRequest) AdvertiserId(adver
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeOrderDetailGetGetRequest) Execute() (*QianchuanAwemeOrderDetailGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeOrderDetailGetGetRequest) Execute() (*models.QianchuanAwemeOrderDetailGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -75,12 +76,12 @@ func (a *QianchuanAwemeOrderDetailGetV10ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return QianchuanAwemeOrderDetailGetV10Response
-func (a *QianchuanAwemeOrderDetailGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeOrderDetailGetGetRequest) (*QianchuanAwemeOrderDetailGetV10Response, *http.Response, error) {
+func (a *QianchuanAwemeOrderDetailGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeOrderDetailGetGetRequest) (*models.QianchuanAwemeOrderDetailGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeOrderDetailGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeOrderDetailGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -90,7 +91,7 @@ func (a *QianchuanAwemeOrderDetailGetV10ApiService) getExecute(r *ApiOpenApiV10Q
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/order/detail/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.orderId == nil {

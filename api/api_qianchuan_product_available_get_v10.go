@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanProductAvailableGetV10ApiService QianchuanProductAvailableGetV10Api service
@@ -27,8 +28,8 @@ type ApiOpenApiV10QianchuanProductAvailableGetGetRequest struct {
 	ApiService    *QianchuanProductAvailableGetV10ApiService
 	advertiserId  *int64
 	awemeId       *int64
-	filter        *QianchuanProductAvailableGetV10Filter
-	campaignScene *QianchuanProductAvailableGetV10CampaignScene
+	filter        *models.QianchuanProductAvailableGetV10Filter
+	campaignScene *models.QianchuanProductAvailableGetV10CampaignScene
 	page          *int32
 	pageSize      *int32
 	cursor        *int64
@@ -44,12 +45,12 @@ func (r *ApiOpenApiV10QianchuanProductAvailableGetGetRequest) AwemeId(awemeId in
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanProductAvailableGetGetRequest) Filter(filter QianchuanProductAvailableGetV10Filter) *ApiOpenApiV10QianchuanProductAvailableGetGetRequest {
+func (r *ApiOpenApiV10QianchuanProductAvailableGetGetRequest) Filter(filter models.QianchuanProductAvailableGetV10Filter) *ApiOpenApiV10QianchuanProductAvailableGetGetRequest {
 	r.filter = &filter
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanProductAvailableGetGetRequest) CampaignScene(campaignScene QianchuanProductAvailableGetV10CampaignScene) *ApiOpenApiV10QianchuanProductAvailableGetGetRequest {
+func (r *ApiOpenApiV10QianchuanProductAvailableGetGetRequest) CampaignScene(campaignScene models.QianchuanProductAvailableGetV10CampaignScene) *ApiOpenApiV10QianchuanProductAvailableGetGetRequest {
 	r.campaignScene = &campaignScene
 	return r
 }
@@ -70,7 +71,7 @@ func (r *ApiOpenApiV10QianchuanProductAvailableGetGetRequest) Cursor(cursor int6
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanProductAvailableGetGetRequest) Execute() (*QianchuanProductAvailableGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanProductAvailableGetGetRequest) Execute() (*models.QianchuanProductAvailableGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -105,12 +106,12 @@ func (a *QianchuanProductAvailableGetV10ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return QianchuanProductAvailableGetV10Response
-func (a *QianchuanProductAvailableGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanProductAvailableGetGetRequest) (*QianchuanProductAvailableGetV10Response, *http.Response, error) {
+func (a *QianchuanProductAvailableGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanProductAvailableGetGetRequest) (*models.QianchuanProductAvailableGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanProductAvailableGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanProductAvailableGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -120,7 +121,7 @@ func (a *QianchuanProductAvailableGetV10ApiService) getExecute(r *ApiOpenApiV10Q
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/product/available/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

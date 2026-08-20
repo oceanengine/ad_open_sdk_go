@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolQuickAppManagementQuickAppGetV2ApiService ToolQuickAppManagementQuickAppGetV2Api service
@@ -26,13 +27,13 @@ type ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest struct {
 	ctx             context.Context
 	ApiService      *ToolQuickAppManagementQuickAppGetV2ApiService
 	advertiserId    *int64
-	status          *[]*ToolQuickAppManagementQuickAppGetV2Status
+	status          *[]*models.ToolQuickAppManagementQuickAppGetV2Status
 	page            *int32
 	pageSize        *int32
-	updateTime      *ToolQuickAppManagementQuickAppGetV2UpdateTime
+	updateTime      *models.ToolQuickAppManagementQuickAppGetV2UpdateTime
 	searchKey       *string
 	quickAppIds     *[]int64
-	assetGeneration *ToolQuickAppManagementQuickAppGetV2AssetGeneration
+	assetGeneration *models.ToolQuickAppManagementQuickAppGetV2AssetGeneration
 }
 
 // 广告主ID
@@ -42,7 +43,7 @@ func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) AdvertiserId(ad
 }
 
 // 应用状态:  AUDIT_DOING:审核中  AUDIT_SEND_REJECTED：送审失败 AUDIT_REJECTED:审核失败  AUDIT_ACCEPTED:审核成功 REMOVED：已下架
-func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) Status(status []*ToolQuickAppManagementQuickAppGetV2Status) *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest {
+func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) Status(status []*models.ToolQuickAppManagementQuickAppGetV2Status) *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest {
 	r.status = &status
 	return r
 }
@@ -60,7 +61,7 @@ func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) PageSize(pageSi
 }
 
 // 修改时间
-func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) UpdateTime(updateTime ToolQuickAppManagementQuickAppGetV2UpdateTime) *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest {
+func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) UpdateTime(updateTime models.ToolQuickAppManagementQuickAppGetV2UpdateTime) *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest {
 	r.updateTime = &updateTime
 	return r
 }
@@ -77,12 +78,12 @@ func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) QuickAppIds(qui
 	return r
 }
 
-func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) AssetGeneration(assetGeneration ToolQuickAppManagementQuickAppGetV2AssetGeneration) *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest {
+func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) AssetGeneration(assetGeneration models.ToolQuickAppManagementQuickAppGetV2AssetGeneration) *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest {
 	r.assetGeneration = &assetGeneration
 	return r
 }
 
-func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) Execute() (*ToolQuickAppManagementQuickAppGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) Execute() (*models.ToolQuickAppManagementQuickAppGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -116,12 +117,12 @@ func (a *ToolQuickAppManagementQuickAppGetV2ApiService) Get(ctx context.Context)
 // Execute executes the request
 //
 //	@return ToolQuickAppManagementQuickAppGetV2Response
-func (a *ToolQuickAppManagementQuickAppGetV2ApiService) getExecute(r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) (*ToolQuickAppManagementQuickAppGetV2Response, *http.Response, error) {
+func (a *ToolQuickAppManagementQuickAppGetV2ApiService) getExecute(r *ApiOpenApi2ToolQuickAppManagementQuickAppGetGetRequest) (*models.ToolQuickAppManagementQuickAppGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolQuickAppManagementQuickAppGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolQuickAppManagementQuickAppGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -131,7 +132,7 @@ func (a *ToolQuickAppManagementQuickAppGetV2ApiService) getExecute(r *ApiOpenApi
 	localVarPath := localBasePath + "/open_api/2/tool/quick_app_management/quick_app/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

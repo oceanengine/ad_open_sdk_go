@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaEbpProductDeleteV30ApiService DpaEbpProductDeleteV30Api service
@@ -25,15 +26,15 @@ type DpaEbpProductDeleteV30ApiService service
 type ApiOpenApiV30DpaEbpProductDeletePostRequest struct {
 	ctx                           context.Context
 	ApiService                    *DpaEbpProductDeleteV30ApiService
-	dpaEbpProductDeleteV30Request *DpaEbpProductDeleteV30Request
+	dpaEbpProductDeleteV30Request *models.DpaEbpProductDeleteV30Request
 }
 
-func (r *ApiOpenApiV30DpaEbpProductDeletePostRequest) DpaEbpProductDeleteV30Request(dpaEbpProductDeleteV30Request DpaEbpProductDeleteV30Request) *ApiOpenApiV30DpaEbpProductDeletePostRequest {
+func (r *ApiOpenApiV30DpaEbpProductDeletePostRequest) DpaEbpProductDeleteV30Request(dpaEbpProductDeleteV30Request models.DpaEbpProductDeleteV30Request) *ApiOpenApiV30DpaEbpProductDeletePostRequest {
 	r.dpaEbpProductDeleteV30Request = &dpaEbpProductDeleteV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30DpaEbpProductDeletePostRequest) Execute() (*DpaEbpProductDeleteV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DpaEbpProductDeletePostRequest) Execute() (*models.DpaEbpProductDeleteV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DpaEbpProductDeleteV30ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return DpaEbpProductDeleteV30Response
-func (a *DpaEbpProductDeleteV30ApiService) postExecute(r *ApiOpenApiV30DpaEbpProductDeletePostRequest) (*DpaEbpProductDeleteV30Response, *http.Response, error) {
+func (a *DpaEbpProductDeleteV30ApiService) postExecute(r *ApiOpenApiV30DpaEbpProductDeletePostRequest) (*models.DpaEbpProductDeleteV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaEbpProductDeleteV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaEbpProductDeleteV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DpaEbpProductDeleteV30ApiService) postExecute(r *ApiOpenApiV30DpaEbpPro
 	localVarPath := localBasePath + "/open_api/v3.0/dpa/ebp/product/delete/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

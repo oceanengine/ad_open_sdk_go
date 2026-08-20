@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AdUpdateBidV2ApiService AdUpdateBidV2Api service
@@ -25,15 +26,15 @@ type AdUpdateBidV2ApiService service
 type ApiOpenApi2AdUpdateBidPostRequest struct {
 	ctx                  context.Context
 	ApiService           *AdUpdateBidV2ApiService
-	adUpdateBidV2Request *AdUpdateBidV2Request
+	adUpdateBidV2Request *models.AdUpdateBidV2Request
 }
 
-func (r *ApiOpenApi2AdUpdateBidPostRequest) AdUpdateBidV2Request(adUpdateBidV2Request AdUpdateBidV2Request) *ApiOpenApi2AdUpdateBidPostRequest {
+func (r *ApiOpenApi2AdUpdateBidPostRequest) AdUpdateBidV2Request(adUpdateBidV2Request models.AdUpdateBidV2Request) *ApiOpenApi2AdUpdateBidPostRequest {
 	r.adUpdateBidV2Request = &adUpdateBidV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AdUpdateBidPostRequest) Execute() (*AdUpdateBidV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AdUpdateBidPostRequest) Execute() (*models.AdUpdateBidV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AdUpdateBidV2ApiService) Post(ctx context.Context) *ApiOpenApi2AdUpdate
 // Execute executes the request
 //
 //	@return AdUpdateBidV2Response
-func (a *AdUpdateBidV2ApiService) postExecute(r *ApiOpenApi2AdUpdateBidPostRequest) (*AdUpdateBidV2Response, *http.Response, error) {
+func (a *AdUpdateBidV2ApiService) postExecute(r *ApiOpenApi2AdUpdateBidPostRequest) (*models.AdUpdateBidV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AdUpdateBidV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AdUpdateBidV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AdUpdateBidV2ApiService) postExecute(r *ApiOpenApi2AdUpdateBidPostReque
 	localVarPath := localBasePath + "/open_api/2/ad/update/bid/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // EventManagerDeepBidTypeGetV30ApiService EventManagerDeepBidTypeGetV30Api service
@@ -26,17 +27,17 @@ type ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest struct {
 	ctx                context.Context
 	ApiService         *EventManagerDeepBidTypeGetV30ApiService
 	advertiserId       *int64
-	externalAction     *EventManagerDeepBidTypeGetV30ExternalAction
+	externalAction     *models.EventManagerDeepBidTypeGetV30ExternalAction
 	assetId            *int64
-	deepExternalAction *EventManagerDeepBidTypeGetV30DeepExternalAction
+	deepExternalAction *models.EventManagerDeepBidTypeGetV30DeepExternalAction
 	convertId          *int64
-	deliveryMode       *EventManagerDeepBidTypeGetV30DeliveryMode
-	landingType        *EventManagerDeepBidTypeGetV30LandingType
-	adType             *EventManagerDeepBidTypeGetV30AdType
-	marketingGoal      *EventManagerDeepBidTypeGetV30MarketingGoal
-	microPromotionType *EventManagerDeepBidTypeGetV30MicroPromotionType
-	productSetting     *EventManagerDeepBidTypeGetV30ProductSetting
-	valueOptimizedType *EventManagerDeepBidTypeGetV30ValueOptimizedType
+	deliveryMode       *models.EventManagerDeepBidTypeGetV30DeliveryMode
+	landingType        *models.EventManagerDeepBidTypeGetV30LandingType
+	adType             *models.EventManagerDeepBidTypeGetV30AdType
+	marketingGoal      *models.EventManagerDeepBidTypeGetV30MarketingGoal
+	microPromotionType *models.EventManagerDeepBidTypeGetV30MicroPromotionType
+	productSetting     *models.EventManagerDeepBidTypeGetV30ProductSetting
+	valueOptimizedType *models.EventManagerDeepBidTypeGetV30ValueOptimizedType
 }
 
 // 广告主id
@@ -46,7 +47,7 @@ func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) AdvertiserId(adverti
 }
 
 // 优化目标
-func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) ExternalAction(externalAction EventManagerDeepBidTypeGetV30ExternalAction) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) ExternalAction(externalAction models.EventManagerDeepBidTypeGetV30ExternalAction) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
 	r.externalAction = &externalAction
 	return r
 }
@@ -58,7 +59,7 @@ func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) AssetId(assetId int6
 }
 
 // 深度优化目标，当优化目标不等于AD_CONVERT_TYPE_PAY、AD_CONVERT_TYPE_FORM、AD_CONVERT_TYPE_MULTIPLE时深度优化目标必填
-func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) DeepExternalAction(deepExternalAction EventManagerDeepBidTypeGetV30DeepExternalAction) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) DeepExternalAction(deepExternalAction models.EventManagerDeepBidTypeGetV30DeepExternalAction) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
 	r.deepExternalAction = &deepExternalAction
 	return r
 }
@@ -69,42 +70,42 @@ func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) ConvertId(convertId 
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) DeliveryMode(deliveryMode EventManagerDeepBidTypeGetV30DeliveryMode) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) DeliveryMode(deliveryMode models.EventManagerDeepBidTypeGetV30DeliveryMode) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
 	r.deliveryMode = &deliveryMode
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) LandingType(landingType EventManagerDeepBidTypeGetV30LandingType) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) LandingType(landingType models.EventManagerDeepBidTypeGetV30LandingType) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
 	r.landingType = &landingType
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) AdType(adType EventManagerDeepBidTypeGetV30AdType) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) AdType(adType models.EventManagerDeepBidTypeGetV30AdType) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
 	r.adType = &adType
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) MarketingGoal(marketingGoal EventManagerDeepBidTypeGetV30MarketingGoal) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) MarketingGoal(marketingGoal models.EventManagerDeepBidTypeGetV30MarketingGoal) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
 	r.marketingGoal = &marketingGoal
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) MicroPromotionType(microPromotionType EventManagerDeepBidTypeGetV30MicroPromotionType) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) MicroPromotionType(microPromotionType models.EventManagerDeepBidTypeGetV30MicroPromotionType) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
 	r.microPromotionType = &microPromotionType
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) ProductSetting(productSetting EventManagerDeepBidTypeGetV30ProductSetting) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) ProductSetting(productSetting models.EventManagerDeepBidTypeGetV30ProductSetting) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
 	r.productSetting = &productSetting
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) ValueOptimizedType(valueOptimizedType EventManagerDeepBidTypeGetV30ValueOptimizedType) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) ValueOptimizedType(valueOptimizedType models.EventManagerDeepBidTypeGetV30ValueOptimizedType) *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest {
 	r.valueOptimizedType = &valueOptimizedType
 	return r
 }
 
-func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) Execute() (*EventManagerDeepBidTypeGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) Execute() (*models.EventManagerDeepBidTypeGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -138,12 +139,12 @@ func (a *EventManagerDeepBidTypeGetV30ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return EventManagerDeepBidTypeGetV30Response
-func (a *EventManagerDeepBidTypeGetV30ApiService) getExecute(r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) (*EventManagerDeepBidTypeGetV30Response, *http.Response, error) {
+func (a *EventManagerDeepBidTypeGetV30ApiService) getExecute(r *ApiOpenApiV30EventManagerDeepBidTypeGetGetRequest) (*models.EventManagerDeepBidTypeGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *EventManagerDeepBidTypeGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.EventManagerDeepBidTypeGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -153,7 +154,7 @@ func (a *EventManagerDeepBidTypeGetV30ApiService) getExecute(r *ApiOpenApiV30Eve
 	localVarPath := localBasePath + "/open_api/v3.0/event_manager/deep_bid_type/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

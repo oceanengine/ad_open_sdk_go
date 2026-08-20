@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdMaterialAddV10ApiService QianchuanUniPromotionAdMaterialAddV10Api service
@@ -25,15 +26,15 @@ type QianchuanUniPromotionAdMaterialAddV10ApiService service
 type ApiOpenApiV10QianchuanUniPromotionAdMaterialAddPostRequest struct {
 	ctx                                          context.Context
 	ApiService                                   *QianchuanUniPromotionAdMaterialAddV10ApiService
-	qianchuanUniPromotionAdMaterialAddV10Request *QianchuanUniPromotionAdMaterialAddV10Request
+	qianchuanUniPromotionAdMaterialAddV10Request *models.QianchuanUniPromotionAdMaterialAddV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdMaterialAddPostRequest) QianchuanUniPromotionAdMaterialAddV10Request(qianchuanUniPromotionAdMaterialAddV10Request QianchuanUniPromotionAdMaterialAddV10Request) *ApiOpenApiV10QianchuanUniPromotionAdMaterialAddPostRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdMaterialAddPostRequest) QianchuanUniPromotionAdMaterialAddV10Request(qianchuanUniPromotionAdMaterialAddV10Request models.QianchuanUniPromotionAdMaterialAddV10Request) *ApiOpenApiV10QianchuanUniPromotionAdMaterialAddPostRequest {
 	r.qianchuanUniPromotionAdMaterialAddV10Request = &qianchuanUniPromotionAdMaterialAddV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdMaterialAddPostRequest) Execute() (*QianchuanUniPromotionAdMaterialAddV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdMaterialAddPostRequest) Execute() (*models.QianchuanUniPromotionAdMaterialAddV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanUniPromotionAdMaterialAddV10ApiService) Post(ctx context.Conte
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdMaterialAddV10Response
-func (a *QianchuanUniPromotionAdMaterialAddV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdMaterialAddPostRequest) (*QianchuanUniPromotionAdMaterialAddV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdMaterialAddV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdMaterialAddPostRequest) (*models.QianchuanUniPromotionAdMaterialAddV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdMaterialAddV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdMaterialAddV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanUniPromotionAdMaterialAddV10ApiService) postExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/material/add/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

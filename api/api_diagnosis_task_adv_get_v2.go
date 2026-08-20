@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DiagnosisTaskAdvGetV2ApiService DiagnosisTaskAdvGetV2Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApi2DiagnosisTaskAdvGetGetRequest) TaskIds(taskIds []int64) *Api
 	return r
 }
 
-func (r *ApiOpenApi2DiagnosisTaskAdvGetGetRequest) Execute() (*DiagnosisTaskAdvGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DiagnosisTaskAdvGetGetRequest) Execute() (*models.DiagnosisTaskAdvGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *DiagnosisTaskAdvGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2D
 // Execute executes the request
 //
 //	@return DiagnosisTaskAdvGetV2Response
-func (a *DiagnosisTaskAdvGetV2ApiService) getExecute(r *ApiOpenApi2DiagnosisTaskAdvGetGetRequest) (*DiagnosisTaskAdvGetV2Response, *http.Response, error) {
+func (a *DiagnosisTaskAdvGetV2ApiService) getExecute(r *ApiOpenApi2DiagnosisTaskAdvGetGetRequest) (*models.DiagnosisTaskAdvGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DiagnosisTaskAdvGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DiagnosisTaskAdvGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *DiagnosisTaskAdvGetV2ApiService) getExecute(r *ApiOpenApi2DiagnosisTask
 	localVarPath := localBasePath + "/open_api/2/diagnosis_task/adv/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

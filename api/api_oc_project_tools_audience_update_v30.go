@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // OcProjectToolsAudienceUpdateV30ApiService OcProjectToolsAudienceUpdateV30Api service
@@ -25,15 +26,15 @@ type OcProjectToolsAudienceUpdateV30ApiService service
 type ApiOpenApiV30OcProjectToolsAudienceUpdatePostRequest struct {
 	ctx                                    context.Context
 	ApiService                             *OcProjectToolsAudienceUpdateV30ApiService
-	ocProjectToolsAudienceUpdateV30Request *OcProjectToolsAudienceUpdateV30Request
+	ocProjectToolsAudienceUpdateV30Request *models.OcProjectToolsAudienceUpdateV30Request
 }
 
-func (r *ApiOpenApiV30OcProjectToolsAudienceUpdatePostRequest) OcProjectToolsAudienceUpdateV30Request(ocProjectToolsAudienceUpdateV30Request OcProjectToolsAudienceUpdateV30Request) *ApiOpenApiV30OcProjectToolsAudienceUpdatePostRequest {
+func (r *ApiOpenApiV30OcProjectToolsAudienceUpdatePostRequest) OcProjectToolsAudienceUpdateV30Request(ocProjectToolsAudienceUpdateV30Request models.OcProjectToolsAudienceUpdateV30Request) *ApiOpenApiV30OcProjectToolsAudienceUpdatePostRequest {
 	r.ocProjectToolsAudienceUpdateV30Request = &ocProjectToolsAudienceUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30OcProjectToolsAudienceUpdatePostRequest) Execute() (*OcProjectToolsAudienceUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30OcProjectToolsAudienceUpdatePostRequest) Execute() (*models.OcProjectToolsAudienceUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *OcProjectToolsAudienceUpdateV30ApiService) Post(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return OcProjectToolsAudienceUpdateV30Response
-func (a *OcProjectToolsAudienceUpdateV30ApiService) postExecute(r *ApiOpenApiV30OcProjectToolsAudienceUpdatePostRequest) (*OcProjectToolsAudienceUpdateV30Response, *http.Response, error) {
+func (a *OcProjectToolsAudienceUpdateV30ApiService) postExecute(r *ApiOpenApiV30OcProjectToolsAudienceUpdatePostRequest) (*models.OcProjectToolsAudienceUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *OcProjectToolsAudienceUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.OcProjectToolsAudienceUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *OcProjectToolsAudienceUpdateV30ApiService) postExecute(r *ApiOpenApiV30
 	localVarPath := localBasePath + "/open_api/v3.0/oc_project/tools_audience/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

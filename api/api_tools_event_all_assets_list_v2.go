@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEventAllAssetsListV2ApiService ToolsEventAllAssetsListV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsEventAllAssetsListGetRequest struct {
 	ctx          context.Context
 	ApiService   *ToolsEventAllAssetsListV2ApiService
 	advertiserId *int64
-	filtering    *ToolsEventAllAssetsListV2Filtering
+	filtering    *models.ToolsEventAllAssetsListV2Filtering
 	page         *int32
 	pageSize     *int32
 }
@@ -38,7 +39,7 @@ func (r *ApiOpenApi2ToolsEventAllAssetsListGetRequest) AdvertiserId(advertiserId
 }
 
 // 过滤条件
-func (r *ApiOpenApi2ToolsEventAllAssetsListGetRequest) Filtering(filtering ToolsEventAllAssetsListV2Filtering) *ApiOpenApi2ToolsEventAllAssetsListGetRequest {
+func (r *ApiOpenApi2ToolsEventAllAssetsListGetRequest) Filtering(filtering models.ToolsEventAllAssetsListV2Filtering) *ApiOpenApi2ToolsEventAllAssetsListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2ToolsEventAllAssetsListGetRequest) PageSize(pageSize int32) 
 	return r
 }
 
-func (r *ApiOpenApi2ToolsEventAllAssetsListGetRequest) Execute() (*ToolsEventAllAssetsListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsEventAllAssetsListGetRequest) Execute() (*models.ToolsEventAllAssetsListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *ToolsEventAllAssetsListV2ApiService) Get(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return ToolsEventAllAssetsListV2Response
-func (a *ToolsEventAllAssetsListV2ApiService) getExecute(r *ApiOpenApi2ToolsEventAllAssetsListGetRequest) (*ToolsEventAllAssetsListV2Response, *http.Response, error) {
+func (a *ToolsEventAllAssetsListV2ApiService) getExecute(r *ApiOpenApi2ToolsEventAllAssetsListGetRequest) (*models.ToolsEventAllAssetsListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEventAllAssetsListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEventAllAssetsListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *ToolsEventAllAssetsListV2ApiService) getExecute(r *ApiOpenApi2ToolsEven
 	localVarPath := localBasePath + "/open_api/2/tools/event/all_assets/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

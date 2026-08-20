@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsTaskRaiseGetV2ApiService ToolsTaskRaiseGetV2Api service
@@ -28,7 +29,7 @@ type ApiOpenApi2ToolsTaskRaiseGetGetRequest struct {
 	advertiserId    *int64
 	page            *int64
 	pageSize        *int64
-	platformVersion *ToolsTaskRaiseGetV2PlatformVersion
+	platformVersion *models.ToolsTaskRaiseGetV2PlatformVersion
 }
 
 // 广告主ID
@@ -50,12 +51,12 @@ func (r *ApiOpenApi2ToolsTaskRaiseGetGetRequest) PageSize(pageSize int64) *ApiOp
 }
 
 // 2.0平台填2
-func (r *ApiOpenApi2ToolsTaskRaiseGetGetRequest) PlatformVersion(platformVersion ToolsTaskRaiseGetV2PlatformVersion) *ApiOpenApi2ToolsTaskRaiseGetGetRequest {
+func (r *ApiOpenApi2ToolsTaskRaiseGetGetRequest) PlatformVersion(platformVersion models.ToolsTaskRaiseGetV2PlatformVersion) *ApiOpenApi2ToolsTaskRaiseGetGetRequest {
 	r.platformVersion = &platformVersion
 	return r
 }
 
-func (r *ApiOpenApi2ToolsTaskRaiseGetGetRequest) Execute() (*ToolsTaskRaiseGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsTaskRaiseGetGetRequest) Execute() (*models.ToolsTaskRaiseGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *ToolsTaskRaiseGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Too
 // Execute executes the request
 //
 //	@return ToolsTaskRaiseGetV2Response
-func (a *ToolsTaskRaiseGetV2ApiService) getExecute(r *ApiOpenApi2ToolsTaskRaiseGetGetRequest) (*ToolsTaskRaiseGetV2Response, *http.Response, error) {
+func (a *ToolsTaskRaiseGetV2ApiService) getExecute(r *ApiOpenApi2ToolsTaskRaiseGetGetRequest) (*models.ToolsTaskRaiseGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsTaskRaiseGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsTaskRaiseGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *ToolsTaskRaiseGetV2ApiService) getExecute(r *ApiOpenApi2ToolsTaskRaiseG
 	localVarPath := localBasePath + "/open_api/2/tools/task_raise/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsPromotionDiagnosisSuggestionAcceptV30ApiService ToolsPromotionDiagnosisSuggestionAcceptV30Api service
@@ -25,15 +26,15 @@ type ToolsPromotionDiagnosisSuggestionAcceptV30ApiService service
 type ApiOpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest struct {
 	ctx                                               context.Context
 	ApiService                                        *ToolsPromotionDiagnosisSuggestionAcceptV30ApiService
-	toolsPromotionDiagnosisSuggestionAcceptV30Request *ToolsPromotionDiagnosisSuggestionAcceptV30Request
+	toolsPromotionDiagnosisSuggestionAcceptV30Request *models.ToolsPromotionDiagnosisSuggestionAcceptV30Request
 }
 
-func (r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest) ToolsPromotionDiagnosisSuggestionAcceptV30Request(toolsPromotionDiagnosisSuggestionAcceptV30Request ToolsPromotionDiagnosisSuggestionAcceptV30Request) *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest {
+func (r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest) ToolsPromotionDiagnosisSuggestionAcceptV30Request(toolsPromotionDiagnosisSuggestionAcceptV30Request models.ToolsPromotionDiagnosisSuggestionAcceptV30Request) *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest {
 	r.toolsPromotionDiagnosisSuggestionAcceptV30Request = &toolsPromotionDiagnosisSuggestionAcceptV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest) Execute() (*ToolsPromotionDiagnosisSuggestionAcceptV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest) Execute() (*models.ToolsPromotionDiagnosisSuggestionAcceptV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsPromotionDiagnosisSuggestionAcceptV30ApiService) Post(ctx context.
 // Execute executes the request
 //
 //	@return ToolsPromotionDiagnosisSuggestionAcceptV30Response
-func (a *ToolsPromotionDiagnosisSuggestionAcceptV30ApiService) postExecute(r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest) (*ToolsPromotionDiagnosisSuggestionAcceptV30Response, *http.Response, error) {
+func (a *ToolsPromotionDiagnosisSuggestionAcceptV30ApiService) postExecute(r *ApiOpenApiV30ToolsPromotionDiagnosisSuggestionAcceptPostRequest) (*models.ToolsPromotionDiagnosisSuggestionAcceptV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsPromotionDiagnosisSuggestionAcceptV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsPromotionDiagnosisSuggestionAcceptV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsPromotionDiagnosisSuggestionAcceptV30ApiService) postExecute(r *Ap
 	localVarPath := localBasePath + "/open_api/v3.0/tools/promotion_diagnosis/suggestion/accept/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

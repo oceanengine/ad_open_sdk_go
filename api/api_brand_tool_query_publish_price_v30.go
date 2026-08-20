@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // BrandToolQueryPublishPriceV30ApiService BrandToolQueryPublishPriceV30Api service
@@ -26,17 +27,17 @@ type ApiOpenApiV30BrandToolQueryPublishPriceGetRequest struct {
 	ctx           context.Context
 	ApiService    *BrandToolQueryPublishPriceV30ApiService
 	advertiserId  *int64
-	classify      *BrandToolQueryPublishPriceV30Classify
-	proType       *BrandToolQueryPublishPriceV30ProType
-	adForm        *BrandToolQueryPublishPriceV30AdForm
-	appOrigin     *BrandToolQueryPublishPriceV30AppOrigin
-	pricingType   *BrandToolQueryPublishPriceV30PricingType
-	gdSendType    *BrandToolQueryPublishPriceV30GdSendType
+	classify      *models.BrandToolQueryPublishPriceV30Classify
+	proType       *models.BrandToolQueryPublishPriceV30ProType
+	adForm        *models.BrandToolQueryPublishPriceV30AdForm
+	appOrigin     *models.BrandToolQueryPublishPriceV30AppOrigin
+	pricingType   *models.BrandToolQueryPublishPriceV30PricingType
+	gdSendType    *models.BrandToolQueryPublishPriceV30GdSendType
 	policyNo      *string
-	deliveryInfo  *BrandToolQueryPublishPriceV30DeliveryInfo
+	deliveryInfo  *models.BrandToolQueryPublishPriceV30DeliveryInfo
 	intentionNo   *string
-	audienceInfo  *BrandToolQueryPublishPriceV30AudienceInfo
-	frequencyInfo *BrandToolQueryPublishPriceV30FrequencyInfo
+	audienceInfo  *models.BrandToolQueryPublishPriceV30AudienceInfo
+	frequencyInfo *models.BrandToolQueryPublishPriceV30FrequencyInfo
 }
 
 // 广告主ID
@@ -46,37 +47,37 @@ func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) AdvertiserId(adverti
 }
 
 // 广告类别
-func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) Classify(classify BrandToolQueryPublishPriceV30Classify) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) Classify(classify models.BrandToolQueryPublishPriceV30Classify) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
 	r.classify = &classify
 	return r
 }
 
 // 产品类型
-func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) ProType(proType BrandToolQueryPublishPriceV30ProType) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) ProType(proType models.BrandToolQueryPublishPriceV30ProType) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
 	r.proType = &proType
 	return r
 }
 
 // 投放产品
-func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) AdForm(adForm BrandToolQueryPublishPriceV30AdForm) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) AdForm(adForm models.BrandToolQueryPublishPriceV30AdForm) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
 	r.adForm = &adForm
 	return r
 }
 
 // 投放位置（媒体端）
-func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) AppOrigin(appOrigin BrandToolQueryPublishPriceV30AppOrigin) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) AppOrigin(appOrigin models.BrandToolQueryPublishPriceV30AppOrigin) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
 	r.appOrigin = &appOrigin
 	return r
 }
 
 // 计费类型
-func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) PricingType(pricingType BrandToolQueryPublishPriceV30PricingType) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) PricingType(pricingType models.BrandToolQueryPublishPriceV30PricingType) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
 	r.pricingType = &pricingType
 	return r
 }
 
 // 优化目标
-func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) GdSendType(gdSendType BrandToolQueryPublishPriceV30GdSendType) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) GdSendType(gdSendType models.BrandToolQueryPublishPriceV30GdSendType) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
 	r.gdSendType = &gdSendType
 	return r
 }
@@ -88,7 +89,7 @@ func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) PolicyNo(policyNo st
 }
 
 // 投放日期信息
-func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) DeliveryInfo(deliveryInfo BrandToolQueryPublishPriceV30DeliveryInfo) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) DeliveryInfo(deliveryInfo models.BrandToolQueryPublishPriceV30DeliveryInfo) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
 	r.deliveryInfo = &deliveryInfo
 	return r
 }
@@ -100,18 +101,18 @@ func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) IntentionNo(intentio
 }
 
 // 定向
-func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) AudienceInfo(audienceInfo BrandToolQueryPublishPriceV30AudienceInfo) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) AudienceInfo(audienceInfo models.BrandToolQueryPublishPriceV30AudienceInfo) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
 	r.audienceInfo = &audienceInfo
 	return r
 }
 
 // 频控
-func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) FrequencyInfo(frequencyInfo BrandToolQueryPublishPriceV30FrequencyInfo) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
+func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) FrequencyInfo(frequencyInfo models.BrandToolQueryPublishPriceV30FrequencyInfo) *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest {
 	r.frequencyInfo = &frequencyInfo
 	return r
 }
 
-func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) Execute() (*BrandToolQueryPublishPriceV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) Execute() (*models.BrandToolQueryPublishPriceV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -145,12 +146,12 @@ func (a *BrandToolQueryPublishPriceV30ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return BrandToolQueryPublishPriceV30Response
-func (a *BrandToolQueryPublishPriceV30ApiService) getExecute(r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) (*BrandToolQueryPublishPriceV30Response, *http.Response, error) {
+func (a *BrandToolQueryPublishPriceV30ApiService) getExecute(r *ApiOpenApiV30BrandToolQueryPublishPriceGetRequest) (*models.BrandToolQueryPublishPriceV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *BrandToolQueryPublishPriceV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.BrandToolQueryPublishPriceV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -160,7 +161,7 @@ func (a *BrandToolQueryPublishPriceV30ApiService) getExecute(r *ApiOpenApiV30Bra
 	localVarPath := localBasePath + "/open_api/v3.0/brand/tool/query_publish_price/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

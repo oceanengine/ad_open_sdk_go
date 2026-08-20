@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentCreditChargeSubmitV2ApiService AgentCreditChargeSubmitV2Api service
@@ -25,15 +26,15 @@ type AgentCreditChargeSubmitV2ApiService service
 type ApiOpenApi2AgentCreditChargeSubmitPostRequest struct {
 	ctx                              context.Context
 	ApiService                       *AgentCreditChargeSubmitV2ApiService
-	agentCreditChargeSubmitV2Request *AgentCreditChargeSubmitV2Request
+	agentCreditChargeSubmitV2Request *models.AgentCreditChargeSubmitV2Request
 }
 
-func (r *ApiOpenApi2AgentCreditChargeSubmitPostRequest) AgentCreditChargeSubmitV2Request(agentCreditChargeSubmitV2Request AgentCreditChargeSubmitV2Request) *ApiOpenApi2AgentCreditChargeSubmitPostRequest {
+func (r *ApiOpenApi2AgentCreditChargeSubmitPostRequest) AgentCreditChargeSubmitV2Request(agentCreditChargeSubmitV2Request models.AgentCreditChargeSubmitV2Request) *ApiOpenApi2AgentCreditChargeSubmitPostRequest {
 	r.agentCreditChargeSubmitV2Request = &agentCreditChargeSubmitV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AgentCreditChargeSubmitPostRequest) Execute() (*AgentCreditChargeSubmitV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentCreditChargeSubmitPostRequest) Execute() (*models.AgentCreditChargeSubmitV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AgentCreditChargeSubmitV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return AgentCreditChargeSubmitV2Response
-func (a *AgentCreditChargeSubmitV2ApiService) postExecute(r *ApiOpenApi2AgentCreditChargeSubmitPostRequest) (*AgentCreditChargeSubmitV2Response, *http.Response, error) {
+func (a *AgentCreditChargeSubmitV2ApiService) postExecute(r *ApiOpenApi2AgentCreditChargeSubmitPostRequest) (*models.AgentCreditChargeSubmitV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentCreditChargeSubmitV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentCreditChargeSubmitV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AgentCreditChargeSubmitV2ApiService) postExecute(r *ApiOpenApi2AgentCre
 	localVarPath := localBasePath + "/open_api/2/agent/credit_charge/submit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

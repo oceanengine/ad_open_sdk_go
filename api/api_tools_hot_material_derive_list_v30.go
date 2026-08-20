@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsHotMaterialDeriveListV30ApiService ToolsHotMaterialDeriveListV30Api service
@@ -28,7 +29,7 @@ type ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest struct {
 	advertiserId *int64
 	page         *int64
 	pageSize     *int64
-	filtering    *ToolsHotMaterialDeriveListV30Filtering
+	filtering    *models.ToolsHotMaterialDeriveListV30Filtering
 }
 
 func (r *ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest {
@@ -46,12 +47,12 @@ func (r *ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest) PageSize(pageSize in
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest) Filtering(filtering ToolsHotMaterialDeriveListV30Filtering) *ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest {
+func (r *ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest) Filtering(filtering models.ToolsHotMaterialDeriveListV30Filtering) *ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest) Execute() (*ToolsHotMaterialDeriveListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest) Execute() (*models.ToolsHotMaterialDeriveListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -85,12 +86,12 @@ func (a *ToolsHotMaterialDeriveListV30ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return ToolsHotMaterialDeriveListV30Response
-func (a *ToolsHotMaterialDeriveListV30ApiService) getExecute(r *ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest) (*ToolsHotMaterialDeriveListV30Response, *http.Response, error) {
+func (a *ToolsHotMaterialDeriveListV30ApiService) getExecute(r *ApiOpenApiV30ToolsHotMaterialDeriveListGetRequest) (*models.ToolsHotMaterialDeriveListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsHotMaterialDeriveListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsHotMaterialDeriveListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -100,7 +101,7 @@ func (a *ToolsHotMaterialDeriveListV30ApiService) getExecute(r *ApiOpenApiV30Too
 	localVarPath := localBasePath + "/open_api/v3.0/tools/hot_material_derive/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

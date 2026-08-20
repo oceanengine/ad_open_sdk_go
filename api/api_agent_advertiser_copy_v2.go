@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AgentAdvertiserCopyV2ApiService AgentAdvertiserCopyV2Api service
@@ -25,15 +26,15 @@ type AgentAdvertiserCopyV2ApiService service
 type ApiOpenApi2AgentAdvertiserCopyPostRequest struct {
 	ctx                          context.Context
 	ApiService                   *AgentAdvertiserCopyV2ApiService
-	agentAdvertiserCopyV2Request *AgentAdvertiserCopyV2Request
+	agentAdvertiserCopyV2Request *models.AgentAdvertiserCopyV2Request
 }
 
-func (r *ApiOpenApi2AgentAdvertiserCopyPostRequest) AgentAdvertiserCopyV2Request(agentAdvertiserCopyV2Request AgentAdvertiserCopyV2Request) *ApiOpenApi2AgentAdvertiserCopyPostRequest {
+func (r *ApiOpenApi2AgentAdvertiserCopyPostRequest) AgentAdvertiserCopyV2Request(agentAdvertiserCopyV2Request models.AgentAdvertiserCopyV2Request) *ApiOpenApi2AgentAdvertiserCopyPostRequest {
 	r.agentAdvertiserCopyV2Request = &agentAdvertiserCopyV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AgentAdvertiserCopyPostRequest) Execute() (*AgentAdvertiserCopyV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AgentAdvertiserCopyPostRequest) Execute() (*models.AgentAdvertiserCopyV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AgentAdvertiserCopyV2ApiService) Post(ctx context.Context) *ApiOpenApi2
 // Execute executes the request
 //
 //	@return AgentAdvertiserCopyV2Response
-func (a *AgentAdvertiserCopyV2ApiService) postExecute(r *ApiOpenApi2AgentAdvertiserCopyPostRequest) (*AgentAdvertiserCopyV2Response, *http.Response, error) {
+func (a *AgentAdvertiserCopyV2ApiService) postExecute(r *ApiOpenApi2AgentAdvertiserCopyPostRequest) (*models.AgentAdvertiserCopyV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AgentAdvertiserCopyV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AgentAdvertiserCopyV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AgentAdvertiserCopyV2ApiService) postExecute(r *ApiOpenApi2AgentAdverti
 	localVarPath := localBasePath + "/open_api/2/agent/advertiser/copy/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

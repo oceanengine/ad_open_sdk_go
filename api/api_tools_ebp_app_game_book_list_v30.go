@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpAppGameBookListV30ApiService ToolsEbpAppGameBookListV30Api service
@@ -26,14 +27,14 @@ type ApiOpenApiV30ToolsEbpAppGameBookListGetRequest struct {
 	ctx                  context.Context
 	ApiService           *ToolsEbpAppGameBookListV30ApiService
 	accountId            *int64
-	accountType          *ToolsEbpAppGameBookListV30AccountType
-	assetOwnership       *ToolsEbpAppGameBookListV30AssetOwnership
-	assetManagementScope *ToolsEbpAppGameBookListV30AssetManagementScope
+	accountType          *models.ToolsEbpAppGameBookListV30AccountType
+	assetOwnership       *models.ToolsEbpAppGameBookListV30AssetOwnership
+	assetManagementScope *models.ToolsEbpAppGameBookListV30AssetManagementScope
 	searchKey            *string
-	filtering            *ToolsEbpAppGameBookListV30Filtering
+	filtering            *models.ToolsEbpAppGameBookListV30Filtering
 	page                 *int64
 	pageSize             *int64
-	assetGeneration      *ToolsEbpAppGameBookListV30AssetGeneration
+	assetGeneration      *models.ToolsEbpAppGameBookListV30AssetGeneration
 }
 
 // 操作用户id
@@ -43,17 +44,17 @@ func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AccountId(accountId int
 }
 
 // 操作账号类型
-func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AccountType(accountType ToolsEbpAppGameBookListV30AccountType) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AccountType(accountType models.ToolsEbpAppGameBookListV30AccountType) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
 	r.accountType = &accountType
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AssetOwnership(assetOwnership ToolsEbpAppGameBookListV30AssetOwnership) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AssetOwnership(assetOwnership models.ToolsEbpAppGameBookListV30AssetOwnership) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
 	r.assetOwnership = &assetOwnership
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AssetManagementScope(assetManagementScope ToolsEbpAppGameBookListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AssetManagementScope(assetManagementScope models.ToolsEbpAppGameBookListV30AssetManagementScope) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
 	r.assetManagementScope = &assetManagementScope
 	return r
 }
@@ -65,7 +66,7 @@ func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) SearchKey(searchKey str
 }
 
 // 过滤器
-func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) Filtering(filtering ToolsEbpAppGameBookListV30Filtering) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) Filtering(filtering models.ToolsEbpAppGameBookListV30Filtering) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -83,12 +84,12 @@ func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) PageSize(pageSize int64
 }
 
 // 不传默认返回全部
-func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AssetGeneration(assetGeneration ToolsEbpAppGameBookListV30AssetGeneration) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) AssetGeneration(assetGeneration models.ToolsEbpAppGameBookListV30AssetGeneration) *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest {
 	r.assetGeneration = &assetGeneration
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) Execute() (*ToolsEbpAppGameBookListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) Execute() (*models.ToolsEbpAppGameBookListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -122,12 +123,12 @@ func (a *ToolsEbpAppGameBookListV30ApiService) Get(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsEbpAppGameBookListV30Response
-func (a *ToolsEbpAppGameBookListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) (*ToolsEbpAppGameBookListV30Response, *http.Response, error) {
+func (a *ToolsEbpAppGameBookListV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppGameBookListGetRequest) (*models.ToolsEbpAppGameBookListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpAppGameBookListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpAppGameBookListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -137,7 +138,7 @@ func (a *ToolsEbpAppGameBookListV30ApiService) getExecute(r *ApiOpenApiV30ToolsE
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/app_game_book/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

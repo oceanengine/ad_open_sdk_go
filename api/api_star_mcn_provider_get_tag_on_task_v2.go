@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarMcnProviderGetTagOnTaskV2ApiService StarMcnProviderGetTagOnTaskV2Api service
@@ -40,7 +41,7 @@ func (r *ApiOpenApi2StarMcnProviderGetTagOnTaskGetRequest) TaskId(taskId int64) 
 	return r
 }
 
-func (r *ApiOpenApi2StarMcnProviderGetTagOnTaskGetRequest) Execute() (*StarMcnProviderGetTagOnTaskV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarMcnProviderGetTagOnTaskGetRequest) Execute() (*models.StarMcnProviderGetTagOnTaskV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -74,12 +75,12 @@ func (a *StarMcnProviderGetTagOnTaskV2ApiService) Get(ctx context.Context) *ApiO
 // Execute executes the request
 //
 //	@return StarMcnProviderGetTagOnTaskV2Response
-func (a *StarMcnProviderGetTagOnTaskV2ApiService) getExecute(r *ApiOpenApi2StarMcnProviderGetTagOnTaskGetRequest) (*StarMcnProviderGetTagOnTaskV2Response, *http.Response, error) {
+func (a *StarMcnProviderGetTagOnTaskV2ApiService) getExecute(r *ApiOpenApi2StarMcnProviderGetTagOnTaskGetRequest) (*models.StarMcnProviderGetTagOnTaskV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarMcnProviderGetTagOnTaskV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarMcnProviderGetTagOnTaskV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -89,7 +90,7 @@ func (a *StarMcnProviderGetTagOnTaskV2ApiService) getExecute(r *ApiOpenApi2StarM
 	localVarPath := localBasePath + "/open_api/2/star/mcn/provider_get_tag_on_task/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

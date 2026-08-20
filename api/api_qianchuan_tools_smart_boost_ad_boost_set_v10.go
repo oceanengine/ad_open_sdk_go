@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanToolsSmartBoostAdBoostSetV10ApiService QianchuanToolsSmartBoostAdBoostSetV10Api service
@@ -25,15 +26,15 @@ type QianchuanToolsSmartBoostAdBoostSetV10ApiService service
 type ApiOpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest struct {
 	ctx                                          context.Context
 	ApiService                                   *QianchuanToolsSmartBoostAdBoostSetV10ApiService
-	qianchuanToolsSmartBoostAdBoostSetV10Request *QianchuanToolsSmartBoostAdBoostSetV10Request
+	qianchuanToolsSmartBoostAdBoostSetV10Request *models.QianchuanToolsSmartBoostAdBoostSetV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest) QianchuanToolsSmartBoostAdBoostSetV10Request(qianchuanToolsSmartBoostAdBoostSetV10Request QianchuanToolsSmartBoostAdBoostSetV10Request) *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest {
+func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest) QianchuanToolsSmartBoostAdBoostSetV10Request(qianchuanToolsSmartBoostAdBoostSetV10Request models.QianchuanToolsSmartBoostAdBoostSetV10Request) *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest {
 	r.qianchuanToolsSmartBoostAdBoostSetV10Request = &qianchuanToolsSmartBoostAdBoostSetV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest) Execute() (*QianchuanToolsSmartBoostAdBoostSetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest) Execute() (*models.QianchuanToolsSmartBoostAdBoostSetV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanToolsSmartBoostAdBoostSetV10ApiService) Post(ctx context.Conte
 // Execute executes the request
 //
 //	@return QianchuanToolsSmartBoostAdBoostSetV10Response
-func (a *QianchuanToolsSmartBoostAdBoostSetV10ApiService) postExecute(r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest) (*QianchuanToolsSmartBoostAdBoostSetV10Response, *http.Response, error) {
+func (a *QianchuanToolsSmartBoostAdBoostSetV10ApiService) postExecute(r *ApiOpenApiV10QianchuanToolsSmartBoostAdBoostSetPostRequest) (*models.QianchuanToolsSmartBoostAdBoostSetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanToolsSmartBoostAdBoostSetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanToolsSmartBoostAdBoostSetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanToolsSmartBoostAdBoostSetV10ApiService) postExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/tools/smart_boost/ad_boost/set/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

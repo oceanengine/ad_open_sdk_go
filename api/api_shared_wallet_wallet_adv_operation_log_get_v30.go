@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // SharedWalletWalletAdvOperationLogGetV30ApiService SharedWalletWalletAdvOperationLogGetV30Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest struct {
 	ctx         context.Context
 	ApiService  *SharedWalletWalletAdvOperationLogGetV30ApiService
 	accountId   *int64
-	accountType *SharedWalletWalletAdvOperationLogGetV30AccountType
+	accountType *models.SharedWalletWalletAdvOperationLogGetV30AccountType
 	walletId    *int64
-	filtering   *SharedWalletWalletAdvOperationLogGetV30Filtering
+	filtering   *models.SharedWalletWalletAdvOperationLogGetV30Filtering
 	page        *int64
 	pageSize    *int64
 }
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) AccountId(
 }
 
 // 账号类型，代理商/直客/ADV
-func (r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) AccountType(accountType SharedWalletWalletAdvOperationLogGetV30AccountType) *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest {
+func (r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) AccountType(accountType models.SharedWalletWalletAdvOperationLogGetV30AccountType) *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -51,7 +52,7 @@ func (r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) WalletId(w
 }
 
 // 过滤条件
-func (r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) Filtering(filtering SharedWalletWalletAdvOperationLogGetV30Filtering) *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest {
+func (r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) Filtering(filtering models.SharedWalletWalletAdvOperationLogGetV30Filtering) *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -68,7 +69,7 @@ func (r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) PageSize(p
 	return r
 }
 
-func (r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) Execute() (*SharedWalletWalletAdvOperationLogGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) Execute() (*models.SharedWalletWalletAdvOperationLogGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -102,12 +103,12 @@ func (a *SharedWalletWalletAdvOperationLogGetV30ApiService) Get(ctx context.Cont
 // Execute executes the request
 //
 //	@return SharedWalletWalletAdvOperationLogGetV30Response
-func (a *SharedWalletWalletAdvOperationLogGetV30ApiService) getExecute(r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) (*SharedWalletWalletAdvOperationLogGetV30Response, *http.Response, error) {
+func (a *SharedWalletWalletAdvOperationLogGetV30ApiService) getExecute(r *ApiOpenApiV30SharedWalletWalletAdvOperationLogGetGetRequest) (*models.SharedWalletWalletAdvOperationLogGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *SharedWalletWalletAdvOperationLogGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.SharedWalletWalletAdvOperationLogGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -117,7 +118,7 @@ func (a *SharedWalletWalletAdvOperationLogGetV30ApiService) getExecute(r *ApiOpe
 	localVarPath := localBasePath + "/open_api/v3.0/shared_wallet/wallet_adv_operation_log/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

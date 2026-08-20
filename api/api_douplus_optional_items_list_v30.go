@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DouplusOptionalItemsListV30ApiService DouplusOptionalItemsListV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30DouplusOptionalItemsListGetRequest struct {
 	ctx            context.Context
 	ApiService     *DouplusOptionalItemsListV30ApiService
 	awemeSecUid    *string
-	externalAction *DouplusOptionalItemsListV30ExternalAction
+	externalAction *models.DouplusOptionalItemsListV30ExternalAction
 	awemeId        *string
 	count          *int64
 	cursor         *int64
@@ -38,7 +39,7 @@ func (r *ApiOpenApiV30DouplusOptionalItemsListGetRequest) AwemeSecUid(awemeSecUi
 }
 
 // 投放目的，将返回对应投放目的下的可投视频清单 1. LIKE_COMMENT_AMOUNT 点赞评论量 2. FOLLOWER_COUNT 粉丝量 3. VIDEO_PLAYBACK_VOLUME 视频播放量 4. DY_PRIVATE_MESSAGES 抖音私信 5. HIGH_INTERACTION_QUALITY 互动质量高 6. HIGH_INTERACTION_FREQUENCY 互动数量多 7. ONLY_FOR_ACTIVATION 激活 8. COMMENT_LINK_CLICK 评论链接点击 9. LIVE_ROOM_POPULARITY 直播间人气 10. LIVE_ROOM_FOLLOWER_INCREASE 直播间涨粉 11. VIEWER_DONATION 观众打赏 12. VIEWER_INTERACTION 观众互动
-func (r *ApiOpenApiV30DouplusOptionalItemsListGetRequest) ExternalAction(externalAction DouplusOptionalItemsListV30ExternalAction) *ApiOpenApiV30DouplusOptionalItemsListGetRequest {
+func (r *ApiOpenApiV30DouplusOptionalItemsListGetRequest) ExternalAction(externalAction models.DouplusOptionalItemsListV30ExternalAction) *ApiOpenApiV30DouplusOptionalItemsListGetRequest {
 	r.externalAction = &externalAction
 	return r
 }
@@ -61,7 +62,7 @@ func (r *ApiOpenApiV30DouplusOptionalItemsListGetRequest) Cursor(cursor int64) *
 	return r
 }
 
-func (r *ApiOpenApiV30DouplusOptionalItemsListGetRequest) Execute() (*DouplusOptionalItemsListV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30DouplusOptionalItemsListGetRequest) Execute() (*models.DouplusOptionalItemsListV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -95,12 +96,12 @@ func (a *DouplusOptionalItemsListV30ApiService) Get(ctx context.Context) *ApiOpe
 // Execute executes the request
 //
 //	@return DouplusOptionalItemsListV30Response
-func (a *DouplusOptionalItemsListV30ApiService) getExecute(r *ApiOpenApiV30DouplusOptionalItemsListGetRequest) (*DouplusOptionalItemsListV30Response, *http.Response, error) {
+func (a *DouplusOptionalItemsListV30ApiService) getExecute(r *ApiOpenApiV30DouplusOptionalItemsListGetRequest) (*models.DouplusOptionalItemsListV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DouplusOptionalItemsListV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DouplusOptionalItemsListV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -110,7 +111,7 @@ func (a *DouplusOptionalItemsListV30ApiService) getExecute(r *ApiOpenApiV30Doupl
 	localVarPath := localBasePath + "/open_api/v3.0/douplus/optional_items/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.awemeSecUid == nil {

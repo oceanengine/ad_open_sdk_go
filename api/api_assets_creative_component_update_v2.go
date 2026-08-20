@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // AssetsCreativeComponentUpdateV2ApiService AssetsCreativeComponentUpdateV2Api service
@@ -25,15 +26,15 @@ type AssetsCreativeComponentUpdateV2ApiService service
 type ApiOpenApi2AssetsCreativeComponentUpdatePostRequest struct {
 	ctx                                    context.Context
 	ApiService                             *AssetsCreativeComponentUpdateV2ApiService
-	assetsCreativeComponentUpdateV2Request *AssetsCreativeComponentUpdateV2Request
+	assetsCreativeComponentUpdateV2Request *models.AssetsCreativeComponentUpdateV2Request
 }
 
-func (r *ApiOpenApi2AssetsCreativeComponentUpdatePostRequest) AssetsCreativeComponentUpdateV2Request(assetsCreativeComponentUpdateV2Request AssetsCreativeComponentUpdateV2Request) *ApiOpenApi2AssetsCreativeComponentUpdatePostRequest {
+func (r *ApiOpenApi2AssetsCreativeComponentUpdatePostRequest) AssetsCreativeComponentUpdateV2Request(assetsCreativeComponentUpdateV2Request models.AssetsCreativeComponentUpdateV2Request) *ApiOpenApi2AssetsCreativeComponentUpdatePostRequest {
 	r.assetsCreativeComponentUpdateV2Request = &assetsCreativeComponentUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2AssetsCreativeComponentUpdatePostRequest) Execute() (*AssetsCreativeComponentUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2AssetsCreativeComponentUpdatePostRequest) Execute() (*models.AssetsCreativeComponentUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *AssetsCreativeComponentUpdateV2ApiService) Post(ctx context.Context) *A
 // Execute executes the request
 //
 //	@return AssetsCreativeComponentUpdateV2Response
-func (a *AssetsCreativeComponentUpdateV2ApiService) postExecute(r *ApiOpenApi2AssetsCreativeComponentUpdatePostRequest) (*AssetsCreativeComponentUpdateV2Response, *http.Response, error) {
+func (a *AssetsCreativeComponentUpdateV2ApiService) postExecute(r *ApiOpenApi2AssetsCreativeComponentUpdatePostRequest) (*models.AssetsCreativeComponentUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *AssetsCreativeComponentUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.AssetsCreativeComponentUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *AssetsCreativeComponentUpdateV2ApiService) postExecute(r *ApiOpenApi2As
 	localVarPath := localBasePath + "/open_api/2/assets/creative_component/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportAgentGetV2V2ApiService ReportAgentGetV2V2Api service
@@ -29,7 +30,7 @@ type ApiOpenApi2ReportAgentGetV2GetRequest struct {
 	cursor     *int64
 	cursorSize *int64
 	endDate    **string
-	filtering  *ReportAgentGetV2V2Filtering
+	filtering  *models.ReportAgentGetV2V2Filtering
 	page       *int64
 	pageSize   *int64
 	startDate  **string
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2ReportAgentGetV2GetRequest) EndDate(endDate *string) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApi2ReportAgentGetV2GetRequest) Filtering(filtering ReportAgentGetV2V2Filtering) *ApiOpenApi2ReportAgentGetV2GetRequest {
+func (r *ApiOpenApi2ReportAgentGetV2GetRequest) Filtering(filtering models.ReportAgentGetV2V2Filtering) *ApiOpenApi2ReportAgentGetV2GetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -75,7 +76,7 @@ func (r *ApiOpenApi2ReportAgentGetV2GetRequest) StartDate(startDate *string) *Ap
 	return r
 }
 
-func (r *ApiOpenApi2ReportAgentGetV2GetRequest) Execute() (*ReportAgentGetV2V2Response, *http.Response, error) {
+func (r *ApiOpenApi2ReportAgentGetV2GetRequest) Execute() (*models.ReportAgentGetV2V2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -109,12 +110,12 @@ func (a *ReportAgentGetV2V2ApiService) Get(ctx context.Context) *ApiOpenApi2Repo
 // Execute executes the request
 //
 //	@return ReportAgentGetV2V2Response
-func (a *ReportAgentGetV2V2ApiService) getExecute(r *ApiOpenApi2ReportAgentGetV2GetRequest) (*ReportAgentGetV2V2Response, *http.Response, error) {
+func (a *ReportAgentGetV2V2ApiService) getExecute(r *ApiOpenApi2ReportAgentGetV2GetRequest) (*models.ReportAgentGetV2V2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportAgentGetV2V2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportAgentGetV2V2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -124,7 +125,7 @@ func (a *ReportAgentGetV2V2ApiService) getExecute(r *ApiOpenApi2ReportAgentGetV2
 	localVarPath := localBasePath + "/open_api/2/report/agent/get_v2/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

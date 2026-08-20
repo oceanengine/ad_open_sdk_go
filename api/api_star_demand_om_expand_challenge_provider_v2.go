@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDemandOmExpandChallengeProviderV2ApiService StarDemandOmExpandChallengeProviderV2Api service
@@ -25,15 +26,15 @@ type StarDemandOmExpandChallengeProviderV2ApiService service
 type ApiOpenApi2StarDemandOmExpandChallengeProviderPostRequest struct {
 	ctx                                          context.Context
 	ApiService                                   *StarDemandOmExpandChallengeProviderV2ApiService
-	starDemandOmExpandChallengeProviderV2Request *StarDemandOmExpandChallengeProviderV2Request
+	starDemandOmExpandChallengeProviderV2Request *models.StarDemandOmExpandChallengeProviderV2Request
 }
 
-func (r *ApiOpenApi2StarDemandOmExpandChallengeProviderPostRequest) StarDemandOmExpandChallengeProviderV2Request(starDemandOmExpandChallengeProviderV2Request StarDemandOmExpandChallengeProviderV2Request) *ApiOpenApi2StarDemandOmExpandChallengeProviderPostRequest {
+func (r *ApiOpenApi2StarDemandOmExpandChallengeProviderPostRequest) StarDemandOmExpandChallengeProviderV2Request(starDemandOmExpandChallengeProviderV2Request models.StarDemandOmExpandChallengeProviderV2Request) *ApiOpenApi2StarDemandOmExpandChallengeProviderPostRequest {
 	r.starDemandOmExpandChallengeProviderV2Request = &starDemandOmExpandChallengeProviderV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarDemandOmExpandChallengeProviderPostRequest) Execute() (*StarDemandOmExpandChallengeProviderV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDemandOmExpandChallengeProviderPostRequest) Execute() (*models.StarDemandOmExpandChallengeProviderV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarDemandOmExpandChallengeProviderV2ApiService) Post(ctx context.Conte
 // Execute executes the request
 //
 //	@return StarDemandOmExpandChallengeProviderV2Response
-func (a *StarDemandOmExpandChallengeProviderV2ApiService) postExecute(r *ApiOpenApi2StarDemandOmExpandChallengeProviderPostRequest) (*StarDemandOmExpandChallengeProviderV2Response, *http.Response, error) {
+func (a *StarDemandOmExpandChallengeProviderV2ApiService) postExecute(r *ApiOpenApi2StarDemandOmExpandChallengeProviderPostRequest) (*models.StarDemandOmExpandChallengeProviderV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDemandOmExpandChallengeProviderV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDemandOmExpandChallengeProviderV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarDemandOmExpandChallengeProviderV2ApiService) postExecute(r *ApiOpen
 	localVarPath := localBasePath + "/open_api/2/star/demand/om_expand_challenge_provider/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

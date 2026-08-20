@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FileMaterialAttributesListV2ApiService FileMaterialAttributesListV2Api service
@@ -26,10 +27,10 @@ type ApiOpenApi2FileMaterialAttributesListGetRequest struct {
 	ctx                         context.Context
 	ApiService                  *FileMaterialAttributesListV2ApiService
 	accountId                   *int64
-	accountType                 *FileMaterialAttributesListV2AccountType
+	accountType                 *models.FileMaterialAttributesListV2AccountType
 	pageSize                    *int32
 	page                        *int32
-	filtering                   *FileMaterialAttributesListV2Filtering
+	filtering                   *models.FileMaterialAttributesListV2Filtering
 	returnLowqualitySuggestions *bool
 }
 
@@ -40,7 +41,7 @@ func (r *ApiOpenApi2FileMaterialAttributesListGetRequest) AccountId(accountId in
 }
 
 // 账户类型，允许值：
-func (r *ApiOpenApi2FileMaterialAttributesListGetRequest) AccountType(accountType FileMaterialAttributesListV2AccountType) *ApiOpenApi2FileMaterialAttributesListGetRequest {
+func (r *ApiOpenApi2FileMaterialAttributesListGetRequest) AccountType(accountType models.FileMaterialAttributesListV2AccountType) *ApiOpenApi2FileMaterialAttributesListGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -58,7 +59,7 @@ func (r *ApiOpenApi2FileMaterialAttributesListGetRequest) Page(page int32) *ApiO
 }
 
 // 过滤条件
-func (r *ApiOpenApi2FileMaterialAttributesListGetRequest) Filtering(filtering FileMaterialAttributesListV2Filtering) *ApiOpenApi2FileMaterialAttributesListGetRequest {
+func (r *ApiOpenApi2FileMaterialAttributesListGetRequest) Filtering(filtering models.FileMaterialAttributesListV2Filtering) *ApiOpenApi2FileMaterialAttributesListGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -68,7 +69,7 @@ func (r *ApiOpenApi2FileMaterialAttributesListGetRequest) ReturnLowqualitySugges
 	return r
 }
 
-func (r *ApiOpenApi2FileMaterialAttributesListGetRequest) Execute() (*FileMaterialAttributesListV2Response, *http.Response, error) {
+func (r *ApiOpenApi2FileMaterialAttributesListGetRequest) Execute() (*models.FileMaterialAttributesListV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -102,12 +103,12 @@ func (a *FileMaterialAttributesListV2ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return FileMaterialAttributesListV2Response
-func (a *FileMaterialAttributesListV2ApiService) getExecute(r *ApiOpenApi2FileMaterialAttributesListGetRequest) (*FileMaterialAttributesListV2Response, *http.Response, error) {
+func (a *FileMaterialAttributesListV2ApiService) getExecute(r *ApiOpenApi2FileMaterialAttributesListGetRequest) (*models.FileMaterialAttributesListV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FileMaterialAttributesListV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FileMaterialAttributesListV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -117,7 +118,7 @@ func (a *FileMaterialAttributesListV2ApiService) getExecute(r *ApiOpenApi2FileMa
 	localVarPath := localBasePath + "/open_api/2/file/material_attributes/list/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

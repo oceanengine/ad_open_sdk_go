@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ReportCreativeGetV2ApiService ReportCreativeGetV2Api service
@@ -28,14 +29,14 @@ type ApiOpenApi2ReportCreativeGetGetRequest struct {
 	advertiserId    *int64
 	endDate         **string
 	fields          *[]string
-	filtering       *ReportCreativeGetV2Filtering
-	groupBy         *[]*ReportCreativeGetV2GroupBy
-	orderField      *ReportCreativeGetV2OrderField
-	orderType       *ReportCreativeGetV2OrderType
+	filtering       *models.ReportCreativeGetV2Filtering
+	groupBy         *[]*models.ReportCreativeGetV2GroupBy
+	orderField      *models.ReportCreativeGetV2OrderField
+	orderType       *models.ReportCreativeGetV2OrderType
 	page            *int64
 	pageSize        *int64
 	startDate       **string
-	timeGranularity *ReportCreativeGetV2TimeGranularity
+	timeGranularity *models.ReportCreativeGetV2TimeGranularity
 }
 
 func (r *ApiOpenApi2ReportCreativeGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApi2ReportCreativeGetGetRequest {
@@ -53,22 +54,22 @@ func (r *ApiOpenApi2ReportCreativeGetGetRequest) Fields(fields []string) *ApiOpe
 	return r
 }
 
-func (r *ApiOpenApi2ReportCreativeGetGetRequest) Filtering(filtering ReportCreativeGetV2Filtering) *ApiOpenApi2ReportCreativeGetGetRequest {
+func (r *ApiOpenApi2ReportCreativeGetGetRequest) Filtering(filtering models.ReportCreativeGetV2Filtering) *ApiOpenApi2ReportCreativeGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
 
-func (r *ApiOpenApi2ReportCreativeGetGetRequest) GroupBy(groupBy []*ReportCreativeGetV2GroupBy) *ApiOpenApi2ReportCreativeGetGetRequest {
+func (r *ApiOpenApi2ReportCreativeGetGetRequest) GroupBy(groupBy []*models.ReportCreativeGetV2GroupBy) *ApiOpenApi2ReportCreativeGetGetRequest {
 	r.groupBy = &groupBy
 	return r
 }
 
-func (r *ApiOpenApi2ReportCreativeGetGetRequest) OrderField(orderField ReportCreativeGetV2OrderField) *ApiOpenApi2ReportCreativeGetGetRequest {
+func (r *ApiOpenApi2ReportCreativeGetGetRequest) OrderField(orderField models.ReportCreativeGetV2OrderField) *ApiOpenApi2ReportCreativeGetGetRequest {
 	r.orderField = &orderField
 	return r
 }
 
-func (r *ApiOpenApi2ReportCreativeGetGetRequest) OrderType(orderType ReportCreativeGetV2OrderType) *ApiOpenApi2ReportCreativeGetGetRequest {
+func (r *ApiOpenApi2ReportCreativeGetGetRequest) OrderType(orderType models.ReportCreativeGetV2OrderType) *ApiOpenApi2ReportCreativeGetGetRequest {
 	r.orderType = &orderType
 	return r
 }
@@ -88,12 +89,12 @@ func (r *ApiOpenApi2ReportCreativeGetGetRequest) StartDate(startDate *string) *A
 	return r
 }
 
-func (r *ApiOpenApi2ReportCreativeGetGetRequest) TimeGranularity(timeGranularity ReportCreativeGetV2TimeGranularity) *ApiOpenApi2ReportCreativeGetGetRequest {
+func (r *ApiOpenApi2ReportCreativeGetGetRequest) TimeGranularity(timeGranularity models.ReportCreativeGetV2TimeGranularity) *ApiOpenApi2ReportCreativeGetGetRequest {
 	r.timeGranularity = &timeGranularity
 	return r
 }
 
-func (r *ApiOpenApi2ReportCreativeGetGetRequest) Execute() (*ReportCreativeGetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ReportCreativeGetGetRequest) Execute() (*models.ReportCreativeGetV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -127,12 +128,12 @@ func (a *ReportCreativeGetV2ApiService) Get(ctx context.Context) *ApiOpenApi2Rep
 // Execute executes the request
 //
 //	@return ReportCreativeGetV2Response
-func (a *ReportCreativeGetV2ApiService) getExecute(r *ApiOpenApi2ReportCreativeGetGetRequest) (*ReportCreativeGetV2Response, *http.Response, error) {
+func (a *ReportCreativeGetV2ApiService) getExecute(r *ApiOpenApi2ReportCreativeGetGetRequest) (*models.ReportCreativeGetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ReportCreativeGetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ReportCreativeGetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -142,7 +143,7 @@ func (a *ReportCreativeGetV2ApiService) getExecute(r *ApiOpenApi2ReportCreativeG
 	localVarPath := localBasePath + "/open_api/2/report/creative/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

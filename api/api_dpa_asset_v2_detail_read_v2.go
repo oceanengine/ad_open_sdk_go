@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // DpaAssetV2DetailReadV2ApiService DpaAssetV2DetailReadV2Api service
@@ -25,15 +26,15 @@ type DpaAssetV2DetailReadV2ApiService service
 type ApiOpenApi2DpaAssetV2DetailReadPostRequest struct {
 	ctx                           context.Context
 	ApiService                    *DpaAssetV2DetailReadV2ApiService
-	dpaAssetV2DetailReadV2Request *DpaAssetV2DetailReadV2Request
+	dpaAssetV2DetailReadV2Request *models.DpaAssetV2DetailReadV2Request
 }
 
-func (r *ApiOpenApi2DpaAssetV2DetailReadPostRequest) DpaAssetV2DetailReadV2Request(dpaAssetV2DetailReadV2Request DpaAssetV2DetailReadV2Request) *ApiOpenApi2DpaAssetV2DetailReadPostRequest {
+func (r *ApiOpenApi2DpaAssetV2DetailReadPostRequest) DpaAssetV2DetailReadV2Request(dpaAssetV2DetailReadV2Request models.DpaAssetV2DetailReadV2Request) *ApiOpenApi2DpaAssetV2DetailReadPostRequest {
 	r.dpaAssetV2DetailReadV2Request = &dpaAssetV2DetailReadV2Request
 	return r
 }
 
-func (r *ApiOpenApi2DpaAssetV2DetailReadPostRequest) Execute() (*DpaAssetV2DetailReadV2Response, *http.Response, error) {
+func (r *ApiOpenApi2DpaAssetV2DetailReadPostRequest) Execute() (*models.DpaAssetV2DetailReadV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *DpaAssetV2DetailReadV2ApiService) Post(ctx context.Context) *ApiOpenApi
 // Execute executes the request
 //
 //	@return DpaAssetV2DetailReadV2Response
-func (a *DpaAssetV2DetailReadV2ApiService) postExecute(r *ApiOpenApi2DpaAssetV2DetailReadPostRequest) (*DpaAssetV2DetailReadV2Response, *http.Response, error) {
+func (a *DpaAssetV2DetailReadV2ApiService) postExecute(r *ApiOpenApi2DpaAssetV2DetailReadPostRequest) (*models.DpaAssetV2DetailReadV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *DpaAssetV2DetailReadV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.DpaAssetV2DetailReadV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *DpaAssetV2DetailReadV2ApiService) postExecute(r *ApiOpenApi2DpaAssetV2D
 	localVarPath := localBasePath + "/open_api/2/dpa/asset_v2/detail/read/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

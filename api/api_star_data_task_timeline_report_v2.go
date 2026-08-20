@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarDataTaskTimelineReportV2ApiService StarDataTaskTimelineReportV2Api service
@@ -55,7 +56,7 @@ func (r *ApiOpenApi2StarDataTaskTimelineReportGetRequest) OuterTaskIdList(outerT
 	return r
 }
 
-func (r *ApiOpenApi2StarDataTaskTimelineReportGetRequest) Execute() (*StarDataTaskTimelineReportV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarDataTaskTimelineReportGetRequest) Execute() (*models.StarDataTaskTimelineReportV2Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -89,12 +90,12 @@ func (a *StarDataTaskTimelineReportV2ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return StarDataTaskTimelineReportV2Response
-func (a *StarDataTaskTimelineReportV2ApiService) getExecute(r *ApiOpenApi2StarDataTaskTimelineReportGetRequest) (*StarDataTaskTimelineReportV2Response, *http.Response, error) {
+func (a *StarDataTaskTimelineReportV2ApiService) getExecute(r *ApiOpenApi2StarDataTaskTimelineReportGetRequest) (*models.StarDataTaskTimelineReportV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarDataTaskTimelineReportV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarDataTaskTimelineReportV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -104,7 +105,7 @@ func (a *StarDataTaskTimelineReportV2ApiService) getExecute(r *ApiOpenApi2StarDa
 	localVarPath := localBasePath + "/open_api/2/star/data/task_timeline_report/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.starId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarChallengeAddBudgetV2ApiService StarChallengeAddBudgetV2Api service
@@ -25,15 +26,15 @@ type StarChallengeAddBudgetV2ApiService service
 type ApiOpenApi2StarChallengeAddBudgetPostRequest struct {
 	ctx                             context.Context
 	ApiService                      *StarChallengeAddBudgetV2ApiService
-	starChallengeAddBudgetV2Request *StarChallengeAddBudgetV2Request
+	starChallengeAddBudgetV2Request *models.StarChallengeAddBudgetV2Request
 }
 
-func (r *ApiOpenApi2StarChallengeAddBudgetPostRequest) StarChallengeAddBudgetV2Request(starChallengeAddBudgetV2Request StarChallengeAddBudgetV2Request) *ApiOpenApi2StarChallengeAddBudgetPostRequest {
+func (r *ApiOpenApi2StarChallengeAddBudgetPostRequest) StarChallengeAddBudgetV2Request(starChallengeAddBudgetV2Request models.StarChallengeAddBudgetV2Request) *ApiOpenApi2StarChallengeAddBudgetPostRequest {
 	r.starChallengeAddBudgetV2Request = &starChallengeAddBudgetV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarChallengeAddBudgetPostRequest) Execute() (*StarChallengeAddBudgetV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarChallengeAddBudgetPostRequest) Execute() (*models.StarChallengeAddBudgetV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarChallengeAddBudgetV2ApiService) Post(ctx context.Context) *ApiOpenA
 // Execute executes the request
 //
 //	@return StarChallengeAddBudgetV2Response
-func (a *StarChallengeAddBudgetV2ApiService) postExecute(r *ApiOpenApi2StarChallengeAddBudgetPostRequest) (*StarChallengeAddBudgetV2Response, *http.Response, error) {
+func (a *StarChallengeAddBudgetV2ApiService) postExecute(r *ApiOpenApi2StarChallengeAddBudgetPostRequest) (*models.StarChallengeAddBudgetV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarChallengeAddBudgetV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarChallengeAddBudgetV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarChallengeAddBudgetV2ApiService) postExecute(r *ApiOpenApi2StarChall
 	localVarPath := localBasePath + "/open_api/2/star/challenge/add_budget/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

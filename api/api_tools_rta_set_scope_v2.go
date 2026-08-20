@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsRtaSetScopeV2ApiService ToolsRtaSetScopeV2Api service
@@ -25,15 +26,15 @@ type ToolsRtaSetScopeV2ApiService service
 type ApiOpenApi2ToolsRtaSetScopePostRequest struct {
 	ctx                       context.Context
 	ApiService                *ToolsRtaSetScopeV2ApiService
-	toolsRtaSetScopeV2Request *ToolsRtaSetScopeV2Request
+	toolsRtaSetScopeV2Request *models.ToolsRtaSetScopeV2Request
 }
 
-func (r *ApiOpenApi2ToolsRtaSetScopePostRequest) ToolsRtaSetScopeV2Request(toolsRtaSetScopeV2Request ToolsRtaSetScopeV2Request) *ApiOpenApi2ToolsRtaSetScopePostRequest {
+func (r *ApiOpenApi2ToolsRtaSetScopePostRequest) ToolsRtaSetScopeV2Request(toolsRtaSetScopeV2Request models.ToolsRtaSetScopeV2Request) *ApiOpenApi2ToolsRtaSetScopePostRequest {
 	r.toolsRtaSetScopeV2Request = &toolsRtaSetScopeV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsRtaSetScopePostRequest) Execute() (*ToolsRtaSetScopeV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsRtaSetScopePostRequest) Execute() (*models.ToolsRtaSetScopeV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *ToolsRtaSetScopeV2ApiService) Post(ctx context.Context) *ApiOpenApi2Too
 // Execute executes the request
 //
 //	@return ToolsRtaSetScopeV2Response
-func (a *ToolsRtaSetScopeV2ApiService) postExecute(r *ApiOpenApi2ToolsRtaSetScopePostRequest) (*ToolsRtaSetScopeV2Response, *http.Response, error) {
+func (a *ToolsRtaSetScopeV2ApiService) postExecute(r *ApiOpenApi2ToolsRtaSetScopePostRequest) (*models.ToolsRtaSetScopeV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsRtaSetScopeV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsRtaSetScopeV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *ToolsRtaSetScopeV2ApiService) postExecute(r *ApiOpenApi2ToolsRtaSetScop
 	localVarPath := localBasePath + "/open_api/2/tools/rta/set_scope/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

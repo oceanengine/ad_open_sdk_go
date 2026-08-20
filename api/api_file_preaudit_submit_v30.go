@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // FilePreauditSubmitV30ApiService FilePreauditSubmitV30Api service
@@ -25,15 +26,15 @@ type FilePreauditSubmitV30ApiService service
 type ApiOpenApiV30FilePreauditSubmitPostRequest struct {
 	ctx                          context.Context
 	ApiService                   *FilePreauditSubmitV30ApiService
-	filePreauditSubmitV30Request *FilePreauditSubmitV30Request
+	filePreauditSubmitV30Request *models.FilePreauditSubmitV30Request
 }
 
-func (r *ApiOpenApiV30FilePreauditSubmitPostRequest) FilePreauditSubmitV30Request(filePreauditSubmitV30Request FilePreauditSubmitV30Request) *ApiOpenApiV30FilePreauditSubmitPostRequest {
+func (r *ApiOpenApiV30FilePreauditSubmitPostRequest) FilePreauditSubmitV30Request(filePreauditSubmitV30Request models.FilePreauditSubmitV30Request) *ApiOpenApiV30FilePreauditSubmitPostRequest {
 	r.filePreauditSubmitV30Request = &filePreauditSubmitV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30FilePreauditSubmitPostRequest) Execute() (*FilePreauditSubmitV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30FilePreauditSubmitPostRequest) Execute() (*models.FilePreauditSubmitV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *FilePreauditSubmitV30ApiService) Post(ctx context.Context) *ApiOpenApiV
 // Execute executes the request
 //
 //	@return FilePreauditSubmitV30Response
-func (a *FilePreauditSubmitV30ApiService) postExecute(r *ApiOpenApiV30FilePreauditSubmitPostRequest) (*FilePreauditSubmitV30Response, *http.Response, error) {
+func (a *FilePreauditSubmitV30ApiService) postExecute(r *ApiOpenApiV30FilePreauditSubmitPostRequest) (*models.FilePreauditSubmitV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *FilePreauditSubmitV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.FilePreauditSubmitV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *FilePreauditSubmitV30ApiService) postExecute(r *ApiOpenApiV30FilePreaud
 	localVarPath := localBasePath + "/open_api/v3.0/file/preaudit/submit/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanUniPromotionAdControlTaskSmartControlCreateV10ApiService QianchuanUniPromotionAdControlTaskSmartControlCreateV10Api service
@@ -25,15 +26,15 @@ type QianchuanUniPromotionAdControlTaskSmartControlCreateV10ApiService service
 type ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlCreatePostRequest struct {
 	ctx                                                            context.Context
 	ApiService                                                     *QianchuanUniPromotionAdControlTaskSmartControlCreateV10ApiService
-	qianchuanUniPromotionAdControlTaskSmartControlCreateV10Request *QianchuanUniPromotionAdControlTaskSmartControlCreateV10Request
+	qianchuanUniPromotionAdControlTaskSmartControlCreateV10Request *models.QianchuanUniPromotionAdControlTaskSmartControlCreateV10Request
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlCreatePostRequest) QianchuanUniPromotionAdControlTaskSmartControlCreateV10Request(qianchuanUniPromotionAdControlTaskSmartControlCreateV10Request QianchuanUniPromotionAdControlTaskSmartControlCreateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlCreatePostRequest {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlCreatePostRequest) QianchuanUniPromotionAdControlTaskSmartControlCreateV10Request(qianchuanUniPromotionAdControlTaskSmartControlCreateV10Request models.QianchuanUniPromotionAdControlTaskSmartControlCreateV10Request) *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlCreatePostRequest {
 	r.qianchuanUniPromotionAdControlTaskSmartControlCreateV10Request = &qianchuanUniPromotionAdControlTaskSmartControlCreateV10Request
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlCreatePostRequest) Execute() (*QianchuanUniPromotionAdControlTaskSmartControlCreateV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlCreatePostRequest) Execute() (*models.QianchuanUniPromotionAdControlTaskSmartControlCreateV10Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *QianchuanUniPromotionAdControlTaskSmartControlCreateV10ApiService) Post
 // Execute executes the request
 //
 //	@return QianchuanUniPromotionAdControlTaskSmartControlCreateV10Response
-func (a *QianchuanUniPromotionAdControlTaskSmartControlCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlCreatePostRequest) (*QianchuanUniPromotionAdControlTaskSmartControlCreateV10Response, *http.Response, error) {
+func (a *QianchuanUniPromotionAdControlTaskSmartControlCreateV10ApiService) postExecute(r *ApiOpenApiV10QianchuanUniPromotionAdControlTaskSmartControlCreatePostRequest) (*models.QianchuanUniPromotionAdControlTaskSmartControlCreateV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanUniPromotionAdControlTaskSmartControlCreateV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanUniPromotionAdControlTaskSmartControlCreateV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *QianchuanUniPromotionAdControlTaskSmartControlCreateV10ApiService) post
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/uni_promotion/ad/control_task/smart_control/create/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeAuthListGetV10ApiService QianchuanAwemeAuthListGetV10Api service
@@ -26,9 +27,9 @@ type ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest struct {
 	ctx          context.Context
 	ApiService   *QianchuanAwemeAuthListGetV10ApiService
 	advertiserId *int64
-	filtering    *QianchuanAwemeAuthListGetV10Filtering
+	filtering    *models.QianchuanAwemeAuthListGetV10Filtering
 	page         *int64
-	pageSize     *QianchuanAwemeAuthListGetV10PageSize
+	pageSize     *models.QianchuanAwemeAuthListGetV10PageSize
 }
 
 func (r *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest {
@@ -37,7 +38,7 @@ func (r *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest) AdvertiserId(advertis
 }
 
 // 过滤器
-func (r *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest) Filtering(filtering QianchuanAwemeAuthListGetV10Filtering) *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest) Filtering(filtering models.QianchuanAwemeAuthListGetV10Filtering) *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest {
 	r.filtering = &filtering
 	return r
 }
@@ -47,12 +48,12 @@ func (r *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest) Page(page int64) *Api
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest) PageSize(pageSize QianchuanAwemeAuthListGetV10PageSize) *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest {
+func (r *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest) PageSize(pageSize models.QianchuanAwemeAuthListGetV10PageSize) *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest {
 	r.pageSize = &pageSize
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest) Execute() (*QianchuanAwemeAuthListGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest) Execute() (*models.QianchuanAwemeAuthListGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -86,12 +87,12 @@ func (a *QianchuanAwemeAuthListGetV10ApiService) Get(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return QianchuanAwemeAuthListGetV10Response
-func (a *QianchuanAwemeAuthListGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest) (*QianchuanAwemeAuthListGetV10Response, *http.Response, error) {
+func (a *QianchuanAwemeAuthListGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeAuthListGetGetRequest) (*models.QianchuanAwemeAuthListGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeAuthListGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeAuthListGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -101,7 +102,7 @@ func (a *QianchuanAwemeAuthListGetV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme_auth_list/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

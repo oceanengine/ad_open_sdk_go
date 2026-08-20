@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // WalletRemittanceCodeListGetV30ApiService WalletRemittanceCodeListGetV30Api service
@@ -27,7 +28,7 @@ type ApiOpenApiV30WalletRemittanceCodeListGetGetRequest struct {
 	ApiService         *WalletRemittanceCodeListGetV30ApiService
 	accountId          *int64
 	chargeTargetId     *int64
-	chargeTargetType   *WalletRemittanceCodeListGetV30ChargeTargetType
+	chargeTargetType   *models.WalletRemittanceCodeListGetV30ChargeTargetType
 	remittanceCodeList *[]string
 	page               *int64
 	pageSize           *int64
@@ -46,7 +47,7 @@ func (r *ApiOpenApiV30WalletRemittanceCodeListGetGetRequest) ChargeTargetId(char
 }
 
 // 充值对象类型
-func (r *ApiOpenApiV30WalletRemittanceCodeListGetGetRequest) ChargeTargetType(chargeTargetType WalletRemittanceCodeListGetV30ChargeTargetType) *ApiOpenApiV30WalletRemittanceCodeListGetGetRequest {
+func (r *ApiOpenApiV30WalletRemittanceCodeListGetGetRequest) ChargeTargetType(chargeTargetType models.WalletRemittanceCodeListGetV30ChargeTargetType) *ApiOpenApiV30WalletRemittanceCodeListGetGetRequest {
 	r.chargeTargetType = &chargeTargetType
 	return r
 }
@@ -69,7 +70,7 @@ func (r *ApiOpenApiV30WalletRemittanceCodeListGetGetRequest) PageSize(pageSize i
 	return r
 }
 
-func (r *ApiOpenApiV30WalletRemittanceCodeListGetGetRequest) Execute() (*WalletRemittanceCodeListGetV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30WalletRemittanceCodeListGetGetRequest) Execute() (*models.WalletRemittanceCodeListGetV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -103,12 +104,12 @@ func (a *WalletRemittanceCodeListGetV30ApiService) Get(ctx context.Context) *Api
 // Execute executes the request
 //
 //	@return WalletRemittanceCodeListGetV30Response
-func (a *WalletRemittanceCodeListGetV30ApiService) getExecute(r *ApiOpenApiV30WalletRemittanceCodeListGetGetRequest) (*WalletRemittanceCodeListGetV30Response, *http.Response, error) {
+func (a *WalletRemittanceCodeListGetV30ApiService) getExecute(r *ApiOpenApiV30WalletRemittanceCodeListGetGetRequest) (*models.WalletRemittanceCodeListGetV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *WalletRemittanceCodeListGetV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.WalletRemittanceCodeListGetV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -118,7 +119,7 @@ func (a *WalletRemittanceCodeListGetV30ApiService) getExecute(r *ApiOpenApiV30Wa
 	localVarPath := localBasePath + "/open_api/v3.0/wallet/remittance_code/list/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

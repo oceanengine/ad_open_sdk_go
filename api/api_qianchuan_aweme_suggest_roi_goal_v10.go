@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeSuggestRoiGoalV10ApiService QianchuanAwemeSuggestRoiGoalV10Api service
@@ -39,7 +40,7 @@ func (r *ApiOpenApiV10QianchuanAwemeSuggestRoiGoalGetRequest) AwemeId(awemeId in
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeSuggestRoiGoalGetRequest) Execute() (*QianchuanAwemeSuggestRoiGoalV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeSuggestRoiGoalGetRequest) Execute() (*models.QianchuanAwemeSuggestRoiGoalV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *QianchuanAwemeSuggestRoiGoalV10ApiService) Get(ctx context.Context) *Ap
 // Execute executes the request
 //
 //	@return QianchuanAwemeSuggestRoiGoalV10Response
-func (a *QianchuanAwemeSuggestRoiGoalV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeSuggestRoiGoalGetRequest) (*QianchuanAwemeSuggestRoiGoalV10Response, *http.Response, error) {
+func (a *QianchuanAwemeSuggestRoiGoalV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeSuggestRoiGoalGetRequest) (*models.QianchuanAwemeSuggestRoiGoalV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeSuggestRoiGoalV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeSuggestRoiGoalV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *QianchuanAwemeSuggestRoiGoalV10ApiService) getExecute(r *ApiOpenApiV10Q
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/suggest/roi/goal/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // StarComponentCreateCommonComponentV2ApiService StarComponentCreateCommonComponentV2Api service
@@ -25,15 +26,15 @@ type StarComponentCreateCommonComponentV2ApiService service
 type ApiOpenApi2StarComponentCreateCommonComponentPostRequest struct {
 	ctx                                         context.Context
 	ApiService                                  *StarComponentCreateCommonComponentV2ApiService
-	starComponentCreateCommonComponentV2Request *StarComponentCreateCommonComponentV2Request
+	starComponentCreateCommonComponentV2Request *models.StarComponentCreateCommonComponentV2Request
 }
 
-func (r *ApiOpenApi2StarComponentCreateCommonComponentPostRequest) StarComponentCreateCommonComponentV2Request(starComponentCreateCommonComponentV2Request StarComponentCreateCommonComponentV2Request) *ApiOpenApi2StarComponentCreateCommonComponentPostRequest {
+func (r *ApiOpenApi2StarComponentCreateCommonComponentPostRequest) StarComponentCreateCommonComponentV2Request(starComponentCreateCommonComponentV2Request models.StarComponentCreateCommonComponentV2Request) *ApiOpenApi2StarComponentCreateCommonComponentPostRequest {
 	r.starComponentCreateCommonComponentV2Request = &starComponentCreateCommonComponentV2Request
 	return r
 }
 
-func (r *ApiOpenApi2StarComponentCreateCommonComponentPostRequest) Execute() (*StarComponentCreateCommonComponentV2Response, *http.Response, error) {
+func (r *ApiOpenApi2StarComponentCreateCommonComponentPostRequest) Execute() (*models.StarComponentCreateCommonComponentV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *StarComponentCreateCommonComponentV2ApiService) Post(ctx context.Contex
 // Execute executes the request
 //
 //	@return StarComponentCreateCommonComponentV2Response
-func (a *StarComponentCreateCommonComponentV2ApiService) postExecute(r *ApiOpenApi2StarComponentCreateCommonComponentPostRequest) (*StarComponentCreateCommonComponentV2Response, *http.Response, error) {
+func (a *StarComponentCreateCommonComponentV2ApiService) postExecute(r *ApiOpenApi2StarComponentCreateCommonComponentPostRequest) (*models.StarComponentCreateCommonComponentV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *StarComponentCreateCommonComponentV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.StarComponentCreateCommonComponentV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *StarComponentCreateCommonComponentV2ApiService) postExecute(r *ApiOpenA
 	localVarPath := localBasePath + "/open_api/2/star/component/create_common_component/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

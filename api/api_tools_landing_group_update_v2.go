@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsLandingGroupUpdateV2ApiService ToolsLandingGroupUpdateV2Api service
@@ -26,7 +27,7 @@ type ApiOpenApi2ToolsLandingGroupUpdatePostRequest struct {
 	ctx                              context.Context
 	ApiService                       *ToolsLandingGroupUpdateV2ApiService
 	xOrangeCaller                    *string
-	toolsLandingGroupUpdateV2Request *ToolsLandingGroupUpdateV2Request
+	toolsLandingGroupUpdateV2Request *models.ToolsLandingGroupUpdateV2Request
 }
 
 func (r *ApiOpenApi2ToolsLandingGroupUpdatePostRequest) XOrangeCaller(xOrangeCaller string) *ApiOpenApi2ToolsLandingGroupUpdatePostRequest {
@@ -34,12 +35,12 @@ func (r *ApiOpenApi2ToolsLandingGroupUpdatePostRequest) XOrangeCaller(xOrangeCal
 	return r
 }
 
-func (r *ApiOpenApi2ToolsLandingGroupUpdatePostRequest) ToolsLandingGroupUpdateV2Request(toolsLandingGroupUpdateV2Request ToolsLandingGroupUpdateV2Request) *ApiOpenApi2ToolsLandingGroupUpdatePostRequest {
+func (r *ApiOpenApi2ToolsLandingGroupUpdatePostRequest) ToolsLandingGroupUpdateV2Request(toolsLandingGroupUpdateV2Request models.ToolsLandingGroupUpdateV2Request) *ApiOpenApi2ToolsLandingGroupUpdatePostRequest {
 	r.toolsLandingGroupUpdateV2Request = &toolsLandingGroupUpdateV2Request
 	return r
 }
 
-func (r *ApiOpenApi2ToolsLandingGroupUpdatePostRequest) Execute() (*ToolsLandingGroupUpdateV2Response, *http.Response, error) {
+func (r *ApiOpenApi2ToolsLandingGroupUpdatePostRequest) Execute() (*models.ToolsLandingGroupUpdateV2Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -73,12 +74,12 @@ func (a *ToolsLandingGroupUpdateV2ApiService) Post(ctx context.Context) *ApiOpen
 // Execute executes the request
 //
 //	@return ToolsLandingGroupUpdateV2Response
-func (a *ToolsLandingGroupUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsLandingGroupUpdatePostRequest) (*ToolsLandingGroupUpdateV2Response, *http.Response, error) {
+func (a *ToolsLandingGroupUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsLandingGroupUpdatePostRequest) (*models.ToolsLandingGroupUpdateV2Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsLandingGroupUpdateV2Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsLandingGroupUpdateV2Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -88,7 +89,7 @@ func (a *ToolsLandingGroupUpdateV2ApiService) postExecute(r *ApiOpenApi2ToolsLan
 	localVarPath := localBasePath + "/open_api/2/tools/landing_group/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 

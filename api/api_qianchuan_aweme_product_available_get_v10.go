@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // QianchuanAwemeProductAvailableGetV10ApiService QianchuanAwemeProductAvailableGetV10Api service
@@ -45,7 +46,7 @@ func (r *ApiOpenApiV10QianchuanAwemeProductAvailableGetGetRequest) Cursor(cursor
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanAwemeProductAvailableGetGetRequest) Execute() (*QianchuanAwemeProductAvailableGetV10Response, *http.Response, error) {
+func (r *ApiOpenApiV10QianchuanAwemeProductAvailableGetGetRequest) Execute() (*models.QianchuanAwemeProductAvailableGetV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -79,12 +80,12 @@ func (a *QianchuanAwemeProductAvailableGetV10ApiService) Get(ctx context.Context
 // Execute executes the request
 //
 //	@return QianchuanAwemeProductAvailableGetV10Response
-func (a *QianchuanAwemeProductAvailableGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeProductAvailableGetGetRequest) (*QianchuanAwemeProductAvailableGetV10Response, *http.Response, error) {
+func (a *QianchuanAwemeProductAvailableGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanAwemeProductAvailableGetGetRequest) (*models.QianchuanAwemeProductAvailableGetV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *QianchuanAwemeProductAvailableGetV10Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.QianchuanAwemeProductAvailableGetV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -94,7 +95,7 @@ func (a *QianchuanAwemeProductAvailableGetV10ApiService) getExecute(r *ApiOpenAp
 	localVarPath := localBasePath + "/open_api/v1.0/qianchuan/aweme/product/available/get/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.advertiserId == nil {

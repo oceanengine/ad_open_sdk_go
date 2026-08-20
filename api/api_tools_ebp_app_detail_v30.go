@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // ToolsEbpAppDetailV30ApiService ToolsEbpAppDetailV30Api service
@@ -26,7 +27,7 @@ type ApiOpenApiV30ToolsEbpAppDetailGetRequest struct {
 	ctx         context.Context
 	ApiService  *ToolsEbpAppDetailV30ApiService
 	accountId   *int64
-	accountType *ToolsEbpAppDetailV30AccountType
+	accountType *models.ToolsEbpAppDetailV30AccountType
 	packageId   *string
 }
 
@@ -36,7 +37,7 @@ func (r *ApiOpenApiV30ToolsEbpAppDetailGetRequest) AccountId(accountId int64) *A
 }
 
 // 操作类型 BP/AD
-func (r *ApiOpenApiV30ToolsEbpAppDetailGetRequest) AccountType(accountType ToolsEbpAppDetailV30AccountType) *ApiOpenApiV30ToolsEbpAppDetailGetRequest {
+func (r *ApiOpenApiV30ToolsEbpAppDetailGetRequest) AccountType(accountType models.ToolsEbpAppDetailV30AccountType) *ApiOpenApiV30ToolsEbpAppDetailGetRequest {
 	r.accountType = &accountType
 	return r
 }
@@ -46,7 +47,7 @@ func (r *ApiOpenApiV30ToolsEbpAppDetailGetRequest) PackageId(packageId string) *
 	return r
 }
 
-func (r *ApiOpenApiV30ToolsEbpAppDetailGetRequest) Execute() (*ToolsEbpAppDetailV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30ToolsEbpAppDetailGetRequest) Execute() (*models.ToolsEbpAppDetailV30Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
@@ -80,12 +81,12 @@ func (a *ToolsEbpAppDetailV30ApiService) Get(ctx context.Context) *ApiOpenApiV30
 // Execute executes the request
 //
 //	@return ToolsEbpAppDetailV30Response
-func (a *ToolsEbpAppDetailV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppDetailGetRequest) (*ToolsEbpAppDetailV30Response, *http.Response, error) {
+func (a *ToolsEbpAppDetailV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppDetailGetRequest) (*models.ToolsEbpAppDetailV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *ToolsEbpAppDetailV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.ToolsEbpAppDetailV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -95,7 +96,7 @@ func (a *ToolsEbpAppDetailV30ApiService) getExecute(r *ApiOpenApiV30ToolsEbpAppD
 	localVarPath := localBasePath + "/open_api/v3.0/tools/ebp/app/detail/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 	if r.accountId == nil {

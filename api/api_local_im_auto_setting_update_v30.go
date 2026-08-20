@@ -16,7 +16,8 @@ import (
 	"net/url"
 
 	"github.com/oceanengine/ad_open_sdk_go/config"
-	. "github.com/oceanengine/ad_open_sdk_go/models"
+
+	"github.com/oceanengine/ad_open_sdk_go/models"
 )
 
 // LocalImAutoSettingUpdateV30ApiService LocalImAutoSettingUpdateV30Api service
@@ -25,15 +26,15 @@ type LocalImAutoSettingUpdateV30ApiService service
 type ApiOpenApiV30LocalImAutoSettingUpdatePostRequest struct {
 	ctx                                context.Context
 	ApiService                         *LocalImAutoSettingUpdateV30ApiService
-	localImAutoSettingUpdateV30Request *LocalImAutoSettingUpdateV30Request
+	localImAutoSettingUpdateV30Request *models.LocalImAutoSettingUpdateV30Request
 }
 
-func (r *ApiOpenApiV30LocalImAutoSettingUpdatePostRequest) LocalImAutoSettingUpdateV30Request(localImAutoSettingUpdateV30Request LocalImAutoSettingUpdateV30Request) *ApiOpenApiV30LocalImAutoSettingUpdatePostRequest {
+func (r *ApiOpenApiV30LocalImAutoSettingUpdatePostRequest) LocalImAutoSettingUpdateV30Request(localImAutoSettingUpdateV30Request models.LocalImAutoSettingUpdateV30Request) *ApiOpenApiV30LocalImAutoSettingUpdatePostRequest {
 	r.localImAutoSettingUpdateV30Request = &localImAutoSettingUpdateV30Request
 	return r
 }
 
-func (r *ApiOpenApiV30LocalImAutoSettingUpdatePostRequest) Execute() (*LocalImAutoSettingUpdateV30Response, *http.Response, error) {
+func (r *ApiOpenApiV30LocalImAutoSettingUpdatePostRequest) Execute() (*models.LocalImAutoSettingUpdateV30Response, *http.Response, error) {
 	return r.ApiService.postExecute(r)
 }
 
@@ -67,12 +68,12 @@ func (a *LocalImAutoSettingUpdateV30ApiService) Post(ctx context.Context) *ApiOp
 // Execute executes the request
 //
 //	@return LocalImAutoSettingUpdateV30Response
-func (a *LocalImAutoSettingUpdateV30ApiService) postExecute(r *ApiOpenApiV30LocalImAutoSettingUpdatePostRequest) (*LocalImAutoSettingUpdateV30Response, *http.Response, error) {
+func (a *LocalImAutoSettingUpdateV30ApiService) postExecute(r *ApiOpenApiV30LocalImAutoSettingUpdatePostRequest) (*models.LocalImAutoSettingUpdateV30Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodPost
 		localVarPostBody    interface{}
-		formFiles           map[string]*FormFileInfo
-		localVarReturnValue *LocalImAutoSettingUpdateV30Response
+		formFiles           map[string]*models.FormFileInfo
+		localVarReturnValue *models.LocalImAutoSettingUpdateV30Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
@@ -82,7 +83,7 @@ func (a *LocalImAutoSettingUpdateV30ApiService) postExecute(r *ApiOpenApiV30Loca
 	localVarPath := localBasePath + "/open_api/v3.0/local/im_auto_setting/update/"
 
 	localVarHeaderParams := make(map[string]string)
-	formFiles = make(map[string]*FormFileInfo)
+	formFiles = make(map[string]*models.FormFileInfo)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
 
