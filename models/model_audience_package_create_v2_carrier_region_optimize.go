@@ -15,8 +15,8 @@ type AudiencePackageCreateV2CarrierRegionOptimize string
 
 // List of audience_package_create_v2_carrier_region_optimize
 const (
-	ON_AudiencePackageCreateV2CarrierRegionOptimize  AudiencePackageCreateV2CarrierRegionOptimize = "ON"
 	OFF_AudiencePackageCreateV2CarrierRegionOptimize AudiencePackageCreateV2CarrierRegionOptimize = "OFF"
+	ON_AudiencePackageCreateV2CarrierRegionOptimize  AudiencePackageCreateV2CarrierRegionOptimize = "ON"
 )
 
 // Ptr returns reference to audience_package_create_v2_carrier_region_optimize value

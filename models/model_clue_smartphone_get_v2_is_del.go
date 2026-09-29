@@ -15,8 +15,8 @@ type ClueSmartphoneGetV2IsDel string
 
 // List of clue_smartphone_get_v2_is_del
 const (
-	Enum_1_ClueSmartphoneGetV2IsDel ClueSmartphoneGetV2IsDel = "1"
 	Enum_0_ClueSmartphoneGetV2IsDel ClueSmartphoneGetV2IsDel = "0"
+	Enum_1_ClueSmartphoneGetV2IsDel ClueSmartphoneGetV2IsDel = "1"
 )
 
 // Ptr returns reference to clue_smartphone_get_v2_is_del value

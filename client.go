@@ -1,5 +1,5 @@
 /*
-API version: 1.1.96
+API version: 1.1.97
 */
 package ad_open_sdk_go
 
@@ -149,6 +149,14 @@ func (c *Client) AdvertiserFundGrantTransactionGetV2Api() *api.AdvertiserFundGra
 
 func (c *Client) AdvertiserFundTransactionGetV2Api() *api.AdvertiserFundTransactionGetV2ApiService {
 	return c.ApiClient.AdvertiserFundTransactionGetV2Api
+}
+
+func (c *Client) AdvertiserGoingGlobalBudgetGetV2Api() *api.AdvertiserGoingGlobalBudgetGetV2ApiService {
+	return c.ApiClient.AdvertiserGoingGlobalBudgetGetV2Api
+}
+
+func (c *Client) AdvertiserGoingGlobalBudgetUpdateV2Api() *api.AdvertiserGoingGlobalBudgetUpdateV2ApiService {
+	return c.ApiClient.AdvertiserGoingGlobalBudgetUpdateV2Api
 }
 
 func (c *Client) AdvertiserInfoV2Api() *api.AdvertiserInfoV2ApiService {
@@ -367,6 +375,10 @@ func (c *Client) AudiencePackageUpdateV2Api() *api.AudiencePackageUpdateV2ApiSer
 	return c.ApiClient.AudiencePackageUpdateV2Api
 }
 
+func (c *Client) AvailablePaymentsListV30Api() *api.AvailablePaymentsListV30ApiService {
+	return c.ApiClient.AvailablePaymentsListV30Api
+}
+
 func (c *Client) BrandActionCategoryV30Api() *api.BrandActionCategoryV30ApiService {
 	return c.ApiClient.BrandActionCategoryV30Api
 }
@@ -473,6 +485,22 @@ func (c *Client) BrandFileVideoUploadV30Api() *api.BrandFileVideoUploadV30ApiSer
 
 func (c *Client) BrandKnowledgeQaGetV30Api() *api.BrandKnowledgeQaGetV30ApiService {
 	return c.ApiClient.BrandKnowledgeQaGetV30Api
+}
+
+func (c *Client) BrandMaAccountListV30Api() *api.BrandMaAccountListV30ApiService {
+	return c.ApiClient.BrandMaAccountListV30Api
+}
+
+func (c *Client) BrandMaMaterialListV30Api() *api.BrandMaMaterialListV30ApiService {
+	return c.ApiClient.BrandMaMaterialListV30Api
+}
+
+func (c *Client) BrandMaOrderListV30Api() *api.BrandMaOrderListV30ApiService {
+	return c.ApiClient.BrandMaOrderListV30Api
+}
+
+func (c *Client) BrandMaWarningOrderListV30Api() *api.BrandMaWarningOrderListV30ApiService {
+	return c.ApiClient.BrandMaWarningOrderListV30Api
 }
 
 func (c *Client) BrandMaterialCreateV30Api() *api.BrandMaterialCreateV30ApiService {
@@ -703,12 +731,24 @@ func (c *Client) CgTransferWalletTransferListV30Api() *api.CgTransferWalletTrans
 	return c.ApiClient.CgTransferWalletTransferListV30Api
 }
 
+func (c *Client) ChargeInfoOrderNoGetV30Api() *api.ChargeInfoOrderNoGetV30ApiService {
+	return c.ApiClient.ChargeInfoOrderNoGetV30Api
+}
+
+func (c *Client) ChargeInfoPaymentVoucherGetV30Api() *api.ChargeInfoPaymentVoucherGetV30ApiService {
+	return c.ApiClient.ChargeInfoPaymentVoucherGetV30Api
+}
+
 func (c *Client) ChargeListV30Api() *api.ChargeListV30ApiService {
 	return c.ApiClient.ChargeListV30Api
 }
 
 func (c *Client) ChargeResultV30Api() *api.ChargeResultV30ApiService {
 	return c.ApiClient.ChargeResultV30Api
+}
+
+func (c *Client) ChargeTagGetV30Api() *api.ChargeTagGetV30ApiService {
+	return c.ApiClient.ChargeTagGetV30Api
 }
 
 func (c *Client) ChargeVerifyGetV30Api() *api.ChargeVerifyGetV30ApiService {
@@ -1191,6 +1231,10 @@ func (c *Client) EbpAdvBindGroupGetV30Api() *api.EbpAdvBindGroupGetV30ApiService
 	return c.ApiClient.EbpAdvBindGroupGetV30Api
 }
 
+func (c *Client) EbpAdvertiserAllListV30Api() *api.EbpAdvertiserAllListV30ApiService {
+	return c.ApiClient.EbpAdvertiserAllListV30Api
+}
+
 func (c *Client) EbpAdvertiserListV2Api() *api.EbpAdvertiserListV2ApiService {
 	return c.ApiClient.EbpAdvertiserListV2Api
 }
@@ -1419,6 +1463,10 @@ func (c *Client) FileRebateCommonDownloadGetDownloadTaskListV2Api() *api.FileReb
 	return c.ApiClient.FileRebateCommonDownloadGetDownloadTaskListV2Api
 }
 
+func (c *Client) FileRebateDataProductCreateV2Api() *api.FileRebateDataProductCreateV2ApiService {
+	return c.ApiClient.FileRebateDataProductCreateV2Api
+}
+
 func (c *Client) FileRebateRebateDownloadCreateTaskV2Api() *api.FileRebateRebateDownloadCreateTaskV2ApiService {
 	return c.ApiClient.FileRebateRebateDownloadCreateTaskV2Api
 }
@@ -1497,6 +1545,18 @@ func (c *Client) GameAddictionIdGetV30Api() *api.GameAddictionIdGetV30ApiService
 
 func (c *Client) GameplayListV30Api() *api.GameplayListV30ApiService {
 	return c.ApiClient.GameplayListV30Api
+}
+
+func (c *Client) GoingGlobalRoiSuggestGetV30Api() *api.GoingGlobalRoiSuggestGetV30ApiService {
+	return c.ApiClient.GoingGlobalRoiSuggestGetV30Api
+}
+
+func (c *Client) GoingGlobalUpdateV30Api() *api.GoingGlobalUpdateV30ApiService {
+	return c.ApiClient.GoingGlobalUpdateV30Api
+}
+
+func (c *Client) IdTypeGetV10Api() *api.IdTypeGetV10ApiService {
+	return c.ApiClient.IdTypeGetV10Api
 }
 
 func (c *Client) InvoiceApplyOrderCreateV30Api() *api.InvoiceApplyOrderCreateV30ApiService {

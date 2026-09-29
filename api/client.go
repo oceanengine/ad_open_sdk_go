@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.96
+// APIClient manages communication with the Oceanengine Open Api API v1.1.97
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -112,6 +112,10 @@ type APIClient struct {
 	AdvertiserFundGrantTransactionGetV2Api *AdvertiserFundGrantTransactionGetV2ApiService
 
 	AdvertiserFundTransactionGetV2Api *AdvertiserFundTransactionGetV2ApiService
+
+	AdvertiserGoingGlobalBudgetGetV2Api *AdvertiserGoingGlobalBudgetGetV2ApiService
+
+	AdvertiserGoingGlobalBudgetUpdateV2Api *AdvertiserGoingGlobalBudgetUpdateV2ApiService
 
 	AdvertiserInfoV2Api *AdvertiserInfoV2ApiService
 
@@ -221,6 +225,8 @@ type APIClient struct {
 
 	AudiencePackageUpdateV2Api *AudiencePackageUpdateV2ApiService
 
+	AvailablePaymentsListV30Api *AvailablePaymentsListV30ApiService
+
 	BrandActionCategoryV30Api *BrandActionCategoryV30ApiService
 
 	BrandAdCancelDeleteV30Api *BrandAdCancelDeleteV30ApiService
@@ -274,6 +280,14 @@ type APIClient struct {
 	BrandFileVideoUploadV30Api *BrandFileVideoUploadV30ApiService
 
 	BrandKnowledgeQaGetV30Api *BrandKnowledgeQaGetV30ApiService
+
+	BrandMaAccountListV30Api *BrandMaAccountListV30ApiService
+
+	BrandMaMaterialListV30Api *BrandMaMaterialListV30ApiService
+
+	BrandMaOrderListV30Api *BrandMaOrderListV30ApiService
+
+	BrandMaWarningOrderListV30Api *BrandMaWarningOrderListV30ApiService
 
 	BrandMaterialCreateV30Api *BrandMaterialCreateV30ApiService
 
@@ -389,9 +403,15 @@ type APIClient struct {
 
 	CgTransferWalletTransferListV30Api *CgTransferWalletTransferListV30ApiService
 
+	ChargeInfoOrderNoGetV30Api *ChargeInfoOrderNoGetV30ApiService
+
+	ChargeInfoPaymentVoucherGetV30Api *ChargeInfoPaymentVoucherGetV30ApiService
+
 	ChargeListV30Api *ChargeListV30ApiService
 
 	ChargeResultV30Api *ChargeResultV30ApiService
+
+	ChargeTagGetV30Api *ChargeTagGetV30ApiService
 
 	ChargeVerifyGetV30Api *ChargeVerifyGetV30ApiService
 
@@ -633,6 +653,8 @@ type APIClient struct {
 
 	EbpAdvBindGroupGetV30Api *EbpAdvBindGroupGetV30ApiService
 
+	EbpAdvertiserAllListV30Api *EbpAdvertiserAllListV30ApiService
+
 	EbpAdvertiserListV2Api *EbpAdvertiserListV2ApiService
 
 	EbpAdvertiserTaskCreateV2Api *EbpAdvertiserTaskCreateV2ApiService
@@ -747,6 +769,8 @@ type APIClient struct {
 
 	FileRebateCommonDownloadGetDownloadTaskListV2Api *FileRebateCommonDownloadGetDownloadTaskListV2ApiService
 
+	FileRebateDataProductCreateV2Api *FileRebateDataProductCreateV2ApiService
+
 	FileRebateRebateDownloadCreateTaskV2Api *FileRebateRebateDownloadCreateTaskV2ApiService
 
 	FileUploadTaskCreateV2Api *FileUploadTaskCreateV2ApiService
@@ -786,6 +810,12 @@ type APIClient struct {
 	GameAddictionIdGetV30Api *GameAddictionIdGetV30ApiService
 
 	GameplayListV30Api *GameplayListV30ApiService
+
+	GoingGlobalRoiSuggestGetV30Api *GoingGlobalRoiSuggestGetV30ApiService
+
+	GoingGlobalUpdateV30Api *GoingGlobalUpdateV30ApiService
+
+	IdTypeGetV10Api *IdTypeGetV10ApiService
 
 	InvoiceApplyOrderCreateV30Api *InvoiceApplyOrderCreateV30ApiService
 
@@ -2591,6 +2621,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AdvertiserFundGetV2Api = (*AdvertiserFundGetV2ApiService)(&c.common)
 	c.AdvertiserFundGrantTransactionGetV2Api = (*AdvertiserFundGrantTransactionGetV2ApiService)(&c.common)
 	c.AdvertiserFundTransactionGetV2Api = (*AdvertiserFundTransactionGetV2ApiService)(&c.common)
+	c.AdvertiserGoingGlobalBudgetGetV2Api = (*AdvertiserGoingGlobalBudgetGetV2ApiService)(&c.common)
+	c.AdvertiserGoingGlobalBudgetUpdateV2Api = (*AdvertiserGoingGlobalBudgetUpdateV2ApiService)(&c.common)
 	c.AdvertiserInfoV2Api = (*AdvertiserInfoV2ApiService)(&c.common)
 	c.AdvertiserPublicInfoV2Api = (*AdvertiserPublicInfoV2ApiService)(&c.common)
 	c.AdvertiserQualificationCreateV2V2Api = (*AdvertiserQualificationCreateV2V2ApiService)(&c.common)
@@ -2645,6 +2677,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AudiencePackageDeleteV2Api = (*AudiencePackageDeleteV2ApiService)(&c.common)
 	c.AudiencePackageGetV30Api = (*AudiencePackageGetV30ApiService)(&c.common)
 	c.AudiencePackageUpdateV2Api = (*AudiencePackageUpdateV2ApiService)(&c.common)
+	c.AvailablePaymentsListV30Api = (*AvailablePaymentsListV30ApiService)(&c.common)
 	c.BrandActionCategoryV30Api = (*BrandActionCategoryV30ApiService)(&c.common)
 	c.BrandAdCancelDeleteV30Api = (*BrandAdCancelDeleteV30ApiService)(&c.common)
 	c.BrandAdDeleteV30Api = (*BrandAdDeleteV30ApiService)(&c.common)
@@ -2672,6 +2705,10 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.BrandCustomAudienceListV30Api = (*BrandCustomAudienceListV30ApiService)(&c.common)
 	c.BrandFileVideoUploadV30Api = (*BrandFileVideoUploadV30ApiService)(&c.common)
 	c.BrandKnowledgeQaGetV30Api = (*BrandKnowledgeQaGetV30ApiService)(&c.common)
+	c.BrandMaAccountListV30Api = (*BrandMaAccountListV30ApiService)(&c.common)
+	c.BrandMaMaterialListV30Api = (*BrandMaMaterialListV30ApiService)(&c.common)
+	c.BrandMaOrderListV30Api = (*BrandMaOrderListV30ApiService)(&c.common)
+	c.BrandMaWarningOrderListV30Api = (*BrandMaWarningOrderListV30ApiService)(&c.common)
 	c.BrandMaterialCreateV30Api = (*BrandMaterialCreateV30ApiService)(&c.common)
 	c.BrandMaterialListV30Api = (*BrandMaterialListV30ApiService)(&c.common)
 	c.BrandMaterialUpdateV30Api = (*BrandMaterialUpdateV30ApiService)(&c.common)
@@ -2729,8 +2766,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.CgTransferWalletTransferCreateV30Api = (*CgTransferWalletTransferCreateV30ApiService)(&c.common)
 	c.CgTransferWalletTransferDetailV30Api = (*CgTransferWalletTransferDetailV30ApiService)(&c.common)
 	c.CgTransferWalletTransferListV30Api = (*CgTransferWalletTransferListV30ApiService)(&c.common)
+	c.ChargeInfoOrderNoGetV30Api = (*ChargeInfoOrderNoGetV30ApiService)(&c.common)
+	c.ChargeInfoPaymentVoucherGetV30Api = (*ChargeInfoPaymentVoucherGetV30ApiService)(&c.common)
 	c.ChargeListV30Api = (*ChargeListV30ApiService)(&c.common)
 	c.ChargeResultV30Api = (*ChargeResultV30ApiService)(&c.common)
+	c.ChargeTagGetV30Api = (*ChargeTagGetV30ApiService)(&c.common)
 	c.ChargeVerifyGetV30Api = (*ChargeVerifyGetV30ApiService)(&c.common)
 	c.ClueCaCreateV2Api = (*ClueCaCreateV2ApiService)(&c.common)
 	c.ClueCaInterfaceCreateV2Api = (*ClueCaInterfaceCreateV2ApiService)(&c.common)
@@ -2851,6 +2891,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.DpaVideoGetV2Api = (*DpaVideoGetV2ApiService)(&c.common)
 	c.EbpAccountCreateV30Api = (*EbpAccountCreateV30ApiService)(&c.common)
 	c.EbpAdvBindGroupGetV30Api = (*EbpAdvBindGroupGetV30ApiService)(&c.common)
+	c.EbpAdvertiserAllListV30Api = (*EbpAdvertiserAllListV30ApiService)(&c.common)
 	c.EbpAdvertiserListV2Api = (*EbpAdvertiserListV2ApiService)(&c.common)
 	c.EbpAdvertiserTaskCreateV2Api = (*EbpAdvertiserTaskCreateV2ApiService)(&c.common)
 	c.EbpAdvertiserTaskDownloadV2Api = (*EbpAdvertiserTaskDownloadV2ApiService)(&c.common)
@@ -2908,6 +2949,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.FileRebateCommonDownloadCreateTaskV2Api = (*FileRebateCommonDownloadCreateTaskV2ApiService)(&c.common)
 	c.FileRebateCommonDownloadDownloadFileV2Api = (*FileRebateCommonDownloadDownloadFileV2ApiService)(&c.common)
 	c.FileRebateCommonDownloadGetDownloadTaskListV2Api = (*FileRebateCommonDownloadGetDownloadTaskListV2ApiService)(&c.common)
+	c.FileRebateDataProductCreateV2Api = (*FileRebateDataProductCreateV2ApiService)(&c.common)
 	c.FileRebateRebateDownloadCreateTaskV2Api = (*FileRebateRebateDownloadCreateTaskV2ApiService)(&c.common)
 	c.FileUploadTaskCreateV2Api = (*FileUploadTaskCreateV2ApiService)(&c.common)
 	c.FileVideoAdGetV2Api = (*FileVideoAdGetV2ApiService)(&c.common)
@@ -2928,6 +2970,9 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.FundSharedWalletBalanceGetV2Api = (*FundSharedWalletBalanceGetV2ApiService)(&c.common)
 	c.GameAddictionIdGetV30Api = (*GameAddictionIdGetV30ApiService)(&c.common)
 	c.GameplayListV30Api = (*GameplayListV30ApiService)(&c.common)
+	c.GoingGlobalRoiSuggestGetV30Api = (*GoingGlobalRoiSuggestGetV30ApiService)(&c.common)
+	c.GoingGlobalUpdateV30Api = (*GoingGlobalUpdateV30ApiService)(&c.common)
+	c.IdTypeGetV10Api = (*IdTypeGetV10ApiService)(&c.common)
 	c.InvoiceApplyOrderCreateV30Api = (*InvoiceApplyOrderCreateV30ApiService)(&c.common)
 	c.InvoiceApplyOrderListV30Api = (*InvoiceApplyOrderListV30ApiService)(&c.common)
 	c.InvoiceApplyResultGetV30Api = (*InvoiceApplyResultGetV30ApiService)(&c.common)

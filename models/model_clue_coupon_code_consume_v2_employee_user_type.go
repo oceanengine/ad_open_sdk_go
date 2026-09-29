@@ -15,8 +15,8 @@ type ClueCouponCodeConsumeV2EmployeeUserType string
 
 // List of clue_coupon_code_consume_v2_employee_user_type
 const (
-	DOUYIN_ClueCouponCodeConsumeV2EmployeeUserType  ClueCouponCodeConsumeV2EmployeeUserType = "DOUYIN"
 	TOUTIAO_ClueCouponCodeConsumeV2EmployeeUserType ClueCouponCodeConsumeV2EmployeeUserType = "TOUTIAO"
+	DOUYIN_ClueCouponCodeConsumeV2EmployeeUserType  ClueCouponCodeConsumeV2EmployeeUserType = "DOUYIN"
 )
 
 // Ptr returns reference to clue_coupon_code_consume_v2_employee_user_type value

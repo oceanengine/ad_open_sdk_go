@@ -15,8 +15,8 @@ type ToolsLandingGroupGetV2DataListGroupFlowType string
 
 // List of tools_landing_group_get_v2_data_list_group_flow_type
 const (
-	FLOW_DISTRIBUTION_TYPE_AVERAGE_ToolsLandingGroupGetV2DataListGroupFlowType      ToolsLandingGroupGetV2DataListGroupFlowType = "FLOW_DISTRIBUTION_TYPE_AVERAGE"
 	FLOW_DISTRIBUTION_TYPE_INTELLIGENCE_ToolsLandingGroupGetV2DataListGroupFlowType ToolsLandingGroupGetV2DataListGroupFlowType = "FLOW_DISTRIBUTION_TYPE_INTELLIGENCE"
+	FLOW_DISTRIBUTION_TYPE_AVERAGE_ToolsLandingGroupGetV2DataListGroupFlowType      ToolsLandingGroupGetV2DataListGroupFlowType = "FLOW_DISTRIBUTION_TYPE_AVERAGE"
 )
 
 // Ptr returns reference to tools_landing_group_get_v2_data_list_group_flow_type value

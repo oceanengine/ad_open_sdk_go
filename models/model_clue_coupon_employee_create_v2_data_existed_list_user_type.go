@@ -15,8 +15,8 @@ type ClueCouponEmployeeCreateV2DataExistedListUserType string
 
 // List of clue_coupon_employee_create_v2_data_existed_list_user_type
 const (
-	DOUYIN_ClueCouponEmployeeCreateV2DataExistedListUserType  ClueCouponEmployeeCreateV2DataExistedListUserType = "DOUYIN"
 	TOUTIAO_ClueCouponEmployeeCreateV2DataExistedListUserType ClueCouponEmployeeCreateV2DataExistedListUserType = "TOUTIAO"
+	DOUYIN_ClueCouponEmployeeCreateV2DataExistedListUserType  ClueCouponEmployeeCreateV2DataExistedListUserType = "DOUYIN"
 )
 
 // Ptr returns reference to clue_coupon_employee_create_v2_data_existed_list_user_type value

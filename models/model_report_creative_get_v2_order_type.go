@@ -15,8 +15,8 @@ type ReportCreativeGetV2OrderType string
 
 // List of report_creative_get_v2_order_type
 const (
-	ASC_ReportCreativeGetV2OrderType  ReportCreativeGetV2OrderType = "ASC"
 	DESC_ReportCreativeGetV2OrderType ReportCreativeGetV2OrderType = "DESC"
+	ASC_ReportCreativeGetV2OrderType  ReportCreativeGetV2OrderType = "ASC"
 )
 
 // Ptr returns reference to report_creative_get_v2_order_type value
