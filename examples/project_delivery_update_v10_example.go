@@ -22,13 +22,11 @@ import (
 	. "github.com/oceanengine/ad_open_sdk_go/models"
 )
 
-type ApiOpenApiV10QianchuanEntityCenterCreatePostRequestExample struct {
-	Authorization                         string                                `json:"authorization,omitempty"`
-	Caller                                string                                `json:"caller,omitempty"`
-	QianchuanEntityCenterCreateV10Request QianchuanEntityCenterCreateV10Request `json:"QianchuanEntityCenterCreateV10Request,omitempty"`
+type ApiOpenApiV10ProjectDeliveryUpdatePostRequestExample struct {
+	ProjectDeliveryUpdateV10Request ProjectDeliveryUpdateV10Request `json:"ProjectDeliveryUpdateV10Request,omitempty"`
 }
 
-// url: https://api.oceanengine.com/open_api/v1.0/qianchuan_entity_center/create/ Post
+// url: https://api.oceanengine.com/open_api/v1.0/project_delivery/update/ Post
 func main() {
 	const demoreq = ``
 	const accessToken = "ACCESS_TOKEN"
@@ -38,18 +36,18 @@ func main() {
 	apiClient := ad_open_sdk_go.Init(configuration)
 	apiClient.SetLogEnable(true)
 
-	var request ApiOpenApiV10QianchuanEntityCenterCreatePostRequestExample
+	var request ApiOpenApiV10ProjectDeliveryUpdatePostRequestExample
 	err := json.Unmarshal([]byte(demoreq), &request)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	resp, httpRes, err := apiClient.QianchuanEntityCenterCreateV10Api().
+	resp, httpRes, err := apiClient.ProjectDeliveryUpdateV10Api().
 		Post(ctx).
 		AccessToken(accessToken).
-		Authorization(request.Authorization).Caller(request.Caller).QianchuanEntityCenterCreateV10Request(request.QianchuanEntityCenterCreateV10Request).
+		ProjectDeliveryUpdateV10Request(request.ProjectDeliveryUpdateV10Request).
 		Execute()
-	fmt.Println(string(resp))
+	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)
 	fmt.Println(string(resBytes))
 	fmt.Println(err)

@@ -22,8 +22,13 @@ type UniProjectUpdateV30Request struct {
 	//
 	CallToActionButtons []string `json:"call_to_action_buttons,omitempty"`
 	//
-	EndTime          *string                              `json:"end_time,omitempty"`
-	MonetizationMode *UniProjectUpdateV30MonetizationMode `json:"monetization_mode,omitempty"`
+	EndTime *string `json:"end_time,omitempty"`
+	//
+	GoingGlobalBudget *float64 `json:"going_global_budget,omitempty"`
+	//
+	GoingGlobalRoiGoal *float64                              `json:"going_global_roi_goal,omitempty"`
+	GoingGlobalSwitch  *UniProjectUpdateV30GoingGlobalSwitch `json:"going_global_switch,omitempty"`
+	MonetizationMode   *UniProjectUpdateV30MonetizationMode  `json:"monetization_mode,omitempty"`
 	//
 	Name *string `json:"name,omitempty"`
 	//

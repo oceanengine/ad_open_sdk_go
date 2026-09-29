@@ -16,8 +16,8 @@ type ToolsEstimateAudienceV2Carrier string
 // List of tools_estimate_audience_v2_carrier
 const (
 	UNICOM_ToolsEstimateAudienceV2Carrier ToolsEstimateAudienceV2Carrier = "UNICOM"
-	MOBILE_ToolsEstimateAudienceV2Carrier ToolsEstimateAudienceV2Carrier = "MOBILE"
 	TELCOM_ToolsEstimateAudienceV2Carrier ToolsEstimateAudienceV2Carrier = "TELCOM"
+	MOBILE_ToolsEstimateAudienceV2Carrier ToolsEstimateAudienceV2Carrier = "MOBILE"
 )
 
 // Ptr returns reference to tools_estimate_audience_v2_carrier value

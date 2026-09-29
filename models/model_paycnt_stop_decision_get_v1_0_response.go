@@ -10,12 +10,11 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanEntityCenterCreateV10Response struct for QianchuanEntityCenterCreateV10Response
-type QianchuanEntityCenterCreateV10Response struct {
+// PaycntStopDecisionGetV10Response struct for PaycntStopDecisionGetV10Response
+type PaycntStopDecisionGetV10Response struct {
 	//
-	Code *int64 `json:"code,omitempty"`
-	//
-	Data map[string]interface{} `json:"data,omitempty"`
+	Code *int64                                `json:"code,omitempty"`
+	Data *PaycntStopDecisionGetV10ResponseData `json:"data,omitempty"`
 	//
 	Message *string `json:"message,omitempty"`
 	//

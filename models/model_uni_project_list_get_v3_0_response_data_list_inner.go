@@ -22,8 +22,14 @@ type UniProjectListGetV30ResponseDataListInner struct {
 	//
 	Budget *float64 `json:"budget,omitempty"`
 	//
-	EndTime          *string                                       `json:"end_time,omitempty"`
-	MonetizationMode *UniProjectListGetV30DataListMonetizationMode `json:"monetization_mode,omitempty"`
+	EndTime *string `json:"end_time,omitempty"`
+	//
+	GoingGlobalBudget       *float64                                             `json:"going_global_budget,omitempty"`
+	GoingGlobalBudgetStatus *UniProjectListGetV30DataListGoingGlobalBudgetStatus `json:"going_global_budget_status,omitempty"`
+	//
+	GoingGlobalRoiGoal *float64                                       `json:"going_global_roi_goal,omitempty"`
+	GoingGlobalSwitch  *UniProjectListGetV30DataListGoingGlobalSwitch `json:"going_global_switch,omitempty"`
+	MonetizationMode   *UniProjectListGetV30DataListMonetizationMode  `json:"monetization_mode,omitempty"`
 	//
 	Name    *string                              `json:"name,omitempty"`
 	Pricing *UniProjectListGetV30DataListPricing `json:"pricing,omitempty"`

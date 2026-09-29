@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.95
+// APIClient manages communication with the Oceanengine Open Api API v1.1.96
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -851,6 +851,8 @@ type APIClient struct {
 
 	LocalDeliveryQualificationListV30Api *LocalDeliveryQualificationListV30ApiService
 
+	LocalDiagnosisResultGetV30Api *LocalDiagnosisResultGetV30ApiService
+
 	LocalFileCarouselListV30Api *LocalFileCarouselListV30ApiService
 
 	LocalFileUploadTaskCreateV30Api *LocalFileUploadTaskCreateV30ApiService
@@ -1027,13 +1029,21 @@ type APIClient struct {
 
 	OpenMaterialAuditProSubmitV30Api *OpenMaterialAuditProSubmitV30ApiService
 
+	Paycnt7rStopDecisionGetV10Api *Paycnt7rStopDecisionGetV10ApiService
+
+	PaycntStopDecisionGetV10Api *PaycntStopDecisionGetV10ApiService
+
 	PenaltyTaskGetV30Api *PenaltyTaskGetV30ApiService
 
 	PrepayChargeGenerateFixRemiattanceCodeCreateV30Api *PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService
 
 	PrepayChargeGenerateRemittanceCodeCreateV30Api *PrepayChargeGenerateRemittanceCodeCreateV30ApiService
 
+	ProjectAdsListV10Api *ProjectAdsListV10ApiService
+
 	ProjectBudgetUpdateV30Api *ProjectBudgetUpdateV30ApiService
+
+	ProjectColdStartDecisionGetV10Api *ProjectColdStartDecisionGetV10ApiService
 
 	ProjectCostProtectStatusGetV30Api *ProjectCostProtectStatusGetV30ApiService
 
@@ -1044,6 +1054,8 @@ type APIClient struct {
 	ProjectDeepCpaBidUpdateV30Api *ProjectDeepCpaBidUpdateV30ApiService
 
 	ProjectDeleteV30Api *ProjectDeleteV30ApiService
+
+	ProjectDeliveryUpdateV10Api *ProjectDeliveryUpdateV10ApiService
 
 	ProjectListV30Api *ProjectListV30ApiService
 
@@ -1238,12 +1250,6 @@ type APIClient struct {
 	QianchuanCarouselGetV10Api *QianchuanCarouselGetV10ApiService
 
 	QianchuanDmpAudiencesGetV10Api *QianchuanDmpAudiencesGetV10ApiService
-
-	QianchuanEntityCenterCreateV10Api *QianchuanEntityCenterCreateV10ApiService
-
-	QianchuanEntityCenterGetV10Api *QianchuanEntityCenterGetV10ApiService
-
-	QianchuanEntityIdGetV10Api *QianchuanEntityIdGetV10ApiService
 
 	QianchuanEstimateEffectV10Api *QianchuanEstimateEffectV10ApiService
 
@@ -2954,6 +2960,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.LocalConsultAwameListGetV30Api = (*LocalConsultAwameListGetV30ApiService)(&c.common)
 	c.LocalCustomAudienceGetV30Api = (*LocalCustomAudienceGetV30ApiService)(&c.common)
 	c.LocalDeliveryQualificationListV30Api = (*LocalDeliveryQualificationListV30ApiService)(&c.common)
+	c.LocalDiagnosisResultGetV30Api = (*LocalDiagnosisResultGetV30ApiService)(&c.common)
 	c.LocalFileCarouselListV30Api = (*LocalFileCarouselListV30ApiService)(&c.common)
 	c.LocalFileUploadTaskCreateV30Api = (*LocalFileUploadTaskCreateV30ApiService)(&c.common)
 	c.LocalFileVideoAwemeGetV30Api = (*LocalFileVideoAwemeGetV30ApiService)(&c.common)
@@ -3042,15 +3049,20 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.OcProjectToolsMaterialRaiseGetV30Api = (*OcProjectToolsMaterialRaiseGetV30ApiService)(&c.common)
 	c.OpenMaterialAuditProGetV30Api = (*OpenMaterialAuditProGetV30ApiService)(&c.common)
 	c.OpenMaterialAuditProSubmitV30Api = (*OpenMaterialAuditProSubmitV30ApiService)(&c.common)
+	c.Paycnt7rStopDecisionGetV10Api = (*Paycnt7rStopDecisionGetV10ApiService)(&c.common)
+	c.PaycntStopDecisionGetV10Api = (*PaycntStopDecisionGetV10ApiService)(&c.common)
 	c.PenaltyTaskGetV30Api = (*PenaltyTaskGetV30ApiService)(&c.common)
 	c.PrepayChargeGenerateFixRemiattanceCodeCreateV30Api = (*PrepayChargeGenerateFixRemiattanceCodeCreateV30ApiService)(&c.common)
 	c.PrepayChargeGenerateRemittanceCodeCreateV30Api = (*PrepayChargeGenerateRemittanceCodeCreateV30ApiService)(&c.common)
+	c.ProjectAdsListV10Api = (*ProjectAdsListV10ApiService)(&c.common)
 	c.ProjectBudgetUpdateV30Api = (*ProjectBudgetUpdateV30ApiService)(&c.common)
+	c.ProjectColdStartDecisionGetV10Api = (*ProjectColdStartDecisionGetV10ApiService)(&c.common)
 	c.ProjectCostProtectStatusGetV30Api = (*ProjectCostProtectStatusGetV30ApiService)(&c.common)
 	c.ProjectCpaBidUpdateV30Api = (*ProjectCpaBidUpdateV30ApiService)(&c.common)
 	c.ProjectCreateV30Api = (*ProjectCreateV30ApiService)(&c.common)
 	c.ProjectDeepCpaBidUpdateV30Api = (*ProjectDeepCpaBidUpdateV30ApiService)(&c.common)
 	c.ProjectDeleteV30Api = (*ProjectDeleteV30ApiService)(&c.common)
+	c.ProjectDeliveryUpdateV10Api = (*ProjectDeliveryUpdateV10ApiService)(&c.common)
 	c.ProjectListV30Api = (*ProjectListV30ApiService)(&c.common)
 	c.ProjectNameUpdateV30Api = (*ProjectNameUpdateV30ApiService)(&c.common)
 	c.ProjectRoigoalUpdateV30Api = (*ProjectRoigoalUpdateV30ApiService)(&c.common)
@@ -3148,9 +3160,6 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.QianchuanCarouselAwemeGetV10Api = (*QianchuanCarouselAwemeGetV10ApiService)(&c.common)
 	c.QianchuanCarouselGetV10Api = (*QianchuanCarouselGetV10ApiService)(&c.common)
 	c.QianchuanDmpAudiencesGetV10Api = (*QianchuanDmpAudiencesGetV10ApiService)(&c.common)
-	c.QianchuanEntityCenterCreateV10Api = (*QianchuanEntityCenterCreateV10ApiService)(&c.common)
-	c.QianchuanEntityCenterGetV10Api = (*QianchuanEntityCenterGetV10ApiService)(&c.common)
-	c.QianchuanEntityIdGetV10Api = (*QianchuanEntityIdGetV10ApiService)(&c.common)
 	c.QianchuanEstimateEffectV10Api = (*QianchuanEstimateEffectV10ApiService)(&c.common)
 	c.QianchuanFileImageDeleteV10Api = (*QianchuanFileImageDeleteV10ApiService)(&c.common)
 	c.QianchuanFileVideoAwemeGetV10Api = (*QianchuanFileVideoAwemeGetV10ApiService)(&c.common)

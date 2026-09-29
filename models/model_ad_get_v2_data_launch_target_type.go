@@ -16,8 +16,8 @@ type AdGetV2DataLaunchTargetType string
 // List of ad_get_v2_data_launch_target_type
 const (
 	LIVE_CONVERT_AdGetV2DataLaunchTargetType AdGetV2DataLaunchTargetType = "LIVE_CONVERT"
-	EXTERNAL_AdGetV2DataLaunchTargetType     AdGetV2DataLaunchTargetType = "EXTERNAL"
 	APP_AdGetV2DataLaunchTargetType          AdGetV2DataLaunchTargetType = "APP"
+	EXTERNAL_AdGetV2DataLaunchTargetType     AdGetV2DataLaunchTargetType = "EXTERNAL"
 )
 
 // Ptr returns reference to ad_get_v2_data_launch_target_type value

@@ -15,16 +15,16 @@ type ToolsPromotionCardRecommendTitleGetV2ContentType string
 
 // List of tools_promotion_card_recommend_title_get_v2_content_type
 const (
-	UNKNOWN_ToolsPromotionCardRecommendTitleGetV2ContentType        ToolsPromotionCardRecommendTitleGetV2ContentType = "UNKNOWN"
-	CONSULT_ToolsPromotionCardRecommendTitleGetV2ContentType        ToolsPromotionCardRecommendTitleGetV2ContentType = "CONSULT"
-	CARD_ToolsPromotionCardRecommendTitleGetV2ContentType           ToolsPromotionCardRecommendTitleGetV2ContentType = "CARD"
-	GAME_FORM_ToolsPromotionCardRecommendTitleGetV2ContentType      ToolsPromotionCardRecommendTitleGetV2ContentType = "GAME_FORM"
 	PHONE_ToolsPromotionCardRecommendTitleGetV2ContentType          ToolsPromotionCardRecommendTitleGetV2ContentType = "PHONE"
+	LANDING_ToolsPromotionCardRecommendTitleGetV2ContentType        ToolsPromotionCardRecommendTitleGetV2ContentType = "LANDING"
 	GAME_PACKAGE_ToolsPromotionCardRecommendTitleGetV2ContentType   ToolsPromotionCardRecommendTitleGetV2ContentType = "GAME_PACKAGE"
 	DOWNLOAD_ToolsPromotionCardRecommendTitleGetV2ContentType       ToolsPromotionCardRecommendTitleGetV2ContentType = "DOWNLOAD"
-	TABLE_ToolsPromotionCardRecommendTitleGetV2ContentType          ToolsPromotionCardRecommendTitleGetV2ContentType = "TABLE"
-	LANDING_ToolsPromotionCardRecommendTitleGetV2ContentType        ToolsPromotionCardRecommendTitleGetV2ContentType = "LANDING"
+	CARD_ToolsPromotionCardRecommendTitleGetV2ContentType           ToolsPromotionCardRecommendTitleGetV2ContentType = "CARD"
+	UNKNOWN_ToolsPromotionCardRecommendTitleGetV2ContentType        ToolsPromotionCardRecommendTitleGetV2ContentType = "UNKNOWN"
 	GAME_SUBSCRIBE_ToolsPromotionCardRecommendTitleGetV2ContentType ToolsPromotionCardRecommendTitleGetV2ContentType = "GAME_SUBSCRIBE"
+	GAME_FORM_ToolsPromotionCardRecommendTitleGetV2ContentType      ToolsPromotionCardRecommendTitleGetV2ContentType = "GAME_FORM"
+	TABLE_ToolsPromotionCardRecommendTitleGetV2ContentType          ToolsPromotionCardRecommendTitleGetV2ContentType = "TABLE"
+	CONSULT_ToolsPromotionCardRecommendTitleGetV2ContentType        ToolsPromotionCardRecommendTitleGetV2ContentType = "CONSULT"
 )
 
 // Ptr returns reference to tools_promotion_card_recommend_title_get_v2_content_type value

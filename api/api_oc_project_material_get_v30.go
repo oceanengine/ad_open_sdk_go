@@ -30,6 +30,8 @@ type ApiOpenApiV30OcProjectMaterialGetGetRequest struct {
 	filtering    *OcProjectMaterialGetV30Filtering
 	page         *int64
 	pageSize     *int64
+	cursor       *int64
+	count        *int64
 }
 
 func (r *ApiOpenApiV30OcProjectMaterialGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30OcProjectMaterialGetGetRequest {
@@ -55,6 +57,18 @@ func (r *ApiOpenApiV30OcProjectMaterialGetGetRequest) Page(page int64) *ApiOpenA
 
 func (r *ApiOpenApiV30OcProjectMaterialGetGetRequest) PageSize(pageSize int64) *ApiOpenApiV30OcProjectMaterialGetGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+// 页码游标值。首次拉取传 0；与 page 同时传入时 cursor 优先。
+func (r *ApiOpenApiV30OcProjectMaterialGetGetRequest) Cursor(cursor int64) *ApiOpenApiV30OcProjectMaterialGetGetRequest {
+	r.cursor = &cursor
+	return r
+}
+
+// 游标分页每页数据量，取值范围 1-100；cursor 已传且 count 缺省时按 10 处理。
+func (r *ApiOpenApiV30OcProjectMaterialGetGetRequest) Count(count int64) *ApiOpenApiV30OcProjectMaterialGetGetRequest {
+	r.count = &count
 	return r
 }
 
@@ -134,6 +148,12 @@ func (a *OcProjectMaterialGetV30ApiService) getExecute(r *ApiOpenApiV30OcProject
 	}
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
+	}
+	if r.cursor != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "cursor", r.cursor)
+	}
+	if r.count != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "count", r.count)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

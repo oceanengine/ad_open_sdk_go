@@ -19,5 +19,6 @@ type EbpAccountCreateV30Request struct {
 	// 操作的组织节点
 	EnterpriseOrganizationId int64 `json:"enterprise_organization_id"`
 	// 账户名称，上限10个
-	NewAccountNames []string `json:"new_account_names"`
+	NewAccountNames []string                            `json:"new_account_names"`
+	OwnerUser       EbpAccountCreateV30RequestOwnerUser `json:"owner_user"`
 }

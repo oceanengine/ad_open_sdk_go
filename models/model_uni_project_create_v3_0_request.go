@@ -25,7 +25,12 @@ type UniProjectCreateV30Request struct {
 	CallToActionButtons []string                           `json:"call_to_action_buttons,omitempty"`
 	DeliveryProduct     UniProjectCreateV30DeliveryProduct `json:"delivery_product"`
 	//
-	EndTime                *string                                           `json:"end_time,omitempty"`
+	EndTime *string `json:"end_time,omitempty"`
+	//
+	GoingGlobalBudget *float64 `json:"going_global_budget,omitempty"`
+	//
+	GoingGlobalRoiGoal     *float64                                          `json:"going_global_roi_goal,omitempty"`
+	GoingGlobalSwitch      *UniProjectCreateV30GoingGlobalSwitch             `json:"going_global_switch,omitempty"`
 	InternalAdvertiserInfo *UniProjectCreateV30RequestInternalAdvertiserInfo `json:"internal_advertiser_info,omitempty"`
 	MonetizationMode       UniProjectCreateV30MonetizationMode               `json:"monetization_mode"`
 	//

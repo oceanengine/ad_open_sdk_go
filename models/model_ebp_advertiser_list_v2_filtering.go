@@ -15,5 +15,6 @@ type EbpAdvertiserListV2Filtering struct {
 	//
 	AccountName *string `json:"account_name,omitempty"`
 	//
-	ActiveAccount *bool `json:"active_account,omitempty"`
+	ActiveAccount *bool                                  `json:"active_account,omitempty"`
+	QueryType     *EbpAdvertiserListV2FilteringQueryType `json:"query_type,omitempty"`
 }

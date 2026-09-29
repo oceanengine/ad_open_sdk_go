@@ -28,6 +28,8 @@ type ApiOpenApiV30OcProjectMaterialGetGetRequestExample struct {
 	Filtering    OcProjectMaterialGetV30Filtering `json:"filtering"`
 	Page         int64                            `json:"page,omitempty"`
 	PageSize     int64                            `json:"page_size,omitempty"`
+	Cursor       int64                            `json:"cursor,omitempty"`
+	Count        int64                            `json:"count,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/oc_project/material/get/ Get
@@ -49,7 +51,7 @@ func main() {
 	resp, httpRes, err := apiClient.OcProjectMaterialGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).ProjectId(request.ProjectId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).
+		AdvertiserId(request.AdvertiserId).ProjectId(request.ProjectId).Filtering(request.Filtering).Page(request.Page).PageSize(request.PageSize).Cursor(request.Cursor).Count(request.Count).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

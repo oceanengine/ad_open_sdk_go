@@ -15,8 +15,8 @@ type ReportCampaignGetV2DataListCampaignType string
 
 // List of report_campaign_get_v2_data_list_campaign_type
 const (
-	SEARCH_ReportCampaignGetV2DataListCampaignType ReportCampaignGetV2DataListCampaignType = "SEARCH"
 	FEED_ReportCampaignGetV2DataListCampaignType   ReportCampaignGetV2DataListCampaignType = "FEED"
+	SEARCH_ReportCampaignGetV2DataListCampaignType ReportCampaignGetV2DataListCampaignType = "SEARCH"
 )
 
 // Ptr returns reference to report_campaign_get_v2_data_list_campaign_type value

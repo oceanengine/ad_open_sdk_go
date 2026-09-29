@@ -19,38 +19,38 @@ import (
 	. "github.com/oceanengine/ad_open_sdk_go/models"
 )
 
-// QianchuanEntityIdGetV10ApiService QianchuanEntityIdGetV10Api service
-type QianchuanEntityIdGetV10ApiService service
+// ProjectAdsListV10ApiService ProjectAdsListV10Api service
+type ProjectAdsListV10ApiService service
 
-type ApiOpenApiV10QianchuanEntityIdGetGetRequest struct {
+type ApiOpenApiV10ProjectAdsListGetRequest struct {
 	ctx          context.Context
-	ApiService   *QianchuanEntityIdGetV10ApiService
+	ApiService   *ProjectAdsListV10ApiService
 	advertiserId *int64
-	query        *string
+	cdpProjectId *int64
 }
 
-// 查询广告主账户ID
-func (r *ApiOpenApiV10QianchuanEntityIdGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10QianchuanEntityIdGetGetRequest {
+// 广告主 ID，必须与项目归属一致
+func (r *ApiOpenApiV10ProjectAdsListGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV10ProjectAdsListGetRequest {
 	r.advertiserId = &advertiserId
 	return r
 }
 
-// 用户自然语言查询问题
-func (r *ApiOpenApiV10QianchuanEntityIdGetGetRequest) Query(query string) *ApiOpenApiV10QianchuanEntityIdGetGetRequest {
-	r.query = &query
+// CDP 项目 ID，按项目查询全部未删除、非预览广告，包含已暂停广告
+func (r *ApiOpenApiV10ProjectAdsListGetRequest) CdpProjectId(cdpProjectId int64) *ApiOpenApiV10ProjectAdsListGetRequest {
+	r.cdpProjectId = &cdpProjectId
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanEntityIdGetGetRequest) Execute() ([]byte, *http.Response, error) {
+func (r *ApiOpenApiV10ProjectAdsListGetRequest) Execute() (*ProjectAdsListV10Response, *http.Response, error) {
 	return r.ApiService.getExecute(r)
 }
 
-func (r *ApiOpenApiV10QianchuanEntityIdGetGetRequest) AccessToken(accessToken string) *ApiOpenApiV10QianchuanEntityIdGetGetRequest {
+func (r *ApiOpenApiV10ProjectAdsListGetRequest) AccessToken(accessToken string) *ApiOpenApiV10ProjectAdsListGetRequest {
 	r.ctx = context.WithValue(r.ctx, config.ContextAccessToken, accessToken)
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanEntityIdGetGetRequest) WithLog(enable bool) *ApiOpenApiV10QianchuanEntityIdGetGetRequest {
+func (r *ApiOpenApiV10ProjectAdsListGetRequest) WithLog(enable bool) *ApiOpenApiV10ProjectAdsListGetRequest {
 	if enable {
 		r.ctx = context.WithValue(r.ctx, config.ContextEnableLog, true)
 	}
@@ -58,15 +58,15 @@ func (r *ApiOpenApiV10QianchuanEntityIdGetGetRequest) WithLog(enable bool) *ApiO
 }
 
 /*
-OpenApiV10QianchuanEntityIdGetGet Method for OpenApiV10QianchuanEntityIdGetGet
+OpenApiV10ProjectAdsListGet Method for OpenApiV10ProjectAdsListGet
 
-将确定对象及条件快速转换为实体 ID 集合，供后续意图继续使用。
+ListProjectAds：传入 advertiser_id 和 cdp_project_id，只读查询项目下全部有效的底层 ad_id。排除已删除项目/计划、已删除自动广告和预览广告，不按广告启停状态过滤。所有 CDP 批次成功后返回去重、升序的 ad_ids；空项目成功返回 []，查询失败不返回部分列表。extra 返回 query_complete、ad_count、promotion_count 和查询口径。不调用 Debug 漏斗、创编、纠偏或关停。
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
-	@return ApiOpenApiV10QianchuanEntityIdGetGetRequest
+	@return ApiOpenApiV10ProjectAdsListGetRequest
 */
-func (a *QianchuanEntityIdGetV10ApiService) Get(ctx context.Context) *ApiOpenApiV10QianchuanEntityIdGetGetRequest {
-	return &ApiOpenApiV10QianchuanEntityIdGetGetRequest{
+func (a *ProjectAdsListV10ApiService) Get(ctx context.Context) *ApiOpenApiV10ProjectAdsListGetRequest {
+	return &ApiOpenApiV10ProjectAdsListGetRequest{
 		ApiService: a,
 		ctx:        ctx,
 	}
@@ -74,20 +74,20 @@ func (a *QianchuanEntityIdGetV10ApiService) Get(ctx context.Context) *ApiOpenApi
 
 // Execute executes the request
 //
-//	@return QianchuanEntityIdGetV10Response
-func (a *QianchuanEntityIdGetV10ApiService) getExecute(r *ApiOpenApiV10QianchuanEntityIdGetGetRequest) ([]byte, *http.Response, error) {
+//	@return ProjectAdsListV10Response
+func (a *ProjectAdsListV10ApiService) getExecute(r *ApiOpenApiV10ProjectAdsListGetRequest) (*ProjectAdsListV10Response, *http.Response, error) {
 	var (
 		localVarHTTPMethod  = http.MethodGet
 		localVarPostBody    interface{}
 		formFiles           map[string]*FormFileInfo
-		localVarReturnValue []byte
+		localVarReturnValue *ProjectAdsListV10Response
 	)
 
 	r.ctx = a.client.prepareCtx(r.ctx)
 
 	localBasePath := a.client.Cfg.GetBasePath()
 
-	localVarPath := localBasePath + "/open_api/v1.0/qianchuan_entity_id/get/"
+	localVarPath := localBasePath + "/open_api/v1.0/project_ads/list/"
 
 	localVarHeaderParams := make(map[string]string)
 	formFiles = make(map[string]*FormFileInfo)
@@ -96,12 +96,12 @@ func (a *QianchuanEntityIdGetV10ApiService) getExecute(r *ApiOpenApiV10Qianchuan
 	if r.advertiserId == nil {
 		return localVarReturnValue, nil, ReportError("advertiserId is required and must be specified")
 	}
-	if r.query == nil {
-		return localVarReturnValue, nil, ReportError("query is required and must be specified")
+	if r.cdpProjectId == nil {
+		return localVarReturnValue, nil, ReportError("cdpProjectId is required and must be specified")
 	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "query", r.query)
+	parameterAddToHeaderOrQuery(localVarQueryParams, "cdp_project_id", r.cdpProjectId)
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

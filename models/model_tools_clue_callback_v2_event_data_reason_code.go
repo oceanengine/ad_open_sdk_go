@@ -41,6 +41,13 @@ const (
 	NO_AD_RESPONSE_ToolsClueCallbackV2EventDataReasonCode                       ToolsClueCallbackV2EventDataReasonCode = "NO_AD_RESPONSE"
 	OFFENSIVE_LANGUAGE_ToolsClueCallbackV2EventDataReasonCode                   ToolsClueCallbackV2EventDataReasonCode = "OFFENSIVE_LANGUAGE"
 	OTHER_ToolsClueCallbackV2EventDataReasonCode                                ToolsClueCallbackV2EventDataReasonCode = "OTHER"
+	HOUSE_INTERESTED_ToolsClueCallbackV2EventDataReasonCode                     ToolsClueCallbackV2EventDataReasonCode = "HOUSE_INTERESTED"
+	HOUSE_NEW_HOUSE_REPORT_ToolsClueCallbackV2EventDataReasonCode               ToolsClueCallbackV2EventDataReasonCode = "HOUSE_NEW_HOUSE_REPORT"
+	HOUSE_OLD_HOUSE_LOOK_ToolsClueCallbackV2EventDataReasonCode                 ToolsClueCallbackV2EventDataReasonCode = "HOUSE_OLD_HOUSE_LOOK"
+	HOUSE_NEW_HOUSE_LOOK_ToolsClueCallbackV2EventDataReasonCode                 ToolsClueCallbackV2EventDataReasonCode = "HOUSE_NEW_HOUSE_LOOK"
+	HOUSE_OLD_HOUSE_DEAL_ToolsClueCallbackV2EventDataReasonCode                 ToolsClueCallbackV2EventDataReasonCode = "HOUSE_OLD_HOUSE_DEAL"
+	HOUSE_NEW_HOUSE_DEAL_ToolsClueCallbackV2EventDataReasonCode                 ToolsClueCallbackV2EventDataReasonCode = "HOUSE_NEW_HOUSE_DEAL"
+	HOUSE_NO_INTENTION_ToolsClueCallbackV2EventDataReasonCode                   ToolsClueCallbackV2EventDataReasonCode = "HOUSE_NO_INTENTION"
 )
 
 // Ptr returns reference to tools_clue_callback_v2_event_data_reason_code value

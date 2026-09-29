@@ -15,19 +15,19 @@ type AssetsCreativeComponentUpdateV2ComponentInfoComponentType string
 
 // List of assets_creative_component_update_v2_component_info_component_type
 const (
-	UNION_LIGHT_INTERACTIVE_AssetsCreativeComponentUpdateV2ComponentInfoComponentType AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "UNION_LIGHT_INTERACTIVE"
-	VOTE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType             AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "VOTE_MAGNET"
-	CHOICE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType           AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "CHOICE_MAGNET"
 	COUPON_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType           AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "COUPON_MAGNET"
+	CHOICE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType           AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "CHOICE_MAGNET"
+	ECOMMERCE_CARD_AssetsCreativeComponentUpdateV2ComponentInfoComponentType          AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "ECOMMERCE_CARD"
 	LIGHT_INTER_ACTIVE_AssetsCreativeComponentUpdateV2ComponentInfoComponentType      AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "LIGHT_INTER_ACTIVE"
-	IMAGE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType            AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "IMAGE_MAGNET"
 	PROMOTION_CARD_AssetsCreativeComponentUpdateV2ComponentInfoComponentType          AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "PROMOTION_CARD"
+	IMAGE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType            AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "IMAGE_MAGNET"
+	VOTE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType             AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "VOTE_MAGNET"
+	GAME_PACK_AssetsCreativeComponentUpdateV2ComponentInfoComponentType               AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "GAME_PACK"
+	UNION_LIGHT_INTERACTIVE_AssetsCreativeComponentUpdateV2ComponentInfoComponentType AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "UNION_LIGHT_INTERACTIVE"
+	COMMERCE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType         AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "COMMERCE_MAGNET"
+	HALF_INTERACTIVE_AssetsCreativeComponentUpdateV2ComponentInfoComponentType        AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "HALF_INTERACTIVE"
 	RESERVATION_BUTTON_AssetsCreativeComponentUpdateV2ComponentInfoComponentType      AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "RESERVATION_BUTTON"
 	LUCKY_BOX_AssetsCreativeComponentUpdateV2ComponentInfoComponentType               AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "LUCKY_BOX"
-	COMMERCE_MAGNET_AssetsCreativeComponentUpdateV2ComponentInfoComponentType         AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "COMMERCE_MAGNET"
-	ECOMMERCE_CARD_AssetsCreativeComponentUpdateV2ComponentInfoComponentType          AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "ECOMMERCE_CARD"
-	HALF_INTERACTIVE_AssetsCreativeComponentUpdateV2ComponentInfoComponentType        AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "HALF_INTERACTIVE"
-	GAME_PACK_AssetsCreativeComponentUpdateV2ComponentInfoComponentType               AssetsCreativeComponentUpdateV2ComponentInfoComponentType = "GAME_PACK"
 )
 
 // Ptr returns reference to assets_creative_component_update_v2_component_info_component_type value

@@ -116,14 +116,13 @@ func (a *QualAccountListV2ApiService) getExecute(r *ApiOpenApi2QualAccountListGe
 	if r.appKey == nil {
 		return localVarReturnValue, nil, ReportError("appKey is required and must be specified")
 	}
-	if r.userId == nil {
-		return localVarReturnValue, nil, ReportError("userId is required and must be specified")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "qual_code", r.qualCode)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "qual_type", r.qualType)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "app_key", r.appKey)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "user_id", r.userId)
+	if r.userId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "user_id", r.userId)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

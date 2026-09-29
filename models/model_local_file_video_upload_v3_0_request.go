@@ -15,8 +15,9 @@ type LocalFileVideoUploadV30Request struct {
 	// 素材的文件名，可自定义素材名，不传择默认取文件名，最长255个字符
 	Filename string `json:"filename"`
 	//
-	LocalAccountId int64                                   `json:"local_account_id"`
-	VideoFile      LocalFileVideoUploadV30RequestVideoFile `json:"video_file"`
+	LocalAccountId int64 `json:"local_account_id"`
+	// 视频文件 允许格式：mp4、mpeg、3gp、avi（10s超时限制）
+	VideoFile *FormFileInfo `json:"video_file"`
 	// 视频的md5值(用于服务端校验)
 	VideoSignature string `json:"video_signature"`
 }

@@ -96,12 +96,11 @@ func (a *AdvertiserCancelableGetV2ApiService) getExecute(r *ApiOpenApi2Advertise
 	if r.advertiserIds == nil {
 		return localVarReturnValue, nil, ReportError("advertiserIds is required and must be specified")
 	}
-	if r.userId == nil {
-		return localVarReturnValue, nil, ReportError("userId is required and must be specified")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_ids", r.advertiserIds)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "user_id", r.userId)
+	if r.userId != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "user_id", r.userId)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

@@ -21,6 +21,7 @@ type OcProjectMaterialGetV30ResponseData struct {
 	CarouselMaterialList []*OcProjectMaterialGetV30ResponseDataCarouselMaterialListInner `json:"carousel_material_list,omitempty"`
 	//
 	ComponentMaterialList []*OcProjectMaterialGetV30ResponseDataComponentMaterialListInner `json:"component_material_list,omitempty"`
+	CursorInfo            *OcProjectMaterialGetV30ResponseDataCursorInfo                   `json:"cursor_info,omitempty"`
 	// 落地页链接字段选择
 	ExternalUrlField *string `json:"external_url_field,omitempty"`
 	//

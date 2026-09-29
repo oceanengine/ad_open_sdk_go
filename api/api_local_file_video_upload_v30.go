@@ -27,7 +27,7 @@ type ApiOpenApiV30LocalFileVideoUploadPostRequest struct {
 	ApiService     *LocalFileVideoUploadV30ApiService
 	filename       *string
 	localAccountId *int64
-	videoFile      *LocalFileVideoUploadV30RequestVideoFile
+	videoFile      *FormFileInfo
 	videoSignature *string
 }
 
@@ -42,8 +42,9 @@ func (r *ApiOpenApiV30LocalFileVideoUploadPostRequest) LocalAccountId(localAccou
 	return r
 }
 
-func (r *ApiOpenApiV30LocalFileVideoUploadPostRequest) VideoFile(videoFile LocalFileVideoUploadV30RequestVideoFile) *ApiOpenApiV30LocalFileVideoUploadPostRequest {
-	r.videoFile = &videoFile
+// 视频文件 允许格式：mp4、mpeg、3gp、avi（10s超时限制）
+func (r *ApiOpenApiV30LocalFileVideoUploadPostRequest) VideoFile(videoFile *FormFileInfo) *ApiOpenApiV30LocalFileVideoUploadPostRequest {
+	r.videoFile = videoFile
 	return r
 }
 
@@ -129,7 +130,9 @@ func (a *LocalFileVideoUploadV30ApiService) postExecute(r *ApiOpenApiV30LocalFil
 
 	parameterAddToHeaderOrQuery(localVarFormParams, "filename", r.filename)
 	parameterAddToHeaderOrQuery(localVarFormParams, "local_account_id", r.localAccountId)
-	parameterAddToHeaderOrQuery(localVarFormParams, "video_file", r.videoFile)
+	if r.videoFile != nil {
+		formFiles["video_file"] = r.videoFile
+	}
 	parameterAddToHeaderOrQuery(localVarFormParams, "video_signature", r.videoSignature)
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, formFiles)
 	if err != nil {

@@ -15,13 +15,13 @@ type AdGetV2DataAudiencePlatform string
 
 // List of ad_get_v2_data_audience_platform
 const (
-	IOS_AdGetV2DataAudiencePlatform     AdGetV2DataAudiencePlatform = "IOS"
-	PC_AdGetV2DataAudiencePlatform      AdGetV2DataAudiencePlatform = "PC"
-	ANDROID_AdGetV2DataAudiencePlatform AdGetV2DataAudiencePlatform = "ANDROID"
-	IPAD_AdGetV2DataAudiencePlatform    AdGetV2DataAudiencePlatform = "IPAD"
 	WAP_AdGetV2DataAudiencePlatform     AdGetV2DataAudiencePlatform = "WAP"
 	HARMONY_AdGetV2DataAudiencePlatform AdGetV2DataAudiencePlatform = "HARMONY"
+	PC_AdGetV2DataAudiencePlatform      AdGetV2DataAudiencePlatform = "PC"
 	NONE_AdGetV2DataAudiencePlatform    AdGetV2DataAudiencePlatform = "NONE"
+	IPAD_AdGetV2DataAudiencePlatform    AdGetV2DataAudiencePlatform = "IPAD"
+	ANDROID_AdGetV2DataAudiencePlatform AdGetV2DataAudiencePlatform = "ANDROID"
+	IOS_AdGetV2DataAudiencePlatform     AdGetV2DataAudiencePlatform = "IOS"
 )
 
 // Ptr returns reference to ad_get_v2_data_audience_platform value

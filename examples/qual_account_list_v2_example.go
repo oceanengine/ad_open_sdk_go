@@ -26,7 +26,7 @@ type ApiOpenApi2QualAccountListGetRequestExample struct {
 	QualCode string `json:"qual_code"`
 	QualType string `json:"qual_type"`
 	AppKey   int64  `json:"app_key"`
-	UserId   int64  `json:"user_id"`
+	UserId   int64  `json:"user_id,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/qual/account/list/ Get

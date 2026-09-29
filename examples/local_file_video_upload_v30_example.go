@@ -23,10 +23,10 @@ import (
 )
 
 type ApiOpenApiV30LocalFileVideoUploadPostRequestExample struct {
-	Filename       string                                  `json:"filename"`
-	LocalAccountId int64                                   `json:"local_account_id"`
-	VideoFile      LocalFileVideoUploadV30RequestVideoFile `json:"video_file"`
-	VideoSignature string                                  `json:"video_signature"`
+	Filename       string        `json:"filename"`
+	LocalAccountId int64         `json:"local_account_id"`
+	VideoFile      *FormFileInfo `json:"video_file"`
+	VideoSignature string        `json:"video_signature"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/local/file/video/upload/ Post

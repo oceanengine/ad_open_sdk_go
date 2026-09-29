@@ -15,6 +15,10 @@ type AdvertiserInfoV2ResponseData struct {
 	//
 	Address *string `json:"address,omitempty"`
 	//
+	AgentId *int64 `json:"agent_id,omitempty"`
+	//
+	AgentName *string `json:"agent_name,omitempty"`
+	//
 	Brand *string `json:"brand,omitempty"`
 	//
 	Company *string `json:"company,omitempty"`

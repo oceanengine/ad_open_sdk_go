@@ -15,8 +15,8 @@ type AdGetV2DataPromotionType string
 
 // List of ad_get_v2_data_promotion_type
 const (
-	AWEME_HOME_PAGE_AdGetV2DataPromotionType   AdGetV2DataPromotionType = "AWEME_HOME_PAGE"
 	GOODS_AdGetV2DataPromotionType             AdGetV2DataPromotionType = "GOODS"
+	AWEME_HOME_PAGE_AdGetV2DataPromotionType   AdGetV2DataPromotionType = "AWEME_HOME_PAGE"
 	LANDING_PAGE_LINK_AdGetV2DataPromotionType AdGetV2DataPromotionType = "LANDING_PAGE_LINK"
 	LIVE_AdGetV2DataPromotionType              AdGetV2DataPromotionType = "LIVE"
 )

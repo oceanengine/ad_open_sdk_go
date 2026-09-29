@@ -14,6 +14,8 @@ package models
 type ToolsEbpMaterialListV30Filtering struct {
 	// EBP 自定义标签 ID
 	CustomTagIds []int64 `json:"custom_tag_ids,omitempty"`
+	// 截止时间，yyyy-mm-dd hh:mm:ss
+	EndTime *string `json:"end_time,omitempty"`
 	// 评估类型：FIRST_PUBLISH=首发，AD_HIGH_QUALITY=AD 优质，ECP_HIGH_QUALITY=ECP 优质 优质素材需同时传入 AD 和 ECP 两种
 	EvaluateTypes []*ToolsEbpMaterialListV30FilteringEvaluateTypes `json:"evaluate_types,omitempty"`
 	// 素材类型： CREATIVE_IMAGE_MODE_VIDEO=横版视频， CREATIVE_IMAGE_MODE_VIDEO_VERTICAL=竖版视频， CREATIVE_IMAGE_MODE_VIDEO_SPLASH=开屏视频
@@ -22,6 +24,8 @@ type ToolsEbpMaterialListV30Filtering struct {
 	MaterialIds []int64 `json:"material_ids,omitempty"`
 	// 素材名称模糊匹配
 	MaterialName *string `json:"material_name,omitempty"`
+	// 开始时间，yyyy-mm-dd hh:mm:ss
+	StartTime *string `json:"start_time,omitempty"`
 	// EBP 系统标签稳定配置 ID
 	SystemTagIds []int64 `json:"system_tag_ids,omitempty"`
 }

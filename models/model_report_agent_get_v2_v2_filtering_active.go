@@ -15,8 +15,8 @@ type ReportAgentGetV2V2FilteringActive string
 
 // List of report_agent_get_v2_v2_filtering_active
 const (
-	ACTIVE_ReportAgentGetV2V2FilteringActive ReportAgentGetV2V2FilteringActive = "ACTIVE"
 	ALL_ReportAgentGetV2V2FilteringActive    ReportAgentGetV2V2FilteringActive = "ALL"
+	ACTIVE_ReportAgentGetV2V2FilteringActive ReportAgentGetV2V2FilteringActive = "ACTIVE"
 	SILENT_ReportAgentGetV2V2FilteringActive ReportAgentGetV2V2FilteringActive = "SILENT"
 )
 

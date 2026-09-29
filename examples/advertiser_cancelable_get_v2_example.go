@@ -24,7 +24,7 @@ import (
 
 type ApiOpenApi2AdvertiserCancelableGetGetRequestExample struct {
 	AdvertiserIds int64 `json:"advertiser_ids"`
-	UserId        int64 `json:"user_id"`
+	UserId        int64 `json:"user_id,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/advertiser/cancelable/get/ Get

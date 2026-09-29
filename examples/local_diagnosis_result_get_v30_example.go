@@ -22,12 +22,13 @@ import (
 	. "github.com/oceanengine/ad_open_sdk_go/models"
 )
 
-type ApiOpenApiV10QianchuanEntityIdGetGetRequestExample struct {
-	AdvertiserId int64  `json:"advertiser_id"`
-	Query        string `json:"query"`
+type ApiOpenApiV30LocalDiagnosisResultGetGetRequestExample struct {
+	LocalAccountId int64  `json:"local_account_id"`
+	AdvId          string `json:"adv_id"`
+	Query          string `json:"query"`
 }
 
-// url: https://api.oceanengine.com/open_api/v1.0/qianchuan_entity_id/get/ Get
+// url: https://api.oceanengine.com/open_api/v3.0/local/diagnosis_result/get/ Get
 func main() {
 	const demoreq = ``
 	const accessToken = "ACCESS_TOKEN"
@@ -37,18 +38,18 @@ func main() {
 	apiClient := ad_open_sdk_go.Init(configuration)
 	apiClient.SetLogEnable(true)
 
-	var request ApiOpenApiV10QianchuanEntityIdGetGetRequestExample
+	var request ApiOpenApiV30LocalDiagnosisResultGetGetRequestExample
 	err := json.Unmarshal([]byte(demoreq), &request)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	resp, httpRes, err := apiClient.QianchuanEntityIdGetV10Api().
+	resp, httpRes, err := apiClient.LocalDiagnosisResultGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).Query(request.Query).
+		LocalAccountId(request.LocalAccountId).AdvId(request.AdvId).Query(request.Query).
 		Execute()
-	fmt.Println(string(resp))
+	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)
 	fmt.Println(string(resBytes))
 	fmt.Println(err)

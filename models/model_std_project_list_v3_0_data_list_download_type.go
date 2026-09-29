@@ -15,8 +15,9 @@ type StdProjectListV30DataListDownloadType string
 
 // List of std_project_list_v3.0_data_list_download_type
 const (
-	DOWNLOAD_URL_StdProjectListV30DataListDownloadType StdProjectListV30DataListDownloadType = "DOWNLOAD_URL"
-	EXTERNAL_URL_StdProjectListV30DataListDownloadType StdProjectListV30DataListDownloadType = "EXTERNAL_URL"
+	DOWNLOAD_URL_StdProjectListV30DataListDownloadType  StdProjectListV30DataListDownloadType = "DOWNLOAD_URL"
+	EXTERNAL_URL_StdProjectListV30DataListDownloadType  StdProjectListV30DataListDownloadType = "EXTERNAL_URL"
+	QUICK_APP_URL_StdProjectListV30DataListDownloadType StdProjectListV30DataListDownloadType = "QUICK_APP_URL"
 )
 
 // Ptr returns reference to std_project_list_v3.0_data_list_download_type value

@@ -22,17 +22,12 @@ import (
 	. "github.com/oceanengine/ad_open_sdk_go/models"
 )
 
-type ApiOpenApiV10QianchuanEntityCenterGetGetRequestExample struct {
-	AdvertiserId  int64  `json:"advertiser_id"`
-	StartTime     string `json:"start_time"`
-	EndTime       string `json:"end_time"`
-	Authorization string `json:"authorization,omitempty"`
-	Caller        string `json:"caller,omitempty"`
-	Limit         int64  `json:"limit,omitempty"`
-	Offset        int64  `json:"offset,omitempty"`
+type ApiOpenApiV10ProjectColdStartDecisionGetGetRequestExample struct {
+	AdvertiserId int64 `json:"advertiser_id"`
+	CdpProjectId int64 `json:"cdp_project_id"`
 }
 
-// url: https://api.oceanengine.com/open_api/v1.0/qianchuan_entity_center/get/ Get
+// url: https://api.oceanengine.com/open_api/v1.0/project_cold_start_decision/get/ Get
 func main() {
 	const demoreq = ``
 	const accessToken = "ACCESS_TOKEN"
@@ -42,18 +37,18 @@ func main() {
 	apiClient := ad_open_sdk_go.Init(configuration)
 	apiClient.SetLogEnable(true)
 
-	var request ApiOpenApiV10QianchuanEntityCenterGetGetRequestExample
+	var request ApiOpenApiV10ProjectColdStartDecisionGetGetRequestExample
 	err := json.Unmarshal([]byte(demoreq), &request)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	resp, httpRes, err := apiClient.QianchuanEntityCenterGetV10Api().
+	resp, httpRes, err := apiClient.ProjectColdStartDecisionGetV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).StartTime(request.StartTime).EndTime(request.EndTime).Authorization(request.Authorization).Caller(request.Caller).Limit(request.Limit).Offset(request.Offset).
+		AdvertiserId(request.AdvertiserId).CdpProjectId(request.CdpProjectId).
 		Execute()
-	fmt.Println(string(resp))
+	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)
 	fmt.Println(string(resBytes))
 	fmt.Println(err)

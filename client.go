@@ -1,5 +1,5 @@
 /*
-API version: 1.1.95
+API version: 1.1.96
 */
 package ad_open_sdk_go
 
@@ -1627,6 +1627,10 @@ func (c *Client) LocalDeliveryQualificationListV30Api() *api.LocalDeliveryQualif
 	return c.ApiClient.LocalDeliveryQualificationListV30Api
 }
 
+func (c *Client) LocalDiagnosisResultGetV30Api() *api.LocalDiagnosisResultGetV30ApiService {
+	return c.ApiClient.LocalDiagnosisResultGetV30Api
+}
+
 func (c *Client) LocalFileCarouselListV30Api() *api.LocalFileCarouselListV30ApiService {
 	return c.ApiClient.LocalFileCarouselListV30Api
 }
@@ -1979,6 +1983,14 @@ func (c *Client) OpenMaterialAuditProSubmitV30Api() *api.OpenMaterialAuditProSub
 	return c.ApiClient.OpenMaterialAuditProSubmitV30Api
 }
 
+func (c *Client) Paycnt7rStopDecisionGetV10Api() *api.Paycnt7rStopDecisionGetV10ApiService {
+	return c.ApiClient.Paycnt7rStopDecisionGetV10Api
+}
+
+func (c *Client) PaycntStopDecisionGetV10Api() *api.PaycntStopDecisionGetV10ApiService {
+	return c.ApiClient.PaycntStopDecisionGetV10Api
+}
+
 func (c *Client) PenaltyTaskGetV30Api() *api.PenaltyTaskGetV30ApiService {
 	return c.ApiClient.PenaltyTaskGetV30Api
 }
@@ -1991,8 +2003,16 @@ func (c *Client) PrepayChargeGenerateRemittanceCodeCreateV30Api() *api.PrepayCha
 	return c.ApiClient.PrepayChargeGenerateRemittanceCodeCreateV30Api
 }
 
+func (c *Client) ProjectAdsListV10Api() *api.ProjectAdsListV10ApiService {
+	return c.ApiClient.ProjectAdsListV10Api
+}
+
 func (c *Client) ProjectBudgetUpdateV30Api() *api.ProjectBudgetUpdateV30ApiService {
 	return c.ApiClient.ProjectBudgetUpdateV30Api
+}
+
+func (c *Client) ProjectColdStartDecisionGetV10Api() *api.ProjectColdStartDecisionGetV10ApiService {
+	return c.ApiClient.ProjectColdStartDecisionGetV10Api
 }
 
 func (c *Client) ProjectCostProtectStatusGetV30Api() *api.ProjectCostProtectStatusGetV30ApiService {
@@ -2013,6 +2033,10 @@ func (c *Client) ProjectDeepCpaBidUpdateV30Api() *api.ProjectDeepCpaBidUpdateV30
 
 func (c *Client) ProjectDeleteV30Api() *api.ProjectDeleteV30ApiService {
 	return c.ApiClient.ProjectDeleteV30Api
+}
+
+func (c *Client) ProjectDeliveryUpdateV10Api() *api.ProjectDeliveryUpdateV10ApiService {
+	return c.ApiClient.ProjectDeliveryUpdateV10Api
 }
 
 func (c *Client) ProjectListV30Api() *api.ProjectListV30ApiService {
@@ -2401,18 +2425,6 @@ func (c *Client) QianchuanCarouselGetV10Api() *api.QianchuanCarouselGetV10ApiSer
 
 func (c *Client) QianchuanDmpAudiencesGetV10Api() *api.QianchuanDmpAudiencesGetV10ApiService {
 	return c.ApiClient.QianchuanDmpAudiencesGetV10Api
-}
-
-func (c *Client) QianchuanEntityCenterCreateV10Api() *api.QianchuanEntityCenterCreateV10ApiService {
-	return c.ApiClient.QianchuanEntityCenterCreateV10Api
-}
-
-func (c *Client) QianchuanEntityCenterGetV10Api() *api.QianchuanEntityCenterGetV10ApiService {
-	return c.ApiClient.QianchuanEntityCenterGetV10Api
-}
-
-func (c *Client) QianchuanEntityIdGetV10Api() *api.QianchuanEntityIdGetV10ApiService {
-	return c.ApiClient.QianchuanEntityIdGetV10Api
 }
 
 func (c *Client) QianchuanEstimateEffectV10Api() *api.QianchuanEstimateEffectV10ApiService {

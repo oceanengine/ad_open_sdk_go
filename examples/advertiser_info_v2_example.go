@@ -25,6 +25,7 @@ import (
 type ApiOpenApi2AdvertiserInfoGetRequestExample struct {
 	AdvertiserIds []int64  `json:"advertiser_ids,omitempty"`
 	Fields        []string `json:"fields,omitempty"`
+	IsSearchAgent bool     `json:"is_search_agent,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/advertiser/info/ Get
@@ -46,7 +47,7 @@ func main() {
 	resp, httpRes, err := apiClient.AdvertiserInfoV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserIds(request.AdvertiserIds).Fields(request.Fields).
+		AdvertiserIds(request.AdvertiserIds).Fields(request.Fields).IsSearchAgent(request.IsSearchAgent).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

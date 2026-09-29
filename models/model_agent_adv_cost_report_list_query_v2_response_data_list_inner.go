@@ -33,8 +33,10 @@ type AgentAdvCostReportListQueryV2ResponseDataListInner struct {
 	BrandProductSecondTypeName *string                                            `json:"brand_product_second_type_name,omitempty"`
 	BusinessType               *AgentAdvCostReportListQueryV2DataListBusinessType `json:"business_type,omitempty"`
 	// 业务来源名称
-	BusinessTypeName *string                                            `json:"business_type_name,omitempty"`
-	CashbackType     *AgentAdvCostReportListQueryV2DataListCashbackType `json:"cashback_type,omitempty"`
+	BusinessTypeName *string `json:"business_type_name,omitempty"`
+	// 排期 ID
+	CartId       *int64                                             `json:"cart_id,omitempty"`
+	CashbackType *AgentAdvCostReportListQueryV2DataListCashbackType `json:"cashback_type,omitempty"`
 	// 资源包类型名称
 	CashbackTypeName *string `json:"cashback_type_name,omitempty"`
 	// 广告主公司id
@@ -68,8 +70,12 @@ type AgentAdvCostReportListQueryV2ResponseDataListInner struct {
 	// 客户一级行业
 	FirstIndustry *string `json:"first_industry,omitempty"`
 	// 赠款消耗(单位：千分之一分)
-	GrantCost          *int64                                                   `json:"grant_cost,omitempty"`
+	GrantCost *int64 `json:"grant_cost,omitempty"`
+	// 招商意向编号
+	IntentionNo        *string                                                  `json:"intention_no,omitempty"`
 	IsMatchingProvince *AgentAdvCostReportListQueryV2DataListIsMatchingProvince `json:"is_matching_province,omitempty"`
+	// 招商项目编号
+	MerchNo *string `json:"merch_no,omitempty"`
 	// 非赠款消耗(单位：千分之一分)
 	NoGrantCost *int64 `json:"no_grant_cost,omitempty"`
 	// 预付消耗(单位：千分之一分)

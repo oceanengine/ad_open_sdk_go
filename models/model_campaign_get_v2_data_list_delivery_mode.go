@@ -15,8 +15,8 @@ type CampaignGetV2DataListDeliveryMode string
 
 // List of campaign_get_v2_data_list_delivery_mode
 const (
-	MANUAL_CampaignGetV2DataListDeliveryMode     CampaignGetV2DataListDeliveryMode = "MANUAL"
 	PROCEDURAL_CampaignGetV2DataListDeliveryMode CampaignGetV2DataListDeliveryMode = "PROCEDURAL"
+	MANUAL_CampaignGetV2DataListDeliveryMode     CampaignGetV2DataListDeliveryMode = "MANUAL"
 )
 
 // Ptr returns reference to campaign_get_v2_data_list_delivery_mode value

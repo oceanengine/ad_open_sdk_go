@@ -15,9 +15,9 @@ type ToolsAppManagementExtendPackageCreateV2Mode string
 
 // List of tools_app_management_extend_package_create_v2_mode
 const (
+	CUSTOMIZE_ToolsAppManagementExtendPackageCreateV2Mode ToolsAppManagementExtendPackageCreateV2Mode = "Customize"
 	AUTO_ToolsAppManagementExtendPackageCreateV2Mode      ToolsAppManagementExtendPackageCreateV2Mode = "Auto"
 	MANUAL_ToolsAppManagementExtendPackageCreateV2Mode    ToolsAppManagementExtendPackageCreateV2Mode = "Manual"
-	CUSTOMIZE_ToolsAppManagementExtendPackageCreateV2Mode ToolsAppManagementExtendPackageCreateV2Mode = "Customize"
 )
 
 // Ptr returns reference to tools_app_management_extend_package_create_v2_mode value

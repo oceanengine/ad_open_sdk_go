@@ -27,6 +27,7 @@ type ApiOpenApi2AdvertiserInfoGetRequest struct {
 	ApiService    *AdvertiserInfoV2ApiService
 	advertiserIds *[]int64
 	fields        *[]string
+	isSearchAgent *bool
 }
 
 func (r *ApiOpenApi2AdvertiserInfoGetRequest) AdvertiserIds(advertiserIds []int64) *ApiOpenApi2AdvertiserInfoGetRequest {
@@ -36,6 +37,11 @@ func (r *ApiOpenApi2AdvertiserInfoGetRequest) AdvertiserIds(advertiserIds []int6
 
 func (r *ApiOpenApi2AdvertiserInfoGetRequest) Fields(fields []string) *ApiOpenApi2AdvertiserInfoGetRequest {
 	r.fields = &fields
+	return r
+}
+
+func (r *ApiOpenApi2AdvertiserInfoGetRequest) IsSearchAgent(isSearchAgent bool) *ApiOpenApi2AdvertiserInfoGetRequest {
+	r.isSearchAgent = &isSearchAgent
 	return r
 }
 
@@ -97,6 +103,9 @@ func (a *AdvertiserInfoV2ApiService) getExecute(r *ApiOpenApi2AdvertiserInfoGetR
 	}
 	if r.fields != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "fields", r.fields)
+	}
+	if r.isSearchAgent != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "is_search_agent", r.isSearchAgent)
 	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}

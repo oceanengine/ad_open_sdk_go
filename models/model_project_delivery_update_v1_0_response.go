@@ -10,12 +10,11 @@ Oceanengine Open Api
 
 package models
 
-// QianchuanEntityIdGetV10Response struct for QianchuanEntityIdGetV10Response
-type QianchuanEntityIdGetV10Response struct {
+// ProjectDeliveryUpdateV10Response struct for ProjectDeliveryUpdateV10Response
+type ProjectDeliveryUpdateV10Response struct {
 	//
-	Code *int64 `json:"code,omitempty"`
-	//
-	Data map[string]interface{} `json:"data,omitempty"`
+	Code *int64                                `json:"code,omitempty"`
+	Data *ProjectDeliveryUpdateV10ResponseData `json:"data,omitempty"`
 	//
 	Message *string `json:"message,omitempty"`
 	//
