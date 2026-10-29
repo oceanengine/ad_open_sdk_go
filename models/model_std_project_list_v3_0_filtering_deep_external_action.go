@@ -188,6 +188,7 @@ const (
 	AD_CONVERT_TYPE_WECHAT_REGISTER_StdProjectListV30FilteringDeepExternalAction             StdProjectListV30FilteringDeepExternalAction = "AD_CONVERT_TYPE_WECHAT_REGISTER"
 	AD_CONVERT_TYPE_WECHAT_WECOM_ADD_StdProjectListV30FilteringDeepExternalAction            StdProjectListV30FilteringDeepExternalAction = "AD_CONVERT_TYPE_WECHAT_WECOM_ADD"
 	AD_CONVERT_TYPE_XPATH_StdProjectListV30FilteringDeepExternalAction                       StdProjectListV30FilteringDeepExternalAction = "AD_CONVERT_TYPE_XPATH"
+	AD_CONVERT_TYPE_INSURANCE_PAY_StdProjectListV30FilteringDeepExternalAction               StdProjectListV30FilteringDeepExternalAction = "AD_CONVERT_TYPE_INSURANCE_PAY"
 )
 
 // Ptr returns reference to std_project_list_v3.0_filtering_deep_external_action value

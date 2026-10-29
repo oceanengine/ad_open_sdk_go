@@ -18,8 +18,12 @@ type BrandMaWarningOrderListV30ResponseDataOrdersInner struct {
 	Name *string `json:"name,omitempty"`
 	// 预订单ID
 	OrderId *int64 `json:"order_id,omitempty"`
+	// 预定单来源：1-ECP，2-AD，3-Poseidon
+	OrderSource *int64 `json:"order_source,omitempty"`
 	// 产品类型
 	ProType *int64 `json:"pro_type,omitempty"`
+	// 自助来源：1-AD，3-Poseidon
+	SelfServiceSource *int64 `json:"self_service_source,omitempty"`
 	// 预警类别：1-创意未上传；2-审核原因；3-店铺&商品；4-直播
 	WarningOrderType *int64 `json:"warning_order_type,omitempty"`
 	// 预警标签

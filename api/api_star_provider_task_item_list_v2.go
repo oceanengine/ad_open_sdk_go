@@ -27,12 +27,12 @@ type ApiOpenApi2StarProviderTaskItemListGetRequest struct {
 	ApiService          *StarProviderTaskItemListV2ApiService
 	starId              *int64
 	taskId              *int64
-	statisticsStartTime *int64
-	statisticsEndTime   *int64
 	itemSearchKey       *string
 	itemStatus          *[]int64
 	page                *int64
 	pageSize            *int64
+	statisticsStartTime *int64
+	statisticsEndTime   *int64
 }
 
 // 星图服务商ID
@@ -44,18 +44,6 @@ func (r *ApiOpenApi2StarProviderTaskItemListGetRequest) StarId(starId int64) *Ap
 // 任务ID
 func (r *ApiOpenApi2StarProviderTaskItemListGetRequest) TaskId(taskId int64) *ApiOpenApi2StarProviderTaskItemListGetRequest {
 	r.taskId = &taskId
-	return r
-}
-
-// 投放统计周期开始时间，毫秒级时间戳
-func (r *ApiOpenApi2StarProviderTaskItemListGetRequest) StatisticsStartTime(statisticsStartTime int64) *ApiOpenApi2StarProviderTaskItemListGetRequest {
-	r.statisticsStartTime = &statisticsStartTime
-	return r
-}
-
-// 投放统计周期结束时间，毫秒级时间戳
-func (r *ApiOpenApi2StarProviderTaskItemListGetRequest) StatisticsEndTime(statisticsEndTime int64) *ApiOpenApi2StarProviderTaskItemListGetRequest {
-	r.statisticsEndTime = &statisticsEndTime
 	return r
 }
 
@@ -80,6 +68,18 @@ func (r *ApiOpenApi2StarProviderTaskItemListGetRequest) Page(page int64) *ApiOpe
 // 每页条数
 func (r *ApiOpenApi2StarProviderTaskItemListGetRequest) PageSize(pageSize int64) *ApiOpenApi2StarProviderTaskItemListGetRequest {
 	r.pageSize = &pageSize
+	return r
+}
+
+// 投放统计周期开始时间，毫秒级时间戳
+func (r *ApiOpenApi2StarProviderTaskItemListGetRequest) StatisticsStartTime(statisticsStartTime int64) *ApiOpenApi2StarProviderTaskItemListGetRequest {
+	r.statisticsStartTime = &statisticsStartTime
+	return r
+}
+
+// 投放统计周期结束时间，毫秒级时间戳
+func (r *ApiOpenApi2StarProviderTaskItemListGetRequest) StatisticsEndTime(statisticsEndTime int64) *ApiOpenApi2StarProviderTaskItemListGetRequest {
+	r.statisticsEndTime = &statisticsEndTime
 	return r
 }
 
@@ -141,12 +141,6 @@ func (a *StarProviderTaskItemListV2ApiService) getExecute(r *ApiOpenApi2StarProv
 	if r.taskId == nil {
 		return localVarReturnValue, nil, ReportError("taskId is required and must be specified")
 	}
-	if r.statisticsStartTime == nil {
-		return localVarReturnValue, nil, ReportError("statisticsStartTime is required and must be specified")
-	}
-	if r.statisticsEndTime == nil {
-		return localVarReturnValue, nil, ReportError("statisticsEndTime is required and must be specified")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "star_id", r.starId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "task_id", r.taskId)
@@ -162,8 +156,12 @@ func (a *StarProviderTaskItemListV2ApiService) getExecute(r *ApiOpenApi2StarProv
 	if r.pageSize != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "page_size", r.pageSize)
 	}
-	parameterAddToHeaderOrQuery(localVarQueryParams, "statistics_start_time", r.statisticsStartTime)
-	parameterAddToHeaderOrQuery(localVarQueryParams, "statistics_end_time", r.statisticsEndTime)
+	if r.statisticsStartTime != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "statistics_start_time", r.statisticsStartTime)
+	}
+	if r.statisticsEndTime != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "statistics_end_time", r.statisticsEndTime)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

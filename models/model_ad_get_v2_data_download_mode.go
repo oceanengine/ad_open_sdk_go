@@ -15,8 +15,8 @@ type AdGetV2DataDownloadMode string
 
 // List of ad_get_v2_data_download_mode
 const (
-	DEFAULT_AdGetV2DataDownloadMode            AdGetV2DataDownloadMode = "DEFAULT"
 	APP_STORE_DELIVERY_AdGetV2DataDownloadMode AdGetV2DataDownloadMode = "APP_STORE_DELIVERY"
+	DEFAULT_AdGetV2DataDownloadMode            AdGetV2DataDownloadMode = "DEFAULT"
 )
 
 // Ptr returns reference to ad_get_v2_data_download_mode value

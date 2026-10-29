@@ -15,7 +15,8 @@ type StarDemandCreateAssignV2RequestOrderItemInfoAuthorListInner struct {
 	// 达人ID（星图中的达人Star ID）
 	AuthorId int64 `json:"author_id"`
 	// 任务数量  1到10的整数，所有达人任务累计数量不能超过50
-	Cnt int64 `json:"cnt"`
+	Cnt                             int64                                                                                       `json:"cnt"`
+	MktApiAuthorOrderCustomizedItem *StarDemandCreateAssignV2RequestOrderItemInfoAuthorListInnerMktApiAuthorOrderCustomizedItem `json:"mkt_api_author_order_customized_item,omitempty"`
 	// 任务时长，直播任务使用
 	OrderTimeSpan *int64 `json:"order_time_span,omitempty"`
 	// 任务类型枚举  [video_type]仅限以下 (1)：1-20s视频； (2)：21-60s视频； (71)：60s+视频

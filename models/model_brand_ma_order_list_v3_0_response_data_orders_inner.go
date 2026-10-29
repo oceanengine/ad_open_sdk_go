@@ -44,6 +44,8 @@ type BrandMaOrderListV30ResponseDataOrdersInner struct {
 	OrderId *int64 `json:"order_id,omitempty"`
 	// 预订单名称
 	OrderName *string `json:"order_name,omitempty"`
+	// 预订单来源：1-ECP，2-AD，3-Poseidon
+	OrderSource *int64 `json:"order_source,omitempty"`
 	// 预订单状态
 	OrderStatus *int64 `json:"order_status,omitempty"`
 	// 计费类型
@@ -53,6 +55,8 @@ type BrandMaOrderListV30ResponseDataOrdersInner struct {
 	// 预定单备注
 	Remark       *string                                                 `json:"remark,omitempty"`
 	ScheduleInfo *BrandMaOrderListV30ResponseDataOrdersInnerScheduleInfo `json:"schedule_info,omitempty"`
+	// 自助来源：1-AD，3-Poseidon
+	SelfServiceSource *int64 `json:"self_service_source,omitempty"`
 	// 操作员工ID
 	StaffId []int64 `json:"staff_id,omitempty"`
 }

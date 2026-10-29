@@ -1,5 +1,5 @@
 /*
-API version: 1.1.97
+API version: 1.1.98
 */
 package ad_open_sdk_go
 
@@ -129,6 +129,10 @@ func (c *Client) AdvertiserDeliveryQualificationListV30Api() *api.AdvertiserDeli
 
 func (c *Client) AdvertiserDeliveryQualificationSubmitV30Api() *api.AdvertiserDeliveryQualificationSubmitV30ApiService {
 	return c.ApiClient.AdvertiserDeliveryQualificationSubmitV30Api
+}
+
+func (c *Client) AdvertiserDisableCheckGetV2Api() *api.AdvertiserDisableCheckGetV2ApiService {
+	return c.ApiClient.AdvertiserDisableCheckGetV2Api
 }
 
 func (c *Client) AdvertiserFundDailyStatV2Api() *api.AdvertiserFundDailyStatV2ApiService {
@@ -491,6 +495,14 @@ func (c *Client) BrandMaAccountListV30Api() *api.BrandMaAccountListV30ApiService
 	return c.ApiClient.BrandMaAccountListV30Api
 }
 
+func (c *Client) BrandMaHalfSelfAdInfoGetV30Api() *api.BrandMaHalfSelfAdInfoGetV30ApiService {
+	return c.ApiClient.BrandMaHalfSelfAdInfoGetV30Api
+}
+
+func (c *Client) BrandMaHalfSelfCreativeInfoGetV30Api() *api.BrandMaHalfSelfCreativeInfoGetV30ApiService {
+	return c.ApiClient.BrandMaHalfSelfCreativeInfoGetV30Api
+}
+
 func (c *Client) BrandMaMaterialListV30Api() *api.BrandMaMaterialListV30ApiService {
 	return c.ApiClient.BrandMaMaterialListV30Api
 }
@@ -731,6 +743,10 @@ func (c *Client) CgTransferWalletTransferListV30Api() *api.CgTransferWalletTrans
 	return c.ApiClient.CgTransferWalletTransferListV30Api
 }
 
+func (c *Client) ChargeContractListV30Api() *api.ChargeContractListV30ApiService {
+	return c.ApiClient.ChargeContractListV30Api
+}
+
 func (c *Client) ChargeInfoOrderNoGetV30Api() *api.ChargeInfoOrderNoGetV30ApiService {
 	return c.ApiClient.ChargeInfoOrderNoGetV30Api
 }
@@ -741,6 +757,10 @@ func (c *Client) ChargeInfoPaymentVoucherGetV30Api() *api.ChargeInfoPaymentVouch
 
 func (c *Client) ChargeListV30Api() *api.ChargeListV30ApiService {
 	return c.ApiClient.ChargeListV30Api
+}
+
+func (c *Client) ChargeOrderInfoGetV30Api() *api.ChargeOrderInfoGetV30ApiService {
+	return c.ApiClient.ChargeOrderInfoGetV30Api
 }
 
 func (c *Client) ChargeResultV30Api() *api.ChargeResultV30ApiService {
@@ -2075,6 +2095,10 @@ func (c *Client) ProjectColdStartDecisionGetV10Api() *api.ProjectColdStartDecisi
 	return c.ApiClient.ProjectColdStartDecisionGetV10Api
 }
 
+func (c *Client) ProjectCostIssueDiagnosisGetV10Api() *api.ProjectCostIssueDiagnosisGetV10ApiService {
+	return c.ApiClient.ProjectCostIssueDiagnosisGetV10Api
+}
+
 func (c *Client) ProjectCostProtectStatusGetV30Api() *api.ProjectCostProtectStatusGetV30ApiService {
 	return c.ApiClient.ProjectCostProtectStatusGetV30Api
 }
@@ -2121,6 +2145,10 @@ func (c *Client) ProjectStatusUpdateV30Api() *api.ProjectStatusUpdateV30ApiServi
 
 func (c *Client) ProjectUpdateV30Api() *api.ProjectUpdateV30ApiService {
 	return c.ApiClient.ProjectUpdateV30Api
+}
+
+func (c *Client) ProjectVolumeDropDiagnosisGetV10Api() *api.ProjectVolumeDropDiagnosisGetV10ApiService {
+	return c.ApiClient.ProjectVolumeDropDiagnosisGetV10Api
 }
 
 func (c *Client) ProjectWeekScheduleUpdateV30Api() *api.ProjectWeekScheduleUpdateV30ApiService {
@@ -3829,6 +3857,10 @@ func (c *Client) StdProjectListV30Api() *api.StdProjectListV30ApiService {
 
 func (c *Client) StdProjectUpdateV30Api() *api.StdProjectUpdateV30ApiService {
 	return c.ApiClient.StdProjectUpdateV30Api
+}
+
+func (c *Client) SubjectBankInfoGetV30Api() *api.SubjectBankInfoGetV30ApiService {
+	return c.ApiClient.SubjectBankInfoGetV30Api
 }
 
 func (c *Client) SubscribeAccountsAddV30Api() *api.SubscribeAccountsAddV30ApiService {

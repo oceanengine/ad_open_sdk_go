@@ -170,6 +170,7 @@ const (
 	AD_CONVERT_TYPE_WECHAT_REGISTER_NativeAnchorGetV30FilteringExternalAction             NativeAnchorGetV30FilteringExternalAction = "AD_CONVERT_TYPE_WECHAT_REGISTER"
 	AD_CONVERT_TYPE_WECHAT_WECOM_ADD_NativeAnchorGetV30FilteringExternalAction            NativeAnchorGetV30FilteringExternalAction = "AD_CONVERT_TYPE_WECHAT_WECOM_ADD"
 	AD_CONVERT_TYPE_XPATH_NativeAnchorGetV30FilteringExternalAction                       NativeAnchorGetV30FilteringExternalAction = "AD_CONVERT_TYPE_XPATH"
+	AD_CONVERT_TYPE_INSURANCE_PAY_NativeAnchorGetV30FilteringExternalAction               NativeAnchorGetV30FilteringExternalAction = "AD_CONVERT_TYPE_INSURANCE_PAY"
 )
 
 // Ptr returns reference to native_anchor_get_v3.0_filtering_external_action value

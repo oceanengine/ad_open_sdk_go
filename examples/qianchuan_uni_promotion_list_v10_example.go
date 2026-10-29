@@ -27,9 +27,9 @@ type ApiOpenApiV10QianchuanUniPromotionListGetRequestExample struct {
 	StartTime          string                                    `json:"start_time"`
 	EndTime            string                                    `json:"end_time"`
 	MarketingGoal      QianchuanUniPromotionListV10MarketingGoal `json:"marketing_goal"`
-	Fields             []*QianchuanUniPromotionListV10Fields     `json:"fields"`
 	Filtering          QianchuanUniPromotionListV10Filtering     `json:"filtering,omitempty"`
 	NeedCompensateInfo bool                                      `json:"need_compensate_info,omitempty"`
+	Fields             []*QianchuanUniPromotionListV10Fields     `json:"fields,omitempty"`
 	OrderType          QianchuanUniPromotionListV10OrderType     `json:"order_type,omitempty"`
 	OrderField         QianchuanUniPromotionListV10OrderField    `json:"order_field,omitempty"`
 	Page               int32                                     `json:"page,omitempty"`
@@ -57,7 +57,7 @@ func main() {
 	resp, httpRes, err := apiClient.QianchuanUniPromotionListV10Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).StartTime(request.StartTime).EndTime(request.EndTime).MarketingGoal(request.MarketingGoal).Fields(request.Fields).Filtering(request.Filtering).NeedCompensateInfo(request.NeedCompensateInfo).OrderType(request.OrderType).OrderField(request.OrderField).Page(request.Page).PageSize(request.PageSize).AdlabScene(request.AdlabScene).DataPeriod(request.DataPeriod).
+		AdvertiserId(request.AdvertiserId).StartTime(request.StartTime).EndTime(request.EndTime).MarketingGoal(request.MarketingGoal).Filtering(request.Filtering).NeedCompensateInfo(request.NeedCompensateInfo).Fields(request.Fields).OrderType(request.OrderType).OrderField(request.OrderField).Page(request.Page).PageSize(request.PageSize).AdlabScene(request.AdlabScene).DataPeriod(request.DataPeriod).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

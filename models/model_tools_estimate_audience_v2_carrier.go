@@ -15,8 +15,8 @@ type ToolsEstimateAudienceV2Carrier string
 
 // List of tools_estimate_audience_v2_carrier
 const (
-	UNICOM_ToolsEstimateAudienceV2Carrier ToolsEstimateAudienceV2Carrier = "UNICOM"
 	TELCOM_ToolsEstimateAudienceV2Carrier ToolsEstimateAudienceV2Carrier = "TELCOM"
+	UNICOM_ToolsEstimateAudienceV2Carrier ToolsEstimateAudienceV2Carrier = "UNICOM"
 	MOBILE_ToolsEstimateAudienceV2Carrier ToolsEstimateAudienceV2Carrier = "MOBILE"
 )
 

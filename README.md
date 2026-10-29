@@ -232,6 +232,7 @@ Class | Method | HTTP request
 *AdvertiserDeliveryQualificationDeleteV30Api* | **OpenApiV30AdvertiserDeliveryQualificationDeletePost** | **Post** /open_api/v3.0/advertiser/delivery_qualification/delete/
 *AdvertiserDeliveryQualificationListV30Api* | **OpenApiV30AdvertiserDeliveryQualificationListGet** | **Get** /open_api/v3.0/advertiser/delivery_qualification/list/
 *AdvertiserDeliveryQualificationSubmitV30Api* | **OpenApiV30AdvertiserDeliveryQualificationSubmitPost** | **Post** /open_api/v3.0/advertiser/delivery_qualification/submit/
+*AdvertiserDisableCheckGetV2Api* | **OpenApi2AdvertiserDisableCheckGetGet** | **Get** /open_api/2/advertiser/disable/check/get/
 *AdvertiserFundDailyStatV2Api* | **OpenApi2AdvertiserFundDailyStatGet** | **Get** /open_api/2/advertiser/fund/daily_stat/
 *AdvertiserFundDetailGrantV2Api* | **OpenApi2AdvertiserFundDetailGrantGet** | **Get** /open_api/2/advertiser/fund/detail_grant/
 *AdvertiserFundGetV2Api* | **OpenApi2AdvertiserFundGetGet** | **Get** /open_api/2/advertiser/fund/get/
@@ -322,6 +323,8 @@ Class | Method | HTTP request
 *BrandFileVideoUploadV30Api* | **OpenApiV30BrandFileVideoUploadPost** | **Post** /open_api/v3.0/brand/file/video/upload/
 *BrandKnowledgeQaGetV30Api* | **OpenApiV30BrandKnowledgeQaGetGet** | **Get** /open_api/v3.0/brand/knowledge_qa/get/
 *BrandMaAccountListV30Api* | **OpenApiV30BrandMaAccountListGet** | **Get** /open_api/v3.0/brand/ma/account/list/
+*BrandMaHalfSelfAdInfoGetV30Api* | **OpenApiV30BrandMaHalfSelfAdInfoGetGet** | **Get** /open_api/v3.0/brand/ma/half_self_ad_info/get/
+*BrandMaHalfSelfCreativeInfoGetV30Api* | **OpenApiV30BrandMaHalfSelfCreativeInfoGetGet** | **Get** /open_api/v3.0/brand/ma/half_self_creative_info/get/
 *BrandMaMaterialListV30Api* | **OpenApiV30BrandMaMaterialListGet** | **Get** /open_api/v3.0/brand/ma/material/list/
 *BrandMaOrderListV30Api* | **OpenApiV30BrandMaOrderListGet** | **Get** /open_api/v3.0/brand/ma/order/list/
 *BrandMaWarningOrderListV30Api* | **OpenApiV30BrandMaWarningOrderListGet** | **Get** /open_api/v3.0/brand/ma/warning_order/list/
@@ -382,9 +385,11 @@ Class | Method | HTTP request
 *CgTransferWalletTransferCreateV30Api* | **OpenApiV30CgTransferWalletTransferCreatePost** | **Post** /open_api/v3.0/cg_transfer/wallet/transfer/create/
 *CgTransferWalletTransferDetailV30Api* | **OpenApiV30CgTransferWalletTransferDetailGet** | **Get** /open_api/v3.0/cg_transfer/wallet/transfer/detail/
 *CgTransferWalletTransferListV30Api* | **OpenApiV30CgTransferWalletTransferListGet** | **Get** /open_api/v3.0/cg_transfer/wallet/transfer/list/
+*ChargeContractListV30Api* | **OpenApiV30ChargeContractListGet** | **Get** /open_api/v3.0/charge_contract/list/
 *ChargeInfoOrderNoGetV30Api* | **OpenApiV30ChargeInfoOrderNoGetGet** | **Get** /open_api/v3.0/charge_info_order_no/get/
 *ChargeInfoPaymentVoucherGetV30Api* | **OpenApiV30ChargeInfoPaymentVoucherGetGet** | **Get** /open_api/v3.0/charge_info_payment_voucher/get/
 *ChargeListV30Api* | **OpenApiV30ChargeListGet** | **Get** /open_api/v3.0/charge/list/
+*ChargeOrderInfoGetV30Api* | **OpenApiV30ChargeOrderInfoGetGet** | **Get** /open_api/v3.0/charge_order_info/get/
 *ChargeResultV30Api* | **OpenApiV30ChargeResultGet** | **Get** /open_api/v3.0/charge/result/
 *ChargeTagGetV30Api* | **OpenApiV30ChargeTagGetGet** | **Get** /open_api/v3.0/charge_tag/get/
 *ChargeVerifyGetV30Api* | **OpenApiV30ChargeVerifyGetGet** | **Get** /open_api/v3.0/charge/verify/get/
@@ -718,6 +723,7 @@ Class | Method | HTTP request
 *ProjectAdsListV10Api* | **OpenApiV10ProjectAdsListGet** | **Get** /open_api/v1.0/project_ads/list/
 *ProjectBudgetUpdateV30Api* | **OpenApiV30ProjectBudgetUpdatePost** | **Post** /open_api/v3.0/project/budget/update/
 *ProjectColdStartDecisionGetV10Api* | **OpenApiV10ProjectColdStartDecisionGetGet** | **Get** /open_api/v1.0/project_cold_start_decision/get/
+*ProjectCostIssueDiagnosisGetV10Api* | **OpenApiV10ProjectCostIssueDiagnosisGetGet** | **Get** /open_api/v1.0/project_cost_issue_diagnosis/get/
 *ProjectCostProtectStatusGetV30Api* | **OpenApiV30ProjectCostProtectStatusGetGet** | **Get** /open_api/v3.0/project/cost_protect_status/get/
 *ProjectCpaBidUpdateV30Api* | **OpenApiV30ProjectCpaBidUpdatePost** | **Post** /open_api/v3.0/project/cpa_bid/update/
 *ProjectCreateV30Api* | **OpenApiV30ProjectCreatePost** | **Post** /open_api/v3.0/project/create/
@@ -730,6 +736,7 @@ Class | Method | HTTP request
 *ProjectScheduleTimeUpdateV30Api* | **OpenApiV30ProjectScheduleTimeUpdatePost** | **Post** /open_api/v3.0/project/schedule_time/update/
 *ProjectStatusUpdateV30Api* | **OpenApiV30ProjectStatusUpdatePost** | **Post** /open_api/v3.0/project/status/update/
 *ProjectUpdateV30Api* | **OpenApiV30ProjectUpdatePost** | **Post** /open_api/v3.0/project/update/
+*ProjectVolumeDropDiagnosisGetV10Api* | **OpenApiV10ProjectVolumeDropDiagnosisGetGet** | **Get** /open_api/v1.0/project_volume_drop_diagnosis/get/
 *ProjectWeekScheduleUpdateV30Api* | **OpenApiV30ProjectWeekScheduleUpdatePost** | **Post** /open_api/v3.0/project/week_schedule/update/
 *PromotionAidGetV30Api* | **OpenApiV30PromotionAidGetGet** | **Get** /open_api/v3.0/promotion/aid/get/
 *PromotionAutoGenerateConfigCreateV30Api* | **OpenApiV30PromotionAutoGenerateConfigCreatePost** | **Post** /open_api/v3.0/promotion/auto_generate_config/create/
@@ -1157,6 +1164,7 @@ Class | Method | HTTP request
 *StdProjectCreateV30Api* | **OpenApiV30StdProjectCreatePost** | **Post** /open_api/v3.0/std_project/create/
 *StdProjectListV30Api* | **OpenApiV30StdProjectListGet** | **Get** /open_api/v3.0/std_project/list/
 *StdProjectUpdateV30Api* | **OpenApiV30StdProjectUpdatePost** | **Post** /open_api/v3.0/std_project/update/
+*SubjectBankInfoGetV30Api* | **OpenApiV30SubjectBankInfoGetGet** | **Get** /open_api/v3.0/subject_bank_info/get/
 *SubscribeAccountsAddV30Api* | **OpenApiV30SubscribeAccountsAddPost** | **Post** /open_api/v3.0/subscribe/accounts/add/
 *SubscribeAccountsListV30Api* | **OpenApiV30SubscribeAccountsListGet** | **Get** /open_api/v3.0/subscribe/accounts/list/
 *SubscribeAccountsRemoveV30Api* | **OpenApiV30SubscribeAccountsRemovePost** | **Post** /open_api/v3.0/subscribe/accounts/remove/

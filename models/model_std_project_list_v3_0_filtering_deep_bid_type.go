@@ -42,6 +42,7 @@ const (
 	SMARTBID_StdProjectListV30FilteringDeepBidType                     StdProjectListV30FilteringDeepBidType = "SMARTBID"
 	SOCIAL_ROI_StdProjectListV30FilteringDeepBidType                   StdProjectListV30FilteringDeepBidType = "SOCIAL_ROI"
 	THIRTY_ROI_COEFFICIENT_StdProjectListV30FilteringDeepBidType       StdProjectListV30FilteringDeepBidType = "THIRTY_ROI_COEFFICIENT"
+	INSURANCE_PAY_ROI_StdProjectListV30FilteringDeepBidType            StdProjectListV30FilteringDeepBidType = "INSURANCE_PAY_ROI"
 )
 
 // Ptr returns reference to std_project_list_v3.0_filtering_deep_bid_type value

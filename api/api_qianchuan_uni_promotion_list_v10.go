@@ -29,9 +29,9 @@ type ApiOpenApiV10QianchuanUniPromotionListGetRequest struct {
 	startTime          *string
 	endTime            *string
 	marketingGoal      *QianchuanUniPromotionListV10MarketingGoal
-	fields             *[]*QianchuanUniPromotionListV10Fields
 	filtering          *QianchuanUniPromotionListV10Filtering
 	needCompensateInfo *bool
+	fields             *[]*QianchuanUniPromotionListV10Fields
 	orderType          *QianchuanUniPromotionListV10OrderType
 	orderField         *QianchuanUniPromotionListV10OrderField
 	page               *int32
@@ -60,11 +60,6 @@ func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) MarketingGoal(marketi
 	return r
 }
 
-func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Fields(fields []*QianchuanUniPromotionListV10Fields) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
-	r.fields = &fields
-	return r
-}
-
 // 过滤器
 func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Filtering(filtering QianchuanUniPromotionListV10Filtering) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.filtering = &filtering
@@ -74,6 +69,11 @@ func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Filtering(filtering Q
 // 是否获取成本保障信息
 func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) NeedCompensateInfo(needCompensateInfo bool) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
 	r.needCompensateInfo = &needCompensateInfo
+	return r
+}
+
+func (r *ApiOpenApiV10QianchuanUniPromotionListGetRequest) Fields(fields []*QianchuanUniPromotionListV10Fields) *ApiOpenApiV10QianchuanUniPromotionListGetRequest {
+	r.fields = &fields
 	return r
 }
 
@@ -172,9 +172,6 @@ func (a *QianchuanUniPromotionListV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	if r.marketingGoal == nil {
 		return localVarReturnValue, nil, ReportError("marketingGoal is required and must be specified")
 	}
-	if r.fields == nil {
-		return localVarReturnValue, nil, ReportError("fields is required and must be specified")
-	}
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "start_time", r.startTime)
@@ -186,7 +183,9 @@ func (a *QianchuanUniPromotionListV10ApiService) getExecute(r *ApiOpenApiV10Qian
 	if r.needCompensateInfo != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "need_compensate_info", r.needCompensateInfo)
 	}
-	parameterAddToHeaderOrQuery(localVarQueryParams, "fields", r.fields)
+	if r.fields != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "fields", r.fields)
+	}
 	if r.orderType != nil {
 		parameterAddToHeaderOrQuery(localVarQueryParams, "order_type", r.orderType)
 	}

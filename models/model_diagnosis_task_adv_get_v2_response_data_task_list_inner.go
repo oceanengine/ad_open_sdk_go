@@ -24,8 +24,10 @@ type DiagnosisTaskAdvGetV2ResponseDataTaskListInner struct {
 	//
 	NotAdHighQualityReason []string `json:"not_ad_high_quality_reason,omitempty"`
 	//
-	NotEcpHighQualityReason []string                                `json:"not_ecp_high_quality_reason,omitempty"`
-	Status                  DiagnosisTaskAdvGetV2DataTaskListStatus `json:"status"`
+	NotEcpHighQualityReason []string `json:"not_ecp_high_quality_reason,omitempty"`
+	//
+	NotLocalHighQualityReason []string                                `json:"not_local_high_quality_reason,omitempty"`
+	Status                    DiagnosisTaskAdvGetV2DataTaskListStatus `json:"status"`
 	//
 	TaskId int64 `json:"task_id"`
 	//

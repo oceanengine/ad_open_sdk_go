@@ -23,8 +23,9 @@ import (
 )
 
 type ApiOpenApiV30EbpAdvBindGroupGetGetRequestExample struct {
-	AdvertiserId int64                          `json:"advertiser_id"`
-	QueryType    EbpAdvBindGroupGetV30QueryType `json:"query_type"`
+	AdvertiserId int64                             `json:"advertiser_id"`
+	QueryType    EbpAdvBindGroupGetV30QueryType    `json:"query_type"`
+	GroupType    []*EbpAdvBindGroupGetV30GroupType `json:"group_type,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/v3.0/ebp/adv_bind_group/get/ Get
@@ -46,7 +47,7 @@ func main() {
 	resp, httpRes, err := apiClient.EbpAdvBindGroupGetV30Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		AdvertiserId(request.AdvertiserId).QueryType(request.QueryType).
+		AdvertiserId(request.AdvertiserId).QueryType(request.QueryType).GroupType(request.GroupType).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)

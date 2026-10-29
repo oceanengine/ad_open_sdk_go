@@ -42,7 +42,7 @@ var (
 	queryDescape    = strings.NewReplacer("%5B", "[", "%5D", "]")
 )
 
-// APIClient manages communication with the Oceanengine Open Api API v1.1.97
+// APIClient manages communication with the Oceanengine Open Api API v1.1.98
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	Cfg    *config.Configuration
@@ -102,6 +102,8 @@ type APIClient struct {
 	AdvertiserDeliveryQualificationListV30Api *AdvertiserDeliveryQualificationListV30ApiService
 
 	AdvertiserDeliveryQualificationSubmitV30Api *AdvertiserDeliveryQualificationSubmitV30ApiService
+
+	AdvertiserDisableCheckGetV2Api *AdvertiserDisableCheckGetV2ApiService
 
 	AdvertiserFundDailyStatV2Api *AdvertiserFundDailyStatV2ApiService
 
@@ -283,6 +285,10 @@ type APIClient struct {
 
 	BrandMaAccountListV30Api *BrandMaAccountListV30ApiService
 
+	BrandMaHalfSelfAdInfoGetV30Api *BrandMaHalfSelfAdInfoGetV30ApiService
+
+	BrandMaHalfSelfCreativeInfoGetV30Api *BrandMaHalfSelfCreativeInfoGetV30ApiService
+
 	BrandMaMaterialListV30Api *BrandMaMaterialListV30ApiService
 
 	BrandMaOrderListV30Api *BrandMaOrderListV30ApiService
@@ -403,11 +409,15 @@ type APIClient struct {
 
 	CgTransferWalletTransferListV30Api *CgTransferWalletTransferListV30ApiService
 
+	ChargeContractListV30Api *ChargeContractListV30ApiService
+
 	ChargeInfoOrderNoGetV30Api *ChargeInfoOrderNoGetV30ApiService
 
 	ChargeInfoPaymentVoucherGetV30Api *ChargeInfoPaymentVoucherGetV30ApiService
 
 	ChargeListV30Api *ChargeListV30ApiService
+
+	ChargeOrderInfoGetV30Api *ChargeOrderInfoGetV30ApiService
 
 	ChargeResultV30Api *ChargeResultV30ApiService
 
@@ -1075,6 +1085,8 @@ type APIClient struct {
 
 	ProjectColdStartDecisionGetV10Api *ProjectColdStartDecisionGetV10ApiService
 
+	ProjectCostIssueDiagnosisGetV10Api *ProjectCostIssueDiagnosisGetV10ApiService
+
 	ProjectCostProtectStatusGetV30Api *ProjectCostProtectStatusGetV30ApiService
 
 	ProjectCpaBidUpdateV30Api *ProjectCpaBidUpdateV30ApiService
@@ -1098,6 +1110,8 @@ type APIClient struct {
 	ProjectStatusUpdateV30Api *ProjectStatusUpdateV30ApiService
 
 	ProjectUpdateV30Api *ProjectUpdateV30ApiService
+
+	ProjectVolumeDropDiagnosisGetV10Api *ProjectVolumeDropDiagnosisGetV10ApiService
 
 	ProjectWeekScheduleUpdateV30Api *ProjectWeekScheduleUpdateV30ApiService
 
@@ -1953,6 +1967,8 @@ type APIClient struct {
 
 	StdProjectUpdateV30Api *StdProjectUpdateV30ApiService
 
+	SubjectBankInfoGetV30Api *SubjectBankInfoGetV30ApiService
+
 	SubscribeAccountsAddV30Api *SubscribeAccountsAddV30ApiService
 
 	SubscribeAccountsListV30Api *SubscribeAccountsListV30ApiService
@@ -2616,6 +2632,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.AdvertiserDeliveryQualificationDeleteV30Api = (*AdvertiserDeliveryQualificationDeleteV30ApiService)(&c.common)
 	c.AdvertiserDeliveryQualificationListV30Api = (*AdvertiserDeliveryQualificationListV30ApiService)(&c.common)
 	c.AdvertiserDeliveryQualificationSubmitV30Api = (*AdvertiserDeliveryQualificationSubmitV30ApiService)(&c.common)
+	c.AdvertiserDisableCheckGetV2Api = (*AdvertiserDisableCheckGetV2ApiService)(&c.common)
 	c.AdvertiserFundDailyStatV2Api = (*AdvertiserFundDailyStatV2ApiService)(&c.common)
 	c.AdvertiserFundDetailGrantV2Api = (*AdvertiserFundDetailGrantV2ApiService)(&c.common)
 	c.AdvertiserFundGetV2Api = (*AdvertiserFundGetV2ApiService)(&c.common)
@@ -2706,6 +2723,8 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.BrandFileVideoUploadV30Api = (*BrandFileVideoUploadV30ApiService)(&c.common)
 	c.BrandKnowledgeQaGetV30Api = (*BrandKnowledgeQaGetV30ApiService)(&c.common)
 	c.BrandMaAccountListV30Api = (*BrandMaAccountListV30ApiService)(&c.common)
+	c.BrandMaHalfSelfAdInfoGetV30Api = (*BrandMaHalfSelfAdInfoGetV30ApiService)(&c.common)
+	c.BrandMaHalfSelfCreativeInfoGetV30Api = (*BrandMaHalfSelfCreativeInfoGetV30ApiService)(&c.common)
 	c.BrandMaMaterialListV30Api = (*BrandMaMaterialListV30ApiService)(&c.common)
 	c.BrandMaOrderListV30Api = (*BrandMaOrderListV30ApiService)(&c.common)
 	c.BrandMaWarningOrderListV30Api = (*BrandMaWarningOrderListV30ApiService)(&c.common)
@@ -2766,9 +2785,11 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.CgTransferWalletTransferCreateV30Api = (*CgTransferWalletTransferCreateV30ApiService)(&c.common)
 	c.CgTransferWalletTransferDetailV30Api = (*CgTransferWalletTransferDetailV30ApiService)(&c.common)
 	c.CgTransferWalletTransferListV30Api = (*CgTransferWalletTransferListV30ApiService)(&c.common)
+	c.ChargeContractListV30Api = (*ChargeContractListV30ApiService)(&c.common)
 	c.ChargeInfoOrderNoGetV30Api = (*ChargeInfoOrderNoGetV30ApiService)(&c.common)
 	c.ChargeInfoPaymentVoucherGetV30Api = (*ChargeInfoPaymentVoucherGetV30ApiService)(&c.common)
 	c.ChargeListV30Api = (*ChargeListV30ApiService)(&c.common)
+	c.ChargeOrderInfoGetV30Api = (*ChargeOrderInfoGetV30ApiService)(&c.common)
 	c.ChargeResultV30Api = (*ChargeResultV30ApiService)(&c.common)
 	c.ChargeTagGetV30Api = (*ChargeTagGetV30ApiService)(&c.common)
 	c.ChargeVerifyGetV30Api = (*ChargeVerifyGetV30ApiService)(&c.common)
@@ -3102,6 +3123,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ProjectAdsListV10Api = (*ProjectAdsListV10ApiService)(&c.common)
 	c.ProjectBudgetUpdateV30Api = (*ProjectBudgetUpdateV30ApiService)(&c.common)
 	c.ProjectColdStartDecisionGetV10Api = (*ProjectColdStartDecisionGetV10ApiService)(&c.common)
+	c.ProjectCostIssueDiagnosisGetV10Api = (*ProjectCostIssueDiagnosisGetV10ApiService)(&c.common)
 	c.ProjectCostProtectStatusGetV30Api = (*ProjectCostProtectStatusGetV30ApiService)(&c.common)
 	c.ProjectCpaBidUpdateV30Api = (*ProjectCpaBidUpdateV30ApiService)(&c.common)
 	c.ProjectCreateV30Api = (*ProjectCreateV30ApiService)(&c.common)
@@ -3114,6 +3136,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.ProjectScheduleTimeUpdateV30Api = (*ProjectScheduleTimeUpdateV30ApiService)(&c.common)
 	c.ProjectStatusUpdateV30Api = (*ProjectStatusUpdateV30ApiService)(&c.common)
 	c.ProjectUpdateV30Api = (*ProjectUpdateV30ApiService)(&c.common)
+	c.ProjectVolumeDropDiagnosisGetV10Api = (*ProjectVolumeDropDiagnosisGetV10ApiService)(&c.common)
 	c.ProjectWeekScheduleUpdateV30Api = (*ProjectWeekScheduleUpdateV30ApiService)(&c.common)
 	c.PromotionAidGetV30Api = (*PromotionAidGetV30ApiService)(&c.common)
 	c.PromotionAutoGenerateConfigCreateV30Api = (*PromotionAutoGenerateConfigCreateV30ApiService)(&c.common)
@@ -3541,6 +3564,7 @@ func NewAPIClient(cfg *config.Configuration) *APIClient {
 	c.StdProjectCreateV30Api = (*StdProjectCreateV30ApiService)(&c.common)
 	c.StdProjectListV30Api = (*StdProjectListV30ApiService)(&c.common)
 	c.StdProjectUpdateV30Api = (*StdProjectUpdateV30ApiService)(&c.common)
+	c.SubjectBankInfoGetV30Api = (*SubjectBankInfoGetV30ApiService)(&c.common)
 	c.SubscribeAccountsAddV30Api = (*SubscribeAccountsAddV30ApiService)(&c.common)
 	c.SubscribeAccountsListV30Api = (*SubscribeAccountsListV30ApiService)(&c.common)
 	c.SubscribeAccountsRemoveV30Api = (*SubscribeAccountsRemoveV30ApiService)(&c.common)

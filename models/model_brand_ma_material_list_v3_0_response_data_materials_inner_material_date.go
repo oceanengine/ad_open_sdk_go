@@ -42,6 +42,8 @@ type BrandMaMaterialListV30ResponseDataMaterialsInnerMaterialDate struct {
 	OrderName *string `json:"order_name,omitempty"`
 	// 预订单展示状态
 	OrderShowStatus *int64 `json:"order_show_status,omitempty"`
+	// 预订单来源：1-ECP，2-AD，3-Poseidon
+	OrderSource *int64 `json:"order_source,omitempty"`
 	// 预订单聚合状态
 	OrderUnionStatus *int64 `json:"order_union_status,omitempty"`
 	// 扫码预览链接，有效期24h，只有过审且未过期的创意可以预览
@@ -52,6 +54,8 @@ type BrandMaMaterialListV30ResponseDataMaterialsInnerMaterialDate struct {
 	ProType *int64 `json:"pro_type,omitempty"`
 	// 审核拒绝原因
 	Reason []string `json:"reason,omitempty"`
+	// 自助来源：1-AD，3-Poseidon
+	SelfServiceSource *int64 `json:"self_service_source,omitempty"`
 	// 是否展示草稿 tag
 	ShowDraftTag *bool `json:"show_draft_tag,omitempty"`
 	// 显示状态

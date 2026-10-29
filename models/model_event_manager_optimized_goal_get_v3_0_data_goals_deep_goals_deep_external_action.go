@@ -188,6 +188,7 @@ const (
 	AD_CONVERT_TYPE_WECHAT_REGISTER_EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction             EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_WECHAT_REGISTER"
 	AD_CONVERT_TYPE_WECHAT_WECOM_ADD_EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction            EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_WECHAT_WECOM_ADD"
 	AD_CONVERT_TYPE_XPATH_EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction                       EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_XPATH"
+	AD_CONVERT_TYPE_INSURANCE_PAY_EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction               EventManagerOptimizedGoalGetV30DataGoalsDeepGoalsDeepExternalAction = "AD_CONVERT_TYPE_INSURANCE_PAY"
 )
 
 // Ptr returns reference to event_manager_optimized_goal_get_v3.0_data_goals_deep_goals_deep_external_action value

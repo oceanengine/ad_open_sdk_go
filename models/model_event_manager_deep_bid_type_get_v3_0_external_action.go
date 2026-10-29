@@ -171,6 +171,7 @@ const (
 	AD_CONVERT_TYPE_WECHAT_REGISTER_EventManagerDeepBidTypeGetV30ExternalAction             EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_WECHAT_REGISTER"
 	AD_CONVERT_TYPE_WECHAT_WECOM_ADD_EventManagerDeepBidTypeGetV30ExternalAction            EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_WECHAT_WECOM_ADD"
 	AD_CONVERT_TYPE_XPATH_EventManagerDeepBidTypeGetV30ExternalAction                       EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_XPATH"
+	AD_CONVERT_TYPE_INSURANCE_PAY_EventManagerDeepBidTypeGetV30ExternalAction               EventManagerDeepBidTypeGetV30ExternalAction = "AD_CONVERT_TYPE_INSURANCE_PAY"
 )
 
 // Ptr returns reference to event_manager_deep_bid_type_get_v3.0_external_action value

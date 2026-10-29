@@ -119,7 +119,7 @@ func (r *ApiOpenApiV30DpaEbpClueProductListGetRequest) WithLog(enable bool) *Api
 /*
 OpenApiV30DpaEbpClueProductListGet Method for OpenApiV30DpaEbpClueProductListGet
 
-EBP场景下，通过团队ID/advId获取升级版商品列表
+EBP场景下，通过团队ID获取升级版商品列表
 
 	@param ctx context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 	@return ApiOpenApiV30DpaEbpClueProductListGetRequest

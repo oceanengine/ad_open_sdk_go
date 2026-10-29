@@ -180,6 +180,7 @@ const (
 	AD_CONVERT_TYPE_WECHAT_REGISTER_ProjectCreateV30OptimizeGoalDeepExternalAction             ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_WECHAT_REGISTER"
 	AD_CONVERT_TYPE_WECHAT_WECOM_ADD_ProjectCreateV30OptimizeGoalDeepExternalAction            ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_WECHAT_WECOM_ADD"
 	AD_CONVERT_TYPE_XPATH_ProjectCreateV30OptimizeGoalDeepExternalAction                       ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_XPATH"
+	AD_CONVERT_TYPE_INSURANCE_PAY_ProjectCreateV30OptimizeGoalDeepExternalAction               ProjectCreateV30OptimizeGoalDeepExternalAction = "AD_CONVERT_TYPE_INSURANCE_PAY"
 )
 
 // Ptr returns reference to project_create_v3.0_optimize_goal_deep_external_action value

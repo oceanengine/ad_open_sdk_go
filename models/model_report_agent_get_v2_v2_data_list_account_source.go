@@ -15,8 +15,8 @@ type ReportAgentGetV2V2DataListAccountSource string
 
 // List of report_agent_get_v2_v2_data_list_account_source
 const (
-	LUBAN_ACCOUNT_ReportAgentGetV2V2DataListAccountSource     ReportAgentGetV2V2DataListAccountSource = "LUBAN_ACCOUNT"
 	NORMAL_ADVERTISER_ReportAgentGetV2V2DataListAccountSource ReportAgentGetV2V2DataListAccountSource = "NORMAL_ADVERTISER"
+	LUBAN_ACCOUNT_ReportAgentGetV2V2DataListAccountSource     ReportAgentGetV2V2DataListAccountSource = "LUBAN_ACCOUNT"
 )
 
 // Ptr returns reference to report_agent_get_v2_v2_data_list_account_source value

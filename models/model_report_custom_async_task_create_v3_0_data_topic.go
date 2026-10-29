@@ -15,18 +15,19 @@ type ReportCustomAsyncTaskCreateV30DataTopic string
 
 // List of report_custom_async_task_create_v3.0_data_topic
 const (
-	BASIC_DATA_ReportCustomAsyncTaskCreateV30DataTopic        ReportCustomAsyncTaskCreateV30DataTopic = "BASIC_DATA"
-	BIDWORD_DATA_ReportCustomAsyncTaskCreateV30DataTopic      ReportCustomAsyncTaskCreateV30DataTopic = "BIDWORD_DATA"
-	DPA_VIDEO_DATA_ReportCustomAsyncTaskCreateV30DataTopic    ReportCustomAsyncTaskCreateV30DataTopic = "DPA_VIDEO_DATA"
-	MATERIAL_DATA_ReportCustomAsyncTaskCreateV30DataTopic     ReportCustomAsyncTaskCreateV30DataTopic = "MATERIAL_DATA"
-	PRODUCT_DATA_ReportCustomAsyncTaskCreateV30DataTopic      ReportCustomAsyncTaskCreateV30DataTopic = "PRODUCT_DATA"
-	QUERY_DATA_ReportCustomAsyncTaskCreateV30DataTopic        ReportCustomAsyncTaskCreateV30DataTopic = "QUERY_DATA"
-	STD_BASIC_DATA_ReportCustomAsyncTaskCreateV30DataTopic    ReportCustomAsyncTaskCreateV30DataTopic = "STD_BASIC_DATA"
-	STD_BIDWORD_DATA_ReportCustomAsyncTaskCreateV30DataTopic  ReportCustomAsyncTaskCreateV30DataTopic = "STD_BIDWORD_DATA"
-	STD_DMP_DATA_ReportCustomAsyncTaskCreateV30DataTopic      ReportCustomAsyncTaskCreateV30DataTopic = "STD_DMP_DATA"
-	STD_MATERIAL_DATA_ReportCustomAsyncTaskCreateV30DataTopic ReportCustomAsyncTaskCreateV30DataTopic = "STD_MATERIAL_DATA"
-	STD_PRODUCT_DATA_ReportCustomAsyncTaskCreateV30DataTopic  ReportCustomAsyncTaskCreateV30DataTopic = "STD_PRODUCT_DATA"
-	STD_QUERY_DATA_ReportCustomAsyncTaskCreateV30DataTopic    ReportCustomAsyncTaskCreateV30DataTopic = "STD_QUERY_DATA"
+	BASIC_DATA_ReportCustomAsyncTaskCreateV30DataTopic         ReportCustomAsyncTaskCreateV30DataTopic = "BASIC_DATA"
+	BIDWORD_DATA_ReportCustomAsyncTaskCreateV30DataTopic       ReportCustomAsyncTaskCreateV30DataTopic = "BIDWORD_DATA"
+	DPA_VIDEO_DATA_ReportCustomAsyncTaskCreateV30DataTopic     ReportCustomAsyncTaskCreateV30DataTopic = "DPA_VIDEO_DATA"
+	MATERIAL_DATA_ReportCustomAsyncTaskCreateV30DataTopic      ReportCustomAsyncTaskCreateV30DataTopic = "MATERIAL_DATA"
+	PRODUCT_DATA_ReportCustomAsyncTaskCreateV30DataTopic       ReportCustomAsyncTaskCreateV30DataTopic = "PRODUCT_DATA"
+	QUERY_DATA_ReportCustomAsyncTaskCreateV30DataTopic         ReportCustomAsyncTaskCreateV30DataTopic = "QUERY_DATA"
+	STD_BASIC_DATA_ReportCustomAsyncTaskCreateV30DataTopic     ReportCustomAsyncTaskCreateV30DataTopic = "STD_BASIC_DATA"
+	STD_BIDWORD_DATA_ReportCustomAsyncTaskCreateV30DataTopic   ReportCustomAsyncTaskCreateV30DataTopic = "STD_BIDWORD_DATA"
+	STD_DMP_DATA_ReportCustomAsyncTaskCreateV30DataTopic       ReportCustomAsyncTaskCreateV30DataTopic = "STD_DMP_DATA"
+	STD_DPA_VIDEO_DATA_ReportCustomAsyncTaskCreateV30DataTopic ReportCustomAsyncTaskCreateV30DataTopic = "STD_DPA_VIDEO_DATA"
+	STD_MATERIAL_DATA_ReportCustomAsyncTaskCreateV30DataTopic  ReportCustomAsyncTaskCreateV30DataTopic = "STD_MATERIAL_DATA"
+	STD_PRODUCT_DATA_ReportCustomAsyncTaskCreateV30DataTopic   ReportCustomAsyncTaskCreateV30DataTopic = "STD_PRODUCT_DATA"
+	STD_QUERY_DATA_ReportCustomAsyncTaskCreateV30DataTopic     ReportCustomAsyncTaskCreateV30DataTopic = "STD_QUERY_DATA"
 )
 
 // Ptr returns reference to report_custom_async_task_create_v3.0_data_topic value

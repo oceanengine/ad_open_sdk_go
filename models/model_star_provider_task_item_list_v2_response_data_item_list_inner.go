@@ -42,10 +42,14 @@ type StarProviderTaskItemListV2ResponseDataItemListInner struct {
 	CommentCnt *int64 `json:"comment_cnt,omitempty"`
 	// 达人UID
 	CoreUserId *int64 `json:"core_user_id,omitempty"`
+	// 客户审核结果：1 通过，2 拒绝，3 审核中
+	DemanderAuditStatus *int64 `json:"demander_audit_status,omitempty"`
 	// 视频完播率，单位：百分数 x 100，展示时需 /100 后加 %
 	FinishRate *int64 `json:"finish_rate,omitempty"`
 	// 视频ID
 	ItemId *int64 `json:"item_id,omitempty"`
+	// 视频状态，与请求 item_status 使用相同枚举
+	ItemStatus *int64 `json:"item_status,omitempty"`
 	// 视频标题
 	ItemTitle *string `json:"item_title,omitempty"`
 	// 视频URL
@@ -58,6 +62,10 @@ type StarProviderTaskItemListV2ResponseDataItemListInner struct {
 	LiveAdShowCnt *int64 `json:"live_ad_show_cnt,omitempty"`
 	// 素材ID
 	MaterialId *int64 `json:"material_id,omitempty"`
+	// 平台审核结果，仅返回指定五类审核的展示名称、状态和审核原因
+	PlatformAuditDetail []*StarProviderTaskItemListV2ResponseDataItemListInnerPlatformAuditDetailInner `json:"platform_audit_detail,omitempty"`
+	// 平台识别内容类型枚举，与 task CreativeMaterialType 一致
+	PlatformMaterialTypeEnum *int64 `json:"platform_material_type_enum,omitempty"`
 	// 视频10秒播放率，单位：百分数 x 100，展示时需 /100 后加 %
 	Play10sRate *int64 `json:"play10s_rate,omitempty"`
 	// 视频2秒播放率，单位：百分数 x 100，展示时需 /100 后加 %
@@ -74,6 +82,12 @@ type StarProviderTaskItemListV2ResponseDataItemListInner struct {
 	ProductAdShowCnt *int64 `json:"product_ad_show_cnt,omitempty"`
 	// 关联推商品计划数
 	ProductPlanCnt *int64 `json:"product_plan_cnt,omitempty"`
+	// 服务商审核结果：1 通过，2 拒绝，3 审核中
+	ProviderAuditStatus *int64 `json:"provider_audit_status,omitempty"`
+	// 服务商识别内容类型枚举，与 task CreativeMaterialType 一致
+	ProviderConfirmedMaterialTypeEnum *int64 `json:"provider_confirmed_material_type_enum,omitempty"`
+	// 服务商确认的拍摄方向名称
+	ProviderConfirmedShootDirection *string `json:"provider_confirmed_shoot_direction,omitempty"`
 	// 服务商预估总收益，单位：厘
 	ProviderEstimatedIncome *int64 `json:"provider_estimated_income,omitempty"`
 	// 服务商预估总收益-推直播，单位：厘
@@ -90,4 +104,6 @@ type StarProviderTaskItemListV2ResponseDataItemListInner struct {
 	PublishTime *int64 `json:"publish_time,omitempty"`
 	// 任务ID
 	TaskId *int64 `json:"task_id,omitempty"`
+	// 原始视频 ID，供服务商自行拼接播放链接；为空时不返回
+	VideoId *string `json:"video_id,omitempty"`
 }

@@ -17,8 +17,10 @@ type BrandMaAccountListV30ResponseDataAccountsInner struct {
 	// 广告主名称
 	AdvertiserName *string `json:"advertiser_name,omitempty"`
 	// 广告主状态：4-正常；其它值都可以当做异常
-	AdvertiserStatus *int64                                                      `json:"advertiser_status,omitempty"`
-	DeliveryInfo     *BrandMaAccountListV30ResponseDataAccountsInnerDeliveryInfo `json:"delivery_info,omitempty"`
+	AdvertiserStatus *int64 `json:"advertiser_status,omitempty"`
+	// 账户类型：0-AD，80-ECP
+	AppKey       *int64                                                      `json:"app_key,omitempty"`
+	DeliveryInfo *BrandMaAccountListV30ResponseDataAccountsInnerDeliveryInfo `json:"delivery_info,omitempty"`
 	// 对公验证到期时间（毫秒）。如果当前时间超过这个时间，那就是到期了。
 	PublicAuthExpireTimestampMs *int64 `json:"public_auth_expire_timestamp_ms,omitempty"`
 }

@@ -28,6 +28,7 @@ const (
 	STD_BASIC_DATA_ReportCustomConfigGetV30DataListDataTopic            ReportCustomConfigGetV30DataListDataTopic = "STD_BASIC_DATA"
 	STD_BIDWORD_DATA_ReportCustomConfigGetV30DataListDataTopic          ReportCustomConfigGetV30DataListDataTopic = "STD_BIDWORD_DATA"
 	STD_DMP_DATA_ReportCustomConfigGetV30DataListDataTopic              ReportCustomConfigGetV30DataListDataTopic = "STD_DMP_DATA"
+	STD_DPA_VIDEO_DATA_ReportCustomConfigGetV30DataListDataTopic        ReportCustomConfigGetV30DataListDataTopic = "STD_DPA_VIDEO_DATA"
 	STD_MATERIAL_DATA_ReportCustomConfigGetV30DataListDataTopic         ReportCustomConfigGetV30DataListDataTopic = "STD_MATERIAL_DATA"
 	STD_PRODUCT_DATA_ReportCustomConfigGetV30DataListDataTopic          ReportCustomConfigGetV30DataListDataTopic = "STD_PRODUCT_DATA"
 	STD_QUERY_DATA_ReportCustomConfigGetV30DataListDataTopic            ReportCustomConfigGetV30DataListDataTopic = "STD_QUERY_DATA"

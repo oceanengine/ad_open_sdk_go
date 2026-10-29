@@ -15,8 +15,8 @@ type AdGetV2DataTrackUrlSendType string
 
 // List of ad_get_v2_data_track_url_send_type
 const (
-	CLIENT_SEND_AdGetV2DataTrackUrlSendType AdGetV2DataTrackUrlSendType = "CLIENT_SEND"
 	SERVER_SEND_AdGetV2DataTrackUrlSendType AdGetV2DataTrackUrlSendType = "SERVER_SEND"
+	CLIENT_SEND_AdGetV2DataTrackUrlSendType AdGetV2DataTrackUrlSendType = "CLIENT_SEND"
 )
 
 // Ptr returns reference to ad_get_v2_data_track_url_send_type value

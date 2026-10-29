@@ -31,6 +31,7 @@ const (
 	POI_RECOMMEND_LocalProjectListV30DataProjectListExternalAction              LocalProjectListV30DataProjectListExternalAction = "POI_RECOMMEND"
 	PRIVATE_MESSAGE_LocalProjectListV30DataProjectListExternalAction            LocalProjectListV30DataProjectListExternalAction = "PRIVATE_MESSAGE"
 	SHOW_LocalProjectListV30DataProjectListExternalAction                       LocalProjectListV30DataProjectListExternalAction = "SHOW"
+	WECHAT_ADD_BUSINESS_LocalProjectListV30DataProjectListExternalAction        LocalProjectListV30DataProjectListExternalAction = "WECHAT_ADD_BUSINESS"
 )
 
 // Ptr returns reference to local_project_list_v3.0_data_project_list_external_action value

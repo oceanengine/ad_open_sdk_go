@@ -10,7 +10,7 @@ Oceanengine Open Api
 
 package models
 
-// OcProjectMaterialGetV30FilteringMaterialType
+// OcProjectMaterialGetV30FilteringMaterialType 素材类型；不传时查询视频、图片、图文、试玩、直玩五类素材，不包含标题、其他及小程序信息
 type OcProjectMaterialGetV30FilteringMaterialType string
 
 // List of oc_project_material_get_v3.0_filtering_material_type

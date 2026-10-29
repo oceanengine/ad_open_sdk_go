@@ -12,9 +12,11 @@ package models
 
 // OcProjectMaterialGetV30Filtering
 type OcProjectMaterialGetV30Filtering struct {
+	// 素材ID精确过滤（MID），服务端去重；仅支持五类主素材(VIDEO/IMAGE/CAROUSEL/TRIAL_PLAY_MATERIAL/INSTANT_PLAY_MATERIAL)。省略表示不按MID过滤；显式传空数组报错；单次最多500个
+	MaterialIds          []string                                              `json:"material_ids,omitempty"`
 	MaterialStatusFirst  *OcProjectMaterialGetV30FilteringMaterialStatusFirst  `json:"material_status_first,omitempty"`
 	MaterialStatusSecond *OcProjectMaterialGetV30FilteringMaterialStatusSecond `json:"material_status_second,omitempty"`
-	MaterialType         OcProjectMaterialGetV30FilteringMaterialType          `json:"material_type"`
-	//
+	MaterialType         *OcProjectMaterialGetV30FilteringMaterialType         `json:"material_type,omitempty"`
+	// 搜索关键词；有值时必须同时指定material_type
 	SearchKeyword *string `json:"search_keyword,omitempty"`
 }

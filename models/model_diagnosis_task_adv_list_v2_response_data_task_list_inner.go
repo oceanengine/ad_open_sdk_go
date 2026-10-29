@@ -17,15 +17,16 @@ type DiagnosisTaskAdvListV2ResponseDataTaskListInner struct {
 	IsAdHighQualityMaterial    *DiagnosisTaskAdvListV2DataTaskListIsAdHighQualityMaterial    `json:"is_ad_high_quality_material,omitempty"`
 	IsEcpHighQualityMaterial   *DiagnosisTaskAdvListV2DataTaskListIsEcpHighQualityMaterial   `json:"is_ecp_high_quality_material,omitempty"`
 	IsFirstPublishMaterial     *DiagnosisTaskAdvListV2DataTaskListIsFirstPublishMaterial     `json:"is_first_publish_material,omitempty"`
-	IsInefficientMaterial      *DiagnosisTaskAdvListV2DataTaskListIsInefficientMaterial      `json:"is_inefficient_material,omitempty"`
 	IsLocalHighQualityMaterial *DiagnosisTaskAdvListV2DataTaskListIsLocalHighQualityMaterial `json:"is_local_high_quality_material,omitempty"`
 	//
 	MaterialId *int64 `json:"material_id,omitempty"`
 	//
 	NotAdHighQualityReason []string `json:"not_ad_high_quality_reason,omitempty"`
 	//
-	NotEcpHighQualityReason []string                                 `json:"not_ecp_high_quality_reason,omitempty"`
-	Status                  DiagnosisTaskAdvListV2DataTaskListStatus `json:"status"`
+	NotEcpHighQualityReason []string `json:"not_ecp_high_quality_reason,omitempty"`
+	//
+	NotLocalHighQualityReason []string                                 `json:"not_local_high_quality_reason,omitempty"`
+	Status                    DiagnosisTaskAdvListV2DataTaskListStatus `json:"status"`
 	//
 	TaskId int64 `json:"task_id"`
 	//

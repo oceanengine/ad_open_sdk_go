@@ -27,6 +27,7 @@ type ApiOpenApiV30EbpAdvBindGroupGetGetRequest struct {
 	ApiService   *EbpAdvBindGroupGetV30ApiService
 	advertiserId *int64
 	queryType    *EbpAdvBindGroupGetV30QueryType
+	groupType    *[]*EbpAdvBindGroupGetV30GroupType
 }
 
 func (r *ApiOpenApiV30EbpAdvBindGroupGetGetRequest) AdvertiserId(advertiserId int64) *ApiOpenApiV30EbpAdvBindGroupGetGetRequest {
@@ -37,6 +38,11 @@ func (r *ApiOpenApiV30EbpAdvBindGroupGetGetRequest) AdvertiserId(advertiserId in
 // 查询组织层级方式
 func (r *ApiOpenApiV30EbpAdvBindGroupGetGetRequest) QueryType(queryType EbpAdvBindGroupGetV30QueryType) *ApiOpenApiV30EbpAdvBindGroupGetGetRequest {
 	r.queryType = &queryType
+	return r
+}
+
+func (r *ApiOpenApiV30EbpAdvBindGroupGetGetRequest) GroupType(groupType []*EbpAdvBindGroupGetV30GroupType) *ApiOpenApiV30EbpAdvBindGroupGetGetRequest {
+	r.groupType = &groupType
 	return r
 }
 
@@ -101,6 +107,9 @@ func (a *EbpAdvBindGroupGetV30ApiService) getExecute(r *ApiOpenApiV30EbpAdvBindG
 
 	parameterAddToHeaderOrQuery(localVarQueryParams, "advertiser_id", r.advertiserId)
 	parameterAddToHeaderOrQuery(localVarQueryParams, "query_type", r.queryType)
+	if r.groupType != nil {
+		parameterAddToHeaderOrQuery(localVarQueryParams, "group_type", r.groupType)
+	}
 	// to determine the Content-Type header
 	localVarHTTPContentTypes := []string{}
 

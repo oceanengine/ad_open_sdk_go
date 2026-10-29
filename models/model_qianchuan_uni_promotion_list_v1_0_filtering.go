@@ -17,6 +17,10 @@ type QianchuanUniPromotionListV10Filtering struct {
 	// 计划创建开始日期，时间格式 YYYY-MM-DD
 	CreateStartDate *string                                          `json:"create_start_date,omitempty"`
 	HavingCost      *QianchuanUniPromotionListV10FilteringHavingCost `json:"having_cost,omitempty"`
+	// 计划编辑结束日期，时间格式 2021-04-05 00:00:00
+	ModifyEndDate *string `json:"modify_end_date,omitempty"`
+	// 计划编辑开始日期，时间格式 2021-04-05 00:00:00
+	ModifyStartDate *string `json:"modify_start_date,omitempty"`
 	// 搜索关键词，支持根据计划名称/ID搜索
 	SearchKeyword     *string                                                 `json:"search_keyword,omitempty"`
 	SearchKeywordType *QianchuanUniPromotionListV10FilteringSearchKeywordType `json:"search_keyword_type,omitempty"`

@@ -13,9 +13,8 @@ package models
 // OcProjectMaterialCreateV30Response struct for OcProjectMaterialCreateV30Response
 type OcProjectMaterialCreateV30Response struct {
 	//
-	Code *int64 `json:"code,omitempty"`
-	//
-	Data map[string]interface{} `json:"data,omitempty"`
+	Code *int64                                  `json:"code,omitempty"`
+	Data *OcProjectMaterialCreateV30ResponseData `json:"data,omitempty"`
 	//
 	Message *string `json:"message,omitempty"`
 	//

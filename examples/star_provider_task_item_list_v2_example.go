@@ -25,12 +25,12 @@ import (
 type ApiOpenApi2StarProviderTaskItemListGetRequestExample struct {
 	StarId              int64   `json:"star_id"`
 	TaskId              int64   `json:"task_id"`
-	StatisticsStartTime int64   `json:"statistics_start_time"`
-	StatisticsEndTime   int64   `json:"statistics_end_time"`
 	ItemSearchKey       string  `json:"item_search_key,omitempty"`
 	ItemStatus          []int64 `json:"item_status,omitempty"`
 	Page                int64   `json:"page,omitempty"`
 	PageSize            int64   `json:"page_size,omitempty"`
+	StatisticsStartTime int64   `json:"statistics_start_time,omitempty"`
+	StatisticsEndTime   int64   `json:"statistics_end_time,omitempty"`
 }
 
 // url: https://api.oceanengine.com/open_api/2/star/provider/task/item/list/ Get
@@ -52,7 +52,7 @@ func main() {
 	resp, httpRes, err := apiClient.StarProviderTaskItemListV2Api().
 		Get(ctx).
 		AccessToken(accessToken).
-		StarId(request.StarId).TaskId(request.TaskId).StatisticsStartTime(request.StatisticsStartTime).StatisticsEndTime(request.StatisticsEndTime).ItemSearchKey(request.ItemSearchKey).ItemStatus(request.ItemStatus).Page(request.Page).PageSize(request.PageSize).
+		StarId(request.StarId).TaskId(request.TaskId).ItemSearchKey(request.ItemSearchKey).ItemStatus(request.ItemStatus).Page(request.Page).PageSize(request.PageSize).StatisticsStartTime(request.StatisticsStartTime).StatisticsEndTime(request.StatisticsEndTime).
 		Execute()
 	fmt.Println(ToJsonString(resp))
 	resBytes, _ := io.ReadAll(httpRes.Body)
